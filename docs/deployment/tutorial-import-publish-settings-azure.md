@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98498b59f01bbd8a72a52695203d80a995497823
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690463"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413566"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -50,6 +50,8 @@ Il file delle impostazioni di pubblicazione (*\*.publishsettings*) non corrispon
 1. In **Visual C#** o **Visual Basic** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET (.NET Framework)** oppure (solo per C#) **Applicazione Web ASP.NET Core** e quindi fare clic su **OK**.
 
     Se non vengono visualizzati i modelli di progetto specificati, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico di lavoro **Sviluppo ASP.NET e Web**.
+
+    Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 
 1. Scegliere **MVC** (.NET Framework) o **Applicazione Web (MVC)** (per .NET Core) e verificare che l'opzione **Nessuna autenticazione** sia selezionata, quindi fare clic su **OK**.
 

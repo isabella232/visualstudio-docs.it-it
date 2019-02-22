@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 777e8519077cebc162b1bad575a6ffcf976c4db4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908881"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335272"
 ---
 # <a name="find-references-in-your-code"></a>Cercare riferimenti nel codice
 
@@ -46,6 +46,11 @@ Per passare ai riferimenti nella finestra dei **riferimenti** è possibile usare
 Per impostazione predefinita, i riferimenti sono raggruppati prima in base al progetto e quindi in base alla definizione. È però possibile modificare questo ordine di raggruppamento modificando l'impostazione nell'elenco a discesa**Raggruppa per** sulla barra degli strumenti. Ad esempio, è possibile modificare l'impostazione predefinita **Progetto, quindi definizione** in **Definizione, quindi progetto** o in altre impostazioni.
 
 I due raggruppamenti predefiniti usati sono **Definizione** e **Progetto**, ma è possibile aggiungerne altri scegliendo il comando **Raggruppamento** dal menu di scelta rapida dell'elemento selezionato. L'aggiunta di più raggruppamenti può essere utile se la soluzione contiene molti file e percorsi.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrare per tipo di riferimento in .NET
+In C# o Visual Basic la finestra Trova riferimenti include una colonna Tipo in cui sono elencati i tipi di riferimenti trovati. È possibile usare questa colonna per applicare un filtro in base al tipo di riferimento facendo clic sull'icona del filtro visualizzata al passaggio del mouse sull'intestazione della colonna. I riferimenti possono essere filtrati in base a Lettura, Scrittura, Riferimento e Solo nome.
+
+![Colonna Tipo della finestra Trova riferimenti ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Vedere anche
 

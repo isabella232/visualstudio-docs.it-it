@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 02/08/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987418"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318394"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Novità di Visual Studio 2019 Preview
 
-**Aggiornato per la [versione Preview 2](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**Aggiornato per la [versione Preview 3](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 >[!div class="button"]
 >[Scaricare l'anteprima](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -39,7 +39,7 @@ Ecco un riepilogo generale delle funzionalità offerte da Visual Studio:
 * **[Innovazione continua](#continuous-innovation)**. Codifica semplificata con supporto intelligente basato sul cloud.
 
 > [!NOTE]
-> Per un elenco completo delle nuove funzionalità di Visual Studio 2019 Preview, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Per una panoramica delle novità della seconda anteprima, vedere il post di blog [Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) (Visual Studio 2019 Preview 2 è ora disponibile).
+> Per un elenco completo delle nuove funzionalità di Visual Studio 2019 Preview, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
 
 ## <a name="personal-and-team-productivity"></a>Produttività personale e in team
 
@@ -53,7 +53,7 @@ La prima cosa che si nota quando si apre Visual Studio 2019 è la nuova finestra
 
 Questa nuova finestra iniziale offre una serie di opzioni per clonare o estrarre il codice, aprire un progetto o una soluzione, aprire una cartella locale o creare un nuovo progetto. Il fatto che queste opzioni siano immediatamente disponibili in una finestra di dialogo semplice consente sia ai principianti che agli utenti avanzati di Visual Studio di creare codice rapidamente.
 
-Per altre informazioni, vedere il post di blog [Get to code: How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Vai al codice: come è stata progettata la nuova finestra iniziale di Visual Studio).
+Per altre informazioni, vedere il post di blog [Get to code: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Vai al codice: come è stata progettata la nuova finestra iniziale di Visual Studio).
 
 ### <a name="better-search"></a>Ricerca migliorata
 
@@ -81,7 +81,7 @@ Probabilmente la finestra Espressioni di controllo è già stata usata in preced
 
    ![Nuova finestra Espressioni di controllo e funzionalità di formattazione dei valori in Visual Studio 2019](media/search-watch-window.png)
 
-Per altre informazioni, vedere il post di blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Miglioramenti di Visual Studio 2019: Ricerca di oggetti e proprietà nelle finestre Espressione di controllo, Auto e Variabili locali).
+Per altre informazioni, vedere il post di blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Miglioramenti di Visual Studio 2019: Ricerca di oggetti e proprietà nelle finestre Espressione di controllo, Auto e Variabili locali).
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
@@ -89,9 +89,9 @@ Per altre informazioni, vedere il post di blog [Enhanced in Visual Studio 2019: 
 
 Con Visual Studio 2019 Preview, questo servizio viene installato per impostazione predefinita.
 
-   ![Un file GIF animato che illustra la funzionalità di collaborazione Live Share in Visual Studio 2019](media/live-share-collaboration.gif)
+![Un file GIF animato che illustra la funzionalità di collaborazione Live Share in Visual Studio 2019](media/live-share-collaboration.gif)
 
-Per altre informazioni, vedere il post di blog [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share per revisioni del codice in tempo reale e formazione interattiva).
+Per altre informazioni, vedere il post di blog [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share per revisioni del codice in tempo reale e formazione interattiva).
 
 ## <a name="modern-development-support"></a>Supporto per lo sviluppo moderno
 
@@ -122,7 +122,7 @@ Con la versione di Visual Studio 2019 Preview, Visual Studio si sta gradatamente
 
    ![Rendering sensibile ai valori del monitor (PMA) in Visual Studio 2019](media/per-monitor-aware-dpi-scaling.png)
 
-Per altre informazioni, vedere il post di blog [Better multi-monitor experience with Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) (Esperienza con più monitor migliore con Visual Studio 2019).
+Per altre informazioni, vedere il post di blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Esperienza con più monitor migliore con Visual Studio 2019).
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -141,7 +141,7 @@ Per la versione di anteprima dell'estensione IntelliCode per Visual Studio è st
 
 Per chi usa C#, è stata inoltre aggiunta la possibilità di eseguire il training di un modello personalizzato nel proprio codice.
 
-Per altre informazioni sugli aggiornamenti recenti, vedere il post di blog [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode supporta più lingue e apprende dal codice creato dall'utente). E per altre informazioni sull'estensione e su come scaricarla, vedere la pagina della [versione di anteprima di Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
+Per altre informazioni sugli aggiornamenti recenti, vedere il post di blog [Visual Studio IntelliCode supports more languages and learns from your code](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode supporta più lingue e apprende dal codice creato dall'utente). E per altre informazioni sull'estensione e su come scaricarla, vedere la pagina della [versione di anteprima di Visual Studio IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) in Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Commenti e suggerimenti
 
