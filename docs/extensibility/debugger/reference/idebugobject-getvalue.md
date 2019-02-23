@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::GetValue
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2c41cc81a27e46e74298d78ff9836ef74a8bff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d8b55fed250b94fc02c9810eca17ec0934bf81e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941905"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690734"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Ottiene il valore dell'oggetto come una serie consecutiva di byte.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetValue(   
-   BYTE* pValue,  
-   UINT  nSize  
-);  
-```  
-  
-```csharp  
-int GetValue(  
-   ref byte[] pValue,   
-   uint nSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pValue`  
- [in, out] Matrice che viene compilata con una serie consecutiva di byte che rappresenta il valore dell'oggetto.  
-  
- `nSize`  
- [in] Il numero massimo di byte da recuperare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Ottenere il numero totale di byte di valore che può essere recuperato chiamando il [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) (metodo).  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Ottiene il valore dell'oggetto come una serie consecutiva di byte.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetValue( 
+   BYTE* pValue,
+   UINT  nSize
+);
+```
+
+```csharp
+int GetValue(
+   ref byte[] pValue,
+   uint nSize
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pValue`
+
+ [in, out] Matrice che viene compilata con una serie consecutiva di byte che rappresenta il valore dell'oggetto.
+
+ `nSize`
+
+ [in] Il numero massimo di byte da recuperare.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Ottenere il numero totale di byte di valore che può essere recuperato chiamando il [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) (metodo).
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

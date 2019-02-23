@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::CreateObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::CreateObject
 helpviewer_keywords:
@@ -12,57 +12,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94ee856f3f1b514fb4d6cb11c448edd102038953
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 54d1e6c21cdf4e16db69cbad0947e864e7c1847e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031695"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689928"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
-Crea un oggetto usando un costruttore.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT CreateObject(   
-   IDebugFunctionObject* pConstructor,  
-   DWORD                 dwArgs,  
-   IDebugObject*         pArgs[],  
-   IDebugObject**        ppObject  
-);  
-```  
-  
-```csharp  
-int CreateObject(  
-   IDebugFunctionObject pConstructor,   
-   uint                 dwArgs,   
-   IDebugObject[]       pArgs,   
-   out IDebugObject     ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pConstructor`  
- [in] Un' [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) oggetto che rappresenta il costruttore dell'oggetto da creare.  
-  
- `dwArgs`  
- [in] Il numero di parametri in di `pArg` matrice. Rappresenta il numero di parametri passati al costruttore.  
-  
- `pArg`  
- [in] Matrice di [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) gli oggetti che rappresentano i parametri passati al costruttore.  
-  
- `ppObject`  
- [out] Restituisce un `IDebugObject` che rappresenta l'oggetto appena creato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o altro tipo complesso che richiede un costruttore) che rappresenta un parametro alla funzione che è rappresentato dal [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia.  
-  
- Se il parametro dell'oggetto non richiede un costruttore, chiamare il [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) (metodo).  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
- [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
+Crea un oggetto usando un costruttore.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT CreateObject( 
+   IDebugFunctionObject* pConstructor,
+   DWORD                 dwArgs,
+   IDebugObject*         pArgs[],
+   IDebugObject**        ppObject
+);
+```
+
+```csharp
+int CreateObject(
+   IDebugFunctionObject pConstructor,
+   uint                 dwArgs,
+   IDebugObject[]       pArgs,
+   out IDebugObject     ppObject
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pConstructor`
+
+ [in] Un' [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) oggetto che rappresenta il costruttore dell'oggetto da creare.
+
+ `dwArgs`
+
+ [in] Il numero di parametri in di `pArg` matrice. Rappresenta il numero di parametri passati al costruttore.
+
+ `pArg`
+
+ [in] Matrice di [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) gli oggetti che rappresentano i parametri passati al costruttore.
+
+ `ppObject`
+
+ [out] Restituisce un `IDebugObject` che rappresenta l'oggetto appena creato.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o altro tipo complesso che richiede un costruttore) che rappresenta un parametro alla funzione che è rappresentato dal [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia.
+
+ Se il parametro dell'oggetto non richiede un costruttore, chiamare il [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) (metodo).
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+- [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

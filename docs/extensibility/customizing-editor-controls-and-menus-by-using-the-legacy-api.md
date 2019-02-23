@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a365ac32ad59d01ceff7bc29cbb223a8fd32e5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002721"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684000"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizzare i controlli editor e Mmenus usando l'API legacy
-Un servizio di linguaggio o una visualizzazione di testo può controllare il menu di scelta rapida e i controlli nell'editor. Le pagine in questa sezione illustrano come usare queste funzionalità.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [Barra di riepilogo a discesa](../extensibility/drop-down-bar.md)  
- Descrive la barra di riepilogo a discesa e vengono fornite istruzioni per implementarlo.  
-  
- [Gestione dei comandi](../extensibility/command-handling.md)  
- Comando Details gestisce negli editor.  
-  
- [Menu di scelta rapida](../extensibility/context-menus.md)  
- Vengono descritti i menu di scelta rapida dell'editor.  
-  
- [Procedura: Aggiornare la barra di stato](../extensibility/how-to-update-the-status-bar.md)  
- Fornisce istruzioni su come aggiornare il **sulla barra di stato**.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Estensioni del servizio di editor e linguaggio](../extensibility/editor-and-language-service-extensions.md)  
- Introduce i diversi tipi di editor che è possibile usare in Visual Studio.
+Un servizio di linguaggio o una visualizzazione di testo può controllare il menu di scelta rapida e i controlli nell'editor. Le pagine in questa sezione illustrano come usare queste funzionalità.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+- [Barra di riepilogo a discesa](../extensibility/drop-down-bar.md) descrive la barra di riepilogo a discesa e vengono fornite istruzioni per implementarlo.
+
+- [La gestione dei comandi](../extensibility/command-handling.md) comando dettagli gestisce negli editor.
+
+- [Menu di scelta rapida](../extensibility/context-menus.md) descrive menu di scelta rapida dell'editor.
+
+- [Procedura: Aggiornare la barra di stato](../extensibility/how-to-update-the-status-bar.md) vengono fornite istruzioni per l'aggiornamento di **sulla barra di stato**.
+
+## <a name="related-sections"></a>Sezioni correlate
+- [Le estensioni del servizio di editor e linguaggio](../extensibility/editor-and-language-service-extensions.md) introduce i diversi tipi di editor è possibile usare in Visual Studio.

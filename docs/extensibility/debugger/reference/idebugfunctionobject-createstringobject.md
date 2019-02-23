@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::CreateStringObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::CreateStringObject
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de2f405febc6731cb31613a7462491d1fbbe1df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dd79223d3b51195e9f45490cc8aa95c10aca8e8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946516"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689902"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
-Crea un oggetto stringa.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT CreateStringObject(   
-   LPCOLESTR      pcstrString,  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int CreateStringObject(  
-   string      pcstrString,   
-   out IDebugObject ppOjbect  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pcstrString`  
- [in] Il valore di stringa per l'oggetto stringa.  
-  
- `ppObject`  
- [out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta l'oggetto stringa appena creato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Chiamare questo metodo per creare un oggetto che rappresenta una stringa che rappresenta un parametro alla funzione che è rappresentato dal [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+Crea un oggetto stringa.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT CreateStringObject( 
+   LPCOLESTR      pcstrString,
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int CreateStringObject(
+   string      pcstrString,
+   out IDebugObject ppOjbect
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pcstrString`
+
+ [in] Il valore di stringa per l'oggetto stringa.
+
+ `ppObject`
+
+ [out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta l'oggetto stringa appena creato.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Chiamare questo metodo per creare un oggetto che rappresenta una stringa che rappresenta un parametro alla funzione che è rappresentato dal [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

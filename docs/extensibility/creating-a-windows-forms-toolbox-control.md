@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316587"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687887"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti di Windows Form
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (Visual Studio SDK) consente di creare un controllo che viene aggiunto automaticamente per il **casella degli strumenti** quando l'estensione viene installata. In questo argomento viene illustrato come usare il modello per creare un controllo di un contatore semplice che è possibile distribuire ad altri utenti.
@@ -51,7 +51,7 @@ Il `Counter` controllo richiede due controlli figlio: una <xref:System.Windows.F
 
 5. Nel **proprietà** finestra, impostare i valori seguenti per i controlli nell'area di progettazione.
 
-    |Control|Proprietà|Valore|
+    |Control|Proprietà|Value|
     |-------------|--------------|-----------|
     |`Label1`|**per**|""|
     |`Button1`|**Name**|btnReset|
@@ -209,7 +209,7 @@ Il `Counter` controllo espone un metodo per incrementare il contatore, un evento
 Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il *VSIX* file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* del file ai [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) in modo che gli utenti potranno trovarlo cercando il **strumenti**  >   **Estensioni e aggiornamenti** finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
-[Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Creare un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Nozioni fondamentali sullo sviluppo di controlli Windows Form](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Creare un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Nozioni fondamentali sullo sviluppo di controlli Windows Form](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

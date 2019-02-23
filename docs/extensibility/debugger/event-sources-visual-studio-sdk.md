@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a84b12973ebfb86d516d2c9b13108d6b118f7507
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1dca1ce2504d557050adc1cb015eb7c6da056c70
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315638"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711293"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Origini eventi (Visual Studio SDK)
 Sono disponibili due origini di eventi: il motore di debug (DE) e la sessione di Debug Manager (SDM). Gli eventi inviati da un CRI hanno un motore diverso da NULL, mentre gli eventi inviati dal modello SDM hanno un motore NULL.
@@ -73,4 +73,4 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[L'invio di eventi](../../extensibility/debugger/sending-events.md)
+- [L'invio di eventi](../../extensibility/debugger/sending-events.md)

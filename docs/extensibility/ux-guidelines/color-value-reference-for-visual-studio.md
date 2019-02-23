@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016239"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722278"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento del valore di colore per Visual Studio
 
-In questo argomento è un riferimento per la creazione di nuovi token di colore. Quando si crea la nuova interfaccia utente, è possibile utilizzare colori simili nell'interfaccia utente esistenti per scegliere i colori per ogni tema principale e il nome del colore di sistema per questo elemento per i temi a contrasto elevato. 
+In questo argomento è un riferimento per la creazione di nuovi token di colore. Quando si crea la nuova interfaccia utente, è possibile utilizzare colori simili nell'interfaccia utente esistenti per scegliere i colori per ogni tema principale e il nome del colore di sistema per questo elemento per i temi a contrasto elevato.
 
 Per informazioni sull'implementazione sulla creazione di nuovi token di colore, vedere [strumenti dei temi di colore](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Per i token di colore da utilizzare con l'interfaccia utente esistente, vedere [
 
 Quando si usa questa Guida di riferimento, tenere presenti:
 
--   **Copia sempre in primo piano e sfondo sfumature diverse tra loro.** Non scegliere un primo piano da un elemento dell'interfaccia utente e uno sfondo da altro il fatto che si desidera che le tonalità.  
+-   **Copia sempre in primo piano e sfondo sfumature diverse tra loro.** Non scegliere un primo piano da un elemento dell'interfaccia utente e uno sfondo da altro il fatto che si desidera che le tonalità.
 
 -   **Si tratta di codici esadecimali, non i token di colore.** È possibile usare i nomi di token di colore effettivo di questi elementi dell'interfaccia utente perché non è possibile controllare come i token potrebbero cambiare in futuro. Invece di creare token personalizzati categoria e usare i valori di tonalità visualizzati nelle tabelle. I token di colore per interfaccia utente esistenti è disponibili nel [condivisi i colori per Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Campioni di contrasto elevati vengono visualizzati per il confronto solo.** Usare il nome di colore di sistema per l'interfaccia utente a contrasto elevato e non usare un selettore di colore o contagocce in questi campioni. Campioni di contrasto elevati in questo argomento riflettono il tema a contrasto elevato n. 1 in Windows. I colori avrà un aspetto diversi in altri temi a contrasto elevato. 
+- **Campioni di contrasto elevati vengono visualizzati per il confronto solo.** Usare il nome di colore di sistema per l'interfaccia utente a contrasto elevato e non usare un selettore di colore o contagocce in questi campioni. Campioni di contrasto elevati in questo argomento riflettono il tema a contrasto elevato n. 1 in Windows. I colori avrà un aspetto diversi in altri temi a contrasto elevato.
 
 -   **Per ottenere risultati ottimali, colore coppia imposta con l'interfaccia utente simile all'esempio.**
 
@@ -39,17 +39,17 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 ![Finestra proprietà in chiaro (a sinistra), scuro (centro) e blu (destra) temi](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "finestra delle proprietà dei temi chiaro, scuro e blu")<br />Finestra delle proprietà nei temi chiaro, scuro e blu
 
 > [!NOTE]
-> **Campioni di contrasto elevati vengono visualizzati per il confronto solo.** Usare il nome di colore di sistema per l'interfaccia utente a contrasto elevato e non usare un selettore di colore o contagocce in questi campioni. Campioni di contrasto elevati in questo argomento riflettono il tema a contrasto elevato n. 1 in Windows. I colori avrà un aspetto diversi in altri temi a contrasto elevato. 
+> **Campioni di contrasto elevati vengono visualizzati per il confronto solo.** Usare il nome di colore di sistema per l'interfaccia utente a contrasto elevato e non usare un selettore di colore o contagocce in questi campioni. Campioni di contrasto elevati in questo argomento riflettono il tema a contrasto elevato n. 1 in Windows. I colori avrà un aspetto diversi in altri temi a contrasto elevato.
 
 ### <a name="divider-lines"></a>Linee di divisione
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Impostazione predefinita | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark campione")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Glifo espansore
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano |![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione finestra](../../extensibility/ux-guidelines/media/HCWindow.png "campione di finestra")<br />`Window`|
@@ -60,7 +60,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="embedded-tab-control-body"></a>Controllo struttura a schede incorporate: body
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![Campione & FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "& FFE7E8EC campione")<br />`#FFE7E8EC` | ![Campione & FF1B1B1C](../../extensibility/ux-guidelines/media/1B1B1C.png "& FF1B1B1C campione")<br />`#FF1B1B1C` | ![Campione & FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "& FFE7E8EC campione")<br />`#FFE7E8EC` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -68,7 +68,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="embedded-tab-control-active-tab"></a>Controllo struttura a schede incorporate: scheda attiva
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` |![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![# # FFE7E8EC campione](../../extensibility/ux-guidelines/media/E7E8EC.png "& FFE7E8EC campione")<br />`#FFE7E8EC` | ![#FF1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "##FF1B1B1C swatch")<br />`#FF1B1B1C` | ![Campione & FFE7E8EC](../../extensibility/ux-guidelines/media/E7E8EC.png "& FFE7E8EC campione")<br />`#FFE7E8EC` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -76,7 +76,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Controllo struttura a schede incorporate: scheda inattiva
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -85,12 +85,12 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 | In primo piano: disabilitata | ![Campione & FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& FFA2A4A5 campione")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![Campione & FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& FFA2A4A5 campione")<br />`#FFA2A4A5` | ![GrayText swatch](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText swatch")<br />`GrayText` |
 | In background: disabilitata | ![##FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "##FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
 | Bordo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame campione")<br />`WindowFrame` |
-| Bordo: al passaggio del mouse | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Campione & FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "& FF3E3E40 campione")<br />`#FF3E3E40` | ![Campione #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FFFEFEFE")<br />`#FFFEFEFE` | ![Campione WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame campione")<br />`WindowFrame` | 
+| Bordo: al passaggio del mouse | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Campione & FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "& FF3E3E40 campione")<br />`#FF3E3E40` | ![Campione #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FFFEFEFE")<br />`#FFFEFEFE` | ![Campione WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame campione")<br />`WindowFrame` |
 | Bordo: disabilitata | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame campione")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>Intestazione di sezione
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![##FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | In primo piano: passaggio del mouse | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="category-group"></a>Gruppo di categorie
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | In primo piano del corpo | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo del corpo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -110,7 +110,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="toggle-buttons"></a>Interruttori
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText campione")<br />`WindowText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione finestra](../../extensibility/ux-guidelines/media/HCWindow.png "campione di finestra")<br />`Window` |
@@ -127,7 +127,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="input-fields"></a>Campi di input
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione & FF333337](../../extensibility/ux-guidelines/media/333337.png "& FF333337 campione")<br />`#FF333337` | ![Campione #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FFFCFCFC")<br />`#FFFCFCFC` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -138,7 +138,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="list-items"></a>Elementi dell'elenco
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | In primo piano: passaggio del mouse | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="command-buttons"></a>Pulsanti di comando
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | In background: al passaggio del mouse | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Campione & FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "& FF3E3E40 campione")<br />`#FF3E3E40` | ![Campione #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FFFEFEFE")<br />`#FFFEFEFE` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -172,7 +172,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="content"></a>Content
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 campione")<br />`#FF000000` | ![Campione WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText campione")<br />`WindowText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -184,7 +184,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="header"></a>Intestazione
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 campione")<br />`#FF000000` | ![Campione WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText campione")<br />`WindowText` |
 | Sfondo | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark campione")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ![Interfaccia utente di CodeLens](../../extensibility/ux-guidelines/media/codelens.png "dell'interfaccia utente di CodeLens")
 
-> [!NOTE] 
+> [!NOTE]
 > CodeLens UI colori sono gli stessi per i temi chiaro, scuro e blu.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="body"></a>Body
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText campione")<br />`WindowText` |
 | Sfondo | ![Campione #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FFFCFCFC")<br />`#FFFCFCFC` | ![Campione #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FFFCFCFC")<br />`#FFFCFCFC` | ![Campione #FFFCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FFFCFCFC")<br />`#FFFCFCFC` | ![Campione finestra](../../extensibility/ux-guidelines/media/HCWindow.png "campione di finestra")<br />`Window` |
@@ -212,7 +212,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="hyperlink-and-separator"></a>Collegamento ipertestuale e il separatore
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | In primo piano collegamento ipertestuale | ![Campione & FF0E70C0](../../extensibility/ux-guidelines/media/0E70C0.png "& FF0E70C0 campione")<br />`#FF0E70C0` | ![Campione & FF0E70C0](../../extensibility/ux-guidelines/media/0E70C0.png "& FF0E70C0 campione")<br />`#FF0E70C0` | ![Campione & FF0E70C0](../../extensibility/ux-guidelines/media/0E70C0.png "& FF0E70C0 campione")<br />`#FF0E70C0` | ![Campione HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack campione")<br />`HotTrack` |
 | In primo piano separatore | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![Campione HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack campione")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="body"></a>Body
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 campione")<br />`#FF000000` | ![Campione WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText campione")<br />`WindowText` |
 | In primo piano: selezionato | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>Intestazione sottosezione
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF717171](../../extensibility/ux-guidelines/media/717171.png "& FF717171 campione")<br />`#FF717171` | ![Campione & FF999999](../../extensibility/ux-guidelines/media/999999.png "& FF999999 campione")<br />`#FF999999` | ![Campione & FF717171](../../extensibility/ux-guidelines/media/717171.png "& FF717171 campione")<br />`#FF717171` | ![GrayText swatch](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText swatch")<br />`GrayText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione finestra](../../extensibility/ux-guidelines/media/HCWindow.png "campione di finestra")<br />`Window` |
@@ -241,7 +241,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="grid-lines"></a>Linee griglia
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Elementi (in primo piano) | ![Campione & FFF0F0F0](../../extensibility/ux-guidelines/media/F0F0F0.png "& FFF0F0F0 campione")<br />`#FFF0F0F0` | ![Campione #ff000000](../../extensibility/ux-guidelines/media/000000.png "#ff000000 campione")<br />`#FF000000` | ![Campione & FFF0F0F0](../../extensibility/ux-guidelines/media/F0F0F0.png "& FFF0F0F0 campione")<br />`#FFF0F0F0` | ![Barra di scorrimento campione](../../extensibility/ux-guidelines/media/HCScrollBar.png "campione della barra di scorrimento")<br />`ScrollBar` |
 | Intestazione (primo piano) | ![Campione & FFE0E3E6](../../extensibility/ux-guidelines/media/E0E3E6.png "& FFE0E3E6 campione")<br />`#FFE0E3E6` | ![Campione & FF333337](../../extensibility/ux-guidelines/media/333337.png "& FF333337 campione")<br />`#FF333337` | ![Campione & FFBEC3CB](../../extensibility/ux-guidelines/media/BEC3CB.png "& FFBEC3CB campione")<br />`#FFBEC3CB` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark campione")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="body"></a>Body
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
 
 ### <a name="active-tab"></a>Scheda attiva
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText campione")<br />`ActiveCaptionText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` |![Campione ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption campione")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Scheda inattiva
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText campione")<br />`InactiveCaptionText` |
 | Sfondo | ![Campione #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FFFEFEFE")<br />`#FFFEFEFE` | ![Campione & FF333337](../../extensibility/ux-guidelines/media/333337.png "& FF333337 campione")<br />`#FF333337` | ![Campione #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FFFEFEFE")<br />`#FFFEFEFE` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="watermark-text"></a>Testo della filigrana
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF717171](../../extensibility/ux-guidelines/media/717171.png "& FF717171 campione")<br />`#FF999999` | ![Campione & FF999999](../../extensibility/ux-guidelines/media/717171.png "999999 campione")<br />`#FF999999` | ![Campione & FF717171](../../extensibility/ux-guidelines/media/717171.png "& FF717171 campione")<br />`#FF717171` | ![GrayText swatch](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText swatch")<br />`GrayText` |
 | Sfondo | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
 
 ### <a name="description-pane"></a>Riquadro descrizione
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Primo piano | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
 | Sfondo | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -299,7 +299,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="tags"></a>Tag
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | In primo piano (testo) | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText campione")<br />`ActiveCaptionText` |
 | Sfondo | ![Campione & FFE1E6F1](../../extensibility/ux-guidelines/media/E1E6F1.png "& FFE1E6F1 campione")<br />`#FFE1E6F1` | ![Campione & FF424242](../../extensibility/ux-guidelines/media/424242.png "& FF424242 campione")<br />`#FF424242` | ![Campione & FFE9ECEE](../../extensibility/ux-guidelines/media/E9ECEE.png "& FFE9ECEE campione")<br />`#FFE9ECEE` | ![Campione ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption campione")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="glyph-on-hover"></a>Glifo al passaggio del mouse
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Icona | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
 | Sfondo | ![Campione & FFF7F7F9](../../extensibility/ux-guidelines/media/F7F7F9.png "& FFF7F7F9 campione")<br />`#FFF7F7F9` | ![Campione & FF393939](../../extensibility/ux-guidelines/media/393939.png "& FF393939 campione")<br />`#FF393939` | ![Campione & FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "& FFFFFCF4 campione")<br />`#FFFFFCF4` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="selected-glyph"></a>Icona selezionata
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Icona | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
 | Sfondo | ![Campione & FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "& FF52B0EF campione")<br />`#FF52B0EF` | ![Campione & FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "& FF52B0EF campione")<br />`#FF52B0EF` | ![Campione & FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "& FF52B0EF campione")<br />`#FF52B0EF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="default"></a>Impostazione predefinita
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Pulsante predefinito con il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "pulsante predefinito con il tema chiaro") | ![Pulsante predefinito nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "pulsante predefinito nel tema scuro") | ![Pulsante predefinito con il tema blu](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "pulsante predefinito con il tema blu") | ![Pulsante predefinito nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "pulsante predefinito nel tema a contrasto elevato") |
 | Primo piano | ![Campione & 1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& 1E1E1E campione")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Campione & 1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& 1E1E1E campione")<br />`#1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText campione")<br />`ControlText` |
@@ -348,7 +348,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="disabled"></a>Disabilitato
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Pulsante disabilitato con il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "pulsante disabilitato con il tema chiaro") | ![Pulsante disabilitato con il tema scuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "pulsante disabilitato con il tema scuro") | ![Pulsante disabilitato con il tema blu](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "pulsante disabilitato con il tema blu") | ![Pulsante disabilitato nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "pulsante disabilitato nel tema a contrasto elevato") |
 | Primo piano | ![Campione & A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& A2A4A5 campione")<br />`#A2A4A5` | ![campione #656565](../../extensibility/ux-guidelines/media/656565.png "656565 # campione")<br />`#656565` | ![Campione & A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& A2A4A5 campione")<br />`#A2A4A5` | ![Campione InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText campione")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="hover"></a>Passaggio del mouse
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Pulsante di stato al passaggio del mouse con il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "al passaggio del mouse sul pulsante di stato con il tema chiaro") | ![Pulsante di stato al passaggio del mouse nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "al passaggio del mouse sul pulsante di stato nel tema scuro") | ![Pulsante di stato al passaggio del mouse con il tema blu](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "al passaggio del mouse sul pulsante di stato nel tema blu") | ![Pulsante di stato al passaggio del mouse nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "al passaggio del mouse sul pulsante di stato nel tema a contrasto elevato") |
 | Primo piano | ![Campione & 1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& 1E1E1E campione")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Campione & 1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& 1E1E1E campione")<br />`#1E1E1E` | ![Campione ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText campione")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="pressed"></a>Premuto
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Pulsante premuto il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "pulsante premuto il tema chiaro") | ![Pulsante premuto nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "pulsante premuto nel tema scuro") | ![Pulsante premuto il tema blu](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "pulsante premuto il tema blu") | ![Pulsante premuto nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "pulsante premuto nel tema a contrasto elevato") |
 | Primo piano | ![Campione #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFF")<br />`#FFFFFF` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Campione #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFF")<br />`#FFFFFF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="focused"></a>Con stato attivo
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Pulsante Focused il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "pulsante Focused il tema chiaro") | ![Pulsante Focused nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "pulsante Focused nel tema scuro") | ![Pulsante Focused il tema blu](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "pulsante Focused il tema blu") | ![Pulsante Focused nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "pulsante Focused nel tema a contrasto elevato") |
 | Primo piano | ![Campione & 1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& 1E1E1E campione")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Campione & 1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& 1E1E1E campione")<br />`#1E1E1E` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="default"></a>Impostazione predefinita
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella di controllo predefinito con il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "casella di controllo predefinito con il tema chiaro") | ![Casella di controllo predefinito nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "casella di controllo predefinito nel tema scuro") | ![Casella di controllo predefinito con il tema blu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "casella di controllo predefinito con il tema blu") | ![Casella di controllo predefinito nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "casella di controllo predefinito nel tema a contrasto elevato") |
 | Sfondo | ![Campione #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FEFEFE")<br />`#FEFEFE` | ![campione #252526](../../extensibility/ux-guidelines/media/252526.png "252526 # campione")<br />`#252526` | ![Campione #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "campione #FEFEFE")<br />`#FEFEFE` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -399,7 +399,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="disabled"></a>Disabilitato
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella di controllo disabilitata con il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "disattivata la casella di controllo con il tema chiaro") | ![Casella di controllo disabilitata nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "disattivata la casella di controllo nel tema scuro") | ![Casella di controllo disabilitata con il tema blu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "disattivata la casella di controllo con il tema blu") | ![Casella di controllo disabilitata nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "disattivata la casella di controllo nel tema a contrasto elevato") |
 | Sfondo | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Campione & 2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "& 2D2D30 campione")<br />`#2D2D30` | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Campione InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption campione")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="hover"></a>Passaggio del mouse
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella di controllo di stato al passaggio del mouse con il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "casella di controllo di stato al passaggio del mouse con il tema chiaro") | ![Casella di controllo di stato al passaggio del mouse nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "casella di controllo di stato al passaggio del mouse nel tema scuro") | ![Casella di controllo di stato al passaggio del mouse con il tema blu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "casella di controllo di stato al passaggio del mouse con il tema blu") | ![Casella di controllo di stato al passaggio del mouse nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "casella di controllo di stato al passaggio del mouse nel tema a contrasto elevato") |
 | Sfondo | ![Campione & F3F9FF](../../extensibility/ux-guidelines/media/F3F9FF.png "& F3F9FF campione")<br />`#F3F9FF` | ![Campione & 1F1F20](../../extensibility/ux-guidelines/media/1F1F20.png "& 1F1F20 campione")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -419,7 +419,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="pressed"></a>Premuto
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella di controllo premuta il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "casella di controllo premuta il tema chiaro") | ![Casella di controllo premuta nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "casella di controllo premuta nel tema scuro") | ![Casella di controllo premuta il tema blu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "casella di controllo premuta il tema blu") | ![Casella di controllo premuta nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "casella di controllo premuta nel tema a contrasto elevato") |
 | Sfondo | ![Campione & 007ACC](../../extensibility/ux-guidelines/media/007ACC.png "& 007ACC campione")<br />`#007ACC` | ![Campione & 007ACC](../../extensibility/ux-guidelines/media/007ACC.png "& 007ACC campione")<br />`#007ACC` | ![Campione & E5C365](../../extensibility/ux-guidelines/media/E5C365.png "& E5C365 campione")<br />`#E5C365` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -429,7 +429,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="focused"></a>Con stato attivo
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella di controllo attivo il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "casella di controllo attivo il tema chiaro") | ![Casella di controllo attivo nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "casella di controllo attivo nel tema scuro") | ![Casella di controllo attivo il tema blu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "casella di controllo attivo il tema blu") | ![Casella di controllo attivo nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "casella di controllo attivo nel tema a contrasto elevato") |
 | Sfondo | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Campione & 1F1F20](../../extensibility/ux-guidelines/media/1F1F20.png "& 1F1F20 campione")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -446,7 +446,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="default"></a>Impostazione predefinita
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella combinata/a discesa-rilascio predefinito il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "casella combinata/a discesa-rilascio predefinito il tema chiaro") | ![Casella combinata/a discesa-rilascio predefinito nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "casella combinata/a discesa-rilascio predefinito nel tema scuro") | ![Casella combinata/a discesa-rilascio predefinito il tema blu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "casella combinata/a discesa-rilascio predefinito il tema blu") | ![Casella combinata/a discesa-rilascio predefinito nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "casella combinata/a discesa-rilascio predefinito nel tema a contrasto elevato") |
 | Sfondo | ![##007ACC swatch](../../extensibility/ux-guidelines/media/007ACC.png "##007ACC swatch")<br />`##007ACC` | ![#333337 swatch](../../extensibility/ux-guidelines/media/333337.png "#333337 swatch")<br />`#333337` | ![Campione #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FCFCFC")<br />`#FCFCFC` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
@@ -457,19 +457,19 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="disabled"></a>Disabilitato
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella combinata/freccia a discesa disabilitata il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "disabilitato casella combinata a discesa/finestra nel tema chiaro") | ![Casella combinata/freccia a discesa disabilitata nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "disabilitato casella combinata a discesa/finestra nel tema scuro") | ![Casella di riepilogo o combinata a discesa disabilitata nel tema blu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "disabilitato casella combinata a discesa/finestra nel tema blu") | ![Casella combinata/freccia a discesa disabilitata nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "disabilitato casella combinata a discesa/finestra nel tema a contrasto elevato") |
 | Sfondo | ![Campione & EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& EEEEF2 campione")<br />`#EEEEF2` | ![Campione & 2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "& 2D2D30 campione")<br />`#2D2D30` | ![#DFE7F3 swatch](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 swatch")<br />`#DFE7F3` | ![Campione InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption campione")<br />`InactiveCaption` |
 | Bordo | ![Campione #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "campione #CCCEDB")<br />`#CCCEDB` | ![campione #434346](../../extensibility/ux-guidelines/media/434346.png "434346 # campione")<br />`#434346` | ![Campione & A4ADBA](../../extensibility/ux-guidelines/media/A4ADBA.png "& A4ADBA campione")<br />`#A4ADBA` | ![Campione InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder campione")<br />`InactiveBorder` |
 | Testo | ![Campione & A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& A2A4A5 campione")<br />`#A2A4A5` | ![& 656565swatch](../../extensibility/ux-guidelines/media/656565.png "656565 # campione")<br />`#656565` | ![Campione & A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& A2A4A5 campione")<br />`#A2A4A5` | ![Campione InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText campione")<br />`InactiveCaptionText` |
-| Separatore | ![Campione & EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& EEEEF2 campione")<br />`#EEEEF2` | ![Campione & 2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "& 2D2D30 campione")<br />`#2D2D30` | ![Campione & D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "& D5DCE8 campione")<br />`#D5DCE8` | ![Campione InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder campione")<br />`InactiveBorder` | 
+| Separatore | ![Campione & EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& EEEEF2 campione")<br />`#EEEEF2` | ![Campione & 2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "& 2D2D30 campione")<br />`#2D2D30` | ![Campione & D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "& D5DCE8 campione")<br />`#D5DCE8` | ![Campione InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder campione")<br />`InactiveBorder` |
 | Icona | ![Campione #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "campione #CCCEDB")<br />`#CCCEDB` | ![campione #656565](../../extensibility/ux-guidelines/media/656565.png "656565 # campione")<br />`#656565` | ![Campione & A2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& A2A4A5 campione")<br />`#A2A4A5` | ![Campione InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText campione")<br />`InactiveCaptionText` |
 | Sfondo del glifo | ![Campione & EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& EEEEF2 campione")<br />`#EEEEF2` | ![Campione & 2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "& 2D2D30 campione")<br />`#2D2D30` | ![Campione & D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "& D5DCE8 campione")<br />`#D5DCE8` | ![Campione InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption campione")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Passaggio del mouse
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella di riepilogo o combinata a discesa stato al passaggio del mouse il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "casella di riepilogo o combinata a discesa stato al passaggio del mouse il tema chiaro") | ![Casella di riepilogo o combinata a discesa stato al passaggio del mouse nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "casella di riepilogo o combinata a discesa stato al passaggio del mouse nel tema scuro") | ![Casella di riepilogo o combinata a discesa stato al passaggio del mouse il tema blu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "casella di riepilogo o combinata a discesa stato al passaggio del mouse il tema blu") | ![Casella di riepilogo o combinata a discesa stato al passaggio del mouse nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "casella di riepilogo o combinata a discesa stato al passaggio del mouse nel tema a contrasto elevato") |
 | Sfondo | ![Campione & 007ACC](../../extensibility/ux-guidelines/media/007ACC.png "& 007ACC campione")<br />`#007ACC` | ![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![Campione #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FCFCFC")<br />`#FCFCFC` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -481,7 +481,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="pressed"></a>Premuto
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella combinata/a discesa-rilascio premuta il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "casella combinata/a discesa-rilascio premuta il tema chiaro") | ![Casella combinata/a discesa-rilascio premuta nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "premuto casella combinata a discesa/finestra nel tema scuro") | ![Casella combinata/a discesa-rilascio premuta il tema blu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "casella combinata/a discesa-rilascio premuta il tema blu") | ![Casella combinata/a discesa-rilascio premuta nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "premuto casella combinata a discesa/finestra nel tema a contrasto elevato") |
 | Sfondo | ![Campione #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFF")<br />`#FFFFFF` | ![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![Campione #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FCFCFC")<br />`#FCFCFC` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -493,7 +493,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="focused"></a>Con stato attivo
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella combinata/a discesa-rilascio Focused il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "casella combinata/a discesa-rilascio Focused il tema chiaro") | ![Casella combinata/a discesa-rilascio Focused nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "casella combinata/a discesa-rilascio Focused nel tema scuro") | ![Casella combinata/drop-down Focused il tema blu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "casella combinata/drop-down Focused il tema blu") | ![Casella combinata/a discesa-rilascio Focused nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "casella combinata/a discesa-rilascio Focused nel tema a contrasto elevato") |
 | Sfondo | ![Campione #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFF")<br />`#FFFFFF` | ![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![Campione #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "campione #FCFCFC")<br />`#FCFCFC` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
@@ -511,7 +511,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="default"></a>Impostazione predefinita
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Sfondo | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Campione & 1B1B1C](../../extensibility/ux-guidelines/media/1B1B1C.png "& 1B1B1C campione")<br />`#1B1B1C` | ![Campione #EFEFEF](../../extensibility/ux-guidelines/media/EFEFEF.png "campione #EFEFEF")<br />`#EFEFEF` | ![Campione di menu](../../extensibility/ux-guidelines/media/HCMenu.png "campione di Menu")<br />`Menu` |
 | Bordo | ![Campione #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "campione #CCCEDB")<br />`#CCCEDB` | ![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![#98A7B7 swatch](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 swatch")<br />`#98A7B7`| ![Campione MenuText](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText campione")<br />`MenuText` |
@@ -520,7 +520,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="hover"></a>Passaggio del mouse
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Sfondo | ![Campione & C9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "& C9DEF5 campione")<br />`#C9DEF5` | ![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
 | Bordo | ![Campione #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "campione #CCCEDB")<br />`#CCCEDB` |![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="pressed"></a>Premuto
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Sfondo |![Campione & C9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "& C9DEF5 campione")<br />`#C9DEF5` |![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
 | Bordo | ![Campione #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "campione #CCCEDB")<br />`#CCCEDB` |![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 #### <a name="focused"></a>Con stato attivo
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Sfondo | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` |![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
 | Bordo | ![Campione & C9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "& C9DEF5 campione")<br />`#C9DEF5` |![Campione & 3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& 3F3F46 campione")<br />`#3F3F46` |![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 ### <a name="text-input-selection"></a>Selezione di input di testo
 
-| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato | 
+| | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
 | Aspetto | ![Casella combinata a discesa/casella di testo di input selezione il tema chiaro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "casella combinata a discesa/casella di testo di input selezione il tema chiaro") | ![Casella combinata a discesa/casella di testo di input selezione nel tema scuro](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "casella combinata a discesa/casella di testo di input selezione nel tema scuro") | ![Casella combinata a discesa/casella di testo di input selezione del tema blu](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "casella combinata a discesa/casella di testo di input selezione del tema blu") | ![Casella combinata a discesa/casella di testo di input selezione nel tema a contrasto elevato](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "casella combinata a discesa/casella di testo di input selezione nel tema a contrasto elevato") |
 | Selezione di input di testo | ![Campione & 66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "& 66007ACC campione")<br />`#66007ACC` | ![Campione & 66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "& 66007ACC campione")<br />`#66007ACC` | ![Campione & 66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "& 66007ACC campione")<br />`#66007ACC` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>Campioni di colore da (funzione)
 
-| Chiaro | Scuro | Blu | Utilizzato per... | 
+| Chiaro | Scuro | Blu | Utilizzato per... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![Campione & FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "& FFFDF4BF campione")<br />`#FFFDF4BF` | Pulsanti di azione, elementi di casella combinata, pulsanti della barra dei comandi, caselle di riepilogo e voci di menu: sfondo |
 | ![#FFCCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB swatch")<br />`#FFCCCEDB` | ![Campione & FF3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& FF3F3F46 campione")<br />`#FF3F3F46` | ![Campione & FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "& FF465A7D campione")<br />`#FF465A7D` | Bordo scheda Nascondi automaticamente |

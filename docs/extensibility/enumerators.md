@@ -10,41 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e57f11f61a1bcb2372a07e34167ecacd324067c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37f469ecc0ae097592a128b30a6a6f189d58d94b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037798"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689746"
 ---
 # <a name="enumerators"></a>Enumeratori
-Questa sezione elenca i tipi di dati di enumeratore nell'API dei plug-in controllo di origine che il plug-in del controllo del codice sorgente devono essere informati.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [Codice di comando](../extensibility/command-code-enumerator.md)  
- Enumera le opzioni per la [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md) funzioni.  
-  
- [Messaggio](../extensibility/message-enumerator.md)  
- Enumera i flag utilizzati per il callback, stampa [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
-  
- [Codice di stato file](../extensibility/file-status-code-enumerator.md)  
- Contiene valori costanti denominati che specificano lo stato di un file di controllo del codice sorgente.  
-  
- [Codice di stato directory](../extensibility/directory-status-code-enumerator.md)  
- Contiene valori costanti denominati che specificano lo stato di una directory nel controllo del codice sorgente.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Creare un controllo del codice sorgente del plug-in](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Definisce il SDK dei plug-in controllo di origine e descritte le risorse incluse.  
-  
- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- Richiede all'utente le opzioni avanzate per il comando specificato.  
-  
- [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Esamina l'elenco dei file per il relativo stato corrente. Inoltre, utilizza il `pfnPopulate` funzione per notificare al chiamante quando un file non corrisponde ai criteri per il `nCommand`.  
-  
- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Viene descritta la funzione di callback che viene utilizzata dagli [SccOpenProject](../extensibility/sccopenproject-function.md) per visualizzare i messaggi dal controllo del codice sorgente del plug-in tramite l'IDE.  
-  
- [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)  
- Fornisce un elenco completo di tutti gli elementi nell'API dei plug-in controllo di origine.
+Questa sezione elenca i tipi di dati di enumeratore nell'API dei plug-in controllo di origine che il plug-in del controllo del codice sorgente devono essere informati.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+- [Codice di comando](../extensibility/command-code-enumerator.md) enumera le opzioni per il [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md) funzioni.
+
+- [Messaggio](../extensibility/message-enumerator.md) enumera i flag utilizzati per il callback di stampa, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+
+- [File di codice di stato](../extensibility/file-status-code-enumerator.md) Contains denominato valori costanti che specificano lo stato di un file di controllo del codice sorgente.
+
+- [Codice di stato directory](../extensibility/directory-status-code-enumerator.md) Contains denominato valori costanti che specificano lo stato di una directory nel controllo del codice sorgente.
+
+## <a name="related-sections"></a>Sezioni correlate
+- [Creare un controllo del codice sorgente del plug-in](../extensibility/internals/creating-a-source-control-plug-in.md) definisce il SDK dei plug-in controllo di origine e vengono descritte le risorse incluse.
+
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) chiede all'utente le opzioni avanzate per il comando specificato.
+
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) esamina l'elenco dei file per il relativo stato corrente. Inoltre, utilizza il `pfnPopulate` funzione per notificare al chiamante quando un file non corrisponde ai criteri per il `nCommand`.
+
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) viene descritta la funzione di callback usato da [SccOpenProject](../extensibility/sccopenproject-function.md) per visualizzare i messaggi dal controllo del codice sorgente del plug-in tramite l'IDE.
+
+- [Plug-in del controllo di origine](../extensibility/source-control-plug-ins.md) fornisce un elenco completo di tutti gli elementi nell'API dei plug-in controllo di origine.

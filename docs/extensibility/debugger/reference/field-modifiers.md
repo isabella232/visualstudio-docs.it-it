@@ -1,7 +1,7 @@
 ---
 title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_MODIFIERS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf66338474ec432f327cef3f3a0b64f718699d78
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317900"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689629"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Specifica i modificatori per un tipo di campo.
@@ -102,83 +102,57 @@ public enum enum_FIELD_MODIFIERS {
 ```
 
 ## <a name="members"></a>Membri
-FIELD_MOD_ACCESS_TYPE  
-Indica che il campo non è accessibile.
+FIELD_MOD_ACCESS_TYPE indica che il campo non è accessibile.
 
-FIELD_MOD_ACCESS_PUBLIC  
-Indica che il campo dispone di accesso pubblico.
+FIELD_MOD_ACCESS_PUBLIC indica che il campo dispone di accesso pubblico.
 
-FIELD_MOD_ACCESS_PROTECTED  
-Indica che il campo dispone di accesso protetto.
+FIELD_MOD_ACCESS_PROTECTED indica che il campo dispone di accesso protetto.
 
-FIELD_MOD_ACCESS_PRIVATE  
-Indica che il campo dispone di accesso privata.
+FIELD_MOD_ACCESS_PRIVATE indica che il campo ha accesso privato.
 
-FIELD_MOD_NOMODIFIERS  
-Indica che il campo non dispone di modificatori.
+FIELD_MOD_NOMODIFIERS indica che il campo non dispone di modificatori.
 
-FIELD_MOD_STATIC  
-Indica che il campo è statico.
+FIELD_MOD_STATIC indica che il campo è statico.
 
-FIELD_MOD_CONSTANT  
-Indica che il campo è una costante.
+FIELD_MOD_CONSTANT indica che il campo è una costante.
 
-FIELD_MOD_TRANSIENT  
-Indica che il campo è temporaneo.
+FIELD_MOD_TRANSIENT indica che il campo è temporaneo.
 
-FIELD_MOD_VOLATILE  
-Indica che il campo è volatile.
+FIELD_MOD_VOLATILE indica che il campo è volatile.
 
-FIELD_MOD_ABSTRACT  
-Indica che il campo è astratto.
+FIELD_MOD_ABSTRACT indica che il campo è astratto.
 
-FIELD_MOD_NATIVE  
-Indica che il campo è nativo.
+FIELD_MOD_NATIVE indica che il campo è nativo.
 
-FIELD_MOD_SYNCHRONIZED  
-Indica che il campo è sincronizzato.
+FIELD_MOD_SYNCHRONIZED indica che il campo è sincronizzato.
 
-FIELD_MOD_VIRTUAL  
-Indica che il campo è virtuale.
+FIELD_MOD_VIRTUAL indica che il campo è virtuale.
 
-FIELD_MOD_INTERFACE  
-Indica che il campo è un'interfaccia.
+FIELD_MOD_INTERFACE indica che il campo è un'interfaccia.
 
-FIELD_MOD_FINAL  
-Indica che il campo è finale.
+FIELD_MOD_FINAL indica che il campo è finale.
 
-FIELD_MOD_SENTINEL  
-Indica che il campo è un sentinel.
+FIELD_MOD_SENTINEL indica che il campo è un sentinel.
 
-FIELD_MOD_INNERCLASS  
-Indica che il campo è una classe interna.
+FIELD_MOD_INNERCLASS indica che il campo è una classe interna.
 
-FIELD_TYPE_OPTIONAL  
-Indica che il campo è facoltativo.
+FIELD_TYPE_OPTIONAL indica che il campo è facoltativo.
 
-FIELD_MOD_BYREF  
-Indica che il campo è un argomento di riferimento. Si tratta in particolare per gli argomenti del metodo.
+FIELD_MOD_BYREF indica che il campo è un argomento di riferimento. Si tratta in particolare per gli argomenti del metodo.
 
-FIELD_MOD_HIDDEN  
-Indica che il campo deve essere nascosto o visualizzato in un altro contesto. ad esempio, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variabili locali statiche.
+FIELD_MOD_HIDDEN indica che il campo deve essere nascosto o visualizzato in un altro contesto. ad esempio, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variabili locali statiche.
 
-FIELD_MOD_MARSHALASOBJECT  
-Indica che il campo rappresenta un oggetto con un `IUnknown` interfaccia.
+FIELD_MOD_MARSHALASOBJECT indica che il campo rappresenta un oggetto con un `IUnknown` interfaccia.
 
-FIELD_MOD_SPECIAL_NAME  
-Indica che il campo ha un nome speciale, ad esempio, `.ctor` per un costruttore ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
+FIELD_MOD_SPECIAL_NAME indica che il campo ha un nome speciale, ad esempio, `.ctor` per un costruttore ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
 
-FIELD_MOD_HIDEBYSIG  
-Indica che il campo ha il `Overloads` parola chiave applicato ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
+FIELD_MOD_HIDEBYSIG indica che il campo ha il `Overloads` parola chiave applicato ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
 
-FIELD_MOD_WRITEONLY  
-Indica che il campo è di sola scrittura. Questo valore non è incluso `FIELD_MOD_ALL`, come l'uso solo di tali campi di sola scrittura per la valutazione della funzione. Un utente deve richiedere esplicitamente `FIELD_MOD_WRITEONLY` campi.
+FIELD_MOD_WRITEONLY indica che il campo è di sola scrittura. Questo valore non è incluso `FIELD_MOD_ALL`, come l'uso solo di tali campi di sola scrittura per la valutazione della funzione. Un utente deve richiedere esplicitamente `FIELD_MOD_WRITEONLY` campi.
 
-FIELD_MOD_ACCESS_MASK  
-Indica una maschera per l'accesso al campo.
+FIELD_MOD_ACCESS_MASK indica una subnet per l'accesso al campo.
 
-FIELD_MOD_MASK  
-Indica una maschera per i modificatori di campo.
+FIELD_MOD_MASK indica una maschera per i modificatori di campo.
 
 ## <a name="remarks"></a>Note
 Utilizzato per il `dwModifiers` membro della [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura.
@@ -193,6 +167,6 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
-[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)

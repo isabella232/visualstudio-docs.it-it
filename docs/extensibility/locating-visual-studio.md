@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b57150a7a2ad94b4e0706f3dd21d2fe410ed813d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944384"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683571"
 ---
 # <a name="locate-visual-studio"></a>Individuare Visual Studio
 
@@ -41,4 +41,4 @@ Per trovare Visual Studio e altri strumenti in ambienti di compilazione, gli scr
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Modifiche all'installazione di Visual Studio 2017](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Modifiche all'installazione di Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)

@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute::GetAttributeTypeField | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute::GetAttributeTypeField
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93b356ef6c57c8a3b67a806a1d1495a96b2391b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbbf0d91b344f1a45eb09d480eb631ac1a159046
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017721"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722785"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
-Ottiene il tipo di classe di attributo personalizzato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetAttributeTypeField(   
-   IDebugClassField** ppCAType  
-);  
-```  
-  
-```csharp  
-int GetAttributeTypeField(  
-   out IDebugClassField ppCAType  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppCAType`  
- [out] Restituisce il [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto che rappresenta la classe di cui l'attributo personalizzato è un'istanza.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Un attributo personalizzato è sempre una classe. Questo metodo fornisce l'accesso a un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che descrive tale classe.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+Ottiene il tipo di classe di attributo personalizzato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetAttributeTypeField( 
+   IDebugClassField** ppCAType
+);
+```
+
+```csharp
+int GetAttributeTypeField(
+   out IDebugClassField ppCAType
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppCAType`
+
+ [out] Restituisce il [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto che rappresenta la classe di cui l'attributo personalizzato è un'istanza.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Un attributo personalizzato è sempre una classe. Questo metodo fornisce l'accesso a un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che descrive tale classe.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

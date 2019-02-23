@@ -12,49 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09d116ed59492376944612ab95eb19bbac71e40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15e09d7837c04c276e955f88e8b1afd670d6e948
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030587"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687770"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (modelli di Visual Studio)
-Specifica l'immagine di anteprima, come un nome di file, per l'immagine di anteprima che verrà visualizzato in entrambi i **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<PreviewImage>  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-<PreviewImage>"filename"</PreviewImage>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
- Nessuno.  
-  
-### <a name="child-elements"></a>Elementi figlio  
- Nessuno.  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce come viene visualizzato in entrambi i **nuovo progetto** o il **Aggiungi nuovo elemento** nella finestra di dialogo.|  
-  
-## <a name="text-value"></a>Valore di testo  
- È necessario specificare un valore di testo.  
-  
- Il testo deve essere una stringa che rappresenta un nome di file.  
-  
-## <a name="remarks"></a>Note  
- `PreviewImage` è un elemento facoltativo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+Specifica l'immagine di anteprima, come un nome di file, per l'immagine di anteprima che verrà visualizzato in entrambi i **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo.
+
+ \<VSTemplate> \<TemplateData> \<PreviewImage>
+
+## <a name="syntax"></a>Sintassi
+
+```
+<PreviewImage>"filename"</PreviewImage>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+ Nessuno.
+
+### <a name="child-elements"></a>Elementi figlio
+ Nessuno.
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce come viene visualizzato in entrambi i **nuovo progetto** o il **Aggiungi nuovo elemento** nella finestra di dialogo.|
+
+## <a name="text-value"></a>Valore di testo
+ È necessario specificare un valore di testo.
+
+ Il testo deve essere una stringa che rappresenta un nome di file.
+
+## <a name="remarks"></a>Note
+ `PreviewImage` è un elemento facoltativo.
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

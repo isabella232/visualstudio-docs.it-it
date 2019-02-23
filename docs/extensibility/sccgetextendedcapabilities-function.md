@@ -12,48 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b33858910c435f4dc899b24a707de06548f1c915
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9ed27c996a94c4e81a946efbfa2684dc4169005a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931154"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720471"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Funzione SccGetExtendedCapabilities
-Questa funzione restituisce funzionalità aggiuntive supportate dal controllo del codice sorgente del plug-in.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-SCCRTN SccGetExtendedCapabilities(  
-   LPVOID pContext,  
-   LONG lSccExCaps,  
-   LPBOOL pbSupported  
-);  
-```  
-  
-### <a name="parameters"></a>Parametri  
- pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
-  
- lSccExCaps  
- [in] Un flag che specifica una funzionalità estesa per cui eseguire il test (vedere la tabella codice esteso di funzionalità nella [flag di funzionalità](../extensibility/capability-flags.md) per i possibili flag).  
-  
- pbSupported  
- [out] Restituisce diverso da zero (`TRUE`) se la funzionalità specificata è supportata; in caso contrario, restituisce zero (`FALSE`).  
-  
-## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
-  
-|Value|Descrizione|  
-|-----------|-----------------|  
-|SCC_OK|L'operazione get funzionalità completata correttamente.|  
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Si è verificato un errore sconosciuto o non specificato.|  
-  
-## <a name="remarks"></a>Note  
- Questo metodo viene chiamato su richiesta. ovvero quando una funzionalità deve essere testata, questo metodo viene chiamato per determinare se la funzionalità è supportata. Viene specificato il flag solo una alla volta.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)   
- [Codici di errore](../extensibility/error-codes.md)   
- [Flag funzionalità](../extensibility/capability-flags.md)
+Questa funzione restituisce funzionalità aggiuntive supportate dal controllo del codice sorgente del plug-in.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+SCCRTN SccGetExtendedCapabilities(
+   LPVOID pContext,
+   LONG lSccExCaps,
+   LPBOOL pbSupported
+);
+```
+
+### <a name="parameters"></a>Parametri
+ pContext
+
+[in] Il puntatore di contesto del plug-in controllo di origine.
+
+ lSccExCaps
+
+[in] Un flag che specifica una funzionalità estesa per cui eseguire il test (vedere la tabella codice esteso di funzionalità nella [flag di funzionalità](../extensibility/capability-flags.md) per i possibili flag).
+
+ pbSupported
+
+[out] Restituisce diverso da zero (`TRUE`) se la funzionalità specificata è supportata; in caso contrario, restituisce zero (`FALSE`).
+
+## <a name="return-value"></a>Valore restituito
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+
+|Value|Descrizione|
+|-----------|-----------------|
+|SCC_OK|L'operazione get funzionalità completata correttamente.|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Si è verificato un errore sconosciuto o non specificato.|
+
+## <a name="remarks"></a>Note
+ Questo metodo viene chiamato su richiesta. ovvero quando una funzionalità deve essere testata, questo metodo viene chiamato per determinare se la funzionalità è supportata. Viene specificato il flag solo una alla volta.
+
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)
+- [Codici di errore](../extensibility/error-codes.md)
+- [Flag funzionalità](../extensibility/capability-flags.md)

@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide::GetManagedViewerCreationData
 helpviewer_keywords:
@@ -12,66 +12,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39e32c5c650faa30c5a164e3a15bd26fc058e010
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd92f8a93427264966bb44bbf44d5e519cb9459a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917328"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714894"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Recupera informazioni sul Visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetManagedViewerCreationData(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  className,  
-   ASSEMBLYLOCRESOLUTION* alr,  
-   BOOL*                  replacementOk  
-);  
-```  
-  
-```csharp  
-int GetManagedViewerCreationData(  
-   out string                     assemName,  
-   out IEEDataStorage             assemBytes,  
-   out IEEDataStorage             assemPdb,  
-   out string                     className,  
-   out enum_ASSEMBLYLOCRESOLUTION alr,  
-   out int                        replacementOk  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `assemName`  
- [out] Restituisce il nome dell'assembly che contiene questo oggetto.  
-  
- `assemBytes`  
- [out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly di questo oggetto (questo è un valore null se non sono disponibile alcun byte).  
-  
- `assemPdb`  
- [out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione le informazioni per questo oggetto (questo è un valore null se non è disponibile alcun archivio simboli).  
-  
- `className`  
- [out] Restituisce il nome della classe che contiene questo oggetto.  
-  
- `alr`  
- [out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione dell'assembly.  
-  
- `replacementOk`  
- [out] Restituisce diversi da zero (`TRUE`) se il valore dell'oggetto può essere modificato; zero (`FALSE`) se l'oggetto è di sola lettura.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo viene utilizzato per i visualizzatori di tipo per creare un'istanza di un visualizzatore gestito.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+Recupera informazioni sul Visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetManagedViewerCreationData(
+   BSTR*                  assemName,
+   IEEDataStorage**       assemBytes,
+   IEEDataStorage**       assemPdb,
+   BSTR*                  className,
+   ASSEMBLYLOCRESOLUTION* alr,
+   BOOL*                  replacementOk
+);
+```
+
+```csharp
+int GetManagedViewerCreationData(
+   out string                     assemName,
+   out IEEDataStorage             assemBytes,
+   out IEEDataStorage             assemPdb,
+   out string                     className,
+   out enum_ASSEMBLYLOCRESOLUTION alr,
+   out int                        replacementOk
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `assemName`
+
+ [out] Restituisce il nome dell'assembly che contiene questo oggetto.
+
+ `assemBytes`
+
+ [out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly di questo oggetto (questo è un valore null se non sono disponibile alcun byte).
+
+ `assemPdb`
+
+ [out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione le informazioni per questo oggetto (questo è un valore null se non è disponibile alcun archivio simboli).
+
+ `className`
+
+ [out] Restituisce il nome della classe che contiene questo oggetto.
+
+ `alr`
+
+ [out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione dell'assembly.
+
+ `replacementOk`
+
+ [out] Restituisce diversi da zero (`TRUE`) se il valore dell'oggetto può essere modificato; zero (`FALSE`) se l'oggetto è di sola lettura.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo viene utilizzato per i visualizzatori di tipo per creare un'istanza di un visualizzatore gestito.
+
+## <a name="see-also"></a>Vedere anche
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
