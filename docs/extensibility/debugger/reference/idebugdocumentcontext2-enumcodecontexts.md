@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::EnumCodeContexts | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 492eac7ffa0c1909bd8102bf9f4264180c2fe09d
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: dffee73c9412bd9732ca3dd80aef8b9cb6fdabfd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450503"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709577"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Recupera un elenco di tutti i contesti di codice associato a questo contesto di documento.
@@ -37,8 +37,9 @@ int EnumCodeContexts(
 ```
 
 #### <a name="parameters"></a>Parametri
-`ppEnumCodeCxts`  
-[out] Restituisce un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) oggetto che contiene un elenco di contesti di codice.
+`ppEnumCodeCxts`
+
+ [out] Restituisce un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) oggetto che contiene un elenco di contesti di codice.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -106,5 +107,5 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

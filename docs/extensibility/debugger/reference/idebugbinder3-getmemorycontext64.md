@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be0e07721e0f38db68bae2ff8a99aaf50b649b6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317848"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713867"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Converte un percorso di oggetto o un indirizzo di memoria a 64 bit in un contesto in memoria.
@@ -40,14 +40,17 @@ int GetMemoryContext64 (
 ```
 
 #### <a name="parameters"></a>Parametri
-`pField`  
-[in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.
+`pField`
 
-`uConstant`  
-[in] Un indirizzo di memoria a 64 bit, ad esempio 0x50000000.
+ [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.
 
-`ppMemCxt`  
-[out] Restituisce il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaccia che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.
+`uConstant`
+
+ [in] Un indirizzo di memoria a 64 bit, ad esempio 0x50000000.
+
+`ppMemCxt`
+
+ [out] Restituisce il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaccia che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -127,4 +130,4 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

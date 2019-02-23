@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_RESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_RESOLUTION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0060855edb08f7e064d7d77ca4fbb1772745ea4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 07c9a6bad31d36b334a9764dba7897bbf6ad14c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317562"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710786"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 Descrive la risoluzione di un punto di interruzione in una posizione specifica.
@@ -31,8 +31,7 @@ typedef struct _BP_LOCATION_RESOLUTION {
 ```
 
 ## <a name="members"></a>Membri
-pResolution  
-Il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo di punto di interruzione e le relative informazioni di risoluzione.
+pResolution il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo di punto di interruzione e le relative informazioni di risoluzione.
 
 ## <a name="remarks"></a>Note
 Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
@@ -45,6 +44,6 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

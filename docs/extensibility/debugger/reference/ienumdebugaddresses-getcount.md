@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugAddresses::GetCount | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugAddresses::GetCount
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c180f188dcd5ae722b19faa8730d5ccd4f56c28f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21d722c557d6dc7dcb250b88abcebdf771af8647
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994199"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716786"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
-Questo metodo restituisce il numero di elementi nell'enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetCount(  
-   [out] ULONG* pcelt  
-);  
-```  
-  
-```csharp  
-int GetCount(  
-   out uint pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pcelt`  
- [out] Restituisce il numero di elementi nell'enumerazione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo non fa parte l'interfaccia di enumerazione COM facoltativa che specifica che solo successivo, il Clone, Skip e reimpostazione deve essere implementata.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
+Questo metodo restituisce il numero di elementi nell'enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetCount(
+   [out] ULONG* pcelt
+);
+```
+
+```csharp
+int GetCount(
+   out uint pcelt
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pcelt`
+
+ [out] Restituisce il numero di elementi nell'enumerazione.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo non fa parte l'interfaccia di enumerazione COM facoltativa che specifica che solo successivo, il Clone, Skip e reimpostazione deve essere implementata.
+
+## <a name="see-also"></a>Vedere anche
+- [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_DATA
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b2d887c10721693468ed907175399074f890588
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 70c1bb00fc8648cfe19f4bcecffdd0592e5f8deb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317263"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711449"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Descrive il risultato dell'associazione di un punto di interruzione dei dati.
@@ -43,17 +43,13 @@ public struct BP_RESOLUTION_DATA {
 ```
 
 ## <a name="members"></a>Membri
-`bstrDataExpr`  
-L'espressione di dati che è stata associata.
+`bstrDataExpr` L'espressione di dati che è stata associata.
 
-`bstrFunc`  
-Il nome della funzione è associato il punto di interruzione dei dati (se presente).
+`bstrFunc` Il nome della funzione è associato il punto di interruzione dei dati (se presente).
 
-`bstrImage`  
-Il nome del modulo (ad esempio, MyModule.dll) che è associato il punto di interruzione dei dati in.
+`bstrImage` Il nome del modulo (ad esempio, MyModule.dll) che è associato il punto di interruzione dei dati in.
 
-`dwFlags`  
-Un valore compreso il [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumerazione, che indica come viene implementato il punto di interruzione dei dati.
+`dwFlags` Un valore compreso il [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumerazione, che indica come viene implementato il punto di interruzione dei dati.
 
 ## <a name="remarks"></a>Note
 Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro delle [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metodo.
@@ -66,7 +62,7 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

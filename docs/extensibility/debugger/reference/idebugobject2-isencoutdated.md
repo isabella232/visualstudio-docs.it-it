@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::IsEncOutdated | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject2::IsEncOutdated
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5facc3b8efed46817e99624e6b019d1498ec622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d1707b8bc9444022f51a6edddc9d95ef363c409b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016135"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719158"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-Questo metodo determina se lo stato di modifica e continuazione di questo oggetto o del contenitore padre non è aggiornato. Un analizzatore di espressioni personalizzato non implementa questo metodo e restituisce sempre `E_NOTIMPL`.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
-);  
-```  
-  
-```csharp  
-int IsEncOutdated(  
-   out int pfEncOutdated  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pfEncOutdated`  
- [out] Diverso da zero (`TRUE`) se lo stato di modifica e continuazione non è aggiornato, zero (`FALSE`) in caso contrario.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
+Questo metodo determina se lo stato di modifica e continuazione di questo oggetto o del contenitore padre non è aggiornato. Un analizzatore di espressioni personalizzato non implementa questo metodo e restituisce sempre `E_NOTIMPL`.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT IsEncOutdated(
+   BOOL* pfEncOutdated
+);
+```
+
+```csharp
+int IsEncOutdated(
+   out int pfEncOutdated
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pfEncOutdated`
+
+ [out] Diverso da zero (`TRUE`) se lo stato di modifica e continuazione non è aggiornato, zero (`FALSE`) in caso contrario.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
 > [!NOTE]
->  Un analizzatore di espressioni personalizzato deve sempre restituire `E_NOTIMPL`.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
+>  Un analizzatore di espressioni personalizzato deve sempre restituire `E_NOTIMPL`.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

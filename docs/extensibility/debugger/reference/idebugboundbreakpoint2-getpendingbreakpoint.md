@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::GetPendingBreakpoint
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51bd7d649be51c2cc48c643cba10ef1cc90446d2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d4f0930537612d7292ddc23509ddf6cadd5cdd6f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316977"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716337"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Ottiene il punto di interruzione in sospeso da cui è stato creato il punto di interruzione associato specificato.
@@ -38,8 +38,9 @@ int GetPendingBreakpoint( 
 ```
 
 #### <a name="parameters"></a>Parametri
-`ppPendingBreakpoint`  
-[out] Restituisce il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) associato di oggetto che rappresenta il punto di interruzione in sospeso che è stato usato per creare questo punto di interruzione.
+`ppPendingBreakpoint`
+
+ [out] Restituisce il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) associato di oggetto che rappresenta il punto di interruzione in sospeso che è stato usato per creare questo punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -82,5 +83,5 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

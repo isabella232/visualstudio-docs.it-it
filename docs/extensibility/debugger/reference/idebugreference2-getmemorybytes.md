@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetMemoryBytes
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081a320c7d2ddd84712bc834fa9817d6f18edeca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20e08fdd59bd519358342c9cb8abbc1516d8637e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996389"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713841"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Ottiene i byte di memoria fisica contenenti il valore di un riferimento. Riservato per utilizzi futuri.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetMemoryBytes (   
-   IDebugMemoryBytes2** ppMemoryBytes  
-);  
-```  
-  
-```csharp  
-int GetMemoryBytes (   
-   out IDebugMemoryBytes2 ppMemoryBytes  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppMemoryBytes`  
- [out] Restituisce un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) oggetto che può essere utilizzato per recuperare la memoria che contiene il valore del riferimento.  
-  
-## <a name="return-value"></a>Valore restituito  
- Restituisce sempre `E_NOTIMPL`.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+Ottiene i byte di memoria fisica contenenti il valore di un riferimento. Riservato per usi futuri.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetMemoryBytes ( 
+   IDebugMemoryBytes2** ppMemoryBytes
+);
+```
+
+```csharp
+int GetMemoryBytes ( 
+   out IDebugMemoryBytes2 ppMemoryBytes
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppMemoryBytes`
+
+ [out] Restituisce un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) oggetto che può essere utilizzato per recuperare la memoria che contiene il valore del riferimento.
+
+## <a name="return-value"></a>Valore restituito
+ Restituisce sempre `E_NOTIMPL`.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
