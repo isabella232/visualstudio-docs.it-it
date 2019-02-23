@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetException | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::SetException
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e423f7817d47473111ac6eb1c5293127826c2b99
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034317"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698911"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Specifica come il motore di debug (DE) deve gestire una determinata eccezione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT SetException(   
-   EXCEPTION_INFO* pException  
-);  
-```  
-  
-```csharp  
-int SetException(   
-   EXCEPTION_INFO[] pException  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pException`  
- [in] Un' [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura che descrive l'eccezione e su come eseguire il debug.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Era possibile indicare un CRI per arrestare il programma genera un'eccezione in first-chance, ovvero la seconda possibilità, o non ereditarli affatto.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
+Specifica come il motore di debug (DE) deve gestire una determinata eccezione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT SetException( 
+   EXCEPTION_INFO* pException
+);
+```
+
+```csharp
+int SetException( 
+   EXCEPTION_INFO[] pException
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pException`
+
+ [in] Un' [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura che descrive l'eccezione e su come eseguire il debug.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Era possibile indicare un CRI per arrestare il programma genera un'eccezione in first-chance, ovvero la seconda possibilità, o non ereditarli affatto.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

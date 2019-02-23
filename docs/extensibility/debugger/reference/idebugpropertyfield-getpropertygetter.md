@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyField::GetPropertyGetter | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyField::GetPropertyGetter
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df84fc77443cdbc8554b3755385d3cd8682f1b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a50a9f28f7e430d37bb08139a6483218698b2eed
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041529"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706197"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
-Ottiene il metodo che ottiene la proprietà.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetPropertyGetter(   
-   IDebugMethodField** ppField  
-);  
-```  
-  
-```cpp  
-int GetPropertyGetter(  
-   out IDebugMethodField ppField  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppField`  
- [out] Restituisce un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) oggetto che rappresenta il metodo che ottiene la proprietà.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Per ottenere il metodo che imposta la proprietà [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) chiamare il metodo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
- [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+Ottiene il metodo che ottiene la proprietà.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetPropertyGetter( 
+   IDebugMethodField** ppField
+);
+```
+
+```cpp
+int GetPropertyGetter(
+   out IDebugMethodField ppField
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppField`
+
+ [out] Restituisce un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) oggetto che rappresenta il metodo che ottiene la proprietà.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Per ottenere il metodo che imposta la proprietà [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) chiamare il metodo.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
+- [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

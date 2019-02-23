@@ -11,65 +11,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe619a93b7e099f70e223c022d56dc4eb6e3df09
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012469"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702057"
 ---
 # <a name="load-vspackages"></a>Caricare i pacchetti VSPackage
-I pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta la funzionalità. Ad esempio, un pacchetto VSPackage viene caricato quando Visual Studio Usa un servizio che implementa il pacchetto VSPackage o una factory progetto. Questa funzionalità è denominata il caricamento ritardato, che viene usato ogni volta che è possibile migliorare le prestazioni.  
-  
+I pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta la funzionalità. Ad esempio, un pacchetto VSPackage viene caricato quando Visual Studio Usa un servizio che implementa il pacchetto VSPackage o una factory progetto. Questa funzionalità è denominata il caricamento ritardato, che viene usato ogni volta che è possibile migliorare le prestazioni.
+
 > [!NOTE]
->  Visual Studio può determinare determinate informazioni VSPackage, ad esempio i comandi che offre un pacchetto VSPackage, senza caricare il pacchetto VSPackage.  
-  
- I pacchetti VSPackage impostabili per caricare automaticamente in un contesto dell'interfaccia utente specifico, ad esempio, quando è aperta una soluzione. Il <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> questo contesto viene impostato dall'attributo.  
-  
-### <a name="autoload-a-vspackage-in-a-specific-context"></a>Caricare automaticamente un VSPackage in un contesto specifico  
-  
--   Aggiungere il `ProvideAutoLoad` gli attributi di VSPackage dell'attributo:  
-  
-    ```csharp  
-    [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
-    [PackageRegistration(UseManagedResourcesOnly = true)]  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID  
-    public class MyAutoloadedPackage : Package  
-    {. . .}  
-    ```  
-  
-     Visualizzare i campi enumerati di <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> per un elenco di contesti dell'interfaccia utente e i relativi valori GUID.  
-  
--   Impostare un punto di interruzione il <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (metodo).  
-  
--   Compilare il pacchetto VSPackage e avviare il debug.  
-  
--   Caricare una soluzione oppure crearne uno.  
-  
-     Il pacchetto VSPackage viene caricato e si arresta in corrispondenza del punto di interruzione.  
-  
-## <a name="force-a-vspackage-to-load"></a>Forzare un pacchetto VSPackage da caricare  
- In alcune circostanze un pacchetto VSPackage potrebbe essere necessario forzare un altro VSPackage da caricare. Ad esempio, un pacchetto VSPackage leggero potrebbe caricare un pacchetto VSPackage di dimensioni maggiori in un contesto che non è disponibile come un CMDUIContext.  
-  
- È possibile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metodo per forzare un pacchetto VSPackage da caricare.  
-  
--   Inserire questo codice nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo del pacchetto VSPackage che forza un altro VSPackage da caricare:  
-  
-    ```csharp  
-    IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
-    if (shell == null) return;  
-  
-    IVsPackage package = null;  
-    Guid PackageToBeLoadedGuid =   
-        new Guid(Microsoft.PackageToBeLoaded.GuidList.guidPackageToBeLoadedPkgString);  
-    shell.LoadPackage(ref PackageToBeLoadedGuid, out package);  
-  
-    ```  
-  
-     Quando viene inizializzato il pacchetto VSPackage, forzerà `PackageToBeLoaded` da caricare.  
-  
+>  Visual Studio può determinare determinate informazioni VSPackage, ad esempio i comandi che offre un pacchetto VSPackage, senza caricare il pacchetto VSPackage.
+
+ I pacchetti VSPackage impostabili per caricare automaticamente in un contesto dell'interfaccia utente specifico, ad esempio, quando è aperta una soluzione. Il <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> questo contesto viene impostato dall'attributo.
+
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Caricare automaticamente un VSPackage in un contesto specifico
+
+-   Aggiungere il `ProvideAutoLoad` gli attributi di VSPackage dell'attributo:
+
+    ```csharp
+    [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
+    [PackageRegistration(UseManagedResourcesOnly = true)]
+    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
+    [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
+    public class MyAutoloadedPackage : Package
+    {. . .}
+    ```
+
+     Visualizzare i campi enumerati di <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> per un elenco di contesti dell'interfaccia utente e i relativi valori GUID.
+
+-   Impostare un punto di interruzione il <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (metodo).
+
+-   Compilare il pacchetto VSPackage e avviare il debug.
+
+-   Caricare una soluzione oppure crearne uno.
+
+     Il pacchetto VSPackage viene caricato e si arresta in corrispondenza del punto di interruzione.
+
+## <a name="force-a-vspackage-to-load"></a>Forzare un pacchetto VSPackage da caricare
+ In alcune circostanze un pacchetto VSPackage potrebbe essere necessario forzare un altro VSPackage da caricare. Ad esempio, un pacchetto VSPackage leggero potrebbe caricare un pacchetto VSPackage di dimensioni maggiori in un contesto che non è disponibile come un CMDUIContext.
+
+ È possibile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metodo per forzare un pacchetto VSPackage da caricare.
+
+-   Inserire questo codice nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo del pacchetto VSPackage che forza un altro VSPackage da caricare:
+
+    ```csharp
+    IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
+    if (shell == null) return;
+
+    IVsPackage package = null;
+    Guid PackageToBeLoadedGuid =
+        new Guid(Microsoft.PackageToBeLoaded.GuidList.guidPackageToBeLoadedPkgString);
+    shell.LoadPackage(ref PackageToBeLoadedGuid, out package);
+
+    ```
+
+     Quando viene inizializzato il pacchetto VSPackage, forzerà `PackageToBeLoaded` da caricare.
+
      Il caricamento force non deve essere utilizzato per la comunicazione di VSPackage. Uso [usare e forniscono i servizi](../extensibility/using-and-providing-services.md) invece.
-  
-## <a name="see-also"></a>Vedere anche  
- [Pacchetti VSPackage](../extensibility/internals/vspackages.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 helpviewer_keywords:
@@ -12,57 +12,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d144d02a34052cc06e5f63df75a2a7db3be4887
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b5381cff406e3b6e182a6ecbb191381061fb3758
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984015"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710383"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Controlla che l'esecuzione viene arrestata la visione per l'esecuzione (o) venga eseguita il thread specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT WatchForThreadStep(   
-   IDebugProgram2* pOriginatingProgram,  
-   DWORD           dwTid,  
-   BOOL            fWatch,  
-   DWORD           dwFrame  
-);  
-```  
-  
-```csharp  
-int WatchForThreadStep(   
-   IDebugProgram2 pOriginatingProgram,  
-   uint           dwTid,  
-   int            fWatch,  
-   uint           dwFrame  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pOriginatingProgram`  
- [in] Un' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in corso rientri.  
-  
- `dwTid`  
- [in] Specifica l'identificatore del thread da controllare.  
-  
- `fWatch`  
- [in] Diverso da zero (`TRUE`) significa che inizia a guardare per l'esecuzione sul thread identificato da `dwTid`; in caso contrario, zero (`FALSE`) significa interruzione il controllo per l'esecuzione su `dwTid`.  
-  
- `dwFrame`  
- [in] Specifica un indice dei fotogrammi che controlla il tipo di passaggio. Quando si tratta di valore è zero (0), il tipo di passaggio è "eseguire l'istruzione" e il programma deve essere arrestata ogni volta che il thread identificato da `dwTid` esegue. Quando `dwFrame` è diverso da zero, il tipo di passaggio è "Esegui istruzione/routine" e il programma deve essere interrotta solo se il thread identificato da `dwTid` è in esecuzione in un frame di cui indice è uguale o superiore nello stack di `dwFrame`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Quando i passaggi da un programma, identificato dal gestore di sessione di debug (SDM) il `pOriginatingProgram` parametro, notifica a tutti gli altri programmi collegati chiamando questo metodo.  
-  
- Questo metodo è applicabile solo per l'esecuzione di istruzioni stesso thread.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+Controlla che l'esecuzione viene arrestata la visione per l'esecuzione (o) venga eseguita il thread specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT WatchForThreadStep( 
+   IDebugProgram2* pOriginatingProgram,
+   DWORD           dwTid,
+   BOOL            fWatch,
+   DWORD           dwFrame
+);
+```
+
+```csharp
+int WatchForThreadStep( 
+   IDebugProgram2 pOriginatingProgram,
+   uint           dwTid,
+   int            fWatch,
+   uint           dwFrame
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pOriginatingProgram`
+
+ [in] Un' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in corso rientri.
+
+ `dwTid`
+
+ [in] Specifica l'identificatore del thread da controllare.
+
+ `fWatch`
+
+ [in] Diverso da zero (`TRUE`) significa che inizia a guardare per l'esecuzione sul thread identificato da `dwTid`; in caso contrario, zero (`FALSE`) significa interruzione il controllo per l'esecuzione su `dwTid`.
+
+ `dwFrame`
+
+ [in] Specifica un indice dei fotogrammi che controlla il tipo di passaggio. Quando si tratta di valore è zero (0), il tipo di passaggio è "eseguire l'istruzione" e il programma deve essere arrestata ogni volta che il thread identificato da `dwTid` esegue. Quando `dwFrame` è diverso da zero, il tipo di passaggio è "Esegui istruzione/routine" e il programma deve essere interrotta solo se il thread identificato da `dwTid` è in esecuzione in un frame di cui indice è uguale o superiore nello stack di `dwFrame`.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Quando i passaggi da un programma, identificato dal gestore di sessione di debug (SDM) il `pOriginatingProgram` parametro, notifica a tutti gli altri programmi collegati chiamando questo metodo.
+
+ Questo metodo è applicabile solo per l'esecuzione di istruzioni stesso thread.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

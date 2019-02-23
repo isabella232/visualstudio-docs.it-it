@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57d6c62add9b48d0119ac411d6aa7d6b96878ba5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 519ba206b334ef9c955245c152fb14663366472b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029003"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698833"
 ---
 # <a name="buttontext-element"></a>Elemento ButtonText
-Questo campo consente di specificare il testo visualizzato nei vari menu. Per impostazione predefinita, il `ButtonText` elemento compare in un controller di menu. Il `ButtonText` elemento diventa l'impostazione predefinita anche se gli altri campi di testo sono vuoti. Il `ButtonText` elemento non può essere vuoto anche se vengono specificati gli altri campi di testo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<ButtonText>My Command</ButtonText>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
- Nessuno.  
-  
-### <a name="child-elements"></a>Elementi figlio  
- Nessuno.  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad esempio `ButtonText` e `CommandName`.|  
-  
-## <a name="text-value"></a>Valore di testo  
- Il valore del testo di `ButtonText` elemento fornisce il testo visualizzato per le voci di menu, combos e altri elementi dell'interfaccia utente con testo visibile.  
-  
-## <a name="see-also"></a>Vedere anche  
- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Questo campo consente di specificare il testo visualizzato nei vari menu. Per impostazione predefinita, il `ButtonText` elemento compare in un controller di menu. Il `ButtonText` elemento diventa l'impostazione predefinita anche se gli altri campi di testo sono vuoti. Il `ButtonText` elemento non può essere vuoto anche se vengono specificati gli altri campi di testo.
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<ButtonText>My Command</ButtonText>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+ Nessuno.
+
+### <a name="child-elements"></a>Elementi figlio
+ Nessuno.
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad esempio `ButtonText` e `CommandName`.|
+
+## <a name="text-value"></a>Valore di testo
+ Il valore del testo di `ButtonText` elemento fornisce il testo visualizzato per le voci di menu, combos e altri elementi dell'interfaccia utente con testo visibile.
+
+## <a name="see-also"></a>Vedere anche
+- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

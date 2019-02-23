@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315417"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709252"
 ---
 # <a name="bpstate"></a>BP_STATE
 Specifica l'esistenza di un punto di interruzione associato e specifica se è abilitata.
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>Membri
-BPS_NONE  
-Specifica che sia presente alcun punto di interruzione.
+BPS_NONE specifica che è presente alcun punto di interruzione.
 
-BPS_DELETED  
-Specifica che il punto di interruzione è stato eliminato.
+BPS_DELETED specifica che il punto di interruzione è stato eliminato.
 
-BPS_DISABLED  
-Specifica che il punto di interruzione è disabilitata.
+BPS_DISABLED specifica che il punto di interruzione è disabilitata.
 
-BPS_ENABLED  
-Specifica che il punto di interruzione è abilitato.
+BPS_ENABLED specifica che il punto di interruzione è abilitato.
 
 ## <a name="remarks"></a>Note
 Restituito dal [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (metodo).
@@ -67,5 +63,5 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

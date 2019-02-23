@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e9f9c11faf18c1131e7e50de1747ba0e332d00c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9d5c45c523263f469df7e89c484c252f1ed843d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930368"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699353"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Estendi e Personalizza finestre degli strumenti
-Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio il **delle proprietà** finestra, il **Output** finestra e il **elenco attività** finestra sono tipi di finestre degli strumenti.  
-  
-## <a name="tool-windows"></a>Finestre degli strumenti  
- Finestre degli strumenti di Visual Studio sono finestre in genere di sola lettura che non sono basati su file. In questo differiscono dalle finestre dei documenti, che visualizzano file in modalità di lettura/scrittura. La **casella degli strumenti**e le finestre **Esplora soluzioni**, **Proprietà** e **Web browser** sono tutte esempi di finestre degli strumenti.  
-  
- Per scoprire come creare una semplice finestra degli strumenti, vedere [aggiungere una finestra degli strumenti](../extensibility/adding-a-tool-window.md).  
-  
- Per registrare una finestra degli strumenti con Visual Studio, vedere [registrare una finestra degli strumenti](../extensibility/registering-a-tool-window.md).  
-  
- Le finestre degli strumenti sono a istanza singola per impostazione predefinita, ovvero è possibile aprire una sola istanza di una finestra degli strumenti per volta. Una volta aperta, una finestra degli strumenti a istanza singola resta aperta fino a quando non viene chiuso l'IDE. Quando si chiude una finestra degli strumenti a istanza singola, cambia solo la sua visibilità. È anche possibile creare finestre degli strumenti a più istanze, in modo da permettere l'apertura di più istanze della finestra contemporaneamente. Visualizzare [creare una finestra degli strumenti a istanza multipla](../extensibility/creating-a-multi-instance-tool-window.md) per altre informazioni.  
-  
- Finestre degli strumenti possono essere *dinamica*, vale a dire che sono visibili ogni volta che si applica il contesto dell'interfaccia utente correlato. L'uso della visibilità automatica può ridurre il disordine delle finestre nell'IDE. Per altre informazioni, vedere [aprire una finestra degli strumenti dinamica](../extensibility/opening-a-dynamic-tool-window.md).  
-  
- Le finestre degli strumenti possono essere ancorate, mobili o a schede nella cornice del documento. La cornice della finestra degli strumenti viene fornita dall'IDE ed è usata per controllare le dimensioni, la posizione, lo stato di ancoraggio e altre proprietà persistenti. Il riquadro della finestra degli strumenti visualizza il contenuto. Le dimensioni e la posizione predefinite vengono applicate solo alla prima apertura della finestra degli strumenti. Successivamente, lo stato della finestra viene salvato in modo permanente.  
-  
- I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override della proprietà <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> per restituire l'handle del controllo ospitato.  
-  
- È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [Aggiungere una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [Aggiungere un menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [Aggiungi ricerca di una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).  
-  
- È possibile sottoscrivere gli eventi di finestra degli strumenti: [Sottoscrivere un evento](../extensibility/subscribing-to-an-event.md).  
-  
-## <a name="extend-existing-tool-windows"></a>Estendere finestre degli strumenti esistenti  
- È possibile aggiungere informazioni sulla finestra degli strumenti a una nuova **opzioni** pagina e una nuova impostazione sul **delle proprietà** pagina, scrivere il **elenco attività** e **Output**  windows. Per altre informazioni, vedere [estendere le finestre delle proprietà, elenco attività, Output e le opzioni](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) e [estendere le finestre delle proprietà, elenco attività, Output e opzioni](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
-  
-## <a name="modal-dialog-boxes"></a>Finestre di dialogo modali  
- In un'estensione di Visual Studio è necessario creare finestre di dialogo modali per derivazione da <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, che consente di controllare queste e il resto dell'interfaccia utente. Per altre informazioni, vedere [creare e gestire le finestre di dialogo modale](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)
+Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio il **delle proprietà** finestra, il **Output** finestra e il **elenco attività** finestra sono tipi di finestre degli strumenti.
+
+## <a name="tool-windows"></a>Finestre degli strumenti
+ Finestre degli strumenti di Visual Studio sono finestre in genere di sola lettura che non sono basati su file. In questo differiscono dalle finestre dei documenti, che visualizzano file in modalità di lettura/scrittura. La **casella degli strumenti**e le finestre **Esplora soluzioni**, **Proprietà** e **Web browser** sono tutte esempi di finestre degli strumenti.
+
+ Per scoprire come creare una semplice finestra degli strumenti, vedere [aggiungere una finestra degli strumenti](../extensibility/adding-a-tool-window.md).
+
+ Per registrare una finestra degli strumenti con Visual Studio, vedere [registrare una finestra degli strumenti](../extensibility/registering-a-tool-window.md).
+
+ Le finestre degli strumenti sono a istanza singola per impostazione predefinita, ovvero è possibile aprire una sola istanza di una finestra degli strumenti per volta. Una volta aperta, una finestra degli strumenti a istanza singola resta aperta fino a quando non viene chiuso l'IDE. Quando si chiude una finestra degli strumenti a istanza singola, cambia solo la sua visibilità. È anche possibile creare finestre degli strumenti a più istanze, in modo da permettere l'apertura di più istanze della finestra contemporaneamente. Visualizzare [creare una finestra degli strumenti a istanza multipla](../extensibility/creating-a-multi-instance-tool-window.md) per altre informazioni.
+
+ Finestre degli strumenti possono essere *dinamica*, vale a dire che sono visibili ogni volta che si applica il contesto dell'interfaccia utente correlato. L'uso della visibilità automatica può ridurre il disordine delle finestre nell'IDE. Per altre informazioni, vedere [aprire una finestra degli strumenti dinamica](../extensibility/opening-a-dynamic-tool-window.md).
+
+ Le finestre degli strumenti possono essere ancorate, mobili o a schede nella cornice del documento. La cornice della finestra degli strumenti viene fornita dall'IDE ed è usata per controllare le dimensioni, la posizione, lo stato di ancoraggio e altre proprietà persistenti. Il riquadro della finestra degli strumenti visualizza il contenuto. Le dimensioni e la posizione predefinite vengono applicate solo alla prima apertura della finestra degli strumenti. Successivamente, lo stato della finestra viene salvato in modo permanente.
+
+ I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override della proprietà <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> per restituire l'handle del controllo ospitato.
+
+ È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [Aggiungere una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [Aggiungere un menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [Aggiungi ricerca di una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).
+
+ È possibile sottoscrivere gli eventi di finestra degli strumenti: [Sottoscrivere un evento](../extensibility/subscribing-to-an-event.md).
+
+## <a name="extend-existing-tool-windows"></a>Estendere finestre degli strumenti esistenti
+ È possibile aggiungere informazioni sulla finestra degli strumenti a una nuova **opzioni** pagina e una nuova impostazione sul **delle proprietà** pagina, scrivere il **elenco attività** e **Output**  windows. Per altre informazioni, vedere [estendere le finestre delle proprietà, elenco attività, Output e le opzioni](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) e [estendere le finestre delle proprietà, elenco attività, Output e opzioni](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).
+
+## <a name="modal-dialog-boxes"></a>Finestre di dialogo modali
+ In un'estensione di Visual Studio è necessario creare finestre di dialogo modali per derivazione da <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, che consente di controllare queste e il resto dell'interfaccia utente. Per altre informazioni, vedere [creare e gestire le finestre di dialogo modale](../extensibility/creating-and-managing-modal-dialog-boxes.md).
+
+## <a name="see-also"></a>Vedere anche
+- [Creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)

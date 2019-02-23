@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3541355da9ea144129e730efe9876b4e6d642f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009570"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696519"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -45,17 +45,13 @@ enum enum_PROCESS_INFO_FLAGS { 
 
 ## <a name="members"></a>Membri
 
-PIFLAG_SYSTEM_PROCESS  
-Indica che il processo è un processo di sistema.
+PIFLAG_SYSTEM_PROCESS indica che il processo è un processo di sistema.
 
-PIFLAG_DEBUGGER_ATTACHED  
-Indica che il processo viene eseguito il debug da un debugger. Potrebbe essere un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger o potrebbe essere alcuni altri debugger, ad esempio, WinDbg.
+PIFLAG_DEBUGGER_ATTACHED indica che il processo viene eseguito il debug da un debugger. Potrebbe essere un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger o potrebbe essere alcuni altri debugger, ad esempio, WinDbg.
 
-PIFLAG_PROCESS_STOPPED  
-Indica che il processo viene arrestato. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
+PIFLAG_PROCESS_STOPPED indica che il processo viene arrestato. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
 
-PIFLAG_PROCESS_RUNNING  
-Indica che il processo è in esecuzione. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
+PIFLAG_PROCESS_RUNNING indica che l'esecuzione del processo. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
 
 ## <a name="remarks"></a>Note
 
@@ -73,5 +69,5 @@ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
 
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

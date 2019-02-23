@@ -1,7 +1,7 @@
 ---
 title: IDebugLoadCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugLoadCompleteEvent2
 helpviewer_keywords:
@@ -12,36 +12,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 83bbeb7decda65602202813229315101843e0873
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742392"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701004"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
-Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando viene caricato un programma, ma prima che venga eseguito qualsiasi codice.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-IDebugLoadCompleteEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Note per gli implementatori  
- La Germania implementa questa interfaccia per segnalare che un programma è stato caricato correttamente. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](/cpp/atl/queryinterface) per l'accesso di `IDebugEvent2` interfaccia.  
-  
-## <a name="notes-for-callers"></a>Note per i chiamanti  
- La Germania crea e invia l'oggetto evento per segnalare che un programma è stato caricato correttamente. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando associato al programma in fase di debug.  
-   
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando viene caricato un programma, ma prima che venga eseguito qualsiasi codice.
+
+## <a name="syntax"></a>Sintassi
+
+```
+IDebugLoadCompleteEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Note per gli implementatori
+ La Germania implementa questa interfaccia per segnalare che un programma è stato caricato correttamente. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](/cpp/atl/queryinterface) per l'accesso di `IDebugEvent2` interfaccia.
+
+## <a name="notes-for-callers"></a>Note per i chiamanti
+ La Germania crea e invia l'oggetto evento per segnalare che un programma è stato caricato correttamente. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando associato al programma in fase di debug.
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: msdbg.h
+
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+- [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

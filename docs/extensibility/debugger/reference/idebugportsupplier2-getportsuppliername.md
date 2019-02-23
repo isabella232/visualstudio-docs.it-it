@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2::GetPortSupplierName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2::GetPortSupplierName
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d092cc049a65ba4f232c9aefd00536a78115b5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 107db070693f964f6e16e0adcb4827b3dc9ae17d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022404"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703157"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
-Ottiene il nome fornitore della porta.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetPortSupplierName(   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetPortSupplierName(   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pbstrName`  
- [out] Restituisce il nome del fornitore della porta.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
+Ottiene il nome fornitore della porta.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetPortSupplierName( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetPortSupplierName( 
+   out string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pbstrName`
+
+ [out] Restituisce il nome del fornitore della porta.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

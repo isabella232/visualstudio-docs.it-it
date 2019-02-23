@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 helpviewer_keywords:
@@ -12,47 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1c2c5478bb24f80646dcaacf64a9e6efb2e425
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03bfeeb30fad4f332a3a747dcf8468c4fb39ef56
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988324"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704202"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
-Crea una copia di un oggetto dati specifico per l'analizzatore di espressioni (EE).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT CreateReplacementObject(  
-   IEEDataStorage*  dataIn,  
-   IEEDataStorage** dataOut  
-);  
-```  
-  
-```csharp  
-int CreateReplacementObject(  
-   IEEDataStorage     dataIn,  
-   out IEEDataStorage dataOut  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `dataIn`  
- [in] Un' [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che contiene i dati da copiare.  
-  
- `dataOut`  
- [out] Restituisce un nuovo `IEEDataStorage` oggetto.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo viene specificato un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che rappresenta una matrice di byte. Questo oggetto dati in entrata non è in genere implementato dal motore di esecuzione. Tuttavia, l'oggetto restituito da questo metodo viene sempre implementato dal motore di esecuzione, che consente di implementare EE il `IEEDataStorage` interfaccia su qualsiasi classe desiderata.  
-  
- Si noti che i dati forniti da in ingresso `IEEDataStorage` oggetto debba essere gli stessi dati in uscita `IEEDataStorage` oggetto.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+Crea una copia di un oggetto dati specifico per l'analizzatore di espressioni (EE).
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT CreateReplacementObject(
+   IEEDataStorage*  dataIn,
+   IEEDataStorage** dataOut
+);
+```
+
+```csharp
+int CreateReplacementObject(
+   IEEDataStorage     dataIn,
+   out IEEDataStorage dataOut
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `dataIn`
+
+ [in] Un' [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che contiene i dati da copiare.
+
+ `dataOut`
+
+ [out] Restituisce un nuovo `IEEDataStorage` oggetto.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo viene specificato un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che rappresenta una matrice di byte. Questo oggetto dati in entrata non è in genere implementato dal motore di esecuzione. Tuttavia, l'oggetto restituito da questo metodo viene sempre implementato dal motore di esecuzione, che consente di implementare EE il `IEEDataStorage` interfaccia su qualsiasi classe desiderata.
+
+ Si noti che i dati forniti da in ingresso `IEEDataStorage` oggetto debba essere gli stessi dati in uscita `IEEDataStorage` oggetto.
+
+## <a name="see-also"></a>Vedere anche
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

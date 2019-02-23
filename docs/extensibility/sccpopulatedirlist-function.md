@@ -12,61 +12,67 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949948"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711592"
 ---
 # <a name="sccpopulatedirlist-function"></a>Funzione SccPopulateDirList
-Questa funzione determina le directory e, facoltativamente, i file vengono archiviati nel controllo del codice sorgente, dato un elenco di directory da esaminare.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-SCCRTN SccPopulateDirList(  
-   LPVOID        pContext,  
-   LONG          nDirs,  
-   LPCSTR*       lpDirPaths,  
-   POPDIRLISTFUNCpfnPopulate,  
-   LPVOID        pvCallerData,  
-   LONG          fOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
-  
- nDirs  
- [in] Numero di percorsi di directory nella `lpDirPaths` matrice.  
-  
- lpDirPaths  
- [in] Matrice di percorsi di directory da esaminare.  
-  
- pfnPopulate  
- [in] Funzione di callback da chiamare per ogni nome del file nel percorso di directory e (facoltativamente) `lpDirPaths` (vedere [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) per informazioni dettagliate).  
-  
- pvCallerData  
- [in] Valore che deve essere passato alla funzione di callback invariato.  
-  
- fOptions  
- [in] Una combinazione di valori che controllano il modo in cui vengono elaborate le directory (vedere la sezione "PopulateDirList flags" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).  
-  
-## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
-  
-|Value|Descrizione|  
-|-----------|-----------------|  
-|SCC_OK|L'operazione è stata completata.|  
-|SCC_E_UNKNOWNERROR|Si è verificato un errore.|  
-  
-## <a name="remarks"></a>Note  
- Solo le directory e, facoltativamente, i nomi di file che sono effettivamente nel repository del controllo del codice sorgente vengono passati alla funzione di callback.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)   
- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
- [Codici di errore](../extensibility/error-codes.md)
+Questa funzione determina le directory e, facoltativamente, i file vengono archiviati nel controllo del codice sorgente, dato un elenco di directory da esaminare.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+SCCRTN SccPopulateDirList(
+   LPVOID        pContext,
+   LONG          nDirs,
+   LPCSTR*       lpDirPaths,
+   POPDIRLISTFUNCpfnPopulate,
+   LPVOID        pvCallerData,
+   LONG          fOptions
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ pContext
+
+[in] Il puntatore di contesto del plug-in controllo di origine.
+
+ nDirs
+
+[in] Numero di percorsi di directory nella `lpDirPaths` matrice.
+
+ lpDirPaths
+
+[in] Matrice di percorsi di directory da esaminare.
+
+ pfnPopulate
+
+[in] Funzione di callback da chiamare per ogni nome del file nel percorso di directory e (facoltativamente) `lpDirPaths` (vedere [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) per informazioni dettagliate).
+
+ pvCallerData
+
+[in] Valore che deve essere passato alla funzione di callback invariato.
+
+ fOptions
+
+[in] Una combinazione di valori che controllano il modo in cui vengono elaborate le directory (vedere la sezione "PopulateDirList flags" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).
+
+## <a name="return-value"></a>Valore restituito
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+
+|Value|Descrizione|
+|-----------|-----------------|
+|SCC_OK|L'operazione è stata completata.|
+|SCC_E_UNKNOWNERROR|Si è verificato un errore.|
+
+## <a name="remarks"></a>Note
+ Solo le directory e, facoltativamente, i nomi di file che sono effettivamente nel repository del controllo del codice sorgente vengono passati alla funzione di callback.
+
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+- [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)
+- [POPLISTFUNC](../extensibility/popdirlistfunc.md)
+- [Codici di errore](../extensibility/error-codes.md)

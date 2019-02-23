@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugBoundBreakpoints2::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugBoundBreakpoints2::Reset
 helpviewer_keywords:
@@ -12,33 +12,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 524eb5dd36ef8a3eacd607f156b65e0a6619dcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9cd41a82497f232792148a3096b2296db03c834
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999678"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698417"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
-Reimposta l'enumerazione sul primo elemento.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT Reset(  
-   void  
-);  
-```  
-  
-```csharp  
-int Reset();  
-```  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Dopo che questo metodo viene chiamato, la chiamata successiva per la [successivo](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) metodo restituisce il primo elemento dell'enumerazione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
+Reimposta l'enumerazione sul primo elemento.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT Reset(
+   void
+);
+```
+
+```csharp
+int Reset();
+```
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Dopo che questo metodo viene chiamato, la chiamata successiva per la [successivo](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md) metodo restituisce il primo elemento dell'enumerazione.
+
+## <a name="see-also"></a>Vedere anche
+- [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
