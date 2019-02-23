@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::CreateObjectID | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::CreateObjectID
 helpviewer_keywords:
@@ -12,39 +12,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d833f0d01cb6abda3383e1f96d1563de96b7dff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a523dd7886e46cf1df7c6e70024a052f62ca4748
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991710"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694920"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
-Crea un ID univoco per questa proprietà per assicurarsi che sia univoco tra tutte le altre proprietà.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT CreateObjectID(  
-   void  
-);  
-```  
-  
-```csharp  
-int CreateObjectID();  
-```  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo viene chiamato quando il gestore di sessione di debug vuole assicurarsi che questa proprietà è identificata in modo univoco tra tutte le altre proprietà. Il motore di debug (DE) supporta questo metodo, a meno che le proprietà che si occupa sono già identificate. Se la Germania non supporta questo metodo, viene restituito `E_NOTIMPL`.  
-  
- Qualsiasi ID univoco creato con `CreateObjectID` viene eliminato quando il [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) viene chiamato il metodo; ciò indica anche la fine dell'esigenza di identifica in modo univoco questa proprietà.  
-  
+Crea un ID univoco per questa proprietà per assicurarsi che sia univoco tra tutte le altre proprietà.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT CreateObjectID(
+   void
+);
+```
+
+```csharp
+int CreateObjectID();
+```
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo viene chiamato quando il gestore di sessione di debug vuole assicurarsi che questa proprietà è identificata in modo univoco tra tutte le altre proprietà. Il motore di debug (DE) supporta questo metodo, a meno che le proprietà che si occupa sono già identificate. Se la Germania non supporta questo metodo, viene restituito `E_NOTIMPL`.
+
+ Qualsiasi ID univoco creato con `CreateObjectID` viene eliminato quando il [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) viene chiamato il metodo; ciò indica anche la fine dell'esigenza di identifica in modo univoco questa proprietà.
+
 > [!NOTE]
->  Non è disponibile alcun metodo per recuperare l'ID univoco, in modo che la Germania è possibile eseguire qualsiasi risultato per ID univoci quando la `CreateObjectID` viene chiamato il metodo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)
+>  Non è disponibile alcun metodo per recuperare l'ID univoco, in modo che la Germania è possibile eseguire qualsiasi risultato per ID univoci quando la `CreateObjectID` viene chiamato il metodo.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

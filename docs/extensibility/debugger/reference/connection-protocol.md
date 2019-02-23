@@ -1,7 +1,7 @@
 ---
 title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONNECTION_PROTOCOL
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dcf3d271d331664d6d2ef210868245b50c264d6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316484"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705833"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Indica il protocollo usato per la comunicazione tra un server di debug e il pacchetto di debug (DE).
@@ -49,26 +49,19 @@ public enum CONNECTION_PROTOCOL {
 ```
 
 #### <a name="parameters"></a>Parametri
-CONNECTION_NONE  
-Non è stata stabilita alcuna connessione a un server.
+È diventata CONNECTION_NONE Nessuna connessione a un server.
 
-CONNECTION_UNKNOWN  
-È stata stabilita una connessione, ma è di tipo sconosciuto.
+È stata stabilita CONNECTION_UNKNOWN una connessione, ma è di tipo sconosciuto.
 
-CONNECTION_LOCAL  
-Connessione è a un server locale.
+Connessione CONNECTION_LOCAL è a un server locale.
 
-CONNECTION_PIPE  
-Connessione avviene tramite una named pipe.
+Connessione CONNECTION_PIPE avviene tramite una named pipe.
 
-CONNECTION_TCPIP  
-Connessione Usa TCP/IP.
+Connessione CONNECTION_TCPIP utilizza TCP/IP.
 
-CONNECTION_HTTP  
-Connessione utilizza HTTP (tramite un server Web).
+Connessione CONNECTION_HTTP utilizza HTTP (tramite un server Web).
 
-CONNECTION_OTHER  
-Un altro tipo di connessione è stato stabilito (questo valore non viene attualmente utilizzato).
+Un altro tipo di connessione è stato stabilito CONNECTION_OTHER (questo valore non viene attualmente utilizzato).
 
 ## <a name="remarks"></a>Note
 Questi valori vengono restituiti dai [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) (metodo).
@@ -81,5 +74,5 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

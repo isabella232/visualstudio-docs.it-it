@@ -10,28 +10,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 351978f720f1aea47650eda7e8f213e8014320c0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f4f2fd84a818df43c62d60cf7fd2183e714eaa6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957156"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705898"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. m_task campo
-Rappresenta l'inizializzazione differita compilate attività.  
-  
- **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Assembly:** mscorlib (in mscorlib. dll)  
-  
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```csharp  
-.field private class System.Threading.Tasks.Task`1<!TResult> m_task  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Elementi interni delle estensioni parallele per .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Rappresenta l'inizializzazione differita compilate attività.
+
+ **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Assembly:** mscorlib (in mscorlib. dll)
+
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).
+
+## <a name="syntax"></a>Sintassi
+
+```csharp
+.field private class System.Threading.Tasks.Task`1<!TResult> m_task
+```
+
+## <a name="see-also"></a>Vedere anche
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
+- [Elementi interni delle estensioni parallele per .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

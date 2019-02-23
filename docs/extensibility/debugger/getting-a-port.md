@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315716"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695986"
 ---
 # <a name="get-a-port"></a>Ottenere una porta
 Una porta rappresenta una connessione a un computer in cui i processi in esecuzione. Tale computer potrebbe essere il computer locale o in un computer remoto (che potrebbe eventualmente essere con sistema operativo non basate su Windows, vedere [porte](../../extensibility/debugger/ports.md) per altre informazioni).
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Registrazione del programma](../../extensibility/debugger/registering-the-program.md)  
-[Abilitazione di un programma da sottoporre a debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[Fornitori di porte](../../extensibility/debugger/port-suppliers.md)  
-[Porte](../../extensibility/debugger/ports.md)
+- [Registrazione del programma](../../extensibility/debugger/registering-the-program.md)
+- [Abilitazione di un programma da sottoporre a debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)
+- [Porte](../../extensibility/debugger/ports.md)

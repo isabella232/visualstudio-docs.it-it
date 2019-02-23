@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugErrorBreakpoints2::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugErrorBreakpoints2::Clone
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384476354f0f638f79d8c5e921bd09d9ca1b34ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce1b25c032dcdd7b2b9d1b2908904d1eaee6cd9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935462"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698534"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
-Restituisce una copia dell'enumerazione corrente come oggetto separato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT Clone(  
-   IEnumDebugErrorBreakpoints2** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugErrorBreakpoints2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppEnum`  
- [out] Restituisce una copia di questa enumerazione come oggetto separato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- La copia dell'enumerazione ha lo stesso stato originale al momento che questo metodo viene chiamato. Tuttavia, gli Stati dell'originale e la copia sono separati e possono essere modificati singolarmente.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
+Restituisce una copia dell'enumerazione corrente come oggetto separato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT Clone(
+   IEnumDebugErrorBreakpoints2** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugErrorBreakpoints2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppEnum`
+
+ [out] Restituisce una copia di questa enumerazione come oggetto separato.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ La copia dell'enumerazione ha lo stesso stato originale al momento che questo metodo viene chiamato. Tuttavia, gli Stati dell'originale e la copia sono separati e possono essere modificati singolarmente.
+
+## <a name="see-also"></a>Vedere anche
+- [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

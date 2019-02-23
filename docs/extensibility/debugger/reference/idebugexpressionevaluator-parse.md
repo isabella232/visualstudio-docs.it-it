@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator::Parse | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionEvaluator::Parse
 helpviewer_keywords:
@@ -12,66 +12,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e232ba0fb13cfdb383d7f63a402b361e296505e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971273"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693916"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
-Questo metodo converte una stringa di espressione in un'espressione analizzata.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT Parse(   
-   LPCOLESTR                upstrExpression,  
-   PARSEFLAGS               dwFlags,  
-   UINT                     nRadix,  
-   BSTR*                    pbstrError,  
-   UINT*                    pichError,  
-   IDebugParsedExpression** ppParsedExpression  
-);  
-```  
-  
-```csharp  
-int Parse(  
-   string                     upstrExpression,   
-   enum_PARSEFLAGS            dwFlags,   
-   uint                       nRadix,   
-   out string                 pbstrError,   
-   out uint                   pichError,   
-   out IDebugParsedExpression ppParsedExpression  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `upstrExpression`  
- [in] Stringa dell'espressione da analizzare.  
-  
- `dwFlags`  
- [in] Una raccolta di [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) costanti che determinano il modo in cui l'espressione è da analizzare.  
-  
- `nRadix`  
- [in] Radice da utilizzare per interpretare le informazioni numeriche.  
-  
- `pbstrError`  
- [out] Restituisce l'errore come testo leggibile dall'utente.  
-  
- `pichError`  
- [out] Restituisce la posizione del carattere dell'inizio dell'errore nella stringa di espressione.  
-  
- `ppParsedExpression`  
- [out] Restituisce l'espressione analizzata in un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo produce un'espressione analizzata, non un valore effettivo. Un'espressione analizzata è pronta per essere valutata, vale a dire, convertito in un valore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
- [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
- [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
+Questo metodo converte una stringa di espressione in un'espressione analizzata.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT Parse( 
+   LPCOLESTR                upstrExpression,
+   PARSEFLAGS               dwFlags,
+   UINT                     nRadix,
+   BSTR*                    pbstrError,
+   UINT*                    pichError,
+   IDebugParsedExpression** ppParsedExpression
+);
+```
+
+```csharp
+int Parse(
+   string                     upstrExpression,
+   enum_PARSEFLAGS            dwFlags,
+   uint                       nRadix,
+   out string                 pbstrError,
+   out uint                   pichError,
+   out IDebugParsedExpression ppParsedExpression
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `upstrExpression`
+
+ [in] Stringa dell'espressione da analizzare.
+
+ `dwFlags`
+
+ [in] Una raccolta di [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) costanti che determinano il modo in cui l'espressione è da analizzare.
+
+ `nRadix`
+
+ [in] Radice da utilizzare per interpretare le informazioni numeriche.
+
+ `pbstrError`
+
+ [out] Restituisce l'errore come testo leggibile dall'utente.
+
+ `pichError`
+
+ [out] Restituisce la posizione del carattere dell'inizio dell'errore nella stringa di espressione.
+
+ `ppParsedExpression`
+
+ [out] Restituisce l'espressione analizzata in un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo produce un'espressione analizzata, non un valore effettivo. Un'espressione analizzata è pronta per essere valutata, vale a dire, convertito in un valore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
+- [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+- [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

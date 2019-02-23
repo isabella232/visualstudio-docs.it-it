@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974149"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695375"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio tramite la riga di comando
 
@@ -34,7 +34,7 @@ Pubblica un'estensione nel Marketplace. L'estensione può essere un file vsix, u
 |---------|---------|
 |payload (obbligatorio) | Un percorso per il payload per la pubblicazione o un collegamento da usare come "Altre informazioni sull'URL". |
 |publishManifest (obbligatorio) | Percorso di pubblicazione del manifesto file da utilizzare. |
-|ignoreWarnings | Elenco di avvisi da ignorare durante la pubblicazione di un'estensione. Questi avvisi vengono visualizzati come i messaggi della riga di comando quando si pubblica un'estensione. (ad esempio, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|ignoreWarnings | Elenco di avvisi da ignorare durante la pubblicazione di un'estensione. Questi avvisi vengono visualizzati come i messaggi della riga di comando quando si pubblica un'estensione. (ad esempio, "VSIXValidatorWarning01, VSIXValidatorWarning02")
 |personalAccessToken | Personal Access Token (PAT) che viene usato per autenticare il server di pubblicazione. Se non specificato, viene acquisito il token di accesso personale degli utenti ha eseguito l'accesso. |
 
 ```

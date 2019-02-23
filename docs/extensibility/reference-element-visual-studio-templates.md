@@ -14,73 +14,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33be7f79e46fa83fc55096c4a6c3c2c540f29469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0c04f644a102af43682bd7bc7569d35f0d5eeacd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016993"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704397"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Elemento Reference (modelli di Visual Studio)
-Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.  
-  
- \<VSTemplate>  
- \<TemplateContent>  
- \<Riferimenti a >  
- \<Riferimento >  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<Reference>  
-    <Assembly> ... </Assembly>  
-</Reference>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
- Nessuno.  
-  
-### <a name="child-elements"></a>Elementi figlio  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica le informazioni relative a un assembly, che usa il modello per aggiungere un riferimento dell'assembly per i progetti. Deve essere presente un `Assembly` elemento in ogni `Reference` elemento.|  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.|  
-  
-## <a name="remarks"></a>Note  
- `Reference` è un elemento figlio obbligatorio di `References`.  
-  
- Il `Reference` e `References` elementi possono essere utilizzati solo nel *vstemplate* contenenti un `Type` valore dell'attributo `Item`.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato il `TemplateContent` elemento di un modello di elemento. Questo codice XML aggiunge i riferimenti per il *System. dll* e *System* assembly.  
-  
-```xml  
-<TemplateContent>  
-    <References>  
-        <Reference>  
-            <Assembly>  
-                System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089  
-            </Assembly>  
-        </Reference>  
-        <Reference>  
-            <Assembly>  
-                System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089  
-            </Assembly>  
-        </Reference>  
-    </References>  
-    ...  
-</TemplateContent>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.
+
+ \<VSTemplate > \<TemplateContent > \<riferimenti > \<riferimento >
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<Reference>
+    <Assembly> ... </Assembly>
+</Reference>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+ Nessuno.
+
+### <a name="child-elements"></a>Elementi figlio
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica le informazioni relative a un assembly, che usa il modello per aggiungere un riferimento dell'assembly per i progetti. Deve essere presente un `Assembly` elemento in ogni `Reference` elemento.|
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.|
+
+## <a name="remarks"></a>Note
+ `Reference` è un elemento figlio obbligatorio di `References`.
+
+ Il `Reference` e `References` elementi possono essere utilizzati solo nel *vstemplate* contenenti un `Type` valore dell'attributo `Item`.
+
+## <a name="example"></a>Esempio
+ Nell'esempio seguente viene illustrato il `TemplateContent` elemento di un modello di elemento. Questo codice XML aggiunge i riferimenti per il *System. dll* e *System* assembly.
+
+```xml
+<TemplateContent>
+    <References>
+        <Reference>
+            <Assembly>
+                System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+            </Assembly>
+        </Reference>
+        <Reference>
+            <Assembly>
+                System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+            </Assembly>
+        </Reference>
+    </References>
+    ...
+</TemplateContent>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
