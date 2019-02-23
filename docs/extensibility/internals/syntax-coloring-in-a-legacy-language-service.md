@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025644"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629573"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Colorazione della sintassi in un servizio di linguaggio legacy
 
@@ -63,11 +63,17 @@ Visual Studio Usa un servizio di colorazione per identificare gli elementi del l
 >  Oltre a usare un colorizzatore del servizio di linguaggio, un VSPackage può usare anche il testo di Visual Studio per utilizzo generico la colorazione del meccanismo. Per altre informazioni su questo meccanismo, vedere [utilizzando i tipi di carattere e colori](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>In questa sezione
- [Implementazione della colorazione della sintassi](../../extensibility/internals/implementing-syntax-coloring.md) esamina come un editor accede a un servizio di linguaggio colorazione della sintassi e il servizio di linguaggio deve implementare per supportare la colorazione della sintassi.
+- [Implementazione della colorazione della sintassi](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Procedura: Usare elementi colorabili incorporati](../../extensibility/internals/how-to-use-built-in-colorable-items.md) viene illustrato come utilizzare elementi colorabili incorporati dal servizio di linguaggio.
+ Viene illustrato come un editor accede a un servizio di linguaggio colorazione della sintassi e il servizio di linguaggio deve implementare per supportare la sintassi colorazione.
 
- [Elementi colorabili personalizzati](../../extensibility/internals/custom-colorable-items.md) incentrato sull'implementazione di elementi colorabili personalizzati.
+- [Procedura: Usare elementi colorabili incorporati](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ Viene illustrato come utilizzare elementi colorabili incorporati dal servizio di linguaggio.
+
+- [Elementi colorabili personalizzati](../../extensibility/internals/custom-colorable-items.md)
+
+ Viene illustrato come implementare elementi colorabili personalizzati.
 
 ## <a name="see-also"></a>Vedere anche
 

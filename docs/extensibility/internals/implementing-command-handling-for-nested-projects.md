@@ -10,48 +10,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002ebd71eac8d9a39abc0a313d18a8efdcdc13cd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a75c6edcc084c8ec7c6942e011af9978a961c83
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989182"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606534"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementazione della gestione dei comandi per i progetti annidati
-L'IDE può passare i comandi che vengono passati tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfacce per i progetti annidati o i progetti padre è possono filtrare o ignorare i comandi.  
-  
+L'IDE può passare i comandi che vengono passati tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfacce per i progetti annidati o i progetti padre è possono filtrare o ignorare i comandi.
+
 > [!NOTE]
->  È possibile filtrare solo i comandi in genere gestiti dal progetto padre. Comandi, ad esempio **compilare** e **Distribuisci** che vengono gestiti dagli IDE non può essere filtrato.  
-  
- I passaggi seguenti descrivono il processo per implementare la gestione dei comandi.  
-  
-## <a name="procedures"></a>Procedure  
-  
-#### <a name="to-implement-command-handling"></a>Per implementare la gestione dei comandi  
-  
-1. Quando l'utente seleziona un nodo o un progetto annidato in un progetto annidato:  
-  
-   1. Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (metodo).  
-  
-      oppure  
-  
-   2. Se il comando ha avuto origine in una finestra della gerarchia, ad esempio un comando di menu di scelta rapida in Esplora soluzioni nell'IDE chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metodo sull'elemento padre del progetto.  
-  
-2. Il progetto padre è possibile esaminare i parametri da passare al `QueryStatus`, ad esempio `pguidCmdGroup` e `prgCmds`, per determinare se il progetto padre deve filtrare i comandi. Se il progetto principale viene implementato per filtrare i comandi, è necessario impostare:  
-  
-   ```  
-   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-   // make sure it is disabled  
-   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-   ```  
-  
-    Il progetto padre deve restituire `S_OK`.  
-  
-    Se il progetto principale non filtra il comando, deve semplicemente restituire `S_OK`. In questo caso, l'IDE indirizza automaticamente il comando al progetto figlio.  
-  
-    Il progetto padre non è disponibile eseguire il comando al progetto figlio. L'IDE esegue questa attività...  
-  
-## <a name="see-also"></a>Vedere anche  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
- [I comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)   
- [Annidamento dei progetti](../../extensibility/internals/nesting-projects.md)
+>  È possibile filtrare solo i comandi in genere gestiti dal progetto padre. Comandi, ad esempio **compilare** e **Distribuisci** che vengono gestiti dagli IDE non può essere filtrato.
+
+ I passaggi seguenti descrivono il processo per implementare la gestione dei comandi.
+
+## <a name="procedures"></a>Procedure
+
+#### <a name="to-implement-command-handling"></a>Per implementare la gestione dei comandi
+
+1. Quando l'utente seleziona un nodo o un progetto annidato in un progetto annidato:
+
+   1. Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (metodo).
+
+      oppure
+
+   2. Se il comando ha avuto origine in una finestra della gerarchia, ad esempio un comando di menu di scelta rapida in Esplora soluzioni nell'IDE chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metodo sull'elemento padre del progetto.
+
+2. Il progetto padre è possibile esaminare i parametri da passare al `QueryStatus`, ad esempio `pguidCmdGroup` e `prgCmds`, per determinare se il progetto padre deve filtrare i comandi. Se il progetto principale viene implementato per filtrare i comandi, è necessario impostare:
+
+   ```
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;
+   // make sure it is disabled
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;
+   ```
+
+    Il progetto padre deve restituire `S_OK`.
+
+    Se il progetto principale non filtra il comando, deve semplicemente restituire `S_OK`. In questo caso, l'IDE indirizza automaticamente il comando al progetto figlio.
+
+    Il progetto padre non è disponibile eseguire il comando al progetto figlio. L'IDE esegue questa attività...
+
+## <a name="see-also"></a>Vedere anche
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
+- [Comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)
+- [Annidamento dei progetti](../../extensibility/internals/nesting-projects.md)
