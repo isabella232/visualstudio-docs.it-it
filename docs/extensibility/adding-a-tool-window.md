@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ffcc334a69a38da4869532d633960cfac7260d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317133"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709941"
 ---
 # <a name="add-a-tool-window"></a>Aggiungere una finestra degli strumenti
 In questa procedura dettagliata si apprenderà come creare una finestra degli strumenti e li integrano in Visual Studio nei modi seguenti:
@@ -277,4 +277,4 @@ Aggiungere una barra degli strumenti e un comando di menu che richiama il **Apri
     Si dovrebbe ascoltare l'audio xilofono.
 
 ## <a name="see-also"></a>Vedere anche
-[I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

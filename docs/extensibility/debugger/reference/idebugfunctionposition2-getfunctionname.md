@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2::GetFunctionName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionPosition2::GetFunctionName
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c942de7697d34e288e0deca28b7f0c2626e62fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b98b1f2bcb8324544d88a9b002995ff472dec35d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007564"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716454"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
-Ottiene il nome della funzione a cui fa riferimento questa posizione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetFunctionName(   
-   BSTR* pbstrFunctionName  
-);  
-```  
-  
-```csharp  
-int GetFunctionName(  
-   out string pbstrFunctionName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pbstrFunctionName`  
- [out] Restituisce il nome della funzione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+Ottiene il nome della funzione a cui fa riferimento questa posizione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetFunctionName( 
+   BSTR* pbstrFunctionName
+);
+```
+
+```csharp
+int GetFunctionName(
+   out string pbstrFunctionName
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pbstrFunctionName`
+
+ [out] Restituisce il nome della funzione.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

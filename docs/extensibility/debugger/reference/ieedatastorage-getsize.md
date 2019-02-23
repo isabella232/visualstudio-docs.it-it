@@ -1,7 +1,7 @@
 ---
 title: IEEDataStorage::GetSize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEDataStorage::GetSize
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71644b1b6e056a122e96377ffa62942e46f3a9d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eff31ef70fc8cb812ff820a92653b6bb0cab6cd5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964626"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719496"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
-Restituisce il numero di byte contenuti in questo oggetto.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetSize(  
-   ULONG* size  
-);  
-```  
-  
-```csharp  
-int GetSize(  
-   out uint size  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `size`  
- [out] Il numero di byte contenuti in questo oggetto.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Usare la [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) metodo per recuperare i byte di dati effettivi.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
- [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)
+Restituisce il numero di byte contenuti in questo oggetto.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetSize(
+   ULONG* size
+);
+```
+
+```csharp
+int GetSize(
+   out uint size
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `size`
+
+ [out] Il numero di byte contenuti in questo oggetto.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Usare la [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) metodo per recuperare i byte di dati effettivi.
+
+## <a name="see-also"></a>Vedere anche
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+- [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

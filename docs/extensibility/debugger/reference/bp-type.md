@@ -1,7 +1,7 @@
 ---
 title: BP_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f18d21485084351e639405dad946dff8be4c767a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315976"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711475"
 ---
 # <a name="bptype"></a>BP_TYPE
 Specifica se il punto di interruzione si trova in una posizione di codice, è un percorso dati o un altro tipo di punto di interruzione.
@@ -44,17 +44,13 @@ public enum enum_BP_TYPE {
 ```
 
 ## <a name="members"></a>Membri
-BPT_NONE  
-Non specifica di alcun tipo di punto di interruzione.
+BPT_NONE non specifica alcun tipo di punto di interruzione.
 
-BPT_CODE  
-Specifica un punto di interruzione del codice.
+BPT_CODE specifica un punto di interruzione del codice.
 
-BPT_DATA  
-Specifica un punto di interruzione dei dati.
+BPT_DATA specifica un punto di interruzione dei dati.
 
-BPT_SPECIAL  
-Specifica un punto di interruzione è un codice né un tipo di dati. Questo tipo è deprecato e non deve essere utilizzato.
+Specifica BPT_SPECIAL consente di digitare un punto di interruzione è un codice né dati. Questo tipo è deprecato e non deve essere utilizzato.
 
 ## <a name="remarks"></a>Note
 Passato come parametro per il [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) e [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metodi.
@@ -67,6 +63,6 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

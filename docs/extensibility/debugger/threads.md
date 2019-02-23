@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac9293807f280efff21fb8e8a5f97ed2cf0f96a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b15928e10d77a10d9ae8b2b684af02e3b370ce87
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937509"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716012"
 ---
 # <a name="threads"></a>Thread
-Nell'architettura di debugger, un *thread*:  
-  
--   È l'unità fondamentale di calcolo. Un thread viene eseguito in modo sequenziale le proprie istruzioni all'interno del contesto di uno stack di chiamate singolo, lo spostamento dal contesto di un codice a quella successiva.  
-  
--   Possibile identificare se stesso e il programma in che è in esecuzione. Thread può essere denominato, sospesa e ripresa. Un thread può inoltre enumerare relativo frame dello stack associata e, in alcune condizioni, può essere spostato in un altro stack frame. Dato il contesto di un frame dello stack, un thread può restituire il thread logico associato, se presente. Un thread dispone di proprietà, ad esempio un conteggio di sospensione, che possono essere visualizzati nei **thread** finestra dell'IDE.  
-  
--   È rappresentato da un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfaccia, in genere creato da un motore di debug (DE) o una macchina virtuale di conseguenza l'esecuzione di un programma.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Programmi](../../extensibility/debugger/programs.md)   
- [Stack frame](../../extensibility/debugger/stack-frames.md)   
- [Motore di debug](../../extensibility/debugger/debug-engine.md)   
- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)   
- [Gestione del debug della sessione](../../extensibility/debugger/session-debug-manager.md)
+Nell'architettura di debugger, un *thread*:
+
+-   È l'unità fondamentale di calcolo. Un thread viene eseguito in modo sequenziale le proprie istruzioni all'interno del contesto di uno stack di chiamate singolo, lo spostamento dal contesto di un codice a quella successiva.
+
+-   Possibile identificare se stesso e il programma in che è in esecuzione. Thread può essere denominato, sospesa e ripresa. Un thread può inoltre enumerare relativo frame dello stack associata e, in alcune condizioni, può essere spostato in un altro stack frame. Dato il contesto di un frame dello stack, un thread può restituire il thread logico associato, se presente. Un thread dispone di proprietà, ad esempio un conteggio di sospensione, che possono essere visualizzati nei **thread** finestra dell'IDE.
+
+-   È rappresentato da un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfaccia, in genere creato da un motore di debug (DE) o una macchina virtuale di conseguenza l'esecuzione di un programma.
+
+## <a name="see-also"></a>Vedere anche
+- [Programmi](../../extensibility/debugger/programs.md)
+- [Stack frame](../../extensibility/debugger/stack-frames.md)
+- [Motore di debug](../../extensibility/debugger/debug-engine.md)
+- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
+- [Gestione del debug della sessione](../../extensibility/debugger/session-debug-manager.md)

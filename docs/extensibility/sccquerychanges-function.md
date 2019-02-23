@@ -12,58 +12,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2f1fff6bff9130bc337a4636aea3127d85514b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d21dfe4418d033776431f4864f46412a798be204
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993509"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711709"
 ---
 # <a name="sccquerychanges-function"></a>Funzione SccQueryChanges
-Questa funzione enumera un elenco di file, che fornisce informazioni sulle modifiche ai nomi per ogni file tramite una funzione di callback.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-SCCRTN SccQueryChanges(  
-   LPVOID           pContext,  
-   LONG             nFiles,  
-   LPCSTR*          lpFileNames,  
-   QUERYCHANGESFUNC pfnCallback,  
-   LPVOID           pvCallerData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
-  
- nFiles  
- [in] Numero di file in `lpFileNames` matrice.  
-  
- lpFileNames  
- [in] Matrice di nomi di file per cui ottenere informazioni.  
-  
- pfnCallback  
- [in] Funzione di callback da chiamare per ogni nome di file nell'elenco (vedere [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) per informazioni dettagliate).  
-  
- pvCallerData  
- [in] Valore che verrà passati invariato per la funzione di callback.  
-  
-## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
-  
-|Valore|Descrizione|  
-|-----------|-----------------|  
-|SCC_OK|Il processo di query completato.|  
-|SCC_E_PROJNOTOPEN|Il progetto non è stata aperta nel controllo del codice sorgente.|  
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete.|  
-|SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato o generale.|  
-  
-## <a name="remarks"></a>Note  
- Sottoposto a query per le modifiche sono per lo spazio dei nomi: in particolare, la ridenominazione, aggiunta e rimozione di un file.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
- [Codici di errore](../extensibility/error-codes.md)
+Questa funzione enumera un elenco di file, che fornisce informazioni sulle modifiche ai nomi per ogni file tramite una funzione di callback.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+SCCRTN SccQueryChanges(
+   LPVOID           pContext,
+   LONG             nFiles,
+   LPCSTR*          lpFileNames,
+   QUERYCHANGESFUNC pfnCallback,
+   LPVOID           pvCallerData
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ pContext
+
+[in] Il puntatore di contesto del plug-in controllo di origine.
+
+ nFiles
+
+[in] Numero di file in `lpFileNames` matrice.
+
+ lpFileNames
+
+[in] Matrice di nomi di file per cui ottenere informazioni.
+
+ pfnCallback
+
+[in] Funzione di callback da chiamare per ogni nome di file nell'elenco (vedere [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) per informazioni dettagliate).
+
+ pvCallerData
+
+[in] Valore che verrà passati invariato per la funzione di callback.
+
+## <a name="return-value"></a>Valore restituito
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+
+|Value|Descrizione|
+|-----------|-----------------|
+|SCC_OK|Il processo di query completato.|
+|SCC_E_PROJNOTOPEN|Il progetto non è stata aperta nel controllo del codice sorgente.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete.|
+|SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato o generale.|
+
+## <a name="remarks"></a>Note
+ Sottoposto a query per le modifiche sono per lo spazio dei nomi: in particolare, la ridenominazione, aggiunta e rimozione di un file.
+
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
+- [Codici di errore](../extensibility/error-codes.md)

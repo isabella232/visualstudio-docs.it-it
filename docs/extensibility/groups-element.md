@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35266ff23d93e0dbdfbe6a2be14631db5c0629e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 197c2890613ac376b8c494467b86576b1980b00b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972706"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723227"
 ---
 # <a name="groups-element"></a>Elemento Groups
-Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<Groups>  
-  <Group>... </Group>  
-  <Group>... </Group>  
-</Groups>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementi figlio  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento Group](../extensibility/group-element.md)|Rappresenta un gruppo singolo comando.|  
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|  
-  
-## <a name="example"></a>Esempio  
-  
-```xml  
-<Groups>  
-  <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
-  </Group>  
-</Groups>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<Groups>
+  <Group>... </Group>
+  <Group>... </Group>
+</Groups>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+
+|Attributo|Descrizione|
+|---------------|-----------------|
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementi figlio
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento Group](../extensibility/group-element.md)|Rappresenta un gruppo singolo comando.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
+
+## <a name="example"></a>Esempio
+
+```xml
+<Groups>
+  <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">
+    <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>
+  </Group>
+</Groups>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

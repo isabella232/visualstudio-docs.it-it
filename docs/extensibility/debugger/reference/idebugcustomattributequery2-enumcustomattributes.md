@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 186bc68fcf208c1b1f3d4d69915882336bf0efaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aade3935a49af176220e800647e6e821054bbb48
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993858"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710357"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Ottiene un enumeratore per tutti gli attributi personalizzati collegati a questo campo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT EnumCustomAttributes(   
-   IEnumDebugCustomAttributes** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumCustomAttributes(  
-   out IEnumDebugCustomAttributes ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppEnum`  
- [out] Restituisce un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) dell'oggetto che rappresenta l'elenco di attributi personalizzati; in caso contrario, restituisce un valore null se non sono presenti attributi personalizzati.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK o S_FALSE se non sono presenti attributi personalizzati in questo campo. In caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Un campo può contenere più attributi personalizzati.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+Ottiene un enumeratore per tutti gli attributi personalizzati collegati a questo campo.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT EnumCustomAttributes( 
+   IEnumDebugCustomAttributes** ppEnum
+);
+```
+
+```csharp
+int EnumCustomAttributes(
+   out IEnumDebugCustomAttributes ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppEnum`
+
+ [out] Restituisce un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) dell'oggetto che rappresenta l'elenco di attributi personalizzati; in caso contrario, restituisce un valore null se non sono presenti attributi personalizzati.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK o S_FALSE se non sono presenti attributi personalizzati in questo campo. In caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Un campo può contenere più attributi personalizzati.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

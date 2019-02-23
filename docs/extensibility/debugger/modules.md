@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdcaa4afb2191c80a8b5bed1bedf68f4c217f029
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f31e3760a0697be8c9fc80eb811c99df79d32b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008309"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718911"
 ---
 # <a name="modules"></a>Moduli
-In termini di architettura del debugger, un *modulo*:  
-  
--   È un contenitore fisico di codice, ad esempio un file eseguibile o una DLL.  
-  
--   Può ricaricare i simboli e descrivere se stesso. Descrizioni dei moduli vengono visualizzati nella finestra moduli dell'IDE.  
-  
--   È rappresentato da un [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interfaccia, creato da un motore di debug per descrivere il modulo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)
+In termini di architettura del debugger, un *modulo*:
+
+-   È un contenitore fisico di codice, ad esempio un file eseguibile o una DLL.
+
+-   Può ricaricare i simboli e descrivere se stesso. Descrizioni dei moduli vengono visualizzati nella finestra moduli dell'IDE.
+
+-   È rappresentato da un [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interfaccia, creato da un motore di debug per descrivere il modulo.
+
+## <a name="see-also"></a>Vedere anche
+- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

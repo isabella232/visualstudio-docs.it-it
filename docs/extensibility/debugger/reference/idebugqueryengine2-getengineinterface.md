@@ -1,7 +1,7 @@
 ---
 title: IDebugQueryEngine2::GetEngineInterface | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62486617f189d161471a0a87afb8887856ba6422
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003096"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720972"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
-Ottiene un'interfaccia (DE) del motore di debug personalizzato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetEngineInterface(   
-   IUnknown** ppUnk  
-);  
-```  
-  
-```csharp  
-int GetEngineInterface(   
-   out object ppUnk  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppUnk`  
- [out] Restituisce un `IUnknown` oggetto rappresenta il motore di debug (DE), e che possano essere interrogate per qualsiasi altra interfaccia valida associata a un CRI (ad esempio [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oppure [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- L'interfaccia risultante deve essere utilizzata con cautela perché la chiamata tramite interfacce recuperate da questo metodo consente di evitare l'elaborazione del gestore di debug della sessione e può comportare il modello SDM entrare in uno stato non valido o la generazione di errori durante il debug.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
+Ottiene un'interfaccia (DE) del motore di debug personalizzato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetEngineInterface( 
+   IUnknown** ppUnk
+);
+```
+
+```csharp
+int GetEngineInterface( 
+   out object ppUnk
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppUnk`
+
+ [out] Restituisce un `IUnknown` oggetto rappresenta il motore di debug (DE), e che possano essere interrogate per qualsiasi altra interfaccia valida associata a un CRI (ad esempio [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oppure [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ L'interfaccia risultante deve essere utilizzata con cautela perché la chiamata tramite interfacce recuperate da questo metodo consente di evitare l'elaborazione del gestore di debug della sessione e può comportare il modello SDM entrare in uno stato non valido o la generazione di errori durante il debug.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
