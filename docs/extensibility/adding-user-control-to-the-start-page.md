@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317757"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703240"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Aggiungi controllo utente nella pagina iniziale
+
 Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL a una pagina iniziale personalizzata. L'esempio aggiunge un controllo utente alla soluzione, si basa il controllo utente e quindi si fa riferimento all'assembly compilato dalla pagina iniziale *XAML* file. Una nuova scheda contiene il controllo utente, che funziona come un Web browser di base.
 
 È possibile usare lo stesso processo per aggiungere tutti gli assembly che può essere chiamato da un *XAML* file.
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>Aggiungere un controllo utente WPF alla soluzione
+
 In primo luogo, aggiungere un controllo utente Windows Presentation Foundation (WPF) per la soluzione di pagina iniziale.
 
 1. Crea una pagina iniziale con cui è stato creato [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).
@@ -36,6 +39,7 @@ In primo luogo, aggiungere un controllo utente Windows Presentation Foundation (
 4. Denominare il controllo `WebUserControl` e quindi fare clic su **OK**.
 
 ## <a name="implement-the-user-control"></a>Implementare il controllo utente
+
 Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in XAML e quindi scrivono gli eventi di code-behind in c# o un altro linguaggio .NET.
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>Per scrivere il XAML per il controllo utente
@@ -132,7 +136,8 @@ Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in
 4. Compilare la soluzione.
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Aggiungere il controllo utente nella pagina iniziale
- Per rendere disponibili per il progetto di pagina iniziale, questo controllo nel file di progetto di pagina di avvio, aggiungere un riferimento alla nuova libreria di controllo. È quindi possibile aggiungere il controllo al markup XAML pagina Start.
+
+Per rendere disponibili per il progetto di pagina iniziale, questo controllo nel file di progetto di pagina di avvio, aggiungere un riferimento alla nuova libreria di controllo. È quindi possibile aggiungere il controllo al markup XAML pagina Start.
 
 1. Nelle **Esplora soluzioni**, nel progetto di pagina iniziale, fare doppio clic su **riferimenti** e quindi fare clic su **Aggiungi riferimento**.
 
@@ -185,5 +190,6 @@ Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in
     La pagina iniziale personalizzata deve essere visualizzata. Se si desidera modificare tutti i file, è necessario chiudere l'istanza sperimentale, apportare le modifiche, copiare e incollare i file modificati e quindi aprire nuovamente l'istanza sperimentale per visualizzare le modifiche.
 
 ## <a name="see-also"></a>Vedere anche
-[Controlli contenitore WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[Procedura dettagliata: Aggiungere XAML personalizzato nella pagina iniziale](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [Controlli contenitore WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Procedura dettagliata: Aggiungere XAML personalizzato nella pagina iniziale](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

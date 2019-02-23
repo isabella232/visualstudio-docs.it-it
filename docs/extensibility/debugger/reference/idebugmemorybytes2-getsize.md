@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryBytes2::GetSize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryBytes2::GetSize
 helpviewer_keywords:
@@ -13,36 +13,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8ac99883e2e7d25095a7a9f60eb5b5fe23c531
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbed7e4421b01e1a779c5c976001a5dd5b4ba2d1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007802"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712112"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Recupera la dimensione, espressa in byte, della memoria rappresentata da questo [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) oggetto.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetSize(   
-   UINT64* pqwSize  
-);  
-```  
-  
-```csharp  
-int GetSize(  
-   out ulong pqwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pqwSize`  
- [out] Restituisce la dimensione, espressa in byte dello spazio di memoria.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+Recupera la dimensione, espressa in byte, della memoria rappresentata da questo [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) oggetto.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetSize( 
+   UINT64* pqwSize
+);
+```
+
+```csharp
+int GetSize(
+   out ulong pqwSize
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pqwSize`
+
+ [out] Restituisce la dimensione, espressa in byte dello spazio di memoria.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

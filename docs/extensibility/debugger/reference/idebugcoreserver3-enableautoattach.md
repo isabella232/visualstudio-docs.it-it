@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 helpviewer_keywords:
@@ -12,54 +12,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3c3132239ec684f947e702ce59f0a269095f990
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031184"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691267"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Consente l'associazione automatica per i motori di debug specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT EnableAutoAttach(  
-   GUID*     rgguidSpecificEngines,  
-   DWORD     celtSpecificEngines,  
-   LPCOLESTR pszStartPageUrl,  
-   BSTR*     pbstrSessionId  
-);  
-```  
-  
-```csharp  
-int EnableAutoAttach(  
-   Guid[]     rgguidSpecificEngines,  
-   uint       celtSpecificEngines,  
-   string     pszStartPageUrl,  
-   out string pbstrSessionId  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `rgguidSpecificEngines`  
- [in] Matrice di GUID per ogni motore di debug per contrassegnare come collegamento automatico.  
-  
- `celtSpecificEngines`  
- [in] Il numero di motori specificato in `rgguidSpecificEngines`.  
-  
- `pszStartPageUrl`  
- [in] URL iniziale da usare quando ci si collega automaticamente.  
-  
- `pbstrSessionID`  
- [out] ID della sessione che è stata collegata automaticamente.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Un codice di errore `E_AUTO_ATTACH_NOT_REGISTERED`, che indica che la class factory auto-attach non è stata registrata.  
-  
-## <a name="remarks"></a>Note  
- Quando viene avviato un programma associato all'URL specificato, i motori di debug specificato vengono automaticamente avviati e collegati.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+Consente l'associazione automatica per i motori di debug specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT EnableAutoAttach(
+   GUID*     rgguidSpecificEngines,
+   DWORD     celtSpecificEngines,
+   LPCOLESTR pszStartPageUrl,
+   BSTR*     pbstrSessionId
+);
+```
+
+```csharp
+int EnableAutoAttach(
+   Guid[]     rgguidSpecificEngines,
+   uint       celtSpecificEngines,
+   string     pszStartPageUrl,
+   out string pbstrSessionId
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `rgguidSpecificEngines`
+
+ [in] Matrice di GUID per ogni motore di debug per contrassegnare come collegamento automatico.
+
+ `celtSpecificEngines`
+
+ [in] Il numero di motori specificato in `rgguidSpecificEngines`.
+
+ `pszStartPageUrl`
+
+ [in] URL iniziale da usare quando ci si collega automaticamente.
+
+ `pbstrSessionID`
+
+ [out] ID della sessione che è stata collegata automaticamente.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Un codice di errore `E_AUTO_ATTACH_NOT_REGISTERED`, che indica che la class factory auto-attach non è stata registrata.
+
+## <a name="remarks"></a>Note
+ Quando viene avviato un programma associato all'URL specificato, i motori di debug specificato vengono automaticamente avviati e collegati.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c40fb096eed1c6da83213cbae65e2f2c750a84
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413137"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720744"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Caricamenti di eseguire il debug dei simboli utilizzando il metodo di callback specificati.
@@ -48,26 +48,33 @@ int LoadSymbolsFromCallback(
 ```
 
 #### <a name="parameters"></a>Parametri
-`ulAppDomainID`  
-[in] Identificatore del dominio dell'applicazione.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificatore univoco del modulo.
+ [in] Identificatore del dominio dell'applicazione.
 
-`pUnkMetadataImport`  
-[in] Oggetto che contiene i metadati del simbolo.
+`guidModule`
 
-`pUnkCorDebugModule`  
-[in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+ [in] Identificatore univoco del modulo.
 
-`bstrModuleName`  
-[in] Nome del modulo.
+`pUnkMetadataImport`
 
-`bstrSymSearchPath`  
-[in] Percorso per cercare il file di simboli.
+ [in] Oggetto che contiene i metadati del simbolo.
 
-`pCallback`  
-[in] Oggetto che rappresenta il metodo di callback.
+`pUnkCorDebugModule`
+
+ [in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`bstrModuleName`
+
+ [in] Nome del modulo.
+
+`bstrSymSearchPath`
+
+ [in] Percorso per cercare il file di simboli.
+
+`pCallback`
+
+ [in] Oggetto che rappresenta il metodo di callback.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -167,4 +174,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

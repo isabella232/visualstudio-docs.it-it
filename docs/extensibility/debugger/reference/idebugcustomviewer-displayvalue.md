@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomViewer::DisplayValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomViewer::DisplayValue
 helpviewer_keywords:
@@ -12,58 +12,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e711fc91a1d234957a136572cc4f5fddb9a47944
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991086"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717923"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
-Questo metodo viene chiamato per visualizzare il valore specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT DisplayValue(  
-   HWND             hwnd,  
-   DWORD            dwID,  
-   IUnknown *       pHostServices,  
-   IDebugProperty3* pDebugProperty);  
-);  
-```  
-  
-```csharp  
-int DisplayValue(  
-   IntPtr          hwnd,   
-   uint            dwID,   
-   object          pHostServices,   
-   IDebugProperty3 pDebugProperty  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `hwnd`  
- [in] Finestra padre  
-  
- `dwID`  
- [in] ID per i visualizzatori personalizzati che supportano più di un tipo.  
-  
- `pHostServices`  
- [in] Riservato. Sempre impostato su null.  
-  
- `pDebugProperty`  
- [in] Interfaccia che può essere utilizzato per recuperare il valore da visualizzare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
-  
-## <a name="remarks"></a>Note  
- La visualizzazione è "modal" in quanto questo metodo crea la finestra necessaria, visualizzare il valore, attende l'input e chiudere la finestra, tutti prima di restituire al chiamante. Ciò significa che il metodo deve gestire tutti gli aspetti della visualizzazione del valore della proprietà, dalla creazione di una finestra di output, in attesa di input dell'utente, all'eliminazione della finestra.  
-  
- Per supportare la modifica del valore sul determinato [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) dell'oggetto, è possibile utilizzare il [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) (metodo), ovvero se il valore può essere espresso sotto forma di stringa. In caso contrario, è necessario creare un'interfaccia personalizzata, ovvero esclusivo per l'analizzatore di espressioni l'implementazione di questa `DisplayValue` metodo, ovvero sullo stesso oggetto che implementa il `IDebugProperty3` interfaccia. Questa interfaccia personalizzata verrà forniti metodi per modificare i dati di una dimensione arbitraria o complessità.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)
+Questo metodo viene chiamato per visualizzare il valore specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT DisplayValue(
+   HWND             hwnd,
+   DWORD            dwID,
+   IUnknown *       pHostServices,
+   IDebugProperty3* pDebugProperty);
+);
+```
+
+```csharp
+int DisplayValue(
+   IntPtr          hwnd,
+   uint            dwID,
+   object          pHostServices,
+   IDebugProperty3 pDebugProperty
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `hwnd`
+
+ [in] Finestra padre
+
+ `dwID`
+
+ [in] ID per i visualizzatori personalizzati che supportano più di un tipo.
+
+ `pHostServices`
+
+ [in] Riservato. Sempre impostato su null.
+
+ `pDebugProperty`
+
+ [in] Interfaccia che può essere utilizzato per recuperare il valore da visualizzare.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.
+
+## <a name="remarks"></a>Note
+ La visualizzazione è "modal" in quanto questo metodo crea la finestra necessaria, visualizzare il valore, attende l'input e chiudere la finestra, tutti prima di restituire al chiamante. Ciò significa che il metodo deve gestire tutti gli aspetti della visualizzazione del valore della proprietà, dalla creazione di una finestra di output, in attesa di input dell'utente, all'eliminazione della finestra.
+
+ Per supportare la modifica del valore sul determinato [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) dell'oggetto, è possibile utilizzare il [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) (metodo), ovvero se il valore può essere espresso sotto forma di stringa. In caso contrario, è necessario creare un'interfaccia personalizzata, ovvero esclusivo per l'analizzatore di espressioni l'implementazione di questa `DisplayValue` metodo, ovvero sullo stesso oggetto che implementa il `IDebugProperty3` interfaccia. Questa interfaccia personalizzata verrà forniti metodi per modificare i dati di una dimensione arbitraria o complessità.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

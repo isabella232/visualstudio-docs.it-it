@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea7b54d8a27f061c1ef5d023f309ddab8295db90
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989601"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691384"
 ---
 # <a name="servers-visual-studio-sdk"></a>Server (Visual Studio SDK)
-Nell'architettura di debugger, un *server*:  
-  
--   È un contenitore delle porte e fornitori di porte e comunica le porte e fornitori di porte per la gestione del debug sessione (SDM) e motori di debug.  
-  
--   Può identificarsi in base al nome ed enumerare le porte e i fornitori di porte.  
-  
--   È rappresentato da un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfaccia, che viene implementato solo da Visual Studio (un'istanza di un server per ogni istanza di esecuzione di Visual Studio).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Porte](../../extensibility/debugger/ports.md)   
- [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)   
- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)
+Nell'architettura di debugger, un *server*:
+
+-   È un contenitore delle porte e fornitori di porte e comunica le porte e fornitori di porte per la gestione del debug sessione (SDM) e motori di debug.
+
+-   Può identificarsi in base al nome ed enumerare le porte e i fornitori di porte.
+
+-   È rappresentato da un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfaccia, che viene implementato solo da Visual Studio (un'istanza di un server per ogni istanza di esecuzione di Visual Studio).
+
+## <a name="see-also"></a>Vedere anche
+- [Porte](../../extensibility/debugger/ports.md)
+- [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)
+- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

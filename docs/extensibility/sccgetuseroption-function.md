@@ -12,52 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15af3d1711453c17a9e88c392f451161131d5b3d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017006"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721265"
 ---
 # <a name="sccgetuseroption-function"></a>Funzione SccGetUserOption
-Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
-  
- nOption  
- [in] Opzione da recuperare (per le opzioni possibili, vedere la sezione Osservazioni).  
-  
- lpVal  
- [out] Valore associato all'opzione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
-  
-|Value|Descrizione|  
-|-----------|-----------------|  
-|SCC_OK|Opzione è stato recuperato correttamente.|  
-|SCC_E_OPNOTSUPPORTED|Opzione non è supportata.|  
-|SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato.|  
-  
-## <a name="remarks"></a>Note  
- Le opzioni seguenti sono supportate da questo comando:  
-  
-|Opzione User|Descrizione|  
-|-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera estrarre la versione locale dei file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO`.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [Codici di errore](../extensibility/error-codes.md)
+Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+SCCRTN SccGetUserOption(
+   LPVOID pContext,
+   LONG nOption,
+   LPLONG lpVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ pContext
+
+[in] Il puntatore di contesto del plug-in controllo di origine.
+
+ nOption
+
+[in] Opzione da recuperare (per le opzioni possibili, vedere la sezione Osservazioni).
+
+ lpVal
+
+[out] Valore associato all'opzione.
+
+## <a name="return-value"></a>Valore restituito
+ Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+
+|Valore|Descrizione|
+|-----------|-----------------|
+|SCC_OK|Opzione è stato recuperato correttamente.|
+|SCC_E_OPNOTSUPPORTED|Opzione non è supportata.|
+|SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato.|
+
+## <a name="remarks"></a>Note
+ Le opzioni seguenti sono supportate da questo comando:
+
+|Opzione User|Descrizione|
+|-----------------|-----------------|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera estrarre la versione locale dei file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO`.|
+
+## <a name="see-also"></a>Vedere anche
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
+- [Codici di errore](../extensibility/error-codes.md)

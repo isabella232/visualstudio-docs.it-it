@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff64676ba99f16941044f18c8988a690bfc8a28
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412981"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706288"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 Recupera l'indirizzo all'interno di una funzione che rappresenta l'offset di riga specificata.
@@ -40,14 +40,17 @@ int GetFunctionLineOffset(
 ```
 
 #### <a name="parameters"></a>Parametri
-`pAddress`  
-[in] Indirizzo che rappresenta una funzione.
+`pAddress`
 
-`dwLine`  
-[in] Riga offset dall'inizio della funzione.
+ [in] Indirizzo che rappresenta una funzione.
 
-`ppNewAddress`  
-[out] Nuovo indirizzo che rappresenta l'offset dall'inizio della funzione di riga.
+`dwLine`
+
+ [in] Riga offset dall'inizio della funzione.
+
+`ppNewAddress`
+
+ [out] Nuovo indirizzo che rappresenta l'offset dall'inizio della funzione di riga.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -101,4 +104,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

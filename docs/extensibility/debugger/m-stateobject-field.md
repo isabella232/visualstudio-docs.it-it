@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8718a45f0a2d8ef3075a9c390a756e3ec50062f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c49682d43236f66b3acbef630f1d81b32e97dab2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028712"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688277"
 ---
 # <a name="mstateobject-field"></a>campo m_stateObject
-Oggetto che rappresenta i dati che verrà usato l'azione.  
-  
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly:** mscorlib (in *mscorlib. dll*)  
-  
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-.field assembly object m_stateObject  
-```  
-  
-## <a name="remarks"></a>Note  
- Questo è il `state` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo sottostante per il <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> proprietà.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+Oggetto che rappresenta i dati che verrà usato l'azione.
+
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly:** mscorlib (in *mscorlib. dll*)
+
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).
+
+## <a name="syntax"></a>Sintassi
+
+```
+.field assembly object m_stateObject
+```
+
+## <a name="remarks"></a>Note
+ Questo è il `state` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo sottostante per il <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> proprietà.
+
+## <a name="see-also"></a>Vedere anche
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

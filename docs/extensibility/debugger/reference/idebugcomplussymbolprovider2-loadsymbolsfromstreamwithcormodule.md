@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412799"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722837"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Caricare i simboli di debug da un flusso di dati ha il **ICorDebugModule** oggetto.
@@ -46,23 +46,29 @@ int LoadSymbolsFromStreamWithCorModule(
 ```
 
 #### <a name="parameters"></a>Parametri
-`ulAppDomainID`  
-[in] Identificatore del dominio dell'applicazione.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificatore univoco del modulo.
+ [in] Identificatore del dominio dell'applicazione.
 
-`baseAddress`  
-[in] Indirizzo di base di memoria.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Oggetto che contiene i metadati del simbolo.
+ [in] Identificatore univoco del modulo.
 
-`pUnkCorDebugModule`  
-[in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`pStream`  
-[in] Flusso di dati che contiene i simboli di debug da caricare.
+ [in] Indirizzo di base di memoria.
+
+`pUnkMetadataImport`
+
+ [in] Oggetto che contiene i metadati del simbolo.
+
+`pUnkCorDebugModule`
+
+ [in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`pStream`
+
+ [in] Flusso di dati che contiene i simboli di debug da caricare.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -141,4 +147,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
