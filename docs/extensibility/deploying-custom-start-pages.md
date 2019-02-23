@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982767"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693009"
 ---
 # <a name="deploy-custom-start-pages"></a>Distribuire le pagine iniziali personalizzate
 
@@ -43,13 +44,13 @@ Il modello di progetto di pagina iniziale Crea una copia del valore predefinito 
 
 - Creando manualmente un *VSIX* file. Per creare un *VSIX* file manualmente:
 
-  1.  Creare il *Extension. vsixmanifest* file e il *[Content_Types] XML* file in una nuova cartella. Per altre informazioni, vedere [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+   1. Creare il *Extension. vsixmanifest* file e il *[Content_Types] XML* file in una nuova cartella. Per altre informazioni, vedere [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-  2.  In Windows Explorer, fare doppio clic la cartella che contiene i due file XML, fare clic su **Invia a**e quindi fare clic sulla cartella compressa. Rinominare l'oggetto risultante *zip* del file ai *Filename.vsix*, in cui nomefile è il nome del file ridistribuibile che installa il pacchetto.
+   2. In Windows Explorer, fare doppio clic la cartella che contiene i due file XML, fare clic su **Invia a**e quindi fare clic sulla cartella compressa. Rinominare l'oggetto risultante *zip* del file ai *Filename.vsix*, in cui nomefile è il nome del file ridistribuibile che installa il pacchetto.
 
-  Per Visual Studio riconosca una pagina iniziale, il `Content Element` del manifesto VSIX deve contenere un `CustomExtension Element` con il `Type` attributo impostato su `"StartPage"`. Viene visualizzata un'estensione di pagina iniziale che è stata installata utilizzando la distribuzione VSIX nel **Personalizza pagina iniziale** elenco il **avvio** pagina Opzioni come **[estensione installata]** *Nome dell'estensione*.
+Per Visual Studio riconosca una pagina iniziale, il `Content Element` del manifesto VSIX deve contenere un `CustomExtension Element` con il `Type` attributo impostato su `"StartPage"`. Viene visualizzata un'estensione di pagina iniziale che è stata installata utilizzando la distribuzione VSIX nel **Personalizza pagina iniziale** elenco il **avvio** pagina Opzioni come **[estensione installata]** *Nome dell'estensione*.
 
-  Se il pacchetto di pagina iniziale include gli assembly, è necessario aggiungere la registrazione di percorso di associazione in modo che siano disponibili quando si avvia Visual Studio. A tale scopo, assicurarsi che il pacchetto includa un *pkgdef* file che contiene le informazioni seguenti.
+Se il pacchetto di pagina iniziale include gli assembly, è necessario aggiungere la registrazione di percorso di associazione in modo che siano disponibili quando si avvia Visual Studio. A tale scopo, assicurarsi che il pacchetto includa un *pkgdef* file che contiene le informazioni seguenti.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]

@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450542"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678605"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Converte una stringa di espressione in un'espressione analizzata ha il provider di simboli e l'indirizzo della cornice di valutazione.
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>Parametri
-`upstrExpression`  
-[in] Stringa dell'espressione da analizzare.
+`upstrExpression`
 
-`dwFlags`  
-[in] Una raccolta di [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) costanti che determinano il modo in cui l'espressione è da analizzare.
+ [in] Stringa dell'espressione da analizzare.
 
-`nRadix`  
-[in] Radice da utilizzare per interpretare le informazioni numeriche.
+`dwFlags`
 
-`pSymbolProvider`  
-[in] Interfaccia del provider di simboli.
+ [in] Una raccolta di [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) costanti che determinano il modo in cui l'espressione è da analizzare.
 
-`pAddress`  
-[in] Indirizzo della cornice di valutazione.
+`nRadix`
 
-`pbstrError`  
-[out] Restituisce l'errore come testo leggibile dall'utente.
+ [in] Radice da utilizzare per interpretare le informazioni numeriche.
 
-`pichError`  
-[out] Restituisce la posizione del carattere dell'inizio dell'errore nella stringa di espressione.
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out] Restituisce l'espressione analizzata in un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto.
+ [in] Interfaccia del provider di simboli.
+
+`pAddress`
+
+ [in] Indirizzo della cornice di valutazione.
+
+`pbstrError`
+
+ [out] Restituisce l'errore come testo leggibile dall'utente.
+
+`pichError`
+
+ [out] Restituisce la posizione del carattere dell'inizio dell'errore nella stringa di espressione.
+
+`ppParsedExpression`
+
+ [out] Restituisce l'espressione analizzata in un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

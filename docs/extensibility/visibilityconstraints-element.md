@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5781916cf50f254c4cd5cf86f5bcec3c6b38d325
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c567291f2b91e092afecb264c2b2e0ca1bfd108
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930173"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702577"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
-L'elemento VisibilityConstraints determina la visibilità statica dei gruppi di comandi e le barre degli strumenti. La visibilità prima di tutto è controllata dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) senza caricare il pacchetto VSPackage.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<VisibilityConstraints>  
-  <VisibilityConstraint>... </VisibilityConstraint>  
-  <VisibilityConstraint>... </VisibilityConstraint>  
-</VisibilityConstraint>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementi figlio  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento VisibilityItem](../extensibility/visibilityitem-element.md)|Determina la visibilità statica di comandi e le barre degli strumenti.|  
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilità statica dei gruppi di comandi e le barre degli strumenti.|  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, le voci di menu, menu, barre degli strumenti e caselle combinate) che un pacchetto VSPackage fornisce all'IDE.|  
-  
-## <a name="example"></a>Esempio  
-  
-```xml  
-<VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
-    context="guidNotViewSourceMode"/>  
-</VisibilityConstraints>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Elemento VisibilityItem](../extensibility/visibilityitem-element.md)   
- [Tabella di comandi Visual Studio (. File Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+L'elemento VisibilityConstraints determina la visibilità statica dei gruppi di comandi e le barre degli strumenti. La visibilità prima di tutto è controllata dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) senza caricare il pacchetto VSPackage.
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<VisibilityConstraints>
+  <VisibilityConstraint>... </VisibilityConstraint>
+  <VisibilityConstraint>... </VisibilityConstraint>
+</VisibilityConstraint>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+
+|Attributo|Descrizione|
+|---------------|-----------------|
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementi figlio
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento VisibilityItem](../extensibility/visibilityitem-element.md)|Determina la visibilità statica di comandi e le barre degli strumenti.|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilità statica dei gruppi di comandi e le barre degli strumenti.|
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, le voci di menu, menu, barre degli strumenti e caselle combinate) che un pacchetto VSPackage fornisce all'IDE.|
+
+## <a name="example"></a>Esempio
+
+```xml
+<VisibilityConstraints>
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+    context="guidNotViewSourceMode"/>
+</VisibilityConstraints>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Elemento VisibilityItem](../extensibility/visibilityitem-element.md)
+- [Tabella di comandi Visual Studio (. File Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

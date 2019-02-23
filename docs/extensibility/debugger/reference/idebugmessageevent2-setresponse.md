@@ -1,7 +1,7 @@
 ---
 title: IDebugMessageEvent2::SetResponse | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMessageEvent2::SetResponse
 helpviewer_keywords:
@@ -13,37 +13,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fab851d7d2ec7a248e56b522f13c9dc7e9457e11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b54c84c5f5c13424354c65201d290fbef83e055
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996558"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701056"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-Imposta la risposta, se presente, nella finestra di messaggio.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT SetResponse(   
-   DWORD dwResponse  
-);  
-```  
-  
-```csharp  
-int SetResponse(   
-   uint dwResponse  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `dwResponse`  
- [in] Specifica la risposta, usando le convenzioni di Win32 `MessageBox` (funzione). Vedere le [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funzione per i dettagli.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
+Imposta la risposta, se presente, nella finestra di messaggio.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT SetResponse( 
+   DWORD dwResponse
+);
+```
+
+```csharp
+int SetResponse( 
+   uint dwResponse
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `dwResponse`
+
+ [in] Specifica la risposta, usando le convenzioni di Win32 `MessageBox` (funzione). Vedere le [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funzione per i dettagli.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
+- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

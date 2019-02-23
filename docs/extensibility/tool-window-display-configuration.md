@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973408"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707042"
 ---
 # <a name="tool-window-display-configuration"></a>Configurazione visualizzazione della finestra degli strumenti
-Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, stile di ancoraggio e altre informazioni sulla visibilità è specificato in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere [strumento Windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md)  
+Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, stile di ancoraggio e altre informazioni sulla visibilità è specificato in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere [strumento Windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md)
 
-## <a name="window-display-information"></a>Informazioni di visualizzazione finestra  
- Configurazione di visualizzazione di base di una finestra degli strumenti viene archiviato in un massimo di sei valori facoltativi:  
+## <a name="window-display-information"></a>Informazioni di visualizzazione finestra
+ Configurazione di visualizzazione di base di una finestra degli strumenti viene archiviato in un massimo di sei valori facoltativi:
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
+```
 
 
 | nome | Tipo | Dati | Descrizione |
@@ -45,67 +45,67 @@ HKEY_LOCAL_MACHINE\
 | Orientamento | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Basso" | Vedere la sezione commenti riportata di seguito. |
 | DontForceCreate | REG_DWORD | 0 o 1 | Quando questa voce è presente e il relativo valore è diverso da zero, la finestra viene caricata, ma non immediatamente visualizzata. |
 
-### <a name="comments"></a>Commenti  
- La voce di orientamento definisce la posizione in cui la finestra degli strumenti ancora una volta fatto doppio clic sulla barra del titolo. La posizione è relativa alla finestra specificata nella voce della finestra. Se la voce di stile è impostata su "Collegato", la voce di orientamento può essere "Left", "Right", "Top" o "Bottom". Se la voce di stile è "Schede", l'orientamento voce può essere "Left" o "Right" e specifica in cui viene aggiunta la scheda. Se la voce di stile è "Mobile", prima di tutto si muove la finestra degli strumenti. Una volta fatto doppio clic sulla barra del titolo, applicano le voci di finestra e l'orientamento e la finestra viene utilizzato lo stile "Schede". Se la voce di stile è "AlwaysFloat", la finestra degli strumenti non può essere ancorata. Se la voce di stile è "MDI", la finestra degli strumenti è collegata all'area di MDI e la voce della finestra viene ignorata.  
+### <a name="comments"></a>Commenti
+ La voce di orientamento definisce la posizione in cui la finestra degli strumenti ancora una volta fatto doppio clic sulla barra del titolo. La posizione è relativa alla finestra specificata nella voce della finestra. Se la voce di stile è impostata su "Collegato", la voce di orientamento può essere "Left", "Right", "Top" o "Bottom". Se la voce di stile è "Schede", l'orientamento voce può essere "Left" o "Right" e specifica in cui viene aggiunta la scheda. Se la voce di stile è "Mobile", prima di tutto si muove la finestra degli strumenti. Una volta fatto doppio clic sulla barra del titolo, applicano le voci di finestra e l'orientamento e la finestra viene utilizzato lo stile "Schede". Se la voce di stile è "AlwaysFloat", la finestra degli strumenti non può essere ancorata. Se la voce di stile è "MDI", la finestra degli strumenti è collegata all'area di MDI e la voce della finestra viene ignorata.
 
-### <a name="example"></a>Esempio  
+### <a name="example"></a>Esempio
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\  
-              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}  
-              DontForceCreate = reg_dword: 0x00000000  
-              Float           = reg_sz: 100,100,450,300  
-              Name            = reg_sz: Bookmarks  
-              Orientation     = reg_sz: Left  
-              Style           = reg_sz: Tabbed  
-              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\
+              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}
+              DontForceCreate = reg_dword: 0x00000000
+              Float           = reg_sz: 100,100,450,300
+              Name            = reg_sz: Bookmarks
+              Orientation     = reg_sz: Left
+              Style           = reg_sz: Tabbed
+              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}
+```
 
-## <a name="tool-window-visibility"></a>Visibilità della finestra degli strumenti  
- I valori nella sottochiave visibilità facoltativo determinano le impostazioni di visibilità di una finestra degli strumenti. I nomi dei valori vengono usati per archiviare i GUID dei comandi che richiedono la visibilità della finestra. Se viene eseguito il comando, l'IDE garantisce che la finestra degli strumenti viene creata e reso visibile.  
+## <a name="tool-window-visibility"></a>Visibilità della finestra degli strumenti
+ I valori nella sottochiave visibilità facoltativo determinano le impostazioni di visibilità di una finestra degli strumenti. I nomi dei valori vengono usati per archiviare i GUID dei comandi che richiedono la visibilità della finestra. Se viene eseguito il comando, l'IDE garantisce che la finestra degli strumenti viene creata e reso visibile.
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              Visibility\  
-                (Default) = reg_sz:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_sz:  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              Visibility\
+                (Default) = reg_sz:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_sz:
+```
 
-|nome|Tipo|Dati|Descrizione|  
-|----------|----------|----------|-----------------|  
-|(Predefinito)|REG_SZ|nessuno|Lasciare vuoto.|  
-|*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|Facoltativo. Nome della voce deve essere il GUID di un comando che richiedono la visibilità. Il valore contiene solo una stringa informativa. In genere, il valore è un `reg_dword` impostato su 0.|  
+|nome|Tipo|Dati|Descrizione|
+|----------|----------|----------|-----------------|
+|(Predefinito)|REG_SZ|nessuno|Lasciare vuoto.|
+|*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|Facoltativo. Nome della voce deve essere il GUID di un comando che richiedono la visibilità. Il valore contiene solo una stringa informativa. In genere, il valore è un `reg_dword` impostato su 0.|
 
-### <a name="example"></a>Esempio  
+### <a name="example"></a>Esempio
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {EEFA5220-E298-11D0-8F78-00A0C9110057}\  
-              Visibility\  
-                (Default) = reg_sz:  
-                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
-                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {EEFA5220-E298-11D0-8F78-00A0C9110057}\
+              Visibility\
+                (Default) = reg_sz:
+                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000
+                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Pacchetti VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>Vedere anche
+- [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

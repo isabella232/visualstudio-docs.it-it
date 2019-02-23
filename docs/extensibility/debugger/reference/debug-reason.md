@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318602"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707263"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Specifica il motivo per cui è stato avviato il processo per eseguire il debug.
@@ -46,20 +46,15 @@ public enum enum_DEBUG_REASON {
 ```
 
 #### <a name="parameters"></a>Parametri
-DEBUG_REASON_ERROR  
-Si è verificato un errore non specifico (usato come una condizione predefinita quando nessuno degli altri motivi adattamento).
+Si è verificato un errore non specifico DEBUG_REASON_ERROR A (usato come una condizione predefinita quando nessuno degli altri motivi adattamento).
 
-DEBUG_REASON_USER_LAUNCHED  
-Il processo è stato avviato su richiesta dell'utente.
+DEBUG_REASON_USER_LAUNCHED il processo è stato avviato su richiesta dell'utente.
 
-DEBUG_REASON_USER_ATTACHED  
-Il processo già in esecuzione è stato collegato dall'utente.
+DEBUG_REASON_USER_ATTACHED dall'utente è stato collegato il processo già in esecuzione.
 
-DEBUG_REASON_AUTO_ATTACHED  
-Il processo è stato associato automaticamente al quando è stata avviata.
+DEBUG_REASON_AUTO_ATTACHED il processo è stato associato automaticamente al quando è stata avviata.
 
-DEBUG_REASON_CAUSALITY  
-Il processo è stato avviato a causa dell'errore una *Just-In-Time* evento di debug (JIT).
+Il processo è stato avviato a causa dell'errore DEBUG_REASON_CAUSALITY una *Just-In-Time* evento di debug (JIT).
 
 ## <a name="remarks"></a>Note
 Restituito dal [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (metodo).
@@ -72,5 +67,5 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29f054a5b584f7cf5471e783d28e857994c1a5a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f57ffcd4cb6a9765b61d288220cae69410c5f83f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989367"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700120"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>Usare la gestione di testo per monitorare le impostazioni globali
-Se si implementa un editor di base, è necessario monitorare le modifiche apportate alle impostazioni globali, perché queste modifiche potrebbero influenzare l'istanza dell'editor. È possibile tenere traccia delle modifiche rimanendo in ascolto di eventi generati da Gestione testi. Ad esempio, quando si specifica una preferenza globale per l'aspetto o il comportamento di un componente nell'editor principale, ad esempio relativo oggetto dati del documento, la gestione di testo archivia le informazioni e comunica a tutti i client interessati.  
-  
-## <a name="text-manager-functions"></a>Funzioni di gestione di testo  
- Il gestore di testo genera eventi per una serie di impostazioni, incluse le seguenti:  
-  
-- Indica se un buffer sia sotto il controllo del codice sorgente  
-  
-- Come registrarsi per le notifiche di modifica di file  
-  
-- Come tenere traccia di quali visualizzazioni sono associate alcuni buffer  
-  
-- Preferenze di colorazione di testo  
-  
-- Scheda e le preferenze di spazio  
-  
-  Le preferenze che sono univoche per una determinata lingua non gestite da Gestione testi. Queste impostazioni devono essere gestite da ogni servizio di linguaggio.  
-  
-  Notifica degli eventi per la gestione di testo viene fornita dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfaccia. Implementare questa interfaccia nel client per gestire gli eventi oggetto generato il gestore di testo. Si registra per questi eventi tramite il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfaccia nella gestione testi.  
-  
-## <a name="see-also"></a>Vedere anche  
- [All'interno dell'editor di base](../extensibility/inside-the-core-editor.md)   
- [Funzionalità dell'editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+Se si implementa un editor di base, è necessario monitorare le modifiche apportate alle impostazioni globali, perché queste modifiche potrebbero influenzare l'istanza dell'editor. È possibile tenere traccia delle modifiche rimanendo in ascolto di eventi generati da Gestione testi. Ad esempio, quando si specifica una preferenza globale per l'aspetto o il comportamento di un componente nell'editor principale, ad esempio relativo oggetto dati del documento, la gestione di testo archivia le informazioni e comunica a tutti i client interessati.
+
+## <a name="text-manager-functions"></a>Funzioni di gestione di testo
+ Il gestore di testo genera eventi per una serie di impostazioni, incluse le seguenti:
+
+- Indica se un buffer sia sotto il controllo del codice sorgente
+
+- Come registrarsi per le notifiche di modifica di file
+
+- Come tenere traccia di quali visualizzazioni sono associate alcuni buffer
+
+- Preferenze di colorazione di testo
+
+- Scheda e le preferenze di spazio
+
+  Le preferenze che sono univoche per una determinata lingua non gestite da Gestione testi. Queste impostazioni devono essere gestite da ogni servizio di linguaggio.
+
+  Notifica degli eventi per la gestione di testo viene fornita dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfaccia. Implementare questa interfaccia nel client per gestire gli eventi oggetto generato il gestore di testo. Si registra per questi eventi tramite il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfaccia nella gestione testi.
+
+## <a name="see-also"></a>Vedere anche
+- [All'interno dell'editor di base](../extensibility/inside-the-core-editor.md)
+- [Funzionalità dell'editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
