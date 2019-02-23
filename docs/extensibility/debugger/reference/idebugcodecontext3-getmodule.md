@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f79403bfd1dfe89868b3a8e3a901e2fc370609d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ae925ab4c05db45d09638070df9291541f19a869
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412786"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703721"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 Recupera un riferimento all'interfaccia del modulo di debug.
@@ -35,8 +35,9 @@ public int GetModule(
 ```
 
 #### <a name="parameters"></a>Parametri
-`ppModule`  
-[out] Riferimento all'interfaccia di modulo di debug.
+`ppModule`
+
+ [out] Riferimento all'interfaccia di modulo di debug.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -63,4 +64,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
+- [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

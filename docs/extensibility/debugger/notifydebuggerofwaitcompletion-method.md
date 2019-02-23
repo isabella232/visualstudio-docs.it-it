@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29657a85b72fa57f37a3932465b5aeb874e9a672
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28811ba402803d1ddb9a6dd08a18d32db6257386
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012391"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679541"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Metodo NotifyDebuggerOfWaitCompletion
-Metodo segnaposto usato come destinazione un punto di interruzione dal debugger. Questo metodo non deve essere impostato come inline o ottimizzato.  
-  
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly:** mscorlib (in *mscorlib. dll*)  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```vb  
-private void NotifyDebuggerOfWaitCompletion()  
-```  
-  
-## <a name="remarks"></a>Note  
- Tutte le operazioni di join con un'attività devono chiamare questo metodo se i bit di notifica di debugger è impostato.  
-  
-## <a name="requirements"></a>Requisiti  
-  
-## <a name="see-also"></a>Vedere anche  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+Metodo segnaposto usato come destinazione un punto di interruzione dal debugger. Questo metodo non deve essere impostato come inline o ottimizzato.
+
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly:** mscorlib (in *mscorlib. dll*)
+
+## <a name="syntax"></a>Sintassi
+
+```vb
+private void NotifyDebuggerOfWaitCompletion()
+```
+
+## <a name="remarks"></a>Note
+ Tutte le operazioni di join con un'attività devono chiamare questo metodo se i bit di notifica di debugger è impostato.
+
+## <a name="requirements"></a>Requisiti
+
+## <a name="see-also"></a>Vedere anche
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

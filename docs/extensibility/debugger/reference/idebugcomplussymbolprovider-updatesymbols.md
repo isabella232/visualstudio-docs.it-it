@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413293"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678290"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Aggiorna i simboli di debug in memoria con quelli del flusso di dati specificato.
@@ -40,14 +40,17 @@ int UpdateSymbols (
 ```
 
 #### <a name="parameters"></a>Parametri
-`ulAppDomainID`  
-[in] Identificatore del dominio dell'applicazione.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Identificatore univoco del modulo.
+ [in] Identificatore del dominio dell'applicazione.
 
-`pUpdateStream`  
-[in] Flusso di dati che contiene i simboli di debug aggiornato.
+`guidModule`
+
+ [in] Identificatore univoco del modulo.
+
+`pUpdateStream`
+
+ [in] Flusso di dati che contiene i simboli di debug aggiornato.
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
@@ -92,4 +95,4 @@ Error:
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

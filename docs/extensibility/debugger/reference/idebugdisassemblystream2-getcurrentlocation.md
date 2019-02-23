@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetCurrentLocation | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::GetCurrentLocation
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d75b8dd21c8d6fc184d349677849d43ff2c45a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa89650ea1497afcb5ac1143264103ee7fc69b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976745"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678532"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
-Restituisce un identificatore percorso codice che rappresenta il percorso di codice corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetCurrentLocation(   
-   UINT64* puCodeLocationId  
-);  
-```  
-  
-```csharp  
-int GetCurrentLocation(   
-   out ulong puCodeLocationId  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `puCodeLocationId`  
- [out] Restituisce l'identificatore percorso codice. Vedere la sezione Osservazioni per il [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metodo per una descrizione di un identificatore percorso codice.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- L'identificatore percorso codice può essere convertito in un contesto di codice chiamando il [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) (metodo).  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   
- [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)
+Restituisce un identificatore percorso codice che rappresenta il percorso di codice corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetCurrentLocation( 
+   UINT64* puCodeLocationId
+);
+```
+
+```csharp
+int GetCurrentLocation( 
+   out ulong puCodeLocationId
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `puCodeLocationId`
+
+ [out] Restituisce l'identificatore percorso codice. Vedere la sezione Osservazioni per il [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metodo per una descrizione di un identificatore percorso codice.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ L'identificatore percorso codice può essere convertito in un contesto di codice chiamando il [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) (metodo).
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
+- [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

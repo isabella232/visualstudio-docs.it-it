@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318485"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681309"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creare un sistema di progetto di base, parte 2
 La prima procedura dettagliata in questa serie [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.
@@ -40,7 +40,7 @@ Questa procedura dettagliata illustra come eseguire queste attività:
 > I passaggi descritti in questa procedura dettagliata si basano su un progetto c#. Tuttavia, fatta eccezione per le specifiche, ad esempio estensioni di file e il codice, è possibile utilizzare gli stessi passaggi per un progetto Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Creare un modello di Visual Studio
-[Creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) viene illustrato come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Viene inoltre illustrato come registrare questo modello con Visual Studio usando il <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo del *\\Templates\Projects\SimpleProject\\* cartella del sistema Registro di sistema.
+- [Creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) viene illustrato come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Viene inoltre illustrato come registrare questo modello con Visual Studio usando il <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo del *\\Templates\Projects\SimpleProject\\* cartella del sistema Registro di sistema.
 
 Usando un modello di Visual Studio (*vstemplate* file) invece di un modello di progetto di base, è possibile controllare come viene visualizzato il modello nel **nuovo progetto** nella finestra di dialogo e come parametri del modello sono sostituito. Oggetto *vstemplate* file è un file XML che descrive la modalità file di origine devono essere incluse quando viene creato un progetto usando il modello di sistema di progetto. Il sistema di progetto stesso viene compilato mediante la raccolta di *vstemplate* file e i file di origine in un *zip* file e distribuiti tramite la copia il *zip* in un percorso che è noti a Visual Studio. Questo processo è illustrato in dettaglio più avanti in questa procedura dettagliata.
 
@@ -271,7 +271,7 @@ Verificare il file di progetto modificato per verificare se il **Console** nodi 
     ![Nodo della Console di progetto semplice](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>Sostituire i parametri di modello di progetto
-[Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) è stato illustrato come sovrascrivere i `ProjectNode.AddFileFromTemplate` metodo per ottenere un tipo di base della sostituzione di parametri di modello. In questa sezione illustra come usare i parametri di modello di Visual Studio più sofisticati.
+- [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) è stato illustrato come sovrascrivere i `ProjectNode.AddFileFromTemplate` metodo per ottenere un tipo di base della sostituzione di parametri di modello. In questa sezione illustra come usare i parametri di modello di Visual Studio più sofisticati.
 
 Quando si crea un progetto tramite un modello di Visual Studio il **nuovo progetto** nella finestra di dialogo modello i parametri vengono sostituiti con le stringhe per personalizzare il progetto. Un parametro di modello è un token speciale che inizia e finisce con un segno di dollaro, ad esempio, $ $time. I due parametri seguenti sono particolarmente utili per l'abilitazione della personalizzazione nei progetti che si basano sul modello:
 

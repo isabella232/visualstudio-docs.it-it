@@ -10,32 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8ea4f053d28ea14c05a50e3bc187faf6f6e207
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fefeaf07c923a5fefa282efcd96948b2d907cca1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966855"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704644"
 ---
 # <a name="mchildren-field"></a>campo m_children
-L'elenco delle attività figlio che sono registrati con questa attività.  
-  
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly:** mscorlib (in *mscorlib. dll*)  
-  
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```csharp 
-.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
-```  
-  
-## <a name="remarks"></a>Note  
- Durante l'esecuzione dell'attività, solo il thread che esegue l'attività deve accedere a questa matrice.  
-  
- Se l'attività è stata completata, altri thread può accedere a questo campo, purché non aggiunge nulla ad esso o rimuovere qualsiasi elemento da quest'ultimo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+L'elenco delle attività figlio che sono registrati con questa attività.
+
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly:** mscorlib (in *mscorlib. dll*)
+
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).
+
+## <a name="syntax"></a>Sintassi
+
+```csharp
+.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children
+```
+
+## <a name="remarks"></a>Note
+ Durante l'esecuzione dell'attività, solo il thread che esegue l'attività deve accedere a questa matrice.
+
+ Se l'attività è stata completata, altri thread può accedere a questo campo, purché non aggiunge nulla ad esso o rimuovere qualsiasi elemento da quest'ultimo.
+
+## <a name="see-also"></a>Vedere anche
+- [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramEx2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramEx2
 helpviewer_keywords:
@@ -12,46 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c30be6fb9bd87972c3a3d186acc1fae9568ccc20
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b57aece9b835ac1f2277fdd626a9fdff7b903f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011962"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705099"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-Questa interfaccia consente la sessione di debug manager (SDM) connettersi a un programma e il nodo di programma associato a un programma.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-IDebugProgramEx2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un fornitore di porte personalizzato implementa questa interfaccia sull'oggetto stesso come il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per permettere a connettersi a un programma mentre allo stesso tempo consentire il fornitore della porta tenere traccia di tutte le sessioni collegato per il modello SDM il programma. Il fornitore della porta personalizzate possa implementare questa interfaccia se sceglie.  
-  
-## <a name="notes-for-callers"></a>Note per i chiamanti  
- Le chiamate SDM [QueryInterface](/cpp/atl/queryinterface) su un `IDebugProgram2` interfaccia per ottenere questa interfaccia per tenere traccia delle sessioni che sono associati ai programmi.  
-  
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IDebugProgramEx2`.  
-  
-|Metodo|Descrizione|  
-|------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Connette un programma a una sessione.|  
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ottiene il nodo di programma associato a un programma.|  
-  
-## <a name="remarks"></a>Note  
- Questa interfaccia è privata tra il modello SDM e il programma.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: Portpriv.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+Questa interfaccia consente la sessione di debug manager (SDM) connettersi a un programma e il nodo di programma associato a un programma.
+
+## <a name="syntax"></a>Sintassi
+
+```
+IDebugProgramEx2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Note per gli implementatori
+ Un fornitore di porte personalizzato implementa questa interfaccia sull'oggetto stesso come il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per permettere a connettersi a un programma mentre allo stesso tempo consentire il fornitore della porta tenere traccia di tutte le sessioni collegato per il modello SDM il programma. Il fornitore della porta personalizzate possa implementare questa interfaccia se sceglie.
+
+## <a name="notes-for-callers"></a>Note per i chiamanti
+ Le chiamate SDM [QueryInterface](/cpp/atl/queryinterface) su un `IDebugProgram2` interfaccia per ottenere questa interfaccia per tenere traccia delle sessioni che sono associati ai programmi.
+
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+ Nella tabella seguente sono illustrati i metodi di `IDebugProgramEx2`.
+
+|Metodo|Descrizione|
+|------------|-----------------|
+|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Connette un programma a una sessione.|
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Ottiene il nodo di programma associato a un programma.|
+
+## <a name="remarks"></a>Note
+ Questa interfaccia è privata tra il modello SDM e il programma.
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: Portpriv.h
+
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+- [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
