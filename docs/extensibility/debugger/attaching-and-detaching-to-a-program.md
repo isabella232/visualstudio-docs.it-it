@@ -11,43 +11,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0e28a266653383621f1d49f37ea8ea4d3a8b8f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957390"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706015"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Collegamento e scollegamento da un programma
-Per collegare il debugger richiede l'invio di sequenza corretta di metodi ed eventi con gli attributi appropriati.  
-  
-## <a name="sequence-of-methods-and-events"></a>Sequenza di metodi ed eventi  
-  
-1. Gestore di sessione di debug (SDM) chiama il [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (metodo).  
-  
-    In base al modello di processo (DE) del motore di debug, il `IDebugProgramNodeAttach2::OnAttach` metodo restituisce uno dei metodi seguenti, che determina ciò che accade.  
-  
-    Se `S_FALSE` viene restituito, il motore di debug è stato collegato correttamente al programma. In caso contrario, il [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) viene chiamato per completare il processo di collegamento.  
-  
-    Se `S_OK` viene restituito, deve essere caricato nello stesso processo come il modello SDM la Germania. Il modello SDM esegue le attività seguenti:  
-  
-   1.  Le chiamate [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) per ottenere le informazioni del motore della DE.  
-  
-   2.  CO-crea il DE.  
-  
-   3.  Le chiamate [collegare](../../extensibility/debugger/reference/idebugengine2-attach.md).  
-  
-2. L'invio di DE un' [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) per il modello SDM con un `EVENT_SYNC` attributo.  
-  
-3. L'invio di DE un' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) per il modello SDM con un `EVENT_SYNC` attributo. 
-  
-4. L'invio di DE un' [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) per il modello SDM con un `EVENT_SYNC_STOP` attributo.  
-  
-   La disconnessione da un programma è un semplice processo in due passaggi, come indicato di seguito:  
-  
-5. Le chiamate SDM [Scollega](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
-  
-6. L'invio di DE un' [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [La chiamata a eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
+Per collegare il debugger richiede l'invio di sequenza corretta di metodi ed eventi con gli attributi appropriati.
+
+## <a name="sequence-of-methods-and-events"></a>Sequenza di metodi ed eventi
+
+1. Gestore di sessione di debug (SDM) chiama il [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (metodo).
+
+    In base al modello di processo (DE) del motore di debug, il `IDebugProgramNodeAttach2::OnAttach` metodo restituisce uno dei metodi seguenti, che determina ciò che accade.
+
+    Se `S_FALSE` viene restituito, il motore di debug è stato collegato correttamente al programma. In caso contrario, il [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) viene chiamato per completare il processo di collegamento.
+
+    Se `S_OK` viene restituito, deve essere caricato nello stesso processo come il modello SDM la Germania. Il modello SDM esegue le attività seguenti:
+
+   1.  Le chiamate [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) per ottenere le informazioni del motore della DE.
+
+   2.  CO-crea il DE.
+
+   3.  Le chiamate [collegare](../../extensibility/debugger/reference/idebugengine2-attach.md).
+
+2. L'invio di DE un' [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) per il modello SDM con un `EVENT_SYNC` attributo.
+
+3. L'invio di DE un' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) per il modello SDM con un `EVENT_SYNC` attributo.
+
+4. L'invio di DE un' [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) per il modello SDM con un `EVENT_SYNC_STOP` attributo.
+
+   La disconnessione da un programma è un semplice processo in due passaggi, come indicato di seguito:
+
+5. Le chiamate SDM [Scollega](../../extensibility/debugger/reference/idebugprogram2-detach.md).
+
+6. L'invio di DE un' [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).
+
+## <a name="see-also"></a>Vedere anche
+- [La chiamata a eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

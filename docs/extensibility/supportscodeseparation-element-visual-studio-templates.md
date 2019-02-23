@@ -14,78 +14,76 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d054348ea88fda4e6e6f7102aaddf49acfe1100
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 504e176973cd9bb6f0041254e0de19d675be05df
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070474"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716467"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelli di Visual Studio)
-Specifica o meno il **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<SupportsCodeSeparation >  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-<SupportsCodeSeparation> true/false </SupportsCodeSeparation>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
- Nessuno.  
-  
-### <a name="child-elements"></a>Elementi figlio  
- Nessuno.  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce la modalità di visualizzazione per il **nuovo progetto** o il **nuovo elemento** nella finestra di dialogo.|  
-  
-## <a name="text-value"></a>Valore di testo  
- È necessario specificare un valore di testo.  
-  
- Il testo deve essere `true` o `false`, che indica o meno la **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
-  
-## <a name="remarks"></a>Note  
- `SupportsCodeSeparation` è un elemento facoltativo. Il valore predefinito è `false`.  
-  
- Il `SupportsCodeSeparation` elemento è disponibile solo per i modelli di elemento di Web.  
-  
- Separazione del codice o il modello di pagina code-behind, consente di mantenere il markup in un file e il codice di programmazione in un altro file. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e altri linguaggi .NET usano questo modello.  
-  
-## <a name="example"></a>Esempio  
- L'esempio seguente specifica per visualizzare il **Inserisci codice in file separati** opzione.  
-  
-```  
-<VSTemplate Version="3.0.0" Type="Project"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>  
-    <TemplateData>  
-        <Name>MyWebProjecStarterKit</Name>  
-        <Description>A simple Web template</Description>  
-        <Icon>icon.ico</Icon>  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        <DefaultName>WebSite</DefaultName>  
-        <SupportsCodeSeparation>true</SupportsCodeSeparation>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="WebApplication.webproj">  
-            <ProjectItem>icon.ico</ProjectItem>  
-            <ProjectItem OpenInEditor="true">Default.aspx</ProjectItem>  
-            <ProjectItem>Default.aspx.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+Specifica o meno il **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.
+
+ \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
+
+## <a name="syntax"></a>Sintassi
+
+```
+<SupportsCodeSeparation> true/false </SupportsCodeSeparation>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+ Nessuno.
+
+### <a name="child-elements"></a>Elementi figlio
+ Nessuno.
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce la modalità di visualizzazione per il **nuovo progetto** o il **nuovo elemento** nella finestra di dialogo.|
+
+## <a name="text-value"></a>Valore di testo
+ È necessario specificare un valore di testo.
+
+ Il testo deve essere `true` o `false`, che indica o meno la **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.
+
+## <a name="remarks"></a>Note
+ `SupportsCodeSeparation` è un elemento facoltativo. Il valore predefinito è `false`.
+
+ Il `SupportsCodeSeparation` elemento è disponibile solo per i modelli di elemento di Web.
+
+ Separazione del codice o il modello di pagina code-behind, consente di mantenere il markup in un file e il codice di programmazione in un altro file. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e altri linguaggi .NET usano questo modello.
+
+## <a name="example"></a>Esempio
+ L'esempio seguente specifica per visualizzare il **Inserisci codice in file separati** opzione.
+
+```
+<VSTemplate Version="3.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
+    <TemplateData>
+        <Name>MyWebProjecStarterKit</Name>
+        <Description>A simple Web template</Description>
+        <Icon>icon.ico</Icon>
+        <ProjectType>Web</ProjectType>
+        <ProjectSubType>CSharp</ProjectSubType>
+        <DefaultName>WebSite</DefaultName>
+        <SupportsCodeSeparation>true</SupportsCodeSeparation>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="WebApplication.webproj">
+            <ProjectItem>icon.ico</ProjectItem>
+            <ProjectItem OpenInEditor="true">Default.aspx</ProjectItem>
+            <ProjectItem>Default.aspx.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetSize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetSize
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863554c6412bc15d4da5e72a6ae3eff586332535
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5b55e6663ac1d9d679c2cdf524fbd7d1848dc22b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984210"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686495"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
-Ottiene la dimensione, espressa in byte, del valore della proprietà.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetSize (   
-   DWORD* pdwSize  
-);  
-```  
-  
-```csharp  
-int GetSize (   
-   out uint pdwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pdwSize`  
- [out] Restituisce la dimensione, espressa in byte, del valore della proprietà.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Restituisce `S_GETSIZE_NO_SIZE` se la proprietà non dispone di alcuna dimensione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+Ottiene la dimensione, espressa in byte, del valore della proprietà.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetSize ( 
+   DWORD* pdwSize
+);
+```
+
+```csharp
+int GetSize ( 
+   out uint pdwSize
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pdwSize`
+
+ [out] Restituisce la dimensione, espressa in byte, del valore della proprietà.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Restituisce `S_GETSIZE_NO_SIZE` se la proprietà non dispone di alcuna dimensione.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

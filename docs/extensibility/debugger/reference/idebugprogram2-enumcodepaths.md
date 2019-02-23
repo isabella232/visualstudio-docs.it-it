@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::EnumCodePaths | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::EnumCodePaths
 helpviewer_keywords:
@@ -12,67 +12,73 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fd193140770a1833f8e849bb74de10bbf52ba20
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09437fddf5cd61aef06341494431c747c4c66c8a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015608"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681621"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Recupera un elenco dei percorsi di codice per una determinata posizione nel file di origine.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT EnumCodePaths(   
-   LPCOLESTR            pszHint,  
-   IDebugCodeContext2*  pStart,  
-   IDebugStackFrame2*   pFrame,  
-   BOOL                 fSource,  
-   IEnumCodePaths2**    ppEnum,  
-   IDebugCodeContext2** ppSafety  
-);  
-```  
-  
-```csharp  
-int EnumCodePaths(   
-   string                 pszHint,  
-   IDebugCodeContext2     pStart,  
-   IDebugStackFrame2      pFrame,  
-   Int                    fSource,  
-   out IEnumCodePaths2    ppEnum,  
-   out IDebugCodeContext2 ppSafety  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pszHint`  
- [in] La parola sotto il cursore nella **origine** oppure **Disassembly** visualizzazione nell'IDE.  
-  
- `pStart`  
- [in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che rappresenta il contesto codice corrente.  
-  
- `pFrame`  
- [in] Un' [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) dell'oggetto che rappresenta lo stack frame associato con il punto di interruzione corrente.  
-  
- `fSource`  
- [in] Diverso da zero (`TRUE`) se si trova nel **origine** vista o zero (`FALSE`) se si trova nel **Disassembly** visualizzazione.  
-  
- `ppEnum`  
- [out] Restituisce un [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) oggetto contenente un elenco dei percorsi di codice.  
-  
- `ppSafety`  
- [out] Restituisce un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) dell'oggetto che rappresenta un contesto di codice aggiuntivi da impostare come un punto di interruzione in caso di percorso hardcoded scelto viene ignorata. Questa situazione può verificarsi nel caso di un'espressione booleana esegue un corto circuita, ad esempio.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Un percorso di codice descrive il nome di un metodo o funzione che è stato chiamato per ottenere al momento dell'esecuzione del programma corrente. Un elenco di percorsi di codice rappresenta lo stack di chiamate.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+Recupera un elenco dei percorsi di codice per una determinata posizione nel file di origine.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT EnumCodePaths( 
+   LPCOLESTR            pszHint,
+   IDebugCodeContext2*  pStart,
+   IDebugStackFrame2*   pFrame,
+   BOOL                 fSource,
+   IEnumCodePaths2**    ppEnum,
+   IDebugCodeContext2** ppSafety
+);
+```
+
+```csharp
+int EnumCodePaths( 
+   string                 pszHint,
+   IDebugCodeContext2     pStart,
+   IDebugStackFrame2      pFrame,
+   Int                    fSource,
+   out IEnumCodePaths2    ppEnum,
+   out IDebugCodeContext2 ppSafety
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pszHint`
+
+ [in] La parola sotto il cursore nella **origine** oppure **Disassembly** visualizzazione nell'IDE.
+
+ `pStart`
+
+ [in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che rappresenta il contesto codice corrente.
+
+ `pFrame`
+
+ [in] Un' [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) dell'oggetto che rappresenta lo stack frame associato con il punto di interruzione corrente.
+
+ `fSource`
+
+ [in] Diverso da zero (`TRUE`) se si trova nel **origine** vista o zero (`FALSE`) se si trova nel **Disassembly** visualizzazione.
+
+ `ppEnum`
+
+ [out] Restituisce un [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) oggetto contenente un elenco dei percorsi di codice.
+
+ `ppSafety`
+
+ [out] Restituisce un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) dell'oggetto che rappresenta un contesto di codice aggiuntivi da impostare come un punto di interruzione in caso di percorso hardcoded scelto viene ignorata. Questa situazione può verificarsi nel caso di un'espressione booleana esegue un corto circuita, ad esempio.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Un percorso di codice descrive il nome di un metodo o funzione che è stato chiamato per ottenere al momento dell'esecuzione del programma corrente. Un elenco di percorsi di codice rappresenta lo stack di chiamate.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

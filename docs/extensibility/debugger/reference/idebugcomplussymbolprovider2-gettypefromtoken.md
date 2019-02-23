@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
 - GetTypeFromToken
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 590e8705dec674b96a57b68934ab1bd5b75a6545
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413462"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681934"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 Recupera un tipo dato il relativo token.
@@ -42,17 +42,21 @@ int GetTypeFromToken(
 ```
 
 #### <a name="parameters"></a>Parametri
-`appDomain`  
-[in] Identificatore del dominio dell'applicazione.
+`appDomain`
 
-`guidModule`  
-[in] Identificatore univoco del modulo.
+ [in] Identificatore del dominio dell'applicazione.
 
-`tdToken`  
-[in] Token del tipo da recuperare.
+`guidModule`
 
-`ppField`  
-[out] Restituisce il tipo rappresentato dal [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+ [in] Identificatore univoco del modulo.
+
+`tdToken`
+
+ [in] Token del tipo da recuperare.
+
+`ppField`
+
+ [out] Restituisce il tipo rappresentato dal [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -87,4 +91,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
