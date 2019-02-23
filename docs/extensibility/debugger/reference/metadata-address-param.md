@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_PARAM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_PARAM
 helpviewer_keywords:
@@ -12,55 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f91e8ddf00b191bd2574c3a360328fb00cb50960
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700289"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
-Questa struttura rappresenta un parametro di un metodo o funzione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-typedef struct _tagMETADATA_ADDRESS_PARAM {  
-   _mdToken tokMethod;  
-   _mdToken tokParam;  
-   DWORD    dwIndex;  
-} METADATA_ADDRESS_PARAM;  
-```  
-  
-```csharp  
-public struct METADATA_ADDRESS_PARAM {  
-   public int  tokMethod;  
-   public int  tokParam;  
-   public uint dwIndex;  
-}  
-```  
-  
-## <a name="terms"></a>Termini  
- tokMethod  
- L'ID del metodo il parametro fa parte di.  
-  
- tokParam  
- L'ID del parametro.  
-  
- dwIndex  
- L'indice del parametro in un elenco di parametri.  
-  
-## <a name="remarks"></a>Note  
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_PARAM` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+Questa struttura rappresenta un parametro di un metodo o funzione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+typedef struct _tagMETADATA_ADDRESS_PARAM {
+   _mdToken tokMethod;
+   _mdToken tokParam;
+   DWORD    dwIndex;
+} METADATA_ADDRESS_PARAM;
+```
+
+```csharp
+public struct METADATA_ADDRESS_PARAM {
+   public int  tokMethod;
+   public int  tokParam;
+   public uint dwIndex;
+}
+```
+
+## <a name="terms"></a>Termini
+ ID del parametro del metodo tokMethod fa parte di.
+
+ tokParam ID del parametro.
+
+ dwIndex l'indice del parametro in un elenco di parametri.
+
+## <a name="remarks"></a>Note
+ Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_PARAM` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: sh.h
+
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

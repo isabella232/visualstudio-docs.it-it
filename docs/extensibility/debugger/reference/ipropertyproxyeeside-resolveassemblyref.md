@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 helpviewer_keywords:
@@ -12,61 +12,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d161e5e66d60b3967dcdd0e9e6f67e5699c4444c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949779"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681413"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Determina la posizione del riferimento all'assembly gestito specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT ResolveAssemblyRef(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  assemLocation,  
-   ASSEMBLYLOCRESOLUTION* alr  
-);  
-```  
-  
-```csharp  
-int ResolveAssemblyRef(  
-   ref string                     assemName,  
-   out IEEDataStorage             assemBytes,  
-   out IEEDataStorage             assemPdb,  
-   out string                     assemLocation,  
-   out enum_ASSEMBLYLOCRESOLUTION alr  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `assemName`  
- [in] Nome dell'assembly da risolvere.  
-  
- `assemBytes`  
- [out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly associati al riferimento.  
-  
- `assemPdb`  
- [out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione i dati associati a questo riferimento.  
-  
- `assemLocation`  
- [out] Restituisce il percorso del riferimento.  
-  
- `alr`  
- [out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione di assembly questo riferimento del.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo non viene in genere implementato da un analizzatore di espressioni personalizzate.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
+Determina la posizione del riferimento all'assembly gestito specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT ResolveAssemblyRef(
+   BSTR*                  assemName,
+   IEEDataStorage**       assemBytes,
+   IEEDataStorage**       assemPdb,
+   BSTR*                  assemLocation,
+   ASSEMBLYLOCRESOLUTION* alr
+);
+```
+
+```csharp
+int ResolveAssemblyRef(
+   ref string                     assemName,
+   out IEEDataStorage             assemBytes,
+   out IEEDataStorage             assemPdb,
+   out string                     assemLocation,
+   out enum_ASSEMBLYLOCRESOLUTION alr
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `assemName`
+
+ [in] Nome dell'assembly da risolvere.
+
+ `assemBytes`
+
+ [out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly associati al riferimento.
+
+ `assemPdb`
+
+ [out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione i dati associati a questo riferimento.
+
+ `assemLocation`
+
+ [out] Restituisce il percorso del riferimento.
+
+ `alr`
+
+ [out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione di assembly questo riferimento del.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo non viene in genere implementato da un analizzatore di espressioni personalizzate.
+
+## <a name="see-also"></a>Vedere anche
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

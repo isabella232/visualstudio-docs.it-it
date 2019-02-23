@@ -1,7 +1,7 @@
 ---
 title: ATTACH_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - ATTACH_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7acd5b87288365cde43b2eb8f460b52048dcf36f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318707"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688264"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Specifica il motivo per il motore di debug (DE) da associare a un nodo di programma.
@@ -42,14 +42,11 @@ public enum enum_ATTACH_REASON {
 ```
 
 ## <a name="members"></a>Membri
-ATTACH_REASON_AUTO  
-Collegare perché il processo è attualmente in modalità di debug.
+ATTACH_REASON_AUTO connettersi perché il processo è attualmente in modalità di debug.
 
-ATTACH_REASON_LAUNCH  
-Collegare perché il processo è stato avviato.
+ATTACH_REASON_LAUNCH connettersi perché il processo è stato avviato.
 
-ATTACH_REASON_USER  
-Collegare a causa di una richiesta dell'utente.
+ATTACH_REASON_USER collegare a causa di una richiesta dell'utente.
 
 ## <a name="remarks"></a>Note
 Questi valori vengono usati come parametro per il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metodi.
@@ -62,6 +59,6 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)  
-[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

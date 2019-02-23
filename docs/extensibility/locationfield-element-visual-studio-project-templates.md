@@ -13,87 +13,85 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 747cf53056b7f1d5ccd982e81f92db2c2dd84472
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984951"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679957"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
-Specifica o meno il **posizione** casella di testo il **nuovo progetto** nella finestra di dialogo è abilitata, disabilitata o nascosta per il modello di progetto.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<LocationField >  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-<LocationField> Enabled/Disabled/Hidden </LocationField>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
- Nessuno.  
-  
-### <a name="child-elements"></a>Elementi figlio  
- Nessuno.  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce la modalità di visualizzazione per il **nuovo progetto**.|  
-  
-## <a name="text-value"></a>Valore di testo  
- È necessario specificare un valore di testo.  
-  
- I valori di testo validi sono:  
-  
--   `Enabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è abilitata nella finestra di dialogo.  
-  
--   `Disabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è disabilitata nella finestra di dialogo.  
-  
--   `Hidden`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è nascosta la finestra di dialogo.  
-  
-## <a name="remarks"></a>Note  
- Il valore predefinito è `Enabled`.  
-  
- Il **posizione** casella di testo il **nuovo progetto** nella finestra di dialogo consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.  
-  
- Il valore specificato nella `Location` elemento viene accettato dalla finestra di dialogo solo se il sistema di progetto sottostante lo supporta.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per un modello [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
-  
-```  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic template</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <LocationField>Disabled</LocationField>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyTemplate.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+Specifica o meno il **posizione** casella di testo il **nuovo progetto** nella finestra di dialogo è abilitata, disabilitata o nascosta per il modello di progetto.
+
+ \<VSTemplate > \<TemplateData > \<LocationField >
+
+## <a name="syntax"></a>Sintassi
+
+```
+<LocationField> Enabled/Disabled/Hidden </LocationField>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+ Nessuno.
+
+### <a name="child-elements"></a>Elementi figlio
+ Nessuno.
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce la modalità di visualizzazione per il **nuovo progetto**.|
+
+## <a name="text-value"></a>Valore di testo
+ È necessario specificare un valore di testo.
+
+ I valori di testo validi sono:
+
+-   `Enabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è abilitata nella finestra di dialogo.
+
+-   `Disabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è disabilitata nella finestra di dialogo.
+
+-   `Hidden`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è nascosta la finestra di dialogo.
+
+## <a name="remarks"></a>Note
+ Il valore predefinito è `Enabled`.
+
+ Il **posizione** casella di testo il **nuovo progetto** nella finestra di dialogo consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.
+
+ Il valore specificato nella `Location` elemento viene accettato dalla finestra di dialogo solo se il sistema di progetto sottostante lo supporta.
+
+## <a name="example"></a>Esempio
+ Nell'esempio seguente vengono illustrati i metadati per un modello [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
+
+```
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic template</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <LocationField>Disabled</LocationField>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyTemplate.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

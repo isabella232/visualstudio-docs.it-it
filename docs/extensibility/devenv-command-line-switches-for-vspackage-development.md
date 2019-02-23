@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970552"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705531"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Opzioni della riga di comando devenv per lo sviluppo di VSPackage
 
-Visual Studio consente agli sviluppatori di automatizzare le attività dalla riga di comando durante l'esecuzione `devenv.exe`, il file che avvia l'IDE di Visual Studio.  
+Visual Studio consente agli sviluppatori di automatizzare le attività dalla riga di comando durante l'esecuzione `devenv.exe`, il file che avvia l'IDE di Visual Studio.
 
- Le attività includono:  
+ Le attività includono:
 
-- Distribuzione di applicazioni in configurazioni predefinite all'esterno dell'IDE.  
+- Distribuzione di applicazioni in configurazioni predefinite all'esterno dell'IDE.
 
-- Compilazione di progetti usando set di impostazioni automaticamente le impostazioni di compilazione o le configurazioni di debug.  
+- Compilazione di progetti usando set di impostazioni automaticamente le impostazioni di compilazione o le configurazioni di debug.
 
-- Caricamento l'IDE in configurazioni specifiche, tutto all'esterno dell'IDE. È anche possibile personalizzare l'IDE all'avvio.  
+- Caricamento l'IDE in configurazioni specifiche, tutto all'esterno dell'IDE. È anche possibile personalizzare l'IDE all'avvio.
 
 ## <a name="guidelines-for-switches"></a>Linee guida per le opzioni
 
-Documentazione di Visual Studio descrive il livello di utente `devenv` della riga di comando. Per altre informazioni, vedere [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md). Il `devenv` lo strumento supporta anche altre opzioni della riga di comando che sono utili con VSPackage lo sviluppo, distribuzione e debug.  
+Documentazione di Visual Studio descrive il livello di utente `devenv` della riga di comando. Per altre informazioni, vedere [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md). Il `devenv` lo strumento supporta anche altre opzioni della riga di comando che sono utili con VSPackage lo sviluppo, distribuzione e debug.
 
 | Opzione della riga di comando | Descrizione |
 |---------------------| - |

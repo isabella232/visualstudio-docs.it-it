@@ -8,401 +8,401 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79c45bd5ded6ab80d7bb1a2abb6c1007e3b29e0d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022950"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694283"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
-## <a name="animation-fundamentals"></a>Nozioni fondamentali di animazione  
-  
-### <a name="animation-best-practices-in-visual-studio"></a>Procedure consigliate di animazione in Visual Studio  
-Seguire queste regole per garantire gli stili di animazione coerente e facile da usare tra l'IDE di Visual Studio.  
-  
--   **In modo selettivo.** Limitare le animazioni a quelle che svolgono funzioni specifiche.  
-  
--   **Velocità e tempi sono importanti** per garantire che le transizioni sono naturale e veloce:  
-  
-    -   Completare le transizioni animate entro mezzo secondo (500 millisecondi).  
-  
-    -   Le animazioni che si verificano spesso devono essere sufficientemente rapido che non interrompono del flusso di lavoro dell'utente. Guardare l'animazione in un ciclo e regolare l'intervallo di tempo fino a quando non mi sembra corretta. 
-  
-    -   Le animazioni non devono essere così rapida o jarring che è difficile da comprendere, ma non tanto lenta che rende uno impazienti per la transizione alla fine.  
-  
-    -   Usare la variabile temporizzazione per enfatizzare l'importanza. Ad esempio, quando si passa attraverso una sequenza di elementi in un diagramma classi, più veloci tramite le transizioni tra gli elementi quindi rallentare per concentrarsi sugli elementi importanti.  
-  
--   **Usare l'interpolazione lineare graduale** da uno stato a altro, fornendo un senso di movimento tranquilla e naturale.  
-  
--   Quando possibile, **usare un'animazione con meno evidente al passaggio del mouse** per indicare elementi interattivi sotto il mouse.  
-  
--   Se dipendono in modo significativo le animazioni nella funzionalità, quindi **fornire un mezzo per disattivarli** in locale (per tutte le feature) come opzione nel **strumenti > Opzioni** finestra di dialogo.  
-  
--   **Solo un'animazione deve essere eseguita in un momento** e lo trasmette solo una parte delle informazioni. Lo spostamento o veicolare più operazioni di più di un oggetto può generare confusione. 
-  
--   **Accorgimento è importante.** Nella maggior parte dei casi, animazione non ha l'attenzione utente richiesta per soddisfare lo scopo. Piccole modifiche nella temporizzazione, sequenza e il comportamento potrebbero avere un impatto significativo sulle percezione e possono fare la differenza tra un'animazione efficace e inefficace.  
-  
--   Quando si usa l'animazione per attirare l'attenzione su un valore, **assicurarsi che vale la pena di interrompere l'utente**di concentrazione.  
-  
--   **Quando viene visualizzato lo stato di avanzamento o lo stato** tramite animazione:  
-  
-    -   Arrestare che mostra lo spostamento di stato di avanzamento quando non viene raggiunto il processo sottostante. 
-  
-    -   Distinguere i processi indeterminati da determinato per processi.  
-  
-    -   Assicurarsi che un'animazione abbia personali stati di completamento e non riuscite.  
-  
-    -   Riduci l'uso di animazioni di effetto che mostrano lo stato e assicurarsi che abbiano un valore reale, fornendo informazioni aggiuntive dell'utilizzo effettivo. Sono esempi le emergenze e modifiche allo stato temporaneo  
-  
-#### <a name="animation-donts"></a>Animazione cose:
-  
--   Non usare movimenti piccoli (spostamento in un footprint ridotto). Preferisce dissolvenze e le modifiche tramite lo spostamento di oggetti.  
-  
--   Non usare le animazioni che si verificano su una vasta area della superficie sullo schermo. Indipendentemente dalle dimensioni, questo stile di animazione è fuorviante per l'utente.  
-  
--   Non usare le animazioni non correlato all'oggetto di cui che l'utente è attualmente incentrato sulle o l'interazione con.  
-  
--   Non usare le animazioni che richiedono l'interazione dell'utente per reimpostare lo stato, come forzare l'utente di rispondere a una notifica per renderlo di arrestare lampeggiare lampeggiante. L'interazione con essi in alcun modo dovrebbe essere sufficiente per non prenderli in considerazione.  
-  
-Per altre informazioni sulle applicazioni per le procedure consigliate, vedere [modelli di animazione](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
-  
-### <a name="animation-metrics"></a>Criteri di misurazione di animazione  
-  
--   Il sistema deve reagire in modo visibile ai movimenti utente inferiore ai 10 millisecondi.  
-  
--   Le transizioni animate non dovrebbero richiedere più di 500 millisecondi per il completamento.  
-  
--   Un modo per compensare le transizioni che richiedono tempi più lunghi è per separarlo in due parti. La prima parte di un'animazione, ad esempio, potrebbe essere il contenitore di contenuto vuoto (fino a 500 millisecondi), seguito dal contenuto che si dissolve nel contenitore (fino a 500 millisecondi).  
-  
--   Per tempi di caricamento che possono essere calcolate, è preferibile un indicatore di stato determinante (indicatore di stato percentuale-fine).  
-  
--   Per tempi di caricamento che non possono essere calcolati, un indicatore di occupato, ad esempio un cursore o un'animazione di rotazione incorporato (durante il caricamento o all'indicatore di utilizzo) è appropriato.  
-  
-### <a name="animation-as-communicator"></a>Animazione come communicator  
-Nell'interfaccia utente di Visual Studio, animazione funge solo da uno strumento di comunicazione.  Viene utilizzato per comunicare un'ampia gamma di informazioni, ad esempio modifiche strutturali nell'interfaccia utente (ad esempio, quando un menu si apre o chiude). Animazione consente di visualizzare il comportamento dipendente dal tempo di sistemi complessi, ad esempio visualizzazione stato di installazione. Le animazioni sono anche utilizzabile per attirare l'attenzione con avvisi e notifiche.  
-  
- Le animazioni dell'interfaccia utente in genere funzionano in quattro modi: visualizzare, attirare l'attenzione, simulazioni e stato di avanzamento/tempi di risposta degli indicatori.  
-  
-#### <a name="visualize"></a>Visualizzare  
-Animazione può evidenziare la natura tridimensionale di oggetti e rendono più semplice per gli utenti visualizzare la relativa struttura spaziale. A tale scopo, l'animazione potrebbe necessario per ruotare l'oggetto in un cerchio completo, lenta disattivarla e viceversa, o portare l'oggetto più vicino e leggermente aumentarne le dimensioni per evidenziare il rollover o lo stato attivo.  
-  
-Anche se gli oggetti tridimensionali possono essere spostati con il controllo utente, la finestra di progettazione debba determinare in anticipo (a livello di codice o manualmente) come per il miglior animare uno spostamento che vengono fornite informazioni sugli ottimale dell'oggetto. Ciò programmato animazione può quindi essere attivato dall'utente posizionando il cursore sull'oggetto, mentre gli spostamenti controllata dall'utente richiedano all'utente di capire come modificare l'oggetto. Limitare lo spostamento a un singolo asse o un orientamento alla volta. la scalabilità, ruotare, o tradurre, ma non eseguire più di una contemporaneamente.  
-  
-La categoria Visualize include gli aspetti dei dati, relazioni, stato, struttura, sequenza e ora.  
-  
-##### <a name="data"></a>Dati  
-Vengono illustrate informazioni sulla variabile e complesse:  
-  
--   Spostarsi all'interno di visualizzazioni di informazioni, ad esempio grafici e diagrammi  
-  
--   L'esecuzione di istruzioni tramite una sequenza, tour guidato e paging  
-  
--   Chiamare i dettagli, sta puntando e l'evidenziazione informazioni specifiche  
-  
--   Sovrapporre i dettagli e informazioni aggiuntive su un elemento con lo stato attivo
-  
--   Morphing di una rappresentazione struttura o dell'organizzazione a altra  
-  
--   Che rappresenta le modifiche nel tempo tramite dispositivi di scorrimento, i file Wheel scatto e shuttle e controlli di trasporto (play, stop e pause) 
-  
-##### <a name="relationships"></a>Relazioni  
-  
--   Viene illustrato come gli elementi sono correlati tra loro o gli elementi che si riferiscono a un determinato elemento
-  
--   Mostrare le relazioni di gerarchie e padre-figlio o pari livello
-  
--   Un elemento genera un'altra
-  
--   Riduce al minimo un elemento a un altro elemento
-  
--   Un elemento con tethering a un altro
-  
-##### <a name="state"></a>Stato  
-  
--   Aggiornamenti del contenuto
-  
--   Selezione e lo stato attivo utente  
-  
--   Stato  
-  
--   Errori  
-  
-##### <a name="structure"></a>Struttura  
-  
--   La trasformazione tramite pivot in un nodo della struttura  
-  
--   Il riorientamento  
-  
--   Ridurre e ingrandire, o espandere e comprimere  
-  
-##### <a name="sequence"></a>Sequence  
-  
--   Sequenza di presentazione  
-  
--   Capovolgimento tramite le immagini  
-  
-##### <a name="time"></a>Ora  
-  
--   Mostra modifiche nel tempo, intervallo di tempo e screencast  
-  
--   Spostare da spostare nel Cestino, annullare e ripetere  
-  
--   Ripristinare lo stato cronologico  
-  
-#### <a name="attract-attention"></a>Attirare l'attenzione  
-Se l'obiettivo è per attirare l'attenzione dell'utente a un singolo elemento all'esterno di diversi o per avvisare l'utente per informazioni aggiornate, un'animazione potrebbe essere appropriata. Ad esempio, la pagina iniziale dell'applicazione potrebbe impiegare un pulsante di Guida introduttiva con scorrimento nella posizione corretta dopo il caricamento della pagina.  
-  
-Come regola, l'ultimo elemento di spostamento nella schermata attrae l'attenzione dell'utente.  In una serie di elementi animati, l'attenzione dell'utente seguirà l'ultimo oggetto mobile.  
-  
-##### <a name="alert"></a>Avviso  
-  
--   Avvisare l'utente, attenzione, indicano lo stato di avanzamento  
-  
--   Mostra che un elemento viene eseguito correttamente o non correttamente o Mostra lo stato di avanzamento o modifiche di stato di avanzamento  
-  
--   Richiedere agli utenti durante un'attività, come ricerca di ulteriori informazioni online o per ottenere informazioni sull'attività corrente  
-  
-##### <a name="notifications"></a>Notifiche  
-  
--   Avvisare l'utente su una condizione di errore  
-  
--   Interrompono l'utente per vedere se desiderano allontanarsi  
-  
--   Delicatamente informare l'utente che ha completato un processo o modificato, ad esempio durante un download è stato completato.  
-  
-#### <a name="simulate"></a>Simulare  
-In questa categoria sono physicality e dimensionalità.  
-  
--   Illustrare da dove provengono gli oggetti o in cui accedono al  
-  
--   Espandere e comprimere o aprire e chiudere  
-  
--   La panoramica, lo scorrimento e pagina attiva  
-  
--   Sovrapposizione e ordinamento z  
-  
--   Sequenza video e accordion  
-  
--   Capovolgimento e rotazione dell'interfaccia utente  
-  
-#### <a name="response-and-progress-indicators"></a>Indicatori di risposta e lo stato di avanzamento  
-Gli indicatori di stato sono due importanti vantaggi:  
-  
--   Entrambi gli indicatori di stato indeterminato e determinato per rassicurare l'utente che il sistema non è arrestato e sta lavorando per il problema.  
-  
--   Gli indicatori determinato per concedere all'utente che un senso di avanzamento dell'azione è in corso, nonché un sentimento di avvicinandosi alla data di fine.  
-  
-##  <a name="BKMK_AnimationPatterns"></a> Modelli di animazione  
-  
-### <a name="overview"></a>Panoramica  
-Le animazioni in Visual Studio sono progettate per fornire una funzione specifica senza effetti negativi sulla produttività degli utenti. In genere, le animazioni in Visual Studio devono essere:  
-  
--   Piccola e non intrusivo  
-  
--   Naturali e realistico  
-  
--   Sottili e avvolta  
-  
--   Veloci ed efficienti  
-  
--   Tipo "relaxed", non accelera l'esecuzione  
-  
-Questa illustrazione mostra gli stili di animazione consigliati per Visual Studio. Nessuna animazione o meno evidenti animazioni come dissolvenza entrata / uscita vengono usate più di frequente. C'è limitata dell'applicazione di animazioni di movimento, ad esempio espandere e comprimere, X e Y posizionare modifica e la rotazione. 
-  
-![Gli stili di animazione consigliati per Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202 a_VSAnimStyles")<br />Stili di animazione consigliati per Visual Studio
-  
-#### <a name="appear-and-disappear"></a>Vengono visualizzati e nascosti  
-Con questo modello, un elemento passa da visibile a out-di-visualizzazione e viceversa senza un'animazione di transizione.  
-  
-![Vengono visualizzati e nascosti animazione](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202 b_AppearAndDisappear")<br />Vengono visualizzati e nascosti animazione  
-  
-##### <a name="correct-usage"></a>Utilizzo corretto  
-Elementi dell'interfaccia utente aggiornati che necessario immediatamente comparire o scomparire in modo che l'utente non è né abbagliato né dall'inquadratura. Inoltre, le animazioni lenti potrebbero essere percepite come un trascinamento delle prestazioni, che non viene eseguita con lo stile vengono visualizzati e scompaiono.  
-  
-##### <a name="incorrect-usage"></a>Utilizzo non corretto  
-Casi in cui dell'interfaccia utente viene visualizzato immediatamente che l'utente non avrà idea di cosa è successo e aggiunta di un'animazione potrebbe facilitare la comprensione del contesto.  
-  
-##### <a name="animation-properties"></a>Proprietà di animazione  
-L'intervallo di tempo è in genere zero secondi.  
-  
-##### <a name="examples"></a>Esempi    
--   Finestre degli strumenti Nascondi automaticamente  
-  
--   Attivato da tastiera editor dell'interfaccia utente, ad esempio IntelliSense e Guida per i parametri  
-  
--   Aree di codice di espansione e compressione  
-  
-#### <a name="fade-in-and-fade-out"></a>Dissolvenza in entrata e dissolvenza  
-Con questo modello, la transizione di un elemento dell'interfaccia utente da (% 0 opacity) non è visibile a visibile (100% di opacità) o viceversa.  
-  
-![Animazione di dissolvenza in entrata e dissolvenza](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202 c_FadeInFadeOut")<br />Animazione di dissolvenza in entrata e dissolvenza  
-  
-##### <a name="correct-usage"></a>Utilizzo corretto  
-Animazione dell'interfaccia utente più comune è consigliato. È un effetto meno evidente che aggiunge interesse senza interrompere il flusso. In alcuni casi, l'utente potrebbe non anche tenere presente che vi sia un'animazione, percepire il un' smooth e il flusso di sistema dell'interfaccia utente.  
-  
-##### <a name="animation-properties"></a>Proprietà di animazione  
-  
--   Opacità di partenza: 0% per la dissolvenza, 100% di dissolvenza  
-  
--   Opacità di fine: 100% per la dissolvenza, 0% per la dissolvenza  
-  
--   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi  
-  
--   Stile di interpolazione: Seno InOut  
-  
-##### <a name="examples"></a>Esempi  
-  
--   Finestre degli strumenti Nascondi automaticamente  
-  
--   Menu di aperto e chiusura  
-  
--   Transizioni di scheda di sfondo e primo piano  
-  
-#### <a name="color-blend-from-a-to-b"></a>Sfumatura di colore da A B  
-Con questo modello, un elemento dell'interfaccia utente di modificare da colore A B.  
-  
-![Animazione di miscele di colore](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202 d_ColorBlend")<br />Animazione di sfumatura di colore  
-  
-##### <a name="correct-usage"></a>Utilizzo corretto  
-Una transizione animato quando un elemento dell'interfaccia utente cambia colore da un contesto o stato a altro.  
-  
-##### <a name="animation-properties"></a>Proprietà di animazione  
-  
--   Colore iniziale: Interfaccia utente specifico  
-  
--   Colore finale: Interfaccia utente specifico  
-  
--   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi  
-  
--   Stile di interpolazione: Seno InOut  
-  
-##### <a name="examples"></a>Esempi  
-  
--   Documentare le transizioni di stato di finestra (attivo, ultimo attive e inattive)  
-  
--   Strumento transizioni di stato di finestra (con lo stato attivo e con stato non attivo)  
-  
-#### <a name="expand-and-contract"></a>Espandere e comprimere  
-Con questo modello, un elemento dell'interfaccia utente si espande in X, Y o entrambe le direzioni.  
-  
-![Espandere e comprimere animazione](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202 e_ExpandContract")<br />Espandere e comprimere animazione  
-  
-##### <a name="correct-usage"></a>Utilizzo corretto  
-Una transizione animato quando un elemento dell'interfaccia utente cambia le dimensioni da un contesto a altro.  
-  
-##### <a name="animation-properties"></a>Proprietà di animazione  
-  
--   Scala x: % o una dimensione specifica, in pixel,  
-  
--   Y scala: % o una dimensione specifica, in pixel,  
-  
--   Posizione di ancoraggio: in genere superiore sinistro (per le lingue da sinistra a destra) o alto a destra (per le lingue da destra a sinistra)  
-  
--   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi  
-  
-##### <a name="examples"></a>Esempi  
-  
--   Pannello Esplora architettura espandere e comprimere  
-  
--   Inizio pagina articoli espandere e comprimere  
-  
-#### <a name="x-y-position-change"></a>Modifica di posizione X-Y  
-Con questo modello, un elemento dell'interfaccia utente cambia la posizione X o Y o entrambi.  
-  
-![Animazione di modifica della posizione X-Y](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202 f_XYPositionChange")<br />Animazione di modifica posizione X-Y  
-  
-##### <a name="correct-usage"></a>Utilizzo corretto  
-Una transizione animato quando un elemento dell'interfaccia utente cambia posizione da un contesto a altro.  
-  
-##### <a name="animation-properties"></a>Proprietà di animazione  
-  
--   Posizione di inizio X e Y: Interfaccia utente specifico  
-  
--   Alla fine X e Y posizione: Interfaccia utente specifico  
-  
--   Tracciato di movimento: nessuno  
-  
--   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi  
-  
--   Stile di interpolazione: Seno InOut  
-  
-##### <a name="example"></a>Esempio  
-Il riordinamento della scheda  
-  
-#### <a name="rotate"></a>Ruota  
-Con questo modello consente di ruotare l'elemento dell'interfaccia utente.  
-  
-![Animazione di rotazione elemento UI](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202 g_Rotate")<br />Animazione di rotazione di elemento dell'interfaccia utente  
-  
-##### <a name="correct-usage"></a>Utilizzo corretto  
-Solo per l'indicatore di stato rotante indeterminato.  
-  
-##### <a name="animation-properties"></a>Proprietà di animazione  
-  
--   Gradi di rotazione: 360  
-  
--   Centro di rotazione: centrale dell'oggetto  
-  
--   Durata: continua  
-  
-##### <a name="example"></a>Esempio  
-Indicatore di stato indeterminato (rotazione)  
-  
-### <a name="common-shell-ui-actions-and-recommended-animations"></a>Azioni dell'interfaccia utente della shell comuni e consigliate le animazioni  
-  
-#### <a name="tab-open"></a>Scheda aperta  
-![Scheda animazione di apertura](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202 h_TabOpen")<br />Animazione di apertura della scheda  
-    
--   Stile di visualizzazione: vengono visualizzati  
-  
--   Durata: zero secondi  
+## <a name="animation-fundamentals"></a>Nozioni fondamentali di animazione
 
-#### <a name="tab-close"></a>Chiudi scheda  
-![Scheda animazione di chiusura](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202 i_TabClose")<br />Animazione di chiusura della scheda  
-  
--   Style: Modifica posizione X  
-  
--   Durata: 200 millisecondi  
-  
-#### <a name="tab-reorder"></a>Riordinamento della scheda  
+### <a name="animation-best-practices-in-visual-studio"></a>Procedure consigliate di animazione in Visual Studio
+Seguire queste regole per garantire gli stili di animazione coerente e facile da usare tra l'IDE di Visual Studio.
+
+-   **In modo selettivo.** Limitare le animazioni a quelle che svolgono funzioni specifiche.
+
+-   **Velocità e tempi sono importanti** per garantire che le transizioni sono naturale e veloce:
+
+    -   Completare le transizioni animate entro mezzo secondo (500 millisecondi).
+
+    -   Le animazioni che si verificano spesso devono essere sufficientemente rapido che non interrompono del flusso di lavoro dell'utente. Guardare l'animazione in un ciclo e regolare l'intervallo di tempo fino a quando non mi sembra corretta.
+
+    -   Le animazioni non devono essere così rapida o jarring che è difficile da comprendere, ma non tanto lenta che rende uno impazienti per la transizione alla fine.
+
+    -   Usare la variabile temporizzazione per enfatizzare l'importanza. Ad esempio, quando si passa attraverso una sequenza di elementi in un diagramma classi, più veloci tramite le transizioni tra gli elementi quindi rallentare per concentrarsi sugli elementi importanti.
+
+-   **Usare l'interpolazione lineare graduale** da uno stato a altro, fornendo un senso di movimento tranquilla e naturale.
+
+-   Quando possibile, **usare un'animazione con meno evidente al passaggio del mouse** per indicare elementi interattivi sotto il mouse.
+
+-   Se dipendono in modo significativo le animazioni nella funzionalità, quindi **fornire un mezzo per disattivarli** in locale (per tutte le feature) come opzione nel **strumenti > Opzioni** finestra di dialogo.
+
+-   **Solo un'animazione deve essere eseguita in un momento** e lo trasmette solo una parte delle informazioni. Lo spostamento o veicolare più operazioni di più di un oggetto può generare confusione.
+
+-   **Accorgimento è importante.** Nella maggior parte dei casi, animazione non ha l'attenzione utente richiesta per soddisfare lo scopo. Piccole modifiche nella temporizzazione, sequenza e il comportamento potrebbero avere un impatto significativo sulle percezione e possono fare la differenza tra un'animazione efficace e inefficace.
+
+-   Quando si usa l'animazione per attirare l'attenzione su un valore, **assicurarsi che vale la pena di interrompere l'utente**di concentrazione.
+
+-   **Quando viene visualizzato lo stato di avanzamento o lo stato** tramite animazione:
+
+    -   Arrestare che mostra lo spostamento di stato di avanzamento quando non viene raggiunto il processo sottostante.
+
+    -   Distinguere i processi indeterminati da determinato per processi.
+
+    -   Assicurarsi che un'animazione abbia personali stati di completamento e non riuscite.
+
+    -   Riduci l'uso di animazioni di effetto che mostrano lo stato e assicurarsi che abbiano un valore reale, fornendo informazioni aggiuntive dell'utilizzo effettivo. Sono esempi le emergenze e modifiche allo stato temporaneo
+
+#### <a name="animation-donts"></a>Animazione cose:
+
+-   Non usare movimenti piccoli (spostamento in un footprint ridotto). Preferisce dissolvenze e le modifiche tramite lo spostamento di oggetti.
+
+-   Non usare le animazioni che si verificano su una vasta area della superficie sullo schermo. Indipendentemente dalle dimensioni, questo stile di animazione è fuorviante per l'utente.
+
+-   Non usare le animazioni non correlato all'oggetto di cui che l'utente è attualmente incentrato sulle o l'interazione con.
+
+-   Non usare le animazioni che richiedono l'interazione dell'utente per reimpostare lo stato, come forzare l'utente di rispondere a una notifica per renderlo di arrestare lampeggiare lampeggiante. L'interazione con essi in alcun modo dovrebbe essere sufficiente per non prenderli in considerazione.
+
+Per altre informazioni sulle applicazioni per le procedure consigliate, vedere [modelli di animazione](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).
+
+### <a name="animation-metrics"></a>Criteri di misurazione di animazione
+
+-   Il sistema deve reagire in modo visibile ai movimenti utente inferiore ai 10 millisecondi.
+
+-   Le transizioni animate non dovrebbero richiedere più di 500 millisecondi per il completamento.
+
+-   Un modo per compensare le transizioni che richiedono tempi più lunghi è per separarlo in due parti. La prima parte di un'animazione, ad esempio, potrebbe essere il contenitore di contenuto vuoto (fino a 500 millisecondi), seguito dal contenuto che si dissolve nel contenitore (fino a 500 millisecondi).
+
+-   Per tempi di caricamento che possono essere calcolate, è preferibile un indicatore di stato determinante (indicatore di stato percentuale-fine).
+
+-   Per tempi di caricamento che non possono essere calcolati, un indicatore di occupato, ad esempio un cursore o un'animazione di rotazione incorporato (durante il caricamento o all'indicatore di utilizzo) è appropriato.
+
+### <a name="animation-as-communicator"></a>Animazione come communicator
+Nell'interfaccia utente di Visual Studio, animazione funge solo da uno strumento di comunicazione.  Viene utilizzato per comunicare un'ampia gamma di informazioni, ad esempio modifiche strutturali nell'interfaccia utente (ad esempio, quando un menu si apre o chiude). Animazione consente di visualizzare il comportamento dipendente dal tempo di sistemi complessi, ad esempio visualizzazione stato di installazione. Le animazioni sono anche utilizzabile per attirare l'attenzione con avvisi e notifiche.
+
+ Le animazioni dell'interfaccia utente in genere funzionano in quattro modi: visualizzare, attirare l'attenzione, simulazioni e stato di avanzamento/tempi di risposta degli indicatori.
+
+#### <a name="visualize"></a>Visualizzare
+Animazione può evidenziare la natura tridimensionale di oggetti e rendono più semplice per gli utenti visualizzare la relativa struttura spaziale. A tale scopo, l'animazione potrebbe necessario per ruotare l'oggetto in un cerchio completo, lenta disattivarla e viceversa, o portare l'oggetto più vicino e leggermente aumentarne le dimensioni per evidenziare il rollover o lo stato attivo.
+
+Anche se gli oggetti tridimensionali possono essere spostati con il controllo utente, la finestra di progettazione debba determinare in anticipo (a livello di codice o manualmente) come per il miglior animare uno spostamento che vengono fornite informazioni sugli ottimale dell'oggetto. Ciò programmato animazione può quindi essere attivato dall'utente posizionando il cursore sull'oggetto, mentre gli spostamenti controllata dall'utente richiedano all'utente di capire come modificare l'oggetto. Limitare lo spostamento a un singolo asse o un orientamento alla volta. la scalabilità, ruotare, o tradurre, ma non eseguire più di una contemporaneamente.
+
+La categoria Visualize include gli aspetti dei dati, relazioni, stato, struttura, sequenza e ora.
+
+##### <a name="data"></a>Dati
+Vengono illustrate informazioni sulla variabile e complesse:
+
+-   Spostarsi all'interno di visualizzazioni di informazioni, ad esempio grafici e diagrammi
+
+-   L'esecuzione di istruzioni tramite una sequenza, tour guidato e paging
+
+-   Chiamare i dettagli, sta puntando e l'evidenziazione informazioni specifiche
+
+-   Sovrapporre i dettagli e informazioni aggiuntive su un elemento con lo stato attivo
+
+-   Morphing di una rappresentazione struttura o dell'organizzazione a altra
+
+-   Che rappresenta le modifiche nel tempo tramite dispositivi di scorrimento, i file Wheel scatto e shuttle e controlli di trasporto (play, stop e pause)
+
+##### <a name="relationships"></a>Relazioni
+
+-   Viene illustrato come gli elementi sono correlati tra loro o gli elementi che si riferiscono a un determinato elemento
+
+-   Mostrare le relazioni di gerarchie e padre-figlio o pari livello
+
+-   Un elemento genera un'altra
+
+-   Riduce al minimo un elemento a un altro elemento
+
+-   Un elemento con tethering a un altro
+
+##### <a name="state"></a>Stato
+
+-   Aggiornamenti del contenuto
+
+-   Selezione e lo stato attivo utente
+
+-   Stato
+
+-   Errori
+
+##### <a name="structure"></a>Struttura
+
+-   La trasformazione tramite pivot in un nodo della struttura
+
+-   Il riorientamento
+
+-   Ridurre e ingrandire, o espandere e comprimere
+
+##### <a name="sequence"></a>Sequence
+
+-   Sequenza di presentazione
+
+-   Capovolgimento tramite le immagini
+
+##### <a name="time"></a>Ora
+
+-   Mostra modifiche nel tempo, intervallo di tempo e screencast
+
+-   Spostare da spostare nel Cestino, annullare e ripetere
+
+-   Ripristinare lo stato cronologico
+
+#### <a name="attract-attention"></a>Attirare l'attenzione
+Se l'obiettivo è per attirare l'attenzione dell'utente a un singolo elemento all'esterno di diversi o per avvisare l'utente per informazioni aggiornate, un'animazione potrebbe essere appropriata. Ad esempio, la pagina iniziale dell'applicazione potrebbe impiegare un pulsante di Guida introduttiva con scorrimento nella posizione corretta dopo il caricamento della pagina.
+
+Come regola, l'ultimo elemento di spostamento nella schermata attrae l'attenzione dell'utente.  In una serie di elementi animati, l'attenzione dell'utente seguirà l'ultimo oggetto mobile.
+
+##### <a name="alert"></a>Avviso
+
+-   Avvisare l'utente, attenzione, indicano lo stato di avanzamento
+
+-   Mostra che un elemento viene eseguito correttamente o non correttamente o Mostra lo stato di avanzamento o modifiche di stato di avanzamento
+
+-   Richiedere agli utenti durante un'attività, come ricerca di ulteriori informazioni online o per ottenere informazioni sull'attività corrente
+
+##### <a name="notifications"></a>Notifiche
+
+-   Avvisare l'utente su una condizione di errore
+
+-   Interrompono l'utente per vedere se desiderano allontanarsi
+
+-   Delicatamente informare l'utente che ha completato un processo o modificato, ad esempio durante un download è stato completato.
+
+#### <a name="simulate"></a>Simulare
+In questa categoria sono physicality e dimensionalità.
+
+-   Illustrare da dove provengono gli oggetti o in cui accedono al
+
+-   Espandere e comprimere o aprire e chiudere
+
+-   La panoramica, lo scorrimento e pagina attiva
+
+-   Sovrapposizione e ordinamento z
+
+-   Sequenza video e accordion
+
+-   Capovolgimento e rotazione dell'interfaccia utente
+
+#### <a name="response-and-progress-indicators"></a>Indicatori di risposta e lo stato di avanzamento
+Gli indicatori di stato sono due importanti vantaggi:
+
+-   Entrambi gli indicatori di stato indeterminato e determinato per rassicurare l'utente che il sistema non è arrestato e sta lavorando per il problema.
+
+-   Gli indicatori determinato per concedere all'utente che un senso di avanzamento dell'azione è in corso, nonché un sentimento di avvicinandosi alla data di fine.
+
+##  <a name="BKMK_AnimationPatterns"></a> Modelli di animazione
+
+### <a name="overview"></a>Panoramica
+Le animazioni in Visual Studio sono progettate per fornire una funzione specifica senza effetti negativi sulla produttività degli utenti. In genere, le animazioni in Visual Studio devono essere:
+
+-   Piccola e non intrusivo
+
+-   Naturali e realistico
+
+-   Sottili e avvolta
+
+-   Veloci ed efficienti
+
+-   Tipo "relaxed", non accelera l'esecuzione
+
+Questa illustrazione mostra gli stili di animazione consigliati per Visual Studio. Nessuna animazione o meno evidenti animazioni come dissolvenza entrata / uscita vengono usate più di frequente. C'è limitata dell'applicazione di animazioni di movimento, ad esempio espandere e comprimere, X e Y posizionare modifica e la rotazione.
+
+![Gli stili di animazione consigliati per Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202 a_VSAnimStyles")<br />Stili di animazione consigliati per Visual Studio
+
+#### <a name="appear-and-disappear"></a>Vengono visualizzati e nascosti
+Con questo modello, un elemento passa da visibile a out-di-visualizzazione e viceversa senza un'animazione di transizione.
+
+![Vengono visualizzati e nascosti animazione](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202 b_AppearAndDisappear")<br />Vengono visualizzati e nascosti animazione
+
+##### <a name="correct-usage"></a>Utilizzo corretto
+Elementi dell'interfaccia utente aggiornati che necessario immediatamente comparire o scomparire in modo che l'utente non è né abbagliato né dall'inquadratura. Inoltre, le animazioni lenti potrebbero essere percepite come un trascinamento delle prestazioni, che non viene eseguita con lo stile vengono visualizzati e scompaiono.
+
+##### <a name="incorrect-usage"></a>Utilizzo non corretto
+Casi in cui dell'interfaccia utente viene visualizzato immediatamente che l'utente non avrà idea di cosa è successo e aggiunta di un'animazione potrebbe facilitare la comprensione del contesto.
+
+##### <a name="animation-properties"></a>Proprietà di animazione
+L'intervallo di tempo è in genere zero secondi.
+
+##### <a name="examples"></a>Esempi
+-   Finestre degli strumenti Nascondi automaticamente
+
+-   Attivato da tastiera editor dell'interfaccia utente, ad esempio IntelliSense e Guida per i parametri
+
+-   Aree di codice di espansione e compressione
+
+#### <a name="fade-in-and-fade-out"></a>Dissolvenza in entrata e dissolvenza
+Con questo modello, la transizione di un elemento dell'interfaccia utente da (% 0 opacity) non è visibile a visibile (100% di opacità) o viceversa.
+
+![Animazione di dissolvenza in entrata e dissolvenza](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202 c_FadeInFadeOut")<br />Animazione di dissolvenza in entrata e dissolvenza
+
+##### <a name="correct-usage"></a>Utilizzo corretto
+Animazione dell'interfaccia utente più comune è consigliato. È un effetto meno evidente che aggiunge interesse senza interrompere il flusso. In alcuni casi, l'utente potrebbe non anche tenere presente che vi sia un'animazione, percepire il un' smooth e il flusso di sistema dell'interfaccia utente.
+
+##### <a name="animation-properties"></a>Proprietà di animazione
+
+-   Opacità di partenza: 0% per la dissolvenza, 100% di dissolvenza
+
+-   Opacità di fine: 100% per la dissolvenza, 0% per la dissolvenza
+
+-   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi
+
+-   Stile di interpolazione: Seno InOut
+
+##### <a name="examples"></a>Esempi
+
+-   Finestre degli strumenti Nascondi automaticamente
+
+-   Menu di aperto e chiusura
+
+-   Transizioni di scheda di sfondo e primo piano
+
+#### <a name="color-blend-from-a-to-b"></a>Sfumatura di colore da A B
+Con questo modello, un elemento dell'interfaccia utente di modificare da colore A B.
+
+![Animazione di miscele di colore](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202 d_ColorBlend")<br />Animazione di sfumatura di colore
+
+##### <a name="correct-usage"></a>Utilizzo corretto
+Una transizione animato quando un elemento dell'interfaccia utente cambia colore da un contesto o stato a altro.
+
+##### <a name="animation-properties"></a>Proprietà di animazione
+
+-   Colore iniziale: Interfaccia utente specifico
+
+-   Colore finale: Interfaccia utente specifico
+
+-   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi
+
+-   Stile di interpolazione: Seno InOut
+
+##### <a name="examples"></a>Esempi
+
+-   Documentare le transizioni di stato di finestra (attivo, ultimo attive e inattive)
+
+-   Strumento transizioni di stato di finestra (con lo stato attivo e con stato non attivo)
+
+#### <a name="expand-and-contract"></a>Espandere e comprimere
+Con questo modello, un elemento dell'interfaccia utente si espande in X, Y o entrambe le direzioni.
+
+![Espandere e comprimere animazione](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202 e_ExpandContract")<br />Espandere e comprimere animazione
+
+##### <a name="correct-usage"></a>Utilizzo corretto
+Una transizione animato quando un elemento dell'interfaccia utente cambia le dimensioni da un contesto a altro.
+
+##### <a name="animation-properties"></a>Proprietà di animazione
+
+-   Scala x: % o una dimensione specifica, in pixel,
+
+-   Y scala: % o una dimensione specifica, in pixel,
+
+-   Posizione di ancoraggio: in genere superiore sinistro (per le lingue da sinistra a destra) o alto a destra (per le lingue da destra a sinistra)
+
+-   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi
+
+##### <a name="examples"></a>Esempi
+
+-   Pannello Esplora architettura espandere e comprimere
+
+-   Inizio pagina articoli espandere e comprimere
+
+#### <a name="x-y-position-change"></a>Modifica di posizione X-Y
+Con questo modello, un elemento dell'interfaccia utente cambia la posizione X o Y o entrambi.
+
+![Animazione di modifica della posizione X-Y](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202 f_XYPositionChange")<br />Animazione di modifica posizione X-Y
+
+##### <a name="correct-usage"></a>Utilizzo corretto
+Una transizione animato quando un elemento dell'interfaccia utente cambia posizione da un contesto a altro.
+
+##### <a name="animation-properties"></a>Proprietà di animazione
+
+-   Posizione di inizio X e Y: Interfaccia utente specifico
+
+-   Alla fine X e Y posizione: Interfaccia utente specifico
+
+-   Tracciato di movimento: nessuno
+
+-   Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi
+
+-   Stile di interpolazione: Seno InOut
+
+##### <a name="example"></a>Esempio
+Il riordinamento della scheda
+
+#### <a name="rotate"></a>Ruota
+Con questo modello consente di ruotare l'elemento dell'interfaccia utente.
+
+![Animazione di rotazione elemento UI](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202 g_Rotate")<br />Animazione di rotazione di elemento dell'interfaccia utente
+
+##### <a name="correct-usage"></a>Utilizzo corretto
+Solo per l'indicatore di stato rotante indeterminato.
+
+##### <a name="animation-properties"></a>Proprietà di animazione
+
+-   Gradi di rotazione: 360
+
+-   Centro di rotazione: centrale dell'oggetto
+
+-   Durata: continua
+
+##### <a name="example"></a>Esempio
+Indicatore di stato indeterminato (rotazione)
+
+### <a name="common-shell-ui-actions-and-recommended-animations"></a>Azioni dell'interfaccia utente della shell comuni e consigliate le animazioni
+
+#### <a name="tab-open"></a>Scheda aperta
+![Scheda animazione di apertura](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202 h_TabOpen")<br />Animazione di apertura della scheda
+
+-   Stile di visualizzazione: vengono visualizzati
+
+-   Durata: zero secondi
+
+#### <a name="tab-close"></a>Chiudi scheda
+![Scheda animazione di chiusura](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202 i_TabClose")<br />Animazione di chiusura della scheda
+
+-   Style: Modifica posizione X
+
+-   Durata: 200 millisecondi
+
+#### <a name="tab-reorder"></a>Riordinamento della scheda
 ![Scheda animazione di riordinamento in Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202 j_TabReorder")<br />Animazione di riordinamento della scheda
 
--   Style: Modifica posizione X  
-  
--   Durata: 200 millisecondi  
-    
-#### <a name="close-floating-document"></a>Chiuso documento mobile  
-![Chiudi mobile animazione documento](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202 k_CloseFloatingDocument")<br />Animazione di chiusura per documento mobile  
-   
--   Stile di visualizzazione: vengono visualizzati  
-  
--   Durata: 200 millisecondi   
- 
-#### <a name="window-state-transition"></a>Transizione di stato finestra  
-![Animazione di transizione stato finestra](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202 l_WindowStateTransition")<br />Animazione di transizione stato finestra  
-    
--   Style: per garantire la coerenza con altre finestre, lasciare il sistema operativo corrente definiscono l'animazione di chiusura del documento.  
-  
--   Durata: 200 millisecondi  
-  
-#### <a name="menu-open"></a>Menu di scelta  
-![Animazione del menu Apri](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202 m_MenuOpen")<br />Animazione del menu Apri  
-    
--   Stile di visualizzazione: dissolvenza  
-  
--   Durata: 200 millisecondi  
-  
-#### <a name="menu-close"></a>Chiudi menu di scelta  
-![Animazione di chiusura del menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202 n_MenuClose")<br />Animazione di chiusura del menu  
-    
--   Stile di visualizzazione: dissolvenza  
-  
--   Durata: 200 millisecondi  
-  
-#### <a name="auto-hide-tool-window-reveal"></a>Nascondi automaticamente rivelare finestra degli strumenti  
-![Animazione rivelare della finestra dello strumento Nascondi automaticamente](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")<br />Nascondi automaticamente rivelare animazione della finestra degli strumenti  
+-   Style: Modifica posizione X
 
--   Stile di visualizzazione: vengono visualizzati  
-  
+-   Durata: 200 millisecondi
+
+#### <a name="close-floating-document"></a>Chiuso documento mobile
+![Chiudi mobile animazione documento](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202 k_CloseFloatingDocument")<br />Animazione di chiusura per documento mobile
+
+-   Stile di visualizzazione: vengono visualizzati
+
+-   Durata: 200 millisecondi
+
+#### <a name="window-state-transition"></a>Transizione di stato finestra
+![Animazione di transizione stato finestra](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202 l_WindowStateTransition")<br />Animazione di transizione stato finestra
+
+-   Style: per garantire la coerenza con altre finestre, lasciare il sistema operativo corrente definiscono l'animazione di chiusura del documento.
+
+-   Durata: 200 millisecondi
+
+#### <a name="menu-open"></a>Menu di scelta
+![Animazione del menu Apri](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202 m_MenuOpen")<br />Animazione del menu Apri
+
+-   Stile di visualizzazione: dissolvenza
+
+-   Durata: 200 millisecondi
+
+#### <a name="menu-close"></a>Chiudi menu di scelta
+![Animazione di chiusura del menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202 n_MenuClose")<br />Animazione di chiusura del menu
+
+-   Stile di visualizzazione: dissolvenza
+
+-   Durata: 200 millisecondi
+
+#### <a name="auto-hide-tool-window-reveal"></a>Nascondi automaticamente rivelare finestra degli strumenti
+![Animazione rivelare della finestra dello strumento Nascondi automaticamente](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")<br />Nascondi automaticamente rivelare animazione della finestra degli strumenti
+
+-   Stile di visualizzazione: vengono visualizzati
+
 -   Durata: zero secondi

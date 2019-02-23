@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318745"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680474"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Novità di estendibilità di Visual Studio 2017
 
@@ -103,6 +103,6 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 ### <a name="reacting-to-this-breaking-change"></a>Reazione a questa modifica di rilievo
 
 * Codice esterno deve essere convertito per utilizzare l'attivazione senza registrazione per nonché i componenti COM.
-* Componenti esterni possono trovare il percorso di Visual Studio [seguendo le istruzioni riportate qui](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Componenti esterni possono trovare il percorso di Visual Studio [seguendo le istruzioni riportate qui](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Si consiglia di usano i componenti esterni le [esterno Settings Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) anziché la lettura/scrittura direttamente alle chiavi del Registro di sistema di Visual Studio.
 * Controllare se i componenti che di estensione Usa hanno implementato un'altra tecnica per la registrazione. Ad esempio, le estensioni del debugger possono essere in grado di sfruttare i vantaggi della nuova [msvsmon registrazione COM file JSON](migrate-debugger-COM-registration.md).

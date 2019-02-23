@@ -13,58 +13,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4caecb1af8e620c671d5c2cc63e032ad5e1df26d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74cd564af66532c454d4ec340c6c8c93820cf5c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920643"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678345"
 ---
 # <a name="keybindings-element"></a>Elemento KeyBindings
-L'elemento KeyBindings Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<KeyBindings>  
-  <KeyBinding>... </KeyBinding>  
-  <KeyBinding>... </KeyBinding>  
-</KeyBindings>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
-  
-### <a name="attributes"></a>Attributi  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementi figlio  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento KeyBinding](../extensibility/keybinding-element.md)|Specifica i tasti di scelta rapida per i comandi.|  
-|[KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.|  
-  
-### <a name="parent-elements"></a>Elementi padre  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi.|  
-  
-## <a name="example"></a>Esempio  
-  
-```xml  
-<KeyBindings>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
-    editor="guidWidgetEditor" key1="VK_F5"/>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
-    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
-</KeyBindings>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Elemento KeyBinding](../extensibility/keybinding-element.md)   
- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+L'elemento KeyBindings Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<KeyBindings>
+  <KeyBinding>... </KeyBinding>
+  <KeyBinding>... </KeyBinding>
+</KeyBindings>
+```
+
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+
+### <a name="attributes"></a>Attributi
+
+|Attributo|Descrizione|
+|---------------|-----------------|
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementi figlio
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento KeyBinding](../extensibility/keybinding-element.md)|Specifica i tasti di scelta rapida per i comandi.|
+|[KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.|
+
+### <a name="parent-elements"></a>Elementi padre
+
+|Elemento|Descrizione|
+|-------------|-----------------|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi.|
+
+## <a name="example"></a>Esempio
+
+```xml
+<KeyBindings>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"
+    editor="guidWidgetEditor" key1="VK_F5"/>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>
+</KeyBindings>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Elemento KeyBinding](../extensibility/keybinding-element.md)
+- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetEngineInfo
 helpviewer_keywords:
@@ -12,41 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b67c6919fbdcc68b44b52ed449147ebe09085c5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972007"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693191"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un programma.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetEngineInfo (   
-   BSTR* pbstrEngine,  
-   GUID* pguidEngine  
-);  
-```  
-  
-```csharp  
-int GetEngineInfo(  
-   out string pbstrEngine,   
-   out Guid pguidEngine  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pbstrEngine`  
- [out] Restituisce il nome della DE esecuzione del programma (C++ specifiche: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il nome il modulo di gestione).  
-  
- `pguidEngine`  
- [out] Restituisce l'identificatore univoco globale della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il GUID del motore di).  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un programma.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetEngineInfo ( 
+   BSTR* pbstrEngine,
+   GUID* pguidEngine
+);
+```
+
+```csharp
+int GetEngineInfo(
+   out string pbstrEngine,
+   out Guid pguidEngine
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pbstrEngine`
+
+ [out] Restituisce il nome della DE esecuzione del programma (C++ specifiche: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il nome il modulo di gestione).
+
+ `pguidEngine`
+
+ [out] Restituisce l'identificatore univoco globale della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il GUID del motore di).
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

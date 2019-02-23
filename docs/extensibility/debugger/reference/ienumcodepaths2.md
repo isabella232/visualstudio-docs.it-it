@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumCodePaths2
 helpviewer_keywords:
@@ -12,48 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20bfd418da802e136fd92948285f9431efae88ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb1df4276c6156b6d53fbf40499f44a40275cba1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982117"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692749"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
-Questa interfaccia rappresenta un elenco di percorsi del codice.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-IEnumCodePaths2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il motore di debug (DE) implementa questa interfaccia per rappresentare un elenco di percorsi del codice.  
-  
-## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) per ottenere questa interfaccia.  
-  
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IEnumCodePaths2`.  
-  
-|Metodo|Descrizione|  
-|------------|-----------------|  
-|[avanti](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera un determinato numero di percorsi di codice in una sequenza di enumerazione.|  
-|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Ignora un determinato numero di percorsi di codice in una sequenza di enumerazione.|  
-|[Reset](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
-|[Clone](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Ottiene il numero di percorsi di codice in un enumeratore.|  
-  
-## <a name="remarks"></a>Note  
- Un percorso di codice rappresenta una chiamata di punto o una funzione di branch in un programma. Un elenco di percorsi di codice rappresenta il percorso attraverso cui ha avuto l'esecuzione del codice.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
+Questa interfaccia rappresenta un elenco di percorsi del codice.
+
+## <a name="syntax"></a>Sintassi
+
+```
+IEnumCodePaths2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Note per gli implementatori
+ Il motore di debug (DE) implementa questa interfaccia per rappresentare un elenco di percorsi del codice.
+
+## <a name="notes-for-callers"></a>Note per i chiamanti
+ Chiamare [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) per ottenere questa interfaccia.
+
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+ Nella tabella seguente sono illustrati i metodi di `IEnumCodePaths2`.
+
+|Metodo|Descrizione|
+|------------|-----------------|
+|[avanti](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera un determinato numero di percorsi di codice in una sequenza di enumerazione.|
+|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Ignora un determinato numero di percorsi di codice in una sequenza di enumerazione.|
+|[Reset](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
+|[Clone](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
+|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Ottiene il numero di percorsi di codice in un enumeratore.|
+
+## <a name="remarks"></a>Note
+ Un percorso di codice rappresenta una chiamata di punto o una funzione di branch in un programma. Un elenco di percorsi di codice rappresenta il percorso attraverso cui ha avuto l'esecuzione del codice.
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: msdbg.h
+
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+- [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)

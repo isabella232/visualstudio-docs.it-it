@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FIELDS
 helpviewer_keywords:
@@ -12,89 +12,80 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 995b4cda0cc1520871f55d3c4b57899754a05c3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937860"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701264"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-Specificare il tipo di informazioni da recuperare per un processo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-enum enum_PROCESS_INFO_FIELDS {   
-   PIF_FILE_NAME             = 0x00000001,  
-   PIF_BASE_NAME             = 0x00000002,  
-   PIF_TITLE                 = 0x00000004,  
-   PIF_PROCESS_ID            = 0x00000008,  
-   PIF_SESSION_ID            = 0x00000010,  
-   PIF_ATTACHED_SESSION_NAME = 0x00000020,  
-   PIF_CREATION_TIME         = 0x00000040,  
-   PIF_FLAGS                 = 0x00000080,  
-   PIF_ALL                   = 0x000000ff  
-};  
-typedef DWORD PROCESS_INFO_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_PROCESS_INFO_FIELDS {   
-   PIF_FILE_NAME             = 0x00000001,  
-   PIF_BASE_NAME             = 0x00000002,  
-   PIF_TITLE                 = 0x00000004,  
-   PIF_PROCESS_ID            = 0x00000008,  
-   PIF_SESSION_ID            = 0x00000010,  
-   PIF_ATTACHED_SESSION_NAME = 0x00000020,  
-   PIF_CREATION_TIME         = 0x00000040,  
-   PIF_FLAGS                 = 0x00000080,  
-   PIF_ALL                   = 0x000000ff  
-};  
-```  
-  
-## <a name="members"></a>Membri  
- PIF_FILE_NAME  
- Initialize/usare la `bstrFileName` campo le [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura.  
-  
- PIF_BASE_NAME  
- Initialize/usare la `bstrBaseName` campo il `PROCESS_INFO` struttura.  
-  
- PIF_TITLE  
- Initialize/usare la `bstrTitle` campo il `PROCESS_INFO` struttura.  
-  
- PIF_PROCESS_ID  
- Initialize/usare la `ProcessId` campo il `PROCESS_INFO` struttura.  
-  
- PIF_SESSION_ID  
- Initialize/usare la `dwSessionId` campo il `PROCESS_INFO` struttura.  
-  
- PIF_ATTACHED_SESSION_NAME  
- Initialize/usare la `bstrAttachedSessionName` campo il `PROCESS_INFO` struttura.  
-  
- PIF_CREATION_TIME  
- Initialize/usare la `CreationTime` campo il `PROCESS_INFO` struttura.  
-  
- PIF_FLAGS  
- Initialize/usare la `Flags` campo il `PROCESS_INFO` struttura.  
-  
- PIF_ALL  
- Compila tutti i campi.  
-  
-## <a name="remarks"></a>Note  
- Passato per il [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metodo per indicare quali campi della [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura devono essere inizializzate.  
-  
- Usato anche in `Fields` campo il `PROCESS_INFO` struttura per indicare quali campi vengono usati e valido.  
-  
- Questi flag possono essere combinati con un bit per bit `OR`.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+Specificare il tipo di informazioni da recuperare per un processo.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+enum enum_PROCESS_INFO_FIELDS { 
+   PIF_FILE_NAME             = 0x00000001,
+   PIF_BASE_NAME             = 0x00000002,
+   PIF_TITLE                 = 0x00000004,
+   PIF_PROCESS_ID            = 0x00000008,
+   PIF_SESSION_ID            = 0x00000010,
+   PIF_ATTACHED_SESSION_NAME = 0x00000020,
+   PIF_CREATION_TIME         = 0x00000040,
+   PIF_FLAGS                 = 0x00000080,
+   PIF_ALL                   = 0x000000ff
+};
+typedef DWORD PROCESS_INFO_FIELDS;
+```
+
+```csharp
+public enum enum_PROCESS_INFO_FIELDS { 
+   PIF_FILE_NAME             = 0x00000001,
+   PIF_BASE_NAME             = 0x00000002,
+   PIF_TITLE                 = 0x00000004,
+   PIF_PROCESS_ID            = 0x00000008,
+   PIF_SESSION_ID            = 0x00000010,
+   PIF_ATTACHED_SESSION_NAME = 0x00000020,
+   PIF_CREATION_TIME         = 0x00000040,
+   PIF_FLAGS                 = 0x00000080,
+   PIF_ALL                   = 0x000000ff
+};
+```
+
+## <a name="members"></a>Membri
+ PIF_FILE_NAME Initialize/usare la `bstrFileName` campo il [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura.
+
+ PIF_BASE_NAME Initialize/usare la `bstrBaseName` campo il `PROCESS_INFO` struttura.
+
+ PIF_TITLE Initialize/usare la `bstrTitle` campo il `PROCESS_INFO` struttura.
+
+ PIF_PROCESS_ID Initialize/usare la `ProcessId` campo il `PROCESS_INFO` struttura.
+
+ PIF_SESSION_ID Initialize/usare la `dwSessionId` campo il `PROCESS_INFO` struttura.
+
+ PIF_ATTACHED_SESSION_NAME Initialize/usare la `bstrAttachedSessionName` campo il `PROCESS_INFO` struttura.
+
+ PIF_CREATION_TIME Initialize/usare la `CreationTime` campo il `PROCESS_INFO` struttura.
+
+ PIF_FLAGS Initialize/usare la `Flags` campo il `PROCESS_INFO` struttura.
+
+ PIF_ALL compila tutti i campi.
+
+## <a name="remarks"></a>Note
+ Passato per il [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metodo per indicare quali campi della [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura devono essere inizializzate.
+
+ Usato anche in `Fields` campo il `PROCESS_INFO` struttura per indicare quali campi vengono usati e valido.
+
+ Questi flag possono essere combinati con un bit per bit `OR`.
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: msdbg.h
+
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Vedere anche
+- [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

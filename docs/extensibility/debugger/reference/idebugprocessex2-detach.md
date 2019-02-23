@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2::Detach | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::Detach
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0659dba3617e30f6d7da5ca4ebbce0c92f2e48ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958001"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725034"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Questo metodo indica il processo che una sessione di debug non è più il processo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT Detach(   
-   IDebugSession2* pSession  
-);  
-```  
-  
-```csharp  
-int Detach(  
-   IDebugSession2 pSession  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pSession`  
- [in] Un valore che identifica in modo univoco la sessione per questo processo da scollegare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- L'interfaccia passato `pSession` è deve essere considerato solo un cookie, un valore che identifica in modo univoco il gestore di sessione di debug che originariamente collegato a questo processo, nessuno dei metodi nell'interfaccia specificata sono funzionali.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)
+Questo metodo indica il processo che una sessione di debug non è più il processo.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT Detach( 
+   IDebugSession2* pSession
+);
+```
+
+```csharp
+int Detach(
+   IDebugSession2 pSession
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pSession`
+
+ [in] Un valore che identifica in modo univoco la sessione per questo processo da scollegare.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ L'interfaccia passato `pSession` è deve essere considerato solo un cookie, un valore che identifica in modo univoco il gestore di sessione di debug che originariamente collegato a questo processo, nessuno dei metodi nell'interfaccia specificata sono funzionali.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8be46a329c6bb62bf4fc039a418e98b577141e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027971"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706665"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-Questo metodo ottiene l'oggetto che rappresenta questo visualizzatore.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppObject`  
- [out] L'oggetto rappresentato da questo visualizzatore  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- `GetObjectForVisualizer` è consentito restituire una versione memorizzata nella cache dell'oggetto. Se il chiamante desidera assicurarsi che l'oggetto è aggiornato, quindi chiamerà [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
- [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Questo metodo ottiene l'oggetto che rappresenta questo visualizzatore.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetObjectForVisualizer(
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int GetObjectForVisualizer(
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppObject`
+
+ [out] L'oggetto rappresentato da questo visualizzatore
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ `GetObjectForVisualizer` è consentito restituire una versione memorizzata nella cache dell'oggetto. Se il chiamante desidera assicurarsi che l'oggetto è aggiornato, quindi chiamerà [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
+
+## <a name="see-also"></a>Vedere anche
+- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+- [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

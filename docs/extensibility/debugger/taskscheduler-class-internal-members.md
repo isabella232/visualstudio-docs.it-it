@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1801bc087311170169c752af8b50de4cd4e01da6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf7b693c058cd69ab2dcb79be787cf5a16d8f8a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926839"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696155"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - membri interni
-Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classi che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.TaskScheduler> articolo di riferimento.  
-  
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly:** mscorlib (in *mscorlib. dll*)  
-  
- Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```csharp  
-.class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
-       extends System.Object  
-```  
-  
-## <a name="members"></a>Membri  
-  
-### <a name="methods"></a>Metodi  
-  
-|Nome|Descrizione|  
-|----------|-----------------|  
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matrice di tutte le attività pianificate.|  
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti che sono attualmente attivi.|  
-  
-## <a name="remarks"></a>Note  
-  
-## <a name="see-also"></a>Vedere anche  
- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Elementi interni delle estensioni parallele per .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classi che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.TaskScheduler> articolo di riferimento.
+
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly:** mscorlib (in *mscorlib. dll*)
+
+ Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).
+
+## <a name="syntax"></a>Sintassi
+
+```csharp
+.class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler
+       extends System.Object
+```
+
+## <a name="members"></a>Membri
+
+### <a name="methods"></a>Metodi
+
+|Nome|Descrizione|
+|----------|-----------------|
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matrice di tutte le attività pianificate.|
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti che sono attualmente attivi.|
+
+## <a name="remarks"></a>Note
+
+## <a name="see-also"></a>Vedere anche
+- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
+- [Elementi interni delle estensioni parallele per .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

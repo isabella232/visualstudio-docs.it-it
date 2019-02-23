@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abed2d77156aac83b09bf5a0ba472b1887d15600
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450074"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700874"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Recupera i vincoli che sono associati a questo parametro generico.
@@ -40,14 +40,17 @@ int GetConstraints(
 ```
 
 #### <a name="parameters"></a>Parametri
-`cConstraints`  
-[in] Numero di vincoli.
+`cConstraints`
 
-`ppConstraints`  
-[out] Restituisce una matrice che contiene i vincoli associati a questo campo.
+ [in] Numero di vincoli.
 
-`pcConstraints`  
-[in, out] Numero di vincoli nel `ppConstraints` matrice.
+`ppConstraints`
+
+ [out] Restituisce una matrice che contiene i vincoli associati a questo campo.
+
+`pcConstraints`
+
+ [in, out] Numero di vincoli nel `ppConstraints` matrice.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
@@ -149,4 +152,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

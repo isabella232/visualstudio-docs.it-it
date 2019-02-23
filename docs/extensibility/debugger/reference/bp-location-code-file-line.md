@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_FILE_LINE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ab7a0b226b7a8fac779e5c5109700a37e60d9d0
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 611a3103c2747040ae9d72c53a905ee3f23c180a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315703"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688290"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 Contiene i dati per il percorso di un punto di interruzione in una riga specifica in un file di codice sorgente.
@@ -32,11 +32,9 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 ```
 
 ## <a name="members"></a>Membri
-`bstrContext`  
-Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.
+`bstrContext` Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.
 
-`pDocPos`  
-Il [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta la posizione del documento del punto di interruzione.
+`pDocPos` Il [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta la posizione del documento del punto di interruzione.
 
 ## <a name="remarks"></a>Note
 Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
@@ -49,6 +47,6 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
-[Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+- [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

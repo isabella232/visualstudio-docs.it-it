@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::IsNullReference | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::IsNullReference
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021d7d8b7c1203aab68a93efe8581f66dec698f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25de5fdde9e0d834b98f09d2f5c9e2444f8a9d0e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975270"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706899"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Verifica se questo oggetto è un riferimento null.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT IsNullReference(   
-   BOOL* pfIsNull  
-);  
-```  
-  
-```csharp  
-int IsNullReference(  
-   out int pfIsNull  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pfIsNull`  
- [out] Restituisce diverso da zero (`TRUE`) se questo oggetto è un riferimento null; in caso contrario, restituisce zero (`FALSE`).  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Un riferimento null significa che un oggetto vuoto o un oggetto che non è stato assegnato a.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Verifica se questo oggetto è un riferimento null.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT IsNullReference( 
+   BOOL* pfIsNull
+);
+```
+
+```csharp
+int IsNullReference(
+   out int pfIsNull
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pfIsNull`
+
+ [out] Restituisce diverso da zero (`TRUE`) se questo oggetto è un riferimento null; in caso contrario, restituisce zero (`FALSE`).
+
+## <a name="return-value"></a>Valore restituito
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Un riferimento null significa che un oggetto vuoto o un oggetto che non è stato assegnato a.
+
+## <a name="see-also"></a>Vedere anche
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

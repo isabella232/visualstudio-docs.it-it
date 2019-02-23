@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316327"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681478"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Aggiungere un menu di scelta rapida in una finestra degli strumenti
 Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra degli strumenti. Un menu di scelta rapida è un menu che viene visualizzato quando l'utente fa clic sul pulsante, casella di testo un sfondo della finestra. I comandi in un menu di scelta rapida si comportano come i comandi su altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nella *vsct* file e visualizzarli in risposta al pulsante destro del mouse del mouse.
@@ -277,5 +277,5 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
 4. Fare clic su un colore menu di scelta rapida. Il colore di sfondo finestra degli strumenti deve essere modificato in colore selezionato.
 
 ## <a name="see-also"></a>Vedere anche
-[I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Uso e fornitura di servizi](../extensibility/using-and-providing-services.md)
+- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Uso e fornitura di servizi](../extensibility/using-and-providing-services.md)
