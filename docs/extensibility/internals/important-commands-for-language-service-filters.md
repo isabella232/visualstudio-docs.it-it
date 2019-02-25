@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aec5fb925fbf7140786880db69d5be535abd5ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004513"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602416"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Comandi importanti per i filtri dei servizi di linguaggio
-Se si desidera creare un filtro di servizio di linguaggio completamente in primo piano, prendere in considerazione i seguenti comandi di gestione. L'elenco completo degli identificatori di comando è definito nel <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumerazione per codice gestito e l'intestazione Stdidcmd.h file per unmanaged [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] codice. È possibile trovare il file Stdidcmd.h *percorso di installazione di Visual Studio SDK*\visualstudiointegration\common\inc.  
-  
-## <a name="commands-to-handle"></a>Comandi da Handle  
-  
+Se si desidera creare un filtro di servizio di linguaggio completamente in primo piano, prendere in considerazione i seguenti comandi di gestione. L'elenco completo degli identificatori di comando è definito nel <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumerazione per codice gestito e l'intestazione Stdidcmd.h file per unmanaged [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] codice. È possibile trovare il file Stdidcmd.h *percorso di installazione di Visual Studio SDK*\visualstudiointegration\common\inc.
+
+## <a name="commands-to-handle"></a>Comandi da Handle
+
 > [!NOTE]
->  Non è obbligatorio per filtrare per ogni comando nella tabella seguente.  
-  
-|Comando|Descrizione|  
-|-------------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente fa clic. Questo comando indica che è necessario fornire un menu di scelta rapida. Se non si gestisce questo comando, l'editor di testo fornisce un menu di scelta rapida predefinito senza i comandi specifici della lingua. Per includere i propri comandi in questo menu, gestire il comando e visualizzare un menu di scelta rapida personalizzati.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In genere inviato quando l'utente digita CTRL + J. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> visualizzare la finestra di completamento istruzione.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente digita un carattere. Monitorare questo comando per determinare quando si digita un carattere di trigger e per fornire istruzione completamento, suggerimenti di metodo e marcatori di testo, ad esempio la colorazione della sintassi, corrispondenza parentesi e gli indicatori di errore. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo sul <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> per il completamento istruzioni e il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodo sul <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> per suggerimenti di metodo. Per supportare i marcatori di testo, monitorare questo comando per determinare se il carattere viene digitato è necessario aggiornare i marcatori.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente digita il tasto INVIO. Monitorare questo comando per determinare il momento chiudere una finestra del suggerimento di metodo chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Per impostazione predefinita, la visualizzazione di testo gestisce questo comando.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente digita il tasto Backspace. Monitoraggio per determinare quando chiudere una finestra del suggerimento di metodo chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Per impostazione predefinita, la visualizzazione di testo gestisce questo comando.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato da un menu o un tasto di scelta rapida. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> per aggiornare la finestra del suggerimento con le informazioni sui parametri.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente posiziona il mouse su una variabile o posiziona il cursore su una variabile e seleziona **informazioni rapide** dalla **IntelliSense** nel **Edit** menu. Restituire il tipo della variabile in un suggerimento chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Se il debug è attivo, il suggerimento visualizzerà il valore della variabile.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In genere inviato quando l'utente digita CTRL + BARRA SPAZIATRICE. Questo comando indica al servizio di linguaggio per chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato da un menu, in genere **Commenta selezione** oppure **Rimuovi commento selezione** da **avanzate** nel **modifica** menu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indica che l'utente desidera impostare come commento il testo selezionato. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indica che l'utente desidera rimuovere il commento al testo selezionato. Questi comandi possono essere implementati solo dal servizio di linguaggio.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)
+>  Non è obbligatorio per filtrare per ogni comando nella tabella seguente.
+
+|Comando|Descrizione|
+|-------------|-----------------|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente fa clic. Questo comando indica che è necessario fornire un menu di scelta rapida. Se non si gestisce questo comando, l'editor di testo fornisce un menu di scelta rapida predefinito senza i comandi specifici della lingua. Per includere i propri comandi in questo menu, gestire il comando e visualizzare un menu di scelta rapida personalizzati.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In genere inviato quando l'utente digita CTRL + J. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> visualizzare la finestra di completamento istruzione.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente digita un carattere. Monitorare questo comando per determinare quando si digita un carattere di trigger e per fornire istruzione completamento, suggerimenti di metodo e marcatori di testo, ad esempio la colorazione della sintassi, corrispondenza parentesi e gli indicatori di errore. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo sul <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> per il completamento istruzioni e il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodo sul <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> per suggerimenti di metodo. Per supportare i marcatori di testo, monitorare questo comando per determinare se il carattere viene digitato è necessario aggiornare i marcatori.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente digita il tasto INVIO. Monitorare questo comando per determinare il momento chiudere una finestra del suggerimento di metodo chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Per impostazione predefinita, la visualizzazione di testo gestisce questo comando.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente digita il tasto Backspace. Monitoraggio per determinare quando chiudere una finestra del suggerimento di metodo chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Per impostazione predefinita, la visualizzazione di testo gestisce questo comando.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato da un menu o un tasto di scelta rapida. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> per aggiornare la finestra del suggerimento con le informazioni sui parametri.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato quando l'utente posiziona il mouse su una variabile o posiziona il cursore su una variabile e seleziona **informazioni rapide** dalla **IntelliSense** nel **Edit** menu. Restituire il tipo della variabile in un suggerimento chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Se il debug è attivo, il suggerimento visualizzerà il valore della variabile.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|In genere inviato quando l'utente digita CTRL + BARRA SPAZIATRICE. Questo comando indica al servizio di linguaggio per chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato da un menu, in genere **Commenta selezione** oppure **Rimuovi commento selezione** da **avanzate** nel **modifica** menu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indica che l'utente desidera impostare come commento il testo selezionato. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indica che l'utente desidera rimuovere il commento al testo selezionato. Questi comandi possono essere implementati solo dal servizio di linguaggio.|
+
+## <a name="see-also"></a>Vedere anche
+- [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)
