@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720497"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796595"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione delle estensioni di Visual Studio
 Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerlo con i colleghi e amici o pubblicarla in Visual Studio Marketplace. In questa sezione viene illustrato tutto ciò è necessario eseguire per pubblicare e gestire l'estensione: uso dei file con estensione VSIX, pubblicazione, localizzazione e l'aggiornamento.
@@ -25,7 +25,7 @@ Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in al
 ## <a name="working-with-vsix-extensions"></a>Utilizzo di estensioni VSIX
  È possibile creare un estensioni VSIX creando un progetto VSIX vuota e quindi aggiungere i modelli di elemento diverso. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).
 
- È possibile utilizzare il formato VSIX per i modelli di progetto del pacchetto, componenti di modelli, i pacchetti VSPackage, Managed Extensibility Framework (MEF), di elemento **casella degli strumenti** controlli, assembly e tipi personalizzati (che include le pagine iniziali personalizzate). Il formato VSIX Usa la distribuzione basata su file. Per altre informazioni sui pacchetti VSIX, vedere [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+ È possibile utilizzare il formato VSIX per i modelli di progetto del pacchetto, componenti di modelli, i pacchetti VSPackage, Managed Extensibility Framework (MEF), di elemento **casella degli strumenti** controlli, assembly e tipi personalizzati (che include le pagine iniziali personalizzate per oggetto visivo Studio 2017). Il formato VSIX Usa la distribuzione basata su file. Per altre informazioni sui pacchetti VSIX, vedere [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
  Il formato VSIX non supporta l'installazione di frammenti di codice. Inoltre non supporta alcuni altri scenari, ad esempio la scrittura alla Global Assembly Cache (GAC) o al Registro di sistema. Se è necessario scrivere nella Global Assembly Cache o il Registro di sistema durante l'installazione, è necessario utilizzare il programma di installazione di Windows. Per altre informazioni, vedere [preparazione di estensioni per Windows Installer distribuzione](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
