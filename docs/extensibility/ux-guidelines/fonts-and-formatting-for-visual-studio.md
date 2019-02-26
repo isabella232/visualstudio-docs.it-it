@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721823"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796751"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Tipo di carattere ambiente 375% + Light
- **Viene visualizzata come:** 34 pt Segoe UI Light **pere:** (raro) univoco con marchio dell'interfaccia utente, ad esempio nella pagina iniziale di Visual Studio 2017
 
- **Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:
+**Viene visualizzata come:** pt 34 Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Utilizzo per:** (raro) univoco con marchio dell'interfaccia utente, ad esempio nella pagina iniziale
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Utilizzo per:** (raro) dell'interfaccia utente personalizzata univoco
+
+::: moniker-end
+
+**Codice procedurale:** In cui `textBlock` è un elemento TextBlock definito in precedenza e `label` è un'etichetta definita in precedenza:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato.
+**XAML:** Impostare lo stile del controllo TextBlock o etichetta come illustrato.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Tipo di carattere ambiente 310% + Light
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Utilizzo:**<br /><br /> -Intestazione maggiori nelle finestre di dialogo firma<br />-Intestazione di report principale<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />: Viene sempre utilizzato leggero<br /><br /> **Non:**<br /><br /> -Usare per l'interfaccia utente diversa da firma dell'interfaccia utente, ad esempio pagina iniziale<br />-Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 28 pt Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente 310% &#43; intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Utilizzo:**<br /><br /> -Intestazione maggiori nelle finestre di dialogo firma<br />-Intestazione di report principale<br /><br /> **Eseguire:**<br /><br /> -Usare maiuscola<br />: Viene sempre utilizzato leggero<br /><br /> **Non:**<br /><br /> -Usare per l'interfaccia utente diversa da firma dell'interfaccia utente<br />-Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 28 pt Segoe UI Light<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente 310% &#43; intestazione Light](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Tipo di carattere ambiente 200% + Semilight
 

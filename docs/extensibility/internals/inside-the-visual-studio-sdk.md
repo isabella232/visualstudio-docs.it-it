@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978269"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796673"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 In questa sezione fornisce informazioni approfondite sulle estensioni di Visual Studio, tra cui architettura di Visual Studio, componenti, servizi, schemi, utilità e simili.
@@ -55,13 +55,13 @@ In questa sezione fornisce informazioni approfondite sulle estensioni di Visual 
 
  Finestre degli strumenti offrono in genere vari controlli con cui l'utente può interagire. Ad esempio, il **proprietà** finestra consente all'utente di impostare le proprietà degli oggetti uno scopo specifico. Il **proprietà** finestra è specializzato in questo senso, ma anche generali perché può essere usato in molte situazioni diverse. Analogamente, il **Output** finestra è specializzata in quanto fornisce output basato su testo, ma generali perché molti sottosistemi in Visual Studio possono usarlo per fornire l'output all'utente di Visual Studio.
 
- Prendere in considerazione l'immagine seguente di Visual Studio, che contiene diverse finestre degli strumenti.
+ Prendere in considerazione l'immagine di Visual Studio, che contiene diverse finestre degli strumenti seguente:
 
  ![Cattura di schermata](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Alcune delle finestre degli strumenti sono ancorate insieme in un unico riquadro che consente di visualizzare la finestra degli strumenti Esplora soluzioni e nasconde le altre finestre degli strumenti, ma li rende disponibili facendo clic sulle schede. Nella figura sono illustrate due altre finestre degli strumenti, il **elenco errori** e **Output** finestra ancorata insieme in un unico riquadro.
 
- Viene inoltre illustrato il riquadro principale del documento che illustra diverse finestre dell'editor. Anche se finestre degli strumenti hanno in genere una sola istanza (ad esempio, è possibile aprire un solo **Esplora soluzioni**), finestre dell'editor possono avere più istanze, ognuno dei quali è possibile modificare un documento separato, ma che vengono ancorati in nel riquadro stesso. La figura mostra un riquadro del documento che dispone di due finestre dell'editor, una finestra di progettazione di form e una finestra del browser che mostra la pagina iniziale. Tutte le finestre nel riquadro del documento sono disponibili facendo clic sulle schede, ma la finestra dell'editor che contiene file EditorPane.cs è visibile e attivo.
+ Viene inoltre illustrato il riquadro principale del documento che illustra diverse finestre dell'editor. Anche se finestre degli strumenti hanno in genere una sola istanza (ad esempio, è possibile aprire un solo **Esplora soluzioni**), finestre dell'editor possono avere più istanze, ognuno dei quali è possibile modificare un documento separato, ma che vengono ancorati in nel riquadro stesso. La figura mostra un riquadro del documento che dispone di due finestre dell'editor, una finestra di progettazione form. Tutte le finestre nel riquadro del documento sono disponibili facendo clic sulle schede, ma la finestra dell'editor che contiene file EditorPane.cs è visibile e attivo.
 
  Quando si estende Visual Studio, è possibile creare lo strumento windows che consentono agli utenti di Visual Studio di interagire con l'estensione. È anche possibile creare il proprio editor che consentono agli utenti di Visual Studio modificare i documenti. Poiché l'editor e finestre degli strumenti verrà integrato in Visual Studio, non devi programmarli per ancorare o vengano visualizzate correttamente in una scheda. Quando vengono registrati correttamente in Visual Studio, avranno automaticamente le funzionalità tipiche delle finestre degli strumenti e finestre dei documenti in Visual Studio. Per altre informazioni, vedere [estensione e personalizzazione di Windows lo strumento](../../extensibility/extending-and-customizing-tool-windows.md).
 

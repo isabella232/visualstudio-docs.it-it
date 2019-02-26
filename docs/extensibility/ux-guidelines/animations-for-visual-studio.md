@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694283"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796790"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali di animazione
@@ -305,7 +305,7 @@ Una transizione animato quando un elemento dell'interfaccia utente cambia le dim
 
 -   Pannello Esplora architettura espandere e comprimere
 
--   Inizio pagina articoli espandere e comprimere
+-   Elemento di Visual Studio 2017 inizio pagina espandere e comprimere
 
 #### <a name="x-y-position-change"></a>Modifica di posizione X-Y
 Con questo modello, un elemento dell'interfaccia utente cambia la posizione X o Y o entrambi.

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690461"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796881"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interazioni di finestra
@@ -128,10 +128,22 @@ Esplora soluzioni e la finestra Risultati ricerca sono esempi di finestre degli 
 
 **Altre finestre degli strumenti**
 
+::: moniker range="vs-2017"
+
 | Finestra degli strumenti | Funzione |
 | --- | --- |
 | Casella degli strumenti | La finestra degli strumenti utilizzata per archiviare gli elementi che verranno eliminati su superfici di progettazione, fornendo un'origine di trascinamento coerente per tutte le finestre di progettazione. |
-| Pagina iniziale | Portale dell'utente in Visual Studio 2017, con accesso ai feed di notizie per gli sviluppatori, la Guida di Visual Studio e progetti recenti. Gli utenti possono anche creare pagine iniziali personalizzate copiando il file StartPage. XAML dal "Common7\IDE\StartPages\" directory dei file di programma Visual Studio nella cartella StartPages in Visual Studio documenta directory e quindi una modifica di XAML a mano o aprirlo in Visual Studio o un altro editor di codice. |
+| Pagina iniziale | Portale dell'utente a Visual Studio, con accesso ai feed di notizie per gli sviluppatori, la Guida di Visual Studio e progetti recenti. Gli utenti possono anche creare pagine iniziali personalizzate copiando il file StartPage. XAML dal "Common7\IDE\StartPages\" directory dei file di programma Visual Studio nella cartella StartPages in Visual Studio documenta directory e quindi una modifica di XAML a mano o aprirlo in Visual Studio o un altro editor di codice. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Finestra degli strumenti | Funzione |
+| --- | --- |
+| Casella degli strumenti | La finestra degli strumenti utilizzata per archiviare gli elementi che verranno eliminati su superfici di progettazione, fornendo un'origine di trascinamento coerente per tutte le finestre di progettazione. |
+
+::: moniker-end
 
 **Finestre degli strumenti del debugger**
 
