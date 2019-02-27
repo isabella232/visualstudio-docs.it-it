@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928400"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603469"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una sola volta per ogni batch.
@@ -100,7 +100,7 @@ non è consentito.
 Per altre informazioni sulle funzioni delle proprietà, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Vedere anche
-[Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)  
-[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)  
-[Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)
+- [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

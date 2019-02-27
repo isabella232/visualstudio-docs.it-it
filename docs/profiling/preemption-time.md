@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e3c3488c54477a9517263bf363cede3198fc3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007633"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620096"
 ---
 # <a name="preemption-time"></a>Periodo di precedenza
-Questi segmenti nella sequenza temporale sono associati al periodo di blocco categorizzato come Precedenza. Questa categoria implica che un thread viene disattivato per uno dei motivi seguenti:  
-  
-- L'utilità di pianificazione lo ha sostituito con un thread con priorità maggiore.  
-  
-- Il quantum di esecuzione del thread è scaduto e altri thread erano pronti per l'esecuzione.  
-  
-  Durante questo periodo, un thread è stato bloccato per un motivo di attesa del kernel che il visualizzatore di concorrenza conteggia come Precedenza. I segmenti con precedenza iniziano quando un thread viene escluso da un core logico e terminano quando tale thread riprende l'esecuzione.  
-  
-  La descrizione comando per un segmento con precedenza visualizza il nome del processo o del thread che ha causato la precedenza. Tuttavia, ciò non implica che il processo o il thread con precedenza sia stato effettivamente eseguito per tutto il periodo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+Questi segmenti nella sequenza temporale sono associati al periodo di blocco categorizzato come Precedenza. Questa categoria implica che un thread viene disattivato per uno dei motivi seguenti:
+
+- L'utilità di pianificazione lo ha sostituito con un thread con priorità maggiore.
+
+- Il quantum di esecuzione del thread è scaduto e altri thread erano pronti per l'esecuzione.
+
+  Durante questo periodo, un thread è stato bloccato per un motivo di attesa del kernel che il visualizzatore di concorrenza conteggia come Precedenza. I segmenti con precedenza iniziano quando un thread viene escluso da un core logico e terminano quando tale thread riprende l'esecuzione.
+
+  La descrizione comando per un segmento con precedenza visualizza il nome del processo o del thread che ha causato la precedenza. Tuttavia, ciò non implica che il processo o il thread con precedenza sia stato effettivamente eseguito per tutto il periodo.
+
+## <a name="see-also"></a>Vedere anche
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

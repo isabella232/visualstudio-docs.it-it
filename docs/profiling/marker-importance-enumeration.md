@@ -12,37 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d4049a3792fcc529352baef3e4649c6157aa7f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992152"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613895"
 ---
 # <a name="markerimportance-enumeration"></a>Enumerazione marker_importance
-Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-enum marker_importance;  
-```  
-  
-## <a name="members"></a>Membri  
-  
-### <a name="values"></a>Valori  
-  
-|nome|Description|  
-|----------|-----------------|  
-|`critical_importance`|Specifica che il marcatore è di importanza critica.|  
-|`high_importance`|Specifica che il marcatore è di elevata importanza.|  
-|`low_importance`|Specifica che il marcatore è di scarsa importanza.|  
-|`normal_importance`|Specifica che il marcatore è di normale importanza.|  
-  
-## <a name="requirements"></a>Requisiti  
- **Intestazione:** *cvmarkersobj.h*  
-  
- **Spazio dei nomi:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Vedere anche  
- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)
+Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+enum marker_importance;
+```
+
+## <a name="members"></a>Membri
+
+### <a name="values"></a>Valori
+
+|nome|Description|
+|----------|-----------------|
+|`critical_importance`|Specifica che il marcatore è di importanza critica.|
+|`high_importance`|Specifica che il marcatore è di elevata importanza.|
+|`low_importance`|Specifica che il marcatore è di scarsa importanza.|
+|`normal_importance`|Specifica che il marcatore è di normale importanza.|
+
+## <a name="requirements"></a>Requisiti
+ **Intestazione:** *cvmarkersobj.h*
+
+ **Spazio dei nomi:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Vedere anche
+- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)

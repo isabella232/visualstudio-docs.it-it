@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485042"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622020"
 ---
 # <a name="getfilehash-task"></a>Attività GetFileHash
 
@@ -32,7 +32,7 @@ Questa attività è stata aggiunta nella versione 15.8. È tuttavia necessaria u
 
  Nella tabella che segue vengono descritti i parametri dell'attività `GetFileHash` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br />File per i quali generare un hash.|
 |`Items`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Input `Files` con metadati aggiuntivi impostato sul l'hash del file.|
@@ -65,6 +65,6 @@ L'esempio seguente usa l'attività `GetFileHash` per determinare e stampare il c
 
 ## <a name="see-also"></a>Vedere anche
 
-[Attività](../msbuild/msbuild-tasks.md)
+- [Attività](../msbuild/msbuild-tasks.md)
 
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

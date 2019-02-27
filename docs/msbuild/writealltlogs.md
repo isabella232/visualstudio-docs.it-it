@@ -15,34 +15,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bae108ad946485fac3a9ba555978ccc1cb308a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919981"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704319"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
-Scrive i log di rilevamento per tutti i thread e contesti.  
-  
-## <a name="syntax"></a>Sintassi  
-  
+Scrive i log di rilevamento per tutti i thread e contesti.
+
+## <a name="syntax"></a>Sintassi
+
 ```cpp
-HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- [in] `intermediateDirectory`  
- Directory in cui archiviare il log di rilevamento.  
-  
- [in] `tlogRootName`  
- Nome radice del nome file di log.  
-  
-## <a name="return-value"></a>Valore restituito  
- **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.  
-  
-## <a name="requirements"></a>Requisiti  
- **Intestazione:** *FileTracker.h*  
-  
-## <a name="see-also"></a>Vedere anche  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)
+HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);
+```
+
+#### <a name="parameters"></a>Parametri
+[in] `intermediateDirectory`
+
+ Directory in cui archiviare il log di rilevamento.
+
+[in] `tlogRootName`
+
+ Nome radice del nome file di log.
+
+## <a name="return-value"></a>Valore restituito
+ **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.
+
+## <a name="requirements"></a>Requisiti
+ **Intestazione:** *FileTracker.h*
+
+## <a name="see-also"></a>Vedere anche
+- [WriteContextTLogs](../msbuild/writecontexttlogs.md)

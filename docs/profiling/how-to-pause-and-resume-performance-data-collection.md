@@ -10,33 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebcfead4fa7e4192a45dab4d4d34f45d2e4717cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961858"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626947"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni
-Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.  
-  
- Il controllo della raccolta dei dati consente di ridurre la dimensione del file di dati del profilo e di raccogliere solo i dati per le operazioni a cui si è interessati. È possibile sospendere e riprendere la profilatura più volte in una sessione di prestazioni.  
-  
- ![Pagina della sessione di profilatura](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")  
-  
+Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.
+
+ Il controllo della raccolta dei dati consente di ridurre la dimensione del file di dati del profilo e di raccogliere solo i dati per le operazioni a cui si è interessati. È possibile sospendere e riprendere la profilatura più volte in una sessione di prestazioni.
+
+ ![Pagina della sessione di profilatura](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+
 > [!NOTE]
->  È anche possibile avviare la sessione di prestazioni con la profilatura sospesa, quindi riprendere la profilatura in un secondo momento dell'esecuzione del programma. Per avviare la sessione di prestazioni con la profilatura sospesa, scegliere il comando **Avvia analisi prestazioni sospesa** dal menu **Debug**.  
-  
-### <a name="to-pause--resume-or-stop-profiling"></a>Per sospendere, riprendere o arrestare la profilatura  
-  
--   Nella pagina della sessione di profilatura:  
-  
-    -   Scegliere **Sospendere la raccolta** per sospendere la raccolta dei dati.  
-  
-    -   Scegliere **Riprendere la raccolta** per riavviare la raccolta dei dati dopo che è stata sospesa.  
-  
-    -   Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Controllare la raccolta dati](../profiling/controlling-data-collection.md)   
- [Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)
+>  È anche possibile avviare la sessione di prestazioni con la profilatura sospesa, quindi riprendere la profilatura in un secondo momento dell'esecuzione del programma. Per avviare la sessione di prestazioni con la profilatura sospesa, scegliere il comando **Avvia analisi prestazioni sospesa** dal menu **Debug**.
+
+### <a name="to-pause--resume-or-stop-profiling"></a>Per sospendere, riprendere o arrestare la profilatura
+
+-   Nella pagina della sessione di profilatura:
+
+    -   Scegliere **Sospendere la raccolta** per sospendere la raccolta dei dati.
+
+    -   Scegliere **Riprendere la raccolta** per riavviare la raccolta dei dati dopo che è stata sospesa.
+
+    -   Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.
+
+## <a name="see-also"></a>Vedere anche
+- [Controllare la raccolta dati](../profiling/controlling-data-collection.md)
+- [Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)

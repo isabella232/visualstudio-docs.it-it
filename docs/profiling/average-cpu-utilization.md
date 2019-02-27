@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 332202d5062b081227619f4007e011f611b6192e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036940"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609501"
 ---
 # <a name="average-cpu-utilization"></a>Utilizzo CPU medio
-Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo profilato per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Core](../profiling/cores-view.md)   
- [Grafico utilizzo CPU](../profiling/cpu-utilization-graph.md)
+Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo profilato per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.
+
+## <a name="see-also"></a>Vedere anche
+- [Cores View](../profiling/cores-view.md) (Visualizzazione Core)
+- [Grafico utilizzo CPU](../profiling/cpu-utilization-graph.md)

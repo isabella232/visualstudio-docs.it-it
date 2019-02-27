@@ -9,12 +9,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d8c11fef90a4910c178e7494a5a16f6ea9bfbf0
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853287"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610424"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
 A volte è necessario che una compilazione sia a tolleranza di errore in determinate attività. Se tali attività non critiche hanno esito negativo, si vuole che la compilazione prosegua perché può ugualmente produrre l'output necessario. Se, ad esempio, un progetto usa un'attività `SendMail` per inviare un messaggio di posta elettronica dopo che ogni componente è stato compilato, si può considerare accettabile che la compilazione continui fino al completamento anche quando i server di posta non sono disponibili e i messaggi di stato non possono essere inviati. O anche, ad esempio, se di solito i file intermedi vengono eliminati durante la compilazione, si può considerare accettabile che la compilazione continui fino al completamento anche quando tali file non possono essere eliminati.
@@ -28,16 +28,16 @@ L'attributo `ContinueOnError` può contenere uno dei valori seguenti:
 
 - **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.
 
-- **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.  
-  
-  Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.  
-  
+- **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.
+
+  Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.
+
   Il valore predefinito di `ContinueOnError` è `ErrorAndStop`. Se si imposta l'attributo su `ErrorAndStop`, il comportamento diventa esplicito per chiunque legga il file di progetto.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Per ignorare un errore in un'attività
 
-- Usare l'attributo `ContinueOnError` dell'attività. Ad esempio:  
-  
+- Usare l'attributo `ContinueOnError` dell'attività. Ad esempio:
+
     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
 
 ## <a name="example"></a>Esempio
@@ -60,6 +60,6 @@ L'esempio di codice seguente mostra che la destinazione `Build` è ancora in ese
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[MSBuild](../msbuild/msbuild.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Attività](../msbuild/msbuild-tasks.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)

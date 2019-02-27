@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa5f9f9ba05972895fd356b4e00287e05403d83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55c699f7d3bc1a74383da5eef481ee080c6d85e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040151"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622579"
 ---
 # <a name="how-to-view-performance-warnings"></a>Procedura: Visualizzare gli avvisi di prestazioni
-Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] segnalano i problemi che possono rallentare l'esecuzione di un'applicazione profilata. Gli avvisi possono anche indicare che potrebbe essere necessario modificare i metodi di raccolta per raccogliere dati più utili. Gli avvisi di prestazioni vengono generati automaticamente in una sessione di profilatura e visualizzati nella finestra **Elenco errori** quando un file di dati di profilatura viene aperto nell'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
+Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] segnalano i problemi che possono rallentare l'esecuzione di un'applicazione profilata. Gli avvisi possono anche indicare che potrebbe essere necessario modificare i metodi di raccolta per raccogliere dati più utili. Gli avvisi di prestazioni vengono generati automaticamente in una sessione di profilatura e visualizzati nella finestra **Elenco errori** quando un file di dati di profilatura viene aperto nell'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
  Se la finestra **Elenco errori** non viene visualizzata quando si apre un file dei dati di profilatura, fare clic sul menu **Visualizza** e quindi su **Elenco errori**.

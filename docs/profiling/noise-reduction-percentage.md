@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e18484154e3fd1664eae1ccbdd5fd787d3d1c3b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d3021aef3f9a2e11849991327a6ef8783b62439
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960828"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636816"
 ---
 # <a name="noise-reduction-percentage"></a>Percentuale di riduzione del rumore
 Per impostazione predefinita, il valore dell'impostazione Percentuale di riduzione del rumore è 2. Solo le voci con una percentuale di tempo inclusivo maggiore o uguale a questa impostazione vengono visualizzate nell'albero delle chiamate. Modificando l'impostazione, è possibile controllare il numero di voci visualizzate nell'albero delle chiamate. Ad esempio, se si imposta il valore su 10 verranno visualizzate solo le voci dell'albero delle con un tempo inclusivo maggiore o uguale al 10%. Se si aumenta il valore dell'impostazione, è possibile concentrarsi sulle voci con maggiore impatto sulle prestazioni del processo.

@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 274027f1877c5274e0f78da7634c7ac5109380ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fcc468d3820e34db24edbbf311cbae17bda0732
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626882"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Utilizzo elevato del processore
 
-|||  
-|-|-|  
-|ID regola|DA0004|  
-|Category|Uso degli strumenti di profilatura|  
-|Metodi di profilatura|Strumentazione<br /><br /> Campionamento|  
-|Messaggio|L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.|  
-|Tipo regola|Informazioni|  
+|||
+|-|-|
+|ID regola|DA0004|
+|Category|Uso degli strumenti di profilatura|
+|Metodi di profilatura|Strumentazione<br /><br /> Campionamento|
+|Messaggio|L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.|
+|Tipo regola|Informazioni|
 
- Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
+ Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 
-## <a name="cause"></a>Causa  
- L'utilizzo del processore (CPU) è elevato nei dati di profilatura raccolti usando il metodo di strumentazione. Si consiglia di usare il metodo di profilatura del campionamento per profilare applicazioni associate alla CPU.  
+## <a name="cause"></a>Causa
+ L'utilizzo del processore (CPU) è elevato nei dati di profilatura raccolti usando il metodo di strumentazione. Si consiglia di usare il metodo di profilatura del campionamento per profilare applicazioni associate alla CPU.
 
-## <a name="rule-description"></a>Descrizione della regola  
- Durante l'esecuzione della profilatura, il processore o i processori sono stati occupati in modo coerente. Un utilizzo della CPU elevato può indicare un'applicazione basata sulla CPU. I profili instrumentati non rappresentano il modo più valido per esaminare gli scenari di utilizzo della CPU. Il campionamento è più efficace quando si profilano applicazioni che per la maggior parte del tempo eseguono istruzioni sul processore.  
+## <a name="rule-description"></a>Descrizione della regola
+ Durante l'esecuzione della profilatura, il processore o i processori sono stati occupati in modo coerente. Un utilizzo della CPU elevato può indicare un'applicazione basata sulla CPU. I profili instrumentati non rappresentano il modo più valido per esaminare gli scenari di utilizzo della CPU. Il campionamento è più efficace quando si profilano applicazioni che per la maggior parte del tempo eseguono istruzioni sul processore.
 
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Ad eccezione dei casi in cui è necessaria la temporizzazione della funzione o si è più interessati a comprendere l'input/output che i colli di bottiglia del processore, è consigliabile eseguire nuovamente la profilatura dell'applicazione usando il metodo di campionamento anziché il metodo di strumentazione.

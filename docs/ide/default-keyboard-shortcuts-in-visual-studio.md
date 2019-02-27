@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270654"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607408"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -461,7 +461,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.RemovefromDiagram|**Eliminazione**|
 |View.ViewCode|**INVIO**|
 
-##  <a name="coded-ui-test-editor"></a>Editor di test codificati dell'interfaccia utente
+##  <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -521,7 +521,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Eliminazione**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Diagnostica della grafica
+##  <a name="graphics-diagnostics"></a>Diagnostica grafica
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -807,8 +807,8 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 | Edit.HideSelection | **CTRL+M, CTRL+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **CTRL+I** |
-| Edit.InsertCaretsatAllMatching | **MAIUSC+ALT+;** | 
-| Edit.InsertNextMatchingCaret | **MAIUSC+ALT+.** | 
+| Edit.InsertCaretsatAllMatching | **MAIUSC+ALT+;** |
+| Edit.InsertNextMatchingCaret | **MAIUSC+ALT+.** |
 | Edit.InsertTab | **TAB** |
 | Edit.LineCut | **CTRL+L** |
 | Edit.LineDelete | **CTRL+MAIUSC+L** |

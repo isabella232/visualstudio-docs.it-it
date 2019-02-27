@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4303336fe12f817bdb2843d03f9e936a5b1736c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069147"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653872"
 ---
 # <a name="current-tab"></a>Scheda Corrente
-Facendo clic sulla scheda **Corrente**, è possibile visualizzare uno stack di chiamate (se disponibile) che è più vicino al punto di selezione corrente nella sequenza temporale se è selezionato un segmento di thread della CPU.  In questo caso, il punto di selezione è rappresentato da una freccia nera (o punto di inserimento) sopra la sequenza temporale. Quando viene selezionato un segmento di blocco, il punto di inserimento non viene visualizzato perché non è in esecuzione. Tuttavia, il segmento è ancora evidenziato e viene visualizzato uno stack di chiamate.  
-  
- La scheda **Corrente** visualizza anche informazioni sui segmenti di attività di DirectX, marcatori e accesso I/O.  Per i segmenti di attività di DirectX, vengono visualizzate le informazioni sul modo in cui vengono elaborati i pacchetti DMA dalla coda di hardware.  Per i marcatori, vengono visualizzate informazioni sul tipo di marcatore e descrizione.  Per l'accesso I/O, vengono visualizzate informazioni sui file e sul numero di byte letti o scritti.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+Facendo clic sulla scheda **Corrente**, è possibile visualizzare uno stack di chiamate (se disponibile) che è più vicino al punto di selezione corrente nella sequenza temporale se è selezionato un segmento di thread della CPU.  In questo caso, il punto di selezione è rappresentato da una freccia nera (o punto di inserimento) sopra la sequenza temporale. Quando viene selezionato un segmento di blocco, il punto di inserimento non viene visualizzato perché non è in esecuzione. Tuttavia, il segmento è ancora evidenziato e viene visualizzato uno stack di chiamate.
+
+ La scheda **Corrente** visualizza anche informazioni sui segmenti di attività di DirectX, marcatori e accesso I/O.  Per i segmenti di attività di DirectX, vengono visualizzate le informazioni sul modo in cui vengono elaborati i pacchetti DMA dalla coda di hardware.  Per i marcatori, vengono visualizzate informazioni sul tipo di marcatore e descrizione.  Per l'accesso I/O, vengono visualizzate informazioni sui file e sul numero di byte letti o scritti.
+
+## <a name="see-also"></a>Vedere anche
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

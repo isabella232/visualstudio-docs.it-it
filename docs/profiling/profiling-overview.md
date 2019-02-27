@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 09aa22660853149472ca4b581e0e3d7d346846f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155630"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634721"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Panoramica degli strumenti per la misurazione delle prestazioni in Visual Studio
 
@@ -25,4 +25,4 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 
 * [Analizzare l'uso della CPU](../profiling/cpu-usage.md) per informazioni dettagliate sullo strumento Utilizzo CPU.
 
-* [Analizzare l'uso della memoria](../profiling/memory-usage.md) per identificare colli di bottiglia delle prestazioni. 
+* [Analizzare l'uso della memoria](../profiling/memory-usage.md) per identificare colli di bottiglia delle prestazioni.

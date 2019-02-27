@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83708fa0e58381f50d1637e5f03255fc12376a7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942438"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621617"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Funzione CompareTo dispendiosa
 
-|||  
-|-|-|  
-|ID regola|DA0011|  
-|Category|Uso di .NET Framework|  
-|Metodi di profilatura|Campionamento<br /><br /> Memoria .NET|  
-|Messaggio|Le funzioni CompareTo dovrebbero essere semplici e non allocare memoria. Se possibile, ridurre la complessità della funzione CompareTo.|  
-|Tipo regola|Avviso|  
+|||
+|-|-|
+|ID regola|DA0011|
+|Category|Uso di .NET Framework|
+|Metodi di profilatura|Campionamento<br /><br /> Memoria .NET|
+|Messaggio|Le funzioni CompareTo dovrebbero essere semplici e non allocare memoria. Se possibile, ridurre la complessità della funzione CompareTo.|
+|Tipo regola|Avviso|
 
-## <a name="cause"></a>Causa  
- Il metodo CompareTo del tipo è dispendioso o alloca memoria.  
+## <a name="cause"></a>Causa
+ Il metodo CompareTo del tipo è dispendioso o alloca memoria.
 
-## <a name="rule-description"></a>Descrizione della regola  
- I metodi CompareTo dovrebbero essere efficienti e non allocare memoria.  
+## <a name="rule-description"></a>Descrizione della regola
+ I metodi CompareTo dovrebbero essere efficienti e non allocare memoria.
 
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Ridurre la complessità del metodo CompareTo.

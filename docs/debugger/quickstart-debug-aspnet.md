@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027378"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683597"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug di ASP.NET con il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
-## <a name="create-a-new-project"></a>Creare un nuovo progetto 
+## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
 1. In Visual Studio scegliere **File > Nuovo progetto**.
 
@@ -110,7 +110,7 @@ I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F1
 
     ![Visualizzare un suggerimento dati](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Il suggerimento dati mostra il valore corrente della variabile `c2` e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate. 
+    Il suggerimento dati mostra il valore corrente della variabile `c2` e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.
 
 2. Espandere il suggerimento dati per esaminare i valori delle proprietà dell'oggetto `c2`.
 

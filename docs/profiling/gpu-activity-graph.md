@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be66a847628cc5968f4cb636066c937e3433c0e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974867"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617561"
 ---
 # <a name="gpu-activity-graph"></a>Grafico Attività GPU
-Il grafico Attività GPU nel visualizzatore di concorrenza visualizza il livello di attività di DirectX nel sistema, misurato in base al numero dei motori di DirectX usati nel tempo.  Il grafico non mostra gli specifici motori usati.  Un motore viene considerato in uso se sta elaborando una qualsiasi operazione GPU.  
-  
-## <a name="gpu-activity-graph-colors"></a>Colori del grafico Attività GPU  
- Il verde indica l'uso dei motori di DirectX da parte del processo corrente.  
-  
- Il grigio chiaro indica l'uso dei motori di DirectX da parte di altri processi nel sistema. Per ridurre l'uso dei motori di DirectX da parte di altri processi, ridurre il numero di altri processi in esecuzione nel sistema.  
-  
- Il bianco indica la disponibilità dei motori inutilizzati di DirectX nel sistema. Tali motori sono disponibili per il processo se è possibile trovare ulteriori opportunità per sfruttarli. Alcuni motori possono essere usati solo per tipi specifici di attività.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Utilization View](../profiling/utilization-view.md) (Visualizzazione Utilizzo)
+Il grafico Attività GPU nel visualizzatore di concorrenza visualizza il livello di attività di DirectX nel sistema, misurato in base al numero dei motori di DirectX usati nel tempo.  Il grafico non mostra gli specifici motori usati.  Un motore viene considerato in uso se sta elaborando una qualsiasi operazione GPU.
+
+## <a name="gpu-activity-graph-colors"></a>Colori del grafico Attività GPU
+ Il verde indica l'uso dei motori di DirectX da parte del processo corrente.
+
+ Il grigio chiaro indica l'uso dei motori di DirectX da parte di altri processi nel sistema. Per ridurre l'uso dei motori di DirectX da parte di altri processi, ridurre il numero di altri processi in esecuzione nel sistema.
+
+ Il bianco indica la disponibilità dei motori inutilizzati di DirectX nel sistema. Tali motori sono disponibili per il processo se è possibile trovare ulteriori opportunità per sfruttarli. Alcuni motori possono essere usati solo per tipi specifici di attività.
+
+## <a name="see-also"></a>Vedere anche
+- [Utilization View](../profiling/utilization-view.md) (Visualizzazione Utilizzo)

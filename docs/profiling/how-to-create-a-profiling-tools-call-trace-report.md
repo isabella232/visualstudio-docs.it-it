@@ -11,34 +11,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38bc320e2c1604930c5f5767408876089e4119a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cdfe600192e61e8e7721c0e5486afafbedcaa6eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624217"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un report calltrace degli strumenti di profilatura
-Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.  
-  
-> [!NOTE]
->  Non è possibile visualizzare i report calltrace in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È necessario usare lo strumento da riga di comando **VSPerfReport** per generare un file con valori delimitati da virgole con estensione *csv* o *xml*. Per altre informazioni su questo strumento, vedere [VSPerfReport](../profiling/vsperfreport.md).  
-  
-### <a name="to-create-a-call-trace-report"></a>Per creare un report calltrace  
-  
-1.  Aprire una finestra **Prompt dei comandi**.  
-  
-2.  Al prompt dei comandi digitare il seguente comando:  
-  
-     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
-  
-    |||  
-    |-|-|  
-    |*ToolsPath*|Percorso degli strumenti da riga di comando disponibili negli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*VSPFile*|File con estensione *vsp* o *vsps* dei dati di profilatura. Sono accettati percorsi completi e parziali.|  
-    |Xml|Genera un report in formato XML.|  
+Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.
 
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
- [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)
+> [!NOTE]
+>  Non è possibile visualizzare i report calltrace in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È necessario usare lo strumento da riga di comando **VSPerfReport** per generare un file con valori delimitati da virgole con estensione *csv* o *xml*. Per altre informazioni su questo strumento, vedere [VSPerfReport](../profiling/vsperfreport.md).
+
+### <a name="to-create-a-call-trace-report"></a>Per creare un report calltrace
+
+1.  Aprire una finestra **Prompt dei comandi**.
+
+2.  Al prompt dei comandi digitare il seguente comando:
+
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
+
+    |||
+    |-|-|
+    |*ToolsPath*|Percorso degli strumenti da riga di comando disponibili negli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
+    |*VSPFile*|File con estensione *vsp* o *vsps* dei dati di profilatura. Sono accettati percorsi completi e parziali.|
+    |Xml|Genera un report in formato XML.|
+
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+- [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)

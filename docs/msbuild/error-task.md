@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853378"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610307"
 ---
 # <a name="error-task"></a>attività Error
 Interrompe una compilazione e registra un errore in base a un'istruzione condizionale valutata.
@@ -31,14 +31,14 @@ Interrompe una compilazione e registra un errore in base a un'istruzione condizi
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `Error` .
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |---------------| - |
 | `Code` | Parametro `String` facoltativo.<br /><br /> Codice errore da associare all'errore. |
 | `File` | Parametro `String` facoltativo.<br /><br /> Il nome del file che contiene l'errore. Se non viene indicato alcun nome file, verrà usato il file contenente l'attività di errore. |
 | `HelpKeyword` | Parametro `String` facoltativo.<br /><br /> Parola chiave della Guida da associare all'errore. |
 | `Text` | Parametro `String` facoltativo.<br /><br /> Il testo dell'errore caricato da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se il parametro `Condition` restituisce `true`. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 L'attività `Error` consente ai progetti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di inviare il testo dell'errore ai logger e di arrestare l'esecuzione della compilazione.
 
 Se il parametro `Condition` restituisce `true`, la compilazione viene interrotta e viene registrato un errore. Se non esiste un parametro `Condition`, l'errore viene registrato e l'esecuzione della compilazione viene arrestata. Per altre informazioni sulla registrazione, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
@@ -63,5 +63,5 @@ L'esempio di codice seguente verifica che siano impostate tutte le proprietà ri
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)

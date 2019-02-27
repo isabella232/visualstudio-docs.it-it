@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942810"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610541"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 Quando si compila un progetto che contiene molti file, è possibile elencare separatamente ogni file nel file di progetto oppure è possibile usare caratteri jolly per includere tutti i file contenuti in una directory o in un set nidificato di directory.
@@ -29,25 +29,25 @@ I file di una compilazione devono essere inclusi in un elenco di elementi nel fi
 
 #### <a name="to-declare-items-individually"></a>Per dichiarare gli elementi uno alla volta
 
-- Usare gli attributi `Include` simili ai seguenti:  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    oppure  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Usare gli attributi `Include` simili ai seguenti:
+
+    `<CSFile Include="form1.cs"/>`
+
+    oppure
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Se gli elementi di una raccolta di elementi non si trovano nella stessa directory del file di progetto, è necessario specificare il percorso completo o relativo dell'elemento. Ad esempio: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Per dichiarare più elementi
 
--   Usare gli attributi `Include` simili ai seguenti:  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    oppure  
-  
+-   Usare gli attributi `Include` simili ai seguenti:
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    oppure
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Specificare gli input con caratteri jolly
@@ -63,24 +63,24 @@ Gli esempi seguenti si basano su un progetto che contiene file grafici nelle dir
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Per includere tutti i file con estensione *jpg* della directory *Images* e delle relative sottodirectory
 
-- Usare l'attributo `Include` seguente:  
-  
+- Usare l'attributo `Include` seguente:
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Per includere tutti i file *jpg* che iniziano con *img*
 
-- Usare l'attributo `Include` seguente:  
-  
+- Usare l'attributo `Include` seguente:
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Per includere tutti i file delle directory i cui nomi terminano con *jpgs*
 
-- Usare uno degli attributi `Include` seguenti:  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    oppure  
-  
+- Usare uno degli attributi `Include` seguenti:
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    oppure
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Passare elementi a un'attività
@@ -88,17 +88,17 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Per usare tutti i file Visual C# o Visual Basic come input
 
-- Usare gli attributi `Include` simili ai seguenti:  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    oppure  
-  
+- Usare gli attributi `Include` simili ai seguenti:
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    oppure
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. Non è possibile specificare gli input tramite l'attributo `Sources` in attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ad esempio [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Esempio
@@ -170,5 +170,5 @@ L'esempio di codice seguente usa un carattere jolly per includere tutti i file c
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Elementi](../msbuild/msbuild-items.md)
+- [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Elementi](../msbuild/msbuild-items.md)

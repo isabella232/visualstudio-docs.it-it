@@ -11,25 +11,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622d7b087e94d21f86691b88c3af4891aa533e9a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae4390632dc9c1ce0cb47d5733145739719ae87c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013210"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617353"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate per MSBuild
-Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni riportate di seguito:  
-  
--   I valori di proprietà predefiniti vengono gestiti meglio con l'attributo `Condition` e non dichiarando una proprietà il cui valore predefinito può essere sottoposto a override nella riga di comando. Ad esempio, usare  
-  
+Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni riportate di seguito:
+
+-   I valori di proprietà predefiniti vengono gestiti meglio con l'attributo `Condition` e non dichiarando una proprietà il cui valore predefinito può essere sottoposto a override nella riga di comando. Ad esempio, usare
+
 ```xml
 <MyProperty Condition="'$(MyProperty)' == ''">
    MyDefaultValue
 </MyProperty>
 ```
-  
--   Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)
+
+-   Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.
+
+## <a name="see-also"></a>Vedere anche
+- [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

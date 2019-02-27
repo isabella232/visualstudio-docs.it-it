@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946544"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623710"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire un'attività una sola volta per ogni batch. Può non essere semplice comprendere esattamente quali elementi vengono passati e a quale batch. Questo argomento descrive gli scenari più comuni relativi alla suddivisione in batch.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)  
-[Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)  
-[Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Batch MSBuild](../msbuild/msbuild-batching.md)  
-[Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)  
-[Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)
+- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Batch MSBuild](../msbuild/msbuild-batching.md)
+- [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853443"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626609"
 ---
 # <a name="createproperty-task"></a>CreateProperty (attività)
 Popola le proprietà con i valori passati. In questo modo i valori vengono copiati da una proprietà o una stringa a un'altra.
@@ -31,12 +31,12 @@ Popola le proprietà con i valori passati. In questo modo i valori vengono copia
 ## <a name="attributes"></a>Attributi
 Nella tabella che segue vengono descritti i parametri dell'attività `CreateProperty` .
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |------------------| - |
 | `Value` | Parametro di ouput facoltativo `String`.<br /><br /> Specifica il valore da copiare nella nuova proprietà. |
 | `ValueSetByTask` | Parametro di ouput facoltativo `String`.<br /><br /> Contiene lo stesso valore del parametro `Value`. Usare questo parametro solo quando si vuole evitare che la proprietà di output venga impostata da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] quando la destinazione di inclusione viene ignorata perché gli output sono aggiornati. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
@@ -67,5 +67,5 @@ L'esempio seguente usa l'attività `CreateProperty` per creare la proprietà `Ne
 Dopo l'esecuzione del progetto il valore della proprietà `NewFile` è *Module1.vb*.
 
 ## <a name="see-also"></a>Vedere anche
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)

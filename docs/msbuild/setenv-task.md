@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa56e76c3bd31572385499dd5055fd63f359a8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16a73ac066ff0b61570f0ed918308cf8874121d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948232"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607798"
 ---
 # <a name="setenv-task"></a>Attività SetEnv
-Imposta o elimina il valore di una variabile di ambiente specificata.  
-  
-## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività **SetEnv**.  
-  
-|Parametro|Description|  
-|---------------|-----------------|  
-|**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|  
-|**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|  
-|**Prefix**|Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, concatena il valore del parametro **Value** prima del valore della variabile di ambiente specificato dal parametro **Name** e quindi assegna il risultato alla variabile di ambiente. Se `false`, assegna solo il valore del parametro **Value** alla variabile di ambiente.|  
-|**Destinazione**|Parametro **String** facoltativo.<br /><br /> Specifica il percorso di archiviazione di una variabile di ambiente. Specificare "Utene" o "Computer".<br /><br /> Per altre informazioni, vedere [Enumerazione EnvironmentVariableTarget](xref:System.EnvironmentVariableTarget).|  
-|**Valore**|Parametro **String** facoltativo.<br /><br /> Valore assegnato alla variabile di ambiente specificata dal parametro **Name**. Se **Value** è vuoto e la variabile esiste, la variabile viene eliminata. Se la variabile non esiste, non si verifica alcun errore anche se non è possibile eseguire l'operazione.<br /><br /> Per altre informazioni, vedere [Metodo Environment::SetEnvironmentVariable](xref:System.Environment.SetEnvironmentVariable%2A).|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+Imposta o elimina il valore di una variabile di ambiente specificata.
+
+## <a name="parameters"></a>Parametri
+ Nella tabella che segue vengono descritti i parametri dell'attività **SetEnv**.
+
+|Parametro|Description|
+|---------------|-----------------|
+|**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|
+|**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|
+|**Prefix**|Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, concatena il valore del parametro **Value** prima del valore della variabile di ambiente specificato dal parametro **Name** e quindi assegna il risultato alla variabile di ambiente. Se `false`, assegna solo il valore del parametro **Value** alla variabile di ambiente.|
+|**Destinazione**|Parametro **String** facoltativo.<br /><br /> Specifica il percorso di archiviazione di una variabile di ambiente. Specificare "Utene" o "Computer".<br /><br /> Per altre informazioni, vedere [Enumerazione EnvironmentVariableTarget](xref:System.EnvironmentVariableTarget).|
+|**Valore**|Parametro **String** facoltativo.<br /><br /> Valore assegnato alla variabile di ambiente specificata dal parametro **Name**. Se **Value** è vuoto e la variabile esiste, la variabile viene eliminata. Se la variabile non esiste, non si verifica alcun errore anche se non è possibile eseguire l'operazione.<br /><br /> Per altre informazioni, vedere [Metodo Environment::SetEnvironmentVariable](xref:System.Environment.SetEnvironmentVariable%2A).|
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

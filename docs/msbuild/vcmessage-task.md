@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5543627332e7c70fa40df5be4091bca7fab7bcfd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d025fd1f71b67acbcd532232b36b55fd35e1f530
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004854"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596061"
 ---
 # <a name="vcmessage-task"></a>attività VCMessage
-Registra gli avvisi e i messaggi di errore durante una compilazione.  
-  
-## <a name="remarks"></a>Note  
- Questa attività consente di implementare MSBuild per Visual C++ e non deve essere chiamata dall'utente. Per ulteriori informazioni, vedere <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
-  
-## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività **VCMessage**.  
-  
-|Parametro|Description|  
-|---------------|-----------------|  
-|**Argomenti**|Parametro **String** facoltativo.<br /><br /> Elenco delimitato da punto e virgola dei messaggi da visualizzare.|  
-|**Codice**|Parametro **String** obbligatorio.<br /><br /> Un numero di errore che qualifica il messaggio.|  
-|**Type**|Parametro **String** facoltativo.<br /><br /> Specifica il tipo di messaggio da generare. Specifica "Warning" per generare un messaggio di avviso o "Error" per generare un messaggio di errore.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+Registra gli avvisi e i messaggi di errore durante una compilazione.
+
+## <a name="remarks"></a>Osservazioni
+ Questa attività consente di implementare MSBuild per Visual C++ e non deve essere chiamata dall'utente. Per ulteriori informazioni, vedere <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
+
+## <a name="parameters"></a>Parametri
+ Nella tabella che segue vengono descritti i parametri dell'attività **VCMessage**.
+
+|Parametro|Description|
+|---------------|-----------------|
+|**Argomenti**|Parametro **String** facoltativo.<br /><br /> Elenco delimitato da punto e virgola dei messaggi da visualizzare.|
+|**Codice**|Parametro **String** obbligatorio.<br /><br /> Un numero di errore che qualifica il messaggio.|
+|**Type**|Parametro **String** facoltativo.<br /><br /> Specifica il tipo di messaggio da generare. Specifica "Warning" per generare un messaggio di avviso o "Error" per generare un messaggio di errore.|
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

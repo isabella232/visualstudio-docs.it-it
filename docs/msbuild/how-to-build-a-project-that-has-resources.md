@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852840"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610411"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: Compilare un progetto con risorse
 Se si stanno compilando le versioni localizzate di un progetto, tutti gli elementi dell'interfaccia utente devono essere separati in file di risorse per le diverse lingue. Se il progetto usa solo stringhe, i file di risorse possono usare file di testo. In alternativa, è possibile usare i file con estensione *resx* come file di risorse.
@@ -77,7 +77,7 @@ Il progetto di esempio seguente contiene due attività: l'attività `GenerateRes
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[MSBuild](../msbuild/msbuild.md)  
-[Attività GenerateResource](../msbuild/generateresource-task.md)  
-[Attività Csc](../msbuild/csc-task.md)  
-[Resgen.exe (generatore di file di risorse)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Attività GenerateResource](../msbuild/generateresource-task.md)
+- [Attività Csc](../msbuild/csc-task.md)
+- [Resgen.exe (generatore di file di risorse)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

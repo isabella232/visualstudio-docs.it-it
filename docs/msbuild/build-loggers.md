@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853521"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602481"
 ---
 # <a name="build-loggers"></a>Logger di compilazione
 I logger consentono di personalizzare l'output della compilazione e visualizzare messaggi, errori o avvisi in risposta a specifici eventi di compilazione. Ogni logger viene implementato come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ILogger>, definita nell'assembly *Microsoft.Build.Framework.dll*.
@@ -25,8 +25,8 @@ I logger consentono di personalizzare l'output della compilazione e visualizzare
 È possibile implementare un logger in due modi:
 
 - Implementare direttamente l'interfaccia <xref:Microsoft.Build.Framework.ILogger>.
-- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Logger>, definita nell'assembly *Microsoft.Build.Utilities.dll*. La classe <xref:Microsoft.Build.Utilities.Logger> implementa <xref:Microsoft.Build.Framework.ILogger> e fornisce le implementazioni predefinite di alcuni membri di <xref:Microsoft.Build.Framework.ILogger>.  
-  
+- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Logger>, definita nell'assembly *Microsoft.Build.Utilities.dll*. La classe <xref:Microsoft.Build.Utilities.Logger> implementa <xref:Microsoft.Build.Framework.ILogger> e fornisce le implementazioni predefinite di alcuni membri di <xref:Microsoft.Build.Framework.ILogger>.
+
   Questo argomento illustra come scrivere un logger semplice che deriva dalla classe <xref:Microsoft.Build.Utilities.Logger> e descrive i messaggi visualizzati sulla console in risposta a specifici eventi di compilazione.
 
 ## <a name="register-for-events"></a>Eseguire la registrazione per gli eventi
@@ -61,7 +61,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Descrizione
+### <a name="description"></a>Description
 L'esempio seguente contiene il codice completo per il logger.
 
 ### <a name="code"></a>Codice
@@ -69,12 +69,12 @@ L'esempio seguente contiene il codice completo per il logger.
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Descrizione
+### <a name="description"></a>Description
 L'esempio seguente illustra l'implementazione di un logger che scrive il log in un file, anziché visualizzarlo nella finestra di console.
 
 ### <a name="code"></a>Codice
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Vedere anche
-[Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
+- [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

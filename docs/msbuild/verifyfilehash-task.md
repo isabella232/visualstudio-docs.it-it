@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8122f1a3869efe32d7ae35ff05cdbb77ad84375
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618380"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
 
@@ -32,7 +32,7 @@ Questa attività è stata aggiunta nella versione 15.8. È tuttavia necessaria u
 
  Nella tabella che segue vengono descritti i parametri dell'attività `VerifyFileHash` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`File`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br />File per i quali generare un hash e da convalidare.|
 |`Hash`|Parametro `String` obbligatorio.<br /><br />Hash file previsto.|
@@ -64,6 +64,5 @@ Nell'esempio seguente l'attività `VerifyFileHash` viene usata per verificare il
 
 ## <a name="see-also"></a>Vedere anche
 
-[Attività](../msbuild/msbuild-tasks.md)
-
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

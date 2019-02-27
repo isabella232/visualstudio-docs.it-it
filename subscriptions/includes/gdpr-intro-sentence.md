@@ -1,16 +1,15 @@
 ---
 title: File di inclusione
 ms.date: 04/24/2018
-ms.prod: vs-subscription
 ms.topic: include
 author: eross-msft
 ms.author: lizross
-ms.openlocfilehash: 7cfbdb3be93c7f57771accc5ebc330c21e211fad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 69ce0da83eaa2e1122dbf3583cdaa75aede9f03f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811281"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844477"
 ---
 > [!NOTE]
 > Questo articolo illustra la procedura per eliminare i dati personali dal dispositivo o dal servizio e può essere usato per supportare gli obblighi relativi al GDPR (Regolamento generale sulla protezione dei dati). Se si cercano informazioni generali sul GDPR, vedere la sezione GDPR del [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).

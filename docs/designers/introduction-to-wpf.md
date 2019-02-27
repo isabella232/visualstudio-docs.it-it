@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 893b073c2722fc91e342d37f0aeb2a490fccb53a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919989"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635072"
 ---
 # <a name="wpf-overview"></a>Panoramica di WPF
 
@@ -230,7 +230,7 @@ La maggior parte delle applicazioni viene creata per consentire agli utenti di v
 
 Per semplificare lo sviluppo delle applicazioni, in WPF è disponibile un motore di data binding per eseguire automaticamente queste operazioni. L'unità principale di questo motore è la classe <xref:System.Windows.Data.Binding> , il cui scopo è associare un controllo (destinazione) a un oggetto dati (origine). La figura seguente illustra questa relazione:
 
-![Diagramma di data binding di base](../designers/media/databindingmostbasic.png)
+![Diagramma di associazione dati di base](../designers/media/databindingmostbasic.png)
 
 L'esempio seguente descrive come associare un oggetto <xref:System.Windows.Controls.TextBox> a un'istanza di un oggetto `Person` personalizzato. L'esempio di codice seguente mostra l'implementazione di `Person`:
 

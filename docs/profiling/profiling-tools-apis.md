@@ -8,28 +8,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8577cb0c456d3cf3ea295928a9bfd1df59d65c03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35b1f0a56cc2aee3aafe31ca786d508d2162e50c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040229"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634760"
 ---
 # <a name="profiling-tools-apis"></a>API per strumenti di profilatura
-È possibile inserire i metodi gestiti o nativi delle API degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per controllare la raccolta di dati in un'esecuzione della profilatura. Questa sezione descrive i metodi delle API e come usarli.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)  
- Descrive i metodi degli strumenti di profilatura C++.  
-  
- <xref:Microsoft.VisualStudio.Profiler>  
- Descrive i metodi degli strumenti di profilatura .NET.  
-  
- [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)  
- Informazioni su come usare i metodi degli strumenti di profilatura .NET in questo esempio completo.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Controllare la raccolta dati](../profiling/controlling-data-collection.md)  
-  
-## <a name="see-also"></a>Vedere anche  
- [Esplora prestazioni](../profiling/performance-explorer.md)
+
+È possibile inserire i metodi gestiti o nativi delle API degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per controllare la raccolta di dati in un'esecuzione della profilatura. Questa sezione descrive i metodi delle API e come usarli.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+
+[Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+
+Descrive i metodi degli strumenti di profilatura C++.
+
+<xref:Microsoft.VisualStudio.Profiler>
+
+Descrive i metodi degli strumenti di profilatura .NET.
+
+[Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)
+
+Informazioni su come usare i metodi degli strumenti di profilatura .NET in questo esempio completo.
+
+## <a name="related-sections"></a>Sezioni correlate
+
+[Controllare la raccolta dati](../profiling/controlling-data-collection.md)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Esplora prestazioni](../profiling/performance-explorer.md)

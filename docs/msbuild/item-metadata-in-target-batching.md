@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe3e959f9e34dfbc757789a5461a920125eb10e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970322"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606316"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadati degli elementi nella suddivisione in batch delle destinazioni
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è in grado di eseguire l'analisi delle dipendenze per gli input e output di una destinazione di compilazione. Se viene stabilito che l'input o output della destinazione sono aggiornati, la destinazione viene ignorata e la compilazione prosegue. Gli elementi `Target` usano gli attributi `Inputs` e `Outputs` per specificare gli elementi da controllare durante l'analisi delle dipendenze.
@@ -66,7 +66,7 @@ L'esempio seguente contiene un elenco di elementi denominato `Res` che viene sud
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)  
-[Batch MSBuild](../msbuild/msbuild-batching.md)  
-[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Metadati degli elementi nella suddivisione in batch delle attività](../msbuild/item-metadata-in-task-batching.md)
+- [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)
+- [Batch MSBuild](../msbuild/msbuild-batching.md)
+- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Metadati degli elementi nella suddivisione in batch delle attività](../msbuild/item-metadata-in-task-batching.md)

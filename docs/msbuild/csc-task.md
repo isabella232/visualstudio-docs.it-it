@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854122"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643938"
 ---
 # <a name="csc-task"></a>Csc (attività)
 Esegue il wrapping di *csc.exe* e produce file eseguibili (*EXE*), librerie a collegamento dinamico (file *DLL*) o moduli di codice (file *NETMODULE*). Per altre informazioni su *csc.exe*, vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -31,7 +31,7 @@ Esegue il wrapping di *csc.exe* e produce file eseguibili (*EXE*), librerie a co
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parametro `String[]` facoltativo.<br /><br /> Specifica directory aggiuntive in cui cercare i riferimenti. Per altre informazioni, vedere [-lib (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Parametro `String` facoltativo.<br /><br /> Specifica uno o più moduli che devono fare parte dell'assembly. Per altre informazioni, vedere [-addmodule (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |
@@ -80,7 +80,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `Win32Manifest` | Parametro `String` facoltativo.<br /><br /> Specifica il manifesto Win32 da includere. |
 | `Win32Resource` | Parametro `String` facoltativo.<br /><br /> Inserisce nel file di output un file di risorsa Win32 (*RES*). Per altre informazioni, vedere [-win32res (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe `Microsoft.Build.Tasks.ManagedCompiler`, che eredita dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
@@ -94,5 +94,5 @@ Nell'esempio seguente viene usata l'attività `Csc` per compilare un eseguibile 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)

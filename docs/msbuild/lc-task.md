@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938930"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638701"
 ---
 # <a name="lc-task"></a>LC (attività)
 Esegue il wrapping di *LC.exe*, uno strumento che genera un file con estensione *license* da un file con estensione *licx*. Per altre informazioni su *LC.exe*, vedere [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).
@@ -31,7 +31,7 @@ Esegue il wrapping di *LC.exe*, uno strumento che genera un file con estensione 
 ## <a name="parameters"></a>Parametri
 La tabella seguente descrive i parametri dell'attività `LC`.
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`LicenseTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica l'eseguibile per cui vengono generati i file con estensione *licenses*.|
 |`NoLogo`|Parametro `Boolean` facoltativo.<br /><br /> Evita la visualizzazione del messaggio di avvio Microsoft.|
@@ -67,5 +67,5 @@ Nell'esempio seguente l'attività `LC` viene usata per compilare le licenze.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

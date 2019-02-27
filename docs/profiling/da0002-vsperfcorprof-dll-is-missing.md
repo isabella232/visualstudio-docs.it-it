@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc44f1dd1a7c9b81330912871a090881987d2a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa263f6ceab515627fd33070517e3393aeec419d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033621"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637204"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll mancante
 
-|||  
-|-|-|  
-|ID regola|DA0002|  
-|Category|Uso degli strumenti di profilatura|  
-|Metodi di profilatura|Profilatura tramite gli strumenti da riga di comando VSPerfCmd e VSPerfASPNETCmd|  
-|Messaggio|Il file è stato raccolto senza impostare correttamente le variabili di ambiente con *VSPerfCLREnv.cmd*. La risoluzione dei simboli per i file binari gestiti potrebbe non essere effettuata.|  
-|Tipo regola|Informazioni|  
+|||
+|-|-|
+|ID regola|DA0002|
+|Category|Uso degli strumenti di profilatura|
+|Metodi di profilatura|Profilatura tramite gli strumenti da riga di comando VSPerfCmd e VSPerfASPNETCmd|
+|Messaggio|Il file è stato raccolto senza impostare correttamente le variabili di ambiente con *VSPerfCLREnv.cmd*. La risoluzione dei simboli per i file binari gestiti potrebbe non essere effettuata.|
+|Tipo regola|Informazioni|
 
-## <a name="cause"></a>Causa  
- Il profiler non è in grado di trovare *VSPerfCorProf.dll* durante l'esecuzione della profilatura. Questo avviso si verifica quando vengono usati gli strumenti da riga di comando per la raccolta di dati del profiler senza usare lo strumento *VSPerfCLREnv.cmd* per inizializzare le variabili di ambiente necessarie. L'avviso può essere generato anche se un altro profiler è in esecuzione all'avvio degli strumenti di profilatura.  
+## <a name="cause"></a>Causa
+ Il profiler non è in grado di trovare *VSPerfCorProf.dll* durante l'esecuzione della profilatura. Questo avviso si verifica quando vengono usati gli strumenti da riga di comando per la raccolta di dati del profiler senza usare lo strumento *VSPerfCLREnv.cmd* per inizializzare le variabili di ambiente necessarie. L'avviso può essere generato anche se un altro profiler è in esecuzione all'avvio degli strumenti di profilatura.
 
-## <a name="rule-description"></a>Descrizione della regola  
- Prima di eseguire la profilatura è necessario impostare variabili di ambiente specifiche per consentire al profiler di risolvere i simboli nei file binari di .NET Framework. Questo avviso indica che lo strumento *VSPerfCLREnv.cmd* non è stato eseguito prima della raccolta dei dati di profilatura. È possibile che i simboli per i file binari gestiti non vengano risolti. Per altre informazioni sull'uso degli strumenti di profilatura dalla riga di comando, vedere [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+## <a name="rule-description"></a>Descrizione della regola
+ Prima di eseguire la profilatura è necessario impostare variabili di ambiente specifiche per consentire al profiler di risolvere i simboli nei file binari di .NET Framework. Questo avviso indica che lo strumento *VSPerfCLREnv.cmd* non è stato eseguito prima della raccolta dei dati di profilatura. È possibile che i simboli per i file binari gestiti non vengano risolti. Per altre informazioni sull'uso degli strumenti di profilatura dalla riga di comando, vedere [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Quando si profilano applicazioni gestite usando gli strumenti da riga di comando negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], eseguire lo strumento da riga di comando [VSPerfCLREnv](../profiling/vsperfclrenv.md) prima di iniziare la raccolta dei dati.
