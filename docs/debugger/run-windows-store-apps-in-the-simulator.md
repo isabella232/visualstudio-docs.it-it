@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949801"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710539"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire app UWP nel simulatore
 Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che simula un'app UWP. In genere, è opportuno eseguire il debug nel computer locale, un dispositivo connesso o un computer remoto. Tuttavia, in alcuni scenari, è possibile usare il simulatore di Visual Studio per emulare una dimensione dello schermo fisico diverso e risoluzione. È anche possibile simulare i comuni eventi di rotazione e tocco e simulare le proprietà di connessione di rete.
@@ -107,7 +107,7 @@ Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che sim
      ![Menu di scelta rapida impostazioni screenshot](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete
- È possibile consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) consentono di rispondere agli eventi [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) che consentono l'accesso. Se non si conosce la procedura, vedere le istruzioni disponibili in [Guida introduttiva: Gestione dei vincoli di costo di rete a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+ È possibile consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) consentono di rispondere agli eventi [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
  Per eseguire il debug o il test del codice in grado di rilevare i costi di rete, il simulatore può simulare le proprietà di una rete esposte tramite l'oggetto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) restituito da [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -131,7 +131,7 @@ Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che sim
 
    **Altre informazioni sulla gestione delle connessioni di rete**
 
-   [Avvio rapido: La gestione dei vincoli di costo di rete a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [Esempio di informazioni di rete](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -149,4 +149,4 @@ Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che sim
  È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Vedere anche
- [Eseguire app da Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Eseguire app da Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

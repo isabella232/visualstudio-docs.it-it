@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Abilitare e disabilitare Modifica e continuazione | Microsoft Docs'
+title: 'Procedura: abilitare e disabilitare Modifica e continuazione | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -26,35 +26,35 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: a201dab58084476f0993304d961fc5afa5693782
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002229"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694608"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: Abilitare e disabilitare Modifica e continuazione (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: abilitare e disabilitare Modifica e continuazione (C#, VB, C++)
 
-È possibile disabilitare o abilitare **modifica e continuazione** in Visual Studio **opzioni** finestra di dialogo in fase di progettazione. La funzionalità **Modifica e continuazione** può essere usata solo nelle build di debug. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md). 
-  
+È possibile disabilitare o abilitare **modifica e continuazione** in Visual Studio **opzioni** finestra di dialogo in fase di progettazione. La funzionalità **Modifica e continuazione** può essere usata solo nelle build di debug. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
+
 C++ nativo **modifica e continuazione** richiede l'uso di `/INCREMENTAL` opzione. Per altre informazioni sui requisiti di funzionalità in C++, vedere questo [post di blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) e [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
-  
-**Per abilitare o disabilitare Modifica e continuazione:**  
-  
+
+**Per abilitare o disabilitare Modifica e continuazione:**
+
 1.  Se lavora in una sessione di debug, arrestare il debug (**Debug** > **Termina debug** oppure **MAIUSC**+**F5**) .
 
-1.  Nella **degli strumenti** > **opzioni** > (o **Debug** > **opzioni**) > **debug**  >  **Generali**, selezionare **modifica e continuazione** nel riquadro di destra.  
-  
+1.  Nella **degli strumenti** > **opzioni** > (o **Debug** > **opzioni**) > **debug**  >  **Generali**, selezionare **modifica e continuazione** nel riquadro di destra.
+
     > [!NOTE]
     >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [IntelliTrace](../debugger/intellitrace.md).
-    
+
 1.  Per codice C++, assicurarsi che **abilitare Modifica e continuazione nativo** sia selezionato e impostare le opzioni aggiuntive:
-    - **Applica le modifiche durante la continuazione (solo nativo)**  
-      
-      Se selezionata, Visual Studio viene compilato automaticamente e applica le modifiche al codice quando si continua il debug da uno stato di interruzione. In caso contrario, è possibile scegliere di applicare modifiche mediante **Debug** > **Applica modifiche del codice**.  
-      
-    - **Avvisa in caso di codice non aggiornato (solo nativo)**  
-      
-      Se selezionata, consente di avvisi relativi a codice non aggiornato. 
-  
-1.  Fare clic su **OK**.    
+    - **Applica le modifiche durante la continuazione (solo nativo)**
+
+      Se selezionata, Visual Studio viene compilato automaticamente e applica le modifiche al codice quando si continua il debug da uno stato di interruzione. In caso contrario, è possibile scegliere di applicare modifiche mediante **Debug** > **Applica modifiche del codice**.
+
+    - **Avvisa in caso di codice non aggiornato (solo nativo)**
+
+      Se selezionata, consente di avvisi relativi a codice non aggiornato.
+
+1.  Fare clic su **OK**.

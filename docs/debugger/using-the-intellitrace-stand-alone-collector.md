@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316847"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710591"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Tramite l'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
 
@@ -172,7 +172,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
    > [!NOTE]
    > - Per evitare il rallentamento dell'app, scegliere una posizione in un disco ad alta velocità locale non troppo attivo.
    >   -   I file .iTrace e quelli dell'agente di raccolta possono essere inseriti nella stessa posizione. Tuttavia, se si ha un'app Web o un'applicazione SharePoint, verificare che questa posizione non sia all'interno della directory che ospita l'applicazione.
-   > 
+   >
    > [!IMPORTANT]
    > - Limitare la directory di file .iTrace solo alle identità che devono lavorare con l'agente di raccolta. Un file .iTrace può contenere informazioni riservate, ad esempio dati degli utenti, database, altri percorsi di origine e stringhe di connessione, perché IntelliTrace è in grado di registrare tutti i dati che passano nei parametri del metodo o come valori restituiti.
    >   -   Assicurarsi che le persone che possono aprire i file .iTrace dispongano delle autorizzazioni per la visualizzazione dei dati riservati. Usare prudenza quando si condividono file .iTrace. Se è necessario concedere l'accesso ad altri, copiare i file in un percorso condiviso sicuro.
@@ -191,7 +191,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       oppure
+       -oppure-
 
    - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):
 

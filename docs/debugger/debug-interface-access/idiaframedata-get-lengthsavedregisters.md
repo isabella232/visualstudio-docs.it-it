@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4b85c3f98d80039b6d490ccf690b10682f5d04
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e05ebb4d7a58be353bb933a4ce5e5053d8dbf33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599921"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
-Recupera il numero di byte di registra salvato inseriti nello stack.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_lengthSavedRegisters (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce il numero di byte di registra salvato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="remarks"></a>Osservazioni  
- Il valore restituito da questo metodo viene utilizzato in genere l'interpretazione di una stringa nel programma (vedere la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodo per la definizione di una stringa di programma).  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+Recupera il numero di byte di registra salvato inseriti nello stack.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_lengthSavedRegisters ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce il numero di byte di registra salvato.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ Il valore restituito da questo metodo viene utilizzato in genere l'interpretazione di una stringa nel programma (vedere la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodo per la definizione di una stringa di programma).
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

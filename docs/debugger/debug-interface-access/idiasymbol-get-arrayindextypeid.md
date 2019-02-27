@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e11eccf44699c7c3b482d8f8a50fd338f003974e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31dc81f7975d62832e754777db7432c83868ada7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986685"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613492"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
-Recupera l'identificatore di tipo di indice di matrice del simbolo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_arrayIndexTypeId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce l'ID del tipo di indice di matrice del simbolo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera l'identificatore di tipo di indice di matrice del simbolo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_arrayIndexTypeId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce l'ID del tipo di indice di matrice del simbolo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="remarks"></a>Osservazioni  
- L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
-  
-## <a name="requirements"></a>Requisiti  
-  
-|Requisito|Descrizione|  
-|-----------------|-----------------|  
-|Intestazione:|Dia2.h|  
-|Versione:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="remarks"></a>Osservazioni
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.
+
+## <a name="requirements"></a>Requisiti
+
+|Requisito|Description|
+|-----------------|-----------------|
+|Intestazione:|Dia2.h|
+|Version:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9507e7791f1ecd61a2f7a6321bdf45fe256feb4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227550"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602300"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Esegue il mapping dei dati rispetto al numero di sezione ai segmenti dello spazio degli indirizzi.
@@ -31,7 +31,7 @@ IDiaSegment : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaSegment`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera il numero di segmenti.|
 |[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera l'offset in segmenti in cui inizia la sezione.|
@@ -101,6 +101,6 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)  
-[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
+- [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

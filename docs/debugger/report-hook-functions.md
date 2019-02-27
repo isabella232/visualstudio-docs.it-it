@@ -23,30 +23,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f2723304fe22af9ae2920ff828c953de9347449
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952873"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679983"
 ---
 # <a name="report-hook-functions"></a>Funzioni hook per la creazione di rapporti
-Una funzione hook per la creazione di report, installata mediante [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), viene chiamata ogni volta che [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) genera un report di debug. È possibile utilizzare tale funzione, ad esempio, per filtrare i report in modo da concentrarsi su tipi specifici di allocazioni. Una funzione hook per la creazione di report deve avere un prototipo analogo al seguente:  
-  
+Una funzione hook per la creazione di report, installata mediante [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), viene chiamata ogni volta che [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) genera un report di debug. È possibile utilizzare tale funzione, ad esempio, per filtrare i report in modo da concentrarsi su tipi specifici di allocazioni. Una funzione hook per la creazione di report deve avere un prototipo analogo al seguente:
+
 ```cpp
-int YourReportHook(int nRptType, char *szMsg, int *retVal);  
-```  
-  
- Il puntatore passato a **CrtSetReportHook** JE typu **CRT_REPORT_HOOK**, come definito in CRTDBG. H:  
-  
+int YourReportHook(int nRptType, char *szMsg, int *retVal);
+```
+
+ Il puntatore passato a **CrtSetReportHook** JE typu **CRT_REPORT_HOOK**, come definito in CRTDBG. H:
+
 ```cpp
-typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
-```  
-  
- Quando la libreria di runtime chiama la funzione hook, l'argomento *nRptType* contiene la categoria del report (**_CRT_WARN**, **_CRT_ERROR** o **_CRT_ASSERT**), *szMsg* contiene un puntatore a una stringa di messaggio di report completa e *retVal* specifica se `_CrtDbgReport` debba continuare la normale esecuzione dopo la generazione del report o avviare invece il debugger (se *retVal* ha valore zero l'esecuzione continua, se ha valore 1 viene avviato il debugger).  
-  
- Se la funzione hook gestisce il messaggio in questione completamente, in modo che non sia necessario alcun report ulteriore, deve restituire **TRUE**. Se restituisce **FALSE**, `_CrtDbgReport` visualizzerà il messaggio normalmente.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)   
- [Esempio di crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
+```
+
+ Quando la libreria di runtime chiama la funzione hook, l'argomento *nRptType* contiene la categoria del report (**_CRT_WARN**, **_CRT_ERROR** o **_CRT_ASSERT**), *szMsg* contiene un puntatore a una stringa di messaggio di report completa e *retVal* specifica se `_CrtDbgReport` debba continuare la normale esecuzione dopo la generazione del report o avviare invece il debugger (se *retVal* ha valore zero l'esecuzione continua, se ha valore 1 viene avviato il debugger).
+
+ Se la funzione hook gestisce il messaggio in questione completamente, in modo che non sia necessario alcun report ulteriore, deve restituire **TRUE**. Se restituisce **FALSE**, `_CrtDbgReport` visualizzerà il messaggio normalmente.
+
+## <a name="see-also"></a>Vedere anche
+- [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)
+- [Esempio di crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

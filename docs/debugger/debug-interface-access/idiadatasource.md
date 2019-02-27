@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c7c2edc71843377c4213764dfb30727a14d4b5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612361"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Avvia l'accesso a un'origine dei simboli di debug.
@@ -31,7 +31,7 @@ IDiaDataSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaDataSource`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Recupera il nome del file per l'ultimo errore di caricamento.|
 |[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Viene aperto e lo prepara un file di database (con estensione pdb) del programma come un'origine dati di debug.|
@@ -40,7 +40,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaDataSource`.
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prepara i dati di debug archiviati in un file di programma del database (con estensione pdb) si accede tramite un flusso di dati in memoria.|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Apre una sessione per eseguire query sui simboli.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Una chiamata a uno dei metodi load del `IDiaDataSource` all'origine simboli viene visualizzata l'interfaccia. Una chiamata riuscita per il [Idiadatasource](../../debugger/debug-interface-access/idiadatasource-opensession.md) restituzione del metodo un' [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaccia che supporta query sull'origine dati. Se il metodo load restituisce un errore relativo al file il [Get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) metodo restituisce il valore contiene il nome del file associato all'errore.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -70,4 +70,4 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

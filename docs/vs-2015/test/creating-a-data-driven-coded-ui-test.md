@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755370"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796712"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Creazione di un test codificati dell'interfaccia utente basato sui dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
   
 4.  Aggiungere 1 più 2, mettere in pausa la registrazione e generare il metodo di test. I valori di input dell'utente verranno in seguito sostituiti con valori di un file di dati.  
   
-     ![Generare un metodo di test](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Genera il metodo di test](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Chiudere il generatore di test. Il metodo viene aggiunto al test:  
   
@@ -205,7 +205,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
   
    **Linee guida**  
   
-   Per altre informazioni, vedere [test per il recapito continuo con Visual Studio 2012 – capitolo 2: Testing unità Test interni](http://go.microsoft.com/fwlink/?LinkID=255188) e [test per il recapito continuo con Visual Studio 2012-capitolo 5: Automazione dei test di sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Per altre informazioni, vedere [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 2: Unit test: test interni) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: Automazione dei test di sistema)  
   
 ## <a name="q--a"></a>Domande e risposte  
   

@@ -11,60 +11,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4514f914569c6a28681ce5450d10913bbd7a22a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011689"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682830"
 ---
 # <a name="find-window-dialog-box"></a>Finestra di dialogo Trova finestra
-Usare questa finestra di dialogo per selezionare una finestra e visualizzarne le proprietà o i messaggi. Per visualizzare questa finestra di dialogo, scegliere **Trova finestra** dalle **Spy** menu.  
-  
- Sono disponibili le seguenti impostazioni:  
-  
- **Strumento di ricerca**  
- Lo strumento di trascinamento della selezione utilizzato per selezionare una finestra.  
-  
- **Nascondi Spy + +**  
- Rimuove la finestra principale di Spy + + e lascia il **Trova finestra** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni.  
-  
- **Handle**  
- ID univoco della finestra da trovare.  
-  
- **Caption**  
- Testo del titolo della finestra.  
-  
- **Classe**  
- La classe della finestra.  
-  
- **Stile**  
- Lo stile della finestra.  
-  
- **Rect**  
- Il rettangolo di delimitazione per la finestra.  
-  
- **Visualizzare le proprietà o i messaggi**  
- Determina se fare clic su OK verrà visualizzato il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) o si apre un [visualizzazione messaggi](../debugger/messages-view.md).  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Usando lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md)  
- Viene illustrato come questo strumento esegue l'analisi di windows per le proprietà o i messaggi.  
-  
- [visualizzazione finestre](../debugger/windows-view.md)  
- Consente di visualizzare una visualizzazione struttura ad albero dei controlli e finestre disponibili.  
-  
- [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
-  
- [Uso di Spy++](../debugger/using-spy-increment.md)  
- Introduce lo strumento Spy + + e spiega come può essere usato.  
-  
- [Finestra di dialogo Ricerca finestre](../debugger/window-search-dialog-box.md)  
- Utilizzato per trovare il nodo per una specifica finestra nella visualizzazione di Windows.  
-  
- [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md)  
- Consente di visualizzare le proprietà di una finestra selezionato nella visualizzazione di Windows.  
-  
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+Usare questa finestra di dialogo per selezionare una finestra e visualizzarne le proprietà o i messaggi. Per visualizzare questa finestra di dialogo, scegliere **Trova finestra** dalle **Spy** menu.
+
+ Sono disponibili le seguenti impostazioni:
+
+ **Strumento di ricerca** lo strumento di trascinamento della selezione utilizzato per selezionare una finestra.
+
+ **Nascondi Spy + +** rimuove la finestra principale di Spy + + e lascia il **Trova finestra** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni.
+
+ **Gestire** ID univoco della finestra da trovare.
+
+ **Didascalia** il testo del titolo della finestra.
+
+ **Classe** la classe della finestra.
+
+ **Stile** lo stile della finestra.
+
+ **Rect** il rettangolo di delimitazione per la finestra.
+
+ **Visualizzare le proprietà o i messaggi** stabilisce se fare clic su OK verrà visualizzato il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) o aprire un [visualizzazione messaggi](../debugger/messages-view.md).
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Usando lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md) Mostra come questo strumento esegue l'analisi di windows per le proprietà o i messaggi.
+
+ [Windows Vista](../debugger/windows-view.md) contiene una visualizzazione albero dei controlli e finestre disponibili.
+
+ [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+
+ [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+
+ [Finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) consente di individuare il nodo per una specifica finestra nella visualizzazione di Windows.
+
+ [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) consente di visualizzare le proprietà di una finestra selezionato nella visualizzazione di Windows.
+
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

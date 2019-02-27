@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941983"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636905"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
 
 Il **Auto** e **variabili locali** finestre mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. Il **Auto** finestra Mostra le variabili usate attorno al punto di interruzione corrente. Il **variabili locali** finestra Mostra le variabili definite nell'ambito locale, ovvero in genere la funzione corrente o il metodo. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
  Il **Auto** è disponibile per la finestra C#, codice di Visual Basic, C++ e Python, ma non per JavaScript o F#.
-  
-Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**, oppure premere **Ctrl**+**Alt**+**V** > **A**.  
+
+Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**, oppure premere **Ctrl**+**Alt**+**V** > **A**.
 
 Per aprire la **variabili locali** finestra durante il debug, selezionare **Debug** > **Windows** > **variabili locali**, oppure premere **Alt**+**4**.
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 Per visualizzare i valori restituiti di `sumVars()` e `subtractVars()` chiamate nella finestra Auto:
 
-1. Impostare un punto di interruzione nella riga `int x = sumVars(a, b) + subtractVars(c, d);` .  
-   
-1. Avviare il debug e quando si mette in pausa l'esecuzione nel punto di interruzione, selezionare **Esegui istruzione/routine** o premere **F10**. Dovrebbe essere i seguenti valori restituiti nel **Auto** finestra:  
-   
-  ![Valore restituito di Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto valore restituitoC#")  
-  
-## <a name="see-also"></a>Vedere anche  
- [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)  
- [Presentazione di debug](../debugger/debugger-feature-tour.md) [finestre del Debugger](../debugger/debugger-windows.md)
+1. Impostare un punto di interruzione nella riga `int x = sumVars(a, b) + subtractVars(c, d);` .
+
+1. Avviare il debug e quando si mette in pausa l'esecuzione nel punto di interruzione, selezionare **Esegui istruzione/routine** o premere **F10**. Dovrebbe essere i seguenti valori restituiti nel **Auto** finestra:
+
+  ![Valore restituito di Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto valore restituitoC#")
+
+## <a name="see-also"></a>Vedere anche
+
+- [Che cos'è il debug?](../debugger/what-is-debugging.md)
+- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)
+- [Presentazione di debug](../debugger/debugger-feature-tour.md)
+- [Finestre del debugger](../debugger/debugger-windows.md)

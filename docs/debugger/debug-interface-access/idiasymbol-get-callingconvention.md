@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59eee930f13cb7f2d870c62d6cd0b47704eb94db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a50328824bf6c869d6cfc1cef94af24566010e9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991333"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611256"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
-Restituisce un indicatore di una convenzione di chiamata di metodi.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_callingConvention (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce un valore di [enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) convenzione di chiamata dell'enumerazione che specifica un metodo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Restituisce un indicatore di una convenzione di chiamata di metodi.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_callingConvention ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce un valore di [enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) convenzione di chiamata dell'enumerazione che specifica un metodo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="requirements"></a>Requisiti  
-  
-|Requisito|Descrizione|  
-|-----------------|-----------------|  
-|Intestazione:|Dia2.h|  
-|Versione:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="requirements"></a>Requisiti
+
+|Requisito|Description|
+|-----------------|-----------------|
+|Intestazione:|Dia2.h|
+|Version:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)

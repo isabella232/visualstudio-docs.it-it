@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629145"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840458"
 ---
 # <a name="automation-support-for-options-pages"></a>Supporto di automazione per le pagine di opzioni
 I VSPackage possono fornire personalizzata **opzioni** alle finestre di dialogo per il **Tools** menu (**opzioni del menu Strumenti** pagine) in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e può renderli disponibili per l'automazione modello.
@@ -34,7 +34,7 @@ I VSPackage possono fornire personalizzata **opzioni** alle finestre di dialogo 
 
 4. L'oggetto di automazione del pacchetto VSPackage viene quindi usato per fornire a ogni <xref:EnvDTE.Property> restituito da <xref:EnvDTE._DTE.Properties%2A>.
 
-   Per un esempio di implementazione di una classe personalizzata **ToolsOptions** pagina, vedere [esempi di VSSDK](http://aka.ms/vs2015sdksamples).
+   Per un esempio di implementazione di una classe personalizzata **ToolsOptions** pagina, vedere [esempi di VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Vedere anche
 - [Esporre oggetti del progetto](../../extensibility/internals/exposing-project-objects.md)

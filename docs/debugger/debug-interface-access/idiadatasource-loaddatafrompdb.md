@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 021c3ec0115267f83dbc39ba9c7c34b262fa6614
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605601"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Viene aperto e lo prepara un file di database (con estensione pdb) del programma come un'origine dati di debug.
@@ -31,20 +31,21 @@ HRESULT loadDataFromPdb (
 ```
 
 #### <a name="parameters"></a>Parametri
-pdbPath  
+pdbPath
+
 [in] Il percorso del file con estensione pdb.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.
 
-|Valore|Descrizione|
+|Value|Description|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file o determinato che il file di formato non è valido.|
 |E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|Origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questo metodo carica i dati di debug direttamente da un file con estensione pdb.
 
 Per convalidare il file con estensione PDB in base ai criteri specifici, usare il [Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) (metodo).
@@ -64,7 +65,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

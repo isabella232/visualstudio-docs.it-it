@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335103"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630717"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
 
@@ -23,11 +23,11 @@ Ecco un elenco di domande che potrebbero rivelarsi backup durante il debug di ap
 
 #### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Che cos'è l'impatto sulle prestazioni di esecuzione di uno snapshot?
 
-Quando il Debugger di Snapshot consente di acquisire uno snapshot dell'app, è creato il fork processo dell'app e la sospensione della copia creata tramite fork. Quando si esegue il debug di uno snapshot, si esegue il debug con la copia creata tramite fork del processo. Questo processo richiede solo 10-20 millisecondi ma non vengono copiate nell'heap completo dell'app. Al contrario, viene copiata solo la tabella della pagina e imposta le pagine da copiare durante la scrittura. Se alcuni degli oggetti dell'app sulla modifica dell'heap, relative pagine vengono quindi copiate. Ogni snapshot ha pertanto a basso costo in memoria (nell'ordine di centinaia di KB per la maggior parte delle App). 
+Quando il Debugger di Snapshot consente di acquisire uno snapshot dell'app, è creato il fork processo dell'app e la sospensione della copia creata tramite fork. Quando si esegue il debug di uno snapshot, si esegue il debug con la copia creata tramite fork del processo. Questo processo richiede solo 10-20 millisecondi ma non vengono copiate nell'heap completo dell'app. Al contrario, viene copiata solo la tabella della pagina e imposta le pagine da copiare durante la scrittura. Se alcuni degli oggetti dell'app sulla modifica dell'heap, relative pagine vengono quindi copiate. Ogni snapshot ha pertanto a basso costo in memoria (nell'ordine di centinaia di KB per la maggior parte delle App).
 
 #### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Cosa accade se si dispone di un servizio App di Azure con scalabilità orizzontale (più istanze dell'app)?
 
-Quando si dispone di più istanze dell'app, i punti di ancoraggio vengano applicate a ogni singola istanza. Solo il primo punto di ancoraggio da colpire con le condizioni specificate crea uno snapshot. Se si dispone di più punti di ancoraggio, gli snapshot successivi provengono dalla stessa istanza che ha creato il primo snapshot. Punti di registrazione inviati nella finestra di output visualizzerà solo i messaggi da un'istanza, mentre i punti di registrazione inviati a log applicazioni di inviare messaggi da ogni istanza. 
+Quando si dispone di più istanze dell'app, i punti di ancoraggio vengano applicate a ogni singola istanza. Solo il primo punto di ancoraggio da colpire con le condizioni specificate crea uno snapshot. Se si dispone di più punti di ancoraggio, gli snapshot successivi provengono dalla stessa istanza che ha creato il primo snapshot. Punti di registrazione inviati nella finestra di output visualizzerà solo i messaggi da un'istanza, mentre i punti di registrazione inviati a log applicazioni di inviare messaggi da ogni istanza.
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>In che modo il Debugger di Snapshot caricare i simboli?
 
@@ -35,11 +35,11 @@ Il Debugger di Snapshot è necessario disporre di simboli corrispondenti per l'a
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Il Debugger di Snapshot funziona con le build di rilascio della mia applicazione?
 
-Sì, il Debugger di Snapshot è progettato per funzionare con le build di rilascio. Quando un punto di ancoraggio viene inserito in una funzione, la funzione viene ricompilata nuovamente a una versione di debug, rendendo possibile effettuare il debug. Quando si arresta il Debugger di Snapshot, le funzioni vengono restituite per le build di rilascio. 
+Sì, il Debugger di Snapshot è progettato per funzionare con le build di rilascio. Quando un punto di ancoraggio viene inserito in una funzione, la funzione viene ricompilata nuovamente a una versione di debug, rendendo possibile effettuare il debug. Quando si arresta il Debugger di Snapshot, le funzioni vengono restituite per le build di rilascio.
 
 #### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Se punti di registrazione possono causare effetti collaterali nell'applicazione di produzione?
 
-No, eventuali messaggi di log che aggiungere all'app vengono valutate praticamente. Essi non determina effetti collaterali nell'applicazione. Tuttavia, alcune proprietà nativa non sia accessibile con punti di registrazione. 
+No, eventuali messaggi di log che aggiungere all'app vengono valutate praticamente. Essi non determina effetti collaterali nell'applicazione. Tuttavia, alcune proprietà nativa non sia accessibile con punti di registrazione.
 
 #### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Se il server è in condizioni di carico, il Debugger di Snapshot funziona correttamente?
 
@@ -55,8 +55,8 @@ Sì, il debug di snapshot può funzionare per i server in condizioni di carico. 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Debug in Visual Studio](../debugger/index.md)  
-[Il debug in tempo reale delle App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md)  
-[Eseguire il debug in tempo reale ASP.NET Azure virtuale Machines\Virtual macchine set di scalabilità tramite il Debugger di Snapshot](../debugger/debug-live-azure-virtual-machines.md)  
-[Eseguire il debug in tempo reale ASP.NET Azure Kubernetes con il Debugger di Snapshot](../debugger/debug-live-azure-kubernetes.md)  
-[Risoluzione dei problemi e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Debug in Visual Studio](../debugger/index.md)
+- [Il debug in tempo reale delle App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md)
+- [Eseguire il debug in tempo reale ASP.NET Azure virtuale Machines\Virtual macchine set di scalabilità tramite il Debugger di Snapshot](../debugger/debug-live-azure-virtual-machines.md)
+- [Eseguire il debug in tempo reale ASP.NET Azure Kubernetes con il Debugger di Snapshot](../debugger/debug-live-azure-kubernetes.md)
+- [Risoluzione dei problemi e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a4482069d16ef6f0f64472b838057949890a6d3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 190372e44f068296f7fea14819a3520803b89406
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335155"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843136"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procedura: Fornire l'automazione per windows
 
@@ -38,7 +38,7 @@ L'ambiente fornisce l'automazione in una finestra degli strumenti, restituendo u
 
 Uno standard <xref:EnvDTE.Document> oggetto è anche disponibile dall'ambiente, sebbene un editor può avere una propria implementazione del <xref:EnvDTE.Document> oggetto implementando `IExtensibleObject` interfaccia e risponde alle `GetAutomationObject`.
 
-Inoltre, un editor può fornire un oggetto di automazione specifico del VSPackage, recuperato tramite il <xref:EnvDTE.Document.Object%2A> metodo, implementando la `IVsExtensibleObject` o `IExtensibleObject` interfacce. Il [esempi di VSSDK](http://aka.ms/vs2015sdksamples) contribuisce a un oggetto di automazione specifiche del documento RTF.
+Inoltre, un editor può fornire un oggetto di automazione specifico del VSPackage, recuperato tramite il <xref:EnvDTE.Document.Object%2A> metodo, implementando la `IVsExtensibleObject` o `IExtensibleObject` interfacce. Il [esempi di VSSDK](https://aka.ms/vs2015sdksamples) contribuisce a un oggetto di automazione specifiche del documento RTF.
 
 ## <a name="see-also"></a>Vedere anche
 

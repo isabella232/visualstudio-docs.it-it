@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c532f38fcdcd5a41cfa188c0dc175a8293548442
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 146ef53f8a5d893e394834c7d5702c8992fdd20a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927093"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611009"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-Specifica se la matrice è riga principale.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_isMatrixRowMajor(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Un puntatore a un `BOOL` che specifica se la matrice è riga principale.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Specifica se la matrice è riga principale.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_isMatrixRowMajor(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Un puntatore a un `BOOL` che specifica se la matrice è riga principale.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

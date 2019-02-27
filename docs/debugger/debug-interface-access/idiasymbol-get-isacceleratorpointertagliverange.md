@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3e97a191180978eed3bb6be0a59ae38bcd64b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984288"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640246"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Recupera un flag che indica se il simbolo corrisponde alla *simbolo definizione intervallo* per il componente di tag di una variabile puntatore nel codice compilato per un tasto di scelta rapida AMP C++. Simbolo definizione intervallo è il percorso di una variabile per un intervallo di indirizzi.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_isAcceleratorPointerTagLiveRange(   
-   BOOL* pFlag);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pFlag`  
- [out] Un puntatore a un `BOOL` che indica se il simbolo corrisponde al simbolo di intervallo di definizione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera un flag che indica se il simbolo corrisponde alla *simbolo definizione intervallo* per il componente di tag di una variabile puntatore nel codice compilato per un tasto di scelta rapida AMP C++. Simbolo definizione intervallo è il percorso di una variabile per un intervallo di indirizzi.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_isAcceleratorPointerTagLiveRange(
+   BOOL* pFlag);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pFlag`
+
+[out] Un puntatore a un `BOOL` che indica se il simbolo corrisponde al simbolo di intervallo di definizione.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335990"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646473"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Il debug delle App ASP.NET in tempo reale su macchine virtuali di Azure e set di scalabilità di macchine virtuali di Azure usando il Debugger di Snapshot
 
@@ -53,7 +53,7 @@ In questa esercitazione si eseguono le attività seguenti:
 1. Collegare il Debugger di Snapshot. È possibile usare uno dei diversi metodi:
 
     * Scegliere **Debug > Collega Snapshot Debugger...** . Selezionare l'Azure VM/VMSS è distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
-  
+
       ![Avviare il debugger di snapshot dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Fare clic con il pulsante destro sul progetto, quindi scegliere **Publish**, quindi nella pagina di pubblicazione fare clic su **collegare Snapshot Debugger**. Selezionare l'Azure VM/VMSS è distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
@@ -63,7 +63,7 @@ In questa esercitazione si eseguono le attività seguenti:
     ![Avviare il debugger di snapshot dal menu a discesa scegliere F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Con Cloud Explorer (**Visualizza > Cloud Explorer**), fare doppio clic su VM/VMSS Azure viene distribuito l'app web e selezionare un account di archiviazione di Azure e quindi fare clic su **collegare Snapshot Debugger**.
-  
+
       ![Avviare il debugger di snapshot di Cloud Explorer](../debugger/media/snapshot-launch.png)
 
     > [!IMPORTANT]

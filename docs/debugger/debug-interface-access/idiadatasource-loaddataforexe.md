@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b078e918f399019b2532e7fe3adea220fc09e012
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987548"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609644"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Viene aperto e prepara i dati di debug associati al file.exe/.dll.
@@ -33,19 +33,22 @@ HRESULT loadDataForExe (
 ```
 
 #### <a name="parameters"></a>Parametri
-eseguibile  
+eseguibile
+
 [in] Percorso di file con estensione dll o .exe.
 
-searchPath  
+searchPath
+
 [in] Percorso alternativo per cercare i dati di debug.
 
-pCallback  
+pCallback
+
 [in] Un' `IUnknown` interfaccia per un oggetto che supporta un'interfaccia di callback di debug, ad esempio il [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), il [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), e/o il [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfacce.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra alcuni dei possibili codici di errore per questo metodo.
 
-|Value|Descrizione|
+|Valore|Description|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il file di formato non è valido.|
 |E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|
@@ -54,7 +57,7 @@ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codi
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|Origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 L'intestazione di debug del file.exe/.dll denomina la posizione di debug associati dati.
 
 Questo metodo legge l'intestazione di debug e quindi Cerca e prepara i dati di debug. Lo stato di avanzamento della ricerca potrebbe, facoltativamente, essere segnalato e controllato tramite callback. Ad esempio, il [Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) viene richiamato quando il `IDiaDataSource::loadDataForExe` metodo consente di individuare ed elabora una directory di debug.
@@ -84,12 +87,12 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)  
-[IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)  
-[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)  
-[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)  
-[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+- [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

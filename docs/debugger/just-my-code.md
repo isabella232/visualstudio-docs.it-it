@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335519"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722486"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Eseguire il debug con Just My Code solo il codice utente
 
@@ -80,7 +80,7 @@ Se si verifica un'eccezione non gestita nel codice non utente, il debugger si in
 Se eccezioni first-chance sono abilitate per l'eccezione, la riga di codice utente chiamante viene evidenziata in verde nel codice sorgente. Il **Stack di chiamate** finestra vengono visualizzati i frame annotato con etichettato **[codice esterno]**.
 
 ## <a name="BKMK_C___Just_My_Code"></a> Just My Code in C++
-  
+
 A partire da Visual Studio 2017 versione 15.8, Just My Code per il codice è inoltre supportata l'esecuzione di istruzioni. Questa funzionalità richiede anche l'uso del [/JMC (solo il debug del codice)](/cpp/build/reference/jmc) opzione del compilatore. L'opzione è abilitata per impostazione predefinita nei progetti C++. Per la **Stack di chiamate** finestra e stack di chiamate supporto in Just My Code, il commutatore /JMC non è necessario.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Per essere classificato come codice utente, il file PDB per il file binario che contiene il codice utente deve essere caricato dal debugger (usare il **moduli** finestra per selezionare questa opzione).
@@ -90,9 +90,9 @@ Per il comportamento dello stack di chiamate, ad esempio nel **Stack di chiamate
 - Funzioni con informazioni di origine rimosse nei propri file di simboli.
 - Funzioni i cui file di simboli indicano che non esiste alcun file di origine corrispondente allo stack frame.
 - Funzioni specificate nei  *\*con estensione natjmc* i file nei *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
-  
+
 Per il comportamento di avanzamento nell'esecuzione di codice, Just My Code in C++ considera solo le funzioni *codice non utente*:
-  
+
 - Funzioni per il quale il file PDB corrispondente non è stato caricato nel debugger.
 - Funzioni specificate nei  *\*con estensione natjmc* i file nei *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
 
@@ -108,117 +108,117 @@ Se non è presente codice utente più, il debug continua finché non termina, ra
 
 Se il debugger si interrompe nel codice non utente (ad esempio, si utilizza **Debug** > **Interrompi tutto** e sospendere le risorse in codice non utente), l'esecuzione continua del codice non utente.
 
-Se il debugger raggiunge un'eccezione, si ferma sull'eccezione, se è in codice utente o non utente. **Non gestite dall'utente** le opzioni presenti nella **impostazioni eccezioni** vengono ignorati nella finestra di dialogo.   
-  
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizzare dello stack di chiamata C++ e codice di comportamento di esecuzione di istruzioni  
+Se il debugger raggiunge un'eccezione, si ferma sull'eccezione, se è in codice utente o non utente. **Non gestite dall'utente** le opzioni presenti nella **impostazioni eccezioni** vengono ignorati nella finestra di dialogo.
+
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizzare dello stack di chiamata C++ e codice di comportamento di esecuzione di istruzioni
 
 Per i progetti C++, è possibile specificare i moduli, i file di origine e le funzioni di **Stack di chiamate** trattata come codice non utente nella finestra specificandoli nei  *\*con estensione natjmc* file. Questa personalizzazione può essere applicata anche al codice l'esecuzione di istruzioni se si usa il compilatore più recente (vedere [C++ Just My Code](#BKMK_CPP_User_and_non_user_code)).
-  
-- Per specificare il codice non utente per tutti gli utenti del computer che esegue Visual Studio, aggiungere il file con estensione *natjmc* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.  
-- Per specificare il codice non utente per un singolo utente, aggiungere il file con estensione *natjmc* alla cartella *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
 
-Oggetto *con estensione natjmc* file è un file XML con questa sintassi:  
+- Per specificare il codice non utente per tutti gli utenti del computer che esegue Visual Studio, aggiungere il file con estensione *natjmc* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
+- Per specificare il codice non utente per un singolo utente, aggiungere il file con estensione *natjmc* alla cartella *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
 
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">  
-  
-  <!-- Modules -->  
-  <Module Name="ModuleSpec" />  
-  <Module Name="ModuleSpec" Company="CompanyName" />  
-  
-  <!-- Files -->  
-  <File Name="FileSpec"/>  
-  
-  <!-- Functions -->  
-  <Function Name="FunctionSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />  
-  
-</NonUserCode>  
-  
-```  
+Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
 
- **Attributi dell'elemento modulo**  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile usare i caratteri jolly di Windows `?` (zero o un carattere) e `*` (zero o più caratteri). Ad esempio,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella *\3rdParty\UtilLibs* di qualsiasi unità come codice esterno.|  
-|`Company`|Facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|  
-  
- **Attributi dell'elemento file**  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`Name`|Obbligatorio. Percorso completo del file o dei file di codice sorgente da considerare come codice esterno. È possibile usare i caratteri jolly di Windows `?` e `*` quando si specifica il percorso.|  
-  
- **Attributi dell'elemento funzione**  
-  
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`Name`|Obbligatorio. Nome completo della funzione da considerare come codice esterno.|  
-|`Module`|Facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|  
-|`ExceptionImplementation`|Se impostato su `true`, lo stack di chiamate mostra la funzione che ha generato l'eccezione anziché questa funzione.|  
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">
+
+  <!-- Modules -->
+  <Module Name="ModuleSpec" />
+  <Module Name="ModuleSpec" Company="CompanyName" />
+
+  <!-- Files -->
+  <File Name="FileSpec"/>
+
+  <!-- Functions -->
+  <Function Name="FunctionSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />
+
+</NonUserCode>
+
+```
+
+ **Attributi dell'elemento modulo**
+
+|Attributo|Description|
+|---------------|-----------------|
+|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile usare i caratteri jolly di Windows `?` (zero o un carattere) e `*` (zero o più caratteri). Ad esempio,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella *\3rdParty\UtilLibs* di qualsiasi unità come codice esterno.|
+|`Company`|Facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|
+
+ **Attributi dell'elemento file**
+
+|Attributo|Description|
+|---------------|-----------------|
+|`Name`|Obbligatorio. Percorso completo del file o dei file di codice sorgente da considerare come codice esterno. È possibile usare i caratteri jolly di Windows `?` e `*` quando si specifica il percorso.|
+
+ **Attributi dell'elemento funzione**
+
+|Attributo|Description|
+|---------------|-----------------|
+|`Name`|Obbligatorio. Nome completo della funzione da considerare come codice esterno.|
+|`Module`|Facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|
+|`ExceptionImplementation`|Se impostato su `true`, lo stack di chiamate mostra la funzione che ha generato l'eccezione anziché questa funzione.|
 
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizzare il comportamento di esecuzione di istruzioni C++ indipendente dalle impostazioni di Just My Code
 
 Nei progetti C++, è possibile specificare le funzioni per eseguire failover elencandoli come codice non utente nei  *\*con estensione natstepfilter* file. Funzioni elencate nelle  *\*con estensione natstepfilter* file non sono interdipendenti impostazioni Just My Code.
-  
-- Per specificare il codice non utente per tutti gli utenti di Visual Studio locali, aggiungere il *con estensione natstepfilter* del file per il *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.  
-- Per specificare il codice non utente per un singolo utente, aggiungere il file con estensione *natstepfilter* alla cartella *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
-  
-Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Action>StepAction</Action>  
-    </Function>  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Module>ModuleSpec</Module>  
-        <Action>StepAction</Action>  
-    </Function>  
-</StepFilter>  
-  
-```  
-  
-|Elemento|Descrizione|  
-|-------------|-----------------|  
-|`Function`|Obbligatorio. Specifica una o più funzioni come funzioni non utente.|  
-|`Name`|Obbligatorio. Espressione regolare formattata in base a ECMA-262 che specifica il nome completo della funzione da mettere in corrispondenza. Ad esempio:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al debugger che tutti i metodi in `MyNS::MyClass` devono essere considerati codice non utente. La corrispondenza prevede la distinzione tra maiuscole e minuscole.|  
-|`Module`|Facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|  
-|`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> `NoStepInto`  -indica al debugger di ignorare la funzione.<br /> `StepInto`  -indica al debugger di eseguire l'istruzione della funzione, eseguendo l'override di qualsiasi altro `NoStepInto` per la funzione corrispondente.| 
-  
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Just My Code in JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> Just My Code in JavaScript controlla l'esecuzione e la visualizzazione dello stack di chiamate suddividendo il codice in una delle classificazioni seguenti:  
+- Per specificare il codice non utente per tutti gli utenti di Visual Studio locali, aggiungere il *con estensione natstepfilter* del file per il *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
+- Per specificare il codice non utente per un singolo utente, aggiungere il file con estensione *natstepfilter* alla cartella *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.
 
-|||  
-|-|-|  
-|**MyCode**|Codice utente che si possiede e si controlla.|  
-|**LibraryCode**|Codice non utente da librerie utilizzate regolarmente e l'app si basa su a funzionare correttamente (ad esempio WinJS o jQuery).|  
-|**UnrelatedCode**|Codice non utente nelle app che non si è proprietari e l'app non si basa sul corretto funzionamento. Ad esempio, un SDK che consente di visualizzare annunci pubblicitari potrebbe essere UnrelatedCode. Nei progetti UWP, qualsiasi codice che viene caricato in un'app da un URI HTTP o HTTPS viene anche considerato UnrelatedCode.|  
+Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:
 
-Il debugger JavaScript classifica codice come utente o non utente in questo ordine:  
-  
-1. Le classificazioni predefinite.  
-   -   Script eseguito passando una stringa alla fornita dall'host `eval` funzione viene **MyCode**.  
-   -   Script eseguito passando una stringa per il `Function` costruttore viene **LibraryCode**.  
-   -   Lo script in un riferimento a framework, ad esempio WinJS o Azure SDK, è **LibraryCode**.  
-   -   Script eseguito passando una stringa per il `setTimeout`, `setImmediate`, o `setInterval` funzioni viene **UnrelatedCode**.  
-   
-2. Le classificazioni specificate per tutti i progetti JavaScript di Visual Studio il *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* file.  
-   
-3. Le classificazioni nel *mycode.json* file del progetto corrente.  
-  
-Ogni passaggio di classificazione esegue l'override dei passaggi precedenti. 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Action>StepAction</Action>
+    </Function>
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Module>ModuleSpec</Module>
+        <Action>StepAction</Action>
+    </Function>
+</StepFilter>
 
-Tutto il resto del codice viene classificato come **MyCode**.  
+```
 
-È possibile modificare le classificazioni predefinite e classificare file specifici e gli URL come codice utente o non utente, aggiungendo un *. JSON* file denominato *mycode.json* nella cartella radice di un progetto di JavaScript. Visualizzare [personalizzare Just My Code in JavaScript](#BKMK_JS_Customize_Just_My_Code). 
+|Elemento|Description|
+|-------------|-----------------|
+|`Function`|Obbligatorio. Specifica una o più funzioni come funzioni non utente.|
+|`Name`|Obbligatorio. Espressione regolare formattata in base a ECMA-262 che specifica il nome completo della funzione da mettere in corrispondenza. Ad esempio:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al debugger che tutti i metodi in `MyNS::MyClass` devono essere considerati codice non utente. La corrispondenza prevede la distinzione tra maiuscole e minuscole.|
+|`Module`|Facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|
+|`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> `NoStepInto`  -indica al debugger di ignorare la funzione.<br /> `StepInto`  -indica al debugger di eseguire l'istruzione della funzione, eseguendo l'override di qualsiasi altro `NoStepInto` per la funzione corrispondente.|
+
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Just My Code in JavaScript
+
+<a name="BKMK_JS_User_and_non_user_code"></a> Just My Code in JavaScript controlla l'esecuzione e la visualizzazione dello stack di chiamate suddividendo il codice in una delle classificazioni seguenti:
+
+|||
+|-|-|
+|**MyCode**|Codice utente che si possiede e si controlla.|
+|**LibraryCode**|Codice non utente da librerie utilizzate regolarmente e l'app si basa su a funzionare correttamente (ad esempio WinJS o jQuery).|
+|**UnrelatedCode**|Codice non utente nelle app che non si è proprietari e l'app non si basa sul corretto funzionamento. Ad esempio, un SDK che consente di visualizzare annunci pubblicitari potrebbe essere UnrelatedCode. Nei progetti UWP, qualsiasi codice che viene caricato in un'app da un URI HTTP o HTTPS viene anche considerato UnrelatedCode.|
+
+Il debugger JavaScript classifica codice come utente o non utente in questo ordine:
+
+1. Le classificazioni predefinite.
+   -   Script eseguito passando una stringa alla fornita dall'host `eval` funzione viene **MyCode**.
+   -   Script eseguito passando una stringa per il `Function` costruttore viene **LibraryCode**.
+   -   Lo script in un riferimento a framework, ad esempio WinJS o Azure SDK, è **LibraryCode**.
+   -   Script eseguito passando una stringa per il `setTimeout`, `setImmediate`, o `setInterval` funzioni viene **UnrelatedCode**.
+
+2. Le classificazioni specificate per tutti i progetti JavaScript di Visual Studio il *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* file.
+
+3. Le classificazioni nel *mycode.json* file del progetto corrente.
+
+Ogni passaggio di classificazione esegue l'override dei passaggi precedenti.
+
+Tutto il resto del codice viene classificato come **MyCode**.
+
+È possibile modificare le classificazioni predefinite e classificare file specifici e gli URL come codice utente o non utente, aggiungendo un *. JSON* file denominato *mycode.json* nella cartella radice di un progetto di JavaScript. Visualizzare [personalizzare Just My Code in JavaScript](#BKMK_JS_Customize_Just_My_Code).
 
 <a name="BKMK_JS_Stepping_behavior"></a> Durante il debug di JavaScript:
 

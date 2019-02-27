@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e0bdf7c5c22794fa271e43dd1b4c4605480cc3f
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227852"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603118"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Vengono descritte le proprietà di un'istanza del simbolo.
@@ -34,7 +34,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaSymbol`.
 > [!NOTE]
 > I simboli restituirà dati significativi solo per alcuni di questi metodi, a seconda del tipo di simbolo. Se un metodo restituisce `S_OK`, tale metodo ha restituito dati significativi.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Recupera tutti gli elementi figlio del simbolo.|
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Recupera gli elementi figlio del simbolo. Questo metodo è la versione estesa del [Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|
@@ -343,10 +343,10 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)  
-[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
-[Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
-[Compilando](../../debugger/debug-interface-access/compiland.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+- [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Compilando](../../debugger/debug-interface-access/compiland.md)

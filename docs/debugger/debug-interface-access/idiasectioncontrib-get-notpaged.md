@@ -12,30 +12,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d02451343aad3cd08f618249aaf50a01f8b6f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fb132b4cf36eb686424e0f756ffe0387a432eb0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069213"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610996"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-Recupera un flag che indica se la sezione non può essere trasferita memoria insufficiente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_notPaged (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out, retval] Restituisce `TRUE` se la sezione non può essere trasferita; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera un flag che indica se la sezione non può essere trasferita memoria insufficiente.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_notPaged ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+- [out, retval] Restituisce `TRUE` se la sezione non può essere trasferita; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

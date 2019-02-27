@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1658944b8db6df25111fb8c490b6eeda9ff016ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8175fc05b05bfd3375fe0dcc0702741266801137
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917029"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619173"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
-Recupera un flag che indica se la sezione contiene codice eseguibile.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_code (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se la sezione contiene codice eseguibile; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera un flag che indica se la sezione contiene codice eseguibile.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_code ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se la sezione contiene codice eseguibile; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
