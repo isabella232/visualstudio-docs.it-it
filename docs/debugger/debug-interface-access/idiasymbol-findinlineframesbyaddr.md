@@ -10,41 +10,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804f498a406919192cf355b748949158722581f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1a5af94d6a5d6100f8ffb6047f57ee59f780da5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600363"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Recupera un'enumerazione che consente a un client scorrere tutti i frame inline in un determinato indirizzo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT findInlineFramesByAddr (   
-   DWORD             isect,  
-   DWORD             offset,  
-   IDiaEnumSymbols** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `isect`  
- [in] Specifica il componente di sezione dell'indirizzo.  
-  
- `offset`  
- [in] Specifica il componente offset dell'indirizzo.  
-  
- `ppResult`  
- [out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame che vengono recuperati.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Recupera un'enumerazione che consente a un client scorrere tutti i frame inline in un determinato indirizzo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT findInlineFramesByAddr ( 
+   DWORD             isect,
+   DWORD             offset,
+   IDiaEnumSymbols** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `isect`
+
+[in] Specifica il componente di sezione dell'indirizzo.
+
+ `offset`
+
+[in] Specifica il componente offset dell'indirizzo.
+
+ `ppResult`
+
+[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame che vengono recuperati.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924860"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701693"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Scheda Processo, finestra di dialogo Proprietà finestra
-Usare la **processo** pressione di tab per identificare il processo della finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
-  
- Le impostazioni seguenti sono disponibili sul **processo** scheda:  
-  
-|Voce|Description|  
-|-----------|-----------------|  
-|**ID processo**|L'ID del processo che possiede il thread che ha creato questa finestra. Selezionare questo valore per visualizzare le proprietà di questo processo.|  
+Usare la **processo** pressione di tab per identificare il processo della finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
+
+ Le impostazioni seguenti sono disponibili sul **processo** scheda:
+
+|Voce|Description|
+|-----------|-----------------|
+|**ID processo**|L'ID del processo che possiede il thread che ha creato questa finestra. Selezionare questo valore per visualizzare le proprietà di questo processo.|
 |**ID thread**|L'ID del thread che ha creato questa finestra. Selezionare questo valore per visualizzare le proprietà di questo thread.|

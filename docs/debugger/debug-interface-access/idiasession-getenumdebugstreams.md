@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a715d9dc5ac30f9c60056348ec574b5b0696989
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c962a9bbdebe10b97c47b67b6ce0597027f2c25b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931480"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614233"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
-Recupera una sequenza enumerata di flussi di dati di debug.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT getEnumDebugStreams (   
-   IDiaEnumDebugStreams** ppEnumDebugStreams  
-)  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppEnumDebugStreams`  
- [out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un elenco dei flussi di debug.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Recupera una sequenza enumerata di flussi di dati di debug.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT getEnumDebugStreams ( 
+   IDiaEnumDebugStreams** ppEnumDebugStreams
+)
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppEnumDebugStreams`
+
+[out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un elenco dei flussi di debug.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

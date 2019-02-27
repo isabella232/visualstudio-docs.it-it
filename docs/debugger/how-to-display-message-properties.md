@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Visualizzare le proprietà del messaggio | Microsoft Docs'
+title: 'Procedura: visualizzare le proprietà del messaggio | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fba742bd2239ac28957e7d392e99168c8854028f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985565"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720159"
 ---
-# <a name="how-to-display-message-properties"></a>Procedura: Visualizzare le proprietà del messaggio
-Per altre informazioni su un messaggio elencato nella [visualizzazione messaggi](../debugger/messages-view.md), utilizzare il [finestra di dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md).  
-  
-### <a name="to-open-a-message-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà del messaggio  
-  
-1. Selezionare un messaggio nell'albero nella visualizzazione di messaggi.  
-  
-2. Dal **View** menu, scegliere **proprietà**.  
-  
+# <a name="how-to-display-message-properties"></a>Procedura: visualizzare le proprietà del messaggio
+Per altre informazioni su un messaggio elencato nella [visualizzazione messaggi](../debugger/messages-view.md), utilizzare il [finestra di dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md).
+
+### <a name="to-open-a-message-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà del messaggio
+
+1. Selezionare un messaggio nell'albero nella visualizzazione di messaggi.
+
+2. Dal **View** menu, scegliere **proprietà**.
+
    Finestre di dialogo delle proprietà non sono modale, in modo che è possibile fare clic su un altro elemento in una finestra di visualizzazione e la finestra di dialogo verrà visualizzate informazioni sull'elemento selezionato.

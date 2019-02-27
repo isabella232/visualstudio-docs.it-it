@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335597"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613375"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Il debug in tempo reale delle app di Azure ASP.NET usando il Debugger di Snapshot
 
@@ -63,7 +63,7 @@ In questa esercitazione si eseguono le attività seguenti:
 2. Collegare il Debugger di Snapshot. È possibile usare uno dei diversi metodi:
 
     * Scegliere **Debug > Collega Snapshot Debugger...** . Selezionare il progetto viene distribuito il servizio App di Azure e un account di archiviazione di Azure e quindi fare clic su **Attach**.
-  
+
       ![Avviare il debugger di snapshot dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Fare clic con il pulsante destro sul progetto, quindi scegliere **Publish**, quindi nella pagina di pubblicazione fare clic su **collegare Snapshot Debugger**. Selezionare il progetto viene distribuito il servizio App di Azure e un account di archiviazione di Azure e quindi fare clic su **Attach**.
@@ -73,7 +73,7 @@ In questa esercitazione si eseguono le attività seguenti:
     ![Avviare il debugger di snapshot dal menu a discesa scegliere F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Con Cloud Explorer (**Visualizza > Cloud Explorer**), fare doppio clic il progetto viene distribuito il servizio App di Azure e selezionare un account di archiviazione di Azure e quindi fare clic su **collegare Snapshot Debugger**.
-  
+
       ![Avviare il debugger di snapshot di Cloud Explorer](../debugger/media/snapshot-launch.png)
 
     La prima volta che si seleziona **collegare Snapshot Debugger**, viene chiesto di installare l'estensione del sito Snapshot Debugger in servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d710699912a05839ac32c582f40571b04b2de7c2
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597751"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Espone i dettagli di uno stack frame.
@@ -31,7 +31,7 @@ IDiaFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaFrameData`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Recupera la parte della sezione dell'indirizzo del codice per il frame.|
 |[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Recupera la parte offset di indirizzo del codice per il frame.|
@@ -52,7 +52,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaFrameData`.
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Recupera frame dell'interfaccia di dati per la funzione di inclusione.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Esegue la rimozione dello stack e restituisce lo stato corrente dei registri in un'interfaccia di frame dello stack del percorso.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  I dettagli disponibili per un frame sono per i punti di esecuzione all'interno dell'intervallo di indirizzi indicato dalla lunghezza indirizzo e blocco.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -120,7 +120,7 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
-[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)  
-[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)
+- [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

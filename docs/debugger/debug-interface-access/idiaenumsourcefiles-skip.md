@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 946fd14b3be6141763ee3185eac1da153df1c82a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b80a2a0f270ccd76d052d4c7863170448648e138
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977603"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597465"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-Ignora un determinato numero di file di origine in una sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di file di origine nella sequenza di enumerazione da ignorare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti più file di origine da ignorare.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+Ignora un determinato numero di file di origine in una sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di file di origine nella sequenza di enumerazione da ignorare.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti più file di origine da ignorare.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

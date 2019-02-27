@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddf32b495ab5f2eda2e190a0461e01452f70ed6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 833ef811f6859d7b991ba5931803fc0a3d21745c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009791"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632771"
 ---
 # <a name="idiaframedatagetrelativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
-Recupera l'indirizzo virtuale relativo (RVA) del codice per il frame.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce l'indirizzo virtuale relativo del codice per il frame.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Recupera l'indirizzo virtuale relativo (RVA) del codice per il frame.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce l'indirizzo virtuale relativo del codice per il frame.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

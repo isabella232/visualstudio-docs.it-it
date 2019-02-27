@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6a899de205fc22940aa0d48f897ea4ecd6f49ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752338"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842874"
 ---
 # <a name="visual-studio-samples"></a>Esempi di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54752338"
 ## <a name="finding-samples"></a>Ricerca di esempi
  Di seguito sono riportati alcuni altri percorsi in cui cercare esempi.
 
-|Area|Descrizione|
+|Area|Description|
 |----------|-----------------|
 |[Esempi di Windows Dev Center](http://go.microsoft.com/fwlink/?LinkID=255278)|Illustra come sviluppare app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
 |[Esempi di .NET Framework](http://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Illustra i vari aspetti di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in C# e Visual Basic.|
@@ -39,7 +39,7 @@ ms.locfileid: "54752338"
 |[Esempi di C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Illustra come usare diverse funzionalità in C++.|
 |[Esempi di DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Illustra come usare DirectX.|
 |[Esempi di sviluppo Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Illustra come usare gli strumenti di sviluppo di Office in Visual Studio. Per gli esempi più aggiornati, vedere [Esempi per sviluppatori MSDN: informazioni sul codice](http://go.microsoft.com/fwlink/?LinkID=248199).|
-|[Esempi di VSSDK](http://aka.ms/vs2015sdksamples)|Illustra come estendere Visual Studio.|
+|[Esempi di VSSDK](https://aka.ms/vs2015sdksamples)|Illustra come estendere Visual Studio.|
 
 ## <a name="see-also"></a>Vedere anche
  [Guida introduttiva a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

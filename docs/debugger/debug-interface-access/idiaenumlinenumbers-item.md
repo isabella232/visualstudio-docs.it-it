@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4733756a8de69348623049d3ae4997847eb32bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b25825d4a0c7e3253e1461a163c8211c3e3bdcda
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607330"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
-Recupera un numero di riga tramite un indice.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Item (   
-   DWORD            index,  
-   IDiaLineNumber** lineNumber  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- indice  
- [in] Indice del [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) oggetto da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito dalle [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) (metodo).  
-  
- lineNumber  
- [out] Restituisce un [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) oggetto che rappresenta il numero di riga desiderata.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera un numero di riga tramite un indice.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Item ( 
+   DWORD            index,
+   IDiaLineNumber** lineNumber
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ indice
+
+[in] Indice del [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) oggetto da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito dalle [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) (metodo).
+
+ lineNumber
+
+[out] Restituisce un [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) oggetto che rappresenta il numero di riga desiderata.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

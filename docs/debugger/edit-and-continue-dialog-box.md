@@ -17,19 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e5f8471a42632f9425df75a6f6b6870fd45348
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958849"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722707"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Finestra di dialogo Modifica e continuazione
-(Solo codice nativo) Questa finestra di dialogo viene visualizzata se durante il debug sono state apportate modifiche al codice riconosciute come applicabili dalla funzionalità **Modifica e continuazione**. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
-  
- **Non visualizzare più questo messaggio**  
- Se si seleziona questa casella di controllo, la modalità **Modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Richiama dai comandi di debug** e **Chiedi conferma**.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
+(Solo codice nativo) Questa finestra di dialogo viene visualizzata se durante il debug sono state apportate modifiche al codice riconosciute come applicabili dalla funzionalità **Modifica e continuazione**. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
+
+ **Non visualizzare più questo messaggio** se si seleziona questa casella di controllo **modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione in futuro. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Richiama dai comandi di debug** e **Chiedi conferma**.
+
+## <a name="see-also"></a>Vedere anche
+- [Sicurezza del debugger](../debugger/debugger-security.md)
+- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)

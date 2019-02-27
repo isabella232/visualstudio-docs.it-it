@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602039"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841729"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: Profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più onerosa (esecuzione più lenta) del progetto, noto anche come il *percorso ad accesso frequente*.
@@ -47,7 +47,7 @@ ms.locfileid: "56602039"
 ## <a name="create-a-sharepoint-project"></a>Creare un progetto SharePoint
  Creare innanzitutto un progetto SharePoint.
 
-#### <a name="to-create-a-sharepoint-project"></a>Per creare un progetto SharePoint
+### <a name="to-create-a-sharepoint-project"></a>Per creare un progetto SharePoint
 
 1. Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602039"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Aggiungere una funzionalità e un ricevitore di eventi
  Successivamente, aggiungere una funzionalità al progetto insieme a un ricevitore di eventi per la funzionalità. In questo ricevitore di eventi sarà incluso il codice da profilare.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Per aggiungere una funzionalità e un ricevitore di eventi di funzionalità
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>Per aggiungere una funzionalità e un ricevitore di eventi di funzionalità
 
 1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **funzionalità** nodo, scegliere **Aggiungi funzionalità**e lasciare il valore predefinito, il nome **Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602039"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Configurare e distribuire l'applicazione SharePoint
  Una volta pronto il progetto SharePoint, è possibile configurarlo e distribuirlo nel server SharePoint.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Per configurare e distribuire l'applicazione SharePoint
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Per configurare e distribuire l'applicazione SharePoint
 
 1.  Nel **Analyze** menu, scegliere **Avvia Creazione guidata sessione di prestazioni**.
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602039"
 ## <a name="run-the-sharepoint-application"></a>Eseguire l'applicazione SharePoint
  Attivare la funzionalità in SharePoint, attivando il codice dell'evento `FeatureActivation` da eseguire.
 
-#### <a name="to-run-the-sharepoint-application"></a>Per eseguire l'applicazione SharePoint
+### <a name="to-run-the-sharepoint-application"></a>Per eseguire l'applicazione SharePoint
 
 1.  In SharePoint, aprire il **Azioni sito** menu, quindi scegliere **Impostazioni sito**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602039"
 ## <a name="view-and-interpret-the-profile-results"></a>Visualizzare e interpretare i risultati del profilo
  Dopo aver eseguito e profilato l'applicazione SharePoint, visualizzare i risultati del test.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>Per visualizzare e interpretare i risultati del profilo
+### <a name="to-view-and-interpret-the-profile-results"></a>Per visualizzare e interpretare i risultati del profilo
 
 1.  Nel **funzioni che svolgono più lavoro individuale** sezione del Report di profilatura di esempio, si noti che `TimeCounter` nella parte superiore dell'elenco.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602039"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Correggere il codice e riprofilare l'applicazione
  Una volta identificata la funzione relativa all'area sensibile nell'applicazione SharePoint, correggerla.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Per correggere il codice e riprofilare l'applicazione
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Per correggere il codice e riprofilare l'applicazione
 
 1.  Nel codice del ricevitore di eventi di funzionalità impostare come commento la chiamata al metodo `TimeCounter` in `FeatureActivated` per impedire che venga chiamato.
 

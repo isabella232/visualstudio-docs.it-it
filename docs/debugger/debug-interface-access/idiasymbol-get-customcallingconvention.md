@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f46be0798023679bc7186dfa05ef3cfbac011507
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b5fc9f400c2b96bb3750d83caa30dfce4f4fae4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926715"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606914"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-Recupera un flag che specifica se la funzione ha una convenzione di denominazione personalizzata.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_customCallingConvention(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pFlag`  
- [out] Restituisce `TRUE` se la funzione ha una convenzione di chiamata personalizzata; in caso contrario, restituisce `FALSE`, la funzione ha una convenzione di chiamata nota.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera un flag che specifica se la funzione ha una convenzione di denominazione personalizzata.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_customCallingConvention(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pFlag`
+
+[out] Restituisce `TRUE` se la funzione ha una convenzione di chiamata personalizzata; in caso contrario, restituisce `FALSE`, la funzione ha una convenzione di chiamata nota.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="requirements"></a>Requisiti  
-  
-|Requisito|Descrizione|  
-|-----------------|-----------------|  
-|Intestazione:|Dia2.h|  
-|Versione:|DIA SDK v8.0|  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="requirements"></a>Requisiti
+
+|Requisito|Description|
+|-----------------|-----------------|
+|Intestazione:|Dia2.h|
+|Version:|DIA SDK v8.0|
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,61 +14,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7d15bca56c2ceaf4626be03edda856252e3ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033514"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605198"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (distribuzione ClickOnce)
-Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-  
-      <Signature>   
-   XML signature information   
-</Signature>  
-```  
-  
-## <a name="remarks"></a>Note  
- Firma un manifesto di distribuzione utilizzando una firma protetta è facoltativa ma consigliato. Per altre informazioni sulla firma di file XML, vedere il World Wide Web Consortium raccomandazione "XML-Signature Syntax and Processing," descritta in [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
-  
- Se si desidera firmare il manifesto, è necessario specificare l'hash per tutti i file. Impossibile firmare un manifesto con i file che non è stato eseguito l'hashing, perché gli utenti non è possibile verificare il contenuto del file senza hash.  
-  
-## <a name="example"></a>Esempio  
- L'esempio di codice seguente illustra un `Signature` elemento in un manifesto di distribuzione usato in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.  
-  
-```xml  
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
-  <SignedInfo>  
-    <CanonicalizationMethod Algorithm=  
-           "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />  
-    <SignatureMethod Algorithm=  
-           "http://www.w3.org/2000/09/xmldsig#rsa-sha1" />  
-    <Reference URI="">  
-      <Transforms>  
-        <Transform Algorithm=  
-           "http://www.w3.org/2000/09/xmldsig#enveloped-signature" />  
-      </Transforms>  
-      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-      <DigestValue>d2z5AE...</DigestValue>  
-    </Reference>  
-  </SignedInfo>  
-  <SignatureValue>  
-4PHj6SaopoLp...  
-  </SignatureValue>  
-  <KeyInfo>  
-    <X509Data>  
-      <X509Certificate>  
-MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...  
-      </X509Certificate>  
-    </X509Data>  
-  </KeyInfo>  
-</Signature>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+
+      <Signature> 
+   XML signature information 
+</Signature>
+```
+
+## <a name="remarks"></a>Osservazioni
+ Firma un manifesto di distribuzione utilizzando una firma protetta è facoltativa ma consigliato. Per altre informazioni sulla firma di file XML, vedere il World Wide Web Consortium raccomandazione "XML-Signature Syntax and Processing," descritta in [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).
+
+ Se si desidera firmare il manifesto, è necessario specificare l'hash per tutti i file. Impossibile firmare un manifesto con i file che non è stato eseguito l'hashing, perché gli utenti non è possibile verificare il contenuto del file senza hash.
+
+## <a name="example"></a>Esempio
+ L'esempio di codice seguente illustra un `Signature` elemento in un manifesto di distribuzione usato in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.
+
+```xml
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm=
+           "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm=
+           "http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="">
+      <Transforms>
+        <Transform Algorithm=
+           "http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+      </Transforms>
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>d2z5AE...</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>
+4PHj6SaopoLp...
+  </SignatureValue>
+  <KeyInfo>
+    <X509Data>
+      <X509Certificate>
+MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
+      </X509Certificate>
+    </X509Data>
+  </KeyInfo>
+</Signature>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

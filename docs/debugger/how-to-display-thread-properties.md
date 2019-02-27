@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Visualizzare le proprietà Thread | Microsoft Docs'
+title: 'Procedura: visualizzare le proprietà Thread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9216c3f949ed5a31a0147f54fd8e5dfe8d8215db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6fa26c20f465ced2643b5c6aa2c8625024b38ed1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018423"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688836"
 ---
-# <a name="how-to-display-thread-properties"></a>Procedura: Visualizzare le proprietà del thread
-Per altre informazioni su un thread elencato nella [visualizzazione thread](../debugger/threads-view.md), utilizzare il [finestra di dialogo proprietà Thread](../debugger/thread-properties-dialog-box.md).  
-  
-### <a name="to-open-a-thread-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà Thread  
-  
-1. Selezionare un thread nell'albero zobrazené [visualizzazione thread](../debugger/threads-view.md).  
-  
-2. Dal **View** menu, scegliere **proprietà**.  
-  
+# <a name="how-to-display-thread-properties"></a>Procedura: visualizzare le proprietà thread
+Per altre informazioni su un thread elencato nella [visualizzazione thread](../debugger/threads-view.md), utilizzare il [finestra di dialogo proprietà Thread](../debugger/thread-properties-dialog-box.md).
+
+### <a name="to-open-a-thread-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà Thread
+
+1. Selezionare un thread nell'albero zobrazené [visualizzazione thread](../debugger/threads-view.md).
+
+2. Dal **View** menu, scegliere **proprietà**.
+
    Finestre di dialogo delle proprietà non sono modale, in modo che è possibile fare clic su un altro elemento in una finestra di visualizzazione e la finestra di dialogo verrà visualizzate informazioni sull'elemento selezionato.

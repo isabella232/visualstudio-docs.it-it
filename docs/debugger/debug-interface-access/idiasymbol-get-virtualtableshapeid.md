@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f65444b0bd7562c2302eae87ae318b2e6e4989
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc43d94cfe94e63dfb477429c2c81471e5c40af4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916921"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607642"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
-Recupera l'identificatore del simbolo tabella virtuale forma del simbolo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_virtualTableShapeId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce l'ID di simbolo tabella virtuale forma del simbolo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera l'identificatore del simbolo tabella virtuale forma del simbolo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_virtualTableShapeId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce l'ID di simbolo tabella virtuale forma del simbolo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="remarks"></a>Osservazioni  
- L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="remarks"></a>Osservazioni
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

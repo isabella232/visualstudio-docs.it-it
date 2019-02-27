@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbc1dd2eae7f5ef4048a1c6e92a34f7ad5aa3d9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916615"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701706"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Informazioni su Debugger Windows in Visual Studio
 
@@ -39,7 +39,7 @@ ms.locfileid: "54916615"
 |Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
 |Debug interattivo di Python|MAIUSC+ALT+I|[Finestra REPL interattiva per Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Console JavaScript|CTRL+ALT+V, C|[Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Console JavaScript|CTRL+ALT+V, C|[Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|

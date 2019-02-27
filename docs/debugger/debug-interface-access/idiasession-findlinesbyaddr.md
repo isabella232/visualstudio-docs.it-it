@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57ef75b27f90df37132ecb246b6f8d433581a696
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 730793d2b9f2e02d7e5665777f8df4d245b0ddf6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642183"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Recupera le righe che contengono un indirizzo specificato in un modulo specificato.
@@ -34,16 +34,20 @@ HRESULT findLinesByAddr (
 ```
 
 #### <a name="parameters"></a>Parametri
-`seg`  
+`seg`
+
 [in] Specifica il componente di sezione dell'indirizzo specifico.
 
-`offset`  
+`offset`
+
 [in] Specifica il componente di offset di indirizzo specifico.
 
-`length`  
+`length`
+
 [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.
 
-`ppResult`  
+`ppResult`
+
 [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.
 
 ## <a name="return-value"></a>Valore restituito
@@ -72,6 +76,6 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

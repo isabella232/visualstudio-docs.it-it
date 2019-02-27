@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7905a9226d120c14a4b9e6472e14714167c1b09
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949389"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607343"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Recupera un determinato numero di elementi di dati di intervallo nella sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Next (   
-   ULONG           celt,   
-   IDiaFrameData** rgelt,  
-   ULONG*          pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di elementi di dati di frame nell'enumeratore deve essere recuperato.  
-  
- rgelt  
- [out] Matrice di [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetti da compilare con gli elementi di dati frame richiesto.  
-  
- pceltFetched  
- [out] Restituisce il numero di elementi di dati di frame nell'enumeratore recuperata.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Recupera un determinato numero di elementi di dati di intervallo nella sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Next ( 
+   ULONG           celt,
+   IDiaFrameData** rgelt,
+   ULONG*          pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di elementi di dati di frame nell'enumeratore deve essere recuperato.
+
+ rgelt
+
+[out] Matrice di [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetti da compilare con gli elementi di dati frame richiesto.
+
+ pceltFetched
+
+[out] Restituisce il numero di elementi di dati di frame nell'enumeratore recuperata.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

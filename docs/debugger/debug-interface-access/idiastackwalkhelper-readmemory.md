@@ -12,47 +12,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229aace046dfebd75786dfa5c14998d9498b98b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967102"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694465"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Legge un blocco di dati dall'immagine del file eseguibile in memoria.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT readMemory(   
-   enum MemoryTypeEnum type,  
-   ULONGLONG           va,  
-   DWORD               cbData,  
-   DWORD*              pcbData,  
-   BYTE*               pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `type`  
- [in] Un valore compreso il [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) enumerazione che specifica il tipo di memoria da leggere.  
-  
- va  
- [in] Indirizzo virtuale dell'immagine da cui iniziare la lettura.  
-  
- `cbData`  
- [in] Le dimensioni del buffer di dati in byte.  
-  
- `pcbData`  
- [out] Restituisce il numero di byte effettivamente letti. Se `pbData` è `NULL`, il valore è il numero totale di byte di dati disponibili.  
-  
- `pbData`  
- [in, out] Un buffer che viene compilato con la memoria di lettura.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [Enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)
+Legge un blocco di dati dall'immagine del file eseguibile in memoria.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT readMemory( 
+   enum MemoryTypeEnum type,
+   ULONGLONG           va,
+   DWORD               cbData,
+   DWORD*              pcbData,
+   BYTE*               pbData
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `type`
+
+[in] Un valore compreso il [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) enumerazione che specifica il tipo di memoria da leggere.
+
+ va
+
+[in] Indirizzo virtuale dell'immagine da cui iniziare la lettura.
+
+ `cbData`
+
+[in] Le dimensioni del buffer di dati in byte.
+
+ `pcbData`
+
+[out] Restituisce il numero di byte effettivamente letti. Se `pbData` è `NULL`, il valore è il numero totale di byte di dati disponibili.
+
+ `pbData`
+
+[in, out] Un buffer che viene compilato con la memoria di lettura.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [Enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)

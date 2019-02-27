@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616885"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841779"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Gerarchie in Visual Studio
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) consente di visualizzare un progetto come un *gerarchia*. Nell'IDE di una gerarchia è una struttura ad albero dei nodi, in cui ogni nodo dispone di un set di proprietà associate. Oggetto *gerarchia del progetto* è un contenitore che contiene gli elementi del progetto, relazioni, degli elementi e delle proprietà dell'elemento associato e i comandi.
@@ -35,4 +35,4 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di svil
 ## <a name="see-also"></a>Vedere anche
 - [Tipi di progetto](../../extensibility/internals/project-types.md)
 - [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Esempi di VSSDK](http://aka.ms/vs2015sdksamples)
+- [Esempi di VSSDK](https://aka.ms/vs2015sdksamples)

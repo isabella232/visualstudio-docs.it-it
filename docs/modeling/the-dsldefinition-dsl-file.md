@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 876868d8c2faf483f1033bab1ff8ac14f6e9ab10
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956909"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841844"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -70,7 +70,7 @@ Questa sezione definisce un diagramma e viene usata per specificare proprietà c
 
 In questa sezione definisce una finestra di progettazione (editor), che riunisce una **casella degli strumenti**, impostazioni di convalida, un diagramma e uno schema di serializzazione. La sezione Designer definisce anche la classe radice del modello, che di solito corrisponde alla classe radice del diagramma.
 
-### <a name="explorer"></a>Esplora risorse
+### <a name="explorer"></a>Explorer
 
 Questa sezione identifica le **DSL Explorer** comportamento (definito nella sezione XmlSerializationBehavior).
 
@@ -78,7 +78,7 @@ Questa sezione identifica le **DSL Explorer** comportamento (definito nella sezi
 
 Nel file DslDefinition.dsl è possibile usare moniker per impostare riferimenti incrociati a elementi specifici. Ogni definizione di relazione contiene ad esempio una sottosezione Source e una Target. Ogni sottosezione contiene il moniker della classe di oggetto che può essere collegata con tale relazione:
 
-```
+```xml
 <DomainRelationship ...        Name="LibraryHasMembers" Namespace="ExampleNamespace" >    <Source>      <DomainRole ...>
        <RolePlayer>
          <DomainClassMoniker Name="Library" />
@@ -89,7 +89,7 @@ Nel file DslDefinition.dsl è possibile usare moniker per impostare riferimenti 
 
 In genere, lo spazio dei nomi dell'elemento a cui viene fatto riferimento (in questo esempio la classe di dominio `Library`) corrisponde a quello dell'elemento contenente il riferimento (in questo caso la relazione di dominio LibraryHasMembers). In questo caso il moniker deve fornire solo il nome della classe. Altrimenti è necessario usare la forma completa /SpazioDeiNomi/Nome:
 
-```
+```xml
 <DomainClassMoniker Name="/ExampleNameSpace/Library" />
 ```
 
@@ -107,7 +107,7 @@ Nell'esempio Diagramma dei componenti è elencato un set di tipi primitivi stand
 
 Ogni definizione di tipo esterno include semplicemente un nome e uno spazio dei nomi, ad esempio String e System:
 
-```
+```xml
 <ExternalType Name="String" Namespace="System" />
 ```
 
@@ -119,7 +119,7 @@ I tipi esterni non sono limitati ai tipi delle librerie standard.
 
 Una specifica di enumerazione tipica è simile a questo esempio:
 
-```
+```xml
 <DomainEnumeration IsFlags="true" Name="PageSort"          Namespace="Fabrikam.Wizard">
   <Literals>
     <EnumerationLiteral Name="Start" Value="1"/>
@@ -136,7 +136,7 @@ Gran parte degli elementi di una definizione di linguaggio specifico di dominio 
 
 Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio Diagramma dei componenti, `NamedElement` è una classe astratta con una proprietà `Name`, il cui tipo è String:
 
-```
+```xml
 <DomainClass Id="ee3161ca-2818-42c8-b522-88f50fc72de8"  Name="NamedElement" Namespace="Fabrikam.CmptDsl5"      DisplayName="Named Element"  InheritanceModifier="Abstract">
   <Properties>
     <DomainProperty Id="ef553cf0-33b5-4e34-a30b-cfcfd86f2261"   Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
@@ -150,7 +150,7 @@ Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio D
 
 `NamedElement` è la classe base di altre classi come `Component`, che ha proprietà specifiche, oltre alla proprietà `Name` ereditata da `NamedElement`. Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
 
-```
+```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
   <BaseClass>
     <DomainClassMoniker Name="NamedElement" />
@@ -194,7 +194,7 @@ Ogni proprietà di dominio ha un nome e un tipo. Il nome deve essere univoco all
 
 Il tipo deve fare riferimento a uno dei tipi elencati nella sezione `Types`. In genere, il moniker deve includere lo spazio dei nomi.
 
-```
+```xml
 <DomainProperty Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
   <Type>
     <ExternalTypeMoniker Name="/System/String" />
@@ -246,13 +246,13 @@ Ogni relazione contiene ruoli di origine e di destinazione con i seguenti attrib
 
 -   L'attributo `Name` del ruolo indica il nome usato all'interno della classe Relationship per fare riferimento a tale parte di un collegamento. Per convenzione, un nome di ruolo è sempre singolare, perché ogni collegamento ha una sola istanza per ogni parte. Il codice seguente funziona:
 
-    ```
+    ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
 -   Per impostazione predefinita, l'attributo `IsPropertyGenerator` è impostato su True. Se viene impostato su False, non viene creata alcuna proprietà per la classe Role Player (in tal caso, ad esempio `op.Targets` non funziona). È comunque possibile usare codice personalizzato per attraversare la relazione o ottenere l'accesso ai collegamenti stessi se il codice personalizzato usa la relazione in modo esplicito:
 
-    ```
+    ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
     foreach (Connection link in Connection.GetLinksToTargets(op)) ...
     ```
@@ -287,7 +287,7 @@ Ogni segmento inizia con un nome di relazione. In un hop da un oggetto a un coll
 
 L'esempio Diagramma dei componenti contiene un percorso nell'elemento ParentElementPath di ShapeMap per InPort. Il percorso inizia come segue:
 
-```
+``` 
     ComponentHasPorts.Component
 ```
 
@@ -295,13 +295,13 @@ In questo esempio, InPort è una sottoclasse di ComponentPort e ha una relazione
 
 Quando si scrive codice c# per questo modello, è possibile passare attraverso un collegamento in un unico passaggio usando la proprietà che la relazione genera su ciascuna delle classi che collega:
 
-```
+``` 
      InPort port; ...  Component c = port.Component;
 ```
 
 È però necessario eseguire entrambi gli hop in modo esplicito nella sintassi del percorso. Questo requisito consente di accedere al collegamento intermedio più facilmente. Il codice seguente completa l'hop dal collegamento alla proprietà Component:
 
-```
+``` 
     ComponentHasPorts.Component / ! Component
 ```
 
@@ -313,7 +313,7 @@ Quando l'utente del linguaggio trascina un elemento dal **casella degli strument
 
 Una possibile classe host, come Component, accetta un nuovo elemento solo se la classe host include una direttiva di unione degli elementi per la classe del nuovo elemento. Il nodo DomainClass con Name="Component" contiene ad esempio:
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
     <ElementMergeDirective>
       <Index>
@@ -337,7 +337,7 @@ La direttiva di unione degli elementi determina i collegamenti creati in modo ch
 
 È ad esempio possibile aggiungere questa direttiva di unione degli elementi alla classe Component:
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
   <ElementMergeDirective>
     <Index>
@@ -372,7 +372,7 @@ Ogni nodo `XmlClassData` include i nodi e gli attributi figlio seguenti:
 
 -   **ElementName** stringa, che determina il tag XML delle istanze serializzate della classe. Per convenzione, ElementName corrisponde in genere al nome della classe con l'iniziale minuscola. Ad esempio, un file modello inizia così:
 
-    ```
+    ```xml
     <componentModel ...
     ```
 
@@ -380,7 +380,7 @@ Ogni nodo `XmlClassData` include i nodi e gli attributi figlio seguenti:
 
 -   **MonikerAttributeName**, che identifica il nome dell'attributo XML all'interno di un moniker. In questo frammento di file serializzato dall'utente, l'autore del linguaggio specifico di dominio definite **MonikerElementName** come "inPortMoniker" e **MonikerAttributeName** come "path":
 
-    ```
+    ```xml
     <inPortMoniker path="//Component2/InPort1" />
     ```
 
@@ -400,7 +400,7 @@ Il **IsMonikerKey** e **IsMonikerQualifier** attributi forniscono una proprietà
 
 Nel file modello serializzato, il moniker completo di un elemento è un percorso dalla radice del modello fino all'albero delle relazioni di incorporamento, con un riferimento alla chiave moniker in ogni punto. Gli elementi InPort, ad esempio, sono incorporati in elementi Component, che a loro volta sono incorporati nella radice del modello. Un moniker valido è il seguente:
 
-```
+```xml
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
@@ -418,7 +418,7 @@ Il **RoleElementName** attributo fornisce il nome del tag XML che racchiude il n
 
 Il file DslDefinition.dsl contiene ad esempio:
 
-```
+```xml
 <XmlClassData ElementName="component" ...>
   <DomainClassMoniker Name="Component" />
   <ElementData>
@@ -429,10 +429,10 @@ Il file DslDefinition.dsl contiene ad esempio:
 
 Quindi il file serializzato contiene:
 
-```
-<component name="Component1"> <!-- parent ->
-   <ports> <!-- role ->
-     <outPort name="OutPort1"> <!-- child element ->
+```xml
+<component name="Component1"> <!-- parent -->
+   <ports> <!-- role -->
+     <outPort name="OutPort1"> <!-- child element -->
        ...
      </outPort>
    </ports> ...
@@ -440,7 +440,7 @@ Quindi il file serializzato contiene:
 
 Se il **UseFullForm** attributo è impostato su true, viene introdotto un ulteriore livello di annidamento. Questo livello rappresenta la relazione stessa. L'attributo deve essere impostato su True se la relazione include proprietà.
 
-```
+```xml
 <XmlClassData ElementName="outPort">
    <DomainClassMoniker Name="OutPort" />
    <ElementData>
@@ -453,11 +453,11 @@ Se il **UseFullForm** attributo è impostato su true, viene introdotto un ulteri
 
 Il file serializzato contiene:
 
-```
-<outPort name="OutPort1">  <!-- Parent ->
-   <targets>  <!-- role ->
-     <connection sourceRoleName="X">  <!-- relationship link ->
-         <inPortMoniker name="//Component2/InPort1" /> <!-- child ->
+```xml
+<outPort name="OutPort1">  <!-- Parent -->
+   <targets>  <!-- role -->
+     <connection sourceRoleName="X">  <!-- relationship link -->
+         <inPortMoniker name="//Component2/InPort1" /> <!-- child -->
      </connection>
     </targets>
   </outPort>
@@ -467,9 +467,9 @@ La relazione di connessione include dati della classe XML propri che forniscono 
 
 Se il **OmitElement** attributo è impostato su true, la relazione viene omesso, il nome di ruolo che abbrevia il file serializzato e non risulta ambiguo se le due classi avere non più di una relazione. Ad esempio:
 
-```
+```xml
 <component name="Component3">
-  <!-- only one relationship could get here: ->
+  <!-- only one relationship could get here: -->
   <outPort name="OutPort1">
      <targets> ...
 ```
@@ -482,7 +482,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
 
 -   **Le classi** è il **RoleElementName** della relazione tra il linguaggio specifico di dominio e DomainClass.
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...>
   <Classes>
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
@@ -490,7 +490,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
 
 -   Il **XmlSerializationBehavior** è incorporato il `Dsl` attributo, ma la **OmitElement** attributo è stato impostato nella relazione di incorporamento. Quindi, nessun attributo `RoleElementName` interviene. Al contrario, un **ClassData** attributo è la `RoleElementName` attributo di relazione di incorporamento tra un **XmlSerializationBehavior** attributo e un **XmlClassData** attributo.
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...> ...
   <XmlSerializationBehavior Name="ComponentsSerializationBehavior" >
     <ClassData>
@@ -500,7 +500,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
 
 -   ConnectorHasDecorators è la relazione di incorporamento tra `Connector` e `Decorator`. `UseFullForm` è stato impostato in modo che il nome della relazione venga visualizzato con il relativo elenco di proprietà per ogni collegamento all'oggetto Connector. `OmitElement` è però anche stato impostato in modo che nessun elemento `RoleElementName` includa i vari collegamenti incorporati in `Connector`:
 
-```
+```xml
 <Connector Name="AssociationLink" ...>
   <ConnectorHasDecorators Position="TargetTop" ...>
     <TextDecorator Name="TargetRoleName"   />
@@ -527,7 +527,7 @@ Le mappe delle forme determinano come le istanze di una determinata classe di do
 
 Come illustrato nel seguente esempio, gli elementi `ShapeMap` hanno almeno il moniker di una classe di dominio, il moniker di una forma e un elemento `ParentElementPath`:
 
-```
+```xml
 <ShapeMap>
   <DomainClassMoniker Name="InPort" />
   <ParentElementPath>
@@ -549,7 +549,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 La radice del modello non ha una mappa delle forme. Alla radice viene invece fatto riferimento direttamente dal diagramma, che include un elemento `Class`:
 
-```
+```xml
 <Diagram Name="ComponentDiagram" >
     <Class>
       <DomainClassMoniker Name="ComponentModel" />
@@ -568,7 +568,7 @@ Le mappe delle forme raggruppamento sono sottotipi di mappe delle forme.
 
 La mappa dei connettori minima fa riferimento a un connettore e a una relazione:
 
-```
+```xml
 <ConnectorMap>
   <ConnectorMoniker Name="CommentLink" />
   <DomainRelationshipMoniker Name="CommentsReferenceComponents" />

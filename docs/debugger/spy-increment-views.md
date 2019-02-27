@@ -11,35 +11,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 861129a6251f0142a22cd916cddbfd95d03b22db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938552"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692398"
 ---
 # <a name="spy-views"></a>Visualizzazioni di Spy++
-Spy + + consente di visualizzare visualizzazioni dell'albero di windows, i messaggi, processi e thread disponibili nel computer.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [visualizzazione finestre](../debugger/windows-view.md)  
- Consente di visualizzare una visualizzazione struttura ad albero dei controlli e finestre disponibili.  
-  
- [Visualizzazione messaggi](../debugger/messages-view.md)  
- Consente di visualizzare il flusso del messaggio associato a una finestra, processo o thread.  
-  
- [Visualizzazione processi](../debugger/processes-view.md)  
- Consente di visualizzare una visualizzazione struttura ad albero dei processi attivi.  
-  
- [Visualizzazione Thread](../debugger/threads-view.md)  
- Consente di visualizzare una visualizzazione albero di thread attivi.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Strumenti di ricerca per le visualizzazioni di Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Finestre di dialogo consente di individuare nodi specifici in windows le visualizzazioni di Spy + +.  
-  
- [Uso di Spy++](../debugger/using-spy-increment.md)  
- Introduce lo strumento Spy + + e spiega come può essere usato.  
-  
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+Spy + + consente di visualizzare visualizzazioni dell'albero di windows, i messaggi, processi e thread disponibili nel computer.
+
+## <a name="in-this-section"></a>In questa sezione
+ [Windows Vista](../debugger/windows-view.md) contiene una visualizzazione albero dei controlli e finestre disponibili.
+
+ [La visualizzazione messaggi](../debugger/messages-view.md) consente di visualizzare il flusso del messaggio associato a una finestra, processo o thread.
+
+ [Visualizzazione processi](../debugger/processes-view.md) contiene una visualizzazione albero dei processi attivi.
+
+ [Visualizzazione thread](../debugger/threads-view.md) contiene una visualizzazione albero di thread attivi.
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Strumenti di ricerca per le visualizzazioni di Spy + +](../debugger/search-tools-for-spy-increment-views.md) finestre di dialogo consente di individuare nodi specifici in windows le visualizzazioni di Spy + +.
+
+ [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

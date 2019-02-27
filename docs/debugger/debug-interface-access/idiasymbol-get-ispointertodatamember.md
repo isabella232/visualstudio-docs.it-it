@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a4f117ca9e19c932a56ab3a68caf457dfa0fe6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d74c2ba8317098212c7263ab049becc52f874e9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009258"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613596"
 ---
 # <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
-Specifica se questo simbolo è un puntatore a un membro dati.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_isPointerToDataMember(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Un puntatore a un `BOOL` che specifica se questo simbolo è un puntatore a un membro dati.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Specifica se questo simbolo è un puntatore a un membro dati.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_isPointerToDataMember(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Un puntatore a un `BOOL` che specifica se questo simbolo è un puntatore a un membro dati.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932298"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608084"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 
@@ -27,17 +27,22 @@ Il Microsoft eseguire il Debug dell'interfaccia Access Software Development Kit 
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[Introduzione](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Introduzione](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Fornisce una panoramica di DIA SDK le funzionalità e specifica in cui è installato il DIA SDK, nonché i file di libreria e intestazione obbligatoria.
 
-[Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Vengono fornite istruzioni su come usare l'API di DIA per eseguire query sul file con estensione pdb.
 
-[Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Viene descritto come vengono usati i simboli e relativi tag nell'API di DIA.
 
-[Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Contiene le interfacce, metodi, le enumerazioni e strutture dell'API di DIA.
 
-[Esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 Viene illustrato come usare l'API di DIA per cercare ed esplorare le informazioni di debug.

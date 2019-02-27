@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227183"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626063"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 Recupera le righe che contengono un indirizzo virtuale relativo specificato (RVA) in un modulo specificato.
@@ -33,13 +33,16 @@ HRESULT findLinesByRVA ( 
 ```
 
 #### <a name="parameters"></a>Parametri
-`rva`  
+`rva`
+
 [in] Specifica l'indirizzo come un RVA.
 
-`length`  
+`length`
+
 [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.
 
-`ppResult`  
+`ppResult`
+
 [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.
 
 ## <a name="return-value"></a>Valore restituito
@@ -65,5 +68,5 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

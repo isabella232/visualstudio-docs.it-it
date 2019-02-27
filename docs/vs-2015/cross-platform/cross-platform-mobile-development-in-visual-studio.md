@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b5495e4548ed5a9303d70bd949249ac9d98ce77
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789294"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843831"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo di app per dispositivi mobili multipiattaforma in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "54789294"
 |[Visual Studio e Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN Library)|
 |[Application Lifecycle Management (ALM) con app Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN Library)|
 |[Informazioni sulle app per Windows universale in Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Informazioni sulle analogie tra Swift e C#](http://aka.ms/scposter) (download.microsoft.com)|
+|[Informazioni sulle analogie tra Swift e C#](https://aka.ms/scposter) (download.microsoft.com)|
 |[Informazioni sull'emulatore di Visual Studio per Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ###  <a name="AndroidHTML"></a> Creare un'unica base di codice per Android, iOS e Windows

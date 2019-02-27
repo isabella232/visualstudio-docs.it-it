@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7f81abd82857b3d9ed2161a6923a79b614bf5a
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742401"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682843"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Hook di allocazione e allocazioni di memoria di runtime C
 Una restrizione molto importante per le funzioni di hook di allocazione è che esse devono esplicitamente ignorare `_CRT_BLOCK` blocchi. Questi blocchi sono le allocazioni di memoria effettuate internamente dalle funzioni della libreria di runtime C se vengono effettuate chiamate alle funzioni della libreria di runtime C che allocano memoria interna. È possibile ignorare `_CRT_BLOCK` funzione hook di blocchi, includendo il codice seguente all'inizio il raggiungimento dell'allocazione:
@@ -40,4 +40,4 @@ Se la funzione di hook di allocazione non ignora `_CRT_BLOCK` si blocca, quindi 
 Se si esaminano i file di origine della libreria di runtime, si noterà che la funzione hook di allocazione predefinita, **CrtDefaultAllocHook** (che restituisce semplicemente **TRUE**) si trova in un file separato, DBGHOOK.C. Se si desidera che l'hook di allocazione venga chiamato anche per le allocazioni effettuate dal codice di avvio di runtime, che viene eseguito prima della funzione **main** dell'applicazione, è possibile sostituire questa funzione predefinita con una personalizzata, anziché utilizzare [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
 ## <a name="see-also"></a>Vedere anche
-[Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)
+- [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)

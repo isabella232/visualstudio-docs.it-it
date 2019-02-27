@@ -15,29 +15,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0963d1675c3456601aba70bb5291b7cc19d454fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930758"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683545"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>Errore: Timeout durante il debug dei servizi Web
-Durante l'accesso a un servizio Web XML dal codice chiamante, è possibile che si verifichi un timeout con conseguente interruzione del debug. Potrebbe essere visualizzato un messaggio di errore simile al seguente.  
-  
+# <a name="error-timeout-while-debugging-web-services"></a>Errore: timeout durante il debug dei servizi Web
+Durante l'accesso a un servizio Web XML dal codice chiamante, è possibile che si verifichi un timeout con conseguente interruzione del debug. Potrebbe essere visualizzato un messaggio di errore simile al seguente.
+
 ```cmd
-An unhandled exception of type 'System.Net.WebException' occurred in   
-system.Web.services.dll  
-Additional information: The operation has timed-out.  
-```  
-  
-## <a name="solution"></a>Soluzione  
- Per evitare che si verifichi questo problema, impostare il valore di timeout per la chiamata al servizio Web XML su un valore infinito, come illustrato nell'esempio riportato di seguito:  
-  
+An unhandled exception of type 'System.Net.WebException' occurred in
+system.Web.services.dll
+Additional information: The operation has timed-out.
+```
+
+## <a name="solution"></a>Soluzione
+ Per evitare che si verifichi questo problema, impostare il valore di timeout per la chiamata al servizio Web XML su un valore infinito, come illustrato nell'esempio riportato di seguito:
+
 ```csharp
-Service1 obj = new Service1();  
-obj.TimeOut = -1; // infinite time out.  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+Service1 obj = new Service1();
+obj.TimeOut = -1; // infinite time out.
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

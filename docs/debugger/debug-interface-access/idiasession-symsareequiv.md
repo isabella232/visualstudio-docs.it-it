@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a3081cc32eb4286ed7b981dfa2a070dbf4a0ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036693"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613050"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
-Verifica se due simboli sono equivalenti.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT symsAreEquiv (   
-   IDiaSymbol* symbolA,  
-   IDiaSymbol* symbolB  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `symbolA`  
- [in] Il primo [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto utilizzato nel confronto.  
-  
- `symbolB`  
- [in] Il secondo `IDiaSymbol` oggetto utilizzato nel confronto.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se i simboli sono equivalenti, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE`, i simboli non sono equivalenti. In caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Verifica se due simboli sono equivalenti.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT symsAreEquiv ( 
+   IDiaSymbol* symbolA,
+   IDiaSymbol* symbolB
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `symbolA`
+
+[in] Il primo [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto utilizzato nel confronto.
+
+ `symbolB`
+
+[in] Il secondo `IDiaSymbol` oggetto utilizzato nel confronto.
+
+## <a name="return-value"></a>Valore restituito
+ Se i simboli sono equivalenti, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE`, i simboli non sono equivalenti. In caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

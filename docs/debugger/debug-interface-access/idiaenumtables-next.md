@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1cad345d099c9f5f8ecd870bcd80de7c886a55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977577"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598754"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
-Recupera un determinato numero di tabelle nella sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Next (   
-   ULONG       celt,  
-   IDiaTable** rgelt,  
-   ULONG*      pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `celt`  
- [in] Il numero di tabelle nell'enumeratore deve essere recuperato.  
-  
- `rgelt`  
- [out] Matrice che deve essere compilato con il [IDiaTable](../../debugger/debug-interface-access/idiatable.md) gli oggetti che rappresentano le tabelle desiderate.  
-  
- `pceltFetched`  
- [out] Restituisce il numero di tabelle nell'enumeratore recuperata.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non siano presenti altre tabelle. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Recupera un determinato numero di tabelle nella sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Next ( 
+   ULONG       celt,
+   IDiaTable** rgelt,
+   ULONG*      pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `celt`
+
+[in] Il numero di tabelle nell'enumeratore deve essere recuperato.
+
+ `rgelt`
+
+[out] Matrice che deve essere compilato con il [IDiaTable](../../debugger/debug-interface-access/idiatable.md) gli oggetti che rappresentano le tabelle desiderate.
+
+ `pceltFetched`
+
+[out] Restituisce il numero di tabelle nell'enumeratore recuperata.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non siano presenti altre tabelle. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c255dd670d5cf8e8c9e68a0f953697c8f3ce36a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 128b3fa65c3fc48206af2fb66a3a98658a0306ff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034340"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633408"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
-Recupera il valore di ID del simbolo OEM (OEM).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_oemSymbolId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce che un OEM assegnato internamente simbolo ID.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera il valore di ID del simbolo OEM (OEM).
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_oemSymbolId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce che un OEM assegnato internamente simbolo ID.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="remarks"></a>Osservazioni  
- L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
-  
- Questa proprietà si applica solo ai simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo di `SymTagCustomType`.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="remarks"></a>Osservazioni
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.
+
+ Questa proprietà si applica solo ai simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo di `SymTagCustomType`.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

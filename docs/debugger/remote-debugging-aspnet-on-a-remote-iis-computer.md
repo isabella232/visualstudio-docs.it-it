@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947478"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702174"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer IIS remoto in Visual Studio 2017
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
@@ -40,7 +40,7 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 * Se si desidera visualizzare la Guida per assicurarsi che l'app è configurata, distribuzione e in esecuzione correttamente in IIS in modo che è possibile eseguire il debug, seguire tutti i passaggi descritti in questo argomento.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017
 
 1. Creare una nuova applicazione ASP.NET Core. (**File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**).
 
@@ -147,7 +147,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se n
 In questa esercitazione viene usato Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Configurare il debugger remoto in Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P). 
+    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P).
 
 3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.
@@ -181,14 +181,14 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 7. Scegliere **Connetti**.
 
 8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
-    
+
     Verrà visualizzata la pagina Web ASP.NET.
 
 9. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **sulle** pagina.
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-## <a name="bkmk_openports"></a>Risoluzione dei problemi Aprire le porte necessarie in Windows Server
+## <a name="bkmk_openports"></a> Risoluzione dei problemi Aprire le porte necessarie in Windows Server
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, devi verificare che le porte siano aperte.
 

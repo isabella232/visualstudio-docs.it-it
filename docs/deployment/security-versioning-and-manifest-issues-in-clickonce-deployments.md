@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e95c89633c047a0a56a1efed5aba46e6632da7cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983431"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631263"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 
@@ -96,6 +96,6 @@ Se si desidera spostare o copiare un'applicazione, è necessario aggiornare anch
 
 ## <a name="see-also"></a>Vedere anche
 
-[Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
-[Applicazioni Securw ClickOnce](../deployment/securing-clickonce-applications.md)  
-[Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Risolvere i problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+[delle applicazioni Securw ClickOnce](../deployment/securing-clickonce-applications.md)
+[scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
