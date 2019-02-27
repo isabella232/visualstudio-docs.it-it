@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fa91423a5c0ddf6b276095b53ae4461d7057c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628442"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (distribuzione ClickOnce)
-Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<publisherIdentity  
-   name  
-   issuerKeyHash  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `publisherIdentity` elemento è obbligatorio per manifesti firmati. La tabella seguente illustra gli attributi di `publisherIdentity` supportato dall'elemento.  
-  
-|Attributo|Description|  
-|---------------|-----------------|  
-|`name`|Obbligatorio. Descrive l'identità dell'entità pubblicata l'applicazione.|  
-|`issuerKeyHash`|Obbligatorio. Contiene l'hash SHA-1 della chiave pubblica dell'autorità di certificazione.|  
-  
-#### <a name="parameters"></a>Parametri  
-  
-## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
-  
-## <a name="exceptions"></a>Eccezioni  
-  
-## <a name="remarks"></a>Note  
-  
-## <a name="requirements"></a>Requisiti  
-  
+Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione.
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<publisherIdentity
+   name
+   issuerKeyHash
+/>
+```
+
+## <a name="elements-and-attributes"></a>Elementi e attributi
+ Il `publisherIdentity` elemento è obbligatorio per manifesti firmati. La tabella seguente illustra gli attributi di `publisherIdentity` supportato dall'elemento.
+
+|Attributo|Description|
+|---------------|-----------------|
+|`name`|Obbligatorio. Descrive l'identità dell'entità pubblicata l'applicazione.|
+|`issuerKeyHash`|Obbligatorio. Contiene l'hash SHA-1 della chiave pubblica dell'autorità di certificazione.|
+
+#### <a name="parameters"></a>Parametri
+
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
+
+## <a name="exceptions"></a>Eccezioni
+
+## <a name="remarks"></a>Osservazioni
+
+## <a name="requirements"></a>Requisiti
+
 ## <a name="subhead"></a>Sottotitolo

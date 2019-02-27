@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4af16c9a0f2e254a0e63e95fb8c1f7881785a4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315144"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646343"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Specifica il linguaggio del codice sorgente dell'applicazione o del modulo collegato.
@@ -47,56 +47,39 @@ typedef enum CV_CFL_LANG {
 ```
 
 ## <a name="elements"></a>Elementi
-CV_CFL_C  
-Lingua dell'applicazione è sufficiente.
+Lingua dell'applicazione CV_CFL_C è sufficiente.
 
-CV_CFL_CXX  
-Lingua dell'applicazione è C++.
+Lingua dell'applicazione CV_CFL_CXX è C++.
 
-CV_CFL_FORTRAN  
-Lingua dell'applicazione è FORTRAN.
+Lingua dell'applicazione CV_CFL_FORTRAN è FORTRAN.
 
-CV_CFL_MASM  
-Lingua dell'applicazione è Microsoft Macro Assembler.
+Lingua dell'applicazione CV_CFL_MASM è Microsoft Macro Assembler.
 
-CV_CFL_PASCAL  
-Lingua dell'applicazione è la convenzione Pascal.
+Lingua dell'applicazione CV_CFL_PASCAL è la convenzione Pascal.
 
-CV_CFL_BASIC  
-Lingua dell'applicazione è BASIC.
+Lingua dell'applicazione CV_CFL_BASIC è BASIC.
 
-CV_CFL_COBOL  
-Lingua dell'applicazione è COBOL.
+Lingua dell'applicazione CV_CFL_COBOL è COBOL.
 
-CV_CFL_LINK  
-Applicazione è un modulo generate dal linker.
+Applicazione CV_CFL_LINK è un modulo generate dal linker.
 
-CV_CFL_CVTRES  
-Applicazione è un modulo di risorse convertito con lo strumento CVTRES.
+Applicazione CV_CFL_CVTRES è un modulo di risorse convertito con lo strumento CVTRES.
 
-CV_CFL_CVTPGD  
-Applicazione è un modulo POGO ottimizzato generato con CVTPGD strumento.
+Applicazione CV_CFL_CVTPGD è un modulo POGO ottimizzato generato con lo strumento CVTPGD.
 
-CV_CFL_CSHARP  
-Lingua dell'applicazione è C#.
+Lingua dell'applicazione CV_CFL_CSHARP è C#.
 
-CV_CFL_VB  
-Lingua dell'applicazione è Visual Basic.
+Lingua dell'applicazione CV_CFL_VB è Visual Basic.
 
-CV_CFL_ILASM  
-Lingua dell'applicazione è l'assembly del linguaggio intermedio (vale a dire assembly Common Language Runtime (CLR)).
+Lingua dell'applicazione CV_CFL_ILASM è assembly intermediate language (vale a dire assembly Common Language Runtime (CLR)).
 
-CV_CFL_JAVA  
-Lingua dell'applicazione Java è.
+Lingua dell'applicazione CV_CFL_JAVA è Java.
 
-CV_CFL_JSCRIPT  
-Lingua dell'applicazione è Jscript.
+Lingua dell'applicazione CV_CFL_JSCRIPT è Jscript.
 
-CV_CFL_MSIL  
-Lingua dell'applicazione è un sconosciuto linguaggio MSIL (Microsoft Intermediate), probabilmente un risultato dell'uso di [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation) passare.
+Lingua dell'applicazione CV_CFL_MSIL è un sconosciuto linguaggio MSIL (Microsoft Intermediate), probabilmente un risultato dell'uso di [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation) passare.
 
-CV_CFL_HLSL  
-Lingua dell'applicazione è High Level Shader Language.
+Lingua dell'applicazione CV_CFL_HLSL è High Level Shader Language.
 
 ## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (metodo).
@@ -105,5 +88,5 @@ I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_l
 Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedere anche
-[Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)
+- [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

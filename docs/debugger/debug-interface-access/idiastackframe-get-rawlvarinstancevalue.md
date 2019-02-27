@@ -12,42 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96851912abb6593ce1fe72bd3eebdd67c120c26b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624022"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Questo metodo recupera il valore della variabile locale specificata come byte non elaborati.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pInstance`  
- [in] Un `IDiaLVarInstance` che rappresenta un'istanza della variabile locale per ottenere il valore di oggetto.  
-  
- `cbDataMax`  
- [in] Numero massimo di byte nel buffer a cui punta `pbData`. Può trattarsi di un massimo di 8 byte (`sizeof(ULONGLONG)`).  
-  
- `pcbData`  
- [out] Restituisce il numero effettivo di byte memorizzati nel buffer.  
-  
- `pbData`  
- [out] Un buffer per l'inserimento dei dati. Non può essere `NULL`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Questo metodo recupera il valore della variabile locale specificata come byte non elaborati.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_rawLVarInstanceValue(
+   IDiaLVarInstance* pInstance,
+   DWORD             cbDataMax,
+   DWORD*            pcbData,
+   BYTE*             pbData
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pInstance`
+
+[in] Un `IDiaLVarInstance` che rappresenta un'istanza della variabile locale per ottenere il valore di oggetto.
+
+ `cbDataMax`
+
+[in] Numero massimo di byte nel buffer a cui punta `pbData`. Può trattarsi di un massimo di 8 byte (`sizeof(ULONGLONG)`).
+
+ `pcbData`
+
+[out] Restituisce il numero effettivo di byte memorizzati nel buffer.
+
+ `pbData`
+
+[out] Un buffer per l'inserimento dei dati. Non può essere `NULL`.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

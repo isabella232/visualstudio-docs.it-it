@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e24d913acfacbec626befac07167528b9be2ace
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c90c2148fc5a563fef8946bd39acf4603d7d09f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009817"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601137"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
-Ignora un determinato numero di contributi di sezione in una sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Skip(   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `celt`  
- [in] Il numero dei contributi di sezione nella sequenza di enumerazione da ignorare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non esistono Nessun più contributi di sezione da ignorare.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Ignora un determinato numero di contributi di sezione in una sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Skip( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `celt`
+
+[in] Il numero dei contributi di sezione nella sequenza di enumerazione da ignorare.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non esistono Nessun più contributi di sezione da ignorare.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

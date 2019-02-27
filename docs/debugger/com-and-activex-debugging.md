@@ -21,32 +21,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7196ce1342fb410f13729b9d204a9ff4be3d3f3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013995"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609096"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
-In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Debug dei server e dei contenitori COM](../debugger/com-server-and-container-debugging.md)  
- Vengono citate particolari considerazioni relative al debug di applicazioni COM. I problemi includono: debug di un server e di un contenitore COM tramite due progetti all'interno della stessa soluzione, traccia di chiamate che attraversano i limiti dei processi, impostazione di punti di interruzione in funzioni di callback ed esecuzione delle istruzioni attraverso e all'interno di contenitori e server.  
-  
- [Procedura: Eseguire il debug di un controllo ActiveX](../debugger/how-to-debug-an-activex-control.md)  
- Vengono fornite informazioni sul debug di controlli ActiveX, quali: specifica di un contenitore relativo alla sessione di debug per visualizzare come viene eseguito il codice nel controllo ActiveX, debug di un controllo ActiveX con associazione a dati, simulazione di un particolare contenitore ed esecuzione passo passo del codice del contenitore.  
-  
- [Strumenti di debug COM](../debugger/com-debugging-tools.md)  
- Fornisce un elenco di visualizzatori e applicazioni di esempio utili per eseguire il debug dell'applicazione COM.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Presentazione del debugger](../debugger/debugger-feature-tour.md)  
- Vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Vengono fornite informazioni sui seguenti aspetti: novità del debugger, impostazione e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito, debug di progetti Visual C++, debug di COM e ActiveX, debug di DLL, debug di SQL e riferimenti all'interfaccia utente.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Introduzione a COM](/cpp/atl/introduction-to-com)   
- [Controlli ActiveX](/cpp/mfc/activex-controls)   
- [Applicazioni server SDI](../debugger/sdi-server-applications.md)
+In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.
+
+## <a name="in-this-section"></a>In questa sezione
+ [Server COM e il contenitore debug](../debugger/com-server-and-container-debugging.md) vengono citate particolari considerazioni durante il debug di applicazioni COM. I problemi includono: debug di un server e di un contenitore COM tramite due progetti all'interno della stessa soluzione, traccia di chiamate che attraversano i limiti dei processi, impostazione di punti di interruzione in funzioni di callback ed esecuzione delle istruzioni attraverso e all'interno di contenitori e server.
+
+ [Procedura: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md) contiene informazioni sul debug dei controlli ActiveX. quali: specifica di un contenitore relativo alla sessione di debug per visualizzare come viene eseguito il codice nel controllo ActiveX, debug di un controllo ActiveX con associazione a dati, simulazione di un particolare contenitore ed esecuzione passo passo del codice del contenitore.
+
+ [Strumenti di debug COM](../debugger/com-debugging-tools.md) Elenca visualizzatori e applicazioni di esempio che possono essere utile nel debug di applicazioni COM.
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Presentazione di debugger](../debugger/debugger-feature-tour.md) vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Vengono fornite informazioni sui seguenti aspetti: novità del debugger, impostazione e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito, debug di progetti Visual C++, debug di COM e ActiveX, debug di DLL, debug di SQL e riferimenti all'interfaccia utente.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Sicurezza del debugger](../debugger/debugger-security.md)
+- [Introduzione a COM](/cpp/atl/introduction-to-com)
+- [Controlli ActiveX](/cpp/mfc/activex-controls)
+- [Applicazioni server SDI](../debugger/sdi-server-applications.md)

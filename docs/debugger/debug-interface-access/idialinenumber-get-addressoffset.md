@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2742cb5cd69529896fdbf39ac0d51ac9b3fbf941
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c29f2f8b84c68e9f4f0f7425ed5566b9180b1ac3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924665"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610814"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-Recupera la parte offset di indirizzo di memoria in cui inizia un blocco.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce la parte offset di indirizzo di memoria in cui inizia un blocco.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="example"></a>Esempio  
-  
-```C++  
-CComPtr< IDiaLineNumber > pLine;  
-DWORD offset;  
-pLine->get_addressOffset( &offset);  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)
+Recupera la parte offset di indirizzo di memoria in cui inizia un blocco.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce la parte offset di indirizzo di memoria in cui inizia un blocco.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="example"></a>Esempio
+
+```C++
+CComPtr< IDiaLineNumber > pLine;
+DWORD offset;
+pLine->get_addressOffset( &offset);
+```
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)

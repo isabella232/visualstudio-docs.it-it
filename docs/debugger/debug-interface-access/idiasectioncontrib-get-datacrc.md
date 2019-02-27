@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3688b6074422fc8af0cde6cdfa9299b9c3af556d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c652460e401396a8f7316b5ef300b3c2915f2e4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956207"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642118"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
-Recupera il controllo di ridondanza ciclico (CRC) dei dati nella sezione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_dataCrc (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce il CRC dei dati nella sezione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera il controllo di ridondanza ciclico (CRC) dei dati nella sezione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_dataCrc ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce il CRC dei dati nella sezione.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

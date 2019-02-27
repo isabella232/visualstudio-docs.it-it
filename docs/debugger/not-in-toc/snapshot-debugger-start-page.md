@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939790"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703708"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Getting Started With The Debugger Snapshot
 
@@ -27,7 +27,7 @@ Il Debugger di Snapshot raccoglie gli snapshot dall'applicazione. Gli snapshot s
 
 ### <a name="set-a-snappoint"></a>Impostare un punto di ancoraggio
 
-1. Nell'editor del codice, fare clic sulla barra di navigazione a sinistra accanto a una riga di codice che si è interessati per impostare un punto di ancoraggio. Assicurarsi che sia codice che già conosci verrà eseguito. 
+1. Nell'editor del codice, fare clic sulla barra di navigazione a sinistra accanto a una riga di codice che si è interessati per impostare un punto di ancoraggio. Assicurarsi che sia codice che già conosci verrà eseguito.
 
     ![Impostazione di un punto di ancoraggio nell'Editor](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Il Debugger di Snapshot raccoglie gli snapshot dall'applicazione. Gli snapshot s
 
 ### <a name="open-a-snapshot"></a>Aprire uno Snapshot
 
-1. Quando viene raggiunto il punto di ancoraggio, uno snapshot viene visualizzato nella finestra Strumenti di diagnostica a destra. Se non si apre la finestra, è possibile aprirlo scegliendo **Debug** > **Windows** > **Mostra strumenti di diagnostica**. 
+1. Quando viene raggiunto il punto di ancoraggio, uno snapshot viene visualizzato nella finestra Strumenti di diagnostica a destra. Se non si apre la finestra, è possibile aprirlo scegliendo **Debug** > **Windows** > **Mostra strumenti di diagnostica**.
 
     ![Snapshot nella finestra Strumenti di diagnostica](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Il sito Web stesso è ancora in tempo reale e gli utenti finali non sono interes
 
 3. Nel **messaggio** immettere un messaggio di log che si desidera accedere. È inoltre possibile valutare le variabili nel messaggio di log, posizionandoli all'interno di parentesi graffe.
 
-    Se si sceglie **inviare alla finestra di Output**, viene visualizzato il messaggio nella finestra Strumenti di diagnostica quando viene raggiunto il punto di registrazione. 
+    Se si sceglie **inviare alla finestra di Output**, viene visualizzato il messaggio nella finestra Strumenti di diagnostica quando viene raggiunto il punto di registrazione.
 
     Se si sceglie **invia al log applicazioni**, il messaggio viene visualizzato in qualsiasi punto che è possibile visualizzare i messaggi dal `System.Diagnostics.Trace` (o `ILogger` in .NET Core), ad esempio Application Insights, quando viene raggiunto il punto di registrazione.
 
@@ -69,6 +69,6 @@ Il sito Web stesso è ancora in tempo reale e gli utenti finali non sono interes
 
 ## <a name="dont-show-me-this-again"></a>Non visualizzare più questo messaggio
 
-Per non visualizzare la pagina di avvio del Debugger di Snapshot di più quando ci si connette il Debugger di Snapshot, modificare il **Mostra 'Attività iniziali' pagina all'avvio delle sessioni** opzione **Tools**  >   **Le opzioni** > **Snapshot Debugger**. 
+Per non visualizzare la pagina di avvio del Debugger di Snapshot di più quando ci si connette il Debugger di Snapshot, modificare il **Mostra 'Attività iniziali' pagina all'avvio delle sessioni** opzione **Tools**  >   **Le opzioni** > **Snapshot Debugger**.
 
 ![Pagina delle opzioni dello strumento Debugger snapshot](../media/snapshot-startpage-tools-options.png)

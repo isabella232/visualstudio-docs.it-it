@@ -20,23 +20,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e83ce7c067f056e6bb22b6476de5696005359d61
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df38a0d65a3073e35228c84fa18606e2fe014f9d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001803"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702109"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errori e risoluzione dei problemi relativi al debug remoto
-È possibile riscontrare i seguenti errori durante il tentativo di eseguire il debug in modalità remota.  
-  
--   [Errore: Non è possibile eseguire automaticamente l'istruzione nel server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
-  
--   [Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)  
-  
--   [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
-  
--   [Errore: Il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
-  
-## <a name="see-also"></a>Vedere anche  
- [Remote Debugging](../debugger/remote-debugging.md)
+È possibile riscontrare i seguenti errori durante il tentativo di eseguire il debug in modalità remota.
+
+-   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+
+-   [Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+
+-   [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+
+-   [Errore: il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Remote Debugging](../debugger/remote-debugging.md)

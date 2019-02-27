@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3bf7719543f6d2dce18bb2a23321a6b18067c97e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2fb4d0dfaeb944700757c9ceec222dbd62dab9dd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981857"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681153"
 ---
-# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Errore: Il debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2.0 o versione successiva
-Per eseguire il debug di codice nativo e gestito misto, è necessario disporre di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versione 2.0, 3.0, 3.5 o 4. Il debug in modalità mista con versioni di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] precedenti non è supportato.  
-  
-### <a name="to-correct-this-error"></a>Per correggere l'errore  
-  
-- Aggiornare [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] alla versione 2.0, 3.0, 3.5 o 4.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Remote Debugging](../debugger/remote-debugging.md)
+# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Errore: il debug in modalità mista è supportato solo quando si utilizza Microsoft .NET Framework 2.0 o versione successiva
+Per eseguire il debug di codice nativo e gestito misto, è necessario disporre di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versione 2.0, 3.0, 3.5 o 4. Il debug in modalità mista con versioni di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] precedenti non è supportato.
+
+### <a name="to-correct-this-error"></a>Per correggere l'errore
+
+- Aggiornare [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] alla versione 2.0, 3.0, 3.5 o 4.
+
+## <a name="see-also"></a>Vedere anche
+- [Remote Debugging](../debugger/remote-debugging.md)

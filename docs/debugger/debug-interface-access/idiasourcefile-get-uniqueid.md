@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964418"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612790"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Recupera un valore di chiave semplice numero intero univoco per questa immagine.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce un valore di chiave semplice numero intero univoco per questa immagine.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Osservazioni  
- Confronto delle chiavi anziché stringhe consente di velocizzare l'elaborazione di numeri di riga.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Recupera un valore di chiave semplice numero intero univoco per questa immagine.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_uniqueId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce un valore di chiave semplice numero intero univoco per questa immagine.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ Confronto delle chiavi anziché stringhe consente di velocizzare l'elaborazione di numeri di riga.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

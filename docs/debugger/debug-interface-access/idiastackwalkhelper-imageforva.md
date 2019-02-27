@@ -12,34 +12,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cb6957edd30d36fbc1a9ebbf982fd3ce91c94a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971247"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612021"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Restituisce l'inizio dell'immagine di un file eseguibile in memoria assegnata un indirizzo virtuale in una posizione nello spazio di memoria dell'eseguibile.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT imageForVA(  
-   ULONGLONG  vaContext,  
-   ULONGLONG *pvaImageStart  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `vaContext`  
- [in] Indirizzo virtuale che si trova in una posizione nello spazio dell'eseguibile.  
-  
- `pvaImageStart`  
- [out] Restituisce l'indirizzo virtuale iniziale dell'immagine dell'eseguibile.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+Restituisce l'inizio dell'immagine di un file eseguibile in memoria assegnata un indirizzo virtuale in una posizione nello spazio di memoria dell'eseguibile.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT imageForVA(
+   ULONGLONG  vaContext,
+   ULONGLONG *pvaImageStart
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `vaContext`
+
+[in] Indirizzo virtuale che si trova in una posizione nello spazio dell'eseguibile.
+
+ `pvaImageStart`
+
+[out] Restituisce l'indirizzo virtuale iniziale dell'immagine dell'eseguibile.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

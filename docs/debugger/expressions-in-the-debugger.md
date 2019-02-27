@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227394"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692268"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.
@@ -205,7 +205,7 @@ Non è possibile dichiarare nuove variabili esplicite nelle finestre del debugge
 - Parole chiave a livello di spazio dei nomi o di modulo, ad esempio `End Sub` o `Module`.
 
 ## <a name="see-also"></a>Vedere anche
-[Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)  
-[Operatore di contesto (C++)](../debugger/context-operator-cpp.md)  
-[Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)  
-[Pseudo variabili](../debugger/pseudovariables.md)
+- [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)
+- [Operatore di contesto (C++)](../debugger/context-operator-cpp.md)
+- [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)
+- [Pseudo variabili](../debugger/pseudovariables.md)

@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba51ecbb1d47707dcfc8bd112a09deb170546d28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036225"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645043"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-Recupera un determinato numero di origini inserite nella sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Next (   
-   ULONG                celt,   
-   IDiaInjectedSource** rgelt,  
-   ULONG*               pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di origini inserite nell'enumeratore deve essere recuperato.  
-  
- rgelt  
- [out] Restituisce una matrice di [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) gli oggetti che rappresenta le origini inserite desiderate.  
-  
- pceltFetched  
- [out] Restituisce il numero di origini inserite nell'enumeratore recuperata.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti origini inserite nessun altro. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Recupera un determinato numero di origini inserite nella sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Next ( 
+   ULONG                celt,
+   IDiaInjectedSource** rgelt,
+   ULONG*               pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di origini inserite nell'enumeratore deve essere recuperato.
+
+ rgelt
+
+[out] Restituisce una matrice di [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) gli oggetti che rappresenta le origini inserite desiderate.
+
+ pceltFetched
+
+[out] Restituisce il numero di origini inserite nell'enumeratore recuperata.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti origini inserite nessun altro. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

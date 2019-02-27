@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002521"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723253"
 ---
-# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Controllare le variabili con finestre Espressioni di controllo e controllo immediato 
+# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Controllare le variabili con finestre Espressioni di controllo e controllo immediato
 
 Durante il debug, è possibile usare **Watch** windows e **controllo immediato** per controllare variabili ed espressioni. Le finestre sono disponibili solo durante una sessione di debug.
 
@@ -34,7 +34,7 @@ Se questa è la prima volta che si è provato a eseguire il debug di codice, è 
 
 ## <a name="observe-variables-with-a-watch-window"></a>Osservare le variabili con una finestra Espressioni di controllo
 
-È possibile aprire più di uno **Watch** finestra e osservare più variabili in un **Watch** finestra. 
+È possibile aprire più di uno **Watch** finestra e osservare più variabili in un **Watch** finestra.
 
 Ad esempio, per impostare un'espressione di controllo sui valori degli `a`, `b`, e `c` nel codice seguente:
 
@@ -59,23 +59,23 @@ int main()
 ```
 
 1. Impostare un punto di interruzione per il `c = a + b;` riga facendo clic sul margine sinistro, selezionando **Debug** > **Attiva/Disattiva punto di interruzione**, o premendo **F9**.
-   
+
 1. Avviare il debug, selezionare il colore verde **avviare** freccia oppure **Debug** > **Avvia debug**, o premere **F5**. Consente di sospendere l'esecuzione nel punto di interruzione.
-   
+
 1. Aprire una **Watch** finestra selezionando **Debug** > **Windows** > **Watch**  >   **Espressione di controllo 1**, o premendo **Ctrl**+**Alt**+**W** > **1**.
-   
+
    È possibile aprire ulteriori **Watch** windows selezionando windows **2**, **3**, oppure **4**.
-   
+
 1. Nel **Watch** finestra, selezionare una riga vuota e variabile di tipo `a`. Eseguire la stessa operazione per `b` e `c`.
-   
+
    ![Controllare le variabili](../debugger/media/watchvariables.png "WatchVariables")
-   
+
 1. Continuare il debug scegliendo **eseguire il Debug** > **Esegui istruzione** oppure premendo **F11** in base alle esigenze per far avanzare. I valori delle variabili nel **Watch** finestra modificata mentre si scorre la `for` ciclo.
-   
+
 >[!NOTE]
->Per C++ solo, 
->- Potrebbe essere necessario qualificare il contesto di un nome di variabile o un'espressione che utilizza un nome di variabile. Il contesto è la funzione, file di origine o modulo in cui si trova una variabile. Se è necessario qualificare il contesto, usare il [operatore di contesto (C++)](../debugger/context-operator-cpp.md) sintassi nel **nome** nel **Watch** finestra. 
->  
+>Per C++ solo,
+>- Potrebbe essere necessario qualificare il contesto di un nome di variabile o un'espressione che utilizza un nome di variabile. Il contesto è la funzione, file di origine o modulo in cui si trova una variabile. Se è necessario qualificare il contesto, usare il [operatore di contesto (C++)](../debugger/context-operator-cpp.md) sintassi nel **nome** nel **Watch** finestra.
+>
 >- È possibile aggiungere i nomi di registro e i nomi delle variabili usando  **$ \<registrare&nbsp;nome >** oppure  **@ \<registrare&nbsp;nome >** per il **Name** nel **Watch** finestra. Per altre informazioni, vedere [Pseudovariables](../debugger/pseudovariables.md).
 
 ## <a name="use-expressions-in-a-watch-window"></a>Utilizzo delle espressioni in una finestra Espressioni di controllo
@@ -94,26 +94,26 @@ Potrebbe essere visualizzato un cerchio con due linee ondulate nella **Watch** f
 
 ### <a name="bkmk_refreshWatch"></a> Aggiornare i valori di espressioni di controllo
 
-Un'icona di aggiornamento (freccia circolare) potrebbero essere visualizzati nel **Watch** finestra quando viene valutata un'espressione. L'icona di aggiornamento indica un errore o un valore che non è aggiornato. 
+Un'icona di aggiornamento (freccia circolare) potrebbero essere visualizzati nel **Watch** finestra quando viene valutata un'espressione. L'icona di aggiornamento indica un errore o un valore che non è aggiornato.
 
-Per aggiornare il valore, selezionare l'icona di aggiornamento oppure premere la barra spaziatrice. Il debugger tenta di rivalutare l'espressione. Tuttavia, può non desidera o essere in grado di rivalutare l'espressione, a seconda del motivo per cui non è stato valutato il valore. 
+Per aggiornare il valore, selezionare l'icona di aggiornamento oppure premere la barra spaziatrice. Il debugger tenta di rivalutare l'espressione. Tuttavia, può non desidera o essere in grado di rivalutare l'espressione, a seconda del motivo per cui non è stato valutato il valore.
 
 Passaggio del mouse sull'icona di aggiornamento o vedere i **valore** colonna per il motivo non è stata valutata l'espressione. I motivi includono:
 
 - Si è verificato un errore durante la valutazione dell'espressione, come nell'esempio precedente. Potrebbe verificarsi un timeout o una variabile potrebbe essere esterni all'ambito.
-  
+
 - L'espressione include una chiamata di funzione che potrebbe attivare un effetto collaterale nell'app. Visualizzare [effetti collaterali espressione](#bkmk_sideEffects).
-  
-- La valutazione automatica delle proprietà e chiamate di funzione implicite è disattivata. 
-  
+
+- La valutazione automatica delle proprietà e chiamate di funzione implicite è disattivata.
+
 Se l'icona di aggiornamento viene visualizzato perché la valutazione automatica delle proprietà e chiamate di funzione implicite è disattivata, è possibile abilitarlo selezionando **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite** in **strumenti**   >  **Opzioni** > **debug** > **generale**.
 
 Per illustrare l'utilizzo l'icona di aggiornamento:
 
-1. Nella **degli strumenti** > **opzioni** > **debug** > **generale**, cancellare il **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite** casella di controllo. 
-   
-1. Immettere il codice seguente e nel **Watch** impostare un'espressione di controllo nella finestra di `list.Count` proprietà. 
-   
+1. Nella **degli strumenti** > **opzioni** > **debug** > **generale**, cancellare il **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite** casella di controllo.
+
+1. Immettere il codice seguente e nel **Watch** impostare un'espressione di controllo nella finestra di `list.Count` proprietà.
+
    ```csharp
    static void Main(string[] args)
    {
@@ -122,14 +122,14 @@ Per illustrare l'utilizzo l'icona di aggiornamento:
        list.Add("goodbye");
    }
    ```
-   
-1. Avviare il debug. Il **Watch** finestra qualcosa, ad esempio il messaggio seguente:
-   
-   ![Espressioni di controllo di aggiornamento](../debugger/media/refreshwatch.png "aggiornare espressioni di controllo")
-   
-1. Per aggiornare il valore, selezionare l'icona di aggiornamento oppure premere la barra spaziatrice. Il debugger rivaluta l'espressione. 
 
-### <a name="bkmk_sideEffects"></a> Effetti collaterali di espressione 
+1. Avviare il debug. Il **Watch** finestra qualcosa, ad esempio il messaggio seguente:
+
+   ![Espressioni di controllo di aggiornamento](../debugger/media/refreshwatch.png "aggiornare espressioni di controllo")
+
+1. Per aggiornare il valore, selezionare l'icona di aggiornamento oppure premere la barra spaziatrice. Il debugger rivaluta l'espressione.
+
+### <a name="bkmk_sideEffects"></a> Effetti collaterali di espressione
 
 La valutazione di alcune espressioni possono modificare il valore di una variabile o in caso contrario influiscono sullo stato dell'app. La valutazione della seguente espressione, ad esempio, comporta la modifica del valore di `var1`:
 
@@ -152,7 +152,7 @@ A volte si vuole osservare il comportamento di un oggetto specifico. Ad esempio,
 > [!NOTE]
 > ID oggetto creano riferimenti deboli che non impediscano l'oggetto venga sottoposto a garbage collection. Sono validi solo per la sessione di debug corrente.
 
-Nel codice seguente, il `MakePerson()` metodo crea un `Person` utilizzando una variabile locale: 
+Nel codice seguente, il `MakePerson()` metodo crea un `Person` utilizzando una variabile locale:
 
 ```csharp
 class Person
@@ -190,21 +190,21 @@ public class Program
 Per individuare il nome del `Person` nella `DoSomething()` metodo, è possibile aggiungere un riferimento al `Person` ID oggetto nel **Watch** finestra.
 
 1. Impostare un punto di interruzione nel codice dopo il `Person` oggetto è stato creato.
-   
+
 1. Avviare il debug.
-   
+
 1. Quando si mette in pausa l'esecuzione nel punto di interruzione, aprire il **variabili locali** finestra scegliendo **Debug** > **Windows** > **variabililocali**.
-   
+
 1. Nel **variabili locali** finestra, fare doppio clic il `Person` variabile e selezionare **Crea ID oggetto**.
-   
+
    Verrà visualizzato un segno di dollaro (**$**) insieme a un numero il **variabili locali** finestra, che è l'ID di oggetto.
-   
+
 1. Aggiungere l'ID di oggetto per il **Watch** finestra facendo clic su ID di oggetto e selezionando **Aggiungi espressione di controllo**.
-   
+
 1. Impostare un altro punto di interruzione il `DoSomething()` (metodo).
-   
+
 1. Continuare il debug. Quando l'esecuzione viene sospesa nel `DoSomething()` metodo, il **Watch** finestra vengono visualizzate le `Person` oggetto.
-   
+
    > [!NOTE]
    > Se si desidera visualizzare le proprietà dell'oggetto, ad esempio `Person.Name`, è necessario abilitare la valutazione delle proprietà, selezionando **Tools** > **opzioni**  >   **Debugging** > **generali** > **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**.
 
@@ -212,9 +212,9 @@ Per individuare il nome del `Person` nella `DoSomething()` metodo, è possibile 
 
 Alcuni linguaggi di script (ad esempio, JavaScript o Python) usano dinamico oppure [Duck Typing](https://en.wikipedia.org/wiki/Duck_typing) digitando e .NET 4.0 e versioni successive supporta gli oggetti che sono difficili da osservare le normali finestre di debug.
 
-Il **Watch** finestra consente di visualizzare questi oggetti come oggetti dinamici, che vengono creati dai tipi che implementano il <xref:System.Dynamic.IDynamicMetaObjectProvider> interfaccia. Oggetto dinamico nodi mostrano i membri dinamici dell'oggetto dinamico, ma non consentono la modifica dei valori dei membri. 
+Il **Watch** finestra consente di visualizzare questi oggetti come oggetti dinamici, che vengono creati dai tipi che implementano il <xref:System.Dynamic.IDynamicMetaObjectProvider> interfaccia. Oggetto dinamico nodi mostrano i membri dinamici dell'oggetto dinamico, ma non consentono la modifica dei valori dei membri.
 
-Per aggiornare **visualizzazione dinamica** valori, selezionare la [icona di aggiornamento](#bkmk_refreshWatch) accanto al nodo oggetto dinamico. 
+Per aggiornare **visualizzazione dinamica** valori, selezionare la [icona di aggiornamento](#bkmk_refreshWatch) accanto al nodo oggetto dinamico.
 
 Per visualizzare solo le **visualizzazione dinamica** per un oggetto, aggiungere un **dinamica** identificatore di formato dopo il nome dell'oggetto dinamico nel **Watch** finestra:
 
@@ -222,22 +222,22 @@ Per visualizzare solo le **visualizzazione dinamica** per un oggetto, aggiungere
 - Per Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
->- Il C# debugger non rivaluta automaticamente i valori di **visualizzazione dinamica** quando si passa alla riga successiva del codice. 
+>- Il C# debugger non rivaluta automaticamente i valori di **visualizzazione dinamica** quando si passa alla riga successiva del codice.
 >- Il debugger di Visual Basic consente di aggiornare automaticamente le espressioni aggiunte tramite il **visualizzazione dinamica**.
->- La valutazione dei membri di un **visualizzazione dinamica** può avere [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
+>- La valutazione dei membri di un **visualizzazione dinamica** può avere [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
 
 **Per inserire un'espressione di controllo nuova variabile che esegue il cast di un oggetto in un oggetto dinamico:**
-  
+
 1. Fare doppio clic su qualsiasi elemento figlio di un **visualizzazione dinamica**.
 1. Scegli **Aggiungi espressione di controllo**. Il `object.name` diviene `((dynamic) object).name` e viene visualizzato un nuovo oggetto **Watch** finestra.
 
-Il debugger aggiunge anche un **visualizzazione dinamica** nodo figlio dell'oggetto per il **Auto** finestra. Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**. 
+Il debugger aggiunge anche un **visualizzazione dinamica** nodo figlio dell'oggetto per il **Auto** finestra. Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**.
 
 **Visualizzazione dinamica** migliora anche il debug per gli oggetti COM. Quando il debugger ottiene un oggetto COM racchiuso **ComObject**, viene aggiunto un **visualizzazione dinamica** nodo per l'oggetto.
 
 ## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Osservare una singola variabile o espressione con controllo immediato
 
-È possibile usare **controllo immediato** per osservare una singola variabile. 
+È possibile usare **controllo immediato** per osservare una singola variabile.
 
 Ad esempio, per il codice seguente:
 
@@ -254,31 +254,32 @@ static void Main(string[] args)
 }
 ```
 
-Per osservare il `a` variabile, 
-   
+Per osservare il `a` variabile,
+
 1. Impostare un punto di interruzione nella riga `a = a + b;` .
-   
+
 1. Avviare il debug. Consente di sospendere l'esecuzione nel punto di interruzione.
-   
+
 1. Selezionare la variabile `a` nel codice.
-   
-1. Selezionare **Debug** > **controllo immediato**, premere **MAIUSC**+**F9**, o fare doppio clic e selezionare **Controllo immediato**. 
-   
+
+1. Selezionare **Debug** > **controllo immediato**, premere **MAIUSC**+**F9**, o fare doppio clic e selezionare **Controllo immediato**.
+
    Il **controllo immediato** viene visualizzata la finestra. Il `a` variabile si trova nella **espressione** casella con un **valore** dei **1**.
-   
+
    ![Variabile di controllo immediato](../debugger/media/quickwatchvariable.png "variabile di controllo immediato")
-   
+
 1. Per valutare un'espressione che usa la variabile, digitare un'espressione, ad esempio `a + b` nella **espressione** , quindi selezionare **Rivaluta**.
-   
+
    ![Espressione di controllo immediato](../debugger/media/quickwatchexpression.png "espressione di controllo immediato")
-   
+
 1. Per aggiungere la variabile o espressione dagli **controllo immediato** per il **Watch** finestra, seleziona **Aggiungi espressione di controllo**.
-   
+
 1. Selezionare **chiudere** per chiudere la **controllo immediato** finestra. (**Controllo immediato** è una finestra di dialogo modale, pertanto non è possibile continuare il debug finché è aperta.)
-   
+
 1. Continuare il debug. È possibile osservare la variabile nel **Watch** finestra.
 
 ## <a name="see-also"></a>Vedere anche
- [Che cos'è il debug?](../debugger/what-is-debugging.md)  
- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)  
- [Presentazione di debug](../debugger/debugger-feature-tour.md) [finestre del Debugger](../debugger/debugger-windows.md)
+- [Che cos'è il debug?](../debugger/what-is-debugging.md)
+- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)
+- [Presentazione di debug](../debugger/debugger-feature-tour.md)
+- [Finestre del debugger](../debugger/debugger-windows.md)

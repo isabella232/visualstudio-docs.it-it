@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335982"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627948"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug in tempo reale i servizi di Kubernetes ASP.NET di Azure usando il Debugger di Snapshot
 
@@ -57,7 +57,7 @@ In questa esercitazione si eseguono le attività seguenti:
 1. Collegare il Debugger di Snapshot. È possibile usare uno dei diversi metodi:
 
     * Scegliere **Debug > Collega Snapshot Debugger...** . Selezionare la risorsa AKS è distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
-  
+
       ![Avviare il debugger di snapshot dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Fare clic con il pulsante destro sul progetto, quindi scegliere **Publish**, quindi nella pagina di pubblicazione fare clic su **collegare Snapshot Debugger**. Selezionare la risorsa AKS è distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
@@ -67,7 +67,7 @@ In questa esercitazione si eseguono le attività seguenti:
     ![Avviare il debugger di snapshot dal menu a discesa scegliere F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Con Cloud Explorer (**Visualizza > Cloud Explorer**), fare doppio clic su un account di archiviazione di Azure e la risorsa AKS è distribuito l'app web e quindi fare clic su **collegare Snapshot Debugger**.
-  
+
       ![Avviare il debugger di snapshot di Cloud Explorer](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

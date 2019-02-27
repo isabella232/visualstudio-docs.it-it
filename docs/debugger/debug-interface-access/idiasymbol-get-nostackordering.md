@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f48828980dc41c49948bf7bd234e4ed9701e787
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0774477ac200ca7c810cf4a7e5925c137b292c85
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040060"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633395"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
-Questa funzione recupera un flag che indica se nessun ordinamento stack può essere eseguito come parte del controllo del buffer di stack ([/GS (controllo sicurezza Buffer)](/cpp/build/reference/gs-buffer-security-check) opzione del compilatore).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_noStackOrdering(  
-   BOOL *pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se nessun ordinamento stack poteva essere eseguito come parte del controllo del buffer dello stack; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Questa funzione recupera un flag che indica se nessun ordinamento stack può essere eseguito come parte del controllo del buffer di stack ([/GS (controllo sicurezza Buffer)](/cpp/build/reference/gs-buffer-security-check) opzione del compilatore).
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_noStackOrdering(
+   BOOL *pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se nessun ordinamento stack poteva essere eseguito come parte del controllo del buffer dello stack; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="requirements"></a>Requisiti  
-  
-|Requisito|Descrizione|  
-|-----------------|-----------------|  
-|Intestazione:|Dia2.h|  
-|Versione:|DIA SDK v8.0|  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS (controllo sicurezza buffer)](/cpp/build/reference/gs-buffer-security-check)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="requirements"></a>Requisiti
+
+|Requisito|Description|
+|-----------------|-----------------|
+|Intestazione:|Dia2.h|
+|Version:|DIA SDK v8.0|
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [/GS (controllo sicurezza buffer)](/cpp/build/reference/gs-buffer-security-check)

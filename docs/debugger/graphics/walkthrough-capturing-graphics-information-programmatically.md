@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7652f05bf6028dd7d5b14d207fdd0b83a73ef5ad
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227631"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722915"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.
@@ -115,6 +115,6 @@ In questa procedura dettagliata è stato illustrato come acquisire informazioni 
 - Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Visualizzare [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vedere anche
-[Procedura dettagliata: cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)  
-[Capturing Graphics Information](capturing-graphics-information.md)  
-[Strumento di acquisizione da riga di comando](command-line-capture-tool.md)
+- [Procedura dettagliata: cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)
+- [Capturing Graphics Information](capturing-graphics-information.md)
+- [Strumento di acquisizione da riga di comando](command-line-capture-tool.md)

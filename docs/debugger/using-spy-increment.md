@@ -10,41 +10,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3127ab476c0b4500d7cb481222d1f0ef68819edb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016668"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688394"
 ---
 # <a name="using-spy"></a>Utilizzo di Spy++
-Spy + + (SPYXX. Con estensione EXE) è un'utilità basata su Win32 che ti offre una visualizzazione grafica dei processi, thread, windows e i messaggi della finestra del sistema. In questa sezione del Spy + + della Guida include i seguenti argomenti:  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Introduzione a Spy++](../debugger/introducing-spy-increment.md)  
- Vengono illustrati i tipi di informazioni che è possibile visualizzare con lo strumento Spy + +.  
-  
- [Procedura: Avviare Spy++](../debugger/how-to-start-spy-increment.md)  
- Viene illustrato come avviare Spy + + dal menu Strumenti.  
-  
- [Barra degli strumenti di Spy++](../debugger/spy-increment-toolbar.md)  
- Descrive i comandi disponibili sulla barra degli strumenti di Spy + +.  
-  
- [Procedura: Visualizzare le visualizzazioni di Spy++](../debugger/how-to-display-spy-increment-views.md)  
- Come visualizzare una visualizzazione di Windows, visualizzazione di messaggi, visualizzazione dei processi e visualizzazione thread.  
-  
- [Procedura: Aggiornare la visualizzazione](../debugger/how-to-refresh-the-view.md)  
- Viene descritto il comando di aggiornamento.  
-  
- [Procedura: Modificare i caratteri](../debugger/how-to-change-fonts.md)  
- Viene illustrato come modificare la modalità di che visualizzazione di una vista.  
-  
- [Procedura: Espandere e comprimere alberi di Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
- Viene illustrato come modificare una vista.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
-  
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+Spy + + (SPYXX. Con estensione EXE) è un'utilità basata su Win32 che ti offre una visualizzazione grafica dei processi, thread, windows e i messaggi della finestra del sistema. In questa sezione del Spy + + della Guida include i seguenti argomenti:
+
+## <a name="in-this-section"></a>In questa sezione
+ [Introduzione a Spy + +](../debugger/introducing-spy-increment.md) vengono illustrati i tipi di informazioni che è possibile visualizzare con lo strumento Spy + +.
+
+ [Procedura: avviare Spy + +](../debugger/how-to-start-spy-increment.md) illustra come avviare Spy + + dal menu Strumenti.
+
+ [Barra degli strumenti di Spy + +](../debugger/spy-increment-toolbar.md) descrive i comandi disponibili sulla barra degli strumenti di Spy + +.
+
+ [Procedura: visualizzazione Spy + + viste](../debugger/how-to-display-spy-increment-views.md) come visualizzare una visualizzazione di Windows, visualizzazione di messaggi, visualizzazione dei processi e visualizzazione thread.
+
+ [Procedura: aggiornare la visualizzazione](../debugger/how-to-refresh-the-view.md) viene descritto il comando di aggiornamento.
+
+ [Procedura: modificare tipi di carattere](../debugger/how-to-change-fonts.md) viene illustrato come modificare la modalità di visualizzazione di una vista.
+
+ [Procedura: espandere e comprimere Spy + + alberi](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) viene illustrato come modificare una vista.
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

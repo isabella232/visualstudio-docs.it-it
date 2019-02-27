@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fafae8bb5c2e9ab275601af0d7ed1dea22db4940
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b78c62ad096600254ddeb2ebd82d6174a950ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970071"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601542"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
-Recupera il nome del file da cui sono stati caricati i simboli.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_symbolsFileName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce il nome del file da cui sono stati caricati i simboli.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera il nome del file da cui sono stati caricati i simboli.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_symbolsFileName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce il nome del file da cui sono stati caricati i simboli.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="remarks"></a>Osservazioni  
- Questa proprietà è valida solo per i simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) pari a `SymTagExe` anche che hanno un ambito globale.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="remarks"></a>Osservazioni
+ Questa proprietà è valida solo per i simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) pari a `SymTagExe` anche che hanno un ambito globale.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

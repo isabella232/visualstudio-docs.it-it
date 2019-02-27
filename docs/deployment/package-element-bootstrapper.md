@@ -15,133 +15,133 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 902b09ca2a5007f2e4e7d99d2856b01566131f98
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028520"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631861"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
-Il `Package` elemento è l'elemento XML di primo livello all'interno di un file del pacchetto.  
+Il `Package` elemento è l'elemento XML di primo livello all'interno di un file del pacchetto.
 
-## <a name="syntax"></a>Sintassi  
+## <a name="syntax"></a>Sintassi
 
-```xml  
-<Package  
-    Culture  
-    Name  
-    LicenseAgreement  
->  
-    <InstallChecks>  
-        <AssemblyCheck   
-            Property  
-            Name  
-            PublicKeyToken  
-            Version  
-            Language  
-            ProcessorArchitecture  
-        />  
-        <RegistryCheck  
-            Property  
-            Key  
-            Value  
-        />  
-        <ExternalCheck   
-            PackageFile  
-            Property  
-            Arguments  
-            Log  
-        />  
-        <FileCheck   
-            Property  
-            FileName  
-            SearchPath  
-            SpecialFolder  
-            SearchDepth  
-        />  
-        <MsiProductCheck   
-            Property  
-            Product  
-            Feature  
-        />  
-        <RegistryFileCheck   
-            Property  
-            Key  
-            Value  
-            File  
-            SearchDepth  
-        />  
-    </InstallChecks>  
+```xml
+<Package
+    Culture
+    Name
+    LicenseAgreement
+>
+    <InstallChecks>
+        <AssemblyCheck
+            Property
+            Name
+            PublicKeyToken
+            Version
+            Language
+            ProcessorArchitecture
+        />
+        <RegistryCheck
+            Property
+            Key
+            Value
+        />
+        <ExternalCheck
+            PackageFile
+            Property
+            Arguments
+            Log
+        />
+        <FileCheck
+            Property
+            FileName
+            SearchPath
+            SpecialFolder
+            SearchDepth
+        />
+        <MsiProductCheck
+            Property
+            Product
+            Feature
+        />
+        <RegistryFileCheck
+            Property
+            Key
+            Value
+            File
+            SearchDepth
+        />
+    </InstallChecks>
 
-    <Commands  
-        Reboot  
-    >  
-        <Command  
-            PackageFile  
-            Arguments  
-            EstimatedInstallSeconds  
-            EstimatedDiskBytes  
-            EstimatedTempBytes  
-            Log  
-        >  
-            <InstallConditions>  
-                <BypassIf   
-                    Property  
-                    Compare  
-                    Value  
-                    Schedule  
-                />  
-                <FailIf   
-                    Property  
-                    Compare  
-                    Value  
-                    String  
-                    Schedule  
-                />  
-            </InstallConditions>  
-            <ExitCodes>  
-                <ExitCode   
-                    Value  
-                    Result  
-                    String  
-                />  
-            </ExitCodes>  
-        </Command>  
-    </Commands>  
+    <Commands
+        Reboot
+    >
+        <Command
+            PackageFile
+            Arguments
+            EstimatedInstallSeconds
+            EstimatedDiskBytes
+            EstimatedTempBytes
+            Log
+        >
+            <InstallConditions>
+                <BypassIf
+                    Property
+                    Compare
+                    Value
+                    Schedule
+                />
+                <FailIf
+                    Property
+                    Compare
+                    Value
+                    String
+                    Schedule
+                />
+            </InstallConditions>
+            <ExitCodes>
+                <ExitCode
+                    Value
+                    Result
+                    String
+                />
+            </ExitCodes>
+        </Command>
+    </Commands>
 
-    <PackageFiles  
-        CopyAllComponents  
-    >  
-        <PackageFile   
-            Name  
-            Path  
-            HomeSite  
-            PublicKey  
-        />  
-    </PackageFiles>  
+    <PackageFiles
+        CopyAllComponents
+    >
+        <PackageFile
+            Name
+            Path
+            HomeSite
+            PublicKey
+        />
+    </PackageFiles>
 
-    <Strings>  
-        <String  
-            Name  
-        >  
-        </String>  
-    </Strings>  
+    <Strings>
+        <String
+            Name
+        >
+        </String>
+    </Strings>
 
-    <Schedules>  
-        <Schedule  
-            Name  
-        >  
-           <BuildList />  
-           <BeforePackage />  
-           <AfterPackage />  
-        </Schedule>  
-    </Schedules>  
-</Package>  
-```  
+    <Schedules>
+        <Schedule
+            Name
+        >
+           <BuildList />
+           <BeforePackage />
+           <AfterPackage />
+        </Schedule>
+    </Schedules>
+</Package>
+```
 
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Package` elemento è obbligatorio. Include gli attributi seguenti.  
+## <a name="elements-and-attributes"></a>Elementi e attributi
+ Il `Package` elemento è obbligatorio. Include gli attributi seguenti.
 
 
 | Attributo | Description |
@@ -150,43 +150,43 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 | `Name` | Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`. |
 | `LicenseAgreement` | Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere una stringa di testo normale (*txt*) in formato testo. (*.rtf*) |
 
-## <a name="example"></a>Esempio  
- Esempio di codice seguente viene illustrato un file del pacchetto completo per la ridistribuzione di [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
+## <a name="example"></a>Esempio
+ Esempio di codice seguente viene illustrato un file del pacchetto completo per la ridistribuzione di [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
-```xml  
-<?xml version="1.0" encoding="utf-8" ?>  
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
 
-<Package  
-  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
-  Name="DisplayName"  
-  Culture="Culture"  
-  LicenseAgreement="eula.rtf"  
->  
+<Package
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  Name="DisplayName"
+  Culture="Culture"
+  LicenseAgreement="eula.rtf"
+>
 
-    <PackageFiles>  
-        <PackageFile Name="eula.rtf"/>  
-    </PackageFiles>  
+    <PackageFiles>
+        <PackageFile Name="eula.rtf"/>
+    </PackageFiles>
 
-    <!-- Defines a localizable string table for error messages-->  
-    <Strings>  
-        <String Name="DisplayName">.NET Framework 2.0</String>  
-        <String Name="Culture">en</String>  
-        <String Name="AdminRequired">Administrator permissions are required to install the .NET Framework 2.0. Contact your administrator.</String>  
-        <String Name="InvalidPlatformWin9x">Installation of the .NET Framework 2.0 is not supported on Windows 95. Contact your application vendor.</String>  
-        <String Name="InvalidPlatformWinNT">Installation of the .NET Framework 2.0 is not supported on Windows NT 4.0. Contact your application vendor.</String>  
-        <String Name="InvalidPlatformIE">Installation of the .NET Framework 2.0 requires Internet Explorer 5.01 or greater. Contact your application vendor.</String>  
-        <String Name="InvalidPlatformArchitecture">This version of the .NET Framework 2.0 is not supported on a 64-bit operating system. Contact your application vendor.</String>  
-        <String Name="WindowsInstallerImproperInstall">Due to an error with Windows Installer, the installation of the .NET Framework 2.0 cannot proceed.</String>  
-        <String Name="AnotherInstanceRunning">Another instance of setup is already running. The running instance must complete before this setup can proceed.</String>  
-        <String Name="BetaNDPFailure">A beta version of the .NET Framework was detected on the computer. Uninstall any previous beta versions of .NET Framework before continuing.</String>  
-        <String Name="GeneralFailure">A failure occurred attempting to install the .NET Framework 2.0.</String>  
-        <String Name="DotNetFXExe">http://go.microsoft.com/fwlink/?LinkId=37283</String>  
-        <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>  
-        <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>  
-    </Strings>  
+    <!-- Defines a localizable string table for error messages-->
+    <Strings>
+        <String Name="DisplayName">.NET Framework 2.0</String>
+        <String Name="Culture">en</String>
+        <String Name="AdminRequired">Administrator permissions are required to install the .NET Framework 2.0. Contact your administrator.</String>
+        <String Name="InvalidPlatformWin9x">Installation of the .NET Framework 2.0 is not supported on Windows 95. Contact your application vendor.</String>
+        <String Name="InvalidPlatformWinNT">Installation of the .NET Framework 2.0 is not supported on Windows NT 4.0. Contact your application vendor.</String>
+        <String Name="InvalidPlatformIE">Installation of the .NET Framework 2.0 requires Internet Explorer 5.01 or greater. Contact your application vendor.</String>
+        <String Name="InvalidPlatformArchitecture">This version of the .NET Framework 2.0 is not supported on a 64-bit operating system. Contact your application vendor.</String>
+        <String Name="WindowsInstallerImproperInstall">Due to an error with Windows Installer, the installation of the .NET Framework 2.0 cannot proceed.</String>
+        <String Name="AnotherInstanceRunning">Another instance of setup is already running. The running instance must complete before this setup can proceed.</String>
+        <String Name="BetaNDPFailure">A beta version of the .NET Framework was detected on the computer. Uninstall any previous beta versions of .NET Framework before continuing.</String>
+        <String Name="GeneralFailure">A failure occurred attempting to install the .NET Framework 2.0.</String>
+        <String Name="DotNetFXExe">http://go.microsoft.com/fwlink/?LinkId=37283</String>
+        <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>
+        <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>
+    </Strings>
 
-</Package>  
-```  
+</Package>
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fea2256eeddbdc1aa073b2f51b3ebeecb7d8460
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0171138784ca440fc528cc446c93874cd5fb5c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926776"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636892"
 ---
 # <a name="idiaenumtablesreset"></a>IDiaEnumTables::Reset
-Reimposta una sequenza di enumerazione all'inizio.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK`.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+Reimposta una sequenza di enumerazione all'inizio.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Valore restituito
+ Restituisce `S_OK`.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

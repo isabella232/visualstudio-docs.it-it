@@ -10,36 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4716443ae2225428980306beb1c3be0e23b4306e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019320"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691891"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Finestra di dialogo Tipo di carattere (Guida di Microsoft Spy++)
-Usare questa finestra di dialogo per configurare il tipo di carattere utilizzato una [visualizzazioni di Spy + +](../debugger/spy-increment-views.md) finestra. Per visualizzare questa finestra di dialogo, espandere la **View** dal menu e scegliere **Font**.  
-  
- Sono disponibili le seguenti impostazioni:  
-  
- **Tipo di carattere**  
- Tipo di carattere per la finestra di visualizzazioni di Spy + + con lo stato attivo.  
-  
- **Stile carattere**  
- Lo stile del carattere per la finestra di visualizzazioni di Spy + + con lo stato attivo.  
-  
- **Dimensione**  
- Le dimensioni del carattere per la finestra di visualizzazioni di Spy + + con lo stato attivo.  
-  
- **Imposta come predefinito**  
- Salva le impostazioni del tipo di carattere corrente come le proprie preferenze quando si apre le visualizzazioni di Spy + +.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
-  
- [Uso di Spy++](../debugger/using-spy-increment.md)  
- Introduce lo strumento Spy + + e spiega come può essere usato.  
-  
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+Usare questa finestra di dialogo per configurare il tipo di carattere utilizzato una [visualizzazioni di Spy + +](../debugger/spy-increment-views.md) finestra. Per visualizzare questa finestra di dialogo, espandere la **View** dal menu e scegliere **Font**.
+
+ Sono disponibili le seguenti impostazioni:
+
+ **Tipo di carattere** di carattere per la finestra di visualizzazioni di Spy + + con lo stato attivo.
+
+ **Stile del carattere** lo stile del carattere per la finestra di visualizzazioni di Spy + + con lo stato attivo.
+
+ **Dimensioni** le dimensioni del carattere per la finestra di visualizzazioni di Spy + + con lo stato attivo.
+
+ **Imposta come predefinito** consente di salvare le impostazioni del tipo di carattere corrente come le proprie preferenze quando si apre le visualizzazioni di Spy + +.
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+
+ [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.

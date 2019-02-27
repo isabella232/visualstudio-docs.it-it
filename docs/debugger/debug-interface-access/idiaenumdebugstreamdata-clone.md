@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a630f1097db2a2f90b4958466a0280bac8fac86d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8362fecf12613595b3e96218c704eae26f4e8bbc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973294"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641910"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
-Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreamData** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- ppenum  
- [out] Restituisce un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) oggetto che contiene la sequenza duplicata dei record di flusso di dati di debug.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreamData** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ ppenum
+
+[out] Restituisce un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) oggetto che contiene la sequenza duplicata dei record di flusso di dati di debug.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
