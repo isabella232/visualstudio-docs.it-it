@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987470"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628325"
 ---
 # <a name="cc-assertions"></a>Asserzioni C/C++
 Un'istruzione di asserzione specifica una condizione che si prevede abbia valore true in un punto del programma. Se tale condizione non è true, l'asserzione non riesce, viene interrotta l'esecuzione del programma e il [finestra di dialogo Asserzione non riuscita](../debugger/assertion-failed-dialog-box.md) viene visualizzata.
@@ -46,7 +46,7 @@ Visual C++ supporta le istruzioni di asserzione che si basano sui costrutti segu
 
 - Asserzioni di CRT per i programmi che usano la libreria di runtime C.
 
-- ANSI [funzione assert](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) per altri programmi C/C++.  
+- ANSI [funzione assert](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) per altri programmi C/C++.
 
   È possibile utilizzare le asserzioni per intercettare gli errori per la logica, controllare i risultati di un'operazione e testare le condizioni di errore che avrebbero dovuto essere gestite.
 
@@ -63,7 +63,7 @@ Visual C++ supporta le istruzioni di asserzione che si basano sui costrutti segu
 
 - [ASSERT_VALID e CObject:: AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Limitazioni di AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Limitazioni di AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Utilizzo di asserzioni](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ Questo codice si basa sull'istruzione di asserzione per gestire la condizione di
 [In questo argomento](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Vedere anche
-[Sicurezza del debugger](../debugger/debugger-security.md)  
-[Debug del codice nativo](../debugger/debugging-native-code.md)  
-[Asserzioni nel codice gestito](../debugger/assertions-in-managed-code.md)
+
+- [Sicurezza del debugger](../debugger/debugger-security.md)
+- [Debug del codice nativo](../debugger/debugging-native-code.md)
+- [Asserzioni nel codice gestito](../debugger/assertions-in-managed-code.md)

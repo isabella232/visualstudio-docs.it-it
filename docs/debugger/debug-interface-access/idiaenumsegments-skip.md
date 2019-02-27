@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f83ebca4d7d03afb8eae7a9b885334ccc1cb71
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff4c5d26d875dc098775d0d379e7d12b062801cd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924304"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621526"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
-Ignora un determinato numero di segmenti in una sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di segmenti nella sequenza di enumerazione da ignorare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non esistono Nessun altri segmenti da ignorare.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+Ignora un determinato numero di segmenti in una sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di segmenti nella sequenza di enumerazione da ignorare.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non esistono Nessun altri segmenti da ignorare.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

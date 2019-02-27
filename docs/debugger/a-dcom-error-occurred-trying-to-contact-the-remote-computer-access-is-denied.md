@@ -20,34 +20,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dfb374e693c6483ff80737b8715e4abc570bf0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75d1c9f9c23df04ca19f68dada718fba12dc51f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009701"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622839"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
-Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nelle situazioni seguenti:  
-  
-- Il debugger è impostato sulla **modalità di compatibilità nativa** oppure è selezionata l'opzione **Modalità di compatibilità gestita** nella pagina **Strumenti > Opzioni > Debug**  
-  
-- Si esegue il debug di codice C++ (C++ /CLI) gestito.  
-  
-- In Visual Studio 2013, quando è selezionata l'opzione **Abilita Modifica e continuazione nativo** nella pagina **Strumenti > Opzioni > Debug**  
-  
-- Alcuni scenari di debug di terze parti  
-  
-  Questo errore si verifica quando il processo di Visual Studio non è in grado di autenticarsi (o le credenziali fornite sono ritenute insufficienti) rispetto al processo del debugger remoto su DCOM. Una o più delle soluzioni seguenti possono risolvere il problema:  
-  
-- Disattivare  **Usa modalità di compatibilità nativa** e **Modalità di compatibilità gestita**.  
-  
-- In Visual Studio 2013 disattivare **Abilita Modifica e continuazione nativo**.  
-  
-- Riavviare entrambi i computer.  
-  
-- Se il debug remoto richiede l'immissioni di credenziali, selezionare l'opzione per salvarle.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nelle situazioni seguenti:
+
+- Il debugger è impostato sulla **modalità di compatibilità nativa** oppure è selezionata l'opzione **Modalità di compatibilità gestita** nella pagina **Strumenti > Opzioni > Debug**
+
+- Si esegue il debug di codice C++ (C++ /CLI) gestito.
+
+- In Visual Studio 2013, quando è selezionata l'opzione **Abilita Modifica e continuazione nativo** nella pagina **Strumenti > Opzioni > Debug**
+
+- Alcuni scenari di debug di terze parti
+
+  Questo errore si verifica quando il processo di Visual Studio non è in grado di autenticarsi (o le credenziali fornite sono ritenute insufficienti) rispetto al processo del debugger remoto su DCOM. Una o più delle soluzioni seguenti possono risolvere il problema:
+
+- Disattivare  **Usa modalità di compatibilità nativa** e **Modalità di compatibilità gestita**.
+
+- In Visual Studio 2013 disattivare **Abilita Modifica e continuazione nativo**.
+
+- Riavviare entrambi i computer.
+
+- Se il debug remoto richiede l'immissioni di credenziali, selezionare l'opzione per salvarle.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Remote Debugging](../debugger/remote-debugging.md)

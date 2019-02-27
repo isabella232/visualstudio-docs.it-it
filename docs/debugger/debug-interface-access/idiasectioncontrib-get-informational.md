@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 060835769b6a9cbe0bf2153ea444d62ef5c2d301
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00d07b788fe07fbe2e879f01a98929927743a0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039873"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637802"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
-Recupera un flag che indica se una sezione contiene informazioni simili o commenti.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_informational(  
-   BOOL* pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se la sezione contiene i commenti o altre informazioni; in caso contrario restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="remarks"></a>Osservazioni  
- La sezione .directive contiene in genere informazioni.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera un flag che indica se una sezione contiene informazioni simili o commenti.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_informational(
+   BOOL* pRetVal
+};
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se la sezione contiene i commenti o altre informazioni; in caso contrario restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ La sezione .directive contiene in genere informazioni.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

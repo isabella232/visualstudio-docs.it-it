@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08cdd6d96823fc10f1bb0e495df5b5805dad08c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19e99f48f344ad96b35251aadf86e3787c809ca7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920882"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611945"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Recupera l'offset all'inizio di un tipo definito dall'utente (UDT) di un membro di tipo definito dall'utente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_offsetInUdt(   
-   DWORD* pRetVal)  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce l'offset in byte della posizione del simbolo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera l'offset all'inizio di un tipo definito dall'utente (UDT) di un membro di tipo definito dall'utente.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_offsetInUdt( 
+   DWORD* pRetVal)
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce l'offset in byte della posizione del simbolo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="remarks"></a>Osservazioni  
- Questa funzione viene utilizzata solo nei record locale in una build ottimizzata.  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
-  
- Libreria: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="remarks"></a>Osservazioni
+ Questa funzione viene utilizzata solo nei record locale in una build ottimizzata.
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: Dia2.h
+
+ Libreria: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

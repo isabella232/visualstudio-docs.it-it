@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1420fabc81227ef57884416e9459ed42587b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607241"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumDebugStreams** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ppenum`  
- [out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un duplicato dell'enumeratore. I flussi non vengano duplicati, solo l'enumeratore.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumDebugStreams** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `ppenum`
+
+[out] Restituisce un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) oggetto che contiene un duplicato dell'enumeratore. I flussi non vengano duplicati, solo l'enumeratore.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
