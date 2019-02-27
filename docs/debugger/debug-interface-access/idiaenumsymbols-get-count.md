@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed13af5ed7aa33cd1508056755a1f04370ec5625
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2ed86bc9854d896578c7935cf446406589ea28b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999145"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596929"
 ---
 # <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
-Recupera il numero di simboli.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- pRetVal  
- [out] Restituisce il numero di simboli.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)
+Recupera il numero di simboli.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ pRetVal
+
+[out] Restituisce il numero di simboli.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)

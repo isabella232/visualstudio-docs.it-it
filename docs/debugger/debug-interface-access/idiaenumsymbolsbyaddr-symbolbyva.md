@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e8201a3df3887e098206ffcfcb3fee34ea00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0b97b30b6f19e367cfbae72be29b6d8961f4e1a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965029"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642001"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
-Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale (valutazione della vulnerabilità).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT symbolByVA (   
-   DWORD**      virtualAddress,  
-   IDiaSymbol** ppsymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- virtualAddress  
- [in] Indirizzo virtuale.  
-  
- ppsymbol  
- [out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo trovato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale (valutazione della vulnerabilità).
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT symbolByVA ( 
+   DWORD**      virtualAddress,
+   IDiaSymbol** ppsymbol
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ virtualAddress
+
+[in] Indirizzo virtuale.
+
+ ppsymbol
+
+[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo trovato.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

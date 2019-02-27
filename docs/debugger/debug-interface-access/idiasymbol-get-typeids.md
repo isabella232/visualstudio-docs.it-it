@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d06648c884a4406c6a5d28b2b33a7cbfd4f6d24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12024a3a024f2c9433e144790c0a513d4e33df12
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987466"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643743"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Recupera una matrice di valori di identificatore di tipo specifici del compilatore per questo simbolo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_typeIds (   
-   DWORD  cTypeIds,  
-   DWORD* pcTypeIds,  
-   DWORD  typeIds[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `cTypeIds`  
- [in] Dimensione del buffer per contenere i dati.  
-  
- `pcTypeIds`  
- [out] Restituisce il numero di `typeIds` scritto, in alternativa, se `typeIds` è `NULL`, quindi il numero totale di identificatori dei tipi disponibili.  
-  
- `typeIds[]`  
- [out] Matrice che deve essere compilata con gli identificatori di tipo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera una matrice di valori di identificatore di tipo specifici del compilatore per questo simbolo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_typeIds ( 
+   DWORD  cTypeIds,
+   DWORD* pcTypeIds,
+   DWORD  typeIds[]
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `cTypeIds`
+
+[in] Dimensione del buffer per contenere i dati.
+
+ `pcTypeIds`
+
+[out] Restituisce il numero di `typeIds` scritto, in alternativa, se `typeIds` è `NULL`, quindi il numero totale di identificatori dei tipi disponibili.
+
+ `typeIds[]`
+
+[out] Matrice che deve essere compilata con gli identificatori di tipo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

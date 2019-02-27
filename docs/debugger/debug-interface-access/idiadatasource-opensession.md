@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640cebfda96b0c618352017e982c695ad908de0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155591"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637074"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Apre una sessione per eseguire query sui simboli.
@@ -31,19 +31,20 @@ HRESULT openSession ( 
 ```
 
 #### <a name="parameters"></a>Parametri
-ppSession  
+ppSession
+
 [out] Restituisce un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) oggetto che rappresenta la sessione aperta.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.
 
-|Valore|Descrizione|
+|Value|Description|
 |-----------|-----------------|
 |E_UNEXPECTED|Il [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) oggetto non è già stato inizializzato con un'origine dei simboli.|
 |E_INVALIDARG|Parametro `ppSession` non valido.|
 |E_OUTOFMEMORY|Memoria insufficiente per aprire la sessione.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questo metodo consente di aprire una [IDiaSession](../../debugger/debug-interface-access/idiasession.md) oggetti per un'origine dati.
 
 `IDiaSession` le query che gli oggetti nell'origine dati. Una sessione gestisce uno spazio di indirizzi per ogni set di simboli di debug. Se il file DLL o .exe descritto dai simboli di origine dati è attivo nell'indirizzo più intervalli (ad esempio, poiché più processi averlo caricato), quindi deve essere usata una sola sessione per ogni intervallo di indirizzi.
@@ -60,7 +61,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[Panoramica](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [Panoramica](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

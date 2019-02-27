@@ -21,47 +21,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023720"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629521"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;distribuzione&gt; elemento (distribuzione ClickOnce)
-Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'esposizione al sistema.  
+Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'esposizione al sistema.
 
-## <a name="syntax"></a>Sintassi  
+## <a name="syntax"></a>Sintassi
 
-```xml  
+```xml
 
-      <deployment   
-   install  
-   minimumRequiredVersion  
-   mapFileExtensions  
-   disallowUrlActivation  
-   trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
-            <expiration  
-               maximumAge  
-               unit  
-            />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
-</deployment>  
-```  
+      <deployment
+   install
+   minimumRequiredVersion
+   mapFileExtensions
+   disallowUrlActivation
+   trustUrlParameters
+>
+   <subscription>
+         <update>
+            <beforeApplicationStartup/>
+            <expiration
+               maximumAge
+               unit
+            />
+         </update>
+   </subscription>
+   <deploymentProvider
+      codebase
+   />
+</deployment>
+```
 
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- L'elemento `deployment` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v1` . L'elemento presenta gli attributi seguenti.  
+## <a name="elements-and-attributes"></a>Elementi e attributi
+ L'elemento `deployment` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v1` . L'elemento presenta gli attributi seguenti.
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |--------------------------| - |
 | `install` | Obbligatorio. Specifica se l'applicazione definisce una presenza in di Windows **avviare** dal menu e nel Pannello di controllo **Aggiungi / Rimuovi programmi** dell'applicazione. I valori validi sono `true` e `false`. Se `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eseguirà sempre la versione più recente di questa applicazione dalla rete e non riconoscerà il `subscription` elemento. |
 | `minimumRequiredVersion` | Facoltativo. Specifica la versione minima dell'applicazione che è possibile eseguire sul client. Se il numero di versione dell'applicazione è inferiore al numero di versione specificato nel manifesto di distribuzione, l'applicazione non verrà eseguita. I numeri di versione devono essere specificati nel formato `N.N.N.N`, dove `N` è un intero senza segno. Se il `install` attributo è `false`, `minimumRequiredVersion` non deve essere impostato. |
@@ -69,59 +69,59 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
 | `disallowUrlActivation` | Facoltativo. Il valore predefinito è `false`. Se `true`, impedisce a un'applicazione installata in corso l'avvio facendo clic sull'URL o immettendo l'URL in Internet Explorer. Se il `install` attributo non è presente, questo attributo viene ignorato. |
 | `trustURLParameters` | Facoltativo. Il valore predefinito è `false`. Se `true`, l'URL può contenere parametri di stringa di query che vengono passati all'applicazione, molto come argomenti della riga di comando vengono passati a un'applicazione della riga di comando. Per altre informazioni, vedere [procedura: recuperare le informazioni di stringa di Query in un'applicazione ClickOnce Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se il `disallowUrlActivation` attributo è `true`, `trustUrlParameters` deve essere escluso dal manifesto o impostata esplicitamente su `false`. |
 
- Il `deployment` elemento contiene anche i seguenti elementi figlio.  
+ Il `deployment` elemento contiene anche i seguenti elementi figlio.
 
-## <a name="subscription"></a>sottoscrizione  
- Facoltativo. Contiene il `update` elemento. L'elemento `subscription` non ha attributi. Se il `subscription` elemento non esiste, il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione mai analizzi gli aggiornamenti. Se il `install` attributo del `deployment` elemento viene `false`, il `subscription` elemento viene ignorato, poiché un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che viene sempre avviato dalla rete utilizza la versione più recente.  
+## <a name="subscription"></a>sottoscrizione
+ Facoltativo. Contiene il `update` elemento. L'elemento `subscription` non ha attributi. Se il `subscription` elemento non esiste, il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione mai analizzi gli aggiornamenti. Se il `install` attributo del `deployment` elemento viene `false`, il `subscription` elemento viene ignorato, poiché un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che viene sempre avviato dalla rete utilizza la versione più recente.
 
-## <a name="update"></a>aggiorna  
- Obbligatorio. Questo elemento è figlio del `subscription` elemento e può essere il `beforeApplicationStartup` o il `expiration` elemento. `beforeApplicationStartup` e `expiration` non possono essere specificati nel manifesto di distribuzione stesso.  
+## <a name="update"></a>aggiorna
+ Obbligatorio. Questo elemento è figlio del `subscription` elemento e può essere il `beforeApplicationStartup` o il `expiration` elemento. `beforeApplicationStartup` e `expiration` non possono essere specificati nel manifesto di distribuzione stesso.
 
- L'elemento `update` non ha attributi.  
+ L'elemento `update` non ha attributi.
 
-## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Facoltativo. Questo elemento è figlio di `update` elemento e non include attributi. Quando la `beforeApplicationStartup` elemento esiste, l'applicazione sarà bloccato al momento [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Cerca aggiornamenti, se il client è online. Se questo elemento non esiste, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] analizzi prima di tutto gli aggiornamenti in base ai valori specificati per il `expiration` elemento. `beforeApplicationStartup` e `expiration` non possono essere specificati nel manifesto di distribuzione stesso.  
+## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
+ Facoltativo. Questo elemento è figlio di `update` elemento e non include attributi. Quando la `beforeApplicationStartup` elemento esiste, l'applicazione sarà bloccato al momento [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Cerca aggiornamenti, se il client è online. Se questo elemento non esiste, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] analizzi prima di tutto gli aggiornamenti in base ai valori specificati per il `expiration` elemento. `beforeApplicationStartup` e `expiration` non possono essere specificati nel manifesto di distribuzione stesso.
 
-## <a name="expiration"></a>scadenza  
- Facoltativo. Questo elemento è figlio di `update` elemento, e non ha elementi figlio. `beforeApplicationStartup` e `expiration` non possono essere specificati nel manifesto di distribuzione stesso. Quando si verifica la disponibilità di aggiornamenti e viene rilevata una versione aggiornata, la nuova versione vengono memorizzati nella cache mentre è in esecuzione la versione esistente. Installa quindi la nuova versione al successivo avvio del [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
+## <a name="expiration"></a>scadenza
+ Facoltativo. Questo elemento è figlio di `update` elemento, e non ha elementi figlio. `beforeApplicationStartup` e `expiration` non possono essere specificati nel manifesto di distribuzione stesso. Quando si verifica la disponibilità di aggiornamenti e viene rilevata una versione aggiornata, la nuova versione vengono memorizzati nella cache mentre è in esecuzione la versione esistente. Installa quindi la nuova versione al successivo avvio del [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.
 
- Il `expiration` elemento supporta gli attributi seguenti.  
+ Il `expiration` elemento supporta gli attributi seguenti.
 
-|Attributo|Descrizione|  
-|---------------|-----------------|  
-|`maximumAge`|Obbligatorio. Identifica la modalità precedente dovrebbe diventare l'aggiornamento corrente prima che l'applicazione esegue una verifica dell'aggiornamento. L'unità di tempo è determinata dal `unit` attributo.|  
-|`unit`|Obbligatorio. Identifica l'unità di tempo per `maximumAge`. Le unità valide sono `hours`, `days`, e `weeks`.|  
+|Attributo|Description|
+|---------------|-----------------|
+|`maximumAge`|Obbligatorio. Identifica la modalità precedente dovrebbe diventare l'aggiornamento corrente prima che l'applicazione esegue una verifica dell'aggiornamento. L'unità di tempo è determinata dal `unit` attributo.|
+|`unit`|Obbligatorio. Identifica l'unità di tempo per `maximumAge`. Le unità valide sono `hours`, `days`, e `weeks`.|
 
-## <a name="deploymentprovider"></a>deploymentProvider  
- Per .NET Framework 2.0, questo elemento è obbligatorio se il manifesto di distribuzione contiene un `subscription` sezione. Per .NET Framework 3.5 e versioni successive, questo elemento è facoltativo e utilizzerà il server e il percorso di file in cui è stato individuato il manifesto di distribuzione.  
+## <a name="deploymentprovider"></a>deploymentProvider
+ Per .NET Framework 2.0, questo elemento è obbligatorio se il manifesto di distribuzione contiene un `subscription` sezione. Per .NET Framework 3.5 e versioni successive, questo elemento è facoltativo e utilizzerà il server e il percorso di file in cui è stato individuato il manifesto di distribuzione.
 
- Questo elemento è figlio dell'elemento `deployment` e ha l'attributo seguente.  
+ Questo elemento è figlio dell'elemento `deployment` e ha l'attributo seguente.
 
 
-| Attributo | Descrizione |
+| Attributo | Description |
 |------------| - |
 | `codebase` | Obbligatorio. Identifica la posizione del manifesto di distribuzione che viene usato per aggiornare, come Uniform Resource Identifier (URI), il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo elemento consente inoltre di percorsi di aggiornamento per le installazioni basate sul CD di inoltro. Deve essere un URI valido. |
 
-## <a name="remarks"></a>Osservazioni  
- È possibile configurare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione cercare gli aggiornamenti all'avvio, cercare gli aggiornamenti dopo l'avvio o non controllare mai gli aggiornamenti. Per analizzare gli aggiornamenti all'avvio, assicurarsi che il `beforeApplicationStartup` elemento esiste sotto il `update` elemento. Per cercare gli aggiornamenti dopo l'avvio, assicurarsi che il `expiration` elemento esiste nel `update` elemento e che siano stati specificati gli intervalli di aggiornamento.  
+## <a name="remarks"></a>Osservazioni
+ È possibile configurare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione cercare gli aggiornamenti all'avvio, cercare gli aggiornamenti dopo l'avvio o non controllare mai gli aggiornamenti. Per analizzare gli aggiornamenti all'avvio, assicurarsi che il `beforeApplicationStartup` elemento esiste sotto il `update` elemento. Per cercare gli aggiornamenti dopo l'avvio, assicurarsi che il `expiration` elemento esiste nel `update` elemento e che siano stati specificati gli intervalli di aggiornamento.
 
- Per disabilitare il controllo degli aggiornamenti, rimuovere il `subscription` elemento. Quando si specifica nel manifesto di distribuzione mai cercare gli aggiornamenti, è possibile comunque manualmente cercare gli aggiornamenti usando il <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> (metodo).  
+ Per disabilitare il controllo degli aggiornamenti, rimuovere il `subscription` elemento. Quando si specifica nel manifesto di distribuzione mai cercare gli aggiornamenti, è possibile comunque manualmente cercare gli aggiornamenti usando il <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> (metodo).
 
- Per altre informazioni sugli aggiornamenti di deploymentProvider, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Per altre informazioni sugli aggiornamenti di deploymentProvider, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
-## <a name="examples"></a>Esempi  
- L'esempio di codice seguente illustra un `deployment` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. Nell'esempio viene usato un `deploymentProvider` elemento per indicare il percorso di aggiornamento Preferiti.  
+## <a name="examples"></a>Esempi
+ L'esempio di codice seguente illustra un `deployment` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. Nell'esempio viene usato un `deploymentProvider` elemento per indicare il percorso di aggiornamento Preferiti.
 
-```xml  
-<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="6" unit="hours" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />  
-  </deployment>  
-```  
+```xml
+<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="6" unit="hours" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />
+  </deployment>
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Vedere anche
+- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dff89e6d2552773e78e3e3de051e68cf81de9fc7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042088"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642170"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-Recupera l'indirizzo virtuale (valutazione della vulnerabilità) dell'inizio della sezione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce la valutazione della vulnerabilità dell'inizio della sezione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Recupera l'indirizzo virtuale (valutazione della vulnerabilità) dell'inizio della sezione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce la valutazione della vulnerabilità dell'inizio della sezione.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
