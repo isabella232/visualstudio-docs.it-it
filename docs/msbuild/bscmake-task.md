@@ -20,30 +20,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81644cd67ff46291d3bb4e678e858d41a4305bb1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027231"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626518"
 ---
 # <a name="bscmake-task"></a>Attività BscMake
 > [!IMPORTANT]
->  Lo strumento BscMake non viene più usato dall'IDE di Visual Studio. A partire da Visual Studio 2008 le informazioni di visualizzazione vengono automaticamente archiviate in un file *SDF* nella cartella della *soluzione*.  
-  
- Esegue il wrapping dello strumento Microsoft Browse Information Maintenance Utility (*bscmake.exe*).  Lo strumento *bscmake.exe* genera un file di informazioni di visualizzazione (*BSC*) dai file browser di origine (*SBR*) creati durante la compilazione. Usare il **Visualizzatore oggetti** per visualizzare un file *BSC*. Per altre informazioni, vedere [Riferimenti a BSCMAKE](/cpp/build/reference/bscmake-reference).  
-  
-## <a name="parameters"></a>Parametri  
- La tabella seguente illustra i parametri dell'attività **BscMake**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.  
-  
-|Parametro|Description|  
-|---------------|-----------------|  
-|**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **BscMake**.<br /><br /> Per altre informazioni, vedere le opzioni in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|  
-|**OutputFile**|Parametro **String** facoltativo.<br /><br /> Specifica un nome di file che esegue l'override del nome del file di output predefinito.<br /><br /> Per altre informazioni, vedere l'opzione **/o** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|  
-|**PreserveSBR**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, forza una compilazione non incrementale. Viene eseguita una compilazione completa, non incrementale indipendentemente dall'esistenza di un file *BSC* e impedisce che i file *SBR* vengano troncati.<br /><br /> Per altre informazioni, vedere l'opzione **/n** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|  
-|**Sources**|Parametro **ITaskItem[]** facoltativo.<br /><br /> Definisce una matrice di elementi del file di origine MSBuild che può essere usata ed emessa dalle attività.|  
-|**SuppressStartupBanner**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/NOLOGO** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|  
-|**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory per il log di Tracker.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+>  Lo strumento BscMake non viene più usato dall'IDE di Visual Studio. A partire da Visual Studio 2008 le informazioni di visualizzazione vengono automaticamente archiviate in un file *SDF* nella cartella della *soluzione*.
+
+ Esegue il wrapping dello strumento Microsoft Browse Information Maintenance Utility (*bscmake.exe*).  Lo strumento *bscmake.exe* genera un file di informazioni di visualizzazione (*BSC*) dai file browser di origine (*SBR*) creati durante la compilazione. Usare il **Visualizzatore oggetti** per visualizzare un file *BSC*. Per altre informazioni, vedere [Riferimenti a BSCMAKE](/cpp/build/reference/bscmake-reference).
+
+## <a name="parameters"></a>Parametri
+ La tabella seguente illustra i parametri dell'attività **BscMake**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.
+
+|Parametro|Description|
+|---------------|-----------------|
+|**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **BscMake**.<br /><br /> Per altre informazioni, vedere le opzioni in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|
+|**OutputFile**|Parametro **String** facoltativo.<br /><br /> Specifica un nome di file che esegue l'override del nome del file di output predefinito.<br /><br /> Per altre informazioni, vedere l'opzione **/o** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|
+|**PreserveSBR**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, forza una compilazione non incrementale. Viene eseguita una compilazione completa, non incrementale indipendentemente dall'esistenza di un file *BSC* e impedisce che i file *SBR* vengano troncati.<br /><br /> Per altre informazioni, vedere l'opzione **/n** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|
+|**Sources**|Parametro **ITaskItem[]** facoltativo.<br /><br /> Definisce una matrice di elementi del file di origine MSBuild che può essere usata ed emessa dalle attività.|
+|**SuppressStartupBanner**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/NOLOGO** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|
+|**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory per il log di Tracker.|
+
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

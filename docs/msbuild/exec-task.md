@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1357c598b2a30f390372ed9630b044c951172531
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef9759c5a422a0b67cdb9e8f7dde565b732958dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853716"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610255"
 ---
 # <a name="exec-task"></a>Exec (attività)
 Esegue il programma o il comando specificato con gli argomenti specificati.
@@ -31,7 +31,7 @@ Esegue il programma o il comando specificato con gli argomenti specificati.
 ## <a name="parameters"></a>Parametri
 La tabella seguente descrive i parametri dell'attività `Exec`.
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`Command`|Parametro `String` obbligatorio.<br /><br /> Uno o più comandi da eseguire. Possono essere comandi di sistema, ad esempio attrib, o file eseguibili, ad esempio *program.exe*, *runprogram.bat* o *setup.msi*.<br /><br /> Questo parametro può contenere più righe di comandi. In alternativa, è possibile includere più comandi in un file batch ed eseguirlo tramite questo parametro.|
 |`ConsoleOutput`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ogni output di elemento è una riga del flusso di output standard o di errore standard generato dallo strumento. Viene acquisito solo se `ConsoleToMsBuild` è impostato su `true`.|
@@ -47,7 +47,7 @@ La tabella seguente descrive i parametri dell'attività `Exec`.
 |`StdOutEncoding`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica la codifica del flusso di output standard dell'attività acquisito. Il valore predefinito è la codifica dell'output della console corrente.|
 |`WorkingDirectory`|Parametro `String` facoltativo.<br /><br /> Specifica la directory in cui verrà eseguito il comando.<br /><br />Valore predefinito: directory di lavoro corrente del progetto.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questa attività è utile nei casi in cui non è disponibile un'attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] specifica per il processo che si vuole eseguire. Tuttavia, l'attività `Exec`, a differenza di un'attività più specifica, non può eseguire un'altra elaborazione o operazioni condizionali in base al risultato dello strumento o del comando eseguito.
 
 Anziché richiamare direttamente un processo, l'attività `Exec` chiama *cmd.exe*.
@@ -71,5 +71,5 @@ Nell'esempio seguente l'attività `Exec` viene usata per eseguire un comando.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

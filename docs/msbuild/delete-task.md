@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0893ded1cd2eb40cc6004f90e29e0765ff48ca6a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853797"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610291"
 ---
 # <a name="delete-task"></a>Delete (attività)
 Elimina i file specificati.
@@ -31,13 +31,13 @@ Elimina i file specificati.
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `Delete` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`DeletedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file che sono stati eliminati correttamente.|
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da eliminare.|
 |`TreatErrorsAsWarnings`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, gli errori vengono registrati come avvisi. Il valore predefinito è `false`.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
@@ -57,5 +57,5 @@ Nell'esempio seguente viene eliminato il file *MyApp.pdb*.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

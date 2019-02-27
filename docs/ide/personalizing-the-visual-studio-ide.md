@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b374d897b3c2e03504a334c41d6eafc682e38f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913080"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708771"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -50,9 +50,13 @@ Per modificare le opzioni di colorazione nell'editor, digitare `environment` nel
 
 Per aggiungere o rimuovere voci di menu o elementi della barra degli strumenti, vedere [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Pagina iniziale
 
 Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Personalizzare la pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
 
 ## <a name="window-layouts"></a>Layout delle finestre
 

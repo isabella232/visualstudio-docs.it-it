@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/28/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Configurazione degli amministratori per le sottoscrizioni cloud
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 861862d964d5ccd8e926730f648a41bc790bc64d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283444"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841448"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurare gli amministratori per le sottoscrizioni cloud di Visual Studio
 

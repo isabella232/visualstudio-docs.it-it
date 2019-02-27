@@ -10,56 +10,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013067"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612322"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
-L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectionCmd.exe*) consente di raccogliere tracce dalla riga di comando in modo da poterle visualizzare nel visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  
+L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectionCmd.exe*) consente di raccogliere tracce dalla riga di comando in modo da poterle visualizzare nel visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.
 
 > [!NOTE]
->  A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio.) È possibile scaricare gli [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) dall'Area download.  
+>  A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio.) È possibile scaricare gli [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) dall'Area download.
 
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Scaricare l'utilità della riga di comando del visualizzatore di concorrenza  
- Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, *CVCollectionCmd.exe* è installato in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Scaricare l'utilità della riga di comando del visualizzatore di concorrenza
+ Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, *CVCollectionCmd.exe* è installato in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).
 
-## <a name="collect-a-trace-with-cvcollectioncmd"></a>Raccogliere una traccia con CVCollectionCmd  
- È possibile raccogliere una traccia avviando l'app con CVCollectionCmd oppure tramite una connessione all'app. Per le opzioni disponibili, vedere i riferimenti ai comandi seguenti. Esempio:  
+## <a name="collect-a-trace-with-cvcollectioncmd"></a>Raccogliere una traccia con CVCollectionCmd
+ È possibile raccogliere una traccia avviando l'app con CVCollectionCmd oppure tramite una connessione all'app. Per le opzioni disponibili, vedere i riferimenti ai comandi seguenti. Esempio:
 
-```cmd  
-<Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
-```  
+```cmd
+<Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data
+```
 
-## <a name="commands-and-parameters"></a>Comandi e parametri  
- Per ottenere informazioni sui comandi e sui parametri nell'utilità da riga di comando, digitare quanto segue al prompt dei comandi:  
+## <a name="commands-and-parameters"></a>Comandi e parametri
+ Per ottenere informazioni sui comandi e sui parametri nell'utilità da riga di comando, digitare quanto segue al prompt dei comandi:
 
- **CvCollectionCmd /?**  
+ **CvCollectionCmd /?**
 
-|Opzione|Description|Parametri|Valori restituiti|  
-|------------|-----------------|----------------|-------------------|  
-|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](/dotnet/framework/wcf/samples/etw-tracing) necessarie.|  
-|Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
-|Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
-|Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
-|Analyze|Analizza la traccia specificata.|Percorso completo del file CVTrace.|0 se l'analisi è riuscita.<br /><br /> 1 se non è possibile avviare l'analisi poiché la traccia specificata è a livello di sistema, ma non è stato specificato alcun processo di destinazione.<br /><br /> 2 se non è possibile avviare l'analisi poiché la traccia specificata non è a livello di sistema ed è stato specificato un processo.<br /><br /> 3  se l'analisi non è riuscita poiché il processo specificato non è valido.<br /><br /> 4 se l'analisi non è riuscita poiché il file CVTrace specificato non è valido.|  
-|LaunchArgs|Specifica gli argomenti eseguibili di destinazione. Questa opzione è applicabile solo al comando Launch.|Argomenti da riga di comando per l'applicazione.|Nessuno.|  
-|Outdir|Specifica la directory in cui salvare i file di traccia. Applicabile ai comandi Launch e Attach.|Percorso di directory o percorso relativo.|Nessuno.|  
-|Process|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|Nessuno.|  
-|Config|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|Nessuno.|  
+|Opzione|Description|Parametri|Valori restituiti|
+|------------|-----------------|----------------|-------------------|
+|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](/dotnet/framework/wcf/samples/etw-tracing) necessarie.|
+|Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|
+|Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|
+|Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|
+|Analyze|Analizza la traccia specificata.|Percorso completo del file CVTrace.|0 se l'analisi è riuscita.<br /><br /> 1 se non è possibile avviare l'analisi poiché la traccia specificata è a livello di sistema, ma non è stato specificato alcun processo di destinazione.<br /><br /> 2 se non è possibile avviare l'analisi poiché la traccia specificata non è a livello di sistema ed è stato specificato un processo.<br /><br /> 3  se l'analisi non è riuscita poiché il processo specificato non è valido.<br /><br /> 4 se l'analisi non è riuscita poiché il file CVTrace specificato non è valido.|
+|LaunchArgs|Specifica gli argomenti eseguibili di destinazione. Questa opzione è applicabile solo al comando Launch.|Argomenti da riga di comando per l'applicazione.|Nessuno.|
+|Outdir|Specifica la directory in cui salvare i file di traccia. Applicabile ai comandi Launch e Attach.|Percorso di directory o percorso relativo.|Nessuno.|
+|Process|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|Nessuno.|
+|Config|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|Nessuno.|
 
-## <a name="customize-configuration-settings"></a>Personalizzare le impostazioni di configurazione  
- Se si usa CVCollectionCmd per raccogliere tracce e si vogliono personalizzare le impostazioni di raccolta, usare un file di configurazione per specificarle.  
+## <a name="customize-configuration-settings"></a>Personalizzare le impostazioni di configurazione
+ Se si usa CVCollectionCmd per raccogliere tracce e si vogliono personalizzare le impostazioni di raccolta, usare un file di configurazione per specificarle.
 
 > [!NOTE]
->  Quando si usa Visual Studio per raccogliere le tracce, è necessario non modificare direttamente il file di configurazione.  Per modificare le impostazioni, usare invece la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .  
+>  Quando si usa Visual Studio per raccogliere le tracce, è necessario non modificare direttamente il file di configurazione.  Per modificare le impostazioni, usare invece la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .
 
- Per modificare le impostazioni di raccolta, creare un file di configurazione nella macchina in cui sarà eseguita l'utilità CVCollectionCmd. È possibile creare un file di configurazione completamente nuovo oppure copiare il file di configurazione disponibile nel computer in cui è installato Visual Studio e modificarlo. Il nome del file è *UserConfig.xml* e il file si trova nella cartella *Local AppData*. Quando si esegue l'utilità, usare l'opzione Config insieme al comando Launch, Attach o Analyze.  Specificare il percorso del file di configurazione nel parametro associato all'opzione Config.  
+ Per modificare le impostazioni di raccolta, creare un file di configurazione nella macchina in cui sarà eseguita l'utilità CVCollectionCmd. È possibile creare un file di configurazione completamente nuovo oppure copiare il file di configurazione disponibile nel computer in cui è installato Visual Studio e modificarlo. Il nome del file è *UserConfig.xml* e il file si trova nella cartella *Local AppData*. Quando si esegue l'utilità, usare l'opzione Config insieme al comando Launch, Attach o Analyze.  Specificare il percorso del file di configurazione nel parametro associato all'opzione Config.
 
-### <a name="configuration-file-tags"></a>Tag del file di configurazione  
- Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  
+### <a name="configuration-file-tags"></a>Tag del file di configurazione
+ Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:
 
 
 | Tag | Description | Valori |
@@ -92,62 +92,62 @@ L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectio
 | JustMyCode | Specifica l'elenco di directory Just My Code. | Un elenco di zero o più elementi MyCodeDirectory. |
 | MyCodeDirectory | Specifica una directory che include il codice dell'utente. | Un percorso assoluto. |
 
-### <a name="example"></a>Esempio  
- Invece di creare un file di configurazione completamente nuovo, è possibile copiare l'esempio seguente e quindi modificarlo in base alle proprie esigenze.  
+### <a name="example"></a>Esempio
+ Invece di creare un file di configurazione completamente nuovo, è possibile copiare l'esempio seguente e quindi modificarlo in base alle proprie esigenze.
 
-```xml  
-<?xml version="1.0"?>  
-<LocalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="0">  
+```xml
+<?xml version="1.0"?>
+<LocalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="0">
 
-  <IncludeEnvSymbolPath>true</IncludeEnvSymbolPath>  
+  <IncludeEnvSymbolPath>true</IncludeEnvSymbolPath>
 
-  <DeleteEtlsAfterAnalysis>true</DeleteEtlsAfterAnalysis>  
+  <DeleteEtlsAfterAnalysis>true</DeleteEtlsAfterAnalysis>
 
-  <TraceLocation>C:\traces</TraceLocation>  
+  <TraceLocation>C:\traces</TraceLocation>
 
-  <SymbolPath>http://symweb</SymbolPath>  
+  <SymbolPath>http://symweb</SymbolPath>
 
-  <Markers>  
-    <MarkerProvider Name="Default" Guid="8d4925ab-505a-483b-a7e0-6f824a07a6f0" Level="Low" />  
-    <MarkerProvider Name="TPL" Guid="2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5" Level="Normal" />  
-    <MarkerProvider Name="TPL Dataflow" Guid="16f53577-e41d-43d4-b47e-c17025bf4025" Level="Normal" />  
-    <MarkerProvider Name="TPL Synchronization" Guid="ec631d38-466b-4290-9306-834971ba0217" Level="Normal" />  
-    <MarkerProvider Name="PLINQ" Guid="159eeeec-4a14-4418-a8fe-faabcd987887" Level="Normal" />  
-    <MarkerProvider Name="Concurrency Runtime" Guid="f7b697a3-4db5-4d3b-be71-c4d284e6592f" Level="Normal" />  
-    <MarkerProvider Name="Scenario Markers" Guid="fb9244c9-f23a-4966-8a9c-97a51f8c355b" Level="Low" />  
+  <Markers>
+    <MarkerProvider Name="Default" Guid="8d4925ab-505a-483b-a7e0-6f824a07a6f0" Level="Low" />
+    <MarkerProvider Name="TPL" Guid="2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5" Level="Normal" />
+    <MarkerProvider Name="TPL Dataflow" Guid="16f53577-e41d-43d4-b47e-c17025bf4025" Level="Normal" />
+    <MarkerProvider Name="TPL Synchronization" Guid="ec631d38-466b-4290-9306-834971ba0217" Level="Normal" />
+    <MarkerProvider Name="PLINQ" Guid="159eeeec-4a14-4418-a8fe-faabcd987887" Level="Normal" />
+    <MarkerProvider Name="Concurrency Runtime" Guid="f7b697a3-4db5-4d3b-be71-c4d284e6592f" Level="Normal" />
+    <MarkerProvider Name="Scenario Markers" Guid="fb9244c9-f23a-4966-8a9c-97a51f8c355b" Level="Low" />
 
-    <!-- The IsEnabled and Categories elements are optional -->  
-    <MarkerProvider Name="myMarker1" Guid="d0dbb3a3-895c-4ce6-96d9-28f69d664dc3" Level="Critical" IsEnabled="false" Categories="0,1,3-5,8" />  
-    <MarkerProvider Name="myMarker2" Guid="03452127-a617-4302-9e30-c0d10442e4ee" Level="Low" IsEnabled="false" Categories="0,1,3-5,8-10,11-13" />  
-  </Markers>  
+    <!-- The IsEnabled and Categories elements are optional -->
+    <MarkerProvider Name="myMarker1" Guid="d0dbb3a3-895c-4ce6-96d9-28f69d664dc3" Level="Critical" IsEnabled="false" Categories="0,1,3-5,8" />
+    <MarkerProvider Name="myMarker2" Guid="03452127-a617-4302-9e30-c0d10442e4ee" Level="Low" IsEnabled="false" Categories="0,1,3-5,8-10,11-13" />
+  </Markers>
 
-  <FilterConfig>  
-    <CollectClrEvents>true</CollectClrEvents>  
-    <ClrCollectionOptions>CollectForNative DisableNGenRundown</ClrCollectionOptions>  
-    <CollectSampleEvents>true</CollectSampleEvents>  
-    <CollectGpuEvents>true</CollectGpuEvents>  
-    <CollectFileIO>true</CollectFileIO>  
-  </FilterConfig>  
+  <FilterConfig>
+    <CollectClrEvents>true</CollectClrEvents>
+    <ClrCollectionOptions>CollectForNative DisableNGenRundown</ClrCollectionOptions>
+    <CollectSampleEvents>true</CollectSampleEvents>
+    <CollectGpuEvents>true</CollectGpuEvents>
+    <CollectFileIO>true</CollectFileIO>
+  </FilterConfig>
 
-  <UserBufferSettings>  
-    <BufferFlushTimer>0</BufferFlushTimer>  
-    <BufferSize>256</BufferSize>  
-    <MinimumBuffers>512</MinimumBuffers>  
-    <MaximumBuffers>1024</MaximumBuffers>  
-  </UserBufferSettings>  
+  <UserBufferSettings>
+    <BufferFlushTimer>0</BufferFlushTimer>
+    <BufferSize>256</BufferSize>
+    <MinimumBuffers>512</MinimumBuffers>
+    <MaximumBuffers>1024</MaximumBuffers>
+  </UserBufferSettings>
 
-  <KernelBufferSettings>  
-    <BufferFlushTimer>0</BufferFlushTimer>  
-    <BufferSize>256</BufferSize>  
-    <MinimumBuffers>512</MinimumBuffers>  
-    <MaximumBuffers>1024</MaximumBuffers>  
-  </KernelBufferSettings>  
+  <KernelBufferSettings>
+    <BufferFlushTimer>0</BufferFlushTimer>
+    <BufferSize>256</BufferSize>
+    <MinimumBuffers>512</MinimumBuffers>
+    <MaximumBuffers>1024</MaximumBuffers>
+  </KernelBufferSettings>
 
-  <!-- List of MyCodeDirectory directories -->  
-  <JustMyCode>  
-    <MyCodeDirectory>C:\myBinaries1</MyCodeDirectory>  
-    <MyCodeDirectory>C:\myBinaries2</MyCodeDirectory>  
-  </JustMyCode>  
-</LocalConfig>  
+  <!-- List of MyCodeDirectory directories -->
+  <JustMyCode>
+    <MyCodeDirectory>C:\myBinaries1</MyCodeDirectory>
+    <MyCodeDirectory>C:\myBinaries2</MyCodeDirectory>
+  </JustMyCode>
+</LocalConfig>
 
 ```

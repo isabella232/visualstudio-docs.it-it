@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853508"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610216"
 ---
 # <a name="downloadfile-task"></a>Attività DownloadFile
 Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTTP).
@@ -38,7 +38,7 @@ Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTT
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `DownloadFile` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`DestinationFileName`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Nome da usare per il file scaricato.  Per impostazione predefinita, il nome del file è derivato dall'elemento `SourceUrl` o server remoto.|
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la cartella di destinazione in cui scaricare il file.  Se non esiste, la cartella viene creata.|
@@ -48,7 +48,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `DownloadFi
 |`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, ignora il download dei file invariati. Il valore predefinito è `true`. L'attività `DownloadFile` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica secondo il server remoto. <br /><br />**Nota:**  se non tutti i server HTTP indicano la data dell'ultima modifica dei file, il file verrà scaricato nuovamente.|
 |`SourceUrl`|Parametro `String` obbligatorio.<br /><br /> Specifica l'URL da scaricare.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
@@ -73,5 +73,5 @@ Nell'esempio seguente viene scaricato un file e incluso negli elementi `Content`
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

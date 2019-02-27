@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7e9e61ffd20828d73cef9c4ce3831d613d69bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89bfc33aaf4b3f80ee6b80a93ad6b71dd3786599
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922225"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627064"
 ---
 # <a name="makedir-task"></a>MakeDir (attività)
 Crea directory e, se necessario, eventuali directory padre.
@@ -31,12 +31,12 @@ Crea directory e, se necessario, eventuali directory padre.
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `MakeDir` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`Directories`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Set di directory da creare.|
 |`DirectoriesCreated`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Le directory create dall'attività. Se non è stato possibile creare alcune directory, può non contenere tutti gli elementi passati al parametro `Directories`.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
@@ -58,5 +58,5 @@ Nell'esempio di codice seguente viene usata l'attività `MakeDir` per creare la 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

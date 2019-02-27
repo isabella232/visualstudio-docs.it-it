@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854109"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626622"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (attività)
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.
@@ -32,7 +32,7 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
 ## <a name="parameters"></a>Parametri
 La tabella seguente descrive i parametri dell'attività `GenerateApplicationManifest`.
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |---------------------------------| - |
 | `AssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Name` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, il nome viene dedotto dal parametro `EntryPoint` o `InputManifest`. Se non è possibile creare alcun nome, l'attività genera un errore. |
 | `AssemblyVersion` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Version` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, viene usato il valore predefinito "1.0.0.0". |
@@ -64,7 +64,7 @@ La tabella seguente descrive i parametri dell'attività `GenerateApplicationMani
 | `TrustInfoFile` | Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML che specifica la sicurezza dell'applicazione. L'elemento radice del documento XML deve essere un nodo trustInfo nello spazio dei nomi asmv2. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
 | `UseApplicationTrust` | Parametro `Boolean` facoltativo.<br /><br /> Se true, le proprietà `Product`, `Publisher` e `SupportUrl` vengono scritte nel manifesto dell'applicazione. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
 
 Per informazioni sull'uso dell'attività `GenerateDeploymentManifest`, vedere [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).
@@ -73,7 +73,7 @@ Gli input per i file e le dipendenze possono essere ulteriormente decorati con i
 
 ## <a name="item-metadata"></a>Metadati degli elementi
 
-|Nome dei metadati|Descrizione|
+|Nome dei metadati|Description|
 |-------------------|-----------------|
 |`DependencyType`|Indica se la dipendenza è pubblicata e installata con l'applicazione o un prerequisito. Questi metadati sono validi per tutte le dipendenze, ma non vengono usati per i file. I valori disponibili per questi metadati sono:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install è il valore predefinito.|
 |`AssemblyType`|Indica se la dipendenza è un assembly gestito o nativo. Questi metadati sono validi per tutte le dipendenze, ma non vengono usati per i file. I valori disponibili per questi metadati sono:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` è il valore predefinito, che indica che il generatore del manifesto determina automaticamente il tipo di assembly.|
@@ -88,7 +88,7 @@ L'esempio illustra lo scenario di generazione del manifesto più semplice possib
 
 > [!NOTE]
 > Nell'esempio seguente tutti i file binari dell'applicazione sono precompilati in modo che sia possibile concentrarsi sugli aspetti della generazione del manifesto. L'esempio produce una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] completamente funzionante.
-> 
+>
 > [!NOTE]
 > Per altre informazioni sulla proprietà `Thumbprint` usata nell'attività `SignFile` in questo esempio, vedere l'[attività SignFile](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Questo esempio è simile all'esempio precedente, ma il nome e l'identità dei ma
 
 > [!NOTE]
 > Nell'esempio seguente tutti i file binari dell'applicazione sono precompilati in modo che sia possibile concentrarsi sugli aspetti della generazione del manifesto. L'esempio produce una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] completamente funzionante.
-> 
+>
 > [!NOTE]
 > Per altre informazioni sulla proprietà `Thumbprint` usata nell'attività `SignFile` in questo esempio, vedere l'[attività SignFile](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ In questo esempio vengono usate le attività `GenerateApplicationManifest` e `Ge
 
 > [!NOTE]
 > Nell'esempio seguente tutti i file binari dell'applicazione sono precompilati in modo che sia possibile concentrarsi sugli aspetti della generazione del manifesto. L'esempio produce una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] completamente funzionante.
-> 
+>
 > [!NOTE]
 > Per altre informazioni sulla proprietà `Thumbprint` usata nell'attività `SignFile` in questo esempio, vedere l'[attività SignFile](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ L'esempio produce l'oggetto *Test.exe.manifest*, che rende l'applicazione XCOPY 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)  
-[Attività SignFile](../msbuild/signfile-task.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
+- [Attività SignFile](../msbuild/signfile-task.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

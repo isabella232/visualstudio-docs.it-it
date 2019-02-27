@@ -18,43 +18,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a58abb31ca4e6c48c45bd0883be37803520e30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022729"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639102"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informazioni di riferimento sulle attività MSBuild WPF
-Il processo di compilazione di Windows Presentation Foundation (WPF) estende Microsoft Build Engine (MSBuild) con un set aggiuntivo di attività di compilazione, tra cui attività di compilazione del markup ed elaborazione di risorse.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [FileClassifier](../msbuild/fileclassifier-task.md)  
- Classifica un set di risorse di origine come quelle che verranno incorporate in un assembly. Se una risorsa non è localizzabile, viene incorporata nell'assembly dell'applicazione principale. In caso contrario, viene incorporata in un assembly satellite.  
-  
- [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)  
- Genera un assembly se in un progetto almeno una pagina [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] fa riferimento a un tipo dichiarato localmente nel progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.  
-  
- [GetWinFXPath](../msbuild/getwinfxpath-task.md)  
- Restituisce la directory del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] corrente.  
-  
- [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)  
- Converte i file di progetto [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] non localizzabili in formato binario compilato.  
-  
- [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)  
- Esegue la compilazione del markup del secondo passaggio sui file [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] che fanno riferimento ai tipi nello stesso progetto.  
-  
- [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)  
- Unisce i commenti e gli attributi di localizzazione di uno o più file in formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in un singolo file per l'intero assembly.  
-  
- [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)  
- Incorpora una o più risorse (*jpg*, *ico*, *bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in formato binario e altri tipi di estensione) in un file con estensione *resources*.  
-  
- [UidManager](../msbuild/uidmanager-task.md)  
- Controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] inclusi nei file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] di origine.  
-  
- [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- Aggiunge l'elemento **\<hostInBrowser />** al manifesto dell'applicazione (*\<nomeprogetto>.exe.manifest*) quando viene compilato un progetto [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].  
-  
-## <a name="see-also"></a>Vedere anche  
- [MSBuild](../msbuild/msbuild.md)
+Il processo di compilazione di Windows Presentation Foundation (WPF) estende Microsoft Build Engine (MSBuild) con un set aggiuntivo di attività di compilazione, tra cui attività di compilazione del markup ed elaborazione di risorse.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+- [FileClassifier](../msbuild/fileclassifier-task.md)
+
+ Classifica un set di risorse di origine come quelle che verranno incorporate in un assembly. Se una risorsa non è localizzabile, viene incorporata nell'assembly dell'applicazione principale. In caso contrario, viene incorporata in un assembly satellite.
+
+- [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
+
+ Genera un assembly se in un progetto almeno una pagina [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] fa riferimento a un tipo dichiarato localmente nel progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.
+
+- [GetWinFXPath](../msbuild/getwinfxpath-task.md)
+
+ Restituisce la directory del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] corrente.
+
+- [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
+
+ Converte i file di progetto [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] non localizzabili in formato binario compilato.
+
+- [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
+
+ Esegue la compilazione del markup del secondo passaggio sui file [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] che fanno riferimento ai tipi nello stesso progetto.
+
+- [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
+
+ Unisce i commenti e gli attributi di localizzazione di uno o più file in formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in un singolo file per l'intero assembly.
+
+- [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
+
+ Incorpora una o più risorse (*jpg*, *ico*, *bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in formato binario e altri tipi di estensione) in un file con estensione *resources*.
+
+- [UidManager](../msbuild/uidmanager-task.md)
+
+ Controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] inclusi nei file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] di origine.
+
+- [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
+
+ Aggiunge l'elemento **\<hostInBrowser />** al manifesto dell'applicazione (*\<nomeprogetto>.exe.manifest*) quando viene compilato un progetto [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
+
+## <a name="see-also"></a>Vedere anche
+- [MSBuild](../msbuild/msbuild.md)

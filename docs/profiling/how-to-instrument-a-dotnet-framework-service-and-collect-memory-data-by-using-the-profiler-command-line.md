@@ -8,68 +8,68 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 987e0c080f684286fbc49308ca25535aca2f14ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9db76f90f50fd2eda6fcb443b2b7ca34a8bbc169
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003106"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604704"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
-Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e raccogliere dati di memoria. È possibile raccogliere i dati di allocazione della memoria oppure i dati di allocazione della memoria e i dati di durata degli oggetti.  
+Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e raccogliere dati di memoria. È possibile raccogliere i dati di allocazione della memoria oppure i dati di allocazione della memoria e i dati di durata degli oggetti.
 
 > [!NOTE]
->  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
-> 
+>  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+>
 > [!NOTE]
->  Non è possibile profilare un servizio con il metodo di strumentazione se il servizio non può essere riavviato dopo l'avvio del computer, ad esempio un servizio che viene avviato all'avvio del sistema operativo.  
-> 
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. 
+>  Non è possibile profilare un servizio con il metodo di strumentazione se il servizio non può essere riavviato dopo l'avvio del computer, ad esempio un servizio che viene avviato all'avvio del sistema operativo.
+>
+>  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
-## <a name="start-the-profiling-session"></a>Avviare la sessione di profilatura  
- Per raccogliere dati sulle prestazioni da un servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate e lo strumento [VSInstr.exe](../profiling/vsinstr.md) per creare una copia instrumentata del file binario del servizio.  
+## <a name="start-the-profiling-session"></a>Avviare la sessione di profilatura
+ Per raccogliere dati sulle prestazioni da un servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate e lo strumento [VSInstr.exe](../profiling/vsinstr.md) per creare una copia instrumentata del file binario del servizio.
 
- Per configurare il computer che ospita il servizio per la profilatura è necessario riavviarlo. È necessario anche avviare il servizio manualmente da Gestione controllo servizi. Avviare quindi il profiler e quindi il servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ Per configurare il computer che ospita il servizio per la profilatura è necessario riavviarlo. È necessario anche avviare il servizio manualmente da Gestione controllo servizi. Avviare quindi il profiler e quindi il servizio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
- Quando viene eseguito il componente instrumentato, i dati di memoria vengono raccolti automaticamente in un file di dati. È possibile sospendere e riprendere la raccolta dei dati durante la sessione di profilatura.  
+ Quando viene eseguito il componente instrumentato, i dati di memoria vengono raccolti automaticamente in un file di dati. È possibile sospendere e riprendere la raccolta dei dati durante la sessione di profilatura.
 
- Per terminare una sessione di profilatura, chiudere il servizio e arrestare in modo esplicito il profiler. Nella maggior parte dei casi è consigliabile cancellare le variabili di ambiente di profilatura alla fine di una sessione.  
+ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in modo esplicito il profiler. Nella maggior parte dei casi è consigliabile cancellare le variabili di ambiente di profilatura alla fine di una sessione.
 
-#### <a name="to-begin-profiling-a-net-framework-service"></a>Per iniziare la profilatura di un servizio .NET Framework  
+#### <a name="to-begin-profiling-a-net-framework-service"></a>Per iniziare la profilatura di un servizio .NET Framework
 
-1. Aprire una finestra del prompt dei comandi.  
+1. Aprire una finestra del prompt dei comandi.
 
-2. Usare lo strumento **VSInstr** per generare una versione instrumentata del file binario del servizio.  
+2. Usare lo strumento **VSInstr** per generare una versione instrumentata del file binario del servizio.
 
-3. Usare Gestione controllo servizi per sostituire il file binario originale con la versione instrumentata. Verificare che il tipo di avvio del servizio sia impostato su Manuale.  
+3. Usare Gestione controllo servizi per sostituire il file binario originale con la versione instrumentata. Verificare che il tipo di avvio del servizio sia impostato su Manuale.
 
-4. Inizializzare le variabili di ambiente di profilatura. Tipo:  
+4. Inizializzare le variabili di ambiente di profilatura. Tipo:
 
-    **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
+    **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}
 
-   -   **/globaltracegc** e **/globaltracegclife** abilitano la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.  
+   -   **/globaltracegc** e **/globaltracegclife** abilitano la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.
 
-       |Opzione|Description|  
-       |------------|-----------------|  
-       |**/globaltracegc**|Raccoglie solo i dati di allocazione della memoria.|  
-       |**/globaltracegclife**|Raccoglie i dati di allocazione della memoria e i dati di durata degli oggetti.|  
+       |Opzione|Description|
+       |------------|-----------------|
+       |**/globaltracegc**|Raccoglie solo i dati di allocazione della memoria.|
+       |**/globaltracegclife**|Raccoglie i dati di allocazione della memoria e i dati di durata degli oggetti.|
 
-5. Riavviare il computer.  
+5. Riavviare il computer.
 
-6. Aprire una finestra del prompt dei comandi.  
+6. Aprire una finestra del prompt dei comandi.
 
-7. Avvia il profiler. Tipo:  
+7. Avvia il profiler. Tipo:
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - L'opzione **/start: contention** inizializza il profiler.  
+   - L'opzione **/start: contention** inizializza il profiler.
 
-   - L'opzione **/output:**`OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).  
+   - L'opzione **/output:**`OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).
 
-     È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.  
+     È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
    > [!NOTE]
-   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.  
+   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.
 
    | Opzione | Description |
    | - | - |
@@ -83,46 +83,46 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
 
-8. Se necessario, avviare il servizio.  
+8. Se necessario, avviare il servizio.
 
-9. Connettere il profiler al servizio. Tipo:  
+9. Connettere il profiler al servizio. Tipo:
 
-     **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
+     **VSPerfCmd /attach:** `PID`&#124;`ProcessName`
 
-    -   Specificare l'ID processo o il nome del processo del servizio. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.  
+    -   Specificare l'ID processo o il nome del processo del servizio. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.
 
-## <a name="control-data-collection"></a>Controllare la raccolta dati  
- Mentre è in esecuzione il servizio, è possibile controllare la raccolta dei dati avviando e arrestando la scrittura dei dati nel file con le opzioni di *VSPerfCmd.exe*. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.  
+## <a name="control-data-collection"></a>Controllare la raccolta dati
+ Mentre è in esecuzione il servizio, è possibile controllare la raccolta dei dati avviando e arrestando la scrittura dei dati nel file con le opzioni di *VSPerfCmd.exe*. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.
 
-#### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
+#### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+-   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Avvia (**/threadon**) o arresta (**/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|  
+    |Opzione|Description|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Avvia (**/threadon**) o arresta (**/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura  
- Per terminare una sessione di profilatura, chiudere l'applicazione che esegue il componente instrumentato e quindi avviare l'opzione **VSPerfCmd** [/shutdown](../profiling/shutdown.md) per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura.  
+## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
+ Per terminare una sessione di profilatura, chiudere l'applicazione che esegue il componente instrumentato e quindi avviare l'opzione **VSPerfCmd** [/shutdown](../profiling/shutdown.md) per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura.
 
-#### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
+#### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura
 
-1.  Arrestare il servizio da Gestione controllo servizi.  
+1.  Arrestare il servizio da Gestione controllo servizi.
 
-2.  Arrestare il profiler. Tipo:  
+2.  Arrestare il profiler. Tipo:
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-3.  Dopo aver completato tutte le profilature, deselezionare le variabili di ambiente di profilatura. Tipo:  
+3.  Dopo aver completato tutte le profilature, deselezionare le variabili di ambiente di profilatura. Tipo:
 
-     **VSPerfClrEnv /globaloff**  
+     **VSPerfClrEnv /globaloff**
 
-     Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.  
+     Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.
 
-4.  Riavviare il computer.  
+4.  Riavviare il computer.
 
-## <a name="see-also"></a>Vedere anche  
- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)   
- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>Vedere anche
+- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
+- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

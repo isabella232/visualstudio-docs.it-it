@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040b0f5f657b41a268f69d7f34d6c0072646a8e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034090"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696883"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
-## <a name="create-a-new-project"></a>Creare un nuovo progetto 
+## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
 1. In Visual Studio scegliere **File > Nuovo progetto**.
 
@@ -158,7 +158,7 @@ I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F1
 
     ![Visualizzare un suggerimento dati](../debugger/media/dbg-qs-data-tip-csharp.png "Visualizzare un suggerimento dati")
 
-    Il suggerimento dati mostra il valore corrente della variabile `c1` e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate. 
+    Il suggerimento dati mostra il valore corrente della variabile `c1` e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.
 
 2. Espandere il suggerimento dati per esaminare i valori delle proprietà dell'oggetto `c1`.
 

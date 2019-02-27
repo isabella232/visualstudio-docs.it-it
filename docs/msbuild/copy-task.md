@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853547"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596295"
 ---
 # <a name="copy-task"></a>Copy (attività)
 Copia i file in un nuovo percorso del file system.
@@ -34,7 +34,7 @@ Copia i file in un nuovo percorso del file system.
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`CopiedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi copiati correttamente.|
 |`DestinationFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|
@@ -65,7 +65,7 @@ Gli avvisi vengono registrati, inclusi:
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -111,5 +111,5 @@ Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsi
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

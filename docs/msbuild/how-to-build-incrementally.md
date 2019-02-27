@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853901"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621331"
 ---
 # <a name="how-to-build-incrementally"></a>Procedura: Compilazione incrementale
 Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Una destinazione può essere compilata in modo incrementale se gli input e gli o
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente se un file dell'elenco di elementi `@(CSFile)` è più recente del file *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilerà la destinazione; in caso contrario il file verrà ignorato:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Questo file di progetto contiene le destinazioni `Convert` e `Build`. Le attivit
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Destinazioni](../msbuild/msbuild-targets.md)  
-[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Trasformazioni](../msbuild/msbuild-transforms.md)  
-[Attività Csc](../msbuild/csc-task.md)  
-[Attività Vbc](../msbuild/vbc-task.md)
+- [Destinazioni](../msbuild/msbuild-targets.md)
+- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Trasformazioni](../msbuild/msbuild-transforms.md)
+- [Attività Csc](../msbuild/csc-task.md)
+- [Attività Vbc](../msbuild/vbc-task.md)

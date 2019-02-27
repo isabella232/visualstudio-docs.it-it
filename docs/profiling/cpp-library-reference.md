@@ -10,21 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975946"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634344"
 ---
 # <a name="c-library-reference"></a>Riferimento alla libreria C++
-In questa sezione sono contenute informazioni di riferimento per l'SDK del visualizzatore di concorrenza.  
-  
+
+In questa sezione sono contenute informazioni di riferimento per l'SDK del visualizzatore di concorrenza.
+
 > [!NOTE]
->  Lo standard del linguaggio C++ si riserva l'uso di identificatori che iniziano con un carattere di sottolineatura (`_`) per le implementazioni come le librerie. Non usare nomi che iniziano con un carattere di sottolineatura nel codice. Il comportamento degli elementi di codice i cui nomi seguono questa convenzione non è garantito ed è soggetto a modifiche nelle future versioni. Per questi motivi, tali elementi di codice vengono omessi da questa documentazione.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [Spazio dei nomi Concurrency (visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
-  
-## <a name="see-also"></a>Vedere anche  
- [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)
+> Lo standard del linguaggio C++ si riserva l'uso di identificatori che iniziano con un carattere di sottolineatura (`_`) per le implementazioni come le librerie. Non usare nomi che iniziano con un carattere di sottolineatura nel codice. Il comportamento degli elementi di codice i cui nomi seguono questa convenzione non è garantito ed è soggetto a modifiche nelle future versioni. Per questi motivi, tali elementi di codice vengono omessi da questa documentazione.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+
+[Spazio dei nomi Concurrency (visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+
+## <a name="see-also"></a>Vedere anche
+
+- [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

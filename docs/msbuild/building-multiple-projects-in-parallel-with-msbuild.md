@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853066"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600963"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Compilare più progetti in parallelo con MSBuild
 È possibile utilizzare MSBuild per compilare più progetti più velocemente eseguendoli in parallelo. Per eseguire compilazioni in parallelo, è possibile utilizzare le impostazioni seguenti in un computer multicore o con più processori:
@@ -70,6 +70,6 @@ Di seguito è riportato un esempio, tratto da *microsoft.common.targets*, che de
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Usare più processori per la compilazione di progetti](../msbuild/using-multiple-processors-to-build-projects.md)  
-[Scrittura di logger compatibili con più processori](../msbuild/writing-multi-processor-aware-loggers.md)  
-[Blog di ottimizzazione del parallelismo di compilazione di C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Usare più processori per la compilazione di progetti](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Scrittura di logger compatibili con più processori](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Blog di ottimizzazione del parallelismo di compilazione di C++](http://go.microsoft.com/fwlink/?LinkId=251457)

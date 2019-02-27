@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484225"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713152"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -101,7 +101,7 @@ Verrà creata un'applicazione con alcuni bug.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ Verrà creata un'applicazione con alcuni bug.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ Verrà creata un'applicazione con alcuni bug.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ Verrà creata un'applicazione con alcuni bug.
     L'app viene avviata e il debugger non visualizza alcuna eccezione. Tuttavia, l'output visualizzato nella finestra della console è diverso da quanto ci si aspetta. L'output previsto è:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ Verrà creata un'applicazione con alcuni bug.
     Ciò che viene invece visualizzato è:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ Verrà creata un'applicazione con alcuni bug.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Quando si imposta il punto di interruzione, viene visualizzato un punto rosso nel margine sinistro.
@@ -247,13 +247,13 @@ Verrà creata un'applicazione con alcuni bug.
 1. Esaminando il codice relativo all'impostazione del tipo di galassia, si nota che la proprietà `GalaxyType` della classe `Galaxy` è specificata come `object` invece di `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Modificare il codice precedente in questo modo:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "Riavvia app") nella barra degli strumenti di debug (**CTRL** + **MAIUSC** + **F5**) per ricompilare il codice e riavviare.
@@ -265,8 +265,8 @@ Verrà creata un'applicazione con alcuni bug.
     L'app viene eseguita e visualizza l'output. Ora sembra tutto corretto, ma si nota qualcosa. Ci si aspettava che la galassia "Small Magellanic Cloud" venisse indicata nell'output della console come galassia di tipo "Irregular", ma il tipo di galassia non viene indicato affatto.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "Riavvia app") nella barra degli strumenti di debug (**CTRL** + **MAIUSC** + **F5**) per riavviare.
 
-    Il debugger viene sospeso sulla riga di codice in cui è stato impostato il punto di interruzione.  
+    Il debugger viene sospeso sulla riga di codice in cui è stato impostato il punto di interruzione.
 
 1. Passare il puntatore sulla variabile `type`. Si noterà il valore `S` (dopo il codice carattere). Si è interessati al valore `I`, dal momento che si sa che si tratta di un tipo di galassia irregolare.
 
@@ -323,7 +323,7 @@ Dopo aver trovato l'area di codice con il problema, usare il debugger per analiz
 * Controllare se l'applicazione esegue il codice previsto. Nell'applicazione di esempio il codice per l'istruzione switch doveva ad esempio impostare il tipo di galassia su "Irregular", ma l'app ignorava il codice a causa di un errore di digitazione.
 
 > [!TIP]
-> Un debugger aiuta a trovare i bug. Uno strumento di debug sarà in grado di individuare i bug *automaticamente* solo se conosce la finalità del codice. Uno strumento può conoscere la finalità del codice solo se lo sviluppatore esprime tale finalità. Per farlo, occorre scrivere [unit test](../test/improve-code-quality.md). 
+> Un debugger aiuta a trovare i bug. Uno strumento di debug sarà in grado di individuare i bug *automaticamente* solo se conosce la finalità del codice. Uno strumento può conoscere la finalità del codice solo se lo sviluppatore esprime tale finalità. Per farlo, occorre scrivere [unit test](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

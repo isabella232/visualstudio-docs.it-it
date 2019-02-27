@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919274"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596738"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
 
@@ -88,7 +88,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 ## <a name="control-display-options"></a>Opzioni di visualizzazione dei controlli
 
 > [!NOTE]
-> La funzionalità **Control Display Options** (Opzioni di visualizzazione controlli) è disponibile solo per le applicazioni per la piattaforma UWP (Universal Windows Platform) destinate a Windows 10 Fall Creators Update (build 16299) o versioni successive. La funzionalità **Control Display Options** (Opzioni di visualizzazione controlli) è disponibile in Visual Studio 2017 15.9 o versioni successive. 
+> La funzionalità **Control Display Options** (Opzioni di visualizzazione controlli) è disponibile solo per le applicazioni per la piattaforma UWP (Universal Windows Platform) destinate a Windows 10 Fall Creators Update (build 16299) o versioni successive. La funzionalità **Control Display Options** (Opzioni di visualizzazione controlli) è disponibile in Visual Studio 2017 15.9 o versioni successive.
 
 Nella finestra di progettazione XAML è possibile modificare le opzioni di visualizzazione dei controlli per visualizzare solo i controlli della piattaforma provenienti da Windows SDK. In questo modo, è possibile aumentare l'affidabilità della finestra di progettazione XAML.
 

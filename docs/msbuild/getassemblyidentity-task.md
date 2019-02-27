@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadbc72f3d7bb21f313ddaae0de97ec45a7e72a3
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853768"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643795"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (attività)
 Recupera le identità degli assembly dai file specificati ed estrae le informazioni sulle identità.
@@ -31,12 +31,12 @@ Recupera le identità degli assembly dai file specificati ed estrae le informazi
 ## <a name="task-parameters"></a>Parametri dell'attività
 Nella tabella che segue vengono descritti i parametri dell'attività `GetAssemblyIdentity` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`Assemblies`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene le identità di assembly recuperate.|
 |`AssemblyFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da cui recuperare le identità.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Gli elementi estratti dal parametro `Assemblies` contengono voci di metadati degli elementi denominati `Version`, `PublicKeyToken` e `Culture`.
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -58,5 +58,5 @@ Nell'esempio seguente l'identità dei file specificati nell'elemento `MyAssembli
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

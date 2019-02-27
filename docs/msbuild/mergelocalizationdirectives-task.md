@@ -18,24 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927743"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627220"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Attività MergeLocalizationDirectives
 L'attività <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> unisce i commenti e gli attributi di localizzazione di uno o più file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in formato binario in un singolo file per l'intero assembly.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica l'elenco di file delle direttive di localizzazione per i singoli file in formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
 | `OutputFile` | Parametro di output **String** obbligatorio.<br /><br /> Specifica il percorso di output dell'assembly compilato delle direttive di localizzazione. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 È possibile aggiungere commenti e attributi di localizzazione al contenuto [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Con il supporto di localizzazione [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] è possibile rimuovere i commenti e gli attributi di localizzazione e inserirli in un file con estensione *loc* separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage**. Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage**, vedere [Attributi e commenti di localizzazione](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Esempio
@@ -55,8 +55,8 @@ Nell'esempio seguente i commenti di localizzazione di diversi file in formato bi
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
-[Informazioni di riferimento sulle attività MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+- [Informazioni di riferimento sulle attività MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

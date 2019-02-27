@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027237"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611074"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 Registro delle modifiche di Visual Studio Tools per Unity.
@@ -34,11 +34,11 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 -   **Debugger:**
 
      -   Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento di "Collega a Unity" o al riavvio del gioco.
-     
+
 -   **Integrazione:**
 
      -   Correzione dell'attivazione del plug-in Unity quando veniva selezionato un altro editor predefinito.
-     
+
      -   Correzione della creazione di un modello di file Unity.
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 -   **Integrazione:**
 
      -   Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
-     
+
 ## <a name="1601"></a>1.6.0.1
  Data di rilascio: 10 luglio 2018
 
@@ -58,7 +58,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 -   **Integrazione:**
 
      -   Correzione del supporto della colorazione del codice di Shader.
-     
+
 ## <a name="1600"></a>1.6.0.0
  Data di rilascio: 26 giugno 2018
 
@@ -71,23 +71,23 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 -   **Project Generation:**
 
      -   Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
-     
+
      -   Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
-     
+
 ## <a name="1502"></a>1.5.0.2
  Data di rilascio: 18 aprile 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Integrazione:**
 
     -   Aggiunta del supporto per il completamento del codice Shader di base.
-    
+
     -   Aggiunta del supporto per attivare e disattivare i commenti nei file di Shader.
 
 ## <a name="1501"></a>1.5.0.1
  Data di rilascio: 28 marzo 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Integrazione:**
@@ -96,7 +96,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1500"></a>1.5.0.0
  Data di rilascio: 21 marzo 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Integrazione:**
@@ -105,7 +105,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1403"></a>1.4.0.3
  Data di rilascio: 5 marzo 2018
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Project Generation:**
@@ -118,7 +118,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1402"></a>1.4.0.2
  Data di rilascio: 24 gennaio 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Project Generation:**
@@ -133,7 +133,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1401"></a>1.4.0.1
  Data di rilascio: 23 gennaio 2018
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Integrazione:**
@@ -142,7 +142,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1400"></a>1.4.0.0
  Data di rilascio: 13 dicembre 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Project Generation:**
@@ -157,7 +157,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1301"></a>1.3.0.1
  Data di rilascio: 12 dicembre 2017
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Integrazione:**
@@ -170,7 +170,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1300"></a>1.3.0.0
  Data di rilascio: 20 novembre 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Procedure guidate:**
@@ -181,7 +181,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1200"></a>1.2.0.0
  Data di rilascio: 23 ottobre 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Debugger:**
@@ -198,7 +198,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1103"></a>1.1.0.3
  Data di rilascio: 23 ottobre 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Project Generation:**
@@ -207,7 +207,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1102"></a>1.1.0.2
  Data di rilascio: 8 agosto 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Debugger:**
@@ -220,7 +220,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1101"></a>1.1.0.1
  Data di rilascio: 20 luglio 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Integrazione:**
@@ -229,7 +229,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1100"></a>1.1.0.0
  Data di rilascio: 12 luglio 2017
- 
+
 ### <a name="new-features"></a>Nuove funzionalità
 
 -   **Integrazione:**
@@ -240,9 +240,9 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Riferimenti ai nomi assembly di Fixed con i file mcs.rsp.
 
-    -   Supporto aggiunto per le unità di compilazione assembly.json.    
+    -   Supporto aggiunto per le unità di compilazione assembly.json.
 
-    -   Fixed è definito con i livelli di API.    
+    -   Fixed è definito con i livelli di API.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -252,7 +252,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="1001"></a>1.0.0.1
  Data di rilascio: 4 maggio 2017
- 
+
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 -   **Integrazione:**

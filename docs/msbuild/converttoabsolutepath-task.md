@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f82d5d7936a9c5fd318804ea6ba9c5731da39c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14695cbfddc2f469d48bf78ee002f0582ef7f4bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068979"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604054"
 ---
 # <a name="converttoabsolutepath-task"></a>attività ConvertToAbsolutePath
-Converte un percorso relativo, o un riferimento, in un percorso assoluto.  
-  
-## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `ConvertToAbsolutePath` .  
-  
-|Parametro|Description|  
-|---------------|-----------------|  
-|`Paths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Elenco di percorsi relativi da convertire in percorsi assoluti.|  
-|`AbsolutePaths`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Elenco di percorsi assoluti per gli elementi passati.|  
-  
-## <a name="remarks"></a>Note  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+Converte un percorso relativo, o un riferimento, in un percorso assoluto.
+
+## <a name="task-parameters"></a>Parametri dell'attività
+ Nella tabella che segue vengono descritti i parametri dell'attività `ConvertToAbsolutePath` .
+
+|Parametro|Description|
+|---------------|-----------------|
+|`Paths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Elenco di percorsi relativi da convertire in percorsi assoluti.|
+|`AbsolutePaths`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Elenco di percorsi assoluti per gli elementi passati.|
+
+## <a name="remarks"></a>Osservazioni
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Vedere anche
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

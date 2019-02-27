@@ -11,50 +11,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbec142635c1856dfd701f31253b3773cee1b01
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917377"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638776"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
-Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Visualizzazione Riepilogo: dati su conflitti del profiler](../profiling/resource-contention-data-views.md)  
- Visualizza una sequenza temporale grafica dei dati di profilatura ed elenca le funzioni e le risorse che hanno partecipato alla maggior parte degli eventi di blocco.  
-  
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
- Visualizza un albero gerarchico che rappresenta i percorsi di esecuzione e i dati sui conflitti di risorse delle funzioni nella profilatura.  
-  
- [Visualizzazione Moduli](../profiling/modules-view-contention-data.md)  
- Organizza i dati sui conflitti di thread e risorse in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando si sono verificati gli eventi di blocco.  
-  
- [Visualizzazione Chiamante/chiamato: dati sui conflitti](../profiling/caller-callee-view-contention-data.md)  
- Elenca i dati sui conflitti di thread e risorse per una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.  
-  
- [Visualizzazione Dettagli risorsa](../profiling/resource-details-view-contention-data.md)  
- Visualizza una sequenza temporale grafica degli eventi di blocco per ogni risorsa in conflitto ed elenca lo stack di chiamate per gli eventi di blocco.  
-  
- [Visualizzazione Dettagli thread](../profiling/thread-details-view-contention-data.md)  
- Visualizza una sequenza temporale grafica degli eventi di blocco per ogni thread ed elenca lo stack di chiamate per gli eventi di blocco.  
-  
- [Visualizzazione Funzioni](../profiling/functions-view-contention-data.md)  
- Elenca i dati sui conflitti di thread e risorse in base alla funzione.  
-  
- [Visualizzazione dei conflitti di risorse](../profiling/resource-contentions-view-contention-data.md)  
- Elenca i dati sui conflitti di risorse in base alla risorsa bloccata.  
-  
- [Visualizzazione Righe](../profiling/lines-view-contention-data.md)  
- Elenca i dati sui conflitti di risorse in base alla riga del codice sorgente.  
-  
- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)  
- Elenca i conflitti di risorse in base all'istruzione.  
-  
- [Visualizzazione Processo](../profiling/process-view-contention-data.md)  
- Elenca i conflitti di risorse in base a processo e thread.  
-  
-## <a name="reference"></a>Riferimenti  
- [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)  
+Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.
+
+## <a name="in-this-section"></a>In questa sezione
+- [Visualizzazione Riepilogo: dati su conflitti del profiler](../profiling/resource-contention-data-views.md)
+
+ Visualizza una sequenza temporale grafica dei dati di profilatura ed elenca le funzioni e le risorse che hanno partecipato alla maggior parte degli eventi di blocco.
+
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)
+
+ Visualizza un albero gerarchico che rappresenta i percorsi di esecuzione e i dati sui conflitti di risorse delle funzioni nella profilatura.
+
+- [Visualizzazione Moduli](../profiling/modules-view-contention-data.md)
+
+ Organizza i dati sui conflitti di thread e risorse in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando si sono verificati gli eventi di blocco.
+
+- [Visualizzazione Chiamante/chiamato: dati sui conflitti](../profiling/caller-callee-view-contention-data.md)
+
+ Elenca i dati sui conflitti di thread e risorse per una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
+
+- [Visualizzazione Dettagli risorsa](../profiling/resource-details-view-contention-data.md)
+
+ Visualizza una sequenza temporale grafica degli eventi di blocco per ogni risorsa in conflitto ed elenca lo stack di chiamate per gli eventi di blocco.
+
+- [Visualizzazione Dettagli thread](../profiling/thread-details-view-contention-data.md)
+
+ Visualizza una sequenza temporale grafica degli eventi di blocco per ogni thread ed elenca lo stack di chiamate per gli eventi di blocco.
+
+- [Visualizzazione Funzioni](../profiling/functions-view-contention-data.md)
+
+ Elenca i dati sui conflitti di thread e risorse in base alla funzione.
+
+- [Visualizzazione dei conflitti di risorse](../profiling/resource-contentions-view-contention-data.md)
+
+ Elenca i dati sui conflitti di risorse in base alla risorsa bloccata.
+
+- [Visualizzazione Righe](../profiling/lines-view-contention-data.md)
+
+ Elenca i dati sui conflitti di risorse in base alla riga del codice sorgente.
+
+- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)
+
+ Elenca i conflitti di risorse in base all'istruzione.
+
+- [Visualizzazione Processo](../profiling/process-view-contention-data.md)
+
+ Elenca i conflitti di risorse in base a processo e thread.
+
+## <a name="reference"></a>Riferimenti
+- [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
+
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.

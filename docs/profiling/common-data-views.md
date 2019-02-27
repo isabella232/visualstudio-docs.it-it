@@ -11,50 +11,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c18bd4b5893d500c27bb32c9b5b7c4c22b7fc78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918031"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631952"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
-Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
- [Visualizzazione Riepilogo](../profiling/summary-view.md)  
- Descrive la visualizzazione e il report di riepilogo. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)  
- Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)  
- Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione Moduli](../profiling/modules-view.md)  
- Descrive la visualizzazione e il report Moduli. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione Funzioni](../profiling/functions-view.md)  
- Descrive la visualizzazione e il report Funzioni. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione Righe](../profiling/lines-view.md)  
- Descrive la visualizzazione e il report Righe. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)  
- Descrive la visualizzazione e il report Puntatori all'istruzione. Le colonne di dati dipendono dal metodo di profilatura.  
-  
- [Visualizzazione Processo](../profiling/process-view.md)  
- Elenca l'ora di inizio e di fine di processi e thread.  
-  
- [Visualizzazione Contrassegni](../profiling/marks-view.md)  
- Elenca gli eventi ETW e di campionamento inseriti nei file dei dati di profilatura.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)  
- Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite il metodo di campionamento.  
-  
- [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)  
- Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite il metodo di strumentazione.  
-  
- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  
+Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+- [Visualizzazione Riepilogo](../profiling/summary-view.md)
+
+ Descrive la visualizzazione e il report di riepilogo. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)
+
+ Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)
+
+ Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione Moduli](../profiling/modules-view.md)
+
+ Descrive la visualizzazione e il report Moduli. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione Funzioni](../profiling/functions-view.md)
+
+ Descrive la visualizzazione e il report Funzioni. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione Righe](../profiling/lines-view.md)
+
+ Descrive la visualizzazione e il report Righe. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)
+
+ Descrive la visualizzazione e il report Puntatori all'istruzione. Le colonne di dati dipendono dal metodo di profilatura.
+
+- [Visualizzazione Processo](../profiling/process-view.md)
+
+ Elenca l'ora di inizio e di fine di processi e thread.
+
+- [Visualizzazione Contrassegni](../profiling/marks-view.md)
+
+ Elenca gli eventi ETW e di campionamento inseriti nei file dei dati di profilatura.
+
+## <a name="related-sections"></a>Sezioni correlate
+- [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)
+
+ Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite il metodo di campionamento.
+
+- [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
+
+ Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite il metodo di strumentazione.
+
+- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+
  Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite la raccolta della memoria .NET.

@@ -10,37 +10,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 295dd3c490495f481ca9568524ee83eb0b1b59be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8443f17507b7e4225e6f04d914c115bf17f7d091
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966829"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627025"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Visualizzazione dei puntatori all'istruzione: dati di campionamento di memoria .NET
-La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni dell'assembly che hanno allocato memoria durante l'esecuzione della profilatura. Le colonne della visualizzazione elencano inoltre le dimensioni e il numero delle allocazioni.  
-  
- Vengono elencati solo valori esclusivi.  
-  
-|Colonna|Description|  
-|------------|-----------------|  
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
-|**Nome processo**|Nome del processo.|  
-|**Nome modulo**|Nome del modulo contenente l'istruzione.|  
-|**Percorso modulo**|Percorso del modulo contenente l'istruzione.|  
-|**File di origine**|File di origine che contiene l'istruzione.|  
-|**Nome funzione**|Nome della funzione.|  
-|**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Indirizzo funzione**|Indirizzo iniziale della funzione.|  
-|**Inizio riga di origine**|Numero di riga iniziale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|  
-|**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|  
-|**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|  
-|**Fine carattere di origine**|Offset del carattere finale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|  
-|**Indirizzo istruzione**|Indirizzo dell'istruzione.|  
-|**Allocazioni esclusive**|Numero totale di oggetti creati dall'istruzione.|  
-|**% allocazioni esclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|  
-|**Byte esclusivi**|Numero di byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|  
-|**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
+La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le istruzioni dell'assembly che hanno allocato memoria durante l'esecuzione della profilatura. Le colonne della visualizzazione elencano inoltre le dimensioni e il numero delle allocazioni.
+
+ Vengono elencati solo valori esclusivi.
+
+|Colonna|Description|
+|------------|-----------------|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
+|**Nome modulo**|Nome del modulo contenente l'istruzione.|
+|**Percorso modulo**|Percorso del modulo contenente l'istruzione.|
+|**File di origine**|File di origine che contiene l'istruzione.|
+|**Nome funzione**|Nome della funzione.|
+|**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
+|**Indirizzo funzione**|Indirizzo iniziale della funzione.|
+|**Inizio riga di origine**|Numero di riga iniziale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|
+|**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|
+|**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|
+|**Fine carattere di origine**|Offset del carattere finale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|
+|**Indirizzo istruzione**|Indirizzo dell'istruzione.|
+|**Allocazioni esclusive**|Numero totale di oggetti creati dall'istruzione.|
+|**% allocazioni esclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|
+|**Byte esclusivi**|Numero di byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|
+|**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|
+
+## <a name="see-also"></a>Vedere anche
+- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

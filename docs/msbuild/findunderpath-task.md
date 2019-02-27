@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853755"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602184"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (attività)
 Determina gli elementi di una raccolta specificata i cui percorsi sono presenti nella cartella indicata e nelle relative sottocartelle.
@@ -31,7 +31,7 @@ Determina gli elementi di una raccolta specificata i cui percorsi sono presenti 
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `FindUnderPath` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file i cui percorsi devono essere confrontati con il percorso specificato dal parametro `Path`.|
 |`InPath`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi che sono stati trovati nel percorso specificato.|
@@ -39,7 +39,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `FindUnderP
 |`Path`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica il percorso della cartella da usare come riferimento.|
 |`UpdateToAbsolutePaths`|Parametro `Boolean` facoltativo.<br /><br /> Se true, i percorsi degli elementi di output vengono aggiornati in modo da essere percorsi assoluti.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
@@ -73,6 +73,6 @@ L'esempio seguente usa l'attività `FindUnderPath` per determinare se i file con
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Attività](../msbuild/msbuild-tasks.md)  
-[Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

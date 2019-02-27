@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918104"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843091"
 ---
 # <a name="step-2-write-and-run-code"></a>Passaggio 2: scrivere ed eseguire codice
 
@@ -53,7 +53,7 @@ Anche se **Esplora soluzioni** si trova nell'area di gestione dei file di proget
 
     ![Output per la prima esecuzione del programma](media/vs-getting-started-python-07-output.png)
 
-1. Oltre ai completamenti per istruzioni e funzioni, IntelliSense offre completamenti per le istruzioni `import` e `from` di Python. I completamenti delle istruzioni consentono di individuare facilmente i moduli disponibili nell'ambiente e i membri disponibili in ogni modulo. Nell'editor eliminare la riga `print` e iniziare a digitare `import `. Quando si preme la barra spaziatrice, viene visualizzato un elenco dei moduli:
+1. Oltre ai completamenti per istruzioni e funzioni, IntelliSense offre completamenti per le istruzioni `import` e `from` di Python. I completamenti delle istruzioni consentono di individuare facilmente i moduli disponibili nell'ambiente e i membri disponibili in ogni modulo. Nell'editor eliminare la riga `print` e iniziare a digitare `import`. Quando si preme la barra spaziatrice, viene visualizzato un elenco dei moduli:
 
     ![IntellSense che mostra i moduli disponibili per un'istruzione import](media/vs-getting-started-python-08-import1.png)
 

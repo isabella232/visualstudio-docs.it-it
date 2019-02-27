@@ -15,28 +15,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16782fcf3c8f859edd8363c43741f598d5929188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007013"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635540"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versione CLR non supportata
 
-|||  
-|-|-|  
-|ID regola|DA0029|  
-|Category|Uso degli strumenti di profilatura|  
-|Metodo di profilatura|Profilatura dalla riga di comando|  
-|Messaggio|È stata rilevata una versione CLR non supportata durante la raccolta. È possibile che i simboli gestiti non vengano risolti correttamente.|  
-|Tipo regola|Informazioni.|  
+|||
+|-|-|
+|ID regola|DA0029|
+|Category|Uso degli strumenti di profilatura|
+|Metodo di profilatura|Profilatura dalla riga di comando|
+|Messaggio|È stata rilevata una versione CLR non supportata durante la raccolta. È possibile che i simboli gestiti non vengano risolti correttamente.|
+|Tipo regola|Informazioni.|
 
-## <a name="cause"></a>Causa  
- Si sta tentando di profilare un'applicazione che usa [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] non supportato dagli strumenti di profilatura.  
+## <a name="cause"></a>Causa
+ Si sta tentando di profilare un'applicazione che usa [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] non supportato dagli strumenti di profilatura.
 
-## <a name="rule-description"></a>Descrizione della regola  
- Questo avviso si verifica perché gli strumenti di profilatura non sono in grado di risolvere i simboli per il codice gestito in esecuzione nell'applicazione. Gli strumenti di profilatura non sono in grado di risolvere i simboli di codice gestito per le applicazioni che eseguono [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
+## <a name="rule-description"></a>Descrizione della regola
+ Questo avviso si verifica perché gli strumenti di profilatura non sono in grado di risolvere i simboli per il codice gestito in esecuzione nell'applicazione. Gli strumenti di profilatura non sono in grado di risolvere i simboli di codice gestito per le applicazioni che eseguono [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Nessuno.

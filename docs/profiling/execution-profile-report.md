@@ -12,32 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44912d26682479b37eaa13483320ffe093f40b5c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964061"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627558"
 ---
 # <a name="execution-profile-report"></a>Report del profilo di esecuzione
-Il rapporto del profilo di esecuzione è un profilo di campionamento tradizionale. I campioni vengono presi ogni millisecondo circa durante i periodi in cui un thread è in esecuzione su un core logico e il visualizzatore di concorrenza compila un albero delle chiamate tipico collazionando il set di stack di campioni accumulato. I dati della tabella possono essere influenzati dall'intervallo di tempo corrente e dai thread nascosti e dai filtri seguenti che possono essere applicati:  
-  
-- Se l'opzione Just My Code è selezionata, vengono visualizzati solo gli stack frame con codice utente, più un livello sotto il codice utente.  
-  
-- Se è impostato il valore di Riduzione rumore, gli stack collazionati con una frequenza minore di quella specificata vengono esclusi dal filtro.  
-  
-  Nella tabella seguente vengono illustrate le colonne del rapporto.  
-  
-|Colonna|Description|  
-|------------|-----------------|  
-|nome|Nome della funzione per ogni livello dello stack di chiamate.|  
-|Campioni inclusivi|Numero totale di campioni raccolti per tutti gli stack accumulati nel livello dell'albero dello stack di chiamate. Il numero inclusivo è la somma dei campioni esclusivi per questa funzione e dei contatori inclusivi per tutti i nodi figlio.|  
-|Campioni esclusivi|Numero totale di campioni raccolti per cui questa funzione è il livello più basso dello stack di chiamate.|  
-|% inclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni inclusivi. Le percentuali vengono arrotondate a due cifre decimali.|  
-|% esclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni esclusivi. Le percentuali vengono arrotondate a due cifre decimali.|  
-|Dettagli|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|  
-  
- Questa tabella di report è illustrata in [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+Il rapporto del profilo di esecuzione è un profilo di campionamento tradizionale. I campioni vengono presi ogni millisecondo circa durante i periodi in cui un thread è in esecuzione su un core logico e il visualizzatore di concorrenza compila un albero delle chiamate tipico collazionando il set di stack di campioni accumulato. I dati della tabella possono essere influenzati dall'intervallo di tempo corrente e dai thread nascosti e dai filtri seguenti che possono essere applicati:
+
+- Se l'opzione Just My Code è selezionata, vengono visualizzati solo gli stack frame con codice utente, più un livello sotto il codice utente.
+
+- Se è impostato il valore di Riduzione rumore, gli stack collazionati con una frequenza minore di quella specificata vengono esclusi dal filtro.
+
+  Nella tabella seguente vengono illustrate le colonne del rapporto.
+
+|Colonna|Description|
+|------------|-----------------|
+|nome|Nome della funzione per ogni livello dello stack di chiamate.|
+|Campioni inclusivi|Numero totale di campioni raccolti per tutti gli stack accumulati nel livello dell'albero dello stack di chiamate. Il numero inclusivo è la somma dei campioni esclusivi per questa funzione e dei contatori inclusivi per tutti i nodi figlio.|
+|Campioni esclusivi|Numero totale di campioni raccolti per cui questa funzione è il livello più basso dello stack di chiamate.|
+|% inclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni inclusivi. Le percentuali vengono arrotondate a due cifre decimali.|
+|% esclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni esclusivi. Le percentuali vengono arrotondate a due cifre decimali.|
+|Dettagli|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
+
+ Questa tabella di report è illustrata in [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md).
+
+## <a name="see-also"></a>Vedere anche
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

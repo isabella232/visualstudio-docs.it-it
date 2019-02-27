@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950513"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617158"
 ---
 # <a name="item-functions"></a>funzioni Item
 A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in grado di chiamare le funzioni di elementi per ottenere informazioni sugli elementi del progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi.
@@ -51,7 +51,7 @@ Nell'esempio seguente viene illustrato come usare le funzioni degli elementi per
 ## <a name="intrinsic-item-functions"></a>Funzioni intrinseche degli elementi
 Nella tabella seguente sono elencate le funzioni intrinseche disponibili per gli elementi.
 
-|Funzione|Esempio|Descrizione|
+|Funzione|Esempio|Description|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Restituisce il numero di elementi.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Restituisce l'equivalente di `Path.DirectoryName` per ogni elemento.|
@@ -100,4 +100,4 @@ Nell'esempio seguente viene illustrato come usare le funzioni intrinseche degli 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Elementi](../msbuild/msbuild-items.md)
+- [Elementi](../msbuild/msbuild-items.md)

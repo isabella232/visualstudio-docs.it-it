@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603261"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
 Il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è definito da una serie di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con estensione *targets* che vengono importati nel file di progetto. Uno di questi file importati, *Microsoft.Common.targets*, può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo argomento illustra due metodi che è possibile usare per estendere il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
@@ -35,8 +35,8 @@ Il file *Microsoft.Common.targets* contiene un insieme di destinazioni predefini
 
 1. In *Microsoft.Common.targets* identificare una destinazione predefinita di cui si vuole eseguire l'override. Nella tabella seguente è riportato l'elenco completo delle destinazioni di cui è possibile eseguire l'override in totale sicurezza.
 
-2. Definire le destinazioni alla fine del file di progetto, immediatamente prima del tag `</Project>`. Ad esempio:  
-  
+2. Definire le destinazioni alla fine del file di progetto, immediatamente prima del tag `</Project>`. Ad esempio:
+
     ```xml
     <Project>
         ...
@@ -48,12 +48,12 @@ Il file *Microsoft.Common.targets* contiene un insieme di destinazioni predefini
         </Target>
     </Project>
     ```
-  
+
 3. Compilare il file di progetto.
 
 Nella tabella seguente sono indicate tutte le destinazioni in *Microsoft.Common.targets* di cui è possibile eseguire l'override in totale sicurezza.
 
-|Nome di destinazione|Descrizione|
+|Nome di destinazione|Description|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il completamento della compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
 |`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:**  le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto, consentendo di aggiungere facilmente eventi di pre e post-compilazione nel file di progetto.|
@@ -117,13 +117,13 @@ I progetti che importano i file di progetto possono eseguire l'override di quest
 
 ### <a name="commonly-overridden-dependson-properties"></a>Proprietà DependsOn comunemente sottoposte a override
 
-|Nome della proprietà|Descrizione|
+|Nome della proprietà|Description|
 |-------------------|-----------------|
 |`BuildDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire destinazioni personalizzate prima o dopo l'intero processo di compilazione.|
 |`CleanDependsOn`|Proprietà di cui eseguire l'override se si vuole pulire l'output del processo di compilazione personalizzato.|
 |`CompileDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire processi personalizzati prima o dopo la fase di compilazione.|
 
 ## <a name="see-also"></a>Vedere anche
-[Integrazione con Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)  
-[File con estensione targets](../msbuild/msbuild-dot-targets-files.md)
+- [Integrazione con Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
+- [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)

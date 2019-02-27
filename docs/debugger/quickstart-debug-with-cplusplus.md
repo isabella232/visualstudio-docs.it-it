@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918564"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716519"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C++ usando il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
-## <a name="create-a-new-project"></a>Creare un nuovo progetto 
+## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
 1. In Visual Studio scegliere **File > Nuovo progetto**.
 
@@ -47,7 +47,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
     con questo codice (non rimuovere `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
     > [!TIP]
     > Se è presente un punto di interruzione in un ciclo o in una ricorsione oppure sono presenti molti punti di interruzione in un codice che si esegue di frequente, usare un [punto di interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) per fare in modo che il codice venga sospeso SOLO se sono soddisfatte specifiche condizioni. Un punto di interruzione condizionale consente di risparmiare tempo e può facilitare il debug di problemi che sono difficili da riprodurre.
 
-    Quando si tenta di eseguire il debug degli errori di memoria in C++, i punti di interruzione possono anche servire per controllare i valori degli indirizzo (cercare NULL) e i conteggi di riferimento. 
+    Quando si tenta di eseguire il debug degli errori di memoria in C++, i punti di interruzione possono anche servire per controllare i valori degli indirizzo (cercare NULL) e i conteggi di riferimento.
 
 ## <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -110,7 +110,7 @@ I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F1
 
     ![Visualizzare un suggerimento dati](../debugger/media/dbg-qs-data-tip.png "Visualizzare un suggerimento dati")
 
-    Il suggerimento dati mostra il valore corrente della variabile `c1` e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate. 
+    Il suggerimento dati mostra il valore corrente della variabile `c1` e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.
 
 2. Espandere il suggerimento dati per esaminare i valori delle proprietà dell'oggetto `c1`.
 

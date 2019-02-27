@@ -12,38 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacf5699e1ccccf186b09bcd50c82cba203919fc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070084"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634708"
 ---
 # <a name="span-class"></a>Classe span
-Definisce una fase dell'applicazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-class span;  
-```  
-  
-## <a name="members"></a>Membri  
-  
-### <a name="public-constructors"></a>Costruttori pubblici  
-  
-|nome|Description|  
-|----------|-----------------|  
-|[Costruttore span::span](../profiling/span-span-constructor.md)|Inizializza una nuova istanza della classe `span`.|  
-|[Distruttore span::~span](../profiling/span-tilde-span-destructor.md)|Elimina l'oggetto `span` e ne rilascia le risorse.|  
-  
-## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà  
- `span`  
-  
-## <a name="requirements"></a>Requisiti  
- **Intestazione:** *cvmarkersobj.h*  
-  
- **Spazio dei nomi:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Vedere anche  
- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)
+Definisce una fase dell'applicazione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+class span;
+```
+
+## <a name="members"></a>Membri
+
+### <a name="public-constructors"></a>Costruttori pubblici
+
+|nome|Description|
+|----------|-----------------|
+|[Costruttore span::span](../profiling/span-span-constructor.md)|Inizializza una nuova istanza della classe `span`.|
+|[Distruttore span::~span](../profiling/span-tilde-span-destructor.md)|Elimina l'oggetto `span` e ne rilascia le risorse.|
+
+## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
+ `span`
+
+## <a name="requirements"></a>Requisiti
+ **Intestazione:** *cvmarkersobj.h*
+
+ **Spazio dei nomi:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Vedere anche
+- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)

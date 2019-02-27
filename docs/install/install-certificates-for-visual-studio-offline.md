@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936642"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645719"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -61,6 +61,7 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive creare il file batch con i comandi seguenti:
 
    ```cmd
@@ -123,7 +124,7 @@ Se i nomi dei certificati non sono presenti nelle colonne **Rilasciato a**, è n
 
 ## <a name="install-visual-studio"></a>Installare Visual Studio
 
-Dopo aver installato i certificati, la distribuzione di Visual Studio può procedere seguendo le istruzioni dalla sezione [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) della pagina "Creare un'installazione di rete di Visual Studio".
+Dopo aver installato i certificati, la distribuzione di Visual Studio può procedere seguendo le istruzioni dalla sezione [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) della pagina "Creare un'installazione di rete di Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

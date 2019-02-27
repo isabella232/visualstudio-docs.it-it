@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089224"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841705"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
@@ -22,13 +20,13 @@ ms.locfileid: "55089224"
 
 > [!NOTE]
 > Non tutte le sottoscrizioni a un determinato livello sono idonee per ricevere il supporto per eventi imprevisti. Le sottoscrizioni acquisite tramite FTE, NFR, MPN, MCT e altri programmi non ricevono il supporto per eventi imprevisti. Se la sottoscrizione non è idonea per la ricezione del supporto tecnico, il riquadro relativo non verrà visualizzato nei vantaggi disponibili.
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![Riquadro del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Per iniziare a usare il vantaggio Supporto tecnico, passare a https://my.visualstudio.com/Benefits, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat** per attivarlo. 
-2. Viene avviata una sessione di chat con un rappresentante che crea un ID contratto e un ID di accesso per l'utente. 
+1. Per iniziare a usare il vantaggio Supporto tecnico, passare a https://my.visualstudio.com/Benefits, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat** per attivarlo.
+2. Viene avviata una sessione di chat con un rappresentante che crea un ID contratto e un ID di accesso per l'utente.
 3. Per completare il processo, è necessario specificare al rappresentante gli elementi seguenti:
    - L'indirizzo di posta elettronica che si usa per accedere alla sottoscrizione
    - L'ID sottoscrizione, che viene visualizzato nella scheda [Sottoscrizioni](https://my.visualstudio.com/subscriptions).
@@ -38,7 +36,7 @@ ms.locfileid: "55089224"
 
 
 > [!NOTE]
-> Per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](https://support.microsoft.com/help/14084/activate-support-contract).   
+> Per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](https://support.microsoft.com/help/14084/activate-support-contract).
 
 
 ## <a name="how-to-submit-an-incident"></a>Come inviare un evento imprevisto
@@ -48,12 +46,12 @@ Dopo aver configurato l'ID contratto e l'ID di accesso, in caso di necessità è
 ### <a name="submit-an-incident-online"></a>Inviare un evento imprevisto online
 
 1. Per [segnalare un evento imprevisto online](http://support.microsoft.com/oas/), specificare il prodotto per il quale è necessaria assistenza. È possibile selezionarlo dai diversi elenchi disponibili o cercarlo in base al nome. Per segnalare un evento imprevisto per Visual Studio Enterprise 2017, ad esempio, fare clic su **Visual Studio** nel gruppo **Strumenti di sviluppo**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Selezione del prodotto interessato dall'evento imprevisto](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. Scegliere il prodotto per il quale è necessario il supporto. Ad esempio, fare clic su **Visual Studio Enterprise 2017** nell'elenco dei prodotti Visual Studio.
 3. Nella pagina **Crea una richiesta di assistenza** selezionare il tipo di problema applicabile dall'elenco a discesa. Per questo esempio verrà scelto **Integrated Development Environment**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Creazione di un evento imprevisto](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. Scegliere quindi la **Categoria** più adatta alla domanda o al problema. Per questo esempio verrà scelta l'opzione **Architect tools** (Strumenti di progettazione).
@@ -64,7 +62,7 @@ Dopo aver configurato l'ID contratto e l'ID di accesso, in caso di necessità è
    - Immettere l'ID di accesso e l'ID di contratto
    - Fare clic su **Aggiungi**
 7. Dopo l'aggiunta, il contratto di supporto viene visualizzato nell'elenco dei contratti di supporto Professional. Selezionarlo e fare clic su **Continua**.
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Pagamento](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. Specificare le informazioni di contatto e il metodo di contatto preferito e fare clic su **Continua**.

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531bd7877a6bfc2f1300a7a397556c9e24d84654
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853430"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610463"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: Visualizzare un elenco di elementi separati da virgole
 Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), è talvolta utile visualizzare il contenuto di tali elenchi di elementi in un modo facilmente leggibile. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.
@@ -67,5 +67,5 @@ Per questo esempio, la riga di comando equivalente è:
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)  
-[Elementi](../msbuild/msbuild-items.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Elementi](../msbuild/msbuild-items.md)

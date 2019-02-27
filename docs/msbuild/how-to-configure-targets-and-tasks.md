@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853703"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603231"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedura: Configurare destinazioni e attività
 Alcune attività MSBuild possono essere impostate in modo da essere eseguite nell'ambiente a cui sono destinate, indipendentemente dall'ambiente del computer di sviluppo. Se ad esempio si usa un computer a 64 bit per creare un'applicazione destinata a un'architettura a 32 bit, le attività selezionate vengono eseguite in un processo a 32 bit.
@@ -108,4 +108,4 @@ I parametri `MSBuildRuntime` e `MSBuildArchitecture` offrono il metodo più fles
 > I parametri dell'attività vengono valutati nel contesto del nodo padre, non nel contesto dell'host dell'attività. Le variabili di ambiente dipendenti dal runtime o dall'architettura, come ad esempio, il percorso di *Programmi*, restituiranno il valore che corrisponde al nodo padre. Tuttavia, se la stessa variabile di ambiente viene letta direttamente dall'attività, verrà valutata correttamente nel contesto dell'host di attività.
 
 ## <a name="see-also"></a>Vedere anche
-[Configure targets and tasks](../msbuild/configuring-targets-and-tasks.md) (Configurare destinazioni e attività)
+- [Configure targets and tasks](../msbuild/configuring-targets-and-tasks.md) (Configurare destinazioni e attività)

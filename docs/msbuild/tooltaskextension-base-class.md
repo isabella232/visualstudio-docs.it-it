@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010350"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623008"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe di base ToolTaskExtension
-Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.  
+Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.
 
-## <a name="parameters"></a>Parametri  
- Nella tabella seguente vengono descritti i parametri delle classi di base.  
+## <a name="parameters"></a>Parametri
+ Nella tabella seguente vengono descritti i parametri delle classi di base.
 
 
 | Parametro | Description |
@@ -48,6 +48,6 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExten
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività crea un file batch per la riga di comando e lo esegue mediante il processore dei comandi anziché eseguire direttamente il comando. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività restituisce il nodo quando l'attività è in esecuzione. |
 
-## <a name="see-also"></a>Vedere anche  
- [Attività MSBuild](../msbuild/msbuild-task-reference.md)   
- [Attività](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)

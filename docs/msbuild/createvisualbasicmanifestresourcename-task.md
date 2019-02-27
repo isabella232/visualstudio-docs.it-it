@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e9949d158afb0dfd2f13a2ed62da34b3960e4a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee1426c763b60325190a5d15744fabe5eaa1b3ae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997065"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640675"
 ---
-# <a name="createvisualbasicmanifestresourcename-task"></a>Attività CreateVisualBasicManifestResourceName
-Crea un nome di manifesto nello stile di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.  
+# <a name="createvisualbasicmanifestresourcename-task"></a>Crea attività VisualBasicManifestResourceName
+Crea un nome di manifesto nello stile di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.
 
-## <a name="parameters"></a>Parametri  
- La tabella seguente descrive i parametri dell'[attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).  
+## <a name="parameters"></a>Parametri
+ La tabella seguente descrive i parametri dell'[attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).
 
 
 | Parametro | Description |
@@ -38,11 +38,11 @@ Crea un nome di manifesto nello stile di [!INCLUDE[vbprvb](../code-quality/inclu
 | `PrependCultureAsDirectory` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il nome delle impostazioni cultura viene aggiunto come nome di directory prima del nome di risorsa di manifesto. Il valore predefinito è `true`. |
 | `ResourceFilesWithManifestResourceNames` | Parametro di output di sola lettura `String` facoltativo.<br /><br /> Restituisce il nome del file di risorse che include ora il nome di risorsa di manifesto. |
 
-## <a name="remarks"></a>Note  
- L'[attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) determina il nome di risorsa di manifesto appropriato da assegnare a un file con estensione *resx* specificato o a un altro file di risorse. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.  
+## <a name="remarks"></a>Osservazioni
+ L'[attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) determina il nome di risorsa di manifesto appropriato da assegnare a un file con estensione *resx* specificato o a un altro file di risorse. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Vedere anche  
- [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Vedere anche
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

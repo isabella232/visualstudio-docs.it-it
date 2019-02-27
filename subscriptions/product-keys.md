@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803824"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843719"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -47,9 +45,9 @@ I nostri studi dimostrano che la maggior parte dei sottoscrittori non necessita 
 
 ## <a name="locating-and-claiming-product-keys"></a>Individuazione e richiesta dei codici Product Key
 Per visualizzare i propri codici Product Key, è necessario essere connessi alla propria sottoscrizione di Visual Studio. È possibile individuare singoli codici Product Key selezionando il collegamento **Ottieni chiave** azzurro relativo a un prodotto specifico nella pagina [Download](https://my.visualstudio.com/downloads), come illustrato di seguito.  Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quando per uno stesso prodotto esistono più codici, nella colonna Note relativa al download verranno visualizzate apposite note per semplificare l'identificazione del codice da usare.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Ottenere la chiave dalla pagina Download](_img/product-keys/download-get-key.png)
-    
+
 Per alcuni prodotti vengono raggruppate più edizioni del prodotto in un singolo download. In questi casi il codice Product Key immesso determina quale edizione del prodotto è installata.
 Alcuni codici vengono specificati automaticamente, ad esempio quelli "statici", che è possibile usare più volte poiché non è richiesta alcuna attivazione. Altri codici devono essere richiesti selezionando il collegamento **Ottieni chiave** relativo al prodotto.
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ebba86ae6683ecce39a1246ac92fc714d6649a89
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948609"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633733"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -33,15 +33,15 @@ Questo strumento sostituisce lo strumento **Velocità di risposta interfaccia ut
 
 > [!NOTE]
 > È possibile raccogliere e analizzare i dati sull’utilizzo della CPU e sul consumo di energia insieme ai dati della **Sequenza temporale applicazione** . Vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
-  
+
 ## <a name="collect-application-timeline-data"></a>Raccogliere dati sulla sequenza temporale applicazione
 
 È possibile profilare la velocità di risposta dell'app nel computer locale, nel dispositivo connesso, negli emulatori o nel simulatore Visual Studio o in un dispositivo remoto. Vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!TIP]
-> Se possibile, eseguire l'app direttamente nel dispositivo. Le prestazioni dell'applicazione osservate nel simulatore o tramite Connessione Desktop remoto potrebbero non essere indicative delle prestazioni effettive nel dispositivo. D'altro canto, la raccolta di dati usando Visual Studio Remote Tools non influisce sui dati delle prestazioni.  
+> Se possibile, eseguire l'app direttamente nel dispositivo. Le prestazioni dell'applicazione osservate nel simulatore o tramite Connessione Desktop remoto potrebbero non essere indicative delle prestazioni effettive nel dispositivo. D'altro canto, la raccolta di dati usando Visual Studio Remote Tools non influisce sui dati delle prestazioni.
 
-I passaggi principali sono indicati di seguito.  
+I passaggi principali sono indicati di seguito.
 
 1. Aprire l’app XAML.
 
@@ -62,69 +62,69 @@ I passaggi principali sono indicati di seguito.
 
 ## <a name="analyze-timeline-profiling-data"></a>Analizzare i dati di profilatura della sequenza temporale
 
-Dopo aver raccolto i dati di profilatura, è possibile utilizzare la procedura indicata di seguito per avviare l'analisi:  
-  
-1. Visualizzare le informazioni nei grafici **Utilizzo thread interfaccia utente** e **Velocità effettiva elementi visivi (FPS)**, quindi usare le barre di navigazione della sequenza temporale per selezionare un intervallo di tempo da analizzare.  
-  
+Dopo aver raccolto i dati di profilatura, è possibile utilizzare la procedura indicata di seguito per avviare l'analisi:
+
+1. Visualizzare le informazioni nei grafici **Utilizzo thread interfaccia utente** e **Velocità effettiva elementi visivi (FPS)**, quindi usare le barre di navigazione della sequenza temporale per selezionare un intervallo di tempo da analizzare.
+
 2. Usando le informazioni contenute nel grafico **Utilizzo thread interfaccia utente** o **Velocità effettiva elementi visivi (FPS)**, esaminare i dettagli nella visualizzazione **Dettagli sequenza temporale** per individuare le possibili cause di qualsiasi mancanza apparente di velocità di risposta.
-  
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> Creare report su scenari, categorie ed eventi  
 
-Lo strumento **Sequenza temporale dell’applicazione** visualizza i dati temporali per scenari, categorie ed eventi correlati alle prestazioni di XAML.  
+### <a name="BKMK_Report_scenarios_categories_and_events"></a> Creare report su scenari, categorie ed eventi
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> Sequenza temporale della sessione di diagnostica  
+Lo strumento **Sequenza temporale dell’applicazione** visualizza i dati temporali per scenari, categorie ed eventi correlati alle prestazioni di XAML.
 
-![Sequenza temporale di prestazioni e diagnostica](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+### <a name="BKMK_Diagnostic_session_timeline"></a> Sequenza temporale della sessione di diagnostica
 
-Il righello nella parte superiore della pagina mostra la sequenza temporale per le informazioni profilate. Questa sequenza temporale si applica sia al grafico **Utilizzo di thread UI** che al grafico **Velocità effettiva visuale** . Puoi limitare l'ambito del rapporto trascinando le barre di navigazione sulla sequenza temporale per selezionare un segmento della stessa.  
+![Sequenza temporale di prestazioni e diagnostica](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
-Nella sequenza temporale vengono anche visualizzati tutti i contrassegni utente inseriti e gli eventi del ciclo di vita di attivazione dell'app.  
+Il righello nella parte superiore della pagina mostra la sequenza temporale per le informazioni profilate. Questa sequenza temporale si applica sia al grafico **Utilizzo di thread UI** che al grafico **Velocità effettiva visuale** . Puoi limitare l'ambito del rapporto trascinando le barre di navigazione sulla sequenza temporale per selezionare un segmento della stessa.
+
+Nella sequenza temporale vengono anche visualizzati tutti i contrassegni utente inseriti e gli eventi del ciclo di vita di attivazione dell'app.
 
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Grafico Utilizzo thread interfaccia utente
 
-![Grafico Utilizzo CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")  
+![Grafico Utilizzo CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
-Il grafico **Utilizzo thread UI (%)** è un grafico a barre che visualizza la quantità relativa di tempo impiegato in una categoria durante l'estensione di una raccolta.  
+Il grafico **Utilizzo thread UI (%)** è un grafico a barre che visualizza la quantità relativa di tempo impiegato in una categoria durante l'estensione di una raccolta.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> Grafico Velocità effettiva elementi visivi  
+### <a name="BKMK_Visual_throughput_FPS_graph"></a> Grafico Velocità effettiva elementi visivi
 
-![Grafico Velocità effettiva elementi visivi](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")  
+![Grafico Velocità effettiva elementi visivi](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
-Nel grafico a linee **Velocità effettiva visuale (FPS)** vengono visualizzati i frame al secondo (FPS) nel thread UI e di composizione dell'applicazione.  
+Nel grafico a linee **Velocità effettiva visuale (FPS)** vengono visualizzati i frame al secondo (FPS) nel thread UI e di composizione dell'applicazione.
 
-### <a name="BKMK_Timeline_details_"></a> Dettagli sequenza temporale  
+### <a name="BKMK_Timeline_details_"></a> Dettagli sequenza temporale
 
 La visualizzazione Dettagli è quella in cui viene impiegata la maggior parte del tempo durante l'analisi del report. Illustra l'uso della CPU da parte dell'applicazione suddiviso per categoria di sottosistema del framework interfaccia utente o componente del sistema che ha consumato la CPU.
 
-Sono supportati i seguenti eventi:  
+Sono supportati i seguenti eventi:
 
-|||  
-|-|-|  
-|**Analisi**|Tempo impiegato per l'analisi dei file XAML e la creazione di oggetti.<br /><br /> Espandendo un nodo **Analisi** in **Dettagli sequenza temporale**, viene visualizzata la catena di dipendenze di tutti i file XAML analizzati a causa dell'evento radice. Questo suggerimento consente di identificare attività di analisi di file e creazione di oggetti non necessarie in scenari in cui le prestazioni sono un fattore importante e di ottimizzarle.|  
-|**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Questa visualizzazione può comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento, ovvero il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride. Crea anche le strutture ad albero visuali che hanno preso parte a un passaggio di Layout. È possibile usare questa visualizzazione per determinare quali alberi logici eliminare o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|  
-|**Rendering**|Tempo impiegato per disegnare elementi XAML sullo schermo.|  
-|**I / 0**|Tempo impiegato per il recupero di dati dal disco locale o dalle risorse di rete cui è possibile accedere tramite l' [API Microsoft Windows Internet (WinINet)](/windows/desktop/WinInet/portal).|  
-|**Codice app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|  
-|**Altro XAML**|Tempo impiegato per l'esecuzione del codice runtime XAML.|  
-  
+|||
+|-|-|
+|**Analisi**|Tempo impiegato per l'analisi dei file XAML e la creazione di oggetti.<br /><br /> Espandendo un nodo **Analisi** in **Dettagli sequenza temporale**, viene visualizzata la catena di dipendenze di tutti i file XAML analizzati a causa dell'evento radice. Questo suggerimento consente di identificare attività di analisi di file e creazione di oggetti non necessarie in scenari in cui le prestazioni sono un fattore importante e di ottimizzarle.|
+|**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Questa visualizzazione può comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento, ovvero il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride. Crea anche le strutture ad albero visuali che hanno preso parte a un passaggio di Layout. È possibile usare questa visualizzazione per determinare quali alberi logici eliminare o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|
+|**Rendering**|Tempo impiegato per disegnare elementi XAML sullo schermo.|
+|**I / 0**|Tempo impiegato per il recupero di dati dal disco locale o dalle risorse di rete cui è possibile accedere tramite l' [API Microsoft Windows Internet (WinINet)](/windows/desktop/WinInet/portal).|
+|**Codice app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|
+|**Altro XAML**|Tempo impiegato per l'esecuzione del codice runtime XAML.|
+
 > [!TIP]
-> Scegliere lo strumento **Utilizzo CPU** insieme allo strumento **Sequenza temporale applicazione** quando si avvia la profilatura per visualizzare metodi di app eseguiti nel thread dell'interfaccia utente. Lo spostamento di codice di app a esecuzione prolungata in un thread in background può migliorare la velocità di risposta dell'interfaccia utente.  
-  
-#### <a name="BKMK_Customizing_Timeline_details_"></a> Personalizzazione dei dettagli della sequenza temporale  
+> Scegliere lo strumento **Utilizzo CPU** insieme allo strumento **Sequenza temporale applicazione** quando si avvia la profilatura per visualizzare metodi di app eseguiti nel thread dell'interfaccia utente. Lo spostamento di codice di app a esecuzione prolungata in un thread in background può migliorare la velocità di risposta dell'interfaccia utente.
 
-Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, filtrare e specificare le annotazioni delle voci della visualizzazione **Dettagli sequenza temporale** .  
-  
-|||  
-|-|-|  
-|**Ordina per**|Ordina in base a ora di inizio o lunghezza degli eventi.|  
-|![Raggruppare gli eventi in base ai frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|  
-|![Filtrare l'elenco dei dettagli della sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|  
-|![Personalizzare i dettagli della sequenza temporale](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|  
-  
+#### <a name="BKMK_Customizing_Timeline_details_"></a> Personalizzazione dei dettagli della sequenza temporale
+
+Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, filtrare e specificare le annotazioni delle voci della visualizzazione **Dettagli sequenza temporale** .
+
+|||
+|-|-|
+|**Ordina per**|Ordina in base a ora di inizio o lunghezza degli eventi.|
+|![Raggruppare gli eventi in base ai frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|
+|![Filtrare l'elenco dei dettagli della sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
+|![Personalizzare i dettagli della sequenza temporale](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
+
 ## <a name="see-also"></a>Vedere anche
 
-- [WPF team blog: New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (Blog del team WPF: Nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF)  
+- [WPF team blog: New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (Blog del team WPF: Nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
-- [Profilatura in Visual Studio](../profiling/index.md)  
+- [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
+- [Profilatura in Visual Studio](../profiling/index.md)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

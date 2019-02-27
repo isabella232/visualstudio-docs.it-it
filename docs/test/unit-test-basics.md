@@ -1,6 +1,6 @@
 ---
 title: Nozioni di base sugli unit test
-ms.date: 2016-01-07
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d2da519bc51149051a3f2476fb6d3a7623bb39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922355"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796829"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -226,7 +226,7 @@ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsi
 > [!WARNING]
 > L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.
 
-|Button|Descrizione|
+|Button|Description|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** nella barra degli strumenti di **Esplora test**.|
 
@@ -236,7 +236,7 @@ In presenza di un numero elevato di test, è possibile digitare nella casella di
 
 ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png)
 
-|Button|Descrizione|
+|Button|Description|
 |-|-|
 |![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
 
@@ -305,7 +305,7 @@ Per eseguire il code coverage per i metodi di test in una soluzione, scegliere *
 
 I risultati del code coverage vengono visualizzati nella finestra **Risultati code coverage**.
 
-![Risultati code coverage](../test/media/ute_codecoverageresults.png)
+![Risultati Code coverage](../test/media/ute_codecoverageresults.png)
 
 Altre informazioni sul [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 

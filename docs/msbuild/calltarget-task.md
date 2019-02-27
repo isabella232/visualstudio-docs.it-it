@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ad6261dba80e56ab44f43b4c70df79d63bb509
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617236"
 ---
 # <a name="calltarget-task"></a>attività CallTarget
-Richiama le destinazioni specificate nel file di progetto.  
+Richiama le destinazioni specificate nel file di progetto.
 
-## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget` .  
+## <a name="task-parameters"></a>Parametri dell'attività
+ Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget` .
 
 
 | Parametro | Description |
@@ -37,31 +37,31 @@ Richiama le destinazioni specificate nel file di progetto.
 | `Targets` | Parametro `String[]` facoltativo.<br /><br /> Specifica la destinazione o le destinazioni da compilare. |
 | `UseResultsCache` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, viene restituito il risultato memorizzato nella cache, se presente.<br /><br /> **Nota** Se l'attività MSBuild viene eseguita, il relativo output viene memorizzato nella cache in un ambito (ProjectFileName, GlobalProperties)[TargetNames] come elenco di elementi di compilazione. |
 
-## <a name="remarks"></a>Note  
- Se una destinazione specificata in `Targets` ha esito negativo e `RunEachTargetSeparately` è `true`, l'attività continua a compilare le destinazioni rimanenti.  
+## <a name="remarks"></a>Osservazioni
+ Se una destinazione specificata in `Targets` ha esito negativo e `RunEachTargetSeparately` è `true`, l'attività continua a compilare le destinazioni rimanenti.
 
- Per compilare le destinazioni predefinite, usare l'[attività MSBuild](../msbuild/msbuild-task.md) e impostare il parametro `Projects` uguale a `$(MSBuildProjectFile)`.  
+ Per compilare le destinazioni predefinite, usare l'[attività MSBuild](../msbuild/msbuild-task.md) e impostare il parametro `Projects` uguale a `$(MSBuildProjectFile)`.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Esempio  
- L'esempio seguente chiama `TargetA` dall'interno di `CallOtherTargets`.  
+## <a name="example"></a>Esempio
+ L'esempio seguente chiama `TargetA` dall'interno di `CallOtherTargets`.
 
-```xml  
-<Project DefaultTargets="CallOtherTargets"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="CallOtherTargets"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Target Name="CallOtherTargets">  
-        <CallTarget Targets="TargetA"/>  
-    </Target>  
+    <Target Name="CallOtherTargets">
+        <CallTarget Targets="TargetA"/>
+    </Target>
 
-    <Target Name="TargetA">  
-        <Message Text="Building TargetA..." />  
-    </Target>  
+    <Target Name="TargetA">
+        <Message Text="Building TargetA..." />
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Attività MSBuild](../msbuild/msbuild-task-reference.md)   
- [Destinazioni](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Vedere anche
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Destinazioni](../msbuild/msbuild-targets.md)

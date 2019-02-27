@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16378663dd07bb9810661ad50d3f1c011dfdd80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000369"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609371"
 ---
 # <a name="memory-management-time"></a>Tempo di gestione della memoria
-Questi segmenti nella sequenza temporale sono associati a tempi di blocco categorizzati come gestione della memoria. Questo scenario implica che un thread è bloccato da un evento associato a un'operazione di gestione della memoria quale il paging. Durante questo periodo, un thread è stato bloccato in un'API o in uno stato del kernel che il visualizzatore di concorrenza calcola come gestione della memoria. Si tratta di eventi come il paging e l'allocazione di memoria.  
-  
- Esaminare gli stack di chiamate e i rapporti di profilo associati per comprendere meglio i motivi alla base della categorizzazione dei blocchi come gestione della memoria.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+Questi segmenti nella sequenza temporale sono associati a tempi di blocco categorizzati come gestione della memoria. Questo scenario implica che un thread è bloccato da un evento associato a un'operazione di gestione della memoria quale il paging. Durante questo periodo, un thread è stato bloccato in un'API o in uno stato del kernel che il visualizzatore di concorrenza calcola come gestione della memoria. Si tratta di eventi come il paging e l'allocazione di memoria.
+
+ Esaminare gli stack di chiamate e i rapporti di profilo associati per comprendere meglio i motivi alla base della categorizzazione dei blocchi come gestione della memoria.
+
+## <a name="see-also"></a>Vedere anche
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

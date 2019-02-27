@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922121"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645485"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
 
@@ -42,7 +42,7 @@ Questa pagina include opzioni di formattazione di istruzioni e blocchi durante l
 
 ### <a name="configuring-clangformat-options"></a>Configurazione delle opzioni di ClangFormat
 
-In Visual Studio 2017 versione 15.7 e successive, il supporto per ClangFormat è abilitato per impostazione predefinita. È possibile scegliere quali di queste convenzioni di formattazione comuni applicare a tutti i progetti: LLVM, Google, Chromium, Mozilla o WebKit. È anche possibile creare un file con estensione clang-format o _clang-format con una definizione di formato personalizzata. Se questo file è presente nella cartella di un progetto, Visual Studio lo usa per formattare tutti i file di codice sorgente contenuti nella cartella e nelle relative sottocartelle. 
+In Visual Studio 2017 versione 15.7 e successive, il supporto per ClangFormat è abilitato per impostazione predefinita. È possibile scegliere quali di queste convenzioni di formattazione comuni applicare a tutti i progetti: LLVM, Google, Chromium, Mozilla o WebKit. È anche possibile creare un file con estensione clang-format o _clang-format con una definizione di formato personalizzata. Se questo file è presente nella cartella di un progetto, Visual Studio lo usa per formattare tutti i file di codice sorgente contenuti nella cartella e nelle relative sottocartelle.
 
 Per impostazione predefinita, Visual Studio esegue clangformat.exe in background e applica la formattazione durante la digitazione. È anche possibile specificare di eseguirlo solo per i comandi di formattazione richiamati manualmente **Formatta documento (CTRL+K, CTRL+D)** o **Formatta selezione (CTRL + K, CTRL + F)**.
 

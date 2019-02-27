@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947621"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605185"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *microsoft.common.tasks*, un file *microsoft.common.targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
@@ -116,4 +116,5 @@ MSBuild fornisce gli overload dei metodi `ToolLocationHelper` che aggiungono com
 I subset di strumenti sono stati introdotti in .NET Framework 4.5.
 
 ## <a name="see-also"></a>Vedere anche
- [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md) [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+- [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

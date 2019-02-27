@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035614"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645225"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
-Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).  
-  
-### <a name="to-manually-create-a-performance-session"></a>Per creare manualmente una sessione di prestazioni  
-  
-1.  Nel menu **Debug** scegliere **Profiler**, **Esplora prestazioni** e quindi fare clic su **Nuova sessione di prestazioni**.  
-  
-     Verrà aggiunta una sessione di prestazioni vuota in **Esplora prestazioni**.  
-  
-2.  Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi fare clic su **Aggiungi binario di destinazione**.  
-  
-3.  Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**.  
-  
-     Verrà aggiunto un nuovo file binario.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Esplora prestazioni](../profiling/performance-explorer.md)   
- [Introduzione](../profiling/getting-started-with-performance-tools.md)
+Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).
+
+### <a name="to-manually-create-a-performance-session"></a>Per creare manualmente una sessione di prestazioni
+
+1.  Nel menu **Debug** scegliere **Profiler**, **Esplora prestazioni** e quindi fare clic su **Nuova sessione di prestazioni**.
+
+     Verrà aggiunta una sessione di prestazioni vuota in **Esplora prestazioni**.
+
+2.  Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi fare clic su **Aggiungi binario di destinazione**.
+
+3.  Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**.
+
+     Verrà aggiunto un nuovo file binario.
+
+## <a name="see-also"></a>Vedere anche
+- [Esplora prestazioni](../profiling/performance-explorer.md)
+- [Introduzione](../profiling/getting-started-with-performance-tools.md)

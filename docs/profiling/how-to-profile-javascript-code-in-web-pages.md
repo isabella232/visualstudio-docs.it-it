@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646135"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web
 
 Gli strumenti di profilatura di Visual Studio possono raccogliere dati sulle prestazioni per il codice JavaScript eseguito in un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], in una pagina Web arbitraria o in un'applicazione JavaScript usando il metodo di profilatura della strumentazione. Richiede Internet Explorer 8 o versioni successive.
 
 > [!WARNING]
-> Per profilare il codice Ja0vaScript nelle app UWP, vedere [Memoria JavaScript](../profiling/javascript-memory.md) 
+> Per profilare il codice Ja0vaScript nelle app UWP, vedere [Memoria JavaScript](../profiling/javascript-memory.md)
 
 È possibile usare la procedura guidata di profilatura per creare una sessione di prestazioni. Specificare il metodo di strumentazione, quindi specificare l'opzione di profilatura JavaScript nella pagina Strumentazione della finestra di dialogo delle proprietà per la sessione di prestazioni.
 

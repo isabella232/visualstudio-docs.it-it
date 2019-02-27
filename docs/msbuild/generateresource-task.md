@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853979"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615916"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
 Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *RESOURCES* di Common Language Runtime, che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file *TXT* o *RESX* in file *RESOURCES*. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
@@ -31,7 +31,7 @@ Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `GenerateResource` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`AdditionalInputs`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|
 |`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Specifica una matrice di coppie nome/valore di variabili di ambiente che devono essere passate al file *resgen.exe* generato, oltre al normale blocco di ambiente (o all'esecuzione selettiva dell'override).|
@@ -60,7 +60,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`TrackFileAccess`|Parametro <xref:System.Boolean> facoltativo.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|
 |`UseSourcePath`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che è necessario usare la directory del file di input per risolvere i percorsi di file relativi.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Poiché i file *RESX* possono contenere collegamenti ad altri file di risorse, non è sufficiente confrontare i timestamp dei file *RESX* e *RESOURCES* per verificare che gli output siano aggiornati. Per questo motivo, l'attività `GenerateResource` segue i collegamenti nei file *RESX* e al tempo stesso controlla i timestamp dei file collegati. Ne consegue che, in genere, non è consigliabile usare gli attributi `Inputs` e `Outputs` nella destinazione che contiene l'attività `GenerateResource`. In questo modo, infatti, è possibile che l'attività venga ignorata anziché essere eseguita.
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -95,5 +95,5 @@ Supponendo che l'assembly si chiami myAssembly, il codice seguente genera una ri
 Senza i metadati \<LogicalName>, la risorsa sarebbe denominata *myAssembly.myResource.resources*.  Questo esempio si applica solo a Visual Basic e al processo di compilazione di Visual C#.
 
 ## <a name="see-also"></a>Vedere anche
-[Attività](../msbuild/msbuild-tasks.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

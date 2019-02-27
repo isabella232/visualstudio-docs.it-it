@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935059"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603287"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilatura di applicazioni autonome dalla riga di comando
-Questa sezione descrive le procedure e le opzioni per la raccolta di dati sulle prestazioni per le applicazioni client autonome Web tramite gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalla riga di comando.  
+Questa sezione descrive le procedure e le opzioni per la raccolta di dati sulle prestazioni per le applicazioni client autonome Web tramite gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalla riga di comando.
 
-## <a name="common-tasks"></a>Attività comuni  
+## <a name="common-tasks"></a>Attività comuni
 
 | Attività | Contenuti correlati |
 | - | - |
@@ -32,9 +32,9 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sulle 
 | **Aggiungere dati di interazione tra livelli:** è possibile aggiungere dati sulle prestazioni relative alle chiamate sincrone ADO.NET che l'applicazione ha eseguito nei confronti di un database Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. | -   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **Prova:** usare le procedure dettagliate per sottoporre a profilatura un'applicazione client di esempio tramite il metodo di campionamento o di strumentazione. | -   [Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [Procedura dettagliata: Profilatura dalla riga di comando tramite strumentazione](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>Attività correlate  
+## <a name="related-tasks"></a>Attività correlate
 
-|Attività|Contenuto correlato|  
-|----------|---------------------|  
-|**Sottoporre a profilatura applicazioni ASP.NET**|-   [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|Attività|Contenuto correlato|
+|----------|---------------------|
+|**Sottoporre a profilatura applicazioni ASP.NET**|-   [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Sottoporre a profilatura i servizi**|-   [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)|

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5f9ec3f2db14369cf8f469b718b027fd394649
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027334"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643054"
 ---
 # <a name="markupcompilepass1-task"></a>Attività MarkupCompilePass1
 
@@ -61,7 +61,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> converte i f
 | `UICulture` | Parametro **String** facoltativo.<br /><br /> Specifica l'assembly satellite per le impostazioni cultura dell'interfaccia utente in cui vengono incorporati i file in formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] generati. Se **UICulture** non è impostato, i file in formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] generati verranno incorporati nell'assembly principale. |
 | `XAMLDebuggingInformation` | Parametro **Boolean** facoltativo.<br /><br /> Se **true**, le informazioni diagnostiche verranno generate e incluse nel file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] compilato per agevolare il debug. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 L'attività <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> in genere compila [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in formato binario e genera file di codice. Se un file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] contiene riferimenti a tipi definiti nello stesso progetto, la relativa compilazione in formato binario verrà rinviata da **MarkupCompilePass1** a un secondo passaggio di compilazione del markup (**MarkupCompilePass2**). La compilazione di tali file deve essere rinviata poiché è necessario attendere la compilazione dei tipi definiti localmente a cui si fa riferimento. Se tuttavia un file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ha un attributo `x:Class`, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> genera il file di codice specifico della lingua necessario.
 
@@ -102,11 +102,11 @@ L'esempio seguente illustra come convertire tre file *Page* [!INCLUDE[TLA2#tla_x
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -121,9 +121,9 @@ L'esempio seguente illustra come convertire tre file *Page* [!INCLUDE[TLA2#tla_x
 
 ## <a name="see-also"></a>Vedere anche
 
-[Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
-[Informazioni di riferimento sulle attività MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)  
-[Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Panoramica delle applicazioni browser XAML di WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
+- [Informazioni di riferimento sulle attività MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Panoramica delle applicazioni browser XAML di WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

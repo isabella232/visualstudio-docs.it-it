@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afbee1d4f0aee1dbf752ca241521ee121d00975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937496"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610320"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (attività)
 
@@ -61,13 +61,13 @@ La tabella seguente descrive i parametri dell'attività `GenerateDeploymentManif
 | `UpdateMode` | Parametro `String` facoltativo.<br /><br /> Specifica se è necessario verificare gli aggiornamenti in primo piano prima dell'avvio dell'applicazione o in background durante l'esecuzione dell'applicazione. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> Il valore predefinito di questo parametro è `Background`. Questo parametro è applicabile solo quando i parametri `Install` e `UpdateEnabled` sono entrambi impostati su `true`. |
 | `UpdateUnit` | Parametro `String` facoltativo.<br /><br /> Specifica le unità per il parametro `UpdateInterval`. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Questo parametro è applicabile solo quando i parametri `Install` e `UpdateEnabled` sono entrambi impostati su `true`. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Attività](../msbuild/msbuild-tasks.md)  
-[Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)  
-[Attività SignFile](../msbuild/signfile-task.md)  
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
+- [Attività SignFile](../msbuild/signfile-task.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

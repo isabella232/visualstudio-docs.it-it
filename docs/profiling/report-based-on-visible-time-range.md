@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019567"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614597"
 ---
 # <a name="report-based-on-visible-time-range"></a>Report basato sull'intervallo di tempo visibile
-La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i canali attualmente visibili. Per visualizzare i dettagli per subset dei dati diversi, fare clic sugli elementi nella legenda.  
-  
- È possibile trovare altre informazioni sui dati nelle tabelle riportate di seguito.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Nessuna attività di thread da mostrare](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Rapporto profilo di esecuzione](../profiling/execution-profile-report.md)   
- [Tempo di sincronizzazione](../profiling/synchronization-time.md)   
- [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)   
- [Tempo di sospensione](../profiling/sleep-time.md)   
- [Tempo di gestione della memoria](../profiling/memory-management-time.md)   
- [Tempo di precedenza](../profiling/preemption-time.md)   
- [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)   
- [Report Operazioni su disco](../profiling/disk-operations-report-threads-view.md)   
- [Report Riepilogo per thread](../profiling/per-thread-summary-report.md)   
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i canali attualmente visibili. Per visualizzare i dettagli per subset dei dati diversi, fare clic sugli elementi nella legenda.
+
+ È possibile trovare altre informazioni sui dati nelle tabelle riportate di seguito.
+
+## <a name="see-also"></a>Vedere anche
+- [Nessuna attività di thread da mostrare](../profiling/no-thread-activity-to-show-threads-view.md)
+- [Report del profilo di esecuzione](../profiling/execution-profile-report.md)
+- [Tempo di sincronizzazione](../profiling/synchronization-time.md)
+- [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)
+- [Durata della sospensione](../profiling/sleep-time.md)
+- [Tempo di gestione della memoria](../profiling/memory-management-time.md)
+- [Tempo di annullamento](../profiling/preemption-time.md)
+- [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)
+- [Report Operazioni su disco](../profiling/disk-operations-report-threads-view.md)
+- [Report di riepilogo per thread](../profiling/per-thread-summary-report.md)
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
