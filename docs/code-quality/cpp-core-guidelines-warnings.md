@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957939"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954307"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 
@@ -161,27 +161,28 @@ Anziché #pragmas, è possibile usare opzioni della riga di comando nella pagina
 
 In alcuni casi può essere utile per analisi del codice di eseguire operazioni con stato attivato e comunque sfruttare l'IDE di Visual Studio. Di seguito è uno scenario di esempio che può essere usato per i progetti di grandi dimensioni per risparmiare tempo di compilazione e rendono più semplice per filtrare i risultati.
 
-1.  Nella shell dei comandi impostare la `esp.extension` e `esp.annotationbuildlevel` variabili di ambiente.
-2.  Avviare Visual Studio dalla shell dei comandi per ereditare tali variabili.
-3.  Caricare il progetto e aprire le relative proprietà.
-4.  Abilita analisi codice, selezionare i set di regole appropriate, ma non abilitare le estensioni di analisi codice.
-5.  Passare al file di cui che si desidera analizzare con il controllo di linee guida di base di C++ e aprirne le relative proprietà.
-6.  Scegli **C / C++ \Command opzioni della riga** e aggiungere `/analyze:plugin EspXEngine.dll`
-7.  Disabilitare l'uso dell'intestazione precompilata (**C / C++ \Precompiled intestazioni**). Ciò è necessario perché il motore delle estensioni può tentare di leggere le informazioni interne da intestazione precompilata e se quest'ultimo è stato compilato con le opzioni di progetto predefinite, non saranno compatibile.
-8.  Ricompilare il progetto. I controlli comuni di PREFast devono eseguire in tutti i file. Poiché il controllo di linee guida di base di C++ non è abilitato per impostazione predefinita, deve essere eseguita solo sul file di cui è configurato per usarlo.
+1. Nella shell dei comandi impostare la `esp.extension` e `esp.annotationbuildlevel` variabili di ambiente.
+2. Avviare Visual Studio dalla shell dei comandi per ereditare tali variabili.
+3. Caricare il progetto e aprire le relative proprietà.
+4. Abilita analisi codice, selezionare i set di regole appropriate, ma non abilitare le estensioni di analisi codice.
+5. Passare al file di cui che si desidera analizzare con il controllo di linee guida di base di C++ e aprirne le relative proprietà.
+6. Scegli **C / C++ \Command opzioni della riga** e aggiungere `/analyze:plugin EspXEngine.dll`
+7. Disabilitare l'uso dell'intestazione precompilata (**C / C++ \Precompiled intestazioni**). Ciò è necessario perché il motore delle estensioni può tentare di leggere le informazioni interne da intestazione precompilata e se quest'ultimo è stato compilato con le opzioni di progetto predefinite, non saranno compatibile.
+8. Ricompilare il progetto. I controlli comuni di PREFast devono eseguire in tutti i file. Poiché il controllo di linee guida di base di C++ non è abilitato per impostazione predefinita, deve essere eseguita solo sul file di cui è configurato per usarlo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Come usare il controllo di linee guida di base di C++ esternamente a Visual Studio
 È possibile usare i controlli delle linee guida di base di C++ nelle compilazioni automatiche.
 
 ### <a name="msbuild"></a>MSBuild
- Il grafico di analisi del codice nativo (PREfast) è integrato nell'ambiente di MSBuild dai file di destinazioni personalizzate. È possibile per abilitarla, usare le proprietà del progetto e aggiungere il controllo di linee guida di base di C++ (che si basa su PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+Il grafico di analisi del codice nativo (PREfast) è integrato nell'ambiente di MSBuild dai file di destinazioni personalizzate. È possibile per abilitarla, usare le proprietà del progetto e aggiungere il controllo di linee guida di base di C++ (che si basa su PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Assicurarsi di che aggiungere queste proprietà prima dell'importazione del file Microsoft.Cpp.targets. È possibile selezionare i set di regole specifici o creare un set di regole personalizzato o usare il set di regole predefinite che include altri controlli di PREfast.
@@ -221,14 +222,16 @@ Se si usa un sistema di compilazione che non si basa su MSBuild è comunque poss
    - `/analyze:plugin EspXEngine.dll` Questa opzione Carica il motore delle estensioni di analisi codice di PREfast. Questo motore, a sua volta, carica il controllo di linee guida di base di C++.
 
 ## <a name="use-the-guideline-support-library"></a>Usare la libreria di supporto delle linee guida
- La libreria di supporto delle linee guida è progettata per aiutarti a seguire le linee guida di base. Il GSL include le definizioni che consentono di sostituire i costrutti soggetta a errori con alternative più sicure. Ad esempio, è possibile sostituire un `T*, length` coppia di parametri con il `span<T>` tipo. È disponibile all'indirizzo il GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La libreria è open source, in modo che è possibile visualizzare le origini, commenti o contribuire. Il progetto è reperibile in [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Usare le linee guida C++ Core controllare nei progetti di Visual Studio 2015
-  Se si usa Visual Studio 2015, il set di regole analisi codice C++ Core controllare non sono installati per impostazione predefinita. È necessario eseguire alcuni passaggi aggiuntivi prima di poter abilitare strumenti di analisi codice C++ Core verificare in Visual Studio 2015. Microsoft offre supporto per i progetti di Visual Studio 2015 con un pacchetto Nuget. Il pacchetto viene denominato Microsoft.CppCoreCheck ed è disponibile all'indirizzo [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Questo pacchetto è necessario almeno Visual Studio 2015 con Update 1 installato.
+La libreria di supporto delle linee guida è progettata per aiutarti a seguire le linee guida di base. Il GSL include le definizioni che consentono di sostituire i costrutti soggetta a errori con alternative più sicure. Ad esempio, è possibile sostituire un `T*, length` coppia di parametri con il `span<T>` tipo. È disponibile all'indirizzo il GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La libreria è open source, in modo che è possibile visualizzare le origini, commenti o contribuire. Il progetto è reperibile in [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- Il pacchetto installa anche un altro pacchetto come dipendenza, una sola intestazione delle linee guida il supporto della libreria (GSL). È inoltre disponibile in GitHub all'indirizzo il GSL [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Usare le linee guida C++ Core controllare nei progetti di Visual Studio 2015
 
- A causa della modalità che vengono caricate le regole dell'analisi codice, è necessario installare il pacchetto Microsoft.CppCoreCheck NuGet in ogni progetto C++ che si desidera controllare all'interno di Visual Studio 2015.
+Se si usa Visual Studio 2015, il set di regole analisi codice C++ Core controllare non sono installati per impostazione predefinita. È necessario eseguire alcuni passaggi aggiuntivi prima di poter abilitare strumenti di analisi codice C++ Core verificare in Visual Studio 2015. Microsoft offre supporto per i progetti di Visual Studio 2015 con un pacchetto Nuget. Il pacchetto viene denominato Microsoft.CppCoreCheck ed è disponibile all'indirizzo [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Questo pacchetto è necessario almeno Visual Studio 2015 con Update 1 installato.
+
+Il pacchetto installa anche un altro pacchetto come dipendenza, una sola intestazione delle linee guida il supporto della libreria (GSL). È inoltre disponibile in GitHub all'indirizzo il GSL [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+A causa della modalità che vengono caricate le regole dell'analisi codice, è necessario installare il pacchetto Microsoft.CppCoreCheck NuGet in ogni progetto C++ che si desidera controllare all'interno di Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Per aggiungere il pacchetto Microsoft.CppCoreCheck al progetto in Visual Studio 2015
 
