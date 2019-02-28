@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681842"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954257"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 
@@ -164,7 +164,7 @@ Per fornire ulteriori indicazioni, sono stati identificati alcuni tipi di estens
 
 Tipo di estensione | Nome visualizzato | Id
 --- | --- | ---
-Editor | Editor principale di Visual Studio  | Microsoft.VisualStudio.Component.CoreEditor
+Editor | Editor principale di Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# e Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Componenti di base Carico di lavoro desktop gestito | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Debugger | Debugger JIT | Microsoft.VisualStudio.Component.Debugger.JustInTime

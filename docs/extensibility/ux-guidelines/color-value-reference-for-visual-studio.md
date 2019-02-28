@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722278"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954429"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento del valore di colore per Visual Studio
 
@@ -553,7 +553,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 
 | Chiaro | Scuro | Blu | Utilizzato per... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![Campione & FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "& FFFDF4BF campione")<br />`#FFFDF4BF` | Pulsanti di azione, elementi di casella combinata, pulsanti della barra dei comandi, caselle di riepilogo e voci di menu: sfondo |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Campione & FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "& FFFDF4BF campione")<br />`#FFFDF4BF` | Pulsanti di azione, elementi di casella combinata, pulsanti della barra dei comandi, caselle di riepilogo e voci di menu: sfondo |
 | ![#FFCCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB swatch")<br />`#FFCCCEDB` | ![Campione & FF3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "& FF3F3F46 campione")<br />`#FF3F3F46` | ![Campione & FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "& FF465A7D campione")<br />`#FF465A7D` | Bordo scheda Nascondi automaticamente |
 | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Campione & FF293955](../../extensibility/ux-guidelines/media/293955.png "& FF293955 campione")<br />`#FF293955` | Sfondi di predefinito e al passaggio del mouse della scheda Nascondi automaticamente |
 | ![Campione & FF444444](../../extensibility/ux-guidelines/media/444444.png "& FF444444 campione")<br />`#FF444444` | ![#FFD0D0D0 swatch](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 swatch")<br />`#FFD0D0D0` | ![Campione #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "campione #FFFFFFFF")<br />`#FFFFFFFF` | Testo scheda Nascondi automaticamente, testo barra del titolo della finestra degli strumenti con stato non attivo e testo scheda casella degli strumenti |
