@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023954"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720031"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
@@ -47,7 +47,7 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 * Se si desidera visualizzare la Guida per assicurarsi che l'app è configurata, distribuzione e in esecuzione correttamente in IIS in modo che è possibile eseguire il debug, seguire tutti i passaggi descritti in questo argomento.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creazione di ASP.NET 4.5.2 dell'applicazione nel computer di Visual Studio
-  
+
 1. Creare una nuova applicazione MVC ASP.NET (**File > Nuovo > progetto**, quindi selezionare <strong>Visual C# > Web > applicazione Web ASP.NET. Nella sezione modelli ASP.NET 4.5.2</strong> selezionare **MVC**. Verificare che l'opzione **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.)
 
 2. Aprire il file HomeController.cs e impostare un punto di interruzione nel metodo `About()` .
@@ -147,7 +147,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se n
 È anche possibile pubblicare e distribuire l'app usando il file system o altri strumenti.
 
 1. (ASP.NET 4.5.2) Assicurarsi che il file Web. config riporti la versione corretta di .NET Framework.  Ad esempio, se si usa ASP.NET 4.5.2, assicurarsi che questa versione è indicata nel file Web. config.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se n
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Ad esempio, la versione deve essere 4.0, se si installa ASP.NET 4 invece 4.5.2.
@@ -168,7 +168,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se n
 In questa esercitazione viene usato Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Configurare il debugger remoto in Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P 
+    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P
 
 3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.
@@ -200,7 +200,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 7. Fare clic su **Connetti**.
 
 8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
-    
+
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **sulle** pagina.
 
@@ -211,7 +211,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, devi verificare che le porte siano aperte.
 
 > [!NOTE]
-> In una VM di Azure, è necessario aprire le porte attraverso il [gruppo di sicurezza di rete](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> In una VM di Azure, è necessario aprire le porte attraverso il [gruppo di sicurezza di rete](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Porte necessarie:
 
