@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee06900559dd27b0cf499693987037db4a08da03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040008"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624126"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-Recupera lo slot di dati di base.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_baseDataSlot(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene lo slot di dati di base.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera lo slot di dati di base.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_baseDataSlot(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Un puntatore a un `DWORD` che contiene lo slot di dati di base.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

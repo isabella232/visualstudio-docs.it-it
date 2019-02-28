@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbaff7778b06eeb08c9e92174ccd531d9dd2dbf
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156007"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605276"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Consente di enumerare le varie origini inserite contenute nell'origine dati.
@@ -31,7 +31,7 @@ IDiaEnumInjectedSources : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaEnumInjectedSources`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Recupera il numero di origini inserite.|
@@ -41,7 +41,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaEnumInjectedSources`.
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Questa interfaccia viene ottenuta chiamando il [Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) metodo con il nome di un file di origine specifici o chiamando le [Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) metodo con il GUID del `IDiaEnumInjectedSources` interfaccia.
@@ -113,8 +113,8 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)  
-[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

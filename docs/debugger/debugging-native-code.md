@@ -20,56 +20,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b057d10e03274186160fc468da8fbc7714ffe14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034077"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685495"
 ---
 # <a name="debugging-native-code"></a>Debug del codice nativo
-In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di uso del debugger di Visual Studio, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md)).  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md)  
- Vengono forniti suggerimenti per il debug del codice ottimizzato, in particolare sull'opportunità di eseguire il debug di una versione non ottimizzata del programma, sulle impostazioni di ottimizzazione predefinite per le configurazioni di debug e di rilascio e suggerimenti per la ricerca di bug visualizzati solo nel codice ottimizzato, attivando l'ottimizzazione nella configurazione di una build di debug.  
-  
- [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
- Viene descritta la funzione `DebugBreak` Win32 e viene fornito un collegamento all'argomento di riferimento in Platform SDK. Viene inoltre descritta la funzione intrinseca `__debugbreak`.  
-  
- [Asserzioni C/C++](../debugger/c-cpp-assertions.md)  
- Vengono discusse le istruzioni di asserzione, il loro funzionamento, i vantaggi derivanti dal loro utilizzo (rilevamento di errori logici, controllo dei risultati di un'operazione e verifica delle condizioni di errore), l'interazione con `_DEBUG` e i tipi di asserzioni supportati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- [Procedura: Eseguire il debug di codice assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
- Vengono fornite brevi istruzioni sull'utilizzo della finestra Disassembly per visualizzare le istruzioni di assembly e della finestra Registri per visualizzare il contenuto del Registro di sistema e vengono forniti collegamenti agli argomenti relativi a tali finestre.  
-  
- [Tecniche di debug MFC](../debugger/mfc-debugging-techniques.md)  
- È possibile collegarsi alle tecniche di debug per programmi MFC, tra cui: afxDebugBreak, la macro TRACE, rilevamento di perdite di memoria in MFC, asserzioni MFC e riduzione della dimensione delle build di debug MFC.  
-  
- [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)  
- È possibile collegarsi alle tecniche di debug per la libreria di runtime del linguaggio C, tra cui: utilizzo della libreria di debug CRT, macro per la creazione di report, differenze tra malloc e _malloc_dbg, scrittura di funzioni hook di debug e heap di debug CRT.  
-  
- [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)  
- Vengono fornite risposte alle domande frequenti sul debug di programmi Visual C++.  
-  
- [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)  
- Vengono fornite informazioni sul debug delle applicazioni COM e ActiveX, inclusi gli strumenti da utilizzare al riguardo.  
-  
- [Procedura: Eseguire il debug di codice inserito](../debugger/how-to-debug-injected-code.md)  
- Viene fornito materiale sussidiario sul debug del codice che utilizza gli attributi. Sono incluse istruzioni per l'attivazione del codice sorgente, la visualizzazione del codice inserito e del codice disassembly in corrispondenza del punto di esecuzione corrente.  
-  
- [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
- Vengono forniti collegamenti ad argomenti che descrivono le modalità di debug dei tipi di progetto nativi creati mediante i modelli di progetto di Visual C++.  
+In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di uso del debugger di Visual Studio, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md)).
+
+## <a name="in-this-section"></a>In questa sezione
+ [Procedura: Debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md) vengono forniti suggerimenti per il debug del codice ottimizzato, in particolare, motivo per cui è necessario eseguire il debug di una versione non ottimizzata del programma, impostazioni di ottimizzazione predefinite per le configurazioni di Debug e rilascio e vengono forniti suggerimenti per ricerca di bug che vengono visualizzate solo nel codice ottimizzato (attivando l'ottimizzazione in una configurazione di build di Debug).
+
+ [DebugBreak e DebugBreak](../debugger/debugbreak-and-debugbreak.md) descrive Win32 `DebugBreak` funzione e viene fornito un collegamento all'argomento di riferimento in Platform SDK. Viene inoltre descritta la funzione intrinseca `__debugbreak`.
+
+ [Asserzioni C/C++](../debugger/c-cpp-assertions.md) vengono illustrate le istruzioni di asserzione, il loro funzionamento, i vantaggi dell'uso li (rilevamento di errori per la logica, verifica i risultati di un'operazione e verifica delle condizioni di errore), l'interazione con `_DEBUG`e i tipi di asserzioni supportati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+ [Procedura: eseguire il Debug di codice Assembly Inline](../debugger/how-to-debug-inline-assembly-code.md) fornisce brevi istruzioni sull'utilizzo della finestra Disassembly per visualizzare le istruzioni dell'assembly e la finestra registri per visualizzare il contenuto del registro e vengono forniti collegamenti ad argomenti relativi a tali finestre.
+
+ [Tecniche di debug MFC](../debugger/mfc-debugging-techniques.md) possibile collegarsi alle tecniche di debug per programmi MFC, tra cui: afxDebugBreak, la macro TRACE, rilevamento memoria perdite in MFC, MFC asserzioni e riduzione delle dimensioni di Debug di MFC compila.
+
+ [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md) possibile collegarsi alle tecniche di debug per la libreria Run-Time di C, incluso l'uso della libreria di Debug CRT, macro per la creazione di report, le differenze tra malloc e malloc_dbg, scrittura di funzioni hook di debug e heap di debug CRT.
+
+ [Domande frequenti sul codice nativo debug](../debugger/debugging-native-code-faqs.md) vengono fornite le risposte alle domande frequenti sul debug di programmi Visual C++
+
+ [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md) vengono fornite informazioni sul debug di applicazioni COM e ActiveX, inclusi strumenti che è possibile usare per COM e ActiveX di debug.
+
+ [Procedura: eseguire il Debug del codice inserito](../debugger/how-to-debug-injected-code.md) fornisce materiale sussidiario sul debug del codice che usa gli attributi. Sono incluse istruzioni per l'attivazione del codice sorgente, la visualizzazione del codice inserito e del codice disassembly in corrispondenza del punto di esecuzione corrente.
+
+ [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) descrive come usare il **attività in parallelo** e **stack in parallelo** finestre degli strumenti di debug di un'applicazione parallela.
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md) vengono forniti collegamenti ad argomenti che descrivono come eseguire il debug di tipi di progetto nativi creati mediante i modelli di progetto Visual C++.
 
  [Debug di progetti DLL](../debugger/debugging-dll-projects.md) fornisce informazioni su come eseguire il debug di DLL native che gestite.
-  
- [Presentazione del debugger](../debugger/debugger-feature-tour.md)  
- Vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Vengono fornite informazioni sui seguenti argomenti: novità del debugger, impostazione e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice nativo, debug di SQL e riferimenti all'interfaccia utente.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Sicurezza del debugger](../debugger/debugger-security.md)  
- [Debug in Visual Studio](../debugger/index.md) 
+
+ [Presentazione di debugger](../debugger/debugger-feature-tour.md) vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Vengono fornite informazioni sui seguenti argomenti: novità del debugger, impostazione e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice nativo, debug di SQL e riferimenti all'interfaccia utente.
+
+## <a name="see-also"></a>Vedere anche
+ [Sicurezza del debugger](../debugger/debugger-security.md) [debug in Visual Studio](../debugger/index.md)

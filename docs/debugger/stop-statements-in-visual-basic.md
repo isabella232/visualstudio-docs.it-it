@@ -19,45 +19,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea8f2b9fc9b6cc2694db94e156f1a182fb98e29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 329a3aa2805e8a95e14a5d78dc2231ade81ad6e4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011598"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691826"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Istruzioni Stop in Visual Basic
-L'istruzione Stop di Visual Basic fornisce un'alternativa a livello di codice all'impostazione di un punto di interruzione. Quando il debugger rileva un'istruzione Stop, viene interrotta l'esecuzione del programma, ossia viene attivata la modalità di interruzione. I programmatori C# possono ottenere lo stesso risultato tramite una chiamata a System.Diagnostics.Debugger.Break.  
-  
- Per impostare o rimuovere un'istruzione Stop, è necessario modificare il codice sorgente. Le istruzioni Stop non possono essere impostate né rimosse mediante i comandi del debugger, come invece avviene per i punti di interruzione.  
-  
- A differenza di un'istruzione End, l'istruzione Stop non reimposta le variabili né consente di tornare alla modalità di progettazione. Per continuare l'esecuzione dell'applicazione, scegliere Continua dal menu Debug.  
-  
- Quando un'applicazione Visual Basic viene eseguita all'esterno del debugger, un'istruzione Stop avvierà il debugger se è attivato il debug JIT. Se invece il debug JIT non è attivato, l'istruzione Stop si comporterà come un'istruzione End e terminerà l'esecuzione. Poiché non si verificherà alcun evento QueryUnload o Unload, sarà necessario rimuovere tutte le istruzioni Stop dalla versione di rilascio dell'applicazione Visual Basic. Per altre informazioni, vedere [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).  
-  
- Per evitare di dover rimuovere le istruzioni Stop, è possibile utilizzare la compilazione condizionale:  
-  
+L'istruzione Stop di Visual Basic fornisce un'alternativa a livello di codice all'impostazione di un punto di interruzione. Quando il debugger rileva un'istruzione Stop, viene interrotta l'esecuzione del programma, ossia viene attivata la modalità di interruzione. I programmatori C# possono ottenere lo stesso risultato tramite una chiamata a System.Diagnostics.Debugger.Break.
+
+ Per impostare o rimuovere un'istruzione Stop, è necessario modificare il codice sorgente. Le istruzioni Stop non possono essere impostate né rimosse mediante i comandi del debugger, come invece avviene per i punti di interruzione.
+
+ A differenza di un'istruzione End, l'istruzione Stop non reimposta le variabili né consente di tornare alla modalità di progettazione. Per continuare l'esecuzione dell'applicazione, scegliere Continua dal menu Debug.
+
+ Quando un'applicazione Visual Basic viene eseguita all'esterno del debugger, un'istruzione Stop avvierà il debugger se è attivato il debug JIT. Se invece il debug JIT non è attivato, l'istruzione Stop si comporterà come un'istruzione End e terminerà l'esecuzione. Poiché non si verificherà alcun evento QueryUnload o Unload, sarà necessario rimuovere tutte le istruzioni Stop dalla versione di rilascio dell'applicazione Visual Basic. Per altre informazioni, vedere [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).
+
+ Per evitare di dover rimuovere le istruzioni Stop, è possibile utilizzare la compilazione condizionale:
+
 ```cpp
-#If DEBUG Then  
-   Stop  
-#Else  
-   ' Don't stop  
-#End If  
-```  
-  
- È inoltre possibile utilizzare un'istruzione Assert anziché l'istruzione Stop. Un'istruzione Debug.Assert interrompe l'esecuzione solo quando non viene soddisfatta una condizione specificata e viene rimossa automaticamente quando si compila una versione di rilascio. Per ulteriori informazioni, vedere [Asserzioni nel metodo gestito](../debugger/assertions-in-managed-code.md). Se si desidera un'istruzione Assert che interrompa sempre l'esecuzione nella versione di debug, è possibile specificare:  
-  
+#If DEBUG Then
+   Stop
+#Else
+   ' Don't stop
+#End If
+```
+
+ È inoltre possibile utilizzare un'istruzione Assert anziché l'istruzione Stop. Un'istruzione Debug.Assert interrompe l'esecuzione solo quando non viene soddisfatta una condizione specificata e viene rimossa automaticamente quando si compila una versione di rilascio. Per ulteriori informazioni, vedere [Asserzioni nel metodo gestito](../debugger/assertions-in-managed-code.md). Se si desidera un'istruzione Assert che interrompa sempre l'esecuzione nella versione di debug, è possibile specificare:
+
 ```csharp
-Debug.Assert(false)  
-```  
-  
- Un'altra alternativa consiste nell'utilizzo del metodo Debug.Fail:  
-  
+Debug.Assert(false)
+```
+
+ Un'altra alternativa consiste nell'utilizzo del metodo Debug.Fail:
+
 ```csharp
-Debug.Fail("a clever output string goes here")  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+Debug.Fail("a clever output string goes here")
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Sicurezza del debugger](../debugger/debugger-security.md)
+- [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Debug di codice gestito](../debugger/debugging-managed-code.md)

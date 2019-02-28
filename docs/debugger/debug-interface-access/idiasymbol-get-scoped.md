@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74db5ea9ef8ba4092ed47b9e9e356001cd3ae40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00d7a878edd9b161aa40e4d128196e95ce566a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984457"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639479"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-Recupera un flag che specifica se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globali.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_scoped (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globale; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera un flag che specifica se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globali.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_scoped ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globale; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

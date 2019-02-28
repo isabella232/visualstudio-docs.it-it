@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec508ccf26e12ae138eaeeda6409aa3cd9fea592
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: e2865dbf3da103610407cd33eeeaf934caba3c7a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987366"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608617"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 Fornisce l'accesso ai record in un flusso di dati di debug.
@@ -31,7 +31,7 @@ IDiaEnumDebugStreamData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaEnumDebugStreamData`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Recupera il numero di record nel flusso di dati di debug.|
@@ -42,7 +42,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaEnumDebugStreamData`.
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Reimposta la sequenza enumerata all'inizio.|
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questa interfaccia rappresenta un flusso di record in un flusso di dati di debug. Le dimensioni e l'interpretazione di ogni record dipende il flusso di dati proviene il record. Questa interfaccia fornisce in modo efficace l'accesso per i byte di dati non elaborati nel file di simboli.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -110,6 +110,6 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)  
-[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)
+- [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

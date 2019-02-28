@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e62fb21f33658c07a5c7b60885c0cc83310e15f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 485f503d237cbc98918357eee79a3309fe8d33a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927795"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609086"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto di distribuzione ClickOnce
-Un manifesto della distribuzione è un file XML che descrive una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], inclusa l'identificazione della versione corrente dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da distribuire.  
+Un manifesto della distribuzione è un file XML che descrive una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], inclusa l'identificazione della versione corrente dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da distribuire.
 
- I manifesti della distribuzione dispongono degli elementi e degli attributi riportati di seguito.  
+ I manifesti della distribuzione dispongono degli elementi e degli attributi riportati di seguito.
 
 
-| Elemento | Descrizione | Attributi |
+| Elemento | Description | Attributi |
 | - | - | - |
 | [\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md) | Obbligatorio. Elemento di primo livello. | `manifestVersion` |
 | [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obbligatorio. Identifica il manifesto dell'applicazione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
@@ -40,83 +40,83 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
 | [\<Firma > elemento](../deployment/signature-element-clickonce-deployment.md) | Facoltativo. Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione. | nessuno |
 | [\<customErrorReporting > elemento](../deployment/customerrorreporting-element-clickonce-deployment.md) | Facoltativo. Specifica un URI da visualizzare quando si verifica un errore. | URI |
 
-## <a name="remarks"></a>Osservazioni  
- Il file manifesto della distribuzione identifica una distribuzione dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], incluse la versione corrente e altre impostazioni della distribuzione. Fa riferimento al manifesto dell'applicazione, che descrive la versione corrente dell'applicazione e tutti i file contenuti all'interno della distribuzione.  
+## <a name="remarks"></a>Osservazioni
+ Il file manifesto della distribuzione identifica una distribuzione dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], incluse la versione corrente e altre impostazioni della distribuzione. Fa riferimento al manifesto dell'applicazione, che descrive la versione corrente dell'applicazione e tutti i file contenuti all'interno della distribuzione.
 
- Per altre informazioni, vedere [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+ Per altre informazioni, vedere [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
-## <a name="file-location"></a>Posizione file  
- Il file manifesto della distribuzione fa riferimento al manifesto dell'applicazione corretto per la versione corrente dell'applicazione. Quando si rende disponibile una nuova versione di una distribuzione dell'applicazione, è necessario aggiornare il manifesto della distribuzione in modo che faccia riferimento al nuovo manifesto dell'applicazione.  
+## <a name="file-location"></a>Posizione file
+ Il file manifesto della distribuzione fa riferimento al manifesto dell'applicazione corretto per la versione corrente dell'applicazione. Quando si rende disponibile una nuova versione di una distribuzione dell'applicazione, è necessario aggiornare il manifesto della distribuzione in modo che faccia riferimento al nuovo manifesto dell'applicazione.
 
- Il file manifesto della distribuzione deve avere un nome sicuro e può anche contenere certificati per la convalida dell'editore.  
+ Il file manifesto della distribuzione deve avere un nome sicuro e può anche contenere certificati per la convalida dell'editore.
 
-## <a name="file-name-syntax"></a>Sintassi del nome file  
- Il nome di un file manifesto della distribuzione deve terminare con l'estensione *application*.  
+## <a name="file-name-syntax"></a>Sintassi del nome file
+ Il nome di un file manifesto della distribuzione deve terminare con l'estensione *application*.
 
-## <a name="examples"></a>Esempi  
- L'esempio di codice seguente illustra un manifesto della distribuzione.  
+## <a name="examples"></a>Esempi
+ L'esempio di codice seguente illustra un manifesto della distribuzione.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
-  manifestVersion="1.0"  
-  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"  
-  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#  
-  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"  
-  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"  
-  xmlns="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"  
-  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"  
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-  <assemblyIdentity   
-    name="My Application Deployment.app"  
-    version="1.0.0.0"  
-    publicKeyToken="43cb1e8e7a352766"  
-    language="neutral"  
-    processorArchitecture="x86"  
-    xmlns="urn:schemas-microsoft-com:asm.v1" />  
-  <description  
-    asmv2:publisher="My Company Name"  
-    asmv2:product="My Application"  
-    xmlns="urn:schemas-microsoft-com:asm.v1" />  
-  <deployment install="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="0" unit="days" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="\\myServer\sampleDeployment\MyApplicationDeployment.application" />  
-  </deployment>  
-  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
-    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.20506" />  
-    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.20506" />  
-  </compatibleFrameworks>  
-  <dependency>  
-    <dependentAssembly  
-      dependencyType="install"  
-      codebase="1.0.0.0\My Application Deployment.exe.manifest"  
-      size="6756">  
-      <assemblyIdentity  
-        name="My Application Deployment.exe"  
-        version="1.0.0.0"  
-        publicKeyToken="43cb1e8e7a352766"  
-        language="neutral"  
-        processorArchitecture="x86"  
-        type="win32" />  
-      <hash>  
-        <dsig:Transforms>  
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-        </dsig:Transforms>  
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-        <dsig:DigestValue>E506x9FwNauks7UjQywmzgtd3FE=</dsig:DigestValue>  
-      </hash>  
-    </dependentAssembly>  
-  </dependency>  
-<publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">  
-...  
-</Signature></asmv1:assembly>  
-```  
+<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"
+  manifestVersion="1.0"
+  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"
+  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#
+  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"
+  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"
+  xmlns="urn:schemas-microsoft-com:asm.v2"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity
+    name="My Application Deployment.app"
+    version="1.0.0.0"
+    publicKeyToken="43cb1e8e7a352766"
+    language="neutral"
+    processorArchitecture="x86"
+    xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description
+    asmv2:publisher="My Company Name"
+    asmv2:product="My Application"
+    xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="0" unit="days" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="\\myServer\sampleDeployment\MyApplicationDeployment.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.20506" />
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.20506" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly
+      dependencyType="install"
+      codebase="1.0.0.0\My Application Deployment.exe.manifest"
+      size="6756">
+      <assemblyIdentity
+        name="My Application Deployment.exe"
+        version="1.0.0.0"
+        publicKeyToken="43cb1e8e7a352766"
+        language="neutral"
+        processorArchitecture="x86"
+        type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>E506x9FwNauks7UjQywmzgtd3FE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">
+...
+</Signature></asmv1:assembly>
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>Vedere anche
+- [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

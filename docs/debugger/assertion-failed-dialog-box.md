@@ -20,21 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942abb66e56e72cbe462f35944a9e4e03d471052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941814"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619849"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
-Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.  
-  
-|Clic|A|  
-|-----------|--------|  
-|Riprova|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|  
-|Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|  
-|Abort|Interrompere l'esecuzione del programma e terminare la sessione di debug.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Asserzioni C/C++](../debugger/c-cpp-assertions.md)
+Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.
+
+|Fare clic su|A|
+|-----------|--------|
+|Riprova|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|
+|Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|
+|Abort|Interrompere l'esecuzione del programma e terminare la sessione di debug.|
+
+## <a name="see-also"></a>Vedere anche
+
+- [Asserzioni C/C++](../debugger/c-cpp-assertions.md)

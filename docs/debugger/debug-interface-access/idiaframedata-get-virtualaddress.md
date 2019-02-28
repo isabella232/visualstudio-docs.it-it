@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63542e675b12f225a7d0be7da1de27fd49534462
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 523d7dac2b0501957bcc2cd8ea54695548610a44
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986878"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645667"
 ---
 # <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
-Recupera l'indirizzo virtuale (valutazione della vulnerabilità) del codice per il frame.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce l'indirizzo virtuale del codice per il frame.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Recupera l'indirizzo virtuale (valutazione della vulnerabilità) del codice per il frame.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce l'indirizzo virtuale del codice per il frame.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

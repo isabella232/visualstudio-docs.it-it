@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2278835f6de612b61e5fc0a2a1fc2689bad564
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019476"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642885"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-Recupera i numeri di riga all'interno di compilando specificato e gli identificatori di file di origine.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT findLines (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `compiland`  
- [in] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il modulo. Utilizzare questa interfaccia come un contesto in cui cercare i numeri di riga.  
-  
- `file`  
- [in] Un' [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) oggetto che rappresenta il file di origine in cui cercare i numeri di riga.  
-  
- `ppResult`  
- [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) recuperare l'oggetto che contiene un elenco di numeri di riga.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera i numeri di riga all'interno di compilando specificato e gli identificatori di file di origine.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT findLines ( 
+   IDiaSymbol*           compiland,
+   IDiaSourceFile*       file,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `compiland`
+
+[in] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il modulo. Utilizzare questa interfaccia come un contesto in cui cercare i numeri di riga.
+
+ `file`
+
+[in] Un' [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) oggetto che rappresenta il file di origine in cui cercare i numeri di riga.
+
+ `ppResult`
+
+[out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) recuperare l'oggetto che contiene un elenco di numeri di riga.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

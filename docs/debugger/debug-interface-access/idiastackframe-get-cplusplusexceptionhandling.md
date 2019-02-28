@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a342fc0c6b63cd518a41210f46dc8c893f36b2eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938289"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615585"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Recupera un flag che indica se la gestione delle eccezioni C++ è attivo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se la gestione delle eccezioni C++ è attivo per questo frame; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="remarks"></a>Osservazioni  
- Gestione delle eccezioni C++ non è uguale a strutturato o la gestione delle eccezioni di sistema.  
-  
- Per determinare se è strutturata delle eccezioni sono attivo, chiamare il [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (metodo).  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)
+Recupera un flag che indica se la gestione delle eccezioni C++ è attivo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_cplusplusExceptionHandling ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se la gestione delle eccezioni C++ è attivo per questo frame; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ Gestione delle eccezioni C++ non è uguale a strutturato o la gestione delle eccezioni di sistema.
+
+ Per determinare se è strutturata delle eccezioni sono attivo, chiamare il [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (metodo).
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

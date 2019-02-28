@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227813"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721056"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle App UWP in Visual Studio
 
@@ -162,7 +162,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
 
     > [!TIP]
-    > È anche possibile selezionare l'elemento DIV nell'angolo in basso a sinistra della finestra Console JavaScript digitando `select(fView)` alla richiesta di input >>, quindi premere INVIO.
+    > È anche possibile selezionare l'elemento DIV nell'angolo inferiore sinistro della finestra JavaScript Console digitando `select(fView)` nel >> input prompt dei comandi e premere INVIO.
 
     I valori visualizzati nelle schede sul lato destro della finestra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento corrente in DOM Explorer.
 
@@ -254,10 +254,10 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 > L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.
 
 ## <a name="see-also"></a>Vedere anche
-[Eseguire il debug di app in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Debug di un controllo WebView](../debugger/debug-a-webview-control.md)  
-[Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Comandi della console JavaScript](../debugger/javascript-console-commands.md)  
-[Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Supporto tecnico e accessibilità](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Eseguire il debug di app in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)
+- [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Comandi della console JavaScript](../debugger/javascript-console-commands.md)
+- [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Supporto tecnico e accessibilità](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

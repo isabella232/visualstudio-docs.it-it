@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00202fbd412c8ee7f9c5a35a47d59b0f207fd76
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 07912819c3c0ece6376ed0ef63db02838f60e342
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601616"
 ---
 # <a name="idiasymbolgetispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
-Specifica se il `this` puntatore si basa su un valore di simbolo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_isPointerBasedOnSymbolValue(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Un puntatore a un `BOOL` che specifica se il `this` puntatore si basa su un valore di simbolo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Specifica se il `this` puntatore si basa su un valore di simbolo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_isPointerBasedOnSymbolValue(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Un puntatore a un `BOOL` che specifica se il `this` puntatore si basa su un valore di simbolo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

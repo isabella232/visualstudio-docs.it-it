@@ -21,25 +21,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a52a1aba71af25ff66cacefd34e36d7ec33e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e80504e14e6468dc4d9efa31258bdbf6150a649
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992672"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690347"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
-Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal menu **Strumenti** sono contenute le pagine elencate di seguito, che consentono di specificare le impostazioni del debugger.  
-  
--   [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)  
-  
--   [JIT, Debug, Finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md)  
-  
--   [Finestra di output, Debug, finestra di dialogo Opzioni](../debugger/output-window-debugging-options-dialog-box.md)  
-  
--   [Simboli, Debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-## <a name="see-also"></a>Vedere anche  
- [Sicurezza del debugger](../debugger/debugger-security.md) [debug in Visual Studio](../debugger/index.md)  
- [Presentazione del debugger](../debugger/debugger-feature-tour.md)   
- [Riferimenti dell'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md)
+Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal menu **Strumenti** sono contenute le pagine elencate di seguito, che consentono di specificare le impostazioni del debugger.
+
+-   [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
+
+-   [JIT, Debug, Finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md)
+
+-   [Finestra di output, Debug, finestra di dialogo Opzioni](../debugger/output-window-debugging-options-dialog-box.md)
+
+-   [Simboli, Debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Sicurezza del debugger](../debugger/debugger-security.md)
+- [Debug in Visual Studio](../debugger/index.md)
+- [Presentazione del debugger](../debugger/debugger-feature-tour.md)
+- [Riferimenti dell'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md)

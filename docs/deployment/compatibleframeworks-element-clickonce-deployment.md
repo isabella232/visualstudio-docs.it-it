@@ -14,63 +14,63 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14dab7912816ffa86e40c2ed84d83d4020cc7002
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d6fb1ab2addb58f9b28e1185fd55f9fdf63f5600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982091"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628963"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (distribuzione ClickOnce)
-Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione.  
-  
+Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione.
+
 > [!NOTE]
->  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) non supporta la `compatibleFrameworks` elemento durante il salvataggio di un manifesto dell'applicazione che è già stato firmato con un certificato usando [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). È invece necessario usare [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```xml  
-<compatibleFrameworks  
-      SupportUrl>   
-   <framework  
-      targetVersion  
-      profile  
-      supportedRuntime  
-   />   
-</ compatibleFrameworks>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `compatibleFrameworks` elemento è obbligatorio per manifesti della distribuzione che hanno come destinazione il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornita dal runtime [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versione successiva. Il `compatibleFrameworks` elemento contiene uno o più `framework` gli elementi che specificano le versioni di .NET Framework in cui è possibile eseguire questa applicazione. Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime verrà eseguita l'applicazione in corrispondenza del primo disponibile `framework` in questo elenco.  
-  
- La tabella seguente elenca l'attributo che la `compatibleFrameworks` supportato dall'elemento.  
-  
-|Attributo|Description|  
-|---------------|-----------------|  
-|`S` `upportUrl`|Facoltativo. Specifica un URL in cui può essere scaricata la versione di .NET Framework compatibile preferita.|  
-  
-## <a name="framework"></a>framework  
- Obbligatorio. Nella tabella seguente elenca gli attributi che il `framework` supportato dall'elemento.  
-  
-|Attributo|Description|  
-|---------------|-----------------|  
-|`targetVersion`|Obbligatorio. Specifica il numero di versione di .NET Framework di destinazione.|  
-|`profile`|Obbligatorio. Specifica il profilo di .NET Framework di destinazione.|  
-|`supportedRuntime`|Obbligatorio. Specifica il numero di versione del runtime associato alla destinazione .NET Framework.|  
-  
-## <a name="remarks"></a>Note  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio di codice riportato di seguito viene illustrato un `compatibleFrameworks` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. Questa distribuzione può essere eseguita di [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Anche possibile eseguire nel [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] perché è un superset del [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].  
-  
-```xml  
-<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
-  <framework   
-      targetVersion="4.0"   
-      profile="Client"   
-      supportedRuntime="4.0.30319" />  
-</compatibleFrameworks>  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+>  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) non supporta la `compatibleFrameworks` elemento durante il salvataggio di un manifesto dell'applicazione che è già stato firmato con un certificato usando [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). È invece necessario usare [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+
+## <a name="syntax"></a>Sintassi
+
+```xml
+<compatibleFrameworks
+      SupportUrl> 
+   <framework
+      targetVersion
+      profile
+      supportedRuntime
+   /> 
+</ compatibleFrameworks>
+```
+
+## <a name="elements-and-attributes"></a>Elementi e attributi
+ Il `compatibleFrameworks` elemento è obbligatorio per manifesti della distribuzione che hanno come destinazione il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornita dal runtime [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versione successiva. Il `compatibleFrameworks` elemento contiene uno o più `framework` gli elementi che specificano le versioni di .NET Framework in cui è possibile eseguire questa applicazione. Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime verrà eseguita l'applicazione in corrispondenza del primo disponibile `framework` in questo elenco.
+
+ La tabella seguente elenca l'attributo che la `compatibleFrameworks` supportato dall'elemento.
+
+|Attributo|Description|
+|---------------|-----------------|
+|`S` `upportUrl`|Facoltativo. Specifica un URL in cui può essere scaricata la versione di .NET Framework compatibile preferita.|
+
+## <a name="framework"></a>framework
+ Obbligatorio. Nella tabella seguente elenca gli attributi che il `framework` supportato dall'elemento.
+
+|Attributo|Description|
+|---------------|-----------------|
+|`targetVersion`|Obbligatorio. Specifica il numero di versione di .NET Framework di destinazione.|
+|`profile`|Obbligatorio. Specifica il profilo di .NET Framework di destinazione.|
+|`supportedRuntime`|Obbligatorio. Specifica il numero di versione del runtime associato alla destinazione .NET Framework.|
+
+## <a name="remarks"></a>Osservazioni
+
+## <a name="example"></a>Esempio
+ Nell'esempio di codice riportato di seguito viene illustrato un `compatibleFrameworks` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. Questa distribuzione può essere eseguita di [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Anche possibile eseguire nel [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] perché è un superset del [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
+
+```xml
+<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+  <framework
+      targetVersion="4.0"
+      profile="Client"
+      supportedRuntime="4.0.30319" />
+</compatibleFrameworks>
+```
+
+## <a name="see-also"></a>Vedere anche
+- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

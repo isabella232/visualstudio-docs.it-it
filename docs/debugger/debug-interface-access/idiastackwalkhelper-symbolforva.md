@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a859fc41252fc6f6d8e99ecbaa881cd07ffd6134
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026758"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638816"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
-Recupera il simbolo che contiene l'indirizzo virtuale specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT symbolForVA(   
-   ULONGLONG     va,  
-   IDiaSymbol**  ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `va`  
- [in] Indirizzo virtuale in cui è contenuto nel simbolo richiesto. Il simbolo deve essere un `SymTagFunctionType` (un valore compreso il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione).  
-  
- `ppSymbol`  
- [out] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo all'indirizzo specificato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera il simbolo che contiene l'indirizzo virtuale specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT symbolForVA( 
+   ULONGLONG     va,
+   IDiaSymbol**  ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `va`
+
+[in] Indirizzo virtuale in cui è contenuto nel simbolo richiesto. Il simbolo deve essere un `SymTagFunctionType` (un valore compreso il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione).
+
+ `ppSymbol`
+
+[out] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo all'indirizzo specificato.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

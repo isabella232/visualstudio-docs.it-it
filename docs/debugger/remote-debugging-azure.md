@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981272"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710825"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio 2017
 
@@ -47,7 +47,7 @@ Il metodo consigliato per eseguire il debug remoto in Azure dipende dallo scenar
 
 Non è supportato tra due computer connessi tramite un proxy di debug. Debug tramite una latenza elevata o una connessione di larghezza di banda ridotta, ad esempio Internet, accesso remoto o la rete Internet tra paesi non è consigliabile e può avere esito negativo o essere inaccettabile. Per un elenco completo dei requisiti, vedere [requisiti](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017
 
 1. Creare una nuova applicazione ASP.NET Core. (Scegliere **File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**).
 
@@ -61,7 +61,7 @@ Non è supportato tra due computer connessi tramite un proxy di debug. Debug tra
 
 ## <a name="remote_debug_azure_app_service"></a> Eseguire il Debug remoto di ASP.NET Core in servizio App di Azure
 
-Da Visual Studio, è possibile pubblicare rapidamente e il debug dell'app a un'istanza di IIS con provisioning completo. Tuttavia, la configurazione di IIS è preimpostata e non è possibile personalizzare. Per istruzioni più dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure usando Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Se è necessario avere la possibilità di personalizzare IIS, provare il debug in un' [macchina virtuale di Azure](#remote_debug_azure_vm).) 
+Da Visual Studio, è possibile pubblicare rapidamente e il debug dell'app a un'istanza di IIS con provisioning completo. Tuttavia, la configurazione di IIS è preimpostata e non è possibile personalizzare. Per istruzioni più dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure usando Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Se è necessario avere la possibilità di personalizzare IIS, provare il debug in un' [macchina virtuale di Azure](#remote_debug_azure_vm).)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Per distribuire l'app e il debug remoto tramite Esplora Server
 
@@ -184,7 +184,7 @@ Se non si usa distribuzione Web, è necessario pubblicare e distribuire l'app us
 In questa esercitazione viene usato Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Configurare il debugger remoto in Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ In questa esercitazione viene usato Visual Studio 2017.
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, è possibile collegare nuovamente allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P 
+    > In Visual Studio 2017, è possibile collegare nuovamente allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P
 
 3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.
@@ -211,7 +211,7 @@ In questa esercitazione viene usato Visual Studio 2017.
 5. Selezionare  **Mostra i processi di tutti gli utenti**.
 
 6. Digitare la prima lettera del nome di un processo per trovare rapidamente *dotnet.exe* (per ASP.NET Core).
-   
+
    Per un'app ASP.NET Core, il nome del processo precedente è stata *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ In questa esercitazione viene usato Visual Studio 2017.
 7. Scegliere **Connetti**.
 
 8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
-    
+
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **sulle** pagina.
 
@@ -229,7 +229,7 @@ In questa esercitazione viene usato Visual Studio 2017.
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, se la risoluzione dei problemi di distribuzione e l'app è ospitata dietro un firewall, potrebbe essere necessario verificare che le porte appropriate siano aperte.
 
-In una VM di Azure, è necessario aprire le porte attraverso il [gruppo di sicurezza di rete](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+In una VM di Azure, è necessario aprire le porte attraverso il [gruppo di sicurezza di rete](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Porte necessarie:
 

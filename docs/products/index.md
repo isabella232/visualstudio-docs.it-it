@@ -2,15 +2,9 @@
 layout: HubPage
 hide_bc: true
 title: Documentazione di Visual Studio | Microsoft Docs
-description: Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
+description: 'Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.'
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821357"
 ---
 <div id="main" class="v2">
     <div class="container">

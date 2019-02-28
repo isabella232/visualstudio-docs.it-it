@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a453a163def3a213848f9c2bd318a11843c6b8b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32525e2cf275b5918d5575caa1eec2ef56b46f46
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014705"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619407"
 ---
 # <a name="idiaenumsymbolsgetnewenum"></a>IDiaEnumSymbols::get__NewEnum
-Recupera il <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione l'enumeratore.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get__NewEnum (   
-   IUnknown** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- pRetVal  
- [out] Restituisce il `IUnknown` interfaccia che rappresenta il <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione l'enumeratore.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Recupera il <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione l'enumeratore.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get__NewEnum ( 
+   IUnknown** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ pRetVal
+
+[out] Restituisce il `IUnknown` interfaccia che rappresenta il <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione l'enumeratore.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

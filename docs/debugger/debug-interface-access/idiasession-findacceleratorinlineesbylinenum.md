@@ -10,48 +10,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d963763f341430c92810fe811144212d2cc522e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611152"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Restituisce un'enumerazione dei simboli per i frame inline che corrispondono al percorso di origine specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
-   IDiaSymbol*           parent,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 colnum,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `parent`  
- [in] Un `IDiaSymbol` che corrisponde alla funzione di stub di tasti di scelta rapida che deve essere eseguita la ricerca.  
-  
- `file`  
- [in] Il `IDiaSourceFile` della posizione di origine.  
-  
- `linenum`  
- [in] Numero di riga della posizione di origine.  
-  
- `colnum`  
- [in] Il numero di colonna della posizione di origine.  
-  
- `ppResult`  
- [out] Un puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia che viene inizializzato con il risultato.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Restituisce un'enumerazione dei simboli per i frame inline che corrispondono al percorso di origine specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT findAcceleratorInlineeLinesByName ( 
+   IDiaSymbol*           parent,
+   IDiaSourceFile*       file,
+   DWORD                 linenum,
+   DWORD                 colnum,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `parent`
+
+[in] Un `IDiaSymbol` che corrisponde alla funzione di stub di tasti di scelta rapida che deve essere eseguita la ricerca.
+
+ `file`
+
+[in] Il `IDiaSourceFile` della posizione di origine.
+
+ `linenum`
+
+[in] Numero di riga della posizione di origine.
+
+ `colnum`
+
+[in] Il numero di colonna della posizione di origine.
+
+ `ppResult`
+
+[out] Un puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia che viene inizializzato con il risultato.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

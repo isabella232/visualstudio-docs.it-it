@@ -8,32 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee3d083e7956cf2bd1eff1f09769ef6ec85c979
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5b2c96b11c2075ce88b43cdebc34b905141c973
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983638"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690422"
 ---
 # <a name="1x1-viewport-size-variant"></a>Variante delle dimensioni del viewport 1x1
-Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.  
-  
-## <a name="interpretation"></a>Interpretazione  
- Un viewport più piccolo consente di ridurre il numero di pixel da shade. Tuttavia, un viewport più piccolo non riduce il numero di vertici che devono essere processo. L'impostazione delle dimensioni del riquadro di visualizzazione su 1x1 pixel consente di eliminare l'ombreggiatura dei pixel dall'app.  
-  
- Se questa variante Mostra un miglioramento notevole delle prestazioni, può indicare che l'app utilizza una quantità eccessiva velocità di riempimento. Inoltre, la risoluzione potrebbe essere troppo elevata per la piattaforma di destinazione o l'app avrebbe potuto impiegare molto tempo l'ombreggiatura di pixel che viene sovrascritti in un secondo momento, noto anche come *estenda*. Un buffer di frame più piccoli o riducendo la quantità di carica presente migliorerà le prestazioni dell'app.  
-  
-## <a name="remarks"></a>Note  
- Le dimensioni del riquadro di visualizzazione vengono reimpostate su 1x1 pixel dopo ogni chiamata a `ID3D11DeviceContext::OMSetRenderTargets` o `ID3D11DeviceContext::RSSetViewports`.  
-  
-## <a name="example"></a>Esempio  
- Questa variante può essere riprodotta con il codice seguente:  
-  
+Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.
+
+## <a name="interpretation"></a>Interpretazione
+ Un viewport più piccolo consente di ridurre il numero di pixel da shade. Tuttavia, un viewport più piccolo non riduce il numero di vertici che devono essere processo. L'impostazione delle dimensioni del riquadro di visualizzazione su 1x1 pixel consente di eliminare l'ombreggiatura dei pixel dall'app.
+
+ Se questa variante Mostra un miglioramento notevole delle prestazioni, può indicare che l'app utilizza una quantità eccessiva velocità di riempimento. Inoltre, la risoluzione potrebbe essere troppo elevata per la piattaforma di destinazione o l'app avrebbe potuto impiegare molto tempo l'ombreggiatura di pixel che viene sovrascritti in un secondo momento, noto anche come *estenda*. Un buffer di frame più piccoli o riducendo la quantità di carica presente migliorerà le prestazioni dell'app.
+
+## <a name="remarks"></a>Osservazioni
+ Le dimensioni del riquadro di visualizzazione vengono reimpostate su 1x1 pixel dopo ogni chiamata a `ID3D11DeviceContext::OMSetRenderTargets` o `ID3D11DeviceContext::RSSetViewports`.
+
+## <a name="example"></a>Esempio
+ Questa variante può essere riprodotta con il codice seguente:
+
 ```cpp
-D3D11_VIEWPORT viewport;  
-viewport.TopLeftX = 0;  
-viewport.TopLeftY = 0;  
-viewport.Width = 1;  
-viewport.Height = 1;  
-d3d_context->RSSetViewports(1, &viewport);  
+D3D11_VIEWPORT viewport;
+viewport.TopLeftX = 0;
+viewport.TopLeftY = 0;
+viewport.Width = 1;
+viewport.Height = 1;
+d3d_context->RSSetViewports(1, &viewport);
 ```

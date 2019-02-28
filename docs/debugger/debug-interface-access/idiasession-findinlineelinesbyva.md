@@ -10,43 +10,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 520f15e56ad1a6370c444ce6a7596ac55f25e6d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58f572fcce0b490fad8f94f1e3e3d941e8568211
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949311"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642911"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
-Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni numeriche della riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, dal simbolo del padre specificato e è contenuta all'interno dell'indirizzo virtuale specificato (valutazione della vulnerabilità).  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT findInlineeLinesByVA (   
-   IDiaSymbol*           parent,   ULONGLONG             va,   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `parent`  
- [in] Un `IDiaSymbol` oggetto che rappresenta l'elemento padre.  
-  
- `va`  
- [in] Specifica l'indirizzo come un responsabile tecnologico  
-  
- `length`  
- [in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.  
-  
- `ppResult`  
- [out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni numeriche della riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, dal simbolo del padre specificato e è contenuta all'interno dell'indirizzo virtuale specificato (valutazione della vulnerabilità).
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT findInlineeLinesByVA ( 
+   IDiaSymbol*           parent,   ULONGLONG             va,   DWORD                 length,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `parent`
+
+[in] Un `IDiaSymbol` oggetto che rappresenta l'elemento padre.
+
+ `va`
+
+[in] Specifica l'indirizzo come un responsabile tecnologico
+
+ `length`
+
+[in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.
+
+ `ppResult`
+
+[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de325e78869abd4298d2d4ad45ef0643a96ece7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b5c86d9f4f8eb02b0389e7ea28b5858f8576f6c6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967761"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598427"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
-Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Clone(   
-   IDiaEnumFrameData** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- ppenum  
- [out] Restituisce un [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) oggetto che contiene un duplicato dell'enumeratore. Il frame di dati non sono duplicato, solo l'enumeratore.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Clone( 
+   IDiaEnumFrameData** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ ppenum
+
+[out] Restituisce un [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) oggetto che contiene un duplicato dell'enumeratore. Il frame di dati non sono duplicato, solo l'enumeratore.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

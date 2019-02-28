@@ -12,42 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a2530dce21c31df57003d3d4eb4de63ce0aad6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e52567eddcbb6c4f372256e66b7b723bc7aa7394
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999093"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620174"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
-Recupera i simboli successivi nell'ordine in base all'indirizzo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Next (   
-   ULONG        celt,   
-   IDiaSymbol** rgelt,  
-   ULONG*       pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di simboli nell'enumeratore deve essere recuperato.  
-  
- rgelt  
- [out] Matrice che deve essere compilato con il [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetti che rappresentano i simboli desiderati.  
-  
- pceltFetched  
- [out] Restituisce il numero di simboli nell'enumeratore recuperata.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori simboli. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="remarks"></a>Osservazioni  
- Questo metodo aggiorna la posizione di enumeratore per il numero di elementi recuperati.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera i simboli successivi nell'ordine in base all'indirizzo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Next ( 
+   ULONG        celt,
+   IDiaSymbol** rgelt,
+   ULONG*       pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di simboli nell'enumeratore deve essere recuperato.
+
+ rgelt
+
+[out] Matrice che deve essere compilato con il [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetti che rappresentano i simboli desiderati.
+
+ pceltFetched
+
+[out] Restituisce il numero di simboli nell'enumeratore recuperata.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori simboli. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ Questo metodo aggiorna la posizione di enumeratore per il numero di elementi recuperati.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

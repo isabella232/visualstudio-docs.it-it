@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75df4f6d0b95ebdc50905e312de76b7f50f114e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4da0bb740885f21d8e161cf5f88f45abd5499f21
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070773"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601564"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
-Recupera un flag che specifica se il simbolo relativo al codice gestito.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_managed (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se il simbolo relativo al codice gestito; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera un flag che specifica se il simbolo relativo al codice gestito.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_managed ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se il simbolo relativo al codice gestito; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

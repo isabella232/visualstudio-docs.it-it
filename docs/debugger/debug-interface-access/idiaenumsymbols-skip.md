@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0168c3f58cf9bd701f0cc34edf77673c70e66222
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641211"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-Ignora un determinato numero di simboli in una sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di simboli nella sequenza di enumerazione da ignorare.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti ulteriori simboli da ignorare.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Ignora un determinato numero di simboli in una sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di simboli nella sequenza di enumerazione da ignorare.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti ulteriori simboli da ignorare.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012495"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693451"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>File di dump nel debugger di Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a> Oggetto *file di dump* è uno snapshot che illustra il processo che era in esecuzione e i moduli caricati per un'app in un punto nel tempo. A questo punto un dump con informazioni heap include anche uno snapshot della memoria dell'app. 
+<a name="BKMK_What_is_a_dump_file_"></a> Oggetto *file di dump* è uno snapshot che illustra il processo che era in esecuzione e i moduli caricati per un'app in un punto nel tempo. A questo punto un dump con informazioni heap include anche uno snapshot della memoria dell'app.
 
 Apertura di un file di dump con heap in Visual Studio è simile a interruzione in corrispondenza di un punto di interruzione in una sessione di debug. Anche se è possibile continuare l'esecuzione, è possibile esaminare il stack di thread e i valori delle variabili dell'app al momento del dump.
 
-I dump vengono usati principalmente per il debug dei problemi dai computer che gli sviluppatori non hanno accesso a. È possibile usare un file di dump dal computer di un cliente quando non è possibile riprodurre un arresto anomalo o blocco nel proprio computer. Tester a creare anche i dump per salvare l'arresto anomalo del sistema o un blocco di dati da utilizzare per eseguire altre verifiche. 
+I dump vengono usati principalmente per il debug dei problemi dai computer che gli sviluppatori non hanno accesso a. È possibile usare un file di dump dal computer di un cliente quando non è possibile riprodurre un arresto anomalo o blocco nel proprio computer. Tester a creare anche i dump per salvare l'arresto anomalo del sistema o un blocco di dati da utilizzare per eseguire altre verifiche.
 
 Il debugger di Visual Studio può salvare i file dump per il codice gestito o nativo. È possibile eseguire il debug di file dump creati da Visual Studio o da altre App che salvano i file nei *minidump* formato.
 
@@ -55,23 +55,23 @@ Il debugger di Visual Studio può salvare i file dump per il codice gestito o na
 
 I file di dump possono o non abbia le informazioni sull'heap.
 
--   **File dump con heap** contengono uno snapshot della memoria dell'app, inclusi i valori delle variabili, al momento del dump. Visual Studio salva inoltre i file binari dei moduli nativi caricati in un file di dump con heap, che può semplificare il debug. Visual Studio è possibile caricare i simboli da un file di dump con heap, anche se non è possibile trovare un'app binario. 
+-   **File dump con heap** contengono uno snapshot della memoria dell'app, inclusi i valori delle variabili, al momento del dump. Visual Studio salva inoltre i file binari dei moduli nativi caricati in un file di dump con heap, che può semplificare il debug. Visual Studio è possibile caricare i simboli da un file di dump con heap, anche se non è possibile trovare un'app binario.
 
 -   **File dump senza heap** sono molto più piccoli dei dump con heap, ma il debugger deve caricare i file binari dell'app per trovare le informazioni sui simboli. I file binari caricati devono corrispondere esattamente a quelli in esecuzione durante la creazione del dump. I file di dump senza heap salvare i valori delle variabili dello stack solo.
 
 ##  <a name="BKMK_Create_a_dump_file"></a> Creare un file dump
 
-Durante il debug di un processo in Visual Studio, è possibile salvare un dump quando il debugger è interrotto in corrispondenza di un'eccezione o un punto di interruzione. 
+Durante il debug di un processo in Visual Studio, è possibile salvare un dump quando il debugger è interrotto in corrispondenza di un'eccezione o un punto di interruzione.
 
 Con [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md) abilitata, è possibile collegare il debugger di Visual Studio a un processo arrestatosi in modo anomalo all'esterno di Visual Studio e quindi salvare un file di dump dal debugger. Visualizzare [Collega a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 **Per salvare un file dump:**
 
-1. Durante l'arresto in corrispondenza di un errore o un punto di interruzione durante il debug, selezionare **Debug** > **Salva Dump con nome**. 
+1. Durante l'arresto in corrispondenza di un errore o un punto di interruzione durante il debug, selezionare **Debug** > **Salva Dump con nome**.
 
 1. Nel **Salva Dump con nome** nella finestra di dialogo **Salva come tipo**, selezionare **Minidump** oppure **Minidump con Heap** (predefinito).
 
-1. Selezionare un percorso e selezionare un nome per il file di dump, quindi **salvare**. 
+1. Selezionare un percorso e selezionare un nome per il file di dump, quindi **salvare**.
 
 >[!NOTE]
 >È possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, tramite l'utilità della riga di comando **Procdump** di [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) è possibile creare file dump dell'arresto anomalo del processo basati su trigger o su richiesta. Visualizzare [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) per informazioni sull'uso di altri strumenti per creare file dump.
@@ -99,7 +99,7 @@ Per usare le funzionalità in un file di dump di debug complete Visual Studio so
 - Il *.exe* e *PDB* la creazione di file che corrispondono esattamente la versione e la compilazione dei file nel dump.
 - File di origine per i moduli pertinenti. Se non è possibile trovare i file di origine, è possibile usare il disassembly dei moduli.
 
-Se il dump contiene i dati di heap, Visual Studio può ovviare alla mancanza dei file binari per alcuni moduli, ma deve avere i file binari per numero sufficiente di moduli generare stack di chiamate validi. 
+Se il dump contiene i dati di heap, Visual Studio può ovviare alla mancanza dei file binari per alcuni moduli, ma deve avere i file binari per numero sufficiente di moduli generare stack di chiamate validi.
 
 ### <a name="search-paths-for-exe-files"></a>Percorsi di ricerca per i file .exe
 

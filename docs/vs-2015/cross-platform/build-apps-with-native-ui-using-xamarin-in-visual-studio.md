@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764578"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841805"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Creare app con interfaccia utente nativa con Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 5. Compilare la soluzione e verificare che non ci siano errori di compilazione.
 
 ##  <a name="dataservice"></a> Scrivere un codice di servizio dati condiviso
-  **WeatherApp (Portable)** è il progetto di destinazione del codice per la libreria di classi portabile (PCL) condiviso tra le piattaforme. La libreria di classi portabile (PCL) viene inclusa automaticamente nei pacchetti di app compilati dai progetti iOS, Android e Windows Phone.
+ **WeatherApp (Portable)** è il progetto di destinazione del codice per la libreria di classi portabile (PCL) condiviso tra le piattaforme. La libreria di classi portabile (PCL) viene inclusa automaticamente nei pacchetti di app compilati dai progetti iOS, Android e Windows Phone.
 
  Nei passaggi seguenti viene aggiunto codice alla libreria di classi portabile (PCL) per accedere e archiviare i dati dal servizio meteo:
 
@@ -302,7 +302,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 10. Dalla **Casella degli strumenti** trascinare un controllo **Number** su **RelativeLayout** e posizionarlo sotto l'etichetta **Zip Code**. Quindi impostare le proprietà seguenti:
 
-    |Proprietà|Valore|
+    |Proprietà|Value|
     |--------------|-----------|
     |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -325,7 +325,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 11. Dalla **Casella degli strumenti** trascinare un **pulsante** sul controllo **RelativeLayout** e posizionarlo a destra del controllo zipCodeEntry. Impostare quindi queste proprietà:
 
-    |Proprietà|Valore|
+    |Proprietà|Value|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
     |**testo**|**Get Weather**|
@@ -519,7 +519,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 2.  Selezionare come destinazione un dispositivo o emulatore appropriato, quindi avviare l'app premendo il tasto F5.
 
-3.  Nel dispositivo o nell'emulatore, digitare un codice postale degli Stati Uniti valido nella casella di modifica (ad esempio: 60601), quindi premere **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
+3.  Nel dispositivo o emulatore digitare un codice postale valido negli Stati Uniti, ad esempio 60601, nella casella di modifica e fare clic su **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
 
      ![App meteo per Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 2.  Premere F5 per avviare l'app.
 
-3.  Nell'emulatore Windows Phone, digitare un codice postale degli Stati Uniti valido nella casella di modifica (ad esempio: 60601), quindi premere **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
+3.  Nell'emulatore Windows Phone digitare nella casella di modifica un codice postale valido negli Stati Uniti, ad esempio 60601, quindi fare clic su **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
 
      ![Versione di Windows dell'app in esecuzione](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
  Il codice condiviso una libreria di classi portabile è indipendente dalla piattaforma, poiché la libreria viene compilata una sola volta e inclusa in ogni pacchetto di app specifico della piattaforma. Per scrivere codice condiviso che usa la compilazione condizionale per isolare il codice specifico della piattaforma, è possibile usare un progetto *condiviso*. Per altre informazioni, vedere le [opzioni di condivisione del codice ](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>Vedere anche
- [Sito per sviluppatori Xamarin](http://developer.xamarin.com/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift e C# Poster di riferimento rapido](http://aka.ms/scposter)
+ [Sito per sviluppatori Xamarin](http://developer.xamarin.com/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift e C# Poster di riferimento rapido](https://aka.ms/scposter)

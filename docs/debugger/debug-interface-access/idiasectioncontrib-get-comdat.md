@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a15e0001342a31d13cb1b77f2c8e6d7fc4d31c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621747"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Recupera un flag che indica se la sezione è un record COMDAT.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce `TRUE` se la sezione è un record COMDAT; in caso contrario, restituisce `FALSE`.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="remarks"></a>Osservazioni  
- Un record COMDAT è un record di File formato COFF (Common Object) che rende visibile il linker funzioni incluse nel pacchetto.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Recupera un flag che indica se la sezione è un record COMDAT.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_comdat ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce `TRUE` se la sezione è un record COMDAT; in caso contrario, restituisce `FALSE`.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ Un record COMDAT è un record di File formato COFF (Common Object) che rende visibile il linker funzioni incluse nel pacchetto.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c30c3b91bb601d22df8193602d6a4ddbddf024c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49482c99f3d735618cb9caab02a04fea1e81ebc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622319"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
-Recupera il numero di colonne nella matrice.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_numberOfColumns(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene il numero di colonne nella matrice.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera il numero di colonne nella matrice.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_numberOfColumns(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Un puntatore a un `DWORD` che contiene il numero di colonne nella matrice.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

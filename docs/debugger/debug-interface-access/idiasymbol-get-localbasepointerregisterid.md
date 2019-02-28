@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f640b21ea40daff03a847e0fc1f0644b3b348537
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f06a7109556836a63896fe2386c34f2451b97c1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920995"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644692"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-Recupera l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_localBasePointerRegisterId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_localBasePointerRegisterId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="remarks"></a>Osservazioni  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
-  
- Libreria: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="remarks"></a>Osservazioni
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: Dia2.h
+
+ Libreria: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

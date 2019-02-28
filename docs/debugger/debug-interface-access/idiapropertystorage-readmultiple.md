@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3c507df19fad7dd9594aeca1a53b9cb89a2e936
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035564"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708810"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-Operazioni di lettura specificata delle proprietà dal set di proprietà corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT ReadMultiple(   
-   ULONG          cpspec,  
-   PROPSPEC const rgpspec,  
-   PROPVARIANT    rgvar  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `cpspec`  
- [in] Conteggio delle proprietà specificate nel `rgpspec` matrice. Se è zero, il metodo non restituisce nessuna proprietà ma restituire `S_OK` come un codice di riuscita.  
-  
- `rgpspec`  
- [in] Una matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID di proprietà o da un nome di stringa facoltativa. Non è necessario specificare le proprietà in un ordine specifico nella matrice. La matrice può contenere proprietà duplicate, generando i valori delle proprietà duplicate nell'output restituito per le proprietà semplici. Proprietà semplice non deve restituire l'accesso negato nel tentativo di aprirli una seconda volta. La matrice può contenere una combinazione di ID di proprietà e ID di stringa. Questa matrice deve avere almeno `cpspec` numero dei valori delle proprietà.  
-  
- `rgvar`  
- [in, out] Matrice di `PROPVARIANT` strutture (nello spazio dei nomi Interop) da compilare con i valori per ogni proprietà. La matrice deve essere almeno `cpspec` le dimensioni degli elementi. Il chiamante non necessita inizializzare i valori nella matrice.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se uno o più delle proprietà non è stato trovato. In caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Se una proprietà non trovato, la voce corrispondente nel `rgvar` matrice contiene una `VARIANT` con il tipo di `VT_EMPTY`.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Operazioni di lettura specificata delle proprietà dal set di proprietà corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT ReadMultiple( 
+   ULONG          cpspec,
+   PROPSPEC const rgpspec,
+   PROPVARIANT    rgvar
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `cpspec`
+
+[in] Conteggio delle proprietà specificate nel `rgpspec` matrice. Se è zero, il metodo non restituisce nessuna proprietà ma restituire `S_OK` come un codice di riuscita.
+
+ `rgpspec`
+
+[in] Una matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID di proprietà o da un nome di stringa facoltativa. Non è necessario specificare le proprietà in un ordine specifico nella matrice. La matrice può contenere proprietà duplicate, generando i valori delle proprietà duplicate nell'output restituito per le proprietà semplici. Proprietà semplice non deve restituire l'accesso negato nel tentativo di aprirli una seconda volta. La matrice può contenere una combinazione di ID di proprietà e ID di stringa. Questa matrice deve avere almeno `cpspec` numero dei valori delle proprietà.
+
+ `rgvar`
+
+[in, out] Matrice di `PROPVARIANT` strutture (nello spazio dei nomi Interop) da compilare con i valori per ogni proprietà. La matrice deve essere almeno `cpspec` le dimensioni degli elementi. Il chiamante non necessita inizializzare i valori nella matrice.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se uno o più delle proprietà non è stato trovato. In caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Osservazioni
+ Se una proprietà non trovato, la voce corrispondente nel `rgvar` matrice contiene una `VARIANT` con il tipo di `VT_EMPTY`.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

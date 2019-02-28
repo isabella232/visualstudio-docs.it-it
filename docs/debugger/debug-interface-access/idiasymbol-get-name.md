@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1013d026e2943560ceeb9c0146469b754b2faa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d318ed0b033e4e423ee947a3b72fc317e98e432
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982871"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611308"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
-Recupera il nome del simbolo.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_name (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce il nome del simbolo.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera il nome del simbolo.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_name ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce il nome del simbolo.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="example"></a>Esempio  
-  
-```C++  
-IDiaSymbol* pType;  
-BSTR        name;  
-pType->get_name( &name );  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="example"></a>Esempio
+
+```C++
+IDiaSymbol* pType;
+BSTR        name;
+pType->get_name( &name );
+```
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

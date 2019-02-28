@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 625b9dd6a1ffb6e982097626018617c9b74d4746
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227106"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635865"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Espone i dettagli degli offset di posizione e la memoria base del modulo o immagine.
@@ -31,7 +31,7 @@ IDiaImageData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaImageData`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera la posizione nella memoria virtuale del modulo relativo all'applicazione.|
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera la posizione nella memoria virtuale dell'immagine.|
@@ -118,5 +118,5 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

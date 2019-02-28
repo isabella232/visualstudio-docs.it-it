@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2503707b8fd5907cd028b7af3e67cd5acd76a00
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646825"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 Recupera le informazioni sul numeri di riga per righe contenute in un intervallo di indirizzi virtuale specificato (valutazione della vulnerabilità).
@@ -33,13 +33,16 @@ HRESULT findLinesByVA (
 ```
 
 #### <a name="parameters"></a>Parametri
-`va`  
+`va`
+
 [in] Specifica l'indirizzo come un responsabile tecnologico
 
-`length`  
+`length`
+
 [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.
 
-`ppResult`  
+`ppResult`
+
 [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.
 
 ## <a name="example"></a>Esempio
@@ -62,5 +65,5 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

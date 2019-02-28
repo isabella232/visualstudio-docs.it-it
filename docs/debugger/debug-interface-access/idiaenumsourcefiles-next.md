@@ -12,40 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c12b03973736cc867c76cbe10a29548bfc6bd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973343"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631783"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-Recupera un determinato numero di file di origine nella sequenza di enumerazione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaSourceFile** rgelt,  
-   ULONG*           pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- celt  
- [in] Il numero di file di origine nell'enumeratore deve essere recuperato.  
-  
- rgelt  
- [out] Matrice che deve essere compilato con il [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) gli oggetti che rappresentano i file di origine desiderato.  
-  
- pceltFetched  
- [out] Restituisce il numero di file di origine nell'enumeratore recuperata.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti più file di origine. In caso contrario, verrà restituito un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Recupera un determinato numero di file di origine nella sequenza di enumerazione.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT Next ( 
+   ULONG            celt,
+   IDiaSourceFile** rgelt,
+   ULONG*           pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ celt
+
+[in] Il numero di file di origine nell'enumeratore deve essere recuperato.
+
+ rgelt
+
+[out] Matrice che deve essere compilato con il [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) gli oggetti che rappresentano i file di origine desiderato.
+
+ pceltFetched
+
+[out] Restituisce il numero di file di origine nell'enumeratore recuperata.
+
+## <a name="return-value"></a>Valore restituito
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti più file di origine. In caso contrario, verrà restituito un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

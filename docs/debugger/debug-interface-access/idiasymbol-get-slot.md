@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd1a92b83ce6b5c04cc0225ffeb1173b641bdba2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7027a02be666b7faa7d3d831d5c1d81a86ee2119
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598258"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-Recupera il numero di slot della posizione. Quando usare le [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot`.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT get_slot (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pRetVal`  
- [out] Restituisce il numero di slot della posizione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
-  
+Recupera il numero di slot della posizione. Quando usare le [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot`.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT get_slot ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pRetVal`
+
+[out] Restituisce il numero di slot della posizione.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)
+>  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

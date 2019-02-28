@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f552e9e21baf0be0b8ad2f1a0138323ea09c0502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009232"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640740"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-Cerca stack frame specificato per l'indirizzo del mittente (funzione) più vicino.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```C++  
-HRESULT searchForReturnAddress (   
-   IDiaFrameData* frame,  
-   ULONGLONG*     returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `frame`  
- [in] Un' [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta lo stack frame corrente.  
-  
- `returnAddress`  
- [out] Restituisce l'indirizzo del mittente (funzione) più vicino.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Cerca stack frame specificato per l'indirizzo del mittente (funzione) più vicino.
+
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT searchForReturnAddress ( 
+   IDiaFrameData* frame,
+   ULONGLONG*     returnAddress
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `frame`
+
+[in] Un' [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta lo stack frame corrente.
+
+ `returnAddress`
+
+[out] Restituisce l'indirizzo del mittente (funzione) più vicino.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317770"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720185"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funzionalità IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15.5 e v
 
 Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate ai metodi insieme agli eventi. Per abilitare la raccolta di chiamate passano al metodo **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **eventi IntelliTrace e informazioni (solo gestite) di chiamata**.
 
-Informazioni sulle chiamate non è attualmente disponibile per le app .NET Core e ASP.NET Core. 
+Informazioni sulle chiamate non è attualmente disponibile per le app .NET Core e ASP.NET Core.
 
 In tal modo è possibile visualizzare la cronologia dello stack di chiamate e scorrere in avanti e indietro le chiamate nel codice. IntelliTrace registra i dati, ad esempio nomi delle funzioni, punti di ingresso e uscita delle funzioni e alcuni valori di parametri e valori restituiti.
 

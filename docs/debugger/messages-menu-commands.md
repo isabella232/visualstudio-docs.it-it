@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978932"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692567"
 ---
 # <a name="messages-menu-commands"></a>comandi del menu Messaggi
-Il **messaggi** menu sono disponibili comandi per il controllo delle visualizzazioni dei messaggi.  
-  
- **Avvia/Arresta registrazione**  
- Avvia o arresta la visualizzazione dei messaggi.  
-  
- **Opzioni di registrazione**  
- Apre la **Opzioni messaggio** della finestra di dialogo in cui è possibile specificare i criteri di ricerca di messaggi.  
-  
- **Cancella log**  
- Cancella il contenuto della visualizzazione dei messaggi attivo.
+Il **messaggi** menu sono disponibili comandi per il controllo delle visualizzazioni dei messaggi.
+
+ **Avvia/Interrompi registrazione** avvia o arresta consente di visualizzare il messaggio.
+
+ **Le opzioni di registrazione** consente di aprire la **Opzioni messaggio** della finestra di dialogo in cui è possibile specificare i criteri di ricerca di messaggi.
+
+ **Cancella registro** Cancella il contenuto della visualizzazione dei messaggi attivo.

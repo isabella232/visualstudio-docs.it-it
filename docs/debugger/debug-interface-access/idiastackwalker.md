@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67c19b37fbe6d5867e44a81233c44aceb5138b68
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227225"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617067"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Fornisce metodi per eseguire uno stack viene descritto l'uso di informazioni nel file con estensione pdb.
@@ -31,7 +31,7 @@ IDiaStackWalker: IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaStackWalker`.
 
-|Metodo|Descrizione|
+|Metodo|Description|
 |------------|-----------------|
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Recupera un enumeratore di frame dello stack x86 a piattaforme.|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Recupera un enumeratore di frame dello stack per un tipo di piattaforma specifica.|
@@ -67,5 +67,5 @@ Libreria: diaguids.lib
 DLL: MSDIA80
 
 ## <a name="see-also"></a>Vedere anche
-[Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
