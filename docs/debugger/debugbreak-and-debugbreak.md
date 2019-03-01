@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb05c054ffc5dd273b532f72afe0ca046adbe606
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041724"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686158"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak e __debugbreak
-È possibile chiamare la funzione Win32 DebugBreak o la funzione intrinseca [__debugbreak](/cpp/intrinsics/debugbreak) in qualunque punto del codice. `DebugBreak` e `__debugbreak` hanno lo spesso effetto dell'impostazione di un punto di interruzione nella stessa posizione.  
-  
- Poiché `DebugBreak` è una chiamata a una funzione di sistema, è necessario che siano installati i simboli di debug del sistema per garantire che vengano visualizzate le informazioni corrette sullo stack di chiamate dopo l'interruzione. In alternativa, le informazioni sullo stack di chiamate visualizzate dal debugger possono essere spostate di un frame. Se si usa `__debugbreak`, i simboli non sono obbligatori.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Intrinseci del compilatore](/cpp/intrinsics/compiler-intrinsics)   
- [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Debug del codice nativo](../debugger/debugging-native-code.md)   
- [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+È possibile chiamare la funzione Win32 DebugBreak o la funzione intrinseca [__debugbreak](/cpp/intrinsics/debugbreak) in qualunque punto del codice. `DebugBreak` e `__debugbreak` hanno lo stesso effetto dell'impostazione di un punto di interruzione nella stessa posizione.
+
+ Poiché `DebugBreak` è una chiamata a una funzione di sistema, è necessario che siano installati i simboli di debug del sistema per garantire che vengano visualizzate le informazioni corrette sullo stack di chiamate dopo l'interruzione. In alternativa, le informazioni sullo stack di chiamate visualizzate dal debugger possono essere spostate di un frame. Se si usa `__debugbreak`, i simboli non sono obbligatori.
+
+## <a name="see-also"></a>Vedere anche
+- [Intrinseci del compilatore](/cpp/intrinsics/compiler-intrinsics)
+- [Sicurezza del debugger](../debugger/debugger-security.md)
+- [Debug del codice nativo](../debugger/debugging-native-code.md)
+- [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

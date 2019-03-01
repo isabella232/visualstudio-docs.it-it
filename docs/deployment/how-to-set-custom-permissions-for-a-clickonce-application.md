@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,39 +15,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25abaf7010178110891ee7a5e75161cde56dcb9b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc400b4e9b504b512fc8ed3ec6c6dec3e676310e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983508"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630665"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce
-È possibile distribuire un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] che usa le autorizzazioni predefinite per le aree Internet o Intranet locale. In alternativa, è possibile creare un'area personalizzata per le autorizzazioni specifiche necessarie all'applicazione. È possibile eseguire questa operazione personalizzando le autorizzazioni di sicurezza nella pagina **Sicurezza** di **Creazione progetti**.  
-  
-### <a name="to-customize-a-permission"></a>Per personalizzare un'autorizzazione  
-  
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
-  
-2.  Fare clic sulla scheda **Sicurezza** .  
-  
-3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .  
-  
-4.  Selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
-  
-     I controlli nella sezione **Autorizzazioni di sicurezza ClickOnce** sono abilitati.  
-  
-5.  Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare **(Personalizzata)**.  
-  
-6.  Fare clic su **Modifica XML autorizzazioni**.  
-  
-     Il file *app.manifest* verrà aperto nell'editor XML.  
-  
-7.  Prima dell'elemento `</applicationRequestMinimum>` , aggiungere il codice XML per le autorizzazioni richieste dall'applicazione.  
-  
+È possibile distribuire un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] che usa le autorizzazioni predefinite per le aree Internet o Intranet locale. In alternativa, è possibile creare un'area personalizzata per le autorizzazioni specifiche necessarie all'applicazione. È possibile eseguire questa operazione personalizzando le autorizzazioni di sicurezza nella pagina **Sicurezza** di **Creazione progetti**.
+
+### <a name="to-customize-a-permission"></a>Per personalizzare un'autorizzazione
+
+1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+
+2.  Fare clic sulla scheda **Sicurezza** .
+
+3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .
+
+4.  Selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .
+
+     I controlli nella sezione **Autorizzazioni di sicurezza ClickOnce** sono abilitati.
+
+5.  Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare **(Personalizzata)**.
+
+6.  Fare clic su **Modifica XML autorizzazioni**.
+
+     Il file *app.manifest* verrà aperto nell'editor XML.
+
+7.  Prima dell'elemento `</applicationRequestMinimum>` , aggiungere il codice XML per le autorizzazioni richieste dall'applicazione.
+
     > [!NOTE]
-    >  È possibile usare il metodo `ToXml` di un set di autorizzazioni per generare il codice XML per il manifesto dell'applicazione. Ad esempio, per generare il codice XML per il set di autorizzazioni <xref:System.Security.Permissions.EnvironmentPermission> , chiamare il metodo <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .  
-  
-## <a name="see-also"></a>Vedere anche  
- [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
+    >  È possibile usare il metodo `ToXml` di un set di autorizzazioni per generare il codice XML per il manifesto dell'applicazione. Ad esempio, per generare il codice XML per il set di autorizzazioni <xref:System.Security.Permissions.EnvironmentPermission> , chiamare il metodo <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
+
+## <a name="see-also"></a>Vedere anche
+- [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
+- [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

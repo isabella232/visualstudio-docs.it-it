@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317003"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680188"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Uso dell'attributo DebuggerDisplay (C#, Visual Basic, F#, C + + / CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.
@@ -97,7 +97,7 @@ Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`
 |**Name**|**Valore**|**Type**|
 |--------------|---------------|--------------|
 |Chiave|"three"|oggetto {string}|
-|Value|3|oggetto {int}|
+|Valore|3|oggetto {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)  
-[Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)  
-[Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)
+- [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Debug di eccezioni ASP.NET | Microsoft Docs'
+title: 'Procedura: eseguire il Debug di eccezioni ASP.NET | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,35 +17,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6d2d536b672a8d9328e117e754b861bf7f900142
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04e148e7e91eadb66faef4f994b6674bda2c7da0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009219"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690435"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Procedura: Eseguire il debug di eccezioni ASP.NET
-Il debug delle eccezioni è una parte importante dello sviluppo di una potente applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Informazioni generali su come eseguire il debug di eccezioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
-  
- Per eseguire il debug di eccezioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non gestite, è necessario assicurarsi che il debugger si interrompa ogni volta che ne raggiunge una. Il runtime di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dispone di un gestore eccezioni di livello superiore. Di conseguenza, per impostazione predefinita il debugger non si interrompe mai in corrispondenza di eccezioni non gestite. Per interrompere il debugger quando viene generata un'eccezione, è necessario selezionare **Interrompi quando un'eccezione è: Generata** impostazione per tale eccezione nella **eccezioni** nella finestra di dialogo.  
-  
- Se è stato abilitato Just My Code, **Interrompi quando un'eccezione è: Generata** non causa il debugger per interrompere immediatamente se viene generata un'eccezione in un metodo .NET Framework o altro codice di sistema. Invece l'esecuzione continua sino al raggiungimento di codice non di sistema, quindi si interrompe. Non è pertanto necessario eseguire il codice di sistema quando si verifica un'eccezione.  
-  
- Just My Code fornisce un'altra opzione che può rivelarsi molto utile: **Interrompi quando un'eccezione è: User-unhandled**. Se si sceglie questa impostazione per un'eccezione, il debugger interromperà l'esecuzione nel codice utente, ma solo se l'eccezione non viene intercettata e gestita dal codice utente. Questa impostazione annulla l'effetto del gestore eccezioni di primo livello di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], perché quest'ultimo si trova nel codice non utente.  
-  
-### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Per attivare il debug delle eccezioni ASP.NET con Just My Code  
-  
-1.  Scegliere **Eccezioni** dal menu **Debug**.  
-  
-     Verrà visualizzata la finestra di dialogo **Eccezioni**.  
-  
-2.  Nella riga **Eccezioni Common Language Runtime** selezionare **Generata** o **Non gestita dall'utente**.  
-  
-     Per utilizzare l'impostazione **Non gestita dall'utente**, è necessario attivare **Just My Code**.  
-  
-### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Procedure ottimali per la gestione delle eccezioni ASP.NET  
-  
+# <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
+Il debug delle eccezioni è una parte importante dello sviluppo di una potente applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Informazioni generali su come eseguire il debug di eccezioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md).
+
+ Per eseguire il debug di eccezioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non gestite, è necessario assicurarsi che il debugger si interrompa ogni volta che ne raggiunge una. Il runtime di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dispone di un gestore eccezioni di livello superiore. Di conseguenza, per impostazione predefinita il debugger non si interrompe mai in corrispondenza di eccezioni non gestite. Per interrompere il debugger quando viene generata un'eccezione, è necessario selezionare l'impostazione **Interrompi quando un'eccezione è: Generata** per tale eccezione nella finestra di dialogo **Eccezioni**.
+
+ Se Just My Code è attivato, la selezione dell'opzione **Interrompi quando un'eccezione è: Generata** non comporta l'interruzione immediata del debugger quando un'eccezione viene generata in un metodo .NET Framework o in un altro codice di sistema. Invece l'esecuzione continua sino al raggiungimento di codice non di sistema, quindi si interrompe. Non è pertanto necessario eseguire il codice di sistema quando si verifica un'eccezione.
+
+ Just My Code offre un'altra opzione che può rivelarsi molto utile: **Interrompi quando un'eccezione è: Non gestita dall'utente**. Se si sceglie questa impostazione per un'eccezione, il debugger interromperà l'esecuzione nel codice utente, ma solo se l'eccezione non viene intercettata e gestita dal codice utente. Questa impostazione annulla l'effetto del gestore eccezioni di primo livello di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], perché quest'ultimo si trova nel codice non utente.
+
+### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Per attivare il debug delle eccezioni ASP.NET con Just My Code
+
+1.  Scegliere **Eccezioni** dal menu **Debug**.
+
+     Verrà visualizzata la finestra di dialogo **Eccezioni**.
+
+2.  Nella riga **Eccezioni Common Language Runtime** selezionare **Generata** o **Non gestita dall'utente**.
+
+     Per utilizzare l'impostazione **Non gestita dall'utente**, è necessario attivare **Just My Code**.
+
+### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Procedure ottimali per la gestione delle eccezioni ASP.NET
+
 -   Collocare blocchi `try ... catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Se, ad esempio, l'applicazione effettua chiamate a un Servizio Web XML o direttamente a SQL Server, il codice dovrebbe trovarsi in blocchi **try ... catch** perché è possibile che si verifichino numerose eccezioni.
 
 ## <a name="see-also"></a>Vedere anche
-[Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991528"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694816"
 ---
 # <a name="graphics-frame-validation"></a>Convalida Frame di grafica
 <!-- VERSIONLESS --> Visual Studio 2017 e il supporto maggiore di **convalida Frame** dello strumento.  Consente di visualizzare la finestra di convalida Frame errori e avvisi associati con l'elenco di eventi.  Per visualizzare questa finestra, selezionare la **Visualizza > convalida Frame** menu.
@@ -33,6 +33,6 @@ Scegliere il **Esegui convalida** pulsante nell'angolo superiore sinistro per av
 | Messaggio | Il messaggio associato all'evento. |
 | event | L'evento associato all'errore o avviso. |
 
-## <a name="see-also"></a>Vedere anche  
-[Diagnostica della grafica (debug della grafica DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Vedere anche
+[Diagnostica della grafica (debug della grafica DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227407"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701953"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
 
@@ -37,7 +37,7 @@ Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è po
 > [!TIP]
 > Le versioni precedenti di Visual Studio non supportano il set completo di comandi. Usare IntelliSense sull'oggetto console per ottenere informazioni rapide sui comandi supportati.
 
-|Comando|Descrizione|Esempio|
+|Comando|Description|Esempio|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|Invia un messaggio quando `expression` restituisce **false**.|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|Cancella i messaggi dalla finestra della console, inclusi i messaggi di errore di script, e cancella inoltre lo script visualizzato nella finestra della console. Non cancella lo script immesso nella richiesta di input della console.|`console.clear();`|
@@ -63,9 +63,9 @@ Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è po
 ## <a name="miscellaneous-commands"></a>Comandi vari
 Questi comandi sono disponibili anche nella finestra della console JavaScript (non sono disponibili dal codice).
 
-|Comando|Descrizione|Esempio|
+|Comando|Description|Esempio|
 |-------------|-----------------|-------------|
-|`$0`, `$1`, `$2`, `$3`, `$4`|Restituisce l'elemento specificato nella finestra della console. `$0` restituisce l'elemento attualmente selezionato in DOM Explorer, `$1` restituisce l'elemento selezionato in precedenza in DOM Explorer e così via, fino al quarto elemento selezionato in precedenza.|$3|
+|`$0`, `$1`, `$2`, `$3`, `$4`|Restituisce l'elemento specificato nella finestra della console. `$0` restituisce l'elemento al momento selezionato in DOM Explorer, `$1` restituisce l'elemento selezionato in precedenza in DOM Explorer e così via, fino al quarto elemento selezionato in precedenza.|$3|
 |`$(id)`|Restituisce un elemento in base all'ID. Si tratta di un comando di scelta rapida per `document.getElementById(id)`, dove `id` è una stringa che rappresenta l'ID dell'elemento.|`$("contenthost")`|
 |`$$(selector)`|Restituisce una matrice di elementi che corrispondono al selettore specificato usando la sintassi del selettore CSS. Si tratta di un comando di scelta rapida per `document.querySelectorAll()`.|`$$(".itemlist")`|
 |`cd()`<br /><br /> `cd(window)`|Consente di modificare il contesto per la valutazione di un'espressione dalla finestra di primo livello predefinita della pagina alla finestra del frame specificato. Chiamando `cd()` senza parametri, viene restituito il contesto nella finestra di primo livello.|`cd();`<br /><br /> `cd(myframe);`|
@@ -103,13 +103,7 @@ Per formattare l'output, in `console.log` sono anche supportati i modelli di sos
 
  Sono supportati i modelli di sostituzione seguenti:
 
-- %s - stringa %i - integer  
-  %d - intero  
-  %f - float  
-  %o - oggetto  
-  %b - binario  
-  %x - esadecimale  
-  %e - esponente  
+- %s - string %i - integer %d - integer %f - float %o - object %b - binary %x - hexadecimal %e - exponent
 
   Ecco alcuni esempi di utilizzo dei modelli di sostituzione in `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

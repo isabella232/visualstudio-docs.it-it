@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Attivare l'avvio automatico per le installazioni da CD | Microsoft Docs"
+title: "Procedura: attivare l'avvio automatico per le installazioni da CD | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e414a3d1bc512b15912eb73e3befb575d1437ca2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4359b863da56242bbe612fa0055690d9923a9ec4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945736"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600475"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Procedura: Attivare l'avvio automatico per le installazioni da CD
-Quando si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione mediante supporti rimovibili, ad esempio CD-ROM o DVD-ROM di avvio, è possibile abilitare `AutoStart` in modo che il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene avviata automaticamente dopo l'inserimento del supporto.  
-  
- `AutoStart` può essere abilitata per il **Publish** pagina della **creazione progetti**.  
-  
-### <a name="to-enable-autostart"></a>Abilitare l'avvio automatico  
-  
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
-  
-2.  Fare clic sulla scheda **Pubblica**.  
-  
-3.  Fare clic sul pulsante **Opzioni**.  
-  
-     Il **Publish Options** verrà visualizzata la finestra di dialogo.  
-  
-4.  Fare clic su **distribuzione**.  
-  
-5.  Selezionare il **per installazioni da CD, avvia automaticamente l'installazione all'inserimento del CD** casella di controllo.  
-  
-     Un' *Autorun. inf* file verrà copiato nel percorso di pubblicazione è pubblicata l'applicazione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+Quando si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione mediante supporti rimovibili, ad esempio CD-ROM o DVD-ROM di avvio, è possibile abilitare `AutoStart` in modo che il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene avviata automaticamente dopo l'inserimento del supporto.
+
+ `AutoStart` può essere abilitata per il **Publish** pagina della **creazione progetti**.
+
+### <a name="to-enable-autostart"></a>Abilitare l'avvio automatico
+
+1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+
+2.  Fare clic sulla scheda **Pubblica**.
+
+3.  Fare clic sul pulsante **Opzioni**.
+
+     Il **Publish Options** verrà visualizzata la finestra di dialogo.
+
+4.  Fare clic su **distribuzione**.
+
+5.  Selezionare il **per installazioni da CD, avvia automaticamente l'installazione all'inserimento del CD** casella di controllo.
+
+     Un' *Autorun. inf* file verrà copiato nel percorso di pubblicazione è pubblicata l'applicazione.
+
+## <a name="see-also"></a>Vedere anche
+- [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
+- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

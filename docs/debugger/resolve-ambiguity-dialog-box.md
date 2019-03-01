@@ -19,27 +19,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cad82add5d397991f2c3e7532bbbf2559f9819e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d784766e3c90241be3759a7113c52e6d863fa47
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033066"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681076"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>finestra di dialogo Risolvi ambiguità
-La finestra di dialogo `Resolve Ambiguity` viene visualizzata quando il debugger non è in grado di determinare il percorso da visualizzare. Se, ad esempio, si utilizzano i modelli C++, è possibile creare più funzioni da un unico modello di funzione. Se il debugger si arresta in corrispondenza di un percorso di origine nel modello e si sceglie `Go To Disassembly`, possono verificarsi più condizioni. Ciascuna funzione creata dal modello ha un proprio codice disassembly e il debugger non è in grado di determinare quale codice si desidera visualizzare. La finestra di dialogo `Resolve Ambiguity` consente di selezionare il percorso desiderato da un elenco di tutti i percorsi corrispondenti.  
-  
- `Choose the specific location`  
- Elenca tutti i percorsi corrispondenti al comando.  
-  
- `Address`  
- Mostra gli indirizzi di memoria per ciascuna funzione.  
-  
- `Function`  
- Mostra il nome di ciascuna funzione.  
-  
- `Module`  
- Mostra il modulo (EXE o DLL) che contiene il codice oggetto per la funzione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Espressioni nel debugger](../debugger/expressions-in-the-debugger.md)
+La finestra di dialogo `Resolve Ambiguity` viene visualizzata quando il debugger non è in grado di determinare il percorso da visualizzare. Se, ad esempio, si utilizzano i modelli C++, è possibile creare più funzioni da un unico modello di funzione. Se il debugger si arresta in corrispondenza di un percorso di origine nel modello e si sceglie `Go To Disassembly`, possono verificarsi più condizioni. Ciascuna funzione creata dal modello ha un proprio codice disassembly e il debugger non è in grado di determinare quale codice si desidera visualizzare. La finestra di dialogo `Resolve Ambiguity` consente di selezionare il percorso desiderato da un elenco di tutti i percorsi corrispondenti.
+
+ `Choose the specific location` Elenca tutti i percorsi corrispondenti al comando.
+
+ `Address` Mostra gli indirizzi di memoria per ogni funzione.
+
+ `Function` Mostra il nome di ogni funzione.
+
+ `Module` Mostra il modulo (EXE o DLL) che contiene il codice oggetto per la funzione.
+
+## <a name="see-also"></a>Vedere anche
+- [Espressioni nel debugger](../debugger/expressions-in-the-debugger.md)
