@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790733"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844139"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  Visual Studio Tools per Apache Cordova è il risultato di una stretta collaborazione tra Microsoft e la community open source di Apache Cordova. Gli strumenti consentono lo sviluppo per dispositivi mobili multipiattaforma usando HTML, CSS e JavaScript (o TypeScript). È possibile sviluppare per Android, iOS e Windows con una singola codebase e sfruttare le molteplici funzionalità dell'IDE di Visual Studio, quali JavaScript IntelliSense, DOM Explorer, Console JavaScript, punti di interruzione, espressioni di controllo, variabili locali, Just My Code e molte altre.  Con Visual Studio Tools per Apache Cordova le app possono accedere alle funzionalità native dei dispositivi su tutte le piattaforme tramite plug-in che forniscono un'API JavaScript comune. Per iniziare, vedere [Introduzione a Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Giochi per dispositivi mobili multipiattaforma in C# con Unity
- Unity è un ecosistema ampiamente diffuso per lo sviluppo di giochi 2D e 3D multipiattaforma. È possibile scrivere un gioco in C# ed eseguirlo in modo nativo su Android, iOS e Windows Phone e molte altre piattaforme. Visual Studio Tools per Unity è un'estensione che integra Unity con l'IDE di Visual Studio. Con questa estensione sono disponibili tutte le funzionalità dell'IDE e del debugger di Visual Studio, oltre a funzionalità per la produttività progettate per gli sviluppatori di Unity. Visual Studio Tools per Unity Preview 2.0. include il supporto per Visual Studio 2015, oltre a numerose nuove funzionalità, come una migliore visualizzazione per gli oggetti nelle finestre Variabili locali e Espressioni di controllo. Microsoft ha di recente acquisito SyntaxTree, la società che ha creato Visual Studio Tools per Unity. Per scaricare Visual Studio Tools per Unity 2.0 Preview 2 e per altre informazioni su Visual Studio Tools per Unity, vedere [Visual Studio Tools per Unity 2.0](http://Aka.ms/vstu).
+ Unity è un ecosistema ampiamente diffuso per lo sviluppo di giochi 2D e 3D multipiattaforma. È possibile scrivere un gioco in C# ed eseguirlo in modo nativo su Android, iOS e Windows Phone e molte altre piattaforme. Visual Studio Tools per Unity è un'estensione che integra Unity con l'IDE di Visual Studio. Con questa estensione sono disponibili tutte le funzionalità dell'IDE e del debugger di Visual Studio, oltre a funzionalità per la produttività progettate per gli sviluppatori di Unity. Visual Studio Tools per Unity Preview 2.0. include il supporto per Visual Studio 2015, oltre a numerose nuove funzionalità, come una migliore visualizzazione per gli oggetti nelle finestre Variabili locali e Espressioni di controllo. Microsoft ha di recente acquisito SyntaxTree, la società che ha creato Visual Studio Tools per Unity. Per scaricare Visual Studio Tools per Unity 2.0 Preview 2 e per altre informazioni su Visual Studio Tools per Unity, vedere [Visual Studio Tools per Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>App e librerie multipiattaforma per C++ nativo
  C++ è un linguaggio disponibile in modo nativo per dispositivi mobili più. Consente di scrivere librerie di codice condiviso tra piattaforme che possono essere compilati per più destinazioni di piattaforma mobile. È possibile creare anche applicazioni per dispositivi mobili completamente in C++. Per modificare, compilare, distribuire il codice multipiattaforma ed eseguirne il debug, è possibile usare Visual C++. Oltre ai modelli per le applicazioni Windows, è possibile creare progetti da modelli per applicazioni attività nativa Android, iOS App o progetti di librerie di codice condiviso per più piattaforme che includono applicazioni ibride Xamarin. Usare IntelliSense specifico della piattaforma per esplorare le API e generare il codice corretto destinato a iOS, Android o Windows. È possibile configurare la compilazione per piattaforme x86 o ARM native e distribuire il codice per un simulatore iOS o ai dispositivi iOS su un Mac collegata alla rete per i dispositivi Android collegati direttamente o utilizzare l'emulatore di Microsoft Visual Studio ad elevate prestazioni per Android per il test. È possibile impostare punti di interruzione, controllare le variabili, visualizzare lo stack ed eseguire il codice C++ un'istruzione alla volta nel debugger di Visual Studio. È possibile condividere tutto il codice, tranne quello più specifico della piattaforma, tra più piattaforme di app e compilarle con una sola soluzione in Visual Studio.
@@ -100,7 +100,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  ![Menu Anteprima dispositivo](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
- Poiché Visual Studio 2013, gli strumenti di acquisizione Visual Studio grafica diagnostica ha aggiunto numerose nuove funzionalità, tra cui l'analisi dei Frame, supporto per Windows Phone, modifica dello shader e applica e riga di comando. È inoltre aggiunto supporto per il debug di applicazioni DirectX12. Per ulteriori informazioni, vedere [Visual Studio Graphics Diagnostics](./debugger/visual-studio-graphics-diagnostics.md).
+ A partire da Visual Studio 2013, la Diagnostica della grafica di Visual Studio include numerose nuove funzionalità, tra cui l'analisi dei Frame, il supporto per Windows Phone, il comando di modifica e applicazione shader e gli strumenti di acquisizione della riga di comando. È inoltre aggiunto supporto per il debug di applicazioni DirectX12. Per ulteriori informazioni, vedere [Visual Studio Graphics Diagnostics](./debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="connect-to-services"></a>Connettersi ai servizi
  Con Visual Studio 2015 è più semplice che mai connettere l'app ai servizi.  La nuova procedura guidata Aggiungi servizio connesso consente di configurare il progetto, aggiungere il supporto necessario per l'autenticazione e scaricare i pacchetti NuGet necessari per iniziare a scrivere codice per il servizio in modo rapido e senza problemi. La procedura guidata Aggiungi servizio connesso si integra anche con il nuovo Gestione account per facilitare l'uso di più account utente e sottoscrizioni. In Visual Studio 2015 è incluso il supporto automatico per i servizi seguenti, presupposto che l'utente disponga di un account:
@@ -109,7 +109,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 
 2. Archiviazione di Azure
 
-3. Office 365 (posta elettronica, contatti, calendari, file, utenti e gruppi)
+3. Office 365 (posta elettronica, contatti, calendari, file, utenti e gruppi).
 
 4. Salesforce
 
@@ -157,7 +157,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 ## <a name="enjoy-these-additional-ide-improvements"></a>Altri miglioramenti dell'IDE
 
 ### <a name="synchronized-settings-roaming-settings"></a>Impostazioni sincronizzate (impostazioni di roaming)
- In Visual Studio 2013 viene introdotta la funzionalità Impostazioni sincronizzate per alcune delle impostazioni configurate più di frequente, come Editor di testo, KeyBindings, Tema, tipi di carattere e colori, Avvio e Alias di ambiente.  Visual Studio 2015 migliora questa esperienza sincronizzando più impostazioni. La sincronizzazione delle impostazioni viene estesa alla famiglia di applicazioni di Visual Studio, quali Professional, Enterprise, SKU di Express e Blend. Quando si accede a Visual Studio 2015 per la prima volta con lo stesso account usato in Visual Studio 2013, vengono visualizzate le impostazioni sincronizzate applicate in Visual Studio 2013. È possibile accedere alle impostazioni digitando "sincronizza" in **Avvio veloce** o passando a **Strumenti > Opzioni > Ambiente > Impostazioni sincronizzate**.
+ Visual Studio 2013 ha introdotto impostazioni sincronizzate per alcune delle impostazioni configurate più di frequente, ad esempio Editor di testo, Keybindings, tema & i tipi di carattere e colori, avvio e alias di ambiente.  Visual Studio 2015 migliora questa esperienza sincronizzando più impostazioni. La sincronizzazione delle impostazioni viene estesa alla famiglia di applicazioni di Visual Studio, quali Professional, Enterprise, SKU di Express e Blend. Quando si accede a Visual Studio 2015 per la prima volta con lo stesso account usato in Visual Studio 2013, vengono visualizzate le impostazioni sincronizzate applicate in Visual Studio 2013. È possibile accedere alle impostazioni digitando "sincronizza" in **Avvio veloce** o passando a **Strumenti > Opzioni > Ambiente > Impostazioni sincronizzate**.
 
 ### <a name="automatic-extension-updates"></a>Aggiornamenti automatici delle estensioni
  Le estensioni di Visual Studio installate, ora verranno aggiornate automaticamente non appena si rende disponibile una nuova versione su Visual Studio Gallery. Vedere [Ricerca e utilizzo di estensioni di Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) per informazioni dettagliate su come personalizzare gli aggiornamenti di estensione automatica.

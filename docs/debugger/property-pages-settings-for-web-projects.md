@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001969"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690526"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Impostazioni delle pagine delle proprietà per i progetti Web
-È possibile modificare le impostazioni delle proprietà per la configurazione di debug di un sito Web nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
-  
+È possibile modificare le impostazioni delle proprietà per la configurazione di debug di un sito Web nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
+
 ### <a name="start-options-category"></a>Categoria di opzioni di avvio
-  
+
 | **Impostazione** | **Descrizione** |
 | - | - |
 | **Azione di avvio** | Intestazione sotto la quale sono raggruppate le opzioni correlate all'avvio dell'applicazione. |
@@ -51,6 +51,6 @@ ms.locfileid: "55001969"
 | **Debug codice nativo** | Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso. |
 | **Debug SQL Server** | Consente di eseguire il debug di oggetti di database di SQL Server. |
 | **Debug Silverlight** | Consente di eseguire il debug dei componenti di Silverlight. |
-  
-## <a name="see-also"></a>Vedere anche  
- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)

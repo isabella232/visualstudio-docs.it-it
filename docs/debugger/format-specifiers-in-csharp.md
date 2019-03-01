@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227683"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698989"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formattare gli identificatori in C# nel debugger di Visual Studio
 È possibile modificare il formato in cui viene visualizzato il valore nella **Watch** finestra usando identificatori di formato. È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato verrà visualizzato in una [suggerimento dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella sezione delle opzioni di formato specificato.
@@ -68,5 +68,5 @@ La tabella seguente descrive il C# per il debugger di Visual Studio identificato
 |results|Utilizzato con una variabile di un tipo che implementa IEnumerable o IEnumerable\<T >, generalmente il risultato di un'espressione di query. Visualizza solo i membri che contengono il risultato della query.|Visualizza tutti i membri|Visualizza i membri che soddisfano le condizioni della query|
 
 ## <a name="see-also"></a>Vedere anche
-[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)  
-[Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)
+- [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
+- [Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)
