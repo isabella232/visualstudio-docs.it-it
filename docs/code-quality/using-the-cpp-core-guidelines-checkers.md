@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914997"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223351"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
-Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. I controlli delle linee guida di base vengono installati per impostazione predefinita in Visual Studio 2017 e vengono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
+
+Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. I controlli delle linee guida di base vengono installati per impostazione predefinita in Visual Studio 2017 e Visual Studio 2019 e vengono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>Il progetto di linee guida di base di C++
- Linee guida di base di C++ creato da Bjarne Stroustrup e così via, sono una Guida all'utilizzo di C++ moderno in modo sicuro ed efficace. Le linee guida enfatizzare l'indipendenza dai tipi statici e la sicurezza delle risorse. Le classi identificare modi per eliminare o ridurre al minimo le parti più soggette a errori del linguaggio e suggerire come rendere il codice più semplice e più efficiente in modo affidabile. Queste indicazioni vengono gestite dagli Standard C++ Foundation. Per altre informazioni, vedere la documentazione [linee guida di base di C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)e accedere ai file di progetto di linee guida di base di C++ documentazione sul [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Linee guida di base di C++ creato da Bjarne Stroustrup e così via, sono una Guida all'utilizzo di C++ moderno in modo sicuro ed efficace. Le linee guida enfatizzare l'indipendenza dai tipi statici e la sicurezza delle risorse. Le classi identificare modi per eliminare o ridurre al minimo le parti più soggette a errori del linguaggio e suggerire come rendere il codice più semplice e più efficiente in modo affidabile. Queste indicazioni vengono gestite dagli Standard C++ Foundation. Per altre informazioni, vedere la documentazione [linee guida di base di C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)e accedere ai file di progetto di linee guida di base di C++ documentazione sul [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Abilitare le linee guida C++ Core controllare nell'analisi del codice
  È possibile abilitare analisi del codice sul progetto selezionando il **Abilita analisi codice su compilazione** casella di controllo la **analisi del codice** sezione del **pagine delle proprietà** finestra di dialogo per il progetto.

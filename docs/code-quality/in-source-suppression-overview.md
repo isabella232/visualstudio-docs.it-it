@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927815"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223086"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi dell'analisi codice
 
@@ -33,7 +33,7 @@ In C + + c++ /CLI CLI, utilizzare le macro autorità di certificazione\_SUPPRESS
 > Non utilizzare le eliminazioni nell'origine nelle build di rilascio, per evitare che i metadati di eliminazione nell'origine di spedizione accidentalmente. Inoltre, a causa del costo di elaborazione di eliminazione nell'origine, è possono peggiorare le prestazioni dell'applicazione.
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Questi avvisi provengono [analizzatori di Roslyn](roslyn-analyzers-overview.md). Se non si è pronti per risolvere gli avvisi, è possibile eliminare tutti gli elementi scegliendo **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi**.
+> Se si esegue la migrazione di un progetto di Visual Studio 2017 o Visual Studio 2019, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Questi avvisi provengono [analizzatori di Roslyn](roslyn-analyzers-overview.md). Se non si è pronti per risolvere gli avvisi, è possibile eliminare tutti gli elementi scegliendo **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi**.
 >
 > ![Esegui analisi del codice ed eliminare i problemi in Visual Studio](media/suppress-active-issues.png)
 

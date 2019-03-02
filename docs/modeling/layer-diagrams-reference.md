@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957913"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223013"
 ---
 # <a name="dependency-diagrams-reference"></a>I diagrammi delle dipendenze: riferimenti
 
@@ -34,7 +34,7 @@ In Visual Studio, è possibile usare una *diagramma delle dipendenze* per visual
 Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio 2017.
+> I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio.
 
 È possibile specificare le dipendenze desiderate o esistenti tra i livelli. Queste dipendenze, rappresentate come frecce, indicano i livelli che possono usare o usano attualmente la funzionalità rappresentata da altri livelli. Organizzando il sistema in livelli che descrivono funzioni e ruoli distinti, un diagramma delle dipendenze può aiutare rendono più semplice per comprendere, riusare e gestire il codice.
 

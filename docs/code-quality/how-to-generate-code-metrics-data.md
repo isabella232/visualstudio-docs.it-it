@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007358"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223728"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica codice
 
@@ -206,7 +206,7 @@ Per altre informazioni, vedere [abilita la generazione di metrica del codice in 
 
 ### <a name="previous-versions"></a>Versioni precedenti
 
-Le versioni precedenti di Visual Studio, tra cui Visual Studio 2015, includevano uno strumento di metriche di codice della riga di comando che è stato chiamato anche *Metrics.exe*. Questa versione precedente dello strumento ha eseguito un'analisi binaria, vale a dire, un'analisi basata su assembly. Il nuovo strumento analizza il codice sorgente invece. Poiché il nuovo strumento di metriche di codice della riga di comando è basato sul codice sorgente, i risultati sono diversi da quello generato dalle versioni precedenti di *Metrics.exe* e IDE di Visual Studio 2017.
+Visual Studio 2015 include uno strumento di metriche di codice della riga di comando che è stato chiamato anche *Metrics.exe*. Questa versione precedente dello strumento ha eseguito un'analisi binaria, vale a dire, un'analisi basata su assembly. Il nuovo *Metrics.exe* strumento analizza il codice sorgente invece. Poiché il nuovo *Metrics.exe* lo strumento è la metrica del codice basata su codice, della riga di comando di origine i risultati sono diversi da quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
 Il nuovo strumento di metriche di codice della riga di comando Calcola metriche anche in presenza di errori del codice sorgente, purché la soluzione e progetto può essere caricati.
 
@@ -214,7 +214,7 @@ Il nuovo strumento di metriche di codice della riga di comando Calcola metriche 
 
 Il `LinesOfCode` metrica è più accurate e affidabili nel nuovo strumento di metriche di codice della riga di comando. È indipendente da eventuali differenze codegen e non cambia quando il runtime o un set di strumenti di modifica. Il nuovo strumento conta le righe effettive di codice, inclusi i commenti e le righe vuote.
 
-Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` utilizzare le stesse formule come le versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di `IOperations` (istruzioni di origine logica) anziché intermedio istruzioni in linguaggio (IL). I numeri sarà leggermente diversi rispetto alle versioni precedenti di *Metrics.exe* e dai risultati metrica codice dell'IDE di Visual Studio 2017.
+Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` utilizzare le stesse formule come le versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di `IOperations` (istruzioni di origine logica) anziché intermedio istruzioni in linguaggio (IL). I numeri sarà leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 82f42ba3c984d53952bed2396ca1218883977204
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907851"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222558"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usare set di regole per specificare le regole C++ da eseguire
 
 In Visual Studio, è possibile creare e modificare un oggetto personalizzato *set di regole* per soddisfare specifiche esigenze del progetto associate con l'analisi del codice. Il set di regole predefinite vengono archiviati in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versione 15.7** è possibile creare set di regole personalizzate utilizzando il testo dell'editor e applicarli nelle compilazioni della riga di comando indipendentemente da cosa compilare sistema in uso. Per altre informazioni, vedere [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 versione 15.7 e successive** è possibile creare set di regole personalizzate utilizzando il testo dell'editor e applicarli nelle compilazioni della riga di comando indipendentemente da cosa compilare sistema in uso. Per altre informazioni, vedere [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Per creare una regola personalizzata di C++ imposta in Visual Studio, un progetto C/C++ deve essere aperto nell'IDE di Visual Studio. Quindi aprire un set di regole standard in editor set di regole e quindi aggiungere o rimuovere regole specifiche e, facoltativamente, modificare l'azione che si verifica quando l'analisi del codice determina che è stata violata una regola.
 
