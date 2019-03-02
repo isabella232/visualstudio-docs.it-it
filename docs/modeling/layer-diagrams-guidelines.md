@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908783"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223819"
 ---
 # <a name="dependency-diagrams-guidelines"></a>I diagrammi delle dipendenze: linee guida
 
@@ -26,7 +26,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi delle dipe
 Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio 2017.
+> I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio.
 
 ## <a name="what-is-a-dependency-diagram"></a>Che cos'è un diagramma delle dipendenze?
 
@@ -87,7 +87,7 @@ Vedere:
 
 ## <a name="Generate"></a> Individuare le dipendenze esistenti tra livelli
 
-È presente una dipendenza quando un artefatto associato a un livello dispone di un riferimento a un artefatto associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. Per individuare le dipendenze esistenti, è possibile decompilarle.
+È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. Per individuare le dipendenze esistenti, è possibile decompilarle.
 
 > [!NOTE]
 > Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, fare doppio clic su uno o più livelli e quindi fare clic su **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.
@@ -107,8 +107,8 @@ Per descrivere le modifiche che si prevede di apportare al sistema o l'architett
 |Eliminare una dipendenza che non dovrebbe essere presente|Fare clic sulla dipendenza e quindi premere **Elimina**.|
 |Modificare o limitare la direzione di una dipendenza|Impostare relativi **direzione** proprietà.|
 |Creare nuove dipendenze|Usare la **Dependency** e **dipendenza bidirezionale** strumenti.<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, fare clic sui **puntatore** degli strumenti oppure premere la **ESC** chiave.|
-|Specificare che gli artefatti associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
-|Specificare che gli artefatti associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 |Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 
 ### <a name="Improving"></a> Miglioramento della struttura del codice
@@ -125,7 +125,7 @@ Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo pro
 
 -   **Visualizzare i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma di dipendenza che descrive un'applicazione desktop può includere livelli quali presentazione, logica di dominio e Data Store. Un diagramma di dipendenza che riguarda una singola funzionalità all'interno di un'applicazione può includere livelli quali modello, visualizzazione e Controller. Per altre informazioni su tali modelli, vedere [Patterns & Practices: Architettura dell'applicazione](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Creare un elemento di codice per ogni livello** come spazio dei nomi, classe o componente. In questo modo sarà più semplice seguire il codice e collegare gli artefatti di codice ai livelli. Non appena si crea ogni artefatto, collegarlo al livello appropriato.
+-   **Creare un elemento di codice per ogni livello** come spazio dei nomi, classe o componente. In questo modo sarà più semplice seguire il codice e collegare gli elementi di codice ai livelli. Non appena si crea ogni artefatto, collegarlo al livello appropriato.
 
 -   **Non è necessario collegare la maggior parte delle classi e altri elementi ai livelli** poiché si trovano all'interno di elementi più grandi quali spazi dei nomi che sono già stati collegati ai livelli.
 

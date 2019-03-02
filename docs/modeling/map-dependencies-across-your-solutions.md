@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950227"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223702"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mappare le dipendenze con le mappe codici
 
@@ -47,7 +47,7 @@ Per creare e modificare mappe del codice, è necessario Visual Studio Enterprise
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Mappa codice di installazione e la convalida Live delle dipendenze
 
-Per creare una mappa codici in Visual Studio 2017, installare innanzitutto le **mappa codice** e **convalida della dipendenza Live** componenti:
+Per creare una mappa codici in Visual Studio, installare innanzitutto le **mappa codice** e **convalida della dipendenza Live** componenti:
 
 1. Aprire **programma di installazione di Visual Studio**. È possibile aprirlo dal menu Start di Windows o all'interno di Visual Studio selezionando **degli strumenti** > **Ottieni strumenti e funzionalità**.
 
@@ -102,7 +102,7 @@ Per visualizzare tutte le dipendenze nella soluzione:
 
 4. Tuttavia, questa operazione potrebbe non essere utile per una soluzione di grandi dimensioni. Infatti, per soluzioni complesse, i limiti di memoria potrebbero impedire di espandere tutti i gruppi. In alternativa, per visualizzare gli elementi all'interno di un singolo nodo, espanderlo. Spostare il puntatore del mouse sopra il nodo, quindi scegliere il pulsante con la freccia di espansione (freccia giù) quando viene visualizzato.
 
-   ![Espansione di un nodo in una mappa del codice](../modeling/media/dependencygraph_containment.png)
+   ![Espansione di un nodo in una mappa codici](../modeling/media/dependencygraph_containment.png)
 
    In alternativa, usare la tastiera selezionando l'elemento e premendo il tasto più (**+**). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.
 
@@ -136,7 +136,7 @@ Per visualizzare tutte le dipendenze nella soluzione:
 
 10. Un altro modo per concentrarsi sulla mappa di soluzione complessa consiste nel generare una nuova mappa contenente gli elementi selezionati da una mappa esistente. Tenere premuto **Ctrl** durante la selezione di elementi che si desidera concentrarsi su, aprire il menu di scelta rapida e scegliere **nuovo grafico dalla selezione**.
 
-    ![Mostra gli elementi selezionati in una nuova mappa del codice](../modeling/media/codemapsshowonnewmap.png)
+    ![Mostra gli elementi selezionati in una nuova mappa codici](../modeling/media/codemapsshowonnewmap.png)
 
 11. Il contesto contenitore viene trasferito alla nuova mappa. Nascondere le cartelle della soluzione e tutti gli altri contenitori che non si vuole visualizzare tramite il **filtri** riquadro.
 
@@ -156,7 +156,7 @@ Vedere anche:
 
 Si supponga di che avere una revisione del codice da eseguire in alcuni file con modifiche in sospeso. Per visualizzare le dipendenze in queste modifiche, è possibile creare una mappa codice da tali file.
 
-   ![Mostra dipendenze specifiche su una mappa del codice](../modeling/media/codemapsspecificdependenciesintro.png)
+   ![Mostra dipendenze specifiche su una mappa codici](../modeling/media/codemapsspecificdependenciesintro.png)
 
 1. Nelle **Esplora soluzioni**, selezionare i progetti, riferimenti ad assembly, cartelle, file, tipi o membri che si desidera eseguire il mapping.
 
@@ -230,7 +230,7 @@ Si supponga di che avere una revisione del codice da eseguire in alcuni file con
 
 7. La mappa visualizza le relazioni. In questo esempio, la mappa Mostra i metodi chiamati dal `Find` (metodo) e la relativa posizione nella soluzione o esternamente.
 
-   ![Mostra dipendenze specifiche su una mappa del codice](../modeling/media/codemapsspecificdependenciesintro.png)
+   ![Mostra dipendenze specifiche su una mappa codici](../modeling/media/codemapsspecificdependenciesintro.png)
 
 8. Per semplificare la mappa e concentrarsi sulle singole parti, scegliere **Filtri** nella barra degli strumenti della mappa codice e selezionare solo i tipi di nodi e di collegamenti desiderati. Ad esempio, disattivare la visualizzazione di Cartelle soluzione, Assembly e Spazi dei nomi.
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317367"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223195"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -49,7 +49,7 @@ Per assicurarsi che non entrino in conflitto con la progettazione codice, è pos
 - Una soluzione che include un progetto di modellazione con un diagramma delle dipendenze. Questo diagramma di dipendenza deve essere collegato agli artefatti nei progetti c# o Visual Basic che si desidera convalidare. Visualizzare [creare i diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio 2017.
+> I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio.
 
 Per informazioni su quali edizioni di Visual Studio supportano questa funzionalità, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -175,7 +175,7 @@ Usare queste attività per gestire gli errori di convalida nel **elenco errori**
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Per convalidare automaticamente il codice durante una compilazione locale
 
-Usare un editor di testo per aprire il file del progetto di modellazione (.modelproj), quindi includere la proprietà seguente:
+Usare un editor di testo per aprire il file del progetto di modello (.modelproj), quindi includere la proprietà seguente:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
@@ -187,7 +187,7 @@ Usare un editor di testo per aprire il file del progetto di modellazione (.model
 
 2.  Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.
 
-    Il progetto di modellazione viene incluso nel processo di convalida.
+    Il progetto di modello viene incluso nel processo di convalida.
 
 3.  Nelle **Esplora soluzioni**, fare clic sul file di diagramma (con estensione layerdiagram) delle dipendenze che si desidera utilizzare per la convalida.
 
@@ -235,6 +235,6 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Convalida delle dipendenze in tempo reale in Visual Studio 2017](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Convalida Live delle dipendenze in Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
 - [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
