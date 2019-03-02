@@ -4,7 +4,7 @@ items:
   items:
   - name: Panoramica
     items:
-    - name: Informazioni su Visual Studio 2017
+    - name: Informazioni su Visual Studio
       href: visual-studio-ide.md
     - name: Informazioni sull'editor del codice
       href: tutorial-editor.md
@@ -31,16 +31,16 @@ items:
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Eseguire il debug del codice
       href: ../csharp/tutorial-debugger.md
-    - name: Testing unità
+    - name: Unit test
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
     - name: Distribuire il progetto
       href: ../../deployment/index.md
     - name: Accedere ai dati
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: d87b0861c007490137dd6e3f164173616f12f66f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc0478d8d9084d37f1c58670e2815ebfd0ee6f1c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994001"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222701"

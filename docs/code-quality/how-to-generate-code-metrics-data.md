@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909206"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007358"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica codice
 
@@ -25,6 +25,8 @@ ms.locfileid: "55909206"
 Inoltre, è possibile installare un [mobileengagement](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) che include la metrica del codice di quattro [analizzatore](roslyn-analyzers-overview.md) regole: CA1501 CA1502, CA1505 e CA1506. Queste regole sono disabilitate per impostazione predefinita, ma è possibile abilitarle dal **Esplora soluzioni** o in un [set di regole](using-rule-sets-to-group-code-analysis-rules.md) file.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Metrica del codice di Visual Studio IDE
+
+Generare la metrica del codice per uno o tutti i progetti aperti nell'IDE usando il **Analyze** > **Calcola metrica codice** menu.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Genera risultati metrica codice per un'intera soluzione
 
@@ -45,6 +47,16 @@ I risultati vengono generati e il **risultati metrica codice** viene visualizzat
 1. Dalla barra dei menu, scegliere **Analyze** > **Calcola metrica codice** > **per i progetti selezionati**.
 
 I risultati vengono generati e il **risultati metrica codice** viene visualizzata la finestra. Per visualizzare i dettagli dei risultati, espandere l'albero nel **gerarchia**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> Il **Calcola metrica codice** comando non funziona per i progetti .NET Core e .NET Standard. Per calcolare la metrica del codice per un progetto .NET Core o .NET Standard, è possibile:
+>
+> - Calcola metrica codice dal [riga di comando](#command-line-code-metrics) invece
+> - eseguire l'aggiornamento a Visual Studio 2019
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Metrica del codice della riga di comando
 
