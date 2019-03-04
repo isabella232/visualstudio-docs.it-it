@@ -1,806 +1,815 @@
+items:
 - name: Documentazione di profilatura
   href: index.md
 - name: Panoramica
   href: profiling-overview.md
 - name: Guide rapide introduttive
   items:
-    - name: Presentazione della profilatura
-      href: profiling-feature-tour.md
-    - name: Analizzare l'utilizzo della CPU (gestita)
-      href: quickstart-cpu-usage-managed.md
-    - name: Analizzare l'utilizzo della CPU (nativa)
-      href: quickstart-cpu-usage-native.md
-    - name: Analizzare l'utilizzo della CPU (ASP.NET)
-      href: quickstart-cpu-usage-aspnet.md
+  - name: Presentazione della profilatura
+    href: profiling-feature-tour.md
+  - name: Analizzare l'utilizzo della CPU (gestita)
+    href: quickstart-cpu-usage-managed.md
+  - name: Analizzare l'utilizzo della CPU (nativa)
+    href: quickstart-cpu-usage-native.md
+  - name: Analizzare l'utilizzo della CPU (ASP.NET)
+    href: quickstart-cpu-usage-aspnet.md
 - name: Esercitazioni
   items:
-    - name: Profilare le prestazioni delle applicazioni in Visual Studio
-      href: beginners-guide-to-performance-profiling.md
-    - name: Profilare l'utilizzo della memoria in Visual Studio
-      href: memory-usage.md
+  - name: Profilare le prestazioni delle applicazioni in Visual Studio
+    href: beginners-guide-to-performance-profiling.md
+  - name: Profilare l'utilizzo della memoria in Visual Studio
+    href: memory-usage.md
 - name: Concetti
   items:
-    - name: Eseguire gli strumenti di profilatura con o senza il debugger
-      href: running-profiling-tools-with-or-without-the-debugger.md
+  - name: Eseguire gli strumenti di profilatura con o senza il debugger
+    href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Guide pratiche
   items:
-    - name: Analizzare l'utilizzo della CPU
-      href: cpu-usage.md
-    - name: Analizzare l'utilizzo della memoria
-      href: analyze-memory-usage.md
+  - name: Analizzare l'utilizzo della CPU
+    href: cpu-usage.md
+  - name: Analizzare l'utilizzo della memoria
+    href: analyze-memory-usage.md
+    items:
+    - name: Personalizzare gli eventi dell'heap ETW nativo
+      href: custom-native-etw-heap-events.md
+    - name: Utilizzo della memoria senza il debugger
+      href: memory-usage-without-debugging2.md
+  - name: Misurare le prestazioni dalla riga di comando
+    href: profile-apps-from-command-line.md
+  - name: Analizzare l'utilizzo della GPU
+    href: gpu-usage.md
+  - name: Analizzare il consumo di risorse
+    href: application-timeline.md
+  - name: Usare PerfTips
+    href: perftips.md
+  - name: Analizzare la memoria JavaScript
+    href: javascript-memory.md
+  - name: Analizzare l'utilizzo della rete
+    href: network-usage.md
+  - name: Analizzare la velocità di risposta dell'interfaccia utente HTML
+    href: html-ui-responsiveness.md
+  - name: Usare Esplora prestazioni
+    href: performance-explorer.md
+    items:
+    - name: Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
+      href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
+    - name: Panoramiche (strumenti per le prestazioni)
+      href: overviews-performance-tools.md
       items:
-        - name: Personalizzare gli eventi dell'heap ETW nativo
-          href: custom-native-etw-heap-events.md
-        - name: Utilizzo della memoria senza il debugger
-          href: memory-usage-without-debugging2.md
-    - name: Analizzare l'utilizzo della GPU
-      href: gpu-usage.md
-    - name: Analizzare il consumo di risorse
-      href: application-timeline.md
-    - name: Usare PerfTips
-      href: perftips.md
-    - name: Analizzare la memoria JavaScript
-      href: javascript-memory.md
-    - name: Analizzare l'utilizzo della rete
-      href: network-usage.md
-    - name: Analizzare la velocità di risposta dell'interfaccia utente HTML
-      href: html-ui-responsiveness.md
-    - name: Usare Esplora prestazioni
-      href: performance-explorer.md
+      - name: Panoramica delle sessioni di prestazioni
+        href: performance-session-overview.md
+      - name: Informazioni sui metodi di raccolta delle prestazioni
+        href: understanding-performance-collection-methods.md
+      - name: Informazioni sui valori dei dati di campionamento
+        href: understanding-sampling-data-values.md
+      - name: Informazioni sui valori dei dati di strumentazione
+        href: understanding-instrumentation-data-values.md
+      - name: Informazioni sull'allocazione di memoria e i valori dei dati di durata di un oggetto
+        href: understanding-memory-allocation-and-object-lifetime-data-values.md
+      - name: Informazioni sui valori dei dati su conflitti di risorse
+        href: understanding-resource-contention-data-values.md
+      - name: Contatori CPU e Windows
+        href: cpu-and-windows-counters.md
+      - name: Finestra Esplora prestazioni
+        href: performance-explorer-window.md
+      - name: Proprietà della sessione di prestazioni
+        href: performance-session-properties.md
+      - name: Profilatura e sicurezza in Windows Vista
+        href: profiling-and-windows-vista-security.md
+    - name: Introduzione agli strumenti per le prestazioni
+      href: getting-started-with-performance-tools.md
       items:
-        - name: Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
-          href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
-        - name: Panoramiche (strumenti per le prestazioni)
-          href: overviews-performance-tools.md
-          items:
-            - name: Panoramica delle sessioni di prestazioni
-              href: performance-session-overview.md
-            - name: Informazioni sui metodi di raccolta delle prestazioni
-              href: understanding-performance-collection-methods.md
-            - name: Informazioni sui valori dei dati di campionamento
-              href: understanding-sampling-data-values.md
-            - name: Informazioni sui valori dei dati di strumentazione
-              href: understanding-instrumentation-data-values.md
-            - name: Informazioni sull'allocazione di memoria e i valori dei dati di durata di un oggetto
-              href: understanding-memory-allocation-and-object-lifetime-data-values.md
-            - name: Informazioni sui valori dei dati su conflitti di risorse
-              href: understanding-resource-contention-data-values.md
-            - name: Contatori CPU e Windows
-              href: cpu-and-windows-counters.md
-            - name: Finestra Esplora prestazioni
-              href: performance-explorer-window.md
-            - name: Proprietà della sessione di prestazioni
-              href: performance-session-properties.md
-            - name: Profilatura e sicurezza in Windows Vista
-              href: profiling-and-windows-vista-security.md
-        - name: Introduzione agli strumenti per le prestazioni
-          href: getting-started-with-performance-tools.md
-          items:
-            - name: Guida per principianti al campionamento CPU
-              href: beginners-guide-to-cpu-sampling.md
-            - name: Raccogliere dati sulle prestazioni per un sito Web
-              href: how-to-collect-performance-data-for-a-web-site.md
-            - name: Creare manualmente sessioni di prestazioni
-              href: how-to-manually-create-performance-sessions.md
-        - name: Configurare le sessioni di prestazioni
-          href: configuring-performance-sessions.md
-          items:
-            - name: Fare riferimento alle informazioni sui simboli di Windows
-              href: how-to-reference-windows-symbol-information.md
-            - name: Scegliere i metodi di raccolta
-              href: how-to-choose-collection-methods.md
-            - name: Raccogliere le statistiche sulle prestazioni tramite il campionamento
-              href: collecting-performance-statistics-by-using-sampling.md
-              items:
-                - name: Scegliere eventi di campionamento
-                  href: how-to-choose-sampling-events.md
-                - name: Raccogliere i dati di campionamento a livello di riga
-                  href: how-to-collect-line-level-sampling-data.md
-            - name: Raccogliere dati di durata e allocazione di memoria .NET
-              href: collecting-dotnet-memory-allocation-and-lifetime-data.md
-            - name: Raccogliere dati di intervallo dettagliati tramite la strumentazione
-              href: collecting-detailed-timing-data-by-using-instrumentation.md
-              items:
-                - name: Raccogliere i dati dei contatori CPU
-                  href: how-to-collect-cpu-counter-data.md
-                - name: Rilocare file binari instrumentati
-                  href: how-to-relocate-instrumented-binaries.md
-                - name: Specificare comandi pre- e post-strumentazione
-                  href: how-to-specify-pre-and-post-instrument-commands.md
-                - name: Specificare opzioni di strumentazione aggiuntive
-                  href: how-to-specify-additional-instrumentation-options.md
-            - name: Profilare codice JavaScript nelle pagine Web
-              href: how-to-profile-javascript-code-in-web-pages.md
-            - name: Raccogliere dati di concorrenza di thread e processi
-              href: collecting-thread-and-process-concurrency-data.md
-            - name: Raccogliere dati di interazione tra livelli
-              href: collecting-tier-interaction-data.md
-            - name: Raccogliere dati aggiuntivi relativi alle prestazioni
-              href: collecting-additional-performance-data.md
-              items:
-                - name: Raccogliere i dati dei contatori Windows
-                  href: how-to-collect-windows-counter-data.md
-                - name: Raccogliere dati ETW (Event Tracing for Windows)
-                  href: how-to-collect-event-tracing-for-windows-etw-data.md
-            - name: Serializzare le informazioni sui simboli
-              href: how-to-serialize-symbol-information.md
-            - name: Impostare le opzioni generali della sessione di prestazioni
-              href: setting-general-performance-session-options.md
-            - name: Impostare la sessione corrente
-              href: how-to-set-the-current-session.md
-            - name: Impostare le autorizzazioni
-              href: how-to-set-permissions.md
-            - name: Specificare il file binario da avviare
-              href: how-to-specify-the-binary-to-start.md
-            - name: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni
-              href: how-to-set-performance-data-file-name-options.md
-            - name: Specificare il runtime di .NET Framework
-              href: how-to-specify-the-dotnet-framework-runtime.md
-        - name: Controllare la raccolta dati
-          href: controlling-data-collection.md
-          items:
-            - name: Iniziare e terminare la raccolta dei dati sulle prestazioni
-              href: how-to-start-and-end-performance-data-collection.md
-            - name: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
-              href: how-to-attach-and-detach-performance-tools-to-running-processes.md
-            - name: Sospendere e riprendere la raccolta dei dati sulle prestazioni
-              href: how-to-pause-and-resume-performance-data-collection.md
-            - name: Limitare la strumentazione a specifiche DLL
-              href: how-to-limit-instrumentation-to-specific-dlls.md
-            - name: Limitare la strumentazione a specifiche funzioni
-              href: how-to-limit-instrumentation-to-specific-functions.md
-            - name: Escludere o includere funzioni brevi nella strumentazione
-              href: how-to-exclude-or-include-short-functions-from-instrumentation.md
-        - name: Analizzare i dati degli strumenti per le prestazioni
-          href: analyzing-performance-tools-data.md
-          items:
-            - name: Usare le regole per le prestazioni per analizzare dati
-              href: using-performance-rules-to-analyze-data.md
-              items:
-                - name: Visualizzare gli avvisi di prestazioni
-                  href: how-to-view-performance-warnings.md
-                - name: Configurare le regole di prestazioni
-                  href: how-to-configure-performance-rules.md
-                - name: Tabella di riferimento delle regole di prestazioni
-                  href: performance-rules-reference.md
-                  items:
-                    - name: Regole di prestazioni in base all'ID
-                      href: performance-rules-by-id.md
-                    - name: Regole di prestazioni per l'utilizzo di .NET Framework
-                      href: dotnet-framework-usage-performance-rules.md
-                      items:
-                        - name: 'DA0001: Utilizzare StringBuilder per le concatenazioni'
-                          href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: Collection GC2 frequenti'
-                          href: da0005-frequent-gc2-collections.md
-                        - name: 'DA0006: Eseguire l''override di Equals() per i tipi di valore'
-                          href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: Evitare di utilizzare eccezioni per il flusso di controllo'
-                          href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: 'DA0010: Funzione GetHashCode dispendiosa'
-                          href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: Funzione compareTo dispendiosa'
-                          href: da0011-expensive-compareto.md
-                        - name: 'DA0012: Utilizzo elevato della reflection'
-                          href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: Utilizzo elevato di String.Split/String.Substring'
-                          href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo'
-                          href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
-                        - name: 'DA0021: Frequenza elevata di Garbage Collection di generazione 1'
-                          href: da0021-high-rate-of-gen-1-garbage-collections.md
-                        - name: 'DA0022: Frequenza elevata di Garbage Collection di generazione 2'
-                          href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0024: Tempo CPU GC elevato'
-                          href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: Tempo CPU GC eccessivo'
-                          href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: Frequenza elevata di conflitti di blocco'
-                          href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: Frequenza molto elevata di conflitti di blocco'
-                          href: da0039-very-high-rate-of-lock-contentions.md
-                    - name: Regole di prestazioni relative a memoria e paging
-                      href: memory-and-paging-performance-rules.md
-                      items:
-                        - name: 'DA0014: Frequenze molto elevate di paging di memoria attiva su disco'
-                          href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: Frequenze elevate di paging di memoria attiva su disco'
-                          href: da0017-high-rates-of-paging-active-memory-to-disk.md
-                    - name: Regole di utilizzo degli strumenti di profilatura
-                      href: profiling-tools-usage-rules.md
-                      items:
-                        - name: 'DA0002: VSPerfCorProf.dll mancante'
-                          href: da0002-vsperfcorprof-dll-is-missing.md
-                        - name: 'DA0003: Numero elevato di campioni del kernel'
-                          href: da0003-many-kernel-samples.md
-                        - name: 'DA0004: Utilizzo elevato del processore'
-                          href: da0004-high-processor-usage.md
-                        - name: 'DA0008: Numero ridotto di campioni raccolti'
-                          href: da0008-few-samples-collected.md
-                        - name: 'DA0026: Tempo di elaborazione CPU kernel eccessivo'
-                          href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: Versione CLR non supportata'
-                          href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database'
-                          href: da0030-gather-tier-interaction-measurements-for-database-projects.md
-                    - name: Regole di prestazioni relative al monitoraggio delle risorse
-                      href: resource-monitoring-performance-rules.md
-                      items:
-                        - name: 'DA0501: Consumo medio CPU del processo sottoposto a profilatura'
-                          href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: Consumo massimo CPU del processo sottoposto a profilatura'
-                          href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: Working set medio in byte del processo sottoposto a profilatura'
-                          href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504: Working set massimo in byte del processo sottoposto a profilatura'
-                          href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0505: Byte privati medi allocati per il processo sottoposto a profilatura'
-                          href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: Byte privati massimi allocati per il processo sottoposto a profilatura'
-                          href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
-            - name: Visualizzazioni dei rapporti di prestazioni
-              href: performance-report-views.md
-              items:
-                - name: Informazioni generali sul rapporto di prestazioni
-                  href: performance-report-overview.md
-                - name: Visualizzazioni dei dati comuni
-                  href: common-data-views.md
-                  items:
-                    - name: Visualizzazione Processo
-                      href: process-view.md
-                    - name: Visualizzazione Contrassegni
-                      href: marks-view.md
-                    - name: Visualizzazione Riepilogo
-                      href: summary-view.md
-                    - name: Visualizzazione Albero delle chiamate
-                      href: call-tree-view.md
-                    - name: Visualizzazione Chiamante/chiamato
-                      href: caller-callee-view.md
-                    - name: Visualizzazione Moduli
-                      href: modules-view.md
-                    - name: Visualizzazione Funzioni
-                      href: functions-view.md
-                    - name: Visualizzazione Righe
-                      href: lines-view.md
-                    - name: Visualizzazione Puntatori all'istruzione
-                      href: instruction-pointers-ips-view.md
-                    - name: Visualizzazione Dettagli funzione
-                      href: function-details-view.md
-                    - name: Rapporto Traccia eventi per Windows (ETW)
-                      href: event-tracing-for-windows-etw-report.md
-                - name: Visualizzazioni dei dati del metodo di campionamento del profiler
-                  href: profiler-sampling-method-data-views.md
-                  items:
-                    - name: 'Visualizzazione Riepilogo: dati di campionamento'
-                      href: summary-view-sampling-data.md
-                    - name: 'Visualizzazione Albero delle chiamate: dati di campionamento'
-                      href: call-tree-view-sampling-data.md
-                    - name: 'Visualizzazione Moduli: dati di campionamento'
-                      href: modules-view-sampling-data.md
-                    - name: 'Visualizzazione Chiamante/chiamato: dati di campionamento'
-                      href: caller-callee-view-sampling-data.md
-                    - name: 'Visualizzazione Funzioni: dati di campionamento'
-                      href: functions-view-sampling-data.md
-                    - name: 'Visualizzazione Righe: dati di campionamento'
-                      href: lines-view-sampling-data.md
-                    - name: 'Visualizzazione Puntatore all''istruzione: dati di campionamento'
-                      href: instruction-pointers-ips-view-sampling-data.md
-                - name: Visualizzazioni dei dati del metodo di strumentazione
-                  href: instrumentation-method-data-views.md
-                  items:
-                    - name: 'Visualizzazione Riepilogo: dati di strumentazione'
-                      href: summary-view-instrumentation-data.md
-                    - name: 'Visualizzazione Albero delle chiamate: dati di strumentazione'
-                      href: call-tree-view-instrumentation-data.md
-                    - name: Visualizzazione Moduli - dati di strumentazione
-                      href: modules-view-instrumentation-data.md
-                    - name: 'Visualizzazione Chiamante/chiamato: dati di strumentazione'
-                      href: caller-callee-view-instrumentation-data.md
-                    - name: 'Visualizzazione Funzioni: dati di strumentazione'
-                      href: functions-view-instrumentation-data.md
-                - name: Visualizzazioni dei dati di memoria .NET
-                  href: dotnet-memory-data-views.md
-                  items:
-                    - name: 'Visualizzazione Riepilogo: dati di memoria .NET'
-                      href: summary-view-dotnet-memory-data.md
-                    - name: Visualizzazione Allocazioni per la memoria .NET
-                      href: dotnet-memory-allocations-view.md
-                    - name: Visualizzazione Durata oggetti
-                      href: object-lifetime-view.md
-                    - name: 'Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET'
-                      href: call-tree-view-dotnet-memory-sampling-data.md
-                    - name: 'Visualizzazione Moduli: dati di campionamento di memoria .NET'
-                      href: modules-view-dotnet-memory-sampling-data.md
-                    - name: 'Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET'
-                      href: caller-callee-view-dotnet-memory-sampling-data.md
-                    - name: 'Visualizzazione Funzioni: dati di campionamento di memoria .NET'
-                      href: functions-view-dotnet-memory-sampling-data.md
-                    - name: 'Visualizzazione Righe: dati di campionamento di memoria .NET'
-                      href: lines-view-dotnet-memory-sampling-data.md
-                    - name: 'Visualizzazione dei puntatori all''istruzione (IP, Instruction Pointer): dati di campionamento di memoria .NET'
-                      href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
-                    - name: 'Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET'
-                      href: call-tree-view-dotnet-memory-instrumentation-data.md
-                    - name: 'Visualizzazione Moduli: dati di strumentazione di memoria .NET'
-                      href: modules-view-dotnet-memory-instrumentation-data.md
-                    - name: 'Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET'
-                      href: caller-callee-view-net-memory-instrumentation-data.md
-                    - name: 'Visualizzazione Funzioni: dati di strumentazione di memoria .NET'
-                      href: functions-view-dotnet-memory-instrumentation-data.md
-                - name: Visualizzazioni dei dati su conflitti tra risorse
-                  href: resource-contention-data-views.md
-                  items:
-                    - name: 'Visualizzazione Riepilogo: visualizzazione dei conflitti tra le risorse'
-                      href: summary-view-resource-contention-view.md
-                    - name: 'Visualizzazione Albero delle chiamate: dati su conflitti'
-                      href: call-tree-view-contention-data.md
-                    - name: 'Visualizzazione Moduli: dati sui conflitti'
-                      href: modules-view-contention-data.md
-                    - name: 'Visualizzazione Chiamante/chiamato: dati sui conflitti'
-                      href: caller-callee-view-contention-data.md
-                    - name: 'Visualizzazione Funzioni: dati sui conflitti'
-                      href: functions-view-contention-data.md
-                    - name: 'Visualizzazione Dettagli risorsa: dati sui conflitti'
-                      href: resource-details-view-contention-data.md
-                    - name: 'Visualizzazione Dettagli thread: dati sui conflitti'
-                      href: thread-details-view-contention-data.md
-                    - name: 'Visualizzazione dei conflitti di risorse: dati sui conflitti'
-                      href: resource-contentions-view-contention-data.md
-                    - name: 'Visualizzazione Processo: dati sui conflitti'
-                      href: process-view-contention-data.md
-                    - name: 'Visualizzazione Righe: dati sui conflitti'
-                      href: lines-view-contention-data.md
-                    - name: 'Visualizzazione Puntatore all''istruzione: dati sui conflitti'
-                      href: instruction-pointers-ips-view-contention-data.md
-                - name: Visualizzazioni Interazioni tra livelli
-                  href: tier-interaction-views.md
-                  items:
-                    - name: Interazioni tra livelli (visualizzazione)
-                      href: tier-interactions-view.md
-            - name: Personalizzare le visualizzazioni dei report sugli strumenti per le prestazioni
-              href: customizing-performance-tools-report-views.md
-              items:
-                - name: Personalizzare colonne della visualizzazione report
-                  href: how-to-customize-report-view-columns.md
-                - name: Filtrare visualizzazioni rapporto
-                  href: filtering-report-views.md
-                - name: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo
-                  href: how-to-filter-report-views-from-the-summary-timeline.md
-                - name: Filtro delle visualizzazioni dei rapporti di prestazioni
-                  href: performance-report-view-filter.md
-                - name: Configurare la riduzione del rumore nelle visualizzazioni report
-                  href: how-to-configure-noise-reduction-in-report-views.md
-                - name: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code
-                  href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
-        - name: Confrontare i file di dati delle prestazioni
-          href: comparing-performance-data-files.md
-          items:
-            - name: Confrontare i file di dati delle prestazioni
-              href: how-to-compare-performance-data-files.md
-        - name: Salvare le informazioni sui simboli con i file di dati di prestazioni
-          href: saving-symbol-information-with-performance-data-files.md
-        - name: Salvare ed esportare i dati degli strumenti per le prestazioni
-          href: saving-and-exporting-performance-tools-data.md
-        - name: Usare gli strumenti per la profilatura dalla riga di comando
-          href: using-the-profiling-tools-from-the-command-line.md
-          items:
-            - name: Specificare percorsi dei file di simboli dalla riga di comando
-              href: how-to-specify-symbol-file-locations-from-the-command-line.md
-            - name: Specificare il percorso degli strumenti da riga di comando degli strumenti di profilatura
-              href: specifying-the-path-to-profiling-tools-command-line-tools.md
-            - name: Usare i metodi di profilatura per raccogliere dati sulle prestazioni dalla riga di comando
-              href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
-            - name: Aggiungere dati di interazione tra livelli dalla riga di comando
-              href: adding-tier-interaction-data-from-the-command-line.md
-            - name: Profilatura di applicazioni autonome dalla riga di comando
-              href: command-line-profiling-of-stand-alone-applications.md
-              items:
-                - name: Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
-                  href: collecting-application-statistics-for-stand-alone-applications.md
-                  items:
-                    - name: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
-                    - name: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
-                    - name: Connettere il profiler a un'applicazione nativa autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
-                - name: Raccolta di dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
-                  href: collecting-detailed-timing-data-for-a-stand-alone-application.md
-                  items:
-                    - name: Instrumentare un componente autonomo .NET Framework e raccogliere dati di intervallo con il profiler tramite la riga di comando
-                      href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
-                    - name: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
-                      href: how-to-instrument-a-native-component-and-collect-timing-data.md
-                - name: Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
-                  href: collecting-concurrency-data-for-stand-alone-applications.md
-                  items:
-                    - name: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
-                    - name: Avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md
-                    - name: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati su conflitti tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
-                    - name: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
-                - name: Raccolta di dati di memoria di .NET Framework per applicazioni autonome tramite la riga di comando del profiler
-                  href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
-                  items:
-                    - name: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
-                      href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
-                    - name: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
-                    - name: Instrumentare un componente autonomo .NET Framework e raccogliere dati di memoria con il profiler tramite la riga di comando
-                      href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento'
-                  href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Profilatura tramite riga di comando di applicazioni Web ASP.NET
-              href: command-line-profiling-of-aspnet-web-applications.md
-              items:
-                - name: Profilatura rapida di sito Web con VSPerfASPNETCmd
-                  href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Raccolta di statistiche di applicazioni Web ASP.NET usando il metodo di campionamento del profiler tramite la riga di comando
-                  href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
-                  items:
-                    - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Raccolta di dati di intervallo dettagliati per un'applicazione Web ASP.NET usando il metodo di strumentazione del profiler tramite la riga di comando
-                  href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
-                  items:
-                    - name: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
-                      href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
-                    - name: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
-                      href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
-                - name: Raccolta di dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
-                  href: collecting-concurrency-data-for-an-aspnet-web-application.md
-                  items:
-                    - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Raccolta di dati di memoria da un'applicazione Web ASP.NET tramite la riga di comando del profiler
-                  href: collecting-memory-data-from-an-aspnet-web-application.md
-                  items:
-                    - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
-                    - name: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
-                      href: how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md
-                    - name: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
-                      href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
-                - name: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
-                  href: how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md
-            - name: Profilatura dei servizi tramite riga di comando
-              href: command-line-profiling-of-services.md
-              items:
-                - name: Raccolta delle statistiche dell'applicazione per i servizi tramite il metodo di campionamento del profiler
-                  href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
-                  items:
-                    - name: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
-                    - name: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Raccolta di dati di intervallo dettagliati per i servizi usando il metodo di strumentazione tramite la riga di comando del profiler
-                  href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
-                  items:
-                    - name: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
-                      href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
-                    - name: Instrumentare un servizio nativo e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
-                      href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
-                - name: Raccolta di dati di concorrenza per un servizio tramite la riga di comando del profiler
-                  href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
-                  items:
-                    - name: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
-                    - name: Connettere il profiler a un servizio nativo per raccogliere dati di concorrenza tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Raccolta di dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
-                  href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
-                  items:
-                    - name: Connettere il profiler a un servizio .NET per raccogliere dati di memoria tramite la riga di comando
-                      href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md
-                    - name: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
-                      href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
-            - name: Creazione di report del profiler tramite la riga di comando
-              href: creating-profiler-reports-from-the-command-line.md
-              items:
-                - name: Creazione di report di profilatura di base tramite la riga di comando
-                  href: creating-basic-profiling-reports-from-the-command-line.md
-                - name: Filtrare report tramite la riga di comando
-                  href: how-to-filter-reports-from-the-command-line.md
-                - name: Creare un report di confronto del profiler da un prompt dei comandi
-                  href: how-to-create-a-profiler-comparison-report-from-a-command-prompt.md
-                - name: Creare un report calltrace degli strumenti di profilatura
-                  href: how-to-create-a-profiling-tools-call-trace-report.md
-                - name: Creazione di file dei dati di profilatura portabili tramite la riga di comando
-                  href: creating-portable-profiling-data-files-from-the-command-line.md
-                - name: Creare un report ETW degli strumenti di profilatura
-                  href: how-to-create-a-profiling-tools-etw-report.md
-            - name: Installare il profiler autonomo
-              href: how-to-install-the-stand-alone-profiler.md
-            - name: Riferimenti agli strumenti di profilatura della riga di comando
-              href: command-line-profiling-tools-reference.md
-              items:
-                - name: VSInstr
-                  href: vsinstr.md
-                - name: Avvisi di VSInstr
-                  href: vsinstr-warnings.md
-                - name: VSPerf
-                  href: vsperf.md
-                - name: VSPerfCmd
-                  href: vsperfcmd.md
-                  items:
-                    - name: Inizia
-                      href: start.md
-                    - name: CrossSession
-                      href: crosssession.md
-                    - name: Output
-                      href: output.md
-                    - name: WinCounter
-                      href: wincounter.md
-                    - name: Counter
-                      href: counter.md
-                    - name: WaitStart
-                      href: waitstart.md
-                    - name: AutoMark
-                      href: automark.md
-                    - name: User (VSPerfCmd)
-                      href: user-vsperfcmd.md
-                    - name: QueryCounters
-                      href: querycounters.md
-                    - name: Events (VSPerfCmd)
-                      href: events-vsperfcmd.md
-                    - name: Arresta
-                      href: shutdown.md
-                    - name: GlobalOn e GlobalOff
-                      href: globalon-and-globaloff.md
-                    - name: ProcessOn e ProcessOff
-                      href: processon-and-processoff.md
-                    - name: ThreadOn e ThreadOff
-                      href: threadon-and-threadoff.md
-                    - name: GC (VSPerfCmd)
-                      href: gc-vsperfcmd.md
-                    - name: Launch
-                      href: launch.md
-                    - name: Attach
-                      href: attach.md
-                    - name: Args
-                      href: args.md
-                    - name: Contrassegno
-                      href: mark.md
-                    - name: Detach
-                      href: detach.md
-                    - name: PF
-                      href: pf.md
-                    - name: Sys (VSPerfCmd)
-                      href: sys-vsperfcmd.md
-                    - name: Timer
-                      href: timer.md
-                    - name: LineOff
-                      href: lineoff.md
-                    - name: Console
-                      href: console.md
-                    - name: Status
-                      href: status.md
-                    - name: TargetCLR
-                      href: targetclr.md
-                - name: VSPerfMon
-                  href: vsperfmon.md
-                - name: VSPerfReport
-                  href: vsperfreport.md
-                - name: VSPerfCLREnv
-                  href: vsperfclrenv.md
-                - name: VSPerfASPNetCmd
-                  href: vsperfaspnetcmd.md
-        - name: Profilatura su cluster HPC (High Performance Computing)
-          href: profiling-on-hpc-high-performance-computing-clusters.md
-        - name: API per strumenti di profilatura
-          href: profiling-tools-apis.md
-          items:
-            - name: Riferimenti per le API del profiler di Visual Studio (native)
-              href: visual-studio-profiler-api-reference-native.md
-              items:
-                - name: CommentMarkAtProfile
-                  href: commentmarkatprofile.md
-                - name: CommentMarkProfile
-                  href: commentmarkprofile.md
-                - name: MarkProfile
-                  href: markprofile.md
-                - name: NameProfile
-                  href: nameprofile.md
-                - name: ResumeProfile
-                  href: resumeprofile.md
-                - name: StartProfile
-                  href: startprofile.md
-                - name: StopProfile
-                  href: stopprofile.md
-                - name: SuspendProfile
-                  href: suspendprofile.md
-                - name: PROFILE_CURRENTID
-                  href: profile-currentid.md
-            - name: 'Procedura dettagliata: Uso delle API del profiler'
-              href: walkthrough-using-profiler-apis.md
-        - name: Profilatura di test di carico ASP.NET
-          href: profiling-aspnet-load-tests.md
-        - name: Risoluzione dei problemi relativi agli strumenti per le prestazioni
-          href: troubleshooting-performance-tools-issues.md
-    - name: Visualizzatore di concorrenze
-      href: concurrency-visualizer.md
+      - name: Guida per principianti al campionamento CPU
+        href: beginners-guide-to-cpu-sampling.md
+      - name: Raccogliere dati sulle prestazioni per un sito Web
+        href: how-to-collect-performance-data-for-a-web-site.md
+      - name: Creare manualmente sessioni di prestazioni
+        href: how-to-manually-create-performance-sessions.md
+    - name: Configurare le sessioni di prestazioni
+      href: configuring-performance-sessions.md
       items:
-        - name: Modelli comuni per applicazioni multithreading con comportamenti non validi
-          href: common-patterns-for-poorly-behaved-multithreaded-applications.md
-        - name: Strumento di spostamento di utilizzo
-          href: utilization-navigator.md
-        - name: Visualizzazione Uso
-          href: utilization-view.md
+      - name: Fare riferimento alle informazioni sui simboli di Windows
+        href: how-to-reference-windows-symbol-information.md
+      - name: Scegliere i metodi di raccolta
+        href: how-to-choose-collection-methods.md
+      - name: Raccogliere le statistiche sulle prestazioni tramite il campionamento
+        href: collecting-performance-statistics-by-using-sampling.md
+        items:
+        - name: Scegliere eventi di campionamento
+          href: how-to-choose-sampling-events.md
+        - name: Raccogliere i dati di campionamento a livello di riga
+          href: how-to-collect-line-level-sampling-data.md
+      - name: Raccogliere dati di durata e allocazione di memoria .NET
+        href: collecting-dotnet-memory-allocation-and-lifetime-data.md
+      - name: Raccogliere dati di intervallo dettagliati tramite la strumentazione
+        href: collecting-detailed-timing-data-by-using-instrumentation.md
+        items:
+        - name: Raccogliere i dati dei contatori CPU
+          href: how-to-collect-cpu-counter-data.md
+        - name: Rilocare file binari instrumentati
+          href: how-to-relocate-instrumented-binaries.md
+        - name: Specificare comandi pre- e post-strumentazione
+          href: how-to-specify-pre-and-post-instrument-commands.md
+        - name: Specificare opzioni di strumentazione aggiuntive
+          href: how-to-specify-additional-instrumentation-options.md
+      - name: Profilare codice JavaScript nelle pagine Web
+        href: how-to-profile-javascript-code-in-web-pages.md
+      - name: Raccogliere dati di concorrenza di thread e processi
+        href: collecting-thread-and-process-concurrency-data.md
+      - name: Raccogliere dati di interazione tra livelli
+        href: collecting-tier-interaction-data.md
+      - name: Raccogliere dati aggiuntivi relativi alle prestazioni
+        href: collecting-additional-performance-data.md
+        items:
+        - name: Raccogliere i dati dei contatori Windows
+          href: how-to-collect-windows-counter-data.md
+        - name: Raccogliere dati ETW (Event Tracing for Windows)
+          href: how-to-collect-event-tracing-for-windows-etw-data.md
+      - name: Serializzare le informazioni sui simboli
+        href: how-to-serialize-symbol-information.md
+      - name: Impostare le opzioni generali della sessione di prestazioni
+        href: setting-general-performance-session-options.md
+      - name: Impostare la sessione corrente
+        href: how-to-set-the-current-session.md
+      - name: Impostare le autorizzazioni
+        href: how-to-set-permissions.md
+      - name: Specificare il file binario da avviare
+        href: how-to-specify-the-binary-to-start.md
+      - name: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni
+        href: how-to-set-performance-data-file-name-options.md
+      - name: Specificare il runtime di .NET Framework
+        href: how-to-specify-the-dotnet-framework-runtime.md
+    - name: Controllare la raccolta dati
+      href: controlling-data-collection.md
+      items:
+      - name: Iniziare e terminare la raccolta dei dati sulle prestazioni
+        href: how-to-start-and-end-performance-data-collection.md
+      - name: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
+        href: how-to-attach-and-detach-performance-tools-to-running-processes.md
+      - name: Sospendere e riprendere la raccolta dei dati sulle prestazioni
+        href: how-to-pause-and-resume-performance-data-collection.md
+      - name: Limitare la strumentazione a specifiche DLL
+        href: how-to-limit-instrumentation-to-specific-dlls.md
+      - name: Limitare la strumentazione a specifiche funzioni
+        href: how-to-limit-instrumentation-to-specific-functions.md
+      - name: Escludere o includere funzioni brevi nella strumentazione
+        href: how-to-exclude-or-include-short-functions-from-instrumentation.md
+    - name: Analizzare i dati degli strumenti per le prestazioni
+      href: analyzing-performance-tools-data.md
+      items:
+      - name: Usare le regole per le prestazioni per analizzare dati
+        href: using-performance-rules-to-analyze-data.md
+        items:
+        - name: Visualizzare gli avvisi di prestazioni
+          href: how-to-view-performance-warnings.md
+        - name: Configurare le regole di prestazioni
+          href: how-to-configure-performance-rules.md
+        - name: Tabella di riferimento delle regole di prestazioni
+          href: performance-rules-reference.md
           items:
-            - name: Grafico Utilizzo CPU
-              href: cpu-utilization-graph.md
-            - name: Utilizzo CPU medio
-              href: average-cpu-utilization.md
-            - name: Controllo zoom (visualizzazione Utilizzo)
-              href: zoom-control-utilization-view.md
-            - name: Grafico dell'attività GPU
-              href: gpu-activity-graph.md
-            - name: Attività GPU (paging)
-              href: gpu-activity-paging.md
-            - name: Attività GPU (questo processo)
-              href: gpu-activity-this-process.md
-            - name: Attività GPU (altri processi)
-              href: gpu-activity-other-processes.md
-        - name: Visualizzazione Thread (prestazioni in parallelo)
-          href: threads-view-parallel-performance.md
+          - name: Regole di prestazioni in base all'ID
+            href: performance-rules-by-id.md
+          - name: Regole di prestazioni per l'utilizzo di .NET Framework
+            href: dotnet-framework-usage-performance-rules.md
+            items:
+            - name: 'DA0001: Utilizzare StringBuilder per le concatenazioni'
+              href: da0001-use-stringbuilder-for-concatenations.md
+            - name: 'DA0005: Raccolte GC2 frequenti'
+              href: da0005-frequent-gc2-collections.md
+            - name: "DA0006: Eseguire l'override di Equals() per i tipi di valore"
+              href: da0006-override-equals-parens-for-value-types.md
+            - name: 'DA0007: Evitare di usare eccezioni per il flusso di controllo'
+              href: da0007-avoid-using-exceptions-for-control-flow.md
+            - name: 'DA0010: Funzione GetHashCode dispendiosa'
+              href: da0010-expensive-gethashcode.md
+            - name: 'DA0011: Funzione CompareTo dispendiosa'
+              href: da0011-expensive-compareto.md
+            - name: 'DA0012: Utilizzo elevato della reflection'
+              href: da0012-significant-amount-of-reflection.md
+            - name: 'DA0013: Utilizzo elevato di String.Split o String.Substring'
+              href: da0013-high-usage-of-string-split-or-string-substring.md
+            - name: 'DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo'
+              href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
+            - name: 'DA0021: Frequenza elevata di Garbage Collection di generazione 1'
+              href: da0021-high-rate-of-gen-1-garbage-collections.md
+            - name: 'DA0022: Frequenza elevata di Garbage Collection di generazione 2'
+              href: da0022-high-rate-of-gen-2-garbage-collections.md
+            - name: 'DA0023: Tempo di CPU GC elevato'
+              href: da0023-high-gc-cpu-time.md
+            - name: 'DA0024: Tempo CPU GC eccessivo'
+              href: da0024-excessive-gc-cpu-time.md
+            - name: 'DA0038: Frequenza elevata di conflitti di blocco'
+              href: da0038-high-rate-of-lock-contentions.md
+            - name: 'DA0039: Frequenza molto elevata di conflitti di blocco'
+              href: da0039-very-high-rate-of-lock-contentions.md
+          - name: Regole di prestazioni relative a memoria e paging
+            href: memory-and-paging-performance-rules.md
+            items:
+            - name: 'DA0014: Frequenze molto elevate di paging di memoria attiva su disco'
+              href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
+            - name: 'DA0017: Frequenze elevate di paging di memoria attiva su disco'
+              href: da0017-high-rates-of-paging-active-memory-to-disk.md
+          - name: Regole di utilizzo degli strumenti di profilatura
+            href: profiling-tools-usage-rules.md
+            items:
+            - name: 'DA0002: VSPerfCorProf.dll mancante'
+              href: da0002-vsperfcorprof-dll-is-missing.md
+            - name: 'DA0003: Numero elevato di campioni del kernel'
+              href: da0003-many-kernel-samples.md
+            - name: 'DA0004: Utilizzo elevato del processore'
+              href: da0004-high-processor-usage.md
+            - name: 'DA0008: Numero ridotto di campioni raccolti'
+              href: da0008-few-samples-collected.md
+            - name: 'DA0026: Tempo di elaborazione CPU kernel eccessivo'
+              href: da0026-excessive-kernel-cpu-time-processing.md
+            - name: 'DA0029: Versione CLR non supportata'
+              href: da0029-unsupported-clr-version.md
+            - name: 'DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database'
+              href: da0030-gather-tier-interaction-measurements-for-database-projects.md
+          - name: Regole di prestazioni relative al monitoraggio delle risorse
+            href: resource-monitoring-performance-rules.md
+            items:
+            - name: 'DA0501: Consumo medio CPU del processo sottoposto a profilatura'
+              href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
+            - name: 'DA0502: Consumo massimo CPU del processo sottoposto a profilatura'
+              href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
+            - name: 'DA0503: Working set medio in byte del processo sottoposto a profilatura'
+              href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
+            - name: 'DA0504: Working set massimo in byte del processo sottoposto a profilatura'
+              href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
+            - name: 'DA0505: Byte privati medi allocati per il processo sottoposto a profilatura'
+              href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
+            - name: 'DA0506: Byte privati massimi allocati per il processo sottoposto a profilatura'
+              href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
+      - name: Visualizzazioni dei rapporti di prestazioni
+        href: performance-report-views.md
+        items:
+        - name: Informazioni generali sul rapporto di prestazioni
+          href: performance-report-overview.md
+        - name: Visualizzazioni dei dati comuni
+          href: common-data-views.md
           items:
-            - name: Report del profilo di durata del blocco
-              href: blocking-time-profile-report.md
-            - name: Canali (visualizzazione Thread)
-              href: channels-threads-view.md
-            - name: Copia selezione
-              href: copy-selection.md
-            - name: Scheda Corrente
-              href: current-tab.md
-            - name: Report delle operazioni su disco (visualizzazione Thread)
-              href: disk-operations-report-threads-view.md
-            - name: Segmento della cronologia vuoto
-              href: empty-timeline-segment.md
-            - name: Report del profilo di esecuzione
-              href: execution-profile-report.md
-            - name: Tempo di esecuzione (visualizzazione Thread)
-              href: execution-time-threads-view.md
-            - name: Pulsante Esporta (visualizzatore di concorrenze)
-              href: export-button-concurrency-visualizer.md
-            - name: Tempo di I-O (visualizzazione Thread)
-              href: i-o-time-threads-view.md
-            - name: Just My Code (Visualizzazione thread)
-              href: just-my-code-threads-view.md
-            - name: Gestione dei canali
-              href: manage-channels.md
-            - name: Rapporto marcatori
-              href: markers-report.md
-            - name: Modalità misurazione attiva/non attiva
-              href: measure-mode-on-off.md
-            - name: Tempo di gestione della memoria
-              href: memory-management-time.md
-            - name: Più categorie presenti
-              href: multiple-categories-are-present.md
-            - name: Nessuna attività del disco da mostrare (Visualizzazione thread)
-              href: no-disk-activity-to-show-threads-view.md
-            - name: Nessuna attività di thread da mostrare (Visualizzazione thread)
-              href: no-thread-activity-to-show-threads-view.md
-            - name: Percentuale di riduzione del rumore
-              href: noise-reduction-percentage.md
-            - name: Report di riepilogo per thread
-              href: per-thread-summary-report.md
-            - name: Tempo di annullamento
-              href: preemption-time.md
-            - name: Rapporto basato sull'intervallo di tempo visibile
-              href: report-based-on-visible-time-range.md
-            - name: Durata della sospensione
-              href: sleep-time.md
-            - name: Tempo di sincronizzazione
-              href: synchronization-time.md
-            - name: Connettore pronto per il thread
-              href: thread-ready-connector.md
-            - name: Punto di inserimento della cronologia
-              href: timeline-caret.md
-            - name: Tempo di elaborazione dell'interfaccia utente
-              href: ui-processing-time.md
-            - name: Stack di sblocco
-              href: unblocking-stack.md
-            - name: Profilo cronologia visibile
-              href: visible-timeline-profile.md
-            - name: Controllo zoom (visualizzazione Thread)
-              href: zoom-control-threads-view.md
-        - name: Visualizzazione Core
-          href: cores-view.md
+          - name: Visualizzazione Processo
+            href: process-view.md
+          - name: Visualizzazione Contrassegni
+            href: marks-view.md
+          - name: Visualizzazione Riepilogo
+            href: summary-view.md
+          - name: Visualizzazione Albero delle chiamate
+            href: call-tree-view.md
+          - name: Visualizzazione Chiamante/chiamato
+            href: caller-callee-view.md
+          - name: Visualizzazione Moduli
+            href: modules-view.md
+          - name: Visualizzazione Funzioni
+            href: functions-view.md
+          - name: Visualizzazione Righe
+            href: lines-view.md
+          - name: Visualizzazione Puntatori all'istruzione
+            href: instruction-pointers-ips-view.md
+          - name: Visualizzazione Dettagli funzione
+            href: function-details-view.md
+          - name: Rapporto Traccia eventi per Windows (ETW)
+            href: event-tracing-for-windows-etw-report.md
+        - name: Visualizzazioni dei dati del metodo di campionamento del profiler
+          href: profiler-sampling-method-data-views.md
           items:
-            - name: Legenda della visualizzazione Core
-              href: cores-view-legend.md
-            - name: Core logici nella visualizzazione Core
-              href: cores-view-logical-cores.md
-            - name: Sequenza temporale delle visualizzazioni dei core
-              href: cores-view-timeline.md
-            - name: Strumento di zoom della visualizzazione Core
-              href: cores-view-zoom-tool.md
-        - name: Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
-          href: advanced-settings-dialog-box-concurrency-visualizer.md
-        - name: Marcatori del visualizzatore di concorrenza
-          href: concurrency-visualizer-markers.md
+          - name: 'Visualizzazione Riepilogo: dati di campionamento'
+            href: summary-view-sampling-data.md
+          - name: 'Visualizzazione Albero delle chiamate: dati di campionamento'
+            href: call-tree-view-sampling-data.md
+          - name: 'Visualizzazione Moduli: dati di campionamento'
+            href: modules-view-sampling-data.md
+          - name: 'Visualizzazione Chiamante/chiamato: dati di campionamento'
+            href: caller-callee-view-sampling-data.md
+          - name: 'Visualizzazione Funzioni: dati di campionamento'
+            href: functions-view-sampling-data.md
+          - name: 'Visualizzazione Righe: dati di campionamento'
+            href: lines-view-sampling-data.md
+          - name: "Visualizzazione Puntatore all'istruzione: dati di campionamento"
+            href: instruction-pointers-ips-view-sampling-data.md
+        - name: Visualizzazioni dei dati del metodo di strumentazione
+          href: instrumentation-method-data-views.md
           items:
-            - name: Marcatori di flag
-              href: flag-markers.md
-            - name: Marcatori di messaggi
-              href: message-markers.md
-            - name: Marcatori di span
-              href: span-markers.md
-            - name: Visualizzazione di eventi EventSource come marcatori
-              href: visualizing-eventsource-events-as-markers.md
-        - name: SDK del visualizzatore di concorrenza
-          href: concurrency-visualizer-sdk.md
+          - name: 'Visualizzazione Riepilogo: dati di strumentazione'
+            href: summary-view-instrumentation-data.md
+          - name: 'Visualizzazione Albero delle chiamate: dati di strumentazione'
+            href: call-tree-view-instrumentation-data.md
+          - name: Visualizzazione Moduli - dati di strumentazione
+            href: modules-view-instrumentation-data.md
+          - name: 'Visualizzazione Chiamante/chiamato: dati di strumentazione'
+            href: caller-callee-view-instrumentation-data.md
+          - name: 'Visualizzazione Funzioni: dati di strumentazione'
+            href: functions-view-instrumentation-data.md
+        - name: Visualizzazioni dei dati di memoria .NET
+          href: dotnet-memory-data-views.md
           items:
-            - name: Usare l'SDK dei marcatori del visualizzatore di concorrenza
-              href: how-to-use-the-concurrency-visualizer-markers-sdk.md
-            - name: riferimento alla libreria C++
-              href: cpp-library-reference.md
+          - name: 'Visualizzazione Riepilogo: dati di memoria .NET'
+            href: summary-view-dotnet-memory-data.md
+          - name: Visualizzazione Allocazioni per la memoria .NET
+            href: dotnet-memory-allocations-view.md
+          - name: Visualizzazione Durata oggetti
+            href: object-lifetime-view.md
+          - name: 'Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET'
+            href: call-tree-view-dotnet-memory-sampling-data.md
+          - name: 'Visualizzazione Moduli: dati di campionamento di memoria .NET'
+            href: modules-view-dotnet-memory-sampling-data.md
+          - name: 'Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET'
+            href: caller-callee-view-dotnet-memory-sampling-data.md
+          - name: 'Visualizzazione Funzioni: dati di campionamento di memoria .NET'
+            href: functions-view-dotnet-memory-sampling-data.md
+          - name: 'Visualizzazione Righe: dati di campionamento di memoria .NET'
+            href: lines-view-dotnet-memory-sampling-data.md
+          - name: "Visualizzazione dei puntatori all'istruzione (IP, Instruction Pointer): dati di campionamento di memoria .NET"
+            href: instruction-pointers-ips-view-dotnet-memory-sampling-data.md
+          - name: 'Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET'
+            href: call-tree-view-dotnet-memory-instrumentation-data.md
+          - name: 'Visualizzazione Moduli: dati di strumentazione di memoria .NET'
+            href: modules-view-dotnet-memory-instrumentation-data.md
+          - name: 'Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET'
+            href: caller-callee-view-net-memory-instrumentation-data.md
+          - name: 'Visualizzazione Funzioni: dati di strumentazione di memoria .NET'
+            href: functions-view-dotnet-memory-instrumentation-data.md
+        - name: Visualizzazioni dei dati su conflitti tra risorse
+          href: resource-contention-data-views.md
+          items:
+          - name: 'Visualizzazione Riepilogo: visualizzazione dei conflitti tra le risorse'
+            href: summary-view-resource-contention-view.md
+          - name: 'Visualizzazione Albero delle chiamate: dati su conflitti'
+            href: call-tree-view-contention-data.md
+          - name: 'Visualizzazione Moduli: dati sui conflitti'
+            href: modules-view-contention-data.md
+          - name: 'Visualizzazione Chiamante/chiamato: dati sui conflitti'
+            href: caller-callee-view-contention-data.md
+          - name: 'Visualizzazione Funzioni: dati sui conflitti'
+            href: functions-view-contention-data.md
+          - name: 'Visualizzazione Dettagli risorsa: dati sui conflitti'
+            href: resource-details-view-contention-data.md
+          - name: 'Visualizzazione Dettagli thread: dati sui conflitti'
+            href: thread-details-view-contention-data.md
+          - name: 'Visualizzazione dei conflitti di risorse: dati sui conflitti'
+            href: resource-contentions-view-contention-data.md
+          - name: 'Visualizzazione Processo: dati sui conflitti'
+            href: process-view-contention-data.md
+          - name: 'Visualizzazione Righe: dati sui conflitti'
+            href: lines-view-contention-data.md
+          - name: "Visualizzazione Puntatore all'istruzione: dati sui conflitti"
+            href: instruction-pointers-ips-view-contention-data.md
+        - name: Visualizzazioni Interazioni tra livelli
+          href: tier-interaction-views.md
+          items:
+          - name: Interazioni tra livelli (visualizzazione)
+            href: tier-interactions-view.md
+      - name: Personalizzare le visualizzazioni dei report sugli strumenti per le prestazioni
+        href: customizing-performance-tools-report-views.md
+        items:
+        - name: Personalizzare colonne della visualizzazione report
+          href: how-to-customize-report-view-columns.md
+        - name: Filtrare visualizzazioni rapporto
+          href: filtering-report-views.md
+        - name: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo
+          href: how-to-filter-report-views-from-the-summary-timeline.md
+        - name: Filtro delle visualizzazioni dei rapporti di prestazioni
+          href: performance-report-view-filter.md
+        - name: Configurare la riduzione del rumore nelle visualizzazioni report
+          href: how-to-configure-noise-reduction-in-report-views.md
+        - name: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code
+          href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
+    - name: Confrontare i file di dati delle prestazioni
+      href: comparing-performance-data-files.md
+      items:
+      - name: Confrontare i file di dati delle prestazioni
+        href: how-to-compare-performance-data-files.md
+    - name: Salvare le informazioni sui simboli con i file di dati di prestazioni
+      href: saving-symbol-information-with-performance-data-files.md
+    - name: Salvare ed esportare i dati degli strumenti per le prestazioni
+      href: saving-and-exporting-performance-tools-data.md
+    - name: Usare gli strumenti per la profilatura dalla riga di comando
+      href: using-the-profiling-tools-from-the-command-line.md
+      items:
+      - name: Specificare percorsi dei file di simboli dalla riga di comando
+        href: how-to-specify-symbol-file-locations-from-the-command-line.md
+      - name: Specificare il percorso degli strumenti da riga di comando degli strumenti di profilatura
+        href: specifying-the-path-to-profiling-tools-command-line-tools.md
+      - name: Usare i metodi di profilatura per raccogliere dati sulle prestazioni dalla riga di comando
+        href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
+      - name: Aggiungere dati di interazione tra livelli dalla riga di comando
+        href: adding-tier-interaction-data-from-the-command-line.md
+      - name: Profilatura di applicazioni autonome dalla riga di comando
+        href: command-line-profiling-of-stand-alone-applications.md
+        items:
+        - name: Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
+          href: collecting-application-statistics-for-stand-alone-applications.md
+          items:
+          - name: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione tramite la riga di comando
+            href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
+          - name: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
+          - name: Connettere il profiler a un'applicazione nativa autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
+        - name: Raccolta di dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
+          href: collecting-detailed-timing-data-for-a-stand-alone-application.md
+          items:
+          - name: Instrumentare un componente autonomo .NET Framework e raccogliere dati di intervallo con il profiler tramite la riga di comando
+            href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
+          - name: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
+            href: how-to-instrument-a-native-component-and-collect-timing-data.md
+        - name: Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
+          href: collecting-concurrency-data-for-stand-alone-applications.md
+          items:
+          - name: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
+            href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
+          - name: Avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
+            href: how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md
+          - name: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati su conflitti tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
+          - name: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
+        - name: Raccolta di dati di memoria di .NET Framework per applicazioni autonome tramite la riga di comando del profiler
+          href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
+          items:
+          - name: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
+            href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
+          - name: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
+          - name: Instrumentare un componente autonomo .NET Framework e raccogliere dati di memoria con il profiler tramite la riga di comando
+            href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
+        - name: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento'
+          href: walkthrough-command-line-profiling-using-sampling.md
+      - name: Profilatura tramite riga di comando di applicazioni Web ASP.NET
+        href: command-line-profiling-of-aspnet-web-applications.md
+        items:
+        - name: Profilatura rapida di sito Web con VSPerfASPNETCmd
+          href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
+        - name: Raccolta di statistiche di applicazioni Web ASP.NET usando il metodo di campionamento del profiler tramite la riga di comando
+          href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
+          items:
+          - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere statistiche dell'applicazione tramite la riga di comando
+            href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
+        - name: Raccolta di dati di intervallo dettagliati per un'applicazione Web ASP.NET usando il metodo di strumentazione del profiler tramite la riga di comando
+          href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
+          items:
+          - name: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
+            href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
+          - name: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
+            href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
+        - name: Raccolta di dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
+          href: collecting-concurrency-data-for-an-aspnet-web-application.md
+          items:
+          - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
+            href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
+        - name: Raccolta di dati di memoria da un'applicazione Web ASP.NET tramite la riga di comando del profiler
+          href: collecting-memory-data-from-an-aspnet-web-application.md
+          items:
+          - name: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
+            href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
+          - name: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
+            href: how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md
+          - name: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
+            href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
+        - name: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
+          href: how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md
+      - name: Profilatura dei servizi tramite riga di comando
+        href: command-line-profiling-of-services.md
+        items:
+        - name: Raccolta delle statistiche dell'applicazione per i servizi tramite il metodo di campionamento del profiler
+          href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
+          items:
+          - name: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
+          - name: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
+        - name: Raccolta di dati di intervallo dettagliati per i servizi usando il metodo di strumentazione tramite la riga di comando del profiler
+          href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
+          items:
+          - name: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
+            href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
+          - name: Instrumentare un servizio nativo e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
+            href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
+        - name: Raccolta di dati di concorrenza per un servizio tramite la riga di comando del profiler
+          href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
+          items:
+          - name: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
+          - name: Connettere il profiler a un servizio nativo per raccogliere dati di concorrenza tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
+        - name: Raccolta di dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
+          href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
+          items:
+          - name: Connettere il profiler a un servizio .NET per raccogliere dati di memoria tramite la riga di comando
+            href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md
+          - name: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
+            href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
+      - name: Creazione di report del profiler tramite la riga di comando
+        href: creating-profiler-reports-from-the-command-line.md
+        items:
+        - name: Creazione di report di profilatura di base tramite la riga di comando
+          href: creating-basic-profiling-reports-from-the-command-line.md
+        - name: Filtrare report tramite la riga di comando
+          href: how-to-filter-reports-from-the-command-line.md
+        - name: Creare un report di confronto del profiler da un prompt dei comandi
+          href: how-to-create-a-profiler-comparison-report-from-a-command-prompt.md
+        - name: Creare un report calltrace degli strumenti di profilatura
+          href: how-to-create-a-profiling-tools-call-trace-report.md
+        - name: Creazione di file dei dati di profilatura portabili tramite la riga di comando
+          href: creating-portable-profiling-data-files-from-the-command-line.md
+        - name: Creare un report ETW degli strumenti di profilatura
+          href: how-to-create-a-profiling-tools-etw-report.md
+      - name: Installare il profiler autonomo
+        href: how-to-install-the-stand-alone-profiler.md
+      - name: Riferimenti agli strumenti di profilatura della riga di comando
+        href: command-line-profiling-tools-reference.md
+        items:
+        - name: VSInstr
+          href: vsinstr.md
+        - name: Avvisi di VSInstr
+          href: vsinstr-warnings.md
+        - name: VSPerf
+          href: vsperf.md
+        - name: VSPerfCmd
+          href: vsperfcmd.md
+          items:
+          - name: Inizia
+            href: start.md
+          - name: CrossSession
+            href: crosssession.md
+          - name: Output
+            href: output.md
+          - name: WinCounter
+            href: wincounter.md
+          - name: Counter
+            href: counter.md
+          - name: WaitStart
+            href: waitstart.md
+          - name: AutoMark
+            href: automark.md
+          - name: User (VSPerfCmd)
+            href: user-vsperfcmd.md
+          - name: QueryCounters
+            href: querycounters.md
+          - name: Events (VSPerfCmd)
+            href: events-vsperfcmd.md
+          - name: Arresta
+            href: shutdown.md
+          - name: GlobalOn e GlobalOff
+            href: globalon-and-globaloff.md
+          - name: ProcessOn e ProcessOff
+            href: processon-and-processoff.md
+          - name: ThreadOn e ThreadOff
+            href: threadon-and-threadoff.md
+          - name: GC (VSPerfCmd)
+            href: gc-vsperfcmd.md
+          - name: Launch
+            href: launch.md
+          - name: Attach
+            href: attach.md
+          - name: Args
+            href: args.md
+          - name: Contrassegno
+            href: mark.md
+          - name: Detach
+            href: detach.md
+          - name: PF
+            href: pf.md
+          - name: Sys (VSPerfCmd)
+            href: sys-vsperfcmd.md
+          - name: Timer
+            href: timer.md
+          - name: LineOff
+            href: lineoff.md
+          - name: Console
+            href: console.md
+          - name: Status
+            href: status.md
+          - name: TargetCLR
+            href: targetclr.md
+        - name: VSPerfMon
+          href: vsperfmon.md
+        - name: VSPerfReport
+          href: vsperfreport.md
+        - name: VSPerfCLREnv
+          href: vsperfclrenv.md
+        - name: VSPerfASPNetCmd
+          href: vsperfaspnetcmd.md
+    - name: Profilatura su cluster HPC (High Performance Computing)
+      href: profiling-on-hpc-high-performance-computing-clusters.md
+    - name: API per strumenti di profilatura
+      href: profiling-tools-apis.md
+      items:
+      - name: Riferimenti per le API del profiler di Visual Studio (native)
+        href: visual-studio-profiler-api-reference-native.md
+        items:
+        - name: CommentMarkAtProfile
+          href: commentmarkatprofile.md
+        - name: CommentMarkProfile
+          href: commentmarkprofile.md
+        - name: MarkProfile
+          href: markprofile.md
+        - name: NameProfile
+          href: nameprofile.md
+        - name: ResumeProfile
+          href: resumeprofile.md
+        - name: StartProfile
+          href: startprofile.md
+        - name: StopProfile
+          href: stopprofile.md
+        - name: SuspendProfile
+          href: suspendprofile.md
+        - name: PROFILE_CURRENTID
+          href: profile-currentid.md
+      - name: 'Procedura dettagliata: Uso delle API del profiler'
+        href: walkthrough-using-profiler-apis.md
+    - name: Profilatura di test di carico ASP.NET
+      href: profiling-aspnet-load-tests.md
+    - name: Risoluzione dei problemi relativi agli strumenti per le prestazioni
+      href: troubleshooting-performance-tools-issues.md
+  - name: Visualizzatore di concorrenze
+    href: concurrency-visualizer.md
+    items:
+    - name: Modelli comuni per applicazioni multithreading con comportamenti non validi
+      href: common-patterns-for-poorly-behaved-multithreaded-applications.md
+    - name: Strumento di spostamento di utilizzo
+      href: utilization-navigator.md
+    - name: Visualizzazione Uso
+      href: utilization-view.md
+      items:
+      - name: Grafico Utilizzo CPU
+        href: cpu-utilization-graph.md
+      - name: Utilizzo CPU medio
+        href: average-cpu-utilization.md
+      - name: Controllo zoom (visualizzazione Utilizzo)
+        href: zoom-control-utilization-view.md
+      - name: Grafico dell'attività GPU
+        href: gpu-activity-graph.md
+      - name: Attività GPU (paging)
+        href: gpu-activity-paging.md
+      - name: Attività GPU (questo processo)
+        href: gpu-activity-this-process.md
+      - name: Attività GPU (altri processi)
+        href: gpu-activity-other-processes.md
+    - name: Visualizzazione Thread (prestazioni in parallelo)
+      href: threads-view-parallel-performance.md
+      items:
+      - name: Report del profilo di durata del blocco
+        href: blocking-time-profile-report.md
+      - name: Canali (visualizzazione Thread)
+        href: channels-threads-view.md
+      - name: Copia selezione
+        href: copy-selection.md
+      - name: Scheda Corrente
+        href: current-tab.md
+      - name: Report delle operazioni su disco (visualizzazione Thread)
+        href: disk-operations-report-threads-view.md
+      - name: Segmento della cronologia vuoto
+        href: empty-timeline-segment.md
+      - name: Report del profilo di esecuzione
+        href: execution-profile-report.md
+      - name: Tempo di esecuzione (visualizzazione Thread)
+        href: execution-time-threads-view.md
+      - name: Pulsante Esporta (visualizzatore di concorrenze)
+        href: export-button-concurrency-visualizer.md
+      - name: Tempo di I-O (visualizzazione Thread)
+        href: i-o-time-threads-view.md
+      - name: Just My Code (Visualizzazione thread)
+        href: just-my-code-threads-view.md
+      - name: Gestione dei canali
+        href: manage-channels.md
+      - name: Rapporto marcatori
+        href: markers-report.md
+      - name: Modalità misurazione attiva/non attiva
+        href: measure-mode-on-off.md
+      - name: Tempo di gestione della memoria
+        href: memory-management-time.md
+      - name: Più categorie presenti
+        href: multiple-categories-are-present.md
+      - name: Nessuna attività del disco da mostrare (Visualizzazione thread)
+        href: no-disk-activity-to-show-threads-view.md
+      - name: Nessuna attività di thread da mostrare (Visualizzazione thread)
+        href: no-thread-activity-to-show-threads-view.md
+      - name: Percentuale di riduzione del rumore
+        href: noise-reduction-percentage.md
+      - name: Report di riepilogo per thread
+        href: per-thread-summary-report.md
+      - name: Tempo di annullamento
+        href: preemption-time.md
+      - name: Rapporto basato sull'intervallo di tempo visibile
+        href: report-based-on-visible-time-range.md
+      - name: Durata della sospensione
+        href: sleep-time.md
+      - name: Tempo di sincronizzazione
+        href: synchronization-time.md
+      - name: Connettore pronto per il thread
+        href: thread-ready-connector.md
+      - name: Punto di inserimento della cronologia
+        href: timeline-caret.md
+      - name: Tempo di elaborazione dell'interfaccia utente
+        href: ui-processing-time.md
+      - name: Stack di sblocco
+        href: unblocking-stack.md
+      - name: Profilo cronologia visibile
+        href: visible-timeline-profile.md
+      - name: Controllo zoom (visualizzazione Thread)
+        href: zoom-control-threads-view.md
+    - name: Visualizzazione Core
+      href: cores-view.md
+      items:
+      - name: Legenda della visualizzazione Core
+        href: cores-view-legend.md
+      - name: Core logici nella visualizzazione Core
+        href: cores-view-logical-cores.md
+      - name: Sequenza temporale delle visualizzazioni dei core
+        href: cores-view-timeline.md
+      - name: Strumento di zoom della visualizzazione Core
+        href: cores-view-zoom-tool.md
+    - name: Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
+      href: advanced-settings-dialog-box-concurrency-visualizer.md
+    - name: Marcatori del visualizzatore di concorrenza
+      href: concurrency-visualizer-markers.md
+      items:
+      - name: Marcatori di flag
+        href: flag-markers.md
+      - name: Marcatori di messaggi
+        href: message-markers.md
+      - name: Marcatori di span
+        href: span-markers.md
+      - name: Visualizzazione di eventi EventSource come marcatori
+        href: visualizing-eventsource-events-as-markers.md
+    - name: SDK del visualizzatore di concorrenza
+      href: concurrency-visualizer-sdk.md
+      items:
+      - name: Usare l'SDK dei marcatori del visualizzatore di concorrenza
+        href: how-to-use-the-concurrency-visualizer-markers-sdk.md
+      - name: riferimento alla libreria C++
+        href: cpp-library-reference.md
+        items:
+        - name: Spazio dei nomi Concurrency (visualizzatore di concorrenza)
+          href: concurrency-namespace-concurrency-visualizer.md
+          items:
+          - name: Spazio dei nomi diagnostic
+            href: diagnostic-namespace.md
+            items:
+            - name: Classe span
+              href: span-class.md
               items:
-                - name: Spazio dei nomi Concurrency (visualizzatore di concorrenza)
-                  href: concurrency-namespace-concurrency-visualizer.md
-                  items:
-                    - name: Spazio dei nomi diagnostic
-                      href: diagnostic-namespace.md
-                      items:
-                        - name: Classe span
-                          href: span-class.md
-                          items:
-                            - name: 'Distruttore span::~span'
-                              href: span-tilde-span-destructor.md
-                            - name: 'Costruttore span::span'
-                              href: span-span-constructor.md
-                        - name: Classe marker_series
-                          href: marker-series-class.md
-                          items:
-                            - name: 'Distruttore marker_series::~marker_series'
-                              href: marker-series-tilde-marker-series-destructor.md
-                            - name: 'Metodo marker_series::is_enabled'
-                              href: marker-series-is-enabled-method.md
-                            - name: 'Costruttore marker_series::marker_series'
-                              href: marker-series-marker-series-constructor.md
-                            - name: 'Metodo marker_series::write_alert'
-                              href: marker-series-write-alert-method.md
-                            - name: 'Metodo marker_series::write_flag'
-                              href: marker-series-write-flag-method.md
-                            - name: 'Metodo marker_series::write_message'
-                              href: marker-series-write-message-method.md
-                        - name: Enumerazione marker_importance
-                          href: marker-importance-enumeration.md
-            - name: riferimento alla libreria C
-              href: c-library-reference.md
+              - name: Distruttore span::~span
+                href: span-tilde-span-destructor.md
+              - name: Costruttore span::span
+                href: span-span-constructor.md
+            - name: Classe marker_series
+              href: marker-series-class.md
               items:
-                - name: Funzione CvCreateDefaultMarkerSeriesOfDefaultProvider
-                  href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md
-                - name: Funzione CvCreateMarkerSeries
-                  href: cvcreatemarkerseries-function.md
-                - name: Funzione CvCreateMarkerSeriesWithCodePageA
-                  href: cvcreatemarkerserieswithcodepagea-function.md
-                - name: Funzione CvEnterSpan
-                  href: cventerspan-function.md
-                - name: Funzione CvInitProvider
-                  href: cvinitprovider-function.md
-                - name: Funzione CvIsEnabled
-                  href: cvisenabled-function.md
-                - name: Funzione CvLeaveSpan
-                  href: cvleavespan-function.md
-                - name: Funzione CvReleaseMarkerSeries
-                  href: cvreleasemarkerseries-function.md
-                - name: Funzione CvReleaseProvider
-                  href: cvreleaseprovider-function.md
-                - name: Funzione CvWriteAlert
-                  href: cvwritealert-function.md
-                - name: Funzione CvWriteFlag
-                  href: cvwriteflag-function.md
-                - name: Funzione CvWriteMessage
-                  href: cvwritemessage-function.md
-        - name: Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
-          href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
-    - name: Analizzare il consumo di energia nelle app dello Store
-      href: analyze-energy-use-in-store-apps.md
+              - name: Distruttore marker_series::~marker_series
+                href: marker-series-tilde-marker-series-destructor.md
+              - name: Metodo marker_series::is_enabled
+                href: marker-series-is-enabled-method.md
+              - name: Costruttore marker_series::marker_series
+                href: marker-series-marker-series-constructor.md
+              - name: Metodo marker_series::write_alert
+                href: marker-series-write-alert-method.md
+              - name: Metodo marker_series::write_flag
+                href: marker-series-write-flag-method.md
+              - name: Metodo marker_series::write_message
+                href: marker-series-write-message-method.md
+            - name: Enumerazione marker_importance
+              href: marker-importance-enumeration.md
+      - name: riferimento alla libreria C
+        href: c-library-reference.md
+        items:
+        - name: Funzione CvCreateDefaultMarkerSeriesOfDefaultProvider
+          href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md
+        - name: Funzione CvCreateMarkerSeries
+          href: cvcreatemarkerseries-function.md
+        - name: Funzione CvCreateMarkerSeriesWithCodePageA
+          href: cvcreatemarkerserieswithcodepagea-function.md
+        - name: Funzione CvEnterSpan
+          href: cventerspan-function.md
+        - name: Funzione CvInitProvider
+          href: cvinitprovider-function.md
+        - name: Funzione CvIsEnabled
+          href: cvisenabled-function.md
+        - name: Funzione CvLeaveSpan
+          href: cvleavespan-function.md
+        - name: Funzione CvReleaseMarkerSeries
+          href: cvreleasemarkerseries-function.md
+        - name: Funzione CvReleaseProvider
+          href: cvreleaseprovider-function.md
+        - name: Funzione CvWriteAlert
+          href: cvwritealert-function.md
+        - name: Funzione CvWriteFlag
+          href: cvwriteflag-function.md
+        - name: Funzione CvWriteMessage
+          href: cvwritemessage-function.md
+    - name: Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
+      href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
+  - name: Analizzare il consumo di energia nelle app dello Store
+    href: analyze-energy-use-in-store-apps.md
 - name: Risorse
   items:
-    - name: Novità negli strumenti di profilatura
-      href: what-s-new-in-profiling-tools.md
+  - name: Novità negli strumenti di profilatura
+    href: what-s-new-in-profiling-tools.md
+ms.openlocfilehash: bb8084e155ff87a596fdb5374cb3e67f86243f3d
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007371"
