@@ -3,7 +3,7 @@ items:
   href: improve-code-quality.md
 - name: Scenari di test
   href: developer-testing-scenarios.md
-- name: Testing unità
+- name: Unit test
   href: unit-test-your-code.md
   items:
   - name: Introduzione
@@ -54,7 +54,7 @@ items:
     items:
     - name: 'Procedura dettagliata: Creare ed eseguire unit test per codice gestito'
       href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-    - name: Guida introduttiva allo sviluppo basato su test con Esplora test
+    - name: 'Guida introduttiva: Sviluppo basato su test con Esplora test'
       href: quick-start-test-driven-development-with-test-explorer.md
     - name: Usare membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
       href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
@@ -103,7 +103,7 @@ items:
       href: unit-testing-a-visual-cpp-dll-for-store-apps.md
     - name: Testing unità di codice Visual C# in un'app UWP
       href: unit-testing-visual-csharp-code-in-a-store-app.md
-    - name: 'Procedura dettagliata: Creare ed eseguire unit test per le app UWP'
+    - name: 'Procedura dettagliata: Creare ed eseguire unit test per app della piattaforma UWP'
       href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
   - name: Usare la funzionalità code coverage per determinare la quantità di codice testato
     href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
@@ -121,7 +121,7 @@ items:
     href: live-unit-testing-whats-new.md
   - name: Introduzione a Live Unit Testing
     href: live-unit-testing-start.md
-  - name: Usare Live Unit Testing in Visual Studio 2017 Enterprise Edition
+  - name: Usare Live Unit Testing nell'edizione Enterprise
     href: live-unit-testing.md
   - name: Domande frequenti su Live Unit Testing
     href: live-unit-testing-faq.md
@@ -370,9 +370,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: Installare agenti di test e test controller
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621513"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223793"
