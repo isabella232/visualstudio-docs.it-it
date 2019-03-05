@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719275"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324013"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedura: Usare il log attività
 I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzionalità è particolarmente utile per il debug di pacchetti VSPackage negli ambienti delle vendite al dettaglio.
@@ -46,7 +46,9 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
 
 1. Eseguire Visual Studio con il [/log](../ide/reference/log-devenv-exe.md) opzione della riga di comando per scrivere Activitylog sul disco durante la sessione.
 
-2. Dopo la chiusura di Visual Studio, trovare il log attività nella sottocartella per i dati di Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+2. Dopo la chiusura di Visual Studio, è possibile trovare il log attività nella sottocartella per i dati di Visual Studio:
+
+   <em>*% AppData %</em>\Microsoft\VisualStudio\\\<versione > \ActivityLog.xml*.
 
 3. Aprire il log attività con qualsiasi editor di testo. Di seguito è una voce tipica:
 
@@ -55,11 +57,13 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
    ```
 
 ## <a name="robust-programming"></a>Programmazione efficiente
- Poiché il log attività è un servizio, il log attività non è disponibile nel costruttore di VSPackage.
 
- Prima di scriverci dentro, si dovrebbe ottenere il log attività. Non memorizzare nella cache o salvare il log attività per un uso futuro.
+Poiché il log attività è un servizio, il log attività non è disponibile nel costruttore di VSPackage.
+
+Prima di scriverci dentro, si dovrebbe ottenere il log attività. Non memorizzare nella cache o salvare il log attività per un uso futuro.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
