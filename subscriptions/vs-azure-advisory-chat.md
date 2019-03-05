@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni sul vantaggio di Azure Advisory Chat incluso nelle sottoscrizioni di Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380035"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841013"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -57,7 +55,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>D:  qual è la differenza tra Azure Advisory Chat e Azure Advisor?
--  A:  Azure Advisory Chat è un servizio di chat in tempo reale che offre assistenza per domande relative ad Azure. [Azure Advisor](/azure/advisor/advisor-overview) è un consulente nel cloud personalizzato che offre supporto per adottare le procedure ottimali per l'ottimizzazione delle distribuzioni di Azure. Analizza la configurazione delle risorse e i dati di telemetria sull'utilizzo, quindi consiglia soluzioni per migliorare economicità, prestazioni, disponibilità elevata e sicurezza delle risorse di Azure.
+-  R:  Azure Advisory Chat è un servizio di chat in tempo reale che offre assistenza per domande relative ad Azure. [Azure Advisor](/azure/advisor/advisor-overview) è un consulente nel cloud personalizzato che offre supporto per adottare le procedure ottimali per l'ottimizzazione delle distribuzioni di Azure. Analizza la configurazione delle risorse e i dati di telemetria sull'utilizzo, quindi consiglia soluzioni per migliorare economicità, prestazioni, disponibilità elevata e sicurezza delle risorse di Azure.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.

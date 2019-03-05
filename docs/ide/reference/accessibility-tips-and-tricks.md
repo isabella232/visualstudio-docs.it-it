@@ -1,7 +1,7 @@
 ---
 title: Suggerimenti sull'accessibilità per Visual Studio
 description: Altre informazioni su suggerimenti e consigli che consentono di rendere l'ambiente di sviluppo integrato (IDE) di Visual Studio più accessibile da usare per tutti gli utenti, compresi gli utenti disabili.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318552"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680932"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
 
 > [!TIP]
-> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Per altre informazioni sugli aggiornamenti di accessibilità, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 versione 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Visual Studio dispone di funzionalità di accessibilità integrate compatibili con utilità per la lettura dello schermo e altri tipi di Assistive Technology Program. Questo argomento elenca le comuni combinazioni di tasti di scelta rapida che è possibile usare per eseguire attività solo con la tastiera e comprende informazioni sull'uso di temi a contrasto elevato per migliorare la visibilità. Illustra anche come usare le annotazioni per rivelare informazioni utili sul proprio codice e come impostare i segnali sonori per gli eventi di build e punti di interruzione.
 
@@ -48,7 +48,7 @@ L'editor di Visual Studio comprende molte "aree di controllo" del testo che cons
 
 Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre degli strumenti. Le combinazioni di tasti di scelta rapida seguenti consentono di accedervi.
 
-|Funzionalità|Descrizione|Combinazione di tasti|
+|Funzionalità|Description|Combinazione di tasti|
 |-------------|-----------------| - |
 |Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **CTRL** + **TAB**|
 |Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**MAIUSC** + **ALT**|
@@ -58,12 +58,13 @@ Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre
 
 Tra le altre combinazioni di tasti utili ricordiamo le seguenti.
 
-|Funzionalità|Descrizione|Combinazione di tasti|
+|Funzionalità|Description|Combinazione di tasti|
 |-------------|-----------------| - |
 |IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **NOTA:** scelta rapida standard di Windows|**ALT di sinistra + MAIUSC di sinistra + STAMP**|
 |Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **NOTA:** scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
 |Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **NOTA:** scelta rapida standard di Windows|**MAIUSC** + **F10**|
 |Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Scegliere **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio selezionare **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** scelta rapida standard di Windows|**ALT** + **[lettera]**|
+|Casella di ricerca di Avvio veloce| Usare la funzionalità di ricerca in Visual Studio|**CTRL** + **Q**|
 |Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL** + **Freccia SU**<br /><br /> e<br /><br /> **CTRL** + **Freccia GIÙ**|
 |Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un form o finestra di progettazione.|**INVIO**|
 |Tastiera, Ambiente, finestra di dialogo Opzioni|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**BACKSPACE**|

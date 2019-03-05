@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948810"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716506"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: eseguire il codice nel debugger
 
@@ -47,12 +47,9 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 1. Controllare che il codice funzioni correttamente. A tale scopo, premere **F5** o selezionare il comando di menu **Debug** > **Avvia debug**. Il comando esegue il codice nel debugger. Dato che non sono impostate pause per l'esecuzione del programma, stampa semplicemente un motivo ondulato per alcune iterazioni. Premere un tasto qualsiasi per chiudere la finestra di output.
 
     > [!Tip]
-    > Per chiudere la finestra di output automaticamente dopo il completamento del programma, sostituire la chiamata `main()` con il codice seguente:
+    > Perché la finestra di output si chiuda automaticamente al completamento del programma, selezionare il comando di menu **Strumenti** > **Opzioni**, espandere il nodo **Python**, selezionare **Debug** e deselezionare l'opzione **Attendi input quando il processo viene chiuso normalmente**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Opzione di debug di Python per chiudere la finestra di output alla normale uscita dal programma](media/vs-getting-started-python-22-debugging5.png)
 
 1. Impostare un punto di interruzione sull'istruzione `for` facendo clic nel margine grigio a sinistra della riga oppure posizionare il cursore nella riga e usare il comando **Debug** > **Attiva/Disattiva punto di interruzione** (**F9**). Sul margine grigio viene visualizzato un punto rosso per indicare il punto di interruzione, come indicato dalla freccia blu di seguito:
 

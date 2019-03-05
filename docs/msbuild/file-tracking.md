@@ -10,39 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878d4d7e56c51d8a41a0e3cf3e78d6c83ed5d0b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7770da734143b2b6185b266137eeb46ba25bd32a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027672"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640610"
 ---
 # <a name="file-tracking"></a>Rilevamento file
-Il rilevamento di file registra le chiamate al file system di Windows per un processo e i relativi processi figlio. Chiamando le funzioni elencate di seguito, i programmi stabiliscono quando attivare e disattivare la registrazione e quale file di log usare.  
-  
- [EndTrackingContext](../msbuild/endtrackingcontext.md)  
- Interrompe il rilevamento nel contesto corrente.  
-  
- [ResumeTracking](../msbuild/resumetracking.md)  
- Riprende il rilevamento dopo una chiamata a [SuspendTracking](../msbuild/suspendtracking.md).  
-  
- [SetThreadCount](../msbuild/setthreadcount.md)  
- Imposta il numero di thread da usare per il rilevamento.  
-  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)  
- Avvia un nuovo contesto di rilevamento.  
-  
- [StartTrackingContextWithRoot](../msbuild/starttrackingcontextwithroot.md)  
- Avvia un nuovo contesto di rilevamento con una radice specificata.  
-  
- [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md)  
- Termina il rilevamento e rilascia le risorse usate.  
-  
- [SuspendTracking](../msbuild/suspendtracking.md)  
- Sospende temporaneamente il rilevamento.  
-  
- [WriteAllTLogs](../msbuild/writealltlogs.md)  
- Scrive i log di rilevamento per tutti i contesti.  
-  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
- Scrive il log di rilevamento per il contesto corrente.
+Il rilevamento di file registra le chiamate al file system di Windows per un processo e i relativi processi figlio. Chiamando le funzioni elencate di seguito, i programmi stabiliscono quando attivare e disattivare la registrazione e quale file di log usare.
+
+- [EndTrackingContext](../msbuild/endtrackingcontext.md) Arresta il rilevamento nel contesto corrente.
+
+- [ResumeTracking](../msbuild/resumetracking.md) Riprende il rilevamento dopo una chiamata a [SuspendTracking](../msbuild/suspendtracking.md).
+
+- [SetThreadCount](../msbuild/setthreadcount.md) Imposta il numero di thread da usare per il rilevamento.
+
+- [StartTrackingContext](../msbuild/starttrackingcontext.md) Avvia un nuovo contesto di rilevamento.
+
+- [StartTrackingContextWithRoot](../msbuild/starttrackingcontextwithroot.md) Avvia un nuovo contesto di rilevamento con una radice specificata.
+
+- [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md) Termina il rilevamento e rilascia le risorse usate.
+
+- [SuspendTracking](../msbuild/suspendtracking.md) Sospende temporaneamente il rilevamento.
+
+- [WriteAllTLogs](../msbuild/writealltlogs.md) Scrive i log di rilevamento per tutti i contesti.
+
+- [WriteContextTLogs](../msbuild/writecontexttlogs.md) Scrive il log di rilevamento per il contesto corrente.

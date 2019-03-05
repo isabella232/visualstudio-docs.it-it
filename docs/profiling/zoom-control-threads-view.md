@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de60c41cd8110a4fe9b7db89d77f16a9609292e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943143"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627688"
 ---
 # <a name="zoom-control-threads-view"></a>Controllo zoom (visualizzazione Thread)
-Il controllo zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale, in modo da potersi concentrare sulle aree di particolare interesse. Poiché questo controllo esegue uno zoom avanti al centro della visualizzazione della sequenza temporale, centrare l'area di interesse prima di procedere.  
-  
-## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>Zoom avanti tramite trascinamento nella visualizzazione della sequenza temporale  
- Eseguendo uno zoom avanti tramite trascinamento nella visualizzazione della sequenza temporale, viene creata un'area evidenziata in giallo. Quando si rilascia il pulsante del mouse, la visualizzazione della sequenza temporale viene ingrandita sull'intervallo selezionato.  
-  
-## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Zoom avanti e indietro tramite la rotellina del mouse  
- Fare clic su qualsiasi punto della sequenza temporale (per assicurarsi che abbia lo stato attivo del mouse), quindi premere **CTRL** e spostare la rotellina del mouse (in avanti per ingrandire lo zoom e indietro per ridurlo).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Gestione dei canali](../profiling/manage-channels.md)   
- [Modalità misurazione attiva-non attiva](../profiling/measure-mode-on-off.md)   
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)   
- [Strumento di spostamento di utilizzo](../profiling/utilization-navigator.md)
+Il controllo zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale, in modo da potersi concentrare sulle aree di particolare interesse. Poiché questo controllo esegue uno zoom avanti al centro della visualizzazione della sequenza temporale, centrare l'area di interesse prima di procedere.
+
+## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>Zoom avanti tramite trascinamento nella visualizzazione della sequenza temporale
+ Eseguendo uno zoom avanti tramite trascinamento nella visualizzazione della sequenza temporale, viene creata un'area evidenziata in giallo. Quando si rilascia il pulsante del mouse, la visualizzazione della sequenza temporale viene ingrandita sull'intervallo selezionato.
+
+## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Zoom avanti e indietro tramite la rotellina del mouse
+ Fare clic su qualsiasi punto della sequenza temporale (per assicurarsi che abbia lo stato attivo del mouse), quindi premere **CTRL** e spostare la rotellina del mouse (in avanti per ingrandire lo zoom e indietro per ridurlo).
+
+## <a name="see-also"></a>Vedere anche
+- [Gestire i canali](../profiling/manage-channels.md)
+- [Modalità misurazione attiva/non attiva](../profiling/measure-mode-on-off.md)
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+- [Strumento di spostamento di utilizzo](../profiling/utilization-navigator.md)

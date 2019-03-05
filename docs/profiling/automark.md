@@ -8,42 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7c4a47910d15da0a93a937622ce47843124d82
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d2bbd33308ddf14f14746db7f5c2c4ada6826b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634110"
 ---
 # <a name="automark"></a>AutoMark
-L'opzione **AutoMark** specifica il numero di millisecondi tra diverse raccolte di eventi del contatore delle prestazioni del software Windows. I contatori delle prestazioni di Windows sono specificati nell'opzione **WinCounter**.  
-  
- Nella riga di comando può essere specificata una sola opzione **AutoMark**. Si noti che l'intervallo di campionamento di **WinCounter** specificato da **AutoMark** è indipendente dell'intervallo di campionamento principale.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cmd  
-VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `Milliseconds`  
- Specifica il numero di millisecondi tra le raccolte di eventi dei contatori delle prestazioni di Windows.  
-  
-## <a name="required-options"></a>Opzioni obbligatorie  
- **WinCounter:** `Path`  
- Specifica il contatore delle prestazioni di Windows da raccogliere. Quando si usa il metodo di strumentazione è possibile specificare più contatori di Windows. Quando si usa il metodo di campionamento è possibile specificare solo un contatore del software. L'opzione **WinCounter** deve essere specificata in una riga di comando che contiene l'opzione **Start**.  
-  
-## <a name="example"></a>Esempio  
- In questo esempio viene impostato un intervallo di campionamento di 1000 millisecondi per due contatori delle prestazioni di Windows.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Processor Time" /WinCounter:"\ASP.NET\Pages/sec" /AutoMark:1000  
-VSPerfCmd.exe /Launch:TestApp.exe  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
+L'opzione **AutoMark** specifica il numero di millisecondi tra diverse raccolte di eventi del contatore delle prestazioni del software Windows. I contatori delle prestazioni di Windows sono specificati nell'opzione **WinCounter**.
+
+ Nella riga di comando può essere specificata una sola opzione **AutoMark**. Si noti che l'intervallo di campionamento di **WinCounter** specificato da **AutoMark** è indipendente dell'intervallo di campionamento principale.
+
+## <a name="syntax"></a>Sintassi
+
+```cmd
+VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
+```
+
+#### <a name="parameters"></a>Parametri
+ `Milliseconds` Specifica il numero di millisecondi tra le raccolte di eventi dei contatori delle prestazioni di Windows.
+
+## <a name="required-options"></a>Opzioni obbligatorie
+ **WinCounter:** `Path` Specifica il contatore delle prestazioni di Windows da raccogliere. Quando si usa il metodo di strumentazione è possibile specificare più contatori di Windows. Quando si usa il metodo di campionamento è possibile specificare solo un contatore del software. L'opzione **WinCounter** deve essere specificata in una riga di comando che contiene l'opzione **Start**.
+
+## <a name="example"></a>Esempio
+ In questo esempio viene impostato un intervallo di campionamento di 1000 millisecondi per due contatori delle prestazioni di Windows.
+
+```cmd
+VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Processor Time" /WinCounter:"\ASP.NET\Pages/sec" /AutoMark:1000
+VSPerfCmd.exe /Launch:TestApp.exe
+```
+
+## <a name="see-also"></a>Vedere anche
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822163"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842663"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -91,19 +89,19 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 
 **Sottoscrizioni standard**
 
-- Microsoft Store: se è stata acquistata una sottoscrizione da [Microsoft Store](http://www.microsoft.com/store), è possibile anche rinnovarla.
-- Contratti multilicenza: se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore deve contattare un rivenditore per rinnovare le sottoscrizioni.
+- Microsoft Store: se una sottoscrizione è stata acquistata in [Microsoft Store](http://www.microsoft.com/store) è anche possibile rinnovarla in Microsoft Store.
+- Contratti multilicenza:  se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore deve contattare un rivenditore per rinnovare le sottoscrizioni.
 
-**Sottoscrizioni cloud:** le sottoscrizioni cloud non necessitano di rinnovo. Fino a quando la sottoscrizione è pagata, rimarrà attiva.
+**Sottoscrizioni cloud:**  per le sottoscrizioni cloud non è necessario il rinnovo. Fino a quando la sottoscrizione è pagata, rimarrà attiva.
 
-**Sottoscrizioni acquistate attraverso programmi:** se si riceve la sottoscrizione tramite un programma, la sottoscrizione è associata alla partecipazione al programma. Per altre informazioni, rivolgersi ai referenti per il programma.
+**Sottoscrizioni acquistate tramite programmi:**  se si riceve la sottoscrizione tramite un programma, la sottoscrizione è associata alla partecipazione al programma. Per altre informazioni, rivolgersi ai referenti per il programma.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials:** Dev Essentials è un programma gratuito e le appartenenze non scadono.
+**Visual Studio Dev Essentials:**  Dev Essentials è un programma gratuito e le appartenenze non scadono.
 
 ## <a name="transferring-subscriptions"></a>Trasferimento di sottoscrizioni
 
@@ -149,7 +147,7 @@ Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>D: Se non si rinnova la sottoscrizione, per quanto tempo Microsoft mantiene i dati?
 
-R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per diversi periodi di tempo.
+R: A seconda del canale di acquisto, Microsoft archivia i dati dei clienti per periodi di tempo diversi.
 
 | Canale                                                | Durata (giorni) |
 |--------------------------------------------------------|-----------------|

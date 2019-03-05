@@ -8,48 +8,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97b45c9bc9db61e579430bb3e2ceeb48206ef50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50b2e269ec292aaf37b8d0c707fa27ff8268a1f0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992451"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596128"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
-L'opzione **GC** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti di .NET Framework. L'opzione **GC** può essere usata solo con il metodo di profilatura del campionamento e solo con l'opzione **Launch**.  
-  
- Quando si usa l'opzione **GC** il comando **/sampleon** di VSPerfClrEnv non è necessario.  
-  
- Se non vengono specificati parametri o viene specificato il parametro **Allocation**, vengono raccolti solo i dati di allocazione della memoria di .NET Framework. Se viene specificato il parametro **Lifetime**, vengono raccolti sia i dati di allocazione della memoria di .NET Framework sia i dati di durata degli oggetti di .NET Framework.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cmd  
-VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- **Allocation**  
- Predefinita. Raccoglie i dati di allocazione della memoria di .NET Framework.  
-  
- **Durata**  
- Raccoglie sia i dati di allocazione della memoria di .NET Framework, sia i dati di durata degli oggetti di .NET Framework.  
-  
-## <a name="required-options"></a>Opzioni obbligatorie  
- L'opzione **GC** può essere usata solo con l'opzione **Launch**.  
-  
- **Launch:** `AppName`  
- Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene avviata un'applicazione e vengono raccolti i dati di allocazione della memoria di .NET Framework.  
-  
-```cmd  
-VSPerfCmd.exe /Launch:TestApp.exe /gc  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
+L'opzione **GC** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti di .NET Framework. L'opzione **GC** può essere usata solo con il metodo di profilatura del campionamento e solo con l'opzione **Launch**.
+
+ Quando si usa l'opzione **GC** il comando **/sampleon** di VSPerfClrEnv non è necessario.
+
+ Se non vengono specificati parametri o viene specificato il parametro **Allocation**, vengono raccolti solo i dati di allocazione della memoria di .NET Framework. Se viene specificato il parametro **Lifetime**, vengono raccolti sia i dati di allocazione della memoria di .NET Framework sia i dati di durata degli oggetti di .NET Framework.
+
+## <a name="syntax"></a>Sintassi
+
+```cmd
+VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
+```
+
+#### <a name="parameters"></a>Parametri
+ **Allocation** Impostazione predefinita. Raccoglie i dati di allocazione della memoria di .NET Framework.
+
+ **Lifetime** Raccoglie sia i dati di allocazione della memoria di .NET Framework, sia i dati di durata degli oggetti di .NET Framework.
+
+## <a name="required-options"></a>Opzioni obbligatorie
+ L'opzione **GC** può essere usata solo con l'opzione **Launch**.
+
+ **Launch:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+
+## <a name="example"></a>Esempio
+ Nell'esempio seguente viene avviata un'applicazione e vengono raccolti i dati di allocazione della memoria di .NET Framework.
+
+```cmd
+VSPerfCmd.exe /Launch:TestApp.exe /gc
+```
+
+## <a name="see-also"></a>Vedere anche
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

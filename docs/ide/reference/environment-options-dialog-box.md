@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952827"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703253"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 
@@ -35,7 +35,7 @@ ms.locfileid: "55952827"
 |Impostare le opzioni di mappatura della tastiera.|[Tastiera, Ambiente, finestra di dialogo Opzioni](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Per specificare se le notifiche sono abilitate.|[Notifiche, Ambiente, finestra di dialogo Opzioni](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Per specificare le opzioni per la finestra Avvio veloce.|[Avvio veloce, Ambiente, finestra di dialogo Opzioni](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Per specificare le opzioni della pagina iniziale.|[Avvio, Ambiente, finestra di dialogo Opzioni](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Per specificare le opzioni di avvio.|[Avvio, Ambiente, finestra di dialogo Opzioni](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Per specificare se effettuare il roaming delle impostazioni tra computer.|[Impostazioni sincronizzate, Ambiente, finestra di dialogo Opzioni](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Informazioni su come impostare le opzioni per attività ed elenchi di attività.|[Elenco attività, Ambiente, finestra di dialogo Opzioni](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Modificare le pagine iniziale e di ricerca predefinite modificando l'editor di origine del sistema e configurando le opzioni di Internet Explorer.|[Web Browser, Ambiente, finestra di dialogo Opzioni](../../ide/reference/web-browser-environment-options-dialog-box.md)|

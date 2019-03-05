@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82385221988a0a2eb9ed562742abc16c8552f9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967271"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639947"
 ---
 # <a name="measure-mode-onoff"></a>Modalità misurazione attiva/non attiva
-Tramite questo strumento è possibile misurare con precisione un periodo di tempo nella sequenza temporale. Per abilitare la modalità misurazione, fare clic sul pulsante di misurazione (con un'icona a forma di righello) e quindi trascinare nella sequenza temporale. Durante il trascinamento, si noti che l'area sotto il puntatore viene evidenziata in giallo e il tempo misurato viene visualizzato sulla barra degli strumenti a destra del pulsante. Questo valore viene calcolato in modo dinamico durante il trascinamento in modo da poter determinare immediatamente il tempo richiesto per un particolare evento. Quando si rilascia il pulsante del mouse, il valore rimane visibile.  
-  
- È possibile ripetere il processo di misurazione, ma viene visualizzata solo la misurazione più recente. Fare clic di nuovo sul pulsante di misurazione per disattivare la modalità misurazione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Gestione dei canali](../profiling/manage-channels.md)   
- [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)   
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+Tramite questo strumento è possibile misurare con precisione un periodo di tempo nella sequenza temporale. Per abilitare la modalità misurazione, fare clic sul pulsante di misurazione (con un'icona a forma di righello) e quindi trascinare nella sequenza temporale. Durante il trascinamento, si noti che l'area sotto il puntatore viene evidenziata in giallo e il tempo misurato viene visualizzato sulla barra degli strumenti a destra del pulsante. Questo valore viene calcolato in modo dinamico durante il trascinamento in modo da poter determinare immediatamente il tempo richiesto per un particolare evento. Quando si rilascia il pulsante del mouse, il valore rimane visibile.
+
+ È possibile ripetere il processo di misurazione, ma viene visualizzata solo la misurazione più recente. Fare clic di nuovo sul pulsante di misurazione per disattivare la modalità misurazione.
+
+## <a name="see-also"></a>Vedere anche
+- [Gestire i canali](../profiling/manage-channels.md)
+- [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)
+- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

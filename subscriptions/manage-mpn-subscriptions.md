@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949110"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842476"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestione delle sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 
@@ -33,7 +31,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 4. Selezionare il primo, secondo e terzo **contatto tecnico** e **salvare**
 5. Selezionare **Requirements and Assets** (Requisiti e risorse)
 6. Selezionare **Privileges** (Privilegi)
-7. Selezionare **Sottoscrizioni di Visual Studio** (Nota: aggiornamento della sottoscrizione di Visual Studio in sospeso)
+7. Selezionare **Sottoscrizioni di Visual Studio** (Nota: l'aggiornamento della sottoscrizione a Visual Studio è in sospeso)
 8. Selezionare il **singolo** desiderato
 9. Fare clic su **Submit** (Invia)
 10. L'utente riceverà un messaggio di posta elettronica
@@ -41,7 +39,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 12. Potrebbe essere visualizzata una pagina del profilo di Visual Studio che include:
     - Nome
     - Cognome
-    - Posta elettronica contatto
+    - Indirizzo di posta elettronica contatto
 13. L'accesso è a questo punto completo e il sottoscrittore dovrebbe avere accesso ai vantaggi
 
 
@@ -56,7 +54,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 8. Potrebbe essere visualizzata una pagina del profilo di Visual Studio
     - Nome
     - Cognome
-    - Posta elettronica contatto
+    - Indirizzo di posta elettronica contatto
 9. L'accesso è a questo punto completo e il sottoscrittore dovrebbe avere accesso ai vantaggi
 
 ## <a name="resources-and-references"></a>Risorse e riferimenti

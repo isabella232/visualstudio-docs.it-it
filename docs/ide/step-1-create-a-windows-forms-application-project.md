@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956071"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796530"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: Creare un progetto di Windows Forms Application
 
@@ -37,20 +37,21 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella 
 
      Visual Studio crea una soluzione per il programma. Una soluzione funge da contenitore per tutti i progetti e i file richiesti dal programma. Questi termini verranno spiegati dettagliatamente più avanti in questa esercitazione.
 
-4. Nella figura seguente viene illustrato ciò che si dovrebbe vedere nell'interfaccia di Visual Studio.
-
-    > [!NOTE]
-    > Il layout delle finestre potrebbe non essere esattamente uguale a questa illustrazione. Il layout preciso della finestra dipende dalla versione di Visual Studio, dal linguaggio di programmazione in uso e da altri fattori. Tuttavia, è necessario verificare che tutte e tre le finestre siano visualizzate.
-
-     ![Finestra IDE](../ide/media/express_ideoverview_visio.png)<br/>*Finestra **IDE***
-
-     L'interfaccia contiene tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
+4. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
      Se manca una di queste finestre, ripristinare il layout di finestra predefinito, scegliendo **Finestra** > **Reimposta layout finestra** sulla barra dei menu. È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**. Se sono aperte altre finestre, chiuderle scegliendo il pulsante **Chiudi** (x) negli angoli in alto a destra.
 
-5. Nella figura sono illustrate le finestre seguenti (in senso orario dall'angolo superiore sinistro):
+    ::: moniker range="vs-2017"
 
-    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra nella figura contiene un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]**. In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
+    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]**. In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**.
+
+    ::: moniker-end
 
     - **Finestra Esplora soluzioni** In questa finestra è possibile visualizzare tutti gli elementi della soluzione e spostarsi tra di essi. Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con l'estensione *CS* in Visual C# e *VB* in Visual Basic), viene visualizzato il file stesso o la relativa finestra di progettazione. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per i moduli di Visual Studio, la finestra di progettazione è denominata **Progettazione Windows Form**.
 

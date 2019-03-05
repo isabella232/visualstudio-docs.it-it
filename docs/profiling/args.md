@@ -8,42 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8a017af5ff5a9c7ca9c0f634e776f8d05b44e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 036b13a7fea5d64e23e2b7d5ccbd8a7b17f91176
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040515"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608513"
 ---
 # <a name="args"></a>Args
-L'opzione **Args** di VSPerfCmd.exe specifica un elenco di argomenti passati all'applicazione di destinazione del sottocomando **Launch**.  
-  
- **Args** può essere usata solo quando è specificato anche **Launch** nella riga di comando. **Args** è facoltativa quando è specificato **Launch**.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cmd  
-VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `Arguments`  
- Un elenco di argomenti per l'applicazione di destinazione del comando **Launch**.  
-  
-## <a name="required-options"></a>Opzioni obbligatorie  
- **Launch:** `AppName`  
- Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
-  
-## <a name="example"></a>Esempio  
- L'esempio seguente usa l'opzione **Args** per passare gli argomenti a TestApp.exe.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+L'opzione **Args** di VSPerfCmd.exe specifica un elenco di argomenti passati all'applicazione di destinazione del sottocomando **Launch**.
+
+ **Args** può essere usata solo quando è specificato anche **Launch** nella riga di comando. **Args** è facoltativa quando è specificato **Launch**.
+
+## <a name="syntax"></a>Sintassi
+
+```cmd
+VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
+```
+
+#### <a name="parameters"></a>Parametri
+ `Arguments` Elenco di argomenti per l'applicazione di destinazione del comando **Launch**.
+
+## <a name="required-options"></a>Opzioni obbligatorie
+ **Launch:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+
+## <a name="example"></a>Esempio
+ L'esempio seguente usa l'opzione **Args** per passare gli argomenti a TestApp.exe.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
+```
+
+## <a name="see-also"></a>Vedere anche
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)

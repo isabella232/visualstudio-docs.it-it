@@ -8,42 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 952d5c726090aabbc4fe550f64696bcce7a3f784
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 440401f8c46a3920fce6c8e0d29f630a24103f65
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940076"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625127"
 ---
 # <a name="mark"></a>Contrassegno
-In *VSPerfCmd.exe* l'opzione **Mark** consente di inserire le informazioni specificate nel file di dati di profilatura. L'opzione Mark può essere elencata in un report di VSPerfReport separato o nella visualizzazione Contrassegni dell'interfaccia utente del profiler. È possibile usare **Mark** per specificare i punti di inizio e fine nel report e visualizzare i filtri.  
-  
- L'opzione **Mark** deve essere l'unica opzione specificata nella riga di comando.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cmd  
-VSPerfCmd.exe /Mark:MarkID,[MarkName]  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `MarkID`  
- Intero definito dall'utente elencato come ID contrassegno nelle visualizzazioni e nei report del profiler. `MarkID` non deve essere univoco.  
-  
- `MarkName`  
- (Facoltativo) Stringa definita dall'utente elencata come Nome contrassegno nelle visualizzazioni e nei report del profiler. Se non si specifica `MarkName`, il campo Nome contrassegno dell'elenco dei contrassegni sarà vuoto. Racchiudere le stringhe che contengono spazi o barre ("/") tra virgolette.  
-  
-## <a name="example"></a>Esempio  
- Questo esempio inserisce un contrassegno con ID 123 e il nome di contrassegno "TestMark".  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe  
-VSPerfCmd.exe /Mark:123,TestMark  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
+In *VSPerfCmd.exe* l'opzione **Mark** consente di inserire le informazioni specificate nel file di dati di profilatura. L'opzione Mark può essere elencata in un report di VSPerfReport separato o nella visualizzazione Contrassegni dell'interfaccia utente del profiler. È possibile usare **Mark** per specificare i punti di inizio e fine nel report e visualizzare i filtri.
+
+ L'opzione **Mark** deve essere l'unica opzione specificata nella riga di comando.
+
+## <a name="syntax"></a>Sintassi
+
+```cmd
+VSPerfCmd.exe /Mark:MarkID,[MarkName]
+```
+
+#### <a name="parameters"></a>Parametri
+ `MarkID` Intero definito dall'utente elencato come ID contrassegno nelle visualizzazioni e nei report del profiler. `MarkID` non deve essere univoco.
+
+ `MarkName` (Facoltativo) Stringa definita dall'utente elencata come Nome contrassegno nelle visualizzazioni e nei report del profiler. Se non si specifica `MarkName`, il campo Nome contrassegno dell'elenco dei contrassegni sarà vuoto. Racchiudere le stringhe che contengono spazi o barre ("/") tra virgolette.
+
+## <a name="example"></a>Esempio
+ Questo esempio inserisce un contrassegno con ID 123 e il nome di contrassegno "TestMark".
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe
+VSPerfCmd.exe /Mark:123,TestMark
+```
+
+## <a name="see-also"></a>Vedere anche
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

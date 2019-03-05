@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970829"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700263"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni** e quindi selezionare **Ambiente/Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti** > **Opzioni** e quindi selezionare **Ambiente** > **Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
 
 Le modifiche delle combinazioni colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
@@ -63,7 +63,13 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
 
 -   **Tipo di carattere ambiente**
 
-     Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente dell'IDE per i quali non è stata ancora impostata un'opzione separata in **Mostra impostazioni per**. Questa opzione è valida, ad esempio, per la **Pagina iniziale** ma non influisce sulla finestra di **Output**.
+     Modifica lo stile e la dimensione del carattere di tutti gli elementi dell'interfaccia utente dell'IDE per i quali non è stata ancora impostata un'opzione separata in **Mostra impostazioni per**.
+
+     ::: moniker range="vs-2017"
+
+     Ad esempio questa opzione è valida per la **Pagina iniziale** ma non ha nessun effetto sulla finestra **Output**.
+
+     ::: moniker-end
 
 -   **[Tutte le finestre degli strumenti di testo]**
 
@@ -93,7 +99,7 @@ Elenca gli elementi per cui è possibile modificare il colore di primo piano e s
 
 Alcuni degli elementi visualizzati includono:
 
-|Elemento visualizzato|Descrizione|
+|Elemento visualizzato|Description|
 |------------------|-----------------|
 |**Testo normale**|Testo nell'editor.|
 |**Testo selezionato**|Testo incluso nella selezione corrente quando l'editor ha lo stato attivo.|

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni su come gli amministratori delle sottoscrizioni possono accedere al portale di amministrazione e gestire le sottoscrizioni acquistate tramite i contratti multilicenza
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379540"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843138"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accesso al portale e gestione degli amministratori per le sottoscrizioni acquistate tramite i contratti multilicenza
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379540"
 
 A partire dal 1 marzo 2017, i clienti per cui è ancora in corso il processo di onboarding e migrazione nel portale dovranno gestire le sottoscrizioni nel Volume Licensing Service Center.
 
-Per altre informazioni sulla gestione delle sottoscrizioni in Volume License Service Center, vedere le guide seguenti: [Understanding Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) (Informazioni sulle sottoscrizioni di Visual Studio per Volume Licensing Service Center)
-[Managing Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) (Gestione delle sottoscrizioni di Visual Studio per Volume Licensing Service Center)
+Per altre informazioni sulla gestione delle sottoscrizioni in VLSC vedere le guide seguenti: [Understanding Visual Studio Subscriptions for VLSC (Informazioni sulle sottoscrizioni di Visual Studio per Volume Licensing Service Center)](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[Managing Visual Studio Subscriptions for VLSC (Gestione delle sottoscrizioni di Visual Studio per Volume Licensing Service Center)](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Portale di amministrazione delle sottoscrizioni di Visual Studio** Se è stata eseguita la migrazione dell'organizzazione ma l'utente non è ancora stato configurato nel nuovo portale, il contatto principale o per le comunicazioni per il contratto multilicenza dell'organizzazione dovrà eseguire una procedura per l'onboarding dell'organizzazione e per configurare l'utente come amministratore.
 

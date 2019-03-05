@@ -2,7 +2,7 @@
 title: Uso di Visual Studio in una macchina virtuale di Azure
 titleSuffix: ''
 description: Informazioni su come usare Visual Studio in una macchina virtuale di Azure
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952905"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450399"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -34,8 +34,8 @@ In Azure Marketplace sono disponibili immagini per le versioni più recenti prin
 
 | Versione di rilascio                                              | Edizioni                     |     Versione del prodotto      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Anteprima (Preview 2)                   |           Enterprise         | Versione 16.0.0 Preview 2 |
-| Visual Studio 2017: Versione più recente (15.9)                    |    Enterprise, Community     |      Versione 15.9.4      |
+|    Visual Studio 2019: Anteprima (Preview 3)                   |           Enterprise         | Versione 16.0.0 Preview 3 |
+| Visual Studio 2017: Versione più recente (15.9)                    |    Enterprise, Community     |      Versione 15.9.7      |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versione 15.0.20     |
 |   Visual Studio 2015: Versione più recente (Update 3)                      |    Enterprise, Community     |  Versione 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             nessuno             | (Scaduto per la manutenzione)  |

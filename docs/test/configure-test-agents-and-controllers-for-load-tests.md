@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948823"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796350"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurare agenti di test e test controller per i test di carico
 
@@ -43,7 +43,7 @@ Questa architettura offre i vantaggi seguenti:
 
   - Computer1: Visual Studio, controller, agente.
 
-    ![Computer locale che usa controller e agente](./media/load-test-configa.png)
+    ![Computer locale che utilizza controller e agente](./media/load-test-configa.png)
 
     **Configurazione remota tipica:**
 
@@ -53,7 +53,7 @@ Questa architettura offre i vantaggi seguenti:
 
   - Computer4-n: agente o agenti tutti associati al controller in Computer3.
 
-    ![Computer remoti che usano controller e agenti](./media/load-test-configb.png)
+    ![Computer remoti che utilizzano controller e agenti](./media/load-test-configb.png)
 
 Anche se un controller di test gestisce in genere diversi agenti di test, un agente può essere associato solo a un unico controller. Ogni agente di test può essere condiviso da un team di sviluppatori. Questa architettura consente di aumentare il numero di agenti di test, generando così carichi maggiori.
 

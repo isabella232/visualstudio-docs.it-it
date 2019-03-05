@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004488"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620291"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Risolvere i problemi relativi agli errori di impostazione di .NET Framework come destinazione
 Questo argomento illustra gli errori di MSBuild che possono verificarsi a causa di problemi di riferimento e indica in che modo è possibile risolvere tali errori.
@@ -54,4 +54,7 @@ Questo argomento illustra gli errori di MSBuild che possono verificarsi a causa 
 >  Dopo aver chiuso e riaperto il progetto, è necessario ricompilarlo per verificare che tutti i riferimenti vengano risolti correttamente.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [Profilo client .NET Framework](/dotnet/framework/deployment/client-profile) [Sviluppo per una versione specifica di .NET Framework](../ide/visual-studio-multi-targeting-overview.md) [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+- [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [Profilo client .NET Framework](/dotnet/framework/deployment/client-profile)
+- [Sviluppo per una versione specifica di .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

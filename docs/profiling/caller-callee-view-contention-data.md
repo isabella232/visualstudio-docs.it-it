@@ -10,47 +10,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdb13bace56a257327d21981aab55e44d42ecd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932896"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56654100"
 ---
 # <a name="callercallee-view----contention-data"></a>Visualizzazione Chiamante/chiamato: dati sui conflitti
-La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui conflitti per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.  
-  
- Nella griglia centrale **Funzione corrente** visualizza le informazioni sui conflitti per la funzione selezionata. I valori includono tutti i conflitti di blocco per la funzione.  
-  
- La griglia superiore contiene **Funzioni che hanno chiamato la funzione corrente**, che visualizza i contributi individuali delle funzioni chiamanti (padre) i valori della funzione selezionata (corrente).  
-  
- Nella griglia inferiore **Funzioni che sono state chiamate dalla funzione corrente** visualizza informazioni sui conflitti per le funzioni chiamate (figlio) della funzione selezionata quando la funzione figlio è stata chiamata dalla funzione corrente.  
-  
-|Colonna|Description|  
-|------------|-----------------|  
-|**Type**|Il contesto della funzione:<br /><br /> -   **0**: la funzione corrente<br />-   **1**: una funzione che chiama la funzione corrente<br />-   **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Tempo blocco esclusivo**|- Per la funzione corrente, il periodo in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Il tempo di blocco non è incluso nelle funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, la parte del tempo di blocco esclusivo della funzione corrente usata quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il periodo in cui è stato impedito a questa funzione di eseguire il proprio codice quando la funzione è stata chiamata dalla funzione corrente. Il tempo di blocco non è incluso nelle funzioni figlio chiamate dalla funzione chiamata.|  
-|**% tempo blocco esclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per questa funzione in questo contesto.|  
-|**Conflitti esclusivi**|- Per la funzione corrente, il numero di volte in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Non sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, il numero di conflitti esclusivi della funzione corrente che si sono verificati quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di volte in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione quando la funzione è stata chiamata dalla funzione corrente. Non sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione chiamata.|  
-|**% conflitti esclusivi**|Percentuale del numero totale di conflitti nell'esecuzione della profilatura che rappresentano conflitti esclusivi per questa funzione in questo contesto.|  
-|**Indirizzo funzione**|Indirizzo o token della funzione.|  
-|**Nome funzione**|Nome completo della funzione.|  
-|**Tempo blocco inclusivo**|- Per la funzione corrente, il periodo in cui è stata impedita l'esecuzione di questa funzione o di una delle funzioni chiamate da questa funzione. Il tempo di blocco nelle funzioni chiamate dalla funzione corrente è incluso.<br />- Per una funzione chiamante, la parte del tempo di blocco inclusivo della funzione corrente usata quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il periodo in cui è stata impedita l'esecuzione di questa funzione o una delle funzioni chiamate dalla funzione quando questa funzione è stata chiamata dalla funzione corrente. Il tempo di blocco nelle funzioni chiamate dalla funzione chiamata è incluso.|  
-|**% tempo blocco inclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo per questa funzione in questo contesto.|  
-|**Conflitti inclusivi**|- Per la funzione corrente, il numero di volte in cui è stata impedita l'esecuzione di questa funzione o di una delle funzioni chiamate dalla funzione. Sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, il numero di conflitti inclusivi della funzione corrente che si sono verificati quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di volte in cui è stata impedita l'esecuzione di questa funzione o una delle funzioni chiamate dalla funzione quando questa funzione è stata chiamata dalla funzione corrente. Sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione chiamata.|  
-|**% conflitti inclusivi**|Percentuale del numero totale di conflitti nell'esecuzione della profilatura che rappresentano conflitti esclusivi per questa funzione in questo contesto.|  
-|**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
-|**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
-|**ID processo**|ID processo (PID) del processo in cui si è verificato il conflitto.|  
-|**Nome processo**|Nome del processo.|  
-|**Nome funzione radice**|Nome della funzione corrente. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|  
-|**File di origine**|File di origine che contiene la definizione per questa funzione.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)   
- [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)   
- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui conflitti per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
+
+ Nella griglia centrale **Funzione corrente** visualizza le informazioni sui conflitti per la funzione selezionata. I valori includono tutti i conflitti di blocco per la funzione.
+
+ La griglia superiore contiene **Funzioni che hanno chiamato la funzione corrente**, che visualizza i contributi individuali delle funzioni chiamanti (padre) i valori della funzione selezionata (corrente).
+
+ Nella griglia inferiore **Funzioni che sono state chiamate dalla funzione corrente** visualizza informazioni sui conflitti per le funzioni chiamate (figlio) della funzione selezionata quando la funzione figlio è stata chiamata dalla funzione corrente.
+
+|Colonna|Description|
+|------------|-----------------|
+|**Type**|Il contesto della funzione:<br /><br /> -   **0**: la funzione corrente<br />-   **1**: una funzione che chiama la funzione corrente<br />-   **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**Tempo blocco esclusivo**|- Per la funzione corrente, il periodo in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Il tempo di blocco non è incluso nelle funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, la parte del tempo di blocco esclusivo della funzione corrente usata quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il periodo in cui è stato impedito a questa funzione di eseguire il proprio codice quando la funzione è stata chiamata dalla funzione corrente. Il tempo di blocco non è incluso nelle funzioni figlio chiamate dalla funzione chiamata.|
+|**% tempo blocco esclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per questa funzione in questo contesto.|
+|**Conflitti esclusivi**|- Per la funzione corrente, il numero di volte in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Non sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, il numero di conflitti esclusivi della funzione corrente che si sono verificati quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di volte in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione quando la funzione è stata chiamata dalla funzione corrente. Non sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione chiamata.|
+|**% conflitti esclusivi**|Percentuale del numero totale di conflitti nell'esecuzione della profilatura che rappresentano conflitti esclusivi per questa funzione in questo contesto.|
+|**Indirizzo funzione**|Indirizzo o token della funzione.|
+|**Nome funzione**|Nome completo della funzione.|
+|**Tempo blocco inclusivo**|- Per la funzione corrente, il periodo in cui è stata impedita l'esecuzione di questa funzione o di una delle funzioni chiamate da questa funzione. Il tempo di blocco nelle funzioni chiamate dalla funzione corrente è incluso.<br />- Per una funzione chiamante, la parte del tempo di blocco inclusivo della funzione corrente usata quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il periodo in cui è stata impedita l'esecuzione di questa funzione o una delle funzioni chiamate dalla funzione quando questa funzione è stata chiamata dalla funzione corrente. Il tempo di blocco nelle funzioni chiamate dalla funzione chiamata è incluso.|
+|**% tempo blocco inclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo per questa funzione in questo contesto.|
+|**Conflitti inclusivi**|- Per la funzione corrente, il numero di volte in cui è stata impedita l'esecuzione di questa funzione o di una delle funzioni chiamate dalla funzione. Sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, il numero di conflitti inclusivi della funzione corrente che si sono verificati quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di volte in cui è stata impedita l'esecuzione di questa funzione o una delle funzioni chiamate dalla funzione quando questa funzione è stata chiamata dalla funzione corrente. Sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione chiamata.|
+|**% conflitti inclusivi**|Percentuale del numero totale di conflitti nell'esecuzione della profilatura che rappresentano conflitti esclusivi per questa funzione in questo contesto.|
+|**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**Percorso modulo**|Percorso del modulo che contiene la funzione.|
+|**ID processo**|ID processo (PID) del processo in cui si è verificato il conflitto.|
+|**Nome processo**|Nome del processo.|
+|**Nome funzione radice**|Nome della funzione corrente. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**File di origine**|File di origine che contiene la definizione per questa funzione.|
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)
+- [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)

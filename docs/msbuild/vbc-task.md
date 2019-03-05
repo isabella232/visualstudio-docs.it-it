@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768431"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623827"
 ---
 # <a name="vbc-task"></a>Vbc (attività)
-Esegue il wrapping di *vbc.exe*, che genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni su *vbc.exe*, vedere [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Esegue il wrapping di *vbc.exe*, che genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni su *vbc.exe*, vedere [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività `Vbc` .  
+## <a name="parameters"></a>Parametri
+ Nella tabella che segue vengono descritti i parametri dell'attività `Vbc` .
 
 
-| Parametro | Descrizione |
+| Parametro | Description |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parametro `String[]` facoltativo.<br /><br /> Specifica cartelle aggiuntive in cui eseguire la ricerca degli assembly specificati nell'attributo References. |
 | `AddModules` | Parametro `String[]` facoltativo.<br /><br /> Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questo parametro corrisponde all'opzione [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) del compilatore *vbc.exe*. |
@@ -88,21 +88,21 @@ Esegue il wrapping di *vbc.exe*, che genera file eseguibili (*EXE*), librerie a 
 | `Win32Icon` | Parametro `String` facoltativo.<br /><br /> Inserisce un file con estensione *ico* nell'assembly, che dà al file di output l'aspetto voluto in **Esplora file**. Questo parametro corrisponde all'opzione [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) del compilatore *vbc.exe*. |
 | `Win32Resources` | Parametro `String` facoltativo.<br /><br /> Inserisce nel file di output un file di risorsa Win32 (*RES*). Questo parametro corrisponde all'opzione [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) del compilatore *vbc.exe*. |
 
-## <a name="remarks"></a>Note  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Osservazioni
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene eseguita la compilazione di un progetto Visual Basic.  
+## <a name="example"></a>Esempio
+ Nell'esempio seguente viene eseguita la compilazione di un progetto Visual Basic.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Vedere anche
+- [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Attività](../msbuild/msbuild-tasks.md)
+- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

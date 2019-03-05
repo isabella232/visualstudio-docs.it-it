@@ -12,39 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a74a1d35128eb61c08d44fc430305a9ba7756c0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936537"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639934"
 ---
 # <a name="markerseriesisenabled-method"></a>Metodo marker_series::is_enabled
-Determina se il provider è stato abilitato da una sessione.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-bool is_enabled();  
-bool is_enabled(  
-   marker_importance _Importance,  
-   int _Category  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `_Importance`  
- Livello di importanza.  
-  
- `_Category`  
- Categoria.  
-  
-## <a name="return-value"></a>Valore restituito  
-  
-## <a name="requirements"></a>Requisiti  
- **Intestazione:** *cvmarkersobj.h*  
-  
- **Spazio dei nomi:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Vedere anche  
- [Classe marker_series](../profiling/marker-series-class.md)
+Determina se il provider è stato abilitato da una sessione.
+
+## <a name="syntax"></a>Sintassi
+
+```cpp
+bool is_enabled();
+bool is_enabled(
+   marker_importance _Importance,
+   int _Category
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `_Importance` Livello di importanza.
+
+ `_Category` Categoria.
+
+## <a name="return-value"></a>Valore restituito
+
+## <a name="requirements"></a>Requisiti
+ **Intestazione:** *cvmarkersobj.h*
+
+ **Spazio dei nomi:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Vedere anche
+- [Classe marker_series](../profiling/marker-series-class.md)

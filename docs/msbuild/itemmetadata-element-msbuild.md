@@ -16,60 +16,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78be9b906efd9720d9bc7ccdbe09614899ef6818
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989588"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644315"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
-Contiene una chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Un elemento può avere un numero qualsiasi di coppie chiave-valore dei metadati.  
+Contiene una chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Un elemento può avere un numero qualsiasi di coppie chiave-valore dei metadati.
 
- \<Project>  
- \<ItemGroup>  
- \<Item>  
+ \<Project> \<ItemGroup> \<Item>
 
-## <a name="syntax"></a>Sintassi  
+## <a name="syntax"></a>Sintassi
 
-```xml  
-<ItemMetadataName> Item Metadata value</ItemMetadataName>  
-```  
+```xml
+<ItemMetadataName> Item Metadata value</ItemMetadataName>
+```
 
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi  
+### <a name="attributes"></a>Attributi
 
-|Attributo|Description|  
-|---------------|-----------------|  
-|`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
+|Attributo|Description|
+|---------------|-----------------|
+|`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementi figlio  
- Nessuno.  
+### <a name="child-elements"></a>Elementi figlio
+ Nessuno.
 
-### <a name="parent-elements"></a>Elementi padre  
+### <a name="parent-elements"></a>Elementi padre
 
-|Elemento|Description|  
-|-------------|-----------------|  
-|[Item](../msbuild/item-element-msbuild.md)|Elemento definito dall'utente che definisce gli input per il processo di compilazione.|  
+|Elemento|Description|
+|-------------|-----------------|
+|[Item](../msbuild/item-element-msbuild.md)|Elemento definito dall'utente che definisce gli input per il processo di compilazione.|
 
-## <a name="text-value"></a>Valore di testo  
- Il valore di testo è facoltativo.  
+## <a name="text-value"></a>Valore di testo
+ Il valore di testo è facoltativo.
 
- Questo testo specifica il valore dei metadati dell'elemento, che può essere testo o XML.  
+ Questo testo specifica il valore dei metadati dell'elemento, che può essere testo o XML.
 
-## <a name="example"></a>Esempio  
- L'esempio di codice seguente mostra come aggiungere metadati `Culture` con il valore `fr` all'elemento `CSFile`.  
+## <a name="example"></a>Esempio
+ L'esempio di codice seguente mostra come aggiungere metadati `Culture` con il valore `fr` all'elemento `CSFile`.
 
-```xml  
-<ItemGroup>  
-    <CSFile Include="main.cs" >  
-        <Culture>fr</Culture>  
-    </CSFile>  
-</ItemGroup>  
-```  
+```xml
+<ItemGroup>
+    <CSFile Include="main.cs" >
+        <Culture>fr</Culture>
+    </CSFile>
+</ItemGroup>
+```
 
-## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Elementi](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Vedere anche
+- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elementi](../msbuild/msbuild-items.md)

@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911195"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800531"
 ---
 # <a name="overview-report-a-problem"></a>Panoramica: Segnalare un problema
 
@@ -52,7 +52,7 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 
 ![Stato Servono altre info per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Servono altre info** indica che sono necessarie altre informazioni di diagnostica per continuare l'analisi.  [Informazioni su come rispondere alle richieste di altre informazioni](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info).
+**Servono altre info** indica che sono necessarie altre informazioni di diagnostica per continuare l'analisi.  [Informazioni su come rispondere alle richieste di altre informazioni](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info).
 
 - - -
 
@@ -110,7 +110,7 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 
 È consigliabile usare la ricerca per assicurarsi che il problema che si sta per segnalare non sia già stato segnalato. Nel caso esista un elemento che corrisponde al problema, seguire e votare il ticket del problema.
 
- Inviare tutte le informazioni possibili per aiutare i team a riprodurre la propria esperienza.  Queste informazioni includono la procedura necessaria per riprodurre il problema, frammenti di codice, screenshot, registrazioni per la riproduzione del problema, file di log e altri elementi.  Vedere [come segnalare un problema in Visual Studio](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Inviare tutte le informazioni possibili per aiutare i team a riprodurre la propria esperienza.  Queste informazioni includono la procedura necessaria per riprodurre il problema, frammenti di codice, screenshot, registrazioni per la riproduzione del problema, file di log e altri elementi.  Vedere [come segnalare un problema in Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Come viene definita la priorità del feedback?
 
