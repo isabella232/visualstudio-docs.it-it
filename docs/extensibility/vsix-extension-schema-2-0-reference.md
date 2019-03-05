@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf013f24f38485d0db1ec6ca9f45d26f2ede2c9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: af4fd52b28846228f447f70320babbdd357bac89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684741"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324130"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimenti su VSIX extension schema 2.0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è disciplinato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di attributi e i tipi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore di manifesto ignora gli elementi XML e gli attributi che non comprende.
@@ -127,11 +127,11 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
         -   Versione unica & - solo la versione specificata.
 
         > [!IMPORTANT]
-        >  Versione 2.0 dello Schema VSIX è stata introdotta in Visual Studio 2012. Usare questo schema è necessario che Visual Studio 2012 o in un secondo momento è installato nel computer e usare VSIXInstaller.exe che fa parte di tale prodotto. È possibile destinate alle versioni precedenti di Visual Studio con un Visual Studio 2012 o versioni successive VSIX Installer, ma solo usando le versioni più recenti del programma di installazione.
+        > Versione 2.0 dello Schema VSIX è stata introdotta in Visual Studio 2012. Usare questo schema è necessario che Visual Studio 2012 o in un secondo momento è installato nel computer e usare VSIXInstaller.exe che fa parte di tale prodotto. È possibile destinate alle versioni precedenti di Visual Studio con un Visual Studio 2012 o versioni successive VSIX Installer, ma solo usando le versioni più recenti del programma di installazione.
 
         I numeri di versione di Visual Studio 2017 reperibili [numeri di build e date di rilascio di Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md).
 
-        Quando si esprime la versione per le versioni di Visual Studio 2017, deve essere sempre la versione secondaria **0**. Ad esempio, Visual Studio 2017 versione 15.3.26730.0 deve essere espresso come [15.0.26730.0,16.0). Questo è solo necessario per i numeri di versione di Visual Studio 2017.
+        Quando si esprime la versione per le versioni di Visual Studio 2017, deve essere sempre la versione secondaria **0**. Ad esempio, Visual Studio 2017 versione 15.3.26730.0 deve essere espresso come [15.0.26730.0,16.0). Questo è solo necessario per Visual Studio 2017 e versioni successive numeri di versione.
 
     -   `AnyAttribute*` -La `<InstallationTarget>` elemento consente un set aperto di attributi esposti in fase di esecuzione come un dizionario di coppie nome-valore.
 

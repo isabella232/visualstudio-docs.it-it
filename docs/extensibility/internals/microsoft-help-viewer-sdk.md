@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023915"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323932"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -29,7 +29,8 @@ Questo articolo contiene le attività seguenti per gli integratori di Visualizza
 
 -   Risorse aggiuntive
 
-### <a name="creating-a-topic-f1-support"></a>Creazione di un argomento (supporto per F1)
+## <a name="create-a-topic-f1-support"></a>Creare un argomento (supporto per F1)
+
 In questa sezione viene fornita una panoramica dei componenti di un argomento presentato, requisiti di argomento, una breve descrizione di come creare un argomento (inclusi i requisiti di supporto F1) e, infine, un argomento di esempio con il risultato del rendering.
 
 **Panoramica di argomento del Visualizzatore della Guida**
@@ -91,17 +92,17 @@ Creare un nuovo documento XHTML denominato ContosoTopic4.htm e includere il tag 
 
 ```
 
-Successivamente, aggiungere i dati per definire la modalità con cui l'argomento deve essere presentata (propri record con marchio o No), come fare riferimento in questo argomento per F1, in cui è presente in questo argomento nel sommario, il relativo ID (per riferimento al collegamento da altri argomenti), e così via.  Vedere la tabella "Metadati di tale contenuto" di seguito per un elenco completo dei metadati supportati.
+Successivamente, aggiungere i dati per definire la modalità con cui l'argomento deve essere presentata (propri record con marchio o No), come fare riferimento in questo argomento per F1, in cui è presente in questo argomento nel sommario, il relativo ID (per riferimento al collegamento da altri argomenti), e così via. Vedere la tabella "Metadati di tale contenuto" di seguito per un elenco completo dei metadati supportati.
 
 -   In questo caso, si userà un pacchetto di personalizzazione, una variante del pacchetto di personalizzazione di Visual Studio Help Viewer.
 
--   Aggiungere il nome di meta F1 e un valore ("Microsoft.Help.F1" contenuto = "ContosoTopic4") che corrisponderà al valore di F1 fornito nel contenitore delle proprietà IDE.  (Vedere la sezione supporto F1 per ulteriori informazioni).   Si tratta del valore che corrisponde a F1 da chiamare all'interno dell'IDE da visualizzare in questo argomento quando si sceglie il F1 nell'IDE.
+-   Aggiungere il nome di meta F1 e un valore ("Microsoft.Help.F1" contenuto = "ContosoTopic4") che corrisponderà al valore di F1 fornito nel contenitore delle proprietà IDE. (Vedere la sezione supporto F1 per ulteriori informazioni). Si tratta del valore che corrisponde a F1 da chiamare all'interno dell'IDE da visualizzare in questo argomento quando si sceglie il F1 nell'IDE.
 
--   Aggiungere l'ID dell'argomento. Questa è la stringa che viene utilizzata da altri argomenti per il collegamento a questo argomento.  È l'ID di Visualizzatore della Guida per questo argomento.
+-   Aggiungere l'ID dell'argomento. Questa è la stringa che viene utilizzata da altri argomenti per il collegamento a questo argomento. È l'ID di Visualizzatore della Guida per questo argomento.
 
 -   Per il sommario, aggiungere il nodo padre di questo argomento per definire dove verrà visualizzati in questo nodo del sommario dell'argomento.
 
--   Per il sommario, aggiungere l'ordine dei nodi di questo argomento. Quando il nodo padre ha un numero n di nodi figlio, definire il percorso di questo argomento nell'ordine dei nodi figlio. Ad esempio, in questo argomento è numero 4 di 4 argomenti figlio.)
+-   Per il sommario, aggiungere l'ordine dei nodi di questo argomento. Quando il nodo padre presenta `n` numero di elementi figlio definiscono nodi, nell'ordine dei nodi figlio percorso di questo argomento. Ad esempio, in questo argomento è numero 4 di 4 argomenti figlio.
 
 Sezione di metadati di esempio:
 
@@ -124,7 +125,6 @@ Sezione di metadati di esempio:
 
 </body>
 </html>
-
 ```
 
 **Corpo dell'argomento**
@@ -141,10 +141,10 @@ Il corpo (senza includere l'intestazione e piè di pagina) dell'argomento contie
 
 5.  Aggiungere testo specifico del linguaggio del codice:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Si noti che `devLangnu=` consente di immettere altri linguaggi. Ad esempio, `devLangnu="Fortran"` Visualizza Fortran quando il frammento di codice DisplayLanguage = Fortran
 
-6.  Aggiungere collegamenti della pagina: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Aggiungere collegamenti della pagina: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Nota: per non supportati nuovi "Lingua di visualizzazione" (esempio, F#, Cobol, Fortran) la colorazione del codice nel frammento di codice sarà bianco e nero.
+> Nota: per non supportati nuovi "Lingua di visualizzazione" (esempio, F#, Cobol, Fortran) la colorazione del codice nel frammento di codice sarà bianco e nero.
 
 **Argomento del Visualizzatore della Guida di esempio** il codice viene illustrato come definire i metadati, un frammento di codice, un'area comprimibile e testo specifici della lingua.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Un utente quindi possibile registrare CustomLibrary come lo spazio dei nomi nell
 
 Aggiungere la seguente chiave del Registro di sistema e il valore:
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help key: Output di Debug visualizzato nel valore delle vendite al dettaglio: SÌ
+::: moniker range="vs-2017"
 
-Nell'IDE, sotto la voce di menu della Guida, selezionare "Debug contesto Guida in linea"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+Valore: Visualizzazione Output di Debug nei dati delle vendite al dettaglio: SÌ
+
+Nell'IDE, sotto la voce di menu della Guida, selezionare **Debug contesto Guida**.
 
 **Contenuto dei metadati**
 
@@ -366,7 +378,8 @@ Nella tabella seguente, qualsiasi stringa che viene visualizzato tra parentesi q
 | \< contenuto name="Microsoft.Help.TopicVersion META ="[numero versione argomento]"/ > | Specifica la versione dell'argomento quando sono presenti più versioni in un catalogo. Poiché Microsoft.Help.Id non è garantito l'univocità, questo tag è obbligatorio in presenza di più di una versione di un argomento in un catalogo, ad esempio, quando un catalogo contiene un argomento per .NET Framework 3.5 e un argomento per .NET Framework 4 ed entrambi hanno la stessa Micro soft. Help.Id. |
 | \< meta name="SelfBranded" content="[TRUE or FALSE]"/> | Specifica se in questo argomento Usa il pacchetto di personalizzazione di gestione librerie della Guida all'avvio o un pacchetto di personalizzazione specifici per l'argomento. Questo tag deve essere TRUE o FALSE. Se è TRUE, il pacchetto di personalizzazione per l'argomento associato sostituisce il pacchetto di personalizzazione che viene impostato quando viene avviata Gestione librerie della Guida in modo che l'argomento viene eseguito il rendering come previsto anche se differisce dal rendering di altro contenuto. Se è FALSE, l'argomento corrente viene eseguito il rendering in base al pacchetto di personalizzazione che viene impostato quando viene avviata Gestione librerie della Guida. Per impostazione predefinita, Gestione librerie della Guida si presuppone self-branding deve essere false, a meno che la variabile SelfBranded è dichiarata come TRUE. Pertanto, non è necessario dichiarare \<nome meta = "SelfBranded" content = "FALSE" / >. |
 
-### <a name="creating-a-branding-package"></a>Creazione di un pacchetto del marchio
+## <a name="create-a-branding-package"></a>Creare un pacchetto del marchio
+
 La versione di Visual Studio include un numero di diversi prodotti Visual Studio, tra cui la Isolated e shell integrata per partner di Visual Studio.  Ognuno di questi prodotti richiede un certo livello di basate su argomenti di contenuto della Guida di personalizzazione univoche per il prodotto, il supporto.  Negli argomenti di Visual Studio, ad esempio, necessario avere una presentazione del marchio coerenti, mentre SQL Studio, che esegue il wrapping della Shell di ISO, richiede la propria univoco della Guida contenuto della personalizzazione per ogni argomento.  Un Partner Shell integrata può essere opportuno relativi argomenti della Guida per rientrare il principale contenuto della Guida del prodotto Visual Studio, mantenendo le proprie informazioni personalizzate distintive di argomento del.
 
 Personalizzazione dei pacchetti vengono installati per il prodotto che contiene il Visualizzatore della Guida.  Per i prodotti Visual Studio:
@@ -432,7 +445,6 @@ Il file Branding.xml contiene un elenco di elementi usati per il rendering in mo
 Nota: le variabili indicate da "{n}" sono le dipendenze del codice, rimozione o modifica di questi valori causerà errori ed eventualmente l'arresto anomalo dell'applicazione. Gli identificatori di localizzazione (esempio _locID="codesnippet.n") sono inclusi nel pacchetto di personalizzazione di Visual Studio.
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Il contenuto di Visual Studio consente di visualizzare un logo di Visual Studio,
 |ccOn.png|Immagine di sottotitoli codificati||
 |ImageSprite.png|Utilizzato per il rendering Area comprimibile|Espandere o comprimere grafico|
 
-### <a name="deploying-a-set-of-topics"></a>Distribuzione di un set di argomenti
+## <a name="deploy-a-set-of-topics"></a>Distribuire un set di argomenti
+
 Si tratta di un'esercitazione semplice e rapida per la creazione di un set di distribuzione del contenuto di Help Viewer costituito da un file MSHA e il set di file CAB o MSHCs che contiene gli argomenti. Il MSHA è un file XML che descrive un set di file CAB o i file MSHC. Help Viewer può leggere il MSHA per ottenere un elenco di contenuti (il file con estensione File CAB o. File MSHC) disponibili per l'installazione locale.
 
 Questo è solo una panoramica che descrive lo schema XML di base per il MSHA Visualizzatore della Guida.  È un esempio di implementazione seguito in questo esempio HelpContentSetup. msha e breve panoramica.
@@ -677,14 +690,14 @@ Per ottenere il pacchetto di personalizzazione di Visual Studio, copiare file Br
 </div>
 </body>
 </html>
-
 ```
 
 **Riepilogo**
 
 Usando ed estendendo i passaggi precedenti abiliterà VSPs distribuire i relativi set di contenuto per il Visualizzatore della Guida di Visual Studio.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Aggiunta della Guida a Visual Studio Shell (modalità integrata e isolata)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Aggiungere una Guida a Visual Studio Shell (modalità integrata e isolata)
+
 **Introduzione**
 
 Questa procedura dettagliata illustra come incorporare il contenuto della Guida in un'applicazione di Visual Studio Shell e quindi distribuirlo.
@@ -722,11 +735,11 @@ Definire l'archivio del contenuto nel Registro di sistema. Per la Shell integrat
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   Legenda: Valore stringa LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   Key: Valore stringa LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   Legenda: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione
+   Key: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione
 
 **Creare il progetto**
 
@@ -786,7 +799,7 @@ Per testare questo come se distribuita:
 
 6. Creare Catalogtype e aggiungere l'archivio del contenuto (passaggio precedente) che contiene:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -803,7 +816,7 @@ Per testare questo come se distribuita:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
-    Legenda: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione. Per ISO Shell, si tratta del nome del catalogo.
+    Key: Valore stringa CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentazione. Per ISO Shell, si tratta del nome del catalogo.
 
 8. Copiare il contenuto (file CAB o MSHC e MSHA) in una cartella locale.
 
@@ -817,7 +830,7 @@ Per testare questo come se distribuita:
 
 12. All'interno dell'IDE di Contoso, premere il tasto F1 per testare la funzionalità F1.
 
-### <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Risorse aggiuntive
 
 Per le API di Runtime, vedere [API di Windows della Guida](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

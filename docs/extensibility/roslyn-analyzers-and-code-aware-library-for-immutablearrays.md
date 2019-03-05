@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843312"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323640"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Gli analizzatori di Roslyn e libreria con riconoscimento del codice per ImmutableArrays
 
@@ -298,7 +298,7 @@ Successivamente, il metodo recupera la radice del documento e, poiché ciò può
 
 È ora possibile premere **F5** per eseguire l'analizzatore in una seconda istanza di Visual Studio. Aprire il progetto di console usato in precedenza. A questo punto dovrebbe essere visualizzato la lampadina in cui la nuova espressione di creazione oggetto si riferisce `ImmutableArray<int>`. Se si preme **Ctrl**+**.** (periodo), quindi verrà visualizzato il codice correggere e si noterà un'anteprima di differenza del codice generato automaticamente nella lampadina dell'interfaccia utente. Roslyn crea automaticamente questo.
 
-**Suggerimento Pro:** Se si avvia la seconda istanza di Visual Studio e non viene visualizzata la lampadina con la correzione del codice, potrebbe essere necessario cancellare la cache dei componenti di Visual Studio. La cancellazione della cache forza Visual Studio per esaminare nuovamente i componenti, in modo che Visual Studio deve selezionare il componente più recente. In primo luogo, arrestare la seconda istanza di Visual Studio. Quindi, nella **Windows Explorer**, passare alla *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Il "15.0" cambia da una versione a altra con Visual Studio). Eliminare le sottodirectory *ComponentModelCache*.
+**Suggerimento Pro:** Se si avvia la seconda istanza di Visual Studio e non viene visualizzata la lampadina con la correzione del codice, potrebbe essere necessario cancellare la cache dei componenti di Visual Studio. La cancellazione della cache forza Visual Studio per esaminare nuovamente i componenti, in modo che Visual Studio deve selezionare il componente più recente. In primo luogo, arrestare la seconda istanza di Visual Studio. Quindi, nella **Windows Explorer**, passare alla *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (Il "16.0" cambia da una versione a altra con Visual Studio). Eliminare le sottodirectory *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Comunicare con video e di fine progetto di codice
 
