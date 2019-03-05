@@ -8,73 +8,66 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd89e8c5d56606a60994d70d4d9fecbbe3b6e53c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c5c734d4d0b12bea1e13ac216700be5f85ed088
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940444"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627337"
 ---
 # <a name="attach"></a>Attach
-L'opzione *Attach* di **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).  
-  
- Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.  
-  
+L'opzione *Attach* di **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
+
+ Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.
+
 > [!NOTE]
->  Se l'opzione **Start** è stata specificata con l'opzione **Crosssession**, eventuali chiamate a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** devono specificare anche **Crosssession**.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cmd  
-VSPerfCmd.exe /Attach:ProcessID [Options]  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `ProcessID`  
- ID di processo (PID) del processo in esecuzione. Il PID di un processo in esecuzione è indicato nella scheda Processi di Gestione attività di Windows.  
-  
-## <a name="valid-options"></a>Opzioni valide  
- Le seguenti opzioni di **VSPerfCmd** possono essere combinate con l'opzione **Attach** in una singola riga di comando.  
-  
- **Crosssession**  
- Consente la profilatura delle applicazioni in sessioni diverse da quella di accesso. Obbligatoria se l'opzione **Start** è stata specificata con l'opzione **Crosssession**.  
-  
- **Start:** `Method`  
- Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.  
-  
- **TargetCLR**  
- Specifica la versione di Common Language Runtime (CLR) .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.  
-  
- **GlobalOn GlobalOff**  
- Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.  
-  
- **ProcessOn:** `PID` **ProcessOff:** `PID`  
- Riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.  
-  
-## <a name="interval-options"></a>Opzioni di intervallo  
- È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.  
-  
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
- Specifica il numero e il tipo di intervallo di campionamento.  
-  
--   **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.  
-  
--   **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.  
-  
--   **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.  
-  
--   **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.  
-  
-## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come connettersi a un'istanza di un'applicazione in esecuzione con ID processo 12345.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Attach:12345  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
+>  Se l'opzione **Start** è stata specificata con l'opzione **Crosssession**, eventuali chiamate a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** devono specificare anche **Crosssession**.
+
+## <a name="syntax"></a>Sintassi
+
+```cmd
+VSPerfCmd.exe /Attach:ProcessID [Options]
+```
+
+#### <a name="parameters"></a>Parametri
+ `ProcessID` ID di processo (PID) del processo in esecuzione. Il PID di un processo in esecuzione è indicato nella scheda Processi di Gestione attività di Windows.
+
+## <a name="valid-options"></a>Opzioni valide
+ Le seguenti opzioni di **VSPerfCmd** possono essere combinate con l'opzione **Attach** in una singola riga di comando.
+
+ **Crosssession** Consente la profilatura delle applicazioni in sessioni diverse da quella di accesso. Obbligatoria se l'opzione **Start** è stata specificata con l'opzione **Crosssession**.
+
+ **Start:** `Method` Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.
+
+ **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
+
+ **GlobalOn GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
+
+ **ProcessOn:** `PID` **ProcessOff:** `PID` Riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
+
+## <a name="interval-options"></a>Opzioni di intervallo
+ È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
+
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Specifica il numero e il tipo di intervallo di campionamento.
+
+-   **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
+
+-   **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
+
+-   **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
+
+-   **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.
+
+## <a name="example"></a>Esempio
+ In questo esempio viene illustrato come connettersi a un'istanza di un'applicazione in esecuzione con ID processo 12345.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Attach:12345
+```
+
+## <a name="see-also"></a>Vedere anche
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

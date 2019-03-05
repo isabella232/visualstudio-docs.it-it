@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380178"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843870"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -94,17 +92,17 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>D:  Se il vantaggio è gratuito, perché è necessario indicare un numero di carta di credito?
-A:  Il vantaggio è gratuito, ma l'attivazione usa lo stesso sistema usato per elaborare gli ordini a pagamento.  Sono disponibili due tipi di pagamento. 
-- Carta di credito.  Se si specifica un numero di carta di credito, NON viene effettuato alcun addebitato sulla carta. 
-- Fattura.  Se si seleziona "Fattura" come tipo di pagamento, non è necessario indicare un numero di carta di credito.  È anche possibile impostare l'intervallo su "annuale".  In questo modo si riceverà un solo messaggio di posta elettronica che informa che la fattura è pronta.  L'importo della fattura sarà $ 0,00.  
+R:  Il vantaggio è gratuito, ma l'attivazione usa lo stesso sistema usato per elaborare gli ordini a pagamento.  Sono disponibili due tipi di pagamento.
+- Carta di credito.  Se si specifica un numero di carta di credito, NON viene effettuato alcun addebitato sulla carta.
+- Fattura.  Se si seleziona "Fattura" come tipo di pagamento, non è necessario indicare un numero di carta di credito.  È anche possibile impostare l'intervallo su "annuale".  In questo modo si riceverà un solo messaggio di posta elettronica che informa che la fattura è pronta.  L'importo della fattura sarà $ 0,00.
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>D:  È possibile usare il vantaggio Power BI Pro incluso nelle licenze della sottoscrizione in un ambiente di produzione?
-A:  Sì, è possibile usarlo in un ambiente di produzione, tenendo conto di due aspetti importanti:
-- questa offerta richiede l'installazione in un tenant apposito.  Se è necessario avere una licenza di Power BI associata alle credenziali aziendali nel tenant della società, rivolgersi all'amministratore della società per acquistare e assegnare una licenza. 
-- Il vantaggio Power BI Pro non può essere usato nei tenant per enti pubblici.  
+R:  Sì, è possibile usarlo in un ambiente di produzione, tenendo conto di due aspetti importanti:
+- questa offerta richiede l'installazione in un tenant apposito.  Se è necessario avere una licenza di Power BI associata alle credenziali aziendali nel tenant della società, rivolgersi all'amministratore della società per acquistare e assegnare una licenza.
+- Il vantaggio Power BI Pro non può essere usato nei tenant per enti pubblici.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>D:  Durante il tentativo di attivare Power BI Pro viene visualizzato un messaggio che indica che si ha già un account di lavoro.  È ancora possibile usare il vantaggio?
-A:  Sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant di Office 365 attivi di cui non si è amministratore.  Per aggiungere Power BI Pro a un tenant, è necessario essere amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
+R:  Sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant di Office 365 attivi di cui non si è amministratore.  Per aggiungere Power BI Pro a un tenant, è necessario essere amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
 1.  Quando viene visualizzato il messaggio che indica che si ha già un account di lavoro, fare clic su **Creare nuovo account**.
 
 2.  Nella schermata successiva immettere le informazioni di contatto e fare clic su **Avanti**.
@@ -112,12 +110,12 @@ A:  Sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant
 3.  Creare l'ID utente e la password.  Per usare l'offerta gratuita, assicurarsi di selezionare **.onmicrosoft.com** come dominio. Fare clic su **Crea il mio account**.
     > [!div class="mx-imgBorder"]
     > ![Creazione dell'ID utente del tenant privato per il vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  I passaggi rimanenti del processo sono uguali a quelli descritti nell'articolo, a partire dal passaggio 6.
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>D:  In un tenant di un ente pubblico  è possibile usare il vantaggio? 
-A:  No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pubblici. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>D:  In un tenant di un ente pubblico  è possibile usare il vantaggio?
+R:  No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pubblici.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con Power BI Pro?

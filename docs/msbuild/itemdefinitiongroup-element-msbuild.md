@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d88c8197cc93a2c898ecbf19d52127061b73604
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936577"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597244"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 L'elemento `ItemDefinitionGroup` consente di definire un set di definizioni di elementi, ovvero valori di metadati applicati a tutti gli elementi nel progetto per impostazione predefinita. ItemDefinitionGroup ovvia alla necessità di usare l'[attività CreateItem](../msbuild/createitem-task.md) e l'[attività CreateProperty](../msbuild/createproperty-task.md). Per altre informazioni, vedere [Definizioni degli elementi](../msbuild/item-definitions.md).
 
-\<Project>  
-\<ItemDefinitionGroup>
+\<Project> \<ItemDefinitionGroup>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +44,19 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Descrizione|
+|Attributo|Description|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Descrizione|
+|Elemento|Description|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemDefinitionGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
@@ -83,5 +82,5 @@ L'esempio di codice seguente definisce due elementi di metadati, m e n, in un It
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)   
-[Elementi](../msbuild/msbuild-items.md)
+- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elementi](../msbuild/msbuild-items.md)

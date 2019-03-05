@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Domande sulla fatturazione per sottoscrizioni cloud.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67222d83ebe6bbc8be0683d0d4828397dbeaab9b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: d85b093b8877430c037fdc528abc8264b6c847b9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739235"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843779"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 
@@ -45,7 +43,7 @@ R: L'approccio più semplice per determinare se sono disponibili i privilegi app
 È necessario selezionare una sottoscrizione di Azure (ovvero un account di fatturazione) dall'elenco presentato di sottoscrizioni di Azure attualmente collegate all'account di accesso.
 Dato che il nome della sottoscrizione di Azure include per impostazione predefinita il tipo di account di fatturazione ("Pagamento a consumo", "Contratto Enterprise Agreement" e così via), spesso è chiaro se la sottoscrizione di Azure fa parte del contratto Enterprise Agreement.
 
-Un altro approccio consiste nel provare a visitare [Azure Enterprise Portal](http://ea.azure.com).  Se è possibile accedere a questo portale, si ha già il ruolo di amministratore dell'organizzazione o di proprietario dell'account. Solo i proprietari di account possono configurare nuovi account di fatturazione Azure in un contratto Enterprise Agreement. Se non si ha accesso ad Azure Enterprise Portal, scoprire chi è l'amministratore dell'organizzazione e chiedere a tale persona di essere aggiunti come proprietario dell'account in Azure Enterprise Portal.  Se non si riesce a trovare questa persona, è possibile [inviare un ticket di supporto](http://aka.ms/AzureEntSupport) e richiedere le informazioni di contatto.  Per il ticket di supporto sono necessari il nome dell'organizzazione e il numero di registrazione del contratto Enterprise Agreement.
+Un altro approccio consiste nel provare a visitare [Azure Enterprise Portal](http://ea.azure.com).  Se è possibile accedere a questo portale, si ha già il ruolo di amministratore dell'organizzazione o di proprietario dell'account. Solo i proprietari di account possono configurare nuovi account di fatturazione Azure in un contratto Enterprise Agreement. Se non si ha accesso ad Azure Enterprise Portal, scoprire chi è l'amministratore dell'organizzazione e chiedere a tale persona di essere aggiunti come proprietario dell'account in Azure Enterprise Portal.  Se non si riesce a trovare questa persona, è possibile [inviare un ticket di supporto](https://aka.ms/AzureEntSupport) e richiedere le informazioni di contatto.  Per il ticket di supporto sono necessari il nome dell'organizzazione e il numero di registrazione del contratto Enterprise Agreement.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>D: È possibile usare i fondi dell'impegno monetario di Azure indicato nel contratto Enterprise Agreement per acquistare sottoscrizioni cloud di Visual Studio?
 

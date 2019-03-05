@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379995"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843620"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -60,12 +58,8 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>D:  Il servizio di chat è disponibile in più lingue?
-   A: L'assistenza per i problemi relativi ad account, fatturazione e sottoscrizioni è disponibile in più lingue.  L'assistenza per l'individuazione di informazioni e documentazione tecnica per i prodotti è disponibile in inglese.
+   R: L'assistenza per i problemi relativi ad account, fatturazione e sottoscrizioni è disponibile in più lingue.  L'assistenza per l'individuazione di informazioni e documentazione tecnica per i prodotti è disponibile in inglese.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
-
-
-
-

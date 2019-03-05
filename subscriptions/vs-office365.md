@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380149"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841072"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus nelle sottoscrizioni di Visual Studio
 
@@ -23,9 +21,9 @@ Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 3
 ## <a name="getting-started-with-office-365-pro-plus"></a>Introduzione a Office 365 Pro Plus
 
 Attenersi alla procedura seguente per il download e l'attivazione di Office 365 Pro Plus:
-1. Accedere alla sottoscrizione di Visual Studio Enterprise.  
+1. Accedere alla sottoscrizione di Visual Studio Enterprise.
 2. Fare clic sulla scheda **Download**.
-3. Verrà visualizzato un elenco di download consigliati. Nell'elenco di Office scegliere **Office 365**. 
+3. Verrà visualizzato un elenco di download consigliati. Nell'elenco di Office scegliere **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Download per Office 365](_img/vs-office365/vs-office365-downloads.png)
 0. Per installare Office 365, è necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
@@ -36,7 +34,7 @@ Attenersi alla procedura seguente per il download e l'attivazione di Office 365 
    > ![Richiedi chiave di Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Prendere nota del codice appena richiesto. È sempre possibile tornare a questo elenco per visualizzarlo di nuovo.
 0. Chiudere la finestra a comparsa.
-0. Fare clic sul pulsante **Download**. 
+0. Fare clic sul pulsante **Download**.
    > [!div class="mx-imgBorder"]
    > ![Avvia download di Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Accedere con l'account Microsoft. Se è già stato eseguito l'accesso, fare clic su **Avanti**.
@@ -44,7 +42,7 @@ Attenersi alla procedura seguente per il download e l'attivazione di Office 365 
    > [!div class="mx-imgBorder"]
    > ![Immettere il codice " Product Key" di Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Fare di nuovo clic su **Avanti**.
-0. Fare clic su **Installa** per installare le applicazioni di Office. 
+0. Fare clic su **Installa** per installare le applicazioni di Office.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

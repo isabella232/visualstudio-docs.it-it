@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970413"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710110"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guida dell'amministratore di Visual Studio 2017
 
@@ -54,7 +54,7 @@ Negli ambienti aziendali, gli amministratori di sistema distribuiscono solitamen
 Sono stati resi disponibili diversi strumenti che consentono di [rilevare e gestire le istanze installate di Visual Studio](tools-for-managing-visual-studio-instances.md) nei computer client.
 
 > [!TIP]
-> Oltre alla documentazione inclusa nella guida dell'amministratore, anche gli articoli del [blog di Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) costituiscono un'ottima fonte di informazioni sull'installazione di Visual Studio 2017.
+> Oltre alla documentazione inclusa nella guida dell'amministratore, anche gli articoli dell'[archivio degli articoli sulla configurazione di Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/) costituiscono un'ottima fonte di informazioni sull'installazione di Visual Studio 2017.
 
 ## <a name="specify-customer-feedback-settings"></a>Specificare le impostazioni dei commenti e suggerimenti del cliente
 

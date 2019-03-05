@@ -13,16 +13,16 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1efe1266f0d6c8c644aa8115303926f81f74d30
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948615"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796686"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurare le porte per test controller e agenti di test
 
-È possibile modificare le porte in ingresso predefinite usate dal controller di test, dall'agente di test e dal client. Questa operazione potrebbe essere necessaria se si prova a usare insieme il controller di test, l'agente di test o il client con altro software che crea conflitti con le impostazioni della porta. Un altro motivo per il quale è necessaria la modifica delle porte è legato alla restrizione del firewall tra il controller di test e il client. In questo caso è possibile configurare manualmente la porta per abilitarla per un firewall in modo che sia possibile inviare i risultati al client tramite il controller di test.
+È possibile modificare le porte in ingresso predefinite utilizzate dal controller di test, dall'agente di test e dal client. Questa operazione potrebbe essere necessaria se si tenta di utilizzare insieme il controller di test, l'agente di test o il client con altro software che crea conflitti con le impostazioni della porta. Un altro motivo per il quale è necessaria la modifica delle porte è legato alla restrizione del firewall tra il controller di test e il client. In questo caso è possibile configurare manualmente la porta per abilitarla per un firewall in modo che sia possibile inviare i risultati al client tramite il controller di test.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -32,7 +32,7 @@ Nella figura seguente sono mostrati i punti di connessione tra il controller di 
 
 ## <a name="incoming-connections"></a>Connessioni in ingresso
 
-La porta predefinita usata dal test controller è 6901 e la porta predefinita dell'agente di test è 6910. Per la ricezione dei risultati del test dal controller di test viene usata una porta casuale per impostazione predefinita da parte del client. Per tutte le connessioni in ingresso, tramite il controller di test viene autenticata la parte chiamante e viene verificata l'appartenenza di quest'ultima al gruppo di sicurezza specifico.
+La porta predefinita usata dal test controller è 6901 e la porta predefinita dell'agente di test è 6910. Per la ricezione dei risultati del test dal controller di test viene utilizzata una porta casuale per impostazione predefinita da parte del client. Per tutte le connessioni in ingresso, tramite il controller di test viene autenticata la parte chiamante e viene verificata l'appartenenza di quest'ultima al gruppo di sicurezza specifico.
 
 - **Test controller** Le connessioni in ingresso sono sulla porta TCP 6901. Se necessario, è possibile configurare la porta in ingresso. Per altre informazioni, vedere [Configurare le porte in ingresso](#configure-the-incoming-ports).
 
@@ -63,7 +63,7 @@ Le porte TCP casuali vengono usate per tutte le connessioni in uscita.
 
 ## <a name="configure-the-incoming-ports"></a>Configurare le porte in ingresso
 
-Seguire le istruzioni per configurare le porte per un controller di test e gli agenti di test.
+Seguire le istruzioni per configurare le porte per un test controller e gli agenti di test.
 
 - **Servizio controller** Modificare il valore della porta modificando il file *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config*:
 
@@ -81,7 +81,7 @@ Seguire le istruzioni per configurare le porte per un controller di test e gli a
     </appSettings>
     ```
 
-- **Client** Usare l'editor del Registro di sistema per aggiungere i valori (**DWORD**) del Registro di sistema riportati di seguito. Per il client verrà usata una delle porte dall'intervallo specificato per ricevere dati dal controller di test:
+- **Client** Usare l'editor del Registro di sistema per aggiungere i valori (**DWORD**) del Registro di sistema riportati di seguito. Per il client verrà utilizzata una delle porte dall'intervallo specificato per ricevere dati dal controller di test:
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 

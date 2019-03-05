@@ -13,37 +13,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799185aa3ea1caa84c64d2887506d666fdc68577
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: badb2266e47fcbf0bb20c5fd6fd2f7f25a167997
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996376"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639986"
 ---
 # <a name="marks-view"></a>Visualizzazione Contrassegni
-Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campionamento inseriti nell'applicazione.  
-  
- I contrassegni predefiniti preinseriti nel report indicano l'inizio e la fine del programma.  
-  
- In questa visualizzazione vengono presentati anche i dati dei contatori di Windows ottenuti da contrassegni generati automaticamente. Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md).  
-  
- Per creare un filtro tra due contrassegni, selezionare i contrassegni, fare clic con il pulsante destro del mouse sui contrassegni e quindi scegliere **Aggiungi filtro in contrassegni** o **Aggiungi filtro in timestamp**.  
-  
- Nella tabella seguente sono riportate le definizioni delle colonne disponibili nella visualizzazione Contrassegni.  
-  
- **ID contrassegno**  
- Identificatore univoco del contrassegno di profilatura.  
-  
- **Nome contrassegno**  
- Nome dell'evento.  
-  
- **Timestamp**  
- Tempo compreso tra l'inizio della profilatura e il momento in cui viene registrato l'evento.  
-  
- Dati del contatore delle prestazioni di Windows  
- Quando vengono raccolti dati del contatore delle prestazioni di Windows, i valori vengono visualizzati in una colonna che ha il nome del contatore.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Panoramica del rapporto di prestazioni](../profiling/performance-report-overview.md)   
- [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; Finestra Controllo raccolta dati](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campionamento inseriti nell'applicazione.
+
+ I contrassegni predefiniti preinseriti nel report indicano l'inizio e la fine del programma.
+
+ In questa visualizzazione vengono presentati anche i dati dei contatori di Windows ottenuti da contrassegni generati automaticamente. Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md).
+
+ Per creare un filtro tra due contrassegni, selezionare i contrassegni, fare clic con il pulsante destro del mouse sui contrassegni e quindi scegliere **Aggiungi filtro in contrassegni** o **Aggiungi filtro in timestamp**.
+
+ Nella tabella seguente sono riportate le definizioni delle colonne disponibili nella visualizzazione Contrassegni.
+
+ **ID contrassegno** Identificatore univoco del contrassegno di profilatura.
+
+ **Nome contrassegno** Nome dell'evento.
+
+ **Timestamp** Tempo compreso tra l'inizio della profilatura e il momento in cui viene registrato l'evento.
+
+ Dati del contatore delle prestazioni di Windows Quando vengono raccolti dati del contatore delle prestazioni di Windows, i valori vengono visualizzati in una colonna che ha il nome del contatore.
+
+## <a name="see-also"></a>Vedere anche
+- [Panoramica del rapporto di prestazioni](../profiling/performance-report-overview.md)
+- [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [&#91;NIB&#93; Finestra Controllo raccolta dati](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

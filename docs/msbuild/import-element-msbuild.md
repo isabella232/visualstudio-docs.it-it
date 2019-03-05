@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924435"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629911"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa il contenuto di un file di progetto in un altro file di progetto.
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +42,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Descrizione|
+|Attributo|Description|
 |---------------|-----------------|
 |`Project`|Attributo obbligatorio.<br /><br /> Percorso del file di progetto da importare. Il percorso può includere caratteri jolly. I file corrispondenti vengono importati in base all'ordine. Usando questa funzionalità, è possibile aggiungere codice a un progetto aggiungendo il file di codice a una directory.|
 |`Condition`|Attributo facoltativo.<br /><br /> Una condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
@@ -53,12 +52,12 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Tramite l'elemento `Import` , è possibile riutilizzare codice comune a più file di progetto. Ciò semplifica la gestione del codice, poiché tutti gli aggiornamenti apportati al codice condiviso vengono propagati a tutti i progetti che lo importano.
 
  Per convenzione i file di progetto condivisi importati vengono salvati come file con estensione *targets* ma sono file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] non impedisce di importare un progetto con una diversa estensione del nome del file, ma è consigliabile usare l'estensione *targets* per coerenza.
@@ -108,5 +107,5 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)  
-[Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

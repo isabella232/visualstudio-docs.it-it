@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635085"
 ---
 # <a name="understand-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 
@@ -131,5 +131,5 @@ Dati di interazione tra livelli raccolti dagli strumenti di profilatura
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Procedura: Raccogliere dati sulle prestazioni per un sito web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)

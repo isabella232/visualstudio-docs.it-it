@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920600"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708641"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
@@ -35,7 +35,7 @@ Alcune estensioni offrono anche gli schemi della tastiera:
 
 Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio:
 
-| Tasti di scelta rapida (tutti i profili) | Comando | Descrizione |
+| Tasti di scelta rapida (tutti i profili) | Comando | Description |
 |-|-|-|
 | **CTRL**+**T** | Vai a tutti | Consente di passare a qualsiasi dichiarazione di file/tipo/membro/simbolo |
 | **F12** (o **CTRL**+**clic**) | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
@@ -92,6 +92,8 @@ Visual Studio 2017 include molti refactoring, azioni di generazione del codice e
   - *Aggiungi il controllo Null*
   - *Aggiungi parametro*
   - *Rimuovi istruzioni using non necessarie*
+  - *Ciclo foreach verso query o metodi LINQ*
+  - *Refactoring per il pull di membri con opzioni della finestra di dialogo*
   - Per altre informazioni, vedere la [documentazione](https://aka.ms/refactorings)
 - È possibile scrivere un proprio refactoring o correzione del codice con gli [analizzatori Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Diversi membri della community hanno scritto estensioni gratuite che aggiungono controlli aggiuntivi del codice:
@@ -108,7 +110,7 @@ Visual Studio 2017 include molte funzionalità che consentono di eseguire ricerc
 
 | Funzionalità | Collegamento | Dettagli/Miglioramenti |
 |- | - | -|
-| Trova tutti i riferimenti | **MAIUSC**+**F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e così via. È anche possibile "bloccare" i risultati. |
+| Trova tutti i riferimenti | **MAIUSC**+**F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL**+**F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |
 | Vai a definizione | **F12** o **CTRL**+**clic**| È possibile tenere premuto **CTRL** mentre si fa clic per passare alla definizione |
 | Visualizza definizione | **ALT**+**F12** | Visualizzazione inline di una definizione |

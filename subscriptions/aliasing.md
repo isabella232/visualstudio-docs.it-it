@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817438"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841627"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
@@ -150,7 +148,7 @@ Ti è stata assegnata una sottoscrizione di Visual Studio ed è possibile che tu
 
 6. I vantaggi dovrebbero essere ora visibili
 
-Nota: in occasione delle visite future di https://my.visualstudio.com, potrebbe essere richiesto di selezionare l'account che si vuole usare (ad esempio "Account aziendale o dell'istituto di istruzione" o "Account personale").  Dopo aver completato i passaggi precedenti, sarà necessario usare l'opzione "Account personale".
+Nota:  quando si torna a visitare https://my.visualstudio.com è possibile che venga richiesto di selezionare l'account che si vuole usare (ad esempio "Account aziendale o dell'istituto di istruzione" o "Account personale").  Dopo aver completato i passaggi precedenti, sarà necessario usare l'opzione "Account personale".
 
 Se si verificano problemi, contattare il team di supporto (https://visualstudio.microsoft.com/subscriptions/support/).
 

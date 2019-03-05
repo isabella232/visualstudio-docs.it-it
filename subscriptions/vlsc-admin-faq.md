@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Domande frequenti sulla migrazione dell'amministrazione del Volume License Service Center
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297546"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844100"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrazione dell'amministrazione delle sottoscrizioni di Visual Studio
 
@@ -60,7 +58,7 @@ Per istruzioni sul processo, leggere quanto riportato di seguito.
 
     Dopo aver immesso il PCN, si aprirà la pagina in cui sarà possibile aggiungere amministratori e amministratori con privilegi elevati (precedentemente noti come gestori delle sottoscrizioni). Sarebbe buona norma completare tale operazione prima della data di migrazione dell'organizzazione. In questo modo si evitano interruzioni nella gestione delle sottoscrizioni.
 
-3.  **Accesso al nuovo portale di gestione delle sottoscrizioni:** dopo aver eseguito la migrazione dell'organizzazione, gli amministratori e gli amministratori con privilegi elevati riceveranno dei messaggi di posta elettronica per eseguire l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
+3.  **Accesso al nuovo portale per la gestione delle sottoscrizioni:** dopo la migrazione dell'organizzazione gli amministratori e gli amministratori con privilegi elevati riceveranno messaggi di posta elettronica per eseguire l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
 
 > [!NOTE]
 > Se il contatto principale o per le comunicazioni riceve più di un messaggio di posta elettronica, significa che ha più PCN. È necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.
@@ -77,10 +75,10 @@ I contatti principali e per le notifiche dell'organizzazione riceveranno un mess
 Si continuerà a gestire le sottoscrizioni tramite VLSC fino al ricevimento del messaggio di posta elettronica dalle sottoscrizioni di Visual Studio in cui si avvisa l'organizzazione che è stata eseguita la migrazione ed è pronta per essere gestita nel nuovo portale.
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>Dove può essere individuato il numero PCN o il numero di autorizzazione?
-Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e selezionare il percorso seguente: **Sottoscrizioni** > **Sottoscrizioni di Visual Studio**. Il PCN si trova sotto **Agreement/Public Customer Number Results** (Contratti/Risultati numero cliente pubblico). Seguire la procedura dettagliata sull'individuazione del numero PCN riportato in questo [articolo della Guida](find-pcn.md).
+Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passare al percorso seguente: **Subscriptions** > **Visual Studio Subscriptions** (Sottoscrizioni/Sottoscrizioni di Visual Studio). Il PCN si trova sotto **Agreement/Public Customer Number Results** (Contratti/Risultati numero cliente pubblico). Seguire la procedura dettagliata sull'individuazione del numero PCN riportato in questo [articolo della Guida](find-pcn.md).
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>In che modo si stabilisce chi è il contatto principale o per le comunicazioni?
-Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e selezionare percorso seguente: **Licenze > Riepilogo relazione** Selezionare **Licensing ID > Contacts** (ID di licenza > Contatti). Seguire la procedura dettagliata sull'individuazione del contatto principale o per le comunicazioni in questo [articolo della Guida](find-primary-contact.md).
+Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passare al percorso seguente: **Licenses > Relationship Summary** (Licenze > Riepilogo relazione) Selezionare il proprio **Licensing ID > Contacts** (ID di licenza > Contatti). Seguire la procedura dettagliata sull'individuazione del contatto principale o per le comunicazioni in questo [articolo della Guida](find-primary-contact.md).
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Cosa accade se il contatto principale o per le comunicazioni ha lasciato o non lavora più per la società oppure non è disponibile per completare il caricamento?
 È necessario [contattare l'assistenza](https://visualstudio.microsoft.com/subscriptions/support/#talktous) e comunicare il messaggio di posta elettronica usato in VLSC per la gestione delle sottoscrizioni. Dopo aver eseguito la verifica, l'assistenza offrirà supporto per eseguire il processo di caricamento.
@@ -98,7 +96,7 @@ Sì. Se il contratto è ancora attivo, sarà eseguita la migrazione dell'organiz
 Sì. Verrà comunque eseguita la migrazione dell'organizzazione al nuovo sistema. Per i tipi di contratto che lo consentono, il nuovo sistema offrirà la possibilità di gestire richieste in eccedenza.
 
 ### <a name="what-if-my-organization-has-more-than-one-subscription-assigned-to-a-single-useremail-address"></a>Cosa accade se l'organizzazione ha più di una sottoscrizione assegnata a un unico utente o indirizzo di posta elettronica?
-Verrà comunque eseguita la migrazione dell'organizzazione.  Non sarà tuttavia possibile assegnare sottoscrizioni aggiuntive dello stesso livello, ad esempio Enterprise, Professional, e così via, a tale utente o indirizzo di posta elettronica. Tutte le sottoscrizioni dello stesso livello che hanno il medesimo indirizzo di posta elettronica al momento della migrazione saranno ancora visibili. Gli amministratori dovranno tuttavia modificare gli indirizzi di posta elettronica in modo che siano univoci. Non sarà possibile assegnare più sottoscrizioni dello stesso livello a un solo utente o indirizzo di posta elettronica nel nuovo portale.
+Verrà comunque eseguita la migrazione dell'organizzazione.  Non è tuttavia possibile assegnare sottoscrizioni aggiuntive dello stesso livello, come Enterprise, Professional e così via a tale utente o indirizzo di posta elettronica. Tutte le sottoscrizioni dello stesso livello che hanno il medesimo indirizzo di posta elettronica al momento della migrazione saranno ancora visibili. Gli amministratori dovranno tuttavia modificare gli indirizzi di posta elettronica in modo che siano univoci. Non sarà possibile assegnare più sottoscrizioni dello stesso livello a un solo utente o indirizzo di posta elettronica nel nuovo portale.
 
 ### <a name="where-can-i-find-the-most-up-to-date-information-about-the-migration"></a>Dove è possibile trovare le informazioni più aggiornate relative alla migrazione?
 Per informazioni aggiornate sulla migrazione, visitare la [pagina Web](https://aka.ms/vs-admin) dell'amministratore delle sottoscrizioni di Visual Studio. Per assistenza, visitare la [pagina di supporto](http://visualstudio.microsoft.com/subscriptions/support/#!collections/962-subscriptions) di Visual Studio che contiene informazioni per risolvere i problemi autonomamente e informazioni per contattare l'assistenza. Per facilitare questo processo di transizione, nei prossimi mesi continueranno a essere aggiunti aggiornamenti nella pagina Web di amministrazione e inviati tramite posta elettronica.

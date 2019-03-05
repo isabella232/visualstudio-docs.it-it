@@ -10,15 +10,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942284"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696493"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Avvio, Ambiente, finestra di dialogo Opzioni
-Usare questa pagina per personalizzare la pagina di avvio di Visual Studio o impostare un'azione predefinita diversa all'avvio di Visual Studio. Per altre informazioni, vedere [Personalizzazione della pagina iniziale](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker range="vs-2017"
+
+Usare questa pagina per personalizzare la pagina di avvio di Visual Studio o impostare un'azione predefinita diversa all'avvio di Visual Studio. Per altre informazioni, vedere l'argomento [Personalizzare l'avvio](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Usare questa pagina per impostare un'azione predefinita diversa all'avvio di Visual Studio. Nell'elenco **All'avvio, apri** scegliere tra **Finestra iniziale** (che consente di aprire un progetto nuovo o esistente), **Soluzione più recente** o **Ambiente vuoto**.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 

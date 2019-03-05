@@ -15,34 +15,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07584130b89eb90da24ebf1ee4783a312033d07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28f0c1ad2026a23833f777a7a40dffc76e3a379c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940466"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632693"
 ---
 # <a name="summary-view"></a>Visualizzazione Riepilogo
-La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.  
+La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.
 
- Per tutte le visualizzazioni Riepilogo, ad eccezione della visualizzazione Riepilogo dei dati di concorrenza, il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura.  
+ Per tutte le visualizzazioni Riepilogo, ad eccezione della visualizzazione Riepilogo dei dati di concorrenza, il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura.
 
--   Se si specifica un segmento di tempo nel grafico, è possibile rianalizzare i dati per tale segmento o ingrandire la visualizzazione della sequenza temporale fino a selezionare il segmento specificato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+-   Se si specifica un segmento di tempo nel grafico, è possibile rianalizzare i dati per tale segmento o ingrandire la visualizzazione della sequenza temporale fino a selezionare il segmento specificato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
 
--   È possibile fare clic su una funzione in un elenco della visualizzazione Riepilogo per aprire la visualizzazione Dettagli funzione per la funzione. È anche possibile fare clic con il pulsante destro del mouse sulla funzione per accedere ad altre opzioni di visualizzazione.  
+-   È possibile fare clic su una funzione in un elenco della visualizzazione Riepilogo per aprire la visualizzazione Dettagli funzione per la funzione. È anche possibile fare clic con il pulsante destro del mouse sulla funzione per accedere ad altre opzioni di visualizzazione.
 
--   Per modificare il numero di elementi visualizzati negli elenchi della visualizzazione Riepilogo, aprire il menu **Strumenti**, scegliere **Opzioni** e quindi fare clic su **Strumenti per le prestazioni**. In **Impostazioni generali** modificare l'impostazione **Numero delle funzioni nella visualizzazione Riepilogo**.  
+-   Per modificare il numero di elementi visualizzati negli elenchi della visualizzazione Riepilogo, aprire il menu **Strumenti**, scegliere **Opzioni** e quindi fare clic su **Strumenti per le prestazioni**. In **Impostazioni generali** modificare l'impostazione **Numero delle funzioni nella visualizzazione Riepilogo**.
 
-## <a name="notifications-links"></a>Collegamenti di notifica  
- È possibile fare clic sui collegamenti nell'elenco Notifica per impostare le opzioni di visualizzazione per il report. L'elenco è a destra del grafico della sequenza temporale.  
+## <a name="notifications-links"></a>Collegamenti di notifica
+ È possibile fare clic sui collegamenti nell'elenco Notifica per impostare le opzioni di visualizzazione per il report. L'elenco è a destra del grafico della sequenza temporale.
 
-|||  
-|-|-|  
-|**Mostra tutto il codice**<br /><br /> **Mostra Just My Code**|Non disponibile per il codice nativo o per i dati di profilatura raccolti tramite il metodo di strumentazione. Consente di passare dalla visualizzazione dei dati solo dal codice utente (**Mostra Just My Code**) alla visualizzazione dei dati da tutto il codice, incluso il codice di sistema (**Mostra tutto il codice**). Per impostazione predefinita, i dati sono limitati al codice utente. Per modificare l'impostazione, vedere [Procedura: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
-|**Visualizza materiale sussidiario**|Visualizza gli avvisi delle regola per le prestazioni nella finestra **Elenco errori**. Per altre informazioni, vedere [Usare le regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)|  
+|||
+|-|-|
+|**Mostra tutto il codice**<br /><br /> **Mostra Just My Code**|Non disponibile per il codice nativo o per i dati di profilatura raccolti tramite il metodo di strumentazione. Consente di passare dalla visualizzazione dei dati solo dal codice utente (**Mostra Just My Code**) alla visualizzazione dei dati da tutto il codice, incluso il codice di sistema (**Mostra tutto il codice**). Per impostazione predefinita, i dati sono limitati al codice utente. Per modificare l'impostazione, vedere [Procedura: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
+|**Visualizza materiale sussidiario**|Visualizza gli avvisi delle regola per le prestazioni nella finestra **Elenco errori**. Per altre informazioni, vedere [Usare le regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)|
 
-## <a name="report"></a>Report  
- È possibile fare clic sui collegamenti nell'elenco Rapporto per aprire visualizzazioni diverse e confrontare, salvare o filtrare il report. L'elenco è a destra del grafico della sequenza temporale.  
+## <a name="report"></a>Report
+ È possibile fare clic sui collegamenti nell'elenco Rapporto per aprire visualizzazioni diverse e confrontare, salvare o filtrare il report. L'elenco è a destra del grafico della sequenza temporale.
 
 
 | | |
@@ -55,7 +55,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 | **Filtra dati report** | Visualizza il riquadro per filtrare i report di profilatura in cui è possibile specificare criteri per limitare i dati nella visualizzazione del report. Per altre informazioni, vedere [Filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md). |
 | **Attiva/Disattiva schermo intero** | Disattiva la modalità schermo intero per la visualizzazione dei report. |
 
-## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Riepilogo: dati di campionamento](../profiling/summary-view-sampling-data.md)   
- [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)   
- [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)
+## <a name="see-also"></a>Vedere anche
+- [Visualizzazione Riepilogo: dati di campionamento](../profiling/summary-view-sampling-data.md)
+- [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)
+- [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)

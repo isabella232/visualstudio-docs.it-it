@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089266"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615546"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Questa libreria può essere usata facilmente in C e C++.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > L'elemento decorator indicherà al compilatore che questa funzione è una chiamata a un allocatore.  Ogni chiamata alla funzione restituirà l'indirizzo del sito di chiamata, la dimensione dell'istruzione di chiamata e il typeId del nuovo oggetto a un nuovo simbolo `S_HEAPALLOCSITE`.  Quando viene allocato uno stack di chiamate, Windows genera un evento ETW con queste informazioni.  Lo strumento profiler della memoria analizza lo stack di chiamate cercando un indirizzo mittente corrispondente a un simbolo `S_HEAPALLOCSITE` e le informazioni del typeId nel simbolo vengono usate per visualizzare il tipo di runtime dell'allocazione.
    >
@@ -79,7 +79,7 @@ Questa libreria può essere usata facilmente in C e C++.
    ```
 
    Se si usa C, usare la funzione `OpenHeapTracker`.  Questa funzione restituirà un handle da usare quando si chiamano altre funzioni di rilevamento:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Questa libreria può essere usata facilmente in C e C++.
    ```
 
 ## <a name="track-memory-usage"></a>Verificare l'utilizzo della memoria
-Dopo aver definito le chiamate, è possibile verificare l'uso dell'heap personalizzato con lo strumento **Utilizzo memoria** standard di Visual Studio.  Per altre informazioni sull'uso di questo strumento, vedere la documentazione relativa a [Utilizzo memoria](../profiling/memory-usage.md). Verificare di avere abilitato la profilatura dell'heap con gli snapshot, poiché altrimenti non verrà visualizzato l'uso dell'heap personalizzato. 
+Dopo aver definito le chiamate, è possibile verificare l'uso dell'heap personalizzato con lo strumento **Utilizzo memoria** standard di Visual Studio.  Per altre informazioni sull'uso di questo strumento, vedere la documentazione relativa a [Utilizzo memoria](../profiling/memory-usage.md). Verificare di avere abilitato la profilatura dell'heap con gli snapshot, poiché altrimenti non verrà visualizzato l'uso dell'heap personalizzato.
 
 ![Abilitare la profilatura dell'heap](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Come con l'heap standard di Windows, è possibile usare questo strumento per con
 > Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni**, che viene abilitato dall'opzione di menu **Debug** > **Profiler prestazioni** o dalla combinazione di tasti **ALT**+**F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug** > **Windows** > **Mostra strumenti di diagnostica** o la combinazione di tasti **CTRL**+**ALT**+**F2**, contiene questa funzionalità.
 
 ## <a name="see-also"></a>Vedere anche
-[Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)  
-[Utilizzo memoria](../profiling/memory-usage.md)
+[Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)
+[Utilizzo della memoria](../profiling/memory-usage.md)

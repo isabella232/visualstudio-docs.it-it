@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859020"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843801"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del portale per i sottoscrittori - my.<span></span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Il portale delle sottoscrizioni di Visual Studio, [https://my.visualstudio.com](
 
 Per usare il portale, è necessario accedere con l'identità associata alla sottoscrizione.  Può trattarsi dell'account Microsoft o di un indirizzo di posta elettronica fornito da un'organizzazione, ad esempio il datore di lavoro o l'istituto di istruzione.  Informazioni sull'[accesso](signing-in.md).
 
-Il portale è organizzato in sei pagine.  Ogni pagina consente di accedere a diversi prodotti o servizi inclusi nella sottoscrizione.  Le sei pagine sono Vantaggi, Download, Codici Product Key, Abbonamenti, Supporto e Marketplace. 
+Il portale è organizzato in sei pagine.  Ogni pagina consente di accedere a diversi prodotti o servizi inclusi nella sottoscrizione.  Le sei pagine sono Vantaggi, Download, Codici Product Key, Abbonamenti, Supporto e Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Gli strumenti e i servizi inclusi nella sottoscrizione vengono visualizzati come "riquadri" nella pagina Vantaggi.  Non tutti i vantaggi sono inclusi in tutte le sottoscrizioni. I riquadri sono raggruppati in tre categorie: Strumenti, Sviluppo professionale e Supporto.  Se si usa Visual Studio Dev Essentials, si noterà anche una categoria intitolata Contenuti che può contenere una selezione di vantaggi dalle altre tre categorie.
+Gli strumenti e i servizi inclusi nella sottoscrizione vengono visualizzati come "riquadri" nella pagina Vantaggi.  Non tutti i vantaggi sono inclusi in tutte le sottoscrizioni. I riquadri sono raggruppati in tre categorie:  Strumenti, Sviluppo professionale e Supporto.  Se si usa Visual Studio Dev Essentials, si noterà anche una categoria intitolata Contenuti che può contenere una selezione di vantaggi dalle altre tre categorie.
 
 ### <a name="tools"></a>Strumenti
 Nella categoria Strumenti sono disponibili gli strumenti di sviluppo principali, ad esempio l'IDE di Visual Studio, Azure DevOps e gli strumenti forniti dai partner.  Si noteranno anche servizi come Azure e Visual Studio App Center.

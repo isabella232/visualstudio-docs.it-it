@@ -1,18 +1,18 @@
 ---
 title: Suggerimenti per la produttività
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913028"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702720"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -66,11 +66,13 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
 - **Visualizzazione dei soli errori da risolvere**. Se si sceglie il pulsante **Filtro** nella barra degli strumenti **Elenco errori**, è possibile ridurre il numero di errori visualizzati nella finestra **Elenco errori**. È possibile visualizzare solo gli errori nei file aperti nell'editor, solo gli errori nel file corrente o solo gli errori nel progetto corrente. È possibile anche eseguire ricerche nella finestra **Elenco errori** per trovare errori specifici.
 
-- **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave per gli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
+- **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella di ricerca [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave corrispondenti agli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
 
     ![Risultati di Avvio veloce per il nuovo progetto](../ide/media/productivity_quicklaunch.png)
 
     **Avvio veloce** consente di visualizzare i collegamenti alla finestra di dialogo **Nuovo progetto**, alla finestra di dialogo **Aggiungi nuovo elemento** e alla pagina **Progetti e soluzioni** nella finestra di dialogo **Opzioni**. I risultati di Avvio veloce possono anche includere file di progetto e finestre degli strumenti.
+
+  La casella di ricerca **Avvio veloce** viene visualizzata in alto a destra nell'IDE. In alternativa premere **CTRL**+**Q** per accedere.
 
 ## <a name="debug-code"></a>Debug del codice
 

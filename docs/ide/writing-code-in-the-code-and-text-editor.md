@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908855"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721514"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -56,15 +56,15 @@ Diverse funzionalità avanzate sono disponibili nel menu **Modifica** > **Avanza
 |Formatta selezione|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nella selezione.|
 |Inserisci tabulazione in righe selezionate|Cambia gli spazi iniziali in tabulazioni dove appropriato.|
 |Rimuovi tabulazione da righe selezionate|Cambia le tabulazioni iniziali in spazi. Per convertire tutti gli spazi nel file in tabulazioni (o tutte le tabulazioni in spazi), è possibile usare i comandi `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Questi comandi non vengono visualizzati nei menu di Visual Studio, ma possono essere richiamati dalla finestra di **accesso rapido** o dalla finestra di comando.|
-|Maiuscole|Converte in maiuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in maiuscolo il carattere nel punto di inserimento.|
-|Minuscole|Converte in minuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in minuscolo il carattere nel punto di inserimento.|
+|Maiuscole|Converte in maiuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in maiuscolo il carattere nel punto di inserimento. Collegamento: **CTRL**+**MAIUSC**+**U**.|
+|Minuscole|Converte in minuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in minuscolo il carattere nel punto di inserimento. Collegamento: **CTRL**+**U**.|
 |Sposta in alto righe selezionate|Sposta la riga selezionata di una riga verso l'alto. Collegamento: **Alt**+**Freccia SU**.|
 |Sposta in basso righe selezionate|Sposta la riga selezionata di una riga verso il basso. Collegamento: **Alt**+**Freccia GIÙ**.|
-|Elimina spazio vuoto superfluo|Elimina le tabulazioni o gli spazi alla fine della riga corrente.|
+|Elimina spazio vuoto superfluo|Elimina le tabulazioni o gli spazi alla fine della riga corrente. Collegamento: **CTRL**+**K**, **CTRL**+**\\**|
 |Mostra/Nascondi spazi|Visualizza gli spazi sotto forma di punti mediani e le tabulazioni sotto forma di frecce. La fine di un file viene visualizzata come un glifo rettangolare. Se è selezionata l'opzione **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **A capo automatico** > **Mostra icone per ritorno a capo automatico**, viene visualizzato anche il glifo.|
 |A capo automatico|Rende visibili tutte le righe di un documento nella finestra del codice. È possibile attivare e disattivare il ritorno a capo nelle impostazioni **Tutti i linguaggi dell'editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**).|
-|Commenta selezione|Aggiunge caratteri di commento alla selezione o alla riga corrente.|
-|Rimuovi commento selezione|Rimuove tutti i caratteri di commento dalla selezione o dalla riga corrente.|
+|Commenta selezione|Aggiunge caratteri di commento alla selezione o alla riga corrente. Collegamento: **CTRL**+**K**, **CTRL**+**C**|
+|Rimuovi commento selezione|Rimuove tutti i caratteri di commento dalla selezione o dalla riga corrente. Collegamento: **CTRL**+**K**, **CTRL**+**U**|
 |Aumenta rientro riga|Aggiunge una tabulazione (o gli spazi equivalenti) alle righe selezionate o alla riga corrente.|
 |Riduci rientro riga|Rimuove una tabulazione (o gli spazi equivalenti) dalle righe selezionate o dalla riga corrente.|
 |Seleziona tag|In un documento che contiene tag, ad esempio XML o HTML, seleziona il tag.|
@@ -76,7 +76,7 @@ Diverse funzionalità avanzate sono disponibili nel menu **Modifica** > **Avanza
 
 ## <a name="find-references-in-your-code-base"></a>Cercare riferimenti nella codebase
 
-Per trovare i riferimenti a particolari elementi del codice presenti nella codebase, è possibile usare il comando **Trova tutti i riferimenti**. Inoltre, quando si sceglie un tipo o un membro, la funzionalità di **evidenziazione dei riferimenti** evidenzia automaticamente tutti i riferimenti a quel tipo o membro. Per altre informazioni, vedere [Ricerca di riferimenti nel codice](finding-references.md).
+Per trovare i riferimenti a elementi specifici del codice presenti nella codebase, è possibile usare il comando **Trova tutti i riferimenti** o premere **MAIUSC**+**F12**. Inoltre, quando si sceglie un tipo o un membro, la funzionalità di **evidenziazione dei riferimenti** evidenzia automaticamente tutti i riferimenti a quel tipo o membro. Per altre informazioni, vedere [Ricerca di riferimenti nel codice](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Personalizzare l'editor
 

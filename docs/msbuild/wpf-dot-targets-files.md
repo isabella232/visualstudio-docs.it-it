@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ade955f53f7e3d3823580934f623c9b0157f04c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c61e305868045664af7333bbb7dcce0beed54370
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042231"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623177"
 ---
 # <a name="wpf-targets-files"></a>File WPF con estensione targets
-[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] estende [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] con l'aggiunta di un set di attività specifiche di [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)] combinate in un file speciale con estensione *targets*, *Microsoft.WinFX.targets*. Questo file combina l'insieme delle attività di [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] necessarie per compilare un progetto [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] in [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].  
-  
-## <a name="see-also"></a>Vedere anche  
- [File con estensione targets di MSBuild](../msbuild/msbuild-dot-targets-files.md)   
- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
- [Compilazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] estende [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] con l'aggiunta di un set di attività specifiche di [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)] combinate in un file speciale con estensione *targets*, *Microsoft.WinFX.targets*. Questo file combina l'insieme delle attività di [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] necessarie per compilare un progetto [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] in [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].
+
+## <a name="see-also"></a>Vedere anche
+- [File con estensione targets di MSBuild](../msbuild/msbuild-dot-targets-files.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Compilazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

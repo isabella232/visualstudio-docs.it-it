@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970920"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796660"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -50,7 +50,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
 4. Aggiungere 1 più 2, mettere in pausa la registrazione e generare il metodo di test. I valori di input dell'utente saranno poi sostituiti con i valori di un file di dati.
 
-    ![Generare un metodo di test](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Generare il metodo di test](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Chiudere il generatore di test. Il metodo viene aggiunto al test:
 

@@ -10,42 +10,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57e37b85dbcf1cbbb6801cd73b30b65ee7f16d9b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932051"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599298"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
-Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.  
-  
- Se era in corso l'esecuzione del codice della funzione quando si è verificato un evento di conflitto, ovvero la funzione si trovava in cima allo stack di chiamate, le righe di codice sorgente e gli indirizzi delle istruzioni in esecuzione sono elencati sotto il nodo della funzione. Poiché i dati vengono raccolti per una riga di codice sorgente o per un puntatore all'istruzione durante l'esecuzione della riga o dell'istruzione, i valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.  
-  
- La tabella seguente descrive i valori delle colonne nella visualizzazione Moduli dei dati sui conflitti.  
-  
-|Colonna|Description|  
-|------------|-----------------|  
-|**Tempo blocco esclusivo**|- Per una funzione, l'ora in cui è stata impedita l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.<br />- Per un modulo, la somma del tempo di blocco esclusivo delle funzioni nel modulo.<br />- Per una riga o un'istruzione, il periodo durante il quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
-|**% tempo blocco esclusivo**|- Per una funzione o un modulo, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per la funzione o il modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
-|**Conflitti esclusivi**|- Per una funzione, il numero di volte che è stata impedita l'esecuzione di codice nel corpo della funzione. Non sono inclusi i conflitti in funzioni chiamate dalla funzione.<br />- Per un modulo, la somma dei conflitti esclusivi delle funzioni nel modulo.<br />- Per una riga o un'istruzione, il numero di volte per cui è stata bloccata l'esecuzione della riga o dell'istruzione.|  
-|**% conflitti esclusivi**|- Per una funzione o un modulo, la percentuale di tutti i conflitti nell'esecuzione di profilatura che rappresentavano conflitti esclusivi di questa funzione o di questo modulo.<br />- Per una riga o un'istruzione, la percentuale di tutti i conflitti nell'esecuzione della profilatura che rappresentavano conflitti che bloccavano l'esecuzione di questa riga o istruzione.|  
-|**Tempo blocco inclusivo**|- Per una funzione, il periodo di blocco dell'esecuzione di questa funzione o di una funzione chiamata da questa.<br />- Per un modulo, la somma del tempo di blocco di permanenza nello stack di almeno una funzione da questo modulo.<br />- Per una riga o un'istruzione, il periodo durante il quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
-|**% tempo blocco inclusivo**|- Per una funzione o un modulo, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo per la funzione o il modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale era in esecuzione la riga o l'istruzione.|  
-|**Conflitti inclusivi**|- Per una funzione, il numero di volte in cui l'esecuzione di questa funzione o di una funzione chiamata da questa è stata bloccata.<br />- Per un modulo, il numero di conflitti in cui almeno una funzione da questo modulo era nello stack.<br />- Per una riga o un'istruzione, il numero di volte per cui è stata bloccata l'esecuzione della riga o dell'istruzione.|  
-|**% conflitti inclusivi**|- Per una funzione o un modulo, la percentuale di tutti i campioni nell'esecuzione della profilatura che costituivano campioni esclusivi di questa funzione o di questo modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale era in esecuzione la riga o l'istruzione.|  
-|**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|  
-|**Percorso modulo**|Percorso del modulo che contiene il modulo, la funzione, la riga o il puntatore all'istruzione.|  
-|**Name**|Nome del modulo o della funzione.|  
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
-|**Nome processo**|Nome del processo.|  
-|**File di origine**|File di origine che contiene la definizione per questa funzione.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Moduli](../profiling/modules-view.md)   
- [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)   
- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
+Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.
+
+ Se era in corso l'esecuzione del codice della funzione quando si è verificato un evento di conflitto, ovvero la funzione si trovava in cima allo stack di chiamate, le righe di codice sorgente e gli indirizzi delle istruzioni in esecuzione sono elencati sotto il nodo della funzione. Poiché i dati vengono raccolti per una riga di codice sorgente o per un puntatore all'istruzione durante l'esecuzione della riga o dell'istruzione, i valori inclusivi ed esclusivi sono sempre gli stessi sia per i dati di riga che per quelli di istruzione.
+
+ La tabella seguente descrive i valori delle colonne nella visualizzazione Moduli dei dati sui conflitti.
+
+|Colonna|Description|
+|------------|-----------------|
+|**Tempo blocco esclusivo**|- Per una funzione, l'ora in cui è stata impedita l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.<br />- Per un modulo, la somma del tempo di blocco esclusivo delle funzioni nel modulo.<br />- Per una riga o un'istruzione, il periodo durante il quale è stata bloccata l'esecuzione della riga o dell'istruzione.|
+|**% tempo blocco esclusivo**|- Per una funzione o un modulo, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per la funzione o il modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale è stata bloccata l'esecuzione della riga o dell'istruzione.|
+|**Conflitti esclusivi**|- Per una funzione, il numero di volte che è stata impedita l'esecuzione di codice nel corpo della funzione. Non sono inclusi i conflitti in funzioni chiamate dalla funzione.<br />- Per un modulo, la somma dei conflitti esclusivi delle funzioni nel modulo.<br />- Per una riga o un'istruzione, il numero di volte per cui è stata bloccata l'esecuzione della riga o dell'istruzione.|
+|**% conflitti esclusivi**|- Per una funzione o un modulo, la percentuale di tutti i conflitti nell'esecuzione di profilatura che rappresentavano conflitti esclusivi di questa funzione o di questo modulo.<br />- Per una riga o un'istruzione, la percentuale di tutti i conflitti nell'esecuzione della profilatura che rappresentavano conflitti che bloccavano l'esecuzione di questa riga o istruzione.|
+|**Tempo blocco inclusivo**|- Per una funzione, il periodo di blocco dell'esecuzione di questa funzione o di una funzione chiamata da questa.<br />- Per un modulo, la somma del tempo di blocco di permanenza nello stack di almeno una funzione da questo modulo.<br />- Per una riga o un'istruzione, il periodo durante il quale è stata bloccata l'esecuzione della riga o dell'istruzione.|
+|**% tempo blocco inclusivo**|- Per una funzione o un modulo, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo per la funzione o il modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale era in esecuzione la riga o l'istruzione.|
+|**Conflitti inclusivi**|- Per una funzione, il numero di volte in cui l'esecuzione di questa funzione o di una funzione chiamata da questa è stata bloccata.<br />- Per un modulo, il numero di conflitti in cui almeno una funzione da questo modulo era nello stack.<br />- Per una riga o un'istruzione, il numero di volte per cui è stata bloccata l'esecuzione della riga o dell'istruzione.|
+|**% conflitti inclusivi**|- Per una funzione o un modulo, la percentuale di tutti i campioni nell'esecuzione della profilatura che costituivano campioni esclusivi di questa funzione o di questo modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale era in esecuzione la riga o l'istruzione.|
+|**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
+|**Nome modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|
+|**Percorso modulo**|Percorso del modulo che contiene il modulo, la funzione, la riga o il puntatore all'istruzione.|
+|**Name**|Nome del modulo o della funzione.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
+|**File di origine**|File di origine che contiene la definizione per questa funzione.|
+
+## <a name="see-also"></a>Vedere anche
+- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione Moduli](../profiling/modules-view.md)
+- [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)

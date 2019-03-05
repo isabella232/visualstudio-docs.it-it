@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920483"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796647"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -30,11 +30,23 @@ Per seguire la procedura, è necessaria una copia della versione 15.3 o successi
 
 ## <a name="create-a-console-app"></a>Creare un'applicazione console
 
-Se non è ancora stato avviato, avviare Visual Studio.
+Se non è ancora in esecuzione, aprire Visual Studio.
+
+::: moniker range="vs-2017"
 
 ![IDE con impostazioni Visual C&#43;&#43; applicate](../ide/media/get-started-cpp-ide-layout.png)
 
 Dopo aver aperto Visual Studio, saranno visibili le tre parti fondamentali dell'IDE, vale a dire le finestre degli strumenti, i menu e le barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di **Avvio veloce**, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Al centro della finestra si trova la **Pagina iniziale**. Quando si apre una soluzione o un progetto, in questo spazio verranno visualizzati gli editor e le finestre di progettazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Dopo l'apertura di Visual Studio, la prima finestra visualizzata è la finestra **Avvia**. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo.
+
+Verranno visualizzate le tre parti fondamentali dell'IDE: le finestre degli strumenti, i menu e le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di **Avvio veloce**, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+
+::: moniker-end
 
 Visual Studia usa i *progetti* per organizzare il codice per un'applicazione e le *soluzioni* per organizzare i progetti. Un progetto contiene tutte le opzioni, le configurazioni e le regole usate per la compilazione dell'applicazione. Gestisce anche la relazione tra tutti i file del progetto e i file esterni. Per creare l'applicazione, per prima cosa, creare un nuovo progetto e una soluzione.
 

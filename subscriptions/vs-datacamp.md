@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380404"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841429"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 
@@ -33,7 +31,7 @@ La durata del vantaggio DataCamp varia a seconda della sottoscrizione di Visual 
 3. Nella pagina DataCamp è possibile creare un nuovo account.  È possibile scegliere di immettere un indirizzo di posta elettronica e una password o di accedere tramite un account di Facebook, LinkedIn o Google.  Dopo aver fornito le informazioni di accesso, fare clic su **Get Started** (Inizia).
    > [!div class="mx-imgBorder"]
    > ![Creazione di un nuovo account DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Quando si inizia a creare l'account, è possibile che venga visualizzato il messaggio di errore seguente: "OOPS!  Your promo code is invalid or expired" (Il codice promozionale non è valido o è scaduto").  Ciò accade perché, quando viene creato, il codice promozionale scade dopo alcuni minuti.  Se si riceve questo messaggio, è sufficiente tornare alla pagina [Vantaggi](https://my.visualstudio.com/benefits) e fare clic sul collegamento **Attivalo** nel riquadro del vantaggio DataCamp.
 
@@ -62,7 +60,7 @@ La durata del vantaggio DataCamp varia a seconda della sottoscrizione di Visual 
 
 È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [http://www.datacamp.com](http://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Continuazione del training su DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Idoneità

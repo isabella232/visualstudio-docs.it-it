@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64667ef01d1b21cce8303e2f72be3f252ec4245e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909999"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56595867"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come figlio di un elemento `ItemGroup`.
 
-\<Project>  
-\<ItemGroup>
+\<Project> \<ItemGroup>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +44,19 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Descrizione|
+|Attributo|Description|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Descrizione|
+|Elemento|Description|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 | [Destinazione](../msbuild/target-element-msbuild.md) | A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md). |
@@ -83,6 +82,6 @@ L'esempio di codice seguente illustra le raccolte di elementi definite dall'uten
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)  
-[Elementi](../msbuild/msbuild-items.md)  
-[Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)
+- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elementi](../msbuild/msbuild-items.md)
+- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

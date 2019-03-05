@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954647"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796621"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -81,10 +81,10 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere all'elenco degli elementi consentiti e le porte e i protocolli che è possibile aprire.
 
-| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Descrizione |
+| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Description |
 | - | - | - | - | - |
 | URL<br>risoluzione | go.microsoft.com<br><br>aka.ms | | | Usato per abbreviare gli URL, risolti quindi in URL più lunghi |
-| Pagina iniziale | vsstartpage.blob.core.windows.net | | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale in Visual Studio |
+| Pagina iniziale | vsstartpage.blob.core.windows.net | | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale (solo Visual Studio 2017) |
 | Servizio di<br> Notifica <br>Service | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Usato per filtrare un elenco globale delle notifiche in un elenco applicabile solo a specifici tipi di computer/scenari di utilizzo |
 | Estensione <br>per le estensioni | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Usato per fornire notifiche quando è disponibile un aggiornamento per un'estensione installata <br><br> Usato come posizione di accesso |
 | Integrazione di <br>Integrazione | az861674.vo.msecnd.net | | 443<br> | Usato per configurare nuovi progetti per l'invio di dati di utilizzo all'account registrato di Application Insights |
