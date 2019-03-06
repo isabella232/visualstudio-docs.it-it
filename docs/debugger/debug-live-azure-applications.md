@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613375"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428739"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Il debug in tempo reale delle app di Azure ASP.NET usando il Debugger di Snapshot
 
@@ -50,7 +50,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
     > [!IMPORTANT]
     > Eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* che viene pubblicato in servizio App di Azure.
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. In Cloud Explorer (**Visualizza > Cloud Explorer**), il progetto viene distribuito il servizio App di Azure e scegliere **collegare Snapshot Debugger**.
 

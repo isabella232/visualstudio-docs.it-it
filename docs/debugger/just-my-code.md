@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722486"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223676"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Eseguire il debug con Just My Code solo il codice utente
 
@@ -97,7 +97,7 @@ Per il comportamento di avanzamento nell'esecuzione di codice, Just My Code in C
 - Funzioni specificate nei  *\*con estensione natjmc* i file nei *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
 
 > [!NOTE]
-> Per il supporto di avanzamento nell'esecuzione di codice in Just My Code, il codice C++ deve essere compilato con i compilatori MSVC in Visual Studio 15.8 Preview 3 o versione successiva, e deve essere abilitata l'opzione del compilatore /JMC (è abilitata per impostazione predefinita). Per altre informazioni, vedere [personalizzare C++ stack di chiamate e comportamento dell'esecuzione del codice](#BKMK_CPP_Customize_call_stack_behavior)) e ciò [post di blog](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/). Per il codice compilato usando un compilatore precedente, *con estensione natstepfilter* file sono l'unico modo per personalizzare l'esecuzione di istruzioni, il codice indipendente dalla Just My Code. Visualizzare [comportamento dell'esecuzione personalizzare C++](#BKMK_CPP_Customize_stepping_behavior).
+> Per il supporto di avanzamento nell'esecuzione di codice in Just My Code, il codice C++ deve essere compilato con i compilatori MSVC in Visual Studio 15.8 Preview 3 o versione successiva, e deve essere abilitata l'opzione del compilatore /JMC (è abilitata per impostazione predefinita). Per altre informazioni, vedere [personalizzare C++ stack di chiamate e comportamento dell'esecuzione del codice](#BKMK_CPP_Customize_call_stack_behavior)) e ciò [post di blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Per il codice compilato usando un compilatore precedente, *con estensione natstepfilter* file sono l'unico modo per personalizzare l'esecuzione di istruzioni, il codice indipendente dalla Just My Code. Visualizzare [comportamento dell'esecuzione personalizzare C++](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Durante il debug in C++:
 
