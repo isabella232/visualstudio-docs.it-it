@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842351"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954480"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Panoramica delle responsabilità degli amministratori
 Un amministratore ha la possibilità di gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore è anche responsabile di verificare che le sottoscrizioni siano gestite in conformità alle condizioni di licenza. In questo articolo vengono illustrati responsabilità, vantaggi e limitazioni del ruolo di amministratore.
 
 ## <a name="roles--responsibilities"></a>Ruoli e responsabilità
 Un amministratore di Visual Studio ha quattro responsabilità principali:
-1.  **Conoscere i vantaggi e le limitazioni delle sottoscrizioni di Visual Studio.** Una corretta comprensione dei vantaggi può favorire una riduzione dei costi dell'hardware grazie all'uso dei servizi cloud e dei costi del software con le licenze per utente per gli ambienti di preproduzione.
-2.  **Assegnare le sottoscrizioni di Visual Studio a utenti specifici e nominati incoraggiandone l'uso.** Il contratto prevede che le sottoscrizioni di Visual Studio vengano assegnate a utenti specifici e nominati. Mettersi in contatto con gli utenti destinatari dell'assegnazione per assicurarsi che abbiano accesso alla sottoscrizione di Visual Studio e possano usufruire di tutti i vantaggi inclusi.
-3.  **Creare un inventario accurato dell'ambiente di preproduzione.** È essenziale assicurarsi che tutti gli utenti che interagiscono con il software concesso in licenza di Visual Studio dispongano di una licenza appropriata tramite la sottoscrizione di Visual Studio.
-4.  **Tenere traccia delle modifiche delle assegnazioni agli utenti e acquisire licenze aggiuntive in base alla pianificazione.** I contratti multilicenza Microsoft e i contratti MPSA offrono flessibilità nell'uso e nell'assegnazione delle sottoscrizioni di Visual Studio. In cambio, è necessario tenere traccia delle modifiche per l'utilizzo del software e le assegnazioni degli utenti, nonché elaborare gli ordini di licenze aggiuntive in base alla pianificazione stabilita nel contratto.
+
+1. **Conoscere i vantaggi e le limitazioni delle sottoscrizioni di Visual Studio.** Una corretta comprensione dei vantaggi può favorire una riduzione dei costi dell'hardware grazie all'uso dei servizi cloud e dei costi del software con le licenze per utente per gli ambienti di preproduzione. 
+2. **Assegnare le sottoscrizioni di Visual Studio a utenti specifici e nominati incoraggiandone l'uso.** Il contratto prevede che le sottoscrizioni di Visual Studio vengano assegnate a utenti specifici e nominati. Mettersi in contatto con gli utenti destinatari dell'assegnazione per assicurarsi che abbiano accesso alla sottoscrizione di Visual Studio e possano usufruire di tutti i vantaggi inclusi.
+3. **Creare un inventario accurato dell'ambiente di preproduzione.** È essenziale assicurarsi che tutti gli utenti che interagiscono con il software concesso in licenza di Visual Studio dispongano di una licenza appropriata tramite la sottoscrizione di Visual Studio. 
+4. **Tenere traccia delle modifiche delle assegnazioni agli utenti e acquisire licenze aggiuntive in base alla pianificazione.** I contratti multilicenza Microsoft e i contratti MPSA offrono flessibilità nell'uso e nell'assegnazione delle sottoscrizioni di Visual Studio. In cambio, è necessario tenere traccia delle modifiche per l'utilizzo del software e le assegnazioni degli utenti, nonché elaborare gli ordini di licenze aggiuntive in base alla pianificazione stabilita nel contratto.
 
 ## <a name="benefits-and-limitations"></a>Vantaggi e limitazioni
 Le sottoscrizioni di Visual Studio consentono ai membri di team di sviluppo di installare e usare il software per la progettazione, lo sviluppo, il testing, la valutazione e la dimostrazione di altro software. Il software incluso nelle sottoscrizioni di Visual Studio non è concesso in licenza per gli ambienti di produzione.
@@ -70,9 +71,10 @@ Gli amministratori delle sottoscrizioni di Visual Studio devono tenere traccia d
 - Un utente interagisce con il software di Visual Studio.
 
 L'obbligo all'acquisto completo è determinato dal **limite massimo di utilizzo**. Questo limite è il punto massimo di assegnazioni utente giornaliere o del numero di utenti che interagiscono con il software di Visual Studio, a seconda del valore maggiore.
-1.  Gli amministratori delle sottoscrizioni di Visual Studio possono aumentare il limite massimo di utilizzo assegnando le sottoscrizioni di Visual Studio a singoli utenti.
-2.  Gli amministratori delle sottoscrizioni di Visual Studio possono riassegnare le sottoscrizioni da un sottoscrittore a un altro se sono trascorsi 90 giorni dall'assegnazione originale. Per evitare di raggiungere il limite massimo in modo artificiale, eseguire sempre questa operazione rimuovendo la sottoscrizione esistente per poi aggiungere quella nuova.
-3.  Gli amministratori delle sottoscrizioni di Visual Studio possono modificare il livello di sottoscrizione assegnato per un singolo e ciò costituisce la riduzione per un'assegnazione e l'incremento per un'altra. Quando si riduce il livello di sottoscrizione assegnato di un sottoscrittore, il singolo deve interrompere immediatamente l'uso e disinstallare qualsiasi componente incluso solo nel livello di sottoscrizione superiore.
+
+1. Gli amministratori delle sottoscrizioni di Visual Studio possono aumentare il limite massimo di utilizzo assegnando le sottoscrizioni di Visual Studio a singoli utenti.
+2. Gli amministratori delle sottoscrizioni di Visual Studio possono riassegnare le sottoscrizioni da un sottoscrittore a un altro se sono trascorsi 90 giorni dall'assegnazione originale. Per evitare di raggiungere il limite massimo in modo artificiale, eseguire sempre questa operazione rimuovendo la sottoscrizione esistente per poi aggiungere quella nuova.
+3. Gli amministratori delle sottoscrizioni di Visual Studio possono modificare il livello di sottoscrizione assegnato per un singolo e ciò costituisce la riduzione per un'assegnazione e l'incremento per un'altra. Quando si riduce il livello di sottoscrizione assegnato di un sottoscrittore, il singolo deve interrompere immediatamente l'uso e disinstallare qualsiasi componente incluso solo nel livello di sottoscrizione superiore. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Sottoscrizioni cloud, Open License o Open Value
 Le sottoscrizioni possono essere assegnate tramite programmi come Sottoscrizioni cloud Microsoft, Open License o Open Value. In questo caso, è necessario elaborare l'ordine per gli altri utenti durante il mese in cui gli utenti (dipendenti o collaboratori esterni) iniziano a interagire con il software di Visual Basic concesso in licenza.

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 328235e5be2ac62caa427c9f77bd33654275e72a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ded9e1b6bea0a6f03dd9599b592bba5fba6f91fe
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907711"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954147"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedef di Visual C++ in Progettazione classi
 

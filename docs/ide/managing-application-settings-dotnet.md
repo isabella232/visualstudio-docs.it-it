@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2693d661e7bc442f8de2ba707487e7d35068e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954244"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323571"
 ---
 # <a name="manage-application-settings-net"></a>Gestire le impostazioni dell'applicazione (.NET)
 
@@ -84,7 +84,9 @@ Se è stata modificata qualsiasi impostazione con ambito di utente in fase di es
 
 È consigliabile usare l'oggetto `My.Settings` e il file *.settings* predefinito per accedere alle impostazioni. Ciò perché è possibile usare **Progettazione impostazioni** per assegnare proprietà alle impostazioni e le impostazioni utente vengono salvate automaticamente prima della chiusura dell'applicazione. L'applicazione Visual Basic può comunque accedere direttamente alle impostazioni. In quel caso è necessario accedere alla classe `MySettings` e usare un file *.settings* personalizzato nella radice del progetto. È necessario salvare le impostazioni utente prima di terminare l'applicazione, come per le applicazioni C#, come illustrato nella sezione seguente.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Accedere o modificare le impostazioni dell'applicazione in fase di esecuzione in C# #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Accedere o modificare le impostazioni dell'applicazione in fase di esecuzione in C#
+<!-- markdownlint-enable MD003 -->
 
 In linguaggi diversi da Visual Basic, ad esempio C#, è necessario accedere direttamente alla classe `Settings`, come illustrato nell'esempio seguente relativo a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 

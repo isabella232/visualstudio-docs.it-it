@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910987"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953758"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -132,7 +132,7 @@ Aprire il browser preferito e immettere `http://localhost:5000/`, sostituendo `5
 Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Lo schema MVC è costituito come segue:
 
 - **Model** (Modello): classe che rappresenta i dati dell'app.
-- **View** (Vista): visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
+- **Visualizza**: visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
 - **Controller**: classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
 
 Per altre informazioni sull'uso dello schema MVC, vedere la guida [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Panoramica di MVC ASP.NET Core).

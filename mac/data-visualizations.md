@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349439"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953447"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni dati
 
@@ -88,18 +88,18 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 ![Altre visualizzazioni](media/data-visualizations-image23.png)
 
-*   **Primitives**
-    *   Visualizza il valore non elaborato del tipo primitivo.
-*   **Enum**
-    *   Visualizza il valore del campo senza il qualificatore di tipo enum.
-*   **Tuple**
-    *   Usa il formato (,) per la visualizzazione.
-*   **Null**
-    *   Mostra i valori "null".
-*   **URL**
-    *   Mostra un collegamento ipertestuale su cui è possibile fare clic.
-*   **IntPtr**
-    *   Visualizza una rappresentazione esadecimale di un oggetto IntPtr.
+* **Primitives**
+  * Visualizza il valore non elaborato del tipo primitivo.
+* **Enum**
+  * Visualizza il valore del campo senza il qualificatore di tipo enum.
+* **Tuple**
+  * Usa il formato (,) per la visualizzazione.
+* **Null**
+  * Mostra i valori "null".
+* **URL**
+  * Mostra un collegamento ipertestuale su cui è possibile fare clic.
+* **IntPtr**
+  * Visualizza una rappresentazione esadecimale di un oggetto IntPtr.
 
 ## <a name="see-also"></a>Vedere anche
 

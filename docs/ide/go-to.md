@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923538"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222487"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
-I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata nel codice allo scopo di individuare rapidamente elementi specifici. Da una semplice interfaccia unificata è possibile passare a una riga, a un tipo, a un simbolo o a un file specifico e ad altro ancora. Questa funzionalità esiste in Visual Studio 2017 e versioni successive.
+I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata nel codice allo scopo di individuare rapidamente elementi specifici. Da una semplice interfaccia unificata è possibile passare a una riga, a un tipo, a un simbolo o a un file specifico e ad altro ancora.
 
 ## <a name="how-to-use-it"></a>Come usare la funzionalità
 
@@ -52,7 +52,7 @@ Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli 
 
 Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile specificare un prefisso nella casella di ricerca o selezionare una delle cinque icone di filtro:
 
-Prefisso | Icona | Metodo rapido | Descrizione
+Prefisso | Icona | Metodo rapido | Description
 :-: | - | - | -
 :| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
@@ -65,7 +65,7 @@ m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**
 
 Per limitare la ricerca a una posizione specifica, selezionare una delle due icone documento:
 
-Icona | Descrizione
+Icona | Description
 ---- | ---
 ![Documento corrente](media/gotoall_currentdocument.png) | Cerca solo il documento corrente
 ![Documenti esterni](media/gotoall_external.png) | Cerca i documenti esterni oltre a quelli presenti nel progetto e/o nella soluzione
@@ -80,7 +80,7 @@ Se si usa la [notazione Camel](https://en.wikipedia.org/wiki/Camel_case) nel cod
 
 Se si seleziona l'icona a forma di ingranaggio ![Icona Ingranaggio](media/gotoall_gear.png) è possibile modificare il comportamento di questa funzionalità:
 
-Impostazione | Descrizione
+Impostazione | Description
 ------- | ---
 Utilizza scheda anteprima | Visualizza immediatamente l'elemento selezionato nella scheda anteprima dell'IDE
 Mostra dettagli | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra

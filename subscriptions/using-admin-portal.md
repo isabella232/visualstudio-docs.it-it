@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Informazioni su come gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale dell'amministratore.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843712"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953952"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -38,13 +38,14 @@ Per usare il portale per gli amministratori per gestire le sottoscrizioni dell'o
 ### <a name="onboarding"></a>Onboarding
 
 Quando l'organizzazione è pronta per il processo di onboarding nel portale di amministrazione di Visual Studio, i contatti principali e per le comunicazioni riceveranno una e -mail con una richiesta per il completamento del processo. I dettagli riportati di seguito rappresentano i passaggi necessari per l'onboarding nel nuovo portale. Per una procedura dettagliata del processo, vedere il [video per l'oboarding degli amministratori](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) oppure [l'articolo del supporto tecnico relativo al ](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processo di migrazione per gli amministratori delle sottoscrizioni di Visual Studio").
-1.  **Individuazione del PCN e accesso:**
-    - I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica un collegamento e le ultime tre cifre del numero PCN. *
-    - Per ottenere il PCN completo, il contatto principale deve accedere a VLSC (le istruzioni per l'individuazione del PCN sono reperibili qui).
-    - Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Potranno accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AAD) o con un Account Microsoft (MSA) se l'organizzazione non è presente in AAD.
-    - Successivamente, sarà necessario immettere il PCN.
-2.  **Impostare gli amministratori.** Dopo aver immesso il PCN, saranno registrati come amministratori con privilegi elevati nel nuovo sistema e saranno in grado di aggiungere altri amministratori con privilegi elevati e amministratori (precedentemente noti come gestori degli abbonamenti). Per evitare di perdere l'accesso,il processo deve essere completato prima della data di migrazione dell'organizzazione.
-3.  **Accesso al nuovo portale per la gestione delle sottoscrizioni.**  Una volta eseguita la migrazione dell'organizzazione, i nuovi amministratori e amministratoti con privilegi elevati registrati, riceveranno dei messaggi di posta elettronica per effettuare l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
+
+1. **Individuazione del PCN e accesso:**
+    - I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica un collegamento e le ultime tre cifre del numero PCN. * 
+    - Per ottenere il PCN completo, il contatto principale deve accedere a VLSC (le istruzioni per l'individuazione del PCN sono reperibili qui). 
+    - Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Potranno accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AAD) o con un Account Microsoft (MSA) se l'organizzazione non è presente in AAD. 
+    - Successivamente, sarà necessario immettere il PCN. 
+2. **Impostare gli amministratori.** Dopo aver immesso il PCN, saranno registrati come amministratori con privilegi elevati nel nuovo sistema e saranno in grado di aggiungere altri amministratori con privilegi elevati e amministratori (precedentemente noti come gestori degli abbonamenti). Per evitare di perdere l'accesso,il processo deve essere completato prima della data di migrazione dell'organizzazione. 
+3. **Accesso al nuovo portale per la gestione delle sottoscrizioni.**  Una volta eseguita la migrazione dell'organizzazione, i nuovi amministratori e amministratoti con privilegi elevati registrati, riceveranno dei messaggi di posta elettronica per effettuare l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.  
 
 > [!NOTE]
 > Se il contatto principale o per le comunicazioni riceve più di un messaggio di posta elettronica, significa che ha più PCN. È necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.*

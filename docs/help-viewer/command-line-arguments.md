@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944260"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323465"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per Gestione contenuto della Guida
 
@@ -57,7 +57,7 @@ La tabella seguente definisce le opzioni e gli argomenti che è possibile usare 
 |/membership|No|-   **Minimum**: installa un set minimo del contenuto della Guida in base allo SKU specificato usando l'opzione /skuId. Il mapping tra lo SKU e il set del contenuto viene esposto nell'API del servizio.<br />-   **Recommended**: installa un set di libri consigliati per lo SKU specificato usando l'argomento /skuId. L'origine dell'installazione è l'API del servizio o il file con estensione *msha*.<br />-   **Full**: installa l'intero set di libri per lo SKU specificato usando l'argomento /skuId. L'origine dell'installazione è l'API del servizio o il file con estensione *msha*.|
 |/locationpath|No|Specifica la cartella predefinita per il contenuto della Guida locale. Questa opzione deve essere usata solo per installare o rimuovere il contenuto. Se si specifica questa opzione, è necessario specificare anche l'opzione /silent.|
 |/silent|No|Installa o rimuove il contenuto della Guida senza chiedere conferma all'utente o visualizzare l'interfaccia utente, nemmeno l'icona nell'area di notifica dello stato. L'output viene registrato in un file nella directory *%Temp%*. **Importante:**  Per installare automaticamente il contenuto, è necessario usare file *CAB* con firma digitale, non file *mshc*.|
-|/launchingApp|No|Definisce il contesto dell'applicazione e del catalogo quando viene avviato il visualizzatore della Guida senza l'applicazione padre. Gli argomenti per questa opzione sono *CompanyName*, *ProductName* e *VersionNumber* (ad esempio `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Questa opzione è necessaria per l'installazione del contenuto con il parametro /silent.|
+|/launchingApp|No|Definisce il contesto dell'applicazione e del catalogo quando viene avviato il visualizzatore della Guida senza l'applicazione padre. Gli argomenti per questa opzione sono *CompanyName*, *ProductName* e *VersionNumber* (ad esempio `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Questa opzione è necessaria per l'installazione del contenuto con il parametro /silent.|
 |/wait *secondi*|No|Sospende le operazioni di installazione, disinstallazione e aggiornamento. Se un'operazione è già in corso per il catalogo, il processo attenderà il numero specificato di secondi per continuare. Usare 0 per restare in attesa in modo indefinito.|
 |/?|No|Elenca le opzioni e le relative descrizioni per lo strumento da riga di comando per Gestione contenuto della Guida.|
 

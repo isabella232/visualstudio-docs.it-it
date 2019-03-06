@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450594"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223312"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -266,7 +266,7 @@ Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaSc
 
 **Novità della versione 15.5**: Visual Studio 2017 versione 15.5 fornisce il miglior supporto per Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update introduce anche numerosi miglioramenti per gli sviluppatori UWP. Di seguito sono riportate alcune delle principali modifiche: 
 
-* **Supporto per .NET Standard 2.0**<br/>Oltre a semplificare la distribuzione delle app, Windows 10 Fall Creators Update è la prima versione di Windows 10 a fornire il supporto di .NET 2.0 Standard. In effetti, [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) è un'implementazione di riferimento della libreria di classi base che può essere implementata da qualsiasi piattaforma .NET. L'obiettivo di .NET Standard è semplificare il più possibile la condivisione del codice su qualsiasi piattaforma di lavoro .NET scelta dagli sviluppatori .NET.
+* **Supporto per .NET Standard 2.0**<br/>Oltre a semplificare la distribuzione delle app, Windows 10 Fall Creators Update è la prima versione di Windows 10 a fornire il supporto di .NET 2.0 Standard. In effetti, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) è un'implementazione di riferimento della libreria di classi base che può essere implementata da qualsiasi piattaforma .NET. L'obiettivo di .NET Standard è semplificare il più possibile la condivisione del codice su qualsiasi piattaforma di lavoro .NET scelta dagli sviluppatori .NET.
 * **Il meglio di UWP e Win32**<br/>È stata migliorata la piattaforma Windows 10 con [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) per migliorare Windows 10 per tutti gli sviluppatori .NET, indipendentemente dal fatto che concentrino le loro attività in UWP, WPF, Windows Form o Xamarin. Con il nuovo tipo di progetto per pacchetti di app in Visual Studio 2017 versione 15.5, è possibile creare pacchetti di app Windows per i progetti WPF o Windows Form, esattamente come per i progetti UWP. Dopo aver creato il pacchetto dell'app, diventano disponibili tutti i vantaggi per la distribuzione di app Windows 10 ed è possibile scegliere Microsoft Store (per le app consumer) o Microsoft Store per le aziende e gli istituti di istruzione. Dato che le app in pacchetto hanno accesso sia alla superficie API UWP completa che alle API Win32 su desktop, è ora possibile modernizzare le applicazioni Windows Form e WPF gradualmente con le API UWP e le funzionalità di Windows 10. Inoltre, è possibile includere componenti Win32 nelle applicazioni UWP che possono così essere usate nel desktop con tutte le funzionalità Win32.
 
 Per altre informazioni sulla piattaforma UWP, vedere la pagina [Sviluppare app per la piattaforma UWP (Universal Windows Platform)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
@@ -377,7 +377,7 @@ Per inoltrare suggerimenti su come migliorare Visual Studio o per altre informaz
 
 ### <a name="report-a-problem"></a>Segnalare un problema
 
- A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un blocco, un arresto anomalo del sistema o un altro problema di prestazioni, è possibile condividere facilmente con Microsoft la procedura per riprodurre il problema e i file di supporto, ad esempio screenshot e file dump di traccia e heap, usando lo strumento **Segnala un problema**. Per altre informazioni su come usare questo strumento, vedere la pagina [Come segnalare un problema](how-to-report-a-problem-with-visual-studio-2017.md).
+ A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un blocco, un arresto anomalo del sistema o un altro problema di prestazioni, è possibile condividere facilmente con Microsoft la procedura per riprodurre il problema e i file di supporto, ad esempio screenshot e file dump di traccia e heap, usando lo strumento **Segnala un problema**. Per altre informazioni su come usare questo strumento, vedere la pagina [Come segnalare un problema](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 

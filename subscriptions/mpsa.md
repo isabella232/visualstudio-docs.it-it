@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841670"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953807"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 
@@ -29,21 +29,22 @@ Un tenant non gestito è un tenant senza amministratori e non può essere usato 
 Per essere configurato come amministratore delle sottoscrizioni di Visual Studio sono necessari i requisiti e i passaggi seguenti prima di completare l'associazione del tenant.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Associazione pre-tenant (tenant gestito)
--   È necessario essere un utente registrato in Business Center.
--   È necessario essere un amministratore utenti (requisito minimo) o un amministratore globale all'interno del tenant cui si appartiene. (Questo requisito si applica se la società usa già i Servizi cloud). Ogni ruolo deve essere un amministratore delle sottoscrizioni di Visual Studio.
--   È necessario essere un amministratore globale nel tenant cui si appartiene per poter associare l'account di acquisto al tenant.
--   È necessario essere un amministratore account o un account manager in Business Center.
--   Il campo "Paese o area geografica" all'interno del proprio profilo utente o di un altro utente in [Azure](https://portal.azure.com/) deve essere popolato correttamente in base all'area geografica (ad esempio US, CA e così via).
+
+- È necessario essere un utente registrato in Business Center.
+- È necessario essere un amministratore utenti (requisito minimo) o un amministratore globale all'interno del tenant cui si appartiene. (Questo requisito si applica se la società usa già i Servizi cloud). Ogni ruolo deve essere un amministratore delle sottoscrizioni di Visual Studio.
+- È necessario essere un amministratore globale nel tenant cui si appartiene per poter associare l'account di acquisto al tenant.
+- È necessario essere un amministratore account o un account manager in Business Center.
+- Il campo "Paese o area geografica" all'interno del proprio profilo utente o di un altro utente in [Azure](https://portal.azure.com/) deve essere popolato correttamente in base all'area geografica (ad esempio US, CA e così via). 
 
 > [!NOTE]
 > Gli utenti che si vuole configurare come amministratori delle sottoscrizioni di Visual Studio non devono essere utenti in Business Center ma solo soddisfare i criteri dei passaggi 2 e 5.
 
 Dopo aver soddisfatto i criteri dei 5 passaggi precedenti è possibile associare l'account di acquisto al tenant eseguendo la procedura che segue.
-1.  Accedere a [Business Center](https://businessaccount.microsoft.com/).
-2.  Fare clic sulla scheda **Account** e scegliere **Associa dominio**.
-3.  Selezionare l'**account di acquisto** se sono disponibili più account.
-4.  Selezionare il **tenant**, ad esempio contoso.onmicrosoft.com.
-5.  Fare clic su **Associa dominio**.
+1. Accedere a [Business Center](https://businessaccount.microsoft.com/).
+2. Fare clic sulla scheda **Account** e scegliere **Associa dominio**.
+3. Selezionare l'**account di acquisto** se sono disponibili più account.
+4. Selezionare il **tenant**, ad esempio contoso.onmicrosoft.com.
+5. Fare clic su **Associa dominio**.
 
 Solitamente, trascorsi pochi minuti dall'associazione, tutti gli utenti che soddisfano i criteri necessari eseguono il provisioning come amministratori delle sottoscrizioni di Visual Studio. In alcuni casi, tuttavia, potrebbe essere necessario attendere fino a 24 ore. Dopo il provisioning sarà possibile accedere al portale di amministrazione delle sottoscrizioni di Visual Studio. Se l'operazione richiede più di 24 ore, contattare il supporto MPSA.
 
