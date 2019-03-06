@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637334"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428726"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per debug remoto
 
@@ -52,11 +52,25 @@ Visual Studio e il debugger remoto tenta di aprire le porte corrette durante l'i
 
 Per eseguire il debug remoto, le porte seguenti devono essere aperte nel computer remoto:
 
+::: moniker range="vs-2017"
+
 |**Porte**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|
 |-|-|-|-|
 |4022|In ingresso|TCP|Per Visual Studio 2017. La porta numero aumenta di 2 per ogni versione di Visual Studio. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |4023|In ingresso|TCP|Per Visual Studio 2017. La porta numero aumenta di 2 per ogni versione di Visual Studio. Questa porta viene solo usata per remote debug di un processo a 32 bit da una versione a 64 bit del debugger remoto. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|In uscita|UDP|(Facoltativo) Richiesto per remote debugger discovery.|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**Porte**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|
+|-|-|-|-|
+|4024|In ingresso|TCP|Per Visual Studio 2019. La porta numero aumenta di 2 per ogni versione di Visual Studio. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|In ingresso|TCP|Per Visual Studio 2019. La porta numero aumenta di 2 per ogni versione di Visual Studio. Questa porta viene solo usata per remote debug di un processo a 32 bit da una versione a 64 bit del debugger remoto. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|In uscita|UDP|(Facoltativo) Richiesto per remote debugger discovery.|
+
+::: moniker-end
 
 Se si seleziona **utilizza modalità di compatibilità gestita** sotto **Tools** > **opzioni** > **debug**, aprire Queste porte aggiuntivi del debugger remoto. Modalità di compatibilità gestita debugger consente una legacy, la versione di Visual Studio 2010 del debugger.
 
