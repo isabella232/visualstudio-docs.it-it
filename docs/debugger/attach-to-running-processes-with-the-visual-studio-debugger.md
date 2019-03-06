@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637503"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428765"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
@@ -95,9 +95,20 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
 
    - Selezionare la freccia giù accanto a **destinazione della connessione**e selezionare il nome del computer nell'elenco a discesa.
    - Digitare il nome del computer nel **destinazione della connessione** casella.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4022 è la porta predefinita per il debugger remoto di Visual Studio 2017 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4024 è la porta predefinita per il debugger remoto di Visual Studio 2019 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Selezionare il **trovare** accanto alle **destinazione della connessione** casella per aprire il **le connessioni Remote** nella finestra di dialogo. Il **le connessioni Remote** nella finestra di dialogo sono elencati tutti i dispositivi sulla subnet locale o collegato direttamente al computer in uso. Potresti dover [aprire la porta UDP 3702](../debugger/remote-debugger-port-assignments.md) sul server per individuare i dispositivi remoti. Selezionare il computer o dispositivo desiderato, quindi fare clic su **seleziona**.
 
@@ -142,7 +153,7 @@ Se non è possibile adottare una di queste soluzioni alternative, una terza opzi
 È possibile riconnettere rapidamente i processi che in precedenza sono stati collegati a, scegliendo **Debug** > **riassocia a processo** (**MAIUSC** + **Alt**+**P**). Quando si sceglie questo comando, il debugger tenterà immediatamente di connettere all'ultima processi che sono stati collegati a tentando innanzitutto di associare l'ID del processo precedente e se ha esito negativo, associando il precedente il nome del processo. Se non vengono trovate corrispondenze o se alcuni processi hanno lo stesso nome, il **Connetti a processo** verrà aperta la finestra di dialogo che consente di selezionare il processo corretto.
 
 > [!NOTE]
-> Il **riassocia a processo** command è una novità in Visual Studio 2017.
+> Il **riassocia a processo** comando è disponibile a partire da Visual Studio 2017.
 
 ## <a name="BKMK_Scenarios"></a> Scenari di debug comuni
 

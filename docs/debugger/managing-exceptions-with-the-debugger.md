@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700913"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428700"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
@@ -204,7 +204,7 @@ public class GenericException<T> : Exception
 Usare la **impostazioni eccezioni** finestra per impostare le condizioni in caso di eccezioni. Attualmente sono supportati le condizioni includono i nomi di modulo da includere o escludere per l'eccezione. Imposta i nomi di modulo come condizioni, è possibile scegliere per l'interruzione per l'eccezione solo su alcuni moduli di codice. È anche possibile scegliere evitare l'interruzione per moduli specifici.
 
 > [!NOTE]
-> Aggiunta di condizioni per un'eccezione è stata introdotta in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> L'aggiunta di condizioni per un'eccezione è supportata a partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Per aggiungere le eccezioni condizionale:
 

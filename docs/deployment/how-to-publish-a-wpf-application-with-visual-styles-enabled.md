@@ -8,14 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca44be7d47bbcfe7534462af5e5dfa8a6781ad2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638426"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953917"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
+
 Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario attivarli manualmente. Abilitazione degli stili per un'applicazione WPF e quindi pubblicare la soluzione, tuttavia, provoca un errore. Questo argomento descrive come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per altre informazioni sugli stili di visualizzazione, vedere [panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview). Per altre informazioni sul messaggio di errore, vedere [risolvere i problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Per risolvere l'errore e pubblicare la soluzione, è necessario eseguire le attività seguenti:
@@ -32,7 +33,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Pubblicare la soluzione senza gli stili visuali abilitati
 
-1.  Assicurarsi che il progetto non ha abilitati gli stili di visualizzazione. In primo luogo, verificare i file manifesto del progetto per il codice XML seguente. Quindi, se il codice XML è presente, racchiudere il codice XML con un tag di commento.
+1. Assicurarsi che il progetto non ha abilitati gli stili di visualizzazione. In primo luogo, verificare i file manifesto del progetto per il codice XML seguente. Quindi, se il codice XML è presente, racchiudere il codice XML con un tag di commento.
 
      Per impostazione predefinita, gli stili di visualizzazione non sono abilitati.
 
@@ -46,36 +47,36 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
      Le procedure seguenti illustrano come aprire il file manifesto associato al progetto.
 
-    ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Per aprire il file manifesto in un progetto Visual Basic
+    **Per aprire il file manifesto in un progetto Visual Basic**
 
-    1.  Nella barra dei menu, scegliere **Project**, *NomeProgetto* **proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
+    1. Nella barra dei menu, scegliere **Project**, *NomeProgetto* **proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
 
          Vengono visualizzate le pagine delle proprietà per il progetto WPF.
 
-    2.  Nel **Application** scheda, scegliere **le impostazioni di Windows Vista**.
+    2. Nel **Application** scheda, scegliere **le impostazioni di Windows Vista**.
 
          Il file app. manifest verrà aperto nel **Editor di codice**.
 
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Per aprire il file manifesto in un C# progetto
+    **Per aprire il file manifesto in un C# progetto**
 
-    1.  Nella barra dei menu, scegliere **Project**, *NomeProgetto* **proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
+    1. Nella barra dei menu, scegliere **Project**, *NomeProgetto* **proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
 
          Vengono visualizzate le pagine delle proprietà per il progetto WPF.
 
-    2.  Nel **applicazione** scheda, prendere nota del nome che viene visualizzato nel campo del manifesto. Si tratta del nome del manifesto associato al progetto.
+    2. Nel **applicazione** scheda, prendere nota del nome che viene visualizzato nel campo del manifesto. Si tratta del nome del manifesto associato al progetto.
 
         > [!NOTE]
-        >  Se **Incorpora manifesto con impostazioni predefinite** oppure **Crea applicazione senza manifesto** vengono visualizzati nel campo del manifesto, non sono abilitati gli stili di visualizzazione. Se il nome di un file manifesto viene visualizzato nel campo del manifesto, procedere al passaggio successivo in questa procedura.
+        > Se **Incorpora manifesto con impostazioni predefinite** oppure **Crea applicazione senza manifesto** vengono visualizzati nel campo del manifesto, non sono abilitati gli stili di visualizzazione. Se il nome di un file manifesto viene visualizzato nel campo del manifesto, procedere al passaggio successivo in questa procedura.
 
-    3.  In **Esplora soluzioni** scegliere **Mostra tutti i file**.
+    3. In **Esplora soluzioni** scegliere **Mostra tutti i file**.
 
          Questo pulsante Mostra tutti gli elementi di progetto, inclusi quelli che sono stati esclusi e quelli che sono normalmente nascosti. Il file manifesto viene visualizzato come un elemento del progetto.
 
-2.  Creare e pubblicare la soluzione. Per altre informazioni su come pubblicare la soluzione, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+2. Creare e pubblicare la soluzione. Per altre informazioni su come pubblicare la soluzione, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="create-a-manifest-file"></a>Creare un file manifesto
 
-1.  Incollare il codice XML seguente in un file di blocco note.
+1. Incollare il codice XML seguente in un file di blocco note.
 
      Questo codice XML descrive l'assembly che contiene i controlli che supportano gli stili di visualizzazione.
 
@@ -94,16 +95,16 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
     </asmv1:assembly>
     ```
 
-2.  Nel blocco note, fare clic su **File**, quindi fare clic su **Salva con nome**.
+2. Nel blocco note, fare clic su **File**, quindi fare clic su **Salva con nome**.
 
-3.  Nel **Salva con nome** nella finestra di dialogo il **Salva come tipo** elenco a discesa, seleziona **tutti i file**.
+3. Nel **Salva con nome** nella finestra di dialogo il **Salva come tipo** elenco a discesa, seleziona **tutti i file**.
 
-4.  Nel **nomefile** casella, denominare il file e di Accodamento *manifest* alla fine del nome del file. Ad esempio: *themes.manifest*.
+4. Nel **nomefile** casella, denominare il file e di Accodamento *manifest* alla fine del nome del file. Ad esempio: *themes.manifest*.
 
-5.  Scegliere il **Sfoglia cartelle** pulsante, selezionare una cartella specifica e quindi fare clic su **salvare**.
+5. Scegliere il **Sfoglia cartelle** pulsante, selezionare una cartella specifica e quindi fare clic su **salvare**.
 
     > [!NOTE]
-    >  Nelle procedure restanti si presuppone che il nome di questo file sia *themes.manifest* e che il file viene salvato il *C:\temp* directory nel computer.
+    > Nelle procedure restanti si presuppone che il nome di questo file sia *themes.manifest* e che il file viene salvato il *C:\temp* directory nel computer.
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incorporare il file manifesto nel file eseguibile della soluzione pubblicata
 
@@ -112,15 +113,15 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
     Per altre informazioni su come aprire la **Prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
-   >  I passaggi rimanenti partono dai presupposti seguenti sulla soluzione:
+   > I passaggi rimanenti partono dai presupposti seguenti sulla soluzione:
    >
    > - È il nome della soluzione **MyWPFProject**.
-   >   -   La soluzione si trova nella seguente directory: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.
+   > - La soluzione si trova nella seguente directory: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.
    >
-   >   La soluzione viene pubblicata nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.
-   >   -   La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - La soluzione viene pubblicata nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.
+   > - La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
-   >   Non è necessario usare il nome o i percorsi delle directory descritti in precedenza. Il nome e i percorsi descritti sopra sono utilizzati solo per illustrare i passaggi necessari per pubblicare la propria soluzione.
+   > Non è necessario usare il nome o i percorsi delle directory descritti in precedenza. Il nome e i percorsi descritti sopra sono utilizzati solo per illustrare i passaggi necessari per pubblicare la propria soluzione.
 
 2. Al prompt dei comandi, modificare il percorso della directory che contiene la versione più recente dei file dell'applicazione pubblicata. L'esempio seguente illustra questo passaggio.
 
@@ -143,7 +144,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
    ```
 
    > [!NOTE]
-   >  Questo esempio si presuppone che un solo file con il *deploy* estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory contenenti i *deploy* estensione di file.
+   > Questo esempio si presuppone che un solo file con il *deploy* estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory contenenti i *deploy* estensione di file.
 
 2. Al prompt dei comandi, eseguire il comando seguente per firmare il manifesto dell'applicazione.
 
@@ -152,7 +153,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
    ```
 
    > [!NOTE]
-   >  Questo esempio si presuppone che il manifesto viene firmata usando il *PFX* file del progetto. Se non si firmano il manifesto, è possibile omettere il `-cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `-password` opzione (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).
+   > Questo esempio si presuppone che il manifesto viene firmata usando il *PFX* file del progetto. Se non si firmano il manifesto, è possibile omettere il `-cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `-password` opzione (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).
 
 3. Al prompt dei comandi, eseguire il comando seguente per aggiungere il *deploy* estensione per il nome del file che è stato rinominato in un passaggio precedente di questa procedura.
 
@@ -161,7 +162,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
    ```
 
    > [!NOTE]
-   >  Questo esempio si presuppone che un solo file aveva una *deploy* estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory che in precedenza era il *deploy* estensione del nome file.
+   > Questo esempio si presuppone che un solo file aveva una *deploy* estensione di file. Assicurarsi che non è rinominare tutti i file in questa directory che in precedenza era il *deploy* estensione del nome file.
 
 4. Al prompt dei comandi, eseguire il comando seguente per firmare il manifesto della distribuzione.
 
@@ -170,7 +171,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
    ```
 
    > [!NOTE]
-   >  Questo esempio si presuppone che il manifesto viene firmata usando il *PFX* file del progetto. Se non si firmano il manifesto, è possibile omettere il `-cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `-password` opzione, come nel seguente esempio:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.
+   > Questo esempio si presuppone che il manifesto viene firmata usando il *PFX* file del progetto. Se non si firmano il manifesto, è possibile omettere il `-cf` parametro utilizzato in questo esempio. Se si firmano del manifesto con un certificato che richiede una password, specificare il `-password` opzione, come nel seguente esempio:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.
 
    Dopo aver eseguito questi passaggi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione. Se si intende aggiornare spesso la soluzione, è possibile spostare questi comandi in uno script ed eseguire lo script ogni volta che si pubblica una nuova versione.
 

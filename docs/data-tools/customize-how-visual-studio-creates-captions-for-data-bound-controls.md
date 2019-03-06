@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939840"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323701"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
-Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md#data-sources-window) in una finestra di progettazione, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono state trovate per essere concatenati tra loro. È possibile personalizzare il modo in cui vengono create queste etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** chiave del Registro di sistema.
+Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md#data-sources-window) in una finestra di progettazione, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono state trovate per essere concatenati tra loro.
+
+::: moniker range="vs-2017"
+
+È possibile personalizzare il modo in cui vengono create queste etichette impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** chiave del Registro di sistema.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+È possibile personalizzare il modo in cui vengono create queste etichette impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data** chiave del Registro di sistema.
+
+::: moniker-end
 
 > [!NOTE]
 > Questa chiave del Registro di sistema non esiste fino a quando non si crea.
@@ -31,7 +43,7 @@ I sottotitoli intelligente è controllato dall'espressione regolare immessa nel 
 
 La tabella seguente descrive i valori del Registro di sistema che controllano le etichette della didascalia.
 
-|Elemento Registro di sistema|Descrizione|
+|Elemento Registro di sistema|Description|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|L'espressione regolare che è utilizzare in modo che corrispondano ai modelli.|
 |**SmartCaptionReplacement**|Il formato per visualizzare tutti i gruppi di una corrispondenza con il **SmartCaptionExpression**.|
@@ -46,21 +58,31 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 |**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, rende il suffisso `Company Name:`|
 
 > [!CAUTION]
-> È necessario prestare molta attenzione quando si esegue alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si usa l'Editor del Registro di sistema in modo non corretto, si possono causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti utilizzando l'Editor del Registro di sistema in modo non corretto. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
+> Prestare molta attenzione quando si esegue alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si usa l'Editor del Registro di sistema in modo non corretto, si possono causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti utilizzando l'Editor del Registro di sistema in modo non corretto. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
 >
-> L'articolo della Knowledge Base seguente contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Per informazioni sul backup, la modifica e il ripristino di registro di sistema, vedere [le informazioni del Registro di sistema di Windows per gli utenti avanzati](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificare il comportamento di sottotitoli codificato intelligente della finestra Origini dati
 
-1.  Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
+1. Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
 
-2.  Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
+2. Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
 
-3.  Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-4.  Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
+4. Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Fare doppio clic il **16.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+
+::: moniker-end
+
+5. Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Disattivare la funzionalità smart i sottotitoli codificata
 
-1.  Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
+1. Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
 
-2.  Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
+2. Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
 
-3.  Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-4.  Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
+4. Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Fare doppio clic il **16.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+
+::: moniker-end
+
+5. Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

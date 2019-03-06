@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703708"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428648"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Getting Started With The Debugger Snapshot
 
@@ -69,6 +69,6 @@ Il sito Web stesso è ancora in tempo reale e gli utenti finali non sono interes
 
 ## <a name="dont-show-me-this-again"></a>Non visualizzare più questo messaggio
 
-Per non visualizzare la pagina di avvio del Debugger di Snapshot di più quando ci si connette il Debugger di Snapshot, modificare il **Mostra 'Attività iniziali' pagina all'avvio delle sessioni** opzione **Tools**  >   **Le opzioni** > **Snapshot Debugger**.
+Per non visualizzare la pagina iniziale di Debugger Snapshot nuovamente quando ci si connette il Debugger di Snapshot, modificare il **Mostra 'Attività iniziali' pagina all'avvio delle sessioni** opzione **Tools**  >   **Le opzioni** > **Snapshot Debugger**.
 
 ![Pagina delle opzioni dello strumento Debugger snapshot](../media/snapshot-startpage-tools-options.png)

@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694608"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223585"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: abilitare e disabilitare Modifica e continuazione (C#, VB, C++)
 
 È possibile disabilitare o abilitare **modifica e continuazione** in Visual Studio **opzioni** finestra di dialogo in fase di progettazione. La funzionalità **Modifica e continuazione** può essere usata solo nelle build di debug. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
 
-C++ nativo **modifica e continuazione** richiede l'uso di `/INCREMENTAL` opzione. Per altre informazioni sui requisiti di funzionalità in C++, vedere questo [post di blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) e [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
+C++ nativo **modifica e continuazione** richiede l'uso di `/INCREMENTAL` opzione. Per altre informazioni sui requisiti di funzionalità in C++, vedere questo [post di blog](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) e [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
 
 **Per abilitare o disabilitare Modifica e continuazione:**
 
