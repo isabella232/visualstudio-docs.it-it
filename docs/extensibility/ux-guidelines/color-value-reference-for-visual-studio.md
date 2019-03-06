@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954429"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428830"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento del valore di colore per Visual Studio
 
@@ -134,7 +134,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 | In primo piano: disabilitata | ![Campione & FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& FFA2A4A5 campione")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![Campione & FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "& FFA2A4A5 campione")<br />`#FFA2A4A5` | ![GrayText swatch](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText swatch")<br />`GrayText` |
 | In background: disabilitata | ![Campione #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 campione")<br />`#FFF5F5F5` | ![Campione & FF252526](../../extensibility/ux-guidelines/media/252526.png "& FF252526 campione")<br />`#FF252526` | ![Campione & FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "& FFF6F6F6 campione")<br />`#FFF6F6F6` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
 | Bordo | ![#FFCCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB swatch")<br />`#FFCCCEDB` | ![Campione & FF434346](../../extensibility/ux-guidelines/media/434346.png "& FF434346 campione")<br />`#FF434346` | ![#FFCCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB swatch")<br />`#FFCCCEDB` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark campione")<br />`ControlDark` |
-| Bordo: disabilitata | ![#FFCCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB swatch")<br />`#FFCCCEDB` | ![Campione & FF434346](../../extensibility/ux-guidelines/media/434346.png "& FF434346 campione")<br />`#FF434346` | ![#FFC6C6C6 swatch](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 swatch")<br />`#FFC6C6C6` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark campione")<br />`ControlDark ` |
+| Bordo: disabilitata | ![#FFCCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB swatch")<br />`#FFCCCEDB` | ![Campione & FF434346](../../extensibility/ux-guidelines/media/434346.png "& FF434346 campione")<br />`#FF434346` | ![#FFC6C6C6 swatch](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 swatch")<br />`#FFC6C6C6` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark campione")<br />`ControlDark` |
 
 ### <a name="list-items"></a>Elementi dell'elenco
 
