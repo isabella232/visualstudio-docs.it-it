@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913171"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223273"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -76,7 +76,7 @@ Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/targe
 
 ### <a name="auto-generate-binding-redirects"></a>Genera automaticamente reindirizzamenti di binding
 
-I reindirizzamenti di binding vengono aggiunti al progetto se l'app o i relativi componenti fanno riferimento a più di una versione dello stesso assembly. Se si vuole definire manualmente i reindirizzamenti di binding nel file di progetto, deselezionare **Genera automaticamente reindirizzamenti di binding**. Questa casella di controllo è stata introdotta in Visual Studio 2017 versione 15.7.
+I reindirizzamenti di binding vengono aggiunti al progetto se l'app o i relativi componenti fanno riferimento a più di una versione dello stesso assembly. Se si vuole definire manualmente i reindirizzamenti di binding nel file di progetto, deselezionare **Genera automaticamente reindirizzamenti di binding**.
 
 Per altre informazioni sul reindirizzamento, vedere [Reindirizzamento delle versioni di assembly](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

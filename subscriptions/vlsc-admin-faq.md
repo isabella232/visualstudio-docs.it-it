@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Domande frequenti sulla migrazione dell'amministrazione del Volume License Service Center
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844100"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953944"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrazione dell'amministrazione delle sottoscrizioni di Visual Studio
 
@@ -44,21 +44,21 @@ Sì.  Questo processo prevede due fasi. Se si esegue la configurazione (o il car
 ### <a name="what-is-the-onboarding-process"></a>Che cos'è il processo di caricamento?
 Un messaggio di posta elettronica viene inviato ai contatti principali o per le comunicazione invitandoli a completare il processo di caricamento.
 Per istruzioni sul processo, leggere quanto riportato di seguito.
-1.  **Individuazione del PCN e accesso:**
+1. **Individuazione del PCN e accesso:**
 
-    a.  I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica contenente un collegamento univoco e le ultime tre cifre del numero PCN.*
+    a. I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica contenente un collegamento univoco e le ultime tre cifre del numero PCN.*
 
-    b.  Per ottenere il PCN completo, il contatto principale deve accedere a VLSC (le istruzioni per l'individuazione del PCN sono disponibili di seguito).
+    b. Per ottenere il PCN completo, il contatto principale deve accedere a VLSC (le istruzioni per l'individuazione del PCN sono disponibili di seguito).
 
-    c.  Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Sarà possibile accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AD) o un account Microsoft se l'organizzazione non è presente in Azure AD.
+    c. Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Sarà possibile accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AD) o un account Microsoft se l'organizzazione non è presente in Azure AD.
 
-    d.  Successivamente, sarà richiesto di immettere il PCN.
+    d. Successivamente, sarà richiesto di immettere il PCN.
 
-2.  **Configurare gli amministratori.**
+2. **Configurare gli amministratori.**
 
     Dopo aver immesso il PCN, si aprirà la pagina in cui sarà possibile aggiungere amministratori e amministratori con privilegi elevati (precedentemente noti come gestori delle sottoscrizioni). Sarebbe buona norma completare tale operazione prima della data di migrazione dell'organizzazione. In questo modo si evitano interruzioni nella gestione delle sottoscrizioni.
 
-3.  **Accesso al nuovo portale per la gestione delle sottoscrizioni:** dopo la migrazione dell'organizzazione gli amministratori e gli amministratori con privilegi elevati riceveranno messaggi di posta elettronica per eseguire l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
+3. **Accesso al nuovo portale per la gestione delle sottoscrizioni:** dopo la migrazione dell'organizzazione gli amministratori e gli amministratori con privilegi elevati riceveranno messaggi di posta elettronica per eseguire l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
 
 > [!NOTE]
 > Se il contatto principale o per le comunicazioni riceve più di un messaggio di posta elettronica, significa che ha più PCN. È necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.

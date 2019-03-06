@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155877"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954361"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -66,7 +66,7 @@ Quando si impostano le condizioni, è anche possibile impostare un'**azione** e 
 
 Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di interruzione, sono disponibili varie opzioni per eseguire il codice istruzione per istruzione oppure eseguire blocchi di codice prima di una nuova interruzione. Questi comandi sono disponibili in diverse posizioni, tra cui la barra degli strumenti di debug superiore, il menu **Debug**, il menu di scelta rapida nell'editor del codice e tramite i tasti di scelta rapida, tenendo presente però che non tutti i comandi sono accessibili da tutte le posizioni:
 
-| Funzionalità | Tasto o combinazione di tasti | Descrizione |
+| Funzionalità | Tasto o combinazione di tasti | Description |
 | --- | --- | --- |
 | **Continue** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
 | **Esegui istruzione** | **F11** | Esegue l'istruzione successiva e si arresta. Se l'istruzione successiva è una chiamata a una funzione, il debugger si arresta in corrispondenza della prima riga della funzione chiamata. |
@@ -132,7 +132,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="launch-mode-options"></a>Opzioni di Modalità di avvio
 
-| Opzione | Descrizione |
+| Opzione | Description |
 | --- | --- |
 | **Utilità di avvio Python standard** | Usa il codice di debug scritto in Python portabile che è compatibile con CPython, IronPython e varianti quali Stackless Python. Offre un'esperienza ottimale per il debug di codice Python puro. Si tratta dell'utilità di avvio usata quando ci si collega a un processo *python.exe* in esecuzione. Questa utilità di avvio include anche il [debug in modalità mista](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) per CPython, che consente di passare in modo trasparente dal codice C/C++ al codice Python e viceversa. |
 | **Utilità di avvio Web** | Esegue il browser predefinito all'avvio e consente di eseguire il debug di modelli. Per altre informazioni, vedere la sezione [Web template debugging](python-web-application-project-templates.md#debugging) (Debug di modelli Web). |
@@ -141,7 +141,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opzioni di esecuzione (percorsi di ricerca, argomenti di avvio e variabili di ambiente)
 
-| Opzione | Descrizione |
+| Opzione | Description |
 | --- | --- |
 | **Percorsi di ricerca** | Questi valori corrispondono a quanto visualizzato nel nodo **Percorsi di ricerca** del progetto in **Esplora soluzioni**. È possibile modificare qui questo valore, ma è più facile usare **Esplora soluzioni** che consente di sfogliare le cartelle e converte automaticamente i percorsi nel formato relativo. |
 | **Argomenti dello script** | Questi argomenti vengono aggiunti al comando usato per avviare lo script e vengono visualizzati dopo il nome del file di script. Il primo elemento definito qui risulta disponibile per lo script come `sys.argv[1]`, il secondo come `sys.argv[2]`e così via. |
@@ -161,7 +161,7 @@ La finestra **Debug interattivo Python** (**Debug** > **Finestre** > **Debug int
 
 La finestra **Debug interattivo** supporta speciali metacomandi in aggiunta ai [comandi REPL standard](python-interactive-repl-in-visual-studio.md#meta-commands):
 
-| Comando | Argomenti | Descrizione |
+| Comando | Argomenti | Description |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Avvia l'esecuzione del programma a partire dall'istruzione corrente. |
 | `$down`, `$d` | Sposta il frame corrente di un livello verso il basso nell'analisi dello stack. |
@@ -246,7 +246,7 @@ La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 1. Immettere il comando seguente:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Avviare il debug ed eseguire tutti i passaggi necessari per riprodurre il problema. Mentre si eseguono queste operazioni, i log del debug vengono visualizzati nella finestra **Output** in **Log dell'host dell'adattatore di debug**. È quindi possibile copiare i log da tale finestra e incollarli in una segnalazione in GitHub, un messaggio di posta elettronica e così via.
@@ -256,7 +256,7 @@ La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 1. Se Visual Studio si blocca o non si è in grado di accedere alla finestra **Output**, riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Avviare il debug e riprodurre di nuovo il problema. I log del debugger sono disponibili in `%temp%\DebugAdapterHostLog.txt`.

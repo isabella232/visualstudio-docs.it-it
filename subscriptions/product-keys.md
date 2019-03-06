@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843719"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953901"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -104,10 +104,10 @@ I sottoscrittori di Visual Studio possono aumentare il numero di utenti che sono
 Sono disponibili cinque codici di ogni tipo per Windows Server 2008 R2 e ogni codice supporterà 20 connessioni. Per Windows Server 2012 R2 sono disponibili quattro codici per ogni tipo e ogni codice supporterà 50 connessioni.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Per abilitare connessioni aggiuntive in Windows Server:
-1.  Aprire Server Manager.
-2.  Aprire l'elenco Server nel riquadro di spostamento a sinistra.
-3.  Fare clic con il pulsante destro del mouse sul server licenze e scegliere "Installa licenze".
-4.  Seguire i passaggi nella procedura guidata.  Quando si seleziona il tipo di contratto, scegliere "License Pack (per l'utente finale)" e immettere il codice Product Key ottenuto dal portale personale.
+1. Aprire Server Manager.
+2. Aprire l'elenco Server nel riquadro di spostamento a sinistra.
+3. Fare clic con il pulsante destro del mouse sul server licenze e scegliere "Installa licenze".
+4. Seguire i passaggi nella procedura guidata.  Quando si seleziona il tipo di contratto, scegliere "License Pack (per l'utente finale)" e immettere il codice Product Key ottenuto dal portale personale.
 
 Gli utenti finali possono connettersi per accedere alle applicazioni tramite Servizi Desktop remoto, purché vengano soddisfatte le condizioni seguenti:
 - Gli utenti devono essere anonimi (con stato non autenticato).

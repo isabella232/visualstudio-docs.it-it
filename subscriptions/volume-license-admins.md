@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Informazioni su come gli amministratori delle sottoscrizioni possono accedere al portale di amministrazione e gestire le sottoscrizioni acquistate tramite i contratti multilicenza
 searchscope: VS Subscription
-ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843138"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953260"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accesso al portale e gestione degli amministratori per le sottoscrizioni acquistate tramite i contratti multilicenza
 
@@ -31,7 +31,7 @@ Se si è già stati configurati come amministratore, è possibile passare dirett
 
 Quando l'organizzazione è pronta per il processo di onboarding nel portale di amministrazione di Visual Studio, i contatti principali e per le comunicazioni riceveranno una e -mail con una richiesta per il completamento del processo. I dettagli riportati di seguito rappresentano i passaggi necessari per eseguire l'onboarding nel nuovo portale. Se si vuole esaminare il processo, vedere il video sull'onboarding dell'amministratore o le sezioni successive nei documenti.
 
-1.  Individuazione del PCN e accesso
+1. Individuazione del PCN e accesso
 
      a. I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica un collegamento e le ultime tre cifre del numero PCN.  Se il contatto principale o per le comunicazioni riceve più di un messaggio di posta elettronica, significa che ha più PCN. Sarà necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.
 
@@ -41,9 +41,9 @@ Quando l'organizzazione è pronta per il processo di onboarding nel portale di a
 
      d. Successivamente, sarà necessario immettere il PCN.
 
-2.  Configurare gli amministratori.  Dopo aver immesso il PCN, saranno registrati come amministratori con privilegi elevati nel nuovo sistema e saranno in grado di aggiungere altri amministratori con privilegi elevati e amministratori (precedentemente noti come gestori degli abbonamenti). Per evitare di perdere l'accesso,il processo deve essere completato prima della data di migrazione dell'organizzazione.
+2. Configurare gli amministratori.  Dopo aver immesso il PCN, saranno registrati come amministratori con privilegi elevati nel nuovo sistema e saranno in grado di aggiungere altri amministratori con privilegi elevati e amministratori (precedentemente noti come gestori degli abbonamenti). Per evitare di perdere l'accesso,il processo deve essere completato prima della data di migrazione dell'organizzazione.
 
-3.  Accesso al nuovo portale per la gestione delle sottoscrizioni. Una volta eseguita la migrazione dell'organizzazione, i nuovi amministratori e amministratoti con privilegi elevati registrati, riceveranno dei messaggi di posta elettronica per effettuare l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
+3. Accesso al nuovo portale per la gestione delle sottoscrizioni. Una volta eseguita la migrazione dell'organizzazione, i nuovi amministratori e amministratoti con privilegi elevati registrati, riceveranno dei messaggi di posta elettronica per effettuare l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.
 
 Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Vedere l'argomento [Trova il contatto principale](find-primary-contact.md) per la procedura per individuare il contatto principale o per le comunicazioni nel Volume Licensing Service Center.
 

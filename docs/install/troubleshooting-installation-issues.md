@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931572"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953969"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio 2017
 
@@ -84,7 +84,7 @@ Ecco una tabella dei problemi noti e di alcune soluzioni alternative che possono
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>Come ottenere i log di installazione di Visual Studio
 
-I log di installazione sono necessari per risolvere la maggior parte dei problemi di installazione. Quando si invia un problema mediante l'opzione [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del programma di installazione di Visual Studio, questi log vengono automaticamente inclusi nel report.
+I log di installazione sono necessari per risolvere la maggior parte dei problemi di installazione. Quando si invia un problema mediante l'opzione [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio.md) del programma di installazione di Visual Studio, questi log vengono automaticamente inclusi nel report.
 
 Se si contatta il supporto tecnico Microsoft, è possibile che sia necessario fornire questi log di installazione usando lo [strumento di raccolta dei log di Microsoft Visual Studio e .NET Framework](https://aka.ms/vscollect). Lo strumento di raccolta dei log raccoglie i log di installazione da tutti i componenti installati da Visual Studio 2017, tra cui .NET Framework, Windows SDK e SQL Server. Raccoglie anche informazioni sul computer, oltre a un inventario di Windows Installer e a informazioni sul registro eventi di Windows per il programma di installazione di Visual Studio, Windows Installer e Ripristino configurazione di sistema.
 

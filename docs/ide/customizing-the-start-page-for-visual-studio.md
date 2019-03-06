@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685131"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953382"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
 
@@ -34,17 +34,17 @@ ms.locfileid: "56685131"
 
 1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
 
-1. Espandere **Ambiente**, quindi scegliere **Avvio**.
+2. Espandere **Ambiente**, quindi scegliere **Avvio**.
 
 ::: moniker range="vs-2017"
 
-1. Nell'elenco **All'avvio** scegliere l'elemento da visualizzare dopo l'avvio di Visual Studio.
+3. Nell'elenco **All'avvio** scegliere l'elemento da visualizzare dopo l'avvio di Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Nell'elenco **All'avvio apri** scegliere l'operazione che verrà eseguita all'avvio di Visual Studio. È possibile scegliere tra **Finestra iniziale** (che consente di aprire un progetto nuovo o esistente), **Soluzione più recente** o **Ambiente vuoto**.
+3. Nell'elenco **All'avvio apri** scegliere l'operazione che verrà eseguita all'avvio di Visual Studio. È possibile scegliere tra **Finestra iniziale** (che consente di aprire un progetto nuovo o esistente), **Soluzione più recente** o **Ambiente vuoto**.
 
 ::: moniker-end
 

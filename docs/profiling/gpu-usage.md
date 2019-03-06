@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893383d8260a3b7904921e12175f81741a7978b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948908"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223468"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 
@@ -155,7 +155,7 @@ Di seguito è riportato un elenco delle GPU e dei driver supportati:
 
 - [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools) (Risolvere problemi di grafica complessi del gioco usando gli strumenti DirectX)
 - [GPU Usage Tool in Visual Studio (video)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715) (Strumento Utilizzo GPU in Visual Studio)
-- [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](https://blogs.msdn.microsoft.com/vcblog/2014/09/04/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/) (Strumento Utilizzo GPU in Visual Studio 2013 Update 4 CTP1)
+- [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/) (Strumento Utilizzo GPU in Visual Studio 2013 Update 4 CTP1)
 - [GPU Usage for DirectX in Visual Studio (blog)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/) (Utilizzo GPU per DirectX in Visual Studio)
 - [GPUView](/windows-hardware/drivers/display/using-gpuview)
 - [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
