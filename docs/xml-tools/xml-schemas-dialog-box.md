@@ -1,19 +1,21 @@
 ---
-title: Finestra di dialogo Schemi XML
+title: XML Schema
 ms.date: 11/04/2016
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930877"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524923"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo schemi XML
 
@@ -22,15 +24,16 @@ Il **schemi XML** nella finestra di dialogo è possibile selezionare quali schem
 È possibile accedere la **schemi XML** finestra di dialogo facendo la **schemi** pulsante nella finestra delle proprietà del documento o selezionando **schemi** dal **XML** menu.
 
 ## <a name="uielement-list"></a>Elenco UIElement
- **Usare**
 
- Consente di selezionare la modalità di utilizzo di XML Schema.
+**Usare**
 
--   **Automatica**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.
+Consente di selezionare la modalità di utilizzo di XML Schema.
 
--   **Usare questo schema**. Questo schema è usato dal documento corrente. L'utilizzo di questo schema è stato richiesto in modo esplicito selezionando questa colonna oppure lo schema è stato associato automaticamente in base a un `targetNamespace` corrispondente.
+- **Automatica**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.
 
--   **Non usare gli schemi selezionati**. Questo schema non è usato dal documento corrente anche se dispone di un `targetNamespace` corrispondente. Questa impostazione può essere utile per la risoluzione di conflitti nel caso in cui la cache dello schema o la soluzione contengano più versioni dello stesso schema.
+- **Usare questo schema**. Questo schema è usato dal documento corrente. L'utilizzo di questo schema è stato richiesto in modo esplicito selezionando questa colonna oppure lo schema è stato associato automaticamente in base a un `targetNamespace` corrispondente.
+
+- **Non usare gli schemi selezionati**. Questo schema non è usato dal documento corrente anche se dispone di un `targetNamespace` corrispondente. Questa impostazione può essere utile per la risoluzione di conflitti nel caso in cui la cache dello schema o la soluzione contengano più versioni dello stesso schema.
 
 **Target Namespace**
 
@@ -50,6 +53,5 @@ Consente di rimuovere lo schema attualmente selezionato dal set di schemi. L'ope
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Componenti dell'Editor XML](../xml-tools/xml-editor-components.md)
 - [Procedura: Selezionare gli schemi XML da usare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache degli schemi](../xml-tools/schema-cache.md)

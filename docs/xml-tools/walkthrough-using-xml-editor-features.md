@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Utilizzo delle funzionalità dell'Editor XML"
+title: "Procedura dettagliata: Utilizzo delle funzionalità dell'editor XML"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954686"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525869"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: Usare le funzionalità dell'editor XML
 
-Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. Nella procedura dettagliata vengono inoltre usate alcune delle funzionalità dell'editor XML che lo rendono particolarmente utile per la creazione di codice XML.
+Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. La procedura dettagliata Usa anche alcune delle funzionalità dell'editor XML che lo rendono particolarmente utile per la creazione di XML.
 
 > [!NOTE]
 > Prima di avviare la procedura dettagliata, salvare la *HireDate* file (incluso di seguito in questo argomento) nel computer locale.
@@ -96,9 +96,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-format-the-xml-document"></a>Per formattare il documento XML
 
-- Selezionare il **Formatta documento** pulsante nella barra degli strumenti Editor XML.
+- Selezionare il **Formatta documento** pulsante nella barra degli strumenti dell'editor XML, oppure premere **Ctrl**+**elettronica**,**1!d**.
 
-    Il documento XML viene riformattato.
+   ![Pulsante di documenti di formato XML in Visual Studio](media/format-xml-document.png)
+
+   Il documento XML viene riformattato.
 
 ## <a name="to-save-the-xml-document"></a>Per salvare il documento XML
 
@@ -109,7 +111,8 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 2.  Immettere il nome del file e il percorso per il documento XML e fare clic su **salvare**.
 
 ## <a name="hiredatexsd-file"></a>file HireDate XSD
- nella procedura dettagliata viene usato il seguente file di schema.
+
+In questa procedura dettagliata viene usato il file di schema seguente:
 
 ```xml
 <?xml version="1.0"?>

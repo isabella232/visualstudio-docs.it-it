@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952645"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526646"
 ---
 # <a name="graph-view"></a>Visualizzazione Grafico
 
@@ -27,11 +27,11 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  Area di progettazione della visualizzazione grafico consente di visualizzare il contenuto del [area di lavoro della finestra di progettazione dello schema XML](../xml-tools/xml-schema-designer-workspace.md). Se l'area di lavoro contiene eventuali nodi globali del set di schemi, i nodi vengono mostrati nell'area di progettazione della visualizzazione grafico e vengono tracciate frecce tra i nodi tra cui intercorrono relazioni.
 
- Facendo doppio clic su un nodo nella visualizzazione grafico verrà visualizzato l'editor XML.
+ Fare doppio clic su un nodo nella visualizzazione grafico viene visualizzata l'editor XML.
 
  Per eliminare i nodi selezionati dall'area di lavoro, usare la barra degli strumenti progettazione XSD o la **eliminare** chiave.
 
- Se l'area di progettazione è vuota, l'Editor XML, il **XML Schema Explorer**, e vengono visualizzate la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.
+ Se l'area di progettazione è vuota, l'editor XML, il **XML Schema Explorer**, e vengono visualizzate la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.
 
  ![Progettazione XSD; Visualizzazione del grafico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -55,7 +55,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Esporta diagramma come immagine**|Salva l'area di progettazione in un file XPS.|
 |**Seleziona tutto**|Seleziona tutti i nodi nell'area di progettazione.|
-|**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato nel **XML Schema Explorer** è selezionato anche nell'Editor XML.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato nel **XML Schema Explorer** viene selezionato anche nell'editor XML.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
  Oltre alle opzioni comuni descritte in precedenza, nel menu di scelta rapida per gli elementi globali sono disponibili anche le opzioni seguenti:
@@ -140,9 +140,9 @@ Il dispositivo di scorrimento dello Zoom è opaco quando lo selezionarlo, passar
 
 ## <a name="xml-editor-integration"></a>Integrazione dell'editor XML
 
- È possibile passare alternativamente tra la visualizzazione grafico e l'Editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice.
+ È possibile passare alternativamente tra la visualizzazione grafico e l'editor XML facendo clic su un nodo e usando il menu di scelta rapida Visualizza codice.
 
- Se si apportano modifiche al set di schemi nell'editor XML, le modifiche saranno sincronizzate nella visualizzazione grafico. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
+ Se si apportano modifiche allo schema nell'editor XML, le modifiche saranno sincronizzate nella visualizzazione grafico. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vedere anche
 

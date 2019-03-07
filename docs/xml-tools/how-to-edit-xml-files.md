@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931754"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525453"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: Modificare i file XML
 
-L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML autonomo o per un file associato a un progetto Visual Studio. L'Editor XML è associato con le estensioni di file seguenti: *config*, *DTD*, *XML*, *XSD*, *. XDR*, *XSL*, *XSLT*, e *vssettings*. L'editor XML è inoltre associato a qualsiasi altro tipo di file per il quale non è stato registrato un editor specifico e che presenta un contenuto XML o DTD.
+L'editor XML è il nuovo editor per i file XML. Può essere usato per un file XML autonomo o per un file associato a un progetto Visual Studio. L'editor XML è associato con le estensioni di file seguenti: *config*, *DTD*, *XML*, *XSD*, *. XDR*, *XSL*, *XSLT*, e *vssettings*. L'editor XML è anche associato a qualsiasi altro tipo di file che non dispone di alcuna specifica dell'editor registrata e che contiene il contenuto XML o DTD.
 
 > [!NOTE]
 > I documenti XHTML sono gestiti dall'editor HTML.
@@ -64,7 +64,7 @@ L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML 
 
 3.  Aggiunta di file XML al progetto.
 
-     L'editor XML individua gli schemi aggiunti al progetto e li usa per la convalida e IntelliSense in qualsiasi file XML, schema o file XSLT che vengono modificati mentre il progetto è aperto.
+     L'editor XML individua gli schemi che aggiunti al progetto e li utilizza per la convalida e IntelliSense in XML, schemi o i file XSLT che vengono modificati mentre il progetto è aperto.
 
 ## <a name="see-also"></a>Vedere anche
 

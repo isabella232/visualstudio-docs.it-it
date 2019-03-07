@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5609844763a5bb9ece7aa45b558191cf974fefb0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2758dd6425e2bfb4505a1ee9e61d4966e3ba90b6
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951618"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525157"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 
@@ -25,7 +25,7 @@ La visualizzazione iniziale contiene due sezioni principali, il *filigrana* e il
 
 ## <a name="watermark"></a>Filigrana
 
-Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni Progettazione XSD, Editor XML, e **XML Schema Explorer**. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".
+Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni Progettazione XSD, editor XML, e **XML Schema Explorer**. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".
 
 ## <a name="schema-set-details"></a>Dettagli del set di schemi
 

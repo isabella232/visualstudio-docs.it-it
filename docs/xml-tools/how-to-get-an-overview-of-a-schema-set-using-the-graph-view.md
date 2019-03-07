@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922030"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525140"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedura: Panoramica di uno schema impostato tramite la visualizzazione grafico
 
@@ -23,11 +23,11 @@ In questo argomento viene descritto come utilizzare il [visualizzazione grafico]
 
 1.  Creare un nuovo file di XML Schema e salvare il file come *Relationships*.
 
-2.  Scegliere il **usare l'Editor XML per visualizzare e modificare il file di XML Schema sottostante** collegamento nella visualizzazione iniziale.
+2.  Scegliere il **l'editor XML di uso per visualizzare e modificare il file di XML Schema sottostante** collegamento nella visualizzazione iniziale.
 
 3.  Copiare il codice di esempio di XML Schema da [dello schema XML di esempio: relazioni](../xml-tools/sample-xsd-file-relationships.md) e incollarlo per sostituire il codice che è stato aggiunto il nuovo file XSD per impostazione predefinita.
 
-4.  Fare doppio clic in un punto qualsiasi dell'Editor XML e selezionare **Progettazione viste**.
+4.  Fare doppio clic in un punto qualsiasi nell'editor XML e selezionare **Progettazione viste**.
 
 5.  Selezionare la visualizzazione grafico dal **sulla barra degli strumenti XSD**.
 
