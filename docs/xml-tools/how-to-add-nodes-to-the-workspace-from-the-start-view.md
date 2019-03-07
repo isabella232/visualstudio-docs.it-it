@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f2fac4ce1266dc9df59ada54631306664bd6f42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913837"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526399"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedura: Aggiungere nodi all'area di lavoro dalla visualizzazione iniziale
 
@@ -23,7 +23,7 @@ In questo argomento viene descritto come aggiungere nodi globali per il [dell'ar
 
 1.  Seguire i passaggi in [come: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Fare doppio clic nell'Editor XML e selezionare **Progettazione viste**.
+2.  Fare doppio clic nell'editor XML e selezionare **Progettazione viste**.
 
      Viene aperta la visualizzazione iniziale.
 

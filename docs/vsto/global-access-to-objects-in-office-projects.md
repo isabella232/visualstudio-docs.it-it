@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600389"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525197"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Accesso globale a oggetti nei progetti di Office
   Quando si crea un progetto di Office, Visual Studio genera automaticamente una classe denominata `Globals` nel progetto. È possibile usare la classe `Globals` per accedere ai diversi elementi del progetto in fase di esecuzione da qualsiasi codice del progetto.
@@ -74,7 +74,7 @@ ms.locfileid: "56600389"
  Il codice che tenta di usare il `Globals` classe prima che il documento o un componente aggiuntivo VSTO viene inizializzato potrebbe generare un'eccezione in fase di esecuzione. Ad esempio, l'utilizzo di `Globals` per la dichiarazione di una variabile a livello di classe potrebbe avere esito negativo perché la classe `Globals` potrebbe non essere inizializzata con i riferimenti a tutti gli elementi host prima della creazione di un'istanza dell'oggetto dichiarato.
 
 > [!NOTE]
->  La classe `Globals` non viene mai inizializzata in fase di progettazione, ma vengono create istanze di controllo nella finestra di progettazione. Ciò significa che se si crea un controllo utente che usa una proprietà della classe `Globals` all'interno di una classe del controllo utente, è necessario verificare se la proprietà restituisce **null** prima di provare a usare l'oggetto restituito.
+>  La classe `Globals` non viene mai inizializzata in fase di progettazione, ma vengono create istanze di controllo nella finestra di progettazione. Ciò significa che se si crea un controllo utente che usa una proprietà del `Globals` classe dall'interno una classe del controllo utente, è necessario controllare se la proprietà restituisce **null** prima di provare a usare l'oggetto restituito.
 
 ## <a name="see-also"></a>Vedere anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
