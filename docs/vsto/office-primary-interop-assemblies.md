@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602286"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525900"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -57,15 +57,15 @@ Quando si installa Visual Studio, gli assembly di interoperabilità primari veng
 
 Queste copie degli assembly di interoperabilità primari contribuiscono a evitare diversi problemi di sviluppo che possono verificarsi in Visual Studio quando si registrano versioni differenti degli assembly nella Global Assembly Cache.
 
-Visual Studio installa queste copie degli assembly di interoperabilità primari nei seguenti percorsi del computer di sviluppo:
+A partire da Visual Studio 2017, queste copie degli assembly di interoperabilità primari vengono installate i seguenti percorsi condivisi nel computer di sviluppo:
 
-- *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Tools per Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Tools per Office\PIA\*
 
-  (o *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools per Office\PIA\Office14* nei sistemi operativi a 64 bit)
+- (o * % ProgramFiles (x86) %\Microsoft strumenti di Visual Studio Studio\Shared\Visual per Office\PIA\* nei sistemi operativi a 64 bit)
 
-- *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Tools per Office\PIA\Office15*
-
-  (o *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools per Office\PIA\Office15* nei sistemi operativi a 64 bit)
+> [!NOTE]
+> Per le versioni precedenti di Visual Studio, questi assembly di interoperabilità primari verrà installato in Visual Studio Tools per Office\PIA cartella sotto la * cartella % ProgramFiles % per la versione di Visual Studio.  
+> Ad esempio: * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools per Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assembly di interoperabilità primari nella global assembly cache
 
@@ -79,7 +79,7 @@ Gli assembly di interoperabilità primari di Office non sono richiesti per l'ese
 
 Ogni modello di progetto di Office in Visual Studio è progettato per funzionare con una singola applicazione di Microsoft Office. Per usare le funzionalità in più applicazioni di Microsoft Office oppure per usare funzionalità in un'applicazione o un componente che non ha un progetto in Visual Studio, è necessario aggiungere un riferimento agli assembly di interoperabilità primari richiesti.
 
-Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità primari installati da Visual Studio sotto la `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Queste versioni degli assembly saranno visualizzate nella **Framework** scheda della finestra di **gestione riferimenti** nella finestra di dialogo. Per altre informazioni, vedere [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità primari installati da Visual Studio sotto la `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory. Queste versioni degli assembly saranno visualizzate nella **Framework** scheda della finestra di **gestione riferimenti** nella finestra di dialogo. Per altre informazioni, vedere [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Se sono stati installati e registrati gli assembly di interoperabilità primari nella Global Assembly Cache, queste versioni appariranno nella scheda **COM** della finestra di dialogo **Gestione riferimenti** . Evitare di aggiungere riferimenti a queste versioni degli assembly, perché possono verificarsi alcuni problemi di sviluppo durante il loro uso. Ad esempio, se sono state registrate versioni differenti degli assembly di interoperabilità primari nella Global Assembly Cache, il progetto verrà automaticamente associato all'ultima versione registrata dell'assembly, anche se è stata specificata una versione differente nella scheda **COM** della finestra di dialogo **Gestione riferimenti** .
 
@@ -90,7 +90,7 @@ Se sono stati installati e registrati gli assembly di interoperabilità primari 
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assembly di interoperabilità primari per applicazioni Microsoft Office
 
-Nella tabella seguente sono elencati gli assembly di interoperabilità primari disponibili per [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+Nella tabella seguente sono elencati gli assembly di interoperabilità primari disponibili per [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

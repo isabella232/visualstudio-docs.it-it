@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Spostarsi tra le visualizzazioni e l'editor XML"
+title: "Procedura: Opzione tra le visualizzazioni e l'editor XML"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7d4964aa83e4db03c8f9d21297b88ba90b2078
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6ea8cd3b4dfe1d8e9732fab6467328d2528268d
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944143"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525498"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: Passare dalle visualizzazioni all'Editor XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: Passare dalle visualizzazioni all'editor XML
 
-In questo argomento viene illustrato come passare dalle visualizzazioni di Progettazione XML Schema (Progettazione XSD) all'editor XML. Questo esempio Usa la [schema di ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md).
+Questo argomento illustra come passare tra le visualizzazioni di progettazione XML Schema (progettazione XSD) e l'editor XML. Questo esempio Usa la [schema di ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md).
 
 ## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Per passare dalle visualizzazioni all'editor XML
 
 1.  Per creare e modificare un nuovo file di schema XML, seguire i passaggi in [come: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Per passare a Progettazione XML Schema dall'Editor XML, fare doppio clic su un punto qualsiasi dell'Editor XML e selezionare **Progettazione viste**.
+2.  Per passare a Progettazione XML Schema dall'editor XML, fare doppio clic in un punto qualsiasi nell'editor XML e selezionare **Progettazione viste**.
 
 3.  Per passare alla visualizzazione grafico tramite la filigrana, scegliere il **usare la visualizzazione grafico per visualizzare la relazione tra i nodi** collegamento nella visualizzazione iniziale.
 
@@ -35,4 +35,4 @@ In questo argomento viene illustrato come passare dalle visualizzazioni di Proge
 
 6.  Per spostarsi tra le visualizzazioni usando i tasti di scelta, premere **Ctrl**+**1** per la visualizzazione iniziale, **Ctrl**+**2** per la visualizzazione grafico e **Ctrl**+**3** per la visualizzazione modello di contenuto.
 
-7.  Per passare all'Editor XML dalla visualizzazione modello di contenuto, il pulsante destro del nodo e selezionare **Visualizza codice** nel menu di scelta rapida.
+7.  Per passare all'editor XML dalla visualizzazione modello di contenuto, il pulsante destro del nodo e selezionare **Visualizza codice** nel menu di scelta rapida.

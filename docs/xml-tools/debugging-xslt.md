@@ -1,34 +1,97 @@
 ---
-title: Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
-ms.date: 11/04/2016
+title: Modalità di debug di codice XSLT
+ms.date: 03/05/2019
 ms.topic: conceptual
-ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c72146f6e76605cc379c4db269982f6eed1c6f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221840"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526386"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 
-Per eseguire il debug di XSLT è possibile usare il debugger di Visual Studio. Il debugger supporta l'impostazione dei punti di interruzione, la visualizzazione degli stati di esecuzione di XSLT e così via.
+È possibile eseguire il debug di codice XSLT in Visual Studio. La trasformazione XSLT il debugger supporta l'impostazione di punti di interruzione, la visualizzazione degli stati di esecuzione di XSLT e così via. Il debugger XSLT è utilizzabile per il debug di fogli di stile XSLT o le applicazioni XSLT.
+
+Per istruzioni, ignorandole o eseguendole di fuori di codice, è possibile eseguire una riga di codice alla volta. I comandi per l'uso di funzionalità di esecuzione codice del debugger XSLT sono che identici a quelli per Visual Studio debugger.
+
+Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visualizzazione del documento di input e dell'output XSLT.
 
 > [!NOTE]
 > Il debugger XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
 
+## <a name="debug-from-the-xml-editor"></a>Eseguire il debug dall'editor XML
+
+È possibile avviare il debugger quando si dispone di un foglio di stile o un file XML di input aprire nell'editor. Ciò consente di eseguire il debug quando si progetta il foglio di stile.
+
+1. Aprire il foglio di stile o un file XML in Visual Studio.
+
+1. Selezionare **avviare il debug di XSLT** dalle **XML** dal menu oppure premere **Alt**+**F5**.
+
+## <a name="debug-from-an-app-that-uses-xslt"></a>Eseguire il debug da un'app che usa XSLT
+
+È possibile eseguire le istruzioni XSLT durante il debug di un'applicazione. Quando si preme **F11** su un <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> chiamata, il debugger può eseguire il codice XSLT.
+
+> [!NOTE]
+> Non è supportata l'esecuzione di istruzioni XSLT dalla classe <xref:System.Xml.Xsl.XslTransform>. La classe <xref:System.Xml.Xsl.XslCompiledTransform> è l'unico processore XSLT in grado di supportare l'esecuzione di istruzioni XSLT durante il debug.
+
+### <a name="to-start-debugging-an-xslt-application"></a>Per avviare il debug di un'applicazione XSLT
+
+1. Durante la creazione dell'istanza dell'oggetto <xref:System.Xml.Xsl.XslCompiledTransform>, impostare il parametro `enableDebug` su `true` nel codice. In questo modo viene indicato al processore XSLT di creare le informazioni di debug dopo la compilazione del codice.
+
+1. Premere **F11** per eseguire l'istruzione il codice XSLT.
+
+   Il foglio di stile XSLT viene caricato in una nuova finestra del documento e avvia il debugger XSLT.
+
+   In alternativa, è possibile aggiungere un punto di interruzione al foglio di stile ed eseguire l'applicazione.
+
+### <a name="example"></a>Esempio
+
+Di seguito è riportato un esempio di programma XSLT in C#. Viene illustrato come abilitare il debug di XSLT.
+
+```csharp
+using System;
+using System.IO;
+using System.Xml;
+using System.Xml.Xsl;
+
+namespace ConsoleApplication
+{
+  class Program
+  {
+    private const string sourceFile = @"c:\data\xsl_files\books.xml";
+    private const string stylesheet = @"c:\data\xsl_files\below-average.xsl";
+    private const string outputFile = @"c:\data\xsl_files\output.xml";
+
+    static void Main(string[] args)
+    {
+      // Enable XSLT debugging.
+      XslCompiledTransform xslt = new XslCompiledTransform(true);
+
+      // Compile the style sheet.
+      xslt.Load(stylesheet)
+
+      // Execute the XSLT transform.
+      FileStream outputStream = new FileStream(outputFile, FileMode.Append);
+      xslt.Transform(sourceFile, null, outputStream);
+    }
+  }
+}
+```
+
 ## <a name="xslt-profiler"></a>Profiler XSLT
 
-Il [profiler XSLT](../xml-tools/xslt-profiler.md) è uno strumento che consente agli sviluppatori di misurare, valutare e trattare problemi correlati alle prestazioni nel codice XSLT creando rapporti di prestazioni XSLT dettagliati.
+Il [profiler XSLT](../xml-tools/xslt-profiler.md) è uno strumento che consente agli sviluppatori di misurare, valutare e trattare problemi correlati alle prestazioni nel codice XSLT creando rapporti di prestazioni XSLT dettagliati. Per altre informazioni, vedere [profiler XSLT](../xml-tools/xslt-profiler.md).
 
-## <a name="related-sections"></a>Sezioni correlate
+## <a name="see-also"></a>Vedere anche
 
-- [Modifica di fogli di stile XSLT](../xml-tools/editing-xslt-style-sheets.md) viene illustrato come usare l'Editor XML per modificare i fogli di stile.
-- [Considerazioni sulla sicurezza quando si lavora con dati XML](../xml-tools/security-considerations-when-working-with-xml-data.md) vengono illustrati i problemi di sicurezza che è necessario conoscere quando si usa l'Editor XML o il debugger XSLT.
-- [Debug in Visual Studio](../debugger/debugger-feature-tour.md) introduce il debugger di Visual Studio.
-- [Riferimenti di XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) forniscono materiale di riferimento per gli elementi XSLT e funzioni.
+- [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Sguardo al debugger di Visual Studio](../debugger/debugger-feature-tour.md)
+- [Informazioni di base sul debug: Punti di interruzione](../debugger/using-breakpoints.md)

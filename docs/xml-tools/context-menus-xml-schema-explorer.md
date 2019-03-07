@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910547"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526490"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu di scelta rapida (XML Schema Explorer)
 
@@ -50,7 +50,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Mostra tutti i riferimenti in uscita**|Consente di individuare ed evidenziare gli elementi seguenti:<br /><br /> -Tutti gli spazi dei nomi specificati negli attributi dello spazio dei nomi di tutte le istruzioni import che non dispongono di `schemaLocation` attributo.<br />-Tutti i file specificati nel `schemaLocation` attributi di tutte le import e include istruzioni.|
 |**Mostra tipi globali**|Consente di individuare ed evidenziare tutti i tipi globali in questo file.|
 |**Mostra elementi globali**|Consente di individuare ed evidenziare tutti gli elementi globali in questo file.|
-|**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in XML Schema Explorer sarà selezionato anche nell'editor XML.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in XML Schema Explorer verrà selezionato anche nell'editor XML.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
 ## <a name="all-global-node-types"></a>Tutti i tipi di nodo globali
@@ -60,7 +60,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |-|-----------------|
 |**Mostra in visualizzazione grafico**|Consente di aprire la visualizzazione grafico. Se il nodo selezionato non si trova nell'area di lavoro, aggiungerlo all'area di lavoro e selezionarlo.|
 |**Mostra nella visualizzazione modello di contenuto**|Consente di aprire la visualizzazione modello di contenuto. Se il nodo selezionato non si trova nell'area di lavoro, aggiungerlo all'area di lavoro e selezionarlo.|
-|**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in XML Schema Explorer sarà selezionato anche nell'editor XML.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in XML Schema Explorer verrà selezionato anche nell'editor XML.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
 ## <a name="node-type-element"></a>Tipo di nodo: Elemento

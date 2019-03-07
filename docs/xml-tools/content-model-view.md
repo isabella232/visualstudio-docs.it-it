@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933574"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525791"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 
@@ -35,7 +35,7 @@ Quando si seleziona un nodo nel **dell'area di lavoro** pannello, aggiungerlo al
 
 Il modello di contenuto di un nodo viene rappresentato tramite un albero grafico espandibile con elementi e attributi visualizzati come nodi dell'albero. Per impostazione predefinita, viene espanso solo un livello. Le altre informazioni, ad esempio compositor, nomi di tipo, gruppi e altri contenitori, vengono posizionate in una barra verticale (in caso di espansione) lungo gli elementi e gli attributi che includono. Facendo doppio clic su una barra verticale, questa diventa orizzontale e l'albero viene compresso. Facendo doppio clic su una barra orizzontale, questa diventa verticale e l'albero viene espanso. Selezionando la barra verticale, verranno selezionati tutti i nodi nel contenitore. Gli espansori vengono visualizzati a destra di un nodo, se un elemento può essere espansi o compressi.
 
-Se l'area di progettazione è vuota, l'Editor XML, il **XML Schema Explorer**, e vengono visualizzate la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".
+Se l'area di progettazione è vuota, l'editor XML, il **XML Schema Explorer**, e vengono visualizzate la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".
 
 ## <a name="breadcrumb-bar"></a>Barra di navigazione
 
@@ -52,7 +52,7 @@ Quando si fare doppio clic su un elemento nell'area di progettazione oppure **de
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
 |**Mostra documentazione**|Mostra o nasconde il contenuto del nodo annotazione/documentazione.|
 |**Esporta diagramma come immagine**|Salva l'area di progettazione in un file XPS.|
-|**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato nel **XML Schema Explorer** è selezionato anche nell'Editor XML.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato nel **XML Schema Explorer** viene selezionato anche nell'editor XML.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
 Nella tabella seguente vengono descritte le opzioni disponibili per il **dell'area di lavoro** pannello.
@@ -66,7 +66,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per il **dell'ar
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
 |**Seleziona tutto**|Seleziona tutti i nodi le **dell'area di lavoro** pannello.|
-|**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato nel **XML Schema Explorer** è selezionato anche nell'Editor XML.|
+|**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato nel **XML Schema Explorer** viene selezionato anche nell'editor XML.|
 |**Finestra Proprietà**|Apre la **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
 ## <a name="properties-window"></a>Finestra Proprietà
@@ -121,7 +121,7 @@ Il dispositivo di scorrimento dello Zoom è opaco quando lo selezionarlo, passar
 
 È possibile spostarsi avanti e indietro tra i **progettazione XSD** all'editor XML tramite il menu di scelta rapida (contesto).
 
-Se si apportano modifiche allo schema nell'Editor XML le modifiche vengono sincronizzate nella visualizzazione modello di contenuto. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
+Se si apportano modifiche allo schema nell'editor XML le modifiche vengono sincronizzate nella visualizzazione modello di contenuto. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913954"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526243"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: Generare un frammento XML da uno schema XML
 
-L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, è possibile premere **scheda** per popolare l'elemento di dati XML generati dalle informazioni di schema per quell'elemento.
+L'editor XML ha la possibilità di generare frammenti XML da uno schema di XML Schema definition language (XSD). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, è possibile premere **scheda** per popolare l'elemento di dati XML generati dalle informazioni di schema per quell'elemento.
 
 Questa funzionalità è disponibile solo per gli elementi. È inoltre necessario rispettare le seguenti regole:
 
@@ -43,7 +43,7 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
 
 ## <a name="example"></a>Esempio
 
- I passaggi descritti in questa sezione mostrano come usare la generati da uno schema XML frammento funzionalità dell'Editor XML.
+ I passaggi descritti in questa sezione mostrano come usare la funzionalità dei frammenti XML generati da uno schema dell'editor XML.
 
 > [!NOTE]
 > Prima di avviare tali procedure, salvare il file di schema nel computer locale.

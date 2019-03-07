@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915986"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525710"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
-Il **XML Schema Explorer** è integrato con Microsoft Visual Studio e l'Editor XML per consentire di lavorare con schemi XML Schema definition language (XSD). Quando si apre un file di XML Schema, il **del Set di schemi** verrà visualizzato nel nodo il **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file che vengono fatto riferimento tramite un `include` oppure `import` istruzione, vengono visualizzati anche nella **XML Schema Explorer**.
+Il **XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire di lavorare con schemi XML Schema definition language (XSD). Quando si apre un file di XML Schema, il **del Set di schemi** verrà visualizzato nel nodo il **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file che vengono fatto riferimento tramite un `include` oppure `import` istruzione, vengono visualizzati anche nella **XML Schema Explorer**.
 
  Il **XML Schema Explorer** consente di eseguire le operazioni seguenti:
 
@@ -31,7 +31,7 @@ Il **XML Schema Explorer** è integrato con Microsoft Visual Studio e l'Editor X
 
 -   Ordinare l'albero in base a nome, tipo o ordine dei documenti. Per altre informazioni, vedere [ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   Aprire l'editor XML e passare ai percorsi del codice nel file XSD. Per altre informazioni, vedere [integrazione con l'Editor XML](../xml-tools/integration-with-xml-editor.md).
+-   Aprire l'editor XML e passare ai percorsi del codice nel file XSD. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
 
 -   Generare codice XML di esempio per gli elementi globali.
 
@@ -72,7 +72,7 @@ Di seguito viene riportato un esempio di struttura ad albero:
 -   L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.
 
 ## <a name="drag-and-drop-nodes"></a>Trascinare e rilasciare nodi
- È possibile trascinare e rilasciare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.
+ È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.
 
  Eliminazione di file sulla visualizzazione aggiungerà tutti i nodi globali nel file per il [dell'area di lavoro di progettazione XSD](../xml-tools/xml-schema-designer-workspace.md). Il rilascio degli spazi dei nomi sulla visualizzazione aggiungerà tutti i nodi globali contenuti nello spazio dei nomi all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
 

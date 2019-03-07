@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630e88c01960a6477d586952b0680d53fee62401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 826967355b26e06e5d9f0bd26f3efcf745006fe9
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915935"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525440"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Procedura dettagliata: Uso di XSLT IntelliSense
 
@@ -162,4 +162,4 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Funzionalità IntelliSense dell'Editor XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Funzionalità IntelliSense dell'editor XML](../xml-tools/xml-editor-intellisense-features.md)
