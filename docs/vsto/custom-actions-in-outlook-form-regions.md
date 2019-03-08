@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638036"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567183"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree del modulo di Outlook
   Azioni di visualizzano i pulsanti che consentono agli utenti di rispondere a un elemento di Microsoft Office Outlook. Ad esempio, per rispondere a un elemento di posta elettronica, gli utenti fanno clic la **Reply**, **Rispondi a tutti**, o **inoltrare** pulsanti di azione. Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento utilizzando le informazioni dell'elemento originale.
@@ -28,7 +28,7 @@ ms.locfileid: "56638036"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Aggiungere azioni personalizzate per un'area del modulo
- Per aggiungere un'azione personalizzata a un'area del modulo, usare il **azioni personalizzate** nella finestra di dialogo. È possibile aprire il **azioni personalizzate** nella finestra di dialogo **Esplora soluzioni** espandendo il **manifesto** nodo, selezionando il **elementi CustomAction**proprietà e quindi fare clic sul pulsante con puntini di sospensione (![ellisse della finestra di progettazione mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")).
+ Per aggiungere un'azione personalizzata a un'area del modulo, usare il **azioni personalizzate** nella finestra di dialogo. È possibile aprire il **azioni personalizzate** selezionando l'area del modulo nella finestra di dialogo **Esplora soluzioni**, espandendo il **manifesto** nodo il **proprietà Finestra**, se si seleziona il **elementi CustomAction** proprietà e quindi fare clic sul pulsante con puntini di sospensione (![ellisse della finestra di progettazione mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET per dispositivi mobili Ellisse progettazione")).
 
  È possibile usare la **azioni personalizzate** finestra di dialogo per specificare una *form destinazione*. Un modulo di destinazione è il modulo visualizzato quando l'utente esegue l'azione personalizzata.
 
