@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937448"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323734"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
-È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) oppure [Ricerca/sostituzione nei file](#find-in-files-and-replace-in-files). La novità di Visual Studio 2017 versione 15.8 è che possibile cercare e sostituire *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
+È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) (**CTRL**+**F** o **CTRL**+**H**) oppure [Find/Replace in Files](#find-in-files-and-replace-in-files) (Trova/Sostituisci nei file) (**CTRL**+**MAIUSC**+**F** o **CTRL**+**MAIUSC**+**H**). È anche possibile cercare e sostituire solo *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
 
 > [!TIP]
 > Se si stanno rinominando simboli del codice, ad esempio variabili e i metodi, è preferibile *[effettuarne il refactoring](../ide/reference/rename.md)* anziché usare la funzionalità di ricerca e sostituzione. Il refactoring è un'opzione avanzata in grado di rilevare l'ambito, mentre con la ricerca e sostituzione vengono sostituite indifferentemente tutte le istanze.
@@ -53,7 +53,10 @@ La funzionalità di ricerca e sostituzione è disponibile nell'editor, in alcune
 
 ## <a name="find-and-replace-control"></a>Controllo Trova e sostituisci
 
-Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Il controllo **Trova e sostituisci** evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
+- Premere **CTRL**+**F** come scelta rapida da tastiera per *trovare* una stringa nel file corrente.
+- Premere **CTRL**+**H** come scelta rapida da tastiera per *trovare e sostituire* una stringa nel file corrente.
+
+Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
 
 ![Trova e sostituisci in Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Una versione del controllo di **ricerca** è disponibile anche in alcune finestr
 
 ## <a name="find-in-files-and-replace-in-files"></a>Cerca nei file e Sostituisci nei file
 
-**Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Cerca/Sostituisci nei file**, selezionare **Trova e sostituisci** dal menu **Modifica** o premere **CTRL+MAIUSC+F**.
+- Premere **CTRL**+**MAIUSC**+**F** come scelta rapida da tastiera per *trovare* una stringa in più file.
+- Premere **CTRL**+**MAIUSC**+**H** come scelta rapida da tastiera per *trovare e sostituire* una stringa in più file.
+
+**Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Find/Replace in Files** (Trova/Sostituisci nei file), selezionare **Trova e sostituisci** dal menu **Modifica** o premere **CTRL**+**MAIUSC**+**F**.
 
 ![Cerca in File di Visual Studio](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati 
 > [!NOTE]
 > Questa sezione si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Selezione blocco](/visualstudio/mac/block-selection).
 
-**Novità in Visual Studio 2017 versione 15.8**
+**Introdotta in Visual Studio 2017 versione 15.8**
 
 Usare la *selezione di più punti di inserimento* per apportare la stessa modifica apportata in due o più posizioni nello stesso momento. Ad esempio, è possibile inserire lo stesso testo o modificare il testo esistente in più posizioni nello stesso momento.
 
