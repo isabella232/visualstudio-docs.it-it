@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927984"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223520"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -74,7 +74,7 @@ Questa sezione descrive a livello generale come creare un progetto di unit test.
 Se si usa il framework di test MSTest, xUnit o NUnit in Visual Studio 2017 o versione successiva, è possibile visualizzare in tempo reale i risultati degli unit test.
 
 > [!NOTE]
-> Live Unit Testing è disponibile solo in Visual Studio 2017 Enterprise Edition.
+> Live Unit Testing è disponibile solo in Visual Studio Enterprise Edition.
 
 1. Attivare la funzionalità Live Unit Testing dal menu **Test**.
 

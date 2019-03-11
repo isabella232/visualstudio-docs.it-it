@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927607"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223533"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -82,7 +82,7 @@ Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifi
 
 - **Vai al file** (**CTRL**+**1**, **CTRL**+**F**): consente di passare al file specificato nella soluzione.
 
-- **Go To Recent File** (Vai a file recente) (**CTRL**+**1**, **CTRL**+**R**): consente di passare al file usato di recente specificato nella soluzione (novità in Visual Studio 2017 versione 15.8).
+- **Go To Recent File** (Vai a file recente) (**CTRL**+**1**, **CTRL**+**R**): consente di passare al file usato di recente specificato nella soluzione.
 
 - **Vai al tipo** (**CTRL**+**1**, **CTRL**+**T**): consente di passare al tipo specificato nella soluzione.
 
@@ -105,7 +105,7 @@ Vai a definizione consente di accedere alla definizione dell'elemento selezionat
 Input | Funzione
 ------------ | ---
 **Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **F12**
-**Mouse** | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai a definizione** o premere **CTRL** e fare clic sul nome del tipo (novità di Visual Studio 2017 versione 15.4)
+**Mouse** | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai a definizione** OPPURE premere **CTRL** e fare clic sul nome del tipo
 
 ## <a name="peek-definition"></a>Visualizza definizione
 
@@ -125,7 +125,7 @@ Input | Funzione
 **Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL**+**F12**
 **Mouse** | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai all'implementazione**
 
-## <a name="call-hierarchy"></a>Gerarchia di chiamata
+## <a name="call-hierarchy"></a>Gerarchia delle chiamate
 
 È possibile visualizzare le chiamate da e verso un metodo nella [finestra Gerarchia di chiamata](../ide/reference/call-hierarchy.md):
 

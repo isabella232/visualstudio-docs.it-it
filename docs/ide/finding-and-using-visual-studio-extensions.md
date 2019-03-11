@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919742"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222753"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare le estensioni di Visual Studio
 
@@ -61,9 +61,9 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Notifiche di arresto anomalo e rallentamento di un'estensione
 
-Una novità di **Visual Studio 2017 versione 15.3** prevede che Visual Studio notifichi l'utente se sospetta che un'estensione è stata coinvolta in un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, visualizza una notifica.
+Visual Studio invia una notifica all'utente se sospetta che un'estensione è stata coinvolta in un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, visualizza una notifica.
 
-Un'altra novità di **Visual Studio 2017 versione 15.6** prevede che Visual Studio invii una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
+Visual Studio invia una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
 
 Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica o eseguire una delle azioni seguenti:
 

@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315872"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223650"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 
@@ -27,7 +27,7 @@ Visual Studio è progettato per essere avviato nel modo più rapido ed efficient
 
 ## <a name="startup-behavior"></a>Comportamento di avvio
 
-Per evitare l'allungamento del tempo di avvio, Visual Studio 2017 carica le estensioni usando un approccio _su richiesta_. Con questo comportamento le estensioni non vengono aperte immediatamente dopo l'avvio di Visual Studio, ma all'occorrenza. Inoltre, poiché le finestre degli strumenti lasciate aperte in una sessione precedente di Visual Studio possono rallentare l'avvio, esse vengono aperte in un modo più intelligente per evitare di compromettere il tempo di avvio.
+Per evitare l'allungamento del tempo di avvio, Visual Studio carica le estensioni usando un approccio _on demand_. Con questo comportamento le estensioni non vengono aperte immediatamente dopo l'avvio di Visual Studio, ma all'occorrenza. Inoltre, poiché le finestre degli strumenti lasciate aperte in una sessione precedente di Visual Studio possono rallentare l'avvio, esse vengono aperte in un modo più intelligente per evitare di compromettere il tempo di avvio.
 
 Se Visual Studio rileva un avvio lento, viene visualizzato un messaggio popup che comunica quale estensione o finestra degli strumenti provoca il rallentamento. Il messaggio include un collegamento alla finestra di dialogo **Gestisci prestazioni di Visual Studio**. È possibile accedere a questa finestra di dialogo anche scegliendo **Guida** > **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
 
@@ -66,7 +66,7 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
      ![Gestisci prestazioni di Visual Studio - visualizzazione delle finestre degli strumenti](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> In alcune versioni precedenti di Visual Studio 2017 è presente una funzionalità denominata **caricamento leggero soluzioni**. Questa funzionalità non è più disponibile in Visual Studio 2017 versione 15.5 e versioni successive. In Visual Studio 2017 versione 15.5 e versioni successive le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento leggero soluzioni.
+> In alcune versioni precedenti di Visual Studio 2017 è presente una funzionalità denominata **caricamento leggero soluzioni**. Nelle versioni correnti le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento di soluzioni leggere.
 
 ## <a name="see-also"></a>Vedere anche
 

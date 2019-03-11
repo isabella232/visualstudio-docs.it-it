@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924448"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223598"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -24,7 +24,7 @@ ms.locfileid: "55924448"
 
 ### <a name="to-open-a-peek-definition-window"></a>Per aprire una finestra Visualizza definizione
 
-1. È possibile visualizzare una definizione scegliendo **Visualizza definizione** dal menu di scelta rapida per un tipo o un membro che si vuole esplorare. In Visual Studio 2017 versione 15.4 e versioni successive, se l'opzione è abilitata, è possibile visualizzare una definizione anche usando il mouse premendo **CTRL** (o un altro modificatore) e facendo clic sul nome del membro. In alternativa, dalla tastiera premere **ALT**+**F12**.
+1. È possibile visualizzare una definizione scegliendo **Visualizza definizione** dal menu di scelta rapida per un tipo o un membro che si vuole esplorare. Se l'opzione è abilitata, è possibile visualizzare una definizione anche usando il mouse premendo **CTRL** (o un altro modificatore) e facendo clic sul nome del membro. In alternativa, dalla tastiera premere **ALT**+**F12**.
 
      Questa illustrazione mostra la finestra **Visualizza definizione** per un metodo denominato `Print()`:
 

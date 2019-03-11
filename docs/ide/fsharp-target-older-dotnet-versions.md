@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942076"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221957"
 ---
 # <a name="target-older-versions-of-net-f"></a>Usare come destinazione versioni precedenti di .NET (F#)
 
@@ -53,7 +53,7 @@ Per risolvere l'errore, eseguire una delle operazioni seguenti:
 
 ### <a name="to-install-the-f-20-runtime"></a>Per installare il runtime F# 2.0
 
-Seguire la [procedura di riparazione di Visual Studio 2017](../install/repair-visual-studio.md).
+Seguire la [procedura di riparazione di Visual Studio](../install/repair-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 

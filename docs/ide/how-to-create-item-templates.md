@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935576"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222087"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -109,19 +109,29 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 1. Creare un progetto e un elemento di progetto.
 
-1. Modificare l'elemento di progetto finché non è pronto per essere salvato come modello.
+2. Modificare l'elemento di progetto finché non è pronto per essere salvato come modello.
 
-1. Modificare il file del codice per indicare dove deve avvenire la sostituzione dei parametri, se necessaria. Per altre informazioni sulla sostituzione dei parametri, vedere [Procedura: Sostituire i parametri di un modello.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Modificare il file del codice per indicare dove deve avvenire la sostituzione dei parametri, se necessaria. Per altre informazioni sulla sostituzione dei parametri, vedere [Procedura: Sostituire i parametri di un modello.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. Creare un file XML e salvarlo con estensione *vstemplate* nella stessa directory del file dell'elemento del progetto.
+4. Creare un file XML e salvarlo con estensione *vstemplate* nella stessa directory del file dell'elemento del progetto.
 
-1. Modificare il file XML con estensione *vstemplate* in modo da specificare i metadati del modello di elemento. Per altre informazioni, vedere [Riferimento allo schema di modello (estendibilità)](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.
+5. Modificare il file XML con estensione *vstemplate* in modo da specificare i metadati del modello di elemento. Per altre informazioni, vedere [Riferimento allo schema di modello (estendibilità)](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.
 
-1. Salvare e chiudere il file con estensione *vstemplate*.
+6. Salvare e chiudere il file con estensione *vstemplate*.
 
-1. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**. I file selezionati verranno compressi in un file con estensione *zip*.
+7. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**. I file selezionati verranno compressi in un file con estensione *zip*.
 
-1. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2017 la directory predefinita è *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita è *%USERPROFILE%\Documenti\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita è *%USERPROFILE%\Documenti\Visual Studio 2019\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 

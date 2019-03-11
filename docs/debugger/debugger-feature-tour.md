@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696740"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428687"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -77,7 +77,7 @@ In modalità debugger, passare il puntatore su una riga di codice fin quando non
 ![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click-2.png "Esegui fino alla riga selezionata")
 
 > [!NOTE]
-> Il pulsante per l'**esecuzione fino alla riga selezionata** (Continua l'esecuzione fino a qui) è una novità di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Il pulsante **Esegui fino alla riga selezionata** (Continua l'esecuzione fino a qui) è disponibile a partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Fare clic sul pulsante per l'**esecuzione fino alla riga selezionata** (Continua l'esecuzione fino a qui). Il debugger avanza fino alla riga di codice in cui si è fatto clic.
 
@@ -188,7 +188,7 @@ In questo esempio l'errore è stato restituito dalla chiamata di `DirectoryInfo`
 L'Helper eccezioni è un'ottima funzionalità che può facilitare il debug degli errori. La funzionalità consente di eseguire anche altre operazioni, ad esempio visualizzare i dettagli dell'errore e aggiungere un'espressione di controllo. Oppure, se necessario, è possibile modificare le condizioni che determinano la generazione di una particolare eccezione. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> L'Helper eccezioni sostituisce Informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> L'Helper eccezioni ha sostituito Informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Espandere il nodo **Impostazioni eccezioni** per vedere altre opzioni relative alla gestione di questo tipo di eccezione, ma non apportare alcuna modifica per questa presentazione.
 

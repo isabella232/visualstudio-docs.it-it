@@ -1,5 +1,5 @@
 ---
-title: ID dei carichi di lavoro e dei componenti di Visual Studio Desktop Express 2017
+title: ID dei carichi di lavoro e dei componenti di Visual Studio Desktop Express
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti per installare Visual Studio tramite la riga di comando o per specificarli come dipendenza in un manifesto VSIX
 keywords: ''
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
-ms.openlocfilehash: 5f2c12201adebf148703083b825e98b35bbff7c1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842494"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323776"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Elenco dei componenti di Visual Studio 2017 Desktop Express
+# <a name="visual-studio-desktop-express-component-directory"></a>Elenco dei componenti di Visual Studio Desktop Express
 
 Le tabelle in questa pagina elencano gli ID che è possibile usare per installare Visual Studio tramite la riga di comando o che è possibile specificare come dipendenza in un manifesto VSIX. Si noti che verranno aggiunti ulteriori componenti con il rilascio di aggiornamenti di Visual Studio.
 

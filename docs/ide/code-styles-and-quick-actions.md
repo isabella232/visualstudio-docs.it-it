@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923371"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223130"
 ---
 # <a name="code-style-preferences"></a>Preferenze di stile per il codice
 
@@ -38,11 +38,11 @@ Per .NET è possibile gestire le impostazioni relative agli stili di codice anch
 
 ## <a name="format-document-command"></a>Comando Formatta documento
 
-In Visual Studio 2017 versione 15.8 e versioni successive, è possibile configurare il comando **Formatta documento**, in **Modifica** > **Avanzate** > **Formatta documento**, per eseguire la pulizia del codice aggiuntivo in un file, ad esempio per rimuovere e ordinare using o applicare le preferenze di stile del codice. È possibile definire le impostazioni che si desidera applicare con **Formatta documento** nella [pagina delle opzioni Formattazione](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+È possibile configurare il comando **Formatta documento**, in **Modifica** > **Avanzate** > **Formatta documento**, per eseguire la pulizia del codice aggiuntivo in un file, ad esempio per rimuovere e ordinare using o applicare le preferenze di stile del codice. È possibile definire le impostazioni che si desidera applicare con **Formatta documento** nella [pagina delle opzioni Formattazione](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 La pulizia del codice rispetta le impostazioni configurate in un file *editorconfig* o in mancanza di tale regola o file, quelle impostate in **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > [**Stile codice** oppure **Formattazione**].
 
-La prima volta che si attiva il comando **Formatta documento** in Visual Studio 2017, una barra informazioni gialla richiede all'utente di configurare le impostazioni di pulizia del codice.
+La prima volta che si attiva il comando **Formatta documento** in Visual Studio, una barra informazioni gialla richiede all'utente di configurare le impostazioni di pulizia del codice.
 
 > [!TIP]
 > Le regole configurate come **nessuna** in un file con estensione *EDITORCONFIG* non fanno parte della pulizia del codice, ma possono essere applicate singolarmente tramite il menu **Azioni rapide e refactoring**.

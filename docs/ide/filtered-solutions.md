@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952918"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007176"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluzioni filtrate in Visual Studio
 
-**Novità di Visual Studio 2019 Preview 1**
+**Novità di Visual Studio 2019**
 
-I team di sviluppo con tanti utenti spesso collaborano usando un'unica soluzione di grandi dimensioni con molti progetti. Tuttavia, i singoli sviluppatori in genere lavorano su un subset limitato di questi progetti. Per migliorare le prestazioni quando si aprono soluzioni di grandi dimensioni, Visual Studio 2019 Preview 1 introduce la funzionalità di *filtro delle soluzioni*. Il filtro delle soluzioni consente di aprire una soluzione caricando solo i progetti selezionati. Il caricamento di un subset di progetti in una soluzione riduce i tempi di caricamento, compilazione ed esecuzione dei test della soluzione e consente una revisione più mirata.
+I team di sviluppo con tanti utenti spesso collaborano usando un'unica soluzione di grandi dimensioni con molti progetti. Tuttavia, i singoli sviluppatori in genere lavorano su un subset limitato di questi progetti. Per migliorare le prestazioni quando si aprono soluzioni di grandi dimensioni, Visual Studio 2019 introduce la funzionalità di *filtro delle soluzioni*. Il filtro delle soluzioni consente di aprire una soluzione caricando solo i progetti selezionati. Il caricamento di un subset di progetti in una soluzione riduce i tempi di caricamento, compilazione ed esecuzione dei test della soluzione e consente una revisione più mirata.
 
 Sono disponibili le funzionalità seguenti:
 

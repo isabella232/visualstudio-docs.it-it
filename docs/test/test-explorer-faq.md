@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318316"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221892"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -27,71 +27,71 @@ ms.locfileid: "56318316"
 
 **Esplora Test non individua i test definiti in modo dinamico. Ad esempio, teorie, adattatori personalizzati, tratti personalizzati, #ifdefs e così via. Come è possibile individuare questi test?**
 
-  Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
+Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
 
-  L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) è l'individuazione dei test in base all'origine. Questa funzionalità non consente di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni `#ifdef` e così via, perché sono definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
+L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) è l'individuazione dei test in base all'origine. Questa funzionalità non consente di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni `#ifdef` e così via, perché sono definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
 
 ## <a name="test-explorer--plus-symbol"></a>'+' (segno più) di Esplora test
 
 **Cosa significa il simbolo '+' (più) visualizzato nella prima riga di Esplora test?**
 
-  Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo una compilazione a condizione che sia attivata l'individuazione basata su assembly. Il simbolo viene visualizzato se nel progetto vengono rilevati test definiti in modo dinamico.
+Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo una compilazione a condizione che sia attivata l'individuazione basata su assembly. Il simbolo viene visualizzato se nel progetto vengono rilevati test definiti in modo dinamico.
 
-  ![Riga di riepilogo con segno più](media/testex-plussymbol.png)
+![Riga di riepilogo con segno più](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>Individuazione basata su assembly
 
 **L'individuazione basata su assembly non funziona più per un progetto. Come è possibile riattivarla?**
 
-  Passare a **Strumenti** > **Opzioni** > **Test** e selezionare la casella **Individua anche i test di assembly compilati dopo le compilazioni.**
+Passare a **Strumenti** > **Opzioni** > **Test** e selezionare la casella **Individua anche i test di assembly compilati dopo le compilazioni.**
 
-  ![Opzione basata su assembly](media/testex-toolsoptions.png)
+![Opzione basata su assembly](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>Individuazione dei test in tempo reale
 
 **I test vengono ora visualizzati in Esplora test durante la digitazione senza dover compilare il progetto. Cosa è cambiato?**
 
-  Questa funzionalità è denominata [individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizzatore Roslyn per trovare i test e popolare Esplora test in tempo reale, senza che sia necessario compilare il progetto. Per altre informazioni sul comportamento dell'individuazione dei test per i test definiti in modo dinamico, ad esempio teorie o tratti personalizzati, vedere la domanda 1.
+Questa funzionalità è denominata [individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizzatore Roslyn per trovare i test e popolare Esplora test in tempo reale, senza che sia necessario compilare il progetto. Per altre informazioni sul comportamento dell'individuazione dei test per i test definiti in modo dinamico, ad esempio teorie o tratti personalizzati, vedere la domanda 1.
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilità dell'individuazione dei test in tempo reale
 
 **Quali linguaggi e framework di test possono usare l'individuazione dei test in tempo reale?**
 
-  L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) funziona solo per i linguaggi gestiti (C# e Visual Basic), perché viene compilata con il compilatore Roslyn. Per il momento, l'individuazione dei test in tempo reale funziona solo per i framework xUnit, NUnit e MSTest.
+L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) funziona solo per i linguaggi gestiti (C# e Visual Basic), perché viene compilata con il compilatore Roslyn. Per il momento, l'individuazione dei test in tempo reale funziona solo per i framework xUnit, NUnit e MSTest.
 
 ## <a name="test-explorer-logs"></a>Log di Esplora test
 
 **Come è possibile attivare i log per Esplora test?**
 
-  Passare a **Strumenti** > **Opzioni** > **Test** e individuare la sezione Registrazione.
+Passare a **Strumenti** > **Opzioni** > **Test** e individuare la sezione Registrazione.
 
 ## <a name="uwp-test-discovery"></a>Individuazione dei test UWP
 
 **Perché i test nei progetti UWP vengono individuati solo dopo la distribuzione dell'app?**
 
-  I test UWP usano un runtime diverso come destinazione quando l'app viene distribuita. Questo significa che per trovare i test in modo accurato per i progetti UWP non è sufficiente compilare il progetto, ma è anche necessario distribuirlo.
+I test UWP usano un runtime diverso come destinazione quando l'app viene distribuita. Questo significa che per trovare i test in modo accurato per i progetti UWP non è sufficiente compilare il progetto, ma è anche necessario distribuirlo.
 
 ## <a name="test-explorer-sorting"></a>Ordinamento di Esplora test
 
 **Come funziona l'ordinamento dei risultati di test nella visualizzazione gerarchia?**
 
-  Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anziché in base al risultato. Le altre impostazioni di raggruppamento solitamente dispongono i risultati dei test in base al risultato e poi in ordine alfabetico. Vedere le diverse opzioni di raggruppamento nell'immagine seguente per un confronto. È possibile inviare commenti e suggerimenti sulla progettazione [in questo problema GitHub](https://github.com/Microsoft/vstest/issues/1425).
+Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anziché in base al risultato. Le altre impostazioni di raggruppamento solitamente dispongono i risultati dei test in base al risultato e poi in ordine alfabetico. Vedere le diverse opzioni di raggruppamento nell'immagine seguente per un confronto. È possibile inviare commenti e suggerimenti sulla progettazione [in questo problema GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
-  ![SortingExamples](media/testex-sortingex.png)
+![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>Visualizzazione gerarchia in Esplora test
 
 **Nella visualizzazione gerarchia, accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe vengono visualizzate icone per i test superati, non superati, ignorati e non eseguiti. Cosa significano queste icone?**
 
-  Le icone accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe indicano lo stato dei test all'interno di tale raggruppamento. Fare riferimento alla tabella riportata di seguito.
+Le icone accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe indicano lo stato dei test all'interno di tale raggruppamento. Fare riferimento alla tabella riportata di seguito.
 
-  ![Icone nella gerarchia in Esplora test](media/testex-hierarchyicons.png)
+![Icone nella gerarchia in Esplora test](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>Ricerca per percorso file
 
 **Nella casella di ricerca Esplora test non è più disponibile un filtro per il percorso file.**
 
-Il filtro per il percorso file nella casella di ricerca **Esplora test** è stato rimosso in Visual Studio 2017 versione 15.7 anteprima 3. Questa funzionalità era poco usata ed Esplora Test può recuperare i metodi di test più velocemente se la funzionalità viene esclusa. Se questa modifica interrompe il flusso di sviluppo, comunicarlo aggiungendo un commento nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
+Il filtro per il percorso file nella casella di ricerca **Esplora test** è stato rimosso in Visual Studio 2017 versione 15.7. Questa funzionalità era poco usata ed Esplora Test può recuperare i metodi di test più velocemente se la funzionalità viene esclusa. Se questa modifica interrompe il flusso di sviluppo, comunicarlo aggiungendo un commento nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Rimuovere le interfacce non documentate
 
@@ -112,11 +112,11 @@ Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i
 > [!NOTE]
 > Se si usa l'adattatore di test NUnit 2 e non si può eseguire la migrazione a NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 in **Strumenti** > **Opzioni** > **Test**.
 
-  ![Comportamento dell'adattatore nelle opzioni degli strumenti di Esplora test](media/testex-adapterbehavior.png)
+![Comportamento dell'adattatore nelle opzioni degli strumenti di Esplora test](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>Oggetto TestContainer UWP non trovato
 
-**I test UWP non vengono più eseguiti in Visual Studio 2017 versione 15.7 e versioni successive.**
+**I test UWP non vengono più eseguiti in Visual Studio 2017 versione 15.7 e successive.**
 
 I progetti di test UWP recenti specificano una proprietà di compilazione della piattaforma di test che consente di migliorare le prestazioni durante l'identificazione delle app di test. In un progetto di test UWP inizializzato prima di Visual Studio versione 15.7 è possibile che venga visualizzato questo errore in **Output** > **Test**:
 

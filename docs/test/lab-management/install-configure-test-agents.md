@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912742"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223026"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
@@ -24,7 +24,7 @@ Potrebbe anche essere utile valutare se è preferibile usare la [gestione di com
 
 ## <a name="system-requirements"></a>Requisiti di sistema
 
-La tabella seguente illustra i requisiti di sistema per l'installazione dell'agente di test o del test controller per Visual Studio 2017:
+La tabella seguente illustra i requisiti di sistema per l'installazione dell'agente di test o del test controller per Visual Studio:
 
 | Elemento | Requisiti |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ La tabella seguente illustra i requisiti di sistema per l'installazione dell'age
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installare il test controller e gli agenti di test
 
-È possibile scaricare gli agenti per Visual Studio 2017 da [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Cercare *Agents per Visual Studio 2017*, selezionare *Agente* o *Controller* e quindi scegliere *Download*. Eseguire il file eseguibile scaricato per installare l'agente di test o il test controller.
+È possibile scaricare gli agenti per Visual Studio da [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Cercare *Agents per Visual Studio 2017*, selezionare *Agente* o *Controller* e quindi scegliere *Download*. Eseguire il file eseguibile scaricato per installare l'agente di test o il test controller.
 
 È possibile scaricare gli agenti per Visual Studio 2015 e Visual Studio 2013 dalla pagina di [download precedente](https://visualstudio.microsoft.com/vs/older-downloads/).
 

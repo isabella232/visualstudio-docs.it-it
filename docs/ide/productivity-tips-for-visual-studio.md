@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702720"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223143"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -24,7 +24,7 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, in **Visual Studio 2017 versione 15.6** e versioni successive, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** o **Modifica** > **Avanzate** > **Comprimi selezione** oppure premendo **MAIUSC**+**ALT**+**=** o **MAIUSC**+**ALT**+**-** (disponibile in **Visual Studio 2017 versione 15.5** e successive).
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** o **Modifica** > **Avanzate** > **Comprimi selezione** oppure premendo **MAIUSC**+**ALT**+**=** o **MAIUSC**+**ALT**+**-**.
 
 - **Uso di IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
 È possibile accedere rapidamente al prompt dei comandi per gli sviluppatori o a un altro strumento di Visual Studio se lo si aggiunge nel menu di avvio o nella barra delle applicazioni.
 
-1. In Esplora risorse, passare a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Fare clic con il pulsante destro del mouse o aprire il menu di scelta rapida per visualizzare il **prompt dei comandi per sviluppatori**, quindi scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
+1. In Esplora risorse passare a *%ProgramData%\Microsoft\Windows\Menu Start\Programmi\Visual Studio 2017\Strumenti di Visual Studio*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Esplora risorse passare a *%ProgramData%\Microsoft\Windows\Menu Start\Programmi\Visual Studio 2019\Strumenti di Visual Studio*.
+
+::: moniker-end
+
+2. Fare clic con il pulsante destro del mouse o aprire il menu di scelta rapida per visualizzare il **prompt dei comandi per sviluppatori**, quindi scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Gestione di file, barre degli strumenti e finestre
 

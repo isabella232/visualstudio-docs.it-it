@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712528"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223624"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -114,5 +114,5 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
-- [Altre funzionalità di Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Altre funzionalità di Visual Studio](../ide/advanced-feature-overview.md)
 - [Modificare i colori del tema e del carattere](../ide/quickstart-personalize-the-ide.md)

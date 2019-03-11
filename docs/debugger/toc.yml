@@ -116,6 +116,8 @@ items:
       items:
       - name: Applicare modifiche in modalità di interruzione con Modifica e Continua
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: Scrivere ed eseguire il debug di codice XAML in esecuzione
+      href: xaml-edit-and-continue.md
     - name: Modifica e continuazione non supportate per F#
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: Visualizzare i dati del debugger
@@ -534,7 +536,7 @@ items:
         href: how-to-debug-injected-code.md
     - name: Eseguire il debug del codice GPU
       href: debugging-gpu-code.md
-    - name: Diagnostica della grafica
+    - name: Diagnostica grafica
       href: graphics/toc.yml
     - name: Eseguire il debug di applicazioni ASP.NET
       href: how-to-enable-debugging-for-aspnet-applications.md
@@ -763,7 +765,7 @@ items:
         items:
         - name: Spy (comandi di menu)
           href: spy-menu-commands.md
-        - name: comandi del menu Albero
+        - name: comandi del menu Struttura ad albero
           href: tree-menu-commands.md
         - name: comandi del menu Cerca
           href: search-menu-commands.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Novità relative al debugger di Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335467"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699655"

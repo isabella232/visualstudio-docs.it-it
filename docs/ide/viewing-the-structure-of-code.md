@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926372"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323867"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
@@ -126,7 +126,19 @@ Il menu di scelta rapida nella finestra **Gerarchia di chiamata** contiene i com
 
 Nella finestra **Visualizzatore oggetti** vengono visualizzate le descrizioni del codice nei progetti.
 
-È possibile filtrare i componenti da visualizzare tramite l'elenco di riepilogo a discesa nella parte superiore della finestra. I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file *OCX*. Non è possibile aggiungere componenti personalizzati di C++. Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+È possibile filtrare i componenti da visualizzare tramite l'elenco di riepilogo a discesa nella parte superiore della finestra. I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file *OCX*. Non è possibile aggiungere componenti personalizzati di C++.
+
+::: moniker range="vs-2017"
+
+Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 Il riquadro sinistro della finestra **Visualizzatore oggetti** mostra gli assembly. È possibile espandere gli assembly per visualizzare gli spazi dei nomi in essi contenuti e quindi espandere gli spazi dei nomi per visualizzare i tipi contenuti. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.
 

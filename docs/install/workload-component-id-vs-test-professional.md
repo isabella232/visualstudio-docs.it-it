@@ -1,12 +1,12 @@
 ---
-title: ID dei carichi di lavoro e dei componenti di Visual Studio Test Professional 2017
+title: ID dei carichi di lavoro e dei componenti di Visual Studio Test Professional
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per fornire strumenti di test integrati per tester non specializzati
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,16 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
-ms.openlocfilehash: d433ec3743c6b18c3241bf4b4c99c47ad620be62
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: e8235ac3d123f33add52934112f81f0be9772294
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932235"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323332"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Elenco dei componenti di Visual Studio Test Professional 2017
+# <a name="visual-studio-test-professional-component-directory"></a>Elenco dei componenti di Visual Studio Test Professional
 
 Le tabelle in questa pagina elencano gli ID che è possibile usare per installare Visual Studio tramite la riga di comando o che è possibile specificare come dipendenza in un manifesto VSIX. Si noti che verranno aggiunti ulteriori componenti con il rilascio di aggiornamenti di Visual Studio.
 

@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946275"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222974"
 ---
 # <a name="team-explorer-reference"></a>Informazioni di riferimento su Team Explorer
 
@@ -33,7 +33,7 @@ La page **Home** offre diverse funzioni a seconda che ci si sia connessi a un re
 
 | Pagina **Home** con GIT | Pagina **Home** con il controllo della versione di Team Foundation |
 | - | - |
-| ![Pagina Home di Team Explorer con GIT in Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Pagina Home di Team Explorer con il controllo della versione di Team Foundation in Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Pagina Home di Team Explorer con GIT in Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Pagina Home di Team Explorer con il controllo della versione di Team Foundation in Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Pagina Modifiche (GIT)
 
@@ -82,7 +82,7 @@ Nella pagina **Elemento di lavoro** è possibile visualizzare le query degli [el
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> In Visual Studio 2019 Preview 1 è disponibile una nuova [esperienza di Elementi di lavoro](/azure/devops/boards/work-items/set-work-item-experience-vs). Per informazioni sulla visualizzazione degli elementi di lavoro in Visual Studio 2019 Preview 1, vedere [View and add work items](/azure/devops/boards/work-items/view-add-work-items) (Visualizzare e aggiungere elementi di lavoro).
+> In Visual Studio 2019 è disponibile una nuova [esperienza di Elementi di lavoro](/azure/devops/boards/work-items/set-work-item-experience-vs). Per informazioni sulla visualizzazione degli elementi di lavoro in Visual Studio 2019, vedere [View and add work items](/azure/devops/boards/work-items/view-add-work-items) (Visualizzare e aggiungere elementi di lavoro).
 
 ::: moniker-end
 

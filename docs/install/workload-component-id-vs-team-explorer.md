@@ -1,64 +1,46 @@
 ---
-title: ID dei carichi di lavoro e dei componenti di Visual Studio Team Explorer 2017
+title: ID dei carichi di lavoro e dei componenti di Visual Studio Team Explorer
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per fornire strumenti di test integrati per tester non specializzati
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.workload:
-- multiple
-monikerRange: vs-2017
-ms.openlocfilehash: f5b9d6b449a2f551e96132e07c0997455388fa82
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 793c35a5b0de54f87b0ac21fa1810512f089d86f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841507"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324052"
 ---
-# <a name="visual-studio-team-explorer-2017-component-directory"></a>Elenco dei componenti di Visual Studio Team Explorer 2017
+# <a name="visual-studio-team-explorer-component-directory"></a>Elenco dei componenti di Visual Studio Team Explorer
 
-Le tabelle in questa pagina elencano gli ID che è possibile usare per installare Visual Studio tramite la riga di comando o che è possibile specificare come dipendenza in un manifesto VSIX. Si noti che verranno aggiunti ulteriori componenti con il rilascio di aggiornamenti di Visual Studio.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Tenere presenti anche le note seguenti relative alla pagina:
+::: moniker range="vs-2017"
 
-* Esiste una sezione a parte per ogni carico di lavoro, seguita dall'ID del carico di lavoro e da una tabella dei componenti disponibili per il carico di lavoro.
-* Per impostazione predefinita, i componenti di tipo **Obbligatorio** verranno installati quando si installa il carico di lavoro.
-* È anche possibile scegliere di installare i componenti di tipo **Consigliato** e **Facoltativo**.
-* È stata anche aggiunta una sezione con l'elenco dei componenti aggiuntivi non affiliati ad alcun carico di lavoro.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Quando si impostano le dipendenze nel manifesto VSIX, è necessario specificare solo gli ID dei componenti. Usare le tabelle in questa pagina per determinare le dipendenze minime dei componenti. In alcuni scenari, ciò potrebbe portare alla specifica di un solo componente da un carico di lavoro. In altri scenari è possibile che vengano specificati più componenti da un singolo carico di lavoro o più componenti da più carichi di lavoro. Per altre informazioni, vedere la pagina [ Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+[!include[Visual Studio Team Explorer 2017](includes/vs-2017/workload-component-id-vs-team-explorer.md)]
 
-Per altre informazioni su come usare questi ID, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Per un elenco di ID di componenti e carichi di lavoro per altri prodotti, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md).
+::: moniker-end
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Editor principale di Visual Studio (incluso in Visual Studio Team Explorer 2017)
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Descrizione:** shell di base di Visual Studio, che include un editor di codice con riconoscimento della sintassi, il controllo del codice sorgente e la gestione degli elementi di lavoro.
+[!include[Visual Studio Team Explorer 2019](includes/vs-2019/workload-component-id-vs-team-explorer.md)]
 
-### <a name="components-included-by-this-workload"></a>Componenti inclusi per questo carico di lavoro
-
-ID componente | nome | Versione | Tipo di dipendenza
---- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Editor principale di Visual Studio | 15.8.27729.1 | Obbligatorio
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Pagina iniziale di Visual Studio per utenti di C++ | 15.0.27128.1 | Facoltativo
-
-## <a name="unaffiliated-components"></a>Componenti non affiliati
-
-Questi sono i componenti non inclusi in alcun carico di lavoro, che possono però essere selezionati come un singolo componente.
-
-ID componente | nome | Versione
---- | --- | ---
-N/D | N/D | N/D
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

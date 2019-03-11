@@ -1,5 +1,5 @@
 ---
-title: Comando Print
+title: Debug.Print
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,46 +14,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a3de1fba86c78f16703efd858448bc0f25e8d0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952294"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953557"
 ---
 # <a name="print-command"></a>Comando Print
+
 Valuta un'espressione o visualizza il testo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>Argomenti
- `text`
 
- Obbligatorio. Espressione da valutare o testo da visualizzare.
+`text`
 
-## <a name="remarks"></a>Note
- È possibile usare il punto interrogativo (?) come alias per questo comando. Il comando
+Obbligatorio. Espressione da valutare o testo da visualizzare.
+
+## <a name="remarks"></a>Osservazioni
+
+È possibile usare il punto interrogativo (?) come alias per questo comando. Il comando
 
 ```cmd
 >Debug.Print expA
 ```
 
- può anche essere scritto
+può anche essere scritto come
 
 ```cmd
->? expA
+? expA
 ```
 
- Entrambe le versioni di questo comando restituiscono il valore corrente dell'espressione `expA`.
+Entrambe le versioni di questo comando restituiscono il valore corrente dell'espressione `expA`.
 
 ## <a name="example"></a>Esempio
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>Vedere anche
