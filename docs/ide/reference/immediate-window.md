@@ -1,6 +1,6 @@
 ---
 title: Controllo immediato (finestra)
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931949"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954199"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 
-Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug.
+Usare la finestra **Controllo immediato** per eseguire il debug e valutare le espressioni, eseguire le istruzioni e stampare i valori delle variabili. La finestra **Immediato** valuta le espressioni creando e usando il progetto correntemente selezionato.
 
 Per visualizzare la finestra **Controllo immediato** aprire un progetto per la modifica e quindi scegliere **Debug** > **Windows** > **Controllo immediato** o premere **CTRL**+**ALT**+**I**. È anche possibile immettere **Debug.Immediate** nella **finestra di comando**.
 
-È possibile usare la finestra **Controllo immediato** per eseguire singoli comandi di Visual Studio. I comandi disponibili includono `EvaluateStatement`, che consente di assegnare valori alle variabili. Il **immediato** finestra supporta anche IntelliSense.
+La finestra **Controllo immediato** supporta IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Visualizzare i valori delle variabili
 
-La finestra **Controllo immediato** può essere particolarmente utile durante il debug di un'applicazione. Ad esempio, per controllare il valore di una variabile `varA`, usare il [comando Stampa](../../ide/reference/print-command.md):
+La finestra **Controllo immediato** è particolarmente utile durante il debug di un'app. Ad esempio, per controllare il valore di una variabile `varA`, usare il [comando Stampa](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ La finestra **Controllo immediato** può essere particolarmente utile durante il
 Il punto interrogativo (?) è un alias di `Debug.Print`. Questo comando può quindi essere scritto anche nel modo seguente:
 
 ```cmd
->? varA
+? varA
 ```
 
 Entrambe le versioni di questo comando restituiscono il valore della variabile `varA`.
 
 > [!TIP]
-> Per immettere un comando di Visual Studio nella finestra **Controllo immediato**, far precedere al comando un segno di maggiore di (>). Per immettere più comandi, passare il **comando** finestra.
+> Per immettere un comando di Visual Studio nella finestra **Controllo immediato**, far precedere al comando un segno di maggiore di (>). Per immettere più comandi, passare alla [finestra di comando](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Valutazione delle espressioni in fase di progettazione
 
@@ -56,7 +56,7 @@ Entrambe le versioni di questo comando restituiscono il valore della variabile `
 
 ### <a name="execute-a-function-at-design-time"></a>Eseguire una funzione in fase di progettazione
 
-1. Copiare il codice seguente in un'applicazione console di [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
+1. Copiare il codice seguente in un'app console di Visual Basic:
 
    ```vb
    Module Module1
@@ -72,7 +72,7 @@ Entrambe le versioni di questo comando restituiscono il valore della variabile `
    End Module
    ```
 
-2. Scegliere **Finestre** dal menu **Debug** e quindi fare clic su **Controllo immediato**.
+2. Nel menu **Debug** scegliere **Finestre** > **Controllo immediato**.
 
 3. Digitare `?MyFunction(2)` nella finestra **Controllo immediato** e premere **INVIO**.
 
@@ -80,7 +80,7 @@ Entrambe le versioni di questo comando restituiscono il valore della variabile `
 
 Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per altre informazioni, vedere [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], progetti Web, progetti Smart Device e progetti SQL.
+Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti Visual Studio Tools per Office, progetti Web, progetti Smart Device e progetti SQL.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Valutazione delle espressioni in fase di progettazione nelle soluzioni multiprogetto
 
@@ -88,7 +88,7 @@ Per determinare il contesto di valutazione delle espressioni in fase di progetta
 
 ## <a name="enter-commands"></a>Immettere comandi
 
-Immettere il segno di maggiore di (>) per aggiungere comandi di Visual Studio nella finestra **Controllo immediato**. Usare i tasti **FRECCIA SU** e **FRECCIA GIÙ** per scorrere i comandi immessi in precedenza.
+Immettere il segno di maggiore di (>) per aggiungere comandi di Visual Studio nella finestra **Controllo immediato**. Usare i tasti **FRECCIA SU** e **FRECCIA GIÙ** per scorrere i comandi usati in precedenza.
 
 |Attività|Soluzione|Esempio|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Immettere il segno di maggiore di (>) per aggiungere comandi di Visual Studio ne
 
 Quando fa clic su qualsiasi riga precedente nel **immediato** finestra, si passa automaticamente in modalità indicatore. Questa modalità consente di selezionare, modificare e copiare il testo dei comandi precedenti in qualsiasi editor di testo e incollarlo nella riga corrente.
 
-## <a name="the-equals-sign-"></a>Segno di uguale (=)
+## <a name="examples"></a>Esempi
 
-La finestra usata per immettere il comando `EvaluateStatement` determina se interpretare un segno di uguale (=) come operatore di confronto o come operatore di assegnazione.
-
-Nel **immediato** finestra, un segno di uguale (=) viene interpretato come un operatore di assegnazione. Il comando
+L'esempio seguente mostra quattro espressioni e i relativi risultati nella finestra **Controllo immediato** per un progetto Visual Basic.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-assegna ad esempio il valore della variabile `varB` alla variabile `varA`.
-
-Nel **comando** finestra, al contrario, un segno di uguale (=) viene interpretato come un operatore di confronto. Non è possibile utilizzare gli operatori di assegnazione nel **comando** finestra. Pertanto, se ad esempio i valori delle variabili `varA` e `varB` sono diversi, il comando
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-restituisce un valore `False`.
 
 ## <a name="first-chance-exception-notifications"></a>Notifiche di eccezioni first-chance
 
