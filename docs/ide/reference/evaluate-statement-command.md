@@ -1,6 +1,6 @@
 ---
-title: Comando Valuta istruzione
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,48 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911741"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953055"
 ---
 # <a name="evaluate-statement-command"></a>Comando Valuta istruzione
+
 Valuta e visualizza l'istruzione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Argomenti
- `text` Obbligatorio. Istruzione da valutare.
 
-## <a name="remarks"></a>Note
- La finestra usata per immettere il comando **EvaluateStatement** determina se interpretare un segno di uguale (=) come operatore di confronto o come operatore di assegnazione.
+`text`
 
- Nella finestra **Comando** il segno di uguale (=) viene interpretato come operatore di confronto. Pertanto, se ad esempio i valori delle variabili `a` e `b` sono diversi, il comando
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- restituisce il valore `false`.
-
- Al contrario, nella finestra **Controllo immediato** il segno di uguale (=) viene interpretato come operatore di assegnazione. Il comando
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- assegna ad esempio alla variabile `a` il valore della variabile `b`.
+Obbligatorio. Istruzione da valutare.
 
 ## <a name="example"></a>Esempio
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
 ## <a name="see-also"></a>Vedere anche

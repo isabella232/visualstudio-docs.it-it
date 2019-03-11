@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 38039bd98ab1a2d8407945f578e47d325475d4cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318004"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223455"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -28,7 +28,7 @@ Un ambiente lab è una raccolta di computer virtuali e fisici che è possibile u
 
 Ecco alcuni esempi di topologie comuni di ambienti lab:
 
-| Topologia | Descrizione |
+| Topologia | Description |
 |---|---|
 |![Topologia solo server](../media/topology_backend.png)| Questo ambiente lab ha una *topologia server*, che è spesso usata per eseguire test manuali su applicazioni server e che consente ai tester di usare i propri computer client per verificare i bug nell'ambiente. In una topologia di back-end, l'ambiente lab contiene solo i server. Quando si usa questo tipo di topologia in genere si esegue la connessione ai server nell’ambiente lab usando un computer client che non fa parte dell’ambiente.|
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
@@ -55,7 +55,7 @@ Per altre informazioni, vedere [Usare la gestione di compilazione o versione](us
 
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Usare le funzionalità di Visual Studio Lab Management di Microsoft Test Manager
 
-È possibile creare e gestire ambienti lab con le funzionalità di Visual Studio Lab Management di Microsoft Test Manager quando si usa Visual Studio 2017 Enterprise.
+È possibile creare e gestire ambienti lab con le funzionalità di Visual Studio Lab Management di Microsoft Test Manager quando si usa Visual Studio Enterprise.
 
 Lab Management installa automaticamente agenti di test in ogni computer dell'ambiente.
 
@@ -114,7 +114,7 @@ Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzion
 
 Di seguito sono riportati alcuni concetti aggiuntivi che è necessario conoscere prima di continuare:
 
-|Termine|Descrizione|
+|Termine|Description|
 |-|-----------------|
 |Centro Lab|L'area di Microsoft Test Manager in cui creare e gestire ambienti lab.|
 |Lab del progetto Azure DevOps|La raccolta di ambienti lab che sono stati configurati in modo da connettersi a essi ed eseguire le macchine virtuali.|

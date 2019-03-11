@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317679"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223763"
 ---
 # <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
 
 Questo articolo offre alcuni suggerimenti da applicare in caso di rallentamento delle prestazioni di Visual Studio. È anche possibile dare un'occhiata a [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) per altri consigli su come migliorare le prestazioni.
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Eseguire l'aggiornamento a Visual Studio 2017 15.6 o versione successiva
+## <a name="upgrade-visual-studio"></a>Effettuare l'aggiornamento di Visual Studio
 
-Se è attualmente in uso Visual Studio 2015, scaricare gratuitamente [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per verificare subito il miglioramento nelle prestazioni. Le soluzioni si caricano due-tre volte più velocemente in Visual Studio 2017, con miglioramenti nelle prestazioni anche in altre aree. Visual Studio 2017 è compatibile side-by-side con Visual Studio 2015, in modo da non perdere nulla nel periodo di prova.
+Se è attualmente in uso Visual Studio 2015, scaricare gratuitamente [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per verificare subito il miglioramento nelle prestazioni. Le soluzioni si caricano due-tre volte più velocemente che in Visual Studio 2015, con miglioramenti nelle prestazioni anche in altre aree. Visual Studio 2017 e Visual Studio 2019 sono compatibili side-by-side con Visual Studio 2015, in modo da non perdere nulla nel periodo di prova.
 
-Se è attualmente in uso Visual Studio 2017, assicurarsi di disporre almeno della versione 15.6. In base ai dati raccolti, le soluzioni si caricano due-tre volte più velocemente nella versione 15.6. Il download è disponibile [qui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+Se è già in uso Visual Studio 2017, assicurarsi di avere almeno la versione 15.6. In base ai dati raccolti, le soluzioni si caricano due-tre volte più velocemente nella versione 15.6. Il download è disponibile [qui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Estensioni e finestre degli strumenti
 
@@ -45,7 +49,7 @@ Non eseguire la soluzione da un'unità USB. Copiarla nell'unità disco rigido o 
 
 ## <a name="help-us-improve"></a>Consigli per miglioramenti
 
-Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 

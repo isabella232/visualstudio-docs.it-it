@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926047"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221879"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -60,20 +60,30 @@ Le impostazioni vengono sincronizzate nelle versioni e nelle edizioni di Visual 
 
 ## <a name="side-by-side-synchronized-settings"></a>Impostazioni sincronizzate affiancate
 
-In Visual Studio 2017 versione 15.3 e successive alcune impostazioni, ad esempio il layout della finestra degli strumenti, non vengono condivise tra le diverse installazioni side-by-side di Visual Studio 2017. Il file *CurrentSettings.vssettings* in *%userprofile%\Documents\Visual Studio 2017\Settings* si trova in una cartella specifica dell'installazione simile a *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non vengono condivise tra diverse installazioni side-by-side di Visual Studio. Il file *CurrentSettings.vssettings* in *%userprofile%\Documents\Visual Studio 2017\Settings* si trova in una cartella specifica dell'installazione simile a *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Per usare le impostazioni specifiche di una nuova installazione, eseguire una nuova installazione. Quando si esegue l'aggiornamento di un'installazione esistente di Visual Studio 2017 alla versione più recente, viene usato il percorso condiviso esistente.
+> Per usare le impostazioni specifiche di una nuova installazione, eseguire una nuova installazione. Quando si aggiorna un'installazione esistente di Visual Studio, usa il percorso condiviso esistente.
 
-Se attualmente sono presenti installazioni side-by-side di Visual Studio 2017 e si vuole usare il percorso del file delle impostazioni specifico della nuova installazione, seguire questa procedura:
+Se attualmente sono presenti installazioni side-by-side di Visual Studio e si vuole usare il percorso del file delle impostazioni specifico della nuova installazione, seguire questa procedura:
 
 1. Eseguire l'aggiornamento a Visual Studio 2017 versione 15.3 o successiva.
 
-1. Usare l'**Importazione/Esportazione impostazioni** per esportare tutte le impostazioni esistenti in un percorso esterno alla cartella *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Usare l'**Importazione/Esportazione impostazioni** per esportare tutte le impostazioni esistenti in un percorso esterno alla cartella *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
-1. Aprire il **Prompt dei comandi per gli sviluppatori per VS 2017** dell'installazione aggiornata di Visual Studio ed eseguire `devenv /resetuserdata`.
+3. Aprire il **Prompt dei comandi per gli sviluppatori per VS 2017** ed eseguire `devenv /resetuserdata`.
 
 1. Avviare Visual Studio e importare le impostazioni salvate dal file di impostazioni esportato.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non vengono condivise tra diverse installazioni side-by-side di Visual Studio. Il file *CurrentSettings.vssettings* in *%userprofile%\Documenti\Visual Studio 2019\Settings* si trova in una cartella specifica dell'installazione simile a *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 

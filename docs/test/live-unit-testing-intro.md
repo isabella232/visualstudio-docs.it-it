@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796732"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222010"
 ---
 # <a name="introducing-live-unit-testing"></a>Introduzione a Live Unit Testing
 
-Live Unit Testing è una tecnologia disponibile in Visual Studio 2017 versione 15.3 che esegue automaticamente gli unit test nel momento in cui vengono apportate modifiche al codice. Live Unit Testing:
+Live Unit Testing è una tecnologia introdotta in Visual Studio 2017. Esegue automaticamente gli unit test in tempo reale mentre si apportano modifiche al codice. Live Unit Testing:
 
 - Consente di eseguire il refactoring e di modificare il codice in modo più sicuro. Live Unit Testing esegue automaticamente tutti i test pertinenti quando si modifica il codice per garantire che le modifiche non interrompano i test.
 
@@ -31,7 +31,7 @@ Per altre informazioni su Live Unit Testing:
 
 - Vedere l'esercitazione introduttiva, [Introduzione a Live Unit Testing in Visual Studio](live-unit-testing-start.md).
 
-- Leggere la documentazione dettagliata in [Usare Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
+- Leggere la documentazione dettagliata in [Usare Live Unit Testing in Visual Studio Enterprise Edition](live-unit-testing.md).
 
 - Leggere le [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md) per informazioni sulle novità, nonché per suggerimenti e tecniche per l'uso di Live Unit Testing.
 
@@ -40,5 +40,6 @@ Per altre informazioni su Live Unit Testing:
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Risorse correlate
+
 - [Strumenti di test del codice](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Eseguire unit test del codice](unit-test-your-code.md)

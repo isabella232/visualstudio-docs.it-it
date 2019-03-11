@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864874"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222896"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
@@ -74,7 +74,7 @@ Esistono due modi comuni in cui questo problema si manifesta in Visual Studio:
 
 Per correggere questo tipo di problemi, aggiungere un file denominato **cpp.hint** alla radice della directory della soluzione. Per altre informazioni, vedere [File dei suggerimenti](/cpp/ide/hint-files).
 
-Gli errori del parser di tag di **Visual Studio 2017 versione 15.7** vengono visualizzati nella finestra Elenco errori.
+Gli errori del parser di tag vengono visualizzati nella finestra **Elenco errori**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Convalidare le impostazioni del progetto con la registrazione diagnostica
 
@@ -107,7 +107,7 @@ Tuttavia, in alcuni casi Visual Studio può non aggiornare il database di Intell
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Correzione degli errori di compilazione di IntelliSense
 
-Una compilazione di IntelliSense non genera i file binari, ma può comunque non riuscire. Una possibile causa dell'errore riguarda i file con estensione props o targets. In Visual Studio 2017 versione 15.6 vengono registrati gli errori di compilazione solo IntelliSense nella finestra di output. Per visualizzarli, impostare **Mostra output di** su **Soluzione**:
+Una compilazione di IntelliSense non genera i file binari, ma può comunque non riuscire. Una possibile causa dell'errore riguarda i file con estensione props o targets. In Visual Studio 2017 versione 15.6 e successive vengono registrati gli errori di compilazione solo di IntelliSense nella finestra di output. Per visualizzarli, impostare **Mostra output di** su **Soluzione**:
 
 ![Finestra di output per gli errori della soluzione](media/vcpp-intellisense-output-window.png)
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946065"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222858"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -50,11 +50,25 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 > [!NOTE]
 > Queste istruzioni sono relative a Windows 10. Sono simili per le altre versioni di Windows.
 
+::: moniker range="vs-2017"
+
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2017.
 
 1. Dal menu di scelta rapida o contestuale di **Visual Studio 2017** scegliere **Altro** > **Esegui come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Aprire il menu **Start** e scorrere fino Visual Studio 2019.
+
+1. Dal menu di scelta rapida o contestuale di **Visual Studio 2019** scegliere **Altro** > **Esegui come amministratore**.
+
+   All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
+
+::: moniker-end
 
 È anche possibile modificare il collegamento dell'applicazione per eseguirla sempre con autorizzazioni amministrative.
 

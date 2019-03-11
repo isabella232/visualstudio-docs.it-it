@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927529"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323118"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
@@ -31,8 +31,7 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 
    Verrà aperta la finestra di dialogo **Analisi utilizzo software di Visual Studio**.
 
-1. Per rifiutare, selezionare **No, non voglio partecipare** e quindi selezionare **OK**.
-   Per acconsentire, selezionare **Sì, voglio partecipare** e quindi selezionare **OK**.
+1. Per rifiutare, selezionare **No, non voglio partecipare** e quindi selezionare **OK**. Per acconsentire, selezionare **Sì, voglio partecipare** e quindi selezionare **OK**.
 
    ![Finestra di dialogo Analisi utilizzo software di Visual Studio](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ Se si installa [Build Tools per Visual Studio](https://visualstudio.microsoft.co
 
 Le chiavi e le impostazioni del Registro di sistema sono le seguenti:
 
-In un sistema operativo a 64 bit Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** In un sistema operativo a 32 bit Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Quando è abilitato Criteri di gruppo Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
 
-Entry = **OptIn**
+- In un sistema operativo a 64 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- In un sistema operativo a 32 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Quando Criteri di gruppo è abilitato, chiave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- In un sistema operativo a 64 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- In un sistema operativo a 32 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Quando Criteri di gruppo è abilitato, chiave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+Voce = **OptIn**
 
 Valore = (DWORD)
+
 - **0** indica il rifiuto (disattiva Analisi utilizzo software di Visual Studio)
 - **1** indica il consenso (attiva Analisi utilizzo software di Visual Studio)
 
@@ -59,6 +73,6 @@ Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utili
 
 * [Diagnostic information collected by Visual Studio](diagnostic-data-collection.md) (Informazioni di diagnostica raccolte da Visual Studio)
 * [Comunicazioni con Microsoft](../ide/talk-to-us.md)
-* [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Community di sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
 * [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)

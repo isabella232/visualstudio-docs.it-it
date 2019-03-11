@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318771"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222987"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
 I suggerimenti per le prestazioni di Visual Studio si riferiscono a situazioni di memoria insufficiente che possono verificarsi in casi eccezionali. In queste situazioni, è possibile ottimizzare determinate funzionalità di Visual Studio che potrebbero non essere in uso. I suggerimenti seguenti non sono intesi come indicazioni generali.
 
 > [!NOTE]
-> In caso di difficoltà di uso del prodotto a causa di problemi di memoria, segnalarlo tramite lo [strumento di feedback](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> In caso di difficoltà di uso del prodotto a causa di problemi di memoria, segnalarlo tramite lo [strumento di feedback](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Usare un sistema operativo a 64 bit
 
@@ -41,9 +41,9 @@ Se si disabilita il ripristino automatico dei file, è possibile accedere veloce
 
 - Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere  **CTRL**+**T**.
 
-- In Visual Studio 2017 versione 15.8 e versioni successive è possibile passare all'ultima posizione di modifica in una soluzione usando **Modifica** > **Vai a** > **Vai alla posizione dell'ultima modifica** oppure premendo **CTRL**+**MAIUSC**+**BACKSPACE**.
+- È possibile passare all'ultima posizione di modifica in una soluzione usando **Modifica** > **Vai a** > **Vai alla posizione dell'ultima modifica** oppure premendo **CTRL**+**MAIUSC**+**BACKSPACE**.
 
-- In Visual Studio 2017 versione 15.8 e versioni successive usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica** > **Vai a** > **Go To Recent File** (Vai a file recenti) oppure premere **CTRL**+**1**, **CTRL**+**R**.
+- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica** > **Vai a** > **Go To Recent File** (Vai a file recenti) oppure premere **CTRL**+**1**, **CTRL**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 

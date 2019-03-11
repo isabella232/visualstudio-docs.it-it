@@ -314,7 +314,7 @@ items:
         href: ca1309-use-ordinal-stringcomparison.md
       - name: 'CA2101: Specificare il marshalling per gli argomenti di stringa P/Invoke'
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-    - name: avvisi di interoperabilità
+    - name: Avvisi di interoperabilità
       href: interoperability-warnings.md
       items:
       - name: 'CA1400: I punti di ingresso P/Invoke devono esistere'
@@ -349,7 +349,7 @@ items:
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
       - name: 'CA1415: Dichiarare correttamente i P/Invoke'
         href: ca1415-declare-p-invokes-correctly.md
-    - name: avvisi di manutenibilità
+    - name: Avvisi di manutenibilità
       href: maintainability-warnings.md
       items:
       - name: 'CA1500: I nomi delle variabili non devono corrispondere ai nomi dei campi'
@@ -364,14 +364,14 @@ items:
         href: ca1505-avoid-unmaintainable-code.md
       - name: 'CA1506: Evitare un numero eccessivo di accoppiamenti tra classi'
         href: ca1506-avoid-excessive-class-coupling.md
-    - name: avvisi di mobilità
+    - name: Avvisi di mobilità
       href: mobility-warnings.md
       items:
       - name: 'CA1600: Non impostare la priorità del processo su Inattivo'
         href: ca1600-do-not-use-idle-process-priority.md
       - name: 'CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza'
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-    - name: avvisi di denominazione
+    - name: Avvisi di denominazione
       href: naming-warnings.md
       items:
       - name: "CA1700: Non denominare 'Reserved' i valori di enumerazione"
@@ -420,7 +420,7 @@ items:
         href: ca1724-type-names-should-not-match-namespaces.md
       - name: 'CA1726: Usare termini preferiti'
         href: ca1726-use-preferred-terms.md
-    - name: avvisi di prestazioni
+    - name: Avvisi di prestazioni
       href: performance-warnings.md
       items:
       - name: 'CA1800: Non eseguire il cast inutilmente'
@@ -455,7 +455,7 @@ items:
         href: ca1823-avoid-unused-private-fields.md
       - name: 'CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute'
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-    - name: avvisi di portabilità
+    - name: Avvisi di portabilità
       href: portability-warnings.md
       items:
       - name: 'CA1900: I campi dei tipi di valore devono essere portabili'
@@ -464,7 +464,7 @@ items:
         href: ca1901-p-invoke-declarations-should-be-portable.md
       - name: 'CA1903: Usare solo API della versione di .NET Framework di destinazione'
         href: ca1903-use-only-api-from-targeted-framework.md
-    - name: avvisi di affidabilità
+    - name: Avvisi di affidabilità
       href: reliability-warnings.md
       items:
       - name: "CA2000: Eliminare gli oggetti prima che siano esterni all'ambito"
@@ -479,6 +479,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: 'CA2006: Usare SafeHandle per incapsulare le risorse native'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: "CA2007: Non attendere direttamente un'attività"
+        href: ca2007-do-not-directly-await-task.md
     - name: Avvisi di sicurezza
       href: security-warnings.md
       items:
@@ -580,7 +582,7 @@ items:
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
       - name: 'CA3147: Contrassegnare i gestori di verbi con ValidateAntiForgeryToken'
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-    - name: avvisi di utilizzo
+    - name: Avvisi di utilizzo
       href: usage-warnings.md
       items:
       - name: 'CA1801: Controllare i parametri non usati'
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: errori di FxCopCmd
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835150"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699668"

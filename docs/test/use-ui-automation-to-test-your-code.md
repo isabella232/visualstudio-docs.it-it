@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919235"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223481"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -48,7 +48,7 @@ Per altre informazioni sulle piattaforme e sulle configurazioni supportate dai t
 
 ## <a name="install-the-coded-ui-test-component"></a>Installare il componente Test codificato dell'interfaccia utente
 
-Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia utente, installare il componente **Test codificato dell'interfaccia utente** di Visual Studio 2017.
+Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia utente, installare il componente **Test codificato dell'interfaccia utente** di Visual Studio.
 
 1. Avviare **Programma di installazione di Visual Studio** scegliendo **Strumenti** > **Ottieni strumenti e funzionalità**.
 
@@ -134,7 +134,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
      Aprire *UIMap.uitest*. Il file verrà aperto nell'**Editor di test codificati dell'interfaccia utente** in cui è possibile modificare qualsiasi sequenza di azioni registrate e modificare le asserzioni.
 
-     ![Editor di test codificati dell'interfaccia utente](../test/media/cuit_editor_edit.png)
+     ![Editor test codificati dell'interfaccia utente](../test/media/cuit_editor_edit.png)
 
      Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -295,7 +295,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
     - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [Uso dei controlli HTML5 nei test codificati dell'interfaccia utente](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - Materiale sussidiario sui test codificati dell'interfaccia utente:
+    - Informazioni aggiuntive sui test codificati dell'interfaccia utente:
 
        - [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
 

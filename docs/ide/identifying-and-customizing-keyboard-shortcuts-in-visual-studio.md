@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935719"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222061"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificare e personalizzare i tasti di scelta rapida in Visual Studio
 
@@ -106,11 +106,21 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
 4. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Avanti**.
 
-    ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png)
+   ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png)
 
-5. Nelle caselle **Assegnare un nome al file di impostazioni?** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
+5. Nelle caselle **Assegnare un nome al file di impostazioni** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
 
-    Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Il nome del file riflette la data in cui sono state esportate le impostazioni e l'estensione è *.vssettings*.
+::: moniker range="vs-2017"
+
+Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Il nome del file riflette la data in cui sono state esportate le impostazioni e l'estensione è *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documenti\Visual Studio 2019\Settings*. Il nome del file riflette la data in cui sono state esportate le impostazioni e l'estensione è *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Per importare solo i tasti di scelta rapida
 

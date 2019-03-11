@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928309"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223611"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -74,7 +74,7 @@ Gli analizzatori di codice cercano i problemi di codice comuni che possono causa
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Analisi del codice C# e Visual Basic
 
-Visual Studio 2017 include un set predefinito di [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) che esaminano il codice C# e Visual Basic durante la digitazione. È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o pacchetto NuGet. Se rilevate, eventuali violazioni delle regole vengono segnalate sia nell'editor di codice con una linea ondulata sotto il codice che causa problemi, sia nell'**Elenco errori**.
+Visual Studio include un set predefinito di [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) che esaminano il codice C# e Visual Basic durante la digitazione. È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o pacchetto NuGet. Se rilevate, eventuali violazioni delle regole vengono segnalate sia nell'editor di codice con una linea ondulata sotto il codice che causa problemi, sia nell'**Elenco errori**.
 
 ### <a name="c-code-analysis"></a>Analisi del codice C++
 
