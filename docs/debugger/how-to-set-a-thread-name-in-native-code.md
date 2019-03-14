@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715180"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526230"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Procedura: impostare il nome di un thread in codice nativo
 La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. Denominazione dei thread è utile per identificare i thread di interesse per il **thread** finestra durante il debug di un processo in esecuzione. Se i thread evidente denominato può anche essere utile quando si esegue il debug di finale tramite ispezione dei dump di arresto anomalo del sistema e quando l'analisi delle prestazioni acquisisce usando diversi strumenti.
@@ -40,7 +40,7 @@ I vantaggi sono:
 * I nomi dei thread sono visibili anche quando si usano altri strumenti, ad esempio la [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) debugger e il [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analizzatore prestazioni.
 
 Avvertenze:
-* I nomi dei thread sono solo visibile in Visual Studio 2017 versione 15.6 e versioni successive.
+* I nomi dei thread sono visibili solo in Visual Studio 2017 versione 15.6 e versioni successive.
 * Quando i file di dump di debug di un arresto anomalo del sistema finale, sono visibili se l'arresto anomalo del sistema è stato creato in Windows 10 versione 1607, Windows Server 2016 o versioni successive di Windows solo i nomi dei thread.
 
 *Esempio:*

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b97808da917fcbeefcd849dae601fe7410d84b7
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702174"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526599"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer IIS remoto in Visual Studio 2017
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
@@ -163,7 +163,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P).
+    > In Visual Studio 2017 e versioni successive, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P).
 
 3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
 4. Fare clic su **Aggiorna**.

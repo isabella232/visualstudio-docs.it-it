@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603261"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737056"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
 Il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è definito da una serie di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con estensione *targets* che vengono importati nel file di progetto. Uno di questi file importati, *Microsoft.Common.targets*, può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo argomento illustra due metodi che è possibile usare per estendere il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
@@ -60,7 +60,7 @@ Nella tabella seguente sono indicate tutte le destinazioni in *Microsoft.Common.
 |`BeforeRebuild`, `AfterRebuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la ricompilazione. L'ordine di esecuzione delle destinazioni in *Microsoft.Common.targets* è: `BeforeRebuild`, `Clean`, `Build` e quindi `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pulitura.|
 |`BeforePublish`, `AfterPublish`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pubblicazione.|
-|`BeforeResolveReference`, `AfterResolveReferences`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la risoluzione dei riferimenti all'assembly.|
+|`BeforeResolveReferences`, `AfterResolveReferences`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la risoluzione dei riferimenti all'assembly.|
 |`BeforeResGen`, `AfterResGen`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la generazione delle risorse.|
 
 ## <a name="override-dependson-properties"></a>Eseguire l'override delle proprietà DependsOn

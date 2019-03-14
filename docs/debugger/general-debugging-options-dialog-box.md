@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689304"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526542"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
@@ -54,7 +54,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 **Abilita i filtri dei punti di interruzione**: consente di applicare filtri ai punti di interruzione in modo che influiranno solo determinati processi, thread o computer.
 
-**Usare il nuovo Helper eccezioni**: abilita il supporto di eccezioni (Visual Studio 2017) che sostituisce le informazioni sulle eccezioni.
+**Usare il nuovo Helper eccezioni**: abilita il supporto di eccezioni che sostituisce le informazioni sulle eccezioni. (Helper eccezioni è supportato a partire da Visual Studio 2017)
 
 > [!NOTE]
 > Per codice gestito, questa opzione è stata chiamata precedentemente **Abilita informazioni sulle eccezioni** .
@@ -158,7 +158,7 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 Se si usa una versione precedente di Visual Studio, alcune opzioni aggiuntive potrebbero essere presenti.
 
-**Abilita informazioni sulle eccezioni**: per il codice gestito, Abilita informazioni sulle eccezioni. In Visual Studio 2017, l'Helper eccezioni sostituito informazioni sulle eccezioni.
+**Abilita informazioni sulle eccezioni**: per il codice gestito, Abilita informazioni sulle eccezioni. A partire da Visual Studio 2017, l'Helper eccezioni sostituito informazioni sulle eccezioni.
 
 **Rimuovi stack di chiamate su eccezioni non gestite**: fa sì che il **Stack di chiamate** finestra eseguire il rollback dello stack di chiamate al punto prima che si è verificata un'eccezione non gestita.
 

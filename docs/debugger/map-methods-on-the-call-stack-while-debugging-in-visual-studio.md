@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704813"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526090"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Creare una mappa visiva dello stack di chiamate durante il debug (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Per informazioni dettagliate, vedere questo video: [Video: Debug visivo con inte
 Per informazioni dettagliate sui comandi e le azioni è possibile usare con le mappe codici, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->È possibile creare solo nelle mappe codici [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+>È possibile creare solo nelle mappe codici [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/).
 
 Ecco un rapido controllo di una mappa del codice:
 

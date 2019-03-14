@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450321"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567260"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Creare applicazioni in lingue bidirezionali
 
@@ -30,7 +30,7 @@ ms.locfileid: "56450321"
 
 -  App di Windows
 
-   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per le applicazioni Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
+   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per le applicazioni Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
 -  App Web
 

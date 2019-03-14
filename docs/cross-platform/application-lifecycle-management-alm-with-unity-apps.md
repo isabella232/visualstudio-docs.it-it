@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802566"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567302"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con app Unity
 
@@ -26,7 +26,7 @@ Le tabelle seguenti identificano in che modo le funzionalità DevOps in Visual S
 
 ## <a name="agile-tools"></a>Strumenti Agile:
 
-Collegamento di riferimento: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/overview?view=vsts) (Informazioni sugli strumenti e la gestione di progetti Agile) (usando Azure Boards o TFS, incluso Team Explorer Everywhere)
+Collegamento di riferimento: [About Agile tools and Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Informazioni sugli strumenti e la gestione di progetti Agile) (usando Azure Boards o TFS, incluso Team Explorer Everywhere)
 
 Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.
 

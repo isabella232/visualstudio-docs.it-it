@@ -1,6 +1,6 @@
 ---
 title: Strumenti per eseguire il debug di thread e processi | Microsoft Docs
-ms.date: 04/21/2017
+ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e39e77874594620eaeadb11b827df93cae4ea5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4769224cfb26c4b1d55362fea006f55ba8845da
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642105"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526603"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Strumenti per eseguire il debug di thread e processi in Visual Studio
 I termini *thread* e *processi* costituiscono concetti correlati in ambito informatico. Entrambi rappresentano infatti sequenze di istruzioni che devono essere eseguite in un ordine specifico. Le istruzioni incluse in thread o processi distinti possono tuttavia essere eseguite in parallelo.

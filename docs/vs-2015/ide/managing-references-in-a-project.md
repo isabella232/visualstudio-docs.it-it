@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763650"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567215"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 ## <a name="project-to-project-references"></a>Riferimenti da progetto a progetto  
  I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile crearli tramite la scheda **Progetto** . Visual Studio può trovare un assembly se viene specificato un percorso al progetto.  
   
- In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Per altre informazioni, vedere [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) e [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).  
+ In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Per altre informazioni, vedere [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) e [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.  

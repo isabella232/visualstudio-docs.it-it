@@ -1,6 +1,6 @@
 ---
 title: Debug di applicazioni ASP.NET distribuito | Microsoft Docs
-ms.date: 06/30/2017
+ms.date: 06/30/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: bfbf5dc7421446c863bfd104f4247bb06411dfb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 57594775afe5d6708cd5d11b141f8cffc1b42e6c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717624"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525388"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debug di applicazioni ASP.NET distribuita
 Per utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per eseguire il debug di un'applicazione distribuita, è necessario effettuare la connessione al processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e verificare che il debugger abbia accesso ai simboli per l'applicazione. Inoltre, è necessario individuare e aprire i file di origine dell'applicazione. Per altre informazioni, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [procedura: trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), e [requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md).
