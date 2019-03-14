@@ -1,6 +1,6 @@
 ---
 title: Espressioni nel debugger | Microsoft Docs
-ms.date: 02/07/2017
+ms.date: 02/07/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692268"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526025"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.

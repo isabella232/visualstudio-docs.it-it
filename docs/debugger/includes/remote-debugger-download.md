@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56741217"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526873"
 ---
 Nel dispositivo remoto o server che si desidera eseguire il debug su, anziché il computer di Visual Studio, scaricare e installare la versione corretta di remote tools usando i collegamenti disponibili nella tabella seguente.
 
 - Scaricare remote tools per la versione di Visual Studio più recente. La versione più recente di remote tools è compatibile con le versioni precedenti di Visual Studio, ma le versioni precedenti di strumenti remoti non sono compatibili con versioni più recenti di Visual Studio.
 - Scaricare gli strumenti remoti con la stessa architettura del computer in che si li installa. Ad esempio, se si desidera eseguire il debug di un'app a 32 bit in un computer remoto che esegue un sistema operativo a 64 bit, installare gli strumenti remoti a 64 bit.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Fino a quando non sono disponibili, se è necessario usare il debugger remoto con Visual Studio 2019, autonomo Remote tools per Visual Studio 2019 [trovare il debugger remoto](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) nella propria installazione di Visual Studio 2019 e copiare ed eseguirlo su l'elemento remoto del computer oppure eseguirlo da una condivisione file.
+
+::: moniker-end
 
 |Versione|Collegamento|Note|
 |-|-|-|

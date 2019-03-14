@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834072"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567383"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 
 - Per creare app multipiattaforma con Apache Cordova, [scaricare Strumenti di Visual Studio per Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Per creare app di [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) e app universali, che supportano entrambe le piattaforme, [scaricare gli strumenti](http://dev.windows.com/develop/downloads).
+- Per creare app di [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) e app universali, che supportano entrambe le piattaforme, [scaricare gli strumenti](https://developer.microsoft.com/windows/downloads).
 
 - Per creare servizi basati sul cloud, visitare il [sito Web di Microsoft Azure](http://azure.microsoft.com/documentation/).
 
@@ -44,15 +44,15 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 |Funzionalità|Description|
 |-------------|-----------------|
 |Classi|La nuova sintassi supporta la dichiarazione delle [classi](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
-|Suggerimenti|I [suggerimenti](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|
-|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Nota:**  I generatori non sono ancora supportati.|
+|Suggerimenti|I [suggerimenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|
+|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Nota:** i generatori non sono ancora supportati.|
 |Funzioni freccia|La funzione freccia (=>) fornisce una sintassi abbreviata per la parola chiave `function` che offre un'associazione `this` lessicale.|
-|Nuovi metodi per gli oggetti predefiniti|Gli oggetti predefiniti [Array](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [Number](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [Object](/visualstudio/scripting-docs/javascript/reference/object-object-javascript) e [String](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) includono diverse nuove proprietà e funzioni di utilità per la modifica e il controllo dei dati.|
+|Nuovi metodi per gli oggetti predefiniti|Gli oggetti predefiniti [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) e [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) includono diverse nuove proprietà e funzioni di utilità per la modifica e il controllo dei dati.|
 |Miglioramenti dei valori letterali di oggetto|Gli oggetti ora supportano proprietà calcolate, definizioni di metodo concise e sintassi abbreviata per le proprietà il cui valore viene inizializzato su una variabile con lo stesso nome. Per altre informazioni, vedere [Creazione di oggetti](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
-|Proxy|I [proxy](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) abilitano il comportamento personalizzato per gli oggetti.|
+|Proxy|I [proxy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) abilitano il comportamento personalizzato per gli oggetti.|
 |Parametri rest|I parametri rest consentono di convertire in una matrice gli argomenti consecutivi in una chiamata di funzione. Per altre informazioni, vedere [Funzioni](/visualstudio/scripting-docs/javascript/functions-javascript).|
-|Operatore spread|L'[operatore spread](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) espande le espressioni iterabili in singoli argomenti. Ad esempio, `a.b(…array)` è quasi come `a.b.apply(a, array)`.|
-|Simboli|Gli oggetti [Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) consentono di aggiungere proprietà agli oggetti esistenti senza possibilità di interferenza con le proprietà di questi ultimi, senza alcuna visibilità imprevista e senza altre aggiunte non coordinate mediante altro codice.|
-|Stringhe modello|Le [stringhe modello](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) sono valori letterali stringa che consentono di valutare le espressioni e di concatenarle con il valore letterale stringa.|
-|Miglioramenti di Unicode|Sono stati apportati miglioramenti al supporto per Unicode. Ad esempio, un nuovo formato di sequenza di escape supporta i punti di codice "astrali" (punti di codice con più di quattro cifre esadecimali). Per altre informazioni, vedere [Caratteri speciali](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
-|WeakSet|Un [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) è una raccolta di oggetti che vengono sottoposti a Garbage Collection se non vi si fa riferimento in nessun altro punto.|
+|Operatore spread|L'[operatore spread](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) espande le espressioni iterabili in singoli argomenti. Ad esempio, `a.b(…array)` è quasi come `a.b.apply(a, array)`.|
+|Simboli|Gli oggetti [Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) consentono di aggiungere proprietà agli oggetti esistenti senza possibilità di interferenza con le proprietà di questi ultimi, senza alcuna visibilità imprevista e senza altre aggiunte non coordinate mediante altro codice.|
+|Stringhe modello|Le [stringhe modello](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) sono valori letterali stringa che consentono di valutare le espressioni e di concatenarle con il valore letterale stringa.|
+|Miglioramenti di Unicode|Sono stati apportati miglioramenti al supporto per Unicode. Ad esempio, un nuovo formato di sequenza di escape supporta i punti di codice "astrali" (punti di codice con più di quattro cifre esadecimali). Per altre informazioni, vedere [Caratteri speciali](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|
+|WeakSet|Un [WeakSet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) è una raccolta di oggetti che vengono sottoposti a Garbage Collection se non vi si fa riferimento in nessun altro punto.|

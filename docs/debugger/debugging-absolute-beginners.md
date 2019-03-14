@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713152"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526581"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -78,7 +78,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. È necessario avere installato Visual Studio e il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core**, a seconda del tipo di app che si vuole creare.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
 
     Per installare il carico di lavoro avendo già Visual Studio, fare clic su **Strumenti** > **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
 

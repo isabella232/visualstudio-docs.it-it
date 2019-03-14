@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949161"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736999"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 
@@ -36,9 +36,9 @@ I risultati delle ricerche eseguite in Avvio veloce vengono visualizzati in quat
 |Category|Collegamento|Descrizione metodo rapido|
 |--------------|--------------| - |
 |Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|
-|Menu|@menu<br /><br /> Ad esempio, `@menu font`.|Limita la ricerca alle voci di menu.|
+|Menu|@menu<br /><br /> Ad esempio, `@menu project`.|Limita la ricerca alle voci di menu.|
 |Opzioni|@opt<br /><br /> Ad esempio, `@opt font`.|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
-|Documenti|@doc<br /><br /> Ad esempio, `@doc font`.|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
+|Documenti|@doc<br /><br /> Ad esempio, `@doc program.cs`.|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
 
 > [!NOTE]
 > È possibile modificare le combinazioni di tasti nella pagina **Generale**, **Tastiera** della finestra di dialogo **Opzioni**.

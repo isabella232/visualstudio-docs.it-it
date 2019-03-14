@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fdfb851b2fc0fad6e6c394f30697dd39aa078d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961676"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526438"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -57,11 +57,22 @@ Se sufficiente da scaricare e installare il debugger remoto e non sono necessari
 
 È possibile trovare il debugger remoto (*msvsmon.exe*) in un computer con Visual Studio Community, Professional o Enterprise già installato. Per alcuni scenari, il modo più semplice per impostare il debug remoto consiste nell'eseguire il debugger remoto (msvsmon.exe) da una condivisione file. Per le limitazioni di utilizzo, vedere pagina della Guida del debugger remoto (**aiutare > utilizzo** nel debugger remoto).
 
-1. Trovare *msvsmon.exe* nella directory corrispondente alla versione di Visual Studio. Per Visual Studio Enterprise 2017:
+1. Trovare *msvsmon.exe* nella directory corrispondente alla versione di Visual Studio:
 
-      *Programma file (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Programma file (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Programma file (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programma file (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Programma file (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programma file (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. Condividi i **Remote Debugger** cartella nel computer di Visual Studio.
 
@@ -77,7 +88,7 @@ Se sufficiente da scaricare e installare il debugger remoto e non sono necessari
 ### <a name="configure_msvsmon"></a> Configurare il debugger remoto
 È possibile modificare alcuni aspetti della configurazione del debugger remoto dopo che è stata avviata per la prima volta.
 
--   Se è necessario aggiungere le autorizzazioni per altri utenti per connettersi al debugger remoto, selezionare **strumenti > autorizzazioni**. È necessario avere privilegi di amministratore per concedere o negare autorizzazioni.
+-   Se è necessario aggiungere le autorizzazioni per altri utenti per connettersi al debugger remoto, selezionare **strumenti > autorizzazioni**. È necessario disporre dei privilegi di amministratore per concedere o negare autorizzazioni.
 
      > [!IMPORTANT]
      > È possibile eseguire il debugger remoto con un account utente diverso dall'account utente in uso nel computer di Visual Studio, ma è necessario aggiungere l'account utente diverso alle autorizzazioni del debugger remoto.
