@@ -6,22 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: b60003c1b0f0ceabddae37a31b184cec49b37bc9
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d258a6d58571fb3fae718433a307471119a526bf
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324796"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524912"
 ---
 ## <a name="feedback-client"></a>Client di feedback
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Descrizione:** Feedback Client consente agli stakeholder di offrire commenti in formato avanzato per Azure DevOps Services o Team Foundation Server.
+**Descrizione:** Feedback Client consente agli stakeholder di offrire commenti in formato avanzato per Visual Studio Team Services o Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Componenti inclusi per questo carico di lavoro
 

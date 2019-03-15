@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716519"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526516"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C++ usando il debugger di Visual Studio
 
@@ -94,7 +94,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 ## <a name="navigate-code"></a>Spostarsi all'interno del codice
 
-Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un comando di spostamento nel codice utile che è stato introdotto in Visual Studio 2017.
+Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un utile comando di esplorazione del codice disponibile a partire da Visual Studio 2017.
 
 Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `c1.push_back(20)` finché appare il pulsante verde **Esegui fino alla riga selezionata** ![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png "RunToClick") quindi premere il pulsante **Esegui fino alla riga selezionata**.
 

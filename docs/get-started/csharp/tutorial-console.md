@@ -2,7 +2,7 @@
 title: "Esercitazione: Creare un'app console C# semplice"
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841175"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736920"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare un'app console C# semplice in Visual Studio
 
@@ -34,8 +34,9 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 1. Aprire Visual Studio 2017.
 
 2. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+   In alternativa premere **CTRL**+**MAIUSC**+**N**).
 
-3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **C#** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il nome *CalculateThis*.
+3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il nome ***CalculateThis***.
 
    ![Modello di progetto Console App (.NET Core) nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 ## <a name="create-the-app"></a>Creare l'app
 
-Prima di tutto si esamineranno alcuni calcoli matematici integer di base in C#. Si aggiungerà quindi il codice necessario per creare una calcolatrice di base. Successivamente, si modificherà il codice per aggiungere funzionalità. In seguito, si procederà al debug dell'app per trovare eventuali errori e correggerli. E infine si perfezionerà il codice per renderlo più efficiente.
+Prima di tutto si esamineranno alcuni calcoli matematici integer di base in C#. Si aggiungerà quindi il codice necessario per creare una calcolatrice di base. In seguito si procederà al debug dell'app per trovare eventuali errori e correggerli. E infine si perfezionerà il codice per renderlo più efficiente.
 
-Si inizierà con alcuni calcoli matematici integer in C#.
+### <a name="explore-integer-math"></a>Esplorare le operazioni matematiche su interi
+
+Si inizierà con alcune operazioni matematiche di base su interi in C#.
 
 1. Nell'editor del codice, eliminare il codice "Hello World" predefinito.
 
@@ -81,15 +84,23 @@ Si inizierà con alcuni calcoli matematici integer in C#.
             Console.ReadKey();
     ```
 
+    Sarà quindi possibile notare che la funzionalità IntelliSense in Visual Studio offrirà l'opzione per completare automaticamente l'inserimento.
+
+    ![Animazione del codice matematico su un intero che illustra la funzionalità di completamento automatico di IntelliSense nell'IDE di Visual Studio](./media/integer-math-intellisense.gif)
+
 1. Scegliere **Calculator** per eseguire il programma oppure premere **F5**.
 
    ![Scegliere il pulsante Calculator per eseguire l'app dalla barra degli strumenti](./media/csharp-console-calculator-button.png)
 
-   Si apre una finestra della console che visualizza la somma di 42 + 119.
+   Si aprirà una finestra della console che visualizza la somma di 42 + 119., vale a dire **161**.
 
-1. Provare ora a modificare la riga di codice `int c = a + b;` con un operatore diverso, ad esempio `-` per la sottrazione, `*` per la moltiplicazione o */* per la divisione.
+    ![Finestra della console con visualizzati i risultati dell'operazione matematica sull'intero](./media/csharp-console-integer-math.png)
 
-    Si noti che quando si cambia l'operatore e si esegue il programma, anche il risultato cambia.
+1. **(Facoltativo)**  È possibile modificare l'operatore per modificare il risultato. Nella riga di codice `int c = a + b;` è ad esempio possibile modificare l'operatore `+` in `-` per la sottrazione, `*` per la moltiplicazione o `/` per la divisione. A questo punto, quando il programma sarà eseguito, il risultato cambierà.
+
+1. Chiudere la finestra della console.
+
+### <a name="add-code-to-create-a-calculator"></a>Aggiungere codice per creare un'app di calcolo
 
 Si continuerà aggiungendo un set più complesso di codice di calcolo al progetto.
 
@@ -165,6 +176,10 @@ Si continuerà aggiungendo un set più complesso di codice di calcolo al progett
 
     ![Finestra della console che mostra l'app Calculator, che include i prompt sulle azioni da eseguire](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Aggiungere funzionalità all'app di calcolo
+
+A questo punto modificare il codice per aggiungere funzionalità.
+
 ### <a name="add-decimals"></a>Aggiungere i numeri decimali
 
 L'app Calculator attualmente accetta e restituisce numeri interi. Tuttavia, sarà più precisa se si aggiunge il codice che consente di elaborare numeri decimali.
@@ -178,6 +193,8 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 1. Premere **CTRL** + **F** per aprire il controllo **Trova e sostituisci**.
 
 1. Sostituire ogni istanza della variabile `int` con `float`.
+
+   Assicurarsi di aver attivato/disattivato **Maiuscole/minuscole** (**Alt**+**C**) e **Parola intera** (**Alt** + **W**) nel controllo **Trova e sostituisci**.
 
     ![Animazione del controllo Trova e sostituisci che illustra come modificare la variabile di tipo int in float](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ L'esercitazione è stata completata. Per altre informazioni, continuare con le e
 
 ## <a name="see-also"></a>Vedere anche
 
+* [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
 * [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)
