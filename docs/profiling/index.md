@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Misurazione delle prestazioni delle app tramite la profilatura | Microsoft Docs
-description: 'Informazioni su come usare Visual Studio 2017 per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.'
+description: 'Informazioni su come usare Visual Studio per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
