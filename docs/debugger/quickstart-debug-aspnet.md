@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683597"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525401"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug di ASP.NET con il debugger di Visual Studio
 
@@ -94,7 +94,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 ## <a name="navigate-code"></a>Spostarsi all'interno del codice
 
-Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un comando di spostamento nel codice utile che è stato introdotto in Visual Studio 2017.
+Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un utile comando di esplorazione del codice disponibile a partire da Visual Studio 2017.
 
 Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `return c2` finché appare il pulsante verde **Esegui fino alla riga selezionata** ![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png) quindi premere il pulsante **Esegui fino alla riga selezionata**.
 

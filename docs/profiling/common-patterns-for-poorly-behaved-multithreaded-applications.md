@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634266"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737025"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 
@@ -30,7 +30,7 @@ In alcuni casi un'applicazione parallelizzata continua a funzionare in modo seri
 
 Come illustrato nella figura seguente, il visualizzatore di concorrenza può esporre questo sintomo anche nella visualizzazione Utilizzo CPU, dove è evidente che, nonostante la presenza di più thread, l'applicazione utilizza un solo core logico.
 
-Per altre informazioni, vedere "Performance pattern 1: Identifying Lock Contention" (Modello di prestazioni 1: identificazione dei conflitti di blocco) nel blog di Hazim Shafi [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Strumenti per le prestazioni in parallelo per Windows) nel sito Web dei blog di MSDN.
+Per altre informazioni, vedere la sezione "Start with the problem" (Partire dal problema) dell'articolo di MSDN Magazine [Thread Performance - Resource Contention Concurrency Profiling in Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx) (Prestazioni dei thread: profilatura della concorrenza dei conflitti di risorse in Visual Studio 2010).
 
 ![Conflitti di blocco](../profiling/media/lockcontention_2.png "LockContention_2")
 

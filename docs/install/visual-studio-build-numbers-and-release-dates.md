@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/27/2019
+ms.date: 03/07/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954134"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567409"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,6 +27,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.8 | Versione | 5 marzo 2019 | 15.9.28307.481 |
 | 15.9.7 | Versione | 12 febbraio 2019 | 15.9.28307.423 |
 | 15.0.21 | Versione | 12 febbraio 2019 | 15.0.26228.73 |
 | 15.9.6 | Versione | 24 gennaio 2019 | 15.9.28307.344 |
@@ -177,6 +178,10 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6 marzo 2019 | 16.0.28705.295 |
+| 16.0.0 | Preview 4.1 Svc1 | 6 marzo 2019 | 16.0.28705.295 |
+| 16.0.0 | Release Candidate 1 (RC.1) | 5 marzo 2019 | 16.0.28701.123 |
+| 16.0.0 | Preview 4.1 | 5 marzo 2019 | 16.0.28701.123 |
 | 16.0.0 | Release Candidate (RC) | 27 febbraio 2019 | 16.0.28625.133 |
 | 16.0.0 | Preview 4 | 27 febbraio 2019 | 16.0.28625.133 |
 | 16.0.0 | Preview 3 | 13 febbraio 2019 | 16.0.28608.199 |

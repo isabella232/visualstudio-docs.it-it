@@ -8,16 +8,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930285"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525082"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opzioni, Editor di testo, XML, Varie
 
-Usare la pagina delle proprietà **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla pagina delle proprietà **Varie**, espandere l'**Editor di testo** > **XML** > nodo **Varie**.
+Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle opzioni XML, Varie, scegliere **Strumenti** > **Opzioni** > **Editor di testo** > **XML**, quindi scegliere **Varie**.
 
 ## <a name="auto-insert"></a>Inserimento automatico
 
@@ -53,9 +53,9 @@ Attiva la funzionalità struttura quando un file è aperto. Per impostazione pre
 
 **Schemi**
 
-Specifica il percorso della cache degli schemi. Il pulsante Sfoglia (...) consente di aprire la posizione corrente della cache dello schema in una nuova finestra. La posizione predefinita è  *\<directory di installazione di Management Studio>* \Xml\Schemas.
+Specifica il percorso della cache degli schemi. Il pulsante **Sfoglia** consente di aprire la posizione corrente della cache dello schema in una nuova finestra. Il percorso predefinito è *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Creare documentazione XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Opzioni XML - Formattazione](options-text-editor-xml-formatting.md)
+- [Strumenti XML in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
