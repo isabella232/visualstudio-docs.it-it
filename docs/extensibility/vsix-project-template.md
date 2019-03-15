@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92db48197791bab4b5f364ee6d2cd0e948e2a5f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c56f44f6898c7a99a7024906b5c38f521a169c0f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684585"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871298"
 ---
 # <a name="vsix-project-template"></a>Modello di progetto VSIX
-È possibile usare il modello di progetto VSIX per eseguire il wrapping di uno o più estensioni di Visual Studio in un progetto VSIX e quindi pubblicare il pacchetto nel [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) sito Web.
+È possibile usare il modello di progetto VSIX per eseguire il wrapping di uno o più estensioni di Visual Studio in un progetto VSIX e quindi pubblicare il pacchetto nel [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web.
 
  Distribuzione VSIX supporta i pacchetti VSPackage, assembly, MEF componenti, i modelli di progetto, i modelli di elemento, i controlli della casella degli strumenti e tipi di estensione personalizzati.
 

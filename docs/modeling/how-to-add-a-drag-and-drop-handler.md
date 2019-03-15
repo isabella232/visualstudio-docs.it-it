@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954465"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867748"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: Aggiungere un gestore di trascinamento della selezione
 
@@ -70,7 +70,7 @@ Nel nuovo file definire una classe parziale per la forma o la classe del diagram
 
      Per altre informazioni, vedere [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-Definire `IsAcceptableDropItem(e)` per determinare se l'elemento trascinato sia accettabile e ProcessDragDropItem(e) per aggiornare il modello quando l'elemento viene rilasciato. Questi metodi devono prima estrarre l'elemento dagli argomenti dell'evento. Per informazioni su come eseguire questa operazione, vedere [come ottenere un riferimento all'elemento trascinato](#extracting).
+Definire `IsAcceptableDropItem(e)` per determinare se l'elemento trascinato sia accettabile e ProcessDragDropItem(e) per aggiornare il modello quando l'elemento viene rilasciato. Questi metodi devono prima estrarre l'elemento dagli argomenti dell'evento. Per informazioni su come eseguire questa operazione, vedere [come ottenere un riferimento all'elemento trascinato](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>Definire i gestori movimenti con MEF
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) consente di definire i componenti che poss
 
      È possibile creare più di un componente gestore movimenti, ad esempio quando si hanno tipi diversi di oggetti trascinati.
 
-3.  Aggiungere le definizioni di classe parziale per le classi forma, connettore o diagramma di destinazione e definire i metodi `IsAcceptableDropItem()` e `ProcessDragDropItem()`. Questi metodi devono iniziare estraendo gli elementi trascinati dagli argomenti dell'evento. Per altre informazioni, vedere [come ottenere un riferimento all'elemento trascinato](#extracting).
+3.  Aggiungere le definizioni di classe parziale per le classi forma, connettore o diagramma di destinazione e definire i metodi `IsAcceptableDropItem()` e `ProcessDragDropItem()`. Questi metodi devono iniziare estraendo gli elementi trascinati dagli argomenti dell'evento. Per altre informazioni, vedere [come ottenere un riferimento all'elemento trascinato](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Come decodificare l'elemento trascinato
 
@@ -132,7 +132,7 @@ Per individuare i formati in cui sono disponibili le informazioni sull'origine d
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [come inviare i riferimenti ModelBus in un'operazione di trascinamento](#mbr).
+         È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [come inviare i riferimenti ModelBus in un'operazione di trascinamento](#to-send-an-object-from-a-source-dsl).
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Usare questa proprietà se si desidera che gli utenti di trascinare gli elementi da un modello DSL o un modello UML. Un prototipo di gruppo di elementi contiene uno o più oggetti, collegamenti e i valori delle proprietà. Viene usato anche nelle operazioni Incolla e quando si aggiunge un elemento dalla casella degli strumenti. In un prototipo, gli oggetti e i tipi vengono identificati dal GUID. Ad esempio, questo codice consente all'utente di trascinare gli elementi della classe da un diagramma UML o da Esplora modelli UML:
 

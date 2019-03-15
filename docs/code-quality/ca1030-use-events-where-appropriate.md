@@ -1,6 +1,6 @@
 ---
 title: 'CA1030: Usare eventi dove appropriato'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32645985237503a526ce7381cbeec4ecc9770b06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1054fa7b884c23edb76248cba17bab41cc64246f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929271"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867432"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usare eventi dove appropriato
 
@@ -31,23 +31,36 @@ ms.locfileid: "55929271"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Nome di un metodo pubblico, protetto o privato inizia con uno dei seguenti:
+
+Un nome di metodo inizia con uno dei seguenti:
 
 - AddOn
-
 - RemoveOn
-
 - Incendi
-
 - Raise
 
-## <a name="rule-description"></a>Descrizione della regola
- Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Gli eventi di seguono lo schema progettuale osservatore o Publish-Subscribe; vengono utilizzati quando una modifica dello stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica dello stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.
+Per impostazione predefinita, questa regola cerca solo a metodi visibili esternamente, ma si tratta [configurabile](#configurability).
 
- Alcuni esempi comuni di eventi si trovano in applicazioni con interfaccia utente in cui un'azione dell'utente, ad esempio facendo clic su un pulsante fa sì che un segmento di codice da eseguire. Il modello di eventi .NET Framework non è limitato alle interfacce utente; deve essere usata ovunque che è necessario comunicare lo stato passa a uno o più oggetti.
+## <a name="rule-description"></a>Descrizione della regola
+
+Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Gli eventi di seguono lo schema progettuale osservatore o Publish-Subscribe; vengono utilizzati quando una modifica dello stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica dello stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.
+
+Alcuni esempi comuni di eventi si trovano in applicazioni con interfaccia utente in cui un'azione dell'utente, ad esempio facendo clic su un pulsante fa sì che un segmento di codice da eseguire. Il modello di eventi .NET Framework non è limitato alle interfacce utente; deve essere usata ovunque che è necessario comunicare lo stato passa a uno o più oggetti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se il metodo viene chiamato quando cambia lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il modello di eventi .NET Framework.
+
+Se il metodo viene chiamato quando cambia lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il modello di eventi .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Eliminare un avviso da questa regola se il metodo non funziona con il modello di eventi .NET Framework.
+
+Eliminare un avviso da questa regola se il metodo non funziona con il modello di eventi .NET.
+
+## <a name="configurability"></a>Configurabilità
+
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca1030.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).

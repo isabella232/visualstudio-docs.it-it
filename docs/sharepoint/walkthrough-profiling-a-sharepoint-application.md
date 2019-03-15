@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841729"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867706"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: Profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più onerosa (esecuzione più lenta) del progetto, noto anche come il *percorso ad accesso frequente*.
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
-- [Aggiunta di una funzionalità e un ricevitore di eventi funzionalità](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg una funzionalità e un ricevitore di eventi funzionalità](#add-a-feature-and-feature-event-receiver).
 
-- [Configurazione e distribuzione dell'applicazione SharePoint](#BKMK_ConfigSharePointApp).
+- [Configurare e distribuire l'applicazione SharePoint](#configure-and-deploy-the-sharepoint-application).
 
-- [Esecuzione dell'applicazione SharePoint](#BKMK_RunSPApp).
+- [Eseguire l'applicazione SharePoint](#run-the-sharepoint-application).
 
-- [Visualizzazione e l'interpretazione dei risultati di profilatura](#BKMK_ViewResults).
+- [Visualizzare e interpretare i risultati del profilo](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

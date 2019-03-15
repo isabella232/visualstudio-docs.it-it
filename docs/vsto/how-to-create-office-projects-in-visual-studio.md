@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614311"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868172"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: Creare progetti di Office in Visual Studio
   È possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare il componente aggiuntivo VSTO e a livello di documento personalizzazioni per le applicazioni Microsoft Office. Per altre informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -85,17 +85,18 @@ ms.locfileid: "56614311"
 
 7. Fare clic sul pulsante **OK** .
 
-    > [!NOTE]
-    >  I progetti di componente aggiuntivo vengono sempre salvati al momento della creazione e non possono essere creati come progetti temporanei. Per altre informazioni sui progetti temporanei, vedere [progetti temporanei](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > I progetti di componente aggiuntivo vengono sempre salvati al momento della creazione e non possono essere creati come progetti temporanei. Per altre informazioni sui progetti temporanei, vedere [progetti temporanei](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Per creare un progetto di personalizzazione a livello di documento
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**. Se l'IDE è configurato per utilizzare le impostazioni di sviluppo Visual Basic il **File** menu, scegliere **New** > **progetto**.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
-
-   > [!NOTE]
-   >  Per impostazione predefinita, i progetti di Office hanno come destinazione [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Per altre informazioni, vedere [profilo client .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. Nel riquadro Modelli, sotto il nodo per la lingua da usare, espandere **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614311"
 4. Nell'elenco dei modelli di progetto scegliere un modello di progetto a livello di documento. Per un elenco di modelli di progetto a livello di documento disponibili, vedere [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Se i modelli di progetto non sono visibili quando si seleziona il **Office Add-ins** nodo, verificare che l'opzione **.NET Framework 4** o in un secondo momento è selezionato nella casella combinata nella parte superiore della finestra di dialogo. I modelli di progetto di Office sono visibili per entrambe le versioni di .NET Framework.
+   > Se i modelli di progetto non sono visibili quando si seleziona il **Office Add-ins** nodo, verificare che l'opzione **.NET Framework 4** o in un secondo momento è selezionato.
 
 5. Nel **nome** , digitare un nome per il progetto. Per impostazione predefinita, questo nome viene usato anche per il documento. Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual C# o le impostazioni di sviluppo generali, immettere anche un percorso e il nome della soluzione.
 
    > [!NOTE]
-   >  Non è possibile usare caratteri surrogati nel percorso o nel nome del progetto. Inoltre, se si prevede di distribuire la soluzione per l'uso offline, i caratteri nel nome del progetto devono rispettare le specifiche del protocollo HTTP.
+   > Non è possibile usare caratteri surrogati nel percorso o nel nome del progetto. Inoltre, se si prevede di distribuire la soluzione per l'uso offline, i caratteri nel nome del progetto devono rispettare le specifiche del protocollo HTTP.
 
 6. Fare clic sul pulsante **OK** .
 

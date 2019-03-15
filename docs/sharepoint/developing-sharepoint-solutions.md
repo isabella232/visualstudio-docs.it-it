@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618146"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870428"
 ---
 # <a name="develop-sharepoint-solutions"></a>Lo sviluppo di soluzioni SharePoint
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco di tipi di progetto disponibili, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.
 
- Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) e alla [compilazione di componenti aggiuntivi per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e alla [compilazione di componenti aggiuntivi per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Elementi di un progetto SharePoint
  I nodi di un progetto SharePoint sono noti come *elementi di SharePoint*. Gli elementi di SharePoint possono anche contenere uno o più file correlati, detti *file degli elementi di SharePoint*, ad esempio file di configurazione [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , form ASPX e così via.

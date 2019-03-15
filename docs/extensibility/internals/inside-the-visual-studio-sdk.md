@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796673"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870273"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 In questa sezione fornisce informazioni approfondite sulle estensioni di Visual Studio, tra cui architettura di Visual Studio, componenti, servizi, schemi, utilità e simili.
@@ -90,7 +90,7 @@ In questa sezione fornisce informazioni approfondite sulle estensioni di Visual 
  Per altre informazioni, vedere [progetti](../../extensibility/internals/projects.md) e [soluzioni](../../extensibility/internals/solutions.md).
 
 ## <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
- Visual Studio include modelli di progetto predefiniti e i modelli di progetto. È possibile inoltre rendere i propri modelli o acquisire modelli della community e li integrano in Visual Studio. Il [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) è lo strumento ideale per i modelli e le estensioni.
+ Visual Studio include modelli di progetto predefiniti e i modelli di progetto. È possibile inoltre rendere i propri modelli o acquisire modelli della community e li integrano in Visual Studio. Il [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) è lo strumento ideale per i modelli e le estensioni.
 
  I modelli contengono la struttura del progetto e file di base necessari per compilare un particolare tipo di applicazione, controllo, raccolta o classe. Quando si desidera sviluppare software che è simile a uno dei modelli, creare un progetto che si basa sul modello e quindi modificare i file in tale progetto.
 

@@ -1,6 +1,6 @@
 ---
 title: 'CA1715: Gli identificatori devono contenere il prefisso corretto'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1715
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 871c97591ebbaea2087273d925613e12f0fe7529
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923564"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873604"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 
@@ -35,54 +35,90 @@ ms.locfileid: "55923564"
 |Modifica importante|Rilievo - quando viene attivato sulle interfacce.<br /><br /> Non sostanziale - Quando si è generato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
- Il nome di un'interfaccia visibile esternamente non inizia con una "I" maiuscola.
 
- -oppure-
+Il nome di un'interfaccia non inizia con una "I" maiuscola.
 
- Il nome di un parametro di tipo generico su un tipo visibile esternamente o un metodo non inizia con una maiuscola l ' '.
+-oppure-
+
+Il nome di un [parametro di tipo generico](/dotnet/csharp/programming-guide/generics/generic-type-parameters) su un tipo o metodo non inizia con una maiuscola l ' '.
+
+Per impostazione predefinita, questa regola cerca solo in interfacce visibili esternamente, i tipi e metodi, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per convenzione, i nomi di determinati elementi di programmazione iniziano con un prefisso specifico.
 
- I nomi di interfaccia devono iniziare con una lettera maiuscola 'I' seguito da un'altra lettera maiuscola. Questa regola segnala le violazioni per i nomi di interfaccia, ad esempio "MyInterface" e "IsolatedInterface".
+Per convenzione, i nomi di determinati elementi di programmazione iniziano con un prefisso specifico.
 
- I nomi dei parametri di tipo generico deve iniziare con una ' T' ' e, facoltativamente, può essere seguita da un'altra lettera maiuscola. Questa regola segnala le violazioni per i nomi dei parametri di tipo generico, ad esempio "V" e 'Type'.
+I nomi di interfaccia devono iniziare con una lettera maiuscola 'I' seguito da un'altra lettera maiuscola. Questa regola segnala le violazioni per i nomi di interfaccia, ad esempio "MyInterface" e "IsolatedInterface".
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+I nomi dei parametri di tipo generico deve iniziare con una ' T' ' e, facoltativamente, può essere seguita da un'altra lettera maiuscola. Questa regola segnala le violazioni per i nomi dei parametri di tipo generico, ad esempio "V" e 'Type'.
+
+Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+
+## <a name="configurability"></a>Configurabilità
+
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti del codice questa regola analizza. Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+
+### <a name="single-character-type-parameters"></a>Parametri di tipo carattere singolo
+
+È possibile configurare se utilizzare o meno escluderà i parametri di tipo carattere singolo da questa regola. Ad esempio, per specificare che questa regola *non deve* analizzare i parametri di tipo carattere singolo, aggiungere una delle seguenti coppie chiave-valore in un file con estensione editorconfig nel progetto:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
+```
+
+> [!NOTE]
+> Questa regola viene attivata mai di un parametro di tipo denominato `T`, ad esempio, `Collection<T>`.
+
+### <a name="api-surface"></a>Superficie dell'API
+
+È possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca1715.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Rinominare l'identificatore in modo che in modo corretto viene aggiunto come prefisso.
+
+Rinominare l'identificatore in modo che in modo corretto viene aggiunto come prefisso.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
 
-## <a name="example"></a>Esempio
- **L'esempio seguente illustra un'interfaccia denominata in modo errato.**
+Non escludere un avviso da questa regola.
 
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
+## <a name="interface-naming-example"></a>Esempio di denominazione di interfaccia
 
-## <a name="example"></a>Esempio
- **Nell'esempio seguente consente di correggere la violazione precedente aggiungendo il prefisso dell'interfaccia 'I'.**
+Il frammento di codice seguente illustra un'interfaccia denominata in modo non corretto:
 
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-## <a name="example"></a>Esempio
- **Nell'esempio seguente mostra un parametro di tipo generico denominata in modo errato.**
+Il frammento di codice seguente consente di risolvere la violazione precedente anteponendo l'interfaccia 'I':
 
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="example"></a>Esempio
- **Nell'esempio seguente consente di correggere la violazione precedente anteponendo il parametro di tipo generico con l ' '.**
+## <a name="type-parameter-naming-example"></a>Esempio di denominazione parametro di tipo
 
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
- [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
+Il frammento di codice seguente mostra un parametro di tipo generico denominato in modo non corretto:
+
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
+
+Il seguente frammento di codice corretta la violazione precedente aggiungendo il parametro di tipo generico con l ' ':
+
+[!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
+[!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
+[!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1722: Gli identificatori non devono contenere il prefisso non corretto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+
+- [CA1722: Gli identificatori non devono contenere il prefisso non corretto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

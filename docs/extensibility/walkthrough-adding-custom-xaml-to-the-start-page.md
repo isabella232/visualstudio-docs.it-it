@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 992937ea0c90e3734a38ba6f2e56b19918fd7375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709174"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867326"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procedura dettagliata: Aggiungere XAML personalizzato nella pagina iniziale
 
@@ -85,7 +85,7 @@ Per applicare la pagina iniziale personalizzata, in **degli strumenti** > **opzi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-La pagina iniziale di Visual Studio contiene ora una scheda che visualizza una scheda del browser Web e una scheda MyButton. È possibile creare pagine iniziali personalizzate che dispongono di altre funzionalità tramite il *code-behind* model per aggiungere un file dll personalizzato, come illustrato [aggiunta controllo utente alla pagina avvio](../extensibility/adding-user-control-to-the-start-page.md). È possibile condividere pagine iniziali personalizzate con altri utenti di pubblicazione del file con estensione VSIX risultante per il [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) sito Web o in un altro sito Web o rete una condivisione. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
+La pagina iniziale di Visual Studio contiene ora una scheda che visualizza una scheda del browser Web e una scheda MyButton. È possibile creare pagine iniziali personalizzate che dispongono di altre funzionalità tramite il *code-behind* model per aggiungere un file dll personalizzato, come illustrato [aggiunta controllo utente alla pagina avvio](../extensibility/adding-user-control-to-the-start-page.md). È possibile condividere pagine iniziali personalizzate con altri utenti di pubblicazione del file con estensione VSIX risultante per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web o in un altro sito Web o rete una condivisione. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
 ## <a name="see-also"></a>Vedere anche
 

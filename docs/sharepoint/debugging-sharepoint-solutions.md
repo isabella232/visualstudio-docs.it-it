@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640233"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873110"
 ---
 # <a name="debug-sharepoint-solutions"></a>Il debug delle soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi apre un'istanza del sito di SharePoint nel Web browser. Le sezioni seguenti illustrano come eseguire il debug di applicazioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Abilitazione del debug](#EnableDebug)
+-   [Abilitare il debug](#enable-debugging)
 
--   [Processo di distribuzione e il debug con F5](#Deployment)
+-   [Processo di distribuzione e debug F5](#f5-debug-and-deployment-process)
 
--   [Funzionalità del progetto SharePoint](#Features)
+-   [Funzionalità del progetto SharePoint](#sharepoint-project-features)
 
--   [Esecuzione del debug dei flussi di lavoro](#Workflow)
+-   [Eseguire il debug dei flussi di lavoro](#debug-workflows)
 
--   [Debug di ricevitori di eventi](#FeatureEvents)
+-   [Eseguire il debug di ricevitori di eventi](#debug-feature-event-receivers)
 
--   [Abilitazione di informazioni di debug avanzate](#EnhancedDebug)
+-   [Abilitare ehanced le informazioni di debug](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Abilita debug
  Durante il debug prima di tutto una soluzione di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], una finestra di dialogo avvisa l'utente che il file Web. config non è configurato per abilitare il debug. (Il file Web. config viene creato quando si installa SharePoint server. Per altre informazioni, vedere [uso di file Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) La finestra di dialogo offre la possibilità di scegliere se eseguire il progetto senza debug oppure modificare il file Web. config per abilitare il debug. Se si sceglie la prima opzione, il progetto viene eseguito normalmente. Se si sceglie la seconda opzione, il file web.config viene configurato per:
@@ -137,7 +137,7 @@ ms.locfileid: "56640233"
 
  Per disabilitare l'attivazione automatica della funzionalità di SharePoint e consentire il corretto debug di ricevitori di eventi, impostare il valore del progetto **configurazione distribuzione attiva** proprietà **Nessuna attivazione** prima del debug. Successivamente, dopo aver avviato il debug dell'applicazione SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], attivare manualmente la funzionalità in SharePoint. Per attivare la funzionalità, aprire il **Azioni sito** dal menu in SharePoint, scegliere **le impostazioni del sito**, scegliere il **Gestisci caratteristiche sito** collegamento e quindi scegliere il **Activate** pulsante accanto alla funzionalità e continuare il debug come di consueto.
 
-## <a name="enable-enhanced-debug-information"></a>Abilitare le informazioni di debug migliorate
+## <a name="enable-enhanced-debugging-information"></a>Abilita informazioni di debug avanzate
  A causa a volte risultano complesse delle interazioni tra il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo (devenv.exe), il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo host di SharePoint (*vssphost4.exe*), SharePoint e il livello WCF, la diagnosi di errori che si verificano mentre compilazione, distribuzione e così via possono essere una sfida. Per aiutarti a risolvere tali errori, è possibile abilitare le informazioni di debug avanzate. A tale scopo, passare alla chiave del Registro di sistema seguente nel Registro di sistema Windows:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

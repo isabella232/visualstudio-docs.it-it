@@ -6,19 +6,19 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- Office development in Visual Studio, what's new
+- Office development in Visual Studio 2010, what's new
 - what's new [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf4633f3c372d4288826de1b3ca2d96819eccfb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 146ece23d1ff4ed516d5c7d009bfc439c2387bb5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602936"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870331"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Modifiche alla progettazione dei progetti di Office destinati a .NET Framework 4 o .NET Framework 4.5
   A partire da [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio ha introdotto alcune modifiche nella creazione di progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva. Se si ha familiarità con i progetti di Office delle versioni precedenti di Visual Studio, è necessario tenere presenti queste modifiche prima di sviluppare progetti di Office destinati a tali versioni di .NET Framework 4.0 o versione successiva. Per impostazione predefinita, tutti i progetti creati con Visual Studio 2013 o versione successiva sono destinati a .NET Framework 4.0 o versione successiva.

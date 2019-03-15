@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599836"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869915"
 ---
 # <a name="create-sharepoint-solutions"></a>Creare soluzioni di SharePoint
   È possibile creare applicazioni di SharePoint in Visual Studio come alternativa alla creazione in SharePoint Designer. Visual Studio promuove lo sviluppo rapido di SharePoint fornendo funzionalità quali strumenti di debug avanzati, IntelliSense, completamento istruzioni e modelli di progetto. Visual Studio sfrutta anche i linguaggi e gli strumenti avanzati basati su .NET Framework. È possibile sviluppare progetti SharePoint con Visual Basic o Visual C# e sviluppare l'app per progetti SharePoint con JavaScript.
 
- Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) e alla [compilazione di app per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e alla [compilazione di app per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Informazioni su come usare il nuovo [modello di componente aggiuntivo di SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) per estendere l'esperienza di SharePoint per gli utenti. Questi componenti aggiuntivi hanno footprint di dimensioni molto ridotte rispetto alle soluzioni di SharePoint e possono essere creati con quasi tutte le tecnologie di programmazione Web come ad esempio HTML5, JavaScript, CSS3 e XML.

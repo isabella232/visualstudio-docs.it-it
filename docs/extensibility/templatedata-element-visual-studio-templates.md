@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700146"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870580"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Elemento TemplateData (modelli di Visual Studio)
 Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .
@@ -58,7 +58,7 @@ Classifica il modello in base alla categoria e definisce la modalità di visuali
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica se nella creazione di un'istanza del progetto viene creata una cartella che lo contiene. |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica il nome che verrà generato il sistema di progetto di Visual Studio per il progetto o un elemento al momento della creazione. |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica se il sistema di progetto di Visual Studio genera il nome predefinito per un progetto o un elemento al momento della creazione. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica se è possibile creare il progetto come progetto temporaneo. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica se è possibile creare il progetto come progetto temporaneo (solo Visual Studio 2017). |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica se il **esplorare** pulsante è disponibile nel **nuovo progetto** finestra di dialogo, in modo che gli utenti possono facilmente modificare la directory predefinita in cui viene salvato un nuovo progetto. |
 | [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Elemento facoltativo.<br /><br /> Specifica il numero di categorie principali che verrà visualizzato il modello nel **nuovo progetto** nella finestra di dialogo. |

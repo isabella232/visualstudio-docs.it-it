@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223494"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872434"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 
@@ -187,7 +187,7 @@ Il grafico di analisi del codice nativo (PREfast) è integrato nell'ambiente di 
 
 Assicurarsi di che aggiungere queste proprietà prima dell'importazione del file Microsoft.Cpp.targets. È possibile selezionare i set di regole specifici o creare un set di regole personalizzato o usare il set di regole predefinite che include altri controlli di PREfast.
 
-È possibile eseguire il controllo di base di C++ solo nei file specificati utilizzando l'approccio descritto in [descritto in precedenza](#coreckeck_per_file), ma con i file di MSBuild. Le variabili di ambiente possono essere impostate utilizzando il `BuildMacro` elemento:
+È possibile eseguire il controllo di base di C++ solo nei file specificati utilizzando l'approccio descritto in [descritto in precedenza](#corecheck_per_file), ma con i file di MSBuild. Le variabili di ambiente possono essere impostate utilizzando il `BuildMacro` elemento:
 
 ```xml
 <ItemGroup>

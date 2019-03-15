@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687887"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873006"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti di Windows Form
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (Visual Studio SDK) consente di creare un controllo che viene aggiunto automaticamente per il **casella degli strumenti** quando l'estensione viene installata. In questo argomento viene illustrato come usare il modello per creare un controllo di un contatore semplice che è possibile distribuire ad altri utenti.
@@ -206,7 +206,7 @@ Il `Counter` controllo espone un metodo per incrementare il contatore, un evento
     Reimposta il contatore **0**.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il *VSIX* file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* del file ai [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) in modo che gli utenti potranno trovarlo cercando il **strumenti**  >   **Estensioni e aggiornamenti** finestra di dialogo.
+Quando si compila un **casella degli strumenti** (controllo), Visual Studio crea un file denominato *ProjectName.vsix* nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il *VSIX* file in una rete o a un sito Web. Quando un utente apre la *VSIX* file, il controllo viene installato e aggiunto a Visual Studio **della casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il *VSIX* del file ai [Visual Studio Marketplace](https://marketplace.visualstudio.com/) in modo che gli utenti potranno trovarlo cercando il **strumenti**  >   **Estensioni e aggiornamenti** finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

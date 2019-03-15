@@ -1,6 +1,6 @@
 ---
 title: 'CA1710: Gli identificatori devono contenere il suffisso corretto'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944455"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868075"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Gli identificatori devono contenere il suffisso corretto
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944455"
 ## <a name="cause"></a>Causa
 
 Un identificatore non è il suffisso corretto.
+
+Per impostazione predefinita, questa regola solo esamina gli identificatori visibili esternamente, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -90,6 +92,16 @@ Rinominare il tipo in modo da utilizzare come suffisso con il termine corretto.
 È possibile eliminare un avviso da usare il suffisso 'Collection' se il tipo è una struttura di dati generalizzata che può essere estesa o che conterrà un set arbitrario di elementi diversi. In questo caso, un nome che fornisce informazioni significative sull'implementazione, prestazioni o altre caratteristiche della struttura dei dati potrebbe BinaryTree (ad esempio,). Nei casi in cui il tipo rappresenta una raccolta di un tipo specifico (ad esempio, StringCollection), non escludere un avviso da questa regola poiché il suffisso indica che il tipo può essere enumerato usando un `foreach` istruzione.
 
 Per altri suffissi, non escludere un avviso da questa regola. Il suffisso consente l'utilizzo previsto sia evidente dal nome del tipo.
+
+## <a name="configurability"></a>Configurabilità
+
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regole correlate
 
