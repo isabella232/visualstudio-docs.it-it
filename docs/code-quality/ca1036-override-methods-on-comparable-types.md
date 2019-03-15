@@ -1,6 +1,6 @@
 ---
 title: "CA1036: Eseguire l'override di metodi su tipi confrontabili"
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1036
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab36be0233ad83c5f1ec23b3511937eda07940c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12b00c202373310b04021a46e74af2af7e10d535
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952996"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868873"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Eseguire l'override di metodi su tipi confrontabili
 
@@ -31,7 +31,10 @@ ms.locfileid: "55952996"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico o protetto implementa il <xref:System.IComparable?displayProperty=fullName> l'interfaccia e non esegue l'override <xref:System.Object.Equals%2A?displayProperty=fullName> o non esegue l'overload dell'operatore di linguaggio specifico per verificarne l'uguaglianza, disuguaglianza, meno-rispetto a, o versione successiva-rispetto a. La regola non indica una violazione se il tipo eredita solo un'implementazione dell'interfaccia.
+
+Un tipo implementa la <xref:System.IComparable?displayProperty=fullName> l'interfaccia e non esegue l'override <xref:System.Object.Equals%2A?displayProperty=fullName> o non esegue l'overload dell'operatore di linguaggio specifico per verificarne l'uguaglianza, disuguaglianza, meno-, maggiore o -rispetto. La regola non indica una violazione se il tipo eredita solo un'implementazione dell'interfaccia.
+
+Per impostazione predefinita, questa regola considerati solo i tipi pubblici e protetti, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -42,11 +45,8 @@ I tipi che definiscono un ordinamento personalizzato implementano il <xref:Syste
 Per correggere una violazione di questa regola, eseguire l'override <xref:System.Object.Equals%2A>. Se il linguaggio di programmazione supporta l'overload degli operatori, specificare gli operatori seguenti:
 
 - op_Equality
-
 - op_Inequality
-
 - op_LessThan
-
 - op_GreaterThan
 
 In c#, i token che vengono usati per rappresentare questi operatori sono i seguenti:
@@ -59,17 +59,28 @@ In c#, i token che vengono usati per rappresentare questi operatori sono i segue
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da regola CA1036 quando la violazione è causata dalla mancanza di operatori e il linguaggio di programmazione non supporta l'overload degli operatori, come avviene con Visual Basic. È anche possibile eliminare un avviso per da questa regola quando viene attivato per gli operatori di uguaglianza diverso da op_Equality se si determina che implementa gli operatori non ha senso nel contesto dell'applicazione. Tuttavia, dovrebbe essere sempre op_Equality e l'operatore = =, se si esegue l'override di Object. Equals.
 
-## <a name="example"></a>Esempio
- L'esempio seguente contiene un tipo che implementa correttamente <xref:System.IComparable>. Commenti del codice identificano i metodi che soddisfano diverse regole che riguardano <xref:System.Object.Equals%2A> e il <xref:System.IComparable> interfaccia.
+È possibile eliminare un avviso da regola CA1036 quando la violazione è causata dalla mancanza di operatori e il linguaggio di programmazione non supporta l'overload degli operatori, come avviene con Visual Basic. Se si determina che implementa gli operatori non ha senso nel contesto dell'app, è anche possibile eliminare un avviso da questa regola quando viene attivato per gli operatori di uguaglianza diverso da op_Equality. Tuttavia, si deve sempre eseguire l'override op_Equality e l'operatore = =, se esegue l'override <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
- [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
+## <a name="configurability"></a>Configurabilità
 
-## <a name="example"></a>Esempio
- L'applicazione seguente testa il comportamento del <xref:System.IComparable> implementazione descritto in precedenza.
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
 
- [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
+```
+dotnet_code_quality.ca1036.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Esempi
+
+Il codice seguente contiene un tipo che implementa correttamente <xref:System.IComparable>. Commenti del codice identificano i metodi che soddisfano diverse regole che riguardano <xref:System.Object.Equals%2A> e il <xref:System.IComparable> interfaccia.
+
+[!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
+
+Il codice dell'applicazione seguente testa il comportamento del <xref:System.IComparable> implementazione descritto in precedenza.
+
+[!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
 ## <a name="see-also"></a>Vedere anche
 

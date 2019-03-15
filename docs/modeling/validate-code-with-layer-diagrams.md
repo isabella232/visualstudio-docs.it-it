@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223195"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870360"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -102,14 +102,14 @@ Se si dispone di un diagramma di dipendenza aperto collegato agli elementi della
     > [!NOTE]
     > Per impostazione predefinita, il **Build Action** sul file di diagramma (con estensione layerdiagram) delle dipendenze è impostata su **Validate** in modo che il diagramma è incluso nel processo di convalida.
 
-     Il **elenco errori** finestra segnala tutti gli errori che si verificano. Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).
+     Il **elenco errori** finestra segnala tutti gli errori che si verificano. Per altre informazioni sugli errori di convalida, vedere [risolvere i problemi di convalida dei layer](#troubleshoot-layer-validation-issues).
 
 2.  Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.
 
     > [!NOTE]
     > Visual Studio potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Ciò si verifica quando il codice presenta una dipendenza da un assembly che non è specificato nel diagramma delle dipendenze o codice manca una dipendenza specificata nel diagramma delle dipendenze. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per altre informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Per gestire gli errori, vedere [gestire gli errori di convalida](#ManageErrors).
+3.  Per gestire gli errori, vedere [risolvere gli errori di convalida dei layer](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Convalidare il codice al prompt dei comandi
 
@@ -147,7 +147,7 @@ Se si dispone di un diagramma di dipendenza aperto collegato agli elementi della
 
      Verranno elencati tutti gli errori che si verificano. Per altre informazioni su MSBuild, vedere [MSBuild](../msbuild/msbuild.md) e [attività MSBuild](../msbuild/msbuild-task.md).
 
-   Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).
+   Per altre informazioni sugli errori di convalida, vedere [risolvere i problemi di convalida dei layer](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Gestire gli errori di convalida
 
@@ -195,11 +195,11 @@ Usare un editor di testo per aprire il file del progetto di modello (.modelproj)
 
     Ciò include il diagramma delle dipendenze nel processo di convalida.
 
-Per gestire gli errori nella finestra Elenco errori, vedere [Gestisci errori di convalida](#ManageErrors).
+Per gestire gli errori nella finestra Elenco errori, vedere [risolvere gli errori di convalida dei layer](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Risolvere i problemi di convalida dei livelli
 
-Nella tabella seguente vengono descritti i problemi di convalida dei livelli e la relativa risoluzione. Questi problemi differiscono dagli errori risultanti da conflitti tra il codice e la progettazione. Per altre informazioni su questi errori, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).
+Nella tabella seguente vengono descritti i problemi di convalida dei livelli e la relativa risoluzione. Questi problemi differiscono dagli errori risultanti da conflitti tra il codice e la progettazione. Per altre informazioni su questi errori, vedere [risolvere i problemi di convalida dei layer](#troubleshoot-layer-validation-issues).
 
 |**Problema**|**Causa possibile**|**Risoluzione**|
 |-|-|-|

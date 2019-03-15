@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932014"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866997"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Set di regole per gli analizzatori di Roslyn
 
-Set di regole predefiniti sono inclusi alcuni pacchetti di Analizzatore NuGet. Ad esempio, i set di regole forniti con il [pacchetto dell'analizzatore NuGet fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (a partire dalla versione 2.6.2) abilitare o disabilitare le regole in base alla relativa categoria, ad esempio la sicurezza, la denominazione, o prestazioni. Uso dei set di regole semplifica visualizzare rapidamente solo tali violazioni delle regole relative a una determinata categoria della regola.
+Set di regole predefiniti sono inclusi alcuni pacchetti di Analizzatore NuGet. Ad esempio, i set di regole forniti con il [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pacchetto dell'analizzatore NuGet (a partire dalla versione 2.6.2) abilitare o disabilitare le regole in base alla relativa categoria, ad esempio la sicurezza, la denominazione, o Prestazione. Uso dei set di regole semplifica visualizzare rapidamente solo tali violazioni delle regole relative a una determinata categoria della regola.
 
 Se si esegue la migrazione da legacy "FxCop" analisi statica del codice per gli analizzatori di Roslyn, questi set di regole consentono di continuare a usare le stesse configurazioni di regola usato in precedenza.
 
@@ -41,7 +41,7 @@ I set di regole analizzatore predefinito includono tre set di regole che influis
 
 Esistono inoltre due set di regole per ogni categoria delle regole nel pacchetto, ad esempio le prestazioni o sicurezza. Un set di regole abilita tutte le regole per la categoria e un set di regole rispetta le impostazioni predefinite di gravità e abilitazione di ogni regola nella categoria.
 
- Il [pacchetto dell'analizzatore NuGet fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) include set di regole per le categorie seguenti, in modo che corrisponda il set di regole disponibili per l'analisi statica del codice di "FxCop" legacy:
+Il [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pacchetto dell'analizzatore NuGet include set di regole per le categorie seguenti, che corrispondono ai set di regole disponibili per l'analisi statica del codice legacy "FxCop":
 
 - progettazione
 - documentazione
@@ -54,7 +54,8 @@ Esistono inoltre due set di regole per ogni categoria delle regole nel pacchetto
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Analizzatori di domande frequenti](analyzers-faq.md)
 - [Panoramica degli analizzatori .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Installare gli analizzatori .NET Compiler Platform](install-roslyn-analyzers.md)
-- [Configurare e usare le regole dell'analizzatore Roslyn](use-roslyn-analyzers.md)
+- [Installare gli analizzatori](install-roslyn-analyzers.md)
+- [Usare gli analizzatori](use-roslyn-analyzers.md)
 - [Usare set di regole per raggruppare regole di analisi codice](using-rule-sets-to-group-code-analysis-rules.md)

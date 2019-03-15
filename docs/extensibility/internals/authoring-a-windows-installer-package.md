@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635202"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871604"
 ---
 # <a name="author-a-windows-installer-package"></a>Creare un pacchetto Windows Installer
 Il modello di Windows Installer le unità di dati. Anziché scrivere uno script contenente le procedure per copiare i file e scrivere le voci del Registro di sistema, ad esempio, si creano righe e colonne nelle tabelle di database che contengono dati di file e Registro di sistema.
@@ -47,7 +47,7 @@ Un'ampia gamma di strumenti di installazione di terze parti offrono un ambiente 
 
    Il set di strumenti di Windows Installer XML (WiX) compila i pacchetti di Windows Installer dai file di origine XML. Il set di strumenti WiX è un progetto open source di Microsoft. È possibile scaricare il codice sorgente e file eseguibili da [set di strumenti Wix](http://sourceforge.net/projects/wix).
 
-   Per i prodotti commerciali integrano [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], vedere [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).
+   Per i prodotti commerciali integrano [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], vedere [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Vedere anche
 - [Installare i pacchetti VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

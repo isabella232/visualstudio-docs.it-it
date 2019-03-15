@@ -1,6 +1,6 @@
 ---
 title: 'CA2217: Non contrassegnare le enumerazioni con FlagsAttribute'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926814"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872288"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Non contrassegnare le enumerazioni con FlagsAttribute
 
@@ -36,7 +36,9 @@ ms.locfileid: "55926814"
 
 ## <a name="cause"></a>Causa
 
-Un'enumerazione visibile esternamente è contrassegnata con <xref:System.FlagsAttribute>e ne ha uno o più valori che non sono potenze di due o una combinazione degli altri valori definiti nell'enumerazione.
+Un'enumerazione è contrassegnata con <xref:System.FlagsAttribute> e ne ha uno o più valori che non sono potenze di due o una combinazione degli altri valori definiti nell'enumerazione.
+
+Per impostazione predefinita, questa regola solo esamina le enumerazioni visibile esternamente, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -50,17 +52,25 @@ Per correggere una violazione di questa regola, rimuovere <xref:System.FlagsAttr
 
 Non escludere un avviso da questa regola.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Esempio che non deve avere l'attributo
+## <a name="configurability"></a>Configurabilità
 
-Nell'esempio seguente viene illustrata un'enumerazione, `Color`, che contiene il valore 3. 3 non è una potenza di due o una combinazione di uno qualsiasi dei valori definiti. Il `Color` enumerazione non deve essere contrassegnato con <xref:System.FlagsAttribute>.
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (utilizzo). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Esempi
+
+Il codice seguente viene illustrata un'enumerazione, `Color`, che contiene il valore 3. 3 non è una potenza di due o una combinazione di uno qualsiasi dei valori definiti. Il `Color` enumerazione non deve essere contrassegnato con <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Esempio che deve avere l'attributo
-
-L'esempio seguente mostra un'enumerazione `Days`, che soddisfa i requisiti per essere contrassegnata con <xref:System.FlagsAttribute>.
+Il codice seguente illustra un'enumerazione `Days`, che soddisfa i requisiti per essere contrassegnata con <xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

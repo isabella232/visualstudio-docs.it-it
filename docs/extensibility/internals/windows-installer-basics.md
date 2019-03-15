@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b981824da3f5a5065cf129657158020893394749
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631640"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872953"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.
 
- Per una documentazione completa del programma di installazione di Windows, vedere l'argomento Platform SDK [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).
+ Per una documentazione completa del programma di installazione di Windows, vedere l'argomento Platform SDK [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).
 
 ## <a name="authoring-a-vspackage"></a>Creazione di un pacchetto VSPackage
  Programma di installazione di Windows Usa pacchetti di installazione, che contengono informazioni necessarie dal programma di installazione di Windows per installare, disinstallare o ripristinare un prodotto ed eseguire l'interfaccia utente (UI) di configurazione. Ogni pacchetto di installazione include un file con estensione msi, che contiene un database di installazione, un flusso di informazioni di riepilogo e i flussi di dati di varie parti dell'installazione. Per usare il programma di installazione, è necessario creare un'installazione. Poiché il programma di installazione consente di organizzare le installazioni sul concetto di componenti e archivia le informazioni relative all'installazione in un database relazionale, il processo di creazione di un pacchetto di installazione su vasta scala comporta i passaggi seguenti:

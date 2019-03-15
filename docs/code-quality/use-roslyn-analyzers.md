@@ -1,5 +1,5 @@
 ---
-title: Usare e configurare gli analizzatori di Roslyn
+title: Gravità della regola dell'analizzatore ed estinzione
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924604"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873502"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurare e usare le regole dell'analizzatore Roslyn
+# <a name="use-roslyn-analyzers"></a>Usare gli analizzatori di Roslyn
 
 Le regole dell'analizzatore di .NET compiler Platform ("Roslyn"), oppure *diagnostica*, analizzare il codice c# o Visual Basic mentre si digita. Ogni dato diagnostico ha uno stato di gravità e la soppressione predefinito che può essere sovrascritto per il progetto. Questo articolo illustra l'impostazione regola livello di gravità, usando i set di regole e le violazioni di disattivazione.
 
@@ -91,7 +91,7 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Per impostare regole gravità della regola set di file
 
-1. Aprire il set di regole file facendo doppio clic su esso in **Esplora soluzioni**, selezionando **Apri Set di regole attivo** nel menu di scelta rapida del **analizzatori** nodo, o tramite la selezione **Aperto** nel **analisi del codice** pagina delle proprietà per il progetto.
+1. Aprire il [set di regole](analyzer-rule-sets.md) file facendo doppio clic su esso in **Esplora soluzioni**, selezionando **Apri Set di regole attivo** nel menu di scelta rapida del **analizzatori** nodo, o selezionando **aperta** sul **analisi del codice** pagina delle proprietà per il progetto.
 
 1. Passare alla regola espandendo relativo assembly che lo contiene.
 

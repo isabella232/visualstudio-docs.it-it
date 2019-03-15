@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316769"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867981"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Creare un controllo della casella degli strumenti WPF
 Il modello di controllo della casella degli strumenti WPF (Windows Presentation Framework) consente di creare controlli WPF che vengono aggiunti automaticamente per il **casella degli strumenti** quando l'estensione viene installata. Questo argomento illustra come usare il modello per creare un **casella degli strumenti** controllo che è possibile distribuire ad altri utenti.
@@ -97,4 +97,4 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
 
 3. Caricare il *VSIX* file in una rete o a un sito Web.
 
-    Se si carica il file per il [Visual Studio gallery](http://go.microsoft.com/fwlink/?LinkID=123847) sito Web, gli altri utenti possono usare **Tools** > **estensioni e aggiornamenti** in Visual Studio per trovare il controllo online e installarlo.
+    Se si carica il file per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web, altri utenti potranno usare **strumenti** > **estensioni e aggiornamenti** in Visual Studio per trovare il controllo online e installarlo.

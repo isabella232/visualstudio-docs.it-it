@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccf63c4b28b8181bc3d652067ac6bdef1020f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946892"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873515"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 
@@ -25,9 +25,9 @@ ModelBus consente di creare un riferimento univoco a un modello o a un elemento 
 
 Per altre informazioni e per il codice di esempio, vedere:
 
--   [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK per Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Modeling SDK per Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -518,6 +518,6 @@ Quando si con il pulsante destro fare clic sul diagramma di definizione DSL, far
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Aprire un modello da File nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Uso di ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

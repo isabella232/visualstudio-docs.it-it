@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942778"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867448"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 
@@ -40,7 +40,7 @@ Tutte queste funzionalità possono essere personalizzate ed estese. Le estension
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Post di blog correlati](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[Post di blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 Per indicazioni sulla risoluzione dei problemi e alle tecniche più avanzate, visitare [forum di estendibilità degli strumenti di modellazione e DSL di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
 

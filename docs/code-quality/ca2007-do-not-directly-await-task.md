@@ -1,5 +1,5 @@
 ---
-title: "CA2007: Non attende direttamente un'attività"
+title: "CA2007: Non attendere direttamente un'attività"
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699680"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869289"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Non attende direttamente un'attività
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Non attendere direttamente un'attività
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Configurabilità
+
+È possibile configurare se si desidera escludere i metodi asincroni che non restituiscono un valore da questa regola. Per escludere questi tipi di metodi, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+È anche possibile configurare quali tipi di assembly a cui applicare questa regola di output. In un file con estensione editorconfig nel progetto, ad esempio, per questa regola si applicano solo al codice che produce un'applicazione console o una libreria di collegamento dinamico (vale a dire, non un'interfaccia utente app), aggiungere la coppia chiave-valore seguente:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604864"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868104"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.
@@ -195,7 +195,7 @@ ms.locfileid: "56604864"
 
 - Firma il project manager.
 
-  Per altre informazioni su questi componenti, vedere [informazioni sui componenti della procedura guidata](#wizardcomponents).
+  Per altre informazioni su questi componenti, vedere [informazioni sui componenti guidata](#understand-the-wizard-components).
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>Per definire gli ID di comando di SharePoint
 

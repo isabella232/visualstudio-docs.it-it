@@ -1,6 +1,6 @@
 ---
 title: 'CA1819: Le proprietà non devono restituire matrici'
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919209"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872743"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Le proprietà non devono restituire matrici
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919209"
 
 ## <a name="cause"></a>Causa
 
-Una proprietà pubblica o protetta in un tipo pubblico restituisce una matrice.
+Una proprietà restituisce una matrice.
+
+Per impostazione predefinita, questa regola cerca solo le proprietà visibili esternamente e i tipi, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -52,6 +54,16 @@ Per correggere una violazione di questa regola, verificare la proprietà di un m
 È possibile eliminare l'avviso se la proprietà fa parte di un [i dati oggetto di trasferimento](/previous-versions/msp-n-p/ff649585(v=pandp.10)) classe.
 
 In caso contrario, non escludere un avviso da questa regola.
+
+## <a name="configurability"></a>Configurabilità
+
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (prestazioni). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Esempio di violazione
 

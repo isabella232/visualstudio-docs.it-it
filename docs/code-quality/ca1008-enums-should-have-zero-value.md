@@ -1,6 +1,6 @@
 ---
 title: 'CA1008: Le enumerazioni devono avere valore zero'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955297"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868285"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Le enumerazioni devono avere valore zero
 
@@ -36,7 +36,9 @@ ms.locfileid: "55955297"
 
 ## <a name="cause"></a>Causa
 
-Un'enumerazione senza un applicato <xref:System.FlagsAttribute?displayProperty=fullName> non definisce un membro con valore uguale a zero; o un'enumerazione con un applicato <xref:System.FlagsAttribute> definisce un membro che ha un valore pari a zero, ma il nome non è 'None' o l'enumerazione definisce multiple con valori zero membri.
+Un'enumerazione senza un applicato <xref:System.FlagsAttribute?displayProperty=fullName> non definisce un membro che ha un valore pari a zero. O, un'enumerazione con un applicato <xref:System.FlagsAttribute> definisce un membro che ha un valore pari a zero, ma non il relativo nome è 'Nessuno'. In alternativa, l'enumerazione definisce più membri con valore zero.
+
+Per impostazione predefinita, questa regola solo esamina le enumerazioni visibile esternamente, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -51,6 +53,16 @@ Per correggere una violazione di questa regola per le enumerazioni senza attribu
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Non escludere un avviso da questa regola, ad eccezione delle enumerazioni flags attributi fornite in precedenza.
+
+## <a name="configurability"></a>Configurabilità
+
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca1008.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Esempio
 

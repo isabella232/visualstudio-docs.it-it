@@ -1,6 +1,6 @@
 ---
 title: 'CA1063: Implementare IDisposable correttamente'
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945755"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868314"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementare IDisposable correttamente
 
@@ -52,7 +52,9 @@ Il <xref:System.IDisposable?displayProperty=nameWithType> interfaccia non è imp
 
 Violazione di uno di questi modelli Attiva avviso CA1063.
 
-Ogni tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia deve fornire il proprio metodo Dispose (bool) di void virtuale protetto. Dispose () devono chiamare Dispose (true) e il finalizzatore deve chiamare Dispose (false). Se si crea un tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia, è necessario definire Dispose (bool) e chiamarlo. Per altre informazioni, vedere [pulire le risorse non gestite (Guida per .NET)](/dotnet/standard/garbage-collection/unmanaged) e [criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Ogni tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia deve fornire il proprio `protected virtual void Dispose(bool)` (metodo). `Dispose()` deve chiamare `Dipose(true)`, e deve chiamare il finalizzatore `Dispose(false)`. Se si crea un tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia, è necessario definire `Dispose(bool)` e chiamarlo. Per altre informazioni, vedere [pulire le risorse non gestite (Guida per .NET)](/dotnet/standard/garbage-collection/unmanaged) e [criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+
+Per impostazione predefinita, questa regola cerca solo tipi visibili esternamente, ma si tratta [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -83,6 +85,16 @@ Esaminare il codice e determinare quale delle seguenti soluzioni risolverà ques
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Non escludere un avviso da questa regola.
+
+## <a name="configurability"></a>Configurabilità
+
+Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Esempio di pseudocodice
 

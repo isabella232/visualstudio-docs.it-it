@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869895"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868035"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Creare modelli di elementi e modelli di progetto per elementi di progetto SharePoint
   Quando si definisce un tipo di elemento di progetto SharePoint personalizzato, è possibile associarlo a un modello di elemento o un modello di progetto. Questa associazione consente ad altri sviluppatori di usare l'elemento del progetto in Visual Studio. È anche possibile creare una procedura guidata per il modello.
@@ -72,7 +72,7 @@ ms.locfileid: "54869895"
 
 |File facoltativi|Descrizione|
 |-------------------|-----------------|
-|SharePoint (elementi di progetto)|È possibile includere uno o più file con estensione spdata che definiscono i tipi di elemento di progetto SharePoint. Ciascuna *spdata* file deve essere presente un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementazione in un assembly di estensione che è incluso nel pacchetto con il modello di progetto VSIX. Per altre informazioni, vedere [creazione di modelli di elemento](#creatingitemtemplates).<br /><br /> In genere, i progetti SharePoint includono almeno un elemento del progetto SharePoint. Tuttavia, ciò non necessario.|
+|SharePoint (elementi di progetto)|È possibile includere uno o più file con estensione spdata che definiscono i tipi di elemento di progetto SharePoint. Ciascuna *spdata* file deve essere presente un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementazione in un assembly di estensione che è incluso nel pacchetto con il modello di progetto VSIX. Per altre informazioni, vedere [creare i modelli di elemento](#createitemtemplates).<br /><br /> In genere, i progetti SharePoint includono almeno un elemento del progetto SharePoint. Tuttavia, ciò non necessario.|
 |*\<featureName>.feature*|Questo file definisce una funzionalità di SharePoint che viene usato per raggruppare diversi elementi di progetto per la distribuzione. Quando si utilizza la finestra di progettazione di funzionalità per personalizzare una funzionalità nel progetto, Visual Studio archivia i dati sulla funzionalità in questo file. Se si desidera raggruppare gli elementi del progetto in diverse funzionalità, è possibile includere più *feature* file.<br /><br /> Quando si crea un modello di progetto SharePoint personalizzato, si consiglia di includere solo il contenuto richiesto minimo in ognuno *feature* file e configurare le funzionalità usando le API nel <xref:Microsoft.VisualStudio.SharePoint.Features> dello spazio dei nomi in un estensione associata con il modello di progetto. In questo caso, il modello di progetto è protetto da future modifiche alla struttura del *feature* file. Per un esempio che illustra come creare un *feature* contenuto del file con solo il requisito minimo necessario, vedere [procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Se si desidera modificare una *feature* direttamente il file, è possibile verificare il contenuto usando lo schema nel *% programmi (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
 |*\<featureName>.Template.xml*|Questo file fornisce la base per il file manifesto della funzionalità (*feature. XML*) per ogni funzione che viene generato dal progetto. Se si desidera specificare un comportamento che non può essere modificata dagli utenti del tipo di progetto, è possibile aggiungere contenuto al file. Per altre informazioni, vedere [blocco predefinito: Le funzionalità](http://go.microsoft.com/fwlink/?LinkId=169183) e [feature. XML](http://go.microsoft.com/fwlink/?LinkId=177795) file.<br /><br /> Quando si compila un pacchetto della soluzione dal progetto, Visual Studio consente di unire il contenuto di ogni coppia di  *\<featureName > feature* file e  *\<featureName >. Template* i file in una funzionalità del file manifesto. Per altre informazioni sulla creazione di pacchetti della soluzione, vedere [come: Creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

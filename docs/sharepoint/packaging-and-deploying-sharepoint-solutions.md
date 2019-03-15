@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642833"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867564"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Il pacchetto e distribuire soluzioni di SharePoint
   In genere, una soluzione di SharePoint viene distribuita in un server SharePoint tramite file di pacchetto (con estensione wsp). È possibile usare Visual Studio per organizzare gli elementi di progetto SharePoint in funzionalità e creare un pacchetto per distribuire le funzionalità di SharePoint.
 
  In questo argomento vengono fornite le seguenti informazioni:
 
--   [Creazione di funzionalità e pacchetti](#Creating)
+-   [Creare funzionalità e pacchetti](#create-features-and-packages)
 
--   [Funzionalità e supporto dello strumento di creazione di pacchetti](#Tools)
+-   [Funzionalità e supporto dello strumento di creazione di pacchetti](#feature-and-packaging-tool-support)
 
--   [Distribuzione delle soluzioni SharePoint](#Deploying)
+-   [Distribuzione delle soluzioni SharePoint](#deploy-sharepoint-solutions)
 
--   [Distribuzione di file in soluzioni di SharePoint](#DeployingFiles)
+-   [Distribuire i file di soluzioni SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Creare funzionalità e pacchetti
  È possibile usare Visual Studio per raggruppare gli elementi di SharePoint correlati in una *funzionalità*. Ad esempio, una funzionalità per una definizione di elenco contatti può includere l'istanza di elenco e la definizione di elenco. È possibile combinare questi due elementi in una singola funzionalità per garantire una distribuzione. Per altre informazioni sulle funzionalità, vedere [blocco predefinito: Funzionalità](http://go.microsoft.com/fwlink/?LinkID=169183).
