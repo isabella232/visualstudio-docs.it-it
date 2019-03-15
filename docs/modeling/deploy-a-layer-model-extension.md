@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915621"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983104"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Distribuire un'estensione del modello di livello
 
@@ -37,9 +37,19 @@ L'estensione viene compilata in un file VSIX, che è possibile installare in alt
 
 ### <a name="to-uninstall-the-extension"></a>Per disinstallare l'estensione
 
-1.  In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti**.
+::: moniker range="vs-2017"
 
-2.  Fare clic sul nome dell'estensione e quindi fare clic su **Disinstalla**.
+1. In Visual Studio, scegliere **degli strumenti** > **estensioni e aggiornamenti**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio, scegliere **Extensions** > **Gestisci estensioni**.
+
+::: moniker-end
+
+2. Fare clic sul nome dell'estensione e quindi fare clic su **Disinstalla**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Installare un'estensione in Team Foundation Server
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222935"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982935"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installare gli analizzatori .NET Compiler Platform
 
@@ -37,12 +37,27 @@ Visual Studio include un set di base di .NET Compiler Platform (*Roslyn*) gli an
 
 ## <a name="to-install-vsix-analyzers"></a>Per installare gli analizzatori VSIX
 
+::: moniker range="vs-2017"
+
 1. In Visual Studio, selezionare **degli strumenti** > **estensioni e aggiornamenti**.
 
    Verrà visualizzata la finestra di dialogo **Estensioni e aggiornamenti**.
 
    > [!NOTE]
    > In alternativa, è possibile trovare e scaricare l'estensione di Analizzatore direttamente dal [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio, selezionare **Extensions** > **Gestisci estensioni**.
+
+   Il **gestire le estensioni** verrà visualizzata la finestra di dialogo.
+
+   > [!NOTE]
+   > In alternativa, è possibile trovare e scaricare l'estensione di Analizzatore direttamente dal [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Espandere **Online** nel riquadro a sinistra e quindi selezionare **Visual Studio Marketplace**.
 
@@ -64,7 +79,17 @@ Visual Studio include un set di base di .NET Compiler Platform (*Roslyn*) gli an
 
 8. Aprire di nuovo Visual Studio.
 
+::: moniker range="vs-2017"
+
 Se si vuole verificare se l'estensione è installata, selezionare **degli strumenti** > **estensioni e aggiornamenti**. Nel **estensioni e aggiornamenti** finestra di dialogo, seleziona la **installato** categorie a sinistra e quindi cercare l'estensione in base al nome.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se si vuole verificare se l'estensione è installata, selezionare **Extensions** > **Gestisci estensioni**. Nel **gestire le estensioni** finestra di dialogo, seleziona la **installato** categorie a sinistra e quindi cercare l'estensione in base al nome.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Passaggi successivi
 
