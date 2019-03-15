@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270576"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983455"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installare gli analizzatori FxCop in Visual Studio
 
@@ -54,12 +54,27 @@ Usare le linee guida seguenti per determinare quale versione del pacchetto da in
 
 In Visual Studio 2017 versione 15.5 e successive, è possibile installare il [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) estensione che contiene tutti gli analizzatori FxCop per i progetti gestiti.
 
+::: moniker range="vs-2017"
+
 1. In Visual Studio, selezionare **degli strumenti** > **estensioni e aggiornamenti**.
 
    Verrà visualizzata la finestra di dialogo **Estensioni e aggiornamenti**.
 
    > [!NOTE]
    > In alternativa, scaricare l'estensione direttamente dal [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio, selezionare **Extensions** > **Gestisci estensioni**.
+
+   Il **gestire le estensioni** verrà visualizzata la finestra di dialogo.
+
+   > [!NOTE]
+   > In alternativa, scaricare l'estensione direttamente dal [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Espandere **Online** nel riquadro a sinistra e quindi selezionare **Visual Studio Marketplace**.
 
@@ -83,7 +98,17 @@ In Visual Studio 2017 versione 15.5 e successive, è possibile installare il [Mi
 
 1. Aprire di nuovo Visual Studio.
 
+::: moniker range="vs-2017"
+
 Se si vuole verificare se l'estensione è installata, selezionare **degli strumenti** > **estensioni e aggiornamenti**. Nel **estensioni e aggiornamenti** finestra di dialogo, seleziona la **installato** categorie a sinistra e quindi cercare l'estensione in base al nome.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se si vuole verificare se l'estensione è installata, selezionare **Extensions** > **Gestisci estensioni**. Nel **gestire le estensioni** finestra di dialogo, seleziona la **installato** categorie a sinistra e quindi cercare l'estensione in base al nome.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 
