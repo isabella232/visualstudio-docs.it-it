@@ -10,26 +10,26 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927282"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58070217"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: Usare Progettazione XML Schema con i valori letterali XML
 
 In questo argomento viene descritto come visualizzare uno schema associato a un valore letterale XML in un progetto di Visual Basic.
 
-## <a name="to-create-a-new-visual-basic-console-application-project"></a>Per creare un nuovo progetto di applicazione console di Visual Basic
+## <a name="create-a-new-visual-basic-project"></a>Creare un nuovo progetto di Visual Basic
 
-1.  Avviare Visual Studio.
+1.  Aprire Visual Studio.
 
-2.  Dal **File** dal menu **New**, quindi selezionare **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** . Per la **tipi di progetto**, selezionare **altri linguaggi** e quindi selezionare **Visual Basic**. Per la **modelli**, selezionare applicazione Console. Quindi digitare `XMLLiterals` nella **Name** campo e un percorso di progetto nel **percorso** campo. Fare clic su **OK**.
+2. Creare una nuova di Visual Basic **applicazione Console** progetto denominato **XMLLiterals**.
 
-     Il nuovo progetto è creato. Il progetto XMLLiterals contiene un file di origine Visual Basic, *Module1.vb*.
+     Il nuovo progetto contiene un file di origine Visual Basic, *Module1.vb*.
 
-## <a name="to-add-an-existing-xsd-file-to-the-project"></a>Per aggiungere un file XSD esistente al progetto
+## <a name="add-an-existing-xsd-file"></a>Aggiungere un file XSD esistente
 
 1.  Aprire un nuovo file di testo nel blocco note. Copiare il codice di esempio di XML Schema da [schema di ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md) e incollarlo nel file.
 
@@ -39,7 +39,9 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
      Il progetto XMLLiterals contiene ora due file: *Module1.vb* e *Purchaseorderschema*.
 
-## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Per aggiungere codice Visual Basic con un valore letterale XML, in base al file XSD incluso nel progetto
+## <a name="add-code"></a>Aggiungere il codice
+
+Per aggiungere il codice Visual Basic con un valore letterale XML, in base al file XSD incluso nel progetto:
 
 1. Sostituire il codice nel *Module1.vb* file con il codice seguente:
 
@@ -72,4 +74,4 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 2. Fare doppio clic su qualsiasi nodo XML in un valore letterale XML o un'importazione di spazi dei nomi XML e selezionare **Mostra in Schema Explorer**.
 
-    Il **XML Schema Explorer** viene visualizzato accanto a un file di Visual Basic che contiene il valore letterale XML associato al set XML schema.
+   Il **XML Schema Explorer** viene visualizzato accanto a un file di Visual Basic che contiene il valore letterale XML associato al set XML schema.
