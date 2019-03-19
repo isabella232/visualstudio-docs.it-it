@@ -2,7 +2,6 @@
 title: IActiveScriptParseProcedure::ParseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ff49652897c106c1629d5f7b3133a66ccf7c981
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 98425d12c53c61cb3f7557d1243cc757c326a89a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093405"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157555"
 ---
 # <a name="iactivescriptparseprocedureparseproceduretext"></a>IActiveScriptParseProcedure::ParseProcedureText
 Analizza la procedura di codice specificato e aggiunge la procedura per lo spazio dei nomi.  
@@ -73,7 +72,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  [in] Flag associato con la procedura. Può essere una combinazione dei valori seguenti:  
   
-|Value|Significato|  
+|Valore|Significato|  
 |-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|Indica che il codice in `pstrCode` è un'espressione che rappresenta il valore restituito della procedura. Per impostazione predefinita, il codice può contenere un'espressione, un elenco di istruzioni o qualsiasi elemento altrimenti consentito in una procedura per il linguaggio di scripting.|  
 |SCRIPTPROC_IMPLICIT_THIS|Indica che il `this` puntatore è incluso nell'ambito della procedura.|  

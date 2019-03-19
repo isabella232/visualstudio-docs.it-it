@@ -2,7 +2,6 @@
 title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fa444573e418de1a59219eb48b09e64b08d859a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 16fb941a91482c548284dc3d4317a472fd9be641
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089895"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145902"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
 Aggiunge un provider di enumeratore frame dello stack per questa applicazione.  
@@ -55,6 +54,6 @@ HRESULT AddStackFrameSniffer(
  Sebbene motori di linguaggio chiamano in genere questo metodo per esporre i rispettivi stack frame per il debugger, è possibile che altre entità per esporre gli stack frame.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [Interfaccia IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

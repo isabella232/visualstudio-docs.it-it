@@ -1,6 +1,6 @@
 ---
 title: Esercitazione di Hello World estensione | Microsoft Docs
-ms.date: 07/10/2017
+ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688342"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160706"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Creare la prima estensione: Hello World
 
@@ -35,52 +35,74 @@ In questo esempio si userà Visual c# per aggiungere che un pulsante di menu per
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di iniziare, assicurarsi di aver installato il **sviluppo di estensioni di Visual Studio** carico di lavoro che include il modello di VSIX verrà necessarie e codice di esempio.
+Prima di iniziare, assicurarsi di aver installato il **sviluppo di estensioni di Visual Studio** carico di lavoro, che include il modello di VSIX verrà necessarie e codice di esempio.
 
 > [!NOTE]
 > È possibile usare qualsiasi edizione di Visual Studio (Community, Professional o Enterprise) per creare un progetto di estendibilità di Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Creare un progetto di estensibilità
 
-Passaggio 1. Dal **File** menu, fare clic su **nuovo progetto**. Nella parte inferiore della schermata, immettere il nome del progetto.
+::: moniker range="vs-2017"
 
-Passaggio 2. Dal **modelli** dal menu fare clic su **Visual c#**, fare clic su **estendibilità**, quindi fare clic su **progetto VSIX**.
+Passaggio 1. Dal **File** dal menu **nuovo progetto**.
+
+Passaggio 2. Nella casella di ricerca in alto a destra, digitare "vsix" e selezionare l'oggetto visivo C# **progetto VSIX**. Immettere "HelloWorld" per il **Name** nella parte inferiore della finestra di dialogo e selezionare **OK**.
 
 ![nuovo progetto](media/hello-world-new-project.png)
 
 Si noterà ora la pagina introduttiva e alcune risorse di esempio.
 
-::: moniker range="vs-2017"
-
 Se è necessario lasciare questa esercitazione ed è tornato a esso, è possibile trovare il nuovo progetto HelloWorld nel **pagina iniziale** nel **recenti** sezione.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Passaggio 1. Dal **File** dal menu **nuovo progetto**. Cercare "vsix" e selezionare l'oggetto visivo C# **progetto VSIX** e quindi **successiva**.
+
+Passaggio 2. Immettere "HelloWorld" per il **nome progetto** e selezionare **crea**.
+
+![nuovo progetto](media/hello-world-new-project-2019.png)
+
+Il progetto HelloWorld in dovrebbe **Esplora soluzioni**.
 
 ::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Aggiungere un comando personalizzato
 
-Passaggio 1. Se si seleziona il manifesto, è possibile vedere quali sono le opzioni sono modificabili, per istanza, i metadati, descrizione e versione.
+Passaggio 1. Se si seleziona il *vsixmanifest* file manifesto, è possibile visualizzare quali opzioni sono modificabili, ad esempio descrizione, autore e versione.
 
-Passaggio 2. Fare clic sul progetto (non sulla soluzione). Nel menu di scelta rapida, fare clic su **Add**, quindi fare clic su **nuovo elemento**.
+Passaggio 2. Fare clic sul progetto (non sulla soluzione). Nel menu di scelta rapida, selezionare **Add**e quindi **nuovo elemento**.
 
-Passaggio 3. Selezionare il **estendibilità** sezione e quindi fare clic su **comando personalizzato**.
+Passaggio 3. Selezionare il **estendibilità** sezione e quindi scegliere **comando personalizzato**.
 
-Passaggio 4. Nel **Name** campo nella parte inferiore, assegnargli un nome, ad esempio *Command.cs*.
+Passaggio 4. Nel **Name** campo nella parte inferiore, immettere un nome di file, ad esempio *Command.cs*.
 
 ![comando personalizzato](media/hello-world-custom-command.png)
 
-Nuovo comando è elencato nella **Esplora soluzioni** sotto il **risorse** ramo. Si tratta inoltre dove è possibile trovare altri file correlati al comando, ad esempio i file PNG e ICO se si vuole modificare l'immagine.
+Il nuovo file di comando è visibile nel **Esplora soluzioni**. Sotto il **risorse** nodo, sono disponibili altri file correlati ai tuoi ordini. Ad esempio, se si vuole modificare l'immagine, il file PNG viene qui.
 
 ## <a name="modify-the-source-code"></a>Modificare il codice sorgente
 
-A questo punto, il pulsante che si sta aggiungendo è piuttosto generico. È possibile modificare il file VSCT CS se si desidera apportare modifiche.
+A questo punto, il comando e pulsante testo viene generato automaticamente e non è molto interessante. È possibile modificare il file VSCT CS se si desidera apportare modifiche.
 
-* Il file VSCT è dove è possibile rinominare i comandi, nonché definire in cui escono nel sistema di comandi di Visual Studio. Durante l'esplorazione file VSCT, si noterà una grande quantità di codice commentato che spiega quali ogni sezione di controlli di codice.
+* Il file VSCT è dove è possibile rinominare i comandi, nonché definire in cui escono nel sistema di comandi di Visual Studio. Durante l'esplorazione file VSCT, si noterà commenti che spiegano quali ogni sezione di codice controlli VSCT.
 
 * Il file CS è che consente di definire le azioni, ad esempio il gestore di clic.
+
+::: moniker range="vs-2017"
 
 Passaggio 1. Nelle **Esplora soluzioni**, trovare il file VSCT per il nuovo comando. In questo caso, verrà chiamato *CommandPackage.vsct*.
 
 ![comando pacchetto vsct](media/hello-world-command-package-vsct.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Passaggio 1. Nelle **Esplora soluzioni**, trovare il file VSCT per il pacchetto di estensione per Visual Studio. In questo caso, verrà chiamato *HelloWorldPackage.vsct*.
+
+::: moniker-end
 
 Passaggio 2. Modifica il `ButtonText` parametro per `Say Hello World!`.
 
@@ -96,14 +118,15 @@ Passaggio 2. Modifica il `ButtonText` parametro per `Say Hello World!`.
   ...
 ```
 
-Passaggio 3. Tornare alla **Esplora soluzioni** e trovare il *Command.cs* file. Modificare la stringa `message` per il comando `string.Format(..)` a `Hello World!`.
+Passaggio 3. Tornare alla **Esplora soluzioni** e trovare il *Command.cs* file. Nel `Execute` metodo, modificare la stringa `message` dalla `string.Format(..)` a `Hello World!`.
 
 ```csharp
   ...
-  private void MenuItemCallback(object sender, EventArgs e)
+  private void Execute(object sender, EventArgs e)
   {
+    ThreadHelper.ThrowIfNotOnUIThread();
     string message = "Hello World!";
-    string title = "Command1";
+    string title = "Command";
 
     // Show a message box to prove we were here
     VsShellUtilities.ShowMessageBox(
@@ -123,11 +146,15 @@ Assicurarsi di salvare le modifiche a ogni file.
 
 È ora possibile eseguire il codice sorgente nell'istanza sperimentale di Visual Studio.
 
-Passaggio 1. Fare clic su **avviare** sulla barra degli strumenti. Viene compilato il progetto e avvia il debugger, avviando una nuova istanza di Visual Studio denominato il **istanza sperimentale**.
+Passaggio 1. Premere **F5** per eseguire il **Avvia debug** comando. Questo comando compila il progetto e avviare il debugger, avviando una nuova istanza di Visual Studio denominato il **istanza sperimentale**.
+
+::: moniker range="vs-2017"
 
 Si noterà che le parole **istanza sperimentale** nella barra del titolo di Visual Studio.
 
 ![sulla barra del titolo istanza sperimentale](media/hello-world-exp-instance.png)
+
+::: moniker-end
 
 Passaggio 2. Nel **degli strumenti** dal menu del **istanza sperimentale**, fare clic su **Say Hello World!**.
 
@@ -141,4 +168,5 @@ Dopo avere appreso le nozioni di base dell'utilizzo di Extensibility di Visual S
 
 * [Iniziare a sviluppare estensioni di Visual Studio](starting-to-develop-visual-studio-extensions.md) -esempi, esercitazioni. e la pubblicazione dell'estensione
 * [Novità in Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) -nuove funzionalità di estendibilità in Visual Studio 2017
+* [Novità in Visual Studio 2019 SDK](whats-new-visual-studio-2019-sdk.md) -nuove funzionalità di estendibilità in Visual Studio 2019
 * [All'interno di Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -informazioni dettagliate su Extensibility di Visual Studio

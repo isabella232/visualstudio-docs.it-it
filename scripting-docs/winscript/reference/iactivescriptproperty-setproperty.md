@@ -2,7 +2,6 @@
 title: IActiveScriptProperty::SetProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090772"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159387"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Imposta la proprietà specificata dal parametro.  
@@ -53,7 +52,7 @@ HRESULT SetProperty(
   
  I valori consentiti per `dwProperty` sono descritti nella tabella seguente.  
   
-|Costante|Value|Significato|  
+|Costante|Valore|Significato|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Forza il motore di scripting per dividere in modalità di numero intero anziché in modalità del punto a virgola mobile. Il valore predefinito è `False`.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Consente la funzione di confronto di stringa del motore di scripting da sostituire.|  

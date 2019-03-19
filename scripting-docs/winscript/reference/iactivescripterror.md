@@ -2,7 +2,6 @@
 title: IActiveScriptError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 540a4a338ae8ebfcacae66b1890075c20bdee086
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347099"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144420"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 Oggetto che implementa questa interfaccia viene passato per il [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) metodo ogni volta che il motore di scripting rileva un errore non gestito. L'host chiama metodi su questo oggetto per ottenere informazioni sull'errore che si è verificato.  

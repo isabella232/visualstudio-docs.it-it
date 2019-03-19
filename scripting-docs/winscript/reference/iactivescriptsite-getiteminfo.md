@@ -2,7 +2,6 @@
 title: 'Iactivescriptsite:: GetItemInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095888"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148685"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 Consente al motore di scripting ottenere informazioni su un elemento aggiunto con il [IActiveScript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) (metodo).  
@@ -46,7 +45,7 @@ HRESULT GetItemInfo(
  `dwReturnMask`  
  [in] Maschera di bit che specifica le informazioni sull'elemento devono essere restituite. Il motore di scripting deve richiedere la quantità minima di informazioni possibili perché alcuni dei parametri restituiti (ad esempio, `ITypeInfo`) può richiedere molto tempo per caricare o generare. Può essere una combinazione dei valori seguenti:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |SCRIPTINFO_IUNKNOWN|Restituisce il `IUnknown` interfaccia per questo elemento.|  
 |SCRIPTINFO_ITYPEINFO|Restituisce il `ITypeInfo` interfaccia per questo elemento.|  
