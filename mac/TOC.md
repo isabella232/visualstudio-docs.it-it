@@ -33,7 +33,7 @@
 ## [Selezione blocco](block-selection.md)
 ## [Temi dell'editor](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Tasti di scelta rapida comuni](keyboard-shortcuts.md)
+## [Tasti di scelta rapida predefiniti](keyboard-shortcuts.md)
 
 # [Debug](debugging.md)
 ## [Visualizzazioni dei dati](data-visualizations.md)
