@@ -2,7 +2,6 @@
 title: IDispatchEx::InvokeEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e631ecca1181a25fa3cf419f5fc96666f0db3cd6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086528"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157347"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 Fornisce l'accesso a proprietà e metodi esposti da un `IDispatchEx` oggetto.  
@@ -52,11 +51,11 @@ HRESULT InvokeEx(
  `wFlags`  
  I valori per le note legali `wFlags` sono:  
   
- DISPATCH_PROPERTYGET &AMP;#124; DISPATCH_METHOD &AMP;#124; DISPATCH_PROPERTYPUT &AMP;#124; DISPATCH_PROPERTYPUTREF &AMP;#124; DISPATCH_CONSTRUCT  
+ DISPATCH_PROPERTYGET &#124; DISPATCH_METHOD &#124; DISPATCH_PROPERTYPUT &#124; DISPATCH_PROPERTYPUTREF &#124; DISPATCH_CONSTRUCT  
   
  Flag che descrivono il contesto del `InvokeEx` chiamare:  
   
-|Value|Significato|  
+|Valore|Significato|  
 |-----------|-------------|  
 |DISPATCH_METHOD|Come un metodo viene richiamato il membro. Se una proprietà ha lo stesso nome, può essere impostato sia ciò che il flag DISPATCH_PROPERTYGET (definito da `IDispatch`).|  
 |DISPATCH_PROPERTYGET|Il membro viene recuperato come un proprietà o un membro dati (definito da `IDispatch`).|  

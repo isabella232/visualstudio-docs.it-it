@@ -2,7 +2,6 @@
 title: Struttura PROFILER_HEAP_OBJECT | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c8682cd54b10144800f17cab3a8a03ea8169889
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a1652c6ebffff88782ffcc879158a5142f22395d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093132"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151193"
 ---
 # <a name="profilerheapobject-structure"></a>Struttura PROFILER_HEAP_OBJECT
 Rappresenta gli oggetti dell'heap raccolti dal [metodo IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  
@@ -34,7 +33,7 @@ typedef struct _PROFILER_HEAP_OBJECT
   
 |Member|Tipo|Descrizione|  
 |------------|----------|-----------------|  
-|ObjectId|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|ID dell'oggetto heap.|  
+|objectId|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|ID dell'oggetto heap.|  
 |externalObjectAddress|[Tipo PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|L'indirizzo oggetto esterno di un oggetto, ad esempio un oggetto C++ con allocazione, che è all'esterno dell'heap JavaScript.|  
 |typeNameId|[Tipo PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|L'ID del nome del tipo di oggetto di heap, recuperato dal [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md). Solo uno dei `externalObjectAddress` oppure `typeName` è presente in base il `flags` valore.|  
 |flag|[Enumerazione PROFILER_HEAP_OBJECT_FLAGS](../../winscript/reference/profiler-heap-object-flags-enumeration.md)|Flag che contengono informazioni di base sull'oggetto heap.|  

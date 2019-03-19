@@ -2,7 +2,6 @@
 title: IActiveScript::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348803"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157049"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Fa sì che il motore di scripting abbandonare tutti gli script attualmente caricato, perdono il proprio stato e rilasciare eventuali puntatori a interfaccia che dispone ad altri oggetti, quindi immettere uno stato chiuso. Sink di evento, il testo script eseguito immediatamente e le chiamate alle macro che sono già in corso vengono completati prima i cambiamenti di stato (usare [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread in esecuzione di script). Questo metodo deve essere chiamato dall'host di creazione prima del rilascio dell'interfaccia per evitare problemi relativi ai riferimenti circolari.  
@@ -37,7 +36,7 @@ HRESULT Close(void);
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
   
-|Value|Significato|  
+|Valore|Significato|  
 |-----------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di script era già in stato di chiusura).|  

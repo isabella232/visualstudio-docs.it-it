@@ -2,7 +2,6 @@
 title: IDebugApplication::HandleRuntimeError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097318"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150101"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Fa sì che il thread corrente bloccare e invia una notifica dell'errore per l'IDE di debug.  
@@ -59,7 +58,7 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -70,7 +69,7 @@ HRESULT HandleRuntimeError(
 >  Mentre nell'errore in fase di esecuzione, il motore del linguaggio può essere chiamato dal thread di eseguire tali attività come enumerare gli stack frame o valutare le espressioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
  [Interfaccia IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
  [Enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   

@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601023"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146526"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti usano elementi di progetto che rappresentano file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta anche progetti i cui dati sono non basate su file. Entrambi i file di proprietà del progetto e il file di progetto devono essere persistente. L'IDE indica il progetto per salvare se stesso o un elemento del progetto.
 
- Modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi di progetto in base ai requisiti del tipo di progetto specifico. Questi modelli in un secondo momento possono essere salvati come file di progetto e gestiti dall'IDE tramite la soluzione. Per altre informazioni, vedere [creazione di istanze da usando progetto le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluzioni](../../extensibility/internals/solutions.md).
+ Modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi di progetto in base ai requisiti del tipo di progetto specifico. Questi modelli in un secondo momento possono essere salvati come file di progetto e gestiti dall'IDE tramite la soluzione. Per altre informazioni, vedere [creazione di istanze da usando progetto le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluzioni](../../extensibility/internals/solutions-overview.md).
 
  Elementi di progetto possono essere basata su file o non basate su file:
 

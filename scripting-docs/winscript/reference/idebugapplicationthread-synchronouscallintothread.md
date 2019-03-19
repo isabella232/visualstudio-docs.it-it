@@ -2,7 +2,6 @@
 title: IDebugApplicationThread::SynchronousCallIntoThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5e25f42b2bce66cf3bb7ab3e69d3711e2526ae1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f0c9b89332b55a180220820e8ffe1e030d37a848
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097058"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146708"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
 Fornisce un meccanismo per il chiamante può eseguire codice nel thread dell'applicazione.  
@@ -63,5 +62,5 @@ HRESULT SynchronousCallIntoThread(
  Questo metodo fornisce un meccanismo per il chiamante deve eseguire il codice nel thread del debugger. Gli host e motori di linguaggio usano in genere questo metodo per implementare gli oggetti a thread libero sopra le implementazioni a thread singole.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)   
+ [IDebugApplicationThread Interface](../../winscript/reference/idebugapplicationthread-interface.md)   
  [Interfaccia IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)

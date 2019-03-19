@@ -2,7 +2,6 @@
 title: IDebugApplicationNodeEvents::onDetach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86a19a0c8ff2ce64cf524ae9b5f0ad258409f2df
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9162175727d439a6370071a5f3c9fa4c7ca88ee5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094471"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156879"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
 Gestisce un evento per indicare che l'oggetto nodo dell'applicazione di debug è stato scollegato da un nodo padre.  
@@ -50,6 +49,6 @@ HRESULT onDetach();
  Gli implementatori del `IDebugApplicationNode` interfaccia generare questo evento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+ [IDebugApplicationNodeEvents Interface](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
  [Interfaccia IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

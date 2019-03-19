@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621006"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146344"
 ---
 # <a name="checklist-create-new-project-types"></a>Elenco di controllo: Creare nuovi tipi di progetto
 È necessario completare diverse attività per creare un nuovo tipo di progetto. Elenco di controllo seguente offre una Guida alle attività:
@@ -37,7 +37,7 @@ ms.locfileid: "56621006"
 
     -   Gestione elementi di progetto, inclusa l'aggiunta del progetto per la **nuovo progetto** nella finestra di dialogo. Per altre informazioni, vedere [aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md) e [registrare i modelli di progetto ed elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Persistenza dello stato di progetto e singoli elementi. Per altre informazioni, vedere [aperte e salvare elementi del progetto](../../extensibility/internals/opening-and-saving-project-items.md). Per il salvataggio permanente di informazioni sulla soluzione, vedere [soluzioni](../../extensibility/internals/solutions.md).
+    -   Persistenza dello stato di progetto e singoli elementi. Per altre informazioni, vedere [aperte e salvare elementi del progetto](../../extensibility/internals/opening-and-saving-project-items.md). Per il salvataggio permanente di informazioni sulla soluzione, vedere [soluzioni](../../extensibility/internals/solutions-overview.md).
 
     -   Proprietà indipendenti dalla configurazione da visualizzare nella finestra Proprietà. Per altre informazioni, vedere [estendere proprietà](../../extensibility/internals/extending-properties.md).
 

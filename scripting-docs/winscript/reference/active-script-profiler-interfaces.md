@@ -2,7 +2,6 @@
 title: Interfacce di Profiler di Script ActiveX | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8532c5f7c490237994332e38b8f6fe97a8235bad
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346098"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160563"
 ---
 # <a name="active-script-profiler-interfaces"></a>Interfacce del profiler dello script ActiveX
 Le interfacce attive del profiler dello script consentono di ricevere gli eventi di profilatura dal motore di [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  

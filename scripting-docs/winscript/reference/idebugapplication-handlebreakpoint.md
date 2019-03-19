@@ -2,7 +2,6 @@
 title: IDebugApplication::HandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3b05288a8863b2c555493d4a3f7ea8e2b7537d5a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095368"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146721"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Fa sì che il thread corrente bloccare e invia una notifica del punto di interruzione per il debug dell'IDE.  
@@ -60,7 +59,7 @@ HRESULT HandleBreakPoint(
  Questo metodo determina `IApplicationDebugger::onHandleBreakPoint` da chiamare.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
  [Enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)   
  [Enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)

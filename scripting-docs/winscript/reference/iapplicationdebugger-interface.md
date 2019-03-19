@@ -2,7 +2,6 @@
 title: Interfaccia IApplicationDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a1c0cc89c61665ce468457b64bbdd4b5d293649b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348321"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144251"
 ---
 # <a name="iapplicationdebugger-interface"></a>Interfaccia IApplicationDebugger
 L'interfaccia primaria esposta da un debugger. Oltre ai metodi ereditati da `IUnknown`, il `IApplicationDebugger` interfaccia espone i metodi seguenti.  
