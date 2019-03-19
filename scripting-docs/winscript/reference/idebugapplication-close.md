@@ -2,7 +2,6 @@
 title: IDebugApplication::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a861e2cbdfedc80747e9390316c47da43b71656
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8d93262e5875d5b51f7cf306409609671e8157cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087412"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153448"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
 Fa sì che questa applicazione per rilasciare tutti i riferimenti e passare a uno stato inattivo.  
@@ -50,5 +49,5 @@ HRESULT Close();
  Questo metodo determina `IApplicationDebugger::onClose` da chiamare.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

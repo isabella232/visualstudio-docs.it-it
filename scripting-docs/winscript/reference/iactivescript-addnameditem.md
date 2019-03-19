@@ -1,8 +1,7 @@
 ---
-title: 'IActiveScript:: Addnameditem | Microsoft Docs'
+title: IActiveScript::AddNamedItem | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae4a84821d0db226cbecb01e329e4f2941a675d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095095"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151856"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
 Aggiunge il nome di un elemento di livello radice per lo spazio dei nomi del motore di script. Un elemento di livello radice è un oggetto con proprietà e metodi, un'origine evento o tutti e tre.  
@@ -44,7 +43,7 @@ HRESULT AddNamedItem(
  `dwFlags`  
  [in] Flag associato a un elemento. Può essere una combinazione dei valori seguenti:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |SCRIPTITEM_CODEONLY|Indica che l'elemento denominato rappresenta un oggetto di solo codice, e che l'host non ha `IUnknown` da associare a questo oggetto di solo codice. L'host ha solo un nome per questo oggetto. Nei linguaggi orientate a oggetti, ad esempio C++, questo flag creerà una classe. Non tutti i linguaggi supportano questo flag.|  
 |SCRIPTITEM_GLOBALMEMBERS|Indica che l'elemento è una raccolta di proprietà globali e i metodi associati allo script. In genere, un motore di script ignora il nome dell'oggetto (diverso da quello allo scopo di utilizzarlo come un cookie per la [iactivescriptsite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) metodo, o per la risoluzione dell'ambito esplicito) ed esporre i relativi membri come globale le variabili e metodi. In questo modo l'host estendere la libreria (funzioni di runtime e così via) disponibile per lo script. Si è lasciato al motore di script per gestire con il nome è in conflitto (ad esempio, quando due elementi SCRIPTITEM_GLOBALMEMBERS dispongono di metodi con lo stesso nome), anche se non deve essere restituito un errore a causa di questa situazione.|  

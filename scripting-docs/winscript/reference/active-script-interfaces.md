@@ -2,7 +2,6 @@
 title: Interfacce Script ActiveX | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,12 +14,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 4456be25eaba28fef1d211d86cf12836a7840b5d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344330"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150287"
 ---
 # <a name="active-script-interfaces"></a>Interfacce Script ActiveX
 Il file di intestazione ActivScp.h fornisce le interfacce, enumerazioni e codici di errore elencati in questa sezione.  

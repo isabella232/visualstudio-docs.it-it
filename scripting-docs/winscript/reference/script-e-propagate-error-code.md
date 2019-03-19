@@ -2,7 +2,6 @@
 title: Errore Script_e_propagate | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb705c64a4177cf25ffd1983fe208506a3362857
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346358"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155982"
 ---
 # <a name="scriptepropagate-error-code"></a>Codice di errore SCRIPT_E_PROPAGATE
 Un errore di script viene propagato al chiamante, che potrebbe trovarsi in un altro thread. L'host deve superare il codice di errore al chiamante.  
