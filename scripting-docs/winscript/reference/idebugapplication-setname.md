@@ -1,8 +1,7 @@
 ---
-title: 'Idebugapplication:: SetName | Microsoft Docs'
+title: IDebugApplication::SetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35f2014b25f752145766aaeb166b2ba1a766ca44
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4ac0b253d5193fc507e2d74a2d9dbcdd893e9fdb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094406"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148490"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Imposta il nome dell'applicazione.  
@@ -53,5 +52,5 @@ HRESULT SetName(
  Questo metodo deve essere chiamato prima di chiamare il `IProcessDebugManager::AddApplication` (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)
