@@ -1,6 +1,6 @@
 ---
 title: Analizzare l'utilizzo della memoria senza debug | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615917"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873454"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
@@ -72,7 +72,7 @@ Una volta completata la raccolta dei dati, lo strumento **Utilizzo memoria** arr
 
 I numeri dei riquadri **Snapshot** mostrano i byte e gli oggetti in memoria quando è stato creato ogni snapshot e la differenza tra lo snapshot e quello precedente.
 
-I numeri sono collegamenti che aprono visualizzazioni report dettagliate di **Utilizzo memoria** in nuove finestre di Visual Studio. Un [report dettagli dello snapshot](#snapshot-details-report) mostra i tipi e le istanze in uno snapshot. Un [report differenze degli snapshot](#snapshot-difference-diff-reports) confronta i tipi e le istanze in due snapshot.
+I numeri sono collegamenti che aprono visualizzazioni report dettagliate di **Utilizzo memoria** in nuove finestre di Visual Studio. Un [report dettagli dello snapshot](#snapshot-details-reports) mostra i tipi e le istanze in uno snapshot. Un [report differenze degli snapshot](#snapshot-difference-diff-reports) confronta i tipi e le istanze in due snapshot.
 
   ![Collegamenti delle visualizzazioni snapshot](../profiling/media/memuse__snapshotview_numbered.png "Collegamenti delle visualizzazioni snapshot")
 

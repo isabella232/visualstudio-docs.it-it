@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921237"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868017"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modificare il codice R in Visual Studio
 
@@ -97,7 +97,7 @@ Le opzioni di formattazione, inclusa la disattivazione della formattazione, veng
 
 ## <a name="inserting-roxygen-comments"></a>Inserimento di commenti Roxygen
 
-RTVS offre un collegamento per la generazione di commenti [Roxygen](http://roxygen.org/) che usa i nomi dei parametri di una funzione. È sufficiente digitare `###` in una riga vuota sopra la definizione della funzione:
+RTVS offre un collegamento per la generazione di commenti [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) che usa i nomi dei parametri di una funzione. È sufficiente digitare `###` in una riga vuota sopra la definizione della funzione:
 
 ![Animazione dell'inserimento di un commento Roxygen](media/editing-roxygen-comments.gif)
 
@@ -113,7 +113,7 @@ Le opzioni contenute nelle schede **Generale**, **Barre di scorrimento** e **Tab
 
 Le opzioni nella scheda **R** > **Avanzate** sono specifiche di RTVS:
 
-| Gruppo | Opzione | Impostazione predefinita | Descrizione |
+| Gruppo | Opzione | Impostazione predefinita | Description |
 | --- | --- | --- | --- |
 | Formattazione | Formattazione automatica | Attivato | Riformatta il codice durante la digitazione. Non condiziona i comandi **Formatta selezione** o **Formatta documento**. |
 | | Parentesi graffe espanse | Disattivato | Inserisce una { aperta in una nuova riga. |

@@ -3,18 +3,18 @@ title: Convertire il ciclo foreach in LINQ
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc0f94d6aa9f13ac038f1af19a1ab1c78158ea14
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: eadad8fdbec990607450b374a32758547194f734
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324956"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160274"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>Convertire il ciclo foreach in LINQ
 
@@ -26,7 +26,7 @@ Questo refactoring si applica a:
 
 **Quando:** in presenza di un ciclo foreach in cui viene usato un elemento IEnumerable che si preferisce leggere come query LINQ.
 
-**Perché:** in alcuni casi può essere preferibile per gli utenti usare la sintassi LINQ piuttosto che un ciclo foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) fa di una query un costrutto di linguaggio di prima classe in C#. LINQ può ridurre la quantità di codice in un file per una più facile lettura e consente l'uso di modelli di espressione di query simili in origini dati diverse.
+**Perché?:** in alcuni casi può essere preferibile per gli utenti usare la sintassi LINQ piuttosto che un ciclo foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) fa di una query un costrutto di linguaggio di prima classe in C#. LINQ può ridurre la quantità di codice in un file per una più facile lettura e consente l'uso di modelli di espressione di query simili in origini dati diverse.
 
 > [!NOTE]
 > La sintassi LINQ offre in genere prestazioni inferiori rispetto ai cicli foreach. È importante essere consapevoli dei compromessi in termini di prestazioni che può essere necessario accettare se si vuole migliorare la leggibilità del codice con LINQ.

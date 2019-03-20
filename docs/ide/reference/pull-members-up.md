@@ -3,19 +3,19 @@ title: Pull di membri
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 65ce1b44063fd6152fc300e32e7dd075fa8afcbf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335854"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156073"
 ---
 # <a name="pull-members-up"></a>Pull di membri
 
@@ -29,7 +29,7 @@ Questo refactoring si applica a:
 
 **Quando:** è stata implementata un'interfaccia e si vuole spostare un membro al tipo di base.
 
-**Perché:** il pull di membri consente ad altre implementazioni dell'interfaccia di ereditare anche questi membri.
+**Perché?:** il pull di membri consente ad altre implementazioni dell'interfaccia di ereditare anche questi membri.
 
 ## <a name="how-to"></a>Procedura
 

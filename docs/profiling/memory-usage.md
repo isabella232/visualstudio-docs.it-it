@@ -2,19 +2,19 @@
 title: Misurare l'utilizzo della memoria nelle app
 description: È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica integrato nel debugger.
 ms.custom: seodec18
-ms.date: 04/25/2017
+ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570590a37e76301305159a4249165b1a20c475a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223325"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868986"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 

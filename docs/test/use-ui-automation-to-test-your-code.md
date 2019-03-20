@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223481"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145226"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -140,7 +140,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 8. Eseguire il test.
 
-   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni sull'esecuzione dei test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Usare l'automazione dell'interfaccia utente per testare il codice* nella sezione [Argomenti successivi](#what's-next?) alla fine di questo argomento.
+   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni sull'esecuzione dei test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Usare l'automazione dell'interfaccia utente per testare il codice* nella sezione [Argomenti successivi](#whats-next?) alla fine di questo argomento.
 
 Le sezioni rimanenti di questo argomento offrono informazioni più dettagliate sui passaggi di questa procedura.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628988"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870292"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -35,7 +35,7 @@ Dall'interno di Visual Studio è possibile pubblicare le applicazioni direttamen
 - [Servizio app di Azure](#azure-app-service)
 - [Macchine virtuali di Azure](#azure-virtual-machines)
 - [File system](#file-system)
-- [Destinazioni personalizzate (IIS, FTP e così via) ](#custom-targets), inclusi tutti i server Web arbitrari.
+- [Destinazioni personalizzate (IIS, FTP e così via) ](#custom-targets-iis-ftp), inclusi tutti i server Web arbitrari.
 
 Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione esistente, importare un profilo esistente o crearne uno nuovo usando le opzioni descritte di seguito. Per una panoramica delle opzioni di pubblicazione nell'IDE per diversi tipi di app, vedere [Presentazione della distribuzione](../deployment/deploying-applications-services-and-components.md).
 

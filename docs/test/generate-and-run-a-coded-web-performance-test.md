@@ -14,26 +14,26 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914084"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869276"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
-I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app Web. I test vengono inclusi nei test di carico per misurare le prestazioni dell'applicazione Web quando viene usata da molteplici utenti. Un test delle prestazioni Web può essere convertito in uno script basato su codice che è possibile modificare e personalizzare come qualsiasi altro codice sorgente. Ad esempio, è possibile aggiungere costrutti di ciclo e di branching.
+I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app Web. I test vengono inclusi nei test di carico per misurare le prestazioni dell'applicazione Web quando viene usata da molteplici utenti. Un test delle prestazioni Web può essere convertito in uno script basato su codice che è possibile modificare e personalizzare come qualsiasi altro codice sorgente. Ad esempio, è possibile aggiungere costrutti di ciclo e di creazione di rami.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="generate-a-coded-web-performance-test"></a>Generare un test prestazioni Web codificato
+## <a name="generate-a-coded-web-performance-test"></a>Generare un test delle prestazioni Web codificato
 
-1.  Se non è stato creato un test delle prestazioni Web, vedere [Registrare un test delle prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1.  Se non è stato creato un test delle prestazioni Web, vedere [Registrare un test delle prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Generare il test codificato.
 
-     ![Generare un test prestazioni Web codificato](../test/media/web_test_coded_generate.png)
+     ![Generare un test delle prestazioni Web codificato](../test/media/web_test_coded_generate.png)
 
 3.  Denominare il test.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223442"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867813"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Pagina Progetti e soluzioni, finestra di dialogo Opzioni
 
@@ -49,9 +49,13 @@ Se è deselezionata, i comandi del menu **Compila**, ad esempio **Compila soluzi
 
 Se selezionata, la soluzione e tutti i comandi che agiscono sulle soluzioni vengono sempre visualizzati nell'IDE. Se deselezionata, tutti i progetti vengono creati come progetti autonomi e la soluzione non viene visualizzata in Esplora soluzioni o i comandi che agiscono sulle soluzioni non vengono visualizzati nell'IDE se la soluzione contiene un solo progetto.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Salva nuovi progetti alla creazione
 
 Se selezionata, è possibile specificare un percorso per il progetto nella finestra di dialogo **Nuovo progetto**. Se deselezionata, tutti i nuovi progetti vengono creati come progetti temporanei. Quando si lavora con i progetti temporanei, è possibile creare ed effettuare prove con un progetto senza dover specificare un percorso sul disco.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Avvisa utente quando il percorso del progetto non è attendibile
 

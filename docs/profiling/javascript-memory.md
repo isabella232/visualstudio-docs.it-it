@@ -1,6 +1,6 @@
 ---
 title: Analizzare l'utilizzo della memoria di JavaScript nelle app UWP | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e2d5b1e8682656e7f0c2557b300b5429859014
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613115"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867968"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.

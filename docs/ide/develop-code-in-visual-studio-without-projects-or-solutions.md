@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718549"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194950"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -103,7 +103,7 @@ Se la codebase contiene codice Python o JavaScript, non è necessario configurar
 
 ### <a name="codebases-that-contain-c-code"></a>Codebase che contengono codice C++
 
-Per informazioni sull'apertura di codice C++ senza soluzioni o progetti in Visual Studio, vedere [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Progetti Apri cartella per C++).
+Per informazioni sull'apertura di codice C++ senza soluzioni o progetti in Visual Studio, vedere [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Progetti Apri cartella per C++).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Codebase che contenono un progetto di Visual Studio
 
@@ -118,6 +118,6 @@ Il testo del pulsante **Avvia** cambia per indicare che il progetto è l'element
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare le attività di compilazione e debug](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Progetti Apri cartella per C++)
-- [Progetti CMake in C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Progetti Apri cartella per C++)
+- [Progetti CMake in C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
