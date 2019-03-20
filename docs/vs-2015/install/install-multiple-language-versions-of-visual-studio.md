@@ -12,17 +12,17 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a0f6cd1d963427730ddda62628c3f1d064ed3541
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 189430a1ff22450f887cc8e6903db5537b137f17
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761485"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872082"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Installare più versioni localizzate di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [installare language pack in Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio#install-language-packs).
+Per la documentazione più recente di Visual Studio 2017, vedere [installare language pack in Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional).
 
 Installando uno o più pacchetti di lingua, è possibile eseguire Visual Studio 2015 in lingue diverse nello stesso computer. È necessario ottenere un Language Pack separato per ogni lingua da installare.
 

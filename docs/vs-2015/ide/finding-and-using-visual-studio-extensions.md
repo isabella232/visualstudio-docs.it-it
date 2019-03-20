@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798480"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867761"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Ricerca e uso delle estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
 >  A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Gallery verranno aggiornate automaticamente.  È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
 
 ## <a name="finding-visual-studio-extensions"></a>Ricerca delle estensioni di Visual Studio
- È possibile installare le estensioni da [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=178891) o dalla [raccolta di esempi](http://go.microsoft.com/fwlink/?LinkId=245175) nel sito Web Microsoft. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio. In Visual Studio sono supportate estensioni nel formato di pacchetto VSIX. Queste includono modelli di progetto, modelli di elemento, elementi di **Casella degli strumenti** componenti MEF (Managed Extension Framework) e VSPackage. È anche possibile scaricare le estensioni basate su MSI, ma la finestra di dialogo **Estensioni e aggiornamenti** non consente di abilitarle o disabilitarle. Visual Studio Gallery contiene estensioni VSIX e MSI.
+ È possibile installare estensioni dal [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o nella [raccolta di esempi](https://code.msdn.microsoft.com/vstudio) del sito Web Microsoft. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio. In Visual Studio sono supportate estensioni nel formato di pacchetto VSIX. Queste includono modelli di progetto, modelli di elemento, elementi di **Casella degli strumenti** componenti MEF (Managed Extension Framework) e VSPackage. È anche possibile scaricare le estensioni basate su MSI, ma la finestra di dialogo **Estensioni e aggiornamenti** non consente di abilitarle o disabilitarle. Visual Studio Gallery contiene estensioni VSIX e MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Installazione e disinstallazione delle estensioni di Visual Studio
  Nella sezione relativa a **estensioni e aggiornamenti**trovare l'estensione che si vuole installare (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di ricerca di **Visual Studio Gallery**). Fare clic su **Download** e quindi su **Installa**. Per caricare l'estensione, è necessario riavviare Visual Studio.

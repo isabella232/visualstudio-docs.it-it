@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834877"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868884"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di amministratore di Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-È possibile distribuire Visual Studio 2015 in una rete purché ogni computer di destinazione soddisfi le [requisiti di installazione minimi](http://www.microsoft.com/visualstudio/eng/products/2013-editions). È possibile creare una condivisione di rete eseguendo il file di installazione con l'opzione /layout, come descritto nella pagina [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md), quindi copiarla dal computer locale alla condivisione di rete. Se si usa un'immagine ISO, è possibile montare l'immagine ISO e condividerla o copiarla in una condivisione di rete.  
+È possibile distribuire Visual Studio 2015 in una rete purché ogni computer di destinazione soddisfi le [requisiti di installazione minimi](https://visualstudio.microsoft.com/vs/older-downloads/). È possibile creare una condivisione di rete eseguendo il file di installazione con l'opzione /layout, come descritto nella pagina [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md), quindi copiarla dal computer locale alla condivisione di rete. Se si usa un'immagine ISO, è possibile montare l'immagine ISO e condividerla o copiarla in una condivisione di rete.  
   
  Si noti che le installazioni da una condivisione di rete "ricordano" la posizione di origine da cui provengono. Ciò significa che per il ripristino di un computer client potrebbe essere necessario tornare alla condivisione di rete client da cui è stato installato in origine il client. Scegliere con attenzione il percorso di rete in modo che si allinei alla durata di esecuzione dei client di Visual Studio 2015 prevista all'interno dell'organizzazione.  
   
@@ -40,7 +40,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di 
 ## <a name="error-return-codes"></a>Codici di errore restituiti  
  La tabella seguente riporta codici di errore importanti. È possibile usare questi codici di errore nell'automazione per decidere se è necessario un riavvio e se l'installazione è riuscita. Se si riceve un codice di errore, prendere in considerazione la risoluzione dei problemi nel [installazione di Visual Studio](../install/install-visual-studio-2015.md) pagina.  
   
-|Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|Descrizione|  
+|Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|Description|  
 |------------------|--------------------------|----------------------|-----------------|  
 |Riuscito|0x00000000 [0]|0x00000bc2 [3010]|Installazione riuscita.|  
 |Blocco|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se l'unico blocco da segnalare è "Riavvio in sospeso", il valore restituito è il valore Incompleto-Richiesto riavvio (0x80048bc7).|  
@@ -66,7 +66,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di 
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Argomento|Descrizione|  
+|Argomento|Description|  
 |-----------|-----------------|  
 |[Procedura: Installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Viene descritto come installare configurazioni specifiche della versione corrente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Procedura: Creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica.|  

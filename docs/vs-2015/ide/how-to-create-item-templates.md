@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788248"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867924"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: creare modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I passaggi inclusi nella [prima procedura](../ide/how-to-create-item-templates.md#export_template) di questo argomento illustrano come creare un modello di elemento usando l'**Esportazione guidata modelli**. Se il modello è costituito da più file, vedere [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md).  
+I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) di questo argomento illustrano come creare un modello di elemento usando l'**Esportazione guidata modelli**. Se il modello è costituito da più file, vedere [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md).  
   
- La procedura guidata esegue automaticamente molte operazioni per la creazione del modello di base, ma in molti casi sarà necessario modificare manualmente il file con estensione vstemplate dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo**Aggiungi nuovo elemento** per un progetto app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], è necessario eseguire alcuni passaggi aggiuntivi. La [seconda procedura](../ide/how-to-create-item-templates.md#modify_template) di questo argomento illustra come eseguire tale operazione.  
+ La procedura guidata esegue automaticamente molte operazioni per la creazione del modello di base, ma in molti casi sarà necessario modificare manualmente il file con estensione vstemplate dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo**Aggiungi nuovo elemento** per un progetto app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], è necessario eseguire alcuni passaggi aggiuntivi. La [seconda procedura](#to-enable-the-item-template-to-be-used-in-a-store-project) di questo argomento illustra come eseguire tale operazione.  
  
- In alcuni casi può essere utile o necessario creare manualmente un modello di elemento da zero. La [terza procedura](../ide/how-to-create-item-templates.md#create_template) illustra come eseguire tale operazione.  
+ In alcuni casi può essere utile o necessario creare manualmente un modello di elemento da zero. La [terza procedura](#to-enable-templates-for-specific-project-sub-types) illustra come eseguire tale operazione.  
   
  Per informazioni sugli elementi che è possibile usare nel file con estensione vstemplate, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   

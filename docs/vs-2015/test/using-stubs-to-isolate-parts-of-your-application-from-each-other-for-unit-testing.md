@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b9b104fe6f246592f4716ad18ab4a9e6f122fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803245"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145161"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso di stub per isolare le parti dell'applicazione tra loro per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,37 +32,7 @@ I tipi stub* costituiscono una delle due tecnologie offerte dal framework Micros
   
  **Requisiti**  
   
--   Visual Studio Enterprise  
-  
-## <a name="in-this-topic"></a>Contenuto dell'argomento  
-  
--   [Come usare gli stub](#how)  
-  
-    -   [Progettare l'inserimento di dipendenze](#Dependency)  
-  
-    -   [Generare stub](#GeneratingStubs)  
-  
-    -   [Scrivere il test con stub](#WriteTest)  
-  
-    -   [Verifica dei valori dei parametri](#mocks)  
-  
--   [Stub per tipi di membri di tipo differenti](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_basics)  
-  
-    -   [Metodi](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Methods)  
-  
-    -   [Proprietà](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Properties)  
-  
-    -   [Eventi](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Events)  
-  
-    -   [Metodi generici](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Generic_methods)  
-  
-    -   [Stub di classi virtuali](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Partial_stubs)  
-  
--   [Stub di debug](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Debugging_stubs)  
-  
--   [Limitazioni degli stub](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_limitation)  
-  
--   [Modifica del comportamento predefinito degli stub](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Changing_the_default_behavior_of_stubs)  
+-   Visual Studio Enterprise
   
 ##  <a name="How"></a> Come usare gli stub  
   
@@ -502,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>Risorse esterne  
   
 ### <a name="guidance"></a>Materiale sussidiario  
- [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 2: Testing unità Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

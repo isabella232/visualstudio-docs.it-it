@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769074"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868043"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
 -   Una copia autorizzata di Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional  
   
--   Una copia di .NET Framework 4.5.1, scaricabile dal sito Web di [Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software).  
+-   Una copia di .NET Framework 4.5.1, scaricabile dal [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) sito Web.  
   
 ##  <a name="InstallingSoftware"></a> Installazione del software nei computer  
  Innanzitutto, configurare il computer host e quindi configurare il computer di compilazione.  

@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure | Microsoft Docs"
+title: "Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803731"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195073"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare Windows Presentation Foundation (WPF) per creare rapidamente un'applicazione desktop moderna che usa un servizio mobile di Azure per archiviare e fornire i dati.  
@@ -484,7 +484,7 @@ ms.locfileid: "54803731"
     > [!NOTE]
     >  Potrebbe essere necessario modificare la parte numerica dell'URL. Microsoft Azure richiede un URL univoco per ogni servizio mobile.  
   
-     Questo imposta l'URL del servizio *https://wpfquickstart01.azure-mobile.net/*.  
+     Questo imposta l'URL del servizio `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  Nell'elenco **DATABASE** scegliere un'opzione di database. Poiché si tratta di un'applicazione che probabilmente non sarà molto usata, è possibile scegliere l'opzione **Crea un database SQL 20 MB gratuito** o scegliere il database gratuito già associato alla sottoscrizione.  
   

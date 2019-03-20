@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763310"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194509"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio ospita [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pe
   
  In questo argomento vengono descritti aspetti specifici dell'hosting di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], da considerare quando si personalizzano progetti e file .TARGETS che si desidera caricare e compilare in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Queste considerazioni consentono di assicurarsi che funzionalità di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come IntelliSense e il debug funzionino con un progetto personalizzato.  
   
- Per informazioni sui progetti C++, vedere [File di progetto](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ Per informazioni sui progetti C++, vedere [File di progetto](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Estensioni del nome di file del progetto  
  MSBuild.exe riconosce qualsiasi estensione del nome di file del progetto che corrisponde al modello .*proj. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] riconosce tuttavia solo un sottoinsieme di queste estensioni di file di progetto, che determinano il sistema di progetto specifico del linguaggio che caricherà il progetto. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non è disponibile un sistema di progetto basato su [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] indipendente dal linguaggio.  

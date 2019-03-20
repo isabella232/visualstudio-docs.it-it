@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805566"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873243"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,13 +128,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                       [C6516](../code-quality/c6516.md)                        |                                          Nessuna proprietà su attributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Dimensioni valide su buffer non leggibile                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Dimensioni scrivibili su buffer non scrivibile                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Annotazione non valida: il valore della proprietà 'NeedsRelease' deve essere Yes o No                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Deferenziazione stringa dimensioni non valida                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo stringa dimensioni non valida                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Percorso irraggiungibile stringa dimensioni non valida                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Stile stringa formato non riconosciuto                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Specifica di dimensione non valida: espressione non analizzabile                              |
@@ -194,7 +193,6 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() non è supportato nelle annotazioni                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Errore di sintassi nell'annotazione condizionale rilevato nell'oggetto annotazione intrinseco                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    I valori degli elenchi di risultati devono essere costanti.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione                     |
