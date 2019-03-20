@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318732"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869083"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 
@@ -25,7 +25,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 > Nella maggior parte degli scenari è consigliabile usare l'emulatore Android di Google anziché Visual Studio Emulator for Android:
 > - L'emulatore di Visual Studio per Android non è supportato dopo Visual Studio 2015.
 > - Le immagini dell'emulatore successive alla versione 6.0 di Android non sono disponibili per Visual Studio Emulator for Android.
-> - L'emulatore Android di Google ora supporta [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - L'emulatore Android di Google ora supporta [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Strumenti di Visual Studio per Apache Cordova funziona con l'emulatore Android di Google. Per altre informazioni, vedere [Eseguire l'app Apache Cordova in Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator). Si noti che non è più necessario disabilitare Hyper-V, come illustrato in questo articolo.
 >
 > Per altre informazioni sulla configurazione e sull'uso dell'emulatore Android di Google, vedere [Configurazione dell'emulatore Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).

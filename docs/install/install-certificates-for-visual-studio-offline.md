@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737054"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983000"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -113,6 +113,7 @@ Se una firma viene verificata in un ambiente online, per scaricare e aggiungere 
 ## <a name="checking-if-certificates-are-already-installed"></a>Verifica della presenza dei certificati
 
 Un modo per eseguire questa verifica nel sistema di installazione corrisponde all'esecuzione di questa procedura:
+
 1. Eseguire **mmc.exe**.<br/>
   a. Fare clic su File e scegliere **Aggiungi/Rimuovi snap-in**.<br/>
   b. Fare doppio clic su **Certificati**, selezionare l'**account computer** e fare clic su **Avanti**.<br/>

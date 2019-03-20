@@ -1,7 +1,7 @@
 ---
 title: Come vengono applicati i percorsi di ricerca di Python
 description: Visual Studio offre un modo più preciso per specificare i percorsi di ricerca per ambienti e progetti al fine di evitare di usare variabili a livello di sistema.
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929908"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147735"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Come vengono usati i percorsi di ricerca di Python Visual Studio
 
@@ -31,7 +31,12 @@ Visual Studio consente quindi di specificare direttamente i percorsi di ricerca 
 
 Per aggiungere un percorso di ricerca, passare a **Esplora soluzioni**, espandere il nodo del progetto, fare clic con il pulsante destro del mouse su **Percorsi di ricerca** e selezionare **Aggiungi cartella al percorso di ricerca**:
 
+::: moniker range="vs-2017"
 ![Comando Aggiungi cartella al percorso di ricerca in Percorsi di ricerca di Esplora soluzioni](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Comando Aggiungi cartella al percorso di ricerca in Percorsi di ricerca di Esplora soluzioni](media/search-paths-command-2019.png)
+::: moniker-end
 
 Questo comando visualizza un browser in cui è possibile selezionare la cartella da includere.
 

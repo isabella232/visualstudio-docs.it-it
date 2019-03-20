@@ -20,14 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909649"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982870"
 ---
-# <a name="remove-visual-studio-2017"></a>Rimuovere Visual Studio 2017
+# <a name="remove-visual-studio"></a>Rimuovere Visual Studio
 
 Se si verifica un errore irreversibile e non è possibile ripristinare o disinstallare Visual Studio, è possibile eseguire lo strumento `InstallCleanup.exe` per rimuovere i file di installazione e le informazioni sul prodotto per tutte le istanze installate di Visual Studio 2017 e versioni successive. L'esecuzione di questo strumento deve essere considerata come ultima risorsa in caso di esito negativo della riparazione o della disinstallazione e potrebbe causare la disinstallazione di funzionalità da altre installazioni di Visual Studio o altri prodotti che devono essere riparati.
 
@@ -54,7 +54,7 @@ Se non si trova `InstallCleanup.exe` nella directory del programma di installazi
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio 2017](install-visual-studio.md)
-* [Aggiornare Visual Studio 2017](update-visual-studio.md)
-* [Modificare Visual Studio 2017](modify-visual-studio.md)
-* [Disinstallare Visual Studio 2017](uninstall-visual-studio.md)
+* [Installare Visual Studio](install-visual-studio.md)
+* [Aggiornare Visual Studio](update-visual-studio.md)
+* [Modificare Visual Studio](modify-visual-studio.md)
+* [Disinstallare Visual Studio](uninstall-visual-studio.md)

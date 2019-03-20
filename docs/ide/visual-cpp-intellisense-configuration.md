@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222896"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194058"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
@@ -52,7 +52,7 @@ Per altre informazioni, vedere [Procedura: IntelliSense per progetti makefile](/
 
 ### <a name="open-folder-projects"></a>Progetti Apri cartella
 
-Per i progetti CMake, assicurarsi che i percorsi #include siano specificati correttamente per tutte le configurazioni in CMakelists.txt. Altri tipi di progetto possono richiedere un file CppProperties.json. Per altre informazioni, vedere [Configurare IntelliSense con CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Assicurarsi che i percorsi siano corretti per ogni configurazione definita nel file.
+Per i progetti CMake, assicurarsi che i percorsi #include siano specificati correttamente per tutte le configurazioni in CMakelists.txt. Altri tipi di progetto possono richiedere un file CppProperties.json. Per altre informazioni, vedere [Configurare IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Assicurarsi che i percorsi siano corretti per ogni configurazione definita nel file.
 
 Se il file CppProperties.json contiene un errore di sintassi, IntelliSense nei file interessati non sarà corretto. Visual Studio visualizzerà l'errore nella finestra di output.
 
@@ -72,7 +72,7 @@ Esistono due modi comuni in cui questo problema si manifesta in Visual Studio:
 
    ![Il parser di tag offre di definire la funzione esistente](media/vcpp-intellisense-tag-parser-function.png)
 
-Per correggere questo tipo di problemi, aggiungere un file denominato **cpp.hint** alla radice della directory della soluzione. Per altre informazioni, vedere [File dei suggerimenti](/cpp/ide/hint-files).
+Per correggere questo tipo di problemi, aggiungere un file denominato **cpp.hint** alla radice della directory della soluzione. Per altre informazioni, vedere [File dei suggerimenti](/cpp/build/reference/hint-files).
 
 Gli errori del parser di tag vengono visualizzati nella finestra **Elenco errori**.
 

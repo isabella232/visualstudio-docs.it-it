@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e25fc23752b6983a2e4e1720323fea82ac5fc4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923870"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869070"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 
@@ -63,7 +63,7 @@ Requisiti di Hyper-V
 ## <a name="system-requirements"></a>Requisiti di sistema
  Il computer deve soddisfare i seguenti requisiti:
 
-- Supporto di Hyper-V (vedere [Requisiti di Hyper-V](#HyperV))
+- Supporto di Hyper-V (vedere [Requisiti di Hyper-V](#hyper-v-requirements))
 
 - 6 GB o più di RAM.
 
