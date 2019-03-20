@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873441"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193896"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 Diverse opzioni di supporto disponibili per i clienti che hanno domande su come estendere l'ambiente di sviluppo integrato (IDE) di Visual Studio.
@@ -54,9 +54,9 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
 
 ### <a name="developer-tools-support"></a>Supporto di strumenti per sviluppatori
 
-Può anche essere acquistato il supporto. Sono disponibili nella categoria Strumenti di sviluppo in una vasta gamma di offerte di supporto [Microsoft Help and Support Center](http://go.microsoft.com/fwlink/?LinkID=82383).
+Può anche essere acquistato il supporto. Sono disponibili nella categoria Strumenti di sviluppo in una vasta gamma di offerte di supporto [Microsoft Help and Support Center](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-I clienti che desiderano utilizzare il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] per lo sviluppo di pacchetti complessi possa prendere in considerazione l'acquisto di un contratto di supporto tecnico Premier con Microsoft. Per altre informazioni, vedere [supporto tecnico Premier Microsoft](https://support.microsoft.com/premier). Per le aziende di piccole dimensioni, [Partner vantaggio supporto](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) potrebbe costituire una valida alternativa a un tradizionale offerta di supporto tecnico Premier.
+I clienti che desiderano utilizzare il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] per lo sviluppo di pacchetti complessi possa prendere in considerazione l'acquisto di un contratto di supporto tecnico Premier con Microsoft. Per altre informazioni, vedere [supporto tecnico Premier Microsoft](https://support.microsoft.com/premier). Per le aziende di piccole dimensioni, [supporto avanzato per i partner](https://partner.microsoft.com/support/advanced-cloud-support) potrebbe costituire una valida alternativa a un tradizionale offerta di supporto tecnico Premier.
 
 > [!NOTE]
 > Supporto standard non può essere utilizzato per la consultazione o per ottenere consigli.
