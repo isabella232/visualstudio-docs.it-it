@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567383"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195021"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 
 |Funzionalità|Description|
 |-------------|-----------------|
-|Classi|La nuova sintassi supporta la dichiarazione delle [classi](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Classi|La nuova sintassi supporta la dichiarazione delle [classi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Suggerimenti|I [suggerimenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|
-|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Nota:** i generatori non sono ancora supportati.|
+|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota:** i generatori non sono ancora supportati.|
 |Funzioni freccia|La funzione freccia (=>) fornisce una sintassi abbreviata per la parola chiave `function` che offre un'associazione `this` lessicale.|
 |Nuovi metodi per gli oggetti predefiniti|Gli oggetti predefiniti [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) e [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) includono diverse nuove proprietà e funzioni di utilità per la modifica e il controllo dei dati.|
-|Miglioramenti dei valori letterali di oggetto|Gli oggetti ora supportano proprietà calcolate, definizioni di metodo concise e sintassi abbreviata per le proprietà il cui valore viene inizializzato su una variabile con lo stesso nome. Per altre informazioni, vedere [Creazione di oggetti](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Miglioramenti dei valori letterali di oggetto|Gli oggetti ora supportano proprietà calcolate, definizioni di metodo concise e sintassi abbreviata per le proprietà il cui valore viene inizializzato su una variabile con lo stesso nome. Per altre informazioni, vedere [Creazione di oggetti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Proxy|I [proxy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) abilitano il comportamento personalizzato per gli oggetti.|
-|Parametri rest|I parametri rest consentono di convertire in una matrice gli argomenti consecutivi in una chiamata di funzione. Per altre informazioni, vedere [Funzioni](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Parametri rest|I parametri rest consentono di convertire in una matrice gli argomenti consecutivi in una chiamata di funzione. Per altre informazioni, vedere [Funzioni](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
 |Operatore spread|L'[operatore spread](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) espande le espressioni iterabili in singoli argomenti. Ad esempio, `a.b(…array)` è quasi come `a.b.apply(a, array)`.|
 |Simboli|Gli oggetti [Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) consentono di aggiungere proprietà agli oggetti esistenti senza possibilità di interferenza con le proprietà di questi ultimi, senza alcuna visibilità imprevista e senza altre aggiunte non coordinate mediante altro codice.|
 |Stringhe modello|Le [stringhe modello](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) sono valori letterali stringa che consentono di valutare le espressioni e di concatenarle con il valore letterale stringa.|

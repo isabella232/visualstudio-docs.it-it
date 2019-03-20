@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526763"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873123"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -52,7 +52,7 @@ ms.locfileid: "57526763"
 
 | | |
 |---------------------| - |
-| **Supporto completo** | - Applicazioni Visual Basic e Visual C# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Supporto completo** | - Applicazioni Visual Basic e Visual C# che usano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Supporto limitato** | -C + + App destinate a supporto di Windows la visualizzazione di snapshot tramite tornare indietro di IntelliTrace. Sono supportati solo gli eventi di eccezione e del debugger.<br />-.NET core e le app ASP.NET Core è supportato per determinati solo eventi (eventi Controller MVC, ADO.NET e HTTPClient) nel debug locale. Agente di raccolta autonomo non è supportata per le app .NET Core o ASP.NET Core.<br />- App F# su base sperimentale<br />-App della piattaforma UWP supportata solo per gli eventi |
 | **Non supportato** | -Altri linguaggi e script<br />- Windows Services, Silverlight, Xbox o app [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
@@ -91,7 +91,7 @@ IntelliTrace consente anche di eseguire il debug di errori difficili da riprodur
 
 - Un bug o un arresto anomalo si verifica in un'applicazione distribuita.
 
-     Per le app basate su Microsoft Azure, è possibile configurare la raccolta di dati IntelliTrace prima di pubblicare l'applicazione. Mentre l'applicazione è in esecuzione, IntelliTrace salva i dati in un file .iTrace. Visualizzare [eseguire il Debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).
+     Per le app basate su Microsoft Azure, è possibile configurare la raccolta di dati IntelliTrace prima di pubblicare l'applicazione. Mentre l'applicazione è in esecuzione, IntelliTrace salva i dati in un file .iTrace. Visualizzare [eseguire il Debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
      Per le app Web ASP.NET ospitate in IIS 7.0, 7.5 e 8.0 o le applicazioni SharePoint 2010 o SharePoint 2013, utilizzare Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012, per salvare i dati IntelliTrace in un file .iTrace.
 

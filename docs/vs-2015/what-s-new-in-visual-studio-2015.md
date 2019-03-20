@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844139"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195164"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 
      Gli argomenti relativi a[debug](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [debug nel dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) delle [guide per sviluppatori Xamarin](http://developer.xamarin.com/guides) descrivono l'esperienza di debug.
 
--   **C++ / Android**. Usare i modelli di [Visual C++ per lo sviluppo per dispositivi mobili multipiattaforma](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) insieme a strumenti di terze parti come [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) per creare app native per Windows e Android.
+-   **C++ / Android**. Usare i modelli di [Visual C++ per lo sviluppo per dispositivi mobili multipiattaforma](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) insieme a strumenti di terze parti come [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) per creare app native per Windows e Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debug e diagnostica
- Per informazioni sulle novità relative al debug, vedere [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Per informazioni sulle nuove funzionalità di diagnostica, vedere [What ' s New in strumenti di profilatura](./profiling/what-s-new-in-profiling-tools.md).
+Per informazioni sulle nuove funzionalità di diagnostica, vedere [What ' s New in strumenti di profilatura](./profiling/what-s-new-in-profiling-tools.md).
 
- Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diversi tipi di diagnosi e di analisi nel codice:
+Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diversi tipi di diagnosi e di analisi nel codice:
 
 ### <a name="perftips"></a>PerfTips
  PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per un'introduzione, vedere il post relativo a [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

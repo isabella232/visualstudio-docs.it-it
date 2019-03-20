@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752882"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872829"
 ---
 # <a name="maintaining-security"></a>Gestione della sicurezza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ Si afferma spesso che il prezzo da pagare per la sicurezza sia dato da una vigil
  [Sicurezza, privacy e account](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Informazioni su sicurezza, privacy e account utente, incluse informazioni su virus, password, Controllo genitori, firewall e Crittografia unità.  
   
- [Ricerca nel Bollettino Microsoft sulla sicurezza](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Ricerca nel Bollettino Microsoft sulla sicurezza](/security-updates/)  
  In questa pagina è possibile individuare articoli informativi pubblicati in precedenza. Destinati ai professionisti del settore IT, tali articoli sulla sicurezza forniscono informazioni approfondite sulle ultime novità dell'argomento.  
   
- [Guida per la protezione di Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Viene fornito materiale sussidiario necessario per i professionisti del settore IT affinché operino in maniera protetta in ambienti Windows Server 2003 garantendo al contempo il corretto accesso ai contenuti alle persone autorizzate.  
+ [Guida alla protezione di Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) offre informazioni aggiuntive necessarie per i professionisti IT affinché operino in un ambiente Windows Server 2003, garantendo il corretto accesso ai contenuti appropriati alle persone autorizzate.  
   
- [Best Practices for Enterprise Security](http://go.microsoft.com/fwlink/?LinkId=72879) (Procedure consigliate per la sicurezza aziendale)  
+ [Best Practices for Enterprise Security](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29) (Procedure consigliate per la sicurezza aziendale)  
  Raccolta di whitepaper incentrati sui differenti aspetti della sicurezza nelle reti aziendali.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  MBSA (Microsoft Baseline Security Analyzer) è uno strumento che consente a un singolo utente privato, a un utente aziendale o a un amministratore di analizzare uno o più componenti di Windows per individuare errori comuni di configurazione della sicurezza.

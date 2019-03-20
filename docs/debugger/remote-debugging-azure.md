@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526464"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194937"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio 2017
 
@@ -229,7 +229,7 @@ In questa esercitazione viene usato Visual Studio 2017.
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, se la risoluzione dei problemi di distribuzione e l'app è ospitata dietro un firewall, potrebbe essere necessario verificare che le porte appropriate siano aperte.
 
-In una VM di Azure, è necessario aprire le porte attraverso il [gruppo di sicurezza di rete](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+In una VM di Azure, è necessario aprire le porte attraverso il [gruppo di sicurezza di rete](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Porte necessarie:
 

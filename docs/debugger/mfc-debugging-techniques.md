@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316873"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154806"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.
@@ -140,7 +140,7 @@ Per poter utilizzare le utilità di diagnostica della memoria è necessario atti
 
 - Se si desidera godere di un maggior controllo sulle caratteristiche di diagnostica della memoria, sarà possibile attivare e disattivare selettivamente singole caratteristiche di diagnostica della memoria impostando il valore della variabile globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.
 
-  |Value|Descrizione|
+  |Valore|Description|
   |-----------|-----------------|
   |**allocMemDF**|Attiva l'allocatore di memoria diagnostica (impostazione predefinita).|
   |**delayFreeMemDF**|Liberare memoria quando si chiama `delete` o `free` solo dopo la chiusura del programma. In questo modo il programma allocherà la maggior quantità possibile di memoria.|
@@ -230,7 +230,7 @@ I blocchi non di oggetti includono matrici e strutture allocate con `new`. In qu
 In un programma MFC, è possibile usare [CMemoryState:: DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump una descrizione di tutti gli oggetti nell'heap non deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.
 
 > [!NOTE]
-> Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](#BKMK_Enabling_Memory_Diagnostics).
+> Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > MFC effettua automaticamente il dump di tutti gli oggetti persi alla chiusura del programma, pertanto non è necessario creare codice per il dump degli oggetti in tale posizione.

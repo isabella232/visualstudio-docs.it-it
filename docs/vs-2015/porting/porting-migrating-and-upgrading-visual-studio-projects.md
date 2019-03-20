@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805553"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194924"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portabilità, migrazione e aggiornamento dei progetti di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 |Office 2007 VSTO|Se si aggiorna il progetto a Office 2013 e .NET Framework 4, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]o Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Se il progetto è destinato a .NET Framework 4, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1. Tutti gli altri progetti richiedono un aggiornamento unidirezionale.|
 |Applicazioni Internet avanzate|Se si aggiorna il progetto, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1.|
-|SharePoint 2007|Questo progetto non può essere aperto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tuttavia, se si aggiorna manualmente il progetto a SharePoint 2010, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1. Per altre informazioni su come aggiornare SharePoint 2007, vedere [Migrating from SharePoint 2007 to SharePoint 2010 for the IT Pro](http://go.microsoft.com/fwlink/?LinkId=238224) (Migrazione da SharePoint 2007 a SharePoint 2010 per IT Pro), [Migrating a 2007 Workflow to Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225) (Migrazione di un flusso di lavoro 2007 a Visual Studio e SharePoint 2010) e [SharePoint Enterprise Search Migration Tool for SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226) (Strumento di migrazione e ricerca di SharePoint Enterprise per SharePoint Server 2010).|
+|SharePoint 2007|Questo progetto non può essere aperto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tuttavia, se si aggiorna manualmente il progetto a SharePoint 2010, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1. Per altre informazioni su come aggiornare SharePoint 2007, vedere [la migrazione da SharePoint 2007 a SharePoint 2010 per IT Pro](http://go.microsoft.com/fwlink/?LinkId=238224) e [strumento di migrazione di ricerca di SharePoint Enterprise per SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|È possibile aprire il progetto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1.|
 |SketchFlow|Se si consente a Visual Studio di aggiornare il progetto a WPF 4.5/Silverlight 5, è possibile aprirlo in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Database [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|È possibile aprire il progetto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1. Se si dispone di un file di database (con estensione MDF) creato in una versione precedente di SQL Server, è necessario aggiornarlo a [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] prima di poterlo usare con SQL Server Express LocalDB, ma il database non sarà più compatibile con le versioni precedenti di SQL Server. Se non si effettua l'aggiornamento, è possibile continuare a usare il database in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] installando ed usando [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] nello stesso computer. Per altre informazioni, vedere [aggiornare i file con estensione mdf](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 
 - Se si tenta di aprire un progetto per un'app desktop in [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], si verifica un errore e viene visualizzato uno dei seguenti messaggi: "Questa edizione di Visual Studio supporta solo applicazioni [!INCLUDE[win81](../includes/win81-md.md)] " oppure "Il progetto non è compatibile con la versione attuale di Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] è limitato allo sviluppo, al test e alla distribuzione di applicazioni Windows Store progettate per Windows 8.1. Per aprire un progetto di un'applicazione desktop, è necessario usare un'edizione di Visual Studio che supporti tale tipo di progetto.
 
-   Per altre informazioni sulle edizioni di Visual Studio, vedere [Prodotti Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)
+   Per altre informazioni sulle edizioni di Visual Studio, vedere [Prodotti Microsoft Visual Studio](https://visualstudio.microsoft.com/products/)
 
 - Se si tenta di aprire un progetto di applicazioni Windows Store in [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, si verifica un errore. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop non può essere usato per compilare le applicazioni Windows Store. Se si vuole compilare le applicazioni Windows Store, è anche possibile installare [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. In alternativa, per sviluppare applicazioni per tutte le piattaforme Microsoft e il Web, provare Visual Studio Professional 2013.
 

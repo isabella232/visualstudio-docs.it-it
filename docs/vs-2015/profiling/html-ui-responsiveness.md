@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752966"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151180"
 ---
 # <a name="html-ui-responsiveness"></a>Velocità di risposta dell'interfaccia utente HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
     -   Usa la [Visualizzare la sequenza temporale della sessione di diagnostica](#Ruler) per visualizzare i [Contrassegnare il codice per l'analisi](#ProfileMark), gli eventi del ciclo di vita dell'app e la sequenza temporale associata per questi eventi e quella per i dati negli altri grafici.  
   
-    -   Usa il [CPU utilization graph](#CPUutilization) per visualizzare informazioni generali sull'attività della CPU e il tipo di lavoro gestito durante un periodo di tempo specifico. I periodi di attività eccessiva della CPU con più probabilità restituiscono problemi di velocità di risposta e fotogrammi rimossi.  
+    -   Usa il [CPU utilization graph](#CPUUtilization) per visualizzare informazioni generali sull'attività della CPU e il tipo di lavoro gestito durante un periodo di tempo specifico. I periodi di attività eccessiva della CPU con più probabilità restituiscono problemi di velocità di risposta e fotogrammi rimossi.  
   
     -   Se stai sviluppando un gioco o un'app multimediale avanzata, usa il [Visualizzare la velocità effettiva visuale (FPS)](#VisualThroughput) per identificare i periodi di tempo in cui la frequenza dei fotogrammi è diminuita.  
   

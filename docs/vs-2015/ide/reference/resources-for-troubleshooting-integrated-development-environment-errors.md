@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783261"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869866"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Non tutti i messaggi di errore hanno un argomento specifico della Guida associat
 ## <a name="the-developer-community"></a>La community degli sviluppatori  
  I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei newsgroup per vedere se altri utenti hanno pubblicato qualcosa sullo stesso problema.  
   
- È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922).  
+ È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](https://techcommunity.microsoft.com/).  
   
 ## <a name="product-support"></a>Supporto tecnico  
  Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).
