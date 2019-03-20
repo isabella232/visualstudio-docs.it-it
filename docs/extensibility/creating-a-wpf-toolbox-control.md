@@ -1,6 +1,6 @@
 ---
 title: Creazione di un controllo della casella degli strumenti WPF | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867981"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194827"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Creare un controllo della casella degli strumenti WPF
-Il modello di controllo della casella degli strumenti WPF (Windows Presentation Framework) consente di creare controlli WPF che vengono aggiunti automaticamente per il **casella degli strumenti** quando l'estensione viene installata. Questo argomento illustra come usare il modello per creare un **casella degli strumenti** controllo che è possibile distribuire ad altri utenti.
+
+Il modello di controllo della casella degli strumenti WPF (Windows Presentation Framework) consente di creare controlli WPF che vengono aggiunti automaticamente per il **casella degli strumenti** quando l'estensione viene installata. Questa procedura dettagliata illustra come usare il modello per creare un **casella degli strumenti** controllo che è possibile distribuire ad altri utenti.
 
 A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>Creare un controllo della casella degli strumenti WPF
+## <a name="create-the-toolbox-control"></a>Creare il controllo della casella degli strumenti
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Creare un'estensione con un controllo della casella degli strumenti WPF
 
-1. Creare un progetto VSIX denominato `MyToolboxControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c#** > **estendibilità**.
+1. Creare un progetto VSIX denominato `MyToolboxControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** dialogo eseguendo una ricerca per "vsix".
 
 2. Quando si apre il progetto, aggiungere un **controllo della casella degli strumenti WPF** modello di elemento denominato `MyToolboxControl`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c#** > **Extensibility** e selezionare **controllo della casella degli strumenti WPF**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     ```
 
 ## <a name="renaming-the-control"></a>Ridenominazione del controllo
+
  Per impostazione predefinita, il controllo verrà visualizzato nei **casella degli strumenti** come **MyToolboxControl** in un gruppo denominato **MyToolboxControl.MyToolboxControl**. È possibile modificare questi nomi nel *MyToolboxControl.xaml.cs* file.
 
 1. Aprire *MyToolboxControl.xaml.cs* nella visualizzazione codice.
@@ -74,7 +76,8 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     }
     ```
 
-## <a name="build-test-and-deployment"></a>Compilazione, Test e distribuzione
+## <a name="build-test-and-deployment"></a>Compilazione, test e distribuzione
+
  Quando si esegue il debug del progetto, è necessario trovare il controllo installato nella **casella degli strumenti** dell'istanza sperimentale di Visual Studio.
 
 ### <a name="to-build-and-test-the-control"></a>Per compilare e testare il controllo

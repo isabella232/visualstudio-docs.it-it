@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955375"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195086"
 ---
 # <a name="security-warnings"></a>Avvisi di sicurezza
 
@@ -77,5 +77,5 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA2153: Evitare la gestione delle eccezioni in stato danneggiato](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|Le[eccezioni in stato danneggiato (CSE, Corrupted State Exception)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicano che sono presenti danni nella memoria del processo. Se si prova a intercettare tali eccezioni, invece di lasciare che il processo venga arrestato in modo anomalo, può portare a vulnerabilità di sicurezza nel caso in cui un utente malintenzionato riesca a inserire un exploit nell'area della memoria danneggiata.|
 |[CA3075: Elaborazione DTD non protetta](../code-quality/ca3075-insecure-dtd-processing.md)|Se si usano istanze di DTDProcessing non protette o si fa riferimento a origini di entità esterne, il parser può accettare un input non attendibile e divulgare informazioni riservate a utenti malintenzionati.|
 |[CA3076: Esecuzione di Script XSLT non protetta](../code-quality/ca3076-insecure-xslt-script-execution.md)|Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazioni .NET in modo non protetto, il processore può risolvere i riferimenti URI non attendibili che potrebbero divulgare informazioni riservate a utenti malintenzionati causando attacchi Denial of Service e XSS.|
-|[CA3077: Elaborazione non sicura in Progettazione API, documenti XML e lettori di testo XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Quando si progetta un'API derivata da XMLDocument e XMLTextReader, tenere presente DtdProcessing.  Se si usano istanze di DTDProcessing non protette per fare riferimento o risolvere origini di entità esterne oppure per impostare valori non protetti nel codice XML, si può causare la divulgazione di informazioni.|
+|[CA3077: Elaborazione non sicura in Progettazione API, documenti XML e lettori di testo XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Quando si progetta un'API derivata da XMLDocument e XMLTextReader, tenere presente DtdProcessing. Se si usano istanze di DTDProcessing non protette per fare riferimento o risolvere origini di entità esterne oppure per impostare valori non protetti nel codice XML, si può causare la divulgazione di informazioni.|
 |[CA3147: Contrassegnare i gestori di verbo con ValidateAntiForgeryToken](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Quando si progetta un controller MVC ASP.NET, tenere conto di attacchi di richiesta intersito falsa. Un attacco di tipo richiesta intersito falsa può inviare richieste dannose da un utente autenticato al controller ASP.NET MVC.|

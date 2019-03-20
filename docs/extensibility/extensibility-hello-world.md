@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160706"
+ms.locfileid: "58194736"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Creare la prima estensione: Hello World
 
@@ -44,7 +44,7 @@ Prima di iniziare, assicurarsi di aver installato il **sviluppo di estensioni di
 
 ::: moniker range="vs-2017"
 
-Passaggio 1. Dal **File** dal menu **nuovo progetto**.
+Passaggio 1. Scegliere **Nuovo** > **Progetto** dal menu **File**.
 
 Passaggio 2. Nella casella di ricerca in alto a destra, digitare "vsix" e selezionare l'oggetto visivo C# **progetto VSIX**. Immettere "HelloWorld" per il **Name** nella parte inferiore della finestra di dialogo e selezionare **OK**.
 
@@ -58,7 +58,7 @@ Se è necessario lasciare questa esercitazione ed è tornato a esso, è possibil
 
 ::: moniker range=">=vs-2019"
 
-Passaggio 1. Dal **File** dal menu **nuovo progetto**. Cercare "vsix" e selezionare l'oggetto visivo C# **progetto VSIX** e quindi **successiva**.
+Passaggio 1. Scegliere **Nuovo** > **Progetto** dal menu **File**. Cercare "vsix" e selezionare l'oggetto visivo C# **progetto VSIX** e quindi **successiva**.
 
 Passaggio 2. Immettere "HelloWorld" per il **nome progetto** e selezionare **crea**.
 
@@ -84,7 +84,7 @@ Il nuovo file di comando è visibile nel **Esplora soluzioni**. Sotto il **risor
 
 ## <a name="modify-the-source-code"></a>Modificare il codice sorgente
 
-A questo punto, il comando e pulsante testo viene generato automaticamente e non è molto interessante. È possibile modificare il file VSCT CS se si desidera apportare modifiche.
+A questo punto, il comando e il testo del pulsante vengono generati automaticamente e non è molto interessante. È possibile modificare il file VSCT CS se si desidera apportare modifiche.
 
 * Il file VSCT è dove è possibile rinominare i comandi, nonché definire in cui escono nel sistema di comandi di Visual Studio. Durante l'esplorazione file VSCT, si noterà commenti che spiegano quali ogni sezione di codice controlli VSCT.
 

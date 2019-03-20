@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Usare procedure guidate con modelli di progetto'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723708"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194671"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare le procedure guidate con modelli di progetto
 
@@ -33,12 +33,12 @@ Il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> metodi di interfaccia ve
 
 Iniziare a creare un modello personalizzato con il progetto di modello di progetto, che fa parte di Visual Studio SDK. In questa procedura si userà un C# progetto di modello di progetto, ma è inoltre disponibile un progetto di modello di progetto Visual Basic. Quindi si aggiunge un progetto VSIX per la soluzione che contiene il progetto di modello di progetto.
 
-1. Creare un progetto di modello di progetto c# (in Visual Studio **File** > **New** > **progetto** > **Visual c#**   >  **Extensibility** > **modello di progetto c#**). Denominarlo **MyProjectTemplate**.
+1. Creare un C# progetto di modello di progetto (in Visual Studio, selezionare **File** > **New** > **progetto** e cercare "modello di progetto" ). Denominarlo **MyProjectTemplate**.
 
    > [!NOTE]
    > Potrebbe essere necessario installare Visual Studio SDK. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Aggiungere un nuovo progetto VSIX (**File** > **New** > **progetto** > **Visual C#**   >  **Estendibilità** > **progetto VSIX**) nella stessa soluzione come progetto di modello di progetto (nella **Esplora soluzioni**, Selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **Add** > **nuovo progetto**). Denominarla **MyProjectWizard.**
+2. Aggiungere un nuovo progetto VSIX nella stessa soluzione come progetto di modello di progetto (in **Esplora soluzioni**, selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **Add** > **nuovo progetto**  e cercare "vsix"). Denominarla **MyProjectWizard.**
 
 3. Impostare il progetto VSIX come progetto di avvio. Nelle **Esplora soluzioni**, selezionare il nodo del progetto VSIX, pulsante destro del mouse e selezionare **imposta come progetto di avvio**.
 
@@ -50,7 +50,7 @@ Iniziare a creare un modello personalizzato con il progetto di modello di proget
 
 7. Compilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio. (L'operazione potrebbe richiedere alcuni minuti).
 
-8. Nella seconda istanza di Visual Studio, provare a creare un nuovo progetto con il nuovo modello (**File** > **New** > **progetto > Visual C#**   >  **MyProject modello**). Il nuovo progetto verrà visualizzato con una classe denominata **Class1**. È stato creato un modello di progetto personalizzato. Arrestare il debug.
+8. Nella seconda istanza di Visual Studio, provare a creare un nuovo progetto con il nuovo modello (**File** > **New** > **progetto**, cercare " MyProject"). Il nuovo progetto verrà visualizzato con una classe denominata **Class1**. È stato creato un modello di progetto personalizzato. Arrestare il debug.
 
 ## <a name="create-a-custom-template-wizard"></a>Creazione guidata di un modello personalizzato
 
@@ -60,11 +60,11 @@ Questa procedura viene illustrato come creare una procedura guidata personalizza
 
 2. Nelle **Esplora soluzioni**, selezionare il nodo del progetto VSIX. Di seguito **Esplora soluzioni**, verrà visualizzato il **proprietà** finestra. In caso contrario, selezionare **View** > **finestra delle proprietà**, oppure premere **F4**. Nel **delle proprietà** finestra, seleziona i seguenti campi per `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. Aggiungere l'assembly come un asset per il progetto VSIX. Aprire il *vsixmanifest* del file e selezionare il **asset** scheda. Nel **Aggiungi nuovo Asset** finestra, per **tipo** seleziona **Microsoft.VisualStudio.Assembly**, per **origine** selezionare **A progetto nella soluzione corrente**e per **Project** seleziona **MyProjectWizard**.
 
@@ -157,7 +157,7 @@ Questa procedura viene illustrato come creare una procedura guidata personalizza
 
    - Un <xref:System.Object> matrice che contiene un set di parametri passati alla procedura guidata da Visual Studio.
 
-     Questo esempio viene aggiunto un valore del parametro di input dell'utente per il <xref:System.Collections.Generic.Dictionary%602> parametro. Tutte le istanze del `$custommessage$` parametro del progetto verrà sostituito con il testo immesso dall'utente. È necessario aggiungere al progetto gli assembly riportati di seguito. **System** e **System. Drawing**.
+     Questo esempio viene aggiunto un valore del parametro di input dell'utente per il <xref:System.Collections.Generic.Dictionary%602> parametro. Tutte le istanze del `$custommessage$` parametro del progetto verrà sostituito con il testo immesso dall'utente. Aggiungere al progetto gli assembly seguenti: **System** e **System. Drawing**.
 
 7. A questo punto creare il **UserInputForm**. Nel *WizardImplementation.cs* , aggiungere il codice seguente dopo la fine del `WizardImplementation` classe.
 
@@ -228,7 +228,7 @@ Affinché il modello di progetto personalizzati da usare della procedura guidata
 
      *C:\Programmi (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     Se non si trova lo strumento, provare a eseguire **dove /R.  Sn.exe** nella finestra di comando. Prendere nota del percorso.
+     Se non si trova lo strumento, provare a eseguire **in cui /R. sn.exe** nella finestra di comando. Prendere nota del percorso.
 
 10. Estrarre la chiave pubblica dal *snk* file. Nella finestra di comando, digitare
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 A questo punto è possibile creare un progetto dal modello e utilizzare la procedura guidata personalizzata.
 
-1.  Ricompilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.
+1. Ricompilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.
 
-2.  Creare un nuovo progetto MyProjectTemplate. (**File** > **nuova** > **progetto** > **Visual C#**  >  **MyProjectTemplate**)
+2. Creare un nuovo progetto MyProjectTemplate. (**File** > **nuova** > **progetto**).
 
-3.  Nel **nuovo progetto** finestra di dialogo, individuare il modello, digitare un nome e fare clic su **OK**.
+3. Nel **nuovo progetto** finestra di dialogo, cercare "myproject" individuare il modello, digitare un nome e fare clic su **OK**.
 
      Verrà visualizzata la procedura guidata input dell'utente.
 
-4.  Digitare un valore per il parametro personalizzato e fare clic sul pulsante.
+4. Digitare un valore per il parametro personalizzato e fare clic sul pulsante.
 
      Il modulo di input utente guidata si chiude e viene creato un progetto dal modello.
 
-5.  Nelle **Esplora soluzioni**, fare clic sul file del codice sorgente e fare clic su **Visualizza codice**.
+5. Nelle **Esplora soluzioni**, fare clic sul file del codice sorgente e fare clic su **Visualizza codice**.
 
      Si noti che `$custommessage$` è stata sostituita con il testo immesso nella procedura guidata input dell'utente.
 

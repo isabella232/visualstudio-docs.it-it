@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: chitray
-ms.author: chitray
+author: gregvanl
+ms.author: gregvanl
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983013"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193705"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procedura dettagliata: Creare un pacchetto di estensione
 
@@ -23,7 +23,7 @@ Un pacchetto di estensione è un set di estensioni che possono essere installati
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+A partire da Visual Studio 2015, Visual Studio SDK è incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 La funzionalità di estensione Pack è disponibile a partire da Visual Studio 15.8 Preview 2.
 
@@ -31,9 +31,9 @@ La funzionalità di estensione Pack è disponibile a partire da Visual Studio 15
 
 Il modello di elemento Extension Pack crea un pacchetto di estensione con set di estensioni che possono essere installati insieme.
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `Test Extension Pack`. Fare clic su **OK**.
+1. Nel **nuovo progetto** finestra di dialogo, cercare "vsix" e selezionare **progetto VSIX**. Per la **nome progetto**, digitare "Pacchetto di estensioni di Test". Scegliere **Crea**.
 
-2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **Extension Pack**. Lasciare il nome file predefinito (ExtensionPack1.cs).
+2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **Extension Pack**. Lasciare il nome file predefinito (ExtensionPack1.cs).
 
 3. Aggiunta di file ExtensionPack1.vsext che contiene il codice seguente
 
@@ -69,13 +69,23 @@ Il modello di elemento Extension Pack crea un pacchetto di estensione con set di
 
 Ora che la pubblicazione dell'estensione, installarlo in Visual Studio e testarlo.
 
-1. In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti...** .
+::: moniker range="vs-2017"
 
-2. Fare clic su **Online** e quindi cercare `Test Extension Pack`.
+1. In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio sul **estensioni** menu, fare clic su **estensioni gestite**.
+
+::: moniker-end
+
+2. Fare clic su **Online** e quindi cercare "Pacchetto di estensioni di Test".
 
 3. Scegliere **Download**. L'estensione e all'elenco delle estensioni incluse nel pacchetto di estensione verrà pianificate per l'installazione.
 
-4. Ecco una visualizzazione di download Extension Pack di esempio il **estensioni e aggiornamenti** finestra di dialogo. Se si preferisce installare solo alcune delle estensioni incluse nel pacchetto di estensione, è possibile modificare l'elenco delle estensioni in **pianificati per installare**.
+4. Ecco una visualizzazione di download Extension Pack di esempio il **gestire le estensioni** finestra di dialogo. Se si preferisce installare solo alcune delle estensioni incluse nel pacchetto di estensione, è possibile modificare l'elenco delle estensioni in **pianificati per installare**.
 
     ![Scaricare il pacchetto di estensione dal Marketplace](media/vside-extensionpack.png)
 
@@ -85,8 +95,18 @@ Ora che la pubblicazione dell'estensione, installarlo in Visual Studio e testarl
 
 Per rimuovere l'estensione dal computer:
 
+::: moniker range="vs-2017"
+
 1. In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti**.
 
-2. Selezionare `Test Extension Pack` e quindi fare clic su **Disinstalla**. L'estensione e all'elenco delle estensioni incluse nel pacchetto di estensione verrà pianificate per la disinstallazione.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio sul **estensioni** menu, fare clic su **estensioni gestite**.
+
+::: moniker-end
+
+2. Selezionare **pacchetto di estensioni di Test** e quindi fare clic su **Disinstalla**. L'estensione e all'elenco delle estensioni incluse nel pacchetto di estensione verrà pianificate per la disinstallazione.
 
 3. Per completare la disinstallazione, chiudere tutte le istanze di Visual Studio.

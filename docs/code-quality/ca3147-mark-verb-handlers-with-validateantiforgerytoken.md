@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8c43ceb19aa6b4407fd4639f952ced859390b1
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567328"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194444"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Contrassegnare i gestori di verbi con ValidateAntiForgeryToken
 
@@ -45,7 +45,7 @@ Questa regola consente di controllare tale controller ASP.NET MVC i metodi di az
 
    Se si dispone di MVC ASP.NET le richieste di azione del controller che gestisce HTTP GET e ha effetti collaterali potenzialmente dannosi, ad esempio la modifica dei dati sensibili, l'applicazione è vulnerabile agli attacchi di richiesta intersito falsa intersito.  È necessario riprogettare l'applicazione in modo che solo le richieste HTTP POST, PUT o DELETE effettuare operazioni sensibili.
 
-- Per azioni del controller ASP.NET MVC che gestiscono HTTP POST, PUT o DELETE richiede, aggiungere [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) e gli attributi che specificano i verbi HTTP consentiti ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), o [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Inoltre, è necessario chiamare il [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) metodo dalla visualizzazione MVC o pagina web di Razor. Per un esempio, vedere [esaminando i metodi di modifica e visualizzazione di modifica](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- Per azioni del controller ASP.NET MVC che gestiscono HTTP POST, PUT o DELETE richiede, aggiungere [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) e gli attributi che specificano i verbi HTTP consentiti ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), o [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Inoltre, è necessario chiamare il [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) metodo dalla visualizzazione MVC o pagina web di Razor. Per un esempio, vedere [esaminando i metodi di modifica e visualizzazione di modifica](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
