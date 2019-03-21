@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868143"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195177"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -418,7 +418,7 @@ Il sistema di progetto Visual C++ si basa sul [sistema di progetto di Visual Stu
 
 Per informazioni sulla progettazione generale, vedere [estendibilità della piattaforma - parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) e [estendibilità della piattaforma - parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-In altre parole, le pagine delle proprietà presenti il **proprietà progetto** finestra di dialogo per un progetto C++ sono definiti dal *regola* file. Un file di regole specifica un set di proprietà da visualizzare nella pagina delle proprietà e come e dove devono essere salvati nel progetto di file. File di regole sono file con estensione XML che usano il formato Xaml. Sono descritti i tipi usati per serializzarle [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Per altre informazioni sull'uso dei file di regole nei progetti, vedere [file di regole XML pagina delle proprietà](/cpp/ide/property-page-xml-files).
+In altre parole, le pagine delle proprietà presenti il **proprietà progetto** finestra di dialogo per un progetto C++ sono definiti dal *regola* file. Un file di regole specifica un set di proprietà da visualizzare nella pagina delle proprietà e come e dove devono essere salvati nel progetto di file. File di regole sono file con estensione XML che usano il formato Xaml. Sono descritti i tipi usati per serializzarle [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Per altre informazioni sull'uso dei file di regole nei progetti, vedere [file di regole XML pagina delle proprietà](/cpp/build/reference/property-page-xml-files).
 
 I file di regola devono essere aggiunti al `PropertyPageSchema` gruppo di elementi:
 
@@ -636,8 +636,8 @@ Per informazioni su come creare i file VSIX, vedere [spedizione di estensioni di
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-Il sistema di compilazione Microsoft ([MSBuild](../msbuild/msbuild.md)) fornisce il motore di compilazione e il formato estensibile basato su XML per i file di progetto. È necessario avere familiarità con basic [concetti relativi a MSBuild](../msbuild/msbuild-concepts.md) e con le procedure [MSBuild per Visual C++](/cpp/build/msbuild-visual-cpp-overview) sistema del progetto funziona per estendere Visual C++.
+Il sistema di compilazione Microsoft ([MSBuild](../msbuild/msbuild.md)) fornisce il motore di compilazione e il formato estensibile basato su XML per i file di progetto. È necessario avere familiarità con basic [concetti relativi a MSBuild](../msbuild/msbuild-concepts.md) e con le procedure [MSBuild per Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) sistema del progetto funziona per estendere Visual C++.
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fornisce l'estensione di API utilizzate da CPS e il sistema di progetto Visual C++. Per una panoramica dell'utilizzo di MEF da CPS, vedere [CPS e MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) nel [VSProjectSystem Panoramica di MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-È possibile personalizzare il sistema di compilazione esistente per aggiungere istruzioni di compilazione o nuovi tipi di file. Per altre informazioni, vedere [Cenni preliminari su MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) e [funziona con le proprietà del progetto](/cpp/ide/working-with-project-properties).
+È possibile personalizzare il sistema di compilazione esistente per aggiungere istruzioni di compilazione o nuovi tipi di file. Per altre informazioni, vedere [Cenni preliminari su MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) e [funziona con le proprietà del progetto](/cpp/build/working-with-project-properties).
