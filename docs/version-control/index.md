@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Controllo della versione
 description: Guida introduttiva al controllo della versione in Visual Studio
-keywords: VSTS, TFS, controllo della versione
+keywords: 'VSTS, TFS, controllo della versione'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998924"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Controllo della versione in Visual Studio
 
@@ -27,6 +21,7 @@ I sistemi di controllo della versione consentono di tenere traccia delle modific
 
 Ad oggi, Git è il sistema di controllo della versione più diffuso e si sta affermando rapidamente come standard per il controllo della versione. Git è un sistema di controllo della versione distribuito e ciò significa che la copia locale del codice è un repository del controllo della versione completo. Questi repository locali completamente operativi semplificano il lavoro offline o remoto. Il commit del lavoro viene eseguito localmente e quindi la copia del repository viene sincronizzata con la copia nel server. Questo approccio è diverso rispetto al controllo della versione centralizzato, in cui i client devono sincronizzare il codice con un server prima di creare nuove versioni del codice.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">
@@ -84,7 +79,7 @@ Ad oggi, Git è il sistema di controllo della versione più diffuso e si sta aff
     </li>
 </ul>
 
-## <a name="tfvc"></a>Controllo della versione di Team Foundation
+## <a name="tfvc"></a>TFVC
 
 Controllo della versione di Team Foundation (TFVC) è un sistema di controllo della versione centralizzato. In genere, i membri del team hanno una sola versione di ogni file nel computer di sviluppo. I dati cronologici vengono gestiti solo sul server. I branch sono basati sul percorso e creati nel server.
 

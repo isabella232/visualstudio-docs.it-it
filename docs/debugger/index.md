@@ -12,6 +12,8 @@ manager: jillfra
 
 Il debugger di Visual Studio consente di osservare il comportamento del programma in fase di esecuzione e di  individuazione di errori logici. Il debugger può essere usato con tutti i linguaggi di programmazione di Visual Studio e con le relative librerie associate. Mediante questo strumento è possibile sospendere l'esecuzione del programma per analizzare il codice, valutare e modificare le variabili, visualizzare i registri, esaminare le istruzioni create a partire dal codice sorgente e controllare lo spazio di memoria usato dall'applicazione.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">

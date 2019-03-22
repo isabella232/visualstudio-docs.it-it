@@ -172,8 +172,12 @@ items:
     - name: Usare soluzioni e progetti
       href: ide/solutions-and-projects-in-visual-studio.md
       items:
+      - name: Creare un nuovo progetto
+        href: ide/create-new-project.md
       - name: Creare soluzioni e progetti
         href: ide/creating-solutions-and-projects.md
+      - name: Aprire un progetto da un repository
+        href: get-started/tutorial-open-project-from-repo.md
       - name: Portabilità, migrazione e aggiornamento dei progetti
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
       - name: Trasferire, migrare e aggiornare progetti in Visual Studio 2019
@@ -302,6 +306,7 @@ items:
             - name: Risoluzione dei problemi relativi ai frammenti di codice
               href: ide/troubleshooting-snippets.md
         - name: Azioni rapide
+          displayName: light bulb screwdriver suggestions
           href: ide/quick-actions.md
           items:
           - name: Azioni rapide comuni
@@ -784,7 +789,7 @@ items:
           href: ide/reference/autorecover-environment-options-dialog-box.md
         - name: Ambiente - Documenti
           href: ide/reference/documents-environment-options-dialog-box.md
-        - name: Ambiente - Estensioni e aggiornamenti
+        - name: Ambiente - Estensioni
           href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
         - name: Ambiente - Trova e sostituisci
           href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1190,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 6b2aef6cb17789a665cb4a7a0360b2bc7dd396ab
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 9df9ac7c4440ae6d968f0925a086921bf49a309d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873774"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324039"

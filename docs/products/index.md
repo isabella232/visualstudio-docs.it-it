@@ -6,6 +6,7 @@ description: 'Informazioni su come usare Visual Studio 2017 per lo sviluppo di a
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Documentazione per i prodotti Visual Studio</h1>
