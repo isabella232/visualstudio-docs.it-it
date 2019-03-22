@@ -1,13 +1,10 @@
 ---
 title: Formattare gli identificatori nel debugger (C++) | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227722"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870593"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
-È possibile modificare il formato in cui viene visualizzato il valore nella **Watch** finestra usando identificatori di formato.
+È possibile modificare il formato in cui viene visualizzato il valore nella **Watch**, **Auto**, e **variabili locali** windows usando gli identificatori di formato.
 
 È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e persino nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato viene visualizzato una [suggerimento dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). La visualizzazione Suggerimento dati riflette l'identificatore di formato.
 
@@ -57,8 +54,55 @@ Aggiungere la `my_var1` variabile per il **Watch** finestra durante il debug **D
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+È possibile visualizzare e selezionare da un elenco di identificatori di formato disponibili mediante l'aggiunta di una virgola (,) per il valore di **Watch** finestra. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Identificatori di formato
 Nelle tabelle seguenti vengono descritti gli identificatori di formato che è possibile usare in Visual Studio. Gli identificatori in grassetto sono supportati solo per il nuovo debugger e non per il debug di interoperabilità con C + + / CLI.
+
+::: moniker range=">= vs-2019" 
+
+|Identificatore|Formato|Valore dell'espressione di controllo originale|Valore visualizzato|
+|---------------|------------|--------------------------|---------------------|
+|d|intero decimale|0x00000066|102|
+|o|intero ottale senza segno|0x00000066|000000000146|
+|x<br /><br /> **h**|intero esadecimale|102|0xcccccccc|
+|x<br /><br /> **H**|intero esadecimale|102|0xcccccccc|
+|xb<br /><br /> **hb**|intero esadecimale (senza 0x iniziale)|102|cccccccc|
+|Xb<br /><br /> **Hb**|intero esadecimale (senza 0x iniziale)|102|CCCCCCCC|
+|b|intero binario senza segno|25|0b00000000000000000000000000011001|
+|bb|intero binario senza segno (senza 0b iniziale)|25|00000000000000000000000000011001|
+|h|notazione scientifica|25000000|2.500000e + 07|
+|V|abbreviazione della notazione scientifica o del formato a virgola mobile|25000000|2.5e + 07|
+|c|carattere singolo|0x0065, c|101 'e'|
+|s|stringa const char * (tra virgolette)|\<posizione > "hello world"|"hello world"|
+|**sb**|Stringa const char* (senza virgolette)|\<posizione > "hello world"|hello world|
+|s8|stringa UTF-8|\<posizione > "This is â˜• una tazza di caffè UTF-8"|"This is ☕ una tazza di caffè UTF-8"|
+|**s8b**|Stringa UTF-8 (senza virgolette)|\<posizione > "hello world"|hello world|
+|su|Stringa Unicode (codifica UTF-16) (con le virgolette)|\<posizione > L "hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Stringa Unicode (codifica UTF-16) (senza virgolette)|\<posizione > L "hello world"|hello world|
+|bstr|Stringa binaria di BSTR (tra virgolette)|\<posizione > L "hello world"|L"hello world"|
+|env|Blocco di ambiente (stringa con terminazione Null doppia)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|Stringa UTF-32 (tra virgolette)|\<location> U"hello world"|u"hello world"|
+|**s32b**|stringa UTF-32 (senza virgolette)|\<location> U"hello world"|hello world|
+|**en**|enum|Saturday(6)|Saturday|
+|**hv**|Tipo di puntatore: indica che il valore del puntatore in esame è il risultato dell'allocazione di heap di una matrice, ad esempio `new int[3]`.|\<posizione>{\<primo membro>}|\<posizione > {\<primo membro >, \<secondo membro >,...}|
+|**na**|Elimina l'indirizzo di memoria di un puntatore a un oggetto.|\<posizione>, {member=value…}|{member=value…}|
+|**nd**|Visualizza solo le informazioni sulla classe base, ignorando le classi derivate|`(Shape*) square` include informazioni sulla classe base e sulle classi derivate|Visualizza solo informazioni sulla classe base|
+|hr|HRESULT o codice di errore Win32. Questo identificatore non è più necessario per valori HRESULT come il debugger decodifica li automaticamente.|S_OK|S_OK|
+|wc|flag della classe di finestre|0x0010|WC_DEFAULTCHAR|
+|wm|Numeri di messaggio Windows|16|WM_CLOSE|
+|nr|Elimina la voce "Visualizzazione non elaborata"|
+|nvo|Mostra voce di "Visualizzazione non elaborata" per solo valori numerici|
+|!|formato non elaborato in cui vengono ignorate le personalizzazioni delle visualizzazioni del tipo di dati|\<rappresentazione personalizzata>|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Identificatore|Formato|Valore dell'espressione di controllo originale|Valore visualizzato|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ Nelle tabelle seguenti vengono descritti gli identificatori di formato che è po
 |wm|Numeri di messaggio Windows|16|WM_CLOSE|
 |!|formato non elaborato in cui vengono ignorate le personalizzazioni delle visualizzazioni del tipo di dati|\<rappresentazione personalizzata>|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Quando la **hv** identificatore di formato è presente, il debugger tenta di determinare la lunghezza del buffer e visualizza il numero di elementi. Poiché il debugger non sempre riesce a individuare le dimensioni esatte del buffer di una matrice, è consigliabile usare un identificatore della dimensione `(pBuffer,[bufferSize])` , se possibile. Il **hv** identificatore di formato è utile quando le dimensioni del buffer non sono prontamente disponibile
+> Quando la **hv** identificatore di formato è presente, il debugger tenta di determinare la lunghezza del buffer e visualizza il numero di elementi. Poiché il debugger non sempre riesce a individuare le dimensioni esatte del buffer di una matrice, è consigliabile usare un identificatore della dimensione `(pBuffer,[bufferSize])` , se possibile. Il **hv** identificatore di formato è utile quando le dimensioni del buffer non sono prontamente disponibile.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Identificatori di dimensioni per puntatori quali matrici
 Se è presente un puntatore a un oggetto che si vuole visualizzare come matrice, è possibile usare un numero intero o un'espressione per specificare il numero di elementi di matrice.

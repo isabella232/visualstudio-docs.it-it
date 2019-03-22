@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909687"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069775"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 
@@ -50,7 +50,7 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
-- WCF Data Services. Per altre informazioni, vedere [Panoramica](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modelli di dati in [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ Per completare la procedura dettagliata è inoltre consigliabile conoscere già 
 
 ## <a name="create-the-service-project"></a>Creare il progetto di servizio
 
-Avviare questa procedura dettagliata creando un progetto per un servizio dati WCF:
+1. Avviare la procedura dettagliata creando un C# o Visual Basic **applicazione Web ASP.NET** progetto. Denominare il progetto **AdventureWorksService**.
 
-1. Avviare Visual Studio.
-
-2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
-
-3. Espandere **Visual C#** o **Visual Basic**, quindi selezionare **Web**.
-
-4. Selezionare il modello di progetto **Applicazione Web ASP.NET**.
-
-5. Nella casella **Nome** digitare **AdventureWorksService** e fare clic su **OK**.
-
-     Visual Studio crea il progetto **AdventureWorksService**.
-
-6. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Default.aspx** e scegliere **Elimina**. Questo file non è necessario per la procedura dettagliata.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Default.aspx** e scegliere **Elimina**. Questo file non è necessario per la procedura dettagliata.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Creare un Entity Data Model per il servizio
 

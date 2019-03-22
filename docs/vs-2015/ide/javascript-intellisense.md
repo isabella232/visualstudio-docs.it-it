@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763284"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194457"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 
 -   Funzioni definite in qualsiasi blocco di script nel documento attivo. I blocchi di script online sono supportati in file con estensioni aspx., ascx, master, html e htm.
 
--   Elementi di`script` con attributi `src` che puntano a un altro file di script. Il file script di destinazione deve avere l'estensione js.
+-   Elementi `script` con attributi `src` che puntano a un altro file di script. Il file script di destinazione deve avere l'estensione js.
 
 -   File JavaScript che fanno riferimento ad altri file dello stesso tipo utilizzando una direttiva `reference`.
 
@@ -91,7 +91,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 
 -   Analizza l'elenco e raccoglie informazioni sui tipi e altri dati rilevanti da ciascun file.
 
--   Aggrega i dati e li passa al motore del servizio di linguaggio JavaScript che rende disponibili in IntelliSense i dati e le informazioni sui tipi.
+-   Aggrega i dati e li passa a JavaScript Language Service che rende disponibili in IntelliSense i dati e le informazioni sui tipi.
 
 -   Controlla nei file le modifiche che potrebbero influire sull’elenco di IntelliSense e, se necessario, lo aggiorna. Gli script negli archivi remoti, ad esempio quelli a cui viene fatto riferimento tramite HTTP, non vengono monitorati.
 
@@ -122,7 +122,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
  JavaScript IntelliSense include riferimenti di programmazione per elementi DOM DHTML (Dynamic HTML), ad esempio `body`, `form` e `div`. Solo gli elementi inclusi nel documento corrente e la pagina master vengono visualizzati da IntelliSense. JavaScript IntelliSense supporta inoltre gli oggetti `window` e `document` e i relativi membri.
 
 ###  <a name="IntrinsicObjects"></a> Oggetti intrinseci
- JavaScript IntelliSense include riferimenti di programmazione per oggetti intrinseci, tra cui `Array`, `String`, `Math`, `Date` e `Number`. Per altre informazioni sugli oggetti intrinseci, vedere [Oggetti intrinseci](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ JavaScript IntelliSense include riferimenti di programmazione per oggetti intrinseci, tra cui `Array`, `String`, `Math`, `Date` e `Number`. Per altre informazioni sugli oggetti intrinseci, vedere [gli oggetti predefiniti Standard](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Variabili definite dall'utente, funzioni e oggetti
  Quando si modifica un file JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] analizza i documenti aperti e quelli a cui viene fatto riferimento per determinare tutte le risorse di codice disponibili, ad esempio le variabili, le funzioni e gli oggetti creati. Queste risorse diventano quindi disponibili per JavaScript IntelliSense.
@@ -137,7 +137,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 
  Se non si utilizza una pagina Web ASP.NET per AJAX, è possibile fare riferimento a un file script esterno utilizzando l'attributo `src` nel tag di apertura di un elemento `script`. L'attributo `src` specifica l’URL a un file esterno che contiene il codice sorgente o i dati di origine.
 
- L'esempio seguente mostra il markup che usa l'attributo `src` in un tag <`script`> per fare riferimento a un file di script.
+ Nell'esempio seguente viene illustrato il markup che utilizza il `src` dell'attributo una <`script`> tag per fare riferimento a un file di script.
 
 ```html
 <script type="text/javascript" src="~/Scripts/JavaScript.js">
@@ -213,7 +213,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 
 -   Se viene specificato un riferimento alla pagina, non sono consentiti altri tipi di direttive di riferimento.
 
--   I nomi di file utilizzano percorsi relativi. È possibile usare l'operatore tilde (`~`) per creare percorsi relativi alla directory radice dell'applicazione.
+-   I nomi di file utilizzano percorsi relativi. È possibile utilizzare l'operatore tilde (`~`) per creare percorsi relativi alla directory radice dell'applicazione.
 
 -   I percorsi assoluti vengono ignorati.
 
