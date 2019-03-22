@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707068"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323685"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurare l'impatto di estensione in avvio
 
@@ -74,11 +74,11 @@ Usando le API dei / o asincrone e il caricamento del pacchetto asincrona deve as
 
 Uno dei modelli comuni nell'inizializzazione del pacchetto consiste nell'inizializzare servizi usato da o fornite da tale pacchetto nel pacchetto `constructor` o `initialize` (metodo). Mentre in questo modo i servizi sono pronti per essere usato, è anche possibile aggiungere costi non necessari per creare un pacchetto di caricamento se tali servizi non vengono usati immediatamente. Invece, tali servizi devono essere inizializzati su richiesta per ridurre al minimo le operazioni eseguite nell'inizializzazione del pacchetto.
 
-Per i servizi globali forniti da un pacchetto, è possibile usare `AddService` metodi che accettano una funzione in modo differito inizializzare il servizio solo quando richiesto da un componente. Per i servizi usati all'interno del pacchetto, è possibile usare Lazy<T> AsyncLazy o<T> per assicurarsi che i servizi siano inizializzati o eseguire una query al primo utilizzo.
+Per i servizi globali forniti da un pacchetto, è possibile usare `AddService` metodi che accettano una funzione in modo differito inizializzare il servizio solo quando richiesto da un componente. Per i servizi usati all'interno del pacchetto, è possibile usare Lazy\<T > o AsyncLazy\<T > per assicurarsi che i servizi siano inizializzati o eseguire una query al primo utilizzo.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Misurare l'impatto di auto caricare le estensioni usando i log attività
 
-A partire da Visual Studio 2017 Update 3, log attività di Visual Studio ora contiene voci per impatto sulle prestazioni dei pacchetti durante il caricamento di avvio e di soluzione. Per visualizzare queste misure, è necessario avviare Visual Studio con l'opzione /log. e aprire *Activitylog* file.
+A partire da Visual Studio 2017 Update 3, log attività di Visual Studio ora contiene voci per impatto sulle prestazioni dei pacchetti durante il caricamento di avvio e di soluzione. Per visualizzare queste misure, è necessario aprire Visual Studio con l'opzione /log. e aprire *Activitylog* file.
 
 Nel log attività, le voci si trovano in origine "Gestire le prestazioni di Visual Studio" e avrà un aspetto simile al seguente:
 
@@ -141,9 +141,9 @@ Dopo aver impostato l'ambiente di Visual Studio con l'estensione installata, è 
 
 ![menu collect perfview](media/perfview-collect-menu.png)
 
-Le opzioni predefinite fornirà gli stack di chiamate per l'utilizzo della CPU, ma poiché si è interessati anche della durata di blocco, è anche necessario abilitare **Thread ora** stack. Dopo aver completato le impostazioni è possibile fare clic su **Avvia raccolta** e avviare Visual Studio dopo aver avviata la registrazione.
+Le opzioni predefinite fornirà gli stack di chiamate per l'utilizzo della CPU, ma poiché si è interessati anche della durata di blocco, è anche necessario abilitare **Thread ora** stack. Dopo aver completato le impostazioni, è possibile fare clic su **Avvia raccolta** e quindi aprire Visual Studio dopo la registrazione viene avviata.
 
-Prima di interrompere la raccolta, si desidera assicurarsi che Visual Studio è completamente inizializzato, la finestra principale è completamente visibile e se l'estensione dispone degli elementi dell'interfaccia utente che mostrano automaticamente, sono inoltre visibili. Dopo che Visual Studio è stata caricata completamente e viene inizializzata l'estensione, è possibile arrestare la registrazione per analizzare la traccia.
+Prima di interrompere la raccolta, si desidera assicurarsi che Visual Studio è completamente inizializzato, la finestra principale è completamente visibile e se l'estensione dispone degli elementi dell'interfaccia utente che mostrano automaticamente, sono inoltre visibili. Quando Visual Studio è stata caricata completamente e viene inizializzata l'estensione, è possibile arrestare la registrazione per analizzare la traccia.
 
 **Analisi di un oggetto trace con PerfView:**
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194671"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324641"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare le procedure guidate con modelli di progetto
 
@@ -242,7 +242,7 @@ Affinché il modello di progetto personalizzati da usare della procedura guidata
 
      Anche in questo caso, non dimenticare le virgolette. Si dovrebbe essere visualizzata una riga nell'output simile al seguente
 
-     **Token di chiave pubblica è <token>**
+     **Token di chiave pubblica è \<token >**
 
      Prendere nota di questo valore.
 

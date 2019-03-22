@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223351"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323699"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
+# <a name="use-the-c-core-guidelines-checkers"></a>Usare i controlli delle Linee guida di base di C++
 
 Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. I controlli delle linee guida di base vengono installati per impostazione predefinita in Visual Studio 2017 e Visual Studio 2019 e vengono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
 
@@ -59,7 +59,7 @@ Questo esempio illustra alcuni degli avvisi che è possono trovare le regole C++
 
 - C26485 è regola Bounds.3: Decadimento non-matrice di puntatori.
 
-- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, usare `span`.
+- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
 
 Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:
 
@@ -80,7 +80,7 @@ Come vengono aggiunte nuove regole per il controllo di linee guida di base di C+
 Argomenti di riferimento per la maggior parte delle regole sono [C++ Core controllare riferimenti di Visual Studio](code-analysis-for-cpp-corecheck.md).
 
 A partire da Visual Studio 2017 versione 15.3, il set di regole supportati sono:
-- **Le regole di puntatore Owner** imporre [controlla di gestione risorse correlati all'oggetto owner<T> linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Le regole di puntatore Owner** imporre [controlla di gestione risorse correlati all'oggetto owner\<T > linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Le regole di const** imporre [controlli correlati a const delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,7 +153,7 @@ Il compilatore Microsoft Visual C++ include un supporto limitato per la GSL Elim
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Eliminazione di analisi utilizzando le opzioni della riga di comando
+## <a name="suppress-analysis-by-using-command-line-options"></a>Non visualizzare analisi utilizzando le opzioni della riga di comando
 
 Anziché #pragmas, è possibile usare le opzioni della riga di comando nella pagina delle proprietà del file per non visualizzare avvisi per un progetto o un singolo file. Ad esempio, per disabilitare l'avviso 26400 per un file:
 
@@ -170,7 +170,7 @@ Anziché #pragmas, è possibile usare le opzioni della riga di comando nella pag
 In alcuni casi può essere utile per analisi del codice di eseguire operazioni con stato attivato, continuando a utilizzare l'IDE di Visual Studio. Lo scenario di esempio seguente può essere utilizzato per progetti di grandi dimensioni per risparmiare tempo di compilazione e rendono più semplice per filtrare i risultati:
 
 1. Nella shell dei comandi impostare la `esp.extension` e `esp.annotationbuildlevel` variabili di ambiente.
-2. Per ereditare tali variabili, avviare Visual Studio dalla shell dei comandi.
+2. Per ereditare tali variabili, aprire Visual Studio dalla shell dei comandi.
 3. Caricare il progetto e aprire le relative proprietà.
 4. Abilita analisi codice, selezionare i set di regole appropriate, ma non abilitare le estensioni di analisi codice.
 5. Passare al file di cui che si desidera analizzare con il controllo di linee guida di base di C++ e aprirne le relative proprietà.

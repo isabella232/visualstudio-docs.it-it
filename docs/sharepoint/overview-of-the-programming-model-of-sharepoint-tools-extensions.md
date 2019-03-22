@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639336"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325238"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint
   Quando si crea un'estensione per gli strumenti di SharePoint in Visual Studio, si inizia implementando una o più interfacce di estendibilità che vengono esposte dagli strumenti di SharePoint. Nella maggior parte dei casi, si useranno anche altri tipi forniti dagli strumenti di SharePoint per implementare le funzionalità nell'estensione. In alcuni scenari è possibile usare anche tipi in altri modelli a oggetti forniti da Visual Studio e SharePoint. È necessario comprendere lo scopo della ognuno di questi modelli a oggetti e sapere come usarli con loro per creare estensioni per gli strumenti di SharePoint.
@@ -83,7 +83,7 @@ ms.locfileid: "56639336"
 ### <a name="visual-studio-automation-object-model"></a>Modello oggetto di automazione di Visual Studio
  Il modello a oggetti di automazione di Visual Studio fornisce API che è possibile usare per automatizzare i progetti di Visual Studio e l'IDE. Usare il modello a oggetti Visual Studio per eseguire attività correlate al progetto che non sono specifiche dei progetti di SharePoint o per eseguire altre attività di automazione generali in Visual Studio. In genere, questo modello a oggetti viene spesso usato nelle macro e nei componenti aggiuntivi di Visual Studio, ma è possibile usarlo anche nelle estensioni degli strumenti di SharePoint.
 
- La parte principale del modello oggetto di automazione di Visual Studio è definita nel *EnvDTE* assembly. Il *EnvDTE\\<version>DLL* forniscono funzionalità aggiuntive che è stato introdotto in specifiche versioni di Visual Studio. Questi assembly sono inclusi in Visual Studio.
+ La parte principale del modello oggetto di automazione di Visual Studio è definita nel *EnvDTE* assembly. Il *EnvDTE\\\<versione >. dll* forniscono funzionalità aggiuntive che è stato introdotto in specifiche versioni di Visual Studio. Questi assembly sono inclusi in Visual Studio.
 
  Per altre informazioni sul modello a oggetti di automazione, vedere [riferimenti di Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
