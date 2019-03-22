@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio offre diversi strumenti per la distribuzione delle app.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Guide introduttive per conoscere la distribuzione di Visual Studio in 5 minuti</h2>
 
 <ul class="panelContent cardsFTitle">

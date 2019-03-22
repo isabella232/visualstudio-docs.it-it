@@ -19,6 +19,7 @@ Le sottoscrizioni di Visual Studio rappresentano il set di risorse più completo
 Gli amministratori possono accedere a [https://manage.visualstudio.com](https://manage.visualstudio.com) per assegnare le sottoscrizioni ai team.<br>
 I sottoscrittori accedono a [https://my.visualstudio.com](https://my.visualstudio.com) per usufruire dei vantaggi della sottoscrizione.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
