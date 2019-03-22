@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: HT
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195177"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268723"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -416,7 +416,7 @@ Il sistema di progetto Visual C++ si basa sul [sistema di progetto di Visual Stu
 
 ### <a name="project-property-pages"></a>Pagine delle proprietà del progetto
 
-Per informazioni sulla progettazione generale, vedere [estendibilità della piattaforma - parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) e [estendibilità della piattaforma - parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Per informazioni sulla progettazione generale, vedere [Framework multitargeting per i progetti di VC + +](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
 In altre parole, le pagine delle proprietà presenti il **proprietà progetto** finestra di dialogo per un progetto C++ sono definiti dal *regola* file. Un file di regole specifica un set di proprietà da visualizzare nella pagina delle proprietà e come e dove devono essere salvati nel progetto di file. File di regole sono file con estensione XML che usano il formato Xaml. Sono descritti i tipi usati per serializzarle [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Per altre informazioni sull'uso dei file di regole nei progetti, vedere [file di regole XML pagina delle proprietà](/cpp/build/reference/property-page-xml-files).
 
