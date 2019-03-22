@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969720"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873476"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando i dati di IntelliTrace salvati (C#, Visual Basic, C++)
 
@@ -38,7 +38,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
     |----------------|-------------|
     |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità IntelliTrace](../debugger/intellitrace-features.md)|
     |Una sessione di test in Microsoft Test Manager. Ciò consente di associare un file .iTrace a un elemento di lavoro Team Foundation Server.|[Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET e applicazioni SharePoint in esecuzione in fase di distribuzione|-   [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novità di System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET e applicazioni SharePoint in esecuzione in fase di distribuzione|-   [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novità di System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> Selezionare l'operazione da eseguire.
 
@@ -109,7 +109,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 3.  Espandere tale chiamata per rivedere tutte le chiamate e i valori di parametri annidati registrati in quel momento.
 
-     (Tastiera: Per mostrare o nascondere una chiamata annidata, premere il **freccia destra** oppure **freccia sinistra** rispettivamente. Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .
+     Tastiera: per visualizzare o nascondere una chiamata annidata, premere rispettivamente **Freccia DESTRA** o **Freccia SINISTRA** . Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .
 
      Avviare il debug dalla chiamata.
 
@@ -206,7 +206,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     ![Log di IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Per informazioni dettagliate, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+   Per informazioni dettagliate, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Elenco dei thread
  Esaminare i thread registrati che sono stati eseguiti nel processo di destinazione. È possibile avviare il debug dal primo evento IntelliTrace valido in un thread selezionato.
@@ -272,4 +272,4 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Materiale sussidiario
- [Esecuzione di test per il recapito continuo con Visual Studio 2012 - capitolo 6: Una casella degli strumenti di test](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Test per una distribuzione continua con Visual Studio 2012 - Capitolo 6: Casella degli strumenti per test](http://go.microsoft.com/fwlink/?LinkID=255203)

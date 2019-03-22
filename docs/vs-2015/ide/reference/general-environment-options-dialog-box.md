@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752290"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868126"
 ---
 # <a name="general-environment-options-dialog-box"></a>Generale, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Usare questa pagina per modificare i temi di colori, le impostazioni della barra
  **Tema colori**  
  Scegliere il tema colori **Blu**, **Chiaro** o **Scuro** per l'IDE.  
   
- È possibile installare temi predefiniti aggiuntivi e creare temi personalizzati scaricando e installando **Visual Studio 2015 Color Theme Editor** dalla [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nella casella di riepilogo Tema colori.  
+ È possibile installare temi predefiniti aggiuntivi e creare temi personalizzati scaricando e installando **Visual Studio 2015 Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nella casella di riepilogo Tema colori.  
   
  Applicare lo stile Tutte Iniziali Maiuscole nella barra dei menu  
  Per impostazione predefinita, in Visual Studio 2015 i menu sono visualizzati con lo stile **Tutte Iniziali Maiuscole**. Deselezionare questa opzione per impostarli su **TUTTO MAIUSCOLE**.  
