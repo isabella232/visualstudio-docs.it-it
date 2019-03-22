@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722265"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324068"
 ---
 # <a name="create-a-software-development-kit"></a>Creare un software development kit
 Un software development kit (SDK) è una raccolta di API che è possibile fare riferimento come un singolo elemento in Visual Studio. Il **gestione riferimenti** nella finestra di dialogo sono elencati tutti gli SDK pertinenti al progetto. Quando si aggiunge un SDK a un progetto, le API sono disponibili in Visual Studio.
@@ -65,17 +65,17 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
 ### <a name="installation"></a>Installazione
  SDK di estensione possono essere installati per un utente specifico o per tutti gli utenti senza specificare una chiave del Registro di sistema. Per installare un SDK per tutti gli utenti, usare il percorso seguente:
 
- *% Program Files%\Microsoft SDK\<piattaforma di destinazione > \v<platform version number>\ExtensionSDKs*
+ *% Program Files%\Microsoft SDK\<piattaforma di destinazione\>\v < numero di versione della piattaforma\>\ExtensionSDKs*
 
  Per un'installazione specifica dell'utente, usare il percorso seguente:
 
- *Gli SDK %USERPROFILE%\AppData\Local\Microsoft\<piattaforma di destinazione > \v<platform version number>\ExtensionSDKs*
+ *Gli SDK %USERPROFILE%\AppData\Local\Microsoft\<piattaforma di destinazione\>\v < numero di versione della piattaforma\>\ExtensionSDKs*
 
  Se si desidera usare un percorso diverso, è necessario eseguire una delle seguenti operazioni:
 
 1.  Specificata in una chiave del Registro di sistema:
 
-     **Gli SDK HKLM\Software\Microsoft\Microsoft\<piattaforma di destinazione > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **Gli SDK HKLM\Software\Microsoft\Microsoft\<piattaforma di destinazione > \v < numero di versione della piattaforma\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      e aggiungere una sottochiave (impostazione predefinita) che ha un valore pari `<path to SDK><SDKName><SDKVersion>`.
 

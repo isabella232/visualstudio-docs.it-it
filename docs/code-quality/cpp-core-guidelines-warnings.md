@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872434"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323451"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 
@@ -64,7 +64,7 @@ Questo esempio illustra alcuni degli avvisi che è possono trovare le regole C++
 
 - C26485 è regola Bounds.3: Decadimento non-matrice di puntatori.
 
-- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, usare `span`.
+- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
 
 Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:
 
@@ -84,7 +84,7 @@ Linee guida di base di C++ sono presenti che consentono di scrivere codice migli
 
 Come vengono aggiunte nuove regole per il controllo di linee guida di base di C++, può aumentare il numero di avvisi generati per il codice preesistente. È possibile usare set di regole predefiniti per filtrare quali tipi di regole da abilitare. A partire da Visual Studio 2017 versione 15.3, il set di regole supportati sono:
 
-  - **Le regole di puntatore Owner** imporre [controlla di gestione risorse correlati all'oggetto owner<T> linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Le regole di puntatore Owner** imporre [controlla di gestione risorse correlati all'oggetto owner\<T > linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Le regole di const** imporre [controlli correlati a const delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Anziché #pragmas, è possibile usare opzioni della riga di comando nella pagina
 In alcuni casi può essere utile per analisi del codice di eseguire operazioni con stato attivato e comunque sfruttare l'IDE di Visual Studio. Di seguito è uno scenario di esempio che può essere usato per i progetti di grandi dimensioni per risparmiare tempo di compilazione e rendono più semplice per filtrare i risultati.
 
 1. Nella shell dei comandi impostare la `esp.extension` e `esp.annotationbuildlevel` variabili di ambiente.
-2. Avviare Visual Studio dalla shell dei comandi per ereditare tali variabili.
+2. Aprire Visual Studio dalla shell dei comandi per ereditare tali variabili.
 3. Caricare il progetto e aprire le relative proprietà.
 4. Abilita analisi codice, selezionare i set di regole appropriate, ma non abilitare le estensioni di analisi codice.
 5. Passare al file di cui che si desidera analizzare con il controllo di linee guida di base di C++ e aprirne le relative proprietà.

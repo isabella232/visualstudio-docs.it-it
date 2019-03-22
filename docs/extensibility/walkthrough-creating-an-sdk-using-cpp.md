@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689681"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325068"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: Creare un SDK con C++
 Questa procedura dettagliata illustra come creare una libreria C++ nativa math SDK, il SDK come un Visual Studio Extension (VSIX), pacchetto e quindi usarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:
@@ -135,7 +135,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
 
 17. Nelle **Esplora File**, passare al *$SolutionRoot$ \NativeMathVSIX\bin\Debug* cartella e quindi eseguire *NativeMathVSIX.vsix* per avviare l'installazione.
 
-18. Scegliere il **installare** pulsante, attendere il completamento dell'installazione e quindi avviare Visual Studio.
+18. Scegliere il **installare** pulsante, attendere il completamento dell'installazione e quindi aprire Visual Studio.
 
 ##  <a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi
 

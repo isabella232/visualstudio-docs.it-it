@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937942"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323149"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 
@@ -131,7 +131,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     Struttura
+     Contorno
 
     ```xml
     Stroke="ColorNameOrHexadecimalValue"
@@ -286,29 +286,29 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Questa espressione utilizza la notazione BNF (Backus-Naur Form) seguente:
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression >:: = \<espressione > \<operatore > \<espressione >
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression >:: = "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding >
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall >:: = \<identificatore > "(" \<MethodArgs > "")""
 
-    <PropertyGet> :: = Identificatore
+    \<PropertyGet >:: = identificatore
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    <Identifier> ::= [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    <Literal> :: = valore letterale stringa singola o tra virgolette doppie
+    \<Valore letterale >:: = valore letterale stringa singola o tra virgolette doppie
 
-    <Number> :: = stringa di cifre con virgola decimale facoltativa
+    \<Numero >:: = stringa di cifre con virgola decimale facoltativa
 
     È possibile specificare più `<Condition/>` elementi, che devono essere tutti true per applicare lo stile.
 
@@ -373,9 +373,9 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
  In questo esempio:
 
-1.  Se `Coverage` è > 80, impostare la proprietà `Background` su verde.
+1.  Se `Coverage` è > 80, quindi impostare il `Background` proprietà verde.
 
-2.  Se invece `Coverage` è > 50, impostare la proprietà `Background` su una sfumatura di arancione in base al valore della proprietà `Coverage`.
+2.  Se invece `Coverage` è > 50, quindi impostare il `Background` proprietà di una sfumatura di arancione in base al valore del `Coverage` proprietà.
 
 3.  Diversamente impostare la proprietà `Background` su una sfumatura di rosso in base al valore della proprietà `Coverage`.
 
@@ -406,7 +406,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 </DirectedGraph>
 ```
 
- Impostare la proprietà `Shape` su `None`, in modo che l'icona sostituisca la forma. Usare la proprietà `Icon` per specificare la posizione dell'icona.
+ Impostare la proprietà `Shape` su `None`, in modo che l'icona sostituisca la forma. Utilizzare la proprietà `Icon` per specificare la posizione dell'icona.
 
 ```xml
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
@@ -497,7 +497,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     </Nodes>
     ```
 
-     Aggiungere un elemento `<Category/>` alla sezione `<Categories>` in modo che sia possibile usare l'attributo `Label` per specificare il testo visualizzato per tale categoria:
+     Aggiungere un elemento `<Category/>` alla sezione `<Categories>` in modo che sia possibile utilizzare l'attributo `Label` per specificare il testo visualizzato per tale categoria:
 
     ```xml
     <Categories>
@@ -519,7 +519,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     </Links>
     ```
 
-4.  Aggiungere un elemento `<Category/>` alla sezione `<Categories>` in modo che sia possibile usare l'attributo `Label` per specificare il testo visualizzato per tale categoria:
+4.  Aggiungere un elemento `<Category/>` alla sezione `<Categories>` in modo che sia possibile utilizzare l'attributo `Label` per specificare il testo visualizzato per tale categoria:
 
     ```xml
     <Categories>
@@ -555,7 +555,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
  È possibile collegare documenti o URL a un elemento di codice oppure a collegamenti modificando il file con estensione dgml della mappa e aggiungendo un attributo `Reference` all'elemento `<Node/>` per un elemento di codice oppure all'elemento `<Link/>` per un collegamento. È quindi possibile aprire e visualizzare il contenuto dall'elemento di codice o dal collegamento. L'attributo `Reference` specifica il percorso di tale contenuto. Il percorso può essere assoluto oppure relativo alla posizione del file con estensione dgml.
 
 > [!CAUTION]
->  Se si usano percorsi relativi e se il file con estensione dgml viene spostato in un percorso diverso, i percorsi non saranno più risolvibili. Quando si tenta di aprire e visualizzare il contenuto collegato, si verificherà un errore che informa che il contenuto non può essere visualizzato.
+>  Se si utilizzano percorsi relativi e se il file con estensione dgml viene spostato in un percorso diverso, i percorsi non saranno più risolvibili. Quando si tenta di aprire e visualizzare il contenuto collegato, si verificherà un errore che informa che il contenuto non può essere visualizzato.
 
  Ad esempio, è possibile collegare i seguenti elementi di codice:
 
@@ -621,7 +621,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Sulla mappa il nome dell'elemento di codice viene visualizzato sottolineato. Quando si apre il menu di scelta rapida per l'elemento di codice o il collegamento, si noterà una **Vai a riferimento** menu di scelta rapida che contiene gli elementi di codice collegati da scegliere.
 
-4. Usare l'attributo `ReferenceTemplate` per specificare una stringa comune, ad esempio un URL, usata da più riferimenti anziché ripetere tale stringa nel riferimento.
+4. Utilizzare l'attributo `ReferenceTemplate` per specificare una stringa comune, ad esempio un URL, utilizzata da più riferimenti anziché ripetere tale stringa nel riferimento.
 
     L'attributo `ReferenceTemplate` specifica un segnaposto per il valore del riferimento. Nell'esempio seguente il segnaposto `{0}` nell'attributo `ReferenceTemplate` verrà sostituito dai valori degli attributi `MyFirstReference` e `MySecondReference` nell'elemento `<Node/>` per produrre un percorso completo:
 
