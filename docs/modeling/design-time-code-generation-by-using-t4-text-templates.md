@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323424"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355789"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 Modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o database che contiene informazioni chiave sui requisiti dell'applicazione.
@@ -120,7 +120,7 @@ Modelli di testo T4 in fase di progettazione consentono di generare codice progr
 
    Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
-   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la direttiva `template` deve includere `language="VB"`. Il valore predefinito è `"C#"`.
+   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la direttiva `template` deve includere `language="VB"`. `"C#"` è il valore predefinito.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debug di un modello di testo T4 in fase di progettazione
  Per eseguire il debug di un modello di testo:
@@ -141,7 +141,7 @@ Modelli di testo T4 in fase di progettazione consentono di generare codice progr
 >  È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generazione di codice o risorse per la soluzione
- È possibile generare file di programma diversi in base al modello. Un modello è un input quale un database, un file di configurazione, un modello UML, un modello DSL o un'altra origine. Di solito si generano diversi file di programma dallo stesso modello. Per ottenere questo risultato, creare un file di modello per ogni file di programma generato e fare in modo che tutti i modelli leggano lo stesso modello.
+ È possibile generare file di programma diversi in base al modello. Un modello è un input quale un database, un file di configurazione, un modello UML, un modello DSL o un'altra origine. In genere si generano diversi file di programma dallo stesso modello. Per ottenere questo risultato, creare un file di modello per ogni file di programma generato e fare in modo che tutti i modelli leggano lo stesso modello.
 
 #### <a name="to-generate-program-code-or-resources"></a>Per generare codice programma o risorse
 
