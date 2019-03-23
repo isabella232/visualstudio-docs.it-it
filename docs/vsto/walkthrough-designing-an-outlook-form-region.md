@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633863"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355578"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procedura dettagliata: Progettare un'area del modulo di Outlook
   Le aree del modulo personalizzate estendono i moduli standard o personalizzati di Microsoft Office Outlook. In questa procedura dettagliata verrà progettata un'area del modulo personalizzata che viene visualizzata come una nuova pagina nella finestra di controllo di un contatto. Quest'area del modulo visualizza una mappa di ogni indirizzo elencato per il contatto, inviando le informazioni sull'indirizzo al sito Web di ricerca locale di Windows Live. Per informazioni sulle aree del modulo, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56633863"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] o versione successiva.
 
   ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una versione video di questo argomento, vedere [Video come: Progettare un'area del modulo Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).
 
@@ -114,7 +114,7 @@ ms.locfileid: "56633863"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Per personalizzare il comportamento dell'area del modulo
 
-1. In **Esplora soluzioni**, fare clic destro *MapIt.cs* o *MapIt. vb*, quindi fare clic su **Visualizza codice**.
+1. Nel **Esplora soluzioni**, fare doppio clic su *MapIt.cs* oppure *MapIt*, quindi fare clic su **Visualizza codice**.
 
     *MapIt.cs* oppure *MapIt* viene aperto nell'Editor del codice.
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633863"
 4.  Salvare e chiudere il contatto.
 
 5.  Riaprire il **Ann Beebe** contatto.
+
+    In Outlook, questa operazione può essere eseguita **trovare** aprendo la Rubrica per i contatti o digitando Ann Beebe nel gruppo **Cerca persone**.
 
 6.  Nel **mostrare** gruppo della barra multifunzione dell'elemento, fare clic su **Map It** per aprire l'area del modulo Map It.
 
