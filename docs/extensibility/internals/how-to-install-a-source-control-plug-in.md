@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635189"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323386"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: Installare un plug-in del controllo del codice sorgente
 Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
@@ -78,7 +78,7 @@ Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
 
 4. Creare una sottochiave denominata **InstalledSCCProviders** sotto il **SourceCodeControlProvider** sottochiave e quindi inserire una voce sotto tale sottochiave.
 
-    Il nome di questa voce è il nome leggibile dall'utente del provider (lo stesso come il valore specificato per la voce SCCServerName) e il valore è, ancora una volta, la sottochiave creata nel passaggio 1. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *SOFTWARE\\< nome società\> \\< nome del prodotto\>*.
+    Il nome di questa voce è il nome leggibile dall'utente del provider (lo stesso come il valore specificato per la voce SCCServerName) e il valore è, ancora una volta, la sottochiave creata nel passaggio 1. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome visualizzato\>** = *SOFTWARE\\< società nome\>\\< nome prodotto\>*.
 
     Ad esempio:
 
