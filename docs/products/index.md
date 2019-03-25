@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Documentazione di Visual Studio | Microsoft Docs
-description: 'Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.'
+title: Prodotti di Visual Studio | Microsoft Docs
+description: Esplorare la famiglia di prodotti di Visual Studio.
 ms.topic: landing-page
 searchScope: []
 ---
