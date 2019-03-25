@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922290"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069658"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -35,28 +35,38 @@ Per informazioni su come eseguire i test dalla riga di comando, vedere [Opzioni 
 
 ## <a name="create-a-project-to-test"></a>Creare un progetto da sottoporre a test
 
+::: moniker range="vs-2017"
+
 1. Aprire Visual Studio.
 
-2. Nel menu **File** selezionare **Nuovo** > **Progetto**.
+2. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-3. In **Modelli installati**fare clic su **Visual C#**.
+::: moniker-end
 
-4. Nell'elenco di tipi di applicazione fare clic su **Libreria di classi**.
+::: moniker range=">=vs-2019"
 
-5. Digitare **Bank** nella casella **Nome**, quindi scegliere **OK**.
+1. Aprire Visual Studio.
 
-   Viene creato nuovo progetto Bank, visualizzato in **Esplora soluzioni** con il file *Class1.cs* aperto nell'editor di codice.
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+::: moniker-end
+
+3. Scegliere il modello di progetto di libreria di classi C#.
+
+4. Denominare il progetto **Bank** e quindi fare clic su **OK** oppure su **Crea**.
+
+   Il progetto Bank viene creato e visualizzato in **Esplora soluzioni** con il file *Class1.cs* aperto nell'editor del codice.
 
    > [!NOTE]
    > Se il file *Class1.cs* non fosse aperto nell'editor del codice, fare doppio clic sul file *Class1.cs* in **Esplora soluzioni**.
 
-6. Copiare il codice sorgente del [progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md) e sostituire il contenuto originale di *Class1.cs* con il codice copiato.
+5. Copiare il codice sorgente del [progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md) e sostituire il contenuto originale di *Class1.cs* con il codice copiato.
 
-7. Salvare il file come *BankAccount.cs*.
+6. Salvare il file come *BankAccount.cs*.
 
-8. Scegliere **Compila soluzione** dal menu **Compila**.
+7. Scegliere **Compila soluzione** dal menu **Compila**.
 
 A questo punto è disponibile un progetto denominato Bank che contiene il codice sorgente da testare e gli strumenti da usare a questo scopo. Nello spazio dei nomi per Bank, BankAccountNS, è presente la classe pubblica BankAccount, i cui metodi saranno testati nelle routine seguenti.
 
@@ -346,7 +356,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non attivi un <xref:System.ArgumentOutOfRangeException> né tantomeno generi il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se il valore `debitAmount` è valido, ovvero è minore del saldo ma maggiore di zero, non sarà intercettata alcuna eccezione e quindi non verrà mai attivata l'asserzione. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non generi una <xref:System.ArgumentOutOfRangeException> né tantomeno restituisca il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se il valore `debitAmount` è valido, ovvero è minore del saldo ma maggiore di zero, non sarà intercettata alcuna eccezione e quindi non verrà mai attivata l'asserzione. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 

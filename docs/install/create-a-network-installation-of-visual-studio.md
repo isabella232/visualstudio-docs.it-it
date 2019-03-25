@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954021"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57871327"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Creare un'installazione di rete di Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
 In genere un amministratore aziendale crea un punto di installazione di rete per la distribuzione nelle workstation client. Visual Studio 2017 è stato progettato in modo da consentire di memorizzare nella cache i file per l'installazione iniziale insieme a tutti gli aggiornamenti di prodotto in una singola cartella. Questo processo è anche definito _creazione di un layout_. 
 
@@ -48,7 +48,7 @@ Altri programmi di bootstrap supportati includono [vs_buildtools.exe](https://ak
 Per completare questo passaggio è necessario avere una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare uno dei comandi degli esempi seguenti.
 
    > [!IMPORTANT]
-   > Un layout di Visual Studio 2017 completo richiede almeno 35 GB di spazio su disco e, pertanto, può essere necessario molto tempo per scaricarlo.  Vedere la sezione [Personalizzazione del layout di rete](#customizing-the-network-layout) per informazioni su come creare un layout contenente solo i componenti che si vuole installare.
+   > Un layout di Visual Studio 2017 completo richiede almeno 35 GB di spazio su disco e, pertanto, può essere necessario molto tempo per scaricarlo.  Vedere la sezione [Personalizzare del layout di rete](#customize-the-network-layout) per informazioni su come creare un layout contenente solo i componenti che si vogliono installare.
    >
    > [!TIP]
    > Assicurarsi di eseguire il comando dalla directory Download. In genere il percorso di questa cartella è `C:\Users\<username>\Downloads` in un computer con Windows 10.
@@ -127,7 +127,7 @@ Gli esempi seguenti illustrano come creare un layout parziale personalizzato.
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>Novità nella versione 15.3
+### <a name="new-in-version-153"></a>Novità della versione 15.3
 
 Quando si esegue un comando relativo al layout, le opzioni specificate vengono salvate (ad esempio le lingue e i carichi di lavoro). I comandi successivi relativi al layout includeranno tutte le opzioni precedenti.  Ecco un esempio di un layout con un carico di lavoro solo per la lingua inglese:
 
@@ -209,7 +209,7 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Aggiornare un'installazione di rete di Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913275"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069827"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Impostazioni dell'ambiente per Visual Studio
 
-Quando si avvia Visual Studio per la prima volta, è possibile scegliere una raccolta di impostazioni per ottimizzare l'ambiente di sviluppo per il tipo di sviluppo più frequente. Ogni raccolta consente di ottimizzare elementi quali i tasti di scelta rapida, i layout delle finestre, i modelli di progetto e di elemento e la visibilità dei comandi.
+Quando si apre Visual Studio per la prima volta, è possibile scegliere una raccolta di impostazioni per ottimizzare l'ambiente di sviluppo per il tipo di sviluppo più frequente. Ogni raccolta consente di ottimizzare elementi quali i tasti di scelta rapida, i layout delle finestre, i modelli di progetto e di elemento e la visibilità dei comandi.
 
 Sono disponibili le raccolte di impostazioni seguenti:
 
@@ -30,7 +30,7 @@ Sono disponibili le raccolte di impostazioni seguenti:
 
 ## <a name="reset-settings"></a>Reimpostare le impostazioni
 
-Per modificare le impostazioni di sviluppo quando si avvia Visual Studio in seguito, eseguire questa procedura:
+Per modificare le impostazioni di sviluppo quando si apre Visual Studio in seguito, eseguire questa procedura:
 
 1. Selezionare **Strumenti** > **Importa/Esporta impostazioni** dalla barra dei menu per aprire l'**Importazione/Esportazione guidata delle impostazioni**.
 

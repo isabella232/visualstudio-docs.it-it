@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee5e9c9872074d43e418dcbc33d11347c53ef02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952567"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867037"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -24,8 +24,11 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 È possibile usare le azioni rapide per:
 
 - Applicare una correzione del codice per la violazione di una regola dell'[analizzatore del codice](../code-quality/roslyn-analyzers-overview.md)
-- [Eliminare](../code-quality/use-roslyn-analyzers.md) la violazione di una regola dell'analizzatore del codice
+
+- [Eliminare](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice
+
 - Effettuare un refactoring (ad esempio [impostare come inline una variabile temporanea](../ide/reference/inline-temporary-variable.md))
+
 - Generare codice (ad esempio [introdurre una variabile locale](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
@@ -33,7 +36,7 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 
 Le azioni rapide possono essere applicate usando le icone a forma di lampadina ![icona lampadina](media/light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/screwdriver-icon.png) oppure premendo **CTRL**+**.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
 
-È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio si illumineranno in base a tali regole.
+È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio compariranno in base a tali regole.
 
 ## <a name="icons"></a>Icone
 
@@ -41,17 +44,17 @@ L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di co
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Per visualizzare una lampadina o un cacciavite
 
-- Se è disponibile una correzione, le lampadine vengono visualizzate spontaneamente quando si passa il mouse sulla posizione di un errore.
+Se è disponibile una correzione, le lampadine compaiono:
+
+- Quando si passa il puntatore del mouse sulla posizione di un errore
 
    ![Lampadina con passaggio del puntatore del mouse](../ide/media/vs2015_lightbulb_hover.png)
 
-- Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per cui è disponibile un'azione rapida.
+- Nel margine sinistro dell'editor quando si sposta il punto di inserimento (cursore) sulla riga di codice applicabile
 
-- Premere **CTRL**+**.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
+È anche possibile premere **CTRL**+**.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 
-## <a name="to-see-potential-fixes"></a>Per visualizzare le potenziali correzioni
-
-Selezionare la freccia GIÙ accanto alla lampadina o il collegamento **Mostra correzioni potenziali** per visualizzare un elenco delle azioni rapide disponibili.
+Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla lampadina o il collegamento **Mostra correzioni potenziali**. Viene visualizzato un elenco delle azioni rapide disponibili.
 
 ![Lampadina espansa](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223520"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984118"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -112,25 +112,39 @@ Per determinare quale percentuale del codice del progetto viene effettivamente t
 
 Di seguito sono illustrati i passaggi per abilitare i framework di test di terze parti:
 
+::: moniker range="vs-2017"
+
 1. Nella barra dei menu scegliere **Strumenti** > **Estensioni e aggiornamenti**.
 
-1. Nella finestra di dialogo **Estensioni e aggiornamenti** espandere la categoria **Online** e quindi scegliere **Visual Studio Marketplace**. Scegliere **Strumenti** > **Test**.
+2. Nella finestra di dialogo **Estensioni e aggiornamenti** espandere la categoria **Online** e quindi scegliere **Visual Studio Marketplace**. Scegliere **Strumenti** > **Test**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Selezionare il framework o adapter da installare e quindi scegliere **Scarica**.
+::: moniker-end
 
-1. Creare un progetto libreria di classi e aggiungerlo alla soluzione.
+::: moniker range=">=vs-2019"
+
+1. Scegliere **Estensioni** > **Gestisci estensioni** dalla barra dei menu.
+
+2. Nella finestra di dialogo **Gestisci estensioni** espandere la categoria **Online** e quindi **Visual Studio Marketplace**. Scegliere **Strumenti** > **Test**.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Selezionare il framework o adapter da installare e quindi scegliere **Scarica**.
+
+4. Creare un progetto libreria di classi e aggiungerlo alla soluzione.
 
    ![Assegnare un nome al progetto di libreria di classi e aggiungerlo](media/create3rdpartyunittest3.png)
 
-1. Installare il plug-in. In **Esplora soluzioni** selezionare il progetto di libreria di classi e quindi scegliere **Gestisci pacchetti NuGet** dal menu di scelta rapida o dal menu a comparsa.
+5. Installare il plug-in. In **Esplora soluzioni** selezionare il progetto di libreria di classi e quindi scegliere **Gestisci pacchetti NuGet** dal menu di scelta rapida o dal menu a comparsa.
 
    ![Gestire i pacchetti NuGet per installare il plug-in](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) è un'estensione di Visual Studio che si può usare per aggiungere e aggiornare librerie e strumenti per i progetti.
 
-1. Nella finestra **Gestione pacchetti NuGet** cercare e selezionare il plug-in e quindi scegliere **Installa**.
+6. Nella finestra **Gestione pacchetti NuGet** cercare e selezionare il plug-in e quindi scegliere **Installa**.
 
    ![Installare il framework di terze parti](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Di seguito sono illustrati i passaggi per abilitare i framework di test di terze
 
    ![Il riferimento per il framework di unit test di terze parti viene aggiunto alla soluzione](media/create3rdpartyunittest6.png)
 
-1. Dal nodo **Riferimenti** del progetto di libreria di classi selezionare **Aggiungi riferimento**.
+7. Dal nodo **Riferimenti** del progetto di libreria di classi selezionare **Aggiungi riferimento**.
 
    ![Aggiungere un riferimento al progetto](media/createunittest6.png)
 
-1. Nella finestra di dialogo **Gestione riferimenti** selezionare il progetto che contiene il codice che verrà testato.
+8. Nella finestra di dialogo **Gestione riferimenti** selezionare il progetto che contiene il codice che verrà testato.
 
    ![Selezionare il progetto di codice da testare](media/createunittest7.png)
 
-1. Aggiungere codice all'unit test.
+9. Aggiungere codice all'unit test.
 
    ![Aggiungere codice al file di codice dello unit test](media/create3rdpartyunittest7.png)
 

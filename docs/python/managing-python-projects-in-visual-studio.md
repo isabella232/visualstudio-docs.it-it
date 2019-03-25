@@ -1,7 +1,7 @@
 ---
 title: Gestire progetti di applicazioni Python
 description: I progetti in Visual Studio gestiscono le dipendenze tra i file e la complessità delle relazioni in un'applicazione.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155864"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194341"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -29,8 +29,13 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> Visual Studio viene eseguito correttamente con il codice Python anche senza un progetto. Ad esempio, è possibile aprire un file Python e usare le funzionalità IntelliSense, di completamento automatico e di debug facendo clic con il pulsante destro del mouse nell'editor e scegliendo **Avvia eseguendo debug**. Dal momento che tale codice usa sempre l'ambiente globale predefinito, è però possibile notare completamenti non corretti o completamenti errati se il codice è destinato a un ambiente diverso. Visual Studio inoltre analizza tutti i file e tutti i pacchetti presenti nella cartella da cui viene aperto il singolo file e questo potrebbe causare un notevole consumo del tempo della CPU.
+> Visual Studio 2019 supporta l'apertura di una cartella contenente codice Python e l'esecuzione del codice senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md). L'uso di un file di progetto offre tuttavia alcuni vantaggi, come illustrato in questa sezione.
+::: moniker-end
+
+> [!Tip]
+> Senza un progetto, tutte le versioni di Visual Studio funzionano correttamente con il codice Python. Ad esempio, è possibile aprire un file Python e usare le funzionalità IntelliSense, di completamento automatico e di debug facendo clic con il pulsante destro del mouse nell'editor e scegliendo **Avvia eseguendo debug**. Dal momento che tale codice usa sempre l'ambiente globale predefinito, è però possibile notare completamenti non corretti o completamenti errati se il codice è destinato a un ambiente diverso. Visual Studio inoltre analizza tutti i file e tutti i pacchetti presenti nella cartella da cui viene aperto il singolo file e questo potrebbe causare un notevole consumo del tempo della CPU.
 >
 > Creare un progetto di Visual Studio da codice esistente è davvero semplicissimo, come descritto in [Creare un progetto da file esistenti](#create-project-from-existing-files).
 
@@ -42,14 +47,23 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 
 Durante lo sviluppo dell'applicazione è in genere necessario aggiungere al progetto nuovi file di tipi diversi. Per aggiungere tali file, è possibile fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi** > **Elemento esistente**, che consente di individuare e selezionare un file da aggiungere. È anche possibile scegliere **Aggiungi** > **Nuovo elemento**, che consente di visualizzare una finestra di dialogo con numerosi modelli di elemento. Come descritto nel riferimento ai [modelli di elemento](python-item-templates.md), le opzioni includono file Python vuoti, una classe Python, uno unit test e diversi file correlati ad applicazioni Web. È possibile esaminare queste opzioni usando un progetto di test per scoprire quali elementi sono inclusi nella propria versione di Visual Studio.
 
-A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in **Esplora soluzioni**. Si tratta del file che viene eseguito all'avvio del debug (con **F5** o **Debug** > **Avvia debug**) oppure quando si esegue il progetto nella finestra **Interattiva** (con **MAIUSC**+**ALT**+**F5** o **Debug** > **Esegui progetto in Python interattivo**). Per cambiarlo, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come file di avvio**.
+A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in **Esplora soluzioni**. Si tratta del file che viene eseguito all'avvio del debug (con **F5** o **Debug** > **Avvia debug**) oppure quando si esegue il progetto nella finestra **Interattiva** (con **MAIUSC**+**ALT**+**F5** o **Debug** > **Esegui progetto in Python interattivo**). Per modificare il valore, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come elemento di avvio** (o **Imposta come file di avvio** nelle versioni precedenti di Visual Studio).
 
 > [!Tip]
 > Se si rimuove il file di avvio selezionato da un progetto e non se ne seleziona uno nuovo, Visual Studio non sa quale file di Python usare per l'avvio quando si tenta di eseguire il progetto. In questo caso, Visual Studio 2017 versione 15.6 e versioni successive visualizzano un errore. Le versioni precedenti aprono una finestra di output con l'interprete Python in esecuzione oppure la finestra di output viene visualizzata ma scompare quasi immediatamente. In presenza di questi comportamenti, verificare che sia stato assegnato un file di avvio.
 >
 > Se si vuole mantenere aperta la finestra di output per qualsiasi motivo, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà**, selezionare la scheda **Debug** e quindi aggiungere `-i` al campo **Argomenti dell'interprete**. Questo argomento fa sì che l'interprete passi in modalità interattiva dopo il completamento di un programma, mantenendo la finestra aperta fino a quando non viene premuto **CTRL**+**Z** > **INVIO** per chiuderla.
 
-Un nuovo progetto è sempre associato all'ambiente Python globale predefinito. Per associare il progetto a un altro ambiente (inclusi gli ambienti virtuali), fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** nel progetto, scegliere **Aggiungi/Rimuovi ambienti Python** e selezionare quelli desiderati. Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'ambiente desiderato e scegliere **Attiva ambiente**, come illustrato di seguito. Per altre informazioni, vedere [Selezionare un ambiente per un progetto](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Un nuovo progetto è sempre associato all'ambiente Python globale predefinito. Per associare il progetto a un altro ambiente (inclusi gli ambienti virtuali), fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** nel progetto, scegliere **Aggiungi/Rimuovi ambienti Python** e selezionare quelli desiderati.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Un nuovo progetto è sempre associato all'ambiente Python globale predefinito. Per associare il progetto a un altro ambiente (inclusi gli ambienti virtuali), fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** nel progetto, scegliere **Aggiungi ambiente** e selezionare quelli desiderati. È anche possibile usare l'elenco a discesa degli ambienti sulla barra degli strumenti per selezionare un ambiente o aggiungerne un altro per il progetto.
+
+![Comando Aggiungi ambiente sulla barra degli strumenti Python](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'ambiente desiderato in **Esplora soluzioni** e scegliere **Attiva ambiente**, come illustrato di seguito. Per altre informazioni, vedere [Selezionare un ambiente per un progetto](selecting-a-python-environment-for-a-project.md).
 
 ![Attivazione di un ambiente per un progetto Python](media/projects-activate-environment.png)
 
@@ -63,7 +77,7 @@ In Visual Studio sono disponibili diverse opzioni per configurare un progetto Py
 
 La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 (non tutti i modelli sono disponibili nelle versioni precedenti):
 
-| Modello | Descrizione |
+| Modello | Description |
 | --- | --- |
 | [**Da codice Python esistente**](#create-project-from-existing-files) | Crea un progetto di Visual Studio da codice Python esistente in una struttura di cartelle.  |
 | **Applicazione Python** | Struttura di progetto di base per una nuova applicazione Python che contiene un solo file di origine vuoto. Per impostazione predefinita, il progetto viene eseguito nell'interprete della console dell'ambiente globale predefinito, che è possibile modificare [assegnando un altro ambiente](selecting-a-python-environment-for-a-project.md). |

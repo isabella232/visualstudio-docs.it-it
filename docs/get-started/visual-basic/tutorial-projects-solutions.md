@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955622"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069619"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -38,17 +38,35 @@ Nonostante il nome, una soluzione non è una "risposta". Una soluzione è sempli
 
 Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza sufficiente di Visual Studio, la creazione di soluzioni vuote verrà probabilmente usata di rado. Quando si crea un nuovo progetto in Visual Studio, viene creata automaticamente una soluzione per ospitare il progetto, nel caso in cui non sia già presente una soluzione aperta.
 
+::: moniker range="vs-2017"
+
 1. Aprire Visual Studio.
 
-1. Nella barra dei menu, ovvero la riga dei menu con **File** e **Modifica**, scegliere **File** > **Nuovo** >  **Progetto**.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-1. Nel riquadro sinistro espandere **Altri tipi di progetti**, quindi scegliere **Soluzioni di Visual Studio**. Nel riquadro centrale scegliere il modello **Soluzione vuota**. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere il pulsante **OK**.
+1. Nel riquadro sinistro espandere **Altri tipi di progetti**, quindi scegliere **Soluzioni di Visual Studio**. Nel riquadro centrale scegliere il modello **Soluzione vuota**. Assegnare alla soluzione il nome **QuickSolution** e quindi scegliere **OK**.
 
    ![Modello Soluzione vuota in Visual Studio](../media/tutorial-projects-new-solution.png)
 
    La **Pagina iniziale** si chiude e viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Aprire Visual Studio.
+
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
+
+4. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere **Crea**.
+
+   Viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Aggiungere un progetto
 

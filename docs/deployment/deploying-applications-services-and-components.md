@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742456"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983858"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -91,7 +91,7 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 
 - **Piattaforma UWP**: è possibile creare il pacchetto dell'app e distribuirlo tramite voci di menu. Per altre informazioni, vedere [Creare il pacchetto di un'app UWP con Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Creare un pacchetto dell'app](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Creare un pacchetto dell'applicazione](../deployment/media/feature-tour-create-app-package.jpg)
 
 - **Desktop di Windows**: a partire da Visual Studio 2017 versione 15.4, è possibile eseguire la distribuzione in Microsoft Store tramite Desktop Bridge. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere [Creare il pacchetto di un'app desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
@@ -107,9 +107,9 @@ Se è necessaria un'installazione di un'applicazione desktop più complessa di q
 
 - È possibile creare un pacchetto del programma di installazione basato su MSI usando l'[estensione WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
 
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. È possibile usare InstallShield con Visual Studio 2017 (Community Edition non supportata). Si noti che InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017. Rivolgersi a [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) per informazioni sulla disponibilità futura.
+- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. È possibile usare InstallShield con Visual Studio 2017 e versioni successive. Si noti che InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. Rivolgersi a [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) per informazioni sulla disponibilità futura.
 
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, installare l'[estensione Visual Studio 2017 Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- È possibile creare un pacchetto del programma di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, installare l'[estensione Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
 - È anche possibile installare i componenti prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come programma di avvio automatico. Per altre informazioni, vedere [Prerequisiti per la distribuzione delle applicazioni](../deployment/application-deployment-prerequisites.md).
 
@@ -127,7 +127,7 @@ Se è necessaria un'installazione di un'applicazione desktop più complessa di q
 | --- | --- | --- |
 | **App di Office** | È possibile pubblicare un componente aggiuntivo per Office in Visual Studio. | [Deploy and publish your Office add-in](https://dev.office.com/docs/add-ins/publish/publish) (Distribuire e pubblicare un componente aggiuntivo per Office) |
 | **Servizio WCF o OData** | I servizi WCF RIA distribuiti in un server Web possono essere usati da altre applicazioni. | [Sviluppo e distribuzione di WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch non è più supportato in Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Deploying LightSwitch Applications](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) (Distribuzione di applicazioni LightSwitch) |
+| **LightSwitch** | LightSwitch non è più supportato a partire da Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Deploying LightSwitch Applications](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) (Distribuzione di applicazioni LightSwitch) |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

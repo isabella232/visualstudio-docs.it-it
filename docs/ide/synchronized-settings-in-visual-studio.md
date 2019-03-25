@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221879"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869044"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -41,7 +41,7 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
    - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Avvio**.
 
-   - Tutte le impostazioni nelle pagine delle opzioni **Editor di testo**.
+   - Tutte le impostazioni nella pagina delle opzioni **Editor di testo**, ad esempio le [preferenze di stile per il codice](code-styles-and-quick-actions.md).
 
    - Tutte le impostazioni nelle pagine delle opzioni della **finestra di progettazione XAML**.
 
@@ -75,7 +75,7 @@ Se attualmente sono presenti installazioni side-by-side di Visual Studio e si vu
 
 3. Aprire il **Prompt dei comandi per gli sviluppatori per VS 2017** ed eseguire `devenv /resetuserdata`.
 
-1. Avviare Visual Studio e importare le impostazioni salvate dal file di impostazioni esportato.
+1. Aprire Visual Studio e importare le impostazioni salvate dal file di impostazioni esportato.
 
 ::: moniker-end
 

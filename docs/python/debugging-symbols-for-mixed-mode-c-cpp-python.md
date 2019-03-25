@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951342"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869363"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installare i simboli di debug per interpreti Python
 
@@ -54,7 +54,7 @@ Se i simboli sono stati scaricati separatamente, eseguire i passaggi riportati d
 
     ![Opzioni per i simboli del debugger in modalità mista](media/mixed-mode-debugging-symbols.png)
 
-1. Durante una sessione di debug Visual Studio potrebbero anche richiedere il percorso di un file di origine per l'interprete Python. Se sono stati scaricati file di origine, ad esempio da [python.org/downloads](https://www.python.org/downloads), è ovviamente possibile fare riferimento anche a questi.
+1. Durante una sessione di debug Visual Studio potrebbero anche richiedere il percorso di un file di origine per l'interprete Python. Se sono stati scaricati file di origine, ad esempio da [python.org/downloads/](https://www.python.org/downloads/), è ovviamente possibile fare riferimento anche a questi.
 
 > [!Note]
 > Le funzionalità di memorizzazione nella cache dei simboli presenti nella finestra di dialogo consentono di creare una cache locale dei simboli ottenuti da un'origine online. Queste funzionalità non sono necessarie con i simboli dell'interprete Python, poiché questi sono già disponibili in locale. In ogni caso, per informazioni dettagliate, vedere l'articolo [Specificare simboli e file di origine nel debugger di Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

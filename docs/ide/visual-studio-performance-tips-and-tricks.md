@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222987"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868230"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -25,7 +25,7 @@ I suggerimenti per le prestazioni di Visual Studio si riferiscono a situazioni d
 
 Se si aggiorna il sistema da una versione di Windows a 32 bit a una versione a 64 bit, espandere la quantità di memoria virtuale disponibile per Visual Studio da 2 a 4 GB. Ciò consente a Visual Studio di gestire carichi di lavoro di dimensioni notevolmente maggiori anche tramite il processo a 32 bit.
 
-Per altre informazioni, vedere i [limiti di memoria](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) e la pagina[Use /LARGEADDRESSAWARE on 64-bit Window](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) ( Uso di /LARGEADDRESSAWARE in Windows a 64 bit).
+Per altre informazioni, vedere i [limiti di memoria](/windows/desktop/Memory/memory-limits-for-windows-releases) e la pagina[Use /LARGEADDRESSAWARE on 64-bit Window](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) ( Uso di /LARGEADDRESSAWARE in Windows a 64 bit).
 
 ## <a name="disable-automatic-file-restore"></a>Disabilitare il ripristino automatico dei file
 
@@ -105,7 +105,17 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     Le estensioni sono componenti software aggiuntivi aggiunti di Visual Studio che offrono nuove funzionalità o estendono le funzionalità esistenti. Le estensioni possono spesso dare origine a problemi di memoria. Se si verificano problemi di memoria, provare a disabilitare estensioni una alla volta per verificarne l'impatto su scenario o flusso di lavoro.
 
+   ::: moniker range="vs-2017"
+
     Per disabilitare le estensioni, andare a **Strumenti** > **Estensioni e aggiornamenti** e disabilitare l'estensione specifica.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Per disabilitare le estensioni, andare a **Estensioni** > **Gestisci estensioni** e disabilitare l'estensione specifica.
+
+   ::: moniker-end
 
 - **Disabilitare la finestra di progettazione XAML**
 

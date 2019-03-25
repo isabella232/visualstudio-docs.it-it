@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526516"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151245"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C++ usando il debugger di Visual Studio
 
@@ -25,17 +25,20 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-1. In Visual Studio scegliere **File > Nuovo progetto**.
+1. In Visual Studio scegliere **File > Nuovo > Progetto**.
 
-2. In **Visual C++** scegliere **Desktop di Windows** e nel riquadro al centro scegliere **Applicazione console di Windows**.
+    ::: moniker range=">=vs-2019"
+    Verrà aperta la finestra di dialogo **Crea un nuovo progetto**. Digitare **asp.net** nella casella di ricerca per filtrare i risultati, scegliere **Applicazione Web ASP.NET Core** e fare clic su **Avanti**. Quindi, immettere un nome come **MyDbgApp** e scegliere **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Verrà aperta la finestra di dialogo **Nuovo progetto**. In **Visual C++** scegliere **Desktop di Windows** e nel riquadro al centro scegliere **Applicazione console di Windows**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
+    ::: moniker-end
 
-    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
-
-3. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
+    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, aprendo così il programma di installazione Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
 
     Visual Studio crea il progetto.
 
-4. In MyDbgApp.cpp sostituire il codice seguente
+1. In MyDbgApp.cpp sostituire il codice seguente
 
     ```c++
     int main()

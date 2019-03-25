@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ecd06b2c340640db082c5d0a6bbdb6a30596748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624412"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872057"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
+
 Il profiler **Utilizzo di energia** di Visual Studio consente di analizzare il consumo di energia e potenza delle app UWP su dispositivi tablet a bassa potenza alimentati completamente o in parte dalle batterie integrate. In un dispositivo alimentato a batteria, un'applicazione che utilizza una quantità eccessiva di energia può causare l'insoddisfazione del cliente al punto tale da comportarne, alla fine, la disinstallazione. L'ottimizzazione del consumo di energia può aumentare l'adozione e l'uso dell'applicazione da parte dei clienti.
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>Che cos'è il profiler Consumo di energia, come funziona e cosa misura
- Il profiler Utilizzo di energia acquisisce le attività dello schermo, della CPU e delle connessioni di rete di un dispositivo durante una sessione di profilatura. Genera quindi stime della potenza utilizzata per tali attività e la quantità totale di energia per una sessione di profilatura.
+
+Il profiler Utilizzo di energia acquisisce le attività dello schermo, della CPU e delle connessioni di rete di un dispositivo durante una sessione di profilatura. Genera quindi stime della potenza utilizzata per tali attività e la quantità totale di energia per una sessione di profilatura.
 
 > [!NOTE]
 > Il profiler energia stima la potenza e l'utilizzo di energia tramite un modello software basato su hardware di dispositivo di riferimento standard rappresentativo dei dispositivi tablet a basso consumo sui quali potrebbe essere eseguita l'applicazione. Per fornire stime ottimali, è consigliabile raccogliere i dati del profilo su un dispositivo tablet a basso consumo.
 >
 > Sebbene il modello fornisca buone stime per un'ampia gamma di dispositivi a basso consumo, i valori effettivi del dispositivo profilato saranno probabilmente diversi. Utilizzare i valori per individuare le attività dello schermo, della CPU e delle attività di rete dispendiose rispetto ad altri utilizzi di risorse e che potrebbero pertanto essere possibili candidati per l'ottimizzazione.
 
- Nel profiler Utilizzo di energia vengono utilizzate queste definizioni di *potenza* ed *energia*:
+Nel profiler Utilizzo di energia vengono utilizzate queste definizioni di *potenza* ed *energia*:
 
 - *Potenza* : misura la frequenza di utilizzo della forza per eseguire il lavoro svolto in un periodo di tempo. In elettrotecnica, l'unità di potenza standard è un *watt*, definito come la frequenza con cui viene eseguito un lavoro quando un ampere di corrente fluisce attraverso una differenza di potenziale elettrico di un volt. Nel grafico **Utilizzo energia** le unità vengono visualizzate come milliwatt **mW** che corrispondono a un millesimo di watt.
 
@@ -39,9 +41,9 @@ Il profiler **Utilizzo di energia** di Visual Studio consente di analizzare il c
 
 - *Energia* : misura la quantità totale di potenza, come capacità o potenziale, come nella capacità di potenza di una batteria, o come il totale complessivo della potenza consumata in un periodo di tempo. L'unità di energia è un wattora, la quantità di potenza di un watt applicato continuamente per un'ora. In **Riepilogo energia**le unità vengono visualizzate come milliwatt-ore **mW-h**.
 
-  ![Capacità energia, potenza usata, totale energia usata](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")
+![Capacità energia, potenza usata, totale energia usata](../profiling/media/energyprof_capcitypowerused.png)
 
-  Ad esempio, la batteria completamente carica di un tablet dispone di una certa quantità di energia immagazzinata. Mentre l'energia viene utilizzata per eseguire attività quali la comunicazione in rete, il calcolo dei valori o la visualizzazione di grafica, la potenza della batteria viene consumata con frequenze diverse. In qualsiasi momento, il totale della potenza utilizzata viene misurato anche in base all'energia.
+Ad esempio, la batteria completamente carica di un tablet dispone di una certa quantità di energia immagazzinata. Mentre l'energia viene utilizzata per eseguire attività quali la comunicazione in rete, il calcolo dei valori o la visualizzazione di grafica, la potenza della batteria viene consumata con frequenze diverse. In qualsiasi momento, il totale della potenza utilizzata viene misurato anche in base all'energia.
 
 ## <a name="identify-scenarios-with-user-marks"></a>Identificare scenari con contrassegni utente
  Puoi aggiungere *contrassegni utente* ai dati di profilatura per identificare aree nel righello della sequenza temporale.
@@ -57,14 +59,14 @@ Il profiler **Utilizzo di energia** di Visual Studio consente di analizzare il c
  Al momento dell'esecuzione del metodo, verrà aggiunto un contrassegno utente ai dati di profilatura con un messaggio.
 
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel implementa l'interfaccia [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (proiettata come [System.IDisposable](/dotnet/api/system.idisposable) in C# e VB). Per evitare un consumo eccessivo di risorse del sistema operativo, chiamare [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) in C# e VB) quando non si usa più un canale di registrazione.
->  - Ogni canale di registrazione aperto deve avere un nome univoco. Il tentativo di creare un nuovo canale di registrazione con lo stesso nome di uno non eliminato genera un'eccezione.
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> implementa l'interfaccia <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> (proiettata come <xref:System.IDisposable?displayProperty=nameWithType> in C# e Visual Basic). Per evitare perdite di risorse del sistema operativo, chiamare <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> (<xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> in C# e Visual Basic) al termine dell'uso di un canale di registrazione.
+> - Ogni canale di registrazione aperto deve avere un nome univoco. Se si tenta di creare un nuovo canale di registrazione con lo stesso nome di uno non eliminato, viene generata un'eccezione.
 
- Per esempi, vedere [Esempio di LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) in Windows SDK.
+Per un esempio di codice, vedere [Esempio di LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) in Windows SDK.
 
- **Aggiungere contrassegni al codice JavaScript**
+**Aggiungere contrassegni al codice JavaScript**
 
- Per aggiungere contrassegni utente aggiungi il seguente codice in corrispondenza dei punti nel codice che desideri contrassegnare:
+Per aggiungere contrassegni utente aggiungi il seguente codice in corrispondenza dei punti nel codice che desideri contrassegnare:
 
 ```JavaScript
 if (performance && performance.mark) {
@@ -72,15 +74,15 @@ if (performance && performance.mark) {
 }
 ```
 
- *markDescription* è una stringa che contiene il messaggio da visualizzare nella descrizione comando del contrassegno utente.
+*markDescription* è una stringa che contiene il messaggio da visualizzare nella descrizione comando del contrassegno utente.
 
 ## <a name="configure-your-environment-for-profiling"></a>Configurare l'ambiente per la profilatura
  Per ottenere stime ottimali, è consigliabile profilare il consumo di energia dell'applicazione su un dispositivo a basso consumo alimentato dalle batterie integrate. Poiché Visual Studio non viene eseguito nella maggior parte di questi dispositivi, è necessario connettere il computer che esegue Visual Studio al dispositivo usando Visual Studio Remote Tools. Per connetterti a un dispositivo remoto, devi configurare sia il progetto di Visual Studio che il dispositivo remoto. Per altre informazioni, vedere [Eseguire app UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 > [!TIP]
 > - Non è consigliabile eseguire la profilatura dell'energia nel simulatore UWP o nel computer di Visual Studio. La profilatura sul dispositivo effettivo fornisce dati molto più realistici.
->   -   Eseguire la profilatura sul dispositivo di destinazione mentre è alimentato dalle batterie.
->   -   Chiudere le altre applicazioni che potrebbero utilizzare le stesse risorse (rete, CPU o schermo).
+> - Eseguire la profilatura sul dispositivo di destinazione mentre è alimentato dalle batterie.
+> - Chiudere le altre applicazioni che potrebbero utilizzare le stesse risorse (rete, CPU o schermo).
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Raccogliere dati relativi al profilo energetico per l'applicazione
 
@@ -91,7 +93,7 @@ if (performance && performance.mark) {
 2.  Scegliere **Utilizzo di energia** , quindi **Avvia**.
 
     > [!NOTE]
-    >  Quando si avvia il profiler **Utilizzo di energia**, è possibile che venga visualizzata la finestra **Controllo dell'account utente** nella quale viene richiesta l'autorizzazione a eseguire *VsEtwCollector.exe*. Scegliere **Sì**.
+    > Quando si avvia il profiler **Utilizzo di energia**, è possibile che venga visualizzata la finestra **Controllo dell'account utente** nella quale viene richiesta l'autorizzazione a eseguire *VsEtwCollector.exe*. Scegliere **Sì**.
 
 3.  Verificare la funzionalità dell'applicazione per la raccolta di dati.
 
@@ -145,11 +147,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Altre risorse
 
--   Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) e per [HTML e JavaScript](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) nel Centro sviluppatori Windows vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'applicazione per ridurre il costo del traffico di rete.
+- Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) e per [HTML e JavaScript](/previous-versions/windows/apps/hh452983(v=win.10)) vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'app per ridurre il costo del traffico di rete.
 
-     Il simulatore di Visual Studio per le app UWP consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Eseguire app UWP nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md)
+   Il simulatore di Visual Studio per le app UWP consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Eseguire app UWP nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md)
 
--   Gli strumenti **Temporizzazione funzione JavaScript** e **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [Analizzare l'utilizzo della CPU](/visualstudio/profiling/beginners-guide-to-performance-profiling).
+- Gli strumenti **Temporizzazione funzione JavaScript** e **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [Analizzare l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Vedere anche
 

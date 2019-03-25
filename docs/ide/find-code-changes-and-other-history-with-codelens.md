@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941049"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867855"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
 CodeLens consente di rimanere concentrati sulle proprie attività mentre si cercano informazioni sul codice senza uscire dall'editor. È possibile trovare i riferimenti a un frammento di codice, le modifiche apportate al codice, i bug collegati, gli elementi di lavoro, le revisioni del codice e gli unit test.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens è disponibile solo nelle edizioni Visual Studio Enterprise e Visual Studio Professional. Non è disponibile nell'edizione Community di Visual Studio.
+
+::: moniker-end
 
 Vedere dove e come vengono usate le singole parti di codice nella soluzione:
 
@@ -54,7 +58,7 @@ Per scegliere gli indicatori da visualizzare o per abilitare o disabilitare Code
 
 Per visualizzare le relazioni tra il codice e i relativi riferimenti, [creare una mappa del codice](../modeling/map-dependencies-across-your-solutions.md). Nel menu di scelta rapida della mappa del codice, selezionare **Mostra tutti i riferimenti**.
 
-![CodeLens - Riferimenti sulla mappa del codice](../ide/media/codelensmappedreferences.png)
+![CodeLens - Riferimenti sulla mappa codici](../ide/media/codelensmappedreferences.png)
 
 ## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Individuare le modifiche nel codice
 
@@ -62,7 +66,7 @@ Esaminare la cronologia del codice per scoprire cosa è successo oppure esaminar
 
 Requisiti:
 
-- Visual Studio Enterprise e Visual Studio Professional
+- Visual Studio 2019 (o Visual Studio 2017 Enterprise o Professional edition)
 
 - Team Foundation Server 2013 o versioni successive, Azure DevOps Services o GIT
 

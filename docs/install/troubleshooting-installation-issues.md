@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953969"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984132"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio 2017
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
 > [!IMPORTANT]
 > Se si è verificato un problema di installazione, è possibile chiedere assistenza. È disponibile un'opzione di supporto che offre una [**chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese).
@@ -86,7 +86,7 @@ Ecco una tabella dei problemi noti e di alcune soluzioni alternative che possono
 
 I log di installazione sono necessari per risolvere la maggior parte dei problemi di installazione. Quando si invia un problema mediante l'opzione [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio.md) del programma di installazione di Visual Studio, questi log vengono automaticamente inclusi nel report.
 
-Se si contatta il supporto tecnico Microsoft, è possibile che sia necessario fornire questi log di installazione usando lo [strumento di raccolta dei log di Microsoft Visual Studio e .NET Framework](https://aka.ms/vscollect). Lo strumento di raccolta dei log raccoglie i log di installazione da tutti i componenti installati da Visual Studio 2017, tra cui .NET Framework, Windows SDK e SQL Server. Raccoglie anche informazioni sul computer, oltre a un inventario di Windows Installer e a informazioni sul registro eventi di Windows per il programma di installazione di Visual Studio, Windows Installer e Ripristino configurazione di sistema.
+Se si contatta il supporto tecnico Microsoft, è possibile che sia necessario fornire questi log di installazione usando lo [strumento di raccolta dei log di Microsoft Visual Studio e .NET Framework](https://aka.ms/vscollect). Lo strumento di raccolta dei log raccoglie i log di installazione da tutti i componenti installati da Visual Studio, tra cui .NET Framework, Windows SDK e SQL Server. Raccoglie anche informazioni sul computer, oltre a un inventario di Windows Installer e a informazioni sul registro eventi di Windows per il programma di installazione di Visual Studio, Windows Installer e Ripristino configurazione di sistema.
 
 Per raccogliere i log:
 
@@ -104,7 +104,7 @@ Se le soluzioni fornite in questa Guida alla risoluzione dei problemi non consen
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Remove Visual Studio 2017](remove-visual-studio.md) (Rimuovere Visual Studio 2017)
+* [Remove Visual Studio ](remove-visual-studio.md) (Rimuovere Visual Studio)
 * [Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)

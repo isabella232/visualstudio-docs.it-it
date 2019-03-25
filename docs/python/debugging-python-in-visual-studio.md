@@ -1,7 +1,7 @@
 ---
 title: Debug del codice Python
 description: Visual Studio offre funzionalità di debug avanzate per il codice Python, tra cui l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'analisi delle eccezioni e il debug nella finestra interattiva.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954361"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151362"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -40,7 +40,7 @@ Vedere anche gli articoli seguenti sul debug nei vari scenari:
 
 Il flusso di lavoro del debug di base include l'impostazione dei punti di interruzione, l'esecuzione di codice istruzione per istruzione, il controllo dei valori e la gestione delle eccezioni, come descritto nelle sezioni seguenti.
 
-È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug** > **Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo **F5**. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in **Esplora soluzioni**) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in **Proprietà progetto** (vedere [Opzioni di debug del progetto](#project-debugging-options)). In **Visual Studio 2017 versione 15.6** e versioni successive viene generato un avviso se non è impostato un file di avvio. Nelle versioni precedenti è possibile che venga visualizzata una finestra di output con l'interprete Python in esecuzione o che la finestra di output venga visualizzata brevemente e poi scompaia. In qualsiasi caso, fare clic con il pulsante destro del mouse sul file appropriato e scegliere **Imposta come file di avvio**.
+È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug** > **Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo **F5**. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in **Esplora soluzioni**) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in **Proprietà progetto** (vedere [Opzioni di debug del progetto](#project-debugging-options)). In Visual Studio 2017 versione 15.6 e versioni successive viene generato un avviso se non è impostato un file di avvio. Nelle versioni precedenti è possibile che venga visualizzata una finestra di output con l'interprete Python in esecuzione o che la finestra di output venga visualizzata brevemente e poi scompaia. In qualsiasi caso, fare clic con il pulsante destro del mouse sul file appropriato e scegliere **Imposta come file di avvio**.
 
 > [!Note]
 > Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Selezionare un ambiente Python per un progetto](selecting-a-python-environment-for-a-project.md).
@@ -181,10 +181,6 @@ La finestra **Debug interattivo** supporta speciali metacomandi in aggiunta ai [
 | `$where`, `$w`, `$bt` | Visualizza l'elenco dei frame per il thread corrente. |
 
 Si noti che le finestre standard del debugger, ad esempio **Processi**, **Thread** e **Stack di chiamate**, non vengono sincronizzate con la finestra **Debug interattivo**. La modifica del processo, del thread o del frame attivo nella finestra **Debug interattivo** non influisce sulle altre finestre del debugger. Analogamente, la modifica del processo, del thread o del frame attivo nelle finestre del debugger non influisce sulla finestra **Debug interattivo**.
-
-La finestra **Debug interattivo** ha un set di opzioni specifico a cui è possibile accedere tramite **Strumenti** > **Opzioni** > **Strumenti Python** > **Finestra debug interattivo**. A differenza della finestra **Python interattivo** standard in cui è presente un'istanza separata per ogni ambiente Python, esiste una sola finestra **Debug interattivo** che usa sempre l'interprete Python per il processo sottoposto a debug. Vedere [Opzioni, Opzioni di debug](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Opzioni della finestra Debug interattivo](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

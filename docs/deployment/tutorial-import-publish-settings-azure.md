@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413566"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983923"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
 È possibile usare lo strumento **Pubblica** per importare le impostazioni di pubblicazione e quindi distribuire l'app. In questo articolo vengono usate le impostazioni di pubblicazione per il servizio app di Azure, ma è possibile seguire una procedura simile per importare le impostazioni di pubblicazione da [IIS](../deployment/tutorial-import-publish-settings-iis.md). In alcuni scenari per rendere l'operazione più rapida è possibile usare un profilo delle impostazioni di pubblicazione anziché configurare manualmente la distribuzione nel servizio per ogni installazione di Visual Studio.
 
-Questa procedura si applica alle app ASP.NET, ASP.NET Core e .NET Core in Visual Studio. È anche possibile importare le impostazioni di pubblicazione per le app [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md). La procedura fa riferimento a Visual Studio 2017 versione 15.6.
+Questa procedura si applica alle app ASP.NET, ASP.NET Core e .NET Core in Visual Studio. È anche possibile importare le impostazioni di pubblicazione per le app [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -37,9 +37,19 @@ Il file delle impostazioni di pubblicazione (*\*.publishsettings*) non corrispon
 
 ## <a name="prerequisites"></a>Prerequisiti
 
+::: moniker range=">=vs-2019"
+
+* È necessario aver installato Visual Studio 2019 e il carico di lavoro **Sviluppo ASP.NET e Web**.
+
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * È necessario aver installato Visual Studio 2017 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+::: moniker-end
 
 * Creare un servizio app di Azure. Per istruzioni dettagliate, vedere [Distribuire un'app Web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

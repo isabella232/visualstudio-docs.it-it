@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021871"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070308"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Pubblicare un'applicazione Node.js in Azure (Servizio app Linux)
 
@@ -36,15 +36,44 @@ In questa esercitazione si imparerà a:
 > * Creare un Servizio app Linux in Azure
 > * Distribuire in Azure
 
+## <a name="prerequisites"></a>Prerequisiti
+
+* È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js. 
+
+    ::: moniker range=">=vs-2019"
+    Se Visual Studio 2019 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se Visual Studio 2017 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    ::: moniker-end
+
+    Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+
+    ![Carico di lavoro Node.js nel programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
+
+* Il runtime di Node.js deve essere installato.
+
+    Se il runtime non è installato, installare la versione LTS dal sito Web [Node.js](https://nodejs.org/en/download/). In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non viene rilevato un runtime installato, è possibile usare la pagina delle proprietà per configurare il progetto in modo che faccia riferimento al runtime installato (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Creare un progetto Node.js da eseguire in Azure
 
-1. Creare una nuova app rapida TypeScript tramite la finestra di dialogo **File** > **Nuovo progetto**.
+1. Aprire Visual Studio.
 
-1. Nel nodo **TypeScript** selezionare **Applicazione Express 4 Node.js di base**.
+1. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+
+1. Creare una nuova app Express TypeScript.
+
+    ::: moniker range=">=vs-2019"
+    Nella finestra di dialogo **Crea un nuovo progetto** digitare **javascript** nella casella di ricerca per filtrare i risultati, scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **Avanti**. Scegliere **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
 
     ![Creare una nuova app rapida TypeScript](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Se non viene visualizzato il modello di progetto **Applicazione Express 4 Node.js Azure di base** è necessario aggiungere il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
-1. Fare clic su **OK** per creare il progetto in Visual Studio.
+    Visual Studio crea il progetto e lo apre in Esplora soluzioni (riquadro destro).
 
 1. Premere **F5** per compilare ed eseguire l'app e assicurarsi che tutto funzioni come previsto.
 
@@ -109,7 +138,7 @@ Per configurare GitHub per Visual Studio:
 
 8. Fare clic su **Scegli origine**, quindi scegliere **GitHub** e quindi configurare le autorizzazioni necessarie.
 
-    ![Autorizzazioni di GitHub](../javascript/media/azure-choose-source.png)
+    ![Autorizzazioni GitHub](../javascript/media/azure-choose-source.png)
 
 9. Selezionare il repository e il ramo da cui eseguire la pubblicazione, quindi selezionare **OK**.
 

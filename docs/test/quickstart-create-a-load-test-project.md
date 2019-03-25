@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948472"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069970"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -42,17 +42,35 @@ Se il componente degli strumenti per test di carico e delle prestazioni Web non 
 
 In questa sezione si creerà un progetto di test di carico in C#. È anche possibile creare un progetto di test di carico di Visual Basic, se si preferisce.
 
-1. Aprire Visual Studio e scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu.
+::: moniker range="vs-2017"
+
+1. Aprire Visual Studio.
+
+2. Scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-1. Nella finestra di dialogo **Nuovo progetto** espandere **Installato** e **Visual C#** e quindi scegliere la categoria **Test**. Scegliere il modello **Progetto di test di carico e prestazioni Web**.
+3. Nella finestra di dialogo **Nuovo progetto** espandere **Installato** e **Visual C#** e quindi scegliere la categoria **Test**. Scegliere il modello **Progetto di test di carico e prestazioni Web**.
 
    ![Modello Progetto di test di carico e prestazioni Web](media/web-perf-load-test-project-template.png)
 
-1. Immettere un nome per il progetto se non si vuole usare il nome predefinito e quindi scegliere **OK**.
+4. Immettere un nome per il progetto se non si vuole usare il nome predefinito e quindi scegliere **OK**.
 
-   Visual Studio crea il progetto e lo visualizza in **Esplora soluzioni**. Il progetto contiene inizialmente un file di test Web denominato *WebTest1.webtest*.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Aprire Visual Studio.
+
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+3. Nella finestra di dialogo **Crea un nuovo progetto** digitare **test web** nella casella di ricerca e quindi selezionare il modello **Progetto di test di carico e prestazioni Web \[Deprecato]** per C#. Scegliere **Avanti**.
+
+4. Immettere un nome per il progetto se non si vuole usare il nome predefinito e quindi scegliere **Crea**.
+
+::: moniker-end
+
+   Visual Studio crea il progetto e visualizza i file in **Esplora soluzioni**. Il progetto contiene inizialmente un file di test Web denominato *WebTest1.webtest*.
 
 ## <a name="add-a-load-test-to-the-project"></a>Aggiungere un test di carico al progetto
 

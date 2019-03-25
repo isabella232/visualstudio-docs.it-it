@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843801"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867591"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del portale per i sottoscrittori - my.<span></span>visualstudio<span></span>.com
 
@@ -51,4 +51,4 @@ Oltre ai singoli vantaggi disponibili nella categoria Supporto nella pagina Vant
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Se è necessario rinnovare una sottoscrizione cloud di Visual Studio  o si vogliono scaricare le estensioni più recenti per la famiglia di prodotti Visual Studio,  Nel Marketplace è possibile trovare estensioni, strumenti e servizi per migliorare ulteriormente Azure DevOps, Team Foundation Server e Visual Studio Code. È anche possibile diventare un editore e pubblicare estensioni personalizzate in Marketplace.
+Se è necessario rinnovare una sottoscrizione cloud di Visual Studio  o si vogliono scaricare le estensioni più recenti per la famiglia di prodotti Visual Studio,  Nel Marketplace è possibile trovare estensioni, strumenti e servizi per migliorare ulteriormente Azure DevOps, Azure DevOps Server e Visual Studio Code. È anche possibile diventare un editore e pubblicare estensioni personalizzate in Marketplace.

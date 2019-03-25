@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Informazioni su come eseguire l'onboarding dopo la migrazione dell'organizzazione nel portale di amministrazione delle sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954228"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154179"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Eseguire l'onboarding nel portale di amministrazione delle sottoscrizioni di Visual Studio dopo la migrazione dell'organizzazione
 
@@ -24,9 +24,9 @@ Tuttavia ora le sottoscrizioni vengono gestite tramite un nuovo portale chiamato
 
 Potrebbe verificarsi uno degli scenari seguenti:
 
-1. [Il contatto principale non ha completato il processo di onboarding](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>. 
-2. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente erano elencate in VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
-3. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente non sono state indicate in VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
+1. [Il contatto principale non ha completato il processo di onboarding.](#onboarding-not-completed-by-primary-contact)
+2. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente erano elencate in VLSC.](#primary-contact-did-not-provide-you-administrator-access)
+3. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente non sono state indicate in VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
 
 <sup>1</sup> Se si è il contatto principale o il contatto per le comunicazioni e non è stato completato l'onboarding, eseguire la procedura nello scenario 1 per la configurazione dell'organizzazione.
 

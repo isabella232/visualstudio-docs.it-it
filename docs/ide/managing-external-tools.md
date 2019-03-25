@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907802"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983793"
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -24,13 +24,24 @@ ms.locfileid: "55907802"
 
 ## <a name="tools-available-on-the-tools-menu"></a>Strumenti disponibili nel menu Strumenti
 
-Il menu **Strumenti** include alcuni strumenti predefiniti, ad esempio:
+Il menu **Strumenti** include alcuni comandi predefiniti, tra cui:
+
+::: moniker range="vs-2017"
 
 * **Estensioni e aggiornamenti** per [Gestire le estensioni di Visual Studio](finding-and-using-visual-studio-extensions.md)
 * **Gestione frammenti di codice** per [Organizzare i frammenti di codice](code-snippets.md)
-* **PreEmptive Protection - Dotfuscator** per avviare il [Dotfuscator Community Edition (CE)](dotfuscator/index.md) se [installato](dotfuscator/install.md)
 * **Personalizza** per [Personalizzare menu e barre degli strumenti](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opzioni** per [Impostare un'ampia gamma di opzioni per l'IDE di Visual Studio e altri strumenti](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Gestione frammenti di codice** per [Organizzare i frammenti di codice](code-snippets.md)
+* **Personalizza** per [Personalizzare menu e barre degli strumenti](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opzioni** per [Impostare un'ampia gamma di opzioni per l'IDE di Visual Studio e altri strumenti](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Aggiungere nuovi strumenti al menu Strumenti
 
@@ -50,7 +61,7 @@ Il menu **Strumenti** include alcuni strumenti predefiniti, ad esempio:
 
 Di seguito è riportato un elenco completo di argomenti che possono essere usati per la definizione di uno strumento esterno:
 
-|nome|Argomento|Descrizione|
+|nome|Argomento|Description|
 |----------|--------------|-----------------|
 |Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|
 |Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|

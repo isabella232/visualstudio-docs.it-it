@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796842"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983075"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 
-Quando si installa Visual Studio 2017 da un prompt dei comandi, è possibile usare diversi parametri della riga di comando per controllare o personalizzare l'installazione. Dalla riga di comando è possibile eseguire le azioni seguenti:
+Quando si installa Visual Studio da un prompt dei comandi, è possibile usare diversi parametri della riga di comando per controllare o personalizzare l'installazione. Dalla riga di comando è possibile eseguire le azioni seguenti:
 
 - Avviare l'installazione con determinate opzioni preselezionate.
 - Automatizzare il processo di installazione.
@@ -45,7 +45,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 (Sostituire `vs_enterprise.exe` con l'edizione del prodotto da installare.
 
 >[!TIP]
-> Per altri esempi di utilizzo della riga di comando per l'installazione di Visual Studio 2017, vedere la pagina [Esempi di parametri della riga di comando](command-line-parameter-examples.md).
+> Per altri esempi di utilizzo della riga di comando per l'installazione di Visual Studio, vedere la pagina [Esempi di parametri della riga di comando](command-line-parameter-examples.md).
 
 | **Comando** | **Descrizione** |
 | ----------------------- | --------------- |
@@ -115,7 +115,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Elenco di ID di carichi di lavoro e ID di componenti
 
-Per un elenco degli ID di componenti e carichi di lavoro ordinati per prodotto Visual Studio, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md).
+Per un elenco degli ID di componenti e carichi di lavoro ordinati per prodotto Visual Studio, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Elenco delle impostazioni locali delle lingue
 
@@ -155,7 +155,7 @@ Durante ogni operazione nella directory `%TEMP%` vengono generati diversi file d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Command-line parameter examples for Visual Studio 2017 installation](command-line-parameter-examples.md) (Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017)
-- [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Esempi di parametri della riga di comando per l'installazione di Visual Studio](command-line-parameter-examples.md)
+- [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md)
-- [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md)
+- [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710110"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983819"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Guida dell'amministratore di Visual Studio 2017
+# <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
 Negli ambienti aziendali, gli amministratori di sistema distribuiscono solitamente le installazioni nei computer degli utenti finali da una condivisione di rete o tramite software di gestione dei sistemi. Il motore di installazione di Visual Studio è stato progettato per supportare la distribuzione aziendale, che consente agli amministratori di sistema di creare un percorso di installazione di rete, preconfigurare valori di installazione predefiniti, distribuire codici Product Key durante il processo di installazione e gestire aggiornamenti di prodotto in seguito a una distribuzione eseguita correttamente. Questa guida dell'amministratore offre indicazioni basate sullo scenario per la distribuzione aziendale in ambienti di rete.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Distribuire Visual Studio 2017 in un ambiente aziendale
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Distribuire Visual Studio in un ambiente aziendale
 
-È possibile distribuire Visual Studio 2017 in workstation client purché ogni computer di destinazione soddisfi i [requisiti di installazione minimi](/visualstudio/productinfo/vs2017-system-requirements-vs). I passaggi tipici per la distribuzione di Visual Studio sono i seguenti, sia che si usi software come System Center o un file batch:
+È possibile distribuire Visual Studio in workstation client purché ogni computer di destinazione soddisfi i [requisiti di installazione minimi](/visualstudio/productinfo/vs2017-system-requirements-vs). I passaggi tipici per la distribuzione di Visual Studio sono i seguenti, sia che si usi software come System Center o un file batch:
 
 1. [Creare una condivisione di rete contenente i file di prodotto di Visual Studio](create-a-network-installation-of-visual-studio.md) in un percorso di rete.
 
@@ -47,14 +47,14 @@ Negli ambienti aziendali, gli amministratori di sistema distribuiscono solitamen
 8. [Aggiornare il percorso di rete con gli aggiornamenti più recenti](update-a-network-installation-of-visual-studio.md) di Visual Studio eseguendo regolarmente il comando usato nel passaggio 1 in modo da aggiungere i componenti aggiornati.
 
 > [!IMPORTANT]
-> Si noti che le installazioni eseguite da una condivisione di rete "ricordano" il percorso di origine da cui provengono. Ciò significa che per il ripristino di un computer client potrebbe essere necessario tornare alla condivisione di rete client da cui è stato installato in origine il client. Scegliere con attenzione il percorso di rete in modo che sia adeguato al periodo di tempo in cui si prevede di eseguire i client di Visual Studio 2017 nella propria organizzazione.
+> Si noti che le installazioni eseguite da una condivisione di rete "ricordano" il percorso di origine da cui provengono. Ciò significa che per il ripristino di un computer client potrebbe essere necessario tornare alla condivisione di rete client da cui è stato installato in origine il client. Scegliere con attenzione il percorso di rete in modo che sia adeguato al periodo di tempo in cui si prevede di eseguire i client di Visual Studio nella propria organizzazione.
 
 ## <a name="use-visual-studio-tools"></a>Usare gli strumenti di Visual Studio
 
 Sono stati resi disponibili diversi strumenti che consentono di [rilevare e gestire le istanze installate di Visual Studio](tools-for-managing-visual-studio-instances.md) nei computer client.
 
 > [!TIP]
-> Oltre alla documentazione inclusa nella guida dell'amministratore, anche gli articoli dell'[archivio degli articoli sulla configurazione di Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/) costituiscono un'ottima fonte di informazioni sull'installazione di Visual Studio 2017.
+> Oltre alla documentazione inclusa nella guida dell'amministratore, anche gli articoli dell'[archivio degli articoli sulla configurazione di Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/) costituiscono un'ottima fonte di informazioni sull'installazione di Visual Studio.
 
 ## <a name="specify-customer-feedback-settings"></a>Specificare le impostazioni dei commenti e suggerimenti del cliente
 
@@ -74,8 +74,8 @@ Per altre informazioni sulle impostazioni dei commenti e suggerimenti del client
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio 2017](install-visual-studio.md)
-* [Usare i parametri della riga di comando per installare Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
+* [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Esempi di parametri della riga di comando](command-line-parameter-examples.md)
   * [Informazioni di riferimento sugli ID dei carichi di lavoro e dei componenti](workload-and-component-ids.md)
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936863"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194603"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -94,7 +94,7 @@ Quando si digita [override](/dotnet/csharp/language-reference/keywords/override)
 
 L'operazione **Aggiungi using** di IntelliSense aggiunge automaticamente la direttiva `using` richiesta al file di codice. Questa funzione consente di restare concentrati sul codice che si sta scrivendo anziché passare a un'altra parte del codice.
 
-Per avviare l'operazione **Aggiungi using**, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlTextReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visualizzate solo quando il cursore è posizionato sul tipo non associato.
+Per avviare l'operazione **Aggiungi using**, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visibili solo quando il cursore è posizionato sul tipo non associato.
 
 ![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png)
 

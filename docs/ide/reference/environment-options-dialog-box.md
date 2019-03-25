@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703253"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983715"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 
@@ -27,7 +27,7 @@ ms.locfileid: "56703253"
 |Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|
 |Modificare le impostazioni predefinite per il salvataggio e il recupero automatici dei file|[Salvataggio automatico, Ambiente, finestra di dialogo Opzioni](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|
-|Personalizzare l'esecuzione degli aggiornamenti e la modalità di gestione delle estensioni.|[Estensioni e aggiornamenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|Personalizzare l'esecuzione degli aggiornamenti e la modalità di gestione delle estensioni.|[Estensioni, Ambiente, finestra di dialogo Opzioni](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Personalizzare il momento della visualizzazione delle finestre di messaggio e il comportamento della finestra **Trova e sostituisci** durante un’operazione di Ricerca rapida e Sostituzione veloce e di popolamento automatico di Trova.|[Trova e sostituisci, Ambiente, finestra di dialogo Opzioni](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Impostare il tipo di carattere e il colore in determinati editor, finestre di dialogo, finestre di strumenti e altri elementi dell’interfaccia utente.|[Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personalizzare il percorso dei file vssettings che archiviano le informazioni sulle impostazioni utente.|[Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

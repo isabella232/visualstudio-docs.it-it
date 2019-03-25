@@ -2,7 +2,6 @@
 title: Motori di Windows Script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572621"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157763"
 ---
 # <a name="windows-script-engines"></a>Motori di script Windows
 Per implementare un motore di Windows Script di Microsoft, creare un oggetto COM OLE che supporta le interfacce seguenti.  
   
 |||  
 |-|-|  
-|Interfaccia|Descrizione|  
+|Interfaccia|Description|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Offre la capacità di scripting di base. L'implementazione di tale interfaccia è necessaria.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Offre la capacità di aggiungere testo dello script, valutare le espressioni e così via. L'implementazione di questa interfaccia è facoltativa: tuttavia, se non è implementata, il motore dello script deve implementare una delle interfacce IPersist* per caricare uno script.|  
-|IPersist *|Fornisce il supporto di persistenza. L'implementazione di almeno una delle interfacce seguenti è necessaria se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) non è implementata.<br /><br /> IPersistStorage: offre il supporto l'attributo DATA = {url} nel tag OBJECT.<br /><br /> IPersistStreamInit: offre il supporto per lo stesso di `IPersistStorage` e per l'attributo DATA="flusso di byte codificato in formato stringa" nel tag OBJECT.<br /><br /> IPersistPropertyBag: offre il supporto l'attributo PARAM= nel tag OBJECT.|  
+|IPersist *|Fornisce il supporto di persistenza. L'implementazione di almeno una delle interfacce seguenti è necessaria se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) non è implementata.<br /><br /> IPersistStorage: offre il supporto per l'attributo DATA = {url} nel tag OBJECT.<br /><br /> IPersistStreamInit: offre lo stesso supporto di `IPersistStorage` e per l'attributo DATA="flusso di byte codificato in formato stringa" nel tag OBJECT.<br /><br /> IPersistPropertyBag: offre il supporto per l'attributo PARAM= nel tag OBJECT.|  
   
 > [!NOTE]
 >  È possibile che il motore di scripting non verrà mai chiamato al momento di salvare o ripristinare uno stato di script tramite `IPersist*`. In alternativa, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) viene usato chiamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) per creare uno script vuoto, quindi gli scriptlet vengono aggiunti e connessi agli eventi con [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e viene aggiunto un codice generale con [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Ciononostante, un motore di scripting deve implementare completamente almeno un'interfaccia `IPersist*` (preferibilmente `IPersistStreamInit`), in quanto altre applicazioni host potrebbero tentare di usarle.  
@@ -43,7 +42,7 @@ Per implementare un motore di Windows Script di Microsoft, creare un oggetto COM
   
 |||  
 |-|-|  
-|Category|Descrizione|  
+|Category|Description|  
 |CATID_ActiveScript|Indica che gli identificatori di classe (CLSID) sono i motori di Script di Windows che supportano, come minimo, l'interfaccia [IActiveScript](../winscript/reference/iactivescript.md) e un meccanismo di persistenza (il `IPersistStorage`, `IPersistStreamInit`, o l'interfaccia IPersistPropertyBag).|  
 |CATID_ActiveScriptParse|Indica che i CLSID sono motori di Script di Windows che supportano, come minimo, le interfacce [IActiveScript](../winscript/reference/iactivescript.md) e [IActiveScriptParse](../winscript/reference/iactivescriptparse.md).|  
   
@@ -54,7 +53,7 @@ Per implementare un motore di Windows Script di Microsoft, creare un oggetto COM
   
 |||  
 |-|-|  
-|Stato|Descrizione|  
+|Stato|Description|  
 |non inizializzato|Lo script non è stato inizializzato o caricato tramite un'interfaccia IPersist*, o non dispone di un set di interfaccia [IActiveScriptSite](../winscript/reference/iactivescriptsite.md). Il motore di scripting in genere non è utilizzabile da questo stato finché lo script non viene caricato.|  
 |inizializzato|Lo script è stato inizializzato con un'interfaccia `IPersist*` e ha un set di interfaccia [IActiveScriptSite](../winscript/reference/iactivescriptsite.md), ma non è connesso a oggetti host ed eventi di sink. Si noti che questo stato indica semplicemente che il metodo `IPersist*::Load`, `IPersist*::InitNew`, o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) è stato completato e che il metodo [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md) è stato chiamato. Il motore non può eseguire il codice in questa modalità. Il codice delle code del motore in cui passa l'host attraverso il metodo [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) esegue il codice dopo la transizione nello stato di avvio.<br /><br /> Poiché linguaggi possono variare notevolmente in semantica, i motori di scripting non devono supportare necessariamente la transizione di stato. I motori che supportano il metodo [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) devono, tuttavia, supportare la transizione di stato. Gli host si devono preparare per la transizione e intraprendere l'azione appropriata: rilasciare il motore di scripting corrente, creare un nuovo motore di scripting e chiamare `IPersist*::Load`, `IPersist*::InitNew`, o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) (ed eventualmente chiamare anche [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)). L'uso di questa transizione deve essere considerato come un'ottimizzazione della procedura precedente. Si noti che tutte le informazioni che il motore di scripting ha ottenuto circa i nomi degli elementi denominati e le informazioni sul tipo che descrivono gli elementi denominati rimangono valide.<br /><br /> Poiché i linguaggi variano notevolmente, la definizione della semantica esatta di questa transizione è difficile. Come minimo, il motore di scripting deve disconnettersi da tutti gli eventi e rilasciare tutti i puntatori SCRIPTINFO_IUNKNOWN ottenuti chiamando il metodo [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md). Il motore deve ottenere nuovamente questi puntatori dopo che lo script viene eseguito di nuovo. Il motore di scripting deve inoltre ripristinare lo script in uno stato iniziale che sia appropriato per la lingua. VBScript, per esempio, reimposta tutte le variabili e mantiene i codici aggiunti in modo dinamico mediante una chiamata [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) con il set di flag SCRIPTTEXT_ISPERSISTENT. Altri linguaggi potrebbero dover mantenere i valori correnti (ad esempio Lisp poiché non c'è alcuna separazione di codice/dati) o reimpostare uno stato noto (che include i linguaggi con le variabili inizializzate in modo statico).<br /><br /> Si noti che la transizione allo stato avviato deve avere la stessa semantica (vale a dire deve lasciare il motore di scripting nello stesso stato) della chiamata `IPersist*::Save` per salvare il motore di scripting, e quindi chiamare `IPersist*::Load` per caricare un nuovo motore di scripting; queste azioni devono avere la stessa semantica di [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md). I motori di scripting che non supportano ancora `IActiveScript::Clone` o `IPersist*` devono valutare attentamente il comportamento della transizione allo stato avviato, in modo che tale transizione non violi le condizioni indicate in precedenza se il supporto di `IActiveScript::Clone` o `IPersist*` è stato aggiunto in un secondo momento.<br /><br /> Durante tale transizione allo stato avviato, il motore di scripting verrà disconnesso dai sink dell'evento dopo che i distruttori appropriati e così via vengono eseguiti nello script. Per evitare che questi distruttori vengano eseguiti, l'host può innanzitutto spostare lo script nello stato di disconnessione prima di spostarlo nello stato avviato.<br /><br /> Usare [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread dello script in esecuzione senza attendere gli eventi correnti e così via, per completare l'esecuzione.|  
 |avviata|La transizione dallo stato inizializzato allo stato avviato fa sì che il motore esegua qualsiasi codice accodato nello stato non inizializzato. Il motore può eseguire il codice mentre è in stato avviato, ma non è connesso a tutti gli eventi aggiunti tramite il metodo [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md). Il motore può eseguire il codice chiamando l'interfaccia IDispatch ottenuta dal metodo [IActiveScript::GetScriptDispatch](../winscript/reference/iactivescript-getscriptdispatch.md), oppure chiamando [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). È possibile che l'ulteriore inizializzazione di sfondo (caricamento progressivo) sia ancora in corso e che la chiamata del metodo [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) con il set di flag SCRIPTSTATE_CONNECTED possa provocare l'arresto dello script fino a quando l'inizializzazione non è completa.|  

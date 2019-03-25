@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e83f21ab05e298635c13f8e2bddb72520459ab1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631172"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982987"
 ---
 # <a name="xsd-task"></a>XSD (attività)
 Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera file di schema o di classe da un'origine.
 
 > [!NOTE]
-> In Visual Studio 2017 il supporto dei progetti C++ per *xsd.exe* è deprecato. È comunque possibile usare le API **Microsoft.VisualC.CppCodeProvider** aggiungendo manualmente *CppCodeProvider.dll* alla Global Assembly Cache.
+> A partire da Visual Studio 2017, il supporto dei progetti C++ per *xsd.exe* è deprecato. È comunque possibile usare le API **Microsoft.VisualC.CppCodeProvider** aggiungendo manualmente *CppCodeProvider.dll* alla Global Assembly Cache.
 
 ## <a name="parameters"></a>Parametri
  La tabella seguente descrive i parametri dell'attività **XSD**.
