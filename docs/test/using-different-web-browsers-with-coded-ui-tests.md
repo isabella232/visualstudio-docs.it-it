@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318433"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983032"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usare vari Web browser con test codificati dell'interfaccia utente
 
@@ -51,11 +51,23 @@ Testando l'applicazione Web con vari tipi di Web browser si emula meglio l'esper
 
 ### <a name="install-selenium-components"></a>Installare i componenti Selenium
 
-1.  Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.
+::: moniker range="vs-2017"
 
-2.  Nella finestra di dialogo **Estensioni e aggiornamenti** cercare `Selenium components for Cross Browser Testing`.
+1. Nel menu **Strumenti** scegliere **Estensioni e aggiornamenti**.
 
-3.  Evidenziare l'estensione e scegliere **Scarica**.
+2. Nella finestra di dialogo **Estensioni e aggiornamenti** cercare `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Scegliere **Gestisci estensioni** dal menu **Estensioni**.
+
+2. Nella finestra di dialogo **Gestisci estensioni** cercare `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Evidenziare l'estensione e scegliere **Scarica**.
 
     > [!TIP]
     > È anche possibile scaricare i componenti Selenium per il test codificato dell'interfaccia utente tra più browser facendo clic [qui](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).

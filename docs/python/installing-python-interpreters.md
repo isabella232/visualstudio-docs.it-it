@@ -1,7 +1,7 @@
 ---
 title: Selezionare e installare interpreti Python
 description: Elenco completo degli interpreti Python supportati in Visual Studio con brevi istruzioni su dove trovare i relativi programmi di installazione.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921003"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194178"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
-Per impostazione predefinita, l'installazione del carico di lavoro di sviluppo Python in Visual Studio 2017 installa anche Python 3 (a 64 bit). È possibile scegliere facoltativamente di installare le versioni a 32 bit e a 64 bit di Python 2, Python 3, Anaconda 2 e Anaconda 3, come descritto in [Installazione](installing-python-support-in-visual-studio.md).
+Per impostazione predefinita, l'installazione del carico di lavoro di sviluppo Python in Visual Studio 2017 e versioni successive installa anche Python 3 (a 64 bit). È facoltativamente possibile scegliere di installare le versioni a 32 e 64 bit di Python 2 e Python 3, insieme a Miniconda (Visual Studio 2019) o Anaconda 2/Anaconda 3 (Visual Studio 2017), come descritto in [Installazione](installing-python-support-in-visual-studio.md).
+
+::: moniker range=">=vs-2019"
+In alternativa, è possibile installare gli interpreti Python standard dalla finestra di dialogo **Aggiungi ambiente**. Selezionare il comando **Aggiungi ambiente** nella finestra **Ambienti Python** o sulla barra degli strumenti Python, selezionare la scheda **Installazione di Python**, indicare quali interpreti installare e selezionare **Installa**.
+::: moniker-end
 
 È anche possibile installare manualmente uno qualsiasi degli interpreti elencati nella tabella riportata di seguito al di fuori del programma di installazione di Visual Studio. Ad esempio, se Anaconda 3 è stato installato prima di installare Visual Studio, non è necessario eseguire nuovamente l'installazione tramite il programma di installazione di Visual Studio. È anche possibile installare un interprete manualmente se, ad esempio, è disponibile una versione più recente che ancora non è visualizzata nel programma di installazione di Visual Studio.
 
@@ -31,7 +35,7 @@ Se Visual Studio non rileva un ambiente installato, vedere [Identificare manualm
 
 Visual Studio visualizza tutti gli ambienti noti nella finestra[**Ambienti Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) e rileva automaticamente gli aggiornamenti per gli interpreti esistenti.
 
-| Interprete | Descrizione |
+| Interprete | Description |
 | --- | --- |
 | [CPython](https://www.python.org/) | Interprete "nativo" più comunemente usato, disponibile nelle versioni a 32 bit e a 64 bit (consigliata la versione a 32 bit). Include le funzionalità più recenti del linguaggio e offre la massima compatibilità con i pacchetti Python, nonché il supporto completo per il debug e l'interoperabilità con [IPython](https://ipython.org/). Vedere anche: [Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3) (Differenze tra Python 2 e Python 3). Si noti che Visual Studio 2015 e versioni precedenti non supportano Python 3.6+ e possono segnalare errori come **Unsupported python version 3.6** (Versione 3.6 di Python non supportata). Usare Python 3.5 o versioni precedenti. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementazione .NET di Python, disponibile nelle versioni a 32 bit e a 64 bit, che offre interoperabilità con C#/F# e Visual Basic, accesso alle API .NET, debug Python standard (ma non debug C++ in modalità mista) e debug IronPython/C# in modalità mista. IronPython non supporta però gli ambienti virtuali. |

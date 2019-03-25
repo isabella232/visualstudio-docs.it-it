@@ -3,19 +3,19 @@ title: Istruzione Invert if
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a6dd0a3ebdb41243734850cea4f4b43604ebb94b
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 5a809eee1eb5460e245f64156385f759870adbd3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324666"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159101"
 ---
 # <a name="invert-if-statement"></a>Istruzione Invert if
 

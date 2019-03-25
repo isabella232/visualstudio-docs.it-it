@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632394"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070139"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Proprietà riservate e note MSBuild
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è disponibile un set di proprietà predefinite che archiviano informazioni sul file di progetto e i file binari di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Queste proprietà vengono valutate come le altre proprietà di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ad esempio, per usare la proprietà `MSBuildProjectFile`, è necessario digitare `$(MSBuildProjectFile)`.
@@ -57,6 +57,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | `MSBuildThisFileName` | Riservata | La parte di nome file di `MSBuildThisFileFullPath`, senza l'estensione. |
 | `MSBuildToolsPath` | Riservata | Percorso di installazione della versione di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] associata al valore di `MSBuildToolsVersion`.<br /><br /> Non includere la barra rovesciata finale nel percorso.<br /><br /> Questa proprietà non può essere sottoposta a override. |
 | `MSBuildToolsVersion` | Riservata | Versione del set di strumenti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] da usare per compilare il progetto.<br /><br /> Nota: Un set di strumenti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori, come *csc.exe* e *vbc.exe*. Per altre informazioni, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Riservata | La versione di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usata per compilare il progetto. <br /><br/> Questa proprietà non può essere sottoposta a override. In caso contrario, viene restituito il messaggio di errore `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nomi in conflitto con gli elementi di MSBuild
 

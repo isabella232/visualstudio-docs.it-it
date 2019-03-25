@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637789"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868211"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -30,7 +30,12 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
 
  Il profiler di Visual Studio consente di limitare la raccolta dei dati. Questa procedura dettagliata offre un esempio su come limitare la raccolta dei dati usando le API del profiler. Il profiler di Visual Studio offre un'API per il controllo della raccolta dei dati all'interno di un'applicazione.
 
+ ::: moniker range=">=vs-2019"
+ Per il codice nativo, le API del profiler di Visual Studio si trovano in *VSPerf.dll*. Il file di intestazione *VSPerf.h* e la libreria di importazione *VSPerf.lib* si trovano nella directory *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.  Per le app a 64 bit, la cartella è *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  Per il codice nativo, le API del profiler di Visual Studio si trovano in *VSPerf.dll*. Il file di intestazione *VSPerf.h* e la libreria di importazione *VSPerf.lib* si trovano nella directory *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Per le app a 64 bit, la cartella è *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+ ::: moniker-end
 
  Per il codice gestito, le API del profiler si trovano in *Microsoft.VisualStudio.Profiler.dll*. Questa DLL è disponibile nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Per le app a 64 bit, la cartella è *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.
 

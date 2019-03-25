@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941907"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194762"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 
@@ -24,7 +24,7 @@ Utilizzando questi script, è possibile eseguire il provisioning (noto anche com
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Azure SDK 2.3 o versioni successive Vedere [Download di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=624384). Non è necessario Azure SDK per generare script per i progetti Web. Questa funzionalità è riservata ai progetti Web, non ai ruoli Web nei servizi cloud.
+* Visual Studio 2015 o versione successiva con il **carico di lavoro di Azure** installato oppure Visual Studio 2013 e Azure SDK 2.3 o versioni successive. Vedere [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc). Non è necessario Azure SDK per generare script per i progetti Web. Questa funzionalità è riservata ai progetti Web, non ai ruoli Web nei servizi cloud.
 * Azure PowerShell 0.7.4 o versione successiva Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) o versione successiva.
 
@@ -154,7 +154,7 @@ Se non è stato eseguito prima uno script Windows PowerShell, è innanzitutto ne
 
    ![Creare pacchetto di distribuzione web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Per altre informazioni, vedere [Procedura: Create a Web Deployment Package in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx) (Procedura: Creare un pacchetto di distribuzione Web in Visual Studio). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-publish-scripts).
+   Per altre informazioni, vedere [Procedura: Create a Web Deployment Package in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx) (Procedura: Creare un pacchetto di distribuzione Web in Visual Studio). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-the-publish-scripts).
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per lo script e quindi scegliere **Apri con PowerShell ISE**.
 1. Se gli script di Windows PowerShell vengono eseguiti su questo computer per la prima volta, aprire una finestra del prompt dei comandi con privilegi di amministratore e digitare il comando seguente:
@@ -242,7 +242,7 @@ Per automatizzare la compilazione del progetto, aggiungere il codice che chiama 
     }
     ```
 
-1. Sostituire `New-WebDeployPackage` con il seguente codice e sostituire i segnaposto per la costruzione di riga `$msbuildCmd`. Questo codice è per Visual Studio 2017. Se si usa Visual Studio 2015, modificare la proprietà **VisualStudioVersion** su `14.0` (`12.0` per Visual Studio 2013).
+1. Sostituire `New-WebDeployPackage` con il seguente codice e sostituire i segnaposto per la costruzione di riga `$msbuildCmd`. Questo codice è per Visual Studio 2019. Se si usa Visual Studio 2017, modificare la proprietà **VisualStudioVersion** in `15.0`, '14.0' per Visual Studio 2015 o `12.0` per Visual Studio 2013.
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ Per automatizzare la compilazione del progetto, aggiungere il codice che chiama 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

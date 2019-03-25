@@ -8,15 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842835"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155589"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -24,8 +23,8 @@ Visual Studio Tools for AI è un'estensione per compilare, testare e distribuire
 
 È possibile iniziare sin da oggi a lavorare con l'apprendimento avanzato con [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org) o altri framework per l'apprendimento avanzato.
 
-## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Sviluppare, eseguire il debug e distribuire modelli di apprendimento avanzato e soluzioni di intelligenza artificiale
-Usare le funzionalità di produttività di Visual Studio per promuovere sin da subito l'innovazione nel settore dell'intelligenza artificiale. Usare le funzionalità predefinite dell'editor del codice come evidenziazione della sintassi, IntelliSense e la formattazione automatica. È possibile testare in modo interattivo l'applicazione completa per l'apprendimento avanzato nell'ambiente locale usando il debug passo-passo per variabili e modelli locali.
+## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Sviluppare, eseguire il debug e distribuire modelli di Deep Learning e soluzioni di intelligenza artificiale
+Usare le funzionalità di produttività di Visual Studio per promuovere sin da subito l'innovazione nel settore dell'intelligenza artificiale. Usare le funzionalità predefinite dell'editor del codice come evidenziazione della sintassi, IntelliSense e formattazione automatica. È possibile testare in modo interattivo l'applicazione completa per l'apprendimento avanzato nell'ambiente locale usando il debug passo-passo per variabili e modelli locali.
 
 ![IDE per l'apprendimento avanzato](media/about/ide.png)
 
@@ -37,14 +36,14 @@ Visual Studio Tools for AI è integrato con Azure Machine Learning per facilitar
 [Altre informazioni sulla creazione di progetti dalla raccolta di esempi](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Scalabilità orizzontale del training dei modelli di apprendimento avanzato e/o inferenza nel cloud
-Questa estensione rende più facile eseguire il training di modelli nel computer locale oppure è possibile inviare processi al cloud tramite l'integrazione con Azure Machine Learning. Si possono inviare processi a destinazioni di calcolo diverse, come cluster Spark, macchine virtuali con GPU di Azure e altro ancora
+Questa estensione rende più facile eseguire il training di modelli nel computer locale oppure è possibile inviare processi al cloud tramite l'integrazione con Azure Machine Learning. Si possono inviare processi a destinazioni di calcolo diverse, come cluster Spark, macchine virtuali con GPU di Azure e altro ancora.
 
 ![Invio del processo](media/about/submitjobs.png)
 
 [Altre informazioni sui modelli di training nel cloud](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
-Questa estensione supporta attualmente i sistemi operativi Windows a 64 bit
+Questa estensione supporta attualmente i sistemi operativi Windows a 64 bit.
 
 ## <a name="support"></a>Supporto
-Il supporto per questa estensione viene fornito tramite lo [strumento di gestione dei problemi Microsoft in GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). È possibile inviare una segnalazione di bug, un suggerimento di funzionalità o partecipare a discussioni.
+Il supporto per questa estensione viene fornito tramite lo [strumento di gestione dei problemi Microsoft in GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). È possibile inviare un report sui bug o un suggerimento di funzionalità e partecipare a discussioni.

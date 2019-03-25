@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315105"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982766"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
@@ -38,17 +38,28 @@ Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor d
 
 ![Uso del comando Crea unit test](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>Impostazione di tratti di unit test
+## <a name="set-unit-test-traits"></a>Impostare tratti di unit test
 
 Se si prevede di eseguire questi test come parte del processo di automazione del test, considerare la possibilità di creare il test in un altro progetto di test (la seconda opzione nella finestra di dialogo precedente) e di impostare i tratti di unit test per lo unit test. In questo modo sarà più facile includere o escludere questi test specifici come parte di una pipeline di distribuzione continua o di integrazione continua. I tratti vengono impostati aggiungendo direttamente i metadati allo unit test, come illustrato di seguito.
 
 ![Impostazione di tratti di unit test](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>Uso di framework di unit test di terze parti
+## <a name="use-third-party-unit-test-frameworks"></a>Usare framework di unit test di terze parti
 
 Con Visual Studio è possibile creare facilmente unit test usando qualsiasi framework di test. Per installare altri framework di test:
 
+::: moniker range="vs-2017"
+
 1. Scegliere **Strumenti** > **Estensioni e aggiornamenti**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Scegliere **Estensioni** > **Gestisci estensioni**.
+
+::: moniker-end
+
 2. Espandere **Online** > **Visual Studio Marketplace** > **Strumenti** e scegliere **Test**.
 
 ![Uso di framework di test di terze parti](media/createunittestfx.png)

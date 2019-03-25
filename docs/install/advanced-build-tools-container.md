@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2db56b4957165a8608e0ed61f07ae0ff64c403ef
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939801"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983302"
 ---
 # <a name="advanced-example-for-containers"></a>Esempio avanzato per i contenitori
 
@@ -124,4 +124,4 @@ Al termine dell'esecuzione dell'ultima riga aprire "%TEMP%\vslogs.zip" nel compu
 
 * [Installare Build Tools in un contenitore](build-tools-container.md)
 * [Problemi noti dei contenitori](build-tools-container-issues.md)
-* [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
+* [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

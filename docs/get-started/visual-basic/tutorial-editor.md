@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939476"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069632"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -35,9 +35,21 @@ Questa articolo presuppone una certa familiarità con Visual Basic. Se non si po
 
 Per iniziare si crea un nuovo file e si aggiunge codice al file.
 
-1. Aprire Visual Studio, quindi nel menu **File** sulla barra dei menu scegliere **Nuovo file**.
+::: moniker range="vs-2017"
 
-1. Nella finestra di dialogo **Nuovo file**, all'interno della categoria **Generale**, scegliere **Classe di Visual Basic** e quindi scegliere **Apri**.
+1. Aprire Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Aprire Visual Studio. Premere **ESC** oppure fare clic su **Continua senza codice** nella finestra iniziale per aprire l'ambiente di sviluppo.
+
+::: moniker-end
+
+2. Nel menu **File** sulla barra dei menu scegliere **Nuovo file**.
+
+3. Nella finestra di dialogo **Nuovo file**, all'interno della categoria **Generale**, scegliere **Classe di Visual Basic** e quindi scegliere **Apri**.
 
    Nell'editor viene aperto un nuovo file con lo scheletro di una classe di Visual Basic. È già possibile notare che non è necessario creare un progetto di Visual Studio completo per ottenere alcuni dei vantaggi che offre l'editor di codice, come l'evidenziazione della sintassi. È sufficiente un file di codice.
 

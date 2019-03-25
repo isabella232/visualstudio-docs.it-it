@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155136"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149627"
 ---
 # <a name="profile-python-code"></a>Profilare il codice Python
 
@@ -32,7 +32,7 @@ Quando si fa clic su **OK**, viene eseguito il profiler e si apre un report di p
 ![Report di prestazioni del profiler](media/profiling-results.png)
 
 > [!Note]
-> Al momento, Visual Studio supporta solo questo livello di profilatura dell'applicazione completa, ma Microsoft sarà certamente lieta di ricevere commenti e suggerimenti sulle funzionalità future. Usare il [pulsante **Commenti sul prodotto**](#feedback) nella parte inferiore della pagina.
+> Al momento, Visual Studio supporta solo questo livello di profilatura dell'applicazione completa, ma Microsoft sarà certamente lieta di ricevere commenti e suggerimenti sulle funzionalità future. Usare il pulsante **Commenti sul prodotto** nella parte inferiore della pagina.
 
 ## <a name="profiling-for-ironpython"></a>Profilatura per IronPython
 

@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947822"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983897"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selezionare i percorsi di installazione in Visual Studio 2017
+# <a name="select-the-installation-locations-in-visual-studio"></a>Selezionare i percorsi di installazione in Visual Studio
 
 **Novità della versione 15.7**: è possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema cambiando il percorso di alcuni file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
 
@@ -64,7 +64,7 @@ Pronti per iniziare? Ecco come fare.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio 2017](install-visual-studio.md)
-* [Aggiornare Visual Studio 2017](update-visual-studio.md)
-* [Modificare Visual Studio 2017](update-visual-studio.md)
-* [Disinstallare Visual Studio 2017](uninstall-visual-studio.md)
+* [Installare Visual Studio](install-visual-studio.md)
+* [Aggiornare Visual Studio](update-visual-studio.md)
+* [Modificare Visual Studio](update-visual-studio.md)
+* [Disinstallare Visual Studio](uninstall-visual-studio.md)

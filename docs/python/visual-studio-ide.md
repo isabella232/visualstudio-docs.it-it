@@ -1,7 +1,7 @@
 ---
 title: Panoramica di Visual Studio per sviluppatori Python
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316613"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983507"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -28,6 +28,10 @@ Questa immagine presenta Visual Studio con un progetto Python aperto e varie fin
 
 - [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](/visualstudio/get-started/tutorial-projects-solutions).
     - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
+
+    ::: moniker range=">=vs-2019"
+    - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
 
 - La [finestra dell'editor](../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più utilizzati, visualizza il contenuto dei file. In questa finestra è possibile [modificare il codice Python](editing-python-code-in-visual-studio.md), spostarsi nella struttura del codice e impostare punti di interruzione durante le sessioni di debug. Con Python è anche possibile selezionare codice e premere CTRL+INVIO per eseguire il codice selezionato in una [finestra REPL interattiva](python-interactive-repl-in-visual-studio.md).
 
@@ -83,6 +87,12 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
    ![Comandi di spostamento per il codice](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Potenti funzionalità per Python
+
+::: moniker range=">=vs-2019"
+- [Eseguire codice senza un progetto](quickstart-05-python-visual-studio-open-folder.md)
+
+    A partire da Visual Studio 2019 è possibile aprire una cartella contenente codice Python per usufruire di funzionalità quali IntelliSense e debug, senza dover creare un progetto di Visual Studio per il codice.
+::: moniker-end
 
 - [Finestra REPL interattiva per Python](python-interactive-repl-in-visual-studio.md)
 

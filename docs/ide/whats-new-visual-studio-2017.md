@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223312"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195060"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -131,7 +131,7 @@ I test automatizzati sono componenti fondamentali di qualsiasi pipeline DevOps. 
 
 Per altre informazioni sui test automatizzati, vedere il post di blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Pipeline CI/CD per test automatizzati in DevOps).
 
-Per altre informazioni sulle novità dell'estensione DevLabs [Strumenti di recapito continuo per Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), vedere il post del blog [Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) (Eseguire il commit in sicurezza: qualità del codice in fase di commit).
+Per altre informazioni sulle novità dell'estensione DevLabs [Strumenti di recapito continuo per Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), vedere il post del blog [Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) (Eseguire il commit in sicurezza: qualità del codice in fase di commit).
 
 ### <a name="visual-studio-ide-enhancements"></a>Miglioramenti dell'IDE di Visual Studio
 
@@ -188,7 +188,7 @@ L'esperienza è stata aggiornata per consentire spostamenti più efficienti e co
 
   ![Visualizzatore di struttura di Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Per altre informazioni sulle nuove funzionalità per la produttività, vedere il post di blog [Productivity in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) (Produttività in Visual Studio 2017) di Mark Wilson-Thomas.
+Per altre informazioni sulle nuove funzionalità di produttività, vedere il post di blog [Visual Studio 2017: Productivity, Performance, and Partners](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) (Visual Studio 2017: Produttività, prestazioni e partner).
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -381,8 +381,8 @@ Per inoltrare suggerimenti su come migliorare Visual Studio o per altre informaz
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Note sulla versione di Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Novità di Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Note sulla versione di Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Novità di Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Novità di Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novità di C#6](/dotnet/csharp/whats-new)
 * [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Novità per Team Foundation Server)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768385"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070321"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 
@@ -48,11 +48,18 @@ Express è un framework applicazione Web utilizzato come framework server per da
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* È necessario che siano installati Visual Studio 2017 e il carico di lavoro di sviluppo Node.js.
+* È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
-    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  per installarlo gratuitamente.
+    ::: moniker range=">=vs-2019"
+    Se Visual Studio 2019 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se Visual Studio 2017 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    ::: moniker-end
 
-    Se il carico di lavoro è già installato ed è necessario installare Visual Studio, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto** (selezionare **File** > **Nuovo** > **Progetto**). Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+
+    ![Carico di lavoro Node.js nel programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
 * Il runtime di Node.js deve essere installato.
 
@@ -66,13 +73,19 @@ Visual Studio gestisce i file per una sola applicazione in un *progetto*. Il pro
 
 In questa esercitazione si inizia con un semplice progetto che contiene codice per un'app Express e Node.js.
 
-1. Aprire Visual Studio 2017.
+1. Aprire Visual Studio.
 
 1. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
-1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript** e quindi selezionare **Node.js**. Nel riquadro centrale selezionare **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+1. Creare un nuovo progetto.
 
-     Se non viene visualizzato il modello di progetto **Applicazione Express 4 Node.js Azure di base** è necessario installare prima il carico di lavoro **Sviluppo Node.js**. Per istruzioni vedere i Prerequisiti.
+    ::: moniker range=">=vs-2019"
+    Nella finestra di dialogo **Crea un nuovo progetto** digitare **javascript** nella casella di ricerca per filtrare i risultati, scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **Avanti**. Scegliere **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+    ::: moniker-end
+    Se non viene visualizzato il modello di progetto **Applicazione Express 4 Node.js Azure di base** è necessario aggiungere il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
     Visual Studio crea la nuova soluzione e apre il progetto nel riquadro destro. Il file di progetto *app.js* verrà aperto nell'editor (riquadro a sinistra).
 

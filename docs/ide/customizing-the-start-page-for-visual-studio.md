@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953382"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070113"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
 
@@ -65,7 +65,7 @@ Per installare una pagina iniziale personalizzata, aprire il file con estensione
 1. Nell'elenco **Personalizza pagina iniziale** scegliere la pagina desiderata.
 
 > [!TIP]
-> Se un errore in una pagina iniziale personalizzata determina un arresto anomalo di Visual Studio, è possibile avviare Visual Studio in modalità sicura e quindi impostarne l'utilizzo della pagina iniziale predefinita. Vedere [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Se un errore in una pagina iniziale personalizzata determina un arresto anomalo di Visual Studio, è possibile aprire Visual Studio in modalità sicura e quindi impostare l'uso della pagina iniziale predefinita. Vedere [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Vedere anche
 

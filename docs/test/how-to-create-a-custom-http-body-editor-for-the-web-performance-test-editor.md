@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936200"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069892"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'editor test prestazioni Web
 
@@ -31,9 +31,7 @@ Queste interfacce sono contenute nello spazio dei nomi <xref:Microsoft.VisualStu
 
 ## <a name="create-a-windows-control-library-project"></a>Creazione di un progetto di libreria di controlli Windows
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Creare un controllo utente utilizzando un progetto di libreria di controlli Windows
-
-1. In Visual Studio scegliere **Nuovo** dal menu **File**, quindi selezionare **Progetto**.
+1. In Visual Studio scegliere **Nuovo** > **Progetto** dal menu **File**.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  Quando viene completata la modifica del corpo della stringa e l'utente fa clic su **OK** nella finestra di dialogo del plug-in, viene chiamato <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> per ottenere il testo modificato come stringa e aggiornare il **Corpo stringa** nella richiesta nell'Editor test prestazioni Web.
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Per creare una classe e implementare il codice di interfaccia di IStringHttpBodyEditorPlugin
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Creare una classe e implementare l'interfaccia IStringHttpBodyEditorPlugin
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto della libreria di controlli Windows Forms e scegliere **Aggiungi nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto della libreria di controlli Windows Forms e scegliere **Aggiungi nuovo elemento**.
 
-2.  Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+   Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-3.  Selezionare **Classe**.
+2. Selezionare **Classe**.
 
-4.  Nella casella di testo **Nome** digitare un nome significativo per la classe, ad esempio `MessageEditorPlugins`.
+3. Nella casella di testo **Nome** digitare un nome significativo per la classe, ad esempio `MessageEditorPlugins`.
 
-5.  Scegliere **Aggiungi**.
+4. Scegliere **Aggiungi**.
 
-     L'oggetto Class1 viene aggiunto al progetto e presentato nell'editor di codice.
+   L'oggetto Class1 viene aggiunto al progetto e presentato nell'editor di codice.
 
-6.  Nell'editor di codice aggiungere la seguente istruzione Using:
+5. Nell'editor del codice aggiungere l'istruzione `using` seguente:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  Scrivere o copiare il codice seguente per creare un'istanza della classe XmlMessageEditor dell'interfaccia <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> e implementare i metodi richiesti:
+6. Incollare il codice seguente per implementare l'interfaccia:
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilare e distribuire i plug-in
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Per compilare e distribuire il file dll risultante per IStringHttpBodyEditorPlugin e IBinaryHttpBodyEditorPlugin
+1. Dal menu **Compila** scegliere **Compila \<nome progetto Libreria di controlli Windows Form>**.
 
-1.  Dal menu **Compila** scegliere **Compila \<nome progetto Libreria di controlli Windows Form>**.
+2. Chiudere tutte le istanze di Visual Studio.
 
-2.  Chiudere tutte le istanze di Visual Studio.
+   > [!NOTE]
+   > La chiusura di Visual Studio consente di assicurarsi che il file con estensione *dll* non sia bloccato prima di provare a copiarlo.
 
-    > [!NOTE]
-    > La chiusura di Visual Studio consente di assicurarsi che il file con estensione *dll* non sia bloccato prima di provare a copiarlo.
+3. Copiare il file *DLL* risultante dalla cartella *bin\debug* del progetto (ad esempio, *MessageEditors.dll*) in *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-3.  Copiare il file *DLL* risultante dalla cartella *bin\debug* dei progetti (ad esempio, *MessageEditors.dll*) in *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+4. Aprire Visual Studio.
 
-4.  Aprire Visual Studio.
-
-     Il file con estensione *dll* è ora registrato in Visual Studio.
+   Il file con estensione *dll* è ora registrato in Visual Studio.
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Verificare i plug-in usando un test prestazioni Web
 
-### <a name="to-test-your-plug-ins"></a>Per eseguire il test dei plug-in
+1. Creare un progetto di test.
 
-1.  Creare un progetto di test.
+2. Creare un test delle prestazioni Web e immettere un URL di servizio Web nel browser.
 
-2.  Creare un test delle prestazioni Web e immettere un URL di servizio Web nel browser.
+3. Quando si termina la registrazione, nell'Editor test prestazioni Web espandere la richiesta per il servizio Web e selezionare un **Corpo stringa** o un **Corpo binario**.
 
-3.  Quando si termina la registrazione, nell'Editor test prestazioni Web espandere la richiesta per il servizio Web e selezionare un **Corpo stringa** o un **Corpo binario**.
+4. Nella finestra **Proprietà** selezionare Corpo stringa o Corpo binario e scegliere i puntini di sospensione **(…)**.
 
-4.  Nella finestra Proprietà selezionare Corpo stringa o Corpo binario e scegliere i puntini di sospensione **(…)**.
+   Viene visualizzata la finestra di dialogo **Modifica dati del corpo HTTP**.
 
-     Viene visualizzata la finestra di dialogo **Modifica dati del corpo HTTP**.
-
-5.  È ora possibile modificare i dati e scegliere **OK**. In questo modo viene richiamato il metodo GetNewValue per aggiornare il contenuto nell'oggetto <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5. È ora possibile modificare i dati e scegliere **OK**. In questo modo viene richiamato il metodo GetNewValue per aggiornare il contenuto nell'oggetto <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Compilare il codice
 

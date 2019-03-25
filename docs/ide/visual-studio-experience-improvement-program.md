@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323118"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070022"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
@@ -25,9 +25,7 @@ Analisi utilizzo software di Visual Studio è stato pensato per aiutare Microsof
 
 Analisi utilizzo software di Visual Studio è attivato per impostazione predefinita. È possibile disattivarlo o riattivarlo seguendo queste istruzioni:
 
-1. Avviare Visual Studio.
-
-1. Nel menu **?** scegliere **Invia commenti e suggerimenti** e quindi selezionare **Impostazioni**.
+1. In Visual Studio scegliere **Guida** > **Invia commenti e suggerimenti**, quindi selezionare **Impostazioni**.
 
    Verrà aperta la finestra di dialogo **Analisi utilizzo software di Visual Studio**.
 

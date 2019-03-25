@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87b8c1d71b3ed1ee03433fd2720a86cf0ee3e6a2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908595"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872095"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio
 
 Questo articolo include numerosi esempi personalizzabili che illustrano come [usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
 
@@ -60,9 +60,16 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
    --includeRecommended --quiet --wait
   ```
 
-  > [!NOTE]
-  > Il parametro `--wait` deve essere usato in un file batch. In un file batch l'esecuzione del comando successivo verrà avviata solo dopo il completamento dell'installazione. La variabile di ambiente `%ERRORLEVEL%` conterrà solo il valore restituito del comando, come documentato nella pagina [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+## <a name="using---wait"></a>Uso di -- wait
 
+* Usare in file batch o script per attendere che il completamento del programma di installazione di Visual Studio prima che venga eseguito il comando successivo. Per i file batch, una variabile di ambiente `%ERRORLEVEL%` conterrà solo il valore restituito del comando, come documentato nella pagina [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Alcune utilità di comando richiedono parametri aggiuntivi per attendere il completamento e ottenere il valore restituito del programma di installazione. Di seguito è riportato un esempio dei parametri aggiuntivi usati con il comando script di PowerShell 'Start-Process':
+
+  ```cmd
+  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+  ```
+  
+* Il primo '-wait' viene usato dal programma di installazione di Visual Studio, mentre il secondo '-Wait' viene usato da 'Start-Process' per attendere il completamento. Il parametro '-PassThru' viene usato da 'Start-Process' per usare il codice di uscita del programma di installazione per il valore restituito corrispondente.
+  
 ## <a name="using---layout"></a>Uso di --layout
 
 * Scaricare l'editor principale di Visual Studio (la configurazione di Visual Studio minima). (è incluso solo il Language Pack per la lingua inglese):
@@ -171,5 +178,5 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

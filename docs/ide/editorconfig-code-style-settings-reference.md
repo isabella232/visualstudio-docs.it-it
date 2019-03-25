@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911871"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868378"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
-In Visual Studio 2017 l'uso di un file [EditorConfig](../ide/create-portable-custom-editor-options.md) consente di definire e mantenere uno stile di codice coerente nella propria codebase. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. I file EditorConfig consentono di abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare la convenzione tramite un livello di gravità. Per altre informazioni su come usare EditorConfig per garantire la coerenza nella propria codebase, vedere [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md).
+L'uso di un file [EditorConfig](../ide/create-portable-custom-editor-options.md) consente di definire e mantenere uno stile di codice coerente nella propria codebase. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. È possibile abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare ogni regola tramite un livello di gravità.
 
-Vedere la fine di questo documento per un [file con estensione editorconfig di esempio](#example-editorconfig-file).
+> [!TIP]
+> - Quando si definiscono le convenzioni per la scrittura del codice in un file con estensione editorconfig, si configura il modo in cui gli [analizzatori di stile del codice](../code-quality/roslyn-analyzers-overview.md) integrati in Visual Studio analizzeranno il codice. Il file .editorconfig è il file di configurazione per questi analizzatori.
+> - Le preferenze di stile per il codice di Visual Studio si possono impostate anche nella finestra di dialogo [Opzioni dell'editor di testo](code-styles-and-quick-actions.md). Tuttavia, le impostazioni di .editorconfig hanno la precedenza e le preferenze impostate in **Opzioni** non sono associate a un particolare progetto.
+
+Al termine di questo articolo è disponibile un [file .editorconfig di esempio](#example-editorconfig-file).
 
 ## <a name="convention-categories"></a>Categorie di convenzioni
 
@@ -327,7 +331,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | always | Preferisce che vengano specificati i modificatori dell'accessibilità |
 | for\_non\_interface_members | Preferisce modificatori dell'accessibilità da dichiarare, fatta eccezione per i membri di interfaccia pubblica. È lo stesso di **always** ed è stato aggiunto per correzioni future se C# aggiunge metodi di interfaccia predefiniti. |
@@ -992,7 +996,7 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i metodi |
 | when_on_single_line | Preferisce membri con corpo di espressione per i metodi quando sono a riga singola |
@@ -1012,7 +1016,7 @@ public int GetAge() { return this.Age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per i costruttori |
 | when_on_single_line | Preferisce membri con corpo di espressione per i costruttori quando sono a riga singola |
@@ -1032,7 +1036,7 @@ public Customer(int age) { Age = age; }
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli operatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli operatori quando sono a riga singola |
@@ -1054,7 +1058,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Valore | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le proprietà |
 | when_on_single_line | Preferisce membri con corpo di espressione per le proprietà quando sono a riga singola |
@@ -1074,7 +1078,7 @@ public int Age { get { return _age; }}
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per gli indicizzatori |
 | when_on_single_line | Preferisce membri con corpo di espressione per gli indicizzatori quando sono a riga singola |
@@ -1094,7 +1098,7 @@ public T this[int i] { get { return _values[i]; } }
 
 La regola accetta valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:----------- |
 | true | Preferisce membri con corpo di espressione per le funzioni di accesso |
 | when_on_single_line | Preferisce membri con corpo di espressione per le funzioni di accesso quando sono a riga singola |
@@ -1513,7 +1517,7 @@ Nella tabella seguente sono riportati i nomi delle regole relative alla "nuova r
 
 Questa regola riguarda il posizionamento di una parentesi graffa di apertura `{` nella stessa riga del codice precedente o in una nuova riga. Per questa regola, non specificare **true** o **false**. Specificare invece **all**, **none** oppure uno o più elementi di codice, ad esempio **methods** o **properties**, per definire quando applicare questa regola. L'elenco completo dei valori consentiti è riportato nella tabella seguente:
 
-| Valore | Descrizione
+| Value | Description
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>Per più tipi di valore, separarli con ",". | Richiede le parentesi graffe in una nuova riga per gli elementi di codice specificati (anche noto come stile "Allman") |
 | tutti | Richiede le parentesi graffe in una nuova riga per tutte le espressioni (stile "Allman") |
@@ -1778,7 +1782,7 @@ default:
 
 Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
 
-| Value | Descrizione |
+| Valore | Description |
 | ----- |:----------- |
 | flush_left | Le etichette vengono posizionate nella colonna più a sinistra |
 | one_less_than_current | Le etichette vengono posizionate con un rientro minore rispetto al contesto corrente |
@@ -1921,7 +1925,7 @@ MyMethod(argument);
 
 Questa regola accetta uno o più valori dalla tabella seguente:
 
-| Value | Descrizione |
+| Value | Description |
 | ----- |:------------|
 | control_flow_statements | Inserisce uno spazio tra le parentesi delle istruzioni del flusso di controllo |
 | espressioni | Inserisce uno spazio tra le parentesi delle espressioni |
@@ -2008,7 +2012,7 @@ class C :I
 
 La regola accetta un solo valore della tabella seguente:
 
-| Valore | Descrizione |
+| Value | Description |
 | ----- |:------------|
 | before_and_after | Inserire uno spazio prima e dopo l'operatore binario |
 | none | Rimuovere gli spazi prima e dopo l'operatore binario |

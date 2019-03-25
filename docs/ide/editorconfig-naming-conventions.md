@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908192"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983274"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -73,18 +73,19 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - private
 - protected
 - protected\_internal o protected_friend
+- private\_protected
 - locali
 
 > [!NOTE]
 > Non specificare un livello di accessibilità come parte della convenzione di denominazione, se l'accessibilità non è applicabile al tipo di simbolo di destinazione. Ad esempio, per i parametri non sono previsti livelli di accessibilità. Se si specifica un livello di accessibilità per una convenzione di denominazione di parametri, la regola di denominazione non funzionerà correttamente.
 
-### <a name="symbol-modifiers"></a>Modificatori dei simboli
+### <a name="symbol-modifiers-optional"></a>Modificatori dei simboli (facoltativi)
 
 Per descrivere i modificatori dei simboli a cui si vuole applicare la regola di denominazione, specificare un nome di proprietà nel formato seguente:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola. Una regola di denominazione ricercherà solo le firme corrispondenti con tutti i modificatori specificati in `required_modifiers`. Se si omette questa proprietà, viene usato il valore predefinito di un elenco vuoto, ovvero non viene richiesto alcun modificatore specifico per trovare una corrispondenza. Ciò significa che i modificatori di un simbolo non hanno alcun effetto sull'applicazione di questa regola.
+L'elenco seguente mostra i valori consentiti. Se si specificano più valori, separarli con virgole:
 
 - `abstract` o `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
    > [!NOTE]
    > Se è presente una regola di denominazione per i simboli `static` o `shared`, la regola viene applicata anche ai simboli `const` perché sono statici in modo implicito. Se non si vuole che la regola di denominazione `static` venga applicata ai simboli `const`, creare una regola di denominazione separata per i simboli `const`.
 
-`required_modifiers` è una proprietà facoltativa. Se si omette questa proprietà, la regola di denominazione verrà applicata a tutti i modificatori.
+Una regola di denominazione cerca le firme corrispondenti con *tutti* i modificatori specificati in `required_modifiers`. Se si omette questa proprietà, viene usato il valore predefinito di un elenco vuoto, ovvero non viene richiesto alcun modificatore specifico per trovare una corrispondenza. Ciò significa che i modificatori di un simbolo non hanno alcun effetto sull'applicazione di questa regola.
+
+> [!TIP]
+> Non specificare un valore `*` per `required_modifiers`. Omettere semplicemente la proprietà `required_modifiers` e la regola di denominazione verrà applicata a qualsiasi tipo di modificatore.
 
 ## <a name="style"></a>Stile
 

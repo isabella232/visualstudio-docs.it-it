@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946545"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983065"
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
 Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate alla categoria **Debug**, `DTE.Properties("Debugging", <Property Page>)` della finestra di dialogo **Opzioni**.
@@ -21,7 +21,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="general"></a>Generale
  `DTE.Properties("Debugging", "General")`
 
-|Nome degli elementi delle proprietà|Valore|Descrizione|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Determina se il debugger richiede l'autorizzazione prima di eliminare tutti i punti di interruzione in un progetto.|
 |BreakAllProcesses|Get/Set (Boolean)|Determina se il debugger interrompe tutti i processi ogni volta che un singolo processo si interrompe.|
@@ -51,7 +51,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="edit-and-continue"></a>Modifica e continuazione
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Nome degli elementi delle proprietà|Value|Descrizione|
+|Nome degli elementi delle proprietà|Valore|Description|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Determina se è abilitata la funzionalità Modifica e continuazione. Questa opzione si applica a tutti i linguaggi che supportano Modifica e continuazione.|
 |InvokedByCommands|Get/Set (Boolean)|Determina se la funzionalità Modifica e continuazione applica automaticamente le modifiche al codice quando l'utente seleziona un comando di debug, ad esempio **Passaggio** o **Continua**. Questa opzione si applica solo al codice nativo.|
@@ -63,7 +63,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="just-in-time"></a>JIT
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Nome degli elementi delle proprietà|Value|Descrizione|
+|Nome degli elementi delle proprietà|Valore|Description|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice gestito.|
 |JitNative|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice nativo.|
@@ -72,7 +72,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="native"></a>Nativo
  `DTE.Properties("Debugging", "Native")`
 
-|Nome degli elementi delle proprietà|Value|Descrizione|
+|Nome degli elementi delle proprietà|Valore|Description|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|Determina se il debugger carica le tabelle di esportazione DLL.|
 |EnableRPC|Get/Set (Boolean)|Determina se il debugger è in grado di eseguire istruzioni per le chiamate a procedure remote (RPC) COM.|
@@ -84,5 +84,5 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 - [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Generale, Debug, finestra di dialogo Opzioni](../../debugger/general-debugging-options-dialog-box.md)
-- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Debug di Modifica e continuazione](../../debugger/edit-and-continue.md)
 - [JIT, Debug, Finestra di dialogo Opzioni](../../debugger/just-in-time-debugging-options-dialog-box.md)

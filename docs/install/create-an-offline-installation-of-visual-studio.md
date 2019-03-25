@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796543"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983052"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Creare un'installazione offline di Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio"></a>Creare un'installazione offline di Visual Studio
 
 Visual Studio 2017 è stato progettato per funzionare correttamente in un'ampia gamma di configurazioni di computer e reti. Sebbene sia consigliabile provare il [programma di installazione Web di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), che è un file di piccole dimensioni e consente di rimanere aggiornati con tutte le correzioni e funzionalità più recenti, è comprensibile che non tutti gli utenti abbiano questa possibilità.
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare un'installazione di rete di Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Creare un'installazione di rete di Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Installare i certificati necessari per l'installazione offline di Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
 - [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md)
+- [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

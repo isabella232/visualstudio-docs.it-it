@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223624"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867826"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -21,9 +21,11 @@ In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo inte
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Pagina iniziale
 
-Il primo elemento visualizzato dopo l'avvio di Visual Studio è molto probabilmente la **Pagina iniziale**. La **Pagina iniziale** è progettata come "centro di smistamento" per facilitare l'accesso ai comandi e ai file di progetto necessari più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
+Il primo elemento visualizzato dopo l'apertura di Visual Studio è molto probabilmente la **Pagina iniziale**. La **Pagina iniziale** è progettata come "centro di smistamento" per facilitare l'accesso ai comandi e ai file di progetto necessari più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
 
 ![Pagina iniziale di Visual Studio](media/start-page.png)
 
@@ -31,9 +33,29 @@ Se si chiude la **Pagina iniziale** e si vuole visualizzarla di nuovo, è possib
 
 ![Menu File di Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Finestra iniziale
+
+All'apertura di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Contiene opzioni per clonare o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
+
+[![](media/vs-2019/start-window-labeled.png "Finestra iniziale in Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+
+Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sarà vuoto.
+
+Se si lavora con codebase non basate su MSBuild, usare l'opzione **Apri una cartella locale** per aprire il codice in Visual Studio. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](develop-code-in-visual-studio-without-projects-or-solutions.md). Oppure è possibile creare un nuovo progetto o clonarne uno da un provider di origine, ad esempio GitHub o Azure DevOps.
+
+L'opzione **Continua senza codice** apre semplicemente l'ambiente di sviluppo di Visual Studio senza caricare alcun progetto o codice specifico. Si può scegliere questa opzione per accedere a una sessione di [Live Share](/visualstudio/liveshare/) o connettersi a un processo per il debug. È anche possibile premere **ESC** per chiudere la finestra iniziale e aprire l'IDE.
+
+::: moniker-end
+
 ## <a name="create-a-project"></a>Creare un progetto
 
 Per continuare a esplorare le funzionalità di Visual Studio si procederà a creare un nuovo progetto.
+
+::: moniker range="vs-2017"
 
 1. Nella casella di ricerca sotto **Nuovo progetto** della **Pagina iniziale** digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome.
 
@@ -42,6 +64,24 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
    Visual Studio mette a disposizione diversi tipi di modelli di progetto che consentono di iniziare a scrivere codice rapidamente. Selezionare un modello di progetto C# **App console (.NET Framework)**. In alternativa, gli sviluppatori che usano Visual Basic, C++, Javascript o altri linguaggi possono creare liberamente un progetto in uno di questi linguaggi. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
 
 1. Nella finestra di dialogo **Nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+   Viene visualizzata la finestra **Crea un nuovo progetto**. Talvolta questa finestra viene definita finestra di dialogo **Nuovo progetto** e consente di individuare e selezionare un modello di progetto. Contiene anche un elenco dei modelli di progetto usati di recente.
+
+1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca scegliendo **C#** (o un altro linguaggio di propria scelta) nel menu di selezione del **Linguaggio**.
+
+   ![Finestra di dialogo Nuovo progetto di Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+
+1. Se è stato selezionato il linguaggio C#, Visual Basic o F#, selezionare il modello **App console (.NET Framework)** e quindi scegliere **Avanti**. Se è stato selezionato un linguaggio diverso, selezionare qualsiasi modello. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
+
+1. Nella pagina **Configura il nuovo progetto** accettare il nome e il percorso predefiniti per il progetto e scegliere **Crea**.
+
+::: moniker-end
 
    Il progetto viene creato e nella finestra **Editor** si apre un file denominato *Program.cs*. L'**Editor** mostra il contenuto dei file ed è la posizione in cui si esegue la maggior parte delle operazioni di scrittura del codice in Visual Studio.
 
@@ -57,11 +97,21 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
 La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in categorie. Ad esempio, il menu **Progetto** contiene i comandi correlati al progetto in uso. Dal menu **Strumenti** è possibile personalizzare Visual Studio selezionando **Opzioni** oppure aggiungere funzionalità all'installazione selezionando **Ottieni strumenti e funzionalità**.
 
-![Barra dei menu di Visual Studio](media/quickstart-IDE-menu-bar.png)
+::: moniker range="vs-2017"
 
-Aprire la finestra **Elenco errori** scegliendo **Elenco errori** dal menu **Visualizza**.
+![Barra dei menu di Visual Studio 2017](media/quickstart-IDE-menu-bar.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Barra dei menu di Visual Studio 2019](media/vs-2019/menu-bar.png)
+
+::: moniker-end
 
 ## <a name="error-list"></a>Elenco errori
+
+Aprire la finestra **Elenco errori** scegliendo **Elenco errori** dal menu **Visualizza**.
 
 Nell'**Elenco errori** sono visualizzati gli errori, gli avvisi e i messaggi riguardanti lo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
 
@@ -77,19 +127,35 @@ Ora si procederà alla compilazione del progetto per esaminare alcuni elementi d
 
 ## <a name="quick-launch"></a>Avvio veloce
 
-La casella **Avvio veloce** è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
+La casella di ricerca **Avvio veloce** è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
 
-1. Individuare la casella **Avvio veloce** in alto a destra nell'IDE. In alternativa premere **CTRL**+**Q** per accedere.
+::: moniker range="vs-2017"
 
-1. Digitare **verbosity** nella casella **Avvio veloce**. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
+1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa premere **CTRL**+**Q** per accedere.
 
-   ![Avvio veloce in Visual Studio](media/quickstart-IDE-quick-launch.png)
+2. Digitare **verbosity** nella casella di ricerca **Avvio veloce**. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
+
+   ![Casella di ricerca di Avvio veloce in Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
    Si apre la pagina delle opzioni **Compila ed esegui** della finestra di dialogo **Opzioni**.
 
-1. In **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi fare clic su **OK**.
+::: moniker-end
 
-1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
+::: moniker range=">=vs-2019"
+
+1. Individuare la casella di ricerca **Avvio veloce** nella parte superiore dell'IDE, a destra dei menu. In alternativa premere **CTRL**+**Q** per accedere.
+
+2. Digitare **verbosity** nella casella di ricerca **Avvio veloce**. Nei risultati visualizzati scegliere **Modifica livello di dettaglio di MSBuild**.
+
+   ![Casella di ricerca di Avvio veloce in Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+
+   Si apre la pagina delle opzioni **Compila ed esegui** della finestra di dialogo **Opzioni**.
+
+::: moniker-end
+
+3. In **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi fare clic su **OK**.
+
+4. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
    Questa volta la finestra di **Output** mostra una registrazione più dettagliata del processo di compilazione, inclusi i file copiati e la posizione in cui sono stati copiati.
 
@@ -99,7 +165,17 @@ La casella **Avvio veloce** è un modo rapido e semplice per eseguire pressoché
 
 Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile usare il menu **Invia commenti e suggerimenti** nella parte superiore di Visual Studio, accanto alla casella **Avvio veloce**.
 
-![Inviare commenti e suggerimenti in Visual Studio](media/quickstart-IDE-send-feedback.png)
+::: moniker range="vs-2017"
+
+![Menu commenti e suggerimenti in Visual Studio 2017](media/quickstart-IDE-send-feedback.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Menu commenti e suggerimenti in Visual Studio 2019](media/vs-2019/send-feedback-menu.png)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Passaggi successivi
 

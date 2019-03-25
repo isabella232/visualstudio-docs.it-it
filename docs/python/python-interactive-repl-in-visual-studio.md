@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155656"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151141"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -25,7 +25,7 @@ In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per
 
 In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
-| REPL | Descrizione | Modifica | Debug | Immagini |
+| REPL | Description | Modifica | Debug | Immagini |
 | --- | --- | --- | --- | --- |
 | Standard | REPL predefinito, comunica direttamente con Python | Modifica standard (su più righe e così via). | Sì, tramite `$attach` | No |
 | Debug | REPL predefinito, comunica con il processo Python di cui è in corso il debug | Modifica standard | Solo debug | No |
@@ -56,7 +56,7 @@ In seguito, nella parte inferiore del menu **Visualizza** > **Altre finestre** �
 
 ## <a name="interactive-window-options"></a>Opzioni della finestra interattiva
 
-È possibile controllare vari aspetti della finestra **interattiva** tramite **Strumenti** > **Opzioni** > **Strumenti Python** > **Finestre interattive** (vedere [Opzioni](python-support-options-and-settings-in-visual-studio.md)):
+È possibile controllare vari aspetti della finestra **interattiva** tramite **Strumenti** > **Opzioni** > **Python** > **Finestre interattive** (vedere [Opzioni](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opzioni della finestra interattiva di Python](media/options-interactive-windows.png)
 
@@ -73,7 +73,7 @@ L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per cr
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
-| Metacomando | Descrizione |
+| Metacomando | Description |
 | --- | --- |
 | `$$` | Inserisce un commento ed è quindi utile per aggiungere commenti al codice durante la sessione. |
 | `$attach` | Collega il debugger di Visual Studio al processo della finestra REPL per abilitare il debug. |
@@ -121,4 +121,4 @@ Visual Studio rileva anche le celle di codice a partire da commenti come `# In[1
 
 La finestra **interattiva** include la funzionalità IntelliSense basata su oggetti attivi, a differenza dell'editor del codice in cui IntelliSense è basato solo sull'analisi del codice sorgente. Questi suggerimenti risultano più corretti nella finestra **interattiva**, in particolare con codice generato dinamicamente. Può però capitare che funzioni con effetti collaterali, ad esempio la registrazione di messaggi, influiscano negativamente sull'esperienza di sviluppo.
 
-Se questo comportamento costituisce un problema, modificare le impostazioni in **Strumenti** > **Opzioni** > **Strumenti Python** > **Finestre interattive** nel gruppo **Modalità di completamento**, come descritto in [Opzioni della finestra interattiva](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Se questo comportamento costituisce un problema, modificare le impostazioni in **Strumenti** > **Opzioni** > **Python** > **Finestre interattive** nel gruppo **Modalità di completamento**, come descritto in [Opzioni della finestra interattiva](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
