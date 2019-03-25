@@ -1,8 +1,9 @@
 ---
+title: Creare un'app per la piattaforma UWP (Universal Windows Platform) con Visual Studio e C#
 description: Creare un'app UWP in Visual Studio con XAML e C#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 04/04/2018
+ms.date: 03/11/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -13,26 +14,33 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bf52b39023209f54835d9753f4bb7a0df1e413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a4fa325e57fcac095572c6eb666967f1ae3bf6df
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934549"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868985"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
-In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio verrà creata una semplice app "Hello World" eseguibile in qualsiasi dispositivo Windows 10. A tale scopo, verranno usati un modello di progetto della piattaforma UWP (Universal Windows Platform), Extensible Application Markup Language (XAML) e il linguaggio di programmazione C#.
+In questa introduzione all'ambiente di sviluppo integrato (IDE) di Visual Studio verrà creata una semplice app "Hello World" eseguibile in qualsiasi dispositivo Windows 10. A tale scopo, verranno usati un modello di progetto della piattaforma UWP (Universal Windows Platform), Extensible Application Markup Language (XAML) e il linguaggio di programmazione C#.
 
+::: moniker range="vs-2017"
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+::: moniker-end
+::: moniker range="vs-2019"
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) per installarlo gratuitamente.
+::: moniker-end
 
 ## <a name="create-a-project"></a>Creare un progetto
 
 Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal Windows Platform). Il tipo di progetto include fin dall'inizio tutti i file di modello necessari.
 
-1. Aprire Visual Studio 2017.
+1. Aprire Visual Studio.
 
-2. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+::: moniker range="vs-2017"
+
+2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
 3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **Universale di Windows**. Nel riquadro centrale scegliere **App vuota (Windows universale)**. Assegnare al progetto il nome *HelloWorld* e scegliere **OK**.
 
@@ -41,10 +49,27 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
    > [!NOTE]
    > Se non viene visualizzato il modello di progetto **App vuota (Windows universale)**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**.<br><br>![Fare clic sul collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e scegliere **Modifica**.<br><br>![Carico di lavoro Sviluppo di app per la piattaforma UWP (Universal Windows Platform) nel programma di installazione di Visual Studio](media/uwp-dev-workload.png)
 
-4. Quando viene visualizzata la finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)**, scegliere **OK**.
+4. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** accettare le impostazioni predefinite per **Versione di destinazione** e **Versione minima**.
 
    ![Nella finestra di dialogo Nuovo progetto della piattaforma UWP (Universal Windows Platform) accettare le impostazioni predefinite per Versione di destinazione e Versione minima](media/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+
+2. Avviare Visual Studio e nella finestra **iniziale** scegliere **Crea un nuovo progetto**.
+
+3. Nella schermata **Crea un nuovo progetto** immettere *Windows universale* nella casella di ricerca, scegliere il modello C# per **App vuota (Windows universale)** e quindi scegliere **Avanti**.
+
+   ![Screenshot della schermata Crea un nuovo progetto](media/vs-2019/uwp-create-new-project.png)
+  
+   > [!NOTE]
+   > Se il modello di progetto **App vuota (Windows universale)** non viene visualizzato, fare clic sul collegamento **Installa altri strumenti e funzionalità**.<br><br>![Fare clic sul collegamento Installa altri strumenti e funzionalità](media/vs-2019/uwp-not-finding.png)<br><br>Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e scegliere **Modifica**.<br><br>![Carico di lavoro Sviluppo di app per la piattaforma UWP (Universal Windows Platform) nel programma di installazione di Visual Studio](media/uwp-dev-workload.png)
+
+4. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** accettare le impostazioni predefinite per **Versione di destinazione** e **Versione minima**.
+
+   ![Nella finestra di dialogo Nuovo progetto della piattaforma UWP (Universal Windows Platform) accettare le impostazioni predefinite per Versione di destinazione e Versione minima](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
+   
    > [!NOTE]
    > Se è la prima volta che si usa Visual Studio per creare app UWP, è possibile che venga visualizzata la finestra di dialogo **Impostazioni**. Scegliere **Modalità sviluppatore** e **Sì**.<br><br>
    ![Abilitare la modalità sviluppatore nella finestra di dialogo Impostazioni della piattaforma UWP](media/enable-developer-mode.png)<br><br>Visual Studio installa un pacchetto aggiuntivo di modalità sviluppatore per l'utente. Una volta completata l'installazione del pacchetto, chiudere la finestra di dialogo **Impostazioni**.
@@ -57,7 +82,12 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
 1. In **Esplora soluzioni** fare doppio clic su *MainPage.xaml* per aprire una doppia visualizzazione.
 
+   ::: moniker range="vs-2017"
    ![Aprire MainPage.xaml da Esplora soluzioni ](media/uwp-solution-explorer-MainPage-xaml.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Aprire MainPage.xaml da Esplora soluzioni](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
+   ::: moniker-end
 
    Sono disponibili due riquadri: la **finestra di progettazione XAML**, che include un'area di progettazione, e l'**editor XAML**, dove è possibile aggiungere o cambiare il codice.
 
@@ -105,7 +135,7 @@ Il termine "gestore dell'evento" sembra qualcosa di complesso, ma in realtà è 
 
    Modificarlo in modo analogo al seguente:
 
-    ![Nuovo gestore dell'evento Button_Click asincrono ](media/uwp-add-hello-world-async-code.png)
+   ![Nuovo gestore dell'evento Button_Click asincrono ](media/uwp-add-hello-world-async-code.png)
 
    Di seguito viene riportato il codice da copiare e incollare:
 
@@ -128,11 +158,11 @@ Il codice usa alcune API Windows per creare un oggetto di sintesi vocale e asseg
 
 A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello World" per verificarne l'aspetto e l'audio. Ecco come fare.
 
-1. Scegliere **Computer locale** per avviare l'applicazione.
+1. Usare il pulsante di riproduzione (include il testo **Computer locale**) per avviare l'applicazione nel computer locale.
 
    ![Fare clic su Computer locale per avviare ed eseguire il debug dell'app UWP](media/uwp-start-or-debug.png)
 
-   In alternativa, è possibile scegliere **Debug** > **Avvia debug** dalla barra dei menu o premere **F5** per avviare l'app.
+   In alternativa, è possibile scegliere **Debug** > **Avvia debug** dalla barra dei menu o premere F5 per avviare l'app.
 
 2. Visualizzare l'app, che viene visualizzata subito dopo una schermata iniziale. L'app dovrebbe avere un aspetto simile al seguente:
 
@@ -142,11 +172,11 @@ A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello Wo
 
    Il dispositivo Windows 10 pronuncerà le parole "Hello, World!"
 
-4. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, scegliere **Debug** > **Arresta debug** dalla barra degli strumenti oppure premere **MAIUSC**+**F5**.
+4. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, scegliere **Debug** > **Arresta debug** dalla barra degli strumenti oppure premere MAIUSC+F5.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-La guida introduttiva è stata completata. Ci auguriamo che l'articolo sia stato utile per apprendere le nozioni di base su UWP e sull'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente:
+L'esercitazione è stata completata. Ci auguriamo che l'articolo sia stato utile per apprendere le nozioni di base su UWP e sull'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente:
 
 > [!div class="nextstepaction"]
 > [Create a user interface](/windows/uwp/design/basics/xaml-basics-ui) (Creare un'interfaccia utente)
