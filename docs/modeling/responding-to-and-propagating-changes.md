@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b35f465d9fa7683c6bc26c9c79bab478ce7ecf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939593"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416032"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Risposta alle modifiche e propagazione delle modifiche
 Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere codice che propaga le modifiche ad altre parti del modello o a risorse esterne, ad esempio file, database o altri componenti.
@@ -29,8 +29,8 @@ Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere c
 |Eseguire l'override di gestori di modifica, ad esempio OnDeleting e OnValueChanging|Mantenere sincronizzati i vari elementi e mantenere i valori esterni sincronizzato con il modello.<br /><br /> Vincolare i valori per gli intervalli definiti.<br /><br /> Chiamato immediatamente prima e dopo il valore della proprietà e altre modifiche. È possibile terminare la modifica generando un'eccezione.|[Gestori di modifica del valore delle proprietà del dominio](../modeling/domain-property-value-change-handlers.md)|
 |Regole|È possibile definire regole che vengono accodate per l'esecuzione subito prima della fine di una transazione in cui si è verificata una modifica. Questi non vengono eseguiti su annullamento o ripristino. Usarli per mantenere sincronizzati con l'altro una parte dell'archivio.|[Le regole propagano le modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md)|
 |Eventi di Store|L'archivio di modellazione fornisce notifiche degli eventi, ad esempio aggiungendo o eliminando un elemento o un collegamento o la modifica del valore di una proprietà. L'evento viene anche eseguita in annullamento e ripristino. Usare gli eventi di archiviazione per aggiornare i valori che non sono presenti nell'archivio.|[I gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
-|Eventi .NET|Le forme dispongono di gestori di eventi che rispondono al clic del mouse e altri movimenti. È necessario registrarsi per questi eventi per ogni oggetto. La registrazione avviene in genere di una sostituzione di InitializeInstanceResources e deve essere eseguita per ogni elemento.<br /><br /> Questi eventi si verificano in genere all'esterno di una transazione.|[Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Regole dei limiti|Regola bounds viene utilizzata in particolare per vincolare i limiti della forma.|[Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme](../modeling/boundsrules-constrain-shape-location-and-size.md)|
+|Eventi .NET|Le forme dispongono di gestori di eventi che rispondono al clic del mouse e altri movimenti. È necessario registrarsi per questi eventi per ogni oggetto. La registrazione avviene in genere di una sostituzione di InitializeInstanceResources e deve essere eseguita per ogni elemento.<br /><br /> Questi eventi si verificano in genere all'esterno di una transazione.|[Procedura: Intercettare un clic su una forma o su un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|Regole dei limiti|Regola bounds viene utilizzata in particolare per vincolare i limiti della forma.|[Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme](/visualstudio/modeling/boundsrules-constrain-shape-location-and-size?view=vs-2015)|
 |Regole di selezione|Le regole di selezione in modo specifico vincolano ciò che l'utente può selezionare.|[Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicare gli stati degli elementi del modello usando le funzionalità di forme e connettori, ad esempio shadow, frecce, colore e larghezza della linea e stile.|[Aggiornamento di forme e di connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
@@ -45,11 +45,11 @@ Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere c
 
 -   **Sottoscrizione di eventi** prima di richiedere a un evento, creare un gestore dell'evento e delegato. Usare quindi il <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Annullamento delle modifiche** quando si annulla una transazione, gli eventi vengono generati, ma non vengono applicate le regole. Se una regola viene modificato un valore e si annulla la modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore relativo valore originale. Per altre informazioni su transactons e di annullamento, vedere [come: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
+-   **Annullamento delle modifiche** quando si annulla una transazione, gli eventi vengono generati, ma non vengono applicate le regole. Se una regola viene modificato un valore e si annulla la modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore relativo valore originale. Per altre informazioni sulle transazioni e di annullamento, vedere [come: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 -   **Il passaggio di argomenti dell'evento a regole ed eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che contiene informazioni su come il modello modificato.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
+- [Procedura: Intercettare un clic su una forma o su un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

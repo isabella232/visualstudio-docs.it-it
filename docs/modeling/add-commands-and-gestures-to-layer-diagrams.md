@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983845"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415473"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
@@ -30,25 +30,21 @@ Se si vuole, è possibile definire gestori comandi e movimenti diversi nello ste
 
 Vedere [Requisiti](../modeling/extend-layer-diagrams.md#prereqs).
 
-## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Definizione di un comando o movimento in un nuovo progetto VSIX
+## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definire un comando o movimento in un nuovo progetto VSIX
 
 Il modo più rapido per creare un'estensione è usare il modello di progetto. In questo modo il codice e il manifesto VSIX vengono inseriti nello stesso progetto.
 
-### <a name="to-define-an-extension-by-using-a-project-template"></a>Per definire un'estensione tramite un modello di progetto
+1. Creare una nuova **estensione di comando Progettazione livelli** oppure **estensione di movimento Progettazione livelli** progetto.
 
-1. Creare un progetto in una nuova soluzione usando il comando **Nuovo progetto** del menu **File** .
+   Il modello crea un progetto che contiene un piccolo esempio funzionante.
 
-2. Nella finestra di dialogo **Nuovo progetto** , in **Progetti di modellazione**, selezionare **Estensione di comando progettazione livelli** o **Estensione di movimento progettazione livelli**.
-
-    Il modello crea un progetto che contiene un piccolo esempio funzionante.
-
-3. Per testare l'estensione, premere **Ctrl**+**F5** oppure **F5**.
+2. Per testare l'estensione, premere **Ctrl**+**F5** oppure **F5**.
 
     Avvia un'istanza sperimentale di Visual Studio. In questo caso, creare un diagramma delle dipendenze. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.
 
-4. Chiudere l'istanza sperimentale e modificare il codice di esempio. Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).
+3. Chiudere l'istanza sperimentale e modificare il codice di esempio.
 
-5. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni vedere una delle sezioni seguenti:
+4. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni vedere una delle sezioni seguenti:
 
     [Definizione di un comando di menu](#command)
 
@@ -56,46 +52,40 @@ Il modo più rapido per creare un'estensione è usare il modello di progetto. In
 
 ::: moniker range="vs-2017"
 
-6. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **estensioni e aggiornamenti** nel **Tools** menu.
+5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **estensioni e aggiornamenti** nel **Tools** menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-6. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **gestire le estensioni** nel **estensioni** menu.
+5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **gestire le estensioni** nel **estensioni** menu.
 
 ::: moniker-end
 
-## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Aggiunta di un comando o movimento a un progetto VSIX separato
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Aggiungere un comando o movimento a un progetto VSIX separato
 
 Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori.
 
-### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Per aggiungere estensioni del livello a un progetto VSIX separato
+1. Creare una nuova **libreria di classi** progetto. Questo progetto conterrà le classi del gestore comandi o movimenti.
 
-1.  Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà le classi del gestore comandi o movimenti.
+   > [!NOTE]
+   > È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.
 
-    > [!NOTE]
-    > È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.
+2. Aggiungere o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **vsixmanifest**.
 
-2.  Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Per aggiungere un progetto VSIX:
+3. Nelle **Esplora soluzioni**, fare clic sul progetto VSIX e scegliere **imposta come progetto di avvio**.
 
-    1.  Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.
+4. In **source.extension.vsixmanifest**, in **Asset**, aggiungere il progetto di gestore comandi o movimenti come componente MEF.
 
-    2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
+    1. Nella scheda **Asset**scegliere **Nuovo**.
 
-    3.  Fare clic su **Seleziona versioni** e assicurarsi che sia selezionato **Visual Studio** .
+    2. In **Tipo**selezionare **Microsoft.VisualStudio.MefComponent**.
 
-3.  In **source.extension.vsixmanifest**, in **Asset**, aggiungere il progetto di gestore comandi o movimenti come componente MEF.
+    3. In **Origine**selezionare **Progetto nella soluzione corrente** e selezionare il nome del progetto del gestore comandi o movimenti.
 
-    1.  Nella scheda **Asset**scegliere **Nuovo**.
+    4. Salvare il file.
 
-    2.  In **Tipo**selezionare **Microsoft.VisualStudio.MefComponent**.
-
-    3.  In **Origine**selezionare **Progetto nella soluzione corrente** e selezionare il nome del progetto del gestore comandi o movimenti.
-
-    4.  Salvare il file.
-
-4.  Tornare al progetto di gestore comandi o movimenti e aggiungere i riferimenti di progetto seguenti:
+5. Tornare al progetto di gestore comandi o movimenti e aggiungere i riferimenti di progetto seguenti:
 
    |**Riferimento**|**Operazioni consentite**|
    |-|-|
@@ -106,17 +96,17 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
    |Microsoft.VisualStudio.Modeling.Sdk.[versione]|Definire le estensioni di modellazione|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]|Aggiornare forme e diagrammi|
 
-5.  Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni vedere una delle sezioni seguenti:
+6. Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni vedere una delle sezioni seguenti:
 
      [Definizione di un comando di menu](#command)
 
      [Definizione di un gestore movimenti](#gesture)
 
-     Vedere anche [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).
+7. Per testare la funzionalità, premere **Ctrl**+**F5** oppure **F5**.
 
-6.  Per testare la funzionalità, premere **Ctrl**+**F5** oppure **F5**. Viene aperta un'istanza sperimentale di Visual Studio. In questo caso, creare o aprire un diagramma delle dipendenze.
+   Viene aperta un'istanza sperimentale di Visual Studio. In questo caso, creare o aprire un diagramma delle dipendenze.
 
-7.  Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
+8. Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora File.
 
 ##  <a name="command"></a> Definizione di un comando di menu
 
@@ -149,8 +139,6 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
    `...`
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
-
-Per altre informazioni, vedere [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 Per aggiungere un nuovo comando, creare un nuovo file di codice che contiene l'esempio riportato di seguito. Quindi, testarlo e modificarlo.
 
@@ -275,5 +263,4 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Esplorare e aggiornare i modelli di livello nel codice del programma](../modeling/navigate-and-update-layer-models-in-program-code.md)
 - [Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

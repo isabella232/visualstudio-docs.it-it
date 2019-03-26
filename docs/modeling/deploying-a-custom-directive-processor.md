@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932053"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416058"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -46,9 +46,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Per sviluppare un processore di direttiva personalizzato in un progetto VSIX
 
-1.  Creare un progetto VSIX in Visual Studio.
-
-    -   Nel **nuovo progetto** finestra di dialogo espandere **Visual Basic** oppure **Visual c#**, quindi espandere **estendibilità**. Fare clic su **progetto VSIX**.
+1.  Creare una nuova **progetto VSIX** progetto.
 
 2.  Nelle **vsixmanifest**, impostare il tipo di contenuto e le edizioni supportate.
 
@@ -184,7 +182,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|nome|Tipo|Dati|
+|Nome|Tipo|Dati|
 |-|-|-|
 |(Predefinito)|REG_SZ|(valore non impostato)|
 |Classe|REG_SZ|**\<Nome Namespace >. \<Nome classe >**|
@@ -192,7 +190,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|nome|Tipo|Dati|
+|Nome|Tipo|Dati|
 |-|-|-|
 |(Predefinito)|REG_SZ|(valore non impostato)|
 |Classe|REG_SZ|\<**Il nome completo della classe**>|
