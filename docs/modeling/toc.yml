@@ -74,12 +74,6 @@ items:
       href: add-custom-architecture-validation-to-layer-diagrams.md
     - name: Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
       href: add-custom-properties-to-layer-diagrams.md
-    - name: Esplorare e aggiornare i modelli delle dipendenze nel codice del programma
-      href: navigate-and-update-layer-models-in-program-code.md
-    - name: Distribuire un'estensione dei modelli delle dipendenze
-      href: deploy-a-layer-model-extension.md
-    - name: Risolvere i problemi relativi alle estensioni per i diagrammi delle dipendenze
-      href: troubleshoot-extensions-for-layer-diagrams.md
   - name: SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
     href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     items:
@@ -115,8 +109,6 @@ items:
         href: customizing-element-creation-and-movement.md
       - name: Personalizzare il comportamento di copia
         href: customizing-copy-behavior.md
-      - name: Personalizzare il comportamento di eliminazione
-        href: customizing-deletion-behavior.md
       - name: Personalizzare la finestra Proprietà
         href: customizing-the-properties-window.md
       - name: Personalizzare Esplora modelli
@@ -177,8 +169,6 @@ items:
         href: adding-extensions-to-dsl-definitions.md
       - name: Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
         href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-      - name: Eseguire il debug usando il Visualizzatore archivio
-        href: debugging-by-using-the-store-viewer.md
       - name: File DslDefinition.dsl
         href: the-dsldefinition-dsl-file.md
       - name: Informazioni sul codice DSL
@@ -198,8 +188,6 @@ items:
         href: how-to-intercept-a-click-on-a-shape-or-decorator.md
       - name: Accedere e vincolare la selezione corrente
         href: how-to-access-and-constrain-the-current-selection.md
-      - name: Personalizzare strumenti elemento
-        href: customizing-element-tools.md
     - name: Rispondere e propagare modifiche
       href: responding-to-and-propagating-changes.md
       items:
@@ -211,8 +199,6 @@ items:
         href: rules-propagate-changes-within-the-model.md
       - name: I gestori eventi propagano le modifiche al di fuori del modello
         href: event-handlers-propagate-changes-outside-the-model.md
-      - name: Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme
-        href: boundsrules-constrain-shape-location-and-size.md
       - name: Aggiornare forme e connettori per riflettere il modello
         href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: Generare codice da un linguaggio specifico di dominio
@@ -344,9 +330,9 @@ items:
           href: walkthrough-creating-a-custom-text-template-host.md
     - name: Riferimento API per modelli di testo T4
       href: api-reference-for-t4-text-templates.md
-ms.openlocfilehash: 04587f1fed1b83cf8ebac8d42be9e1031c7dcf9d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 25393b9c38dc994f41d8f78dd7f8b901f4f298b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872055"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415709"
