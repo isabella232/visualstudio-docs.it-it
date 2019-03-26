@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927880"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416422"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 Per definire un linguaggio specifico di dominio (DSL), creare una soluzione di Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
-Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Selezione di una soluzione di modello
- Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
+Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| SDK di visualizzazione e modellazione di Visual Studio | |
+- Visual Studio
+- Visual Studio estensione carico di lavoro sviluppo (include Visual Studio SDK)
+- Modeling SDK (installarlo come un singolo componente in Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Per creare un nuovo linguaggio specifico di dominio, si crea una nuova soluzione di Visual Studio usando il modello di progetto linguaggio specifico di dominio.
 
- Per creare un nuovo linguaggio specifico di dominio, si crea una nuova soluzione di Visual Studio usando il modello di progetto linguaggio specifico di dominio.
+### <a name="to-create-a-dsl-solution"></a>Per creare una soluzione DSL
 
-#### <a name="to-create-a-dsl-solution"></a>Per creare una soluzione DSL
+1. Creare una nuova **Domain-Specific Language** progetto.
 
-1. Creare una soluzione con il **Domain-Specific Language** modello, che sono disponibili nella sezione **altri tipi di progetto/Extensibility** nel **nuovo progetto** nella finestra di dialogo.
+   ::: moniker range="vs-2017"
 
     ![Finestra di dialogo per la creazione di una soluzione DSL](../modeling/media/create_dsldialog.png)
 
-    Quando fa clic su **OK**, il **Domain-Specific Language guidata** si apre e visualizza un elenco di soluzioni di modello DSL.
+   ::: moniker-end
+
+    Il **Domain-Specific Language guidata** si apre e visualizza un elenco di soluzioni di modello DSL.
 
 2. Fare clic su ogni modello per visualizzare una descrizione. Scegliere la soluzione più simile a quella che si vuole creare.
 
@@ -606,7 +607,7 @@ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare
  Vedere anche [Procedura: Modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Risoluzione dei problemi
- La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estensibilità degli strumenti di visualizzazione](http://go.microsoft.com/fwlink/?LinkId=186074).
+ La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [forum sull'estendibilità degli strumenti di visualizzazione](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
 | Problema | Suggerimento |

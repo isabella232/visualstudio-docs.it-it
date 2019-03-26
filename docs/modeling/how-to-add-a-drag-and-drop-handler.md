@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867748"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415668"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: Aggiungere un gestore di trascinamento della selezione
 
@@ -158,13 +158,13 @@ Le proprietà `Data` e `Prototype` degli argomenti dell'evento contengono solo u
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Per preparare un progetto DSL per ModelBus
 
-1.  Rendere il linguaggio DSL di origine accessibile da ModelBus di Visual Studio:
+Rendere il linguaggio DSL di origine accessibile da ModelBus di Visual Studio:
 
-    1.  Scaricare e installare l'estensione di ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Scaricare e installare l'estensione di ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare doppio clic nell'area di progettazione e quindi fare clic su **Abilita Modelbus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
+2. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare doppio clic nell'area di progettazione e quindi fare clic su **Abilita Modelbus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
 
-    3.  Fare clic su **Trasforma tutti i modelli** e ricompilare la soluzione.
+3. Fare clic su **Trasforma tutti i modelli** e ricompilare la soluzione.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Per inviare un oggetto da un linguaggio DSL di origine
 

@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222883"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415811"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: Definire e usare delegati di attività in Progettazione flussi di lavoro
 
@@ -21,12 +21,10 @@ ms.locfileid: "57222883"
 
 ## <a name="define-an-activity-delegate"></a>Definire un delegato dell'attività
 
-1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**.
-
-2. Nel **nuovo progetto** finestra di dialogo, seleziona la **flusso di lavoro** categoria a sinistra e quindi selezionare il **applicazione Console flusso di lavoro** modello di progetto. Denominare il progetto (se lo si desidera) e fare clic su **accettabile**.
+1. Creare una nuova **applicazione Console flusso di lavoro** progetto.
 
    > [!NOTE]
-   > Se non viene visualizzato il **flusso di lavoro** category, installare prima il **Windows Workflow Foundation** componente di Visual Studio. Per istruzioni dettagliate, vedere [installazione di Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Se non viene visualizzato il **flusso di lavoro** modelli di progetto, installare prima il **Windows Workflow Foundation** componente di Visual Studio. Per istruzioni dettagliate, vedere [installazione di Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionare **Add** > **nuovo elemento**. Selezionare il **flusso di lavoro** categoria e quindi selezionare la **attività** modello di elemento. Denominare la nuova attività **Myforeach** e quindi selezionare **OK**.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950149"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416236"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Esplorare e aggiornare i modelli nel codice del programma
 
@@ -226,27 +226,28 @@ using (Transaction t =
   Quando si crea un elemento in questo modo, viene creato automaticamente un connettore nel diagramma, ma dispone di una forma predefinite, colori e altre funzionalità. Per controllare come viene creato il connettore associato, vedere [creazione di un elemento e la relativa forma](#merge).
 
 ##  <a name="deleteelements"></a> L'eliminazione di elementi
- Eliminare un elemento chiamando `Delete()`:
 
- `henry.Delete();`
+Eliminare un elemento chiamando `Delete()`:
 
- Questa operazione eliminerà anche:
+`henry.Delete();`
+
+Questa operazione eliminerà anche:
 
 - Collegamenti di relazione da e verso l'elemento. Ad esempio, `edward.Parents` non conterrà più `henry`.
 
 - Gli elementi in ruoli per il quale il `PropagatesDelete` flag è true. Ad esempio, la forma che visualizza l'elemento verrà eliminata.
 
-  Per impostazione predefinita, ogni relazione di incorporamento è `PropagatesDelete` true al ruolo di destinazione. L'eliminazione `henry` non elimina il `familyTree`, ma `familyTree.Delete()` eliminerebbe tutti il `Persons`. Per altre informazioni, vedere [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md).
+Per impostazione predefinita, ogni relazione di incorporamento è `PropagatesDelete` true al ruolo di destinazione. L'eliminazione `henry` non elimina il `familyTree`, ma `familyTree.Delete()` eliminerebbe tutti il `Persons`.
 
-  Per impostazione predefinita, `PropagatesDelete` non vale per i ruoli delle relazioni di riferimento.
+Per impostazione predefinita, `PropagatesDelete` non vale per i ruoli delle relazioni di riferimento.
 
-  È possibile che le regole di eliminazione omettere propagazioni degli specifici quando si elimina un oggetto. Ciò è utile se si intende sostituire un elemento per un altro. Fornire il GUID di uno o più ruoli per i quali l'eliminazione non deve essere propagata. È possibile ottenere il GUID della classe di relazione:
+È possibile che le regole di eliminazione omettere propagazioni degli specifici quando si elimina un oggetto. Ciò è utile se si intende sostituire un elemento per un altro. Fornire il GUID di uno o più ruoli per i quali l'eliminazione non deve essere propagata. È possibile ottenere il GUID della classe di relazione:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Questo particolare esempio avrebbe alcun effetto, poiché `PropagatesDelete` viene `false` per i ruoli del `ParentsHaveChildren` relazione.)
+(Questo particolare esempio avrebbe alcun effetto, poiché `PropagatesDelete` viene `false` per i ruoli del `ParentsHaveChildren` relazione.)
 
-  In alcuni casi, l'eliminazione sia impedita dall'esistenza di un blocco, sull'elemento o su un elemento da eliminare dalla propagazione. È possibile usare `element.CanDelete()` per verificare se l'elemento può essere eliminato.
+In alcuni casi, l'eliminazione sia impedita dall'esistenza di un blocco, sull'elemento o su un elemento da eliminare dalla propagazione. È possibile usare `element.CanDelete()` per verificare se l'elemento può essere eliminato.
 
 ##  <a name="deletelinks"></a> L'eliminazione di collegamenti di relazione
  È possibile eliminare un relazione di collegamento tramite la rimozione di un elemento da una proprietà di ruolo:
@@ -486,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)
 - [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Procedura: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [Procedura: Usare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Risposta alle modifiche e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)

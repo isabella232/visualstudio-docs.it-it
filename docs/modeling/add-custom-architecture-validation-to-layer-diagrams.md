@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983364"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415044"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 
@@ -40,9 +40,7 @@ Il modo più rapido per creare un validator è usare il modello di progetto. In 
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Per definire un'estensione tramite un modello di progetto
 
-1. Creare un progetto in una nuova soluzione usando il comando **Nuovo progetto** del menu **File** .
-
-2. Nella finestra di dialogo **Nuovo progetto** selezionare **Estensione di convalida progettazione livelli**in **Progetti di modellazione**.
+1. Creare una nuova **estensione di convalida Progettazione livelli** progetto.
 
     Il modello crea un progetto che contiene un piccolo esempio.
 
@@ -52,22 +50,22 @@ Il modo più rapido per creare un validator è usare il modello di progetto. In 
    > - Modificare le chiamate a `LogValidationError` in modo da rimuovere gli argomenti facoltativi `errorSourceNodes` e `errorTargetNodes`.
    > - Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-3. Modificare il codice per definire la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
+2. Modificare il codice per definire la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
 
-4. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
+3. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
 
    > [!NOTE]
    > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
 
 ::: moniker range="vs-2017"
 
-5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **estensioni e aggiornamenti** nel **Tools** menu.
+4. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **estensioni e aggiornamenti** nel **Tools** menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **gestire le estensioni** nel **estensioni** menu.
+4. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **gestire le estensioni** nel **estensioni** menu.
 
 ::: moniker-end
 
@@ -77,15 +75,13 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Per aggiungere la convalida dei livelli a un progetto VSIX separato
 
-1.  Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà la classe di convalida dei livelli.
+1. Creare una nuova **libreria di classi** progetto. Questo progetto conterrà la classe di convalida dei livelli.
 
-2.  Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Se è necessario aggiungere un progetto VSIX, eseguire le operazioni seguenti:
+2. Trovare o creare un **progetto VSIX** nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**.
 
-    1.  Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#**, **Extensibility**e **Progetto VSIX**.
+3. Nelle **Esplora soluzioni**, nel menu di scelta rapida del progetto VSIX, scegliere **imposta come progetto di avvio**.
 
-    2.  In **Esplora soluzioni**scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.
-
-3.  In **source.extension.vsixmanifest**aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.
+4. In **source.extension.vsixmanifest**aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.
 
     1.  Scegliere **Nuovo**.
 
@@ -97,7 +93,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
          **Progetto** = *Progetto di convalida*
 
-4.  È anche necessario aggiungere il progetto come convalida dei livelli:
+5. È anche necessario aggiungere il progetto come convalida dei livelli:
 
     1.  Scegliere **Nuovo**.
 
@@ -109,7 +105,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
          **Progetto** = *Progetto di convalida*
 
-5.  Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:
+6. Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:
 
     |**Riferimento**|**Operazioni consentite**|
     |-|-|
@@ -120,14 +116,14 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
     |System.ComponentModel.Composition|Definire il componente di convalida mediante Managed Extensibility Framework (MEF)|
     |Microsoft.VisualStudio.Modeling.Sdk.[versione]|Definire le estensioni di modellazione|
 
-6.  Copiare il codice di esempio disponibile alla fine di questo argomento nel file di classe nel progetto della libreria del validator in modo che contenga il codice per la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
+7. Copiare il codice di esempio disponibile alla fine di questo argomento nel file di classe nel progetto della libreria del validator in modo che contenga il codice per la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).
 
-7.  Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
+8. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).
 
     > [!NOTE]
     > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).
 
-8.  Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
+9. Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
 
 ##  <a name="programming"></a> Programmazione della convalida
 

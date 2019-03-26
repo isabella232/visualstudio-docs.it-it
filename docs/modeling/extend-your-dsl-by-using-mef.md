@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939619"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415577"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 
@@ -117,15 +117,15 @@ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/d
 
 Il linguaggio DSL è ora abilitata per il framework MEF. È possibile scrivere i comandi di menu, gestori di movimenti e vincoli di convalida come estensioni MEF. È possibile scrivere queste estensioni alla soluzione DSL insieme ad altro codice personalizzato. Inoltre, utente o altri sviluppatori possono scrivere separate le estensioni di Visual Studio che estendono il linguaggio DSL.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Creazione di un'estensione per un DSL MEF-abilitata
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Creare un'estensione per un linguaggio DSL MEF-abilitata
 
 Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è possibile scrivere le estensioni per tale. Le estensioni sono utilizzabile per aggiungere i comandi di menu e gestori movimenti o i vincoli di convalida. Per creare queste estensioni, si usa una soluzione di Visual Studio extension (VSIX). La soluzione è costituito da due parti: un progetto di libreria di classi che compila l'assembly di codice e un progetto VSIX per creare l'assembly.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Per creare una DSL estensione VSIX
+### <a name="to-create-a-dsl-extension-vsix"></a>Per creare una DSL estensione VSIX
 
-1. Creare un nuovo progetto Libreria di classi. A questo scopo, nella **nuovo progetto** finestra di dialogo **Visual Basic** oppure **Visual c#** e quindi selezionare **libreria di classi**.
+1. Creare una nuova **libreria di classi** progetto.
 
-2. Nel nuovo progetto di libreria di classi, aggiungere un riferimento all'assembly del linguaggio DSL.
+2. Nel nuovo progetto, aggiungere un riferimento all'assembly del linguaggio DSL.
 
    - Questo assembly è in genere un nome che termina con ". DSL.dll".
 
@@ -145,9 +145,9 @@ Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è
 
    -   System.Windows.Forms.dll
 
-4. Creare un progetto VSIX nella stessa soluzione. A questo scopo, nella **nuovo progetto** finestra di dialogo, espandere **Visual Basic** oppure **Visual c#**, fare clic su **estendibilità**e quindi scegliere  **Progetto VSIX**.
+4. Creare una nuova **progetto VSIX** progetto.
 
-5. In Esplora soluzioni fare doppio clic su progetto VSIX e quindi fare clic su **imposta come progetto di avvio**.
+5. Nelle **Esplora soluzioni**, fare clic sul progetto VSIX e scegliere **imposta come progetto di avvio**.
 
 6. Nel nuovo progetto, aprire **vsixmanifest**.
 
@@ -376,5 +376,5 @@ namespace MefExtension
 
 - [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)

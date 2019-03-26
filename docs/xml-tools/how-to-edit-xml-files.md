@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525453"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415057"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: Modificare i file XML
 
@@ -22,49 +22,63 @@ L'editor XML è il nuovo editor per i file XML. Può essere usato per un file XM
 > [!NOTE]
 > I documenti XHTML sono gestiti dall'editor HTML.
 
-## <a name="to-edit-an-xml-file"></a>Per modificare un file XML
+Per modificare un file XML, fare doppio clic sul file di cui che si desidera modificare.
 
-1.  Fare doppio clic sul file che si desidera modificare.
+## <a name="add-a-new-xml-file-to-a-project"></a>Aggiungere un nuovo file XML a un progetto
 
-### <a name="to-add-a-new-xml-file-to-a-project"></a>Per aggiungere un nuovo file XML a un progetto
+1. Dal **Project** dal menu **Aggiungi nuovo elemento**.
 
-1.  Dal **Project** dal menu **Aggiungi nuovo elemento**.
+2. Selezionare **File XML** dalle **modelli** riquadro.
 
-2.  Selezionare **File XML** dalle **modelli** riquadro.
+3. Immettere il nome del file nei **Name** campo e premere **Add**.
 
-3.  Immettere il nome del file nei **Name** campo e premere **Add**.
+   Il file XML viene aggiunto al progetto e verrà aperto nell'editor XML. Il file contiene la dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8" ?>`.
 
-     Il file XML viene aggiunto al progetto e aperto nell'editor XML. Il file contiene la dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8" ?>`.
+## <a name="add-an-existing-xml-file-to-a-project"></a>Aggiungere un file XML esistente a un progetto
 
-## <a name="to-add-an-existing-xml-file-to-a-project"></a>Per aggiungere un file XML esistente a un progetto
+1. Dal **Project** dal menu **Aggiungi elemento esistente**.
 
-1.  Dal **Project** dal menu **Aggiungi elemento esistente**.
+   Il **Aggiungi elemento esistente** verrà visualizzata la finestra di dialogo.
 
-     Il **Aggiungi elemento esistente** verrà visualizzata la finestra di dialogo.
+2. Selezionare un file XML e premere **Add**.
 
-2.  Selezionare un file XML e premere **Add**.
+## <a name="create-a-new-xml-or-xslt-file"></a>Creare un nuovo file XML o XSLT
 
-## <a name="to-create-a-new-xml-or-xslt-file"></a>Per creare un nuovo file XML o XSLT
+1. Dal **File** dal menu **New**.
 
-1.  Dal **File** dal menu **New**.
+   Il **nuovo File** verrà visualizzata la finestra di dialogo.
 
-     Il **nuovo File** verrà visualizzata la finestra di dialogo.
+2. Selezionare **File XML** per creare un nuovo file XML; o, selezionare **File XSLT** per creare un nuovo foglio di stile XSLT.
 
-2.  Selezionare **File XML** per creare un nuovo file XML; o, selezionare **File XSLT** per creare un nuovo foglio di stile XSLT.
+3. Fare clic su **Apri**.
 
-3.  Fare clic su **Apri**.
+## <a name="create-an-empty-project-for-xml-files"></a>Creare un progetto vuoto per i file XML
 
-## <a name="to-create-a-project-for-xml-files"></a>Per creare un progetto per i file XML
+::: moniker range="vs-2017"
 
-1.  Dal **File** dal menu **New**, quindi selezionare **progetto**.
+1. Dal **File** dal menu **New** > **progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+   Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2.  Selezionare il linguaggio del codice di propria scelta, seleziona **progetto vuoto**, fare clic su **OK**.
+2. Selezionare il linguaggio del codice di propria scelta, seleziona **progetto vuoto**.
 
-3.  Aggiunta di file XML al progetto.
+3. Fare clic su **OK**.
 
-     L'editor XML individua gli schemi che aggiunti al progetto e li utilizza per la convalida e IntelliSense in XML, schemi o i file XSLT che vengono modificati mentre il progetto è aperto.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Dal **File** dal menu **New** > **progetto**.
+
+2. Immettere **progetto vuoto** nella casella di ricerca di modello, selezionare la **progetto vuoto (.NET Framework)** modello e quindi fare clic su **Next**.
+
+3. Scegliere **Crea**.
+
+::: moniker-end
+
+4. Aggiunta di file XML al progetto.
+
+   L'editor XML individua gli schemi che aggiunti al progetto e li utilizza per la convalida e IntelliSense in XML, schemi o i file XSLT che vengono modificati mentre il progetto è aperto.
 
 ## <a name="see-also"></a>Vedere anche
 

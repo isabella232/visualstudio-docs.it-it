@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928283"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416019"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
+
 Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in Visual Studio. Questa API è definita nel codice generato dalla definizione DSL. Questo argomento descrive l'API generata.
 
 ## <a name="the-example-solution-component-diagrams"></a>La soluzione di esempio: Diagrammi dei componenti
- Per creare la soluzione che rappresenta l'origine della maggior parte degli esempi in questo argomento, creare un DSL dal **modelli componente** modello di soluzione. che è uno dei modelli standard visualizzati quando si crea una nuova soluzione DSL.
+
+Per creare la soluzione che rappresenta l'origine della maggior parte degli esempi in questo argomento, creare un DSL dal **modelli componente** modello di soluzione. che è uno dei modelli standard visualizzati quando si crea una nuova soluzione DSL.
 
 > [!NOTE]
->  Il modello DSL diagrammi componente non è correlato ai diagrammi componente UML che è possibile creare utilizzando il menu di architettura in Visual Studio. Nel **nuovo progetto** finestra di dialogo espandere **altri tipi di progetto\extensibility** e quindi fare clic su **Domain-Specific Language progettazione**.
+> Il modello DSL diagrammi componente viene chiamato **progettista del linguaggio specifico di dominio**.
 
- Premere F5 e, se non si ha familiarità con questo modello di soluzione, fare delle prove. Si noti in particolare che, per creare le porte, è necessario trascinare uno strumento porta su un componente e che è possibile collegare le porte.
+Premere **F5** e sperimentare se non si ha familiarità con questo modello di soluzione. Si noti in particolare che, per creare le porte, è necessario trascinare uno strumento porta su un componente e che è possibile collegare le porte.
 
- ![Progetti e porte interconnesse](../modeling/media/componentsample.png)
+![Progetti e porte interconnesse](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struttura della soluzione DSL
  Il **Dsl** progetto definisce l'API per il linguaggio DSL. Il **DslPackage** progetto definisce come si integra con Visual Studio. È anche possibile aggiungere i propri progetti, che possono anche contenere codice generato dal modello.

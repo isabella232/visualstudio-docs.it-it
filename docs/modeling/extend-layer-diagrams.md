@@ -10,28 +10,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8888dfeef0a519aed66fc3c66be8c5bf6d215b02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955219"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416110"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
+
 È possibile scrivere codice per creare e aggiornare i diagrammi delle dipendenze e per convalidare la struttura del codice programma in base ai diagrammi delle dipendenze in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
 
  Per altre informazioni sui diagrammi delle dipendenze, vedere:
 
--   [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
+-   [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 
--   [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
 
 -   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 
 -   [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
 
 ##  <a name="prereqs"></a> Requisiti
- È necessario verificare che nel computer in cui si vogliono sviluppare le estensioni del livello sia installato quanto segue:
+
+È necessario verificare che nel computer in cui si vogliono sviluppare le estensioni del livello sia installato quanto segue:
 
 -   Visual Studio
 
@@ -39,13 +41,11 @@ ms.locfileid: "55955219"
 
 -   Modeling SDK per Visual Studio
 
-
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello.
 
- È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello. Per altre informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).
-
- Per le versioni di Visual Studio che supportano i diagrammi delle dipendenze, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per le versioni di Visual Studio che supportano i diagrammi delle dipendenze, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-section"></a>In questa sezione
  [Aggiungere comandi e movimenti ai diagrammi delle dipendenze](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
@@ -54,15 +54,9 @@ ms.locfileid: "55955219"
 
  [Aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md)
 
- [Esplorare e aggiornare i modelli di livello nel codice del programma](../modeling/navigate-and-update-layer-models-in-program-code.md)
-
- [Distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md)
-
- [Risolvere i problemi relativi alle estensioni per i diagrammi delle dipendenze](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
-
 ## <a name="see-also"></a>Vedere anche
 
-- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
-- [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 - [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
