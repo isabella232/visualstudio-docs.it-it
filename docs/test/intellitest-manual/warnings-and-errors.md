@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925407"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324734"
 ---
 # <a name="warnings-and-errors"></a>Avvisi ed errori
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925407"
   * [MaxCalls superato](#maxcalls-exceeded)
   * [MaxStack superato](#maxstack-exceeded)
   * [MaxRuns superato](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests superato](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests superato](#maxrunswithoutnewtests-exceeded)
 
 * **Risoluzione di vincoli**
-  * [Non è possibile concretizzare la soluzione](#cannot-concretize-solution)<p />
+  * [Non è possibile concretizzare la soluzione](#cannot-concretize-solution)
 
 * **Domini**
   * [Serve aiuto per costruire l'oggetto](#help-construct)
   * [Serve aiuto per trovare i tipi](#help-types)
-  * [Tipo utilizzabile ipotizzato](#usable-type-guessed)<p />
+  * [Tipo utilizzabile ipotizzato](#usable-type-guessed)
 
 * **Esecuzione**
   * [Errore imprevisto nell'esplorazione](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Strumentazione**
   * [Chiamata di metodo non instrumentato](#uninstrumented-method-called)
   * [Chiamata di metodo esterno](#external-method-called)
   * [Chiamata di metodo non instrumentabile](#uninstrumentable-method-called)
   * [Problema di testabilità](#testability-issue)
-  * [Limitazione](#limitation)<p />
+  * [Limitazione](#limitation)
 
 * **Interprete**
   * [Rilevata mancata corrispondenza della chiamata](#observed-call-mismatch)

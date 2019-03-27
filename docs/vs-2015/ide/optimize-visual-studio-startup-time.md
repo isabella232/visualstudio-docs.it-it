@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780275"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355370"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Idealmente, Visual Studio deve sempre essere avviato nel più breve tempo possib
 
 ## <a name="control-startup-behavior"></a>Controllare il comportamento di avvio
 
-Per evitare di prolungare il tempo di avvio, Visual Studio 2017 evita il caricamento delle estensioni all'avvio usando un approccio di caricamento su richiesta. Ciò significa che le estensioni non si aprono subito dopo l'avvio di Visual Studio, aprendosi invece in modo asincrono in base alle esigenze dopo l'avvio. Inoltre, poiché le finestre degli strumenti lasciate aperte in una sessione precedente di Visual Studio possono rallentare l'avvio, esse vengono aperte in un modo più intelligente per evitare di compromettere il tempo di avvio.
+Per evitare l'allungamento del tempo di avvio, Visual Studio 2017 e versioni successive evitare il caricamento delle estensioni durante l'avvio, tramite un approccio di caricamento su richiesta. Ciò significa che le estensioni non si aprono subito dopo l'avvio di Visual Studio, aprendosi invece in modo asincrono in base alle esigenze dopo l'avvio. Inoltre, poiché le finestre degli strumenti lasciate aperte in una sessione precedente di Visual Studio possono rallentare l'avvio, esse vengono aperte in un modo più intelligente per evitare di compromettere il tempo di avvio.
 
 Se Visual Studio rileva un avvio lento, viene visualizzato un messaggio popup che comunica quale estensione o finestra degli strumenti provoca il rallentamento. Il messaggio include anche un collegamento alla finestra di dialogo **Gestisci prestazioni di Visual Studio** che elenca le estensioni e le finestre degli strumenti che compromettono le prestazioni di avvio. Questa finestra di dialogo consente di modificare le impostazioni delle estensioni e delle finestre degli strumenti per migliorare le prestazioni di avvio.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911819"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416322"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio di specifico di dominio (DSL) creato con la visualizzazione e Visual Studio Modeling SDK, è possibile modificare cosa accade quando l'utente copia e Incolla gli elementi.
@@ -209,7 +209,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **Consentire all'utente di trascinamento della selezione di elementi.**
-Vedere [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Vedere [How to: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a> Personalizzazione del comportamento di Copia collegamento
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione DSL, selezionare un ruolo a un lato della relazione e nella finestra Proprietà impostare il **propaga copia** valore.
@@ -242,7 +242,7 @@ Vedere [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modelin
 
 1. In un nuovo file del progetto DSL creare una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs.**.
+2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs**.
 
     Nella classe diagramma sovrascrivere <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> per restituire un'istanza della sottoclasse ElementOperations. È necessario restituire la stessa istanza ad ogni chiamata.
 
@@ -555,8 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md)
-- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)
+- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Esempio: VMSDK esempio](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

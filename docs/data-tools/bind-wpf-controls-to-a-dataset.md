@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069866"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325081"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 
@@ -74,7 +74,7 @@ Creare un nuovo progetto WPF per visualizzare i record di prodotto.
 
 1. Aprire Visual Studio.
 
-2. Nella finestra di avvio, scegliere **creare un nuovo progetto**.
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
 3. Cercare il C# **App WPF** modello di progetto e seguire i passaggi per creare il progetto, il progetto di denominazione **AdventureWorksProductsEditor**.
 

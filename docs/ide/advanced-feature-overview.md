@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221775"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268608"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -42,9 +42,13 @@ Visual Studio offre un gruppo di strumenti che consentono di creare facilmente a
 
 ![Carico di lavoro Sviluppo di Azure](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 Dopo aver installato il carico di lavoro **Sviluppo di Azure**, vengono resi disponibili i modelli **Cloud** seguenti per C# nella finestra di dialogo **Nuovo progetto**:
 
 ![Modelli progetto cloud per Visual Studio](media/cloud-project-templates.png)
+
+::: moniker-end
 
 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) di Visual Studio consente di visualizzare e gestire le risorse cloud basate su Azure in Visual Studio. Queste risorse possono includere macchine virtuali, tabelle, database SQL e altro ancora. **Cloud Explorer** rende disponibili le risorse di Azure in tutti gli account gestiti con la sottoscrizione di Azure a cui si è connessi. E se una particolare operazione richiede il portale di Azure, **Cloud Explorer** specifica i collegamenti che consentono di accedere al punto del portale di Azure in cui si vuole arrivare.
 

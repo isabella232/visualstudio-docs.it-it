@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428765"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323094"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
@@ -102,7 +102,7 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
      > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4022 è la porta predefinita per il debugger remoto di Visual Studio 2017 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).
 
      ::: moniker-end
-     
+
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]

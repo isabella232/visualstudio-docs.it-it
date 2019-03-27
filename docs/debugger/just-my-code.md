@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526776"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325331"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Eseguire il debug con Just My Code solo il codice utente
 
@@ -115,7 +115,7 @@ Se il debugger raggiunge un'eccezione, si ferma sull'eccezione, se è in codice 
 Per i progetti C++, è possibile specificare i moduli, i file di origine e le funzioni di **Stack di chiamate** trattata come codice non utente nella finestra specificandoli nei  *\*con estensione natjmc* file. Questa personalizzazione può essere applicata anche al codice l'esecuzione di istruzioni se si usa il compilatore più recente (vedere [C++ Just My Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Per specificare il codice non utente per tutti gli utenti del computer che esegue Visual Studio, aggiungere il file con estensione *natjmc* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
-- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natjmc* del file per il *documenti %USERPROFILE%\My\\<Visual Studio version>\Visualizers* cartella.
+- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natjmc* del file per il *documenti %USERPROFILE%\My\\< versione di Visual Studio\>\Visualizers* cartella.
 
 Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
 
@@ -165,7 +165,7 @@ Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
 Nei progetti C++, è possibile specificare le funzioni per eseguire failover elencandoli come codice non utente nei  *\*con estensione natstepfilter* file. Funzioni elencate nelle  *\*con estensione natstepfilter* file non sono interdipendenti impostazioni Just My Code.
 
 - Per specificare il codice non utente per tutti gli utenti di Visual Studio locali, aggiungere il *con estensione natstepfilter* del file per il *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
-- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natstepfilter* del file per il *documenti %USERPROFILE%\My\\<Visual Studio version>\Visualizers* cartella.
+- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natstepfilter* del file per il *documenti %USERPROFILE%\My\\< versione di Visual Studio\>\Visualizers* cartella.
 
 Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:
 
