@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526737"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355163"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto un C# o un progetto di Visual Basic in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
@@ -71,7 +71,15 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 
 5. Verificare che la casella di testo **Directory di lavoro** sia vuota.
 
-6. Scegli **Usa computer remoto**e il tipo **MJO-DL:4022** nella casella di testo. (4022 è il numero di porta visualizzato nella finestra del debugger remoto. Il numero della porta incrementa 2 in ogni versione di Visual Studio).
+6. Scegli **Usa computer remoto**e il tipo **yourmachinename:port** nella casella di testo. (Il numero di porta viene visualizzato nella finestra del debugger remoto. Il numero della porta incrementa 2 in ogni versione di Visual Studio).
+
+    In questo esempio, usare:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** 2019 di Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** on Visual Studio 2017
+    ::: moniker-end
 
 7. Assicurarsi che l'opzione **Attiva il debug di codice nativo** non sia selezionata.
 

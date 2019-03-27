@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680217"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476033"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procedura dettagliata: Debug di un'app con multithreading usando la finestra thread (C#, Visual Basic, C++)
 
@@ -34,15 +34,27 @@ Il completamento di questa esercitazione richiede solo pochi minuti e consente d
 
 Creare il progetto di app con multithreading seguenti da usare in questa esercitazione:
 
-1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**.
+1. Aprire Visual Studio e creare un nuovo progetto.
 
-1. Nella finestra di dialogo **Nuovo progetto**:
-   - Per un C# app, selezionare **Visual C#**    >  **App Console (.NET Framework)**.
-   - Per un'app C++, selezionare **Visual C++** > **applicazione Console Windows**.
+    ::: moniker range=">=vs-2019"
+    Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+    
+    - Per C#, scegliere **Crea nuovo progetto App Console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata, scegliere **Create**.
+    - Per C++, scegliere **Crea nuovo progetto App Console**. Nella finestra di dialogo visualizzata, scegliere **Create**.
 
-1. Assegnare un nome MyThreadWalkthroughApp l'app e quindi selezionare **OK**.
+    Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di **nuovo progetto** dialogo finestra, scegliere le opzioni seguenti:
+    - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
+    - Per un'app C++, sotto **Visual C++**, scegliere **Windows Desktop**, quindi scegliere **applicazione Console Windows**.
 
-   Verrà visualizzato il nuovo progetto **Esplora soluzioni**, e un file di origine denominata *Program.cs* oppure *MyThreadWalkthroughApp. cpp* viene aperto nella finestra del codice sorgente.
+    Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **OK**.
+    ::: moniker-end
+
+    Se non viene visualizzato il **App Console** modello di progetto, passa alla **Tools** > **Ottieni strumenti e funzionalità...** , che viene aperto il programma di installazione Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+
+    Verrà visualizzato il nuovo progetto **Esplora soluzioni**, e un file di origine denominata *Program.cs* oppure *MyThreadWalkthroughApp. cpp* viene aperto nella finestra del codice sorgente.
 
 1. Sostituire il codice nel file di origine con il C# o codice di esempio di C++ da [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md).
 

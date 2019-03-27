@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936616"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268554"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -31,17 +31,15 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
--   Creazione di una nuova **Windows Forms Application** progetto.
+-  Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
--   Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
+-  Impostazione dei controlli degli elementi di [finestra Origini dati](add-new-data-sources.md#data-sources-window). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Impostazione dei controlli degli elementi di [finestra Origini dati](add-new-data-sources.md#data-sources-window). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-  Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.
 
--   Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.
+-  Modifica di alcuni record in ogni tabella nel set di dati.
 
--   Modifica di alcuni record in ogni tabella nel set di dati.
-
--   Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.
+-  Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -63,17 +61,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 ## <a name="create-the-windows-forms-application"></a>Creare l'applicazione Windows Form
 
-Il primo passaggio consiste nel creare un **Windows Forms Application**. L'assegnazione di un nome al progetto è facoltativa durante questo passaggio, ma viene assegnato un nome perché il progetto verranno salvate in un secondo momento.
-
-1. In Visual Studio sul **File** dal menu **New** > **progetto**.
-
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
-
-3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
-
-4. Denominare il progetto **UpdateMultipleTablesWalkthrough**, quindi scegliere **OK**.
-
-     Il progetto **UpdateMultipleTablesWalkthrough** viene creato e aggiunto in **Esplora soluzioni**.
+Creare una nuova **App di Windows. Forms** progetto entrambi C# o Visual Basic. Assegnare al progetto il nome **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
@@ -89,11 +77,11 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
 4. Nel **scegliere la connessione dati** schermata, effettuare una delle operazioni seguenti:
 
-    -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
+    - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
          -oppure-
 
-    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
+    - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
 5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.
 
