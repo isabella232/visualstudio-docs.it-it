@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526038"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475994"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Iniziare il debug di applicazioni multithreading (C#, Visual Basic, C++)
 
@@ -38,21 +38,33 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
 
 ## <a name="create-a-multithreaded-app-project"></a>Creare un progetto di app a thread multipli
 
-1.  Nel menu **File** selezionare **Nuovo** > **Progetto**.
+1. Aprire Visual Studio e creare un nuovo progetto.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+    ::: moniker range=">=vs-2019"
+    Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+    
+    - Per C# o Visual Basic, scegli **Crea nuovo progetto App Console (.NET Framework)** entrambi C# o Visual Basic. Nella finestra di dialogo visualizzata, scegliere **Create**.
+    - Per C++, scegliere **Crea nuovo progetto App Console** per C++. Nella finestra di dialogo visualizzata, scegliere **Create**.
 
-2.  Selezionare una lingua: **Visual C#** , **Visual C++**, o **Visual Basic**.
+    Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di **nuovo progetto** dialogo finestra, scegliere le opzioni seguenti:
 
-3.  Sotto **Desktop di Windows**, scegliere **App Console**.
+    - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
+    - Per un'app Visual Basic, sotto **Visual Basic**, scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
+    - Per un'app C++, sotto **Visual C++**, scegliere **Windows Desktop**, quindi scegliere **applicazione Console Windows**.
 
-4.  Nel **nome** immettere MyThreadWalkthroughApp.
+    Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **OK**.
+    ::: moniker-end
 
-5.  Scegliere **OK**.
+    Se non viene visualizzato il **App Console** modello di progetto, passa alla **Tools** > **Ottieni strumenti e funzionalità...** , che viene aperto il programma di installazione Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
 
-     Verrà visualizzato un nuovo progetto console. Dopo aver creato il progetto, viene visualizzato un file di origine. A seconda del linguaggio scelto, il file di origine potrebbe essere chiamato *Program.cs*, *MyThreadWalkthroughApp. cpp*, o *Module1.vb*.
+1. Scegliere **OK**.
 
-6.  Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio appropriato riportato di seguito.
+    Verrà visualizzato un nuovo progetto console. Dopo aver creato il progetto, viene visualizzato un file di origine. A seconda del linguaggio scelto, il file di origine potrebbe essere chiamato *Program.cs*, *MyThreadWalkthroughApp. cpp*, o *Module1.vb*.
+
+1. Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio appropriato riportato di seguito.
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     End Class
     ```
 
-7.  Scegliere **Salva tutto** dal menu **File**.
+1. Scegliere **Salva tutto** dal menu **File**.
 
-8. (Solo Visual Basic) In Esplora soluzioni (riquadro a destra), fare clic sul nodo del progetto, scegliere **proprietà**. Sotto il **Application** scheda, modificare il **oggetto di avvio** a **semplice**.
+1. (Solo Visual Basic) In Esplora soluzioni (riquadro a destra), fare clic sul nodo del progetto, scegliere **proprietà**. Sotto il **Application** scheda, modificare il **oggetto di avvio** a **semplice**.
 
 ## <a name="debug-the-multithreaded-app"></a>Il debug dell'app a thread multipli
 

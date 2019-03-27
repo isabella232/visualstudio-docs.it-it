@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795303"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323607"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Creazione e configurazione di membri di tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -209,7 +209,7 @@ ms.locfileid: "54795303"
   
 - **\<aggiungi parametro>**  
   
-   L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   Nell'ultima riga di parametri di un membro la cella **Nome** contiene la stringa **<aggiungi parametro\>**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
   **Proprietà dei parametri nella finestra Proprietà**  
   
@@ -322,7 +322,7 @@ ms.locfileid: "54795303"
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Descrizione|  
+|Titolo|Description|  
 |-----------|-----------------|  
 |[Visualizzazione dei tipi e delle relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md)|È possibile visualizzare i tipi, i membri e le relazioni esistenti in un diagramma di classi.|  
 |[Refactoring di classi e tipi (Progettazione classi)](../ide/refactoring-classes-and-types-class-designer.md)|Tramite refactoring è possibile rinominare agevolmente il tipo e i membri di tipo. È inoltre possibile spostare membri tra classi, suddividere una classe in classi parziali e implementare interfacce.|

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227569"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323438"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visualizzare gli eventi con IntelliTrace in Visual Studio Enterprise (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ ms.locfileid: "56227569"
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Avviare il debug e visualizzare gli eventi di IntelliTrace
 
-1. Avviare il debug con la modalità consueta. (Premere **F5** o fare cli su **Debug > Avvia debug**.
+1. Avviare il debug con la modalità consueta. (Premere **F5** o fare cli su **Debug > Avvia debug**.)
 
     > [!TIP]
     > Mantenere le finestre **Variabili locali** e **Auto** aperte durante il debug per visualizzare e registrare i valori visualizzati in queste finestre.

@@ -10,25 +10,34 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f84b7c461154443adcd099fa1d92c0b8fd6e9987
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194859"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355500"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer IIS remoto in Visual Studio 2017
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer IIS remoto in Visual Studio
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'app in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Questa guida illustra come impostare e configurare una base di ASP.NET di Visual Studio 2017, distribuirlo a IIS e associare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET 4.5.2, vedere [Remote Debug ASP.NET in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). È anche possibile distribuire ed eseguire il debug su IIS usando Azure. Per il servizio App di Azure, è possibile distribuire con facilità ed eseguire il debug in un'istanza preconfigurata di IIS e il debugger remoto usando il [Snapshot Debugger](../debugger/debug-live-azure-applications.md) o da [collega il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
+Questa guida illustra come impostare e configurare un ASP.NET Core di Visual Studio, distribuirlo a IIS e associare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET 4.5.2, vedere [Remote Debug ASP.NET in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). È anche possibile distribuire ed eseguire il debug su IIS usando Azure. Per il servizio App di Azure, è possibile distribuire con facilità ed eseguire il debug in un'istanza preconfigurata di IIS e il debugger remoto usando il [Snapshot Debugger](../debugger/debug-live-azure-applications.md) o da [collega il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
+
+## <a name="prerequisites"></a>Prerequisiti
+
+::: moniker range=">=vs-2019"
+Per seguire i passaggi illustrati in questo articolo è necessario Visual Studio 2019.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 è necessario attenersi alla procedura illustrata in questo articolo.
+::: moniker-end
 
 Queste procedure sono state testate in queste configurazioni di server:
 * Windows Server 2012 R2 e IIS 8
 * Windows Server 2016 e IIS 10
 
-## <a name="requirements"></a>Requisiti
+## <a name="network-requirements"></a>Requisiti di rete
 
 Non è supportato tra due computer connessi tramite un proxy di debug. Debug tramite una latenza elevata o una connessione di larghezza di banda ridotta, ad esempio Internet, accesso remoto o la rete Internet tra paesi non è consigliabile e può avere esito negativo o essere inaccettabile. Per un elenco completo dei requisiti, vedere [requisiti](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -40,15 +49,16 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 * Se si desidera visualizzare la Guida per assicurarsi che l'app è configurata, distribuzione e in esecuzione correttamente in IIS in modo che è possibile eseguire il debug, seguire tutti i passaggi descritti in questo argomento.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Creare l'applicazione ASP.NET Core nel computer Visual Studio 2017
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Creare l'applicazione ASP.NET Core nel computer di Visual Studio
 
-1. Creare una nuova applicazione ASP.NET Core. (**File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**).
+1. Creare una nuova applicazione Web ASP.NET Core. 
 
-    Nel **ASP.NET Core** sezione modelli, selezionare **applicazione Web**.
-
-2. Verificare che l'opzione **ASP.NET Core 2.0** è selezionata, che **Abilita supporto Docker** viene **non** selezionata e che **autenticazione** è impostato su **Nessuna autenticazione**.
-
-3. Denominare il progetto **MyASPApp** e fare clic su **OK** per creare la nuova soluzione.
+    ::: moniker range=">=vs-2019"
+    In Visual Studio 2019, digitare **Ctrl + Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **modelli**, quindi scegliere **Crea nuova applicazione Web di ASP.NET Core** . Nella finestra di dialogo visualizzata, denominare il progetto **MyASPApp**, quindi scegliere **crea**. Scegliere quindi **applicazione Web (Model-View-Controller)**, quindi scegliere **crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    In Visual Studio 2017, scegliere **File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**. Nella sezione modelli ASP.NET Core, selezionare **applicazione Web (Model-View-Controller)**. Assicurarsi che sia selezionato ASP.NET Core 2.1, che **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.
+    ::: moniker-end
 
 4. Aprire il file About.cshtml.cs e impostare un punto di interruzione il `OnGet` (metodo) (in modelli precedenti, aprire HomeController.cs invece e impostare il punto di interruzione il `About()` (metodo)).
 
@@ -144,7 +154,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se n
 
 ## <a name="BKMK_msvsmon"></a> Scaricare e installare remote tools in Windows Server
 
-In questa esercitazione viene usato Visual Studio 2017.
+Scaricare la versione di remote tools corrispondente alla versione di Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -165,7 +175,14 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
     > [!TIP]
     > In Visual Studio 2017 e versioni successive, è possibile ricollegare allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P).
 
-3. Impostare il campo Qualificatore su **\<nome computer remoto>:4022**.
+3. Impostare il campo qualificatore  **\<nome del computer remoto >: porta**.
+
+    ::: moniker range=">=vs-2019"
+    **\<nome del computer remoto >: 4024** Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<nome del computer remoto >: 4022** in Visual Studio 2017
+    ::: moniker-end
 4. Fare clic su **Aggiorna**.
     Nella finestra **Processi disponibili** verranno visualizzati alcuni processi.
 
@@ -197,10 +214,14 @@ Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall
 
 Porte necessarie:
 
-- 80 - required per IIS
-- 4022 - richiesto per il debug remoto da Visual Studio 2017 (vedere [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) per informazioni dettagliate.
-- 8172 - (facoltativa) richiesta per la distribuzione Web per distribuire l'app da Visual Studio.
-- UDP 3702, porta di individuazione (facoltativo) consente il **trovare** pulsante quando ci si collega al debugger remoto in Visual Studio.
+* 80 - required per IIS
+::: moniker range=">=vs-2019"
+* 4024 - richiesto per il debug remoto da Visual Studio 2019 (vedere [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) per altre informazioni).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - richiesto per il debug remoto da Visual Studio 2017 (vedere [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) per altre informazioni).
+::: moniker-end
+* UDP 3702, porta di individuazione (facoltativo) consente il **trovare** pulsante quando ci si collega al debugger remoto in Visual Studio.
 
 1. Per aprire una porta in Windows Server, aprire il **avviare** menu, cercare **Windows Firewall con sicurezza avanzata**.
 

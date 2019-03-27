@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764848"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324773"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
 
  Per iniziare, usare semplicemente **Debug** e **x86** rispettivamente come configurazione e piattaforma della build. Al termine dell'operazione di codifica e debug, modificare la configurazione su **Release** e impostare una piattaforma specifica come destinazione. Le versioni precedenti di Visual Studio specificavano una piattaforma predefinita **AnyCPU** per i progetti di codice .NET.
 
- Nota: quando si compila il progetto, i valori di configurazione e piattaforma vengono usati anche per determinare il percorso della directory del progetto da creare per archiviare il file eseguibile, Solitamente, il percorso è **\<percorso-del-progetto>\\<nome-progetto>\\<configurazione\>\\<piattaforma\>**. Ad esempio, un progetto con una configurazione di `Debug` e una piattaforma `x86` si troverebbe in `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Questa funzionalità è utile se si usano strumenti o script personalizzati per gestire questi file eseguibili compilati.
+ Nota: quando si compila il progetto, i valori di configurazione e piattaforma vengono usati anche per determinare il percorso della directory del progetto da creare per archiviare il file eseguibile, Solitamente, il percorso è **\<percorso-del-progetto>\\<nome-progetto\>\\<configurazione\>\\<piattaforma\>**. Ad esempio, un progetto con una configurazione di `Debug` e una piattaforma `x86` si troverebbe in `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Questa funzionalità è utile se si usano strumenti o script personalizzati per gestire questi file eseguibili compilati.
 
 ### <a name="building-your-code"></a>Compilazione del codice
  Dopo aver configurato la compilazione, è possibile passare alla compilazione effettiva del progetto. Il modo più semplice è premere F7, ma è anche possibile avviare la compilazione selezionando **Compila->Compila soluzione** dal menu principale.
@@ -184,7 +184,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
  ![Finestra di Visual Studio 2015 Diagnostic Tools](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "Vs_ide_gs_debug_diagnostic_tools")
 
 ### <a name="running-unit-tests"></a>Esecuzione di unit test
- Gli unit test sono programmi che verificano i percorsi di codice nell'applicazione o nel servizio. Visual Studio 2015 installa i framework per unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e riportare i risultati dei test. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Quando si usa Visual Studio 2015 Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
+ Gli unit test sono programmi che verificano i percorsi di codice nell'applicazione o nel servizio. Visual Studio 2015 installa i framework di testing unità di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e riportare i risultati dei test. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Quando si usa Visual Studio 2015 Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
 
  Per iniziare, vedere [Generate unit tests for your code with IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) (Generare unit test per il codice con IntelliTest).
 
