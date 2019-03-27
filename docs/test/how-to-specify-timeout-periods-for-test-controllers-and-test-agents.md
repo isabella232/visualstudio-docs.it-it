@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929232"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416097"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per test controller e agenti di test
 
@@ -28,7 +28,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 -   Test controller: *QTController.exe.config*
 
-    |Nome della chiave|Descrizione|Value|
+    |Nome della chiave|Description|Value|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Numero di secondi di attesa per la richiesta di ping dell'agente prima che la connessione venga considerata persa.|"n" secondi.|
     |AgentSyncTimeoutInSeconds|Quando si avvia l'esecuzione di un test di sincronizzazione, il numero di secondi di attesa per la sincronizzazione di tutti gli agenti prima di interrompere l'esecuzione.|"n" secondi.|
@@ -37,7 +37,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 -   Agente di test: *QTAgentService.exe.config*
 
-    |Nome della chiave|Descrizione|Value|
+    |Nome della chiave|Description|Value|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Numero di secondi tra tentativi di connessione al controller.|"n" secondi. Valore predefinito: "30" (trenta secondi).|
     |RemotingTimeoutSeconds|Tempo massimo che una chiamata remota può durare in secondi.|"n" secondi. Valore predefinito: "600" (dieci minuti).|
@@ -102,7 +102,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    oppure
+    -oppure-
 
     Aggiungere un'altra chiave e specificare un valore di timeout. È ad esempio possibile aggiungere la chiave `RemotingTimeoutSeconds` nella sezione `<appSettings>` e specificare un valore di quindici minuti:
 
@@ -117,5 +117,4 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
 - [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Procedura: Specificare le dimensioni massime del file di log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Procedura: Associare un test controller o un agente di test a una scheda di rete](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

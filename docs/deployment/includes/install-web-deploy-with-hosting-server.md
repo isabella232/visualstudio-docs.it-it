@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342722"
+---
 Distribuzione Web 3.6 per server di hosting offre funzionalità di configurazione aggiuntive che consentono la creazione del file di impostazioni di pubblicazione dall'interfaccia utente.
 
 1. Se Distribuzione Web 3.6 è già installato in Windows Server, disinstallarlo usando **Pannello di controllo** > **Programmi** > **Disinstalla un programma**.
@@ -18,4 +26,4 @@ Distribuzione Web 3.6 per server di hosting offre funzionalità di configurazion
 
 4. (Facoltativo) Verificare che Distribuzione Web sia correttamente in esecuzione. A tale scopo, aprire **Pannello di controllo > Sistema e sicurezza > Strumenti di amministrazione > Servizi** e assicurarsi che il **Servizio Agente distribuzione Web** sia in esecuzione (il nome del servizio è diverso nelle versioni precedenti).
 
-    Se il servizio agente non è in esecuzione, avviarlo. Se non è presente, passare a **Pannello di controllo > Programmi > Disinstalla un programma** e trovare **Distribuzione Web di Microsoft<version>**. Scegliere di **modificare** l'installazione e assicurarsi di scegliere **Installazione su disco rigido locale** per i componenti di Distribuzione Web. Completare la procedura di modifica dell'installazione di modifica.
+    Se il servizio agente non è in esecuzione, avviarlo. Se non è presente in tutti, andare al **Pannello di controllo > programmi > Disinstalla un programma**, trovare **Microsoft Web Deploy \<versione >**. Scegliere di **modificare** l'installazione e assicurarsi di scegliere **Installazione su disco rigido locale** per i componenti di Distribuzione Web. Completare la procedura di modifica dell'installazione di modifica.

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934146"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268528"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
@@ -33,17 +33,7 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-In questo passaggio si crea un Visual Basic o l'oggetto visivo C# project.
-
-1. In Visual Studio sul **File** dal menu **New** > **progetto**.
-
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
-
-3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
-
-4. Denominare il progetto **ReadingXML**, quindi scegliere **OK**.
-
-   Il **ReadingXML** viene creato e aggiunto al progetto **Esplora soluzioni**.
+Creare una nuova **App di Windows. Forms** progetto entrambi C# o Visual Basic. Denominare il progetto **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generare il file XML da leggere nel set di dati
 
@@ -123,15 +113,15 @@ Poiché questa procedura dettagliata è incentrato sulla lettura dei dati XML in
 
 L'interfaccia utente per questa applicazione è costituita dagli elementi seguenti:
 
--   Oggetto <xref:System.Windows.Forms.DataGridView> controllo che visualizza il contenuto del file XML come dati.
+- Oggetto <xref:System.Windows.Forms.DataGridView> controllo che visualizza il contenuto del file XML come dati.
 
--   Oggetto <xref:System.Windows.Forms.TextBox> controllo che visualizza lo schema XML per il file XML.
+- Oggetto <xref:System.Windows.Forms.TextBox> controllo che visualizza lo schema XML per il file XML.
 
--   Due <xref:System.Windows.Forms.Button> controlli.
+- Due <xref:System.Windows.Forms.Button> controlli.
 
-    -   Un unico pulsante legge il file XML in set di dati e li visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.
+    - Un unico pulsante legge il file XML in set di dati e li visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.
 
-    -   Un secondo pulsante consente di estrarre lo schema del set di dati e tramite un <xref:System.IO.StringWriter> li visualizza nel <xref:System.Windows.Forms.TextBox> controllo.
+    - Un secondo pulsante consente di estrarre lo schema del set di dati e tramite un <xref:System.IO.StringWriter> li visualizza nel <xref:System.Windows.Forms.TextBox> controllo.
 
 ### <a name="to-add-controls-to-the-form"></a>Per aggiungere controlli al form
 
@@ -139,11 +129,11 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
 
 2.  Dal **casella degli strumenti**, trascinare i controlli seguenti nel form:
 
-    -   Uno <xref:System.Windows.Forms.DataGridView> controllo
+    - Uno <xref:System.Windows.Forms.DataGridView> controllo
 
-    -   Uno <xref:System.Windows.Forms.TextBox> controllo
+    - Uno <xref:System.Windows.Forms.TextBox> controllo
 
-    -   Due <xref:System.Windows.Forms.Button> controlli
+    - Due <xref:System.Windows.Forms.Button> controlli
 
 3.  Impostare le proprietà seguenti:
 
@@ -220,9 +210,9 @@ Il **Show Schema** consente di creare un <xref:System.IO.StringWriter> oggetto c
 
 Questa procedura dettagliata illustra le nozioni di base di lettura di un file XML in un set di dati, nonché la creazione di uno schema basato sul contenuto del file XML. Ecco alcune attività che è possibile eseguire successivamente:
 
--   Modificare i dati nel set di dati e riscriverli come XML. Per ulteriori informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
+- Modificare i dati nel set di dati e riscriverli come XML. Per ulteriori informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Modificare i dati nel set di dati e scriverlo in un database.
+- Modificare i dati nel set di dati e scriverlo in un database.
 
 ## <a name="see-also"></a>Vedere anche
 
