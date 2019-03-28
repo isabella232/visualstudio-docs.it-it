@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914474"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515233"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare regole di analisi codice
 
-Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di incorporati *set di regole*. Un set di regole viene applicato a un progetto e si intende un raggruppamento di codice le regole di analisi che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole che è progettato per analizzare il codice per le API disponibili pubblicamente, o semplicemente di regole minime. È inoltre possibile applicare un set di regole che include tutte le regole.
+Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di incorporati *set di regole*. Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole che è progettato per analizzare il codice per le API disponibili pubblicamente. È inoltre possibile applicare un set di regole che include tutte le regole disponibili.
 
-È possibile personalizzare una set di regole mediante l'aggiunta o eliminazione di regole, o modificando i livelli di gravità regola vengono visualizzati come avvisi o errori nel **elenco errori**. Set di regole personalizzate può soddisfare un'esigenza per l'ambiente di sviluppo specifiche. Quando si personalizza un set di regole, l'editor set di regole fornisce ricerca e gli strumenti per semplificare il processo di filtraggio.
+È possibile personalizzare una set di regole mediante l'aggiunta o eliminazione di regole o modificando i livelli di gravità regola vengono visualizzati come avvisi o errori nel **elenco errori**. Set di regole personalizzate può soddisfare un'esigenza per l'ambiente di sviluppo specifiche. Quando si personalizza un set di regole, l'editor set di regole fornisce ricerca e gli strumenti per semplificare il processo di filtraggio.
 
 Sono disponibili per i set di regole [analisi statica del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md), [analisi del codice C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), e [analizzatori di Roslyn](analyzer-rule-sets.md).
 

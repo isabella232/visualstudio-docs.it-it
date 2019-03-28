@@ -1,6 +1,6 @@
 ---
 title: Gravità della regola dell'analizzatore ed estinzione
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873502"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515337"
 ---
 # <a name="use-roslyn-analyzers"></a>Usare gli analizzatori di Roslyn
 
@@ -46,12 +46,17 @@ Le icone accanto a ogni dato diagnostico nelle **Esplora soluzioni** corrispondo
 
 ## <a name="rule-sets"></a>Set di regole
 
-Oggetto [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) è un file XML che archivia lo stato della gravità ed eliminazione per la diagnostica singoli. Set di regole si applicano a un singolo progetto e un progetto può avere più set di regole. Per visualizzare la regola attiva impostata nell'editor, fare clic sui **analizzatori** nodo **Esplora soluzioni** e selezionare **Apri Set di regole attivo**. Se questa è la prima volta che si accede a regola impostato, un file denominato  *\<NomeProgetto > estensione ruleset* viene aggiunto al progetto e viene visualizzato nella **Esplora**.
+Oggetto [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) è un file XML che archivia lo stato della gravità ed eliminazione per la diagnostica singoli.
 
 > [!NOTE]
-> Set di regole includono analisi statica del codice (binario) e le regole dell'analizzatore Roslyn.
+> Set di regole possono includere le regole di analisi statica del codice (binario) e gli analizzatori di Roslyn.
 
-È possibile modificare la regola attiva impostata per un progetto nel **analisi del codice** scheda delle proprietà di un progetto. Selezionare il set di regole nel **eseguire questo set di regole** elenco a discesa. È anche possibile aprire il set di regole dal **analisi del codice** pagina delle proprietà, selezionando **aprire**.
+Per modificare la regola attiva impostata nell'editor set di regole, fare clic sui **riferimenti** > **analizzatori** nodo **Esplora soluzioni** e selezionare **Aprire i Set di regole attivo**. Se questa è la prima volta che si modifica il set di regole, Visual Studio crea una copia della regola predefinita di file del set, assegna  *\<NomeProgetto > estensione ruleset*e lo aggiunge al progetto. Questa regola personalizzata anche imposta diventa attiva set di regole per il progetto.
+
+Per modificare la regola attiva impostata per un progetto, passare al **analisi del codice** scheda delle proprietà di un progetto. Selezionare il set di regole da nell'elenco sotto **eseguire questo set di regole**. Per aprire il set di regole, selezionare **aprire**.
+
+> [!NOTE]
+> I progetti .NET core e .NET Standard non supportano i comandi di menu per il set di regole **Esplora soluzioni**, ad esempio **Apri Set di regole attivo**. Per specificare una diverso set di regole per un progetto .NET Core o .NET Standard, manualmente [aggiungere i **CodeAnalysisRuleSet** proprietà souboru projektu](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). È possibile configurare le regole all'interno di set di regole in Visual Studio interfaccia utente dell'editor set di regole.
 
 ## <a name="rule-severity"></a>Gravità della regola
 
@@ -79,7 +84,7 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
 ![File del set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Per impostare la gravità di regola da Esplora soluzioni
+### <a name="set-rule-severity-from-solution-explorer"></a>Impostare la gravità di regola da Esplora soluzioni
 
 1. Nelle **Esplora soluzioni**, espandere **riferimenti** > **analizzatori** (**dipendenze**  >  **Analizzatori** per i progetti .NET Core).
 
@@ -89,7 +94,7 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
    La gravità della regola viene salvata nel file di set di regole attivo.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Per impostare regole gravità della regola set di file
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Impostare la gravità regola nel file di set di regole
 
 1. Aprire il [set di regole](analyzer-rule-sets.md) file facendo doppio clic su esso in **Esplora soluzioni**, selezionando **Apri Set di regole attivo** nel menu di scelta rapida del **analizzatori** nodo, o selezionando **aperta** sul **analisi del codice** pagina delle proprietà per il progetto.
 
