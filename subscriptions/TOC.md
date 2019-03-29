@@ -68,6 +68,7 @@
 #### [Cercare una sottoscrizione](search-license.md)
 #### [Esportare sottoscrizioni](exporting-subscriptions.md)
 #### [Sovrassegnazioni](handle-overclaimed-license.md)
+#### [Utilizzo massimo](maximum-usage.md)
 #### [Sottoscrizioni scadute](handle-expired-license.md)
 #### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
 ## Acquisizione di sottoscrizioni di Visual Studio
