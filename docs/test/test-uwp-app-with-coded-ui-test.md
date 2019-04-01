@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942258"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416123"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
 
@@ -29,7 +29,11 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
 1. Creare un nuovo progetto in Visual Studio usando il modello **App vuota (Windows universale)** per Visual C# o Visual Basic.
 
-     ![Modello App vuota (Windows universale)](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Modello App vuota (Windows universale)](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** selezionare **OK** per accettare le versioni della piattaforma predefinite.
 
@@ -61,16 +65,20 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
 1. Per aggiungere un progetto di test a una soluzione, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
-1. Nella finestra di dialogo **Nuovo progetto** selezionare il modello **Progetto di test codificato dell'interfaccia utente (Windows universale)**. Il modello è disponibile nella categoria **Windows universale** in **Visual C#** o **Visual Basic**.
+1. Cercare e selezionare il modello **Progetto di test codificato dell'interfaccia utente (Windows universale)**.
 
-     ![Nuovo progetto di test codificato dell'interfaccia utente](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Nuovo progetto di test codificato dell'interfaccia utente](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Se il modello **Progetto di test codificato dell'interfaccia utente (Windows universale)** non viene visualizzato, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. Nella finestra di dialogo **Genera codice per test codificato dell'interfaccia utente** selezionare **Modifica manualmente il test**.
 
-     ![Finestra di dialogo Genera codice per test codificato dell'interfaccia utente](../test/media/manually-edit-the-test.png)
+   ![Finestra di dialogo Genera codice per test codificato dell'interfaccia utente](../test/media/manually-edit-the-test.png)
 
 1. Se l'app UWP non è già in esecuzione, avviarla premendo **CTRL**+**F5**.
 

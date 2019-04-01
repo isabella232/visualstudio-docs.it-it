@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955063"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416402"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -22,41 +22,27 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="create-a-wpf-app"></a>Creare un'app WPF
 
-1.  Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
+1. Creare un nuovo progetto **App WPF (.NET Framework)** e denominarlo **SimpleWPFApp**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+     Si apriranno **WPF Designer** e la finestra MainWindow del progetto.
 
-2.  Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Windows Desktop**.
+2. Aprire la casella degli strumenti, se non è già aperta. Scegliere il menu **Visualizza** e quindi **Casella degli strumenti**.
 
-3.  Sopra il riquadro centrale verificare che l'elenco a discesa del framework di destinazione sia impostato su **.NET Framework 4.5**.
+3. Nella sezione **Tutti i controlli di WPF** trascinare i controlli **Button**, **CheckBox** e **ProgressBar** su MainWindow nell'area di progettazione.
 
-4.  Nel riquadro centrale selezionare il modello **Applicazione WPF**.
+4. Selezionare il controllo **Button**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a button1. Modificare quindi il valore della proprietà **Content** da Button a Start.
 
-5.  Nella casella di testo **Nome** digitare **SimpleWPFApp**.
+5. Selezionare il controllo **ProgressBar**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a progressBar1. Modificare quindi il valore della proprietà **Maximum** da **100** a **10000**.
 
-6.  Scegliere una cartella in cui verrà salvato il progetto. Nella casella di testo **Percorso** digitare il nome della cartella.
-
-7.  Scegliere **OK**.
-
-     Verrà aperto **WPF Designer per Visual Studio** e la finestra principale del progetto.
-
-8.  Aprire la casella degli strumenti, se non è già aperta. Scegliere il menu **Visualizza** e quindi **Casella degli strumenti**.
-
-9. Nella sezione **Tutti i controlli di WPF** trascinare i controlli **Button**, **CheckBox** e **ProgressBar** su MainWindow nell'area di progettazione.
-
-10. Selezionare il controllo **Button**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a button1. Modificare quindi il valore della proprietà **Content** da Button a Start.
-
-11. Selezionare il controllo **ProgressBar**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a progressBar1. Modificare quindi il valore della proprietà **Maximum** da **100** a **10000**.
-
-12. Selezionare il controllo **Checkbox**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a checkBox1 e quindi deselezionare la proprietà **IsEnabled**.
+6. Selezionare il controllo **Checkbox**. Nella finestra **Proprietà** modificare il valore della proprietà **Name** da \<No Name> a checkBox1 e quindi deselezionare la proprietà **IsEnabled**.
 
      ![Applicazione WPF semplice](../test/media/codedui_wpfapp.png)
 
-13. Fare doppio clic sul pulsante per aggiungere un gestore eventi Click.
+7. Fare doppio clic sul pulsante per aggiungere un gestore eventi Click.
 
      *MainWindow.xmal.cs* viene visualizzato nell'editor del codice con il cursore nel nuovo metodo button1_Click.
 
-14. Nella parte superiore della classe MainWindow aggiungere un delegato, che verrà usato per l'indicatore di stato. Per aggiungere il delegato, aggiungere il codice seguente:
+8. Nella parte superiore della classe MainWindow aggiungere un delegato, che verrà usato per l'indicatore di stato. Per aggiungere il delegato, aggiungere il codice seguente:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
         }
     ```
 
-15. Nel metodo button1_Click aggiungere il codice seguente:
+9. Nel metodo button1_Click aggiungere il codice seguente:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
     }
     ```
 
-16. Salvare il file.
+10. Salvare il file.
 
 ### <a name="run-the-wpf-app"></a>Eseguire l'app WPF
 
@@ -120,22 +106,14 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Creare un test codificato dell'interfaccia utente per SimpleWPFApp
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** > **Nuovo progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo progetto** .
-
-1. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Test**.
-
-1. Nel riquadro centrale selezionare il modello **Progetto di test codificato dell'interfaccia utente**.
+2. Cercare e selezionare il modello di progetto **Progetto di test codificato dell'interfaccia utente** e procedere con i passaggi necessari per creare il nuovo progetto.
 
    > [!NOTE]
    > Se non viene visualizzato il modello **Progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Scegliere **OK**.
-
-     Il nuovo progetto di test codificato dell'interfaccia utente denominato **CodedUITestProject1** viene aggiunto alla soluzione.
-
-     Viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
+     Il nuovo progetto di test codificato dell'interfaccia utente denominato **CodedUITestProject1** viene aggiunto alla soluzione e viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
 
 1. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e fare clic su **OK**.
 

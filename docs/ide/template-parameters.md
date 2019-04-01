@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907685"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355672"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -47,18 +47,18 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 La tabella seguente elenca i parametri di modello riservati che possono essere usati da qualsiasi modello:
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
 |ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio `ext_safeprojectname`.|
 |guid[1-10]|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1`.|
 |itemname|Nome specificato dall'utente nella finestra di dialogo **Aggiungi nuovo elemento**.|
 |machinename|Nome del computer corrente, ad esempio Computer01.|
-|projectname|Nome specificato dall'utente nella finestra di dialogo **Nuovo progetto**.|
+|projectname|Nome specificato dall'utente quando è stato creato il progetto.|
 |registeredorganization|Valore della chiave del Registro di sistema da HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Spazio dei nomi radice del progetto corrente. Questo parametro è valido solo per i modelli di elemento.|
 |safeitemname|Nome specificato dall'utente nella finestra di dialogo **Aggiungi nuovo elemento** con tutti i caratteri non sicuri e gli spazi rimossi.|
-|safeprojectname|Nome specificato dall'utente nella finestra di dialogo **Nuovo progetto** con tutti i caratteri non sicuri e gli spazi rimossi.|
+|safeprojectname|Nome specificato dall'utente quando è stato creato il progetto, con tutti i caratteri non sicuri e gli spazi rimossi.|
 |time|L'ora corrente nel formato GG/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `SpecificSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `SpecificSolutionName` è vuoto.|
 |userdomain|Dominio dell'utente corrente.|

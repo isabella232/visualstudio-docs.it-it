@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 0afa278bb7530905d4837ba06644731dcae52635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916700"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415941"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: Configurare unit test che abbiano una versione precedente di .NET Framework come destinazione
 
@@ -46,66 +46,48 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 - Non è possibile destinare unit test a versioni client precedenti del framework.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Reindirizzamento a una versione specifica di .NET Framework per progetti unit test Visual Basic
+## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Ridestinazione per progetti di unit test Visual Basic
 
-1.  Creare un nuovo progetto di unit test Visual Basic. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**.
+1. Creare un nuovo **progetto di unit test** in Visual Basic.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
-
-2.  In **Modelli installati** espandere **Visual Basic**. Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
-
-3.  Nella casella di testo **Nome** digitare un nome per il progetto di test Visual Basic e scegliere **OK**.
-
-4.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual Basic.
+2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual Basic.
 
      Verranno visualizzate le proprietà del progetto di test Visual Basic.
 
-5.  Nella scheda **Compila** scegliere **Opzioni di compilazione avanzate**, come illustrato nella figura seguente.
+3. Nella scheda **Compila** scegliere **Opzioni di compilazione avanzate**, come illustrato nella figura seguente.
 
      ![Opzioni di compilazione avanzate](../test/media/howtoconfigureunittest35frameworka.png)
 
-6.  Usare l'elenco a discesa **Framework di destinazione (tutte le configurazioni)** per impostare il framework di destinazione su **.NET Framework 3.5** o una versione successiva, come indicato nella didascalia B della figura seguente. Non specificare una versione client.
+4. Usare l'elenco a discesa **Framework di destinazione (tutte le configurazioni)** per impostare il framework di destinazione su **.NET Framework 3.5** o una versione successiva, come indicato nella didascalia B della figura seguente. Non specificare una versione client.
 
      ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reindirizzamento a una versione specifica di .NET Framework per progetti unit test Visual C#
+## <a name="retargeting-for-c-unit-test-projects"></a>Ridestinazione per progetti di unit test C#
 
-1.  Creare un nuovo progetto di unit test Visual C#. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**.
+1. Creare un nuovo **progetto di unit test** in C#.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test C#.
 
-2.  In **Modelli installati** espandere **Visual C#**. Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
+   Vengono visualizzate le proprietà del progetto di test C#.
 
-3.  Nella casella di testo **Nome** digitare un nome per il progetto di test Visual C# e scegliere **OK**.
+3. Nella scheda **Applicazione** scegliere **Framework di destinazione**. Nell'elenco a discesa scegliere **.NET Framework 3.5** o versione successiva, come illustrato nella figura seguente. Non specificare una versione client.
 
-4.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test Visual C#.
+   ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-     Verranno visualizzate le proprietà del progetto di test Visual C#.
+## <a name="retargeting-for-ccli-unit-test-projects"></a>Ridestinazione per progetti di unit test C++/CLI
 
-5.  Nella scheda **Applicazione** scegliere **Framework di destinazione**. Nell'elenco a discesa scegliere **.NET Framework 3.5** o versione successiva, come illustrato nella figura seguente. Non specificare una versione client.
+1. Creare un nuovo **progetto di unit test** in C#.
 
-     ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   > [!WARNING]
+   > Per compilare unit test C++/CLI per una versione precedente di .NET Framework per Visual C++, è necessario usare la versione corrispondente di Visual Studio.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Reindirizzamento a una versione specifica di .NET Framework per progetti unit test C++/CLI
+2. In **Esplora soluzioni** scegliere **Scarica progetto** dal nuovo progetto di test C++.
 
-1.  Creare un nuovo progetto di unit test Visual C++. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
+3. In **Esplora soluzioni** scegliere il progetto di test C++ scaricato, quindi scegliere **Modifica \<nome progetto>.vcxproj**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+   Il file *VCXPROJ* viene aperto nell'editor.
 
-    > [!WARNING]
-    > Per compilare unit test C++/CLI per una versione precedente di .NET Framework per Visual C++, è necessario usare la versione corrispondente di Visual Studio. Ad esempio, per impostare come destinazione .NET Framework 3.5, è necessario installare Visual Studio 2008 e Visual Studio 2008 Service Pack 1.
-
-2.  In **Modelli installati** espandere **Visual C++**. Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
-
-3.  Nella casella di testo **Nome** digitare un nome per il progetto di test Visual C++ e scegliere **OK**.
-
-4.  In **Esplora soluzioni** scegliere **Scarica progetto** dal nuovo progetto di test Visual C++.
-
-5.  In **Esplora soluzioni** scegliere il progetto di test di Visual C++ scaricato, quindi scegliere **Modifica \<nome progetto>.vcxproj**.
-
-     Il file *VCXPROJ* viene aperto nell'editor.
-
-6.  Impostare `TargetFrameworkVersion` sulla versione 3.5 o una versione successiva nel `PropertyGroup` con etichetta `"Globals"`. Non specificare una versione client:
+4. Impostare `TargetFrameworkVersion` sulla versione 3.5 o una versione successiva nel `PropertyGroup` con etichetta `"Globals"`. Non specificare una versione client:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -118,9 +100,9 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
       </PropertyGroup>
     ```
 
-7.  Salvare e chiudere il file *VCPROJ*.
+5. Salvare e chiudere il file *VCPROJ*.
 
-8.  In **Esplora soluzioni** selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test Visual C++.
+6. In **Esplora soluzioni** selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test C++.
 
 ## <a name="see-also"></a>Vedere anche
 

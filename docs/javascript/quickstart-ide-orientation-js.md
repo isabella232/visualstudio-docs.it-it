@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428661"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325292"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 
@@ -57,13 +57,13 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
 ::: moniker range=">=vs-2019"
 
-1. Nella **Finestra iniziale** selezionare **Crea un nuovo progetto** e quindi nella casella di ricerca digitare **javascript** per filtrare l'elenco dei tipi di progetto in modo da visualizzare soltanto quelli che contengono "javascript" nel nome o tipo di linguaggio.
+1. Nella Finestra iniziale selezionare **Crea un nuovo progetto** e quindi nella casella di ricerca digitare **javascript** per filtrare l'elenco dei tipi di progetto in modo da visualizzare soltanto quelli che contengono "javascript" nel nome o tipo di linguaggio.
 
    Visual Studio mette a disposizione diversi tipi di modelli di progetto che consentono di iniziare a scrivere codice rapidamente. In alternativa, gli sviluppatori di TypeScript possono creare un progetto nel linguaggio TypeScript. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
 
    ![Cercare modelli di progetto nella finestra iniziale di Visual Studio](media/vs-2019/create-new-project.png)
 
-1. Scegliere un modello di progetto **Applicazione Web Node.js vuota** e fare clic su **Avanti**. 
+1. Scegliere un modello di progetto **Applicazione Web Node.js vuota** e fare clic su **Avanti**.
 
 1. Nella finestra di dialogo **Configura il nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **Crea**.
 

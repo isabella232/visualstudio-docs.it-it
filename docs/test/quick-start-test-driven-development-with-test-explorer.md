@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925241"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415603"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva: Sviluppo basato su test con Esplora test
 
 Si consiglia di creare unit test per garantire il corretto funzionamento del codice attraverso i vari passaggi incrementali dello sviluppo. Esistono diversi framework che possono essere utilizzati per scrivere unit test, tra i quali alcuni sviluppati da terze parti. Alcuni framework di test sono specializzati per il testing in diversi linguaggi o piattaforme. Esplora test fornisce una singola interfaccia per gli unit test per uno qualsiasi di questi framework. Gli adattatori sono disponibili per i framework comunemente più utilizzati ed è possibile scrivere i propri adattatori per altri framework.
 
- Esplora test sostituisce le finestre di unit test presenti nelle versioni precedenti di Visual Studio. I vantaggi comprendono:
+Esplora test sostituisce le finestre di unit test presenti nelle versioni precedenti di Visual Studio. I vantaggi comprendono:
 
--   Possibilità di eseguire test .NET, non gestiti, di database e di altro tipo usando una singola interfaccia.
+- Possibilità di eseguire test .NET, non gestiti, di database e di altro tipo usando una singola interfaccia.
 
--   Possibilità di usare il framework di unit test preferito, ad esempio NUnit o MSTest.
+- Possibilità di usare il framework di unit test preferito, ad esempio NUnit o MSTest.
 
--   Vedere in una sola finestra tutte le informazioni di cui si ha bisogno.
+- Vedere in una sola finestra tutte le informazioni di cui si ha bisogno.
 
 ## <a name="use-test-explorer"></a>Usare Esplora test
- ![Esplora unit test con il pulsante Esegui tutto](../test/media/unittestexplorer-beta-.png)
+
+![Esplora test con il pulsante Esegui tutto](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Per eseguire lo unit test usando Esplora test
 
-1. Creare gli unit test che utilizzano i framework di test scelti.
+1. Creare gli unit test che utilizzano i framework di test scelti. Ad esempio, per creare un test che utilizza il framework MSTest:
 
-    Ad esempio, per creare un test che utilizza il framework MSTest:
+   1. Creare un nuovo **Progetto unit test** per C#, Visual Basic o C++.
 
-   1.  Creare un progetto di test.
-
-        Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic** o **Visual C#** o **Visual C++** e quindi scegliere **Test**.
-
-        Selezionare **Progetto unit test**.
-
-   2.  Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]` .
+   2. Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]` .
 
 2. Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -66,19 +61,17 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 > [!NOTE]
 > Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procedura dettagliata: Uso di unit test per sviluppare un metodo
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procedura dettagliata: Uso di unit test per sviluppare un metodo
- In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
+In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Creare il test e il metodo
 
-1. Creare un progetto di libreria di classi di Visual C#. Questo progetto conterrà il codice da produrre. In questo esempio è denominata `MyMath`.
+1. Creare un progetto **Libreria di classi** C#. Questo progetto conterrà il codice da produrre. In questo esempio è denominato `MyMath`.
 
-2. Creare un progetto di test.
+2. Creare un nuovo **Progetto unit test**.
 
-   -   Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#** > **Test** e quindi scegliere **Progetto unit test**.
-
-        ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png)
+   ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png)
 
 3. Scrivere un metodo di test di base. Verificare il risultato ottenuto con un input specifico:
 

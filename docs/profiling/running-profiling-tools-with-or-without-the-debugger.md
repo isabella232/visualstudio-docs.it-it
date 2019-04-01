@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597531"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323724"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -67,7 +67,7 @@ Per altre informazioni, vedere l'articolo relativo a come [eseguire ricerche e a
 
 ## <a name="collect-profiling-data-without-debugging"></a>Raccogliere dati di profilatura senza il debug
 
-Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli strumenti **Profiler prestazioni**. Per l'esecuzione di alcuni strumenti di profilatura, è necessario avere i privilegi di amministratore. È possibile avviare Visual Studio come amministratore oppure eseguire gli strumenti come amministratore quando si avvia la sessione di diagnostica.
+Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli strumenti **Profiler prestazioni**. Per l'esecuzione di alcuni strumenti di profilatura, è necessario avere i privilegi di amministratore. È possibile aprire Visual Studio come amministratore oppure eseguire gli strumenti come amministratore quando si avvia la sessione di diagnostica.
 
 1. Con un progetto aperto in Visual Studio, selezionare **Debug** > **Profiler prestazioni**, oppure premere **ALT**+**F2**.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14a365a85a446737982a6ec608c5935fc17ee408
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a15b845db2733b208a765caf1a1307abeb19a49
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955258"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355737"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Django in Visual Studio
 
@@ -34,7 +34,7 @@ In questa esercitazione si imparerà a:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Visual Studio 2017 in Windows con le opzioni seguenti:
+- Visual Studio 2017 o versioni successive in Windows con le opzioni seguenti:
   - Carico di lavoro **Sviluppo Python** (scheda **Carico di lavoro** nel programma di installazione). Per istruzioni, vedere [Installare il supporto Python in Visual Studio](installing-python-support-in-visual-studio.md).
   - **GIT per Windows** e **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** sotto a **Strumenti per il codice**.
 
@@ -65,7 +65,7 @@ Quando si usa Django dalla riga di comando, generalmente si avvia un progetto es
     - **Soluzione**: per questa impostazione lasciare il valore predefinito **Crea nuova soluzione**.
     - **Nome della soluzione**: impostare su **LearningDjango**, un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
     - **Crea directory per soluzione**: Lasciare i valori predefiniti impostati.
-    - **Crea nuovo repository GIT**: Selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository GIT locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio 2017 e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
+    - **Crea nuovo repository GIT**: Selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository GIT locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
 1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio **Questo progetto richiede pacchetti esterni**, riportata di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 

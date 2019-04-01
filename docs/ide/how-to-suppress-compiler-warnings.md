@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323974"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323464"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
@@ -63,7 +63,7 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. Sulla barra dei menu scegliere **Progetto** > **Scarica progetto**.
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Modifica<ProjectName>vbproj**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Modifica\<NomeProgetto>.vbproj**.
 
     Il file di progetto XML verrà aperto nell'editor del codice.
 

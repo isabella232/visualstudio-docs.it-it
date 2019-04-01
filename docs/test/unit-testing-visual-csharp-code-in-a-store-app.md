@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917766"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415993"
 ---
-# <a name="unit-testing-visual-c-code"></a>Testing unità di codice Visual C#
+# <a name="unit-test-c-code"></a>Unit test di codice C#
 
-Questo articolo descrive un metodo per la creazione di unit test per una classe Visual C# in un'app UWP. La classe Rooter rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. Nell'app Maths questa funzione può quindi essere utilizzata per illustrare all'utente le varie operazioni che si possono eseguire con questa funzione matematica.
+Questo articolo descrive un metodo per la creazione di unit test per una classe C# in un'app per la piattaforma UWP. La classe Rooter rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. Nell'app Maths questa funzione può quindi essere utilizzata per illustrare all'utente le varie operazioni che si possono eseguire con questa funzione matematica.
 
 Questo articolo illustra come usare gli unit test come primo passaggio dell'attività di sviluppo. Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.
 
@@ -26,13 +26,13 @@ In questo articolo si creano anche una soluzione di Visual Studio e progetti dis
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere **Installati** > **Visual C#** e quindi scegliere **Universale di Windows**. Scegliere quindi **App vuota** dall'elenco di modelli di progetto.
+2. Cercare e selezionare il modello di progetto **App vuota (Windows universale)**.
 
-3. Assegnare al progetto il nome `Maths` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.
+3. Denominare il progetto `Maths`.
 
 4. In **Esplora soluzioni** selezionare il nome della soluzione, scegliere **Aggiungi** dal menu di scelta rapida e quindi scegliere **Nuovo progetto**.
 
-5. Nella finestra di dialogo **Nuovo progetto** espandere **Installati**, **Visual C#** e quindi scegliere **Universale di Windows**. Scegli quindi **App unit test (Windows universale)** nell'elenco di modelli di progetto.
+5. Cercare e selezionare il modello di progetto **App unit test (Windows universale)**.
 
 6. Aprire *UnitTest1.cs* nell'editor di Visual Studio.
 

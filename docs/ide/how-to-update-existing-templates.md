@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952151"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355384"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedura: Aggiornare i modelli esistenti
 
 Dopo aver creato un modello e compresso i file in un file con estensione *zip*, può essere necessario modificare il modello. L'operazione può essere eseguita manualmente cambiando i file nel modello oppure esportando un nuovo modello da un progetto basato sul modello.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Uso dell'Esportazione guidata modelli per aggiornare un modello di progetto esistente
+## <a name="use-the-export-template-wizard"></a>Usare l'Esportazione guidata modelli
 
 In Visual Studio è disponibile l'**Esportazione guidata modelli** che può essere usata per aggiornare un modello esistente:
 
-1. Aprire la finestra di dialogo **Nuovo progetto** scegliendo **File** > **Nuovo** > **Progetto**.
+1. Scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu.
 
-1. Selezionare il modello da aggiornare, specificare un nome e un percorso per il progetto, quindi fare clic su **OK**.
+1. Selezionare il modello da aggiornare e procedere con i passaggi necessari per creare il nuovo progetto.
 
-1. Modificare il progetto in Visual Studio.
+1. Modificare il progetto in Visual Studio. Ad esempio, modificare il tipo di output o aggiungere un nuovo file al progetto.
 
 1. Nel menu **Progetto** scegliere**Esporta modello**.
 
@@ -37,7 +37,7 @@ In Visual Studio è disponibile l'**Esportazione guidata modelli** che può esse
 
 1. Seguire le istruzioni della procedura guidata per esportare il modello come file con estensione *zip*.
 
-1. (Facoltativo) Per aggiungere il modello alla finestra di dialogo **Nuovo progetto**, inserire il file con estensione *zip* nella directory seguente: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*. È necessario eseguire questo passaggio se non è stata selezionata l'opzione **Importa automaticamente il modello in Visual Studio** nell'**Esportazione guidata modelli**.
+1. (Facoltativo) Inserire il file *ZIP* nella directory seguente: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*. È necessario eseguire questo passaggio se non è stata selezionata l'opzione **Importa automaticamente il modello in Visual Studio** nell'**Esportazione guidata modelli**.
 
 1. Eliminare il file di modello precedente con estensione *zip*.
 

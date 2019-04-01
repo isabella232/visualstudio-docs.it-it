@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953862"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476007"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di C# e C++ nella stessa sessione di debug
 
@@ -52,7 +52,18 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 **Per creare i file per il progetto DLL:**
 
-1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**.
+1. Aprire Visual Studio e creare un progetto.
+
+    ::: moniker range=">=vs-2019"
+    Premere **CTRL + Q** per aprire la casella di ricerca, digitare **Progetto vuoto**, scegliere **Modelli**, quindi **Crea nuovo progetto Progetto vuoto** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
+    ::: moniker-end
+
+    Se il modello di progetto **Progetto vuoto** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** per aprire il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+
+    Visual Studio crea il progetto.
 
 1. Nella finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e **Progetto vuoto** nel riquadro centrale.
 
@@ -71,6 +82,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     ```cpp
     #include "Mixed_Mode.h"
     ```
+
 1. In **Esplora soluzioni** selezionare **File di intestazione** e quindi **Progetto** > **Aggiungi nuovo elemento**. In alternativa, fare clic con il pulsante destro del mouse su **File di intestazione** e selezionare **Aggiungi** > **Nuovo elemento**.
 
 1. Nella finestra di dialogo **Nuovo elemento** selezionare **File di intestazione (.h)**. Digitare **Mixed_Mode.h** nel campo **Nome** e quindi selezionare **Aggiungi**.
@@ -117,18 +129,23 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Creare una semplice app gestita per chiamare la DLL
 
-1. In Visual Studio scegliere **File** > **Nuovo** > **Progetto**.
+1. Aprire Visual Studio e creare un nuovo progetto.
 
-   > [!NOTE]
-   > Anche se è possibile aggiungere il nuovo progetto gestito alla soluzione C++ esistente, la creazione di una nuova soluzione supporta più scenari di debug.
+    ::: moniker range=">=vs-2019"
+    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework) per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
-1. Nella finestra di dialogo **Nuovo progetto** selezionare **Visual C#** e nel riquadro centrale:
+    Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**.
 
-   - Per un'app .NET Framework, selezionare **App console (.NET Framework)**.
+    Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **OK**.
+    ::: moniker-end
 
-   - Per un'app .NET Core, selezionare **App console (.NET Core)**.
+    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
-1. Nel campo **Nome** digitare **Mixed_Mode_Calling_App** e selezionare **OK**.
+    > [!NOTE]
+    > Anche se è possibile aggiungere il nuovo progetto gestito alla soluzione C++ esistente, la creazione di una nuova soluzione supporta più scenari di debug.
 
    Visual Studio crea il progetto vuoto e lo visualizza in **Esplora soluzioni**.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (C#)'
-ms.date: 11/04/2016
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -14,42 +14,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af2329789e5eea4c9b0875f2986181f6d672757c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930460"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355357"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 
 È possibile usare gli eventi di compilazione per specificare i comandi da eseguire prima dell'inizio o al termine della compilazione. Gli eventi di compilazione vengono eseguiti solo se la compilazione raggiunge correttamente i punti corrispondenti nel processo di compilazione.
 
-Quando un progetto viene compilato, gli eventi di pre-compilazione vengono aggiunti a un file denominato *PreBuildEvent.bat* mentre gli eventi di post-compilazione vengono aggiunti a un file denominato *PostBuildEvent.bat*. Per garantire il controllo degli errori, aggiungere comandi di controllo degli errori personalizzati alle istruzioni di compilazione.
+Quando un progetto viene compilato, gli eventi di pre-compilazione vengono aggiunti a un file denominato *PreBuildEvent.bat* e gli eventi di post-compilazione vengono aggiunti a un file denominato *PostBuildEvent.bat*. Per garantire il controllo degli errori, aggiungere comandi di controllo degli errori personalizzati alle istruzioni di compilazione.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+## <a name="specify-a-build-event"></a>Specificare un evento di compilazione
 
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Come specificare eventi di pre e post-compilazione
+1. In **Esplora soluzioni** selezionare il progetto per il quale si vuole specificare l'evento di compilazione.
 
-### <a name="to-specify-a-build-event"></a>Per specificare un evento di compilazione
+2. Scegliere **Proprietà** dal menu **Progetto**.
 
-1.  In **Esplora soluzioni** selezionare il progetto per il quale si vuole specificare l'evento di compilazione.
+3. Selezionare la scheda **Eventi di compilazione**.
 
-2.  Scegliere **Proprietà** dal menu **Progetto**.
-
-3.  Selezionare la scheda **Eventi di compilazione**.
-
-4.  Nella casella **Riga di comando eventi pre-compilazione** specificare la sintassi per l'evento di compilazione.
+4. Nella casella **Riga di comando eventi pre-compilazione** specificare la sintassi per l'evento di compilazione.
 
     > [!NOTE]
     > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
 
-5.  Nella casella **Riga di comando eventi post-compilazione** specificare la sintassi per l'evento di compilazione.
+5. Nella casella **Riga di comando eventi post-compilazione** specificare la sintassi per l'evento di compilazione.
 
     > [!NOTE]
     > Aggiungere un'istruzione `call` prima di tutti i comandi di post-compilazione che eseguono file con estensione *bat*. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
-6.  Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.
+6. Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.
 
     > [!NOTE]
     > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.
@@ -59,7 +55,7 @@ Quando un progetto viene compilato, gli eventi di pre-compilazione vengono aggiu
     > [!NOTE]
     > Se l'evento di pre-compilazione o post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'azione dell'evento a uscire con un codice diverso da zero (0), che indica un esito positivo.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Esempio: come modificare le informazioni di un manifesto usando un evento di post-compilazione
+## <a name="example"></a>Esempio
 
 La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando *exe* chiamato da un evento di post-compilazione (il file *exe.manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:
 
@@ -71,19 +67,17 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Per creare un comando exe per modificare il manifesto dell'applicazione
+### <a name="create-an-exe-command-to-change-the-application-manifest"></a>Creare un comando exe per modificare il manifesto dell'applicazione
 
-1. Creare un'applicazione console per il comando. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+1. Creare un nuovo progetto **App console** per il comando. Assegnare al progetto il nome **ChangeOSVersionCS**.
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Windows** e quindi scegliere il modello **Applicazione console**. Denominare il progetto `ChangeOSVersionCS`.
-
-3. In *Program.cs* aggiungere la riga seguente alle altre istruzioni `using` all'inizio del file:
+2. In *Program.cs* aggiungere la riga seguente alle altre istruzioni `using` all'inizio del file:
 
    ```csharp
    using System.Xml;
    ```
 
-4. Nello spazio dei nomi `ChangeOSVersionCS` sostituire l'implementazione della classe `Program` con il codice seguente:
+3. Nello spazio dei nomi `ChangeOSVersionCS` sostituire l'implementazione della classe `Program` con il codice seguente:
 
    ```csharp
    class Program
@@ -135,27 +129,25 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
    }
    ```
 
-    Il comando accetta due argomenti: il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto (in genere *Projectname.publish*), e la versione del nuovo sistema operativo.
+   Il comando accetta due argomenti: il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto (in genere *Projectname.publish*), e la versione del nuovo sistema operativo.
 
-5. Compilare il progetto. Scegliere **Compila soluzione** dal menu **Compila**.
+4. Compilare il progetto.
 
-6. Copiare il file con estensione *exe* in una directory, ad esempio *C:\TEMP\ChangeOSVersionVB.exe*.
+5. Copiare il file con estensione *exe* in una directory, ad esempio *C:\TEMP\ChangeOSVersionVB.exe*.
 
    Richiamare quindi questo comando in un evento di post-compilazione per modificare il manifesto dell'applicazione.
 
-### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Per richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione
+### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione
 
-1.  Creare un'applicazione Windows per il progetto da pubblicare. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+1. Creare un nuovo progetto **App Windows Forms** e denominarlo **CSWinApp**.
 
-2.  Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Desktop di Windows** e quindi fare clic sul modello **App Windows Form**. Denominare il progetto `CSWinApp`.
+2. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-3.  Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+3. In **Creazione progetti**, individuare la pagina **Pubblica** e impostare **Posizione di pubblicazione** su *C:\TEMP*.
 
-4.  In **Creazione progetti**, individuare la pagina **Pubblica** e impostare **Posizione di pubblicazione** su *C:\TEMP*.
+4. Pubblicare il progetto facendo clic su **Pubblica**.
 
-5.  Pubblicare il progetto facendo clic su **Pubblica**.
-
-     Il file manifesto verrà compilato e inserito in *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.
+     Il file manifesto viene compilato e salvato in *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.
 
      Ricercare nel file l'elemento `<osVersionInfo>`. Ad esempio, la versione potrebbe essere:
 
@@ -163,21 +155,19 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  In **Creazione progetti** fare clic sulla scheda **Eventi di compilazione** e fare clic sul pulsante **Modifica post-compilazione**.
+5. Tornare a **Creazione progetti**, fare clic sulla scheda **Eventi di compilazione** e quindi su **Modifica post-compilazione**.
 
-7.  Nella casella **Riga di comando eventi post-compilazione** digitare il comando seguente:
+6. Nella casella **Riga di comando eventi post-compilazione** digitare il comando seguente:
 
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Quando si compila il progetto, questo comando imposterà la versione minima del sistema operativo nel manifesto dell'applicazione su 5.1.2600.0.
+     Quando si compila il progetto, questo comando imposta la versione minima del sistema operativo nel manifesto dell'applicazione su 5.1.2600.0.
 
-     Poiché la macro `$(TargetPath)` esprime il percorso completo del file eseguibile in corso di creazione, il file `$(TargetPath)`*manifest* specificherà il manifesto dell'applicazione creato nella directory *bin*. La pubblicazione copierà questo manifesto nel percorso di pubblicazione impostato in precedenza.
+     Poiché la macro `$(TargetPath)` esprime il percorso completo del file eseguibile in corso di creazione, il file `$(TargetPath)`*manifest* specificherà il manifesto dell'applicazione creato nella directory *bin*. La pubblicazione copia questo manifesto nel percorso di pubblicazione impostato in precedenza.
 
-8.  Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.
+7. Pubblicare nuovamente il progetto.
 
-     Visualizzare nuovamente il manifesto. Per visualizzare il manifesto, aprire la directory di pubblicazione, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.
-
-     Adesso la versione dovrebbe essere:
+     Adesso la versione del manifesto dovrebbe essere:
 
     ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />

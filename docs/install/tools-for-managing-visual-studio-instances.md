@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681751"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415214"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Strumenti per il rilevamento e la gestione di istanze di Visual Studio
 
@@ -37,25 +39,31 @@ L'[API di configurazione del programma di installazione](<xref:Microsoft.VisualS
 
 ## <a name="using-vswhereexe"></a>Uso di vswhere.exe
 
-`vswhere.exe` è automaticamente incluso in Visual Studio 2017 versione 15.2 o versione successiva oppure è possibile scaricarlo dalla [pagina dei rilasci](https://github.com/Microsoft/vswhere/releases). Usare `vswhere -?` per ottenere informazioni sullo strumento. Ad esempio, questo comando mostra tutti i rilasci di Visual Studio, incluse le versioni precedenti del prodotto e le versioni non definitive e restituisce i risultati in formato JSON:
+`vswhere.exe` viene automaticamente incluso in Visual Studio (a partire da Visual Studio 2017 versione 15.2 e versioni successive) oppure è possibile scaricarlo dalla [pagina delle versioni di VSWhere](https://github.com/Microsoft/vswhere/releases). Usare `vswhere -?` per ottenere informazioni sullo strumento. Ad esempio, questo comando visualizza tutte le versioni di Visual Studio, incluse le versioni precedenti del prodotto e le versioni non definitive e restituisce i risultati in formato JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Per altre informazioni sull'installazione di Visual Studio 2017, vedere l'[archivio degli articoli sulla configurazione di Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> [!TIP]
+> Per altre informazioni sull'installazione di Visual Studio 2017, vedere l'[archivio degli articoli sulla configurazione di Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Modifica del Registro di sistema per un'istanza di Visual Studio
 
-In Visual Studio 2017 le impostazioni del Registro di sistema vengono archiviate in un percorso privato, che consente la presenza nello stesso computer di più istanze side-by-side della stessa versione di Visual Studio.
+In Visual Studio le impostazioni del Registro di sistema vengono archiviate in un percorso privato, che consente la presenza nello stesso computer di più istanze side-by-side della stessa versione di Visual Studio.
 
 Questi elementi non vengono archiviati nel Registro di sistema globale ed è quindi necessario seguire istruzioni speciali per usare l'editor del Registro di sistema per apportare modifiche alle impostazioni del registro:
 
-1. Se si ha un'istanza aperta di Visual Studio 2017, chiuderla.
-2. Avviare `regedit.exe`.
-3. Selezionare il nodo `HKEY_LOCAL_MACHINE`.
-4. Nel menu principale di Regedit selezionare **File -> Carica hive...**  e quindi selezionare il file di registro privato archiviato nella cartella **AppData\Local**. Ad esempio:
+1. Se si ha un'istanza di Visual Studio aperta, chiuderla.
+
+1. Avviare `regedit.exe`.
+
+1. Selezionare il nodo `HKEY_LOCAL_MACHINE`.
+
+1. Nel menu principale di Regedit selezionare **File** > **Carica hive** e quindi selezionare il file di registro privato archiviato nella cartella **AppData\Local**. Ad esempio:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +74,7 @@ Questi elementi non vengono archiviati nel Registro di sistema globale ed è qui
 Verrà chiesto di fornire un nome di hive, che diventerà il nome dell'hive isolato. Al termine dell'operazione sarà possibile trovare il Registro di sistema nell'hive isolato appena creato.
 
 > [!IMPORTANT]
-> Prima di avviare nuovamente Visual Studio, è necessario scaricare l'hive isolato appena creato. A questo scopo, nel menu principale di Regedit selezionare File -> Scarica Hive. (Se non si esegue questa operazione, il file rimarrà bloccato e non sarà possibile avviare Visual Studio).
+> Prima di avviare nuovamente Visual Studio, è necessario scaricare l'hive isolato appena creato. A questo scopo, nel menu principale di Regedit selezionare **File** > **Scarica hive**. (Se non si esegue questa operazione, il file rimarrà bloccato e non sarà possibile avviare Visual Studio).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

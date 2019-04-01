@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947062"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324922"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:
@@ -125,7 +125,7 @@ L'attività Message accetta il valore stringa dell'attributo Text come input e l
 
    (Windows 10) Nella casella di ricerca della barra delle applicazioni iniziare a digitare il nome dello strumento, ad esempio `dev` o `developer command prompt`. Verrà visualizzato un elenco di app installate che corrispondono ai criteri di ricerca.
 
-   Se è necessario cercarlo manualmente, il file, *LaunchDevCmd.bat*, si trova nella cartella *<visualstudio installation folder>\<versione>\Common7\Tools*.
+   Se è necessario cercarlo manualmente, il file, *LaunchDevCmd.bat* si trova nella cartella *<cartella di installazione di visualstudio\>\<versione>\Common7\Strumenti*.
 
 2. Dalla finestra di comando passare alla cartella contenete il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
 

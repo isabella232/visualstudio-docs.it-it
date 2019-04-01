@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928426"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268638"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: Creare e modificare le configurazioni
 
@@ -46,17 +46,13 @@ Nella finestra di dialogo **Configuration Manager** è possibile usare l'elenco 
 
  Dopo avere definito le configurazioni volute, è possibile impostare le proprietà di progetto appropriate per tali configurazioni.
 
-### <a name="to-set-properties-based-on-configurations"></a>Per impostare le proprietà in base alle configurazioni
+### <a name="set-properties-based-on-configurations"></a>Impostare le proprietà in base alle configurazioni
 
--   In **Esplora soluzioni** aprire il menu di scelta rapida per un progetto e quindi scegliere **Proprietà**.
+Per impostare le proprietà in base alle configurazioni, in **Esplora soluzioni** aprire il menu di scelta rapida per un progetto e quindi scegliere **Proprietà**. È possibile impostare alcune proprietà per le configurazioni. Per una configurazione di rilascio, ad esempio, è possibile specificare che quando si effettua la compilazione della soluzione il codice deve essere ottimizzato. Per una configurazione di debug, poi, è possibile specificare che il simbolo di compilazione condizionale `DEBUG` deve essere incluso.
 
-     Verrà aperta la finestra **Pagine delle proprietà**.
+Per altre informazioni sulle impostazioni della pagina delle proprietà, vedere [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md).
 
-     È possibile impostare alcune proprietà per le configurazioni. Per una configurazione di rilascio, ad esempio, è possibile specificare che quando si effettua la compilazione della soluzione il codice deve essere ottimizzato. Per una configurazione di debug, poi, è possibile specificare che il simbolo di compilazione condizionale `DEBUG` deve essere incluso. Per altre informazioni sulle impostazioni della pagina delle proprietà, vedere [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Creazione e modifica di configurazioni di progetto
-
-### <a name="to-create-a-project-configuration"></a>Per creare una configurazione di progetto
+## <a name="create-a-project-configuration"></a>Creare una configurazione di progetto
 
 1.  Aprire la finestra di dialogo **Gestione configurazione**.
 
@@ -72,7 +68,7 @@ Nella finestra di dialogo **Configuration Manager** è possibile usare l'elenco 
 
 6.  Per creare contemporaneamente una configurazione a livello di soluzione, selezionare la casella di controllo **Crea nuove configurazioni soluzione**.
 
-### <a name="to-rename-a-project-configuration"></a>Per rinominare una configurazione di progetto
+## <a name="rename-a-project-configuration"></a>Rinominare una configurazione di progetto
 
 1.  Aprire la finestra di dialogo **Gestione configurazione**.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796829"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416370"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -38,7 +38,7 @@ Per un'introduzione agli unit test che mostra direttamente la creazione di codic
 
 ## <a name="the-mybank-solution-example"></a>Esempio della soluzione MyBank
 
-In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `MyBank` come esempio. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test vengono scritti in C# e vengono presentati tramite il framework di testing unità Microsoft per codice gestito. I concetti sono tuttavia facilmente trasferibili in altri linguaggi e framework.
+In questo articolo si usa come esempio lo sviluppo di un'applicazione fittizia denominata `MyBank`. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test vengono scritti in C# e vengono presentati tramite il framework di testing unità Microsoft per codice gestito. I concetti sono tuttavia facilmente trasferibili in altri linguaggi e framework.
 
 ![Soluzione MyBank](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Un progetto unit test rispecchia in genere la struttura di un progetto a codice 
 
 **Per aggiungere un progetto unit test a una soluzione:**
 
-1. Nel menu **File** scegliere **Nuovo** e quindi **Progetto** oppure premere **CTRL**+**MAIUSC**+**N**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** > **Nuovo** **Progetto**.
+
+::: moniker range="vs-2017"
 
 2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
 
 3. Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Per testare il progetto `Accounts` dell'esempio, assegnare al progetto il nome `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Non tutti i framework per unit test di terze parti e open source offrono un modello di progetto di Visual Studio. Per informazioni sulla creazione di un progetto, vedere la documentazione relativa al framework.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Usare la casella di ricerca dei modelli di progetto per trovare un progetto unit test per il framework di test che si vuole usare.
+
+3. Nella pagina successiva assegnare un nome al progetto. Per testare il progetto `Accounts` dell'esempio, è possibile assegnare al progetto il nome `AccountsTests`.
+
+::: moniker-end
 
 4. Nel progetto unit test aggiungere un riferimento al progetto di codice da testare, che nell'esempio corrisponde al progetto Accounts.
 

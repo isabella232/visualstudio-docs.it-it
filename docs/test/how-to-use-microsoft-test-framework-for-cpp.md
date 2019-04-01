@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955076"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324909"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
@@ -30,7 +30,7 @@ In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL,
 
    1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto del programma che si sta testando, quindi scegliere **Proprietà** > **Proprietà di configurazione** > **Directory di VC++**.
 
-   2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **<Edit>**:
+   2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **\<Modifica>**:
 
 
       | Directory | Proprietà |
@@ -89,7 +89,7 @@ TEST_METHOD(Method1)
 
 I tratti predefiniti seguenti sono disponibili in `CppUnitTest.h`. Per altre informazioni, vedere le [informazioni di riferimento sulle API del framework di testing unità Microsoft per C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Descrizione|
+|Macro|Description|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|

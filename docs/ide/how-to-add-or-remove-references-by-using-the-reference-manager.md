@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943467"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322324"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -46,9 +46,7 @@ Sul lato sinistro della finestra di dialogo **Gestione riferimenti** sono dispon
 
 - **Sfoglia** con il sottogruppo **Recente**.
 
-## <a name="add-and-remove-a-reference"></a>Aggiungere e rimuovere un riferimento
-
-### <a name="to-add-a-reference"></a>Per aggiungere un riferimento
+## <a name="add-a-reference"></a>Aggiungere un riferimento
 
 1. In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo **Riferimento** o **Dipendenze** e scegliere **Aggiungi riferimento**. È anche possibile fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Riferimento**.
 
@@ -147,44 +145,27 @@ Viene creato un riferimento al file anziché un riferimento al progetto se un pr
 
 Un progetto destinato a [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] non può aggiungere un riferimento a un progetto destinato a .NET Framework e viceversa.
 
-## <a name="windows-tab"></a>Scheda Windows.
+## <a name="universal-windows-tab"></a>Scheda Windows universale
 
-La scheda **Windows** elenca tutti gli SDK specifici per le piattaforme nelle quali vengono eseguiti i sistemi operativi Windows.
-
-È possibile generare un file WinMD in Visual Studio in due modi:
-
-- **Progetti gestiti per app Windows 8.x Store**: i progetti gestiti per app Windows 8.x Store possono generare file binari WinMD mediante l'impostazione di **Proprietà progetto** > **Tipo di output = File WinMD**. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi `A.B` e `A.B.C`, i nomi possibili per il file WinMD generato saranno *A.winmd* e *A.B.winmd*. Se un utente immette un valore **Proprietà progetto** > **Nome assembly** o **Proprietà progetto** > **Spazio dei nomi** che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file .winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. Impossibile trovare nel runtime i tipi che non esistono in questo spazio dei nomi secondario. In questo assembly, lo spazio dei nomi comune più piccolo è `CSWSClassLibrary1`. Un progetto desktop Visual Basic o C# può usare solo file WinMD generati tramite SDK Windows 8, noti come WinMD del produttore, e non può generare WinMD.
-
-- **Progetti nativi per app Windows 8.x Store**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.
-
-La scheda **Windows** è costituita da due sottogruppi.
+La scheda **Windows universale** contiene tutti gli SDK specifici per le piattaforme in cui vengono eseguiti i sistemi operativi Windows.
+Questa scheda ha due sottogruppi: **Base** ed **Estensioni**.
 
 ### <a name="core-subgroup"></a>Sottogruppo di base
 
-Il sottogruppo di **base** elenca tutti i file WinMD (per gli elementi Windows Runtime) nell'SDK per la versione di Windows di destinazione.
-
-I progetti per app Windows 8.x Store contengono riferimenti a tutti i file WinMD in Windows 8 SDK per impostazione predefinita al momento della creazione del progetto. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero Windows 8 SDK. Di conseguenza, nel sottogruppo **Base** in **Gestione riferimenti** non viene enumerato nessun assembly di Windows 8 SDK e viene invece visualizzato il messaggio seguente: "‪Si è già fatto riferimento all'SDK Windows. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nell'SDK Windows".
-
-Per impostazione predefinita, nei progetti desktop il sottogruppo di **base** non viene visualizzato. È possibile aggiungere Windows Runtime aprendo il menu di scelta rapida del nodo del progetto, scegliendo **Scarica progetto**, aggiungendo il frammento seguente e riaprendo il progetto (nel nodo del progetto scegliere **Ricarica progetto**). Quando si richiama la finestra di dialogo **Gestione riferimenti**, viene visualizzato il sottogruppo di **base**.
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-Assicurarsi di selezionare la casella di controllo **Windows** in questo sottogruppo. A questo punto dovrebbe essere possibile utilizzare gli elementi Windows Runtime. Tuttavia, è possibile che si intenda aggiungere <xref:System.Runtime>, in cui Windows Runtime definisce alcune classi e interfacce standard, come <xref:System.Collections.IEnumerable>, che sono usate in tutte le librerie di Windows Runtime. Per informazioni su come aggiungere <xref:System.Runtime>, vedere [Managed desktop apps and Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types) (App desktop gestite e Windows Runtime).
+I progetti di app di Windows universale hanno un riferimento all'SDK di Windows universale per impostazione predefinita. Di conseguenza, nel sottogruppo **Base** in **Gestione riferimenti** non viene enumerato nessun assembly dell'SDK di Windows universale.
 
 ### <a name="extensions-subgroup"></a>Sottogruppo Estensioni
 
-In **Estensioni** sono elencati gli SDK che estendono la piattaforma Windows di destinazione. Questa scheda viene visualizzata solo per i progetti di app Windows 8.x Store. Nei progetti desktop questa scheda non viene visualizzata perché tali progetti possono usare solo file con estensione *winmd* del produttore.
+In **Estensioni** sono elencati gli SDK che estendono la piattaforma Windows di destinazione.
 
-Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni** gli SDK che si applicano al progetto da cui è stata aperta la finestra di dialogo **Gestione riferimenti** sono elencati come voci singole. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto. Per informazioni su come visualizzare l'SDK nella scheda **Estensioni**, vedere [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni** gli SDK che si applicano al progetto da cui è stata aperta la finestra di dialogo **Gestione riferimenti** sono elencati come voci singole. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto.
+
+Per informazioni su come visualizzare l'SDK nella scheda **Estensioni**, vedere [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Se un progetto fa riferimento a un SDK che dipende da un altro SDK, Visual Studio utilizzerà il secondo SDK solo se l'utente aggiunge manualmente un riferimento a quest'ultimo. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo **Gestione riferimenti** consente di identificare le dipendenze dall'SDK elencando non solo il nome e la versione dell'SDK ma anche il nome di tutte le dipendenze dell'SDK nel riquadro dei dettagli. Se l'utente non annota le dipendenze e aggiunge solo l'SDK, MSBuild chiede di aggiungere le dipendenze.
+> Se un progetto fa riferimento a un SDK che dipende da un altro SDK, Visual Studio userà il secondo SDK solo se si aggiunge manualmente un riferimento a quest'ultimo. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo **Gestione riferimenti** consente di identificare le dipendenze dell'SDK indicando tutte le dipendenze nel riquadro dei dettagli.
 
-Se un tipo di progetto non supporta estensioni, la scheda non viene visualizzata nella finestra di dialogo **Gestione riferimenti**.
+Se un tipo di progetto non supporta le estensioni, la scheda non viene visualizzata nella finestra di dialogo **Gestione riferimenti**.
 
 ## <a name="com-tab"></a>Scheda COM
 
@@ -202,11 +183,11 @@ Evitare di aggiungere riferimenti di file agli output di un altro progetto della
 
 Non è possibile individuare un SDK e aggiungerlo al progetto. È possibile solo individuare un file, ad esempio un assembly o un file con estensione *winmd*, e aggiungerlo al progetto.
 
-Nella creazione di un riferimento di file a un WinMD, il layout previsto è quello in cui tutti i file con estensione *<FileName>winmd*, *<FileName>dll* e *<FileName>pri* sono posizionati l'uno accanto all'altro. Se si fa riferimento a un WinMD nei seguenti scenari, un set incompleto di file verrà copiato nella directory di output del progetto e, di conseguenza, si verificheranno errori di runtime e di compilazione.
+Nella creazione di un riferimento di file a un WinMD il layout previsto è quello in cui i file *\<NomeFile>.winmd*, *\<NomeFile>.dll* e *\<NomeFile>.pri* si trovano l'uno accanto all'altro. Se si fa riferimento a un WinMD nei seguenti scenari, un set incompleto di file verrà copiato nella directory di output del progetto e, di conseguenza, si verificheranno errori di runtime e di compilazione.
 
-- **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, solo i file con estensione *<FileName>dll* e *<FileName>winmd* con lo stesso nome saranno copiati e si verificheranno errori di runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, saranno copiati solo i file *\<NomeFile>.dll* e *\<NomeFile>.winmd* con lo stesso nome e si verificheranno errori di runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Utilizzo di controlli**: un controllo XAML consiste come minimo nei file con estensione *<FileName>winmd*, *<FileName>dll*, *<FileName>pri*, *<XamlName>xaml* e *<ImageName>jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento di file non vengono copiati nella directory di output del progetto. Verranno copiati solo i file con estensione *<FileName>winmd*, *<FileName>dll* e *<FileName>pri*. Verrà registrato un errore di compilazione per informare l'utente dell'assenza delle risorse con estensione *<XamlName>xaml* e *<ImageName>jpg*. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
+- **Uso di controlli**: un controllo XAML è costituito come minimo da *\<NomeFile>.winmd*, *\<NomeFile>.dll*, *\<NomeFile>.pri*, *\<NomeXaml>.xaml* e *\<NomeImmagine>.jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento a file non vengono copiati nella directory di output del progetto. Verranno copiati solo i file *\<NomeFile>.winmd*, *\<NomeFile>.dll* e *\<NomeFile>.pri*. Verrà registrato un errore di compilazione per informare l'utente dell'assenza delle risorse *\<NomeXaml>.xaml* e *\<NomeImmagine>.jpg*. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
 
     ```xml
     <PropertyGroup>

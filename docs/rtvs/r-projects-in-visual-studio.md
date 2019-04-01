@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936187"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324786"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -23,9 +23,9 @@ I progetti vengono sempre gestiti all'interno di una *soluzione* di Visual Studi
 
 ## <a name="creating-a-new-r-project"></a>Creazione di un nuovo progetto R
 
-1. Avviare Visual Studio.
-1. Scegliere **File > Nuovo > Progetto** (**CTRL**+**MAIUS**+**N**)
-1. Selezionare "Progetto R" in **Modelli > R**, assegnare un nome e un percorso al progetto e selezionare **OK**:
+1. Aprire Visual Studio.
+1. Scegliere **File > Nuovo > Progetto** (**CTRL**+**MAIUSC**+**N**)
+1. Selezionare "Progetto R" in **Modelli** > **R**, assegnare un nome e un percorso al progetto e selezionare **OK**:
 
     ![Finestra di dialogo Nuovo progetto per R in Visual Studio (RTVS in VS2017)](media/getting-started-01-new-project.png)
 
@@ -37,7 +37,7 @@ Il file con estensione *Rhistory* registra tutti i comandi immessi dall'utente n
 
 Il file *rproject.rproj* consente di gestire alcune impostazioni di progetto specifiche di R non altrimenti gestite da Visual Studio:
 
-| Proprietà | Impostazione predefinita | Descrizione |
+| Proprietà | Impostazione predefinita | Description |
 | --- | --- | --- |
 | Versione | 1.0 | La versione di R Tools per Visual Studio usata per creare il progetto. |
 | RestoreWorkspace | Impostazione predefinita | Carica automaticamente le variabili precedenti dell'area di lavoro dal file `.RData` nella directory del progetto. |
@@ -64,7 +64,7 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > (nome progetto)** . La finestra visualizzata riporta le proprietà del progetto:
 
 
-| Scheda | Proprietà | Descrizione |
+| Scheda | Proprietà | Description |
 | --- | --- | --- |
 | Esegui | File di avvio | Nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), **F5**, **Debug** > **Avvia debug** oppure **Debug** > **Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. |
 | | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. |
@@ -77,7 +77,7 @@ Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante de
 
 I progetti di Visual Studio supportano diversi comandi generali sia tramite il menu di scelta rapida che tramite il menu **Progetto**. Per i dettagli su queste funzionalità generali, vedere [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Si ricorda però che per i progetti R, R Tools per Visual Studio (RTVS) aggiunge diversi comandi specifici al menu di scelta rapida nonché file e cartelle all'interno del progetto.
 
-| Comando | Descrizione |
+| Comando | Description |
 | --- | --- |
 | Imposta directory di lavoro qui | Imposta la directory di lavoro della finestra interattiva R sulla cartella del progetto, che può essere usata anche in qualsiasi sottocartella all'interno di un progetto. |
 | Apri cartella superiore | Apre Esplora risorse in corrispondenza del percorso del file selezionato. |
@@ -92,7 +92,7 @@ RTVS include diversi modelli per tipi di file specifici. È possibile accedere a
 > [!Note]
 > I comandi **Aggiungi** > **Nuovo elemento** visualizzano anche tipi di file generici non elencati nella tabella, mentre con **File** > **Nuovo** > **File**, tali tipi si trovano nella scheda **Generale**.
 
-| Tipo di file | Descrizione |
+| Tipo di file | Description |
 | --- | --- |
 | Script R | Un file di testo che contiene gli stessi comandi che è possibile immettere nella riga di comando R. |
 | R Markdown | File contenente un documento [R Markdown](rmarkdown-with-r-in-visual-studio.md). |

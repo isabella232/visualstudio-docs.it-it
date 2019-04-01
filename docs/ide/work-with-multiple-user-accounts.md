@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933392"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355328"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -55,7 +55,7 @@ Alla successiva apertura di **Esplora server** verranno visualizzate le risorse 
 
 In Azure Active Directory (AAD) viene abilitato il supporto per l'autenticazione Single Sign-On per utenti finali in app Web MVC ASP.NET o per il servizio Autenticazione di Azure AD in servizi Web API. L'autenticazione di dominio è diversa dall'autenticazione dei singoli account utente. Gli utenti che hanno accesso al dominio di Active Directory possono usare i propri account AAD esistenti per connettersi alle applicazioni Web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio.
 
-Per un esempio pratico, creare un'applicazione Web (**File** > **Nuovo progetto** > **C#** > **Cloud** > **Applicazione Web ASP.NET**). Nella finestra di dialogo **Nuovo progetto ASP.NET** scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
+Per visualizzare questa azione, creare un nuovo progetto **Applicazione Web ASP.NET**. Nella finestra di dialogo **Nuovo progetto ASP.NET** scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
 
 ![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015_change_authentication.png)
 

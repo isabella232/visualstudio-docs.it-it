@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708329"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355604"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, proprietà del nodo Ambiente
 
@@ -26,7 +26,7 @@ Questo articolo descrive le pagine (o raccolte di proprietà) associate alla cat
 
 `DTE.Properties("Environment", "General")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|Determina se viene visualizzata o meno la barra di stato.|
 |WindowMenuContainsNItems|Get/Set (Short)|Determina la modalità di contenimento delle finestre di documento nella parte inferiore del menu Finestre.|
@@ -42,7 +42,7 @@ Questo articolo descrive le pagine (o raccolte di proprietà) associate alla cat
 
 `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|Consente l'esecuzione delle macro.|
 |AddinsEnabled|Get/Set (Boolean)|Consente il caricamento dei componenti aggiuntivi.|
@@ -120,7 +120,7 @@ Questo articolo descrive le pagine (o raccolte di proprietà) associate alla cat
 |Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Determina se l'IDE salva tutto prima dell'anteprima o dell'esecuzione di un progetto compilato.|
-|ProjectsLocation|Get/Set (String)|Determina la directory predefinita in cui i nuovi progetti vengono salvati dalla finestra di dialogo **Aggiungi progetto**.|
+|ProjectsLocation|Get/Set (String)|Determina la directory predefinita in cui vengono salvati i nuovi progetti.|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|Determina se all'avvio di una compilazione viene visualizzata la finestra **Output**.|
 |ShowTaskListAfterBuild|Get/Set (Boolean)|Determina se, a seguito di un'operazione di compilazione non riuscita, viene visualizzato l'**Elenco attività** dopo la compilazione.|
 |TrackFileSelectionInExplorer|Get/Set (Boolean)|Determina se in **Esplora soluzioni** viene tenuta traccia dell'elemento corrente.|
