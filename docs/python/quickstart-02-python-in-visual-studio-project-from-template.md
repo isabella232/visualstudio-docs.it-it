@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1a26f3bc5e47f0aac7385bb9b1197da0a72396d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927023"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355409"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida introduttiva: Creare un progetto Python da un modello in Visual Studio
 
-Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-python-support-in-visual-studio.md), è facile creare un nuovo progetto Python con una varietà di modelli. In questa guida introduttiva viene creata un'app Flask semplice tramite un modello. Il progetto risultante è simile al progetto creato manualmente in [Guida introduttiva: creare un'app Web con Flask](../ide/quickstart-python.md).
+Dopo aver [installato il supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md), è facile creare un nuovo progetto Python con una varietà di modelli. In questa guida introduttiva viene creata un'app Flask semplice tramite un modello. Il progetto risultante è simile al progetto creato manualmente in [Guida introduttiva: creare un'app Web con Flask](../ide/quickstart-python.md).
 
-1. Avviare Visual Studio 2017.
+1. Avviare Visual Studio.
 
 1. Nella barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto** e quindi nella finestra di dialogo **Nuovo progetto** cercare "Flask vuoto", selezionare il modello **Progetto Web Flask vuoto** nell'elenco al centro, assegnare un nome al progetto e scegliere **OK**:
 

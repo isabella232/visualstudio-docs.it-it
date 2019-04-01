@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b3a94ab9a44776b0c6716b99f594ec0fd840938
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943415"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415564"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedura: Risolvere i problemi relativi ai modelli
 
@@ -20,7 +20,17 @@ Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili div
 
 ## <a name="validate-the-vstemplate-file"></a>Convalidare il file con estensione vstemplate
 
+::: moniker range="vs-2017"
+
 Se il file con estensione *vstemplate* di un modello non rispetta lo schema di modello di Visual Studio, è possibile che il modello non venga visualizzato nella finestra di dialogo **Nuovo progetto**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se il file con estensione *vstemplate* di un modello non rispetta lo schema di modello di Visual Studio, è possibile che il modello non venga visualizzato nella finestra di dialogo dove si creano i progetti.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>Per convalidare il file con estensione vstemplate
 

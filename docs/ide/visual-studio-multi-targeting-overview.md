@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949642"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355273"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Panoramica del multitargeting di Visual Studio
 
@@ -35,13 +35,13 @@ La definizione della destinazione del framework include le seguenti funzionalit�
 
 - Quando si apre un progetto destinato a una versione precedente di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], con Visual Studio è possibile aggiornare automaticamente la versione di destinazione o lasciarla invariata.
 
-- Quando si crea un progetto, è possibile specificare la versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] che si vuole usare come destinazione.
+- Quando si crea un progetto, è possibile specificare la versione di .NET Framework che si vuole usare come destinazione.
 
-- È possibile modificare la versione del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a cui è destinato un progetto esistente.
+- È possibile modificare la versione di .NET Framework a cui è destinato un progetto esistente.
 
-- È possibile definire la destinazione di una versione diversa del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in ognuno dei numerosi progetti nella stessa soluzione.
+- È possibile definire la destinazione di una versione diversa di .NET Framework in ognuno dei diversi progetti di una stessa soluzione.
 
-- Quando si modifica la versione del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a cui è destinato un progetto, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] effettua tutte le modifiche necessarie ai riferimenti e ai file di configurazione.
+- Quando si modifica la versione di .NET Framework a cui è destinato un progetto, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] effettua tutte le modifiche necessarie ai riferimenti e ai file di configurazione.
 
 Quando si lavora su un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio modifica in modo dinamico l'ambiente di sviluppo, come indicato di seguito:
 
@@ -62,17 +62,27 @@ Quando si lavora su un progetto destinato a una versione precedente del [!INCLUD
 
 ## <a name="select-a-target-framework-version"></a>Selezione una versione di .NET Framework di destinazione
 
-Quando si crea un progetto, selezionare la versione di .NET Framework di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco di framework disponibili include le versioni di framework installate applicabili al tipo di modello selezionato. Per i tipi di modello che non richiedono .NET Framework, ad esempio i modelli di .NET Core, l'elenco a discesa **Framework** è nascosto.
+Quando si crea un progetto, selezionare la versione di .NET Framework di destinazione dopo la selezione di un modello di progetto. L'elenco di framework disponibili include le versioni di framework installate applicabili al tipo di modello selezionato. Per i tipi di modello che non richiedono .NET Framework, ad esempio i modelli di .NET Core, l'elenco a discesa **Framework** è nascosto.
 
-![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Elenco a discesa dei framework in VS 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Elenco a discesa dei framework in VS 2019](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+In un progetto esistente è possibile modificare la versione di .NET Framework di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Risolvere i riferimenti ad assembly di sistema e utente
 
 Per impostare come destinazione una versione di .NET Framework, è necessario prima installare i riferimenti dell'assembly appropriato. È possibile scaricare Developer Pack per versioni diverse di .NET Framework dalla pagina [.NET downloads](https://www.microsoft.com/net/download/windows) (Download di .NET).
 
-La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in modo che non possano essere aggiunti a un progetto inavvertitamente. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] del progetto su una in cui sia incluso il riferimento.  Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di .NET Framework, in modo che non possano essere aggiunti a un progetto inavvertitamente. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.  Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 

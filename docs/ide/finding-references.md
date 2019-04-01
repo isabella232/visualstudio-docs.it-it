@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335272"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324747"
 ---
 # <a name="find-references-in-your-code"></a>Cercare riferimenti nel codice
 
 Per trovare i riferimenti a particolari elementi di codice presenti nella codebase è possibile usare il comando **Trova tutti i riferimenti**. Il comando **Trova tutti i riferimenti** è disponibile nel menu di scelta rapida (clic con il pulsante destro del mouse) dell'elemento per il quale si vuole trovare i riferimenti. In alternativa, se si preferisce usare la tastiera, premere **MAIUSC+F12**.
 
-I risultati vengono visualizzati in una finestra degli strumenti denominata **<element>riferimenti**, in cui *elemento* è il nome dell'elemento cercato. Una barra degli strumenti nella finestra dei **riferimenti** consente di:
+I risultati vengono visualizzati in una finestra degli strumenti denominata **\<elemento> riferimenti**, dove *elemento* è il nome dell'elemento cercato. Una barra degli strumenti nella finestra dei **riferimenti** consente di:
 - Modificare l'ambito della ricerca in un elenco a discesa. È possibile scegliere di eseguire la ricerca solo nei documenti modificati o nell'intera soluzione.
 - Copiare l'elemento di riferimento selezionato scegliendo il pulsante **Copia**.
 - Scegliere i pulsanti per passare alla posizione precedente o successiva nell'elenco oppure premere **F8** e **MAIUSC+F8** per eseguire questa operazione.

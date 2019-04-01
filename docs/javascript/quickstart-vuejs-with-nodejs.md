@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a3bd2c65ccca172eca46eb5d935ef7735734a608
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069593"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355260"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Vue.js
 
@@ -56,15 +56,13 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. Aprire Visual Studio.
 
-1. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
-
 1. Creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Nella finestra di dialogo **Crea un nuovo progetto** digitare **javascript** o **typescript** nella casella di ricerca per filtrare i risultati, scegliere **Applicazione Web Vue.js di base.** e quindi scegliere **Avanti**. Scegliere **Crea**.
+    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Vue.js**, quindi scegliere **Applicazione Web Vue.js di base** (JavaScript o TypeScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Vue.js di base**, quindi scegliere **OK**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript** o **TypeScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Vue.js di base**, quindi scegliere **OK**.
     ::: moniker-end
     Se il modello di progetto **Applicazione Web Vue.js di base** non compare, è necessario installare prima il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 

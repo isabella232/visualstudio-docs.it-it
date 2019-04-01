@@ -1,5 +1,5 @@
 ---
-title: Converti (finestra di dialogo)
+title: Convertitori di progetto
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f720e842bb1f13aa726773af0dec499d32bfcc2d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927594"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416071"
 ---
-# <a name="convert-dialog-box"></a>Converti (finestra di dialogo)
+# <a name="convert-dialog-box"></a>Finestra di dialogo Converti
 
-La finestra di dialogo **Converti** consente di selezionare uno strumento di conversione per creare un progetto da un progetto precedente, ad esempio un progetto [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] da un progetto di Visual Basic 6. È anche possibile usare il [Convertitore progetto di Visual Studio](https://github.com/ssvaidya/VSProjectConverter) per aggiornare i progetti creati in versioni precedenti di Visual Studio.
-
-## <a name="open-the-convert-dialog-box"></a>Aprire la finestra di dialogo Converti
-
-1.  Sulla barra dei menu scegliere **File**, **Apri**, **Converti**.
-
-     Verrà visualizzato l'elenco degli strumenti di conversione del codice attualmente disponibili.
-
-2.  Selezionare lo strumento appropriato per l'applicazione.
+La finestra di dialogo **Converti** veniva usata in versioni precedenti di Visual Studio e ora è deprecata.
 
 ## <a name="see-also"></a>Vedere anche
 

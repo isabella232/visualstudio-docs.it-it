@@ -9,18 +9,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4feed7e3ebdab56adc2c607ed0075c1a7fc3c620
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7cd5bd20d5840b560d5954d62e5d158eb1f6c6e6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937981"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415915"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: Creare modelli di progetto
 
 Questo argomento spiega come creare un modello usando l'**Esportazione guidata modelli**, che consente di creare un pacchetto del modello in un file con estensione *zip*.
 
-## <a name="to-create-a-user-project-template-by-using-the-export-template-wizard"></a>Per creare un modello di progetto utente usando l'Esportazione guidata modelli
+## <a name="use-the-export-template-wizard"></a>Usare l'Esportazione guidata modelli
 
 1. Creare un progetto.
 
@@ -35,16 +35,29 @@ Questo argomento spiega come creare un modello usando l'**Esportazione guidata m
 
 4. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare il progetto che si vuole esportare in un modello e quindi scegliere **Avanti**.
 
+::: moniker range="vs-2017"
+
 5. Nella pagina **Selezionare le opzioni del modello** immettere il nome e una descrizione, un'icona e un'immagine di anteprima facoltative per il modello. Questi elementi verranno visualizzati nella finestra di dialogo **Nuovo progetto**. Scegliere **Fine**.
 
    Il progetto viene esportato in un file con estensione *zip*, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in Visual Studio.
 
->[!NOTE]
-> Per trovare il modello nella finestra di dialogo **Nuovo progetto**, espandere **Installato** e quindi espandere la categoria che corrisponde all'elemento `ProjectType` nel file con estensione *vstemplate*. Ad esempio, un file con estensione *vstemplate* che contiene `<ProjectType>CSharp</ProjectType>` appare in **Installato** > **Visual C#** per impostazione predefinita. È possibile organizzare il modello in una sottodirectory del tipo di progetto semplicemente creando una cartella in quella directory e inserendo il file con estensione *zip* del modello nella cartella. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Per trovare il modello nella finestra di dialogo **Nuovo progetto**, espandere **Installato** e quindi espandere la categoria che corrisponde all'elemento `ProjectType` nel file con estensione *vstemplate*. Ad esempio, un file con estensione *vstemplate* che contiene `<ProjectType>CSharp</ProjectType>` appare in **Installato** > **Visual C#** per impostazione predefinita. È possibile organizzare il modello in una sottodirectory del tipo di progetto semplicemente creando una cartella in quella directory e inserendo il file con estensione *zip* del modello nella cartella. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Nella pagina **Selezionare le opzioni del modello** immettere il nome e una descrizione, un'icona e un'immagine di anteprima facoltative per il modello. Questi elementi verranno visualizzati nella finestra di dialogo in cui si crea un nuovo progetto. Scegliere **Fine**.
+
+   Il progetto viene esportato in un file con estensione *zip*, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in Visual Studio.
+
+Per trovare il modello nella finestra di dialogo in cui si crea un nuovo progetto, cercarlo per nome o scorrere l'elenco. Filtrare i modelli utente in base al linguaggio o al tipo di progetto al momento non è possibile.
+
+::: moniker-end
 
 ## <a name="other-ways-to-create-project-templates"></a>Altri modi per creare modelli di progetti
 
-È possibile creare manualmente modelli di progetti raccogliendo i file che costituiscono il progetto in una cartella e quindi creando un file XML con estensione *vstemplate* con i metadati appropriati. Per altre informazioni, vedere [Procedura: Creare manualmente modelli Web](../ide/how-to-manually-create-web-templates.md).
+È possibile creare manualmente modelli di progetti raccogliendo i file che costituiscono il progetto in una cartella e creando un file XML con estensione *vstemplate* con i metadati appropriati. Per altre informazioni, vedere [Procedura: Creare manualmente modelli Web](../ide/how-to-manually-create-web-templates.md).
 
 Se Visual Studio SDK è installato, è possibile eseguire il wrapping del modello finito in un file VSIX per la distribuzione con il modello **Progetto VSIX**. Per altre informazioni, vedere [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 

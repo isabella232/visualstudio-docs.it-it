@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926255"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415901"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
@@ -35,34 +35,24 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 1.  Aprire una soluzione che contenga il progetto di test di carico e prestazioni Web con il test delle prestazioni Web per il quale si vuole creare un plug-in di registrazione.
 
-2.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi **Nuovo progetto**.
+2.  Aggiungere alla soluzione un nuovo progetto **Libreria di classi**.
 
-     Viene visualizzata la finestra di dialogo **Aggiungi nuovo progetto**.
-
-3.  In **Modelli installati** selezionare **Visual C#**.
-
-4.  Nell'elenco dei modelli selezionare **Libreria di classi**.
-
-5.  Nella casella di testo **Nome** digitare un nome per il plug-in di registrazione.
-
-     La libreria di classi viene aggiunta a **Esplora soluzioni** e la nuova classe viene aperta nell'**Editor di codice**.
-
-6.  In **Esplora soluzioni**, nella nuova cartella di progetto libreria di classi, fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e selezionare **Aggiungi riferimento**.
+3.  In **Esplora soluzioni**, nella nuova cartella di progetto libreria di classi, fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e selezionare **Aggiungi riferimento**.
 
     > [!TIP]
     > Un esempio di una nuova cartella di progetto libreria di classi è **RecorderPlugins**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
-7.  Selezionare la scheda **.NET**.
+4.  Selezionare la scheda **.NET**.
 
-8.  Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**, quindi scegliere **OK**.
+5.  Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**, quindi scegliere **OK**.
 
      L'elemento **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto nella cartella **Riferimenti** in **Esplora soluzioni**.
 
-9. Scrivere il codice per il plug-in di registrazione. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Scrivere il codice per il plug-in di registrazione. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
+7. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
     > [!NOTE]
     > Se si modifica il test delle prestazioni Web, sarà anche necessario impostare la proprietà <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> su true: `e.RecordedWebTestModified = true;`
 
-11. Aggiungere codice in base a ciò che si vuole che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È anche possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
+8. Aggiungere codice in base a ciò che si vuole che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È anche possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
 
-12. Dal menu **Compila** scegliere **Compila\<nome progetto libreria di classi>**.
+9. Dal menu **Compila** scegliere **Compila\<nome progetto libreria di classi>**.
 
-13. A questo punto è necessario distribuire il plug-in di registrazione per effettuarne la registrazione in Visual Studio.
+A questo punto, distribuire il plug-in di registrazione per effettuarne la registrazione in Visual Studio.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Distribuire il plug-in di registrazione
 
@@ -96,7 +86,7 @@ Dopo avere compilato il plug-in di registrazione, posizionare il file DLL risult
 > [!WARNING]
 > Dopo avere copiato il plug-in di registrazione in uno dei due percorsi, è necessario riavviare Visual Studio per completare la registrazione del plug-in.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Per eseguire il plug-in di registrazione
+### <a name="execute-the-recorder-plug-in"></a>Eseguire il plug-in di registrazione
 
 1.  Creare un nuovo test Web.
 
@@ -123,9 +113,7 @@ In questo esempio viene illustrato come creare un plug-in di registrazione del t
 > [!NOTE]
 > Un listato completo del codice di esempio è riportato alla fine di questo argomento.
 
-**Revisione del codice di esempio**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Scorrere il risultato per trovare la prima pagina con ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Scorrere il risultato per trovare la prima pagina con ReportSession
 
 In questa parte dell'esempio di codice si scorre ogni oggetto registrato e si cerca ReportSession nel corpo della risposta.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Aggiungere una regola di estrazione
+### <a name="add-an-extraction-rule"></a>Aggiungere una regola di estrazione
 
 Una volta che la risposta è stata trovata, è necessario aggiungere una regola di estrazione. In questa parte dell'esempio di codice viene creata la regola di estrazione usando la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference>, quindi, nel test delle prestazioni Web, viene trovata la corretta richiesta cui aggiungere la regola di estrazione. Ciascun oggetto risultato dispone di una nuova proprietà aggiunta denominata DeclarativeWebTestItemId, che è quella usata nel codice per ottenere la corretta richiesta dal test delle prestazioni Web.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Sostituire i parametri della stringa di query
+### <a name="replace-query-string-parameters"></a>Sostituire i parametri della stringa di query
 
 Vengono ora trovati tutti i parametri della stringa di query che presentano il nome ReportSession e il relativo valore viene cambiato in {{SessionId}} come mostrato in questa parte dell'esempio di codice:
 

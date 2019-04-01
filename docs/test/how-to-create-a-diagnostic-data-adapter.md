@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914019"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416327"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
@@ -32,7 +32,7 @@ Eventi vengono generati quando si eseguono i test in modo che l'adattatore dati 
 
 Di seguito è riportato un elenco parziale di eventi chiave che è possibile utilizzare quando si crea l'adattatore dati di diagnostica. Per un elenco completo di eventi dell'adattatore dati di diagnostica, vedere la classe astratta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
-|event|Descrizione|
+|event|Description|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Inizio dell'esecuzione di test|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Fine dell'esecuzione di test|
@@ -48,21 +48,9 @@ Utilizzare la procedura seguente per creare un adattatore dati di diagnostica ch
 
 Per un progetto di adattatore dati di diagnostica di esempio completo, incluso un editor di configurazione personalizzato, vedere [Esempio di progetto per creare un adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Creare e installare un adattatore dati di diagnostica
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Creare e installare un adattatore dati di diagnostica
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Per creare e installare un adattatore dati di diagnostica
-
-1. Creare una nuova libreria di classi.
-
-   1.  Scegliere **Nuovo** dal menu **File**, quindi selezionare **Nuovo progetto**.
-
-   2.  Da **Tipi progetto**, selezionare il linguaggio da usare.
-
-   3.  Da **Modelli Visual Studio installati**, selezionare **Libreria di classi**.
-
-   4.  Digitare un nome per l'adattatore dati di diagnostica.
-
-   5.  Scegliere **OK**.
+1. Creare un nuovo progetto **Libreria di classi**.
 
 2. Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

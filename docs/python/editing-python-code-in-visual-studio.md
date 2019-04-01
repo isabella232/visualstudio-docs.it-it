@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155524"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355552"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -31,9 +31,9 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Fu
 
 IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 versione 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
 
-Per migliorare le prestazioni, IntelliSense in **Visual Studio 2017 versione 15.5** e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di **Esplora soluzioni**, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di **Esplora soluzioni**, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 versione 15.6** e versioni successive usano modi diversi per fornire i completamenti IntelliSense, non dipendenti dal database.
+Visual Studio 2017 versione 15.6 e versioni successive usano modi diversi per rendere disponibili i completamenti IntelliSense non dipendenti dal database.
 
 ### <a name="completions"></a>Completamenti
 

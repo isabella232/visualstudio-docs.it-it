@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946946"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416357"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
@@ -24,7 +24,7 @@ ms.locfileid: "55946946"
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Inoltre, è necessario aggiungere un riferimento alla DLL LoadTestPackage disponibile nella cartella *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+Inoltre, è necessario aggiungere un riferimento alla DLL LoadTestPackage disponibile nella cartella *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<versione>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
 Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**, è necessario creare un controllo utente e un componente aggiuntivo per Visual Studio. Nelle procedure seguenti viene illustrato come creare il componente aggiuntivo e il controllo utente nonché come implementare le classi necessarie per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**.
 
@@ -51,46 +51,38 @@ Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-    Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
-
-2. In **Modelli installati** espandere **Altri tipi di progetto** e selezionare **Extensibility**.
-
-3. Nell'elenco dei modelli selezionare **Componente aggiuntivo Visual Studio**.
-
-4. In **Nome** digitare un nome per il componente aggiuntivo. Ad esempio, **WebPerfTestResultsViewerAddin**.
-
-5. Scegliere **OK**.
+2. Creare un nuovo progetto di **componente aggiuntivo di Visual Studio**.
 
     Viene avviata la **Creazione guidata componente aggiuntivo** di Visual Studio.
 
-6. Scegliere **Avanti**.
+3. Scegliere **Avanti**.
 
-7. Nella pagina **Selezionare un linguaggio di programmazione** selezionare il linguaggio di programmazione che si vuole usare per la compilazione del componente aggiuntivo.
+4. Nella pagina **Selezionare un linguaggio di programmazione** selezionare il linguaggio di programmazione che si vuole usare per la compilazione del componente aggiuntivo.
 
    > [!NOTE]
    > In questo argomento viene utilizzato Visual C# per il codice di esempio.
 
-8. Nella pagina **Selezionare un host applicazioni** selezionare **Visual Studio**, quindi deselezionare **Visual Studio Macros**.
+5. Nella pagina **Selezionare un host applicazioni** selezionare **Visual Studio**, quindi deselezionare **Visual Studio Macros**.
 
-9. Scegliere **Avanti**.
+6. Scegliere **Avanti**.
 
-10. Digitare il nome e la descrizione del componente aggiuntivo nella pagina **Specificare un nome e una descrizione**.
+7. Digitare il nome e la descrizione del componente aggiuntivo nella pagina **Specificare un nome e una descrizione**.
 
      Dopo aver creato il componente aggiuntivo, il nome e la descrizione corrispondenti verranno visualizzati nell'elenco **Componenti aggiuntivi disponibili** nella finestra di dialogo **Gestione componenti aggiuntivi**. Aggiungere alla descrizione del componente aggiuntivo delle informazioni sufficientemente dettagliate che consentano agli utenti di apprenderne il comportamento, il funzionamento e così via.
 
-11. Scegliere **Avanti**.
+8. Scegliere **Avanti**.
 
-12. Nella pagina **Scegliere le opzioni del componente aggiuntivo** selezionare **Carica il componente aggiuntivo all'avvio dell'applicazione host**.
+9. Nella pagina **Scegliere le opzioni del componente aggiuntivo** selezionare **Carica il componente aggiuntivo all'avvio dell'applicazione host**.
 
-13. Deselezionare le caselle di controllo rimanenti.
+10. Deselezionare le caselle di controllo rimanenti.
 
-14. Nella pagina **Scelta della finestra 'Informazioni su'** è possibile specificare se si vuole che le informazioni sul componente aggiuntivo vengano visualizzate in una finestra di dialogo **Informazioni su**. Per visualizzare le informazioni, selezionare la casella di controllo **Sì, rendi disponibile la finestra 'Informazioni su' per il componente aggiuntivo**.
+11. Nella pagina **Scelta della finestra 'Informazioni su'** è possibile specificare se si vuole che le informazioni sul componente aggiuntivo vengano visualizzate in una finestra di dialogo **Informazioni su**. Per visualizzare le informazioni, selezionare la casella di controllo **Sì, rendi disponibile la finestra 'Informazioni su' per il componente aggiuntivo**.
 
      Tra le informazioni che è possibile aggiungere alla finestra **Informazioni su** di Visual Studio sono inclusi il numero di versione, i dettagli sul supporto, i dati della licenza e così via.
 
-15. Scegliere **Avanti**.
+12. Scegliere **Avanti**.
 
-16. Le opzioni selezionate vengono visualizzate nella pagina **Riepilogo** per consentirne la revisione. Se il risultato è soddisfacente, scegliere **Fine** per creare il componente aggiuntivo. Se si vuole apportare delle modifiche, scegliere il pulsante **Indietro**.
+13. Le opzioni selezionate vengono visualizzate nella pagina **Riepilogo** per consentirne la revisione. Se il risultato è soddisfacente, scegliere **Fine** per creare il componente aggiuntivo. Se si vuole apportare delle modifiche, scegliere il pulsante **Indietro**.
 
      Vengono creati la nuova soluzione e il progetto mentre il file *Connect.cs* per il nuovo componente aggiuntivo viene visualizzato nell'**editor di codice**.
 
@@ -119,24 +111,11 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+2. Creare un nuovo progetto **Libreria di controlli Windows Form**.
 
-2.  In **Modelli installati** espandere **Visual Basic** o **Visual C#** e selezionare **Windows**.
+3.  Dalla **casella degli strumenti** trascinare un oggetto <xref:System.Windows.Forms.DataGridView> sulla superficie di userControl1.
 
-    > [!NOTE]
-    > In questo argomento viene utilizzato Visual C# per il codice di esempio.
-
-3.  Nell'elenco dei modelli selezionare **Libreria di controlli Windows Form**.
-
-4.  In **Nome** digitare un nome per il componente aggiuntivo. Ad esempio, **WebPerfTestResultsViewerControl**.
-
-5.  Scegliere **OK**.
-
-     WebPerfTestResultsViewerControl del progetto della libreria di controlli Windows Form viene aggiunto in **Esplora soluzioni** e il file *UserControl1.cs* viene visualizzato nella modalità progettazione.
-
-6.  Dalla **casella degli strumenti** trascinare un oggetto <xref:System.Windows.Forms.DataGridView> sulla superficie di userControl1.
-
-7.  Fare clic sul glifo del tag azioni (![Glifo smart tag](../test/media/vs_winformsmttagglyph.gif)) nell'angolo superiore destro di <xref:System.Windows.Forms.DataGridView> e attenersi alla procedura seguente:
+4. Fare clic sul glifo del tag azioni (![Glifo smart tag](../test/media/vs_winformsmttagglyph.gif)) nell'angolo superiore destro di <xref:System.Windows.Forms.DataGridView> e attenersi alla procedura seguente:
 
     1.  Scegliere **Ancora nel contenitore padre**.
 
@@ -154,13 +133,13 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
     7.  Scegliere **Chiudi**.
 
-8.  Nella finestra **Proprietà** impostare la proprietà **(Nome)** di <xref:System.Windows.Forms.DataGridView> su **resultControlDataGridView**.
+5.  Nella finestra **Proprietà** impostare la proprietà **(Nome)** di <xref:System.Windows.Forms.DataGridView> su **resultControlDataGridView**.
 
-9. Fare clic con il pulsante destro del mouse sull'area di progettazione e selezionare **Visualizza codice**.
+6. Fare clic con il pulsante destro del mouse sull'area di progettazione e selezionare **Visualizza codice**.
 
      Il file *UserControl1.cs* viene visualizzato nell'**editor di codice**.
 
-10. Modificare il nome della classe istanziata <xref:System.Windows.Forms.UserControl> da UserContro1 a resultControl:
+7. Modificare il nome della classe istanziata <xref:System.Windows.Forms.UserControl> da UserContro1 a resultControl:
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
      Si aggiungerà ulteriore codice aggiuntivo al file *Connect.cs* in un secondo momento.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Aggiungere codice a WebPerfTestResultsViewerAddin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Per aggiungere codice al componente aggiuntivo di Visual Studio per estendere il Visualizzatore risultati test Web
 
 1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto WebPerfTestResultsViewerAddin e selezionare **Aggiungi riferimento**.
 
@@ -276,8 +253,6 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
      Ora che il codice per il componente aggiuntivo per Visual Studio è stato completato, è necessario aggiungere il metodo Update all'oggetto resultControl nel progetto WebPerfTestResultsViewerControl.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Aggiungere codice a WebPerfTestResultsViewerControl
-
-### <a name="to-add-code-to-the-user-control"></a>Per aggiungere codice al controllo utente
 
 1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 

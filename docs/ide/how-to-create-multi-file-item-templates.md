@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970517"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416344"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -28,11 +28,11 @@ Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni ca
 
 Per i modelli di elementi a più file è necessario specificare i parametri per assicurarsi che vengano usate le estensioni di file corrette quando si crea l'elemento. Se si crea un modello di elemento a più file usando l'**Esportazione guidata modelli**, questi parametri vengono generati automaticamente e non è richiesta alcuna ulteriore modifica.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Per creare un modello di elemento a più file usando l'Esportazione guidata modelli
+## <a name="use-the-export-template-wizard"></a>Usare l'Esportazione guidata modelli
 
 È possibile creare un modello di elemento a più file con la stessa procedura usata per un modello di elemento a file singolo. Vedere [Procedura: Creare modelli di elemento](../ide/how-to-create-item-templates.md). Nella pagina **Selezionare l'elemento da esportare** della procedura guidata selezionare il file con file dipendenti, ad esempio un file modulo di Windows Form. La procedura guidata include automaticamente tutti i file dipendenti, ad esempio i file della finestra di progettazione e di risorse, nel modello.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Per creare manualmente un modello di elemento a più file
+## <a name="manually-create-a-multi-file-item-template"></a>Creare manualmente un modello di elemento a più file
 
 1. Creare il modello di elemento come se si creasse manualmente un modello di elemento a file singolo, ma includere ogni file che costituisce l'elemento a più file.
 

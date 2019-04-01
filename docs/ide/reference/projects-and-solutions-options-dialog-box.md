@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867813"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355474"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Pagina Progetti e soluzioni, finestra di dialogo Opzioni
 
@@ -91,11 +91,11 @@ Specifica il percorso predefinito in cui Visual Studio crea nuove cartelle di pr
 
 ### <a name="user-project-templates-location"></a>Percorso dei modelli di progetto utente
 
-Specifica il percorso predefinito usato dalla finestra di dialogo **Nuovo progetto** per creare l'elenco **Modelli personali**. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Specifica il percorso predefinito usato per cercare modelli di progetto creati dall'utente. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Percorso dei modelli di elemento utente
 
-Specifica il percorso predefinito usato dalla finestra di dialogo **Aggiungi nuovo elemento** per creare l'elenco **Modelli personali**. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Specifica il percorso predefinito usato per cercare modelli di elemento creati dall'utente. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vedere anche
 

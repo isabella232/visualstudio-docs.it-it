@@ -20,12 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982870"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322717"
 ---
 # <a name="remove-visual-studio"></a>Rimuovere Visual Studio
 

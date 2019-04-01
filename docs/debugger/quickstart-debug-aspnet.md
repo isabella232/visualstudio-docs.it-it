@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153015"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354843"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug di ASP.NET con il debugger di Visual Studio
 
@@ -25,13 +25,13 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-1. In Visual Studio scegliere **File > Nuovo > Progetto**.
+1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Verrà aperta la finestra di dialogo **Crea un nuovo progetto**. Digitare **asp.net** nella casella di ricerca per filtrare i risultati, scegliere **Applicazione Web ASP.NET Core** e fare clic su **Avanti**. Quindi, digitare un nome come **MyDbgApp** e scegliere **Crea**.
+    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **Modelli**, quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Verrà aperta la finestra di dialogo **Nuovo progetto**. In **Visual C#** scegliere **Web**, quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
 
     Nella finestra di dialogo visualizzata scegliere **Applicazione Web** nel riquadro centrale e quindi fare clic su **OK**.
 

@@ -9,28 +9,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970881"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416253"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
-I modelli multiprogetto fungono da contenitori per due o più progetti. Quando si crea un progetto basato su un modello per più progetti nella finestra di dialogo **Nuovo progetto**, ogni progetto del modello viene aggiunto alla soluzione.
+I modelli multiprogetto fungono da contenitori per due o più progetti. Quando si crea un progetto basato su un modello per più progetti, ogni progetto del modello viene aggiunto alla soluzione.
 
 Un modello per più progetti contiene due o più modelli di progetto e un modello radice di tipo **ProjectGroup**.
 
 I modelli per più progetti funzionano in modo diverso rispetto ai modelli per progetto singolo. Presentano le caratteristiche specifiche seguenti:
 
-- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti nella finestra di dialogo **Nuovo progetto**. Usare invece l'attributo **ProjectName** nell'elemento **ProjectTemplateLink** del file con estensione *vstemplate* per specificare il nome di ogni progetto.
+- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti se il modello viene usato per creare un nuovo progetto. Usare invece l'attributo **ProjectName** nell'elemento **ProjectTemplateLink** del file con estensione *vstemplate* per specificare il nome di ogni progetto.
 
 - I modelli per più progetti possono contenere progetti per linguaggi diversi, ma l'intero modello può essere inserito in una sola categoria. Specificare la categoria del modello nell'elemento **ProjectType** del file con estensione *vstemplate*.
 
 Un modello per più progetti deve includere gli elementi seguenti, compressi in un file con estensione *zip*:
 
-- Un file radice con estensione *vstemplate* per l'intero modello per più progetti. Il file radice con estensione *vstemplate* contiene metadati visualizzati dalla finestra di dialogo **Nuovo progetto** e specifica la posizione dei file con estensione *vstemplate* dei progetti nel modello. Questo file deve trovarsi nella radice del file con estensione *zip*.
+- Un file radice con estensione *vstemplate* per l'intero modello per più progetti. Questo file radice con estensione *vstemplate* contiene metadati che vengono visualizzati nella finestra di dialogo in cui si crea un nuovo progetto. Specifica inoltre dove trovare i file con estensione *vstemplate* per i progetti nel modello. Questo file deve trovarsi nella radice del file con estensione *zip*.
 
 - Due o più cartelle che contengono i file necessari per un modello di progetto completo. Le cartelle includono tutti i file di codice per il progetto e un file con estensione *vstemplate* per il progetto.
 
@@ -72,37 +72,37 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 
 1. Creare una soluzione e aggiungere due o più progetti.
 
-1. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
+2. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
 
    > [!TIP]
    > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio `$ext_safeprojectname$`.
 
-1. Nel menu **Progetto** scegliere**Esporta modello**.
+3. Nel menu **Progetto** scegliere**Esporta modello**.
 
    Viene aperta l'**Esportazione guidata modelli**.
 
-1. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare uno dei progetti che si vuole esportare in un modello e quindi scegliere **Avanti**. È possibile ripetere questi passaggi per ogni progetto della soluzione.
+4. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare uno dei progetti che si vuole esportare in un modello e quindi scegliere **Avanti**. È possibile ripetere questi passaggi per ogni progetto della soluzione.
 
-1. Nella pagina **Selezionare le opzioni del modello** immettere il nome e una descrizione, un'icona e un'immagine di anteprima facoltative per il modello. Scegliere **Fine**.
+5. Nella pagina **Selezionare le opzioni del modello** immettere il nome e una descrizione, un'icona e un'immagine di anteprima facoltative per il modello. Scegliere **Fine**.
 
    Il progetto viene esportato in un file con estensione *zip* e inserito nel percorso di output specificato.
 
    > [!NOTE]
    > Ogni progetto deve essere esportato in un modello separatamente, quindi ripetere i passaggi precedenti per ogni progetto nella soluzione.
 
-1. Creare una directory per il modello con una sottodirectory per ogni progetto.
+6. Creare una directory per il modello con una sottodirectory per ogni progetto.
 
-1. Estrarre il contenuto del file con estensione *zip* di ogni progetto nella sottodirectory corrispondente appena creata.
+7. Estrarre il contenuto del file con estensione *zip* di ogni progetto nella sottodirectory corrispondente appena creata.
 
-1. Nella directory di base creare un file XML con estensione *vstemplate*. Questo file contiene i metadati del modello per più progetti. Vedere l'esempio che segue per la struttura del file. Assicurarsi di specificare il percorso relativo di ogni file con estensione *vstemplate*.
+8. Nella directory di base creare un file XML con estensione *vstemplate*. Questo file contiene i metadati del modello per più progetti. Vedere l'esempio che segue per la struttura del file. Assicurarsi di specificare il percorso relativo di ogni file con estensione *vstemplate*.
 
-1. Selezionare tutti i file nella directory base, quindi facendo clic con il pulsante destro del mouse o dal menu di scelta rapida scegliere **Invia a** > **Cartella compressa**.
+9. Selezionare tutti i file nella directory base, quindi facendo clic con il pulsante destro del mouse o dal menu di scelta rapida scegliere **Invia a** > **Cartella compressa**.
 
    I file e le cartelle vengono compressi in un file con estensione *zip*.
 
-1. Copiare il file con estensione *zip* nella directory del modello di progetto utente. Per impostazione predefinita la directory è *%USERPROFILE%\Documents\Visual Studio \<versione\>\Templates\ProjectTemplates*.
+10. Copiare il file con estensione *zip* nella directory del modello di progetto utente. Per impostazione predefinita la directory è *%USERPROFILE%\Documents\Visual Studio \<versione\>\Templates\ProjectTemplates*.
 
-1. In Visual Studio aprire la finestra di dialogo **Nuovo progetto** e verificare che sia visualizzato il modello.
+11. In Visual Studio scegliere **File** > **Nuovo** > **Progetto** e verificare che sia visualizzato il modello.
 
 ## <a name="two-project-example"></a>Esempio con due progetti
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069970"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415486"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -22,13 +22,13 @@ In questa Guida introduttiva di 10 minuti si apprenderà come creare ed eseguire
 
 ## <a name="software-requirements"></a>Requisiti software
 
-I progetti di test di carico e prestazioni Web sono disponibili solo nell'edizione Enterprise di Visual Studio.
+I progetti di test di carico e prestazioni Web sono disponibili solo nell'**edizione Enterprise** di Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Installare il componente di test di carico
 
 Se il componente degli strumenti per test di carico e delle prestazioni Web non è già installato, è necessario installarlo tramite il programma di installazione di Visual Studio.
 
-1. Aprire **Programma di installazione di Visual Studio** dal menu **Start** di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo **Nuovo progetto** oppure scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu.
+1. Aprire **Programma di installazione di Visual Studio** dal menu **Start** di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo Nuovo progetto oppure scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu.
 
 1. In **Programma di installazione di Visual Studio** scegliere la scheda **Singoli componenti** e scorrere verso il basso fino alla sezione **Debug e test**. Selezionare **Strumenti per test di carico e delle prestazioni Web**.
 
@@ -64,7 +64,7 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-3. Nella finestra di dialogo **Crea un nuovo progetto** digitare **test web** nella casella di ricerca e quindi selezionare il modello **Progetto di test di carico e prestazioni Web \[Deprecato]** per C#. Scegliere **Avanti**.
+3. Nella pagina **Crea un nuovo progetto** digitare **test web** nella casella di ricerca e quindi selezionare il modello **Progetto di test di carico e prestazioni Web \[Deprecato]** per C#. Scegliere **Avanti**.
 
 4. Immettere un nome per il progetto se non si vuole usare il nome predefinito e quindi scegliere **Crea**.
 

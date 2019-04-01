@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949434"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416136"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
@@ -23,11 +23,23 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
 ## <a name="to-create-a-unit-test-project"></a>Per creare un progetto di unit test
 
-1. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**. Oppure premere **CTRL**+**MAIUSC**+**N**.
+1. Nel menu **File** scegliere **Nuovo** > **Progetto** o premere **CTRL**+**MAIUSC**+**N**.
+
+::: moniker range="vs-2017"
 
 2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
 
 3. Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Assegnare il nome al progetto e scegliere **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Nella casella di ricerca nella pagina **Crea un nuovo progetto** digitare **unit test**. Selezionare il modello di progetto **Progetto unit test (.NET Framework)** e quindi fare clic su **Avanti**.
+
+3. Nella pagina **Configura il nuovo progetto** immettere un nome per il progetto e quindi fare clic su **Crea**.
+
+::: moniker-end
 
 4. Nel progetto unit test, aggiungere un riferimento al codice sottoposto a test. Per aggiungere un riferimento a un progetto nella stessa soluzione:
 

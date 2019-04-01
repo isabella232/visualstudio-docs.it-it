@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Distribuire frammenti di codice'
-ms.date: 11/04/2016
+title: Distribuire frammenti di codice come estensione
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323053"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355422"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
 
-È sufficiente distribuire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con **Gestione frammenti di codice**. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio. Gli utenti di Visual Studio possono quindi installare l'estensione.
+È sufficiente distribuire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con **Gestione frammenti di codice**. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio. Gli utenti di Visual Studio possono quindi installare l'estensione per ottenere i frammenti di codice.
 
-Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Individuare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Prerequisiti
+
+Installare il carico di lavoro **Sviluppo di estensioni di Visual Studio** per ottenere l'accesso ai modelli del **progetto VSIX**.
+
+![Carico di lavoro Sviluppo di estensioni di Visual Studio](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Configurazione dell'estensione
 
-In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo del file *SNIPPET* è disponibile, quindi non è necessario tornare indietro e crearlo.
+In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Questo articolo specifica il frammento di codice XML, quindi non è necessario tornare indietro e creare un frammento di codice.
 
-1. Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File** > **Nuovo** > **Progetto** > **Visual C# (o Visual Basic)** > **Extensibility**).
+1. Creare un nuovo progetto dal modello di **progetto VSIX vuoto** e assegnare al progetto il nome **TestSnippet**.
 
 2. Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo *VBCodeSnippet.snippet*. Sostituire il contenuto con il codice XML riportato di seguito:
 
@@ -111,7 +115,9 @@ In questa procedura si userà lo stesso frammento di codice Hello World creato i
 
 4. Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.
 
-5. *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HelloWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**. Verrà visualizzato il seguente codice aggiunto al file:
+5. *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HelloWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**.
+
+   La riga seguente viene aggiunta al file di codice:
 
     ```vb
     Console.WriteLine("Hello, World!")

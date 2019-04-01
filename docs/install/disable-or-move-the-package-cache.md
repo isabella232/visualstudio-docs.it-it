@@ -16,17 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8472394c06d3388b480abdaf262610811a7a72f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970257"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414862"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Disabilitare o spostare la cache dei pacchetti
 
 La cache dei pacchetti fornisce un'origine di pacchetti installati nel caso in cui sia necessario ripristinare Visual Studio o altri prodotti correlati e non si disponga di una connessione a Internet. Con alcune unità o configurazioni di sistema, tuttavia, è possibile che non si voglia tenere nel sistema tutti questi pacchetti.
-Il programma di installazione li scaricherà solo se necessario e, quindi, per risparmiare o recuperare spazio su disco, è possibile disabilitare o spostare la cache dei pacchetti.
+Il programma di installazione li scarica solo se necessario e quindi, per risparmiare o recuperare spazio su disco, è possibile disabilitare o spostare la cache dei pacchetti.
 
 ## <a name="disable-the-package-cache"></a>Disabilitare la cache dei pacchetti
 
@@ -38,7 +40,7 @@ Prima di installare, modificare o ripristinare Visual Studio o altri prodotti co
 
 Qualsiasi operazione eseguita su un prodotto rimuoverà tutti i pacchetti esistenti per il prodotto ed eviterà di dover salvare i pacchetti dopo averli installati. Se si modifica o si ripristina Visual Studio e i pacchetti sono necessari, verranno automaticamente scaricati e rimossi dopo l'installazione.
 
-Se si vuole abilitare nuovamente la cache, passare invece `--cache`. Verranno memorizzati nella cache solo i pacchetti necessari; pertanto, se devono essere ripristinati tutti i pacchetti, prima di disconnettere Visual Studio dalla rete, è necessario ripristinarlo.
+Se si vuole abilitare nuovamente la cache, passare invece `--cache`. Verranno memorizzati nella cache solo i pacchetti necessari. Pertanto, se devono essere ripristinati tutti i pacchetti, prima di disconnettere Visual Studio dalla rete è necessario ripristinarlo.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
@@ -48,9 +50,9 @@ Se si vuole abilitare nuovamente la cache, passare invece `--cache`. Verranno me
 
 ## <a name="move-the-package-cache"></a>Spostare la cache dei pacchetti
 
-Una configurazione di sistema comune prevede Windows installato in un'unità SSD con un disco rigido più grande (o più dischi rigidi) riservato per le esigenze di sviluppo, ad esempio per codice sorgente, file binari del programma e altro ancora. Se invece si preferisce lavorare offline, è possibile spostare la cache dei pacchetti.
+Una configurazione di sistema comune prevede Windows installato in un'unità SSD con un disco rigido più grande (o più dischi rigidi) riservato per le esigenze di sviluppo, ad esempio per codice sorgente, file binari del programma e altro ancora. Se si preferisce lavorare offline è invece possibile spostare la cache dei pacchetti.
 
-Attualmente, è possibile eseguire questa operazione solo se si impostano i [criteri del Registro di sistema](set-defaults-for-enterprise-deployments.md) `CachePath` prima di installare, modificare o ripristinare Visual Studio.
+Attualmente è possibile eseguire questa operazione solo se si impostano i [criteri del Registro di sistema](set-defaults-for-enterprise-deployments.md) `CachePath` prima di installare, modificare o ripristinare Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

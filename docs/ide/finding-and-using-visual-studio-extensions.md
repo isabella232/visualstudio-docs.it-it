@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983390"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268551"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare le estensioni di Visual Studio
 
@@ -141,7 +141,7 @@ Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica 
 
 Quando si installa un esempio online, la soluzione viene memorizzata in due posizioni:
 
-- Una copia di lavoro viene memorizzata nel percorso specificato nella finestra di dialogo **Nuovo progetto** .
+- Una copia di lavoro viene memorizzata nel percorso specificato al momento della creazione del progetto.
 
 - Una copia master separata viene memorizzata nel computer.
 
@@ -163,7 +163,7 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 
 - Installare pacchetti di esempio, ovvero raccolte di esempi relativi a una tecnologia o una funzionalità.
 
-- Installare singoli esempi online. A tale scopo è inoltre possibile usare la finestra di dialogo **Nuovo progetto** .
+- Installare singoli esempi online.
 
 - Visualizzare notifiche di aggiornamenti quando vengono pubblicate modifiche al codice sorgente per gli esempi installati.
 

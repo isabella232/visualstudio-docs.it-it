@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070282"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325094"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -52,7 +52,7 @@ Dopo aver aperto Visual Studio, saranno visibili le tre parti fondamentali dell'
 
 ::: moniker range=">=vs-2019"
 
-Dopo l'apertura di Visual Studio, la prima finestra visualizzata è la finestra **Avvia**. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo.
+Dopo l'apertura di Visual Studio, la prima finestra visualizzata è la finestra Avvio. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo.
 
 Verranno visualizzate le tre parti fondamentali dell'IDE: le finestre degli strumenti, i menu e le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di **Avvio veloce**, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 

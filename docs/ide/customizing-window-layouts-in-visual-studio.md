@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927542"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268618"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizzare il layout delle finestre in Visual Studio
 
-In Visual Studio è possibile personalizzare la posizione, la dimensione e il comportamento delle finestre per creare layout di finestra ottimali per i vari flussi di lavoro relativi allo sviluppo. Quando si personalizza il layout, l'IDE memorizza le modifiche apportate. Se, ad esempio, si modifica la posizione di ancoraggio di **Esplora soluzioni** e quindi si chiude Visual Studio, al successivo avvio di **Esplora soluzioni** , anche se si utilizza un altro computer, la finestra risulterà ancorata nella stessa posizione. È anche possibile fornire un nome a un layout personalizzato e salvarlo, quindi passare da un layout all'altro con un unico comando. Ad esempio è possibile creare un layout per la modifica e un altro per il debug e passare tra questi usando il comando di menu **Finestra** > **Applica layout finestra**.
+In Visual Studio è possibile personalizzare la posizione, la dimensione e il comportamento delle finestre per creare layout di finestra ottimali per i vari flussi di lavoro relativi allo sviluppo. Quando si personalizza il layout, l'IDE memorizza le modifiche apportate. Se, ad esempio, si cambia la posizione di ancoraggio di **Esplora soluzioni** e quindi si chiude Visual Studio, al successivo avvio di quest'ultimo, anche da un altro computer, la finestra di **Esplora soluzioni** risulterà ancorata nella stessa posizione.
+
+È anche possibile assegnare un nome a un layout personalizzato e salvarlo, e quindi passare da un layout all'altro con un unico comando. È ad esempio possibile creare un layout per la modifica e un altro per il debug e passare dall'uno all'altro usando il comando di menu **Finestra** > **Applica layout finestra**.
 
 ## <a name="kinds-of-windows"></a>Tipi di finestre
 
@@ -64,27 +66,27 @@ Una finestra del documento o una finestra degli strumenti può essere *ancorata*
 
 È possibile disporre le finestre nei modi seguenti:
 
--   Bloccare le finestre dei documenti a sinistra della scheda.
+- Bloccare le finestre dei documenti a sinistra della scheda.
 
--   Ancorare le schede delle finestre alla cornice per la modifica.
+- Ancorare le schede delle finestre alla cornice per la modifica.
 
--   Ancorare le finestre degli strumenti al bordo di una cornice nell'IDE.
+- Ancorare le finestre degli strumenti al bordo di una cornice nell'IDE.
 
--   Rendere mobili le finestre dei documenti o degli strumenti sopra o all'esterno dell'IDE.
+- Rendere mobili le finestre dei documenti o degli strumenti sopra o all'esterno dell'IDE.
 
--   Nascondere le finestre degli strumenti lungo il bordo dell'IDE.
+- Nascondere le finestre degli strumenti lungo il bordo dell'IDE.
 
--   Visualizzare le finestre su monitor diversi.
+- Visualizzare le finestre su monitor diversi.
 
--   Reimpostare la posizione delle finestre sul layout predefinito o su un layout personalizzato salvato.
+- Reimpostare la posizione delle finestre sul layout predefinito o su un layout personalizzato salvato.
 
-Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
+Disporre le finestre degli strumenti e dei documenti trascinandole, usando comandi del menu **Finestra** o facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
 
 ### <a name="dock-windows"></a>Ancorare le finestre
 
 Quando si seleziona e si trascina la barra del titolo di una finestra degli strumenti oppure la scheda della finestra del documento, viene visualizzata una guida a forma di rombo. Durante l'operazione di trascinamento, quando il cursore si trova sopra una delle frecce nel rombo, viene visualizzata un'area ombreggiata che mostra la posizione in cui verrà ancorata la finestra se viene rilasciato il mouse in quel preciso momento.
 
-Per spostare una finestra ancorabile senza allinearla nella posizione desiderata, selezionare il tasto **CTRL** mentre si trascina la finestra.
+Per spostare una finestra ancorabile senza ancorarla nella posizione di destinazione, tenere premuto **CTRL** mentre si trascina la finestra.
 
 Per ricollocare una finestra degli strumenti o una finestra del documento nella posizione di ancoraggio più recente, premere **CTRL** e fare doppio clic sulla scheda o sulla barra del titolo della finestra.
 
@@ -92,19 +94,17 @@ Nella figura seguente viene illustrata la guida a forma di rombo per le finestre
 
 ![Guida a forma di rombo finestra del documento](../ide/media/documentwindowguidediamonds.png)
 
-Le finestre degli strumenti possono essere bloccate su un lato di una cornice nell'IDE o all'interno della cornice per la modifica. Per consentire all'utente di ancorare di nuovo la finestra facilmente, viene visualizzata una guida a forma di rombo quando si trascina una finestra degli strumenti in un'altra posizione.
-
-Guida a forma di rombo per le finestre degli strumenti
+Le finestre degli strumenti possono essere bloccate su un lato di una cornice nell'IDE o all'interno della cornice per la modifica. Per consentire all'utente di ancorare di nuovo la finestra con facilità, viene visualizzata una guida a forma di rombo quando si trascina una finestra degli strumenti in un'altra posizione.
 
 ![Guide a forma di rombo finestra degli strumenti](../ide/media/vs10guidediamond.png)
 
-Nella figura seguente viene illustrata la finestra **Esplora soluzioni** mentre viene ancorata in una nuova posizione, mostrata dall'area ombreggiata in blu:
+La figura seguente illustra la finestra **Esplora soluzioni** mentre viene ancorata in una nuova posizione, delineata dall'area ombreggiata in blu:
 
 ![Ancoraggio di Esplora soluzioni in una nuova posizione](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Chiudere e nascondere automaticamente le finestre degli strumenti
 
-È possibile chiudere una finestra degli strumenti facendo clic sulla **X** nella parte superiore destra della barra del titolo. Per riaprire la finestra, usare i tasti di scelta rapida o il comando di menu appropriato. Le finestre degli strumenti supportano una funzionalità denominata *Nascondi automaticamente*, che fa in modo che una finestra scompaia dallo schermo quando si usa un'altra finestra. Quando una finestra viene nascosta automaticamente, il relativo nome viene visualizzato su una scheda sul bordo dell'IDE. Per utilizzare nuovamente la finestra, posizionare il mouse sulla scheda affinché sia possibile visualizzare di nuovo la finestra.
+È possibile chiudere una finestra degli strumenti facendo clic sulla **X** in alto a destra della barra del titolo. Per riaprire la finestra, usare i tasti di scelta rapida o il comando di menu corrispondente. Le finestre degli strumenti supportano una funzionalità denominata *Nascondi automaticamente*, che fa in modo che una finestra scompaia dallo schermo quando si usa un'altra finestra. Quando una finestra viene nascosta automaticamente, il suo nome viene visualizzato in una scheda sul bordo dell'IDE. Per utilizzare nuovamente la finestra, posizionare il mouse sulla scheda affinché sia possibile visualizzare di nuovo la finestra.
 
 ![Nascondi automaticamente](../ide/media/vs2015_auto_hide.png)
 
@@ -125,11 +125,11 @@ Se si dispone di un secondo monitor, supportato dal sistema operativo, è possib
 
 È possibile ripristinare il layout di finestra originale dell'IDE per la raccolta delle impostazioni utilizzando il comando **Reimposta layout finestra** . Quando si esegue questo comando, si verificano le seguenti azioni:
 
--   Tutte le finestre vengono spostate nelle rispettive posizioni predefinite.
+- Tutte le finestre vengono spostate nelle rispettive posizioni predefinite.
 
--   Le finestre chiuse nel layout di finestra predefinito vengono chiuse.
+- Le finestre chiuse nel layout di finestra predefinito vengono chiuse.
 
--   Le finestre aperte nel layout di finestra predefinito vengono aperte.
+- Le finestre aperte nel layout di finestra predefinito vengono aperte.
 
 ### <a name="create-and-save-custom-layouts"></a>Creare e salvare layout personalizzati
 
@@ -139,25 +139,25 @@ Creare prima di tutto una soluzione di test che include due progetti, ognuno con
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Creare un progetto per interfaccia utente e personalizzare il layout
 
-1.  Nella finestra di dialogo **Nuovo progetto** creare un'**applicazione desktop WPF di C#** e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà nell'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando le altre finestre degli strumenti.
+1. Creare un nuovo oggetto progetto **App WPF** C#. Si immagini di sviluppare un'interfaccia utente in questo progetto. Si vuole aumentare al massimo lo spazio per la finestra di progettazione e spostare le altre finestra degli strumenti in modo che non diano fastidio.
 
-2.  Se sono disponibili più monitor, spostare le finestre **Esplora soluzioni** e **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
+2. Se sono disponibili più monitor, spostare le finestre **Esplora soluzioni** e **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
 
-3.  Premere **CTRL+ALT+X** per visualizzare la **Casella degli strumenti**. Se la finestra è ancorata, trascinarla in modo da spostarla nel punto in cui si vuole posizionarla sull'uno o sull'altro monitor.
+3. Premere **CTRL**+**ALT**+**X** per visualizzare la finestra **Casella degli strumenti**. Se la finestra è ancorata, trascinarla in modo da spostarla nel punto in cui si vuole posizionarla.
 
-4.  Premere **F5** per attivare la modalità di debug in Visual Studio. Regolare la posizione delle finestre di debug **Auto**, **Stack di chiamate** e **Output** nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
+4. Premere **F5** per attivare la modalità di debug in Visual Studio. Regolare la posizione delle finestre di debug **Auto**, **Stack di chiamate** e **Output** nel modo voluto. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
 
-5.  Quando i layout in modalità di modifica o di debug sono quelli voluti, dal menu principale scegliere **Finestra** > **Salva layout finestra**. Assegnare a questo layout il nome "Finestra di progettazione".
+5. Quando si ottengono i layout voluti sia in modalità di modifica che di debug, scegliere **Finestra** > **Salva layout finestra**. Assegnare a questo layout il nome "Finestra di progettazione".
 
-     Notare che al nuovo layout viene assegnato il tasto di scelta rapida successivo dell'elenco riservato **CTRL** + **ALT** + **1...0**.
+     Notare che al nuovo layout viene assegnato il tasto di scelta rapida successivo dell'elenco riservato **CTRL**+**ALT**+**1...0**.
 
 #### <a name="create-a-database-project-and-layout"></a>Creare un layout e un progetto di database
 
-1.  Aggiungere un nuovo progetto **Database SQL Server** alla soluzione.
+1. Aggiungere un nuovo progetto **Database SQL Server** alla soluzione.
 
-2.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nuovo progetto e scegliere **Visualizza in Esplora oggetti**. Verrà visualizzata la finestra **Esplora oggetti di SQL Server** che consente di accedere a tabelle, viste e altri oggetti nel database. È possibile impostare la finestra come mobile o lasciarla ancorata. Regolare le altre finestre degli strumenti nel modo desiderato. Per maggior realismo è possibile aggiungere un database effettivo, ma questa operazione non è necessaria ai fini di questa procedura dettagliata.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nuovo progetto e scegliere **Visualizza in Esplora oggetti**. Verrà visualizzata la finestra **Esplora oggetti di SQL Server** che consente di accedere a tabelle, viste e altri oggetti nel database. È possibile impostare la finestra come mobile o lasciarla ancorata. Regolare le altre finestre degli strumenti nel modo desiderato. Per maggior realismo è possibile aggiungere un database effettivo, ma questa operazione non è necessaria ai fini di questa procedura dettagliata.
 
-3.  Quando il layout è quello desiderato, dal menu principale scegliere **Finestra** > **Salva layout finestra**. Assegnare a questo layout il nome "Progetto di database". Per questo progetto non è necessario creare anche un layout per la modalità di debug.
+3. Quando il layout è quello desiderato, dal menu principale scegliere **Finestra** > **Salva layout finestra**. Assegnare a questo layout il nome "Progetto di database". Per questo progetto non è necessario creare anche un layout per la modalità di debug.
 
 #### <a name="switch-between-the-layouts"></a>Passare da un layout a un altro
 

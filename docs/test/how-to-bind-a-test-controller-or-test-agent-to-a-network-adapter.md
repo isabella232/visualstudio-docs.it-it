@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946665"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414970"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -55,7 +55,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
      `net stop vsttcontroller`
 
-3.  Aprire il file di configurazione XML *QTCcontroller.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Aprire il file di configurazione XML *QTCcontroller.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edizione>\Common7\IDE*.
 
 4.  Individuare il tag `<appSettings>`.
 
@@ -95,13 +95,13 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2.  Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Agente di test di Visual Studio** e quindi scegliere **Arresta**.
 
-     oppure
+     -oppure-
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
      **net stop vsttagent**
 
-3.  Aprire il file di configurazione XML *QTAgentService.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Aprire il file di configurazione XML *QTCAgentService.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edizione>\Common7\IDE*.
 
 4.  Individuare il tag `<appSettings>`.
 
@@ -133,5 +133,4 @@ Se un computer con installato il software del test controller o dell'agente di t
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
 - [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Procedura: Specificare le dimensioni massime del file di log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Procedura: Specificare i periodi di timeout per test controller e agenti di test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
