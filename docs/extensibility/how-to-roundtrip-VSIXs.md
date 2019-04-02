@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323815"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790420"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedura: Rendere compatibili con Visual Studio 2017 e Visual Studio 2015 le estensioni
 
@@ -95,7 +95,7 @@ A tale scopo:
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Aggiunta dei prerequisiti per la *Extension. vsixmanifest* file
 
-I prerequisiti sono una nuova funzionalità con Visual Studio 2017. In questo caso, è necessario l'Editor principale di Visual Studio come prerequisito. Poiché non consente di gestire la nuova la finestra di progettazione di Visual Studio 2015 VSIX `Prerequisites` sezione, è necessario modificare questa parte manualmente nel codice XML. In alternativa, è possibile aprire Visual Studio 2017 e utilizzare la finestra di progettazione manifesto aggiornato per inserire i prerequisiti.
+È necessario l'Editor principale di Visual Studio come prerequisito. Aprire Visual Studio e usare la finestra di progettazione manifesto aggiornato per inserire i prerequisiti.
 
 Per eseguire questa operazione manualmente:
 
@@ -112,7 +112,7 @@ Per eseguire questa operazione manualmente:
 * Salvare e chiudere il file.
 
 > [!NOTE]
-> Se si sceglie di effettuare questa operazione utilizzando Progettazione modelli di progetto VSIX in Visual Studio 2017, è necessario modificare manualmente la versione del prerequisito per assicurarsi che sia compatibile con tutte le versioni di Visual Studio 2017. Questo avviene perché la finestra di progettazione inserisce la versione minima come la versione corrente di Visual Studio (ad esempio, 15.0.26208.0). Tuttavia, poiché gli altri utenti potrebbero avere una versione precedente, si dovranno modificare manualmente questo 15.0.
+> Potrebbe essere necessario modificare manualmente la versione del prerequisito per assicurarsi che sia compatibile con tutte le versioni di Visual Studio 2017. Questo avviene perché la finestra di progettazione inserisce la versione minima come la versione corrente di Visual Studio (ad esempio, 15.0.26208.0). Tuttavia, poiché gli altri utenti potrebbero avere una versione precedente, si dovranno modificare manualmente questo 15.0.
 
 A questo punto, il file manifesto dovrebbe essere simile al seguente:
 

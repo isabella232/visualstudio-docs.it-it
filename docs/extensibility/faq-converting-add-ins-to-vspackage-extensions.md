@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e43c50dd006190935f8ce1eb3a17e3f268e14cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692827"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789530"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage
 I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Di seguito sono riportate le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio per un'estensione VSIX.
@@ -40,26 +40,27 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
 ##  <a name="BKMK_StartDeveloping"></a> Come si inizia a sviluppare estensioni VSIX?
  Ecco come creare un'estensione VSIX con un comando di menu:
 
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Per rendere un'estensione VSIX con un comando di menu
+### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Per rendere un'estensione VSIX con un comando di menu
 
-1.  Creare un progetto VSIX. (**File** > **New** > **progetto**, o un tipo **progetto** nel **avvioveloce** finestra). Nel **nuovo progetto** finestra di dialogo, espandere **Visual c#** > **Extensibility** oppure **Visual Basic**  >   **Estendibilità** e selezionare **progetto VSIX**.) Denominare il progetto **TestExtension** e specificare un percorso relativo.
+1. Creare un progetto VSIX. (**File** > **New** > **progetto**, o un tipo **progetto** nella casella di ricerca). Nel **nuovo progetto** finestra di dialogo espandere **Visual C#**   >  **Extensibility** oppure **Visual Basic**  >  **Estendibilità** e selezionare **progetto VSIX**. Denominare il progetto **TestExtension** e specificare un percorso relativo.
 
-2.  Aggiungere un **Custom comando** il modello di elemento di progetto. (Fare clic sul nodo del progetto nel **Esplora soluzioni** e selezionare **Add** > **nuovo elemento**. Nel **nuovo progetto** finestra di dialogo per Visual c# o Visual Basic, selezionare la **Extensibility** nodo e selezionare **comando personalizzato**.)
+2. Aggiungere un **comando personalizzato** modello di elemento. (Fare clic sul nodo del progetto nel **Esplora soluzioni** e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo per l'oggetto visivo C# o Visual Basic, selezionare il **estendibilità** nodo e selezionare **comando personalizzato**.)
 
-3.  Premere **F5** per compilare ed eseguire il progetto in modalità di debug.
+3. Premere **F5** per compilare ed eseguire il progetto in modalità di debug.
 
-     Verrà visualizzata una seconda istanza di Visual Studio. Questa seconda istanza è chiamata istanza sperimentale e potrebbe non presentare le stesse impostazioni dell'istanza di Visual Studio che si sta usando per scrivere il codice. La prima volta che si esegue l'istanza sperimentale, verrà richiesto di accedere a Visual Studio Online e specificare il tema e il profilo.
+   Verrà visualizzata una seconda istanza di Visual Studio. Questa seconda istanza è chiamata istanza sperimentale e potrebbe non presentare le stesse impostazioni dell'istanza di Visual Studio che si sta usando per scrivere il codice. La prima volta che si esegue l'istanza sperimentale, verrà richiesto di accedere a Visual Studio Online e specificare il tema e il profilo.
 
-     Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()**.
+   Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
 ##  <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?
- Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:
+
+Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:
 
 - Attivato da un comando di menu (il codice è nel `IDTCommandTarget.Exec` (metodo).)
 
 - Automaticamente all'avvio (il codice si trova nel gestore eventi `OnConnection`)
 
-  È possibile procedere nello stesso modo in un VSPackage. Ecco come è possibile aggiungere il codice del componente aggiuntivo nel metodo di callback:
+È possibile procedere nello stesso modo in un VSPackage. Ecco come è possibile aggiungere il codice del componente aggiuntivo nel metodo di callback:
 
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Per implementare un comando di menu in un VSPackage
 

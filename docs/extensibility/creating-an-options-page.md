@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194418"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790160"
 ---
 # <a name="create-an-options-page"></a>Creare una pagina di opzioni
 
@@ -101,7 +101,7 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
 
      Nel riquadro sinistro, dovrebbe **My Category**. (Opzioni categorie sono elencate in ordine alfabetico, pertanto dovrebbe essere presente sulla metà l'elenco a discesa.) Aprire **My Category** e quindi fare clic su **My pagina della griglia**. Nel riquadro di destra viene visualizzata la griglia di opzioni. La categoria della proprietà viene **My Options**, e il nome della proprietà viene **My opzione Integer**. La descrizione della proprietà, **l'opzione integer**, viene visualizzato nella parte inferiore del riquadro. Modificare il valore dal valore iniziale pari a 256 per qualcos'altro. Fare clic su **OK**e quindi riaprire **My pagina della griglia**. È possibile vedere che il nuovo valore viene mantenuto.
 
-     La pagina delle opzioni è disponibile anche tramite avvio veloce di Visual Studio. Nella finestra avvio veloce nell'angolo superiore destro dell'IDE, digitare **My Category** e verrà visualizzato **My Category -> pagina della griglia My** elencati nell'elenco a discesa.
+     La pagina delle opzioni è disponibile anche tramite la casella di ricerca Visual Studio. Nella casella di ricerca nella parte superiore dell'IDE, digitare **My Category** qui noterete **My Category -> pagina della griglia My** elencato nei risultati.
 
 ## <a name="create-a-tools-options-custom-page"></a>Creare una pagina di opzioni del menu strumenti personalizzata
 
