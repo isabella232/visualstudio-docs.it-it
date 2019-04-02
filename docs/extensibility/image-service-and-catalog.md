@@ -1,6 +1,6 @@
 ---
 title: Immagine di servizio e catalogo | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844061"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857853"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigliate per adottare il catalogo di immagini introdotto in Visual Studio 2015 e Visual Studio Image Service.
@@ -104,7 +104,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 
 |||
 |-|-|
-|**Subelement**|**Definizione**|
+|**Sottoelemento**|**Definizione**|
 |Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|
 |GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID|
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|
@@ -131,7 +131,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 |System|Il *Windows\System32* cartella|
 |WinDir|Il valore della variabile di ambiente % WinDir %|
 
- **Immagine**
+ **Image**
 
  Il \<immagine > elemento definisce un'immagine che è possibile farvi riferimento da un moniker. Il GUID e ID nel loro insieme costituiscono il moniker di immagine. Moniker per l'immagine deve essere univoco tra la libreria di immagini intero. Se più di un'immagine è un moniker specificato, il primo ha rilevato durante la compilazione della libreria è quello che viene mantenuto.
 
@@ -275,9 +275,19 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 
     -   Non utilizzare questa intestazione se il servizio immagini può gestire i temi di immagine.
 
+::: moniker range="vs-2017"
 -   **VSUIDPIHelper.h**
 
     -   Necessario se si usano gli helper DPI per ottenere il valore DPI corrente.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+-   **VsDpiAwareness.h**  
+
+    -   Necessario se si usano gli helper di riconoscimento DPI per ottenere il valore DPI corrente.  
+
+::: moniker-end
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>Come si scrivono nuove WPF UI?
 
@@ -339,24 +349,49 @@ CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
 
  **La richiesta dell'immagine**
 
-```cpp
-ImageAttributes attr = { 0 };
-attr.StructSize      = sizeof(attributes);
-attr.Format          = DF_Win32;
-// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST
-attr.ImageType       = IT_Bitmap;
-attr.LogicalWidth    = 16;
-attr.LogicalHeight   = 16;
-attr.Dpi             = VsUI::DpiHelper::GetDeviceDpiX();
-attr.Background      = 0xFFFFFFFF;
-// Desired RGBA color, if you don't use this, don't set IAF_Background below
-attr.Flags           = IAF_RequiredFlags | IAF_Background;
+::: moniker range="vs-2017"
+```cpp  
+ImageAttributes attr = { 0 };  
+attr.StructSize      = sizeof(attributes);  
+attr.Format          = DF_Win32;  
+// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST  
+attr.ImageType       = IT_Bitmap;  
+attr.LogicalWidth    = 16;  
+attr.LogicalHeight   = 16;  
+attr.Dpi             = VsUI::DpiHelper::GetDeviceDpiX();  
+// Desired RGBA color, if you don't use this, don't set IAF_Background below  
+attr.Background      = 0xFFFFFFFF;  
+attr.Flags           = IAF_RequiredFlags | IAF_Background;  
 
-CComPtr<IVsUIObject> spImg;
-// Replace this KnownMoniker with your desired ImageMoniker
-spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
+CComPtr<IVsUIObject> spImg;  
+// Replace this KnownMoniker with your desired ImageMoniker  
+spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
+```  
+::: moniker-end
 
-```
+::: moniker range=">=vs-2019"
+```cpp 
+UINT dpiX, dpiY;
+HWND hwnd = // get the HWND where the image will be displayed
+VsUI::CDpiAwareness::GetDpiForWindow(hwnd, &dpiX, &dpiY);
+ 
+ImageAttributes attr = { 0 };  
+attr.StructSize      = sizeof(attributes);  
+attr.Format          = DF_Win32;  
+// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST  
+attr.ImageType       = IT_Bitmap;  
+attr.LogicalWidth    = 16;  
+attr.LogicalHeight   = 16;  
+attr.Dpi             = dpiX;
+// Desired RGBA color, if you don't use this, don't set IAF_Background below  
+attr.Background      = 0xFFFFFFFF;  
+attr.Flags           = IAF_RequiredFlags | IAF_Background;  
+
+CComPtr<IVsUIObject> spImg;  
+// Replace this KnownMoniker with your desired ImageMoniker  
+spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
+```  
+::: moniker-end
 
 ## <a name="how-do-i-update-winforms-ui"></a>Come si aggiorna WinForms UI?
  Aggiungere quanto segue al codice ogni volta che è appropriato per sostituire il caricamento di immagini non elaborato. Passare i valori per la restituzione di bitmap e icone in base alle esigenze.
@@ -377,27 +412,55 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
  **Richiedono l'immagine**
 
-```csharp
-ImageAttributes attributes = new ImageAttributes
-{
-    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),
-    // IT_Bitmap for Bitmap, IT_Icon for Icon
-    ImageType     = (uint)_UIImageType.IT_Bitmap,
-    Format        = (uint)_UIDataFormat.DF_WinForms,
-    LogicalWidth  = 16,
-    LogicalHeight = 16,
-    // Desired RGBA color, if you don't use this, don't set IAF_Background below
-    Background    = 0xFFFFFFFF,
-    Flags = (uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background,
-};
+::: moniker range="vs-2017"
+```csharp  
+ImageAttributes attributes = new ImageAttributes  
+{  
+    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
+    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList  
+    ImageType     = (uint)_UIImageType.IT_Bitmap,  
+    Format        = (uint)_UIDataFormat.DF_WinForms,  
+    LogicalWidth  = 16,  
+    LogicalHeight = 16,  
+    Dpi           = (int)DpiHelper.DeviceDpiX;  
+    // Desired RGBA color, if you don't use this, don't set IAF_Background below  
+    Background    = 0xFFFFFFFF,  
+    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background), 
+};  
 
-// Replace this KnownMoniker with your desired ImageMoniker
-IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
+// Replace this KnownMoniker with your desired ImageMoniker  
+IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);  
 
-Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap
-// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj); // Use this if you need an icon
+Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
+// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
+```  
+::: moniker-end
 
-```
+::: moniker range=">=vs-2019"
+```csharp  
+Control control = // get the control where the image will be displayed
+
+ImageAttributes attributes = new ImageAttributes  
+{  
+    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
+    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList  
+    ImageType     = (uint)_UIImageType.IT_Bitmap,  
+    Format        = (uint)_UIDataFormat.DF_WinForms,  
+    LogicalWidth  = 16,  
+    LogicalHeight = 16,  
+    Dpi           = (int)DpiAwareness.GetWindowDpi(control.Handle);  
+    // Desired RGBA color, if you don't use this, don't set IAF_Background below  
+    Background    = 0xFFFFFFFF,  
+    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background),  
+};  
+
+// Replace this KnownMoniker with your desired ImageMoniker  
+IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);  
+
+Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
+// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
+```  
+::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Utilizzo di moniker di immagine in una nuova finestra degli strumenti
  Il modello di progetto di pacchetto VSIX è stato aggiornato per Visual Studio 2015. Per creare una nuova finestra degli strumenti, pulsante destro del mouse sul progetto VSIX e scegliere **Add** > **nuovo elemento** (**Ctrl**+**MAIUSC** + **Oggetto**). Sotto il nodo di estendibilità per il linguaggio del progetto, selezionare **finestra degli strumenti personalizzata**, assegnare la finestra degli strumenti, un nome e premere il **Add** pulsante.
@@ -767,12 +830,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupClass|GlyphItemProtected|ClassProtected|
         |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|
         |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|
-        |GlyphGroupConstant|GlyphItemPublic|ClassPublic|
-        |GlyphGroupConstant|GlyphItemInternal|ClassInternal|
-        |GlyphGroupConstant|GlyphItemFriend|ClassInternal|
-        |GlyphGroupConstant|GlyphItemProtected|ClassProtected|
-        |GlyphGroupConstant|GlyphItemPrivate|ClassPrivate|
-        |GlyphGroupConstant|GlyphItemShortcut|ClassShortcut|
+        |GlyphGroupConstant|GlyphItemPublic|ConstantPublic|  
+        |GlyphGroupConstant|GlyphItemInternal|ConstantInternal|  
+        |GlyphGroupConstant|GlyphItemFriend|ConstantInternal|  
+        |GlyphGroupConstant|GlyphItemProtected|ConstantProtected|  
+        |GlyphGroupConstant|GlyphItemPrivate|ConstantPrivate|  
+        |GlyphGroupConstant|GlyphItemShortcut|ConstantShortcut|  
         |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|
         |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|
         |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|
@@ -785,12 +848,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|
         |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|
         |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|
-        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationMemberPublic|
-        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationMemberInternal|
-        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationMemberInternal|
-        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationMemberProtected|
-        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationMemberPrivate|
-        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationMemberShortcut|
+        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationItemPublic|  
+        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationItemInternal|  
+        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationItemInternal|  
+        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationItemProtected|  
+        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationItemPrivate|  
+        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationItemShortcut|  
         |GlyphGroupEvent|GlyphItemPublic|EventPublic|
         |GlyphGroupEvent|GlyphItemInternal|EventInternal|
         |GlyphGroupEvent|GlyphItemFriend|EventInternal|
