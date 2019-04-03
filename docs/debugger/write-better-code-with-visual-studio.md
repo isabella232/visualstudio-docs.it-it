@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961715"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790329"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debug tecniche e strumenti che consentono di scrivere codice migliore
 
@@ -42,7 +42,7 @@ Il codice seguente contiene alcuni bug che è possibile correggere mediante l'ID
 
 Per creare l'app:
 
-1. Aprire Visual Studio e scegli **File > Nuovo progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**.
+1. Aprire Visual Studio e scegli **File** > **New** > **progetto**. Sotto **Visual C#** , scegliere **Desktop di Windows** oppure **.NET Core**, quindi nel riquadro centrale scegliere un **App Console**.
 
     > [!NOTE]
     > Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.

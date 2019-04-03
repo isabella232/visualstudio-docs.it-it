@@ -33,7 +33,7 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi  
   
-1. In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md) (Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)).  
+1. In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
 2. Nel progetto in Esplora soluzioni trascinare un file di codice sorgente nel diagramma di classi.  
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943116"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647245"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 
@@ -26,11 +26,11 @@ ms.locfileid: "55943116"
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per completare questa procedura dettagliata, è necessario disporre di facoltativo **elaborazione ed archiviazione dati** carico di lavoro sia installato in Visual Studio. Per installarlo, aprire **programma di installazione di Visual Studio** e scegliere il **carichi di lavoro** scheda. Sotto **Web e Cloud**, scegliere **elaborazione ed archiviazione dati**. Scegliere il **Modify** pulsante per aggiungere il carico di lavoro per Visual Studio.
+Per completare questa procedura dettagliata, è necessario disporre di facoltativo **elaborazione ed archiviazione dati** carico di lavoro sia installato in Visual Studio. Per installarlo, aprire **programma di installazione di Visual Studio** e scegliere **ulteriori** > **modifica** accanto alla versione di Visual Studio che si desidera modificare (se si dispone di più di una versione installata). Nel **carichi di lavoro** nella scheda **Web e Cloud**, scegliere **elaborazione ed archiviazione dati**e quindi fare clic su **modifica** per aggiungere il carico di lavoro Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un file di database locale
 
-1. Creare un progetto Windows Form denominato **SampleDatabaseWalkthrough**.
+1. Creare una nuova **App di Windows. Forms** del progetto e denominarlo **SampleDatabaseWalkthrough**.
 
 2. Nella barra dei menu, selezionare **Project** > **Aggiungi nuovo elemento**.
 
@@ -38,7 +38,7 @@ Per completare questa procedura dettagliata, è necessario disporre di facoltati
 
      ![Finestra di dialogo Modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Assegnare un nome del database **SampleDatabase**, quindi selezionare il **Add** pulsante.
+4. Nome del database **SampleDatabase**, quindi fare clic su **Add**.
 
 ### <a name="add-a-data-source"></a>Aggiungere un'origine dati
 
@@ -62,9 +62,9 @@ Per completare questa procedura dettagliata, è necessario disporre di facoltati
 
 È possibile visualizzare la stringa di connessione per il *SampleDatabase. mdf* file aprendo la finestra delle proprietà della connessione dati:
 
-- In Visual Studio, selezionare **View** > **Esplora oggetti di SQL Server** se tale finestra non è già aperta. Aprire la finestra Proprietà espandere la **connessioni dati** nodo, aprire il menu di scelta rapida *SampleDatabase. mdf*e quindi selezionando **proprietà**.
+- Selezionare **View** > **Esplora oggetti di SQL Server** per aprire la **Esplora oggetti di SQL Server** finestra. Espandere **(localdb) \MSSQLLocalDB** > **database**e quindi fare clic su *SampleDatabase. mdf* e selezionare **proprietà**.
 
-- In alternativa, è possibile selezionare **View** > **Esplora Server**, se tale finestra non è già aperta. Aprire la finestra Proprietà espandere la **connessioni dati** nodo. Aprire il menu di scelta rapida *SampleDatabase. mdf*, quindi selezionare **proprietà**.
+- In alternativa, è possibile selezionare **View** > **Esplora Server**, se tale finestra non è già aperta. Aprire la finestra Proprietà espandere la **connessioni dati** nodo, aprire il menu di scelta rapida *SampleDatabase. mdf*e quindi selezionando **proprietà**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Creare tabelle e le chiavi tramite Progettazione tabelle
 
@@ -72,7 +72,7 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
 
 ### <a name="create-the-customers-table"></a>Creare la tabella Customers
 
-1. Nella **Esplora Server** o **Esplora oggetti di SQL Server**, espandere il **connessioni dati** nodo, quindi espandere il **SampleDatabase. mdf**nodo.
+1. Nella **Esplora Server**, espandere il **connessioni dati** nodo, quindi espandere il **SampleDatabase. mdf** nodo.
 
 2. Aprire il menu di scelta rapida **tabelle**, quindi selezionare **Aggiungi nuova tabella**.
 
@@ -101,9 +101,9 @@ In questa sezione si creerà due tabelle, una chiave primaria in ogni tabella e 
 
     ![Progettazione tabelle](../data-tools/media/raddata-table-designer.png)
 
-7. Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare la **Update** pulsante.
+7. Nell'angolo superiore sinistro della **Progettazione tabelle**, selezionare **Update**.
 
-8. Nel **Anteprima aggiornamenti Database** finestra di dialogo, seleziona la **Update Database** pulsante.
+8. Nel **Anteprima aggiornamenti Database** finestra di dialogo **Update Database**.
 
     Le modifiche vengono salvate nel file del database locale.
 
