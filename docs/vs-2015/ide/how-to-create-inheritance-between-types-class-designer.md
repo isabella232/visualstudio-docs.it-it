@@ -30,7 +30,7 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
   
 1.  Dal progetto in Esplora soluzioni aprire un file del diagramma classi (con estensione cd).  
   
-     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
 2.  In **Progettazione classi** nella **Casella degli strumenti** fare clic su **Ereditarietà**.  
   
