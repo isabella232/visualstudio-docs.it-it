@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708862"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790355"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospensione, ripresa e background eventi durante il debug di App UWP in Visual Studio
 Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) controlla lo stato di esecuzione dell'app, cioè avvio, sospensione, ripresa e terminazione, in risposta alle azioni dell'utente e allo stato del dispositivo. Quando esegui il debug, Windows disabilita questi eventi di attivazione. In questo argomento viene descritto come generare tali eventi nel debugger.
@@ -72,7 +72,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
 
 2.  Apri la pagina delle proprietà di debug per il progetto di avvio. Selezionare il progetto in Esplora soluzioni. Scegli **Proprietà** dal menu **Debug**.
 
-     Per i progetti C++ e JavaScript, espandere **le proprietà di configurazione** e quindi scegliere **debug**.
+     Per i progetti C++, espandere **le proprietà di configurazione** e quindi scegliere **debug**.
 
 3.  Eseguire una delle operazioni seguenti:
 
@@ -80,7 +80,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
 
          ![C&#35;&#47;proprietà avvio applicazione debug Visual Basic](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Per i progetti JavaScript e Visual C++ scegli **No** dall'elenco **Avvia applicazione** .
+    -   Per i progetti Visual C++, scegli **No** dalle **Avvia applicazione** elenco.
 
          ![C&#43;&#43;&#47;proprietà di debug applicazione avviare VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

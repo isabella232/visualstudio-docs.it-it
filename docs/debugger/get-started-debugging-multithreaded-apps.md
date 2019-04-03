@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475994"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790251"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Iniziare il debug di applicazioni multithreading (C#, Visual Basic, C++)
 
@@ -41,10 +41,10 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
-    
-    - Per C# o Visual Basic, scegli **Crea nuovo progetto App Console (.NET Framework)** entrambi C# o Visual Basic. Nella finestra di dialogo visualizzata, scegliere **Create**.
-    - Per C++, scegliere **Crea nuovo progetto App Console** per C++. Nella finestra di dialogo visualizzata, scegliere **Create**.
+    Premere **Esc** per chiudere la finestra di avvio. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+
+    - Per C# o Visual Basic, scegli **Crea nuovo progetto App Console (.NET Framework)** entrambi C# o Visual Basic. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    - Per C++, scegliere **Crea nuovo progetto App Console** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
     Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **crea**.
     ::: moniker-end
@@ -58,7 +58,7 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
     Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **OK**.
     ::: moniker-end
 
-    Se non viene visualizzato il **App Console** modello di progetto, passa alla **Tools** > **Ottieni strumenti e funzionalità...** , che viene aperto il programma di installazione Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
 
 1. Scegliere **OK**.
 

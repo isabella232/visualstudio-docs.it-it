@@ -1,7 +1,7 @@
 ---
 title: Comandi della JavaScript Console | Microsoft Docs
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701953"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790771"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
 
-È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle App UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).
+::: moniker range=">=vs-2019"
+È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Le informazioni contenute in questo argomento si applicano alle App Node. js creata con Visual Studio con il **sviluppo Node. js** installato il carico di lavoro.
+::: moniker-end
+::: moniker range="vs-2017"
+È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Le informazioni contenute in questo argomento si applicano all'app Node. js, UWP, App e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+::: moniker-end
 
 Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.
 
 > [!NOTE]
 > Se la finestra non è disponibile durante una sessione di debug, assicurarsi che il tipo di debugger sia impostato su **Script** nelle proprietà di debug per il progetto.
+
+Per informazioni sull'uso della console negli strumenti di sviluppo di Microsoft Edge, vedi [in questo argomento](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Comandi dell'oggetto console
 Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è possibile usare nella finestra della console JavaScript o per inviare messaggi alla console dal codice. Questo oggetto fornisce numerosi formati in modo che sia possibile distinguere i messaggi informativi dai messaggi di errore, se lo si desidera.
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

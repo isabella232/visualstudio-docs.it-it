@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622bf6f34b2644c028886184cf42e8f994a43f71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596920"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568101"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: Creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Il manifesto del pacchetto contiene gli aspetti specifici della localizzazione del pacchetto. Si tratta di stringhe, contratti di licenza dell'utente finale e i language pack.
 
- Per altre informazioni sui manifesti di prodotto, vedere [procedura: creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).
+ Per altre informazioni sui manifesti di pacchetto, vedere [procedura: creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Creare il manifesto del prodotto
 

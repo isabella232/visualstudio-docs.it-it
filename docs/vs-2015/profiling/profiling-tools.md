@@ -25,7 +25,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
   
  Consultare il riepilogo in basso per vedere quali strumenti sono disponibili per il tipo di progetto, ad esempio, desktop, UWP, ASP.NET.  
   
- Per accedere agli strumenti di profilatura, usare **Debug / Windows / Mostra strumenti di diagnostica** per usare gli strumenti durante la sessione di debug oppure **Debug / Profiler prestazioni** per eseguire un'analisi mirata delle prestazioni.  Vedere [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) per altre informazioni sui diversi approcci.  
+ Per accedere agli strumenti di profilatura, usare **Debug / Windows / Mostra strumenti di diagnostica** per usare gli strumenti durante la sessione di debug oppure **Debug / Profiler prestazioni** per eseguire un'analisi mirata delle prestazioni.  Vedere [Esecuzione degli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) per altre informazioni sui diversi approcci.  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   

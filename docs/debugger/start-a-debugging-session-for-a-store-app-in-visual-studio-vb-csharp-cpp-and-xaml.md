@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699470"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790511"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Avviare una sessione di debug per un'app UWP
 
-Questo articolo descrive come avviare una sessione di debug di Visual Studio per un'app Universal Windows Platform (UWP). Le app UWP possono essere scritte in XAML e C++, XAML e C#/Visual Basic, o HTML e JavaScript. Per avviare il debug di un'app UWP, configurare la sessione di debug e scegliere il modo in cui avviare l'app.
+Questo articolo descrive come avviare una sessione di debug di Visual Studio per un'app Universal Windows Platform (UWP). Le app UWP possono essere scritte in XAML e C++, XAML e C#/Visual Basic. Per avviare il debug di un'app UWP, configurare la sessione di debug e scegliere il modo in cui avviare l'app.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> A partire da Visual Studio 2019, le app UWP per HTML e JavaScript non sono più supportate.
+::: moniker-end
+::: moniker range="vs-2017"
+In Visual Studio 2017, la maggior parte dei comandi e opzioni illustrate in questo articolo si applicano anche alle App UWP per HTML e JavaScript. In cui i comandi sono diversi tra gestiti e le app C++, le app JavaScript sono in genere gli stessi comandi per le app UWP C++.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Avviare il debug nella barra degli strumenti di Visual Studio
 
@@ -90,7 +98,7 @@ Per configurare le opzioni di debug aggiuntive, usare pagina delle proprietà de
 
      ![C#pagina delle proprietà debug progetto Visual Basic e](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Per le app C++ e JavaScript, selezionare **le proprietà di configurazione** > **debug**.
+   - Per le app C++, selezionare **le proprietà di configurazione** > **debug**.
 
      ![App UWP C++ pagina delle proprietà di debug](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Per configurare le opzioni di debug aggiuntive, usare pagina delle proprietà de
 
 Per C# e le app Visual Basic, Visual Studio esegue il debug di codice gestito per impostazione predefinita. È possibile effettuare il debug di codice aggiuntivo o altri tipi. È anche possibile impostare **tipo di Debugger** i valori per le attività in background che fanno parte del progetto.
 
-Nelle App C++, Visual Studio esegue il debug del codice nativo per impostazione predefinita. Nelle App JavaScript, Visual Studio esegue il debug di script per impostazione predefinita. È possibile scegliere di eseguire il debug di tipi specifici di codice al posto o in aggiunta, codice nativo.
+Nelle App C++, Visual Studio esegue il debug del codice nativo per impostazione predefinita. È possibile scegliere di eseguire il debug di tipi specifici di codice al posto o in aggiunta, codice nativo.
 
 **Per specificare i tipi di codice per eseguire il debug:**
 
 - Per C# e le app Visual Basic, selezionare uno dei seguenti debugger dal **tipo di applicazione** e **tipo di processo in Background** elenchi a discesa sotto **tipo di Debugger** in il **Debug** pagina delle proprietà.
 
-- Per C + + c++ /CLI le app JavaScript, selezionare uno dei seguenti debugger dal **tipo di Debugger** elenco a discesa sulle **debug** pagina delle proprietà.
+- Per le app C++, selezionare uno dei seguenti debugger dal **tipo di Debugger** elenco a discesa sulle **debug** pagina delle proprietà.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ Nelle App C++, Visual Studio esegue il debug del codice nativo per impostazione 
 
 -   Per C# e le app Visual Basic, deseleziona il **Consenti loopback della rete locale** casella di controllo sotto **opzioni di avvio** sul **Debug** pagina delle proprietà.
 
--   Per le app Visual C++ e JavaScript, selezionare **No** dalle **Consenti Loopback della rete locale** elenco a discesa al **debug** pagina delle proprietà.
+-   Per le app Visual C++, selezionare **No** dalle **Consenti Loopback della rete locale** elenco a discesa al **debug** pagina delle proprietà.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Reinstallare l'app all'avvio del debug (facoltativo)
- Per diagnosticare i problemi di installazione con un C# o app Visual Basic, selezionare **Disinstalla e reinstalla il pacchetto** sul **Debug** pagina delle proprietà. Questa opzione viene ricreata l'installazione originale all'avvio del debug. Questa opzione non è disponibile per i progetti C++ e JavaScript.
+ Per diagnosticare i problemi di installazione con un C# o app Visual Basic, selezionare **Disinstalla e reinstalla il pacchetto** sul **Debug** pagina delle proprietà. Questa opzione viene ricreata l'installazione originale all'avvio del debug. Questa opzione non è disponibile per i progetti C++.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Impostare le opzioni di autenticazione per il debug remoto
 
@@ -139,7 +147,7 @@ Il **universale (protocollo non crittografato)** è la modalità di autenticazio
 
 - Per C# e le app Visual Basic, su di **eseguire il Debug** pagina delle proprietà, seleziona **computer remoto** come il **dispositivo di destinazione**. Quindi, selezionare **None** oppure **universale (protocollo non crittografato)** per **modalità di autenticazione**.
 
-- Per le app C++ e JavaScript, selezionare **computer remoto** sotto **Debugger da avviare** sul **debug** pagina delle proprietà. Quindi, selezionare **Nessuna autenticazione** oppure **universale (protocollo non crittografato)** per **tipo di autenticazione**.
+- Per le app C++, selezionare **computer remoto** sotto **Debugger da avviare** sul **debug** pagina delle proprietà. Quindi, selezionare **Nessuna autenticazione** oppure **universale (protocollo non crittografato)** per **tipo di autenticazione**.
 
 > [!CAUTION]
 > Non vi è alcuna sicurezza di rete quando si esegue il debugger remoto in **None** oppure **universale (protocollo non crittografato)** modalità. Scegliere queste modalità solo su reti attendibili che si sono certi non sono esposti da traffico ostile o codice dannoso.
@@ -156,7 +164,7 @@ Per impostazione predefinita, Visual Studio avvia l'app immediatamente all'avvio
 
 - Per C# e le app Visual Basic, selezionare **non, ma eseguine il debug del codice quando viene avviato** sotto **opzioni di avvio** sul **Debug** pagina delle proprietà.
 
-- Per le app C++ e JavaScript, selezionare **No** dalle **Avvia applicazione** elenco a discesa al **debug** pagina delle proprietà.
+- Per le app C++, selezionare **No** dalle **Avvia applicazione** elenco a discesa al **debug** pagina delle proprietà.
 
 Per altre informazioni sul debug di attività in background, vedere [Trigger di sospensione, ripresa e background eventi per le app UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/i
 
  Visual Studio collega il debugger al processo. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Le app JavaScript vengono eseguite in un'istanza del processo *wwahost.exe*. Se più app JavaScript è in esecuzione, è necessario conoscere l'id processo numerico (PID) dell'app *wwahost.exe* processo a cui collegarsi ad esso.
 >
 > Il modo più semplice per collegare all'app JavaScript consiste nel chiudere tutte le altre App JavaScript. In alternativa, è possibile notare il PID di esecuzione *wwahost.exe* processi Windows Task Manager prima di avviare l'app. Quando si avvia l'app, relativi *wwahost.exe* PID sarà quello che è diverso da quelli annotati in precedenza.
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di app in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

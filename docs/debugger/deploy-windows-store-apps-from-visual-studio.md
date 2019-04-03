@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043765"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790381"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
 
@@ -76,7 +76,7 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
     Il **connessione remota** nella finestra di dialogo Visualizza i dispositivi sulla subnet di rete locale e qualsiasi dispositivo che è direttamente connesso al computer Visual Studio tramite un cavo Ethernet.
 
-   **Indicazione del dispositivo remoto nella pagina di un progetto JavaScript o Visual C++**
+   **Indicazione del dispositivo remoto nella pagina di un progetto di Visual C++**
 
    ![C&#43; &#43; le proprietà per il debug remoto di progetto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Per rimuovere l'esenzione relativa al loopback della rete:
 
 - Nel C# e il Debug di Visual Basic pagina delle proprietà, deseleziona il **Consenti loopback della rete locale** casella di controllo.
 
-- Nella pagina delle proprietà Debug in JavaScript e C++ imposta il valore di **Consenti loopback della rete locale** su **No**.
+- Nella pagina delle proprietà Debug C++, impostare il **Consenti loopback della rete locale** valore **No**.
 
-**Non devono essere avviate, ma eseguine il debug del codice all'avvio (C# e Visual Basic) / /Avvia applicazione (JavaScript e C++)**
+**Non devono essere avviate, ma eseguine il debug del codice all'avvio (C# e Visual Basic) o avviare Application (C++)**
 
 Per configurare la distribuzione in modo da avviare automaticamente una sessione di debug all'avvio dell'app:
 
 - Nel C# e Visual Basic pagina delle proprietà Debug, controllare le **non, ma eseguine il debug del codice quando viene avviato** casella di controllo.
 
-- Nella pagina delle proprietà Debug in JavaScript e C++ imposta il valore di **Avvia applicazione** su **Sì**.
+- Nella pagina delle proprietà Debug C++, impostare il **Avvia applicazione** valore **Yes**.
 
 ## <a name="see-also"></a>Vedere anche
 
