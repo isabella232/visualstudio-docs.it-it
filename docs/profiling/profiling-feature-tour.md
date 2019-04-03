@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873178"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790810"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Guida introduttiva: Presentazione degli strumenti di profilatura
 
@@ -119,6 +119,7 @@ Quando si seleziona un periodo di tempo nei grafici e si sceglie **Visualizza de
 
 È anche possibile usare i grafici per determinare se esistono colli di bottiglia delle prestazioni associati alla CPU o GPU.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analizzare le prestazioni (JavaScript UWP)
 
 Per le app UWP è possibile usare lo strumento Memoria JavaScript e lo strumento Velocità di risposta interfaccia utente HTML.
@@ -130,6 +131,7 @@ Lo strumento Memoria JavaScript è simile allo strumento Utilizzo memoria dispon
 Per diagnosticare la velocità di risposta dell'interfaccia utente, i tempi di caricamento lenti e gli aggiornamenti visivi lenti nelle app UWP, usare lo strumento Velocità di risposta interfaccia utente HTML. L'uso è simile a quello dello strumento Sequenza temporale dell'applicazione per altri tipi di applicazioni. Per altre informazioni, vedere [Velocità di risposta dell'interfaccia utente HTML](../profiling/html-ui-responsiveness.md).
 
 ![Strumento di profilatura Velocità di risposta interfaccia utente HTML](../profiling/media/diaghtmlresp.png "Finestra di dialogo dello strumento Velocità di risposta interfaccia utente HTML")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analizzare l'uso della rete (piattaforma UWP)
 

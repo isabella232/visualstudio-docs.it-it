@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844074"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789887"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Uso del vantaggio di Visual Studio 2017
 
@@ -53,9 +53,12 @@ Per scaricare l'ambiente IDE:
 
 13. Scegliere il tema preferito e fare clic su **Avvia Visual Studio**.
 
-14. Verrà visualizzata la Pagina iniziale.  È tutto pronto per iniziare a usare Visual Studio.
+14. Viene aperto Visual Studio. È tutto pronto per iniziare a usare Visual Studio.
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Idoneità
 

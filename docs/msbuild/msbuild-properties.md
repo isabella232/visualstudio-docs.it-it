@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355617"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515207"
 ---
 # <a name="msbuild-properties"></a>proprietà di MSBuild
 Le proprietà sono coppie nome-valore che possono essere usate per configurare le compilazioni. Le proprietà sono utili per passare i valori alle attività, valutare le condizioni e archiviare i valori a cui si farà riferimento nel file di progetto.
@@ -59,7 +59,7 @@ Le proprietà sono coppie nome-valore che possono essere usate per configurare l
  Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Proprietà del Registro di sistema
- È possibile leggere i valori del Registro di sistema usando la sintassi seguente, dove `Hive` è l'hive del Registro di sistema (ad esempio, **HKEY_LOCAL_MACHINE**), `Key` è il nome della chiave, `SubKey` è il nome della sottochiave e `Value` è il valore della sottochiave.
+ È possibile leggere i valori del Registro di sistema usando la sintassi seguente, dove `Hive` è l'hive del Registro di sistema (ad esempio, **HKEY_LOCAL_MACHINE**), `MyKey` è il nome della chiave, `MySubKey` è il nome della sottochiave e `Value` è il valore della sottochiave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
