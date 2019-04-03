@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070256"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647466"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti** > **Opzioni** e quindi selezionare **Ambiente** > **Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti** > **Opzioni** e quindi selezionare **Ambiente** > **Tipi di carattere e colori**.
 
 Le modifiche delle combinazioni colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
