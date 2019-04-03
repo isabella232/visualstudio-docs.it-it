@@ -50,7 +50,7 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 2. Generare gli assembly satellite per l'applicazione usando [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator) o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-3. Generare un manifesto dell'applicazione o aprire il manifesto dell'applicazione esistente usando *MageUI.exe*. Per altre informazioni su questo strumento, vedere [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
+3. Generare un manifesto dell'applicazione o aprire il manifesto dell'applicazione esistente usando *MageUI.exe*. Per altre informazioni su questo strumento, vedere [MageUI.exe (Strumento per la generazione e la modifica di manifesti, client grafico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
 
 4. Scegliere la scheda **File** .
 
