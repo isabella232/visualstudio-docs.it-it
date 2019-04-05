@@ -1,14 +1,9 @@
 ---
 title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetDerivedMostReference
 helpviewer_keywords:
@@ -16,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 07de4236d59ea7c55271ac5a1cfe7546e98fdeaa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 44413531cf3a91c6677d9ce3d56e10646307ffd6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964596"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene il riferimento più derivato di un riferimento. Riservato per utilizzi futuri.  
+Ottiene il riferimento più derivato di un riferimento. Riservato per usi futuri.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -55,4 +50,3 @@ int GetDerivedMostReference( 
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

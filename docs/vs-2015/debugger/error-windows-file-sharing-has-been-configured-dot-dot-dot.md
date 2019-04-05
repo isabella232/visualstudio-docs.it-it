@@ -1,14 +1,9 @@
 ---
-title: 'Errore: La condivisione file di Windows è stata configurata... | Microsoft Docs'
-ms.custom: ''
+title: 'Errore: Condivisione file di Windows è stata configurata... | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969869"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Errore: la condivisione di file di Windows è stata configurata...
+# <a name="error-windows-file-sharing-has-been-configured"></a>Errore: La condivisione di file di Windows è stata configurata...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La condivisione di file di Windows è stata configurata in modo da connettersi al computer remoto utilizzando un nome utente diverso. Ciò è incompatibile con il debug remoto.  
@@ -47,13 +42,10 @@ La condivisione di file di Windows è stata configurata in modo da connettersi a
   
      . Disconnettersi dal computer remoto, quindi riconfigurare la condivisione file per connettersi a un altro computer con il proprio nome account:  
   
-    1.  Nel **avviare** dal menu **Accessori**e quindi fare clic su **prompt dei comandi**.  
+    1.  Fare clic sul pulsante **Start**, scegliere **Accessori**, quindi **Prompt dei comandi**.  
   
     2.  Al prompt dei comandi di Windows digitare:  
   
          `net use /delete computer_name`  
   
     3.  Modificare le impostazioni di condivisione file utilizzando uno dei metodi illustrati nella Guida di windows.
-
-
-

@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammi di sequenza UML: Riferimento | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammi di sequenza UML: Riferimenti | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954746"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>Diagrammi di sequenza UML: riferimenti
+# <a name="uml-sequence-diagrams-reference"></a>Diagrammi di sequenza UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio, un *diagramma di sequenza* Mostra un'interazione che rappresenta la sequenza di messaggi tra istanze di classi, componenti, sottosistemi o attori. Data e ora scorrono verso la parte inferiore del diagramma e mostrano il flusso di controllo da un partecipante a un altro. Usare i diagrammi di sequenza per visualizzare istanze ed eventi, invece di classi e metodi. Nel diagramma possono essere visualizzate più istanze dello stesso tipo e più di un'occorrenza dello stesso messaggio.  
@@ -45,7 +42,7 @@ In Visual Studio, un *diagramma di sequenza* Mostra un'interazione che rappresen
   
 |**Forma**|**Elemento**|**Descrizione**|  
 |---------------|-----------------|---------------------|  
-|1|**Linea di vita**|Linea verticale che rappresenta la sequenza di eventi che si verificano in un partecipante durante un'interazione, mentre il tempo avanza lungo la linea. Questo partecipante può essere un'istanza di una classe, un componente o un attore.|  
+|1|**Lifeline**|Linea verticale che rappresenta la sequenza di eventi che si verificano in un partecipante durante un'interazione, mentre il tempo avanza lungo la linea. Questo partecipante può essere un'istanza di una classe, un componente o un attore.|  
 |2|**attore**|Partecipante esterno al sistema in fase di sviluppo.<br /><br /> È possibile visualizzare un simbolo attore all'inizio di una linea di vita impostando relativi **attore** proprietà.|  
 |3|**Messaggio sincrono**|Il mittente attende una risposta a un messaggio sincrono prima di continuare. Il diagramma mostra sia la chiamata che il risultato della chiamata. I messaggi sincroni vengono usati per rappresentare chiamate di funzione comuni all'interno di un programma, oltre ad altri tipi di messaggio con un comportamento analogo.|  
 |4|**Messaggio asincrono**|Messaggio che non richiede una risposta prima che il mittente continui. Un messaggio asincrono mostra solo una chiamata dal mittente. Usarlo per rappresentare la comunicazione tra thread separati o la creazione di un nuovo thread.|  
@@ -61,15 +58,12 @@ In Visual Studio, un *diagramma di sequenza* Mostra un'interazione che rappresen
 |14|**Protezione del frammento**|Può essere usato per dichiarare una condizione rilevante per l'eventuale esecuzione della frammentazione.<br /><br /> Per impostare una protezione, selezionare un frammento, quindi selezionare la protezione e digitare un valore.|  
 |**X**|**Evento di eliminazione**|Rappresenta il punto in cui l'oggetto viene eliminato o non più accessibile. Viene visualizzato nella parte inferiore di ogni linea di vita.|  
 ||**Interazione**|Raccolta di messaggi e linee di vita visualizzata nel diagramma di sequenza. Per visualizzare le proprietà di un'interazione, è necessario selezionarla in **Esplora modelli UML**.|  
-||**Diagramma sequenza**|Diagramma che visualizza un'interazione. Per visualizzare le proprietà, fare clic su una parte vuota del diagramma. **Nota:** i nomi del diagramma di sequenza, l'interazione che viene visualizzato e il file che contiene il diagramma può essere tutti diverso.|  
+||**Diagramma sequenza**|Diagramma che visualizza un'interazione. Per visualizzare le proprietà, fare clic su una parte vuota del diagramma. **Nota:**  I nomi del diagramma di sequenza, il file contenente il diagramma e l'attività visualizzata dal diagramma possono essere tutti diversi. I nomi del diagramma di sequenza, l'interazione visualizzata e il file che contiene il diagramma possono essere tutti diversi.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: riferimenti](../modeling/uml-component-diagrams-reference.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: passaggio nei servizi WCF | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Istruzioni nei servizi WCF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7474626ccf5310faf5fc22c6323dc388dd20461d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ad5ca2d74a1c141b9687d9b9eac5d8b3e268cc0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955236"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Procedura: eseguire istruzioni nei servizi WCF
+# <a name="how-to-step-into-wcf-services"></a>Procedura: Eseguire istruzioni nei servizi WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è possibile eseguire istruzioni in un servizio WCF. Se il servizio WCF si trova nella stessa soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] del client, è possibile raggiungere punti di interruzione nel servizio WCF.  
@@ -40,7 +35,7 @@ In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è possibile eseg
   
 1.  Creare una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] contenente entrambi i progetti client WCF e servizio WCF.  
   
-2.  In Esplora soluzioni, fare clic sul progetto Client WCF e quindi fare clic su **imposta come progetto di avvio**.  
+2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto Client WCF e scegliere **Imposta come progetto di avvio**.  
   
 3.  Attivare il debug nel file app.config o web.config. Per altre informazioni, vedere [limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md).  
   
@@ -51,7 +46,4 @@ In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è possibile eseg
 ## <a name="see-also"></a>Vedere anche  
  [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)   
  [Limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Procedura: Eseguire il debug di un servizio WCF indipendente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
-
-
-
+ [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

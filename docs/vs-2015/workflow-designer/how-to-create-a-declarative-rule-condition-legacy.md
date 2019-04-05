@@ -1,11 +1,8 @@
 ---
-title: 'Procedura: creare una condizione della regola dichiarativa (Legacy) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare una condizione della regola dichiarativa (Legacy) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - declarative rule conditions
@@ -15,15 +12,15 @@ ms.assetid: 804b6129-c433-408f-a424-46987967730c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2508404840db81f03ba4865a3e5d5af91e5c653b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955192"
 ---
-# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procedura: creare una condizione della regola dichiarativa (legacy)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procedura: Creare una condizione della regola dichiarativa (legacy)
 In questo argomento viene descritto come dichiarare una condizione della regola usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy che fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Un'istruzione di condizione restituisce **True** oppure **False**. Una condizione della regola dichiarativa è un'istruzione della condizione che viene creata usando il [finestra di dialogo Editor condizione regola (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) e archiviata in formato XML con il flusso di lavoro. Può includere predicati che confrontano lo stato del flusso di lavoro con l'algebra booleana che combina più predicati.  
@@ -34,9 +31,9 @@ In questo argomento viene descritto come dichiarare una condizione della regola 
   
 -   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [Attività ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+-   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [Attività WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+-   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
 -   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   

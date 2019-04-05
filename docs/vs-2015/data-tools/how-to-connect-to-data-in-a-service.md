@@ -1,12 +1,9 @@
 ---
-title: 'Procedura: connettersi ai dati in un servizio | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Connettersi ai dati in un servizio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968092"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Procedura: connettersi ai dati di un servizio
+# <a name="how-to-connect-to-data-in-a-service"></a>Procedura: Connettersi ai dati di un servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -41,7 +38,7 @@ Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [co
  Dopo il completamento della procedura guidata, viene aggiunto al progetto un riferimento al servizio ed è immediatamente disponibile nel [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
->  Gli elementi visualizzati nei **Zdroje dat** finestra dipendono le informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per il **configurazione guidata origine dati** per creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, quindi non ci sono elementi vengono visualizzati nei **finestra Origini dati** dopo aver completato la procedura guidata. Questo avviene perché i set di dati non tipizzati non forniscono alcuno schema, in modo che la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
+>  Gli elementi visualizzati nella finestra **Origini dati** dipendono dalle informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, quindi non ci sono elementi vengono visualizzati nei **finestra Origini dati** dopo aver completato la procedura guidata. Questo avviene perché i set di dati non tipizzati non forniscono alcuno schema, in modo che la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -62,7 +59,7 @@ Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [co
   
 6.  Scegliere **Fine**.  
   
-     L'origine dati viene aggiunta per il **Zdroje dat** finestra.  
+     L'origine dati viene aggiunta alla finestra **Origini dati**.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
   
@@ -73,4 +70,3 @@ Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [co
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli WPF a un servizio dati WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

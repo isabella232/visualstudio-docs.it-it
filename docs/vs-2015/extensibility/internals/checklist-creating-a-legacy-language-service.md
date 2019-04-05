@@ -1,27 +1,22 @@
 ---
 title: 'Elenco di controllo: Creazione di un servizio di linguaggio Legacy | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782986"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955050"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Elenco di controllo: Creazione di un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -116,7 +111,7 @@ Elenco di controllo seguente sono riepilogati i passaggi di base è necessario e
   
 - struttura  
   
-   Sono disponibili diverse opzioni per il supporto della struttura. Ad esempio, è possibile supportare le **Comprimi alle definizioni** comando, forniscono aree della struttura controllata dall'editor o supportare le aree di gestito dal client. Per altre informazioni, vedere [procedura: fornire supporto espanso la struttura in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Sono disponibili diverse opzioni per il supporto della struttura. Ad esempio, è possibile supportare le **Comprimi alle definizioni** comando, forniscono aree della struttura controllata dall'editor o supportare le aree di gestito dal client. Per altre informazioni, vedere [Procedura: Fornire supporto per la struttura espanso in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Registrazione del servizio di linguaggio  
   
@@ -133,4 +128,3 @@ Elenco di controllo seguente sono riepilogati i passaggi di base è necessario e
 ## <a name="see-also"></a>Vedere anche  
  [Sviluppo di un servizio di linguaggio Legacy](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

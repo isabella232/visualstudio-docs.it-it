@@ -1,26 +1,21 @@
 ---
 title: Usando il modello di automazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea911dd70ae3a5ca0e53888b47ed2a8d859827c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0e628b1e920031aa447485536863c1b563bc1c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954653"
 ---
 # <a name="using-the-automation-model"></a>Uso del modello di automazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51789129"
 Dopo aver connesso il pacchetto VSPackage all'automazione, è possibile ottenere le proprietà e metodi chiamando il <xref:EnvDTE.DTEClass.GetObject%2A> metodo su di <xref:EnvDTE._DTE> oggetto, passando una stringa che rappresenta l'oggetto da recuperare.  
   
 ## <a name="obtaining-project-objects"></a>Recupero di oggetti del progetto  
- Di seguito sono riportati due esempi di codice che illustrano come un consumer di automazione Ottiene il progetto di oggetti di automazione. Per informazioni su come ottenere l'oggetto DTE, vedere [procedura: ottenere riferimenti a DTE e DTE2 oggetti](http://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+ Di seguito sono riportati due esempi di codice che illustrano come un consumer di automazione Ottiene il progetto di oggetti di automazione. Per informazioni su come ottenere l'oggetto DTE, vedere [come: Ottenere riferimenti a DTE e DTE2 oggetti](http://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
   
 ```vb  
 Sub DoAutomation()  
@@ -80,4 +75,3 @@ Next
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:EnvDTE.DTEClass.GetObject%2A>
-

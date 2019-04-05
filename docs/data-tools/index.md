@@ -1,13 +1,19 @@
 ---
 title: Sviluppare soluzioni dati
-description: 'Informazioni su diversi strumenti per lo sviluppo di soluzioni dati in Visual Studio, inclusi gli strumenti di .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight e Analisi di flusso di Azure.'
+description: Informazioni su diversi strumenti per lo sviluppo di soluzioni dati in Visual Studio, inclusi gli strumenti di .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight e Analisi di flusso di Azure.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-  - data-storage
+- data-storage
+ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323240"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Usare gli strumenti dati in Visual Studio per sviluppare soluzioni dati
 

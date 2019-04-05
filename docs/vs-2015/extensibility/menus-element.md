@@ -1,27 +1,22 @@
 ---
 title: Elemento Menus | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 86d5b1e19072e2a008a588ae8646657a2d87d9a1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10e4a865774798792a386a4736058b0a5068db85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954824"
 ---
 # <a name="menus-element"></a>Elemento Menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,4 +82,3 @@ Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPac
 ## <a name="see-also"></a>Vedere anche  
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
-

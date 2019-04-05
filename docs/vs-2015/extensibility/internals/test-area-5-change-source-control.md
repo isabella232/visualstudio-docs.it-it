@@ -1,27 +1,22 @@
 ---
 title: 'Area di test 5: Modifica controllo del codice sorgente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955348"
 ---
 # <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
   
 - **Connettere/disconnettere:**  
   
-  Attiva o disattiva la stato connesso o non in linea della soluzione controllato, come illustrato nella zona 3. Per altre informazioni, vedere [Test zona 3: estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Attiva o disattiva la stato connesso o non in linea della soluzione controllato, come illustrato nella zona 3. Per altre informazioni, vedere [Test zona 3: Check-Out / annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
  Nell'esempio [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] percorso menu ambiente di sviluppo integrato è utilizzato nei test case.  
@@ -50,7 +45,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per il **Modifica controllo del codice sorgente** comando area di test.  
   
-### <a name="case-5a-bind"></a>Caso 5a: eseguire l'associazione  
+### <a name="case-5a-bind"></a>Case 5a: Eseguire l'associazione  
  Binding consente all'utente di aggiungere le informazioni sul controllo codice sorgente per i progetti selezionati e le soluzioni. L'utente è in genere viene richiesto di identificare un progetto nel controllo del codice sorgente in cui questi devono essere aggiunti. L'utente non può creare un nuovo progetto nel controllo del codice sorgente come parte di questa operazione (a contrasto elevato con Aggiungi al controllo del codice sorgente).  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -59,17 +54,17 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 |Binding a percorso che è sincronizzato con client|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Creare un duplicato del progetto e soluzione nell'archivio delle versioni (condividere e creare un ramo se si usa [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />4.  Aprire **Modifica controllo del codice sorgente** finestra di dialogo (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />5.  Dissocia tutti.<br />6.  Fare clic su **OK** per chiudere **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />7.  Riaprire **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />8.  Selezionare tutto.<br />9. Fare clic su **associare**.<br />10. Selezionare il percorso della soluzione e progetto sottoposto a branching (dal passaggio 3)<br />11. Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />12. Ottenere più recente in modo ricorsivo per tutti gli elementi.|Contenuto del file dopo get esattamente come prima get.|  
 |Binding a percorso che non è sincronizzato con client|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Creare un duplicato del progetto e soluzione nell'archivio delle versioni (condividere e creare un ramo se si usa [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />4.  Modificare i file nel progetto sottoposto a branching nell'archivio delle versioni.<br />5.  Aprire **Modifica controllo del codice sorgente** finestra di dialogo (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />6.  Dissocia tutti.<br />7.  Fare clic su **OK** per chiudere **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />8.  Riaprire **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />9. Selezionare tutto.<br />10. Fare clic su **associare**.<br />11. Passare a un ramo di posizione per la soluzione e progetto.<br />12. Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />13. Se viene visualizzata, accettare la finestra di dialogo di avviso.<br />14. Ottenere ricorsivo più recente per tutti gli elementi.|I file che sono stati modificati nel passaggio 4 vengono modificati anche in locale.|  
 |Associare soluzione mai sotto il controllo del codice sorgente|1.  Creare una cartella vuota nel controllo del codice sorgente.<br />2.  Creare un progetto client.<br />3.  Aprire **Modifica controllo del codice sorgente** finestra di dialogo (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />4.  Associare la soluzione in un percorso vuoto nel controllo del codice sorgente.<br />5.  Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />6.  Fare clic su **ontinua con le associazioni** nella finestra di dialogo di conferma.<br />7.  Fare clic su **OK** nella finestra di dialogo di avviso se viene visualizzato.|Soluzione viene aggiunta al controllo del codice sorgente.<br /><br /> Soluzioni e progetti sono stati estratti.|  
-|Annullare l'associazione|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire la finestra di dialogo Modifica controllo del codice sorgente.<br />4.  Dissocia tutti.<br />5.  Fare clic su **OK** per chiudere la finestra di dialogo. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />6.  Riaprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />7.  Eseguire l'associazione alla posizione non correlati.<br />8.  Fare clic su **annullare**.|`Result from Step 5:`<br /><br /> La soluzione non è più in controllo del codice sorgente<br /><br /> `Result from Step 8:`<br /><br /> Soluzione è ancora non in controllo del codice sorgente.|  
+|Annullare l'associazione|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire la finestra di dialogo Modifica controllo del codice sorgente.<br />4.  Dissocia tutti.<br />5.  Fare clic su **OK** per chiudere la finestra di dialogo. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />6.  Riaprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />7.  Eseguire l'associazione alla posizione non correlati.<br />8.  Fare clic su **Annulla**.|`Result from Step 5:`<br /><br /> La soluzione non è più in controllo del codice sorgente<br /><br /> `Result from Step 8:`<br /><br /> Soluzione è ancora non in controllo del codice sorgente.|  
   
-### <a name="case-5b-unbind"></a>Caso 5b: separazione  
+### <a name="case-5b-unbind"></a>Case 5b: annullamento del binding  
  Dissocia le informazioni sul controllo codice sorgente rimuove da progetti e la propria soluzione. La soluzione e progetti interessati si basano su una combinazione di selezione dell'utente e come gli elementi sono stati aggiunti al controllo del codice sorgente.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Annullamento del binding soluzione contenente un unico File System o progetto Web IIS locale e il progetto client|1.  Creare un File System o un progetto Web IIS locale.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto di client per la soluzione.<br />4.  Se richiesto, accettare controllare della soluzione.<br />5.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />6.  Fare clic su **disassociare**.<br />7.  Fare clic su **OK** per chiudere la finestra di dialogo.<br />8.  Tenta di estrarre soluzioni, progetti, elementi di soluzione, gli elementi del progetto.|Soluzioni e progetti non sono sotto controllo del codice sorgente.<br /><br /> Non vengono visualizzati i comandi di menu di controllo di origine.|  
-|Annullare l'associazione Cancel|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />4.  Fare clic su **disassociare tutti**.<br />5.  Fare clic su **annullare**.|Soluzione consiste nel controllo del codice sorgente.|  
+|Annullare l'associazione Cancel|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />4.  Fare clic su **disassociare tutti**.<br />5.  Fare clic su **Annulla**.|Soluzione consiste nel controllo del codice sorgente.|  
   
-### <a name="case-5c-rebind"></a>Caso 5C: Rebind  
+### <a name="case-5c-rebind"></a>Caso 5C: riassociazione  
  Riassociazione è semplicemente una combinazione di separazione e bind, ovvero il processo di progetto o soluzione che era in precedenza nel controllo del codice sorgente ed è stato dissociato la riassociazione.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -81,4 +76,3 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

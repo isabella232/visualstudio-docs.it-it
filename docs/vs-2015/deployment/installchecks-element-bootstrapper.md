@@ -1,14 +1,9 @@
 ---
 title: '&lt;InstallChecks&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 03f489c22c8912e332f7d01e6ec4ac48aacda30b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966415"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Name`|Obbligatorio. Il nome completo dell'assembly da verificare.|  
 |`PublicKeyToken`|Obbligatorio. La forma abbreviata della chiave pubblica associato a questo assembly un nome sicuro. Tutti gli assembly memorizzati nella Global Assembly Cache devono avere un nome, una versione e una chiave pubblica.|  
-|`Version`|Obbligatorio. La versione dell'assembly.<br /><br /> Il numero di versione ha il formato \< *versione principale*>.\< *podverze*>.\< *versione build*>.\< *revisione*>.|  
+|`Version`|Obbligatorio. Versione dell'assembly.<br /><br /> Il numero di versione ha il formato \< *versione principale*>.\< *podverze*>.\< *versione build*>.\< *revisione*>.|  
 |`Language`|Facoltativo. La lingua di un assembly localizzato. Il valore predefinito è `neutral`.|  
 |`ProcessorArchitecture`|Facoltativo. Il processore del computer di destinazione dell'installazione. Il valore predefinito è `msil`.|  
   
@@ -175,7 +170,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |Proprietà|Note|Valori possibili|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Numero di versione del sistema operativo Windows 9 X.|4.10 = Windows 98|  
-|`VersionNT`|Numero di versione del sistema operativo basato su Windows NT.|ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT`|Numero di versione del sistema operativo basato su Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|Numero di versione del sistema operativo a 64 bit basati su Windows NT.|Come indicato in precedenza.|  
 |`VersionMsi`|Numero di versione del servizio Windows Installer.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|Specifica se un utente dispone di privilegi di amministratore in un sistema operativo basato su Windows NT.|0 non = privilegi di amministratore<br /><br /> 1 = i privilegi di amministratore|  
@@ -190,6 +185,3 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 ## <a name="see-also"></a>Vedere anche  
  [\<I comandi > elemento](../deployment/commands-element-bootstrapper.md)   
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Programmazione con l'API UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955184"
 ---
 # <a name="programming-with-the-uml-api"></a>Programmazione con l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
   
 |Argomento|Tipi e i metodi di esempio descritti|Funzionalità descritte|  
 |-----------|-----------------------------------------|------------------------|  
-|[Esplorare relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementi UML e relative proprietà e associazioni. Ad esempio, IElement e relativi discendenti tra cui: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|In Visual Studio, i modelli UML conformi alla specifica UML versione 2.1.2, che può essere ottenuto nel [pagina delle risorse UML](http://go.microsoft.com/fwlink/?LinkId=160796). Ogni tipo è un'interfaccia avente lo stesso nome del tipo UML, preceduto da "I".|  
+|[Esplorare relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementi UML e relative proprietà e associazioni. Ad esempio, IElement e relativi discendenti, tra cui: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|In Visual Studio, i modelli UML conformi alla specifica UML versione 2.1.2, che può essere ottenuto nel [pagina delle risorse UML](http://go.microsoft.com/fwlink/?LinkId=160796). Ogni tipo è un'interfaccia avente lo stesso nome del tipo UML, preceduto da "I".|  
 |[Creare elementi e relazioni nei modelli UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Ogni tipo di elemento dispone di metodi per la creazione dei relativi elementi figlio.|  
 |[Visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Ogni elemento in un modello può essere rappresentato come una forma in un diagramma. In alcuni casi è possibile creare nuove forme per ogni oggetto. È possibile spostare, ridimensionare, colorare, comprimere o espandere queste forme.|  
 |[Esplorare il modello UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|L'archivio modelli archivia il modello.<br /><br /> Il contesto del diagramma consente di accedere al diagramma e all'archivio correnti.|  
@@ -74,6 +71,3 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
 ## <a name="see-also"></a>Vedere anche  
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Riferimento API per l'estensibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

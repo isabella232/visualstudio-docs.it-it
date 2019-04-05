@@ -1,25 +1,20 @@
 ---
 title: Varie, XML, Editor di testo, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0181609f083aada564edb585f64ccdaaf104ed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955057"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varie, XML, editor di testo, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
   
 ## <a name="auto-insert"></a>Inserimento automatico  
  **Tag di chiusura**  
- Se l'impostazione di completamento automatico è selezionata, l'editor aggiunge automaticamente un tag di fine quando si digita una parentesi uncinata chiusa (>) per chiudere un tag di inizio, se il tag non è stato ancora chiuso. Comportamento predefinito.  
+ Se è selezionata l'impostazione di completamento automatico, l'editor aggiunge automaticamente un tag di fine quando si digita una parentesi angolare (>) per chiudere un tag di inizio, se il tag non è già chiuso. Comportamento predefinito.  
   
  Il completamento di un elemento vuoto non dipende dall'impostazione di completamento automatico. È sempre possibile completare automaticamente un elemento vuoto digitando una barra rovesciata (/).  
   
@@ -52,7 +47,7 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
  Selezionato per impostazione predefinita.  
   
 ## <a name="network"></a>Rete  
- **Scarica automaticamente DTD e schemi**  
+ **Scarica automaticamente le DTD e gli schemi**  
  Gli schemi e le DTD (Document Type Definitions) vengono scaricati automaticamente dalle posizioni HTTP. Questa funzionalità usa System.Net con il rilevamento automatico dei server proxy abilitato.  
   
  Selezionato per impostazione predefinita.  
@@ -70,6 +65,3 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
 ## <a name="see-also"></a>Vedere anche  
  [Proprietà di documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)   
  [Componenti dell'editor XML](../xml-tools/xml-editor-components.md)
-
-
-

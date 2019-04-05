@@ -1,27 +1,22 @@
 ---
 title: Estensione e personalizzazione di Windows lo strumento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969521"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Estensione e personalizzazione delle finestre degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti
   
  I riquadri della finestra degli strumenti possono ospitare controlli utente WPF e supportare le barre degli strumenti. È possibile eseguire l'override della proprietà <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> per restituire l'handle del controllo ospitato.  
   
- È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [aggiunta di un Menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [aggiunta di ricerca per una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).  
+ È possibile aggiungere più funzionalità diverse alle finestre degli strumenti. Ad esempio, è possibile aggiungere una barra degli strumenti: [Aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) o un menu di scelta rapida: [Aggiunta di un Menu di scelta rapida in una finestra degli strumenti](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). È possibile aggiungere un controllo di ricerca che consente di cercare gli elementi all'interno la finestra degli strumenti: [Aggiunta di ricerca a una finestra degli strumenti](../extensibility/adding-search-to-a-tool-window.md).  
   
- È possibile sottoscrivere gli eventi di finestra degli strumenti: [sottoscrive un evento](../extensibility/subscribing-to-an-event.md).  
+ È possibile sottoscrivere gli eventi di finestra degli strumenti: [Sottoscrizione a un evento](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Estensione Windows strumento esistente  
  È possibile aggiungere informazioni sulla finestra degli strumenti a una nuova **opzioni** pagina e una nuova impostazione sul **delle proprietà** pagina, scrivere il **elenco attività** e **Output**  windows. Per altre informazioni, vedere [estendendo le proprietà, elenco attività, Output e opzioni di Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) e [estendendo le proprietà, elenco attività, Output e opzioni Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio offre diversi tipi di windows, ad esempio finestre degli strumenti
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)
-

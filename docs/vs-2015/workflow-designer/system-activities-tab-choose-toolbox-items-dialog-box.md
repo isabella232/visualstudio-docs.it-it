@@ -1,11 +1,8 @@
 ---
 title: Scheda System. Activities, Scegli elementi della finestra di dialogo casella | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
@@ -14,13 +11,13 @@ ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967656"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti
 Questa scheda della finestra di **Scegli elementi della casella degli strumenti** finestra di dialogo Visualizza un elenco di [!INCLUDE[wf](../includes/wf-md.md)] attività, modelli e gli elementi disponibili all'utente. Per visualizzare l'elenco, selezionare **Scegli elementi della casella degli strumenti** dal **Tools** dal menu o facendo clic con il **della casella degli strumenti** e selezionando **Scegli elementi**per visualizzare la **Scegli elementi della casella degli strumenti** finestra di dialogo e quindi selezionare il **System. Activities** scheda. Per impostazione predefinita, l'elenco contiene le attività del flusso di lavoro dall'assembly System. Activities, System.ServiceModel.Activities e System.Activities.Core.Presentation; Tuttavia, solo fornito dal sistema nelle attività illustrate e le attività aggiunte mediante altri assembly visualizzati nella **casella degli strumenti** vengono controllati per impostazione predefinita. Aggiunti di recente le attività vengono controllate automaticamente e vengono visualizzati nei **casella degli strumenti** quando fa clic su **OK** nella finestra di dialogo. Inoltre, questi elementi vengono visualizzati nei **casella degli strumenti** sotto una nuova categoria che corrisponde allo spazio dei nomi in cui risiede l'attività di elemento o il modello.  

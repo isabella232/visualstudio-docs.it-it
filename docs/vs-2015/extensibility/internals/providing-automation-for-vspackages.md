@@ -1,27 +1,22 @@
 ---
 title: Automazione per i pacchetti VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6eb16d1873c7986d9fac556440f24eb007396f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966620"
 ---
 # <a name="providing-automation-for-vspackages"></a>Automazione per i pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Esistono due modi per fornire l'automazione per i pacchetti VSPackage: implement
  L'architettura di evento dell'ambiente offre un altro posto per l'utente al quale accodare oggetti personalizzati specifico del VSPackage. Ad esempio, tramite la creazione di oggetti evento univoco, è possibile estendere il modello di evento dell'ambiente per i progetti. È possibile fornire i propri eventi quando viene aggiunto un nuovo elemento per il proprio tipo di progetto. Per altre informazioni, vedere [esposizione di eventi](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
   
 #### <a name="window-objects"></a>Oggetti finestra  
- Windows può passare nuovamente un oggetto di automazione specifico del VSPackage nell'ambiente quando viene chiamato. Implementare un oggetto derivato da <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> o `IDispatch` che passa indietro di proprietà, estendendo l'oggetto finestra in cui viene individuato. Ad esempio, è possibile usare questo approccio per fornire l'automazione per un controllo posizionato nella cornice della finestra. La semantica di questo oggetto e qualsiasi altro oggetto che è possibile estendere è quelle in uso per la progettazione. Per altre informazioni, vedere [procedura: fornire l'automazione per Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
+ Windows può passare nuovamente un oggetto di automazione specifico del VSPackage nell'ambiente quando viene chiamato. Implementare un oggetto derivato da <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> o `IDispatch` che passa indietro di proprietà, estendendo l'oggetto finestra in cui viene individuato. Ad esempio, è possibile usare questo approccio per fornire l'automazione per un controllo posizionato nella cornice della finestra. La semantica di questo oggetto e qualsiasi altro oggetto che è possibile estendere è quelle in uso per la progettazione. Per altre informazioni, vedere [Procedura: Fornire l'automazione per Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
   
 #### <a name="options-pages-on-the-tools-menu"></a>Pagine Opzioni del menu Strumenti  
  È possibile creare pagine per estendere gli strumenti, il modello di automazione opzioni tramite l'implementazione delle pagine e l'aggiunta di informazioni nel Registro di sistema per creare le proprie opzioni. Le pagine possono quindi essere chiamate tramite il modello a oggetti ambiente, ad esempio tutte le altre pagine di opzioni. Se la progettazione della funzionalità di cui che si sta aggiungendo all'ambiente tramite pacchetti VSPackage richiede che le pagine di opzioni, è necessario aggiungere anche il supporto di automazione. Per altre informazioni, vedere [supporto di automazione per le pagine di opzioni](../../extensibility/internals/automation-support-for-options-pages.md).  
@@ -49,4 +44,3 @@ Esistono due modi per fornire l'automazione per i pacchetti VSPackage: implement
  Per estendere l'automazione per i progetti, si implementano anche gli oggetti di automazione standard (derivato da `IDispatch`) che in evidenza accanto ad altri oggetti di progetto e implementare le proprietà e metodi standard. Esempi di oggetti standard includono gli oggetti di progetto che vengono inseriti nella gerarchia della soluzione, ad esempio `Projects`, `Project`, `ProjectItem`, e `ProjectItems`. Ogni nuovo tipo di progetto deve implementare questi oggetti (e possibilmente altri registri in base alla semantica del progetto).  
   
  In un certo senso, questi oggetti offrono il vantaggio degli oggetti di progetto specifico del VSPackage opposto. Gli oggetti di automazione standard consentono il progetto da usare in modo generalizzato come qualsiasi altro progetto che supportano gli stessi oggetti. Di conseguenza, un componente aggiuntivo che viene scritto su general `Project` e `ProjectItem` oggetti possono funzionare per i progetti di qualsiasi tipo. Per altre informazioni, vedere [progetto di modellazione](../../extensibility/internals/project-modeling.md).
-

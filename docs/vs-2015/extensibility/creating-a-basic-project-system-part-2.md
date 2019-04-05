@@ -1,14 +1,9 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753971"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954771"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creazione di un sistema di progetto di base, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. Reimpostare l'istanza sperimentale di Visual Studio SDK.  
   
-    Sul [!INCLUDE[win7](../includes/win7-md.md)]: nel menu Start, individuare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare l'istanza di Microsoft Visual Studio sperimentale**.  
+    On [!INCLUDE[win7](../includes/win7-md.md)]: Nel menu Start, trovare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare l'istanza di Microsoft Visual Studio sperimentale**.  
   
-    Nelle versioni successive di Windows: nella schermata Start di, digitare **ripristinare Microsoft Visual Studio \<versione > istanza sperimentale**.  
+    Nelle versioni successive di Windows: Nella schermata Start, digitare **ripristinare Microsoft Visual Studio \<versione > istanza sperimentale**.  
   
 2. Viene visualizzata una finestra del prompt dei comandi. Quando vengono visualizzate le parole `Press any key to continue`, fare clic su INVIO. Dopo aver chiuso la finestra, aprire Visual Studio.  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ è il nome specificato da un utente di **nuovo progetto** nella finestra di dialogo modificata per rimuovere i caratteri non sicuri e gli spazi.  
   
-  Per un elenco completo dei parametri dei modelli, vedere [Parametri di modelli](../ide/template-parameters.md).  Se si desidera creare il proprio parametro di modello personalizzato, vedere [NIB: procedura: passare parametri personalizzati ai modelli](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Per un elenco completo dei parametri dei modelli, vedere [Parametri di modelli](../ide/template-parameters.md).  Se si desidera creare il proprio parametro di modello personalizzato, vedere [NIB: Procedura: Passare parametri personalizzati ai modelli](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Per sostituire i parametri di modello di progetto  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Chiudere l'istanza sperimentale di Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Distribuire le app | Microsoft Docs
-description: 'Informazioni su come usare Visual Studio per distribuire applicazioni, servizi e componenti.'
+description: Informazioni su come usare Visual Studio per distribuire applicazioni, servizi e componenti.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325016"
 ---
 # <a name="deployment-in-visual-studio"></a>Distribuzione in Visual Studio
 

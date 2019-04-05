@@ -1,27 +1,22 @@
 ---
 title: 'Area di test 8: Cambio di plug-in | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964163"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Area di test 8: Cambio di plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
  Nell'esempio [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.  
   
--   Plug-in del controllo del codice sorgente corrente: **degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **Selezione plug-in** .  
+-   Controllo origine corrente del plug-in: **Gli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **Selezione plug-in**.  
   
 -   Modificare l'origine dell'associazione di controllo: **File** -> **controllo del codice sorgente** -> **Modifica controllo del codice sorgente**...  
   
@@ -41,7 +36,7 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'area di test di commutazione del plug-in.  
   
-### <a name="case-8a-automatic-change"></a>Caso 8a: modifiche automatico  
+### <a name="case-8a-automatic-change"></a>Case 8a: Modifiche automatico  
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
  Quando un utente viene caricata una soluzione che si trova sotto controllo del codice sorgente, la soluzione viene automaticamente caricata e il plug-in del controllo del codice sorgente appropriato viene selezionata come corrente.  
@@ -50,7 +45,7 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 |------------|----------------|--------------------------------|  
 |Modifica del plug-in controllo origine automatica|1.  Selezionare plug-nel test come corrente (**degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **plug-in Selezione**.)<br />2.  Creare un nuovo progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Selezionare un altro plug-in (ad esempio, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Accettare scaricamento soluzione richiesta.<br />6.  Riaprire la soluzione dal disco.|Soluzione è aperta.<br /><br /> Plug-in sottoposta a test è il controllo del codice sorgente corrente del plug-in.|  
   
-### <a name="case-8b-solution-based-change"></a>Caso 8b: modifica basati su soluzioni  
+### <a name="case-8b-solution-based-change"></a>Case 8b: Modifica basati su soluzioni  
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
  La soluzione può avere il controllo del codice sorgente associato del plug-in modificato.  
@@ -61,4 +56,3 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

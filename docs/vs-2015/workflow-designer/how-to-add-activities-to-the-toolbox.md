@@ -1,30 +1,27 @@
 ---
-title: 'Procedura: aggiungere attività alla casella degli strumenti | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere attività alla casella degli strumenti | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969867"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
+# <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: Aggiungere attività nella casella degli strumenti
 Le attività possono essere aggiunte per il **casella degli strumenti** nella soluzione in diversi modi. È possibile aggiungerli dall'interno il progetto corrente oppure fare riferimento a essi da un progetto diverso o da un assembly diverso.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Per aggiungere un'attività dall'interno del progetto corrente  
   
-1.  Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. [!INCLUDE[crabout](../includes/crabout-md.md)] aggiunta di una nuova attività personalizzata al progetto, vedere [procedura: aggiungere un nuovo elemento a un progetto di flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1.  Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. [!INCLUDE[crabout](../includes/crabout-md.md)] aggiunta di una nuova attività personalizzata al progetto, vedere [come: Aggiungere un nuovo elemento a un progetto di flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
 2.  Aggiungere la logica personalizzata all'attività.  
   

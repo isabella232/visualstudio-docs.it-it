@@ -1,21 +1,17 @@
 ---
 title: Indirizzamento Problemi2 DPI | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955334"
 ---
 # <a name="addressing-dpi-issues"></a>Risoluzione dei problemi relativi a DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +94,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funzioni di consentono la scalabilità in X o asse Y)  
   
-- lo spazio di int = DpiHelper.LogicalToDeviceUnitsX (10).  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
 - int altezza = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - Per le voci di menu e le immagini visualizzato, il <xref:System.Windows.Media.BitmapScalingMode> deve essere usato quando non causa altri elementi di una distorsione a eliminare confusa (nel server % 200 e 300%).  
   
-- • Per zoom grandi livelli non multipli di 100% (ad esempio, 250% o % 350), ridimensionamento delle immagini visualizzato con risultati bicubica nell'interfaccia utente fuzzy, sbiadito consentendo di riprodurre. Viene ottenuto un risultato migliore scalabilità l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, % 200 o 300%) prima e la scalabilità con Bicubica da tale posizione. Vedere caso speciale: prescaling immagini WPF per DPI elevato dei livelli per altre informazioni.  
+- • Per zoom grandi livelli non multipli di 100% (ad esempio, 250% o % 350), ridimensionamento delle immagini visualizzato con risultati bicubica nell'interfaccia utente fuzzy, sbiadito consentendo di riprodurre. Un risultato migliore ottenuto aumentando prima l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, 200% o % 300) e scalabilità con Bicubica da tale posizione. Vedere caso speciale: prescaling immagini WPF per DPI elevato dei livelli per altre informazioni.  
   
   La classe DpiHelper nello spazio dei nomi Microsoft.VisualStudio.PlatformUI fornisce un membro <xref:System.Windows.Media.BitmapScalingMode> che può essere utilizzato per l'associazione. Consentirà la shell di Visual Studio controllare la modalità ridimensionamento delle bitmap interno del prodotto in modo uniforme, in base al fattore di scala DPI.  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  Parte dell'interfaccia utente può ridimensionare indipendentemente dal livello di zoom DPI di sistema-set, ad esempio l'editor di testo di Visual Studio e finestre di progettazione basate su WPF (Desktop WPF e Windows Store). In questi casi, DpiHelper.BitmapScalingMode non deve essere utilizzato. Per risolvere il problema nell'editor, il team IDE creato una proprietà personalizzata denominata RenderOptions.BitmapScalingMode. Impostare il valore della proprietà da riprodurre o NearestNeighbor a seconda del livello di zoom combinato del sistema e l'interfaccia utente.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso speciale: prescaling immagini WPF per i livelli di DPI elevati  
- Per i livelli di zoom di dimensioni molto grandi che non sono multipli di 100% (ad esempio, 250%, % 350 e così via), ridimensionamento delle immagini visualizzato con risultati bicubica nell'interfaccia utente fuzzy, sbiadito consentendo di riprodurre. L'impressione di queste immagini insieme a testo nitido è quasi simile a quella di un'illusione ottica. Le immagini sembrano essere più da vicino l'occhio del lettore e in uscita da stato attivo in relazione al testo. Il risultato della scalabilità in queste dimensioni ingrandita può essere migliorato tramite prima il ridimensionamento l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, % 200 o 300%) e il ridimensionamento con Bicubica al resto (un ulteriore % 50).  
+ Per i livelli di zoom di dimensioni molto grandi che non sono multipli di 100% (ad esempio, 250%, % 350 e così via), ridimensionamento delle immagini visualizzato con risultati bicubica nell'interfaccia utente fuzzy, sbiadito consentendo di riprodurre. L'impressione di queste immagini insieme a testo nitido è quasi simile a quella di un'illusione ottica. Le immagini sembrano essere più da vicino l'occhio del lettore e in uscita da stato attivo in relazione al testo. Il risultato della scalabilità in queste dimensioni ingrandita può essere migliorato ridimensionando prima l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, 200% o % 300) e scalabilità con Bicubica al resto (un ulteriore % 50).  
   
  Il seguente è un esempio delle differenze nei risultati, in cui viene ridimensionata la prima immagine con l'algoritmo di ridimensionamento doppia migliorato -> 100%, 200% -> 250% e il secondo avviene con Bicubica 100% -> 250%.  
   
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Per abilitare l'interfaccia utente per usare questa scalabilità doppia, markup XAML per la visualizzazione di ogni elemento di immagine devono essere modificate. Gli esempi seguenti illustrano come usare la scalabilità double in WPF in Visual Studio usando la libreria di DpiHelper e Shell.12/14.  
   
- Passaggio 1: Prescale 300% l'immagine in 200% e così via usando NearestNeighbor.  
+ Passaggio 1: Prescale l'immagine da % 200, 300% e così via usando NearestNeighbor.  
   
  Prescale l'immagine utilizzando un convertitore di applicare un'associazione, o con un'estensione di markup XAML. Ad esempio:  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-
