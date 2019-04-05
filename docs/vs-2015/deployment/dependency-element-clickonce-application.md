@@ -1,14 +1,9 @@
 ---
 title: '&lt;dipendenza&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964589"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dipendenza&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +107,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="osversioninfo"></a>osVersionInfo  
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentOS` e contiene l'elemento `os` . Questo elemento non ha attributi.  
   
-### <a name="os"></a>sistema operativo  
+### <a name="os"></a>Sistema operativo  
  Obbligatorio. Questo elemento è figlio dell'elemento `osVersionInfo` . Questo elemento ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
@@ -123,7 +118,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 |`servicePackMajor`|Obbligatorio. Specifica il numero principale del service pack del sistema operativo.|  
 |`servicePackMinor`|Facoltativo. Specifica il numero secondario di service pack del sistema operativo.|  
 |`productType`|Facoltativo. Identifica il valore del tipo di prodotto. I valori validi sono `server`, `workstation` e `domainController`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `workstation`.|  
-|`suiteType`|Facoltativo. Identifica una famiglia di prodotti disponibile nel sistema, o tipo di configurazione del sistema. I valori validi sono `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, e `terminal`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `professional`.|  
+|`suiteType`|Facoltativo. Identifica una famiglia di prodotti disponibile nel sistema, o tipo di configurazione del sistema. I valori validi sono `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` e `terminal`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
  Facoltativo. Contiene il `assemblyIdentity` elemento. Il `dependentOS` e `dependentAssembly` elementi si escludono a vicenda: uno o l'altro necessarie affinché un `dependency` elemento, ma non entrambi.  
@@ -154,10 +149,10 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
   
-### <a name="dsigtransforms"></a>dsig: Transforms  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
   
-### <a name="dsigtransform"></a>dsig: Transform  
+### <a name="dsigtransform"></a>dsig:Transform  
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
@@ -226,7 +221,4 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
   
 ## <a name="see-also"></a>Vedere anche  
  [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<dipendenza > elemento](../deployment/dependency-element-clickonce-deployment.md)
-
-
-
+ [\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md)

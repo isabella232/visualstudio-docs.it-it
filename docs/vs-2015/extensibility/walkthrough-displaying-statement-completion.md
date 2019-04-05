@@ -1,28 +1,23 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione del completamento istruzioni | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966160"
 ---
-# <a name="walkthrough-displaying-statement-completion"></a>Procedura dettagliata: visualizzazione del completamento istruzioni
+# <a name="walkthrough-displaying-statement-completion"></a>Procedura dettagliata: Visualizzazione del completamento di istruzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile implementare il completamento delle istruzioni basata sul linguaggio definendo gli identificatori per il quale si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e quindi visualizzare il completamento per solo tale tipo oppure è possibile attivare il completamento di un tipo di contenuto esistente, ad esempio, "normale". Questa procedura dettagliata illustra come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", ovvero il tipo di contenuto dei file di testo. Il tipo di contenuto "text" è il predecessore di tutti gli altri tipi contenuti, inclusi file XML e codice.  
@@ -50,7 +45,7 @@ ms.locfileid: "51733042"
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
@@ -209,5 +204,4 @@ ms.locfileid: "51733042"
 4.  Mentre si digita prima di tutto "a" e quindi "d", verrà visualizzato un elenco che contiene "addition" e "personalizzazione". Si noti che sia selezionata l'addizione. Quando si digita un'altra "d", l'elenco deve contenere solo "addition," che viene ora selezionato. È possibile eseguire il commit premendo il tasto Tab, barra spaziatrice o invio "addition" o ignorare l'elenco digitando Esc o qualsiasi altra chiave.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

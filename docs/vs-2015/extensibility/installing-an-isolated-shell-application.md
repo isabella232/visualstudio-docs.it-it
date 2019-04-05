@@ -1,27 +1,22 @@
 ---
 title: Installazione di un'applicazione Shell isolata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966434"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installazione di un'applicazione Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
 ## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire le procedure descritte in questo argomento, gli strumenti seguenti devono essere installati nel computer.  
   
-- Visual Studio SDK  
+- The Visual Studio SDK  
   
 - Il [set di strumenti di Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=82720) versione 3.6  
   
@@ -164,7 +159,7 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
         ```  
   
     > [!NOTE]
-    >  Le dipendenze per le applicazioni di Shell (Isolated) sono necessari: DebuggerProxy, MasterPkgDef, risorse (in particolare il file .winprf), applicazione e PkgDefs.  
+    >  Le dipendenze necessarie per le applicazioni di Shell (Isolated) sono: DebuggerProxy, MasterPkgDef, risorse (in particolare il file .winprf), applicazione e PkgDefs.  
   
 ### <a name="registry-entries"></a>Voci del Registro di sistema  
  Il modello di progetto Shell (Isolated) include un' *ProjectName*file con estensione reg per le chiavi del Registro di sistema nell'installazione di tipo merge. Queste voci del Registro di sistema devono far parte del servizio gestito per scopi di pulizia sia l'installazione. È anche necessario creare i blocchi del Registro di sistema corrispondenti in ApplicationRegistry.wxs.  
@@ -181,10 +176,10 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
   
 5.  Per ogni voce del Registro di sistema *ProjectName*. reg, aggiungere un blocco del Registro di sistema corrispondenti, come negli esempi seguenti.  
   
-    |*ProjectName*Reg|ApplicationRegisty.wxs|  
+    |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "Oggetto DTE PhotoStudio"|\<Id RegistryKey = radice 'DteClsidRegKey' = la chiave 'HKCR' =' $(VAR. DteClsidRegKey)' azione = 'createAndRemoveOnUninstall' ><br /><br /> \<Tipo RegistryValue = 'stringa' nome =' @' valore =' $(VAR. Oggetto ShortProductName) DTE' / ><br /><br /> \</ RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\\LocalServer32 {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "$RootFolder$\PhotoStudio.exe"|\<Id RegistryKey = radice 'DteLocSrv32RegKey' = la chiave 'HKCR' =' $(VAR. \LocalServer32 DteClsidRegKey)' azione = 'createAndRemoveOnUninstall' ><br /><br /> \<Tipo RegistryValue = 'stringa' nome =' @' valore ='[INSTALLDIR] $(VAR. .Exe ShortProductName) "/ ><br /><br /> \</ RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "Oggetto DTE PhotoStudio"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<Tipo RegistryValue = 'stringa' nome =' @' valore =' $(VAR. Oggetto ShortProductName) DTE' / ><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      In questo esempio Var.DteClsidRegKey risolve la chiave del Registro di sistema nella riga superiore. Viene risolto Var.ShortProductName `PhotoStudio`.  
   
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Creazione di un'applicazione shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [Procedura dettagliata: Creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

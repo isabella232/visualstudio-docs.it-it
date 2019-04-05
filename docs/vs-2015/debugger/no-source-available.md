@@ -1,14 +1,9 @@
 ---
 title: Nessuna origine disponibile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
 dev_langs:
@@ -22,34 +17,31 @@ ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc8331c710141a2cc2837d97101e9dff2b49785b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9652073b6e5ea58b8206b195f3a99769a1b63a91
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965650"
 ---
 # <a name="no-source-available"></a>Nessuna origine disponibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il progetto non contiene codice sorgente per il codice che si tenta di visualizzare. La causa è facendo doppio clic su un modulo che non dispone di codice sorgente nel **finestra Stack di chiamate** oppure **finestra thread**. È possibile continuare il debug, ma non è possibile utilizzare la finestra di origine per impostare i punti di interruzione ed eseguire altre operazioni in questa posizione. Se è necessario impostare un punto di interruzione, usare il **nella finestra Disassembly** invece.  
+Il progetto non contiene codice sorgente per il codice che si tenta di visualizzare. Questa condizione si verifica, di solito, quando si fa doppio clic su un modulo per il quale non è disponibile codice sorgente nella finestra **Stack di chiamate** o **Thread**. È possibile continuare il debug, ma non è possibile utilizzare la finestra di origine per impostare i punti di interruzione ed eseguire altre operazioni in questa posizione. Per impostare un punto di interruzione, utilizzare invece la finestra **Disassembly**.  
   
  Nelle pagine delle proprietà della soluzione è possibile modificare le directory in cui il debugger cerca i file di origine e indicare al debugger di ignorare determinati file di origine. Visualizzare [origine file, proprietà comuni, soluzione dialogo Pagine delle proprietà di Debug](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
   
- **Sfogliare per trovare codice sorgente**  
+ **Sfoglia per trovare il codice sorgente**  
  Fare clic su questo collegamento per aprire una finestra di dialogo in cui è possibile cercare il codice sorgente.  
   
- **Mostra Disassembly**  
- Viene avviata il **nella finestra Disassembly**.  
+ **Mostra disassembly**  
+ Apre la finestra **Disassembly**.  
   
- **Mostra sempre disassembly per i file di origine mancanti**  
- Selezionare questa opzione per visualizzare il **nella finestra Disassembly** automaticamente quando è disponibile alcuna origine. Questa impostazione può essere modificata anche nel **opzioni** della finestra di dialogo **debug** categoria **generali** pagina, selezionando o deselezionando **Mostra disassembly se origine non è disponibile**.  
+ **Mostra sempre disassembly per i file del codice sorgente mancanti**  
+ Selezionare questa opzione per visualizzare automaticamente la finestra **Disassembly** quando non è disponibile alcuna origine. È anche possibile modificare questa impostazione nella finestra di dialogo **Opzioni**, categoria **Debug**, pagina **Generale**, selezionando o deselezionando **Mostra disassembly se l'origine non è disponibile**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Origine file, proprietà comuni, soluzione dialogo Pagine delle proprietà di debug](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Esegui debug dei file di origine, Proprietà comuni, finestra di dialogo pagine delle proprietà di soluzione](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [SOS.dll (estensione del debugger SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Idiadatasource | Microsoft Docs
-ms.custom: ''
+title: IDiaDataSource::openSession | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 79c3ec1974341ddee0a147830491bf324b1fe0c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4bec5507d15374e6e88afd4567d4b0fec9ca6cb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967005"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ HRESULT openSession ( 
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |E_UNEXPECTED|Il [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) oggetto non è già stato inizializzato con un'origine dei simboli.|  
-|E_INVALIDARG|Non è valido `ppSession` parametro.|  
+|E_INVALIDARG|Parametro `ppSession` non valido.|  
 |E_OUTOFMEMORY|Memoria insufficiente per aprire la sessione.|  
   
 ## <a name="remarks"></a>Note  
@@ -72,6 +67,3 @@ if (FAILED(hr))
  [Panoramica](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
-
-
-

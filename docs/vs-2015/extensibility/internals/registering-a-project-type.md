@@ -1,14 +1,9 @@
 ---
 title: Registrazione di un tipo di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966101"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    @="devenv.exe \"%1\""  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Nome e una descrizione dei file del tipo di progetto con l'estensione .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Tipo di contenuto per i file di progetto.|  
@@ -86,7 +81,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`@` (Impostazione predefinita)|REG_SZ|`FigPrj Project VSPackage`|Nome localizzabili di questo oggetto registrato VSPackage (tipo di progetto).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Percorso del tipo di progetto DLL. IDE Carica questa DLL e lo passa CLSID VSPackage `DllGetClassObject` per ottenere <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> per costruire il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> oggetto.|  
@@ -137,7 +132,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "SortPriority"=dword:00000064  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Nome predefinito di progetti di questo tipo.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID risorsa del nome da recuperare dalla DLL satellite registrato in pacchetti.|  
@@ -177,7 +172,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID risorsa per nuovi modelli di progetto.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso per i progetti del tipo di progetto registrato predefinito.|  
@@ -198,7 +193,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "SortPriority"=dword:00000064  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|nessuno|Valore predefinito che indica che le voci seguenti sono per le voci di progetti di file esterni.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valore di ID risorsa per i file di modello di aggiungere nuovi elementi.|  
@@ -227,9 +222,9 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
   
   L'ultimo campo identifica il numero di versione per la risorsa CTMENU. È possibile unire nuovamente il menu modificando il numero di versione.  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|La risorsa per recuperare le informazioni di menu.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|La risorsa per recuperare le informazioni di menu.|  
   
  Tutti gli esempi seguenti si trovano nel Registro di sistema nella chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
@@ -241,7 +236,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valore di ID risorsa per i modelli di progetto di nuovo progetto di figure.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito della directory di nuovi progetti. Gli elementi in questa directory verranno visualizzati nei **Creazione guidata nuovo progetto** nella finestra di dialogo.|  
@@ -256,7 +251,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "UseInterface"=dword:00000001  
 ```  
   
-|nome|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|ID classe del pacchetto VSPackage registrato.|  
 |`UseInterface`|REG_DWORD|`1`|1 indica che l'interfaccia utente verrà utilizzato per interagire con questo progetto. 0 indica che non è disponibile alcuna interfaccia dell'interfaccia utente.|  
@@ -275,4 +270,3 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)   
  [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

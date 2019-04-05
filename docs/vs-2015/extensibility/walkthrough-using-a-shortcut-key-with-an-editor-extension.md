@@ -1,28 +1,23 @@
 ---
 title: "Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'Editor | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963924"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: uso di una combinazione di tasti con un'estensione dell'editor
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. Procedura dettagliata illustra come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo tramite un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo usando il carattere +.  
@@ -40,7 +35,7 @@ ms.locfileid: "51797455"
   
     Microsoft.VisualStudio.Editor  
   
-    Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
     Microsoft.VisualStudio.Shell.14.0  
   
@@ -248,4 +243,3 @@ private void CreateVisuals(ITextViewLine line)
 2.  Creare o aprire un file di testo. Digitare alcune parole contenenti il carattere 'a', quindi digitare + in un punto qualsiasi nella visualizzazione di testo.  
   
      Un quadrato di colore viola dovrebbe essere visualizzato ogni carattere "a" nel file.
-

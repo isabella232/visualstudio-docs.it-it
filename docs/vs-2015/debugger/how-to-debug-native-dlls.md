@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: eseguire il Debug di DLL Native | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug di DLL Native | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffc4f0b58bacdc71439a89dce711575a103c71cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964335"
 ---
-# <a name="how-to-debug-native-dlls"></a>Procedura: eseguire il debug di DLL native
+# <a name="how-to-debug-native-dlls"></a>Procedura: Eseguire il debug di DLL Native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Il debug di una DLL può essere avviato:  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51757483"
   
 - Dal progetto stesso utilizzato per la creazione della DLL.  
   
-  Se si dispone del progetto utilizzato per la creazione dell'eseguibile, iniziare il debug da tale progetto. Sarà quindi possibile aprire un file di origine relativo alla DLL e impostare i punti di interruzione in tale file, anche se non appartiene al progetto utilizzato per la creazione dell'eseguibile. Per altre informazioni, vedere [i punti di interruzione](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Se si dispone del progetto utilizzato per la creazione dell'eseguibile, iniziare il debug da tale progetto. Sarà quindi possibile aprire un file di origine relativo alla DLL e impostare i punti di interruzione in tale file, anche se non appartiene al progetto utilizzato per la creazione dell'eseguibile. Per altre informazioni, vedere [Punti di interruzione](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
   Se il debug viene avviato dal progetto che crea la DLL, è necessario specificare l'eseguibile che si desidera utilizzare per il debug della DLL.  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51757483"
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

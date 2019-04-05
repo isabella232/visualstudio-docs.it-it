@@ -1,26 +1,21 @@
 ---
 title: Riferimento all'API (debug di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c45f89a6deafad5317f4cde704b73d9d4a1f30a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965120"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -29,10 +24,10 @@ La sezione di riferimento include una panoramica concettuale dell'API, una Guida
   
  La tabella seguente illustra i comuni `HRESULT` valori restituiti dai metodi.  
   
-|nome|Descrizione|Valore|  
+|Nome|Descrizione|Value|  
 |----------|-----------------|-----------|  
 |S_OK|Operazione completata.|0x00000000|  
-|E_UNEXPECTED|Errore imprevisto.|0x8000ffff|  
+|E_UNEXPECTED|Errore imprevisto.|0x8000FFFF|  
 |E_NOTIMPL|Non implementato.|0x80004001|  
 |E_OUTOFMEMORY|Memoria insufficiente per completare l'operazione.|0x8007000E|  
 |E_INVALIDARG|Uno o più argomenti non sono validi.|0x80070057|  
@@ -55,4 +50,3 @@ La sezione di riferimento include una panoramica concettuale dell'API, una Guida
  [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [Helper SDK per eseguire il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Estendibilità del debugger di Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-
