@@ -1,14 +1,9 @@
 ---
 title: 'Procedura dettagliata: Analisi del codice C-c + + per i difetti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954712"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura guidata: analisi del codice C/C++ per l'identificazione degli errori
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura dettagliata: Analisi del codice C/C++ per l'identificazione degli errori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come analizzare il codice C/C++ per i potenziali difetti di codice usando lo strumento di analisi codice per il codice C/C++.  
@@ -57,7 +52,7 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
   
      La soluzione Demo ora Popola **Esplora soluzioni**.  
   
-2.  Nel **compilare** menu, fare clic su **Ricompila soluzione**.  
+2.  Nel menu **Compila** fare clic su **Ricompila soluzione**.  
   
      La soluzione venga compilata senza errori o avvisi.  
   
@@ -83,7 +78,7 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
   
 2.  Nel **elenco errori**, fare doppio clic sull'avviso seguente:  
   
-     avviso C6230: cast implicito tra tipi integer semanticamente diversi: utilizzo di HRESULT in un contesto booleano.  
+     avviso C6230: Cast implicito tra tipi integer semanticamente diversi: utilizzo di HRESULT in un contesto booleano.  
   
      L'editor di codice viene visualizzata la riga che ha causato l'avviso nella funzione `bool``ProcessDomain()`. Questo avviso indica che un valore HRESULT è in uso in un'istruzione 'if' in cui è previsto un risultato booleano.  
   
@@ -95,7 +90,7 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
   
 4.  Nel **elenco errori**, fare doppio clic sull'avviso seguente:  
   
-     avviso C6282: operatore errato: assegnazione di costante in contesto di test. È stato = = previsto?  
+     avviso C6282: Operatore errato: assegnazione di costante in contesto di test. È stato = = previsto?  
   
 5.  Risolvere il problema eseguendo il test per verificarne l'uguaglianza. Il codice dovrebbe essere simile al codice seguente:  
   
@@ -137,7 +132,7 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
   
 6.  Nel **elenco errori**, fare doppio clic sull'avviso seguente:  
   
-     avviso C6011: dereferenziazione puntatore NULL 'newNode'.  
+     avviso C6011: Deferenziazione del puntatore NULL 'newNode'.  
   
      Questo avviso indica un errore dal chiamante per controllare il valore restituito. In questo caso, una chiamata a **AllocateNode** potrebbe restituire un valore NULL (vedere il file di intestazione Annotations. h per la dichiarazione di funzione per AllocateNode).  
   
@@ -179,7 +174,7 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
   
 3.  Nel **elenco errori**, fare doppio clic sull'avviso seguente:  
   
-     avviso C6011: dereferenziazione del puntatore NULL 'node'.  
+     avviso C6011: Deferenziazione del puntatore NULL 'node'.  
   
      Questo avviso indica che il nodo passato alla funzione potrebbe essere null e indica il numero di riga in cui è stato generato l'avviso.  
   
@@ -200,7 +195,4 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
      Il progetto viene compilato senza eventuali avvisi o errori.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Procedura dettagliata: Analisi del codice gestito per individuarne i difetti](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

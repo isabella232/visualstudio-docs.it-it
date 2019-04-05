@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: impostare e rimuovere i flag dei thread | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Impostare e rimuovere i flag dei thread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5816007476da56321e58182e636b54a5a5697994
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be6ebe9e2031b24442f368b626d53b15a043023c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954593"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Procedura: impostare e rimuovere i flag dei thread
+# <a name="how-to-flag-and-unflag-threads"></a>Procedura: Impostare e rimuovere i flag dei thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile contrassegnare un thread che si desidera prestare particolare attenzione mediante un'icona nella **thread**, **stack in parallelo**, **espressioni di controllo parallela**, e **GPU Thread** windows. Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.  
@@ -41,7 +36,7 @@ ms.locfileid: "51817490"
   
 ### <a name="to-unflag-all-threads"></a>Per rimuovere i flag di tutti thread  
   
--   Nel **thread** finestra, fare doppio clic su uno o più thread e quindi fare clic su **Rimuovi flag di tutti i thread**.  
+-   Nella finestra **Thread** fare clic con il pulsante destro del mouse su un thread qualsiasi, quindi scegliere **Rimuovi flag di tutti i thread**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag  
   
@@ -49,25 +44,22 @@ ms.locfileid: "51817490"
   
 ### <a name="to-flag-just-my-code"></a>Per contrassegnare Just My Code  
   
-1.  Sulla barra degli strumenti in cima il **thread** finestra, fare clic sull'icona del flag.  
+1.  Fare clic sull'icona del flag nella barra degli strumenti in cima alla finestra **Thread**.  
   
-2.  Nell'elenco a discesa elenco, fare clic su **Contrassegna Just My Code**.  
+2.  Fare clic su **Contrassegna Just My Code** nell'elenco a discesa.  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Per contrassegnare thread associati ai moduli selezionati  
   
-1.  Nella barra degli strumenti di **thread** finestra, fare clic sull'icona del flag.  
+1.  Fare clic sull'icona del flag nella barra degli strumenti della finestra **Thread**.  
   
-2.  Nell'elenco a discesa elenco, fare clic su **Contrassegna selezione moduli personalizzata**.  
+2.  Fare clic su **Contrassegna selezione moduli personalizzata** nell'elenco a discesa.  
   
-3.  Nel **Seleziona moduli** finestra di dialogo, selezionare i moduli desiderati.  
+3.  Selezionare i moduli desiderati nella finestra di dialogo **Seleziona moduli**.  
   
-4.  (Facoltativo) Nel **ricerca** , digitare una stringa da cercare moduli specifici.  
+4.  (Facoltativo) Digitare una stringa per cercare moduli specifici nella casella **Cerca**.  
   
 5.  Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Procedura dettagliata: debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md)

@@ -1,12 +1,9 @@
 ---
 title: Creare e configurare oggetti TableAdapter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954727"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
   
  Se si trascina un nuovo TableAdapter dalla casella degli strumenti quando la **Progettazione Dataset** presenta lo stato attivo, le istruzioni della procedura guidata è possibile specificare l'origine dati a cui deve connettersi il TableAdapter e i tipi di comandi deve usare per comunicare con il database, le istruzioni SQL o stored procedure. Ciò non visibili se si sta configurando un TableAdapter che è già associato a un'origine dati.  
   
--   Usando il **Crea metodi per inviare aggiornamenti direttamente al database** opzione è equivalente all'impostazione di `GenerateDBDirectMethods` proprietà su true. L'opzione è disponibile quando l'istruzione SQL originale non fornisce informazioni sufficienti oppure la query non è aggiornabile. Questa situazione può verificarsi, ad esempio, nella **JOIN** query e le query che restituiscono un singolo valore (scalare).  
+-   Usando il **Crea metodi per inviare aggiornamenti direttamente al database** opzione è equivalente all'impostazione di `GenerateDBDirectMethods` proprietà su true. Questa opzione non è disponibile quando l'istruzione SQL originale non fornisce informazioni sufficienti o se la query non è aggiornabile. Questa situazione può verificarsi, ad esempio, nella **JOIN** query e le query che restituiscono un singolo valore (scalare).  
   
 -   È possibile creare una nuova stored procedure nel database sottostante, se si dispone delle autorizzazioni corrette per il database. Se non si dispone di queste autorizzazioni, ciò non è un'opzione.  
   
@@ -79,7 +76,7 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Per avviare la configurazione guidata Query TableAdapter con una nuova query  
   
-1.  Aprire il set di dati nel **Progettazione Dataset**.  
+1.  Aprire il set di dati in **Progettazione DataSet**.  
   
 2.  Se si sta creando una nuova query, trascinare un **Query** dall'oggetto il **set di dati** scheda della finestra di **della casella degli strumenti** in un <xref:System.Data.DataTable>, o selezionare **Aggiungi Query**dal menu di scelta rapida dell'oggetto TableAdapter. È anche possibile trascinare un **Query** oggetto in un'area vuota del **Progettazione Dataset**, che consente di creare un oggetto non associato a un TableAdapter <xref:System.Data.DataTable>. Queste query possono restituire valori singoli (scalari) oppure eseguire UPDATE, INSERT, o solo eliminare comandi sul database.  
   
@@ -116,4 +113,3 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
   
 ## <a name="see-also"></a>Vedere anche  
  [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
-

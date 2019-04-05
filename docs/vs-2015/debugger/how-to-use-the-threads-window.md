@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: utilizzare la finestra thread | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Utilizzare la finestra thread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955067"
 ---
-# <a name="how-to-use-the-threads-window"></a>Procedura: utilizzare la finestra Thread
+# <a name="how-to-use-the-threads-window"></a>Procedura: Utilizzare la finestra thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione sottoposta a debug.  
   
  Il **thread** finestra contiene una tabella in cui ogni riga rappresenta un thread nell'applicazione. Per impostazione predefinita, nella tabella sono elencati tutti i thread dell'applicazione, ma è possibile filtrare l'elenco per visualizzare solo i thread che interessano. Ogni colonna contiene un tipo di informazioni diverso. È possibile inoltre nascondere alcune colonne. Visualizzando tutte le colonne, vengono visualizzate le informazioni seguenti da sinistra verso destra:  
   
--   La colonna del contrassegno, dove è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione. Per informazioni su come contrassegnare un thread, vedere [procedura: rimuovere i flag dei thread e Flag](../debugger/how-to-flag-and-unflag-threads.md).  
+-   La colonna del contrassegno, dove è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione. Per informazioni su come contrassegnare un thread, vedere [come: Impostare e rimuovere i flag dei thread](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   La colonna del thread attivo, dove una freccia gialla indica un thread attivo. Il contorno di una freccia indica il thread nel quale l'esecuzione si è interrotta nel debugger.  
   
@@ -84,7 +79,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
          La freccia gialla viene visualizzata accanto al nuovo thread attivo. Il contorno grigio di una freccia identifica il thread nel quale l'esecuzione si è interrotta nel debugger.  
   
 ## <a name="grouping-and-sorting-threads"></a>Raggruppamento e ordinamento dei thread  
- Quando si raggruppano i thread, nella tabella viene visualizzata un'intestazione per ogni gruppo. L'intestazione contiene una descrizione del gruppo, ad esempio "Thread di lavoro" o "Thread senza flag", e un controllo di struttura ad albero. I thread membro di ciascuno gruppo appaiono sotto l'intestazione del gruppo. Per nascondere i thread membro di un gruppo, è possibile utilizzare il controllo di struttura ad albero per comprimere il gruppo.  
+ Quando si raggruppano i thread, nella tabella viene visualizzata un'intestazione per ogni gruppo. L'intestazione contiene una descrizione del gruppo, ad esempio "Thread di lavoro" o "Thread senza flag", e un controllo albero. I thread membro di ciascuno gruppo appaiono sotto l'intestazione del gruppo. Per nascondere i thread membro di un gruppo, è possibile usare il controllo albero per comprimere il gruppo.  
   
  Poiché il raggruppamento ha la precedenza sull'ordinamento, è possibile ad esempio raggruppare i thread per categoria, per poi ordinarli in base all'ID all'interno di ogni categoria.  
   
@@ -119,7 +114,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
 #### <a name="to-search-for-specific-threads"></a>Per cercare thread specifici  
   
--   Sulla barra degli strumenti nella parte superiore del **thread** finestra, passa alle **ricerca** casella e:  
+-   Nella barra degli strumenti nella parte superiore della finestra **Thread** passare alla casella **Cerca** e:  
   
     -   Digitare una stringa di ricerca, quindi premere INVIO.  
   
@@ -127,7 +122,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
     -   Fare clic sull'elenco di riepilogo a discesa accanto al **ricerca** casella e selezionare una stringa di ricerca di una ricerca precedente.  
   
--   (Facoltativo) Per includere lo stack di chiamate completo nella ricerca, selezionare **Stack di chiamate di ricerca**.  
+-   (Facoltativo) Per includere lo stack di chiamate completo nella ricerca, selezionare **Cerca nello stack di chiamate**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Blocco e sblocco dei thread  
  Quando si blocca un thread, l'esecuzione dello stesso da parte del sistema non viene avviata anche se le risorse sono disponibili.  
@@ -143,17 +138,17 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
 -   Sulla barra degli strumenti nella parte superiore del **thread** finestra, fare clic su **Blocca thread** oppure **Sblocca thread**.  
   
-     Questa azione influisce solo sui thread selezionati nel **thread** finestra.  
+     Questa azione influisce solo sui thread selezionati nella finestra **Thread**.  
   
 ## <a name="displaying-flagged-threads"></a>Visualizzazione di thread con flag  
- È possibile contrassegnare un thread che si desidera prestare particolare attenzione mediante un'icona nella **thread** finestra. Per altre informazioni, vedere [procedura: rimuovere i flag dei thread e Flag](../debugger/how-to-flag-and-unflag-threads.md). Nella finestra Thread è possibile scegliere di visualizzare tutti i thread o solo i thread con flag.  
+ È possibile contrassegnare un thread a cui si vuole prestare particolare attenzione mediante un'icona nella finestra **Thread**. Per altre informazioni, vedere [Procedura: Impostare e rimuovere i flag dei thread](../debugger/how-to-flag-and-unflag-threads.md). Nella finestra Thread è possibile scegliere di visualizzare tutti i thread o solo i thread con flag.  
   
 #### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag  
   
 -   Scegliere il pulsante flag nell'angolo superiore sinistro della **thread** finestra.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>Visualizzazione degli stack di chiamate dei thread e passaggio da un frame all'altro  
- In un programma multithread ogni thread dispone di un proprio stack di chiamate. Il **thread** finestra fornisce un modo pratico per visualizzare questi stack.  
+ In un programma multithread ogni thread dispone di un proprio stack di chiamate. La finestra **Thread** consente di visualizzare in modo pratico questi stack.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>Per visualizzare lo stack di chiamate di un thread  
   
@@ -167,7 +162,4 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Procedura dettagliata: debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md)

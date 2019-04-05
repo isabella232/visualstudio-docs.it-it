@@ -1,27 +1,22 @@
 ---
-title: 'Procedura dettagliata: XSLT Profiler | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Profiler XSLT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955061"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Procedura dettagliata: XSLT Profiler
+# <a name="walkthrough-xslt-profiler"></a>Procedura dettagliata: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -82,11 +77,11 @@ Il Profiler XSLT crea rapporti di prestazioni XSLT dettagliati utili per misurar
   
 2.  Il **chiamante/chiamato** Vista ha tre parti distinte seguenti:  
   
-    -   **Funzioni che hanno chiamato**: tutte le funzioni che ha chiamato una particolare funzione vengono elencate nella parte superiore della visualizzazione.  
+    -   **Funzioni che hanno chiamato**: Tutte le funzioni che ha chiamato una particolare funzione vengono elencate nella parte superiore della visualizzazione.  
   
-    -   **Funzione corrente**: la funzione specifica che è stata chiamata è elencata nella parte centrale della visualizzazione.  
+    -   **Funzione corrente**: La funzione specifica che è stata chiamata è elencata nella parte centrale della visualizzazione.  
   
-    -   **Le funzioni chiamate dalla** : tutte le funzioni chiamate dalla particolare funzione vengono elencate nella parte inferiore della visualizzazione.  
+    -   **Le funzioni chiamate dalla** : Tutte le funzioni chiamate dalla particolare funzione vengono elencate nella parte inferiore della visualizzazione.  
   
 3.  Se una funzione denominata `SyncToNavigator` viene riportata nella parte centrale della visualizzazione, tutte le funzioni che hanno chiamato la funzione `SyncToNavigator` vengono visualizzate nella parte superiore della visualizzazione e tutte le funzioni che sono state chiamate da `SyncToNavigator` vengono elencate nella parte inferiore della visualizzazione.  
   
@@ -115,7 +110,4 @@ Il Profiler XSLT crea rapporti di prestazioni XSLT dettagliati utili per misurar
 4.  La visualizzazione processo Visualizza una tabella che include il **ID del processo**, **nome del processo**, **ora di inizio**e il **ora di fine**. Per ordinare i dati, è possibile fare clic sui nomi delle colonne.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: uso della gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-
+ [Procedura dettagliata: Uso della gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

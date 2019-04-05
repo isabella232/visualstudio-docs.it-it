@@ -1,14 +1,9 @@
 ---
-title: 'CA1712: Non prefisso nei valori di enumerazione con il nome di tipo | Microsoft Docs'
-ms.custom: ''
+title: 'CA1712: Prefisso nei valori di enumerazione con il nome di tipo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1712
 - DoNotPrefixEnumValuesWithTypeName
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eba81742eefd4e5a89e98417c8530f3146133916
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19b64c0d7c45bb2425ca3e59bd56f5c251feef50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954875"
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Non utilizzare nomi di tipo come prefisso nei valori di enumerazione
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Non usare nomi di tipo come prefisso nei valori di enumerazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -59,7 +54,7 @@ ms.locfileid: "49916725"
  [!code-vb[FxCop.Naming.EnumValues#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.EnumValues/vb/FxCop.Naming.EnumValues.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1711: Gli identificatori non devono contenere un suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711: Gli identificatori non devono contenere il suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
  [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
@@ -67,6 +62,3 @@ ms.locfileid: "49916725"
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Enum?displayProperty=fullName>
-
-
-

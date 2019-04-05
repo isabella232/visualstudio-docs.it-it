@@ -1,28 +1,23 @@
 ---
-title: 'Procedura: eliminare le notifiche di modifica di File | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Non visualizzare notifiche di cambiamento File | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955476"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Procedura: eliminare le notifiche di modifica di File
+# <a name="how-to-suppress-file-change-notifications"></a>Procedura: Eliminare le notifiche di modifica di File
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando è stato modificato il file fisico che rappresenta il buffer di testo, consente di visualizzare una finestra di dialogo con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se sono condividono molte modifiche al file, tuttavia, questa finestra di dialogo ripetutamente la visualizzazione può diventare rapidamente fastidiosa.  
@@ -121,4 +116,3 @@ void CSuspendFileChanges::Resume()
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Se il caso riguarda più modifiche al file, come nel caso del controllo del codice sorgente, quindi è importante riprendere le notifiche di modifica file globale prima di inviare i dati del documento per riprendere il monitoraggio delle modifiche ai file di avviso.
-

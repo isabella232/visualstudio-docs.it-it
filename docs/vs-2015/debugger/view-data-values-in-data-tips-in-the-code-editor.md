@@ -1,14 +1,9 @@
 ---
 title: Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954521"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Visualizzare i valori di dati nei suggerimenti dati nell'editor del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +81,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 -   In un suggerimento dati posizionare il puntatore del mouse sul **+** sign che precede il nome della variabile.  
   
-     La variabile si espande per visualizzare i relativi elementi in formato ad albero.  
+     La variabile si espande per visualizzare i relativi elementi in formato struttura ad albero.  
   
      Quando la variabile è espansa, è possibile utilizzare i tasti di direzione sulla tastiera per spostarsi verso l'alto e verso il basso. In alternativa, è possibile utilizzare il mouse.  
   
@@ -112,7 +107,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 -   Fare clic sull'icona a forma di lente di ingrandimento per selezionare il visualizzatore predefinito per il tipo di dati.  
   
-     oppure  
+     -oppure-  
   
      Fare clic sulla freccia popup accanto al visualizzatore per selezionare da un elenco di visualizzatori appropriati per il tipo di dati.  
   
@@ -147,10 +142,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
 2.  Utilizzare la finestra di dialogo per trovare il file XML che si desidera aprire e fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Procedura: usare la finestra di dialogo Controllo immediato](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Procedura: modificare il formato numerico del Debugger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
-
-
-
+ [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Procedura: Utilizzare la finestra di dialogo Controllo immediato](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Procedura: Modificare il formato numerico del Debugger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

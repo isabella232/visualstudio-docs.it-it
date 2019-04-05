@@ -1,14 +1,9 @@
 ---
 title: 'CA2002: Non bloccare oggetti con identità debole | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 - CA2002
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8ddcd20275dc84cc1c575e00f539c2a436139c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c525aa18e94e7951e6355c959a105aa5841e10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955377"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Non bloccare oggetti con identità debole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "49907872"
  Non escludere un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2213: I campi Disposable devono essere eliminati](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213: I campi eliminabili devono essere eliminati](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra alcuni blocchi di oggetti che violano la regola.
@@ -77,6 +72,3 @@ ms.locfileid: "49907872"
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
  [Istruzione lock](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [istruzione SyncLock](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c1e7885d-2d15-4529-9ac2-32dd22efe31c
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dedf619f15d63f472a5518fb09a913631464a742
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8f791074d029be78eb7d45e06dce8a8cce145f71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955143"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ HRESULT findChildrenExByAddr ( 
  I simboli locali che vengono restituiti includono informazioni sull'intervallo in tempo reale.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
+ Intestazione: DIA2.h  
   
  Libreria: diaguids.lib  
   
@@ -73,10 +68,7 @@ HRESULT findChildrenExByAddr ( 
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)
-
-
-

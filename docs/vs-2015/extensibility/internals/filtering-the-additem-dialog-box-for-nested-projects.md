@@ -1,27 +1,22 @@
 ---
 title: Il filtro nella finestra di dialogo AddItem per i progetti annidati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - filtering, nested projects
 - nested projects, AddItem dialog box filtering
 ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 363ba8e38ae2de445bd18bb9378d48aa4d824298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bb98eac2bc481aa5e3652144dfbcadf70430d04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955110"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Applicazione di un filtro nella finestra di dialogo AddItem per i progetti annidati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ Quando si visualizza un' **AddItem** finestra di dialogo per un progetto annidat
  [Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [La registrazione di progetto e modelli di elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Annidamento dei progetti](../../extensibility/internals/nesting-projects.md)
-
