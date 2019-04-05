@@ -1,25 +1,20 @@
 ---
 title: Componenti dell'Editor XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 417ec1ca-e2fa-4496-87cb-ac04c9f26741
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83437ff6e715eaaa8d9f75ac00d2d6c6932b43bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0d2e9ce63ed19d1a920fa4e337d6ba398417a16a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967240"
 ---
 # <a name="xml-editor-components"></a>Componenti dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +36,8 @@ Contenuto della sezione vengono illustrate le finestre di dialogo e altre finest
  Viene descritto come selezionare gli schemi XML da associare al documento XML.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Procedura: impostare le opzioni generali dell'Editor](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
+ [Procedura: Impostare le opzioni generali dell'Editor](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  Viene descritto come configurare le impostazioni generali quali la visualizzazione, il completamento delle istruzioni e così via.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

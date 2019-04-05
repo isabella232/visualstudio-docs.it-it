@@ -1,12 +1,9 @@
 ---
 title: Proprietà delle associazioni nei UML diagrammi classi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966145"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Proprietà delle associazioni nei diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ In un diagramma classi UML, è possibile tracciare *associazioni* tra qualsiasi 
 
 |**Property**|Descrizione|  
 |------------------|-----------------|  
-|**Nome (1)**|Identifica l'associazione. Viene visualizzata anche nel diagramma accanto al punto intermedio dell'associazione.|  
+|**Name (1)**|Identifica l'associazione. Viene visualizzata anche nel diagramma accanto al punto intermedio dell'associazione.|  
 |**Nome completo**|Identifica in modo univoco l'associazione. Ha come prefisso il nome qualificato del pacchetto che contiene il primo ruolo dell'associazione.|  
 |**Elementi di lavoro**|Numero di elementi di lavoro collegati a questa associazione. Per collegare gli elementi di lavoro, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|  
 |**Colore**|Colore del connettore. Diversamente dalle altre proprietà, è una proprietà di questa visualizzazione dell'associazione e non della relazione sottostante nel modello.|  
@@ -69,11 +66,8 @@ In un diagramma classi UML, è possibile tracciare *associazioni* tra qualsiasi 
 |    **Visibilità**    |            Public             |                                                                                                                                                                                                                                 Public: visibile a livello globale.<br /><br /> Private: non visibile all'esterno del tipo proprietario.<br /><br /> Protected: visibile ai tipi derivati dal proprietario.<br /><br /> Package: visibile ad altri tipi all'interno dello stesso pacchetto.                                                                                                                                                                                                                                  |
 
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
  [Proprietà di tipi in diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)

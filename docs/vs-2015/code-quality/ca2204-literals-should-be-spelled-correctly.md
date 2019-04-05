@@ -1,14 +1,9 @@
 ---
-title: 'CA2204: I valori letterali devono essere digitati correttamente | Microsoft Docs'
-ms.custom: ''
+title: 'CA2204: Valori letterali devono essere digitati correttamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Literals should be spelled correctly
 - CA2204
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a08cb7cee2af51ade4b94dbf675ff83d7da456e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967954"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: I valori letterali devono essere digitati in modo corretto
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: I valori letterali devono essere digitati correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,12 +44,12 @@ ms.locfileid: "49928444"
 
 - Il nome del parametro di stringa che viene passato a un metodo Console. Write o console. WriteLine è "value" o "format".
 
-  Questa regola analizza la stringa letterale in parole, suddivisione in token le parole composte e controlla l'ortografia di ciascuna parola/token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Questa regola analizza la stringa letterale in parole, suddivisione in token le parole composte e controlla l'ortografia di ciascuna parola/token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
   Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, correggere l'ortografia del termine o aggiungere la parola al dizionario personalizzato. Per informazioni su come usare i dizionari personalizzati, vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+ Per correggere una violazione di questa regola, correggere l'ortografia del termine o aggiungere la parola al dizionario personalizzato. Per informazioni su come usare i dizionari personalizzati, vedere [come: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola. Correttamente ortografia consente di ridurre la curva di apprendimento necessaria per le nuove librerie software.
@@ -63,6 +58,3 @@ ms.locfileid: "49928444"
  [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
  [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Uso delle annotazioni SAL per ridurre i difetti del codice C-c + + | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - annotations
 - SAL annotations
@@ -17,13 +12,13 @@ ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 3d59bc320ed95515adbf1bde929e634116946fb5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1331fb7df7cc2c1aaff6a498aab0d9cf8ec8f57f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803227"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965413"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Uso delle annotazioni SAL per ridurre gli errori del codice C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +64,3 @@ SAL è il linguaggio di annotazione Microsoft source code. Utilizzando le annota
   
 ## <a name="see-also"></a>Vedere anche  
  [SAL 2.0 annotazioni per i driver di Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
-
-
-

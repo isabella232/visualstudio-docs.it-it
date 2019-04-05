@@ -1,14 +1,9 @@
 ---
-title: 'CA1026: I parametri predefiniti non devono essere utilizzati | Microsoft Docs'
-ms.custom: ''
+title: 'CA1026: Non usare i parametri predefiniti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5ab5fd842363c39f23981bdec93635974e2b2582
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25e38f6db5caa6b797774463552cd17fd07bdf5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967552"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'utilizzo di parametri predefiniti
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'uso di parametri predefiniti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,6 +56,3 @@ ms.locfileid: "49894365"
 
 ## <a name="see-also"></a>Vedere anche
  [Indipendenza del linguaggio e componenti indipendenti dal linguaggio](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Risoluzione dei problemi relativi a errori specifici nelle distribuzioni ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -24,13 +19,13 @@ ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965393"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
   
  È anche necessario impostare i tipi di contenuto (noto anche come tipi MIME) in modo appropriato per i file. deploy. Application e manifest. Per altre informazioni, vedere la documentazione del server Web.  
   
- Per altre informazioni, vedere "Windows Server 2003: tipi di contenuti bloccati" nella [Server e problemi di configurazione Client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Per altre informazioni, vedere "Windows Server 2003: Bloccato i tipi di contenuto" [Server e problemi di configurazione Client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Messaggio di errore: "Applicazione non è formattata"; File di log contiene "firma XML non valido"  
  Assicurarsi di aver aggiornato il file manifesto e averlo nuovamente firmato. Ripubblicare l'applicazione usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o usare Mage per firmare nuovamente l'applicazione.  
@@ -78,7 +73,7 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
   
 -   Provare ad avviare nuovamente l'applicazione nel menu Start. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sia stato rilevato l'aggiornamento in background, ma verrà richiesto di installare i bit alla successiva attivazione.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante l'aggiornamento viene visualizzato un errore con la voce di log seguente: "il riferimento nella distribuzione non corrisponde all'identità definita nel manifesto dell'applicazione"  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante l'aggiornamento viene visualizzato un errore con la voce di log seguenti: "Il riferimento nella distribuzione non corrisponde all'identità definita nel manifesto dell'applicazione"  
  Questo errore può verificarsi perché è stata modificata manualmente i manifesti dell'applicazione e della distribuzione e hanno causato la descrizione dell'identità di un assembly in un manifesto di perdere la sincronizzazione con le altre. L'identità di un assembly è costituito da nome, versione, impostazioni cultura e token di chiave pubblica. Esaminare le descrizioni di identità nei manifesti e correggere eventuali differenze.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Prima attivazione da CD-ROM o un disco locale viene eseguita correttamente, ma quella successive dal Menu di avvio non riesce.  
@@ -109,11 +104,11 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
   
  Se esegue la pubblicazione con un URL, verificare che il computer di destinazione abbia estensioni del Server abilitata.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Messaggio di errore: Impossibile creare il sito Web '\<sito >'. Non sono installati i componenti per la comunicazione con le estensioni del Server di FrontPage.  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Messaggio di errore: Non è possibile creare il sito Web '\<sito >'. Non sono installati i componenti per la comunicazione con le estensioni del Server di FrontPage.  
  Assicurarsi di disporre di Microsoft Visual Studio Authoring componente Web installato nel computer in cui si esegue la pubblicazione da. Per gli utenti di Express, questo componente non è installato per impostazione predefinita. Per altre informazioni, vedere [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Messaggio di errore: Impossibile trovare il file ' Common-controlli, versione = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
- Questo messaggio di errore viene visualizzato quando si prova a pubblicare un'applicazione WPF con gli stili visuali abilitati. Per risolvere questo problema, vedere [procedura: pubblicare un'applicazione WPF con abilitato gli stili Visual](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+ Questo messaggio di errore viene visualizzato quando si prova a pubblicare un'applicazione WPF con gli stili visuali abilitati. Per risolvere questo problema, vedere [come: Pubblicare un'applicazione WPF con gli stili visuali abilitati](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Utilizzo di Mage  
   
@@ -147,6 +142,3 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-

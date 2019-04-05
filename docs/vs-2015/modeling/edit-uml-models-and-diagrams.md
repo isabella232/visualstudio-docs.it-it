@@ -1,12 +1,9 @@
 ---
 title: Modificare modelli e diagrammi UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966604"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modificare modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ ms.locfileid: "51803435"
   
  **Ogni progetto di modellazione delle minacce ha un unico stack di modifiche.** In questo stack vengono mantenute tutte le modifiche apportate al modello e ai diagrammi. Lo stack include anche i passaggi dello stato attivo da un diagramma a un altro. Il comando Annulla inverte le modifiche in questo stack.  
   
- Ad esempio, si supponga di eseguire queste operazioni: apportare una modifica al diagramma 1, spostare lo stato attivo sul diagramma 2, modificare il diagramma 2. Quando si annullano le modifiche, il primo annullamento invertirà l'ultima modifica, l'annullamento successivo riporterà lo stato attivo sul diagramma 1 e il terzo annullamento invertirà la modifica al diagramma 1.  
+ Ad esempio, si supponga di eseguire queste operazioni: Apportare una modifica al Diagram1; modificare lo stato attivo sul diagramma 2; modificare il diagramma 2. Quando si annullano le modifiche, il primo annullamento invertirà l'ultima modifica, l'annullamento successivo riporterà lo stato attivo sul diagramma 1 e il terzo annullamento invertirà la modifica al diagramma 1.  
   
  **Chiude un diagramma tronca lo stack di modifiche.** Se si chiude un diagramma, non è possibile annullare le modifiche eseguite nel diagramma né annullare le modifiche precedenti al modello o ai suoi diagrammi.  
   
@@ -219,7 +216,7 @@ ms.locfileid: "51803435"
      Viene visualizzata una forma che offre una visualizzazione dell'elemento del modello, oltre alle visualizzazioni in altri diagrammi oppure nello stesso diagramma.  
   
     > [!NOTE]
-    >  L'effetto è diverso quando si trascina una classe o un componente in un diagramma di sequenza. In tal caso, viene creata una nuova linea di vita il cui tipo è quella classe o componente. Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  L'effetto è diverso quando si trascina una classe o un componente in un diagramma di sequenza. In tal caso, viene creata una nuova linea di vita il cui tipo è quella classe o componente. Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Per aggiungere una nuova visualizzazione di un elemento del modello usando Incolla riferimento  
   
@@ -274,7 +271,7 @@ ms.locfileid: "51803435"
    Non è possibile replicare un diagramma copiando e incollando in Esplora soluzioni.  
   
 ##  <a name="Deleting"></a> L'eliminazione di un elemento del modello o le relative visualizzazioni  
- Alcuni tipi di elementi, in particolare i classificatori, possono essere rimossi da un diagramma senza eliminarli dal modello. I classificatori sono i principali elementi visualizzati nei diagrammi classi, nei diagrammi dei componenti e nei diagrammi caso di utilizzo. Possono apparire in più diagrammi. Per questi tipi di elementi, sono presenti due comandi separati: **Rimuovi da diagramma** e **Elimina da modello**.  
+ Alcuni tipi di elementi, in particolare i classificatori, possono essere rimossi da un diagramma senza eliminarli dal modello. I classificatori sono i principali elementi visualizzati nei diagrammi classi, nei diagrammi dei componenti e nei diagrammi caso di utilizzo. Possono apparire in più diagrammi. Per questi tipi di elementi, esistono due comandi separati: **Rimuovi da diagramma** e **Elimina da modello**.  
   
  Al contrario, quando si elimina una relazione da un diagramma, la si elimina sempre anche dal modello.  
   
@@ -323,7 +320,7 @@ ms.locfileid: "51803435"
   
 -   Per aggiungere note e spiegazioni agli elementi del modello, è possibile creare commenti e quindi collegarli agli elementi.  
   
--   Per allineare accuratamente le forme di una colonna o di una riga nel diagramma, è possibile installare il comando per allineare le forme, Questa funzionalità è disponibile come estensione UML di esempio: [UML: comando per allineare le forme](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Per allineare accuratamente le forme di una colonna o di una riga nel diagramma, è possibile installare il comando per allineare le forme, Questa funzionalità è disponibile come estensione UML di esempio:  [UML: Comando per allineare le forme](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Per esportare un diagramma come immagine  
  Per altre informazioni, vedere [esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ ms.locfileid: "51803435"
  [Creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)   
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)
-
-
-

@@ -1,30 +1,25 @@
 ---
 title: Registrazione di servizi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966288"
 ---
 # <a name="registering-services"></a>Registrazione di servizi
 Per supportare il caricamento su richiesta, un provider di servizi deve registrare i suoi servizi globali con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Durante lo sviluppo, i provider di servizi gestiti registrano servizi e sostituzioni dei servizi aggiungendo attributi al codice sorgente dei pacchetti e quindi compilando i pacchetti nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Questo consente di eseguire l'utility RegPkg.exe sull'assembly risultante, registrare il pacchetto e prepararlo per la distribuzione. Per altre informazioni, vedere [procedura: registrare un servizio](../misc/how-to-register-a-service.md).  
+ Durante lo sviluppo, i provider di servizi gestiti registrano servizi e sostituzioni dei servizi aggiungendo attributi al codice sorgente dei pacchetti e quindi compilando i pacchetti nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Questo consente di eseguire l'utility RegPkg.exe sull'assembly risultante, registrare il pacchetto e prepararlo per la distribuzione. Per altre informazioni, vedere [Procedura: Registrare un servizio](../misc/how-to-register-a-service.md).  
   
  I provider di servizi non gestiti devono registrare i servizi forniti con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nella sezione del Registro di sistema dedicata ai servizi o alle sostituzioni dei servizi. Il frammento seguente del file REG mostra come potrebbe essere registrato il servizio SVsTextManager:  
   

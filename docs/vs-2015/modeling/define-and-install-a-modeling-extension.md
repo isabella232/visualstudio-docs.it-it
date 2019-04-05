@@ -1,12 +1,9 @@
 ---
 title: Definire e installare un'estensione di modellazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965474"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definire e installare un'estensione di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 ## <a name="creating-a-modeling-extension-solution"></a>Creazione di una soluzione di estensione di modellazione  
  Per definire un'estensione di modellazione, è necessario creare una soluzione contenente questi progetti:  
   
-- Un progetto VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension), che genera un file che funge da programma di installazione per i componenti dell'estensione.  
+- Un progetto VSIX ( [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension), che genera un file che funge da programma di installazione per i componenti dell'estensione.  
   
 - Un progetto di libreria di classi, necessario per i componenti che includono il codice programma.  
   
@@ -77,10 +74,10 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
   
         |||  
         |-|-|  
-        |**Tipo** =|**MefComponent**|  
+        |**Tipo** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**Un progetto nella soluzione corrente**|  
-        |**progetto** =|*Progetto libreria di classi*|  
-        |**Incorpora in questa cartella** =|*(vuoto)*|  
+        |**Project** =|*Progetto libreria di classi*|  
+        |**Incorpora in questa cartella** =|*(empty)*|  
   
          Per altri tipi di componente, vedere i collegamenti nella sezione successiva.  
   
@@ -141,13 +138,10 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
   
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente in cui *% LocalAppData %* è in genere *DriveName*: \Users\\*UserName*\AppData\Local:  
   
-   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versione]**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>Vedere anche  
  [Definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definire una classe personalizzata elemento della casella degli strumenti di modellazione](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

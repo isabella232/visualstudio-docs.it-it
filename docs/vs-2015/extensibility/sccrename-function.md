@@ -1,14 +1,9 @@
 ---
 title: Funzione SccRename | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRename
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 929eff85a5dddb96ad518593a955950052dbced7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967460"
 ---
 # <a name="sccrename-function"></a>Funzione SccRename
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'operazione di ridenominazione completata correttamente.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto nel controllo del codice sorgente.|  
@@ -72,4 +67,3 @@ SCCRTN SccRename(
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
-

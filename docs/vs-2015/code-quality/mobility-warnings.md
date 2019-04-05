@@ -1,14 +1,9 @@
 ---
 title: Avvisi di mobilità | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.MobilityRules
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6e73864234604f22ec15340740442505fec3e078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e67be4e501cb2d0dd9d584250fcea91af13fe657
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270075"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966999"
 ---
 # <a name="mobility-warnings"></a>avvisi di mobilità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +31,5 @@ Avvisi di mobilità supportano l'utilizzo di risparmio energetico.
   
 |Regola|Descrizione|  
 |----------|-----------------|  
-|[CA1600: Non impostare la priorità del processo su Inattivo](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Non impostare la priorità del processo su Inattivo. I processi con System.Diagnostics.ProcessPriorityClass.Idle occupano la CPU, che diversamente sarebbe inattiva, e bloccano quindi la modalità standby.|  
-|[CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi.|
-
-
-
+|[CA1600: Non utilizzare priorità del processo su inattivo](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Non impostare la priorità del processo su Inattivo. I processi con System.Diagnostics.ProcessPriorityClass.Idle occupano la CPU, che diversamente sarebbe inattiva, e bloccano quindi la modalità standby.|  
+|[CA1601: Non usare i timer che impediscono le modifiche dello stato di alimentazione](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi.|

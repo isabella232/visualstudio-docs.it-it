@@ -1,27 +1,22 @@
 ---
-title: "Procedura: aggiungere nodi dei risultati ricerca Set di schemi all'area di lavoro | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Aggiungere nodi dei risultati ricerca Set di schemi all'area di lavoro | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 75f254a8f64c3750a3c89e10016a0520d3760847
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 086a21e7793e3823615181037b24bcfb7cc5d461
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967029"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedura: aggiungere nodi dei risultati di ricerca del set di schemi all'area di lavoro
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedura: Aggiungere nodi dei risultati di ricerca del set di schemi all'area di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -34,7 +29,7 @@ In questo argomento viene illustrato come aggiungere nodi evidenziati in XML Sch
   
 ### <a name="to-add-schema-set-result-nodes"></a>Per aggiungere nodi dei risultati del set di schemi  
   
-1.  Seguire i passaggi descritti in [procedura: creare e modificare un File di Schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Seguire i passaggi in [come: Creare e modificare un File di Schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
 2.  Digitare "purchaseOrder" nella casella di testo di ricerca del [XML Explorer](../xml-tools/xml-schema-explorer.md) sulla barra degli strumenti e fare clic sul pulsante di ricerca.  
   
@@ -47,6 +42,3 @@ In questo argomento viene illustrato come aggiungere nodi evidenziati in XML Sch
      ![Risultato di ricerca XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   
      Il `purchaseOrder` nodo e il `PurchaseOrderType` sono visualizzati uno accanto a altro nell'area di progettazione della [visualizzazione grafico](../xml-tools/graph-view.md). Poiché i due nodi sono correlati (l'elemento `purchaseOrder` è di tipo `PurchaseOrderType`), viene tracciata una freccia tra loro.
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Servizio di linguaggio e punti di estensione dell'Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967044"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione dei servizi di linguaggio e dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- Risultati ricerca  
+- FindResults  
   
 - F#  
   
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associata a un'area di controllo.  
   
   > [!NOTE]
-  >  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione HighlightWordTag [questa procedura dettagliata: evidenziazione testo](../extensibility/walkthrough-highlighting-text.md).  
+  >  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione di HighlightWordTag nella [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associati con aree che possono essere espansi o compressi nella struttura.  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Per applicare la definizione del formato di un tag, fare riferimento al nome che è impostato nell'attributo nome della classe (non il nome visualizzato).  
   
 > [!NOTE]
->  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition nello [questa procedura dettagliata: evidenziazione testo](../extensibility/walkthrough-highlighting-text.md).  
+>  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition in [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Estensione di aree di controllo  
  Le aree di controllo definiscono gli effetti visivi che possono essere aggiunti al testo che viene visualizzato in una visualizzazione di testo o al testo della visualizzazione stessa. È possibile definire la propria area di controllo come qualsiasi tipo di <xref:System.Windows.UIElement>.  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome dell'area di controllo.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordinamento dell'area di controllo per quanto riguarda gli altri livelli dell'area di controllo. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definisce quattro livelli predefinito: selezione, struttura, punto di inserimento e testo.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordinamento dell'area di controllo per quanto riguarda gli altri livelli dell'area di controllo. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definisce quattro livelli predefiniti: Selezione, la modalità struttura, punto di inserimento e il testo.  
   
   Nell'esempio seguente illustra gli attributi di esportazione su una definizione del livello di area di controllo.  
   
@@ -436,7 +431,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   
@@ -556,9 +551,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Per altre informazioni sull'implementazione di origini di IntelliSense, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Visualizzazione delle informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procedura dettagliata: Visualizzazione di descrizioni comandi informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Procedura dettagliata: Visualizzazione della funzionalità di supporto alla firma](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Procedura dettagliata: Visualizzazione della Guida di firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [Procedura dettagliata: Visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -583,5 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Per altre informazioni sull'uso di controller IntelliSense, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Visualizzazione delle informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-
+ [Procedura dettagliata: Visualizzazione di descrizioni comandi informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

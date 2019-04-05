@@ -1,25 +1,20 @@
 ---
 title: Uso dei dati XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 465cd132-2e36-435d-920b-50b767c2217c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968119"
 ---
 # <a name="working-with-xml-data"></a>Utilizzo di dati XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,17 +59,11 @@ Nella gestione dei dati in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visu
  [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)  
  Viene illustrato come eseguire il debug dei fogli di stile tramite il debugger di Visual Studio.  
   
- [Riferimento agli standard XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- Fornisce informazioni sulle tecnologie XML, ad esempio su XML, DTD (Document Type Definition), XSD (linguaggio di definizione dello schema XML) e fogli di stile XSLT.  
+ [Riferimento agli standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ Fornisce informazioni sulle tecnologie XML, ad esempio su XML, DTD (Document Type Definition), XSD (linguaggio di definizione dello schema XML) e fogli di stile XSLT.
   
- [Creazione e modifica di set di dati tipizzati](../data-tools/creating-and-editing-typed-datasets.md)  
- Vengono descritti gli strumenti della fase di progettazione per la creazione dei dataset.  
-  
- [Servizi Web XML nel codice gestito](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Servizi Web XML nel codice gestito](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Viene illustrata la creazione e la distribuzione dei servizi Web XML e le relative modalità di accesso.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

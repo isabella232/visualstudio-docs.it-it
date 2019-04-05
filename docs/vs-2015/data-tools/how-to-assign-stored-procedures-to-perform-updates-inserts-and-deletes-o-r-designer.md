@@ -1,25 +1,22 @@
 ---
-title: 'Procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O-R Designer) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O-R Designer) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967204"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -38,7 +35,7 @@ ms.locfileid: "49232713"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Per assegnare stored procedure per l'override del comportamento predefinito di una classe di entità  
   
-1.  Aprire il **LINQ to SQL** file nella finestra di progettazione. (Fare doppio clic sul file. dbml in **Esplora soluzioni**.)  
+1.  Aprire il file **LINQ to SQL** nella finestra di progettazione. (Fare doppio clic sul file. dbml in **Esplora soluzioni**.)  
   
 2.  Nelle **Esplora Server**/**Database Explorer**, espandere **Stored Procedures** e individuare le stored procedure che si desidera utilizzare per l'inserimento, aggiornamento, e/o eliminare i comandi della classe di entità.  
   
@@ -48,23 +45,23 @@ ms.locfileid: "49232713"
   
 4.  Selezionare la classe di entità per cui si desidera usare la stored procedure per eseguire gli aggiornamenti.  
   
-5.  Nel **delle proprietà** finestra, selezionare il comando per eseguire l'override (**Inserisci**, **Update**, o **eliminare**).  
+5.  Nella finestra **Proprietà** selezionare il comando di cui eseguire l'override (**Insert**, **Update** o **Delete**).  
   
-6.  Fare clic sui puntini di sospensione (...) accanto alle parole **Usa fase di esecuzione** per aprire il **Configura comportamento** nella finestra di dialogo.  
+6.  Fare clic sui puntini di sospensione (...) accanto alle parole **Usa fase di esecuzione** per aprire la finestra di dialogo **Configura comportamento**.  
   
-7.  Selezionare **personalizzare**.  
+7.  Selezionare **Personalizza**.  
   
-8.  Selezionare la stored procedure desiderata nel **Personalizza** elenco.  
+8.  Selezionare la stored procedure desiderata nell'elenco **Personalizza**.  
   
-9. Esaminare l'elenco delle **gli argomenti del metodo** e **proprietà della classe** per verificare che il **gli argomenti del metodo** mappa appropriato **proprietà della classe**. Eseguire il mapping degli argomenti di metodo originali (Original _*NomeArgomento*) alle proprietà originali (*PropertyName* (Original)) per i comandi Update e Delete.  
+9. Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** per verificare che venga eseguito il mapping degli **Argomenti metodo** alle **Proprietà classe** appropriate. Eseguire il mapping degli argomenti di metodo originali (Original _*NomeArgomento*) alle proprietà originali (*PropertyName* (Original)) per i comandi Update e Delete.  
   
     > [!NOTE]
     >  Per impostazione predefinita, viene eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se non vi è più corrispondenza tra i nomi modificati nella tabella e nella classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente a cui eseguire il mapping nel caso in cui la finestra di progettazione non sia in grado di determinare il mapping corretto.  
   
-10. Fare clic su **OK** oppure **applicare**.  
+10. Fare clic su **OK** o **Applica**.  
   
     > [!NOTE]
-    >  È possibile continuare a configurare il comportamento per ogni combinazione classe/comportamento purché faccia clic su **applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso che fornisce un'opportunità per applicare eventuali modifiche verrà visualizzati.  
+    >  È possibile continuare a configurare il comportamento per ogni combinazione di classe/comportamento purché si faccia clic su **Applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso che fornisce un'opportunità per applicare eventuali modifiche verrà visualizzati.  
   
      Per ripristinare l'uso della logica di runtime predefinito per gli aggiornamenti, fare clic sui puntini di sospensione accanto a Insert, Update, o eliminare i comandi nel **delle proprietà** finestra e quindi selezionare **usare runtime** nel  **Configurare il comportamento** nella finestra di dialogo.  
   
@@ -72,7 +69,5 @@ ms.locfileid: "49232713"
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Procedura dettagliata: Creazione di aggiornamento Stored procedure per la tabella Customers Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Operazioni di inserimento, aggiornamento ed eliminazione](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

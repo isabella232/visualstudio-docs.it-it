@@ -1,14 +1,9 @@
 ---
-title: "Procedura: installare i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Installare i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967628"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: installare i prerequisiti con un'applicazione ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: Installare i prerequisiti con un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni richiedono che la versione corretta di .NET Framework sia installata in un computer prima di poter essere eseguiti, molte applicazioni hanno anche altri prerequisiti. Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione, è possibile scegliere un set di componenti dei prerequisiti per essere incluso nel pacchetto insieme all'applicazione. Al momento dell'installazione, verrà eseguita la verifica per ogni prerequisito determinare se esiste già; Se non verrà installato prima di installare il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione.  
@@ -37,7 +32,7 @@ Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni rich
  Invece di assemblare e pubblicare i prerequisiti, è anche possibile specificare un percorso di download per i componenti. Invece inclusi i prerequisiti con tutte le applicazioni pubblicate, ad esempio, si potrebbe usare una condivisione file centralizzato o percorso Web che contiene i programmi di installazione per tutti i prerequisiti, al momento dell'installazione, verranno scaricati i componenti e installato da quel percorso.  
   
 > [!IMPORTANT]
->  È necessario aggiungere pacchetti di installazione dei prerequisiti nel computer di sviluppo prima di pubblicare la prima volta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Per altre informazioni, vedere [procedura: includere i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  È necessario aggiungere pacchetti di installazione dei prerequisiti nel computer di sviluppo prima di pubblicare la prima volta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Per altre informazioni, vedere [Procedura: Includere i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Prerequisiti vengono gestiti nel **prerequisiti** finestra di dialogo, accessibile dal **Publish** riquadro del **Progettazione progetti**.  
   
@@ -78,6 +73,3 @@ Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni rich
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

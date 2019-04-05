@@ -1,11 +1,8 @@
 ---
 title: Utilizzo degli ActivityDesigner | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
@@ -14,16 +11,16 @@ ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967607"
 ---
 # <a name="using-the-activity-designers"></a>Utilizzo degli ActivityDesigner
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] include alcune attività fornite dal sistema che è possibile usare per la costruzione di attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e viene fornito materiale sussidiario sul relativo uso.  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] include alcune attività fornite dal sistema che è possibile usare per la costruzione di attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e vengono fornite istruzioni sul relativo uso.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)  

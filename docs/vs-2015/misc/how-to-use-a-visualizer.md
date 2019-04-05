@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: usare un visualizzatore | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare un visualizzatore | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965968"
 ---
-# <a name="how-to-use-a-visualizer"></a>Procedura: utilizzare un visualizzatore
+# <a name="how-to-use-a-visualizer"></a>Procedura: Usare un visualizzatore
 È possibile usare un visualizzatore per visualizzare il contenuto di una variabile o di un oggetto in modo significativo per il tipo di dati. È possibile utilizzare i visualizzatori da **suggerimenti dati**, un **Watch** finestra, il **Auto** finestra o il **variabili locali** finestra.  
   
  I visualizzatori non sono supportati in Compact Framework.  
@@ -59,12 +54,12 @@ ms.locfileid: "51721917"
   
      *Percorso di installazione di Visual Studio* `\Common7\Packages\Debugger\Visualizers`  
   
-     oppure  
+     -oppure-  
   
-     `My Documents\Visual Studio 2010\Visualizers` *Versione di Visual Studio* `\Visualizers`  
+     `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
- [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
+ [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
+ [Procedura: Scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
  [Visualizzare i valori di dati nei suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

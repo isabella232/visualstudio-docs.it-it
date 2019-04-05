@@ -1,14 +1,9 @@
 ---
 title: Costanti dell'IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968408"
 ---
 # <a name="ide-constants"></a>Costanti dell'IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="logical-and-physical-views"></a>Visualizzazioni logiche e fisiche  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |[LOGVIEWID_Code_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.code_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` i gestori devono passare il valore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere il **aperta con** finestra di dialogo, in questo caso eventuali visualizzazioni di codice.|  
 |[LOGVIEWID_Debugging_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.debugging_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` i gestori di passano questo valore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere il **Apri con** finestra di dialogo, in questo caso popolata con eventuali <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> visualizzazioni che eseguono il mapping alla stessa visualizzazione di debug <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|  
@@ -46,7 +41,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="editor-factory-flags"></a>Flag di Factory dell'editor  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Flag obsoleto combinato bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> (metodo).|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Combinazione bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, metodo, ciò indica la factory dell'editor deve eseguire le correzioni necessarie.|  
@@ -55,7 +50,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="visual-studio-errors"></a>Errori di Visual Studio  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Costante restituita dalle interfacce al comportamento asincrono quando l'oggetto in questione in già in uso|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Un errore HRESULT specifico di Visual Studio per "dati del documento incompatibili".|  
@@ -71,7 +66,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="visual-studio-constants"></a>Costanti di Visual Studio  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Un errore HRESULT specifico di Visual Studio e che indica "Progetto inoltrato".|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Una costante specifica di Visual Studio per un "marcatore della casella degli strumenti".|  
@@ -86,7 +81,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  Viene descritto il componente dell'IDE appena selezionato, in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> chiamare, ad esempio.  
   
-|Costante|Valore|
+|Costante|Value|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
@@ -98,7 +93,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 ## <a name="vsselelemid"></a>VSSELELEMID  
  Costanti usate per indicare un nuovo stato di selezione.  
   
-|Costante|Valore|  
+|Costante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -111,7 +106,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="component-selector-dialog-constants"></a>Costanti di finestra di dialogo del selettore componenti  
   
-|Costante|Valore|  
+|Costante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  
@@ -124,4 +119,3 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="see-also"></a>Vedere anche  
  [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

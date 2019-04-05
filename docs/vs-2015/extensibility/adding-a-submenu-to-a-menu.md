@@ -1,14 +1,9 @@
 ---
 title: Aggiunta di un sottomenu a un Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus
 - submenus, cascading
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 14ad9d2daf603dd2ca80a784251f19503fee1cba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d90aecf98bf09d9d4312e28d1bdca055cf9792a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965518"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Aggiunta di un sottomenu a un menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +126,7 @@ Questa procedura dettagliata si basa sulla dimostrazione [aggiunta di un Menu al
                 }  
     ```  
   
-3.  Aggiungere SubItemCallback(). Questo è il metodo che viene chiamato quando viene selezionato il nuovo comando nel sottomenu.  
+3.  Add SubItemCallback(). Questo è il metodo che viene chiamato quando viene selezionato il nuovo comando nel sottomenu.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -164,4 +159,3 @@ Questa procedura dettagliata si basa sulla dimostrazione [aggiunta di un Menu al
 ## <a name="see-also"></a>Vedere anche  
  [Aggiunta di un Menu alla barra dei Menu di Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
-

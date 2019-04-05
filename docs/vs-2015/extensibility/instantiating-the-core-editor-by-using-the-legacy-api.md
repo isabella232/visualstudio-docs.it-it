@@ -1,26 +1,21 @@
 ---
 title: Creare un'istanza di Editor principale con l'API Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965265"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Creare un'istanza di Editor principale con l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,10 +64,9 @@ L'editor è responsabile per la modifica funzioni, ad esempio inserimento, elimi
   
  Se il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metodo restituisce lo stesso GUID di comando dell'editor di testo, l'istanza dell'editor principale ottiene automaticamente il valore predefinito tasti di scelta rapida.  
   
- Per informazioni generali, vedere [procedura dettagliata: creazione di un Editor di base e la registrazione di un tipo di File Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Per informazioni generali, vedere [procedura dettagliata: Creazione di un Editor di base e la registrazione di un tipo di File Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [All'interno l'Editor principale](../extensibility/inside-the-core-editor.md)   
  [Apertura e salvataggio di elementi di progetto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Procedura dettagliata: Creazione di un editor principale e registrazione di un tipo di file dell'editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
-
+ [Procedura dettagliata: Creazione di un Editor di base e la registrazione di un tipo di File Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

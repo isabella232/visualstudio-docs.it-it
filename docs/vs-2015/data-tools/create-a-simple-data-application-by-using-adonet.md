@@ -1,12 +1,9 @@
 ---
 title: Creare un'applicazione dati semplice usando ADO.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824282"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58965797"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
 - Visual Studio Community Edition.  
   
-- SQL Server Express LocalDB.  
+- LocalDB di SQL Server Express.  
   
 - Piccolo database di esempio creato seguendo i passaggi descritti in [creare un database SQL usando uno script](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
@@ -71,7 +68,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
     Visual Studio crea il progetto e diversi file, tra cui un form Windows vuoto denominato Form1.  
   
-2. Aggiungere due form Windows al progetto in modo che includa tre formati seguenti e quindi assegnare loro i nomi seguenti:  
+2. Aggiungere due form Windows al progetto in modo da disporre di tre form e assegnare i nomi seguenti:  
   
    -   Navigazione  
   
@@ -84,7 +81,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
    > [!NOTE]
    >  La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.  
   
-   **Form navigazione**  
+   **Form Navigazione**  
   
    ![Finestra di dialogo di spostamento](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
@@ -116,7 +113,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
 |Controlli del form FillOrCancel|Proprietà|  
 |----------------------------------------|----------------|  
 |TextBox|Name = txtOrderID|  
-|Pulsante|Name = btnFindByOrderID|  
+|Button|Name = btnFindByOrderID|  
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|  
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|  
 |Button|Name = btnCancelOrder|  
@@ -227,7 +224,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
  Questa sezione contiene una breve panoramica sulle funzionalità di ciascun form e una descrizione del codice necessario per crearlo. I commenti numerati identificano le sezioni del codice.  
   
 ### <a name="navigation-form"></a>Form Navigazione  
- Quando si esegue l'applicazione, verrà visualizzato il form Navigazione. Il **aggiungere un account** pulsante consente di aprire il form NewCustomer. Il **riempimento o annullare gli ordini** pulsante consente di aprire il form FillOrCancel. Il **Exit** pulsante chiude l'applicazione.  
+ Quando si esegue l'applicazione, verrà visualizzato il form Navigazione. Il pulsante **Aggiungi un account** consente di aprire il form NewCustomer. Il pulsante **Completare o annullare gli ordini** consente di aprire il form FillOrCancel. Il pulsante **Esci** consente di chiudere l'applicazione.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Impostare il form Navigazione come form di avvio  
  Se si usa c#, in **Esplora soluzioni**, aprire Program.cs e modificare il `Application.Run` riga al seguente: `Application.Run(new Navigation());`  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|Definire un metodo per verificare che sia presente un nome di cliente.<br /><br /> -Se la casella di testo è vuota, visualizzare un messaggio e restituire `false`, perché è necessario un nome per creare l'account.<br />-Se la casella di testo non è vuota, viene restituita `true`.|  
 |NC-17|Aggiungere codice al gestore dell'evento Click per il pulsante `btnPlaceOrder`.|  
 |NC-18|Eseguire il wrapping della chiamata a `isPlaceOrderReady` per il codice di evento `btnPlaceOrder_Click` in modo che `uspPlaceNewOrder` non venga eseguita se non è presente l'input richiesto.|  
-|Da NC-19 a NC-25|Queste sezioni di codice sono simili al codice aggiunto per il gestore eventi `btnCreateAccount_Click`.<br /><br /> -NC-19. Creare l'oggetto `SqlCommand` , `cmdNewOrder`, e specificare `Sales.uspPlaceOrder` come stored procedure.<br />-NC-20-NC-23 sono parametri di input per la stored procedure.<br />NC-24. `@RC` conterrà un valore restituito che è l'ID dell'ordine generato dal database. La direzione di questo parametro viene specificata come `ReturnValue`.<br />-NC-25. Archiviare il valore dell'ID dell'ordine nella variabile `orderID` dichiarata in NC-2 e visualizzare il valore in una finestra di messaggio.|  
+|Da NC-19 a NC-25|Queste sezioni di codice sono simili al codice aggiunto per il gestore eventi `btnCreateAccount_Click`.<br /><br /> -NC-19. Creare l'oggetto `SqlCommand` , `cmdNewOrder`, e specificare `Sales.uspPlaceOrder` come stored procedure.<br />-NC-20-NC-23 sono parametri di input per la stored procedure.<br />-   NC-24. `@RC` conterrà un valore restituito che è l'ID dell'ordine generato dal database. La direzione di questo parametro viene specificata come `ReturnValue`.<br />-   NC-25. Archiviare il valore dell'ID dell'ordine nella variabile `orderID` dichiarata in NC-2 e visualizzare il valore in una finestra di messaggio.|  
 |NC-26|Definire un metodo per verificare che esista un ID cliente e che sia stato specificato un importo in `numOrderAmount`.|  
 |NC-27|Chiamare il metodo `ClearForm` nel gestore dell'evento Click `btnAddAnotherAccount`.|  
 |NC-28|Creare il metodo `ClearForm` per cancellare i valori del form se si desidera aggiungere un altro cliente.|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Testare l'applicazione  
  Selezionare il tasto F5 per compilare e testare l'applicazione dopo ogni evento Click, codice e quindi dopo aver fine scrittura di codice.
-

@@ -1,23 +1,20 @@
 ---
 title: Impostazione di un'immagine di sfondo in un diagramma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965237"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,6 +109,3 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK Ã
  [Personalizzazione dei campi testo e immagine](../modeling/customizing-text-and-image-fields.md)   
  [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

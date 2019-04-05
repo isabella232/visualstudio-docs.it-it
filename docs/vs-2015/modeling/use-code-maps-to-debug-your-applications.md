@@ -1,11 +1,8 @@
 ---
 title: Usare le mappe codice per il debug delle applicazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
@@ -20,15 +17,15 @@ ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
 caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: af5f34b307f94f1bae4c913421acbe0a934ed113
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743824"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970047"
 ---
-# <a name="use-code-maps-to-debug-your-applications"></a>Usare le mappe del codice per eseguire il debug delle applicazioni
+# <a name="use-code-maps-to-debug-your-applications"></a>Usare le mappe codice per eseguire il debug delle applicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimensioni, nel codice con cui si ha poca familiarità o nel codice legacy. Quando si esegue il debug, ad esempio, potrebbe essere necessario esaminare il codice in file e progetti diversi. Usare le mappe codice per esplorare queste parti di codice e comprendere le relazioni tra loro. In questo modo, non è necessario tenere traccia di questo codice a mente o creare un diagramma separato. Se il lavoro viene interrotto, le mappe codice consentono di aggiornare la memoria relativa al codice usato.  
@@ -51,7 +48,7 @@ Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimen
  ![Mappa del codice &#45; trovare codice](../modeling/media/codemapstoryboardpaint1.png "CodeMapStoryboardPaint1")  
   
 ## <a name="start-mapping-the-code"></a>Avviare il mapping del codice  
- A questo punto è possibile avviare il mapping del metodo `undo` e le relative relazioni. Nell'editor di codice aggiungere il metodo `undo` e i campi a cui viene fatto riferimento a una nuova mappa codice. Quando si crea una nuova mappa, l'indicizzazione del codice potrebbe richiedere del tempo. Ciò consente alle operazioni successive di essere eseguite più velocemente.  
+ A questo punto è possibile avviare il mapping del metodo `undo` e le relative relazioni. Nell'editor di codice aggiungere il metodo `undo` e i campi a cui viene fatto riferimento a una nuova mappa codici. Quando si crea una nuova mappa, l'indicizzazione del codice potrebbe richiedere del tempo. Ciò consente alle operazioni successive di essere eseguite più velocemente.  
   
  ![Mappa del codice &#45; Mostra metodo e i campi correlati](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
@@ -146,6 +143,3 @@ Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimen
 ## <a name="see-also"></a>Vedere anche  
  [Mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)   
  [Visualizzare il codice](../modeling/visualize-code.md)
-
-
-

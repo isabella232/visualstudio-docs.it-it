@@ -1,14 +1,9 @@
 ---
 title: Messaggi diagnostici nella finestra di Output | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.output
 dev_langs:
@@ -33,13 +28,13 @@ ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c963a93e2d1b882fd38db1a546cc49cb1bfedcd6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6cf5025fdbb640b9f77e0782a7db77503fc618a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781127"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965249"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Messaggi diagnostici nella finestra di output
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51781127"
   
 - Diversi metodi `Write`, che generano informazioni senza interrompere l'esecuzione. Questi metodi sostituiscono il metodo `Debug.Print` utilizzato nelle versioni precedenti di Visual Basic.  
   
-- I metodi <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, che interrompono l'esecuzione e generano informazioni se si verifica un errore relativo a una condizione specificata. Per impostazione predefinita, il metodo `Assert` visualizza le informazioni in una finestra di dialogo. Per altre informazioni, vedere [asserzioni nel codice gestito](../debugger/assertions-in-managed-code.md).  
+- I metodi <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, che interrompono l'esecuzione e generano informazioni se si verifica un errore relativo a una condizione specificata. Per impostazione predefinita, il metodo `Assert` visualizza le informazioni in una finestra di dialogo. Per ulteriori informazioni, vedere [Asserzioni nel metodo gestito](../debugger/assertions-in-managed-code.md).  
   
 - I metodi <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, che interrompono sempre l'esecuzione e generano informazioni. Per impostazione predefinita, i metodi `Fail` visualizzano le informazioni in una finestra di dialogo.  
   
@@ -69,9 +64,6 @@ ms.locfileid: "51781127"
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Finestra di output](../ide/reference/output-window.md)   
  [Traccia e strumentazione di applicazioni](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [Introduzione alla strumentazione e alla traccia](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
+ [Introduzione alla strumentazione e alla traccia](http://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
  [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debug di codice gestito](../debugger/debugging-managed-code.md)
-
-
-

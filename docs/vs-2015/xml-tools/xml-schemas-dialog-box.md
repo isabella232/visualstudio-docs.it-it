@@ -1,25 +1,20 @@
 ---
 title: Finestra di dialogo schemi XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965268"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo Schemi XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +48,5 @@ Il **schemi XML** nella finestra di dialogo è possibile selezionare quali schem
   
 ## <a name="see-also"></a>Vedere anche  
  [Componenti dell'Editor XML](../xml-tools/xml-editor-components.md)   
- [Procedura: selezionare gli schemi XML da utilizzare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+ [Procedura: Selezionare gli schemi XML da utilizzare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Cache degli schemi](../xml-tools/schema-cache.md)
-
-
-

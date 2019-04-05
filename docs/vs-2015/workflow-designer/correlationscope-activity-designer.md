@@ -1,11 +1,8 @@
 ---
 title: Activity Designer CorrelationScope | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4a46c50a888808932d071622d83b871761977259
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95c8422d53903c3c7b81db9f6ef042c5ea9ff1c1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173199"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58965778"
 ---
 # <a name="correlationscope-activity-designer"></a>ActivityDesigner CorrelationScope
 Il **CorrelationScope** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.ServiceModel.Activities.CorrelationScope> attività che fornisce la gestione implicita delle attività di messaggistica figlio mediante un <xref:System.ServiceModel.Activities.CorrelationHandle> oggetto.  
@@ -37,7 +34,7 @@ Il **CorrelationScope** ActivityDesigner viene utilizzato per creare e configura
  L'attività il cui ambito all'interno della correlazione vengono specificate rilasciando le finestre di progettazione all'interno di **corpo** finestra all'interno del **CorrelationScope** progettazione.  
   
 ### <a name="the-correlationscope-properties"></a>Proprietà di CancellationScope  
- Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.CorrelationScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Queste proprietà possono essere modificati in **delle proprietà** finestra o scegliere [!INCLUDE[wfd2](../includes/wfd2-md.md)] area designer e spesso in entrambe.  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.CorrelationScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificati in **delle proprietà** finestra o scegliere [!INCLUDE[wfd2](../includes/wfd2-md.md)] area designer e spesso in entrambe.  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  
@@ -47,8 +44,8 @@ Il **CorrelationScope** ActivityDesigner viene utilizzato per creare e configura
   
 ## <a name="see-also"></a>Vedere anche  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Ricezione](../workflow-designer/receive-activity-designer.md)   
+ [Receive](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
- [Invia](../workflow-designer/send-activity-designer.md)   
+ [Send](../workflow-designer/send-activity-designer.md)   
  [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   
  [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

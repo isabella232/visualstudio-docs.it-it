@@ -1,29 +1,24 @@
 ---
-title: 'Procedura: usare lo strumento di ricerca | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare lo strumento di ricerca | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965645"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
+# <a name="how-to-use-the-finder-tool"></a>Procedura: Usare lo strumento di ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare lo strumento di ricerca nel **Trova finestra** finestra di dialogo per visualizzare le proprietà della finestra o messaggi. Lo strumento di ricerca consente anche di individuare finestre figlio disabilitato e discernere quale finestra per evidenziare se disabilitata finestre figlio si sovrappongono.  
@@ -54,14 +49,11 @@ Strumento di ricerca nella finestra di dialogo Trova finestra
   
 4.  Sotto **mostrano**, selezionare **proprietà** oppure **messaggi**.  
   
-5.  Premere **OK**.  
+5.  Fare clic su **OK**.  
   
      Se è stato selezionato **delle proprietà**, il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) apre. Se è stato selezionato **messaggi**, un [visualizzazione messaggi](../debugger/messages-view.md) verrà visualizzata la finestra.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md)   
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md)   
+ [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)   
+ [Uso di Spy++](../debugger/using-spy-increment.md)   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)
-
-
-

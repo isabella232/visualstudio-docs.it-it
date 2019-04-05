@@ -1,12 +1,9 @@
 ---
 title: Creare tabelle di ricerca nelle applicazioni Windows Forms | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966043"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +36,10 @@ Il termine *tabella di ricerca* descrive i controlli associati a due tabelle dat
   
 ## <a name="to-databind-a-lookup-control"></a>Come associare un controllo di ricerca  
   
-1.  Aprire il **Zdroje dat** finestra.  
+1.  Aprire la finestra **Origini dati**.  
   
     > [!NOTE]
-    >  Le tabelle di ricerca richiedono che siano disponibili in due tabelle correlate o gli oggetti di **Zdroje dat** finestra. Per altre informazioni, vedere [Procedura: Visualizzare dati correlati in un'applicazione Windows Forms](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+    > Le tabelle di ricerca richiedono che siano disponibili in due tabelle correlate o gli oggetti di **Zdroje dat** finestra.
   
 2.  Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre e tutte le relative colonne e la tabella figlio correlata e tutte le relative colonne.  
   
@@ -55,7 +52,7 @@ Il termine *tabella di ricerca* descrive i controlli associati a due tabelle dat
   
 5.  Trascinare il nodo della tabella figlio principale dal **Zdroje dat** finestra nei form.  
   
-     I controlli con associazione a dati (con etichette descrittive) e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) vengono visualizzati nel form. Oggetto [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
+     I controlli con associazione a dati (con etichette descrittive) e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) vengono visualizzati nel form. Oggetto [set di dati](../data-tools/dataset-tools-in-visual-studio.md), oggetto TableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
   
 6.  Trascinare ora il nodo della tabella padre principale dal **Zdroje dat** finestra direttamente al controllo di ricerca (il <xref:System.Windows.Forms.ComboBox>).  
   
@@ -63,11 +60,10 @@ Il termine *tabella di ricerca* descrive i controlli associati a due tabelle dat
   
     |Proprietà|Spiegazione dell'impostazione|  
     |--------------|----------------------------|  
-    |**Origine dati**|Questa proprietà viene impostata da Visual Studio sul <xref:System.Windows.Forms.BindingSource> creato per la tabella trascinata nel controllo (a differenza del <xref:System.Windows.Forms.BindingSource> creato al momento della creazione del controllo).<br /><br /> È necessario apportare modifiche, quindi impostare tale proprietà di <xref:System.Windows.Forms.BindingSource> della tabella contenente la colonna che si desidera visualizzare.|  
+    |**DataSource**|Questa proprietà viene impostata da Visual Studio sul <xref:System.Windows.Forms.BindingSource> creato per la tabella trascinata nel controllo (a differenza del <xref:System.Windows.Forms.BindingSource> creato al momento della creazione del controllo).<br /><br /> È necessario apportare modifiche, quindi impostare tale proprietà di <xref:System.Windows.Forms.BindingSource> della tabella contenente la colonna che si desidera visualizzare.|  
     |**DisplayMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna successiva alla chiave primaria con tipo di dati stringa per la tabella che si intende trascinare nel controllo.<br /><br /> Se è necessario apportare modifiche, quindi impostare il nome della colonna da visualizzare.|  
     |**ValueMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna che partecipa alla chiave primaria o la prima colonna della tabella nel caso in cui non sia stata definita alcuna chiave.<br /><br /> Se è necessario apportare modifiche, quindi impostare la chiave primaria della tabella con la colonna che si desidera visualizzare.|  
     |**SelectedValue**|Visual Studio imposta questa proprietà per la colonna originale trascinata dal **Zdroje dat** finestra.<br /><br /> Se è necessario apportare modifiche, quindi impostare la colonna chiave esterna nella tabella correlata.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

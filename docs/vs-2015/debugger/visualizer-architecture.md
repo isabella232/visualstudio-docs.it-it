@@ -1,14 +1,9 @@
 ---
 title: Architettura del Visualizzatore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b7a3255b8e8b91f074308a0238719f26af6cf665
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82dd990a44984d2e3cc1c84244fbe07ea519fdfc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968343"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +28,17 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
   
 - Il *lato debugger* viene eseguito all'interno del debugger di Visual Studio. Il codice del lato debugger crea e visualizza l'interfaccia utente del visualizzatore.  
   
-- Il *ritrasferire al lato* viene eseguito all'interno del processo di debug in Visual Studio (il *dell'oggetto del debug*).  
+- Il *lato oggetto del debug* viene eseguito all'interno del processo sottoposto a debug in Visual Studio (l'*oggetto del debug*).  
   
-  Un visualizzatore è un componente del debugger che consente al debugger da visualizzare (*visualizzare*) il contenuto di un oggetto dati in modo significativo e comprensibile. Alcuni visualizzatori supportano anche la modifica dell'oggetto dati. Scrivendo visualizzatori personalizzati, è possibile estendere il debugger in modo da gestire i tipi di dati personalizzati.  
+  Un visualizzatore è un componente del debugger che consente al debugger di *visualizzare* il contenuto di un oggetto dati in modo significativo e comprensibile. Alcuni visualizzatori supportano anche la modifica dell'oggetto dati. Scrivendo visualizzatori personalizzati, è possibile estendere il debugger in modo da gestire i tipi di dati personalizzati.  
   
-  L'oggetto dati da visualizzare si trova all'interno del processo a cui si esegue il debug (il *dell'oggetto del debug* processo). L'interfaccia utente in cui verranno visualizzati i dati viene creata all'interno del processo del debugger di Visual Studio:  
+  L'oggetto dati da visualizzare si trova all'interno del processo del quale si sta eseguendo il debug, ovvero il processo *oggetto del debug*. L'interfaccia utente in cui verranno visualizzati i dati viene creata all'interno del processo del debugger di Visual Studio:  
   
 |Processo del debugger|Processo oggetto del debug|  
 |----------------------|----------------------|  
 |Interfaccia utente del debugger (Suggerimenti dati, Finestra Espressioni di controllo, Controllo immediato)|Oggetto dati da visualizzare|  
   
- Per visualizzare l'oggetto dati all'interno dell'interfaccia del debugger, è necessario del codice per stabilire la comunicazione tra i due processi. Di conseguenza, l'architettura del visualizzatore è costituita da due parti: *lato debugger* codice e *lato oggetto del debug* codice.  
+ Per visualizzare l'oggetto dati all'interno dell'interfaccia del debugger, è necessario del codice per stabilire la comunicazione tra i due processi. Di conseguenza, l'architettura del visualizzatore è costituita da due parti: il codice del *lato debugger* e il codice del *lato oggetto del debug*.  
   
  Il codice del lato debugger crea un'interfaccia utente che può essere richiamata dall'interfaccia del debugger, ad esempio una finestra Suggerimenti dati, Espressioni di controllo o Controllo immediato. L'interfaccia del visualizzatore viene creata utilizzando la classe <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> e l'interfaccia <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>. Come tutte le API dei visualizzatori, DialogDebuggerVisualizer e IDialogVisualizerService si trovano nello spazio dei nomi <xref:Microsoft.VisualStudio.DebuggerVisualizers>.  
   
@@ -85,7 +80,7 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
   
  Si tenga presente che il provider di oggetti può usare due API. I dati vengono sempre inviati dal provider di oggetti all'origine oggetto come oggetto <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, ma il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> richiede la serializzazione dell'oggetto in un oggetto <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->.  
   
- Il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> prende l'oggetto specificato, lo serializza in un oggetto <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, quindi chiama il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> per inviare l'oggetto <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  --> al metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
+ Il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> accetta l'oggetto specificato, lo serializza in un oggetto <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  -->, quindi chiama il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> per inviare l'oggetto <!-- TODO: review code entity reference <xref:assetId:///System.IO.Stream?qualifyHint=False&amp;autoUpgrade=True>  --> al metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
   
  L'utilizzo di uno dei metodi di sostituzione consente di creare un oggetto dati nuovo nel lato oggetto del debug che sostituisce l'oggetto visualizzato. Se si desidera modificare il contenuto dell'oggetto originale senza sostituirlo, utilizzare uno dei metodi di trasferimento illustrati nella tabella seguente. Queste API trasferiscono contemporaneamente i dati in entrambe le direzioni, senza sostituire l'oggetto visualizzato:  
   
@@ -94,11 +89,8 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -oppure-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
- [Procedura dettagliata: Scrittura di un visualizzatore in c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Procedura: Scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
+ [Procedura dettagliata: Scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)
-
-
-

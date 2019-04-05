@@ -1,14 +1,9 @@
 ---
 title: 'Procedura dettagliata: Configurazione e utilizzo di un Set di regole | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967007"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
    > [!TIP]
    >  In una situazione reale, una buona norma usare per definire la priorità dei problemi di destinazione con l'analisi del codice consiste nell'iniziare con il **regole minime** set di regole e correggere i problemi desiderati e quindi aggiungere in modo incrementale altre regole o regole imposta per trovare e correggere i problemi aggiuntivi.  
   
-   Successivamente, si aggiungerà codice alla libreria di classi che verrà usata per dimostrare le violazioni del CA1704 "Gli identificatori devono essere digitati correttamente" regola di analisi del codice. Per altre informazioni, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   Successivamente, si aggiungerà codice alla libreria di classi che verrà usata per dimostrare le violazioni del CA1704 "Gli identificatori devono essere digitati correttamente" regola di analisi del codice. Per altre informazioni, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Aggiungere il proprio codice  
   
@@ -115,7 +110,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
   
 2. Nella finestra Elenco errori, fare clic su **gli avvisi** e quindi fare clic sui **descrizione** intestazione di colonna per ordinare gli avvisi in modalità alfanumerica.  
   
-    In un'applicazione reale, vorrebbero correggere eventuali violazioni delle regole vale la pena correzione a questo punto, o, facoltativamente, disattivare o eliminare una regola se è possibile determinare che non è stato necessario correggere. Per altre informazioni, vedere [non visualizzare avvisi tramite l'utilizzo dell'attributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+    In un'applicazione reale, vorrebbero correggere eventuali violazioni delle regole vale la pena correzione a questo punto, o, facoltativamente, disattivare o eliminare una regola se è possibile determinare che non è stato necessario correggere. Per altre informazioni, vedere [Rimuovere avvisi tramite l'attributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
 3. Si noti che gli avvisi di CA1704. Tali violazioni di questa regola indicano che è "consigliabile fornire un nome più significativo per i parametri." È possibile correggere il problema nel codice oppure è possibile disabilitare la regola, come illustrato nella procedura successiva.  
   
@@ -158,8 +153,5 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
 2.  Nella finestra Elenco errori, si noti che quando si fa clic **avvisi**, non si visualizzata più il segno di CA1704 per la regola "Gli identificatori devono essere digitati correttamente".  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: configurare l'analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Procedura: Configura analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Tabella di riferimento del set di regole di analisi del codice](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

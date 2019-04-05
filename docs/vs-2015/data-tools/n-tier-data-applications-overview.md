@@ -1,12 +1,9 @@
 ---
 title: Panoramica delle applicazioni dati a più livelli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969991"
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ N-applicazioni dati a livelli * sono applicazioni di dati che sono separate in p
   
  Visual Studio contiene diverse funzionalità per aiutare gli sviluppatori di creare applicazioni a più livelli:  
   
--   Il [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md) fornisce una **DataSetProject** proprietà che consente di separare il set di dati (il livello di entità di dati) e `TableAdapter`s (livello di accesso ai dati) in discreti progetti.  
+-   La finestra di progettazione set di dati fornisce una **DataSetProject** proprietà che consente di separare il set di dati (il livello di entità di dati) e `TableAdapter`s (livello di accesso ai dati) in progetti discreti.  
   
 -   Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce le impostazioni per generare le classi DataContext e di dati in diversi spazi dei nomi. In questo modo la separazione logica dei livelli di entità di data e l'accesso ai dati.  
   
@@ -89,7 +86,7 @@ Livello dati
   
  [Separare set di dati e TableAdapter in progetti diversi](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
  [Procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
@@ -101,4 +98,3 @@ Livello dati
  [Aggiornamento gerarchico](../data-tools/hierarchical-update.md)   
  [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

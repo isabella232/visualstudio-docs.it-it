@@ -1,14 +1,9 @@
 ---
-title: 'CA1711: Gli identificatori non devono contenere un suffisso non corretto | Microsoft Docs'
-ms.custom: ''
+title: 'CA1711: Gli identificatori non devono contenere il suffisso corretto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1711
 - IdentifiersShouldNotHaveIncorrectSuffix
@@ -20,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39e6a0f0019d05a3c93b5473e94eefca26bb8e29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966457"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Gli identificatori non devono contenere un suffisso non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,4 @@ ms.locfileid: "49837100"
  [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Gli attributi](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: eventi e delegati](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [Gli attributi](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Eventi e delegati](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -1,12 +1,9 @@
 ---
 title: Generazione di codice in fase di progettazione tramite modelli di testo T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,13 +16,13 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966606"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +125,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   
    Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  
   
-   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la direttiva `template` deve includere `language="VB"`. Il valore predefinito è `"C#"`.  
+   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la direttiva `template` deve includere `language="VB"`. `"C#"` è il valore predefinito.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debug di un modello di testo T4 in fase di progettazione  
  Per eseguire il debug di un modello di testo:  
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Vedere anche  
  [Linee guida per la scrittura di modelli di testo T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 'Procedura dettagliata: Debug degli errori a causa dello sfondo di Rendering | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966264"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per esaminare un problema dovuto a un oggetto colorato in modo non corretto a causa di un bug dello shader.  
@@ -46,7 +41,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica  
   
-1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un log di grafica contenente un frame che mostra il modello mancante. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene visualizzata una nuova finestra del documento del log di grafica. Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
+1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un log di grafica contenente un frame che mostra il modello mancante. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]viene visualizzata una nuova finestra del documento del log di grafica. Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
   
 2. In **Elenco frame**selezionare un frame in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la finestra del documento del log di grafica ha il seguente aspetto:  
   
@@ -113,6 +108,3 @@ output.color = input.color;
  Dopo aver corretto il codice, ricompilare ed eseguire l'app per verificare che il problema di rendering sia stato risolto:  
   
  ![Rendering dell'oggetto con colori corretti. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

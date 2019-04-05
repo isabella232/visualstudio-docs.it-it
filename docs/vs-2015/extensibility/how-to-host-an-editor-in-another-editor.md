@@ -1,28 +1,23 @@
 ---
-title: 'Procedura: ospitare un Editor in un altro Editor | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Ospitare un Editor in un altro Editor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fead1aa7b1094fe5bcd1cac989b6853d3564b00b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e47e918683d375f6a6baded2bf946a60020e64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966422"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Procedura: ospitare un Editor in un altro Editor
+# <a name="how-to-host-an-editor-in-another-editor"></a>Procedura: Ospitare un Editor in un altro Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio è possibile ospitare un editor all'interno di un altro, specificando la finestra di hosting come finestra padre. A tale scopo, impostare i parametri <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> e <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> nella cornice della finestra figlio.  
@@ -45,4 +40,3 @@ In Visual Studio è possibile ospitare un editor all'interno di un altro, specif
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Il **Application Designer** in Visual Studio Team Edition for Architects è riportato un esempio di una cornice della finestra dell'editor che ospita un altro editor. Il **Application Designer** ospita altre finestre di progettazione nel relativo riquadro a destra. Un pannello della finestra di progettazione (o **proprietà** pagina) per ognuna delle finestre di progettazione contenute è aggiunto alla cornice della finestra che lo contiene.
-

@@ -1,14 +1,9 @@
 ---
-title: 'Debug di applicazioni Web: Errori e risoluzione dei problemi | Microsoft Docs'
-ms.custom: ''
+title: 'Debug di applicazioni Web: Gli errori e risoluzione dei problemi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -31,40 +26,37 @@ ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ecab26f0a5b4a4cbe0a3918fadeb11a974bc9561
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b10bb975d03ee317c23831ad72e9f5ac0ee6659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965643"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: errori e risoluzione dei problemi
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: Errori e risoluzione dei problemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile che si verifichino i seguenti errori durante il tentativo di eseguire il debug di applicazioni Web.  
   
 -   [Risoluzione dei problemi](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [Errore: il sito usa un indirizzo IP](../debugger/error-site-uses-ip-address.md)  
+-   [Errore: Il sito usa un indirizzo IP](../debugger/error-site-uses-ip-address.md)  
   
--   [Errore: controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+-   [Errore: Controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
 -   [Errore: ASP.NET non è installato](../debugger/error-aspnet-not-installed.md)  
   
--   [Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+-   [Errore: Errore di debug. L'autenticazione integrata di Windows non è abilitata](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
--   [Errore: il server Web non è configurato in modo corretto](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+-   [Errore: Il server Web non è configurato in modo corretto](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
--   [Errore: il server Web è stato bloccato e blocca il verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+-   [Errore: Il verbo DEBUG è bloccato dal server Web, che è stato a sua volta bloccato](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Errore: timeout durante il debug dei servizi Web](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [Errore: Timeout durante il debug dei servizi Web](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Errore: impossibile avviare il debug sul Server Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+-   [Errore: Impossibile avviare il debug sul server Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)
-
-
-

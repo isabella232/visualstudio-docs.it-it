@@ -1,27 +1,22 @@
 ---
 title: Finestra di dialogo Proprietà finestra, scheda di Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04bba4490d5cfaebd6bb3d99ac7ad2911b3f548e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774627"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58970334"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Scheda Finestre, finestra di dialogo Proprietà finestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Usare la **Windows** pressione di tab per visualizzare informazioni sulle finest
 |**Finestra padre**|Handle della finestra padre della finestra ("none" Se non esiste alcun padre). Scegliere questa voce per visualizzare le proprietà della finestra padre.|  
 |**Primo elemento figlio**|Handle della finestra della finestra prima figlio, nella sequenza (Z order) mostrato nella visualizzazione struttura ad albero della finestra ("none" Se non esistono alcuna finestra figlio). Selezionare questo valore per visualizzare le proprietà della prima finestra figlio.|  
 |**Finestra proprietaria**|Handle della finestra proprietaria della finestra corrente. Finestra principale di un'applicazione è in genere proprietario finestre di dialogo modale del sistema, ad esempio ("none" Se non vi è alcun proprietario). Scegliere questa voce per visualizzare le proprietà della finestra proprietaria.|
-
-
-

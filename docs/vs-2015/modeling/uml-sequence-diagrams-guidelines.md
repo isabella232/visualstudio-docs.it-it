@@ -1,12 +1,9 @@
 ---
 title: 'Diagrammi di sequenza UML: Linee guida | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.linktosequencediagram
 - vs.teamarch.logicalclassdiagram.createlifeline
@@ -25,15 +22,15 @@ ms.assetid: 5990ef7c-ba60-4e20-a36d-e29c1fa6c8bb
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56ecc5c54611f94cdbfb0f08ec54a4e0722f0cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966152"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>Diagrammi di sequenza UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzare un'interazione. Un'interazione è una sequenza di messaggi tra istanze tipiche di classi, componenti, sistemi secondari o attori.  
@@ -60,9 +57,9 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 ##  <a name="Using"></a> Uso dei diagrammi di sequenza UML  
  È possibile usare i diagrammi di sequenza per diversi scopi in diversi livelli di dettaglio del programma. Le occasioni tipiche che richiedono il disegno di un diagramma di sequenza sono:  
   
-- Se si ha un diagramma caso di utilizzo che riepiloga gli utenti del sistema e i loro obiettivi, è possibile disegnare diagrammi di sequenza per descrivere in che modo interagiscono i componenti principali del sistema per raggiungere l'obiettivo di ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi caso d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Se si ha un diagramma caso di utilizzo che riepiloga gli utenti del sistema e i loro obiettivi, è possibile disegnare diagrammi di sequenza per descrivere in che modo interagiscono i componenti principali del sistema per raggiungere l'obiettivo di ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-- Se all'interfaccia di un componente arrivano messaggi identificati, è possibile disegnare diagrammi di sequenza per descrivere in che modo interagiscono le parti del componente per raggiungere il risultato richiesto per ogni messaggio in ingresso. Per altre informazioni, vedere [diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md).  
+- Se all'interfaccia di un componente arrivano messaggi identificati, è possibile disegnare diagrammi di sequenza per descrivere in che modo interagiscono le parti del componente per raggiungere il risultato richiesto per ogni messaggio in ingresso. Per altre informazioni, vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md).  
   
   Il disegno dei diagrammi di sequenza offre diversi vantaggi:  
   
@@ -80,10 +77,10 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
  È anche possibile descrivere in un diagramma classi UML i tipi di parametri e i valori restituiti usati nei messaggi inviati tra le linee di vita.  
   
 #### <a name="use-case-details"></a>Dettagli relativi al caso di utilizzo  
- Un caso di utilizzo rappresenta l'obiettivo di un utente e la sequenza di passaggi necessaria per raggiungerlo. La sequenza di passaggi può essere descritta in molti modi. Un'opzione consiste nel disegnare un diagramma di sequenza che mostra le interazioni tra gli utenti e i componenti principali del sistema. Per altre informazioni, vedere [diagrammi caso d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Un caso di utilizzo rappresenta l'obiettivo di un utente e la sequenza di passaggi necessaria per raggiungerlo. La sequenza di passaggi può essere descritta in molti modi. Un'opzione consiste nel disegnare un diagramma di sequenza che mostra le interazioni tra gli utenti e i componenti principali del sistema. Per altre informazioni, vedere [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi di sequenza  
- Per un elenco completo degli elementi nei diagrammi di sequenza, vedere [diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md).  
+ Per un elenco completo degli elementi nei diagrammi di sequenza, vedere [diagrammi di sequenza UML: informazioni di riferimento](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
 >  Procedura dettagliata per creare i diagrammi di modellazione è descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
@@ -118,7 +115,7 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 3.  Per visualizzare un messaggio proveniente da un'origine evento sconosciuta (9) o trasmesso a destinatari sconosciuti (10), disegnare un messaggio asincrono da o verso uno spazio vuoto nel diagramma. Questi messaggi sono denominati *messaggi trovati* (9) e *perdeva dei messaggi* (10).  
   
     > [!NOTE]
-    >  Per spostare un gruppo di linee di vita contenenti messaggi trovati o persi, attenersi alla procedura seguente per selezionare le linee di vita prima di spostarle: disegnare un rettangolo attorno a tali linee di vita o premere e tenere premuto il **CTRL** mentre si fa clic su ogni linea di vita. Se si usa **Seleziona tutto** oppure **CTRL**+**oggetto** per selezionare tutte le linee di vita e spostarle, qualsiasi persi o trovati collegati a queste linee di vita dei messaggi non può essere spostata. Se si verifica questo scenario, è possibile spostare questi messaggi separatamente.  
+    >  Per spostare un gruppo di linee di vita contenenti messaggi trovati o persi, attenersi alla seguente procedura per selezionare le linee di vita prima di spostarle: Disegnare un rettangolo attorno a tali linee di vita o premere e tenere premuto il **CTRL** mentre si fa clic su ogni linea di vita. Se si usa **Seleziona tutto** oppure **CTRL**+**oggetto** per selezionare tutte le linee di vita e spostarle, qualsiasi persi o trovati collegati a queste linee di vita dei messaggi non può essere spostata. Se si verifica questo scenario, è possibile spostare questi messaggi separatamente.  
   
 4.  Disegnare diagrammi di sequenza per ogni messaggio principale nello stesso componente o sistema.  
   
@@ -147,7 +144,7 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
   - Fare doppio clic la linea di vita e quindi scegliere **Crea classe**.  
   
-     oppure  
+     -oppure-  
   
   - Selezionare la linea di vita, premere **F4**e quindi nel **proprietà** impostare nella finestra di **tipo** proprietà a un oggetto esistente digitare oppure specificare il nome di un nuovo tipo. Fare doppio clic sull'etichetta di messaggio e quindi scegliere **operazione Create**.  
   
@@ -446,13 +443,10 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 5.  Per aggiungere nuovi messaggi a un frammento, usare gli strumenti del messaggio o le funzioni di copia e incolla.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)   
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
  [Video: Disegno delle interazioni con i diagrammi di sequenza](http://go.microsoft.com/fwlink/?LinkId=201113)
-
-
-

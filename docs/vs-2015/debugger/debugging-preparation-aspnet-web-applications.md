@@ -1,14 +1,9 @@
 ---
-title: 'Preparazione al debug: Applicazioni Web ASP.NET | Microsoft Docs'
-ms.custom: ''
+title: 'Debug della preparazione: Applicazioni Web ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: bcfb1080-98d1-42f9-96af-186fb14f232a
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730680"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967049"
 ---
-# <a name="debugging-preparation-aspnet-web-applications"></a>Preparazione al debug: applicazioni Web ASP.NET
+# <a name="debugging-preparation-aspnet-web-applications"></a>Debug della preparazione: Applicazioni Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di creare un'applicazione Web Form. Quando si crea un sito Web mediante questo modello, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono definite automaticamente le impostazioni predefinite per il debug. Nel **proprietà del progetto** nella finestra di dialogo è possibile specificare se si desidera che la pagina Web da una pagina di avvio. Quando si avvia il debug di un' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]sito Web con queste impostazioni predefinite, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] avvia Internet Explorer e collega il debugger per il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] processo di lavoro (aspnet_wp.exe o w3wp.exe). Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
@@ -48,14 +43,14 @@ Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di 
   
 1.  Impostare uno o più punti di interruzione nelle funzioni e nei gestori eventi.  
   
-     Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Quando viene raggiunto un punto di interruzione, eseguire il codice un'istruzione alla volta all'interno della funzione. Osservare l'esecuzione del codice finché non si individua il problema.  
   
-     Per altre informazioni, vedere [esecuzione di istruzioni](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) e [Script e il debug di applicazioni Web](../debugger/debugging-web-applications-and-script.md).  
+     Per altre informazioni, vedere [esecuzione di istruzioni](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) e [Script e il debug di applicazioni Web](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Modifica delle configurazioni predefinite  
- Se si desidera, è possibile modificare le configurazioni di debug e di rilascio predefinite create da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Se si desidera, è possibile modificare le configurazioni di debug e di rilascio predefinite create da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 #### <a name="to-change-the-default-debug-configuration"></a>Per modificare la configurazione di debug predefinita  
   
@@ -74,6 +69,3 @@ Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di 
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug di codice gestito](../debugger/debugging-managed-code.md)
-
-
-

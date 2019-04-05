@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugModules2::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Next
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 779022281849c43cdae880febbb1ea3daee4890e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 25211ac1cbe64dd29bbdc85c4f2674b7e9977851
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966893"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,9 +53,8 @@ int Next(
  [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
-

@@ -1,31 +1,26 @@
 ---
 title: La gestione della casella degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965736"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] consente a un pacchetto VSPackage, ad esempio un editor o una finestra di progettazione, di gestire l'appartenenza e l'aspetto della **casella degli strumenti**.  
   
- La **casella degli strumenti** può inoltre essere gestita usando l'automazione. Per altre informazioni sulla gestione di una casella degli strumenti tramite l'automazione, vedere [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ La **casella degli strumenti** può inoltre essere gestita usando l'automazione. Per altre informazioni sulla gestione di una casella degli strumenti tramite l'automazione, vedere [come: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Selezione automatica della scheda della casella degli strumenti  
  Una scheda o una categoria specifica della **casella degli strumenti** può essere impostata automaticamente come attiva in base alla finestra di progettazione o all'editor attualmente attivo. Ad esempio, se è attivata una finestra di progettazione di form, si potrebbe voler impostare come attiva la scheda **Tutti i Windows Form** .  

@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: avvio del debug XSLT | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Avvio del debug XSLT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8358335a-fcb0-45e0-a37e-45b43e49ec0a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 22a2ad1a37b67b2ac2120bfef9975e2a780d737f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965492"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Procedura: avvio del debug XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procedura: del debug di XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il debugger XSLT può essere usato per eseguire il debug di un foglio di stile o di un'applicazione XSLT. Durante il debug è possibile eseguire il codice una riga alla volta eseguendo le istruzioni, ignorandole o eseguendole al di fuori del codice. I comandi per usare la funzionalità di esecuzione del codice riga per riga sono uguali a quelli del debugger XSLT e degli altri debugger di Visual Studio. Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visualizzazione del documento di input e dell'output XSLT.  
@@ -93,6 +88,5 @@ namespace ConsoleApplication
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Cenni preliminari sull'esecuzione del codice](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
-
+ [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
+ [Cenni preliminari sull'esecuzione del codice](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

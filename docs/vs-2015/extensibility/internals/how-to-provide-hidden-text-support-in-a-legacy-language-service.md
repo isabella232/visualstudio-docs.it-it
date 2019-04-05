@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: fornire il supporto di testo nascosto in un servizio di linguaggio Legacy | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Fornire il supporto di testo nascosto in un servizio di linguaggio Legacy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a74998e6cb9b236818f20ec3c597f9a3b9bd7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967104"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: fornire il supporto di testo nascosto in un servizio di linguaggio Legacy
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: Offrire il supporto per il testo nascosto in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 È possibile creare aree di testo nascosto oltre alle aree della struttura. Aree di testo nascosto possono essere controllato dal client o dall'editor e vengono utilizzati per nascondere completamente un'area di testo. L'editor visualizza un'area nascosta come linee orizzontali. Un esempio è la visualizzazione solo Script nell'editor HTML.  
@@ -54,4 +49,3 @@ ms.locfileid: "51727231"
         >  Quando sono nascosti aree nascosto, l'editor visualizza automaticamente le righe per le aree nascoste per indicare la presenza.  
   
     2.  Specificare se l'area è controllato dal client o dall'editor nel `dwBehavior` i membri del <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura. L'implementazione della struttura intelligente può contenere una combinazione di struttura editor - e controllato dal client e le aree di testo nascosto.
-

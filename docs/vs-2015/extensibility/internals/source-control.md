@@ -1,26 +1,21 @@
 ---
 title: Controllo del codice sorgente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK]
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ffe428d786dcf0ed4c188a0e6790016ed6c2e72c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7a29071035ccdd8a94b4ae26323780bcb24e8e23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968284"
 ---
 # <a name="source-control"></a>Controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ In questa sezione vengono illustrate le opzioni per l'implementazione del contro
   
  [Estensione dei progetti](../../extensibility/extending-projects.md)  
  Descrive come usare i progetti e le soluzioni di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per organizzare file di codice e file di risorse e come implementare il controllo del codice sorgente.
-

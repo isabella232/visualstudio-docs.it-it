@@ -1,34 +1,29 @@
 ---
 title: Installazione di pacchetti VSPackage con Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a43f48c337751c989af37c49a361ae011aa4e16
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967242"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installazione di pacchetti VSPackage con Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L'integrazione di VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] richiede oltre la semplice copia dei file di computer dell'utente. Programma di installazione del pacchetto VSPackage deve installare il pacchetto VSPackage e i relativi file dipendenti e registrare e integrarle in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Il pacchetto VSPackage può sfruttare i vantaggi delle funzionalità di integrazione ad esempio visualizzando un'icona sul [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] iniziale dello schermo e sulla finestra di dialogo.  
   
- File di Microsoft Windows Installer sono il modo consigliato per distribuire i pacchetti VSPackage. Eseguire pacchetti di Windows Installer facile da usare in qualsiasi sistema operativo Windows supportato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ File di Microsoft Windows Installer sono il modo consigliato per distribuire i pacchetti VSPackage. Eseguire pacchetti di Windows Installer facile da usare in qualsiasi sistema operativo Windows supportato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Windows Installer](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Nozioni di base su Windows Installer](../../extensibility/internals/windows-installer-basics.md)  
@@ -55,7 +50,7 @@ L'integrazione di VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] r
  [Distribuzione dei tipi di progetto](../../extensibility/internals/deploying-project-types.md)  
  Viene illustrato come utilizzare al nuovo Sil aggregator tipo di progetto per i tipi di progetto di codice gestito.  
   
- [Procedura: Generare le informazioni del Registro di sistema per un programma di installazione](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Procedura: Genera informazioni di registro di sistema per un programma di installazione](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Viene illustrato come usare RegPkg.exe per generare un manifesto di registrazione per un pacchetto VSPackage gestito.  
   
  [Comandi da eseguire dopo l'installazione](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  
@@ -67,4 +62,3 @@ L'integrazione di VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] r
 ## <a name="related-sections"></a>Sezioni correlate  
  [Installazione di VSPackage](../../misc/installing-vspackages.md)  
  Descrive come creare e installare i pacchetti VSPackage e come supportare gli utenti che eseguono più versioni di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nello stesso momento.
-

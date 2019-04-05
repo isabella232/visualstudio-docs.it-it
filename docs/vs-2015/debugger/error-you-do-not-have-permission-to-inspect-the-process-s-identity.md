@@ -1,14 +1,9 @@
 ---
-title: "Errore: Non si dispone dell'autorizzazione per controllare il processo di&#39;identità s | Microsoft Docs"
-ms.custom: ''
+title: 'Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -18,15 +13,15 @@ ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0974e38f9a0a901c97ca5dc3c9473d027095d67c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966389"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non si dispone dell'autorizzazione per controllare il processo di&#39;identità s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Non si dispone dell'autorizzazione necessaria per controllare l'identità del processo. Probabilmente l'errore è causato dalla configurazione del sistema.  
@@ -35,19 +30,19 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 ### <a name="to-enable-terminal-services"></a>Per attivare Servizi terminal  
   
-1.  Fare clic su **avviare** e quindi scegliere **Pannello di controllo**.  
+1.  Fare clic su **Start**, quindi scegliere **Pannello di controllo**.  
   
-2.  Nel Pannello di controllo, scegliere **passa alla visualizzazione classica**, se necessario e quindi fare doppio clic su **strumenti di amministrazione**.  
+2.  Nel Pannello di controllo scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-3.  Nel **strumenti di amministrazione** finestra, fare doppio clic su **Gestione Computer**.  
+3.  Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione computer**.  
   
-4.  Nella finestra Gestione Computer espandere il **applicazioni e servizi** nodo.  
+4.  Nella finestra di Gestione computer espandere il nodo **Servizi e applicazioni**.  
   
-5.  Sotto il **applicazioni e servizi**, fare clic su **Services**.  
+5.  In **Servizi e applicazioni** fare clic su **Servizi**.  
   
      Nel riquadro di destra verrà visualizzato un elenco di servizi.  
   
-6.  Nel **Services** elenco, fare doppio clic su **servizi Terminal** e quindi scegliere **proprietà**.  
+6.  Nell'elenco **Servizi** fare clic con il pulsante destro del mouse su **Servizi terminal** e quindi scegliere **Proprietà**.  
   
 7.  Nel **proprietà servizi Terminal** finestra, passa al **generali** scheda e impostare **tipo di avvio** al **manuale**.  
   
@@ -59,20 +54,17 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 ### <a name="to-enable-remote-desktop"></a>Per attivare Desktop remoto  
   
-1.  Fare clic su **avviare** e quindi fare doppio clic su **My Computer**.  
+1.  Fare clic su **Start** e quindi fare clic con il pulsante destro del mouse su **Risorse del computer**.  
   
 2.  Scegliere **Proprietà**.  
   
-     Il **le proprietà di sistema** viene visualizzata la finestra.  
+     Verrà visualizzata la finestra **Proprietà del sistema**.  
   
-3.  Fare clic su **remota**.  
+3.  Fare clic su **Connessione remota**.  
   
-4.  Sotto **Desktop remoto**, selezionare **consentire agli utenti di connettersi in remoto al computer**.  
+4.  In **Desktop remoto** selezionare **Consenti agli utenti di connettersi in remoto al computer**.  
   
 5.  Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

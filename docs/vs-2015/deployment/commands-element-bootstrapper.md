@@ -1,14 +1,9 @@
 ---
 title: '&lt;I comandi&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966687"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;I comandi&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,14 +69,14 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Commands` elemento è obbligatorio. L'elemento ha l'attributo seguente.  
+ Il `Commands` elemento è obbligatorio. L'elemento presenta l'attributo seguente:  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Reboot`|Facoltativo. Determina se è necessario riavviare il sistema se uno qualsiasi dei pacchetti di restituire un codice di uscita del riavvio. L'elenco seguente mostra i valori validi:<br /><br /> `Defer`. Il riavvio viene posticipato fino alla fase successiva.<br /><br /> `Immediate`. Causa il riavvio immediato se uno dei pacchetti ha restituito un codice di uscita di riavvio.<br /><br /> `None`. Fa sì che tutte le richieste di riavvio verrà ignorato.<br /><br /> Il valore predefinito è `Immediate`.|  
   
 ## <a name="command"></a>Comando  
- L'elemento `Command` è un elemento figlio dell'elemento `Commands`. Oggetto `Commands` elemento può avere uno o più `Command` elementi. L'elemento ha gli attributi seguenti.  
+ L'elemento `Command` è un elemento figlio dell'elemento `Commands`. Oggetto `Commands` elemento può avere uno o più `Command` elementi. L'elemento presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -121,9 +116,9 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
 |`Schedule`|Facoltativo. Il nome di un `Schedule` tag che definisce quando questa regola deve essere valutata.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- Il `ExitCodes` elemento è figlio di `Command` elemento. Il `ExitCodes` elemento contiene uno o più `ExitCode` elementi, che determinano quali operazioni deve eseguire l'installazione in risposta a un codice di uscita da un pacchetto. Può esistere un facoltativo `ExitCode` elemento sotto un `Command` elemento. `ExitCodes` non ha attributi.  
+ Il `ExitCodes` elemento è figlio di `Command` elemento. Il `ExitCodes` elemento contiene uno o più `ExitCode` elementi, che determinano quali operazioni deve eseguire l'installazione in risposta a un codice di uscita da un pacchetto. Può esistere un facoltativo `ExitCode` elemento sotto un `Command` elemento. L'elemento `ExitCodes` non ha attributi.  
   
-## <a name="exitcode"></a>Codice di uscita  
+## <a name="exitcode"></a>ExitCode  
  Il `ExitCode` elemento è figlio di `ExitCodes` elemento. Il `ExitCode` elemento determina ciò che l'installazione deve eseguire in risposta a un codice di uscita da un pacchetto. `ExitCode` non contiene elementi figlio e ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
@@ -213,7 +208,4 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto la `Ins
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti dello Schema di pacchetto e del prodotto](../deployment/product-and-package-schema-reference.md)   
- [\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)
-
-
-
+ [\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)

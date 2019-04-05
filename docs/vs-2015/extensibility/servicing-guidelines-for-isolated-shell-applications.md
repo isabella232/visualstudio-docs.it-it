@@ -1,27 +1,22 @@
 ---
 title: Linee guida per la manutenzione di applicazioni Shell isolate | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Shell integrated mode, serviceability
 - Shell integrated mode [Visual Studio], serviceability
 ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a795e5dc71183550e660f8ce7d67f1a41bddbcf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967450"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Linee guida per la manutenzione per applicazioni della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ Quando si distribuisce un'applicazione shell isolata di Visual Studio, è necess
 -   L'aggiornamento di file condivisi può causare problemi di compatibilità delle applicazioni perché un aggiornamento a un'applicazione può cambiare la versione di un file utilizzato da una seconda applicazione che non è stata aggiornata. Programmi di installazione per i prodotti che condividono i file di conteggio dei riferimenti ai file condivisi. Pertanto, la disinstallazione di un prodotto non influenza i file condivisi oltre la riduzione del conteggio delle istanze installate.  
   
 -   Il programma di installazione Quick Fix Engineering (QFE) consente di ripristinare le versioni dei file per le versioni dei prodotti che ha eseguito il programma di installazione QFE. Questo processo interruzioni potenzialmente di un'applicazione che ha recapitato un file condiviso aggiornato.
-

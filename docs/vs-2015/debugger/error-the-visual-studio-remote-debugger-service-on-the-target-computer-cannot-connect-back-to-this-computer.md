@@ -1,14 +1,9 @@
 ---
 title: 'Errore: Il servizio di Visual Studio Remote Debugger nel computer di destinazione non può connettersi al computer | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 89ecf99d-66bf-4da0-a840-aa95b0be1702
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f1e457829f7b6ab5050a02bd8f20e1c51d5df14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 833beb91c35c35d29df45a2e8caa31aae173bb27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966929"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il messaggio di errore viene visualizzato per segnalare che l'account utente utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio non è in grado di eseguire l'autenticazione per la connessione al computer dal quale viene eseguito il debug.  
@@ -43,11 +38,11 @@ Il messaggio di errore viene visualizzato per segnalare che l'account utente uti
 |Uno o entrambi i computer in un gruppo di lavoro|No|No|Yes|  
 |Computer in domini diversi|No|No|Yes|  
   
- Si tenga inoltre presente quanto segue:  
+ Inoltre:  
   
 -   L'account utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio deve essere un account amministrativo nel computer remoto in modo da poter eseguire il debug di qualsiasi processo.  
   
--   L'account deve anche essere concesse le `Log on as a service` privilegi nel computer remoto che usa la **criteri di sicurezza locali** strumento di amministrazione.  
+-   È anche necessario assegnare a questo account il privilegio `Log on as a service` nel computer remoto che utilizza lo strumento di amministrazione **Criteri di sicurezza locali**.  
   
 -   Se si intende utilizzare un accesso al computer con account locale, è necessario eseguire il servizio Debugger remoto di Visual Studio con un account locale.  
   
@@ -59,31 +54,28 @@ Il messaggio di errore viene visualizzato per segnalare che l'account utente uti
   
 ### <a name="to-add-log-on-as-a-service-privilege"></a>Per aggiungere un privilegio "Accesso come servizio"  
   
-1.  Nel **avviare** menu, scegliere **Pannello di controllo**.  
+1.  Nel menu **Start** scegliere **Pannello di controllo**.  
   
-2.  Nel Pannello di controllo, scegliere **visualizzazione classica**, se necessario.  
+2.  Se necessario, nel Pannello di controllo scegliere **Passa alla visualizzazione classica**.  
   
 3.  Fare doppio clic su **Strumenti di amministrazione**.  
   
-4.  Nella finestra Strumenti di amministrazione, fare doppio clic su **criteri di sicurezza locali**.  
+4.  Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.  
   
-5.  Nel **impostazioni di sicurezza locali** finestra, espandere il **criteri locali** cartella.  
+5.  Nella finestra **Impostazioni sicurezza locale** espandere la cartella **Criteri locali**.  
   
-6.  Fare clic su **Assegnazione diritti utente**.  
+6.  Scegliere **Assegnazione diritti utente**.  
   
-7.  Nel **criterio** colonna, fare doppio clic su **Accedi come servizio** per visualizzare le assegnazioni dei criteri di gruppo locali correnti nel **Accedi come servizio** nella finestra di dialogo.  
+7.  Nella colonna **Criteri** fare doppio clic su **Accedi come servizio** per visualizzare le assegnazioni dei criteri di gruppo locali correnti nella finestra di dialogo **Accedi come servizio**.  
   
-8.  Per aggiungere nuovi utenti, scegliere il **Aggiungi utente o gruppo** pulsante.  
+8.  Per aggiungere nuovi utenti, fare clic sul pulsante **Aggiungi utente o gruppo**.  
   
-9. Dopo aver aggiunto gli utenti, fare clic **OK**.  
+9. Al termine, scegliere **OK**.  
   
 ### <a name="to-work-around-this-error"></a>Per risolvere il problema  
   
 -   Eseguire Remote Debugging Monitor come applicazione anziché come servizio.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Risoluzione dei problemi e gli errori di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

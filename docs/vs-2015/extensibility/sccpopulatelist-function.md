@@ -1,14 +1,9 @@
 ---
 title: Funzione SccPopulateList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965842"
 ---
 # <a name="sccpopulatelist-function"></a>Funzione SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,10 @@ SCCRTN SccPopulateList (
  pvContext  
  [in] La struttura del contesto plug-in del controllo origine.  
   
- Ncomando  
+ nCommand  
  [in] Il comando di controllo di origine che verrà applicato a tutti i file di `lpFileNames` matrice (vedere [codice del comando](../extensibility/command-code-enumerator.md) per un elenco di possibili comandi).  
   
- nFile  
+ nFiles  
  [in] Numero di file nei `lpFileNames` matrice.  
   
  lpFileNames  
@@ -66,13 +61,13 @@ SCCRTN SccPopulateList (
  lpStatus  
  [in, out] Matrice per il plug-in per restituire i flag di stato per ogni file di controllo del codice sorgente.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando (vedere la sezione "PopulateList flag" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per informazioni dettagliate).  
   
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Operazione completata.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|  
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)   
  [Codice di comando](../extensibility/command-code-enumerator.md)
-

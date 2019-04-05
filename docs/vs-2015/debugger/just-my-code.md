@@ -1,14 +1,9 @@
 ---
 title: Just My Code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798651"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966744"
 ---
 # <a name="just-my-code"></a>Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
   Tutto il codice rimanente viene considerato codice utente.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Comportamento dell'esecuzione  
- Quando si **Esegui istruzione** (tasto di scelta rapida: F11) codice non utente, il debugger passa il codice per la successiva istruzione utente. Quando si **Esci da istruzione /** (tastiera: MAIUSC+F11), il debugger viene eseguito alla riga successiva del codice utente. Se non viene rilevato nessun codice utente l'esecuzione continua finché non viene chiusa l'applicazione, non viene trovato un punto di interruzione o non si verifica un'eccezione.  
+ Quando si **Esegui istruzione** (tasto di scelta rapida: Codice non utente F11), il debugger avanza il codice per la successiva istruzione utente. Quando si **Esci da istruzione /** (tastiera: MAIUSC+F11), il debugger viene eseguito alla riga successiva del codice utente. Se non viene rilevato nessun codice utente l'esecuzione continua finché non viene chiusa l'applicazione, non viene trovato un punto di interruzione o non si verifica un'eccezione.  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Comportamento punto di interruzione  
  Quando Just My Code è abilitato, è possibile scegliere **Interrompi tutto** (tastiera: Ctrl + Alt + INTERR) e arrestare l'esecuzione in corrispondenza della posizione in cui è presente alcun codice utente da visualizzare. In questo caso viene visualizzata la finestra Nessuna origine. Se a questo punto si sceglie un comando di esecuzione, il debugger passerà alla successiva riga del codice utente.  
@@ -93,7 +88,7 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
   È possibile creare i propri file `.natstepfilter` e `.natjmc` per personalizzare il comportamento dell'esecuzione di istruzioni e della finestra dello stack di chiamate in `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamento dell'esecuzione  
- Quando si **Esegui istruzione** (tasto di scelta rapida: F11) codice non utente dal codice utente, il debugger passa il codice alla riga successiva del codice utente. Quando si **Esci da istruzione /** (tastiera: MAIUSC+F11), il debugger viene eseguito alla riga successiva del codice utente. Se non viene rilevato nessun codice utente l'esecuzione continua finché non viene chiusa l'applicazione, non viene trovato un punto di interruzione o non si verifica un'eccezione.  
+ Quando si **Esegui istruzione** (tasto di scelta rapida: Codice non utente F11) dal codice utente, il debugger avanza il codice alla riga successiva del codice utente. Quando si **Esci da istruzione /** (tastiera: MAIUSC+F11), il debugger viene eseguito alla riga successiva del codice utente. Se non viene rilevato nessun codice utente l'esecuzione continua finché non viene chiusa l'applicazione, non viene trovato un punto di interruzione o non si verifica un'eccezione.  
   
  Se il debugger si interrompe nel codice non utente, ad esempio se un comando Interrompi tutto si arresta nel codice non utente, l'esecuzione continua nel codice non utente.  
   
@@ -174,7 +169,7 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Percorso completo del file o dei file di codice sorgente da considerare come codice esterno. È possibile usare i caratteri jolly di Windows `?` e `*` quando si specifica il percorso.|  
   
- **Attributi dell'elemento (funzione)**  
+ **Attributi dell'elemento funzione**  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -209,17 +204,17 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
   
   È possibile modificare le classificazioni predefinite e classificare file e URL specifici aggiungendo un file con estensione json denominato `mycode.json` nella cartella radice di un progetto.  
   
-  Tutto l'altro codice viene classificato come **MyCode**.  
+  Tutto il resto del codice viene classificato come **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Comportamento dell'esecuzione  
   
--   Se una funzione non è utente (**MyCode**), codice **Esegui istruzione** (tasti di scelta rapida: F11) si comporta come **Esegui istruzione/routine** (tastiera: F10).  
+-   Se una funzione non è utente (**MyCode**), codice **Esegui istruzione** (tasto di scelta rapida: F11) si comporta come **Esegui istruzione/routine** (tastiera: F10).  
   
 -   Se un'esecuzione inizia nel non utente (**LibraryCode** oppure **UnrelatedCode**) del codice, quindi l'esecuzione temporanea si comporta come se Just My Code non è abilitato. Non appena si esegue nuovamente codice utente, l'esecuzione di Just My Code è nuovamente abilitata.  
   
 -   Quando un'esecuzione nel codice utente comporta l'uscita dal contesto di esecuzione corrente (ad esempio eseguire l'ultima riga di un gestore eventi), il debugger si arresta alla successiva riga di codice utente eseguita. Ad esempio, se eseguita una richiamata **LibraryCode** codice il debugger continua finché non viene eseguita la riga di codice utente successiva.  
   
--   **Esci da istruzione /** (tastiera: MAIUSC+F11) si interrompe nella riga successiva del codice utente. Se non viene rilevato nessun codice utente l'esecuzione continua finché non viene chiusa l'applicazione, non viene trovato un punto di interruzione o non si verifica un'eccezione.  
+-   **Esci da istruzione** (tastiera: MAIUSC + F11) si interrompe nella riga successiva del codice utente. Se non viene rilevato nessun codice utente l'esecuzione continua finché non viene chiusa l'applicazione, non viene trovato un punto di interruzione o non si verifica un'eccezione.  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Comportamento punto di interruzione  
   
@@ -291,15 +286,15 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
 |-|-|  
 |**Eval**|Script eseguito passando una stringa alla funzione `eval` fornita dall'host. Per impostazione predefinita, lo script Eval viene classificato come **MyCode**.|  
 |**Function**|Script eseguito passando una stringa al costruttore `Function`. Per impostazione predefinita, lo script Function viene classificato come **LibraryCode**.|  
-|**Blocco di script**|Script eseguito passando una stringa alla funzione `setTimeout`, `setImmediate` o `setInterval`. Per impostazione predefinita, lo script ScriptBlock viene classificato come **UnrelatedCode**.|  
+|**ScriptBlock**|Script eseguito passando una stringa alla funzione `setTimeout`, `setImmediate` o `setInterval`. Per impostazione predefinita, lo script ScriptBlock viene classificato come **UnrelatedCode**.|  
   
  È possibile modificare il valore a una delle parole chiave seguenti:  
   
-- `MyCode`  Classifica lo script come **MyCode**.  
+- `MyCode` classifica lo script come **MyCode**.  
   
-- `Library`  Classifica lo script come **LibraryCode**.  
+- `Library` classifica lo script come **LibraryCode**.  
   
-- `Unrelated`  Classifica lo script come **UnrelatedCode**.  
+- `Unrelated` classifica lo script come **UnrelatedCode**.  
   
   **MyCode, Libraries e Unrelated**  
   
@@ -308,12 +303,7 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
 |||  
 |-|-|  
 |**MyCode**|Matrice di URL o di file classificati come **MyCode**.|  
-|**Librerie**|Matrice di URL o di file classificati come **LibraryCode**.|  
-|**Non correlati**|Matrice di URL o di file classificati come **UnrelatedCode**.|  
+|**Libraries**|Matrice di URL o di file classificati come **LibraryCode**.|  
+|**Unrelated**|Matrice di URL o di file classificati come **UnrelatedCode**.|  
   
  La stringa dell'URL o del file può contenere uno o più caratteri `*`, che corrispondono a zero o più caratteri. `*` è l'equivalente dell'espressione regolare `.*`.
-
-
-
-
-

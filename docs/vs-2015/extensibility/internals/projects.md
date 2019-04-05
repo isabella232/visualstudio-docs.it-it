@@ -1,14 +1,9 @@
 ---
 title: I progetti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - custom tools [Visual Studio SDK]
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3d31f1ce7d063969aad113b95a6684272a28fe9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967258"
 ---
 # <a name="projects"></a>Progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
  [Progetti Web](../../extensibility/internals/web-projects.md)  
  Viene illustrato il progetto Web, che consentono di creare applicazioni Web.  
   
- [Nuova generazione del progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Nuova generazione del progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Viene illustrato ciò che effettivamente si verifica quando si crea un nuovo progetto.  
   
  [Esempi di VSSDK](../../misc/vssdk-samples.md)  
@@ -50,4 +45,3 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
 ## <a name="related-sections"></a>Sezioni correlate  
  [Componenti e funzionalità di Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
  Illustra diversi aspetti di estendibilità di Visual Studio.
-

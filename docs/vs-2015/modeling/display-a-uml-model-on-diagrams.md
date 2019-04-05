@@ -1,25 +1,22 @@
 ---
 title: Visualizzare un modello UML nei diagrammi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965471"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Visualizzare un modello UML nei diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,18 +41,18 @@ Nel codice programma per un'estensione a Visual Studio, è possibile controllare
   
 |Tipo di elemento|Esempio:|Per visualizzarlo, il codice deve|  
 |---------------------|-----------------|-------------------------------------|  
-|Classificatore|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Creare forme associate nei diagrammi specificati. È possibile creare un numero qualsiasi di forme per ogni classificatore.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Impostare `parentShape` su `null` per una forma di livello superiore del diagramma.<br /><br /> Per visualizzare una forma all'interno di un'altra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:** se si esegue Display in un' **ILinkedUndo** transazione, il metodo talvolta non restituisce `IShape`. La forma viene tuttavia creata correttamente ed è accessibile mediante `IElement.Shapes().`|  
+|Classificatore|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Creare forme associate nei diagrammi specificati. È possibile creare un numero qualsiasi di forme per ogni classificatore.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Impostare `parentShape` su `null` per una forma di livello superiore del diagramma.<br /><br /> Per visualizzare una forma all'interno di un'altra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:**  Se si esegue Display in un' **ILinkedUndo** transazione, il metodo talvolta non restituisce `IShape`. La forma viene tuttavia creata correttamente ed è accessibile mediante `IElement.Shapes().`|  
 |Elemento figlio del classificatore|Attributo, Operazione,<br /><br /> Parte, Porta|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato come parte dell'elemento padre.|  
 |Comportamento|Interazione (sequenza)<br /><br /> Attività|Associare il comportamento a un diagramma appropriato.<br /><br /> Ogni comportamento può essere associato a più diagrammi alla volta.<br /><br /> Ad esempio:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Elemento figlio del comportamento|Linee di vita, messaggi, azioni, nodi oggetto|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato se l'elemento padre è associato a un diagramma.|  
-|Relazione|Associazione, generalizzazione, flusso, dipendenza|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato in ogni diagramma in cui vengono visualizzate entrambe le estremità.|  
+|Relationship|Associazione, generalizzazione, flusso, dipendenza|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato in ogni diagramma in cui vengono visualizzate entrambe le estremità.|  
   
 ##  <a name="GetShapes"></a> Accesso alle forme che rappresentano un elemento  
  La forma che rappresenta un elemento appartiene ai tipi:  
   
  `IShape`  
   
- `IShape<` *Tipo di elemento* `>`  
+ `IShape<` *ElementType* `>`  
   
  in cui *ElementType* è un tipo di elemento del modello, ad esempio `IClass` o `IUseCase`.  
   
@@ -384,8 +381,5 @@ namespace AlignCommand
 ## <a name="see-also"></a>Vedere anche  
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Esplorare il modello UML](../modeling/navigate-the-uml-model.md)   
- [Esempio: Allineare forme in un comando di menu Diagramma](http://go.microsoft.com/fwlink/?LinkId=213809)   
+ [Esempio: Allineare le forme in un comando di menu Diagramma](http://go.microsoft.com/fwlink/?LinkId=213809)   
  [Esempio: Creazione di elementi, forme e stereotipi](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-

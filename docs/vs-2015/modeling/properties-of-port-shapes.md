@@ -1,12 +1,9 @@
 ---
 title: Proprietà delle forme delle porte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.port
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 9d69c4c1-4f72-4876-96b6-9b846e0495a4
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb6ad091d0b65e5b368f5822659a909e9f4c42a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 206f13610b22253a3b711413721411a1ff075570
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967610"
 ---
 # <a name="properties-of-port-shapes"></a>Proprietà delle forme delle porte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +40,22 @@ ms.locfileid: "49290706"
 |Spessore del contorno|Lo spessore del contorno di questa forma.|0.03125|  
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|  
 |Modificatore di accesso|Il livello di accesso della classe (`public` o `internal`).|Public|  
-|Attributi personalizzati|Consente di aggiungere attributi alla classe del codice sorgente che viene generata da questa forma.|\<Nessuno >|  
+|Attributi personalizzati|Consente di aggiungere attributi alla classe del codice sorgente che viene generata da questa forma.|\<nessuno>|  
 |Genera l'errore doppia derivati|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla porta (`none`, `abstract` o `sealed`).|none|  
 |Porta di base|Classe di base di questa forma.|(nessuno)|  
-|nome|Il nome di questa forma.|Nome corrente|  
+|Nome|Il nome di questa forma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è affiliato a questa forma.|Spazio dei nomi corrente|  
 |Tipo di suggerimento dello strumento|Modalità la descrizione comando viene definito (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene usata come descrizione comando; se la variabile, la descrizione comando è definito nel codice personalizzato.|none|  
-|Note|Note informali associate a questa forma.|\<Nessuno >|  
+|Note|Note informali associate a questa forma.|\<nessuno>|  
 |Altezza iniziale|Altezza iniziale della forma, in pollici.|1|  
 |Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1,5|  
 |Colore di riempimento esposte come proprietà<br /><br /> Modalità di sfumatura riempimento esposto<br /><br /> Esposizione del colore del contorno come proprietà<br /><br /> Esposta dello stile di tratteggio di struttura come proprietà<br /><br /> Esposti come proprietà dello spessore del contorno<br /><br /> Espone il colore del testo|Se `True`, l'utente può impostare la proprietà specificata di una forma. Per procedere, fare doppio clic la definizione della forma e fare clic su **Aggiungi esposta**.|False|  
-|Descrizione|Consente di documentare la finestra di progettazione generata.|\<Nessuno >|  
-|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<Nessuno >|  
-|Testo della descrizione comando fissa|Testo che viene usato per una descrizione comando fissa.|\<Nessuno >|  
-|Parola chiave della Guida|La parola chiave utilizzata per indicizzare la Guida F1 per questa forma.|\<Nessuno >|  
+|Descrizione|Consente di documentare la finestra di progettazione generata.|\<nessuno>|  
+|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<nessuno>|  
+|Testo della descrizione comando fissa|Testo che viene usato per una descrizione comando fissa.|\<nessuno>|  
+|Parola chiave della Guida|La parola chiave utilizzata per indicizzare la Guida F1 per questa forma.|\<nessuno>|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,14 +1,9 @@
 ---
 title: "Procedura dettagliata: Creazione di un programma di installazione personalizzato per un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969175"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce
+# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: Creazione di un programma di installazione personalizzato per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Qualsiasi applicazione ClickOnce basata su file .exe può essere installati in modo invisibile e aggiornata da un programma di installazione personalizzato. Un programma di installazione personalizzato può implementare un'esperienza utente migliorata durante l'installazione, tra cui finestre di dialogo personalizzate per le operazioni di manutenzione e sicurezza. Per eseguire operazioni di installazione, il programma di installazione personalizzato utilizza il <xref:System.Deployment.Application.InPlaceHostingManager> classe. Questa procedura dettagliata viene illustrato come creare un programma di installazione personalizzato per l'installazione invisibile all'utente un'applicazione ClickOnce.  
@@ -42,7 +37,7 @@ Qualsiasi applicazione ClickOnce basata su file .exe può essere installati in m
   
 1.  Nell'applicazione ClickOnce, aggiungere i riferimenti a System. Deployment e Forms.  
   
-2.  Aggiungere una nuova classe all'applicazione e specificare un nome qualsiasi. Questa procedura dettagliata Usa il nome `MyInstaller`.  
+2.  Aggiungere una nuova classe all'applicazione e specificare un nome qualsiasi. Questa procedura dettagliata usa il nome `MyInstaller`.  
   
 3.  Aggiungere il codice seguente `Imports` o `using` istruzioni all'inizio della nuova classe.  
   
@@ -85,7 +80,4 @@ Qualsiasi applicazione ClickOnce basata su file .exe può essere installati in m
   
 ## <a name="see-also"></a>Vedere anche  
  [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md)
-
-
-
+ [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)

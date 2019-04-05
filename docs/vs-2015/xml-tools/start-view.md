@@ -1,25 +1,20 @@
 ---
 title: Avvio della vista | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969595"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (X
  ![Visualizzazione di inizio della finestra di progettazione XML Schema](../xml-tools/media/xsddesigner-startview.gif "XSDDesigner_StartView")  
   
 ## <a name="watermark"></a>Filigrana  
- Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni di Progettazione XSD, Editor XML e XML Schema Explorer. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".  
+ Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni di Progettazione XSD, Editor XML e XML Schema Explorer. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".  
   
 ## <a name="schema-set-details"></a>Dettagli set di schemi  
  Il **dettagli Set di schemi** riquadro vengono elencati i tipi di nodo dello schema globali e visualizza il numero di istanze di ogni tipo sono presenti nello schema. È possibile usare la **aggiungere** collegamenti accanto ai tipi di nodo per aggiungere nuovi nodi all'area di lavoro.  
@@ -55,6 +50,3 @@ La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (X
  [Visualizzazione grafico](../xml-tools/graph-view.md)   
  [Visualizzazione modello di contenuto](../xml-tools/content-model-view.md)   
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

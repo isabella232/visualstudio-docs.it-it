@@ -1,14 +1,9 @@
 ---
 title: Comandi della JavaScript Console | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,20 +17,20 @@ ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d62754dc881e42b2beada17379def19eb96abcda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967167"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle app di Windows Store, alle app di Windows Phone Store e alle app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: Eseguire il debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle app di Windows Store, alle app di Windows Phone Store e alle app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.  
   
@@ -78,7 +73,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 |Comando|Descrizione|Esempio|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|Restituisce l'elemento specificato nella finestra della console. `$0` restituisce l'elemento attualmente selezionato in DOM Explorer, `$1` restituisce l'elemento selezionato in precedenza in DOM Explorer e così via, fino al quarto elemento selezionato in precedenza.|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|Restituisce l'elemento specificato nella finestra della console. `$0` restituisce l'elemento al momento selezionato in DOM Explorer, `$1` restituisce l'elemento selezionato in precedenza in DOM Explorer e così via, fino al quarto elemento selezionato in precedenza.|$3|  
 |`$(id)`|Restituisce un elemento in base all'ID. Si tratta di un comando di scelta rapida per `document.getElementById(id)`, dove `id` è una stringa che rappresenta l'ID dell'elemento.|`$("contenthost")`|  
 |`$$(selector)`|Restituisce una matrice di elementi che corrispondono al selettore specificato usando la sintassi del selettore CSS. Si tratta di un comando di scelta rapida per `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Consente di modificare il contesto per la valutazione di un'espressione dalla finestra di primo livello predefinita della pagina alla finestra del frame specificato. Chiamando `cd()` senza parametri, viene restituito il contesto nella finestra di primo livello.|`cd();`<br /><br /> `cd(myframe);`|  
@@ -98,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Esame degli oggetti nella finestra della console JavaScript  
  È possibile interagire con qualsiasi oggetto all'interno dell'ambito quando si usa la finestra della console JavaScript. Per controllare un oggetto esterno all'ambito nella finestra della console, usare `console.log` , `console.dir`o altri comandi del codice. In alternativa, è possibile interagire con l'oggetto dalla finestra della console mentre si trova nell'ambito impostando un punto di interruzione nel codice (**Punto di interruzione** > **Insert Punto di interruzione**).  
   
-##  <a name="ConsoleLog"></a> Formattazione dell'output di console. log  
+##  <a name="ConsoleLog"></a> Formattazione dell'output di console.log  
  Se si passano più argomenti a `console.log`, la console li considererà come una matrice e concatenerà l'output.  
   
 ```javascript  
@@ -143,8 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva: Eseguire il Debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,27 +1,22 @@
 ---
 title: Estendibilità del Debugger di Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
 - Debugging SDK
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965684"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Estendibilità del debugger di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Visual Studio include un debugger di codice sorgente completamente interattivi, 
   
  Il [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] include un riferimento completo a tutti [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] elementi necessari per creare un nuovo DE. Inoltre, esistono esempi ed esercitazioni utili per iniziare a usare.  
   
- Per un esempio end-to-end di un sistema di progetto linguaggio con il supporto del debug, vedere la [esempio di IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Per un esempio end-to-end di un sistema di progetto linguaggio con il supporto del debug, vedere la [esempio di IronPython](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  Le sezioni seguenti viene descritto come estendere il debugger usando la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
@@ -54,4 +49,3 @@ Visual Studio include un debugger di codice sorgente completamente interattivi, 
   
  [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  Contiene collegamenti a un esempio dell'analizzatore di espressioni espressione di common language runtime e un esempio di motore di debug.
-

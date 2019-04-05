@@ -1,25 +1,22 @@
 ---
 title: Creazione di processori di direttiva modello di testo T4 personalizzati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966387"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Creazione di processori di direttiva di modelli di testo T4 personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,14 +63,11 @@ Il *processo di trasformazione di modello di testo* accetta una *modello di test
   
 - `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice c# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.  
   
-- Per altre informazioni, vedere [procedura dettagliata: creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Per altre informazioni, vedere [Procedura dettagliata: Creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md)  
  Viene illustrato come registrare un processore di direttiva personalizzato.  
   
- [Procedura dettagliata: creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
+ [Procedura dettagliata: Creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  Viene descritto come creare un processore di direttiva personalizzato, come registrare e testare il processore di direttiva e come formattare il file di output in formato HTML.
-
-
-
