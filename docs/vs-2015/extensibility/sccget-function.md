@@ -1,14 +1,9 @@
 ---
 title: Funzione SccGet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761721"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964255"
 ---
 # <a name="sccget-function"></a>Funzione SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +44,13 @@ SCCRTN SccGet(
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file specificato per il `lpFileNames` matrice.  
   
  lpFileNames  
  [in] Matrice di nomi completi di file da recuperare.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
   
  pvOptions  
@@ -64,7 +59,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Esito positivo dell'operazione get.|  
 |SCC_E_FILENOTCONTROLLED|Il file non è incluso nel controllo del codice sorgente.|  
@@ -110,4 +105,3 @@ SCCRTN SccGet(
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)
-

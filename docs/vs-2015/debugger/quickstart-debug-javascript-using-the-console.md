@@ -1,14 +1,9 @@
 ---
-title: 'Guida introduttiva: Eseguire il Debug di JavaScript con la console | Microsoft Docs'
-ms.custom: ''
+title: 'Guida introduttiva: Eseguire il debug di JavaScript con la console | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969642"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guida introduttiva: Eseguire il debug di JavaScript con la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 > [!TIP]
 >  Se la finestra Console JavaScript è chiusa, scegliere **Debug**>**Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
   
- Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript, vedere [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Debug mediante la finestra Console JavaScript  
  La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.  
@@ -166,9 +161,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      L'app viene eseguita, ma mancano le immagini. Gli errori APPHOST della finestra Console JavaScript indicano che mancano le immagini.  
   
-9. Con l'app `FlipView` in esecuzione nel simulatore o nell'emulatore Windows Phone, digitare `Data.items` nella richiesta di input della finestra della console (accanto al simbolo">>") e premere INVIO.  
+9. Con il `FlipView` app in esecuzione nel simulatore o l'emulatore Windows Phone, tipo `Data.items` nella finestra di input richiesta della console (accanto al ">>" simbolo) e premere INVIO.  
   
-     Nella finestra della console apparirà un visualizzatore per l'oggetto `items`. Questo indica che è stata creata un'istanza dell'oggetto `items` , che è disponibile nel contesto dello script corrente. Nella finestra della console è possibile fare clic sui nodi di un oggetto per visualizzare i valori delle proprietà (o usare i tasti di direzione). Come si può vedere nella figura, se si fa clic sull'oggetto `items._data` , i riferimenti relativi all'origine delle immagini non sono corretti, come previsto. Le immagini predefinite (logo.png) sono ancora presenti nell'oggetto e vi sono immagini mancanti frammiste alle immagini previste.  
+     Nella finestra della console apparirà un visualizzatore per l'oggetto `items` . Questo indica che è stata creata un'istanza dell'oggetto `items` , che è disponibile nel contesto dello script corrente. Nella finestra della console è possibile fare clic sui nodi di un oggetto per visualizzare i valori delle proprietà (o usare i tasti di direzione). Come si può vedere nella figura, se si fa clic sull'oggetto `items._data` , i riferimenti relativi all'origine delle immagini non sono corretti, come previsto. Le immagini predefinite (logo.png) sono ancora presenti nell'oggetto e vi sono immagini mancanti frammiste alle immagini previste.  
   
      ![Finestra della JavaScript Console](../debugger/media/js-console-window.png "JS_Console_Window")  
   
@@ -212,7 +207,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 18. Arresta il debug scegliendo **Debug** > **Arresta debug** o premendo MAIUSC+F5 e poi correggi il codice sorgente.  
   
-     Per la pagina default. HTML completa contenente il codice di esempio corretto, vedere [codice di esempio il Debug di HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Per la pagina default.html completa contenente il codice di esempio corretto, vedere [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Debug interattivo e modalità di interruzione  
  Quando si usano gli strumenti di debug JavaScript, come la finestra Console JavaScript, è possibile usare i punti di interruzione ed eseguire un'istruzione nel codice. Quando un programma in esecuzione nel debugger rileva un punto di interruzione, il debugger sospende temporaneamente l'esecuzione del programma. Quando l'esecuzione viene sospesa, il programma passa dalla modalità di esecuzione alla modalità di interruzione. È possibile riprendere l'esecuzione in qualsiasi momento.  
@@ -285,10 +280,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Il debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Eseguire il debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
+ [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
  [Supporto tecnico e accessibilità](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

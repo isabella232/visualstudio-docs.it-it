@@ -1,14 +1,9 @@
 ---
 title: Eseguire le app di Windows Phone nell'emulatore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963860"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Eseguire app di Windows Phone nell'emulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente di eseguire debug e test di app Windows Phone nel computer senza un dispositivo fisico. Puoi simulare eventi comuni di tocco e rotazione e scegliere le dimensioni fisiche dello schermo e la risoluzione che vuoi emulare. Puoi anche testare numerose funzionalità comuni, come posizione, rete, notifiche, sensori, accelerometro e scheda SD opzionale.  
   
- Per altre informazioni sulle funzionalità che puoi testare nell'emulatore, vedi [testare le funzionalità delle app nell'emulatore Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Per altre informazioni sulle funzionalità che puoi testare nell'emulatore, vedi [testare le funzionalità delle app nell'emulatore Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Insieme a Visual Studio, l'emulatore offre un ambiente completo in cui puoi progettare, sviluppare e testare le app Windows Phone, nonché eseguirne il debug.  
   
@@ -225,6 +220,3 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
 -   Specifica una build di rilascio in Visual Studio. Dopo aver specificato una build di rilascio, avviare l'app selezionando il **Deploy _[nome app]_**  sul collegamento di **compilare** menu.  
   
 -   In alternativa, puoi impostare come commento la riga di codice nel file app.xaml.cs o app.xaml.vb che imposta il valore di `EnableFrameRateCounter` su `true`.
-
-
-

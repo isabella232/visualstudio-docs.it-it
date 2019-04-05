@@ -1,12 +1,9 @@
 ---
 title: Generare codice dai diagrammi classi UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970048"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generare codice da diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
  Per altre informazioni sui diagrammi classi UML in Visual Studio, vedere gli argomenti seguenti:  
 
-- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)  
+- [Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)  
 
-- [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)  
 
   Per le versioni di Visual Studio che supportano i diagrammi classi UML, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -94,8 +91,8 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 |Classe|Classe|\<None > oppure<br /><br /> Classe C#|  
 |Interfaccia|Interfaccia|\<None > oppure<br /><br /> Interfaccia C#|  
 |Enumerazione|Enumerazione|\<None > oppure<br /><br /> C# enum|  
-|Delegato|Classe|Delegato C#|  
-|Struct|Classe|C# struct|  
+|delegato|Classe|Delegato C#|  
+|Struct|Classe|Struct C#|  
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Per impostare uno stereotipo su un tipo o su un altro elemento  
 
@@ -134,24 +131,24 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
  I modelli vengono specificati in un set di *associazioni modelli di testo*. Consente di specificare un'associazione di modelli di testo deve essere applicato il modello, in cui deve essere inserito l'output generato e altri parametri del **genera codice** comando.  
 
- Quando si esegue innanzitutto le **genera codice** comando su un particolare modello, collega un set predefinito di associazioni a modello alla radice del modello. Queste associazioni si applicano a tutti gli elementi del modello.  
+ Quando si esegue innanzitutto le **genera codice** comando su un particolare modello, collega un set predefinito di associazioni a modello alla radice del modello. Questi binding si applicano a tutti gli elementi del modello.  
 
- Tuttavia, è possibile eseguire l'override e aggiungere, a questi binding predefiniti, binding personalizzati a pacchetti, classi o altri elementi. Un binding si applica a tutti gli elementi contenuti nell'elemento a cui è collegata. Ad esempio, se si desidera che tutti i tipi contenuti in un particolare pacchetto vengano trasformati in base a un differente set di modelli o che vengano estratti in una diversa cartella, è possibile collegare le associazioni a modello al pacchetto.  
+ Tuttavia, è possibile eseguire l'override e aggiungere, a queste associazioni predefinite, associazioni personalizzate a pacchetti, classi o altri elementi. Un'associazione si applica a tutti gli elementi contenuti nell'elemento a cui è collegata. Ad esempio, se si desidera che tutti i tipi contenuti in un particolare pacchetto vengano trasformati in base a un differente set di modelli o che vengano estratti in una diversa cartella, è possibile collegare le associazioni a modello al pacchetto.  
 
  Per controllare le associazioni del modello collegate a un elemento del modello, scegliere i puntini di sospensione **[...]**  nella **associazioni modelli di testo** proprietà nella finestra Proprietà.  
 
  Il **genera codice** comando applica i modelli a ciascun elemento del modello selezionato. Per ogni elemento, il set di modelli applicato è il set combinato dei modelli associati ai relativi contenitori, fino alla radice del modello inclusa.  
 
- Se due associazioni a modello in questo set hanno lo stesso nome, l'associazione nel contenitore più piccolo esegue l'override dell'associazione nel contenitore più grande. Ad esempio, la radice del modello ha un'associazione con il nome **modello di classe**. Per consentire a un modello personalizzato applicato al contenuto di un pacchetto specifico, definire il proprio associazione di modelli con il nome **modello di classe**.  
+ Se due binding a modello in questo set hanno lo stesso nome, il binding nel contenitore più piccolo esegue l'override del binding nel contenitore più grande. Ad esempio, la radice del modello ha un'associazione con il nome **modello di classe**. Per consentire a un modello personalizzato applicato al contenuto di un pacchetto specifico, definire il proprio associazione di modelli con il nome **modello di classe**.  
 
  È possibile applicare più modelli a un elemento del modello, nonché generare più file da ciascun elemento del modello.  
 
 > [!NOTE]
 >  Le associazioni collegate alla radice del modello fungono da associazioni predefinite per tutti gli elementi del modello. Per visualizzare questi binding predefiniti, aprire **Esplora modelli UML**. Aprire il menu di scelta rapida del progetto di modellazione, quindi scegliere **Configura generazione codice**. In alternativa è possibile selezionare la radice del modello in Esplora modelli UML. Nella finestra Proprietà scegliere **[...]**  nella **associazioni modelli di testo** proprietà. Le associazioni non verranno visualizzati fino a quando non è stata usata la **genera codice** comando almeno una volta. Non è possibile collegare binding a modello a un diagramma.  
 
-#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Per collegare associazioni a modello di testo a un pacchetto o a un altro elemento del modello  
+#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Per collegare binding a modello di testo a un pacchetto o a un altro elemento del modello  
 
-1. Nelle **Esplora modelli UML**, aprire il menu di scelta rapida per un elemento del modello e quindi scegliere **proprietà**. In genere, le associazioni a modello di testo vengono collegate a un pacchetto o alla radice del modello.  
+1. Nelle **Esplora modelli UML**, aprire il menu di scelta rapida per un elemento del modello e quindi scegliere **proprietà**. In genere, i binding a modello di testo vengono collegati a un pacchetto o alla radice del modello.  
 
 2. Nel **delle proprietà** finestra, fare clic sul pulsante con puntini di sospensione (**[...]** ) nei **associazioni modelli di testo** proprietà.  
 
@@ -161,16 +158,16 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
     \- oppure -  
 
-    Scegliere un'associazione esistente per modificarla.  
+    Scegliere un binding esistente per modificarla.  
 
     Ogni binding a modello definisce la modalità di applicazione di un modello specificato all'elemento del modello selezionato e agli altri elementi in questo contenuti.  
 
-4. Nella finestra di dialogo, impostare le proprietà del binding a modello di testo.  
+4. Nella finestra di dialogo, impostare le proprietà dell'associazione a modello di testo.  
 
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descrizione**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        nome        |                                                                                                                                                                                                                                                  Nome per il binding. Per eseguire l'override di un binding ereditato da un pacchetto o da un modello che lo contiene, usare lo stesso nome del binding di cui si desidera eseguire l'override.                                                                                                                                                                                                                                                  |
+   |        Nome        |                                                                                                                                                                                                                                                  Nome per l'associazione. Per eseguire l'override di un binding ereditato da un pacchetto o da un modello che lo contiene, usare lo stesso nome del binding di cui si desidera eseguire l'override.                                                                                                                                                                                                                                                  |
    |     Overwrite      |                                                                                                                                                                                                                                                                                                      Se true, il codice esistente viene sovrascritto.                                                                                                                                                                                                                                                                                                       |
    |    Target Name     | Nome del file generato.<br /><br /> È possibile inserire le espressioni in questa stringa, ad esempio `{Name}` o `{Owner.Name}`. Ad esempio, è possibile scrivere: `{Owner.Name}_{Name}`. L'espressione viene valutata sull'elemento del modello e può usare proprietà di elementi, ma non metodi. Per trovare le proprietà possono essere usate, esaminare le proprietà dei tipi in **Microsoft.VisualStudio.Uml.\\ ***. \*\*Importante:* \* `{Name}` oppure `{Owner.Name}` può essere utilizzato solo nel **nome destinazione** proprietà. Per modificare il nome della classe generata, è necessario modificare il modello. Per altre informazioni, vedere [scrittura di un modello di testo](#writing). |
    |    Project Path    |                                                                      Specifica il percorso del progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che conterrà i file di output della trasformazione. Usare valori tipizzati per creare un nuovo progetto. Fare clic sul pulsante con puntini di sospensione (**[...]** ) per selezionare un progetto esistente.<br /><br /> Se non esiste alcun progetto, verrà creato un nuovo progetto Libreria di classi C#.<br /><br /> A questo scopo, è necessario digitare direttamente il progetto. È possibile includere macro di variabili di ambiente quali %ProgramFiles% o %LocalAppData%.                                                                       |
@@ -215,7 +212,7 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
 - `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.  
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Si tratta dell'archivio dell'SDK di visualizzazione e modellazione sul quale viene implementato l'oggetto UML ModelStore. Per ottenere l'oggetto UML <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, usare `this.Element.GetModelStore()`.  
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Si tratta dell'archivio dell'SDK di visualizzazione e modellazione sul quale viene implementato l'oggetto UML ModelStore. Per ottenere l'oggetto UML <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, utilizzare `this.Element.GetModelStore()`.  
 
   Le informazioni seguenti possono risultare utili durante la scrittura di un modello di testo. Queste informazioni sono descritto dettagliatamente [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
 
@@ -223,11 +220,11 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
 - Ad alcuni assembly viene fatto automaticamente riferimento nel modello. Tali assembly includono, ad esempio, System.dll e Microsoft.VisualStudio.Uml.Interfaces.dll.  
 
-   Per usare altri assembly nel codice programma generatore, è necessario usare una direttiva `Assembly`. Ad esempio:  
+   Per utilizzare altri assembly nel codice programma generatore, è necessario utilizzare una direttiva `Assembly`. Ad esempio:  
 
    `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`  
 
-- Alcuni spazi dei nomi quali `System` vengono importati automaticamente nel codice programma. Per altri spazi dei nomi, è possibile usare la direttiva `Import` in modo analogo a un'istruzione `using`. Ad esempio:  
+- Alcuni spazi dei nomi quali `System` vengono importati automaticamente nel codice programma. Per altri spazi dei nomi, è possibile utilizzare la direttiva `Import` in modo analogo a un'istruzione `using`. Ad esempio:  
 
    `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`  
 
@@ -240,9 +237,6 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 - Le parti `<#= Expressions #>` vengono valutate e convertite in stringhe.  
 
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md)   
  [Generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md)
-
-
-

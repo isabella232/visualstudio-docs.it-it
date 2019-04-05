@@ -1,12 +1,9 @@
 ---
 title: Proprietà di attributi su UML diagrammi classi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964107"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Proprietà di attributi in diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +38,11 @@ In un diagramma classi UML è possibile aggiungere *attributi* a classi e interf
 
  \+ indica la visibilità pubblica. Gli altri valori consentiti sono: (private), # (protected), ~ (package).  
 
- `AttributeName` viene sottolineato se l'attributo è statico.  
+ `AttributeName` è sottolineato se l'attributo è statico.  
 
  `: TypeName` viene omesso se l'attributo non dispone di alcun tipo.  
 
- `[*]` denota la molteplicità. Viene omesso se la molteplicità è 1.  
+ `[*]` indica la molteplicità. Viene omesso se la molteplicità è 1.  
 
 ## <a name="properties"></a>Proprietà  
  La tabella seguente descrive le proprietà di un attributo in una classe o in un'interfaccia in un diagramma classi UML.  
@@ -72,11 +69,8 @@ In un diagramma classi UML è possibile aggiungere *attributi* a classi e interf
 |   **È univoco**   |    False     |                                                                                                                                                                Se true, non sono presenti valori duplicati nella raccolta. Per **Multiplicity** maggiore di 1.                                                                                                                                                                |
 
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
  [Proprietà di tipi in diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)   
- [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrammi delle classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)

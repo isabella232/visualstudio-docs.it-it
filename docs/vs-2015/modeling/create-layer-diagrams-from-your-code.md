@@ -1,12 +1,9 @@
 ---
 title: Creare diagrammi livello dal codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964024"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Creare diagrammi livello dal codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +28,15 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
  ![Creare un diagramma livello](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
   
- Un diagramma livello consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici astratti, chiamati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali artefatti eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare il desiderate o esistenti *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono utilizzare o utilizzano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.  
+ Un diagramma livello consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici astratti, chiamati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali elementi eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare il desiderate o esistenti *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono usare o usano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.  
   
 ##  <a name="CreateDiagram"></a> Creare un diagramma livello  
  Prima di creare un diagramma livello, verificare che alla soluzione sia associato un progetto di modellazione. Visualizzare [diagrammi e progetti di modellazione UML creare](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Non aggiungere, trascinare o copiare alcun diagramma livello esistente da un progetto di modellazione a un altro né a un altro percorso nella soluzione. In questo modo i riferimenti del diagramma originale verranno mantenuti, anche se si modifica il diagramma. In caso contrario, il funzionamento della convalida dei livelli non sarà corretto e potrebbero verificarsi altri problemi, quali la mancanza di elementi o altri errori quando si tenta di aprire il diagramma.  
+>  Non aggiungere, trascinare o copiare alcun diagramma livello esistente da un progetto di modello a un altro né a un altro percorso nella soluzione. In questo modo i riferimenti del diagramma originale verranno mantenuti, anche se si modifica il diagramma. In caso contrario, il funzionamento della convalida dei livelli non sarà corretto e potrebbero verificarsi altri problemi, quali la mancanza di elementi o altri errori quando si tenta di aprire il diagramma.  
 >   
->  È necessario aggiungere invece un nuovo diagramma livello al progetto di modellazione, copiare gli elementi dal diagramma di origine al nuovo diagramma e salvare sia il progetto di modellazione che il nuovo diagramma livello.  
+>  È necessario aggiungere invece un nuovo diagramma livello al progetto di modellazione, copiare gli elementi dal diagramma di origine al nuovo diagramma e salvare sia il progetto di modello che il nuovo diagramma livello.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Per aggiungere un nuovo diagramma livello a un progetto di modellazione  
   
@@ -51,14 +48,14 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
 4.  Nelle **Aggiungi a progetto di modello**, individuare e selezionare un progetto di modellazione esistente nella soluzione.  
   
-     oppure  
+     -oppure-  
   
      Scegli **creare un nuovo progetto di modellazione** per aggiungere un nuovo progetto di modellazione alla soluzione.  
   
     > [!NOTE]
     >  È necessario che il diagramma livello sia presente all'interno di un progetto di modellazione. È tuttavia possibile collegarlo a elementi in qualsiasi punto della soluzione.  
   
-5.  Assicurarsi di salvare il progetto di modellazione contenente il diagramma livello.  
+5.  Assicurarsi di salvare il progetto di modello contenente il diagramma livello.  
   
 ##  <a name="CreateLayers"></a> Creare livelli da artefatti  
  È possibile creare livelli da elementi presenti in una soluzione di Visual Studio, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. In questo modo vengono creati automaticamente collegamenti tra livelli ed elementi, che vengono inclusi nel processo di convalida dei livelli.  
@@ -69,19 +66,19 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
 |**Per**|**Seguire questi passaggi**|  
 |------------|----------------------------|  
-|Creare un livello per un solo artefatto|<ol><li>Trascinare l'elemento nel diagramma livello da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'artefatto.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:** si trascinano file binari sul diagramma livello non vengono aggiunti automaticamente i riferimenti al progetto di modellazione. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modellazione. **Per aggiungere i file binari al progetto di modellazione** <ol><li>Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente**.</li><li>Nel **Aggiungi elemento esistente** della finestra di dialogo selezionare i file binari, selezionarli e quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>Nelle **Esplora soluzioni**, scegliere un file binario che aggiunto e quindi premere **F4** per aprire il **proprietà** finestra.</li><li>Per ogni file binario, impostare il **Build Action** proprietà **Validate**.</li></ol>|  
+|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma livello da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Visualizzare [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Se si trascinano file binari sul diagramma livello, i riferimenti relativi non vengono aggiunti automaticamente al progetto di modellazione, ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere i file binari al progetto di modellazione** <ol><li>Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente**.</li><li>Nel **Aggiungi elemento esistente** della finestra di dialogo selezionare i file binari, selezionarli e quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>Nelle **Esplora soluzioni**, scegliere un file binario che aggiunto e quindi premere **F4** per aprire il **proprietà** finestra.</li><li>Per ogni file binario, impostare il **Build Action** proprietà **Validate**.</li></ol>|  
 |Creare un solo livello per tutti gli artefatti selezionati|Trascinare contemporaneamente tutti gli elementi sul diagramma livello.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli elementi.|  
-|Creare un livello per ogni artefatto selezionato|Premere e tenere premuto il **MAIUSC** mentre si trascinano contemporaneamente tutti gli elementi nel diagramma livello. **Nota:** se si usano i **MAIUSC** chiave per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli artefatti. Premerlo e tenerlo premuto nuovamente quando si trascinano gli artefatti nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|  
-|Aggiungere un elemento a un livello|Trascinare l'elemento sul livello.|  
+|Creare un livello per ogni elemento selezionato|Premere e tenere premuto il **MAIUSC** mentre si trascinano contemporaneamente tutti gli elementi nel diagramma livello. **Nota:**  Se si usa la **MAIUSC** chiave per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli artefatti. Premerlo e tenerlo premuto nuovamente quando si trascinano gli elementi nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|  
+|Aggiungere un artefatto a un livello|Trascinare l'elemento sul livello.|  
 |Creare un nuovo livello non collegato|Nel **casella degli strumenti**, espandere il **diagramma livello** sezione e quindi trascinare un' **livello** nel diagramma livello.<br /><br /> Per aggiungere più livelli, fare doppio clic sullo strumento. Al termine, scegliere il **puntatore** degli strumenti oppure premere la **ESC** chiave.<br /><br /> -oppure-<br /><br /> Aprire il menu di scelta rapida per il diagramma livello, scegliere **Add**, quindi scegliere **Layer**.|  
 |Creare livelli annidati|Trascinare un livello esistente su un altro livello.<br /><br /> -oppure-<br /><br /> Aprire il menu di scelta rapida per un livello, scegliere **Add**, quindi scegliere **Layer**.|  
 |Creare un nuovo livello contenente due o più livelli esistenti|Selezionare i livelli, aprire il menu di scelta rapida per la selezione e quindi scegliere **gruppo**.|  
 |Modificare il colore di un livello|Impostare relativi **colore** proprietà sul colore desiderato.|  
-|Specificare che gli artefatti associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
-|Specificare che gli artefatti associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
 |Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
   
- Il numero raffigurato sul livello indica il numero di artefatti a esso collegati. Tuttavia, nell'interpretazione di tale numero, considerare quanto segue:  
+ Il numero raffigurato sul livello indica il numero di elementi a esso collegati. Tuttavia, nell'interpretazione di tale numero, considerare quanto segue:  
   
 -   Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.  
   
@@ -97,16 +94,16 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
 2.  Usare le seguenti attività per gestire tali collegamenti:  
   
-|**Per**|**In Esplora livello**|  
+|**Per**|**In Layer Explorer**|  
 |------------|---------------------------|  
-|Eliminare il collegamento tra il livello e un artefatto|Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Elimina**.|  
+|Eliminare il collegamento tra il livello e un elemento|Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Elimina**.|  
 |Spostare il collegamento da un livello a un altro|Trascinare il collegamento dell'elemento in un livello esistente del diagramma.<br /><br /> -oppure-<br /><br /> 1.  Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **Taglia**.<br />2.  Nel diagramma livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|  
 |Copiare il collegamento da un livello a un altro|1.  Aprire il menu di scelta rapida per il collegamento all'artefatto e quindi scegliere **copia**.<br />2.  Nel diagramma livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|  
-|Creare un nuovo livello da un collegamento dell'artefatto esistente|Trascinare il collegamento dell'elemento in un'area vuota del diagramma.|  
+|Creare un nuovo livello da un collegamento dell'elemento esistente|Trascinare il collegamento dell'artefatto in un'area vuota del diagramma.|  
 |Verificare che un elemento collegato supporti la convalida in base al diagramma livello.|Esaminare i **supporta la convalida** colonna per il collegamento dell'artefatto.|  
   
 ##  <a name="Discovering"></a> Decompilare dipendenze esistenti  
- È presente una dipendenza quando un artefatto associato a un livello dispone di un riferimento a un artefatto associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. È possibile decompilare dipendenze esistenti per elementi collegati a livelli nel diagramma.  
+ È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. È possibile decompilare dipendenze esistenti per elementi collegati a livelli nel diagramma.  
   
 > [!NOTE]
 >  Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.  
@@ -122,8 +119,8 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
 |------------|-----------------------------|  
 |Modificare o limitare la direzione di una dipendenza|Impostare relativi **direzione** proprietà.|  
 |Creare nuove dipendenze|Usare la **Dependency** e **dipendenza bidirezionale** strumenti.<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, scegliere il **puntatore** degli strumenti oppure premere la **ESC** chiave.|  
-|Specificare che gli artefatti associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
-|Specificare che gli artefatti associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
 |Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
   
 ##  <a name="EditLayout"></a> Modificare l'aspetto gli elementi del diagramma  
@@ -140,7 +137,7 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
 ## <a name="see-also"></a>Vedere anche  
  [Video di Channel 9: Progettare e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)   
- [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)   
+ [Diagrammi dei livelli: Riferimento](../modeling/layer-diagrams-reference.md)   
+ [Diagrammi dei livelli: Linee guida](../modeling/layer-diagrams-guidelines.md)   
  [Convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md)   
  [Visualizzare il codice](../modeling/visualize-code.md)

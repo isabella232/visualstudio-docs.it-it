@@ -1,26 +1,21 @@
 ---
 title: All'interno l'Editor principale | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969108"
 ---
 # <a name="inside-the-core-editor"></a>All'interno l'Editor principale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale è un set di n
  [Eventi del buffer di testo nell'API legacy](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Fornisce un elenco delle interfacce utilizzate per la notifica degli eventi del buffer di testo.  
   
- [Procedura: eseguire la registrazione per gli eventi del buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Procedura: Eseguire la registrazione per gli eventi nel Buffer di testo con l'API Legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Descrive come informare gli eventi nel buffer di testo.  
   
  [Uso della gestione testi per monitorare le impostazioni globali](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -70,7 +65,7 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale è un set di n
  Descrive la creazione di istanze di un servizio di linguaggio per le decorazioni di codice di controllo.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Procedura dettagliata: Creazione di un editor principale e registrazione di un tipo di file dell'editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Procedura dettagliata: Creazione di un Editor di base e la registrazione di un tipo di File Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Vengono fornite istruzioni dettagliate su come avviare l'editor principale dal codice gestito.  
   
  [Barra a discesa](../extensibility/drop-down-bar.md)  
@@ -79,9 +74,8 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale è un set di n
  [Uso di marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Viene illustrato il concetto di marcatori di testo e su come vengono usati nell'editor principale ed elenca le interfacce che consentono di accedere e gestire i marcatori di testo.  
   
- [Procedura: Aggiungere marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)  
+ [Procedura: Aggiungere i marcatori di testo Standard](../extensibility/how-to-add-standard-text-markers.md)  
  Vengono fornite istruzioni dettagliate su come creare un marcatore di testo e come aggiungere un comando personalizzato a un menu di scelta rapida.  
   
- [Procedura: Creare marcatori di testo personalizzati](../extensibility/how-to-create-custom-text-markers.md)  
+ [Procedura: Creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)  
  Vengono fornite istruzioni dettagliate su come creare un marcatore di testo personalizzato e su come specificare il tipo di marcatore come servizio.
-

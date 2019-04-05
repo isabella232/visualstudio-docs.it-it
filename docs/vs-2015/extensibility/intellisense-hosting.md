@@ -1,26 +1,21 @@
 ---
 title: Hosting di IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7e6ae688c0af3506f3d77cf2c1bac5291595b80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964220"
 ---
 # <a name="intellisense-hosting"></a>Hosting di IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ Visual Studio consente l'hosting di IntelliSense. IntellSense che ospita consent
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.TextManager.Interop>
-

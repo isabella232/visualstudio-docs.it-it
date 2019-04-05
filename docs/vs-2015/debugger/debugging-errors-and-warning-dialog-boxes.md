@@ -1,14 +1,9 @@
 ---
 title: Debug degli errori e le finestre di dialogo di avviso | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964859"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,34 +43,31 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
   
  [Finestra di dialogo Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [Impossibile applicare la finestra di dialogo delle modifiche di codice](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [Finestra di dialogo Impossibile applicare le modifiche del codice](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Finestra di dialogo Debugger di Microsoft Visual Studio (generata eccezione)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [Codice sorgente non disponibile per la finestra di dialogo posizione corrente](../debugger/no-source-available.md)  
+ [Finestra di dialogo Codice sorgente non disponibile per il percorso corrente](../debugger/no-source-available.md)  
   
- [Nella finestra di dialogo Nessuna informazione sui simboli](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Finestra di dialogo Nessuna informazione sui simboli](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Finestra di dialogo Risolvi ambiguità](../debugger/resolve-ambiguity-dialog-box.md)  
   
  [Finestra di dialogo Avviso di codice non aggiornato](../debugger/stale-code-warning-dialog-box.md)  
   
- [Non è possibile connettersi alla macchina](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
+ [Impossibile connettersi al computer](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Errore: Impossibile eseguire il debug perché nel sistema è abilitato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Debug di Script e applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debug di Script e applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
- [Errori di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)  
+ [Errori del debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Gli errori di connessione](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Errori di connessione](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Risoluzione dei problemi di impostazione del debug SQL](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Risoluzione dei problemi relativi all'impostazione del debug SQL](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
- [Debug di domande frequenti su Visual C++](../debugger/debugging-native-code-faqs.md)  
+ [Domande frequenti sul debug di Visual C++](../debugger/debugging-native-code-faqs.md)  
   
  [Sicurezza del debugger](../debugger/debugger-security.md)
-
-
-

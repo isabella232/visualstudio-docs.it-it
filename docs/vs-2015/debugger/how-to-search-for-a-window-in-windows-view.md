@@ -1,29 +1,24 @@
 ---
-title: 'Procedura: cercare una finestra in Windows Vista | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Cercare una finestra in Windows Vista | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60eb467a24c85d176dae7727a476cc45dac6c876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969461"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Procedura: cercare una finestra nella visualizzazione finestre
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Procedura: Cercare una finestra nella visualizzazione finestre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile cercare una specifica finestra nella visualizzazione di Windows usando il relativo handle, didascalie, classe o una combinazione di titolo e classe come criterio di ricerca. È anche possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo mostrerà gli attributi della finestra selezionata nell'albero della finestra.  
@@ -56,6 +51,3 @@ ms.locfileid: "51782973"
 5.  Fare clic su **OK**.  
   
      Se la finestra corrispondente viene trovata, viene evidenziato nel [Windows Vista](../debugger/windows-view.md) finestra.
-
-
-

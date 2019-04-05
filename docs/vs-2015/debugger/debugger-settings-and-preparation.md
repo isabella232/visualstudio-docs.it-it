@@ -1,14 +1,9 @@
 ---
 title: Le impostazioni e preparazione del debugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,20 +18,20 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964860"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.  
   
- Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Per altre informazioni, vedere [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Impostazioni di progetto correlate al debugger](../debugger/debugger-project-settings.md)  
@@ -69,6 +64,3 @@ In questa sezione vengono descritte le impostazioni delle proprietà correlate a
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

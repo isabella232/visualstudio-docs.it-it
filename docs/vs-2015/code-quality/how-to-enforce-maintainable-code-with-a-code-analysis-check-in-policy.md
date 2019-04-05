@@ -1,14 +1,9 @@
 ---
-title: "Procedura: applicare codice di facile manutenibilità con criteri di controllo dell'analisi codice | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Imporre codice di facile manutenibilità con criteri di controllo dell'analisi codice | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -16,14 +11,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954383"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Applicare codice di facile manutenibilità con criteri di archiviazione dell'analisi del codice
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Applicare codice di facile manutenibilità con i criteri di archiviazione per l'analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gli sviluppatori possono usare lo strumento di metrica codice per misurare la complessità e della manutenibilità del codice, ma non possono richiamare la metrica del codice come parte di un criterio di controllo. Tuttavia, un team può abilitare le regole di analisi del codice che verificano la conformità del codice con gli standard della metrica del codice e applicano le regole tramite i criteri di archiviazione. Per altre informazioni sulla metrica del codice, vedere la [valori della metrica del codice](../code-quality/code-metrics-values.md).  
@@ -52,13 +47,13 @@ Gli sviluppatori possono usare lo strumento di metrica codice per misurare la co
   
 2.  Selezionare le caselle di controllo per le regole seguenti:  
   
-    -   Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: più di 5 livelli di avviso  
+    -   Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: Più di 5 livelli di avviso  
   
-    -   Complessità: **AvoidExcessiveComplexity CA1502** -soglia: avviso in più di 25  
+    -   Complessità: **CA1502 AvoidExcessiveComplexity** -soglia: Avviso in più di 25  
   
-    -   Indice di manutenibilità: **CA1505 AvoidUnmaintainableCode** -soglia: avviso per meno di 20  
+    -   Indice di manutenibilità: **CA1505 AvoidUnmaintainableCode** -soglia: Avviso per meno di 20  
   
-    -   Accoppiamento di classe: **AvoidExcessiveClassCoupling CA1506** -soglia: avviso più di 80 per una classe e più di 30 per un metodo  
+    -   Accoppiamento di classe: **CA1506 AvoidExcessiveClassCoupling** -soglia: Avviso più di 80 per una classe e più di 30 per un metodo  
   
     -   Inoltre, se si desidera che una violazione delle regole per impedire una compilazione, selezionare la **trattare avvisi come errori** casella di controllo accanto alla descrizione della regola.  
   
@@ -67,6 +62,3 @@ Gli sviluppatori possono usare lo strumento di metrica codice per misurare la co
 ## <a name="see-also"></a>Vedere anche  
  [Valori della metrica del codice](../code-quality/code-metrics-values.md)   
  [Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
-
-
-
