@@ -1,11 +1,8 @@
 ---
 title: Activity Designer Pick | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Pick.UI
@@ -13,13 +10,13 @@ ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f0a3d5487d60a796f8bf9727c07df1afc959de5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7de5d9189906d72c96372acb1a361d315f973df6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221520"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969267"
 ---
 # <a name="pick-activity-designer"></a>ActivityDesigner Pick
 Nell'attività <xref:System.Activities.Statements.Pick> è disponibile il flusso di controllo basato sugli eventi. L'attività esegue uno di diversi rami in risposta a un evento di attivazione.  
@@ -35,7 +32,7 @@ Nell'attività <xref:System.Activities.Statements.Pick> è disponibile il flusso
  Esistono due modi per aggiungere <xref:System.Activities.Statements.PickBranch> attività alla raccolta di un <xref:System.Activities.Statements.Pick> oggetto: trascinando la **PickBranch** della finestra di progettazione dal **della casella degli strumenti** o tramite il menu di scelta rapida da all'interno di **prelievo** nell'area di progettazione. Per informazioni dettagliate, vedere la [PickBranch](../workflow-designer/pickbranch-activity-designer.md) argomento. Si noti che l'unico elemento che possono essere inserito in una **prelievo** ActivityDesigner è un **PickBranch** ActivityDesigner.  
   
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di prelievo in Progettazione flussi di lavoro  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Pick> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Pick> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  

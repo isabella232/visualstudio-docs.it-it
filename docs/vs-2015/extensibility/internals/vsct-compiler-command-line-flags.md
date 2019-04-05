@@ -1,27 +1,22 @@
 ---
 title: Flag della riga di comando del compilatore VSCT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734960"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968795"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flag della riga di comando del compilatore VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |Opzione|Descrizione|  
 |------------|-----------------|  
 |-D|Specificare eventuali altri simboli definiti.|  
-|-SARÒ|Indicare che percorsi da utilizzare durante la risoluzione di riferimenti a file di inclusione aggiuntive.|  
+|-I|Indicare che percorsi da utilizzare durante la risoluzione di riferimenti a file di inclusione aggiuntive.|  
 |-L|Specificare il <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura, ad esempio "en-US".|  
 |-E|Creare C# gli oggetti nello spazio dei nomi specificato per gli elementi del comando, seguito da [C&#124;H&#124;N]:*filename*in cui C = C#, H = intestazione di C++, N = lo spazio dei nomi. Lo spazio dei nomi è necessaria per il linguaggio c#.|  
 |-v|Output dettagliato.|  
@@ -85,4 +80,3 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
  [Visual Studio Command Table (. File Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Riferimento allo Schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)   
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

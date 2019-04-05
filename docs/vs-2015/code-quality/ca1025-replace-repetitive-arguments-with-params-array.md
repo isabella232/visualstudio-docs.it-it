@@ -1,14 +1,9 @@
 ---
 title: 'CA1025: Sostituire gli argomenti ripetitivi con una matrice | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1025
 - ReplaceRepetitiveArgumentsWithParamsArray
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b649a5eaa26365fcf7b620ae10db037269716b08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83d36f1f5cd31b1ad1833dd805f4386ac71a3ed1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970255"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>Ca1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -53,6 +48,3 @@ ms.locfileid: "49912812"
  Nell'esempio seguente viene illustrato un tipo che viola la regola.
 
  [!code-csharp[FxCop.Design.RepeatArgs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RepeatArgs/cs/FxCop.Design.RepeatArgs.cs#1)]
-
-
-
