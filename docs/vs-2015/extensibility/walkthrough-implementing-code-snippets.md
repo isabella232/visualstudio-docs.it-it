@@ -1,26 +1,21 @@
 ---
 title: 'Procedura dettagliata: Implementazione di frammenti di codice | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964120"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>Procedura dettagliata: implementazione di frammenti di codice
+# <a name="walkthrough-implementing-code-snippets"></a>Procedura dettagliata: Implementazione di frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile creare frammenti di codice e includerli in un'estensione dell'editor in modo che gli utenti dell'estensione possono aggiungere il proprio codice.  
@@ -37,7 +32,7 @@ ms.locfileid: "51752054"
   
 3. Implementare l'espansione del frammento.  
   
-   Questa esercitazione si basa sul [procedura dettagliata: visualizzazione di completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Questa procedura dettagliata è basata su [procedura dettagliata: Visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,7 +44,7 @@ ms.locfileid: "51752054"
   
 1. Creare la struttura di directory seguente:  
   
-    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
     in cui *% InstallDir %* è la cartella di installazione di Visual Studio. (Anche se questo percorso viene in genere usato per installare i frammenti di codice, è possibile specificare qualsiasi percorso.)  
   
@@ -116,7 +111,7 @@ ms.locfileid: "51752054"
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Per registrare i frammenti di codice per un GUID specifico  
   
-1.  Aprire il **CompletionTest** progetto. Per informazioni su come creare il progetto, vedere [procedura dettagliata: visualizzazione di completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Aprire il **CompletionTest** progetto. Per informazioni su come creare il progetto, vedere [procedura dettagliata: Visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  Nel progetto, aggiungere riferimenti agli assembly seguenti:  
   
@@ -124,7 +119,7 @@ ms.locfileid: "51752054"
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  Nel progetto, aprire il file vsixmanifest.  
   
@@ -254,4 +249,3 @@ ms.locfileid: "51752054"
 7.  In un'altra parte del testo, digitare "test" e quindi premere TAB. Poiché "test" è il collegamento del frammento di codice, il frammento di codice deve essere inserito nuovamente.  
   
 ## <a name="next-steps"></a>Passaggi successivi
-

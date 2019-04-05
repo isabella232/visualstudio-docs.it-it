@@ -1,12 +1,9 @@
 ---
 title: Aggiungere nuove origini dati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,19 +18,19 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963907"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere disponibili i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **Zdroje dat** finestra. Questo tipo di origine dati può essere:  
+Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere disponibili i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database dalla finestra **Data Source**. Questo tipo di origine dati può essere:  
   
 -   Una classe in un modello di Entity Framework che è associato a un tipo di database.  
   
@@ -52,7 +49,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
   
  ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png "configurazione guidata origine dati")  
   
- Dopo aver creato un'origine dati, viene visualizzato nei **Zdroje dat** finestra degli strumenti (Maiusc + Alt + D o **View** > **Other Windows**  >  **Zdroj dat**). È possibile trascinare un'origine dati dal **Zdroje dat** finestra in un'area di progettazione form o controllo. In questo modo, generazione del codice boilerplate, ovvero il codice che consente di visualizzare i dati che hanno origine nell'archivio dati all'utente. La figura seguente mostra un set di dati che è stato eliminato in un form di Windows. Se si seleziona F5 sull'applicazione, i dati dal database sottostante apparirebbe nei controlli del form.  
+ Dopo aver creato un'origine dati, viene visualizzato nei **Zdroje dat** finestra degli strumenti (Maiusc + Alt + D o **View** > **Other Windows**  >  **Zdroj dat**). È possibile trascinare un'origine dati dal **Data source** finestra in un'area di progettazione form o controllo. In questo modo, generazione del codice boilerplate, ovvero il codice che consente di visualizzare i dati che hanno origine nell'archivio dati all'utente. La figura seguente mostra un set di dati che è stato eliminato in un form di Windows. Se si seleziona F5 sull'applicazione, i dati dal database sottostante apparirebbe nei controlli del form.  
   
  ![Operazione di trascinamento Zdroj](../data-tools/media/raddata-data-source-drag-operation.png "raddata Zdroj dat operazione di trascinamento")  
   
@@ -88,10 +85,10 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
 -   Servizi Web.  
   
     > [!NOTE]
-    >  Gli elementi visualizzati nei **Zdroje dat** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per il **configurazione guidata origine dati** per creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, nessun elemento verrà visualizzato nei **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
+    >  Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, nessun elemento verrà visualizzato nei **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
   
 ## <a name="data-source-for-an-object"></a>Origine dati per un oggetto  
- È possibile creare un'origine dati da qualsiasi oggetto che espone uno o più proprietà pubbliche eseguendo la **configurazione guidata origine dati** e quindi selezionando il **oggetto** tipo origine dati. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Zdroje dat** finestra.   Se si usa Entity Framework e hanno generato un modello, si tratta in cui è trovare le classi di entità che saranno le origini dati per l'applicazione.  
+ È possibile creare un'origine dati da qualsiasi oggetto che espone uno o più proprietà pubbliche eseguendo la **configurazione guidata origine dati** e quindi selezionando il **oggetto** tipo origine dati. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Data source** finestra.   Se si usa Entity Framework e hanno generato un modello, si tratta in cui è trovare le classi di entità che saranno le origini dati per l'applicazione.  
   
  Nel **selezionare gli oggetti dati** , espandere i nodi nella visualizzazione albero per individuare gli oggetti che si desidera associare. Visualizzazione albero contiene nodi per il progetto e per gli assembly e altri progetti di cui vengono fatto riferimento dal progetto.  
   
@@ -108,4 +105,3 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-
