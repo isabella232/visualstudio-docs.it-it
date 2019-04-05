@@ -1,14 +1,9 @@
 ---
 title: Decisioni di progettazione di tipo di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
 - project types, commitment mechanics
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781790"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968746"
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione relative al tipo di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisio
   
  Gli elementi in un progetto possono essere file, o possono essere oggetti più astratti, ad esempio gli oggetti in un database repository o le connessioni dati nella rete Internet. Se gli elementi sono file, il progetto può essere un riferimento basato su o un progetto basato su directory.  
   
- Nei progetti in base al riferimento, gli elementi possono comparire in più di un progetto. Tuttavia, il file effettivo che rappresenta un elemento si trova in una directory solo. Nei progetti basati su directory, tutti gli elementi di progetto esistono nella struttura di directory. Per altre informazioni, vedere [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Nei progetti in base al riferimento, gli elementi possono comparire in più di un progetto. Tuttavia, il file effettivo che rappresenta un elemento si trova in una directory solo. Nei progetti basati su directory, tutti gli elementi di progetto esistono nella struttura di directory. Per altre informazioni, vedere [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Gli elementi locali vengono archiviati nello stesso computer in cui è installata l'applicazione. Gli elementi remoti possono essere archiviati in un server separato in una rete locale o in un' posizione su Internet.  
   
@@ -65,10 +60,9 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisio
   
 ## <a name="see-also"></a>Vedere anche  
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Persistenza del progetto](../../extensibility/internals/project-persistence.md)   
  [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)   
  [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)   
  [Creazione di tipi di progetto](../../extensibility/internals/creating-project-types.md)
-

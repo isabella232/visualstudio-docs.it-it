@@ -1,11 +1,8 @@
 ---
 title: Tasti di scelta rapida nella finestra di progettazione del flusso di lavoro | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970157"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 È possibile accedere a tutte le principali funzionalità di [!INCLUDE[wfd1](../includes/wfd1-md.md)] dalla tastiera.  
@@ -30,7 +27,7 @@ ms.locfileid: "49895340"
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tasti di scelta rapida di Progettazione flussi di lavoro  
  Nella tabella seguente vengono riepilogati i tasti di scelta rapida predefiniti assegnati ai comandi di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
-|Tasto di scelta rapida|Scopo|  
+|Collegamento|Scopo|  
 |--------------|-------------|  
 |CTRL+E, A|Mostra o nasconde Progettazione argomenti.|  
 |CTRL+E, C|Comprime l'attività selezionata sul posto.|  

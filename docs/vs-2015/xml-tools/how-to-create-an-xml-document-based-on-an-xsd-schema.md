@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: creare un documento XML in base a uno Schema XSD | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un documento XML in base a uno Schema XSD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e857befa71095572661ff2c2e1a2ba074444f231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969773"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: creare un documento XML in base allo schema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: Creare un documento XML in base a uno schema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -49,7 +44,7 @@ Il **genera XML di esempio** funzionalità genera un file XML di esempio basato 
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Per generare un documento di istanza XML basato sul file XSD  
   
-1.  Seguire i passaggi descritti in [procedura: creare e modificare un File di Schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Seguire i passaggi in [come: Creare e modificare un File di Schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
 2.  Nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), fare doppio clic su di `PurchaseOrder` elemento globale. Selezionare **genera XML di esempio**.  
   
@@ -84,6 +79,3 @@ Il **genera XML di esempio** funzionalità genera un file XML di esempio basato 
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso dei dati XML](../xml-tools/working-with-xml-data.md)
-
-
-

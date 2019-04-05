@@ -1,12 +1,9 @@
 ---
 title: Convalidare il codice con diagrammi livello | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968857"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
   Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Visualizzare [Video di Channel 9: progettazione e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Vedere [Video di Channel 9: Progettare e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.  
@@ -126,7 +123,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
      msbuild /p:ValidateArchitecture=true   
      ```  
   
-   - Per convalidare il codice rispetto a tutti i progetti di modellazione nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata:  
+   - Per convalidare il codice rispetto a tutti i progetti di modello nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata:  
   
      ```  
      msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
@@ -164,11 +161,11 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 |Tutti gli errori eliminati da nascondere il **elenco errori** finestra|Fare doppio clic in un punto qualsiasi nella **elenco errori** finestra, scegliere **Gestisci errori di convalida**, quindi fare clic su **Nascondi errori eliminati**.|  
   
 ##  <a name="ValidateAuto"></a> Convalidare codice automaticamente  
- È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team usa Team Foundation Build, è possibile eseguire la convalida dei livelli nelle archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild, e usare i rapporti di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
+ È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team utilizza Team Foundation Build, è possibile eseguire la convalida dei livelli nelle archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild, e utilizzare i rapporti di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Per convalidare automaticamente il codice durante una compilazione locale  
   
--   Usare un editor di testo per aprire il file del progetto di modellazione (.modelproj), quindi includere la proprietà seguente:  
+-   Usare un editor di testo per aprire il file del progetto di modello (.modelproj), quindi includere la proprietà seguente:  
   
 ```  
 <ValidateArchitecture>true</ValidateArchitecture>  
@@ -180,7 +177,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
 2. Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.  
   
-    Il progetto di modellazione viene incluso nel processo di convalida.  
+    Il progetto di modello viene incluso nel processo di convalida.  
   
 3. Nelle **Esplora soluzioni**, fare clic sul file del diagramma (con estensione layerdiagram) livello che si desidera utilizzare per la convalida.  
   
@@ -220,7 +217,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 ##  <a name="UnderstandingValidationErrors"></a> La comprensione e la risoluzione di errori a livello di convalida  
  Quando si esegue la convalida di codice in base a un diagramma livello, se il codice è in conflitto con la progettazione si verificano errori di convalida. In presenza delle condizioni seguenti è possibile ad esempio che si verifichino errori di convalida:  
   
-- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.  
+- Un artefatto viene assegnato al livello errato. In questo caso, spostare l'elemento.  
   
 - Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.  
   
@@ -233,21 +230,18 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 |*ArtifactN*(*ArtifactTypeN*)|*Elementon* è un elemento che è associato a un livello nel diagramma livello.<br /><br /> *Tipoelementon* è il tipo di *Elementon*, ad esempio un **classe** oppure **metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|  
 |*NamespaceNameN*|Nome di uno spazio dei nomi.|  
 |*LayerNameN*|Nome di un livello nel diagramma livello.|  
-|*Tipodipendenza*|Il tipo di relazione di dipendenza tra *Elemento1* e *elemento2*. Ad esempio, *Elemento1* ha una **chiamate** relazione con *elemento2*.|  
+|*DependencyType*|Il tipo di relazione di dipendenza tra *Elemento1* e *elemento2*. Ad esempio, *Elemento1* ha una **chiamate** relazione con *elemento2*.|  
   
 |**Sintassi errore**|**Descrizione dell'errore**|  
 |----------------------|---------------------------|  
-|AV0001: Dipendenza non valida: *Elemento1*(*Tipoartefatto1*)--> *elemento2*(*Tipoartefatto2*)<br /><br /> Livelli: *Nomelivello1*, *Nomelivello2* &#124; dipendenze: *Tipodipendenza*|*Elemento1* nelle *Nomelivello1* non deve avere una dipendenza *elemento2* in *Nomelivello2* perché *Nomelivello1* non ha una dipendenza diretta *Nomelivello2*.|  
-|AV1001: Namespace non è valido: *artefatto*<br /><br /> Livello: *nomelivello* &#124; obbligatorio Namespace: *Nomespaziodeinomi1* &#124; corrente Namespace: *Nomespaziodeinomi2*|*Nomelivello* richiede che gli elementi collegati appartengano a *Nomespaziodeinomi1*. *Artefatto* le novità *Nomespaziodeinomi2*, non *Nomespaziodeinomi1*.|  
-|AV1002: Dipende Namespace non consentito: *Elemento1*(*Tipoartefatto1*) &#124; *elemento2*(*Tipoartefatto2*)<br /><br /> Livello: *nomelivello* &#124; non è consentito Namespace: *NomeSpazioDeiNomi* &#124; dipendenze: *Tipodipendenza*|*Nomelivello* richiede che gli elementi associati non dipendano *NomeSpazioDeiNomi*. *Elemento1* non può dipendere *elemento2* perché *elemento2* in *NomeSpazioDeiNomi*.|  
-|AV1003: Nello Namespace non consentito: *artefatto*(*ArtifactType*)<br /><br /> Livello: *nomelivello* &#124; non è consentito Namespace: *NomeSpazioDeiNomi*|*Nomelivello* richiede che gli elementi collegati non appartengano allo *NomeSpazioDeiNomi*. *Artefatto* a cui appartiene *NomeSpazioDeiNomi*.|  
-|AV3001: collegamento mancante: livello '*nomelivello*'Collega a'*artefatto*' che non viene trovato. Probabilmente manca un riferimento a un assembly.|*Nomelivello* Collega a un elemento che non è stato trovato. Ad esempio, è possibile che manchi un collegamento a una classe perché nel progetto di modellazione manca un riferimento all'assembly che contiene la classe.|  
-|AV9001: errori interni durante l'analisi dell'architettura. I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output.|Per altre informazioni, vedere il log degli eventi di compilazione o la finestra di output.|  
+|AV0001: Dipendenza non valida: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Livelli: *Nomelivello1*, *Nomelivello2* &#124; dipendenze: *DependencyType*|*Elemento1* nelle *Nomelivello1* non deve avere una dipendenza *elemento2* in *Nomelivello2* perché *Nomelivello1* non ha una dipendenza diretta *Nomelivello2*.|  
+|AV1001: Namespace non è valido: *Artifact*<br /><br /> Livello: *Nomelivello* &#124; obbligatorio Namespace: *Nomespaziodeinomi1* &#124; Namespace corrente: *NamespaceName2*|*Nomelivello* richiede che gli elementi collegati appartengano a *Nomespaziodeinomi1*. *Artefatto* le novità *Nomespaziodeinomi2*, non *Nomespaziodeinomi1*.|  
+|AV1002: Dipende dal Namespace non consentito: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Livello: *Nomelivello* &#124; non è consentito Namespace: *NamespaceName* &#124; dipendenze: *DependencyType*|*Nomelivello* richiede che gli elementi associati non dipendano *NomeSpazioDeiNomi*. *Elemento1* non può dipendere *elemento2* perché *elemento2* in *NomeSpazioDeiNomi*.|  
+|AV1003: In Namespace non consentito: *Artifact*(*ArtifactType*)<br /><br /> Livello: *Nomelivello* &#124; non è consentito Namespace: *NamespaceName*|*Nomelivello* richiede che gli elementi collegati non appartengano allo *NomeSpazioDeiNomi*. *Artefatto* a cui appartiene *NomeSpazioDeiNomi*.|  
+|AV3001: Collegamento mancante: Livello '*nomelivello*'Collega a'*artefatto*' che non viene trovato. Probabilmente manca un riferimento a un assembly.|*Nomelivello* Collega a un elemento che non è stato trovato. Ad esempio, è possibile che manchi un collegamento a una classe perché nel progetto di modellazione manca un riferimento all'assembly che contiene la classe.|  
+|AV9001: Gli errori interni trovata dall'analisi dell'architettura. I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output.|Per altre informazioni, vedere il log degli eventi di compilazione o la finestra di output.|  
   
 ## <a name="security"></a>Sicurezza  
   
 ## <a name="see-also"></a>Vedere anche  
  [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
-
-
-

@@ -1,29 +1,24 @@
 ---
-title: 'Procedura: identificare i simboli in una libreria | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Identificare i simboli in una libreria | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34b5480aebbe59ef9b023bf4350b2bdd35725c47
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5dcdbd6d9f9f24b094d62289b0b058edde8c156b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970026"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Procedura: identificare i simboli in una libreria
+# <a name="how-to-identify-symbols-in-a-library"></a>Procedura: Identificare i simboli in una libreria
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Strumenti di esplorazione dei simboli visualizzano le visualizzazioni gerarchiche di simboli. I simboli rappresentano gli spazi dei nomi, oggetti, classi, membri di classi e altri elementi del linguaggio.  
@@ -53,7 +48,7 @@ N1
   
 ```  
   
- Il percorso canonico della classe C2, in questo esempio è N1 + C2. Percorso di presentazione del C2 include nodi C1 e "Basi e interfacce": N1 + C1 + "Basi e interfacce" + C2.  
+ Il percorso canonico della classe C2, in questo esempio è N1 + C2. Percorso di presentazione del C2 include nodi C1 e "Basi e interfacce": N1 + C1 + "basi e interfacce" + C2.  
   
  Per ottenere le informazioni sul formato di presentazione, le chiamate di gestione di oggetti <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> (metodo).  
   
@@ -90,6 +85,5 @@ N1
   
 ## <a name="see-also"></a>Vedere anche  
  [Supporto di strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Procedura: registrare una libreria con il gestore oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Procedura: Registrare una libreria con il gestore oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Procedura: Esporre gli elenchi dei simboli forniti dalla libreria al gestore degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-

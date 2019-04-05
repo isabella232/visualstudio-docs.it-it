@@ -1,25 +1,22 @@
 ---
 title: Accesso ai modelli da modelli di testo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969391"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  Per caricare il file, il metodo più efficace consiste nell'usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus. In uno scenario tipico, il modello di testo userà una direttiva del DSL specifici per caricare il primo modello nel modo consueto. Questo modello contiene un riferimento ModelBus a un altro modello. Per aprire il modello di cui viene fatto riferimento e accedere a un particolare elemento, è possibile usare ModelBus. Per altre informazioni, vedere [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- In uno scenario meno comune, si potrebbe voler aprire un file di modello per cui si dispone solo un nome di file, e che potrebbero non essere nell'attuale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto. In questo caso, è possibile aprire il file usando la tecnica descritta in [procedura: aprire un modello da File nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+ In uno scenario meno comune, si potrebbe voler aprire un file di modello per cui si dispone solo un nome di file, e che potrebbero non essere nell'attuale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto. In questo caso, è possibile aprire il file usando la tecnica descritta in [come: Aprire un modello da File nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
 ## <a name="generating-multiple-files-from-a-template"></a>Generazione di più file da un modello  
  Se si desidera generare un file diversi, ad esempio, per generare un file separato per ogni elemento in un modello, esistono diversi approcci disponibili. Per impostazione predefinita, un solo file viene generato da ogni file di modello.  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-

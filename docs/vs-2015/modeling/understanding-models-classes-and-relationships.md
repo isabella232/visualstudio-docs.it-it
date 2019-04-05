@@ -1,25 +1,22 @@
 ---
 title: Informazioni su modelli, classi e relazioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970320"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
 ## <a name="the-dsl-definition"></a>La definizione DSL  
  Quando si apre `Dsl\DslDefinition.dsl`, al [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finestra è simile all'immagine seguente.  
   
- ![finestra di progettazione DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![Finestra di progettazione DSL](../modeling/media/dsl-designer.png "dsl_designer")  
   
  Vengono visualizzate le informazioni più importanti nella definizione DSL del diagramma di definizione DSL. Informazioni aggiuntive, che fa anche parte di Dsldefinition, viene visualizzate in Esplora DSL, che in genere viene visualizzato nel riquadro laterale del diagramma. Si lavora con il diagramma per le attività più frequenti e DSL Explorer per le personalizzazioni più avanzate.  
   
  Diagramma di definizione DSL vengono illustrate le classi di dominio che definiscono gli elementi del modello e le relazioni che definiscono i collegamenti tra elementi del modello. Indica anche le forme e connettori che consentono di visualizzare gli elementi del modello per l'utente.  
   
- ![finestra di progettazione DSL con corsia](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![Finestra di progettazione DSL con corsia](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  Quando si seleziona un elemento nella definizione DSL, nel diagramma o in Esplora DSL, informazioni su di esso viene visualizzate nella finestra Proprietà. Informazioni aggiuntive possono essere visualizzate nella finestra Dettagli DSL.  
   
@@ -59,9 +56,9 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
   
  ![Le relazioni di incorporamento e riferimento](../modeling/media/music-classes.png "Music_Classes")  
   
- L'illustrazione mostra quattro classi di dominio: musica, Album, artisti e brano. Le classi di dominio definiscono le proprietà di dominio, ad esempio nome, titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.  
+ L'illustrazione mostra quattro classi di dominio: Musica, Album, artisti e brano. Le classi di dominio definiscono le proprietà di dominio, ad esempio nome, titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.  
   
- Tra le classi sono le relazioni di dominio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs e Artistaapparsoneglialbum. Le relazioni dispongono di molteplicità, ad esempio 1..1, 0.. *. Ogni brano, ad esempio, deve essere correlato a esattamente un Album attraverso la relazione AlbumHasSongs. Ogni Album può avere un numero qualsiasi di brani.  
+ Tra le classi sono le relazioni di dominio: MusicHasAlbums MusicHasArtists, AlbumbHasSongs e Artistaapparsoneglialbum. Le relazioni dispongono di molteplicità, ad esempio 1..1, 0.. *. Ogni brano, ad esempio, deve essere correlato a esattamente un Album attraverso la relazione AlbumHasSongs. Ogni Album può avere un numero qualsiasi di brani.  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Ridisposizione il diagramma di definizione DSL  
  Si noti che una classe di dominio può venire visualizzato diverse volte nel diagramma di definizione DSL, così come dell'Album in questa immagine. È sempre presente un'unica visualizzazione principale, e possono essere presenti alcuni *riferimento* viste.  
@@ -143,7 +140,7 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
 |-----------------------|-----------------|  
 |0.. * (zero a molti)|Ogni istanza della classe di dominio può avere più istanze della relazione o nessuna istanza della relazione.|  
 |0..1 (zero a uno)|Ogni istanza della classe di dominio può avere non più di un'istanza della relazione o nessuna istanza della relazione.|  
-|1..1 (uno)|Ogni istanza della classe di dominio può avere un'istanza della relazione. È possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe role. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|  
+|1..1 (One)|Ogni istanza della classe di dominio può avere un'istanza della relazione. È possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe role. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|  
 |1.. * (uno a molti)|Ogni istanza della classe nel ruolo con molteplicità di questo può avere più istanze della relazione e ogni istanza deve avere almeno un'istanza della relazione. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|  
   
 ## <a name="domain-relationships-as-classes"></a>Relazioni di dominio come classi  
@@ -157,7 +154,4 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
   
 ## <a name="see-also"></a>Vedere anche  
  [Relazioni di dominio nell'API generata](../misc/domain-relationships-in-the-generated-api.md)   
- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

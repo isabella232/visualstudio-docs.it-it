@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: eseguire il Debug in un Cluster a prestazioni elevate | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug in un Cluster a prestazioni elevate | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,27 +11,27 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969943"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: eseguire il debug su un cluster ad alte prestazioni
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: Eseguire il debug su un cluster a prestazioni elevate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per requisiti generali di installazione remota, vedere [debug remoto](../debugger/remote-debugging.md).  
   
  Quando si esegue il debug in un cluster ad alte prestazioni, è possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibili per il debug remoto. Poiché, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non è disponibile.  
   
- Il **thread** finestra e **processi** sono particolarmente utili per il debug di applicazioni parallele. Per suggerimenti su come usare queste finestre, vedere [procedura: utilizzare la finestra processi](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [procedura: utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md).  
+ Le finestre **Thread** e **Processi** sono particolarmente utili per il debug di applicazioni parallele. Per suggerimenti su come usare queste finestre, vedere [come: Utilizzare la finestra processi](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [come: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md).  
   
  Nelle procedure riportate di seguito sono illustrate alcune tecniche che risultano particolarmente utili per il debug in un cluster ad alte prestazioni.  
   
@@ -44,19 +39,19 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Per aprire la finestra di dialogo Filtro punto di interruzione  
   
-1.  Fare doppio clic su un glifo del punto di interruzione in una finestra di origine, il **Disassembly** finestra, il **Stack di chiamate** finestra o la **i punti di interruzione** finestra.  
+1.  Fare clic con il pulsante destro del mouse su un glifo del punto di interruzione in una finestra di origine, nella finestra **Disassembly**, nella finestra **Stack di chiamate** o nella finestra **Punti di interruzione**.  
   
-2.  Nel menu di scelta rapida, fare clic su **filtro**. Questa opzione può essere presente nella parte superiore livello o nel sottomenu sotto **i punti di interruzione**.  
+2.  Scegliere **Filtro** dal menu di scelta rapida. Questa opzione può essere presente nel menu di livello superiore o nel sottomenu sotto **Punti di interruzione**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Per impostare un punto di interruzione in un computer specifico  
   
-1.  Ottenere il nome del computer dal **processi** finestra.  
+1.  Ottenere il nome del computer nella finestra **Processi**.  
   
-2.  Selezionare un punto di interruzione e aprire il **Filtro punto di interruzione** finestra di dialogo come descritto nella procedura precedente.  
+2.  Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella procedura precedente.  
   
-3.  Nel **Filtro punto di interruzione** nella finestra di dialogo, digitare:  
+3.  Nella finestra di dialogo **Filtro punto di interruzione** digitare:  
   
-     MachineName =*nomecomputer*  
+     MachineName =*yourmachinename*  
   
      Per creare un filtro più complesso, è possibile combinare clausole utilizzando `&`, l'operatore AND, `||`, l'operatore OR, `!`, l'operatore NOT e le parentesi.  
   
@@ -64,13 +59,13 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Per impostare un punto di interruzione in un processo specifico  
   
-1.  Ottenere il nome del processo o il numero di ID di processo di **processi** finestra.  
+1.  Ottenere il nome o il numero di ID del processo nella finestra **Processi**.  
   
-2.  Selezionare un punto di interruzione e aprire il **Filtro punto di interruzione** finestra di dialogo come illustrato nella prima procedura.  
+2.  Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella prima procedura.  
   
-3.  Nel **Filtro punto di interruzione** nella finestra di dialogo, digitare:  
+3.  Nella finestra di dialogo **Filtro punto di interruzione** digitare:  
   
-     `ProcessName =`  *yourprocessname*  
+     `ProcessName =` *yourprocessname*  
   
      -oppure-  
   
@@ -82,11 +77,11 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Per impostare un punto di interruzione in un thread specifico  
   
-1.  Ottenere il nome o numero di ID di thread di **thread** finestra.  
+1.  Ottenere il nome o il numero ID del thread nella finestra **Thread**.  
   
-2.  Selezionare un punto di interruzione e aprire il **Filtro punto di interruzione** come descritto nella prima procedura di finestra di dialogo.  
+2.  Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella prima procedura.  
   
-3.  Nel **Filtro punto di interruzione** nella finestra di dialogo, digitare:  
+3.  Nella finestra di dialogo **Filtro punto di interruzione** digitare:  
   
      `ThreadName =` *yourthreadname*  
   
@@ -108,10 +103,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debug remoto](../debugger/remote-debugging.md)   
- [Procedura: utilizzare la finestra processi](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Procedura: utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md)   
- [Thread e processi](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Procedura: Utilizzare la finestra processi](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Procedura: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md)   
+ [Thread e processi](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Uso di punti di interruzione](../debugger/using-breakpoints.md)
-
-
-

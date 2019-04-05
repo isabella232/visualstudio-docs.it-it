@@ -1,11 +1,8 @@
 ---
 title: Activity Designer Interop | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
@@ -13,13 +10,13 @@ ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 587f9017e7f2c76018fbb5eb98645f5e4c19216c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965031"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 Il **Interop** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Interop> attività.  
@@ -41,7 +38,7 @@ Il **Interop** ActivityDesigner viene utilizzato per creare e configurare un <xr
  Fare clic su di **fare clic per cercare...** testo nel **ActivityType** casella nel **interoperabilità** attività della finestra di progettazione o nella griglia delle proprietà, per visualizzare il **Cerca e seleziona un .net tipo** nella finestra di dialogo. Vengono visualizzati solo i tipi relativi alle attività del flusso di lavoro 3.0 o del flusso di lavoro 3.5, ovvero solo i tipi derivati da <xref:System.Workflow.ComponentModel.Activity>. [!INCLUDE[crabout](../includes/crabout-md.md)] utilizzo di questa casella per specificare un tipo, vedere la [individuare e selezionare una finestra di dialogo tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) argomento.  
   
 ### <a name="the-interop-properties"></a>Proprietà di Interop  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Interop> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Interop> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  
