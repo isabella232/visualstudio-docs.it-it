@@ -1,25 +1,22 @@
 ---
-title: 'Procedura: utilizzare le transazioni per aggiornare il modello | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Utilizzare le transazioni per aggiornare il modello | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236860"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969897"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
+# <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: Usare le transazioni per aggiornare il modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le transazioni assicurarsi che le modifiche apportate all'archivio siano considerate come un gruppo. Le modifiche che sono raggruppate possono essere eseguito il commit o rollback come unità singola.  
@@ -108,6 +105,3 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 if (!this.Store.InSerializationTransaction) {...}  
   
 ```
-
-
-

@@ -1,11 +1,8 @@
 ---
 title: Progettazione del modello SendAndReceiveReply | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
@@ -14,13 +11,13 @@ ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e2b7ffb52979c0899949806ae97b562f76b0b3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970253"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Finestra di progettazione del modello SendAndReceiveReply
 Il **SendAndReceiveReply** modello viene utilizzato per creare una coppia di preconfigurati <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> attività all'interno di un <xref:System.Activities.Statements.Sequence> attività correlate come parte di uno scambio di messaggi di richiesta/risposta modello sul client.  
@@ -44,7 +41,7 @@ Il **SendAndReceiveReply** modello viene utilizzato per creare una coppia di pre
  [!INCLUDE[crabout](../includes/crabout-md.md)] usando il **ReceiveReplyForSend** finestra di progettazione per configurare il <xref:System.ServiceModel.Activities.ReceiveReply> attività, vedere la sezione seguente.  
 
 ### <a name="properties-of-receivereply"></a>Proprietà di ReceiveReply  
- Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.ReceiveReply> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e, in alcuni casi, nell'area della finestra di progettazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.ReceiveReply> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e, in alcuni casi, nell'area della finestra di progettazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
 
 
 |                                 Nome proprietà                                 | Obbligatorio |                                                                                                                                                                                                                                                                                                                                                        Utilizzo                                                                                                                                                                                                                                                                                                                                                        |
@@ -58,7 +55,7 @@ Il **SendAndReceiveReply** modello viene utilizzato per creare una coppia di pre
 ## <a name="see-also"></a>Vedere anche  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Ricezione](../workflow-designer/receive-activity-designer.md)   
+ [Receive](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
- [Invia](../workflow-designer/send-activity-designer.md)   
+ [Send](../workflow-designer/send-activity-designer.md)   
  [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

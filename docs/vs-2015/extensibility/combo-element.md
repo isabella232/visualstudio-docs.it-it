@@ -1,32 +1,27 @@
 ---
 title: Elemento combo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ab350133813f32b87570ea17df50060f93bc300
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968865"
 ---
 # <a name="combo-element"></a>Elemento Combo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definisce i comandi che vengono visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.  
+Definisce i comandi che vengono visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo, DynamicCombo, IndexCombo, and MRUCombo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -58,7 +53,7 @@ Definisce i comandi che vengono visualizzati in una casella combinata. Esistono 
 |Elemento|Descrizione|  
 |-------------|-----------------|  
 |Padre|Facoltativo. L'elemento padre del pulsante.|  
-|CommandFlag|Obbligatorio. Visualizzare [comando elemento Commandflag](../extensibility/command-flag-element.md). I valori CommandFlag validi per un pulsante sono come indicato di seguito.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|Obbligatorio. Visualizzare [comando elemento Commandflag](../extensibility/command-flag-element.md). I valori CommandFlag validi per un pulsante sono come indicato di seguito.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Stringhe|Obbligatorio. Visualizzare [stringhe elemento](../extensibility/strings-element.md). Elemento ButtonText figlio deve essere definito.|  
 |Annotazione|Commento facoltativo.|  
   
@@ -92,4 +87,3 @@ Definisce i comandi che vengono visualizzati in una casella combinata. Esistono 
   
 ## <a name="see-also"></a>Vedere anche  
  [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

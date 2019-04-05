@@ -1,26 +1,21 @@
 ---
 title: La gestione dei comandi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - command handling
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d26350e9b0465b3a175cb135509f85cf69da21f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968899"
 ---
 # <a name="command-handling"></a>Gestione dei comandi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ L'editor è possibile definire nuovi comandi. I comandi vengono in genere visual
  Un servizio di linguaggio è possibile controllare il menu di scelta rapida vengono visualizzati nell'editor, mediante l'intercettazione di <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumerazione. In alternativa, è possibile controllare il menu di scelta rapida in base al marcatore. Per altre informazioni, vedere [comandi importanti per i filtri dei servizi di linguaggio](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
 ## <a name="adding-commands-to-the-editor-context-menu"></a>Aggiunta di comandi a menu di scelta rapida Editor  
- Per aggiungere un comando di menu di scelta rapida, è innanzitutto necessario definire un set di comandi di menu che appartengono a un gruppo specifico. L'esempio seguente è tratto dal file con estensione vsct generato come parte della procedura dettagliata [procedura dettagliata: aggiunta di funzionalità in un Editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+ Per aggiungere un comando di menu di scelta rapida, è innanzitutto necessario definire un set di comandi di menu che appartengono a un gruppo specifico. L'esempio seguente è tratto dal file con estensione vsct generato come parte della procedura dettagliata [procedura dettagliata: Aggiunta di funzionalità in un Editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid = "guidCustomEditorCmdSet" id = "IDMX_RTF" priorità = "0x0000" type = "Contesto" >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
  \<Guid padre = "guidCustomEditorCmdSet" id = "0" / >  
   
@@ -42,13 +37,13 @@ L'editor è possibile definire nuovi comandi. I comandi vengono in genere visual
   
  \<ButtonText > menu di scelta rapida di CustomEditor\</ButtonText >  
   
- \<CommandName > CustomEditorContextMenu\</CommandName >  
+ \<CommandName>CustomEditorContextMenu\</CommandName>  
   
  \</ Stringhe di >  
   
- \</ Menu >  
+ \</Menu>  
   
- \<E menu >  
+ \</Menus>  
   
  Il testo precedente aggiunge un comando di menu di scelta rapida con il testo **menu di scelta rapida CustomEditor**. Il GUID del menu di scelta è che del set di comandi che viene creato con questo editor e il tipo è "Context".  
   
@@ -56,4 +51,3 @@ L'editor è possibile definire nuovi comandi. I comandi vengono in genere visual
   
 ## <a name="see-also"></a>Vedere anche  
  [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
-

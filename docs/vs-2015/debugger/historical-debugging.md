@@ -1,25 +1,20 @@
 ---
 title: Debug cronologico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969964"
 ---
 # <a name="historical-debugging"></a>Debug cronologico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Il debug cronologico è una modalità di debug che dipende dalle informazioni ra
  È possibile utilizzare IntelliTrace e il debug cronologico portati in giro nell'applicazione e controllare lo stato (stack di chiamate e le variabili locali) senza dover impostare punti di interruzione, riavviare il debug e ripetere i passi del test. Ciò consente di risparmiare molto tempo, soprattutto quando il bug si trova approfondita in uno scenario di test che richiede molto tempo per eseguire.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>Come iniziare a utilizzare il debug cronologico?  
- IntelliTrace è attivato per impostazione predefinita. È sufficiente è decidere quali eventi e chiamate di funzione sono di interesse. Per altre informazioni sulla definizione di ciò che si desidera cercare, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md). Per un account dettagliato di debug con IntelliTrace, vedere [procedura dettagliata: utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ IntelliTrace è attivato per impostazione predefinita. È sufficiente è decidere quali eventi e chiamate di funzione sono di interesse. Per ulteriori informazioni sulla definizione di ciò che si desidera cercare, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md). Per un account dettagliato di debug con IntelliTrace, vedere [procedura dettagliata: Utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Esplorazione del codice con il debug cronologico  
  Iniziamo con un semplice programma che dispone di un bug. Aggiungere il codice seguente al file App.xaml.cs nell'applicazione:  
@@ -71,9 +66,9 @@ private static int AddInt(int add)
   
 1. In Strumenti / opzioni / IntelliTrace / generale, verificare che IntelliTrace è abilitato e selezionare gli eventi di IntelliTrace e chiamare l'opzione di informazioni. Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).  
   
-2. Impostare un punto di interruzione su `Console.WriteLine(resultInt);` linea  
+2. Impostare un punto di interruzione nella riga `Console.WriteLine(resultInt);` .  
   
-3. Avviare il debug. Il codice viene eseguito fino al punto di interruzione. Nel **variabili locali** finestra, è possibile notare che il valore di `resultInt` è 44.  
+3. Avviare il debug. Il codice viene eseguito fino al punto di interruzione. Nella finestra **Variabili locali** verificare che il valore corrente di `resultInt` sia 44.  
   
 4. Aprire il **strumenti di diagnostica** finestra (**Debug / Mostra strumenti di diagnostica**). La finestra codici dovrebbe risultare simile alla seguente:  
   
@@ -87,13 +82,8 @@ private static int AddInt(int add)
   
     ![finestra del codice in modalità debug cronologico](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6. A questo punto è possibile eseguire le istruzioni il `AddAll()` metodo (**F11**, oppure il **Esegui istruzione** pulsante nella barra di navigazione. Passo avanti (**F10**, o **passare alla prossima connessione** nella barra di navigazione. La riga rosa contiene ora il `j = AddInt(j);` riga. **F10** in questo caso non esegue le istruzioni per la riga successiva del codice. Al contrario, i passaggi per la successiva chiamata di funzione. Il debug cronologico consente di passare da una chiamata a altra e ignora le righe di codice che non includono una chiamata di funzione.  
+6. Ora è possibile eseguire il metodo `AddAll()` (**F11** o il pulsante **Esegui istruzione** nella barra di navigazione. Andare avanti (**F10** o **Passa a chiamata successiva** nella barra di navigazione. La riga rosa contiene ora il `j = AddInt(j);` riga. **F10** in questo caso non passa alla riga di codice successiva. Al contrario, i passaggi per la successiva chiamata di funzione. Il debug cronologico consente di passare da una chiamata a altra e ignora le righe di codice che non includono una chiamata di funzione.  
   
 7. Eseguire un'istruzione nel metodo `AddInt()` Verrà visualizzato immediatamente il bug nel codice.  
   
-   Questa procedura solo un assaggio delle operazioni eseguibili con il debug cronologico. Per altre informazioni sulle diverse impostazioni e gli effetti dei diversi pulsanti nella barra di navigazione, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
-
-
-
-
-
+   Questa procedura solo un assaggio delle operazioni eseguibili con il debug cronologico. Per altre informazioni sulle diverse impostazioni e gli effetti dei diversi pulsanti nella barra di navigazione, vedere [Funzionalità IntelliTrace](../debugger/intellitrace-features.md).
