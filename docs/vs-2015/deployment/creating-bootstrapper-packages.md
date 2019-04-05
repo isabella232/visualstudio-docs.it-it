@@ -1,14 +1,9 @@
 ---
 title: Creazione di pacchetti di programma di bootstrap | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910927"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001445"
 ---
 # <a name="creating-bootstrapper-packages"></a>Creazione di programmi di avvio automatico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Il programma di installazione è un programma generico che può essere configura
  Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
   
 ## <a name="creating-custom-packages"></a>Creazione di pacchetti personalizzati  
- È possibile generare i manifesti usando l'editor XML in Visual Studio. Per altre informazioni, vedere [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) e [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Per un esempio di creazione di un pacchetto del programma di avvio automatico, vedere [Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ È possibile generare i manifesti usando l'editor XML in Visual Studio. Per altre informazioni, vedere [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md) e [come: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md). Per un esempio di creazione di un pacchetto di programma di avvio automatico, vedere [procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare l'informativa sulla Privacy dei messaggi di richiesta](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Per creare un pacchetto del programma di avvio automatico, è necessario fornire il ridistribuibile sotto forma di un file EXE o MSI al generatore di manifesti del programma di avvio automatico. Il generatore di manifesti del programma di avvio automatico crea, quindi, i file seguenti:  
   
@@ -75,7 +70,7 @@ Il programma di installazione è un programma generico che può essere configura
   
   `package.xml`  
   
-  Infine, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Infine, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [Procedura: Creare un pacchetto Bootstrapper localizzata](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -108,19 +103,19 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
 |ApplicationName|Nome dell'applicazione.|  
-|ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Versione dell'assembly di Windows Installer (msi.dll) eseguito durante l'installazione.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Questa proprietà viene impostata se l'utente ha i privilegi di amministratore. I valori sono true o false.|  
-|InstallMode|La modalità di installazione indica il percorso dal quale deve essere installato il componente. Sono inclusi i valori seguenti:<br /><br /> -HomeSite: i prerequisiti vengono installati dal sito Web del fornitore.<br />-SpecificSite: i prerequisiti vengono installati dal percorso selezionato.<br />-SameSite: i prerequisiti vengono installati dallo stesso percorso dell'applicazione.|  
+|InstallMode|La modalità di installazione indica il percorso dal quale deve essere installato il componente. Sono inclusi i valori seguenti:<br /><br /> -   HomeSite: i prerequisiti vengono installati dal sito Web del fornitore.<br />-   SpecificSite: i prerequisiti vengono installati dal percorso selezionato.<br />-   SameSite: i prerequisiti vengono installati dallo stesso percorso dell'applicazione.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Separazione dei ridistribuibili dalle installazioni delle applicazioni  
  Per impedire che i file ridistribuibili vengano distribuiti nei progetti di installazione, creare un elenco di ridistribuibili nella cartella RedistList situata nella directory di .NET Framework:  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- L'elenco dei ridistribuibili è un file XML al quale è necessario assegnare un nome usando il formato *Nome azienda*.*Nome componente*.RedistList.xml. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome Acme.DataWidgets.RedistList.xml. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
+ L'elenco dei ridistribuibili è un file XML che deve essere denominato utilizzando il formato seguente: *Nome società*. *Nome del componente*. RedistList. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome Acme.DataWidgets.RedistList.xml. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -134,6 +129,3 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)   
  [Riferimenti dello Schema di pacchetto e del prodotto](../deployment/product-and-package-schema-reference.md)   
  [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)
-
-
-

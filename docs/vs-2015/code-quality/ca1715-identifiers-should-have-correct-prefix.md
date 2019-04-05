@@ -1,14 +1,9 @@
 ---
 title: 'CA1715: Gli identificatori devono contenere il prefisso corretto | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -20,29 +15,29 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0e3d1290f95872c176447fb834c09bef036e784
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205907"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001835"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1715: gli identificatori devono contenere il prefisso corretto](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1715: Gli identificatori devono contenere il prefisso corretto](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) su docs.microsoft.com.  
   
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectPrefix|  
 |CheckId|CA1715|  
 |Category|Microsoft.Naming|  
-|Breaking Change|Rilievo - quando viene attivato sulle interfacce.<br /><br /> Non sostanziale - Quando si è generato su parametri di tipo generico.|  
+|Modifica importante|Rilievo - quando viene attivato sulle interfacce.<br /><br /> Non sostanziale - Quando si è generato su parametri di tipo generico.|  
   
 ## <a name="cause"></a>Causa  
  Il nome di un'interfaccia visibile esternamente non inizia con una "I" maiuscola.  
   
- oppure  
+ -oppure-  
   
  Il nome di un parametro di tipo generico su un tipo visibile esternamente o un metodo non inizia con una maiuscola l ' '.  
   
@@ -91,4 +86,3 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1715: gli id
   
 ## <a name="related-rules"></a>Regole correlate  
  [CA1722: Gli identificatori non devono contenere il prefisso non corretto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Analisi della qualità dell'applicazione tramite gli strumenti di analisi di codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.analysisresults
 helpviewer_keywords:
@@ -20,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216696"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001356"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +39,13 @@ In questa sezione
  Correggere gli errori nella funzionalità di analisi codice.  
   
  [Miglioramento della qualità del codice con i criteri di archiviazione del progetto team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
- Quando si usa il controllo della versione di Team Foundation, è possibile creare criteri di archiviazione per i progetti team che applicano procedure consigliate che consentono di ottenere codice migliore e maggiore efficienza per lo sviluppo in gruppo. I criteri di archiviazione sono regole che vengono impostate a livello di progetto team e applicate nei computer degli sviluppatori prima che sia consentita l'archiviazione del codice.  
+ Quando si usa il controllo della versione di Team Foundation (TFVC), è possibile creare criteri di archiviazione per i progetti team che applicano procedure consigliate che consentono di ottenere codice migliore e maggiore efficienza per lo sviluppo in gruppo. I criteri di archiviazione sono regole che vengono impostate a livello di progetto team e applicate nei computer degli sviluppatori prima che sia consentita l'archiviazione del codice.  
   
 ### <a name="code-analysis-for-drivers"></a>Code Analysis for Drivers  
  Gli strumenti di analisi del codice consentono di migliorare la stabilità e l'affidabilità del driver analizzando sistematicamente il codice sorgente del driver.  
   
- [Analisi della qualità del Driver tramite gli strumenti di analisi codice](http://go.microsoft.com/fwlink/?LinkId=227618)  
- Code Analysis for Drivers è uno strumento di verifica statica in fase di compilazione che rileva gli errori di codifica di base nei programmi C e C++ e include un modulo specializzato che consente di rilevare errori principalmente nel codice driver in modalità kernel. Static Driver Verifier (SDV) è uno strumento di verifica statica che analizza sistematicamente il codice sorgente dei driver in modalità kernel Windows. SDV stabilisce se il driver interagisce correttamente con il kernel del sistema operativo Windows.  
+ [Analisi della qualità del Driver tramite gli strumenti di analisi codice](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ Code Analysis for Drivers è uno strumento di verifica statica in fase di compilazione che rileva gli errori nei programmi C e C++ di codifica di base e include un modulo specializzato che è progettato per rilevare errori in (principalmente) codice driver in modalità kernel. Static Driver Verifier (SDV) è uno strumento di verifica statica che analizza sistematicamente il codice sorgente dei driver in modalità kernel Windows. SDV stabilisce se il driver interagisce correttamente con il kernel del sistema operativo Windows.  
   
  [Analisi del codice per gli avvisi di driver](http://go.microsoft.com/fwlink/?LinkId=225920)  
  Descrive gli avvisi che Code Analysis for Drivers segnala quando rileva un possibile errore nel codice del driver.  
@@ -61,6 +56,3 @@ In questa sezione
   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)  
  Inserire qui la descrizione.
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778553"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001040"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Aggiunta di elementi nelle finestre di dialogo Aggiungi nuovo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
   
  "TemplatesDir"="\<percorso di installazione di Visual Studio SDK\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
- "SortPriority" = dword:00000064  
+ "SortPriority"=dword:00000064  
   
-|nome|Tipo|Dati (dal file con estensione RGS)|Descrizione|  
+|Nome|Tipo|Dati (dal file con estensione RGS)|Descrizione|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (Impostazione predefinita)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|ID risorsa per **Aggiungi elemento** modelli.|  
+|@ (Impostazione predefinita)|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|ID risorsa per **Aggiungi elemento** modelli.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Percorso degli elementi di progetto visualizzato nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata.|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Determina l'ordine di ordinamento nel nodo della struttura dei file visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo.|  
   
@@ -89,4 +84,3 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
  [Aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Descrizione del modello di Directory (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)
-

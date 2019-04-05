@@ -1,12 +1,9 @@
 ---
 title: Modellare i requisiti dell'utente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,13 +12,13 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776486"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001578"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,10 +87,10 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   
   Per altre informazioni, vedere gli argomenti seguenti:  
   
-|Informazioni|Vedere|  
+|Informazioni|Lettura|  
 |--------------------|----------|  
-|Informazioni più dettagliate su come creare casi di utilizzo|[Diagrammi casi d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Elementi in un diagramma caso di utilizzo|[Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|  
+|Informazioni più dettagliate su come creare casi di utilizzo|[Diagrammi dei casi d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Elementi in un diagramma caso di utilizzo|[Diagrammi dei casi d'uso UML: riferimenti](../modeling/uml-use-case-diagrams-reference.md)|  
 |Come sviluppare codice dai casi di utilizzo|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="RequirementsClasses"></a> Definizione dei termini usati per descrivere i requisiti  
@@ -137,11 +134,11 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   
 |Informazioni|Lettura|  
 |--------------------|----------|  
-|Altre informazioni su come trovare le classi di requisiti|[Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|  
+|Altre informazioni su come trovare le classi di requisiti|[Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|  
+|Elementi in un diagramma classi concettuali|[Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)|  
 |Come sviluppare codice dalle classi concettuali|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
- In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguente le frecce sono non direzionali per impostazione predefinita: [Esempio: funzionalità di modellazione di un dominio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'esempio [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione rendere le frecce sono non direzionali il valore predefinito: [Esempio: Funzionalità di modellazione di domini UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.  
@@ -160,8 +157,8 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   
 |Informazioni|Lettura|  
 |--------------------|----------|  
-|Altre informazioni su come trovare e registrare regole di business statiche|[Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|  
+|Altre informazioni su come trovare e registrare regole di business statiche|[Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|  
+|Elementi in un diagramma classi concettuali|[Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)|  
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
@@ -185,7 +182,6 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   
 |Informazioni|Lettura|  
 |--------------------|----------|  
-|Altre informazioni sulla registrazione dei requisiti di qualità del servizio|[Linee guida per la definizione dei requisiti di qualità del servizio](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Associazione di documenti aggiuntivi ai casi di utilizzo|[Collegare un caso d'uso a documenti e diagrammi](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Come sviluppare codice che soddisfi i requisiti di qualità del servizio|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
@@ -207,7 +203,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Informazioni|Lettura|  
 |--------------------|----------|  
 |Altre informazioni sulla definizione di flussi di lavoro aziendali|[Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Elementi in un diagramma di attività|[Diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md)|  
+|Elementi in un diagramma di attività|[Diagrammi di attività UML: riferimenti](../modeling/uml-activity-diagrams-reference.md)|  
 |Come sviluppare codice dai diagrammi di attività|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Sequences"></a> Visualizzazione delle interazioni tra utenti e del sistema  
@@ -247,11 +243,8 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
  [Sviluppare test da un modello](../modeling/develop-tests-from-a-model.md)   
  [Usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)   
  [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)   
- [Estensione di Visual Studio di esempio: Le funzionalità modellazione di domini UML](http://go.microsoft.com/fwlink/?LinkId=213849)   
+ [Estensione di Visual Studio di esempio: Funzionalità di modellazione di domini UML](http://go.microsoft.com/fwlink/?LinkId=213849)   
  [Estensione di Visual Studio di esempio: Colorazione di elementi UML per stereotipo](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Estensione di Visual Studio di esempio: Collegamento di elementi UML a diagrammi, file e altri elementi](http://go.microsoft.com/fwlink/?LinkID=213813)   
  [Estensione di Visual Studio di esempio: Allineare le forme in un diagramma UML](http://go.microsoft.com/fwlink/?LinkID=213809)   
  [Video: Modellazione del dominio aziendale](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-

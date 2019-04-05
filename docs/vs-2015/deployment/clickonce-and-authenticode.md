@@ -1,14 +1,9 @@
 ---
 title: ClickOnce e Authenticode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289485"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000933"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
 ### <a name="timestamps"></a>Timestamp  
  I certificati usati per firmare applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] scadono dopo un determinato periodo di tempo, in genere dodici mesi. Per evitare di dover firmare costantemente le stesse applicazioni con nuovi certificati, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] supporta i timestamp. Se un'applicazione è firmata con un timestamp, il certificato continuerà a essere accettato anche dopo la scadenza, purché il timestamp sia valido. Questo consente il download e l'esecuzione delle applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con certificati scaduti ma timestamp validi. Permette anche di continuare a scaricare e installare gli aggiornamenti per le applicazioni installate con certificati scaduti.  
   
- Per includere un timestamp in un server applicazioni, deve essere disponibile un server di timestamp. Per informazioni sulla selezione di un server di timestamp, vedere [How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Per includere un timestamp in un server applicazioni, deve essere disponibile un server di timestamp. Per informazioni su come selezionare un server di timestamp, vedere [come: Firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="updating-expired-certificates"></a>Aggiornamento di certificati scaduti  
  Nelle versioni precedenti di .NET Framework, l'aggiornamento di un'applicazione con certificato scaduto può determinare l'interruzione dell'applicazione stessa. Per risolvere il problema, usare uno dei metodi seguenti:  
@@ -81,6 +76,3 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Errore: Il Server Web non è stato possibile trovare la risorsa richiesta | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808297"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001524"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Errore: il server Web non è in grado di trovare la risorsa richiesta
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Errore: Impossibile trovare la risorsa richiesta nel server Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ai fini della sicurezza, IIS ha restituito un errore generico.  
@@ -37,11 +32,8 @@ Ai fini della sicurezza, IIS ha restituito un errore generico.
   
  Questo errore può essere avere numerose cause. Alcune delle cause più comuni includono un problema di installazione o configurazione di IIS, di configurazione del sito Web o di autorizzazioni nel file system. È possibile provare ad accedere alla risorsa con un browser. A seconda della configurazione di IIS, potrebbe essere necessario utilizzare un browser locale nel server o analizzare il log degli errori di IIS per ottenere un messaggio di errore dettagliato.  
   
- Per altre informazioni sulla risoluzione dei problemi di IIS, vedere [Gestione IIS e l'amministrazione](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Per altre informazioni sulla risoluzione dei problemi di IIS, vedere [Gestione e amministrazione di IIS](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Strumento di sicurezza UrlScan](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
- [Errore: il server Web è stato bloccato e blocca il verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
-
-
-
+ [Strumento di sicurezza UrlScan](https://www.iis.net/downloads/microsoft/urlscan)   
+ [Errore: Il verbo DEBUG è bloccato dal server Web, che è stato a sua volta bloccato](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
