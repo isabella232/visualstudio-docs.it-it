@@ -1,8 +1,8 @@
 ---
-title: Come eseguire la migrazione e pubblicare un'applicazione Web a un servizio Cloud di Azure da Visual Studio | Microsoft Docs
-description: Informazioni su come eseguire la migrazione e pubblicare l'applicazione web a un servizio cloud di Azure con Visual Studio
+title: Come eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure
+description: Informazioni su come eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,91 +11,91 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c122b54a4e22285678d13213cc73d6492baba629
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003041"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001433"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: eseguire la migrazione e pubblicare un'applicazione Web a un servizio Cloud di Azure da Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure da Visual Studio
 
-Per sfruttare i vantaggi dei servizi di hosting e scalabilità di Azure, si potrebbe voler eseguire la migrazione e distribuire l'applicazione web a un servizio cloud di Azure. Sono necessarie solo modifiche minime. Questo articolo illustra la distribuzione in servizi cloud di sola lettura. per il servizio App, vedere [distribuire un'app web nel servizio App di Azure](/azure/app-service/app-service-deploy-local-git).
+Per sfruttare i servizi di hosting e scalabilità di Azure, è possibile eseguire la migrazione e la distribuzione dell'applicazione Web in un servizio cloud di Azure. Sono necessarie solo modifiche minime al codice. Questo articolo illustra solo la procedura di distribuzione in un servizio cloud; per il Servizio app, vedere [Distribuire un'app Web nel Servizio app di Azure](/azure/app-service/app-service-deploy-local-git).
 
 > [!Important]
-> Questa migrazione è supportata solo per i progetti ASP.NET, Silverlight, WCF e flusso di lavoro WCF specifici. Non è supportata per i progetti ASP.NET Core. Visualizzare [modelli di progetto supportati](#supported-project-templates).
+> Questa migrazione è supportata solo per specifici progetti ASP.NET, Silverlight, WCF e di flusso di lavoro WCF. Non è supportata per progetti ASP.NET Core. Vedere [Modelli di progetto supportati](#supported-project-templates).
 
-## <a name="migrate-a-project-to-cloud-services"></a>Eseguire la migrazione di un progetto di servizi cloud
+## <a name="migrate-a-project-to-cloud-services"></a>Migrare un progetto in un servizio cloud
 
-1. Il progetto di applicazione web e scegliere **Converti > Converti in progetto servizio Cloud di Microsoft Azure**. Si noti che questo comando non viene visualizzato se si dispone già di un progetto di ruolo web nella soluzione.
-1. Visual Studio crea un progetto servizio cloud nella soluzione che contiene il ruolo web richiesto. Il nome di questo progetto corrisponde al progetto dell'applicazione con più il suffisso `.Azure`.
-1. Visual Studio imposta anche il **Copia localmente** proprietà su true per qualsiasi assembly necessario per MVC 2, MVC 3, MVC 4 e applicazioni aziendali di Silverlight. Questa proprietà consente di aggiungere questi assembly al pacchetto del servizio che viene usato per la distribuzione.
+1. Fare clic con il pulsante destro del mouse sul progetto di applicazione Web e selezionare **Converti > Converti in progetto servizio cloud di Microsoft Azure**. Si noti che questo comando non viene visualizzato se nella soluzione è già presente un progetto di ruolo Web.
+1. Visual Studio crea un progetto di servizio cloud nella soluzione contente il ruolo Web richiesto. Il nome del progetto corrisponde al nome del progetto di applicazione, con l'aggiunta del suffisso `.Azure`.
+1. Visual Studio imposta anche la proprietà **Copia localmente** su true per qualsiasi assembly necessario per MVC 2, MVC 3, MVC 4 e applicazioni aziendali di Silverlight. In questo modo gli assembly vengono aggiunti al pacchetto del servizio usato per la distribuzione.
 
    > [!Important]
-   > Se si dispone di altri assembly o i file necessari per l'applicazione web, è necessario impostare manualmente le proprietà per questi file. Per informazioni su come impostare queste proprietà, vedere [includere file nel pacchetto del servizio](#include-files-in-the-service-package).
+   > Se si dispone di altri assembly o file necessari per l'applicazione Web, è necessario impostare manualmente le proprietà di questi file. Per informazioni su come impostare queste proprietà, vedere [Includere file nel pacchetto del servizio](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
 
 ### <a name="errors-and-warnings"></a>Errori e avvisi
 
-Eventuali avvisi o errori che si verificano indicano problemi da risolvere prima di distribuire in Azure, ad esempio assembly mancanti.
+Eventuali avvisi o errori visualizzati indicano problemi da risolvere prima di eseguire la distribuzione in Azure, ad esempio assembly mancanti.
 
-Se si compila la tua applicazione, eseguirla localmente utilizzando l'emulatore di calcolo o pubblicarla in Azure, si potrebbe essere visualizzato l'errore: "il percorso specificato, nome del file o entrambi sono troppo lunghi." Questo errore indica che lunghezza del nome completo del progetto Azure superiore a 146 caratteri. Per correggere il problema, spostare la soluzione in una cartella diversa con un percorso più breve.
+Se si compila l'applicazione, la si esegue in locale con l'emulatore di calcolo o la si pubblica in Azure, è possibile che venga visualizzato l'errore seguente: "Il percorso specificato, il nome file o entrambi sono troppo lunghi". Questo errore indica che la lunghezza del nome completo del progetto di Azure è superiore a 146 caratteri. Per correggere il problema, spostare la soluzione in una cartella diversa con un percorso più breve.
 
-Per altre informazioni su come trattare tutti gli avvisi come errori, vedere [configurare un progetto servizio Cloud di Azure con Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
+Per altre informazioni su come gestire eventuali avvisi come errori, vedere [Configurare un progetto di servizio cloud di Azure con Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 
 ### <a name="test-the-migration-locally"></a>Testare la migrazione in locale
 
-1. In Visual Studio **Esplora soluzioni**, fare clic sul progetto servizio cloud aggiunto e selezionare **imposta come progetto di avvio**.
-1. Selezionare **Debug > Avvia debug** (F5) per avviare l'ambiente di debug di Azure. Questo ambiente, in particolare, fornisce emulazione di vari servizi di Azure.
+1. In **Esplora soluzioni** di Visual Studio fare clic con il pulsante destro del mouse sul progetto di servizio cloud aggiunto e selezionare **Imposta come progetto di avvio**.
+1. Selezionare **Debug > Avvia debug** (F5) per avviare l'ambiente di debug di Azure. Questo ambiente consente, nello specifico, l'emulazione di vari servizi di Azure.
 
-### <a name="use-an-azure-sql-database-for-your-application"></a>Usare un Database SQL di Azure per l'applicazione
+### <a name="use-an-azure-sql-database-for-your-application"></a>Usare un database SQL di Azure per l'applicazione
 
-Se si dispone di una stringa di connessione per l'applicazione web che usa un database di SQL Server in locale, è necessario eseguire la migrazione del database SQL di Azure invece e aggiornare la stringa di connessione. Per istruzioni su questo processo, vedere gli argomenti seguenti:
+Se si ha una stringa di connessione per l'applicazione Web che usa un database SQL Server locale, è necessario eseguire la migrazione del database al database SQL di Azure e aggiornare la stringa di connessione. Per istruzioni su questo processo, vedere gli argomenti seguenti:
 
-- [Migrazione di database di SQL Server al Database SQL nel cloud](/azure/sql-database/sql-database-cloud-migrate)
-- [Usare .NET (C#) con Visual Studio per connettersi ed eseguire query e database SQL di Azure](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
+- [Migrazione di un database SQL Server al database SQL nel cloud](/azure/sql-database/sql-database-cloud-migrate)
+- [Usare .NET (C#) con Visual Studio Code per connettersi a un database SQL ed eseguire query](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
 
-## <a name="publish-the-application-to-azure-cloud-service"></a>Pubblicare l'applicazione di servizio Cloud di Azure
+## <a name="publish-the-application-to-azure-cloud-service"></a>Pubblicare l'applicazione in un servizio cloud di Azure
 
-1. Creare i cloud necessari account di archiviazione e del servizio nella sottoscrizione di Azure come descritto in [preparare la pubblicazione o distribuzione di un'applicazione Azure da Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
-1. In Visual Studio, fare doppio clic sul progetto di applicazione e selezionare **pubblica in Microsoft Azure...**  (che è diverso dal comando "Pubblica in corso".).
-1. Nel **pubblica applicazione Azure** che viene visualizzata, accedere usando l'account nella sottoscrizione di Azure e selezionare **successiva >**.
-1. Nel **Impostazioni > Impostazioni comuni** scheda, selezionare il servizio cloud di destinazione dalle **servizio Cloud** elenco a discesa, insieme all'ambiente selezionato e alle configurazioni. 
-1. Nelle **Impostazioni > Impostazioni avanzate**, selezionare l'account di archiviazione da usare, quindi selezionare **successiva >**.
-1. Nelle **diagnostica**, decidere se inviare informazioni ad Application Insights.
-1. Selezionare **Avanti >** per visualizzare un riepilogo, quindi selezionare **Publish** per avviare la distribuzione.
-1. Visual Studio apre una finestra log attività in cui è possibile tenere traccia dello stato:
+1. Creare gli account di archiviazione e dei servizi cloud necessari nella sottoscrizione di Azure, come descritto in [Preparare la pubblicazione o la distribuzione di un'applicazione di Azure da Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
+1. In Visual Studio fare clic con il pulsante destro del mouse sul progetto di applicazione e selezionare **Pubblica in Microsoft Azure...** (diverso dal comando "Pubblica...").
+1. Nella finestra **Pubblica applicazione Azure** visualizzata, accedere usando l'account con la sottoscrizione di Azure e scegliere **Avanti >**.
+1. Nella scheda **Impostazioni > Impostazioni comuni** selezionare il servizio cloud di destinazione dall'elenco a discesa **Servizio cloud**, insieme all'ambiente e alle configurazioni selezionate.
+1. In **Impostazioni > Impostazioni avanzate** selezionare l'account di archiviazione da usare e quindi scegliere **Avanti >**.
+1. In **Diagnostica** decidere se si vuole inviare informazioni ad Application Insights.
+1. Selezionare **Avanti >** per visualizzare un riepilogo e quindi selezionare **Pubblica** per avviare la distribuzione.
+1. Visual Studio apre una finestra Log attività in cui è possibile monitorare lo stato di avanzamento del processo:
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
 
-1. (Facoltativo) Per annullare il processo di distribuzione, fare doppio clic la voce nel log attività e scegliere **Annulla e Rimuovi**. Questo comando Arresta il processo di distribuzione ed elimina l'ambiente di distribuzione da Azure. Nota: per rimuovere questo ambiente di distribuzione dopo che è stato distribuito, è necessario usare il [portale di Azure](https://portal.azure.com).
-1. (Facoltativo) Una volta avviate le istanze del ruolo, Visual Studio Mostra automaticamente l'ambiente di distribuzione nel **Esplora Server > servizi Cloud** nodo. Da qui è possibile visualizzare lo stato di singole istanze del ruolo.
-1. Per accedere all'applicazione dopo la distribuzione, scegliere la freccia accanto alla distribuzione quando lo stato **Completed** viene visualizzato nei **log attività di Azure** insieme all'URL. Vedere la tabella seguente per informazioni dettagliate su come avviare un tipo specifico di applicazione web di Azure.
+1. (Facoltativo) Per annullare il processo di distribuzione, fare clic con il pulsante destro del mouse sulla voce del log attività e scegliere **Annulla e rimuovi**. Questo comando arresta il processo di distribuzione ed elimina l'ambiente di distribuzione da Azure. Nota: per rimuovere questo ambiente di distribuzione dopo che è stato distribuito, è necessario usare il [portale di Azure](https://portal.azure.com).
+1. (Facoltativo) Dopo l'avvio delle istanze del ruolo, Visual Studio mostra automaticamente l'ambiente di distribuzione nel nodo **Esplora server > Servizi cloud**. Da qui è possibile visualizzare lo stato delle singole istanze del ruolo.
+1. Per accedere all'applicazione dopo la distribuzione, scegliere la freccia accanto alla distribuzione quando nel **Log attività di Azure** viene visualizzato lo stato **Completato** insieme all'URL. Vedere la tabella seguente per informazioni dettagliate su come avviare un tipo specifico di applicazione Web da Azure.
 
-## <a name="using-the-compute-emulator-and-starting-application-in-azure"></a>Usando l'emulatore di calcolo e avvio dell'applicazione in Azure
+## <a name="using-the-compute-emulator-and-starting-application-in-azure"></a>Utilizzo dell'emulatore di calcolo e avvio dell'applicazione in Azure
 
-Tutti i tipi di applicazioni possono essere avviati in un browser connesso al debugger di Visual Studio selezionando **Debug > Avvia debug** (F5). Con un progetto di applicazione Web ASP.NET vuota, è innanzitutto necessario aggiungere un `.aspx` pagina nell'applicazione e impostarla come pagina iniziale per il progetto web.
+Tutti i tipi di applicazione possono essere avviati in un browser connesso al debugger di Visual Studio selezionando **Debug > Avvia debug** (F5). Con un progetto di applicazione Web ASP.NET vuota, è necessario prima aggiungere una pagina `.aspx` nell'applicazione e impostarla come pagina iniziale del progetto Web.
 
-Nella tabella seguente fornisce informazioni dettagliate sull'avvio dell'applicazione in Azure:
+La tabella seguente fornisce informazioni dettagliate sull'avvio dell'applicazione in Azure:
 
-   | Tipo di applicazione Web | In esecuzione in Azure |
+   | Tipo di applicazione Web | Esecuzione in Azure |
    | --- | --- | --- |
-   | Applicazione Web ASP.NET<br/>(inclusi MVC 2, MVC 3, MVC 4) | Selezionare l'URL nel **distribuzione** scheda per il **log attività di Azure**. |
-   | Applicazione Web ASP.NET vuota | Se si dispone di un valore predefinito `.aspx` pagina nell'applicazione, selezionare l'URL nel **distribuzione** scheda per il **log attività di Azure**. Per passare a una pagina diversa, immettere un URL nel formato seguente in un browser: `<deployment_url>/<page_name>.aspx` |
-   | Applicazione Silverlight<br/>Applicazione aziendale di Silverlight<br/>Applicazione di navigazione Silverlight | Passare alla pagina specifica per l'applicazione usando il formato di URL seguente: `<deployment_url>/<page_name>.aspx` |
-    Applicazione del servizio WCF<br/>Applicazione servizi flusso di lavoro WCF | Impostare il `.svc` file come pagina iniziale per il progetto di servizio WCF. Quindi passare a `<deployment_url>/<service_file>.svc` |
-   | Entità dinamiche ASP.NET<br/>Linq to SQL ASP.NET Dynamic Data | Aggiornare la stringa di connessione come descritto nella sezione successiva. Passare quindi a `<deployment_url>/<page_name>.aspx`. Per Linq to SQL, è necessario usare un database SQL di Azure. |
+   | Applicazione Web ASP.NET<br/>(inclusi MVC 2, MVC 3, MVC 4) | Nella scheda **Distribuzione** selezionare l'URL per **Log attività di Azure**. |
+   | Applicazione Web ASP.NET vuota | Se si ha una pagina `.aspx` predefinita nell'applicazione, nella scheda **Distribuzione** selezionare l'URL per **Log attività di Azure**. Per passare a una pagina diversa, in un browser immettere un URL nel formato seguente: `<deployment_url>/<page_name>.aspx` |
+   | Applicazione Silverlight<br/>Applicazione aziendale di Silverlight<br/>Applicazione di navigazione Silverlight | Passare alla pagina specifica dell'applicazione usando il formato di URL seguente: `<deployment_url>/<page_name>.aspx` |
+    Applicazione del servizio WCF<br/>Applicazione servizi flusso di lavoro WCF | Impostare il file `.svc` come pagina iniziale del progetto di servizio WCF. Passare a `<deployment_url>/<service_file>.svc` |
+   | Entità dinamiche ASP.NET<br/>Linq ASP.NET Dynamic Data a SQL | Aggiornare la stringa di connessione, come descritto nella sezione seguente. Passare quindi a `<deployment_url>/<page_name>.aspx`. Per Linq to SQL è necessario usare un database SQL di Azure. |
 
-## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Aggiornare una stringa di connessione per entità dinamiche ASP.NET
+## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Aggiornamento di una stringa di connessione per entità dinamiche ASP.NET
 
-1. Creare un database di SQL Azure per un'applicazione web entità dinamiche ASP.NET, come descritto in precedenza (#use-an-azuresql-database-for-your-application).
+1. Creare un database SQL di Azure per un'applicazione Web di entità dinamiche ASP.NET, come descritto in precedenza in (#use-an-azuresql-database-for-your-application).
 1. Aggiungere le tabelle e i campi necessari per il database dal portale di Azure.
-1. Specificare una stringa di connessione nel `web.config` file con il formato seguente e salvare il file:
+1. Specificare una stringa di connessione nel file `web.config` con il formato seguente e salvare il file:
 
     ```xml
     <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
     ```
 
-    Aggiorna il *connectionString* valore con la stringa di connessione ADO.NET per il database di SQL Azure come indicato di seguito:
+    Aggiornare il valore *connectionString* con la stringa di connessione ADO.NET per il database SQL Azure, come indicato di seguito:
 
     ```xml
     XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
@@ -103,7 +103,7 @@ Nella tabella seguente fornisce informazioni dettagliate sull'avvio dell'applica
 
 ## <a name="supported-project-templates"></a>Modelli di progetto supportati
 
-Le applicazioni che possono essere migrate e pubblicate in servizi cloud devono usare uno dei modelli nella tabella seguente. ASP.NET Core non è supportato.
+Le applicazioni che possono essere migrate e pubblicate in servizi cloud devono usare uno dei modelli presenti nella tabella seguente. ASP.NET Core non è supportato.
 
 | Gruppo di modelli | Modello di progetto |
 | --- | --- |
@@ -111,18 +111,18 @@ Le applicazioni che possono essere migrate e pubblicate in servizi cloud devono 
 | Web | Applicazione Web ASP.NET MVC 2 |
 | Web | Applicazione Web ASP.NET MVC 3 |
 | Web | Applicazione Web ASP.NET MVC4 |
-| Web | Applicazione Web ASP.NET vuota (o un sito) |
+| Web | Applicazione Web ASP.NET vuota (o Sito) |
 | Web | Applicazione Web vuota ASP.NET MVC 2 |
 | Web | Applicazione Web entità ASP.NET Dynamic Data |
-| Web | Linq ASP.NET Dynamic Data per l'applicazione Web SQL |
+| Web | Applicazione Web Linq ASP.NET Dynamic Data a SQL |
 | Silverlight | Applicazione Silverlight |
 | Silverlight | Applicazione aziendale di Silverlight |
 | Silverlight | Applicazione di navigazione Silverlight |
-| WCF | Applicazione del servizio WCF |
+| WCF | Applicazione di servizio WCF |
 | WCF | Applicazione servizi flusso di lavoro WCF |
 | Flusso di lavoro | Applicazione servizi flusso di lavoro WCF |
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Preparare la pubblicazione o distribuzione di un'applicazione Azure da Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
-- [Configurazione delle credenziali di autenticazione denominate](vs-azure-tools-setting-up-named-authentication-credentials.md).
+- [Preparare la pubblicazione o la distribuzione di un'applicazione di Azure da Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
+- [Configurazione delle credenziali per l'autenticazione denominate](vs-azure-tools-setting-up-named-authentication-credentials.md).

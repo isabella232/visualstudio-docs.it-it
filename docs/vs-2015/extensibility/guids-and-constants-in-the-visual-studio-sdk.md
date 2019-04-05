@@ -1,27 +1,22 @@
 ---
 title: GUID e costanti in Visual Studio SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4d14553c2c06fd330ca6b8d5ac5342d18ae7f893
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83d218ba3c3d2156b673d3fadc8677d8edf9ea09
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58955964"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUID e costanti in Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce l'accesso a una sel
   
  [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
  Elenca i diversi tipi di elementi di comando utilizzati per estendere i sistemi di progetto.
-

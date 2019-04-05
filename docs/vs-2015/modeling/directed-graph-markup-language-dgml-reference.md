@@ -1,33 +1,30 @@
 ---
 title: Indirizzati riferimento Graph Markup Language (DGML) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955000"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Riferimento di Directed Graph Markup Language (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Directed Graph Markup Language (DGML) descrive le informazioni usate per la visualizzazione e per eseguire l'analisi di complessità, ed è il formato usato per rendere persistenti le mappe codice in Visual Studio. Usa semplice codice XML per descrivere grafici diretti ciclici e aciclici. Un grafico diretto è un set di nodi connessi da collegamenti o bordi. I nodi e i collegamenti possono essere usati per rappresentare strutture di rete, ad esempio elementi in un progetto software.  
+Directed Graph Markup Language (DGML) descrive le informazioni usate per la visualizzazione e per eseguire l'analisi di complessità, ed è il formato usato per rendere persistenti le mappe codice in Visual Studio. Usa semplice codice XML per descrivere grafici diretti ciclici e aciclici. Un grafico diretto è un set di nodi connessi da collegamenti o bordi. I nodi e i collegamenti possono essere utilizzati per rappresentare strutture di rete, ad esempio elementi in un progetto software.  
   
  Si noti che alcune versioni di Visual Studio supportano solo un subset delle funzionalità DGML; vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Quando si modifica un file con estensione dgml, IntelliSense consente di identificare gli attributi disponibili per ogni elemento e i relativi valori. Per specificare il colore in un attributo, usare nomi dei colori comuni, come "Blue", o valori ARGB esadecimali, come "#ffa0b1c3." In DGML viene usato un piccolo subset di formati di definizione dei colori WPF (Windows Presentation Foundation). Per altre informazioni, vedere [classe Colors](http://go.microsoft.com/fwlink/?LinkId=182345).  
+>  Quando si modifica un file con estensione dgml, IntelliSense consente di identificare gli attributi disponibili per ogni elemento e i relativi valori. Per specificare il colore in un attributo, utilizzare nomi dei colori comuni, come "Blue", o valori ARGB esadecimali, come "#ffa0b1c3." In DGML viene utilizzato un piccolo subset di formati di definizione dei colori WPF (Windows Presentation Foundation). Per altre informazioni, vedere [classe Colors](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ##  <a name="DGML"></a> Sintassi DGML  
  Nella tabella seguente sono descritti i tipi di elementi usati in DGML:  
@@ -209,7 +206,7 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
   
 - `<Category/>`  
   
-   Questo elemento definisce un attributo `Category`, usato per identificare gli elementi che condividono questo attributo. Un attributo `Category` può essere usato per organizzare gli elementi della mappa, fornire attributi condivisi tramite ereditarietà o definire metadati aggiuntivi.  
+   Questo elemento definisce un attributo `Category`, utilizzato per identificare gli elementi che condividono questo attributo. Un attributo `Category` può essere usato per organizzare gli elementi della mappa, fornire attributi condivisi tramite ereditarietà o definire metadati aggiuntivi.  
   
    L'elemento deve includere gli attributi seguenti:  
   
@@ -266,7 +263,7 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
   
 - `<Property/>`  
   
-   Questo elemento definisce un attributo `Property` che è possibile utilizzare per assegnare un valore a qualsiasi attributo o elemento DGML, incluse categorie e altre proprietà.  
+   Questo elemento definisce un attributo `Property` che è possibile usare per assegnare un valore a qualsiasi attributo o elemento DGML, incluse categorie e altre proprietà.  
   
    L'elemento deve includere gli attributi seguenti:  
   
@@ -329,6 +326,3 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
  [Mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)   
  [Usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-

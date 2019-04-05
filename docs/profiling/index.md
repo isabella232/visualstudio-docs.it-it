@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Misurazione delle prestazioni delle app tramite la profilatura | Microsoft Docs
-description: 'Informazioni su come usare Visual Studio per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.'
+description: Informazioni su come usare Visual Studio per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323008"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Misurare le prestazioni delle app in Visual Studio
 

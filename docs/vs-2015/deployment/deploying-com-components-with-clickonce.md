@@ -1,14 +1,9 @@
 ---
 title: Distribuzione di componenti COM con ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820291"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001602"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Distribuzione di componenti COM con ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fornisce un meccanismo semplice e sicuro per la distribuzione di applicazioni .NET. Tuttavia, se le applicazioni usano i componenti COM legacy, è necessario eseguire passaggi aggiuntivi per la loro distribuzione. Questo argomento descrive come distribuire i componenti COM isolati e fanno riferimento a componenti nativi (ad esempio, da Visual Basic 6.0 o Visual C++).  
   
- Per altre informazioni sulla distribuzione di componenti COM isolati, vedere "Simplify App Deployment with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] e COM senza registrazione" nella [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Per altre informazioni sulla distribuzione di componenti COM isolati, vedere "Simplify App Deployment with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] e COM senza registrazione" nella [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>Registration-Free COM  
  COM senza registrazione è una nuova tecnologia per la distribuzione e attivazione di componenti COM isolati. Funziona inserendo la libreria dei tipi del componente e informazioni di registrazione che viene in genere installate nel Registro di sistema in un file XML denominato un manifesto, archiviato nella stessa cartella dell'applicazione.  
@@ -145,7 +140,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 2. Nella pubblicazione guidata, specificare un percorso nel disco del computer locale in cui è possibile accedere ed esaminare i file pubblicati.  
   
-3. Fare clic su **fine** per pubblicare l'applicazione.  
+3. Fare clic su **Fine** per pubblicare l'applicazione.  
   
    Se si esaminano i file pubblicati, si noterà che il file Sysmon. ocx sia incluso. Il controllo è completamente isolata e prevede l'applicazione, vale a dire che, se macchina dell'utente finale ha un'altra applicazione utilizza una versione diversa del controllo, non può interferire con l'applicazione.  
   
@@ -171,7 +166,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 - Il componente gestisce un dispositivo fisico o virtuale per il sistema, ad esempio, un driver di dispositivo per uno spooler di stampa.  
   
-- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; visualizzare [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; vedere [come: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   In alcuni casi, potrebbe essere possibile per lo sviluppatore del componente, riprogettare per COM senza registrazione. Se questo non è possibile, è possibile compilare e pubblicare applicazioni che dipendono da essi tramite lo schema di registrazione standard usando il programma di bootstrap. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
   
@@ -181,6 +176,3 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
-
-
-

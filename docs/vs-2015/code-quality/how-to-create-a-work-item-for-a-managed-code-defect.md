@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: creare un elemento di lavoro per un difetto del codice gestito | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un elemento di lavoro per un difetto del codice gestito | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
@@ -17,14 +12,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967697"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Procedura: Creare un elemento di lavoro per un errore del codice gestito
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Procedura: Creare un elemento di lavoro per un difetto del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare l'elemento di lavoro funzionalità all'elemento di lavoro di log dall'interno di rilevamento [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Per usare questa funzionalità, il progetto deve far parte del progetto Team in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
@@ -44,6 +39,3 @@ ms.locfileid: "49235086"
 2.  Puntare **Crea elemento di lavoro** e fare clic sul tipo di elemento di lavoro da creare.  
   
      Viene creato un singolo elemento di lavoro per tutti gli avvisi selezionati è possibile specificare le informazioni sull'errore.
-
-
-

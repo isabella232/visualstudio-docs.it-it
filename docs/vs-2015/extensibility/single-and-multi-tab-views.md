@@ -1,33 +1,28 @@
 ---
 title: Viste a schede singole e multiple | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955162"
 ---
 # <a name="single-and-multi-tab-views"></a>Visualizzazioni a schede singole e multiple
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un editor è possibile creare diversi tipi di viste. Un esempio è una finestra dell'editor di codice, un vantaggio è un progettista di moduli.  
   
- Una vista a più schede è una vista che è presenti più schede. Ad esempio, l'editor HTML include due schede nella parte inferiore: **Design** e **origine**, ognuna una vista logica. La visualizzazione di progettazione viene visualizzata una pagina web sottoposta a rendering, mentre l'altra consente di visualizzare il codice HTML che include la pagina web.  
+ Una vista a più schede è una vista che è presenti più schede. Ad esempio, l'editor HTML include due schede nella parte inferiore: **Progettazione** e **origine**, ognuna una vista logica. La visualizzazione di progettazione viene visualizzata una pagina web sottoposta a rendering, mentre l'altra consente di visualizzare il codice HTML che include la pagina web.  
   
 ## <a name="accessing-physical-views"></a>Accesso alle visualizzazioni fisiche  
  Le visualizzazioni fisiche ospitano gli oggetti di visualizzazione di documenti, ognuno dei quali rappresenta una visualizzazione dei dati nel buffer, ad esempio di codice o un modulo. Di conseguenza, ogni oggetto visualizzazione del documento ha una visualizzazione fisica (identificato da un elemento noto come una stringa di visualizzazione fisica) e in genere una singola visualizzazione logica.  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>Vedere anche  
  [Supporto di più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md)   
- [Procedura: collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Procedura: Collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md)   
  [Creazione di finestre di progettazione ed editor personalizzati](../extensibility/creating-custom-editors-and-designers.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 'CA1903: Utilizzare solo API dal framework di destinazione | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,17 +15,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191573"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001823"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Utilizzare solo API della versione di .NET Framework di destinazione
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usare solo API della versione di .NET Framework di destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1903: utilizzare solo API dal framework di destinazione](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1903: Utilizzare solo API dal framework di destinazione](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) su docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -50,8 +45,8 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1903: utiliz
 |||  
 |-|-|  
 |Quando è il framework di destinazione|Viene attivato in caso di utilizzo di membri introdotti in|  
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
-|.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
+|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
+|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
 |.NET Framework 3.5|.NET Framework 3.5 SP1|  
 |.NET Framework 4|N/D|  
   
@@ -76,4 +71,3 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1903: utiliz
 ## <a name="see-also"></a>Vedere anche  
  [Avvisi di portabilità](../code-quality/portability-warnings.md)   
  [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
-

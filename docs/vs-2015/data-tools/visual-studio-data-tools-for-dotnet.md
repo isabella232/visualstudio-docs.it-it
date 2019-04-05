@@ -1,29 +1,27 @@
 ---
 title: Visual Studio data tools per .NET | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859707"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001572"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools per .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio e .NET Framework forniscono insieme completo di API e supporto degli strumenti per la connessione ai database, modellazione dei dati in memoria e la visualizzazione dei dati nell'interfaccia utente.  Le classi di .NET Framework che forniscono funzionalità di accesso ai dati sono dette [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, insieme ai dati degli strumenti in Visual Studio, è stato originariamente progettato principalmente per supportare i database relazionali e XML. Oggi, molti fornitori di database NoSQL, o di terze parti, offrono i provider ADO.NET.  
   
- Visual Studio 2015 Update 2 include gli aggiornamenti più recenti di [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), che abilitano il supporto per le funzionalità più recenti di Azure [Database SQL](https://azure.microsoft.com/en-us/services/sql-database/) e [SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) supporta ADO.NET, fatta eccezione per i set di dati e i tipi correlati. Se si è destinati a .NET Core e richiede un livello di mapping relazionale a oggetti (ORM), usare [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 Update 2 include gli aggiornamenti più recenti di [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), che abilitano il supporto per le funzionalità più recenti di Azure [Database SQL](https://azure.microsoft.com/services/sql-database/) e [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) supporta ADO.NET, fatta eccezione per i set di dati e i tipi correlati. Se si è destinati a .NET Core e richiede un livello di mapping relazionale a oggetti (ORM), usare [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Il diagramma seguente mostra una vista semplificata dell'architettura di base:  
   
@@ -41,7 +39,7 @@ Visual Studio e .NET Framework forniscono insieme completo di API e supporto deg
   
 5. Aggiungere codice personalizzato per elementi quali le regole di business, ricerca e la convalida dei dati o per sfruttare i vantaggi della funzionalità personalizzata che espone il database sottostante.  
   
-   È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per eseguire comandi direttamente a un database, anziché utilizzare un modello. In questo caso, si noterà la relativa documentazione: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Si noti che è comunque possibile usare la configurazione guidata origine dati e le finestre di progettazione per generare il codice di associazione dati quando si popola gli oggetti in memoria e controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.  
+   È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per eseguire comandi direttamente a un database, anziché utilizzare un modello. In questo caso, è possibile trovare la relativa documentazione: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Si noti che è comunque possibile usare la configurazione guidata origine dati e le finestre di progettazione per generare il codice di associazione dati quando si popola gli oggetti in memoria e controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
   
@@ -69,10 +67,3 @@ Visual Studio e .NET Framework forniscono insieme completo di API e supporto deg
   
 ## <a name="see-also"></a>Vedere anche  
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

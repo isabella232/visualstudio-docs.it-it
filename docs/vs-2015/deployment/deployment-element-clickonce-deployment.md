@@ -1,14 +1,9 @@
 ---
 title: '&lt;distribuzione&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -26,13 +21,13 @@ ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954522"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;distribuzione&gt; elemento (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,30 +38,30 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
   
 ```  
   
-      <deployment   
+      <deployment   
    install  
    minimumRequiredVersion  
    mapFileExtensions  
    disallowUrlActivation  
    trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
+>   
+   <subscription>   
+         <update>   
+            <beforeApplicationStartup/>   
             <expiration  
                maximumAge  
                unit  
             />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
+         </update>    
+   </subscription>   
+   <deploymentProvider   
+      codebase   
+   />   
 </deployment>  
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- L'elemento `deployment` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v1` . L'elemento ha gli attributi seguenti.  
+ L'elemento `deployment` è obbligatorio e si trova nello spazio dei nomi `urn:schemas-microsoft-com:asm.v1` . L'elemento presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -74,11 +69,11 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
 |`minimumRequiredVersion`|Facoltativo. Specifica la versione minima dell'applicazione che è possibile eseguire sul client. Se il numero di versione dell'applicazione è inferiore al numero di versione specificato nel manifesto di distribuzione, l'applicazione non verrà eseguita. I numeri di versione devono essere specificati nel formato `N.N.N.N`, dove `N` è un intero senza segno. Se il `install` attributo è `false`, `minimumRequiredVersion` non deve essere impostato.|  
 |`mapFileExtensions`|Facoltativo. Il valore predefinito è `false`. Se `true`, tutti i file nella distribuzione devono avere l'estensione. deploy. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rimuoverà questa estensione questi file, non appena li scarica dal server Web. Se si pubblica l'applicazione usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], questa estensione aggiunta automaticamente a tutti i file. Questo parametro consente di tutti i file all'interno di un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione per essere scaricato da un server Web che impedisce la trasmissione dei file che terminano con "unsafe" estensioni, ad esempio .exe.|  
 |`disallowUrlActivation`|Facoltativo. Il valore predefinito è `false`. Se `true`, impedisce a un'applicazione installata in corso l'avvio facendo clic sull'URL o immettendo l'URL in Internet Explorer. Se il `install` attributo non è presente, questo attributo viene ignorato.|  
-|`trustURLParameters`|Facoltativo. Il valore predefinito è `false`. Se `true`, l'URL può contenere parametri di stringa di query che vengono passati all'applicazione, molto come argomenti della riga di comando vengono passati a un'applicazione della riga di comando. Per altre informazioni, vedere [procedura: recuperare le informazioni di stringa di Query in un'applicazione ClickOnce Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se il `disallowUrlActivation` attributo è `true`, `trustUrlParameters` deve essere escluso dal manifesto o impostata esplicitamente su `false`.|  
+|`trustURLParameters`|Facoltativo. Il valore predefinito è `false`. Se `true`, l'URL può contenere parametri di stringa di query che vengono passati all'applicazione, molto come argomenti della riga di comando vengono passati a un'applicazione della riga di comando. Per altre informazioni, vedere [Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se il `disallowUrlActivation` attributo è `true`, `trustUrlParameters` deve essere escluso dal manifesto o impostata esplicitamente su `false`.|  
   
  Il `deployment` elemento contiene anche i seguenti elementi figlio.  
   
-## <a name="subscription"></a>Sottoscrizione  
+## <a name="subscription"></a>sottoscrizione  
  Facoltativo. Contiene il `update` elemento. L'elemento `subscription` non ha attributi. Se il `subscription` elemento non esiste, il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione mai analizzi gli aggiornamenti. Se il `install` attributo del `deployment` elemento viene `false`, il `subscription` elemento viene ignorato, poiché un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione che viene sempre avviato dalla rete utilizza la versione più recente.  
   
 ## <a name="update"></a>aggiorna  
@@ -131,6 +126,3 @@ Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'espo
   
 ## <a name="see-also"></a>Vedere anche  
  [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

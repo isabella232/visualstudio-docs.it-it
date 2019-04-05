@@ -1,27 +1,22 @@
 ---
 title: Registrazione di pacchetti VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30da9208df8c5b9b7c3368ef10fc85e55a994baa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a54f319034bc22f4dfd0f61e2c4f50d6b7bf94d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965398"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,6 +58,5 @@ ms.locfileid: "51782018"
 -   Codice di registrazione automatica è possibile negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se il componente sia specificata come esecuzione dall'origine ed è elencato nella tabella SelfReg. Ciò può causare l'installazione del componente su errori durante un'installazione amministrativa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Programma di installazione di Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Registrazione del pacchetto gestito](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Registrazione del pacchetto gestito](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

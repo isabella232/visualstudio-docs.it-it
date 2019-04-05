@@ -1,23 +1,18 @@
 ---
 title: Esempi di VSSDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
-manager: douge
-ms.openlocfilehash: 9b085befc0d54a639510c3bd8b884389f193e209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 47e99e64e96c0572f7b3c9e93c0ee034afcfd9f1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292110"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000915"
 ---
 # <a name="vssdk-samples"></a>Esempi di VSSDK
 La pagina iniziale ufficiale per gli esempi di estendibilità di Visual Studio è il sito Web [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkID=127810) . Il sito contiene esempi introduttivi, inclusi esempi che illustrano le nuove funzionalità in Visual Studio, una documentazione approfondita, collegamenti a progetti Shared Source e altre risorse che consentono di ampliare le funzionalità di Visual Studio. Per visualizzare un elenco di queste risorse, digitare **VSX** nella casella **Ricerca esempi** nella pagina iniziale.  

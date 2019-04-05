@@ -1,14 +1,9 @@
 ---
 title: Oggetto VSTextBuffer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextBuffer
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 987514f20746b8480391a35d7a9c9a9d3663cac2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 950f9c50ccaf137b21d775ceaf1bff196b1b8ac7
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728777"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59001115"
 ---
 # <a name="vstextbuffer-object"></a>Oggetto VSTextBuffer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ Oggetto del buffer di testo rappresenta un flusso di testo Unicode, ovvero in ge
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Interfaccia OLE standard. Utilizzata principalmente per la gestione del buffer di annullamento/ripristino.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Interfaccia OLE standard.|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Interfaccia OLE standard.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interfaccia OLE standard. Utilizzata principalmente per la gestione del buffer di annullamento/ripristino.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Interfaccia OLE standard.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Interfaccia OLE standard.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Consente la creazione di azioni composti (vale a dire, azioni che vengono raggruppate in un'unità di annullamento/ripristino singolo).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Abilita il salvataggio permanente dei dati del documento gestiti dal buffer di testo.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Fornisce servizi di base; utilizzato da molti clienti.|  
@@ -53,5 +48,4 @@ Oggetto del buffer di testo rappresenta un flusso di testo Unicode, ovvero in ge
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Modifica di figure](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
-
+ [Modifica di figure](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

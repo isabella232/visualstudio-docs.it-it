@@ -1,14 +1,9 @@
 ---
 title: Supporto per Visual Studio SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, support options
 - support, Visual Studio SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ebc4b31d054bc78b9bb9c74dc9da2423ff5acc55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725346"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001763"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +37,8 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
 ### <a name="msdn-forums"></a>Forum MSDN  
  Il [forum MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) forniscono un altro modo per comunicare via chat con colleghi ed esperti. L'interfaccia utente grafica (UI) del forum è progettato per renderli più semplici da usare rispetto ai newsgroup. Il [forum sull'estendibilità di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) è un buon punto di partenza cercare le risposte alle domande di estendibilità. Cercare sempre prima che si pone una domanda perché qualcun altro potrebbe già avere la stessa domanda richiesto.  
   
-### <a name="visual-studio-gallery"></a>Visual Studio Gallery  
- Il [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) è il posto per le estensioni e codice di esempio. È possibile trovare gli strumenti che migliorano la produttività e l'utente esperienza con Visual Studio, le applicazioni di esempio che illustrano come usare i pacchetti VSPackage e Managed Extensibility Framework (MEF) e altri tipi di esempi.  
+### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
+ Il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) è il posto per le estensioni e codice di esempio. È possibile trovare gli strumenti che migliorano la produttività e l'utente esperienza con Visual Studio, le applicazioni di esempio che illustrano come usare i pacchetti VSPackage e Managed Extensibility Framework (MEF) e altri tipi di esempi.  
   
 ### <a name="codeplex"></a>CodePlex  
  [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) è il sito Web che ospita progetti open source Microsoft. È possibile utilizzare CodePlex per creare e condividere i nuovi progetti, contribuire a progetti esistenti, o utilizzare le applicazioni nel sito e fornire commenti e suggerimenti. Tutti i PowerToy (e la relativa documentazione) inclusi con le versioni precedenti del [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sono ora disponibili in CodePlex.  
@@ -59,12 +54,12 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
 ## <a name="paid-support"></a>Supporto a pagamento  
   
 ### <a name="developer-tools-support"></a>Supporto di strumenti per sviluppatori  
- Può anche essere acquistato il supporto. Sono disponibili nella categoria Strumenti di sviluppo in una vasta gamma di offerte di supporto [Microsoft Help and Support Center](http://go.microsoft.com/fwlink/?LinkID=82383).  
+ Può anche essere acquistato il supporto. Sono disponibili nella categoria Strumenti di sviluppo in una vasta gamma di offerte di supporto [Microsoft Help and Support Center](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
   
- I clienti che desiderano utilizzare il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per lo sviluppo di pacchetti complessi possa prendere in considerazione l'acquisto di un contratto di supporto tecnico Premier con Microsoft. Per altre informazioni, vedere [supporto tecnico Premier Microsoft](http://go.microsoft.com/fwlink/?LinkID=76660). Per le aziende di piccole dimensioni, [Partner vantaggio supporto](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) potrebbe costituire una valida alternativa a un tradizionale offerta di supporto tecnico Premier.  
+ I clienti che desiderano utilizzare il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per lo sviluppo di pacchetti complessi possa prendere in considerazione l'acquisto di un contratto di supporto tecnico Premier con Microsoft. Per altre informazioni, vedere [supporto tecnico Premier Microsoft](https://support.microsoft.com/premier). Per le aziende di piccole dimensioni, [supporto avanzato per i partner](https://partner.microsoft.com/support/advanced-cloud-support) potrebbe costituire una valida alternativa a un tradizionale offerta di supporto tecnico Premier.  
   
 > [!NOTE]
->  Supporto standard non può essere utilizzato per la consultazione o per ottenere consigli.  
+> Supporto standard non può essere utilizzato per la consultazione o per ottenere consigli.  
   
  Domande sulle offerte relative al supporto tecnico Premier in combinazione con il programma VSIP possono essere inviate a [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Domande sul nuovo programma vantaggio Partner possono essere inviate a [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
   
@@ -72,4 +67,3 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
   
 ## <a name="see-also"></a>Vedere anche  
  [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)
-

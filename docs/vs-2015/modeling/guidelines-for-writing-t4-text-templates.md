@@ -1,23 +1,20 @@
 ---
 title: Linee guida per la scrittura di modelli di testo T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812750"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59001247"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Potrebbero essere utile se si desidera generare codice programma o altre risorse
   Materiale comune spostarvi i file di inclusione o i modelli in fase di esecuzione  
   Per evitare la ripetizione simile blocchi di testo e il codice in più modelli, usare il `<#@ include #>` direttiva. Per altre informazioni, vedere [direttiva Include T4](../modeling/t4-include-directive.md).  
   
-  È possibile anche creare modelli di testo in fase di esecuzione in un progetto separato e possono essere chiamati dal modello in fase di progettazione. A questo scopo, usare il `<#@ assembly #>` direttiva per accedere al progetto separato. Per esempi, vedere ["ereditarietà nel testo" modelli nel Blog di Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  È possibile anche creare modelli di testo in fase di esecuzione in un progetto separato e possono essere chiamati dal modello in fase di progettazione. A questo scopo, usare il `<#@ assembly #>` direttiva per accedere al progetto separato.
   
   Si consiglia di spostare grandi blocchi di codice in un assembly separato.  
   Se sono presenti blocchi della funzionalità di classe e i blocchi di codice di grandi dimensioni, potrebbe essere utile spostare alcuni questo codice in metodi che si esegue la compilazione in un progetto separato. È possibile usare il `<#@ assembly #>` direttiva per accedere al codice nel modello. Per altre informazioni, vedere [direttiva Assembly T4](../modeling/t4-assembly-directive.md).  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>Vedere anche  
  [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

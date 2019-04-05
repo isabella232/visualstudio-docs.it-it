@@ -1,12 +1,9 @@
 ---
 title: Legge i dati XML in un set di dati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954722"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
 5.  Aggiunta di codice per visualizzare lo schema XML basato sul file XML in un <xref:System.Windows.Forms.TextBox> controllo  
   
 > [!NOTE]
->  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu**Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu**Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto  
  In questo passaggio si crea un progetto Visual Basic o Visual c# che contiene questa procedura dettagliata.  
@@ -172,7 +169,7 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
     |Control|Proprietà|Impostazione|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
-    ||**Barre di scorrimento**|**Verticale**|  
+    ||**ScrollBars**|**Verticale**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
     ||**per**|`Read XML`|  
     |`Button2`|**Name**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Verificare il modulo  
- È ora possibile testare il form per assicurarsi che tutto funzioni come previsto.  
-  
-#### <a name="to-test-the-form"></a>Per testare il form  
+
+È ora possibile testare il form per assicurarsi che tutto funzioni come previsto.
   
 1.  Selezionare **F5** per eseguire l'applicazione.  
   
@@ -243,15 +239,15 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
      La casella di testo consente di visualizzare lo schema XML per il file XML.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- Questa procedura dettagliata illustra le nozioni di base di lettura di un file XML in un set di dati, nonché la creazione di uno schema basato sul contenuto del file XML. Ecco alcune attività che è possibile eseguire successivamente:  
+
+Questa procedura dettagliata illustra le nozioni di base di lettura di un file XML in un set di dati, nonché la creazione di uno schema basato sul contenuto del file XML. Ecco alcune attività che è possibile eseguire successivamente:  
   
 -   Modificare i dati nel set di dati e riscriverli come XML. Per altre informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Modificare i dati nel set di dati e scriverlo in un database. Per altre informazioni, vedere [salvataggio di dati](../data-tools/saving-data.md).  
+-   Modificare i dati nel set di dati e scriverlo in un database.
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedure dettagliate di data](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Procedure dettagliate relative ai dati](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Preparare l'applicazione per ricevere dati](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Preparazione dell'applicazione al ricevimento di dati](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

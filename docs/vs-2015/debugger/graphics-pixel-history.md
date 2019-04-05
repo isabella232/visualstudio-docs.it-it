@@ -1,27 +1,22 @@
 ---
 title: Cronologia Pixel grafica | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20b33c987cf7e2b1ab57160b4f4917246d9030b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1df80c41c71b02b8dfc8d99553e2d5b22afdd8a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733155"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000900"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
 ## <a name="understanding-the-pixel-history-window"></a>Informazioni sulla finestra Cronologia pixel  
  Con la Cronologia pixel è possibile analizzare come un pixel specifico della destinazione di rendering sia interessato dagli eventi Direct3D durante un frame. È possibile associare con precisione un problema di rendering a un evento specifico di Direct3D, anche quando gli eventi successivi, o le primitive successive nello stesso evento, continuano a modificare il valore del colore finale del pixel. Ad esempio, è possibile eseguire il rendering errato di un pixel che viene quindi nascosto da un altro pixel semitrasparente in modo che i loro colori vengano fusi insieme nel framebuffer. Questo tipo di problema sarebbe difficile da diagnosticare se si disponesse solo del contenuto finale della destinazione di rendering come indicazione.  
   
- Nella finestra Cronologia pixel viene visualizzata la cronologia completa di un pixel nel corso del frame selezionato. Il **Buffer Frame finale** nella parte superiore della finestra viene visualizzato il colore che viene scritto nel framebuffer alla fine del frame, insieme a informazioni aggiuntive sul pixel quali il frame che proviene da una e la schermata coordinate. Quest'area contiene anche il **rendering alfa** casella di controllo. Quando questa casella di controllo è selezionata, il **Buffer Frame finale** valori colore intermedio e colore vengono visualizzati con trasparenza su un modello a scacchiera. Se la casella di controllo è deselezionata, il canale alfa dei valori di colore viene ignorato.  
+ Nella finestra Cronologia pixel viene visualizzata la cronologia completa di un pixel nel corso del frame selezionato. Nella casella **Buffer frame finale** posta nella parte superiore della finestra viene visualizzato il colore scritto nel framebuffer alla fine del frame, insieme a informazioni aggiuntive sul pixel quali il frame di origine e le coordinate della schermata. Quest'area include inoltre la casella di controllo **Rendering alfa**. Quando questa casella di controllo è selezionata, i valori dei colori intermedi e del colore di **Buffer frame finale** vengono visualizzati con trasparenza su un motivo a scacchi. Se la casella di controllo è deselezionata, il canale alfa dei valori di colore viene ignorato.  
   
- La parte inferiore della finestra Visualizza gli eventi che avevano possibilità di modificare il colore del pixel, insieme con il **iniziale** e **finale** pseudo-eventi che rappresentano i valori di colore iniziale e finale di il pixel nel framebuffer. Il valore del colore iniziale è determinato dal primo evento che ha modificato il colore del pixel (in genere un evento `Clear`). Un pixel ha sempre questi due pseudo-eventi nella cronologia, anche quando non è stato interessato da altri eventi. Quando altri eventi possono influire sul pixel, vengono visualizzati tra il **iniziale** e **finale** gli eventi. È possibile espandere gli eventi per visualizzarne i dettagli. Per gli eventi semplici come quelli che eliminano una destinazione di rendering, l'effetto dell'evento è semplicemente un valore di colore. Gli eventi più complessi come le chiamate di disegno generano una o più primitive che possono contribuire al colore del pixel.  
+ Nella parte inferiore della finestra verranno visualizzati gli eventi che avevano la possibilità di modificare il colore del pixel, insieme agli pseudo eventi **Iniziale** e **Finale** che rappresentano i valori di colore iniziale e finale del pixel nel framebuffer. Il valore del colore iniziale è determinato dal primo evento che ha modificato il colore del pixel (in genere un evento `Clear`). Un pixel ha sempre questi due pseudo-eventi nella cronologia, anche quando non è stato interessato da altri eventi. Quando altri eventi possono influire sul pixel, vengono visualizzati tra gli eventi **Iniziale** e **Finale**. È possibile espandere gli eventi per visualizzarne i dettagli. Per gli eventi semplici come quelli che eliminano una destinazione di rendering, l'effetto dell'evento è semplicemente un valore di colore. Gli eventi più complessi come le chiamate di disegno generano una o più primitive che possono contribuire al colore del pixel.  
   
- Le primitive che sono state create dall'evento vengono identificate dal tipo primitivo e dall'indice, con il numero totale di primitive per l'oggetto. Ad esempio, un identificatore, ad esempio **triangolo (1456) di (6214)** significa che la primitiva corrisponde al 1456 ° triangolo in un oggetto che è costituito da 6214 triangoli. A sinistra di ciascun identificatore di primitiva è presente un'icona che riepiloga l'effetto della primitiva sul pixel. Le primitive che influiscono sul colore del pixel vengono rappresentate da un rettangolo arrotondato che viene riempito con il colore risultante. Le primitive escluse dall'influenzare il colore del pixel vengono rappresentate da icone che indicano il motivo per cui il pixel è stato escluso. Queste icone vengono descritte nella sezione [esclusione primitiva](../debugger/graphics-pixel-history.md#exclusion) più avanti in questo articolo.  
+ Le primitive che sono state create dall'evento vengono identificate dal tipo primitivo e dall'indice, con il numero totale di primitive per l'oggetto. Ad esempio, un identificativo come **Triangolo (1456) di (6214)** significa che la primitiva corrisponde al 1456° triangolo in un oggetto composto da 6214 triangoli. A sinistra di ciascun identificatore di primitiva è presente un'icona che riepiloga l'effetto della primitiva sul pixel. Le primitive che influiscono sul colore del pixel vengono rappresentate da un rettangolo arrotondato che viene riempito con il colore risultante. Le primitive escluse dall'influenzare il colore del pixel vengono rappresentate da icone che indicano il motivo per cui il pixel è stato escluso. Queste icone vengono descritte nella sezione [Esclusione primitiva](../debugger/graphics-pixel-history.md#exclusion) più avanti in questo articolo.  
   
  È possibile espandere ogni primitiva per esaminare in che modo l'output del pixel shader è stato unito al colore del pixel esistente per produrre il colore risultante. A questo punto è possibile esaminare o eseguire il debug del codice del pixel shader associato alla primitiva ed è inoltre possibile espandere il nodo di vertex shader per esaminare l'input del vertex shader.  
   
@@ -60,31 +55,28 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
 ##### <a name="to-view-a-shaders-source-code"></a>Per visualizzare il codice sorgente di uno shader  
   
-1.  Nel **cronologia Pixel grafica** finestra, individuare la chiamata di disegno che corrisponde allo shader si desidera esaminare ed espanderla.  
+1.  Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.  
   
 2.  Sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.  
   
-3.  Sotto la primitiva si è interessati, seguire il collegamento del titolo dello shader, ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
+3.  Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
   
     > [!TIP]
-    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio la finestra fasi oggetto tabelle e pipeline.  
+    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.  
   
 ##### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader  
   
-1.  Nel **cronologia Pixel grafica** finestra, individuare la chiamata di disegno che corrisponde allo shader si desidera esaminare ed espanderla.  
+1.  Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.  
   
 2.  Quindi, sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.  
   
-3.  Sotto la primitiva si è interessati, scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la primitiva corrispondente, ovvero il primo pixel o vertice elaborato dallo shader. Esiste un solo pixel associato alla primitiva, ma esistono più chiamate del vertex shader per linee e triangoli.  
+3.  Sotto la primitiva scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la primitiva corrispondente, ovvero il primo pixel o vertice elaborato dallo shader. Esiste un solo pixel associato alla primitiva, ma esistono più chiamate del vertex shader per linee e triangoli.  
   
-     Per eseguire il debug la chiamata del vertex shader per un vertice specifico, espandere il titolo vertexshader e individuare il vertice a cui si è interessati, quindi scegliere **Avvia debug** accanto a esso.  
+     Per eseguire il debug della chiamata del vertex shader per un vertice specifico, espandere il collegamento del titolo VertexShader e individuare il vertice a cui si è interessati, quindi scegliere **Avvia debug** accanto al vertice.  
   
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici  
- Per comprendere gli eventi grafici nella cronologia del pixel, potrebbero essere necessarie informazioni sullo stato del dispositivo al momento dell'evento o sugli oggetti Direct3D a cui fa riferimento l'evento. Per ogni evento nella cronologia del pixel, la **cronologia Pixel grafica** vengono forniti i collegamenti per il dispositivo attualmente dello stato e agli oggetti correlati.  
+ Per comprendere gli eventi grafici nella cronologia del pixel, potrebbero essere necessarie informazioni sullo stato del dispositivo al momento dell'evento o sugli oggetti Direct3D a cui fa riferimento l'evento. Per ogni evento nella cronologia del pixel, la **Cronologia pixel grafica** fornisce collegamenti allo stato del dispositivo in essere e agli oggetti correlati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
-
-
-
+ [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

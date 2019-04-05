@@ -1,14 +1,9 @@
 ---
 title: Implementazione della colorazione della sintassi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964619"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione della colorazione della sintassi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Quando il servizio di linguaggio fornisce la colorazione della sintassi, il pars
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] non specifica un'interfaccia, parser e implementazione di parser è responsabilità dell'utente. Tuttavia, un'implementazione di parser predefinita viene fornita nel progetto di Visual Studio Language Pack. Per codice gestito, il framework di pacchetto gestito (MPF) fornisce supporto completo per la colorazione del testo.  
   
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare la colorazione della sintassi, vedere [procedura dettagliata: evidenziazione testo](../../extensibility/walkthrough-highlighting-text.md).  
+ Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare la colorazione della sintassi, vedere [procedura dettagliata: Evidenziazione del testo](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
 >  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
@@ -70,8 +65,7 @@ Quando il servizio di linguaggio fornisce la colorazione della sintassi, il pars
  Il framework di pacchetto gestito (MPF) fornisce tutte le classi necessarie per implementare un colorizzatore. Classe del servizio di linguaggio deve ereditare il <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i metodi richiesti. È necessario fornire un scanner e parser implementando la <xref:Microsoft.VisualStudio.Package.IScanner> interfaccia e restituire un'istanza di tale interfaccia dal <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metodo (uno dei metodi che devono essere implementati nel <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Per altre informazioni, vedere [colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: usare elementi colorabili incorporati](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Procedura: Usare elementi colorabili incorporati](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [Elementi colorabili personalizzati](../../extensibility/internals/custom-colorable-items.md)   
  [Sviluppo di un servizio di linguaggio Legacy](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

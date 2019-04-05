@@ -1,14 +1,9 @@
 ---
 title: Estendere i diagrammi livello | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, creating extensions
 - layer models
@@ -16,13 +11,13 @@ ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766921"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001223"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "51766921"
   
  Per altre informazioni sui diagrammi livello, vedere:  
   
--   [Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)  
+-   [Diagrammi dei livelli: riferimenti](../modeling/layer-diagrams-reference.md)  
   
--   [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagrammi dei livelli: linee guida](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)  
   
@@ -67,12 +62,9 @@ ms.locfileid: "51766921"
   
 ## <a name="see-also"></a>Vedere anche  
  [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md)   
- [Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)   
- [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)   
+ [Diagrammi dei livelli: Riferimento](../modeling/layer-diagrams-reference.md)   
+ [Diagrammi dei livelli: Linee guida](../modeling/layer-diagrams-guidelines.md)   
  [Creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)   
  [Convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md)   
  [Generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md)   
  [Aprire un modello UML tramite l'API di Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
-
-
-

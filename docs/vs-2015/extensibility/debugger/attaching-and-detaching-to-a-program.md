@@ -1,27 +1,22 @@
 ---
 title: Collegamento e scollegamento da un programma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 - debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b6bba6600d3ea32073a908199f5cd6ddaa33ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98b1f0f97aa33c56df7a512389daf1801157e693
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762802"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955955"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Collegamento e scollegamento da un programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ Per collegare il debugger richiede l'invio di sequenza corretta di metodi ed eve
   
 ## <a name="see-also"></a>Vedere anche  
  [Chiamata degli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
-

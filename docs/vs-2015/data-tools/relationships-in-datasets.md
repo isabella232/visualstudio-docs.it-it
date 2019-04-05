@@ -1,12 +1,9 @@
 ---
 title: Relazioni nei DataSet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954760"
 ---
 # <a name="relationships-in-datasets"></a>Relazioni nei DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
 |Regola del vincolo di chiave esterna|Operazione|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|È anche apportare la modifica (aggiornamento o eliminazione) apportata al record padre nei record correlati nella tabella figlio.|  
-|<xref:System.Data.Rule>|I record figlio non vengono eliminati, ma la chiave esterna nel record figlio è impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", vale a dire, non dispongono di alcuna relazione con i record padre. **Nota:** utilizzando questa regola può comportare dati non validi nella tabella figlio.|  
+|<xref:System.Data.Rule>|I record figlio non vengono eliminati, ma la chiave esterna nel record figlio è impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", vale a dire, non dispongono di alcuna relazione con i record padre. **Nota:**  Con questa regola può comportare dati non validi nella tabella figlio.|  
 |<xref:System.Data.Rule>|La chiave esterna nei record figlio correlati è impostata sul valore predefinito (come stabilito in base alla colonna <xref:System.Data.DataColumn.DefaultValue%2A> proprietà).|  
 |<xref:System.Data.Rule>|Viene apportata alcuna modifica ai record figlio correlati. Con questa impostazione, i record figlio possono contenere riferimenti ai record padre non valido.|  
   
@@ -88,7 +85,7 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Per creare una relazione tra due tabelle dati  
   
-1.  Aprire il set di dati nel **Progettazione Dataset**. Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.  
   
@@ -112,7 +109,6 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Per visualizzare un nome della relazione nella finestra di progettazione set di dati  
   
-1.  Aprire il set di dati nel **Progettazione Dataset**. Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.
-

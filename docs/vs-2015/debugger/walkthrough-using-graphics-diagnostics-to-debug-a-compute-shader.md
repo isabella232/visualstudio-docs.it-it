@@ -1,27 +1,22 @@
 ---
-title: 'Procedura dettagliata: Uso di diagnostica della grafica per eseguire il Debug di un Compute Shader | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Usare diagnostica della grafica per eseguire il Debug di un Compute Shader | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 55f0b9de879011110d8df46c0e4d738265b0fa34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730651"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59001122"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procedura dettagliata: utilizzo della diagnostica della grafica per eseguire il debug di un compute shader
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come usare gli strumenti di diagnostica della grafica di Visual Studio per esaminare un compute shader che genera risultati errati.  
@@ -30,12 +25,12 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
 -   Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
   
--   Usando il **Stack di chiamate eventi di grafica** per determinare quale compute shader viene eseguito da un DirectCompute `Dispatch` evento.  
+-   Uso dello **Stack di chiamate eventi di grafica** per determinare quale compute shader viene eseguito da un evento DirectCompute `Dispatch`.  
   
--   Usando il **fasi Pipeline grafica** finestra e del debugger HLSL per esaminare il compute shader che rappresenta l'origine del problema.  
+-   Uso della finestra **Fasi pipeline grafica** e del debugger HLSL per esaminare il compute shader che è l'origine del problema.  
   
 ## <a name="scenario"></a>Scenario  
- In questo scenario è stata scritta una simulazione di dinamica del fluidi in cui viene usato DirectCompute per eseguire le parti con calcoli complessi dell'aggiornamento della simulazione. Quando l'applicazione viene eseguita, il rendering del dataset e l'interfaccia utente sono corretti, ma la simulazione non si comporta come previsto. Usando Diagnostica grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'applicazione. Nell'app, il problema si presenta nel modo seguente:  
+ In questo scenario è stata scritta una simulazione di dinamica del fluidi in cui viene usato DirectCompute per eseguire le parti con calcoli complessi dell'aggiornamento della simulazione. Quando l'applicazione viene eseguita, il rendering del dataset e l'interfaccia utente sono corretti, ma la simulazione non si comporta come previsto. Usando Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'applicazione. Nell'app, il problema si presenta nel modo seguente:  
   
  ![Fluido simulato si comporta in modo non corretto. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
@@ -46,19 +41,19 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica  
   
-1. In Visual Studio caricare un log di grafica contenente un frame che mostra i risultati di simulazione errati. Verrà visualizzata una nuova scheda Diagnostica grafica in Visual Studio.  Nella parte superiore di questa scheda è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è parte di **elenco Frame**, che consente di visualizzare un'anteprima di ogni frame acquisito.  
+1. In Visual Studio caricare un log di grafica contenente un frame che mostra i risultati di simulazione errati. Verrà visualizzata una nuova scheda Diagnostica della grafica in Visual Studio. Nella parte superiore di questa scheda è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza un'immagine di anteprima di ogni frame acquisito.  
   
-2. Nel **elenco Frame**, selezionare un frame che dimostra il comportamento di simulazione errati. Anche se sembra che l'errore si trovi nel codice di simulazione e non nel codice di rendering, è comunque necessario scegliere un frame poiché gli eventi DirectCompute vengono acquisiti un frame alla volta, insieme agli eventi Direct3D. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:  
+2. In **Elenco frame** selezionare un frame che indica il comportamento errato di simulazione. Anche se sembra che l'errore si trovi nel codice di simulazione e non nel codice di rendering, è comunque necessario scegliere un frame poiché gli eventi DirectCompute vengono acquisiti un frame alla volta, insieme agli eventi Direct3D. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:  
   
     ![Log grafico in Visual Studio. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
-   Dopo aver selezionato un frame che dimostra il problema, è possibile usare l' **Elenco eventi di grafica** per diagnosticarlo. Il **elenco eventi grafici** contiene un evento per ogni chiamata DirectCompute e chiamata API Direct3D effettuata durante il frame attivo, ad esempio chiamate API per eseguire un calcolo sulla GPU o per eseguire il rendering del dataset o dell'interfaccia utente. In questo caso, vengono presi in considerazione gli eventi `Dispatch` che rappresentano parti della simulazione eseguita nella GPU.   
+   Dopo aver selezionato un frame che dimostra il problema, è possibile usare l' **Elenco eventi di grafica** per diagnosticarlo. L'**Elenco eventi di grafica** contiene un evento per ogni chiamata DirectCompute e API Direct3D effettuata durante il frame attivo, ad esempio le chiamate API per eseguire un calcolo sulla GPU o per eseguire il rendering del dataset o dell'interfaccia utente. In questo caso, vengono presi in considerazione gli eventi `Dispatch` che rappresentano parti della simulazione eseguita nella GPU.   
   
 #### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Per trovare l'evento di invio per l'aggiornamento della simulazione  
   
-1. Nel **diagnostica della grafica** sulla barra degli strumenti, scegliere **elenco eventi** per aprire il **elenco eventi grafici** finestra.  
+1. Nella barra degli strumenti **Diagnostica della grafica** scegliere **Elenco eventi** per aprire la finestra **Elenco eventi di grafica**.  
   
-2. Esaminare i **elenco eventi grafici** per l'evento di disegno che esegue il rendering del set di dati. Per semplificare questa operazione, immettere `Draw` nella **ricerca** casella nell'angolo superiore destro del **elenco eventi grafici** finestra. questo modo l'elenco viene filtrato in modo da contenere solo gli eventi nei cui titoli compare "Draw". In questo scenario viene rilevato che si sono verificati questi eventi di disegno:  
+2. Controllare l'**Elenco eventi di grafica** per cercare l'evento di disegno tramite cui viene eseguito il rendering del dataset. Per semplificare questa operazione, immettere `Draw` nella **ricerca** casella nell'angolo superiore destro del **elenco eventi grafici** finestra. questo modo l'elenco viene filtrato in modo da contenere solo gli eventi nei cui titoli compare "Draw". In questo scenario viene rilevato che si sono verificati questi eventi di disegno:  
   
     ![L'elenco di eventi &#40;EL&#41; gli eventi di disegno. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
@@ -68,7 +63,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
     ![In questo disegno evento esegue il rendering il set di dati di simulazione. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5. A questo punto esaminare i **elenco eventi di grafica** per il `Dispatch` eventi che aggiorna la simulazione. Poiché è probabile che la simulazione venga aggiornata prima che venga eseguito il rendering, è possibile concentrarsi prima sugli eventi `Dispatch` che si verificano prima dell'evento di disegno che esegue il rendering dei risultati. Per semplificare questa operazione, modificare il **ricerca** finestra di leggere `Draw;Dispatch;CSSetShader(`. Questo consente di filtrare l'elenco in modo che contenga anche `Dispatch` e gli eventi `CSSetShader` oltre agli eventi di disegno. In questo scenario viene rilevato che prima dell'evento di disegno si sono verificati diversi eventi `Dispatch`:  
+5. A questo punto, controllare l'**Elenco eventi di grafica** per cercare l'evento `Dispatch` che aggiorna la simulazione. Poiché è probabile che la simulazione venga aggiornata prima che venga eseguito il rendering, è possibile concentrarsi prima sugli eventi `Dispatch` che si verificano prima dell'evento di disegno che esegue il rendering dei risultati. Per semplificare questa operazione, modificare il **ricerca** finestra di leggere `Draw;Dispatch;CSSetShader(`. Questo consente di filtrare l'elenco in modo che contenga anche `Dispatch` e gli eventi `CSSetShader` oltre agli eventi di disegno. In questo scenario viene rilevato che prima dell'evento di disegno si sono verificati diversi eventi `Dispatch`:  
   
     ![Il disegno, gli eventi di invio e CSSetShader](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
@@ -76,17 +71,17 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
 #### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>Per determinare quale compute shader esegue una chiamata di invio  
   
-1. Nel **diagnostica della grafica** sulla barra degli strumenti, scegliere **Stack di chiamate eventi** per aprire il **Stack di chiamate eventi di grafica** finestra.  
+1. Nella barra degli strumenti **Diagnostica della grafica** scegliere **Stack di chiamate eventi** per aprire la finestra **Stack di chiamate eventi di grafica**.  
   
-2. A partire dall'evento di disegno tramite cui viene eseguito il rendering dei risultati della simulazione, tornare a ogni evento `CSSetShader` precedente. Quindi, nella **Stack di chiamate eventi di grafica** finestra, scegliere la funzione di livello superiore per passare al sito di chiamata. Nel sito di chiamata, è possibile usare il primo parametro del [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) per determinare quale compute shader viene eseguito per la successiva chiamata di funzione `Dispatch` evento.  
+2. A partire dall'evento di disegno tramite cui viene eseguito il rendering dei risultati della simulazione, tornare a ogni evento `CSSetShader` precedente. Quindi, nella finestra **Stack di chiamate eventi di grafica** scegliere la funzione in primo piano per passare al sito di chiamata. Nel sito di chiamata, è possibile usare il primo parametro del [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) per determinare quale compute shader viene eseguito per la successiva chiamata di funzione `Dispatch` evento.  
   
    In questo scenario sono presenti tre coppie di eventi `CSSetShader` e `Dispatch` in ogni frame. Procedendo in ordine inverso, la terza coppia rappresenta il passaggio di integrazione (dove le particelle fluide vengono effettivamente spostate), la seconda coppia rappresenta il passaggio di forza-calcolo (dove le forze che influiscono su ogni particella vengono calcolate) e la prima coppia rappresenta il passaggio di calcolo della densità.  
   
 #### <a name="to-debug-the-compute-shader"></a>Per eseguire il debug del compute shader  
   
-1. Nel **diagnostica della grafica** sulla barra degli strumenti, scegliere **fasi Pipeline** per aprire il **fasi Pipeline grafica** finestra.  
+1. Nella barra degli strumenti **Diagnostica della grafica** scegliere **Fasi pipeline** per aprire la finestra **Fasi pipeline grafica**.  
   
-2. Selezionare la terza `Dispatch` evento (quello che precede immediatamente l'evento di disegno) e quindi nel **fasi Pipeline grafica** finestra, sotto il **Compute Shader** fase, scegliere  **Avviare il debug**.  
+2. Selezionare il terzo evento `Dispatch` (quello che precede immediatamente l'evento di disegno), quindi nella fase **Compute shader** della finestra **Fasi pipeline grafica** scegliere **Avvia debug**.  
   
     ![Selezione il terzo evento di invio di El](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
@@ -96,7 +91,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
     ![Debug del compute shader IntegrateCS. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Per arrestare il debug del compute shader, nella **Debug** sulla barra degli strumenti, scegliere **arresta debug** (tastiera: MAIUSC+F5).  
+4. Per arrestare il debug del compute shader, nella **Debug** sulla barra degli strumenti, scegliere **arresta debug** (tastiera: MAIUSC + F5).  
   
 5. Selezionare quindi il secondo evento `Dispatch` e avviare il debug del compute shader come nel passaggio precedente.   
   
@@ -115,6 +110,3 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
    In questo scenario poiché i compute shader vengono compilati in fase di esecuzione, l'app può essere riavviata solo dopo aver apportato le modifiche per osservare come influiscono sulla simulazione. Non è necessario ricompilare l'app. Quando si esegue l'app, si scopre che ora la simulazione funziona correttamente.  
   
    ![Fluido simulato si comporta correttamente. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
-
-
-

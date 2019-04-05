@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: specificare un percorso alternativo per la distribuzione aggiornamenti | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare un percorso alternativo per la distribuzione aggiornamenti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,31 +15,31 @@ ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c992feab2b31ffebf07dcea36bc5bd5cfddc6eab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955544"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: specificare un percorso alternativo per gli aggiornamenti della distribuzione
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile installare il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione inizialmente da un CD o una condivisione file, ma l'applicazione deve controllare gli aggiornamenti periodici sul Web. È possibile specificare un percorso alternativo per gli aggiornamenti nel manifesto della distribuzione in modo che sia possibile l'aggiornamento automatico dell'applicazione dal Web dopo l'installazione iniziale.  
   
 > [!NOTE]
->  L'applicazione deve essere configurata per l'installazione in locale per usare questa funzionalità. Per altre informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Inoltre, se si installa un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione dalla rete, l'impostazione di un percorso alternativo causa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] per utilizzare tale percorso per l'installazione iniziale e tutti gli aggiornamenti successivi. Se si installa l'applicazione in locale (ad esempio, da un CD), viene eseguita l'installazione iniziale usando il supporto originale e tutti gli aggiornamenti successivi verranno usato il percorso alternativo.  
+>  L'applicazione deve essere configurata per l'installazione in locale per usare questa funzionalità. Per altre informazioni, vedere [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Inoltre, se si installa un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione dalla rete, l'impostazione di un percorso alternativo causa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] per utilizzare tale percorso per l'installazione iniziale e tutti gli aggiornamenti successivi. Se si installa l'applicazione in locale (ad esempio, da un CD), viene eseguita l'installazione iniziale usando il supporto originale e tutti gli aggiornamenti successivi verranno usato il percorso alternativo.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Specifica un percorso alternativo per gli aggiornamenti con MageUI.exe (utilità basata su Windows Form)  
   
 1.  Aprire un prompt dei comandi di .NET Framework e digitare:  
   
-     **MageUI.exe**  
+     **mageui.exe**  
   
 2.  Nel **File** menu, scegliere **aprire** per aprire il manifesto di distribuzione dell'applicazione.  
   
-3.  Selezionare il **opzioni di distribuzione** scheda.  
+3.  Selezionare la scheda **Opzioni di distribuzione**.  
   
 4.  Nella casella di testo denominato **posizione avviare**, immettere l'URL della directory che conterrà il manifesto di distribuzione degli aggiornamenti dell'applicazione.  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49228800"
 3.  Salvare il file.  
   
     > [!NOTE]
-    >  È ora necessario firmarlo nuovamente con Mage.exe. Per altre informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+    >  È ora necessario firmarlo nuovamente con Mage.exe. Per altre informazioni, vedere [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
  Se si installa l'applicazione da un supporto offline, ad esempio un CD, e il computer è online, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] controlla prima di tutto l'URL specificato per il `<deploymentProvider>` tag nel manifesto di distribuzione per determinare se il percorso di aggiornamento contiene una versione più recente del applicazione. In caso affermativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installa l'applicazione direttamente da qui, anziché dalla directory di installazione iniziale, e common language runtime (CLR) determina l'attendibilità dell'applicazione usando il livello `<deploymentProvider>`. Se il computer è offline, o `<deploymentProvider>` non è raggiungibile, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installazioni da CD e CLR concede l'attendibilità in base al punto di installazione; per un'installazione da CD, ciò significa che l'applicazione riceve l'attendibilità totale. Tutti gli aggiornamenti successivi erediterà tale livello di attendibilità.  
@@ -73,6 +68,3 @@ ms.locfileid: "49228800"
  [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-
-
-

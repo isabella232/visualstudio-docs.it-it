@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: eseguire il processo di lavoro con un Account utente | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il processo di lavoro con un Account utente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734448"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963827"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: Eseguire il processo di lavoro con un account utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.  
@@ -43,7 +38,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
   
 1.  Aprire il file machine.config, che si trova sul computer nella cartella CONFIG, nel percorso in cui è stato installato l'ambiente runtime.  
   
-2.  Trovare il &lt;processModel&gt; sezione e modificare gli attributi utente e password per il nome e la password dell'account utente si vuole aspnet_wp.exe venga eseguito con.  
+2.  Trovare la sezione &lt;processModel&gt; e modificare gli attributi utente e password specificando il nome e la password dell'account utente con cui si vuole eseguire aspnet_wp.exe.  
   
 3.  Salvare il file machine.config.  
   
@@ -81,7 +76,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
   
     Verrà visualizzata la finestra di dialogo per **la selezione di utenti, computer o gruppi**  .  
   
-10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato NomeDominio\NomeUtente.  
+10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato: Nomedominio\nomeutente.  
   
 11. Nella finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** , assegnare all'utente **Controllo completo**, quindi scegliere **OK** per chiudere la finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** .  
   
@@ -90,9 +85,4 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 13. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà file ASP.NET temporanei** .  
   
 ## <a name="see-also"></a>Vedere anche  
-[Requisiti di sistema per il debug di ASP.NET](../debugger/aspnet-debugging-system-requirements.md)  
-  
-
-
-
-
+[Debug ASP.NET: Requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)  

@@ -1,25 +1,20 @@
 ---
-title: 'Procedura: registrare un servizio | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Registrare un servizio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206258"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001649"
 ---
 # <a name="how-to-register-a-service"></a>Procedura: Registrare un servizio
 Il framework di pacchetto gestito (MPF) fornisce gli attributi per controllare la registrazione dei servizi gestiti. L'utilità RegPkg usa questi attributi per registrare un servizio con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -46,5 +41,5 @@ Il framework di pacchetto gestito (MPF) fornisce gli attributi per controllare l
 >  Nonostante sia possibile usare lo stesso tipo o GUID per il servizio e l'interfaccia, è consigliabile separarli perché un servizio può esporre interfacce diverse.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Registrazione di pacchetti VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrazione di pacchetti VSPackage](../extensibility/internals/registering-vspackages.md)   
  [Nozioni fondamentali sui servizi](../extensibility/internals/service-essentials.md)

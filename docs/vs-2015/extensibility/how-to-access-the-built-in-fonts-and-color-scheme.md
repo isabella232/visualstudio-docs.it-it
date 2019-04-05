@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: accedere ai tipi di carattere incorporati e combinazione di colori | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954500"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: accedere ai tipi di carattere incorporati e combinazione di colori
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.  
@@ -56,13 +51,13 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di t
   
 1.  Costruire un tipo speciale di voce del Registro di sistema categoria nel percorso seguente:  
   
-     [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\*\<categoria >*]  
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
   
      *\<Categoria >* è il nome non localizzato della categoria.  
   
 2.  Popolare il Registro di sistema per usare i tipi di carattere azionari e combinazione di colori con quattro valori:  
   
-    |nome|Tipo|Dati|Descrizione|  
+    |Nome|Tipo|Dati|Descrizione|  
     |----------|----------|----------|-----------------|  
     |Category|REG_SZ|GUID|Un GUID arbitrario che identifica una categoria che contiene lo schema di carattere e colori predefinito.|  
     |Pacchetto|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Il GUID viene utilizzato da tutti i pacchetti VSPackage che utilizzano le configurazioni predefinite di carattere e colori.|  
@@ -107,4 +102,3 @@ if (spPropCatContainer != NULL){
  [Recuperare le informazioni di colore per la colorazione del testo e del tipo di carattere](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [L'accesso a tipo di carattere archiviata e le impostazioni dei colori](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Panoramica di tipi di carattere e colori](../extensibility/font-and-color-overview.md)
-

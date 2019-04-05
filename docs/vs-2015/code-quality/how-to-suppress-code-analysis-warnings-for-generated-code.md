@@ -1,27 +1,22 @@
 ---
-title: "Procedura: eliminare gli avvisi dell'analisi codice per il codice generato | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Non visualizzare gli avvisi dell'analisi codice per il codice generato | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 07858183af427e2b67e1e0f63d1f8889caf72fbe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955335"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: non visualizzare gli avvisi relativi all'analisi del codice generato
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: Non visualizzare gli avvisi relativi all'analisi del codice generato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I compilatori di codice gestito è spesso generano codice che viene aggiunto a un progetto per facilitare lo sviluppo rapido di codice. Inoltre, gli sviluppatori usano spesso gli strumenti di terze parti per consentono di sviluppare rapidamente applicazioni. Questi strumenti generano anche codice che viene aggiunto al progetto.  
@@ -40,6 +35,3 @@ I compilatori di codice gestito è spesso generano codice che viene aggiunto a u
 2.  Fare clic su **analisi del codice**.  
   
 3.  Selezionare il **non visualizzare i risultati dal codice generato** casella di controllo.
-
-
-

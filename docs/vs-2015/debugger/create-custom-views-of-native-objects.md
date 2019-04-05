@@ -1,14 +1,9 @@
 ---
 title: Creare viste personalizzate di oggetti nativi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954955"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Creare viste personalizzate di oggetti nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +348,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 -   Se si specifica un nodo `Expand` senza i nodi figlio sottostanti, il tipo non sarà espandibile nelle finestre del debugger.  
 
 ####  <a name="BKMK_Item_expansion"></a> Espansione di Item  
- L'elemento `Item` è l'elemento più semplice e comune da usare in un nodo `Expand` . `Item` definisce un singolo elemento figlio. Ad esempio, si supponga di disporre di una classe `CRect` i cui campi sono `top`, `left`, `right` e `bottom` e che contiene la seguente voce di visualizzazione:  
+ L'elemento `Item` è l'elemento più semplice e comune da usare in un nodo `Expand` . `Item` definisce un singolo elemento figlio. Ad esempio, si supponga di disporre di una classe `CRect` i cui campi sono `top`, `left`, `right`e `bottom` e che contiene la seguente voce di visualizzazione:  
 
 ```xml  
 <Type Name="CRect">  
@@ -432,7 +427,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  ![Matrice bidimensionale con espansione ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 ####  <a name="BKMK_IndexListItems_expansion"></a> Espansione di IndexListItems  
- È possibile usare l'espansione `ArrayItems` solo se gli elementi della matrice vengono disposti in modo contiguo nella memoria. Il debugger ottiene l'elemento successivo semplicemente incrementando il relativo puntatore all'elemento corrente. Per supportare i casi in cui è necessario modificare l'indice nel nodo value, si possono usare i nodi `IndexListItems`. Di seguito è illustrata una visualizzazione in cui viene usato il nodo `IndexListItems` :  
+ È possibile usare l'espansione `ArrayItems` solo se gli elementi della matrice vengono disposti in modo contiguo nella memoria. Il debugger ottiene l'elemento successivo semplicemente incrementando il relativo puntatore all'elemento corrente. Per supportare i casi in cui è necessario modificare l'indice nel nodo value, si possono usare i nodi `IndexListItems` . Di seguito è illustrata una visualizzazione in cui viene usato il nodo `IndexListItems` :  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -532,7 +527,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
 ```  
 
- La sintassi è molto simile a quella del nodo `LinkedListItems`. `LeftPointer`, `RightPointer`e `ValueNode` vengono valutati nel contesto della classe del nodo dell'albero e l'espressione `ValueNode` può essere lasciata vuota o includere `this` per fare riferimento allo stesso nodo dell'albero.  
+ La sintassi è molto simile a quella del nodo `LinkedListItems` . `LeftPointer`, `RightPointer`e `ValueNode` vengono valutati nel contesto della classe del nodo dell'albero e l'espressione `ValueNode` può essere lasciata vuota o includere `this` per fare riferimento allo stesso nodo dell'albero.  
 
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Espansione di ExpandedItem  
  L'elemento `ExpandedItem` può essere usato per generare una visualizzazione figlio aggregata visualizzando le proprietà delle classi base o dei membri dati come se fossero figli del tipo visualizzato. L'espressione specificata viene valutata e i nodi figlio del risultato vengono aggiunti all'elenco figlio del tipo visualizzato. Ad esempio, si supponga di disporre di un tipo di puntatore intelligente `auto_ptr<vector<int>>` che, in genere, viene visualizzato nel modo seguente:  
@@ -632,12 +627,9 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 </Type>  
 ```  
 
- È possibile visualizzare un esempio di UIVisualizer nell'estensione delle espressioni di controllo immagine usate per visualizzare le bitmap in memoria: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ È possibile vedere un esempio di UIVisualizer nell'estensione Image Watch usata per visualizzare le bitmap in memoria: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>Elemento CustomVisualizer  
  `CustomVisualizer` è un punto di estendibilità che specifica un'estensione VSIX che è possibile scrivere per controllare la visualizzazione nel codice in esecuzione in Visual Studio. Per altre informazioni sulla scrittura di estensioni VSIX, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md). La scrittura di un visualizzatore personalizzato comporta molte più operazioni rispetto alla scrittura di una definizione natvis XML, ma non sussistono vincoli su ciò che Natvis supporta o non supporta. I visualizzatori personalizzati hanno accesso al set completo di API di estendibilità del debugger, che possono essere usate per eseguire query e modificare il processo dell'oggetto del debug o per comunicare con altre parti di Visual Studio.  
 
  È possibile usare gli attributi `Condition`, `IncludeView`e `ExcludeView` su elementi CustomVisualizer.
-
-
-

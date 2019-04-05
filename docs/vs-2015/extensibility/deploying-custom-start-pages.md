@@ -1,27 +1,22 @@
 ---
 title: Distribuzione di pagine iniziali personalizzate | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795115"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001361"
 ---
 # <a name="deploying-custom-start-pages"></a>Distribuzione di pagine iniziali personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51795115"
   
 - È possibile inserire il file VSIX in una condivisione di rete o in un sito Web pubblico. Quando un utente apre il file, viene installata automaticamente nella pagina iniziale.  
   
-- È possibile caricare il file VSIX per la [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) del sito Web in modo che gli utenti possono installarla tramite **gestore estensioni del**.  
+- È possibile caricare il file VSIX per la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) del sito Web in modo che gli utenti possono installarla tramite **gestore estensioni del**.  
   
   Il modello di progetto di pagina iniziale Crea una copia del valore predefinito la pagina iniziale di Visual Studio in modo che è possibile modificare la copia e conservare l'originale.  
   
@@ -46,7 +41,7 @@ ms.locfileid: "51795115"
   
 - Aggiungendo i file della pagina iniziale personalizzati per un progetto VSIX vuoto. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).  
   
-- Quando si crea manualmente un file con estensione VSIX. Per altre informazioni, vedere [procedura: creare manualmente il pacchetto estensione (distribuzione VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Quando si crea manualmente un file con estensione VSIX. Per altre informazioni, vedere [Procedura: Creare manualmente il pacchetto estensione (distribuzione VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Per Visual Studio riconosca una pagina iniziale, il `Content Element` del manifesto VSIX deve contenere un `CustomExtension Element` con il `Type` attributo impostato su `"StartPage"`. Viene visualizzata un'estensione di pagina iniziale che è stata installata utilizzando la distribuzione VSIX nel **Personalizza pagina iniziale** elenco il **avvio** pagina Opzioni come **[estensione installata]** *Nome dell'estensione*.  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51795115"
   
 4.  Modificare il pkgdef per impostare la pagina iniziale predefinita in HKLM aggiungendo il codice seguente, dove *MyStartPage.xaml* è il nome del file con estensione XAML contenente la pagina iniziale.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -98,4 +93,3 @@ ms.locfileid: "51795115"
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Aggiunta di un controllo utente nella pagina iniziale](../extensibility/adding-user-control-to-the-start-page.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: abilitare e disabilitare Modifica e continuazione | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Abilitare e disabilitare Modifica e continuazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -29,15 +24,15 @@ ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5709b4bdae55c0ade6ca4559dcbaad8d66c0bbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0fe1af00bde865b98fb165efe109fe1bb5cabd49
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781257"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001080"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue"></a>Procedura: abilitare e disabilitare Modifica e continuazione
+# <a name="how-to-enable-and-disable-edit-and-continue"></a>Procedura: Abilitare e disabilitare Modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile disabilitare o abilitare Modifica e continuazione nella **opzioni** finestra di dialogo in fase di progettazione. Non è possibile modificare questa impostazione durante il debug.  
@@ -55,7 +50,7 @@ ms.locfileid: "51781257"
 3. Per abilitare, selezionare la **Abilita modifica e continuazione** casella di controllo. Per disabilitarla, deselezionare la casella di controllo.  
   
    > [!NOTE]
-   >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [configurare IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [configurare IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 4. Fare clic su **OK**.  
   
@@ -63,6 +58,3 @@ ms.locfileid: "51781257"
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione](../debugger/edit-and-continue.md)
-
-
-

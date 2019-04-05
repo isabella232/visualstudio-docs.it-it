@@ -1,14 +1,9 @@
 ---
 title: 'CA1900: I campi di tipo di valore devono essere portabili | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35bdef10d63f79c3d1ff649a486a708c34b28078
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236301"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001841"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: I campi dei tipi di valore devono essere portabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1900: i campi di tipo di valore devono essere portabili](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1900: I campi di tipo di valore devono essere portabili](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) su docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -50,4 +45,3 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1900: i camp
   
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  Questo avviso deve essere eliminato solo se si verifica in errore.
-

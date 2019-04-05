@@ -1,14 +1,9 @@
 ---
 title: Uso dei file Dump | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761130"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001457"
 ---
 # <a name="using-dump-files"></a>Uso dei file Dump
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,9 +78,9 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
 - Per eseguire il debug [in modalità kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dump file in Visual Studio 2013, scaricare la [Windows 8.1 versione di debug di strumenti per Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Visualizzare [debug del Kernel in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio non è possibile eseguire il debug di file dump salvati nel formato dump precedente noto come un [dump completi della modalità utente](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Si noti che un dump completo in modalità utente non corrisponde a un dump con heap.  
+- Visual Studio non è possibile eseguire il debug di file dump salvati nel formato dump precedente noto come un [dump completi della modalità utente](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Si noti che un dump completo in modalità utente non corrisponde a un dump con heap.  
   
-- Eseguire il debug con il [SOS. dll (estensione del debugger SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) in Visual Studio, è necessario installare il debug di strumenti per Windows che fa parte del Windows Driver Kit (WDK). Visualizzare [Windows 8.1 Preview: scaricare Kit, bit e strumenti](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Eseguire il debug con il [SOS. dll (estensione del debugger SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) in Visual Studio, è necessario installare il debug di strumenti per Windows che fa parte del Windows Driver Kit (WDK). Vedere [Windows 8.1 Preview: Download di Kit, bit e strumenti](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
@@ -104,7 +99,7 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
 1.  In Visual Studio, scegliere **File**, **Open**, **File**.  
   
-2.  Nel **Apri File** dialogo individuare e selezionare il file di dump. Il file dump in genere ha l'estensione dmp. Quindi scegliere **OK**.  
+2.  Nella finestra di dialogo **Apri file** individuare e selezionare il file dump. Il file dump in genere ha l'estensione dmp. Quindi scegliere **OK**.  
   
 3.  Il **riepilogo File Dump** verrà visualizzata la finestra. In questa finestra è possibile visualizzare informazioni di riepilogo sul debug del file dump, impostare il percorso dei simboli, avviare il debug e copiare le informazioni di riepilogo negli Appunti.  
   
@@ -145,6 +140,5 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

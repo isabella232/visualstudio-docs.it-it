@@ -1,14 +1,9 @@
 ---
-title: 'CA1822: Contrassegna i membri come statici | Microsoft Docs'
-ms.custom: ''
+title: 'CA1822: Contrassegnare i membri come statici | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183495"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001829"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Contrassegna i membri come statici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1822: contrassegna i membri come statici](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1822: Contrassegnare i membri come statici](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) su docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -52,9 +47,8 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1822: contra
  È possibile eliminare un avviso da questa regola per il codice fornito in precedenza per il quale la correzione sarebbe una modifica sostanziale.  
   
 ## <a name="related-rules"></a>Regole correlate  
- [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: Evitare il codice privato](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)

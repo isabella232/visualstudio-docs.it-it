@@ -1,14 +1,9 @@
 ---
 title: Compatibilità delle versioni di criteri di controllo dell'analisi del codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954882"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Criteri di archiviazione relativi alla compatibilità delle versioni per l'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ Se è necessario valutare e creare codice check-in Criteri di analisi usino vers
 -   Per creare un criterio di controllo dell'analisi codice con impostazioni delle regole valide per entrambi [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] e [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], è necessario creare i criteri in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], apportare tutte le modifiche necessarie e salvare il criterio. Se le modifiche alle regole sono disponibili solo nel [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], modificare e salvare i criteri in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
   
      Dopo aver salvato i criteri in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], non è più è possibile modificare le impostazioni per le regole esistenti in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] solo.
-
-
-

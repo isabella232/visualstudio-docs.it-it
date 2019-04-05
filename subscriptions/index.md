@@ -8,8 +8,13 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Sottoscrizioni di Visual studio
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322598"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Sottoscrizioni di Visual Studio
 
 Le sottoscrizioni di Visual Studio rappresentano il set di risorse più completo per creare, distribuire e gestire applicazioni di alta qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi delle sottoscrizioni includono l'accesso agli strumenti di sviluppo, a servizi e software cloud, a risorse di training e al supporto per svariate esigenze di test e sviluppo.

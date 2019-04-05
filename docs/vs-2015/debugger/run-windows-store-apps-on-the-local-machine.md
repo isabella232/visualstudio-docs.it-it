@@ -1,14 +1,9 @@
 ---
 title: Le app di eseguire Windows Store nel computer locale | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,18 +13,18 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954517"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Eseguire applicazioni Windows Store in un computer locale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_content")  
+Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
   
  Per eseguire il debug, test o analisi delle prestazioni su un'app Windows Store, puoi eseguire l'app sullo stesso computer che ospita Visual Studio. Se lo schermo del dispositivo è abilitato per il tocco, puoi verificare la funzionalità completa dell'app, altrimenti dovrai limitarti ai movimenti con il mouse e la tastiera.  
   
@@ -63,6 +58,3 @@ Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_con
  **Per passare da un'istanza in esecuzione di un'app Windows Store da Visual Studio**  
   
  Quando esegui un'app Windows Store su un computer locale e usi un solo monitor, potresti voler tornare a Visual Studio lasciando in esecuzione l'app. L'app potrebbe essere in uno stato che non può essere raggiunto da un punto di interruzione, ad esempio potrebbe essere in attesa di un evento o inclusa in un ciclo lungo o infinito. Per tornare a Visual Studio, premi ALT+TAB.
-
-
-

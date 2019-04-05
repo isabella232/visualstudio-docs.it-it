@@ -1,25 +1,22 @@
 ---
-title: 'Procedura: attivare e disattivare (O-R Designer) la pluralizzazione | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Attivare e disattivare (O-R Designer) la pluralizzazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954906"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedura: attivare e disattivare (O/R Designer) la pluralizzazione
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -34,12 +31,12 @@ Per impostazione predefinita, quando si trascinano oggetti di database con nomi 
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **le opzioni** finestra di dialogo espandere **strumenti di Database**.  
+2.  Nella finestra di dialogo **Opzioni** espandere **Strumenti di database**.  
   
 > [!NOTE]
->  Selezionare **Mostra tutte le impostazioni** se il **strumenti di Database** nodo non è visibile.  
+>  Se il nodo **Strumenti di database** non è visibile, selezionare **Mostra tutte le impostazioni**.  
   
-1.  Fare clic su **O/R Designer**.  
+1.  Fare clic su **Object Relational Designer**.  
   
 2.  Impostare **pluralizzazione di nomi** al **Enabled** = **False** per impostare il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] in modo che non modifica i nomi delle classi.  
   
@@ -49,4 +46,3 @@ Per impostazione predefinita, quando si trascinano oggetti di database con nomi 
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

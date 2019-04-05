@@ -1,12 +1,9 @@
 ---
 title: Generazione del codice in un processo di compilazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281810"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001373"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Ciò significa che non è possibile accedere a elementi quali i nomi dei file di
 
 ##  <a name="buildserver"></a> Configurare i computer
 
-Per abilitare le attività di compilazione nel computer di sviluppo, installare [Modeling SDK per Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Per abilitare le attività di compilazione nel computer di sviluppo, installare [Modeling SDK per Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Se [il server di compilazione](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) viene eseguita in un computer in cui non è installato Visual Studio, copiare i file seguenti nel computer di compilazione dal computer di sviluppo. Sostituire ‘*’ con il numero dell'ultima versione.
 
@@ -127,7 +124,7 @@ Per trasformare un modello di testo specifico:
 
 `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
 
-È possibile utilizzare i caratteri jolly in TransformFile:
+È possibile usare i caratteri jolly in TransformFile:
 
 `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
@@ -288,4 +285,4 @@ Esiste materiale sussidiario nel modello MSbuild di T4, $(VSToolsPath)\TextTempl
 
 - [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych: Informazioni T4:MSBuild integrazione](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych: Informazioni sull'integrazione in T4:MSBuild](https://github.com/olegsych/T4Toolbox)

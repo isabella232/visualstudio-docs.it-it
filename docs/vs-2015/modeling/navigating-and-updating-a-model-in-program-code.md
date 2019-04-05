@@ -1,25 +1,22 @@
 ---
 title: Esplorazione e aggiornamento di un modello nel codice di programma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954967"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Esplorazione e aggiornamento di un modello nel codice del programma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49863165"
   
  [DocView e oggetto DocData](#docdata)  
   
- Forme, connettori e i diagrammi e le relative relazioni con elementi del modello sono descritti in un argomento distinto. Per altre informazioni, vedere [procedura: esplorare e aggiornare un diagramma](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Forme, connettori e i diagrammi e le relative relazioni con elementi del modello sono descritti in un argomento distinto. Per altre informazioni, vedere [Procedura: Esplorare e aggiornare un diagramma](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ##  <a name="example"></a> Una definizione DSL dell'esempio  
  Questa è la parte principale di Dsldefinition per gli esempi in questo argomento:  
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - Impostare le proprietà di un nuovo elemento, in particolare la proprietà per il quale `IsName` è impostata su true nel DslDefinition. Questo flag contrassegna la proprietà che consentono di identificare l'elemento in modo univoco all'interno di relativo proprietario. In questo caso, la proprietà del nome con flag.  
   
-- La definizione DSL di questo DSL debba sono stata caricata nel Store. Se si sta scrivendo un'estensione, ad esempio un comando di menu, in genere sarà già presente. In altri casi, è possibile in modo esplicito, caricare il modello di Store o usare <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> per caricarlo. Per altre informazioni, vedere [procedura: aprire un modello da File nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- La definizione DSL di questo DSL debba sono stata caricata nel Store. Se si sta scrivendo un'estensione, ad esempio un comando di menu, in genere sarà già presente. In altri casi, è possibile in modo esplicito, caricare il modello di Store o usare <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> per caricarlo. Per altre informazioni, vedere [Procedura: Aprire un modello da File nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
   Quando si crea un elemento in questo modo, viene creata automaticamente una forma (se il DSL ha un diagramma). Viene visualizzato in una posizione assegnata automaticamente, con forma predefinita, colori e altre funzionalità. Se si desidera controllare dove e come viene visualizzata la forma associata, vedere [creazione di un elemento e la relativa forma](#merge).  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  È anche possibile impostare il colore e altre proprietà esposta dei connettori con questo metodo.  
   
 ### <a name="use-transactions"></a>Utilizzare le transazioni  
- Forme, connettori e i diagrammi sono sottotipi di <xref:Microsoft.VisualStudio.Modeling.ModelElement> e di Store in tempo reale. È pertanto necessario apportare modifiche a tali solo all'interno di una transazione. Per altre informazioni, vedere [procedura: usare transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Forme, connettori e i diagrammi sono sottotipi di <xref:Microsoft.VisualStudio.Modeling.ModelElement> e di Store in tempo reale. È pertanto necessario apportare modifiche a tali solo all'interno di una transazione. Per altre informazioni, vedere [Procedura: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 ##  <a name="docdata"></a> Visualizzazione del documento e i dati del documento  
  ![Diagramma di classi dei tipi di diagramma standard](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [Convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)   
  [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Procedura: utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Procedura: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [L'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Risposta alle modifiche e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Parametro di Assembly di interoperabilità di Visual Studio marshalling | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954739"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshalling dei parametri degli assembly di interoperabilità di Visual Studio
 Pacchetti VSPackage che vengono scritti in codice gestito potrebbero essere necessario chiamare o essere chiamato da codice COM non gestito. In genere, gli argomenti del metodo vengono trasformati o sottoposto a marshalling, automaticamente per il marshalling di interoperabilità. Tuttavia, talvolta argomenti non è possibile trasformare in modo semplice. In questi casi, vengono utilizzati i parametri del prototipo metodo assembly di interoperabilità corrispondente ai parametri di funzione COM fedelmente possibile. Per altre informazioni, vedere [marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Metodi gestiti che chiamano le interfacce di questo tipo devono inserire il primo elemento all'esterno della matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia COM corrispondente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Marshalling di interoperabilità](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshalling di interoperabilità](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Risoluzione dei problemi di interoperabilità](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackage gestiti](../misc/managed-vspackages.md)

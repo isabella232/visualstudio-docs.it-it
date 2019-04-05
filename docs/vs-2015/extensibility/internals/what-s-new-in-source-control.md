@@ -1,29 +1,25 @@
 ---
-title: Cosa&#39;s di controllo del codice sorgente | Microsoft Docs
-ms.custom: ''
+title: Novità del controllo del codice sorgente
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752460"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001488"
 ---
-# <a name="what39s-new-in-source-control"></a>Cosa&#39;s di controllo del codice sorgente
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>Cosa&#39;s di controllo del codice sorgente in Visual Studio 2015
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] è possibile fornire una soluzione di controllo codice sorgente integrato mediante l'implementazione di un pacchetto VSPackage di controllo di origine. In questa sezione vengono descritte le funzionalità di controllo del codice sorgente pacchetti VSPackage e fornisce una panoramica dei passaggi di implementazione.  
@@ -56,4 +52,3 @@ In [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] è possibile fornire una so
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [Panoramica](../../extensibility/internals/source-control-integration-overview.md)   
  [Creazione di un pacchetto VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

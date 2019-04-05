@@ -1,14 +1,9 @@
 ---
 title: Creazione di applicazioni ClickOnce dalla riga di comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966672"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilazione di applicazioni ClickOnce dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], è possibil
   
  Il `/target:publish` comando indica a MSBuild per richiamare la destinazione di pubblicazione. La destinazione di pubblicazione dipende dalla destinazione di compilazione. Ciò significa che l'operazione di pubblicazione è un superset dell'operazione di compilazione. Ad esempio, se si apporta una modifica a uno dei file di origine Visual Basic o c#, l'assembly corrispondente verrà rigenerato automaticamente dall'operazione di pubblicazione.  
   
- Per informazioni sulla generazione di una procedura completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione utilizzando lo strumento da riga di comando Mage.exe per creare le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Per informazioni sulla generazione di una procedura completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione utilizzando lo strumento da riga di comando Mage.exe per creare le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>Creazione e compilazione di un'applicazione ClickOnce di base utilizzando MSBuild  
   
@@ -177,7 +172,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-
+ [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

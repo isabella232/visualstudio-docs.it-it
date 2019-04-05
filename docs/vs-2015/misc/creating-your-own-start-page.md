@@ -1,27 +1,22 @@
 ---
 title: Creare una pagina di avvio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Create start page
 - custom start page
 - customize start page
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
-manager: douge
-ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815039"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001511"
 ---
 # <a name="creating-your-own-start-page"></a>Creazione di una pagina iniziale personalizzata
 È possibile creare una pagina iniziale personalizzata usando il modello di progetto di pagina iniziale o creando una pagina iniziale vuota.  
@@ -36,7 +31,7 @@ ms.locfileid: "49815039"
 1.  Scaricare e installare il [modello di progetto di pagina iniziale](http://go.microsoft.com/fwlink/?LinkId=186204) da Visual Studio Gallery.  
   
     > [!WARNING]
-    >  A questo punto il modello di progetto di pagina iniziale di Visual Studio 2010 non è ancora aggiornato. Per informazioni su come aggiornare il modello, vedere [procedura: eseguire l'aggiornamento di una pagina iniziale di Visual Studio Custom](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    >  A questo punto il modello di progetto di pagina iniziale di Visual Studio 2010 non è ancora aggiornato. Per informazioni su come aggiornare il modello, vedere [come: Aggiornare una pagina iniziale personalizzata di Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2.  Dopo aver installato il modello, usarlo per creare un nuovo progetto di pagina iniziale.  
   
@@ -102,8 +97,8 @@ ms.locfileid: "49815039"
   
     Verrà visualizzata la pagina iniziale funzionante. È necessario chiudere l'istanza sperimentale, copiare di nuovo tutti i file modificati e quindi riaprire l'istanza sperimentale per visualizzare le nuove modifiche.  
   
-   È possibile condividere la pagina iniziale personalizzata caricando il file VSIX dalla directory bin\debug nel sito Web [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) o in un altro sito Web o una condivisione Intranet. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   È possibile condividere la pagina iniziale personalizzata caricando il file VSIX dalla directory bin\debug nel [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web o in un altro sito Web o rete intranet condivisione. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Procedura dettagliata: Aggiunta di codice XAML personalizzato nella pagina iniziale](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Procedura dettagliata: Aggiunta di XAML personalizzato nella pagina iniziale](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

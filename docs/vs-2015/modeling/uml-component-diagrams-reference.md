@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammi dei componenti UML: Riferimento | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammi dei componenti UML: Riferimenti | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,15 +18,15 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969713"
 ---
-# <a name="uml-component-diagrams-reference"></a>Diagrammi dei componenti UML: riferimento
+# <a name="uml-component-diagrams-reference"></a>Diagrammi dei componenti UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio, un *diagramma dei componenti* vengono illustrate le parti di una progettazione di un sistema software. Un diagramma dei componenti consente di visualizzare la struttura generale del sistema e il comportamento del servizio che tali parti forniscono e utilizzano tramite le interfacce. Per creare un diagramma dei componenti UML, nelle **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
@@ -41,7 +38,7 @@ In Visual Studio, un *diagramma dei componenti* vengono illustrate le parti di u
  Per altre informazioni su come usare i diagrammi dei componenti nel processo di progettazione, vedere [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Questo argomento illustra gli elementi che è possibile usare nei diagrammi dei componenti. Per altre informazioni su come creare diagrammi dei componenti, vedere [diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md). Per altre informazioni su come creare diagrammi di modellazione in generale, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+>  Questo argomento illustra gli elementi che è possibile usare nei diagrammi dei componenti. Per altre informazioni su come creare diagrammi dei componenti vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md). Per altre informazioni su come creare diagrammi di modellazione in generale, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Lettura dei diagrammi dei componenti  
  La tabella seguente descrive gli elementi che è possibile usare in un diagramma dei componenti, insieme alle relative proprietà principali. Per un elenco completo delle proprietà degli elementi, vedere [delle proprietà degli elementi nei diagrammi dei componenti UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
@@ -64,12 +61,9 @@ In Visual Studio, un *diagramma dei componenti* vengono illustrate le parti di u
 
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md)   
+ [Diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md)   
  [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)   
- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi di attività UML: Riferimento](../modeling/uml-activity-diagrams-reference.md)   
  [Diagrammi di sequenza UML: riferimenti](../modeling/uml-sequence-diagrams-reference.md)
-
-
-

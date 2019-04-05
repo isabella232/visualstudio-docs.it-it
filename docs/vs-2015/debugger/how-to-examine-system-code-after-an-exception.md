@@ -1,14 +1,9 @@
 ---
-title: "Procedura: esaminare il codice di sistema dopo un'eccezione | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Esaminare il codice di sistema dopo un'eccezione | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,39 +16,34 @@ ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8cbaff38cdd6d769140f135d319a88d6098f294b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289ef1825e8034566e2a9595a46919a3c498108d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954857"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Procedura: esaminare il codice di sistema dopo un'eccezione
+# <a name="how-to-examine-system-code-after-an-exception"></a>Procedura: Esaminare il codice di sistema dopo un'eccezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si verifica un'eccezione, potrebbe essere necessario esaminare il codice di una chiamata al sistema per determinare la causa dell'eccezione. Nella procedura riportata di seguito viene illustrato come determinare la causa se non sono disponibili simboli caricati per il codice di sistema o se Just My Code è attivato.  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Per esaminare il codice di sistema dopo un'eccezione  
   
-1.  Nel **Stack di chiamate** finestra destro del mouse e quindi fare clic su **Mostra codice esterno**.  
+1.  Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse e quindi fare clic su **Mostra codice esterno**.  
   
      Se Just My Code non è attivato, questa opzione non è disponibile nel menu di scelta rapida e il codice di sistema viene visualizzato per impostazione predefinita.  
   
-2.  Fare doppio clic su frame di codice esterni presenti nella **Stack di chiamate** finestra.  
+2.  Fare clic con il pulsante destro del mouse sui frame di codice esterni presenti nella finestra **Stack di chiamate**.  
   
-3.  Puntare **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft**.  
+3.  Selezionare **Carica simboli da** e quindi fare clic su **Server dei simboli Microsoft**.  
   
     1.  Se Just My Code è attivato, viene visualizzata una finestra di dialogo indicante che Just My Code è stato disabilitato. Tale operazione è necessaria per eseguire le chiamate di sistema.  
   
-    2.  Il **download dei simboli pubblici** verrà visualizzata la finestra di dialogo. La finestra viene chiusa al termine del download.  
+    2.  Viene visualizzata la finestra di dialogo **Download dei simboli pubblici**. La finestra viene chiusa al termine del download.  
   
-4.  È ora possibile esaminare il codice di sistema nel **Stack di chiamate** finestra e altre finestre. Ad esempio, è possibile fare doppio clic su un frame di stack di chiamate per visualizzare il codice in un'origine o **Disassembly** finestra.  
+4.  È ora possibile esaminare il codice di sistema nella finestra **Stack di chiamate** e in altre finestre. Ad esempio, è possibile fare doppio clic su un frame dello stack di chiamate per visualizzare il codice nella finestra **Disassembly** o nella finestra origine.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

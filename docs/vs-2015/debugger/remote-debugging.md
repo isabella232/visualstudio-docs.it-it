@@ -1,13 +1,8 @@
 ---
 title: Debug remoto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799275"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001608"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +42,10 @@ ms.locfileid: "51799275"
 
     |Versione|Collegamento|Note|
     |-|-|-|
-    |Visual Studio 2015 Update 3|[Remote tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario. Scaricare sempre la versione corrispondente del sistema operativo del dispositivo (x 86, x64 o ARM versione)|
-    |Visual Studio 2015 (precedente)|[Remote tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario.|
-    |Visual Studio 2013|[Remote tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2013|
-    |Visual Studio 2012|[Remote tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2012|
+    |Visual Studio 2015 Update 3|[Remote Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario. Scaricare sempre la versione corrispondente del sistema operativo del dispositivo (x 86, x64 o ARM versione)|
+    |Visual Studio 2015 (precedente)|[Remote Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario.|
+    |Visual Studio 2013|[Remote Tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2013|
+    |Visual Studio 2012|[Remote Tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2012|
   
 2.  Nella pagina di download, scegliere la versione degli strumenti che corrisponde al sistema operativo (x 86, x64 o ARM versione) e scaricare remote tools.
   
@@ -67,7 +62,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 
 È possibile trovare il debugger remoto (**msvsmon.exe**) in un computer con Visual Studio 2015 Community, Professional o Enterprise già installato. Per molti scenari, il modo più semplice per impostare il debug remoto consiste nell'eseguire il debugger remoto (msvsmon.exe) da una condivisione file. Per le limitazioni di utilizzo, vedere pagina della Guida del debugger remoto (**Guida / utilizzo** nel debugger remoto).
 
-1. Trovare **msvsmon.exe** nella directory corrispondente alla versione di Visual Studio. Per Visual Studio 2015:
+1. Trovare **msvsmon.exe** nella directory corrispondente alla versione di Visual Studio. For Visual Studio 2015:
 
       **Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
@@ -139,7 +134,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 ## <a name="configure-the-remote-debugger"></a>Configurare il debugger remoto  
  È possibile modificare alcuni aspetti della configurazione del debugger remoto dopo che è stata avviata per la prima volta.
   
-- Per consentire ad altri utenti di connettersi al debugger remoto, scegliere **strumenti / autorizzazioni**. È necessario avere privilegi di amministratore per concedere o negare autorizzazioni.
+- Per consentire ad altri utenti di connettersi al debugger remoto, scegliere **strumenti / autorizzazioni**. È necessario disporre dei privilegi di amministratore per concedere o negare autorizzazioni.
 
   > [!IMPORTANT]
   > È possibile eseguire il debugger remoto con un account utente diverso dall'account utente in uso nel computer di Visual Studio, ma è necessario aggiungere l'account utente diverso alle autorizzazioni del debugger remoto. 
@@ -188,21 +183,21 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
   
 1. Creare un'applicazione MFC denominata **mymfc.**  
   
-2. Impostare un punto di interruzione in una posizione nell'applicazione che sia facilmente raggiungibile, ad esempio nella **MainFrm. cpp**, all'inizio di `CMainFrame::OnCreate`.  
+2. Impostare un punto di interruzione in un punto dell'applicazione che sia facilmente raggiungibile, ad esempio in **MainFrm.cpp**, all'inizio di `CMainFrame::OnCreate`.  
   
-3. In Esplora soluzioni fare doppio clic sul progetto e scegliere **proprietà**. Aprire il **debug** scheda.  
+3. In Esplora soluzioni fare doppio clic sul progetto e scegliere **proprietà**. Aprire la scheda **Debug**.  
   
-4. Impostare il **Debugger da avviare** al **Debugger Windows remoto**.  
+4. Impostare **Debugger da avviare** su **Debugger Windows remoto**.  
   
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
 5. Apportare le seguenti modifiche alle proprietà:  
   
-   |Impostazione|Valore|
+   |Impostazione|Value|
    |-|-|  
    |Comando remoto|C:\remotetemp\mymfc.exe|  
    |Directory di lavoro|C:\remotetemp|  
-   |Nome server remoto|MJO-DL:*NumeroPorta*|  
+   |Nome server remoto|MJO-DL:*numeroporta*|  
    |Connessione|Remoto con autenticazione di Windows|  
    |Tipo di debugger|Solo nativo|  
    |Directory di distribuzione|C:\remotetemp|  
@@ -212,7 +207,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
   
 6. In Esplora soluzioni fare doppio clic la soluzione e scegliere **Configuration Manager**.  
   
-7. Per il **Debug** configurazione, selezionare la **Distribuisci** casella di controllo.  
+7. Per la configurazione **Debug**, selezionare la casella di controllo **Distribuisci**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
@@ -227,9 +222,9 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 11. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.  
   
     > [!TIP]
-    >  In alternativa, è possibile distribuire i file come passaggio separato. Nel **Esplora soluzioni** fare doppio clic il **mymfc** nodo e quindi scegliere **Distribuisci**.  
+    >  In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.  
   
-    Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi / nuova cartella**.) Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Add / esistente elemento**, quindi selezionare i file.). Nel **delle proprietà** pagina per ogni file, impostare **copia in Directory di Output** a **Copia sempre**.  
+    Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi / nuova cartella**.) Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Add / esistente elemento**, quindi selezionare i file.). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Eseguire il debug remoto di un progetto Visual C# o Visual Basic  
  Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic in un computer remoto, ma può comunque eseguirne il debug in modalità remota come illustrato di seguito. La procedura seguente presuppone che si desidera eseguire il debug in un computer denominato **MJO DL**, come illustrato nella figura precedente.
@@ -242,19 +237,19 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
   
 3. In Esplora soluzioni fare clic sul progetto e scegliere **proprietà**.  
   
-4. Nel **delle proprietà** pagina, scegliere il **Debug** scheda.  
+4. Nella pagina **Proprietà** scegliere la scheda **Debug**.  
   
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5. Assicurarsi che il **directory di lavoro** casella di testo è vuota.  
+5. Verificare che la casella di testo **Directory di lavoro** sia vuota.  
   
 6. Scegli **Usa computer remoto**e il tipo **MJO-DL:4020** nella casella di testo. (4020 è il numero di porta visualizzato nella finestra del debugger remoto).  
   
-7. Verificare che l'opzione **Abilita debug codice nativo** non è selezionata.  
+7. Assicurarsi che l'opzione **Attiva il debug di codice nativo** non sia selezionata.  
   
 8. Compilare il progetto.  
   
-9. Creare una cartella nel computer remoto che è lo stesso percorso come il **Debug** cartella nel computer Visual Studio:  **\<percorso di origine > \MyWPF\MyWPF\bin\Debug**.  
+9. Creare una cartella nel computer remoto con lo stesso percorso della cartella **Debug** nel computer di Visual Studio: **\<percorso di origine>\MyWPF\MyWPF\bin\Debug**.  
   
 10. Copiare il file eseguibile appena compilato dal computer di Visual Studio alla nuova cartella nel computer remoto.
   
@@ -279,21 +274,21 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
   
 15. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.
   
-    Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi / nuova cartella**.) Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Add / esistente elemento**, quindi selezionare i file.). Nel **delle proprietà** pagina per ogni file, impostare **copia in Directory di Output** a **Copia sempre**.
+    Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi / nuova cartella**.) Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Add / esistente elemento**, quindi selezionare i file.). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti  
  Dovrebbe essere possibile eseguire il debug del codice con i simboli generati nel computer di Visual Studio. L'uso di simboli locali consente di migliorare notevolmente le prestazioni del debugger remoto.  Se è necessario usare simboli remoti, indicare a Remote Debugging Monitor di eseguire la ricerca di simboli nel computer remoto.  
   
  A partire da Visual Studio 2013 Update 2 è possibile usare la seguente opzione della riga di comando di msvsmon per usare i simboli remoti per il codice gestito: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
- Per altre informazioni, vedere Guida al debug remoto (premere **F1** la finestra del debugger remoto, oppure fare clic su **Guida / utilizzo**). È possibile trovare altre informazioni, vedere [.NET simbolo modifiche nel caricamento remoto in Visual Studio 2012 e 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
+ Per altre informazioni, vedere Guida al debug remoto (premere **F1** la finestra del debugger remoto, oppure fare clic su **Guida / utilizzo**). Altre informazioni sono disponibili nel post del blog [.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx) (Modifiche nel caricamento remoto dei simboli .NET in Visual Studio 2012 e 2013).  
   
 ##  <a name="bkmk_winstoreAzure"></a> Debug remoto in App Windows Store e Azure  
  Per informazioni sul debug remoto con le app di Windows Store, vedere [eseguire il Debug e testare le app di Windows Store in un computer remoto da Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Per informazioni sul debug in Azure, vedere uno dei seguenti argomenti:  
   
--   [Debug di un servizio Cloud o macchina virtuale in Visual Studio](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Debug di un servizio Cloud o macchina virtuale in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [Debug di back-end .NET in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
@@ -301,10 +296,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
   
 ## <a name="see-also"></a>Vedere anche  
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
- [Configurare il Firewall di Windows per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

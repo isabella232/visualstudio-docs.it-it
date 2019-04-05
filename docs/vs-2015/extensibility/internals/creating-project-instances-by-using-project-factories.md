@@ -1,27 +1,22 @@
 ---
 title: Creazione di istanze del progetto tramite le factory di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965817"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Creazione di istanze di progetto tramite le factory di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano un *fa
   
  È possibile implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia in una classe nel progetto. In genere, si trova in un proprio modulo.  
   
- Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere PrjFac.cpp contenuta nel [progetto base](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) directory degli esempi.  
+ Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere PrjFac.cpp contenuta nel [progetto base](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) directory degli esempi.  
   
  I progetti che supportano l'aggregazione da un proprietario devono mantenere una chiave del proprietario nel relativo file di progetto. Quando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metodo viene chiamato su un progetto con una chiave del proprietario, il progetto di proprietà converte la chiave del proprietario in una factory progetto GUID chiama quindi il `CreateProject` metodo factory del progetto per eseguire la creazione effettiva.  
   
@@ -58,4 +53,3 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano un *fa
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
-

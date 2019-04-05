@@ -1,33 +1,28 @@
 ---
-title: 'Walkthrough: Displaying Light Bulb Suggestions | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Displaying Light Bulb Suggestions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7e5bf7ad795615e70e990dd29c05f5efe3a1c78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e13ce65888ace73ca58bfbc5690330fd8265ad8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955283"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procedura dettagliata: visualizzazione dei suggerimenti delle icone lampadina
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procedura dettagliata: Visualizzazione dei suggerimenti delle icone lampadina
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono per visualizzare un set di azioni, ad esempio correzioni per problemi identificati dagli analizzatori di codice predefiniti o il refactoring del codice.  
   
  Negli editor di Visual c# e Visual Basic, è anche possibile usare .NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti personalizzati analizzatori di codice con le azioni che consentono di visualizzare le lampadine automaticamente. Per altre informazioni, vedere:  
   
-- [Procedura: Scrivere un codice c# diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Procedura: Scrivere un C# diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
 - [Procedura: Scrivere una diagnostica di Visual Basic e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
@@ -41,7 +36,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
   
   ![Anteprima lampadina](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  È possibile usare le lampadine per fornire il proprio le azioni consigliate. Ad esempio, è possibile fornire azioni per spostare aprendo le parentesi graffe in una nuova riga o li sposta alla fine della riga precedente. Procedura dettagliata illustra come creare un indicatore lampadina che viene visualizzato sulla parola corrente, dispone di due azioni consigliate: **convertire in lettere maiuscole** e **Converti in minuscolo**.  
+  È possibile usare le lampadine per fornire il proprio le azioni consigliate. Ad esempio, è possibile fornire azioni per spostare aprendo le parentesi graffe in una nuova riga o li sposta alla fine della riga precedente. Procedura dettagliata illustra come creare un indicatore lampadina che viene visualizzato sulla parola corrente e ha due azioni consigliate: **Converti in maiuscolo** e **Convert in lettere minuscole**.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -370,4 +365,3 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
      ![test della lampadina, espanso](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Se si fa clic sulla prima azione, tutto il testo nella parola corrente verrà convertito in maiuscole. Se si fa clic sulla seconda azione, tutto il testo nella parola corrente verrà convertito in minuscole.
-

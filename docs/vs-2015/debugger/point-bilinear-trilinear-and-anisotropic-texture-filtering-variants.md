@@ -1,25 +1,20 @@
 ---
 title: Trama bilineare, trilineare e anisotropico varianti del filtro a punti, | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ef054b1773b1f0d07e21ec25cb326594a4d3b2d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c53f3b0633ec8938de210cb518d9fae1937eb2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954511"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Varianti del filtro della trama a punti, bilineare, trilineare e anisotropico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +57,15 @@ Esegue l'override della modalità di filtraggio sui campionatori di trame approp
   
 - `D3D11_FILTER_ANISOTROPIC`  
   
-  Nel **filtraggio punti della trama** variante, la modalità di filtraggio fornita dall'applicazione viene sostituita con `D3D11_FILTER_MIN_MAG_MIP_POINT`; nella **bilineare della trama** variant, viene sostituito con `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; e il **trilineare della trama** variant, viene sostituito con `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
+  Nella variante **Filtraggio punti della trama** la modalità di filtraggio fornita dall'applicazione viene sostituita da `D3D11_FILTER_MIN_MAG_MIP_POINT`; nella variante **Filtraggio bilineare della trama** viene sostituita da `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; nella variante **Filtraggio trilineare della trama** viene sostituita da `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
   
-  Nel **anisotropo della trama** variant, la modalità di filtraggio fornita dall'applicazione viene sostituita con `D3D11_FILTER_ANISOTROPIC`, e il Max Anisotropy viene impostato su 16.  
+  Nella variante **Filtraggio anisotropo della trama** la modalità di filtraggio fornita dall'applicazione viene sostituita da `D3D11_FILTER_ANISOTROPIC` e il valore per Anisotropia max viene impostato su 16.  
   
 ## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
- In Direct3D la funzionalità di livello 9.1 specifica un'anisotropia massima di 2x. Poiché il **anisotropo della trama** variante tenta di utilizzare anisotropia 16x in modo esclusivo, la riproduzione non riesce quando viene eseguita l'analisi dei frame in un dispositivo 9.1 a livello di funzionalità. Tra i dispositivi contemporanei che sono interessati da questo limite ci sono i tablet Windows basati su ARM Surface RT e Surface 2. GPU più datate che potrebbero essere ancora presenti in alcuni computer possono anch'esse risultare interessate, ma si tratta di hardware generalmente considerato obsoleto e in rapida via di estinzione.  
+ In Direct3D la funzionalità di livello 9.1 specifica un'anisotropia massima di 2x. Dato che la variante **Filtraggio anisotropo della trama** cerca di usare l'anisotropia 16x in modo esclusivo, la riproduzione non riesce quando l'analisi dei frame viene eseguita su un dispositivo con funzionalità di livello 9.1. Tra i dispositivi contemporanei che sono interessati da questo limite ci sono i tablet Windows basati su ARM Surface RT e Surface 2. GPU più datate che potrebbero essere ancora presenti in alcuni computer possono anch'esse risultare interessate, ma si tratta di hardware generalmente considerato obsoleto e in rapida via di estinzione.  
   
 ## <a name="example"></a>Esempio  
- Il **filtraggio punti della trama** variante può essere riprodotta usando codice simile al seguente:  
+ La variante **Filtraggio punti della trama** può essere riprodotta usando codice simile al seguente:  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;  
@@ -84,7 +79,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Esempio  
- Il **bilineare della trama** variante può essere riprodotta usando codice simile al seguente:  
+ La variante **Filtraggio bilineare della trama** può essere riprodotta usando codice simile al seguente:  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;   
@@ -98,7 +93,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Esempio  
- Il **trilineare della trama** variante può essere riprodotta usando codice simile al seguente:  
+ La variante **Filtraggio trilineare della trama** può essere riprodotta usando codice simile al seguente:  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;   
@@ -112,7 +107,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Esempio  
- Il **anisotropo della trama** variante può essere riprodotta usando codice simile al seguente:  
+ La variante **Filtraggio anisotropo della trama** può essere riprodotta usando codice simile al seguente:  
   
 ```  
 D3D11_SAMPLER_DESC sampler_description;   
@@ -125,6 +120,3 @@ sampler_description.MaxAnisotropy = 16;
 d3d_device->CreateSamplerState(&sampler_desc, &sampler);  
 d3d_context->PSSetSamplers(0, 1, &sampler  
 ```
-
-
-

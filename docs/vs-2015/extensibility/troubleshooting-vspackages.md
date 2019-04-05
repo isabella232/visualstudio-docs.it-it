@@ -1,27 +1,22 @@
 ---
 title: Risoluzione dei problemi relativi a pacchetti VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764003"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001494"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 3.  Verificare le voci del Registro di sistema di VSPackage.  
   
-     Per altre informazioni, vedere [la registrazione di pacchetti VSPackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) e [gestione dei pacchetti VSPackage](../extensibility/managing-vspackages.md).  
+     Per altre informazioni, vedere [la registrazione di pacchetti VSPackage](internals/registering-vspackages.md) e [gestione dei pacchetti VSPackage](../extensibility/managing-vspackages.md).  
   
 4.  Aprire il **Output** finestra dell'istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che non riesce a caricare il pacchetto VSPackage. Informazioni sui motivi per cui il pacchetto VSPackage non riesce a caricare potrebbero essere visualizzate in tale finestra.  
   
@@ -57,7 +52,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 5.  Esaminare il log attività.  
   
-     Per altre informazioni, vedere [procedura: usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
+     Per altre informazioni, vedere [Procedura: Usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
   
 6.  Per altre informazioni sulle eccezioni generate dall'IDE, fare clic su **eccezioni** nel **Debug** menu per abilitare le eccezioni. Nel **eccezioni** nella finestra di dialogo selezionare i tipi di eccezioni intorno al quale si desiderano altre informazioni.  
   
@@ -96,7 +91,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 2.  Usare il log attività.  
   
-     Tracciare il comportamento di VSPackage scrivendo informazioni nel log attività in punti chiave. Questa tecnica è particolarmente utile quando si esegue un pacchetto VSPackage in un ambiente di vendita al dettaglio. Per altre informazioni, vedere [procedura: usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
+     Tracciare il comportamento di VSPackage scrivendo informazioni nel log attività in punti chiave. Questa tecnica è particolarmente utile quando si esegue un pacchetto VSPackage in un ambiente di vendita al dettaglio. Per altre informazioni, vedere [Procedura: Usare il Log attività](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Usare i simboli pubblici.  
   
@@ -126,10 +121,9 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
   
 2. Per codice non gestito, trovare il CLSID del pacchetto VSPackage nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo del Registro di sistema CLSID:  
   
-    Studio HKLM\Software\Microsoft\Visual\\*\<versione >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    Assicurarsi che la voce InprocServer32 abbia il percorso corretto della dll VSPackage.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../extensibility/internals/vspackages.md)
-

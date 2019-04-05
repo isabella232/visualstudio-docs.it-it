@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: usare procedure guidate con modelli di progetto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare le procedure guidate con modelli di progetto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783754"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59001817"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>Procedura: utilizzare procedure guidate con modelli di progetto
+# <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare procedure guidate con modelli di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> che, se implementata, consente di eseguire il codice personalizzato quando un utente crea un progetto da un modello.  
@@ -244,7 +239,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
      Anche in questo caso, non dimenticare le virgolette. Si dovrebbe essere visualizzata una riga nell'output simile al seguente  
   
-     **Token di chiave pubblica è <token>**  
+     **Token di chiave pubblica è \<token >**  
   
      Prendere nota di questo valore.  
   

@@ -1,14 +1,9 @@
 ---
 title: Estendere modelli e diagrammi UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794764"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001230"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estendere modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
   
  Il team degli strumenti di Fabrikam appronta una serie di miglioramenti per i team di sviluppo. Nelle sezioni seguenti sono descritti i tipi diversi di estensione che è possibile definire. È possibile combinare tra loro molte di queste tecniche in un'unica estensione di Visual Studio.  
   
- Per altre informazioni, vedere questo video: ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I Series: strumenti ed estendibilità ULM](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Per altre informazioni, vedere questo video: ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I Series: Strumenti ed estendibilità ULM](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
 ##  <a name="Requirements"></a> Requisiti  
   
@@ -81,10 +76,10 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
   
  Gli sviluppatori di Fabrikam creano un codice che imposta automaticamente il colore di un elemento dipendente dal relativo stereotipo. Questo consente agli utenti di distinguere più facilmente i diversi ruoli svolti dagli elementi nei modelli.  
   
- Per altre informazioni, vedere [procedura: rispondere alle modifiche in un modello UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Per altre informazioni, vedere [Procedura: Rispondere alle modifiche in un modello UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Bus di modelli  
- Il bus di modelli consente di accedere a un diagramma o un modello da un altro diagramma o da uno progetto [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Consente anche di distribuire le informazioni su più modelli, in modo tale che più persone possano lavorare contemporaneamente sul modello combinato.  
+ Il bus di modelli consente di accedere a un diagramma o un modello da un altro diagramma o da un'altra estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Consente anche di distribuire le informazioni su più modelli, in modo tale che più persone possano lavorare contemporaneamente sul modello combinato.  
   
  Fabrikam usa gli elementi nei diagrammi di attività per rappresentare l'attrezzatura per la gestione dei bagagli. Ogni apparecchiatura può avere una specifica più dettagliata in un altro diagramma, che può trovarsi in un altro modello. I vincoli di convalida nel diagramma di flusso dei bagagli possono recuperare le proprietà rilevanti dell'attrezzatura da altri diagrammi. I riferimenti agli altri diagrammi vengono archiviati in proprietà aggiuntive definite negli stereotipi.  
   
@@ -118,7 +113,7 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
   
 |**Categoria**|**Collegamenti**|  
 |------------------|---------------|  
-|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: strumenti ed estendibilità ULM](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: Estendibilità e strumenti UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 ## <a name="see-also"></a>Vedere anche  
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
  [Riferimento API per l'estensibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

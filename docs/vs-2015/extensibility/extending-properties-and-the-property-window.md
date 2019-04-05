@@ -1,14 +1,9 @@
 ---
 title: Estensione delle proprietà e la finestra delle proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - STrackSelection interface, supporting Property Browser
 - SelectedObjects property
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed118f63210e5d26a46383fe6de3f3b690f62d42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c9ec498aca375cb5c63a574ebc72ab04219eb047
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955037"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Estensione delle proprietà e della finestra Proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +34,3 @@ Il **proprietà** finestra consente di visualizzare e modificare le proprietà d
   
  [Recupero delle proprietà del progetto](../extensibility/getting-project-properties.md)  
  Viene illustrato come ottenere le proprietà del progetto.
-

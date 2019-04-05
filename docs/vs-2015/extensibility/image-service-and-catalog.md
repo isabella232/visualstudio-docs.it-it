@@ -1,21 +1,17 @@
 ---
 title: Immagine di servizio e catalogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774367"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001241"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +104,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 
 |||  
 |-|-|  
-|**Sottoelemento**|**Definizione**|  
+|**Subelement**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|  
 |GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID|  
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
@@ -170,7 +166,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attributo** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               [Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br />-Riferimento a una risorsa un componente assoluto<br />-Un percorso di un file contenente una risorsa nativa                                                                                                                                                                                                                                                                                                               |
-|  Sfondo   | [Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Illuminazione:* l'origine può essere usata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em>l'origine può essere usata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere usata su qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere usata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere usata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se si omette l'attributo in Background, l'origine sono utilizzabili in qualsiasi dello sfondo.<br /><br /> Se è in Background *Light*, *scuro*, *HighContrastLight*, oppure *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o impostato su sfondo *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo. |
+|  Sfondo   | [Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em>l'origine può essere usata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se si omette l'attributo in Background, l'origine sono utilizzabili in qualsiasi dello sfondo.<br /><br /> Se è in Background *Light*, *scuro*, *HighContrastLight*, oppure *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o impostato su sfondo *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:  
@@ -178,8 +174,8 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|\<Dimensioni >|Valore|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
-|\<SizeRange >|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
+|\<Size>|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
+|\<SizeRange>|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
 |\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini della larghezza specificata e dell'altezza (espressa in unità di dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima per la larghezza/altezza massima (in unità di dispositivo), inclusi.|  
 
@@ -244,7 +240,7 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
 
     -   Obbligatorio se si usa la **BrushToColorConverter** per il ImageThemingUtilities. **ImageBackgroundColor** nell'interfaccia utente di WPF  
 
--   **Microsoft.VisualStudio.Shell. \<VSVersion >,0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
     -   Obbligatorio se si usa la **IVsUIObject** tipo  
 
@@ -655,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Aggiornare il codice per usare il servizio immagini per richiedere i moniker tramite il mapping aggiornato. (Ciò potrebbe significare aggiornare a **CrispImages** per codice gestito, o richiedere gli HBITMAP o gli oggetti HICON al servizio di immagine e passarli intorno a per il codice nativo.)  
 
 ## <a name="testing-your-images"></a>Le immagini di test  
- È possibile utilizzare lo strumento Visualizzatore di libreria di immagini per testare i manifesti di immagine per assicurarsi che tutto ciò che è stato creato correttamente. È possibile trovare lo strumento nel [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Documentazione relativa a questo e altri strumenti sono reperibili [qui](http://aka.ms/VSImageThemeTools).  
+ È possibile utilizzare lo strumento Visualizzatore di libreria di immagini per testare i manifesti di immagine per assicurarsi che tutto ciò che è stato creato correttamente. È possibile trovare lo strumento nel [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Documentazione relativa a questo e altri strumenti sono reperibili [qui](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Risorse aggiuntive  
 
@@ -972,11 +968,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Document|  
         |GlyphForwardType||GoToNext|  
-        |GlyphCallersGraph||Callto://|  
+        |GlyphCallersGraph||CallTo|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
         |GlyphMaybeReference||QuestionMark|  
-        |GlyphMaybeCaller||Callto://|  
+        |GlyphMaybeCaller||CallTo|  
         |GlyphMaybeCall||CallFrom|  
         |GlyphExtensionMethod||ExtensionMethod|  
         |GlyphExtensionMethodInternal||ExtensionMethod|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

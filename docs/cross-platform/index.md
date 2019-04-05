@@ -1,14 +1,20 @@
 ---
 layout: LandingPage
 title: Sviluppo di app per dispositivi mobili con C++
-description: 'Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.'
+description: Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.
 ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
-  - apexprodleads
+- apexprodleads
+ms.openlocfilehash: d9c50abb749829843c7794688b94bf84f5bc1fb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324552"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentazione per lo sviluppo di app per dispositivi mobili con C++
 

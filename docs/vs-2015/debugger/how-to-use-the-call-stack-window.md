@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: usare la finestra Stack di chiamate | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Utilizzare la finestra Stack di chiamate | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -33,18 +28,18 @@ ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c45f0a645945e68b7b3d21eefe2f981b9b4b352f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954852"
 ---
-# <a name="how-to-use-the-call-stack-window"></a>Procedura: utilizzare la finestra Stack di chiamate
+# <a name="how-to-use-the-call-stack-window"></a>Procedura: Utilizzare la finestra Stack di chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate di funzione o routine attualmente presenti nello stack.  
+Tramite la finestra **Stack di chiamate** è possibile visualizzare le chiamate di funzione o di routine attualmente presenti nello stack.  
   
  Il **Stack di chiamate** viene visualizzato il nome di ogni funzione e il linguaggio di programmazione in cui è scritto. Il nome della funzione o della procedura può essere seguito da informazioni facoltative quali il nome del modulo, il numero di riga, oltre a nomi, tipi e valori di parametri. La visualizzazione di queste informazioni opzionali può essere attivata o disattivata.  
   
@@ -63,7 +58,7 @@ Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate
  Utilizzando il menu di scelta rapida, è possibile scegliere se visualizzare o meno le chiamate tra thread.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, selezionare **Importa / Esporta impostazioni** nel **Tools** menu. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Per visualizzare la finestra Stack di chiamate in modalità di interruzione o di esecuzione  
   
@@ -75,33 +70,33 @@ Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>Per visualizzare i frame del codice non utente nella finestra Stack di chiamate  
   
--   Fare doppio clic il **Stack di chiamate** finestra e selezionare **Mostra codice esterno**.  
+-   Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Mostra codice esterno**.  
   
 ### <a name="to-switch-to-another-stack-frame"></a>Per passare a un altro stack frame  
   
 1.  Nel **Stack di chiamate** finestra, fare doppio clic su frame con codice e i dati che si desidera visualizzare.  
   
-2.  Selezionare **passa al Frame**.  
+2.  Selezionare **Passa al frame**.  
   
-     Accanto al frame selezionato verrà visualizzata una freccia verde ricurva. Il puntatore di esecuzione rimarrà nel frame originale, sempre contrassegnato dalla freccia gialla. Se si seleziona **passaggio** oppure **continua** dal **Debug** menu, l'esecuzione continuerà nel frame originale, non nel frame selezionato.  
+     Accanto al frame selezionato verrà visualizzata una freccia verde ricurva. Il puntatore di esecuzione rimarrà nel frame originale, sempre contrassegnato dalla freccia gialla. Se si sceglie **Esegui** o **Continua** dal menu **Debug**, l'esecuzione continuerà nel frame originale, non nel frame selezionato.  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>Per visualizzare le chiamate da o verso altri thread  
   
--   Fare doppio clic il **Stack di chiamate** finestra e selezionare **Includi chiamate da e verso altri thread**.  
+-   Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Includi chiamate da e verso altri thread**.  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>Per visualizzare il codice sorgente di una funzione dello stack di chiamate  
   
--   Nel **Stack di chiamate** finestra, pulsante destro del mouse la funzione di codice la cui origine è da visualizzare e selezionare **Vai a codice sorgente**.  
+-   Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si vuole esaminare il codice sorgente e selezionare **Vai a codice sorgente**.  
   
 ### <a name="to-visually-trace-the-call-stack"></a>Per rilevare visivamente lo stack di chiamate  
   
-1.  Nel **Stack di chiamate** finestra, aprire il menu di scelta rapida. Scegli **Mostra Stack di chiamate nella mappa del codice**. (Tastiera: **CTRL** + **MAIUSC** + **`**)  
+1.  Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegli **Mostra Stack di chiamate nella mappa del codice**. (Tastiera: **CTRL** + **MAIUSC** + **`**)  
   
      Visualizzare [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Per visualizzare il codice disassembly di una funzione dello stack di chiamate  
   
--   Nel **Stack di chiamate** finestra, pulsante destro del mouse la funzione cui disassembly del codice si desidera visualizzare e selezionare **Vai a Disassembly**.  
+-   Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si desidera esaminare il codice del disassembly e selezionare **Vai a disassembly**.  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>Per eseguire una funzione specifica dalla finestra Stack di chiamate  
   
@@ -116,9 +111,9 @@ Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate
 -   Nel **Stack di chiamate** finestra, fare doppio clic il frame che mostra il modulo contenente i simboli che si desidera ricaricare e selezionare **Carica simboli**.  
   
 ## <a name="loading-symbols"></a>Caricamento dei simboli  
- Nel **Stack di chiamate** finestra, è possibile caricare i simboli per il codice che non dispone attualmente caricati i simboli di debug. Questi simboli possono essere simboli di sistema o .NET Framework scaricati dai server dei simboli pubblici Microsoft o simboli contenuti in un percorso nel computer del quale si esegue il debug.  
+ Nella finestra **Stack di chiamate** è possibile caricare i simboli di debug per un codice che non ne dispone. Questi simboli possono essere simboli di sistema o .NET Framework scaricati dai server dei simboli pubblici Microsoft o simboli contenuti in un percorso nel computer del quale si esegue il debug.  
   
- Vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 #### <a name="to-load-symbols"></a>Per caricare i simboli  
   
@@ -128,15 +123,15 @@ Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate
   
 #### <a name="to-set-the-symbol-path"></a>Per impostare il percorso dei simboli  
   
-1.  Nel **Stack di chiamate** finestra, scegliere **impostazioni simboli** dal menu di scelta rapida.  
+1.  Nella finestra **Stack di chiamate** scegliere **Impostazioni simboli** nel menu di scelta rapida.  
   
-     Il **le opzioni** verrà visualizzata la finestra di dialogo e i **simboli** viene visualizzata la pagina.  
+     Viene visualizzata la finestra di dialogo **Opzioni** con la pagina **Simboli**.  
   
 2.  Fare clic su **delle impostazioni dei simboli**.  
   
-3.  Nel **opzioni** finestra di dialogo fare clic sull'icona della cartella.  
+3.  Nella finestra di dialogo **Opzioni** fare clic sull'icona della cartella.  
   
-     Nel **percorsi di file (con estensione pdb) di simboli** casella, viene visualizzato un cursore.  
+     Viene visualizzato un cursore nella casella **Percorsi dei file di simboli (pdb)**.  
   
 4.  Digitare il percorso di directory del simbolo sul computer del quale si esegue il debug. Per il debug locale, è il computer locale. Per il debug remoto, è il computer remoto.  
   
@@ -144,12 +139,7 @@ Tramite il **Stack di chiamate** finestra, è possibile visualizzare le chiamate
   
 ## <a name="see-also"></a>Vedere anche  
  [Codice misto e informazioni mancanti nella finestra Stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Procedura: modificare il formato numerico del Debugger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
- [Visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Procedura: Modificare il formato numerico del Debugger Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Uso di punti di interruzione](../debugger/using-breakpoints.md)
-
-
-
-
-

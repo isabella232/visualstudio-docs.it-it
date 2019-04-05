@@ -1,25 +1,22 @@
 ---
 title: Esplorare il modello UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966149"
 ---
 # <a name="navigate-the-uml-model"></a>Esplorare il modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Questo argomento introduce i principali tipi di modello UML.
   
  Se si elimina un elemento dal modello, viene automaticamente eliminata qualsiasi relazione di cui fa parte e la proprietà all'altra estremità viene aggiornata.  
   
- Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<` *tipo*`>`.  
+ Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<`*Tipo di*`>`.  
   
  Per altre informazioni sull'attraversamento di relazioni, vedere [esplorare relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -61,7 +58,7 @@ Questo argomento introduce i principali tipi di modello UML.
   
  Ogni elemento del modello viene creato con un proprietario. Per altre informazioni, vedere [creare elementi e relazioni nei modelli UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
   
- ![Diagramma classi: modello, diagramma, forma ed elemento](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![Diagramma di classi: Modello, diagramma, forma ed elemento](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>Forme e diagrammi  
  Gli elementi nel modello UML possono essere visualizzati nei diagrammi. Diversi tipi di diagrammi possono visualizzare sottotipi diversi di IElement.  
@@ -75,7 +72,7 @@ Questo argomento introduce i principali tipi di modello UML.
 ## <a name="access-to-the-model-in-extensions"></a>Accesso al modello nelle estensioni  
  Nelle estensioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] definite come componenti MEF, è possibile dichiarare proprietà che importano informazioni dal contesto in cui l'estensione viene eseguita.  
   
-|Tipo di attributo|A cosa consente di accedere|Ulteriori informazioni|  
+|Tipo di attributo|A cosa consente di accedere|Altre informazioni|  
 |--------------------|----------------------------------|----------------------|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (in Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Il diagramma con stato attivo corrente.|[Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (in Microsoft.VisualStudio.Modeling.Sdk.[versione].dll)|Consente di raggruppare le modifiche in transazioni.|[Collegare aggiornamenti di modelli UML tramite transazioni](../modeling/link-uml-model-updates-by-using-transactions.md)|  
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>Vedere anche  
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

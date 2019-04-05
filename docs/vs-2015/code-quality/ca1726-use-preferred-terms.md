@@ -1,14 +1,9 @@
 ---
 title: 'CA1726: Utilizzare termini preferiti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220519"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001842"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizzare termini preferiti
+# <a name="ca1726-use-preferred-terms"></a>CA1726: Usare termini preferiti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1726: utilizzare termini Preferiti](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1726: Utilizzare termini Preferiti](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) su docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -46,28 +41,28 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1726: utiliz
   
 |Termine obsoleto|Termine preferito|  
 |-------------------|--------------------|  
-|non sono|Non|  
+|non sono|AreNot|  
 |Annullato|Annullato|  
 |Impossibile|Non è possibile|  
 |ComPlus|EnterpriseServices|  
 |Non è stato possibile|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|Non|  
-|Dont|Non|  
+|Doesnt|DoesNot|  
+|Dont|DoNot|  
 |Flag o flag|Non vi è alcun termine sostitutivo. Non usare.|  
 |non veniva|HadNot|  
 |Non è ancora|HasNot|  
 |non hai|HaveNot|  
 |Indici|Indexes|  
-|non è|IsNot|  
-|Account di accesso|Accesso|  
-|Disconnessione|Disconnessione|  
+|Isnt|IsNot|  
+|LogIn|LogOn|  
+|LogOut|LogOff|  
 |Shouldnt|ShouldNot|  
-|Accesso Sign-on|SignIn|  
-|Conclusione|Disconnessione|  
+|SignOn|SignIn|  
+|SignOff|Disconnessione|  
 |Wasnt|WasNot|  
 |non sono stati|WereNot|  
-|Non riuscita|Non|  
+|Non riuscita|WillNot|  
 |Wouldnt|WouldNot|  
 |Scrivibile|Scrivibile|  
   
@@ -79,4 +74,3 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1726: utiliz
   
 ## <a name="related-rules"></a>Regole correlate  
  [Avvisi di denominazione](../code-quality/naming-warnings.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Creazione di un Windows Form di controllo della casella degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781712"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001385"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creazione di un controllo della casella degli strumenti Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 5.  Nel **proprietà** finestra, impostare i valori seguenti per i controlli nell'area di progettazione.  
   
-    |Control|Proprietà|Valore|  
+    |Control|Proprietà|Value|  
     |-------------|--------------|-----------|  
     |`Label1`|**per**|""|  
     |`Button1`|**Name**|btnReset|  
@@ -213,11 +208,10 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
      Reimposta il contatore **0**.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- Quando si crea un controllo della **casella degli strumenti** , Visual Studio crea un file denominato *NomeProgetto*.vsix nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il file VSIX in una rete o in un sito Web. Quando un utente apre il file VSIX, il controllo viene installato e aggiunto a Visual Studio **casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il file VSIX per la [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) del sito Web in modo che gli utenti potranno trovarlo cercando il **strumenti / estensioni e aggiornamenti** finestra di dialogo.  
+ Quando si crea un controllo della **casella degli strumenti** , Visual Studio crea un file denominato *NomeProgetto*.vsix nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il file VSIX in una rete o in un sito Web. Quando un utente apre il file VSIX, il controllo viene installato e aggiunto a Visual Studio **casella degli strumenti** nel computer dell'utente. In alternativa, è possibile caricare il file VSIX per la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) del sito Web in modo che gli utenti potranno trovarlo cercando il **strumenti / estensioni e aggiornamenti** finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione della casella degli strumenti](../misc/extending-the-toolbox.md)   
  [Creazione di un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Estensione di altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Nozioni fondamentali sullo sviluppo di controlli Windows Form](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

@@ -1,34 +1,29 @@
 ---
 title: Persistenza del progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ff836f56601adeba7b3df675207701f6e2d6e7fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729568"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001733"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti usano elementi di progetto che rappresentano file; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] supporta anche progetti i cui dati sono non basate su file. Entrambi i file di proprietà del progetto e il file di progetto devono essere persistente. L'IDE indica il progetto per salvare se stesso o un elemento del progetto.  
   
- Modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi di progetto in base ai requisiti del tipo di progetto specifico. Questi modelli in un secondo momento possono essere salvati come file di progetto e gestiti dall'IDE tramite la soluzione. Per altre informazioni, vedere [creazione di istanze da usando progetto le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluzioni](../../extensibility/internals/solutions.md).  
+ Modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi di progetto in base ai requisiti del tipo di progetto specifico. Questi modelli in un secondo momento possono essere salvati come file di progetto e gestiti dall'IDE tramite la soluzione. Per altre informazioni, vedere [creazione di istanze da usando progetto le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluzioni](../../extensibility/internals/solutions-overview.md).  
   
  Elementi di progetto possono essere basata su file o non basate su file:  
   
@@ -52,4 +47,3 @@ La persistenza è una considerazione di progettazione chiave per il progetto. La
 ## <a name="see-also"></a>Vedere anche  
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

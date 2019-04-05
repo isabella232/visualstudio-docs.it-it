@@ -1,23 +1,20 @@
 ---
 title: Creare un'applicazione dati semplice con WPF ed Entity Framework 6 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922198"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001559"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +27,9 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
 ## <a name="install-and-connect-to-northwind"></a>Installare e connettersi a Northwind  
  Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB. Dovrebbe funzionare con altri prodotti di database SQL anche se il provider di dati ADO.NET per il prodotto supporta Entity Framework.  
   
-1.  Se hai già fatto, installare SQL Server 2014 LocalDB Express a 32 bit dal [pagina di download edizioni di SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Se hai già fatto, installare SQL Server 2014 LocalDB Express a 32 bit dal [pagina di download edizioni di SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
-2.  Installare il database di esempio Northwind, seguendo le istruzioni riportate qui: [i database di esempio di installazione di SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+2.  Installare il database di esempio Northwind, seguendo le istruzioni riportate qui: [Installare SQL Server database di esempio](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Aggiungere nuove connessioni](../data-tools/add-new-connections.md) per Northwind.  
   
@@ -393,7 +390,7 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Aggiungere pulsanti per spostarsi, aggiungere, aggiornare ed eliminare  
  Nelle applicazioni Windows Form, ottenere un oggetto di BindingNavigator con i pulsanti per spostarsi tra le righe in un database e l'esecuzione di operazioni CRUD di base. WPF fornisce un controllo BindingNavigator ma sono abbastanza facili da verificare. È possibile farlo con pulsanti all'interno di un elemento StackPanel orizzontale nella riga inferiore della griglia della pagina e si verranno associare i pulsanti con i comandi che sono associati ai metodi nel code-behind.  
   
- Esistono quattro parti per la logica di comando: (1) i comandi, (2) le associazioni, (3) i pulsanti e (4) i gestori comando nel code-behind.  
+ Vi sono quattro parti per la logica di comando: (1) i comandi, (2) le associazioni, (3) i pulsanti e (4) i gestori comando nel code-behind.  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Aggiungere i comandi, associazioni e i pulsanti in XAML  
   
@@ -709,4 +706,3 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [documentazione di Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)
-

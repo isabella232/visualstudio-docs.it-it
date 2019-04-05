@@ -1,14 +1,9 @@
 ---
 title: Localizzazione di pacchetti VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f6bc666e244fed2bc2922ce4878434730a643e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955405"
 ---
 # <a name="localizing-vsix-packages"></a>Localizzazione di pacchetti VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +31,17 @@ Creando un file vsixlangpack per ogni lingua di destinazione e inserendo i file 
   
  MyExtension.dll  
   
- Extension. vsixmanifest  
+ Extension.vsixmanifest  
   
  [Content_Types] XML  
   
  es-ES  
   
- Vsixlangpack  
+ Extension.vsixlangpack  
   
  fr-FR  
   
- Vsixlangpack  
+ Extension.vsixlangpack  
   
 > [!NOTE]
 >  I modelli di progetto supportato da VSIX di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generare un manifesto VSIX e assegnargli il nome vsixmanifest. Quando Visual Studio compila il progetto, verrà copiato il contenuto del file in Extension. vsixmanifest nel pacchetto VSIX.  
@@ -68,7 +63,7 @@ Creando un file vsixlangpack per ogni lingua di destinazione e inserendo i file 
  L'esempio seguente illustra le parti pertinenti di un file Extension. vsixmanifest, insieme al file vsixlangpack corrispondente per lo spagnolo. I valori dal language pack di sostituiscono i valori dal manifesto se le impostazioni locali di Visual Studio del computer di destinazione sono impostata sullo spagnolo.  
   
 ### <a name="code"></a>Codice  
- [Extension. vsixmanifest]  
+ [Extension.vsixmanifest]  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -85,7 +80,7 @@ Creando un file vsixlangpack per ogni lingua di destinazione e inserendo i file 
 </VSIX>  
 ```  
   
- [Vsixlangpack]  
+ [Extension.vsixlangpack]  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -101,4 +96,3 @@ Creando un file vsixlangpack per ogni lingua di destinazione e inserendo i file 
  [Elemento VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)   
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Modello di progetto VSIX](../extensibility/vsix-project-template.md)
-

@@ -1,14 +1,9 @@
 ---
 title: App Run Windows Store in un computer remoto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,18 +13,18 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955013"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Eseguire app di Windows Store in un computer remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_content")  
+Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
   
  Tramite l'applicazione Visual Studio Remote Tools è possibile avviare, eseguire il debug, profilare e testare un'applicazione Windows Store in esecuzione su un dispositivo utilizzando un secondo computer che esegue Visual Studio. L'esecuzione su un dispositivo remoto può essere particolarmente efficiente quando il computer che esegue Visual Studio non supporta le funzionalità specifiche delle applicazioni Windows Store, come il tocco, la georilevazione e l'orientamento fisico. In questo argomento vengono descritte le procedure per configurare e avviare una sessione remota.  
   
@@ -95,9 +90,9 @@ Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_con
   
 |Versione|Collegamento|Note|
 |-|-|-|
-|Visual Studio 2015 Update 3|[Remote tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario. Scaricare sempre la versione corrispondente del sistema operativo del dispositivo (x 86, x64 o ARM versione)|
-|Visual Studio 2015 (precedente)|[Remote tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario. Scaricare sempre la versione corrispondente del sistema operativo del dispositivo (x 86, x64 o ARM versione)|
-|Visual Studio 2013|[Remote tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2013|
+|Visual Studio 2015 Update 3|[Remote Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario. Scaricare sempre la versione corrispondente del sistema operativo del dispositivo (x 86, x64 o ARM versione)|
+|Visual Studio 2015 (precedente)|[Remote Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials gratuito o è possibile accedere solo con una sottoscrizione valida di Visual Studio. Quindi aprire nuovamente il collegamento se necessario. Scaricare sempre la versione corrispondente del sistema operativo del dispositivo (x 86, x64 o ARM versione)|
+|Visual Studio 2013|[Remote Tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2013|
   
  È possibile scegliere di scaricare il programma di installazione oppure è possibile eseguirlo immediatamente. Quando si esegue il programma di installazione, accettare il contratto di licenza, quindi scegliere **Installa**.  
   
@@ -173,11 +168,8 @@ Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_con
 ##  <a name="BKMK_RunRemoteDebug"></a> Esecuzione di una sessione di debug remoto  
  È possibile avviare, arrestare ed esplorare una sessione di debug remoto come una sessione locale. Prima di avviare il debug, assicurarsi che Remote Debugging Monitor sia in esecuzione sul dispositivo remoto.  
   
- Scegliere quindi **Avvia debug** dal menu **Debug** (tastiera: F5). Il progetto viene ricompilato, quindi distribuito e avviato sul dispositivo remoto. Il debugger sospende l'esecuzione in corrispondenza dei punti di interruzione. Nel codice sarà possibile quindi eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine. Scegli **Termina debug** per terminare la sessione di debug e chiudere l'app remota. Per altre informazioni, vedere [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Quindi scegliere **Avvia debug** nel **Debug** menu (tastiera: . Il progetto viene ricompilato, quindi distribuito e avviato sul dispositivo remoto. Il debugger sospende l'esecuzione in corrispondenza dei punti di interruzione. Nel codice sarà possibile quindi eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine. Scegli **Termina debug** per terminare la sessione di debug e chiudere l'app remota. Per altre informazioni, vedere [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Test delle applicazioni Store con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Eseguire il debug di app in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-
