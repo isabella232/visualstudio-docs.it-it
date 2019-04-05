@@ -1,12 +1,9 @@
 ---
 title: 'Procedura dettagliata: Creazione di un processore di direttiva personalizzato | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,15 +11,15 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969719"
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: creazione di un processore di direttiva personalizzato
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: Creazione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Processori di direttiva * funzionano aggiungendo codice per il *classe transformation generata*. Se si chiama un *direttiva* da un *modello di testo*, il resto del codice scritto nel modello di testo può basarsi sulle funzionalità che fornisce la direttiva.  
@@ -611,7 +608,7 @@ End Property
 
 4.  Per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] solo, aprire il **Project** dal menu **proprietà CustomDP**. Nel **Application** nella scheda **spazio dei nomi radice**, eliminare il valore predefinito, `CustomDP`.  
 
-5.  Nel **File** menu, fare clic su **Salva tutto**.  
+5.  Nel menu **File** fare clic su **Salva tutto**.  
 
 6.  Scegliere **Compila soluzione** dal menu **Compila**.  
 
@@ -663,7 +660,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     La chiave del Registro di sistema deve contenere i valori seguenti:  
 
 
-   |   nome    |  Tipo  |                                   Dati                                   |
+   |   Nome    |  Tipo  |                                   Dati                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (Predefinito) | REG_SZ |                             (valore non impostato)                              |
    |   Classe   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
@@ -672,7 +669,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:  
 
 
-   |   nome    |  Tipo  |               Dati                |
+   |   Nome    |  Tipo  |               Dati                |
    |-----------|--------|-----------------------------------|
    | (Predefinito) | REG_SZ |          (valore non impostato)          |
    |   Classe   | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  In questo esempio, il valore del parametro `Processor` è `CustomDirectiveProcessor`. Il valore del parametro `Processor` deve corrispondere al nome della chiave del Registro di sistema per il processore.  
 
-5.  Nel **File** menu, fare clic su **Salva tutto**.  
+5.  Nel menu **File** fare clic su **Salva tutto**.  
 
 #### <a name="to-test-the-directive-processor"></a>Per testare il processore di direttiva  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Per visualizzare l'output in un browser, in **Esplora soluzioni**, fare doppio clic su TestDP. htm e fare clic su **Visualizza nel Browser**.  
 
      L'output deve corrispondere al testo originale con la differenza che deve essere in formato HTML. Ogni nome di elemento deve essere visualizzato in grassetto.
-
-
-

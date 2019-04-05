@@ -1,14 +1,9 @@
 ---
 title: Gerarchia lessicale dei tipi di simboli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dac4ae8357d62813abb3f4735ec6e1f8b552d324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783259"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969451"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Gerarchia lessicale dei tipi di simboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,10 +49,7 @@ La tabella seguente illustra i tipi di simboli nella gerarchia lessicale.
 >  Proprietà dei simboli aggiuntive potrebbero essere disponibili a seconda del tipo di simbolo. Queste proprietà sono elencate negli argomenti simbolo singoli.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Gerarchia delle classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
- [I simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
+ [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

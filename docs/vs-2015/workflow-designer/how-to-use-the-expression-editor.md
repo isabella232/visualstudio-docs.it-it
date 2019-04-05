@@ -1,11 +1,8 @@
 ---
-title: "Procedura: usare l'Editor di espressioni | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Usare l'Editor di espressioni | Microsoft Docs"
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,15 +10,15 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969903"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
+# <a name="how-to-use-the-expression-editor"></a>Procedura: Usare l’editor espressioni
 L'editor espressioni è un controllo di [!INCLUDE[wfd1](../includes/wfd1-md.md)] usato in molte attività del flusso di lavoro per immettere e valutare queste espressioni. L'editor espressioni fornisce un'esperienza di modifica IDE completa che include, tra le altre funzionalità, IntelliSense, colorazione, ParamInfo, controllo errori di ortografia durante la digitazione. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor di espressioni** nella finestra di dialogo.  
   
  Le espressioni sono valori letterali o codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associati ad argomenti o proprietà. Contengono elementi valore, ad esempio variabili, costanti, valori letterali, proprietà, che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che l'uso delle maiuscole non è rilevante, il confronto viene eseguito usando uguale a un singolo segno più ("=") anziché ("= ="), gli operatori booleani sono le parole "and" e "or" anziché i simboli "& &" e "&#124;&#124;", e **Nothing**  viene usato al posto di **null**. Per altre informazioni sulle espressioni e operatori nella [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e per alcuni esempi, vedere [operatori ed espressioni in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).  

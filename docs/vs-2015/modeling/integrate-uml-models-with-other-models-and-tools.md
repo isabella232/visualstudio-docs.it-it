@@ -1,25 +1,22 @@
 ---
 title: Integrare modelli UML con altri modelli e strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969204"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrare modelli UML con altri modelli e strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ I modelli UML possono essere integrati con altri modelli e linguaggi specifici d
   
    Per altre informazioni, vedere [definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Per un progetto di esempio in cui un profilo viene distribuito con comandi di menu e gestori movimenti, vedere [esempio: profili UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Per un progetto di esempio in cui un profilo viene distribuito con comandi di menu e gestori movimenti, vedere [esempio: I profili UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Riferimenti.** È possibile associare un insieme di stringhe a qualsiasi elemento UML. È possibile scrivere codice che archivia le informazioni, ad esempio un nome di file o il GUID di un altro elemento. Questa operazione può essere eseguita senza fornire definizioni aggiuntive. I riferimenti non sono direttamente visibili all'utente.  
   
@@ -68,12 +65,12 @@ I modelli UML possono essere integrati con altri modelli e linguaggi specifici d
   
 2. **Eventi VMSDK** può essere usato per propagare le modifiche all'esterno del modello, ad esempio, per modificare il nome del file di un documento collegato o per modificare un elemento in un altro modello.  
   
-   Per informazioni su questi due meccanismi, vedere [procedura: rispondere alle modifiche in un modello UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Per informazioni su questi due meccanismi, vedere [come: Rispondere alle modifiche in un modello UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Trascinare gli elementi per copiarli da un modello a un altro  
    È possibile consentire all'utente di creare elementi trascinando gli elementi in un diagramma UML. Non è necessario che l'elemento creato sia una copia dell'originale. Ad esempio, è possibile consentire all'utente di trascinare un diagramma di attività da Esplora soluzioni in un altro diagramma di attività per creare una nuova azione.  
   
-   Per altre informazioni, vedere [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) e [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   Per altre informazioni, vedere [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) e [come: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="samples"></a>Esempi  
  Vedere l'esempio di codice [collegamento di elementi UML a diagrammi o altri file](http://go.microsoft.com/fwlink/?LinkId=213813). L'esempio consente agli utenti di trascinare un file su qualsiasi elemento UML e aprirlo successivamente facendo doppio clic sull'elemento. Ad esempio, è possibile collegare un diagramma di attività a un elemento del caso di utilizzo. Un'icona mostra gli elementi che contengono collegamenti.  
@@ -98,15 +95,12 @@ I modelli UML possono essere integrati con altri modelli e linguaggi specifici d
   
    Nell'esempio viene illustrato come gestire gli elementi trascinati da Esplora risorse (o Esplora File), Esplora soluzioni e altri elementi UML.  
   
-  Per un esempio in cui un modello UML è essere letto da un linguaggio DSL, vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+  Per un esempio in cui un modello UML è essere letto da un linguaggio DSL, vedere [come: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Procedura: rispondere alle modifiche in un modello UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
- [Esempio: I profili UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
+ [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Procedura: Rispondere alle modifiche in un modello UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Esempio: Profili UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Collegamento di elementi UML a diagrammi o altri file](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-
