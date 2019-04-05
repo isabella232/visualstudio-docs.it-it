@@ -1,14 +1,9 @@
 ---
-title: "Procedura: firmare manifesti dell'applicazione e distribuzione | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Ripetere la firma dell'applicazione e i manifesti di distribuzione | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,23 +18,23 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967627"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: ripetere la firma dei manifesti dell'applicazione e di distribuzione
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel manifesto dell'applicazione per applicazioni Windows Forms, le applicazioni Windows Presentation Foundation (xbap) o soluzioni Office, è necessario firmare nuovamente l'applicazione e distribuzione dei manifesti con un certificato. Questo processo assicura che nei computer degli utenti finali non vengono installati file alterati.  
+Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel manifesto dell'applicazione per applicazioni Windows Forms, le applicazioni Windows Presentation Foundation (xbap) o soluzioni Office, è necessario firmare nuovamente l'applicazione e distribuzione dei manifesti con un certificato. Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.  
   
  Un altro scenario in cui si potrebbero accedere nuovamente i manifesti è quando i clienti vogliono firmare l'applicazione e manifesti della distribuzione con il proprio certificato.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Firma nuovamente l'applicazione e distribuzione di manifesti  
- Questa procedura presuppone che sono già state apportate modifiche al file manifesto dell'applicazione (con estensione manifest). Per altre informazioni, vedere [procedura: modificare le proprietà di distribuzione](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Questa procedura presuppone che sono già state apportate modifiche al file manifesto dell'applicazione (con estensione manifest). Per altre informazioni, vedere [Procedura: Modificare le proprietà di distribuzione](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per firmare nuovamente l'applicazione e distribuzione dei manifesti con Mage.exe  
   
@@ -125,12 +120,9 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
  [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
- [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md)  (Procedura: Abilitare le impostazioni di sicurezza ClickOnce)  
- [Procedura: impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Procedura: aggiungere un autore attendibile a un computer client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Procedura: Aggiungere un autore attendibile a un Computer Client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
-
-
-

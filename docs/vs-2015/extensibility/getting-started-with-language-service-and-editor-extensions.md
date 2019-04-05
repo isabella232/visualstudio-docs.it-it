@@ -1,26 +1,21 @@
 ---
 title: Introduzione a servizio di linguaggio e le estensioni dell'Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969255"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni dell'editor e dei servizi di linguaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "51735216"
 ## <a name="running-extensions-in-the-experimental-instance"></a>Estensioni in esecuzione nell'istanza sperimentale  
  È possibile isolare la versione di lavoro di Visual Studio mentre si sta sviluppando un'estensione distribuendolo in cartella sperimentale seguente (in Windows Vista e Windows 7):  
   
- *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*società*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  in cui *% LOCALAPPDATA %* è il nome dell'utente connesso *società* è il nome della società che possiede l'estensione, e *ExtensionID* è l'ID dell'estensione.  
   
@@ -89,10 +84,9 @@ ms.locfileid: "51735216"
   
  È anche possibile creare editor di componenti MEF da un'estensione del pacchetto di Visual Studio. Le procedure dettagliate seguenti per informazioni dettagliate, vedere:  
   
--   [Procedura dettagliata: Uso di un comando della shell con un'estensione dell'editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [Procedura dettagliata: Utilizzo di un comando della Shell con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Procedura dettagliata: Uso di una combinazione di tasti con un'estensione dell'editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Punti di estensione dei servizi di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
-

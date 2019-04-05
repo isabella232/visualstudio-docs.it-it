@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione modello di contenuto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968504"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ La visualizzazione modello di contenuto fornisce una rappresentazione grafica di
   
  Il modello di contenuto di un nodo viene rappresentato tramite un albero grafico espandibile con elementi e attributi visualizzati come nodi dell'albero. Per impostazione predefinita, viene espanso solo un livello. Le altre informazioni, ad esempio compositor, nomi di tipo, gruppi e altri contenitori, vengono posizionate in una barra verticale (in caso di espansione) lungo gli elementi e gli attributi che includono. Facendo doppio clic su una barra verticale, questa diventa orizzontale e l'albero viene compresso. Facendo doppio clic su una barra orizzontale, questa diventa verticale e l'albero viene espanso. Selezionando la barra verticale verranno selezionati tutti i nodi nel contenitore. Gli espansori saranno visualizzati sulla destra di un nodo quando un elemento può essere espanso o compresso.  
   
- Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, XML Schema Explorer e la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".  
+ Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, XML Schema Explorer e la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".  
   
 ## <a name="breadcrumb-bar"></a>Barra di navigazione  
  Tramite la barra di navigazione nella parte inferiore della visualizzazione modello di contenuto viene mostrato dove si trova il nodo selezionato nel set di schemi.  
@@ -97,7 +92,7 @@ La visualizzazione modello di contenuto fornisce una rappresentazione grafica di
 ## <a name="undoredo"></a>Annullamento/ripristino  
  La funzionalità di annullamento/ripristino è abilitata nella visualizzazione modello di contenuto per le seguenti azioni:  
   
--   Aggiunta di un singolo nodo tramite trascinamento.  
+-   Aggiunta di un singolo nodo con trascinamento della selezione.  
   
 -   Aggiunta di più nodi dalla finestra dei risultati della ricerca in Schema Explorer.  
   
@@ -123,6 +118,3 @@ La visualizzazione modello di contenuto fornisce una rappresentazione grafica di
   
 ## <a name="see-also"></a>Vedere anche  
  [Area di lavoro di Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

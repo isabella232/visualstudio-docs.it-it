@@ -1,14 +1,9 @@
 ---
 title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a0cd3a74c7d9f3b2a7bc76874c3f64afb44ca277
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc3d38344dccf93f4b032357b2cdef88a0a4a242
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965749"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ int EnumBoundBreakpoints( 
  [out] Restituisce un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) associato da questo evento oggetto che enumera tutti i punti di interruzione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti punti di interruzione associate; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti punti di interruzione associate; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  L'elenco dei punti di interruzione associati sia per quelli associati a questo evento e potrebbe non essere l'intero elenco di punti di interruzione associato da un punto di interruzione in sospeso. Per ottenere un elenco di tutti i punti di interruzione associato a un punto di interruzione in sospeso, chiamare il [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) metodo per ottenere l'oggetto associato [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) dell'oggetto e quindi chiamare il [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) metodo per ottenere un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) oggetto che contiene tutti i punti di interruzione associati per il punto di interruzione in sospeso.  
@@ -87,4 +82,3 @@ STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
-

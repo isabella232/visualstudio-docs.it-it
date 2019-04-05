@@ -1,27 +1,22 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773730"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969280"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per esaminare un problema dovuto a un oggetto mancante a causa della configurazione non corretta dello stato del dispositivo.  
@@ -113,6 +108,3 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
    Dopo aver determinato che la causa del problema di rendering potrebbe essere una funzione di profondità non configurata correttamente, è possibile usare queste informazioni insieme alla conoscenza del codice per individuare la posizione in cui la funzione di profondità è stata impostata in modo non corretto, per poi risolvere il problema. Se non si ha familiarità con il codice, è possibile cercare il problema usando gli indizi raccolti durante il debug, ad esempio, in base alla **Descrizione stencil profondità** in questo scenario, si potrebbero cercare le parole "depth" o "GREATER" nel codice. Dopo aver corretto il codice, ricompilare ed eseguire l'app per verificare che il problema di rendering sia stato risolto:  
   
    ![App dopo la risoluzione del problema](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

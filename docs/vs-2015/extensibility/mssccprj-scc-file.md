@@ -1,27 +1,22 @@
 ---
 title: MSSCCPRJ. File SCC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a04429bafb7da0b3d4922905bd712e82ba16a4ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966956"
 ---
 # <a name="mssccprjscc-file"></a>File MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +44,23 @@ Quando una soluzione di Visual Studio o un progetto viene inserito nel controllo
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Un'illustrazione del MSSCCPRJ. Formato di File di controllo del codice sorgente  
  Seguito è riportato un esempio del MSSCCPRJ. Formato di file di controllo del codice sorgente (i numeri di riga vengono forniti solo come guida e non devono essere incluse nel corpo del file):  
   
- [Riga 1] `SCC = This is a Source Code Control file`  
+ [Line 1] `SCC = This is a Source Code Control file`  
   
- [Riga 2]  
+ [Line 2]  
   
- [Riga 3] `[TestApp.sln]`  
+ [Line 3] `[TestApp.sln]`  
   
- [Riga 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Riga 5] `SCC_Project_Name = "$/TestApp"`  
+ [Line 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Riga 6]  
+ [Line 6]  
   
- [Riga 7] `[TestApp.csproj]`  
+ [Line 7] `[TestApp.csproj]`  
   
- [Riga 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Riga 9] `SCC_Project_Name = "$/TestApp"`  
+ [Line 9] `SCC_Project_Name = "$/TestApp"`  
   
  La prima riga indica lo scopo del file e funge da firma per tutti i file di questo tipo. Questa riga dovrebbe essere esattamente come in tutti i MSSCCPRJ. File SCC:  
   
@@ -82,4 +77,3 @@ Quando una soluzione di Visual Studio o un progetto viene inserito nel controllo
 ## <a name="see-also"></a>Vedere anche  
  [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)   
  [Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
-

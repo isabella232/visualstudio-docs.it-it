@@ -1,25 +1,22 @@
 ---
-title: "Procedura: implementare un'operazione di contratto di Windows Communication Foundation (Legacy) | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Implementare un'operazione di contratto di Windows Communication Foundation (Legacy) | Microsoft Docs"
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968126"
 ---
-# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procedura: implementare un'operazione del contratto di Windows Communication Foundation (legacy)
+# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procedura: Implementare un'operazione del contratto di Windows Communication Foundation (legacy)
 In questo argomento viene descritto come implementare un'operazione di contratto [!INCLUDE[indigo1](../includes/indigo1-md.md)] usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy che fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Dopo avere trascinato un **ReceiveActivity** attività dalla casella degli strumenti all'area di progettazione del flusso di lavoro, ovvero creerai un nuovo [!INCLUDE[indigo2](../includes/indigo2-md.md)] del contratto o importare un contratto esistente e implementare le operazioni. Si seleziona e/o creare il contratto e le relative operazioni tramite il [sceglie finestra di dialogo operazione (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
@@ -32,7 +29,7 @@ In questo argomento viene descritto come implementare un'operazione di contratto
   
    - Fare clic su **Aggiungi contratto** nell'angolo superiore destro della finestra di dialogo. Vengono creati un nuovo contratto e una nuova operazione [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
   
-      oppure  
+      -oppure-  
   
    - Fare clic su **importazione** nell'angolo superiore destro della finestra di dialogo. Il [individuare e selezionare una finestra di dialogo tipo .NET (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) apre. Cercare un assembly o un progetto contenente il contratto desiderato. Selezionare il contratto e fare clic su **OK**.  
   
@@ -54,5 +51,5 @@ In questo argomento viene descritto come implementare un'operazione di contratto
   
 ## <a name="see-also"></a>Vedere anche  
  [Dialogo Seleziona operazione (Legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Procedura: richiamare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Procedura: Richiamare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Attività del flusso di lavoro legacy](../workflow-designer/legacy-workflow-activities.md)

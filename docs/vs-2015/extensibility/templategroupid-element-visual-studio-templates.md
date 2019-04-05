@@ -1,14 +1,9 @@
 ---
 title: Elemento TemplateGroupID (modelli di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9955b577db6f2e1ab7c34ed7b97b242d7b763c72
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966570"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostata su `false`. Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostata su `true`, un modello di elemento è disponibile in tutti i tipi di progetto.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<TemplateGroupID >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateGroupID>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -80,4 +75,3 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-

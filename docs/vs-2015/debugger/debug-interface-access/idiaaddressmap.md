@@ -1,14 +1,9 @@
 ---
 title: IDiaAddressMap | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 041b784154ef5c95f75d8574700a65460a0ec663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 012d6b1ca06b06f56239048fee712d898a79efa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967008"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ IDiaAddressMap : IUnknown
  Questa interfaccia è disponibile dall'oggetto sessione DIA. Il client chiama il `QueryInterface` metodo DIA sessione oggetto interfaccia, in genere [IDiaSession](../../debugger/debug-interface-access/idiasession.md)per recuperare il `IDiaAddressMap` interfaccia.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
+ Intestazione: DIA2.h  
   
  Libreria: diaguids.lib  
   
@@ -65,8 +60,5 @@ IDiaAddressMap : IUnknown
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
-
-
-

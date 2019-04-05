@@ -1,25 +1,22 @@
 ---
-title: "Procedura: configurare l'ereditarietà tramite O-R Designer | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Configurare l'ereditarietà tramite O-R Designer | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a6c8e4b2da87185c41157b8d03bd59b37188a43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966175"
 ---
-# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: configurare l'ereditarietà tramite O/R Designer
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: Configurare l'ereditarietà usando Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -27,7 +24,7 @@ ms.locfileid: "49222690"
   
  Ad esempio, si consideri una tabella Persons che contiene tutte le persone impiegate in una società, alcune delle quali sono dipendenti mentre altre sono manager. La tabella Persons contiene una colonna denominata `EmployeeType` con un valore 1 per i manager e un valore 2 per i dipendenti e che costituisce la colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolarla solo con i record che hanno un valore 2 in `EmployeeType`. È anche possibile rimuovere le colonne non appropriate da ognuna delle classi.  
   
- La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai dati relazionali) può generare una certa confusione. Nella procedura riportata di seguito vengono illustrati i passaggi necessari per la configurazione dell'ereditarietà con Progettazione relazionale oggetti. Poiché potrebbe essere difficile seguire passaggi generici senza fare riferimento a una tabella e a colonne esistenti, viene fornita una procedura dettagliata in cui vengono usati dati effettivi. Per istruzioni dettagliate per la configurazione dell'ereditarietà utilizzando la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], vedere [questa procedura dettagliata: creazione di classi LINQ to SQL da tramite ereditarietà a tabella singola (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
+ La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai dati relazionali) può generare una certa confusione. Nella procedura riportata di seguito vengono illustrati i passaggi necessari per la configurazione dell'ereditarietà con Progettazione relazionale oggetti. Poiché potrebbe essere difficile seguire passaggi generici senza fare riferimento a una tabella e a colonne esistenti, viene fornita una procedura dettagliata in cui vengono usati dati effettivi. Per istruzioni dettagliate per la configurazione dell'ereditarietà utilizzando la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], vedere [procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
   
 ### <a name="to-create-inherited-data-classes"></a>Per creare classi di dati ereditate  
   
@@ -37,33 +34,32 @@ ms.locfileid: "49222690"
   
 3.  Trascinare una seconda copia della tabella nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e rinominarlo. In tal modo si otterrà la classe derivata o sottoclasse.  
   
-4.  Fare clic su **ereditarietà** nel **Object Relational Designer** scheda della finestra di **della casella degli strumenti**e quindi selezionare la sottoclasse (la tabella rinominata) e connetterla alla classe di base.  
+4.  Fare clic su **Inheritance** nella scheda **Object Relational Designer** della **Casella degli strumenti** e quindi fare clic sulla sottoclasse (ovvero, la tabella rinominata) e connetterla alla classe di base.  
   
     > [!NOTE]
-    >  Fare clic sui **ereditarietà** degli elementi nella **della casella degli strumenti** e rilasciare il pulsante del mouse, scegliere la seconda copia della classe creata nel passaggio 3, quindi la prima classe creata nel passaggio 2. La freccia della linea di ereditarietà punterà alla prima classe.  
+    >  Fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse, fare clic sulla seconda copia della classe creata nel passaggio 3 e quindi fare clic sulla prima classe creata nel passaggio 2. La freccia della linea di ereditarietà punterà alla prima classe.  
   
-5.  In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Si riceverà un errore se si prova a eliminare le proprietà dell'oggetto usate per le associazioni: [la proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5.  In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Si riceverà un errore se si prova a eliminare le proprietà dell'oggetto usate per le associazioni: [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
-    >  Poiché una classe derivata eredita le proprietà definite nella relativa classe di base, non è possibile definire le stesse colonne in ogni classe (le colonne vengono implementate come proprietà). Per consentire la creazione di colonne nella classe derivata, è possibile impostare il modificatore di ereditarietà sulla proprietà della classe di base. Per altre informazioni, vedere [NOT IN BUILD: override di proprietà e metodi](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    >  Poiché una classe derivata eredita le proprietà definite nella relativa classe di base, non è possibile definire le stesse colonne in ogni classe (le colonne vengono implementate come proprietà). Per consentire la creazione di colonne nella classe derivata, è possibile impostare il modificatore di ereditarietà sulla proprietà della classe di base. Per altre informazioni, vedere [NOT IN BUILD: Override di proprietà e metodi](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
 6.  Selezionare la linea di ereditarietà in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
 7.  Nel **le proprietà** impostare nella finestra di **Discriminator Property** al nome della colonna che viene usato per distinguere i record nelle classi.  
   
-8.  Impostare il **Derived Class Discriminator Value** proprietà sul valore nel database che designa il record come tipo ereditato. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe ereditata).  
+8.  Impostare la proprietà **Derived Class Discriminator Value** sul valore nel database che designa il record come tipo ereditato. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe ereditata).  
   
-9. Impostare il **Base Class Discriminator Value** proprietà sul valore che designa il record come tipo di base. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe di base).  
+9. Impostare la proprietà **Base Class Discriminator Value** sul valore che designa il record come tipo di base. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe di base).  
   
-10. Facoltativamente, è possibile impostare anche il **Inheritance Default** proprietà per definire un tipo in una gerarchia di ereditarietà utilizzato durante il caricamento di righe che non corrispondono ad alcun codice di ereditarietà definito. In altre parole, se un record ha un valore nella relativa colonna discriminatore che non corrisponde al valore nel **Derived Class Discriminator Value** oppure **Base Class Discriminator Value** proprietà, il record verrà caricato nel tipo designato come il **Inheritance Default**.  
+10. È anche possibile impostare eventualmente la proprietà **Inheritance Default** per definire un tipo in una gerarchia di ereditarietà usata durante il caricamento di righe che non corrispondono ad alcun codice di ereditarietà definito. In altre parole, se un record ha un valore nella relativa colonna discriminatore che non corrisponde al valore nel **Derived Class Discriminator Value** oppure **Base Class Discriminator Value** proprietà, il record verrà caricato nel tipo designato come il **Inheritance Default**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [PAVE quali sono le novità per lo sviluppo di applicazioni dati in Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [PAVE quali sono le novità per lo sviluppo di applicazioni dati in Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [NOT IN BUILD: Ereditarietà in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [NON INCLUSO NELLA BUILD: Ereditarietà in Visual Basic](http://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
  [Ereditarietà](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
-

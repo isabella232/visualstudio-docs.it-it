@@ -1,11 +1,8 @@
 ---
 title: Utilizzo dell'ActivityDesigner Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968499"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilizzo dell'ActivityDesigner legacy
 In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la finestra di progettazione legacy quando si fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -44,7 +41,7 @@ In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd
   
 3. Digitare un nome di attività o mantenere il nome predefinito e quindi fare clic su **Add**.  
   
-   È anche possibile creare un set di attività personalizzate creando un nuovo progetto di tipo **Workflow Activity Library**. Per altre informazioni su questo tipo di progetto, vedere [procedura: creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   È anche possibile creare un set di attività personalizzate creando un nuovo progetto di tipo **Workflow Activity Library**. Per altre informazioni su questo tipo di progetto, vedere [come: Creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Configurazione di un'attività.  
  Mentre la Finestra di progettazione dell’attività è attiva, è possibile usare il visualizzatore proprietà per configurare le proprietà elencate nella tabella seguente.  
@@ -64,5 +61,5 @@ In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd
  [Creazione di attività personalizzate](http://go.microsoft.com/fwlink?LinkID=65021)   
  [Attività flusso di lavoro legacy](../workflow-designer/legacy-workflow-activities.md)   
  [Esempi di attività personalizzate](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Procedura: creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Procedura: Creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
  [Uso di Progettazione flussi di lavoro legacy](../workflow-designer/using-the-legacy-workflow-designer.md)

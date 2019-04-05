@@ -1,23 +1,20 @@
 ---
 title: Richiamo della trasformazione del testo in un'estensione di Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968076"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Richiamo della trasformazione del testo in un'estensione VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ## <a name="passing-parameters-to-the-template"></a>Passaggio dei parametri al modello  
  È possibile passare i parametri nel modello. Nel modello è possibile ottenere i valori dei parametri tramite la direttiva `<#@parameter#>`.  
   
- Per il tipo di un parametro, è necessario utilizzare un tipo serializzabile o di cui può essere eseguito il marshalling. In altri termini, è necessario dichiarare il tipo con <xref:System.SerializableAttribute> oppure deve essere derivata da <xref:System.MarshalByRefObject>. Questa restrizione è necessaria perché il modello di testo viene eseguito in un AppDomain separato. Tutti i tipi incorporati, ad esempio **System. String** e **System.Int32** sono serializzabili.  
+ Per il tipo di un parametro, è necessario utilizzare un tipo serializzabile o di cui può essere effettuato il marshalling. In altri termini, è necessario dichiarare il tipo con <xref:System.SerializableAttribute> oppure deve essere derivata da <xref:System.MarshalByRefObject>. Questa restrizione è necessaria perché il modello di testo viene eseguito in un AppDomain separato. Tutti i tipi incorporati, ad esempio **System. String** e **System.Int32** sono serializzabili.  
   
  Per passare i valori dei parametri, il codice chiamante può inserire i valori nel dizionario `Session` o in <xref:System.Runtime.Remoting.Messaging.CallContext>.  
   
@@ -151,6 +148,3 @@ Sample text.
   
  Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento:  
  Chiamare il metodo `t4.PreprocessTemplate()` di <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Risoluzione dei problemi relativi ad eccezioni: MessageSecurityException | Microsoft Docs'
-ms.custom: ''
+title: 'Risoluzione dei problemi relativi ad eccezioni: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,15 +11,15 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968977"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Risoluzione dei problemi relativi alle eccezioni: System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Risoluzione dei problemi relativi ad eccezioni: System.ServiceModel.Security.MessageSecurityException
 Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione viene generata quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina che un messaggio non è protetto correttamente oppure è stato manomesso. Questo errore si verifica il più delle volte quando le condizioni indicate di seguito si verificano contemporaneamente:  
   
 -   Si utilizza un riferimento al servizio WCF su una connessione remota, ad esempio Connessione desktop remoto o Servizi terminal, per comunicare con un servizio WCF (con estensione svc) in un sito Web o in un progetto di applicazione Web.  
@@ -35,7 +30,7 @@ Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione v
   
 ## <a name="associated-tips"></a>Suggerimenti associati  
  **Risolvere i problemi di autenticazione NTLM quando si usa il Server di sviluppo ASP.Net.**  
- Nel server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] di solito la sicurezza NTLM (Windows NT Challenge/Response) è disattivata e ciò consente l'accesso anonimo. Per impostazione predefinita, quando si esegue una sessione di Servizi terminal o si utilizza una connessione remota, la sicurezza NTLM è attivata. Quando la sicurezza NTLM è attivata, tutte le richieste a localhost vengono convalidate in base alle credenziali dell'utente o al processo che ha avviato il server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. In questo modo è possibile ridurre le minacce per la sicurezza. L'autenticazione WCF viene eseguita comunque e l'utilizzo dei servizi WCF viene limitato esclusivamente agli account di amministratore.  
+ Nel server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] di solito la sicurezza NTLM (Windows NT Challenge/Response) è disattivata e ciò consente l'accesso anonimo. Per impostazione predefinita, quando si esegue una sessione di Servizi terminal o si utilizza una connessione remota, la sicurezza NTLM è attivata. Quando la sicurezza NTLM è attivata, tutte le richieste a localhost vengono convalidate in base alle credenziali dell'utente o al processo che ha avviato il server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . In questo modo è possibile ridurre le minacce per la sicurezza. L'autenticazione WCF viene eseguita comunque e l'utilizzo dei servizi WCF viene limitato esclusivamente agli account di amministratore.  
   
  Se un utente remoto può eseguire il sito Web utilizzando il server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e utilizzare contemporaneamente un servizio Web o un servizio WCF, è possibile creare un'associazione al servizio personalizzata o disattivare la sicurezza NTLM.  
   

@@ -1,24 +1,22 @@
 ---
 title: Usando i controlli delle linee guida di base di C++ | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968652"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Usando i controlli delle linee guida di base di C++
+# <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Linee guida di base di C++ sono un set di linee guida, regole e le procedure consigliate sulla scrittura di codice in C++ creato da progettisti e gli esperti di C++ portabile.  Visual Studio supporta ora i componenti dei pacchetti che creano le regole aggiuntive per il codice di strumenti di analisi per verificare il codice per la conformità con le linee guida di base C++ e suggerire miglioramenti.  
@@ -81,32 +79,29 @@ int main()
   
  Questo esempio illustra alcuni degli avvisi che è possono trovare le regole C++ Core controllare:  
   
-- C26494 è regola Type.5: inizializzare sempre un oggetto.  
+- C26494 è regola Type.5: Inizializzare sempre un oggetto.  
   
-- C26485 è regola Bounds.3: decay non-matrice di puntatori.  
+- C26485 è regola Bounds.3: Decadimento non-matrice di puntatori.  
   
-- C26481 è regola Bounds.1: non usare l'aritmetica dei puntatori. In alternativa, usare `span`.  
+- C26481 è regola Bounds.1: Non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.  
   
   Se gli oggetti ruleSet analisi di codice C++ Core controllare installati e abilitati quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Ecco l'output di compilazione dal codice di esempio:  
   
-  **1 >---compilazione avviata: progetto: CoreCheckExample, configurazione: Debug Win32:**  
+  **1 >---inizio compilazione: Progetto: CoreCheckExample, configurazione: Eseguire il debug Win32:**  
 **----**  
-**1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1>  CoreCheckExample.cpp**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): avviso C26494: la variabile 'arr' è uninitializ**  
+**ckexample\corecheckexample.cpp(6): avviso C26494: La variabile 'arr' è uninitializ**  
 **ed. inizializzare sempre un oggetto. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**ID = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): avviso C26485: espressione 'arr': non matrice da**  
+**ckexample\corecheckexample.cpp(7): warning C26485: Espressione 'arr': Non matrice da**  
  **decay puntatore. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**=== Compilazione: 1 completata, 0 non riuscite, 0 aggiornata, 0 ignorate ===** esistono linee guida di base di C++ che consentono di scrivere codice migliore e più sicuro. Tuttavia, se si dispone di un'istanza in cui non venga applicato una regola o un profilo, è facile eliminarlo direttamente nel codice. È possibile usare il `gsl::suppress` attributo per evitare che C++ Core controllare il rilevamento e creazione di report qualsiasi violazione di una regola in blocco di codice seguente. È possibile contrassegnare singole istruzioni per eliminare le regole specifiche. È anche possibile eliminare l'intero profilo limiti scrivendo `[[gsl::suppress(bounds)]]` senza includere un numero di regole specifici.  
+**========== Build: 1 completata, 0 non riuscite, 0 aggiornata, 0 ignorate ===** esistono linee guida di base di C++ che consentono di scrivere codice migliore e più sicuro. Tuttavia, se si dispone di un'istanza in cui non venga applicato una regola o un profilo, è facile eliminarlo direttamente nel codice. È possibile usare il `gsl::suppress` attributo per evitare che C++ Core controllare il rilevamento e creazione di report qualsiasi violazione di una regola in blocco di codice seguente. È possibile contrassegnare singole istruzioni per eliminare le regole specifiche. È anche possibile eliminare l'intero profilo limiti scrivendo `[[gsl::suppress(bounds)]]` senza includere un numero di regole specifici.  
   
 ## <a name="use-the-guideline-support-library"></a>Usare la libreria di supporto delle linee guida  
  Il pacchetto Microsoft.CppCoreCheck NuGet installa anche un pacchetto che contiene l'implementazione Microsoft della libreria di supporto delle linee guida (GSL). Il GSL è anche disponibile in forma autonoma al [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Questa libreria è utile se si vuole seguire le linee guida di base. Il GSL include le definizioni che consentono di sostituire i costrutti soggetta a errori con alternative più sicure. Ad esempio, è possibile sostituire un `T*, length` coppia di parametri con il `span<T>` tipo. Il GSL è open source, pertanto se si desidera esaminare le origini di libreria, come commento o contribuire, il progetto è reperibile in [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

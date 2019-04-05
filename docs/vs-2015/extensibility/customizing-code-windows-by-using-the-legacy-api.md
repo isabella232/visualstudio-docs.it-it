@@ -1,26 +1,21 @@
 ---
 title: Personalizzazione di Windows di codice usando l'API Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45788e3fdfff2898a0d2d2ed36c81425c225b54c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966609"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalizzazione di Windows di codice usando l'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Finestra del codice
  `Customizing Code Windows by Using the Legacy API`  
  Viene illustrato come personalizzare le finestre di codice usando l'API legacy.  
   
- [Procedura: Ospitare un editor in un altro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Procedura: Ospitare un Editor in un altro Editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Viene illustrato come ospitare un editor secondo all'interno di una finestra dell'editor.  
   
- [Procedura: Generare eventi quando l'editor perde lo stato attivo](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Procedura: Generare gli eventi quando l'Editor perde lo stato attivo](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Spiega come collegare una visualizzazione del documento a un oggetto dati del documento.  
   
 ## <a name="see-also"></a>Vedere anche  
@@ -53,4 +48,3 @@ Finestra del codice
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [Creare un'istanza di Editor principale con l'API Legacy](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
  [Accesso alla visualizzazione testo tramite l'API legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

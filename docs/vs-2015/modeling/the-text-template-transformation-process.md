@@ -1,25 +1,22 @@
 ---
 title: Il processo di trasformazione del modello testo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969401"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ Il processo di trasformazione del modello testo accetta un file di modello di te
 ## <a name="the-engine"></a>Il motore di  
  Il motore riceve il modello sotto forma di stringa dall'host, che gestisce tutti i file che vengono usati nel processo di trasformazione. Il motore richiede quindi l'host per individuare tutti i processori di direttiva personalizzati e altri aspetti dell'ambiente. Quindi, il motore viene compilata e viene eseguita la classe transformation generata. Il motore restituisce il testo generato per l'host, che normalmente consente di salvare il testo in un file.  
   
-## <a name="the-host"></a>L'Host  
+## <a name="the-host"></a>L'host  
  L'host è responsabile per qualsiasi elemento che si riferisce all'ambiente all'esterno del processo di trasformazione, incluse le seguenti:  
   
 -   Individuazione file di testo e binari richiesti dal motore o un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il rispettivo contenuto sotto forma di stringhe.  
@@ -68,6 +65,3 @@ Il processo di trasformazione del modello testo accetta un file di modello di te
  `<#@ import namespace="System.Text" #>`  
   
  Il processore di direttiva standard converte questo a un `using` istruzione nella classe transformation generata. È quindi possibile usare la `StringBuilder` nella parte restante del codice del modello senza qualificare con il nome classe `System.Text.StringBuilder`.
-
-
-

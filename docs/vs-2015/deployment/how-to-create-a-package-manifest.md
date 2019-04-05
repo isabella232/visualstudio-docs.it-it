@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: creare un manifesto di pacchetto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un manifesto di pacchetto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969873"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedura: creare un manifesto di pacchetto
+# <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto di pacchetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Le funzionalità condivise tra le versioni localizzate che devono essere inserite il manifesto del prodotto.  
   
- Per altre informazioni sui manifesti di pacchetto, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
+ Per altre informazioni sui manifesti di pacchetto, vedere [come: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="creating-the-package-manifest"></a>Creazione del manifesto del pacchetto  
   
@@ -108,6 +103,3 @@ installing this package.</String>
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
-
-
-

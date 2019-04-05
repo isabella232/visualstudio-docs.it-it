@@ -1,12 +1,9 @@
 ---
 title: Inserire nuovi record in un database | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,19 +19,19 @@ ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967371"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Update` metodo, o uno dei metodi DBDirect di TableAdapter (in particolare il `TableAdapter.Insert` (metodo)). Per altre informazioni, vedere [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Update` metodo, o uno dei metodi DBDirect di TableAdapter (in particolare il `TableAdapter.Insert` (metodo)).
   
  Se l'applicazione non usa gli oggetti TableAdapter, è possibile usare gli oggetti comando (ad esempio, <xref:System.Data.SqlClient.SqlCommand>) per inserire nuovi record nel database.  
   
@@ -42,7 +39,7 @@ Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Up
   
  Se l'applicazione usa gli oggetti per archiviare i dati oppure, se si desidera un maggiore controllo sulla creazione di nuovi record nel database, utilizzare il `TableAdapter.Insert` (metodo).  
   
- Se l'oggetto TableAdapter non ha un `Insert` metodo, significa che il TableAdapter sia configurato per utilizzare le stored procedure o dai relativi `GenerateDBDirectMethods` è impostata su `false`. Provare a impostare dell'oggetto TableAdapter `GenerateDBDirectMethods` proprietà `true` dall'interno di [Progettazione Dataset](../data-tools/creating-and-editing-typed-datasets.md)e quindi salvare il set di dati. Questa operazione rigenererà il TableAdapter. Se l'oggetto TableAdapter non ancora un `Insert` (metodo), quindi la tabella non vengono fornite informazioni sufficienti dello schema per distinguere tra le singole righe (ad esempio, non potrebbe esserci alcun set di chiavi primarie nella tabella).  
+ Se l'oggetto TableAdapter non ha un `Insert` metodo, significa che il TableAdapter sia configurato per utilizzare le stored procedure o dai relativi `GenerateDBDirectMethods` è impostata su `false`. Provare a impostare dell'oggetto TableAdapter `GenerateDBDirectMethods` proprietà `true` all'interno di progettazione set di dati e quindi salvare il set di dati. Questa operazione rigenererà il TableAdapter. Se l'oggetto TableAdapter non ancora un `Insert` (metodo), quindi la tabella non vengono fornite informazioni sufficienti dello schema per distinguere tra le singole righe (ad esempio, non potrebbe esserci alcun set di chiavi primarie nella tabella).  
   
 ## <a name="insert-new-records-by-using-tableadapters"></a>Inserire nuovi record usando oggetti TableAdapter  
  Gli oggetti TableAdapter forniscono diversi modi per inserire nuovi record in un database, a seconda dei requisiti dell'applicazione.  
@@ -51,7 +48,7 @@ Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Up
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Per inserire nuovi record in un database usando il metodo di TableAdapter  
   
-1. Aggiungere nuovi record per il valore desiderato <xref:System.Data.DataTable> creando un nuovo <xref:System.Data.DataRow> e aggiungendolo al <xref:System.Data.DataTable.Rows%2A> raccolta. Per altre informazioni, vedere [procedura: aggiungere righe a un oggetto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Aggiungere nuovi record per il valore desiderato <xref:System.Data.DataTable> creando un nuovo <xref:System.Data.DataRow> e aggiungendolo al <xref:System.Data.DataTable.Rows%2A> raccolta. Per altre informazioni, vedere [Procedura: Aggiungere righe a un oggetto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Dopo aver aggiunto le nuove righe per il <xref:System.Data.DataTable>, chiamare il `TableAdapter.Update` (metodo). È possibile controllare la quantità di dati da aggiornare passando un un'intera <xref:System.Data.DataSet>, una <xref:System.Data.DataTable>, una matrice di <xref:System.Data.DataRow>s o un singolo <xref:System.Data.DataRow>.  
   
@@ -75,7 +72,7 @@ Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Up
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
   
 ## <a name="insert-new-records-by-using-command-objects"></a>Inserire nuovi record con gli oggetti comando  
- L'esempio seguente inserisce nuovi record direttamente in un database utilizzando oggetti command. Per altre informazioni sull'uso di oggetti comando per eseguire comandi e le stored procedure, vedere [recupero di dati in Your Application](../data-tools/fetching-data-into-your-application.md).  
+ L'esempio seguente inserisce nuovi record direttamente in un database utilizzando oggetti command.
   
  La procedura seguente usa il `Region` tabella nel database Northwind come esempio.  
   
@@ -91,4 +88,3 @@ Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Up
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
-

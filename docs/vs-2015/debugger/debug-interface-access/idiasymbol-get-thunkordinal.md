@@ -1,14 +1,9 @@
 ---
-title: Get_thunkordinal | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_thunkOrdinal | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4b28d78a-1974-4d8a-8bb7-781bf630f2f4
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 899cdbc261385e2e392ed70dd998e4f8c116a14f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7f2205eca2effc02be12189af4faa8342b9b841
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968661"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +50,5 @@ HRESULT get_thunkOrdinal ( 
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [THUNK_ORDINAL (enumerazione)](../../debugger/debug-interface-access/thunk-ordinal.md)   
+ [Enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)   
  [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

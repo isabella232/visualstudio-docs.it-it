@@ -1,25 +1,22 @@
 ---
 title: Distribuzione di un processore di direttiva personalizzato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969200"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
  I metodi alternativi sono i seguenti:  
   
-- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Fornisce un modo per installare e disinstallare il processore di direttiva sia in un proprio computer che in altri computer. In genere, è possibile comprimere altre funzionalità nello stesso VSIX.  
+- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Fornisce un modo per installare e disinstallare il processore di direttiva sia in un proprio computer che in altri computer. In genere, è possibile comprimere altre funzionalità nello stesso VSIX.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Se si definisce un package VS che contiene altre funzionalità oltre al processore di direttiva, esiste un metodo comodo per registrare il processore di direttiva.  
   
@@ -37,7 +34,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   È necessario utilizzare uno di questi metodi solo se si desidera trasformare il modello di testo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Se si utilizza un host personalizzato nella propria applicazione, l'host personalizzato è responsabile dell'individuazione dei processori di direttive per ciascuna direttiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Distribuzione di un processore di direttiva in un pacchetto VSIX  
- È possibile aggiungere un processore di direttiva personalizzato a un [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ È possibile aggiungere un processore di direttiva personalizzato a un [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  È necessario assicurarsi che i due elementi seguenti siano contenuti nel file .vsix:  
   
@@ -163,7 +160,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
  Questo metodo per installare un processore di direttiva personalizzato è il meno preferito. Non fornisce un modo comodo per abilitare e disabilitare il processore di direttiva e non fornisce un metodo per distribuire il processore di direttiva ad altri utenti.  
   
 > [!CAUTION]
->  Una modifica errata del Registro di sistema può provocare gravi danni al sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.  
+>  Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Per registrare un processore di direttiva impostando una chiave del Registro di sistema  
   
@@ -189,7 +186,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:  
   
-|nome|Tipo|Dati|  
+|Nome|Tipo|Dati|  
 |----------|----------|----------|  
 |(Predefinito)|REG_SZ|(valore non impostato)|  
 |Classe|REG_SZ|**\<Nome Namespace >. \<Nome classe >**|  
@@ -197,7 +194,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:  
   
-|nome|Tipo|Dati|  
+|Nome|Tipo|Dati|  
 |----------|----------|----------|  
 |(Predefinito)|REG_SZ|(valore non impostato)|  
 |Classe|REG_SZ|\<**Il nome completo della classe**>|  
@@ -205,6 +202,3 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di processori di direttiva di modelli di testo T4 personalizzati](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

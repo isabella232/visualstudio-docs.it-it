@@ -1,33 +1,28 @@
 ---
 title: Gli eventi nel Buffer di testo nell'API Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 677824142f2e7e497888627041cfe7a82487d342
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968581"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventi nel Buffer di testo nell'API Legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oggetto del buffer di testo genera vari eventi diversi che consentono di rispondere a situazioni diverse.  
   
- Quando si usa l'API legacy, è necessario implementare le interfacce seguenti per ricevere la notifica delle modifiche al buffer di testo. Espone le interfacce per il buffer di testo tramite il `IConnectionPointContainer` interfaccia nel buffer di testo per ricevere la notifica della linea viene modificato dal buffer. Per altre informazioni, vedere [procedura: registrarsi per gli eventi nel Buffer di testo con l'API Legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Nel caso del `IVsTextStreamEvents` o `IVsTextLinesEvents` interfacce, le modifiche vengono restituite in entrambi unidimensionale o due coordinate, rispettivamente.  
+ Quando si usa l'API legacy, è necessario implementare le interfacce seguenti per ricevere la notifica delle modifiche al buffer di testo. Espone le interfacce per il buffer di testo tramite il `IConnectionPointContainer` interfaccia nel buffer di testo per ricevere la notifica della linea viene modificato dal buffer. Per altre informazioni, vedere [Procedura: Registrarsi per gli eventi nel Buffer di testo con l'API Legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). Nel caso del `IVsTextStreamEvents` o `IVsTextLinesEvents` interfacce, le modifiche vengono restituite in entrambi unidimensionale o due coordinate, rispettivamente.  
   
 ## <a name="text-buffer-interfaces"></a>Interfacce di Buffer di testo  
  Di seguito sono le interfacce implementate dall'oggetto del buffer di testo.  
@@ -58,5 +53,4 @@ Oggetto del buffer di testo genera vari eventi diversi che consentono di rispond
   
 ## <a name="see-also"></a>Vedere anche  
  [L'accesso ai Buffer di testo usando l'API Legacy](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Procedura: eseguire la registrazione per gli eventi del buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
-
+ [Procedura: Eseguire la registrazione per gli eventi nel Buffer di testo con l'API Legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

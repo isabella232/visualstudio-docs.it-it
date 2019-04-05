@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammi di attività UML: Riferimento | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammi di attività UML: Riferimenti | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,15 +19,15 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970137"
 ---
-# <a name="uml-activity-diagrams-reference"></a>Diagrammi di attività UML: riferimento
+# <a name="uml-activity-diagrams-reference"></a>Diagrammi di attività UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un' *diagramma di attività* viene visualizzato un processo di business o un processo software come un flusso di lavoro attraverso una serie di azioni. Queste azioni possono essere eseguite da persone, componenti software o computer.  
@@ -39,13 +36,13 @@ Un' *diagramma di attività* viene visualizzato un processo di business o un pro
   
 - Processo aziendale o flusso di lavoro tra gli utenti e il sistema. Per altre informazioni, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
-- Passaggi eseguiti in un caso di utilizzo. Per altre informazioni, vedere [diagrammi caso d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Passaggi eseguiti in un caso di utilizzo. Per altre informazioni, vedere [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Protocollo software, cioè le sequenze consentite di interazioni tra componenti.  
   
 - Algoritmo software.  
   
-  Questo argomento illustra gli elementi che è possibile usare nei diagrammi di attività. Per altre informazioni sulle attività di disegno vedere diagrammi [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md). Per creare un diagramma attività UML, scegliere il **Architecture** menu, fare clic su **nuovo diagramma livello o UML**. Per altre informazioni su come creare diagrammi di modellazione in generale, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+  Questo argomento illustra gli elementi che è possibile usare nei diagrammi di attività. Per altre informazioni sulle attività di disegno vedere diagrammi [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md). Per creare un diagramma attività UML, scegliere il **Architecture** menu, fare clic su **nuovo diagramma livello o UML**. Per altre informazioni su come creare diagrammi di modellazione in generale, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Lettura dei diagrammi di attività  
  Le tabelle nelle sezioni seguenti descrivono gli elementi che è possibile usare nei diagrammi di attività e le relative proprietà principali. Per un elenco completo delle proprietà degli elementi, vedere [delle proprietà degli elementi nei diagrammi di attività UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  
@@ -55,7 +52,7 @@ Un' *diagramma di attività* viene visualizzato un processo di business o un pro
  Per leggere un diagramma, si supponga che un token, o thread di controllo, passi i connettori da un'azione alla successiva.  
   
 ### <a name="simple-control-flows"></a>Flussi di controllo semplici  
- È possibile visualizzare una sequenza di azioni con rami e cicli. Per altre informazioni su come usare gli elementi descritti di seguito, vedere la sezione Descrizione del flusso di controllo dell'argomento [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+ È possibile visualizzare una sequenza di azioni con rami e cicli. Per altre informazioni su come usare gli elementi descritti di seguito, vedere la sezione Descrizione del flusso di controllo dell'argomento [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Un flusso di controllo semplice](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
@@ -73,7 +70,7 @@ Un' *diagramma di attività* viene visualizzato un processo di business o un pro
 |9|**Azione chiama comportamento**|Azione definita più dettagliatamente su un altro diagramma di attività.<br /><br /> -   **IsSynchronous** : se true, l'azione attende fino al termine dell'attività.<br />-   **Comportamento** -l'attività richiamata.|  
 |(non mostrato)|**Azione chiama operazione**|Azione che chiama un'operazione su un'istanza di una classe.|  
 ||**Attività**|Flusso di lavoro raffigurato da un diagramma di attività. Per visualizzare le proprietà di un'attività, è necessario selezionarla in **Esplora modelli UML**.<br /><br /> -   **È di sola lettura** : se true, l'attività non deve modificare lo stato di qualsiasi oggetto.<br />-   **Is Single Execution** : se true, si verifica al massimo un'esecuzione di questo diagramma alla volta.|  
-||**Diagramma attività UML**|Diagramma che visualizza un'attività. Per vedere le proprietà, fare clic su una parte vuota del diagramma. **Nota:** i nomi del diagramma di attività, il file che contiene il diagramma e l'attività visualizzata dal diagramma possa essere tutti diverso.|  
+||**Diagramma attività UML**|Diagramma che visualizza un'attività. Per vedere le proprietà, fare clic su una parte vuota del diagramma. **Nota:**  I nomi del diagramma di attività, il file contenente il diagramma e l'attività visualizzata dal diagramma possono essere tutti diversi.|  
   
 ### <a name="concurrent-flows"></a>Flussi simultanei  
  È possibile descrivere sequenze di azioni eseguite contemporaneamente. Per altre informazioni, vedere Creazione di flussi simultanei.  
@@ -105,6 +102,3 @@ Un' *diagramma di attività* viene visualizzato un processo di business o un pro
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Personalizzazione della Shell isolata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967991"
 ---
 # <a name="customizing-the-isolated-shell"></a>Personalizzazione della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ ms.locfileid: "51733777"
  La soluzione di modello della shell isolata include un' *SolutionName*. Application. pkgdef che consente di modificare le funzionalità seguenti:  
   
 ##### <a name="the-application-title"></a>Il titolo dell'applicazione  
- È possibile personalizzare il titolo dell'applicazione, ovvero il nome visualizzato nella barra del titolo dell'applicazione, modificando il valore della riga di "AppName" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ È possibile personalizzare il titolo dell'applicazione, ovvero il nome visualizzato nella barra del titolo dell'applicazione, modificando il valore della riga di "AppName" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
  Se non si desidera il titolo dell'applicazione per visualizzare il progetto che attualmente è caricato, modificare il valore della riga di "ShowHierarchyRootInTitle" i *SolutionName*. File Application.pkgdef da dword:00000001 dword:00000000.  
   
 ##### <a name="the-application-icon"></a>L'icona dell'applicazione  
- È possibile personalizzare l'icona dell'applicazione, ovvero l'icona che viene visualizzato il nome dell'applicazione nella barra del titolo dell'applicazione. Copiare un'icona diversa nella directory di icona. Nelle **Esplora soluzioni**, aggiungere l'icona corrispondente nella cartella di file di risorse. Quindi aprire il file VSShellStub.rc e sostituire il valore di IDI_STUBPROGRAM con il nome della nuova icona. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ È possibile personalizzare l'icona dell'applicazione, ovvero l'icona che viene visualizzato il nome dell'applicazione nella barra del titolo dell'applicazione. Copiare un'icona diversa nella directory di icona. Nelle **Esplora soluzioni**, aggiungere l'icona corrispondente nella cartella di file di risorse. Quindi aprire il file VSShellStub.rc e sostituire il valore di IDI_STUBPROGRAM con il nome della nuova icona. Per altre informazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Il logo della riga di comando  
- È possibile personalizzare il logo della riga di comando, ovvero il testo visualizzato quando l'applicazione viene avviata dalla riga di comando, modificando il valore della riga di "CommandLineLogo" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ È possibile personalizzare il logo della riga di comando, ovvero il testo visualizzato quando l'applicazione viene avviata dalla riga di comando, modificando il valore della riga di "CommandLineLogo" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: Creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Il nome della sottocartella file utente  
  È possibile modificare il nome della cartella l'applicazione mantiene informazioni per i file utente modificando il valore della riga "UserFilesSubFolderName" nella *SolutionName*. . Pkgdef.  
@@ -63,7 +58,7 @@ ms.locfileid: "51733777"
  È possibile personalizzare la pagina del browser web, ovvero pagina visualizzata quando viene aperta la finestra del web browser, modificando il valore della riga di "DefaultSearchPage" i *SolutionName*. . Pkgdef.  
   
 ##### <a name="the-default-home-page"></a>La home page predefinita  
- È possibile personalizzare la home page, modificando il valore della riga di "DefaultHomePage" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ È possibile personalizzare la home page, modificando il valore della riga di "DefaultHomePage" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: Creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Per nascondere il concetto di soluzione o meno  
  È possibile specificare se nascondere la soluzione dell'applicazione modificando il valore della riga di "HideSolutionConcept" o meno il *SolutionName*. . Pkgdef. Per nascondere la soluzione, impostare il valore `dword:00000001`e per visualizzare la soluzione, impostare il valore `dword:00000000`.  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- Rimuove il progetto file esterni dal set di modelli di progetto visualizzato nei **nuovo progetto** finestra di dialogo. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Rimuove il progetto file esterni dal set di modelli di progetto visualizzato nei **nuovo progetto** finestra di dialogo. Per altre informazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="enabledisable-menu-commands"></a>Abilita/disabilita i comandi di menu  
- Il *SolutionName*UI.vsct file include un elenco di commento di tutti i comandi di menu disponibili della shell isolata. Per disabilitare un determinato comando, rimuovere il commento la riga corrispondente. Ad esempio, per disabilitare il commento/Dividi finestra, rimuovere il commento di `<Define name="No_SplitCommand"/>` riga. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Il *SolutionName*UI.vsct file include un elenco di commento di tutti i comandi di menu disponibili della shell isolata. Per disabilitare un determinato comando, rimuovere il commento la riga corrispondente. Ad esempio, per disabilitare il commento/Dividi finestra, rimuovere il commento di `<Define name="No_SplitCommand"/>` riga. Per altre informazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>La bitmap utilizzata nella schermata iniziale  
- È possibile personalizzare la bitmap utilizzata nella schermata iniziale, ovvero la finestra che viene visualizzata quando l'applicazione viene avviata, modificando il valore della riga di "SplashScreenBitmap" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ È possibile personalizzare la bitmap utilizzata nella schermata iniziale, ovvero la finestra che viene visualizzata quando l'applicazione viene avviata, modificando il valore della riga di "SplashScreenBitmap" i *SolutionName*. . Pkgdef. Per altre informazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-helpabout-window"></a>La Guida/informazioni sulla finestra  
- Nel modello di shell isolata c'è un progetto separato è possibile usare per personalizzare la Guida/sulla casella per l'applicazione. Per altre informazioni, vedere [procedura dettagliata: creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-
+ Nel modello di shell isolata c'è un progetto separato è possibile usare per personalizzare la Guida/sulla casella per l'applicazione. Per altre informazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).

@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969865"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: Esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -33,7 +28,7 @@ In questo argomento viene descritto come esaminare i nodi usando il [visualizzaz
   
 2.  Fare clic su **usare l'Editor XML per visualizzare e modificare il file di XML Schema sottostante** nella visualizzazione iniziale.  
   
-3.  Copiare il codice di esempio di XML Schema da [dello Schema XML di esempio: Schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md) e incollarlo per sostituire il codice che è stato aggiunto il nuovo file XSD per impostazione predefinita.  
+3.  Copiare il codice di esempio di XML Schema da [XML Schema di esempio: Schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md) e incollarlo per sostituire il codice che è stato aggiunto il nuovo file XSD per impostazione predefinita.  
   
 4.  Selezionare il `purchaseOrder` elemento in Schema Explorer facendo clic con il `purchaseOrder` elemento in XML Editor e selezionando **Mostra in XML Explorer**.  
   
@@ -50,6 +45,3 @@ In questo argomento viene descritto come esaminare i nodi usando il [visualizzaz
 8.  Scegliere il **Mostra documentazione** pulsante sulla barra degli strumenti XSD per attivare/disattivare documentazione. È anche possibile fare clic con il pulsante destro del mouse sull'area di progettazione per attivare o disattivare la documentazione.  
   
 9. Rick-scegliere il `purchaseOrder` nodo e selezionare **genera XML di esempio** per visualizzare il documento di istanza XML.
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Registrazione e selezione (VSPackage di controllo codice sorgente) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968551"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e selezione (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,16 +37,16 @@ Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice
   
 - Controllo del codice sorgente GUID: Questo è un GUID per il controllo del codice sorgente consente di registrare con lo Stub di controllo di Visual Studio origine pacchetto VSPackage e viene usato anche come un GUID di contesto dell'interfaccia utente comandi. Il GUID del servizio di controllo sorgente è registrato sotto il controllo del codice sorgente GUID. Nell'esempio, il controllo del codice sorgente GUID viene chiamato ID_SccProvider.  
   
-- GUID del servizio di controllo di origine: si tratta del servizio privato GUID utilizzato da Visual Studio (detti SID_SccPkgService in questa sezione). Inoltre, il pacchetto del controllo codice sorgente deve definire altri GUID per i pacchetti VSPackage, finestre degli strumenti e così via.  
+- GUID del servizio di controllo di origine: Si tratta del servizio privato GUID utilizzato da Visual Studio (detti SID_SccPkgService in questa sezione). Inoltre, il pacchetto del controllo codice sorgente deve definire altri GUID per i pacchetti VSPackage, finestre degli strumenti e così via.  
   
   Da un pacchetto VSPackage di controllo di origine, è necessario effettuare le seguenti voci del Registro di sistema:  
   
 |Nome della chiave|Voci|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(impostazione predefinita) = rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(impostazione predefinita) = rg_sz:\<nome descrittivo del pacchetto ><br /><br /> Servizio = rg_sz: {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(impostazione predefinita) = rg_sz: &\<ID risorsa per nome localizzato ><br /><br /> Pacchetto = rg_sz: {ID_Package}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Si noti che il nome della chiave `SourceCodeControl`, è già usato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e non è disponibile come scelta per \<PackageName >.)|(impostazione predefinita) = rg_sz: {ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(impostazione predefinita) = rg_sz:\<nome descrittivo del pacchetto ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(impostazione predefinita) = rg_sz: &\<ID risorsa per nome localizzato ><br /><br /> Package = rg_sz:{ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Si noti che il nome della chiave `SourceCodeControl`, è già usato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e non è disponibile come scelta per \<PackageName >.)|(default) = rg_sz:{ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>Selezione di un pacchetto controllo del codice sorgente  
  Diversi basato su API dei plug-in del controllo origine plug-in e i pacchetti VSPackage possono essere registrati contemporaneamente di controllo del codice sorgente. È necessario assicurarsi che il processo di selezione di un plug-in del controllo del codice sorgente o un pacchetto VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carica il plug-in o VSPackage al momento opportuno, può rinviare il caricamento dei componenti non necessari fino a quando sono necessari. Inoltre, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve rimuovere l'interfaccia utente da altri VSPackage inattivi, incluse le voci di menu, finestre di dialogo e le barre degli strumenti e visualizzare l'interfaccia utente per il pacchetto VSPackage attivo.  
@@ -91,4 +86,3 @@ Un pacchetto VSPackage deve essere registrata per esporla a controllo del codice
  [Funzionalità](../../extensibility/internals/source-control-vspackage-features.md)   
  [Creazione di un controllo del codice sorgente del plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Pacchetti VSPackage](../../extensibility/internals/vspackages.md)
-

@@ -1,21 +1,17 @@
 ---
 title: Compilatore dei colori VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969025"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +53,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|nome|[Obbligatorio] Il nome del tema|  
+|Nome|[Obbligatorio] Il nome del tema|  
 |GUID|[Obbligatorio] GUID del tema (deve corrispondere la formattazione di GUID)|  
   
  Durante la creazione di colori personalizzati per Visual Studio, questi colori devono essere definiti per i seguenti temi. Se è presente alcun colore per un particolare tema, Visual Studio tenta di caricare i colori mancanti dal tema chiaro.  
@@ -83,7 +79,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|nome|[Obbligatorio] Il nome della categoria|  
+|Nome|[Obbligatorio] Il nome della categoria|  
 |GUID|[Obbligatorio] GUID della categoria (deve corrispondere la formattazione di GUID)|  
   
  **Colore**  
@@ -100,7 +96,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|nome|[Obbligatorio] Il nome del colore|  
+|Nome|[Obbligatorio] Il nome del colore|  
   
  **Sfondo e/o in primo piano**  
   
@@ -114,7 +110,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Tipo|[Obbligatorio] Il tipo del colore. Può essere uno dei seguenti:<br /><br /> *CT_INVALID:* il colore non è valido o non impostata.<br /><br /> *CT_RAW:* un valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* un colore di sistema di Windows da SysColor.<br /><br /> *CT_VSCOLOR:* un colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|  
+|Tipo|[Obbligatorio] Il tipo del colore. Può essere uno dei seguenti:<br /><br /> *CT_INVALID:* Il colore non valido o non impostata.<br /><br /> *CT_RAW:* Un valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Un colore di sistema di Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Un colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|  
 |Origine|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|  
   
  Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati per lo schema nell'attributo Type. Tuttavia, è consigliabile utilizzare solo CT_RAW e CT_SYSCOLOR.  
@@ -146,7 +142,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |-|-|-|  
 |**Nome del commutatore**|**Note**|**Obbligatoria o facoltativa**|  
 |Senza nome (file con estensione XML)|Questo è il primo parametro senza nome e percorso del file XML da convertire.|Obbligatorio|  
-|Senza nome (file con estensione pkgdef)|Questo è il secondo parametro senza nome e il percorso di output per il file. pkgdef generato.<br /><br /> Valore predefinito: \<XML Filename > con estensione pkgdef|Facoltativo|  
+|Senza nome (file con estensione pkgdef)|Questo è il secondo parametro senza nome e il percorso di output per il file. pkgdef generato.<br /><br /> Valore predefinito: \<Nome del file XML > con estensione pkgdef|Facoltativo|  
 |/noLogo|Impostazione di questo flag arresta prodotto e informazioni sul copyright di stampare le informazioni.|Facoltativo|  
 |/?|Stampare le informazioni della Guida.|Facoltativo|  
 |/help|Stampare le informazioni della Guida.|Facoltativo|  
@@ -173,4 +169,3 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

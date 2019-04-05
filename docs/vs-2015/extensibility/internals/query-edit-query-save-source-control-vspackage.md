@@ -1,14 +1,9 @@
 ---
 title: Query Edit Query Save (VSPackage di controllo codice sorgente) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - QEQS events
 - Query Edit Query Save events
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 170056db4269b8dd69f241093c467243b75131b7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ad0cf7c3e1d3269dbe7ebee051cc32e2e8531ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966629"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Query Edit Query Save (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gli editor possono trasmettere gli eventi di Query Edit Query salvare (QEQS). [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Stub di controllo di origine implementa il servizio QEQS, in modo che sia il destinatario di eventi QEQS. Questi eventi vengono poi delegati a VSPackage di controllo del codice sorgente attualmente attivo. Il controllo del codice sorgente attivo pacchetto VSPackage implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e i relativi metodi. I metodi del `IVsQueryEditQuerySave2` interfaccia vengono in genere chiamato immediatamente prima che il documento viene modificato per la prima volta e immediatamente prima del salvataggio di un documento.  
   
-## <a name="queryeditquerysave-events"></a>Eventi QueryEditQuerySave  
+## <a name="queryeditquerysave-events"></a>QueryEditQuerySave Events  
  Il controllo del codice sorgente VSPackage deve gestire gli eventi QEQS implementando il `IVsQueryEditQuerySave2` interfaccia e i metodi necessari. Di seguito è una breve descrizione dei due metodi che il pacchetto VSPackage deve implementare almeno. L'implementazione effettiva deve essere in base alla logica di controllo del modello di origine.  
   
 ### <a name="queryeditfiles-method"></a>Metodo QueryEditFiles  
@@ -44,4 +39,3 @@ ms.locfileid: "51763247"
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
-

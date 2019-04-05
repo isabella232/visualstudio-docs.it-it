@@ -1,21 +1,17 @@
 ---
 title: Visualizzatore della libreria di immagini | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968141"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,7 +70,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
   
 |||  
 |-|-|  
-|**Sottoelemento**|**Definizione**|  
+|**Subelement**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente.|  
 |GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID.|  
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo.|  
@@ -135,15 +131,15 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |-|-|  
 |**Attributo**|**Definizione**|  
 |URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br /><br /> -Riferimento a una risorsa un componente assoluto<br /><br /> -Un percorso di un file contenente una risorsa nativa|  
-|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: l'origine può essere usata su uno sfondo chiaro.<br /><br /> - *Scuro*: l'origine può essere usata su uno sfondo scuro.<br /><br /> - *Contrasto elevato*: l'origine può essere usata su qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: l'origine può essere usata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: l'origine può essere usata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
+|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> - *HighContrast*: L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
   
  Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:  
   
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|\<Dimensioni >|Valore|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
-|\<SizeRange >|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
+|\<Size>|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|  
+|\<SizeRange>|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|  
 |\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini della larghezza specificata e dell'altezza (espressa in unità di dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima per la larghezza/altezza massima (in unità di dispositivo), inclusi.|  
   
@@ -228,10 +224,9 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
   
 ## <a name="notes"></a>Note  
   
--   Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) tipo: KnownMonikers  
+-   Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) digitare: KnownMonikers  
   
 -   Lo strumento tenta di avvio per caricare tutti i manifesti di immagine che trova, in modo che potrebbe richiedere alcuni secondi per l'applicazione viene effettivamente visualizzata. È possibile anche lenta o che non risponde durante il caricamento dei manifesti.  
   
 ## <a name="sample-output"></a>Esempio di output  
  Questo strumento non genera alcun output.
-

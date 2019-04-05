@@ -1,29 +1,24 @@
 ---
-title: 'Procedura: implementare progetti annidati | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Implementare progetti annidati | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968756"
 ---
-# <a name="how-to-implement-nested-projects"></a>Procedura: implementare progetti annidati
+# <a name="how-to-implement-nested-projects"></a>Procedura: Implementare progetti annidati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando si crea un tipo di progetto annidato esiste sono un alcuni passaggi aggiuntivi che devono essere implementati. Un progetto padre acquisisce alcune delle responsabilità stessa con la soluzione per i progetti annidati (figlio). Il progetto padre è un contenitore di progetti simili a una soluzione. In particolare, esistono diversi eventi che devono essere generati dalla soluzione e per i progetti padre per compilare la gerarchia di oggetti annidati. Questi eventi sono descritti nel processo seguente per la creazione di progetti annidati.  
@@ -99,4 +94,3 @@ Quando si crea un tipo di progetto annidato esiste sono un alcuni passaggi aggiu
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parametri di contesto](../../extensibility/internals/context-parameters.md)   
  [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)
-

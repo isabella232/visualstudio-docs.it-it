@@ -1,14 +1,9 @@
 ---
 title: Determinare quale Editor viene aperto un File in un progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969609"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Scelta dell'editor da usare per aprire un file in un progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Quando un utente apre un file in un progetto, l'ambiente passa attraverso un pro
   
  Il progetto file esterni attestazioni tutti i file che non sono richiesti da altri progetti. In questo modo, editor personalizzati possono aprire i documenti prima di aprirli editor standard. Se un file di attestazioni di un progetto di file esterni, l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per aprire il file con un editor standard. L'ambiente controlla l'elenco interno degli editor registrati per uno che gestisce i file RTF. Questo elenco si trova nel Registro di sistema la chiave seguente:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
   
  L'ambiente controlla anche gli identificatori di classe nella chiave del HKEY_CLASSES_ROOT\CLSID per tutti gli oggetti che hanno la sottochiave DocObject. Se viene trovato l'estensione di file, una versione incorporata dell'applicazione, ad esempio Microsoft Word, viene creata sul posto in Visual Studio. Questi oggetti documento devono essere file compositi che implementano il <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfaccia oppure l'oggetto deve implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaccia.  
   
@@ -53,4 +48,3 @@ Quando un utente apre un file in un progetto, l'ambiente passa attraverso un pro
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
-

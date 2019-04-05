@@ -1,29 +1,24 @@
 ---
 title: Stack di chiamate eventi grafici | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967714"
 ---
-# <a name="graphics-event-call-stack"></a>Stack di chiamate eventi grafici
+# <a name="graphics-event-call-stack"></a>Stack di chiamate eventi di grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio consente di mappare la relazione tra gli eventi di grafica problematici e il codice sorgente dell'app.  
@@ -47,10 +42,7 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
 |**Posizione**|Numero di riga del sito di chiamata.|  
   
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici  
- Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Il **Stack di chiamate eventi di grafica** finestra vengono forniti collegamenti a queste informazioni.  
+ Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Nella finestra **Stack di chiamate eventi di grafica** è presente un collegamento a tali informazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
-
-
-
+ [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)

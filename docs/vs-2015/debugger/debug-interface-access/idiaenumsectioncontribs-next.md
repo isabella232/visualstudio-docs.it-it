@@ -1,14 +1,9 @@
 ---
-title: Idiaenumsectioncontribs | Microsoft Docs
-ms.custom: ''
+title: IDiaEnumSectionContribs::Next | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04434bb28a0b79adf7f65a86c9bb3ddd970366f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18bee6cf8f47aeeadd41c7accc1f33566f564898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967759"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +46,8 @@ HRESULT Next( 
  [out] Restituisce il numero di contributi vengano effettuati sezione nell'enumeratore recuperato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

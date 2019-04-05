@@ -1,25 +1,22 @@
 ---
 title: Personalizzazione della finestra proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967229"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +43,7 @@ ms.locfileid: "49845745"
   
  Sulle forme è possibile esporre il **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** e **FillGradientMode** proprietà. Informazioni sui connettori, è possibile esporre il **colore**`,`**TextColor**, **DashStyle**, e **spessore** proprietà. Nei diagrammi, è possibile esporre il **FillColor** e **TextColor** proprietà.  
   
-## <a name="forwarding-displaying-properties-of-related-elements"></a>L'inoltro: Visualizzazione delle proprietà degli elementi correlati  
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Inoltro: Visualizzazione delle proprietà degli elementi correlati  
  Quando l'utente del linguaggio DSL seleziona un elemento in un modello, le proprietà dell'elemento vengono visualizzate nella finestra Proprietà. Tuttavia, è inoltre possibile visualizzare le proprietà degli elementi correlati specificati. Ciò è utile se è stato definito un gruppo di elementi che lavorano in combinazione. Ad esempio, è possibile definire un principale e un elemento facoltativo del plug-in. Se l'elemento principale viene eseguito il mapping a una forma e l'altro non lo è, è utile visualizzare tutte le relative proprietà come se fossero per un solo elemento.  
   
  Questo effetto è denominato *inoltro proprietà*, e ciò avviene automaticamente in molte situazioni. In altri casi, è possibile ottenere proprietà di inoltro mediante la definizione di un descrittore di tipi di dominio.  
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

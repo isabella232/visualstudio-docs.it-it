@@ -1,14 +1,9 @@
 ---
-title: 'CA1008: Gli enum devono avere valore zero | Microsoft Docs'
-ms.custom: ''
+title: 'CA1008: Le enumerazioni devono avere valore zero | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 69e60b0f2ee8106b04507722f1b3094e1bbdbbc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9b607c3a3fd7992bf8947c003d240d3d5b1d312
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968431"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Gli enum devono avere valore zero
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Le enumerazioni devono avere valore zero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -63,14 +58,11 @@ ms.locfileid: "49874826"
 
  [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 
- [CA1712: Non usare nomi di tipo come prefisso nei valori di enumerazione](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712: Prefisso nei valori di enumerazione con il nome di tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
- [CA1028: L'archivio di enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+ [CA1028: Archivio di enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
  [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Enum?displayProperty=fullName>
-
-
-

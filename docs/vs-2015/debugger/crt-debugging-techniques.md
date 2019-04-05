@@ -1,14 +1,9 @@
 ---
 title: Tecniche di debug CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967753"
 ---
 # <a name="crt-debugging-techniques"></a>Tecniche di debug CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Se si effettua il debug di un programma che utilizza la libreria di runtime del 
  Viene descritto il supporto per il debug fornito dalla libreria di runtime del linguaggio C e vengono fornite le istruzioni per accedere agli strumenti.  
   
  [Macro per la creazione di report](../debugger/macros-for-reporting.md)  
- Vengono fornite informazioni sul **RPTn** e **RPTFn** (definite in CRTDBG. H), che sostituisce l'uso di `printf` istruzioni per eseguire il debug.  
+ Vengono fornite informazioni sulle macro **_RPTn** e **_RPTFn**, definite in CRTDBG.H, che sostituiscono l'utilizzo di istruzioni `printf` per il debug.  
   
  [Versioni di debug di funzioni di allocazione heap](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Vengono descritte le speciali versioni di debug delle funzioni di allocazione heap, ad esempio: i vantaggi delle chiamate in modo esplicito, come CRT mappa le chiamate, come evitare la conversione, registrazione dei tipi separati di allocazioni nei blocchi client e i risultati della mancata definizione di _DEBUG.  
@@ -63,6 +58,3 @@ Se si effettua il debug di un programma che utilizza la libreria di runtime del 
   
  [Sicurezza del debugger](../debugger/debugger-security.md)  
  Vengono fornite indicazioni utili per un debug sicuro.
-
-
-

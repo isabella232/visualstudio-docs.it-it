@@ -1,14 +1,9 @@
 ---
 title: 'CA1720: Gli identificatori non devono contenere nomi di tipo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862339"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967689"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49862339"
 ## <a name="cause"></a>Causa
  Il nome di un parametro in un membro visibile esternamente contiene un nome di tipo di dati.
 
- oppure
+ -oppure-
 
  Il nome di un membro visibile esternamente contiene un nome di tipo di dati specifico del linguaggio.
 
@@ -79,15 +74,15 @@ ms.locfileid: "49862339"
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
   Inoltre, i nomi di parametro sono anche confrontati con i nomi dei tipi di dati indipendenti dal linguaggio seguente, in modo tra maiuscole e minuscole:
 
 - Object
 
-- obj
+- Obj
 
 - Booleano
 
@@ -115,7 +110,7 @@ ms.locfileid: "49862339"
 
 - IntPtr
 
-- PTR
+- Ptr
 
 - Puntatore
 
@@ -146,13 +141,10 @@ ms.locfileid: "49862339"
  Uso occasionale di nomi di parametri e membri in base al tipo potrebbe essere appropriato. Tuttavia, per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui si deve eliminare un avviso da questa regola. Per le librerie fornite in precedenza, potrebbe essere necessario eliminare un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Gli identificatori non devono contenere caratteri di sottolineatura](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
  [CA1719: I nomi dei parametri non devono corrispondere ai nomi dei membri](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-

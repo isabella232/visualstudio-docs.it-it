@@ -1,27 +1,22 @@
 ---
-title: 'Area di test 4: Controllare | Microsoft Docs'
-ms.custom: ''
+title: 'Area di test 4: Verificare nella | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97a610325a5165a1de2cc50fede5bbabf182ef5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965568"
 ---
 # <a name="test-area-4-check-in"></a>Area di test 4: Archiviare
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'area di test di archiviazione.  
   
-### <a name="case-4a-modified-items"></a>Caso 4a: elementi modificati  
+### <a name="case-4a-modified-items"></a>Case 4a: Elementi modificati  
  Viene descritto l'utilizzo di controllo in azione per aggiornare un file di controllo del codice sorgente che è stato modificato.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -57,7 +52,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di
 |Modificare un file di testo che è stato estratto, archiviare solo i file (**Archivia** nella finestra di dialogo)|1.  Creare un nuovo progetto con un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre e modificare il file di testo.<br />4.  Archiviare tramite la finestra di dialogo Archivia (**File**, **controllo del codice sorgente**, **Archivia**).|Comportamento previsto comune.|  
 |Modificare un file di testo che è stato estratto, archiviare solo i file (**archiviazioni in sospeso** finestra)|1.  Creare un nuovo progetto con un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre e modificare il file di testo.<br />4.  Archiviare tramite il **archiviazioni in sospeso** finestra.|Comportamento previsto comune.|  
   
-### <a name="case-4b-adding-files"></a>Caso 4b: aggiunta di file  
+### <a name="case-4b-adding-files"></a>Case 4b: Aggiunta di file  
  Quando si aggiunge un file a un progetto o un elemento a una soluzione, necessario modificare anche il progetto o soluzione. In questo modo il file padre è anche stato estratto e deve essere archiviato per completare l'aggiunta.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -65,7 +60,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di
 |Aggiungere un file di testo e archivia i file (**Archivia** nella finestra di dialogo)|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file di testo al progetto.<br />4.  Se richiesto, accettare check-out del progetto.<br />5.  Selezionare la soluzione in **Esplora soluzioni**.<br />6.  Archivia dal **Archivia** nella finestra di dialogo.|Comportamento previsto comune.|  
 |Aggiungere un file di testo e archivia i file (**archiviazioni in sospeso** finestra)|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file di testo al progetto.<br />4.  Se richiesto, accettare check-out del progetto.<br />5.  Controllare nella soluzione dal **archiviazioni in sospeso** finestra.|Comportamento previsto comune|  
   
-### <a name="case-4c-adding-projects"></a>Caso c 4: aggiunta di progetti  
+### <a name="case-4c-adding-projects"></a>Caso 4c: Aggiunta di progetti  
  Quando si aggiunge un progetto a una soluzione, necessario modificare anche la soluzione. In questo modo il file della soluzione è anche stato estratto e deve essere archiviato per completare l'aggiunta.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -75,4 +70,3 @@ Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

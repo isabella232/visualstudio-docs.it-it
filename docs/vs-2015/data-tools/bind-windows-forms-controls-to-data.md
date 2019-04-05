@@ -1,12 +1,9 @@
 ---
 title: Associare controlli Windows Form ai dati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967403"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associare controlli Windows Form ai dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "49237471"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Associazione ai dati in un controllo DataGridView  
- Per DataGridView, l'intera tabella è associato a tale controllo singolo. Quando si trascina un controllo DataGridView al form, uno strumento di rimozione per l'esplorazione dei record (<xref:System.Windows.Forms.BindingNavigator>) viene inoltre visualizzato. Oggetto [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti. Nella figura seguente, viene inoltre aggiunto un componente TableAdapterManager perché la tabella Customers è una relazione con la tabella Orders. Queste variabili sono tutti dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento DataGridView è disponibile nel gestore eventi form_load. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore dell'evento Save di BindingNavigator. È possibile spostare o modificare il codice in base alle esigenze.  
+ Per DataGridView, l'intera tabella è associato a tale controllo singolo. Quando si trascina un controllo DataGridView al form, uno strumento di rimozione per l'esplorazione dei record (<xref:System.Windows.Forms.BindingNavigator>) viene inoltre visualizzato. Oggetto [set di dati](../data-tools/dataset-tools-in-visual-studio.md), oggetto TableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti. Nella figura seguente, viene inoltre aggiunto un componente TableAdapterManager perché la tabella Customers è una relazione con la tabella Orders. Queste variabili sono tutti dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento DataGridView è disponibile nel gestore eventi form_load. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore dell'evento Save di BindingNavigator. È possibile spostare o modificare il codice in base alle esigenze.  
   
  ![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView con BindingNavigator")  
   
@@ -68,4 +65,3 @@ ms.locfileid: "49237471"
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

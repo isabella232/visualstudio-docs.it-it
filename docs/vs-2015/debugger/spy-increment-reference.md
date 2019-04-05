@@ -1,14 +1,9 @@
 ---
 title: Riferimenti per Spy + + | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 helpviewer_keywords:
 - reference, Spy++
 - Spy++ reference
@@ -16,13 +11,13 @@ ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed7aea0617db31c6edec9a739d7bae66d8fbe43f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c3402eefb480efe2ec1d82b9f689f94235c2934a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967050"
 ---
 # <a name="spy-reference"></a>Riferimenti per Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Vedere le sezioni elencate di seguito per una descrizione di ogni Spy + + menu e
  [Comandi di menu](../debugger/menu-commands.md)  
  Descrive i comandi disponibili in ogni menu Spy + +.  
   
- [Finestra di dialogo tipo di carattere](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [Tipo di carattere (finestra di dialogo)](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Utilizzato per configurare il tipo di carattere utilizzato in una finestra di visualizzazioni di Spy + +.  
   
  [Strumenti di ricerca per le visualizzazioni di Spy++](../debugger/search-tools-for-spy-increment-views.md)  
@@ -63,6 +58,3 @@ Vedere le sezioni elencate di seguito per una descrizione di ogni Spy + + menu e
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
  Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
-
-
-

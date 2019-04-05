@@ -1,14 +1,9 @@
 ---
 title: 'CA2111: I puntatori non devono essere visibili | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -20,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0d96a71a27a235887fe1744bbee09027c2c6d434
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8497433088e4c49868a76dd3281d02a5e79babe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969144"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: I puntatori non devono essere visibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49888934"
 ## <a name="rule-description"></a>Descrizione della regola
  <xref:System.IntPtr> e <xref:System.UIntPtr> sono tipi di puntatore vengono utilizzati per accedere alla memoria non gestita. Se un puntatore non è privato, interno o di sola lettura, codice dannoso può modificare il valore del puntatore, potenzialmente consentire l'accesso a percorsi arbitrari nella memoria o causando errori di sistema o dell'applicazione.
 
- Se si prevede di proteggere l'accesso al tipo che contiene il campo del puntatore, vedere [CA2112: i tipi protetti non devono esporre campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Se si prevede di proteggere l'accesso al tipo che contiene il campo del puntatore, vedere [CA2112: I tipi protetti non devono esporre campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Proteggere il puntatore del mouse, rendendo di sola lettura, interni o privati.
@@ -52,7 +47,7 @@ ms.locfileid: "49888934"
  Eliminare un avviso da questa regola se non si fa affidamento sul valore dell'indicatore di misura.
 
 ## <a name="example"></a>Esempio
- Il codice seguente illustra i puntatori che violano ed soddisfano la regola. Si noti che i puntatori non privati anche violano la regola [CA1051: non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Il codice seguente illustra i puntatori che violano ed soddisfano la regola. Si noti che i puntatori non privati anche violano la regola [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
@@ -63,6 +58,3 @@ ms.locfileid: "49888934"
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>
-
-
-

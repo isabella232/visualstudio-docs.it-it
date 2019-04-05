@@ -1,11 +1,8 @@
 ---
 title: Activity Designer CompensableActivity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
@@ -13,13 +10,13 @@ ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 670d3e92b24e35979074df3817611ceff692f59d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f11743e0027866fd45687f716f1989e98020c68e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968239"
 ---
 # <a name="compensableactivity-activity-designer"></a>ActivityDesigner CompensableActivity
 Il **CompensableActivity** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.CompensableActivity> attività.  
@@ -33,7 +30,7 @@ Il **CompensableActivity** ActivityDesigner viene utilizzato per creare e config
  Il **CompensableActivity** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../includes/wfd2-md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. In questo modo viene creata un'attività <xref:System.Activities.Statements.CompensableActivity> con un elemento <xref:System.Activities.Activity.DisplayName%2A> predefinito di CompensableActivity. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **CompensableActivity** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.  
   
 ### <a name="the-compensableactivity-properties"></a>Proprietà di CompensableActivity  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CompensableActivity> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. È possibile modificare le proprietà <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Activity%601.Result%2A> nella griglia delle proprietà ma le altre proprietà devono essere modificate nell'area di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CompensableActivity> e ne viene descritta la modalità di uso nella finestra di progettazione. È possibile modificare le proprietà <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Activity%601.Result%2A> nella griglia delle proprietà ma le altre proprietà devono essere modificate nell'area di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  
@@ -46,7 +43,7 @@ Il **CompensableActivity** ActivityDesigner viene utilizzato per creare e config
   
 ## <a name="see-also"></a>Vedere anche  
  [Transazione](../workflow-designer/transaction-activity-designers.md)   
- [Dell'attività CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
+ [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
  [Compensare](../workflow-designer/compensate-activity-designer.md)   
- [Confermare](../workflow-designer/confirm-activity-designer.md)   
+ [Confirm](../workflow-designer/confirm-activity-designer.md)   
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

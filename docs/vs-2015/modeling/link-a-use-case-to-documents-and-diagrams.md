@@ -1,12 +1,9 @@
 ---
 title: Collegare un caso d'uso a documenti e diagrammi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.usecasediagram.artifact.properties.artifactlink
 - vs.teamarch.usecasediagram.artifact
@@ -16,15 +13,15 @@ ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969197"
 ---
-# <a name="link-a-use-case-to-documents-and-diagrams"></a>Collegare un caso d'uso a documenti e diagrammi
+# <a name="link-a-use-case-to-documents-and-diagrams"></a>Collegare un caso di utilizzo a documenti e diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile collegare un caso di utilizzo in un diagramma caso di utilizzo a un altro diagramma o documento. Ad esempio, è possibile collegare il caso di utilizzo ai seguenti diagrammi e documenti:  
@@ -87,10 +84,7 @@ ms.locfileid: "51787913"
     >  Se si desidera fornire un percorso di file, è consigliabile scegliere un file in un'area di lavoro comune (a partire da '\\\\'), o in un file all'interno della soluzione di Visual Studio. In questo modo, il percorso file resterà valido nel computer di un altro membro del team oppure in caso la soluzione venga spostata. Per aggiungere un documento, ad esempio un documento di Word alla soluzione, fare doppio clic la soluzione in Esplora soluzioni, scegliere **Add** e quindi fare clic su **elemento esistente**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammi dei casi d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)
-
-
-

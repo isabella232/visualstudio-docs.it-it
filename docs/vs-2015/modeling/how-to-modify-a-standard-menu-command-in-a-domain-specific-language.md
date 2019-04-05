@@ -1,12 +1,9 @@
 ---
-title: 'Procedura: modificare un comando di Menu Standard in un linguaggio specifico di dominio | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Modificare un comando di Menu Standard in un linguaggio specifico di dominio | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,15 +11,15 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966357"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare **Taglia** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -38,7 +35,7 @@ ms.locfileid: "49837564"
    In questo argomento viene illustrata la procedura.  
   
 > [!NOTE]
->  Se si desidera creare i propri comandi di menu, vedere [procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+>  Se si desidera creare i propri comandi di menu, vedere [come: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ##  <a name="what"></a> I comandi che è possibile modificare?  
   
@@ -83,7 +80,7 @@ ms.locfileid: "49837564"
      **Nota** se si usa il modello di file di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.  
   
 ##  <a name="override"></a> Eseguire l'override del comando  
- La maggior parte dei comandi sono associati due metodi: il metodo con un nome, ad esempio `ProcessOnStatus`... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.  
+ La maggior parte dei comandi sono associati due metodi: Il metodo con un nome, ad esempio `ProcessOnStatus`... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Per cambiare la situazione in cui il comando viene visualizzato in un menu  
  Eseguire l'override del metodo... (metodo). Questo metodo deve impostare le proprietà Visible ed Enabled del parametro MenuCommand. In genere il comando esamina this.CurrentSelection per determinare se il comando si applica agli elementi selezionati, di cui può anche esaminare le proprietà per determinare se può essere applicato con il loro stato corrente.  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
  [Procedura dettagliata: Recupero di informazioni da un collegamento selezionato](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Visual Studio Command Table (. File Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Riferimento allo Schema XML VSCT](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK: esempio elettrici. Personalizzazione DSL estesa](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Codice di esempio: elettrici](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Codice di esempio: Elettrici](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

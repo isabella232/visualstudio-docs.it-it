@@ -1,26 +1,21 @@
 ---
 title: Aggiunta come contributo al modello di automazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53a669ed6f1ddaa9c2274371439828da24b92789
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968737"
 ---
 # <a name="contributing-to-the-automation-model"></a>Aggiunta di elementi al modello di automazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,4 +62,3 @@ Visual Studio offre un set di interfacce di automazione per la personalizzazione
  Fornisce un esempio di codice che illustra come fa parte di un pacchetto VSPackage nel modello a oggetti di automazione DTE. Elenca i parametri, valori restituiti e selezionato la sezione Osservazioni.  
   
 ## <a name="related-sections"></a>Sezioni correlate
-
