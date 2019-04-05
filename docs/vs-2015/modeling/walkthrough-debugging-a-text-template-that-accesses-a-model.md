@@ -1,44 +1,41 @@
 ---
 title: 'Procedura dettagliata: Debug di un modello di testo che accede a un modello | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968751"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: Debug di un modello di testo che accede a un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si modificano o si aggiungono i modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile ricevere errori quando il motore di trasformazione del modello al codice sorgente oppure durante la compilazione del codice generato. La procedura riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.  
   
 > [!NOTE]
->  Per altre informazioni sul testo modelli in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per altre informazioni sul debug di modelli di testo, vedere [procedura dettagliata: debug di un modello di testo](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Per altre informazioni sul testo modelli in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per altre informazioni sul debug di modelli di testo, vedere [procedura dettagliata: Debug di un modello di testo](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language  
  In questa procedura, si crea una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:  
   
 - Nome: DebuggingTestLanguage  
   
-- Modello di soluzione: linguaggio minimo  
+- Modello di soluzione: Linguaggio minimo  
   
 - Estensione di file:. ddd  
   
 - Nome della società: Fabrikam  
   
-  Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [procedura: creare una soluzione di linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Per altre informazioni sulla creazione di una soluzione domain-specific language, vedere [come: Creare una soluzione per un linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Creazione di un modello di testo  
  Aggiungere un modello di testo alla soluzione.  
@@ -164,7 +161,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
   
      (C#)  
   
-     **Compilazione della trasformazione: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' non contiene una definizione per 'ExampleModel'**  
+     **Compilazione della trasformazione: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' non contiene una definizione per 'ExampleModel'**  
   
      (Visual Basic)  
   
@@ -180,7 +177,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
   
 4.  Per correggere il codice, modificare il nome della proprietà `LibraryModel` nel codice del modello di testo.  
   
-     Le modifiche sono evidenziate.  
+     Le modifiche vengono evidenziate.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -216,6 +213,3 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
 5.  Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
   
      A questo punto il sistema consente di trasformare il modello di testo e genera il corrispondente file di output. Gli eventuali errori in non verrà visualizzato il **elenco errori** finestra.
-
-
-

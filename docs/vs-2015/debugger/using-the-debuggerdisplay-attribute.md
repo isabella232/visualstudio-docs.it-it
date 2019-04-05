@@ -1,14 +1,9 @@
 ---
 title: Uso dell'attributo DebuggerDisplay | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9637bd2d2a057615fd758ecec80a914931822b64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968338"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilizzo dell'attributo DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +101,7 @@ public sealed class MyClass
 |**Name**|**Valore**|**Type**|  
 |--------------|---------------|--------------|  
 |Chiave|"three"|oggetto {string}|  
-|Valore|3|oggetto {int}|  
+|Value|3|oggetto {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
@@ -186,6 +181,3 @@ class MyHashtable
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [miglioramento del debug con gli attributi di visualizzazione Debugger](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

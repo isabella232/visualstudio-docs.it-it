@@ -1,12 +1,9 @@
 ---
 title: Salvare un set di dati in formato XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a91bc594f2f028f7dfc7a11263b7aac23150b7f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 49fb600b2c27725eb6fe888aa2a41a6b19c123b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967701"
 ---
 # <a name="save-a-dataset-as-xml"></a>Salvare un set di dati come XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +52,3 @@ I dati XML in un set di dati sono accessibili chiamando i metodi XML disponibili
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
-

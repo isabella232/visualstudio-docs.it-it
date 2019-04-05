@@ -1,11 +1,8 @@
 ---
 title: Activity Designer flowchart | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
@@ -15,13 +12,13 @@ ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967613"
 ---
 # <a name="flowchart-activity-designer"></a>ActivityDesigner Diagramma di flusso
 L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare flussi di lavoro che definiscono e gestiscono controlli di flusso complessi. È possibile creare un'attività <xref:System.Activities.Statements.Flowchart> tramite codice o usando [!INCLUDE[wfd2](../includes/wfd2-md.md)]. In questo argomento viene descritto come usare [!INCLUDE[wfd2](../includes/wfd2-md.md)] a tale scopo. L'ActivityDesigner per i flussi di lavoro di [!INCLUDE[wfd1](../includes/wfd1-md.md)] consente agli sviluppatori di creare flussi di lavoro in modo naturale.  
@@ -37,7 +34,7 @@ L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare
  Dopo aver rilasciato diversi ActivityDesigner nell'area di disegno di [!INCLUDE[wfd2](../includes/wfd2-md.md)], è possibile collegare tra loro gli oggetti <xref:System.Activities.Activity> che rappresentano per specificarne l'ordine di esecuzione. Per creare un collegamento tra un'attività di origine e un'attività di destinazione, spostare il mouse sulla finestra di progettazione dell'attività di origine in modo da visualizzare handle quadrati su ciascun lato. Fare clic su uno degli handle quadrati e, tenendo premuto il pulsante del mouse, trascinarlo su uno degli handle visualizzati in modo simile intorno all'attività di destinazione durante il passaggio del mouse. Dopo aver rilasciato il pulsante del mouse, verrà creato un collegamento tra queste due attività rappresentato da una freccia che collega la finestra di progettazione di origine a quella di destinazione.  
   
 ### <a name="flowchart-activity-properties"></a>Proprietà dell'attività Flowchart  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Flowchart> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Flowchart> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  
@@ -49,4 +46,4 @@ L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare
 ## <a name="see-also"></a>Vedere anche  
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

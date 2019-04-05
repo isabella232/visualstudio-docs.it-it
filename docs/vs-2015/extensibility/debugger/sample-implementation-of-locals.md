@@ -1,27 +1,22 @@
 ---
 title: Implementazione di variabili locali di esempio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ca64ed08060df3a03dbb178fc636ca243e1e48d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af718d5fe5038a2baa62093078aaed9a3cccb14b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966769"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementazione di esempio di variabili locali
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,9 +66,8 @@ ms.locfileid: "51756822"
  [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)  
  Fornisce gli argomenti passati durante la Germania chiama l'analizzatore di espressioni (EE).  
   
- [Esempio MyCEE](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Esempio MyCEE](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Viene illustrato un approccio di implementazione per la creazione di un analizzatore di espressioni per il linguaggio MyC.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)
-

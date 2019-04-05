@@ -1,12 +1,9 @@
 ---
 title: Convalidare i dati nei set di dati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - DataTable.ColumnChanging
 - System.Data.DataTable.ColumnChanging
@@ -26,13 +23,13 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968588"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +39,14 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
  È possibile confermare che i dati che vengono salvati in un set di dati siano validi creando i controlli di convalida nel set di dati stesso. Il set di dati può controllare i dati, indipendentemente dal modo in cui viene eseguita l'aggiornamento, ovvero direttamente dai controlli in un form, all'interno di un componente o in altro modo. Poiché il set di dati fa parte dell'applicazione (a differenza del back-end di database), è una posizione logica per compilare una convalida specifiche dell'applicazione.  
   
- Il modo migliore per aggiungere la convalida per l'applicazione è nel file di classe parziale del set di dati. Nelle [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oppure [!INCLUDE[csprcs](../includes/csprcs-md.md)], aprire il **Progettazione Dataset** e fare doppio clic la colonna o una tabella per cui si desidera creare una convalida. Questa azione crea automaticamente un' <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> gestore dell'evento. Per altre informazioni, vedere [come: convalidare i dati durante la modifica delle colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) oppure [procedura: convalidare i dati durante le modifiche riga](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Per un esempio completo, vedere [procedura dettagliata: aggiunta di convalida a un set di dati](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
+ Il modo migliore per aggiungere la convalida per l'applicazione è nel file di classe parziale del set di dati. Nelle [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] oppure [!INCLUDE[csprcs](../includes/csprcs-md.md)], aprire il **Progettazione Dataset** e fare doppio clic la colonna o una tabella per cui si desidera creare una convalida. Questa azione crea automaticamente un' <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> gestore dell'evento. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) o [come: Convalidare i dati durante la modifica delle righe](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Per un esempio completo, vedere [procedura dettagliata: Aggiunta della convalida a un set di dati](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
   
 ## <a name="validate-data"></a>Convalidare i dati  
  Convalida all'interno di un set di dati può essere eseguita nei modi seguenti:  
   
-- Quando si crea il proprio convalida specifiche dell'applicazione in grado di verificare i valori in una singola colonna dati durante le modifiche.  Per altre informazioni, vedere [procedura: convalidare i dati durante la modifica delle colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Quando si crea il proprio convalida specifiche dell'applicazione in grado di verificare i valori in una singola colonna dati durante le modifiche.  Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- Tramite la creazione di convalida personalizzata specifici dell'applicazione in grado di verificare i dati dei valori, mentre un intero data la modifica di riga. Per altre informazioni, vedere [procedura: convalidare i dati durante le modifiche riga](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Tramite la creazione di convalida personalizzata specifici dell'applicazione in grado di verificare i dati dei valori, mentre un intero data la modifica di riga. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle righe](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 - Tramite la creazione di chiavi, vincoli unique, e così via come parte della definizione effettiva dello schema del set di dati. Per altre informazioni sull'inclusione di convalida nella definizione dello schema, vedere [vincolare un oggetto DataColumn per contenere valori univoci](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
@@ -57,9 +54,9 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
   Diversi eventi generati dal <xref:System.Data.DataTable> quando viene apportata una modifica in un record dell'oggetto:  
   
-- Il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> gli eventi vengono generati durante e dopo ogni modifica apportata a una singola colonna. Il <xref:System.Data.DataTable.ColumnChanging> evento è utile quando si desidera convalidare le modifiche in colonne specifiche. Informazioni sulla modifica di proposta viene passate come argomento all'evento. Per altre informazioni, vedere [procedura: convalidare i dati durante la modifica delle colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> gli eventi vengono generati durante e dopo ogni modifica apportata a una singola colonna. Il <xref:System.Data.DataTable.ColumnChanging> evento è utile quando si desidera convalidare le modifiche in colonne specifiche. Informazioni sulla modifica di proposta viene passate come argomento all'evento. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- Il <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> gli eventi vengono generati durante e dopo qualsiasi modifica apportata a una riga. Il <xref:System.Data.DataTable.RowChanging> evento è più generale. Indica che viene apportata una modifica in un punto qualsiasi nella riga, ma non si sa quale colonna è stata modificata. Per altre informazioni, vedere [procedura: convalidare i dati durante le modifiche riga](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Il <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> gli eventi vengono generati durante e dopo qualsiasi modifica apportata a una riga. Il <xref:System.Data.DataTable.RowChanging> evento è più generale. Indica che viene apportata una modifica in un punto qualsiasi nella riga, ma non si sa quale colonna è stata modificata. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle righe](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
   Per impostazione predefinita, ogni modifica apportata a una colonna genera quindi quattro eventi. Il primo è il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> eventi per la colonna specifica da modificare. Successivamente vengono le <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventi. Se vengono apportate più modifiche alla riga, gli eventi verranno generati per ogni modifica.  
   
@@ -100,14 +97,14 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 - Facoltativamente, usare un <xref:System.Windows.Forms.ErrorProvider> controllo per visualizzare un messaggio di errore all'utente. Per altre informazioni, vedere [sul componente ErrorProvider](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
-  La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.RowChanging> evento. Per altre informazioni, vedere [procedura: convalidare i dati durante le modifiche riga](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.RowChanging> evento. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle righe](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Convalidare i dati durante la modifica delle righe  
  È possibile scrivere codice per verificare che ogni colonna che si desidera convalidare contenga dati che soddisfano i requisiti dell'applicazione. Eseguire questa operazione impostando la colonna a indicare che contiene un errore se un valore proposto è accettabile. L'esempio seguente imposta un errore di colonna quando il `Quantity` colonna è minore o uguale a 0. I gestori di eventi di modifica riga dovrebbero essere simile negli esempi seguenti.  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Per convalidare i dati quando una riga viene modificato (Visual Basic)  
   
-1.  Aprire il set di dati nel **Progettazione Dataset**. Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il <xref:System.Data.DataTable.RowChanging> gestore dell'evento del <xref:System.Data.DataTable> nel file di classe parziale del set di dati.  
   
@@ -118,7 +115,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Per convalidare i dati quando viene modificata una riga (c#)  
   
-1.  Aprire il set di dati nel **Progettazione Dataset**. Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea un file di classe parziale per il <xref:System.Data.DataTable>.  
   
@@ -148,7 +145,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>Per recuperare le righe modificate  
- Ogni riga in una tabella di dati ha un <xref:System.Data.DataRow.RowState%2A> che tiene traccia dello stato corrente della riga usando i valori nelle proprietà di <xref:System.Data.DataRowState> enumerazione. È possibile restituire le righe modificate da una tabella di dati o set di dati chiamando il `GetChanges` metodo di un <xref:System.Data.DataSet> o <xref:System.Data.DataTable>. È possibile verificare l'esistano delle modifiche prima di chiamare `GetChanges` chiamando il <xref:System.Data.DataSet.HasChanges%2A> metodo di un set di dati. Per altre informazioni sulle <xref:System.Data.DataSet.HasChanges%2A>, vedere [procedura: verificare la presenza di righe modificate](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
+ Ogni riga in una tabella di dati ha un <xref:System.Data.DataRow.RowState%2A> che tiene traccia dello stato corrente della riga usando i valori nelle proprietà di <xref:System.Data.DataRowState> enumerazione. È possibile restituire le righe modificate da una tabella di dati o set di dati chiamando il `GetChanges` metodo di un <xref:System.Data.DataSet> o <xref:System.Data.DataTable>. È possibile verificare l'esistano delle modifiche prima di chiamare `GetChanges` chiamando il <xref:System.Data.DataSet.HasChanges%2A> metodo di un set di dati. Per altre informazioni su <xref:System.Data.DataSet.HasChanges%2A>, vedere [Procedura: Verificare la presenza di righe modificate](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
 >  Dopo il commit delle modifiche a una tabella di dati o set di dati (chiamando il <xref:System.Data.DataSet.AcceptChanges%2A> metodo), il `GetChanges` metodo non restituisce alcun dato. Se l'applicazione deve elaborare le righe modificate, è necessario elaborare le modifiche prima di chiamare il `AcceptChanges` (metodo).  
@@ -217,9 +214,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
      [!code-csharp[VbRaddataEditing#22](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#22)]
      [!code-vb[VbRaddataEditing#22](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#22)]  
   
-## <a name="see-also"></a>Vedere anche  
- [Creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md)   
- [Procedura: Connettersi ai dati di un database](../data-tools/how-to-connect-to-data-in-a-database.md)   
- [Procedura: convalidare dati nel controllo DataGridView Windows Form](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
- [Procedura: Visualizzare le icone di errori per la convalida dei form con il componente ErrorProvider di Windows Form](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+## <a name="see-also"></a>Vedere anche
 
+- [Procedura: Convalidare i dati nel controllo DataGridView Windows Form](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [Procedura: Visualizzare le icone di errore per la convalida dei Form con il componente ErrorProvider di Windows Form](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

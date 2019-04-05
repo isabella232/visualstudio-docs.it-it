@@ -1,14 +1,9 @@
 ---
 title: Funzione SccQueryChanges | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccQueryChanges
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 86403d04c84a8a298d38359a919a5b5b0e9e399c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969702"
 ---
 # <a name="sccquerychanges-function"></a>Funzione SccQueryChanges
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ SCCRTN SccQueryChanges(
  pContext  
  [in] Il puntatore di contesto del plug-in controllo di origine.  
   
- nFile  
+ nFiles  
  [in] Numero di file in `lpFileNames` matrice.  
   
  lpFileNames  
@@ -60,7 +55,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Il processo di query completato.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è stata aperta nel controllo del codice sorgente.|  
@@ -74,4 +69,3 @@ SCCRTN SccQueryChanges(
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [Codici di errore](../extensibility/error-codes.md)
-

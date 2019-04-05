@@ -1,27 +1,22 @@
 ---
 title: Comando Design | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970019"
 ---
 # <a name="command-design"></a>Progettazione dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,4 +72,3 @@ Quando si aggiunge un comando a un pacchetto VSPackage, è necessario specificar
 |[Posizionamento predefinito di comandi, gruppi e barre degli strumenti](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Viene descritto come i VSPackage possono meglio usare i comandi inclusi in Visual Studio.|  
 |[Gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md)|Descrive la modalità di caricamento pacchetti VSPackage in Visual Studio.|  
 |[File Visual Studio Command Table (VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Vengono fornite informazioni sui file con estensione vsct basato su XML, che vengono usati per descrivere il layout e l'aspetto dei comandi nei pacchetti VSPackage.|
-

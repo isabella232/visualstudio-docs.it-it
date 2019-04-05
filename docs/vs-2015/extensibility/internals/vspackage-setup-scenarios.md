@@ -1,26 +1,21 @@
 ---
 title: Scenari di installazione di pacchetti VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
 ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34181e5b03b29662188e368561b0f43049629ec1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969856"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenari di installazione di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Programma di installazione di VSPackage condiviso
 > [!NOTE]
 >  Impostazione colonna da visualizzare una funzionalità su 0 per nasconderlo. Un valore di colonna di livello basso, ad esempio 1, garantisce che sarà sempre installata. Per altre informazioni, vedere [proprietà INSTALLLEVEL](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) e [tabella delle funzionalità](http://msdn.microsoft.com/library/aa368585.aspx).  
   
-## <a name="scenario-2-shared-vspackage-update"></a>Scenario 2: Aggiornamento di VSPackage condivisi  
+## <a name="scenario-2-shared-vspackage-update"></a>Scenario 2: Update Package VS condivisi  
  In questo scenario, è disponibile una versione aggiornata del programma di installazione pacchetto VSPackage nello scenario 1. Ai fini di discussione, l'aggiornamento aggiunge il supporto per [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ma potrebbe anche essere un semplice security patch o correzione di bug service pack. Le regole del programma di installazione di Windows per l'installazione dei componenti più recenti richiedono che i componenti invariati nel sistema è già non vengono ricopiati. In questo caso, un sistema con la versione 1.0 sono già presenti sovrascriverà il componente aggiornato Comp_MyVSPackage.dll e consentire agli utenti di scegliere di aggiungere la nuova funzionalità Feat_VS2005 al relativo componente Comp_VS2005_Reg.  
   
 > [!CAUTION]
@@ -63,7 +58,7 @@ Il programma di installazione di VSPackage aggiornamento condivisi
   
  Questo scenario presenta un nuovo pacchetto VSPackage programma di installazione, sfruttando i vantaggi del supporto del programma di installazione di Windows per gli aggiornamenti secondari. Gli utenti installano la versione 1.1 e viene aggiornato alla versione 1.0. Non è tuttavia necessario avere la versione 1.0 nel sistema. Lo stesso di installazione installerà la versione 1.1 in un sistema senza versione 1.0. Il vantaggio di fornire gli aggiornamenti secondari in questo modo è che non è necessario passare attraverso il lavoro dello sviluppo di un programma di installazione aggiornamento e un programma di installazione completa del prodotto. Un programma di installazione esegue entrambi i processi. Una correzione di sicurezza o di un servizio di tipo pack potrebbe invece sfruttare le patch di Windows Installer. Per altre informazioni, vedere [applicazione di patch e aggiornamenti](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
   
-## <a name="scenario-3-side-by-side-vspackage"></a>Scenario 3: Side-by-Side VSPackage  
+## <a name="scenario-3-side-by-side-vspackage"></a>Scenario 3: VSPackage side-by-Side  
  Questo scenario presenta due programmi di installazione del pacchetto VSPackage, ovvero uno per ogni versione di Visual Studio .NET 2003 e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ogni programma di installazione installa un side-by-side privati, VSPackage (uno in particolare compilato e installato per una particolare versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]). Ogni pacchetto VSPackage è nel proprio componente. Di conseguenza, ogni eseguire singolarmente la manutenzione con le patch o manutenzione rilascia. Poiché la DLL di VSPackage è ora specifici della versione, è consigliabile includere le informazioni di registrazione nel componente stesso come DLL.  
   
  ![Sul lato di Visual Studio&#45;da&#45;immagine di pacchetto di Visual Studio Side](../../extensibility/internals/media/vs-sbys-package.gif "VS_SbyS_Package")  
@@ -71,7 +66,7 @@ Programma di installazione di VSPackage side-by-side
   
  Ogni programma di installazione include anche codice che verrà condivisi tra i due programmi di installazione. Se il codice condiviso viene installato in un percorso comune, entrambi i file con estensione msi di installazione installerà il codice condiviso una sola volta. Il programma di installazione secondo incrementa semplicemente un conteggio dei riferimenti del componente. Il conteggio dei riferimenti garantisce che se uno dei VSPackage viene disinstallato, il codice condiviso rimarrà per altri VSPackage. Se viene disinstallato anche il pacchetto VSPackage secondario, verrà rimosso il codice condiviso.  
   
-## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenario 4: Side-by-Side package VS Update  
+## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenario 4: Aggiornamento pacchetto VSPackage side-by-Side  
  In questo scenario, il pacchetto VSPackage per [!INCLUDE[vsprvslong](../../includes/vsprvslong-md.md)] subito dalla protezione di una vulnerabilità ed è necessario rilasciare un aggiornamento. Come nello scenario 2, è possibile creare un nuovo file con estensione msi che aggiorna un'installazione esistente per includere la correzione di sicurezza, nonché di distribuire le nuove installazioni con la correzione di sicurezza già presenti.  
   
  In questo caso, il pacchetto VSPackage è un pacchetto VSPackage gestito installato nella global assembly cache (GAC). Durante la ricompilazione per includere la correzione di sicurezza, è necessario modificare la parte del numero di revisione del numero di versione di assembly. Le informazioni di registrazione per il numero di versione nuova sovrascrive quella precedente, generando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per caricare l'assembly predefinito.  
@@ -82,6 +77,5 @@ Programma di installazione side-by-side package VS update
  **Nota** per altre informazioni sulla distribuzione di assembly side-by-side, vedere [semplificando la distribuzione e la risoluzione di "DLL hell" con .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Programma di installazione di Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
-

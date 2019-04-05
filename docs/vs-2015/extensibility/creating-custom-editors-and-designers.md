@@ -1,27 +1,22 @@
 ---
 title: Creazione di editor personalizzati e finestre di progettazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753260"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966616"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Creazione di finestre di progettazione ed editor personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +72,10 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi ti
      Se può essere incorporato, è necessario creare una finestra host per l'editor esterno e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo e impostare il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valore di enumerazione da `DP_External`. Se l'editor non può essere incorporato, l'IDE creerà automaticamente una finestra separata per tale.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Procedura dettagliata: Creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Procedura dettagliata: Creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Viene illustrato come creare un editor personalizzato.  
   
- [Procedura dettagliata: Aggiunta di funzionalità in un editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Procedura dettagliata: Aggiunta di funzionalità in un Editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Viene illustrato come aggiungere funzionalità a un editor personalizzato.  
   
  [Inizializzazione della finestra di progettazione e configurazione dei metadati](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi ti
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

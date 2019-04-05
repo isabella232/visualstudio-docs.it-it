@@ -1,12 +1,9 @@
 ---
 title: Aggiungere la convalida a un set di dati a più livelli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,21 +17,20 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968653"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aggiunta della convalida a un set di dati è suddivisa in una soluzione a più livelli è essenzialmente uguale all'aggiunta di convalida a un singolo file dataset (un set di dati in un unico progetto). Il percorso suggerito per eseguire la convalida dei dati è durante la <xref:System.Data.DataTable.ColumnChanging> e/o <xref:System.Data.DataTable.RowChanging> gli eventi di una tabella dati.  
   
- Il [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md) fornisce la funzionalità per creare classi parziali a cui è possibile aggiungere codice utente per la colonna e riga-modifica gli eventi delle tabelle di dati nel set di dati. Per altre informazioni sull'aggiunta di codice a un set di dati in una soluzione a più livelli, vedere [aggiungere codice al set di dati in applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [aggiungere codice agli oggetti TableAdapter in applicazioni a più livelli](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Per altre informazioni sulle classi parziali, vedere [procedura: dividere una classe in classi parziali (Progettazione classi)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) oppure [classi e metodi parziali](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+La finestra di progettazione set di dati fornisce la funzionalità per creare classi parziali a cui è possibile aggiungere il codice utente per colonna e riga modifica gli eventi delle tabelle di dati nel set di dati. Per altre informazioni sull'aggiunta di codice a un set di dati in una soluzione a più livelli, vedere [aggiungere codice al set di dati in applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [aggiungere codice agli oggetti TableAdapter in applicazioni a più livelli](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Per altre informazioni sulle classi parziali, vedere [come: Dividere una classe in classi parziali (Progettazione classi)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) oppure [classi e metodi parziali](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 >  Quando si separano i set di dati da oggetti TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
@@ -43,7 +39,7 @@ Aggiunta della convalida a un set di dati è suddivisa in una soluzione a più l
 >  La finestra di progettazione set di dati non crea automaticamente i gestori eventi in c# per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi. È necessario creare un gestore dell'evento manualmente e associare il gestore eventi all'evento sottostante. Le procedure seguenti descrivono come creare i gestori eventi necessaria in Visual Basic e c#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges alle singole colonne  
- Convalidare i valori delle singole colonne gestendo il <xref:System.Data.DataTable.ColumnChanging> evento. Il <xref:System.Data.DataTable.ColumnChanging> evento viene generato quando viene modificato un valore in una colonna. Creare un gestore eventi per il <xref:System.Data.DataTable.ColumnChanging> eventi facendo doppio clic la colonna desiderata nel [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md).  
+ Convalidare i valori delle singole colonne gestendo il <xref:System.Data.DataTable.ColumnChanging> evento. Il <xref:System.Data.DataTable.ColumnChanging> evento viene generato quando viene modificato un valore in una colonna. Creare un gestore eventi per il <xref:System.Data.DataTable.ColumnChanging> eventi facendo doppio clic sul set di dati colonna desiderata.  
   
  La prima volta che si fa doppio clic su una colonna, la finestra di progettazione genera un gestore eventi per il <xref:System.Data.DataTable.ColumnChanging> evento. Un `If…Then` istruzione viene creata anche che i test per la colonna specifica. Ad esempio, il codice seguente viene generato quando si fa doppio clic sulla colonna RequiredDate nel tabella Orders di Northwind:  
   
@@ -62,7 +58,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Per aggiungere la convalida durante le modifiche ai valori di colonna singola  
   
-1.  Aprire il dataset nel [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md) facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati nella finestra di progettazione facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Fare doppio clic sulla colonna da convalidare. Questa azione viene creata la <xref:System.Data.DataTable.ColumnChanging> gestore dell'evento.  
   
@@ -117,11 +113,11 @@ End Sub
   
  Quando avviene l'immissione degli ordini, la convalida assicura che un ordine non viene immesso con una colonna RequiredDate che o prima OrderDate. In questo esempio, i valori per le colonne OrderDate sia RequiredDate necessario confrontare, in modo che la convalida di una singola modifica di colonna non ha senso.  
   
- Creare un gestore eventi per il <xref:System.Data.DataTable.RowChanging> eventi facendo doppio clic sul nome della tabella nella barra del titolo della tabella nel [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md).  
+ Creare un gestore eventi per il <xref:System.Data.DataTable.RowChanging> eventi facendo doppio clic sul nome della tabella nella barra del titolo della tabella.  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Per aggiungere la convalida durante la modifica a intere righe  
   
-1.  Aprire il dataset nel [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md) facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati nella finestra di progettazione facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Fare doppio clic sulla barra del titolo della tabella di dati nella finestra di progettazione.  
   
@@ -183,4 +179,3 @@ End Sub
  [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)   
  [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md)
-

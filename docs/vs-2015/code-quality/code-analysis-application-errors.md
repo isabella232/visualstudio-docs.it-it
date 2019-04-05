@@ -1,14 +1,9 @@
 ---
-title: Errori dell'applicazione di analisi del codice | Microsoft Docs
-ms.custom: ''
+title: Errori nell'applicazione dell'analisi del codice
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967943"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ In questa sezione è un riferimento dei messaggi di errore generati dallo strume
 |[CA0062](ca0062.md)|La regola '*RuleId*'a cui viene fatto riferimento nel set di regole'*RuleSetName*' non è stato trovato.|
 |[CA0063](ca0063.md)|Impossibile caricare il file del set di regole o uno dei relativi file di set di regole dipendenti.|
 |[CA0064](ca0064.md)|Analisi non è stata eseguita perché il set di regole specificato non contiene tutte le regole FxCop.|
-|[CA0065](ca0065.md)|Costrutto di metadati non supportato: tipo '*nomeTipo*'contiene una proprietà e un campo con lo stesso nome'*NomeCampoProprietà*'|
+|[CA0065](ca0065.md)|Costrutto di metadati non supportato: Tipo '*nomeTipo*'contiene una proprietà e un campo con lo stesso nome'*NomeCampoProprietà*'|
 |[CA0066](ca0066.md)|Il valore '*VersionID*' specificato per il **/targetframeworkversion** non è una versione riconosciuta.|
 |[CA0067](ca0067.md)|Directory non trovata.|
 |[CA0068](ca0068.md)|Eseguire il debug è stato possibile trovare informazioni per assembly di destinazione *'AssemblyName'*.|
@@ -57,14 +52,13 @@ In questa sezione è un riferimento dei messaggi di errore generati dallo strume
 |[CA0070](ca0070.md)|Impossibile caricare l'assembly o un tipo a causa di autorizzazioni di sicurezza.|
 |[CA0501](ca0501.md)|Impossibile leggere il report di output.|
 |[CA0502](ca0502.md)|Lingua non supportata.|
-|[CA0503](ca0503.md))|Questa proprietà è deprecata. Utilizzare la proprietà superceding|
+|[CA0503](ca0503.md)|La proprietà è deprecata. Utilizzare la proprietà superceding|
 |[CA0504](ca0504.md)|La directory di regole è stata ignorata perché non esiste|
-|[CA0505](ca0505.md)|Questa proprietà è deprecata. Utilizzare la proprietà superceding|
+|[CA0505](ca0505.md)|La proprietà è deprecata. Utilizzare la proprietà superceding|
 |[Errori di FxCopCmd](fxcopcmd-errors.md)|Errori di analisi codice gestito.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Gli errori dei criteri di analisi archiviazione di codice.|
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Linee guida per la scrittura di codice sicuro](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Linee guida per la scrittura di codice sicuro](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 - [Risorse per la risoluzione degli errori negli strumenti di gestione del ciclo di vita dell'applicazione](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

@@ -1,26 +1,21 @@
 ---
 title: Aprire una finestra degli strumenti dinamica | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 073e8a2e7ff13dad0e413aa47b7875260f612cd2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969850"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Apertura di una finestra degli strumenti dinamica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Finestre degli strumenti sono in genere aperte da un comando in un menu o un equ
 3.  Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato. È non verrà visualizzata la finestra degli strumenti.  
   
 4.  Aprire un progetto nell'istanza sperimentale. Apparirà la finestra degli strumenti.
-

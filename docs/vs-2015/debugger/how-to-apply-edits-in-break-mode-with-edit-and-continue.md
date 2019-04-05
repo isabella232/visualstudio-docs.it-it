@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: applicare modifiche in modalità di interruzione con modifica e continuazione | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -28,15 +23,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969040"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: applicare modifiche in modalità di interruzione con Modifica e continuazione
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.  
@@ -65,11 +60,11 @@ ms.locfileid: "51807498"
   
 1.  Attivare la modalità di interruzione in uno dei seguenti modi:  
   
-    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dalle **Debug** menu e attendere che l'applicazione raggiunga il punto di interruzione.  
+    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal menu **Debug** e attendere che l'applicazione raggiunga il punto di interruzione.  
   
          - oppure -  
   
-    -   Avviare il debug e quindi selezionare **Interrompi tutto** dalle **Debug** menu.  
+    -   Avviare il debug, quindi scegliere **Interrompi tutto** dal menu **Debug**.  
   
          - oppure -  
   
@@ -82,13 +77,10 @@ ms.locfileid: "51807498"
     > [!NOTE]
     >  Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
   
-3.  Nel **Debug** menu, fare clic su **continua** per riprendere l'esecuzione.  
+3.  Scegliere **Continua** dal menu **Debug** per riprendere l'esecuzione.  
   
      Il codice verrà eseguito con le modifiche incorporate nel progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuano di modifiche non supportate in Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

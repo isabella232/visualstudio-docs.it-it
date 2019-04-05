@@ -1,14 +1,9 @@
 ---
 title: Nozioni fondamentali sui servizi di linguaggio legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 88e2b07fe640c2b9c69259cfc9ec48d98594bd6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969223"
 ---
 # <a name="legacy-language-service-essentials"></a>Nozioni fondamentali sui servizi di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ ms.locfileid: "51753637"
 |-------------|-----------------|  
 |Analizzatori di espressioni|Supporta il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger convalidando i punti di interruzione e specificando un elenco di espressioni da visualizzare nella **Auto** finestra di debug.<br /><br /> Per altre informazioni, vedere [supporto per il debug del servizio linguaggio](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Strumenti di esplorazione dei simboli|Supporta **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate**, e **risultati ricerca simbolo**.|
-

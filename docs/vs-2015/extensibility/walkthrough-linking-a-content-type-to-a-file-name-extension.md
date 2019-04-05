@@ -1,28 +1,23 @@
 ---
 title: "Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968297"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile definire il proprio tipo di contenuto e un collegamento un'estensione di file con estensioni dell'editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione è già stato definito da un servizio di linguaggio; Tuttavia, per usarlo con MEF è comunque necessario collegarlo a un tipo di contenuto.  
@@ -97,7 +92,7 @@ ms.locfileid: "51739881"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Aggiungere il tipo di contenuto per un'esportazione dell'Editor  
   
-1.  Creare un'estensione dell'editor. Ad esempio, è possibile usare l'estensione di glifo di margine descritto nella [procedura dettagliata: creazione di un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Creare un'estensione dell'editor. Ad esempio, è possibile usare l'estensione di glifo di margine descritto in [procedura dettagliata: Creazione di un glifo del margine](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Aggiungere la classe che è definita in questa procedura.  
   
@@ -110,4 +105,3 @@ ms.locfileid: "51739881"
   
 ## <a name="see-also"></a>Vedere anche  
  [Punti di estensione dei servizi di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Gestione delle eccezioni con il Debugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968608"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestione delle eccezioni con il Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +98,7 @@ Un'eccezione Ã¨ un'indicazione di uno stato di errore che si verifica durante lâ
    goodbye  
    ```  
   
-    ma non viene visualizzata la riga `here`.  
+    ma non viene visualizzata la riga `here` .  
   
 2. Un'applicazione console C# che fa riferimento a una libreria di classi con una classe che dispone di due metodi, un metodo che genera un'eccezione e la gestisce e un secondo metodo che genera la stessa eccezione e non la gestisce:  
   
@@ -188,13 +183,8 @@ public class GenericException<T> : Exception
   
 ## <a name="see-also"></a>Vedere anche  
  [Continuazione dell'esecuzione dopo un'eccezione](../debugger/continuing-execution-after-an-exception.md)   
- [Procedura: esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Procedura: usare controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)   
+ [Procedura: Esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Procedura: Usare i controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilizzo in fase di esecuzione dei controlli senza la libreria Run-Time di C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Informazioni sulle eccezioni](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
-
-
-
-
-

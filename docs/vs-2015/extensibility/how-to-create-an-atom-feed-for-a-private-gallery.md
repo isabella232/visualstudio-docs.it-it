@@ -1,29 +1,24 @@
 ---
-title: 'Procedura: creare un Atom per una raccolta privata di Feed | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un Atom per una raccolta privata di Feed | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f720c4297ab2ff31abe90365b0e25209762dba1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969345"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un Atom per una raccolta privata di Feed
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: Creare un feed atom per una raccolta privata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile creare un Atom (RSS) feed da un percorso intranet che contiene le estensioni e aggiunta il feed a **estensioni e aggiornamenti** come una raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).  
@@ -82,4 +77,3 @@ ms.locfileid: "51789681"
   
 ## <a name="see-also"></a>Vedere anche  
  [Raccolte private](../extensibility/private-galleries.md)
-

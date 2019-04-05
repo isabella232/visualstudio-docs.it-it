@@ -1,12 +1,9 @@
 ---
 title: Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727655"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967230"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
  Un frammento combinato è costituito da uno o più *operandi interazione*, ognuno dei quali racchiude uno o più messaggi, utilizzi interazione o frammenti combinati.  
   
 > [!NOTE]
->  Questo argomento descrive i frammenti nei diagrammi di sequenza. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Questo argomento descrive i frammenti nei diagrammi di sequenza. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: informazioni di riferimento](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Frammento con due operandi interazione combinato](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -112,7 +109,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
   
 |Tipo di frammento|Descrizione|  
 |-------------------|-----------------|  
-|**consenso esplicito**|Facoltativo. Racchiude una sequenza che può verificarsi o non verificarsi. È possibile specificare nella clausola guard la condizione in cui si verifica.|  
+|**Opt**|Facoltativo. Racchiude una sequenza che può verificarsi o non verificarsi. È possibile specificare nella clausola guard la condizione in cui si verifica.|  
 |**ALT**|Contiene un elenco di frammenti che includono sequenze alternative di messaggi. In ogni occasione si verifica una sola sequenza.<br /><br /> È possibile inserire una clausola guard in ogni frammento per indicare la condizione in cui può essere eseguito. Una clausola guard **else** indica un frammento che deve essere eseguito se nessun'altra clausola guard è true. Se tutte le clausole guard sono false e non è presente alcuna clausola guard **else**, non viene eseguito alcun frammento.|  
 |**Loop**|Il frammento viene ripetuto un certo numero di volte. È possibile indicare nella clausola guard la condizione in cui si deve ripetere.<br /><br /> I frammenti combinati Loop includono le proprietà **Min** e **Max**, che indicano i numeri minimo e massimo di volte in cui il frammento può essere ripetuto. Il valore predefinito non prevede alcuna restrizione.|  
 |**Break**|Se viene eseguito questo frammento, il resto della sequenza viene abbandonato. È possibile usare una clausola guard per indicare la condizione in cui si verificherà l'interruzione.|  
@@ -131,12 +128,9 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
 |**Prendere in considerazione**|Specifica un elenco dei messaggi descritti da questo frammento. Nel sistema in esecuzione possono verificarsi altri messaggi, ma questi non sono significativi ai fini della descrizione.<br /><br /> Digitare l'elenco nella proprietà **Messages** .|  
 |**Ignora**|Specifica un elenco dei messaggi non descritti da questo frammento. I messaggi possono verificarsi nel sistema in esecuzione, ma non sono significativi ai fini della descrizione.<br /><br /> Digitare l'elenco nella proprietà **Messages** .|  
 |**Assert**|Il frammento dell'operando specifica le uniche sequenze valide. Usato in genere in un frammento Consider o Ignore.|  
-|**neg**|La sequenza mostrata in questo frammento non deve verificarsi. Usato in genere in un frammento Consider o Ignore.|  
+|**Neg**|La sequenza mostrata in questo frammento non deve verificarsi. Usato in genere in un frammento Consider o Ignore.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)   
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'CA2105: I campi di matrici non devono essere sola lettura | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2105
 - ArrayFieldsShouldNotBeReadOnly
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4741b30d1429a1a179328c8fb4b150fc4f920612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967782"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: I campi di matrici non devono essere di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49894976"
 ## <a name="rule-description"></a>Descrizione della regola
  Quando si applica il `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) modificatore a un campo che contiene una matrice, il campo non può essere modificato per fare riferimento a una matrice diversa. È tuttavia possibile modificare gli elementi della matrice archiviati in un campo in sola lettura. Il codice che prende decisioni o esegue le operazioni che si basano sugli elementi di una matrice di sola lettura che è possibile accedere pubblicamente potrebbe contenere una vulnerabilità di sicurezza sfruttabili.
 
- Si noti che anche la presenza di un campo pubblico viola la regola di progettazione [CA1051: non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Si noti che anche la presenza di un campo pubblico viola la regola di progettazione [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per risolvere le vulnerabilità di sicurezza che è identificato da questa regola, non fare affidamento sul contenuto di una matrice di sola lettura che sono accessibili pubblicamente. È consigliabile usare una delle procedure riportate di seguito:
@@ -52,7 +47,7 @@ ms.locfileid: "49894976"
 
 - Sostituire il campo pubblico con un metodo che restituisce un clone di una matrice privata. Poiché il codice non richiede il clone, non vi è alcun rischio se gli elementi vengono modificati.
 
-  Se si sceglie il secondo approccio, non sostituire il campo con una proprietà. le proprietà che restituiscono matrici influisce negativamente sulle prestazioni. Per altre informazioni, vedere [CA1819: le proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md).
+  Se si sceglie il secondo approccio, non sostituire il campo con una proprietà. le proprietà che restituiscono matrici influisce negativamente sulle prestazioni. Per altre informazioni, vedere [CA1819: Proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Esclusione di un avviso da questa regola è fortemente sconsigliato. Quasi non esistono scenari in cui il contenuto di un campo di sola lettura non sia importante. Se questo è il caso con lo scenario, rimuovere il `readonly` modificatore invece di escludere il messaggio.
@@ -71,10 +66,7 @@ ms.locfileid: "49894976"
 
  L'output da questo esempio è:
 
- **Prima di manomissione: dei voti: 90, 90, 90 gradi privato: 90, 90, 90 gradi Secure, 90, 90, 90**
-**dopo eventuali manomissioni: dei voti: 90, 555, 90 gradi privato: 90, 555, 90 gradi Secure, 90, 90, 90**
+ **Prima di manomissione: Voti: 90, 90, 90 gradi privato: 90, 90, 90 gradi secure, 90, 90, 90**
+**dopo manomissione: Voti: 90, 555, 90 gradi privato: 90, 90 e 555 secure dei voti, 90, 90, 90**
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

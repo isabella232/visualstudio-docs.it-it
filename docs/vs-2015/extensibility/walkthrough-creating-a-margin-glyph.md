@@ -1,28 +1,23 @@
 ---
 title: 'Procedura dettagliata: Creazione di un glifo del margine | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 172ac543f8777219bb7c5adc94d19e1baeea24e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d22607dd4e32ac29a773b6217056c2484121cd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969037"
 ---
-# <a name="walkthrough-creating-a-margin-glyph"></a>Procedura dettagliata: creazione di un glifo di margine
+# <a name="walkthrough-creating-a-margin-glyph"></a>Procedura dettagliata: Creazione di un glifo del margine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile personalizzare l'aspetto dei margini dell'editor tramite le estensioni dell'editor personalizzato. Questa procedura dettagliata inserisce un'icona personalizzata sul margine indicatore ogni volta che viene visualizzata la parola "todo" in un commento del codice.  
@@ -146,4 +141,3 @@ ms.locfileid: "51783207"
 4.  Aprire un file di codice con commenti. Aggiungere la parola "todo" a una delle sezioni commento.  
   
 5.  Margine indicatore a sinistra della finestra del codice dovrebbe essere visualizzato un cerchio blu chiaro che presenta un contorno blu scuro.
-

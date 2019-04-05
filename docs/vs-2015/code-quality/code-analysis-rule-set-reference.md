@@ -1,14 +1,9 @@
 ---
 title: Riferimento di set di regole di analisi di codice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967974"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Quando si configurano analisi codice per progetti di codice in gestito [!INCLUDE
 |[Set di regole minime native](../code-quality/native-minimum-rules-rule-set.md)|Queste regole orientate ai problemi più critici del codice nativo, incluse potenziali lacune nella protezione e arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.|  
 |[Set di regole consigliate native](../code-quality/native-recommended-rules-rule-set.md)|Queste regole orientate ai problemi più critici e comuni nel codice nativo, incluse potenziali lacune nella protezione e arresti anomali delle applicazioni.  È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.  Questo set di regole è progettato per funzionare con l'edizione di Visual Studio Professional e versioni successive.|  
 |[Set di regole di sicurezza per codice gestito](../code-quality/security-rules-rule-set-for-managed-code.md)|Questo set di regole contiene tutte le regole di sicurezza di Microsoft. Includere questo set di regole per ottimizzare il numero di potenziali problemi di sicurezza che vengono segnalati.|
-
-
-

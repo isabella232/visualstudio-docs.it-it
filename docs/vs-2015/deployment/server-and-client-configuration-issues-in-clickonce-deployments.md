@@ -1,14 +1,9 @@
 ---
 title: Server e problemi di configurazione Client nelle distribuzioni ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948941"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966418"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
   
 - .deploy  
   
-  Tuttavia, è possibile disabilitare questa opzione deselezionando le **, l'estensione di file ". deploy"** opzione il [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nel qual caso è necessario configurare il server Web per sbloccare tutte le estensioni di file utilizzato nell'applicazione.  
+  Tuttavia, è possibile disabilitare questa opzione deselezionando le **, l'estensione di file ". deploy"** opzione il [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nel qual caso è necessario configurare il server Web per sbloccare tutte le estensioni di file utilizzato nell'applicazione.  
   
   È necessario configurare manifest, Application e deploy, ad esempio, se si usa IIS in cui non è stato installato il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o se si usa un altro server Web (ad esempio Apache).  
   
@@ -88,7 +83,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="using-third-party-web-servers"></a>Utilizzo di server Web di terze parti  
  Se si distribuisce un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione da un server Web diversi da IIS, si verifichi un problema se il server restituisce il tipo di contenuto non corretto per la chiave [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file, ad esempio il manifesto di distribuzione e il manifesto dell'applicazione. Per risolvere questo problema, vedere la Guida del server Web documentazione su come aggiungere nuovi tipi di contenuto al server e assicurarsi che tutti i mapping dei estensione del nome di file elencati nella tabella seguente sono presenti.  
   
-|Estensione di file|Tipo di contenuto|  
+|Estensione del file|Tipo di contenuto|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -104,7 +99,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
   
 |Tipo di URL|Descrizione|  
 |--------------|-----------------|  
-|FTP: / /|È possibile pubblicare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione utilizzando questo protocollo.|  
+|ftp://|È possibile pubblicare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione utilizzando questo protocollo.|  
 |http://|È possibile installare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione utilizzando questo protocollo.|  
 |https://|È possibile installare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione utilizzando questo protocollo.|  
 |file://|È possibile installare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione utilizzando questo protocollo.|  
@@ -117,7 +112,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
   
  Per impostazione predefinita, Windows Server non dispone di estensioni del Server di FrontPage installate. Se si desidera utilizzare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per pubblicare in un server Web di Windows Server che utilizza il protocollo HTTP con le estensioni del Server di FrontPage, è necessario installare prima le estensioni del Server di FrontPage. È possibile eseguire l'installazione usando lo strumento di amministrazione di gestione Server in Windows Server.  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipi di contenuto bloccata  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipi di contenuto bloccato  
  IIS in [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] Blocca tutti i tipi di file, ad eccezione di determinati tipi di contenuto noti (ad esempio,. htm, HTML, file con estensione txt e così via). Per abilitare la distribuzione di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni che utilizzano questo server, è necessario modificare le impostazioni di IIS per consentire il download dei file di estensione Application. manifest e altri tipi di file personalizzati usati dall'applicazione.  
   
  Se si distribuisce tramite un server IIS, eseguire inetmgr.exe e aggiungere nuovi tipi di File per la pagina Web predefinita:  
@@ -144,6 +139,3 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
  [Risoluzione dei problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Manifesttocode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968156"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +29,11 @@ Il manifesto per lo strumento di codice è un'applicazione console che accetta u
 |-|-|-|  
 |**Nome del commutatore**|**Note**|**Obbligatoria o facoltativa**|  
 |/manifest|Il percorso del manifesto dell'immagine da utilizzare per creare o aggiornare il wrapper di codice.|Obbligatorio|  
-|/Language|La lingua in cui generare il wrapper di codice.<br /><br /> I valori validi: CPP, C++, CS, CSharp, c#, VB o VSCT i valori sono tra maiuscole e minuscole.<br /><br /> Per il linguaggio VSCT opzione, /monikerClass, /classAccess e /namespace opzioni vengono ignorate.|Obbligatorio|  
-|/imageIdClass|Il nome del imageIdClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h.<br /><br /> Valore predefinito: \<percorso del manifesto > \MyImageIds.\< Lang Ext >|Facoltativo|  
-|/monikerClass|Il nome del monikerClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h. Questo viene ignorato per il linguaggio VSCT.<br /><br /> Valore predefinito: \<percorso del manifesto > \MyMonikers.\< Lang Ext >|Facoltativo|  
-|/classAccess|Il modificatore di accesso per il imageIdClass e il monikerClass. Assicurarsi che il modificatore di accesso è valido per il linguaggio specificato. Questo viene ignorato per l'opzione di linguaggio VSCT.<br /><br /> Predefinito: pubblico|Facoltativo|  
-|/Namespace|Lo spazio dei nomi definito all'interno del wrapper di codice. Questo viene ignorato per l'opzione di linguaggio VSCT. Entrambi '.' o ':: ' sono separatori di spazio dei nomi valido, indipendentemente dall'opzione di linguaggio scelto.<br /><br /> Predefinito: MyImages|Facoltativo|  
+|/Language|La lingua in cui generare il wrapper di codice.<br /><br /> Valori validi: CPP, C++, CS, CSharp, C#, Visual Basic o VSCT i valori sono tra maiuscole e minuscole.<br /><br /> Per il linguaggio VSCT opzione, /monikerClass, /classAccess e /namespace opzioni vengono ignorate.|Obbligatorio|  
+|/imageIdClass|Il nome del imageIdClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h.<br /><br /> Valore predefinito: \<Percorso del manifesto > \MyImageIds. \<Lang Ext >|Facoltativo|  
+|/monikerClass|Il nome del monikerClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h. Questo viene ignorato per il linguaggio VSCT.<br /><br /> Valore predefinito: \<Percorso del manifesto > \MyMonikers. \<Lang Ext >|Facoltativo|  
+|/classAccess|Il modificatore di accesso per il imageIdClass e il monikerClass. Assicurarsi che il modificatore di accesso è valido per il linguaggio specificato. Questo viene ignorato per l'opzione di linguaggio VSCT.<br /><br /> Valore predefinito: Public|Facoltativo|  
+|/namespace|Lo spazio dei nomi definito all'interno del wrapper di codice. Questo viene ignorato per l'opzione di linguaggio VSCT. Either ‘.’ o ':: ' sono separatori di spazio dei nomi valido, indipendentemente dall'opzione di linguaggio scelto.<br /><br /> Valore predefinito: MyImages|Facoltativo|  
 |/noLogo|Impostazione di questo flag arresta prodotto e informazioni sul copyright di stampare le informazioni.|Facoltativo|  
 |/?|Stampare le informazioni della Guida.|Facoltativo|  
 |/help|Stampare le informazioni della Guida.|Facoltativo|  
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

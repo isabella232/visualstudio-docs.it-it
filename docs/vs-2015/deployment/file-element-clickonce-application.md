@@ -1,14 +1,9 @@
 ---
 title: '&lt;file&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -27,13 +22,13 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968627"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- L'elemento `file` è facoltativo. L'elemento ha gli attributi seguenti.  
+ L'elemento `file` è facoltativo. L'elemento presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -100,10 +95,10 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 |`size`|Obbligatorio. Specifica la dimensione, espressa in byte, del file.|  
 |`group`|Facoltativo, se il `optional` attributo viene omesso o impostato su `false`; se necessario `optional` è `true`. Il nome del gruppo a cui appartiene questo file. Il nome può essere qualsiasi valore di stringa Unicode scelta dallo sviluppatore e viene usato per il download dei file su richiesta con il <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
 |`optional`|Facoltativo. Specifica se il file deve essere download quando l'applicazione è la prima esecuzione, o se il file deve risiedere solo nel server fino a quando non viene richiesto dall'applicazione su richiesta. Se `false` o non definito, il file viene scaricato quando l'applicazione o della prima esecuzione installata. Se `true`, un `group` deve essere specificato per il manifesto dell'applicazione sia valido. `optional` non può essere true se `writeableType` viene specificato con il valore `applicationData`.|  
-|`writeableType`|Facoltativo. Specifica che questo file è un file di dati. Attualmente l'unico valore valido è `applicationData`.|  
+|`writeableType`|Facoltativo. Specifica che questo file è un file di dati. Attualmente, l'unico valore valido è `applicationData`.|  
   
-## <a name="typelib"></a>libreria dei tipi  
- Il `typelib` elemento è un elemento figlio facoltativo dell'elemento file. L'elemento descrive la libreria dei tipi a cui appartiene il componente COM. L'elemento ha gli attributi seguenti.  
+## <a name="typelib"></a>typelib  
+ Il `typelib` elemento è un elemento figlio facoltativo dell'elemento file. L'elemento descrive la libreria dei tipi a cui appartiene il componente COM. L'elemento presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -114,7 +109,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 |`flags`|Facoltativo. La rappresentazione di stringa dei flag della libreria di tipo per questa libreria dei tipi. In particolare, deve essere uno dei "RESTRICTED", "Controllo", "HIDDEN" e "HASDISKIMAGE".|  
   
 ## <a name="comclass"></a>comClass  
- Il `comClass` costituisce un elemento figlio facoltativo di `file` elemento, ma è obbligatorio se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento ha gli attributi seguenti.  
+ Il `comClass` costituisce un elemento figlio facoltativo di `file` elemento, ma è obbligatorio se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -168,10 +163,10 @@ Identifica tutti i file scaricata e usata dall'applicazione.
   
  Se un manifesto contiene un file che non è stato eseguito l'hashing, tale manifesto non può essere digitale firmato, perché gli utenti non è possibile verificare il contenuto di un file senza hash.  
   
-## <a name="dsigtransforms"></a>dsig: Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
   
-## <a name="dsigtransform"></a>dsig: Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
@@ -208,6 +203,3 @@ Identifica tutti i file scaricata e usata dall'applicazione.
   
 ## <a name="see-also"></a>Vedere anche  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

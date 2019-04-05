@@ -1,21 +1,17 @@
 ---
 title: Manifestfromresources | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771865"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969614"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,10 +28,10 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
 ||||  
 |-|-|-|  
 |**Nome del commutatore**|**Note**|**Obbligatoria o facoltativa**|  
-|/risorse|Elenco delimitato da punto e virgola di immagini o directory. Questo elenco deve contenere sempre l'elenco completo delle immagini presenti nel manifesto. Se viene fornito un elenco parziale, solo le voci incluse non andranno perse.<br /><br /> Se un file di risorse specificato è una serie di immagini, lo strumento verrà dividerla in immagini separate prima dell'aggiunta di ogni immagine secondaria al manifesto.<br /><br /> Se l'immagine è un file con estensione png, è consigliabile formattare il nome simile al seguente in modo che lo strumento può inserire i giusti attributi per l'immagine: \<Name >.\< Larghezza >. \<Altezza >. PNG.|Obbligatorio|  
+|/risorse|Elenco delimitato da punto e virgola di immagini o directory. Questo elenco deve contenere sempre l'elenco completo delle immagini presenti nel manifesto. Se viene fornito un elenco parziale, solo le voci incluse non andranno perse.<br /><br /> Se un file di risorse specificato è una serie di immagini, lo strumento verrà dividerla in immagini separate prima dell'aggiunta di ogni immagine secondaria al manifesto.<br /><br /> Se l'immagine è un file con estensione png, è consigliabile che formattare il nome simile al seguente in modo che lo strumento può inserire i giusti attributi per l'immagine: \<Nome >. \<Larghezza >. \<Altezza >. PNG.|Obbligatorio|  
 |/assembly|Il nome dell'assembly gestito (senza includere l'estensione) o il percorso di runtime dell'assembly nativo che ospita le risorse (rispetto alla posizione di runtime del manifesto).|Obbligatorio|  
 |/manifest|Nome da assegnare al file .imagemanifest generato. Può anche includere un percorso assoluto o relativo per creare il file in una posizione diversa. Il nome predefinito corrisponde al nome dell'assembly.<br /><br /> Valore predefinito: \<Directory corrente >\\< Assembly\>.imagemanifest|Facoltativo|  
-|/guidName|Il nome da assegnare al simbolo GUID per tutte le immagini nel manifesto generato.<br /><br /> Predefinito: AssetsGuid|Facoltativo|  
+|/guidName|Il nome da assegnare al simbolo GUID per tutte le immagini nel manifesto generato.<br /><br /> Valore predefinito: AssetsGuid|Facoltativo|  
 |/rootPath|Il percorso radice che devono essere rimossi prima della creazione di URI delle risorse gestiti. (Questo flag è alla Guida in linea con i casi in cui lo strumento Ottiene il percorso relativo di URI errato, causando risorse caricamento).<br /><br /> Valore predefinito: \<Directory corrente >|Facoltativo|  
 |/Recursive|L'impostazione di questo flag indica che lo strumento in modo ricorsivo tutte le directory di ricerca nell'argomento /Resources. L'omissione di questo flag causa una ricerca top-multilivello solo delle directory.|Facoltativo|  
 |/isNative|Impostare questo flag quando l'argomento assembly è un percorso per un assembly nativo. Omettere questo flag quando l'argomento assembly è il nome di un assembly gestito. (Vedere la sezione Note per altre informazioni su questo flag).|Facoltativo|  
@@ -49,7 +45,7 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
   
 -   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
@@ -163,4 +159,3 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
   <ImageLists />  
 </ImageManifest>  
 ```
-

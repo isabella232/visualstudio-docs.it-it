@@ -1,12 +1,9 @@
 ---
 title: Creare un controllo utente Windows Form che supporta il data binding semplice | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,19 +16,19 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 607c324e11591211593522957dcd08747d230279
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2929d4a524f0da60f2bc32b150b86fdf1ea0cb57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969548"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding semplice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Quando si visualizzano dati nei form in applicazioni di Windows, è possibile scegliere i controlli esistenti dal **casella degli strumenti**, oppure è possibile creare controlli personalizzati se l'applicazione richiede funzionalità che non è disponibile nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. I controlli che implementano <xref:System.ComponentModel.DefaultBindingPropertyAttribute> possono contenere una proprietà associabile ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.TextBox> o <xref:System.Windows.Forms.CheckBox>.  
+Quando si visualizzano dati nei form delle applicazioni Windows, è possibile scegliere i controlli esistenti dalla **Casella degli strumenti** o creare controlli personalizzati se l'applicazione richiede funzionalità che non sono disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. I controlli che implementano <xref:System.ComponentModel.DefaultBindingPropertyAttribute> possono contenere una proprietà associabile ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.TextBox> o <xref:System.Windows.Forms.CheckBox>.  
   
  Per altre informazioni sulla creazione di controlli, vedere [sviluppo di controlli Windows Form in fase di progettazione](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
@@ -57,14 +54,14 @@ Quando si visualizzano dati nei form in applicazioni di Windows, è possibile sc
   
 -   Creare un set di dati con il **configurazione dell'origine dati** procedura guidata.  
   
--   Impostare il **Phone** colonna il **Zdroje dat** finestra da utilizzare il nuovo controllo.  
+-   Impostare la colonna **Telefono** nella finestra **Origini dati** per usare il nuovo controllo.  
   
 -   Creare un form per visualizzare i dati nel controllo.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  
   
--   Accedere al database di esempio Northwind. Per altre informazioni, vedere [procedura: installare database di esempio](../data-tools/how-to-install-sample-databases.md).  
+-   Accedere al database di esempio Northwind.
   
 ## <a name="create-a-windows-application"></a>Creare un'applicazione Windows  
  Il primo passaggio consiste nel creare un **applicazioni Windows**.  
@@ -77,36 +74,36 @@ Quando si visualizzano dati nei form in applicazioni di Windows, è possibile sc
   
 3.  Selezionare **applicazione di Windows** e fare clic su **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-     Il **SimpleControlWalkthrough** progetto viene creato e aggiunto alla **Esplora soluzioni**.  
+     Il progetto **SimpleControlWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.  
   
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto  
  Questa procedura dettagliata crea un controllo data binding semplice da un **controllo utente**, quindi l'aggiunta di un **controllo utente** elemento per il **SimpleControlWalkthrough** progetto.  
   
 #### <a name="to-add-a-user-control-to-the-project"></a>Per aggiungere un controllo utente al progetto  
   
-1.  Dal **Project** menu, scegliere **Aggiungi controllo utente**.  
+1.  Scegliere **Aggiungi controllo utente** dal menu **Progetto**.  
   
 2.  Tipo di `PhoneNumberBox` nell'area nome, quindi fare clic su **Add**.  
   
-     Il **PhoneNumberBox** controllo viene aggiunto al **Esplora soluzioni**e nella finestra di progettazione.  
+     Il controllo **PhoneNumberBox** viene aggiunto a **Esplora soluzioni** e si apre nella finestra di progettazione.  
   
 ## <a name="design-the-phonenumberbox-control"></a>Progettare il controllo PhoneNumberBox  
  Questa procedura dettagliata espande l'oggetto <xref:System.Windows.Forms.MaskedTextBox> per creare il controllo `PhoneNumberBox`.  
   
 #### <a name="to-design-the-phonenumberbox-control"></a>Per progettare il controllo PhoneNumberBox  
   
-1.  Trascinare un <xref:System.Windows.Forms.MaskedTextBox> dal **casella degli strumenti** nell'area di progettazione del controllo utente.  
+1.  Trascinare un oggetto <xref:System.Windows.Forms.MaskedTextBox> dalla **Casella degli strumenti** nell'area di progettazione del controllo utente.  
   
-2.  Selezionare lo smart tag nella <xref:System.Windows.Forms.MaskedTextBox> appena trascinato e scegliere **Imposta maschera**.  
+2.  Selezionare lo smart tag sull'oggetto <xref:System.Windows.Forms.MaskedTextBox> appena trascinato e scegliere **Imposta maschera**.  
   
-3.  Selezionare **numero di telefono** nel **maschera di Input** la finestra di dialogo e fare clic su **OK** per impostare la maschera.  
+3.  Selezionare **Numero di telefono** nella finestra di dialogo **Maschera input** e fare clic su **OK** per impostare la maschera.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo di data binding richiesto  
  Per controlli semplici che supportano il data binding, implementare l'attributo <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
   
 #### <a name="to-implement-the-defaultbindingproperty-attribute"></a>Per implementare l'attributo DefaultBindingProperty  
   
-1.  Passare al controllo `PhoneNumberBox` per la visualizzazione del codice. (Nelle **View** menu, scegliere **codice**.)  
+1.  Passare al controllo `PhoneNumberBox` per la visualizzazione del codice. Scegliere **Codice** dal menu **Visualizza**.  
   
 2.  Sostituire il codice nel controllo `PhoneNumberBox` con la stringa seguente:  
   
@@ -116,57 +113,57 @@ Quando si visualizzano dati nei form in applicazioni di Windows, è possibile sc
 3.  Scegliere **Compila soluzione** dal menu **Compila**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database  
- Questo passaggio Usa la **configurazione dell'origine dati** procedura guidata per creare un'origine dati in base il `Customers` tabella nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione di database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/how-to-install-sample-databases.md).  
+ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` contenuta nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind.
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
 1.  Scegliere **Mostra origini dati** dal menu **Dati**.  
   
-2.  Nel **Zdroje dat** finestra, seleziona **Aggiungi nuova origine dati** per avviare la **configurazione dell'origine dati** procedura guidata.  
+2.  Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
   
-3.  Nel **scegliere un tipo di origine dati** pagina, selezionare **Database**, quindi fare clic su **successivo**.  
+3.  Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.  
   
-4.  Nel **scegliere la connessione dati** pagina, effettuare una delle operazioni seguenti:  
+4.  Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:  
   
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
-    -   Selezionare **nuova connessione** per avviare la **Aggiungi/Modifica connessione** nella finestra di dialogo.  
+    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.  
   
-5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi fare clic su **successivo**.  
+5.  Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.  
   
 6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.  
   
-7.  Nel **Scegli oggetti di Database** , espandere il **tabelle** nodo.  
+7.  Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.  
   
-8.  Selezionare il `Customers` tabella e quindi fare clic su **fine**.  
+8.  Selezionare la tabella `Customers`, quindi fare clic su **Fine**.  
   
-     Il **NorthwindDataSet** viene aggiunto al progetto e il `Customers` inclusa nella tabella di **Zdroje dat** finestra.  
+     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Customers` viene visualizzata nella finestra **Origini dati**.  
   
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Impostare la colonna telefono per usare il controllo PhoneNumberBox  
- All'interno di **Zdroje dat** finestra, è possibile impostare il controllo deve essere creato prima di trascinare gli elementi nel form.  
+ Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel modulo.  
   
 #### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>Per impostare la colonna Telefono allo scopo di eseguire l'associazione al controllo PhoneNumberBox  
   
 1.  Aprire **Form1** nella finestra di progettazione.  
   
-2.  Espandere la **clienti** nodo il **Zdroje dat** finestra.  
+2.  Espandere il nodo **Customers** nella finestra **Origini dati**.  
   
-3.  Fare clic sulla freccia giù sul **clienti** nodo, scegliere **dettagli** dall'elenco di controllo.  
+3.  Fare clic sulla freccia a discesa nel nodo **Customers** e scegliere **Dettagli** dall'elenco di controllo.  
   
-4.  Fare clic sulla freccia giù sul **Phone** colonna e scegliere **Personalizza**.  
+4.  Fare clic sulla freccia a discesa nella colonna **Telefono** e scegliere **Personalizza**.  
   
-5.  Selezionare il **PhoneNumberBox** dall'elenco dei **controlli associati** nel **opzioni di personalizzazione dell'interfaccia utente dati** nella finestra di dialogo.  
+5.  Selezionare **PhoneNumberBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.  
   
-6.  Fare clic sulla freccia giù sul **Phone** colonna e scegliere **PhoneNumberBox**.  
+6.  Fare clic sulla freccia a discesa nella colonna **Telefono** e scegliere **PhoneNumberBox**.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols al form  
- È possibile creare i controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra nei form.  
+ È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form  
   
 -   Trascinare l'oggetto principale **i clienti** nodo dal **Zdroje dat** finestra nei form e verificare che il `PhoneNumberBox` controllo viene usato per visualizzare i dati nel `Phone` colonna.  
   
-     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
+     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione  
   
@@ -184,4 +181,3 @@ Quando si visualizzano dati nei form in applicazioni di Windows, è possibile sc
 ## <a name="see-also"></a>Vedere anche  
  [Associazione di controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-

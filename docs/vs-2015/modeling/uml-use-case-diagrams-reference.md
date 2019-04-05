@@ -1,12 +1,9 @@
 ---
-title: 'Diagrammi caso di utilizzo UML: Riferimento | Microsoft Docs'
-ms.custom: ''
+title: 'Diagrammi caso di utilizzo UML: Riferimenti | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.usecasediagram.toolbox
 - vs.teamarch.usecasediagram.diagram
@@ -21,15 +18,15 @@ ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966599"
 ---
-# <a name="uml-use-case-diagrams-reference"></a>Diagrammi casi d'uso UML: riferimento
+# <a name="uml-use-case-diagrams-reference"></a>Diagrammi caso di utilizzo UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio, un *diagramma caso di utilizzo* riepiloga gli utenti che utilizzano l'applicazione o il sistema e ciò che è possibile eseguire. Per creare un diagramma caso di utilizzo UML nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
@@ -39,7 +36,7 @@ In Visual Studio, un *diagramma caso di utilizzo* riepiloga gli utenti che utili
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  In questo argomento vengono illustrati gli elementi disponibili in diagrammi caso di utilizzo. Per altre informazioni su come creare diagrammi casi d'uso, vedere [diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md). Per altre informazioni su come creare e disegnare diagrammi di modellazione, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+>  In questo argomento vengono illustrati gli elementi disponibili in diagrammi caso di utilizzo. Per altre informazioni su come creare diagrammi casi d'uso, vedere [diagrammi caso di utilizzo UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md). Per altre informazioni su come creare e disegnare diagrammi di modellazione, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Lettura di diagrammi caso di utilizzo  
  Le tabelle nelle sezioni seguenti descrivono gli elementi disponibili in un diagramma caso di utilizzo oltre alle relative proprietà principali. Per un elenco completo delle proprietà, vedere [diagrammi caso d'usano delle proprietà degli elementi su UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -59,21 +56,18 @@ In Visual Studio, un *diagramma caso di utilizzo* riepiloga gli utenti che utili
   
 |Forma|**Elemento**|Descrizione|  
 |-----------|-----------------|-----------------|  
-|5|**includere**|Un caso di utilizzo di inclusione chiama il caso di utilizzo incluso. L'inclusione viene usata per mostrare come un caso di utilizzo venga suddiviso in passaggi più piccoli. Il caso di utilizzo incluso viene inserito all'estremità della freccia.<br /><br /> Si noti che il diagramma non mostra l'ordine dei passaggi. È possibile usare un diagramma di attività, un diagramma di sequenza o un altro documento per descrivere questi dettagli.|  
+|5|**Include**|Un caso di utilizzo di inclusione chiama il caso di utilizzo incluso. L'inclusione viene usata per mostrare come un caso di utilizzo venga suddiviso in passaggi più piccoli. Il caso di utilizzo incluso viene inserito all'estremità della freccia.<br /><br /> Si noti che il diagramma non mostra l'ordine dei passaggi. È possibile usare un diagramma di attività, un diagramma di sequenza o un altro documento per descrivere questi dettagli.|  
 |6|**Estendere**|Un caso di utilizzo di estensione aggiunge gli obiettivi e passaggi per il caso di utilizzo esteso. Le estensioni possono essere usate solo in determinate condizioni. Il caso di utilizzo esteso viene inserito all'estremità della freccia.<br /><br /> Si noti che il diagramma non mostra le circostanze esatte in cui viene applicata l'estensione. È possibile registrare tali dettagli in un commento o un altro documento.|  
 |7|**Ereditarietà**|Mette in correlazione un elemento specializzato e un elemento generalizzato. L'elemento generalizzato viene inserito all'estremità della freccia.<br /><br /> Un caso di utilizzo specializzato eredita gli obiettivi e gli attori della relativa generalizzazione e può aggiungere obiettivi più specifici e i passaggi per raggiungerli.<br /><br /> Un attore specializzato eredita i casi di utilizzo, gli attributi e le associazioni della relativa generalizzazione e può aggiungerne altri.|  
 |8|**dipendenza**|Indica che la progettazione dell'origine dipende dalla progettazione della destinazione.|  
 |9|**Commentoo**|Usato per aggiungere note generali al diagramma.|  
-|10|**Artefatto**|Un elemento fornisce un collegamento a un altro diagramma o documento. È possibile crearlo trascinando un file da Esplora soluzioni. Può essere collegato con una dipendenza a qualsiasi altro elemento del diagramma. Un elemento viene in genere usato per collegare un caso di utilizzo a un diagramma di sequenza, una pagina di OneNote, un documento di Word o una presentazione di PowerPoint che ne descrive i dettagli. Il documento può essere un elemento della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o un documento in una posizione condiviso, ad esempio un sito di SharePoint.<br /><br /> -   **Collegamento ipertestuale**. L'URL o il percorso del file del diagramma o del documento.<br /><br /> Fare doppio clic su un elemento per aprire il file o una pagina Web a cui è collegato.|  
+|10|**Artifact**|Un elemento fornisce un collegamento a un altro diagramma o documento. È possibile crearlo trascinando un file da Esplora soluzioni. Può essere collegato con una dipendenza a qualsiasi altro elemento del diagramma. Un elemento viene in genere usato per collegare un caso di utilizzo a un diagramma di sequenza, una pagina di OneNote, un documento di Word o una presentazione di PowerPoint che ne descrive i dettagli. Il documento può essere un elemento della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o un documento in una posizione condiviso, ad esempio un sito di SharePoint.<br /><br /> -   **Collegamento ipertestuale**. L'URL o il percorso del file del diagramma o del documento.<br /><br /> Fare doppio clic su un elemento per aprire il file o una pagina Web a cui è collegato.|  
 |11 (non mostrato)|**Pacchetti**|I casi di utilizzo, gli attori e i sottosistemi possono essere contenuti all'interno di pacchetti. Forme di pacchetto non vengono visualizzati nel diagramma, ma è possibile impostare il **LinkedPackage** proprietà del diagramma. Elementi creati successivamente nel diagramma vengono posizionati all'interno del pacchetto. Per altre informazioni, vedere [definire pacchetti e spazi dei nomi](../modeling/define-packages-and-namespaces.md).|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Diagrammi dei casi d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: riferimenti](../modeling/uml-component-diagrams-reference.md)

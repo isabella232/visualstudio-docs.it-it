@@ -1,14 +1,9 @@
 ---
-title: "Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9781745af5d65d497652002c9afcd8132058ffb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968521"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] le applicazioni possono cercare gli aggiornamenti automaticamente o a livello di codice. Gli sviluppatori, è necessario un numero elevato di flessibilità nello specificare come e quando vengono eseguiti controlli di aggiornamento, se gli aggiornamenti sono obbligatori e in cui controllare la disponibilità di aggiornamenti.  
@@ -51,7 +46,7 @@ ms.locfileid: "49272467"
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **aggiornamenti** per aprire il **gli aggiornamenti dell'applicazione** nella finestra di dialogo.  
   
@@ -63,7 +58,7 @@ ms.locfileid: "49272467"
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **aggiornamenti** per aprire il **gli aggiornamenti dell'applicazione** nella finestra di dialogo.  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49272467"
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **aggiornamenti** per aprire il **gli aggiornamenti dell'applicazione** nella finestra di dialogo.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49272467"
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **aggiornamenti** per aprire il **gli aggiornamenti dell'applicazione** nella finestra di dialogo.  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49272467"
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **aggiornamenti** per aprire il **gli aggiornamenti dell'applicazione** nella finestra di dialogo.  
   
@@ -109,17 +104,14 @@ ms.locfileid: "49272467"
   
 5.  Nel **percorso di aggiornamento** immettere il percorso di aggiornamento con un URL completo, utilizzando il formato http://Hostname/ApplicationName, o un percorso UNC nel formato \\\Server\ApplicationName oppure fare clic il **Sfoglia** per cercare il percorso di aggiornamento. Il percorso di aggiornamento è in cui l'applicazione avrà un aspetto di una versione aggiornata di se stesso.  
   
-6.  Creare un pulsante, voce di menu o un altro elemento dell'interfaccia utente in un Form Windows che gli utenti selezioneranno per cercare gli aggiornamenti. Dal gestore eventi dell'elemento, chiamare un metodo per verificare e installare gli aggiornamenti. È possibile trovare un esempio di codice Visual Basic e Visual c# per tale metodo in [procedura: verificare la presenza dell'applicazione degli aggiornamenti a livello di codice usando l'API della distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Creare un pulsante, voce di menu o un altro elemento dell'interfaccia utente in un Form Windows che gli utenti selezioneranno per cercare gli aggiornamenti. Dal gestore eventi dell'elemento, chiamare un metodo per verificare e installare gli aggiornamenti. È possibile trovare un esempio di Visual Basic e Visual C# per tale metodo nel codice [procedura: Verificare la presenza di aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Compilare l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Finestra di dialogo Aggiornamenti applicazione](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Finestra di dialogo Aggiornamenti applicazione](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [Scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Procedura: Controllare gli aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
-
-
-
+ [Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Procedura: Controllo programmatico degli aggiornamenti delle applicazioni attraverso l'API per la distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
