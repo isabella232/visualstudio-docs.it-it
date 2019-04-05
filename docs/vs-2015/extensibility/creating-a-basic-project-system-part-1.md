@@ -1,14 +1,9 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792554"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968640"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Creazione di un sistema di progetto di base, parte 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
   
 3. Verificare l'icona distintivo. Questa icona verrà visualizzata nel **nuovo progetto** finestra di dialogo in un secondo momento nella procedura dettagliata.  
   
-    ![Icona progetto semplice](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4. L'icona di salvare e chiudere l'editor di icona.  
   
@@ -477,7 +472,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
   
 2. Nel **proprietà** windows, ridurre la bitmap da 16x16 pixel. Rendere la bitmap distintivo.  
   
-    ![Comando progetto semplice](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. Nel **delle proprietà** finestra Modifica il **azione di compilazione** della bitmap da **risorsa incorporata**.  
   
@@ -577,7 +572,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
      Si noti che i parametri del modello $nameSpace$ e $ $className$ non è nuovi valori. Si apprenderà come implementare la sostituzione dei parametri di modello nella sezione successiva.  
   
 ## <a name="substituting-template-parameters"></a>Sostituzione di parametri di modello  
- In una sezione precedente, è registrato il modello di progetto in Visual Studio usando il `ProvideProjectFactory` attributo. Registrare il percorso di una cartella di modello in questo modo consente di abilitare la sostituzione dei parametri di modello di base viene sottoposto a override ed espandendo il `ProjectNode.AddFileFromTemplate` classe. Per altre informazioni, vedere [nuova generazione progetto: Under the Hood, parte due](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ In una sezione precedente, è registrato il modello di progetto in Visual Studio usando il `ProvideProjectFactory` attributo. Registrare il percorso di una cartella di modello in questo modo consente di abilitare la sostituzione dei parametri di modello di base viene sottoposto a override ed espandendo il `ProjectNode.AddFileFromTemplate` classe. Per altre informazioni, vedere [nuova generazione progetto: Dietro le quinte, parte 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  A questo punto aggiungere il codice di sostituzione per il `AddFileFromTemplate` classe.  
   
@@ -658,4 +653,3 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
     ![Comando progetto semplice](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    La procedura è stata completata. È stato implementato un sistema di progetto gestito.
-

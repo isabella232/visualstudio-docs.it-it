@@ -1,25 +1,22 @@
 ---
 title: Il file Dsldefinition. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937651"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969911"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +35,16 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
  Classi  
  Questa sezione definisce ogni classe di dominio che genera una classe nel codice generato.  
   
- Relationships  
+ Relazioni  
  Questa sezione definisce le relazioni incluse nel modello. L'origine e la destinazione rappresentano le due parti della relazione.  
   
- Types  
+ Tipi  
  Questa sezione definisce i tipi ed elenca i relativi spazi dei nomi. Le proprietà di dominio sono di due tipi. `DomainEnumerations` sono definite nel modello e generano i tipi in DomainModel.cs. `ExternalTypes` fanno riferimento ai tipi definiti in altre posizioni, ad esempio `String` o `Int32`, e non generano nulla.  
   
- Shapes  
+ Forme  
  Questa sezione definisce le forme che descrivono l'aspetto del modello in una finestra di progettazione. Queste forme geometriche sono mappate alle classi del modello nella sezione Diagram.  
   
- Connectors  
+ Connettori  
  Questa sezione definisce l'aspetto dei connettori presenti in una finestra di progettazione. Queste descrizioni degli stili geometrici sono mappate a relazioni specifiche del modello nella sezione Diagram.  
   
  XmlSerializationBehavior  
@@ -59,13 +56,13 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
  ConnectionBuilders  
  Questa sezione definisce un generatore di connessione per ogni connettore (lo strumento per creare collegamenti tra classi che possono essere connesse). Questa sezione determina se è possibile connettere una classe di origine e una di destinazione.  
   
- Diagram  
+ Diagramma  
  Questa sezione definisce un diagramma e viene usata per specificare proprietà come il colore di sfondo e la classe radice (la classe radice e la classe di dominio rappresentata del diagramma a livello globale). La sezione Diagram contiene anche gli elementi ShapeMap e ConnectorMap, che specificano la forma o il connettore che rappresenta ciascuna classe di dominio o relazione.  
   
  Designer  
  In questa sezione definisce una finestra di progettazione (editor), che riunisce una **casella degli strumenti**, impostazioni di convalida, un diagramma e uno schema di serializzazione. La sezione Designer definisce anche la classe radice del modello, che di solito corrisponde alla classe radice del diagramma.  
   
- Esplora risorse  
+ Explorer  
  Questa sezione identifica le **DSL Explorer** comportamento (definito nella sezione XmlSerializationBehavior).  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Moniker nel file DslDefinition.dsl  
@@ -90,7 +87,7 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
   
  Il sistema dei moniker richiede elementi di pari livello con nomi distinti nell'albero XML. Per questo motivo, se si tenta di salvare una definizione di linguaggio specifico di dominio che ha ad esempio due classi con lo stesso nome, si verificano errori di convalida. È sempre necessario correggere gli errori di nome duplicato prima di salvare il file DslDefinition.dsl per poterlo ricaricare senza errori in seguito.  
   
- Ogni tipo ha un moniker specifico: DomainClassMoniker, DomainRelationshipMoniker e così via.  
+ Ogni tipo ha un proprio tipo del moniker: DomainClassMoniker, DomainRelationshipMoniker e così via.  
   
 ## <a name="types"></a>Tipi  
  La sezione Types specifica tutti i tipi inclusi nel file DslDefinition.dsl come tipi di proprietà. Si tratta di due categorie di tipi: i tipi esterni, come System.String, e i tipi enumerati.  
@@ -157,7 +154,7 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
   
  Ogni classe di dominio, incluse le relazioni, le forme, i connettori e i diagrammi, può avere questi attributi e nodi figlio:  
   
--   **ID.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).  
+-   **Id.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).  
   
 -   **Name e Namespace.** Questi attributi specificano il nome e lo spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.  
   
@@ -198,7 +195,7 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
   
 -   **IsUIReadOnly**. Questo attributo determina se l'utente può modificare la proprietà nel **proprietà** finestra o tramite un elemento decorator in cui viene presentata la proprietà.  
   
--   **Tipo**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.  
+-   **Kind**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.  
   
 -   **IsElementName**. Se questo attributo è impostato su True, il suo valore viene impostato automaticamente su un valore univoco quando viene creata un'istanza della classe padre. Questo attributo può essere impostato su True solo per una proprietà in ogni classe, che deve essere di tipo String. Nell'esempio Diagramma dei componenti, la proprietà `Name` in `NamedElement` ha `IsElementName` impostato su True. Quando un utente crea un elemento `Component` (che eredita da `NamedElement`), il nome viene inizializzato automaticamente con un valore simile a "Component6".  
   
@@ -214,7 +211,7 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
 ### <a name="source-and-target-roles"></a>Ruoli di origine e di destinazione  
  Ogni relazione contiene ruoli di origine e di destinazione con i seguenti attributi:  
   
--   L'attributo `RolePlayer` fa riferimento alla classe di dominio delle istanze collegate: OutPort per l'origine e InPort per la destinazione.  
+-   Il `RolePlayer` attributo fa riferimento alla classe di dominio delle istanze collegate: OutPort per l'origine, InPort per la destinazione.  
   
 -   L'attributo `Multiplicity` ha quattro valori possibili: ZeroMany, ZeroOne, One e OneMany. Questo attributo fa riferimento al numero di collegamenti di questa relazione che possono essere associati a un assegnatario di ruolo.  
   
@@ -281,7 +278,7 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
  Quando si scrive codice c# per questo modello, è possibile passare attraverso un collegamento in un unico passaggio usando la proprietà che la relazione genera su ciascuna delle classi che collega:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  È però necessario eseguire entrambi gli hop in modo esplicito nella sintassi del percorso. Questo requisito consente di accedere al collegamento intermedio più facilmente. Il codice seguente completa l'hop dal collegamento alla proprietà Component:  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Le mappe dei connettori possono anche contenere mappe degli elementi Decorator.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

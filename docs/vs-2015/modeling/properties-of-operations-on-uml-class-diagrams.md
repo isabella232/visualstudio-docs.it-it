@@ -1,12 +1,9 @@
 ---
 title: Proprietà di operazioni su UML diagrammi classi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.operation.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968492"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Proprietà di operazioni in diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ In un diagramma classi UML, è possibile aggiungere *operazioni* a classi e inte
 ## <a name="signature-of-an-operation"></a>Firma di un'operazione  
  La firma di un'operazione è la riga di testo che la rappresenta in una classe o in un'interfaccia di un diagramma classi UML. Ha il formato seguente:  
 
- \+ OperationName (parameter1: Type1 [*],...): elemento ReturnType [\*]  
+ \+ OperationName (parameter1: Type1 [*]...) : ReturnType [\*]  
 
  \+ indica la visibilità pubblica. Gli altri valori consentiti sono: (private), # (protected), ~ (package).  
 
@@ -62,7 +59,7 @@ In un diagramma classi UML, è possibile aggiungere *operazioni* a classi e inte
 |  **Precondizioni**  |    (nessuno)    |                                                                                                                            Condizione facoltativa che specifica i presupposti sullo stato del sistema prima dell'inizio dell'esecuzione dell'operazione.                                                                                                                            |
 | **Condizioni del corpo** |    (nessuno)    |                                                                                                                                                       Vincolo facoltativo sui valori restituiti dall'operazione.                                                                                                                                                       |
 |   **Visibilità**    |    Public    |                  I valori consentiti e i caratteri visualizzati nella firma sono:<br /><br /> **+ Public** : visibile a livello globale<br /><br /> **- Private** : non visibile all'esterno del tipo proprietario<br /><br /> **# Protected** : visibile ai tipi derivati dal proprietario<br /><br /> **~ Package** : visibile agli altri tipi all'interno dello stesso pacchetto.                   |
-|    **Firma**    |  +*Nome*)   |                                                                                      Riepiloga la visibilità, il nome, i parametri e il tipo restituito di questa operazione. È possibile modificare tali proprietà modificando la firma sul diagramma o modificando le singole proprietà.                                                                                      |
+|    **Firma**    |  +*Name*()   |                                                                                      Riepiloga la visibilità, il nome, i parametri e il tipo restituito di questa operazione. È possibile modificare tali proprietà modificando la firma sul diagramma o modificando le singole proprietà.                                                                                      |
 |   **Elementi di lavoro**    | 0 elementi associati |                                                                                                  Numero di elementi di lavoro associati. Sola lettura.<br /><br /> Per altre informazioni, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).                                                                                                  |
 |   **Concorrenza**   |  Sequential  | **Sequenziale** -l'operazione viene o verrà progettato senza il controllo della concorrenza. L'esecuzione contemporanea di più chiamate a questa operazione potrebbe causare errori.<br /><br /> **Sorvegliato** -l'operazione verrà bloccata automaticamente fino al completamento di altre istanze di esso.<br /><br /> **Simultanee** -l'operazione è progettata in modo che più chiamate a esso possono essere eseguite contemporaneamente. |
 |    **È statico**    |    False     |                                                                                                  Se true, questa operazione viene condivisa tra tutte le istanze di questo tipo.<br /><br /> Se true, il nome dell'operazione sarà sottolineato laddove viene visualizzato nel diagramma.                                                                                                   |
@@ -74,11 +71,8 @@ In un diagramma classi UML, è possibile aggiungere *operazioni* a classi e inte
 |    **È univoco**    |    False     |                                                                                                                                         Se true, non sono presenti valori duplicati nella raccolta. Per la **molteplicità** più di 1.                                                                                                                                         |
 
 ## <a name="see-also"></a>Vedere anche  
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
  [Proprietà di tipi in diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)

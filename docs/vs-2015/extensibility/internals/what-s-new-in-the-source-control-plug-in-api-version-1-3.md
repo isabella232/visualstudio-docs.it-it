@@ -1,27 +1,22 @@
 ---
 title: Cosa&#39;s nuove nell'origine del plug-in versione 1.3 dell'API di controllo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.3
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58756bde7f3eb9fbc0f42bf494d82e8cc508796e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5333a5b44e9c990843e66da357578e4a90d210
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968153"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Cosa&#39;plug-in versione 1.3 dell'API di controllo s nuove nell'origine
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,4 +39,3 @@ L'API dei plug-in del controllo origine versione 1.3 introduce le nuove funzioni
 ## <a name="see-also"></a>Vedere anche  
  [Introduzione](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)   
  [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

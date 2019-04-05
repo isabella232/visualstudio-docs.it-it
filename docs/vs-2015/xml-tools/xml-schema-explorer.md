@@ -1,25 +1,20 @@
 ---
 title: XML Schema Explorer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970119"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,12 +74,12 @@ XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML 
   
 -   L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.  
   
-## <a name="draging-and-dropping-nodes"></a>Trascinamento di nodi  
- È possibile trascinare e rilasciare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.  
+## <a name="draging-and-dropping-nodes"></a>Trascinamento e rilascio di nodi  
+ È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.  
   
  Eliminazione di file sulla visualizzazione aggiungerà tutti i nodi globali nel file per il [area di lavoro di progettazione XSD](../xml-tools/xml-schema-designer-workspace.md). Il rilascio degli spazi dei nomi sulla visualizzazione aggiungerà tutti i nodi globali contenuti nello spazio dei nomi all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.  
   
- Non è possibile trascinare nodi locali o importazioni.  
+ Non è possibile trascinare e rilasciare nodi locali o importazioni.  
   
 ## <a name="in-this-section"></a>In questa sezione  
   
@@ -98,10 +93,3 @@ XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML 
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-

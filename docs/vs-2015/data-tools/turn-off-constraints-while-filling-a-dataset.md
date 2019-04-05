@@ -1,12 +1,9 @@
 ---
 title: Disattivare i vincoli durante il riempimento di un set di dati | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -25,13 +22,13 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964487"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +50,10 @@ Se un set di dati contiene i vincoli (ad esempio i vincoli di chiave esterna), t
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Per sospendere l'aggiornamento dei vincoli tramite la finestra di progettazione set di dati  
   
-1.  Aprire il set di dati nel [creazione e modifica di dataset tipizzati](../data-tools/creating-and-editing-typed-datasets.md). Per altre informazioni, vedere [procedura: aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Aprire il set di dati in Progettazione Dataset. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> su `false`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [Relazioni nei set di dati](../data-tools/relationships-in-datasets.md)
-

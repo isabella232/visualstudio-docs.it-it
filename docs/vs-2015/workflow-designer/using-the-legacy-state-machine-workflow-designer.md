@@ -1,11 +1,8 @@
 ---
 title: Utilizzo di progettazione del flusso di lavoro computer stati (Legacy) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954303"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilizzo della finestra di progettazione flusso di lavoro di una macchina a stati (legacy)
-Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCLUDE[vs2010](../includes/vs2010-md.md)] che viene destinato al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o il [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile scegliere di usare i **applicazione Console flusso di lavoro macchina a stati** o il  **Stato della libreria del flusso di lavoro di Machine** modello di progetto legacy. Se si sceglie uno di questi modelli di progetto della macchina a stati, la finestra di progettazione della macchina a stati viene presentata come interfaccia utente della finestra di progettazione del flusso di lavoro legacy. Per informazioni sui modelli progetto macchina a stati legacy, vedere [procedura: creare lo stato del flusso di lavoro applicazioni Console macchina (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [procedura: creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCLUDE[vs2010](../includes/vs2010-md.md)] che viene destinato al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o il [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile scegliere di usare i **applicazione Console flusso di lavoro macchina a stati** o il  **Stato della libreria del flusso di lavoro di Machine** modello di progetto legacy. Se si sceglie uno di questi modelli di progetto della macchina a stati, la finestra di progettazione della macchina a stati viene presentata come interfaccia utente della finestra di progettazione del flusso di lavoro legacy. Per informazioni sui modelli progetto macchina a stati legacy, vedere [come: Creare applicazioni di Console del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [come: Creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Il flusso di lavoro di una macchina a stati è costituito da un set di stati. Uno stato è indicato come stato iniziale. Ogni stato può ricevere un determinato set di eventi. In base a un evento, può essere fatta una transizione a un altro stato. Il flusso di lavoro di una macchina a stati può avere uno stato finale. Quando viene effettuata una transizione allo stato finale, l'esecuzione del flusso di lavoro è completata.  
   
@@ -45,9 +42,9 @@ Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCL
   
 |Nome della casella degli strumenti|Attività|Descrizione|  
 |------------------|--------------|-----------------|  
-|**Stato**|[Attività StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Rappresenta uno stato in una macchina a stati; può contenere ulteriori **StateActivity** attività. Per altre informazioni, vedere [utilizzo dell'attività StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
+|**Stato**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Rappresenta uno stato in una macchina a stati; può contenere ulteriori **StateActivity** attività. Per altre informazioni, vedere [utilizzo dell'attività StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Specifica una transizione a un nuovo stato. Per altre informazioni, vedere [utilizzo dell'attività SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  
-|**Attività StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Viene eseguita quando viene immesso uno stato; può contenere altre attività. Per altre informazioni, vedere [utilizzo dell'attività StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
+|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Viene eseguita quando viene immesso uno stato; può contenere altre attività. Per altre informazioni, vedere [utilizzo dell'attività StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
 |**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Esegue attività contenute quando si esce da un [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) attività. Per altre informazioni, vedere [utilizzo dell'attività StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  
 |**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Viene usata per stati che si basano su un evento esterno per avviare l’esecuzione. Il **EventDrivenActivity** attività deve avere un'attività che implementa il [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) interfaccia come la prima attività figlio. Per altre informazioni, vedere [utilizzo dell'attività EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
   
@@ -61,8 +58,8 @@ Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCL
 >  Per aprire la **struttura documento** finestra via il **View** dal menu **Other Windows**e quindi selezionare **struttura documento**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare applicazioni di Console del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Procedura: creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Procedura: Creare applicazioni di Console del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Procedura: Creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Flussi di lavoro macchina a stati](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Utilizzo dell'attività StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [Utilizzo dell'attività StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   
