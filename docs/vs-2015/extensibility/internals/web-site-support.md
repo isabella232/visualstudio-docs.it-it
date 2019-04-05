@@ -1,26 +1,21 @@
 ---
 title: Supporto per siti Web | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7215079dbfc8a8c9934f16700c0a7f466f9bc9a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 91deb6d2e3ec58533ac9339c8c94634db23ec996
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786080"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970287"
 ---
 # <a name="web-site-support"></a>Supporto per siti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ Un sistema di progetto sito Web è un sistema di progetto che consente di creare
 ## <a name="related-sections"></a>Sezioni correlate  
  [Progetti Web](../../extensibility/internals/web-projects.md)  
  Viene presentata una panoramica dei due tipi di progetti Web, progetti di siti Web e progetti di applicazione Web.
-

@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: impostare le proprietà di analisi codice per progetti C-c + + | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Impostare le proprietà di analisi codice per progetti C-c + + | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
 - VC.Project.VCCLCompilerTool.EnablePrefast
@@ -23,15 +18,15 @@ ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 447bb9dfedc93594c6af014b830bfabc1b7ecf39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752651"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964762"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: impostare le proprietà di analisi del codice per progetti C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: Impostare le proprietà di analisi codice per progetti C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile configurare le regole utilizza lo strumento di analisi codice per analizzare il codice in ogni configurazione del progetto. Inoltre, è possibile indirizzare analisi del codice per eliminare gli avvisi del codice che è stato generato e aggiunto al progetto da uno strumento di terze parti.  
@@ -60,6 +55,3 @@ ms.locfileid: "51752651"
 ## <a name="see-also"></a>Vedere anche  
  [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [Avvisi dell'analisi codice per C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
-
-
-

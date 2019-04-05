@@ -1,14 +1,9 @@
 ---
 title: Utilità CreateExpInstance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 73a6761e844cee41c1a6f0df79f0d6529f4a8215
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967448"
 ---
 # <a name="createexpinstance-utility"></a>Utilità CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,16 +36,16 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  / Creazione  
  Crea l'istanza sperimentale.  
   
- / Reset  
+ /Reset  
  Elimina l'istanza sperimentale e quindi ne crea uno nuovo.  
   
  /Clean  
  Elimina l'istanza sperimentale.  
   
- / VSInstance  
+ /VSInstance  
  Il nome della directory che contiene l'istanza di Visual Studio di base da copiare.  
   
- / RootSuffix  
+ /RootSuffix  
  Suffisso da aggiungere al nome della directory istanza sperimentale.  
   
 ## <a name="remarks"></a>Note  
@@ -64,8 +59,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  L'esempio seguente ripristina l'istanza sperimentale predefinita di Visual Studio.  
   
- **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix Exp =**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
 ## <a name="see-also"></a>Vedere anche  
  [Il rilascio di un prodotto](../../misc/releasing-a-visual-studio-integration-product.md)
-

@@ -1,25 +1,20 @@
 ---
 title: La migrazione di App per la piattaforma Windows universale (UWP) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964837"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrare le app alla piattaforma UWP (Universal Windows Platform)
 Apportare le modifiche manuali necessarie ai file di progetto esistenti per le app di Windows Store 8.1, di Windows Phone 8.1 o di Windows universale create con Visual Studio 2015 RC, in modo da consentirne l'uso con Visual Studio 2015 RTM. Se è presente un'app universale di Windows 8.1 con un progetto di app di Windows e un progetto di Windows Phone, è necessario seguire la procedura per la migrazione dei singoli progetti.  
@@ -93,11 +88,11 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
     1.  Impostare il valore della \<piattaforma > elemento da: **x86**.  
   
-    2.  Aggiungere un \<TargetPlatformIdentifier > elemento e impostarne il valore: **UAP**.  
+    2.  Aggiungere un \<TargetPlatformIdentifier > elemento e impostarne il valore su: **UAP**.  
   
     3.  Modificare il valore esistente del \<TargetPlatformVersion > elemento come valore della versione (Universal Windows Platform) installato. Aggiungere anche un \<TargetPlatformMinVersion > elemento e assegnargli lo stesso valore.  
   
-    4.  Modificare il valore della \<MinimumVisualStudioVersion > elemento da: **14**.  
+    4.  Modificare il valore della \<MinimumVisualStudioVersion > elemento: **14**.  
   
     5.  Sostituire il \<ProjectTypeGuids > come illustrato di seguito:  
   
@@ -337,7 +332,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 2. È necessario aggiornare il \<pacchetto > elemento con i nuovi schemi in base al tipo di progetto esistente. Rimuovere prima gli schemi seguenti in base al tipo di progetto in uso, Windows Store o Windows Phone.  
   
-    **PRECEDENTE per il progetto Windows Store:** il \<pacchetto > elemento avrà un aspetto simile al seguente.  
+    **PRECEDENTE per il progetto Windows Store:** Il \<pacchetto > elemento avrà un aspetto simile al seguente.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
    ```  
   
-    **PRECEDENTE per il progetto Windows Phone:** il \<pacchetto > elemento avrà un aspetto simile al seguente.  
+    **PRECEDENTE per il progetto Windows Phone:** Il \<pacchetto > elemento avrà un aspetto simile al seguente.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **Novità per la piattaforma Windows universale:** aggiungere gli schemi sotto il \<pacchetto > elemento. Rimuovere i prefissi dell'identificatore dello spazio dei nomi associato dagli elementi per gli schemi appena rimossi. Aggiornare la proprietà IgnorableNamespaces su: uap mp. Il nuovo \<pacchetto > elemento dovrebbe essere simile alla seguente.  
+    **Novità di Windows universale piattaforma:** Aggiungere gli schemi sotto il \<pacchetto > elemento. Rimuovere i prefissi dell'identificatore dello spazio dei nomi associato dagli elementi per gli schemi appena rimossi. Aggiornare la proprietà IgnorableNamespaces su: uap mp. Il nuovo \<pacchetto > elemento dovrebbe essere simile alla seguente.  
   
    ```xml  
    <Package  
@@ -375,7 +370,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
    </Dependencies>  
    ```  
   
-4. **Per Windows Store solo:** è necessario aggiungere un' \<MP: phoneidentity > elemento figlio di \<pacchetto > elemento. Aggiungere un attributo PhoneProductId e un attributo PhonePublisherId. Impostare phoneproductid in modo che hanno lo stesso valore di attributo Name nel \<identità > elemento. Impostare il valore PhonePublishedId su: 00000000-0000-0000-0000-000000000000, analogamente a quanto segue:  
+4. **Per Windows Store solo:** È necessario aggiungere un \<MP: phoneidentity > elemento figlio di \<pacchetto > elemento. Aggiungere un attributo PhoneProductId e un attributo PhonePublisherId. Impostare phoneproductid in modo che hanno lo stesso valore di attributo Name nel \<identità > elemento. Impostare il valore PhonePublishedId su: 00000000-0000-0000-0000-000000000000. analogamente a quanto segue:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -419,7 +414,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
    ```  
   
-    **Solo per Windows Store:** i nomi delle dimensioni riquadro sono stati modificati. Modificare gli attributi nel \<VisualElements > dimensioni riquadro con convergenza di elemento per riflettere la nuova. 70x70 diventa 71x71 e 30x30 diventa 44x44.  
+    **Si applica solo a Windows Store:** I nomi delle dimensioni riquadro sono stati modificati. Modificare gli attributi nel \<VisualElements > dimensioni riquadro con convergenza di elemento per riflettere la nuova. 70x70 diventa 71x71 e 30x30 diventa 44x44.  
   
     **PRECEDENTE:** nomi delle dimensioni riquadro  
   
@@ -487,7 +482,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 12. Modificare le dipendenze framework. Aggiungere un nome dell'editore a tutti \<PackageDependency > elementi, e specificare MinVersion se non è già stato specificato.  
   
-     **PRECEDENTE:** \<PackageDependency > elemento  
+     **OLD:** \<PackageDependency > elemento  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
     ```  
   
-     **Novità:** \<PackageDependency > elemento  
+     **NUOVO:** \<PackageDependency > elemento  
   
     ```xml  
     <Dependencies>  
@@ -512,7 +507,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 13. Sostituire le attività di tipo background gattCharacteristicNotification e rfcommConnection con un'attività di tipo Bluetooth. Ad esempio:  
   
-     **PRECEDENTE:**  
+     **OLD:**  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -523,7 +518,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     </Extension>  
     ```  
   
-     **NUOVO:** sostituito con l'attività di tipo Bluetooth.  
+     **NUOVO:** Con l'attività di tipo Bluetooth.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -535,7 +530,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 14. Sostituire le capacità del dispositivo Bluetooth bluetooth.rfcomm e bluetooth.genericAttributeProfile con una capacità Bluetooth generica. Ad esempio:  
   
-     **PRECEDENTE:**  
+     **OLD:**  
   
     ```xml  
     <Capabilities>  
@@ -552,7 +547,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     </Capabilities>  
     ```  
   
-     **NUOVO:** sostituito con una capacità Bluetooth generica.  
+     **NUOVO:** Sostituito con una capacità Bluetooth generica.  
   
     ```xml  
     <Capabilities>  
@@ -676,7 +671,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
    ```  
   
-6. Trovare il \<destinazione > elemento con un attributo di nome con il valore: sia EnsureNuGetPackageBuildImports. Eliminare questo elemento e tutti i relativi elementi figlio.  
+6. Trovare il \<destinazione > elemento con un attributo di nome con il valore: EnsureNuGetPackageBuildImports. Eliminare questo elemento e tutti i relativi elementi figlio.  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  

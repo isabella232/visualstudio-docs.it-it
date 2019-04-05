@@ -1,29 +1,26 @@
 ---
 title: 'Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O-R Designer) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd8572900e181da1b33b26638f15aa04845008e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968154"
 ---
-# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (O/R Designer)
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supporta l'ereditarietà a tabella singola come viene in genere implementato nei sistemi relazionali. Questa procedura dettagliata espande i passaggi generici specificati nel [procedura: configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) argomento e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supporta l'ereditarietà a tabella singola come viene in genere implementato nei sistemi relazionali. Questa procedura dettagliata espande i passaggi generici specificati nel [come: Configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) argomento e vengono forniti alcuni dati reali per illustrare l'uso dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  In particolare, verranno illustrate le attività seguenti:  
   
@@ -57,13 +54,13 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
     |**Type**|**int**|**True**|  
-    |**firstName**|**nvarchar(200)**|**False**|  
-    |**Cognome**|**nvarchar(200)**|**False**|  
+    |**FirstName**|**nvarchar(200)**|**False**|  
+    |**LastName**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
 3.  Impostare la colonna ID come chiave primaria.  
   
-4.  Salvataggio della tabella e denominarla **persona**.  
+4.  Salvare la tabella e denominarla **Person**.  
   
 ## <a name="add-data-to-the-table"></a>Aggiunta di dati alla tabella  
  Allo scopo di verificare che l'ereditarietà sia configurata correttamente, è necessario aggiungere alcuni dati alla tabella per ogni classe nell'ereditarietà a tabella singola.  
@@ -76,19 +73,19 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Type**|**firstName**|**Cognome**|**Manager**|  
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|  
-    |**5**|**2**|**Andreas**|**Luca Argentiero**|**1**|  
+    |**5**|**2**|**Andreas**|**Hauser**|**1**|  
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|  
     |**7**|**2**|**Alexey**|**Orekhov**|**2**|  
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|  
     |**9**|**2**|**Tai**|**Yee**|**2**|  
     |**10**|**2**|**Fabricio**|**Noriega**|**3**|  
-    |**11**|**2**|**Barbara**|**Martin**|**3**|  
-    |**12**|**2**|**Davide**|**Kwok**|**3**|  
+    |**11**|**2**|**Mindy**|**Martin**|**3**|  
+    |**12**|**2**|**Ken**|**Kwok**|**3**|  
   
 ## <a name="create-a-new-project"></a>Creazione di un nuovo progetto  
  Una volta creata la tabella, creare un nuovo progetto per illustrare la configurazione dell'ereditarietà.  
@@ -112,12 +109,12 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 1.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
-2.  Scegliere il **classi LINQ to SQL** modello e quindi fare clic su **Add**.  
+2.  Fare clic sul modello **Classi LINQ to SQL** e quindi fare clic su **Aggiungi**.  
   
      Il file .dbml viene aggiunto al progetto e viene aperto [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>Creazione dell'ereditarietà usando Progettazione relazionale oggetti  
- Configurare l'ereditarietà trascinando un' **ereditarietà** dell'oggetto dalle **della casella degli strumenti** nell'area di progettazione.  
+ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casella degli strumenti** nell'area di progettazione.  
   
 #### <a name="to-create-the-inheritance"></a>Per creare l'ereditarietà  
   
@@ -127,21 +124,21 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 3.  Trascinare una seconda **Person** tabella le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e modificarne il nome in **dipendente**.  
   
-4.  Eliminare il **Manager** proprietà dalle **persona** oggetto.  
+4.  Eliminare la proprietà **Manager** dall'oggetto **Person**.  
   
-5.  Eliminare il **tipo**, **ID**, **FirstName**, e **LastName** proprietà dal **dipendente** oggetto. (In altre parole, eliminare tutte le proprietà, ad eccezione di **Manager**.)  
+5.  Eliminare le proprietà **Type**, **ID**, **FirstName** e **LastName** dall'oggetto **Employee** (in altre parole, eliminare tutte le proprietà ad eccezione di **Manager**).  
   
-6.  Dal **Object Relational Designer** scheda della finestra di **della casella degli strumenti**, creare un **ereditarietà** tra il **persona** e  **Employee** oggetti. A tale scopo, fare clic sui **ereditarietà** degli elementi nella **della casella degli strumenti** e rilasciare il pulsante del mouse. Successivamente, fare clic il **dipendente** oggetto e quindi la **persona** dell'oggetto nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. La freccia della linea di ereditarietà punterà il **persona** oggetto.  
+6.  Dalla scheda **Object Relational Designer** della **Casella degli strumenti**, creare un oggetto **Inheritance** tra gli oggetti **Person** ed **Employee**. Per eseguire questa operazione, fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse. Successivamente, fare clic il **dipendente** oggetto e quindi la **persona** dell'oggetto nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. La freccia della linea di ereditarietà punterà il **persona** oggetto.  
   
-7.  Scegliere il **ereditarietà** nell'area di progettazione.  
+7.  Fare clic sulla linea **Ereditarietà** nell'area di progettazione.  
   
-8.  Impostare il **proprietà Discriminator** proprietà **tipo**.  
+8.  Impostare la proprietà **Discriminator Property** su **Type**.  
   
-9. Impostare il **Derived Class Discriminator Value** proprietà **2**.  
+9. Impostare la proprietà **Derived Class Discriminator Value** su **2**.  
   
-10. Impostare il **Base Class Discriminator Value** proprietà **1**.  
+10. Impostare la proprietà **Base Class Discriminator Value** su **1**.  
   
-11. Impostare il **valore predefinito di ereditarietà** proprietà **persona**.  
+11. Impostare la proprietà **Inheritance Default** su **Person**.  
   
 12. Compilare il progetto.  
   
@@ -154,7 +151,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 2.  Fare doppio clic sul form per creare un gestore dell'evento `Form1_Load`.  
   
-3.  Aggiungere il codice seguente al gestore eventi `Form1_Load`:  
+3.  Aggiungere il codice seguente al gestore eventi `Form1_Load` :  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -188,13 +185,12 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 2.  Verificare che siano visualizzati solo i record che presentano il valore 2 nella rispettiva colonna Type.  
   
-3.  Chiudere il form. (Nelle **Debug** menu, fare clic su **arresta debug**.)  
+3.  Chiudere il form. Scegliere **Termina debug** dal menu **Debug**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procedura: aggiungere LINQ to SQL classi a un progetto (O-R Designer)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [Procedura: Aggiungere LINQ to SQL classi a un progetto (O-R Designer)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
  [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Procedura: Generare il modello a oggetti in Visual Basic o C#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
-

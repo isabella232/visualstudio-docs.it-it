@@ -1,14 +1,9 @@
 ---
 title: Memoria Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724252"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58969559"
 ---
 # <a name="memory-windows"></a>Finestra Memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ Il **memoria** finestra permette di visualizzare lo spazio di memoria utilizzata
 2.  Digitare o incollare l'indirizzo a cui si vuole vedere e quindi premere **invio**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Modifica della modalità di visualizzazione delle informazioni nella finestra Memoria  
- È possibile personalizzare il modo di **memoria** finestra Mostra il contenuto della memoria. Per impostazione predefinita, il contenuto della memoria viene visualizzato come dati integer a 1 byte in formato esadecimale e con un numero di colonne determinato automaticamente dalla larghezza corrente della finestra.  
+ È inoltre possibile personalizzare il modo in cui il contenuto della memoria viene visualizzato nella finestra **Memoria**. Per impostazione predefinita, il contenuto della memoria viene visualizzato come dati integer a 1 byte in formato esadecimale e con un numero di colonne determinato automaticamente dalla larghezza corrente della finestra.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Per cambiare il formato del contenuto della memoria  
   
@@ -105,7 +100,7 @@ Il **memoria** finestra permette di visualizzare lo spazio di memoria utilizzata
   
     Se la valutazione diretta è attiva, l'opzione risulterà selezionata e facendo clic su di essa la valutazione diretta verrà disattivata. Se la valutazione diretta non è attiva, l'opzione risulterà deselezionata e facendo clic su di essa verrà attivata.  
   
-   È possibile nascondere o visualizzare la barra degli strumenti in cima il **memoria** finestra. Non è possibile accedere alla casella Indirizzo o ad altri strumenti quando la barra degli strumenti è nascosta.  
+   È possibile nascondere o visualizzare la barra degli strumenti nella parte superiore della finestra **Memoria**. Non è possibile accedere alla casella Indirizzo o ad altri strumenti quando la barra degli strumenti è nascosta.  
   
 #### <a name="to-toggle-the-toolbar"></a>Per attivare o disattivare la barra degli strumenti  
   
@@ -128,8 +123,3 @@ Il **memoria** finestra permette di visualizzare lo spazio di memoria utilizzata
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

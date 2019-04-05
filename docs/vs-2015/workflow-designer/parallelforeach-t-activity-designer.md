@@ -1,11 +1,8 @@
 ---
 title: Attività ParallelForEach&lt;T&gt; ActivityDesigner | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
@@ -13,13 +10,13 @@ ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970158"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>Attività ParallelForEach&lt;T&gt; ActivityDesigner
 L'attività <xref:System.Activities.Statements.ParallelForEach%601> enumera gli elementi di una raccolta ed esegue in parallelo un'istruzione incorporata per ogni elemento della raccolta, ovvero in modo asincrono sullo stesso thread. Usare questa attività di controllo del flusso anziché l'attività <xref:System.Activities.Statements.Sequence> se si prevede che le relative attività figlio diventeranno inattive.  
@@ -53,5 +50,5 @@ L'attività <xref:System.Activities.Statements.ParallelForEach%601> enumera gli 
   
 ## <a name="see-also"></a>Vedere anche  
  [Sequenza](../workflow-designer/sequence-activity-designer.md)   
- [Parallelo](../workflow-designer/parallel-activity-designer.md)   
+ [Parallel](../workflow-designer/parallel-activity-designer.md)   
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

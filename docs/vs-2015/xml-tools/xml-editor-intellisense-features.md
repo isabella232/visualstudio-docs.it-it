@@ -1,25 +1,20 @@
 ---
 title: Funzionalità IntelliSense dell'Editor XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970113"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
   
 - Nomi del parametro per un determinato modello denominato.  
   
-  Per altre informazioni, vedere [procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.  
+  Per altre informazioni, vedere [Procedura dettagliata: Uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.  
   
 ## <a name="auto-completion"></a>Completamento automatico  
  L'editor XML, inoltre, semplifica la procedura di modifica del codice XML in quanto la sintassi XML richiesta viene inserita automaticamente. Ad esempio, se si digita il seguente tag di inizio:  
@@ -110,7 +105,7 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
   
  Il **inserimento automatico** sezione il **varie** pagina controlla il comportamento seguente:  
   
-|nome|Descrizione|  
+|Nome|Descrizione|  
 |----------|-----------------|  
 |Tag di fine|Inserisce i tag di chiusura per i nuovi elementi.|  
 |Virgolette per attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|  
@@ -127,7 +122,4 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 ## <a name="see-also"></a>Vedere anche  
  [Editor XML](../xml-tools/xml-editor.md)   
  [Utilizzo di IntelliSense](../ide/using-intellisense.md)   
- [Procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-
+ [Procedura dettagliata: Uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

@@ -1,11 +1,8 @@
 ---
 title: Activity Designer rethrow | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
@@ -13,13 +10,13 @@ ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 724e0b69fb14735682d437c9f21906560b15a590
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8b023a42da1c862927606c4bec0215120a5e5a11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965077"
 ---
 # <a name="rethrow-activity-designer"></a>ActivityDesigner Rethrow
 Il **Rethrow** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Rethrow> attività.  
@@ -33,7 +30,7 @@ Il **Rethrow** ActivityDesigner viene utilizzato per creare e configurare un <xr
  Il **Rethrow** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../includes/wfd2-md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Ciò consente di creare un <xref:System.Activities.Statements.Rethrow> attività con un valore predefinito **DisplayName** throw. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **Rethrow** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.  
   
 ### <a name="the-rethrow-properties"></a>Proprietà di Rethrow  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Rethrow> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Rethrow> e ne viene descritta la modalità di uso nella finestra di progettazione.  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  
@@ -41,5 +38,5 @@ Il **Rethrow** ActivityDesigner viene utilizzato per creare e configurare un <xr
   
 ## <a name="see-also"></a>Vedere anche  
  [Raccolta](../workflow-designer/collection-activity-designers.md)   
- [Istruzione throw](../workflow-designer/throw-activity-designer.md)   
+ [Throw](../workflow-designer/throw-activity-designer.md)   
  [TryCatch](../workflow-designer/trycatch-activity-designer.md)

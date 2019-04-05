@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: interrompere le modifiche al codice | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Arrestare le modifiche al codice | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 906c115342661ddbe90c0ffbf24bf58da6ae1413
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969795"
 ---
-# <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
+# <a name="how-to-stop-code-changes"></a>Procedura: Arrestare le modifiche al codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.  
@@ -42,7 +37,7 @@ In Modifica e continuazione è possibile scegliere di interrompere l'applicazion
   
 ### <a name="to-stop-applying-code-changes"></a>Per interrompere l'applicazione delle modifiche al codice  
   
-- Scegli **Interrompi applicazione modifiche del codice** dal **Debug** menu.  
+- Scegliere **Interrompi applicazione modifiche del codice** dal menu **Debug**.  
   
   Questa voce di menu viene visualizzata solo durante l'applicazione delle modifiche al codice.  
   
@@ -51,6 +46,3 @@ In Modifica e continuazione è possibile scegliere di interrompere l'applicazion
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione](../debugger/edit-and-continue.md)   
  [Modifica e continuazione, Debug, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
-
-
-

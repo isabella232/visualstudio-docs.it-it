@@ -1,14 +1,9 @@
 ---
 title: Valutazione dell'espressione in modalità di interruzione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - break mode, expression evaluation
 - debugging [Debugging SDK], expression evaluation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b5b307dead1d2fb193f7d34b28ef4eaec11c6dad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b23b93a5c7f278c01d06c5cda5cfcab418580361
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728997"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967064"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Valutazione delle espressioni in modalità di interruzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Di seguito viene descritto il processo che si verifica quando il debugger è in 
   
 3.  Se ParseText non restituisce S_OK, viene restituito il motivo dell'errore.  
   
-     -in caso contrario-  
+     -otherwise-  
   
      Se ParseText restituisce S_OK, il modello SDM può quindi chiamare [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oppure [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) per ottenere un valore finale dall'espressione analizzata.  
   
@@ -48,4 +43,3 @@ Di seguito viene descritto il processo che si verifica quando il debugger è in 
   
 ## <a name="see-also"></a>Vedere anche  
  [Chiamata degli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
-

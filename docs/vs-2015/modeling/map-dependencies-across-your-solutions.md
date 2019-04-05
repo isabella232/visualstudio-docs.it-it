@@ -1,11 +1,8 @@
 ---
 title: Eseguire il mapping delle dipendenze nelle soluzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968769"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ##  <a name="GetStarted"></a> Introduzione all'uso delle mappe codice  
  **Per usare le mappe codice saranno necessari**:  
   
--   Visual Studio Enterprise per creare mappe codice tramite l'editor di codice, Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti.  
+-   Visual Studio Enterprise: Creare mappe codici dall'editor di codice, Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti.  
   
--   Visual Studio Professional per aprire le mappe codice, apportare modifiche limitate ed esplorare il codice.  
+-   Visual Studio Professional: Aprire le mappe codici, apportare modifiche limitate ed esplorare il codice.  
   
 > [!WARNING]
 >  Prima di condividere le mappe create in Visual Studio Enterprise con altri utenti che usano Visual Studio Professional, assicurarsi che tutti gli elementi nella mappa siano visibili (ad esempio elementi nascosti, gruppi espansi e collegamenti tra gruppi).  
@@ -72,7 +69,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
   
 - Progetti X++ e assembly creati da moduli .NET per Microsoft Dynamics AX  
   
-  **Nota:** per progetti diversi da C# o Visual Basic .NET, sono disponibili meno opzioni per l'avvio di una mappa codice o per l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file da Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti.  
+  **Nota:** Per i progetti diversi da C# o Visual Basic .NET, sono disponibili meno opzioni per l'avvio di una mappa codice o aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file da Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Per visualizzare tutte le dipendenze nella soluzione  
   
@@ -289,7 +286,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ##  <a name="SeeSourceHeader"></a> Visualizzare le dipendenze tra i file di origine e i file di intestazione C e C++  
  Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione (**/FR**) su tali progetti. Vedere [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive. Se si nasconde il messaggio, è possibile visualizzarlo nuovamente. Impostare la seguente chiave del Registro di sistema su `0` o eliminare la chiave:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo potrebbe non essere possibile creare mappe codice per file di intestazione (con estensione h o `#include`) o finché il database IntelliSense non ha completato l'aggiornamento. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio. Per risolvere problemi o messaggi che vengono visualizzati perché determinate impostazioni di IntelliSense sono disattivate, vedere [Risoluzione dei problemi relativi alle mappe per il codice C e C++](#Troubleshooting).  
   
@@ -347,7 +344,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Condividere la mappa con altri utenti di Visual Studio  
  Usare il menu **File** per salvare la mappa.  
   
- oppure  
+ -oppure-  
   
  Per salvare la mappa come parte del progetto specifico, nella barra degli strumenti della mappa scegliere **Condividi**, **Sposta** \<*Nome mappa codice*>**.dgml in**, quindi scegliere il progetto in cui si vuole salvare la mappa.  
   
@@ -389,6 +386,3 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 -   [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

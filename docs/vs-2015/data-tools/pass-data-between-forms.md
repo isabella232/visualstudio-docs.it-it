@@ -1,12 +1,9 @@
 ---
 title: Passare i dati tra i form | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967394"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +42,9 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 -   Creazione e configurazione di un set di dati con il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
--   Selezione del controllo da creare nel form quando si trascinano elementi dal **Zdroje dat** finestra. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Selezione del controllo da creare nel form durante il trascinamento di elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Creazione di un controllo con associazione a dati trascinando elementi dal **Zdroje dat** finestra in un form.  
+-   Creazione del controllo associato a dati mediante il trascinamento degli elementi dalla finestra **Origini dati** nel form.  
   
 -   Creazione di un secondo form con una griglia per la visualizzazione dei dati.  
   
@@ -58,7 +55,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  
   
--   Accedere al database di esempio Northwind. Per altre informazioni, vedere [procedura: installare database di esempio](../data-tools/how-to-install-sample-databases.md).  
+-   Accedere al database di esempio Northwind.
   
 ## <a name="create-the-windows-application"></a>Creare l'applicazione di Windows  
   
@@ -70,7 +67,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 3.  Selezionare **Windows Forms Application**, fare clic su **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-     Il **PassingDataBetweenForms** progetto viene creato e aggiunto alla **Esplora soluzioni**.  
+     Il progetto **PassingDataBetweenForms** verrà creato e aggiunto a **Esplora soluzioni**.  
   
 ## <a name="create-the-data-source"></a>Creare l'origine dati  
   
@@ -78,36 +75,36 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 1.  Scegliere **Mostra origini dati** dal menu **Dati**.  
   
-2.  Nel **Zdroje dat** finestra, seleziona **Aggiungi nuova origine dati** per avviare la **configurazione dell'origine dati** procedura guidata.  
+2.  Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
   
 3.  Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.  
   
-4.  Nel **scegliere un modello di database** verificare che **set di dati** viene specificato e quindi fare clic su **Next**.  
+4.  Nella pagina **Scegli modello database** verificare che sia specificato **Dataset**, quindi scegliere **Avanti**.  
   
-5.  Nel **scegliere la connessione dati** pagina, effettuare una delle operazioni seguenti:  
+5.  Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:  
   
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
-    -   Selezionare **nuova connessione** per avviare la **Aggiungi/Modifica connessione** nella finestra di dialogo.  
+    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.  
   
-6.  Se il database richiede una password e se è abilitata l'opzione per includere dati sensibili, selezionare l'opzione e quindi fare clic su **successivo**.  
+6.  Se per il database è necessaria una password ed è selezionata l'opzione per l'inclusione dei dati sensibili, selezionare l'opzione e fare clic su **Avanti**.  
   
 7.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.  
   
-8.  Nel **Scegli oggetti di Database** , espandere il **tabelle** nodo.  
+8.  Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.  
   
-9. Selezionare il **clienti** e **ordini** tabelle e quindi fare clic su **fine**.  
+9. Selezionare le tabelle **Customers** e **Orders**, quindi scegliere **Fine**.  
   
-     Il **NorthwindDataSet** viene aggiunto al progetto e il **clienti** e **ordini** le tabelle vengono visualizzate nel **Zdroje dat** finestra.  
+     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle **Customers** e **Orders** vengono visualizzate nella finestra **Origini dati**.  
   
 ## <a name="create-the-first-form-form1"></a>Creare il primo form (Form1)  
- È possibile creare una griglia con associazione a dati (un <xref:System.Windows.Forms.DataGridView> controllo), trascinando le **clienti** nodo dal **Zdroje dat** finestra nei form.  
+ È possibile creare una griglia con associazione a dati, ovvero un controllo <xref:System.Windows.Forms.DataGridView> trascinando il nodo **Customers** dalla finestra **Origini dati** nel form.  
   
 #### <a name="to-create-a-data-bound-grid-on-the-form"></a>Per creare una griglia con associazione a dati nel form  
   
--   Trascinare l'oggetto principale **clienti** nodo dalle **Zdroje dat** finestra nei **Form1**.  
+-   Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.  
   
-     Oggetto <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per l'esplorazione dei record vengono visualizzati nella **Form1**. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
+     In **Form1** vengono visualizzati un oggetto <xref:System.Windows.Forms.DataGridView> e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
 ## <a name="create-the-second-form-form2"></a>Creare il secondo form (Form2)  
   
@@ -115,29 +112,29 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 1.  Scegliere **Aggiungi Windows Form** dal menu **Progetto**.  
   
-2.  Lasciare il nome predefinito **Form2**, fare clic su **Add**.  
+2.  Lasciare il nome predefinito **Form2** e scegliere **Aggiungi**.  
   
-3.  Trascinare l'oggetto principale **ordini** nodo dalle **Zdroje dat** finestra nei **Form2**.  
+3.  Trascinare il nodo **Orders** principale dalla finestra **Origini dati** a **Form2**.  
   
-     Oggetto <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per l'esplorazione dei record vengono visualizzati nella **Form2**. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
+     In **Form2** vengono visualizzati un oggetto <xref:System.Windows.Forms.DataGridView> e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
-4.  Eliminare il **OrdersBindingNavigator** dalla barra dei componenti.  
+4.  Eliminare l'oggetto **OrdersBindingNavigator** dalla barra dei componenti.  
   
-     Il **OrdersBindingNavigator** scompare dal **Form2**.  
+     **OrdersBindingNavigator** scompare da **Form2**.  
   
 ## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Aggiungere una query TableAdapter a Form2 per caricare gli ordini del cliente selezionato nel Form1  
   
 #### <a name="to-create-a-tableadapter-query"></a>Per creare una query TableAdapter  
   
-1.  Fare doppio clic il **NorthwindDataSet. xsd** del file in **Esplora soluzioni**.  
+1.  Fare doppio clic sul file **NorthwindDataSet.xsd** in **Esplora soluzioni**.  
   
-2.  Fare doppio clic il **OrdersTableAdapter**e selezionare **Aggiungi Query**.  
+2.  Fare clic con il pulsante destro del mouse su **OrdersTableAdapter** e selezionare **Aggiungi query**.  
   
-3.  Lasciare l'opzione predefinita **Usa istruzioni SQL**, quindi fare clic su **successivo**.  
+3.  Lasciare l'opzione predefinita di **Usa istruzioni SQL** e scegliere **Avanti**.  
   
-4.  Lasciare l'opzione predefinita **SELECT che restituisce righe**, quindi fare clic su **successivo**.  
+4.  Lasciare l'opzione predefinita di **SELECT che restituisce righe** e scegliere **Avanti**.  
   
-5.  Aggiungere una clausola WHERE alla query, per restituire `Orders` base il `CustomerID`. La query dovrebbe essere simile alla seguente:  
+5.  Aggiungere una clausola WHERE alla query per restituire gli `Orders` in base al `CustomerID`. La query dovrebbe essere simile alla seguente:  
   
     ```  
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry  
@@ -152,7 +149,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 7.  Per il **inserire un nome DataTableMethod**, tipo `FillByCustomerID`.  
   
-8.  Cancella il **Restituisci un DataTable** opzione e quindi fare clic su **successivo**.  
+8.  Deselezionare l'opzione **Restituisci una DataTable**, quindi scegliere **Avanti**.  
   
 9. Scegliere **Fine**.  
   
@@ -160,9 +157,9 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 #### <a name="to-create-a-method-to-pass-data-to"></a>Per creare un metodo al quale passare i dati  
   
-1.  Fare doppio clic su **Form2**e selezionare **Visualizza codice** per aprire **Form2** nel **Editor di codice**.  
+1.  Fare clic con il pulsante destro del mouse su **Form2** e selezionare **Visualizza codice** per aprire **Form2** nell'**editor di codice**.  
   
-2.  Aggiungere il codice seguente a **Form2** dopo il `Form2_Load` metodo:  
+2.  Aggiungere il codice riportato di seguito a **Form2** dopo il metodo `Form2_Load`:  
   
      [!code-csharp[VbRaddataDisplaying#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs#1)]
      [!code-vb[VbRaddataDisplaying#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb#1)]  
@@ -171,11 +168,11 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 #### <a name="to-create-a-method-to-pass-data-to-form2"></a>Per creare un metodo per il passaggio dei dati a Form2  
   
-1.  Nelle **Form1**, fare doppio clic su griglia dati del cliente e quindi fare clic su **proprietà**.  
+1.  In **Form1** fare clic con il pulsante destro del mouse sulla griglia dati del cliente, quindi scegliere **Proprietà**.  
   
-2.  Nel **delle proprietà** finestra, fare clic su **eventi**.  
+2.  Nella finestra **Proprietà** fare clic su **Eventi**.  
   
-3.  Fare doppio clic il **CellDoubleClick** evento.  
+3.  Fare doppio clic sull'evento **CellDoubleClick**.  
   
      Verrà visualizzato l'editor del codice.  
   
@@ -190,7 +187,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 -   Premere F5 per eseguire l'applicazione.  
   
--   Fare doppio clic su un record del cliente nella **Form1** per aprire **Form2** con gli ordini del cliente.  
+-   Fare doppio clic sul record di un cliente in **Form1** per aprire **Form2** e visualizzare gli ordini di quel cliente.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazioni una volta passati i dati da un form all'altro. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:  
@@ -201,4 +198,3 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

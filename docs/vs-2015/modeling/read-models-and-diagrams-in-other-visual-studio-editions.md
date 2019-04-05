@@ -1,25 +1,22 @@
 ---
 title: Leggere modelli e diagrammi in altre edizioni di Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964818"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +59,12 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)|Un diagramma livello mostra la struttura di un'architettura esistente o proposta. Dopo la scrittura del codice, è possibile convalidarlo automaticamente in base a un diagramma livello.|  
-|[Diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md)|Un diagramma di attività mostra un flusso di lavoro in un processo aziendale o nel software.|  
-|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|Un diagramma classi mostra tipi e relazioni usati in molti contesti, ad esempio codice, schemi di database, protocolli di comunicazione o il glossario dei termini usati per descrivere un dominio aziendale.|  
-|[Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)|Un diagramma dei componenti mostra le parti separabili in una progettazione software e le relative interfacce.|  
+|[Diagrammi dei livelli: riferimenti](../modeling/layer-diagrams-reference.md)|Un diagramma livello mostra la struttura di un'architettura esistente o proposta. Dopo la scrittura del codice, è possibile convalidarlo automaticamente in base a un diagramma livello.|  
+|[Diagrammi di attività UML: riferimenti](../modeling/uml-activity-diagrams-reference.md)|Un diagramma di attività mostra un flusso di lavoro in un processo aziendale o nel software.|  
+|[Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)|Un diagramma classi mostra tipi e relazioni usati in molti contesti, ad esempio codice, schemi di database, protocolli di comunicazione o il glossario dei termini usati per descrivere un dominio aziendale.|  
+|[Diagrammi dei componenti UML: riferimenti](../modeling/uml-component-diagrams-reference.md)|Un diagramma dei componenti mostra le parti separabili in una progettazione software e le relative interfacce.|  
 |[Diagrammi di sequenza UML: riferimenti](../modeling/uml-sequence-diagrams-reference.md)|Un diagramma di sequenza mostra le interazioni tra elementi in una progettazione software.|  
-|[Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|Un diagramma caso di utilizzo mostra gli utenti di un sistema e le attività che possono eseguire per realizzare obiettivi specifici.|  
+|[Diagrammi dei casi d'uso UML: riferimenti](../modeling/uml-use-case-diagrams-reference.md)|Un diagramma caso di utilizzo mostra gli utenti di un sistema e le attività che possono eseguire per realizzare obiettivi specifici.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)
-
-
-

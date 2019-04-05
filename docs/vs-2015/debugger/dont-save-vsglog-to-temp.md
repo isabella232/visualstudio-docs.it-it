@@ -1,25 +1,20 @@
 ---
 title: DONT_SAVE_VSGLOG_TO_TEMP | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 786fff96c74dd659b3aa10ef205a877956e5ea48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 449c6c1ecdb0644b9b52b6ec12ce867dc34d66c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969590"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Quando presente, definisce se il file di log di grafica viene salvato nella dire
 #define DONT_SAVE_VSGLOG_TO_TEMP  
 ```  
   
-## <a name="value"></a>Valore  
+## <a name="value"></a>Value  
  Un simbolo del preprocessore che mediante il relativo presenza o assenza determina se un file di log di grafica viene salvato nella directory dei file temporanei dell'utente. Se questo simbolo è definito, quindi il nome di file definito da `VSG_DEFAULT_RUN_FILENAME` è relativo alla directory corrente dell'applicazione acquisita o è un percorso assoluto; in caso contrario, il nome di file definito da `VSG_DEFAULT_RUN_FILENAME` è relativo alla directory dei file temporanei dell'utente e non può essere un percorso assoluto.  
   
 ## <a name="remarks"></a>Note  
@@ -54,6 +49,3 @@ Quando presente, definisce se il file di log di grafica viene salvato nella dire
   
 ## <a name="see-also"></a>Vedere anche  
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)
-
-
-

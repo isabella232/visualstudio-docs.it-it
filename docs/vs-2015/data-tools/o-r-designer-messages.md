@@ -1,23 +1,20 @@
 ---
 title: I messaggi della finestra di progettazione O-R | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7c43a8c6c306fd33dd7cb975dee9a7d89128d7cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964478"
 ---
 # <a name="or-designer-messages"></a>Messaggi di O/R Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +23,13 @@ ms.locfileid: "49217647"
 In questo argomento vengono elencati i messaggi che è possibile rilevare quando si usa Progettazione relazionale oggetti.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Impossibile creare un'associazione \<nome associazione >-proprietà è elencata due volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+ [Impossibile creare un'associazione \<nome associazione>. La stessa proprietà è elencata più volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [Impossibile creare un'associazione \<nome associazione >-tipi di proprietà non corrispondono](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [Impossibile creare un'associazione \<nome associazione>. Le proprietà non hanno tipi corrispondenti](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [La modifica del tipo restituito di un metodo DataContext non può essere annullata](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione.](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -44,9 +41,9 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
   
  [Gli oggetti in corso di aggiunta alla finestra di progettazione usano una connessione dati diversa da quella usata per la finestra di progettazione](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [La proprietà \<nome proprietà > non può essere eliminato](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [Impossibile eliminare la proprietà \<nome proprietà>](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [Impossibile eliminare la proprietà \<nome proprietà> perché partecipa all'associazione \<nome associazione>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [Impossibile eliminare la classe selezionata perché è usata come tipo restituito per uno o più metodi DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
@@ -65,4 +62,3 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

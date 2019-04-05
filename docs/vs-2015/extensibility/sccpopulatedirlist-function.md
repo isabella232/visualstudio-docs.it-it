@@ -1,14 +1,9 @@
 ---
 title: Funzione SccPopulateDirList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateDirList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ebfe2e28eb020547c65afd603d1899ebde510a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954273"
 ---
 # <a name="sccpopulatedirlist-function"></a>Funzione SccPopulateDirList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +53,13 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in] Valore che deve essere passato alla funzione di callback invariato.  
   
- Opzioni  
+ fOptions  
  [in] Una combinazione di valori che controllano il modo in cui vengono elaborate le directory (vedere la sezione "PopulateDirList flags" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).  
   
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|L'operazione è stata completata.|  
 |SCC_E_UNKNOWNERROR|Si è verificato un errore.|  
@@ -77,4 +72,3 @@ SCCRTN SccPopulateDirList(
  [Flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Codici di errore](../extensibility/error-codes.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Eseguire il debug di layout usando DOM Explorer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964324"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Eseguire il debug del layout usando DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 > [!TIP]
 >  Le modifiche apportate nella scheda **Layout** non sono permanenti. È possibile apportare modifiche permanenti al codice sorgente e quindi aggiornare l'app con il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti Debug (solo per app di Windows Store e Windows Phone Store). In questo modo, si può evitare di riavviare il debugger.  
   
- Per usare DOM Explorer per modificare alcuni aspetti del layout che non vengono visualizzati nel modello di riquadro, vedere [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Per usare DOM Explorer per modificare alcuni aspetti del layout che non vengono visualizzati nel modello di riquadro, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Esempio di correzione di un problema di layout  
  Questo esempio mostra come selezionare un elemento di elenco nel modello Hub/Pivot, interpretare i valori del modello di riquadro presenti nella scheda **Layout** e quindi modificare uno dei valori di proprietà per correggere un problema di layout.  
@@ -88,7 +83,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 8.  Passare a Visual Studio e scegliere **Seleziona elemento** in DOM Explorer oppure premere CTRL+B. In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic.  
   
     > [!TIP]
-    >  È anche possibile usare i tasti di direzione o altri metodi per selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  È anche possibile usare i tasti di direzione o altri metodi per selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Nell'emulatore Windows Phone o nel simulatore seleziona la metà di destra grigia di una delle immagini tagliate a metà. Attorno all'elemento selezionato appare un'evidenziazione, come mostrato qui nell'emulatore Windows Phone:  
   
@@ -132,9 +127,6 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 15. Passa all'emulatore Windows Phone o al simulatore. I valori di margin-left aggiornati sono stati applicati alle immagini di Sezione 4. Questi valori vengono anche aggiornati nella scheda **Calcolata** sotto la regola margin-left.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Eseguire il debug di stili CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Visualizzare i listener di eventi DOM](../debugger/view-dom-event-listeners.md)
-
-
-

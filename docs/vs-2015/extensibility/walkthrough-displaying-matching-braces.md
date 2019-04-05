@@ -1,28 +1,23 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969212"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Procedura dettagliata: visualizzazione della corrispondenza parentesi graffe
+# <a name="walkthrough-displaying-matching-braces"></a>Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile implementare funzionalità basate sul linguaggio, come corrispondenza che definisce le parentesi graffe che si desidera trovare una corrispondenza, e quindi aggiungendo un tag del marcatore di testo per le parentesi graffe corrispondenti quando il cursore si trova su una delle parentesi graffe tra parentesi graffe. È possibile definire le parentesi graffe nel contesto di un linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e applicare i tag per solo tale tipo o è possibile applicare i tag per un tipo di contenuto esistente (ad esempio "text"). Procedura dettagliata illustra come applicare i tag per il tipo di contenuto "text" corrispondenza tra parentesi graffe.  
@@ -130,5 +125,4 @@ ms.locfileid: "51745879"
 4.  Quando si posiziona il cursore prima di una parentesi graffa aperta, sia la parentesi graffa e la parentesi graffa di chiusura corrispondente dovrebbe essere evidenziata. Quando si posiziona il cursore subito dopo la parentesi graffa di chiusura, sia la parentesi graffa e la parentesi graffa di apertura corrisponda dovrebbe essere evidenziata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

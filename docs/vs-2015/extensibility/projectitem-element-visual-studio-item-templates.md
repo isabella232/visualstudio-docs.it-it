@@ -1,14 +1,9 @@
 ---
 title: Elemento ProjectItem (modelli di elemento di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969623"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elementi di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +28,8 @@ Specifica un file che viene incluso nel modello di elemento.
 > [!NOTE]
 >  Il `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. Questo argomento viene illustrato il `ProjectItem` elemento per elemento. Per una spiegazione delle `ProjectItem` (elemento) per i modelli di progetto, vedere [ProjectItem (elemento) (Visual Studio Project Templates)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<ProjectItem >  
   
 ## <a name="syntax"></a>Sintassi  
@@ -86,7 +81,7 @@ Specifica un file che viene incluso nel modello di elemento.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Quando viene creato un elemento da questo modello, il nome del file si baseranno sul nome utente specificato nella **Aggiungi nuovo elemento** nella finestra di dialogo. Ciò è utile durante la creazione di modelli di elementi a più file. Per altre informazioni, vedere [procedura: creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md) e [i parametri del modello](../ide/template-parameters.md).  
+ Quando viene creato un elemento da questo modello, il nome del file si baseranno sul nome utente specificato nella **Aggiungi nuovo elemento** nella finestra di dialogo. Ciò è utile durante la creazione di modelli di elementi a più file. Per altre informazioni, vedere [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md) e [i parametri del modello](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente vengono illustrati i metadati per il modello di elementi standard per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
@@ -112,4 +107,3 @@ Specifica un file che viene incluso nel modello di elemento.
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)   
  [Parametri di modelli](../ide/template-parameters.md)
-

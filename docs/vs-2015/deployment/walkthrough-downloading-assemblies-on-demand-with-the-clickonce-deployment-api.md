@@ -1,14 +1,9 @@
 ---
 title: "Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,18 @@ ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969324"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: download di assembly su richiesta con l'API della distribuzione ClickOnce
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione vengono scaricati alla prima esecuzione dell'applicazione. Tuttavia, è possibile parti dell'applicazione usati da un set ridotto di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura riportata di seguito viene illustrato come contrassegnare determinati assembly nell'applicazione come "facoltativi" e come scaricarli tramite le classi di <xref:System.Deployment.Application> dello spazio dei nomi quando richiesti da common language runtime (CLR).  
+Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione vengono scaricati alla prima esecuzione dell'applicazione. Tuttavia, è possibile parti dell'applicazione usati da un set ridotto di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime (CLR).  
   
 > [!NOTE]
 >  Per usare questa procedura, è necessario eseguire l'applicazione con attendibilità totale.  
@@ -108,7 +103,7 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce mediante MageUI.exe  
   
-1.  Usando MageUI.exe, creare un manifesto dell'applicazione come descritto in [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto dell'applicazione:  
+1.  Usando MageUI.exe, creare un manifesto dell'applicazione come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto dell'applicazione:  
   
     -   Nome del manifesto dell'applicazione `ClickOnceOnDemand`.  
   
@@ -116,7 +111,7 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
   
     -   Nel **file** pagina, nella riga ClickOnceLibrary. dll, digitare `ClickOnceLibrary.dll` nel **gruppo** colonna.  
   
-2.  Usando MageUI.exe, creare un manifesto di distribuzione come descritto in [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto di distribuzione:  
+2.  Usando MageUI.exe, creare un manifesto di distribuzione come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto di distribuzione:  
   
     -   Nome del manifesto di distribuzione `ClickOnceOnDemand`.  
   
@@ -132,10 +127,7 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  Quando viene visualizzato il modulo principale, premere l'oggetto <xref:System.Windows.Forms.Button>. Dovrebbe essere una stringa in una finestra di messaggio che legge "Hello, World!".  
+3.  Quando viene visualizzato il modulo principale, premere l'oggetto <xref:System.Windows.Forms.Button>. Verrà visualizzata una stringa in una finestra di messaggio con il testo "Hello, World!".  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-

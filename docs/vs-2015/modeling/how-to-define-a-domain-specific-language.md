@@ -1,12 +1,9 @@
 ---
 title: Come definire un linguaggio specifico di dominio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -20,20 +17,20 @@ ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b3c83ded60359bff2f84d35aec41eb387227022a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a03c8901eba94c7c96e200a38a6619ae7df3e70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969117"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.  
   
- Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [alcuna and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Se si ha familiarità con linguaggi specifici di dominio, è consigliabile usare la **Lab strumenti DSL**, che è possibile trovare in questo sito: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ##  <a name="templates"></a> Selezione di una soluzione di modello  
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:  
@@ -91,7 +88,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
    L'interfaccia utente ora è simile a quella nell'immagine seguente.  
   
-   ![finestra di progettazione DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![Finestra di progettazione DSL](../modeling/media/dsl-designer.png "dsl_designer")  
   
    Questa soluzione definisce un linguaggio specifico di dominio. Per altre informazioni, vedere [panoramica dell'interfaccia utente di Domain-Specific Language Tools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -173,9 +170,9 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 |Come viene visualizzato l'elemento|Classe padre (di incorporamento)|Esempio nel modello di soluzione DSL|  
 |------------------------------|--------------------------------|--------------------------------------|  
-|Forma in un diagramma.<br /><br /> Corsia.|Classe radice di DSL.|Linguaggio minimo.<br /><br /> Flusso attività: classe Actor.|  
-|Forma in una corsia.|Classe di dominio di elementi visualizzati come corsie.|Flusso attività: classe Task.|  
-|Elemento in un elenco in una forma, dove l'elemento viene eliminato se viene eliminato il contenitore.<br /><br /> Porta sul bordo di una forma.|Classe di dominio mappata alla forma contenitore.|Diagramma classi: classe Attribute.<br /><br /> Diagramma componenti: classe Port.|  
+|Forma in un diagramma.<br /><br /> Corsia.|Classe radice di DSL.|Linguaggio minimo.<br /><br /> Flusso attività: Classe Actor.|  
+|Forma in una corsia.|Classe di dominio di elementi visualizzati come corsie.|Flusso attività: Classe dell'attività.|  
+|Elemento in un elenco in una forma, dove l'elemento viene eliminato se viene eliminato il contenitore.<br /><br /> Porta sul bordo di una forma.|Classe di dominio mappata alla forma contenitore.|Diagramma classi: Classe di attributi.<br /><br /> Diagramma dei componenti: Classe porta.|  
 |Elemento in un elenco, non eliminato se viene eliminato il contenitore.|Classe radice di DSL.<br /><br /> L'elenco visualizza i collegamenti di riferimento.||  
 |Non visualizzato direttamente.|La classe di cui costituisce una parte.||  
   
@@ -191,7 +188,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 >  L'incorporamento è diverso dall'ereditarietà. I figli in una relazione di incorporamento non ereditano le funzionalità dai padri.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Aggiungere le proprietà di dominio a ogni classe di dominio  
- Nelle proprietà di dominio vengono archiviati i valori. Esempi: Nome, Titolo, Data di pubblicazione.  
+ Nelle proprietà di dominio vengono archiviati i valori. Esempi sono: Nome, titolo, data di pubblicazione.  
   
  Fare clic su **delle proprietà di dominio** nella classe, premere il tasto INVIO e quindi digitare il nome di una proprietà. Il tipo predefinito di una proprietà di dominio è String. Se si desidera modificare il tipo, selezionare la proprietà di dominio e impostare il **tipo** nel **proprietà** finestra. Se il tipo desiderato non è presente nell'elenco a discesa scegliere, vedere [aggiunta di tipi di proprietà](#addTypes).  
   
@@ -217,7 +214,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 ##### <a name="to-test-the-new-domain-classes"></a>Per testare le nuove classi di dominio  
   
-1.  **Fare clic su Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Fare clic su Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2.  **Compilare ed eseguire il linguaggio DSL.** Premere F5 o CTRL+F5 per eseguire una nuova istanza della [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità sperimentale. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire o creare un file con l'estensione di file del linguaggio DSL.  
   
@@ -413,10 +410,10 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
    Dopo aver testato un connettore, potrebbe essere necessario modificarne alcune proprietà e aggiungere alcune funzionalità avanzate. Per altre informazioni, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="compartments"></a> Definizione di forme che contengono elenchi: forme raggruppamento  
+##  <a name="compartments"></a> Definizione di forme che contengono elenchi: Forme raggruppamento  
  Una forma raggruppamento contiene uno o più elenchi di elementi. Ad esempio, in un linguaggio DSL di una raccolta musicale, è possibile usare forme raggruppamento per rappresentare gli album musicali. In ogni album c'è un elenco di brani.  
   
- ![Forma raggruppamento](../modeling/media/compartmentshape.png "CompartmentShape")  
+ ![Compartment Shape](../modeling/media/compartmentshape.png "CompartmentShape")  
   
  Il metodo più semplice per ottenere questo effetto in una definizione DSL è definire una classe di dominio per il contenitore e una classe di dominio per ogni elenco. La classe contenitore è mappata alla forma raggruppamento.  
   
@@ -609,7 +606,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
  Tenere quindi presente che, quando si cambiano alcune relazioni nella definizione DSL, non è insolito che vengano segnalati errori quando si salva la definizione o quando si trasformano tutti i modelli. La maggior parte di questi errori è facile da correggere. Fare doppio clic sul report errori per vedere la posizione dell'errore.  
   
- Vedere anche [procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
+ Vedere anche [Procedura: Modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
   
 ##  <a name="trouble"></a> Risoluzione dei problemi  
  La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estensibilità degli strumenti di visualizzazione](http://go.microsoft.com/fwlink/?LinkId=186074).  
@@ -622,13 +619,10 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 |È stata creata una classe di dominio, ma non è possibile creare le istanze nella finestra di esplorazione linguaggio.|Ogni classe di dominio, tranne quella radice, deve essere la destinazione di una relazione di incorporamento.|  
 |Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo.|Nella definizione DSL, selezionare una proprietà di dominio della classe e nelle proprietà della finestra, impostare **è nome elemento** su true.|  
 |Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic sull'elemento del progetto, fare clic su **Apri con** e selezionare _Linguaggioutente_**progettazione (impostazione predefinita)**.|  
-|La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly.|Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** per altre informazioni, vedere [procedura: modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
+|La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly.|Esaminare e aggiornare **DslPackage\GeneratedCode\Package.tt** per altre informazioni, vedere [come: Modificare il Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In Windows il menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], quindi **strumenti**, quindi fare clic su **Reimposta l'istanza Microsoft Visual Studio sperimentale**.<br />2.  Nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **compilare** menu, fare clic su **Ricompila soluzione**.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Introduzione ai linguaggi specifici di dominio](../modeling/getting-started-with-domain-specific-languages.md)   
  [Creazione di un linguaggio specifico di dominio di Windows basata su form](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Creazione di un linguaggio specifico di dominio basato su WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-
-

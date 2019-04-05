@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: specificare le impostazioni del Debugger | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare le impostazioni del Debugger | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,28 +22,28 @@ ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969731"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
+# <a name="how-to-specify-debugger-settings"></a>Procedura: Specificare le impostazioni del debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni nel **opzioni** nella finestra di dialogo.  
+In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni, utilizzare la finestra di dialogo **Opzioni**.  
   
 ### <a name="to-set-debugger-options"></a>Per impostare le opzioni del debugger  
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **le opzioni** finestra di dialogo, aprire il **debug** cartella.  
+2.  Nella finestra di dialogo **Opzioni** aprire la cartella **Debug**.  
   
-3.  Nel **debug** cartella, scegliere la categoria di opzioni desiderata.  
+3.  Nella cartella **Debug** scegliere la categoria di opzioni desiderata.  
   
-     Le opzioni più comuni si trovano nel **generale** categoria. Per altre informazioni, vedere [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
+     Le opzioni utilizzate più frequentemente si trovano nella categoria **Generale**. Per altre informazioni, vedere [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Selezionare o deselezionare l'opzione o le opzioni desiderate. Per visualizzare le informazioni della Guida sulle opzioni, premere F1  
   
@@ -57,6 +52,3 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è possibile configurare varie i
  [Modifica e continuazione, Debug, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Macro comuni per i comandi e le proprietà di compilazione](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
-
-
-

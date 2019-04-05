@@ -1,37 +1,32 @@
 ---
-title: 'Nuova generazione del progetto: Dietro le quinte, parte 2 | Microsoft Docs'
-ms.custom: ''
+title: 'Generazione nuovo progetto: Dietro le quinte, parte 2 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964457"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Generazione di un nuovo progetto: dietro le quinte, parte 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generazione nuovo progetto: Dietro le quinte, seconda parte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In [nuova generazione del progetto: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual c#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.  
+In [nuova generazione progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual c#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.  
   
 ## <a name="generating-the-solution-files"></a>Per generare i file di soluzione  
  Scelta di un modello di applicazione indirizza [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per decomprimere e aprire il file con estensione vstemplate corrispondente e per avviare un modello per interpretare i comandi XML in questo file. Questi comandi creano progetti ed elementi del progetto nella soluzione nuova o esistente.  
   
- Il modello decompresso il file di origine, denominato modelli di elementi, dalla stessa cartella con estensione zip che contiene il file con estensione vstemplate. Il modello consente di copiare questi file per il nuovo progetto di personalizzazione di conseguenza questi. Per una panoramica dei modelli di progetto ed elemento, vedere [NIB: modelli di Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Il modello decompresso il file di origine, denominato modelli di elementi, dalla stessa cartella con estensione zip che contiene il file con estensione vstemplate. Il modello consente di copiare questi file per il nuovo progetto di personalizzazione di conseguenza questi. Per una panoramica dei modelli di progetto ed elemento, vedere [NIB: Modelli di Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Sostituzione dei parametri di modello  
  Quando il modello copia un modello di elemento in un nuovo progetto, i parametri del modello viene sostituito con stringhe di personalizzare il file. Un parametro di modello è un token speciali che è preceduto o seguito da un segno di dollaro, ad esempio, $ $date.  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- È stata esaminata la \<TemplateData > sezione la [nuova generazione progetto: Under the Hood, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). I tag in questa sezione vengono usati per controllare l'aspetto del **nuovo progetto** nella finestra di dialogo.  
+ È stata esaminata la \<TemplateData > sezione la [nuova generazione progetto: Dietro le quinte, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). I tag in questa sezione vengono usati per controllare l'aspetto del **nuovo progetto** nella finestra di dialogo.  
   
  I tag nel \<TemplateContent > sezione controllo la generazione di nuovi progetti ed elementi del progetto. Di seguito è riportato il \<TemplateContent > sezione dal file nella cartella \Programmi\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip cswindowsapplication.vstemplate.  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Generazione di un nuovo progetto: dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Nuova generazione del progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

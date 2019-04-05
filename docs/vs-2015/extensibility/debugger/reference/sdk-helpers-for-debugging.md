@@ -1,14 +1,9 @@
 ---
 title: Helper SDK per eseguire il debug | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964493"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Impostare su diverso da zero per indicare il supporto per l'impostazione di punti di interruzione su modifiche dei dati.|  
 |metricDisassembly|Impostare su diverso da zero per indicare il supporto per la produzione di un elenco di disassemblaggio.|  
 |metricDumpWriting|Impostare su diverso da zero per indicare il supporto per dump la scrittura (il dump di memoria da un dispositivo di output).|  
-|metricENC|Impostare su zero per indicare il supporto per la modifica e continuazione. **Nota:** un motore di debug personalizzato non deve mai impostato in questo o deve sempre impostata su 0.|  
+|metricENC|Impostare su zero per indicare il supporto per la modifica e continuazione. **Nota:**  Un motore di debug personalizzato non deve mai impostato in questo o deve sempre impostata su 0.|  
 |metricExceptions|Impostare su diverso da zero per indicare il supporto per le eccezioni.|  
 |metricFunctionBP|Impostare su diverso da zero per indicare il supporto per i punti di interruzione denominati (i punti di interruzione che si interrompono quando viene chiamato un determinato nome di funzione).|  
 |metricHitCountBP|Impostare su diverso da zero per indicare il supporto per l'impostazione di punti di interruzione "Colpisci punto" (punti di interruzione che vengono attivati solo dopo che viene raggiunto un determinato numero di volte).|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Impostare questa opzione a diverso da zero per indicare che il provider di programma deve essere sempre caricato in locale.|  
 |metricEngineCanWatchProcess|Impostare questa opzione su diversi da zero per indicare che il motore di debug controllerà per elaborare gli eventi anziché il provider di programma.|  
 |metricRemoteDebugging|Impostare questa opzione su diversi da zero per indicare il supporto per il debug remoto.|  
-|metricEncUseNativeBuilder|Impostare questa opzione a diverso da zero per indicare che la modifica e continuazione Manager deve usare encbuild.dll del motore di debug per la compilazione per modifica e continuazione. **Nota:** un motore di debug personalizzato non deve mai impostato in questo o deve sempre impostata su 0.|  
+|metricEncUseNativeBuilder|Impostare questa opzione a diverso da zero per indicare che la modifica e continuazione Manager deve usare encbuild.dll del motore di debug per la compilazione per modifica e continuazione. **Nota:**  Un motore di debug personalizzato non deve mai impostato in questo o deve sempre impostata su 0.|  
 |metricLoadUnderWOW64|Impostare questa opzione su diversi da zero per indicare che il motore di debug deve essere caricato nel processo oggetto del debug in WOW durante il debug di un processo a 64 bit. in caso contrario, il motore di debug verrà caricato nel processo di Visual Studio (che è in esecuzione in WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Impostare questa opzione su diversi da zero per indicare che il provider di programma deve essere caricato nel processo oggetto del debug durante il debug di un processo a 64 bit in WOW; in caso contrario, verrà caricato nel processo di Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Impostare questa opzione su diversi da zero per indicare che il processo deve essere interrotta se attraverso i limiti di codice gestito e viene generata un'eccezione non gestita.|  
@@ -237,7 +232,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Impostare questa opzione su diversi da zero per visualizzare codice nonuser.|  
 |metricJustMyCodeStepping|Impostare questa opzione su diversi da zero per indicare che l'esecuzione di istruzioni può trovarsi solo nel codice utente.|  
 |metricCLSID|CLSID di un oggetto di un tipo specifico di metrica.|  
-|MetricName|Nome descrittivo per un oggetto di un tipo specifico di metrica.|  
+|metricName|Nome descrittivo per un oggetto di un tipo specifico di metrica.|  
 |metricLanguage|Nome della lingua.|  
   
 ## <a name="registry-locations"></a>Percorsi del Registro di sistema  
@@ -270,9 +265,9 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[chiave del Registro di sistema]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
 |*[root versione]*|La versione di Visual Studio (ad esempio, `7.0`, `7.1`, o `8.0`). Tuttavia, questa radice può essere modificata anche usando il **/rootsuffix** passa a **devenv.exe**. Per VSIP, questo modificatore viene in genere **Exp**, pertanto la radice di versione potrebbe essere, ad esempio, 8.0Exp.|  
-|*[metrica root]*|Si tratta `AD7Metrics` o `AD7Metrics(Debug)`, a seconda del fatto che viene utilizzata la versione di debug di dbgmetric.lib. **Nota:** dbgmetric.lib viene usato, o meno questa convenzione di denominazione debba essere rispettata nel caso di differenze tra debug e rilascio versioni che devono essere riflessa nel Registro di sistema.|  
+|*[metrica root]*|Si tratta `AD7Metrics` o `AD7Metrics(Debug)`, a seconda del fatto che viene utilizzata la versione di debug di dbgmetric.lib. **Nota:**  Se viene usato dbgmetric.lib, questa convenzione di denominazione debba essere rispettata nel caso di differenze tra debug e rilascio versioni che devono essere riflessa nel Registro di sistema.|  
 |*[tipo di metrica]*|Il tipo di metrica da scrivere: `Engine`, `ExpressionEvaluator`, `SymbolProvider`e così via. Questi sono tutti definiti come dbgmetric.h come `metricTypeXXXX`, dove `XXXX` è il nome del tipo specifico.|  
-|*[metrica]*|Il nome di una voce a cui assegnare un valore per impostare la metrica. L'organizzazione effettivo delle metriche dipende dal tipo delle metriche.|  
+|*[metric]*|Il nome di una voce a cui assegnare un valore per impostare la metrica. L'organizzazione effettivo delle metriche dipende dal tipo delle metriche.|  
 |*[valore della metrica]*|Il valore assegnato alla metrica. Il tipo che di valore deve essere (stringa), numero, e così via dipende la metrica.|  
   
 > [!NOTE]
@@ -406,13 +401,13 @@ HRESULT EnumMetricSections(
   
  *[tipi di eccezione]*\  
   
- *[eccezione]*\  
+ *[exception]*\  
   
  *[metrica] = [valore della metrica]*  
   
  *[metrica] = [valore della metrica]*  
   
- *[eccezione]*\  
+ *[exception]*\  
   
  *[metrica] = [valore della metrica]*  
   
@@ -422,15 +417,14 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[guid del motore di debug]*|Il GUID del motore di debug supporta le eccezioni.|  
 |*[tipi di eccezione]*|Un titolo generale per la sottochiave che identifica la classe di eccezioni che possono essere gestiti. Sono nomi tipici **eccezioni C++**, **eccezioni Win32**, **eccezioni Common Language Runtime**, e **dei controlli runtime nativi**. Questi nomi vengono usati anche per identificare una classe particolare di eccezione per l'utente.|  
-|*[eccezione]*|Un nome per un'eccezione: ad esempio, **com_error** oppure **CTRL + INTERR**. Questi nomi vengono usati anche per identificare una particolare eccezione all'utente.|  
+|*[exception]*|Un nome per un'eccezione: ad esempio, **com_error** oppure **CTRL + INTERR**. Questi nomi vengono usati anche per identificare una particolare eccezione all'utente.|  
   
 ## <a name="requirements"></a>Requisiti  
  Questi file si trovano nel [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] directory di installazione SDK (per impostazione predefinita *[unità]* \Programmi\Microsoft Visual Studio 2010 SDK\\).  
   
- Intestazione: includes\dbgmetric.h  
+ Header: includes\dbgmetric.h  
   
- Libreria: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-
