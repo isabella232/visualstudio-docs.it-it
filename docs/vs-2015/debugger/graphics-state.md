@@ -1,32 +1,27 @@
 ---
 title: Stato grafica | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963976"
 ---
 # <a name="graphics-state"></a>Stato grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La finestra Stato in Diagnostica della grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.  
+La finestra Stato in Diagnostica grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.  
   
 ## <a name="understanding-the-state-window"></a>Informazioni sulla finestra Stato  
  La finestra Stato raccoglie gli stati che influiscono sul rendering e li visualizza in modo gerarchico, in un'unica posizione. In base alla versione di Direct3D usata dall'app, le informazioni presentate nella finestra di stato potrebbero essere diverse.  
@@ -44,22 +39,22 @@ La finestra Stato in Diagnostica della grafica di Visual Studio consente di comp
   
 -   Nell'angolo superiore sinistro della finestra Stato, sotto la barra del titolo, scegliere il pulsante che corrisponde allo stile di visualizzazione da usare.  
   
-    -   **Mostra visualizzazione stato di input API**  
+    -   **Mostra la visualizzazione stato di input API**  
   
-    -   **Mostra visualizzazione stato logico**  
+    -   **Mostra la visualizzazione stato logico**  
   
-    -   **Mostra visualizzazione stato bloccato**  
+    -   **Mostra la visualizzazione stato bloccato**  
   
 > [!IMPORTANT]
->  È necessario bloccare lo stato nel **API Mostra lo stato di input** o **stato logico** visualizzazioni per poterlo visualizzare nel **aggiunti Mostra visualizzazione stato**.  
+>  È necessario bloccare lo stato nelle visualizzazioni **Stato di input API** o **Stato logico** perché sia mostrato nella **Visualizzazione stato bloccato**.  
   
 ### <a name="state-table-format"></a>Formato della tabella di stato  
  La finestra Stato contiene diverse colonne di informazioni.  
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> Nel **visualizzazione dello stato di input dell'API** e **visualizzazione stato logico** indicato, i nomi sono rientrati per mostrare la relazione gerarchica tra stati.<br /><br /> Nel **visualizzazione stato bloccato** state, vengono visualizzati i nomi completi in un elenco semplice.|  
-|Valore|Valore dell'elemento di stato.|  
+|Nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|  
+|Value|Valore dell'elemento di stato.|  
 |Tipo|Tipo dell'elemento di stato.|  
   
 ### <a name="changed-state"></a>Stato modificato  
@@ -77,6 +72,3 @@ La finestra Stato in Diagnostica della grafica di Visual Studio consente di comp
 2.  Posizionare il cursore sullo stato a cui si è interessati. A sinistra dell'elemento di stato viene visualizzata un'icona Blocca.  
   
 3.  Scegliere l'icona Blocca per bloccare l'elemento di stato sul posto.
-
-
-

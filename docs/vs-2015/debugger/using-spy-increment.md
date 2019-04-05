@@ -1,27 +1,22 @@
 ---
 title: Utilizzo di Spy + + | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 205c99d4278c1421a98373f22374add81d0f9ac7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955743"
 ---
 # <a name="using-spy"></a>Utilizzo di Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Spy + + (SPYXX. Con estensione EXE) è un'utilità basata su Win32 che ti offre 
  [Procedura: Aggiornare la visualizzazione](../debugger/how-to-refresh-the-view.md)  
  Viene descritto il comando di aggiornamento.  
   
- [Procedura: Modificare i tipi di carattere](../debugger/how-to-change-fonts.md)  
+ [Procedura: Modificare i caratteri](../debugger/how-to-change-fonts.md)  
  Viene illustrato come modificare la modalità di che visualizzazione di una vista.  
   
  [Procedura: Espandere e comprimere alberi di Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
@@ -56,6 +51,3 @@ Spy + + (SPYXX. Con estensione EXE) è un'utilità basata su Win32 che ti offre 
   
  [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
  Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
-
-
-

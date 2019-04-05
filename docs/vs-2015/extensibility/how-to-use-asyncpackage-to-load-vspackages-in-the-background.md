@@ -1,22 +1,18 @@
 ---
-title: 'Procedura: usare AsyncPackage per caricare pacchetti VSPackage in Background | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare AsyncPackage per caricare pacchetti VSPackage in Background | Microsoft Docs'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: d5bc0c22ff0a29984e59c30db6dc2b391bf007e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965695"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procedura: usare AsyncPackage per caricare pacchetti VSPackage in Background
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procedura: Usare AsyncPackage per caricare pacchetti VSPackage in background
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il caricamento e l'inizializzazione di un pacchetto di Visual Studio può comportare i/o disco. Se questo tipo i/o si verifica nel thread UI, può causare problemi di velocità di risposta. Per risolvere questo problema, Visual Studio 2015 è stato introdotto il <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe che consente il caricamento del pacchetto in un thread in background.  
@@ -51,7 +47,7 @@ Il caricamento e l'inizializzazione di un pacchetto di Visual Studio può compor
   
 4. Se si devono di operazioni di inizializzazione asincrona da eseguire, è necessario eseguire l'override <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Rimuovere il **Initialize ()** metodo fornito dal modello di progetto VSIX. (Il **Initialize ()** metodo nella **AsyncPackage** è sealed). È possibile usare uno qualsiasi del <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> metodi per aggiungere servizi asincroni per il pacchetto.  
   
-    Nota: Per chiamare **base. InitializeAsync()**, è possibile modificare il codice sorgente per:  
+    NOTA: Per chiamare **base. InitializeAsync()**, è possibile modificare il codice sorgente per:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
@@ -59,7 +55,7 @@ Il caricamento e l'inizializzazione di un pacchetto di Visual Studio può compor
   
 5. È necessario prestare attenzione a non effettuare le chiamate RPC (rimuovere Procedure Call) dal proprio codice di inizializzazione asincrona (in **InitializeAsync**). Questi possono verificarsi quando si chiama <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> direttamente o indirettamente.  Quando carichi sync sono necessarie, il thread dell'interfaccia utente verrà bloccato tramite <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. Il modello di blocco predefinita disabilita chiamate RPC. Ciò significa che se si prova a usare una chiamata RPC dalle attività asincrone, verrà generato un deadlock se il thread dell'interfaccia utente è a sua volta il pacchetto da caricare in attesa. L'alternativa generale consiste nell'effettuare il marshalling del codice per il thread dell'interfaccia utente, se necessario usando uno strumento come **Factory delle attività Joinable**del <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> o un altro meccanismo che non usa una chiamata RPC.  Non utilizzare **ThreadHelper.Generic.Invoke** o in genere blocca il thread chiamante in attesa di ottenere al thread dell'interfaccia utente.  
   
-    Nota: È consigliabile evitare di usare **GetService** oppure **QueryService** nel **InitializeAsync** (metodo). Se si dispone di usarli, è necessario passare al thread dell'interfaccia utente prima di tutto. L'alternativa consiste nell'usare <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> dalle **AsyncPackage** (eseguendo il cast a <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    NOTA: È consigliabile evitare di usare **GetService** oppure **QueryService** nel **InitializeAsync** (metodo). Se si dispone di usarli, è necessario passare al thread dell'interfaccia utente prima di tutto. L'alternativa consiste nell'usare <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> dalle **AsyncPackage** (eseguendo il cast a <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
   
    C#: Creare un AsyncPackage:  
   
@@ -81,7 +77,7 @@ public sealed class TestPackage : AsyncPackage
   
 1.  Ricordarsi di rimuovere il **inizializzare** override nel pacchetto.  
   
-2.  Evitare i deadlock: possono essere nascosti RPC nel codice che si verificano in un thread in background. È necessario assicurarsi che se si effettua una chiamata RPC (ad esempio **GetService**), è necessario uno (1) passare al thread principale o (2) usare la versione dell'API in presenza di una asincrona esiste (ad esempio **GetServiceAsync**).  
+2.  Evitare i deadlock: Possono essere nascosti RPC nel codice che si verificano in un thread in background. È necessario assicurarsi che se si effettua una chiamata RPC (ad esempio **GetService**), è necessario uno (1) passare al thread principale o (2) usare la versione dell'API in presenza di una asincrona esiste (ad esempio **GetServiceAsync**).  
   
 3.  Non passare tra i thread troppo frequentemente. Provare a localizzare il lavoro che può essere eseguita in un thread in background. In questo modo si riduce il tempo di caricamento.  
   
@@ -107,4 +103,3 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
-

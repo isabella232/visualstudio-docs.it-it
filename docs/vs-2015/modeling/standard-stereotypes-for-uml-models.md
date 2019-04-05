@@ -1,12 +1,9 @@
 ---
 title: Stereotipi standard per modelli UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965475"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Stereotipi standard per modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,13 +90,13 @@ ms.locfileid: "51763235"
 |eseguibile|Elemento|«file» eseguibile.|  
 |file|Elemento|File fisico.|  
 |stato attivo|Classe|Classe che definisce la logica di business principale, supportata da diverse classi «auxiliary».|  
-|framework|Package|Questo pacchetto definisce uno schema progettuale riutilizzabile.|  
+|framework|Pacchetto|Questo pacchetto definisce uno schema progettuale riutilizzabile.|  
 |implementa|Componente|Implementazione di uno stereotipo «specification».|  
 |implementationClass|Classe|La classe descrive un'implementazione e ogni istanza di runtime dispone di una classe di implementazione fissa. Si differenzia da «type».|  
 |crea istanza|Dipendenza|Il client crea le istanze del fornitore.|  
 |libreria|Elemento|«file» di libreria.|  
 |metaclass|Classe|Anche le istanze di questa classe sono classi.|  
-|modelLibrary|Package|Contiene gli elementi del modello che devono essere riutilizzati dai pacchetti da importare. In genere è definito come parte di un profilo e importato automaticamente dall'applicazione del profilo.|  
+|modelLibrary|Pacchetto|Contiene gli elementi del modello che devono essere riutilizzati dai pacchetti da importare. In genere è definito come parte di un profilo e importato automaticamente dall'applicazione del profilo.|  
 |processo|Componente|Componente basato sulle transazioni o che contiene un thread.|  
 |realizzazione|Classe, interfaccia, componente|Descrive un'implementazione.|  
 |rifinisci|Dipendenza|La classe, il componente o il pacchetto client offre più informazioni del fornitore sulla specifica o sulla progettazione.|  
@@ -108,7 +105,7 @@ ms.locfileid: "51763235"
 |invia|Dipendenza|L'operazione di origine invia il segnale di destinazione.|  
 |servizio|Componente|Componente senza stato.|  
 |origine|Elemento|«file» compilabile.|  
-|specificazione|Classe, interfaccia, componente|Definisce il comportamento di un componente o di un oggetto senza definire come funziona internamente.|  
+|specification|Classe, interfaccia, componente|Definisce il comportamento di un componente o di un oggetto senza definire come funziona internamente.|  
 |sottosistema|Componente|Parte di un sistema di grandi dimensioni. Un sottosistema in un diagramma caso di utilizzo è un componente con lo stereotipo subsystem.|  
 |traccia|Dipendenza|L'elemento client fa parte della progettazione che realizza il fornitore. Le due estremità di questa dipendenza sono in genere in modelli diversi. Uno di questi modelli è una realizzazione dell'altro.|  
 |tipo|Classe|Specifica il comportamento di un oggetto senza indicare come viene implementato. Un oggetto è un membro di un tipo se è conforme alla specifica.|  
@@ -145,6 +142,3 @@ ms.locfileid: "51763235"
  [Aggiungere stereotipi a elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

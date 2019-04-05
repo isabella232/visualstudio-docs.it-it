@@ -1,12 +1,9 @@
 ---
 title: Visualizzare i dati correlati nelle applicazioni WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58963979"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>Visualizzare i dati correlati nelle applicazioni WPF
+# <a name="display-related-data-in-wpf-applications"></a>Visualizzare dati correlati in applicazioni WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -42,9 +39,9 @@ In alcune applicazioni, si potrebbe voler usare dati provenienti da più tabelle
   
 ## <a name="to-create-controls-that-display-related-records"></a>Per creare controlli che consentono di visualizzare i record correlati  
   
-1.  Nel **dati** menu, fare clic su **Mostra origini dati** per aprire il **Zdroje dat** finestra.  
+1.  Scegliere **Mostra origini dati** dal menu **Dati** per aprire la finestra **Origini dati**.  
   
-2.  Fare clic su **Aggiungi nuova origine dati**e completare la **configurazione dell'origine dati** procedura guidata.  
+2.  Fare clic su **Aggiungi nuova origine dati** e completare la **Configurazione guidata origine dati**.  
   
 3.  Aprire la finestra di progettazione WPF e assicurarsi che la finestra di progettazione contiene un contenitore che è un obiettivo di rilascio validi per gli elementi di **Zdroje dat** finestra.  
   
@@ -70,5 +67,4 @@ In alcune applicazioni, si potrebbe voler usare dati provenienti da più tabelle
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Creare tabelle di ricerca nelle applicazioni WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

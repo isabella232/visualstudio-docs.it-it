@@ -1,26 +1,21 @@
 ---
 title: Plug-in del controllo di origine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967009"
 ---
 # <a name="source-control-plug-ins"></a>Plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,11 @@ La sezione di riferimento SDK dei plug-in controllo di origine contiene la speci
  [Glossario](../extensibility/source-control-plug-in-glossary.md)  
  Fornisce utili termini e le relative definizioni per leggere la documentazione del SDK dei plug-in controllo di origine.  
   
- [Procedura: Disabilitare gli avvisi di compatibilità per i plug-in del controllo del codice sorgente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Procedura: Disattivare gli avvisi di compatibilità per Plug-in controllo codice sorgente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Viene descritto come disabilitare gli avvisi.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Esempio di plug-in del controllo di origine](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Esempio di plug-in del controllo di origine](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Fornisce un esempio di plug-in del controllo del codice sorgente.  
   
  [Guida per il test dei plug-in del controllo del codice sorgente](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
@@ -76,4 +71,3 @@ La sezione di riferimento SDK dei plug-in controllo di origine contiene la speci
   
  [Riferimenti su Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
  Visualizza un elenco di argomenti di riferimento.
-

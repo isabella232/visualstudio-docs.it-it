@@ -1,27 +1,22 @@
 ---
-title: 'Procedura dettagliata: Cattura delle informazioni grafica | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Acquisizione di informazioni grafiche | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2f419e80cec27807ba3bd7ac98f7fb7108a49377
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802135"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966189"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: cattura delle informazioni grafica
+# <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per acquisire manualmente informazioni grafiche da un'app Direct3D.  
@@ -55,7 +50,7 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
   
 - Scegliere **Acquisisci** sulla barra degli strumenti Diagnostica grafica. ![Icona pulsante acquisizione grafica](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-   oppure  
+   -oppure-  
   
    Con lo stato attivo nell'app premere **STAMP**.  
   
@@ -68,6 +63,3 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
   
 ## <a name="see-also"></a>Vedere anche  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
-
-
-

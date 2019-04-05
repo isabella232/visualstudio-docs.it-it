@@ -1,27 +1,22 @@
 ---
 title: Funzioni di callback implementate dall'IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d2bf114a22419e5ed4621db52a68d266e2e7d0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: df2daef11303e85d5fe2d0bf33e3df038081db64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965513"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funzioni di callback implementate dall'IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ Per semplificare l'integrazione con l'ambiente di sviluppo integrato (IDE) come 
   
  [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)  
  Descrive il contenuto della sezione di riferimento del SDK dei plug-in controllo di origine.
-

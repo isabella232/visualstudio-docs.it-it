@@ -1,27 +1,22 @@
 ---
 title: Pacchetti VSPackage e Framework di pacchetto gestito | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework
 - VSPackages, managed package framework
 - managed VSPackages, managed package framework
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f8d5da0d246cb6b0faa8b424f8039697686cd2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966365"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>Pacchetti VSPackage e framework del pacchetto gestito
 È possibile ridurre i tempi di sviluppo mediante la creazione di un pacchetto VSPackage con il pacchetto gestito classi di framework (MPF) anziché tramite le classi di interoperabilità COM.  
@@ -30,7 +25,7 @@ ms.locfileid: "49227981"
   
 -   Usare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il modello di progetto di pacchetto  
   
-     Per altre informazioni, vedere [procedura dettagliata: creazione di un comando di Menu da usando il modello di pacchetto di Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Per altre informazioni, vedere [Procedura dettagliata: Creazione di un comando di Menu tramite il modello di pacchetto di Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 -   Compilare il pacchetto VSPackage senza il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il modello di progetto di pacchetto  
   
@@ -41,7 +36,7 @@ ms.locfileid: "49227981"
  Vengono descritti e vengono elencati gli spazi dei nomi di classe MPF e file DLL.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Procedura dettagliata: Creazione di un comando di Menu usando il modello di pacchetto di Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [Procedura dettagliata: Creazione di un comando di Menu tramite il modello di pacchetto di Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Viene illustrato come creare un pacchetto VSPackage gestito.  
   
  [VSPackage gestiti](../misc/managed-vspackages.md)  

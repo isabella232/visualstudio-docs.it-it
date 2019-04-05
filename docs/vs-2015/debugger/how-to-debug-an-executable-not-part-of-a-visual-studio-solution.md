@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: eseguire il Debug di un eseguibile non incluso in una soluzione di Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966470"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedura: eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedura: Eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Talvolta può essere necessario eseguire il debug di un file eseguibile non incluso in un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ossia di un eseguibile creato all'esterno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ricevuto da un altro sviluppatore.  
@@ -73,7 +68,4 @@ Talvolta può essere necessario eseguire il debug di un file eseguibile non incl
 ## <a name="see-also"></a>Vedere anche  
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [DBG (file)](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [DBG (file)](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

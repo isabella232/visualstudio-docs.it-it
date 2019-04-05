@@ -1,25 +1,22 @@
 ---
 title: Personalizzazione ed estensione di un linguaggio specifico di dominio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965103"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,13 +59,13 @@ Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in co
 |Mantenere il layout di forme e appaiono sulla copia e trascinare.|Aggiungere le forme e connettori per l'insieme copiato `ElementGroupPrototype`. È il metodo più semplice per eseguire l'override `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Visualizzare [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|  
 |Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.|Eseguire l'override `ClipboardCommandSet.ProcessOnCopy()` usare la versione del percorso specifica `ElementOperations.Merge().` vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|  
 |Creare collegamenti aggiuntivi quando si incolla|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Abilitare il trascinamento e rilascio da questo grafico, altre soluzioni DSL o UML Windows elementi e diagrammi|Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Abilitare il trascinamento e rilascio da questo grafico, altre soluzioni DSL o UML Windows elementi e diagrammi|Vedere [How to: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Consentire una forma o dello strumento è possibile trascinare una forma figlio, ad esempio una porta, come se si sono stato trascinato l'elemento padre.|Definire una direttiva di unione elementi nella classe di oggetto di destinazione, per inoltrare l'oggetto rilasciato per l'elemento padre. Visualizzare [personalizzazione di spostamento e la creazione dell'elemento](../modeling/customizing-element-creation-and-movement.md).|  
 |Consentire una forma o lo strumento è possibile trascinare una forma e collegamenti aggiuntivi o gli oggetti creati. Ad esempio, per consentire a trascinare un elemento a cui è possibile collegare un commento.|Definire una direttiva di unione elementi nella classe di dominio di destinazione e i collegamenti da generare. In scenari complessi, è possibile aggiungere codice personalizzato. Visualizzare [personalizzazione di spostamento e la creazione dell'elemento](../modeling/customizing-element-creation-and-movement.md).|  
 |Creare un gruppo di elementi con uno degli strumenti. Ad esempio, un componente con un set fisso di porte.|Eseguire l'override del metodo di inizializzazione della casella degli strumenti in ToolboxHelper.cs. Creare un prototipo di gruppo elemento (EGP) che contiene gli elementi e i relativi collegamenti di relazione. Visualizzare [personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Includere le forme dell'entità e la porte in EGP oppure definire BoundsRules per posizionare le forme porta quando viene creata un'istanza di EGP. Visualizzare [(BoundsRules) vincolano posizione e dimensione](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Usare uno strumento di connessione per creare un'istanza di diversi tipi di relazione.|Aggiungere direttive di connessione collegamento (LCD) per il generatore di connessione che viene richiamato dallo strumento. Il monitor LCD a determinare il tipo della relazione tra i tipi dei due elementi. Per semplificare questa dipendono gli stati degli elementi, è possibile aggiungere codice personalizzato. Visualizzare [personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Strumenti permanenti: l'utente può fare doppio clic su qualsiasi strumento per creare molte forme o connettori in successione.|In Esplora DSL, selezionare il `Editor` nodo. Nella finestra Proprietà impostare **Usa permanenti gli elementi della casella degli strumenti**.|  
-|Definire i comandi di menu|Vedere [procedura: modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Definire i comandi di menu|Vedere [How to: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Vincolare il modello con le regole di convalida|Vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)|  
 |Generare codice, i file di configurazione o documenti da un linguaggio DSL.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Personalizzare la modalità con cui i modelli vengono salvati in file.|Vedere [personalizzazione dell'archiviazione di File e serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in co
  [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-
