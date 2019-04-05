@@ -1,25 +1,20 @@
 ---
 title: Debugger Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a49df0f355672a3e49a61c0cfe51c02ba96e4be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969167"
 ---
 # <a name="debugger-windows"></a>Finestre del debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ ms.locfileid: "51727139"
 |Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|  
 |Espressioni di controllo|CTRL+ALT+W, (1, 2, 3, 4)|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|  
 |Controllo immediato|MAIUSC+F9|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|CTRL+ALT+V, A|[Variabile Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Variabili locali|CTRL+ALT+V, L|[Variabile Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|CTRL+ALT+V, A|[Finestra delle variabili](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Variabili locali|CTRL+ALT+V, L|[Finestra delle variabili](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Controllo immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|  
 |Debug interattivo di Python|MAIUSC+ALT+I|[Introduzione a PTVS: Python interattivo](../python/getting-started-with-ptvs-interactive-python.md)|  
-|Console JavaScript|CTRL+ALT+V, C|[Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
+|Console JavaScript|CTRL+ALT+V, C|[Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|  
 |Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|  
@@ -56,8 +51,3 @@ ms.locfileid: "51727139"
   
 ## <a name="see-also"></a>Vedere anche  
  [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
-
-
-
-
-

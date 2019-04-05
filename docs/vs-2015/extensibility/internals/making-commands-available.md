@@ -1,14 +1,9 @@
 ---
 title: Rendere disponibili i comandi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969119"
 ---
 # <a name="making-commands-available"></a>Miglioramento della disponibilità dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -156,4 +151,3 @@ Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Routing dei comandi nei pacchetti VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Aggiunta dinamica di voci di menu](../../extensibility/dynamically-adding-menu-items.md)
-

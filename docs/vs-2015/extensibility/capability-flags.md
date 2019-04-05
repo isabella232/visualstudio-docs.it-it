@@ -1,33 +1,28 @@
 ---
 title: I flag funzionalità | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fd526abb5580b6eb3899df9ee76baacd91e56d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970087"
 ---
 # <a name="capability-flags"></a>Flag di funzionalità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il SCC_CAP_*xxx* flag sono flag di bit utilizzato per indicare le funzionalità di un plug-in del controllo del codice sorgente. Il SCC_EXCAP_*xxx* flag sono incrementali flag che indicano le funzionalità estese e risolvibili in valori integer.  
   
-|Codice di funzionalità|Valore|Descrizione|  
+|Codice di funzionalità|Value|Descrizione|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|Supporta il [SccRemove](../extensibility/sccremove-function.md) e comando.|  
 |`SCC_CAP_RENAME`|0x00000002L|Supporta il [SccRename](../extensibility/sccrename-function.md) e comando.|  
@@ -57,7 +52,7 @@ Il SCC_CAP_*xxx* flag sono flag di bit utilizzato per indicare le funzionalità 
   
 ## <a name="capability-bits-added-in-version-12"></a>Funzionalità Bits aggiunto nella versione 1.2  
   
-|Codice di funzionalità|Valore|Descrizione|  
+|Codice di funzionalità|Value|Descrizione|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Supporta il [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Supporta il [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
@@ -70,7 +65,7 @@ Il SCC_CAP_*xxx* flag sono flag di bit utilizzato per indicare le funzionalità 
 ## <a name="capability-bits-added-in-version-13"></a>Funzionalità Bits aggiunto nella versione 1.3  
  Questi flag vengono passati uno alla volta per il [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) funzione per determinare se la funzionalità è supportata.  
   
-|Codice funzionalità estesa|Valore|Descrizione|  
+|Codice funzionalità estesa|Value|Descrizione|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Supporta il `SCC_CHECKOUT_LOCALVER` opzione per le estrazioni.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Supporta il [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  
@@ -86,4 +81,3 @@ Il SCC_CAP_*xxx* flag sono flag di bit utilizzato per indicare le funzionalità 
   
 ## <a name="see-also"></a>Vedere anche  
  [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
-

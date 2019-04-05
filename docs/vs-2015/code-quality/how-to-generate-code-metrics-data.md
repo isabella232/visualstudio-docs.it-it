@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: generare dati di metrica codice | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Generare dati di metrica codice | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code metrics results, generate
 - code metrics results
@@ -17,15 +12,15 @@ ms.assetid: 7bd2c906-ee9c-484a-9550-4cddecc8f042
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e2b09b81f6b5197c8edd0a501395199f4b57ec9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965173"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica codice
+# <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile decidere di generare risultati metrica codice per un'intera soluzione o un progetto selezionato.  
@@ -66,6 +61,3 @@ ms.locfileid: "51759063"
   
 ## <a name="see-also"></a>Vedere anche  
  [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

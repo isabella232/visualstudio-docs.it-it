@@ -1,11 +1,8 @@
 ---
-title: 'Procedura: aggiungere un nuovo elemento a un progetto di flusso di lavoro (Legacy) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere un nuovo elemento a un progetto di flusso di lavoro (Legacy) | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
@@ -16,20 +13,20 @@ ms.assetid: 130cd83d-942d-437b-bbb5-8088ec0a6d79
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 26be9519a4f9ee496ea36a61debffec7f96ffbe5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954292"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro [legacy]
+# <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procedura: Aggiungere un nuovo elemento a un progetto flusso di lavoro (legacy)
 Dopo avere creato un progetto flusso di lavoro usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] che si riferisce a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile aggiungere elementi [!INCLUDE[wf](../includes/wf-md.md)] e altri elementi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comuni al progetto.  
   
  Nella tabella seguente sono elencati gli elementi [!INCLUDE[wf2](../includes/wf2-md.md)] che è possibile aggiungere a un progetto flusso di lavoro.  
   
-|Item|Descrizione|  
+|Elemento|Descrizione|  
 |----------|-----------------|  
 |Attività|Attività con definizione di attività in un file di codice della finestra di progettazione e codice utente in un file di codice separato.|  
 |Attività (con separazione del codice)|Definizione di attività espressa come markup del flusso di lavoro e codice utente in un file di codice separato.|  
