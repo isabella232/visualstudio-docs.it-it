@@ -6,13 +6,13 @@ author: ghogen
 ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
-manager: douge
-ms.openlocfilehash: 425b07127fdd65d7caaa1fd4f2c82b1087f5e299
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307021"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58970401"
 ---
 > [!Note]
-> Questo articolo si applica a Visual Studio 2015. Se si sta cercando la documentazione di Visual Studio 2017, usare il selettore di versione in alto a sinistra. È consigliabile eseguire l'aggiornamento a Visual Studio 2017. [Scaricarlo qui](https://www.visualstudio.com/downloads?utm_source=web&utm_medium=documentation&utm_campaign=vs2017upgrade&utm_term=vs2017).
+> Questo articolo si applica a Visual Studio 2015. Se si sta cercando la documentazione più recente di Visual Studio, usare il selettore di versione in alto a sinistra. È consigliabile eseguire l'aggiornamento a Visual Studio 2019. [Scaricarlo qui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)

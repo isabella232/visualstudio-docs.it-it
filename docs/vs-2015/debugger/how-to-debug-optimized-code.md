@@ -1,14 +1,9 @@
 ---
 title: 'Procedura: Debug di codice ottimizzato | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,24 +22,24 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968540"
 ---
-# <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
+# <a name="how-to-debug-optimized-code"></a>Procedura: Eseguire il debug di codice ottimizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  Il [/Zo (ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)l'opzione del compilatore (introdotta in Visual Studio Update 3) genera informazioni di debug più complete per il codice ottimizzato (progetti non compilati con la **/Od** opzione del compilatore. Visualizzare [Opzioni /O (Ottimizza codice)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Questo include un supporto migliorato per il debug delle variabili locali e delle funzioni inline.  
+>  L'opzione del compilatore [/Zo (Ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introdotta in Visual Studio Update 3) genera informazioni più complete sul debug per il codice ottimizzato (progetti non compilati con l'opzione del compilatore **/Od**). Vedere [Opzioni /O (Ottimizza codice)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d). Questo include un supporto migliorato per il debug delle variabili locali e delle funzioni inline.  
 >   
->  [Modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md) è disabilitata quando il **/Zo** viene usata l'opzione.  
+>  [Modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md) è disabilitato quando viene usata l'opzione del compilatore **/Zo**.  
   
  Quando il compilatore ottimizza il codice, modifica la posizione e l'organizzazione delle istruzioni. IL risultato è un codice compilato più efficace. A causa di questa ridisposizione, il debugger non è sempre in grado di identificare il codice sorgente corrispondente a un set di istruzioni.  
   
@@ -66,40 +61,37 @@ NOTA]
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Per attivare l'ottimizzazione nella configurazione di una build di debug  
   
-1. Quando si crea un nuovo progetto, selezionare la destinazione `Win32 Debug`. Usare la `Win32``Debug` di destinazione fino a quando non viene completato il debug del programma e si è pronti per compilare un `Win32 Release` destinazione. Il compilatore non ottimizza la destinazione `Win32 Debug`.  
+1. Quando si crea un nuovo progetto, selezionare la destinazione `Win32 Debug`. Usare la destinazione `Win32``Debug` finché non viene completato il debug del programma e non si è pronti a compilare una destinazione `Win32 Release`. Il compilatore non ottimizza la destinazione `Win32 Debug`.  
   
 2. Selezionare il progetto in Esplora soluzioni.  
   
-3. Nel **View** menu, fare clic su **pagine delle proprietà**.  
+3. Scegliere **Pagine delle proprietà** dal menu **Visualizza**.  
   
-4. Nel **pagine delle proprietà** finestra di dialogo, assicurarsi `Debug` sia selezionato nel **configurazione** elenco a discesa.  
+4. Nella finestra di dialogo **Pagine delle proprietà** verificare che sia selezionata la voce `Debug` nell'elenco a discesa **Configurazione**.  
   
-5. Nella visualizzazione di cartelle a sinistra, selezionare la **C/C++** cartella.  
+5. Nella struttura di cartelle visualizzata a sinistra selezionare la cartella **C/C++**.  
   
-6. Sotto il **C++** cartella, selezionare `Optimization`.  
+6. Nella cartella **C++** selezionare `Optimization`.  
   
-7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a esso probabilmente afferma `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Scegliere una delle altre opzioni (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, o `Custom`).  
+7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a tale opzione sarà probabilmente `Disabled (`[/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Scegliere una delle altre opzioni (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` o `Custom`).  
   
 8. Se si è scelto l'opzione `Custom` per `Optimization`, a questo punto è possibile impostare le opzioni per le altre proprietà presenti nell'elenco.  
   
-9. Selezionare la proprietà di configurazione, C/C++, il nodo della riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` per il **opzioni aggiuntive** casella di testo.  
+9. Selezionare le proprietà di configurazione, C/C++, il nodo della riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` per il **opzioni aggiuntive** casella di testo.  
   
     > [!WARNING]
     >  `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.  
     >   
-    >  Aggiunta `/Zo` disabiliterà [modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md).  
+    >  L'aggiunta di `/Zo` disabilita [Modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md).  
   
-   Quando si esegue il debug di codice ottimizzato, usare il **Disassembly** finestra per visualizzare le istruzioni che vengono effettivamente create ed eseguite. Nell'impostazione di punti di interruzione, è necessario sapere che un punto di interruzione può essere spostato insieme a un'istruzione. Si consideri il codice di esempio seguente:  
+   Quando si esegue il debug di codice ottimizzato, controllare nella finestra **Disassembly** quali istruzioni vengono effettivamente create ed eseguite. Nell'impostazione di punti di interruzione, è necessario sapere che un punto di interruzione può essere spostato insieme a un'istruzione. Si consideri il codice di esempio seguente:  
   
 ```  
 for (x=0; x<10; x++)  
 ```  
   
- Si supponga di impostare un punto di interruzione in questa riga. Ci si aspetterebbe che il punto di interruzione venga raggiunto 10 volte, ma se il codice è ottimizzato, il punto di interruzione verrà raggiunto solo una volta. Ciò è dovuto al fatto che la prima istruzione imposta il valore di `x` su 0. Il compilatore riconosce che questa operazione deve essere eseguita solo una volta ed esce dal ciclo. Il punto di interruzione si sposta con essa. Le istruzioni che confrontano e incrementano `x` rimangono all'interno del ciclo. Quando si visualizza il **Disassembly** finestra, il [unità incremento](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) viene impostata automaticamente su istruzione per un maggiore controllo, che risulta utile se si esegue il codice ottimizzato.  
+ Si supponga di impostare un punto di interruzione in questa riga. Ci si aspetterebbe che il punto di interruzione venga raggiunto 10 volte, ma se il codice è ottimizzato, il punto di interruzione verrà raggiunto solo una volta. Ciò è dovuto al fatto che la prima istruzione imposta il valore di `x` su 0. Il compilatore riconosce che questa operazione deve essere eseguita solo una volta ed esce dal ciclo. Il punto di interruzione si sposta con essa. Le istruzioni che confrontano e incrementano `x` rimangono all'interno del ciclo. Quando si visualizza la finestra **Disassembly**, l'[unità di esecuzione](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) viene impostata automaticamente su Istruzione per consentire un maggiore controllo, utile se si esegue il codice un'istruzione alla volta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug del codice nativo](../debugger/debugging-native-code.md)
-
-
-

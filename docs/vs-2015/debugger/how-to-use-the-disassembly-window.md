@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: utilizzare la finestra Disassembly | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Utilizzare la finestra Disassembly | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,22 +24,22 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970126"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Procedura: utilizzare la finestra Disassembly
+# <a name="how-to-use-the-disassembly-window"></a>Procedura: Utilizzare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo il **le opzioni** della finestra di dialogo **debug** nodo. Non è invece disponibile per il debug di script o SQL.  
   
- Il **Disassembly** finestra Mostra il codice assembly corrispondente alle istruzioni create dal compilatore. Se si sta eseguendo il debug di codice gestito, tali istruzioni in linguaggio assembly corrispondono al codice nativo creato dal compilatore JIT (Just-In-Time), non al linguaggio MSIL (Microsoft Intermediate Language) generato dal compilatore di Visual Studio.  
+ Nella finestra **Disassembly** viene visualizzato il codice assembly corrispondente alle istruzioni create dal compilatore. Se si sta eseguendo il debug di codice gestito, tali istruzioni in linguaggio assembly corrispondono al codice nativo creato dal compilatore JIT (Just-In-Time), non al linguaggio MSIL (Microsoft Intermediate Language) generato dal compilatore di Visual Studio.  
   
- Oltre alle istruzioni dell'assembly, il **Disassembly** finestra è possibile visualizzare le informazioni facoltative seguenti:  
+ Oltre alle istruzioni in linguaggio assembly, nella finestra **Disassembly** è possibile visualizzare le informazioni facoltative seguenti:  
   
 - L'indirizzo di memoria in cui si trova ciascuna istruzione. Per applicazioni native, si tratta dell'indirizzo di memoria effettivo. Per Visual Basic, C# o codice gestito, si tratta dell'offset dall'inizio della funzione.  
   
@@ -65,7 +60,7 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
   È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Per visualizzare la finestra Disassembly  
   
@@ -82,10 +77,5 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
      Per altre informazioni, vedere [spostamento verso l'alto o verso il basso nella memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione dei dati nel Debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-

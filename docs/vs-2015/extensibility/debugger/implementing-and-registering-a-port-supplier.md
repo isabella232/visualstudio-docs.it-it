@@ -1,27 +1,22 @@
 ---
 title: Implementazione e registrazione di un fornitore di porte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3844d6beca76781f741bfbe0c6bff71923075d36
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d0546a357ce9d50b8e17e1543d12246d5fd5574
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969484"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementazione e registrazione di un fornitore di porte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,4 +65,3 @@ RemoveMetric(metrictypePortSupplier,
  [Implementazione di un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [Helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: usare Progettazione XML Schema con i valori letterali XML | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare Progettazione XML Schema con i valori letterali XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969081"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con i valori letterali XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: Usare Progettazione XML Schema con i valori letterali XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -43,7 +38,7 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
   
 3.  In Esplora soluzioni, fare clic sul nome del progetto, selezionare **Add**, quindi selezionare **elemento esistente...** . Il **Aggiungi elemento esistente** verrà visualizzata la finestra di dialogo. Individuare il file Purchaseorderschema XSD, selezionarlo e quindi fare clic su **Add**.  
   
-     Il progetto XMLLiterals contiene ora due file: Module1.vb e PurchaseOrderSchema.xsd.  
+     Il progetto XMLLiterals contiene ora due file: Module1.vb e Purchaseorderschema.  
   
 ### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Per aggiungere codice Visual Basic con un valore letterale XML, in base al file XSD incluso nel progetto  
   
@@ -79,6 +74,3 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 2.  Fare doppio clic su qualsiasi nodo XML in un valore letterale XML o un'importazione di spazi dei nomi XML e selezionare **Mostra in Schema Explorer**.  
   
      XML Schema Explorer viene visualizzato accanto a un file di Visual Basic che dispone di un valore letterale XML associato al set di schemi XML.
-
-
-

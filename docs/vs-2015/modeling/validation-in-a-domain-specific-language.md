@@ -1,12 +1,9 @@
 ---
 title: Convalida in un linguaggio specifico di dominio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969909"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,7 +148,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>Categorie di convalida  
  Nell'attributo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> viene specificato quando eseguire il metodo di convalida.  
   
-|Categoria|Esecuzione|  
+|Category|Esecuzione|  
 |--------------|---------------|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Quando l'utente richiama il comando di menu Convalida.|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Quando viene aperto il file di modello.|  
@@ -221,7 +218,7 @@ partial class MyLanguageCommandSet
   
 ```  
   
- Per altre informazioni, vedere [procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Per altre informazioni, vedere [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
  È anche possibile creare un controller di convalida separato e gestire gli errori manualmente. Ad esempio:  
   
@@ -350,6 +347,3 @@ validationController.ValidateCustom
 ## <a name="see-also"></a>Vedere anche  
  [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [I gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

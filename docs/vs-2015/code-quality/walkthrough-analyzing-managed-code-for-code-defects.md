@@ -1,14 +1,9 @@
 ---
 title: 'Procedura dettagliata: Analisi del codice gestito per i difetti del codice | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968656"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per l'identificazione di errori del codice
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per individuarne i difetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata, si analizza un progetto gestito per i difetti del codice utilizzando lo strumento di analisi codice.  
@@ -98,7 +93,7 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
 4.  Per correggere gli avvisi, usare quanto segue:  
   
-- [CA1014: Contrassegnare gli assembly con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: "demo" deve essere contrassegnato con CLSCompliantAttribute e il relativo valore deve essere true.  
+- [CA1014: Contrassegnare gli assembly con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: "demo" deve essere contrassegnato con CLSCompliantAttribute e relativo valore deve essere true.  
   
   -   Aggiungere il codice `using``System;` nel file AssemblyInfo.cs.  
   
@@ -106,15 +101,15 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
        Ricompilare il progetto.  
   
-- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: pubblica demo (String)  
+- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: pubblica demo (String)  
   
   -   Aggiungere il costruttore `public demo (String s) : base(s) { }` alla classe `demo`.  
   
-- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: demo pubblico (String, eccezione)  
+- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: demo pubblico (String, eccezione)  
   
   -   Aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo`.  
   
-- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: protetti demo (SerializationInfo, StreamingContext)  
+- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: protetti demo (SerializationInfo, StreamingContext)  
   
   -   Aggiungere il codice `using System.Runtime.Serialization;` all'inizio del file Class1.cs.  
   
@@ -122,29 +117,29 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
        Ricompilare il progetto.  
   
-- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: demos pubblico  
+- [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Aggiungere il costruttore seguente alla classe: demos pubblico  
   
   -   Aggiungere il costruttore `public demo () : base() { }` alla classe `demo` **.**  
   
        Ricompilare il progetto.  
   
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: correggere le maiuscole e minuscole del nome dello spazio dei nomi 'testCode' modificandolo in 'TestCode'.  
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole del nome dello spazio dei nomi 'testCode' modificandolo in 'TestCode'.  
   
   -   Modifica le maiuscole e minuscole dei nomi `testCode` a `TestCode`.  
   
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: correggere le maiuscole e minuscole di tipo nome "demo" modificandolo in "Demo".  
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole di tipo nome "demo" modificandolo in "Demo".  
   
   -   Modificare il nome del membro da `Demo`.  
   
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: correggere le maiuscole e minuscole del membro nome 'item' modificandolo in 'Item'.  
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole del membro nome 'item' modificandolo in 'Item'.  
   
   -   Modificare il nome del membro da `Item`.  
   
-- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: Rinomina 'testCode.demo' per terminare con 'Exception'.  
+- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rinominare 'testCode.demo' per terminare con 'Exception'.  
   
   -   Modificare il nome della classe e i relativi costruttori in `DemoException`.  
   
-- [CA2210: Gli assembly devono avere nomi sicuri validi](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Accedi 'ManagedDemo' con una chiave con nome sicuro.  
+- [CA2210: Gli assembly devono avere nomi sicuri validi](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Firmare 'ManagedDemo' con una chiave con nome sicuro.  
   
   -   Nel **Project** menu, fare clic su **ManagedDemo proprietà**.  
   
@@ -166,7 +161,7 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
        Ricompilare il progetto.  
   
-- [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: aggiungere un attributo [Serializable] a 'demo' perché questo tipo implementa ISerializable.  
+- [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Aggiungere un attributo [Serializable] a 'demo' perché questo tipo implementa ISerializable.  
   
   -   Aggiungere il `[Serializable ()]` alla classe `demo`.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Scegliere **azioni**, quindi scegliere **Elimina messaggio**, quindi scegliere **File di eliminazione progetto**.  
   
-      Per altre informazioni, vedere [come: non visualizzare avvisi usando la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Per altre informazioni, vedere [Procedura: Eliminare gli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Ricompilare il progetto.  
   
     Il progetto viene compilato senza eventuali avvisi o errori.
-
-
-

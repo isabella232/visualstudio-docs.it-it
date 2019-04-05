@@ -1,12 +1,9 @@
 ---
 title: Salvare i dati nel database | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +25,13 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969930"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,21 +77,21 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  Quando si uniscono i set di dati, è possibile passare un argomento booleano (`preserveChanges`) che indica il <xref:System.Data.DataSet.Merge%2A> metodo se si desidera mantenere le modifiche esistenti nel set di dati di destinazione. Poiché i set di dati di gestire più versioni di record, è importante tenere presente che viene eseguita l'unione di più versioni dei record. La tabella seguente illustra le modalità di unione di un record in due set di dati:  
   
-|DataRowVersion|Set di dati di destinazione|Set di dati di origine|  
+|DataRowVersion|DataSet di destinazione|Set di dati di origine|  
 |--------------------|--------------------|--------------------|  
 |Originale|James Wilson|James C. Wilson|  
 |Corrente|Jim Wilson|James C. Wilson|  
   
  Chiama il <xref:System.Data.DataSet.Merge%2A> metodo nella tabella precedente con `preserveChanges=false targetDataset.Merge(sourceDataset)` verifica quanto segue:  
   
-|DataRowVersion|Set di dati di destinazione|Set di dati di origine|  
+|DataRowVersion|DataSet di destinazione|Set di dati di origine|  
 |--------------------|--------------------|--------------------|  
 |Originale|James C. Wilson|James C. Wilson|  
 |Corrente|James C. Wilson|James C. Wilson|  
   
  Chiama il <xref:System.Data.DataSet.Merge%2A> metodo con `preserveChanges = true targetDataset.Merge(sourceDataset, true)` verifica quanto segue:  
   
-|DataRowVersion|Set di dati di destinazione|Set di dati di origine|  
+|DataRowVersion|DataSet di destinazione|Set di dati di origine|  
 |--------------------|--------------------|--------------------|  
 |Originale|James C. Wilson|James C. Wilson|  
 |Corrente|Jim Wilson|James C. Wilson|  
@@ -102,7 +99,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 > [!CAUTION]
 >  Nel `preserveChanges = true` scenario, se il <xref:System.Data.DataSet.RejectChanges%2A> metodo viene chiamato su un record nel set di dati di destinazione, quindi viene ripristinato il dati originali dalle *origine* set di dati. Ciò significa che, se si tenta di aggiornare l'origine dati originale con il set di dati di destinazione, potrebbe non essere in grado di trovare la riga originale per l'aggiornamento. È possibile evitare una violazione della concorrenza per la compilazione di un altro set di dati con i record aggiornati dall'origine dati e l'esecuzione di un'unione nell'indice per evitare una violazione della concorrenza. (Una violazione della concorrenza si verifica quando un altro utente modifica un record nell'origine dati dopo che il set di dati è stato compilato.)  
   
-## <a name="update-constraints"></a>Aggiornamento dei vincoli  
+## <a name="update-constraints"></a>Aggiornare i vincoli  
  Per apportare modifiche a una riga di dati esistente, aggiungere o aggiornare i dati in singole colonne. Se il set di dati contiene i vincoli (ad esempio le chiavi esterne o i vincoli non nullable), è possibile che il record può essere temporaneamente in uno stato di errore perché venga aggiornata. Vale a dire, può essere in stato di errore dopo aver completato l'aggiornamento di una colonna, ma prima di procedere con quello successivo.  
   
  Per impedire violazioni dei vincoli prematura è possibile sospendere temporaneamente i vincoli di aggiornamento. Ciò ha due scopi:  
@@ -170,7 +167,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  `GetChanges` Restituisce tutti i record modificati da solo. Al contrario, passando il valore desiderato <xref:System.Data.DataRowState> come parametro per il `GetChanges` metodo, è possibile specificare quale subset di record modificati desiderato: aggiunto record, record contrassegnati per l'eliminazione, scollegare i record nuovi o modificati record.  
   
- Ottenere un subset di record modificati è utile quando si desidera inviare i record a un altro componente per l'elaborazione. Anziché inviare l'intero set di dati, è possibile ridurre l'overhead di comunicazione con l'altro componente tramite il recupero solo i record che il componente. Per altre informazioni, vedere [procedura: recuperare le righe modificate](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Ottenere un subset di record modificati è utile quando si desidera inviare i record a un altro componente per l'elaborazione. Anziché inviare l'intero set di dati, è possibile ridurre l'overhead di comunicazione con l'altro componente tramite il recupero solo i record che il componente. Per altre informazioni, vedere [Procedura: Recuperare le righe modificate](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Il commit delle modifiche nel set di dati  
  Quando vengono apportate modifiche nel set di dati, il <xref:System.Data.DataRow.RowState%2A> delle righe modificate viene impostata. Le versioni originali e correnti dei record sono stabilite, gestite e reso disponibile al Licenziatario dal <xref:System.Data.DataRowView.RowVersion%2A> proprietà. I metadati archiviati nelle proprietà di queste righe modificate sono necessari per inviare gli aggiornamenti corretti nell'origine dati.  
@@ -221,14 +218,14 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  È possibile convalidare i dati in diversi modi:  
   
-- Nel livello business, tramite l'aggiunta di codice all'applicazione per convalidare i dati. Il set di dati è un'unica posizione è possibile farlo. Il set di dati sono disponibili alcuni dei vantaggi della convalida di back-end, ad esempio la possibilità di convalidare le modifiche che stanno modificando i valori di colonna e riga. Per altre informazioni, vedere [convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md).  
+- Nel livello business, tramite l'aggiunta di codice all'applicazione per convalidare i dati. Il set di dati è un'unica posizione è possibile farlo. La finestra di progettazione set di dati sono disponibili alcuni dei vantaggi della convalida di back-end, ad esempio la possibilità di convalidare le modifiche che stanno modificando i valori di colonna e riga. Per altre informazioni, vedere [convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md).  
   
 - Nel livello di presentazione, mediante l'aggiunta di convalida a un form. Per altre informazioni, vedere [: convalida dell'Input utente in Windows Form](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - Nei dati di back-end, inviando i dati all'origine dati, ad esempio, il database e in modo che possa accettare o rifiutare i dati. Se si lavora con un database che dispone di funzionalità per la convalida dei dati e fornendo informazioni sull'errore complesse, può trattarsi un pratico approccio in quanto è possibile convalidare i dati indipendentemente da dove provenga da. Tuttavia, questo approccio potrebbe non soddisfare requisiti di convalida specifiche dell'applicazione. Inoltre, che l'origine dati di convalida dei dati può comportare molti round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generato dal back-end.  
   
   > [!IMPORTANT]
-  >  Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  >  Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Dopo aver apportate le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, eseguire questa operazione chiamando il `Update` metodo di un oggetto TableAdapter (o un adattatore dati). Il metodo scorre ciascun record in una tabella di dati determina il tipo di aggiornamento è obbligatorio (aggiornare, inserire o eliminare), se presente, e quindi esegue il comando appropriato.  
   
@@ -275,14 +272,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 >  È anche possibile impostare i valori `Parameters` raccolta manualmente nel codice, che in genere si farebbe in un gestore eventi per l'adattatore dati di <xref:System.Data.DataTable.RowChanging> evento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica degli oggetti TableAdapter](../data-tools/tableadapter-overview.md)   
  [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Panoramica delle applicazioni dati in Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Connessione ai dati in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparare l'applicazione per ricevere dati](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Recupero di dati nell'applicazione](../data-tools/fetching-data-into-your-application.md)   
+ [Preparazione dell'applicazione al ricevimento di dati](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Associazione di controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modifica dei dati nell'applicazione](../data-tools/editing-data-in-your-application.md)   
- [La convalida dei dati](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Salvataggio di dati](../data-tools/saving-data.md)
-
+ [Convalida dei dati](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
