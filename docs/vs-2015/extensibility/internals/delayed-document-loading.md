@@ -1,24 +1,19 @@
 ---
 title: Caricamento dei documenti ritardato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3f3948756022c71e54699822715cf9a5b6d7896
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964425"
 ---
 # <a name="delayed-document-loading"></a>Caricamento dei documenti ritardato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,4 +65,3 @@ Quando un utente riapre una soluzione di Visual Studio, è possibile che la magg
  Non vi è alcuna indicazione visibile per indicare se un documento è stato inizializzato, pertanto può essere difficile scoprire se l'estensione viene forzato l'inizializzazione. È possibile impostare una chiave del Registro di sistema che semplifica la verifica, perché causa il titolo di tutti i documenti non completamente inizializzata per contenere il testo `[Stub]` nel titolo.  
   
  Nelle **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**, impostare **StubTabTitleFormatString** al  **{0} [Stub]**.
-

@@ -1,12 +1,9 @@
 ---
 title: Creare un database SQL usando una finestra di progettazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964695"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Creare un database SQL usando una finestra di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ ms.locfileid: "49860331"
   
  È anche possibile creare un database usando SQL Server Management Studio (un download separato) o istruzioni Transact-SQL nel **Esplora oggetti di SQL Server** finestra degli strumenti in Visual Studio.  
   
- Durante questa procedura dettagliata, verranno illustrate le attività seguenti:  
+ Durante questa procedura dettagliata, verranno illustrate le seguenti attività:  
   
 -   [Creare un progetto e un file di database locale](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
   
@@ -89,7 +86,7 @@ ms.locfileid: "49860331"
   
 2.  Aprire il menu di scelta rapida **tabelle**, quindi selezionare **Aggiungi nuova tabella**.  
   
-     Il **Progettazione tabelle** apre e visualizza una griglia con una riga predefinita, che rappresenta una singola colonna nella tabella che si sta creando. Aggiungendo righe alla griglia, vengono aggiunte colonne alla tabella.  
+     Viene aperta la **Progettazione tabelle** e viene visualizzata una griglia con una riga predefinita che rappresenta una singola colonna della tabella che si sta creando. Aggiungendo righe alla griglia, vengono aggiunte colonne alla tabella.  
   
 3.  Nella griglia, aggiungere una riga per ognuna delle seguenti voci:  
   
@@ -195,4 +192,3 @@ ms.locfileid: "49860331"
   
 ## <a name="next-steps"></a>Passaggi successivi  
  Ora che avete un file di database locale con alcuni dati di esempio, è possibile completare una delle procedure dettagliate che illustrano le attività di database.
-

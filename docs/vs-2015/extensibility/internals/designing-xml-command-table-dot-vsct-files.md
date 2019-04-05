@@ -1,26 +1,21 @@
 ---
 title: Progettazione di tabella comandi XML (. File Vsct) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762810"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964387"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Progettazione di tabella comandi XML (. File Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Un file XML comando table (vsct) descrive il layout e l'aspetto degli elementi d
   
  Quando si crea un nuovo pacchetto di Visual Studio eseguendo la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modello di pacchetto, il modello genera un file con estensione vsct con gli elementi necessari per un comando di menu, una finestra degli strumenti o un editor personalizzato dipendono dalle selezioni. Questo file con estensione vsct può quindi essere modificato per soddisfare i requisiti di un VSPackage specifico. Per esempi di come modificare un file vsct, vedere gli esempi inclusi in [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).  
   
- Per creare un file con estensione vsct vuoto, vedere [procedura: creare una. File Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una volta creata, aggiungere elementi, attributi e valori XML nel file per descrivere il layout dell'elemento di comando. Per uno schema XML dettagliato, vedere la [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
+ Per creare un file con estensione vsct vuoto, vedere [come: Creare una. File Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una volta creata, aggiungere elementi, attributi e valori XML nel file per descrivere il layout dell'elemento di comando. Per uno schema XML dettagliato, vedere la [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Differenze tra file con estensione CTC e con estensione vsct  
  Mentre il significato di tag XML in un file con estensione vsct è uguali come quelle nell'ora deprecato il formato di file con estensione CTC, l'implementazione è leggermente diversa.  
@@ -71,7 +66,7 @@ Un file XML comando table (vsct) descrive il layout e l'aspetto degli elementi d
   
   Il nuovo compilatore, vsct.exe, compilare i file con estensione CTC sia con estensione vsct. Il compilatore ctc.exe precedente, tuttavia, verrà non riconosce né compilare i file con estensione vsct.  
   
-  È possibile usare il compilatore vsct.exe per convertire un file CTO esistente in un file con estensione vsct. Per altre informazioni, vedere [procedura: creare una. File Vsct da un oggetto esistente. File CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  È possibile usare il compilatore vsct.exe per convertire un file CTO esistente in un file con estensione vsct. Per altre informazioni, vedere [come: Creare una. File Vsct da un oggetto esistente. File CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Elementi del File con estensione vsct  
  Nella tabella del comando ha la gerarchia e gli elementi seguenti:  
@@ -124,10 +119,9 @@ Un file XML comando table (vsct) descrive il layout e l'aspetto degli elementi d
   
  Durante lo sviluppo, è possibile per più progetti VSPackage venga creato e registrato nell'hive del Registro di sistema sperimentale che può provocare confusione confusione nell'IDE. Per risolvere questo problema, è possibile reimpostare l'hive sperimentale per le impostazioni predefinite per rimuovere registrati tutti i pacchetti VSPackage e le eventuali modifiche apportate all'IDE. Per reimpostare l'hive sperimentale, usare lo strumento CreateExpInstance.exe fornito con Visual Studio SDK. È possibile trovarlo in  
   
- **% PROGRAMMI (x86) %\Visual Studio \<versione > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Eseguire lo strumento da riga di comando **CreateExpInstance /Reset**. Tenere presente che questo strumento rimuove da hive sperimentale tutti i pacchetti VSPackage registrati che normalmente non vengono installati con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md)
-

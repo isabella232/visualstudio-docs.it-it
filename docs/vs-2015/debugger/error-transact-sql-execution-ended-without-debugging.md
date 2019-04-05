@@ -1,14 +1,9 @@
 ---
-title: 'Errore: Esecuzione Transact-SQL terminata senza debug | Microsoft Docs'
-ms.custom: ''
+title: 'Errore: Esecuzione di Transact-SQL terminata senza debug | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
@@ -21,15 +16,15 @@ ms.assetid: 7a4d4999-3973-4339-ba6a-f0d19bcb1d4a
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b67900f02a81a6a28279268c3fe6fa067bcdaedc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787640"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58970350"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: Esecuzione di Transact-SQL terminata senza debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo errore si verifica quando si tenta di eseguire il debug di una routine Transact-SQL o SQLCLR e il debugger non riceve messaggi di debug da SQL Server.  
@@ -48,17 +43,14 @@ Questo errore si verifica quando si tenta di eseguire il debug di una routine Tr
   
   Per correggere questo errore, è possibile:  
   
-- Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [procedura: impostare delle autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - Assicurarsi che il debug SQL sia configurato correttamente.  
   
 - Consultare l'amministratore della rete o del database.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configurazione di debug SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Procedura: impostare le autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Configurazione di debug SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Procedura: Impostare autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
