@@ -1,27 +1,22 @@
 ---
-title: "Procedura: valutare un'espressione XPath | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Valutare un'espressione XPath | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970197"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Procedura: valutare un'espressione XPath
+# <a name="how-to-evaluate-an-xpath-expression"></a>Procedura: di un'espressione XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile valutare le espressioni XPath con il **controllo immediato** nella finestra di dialogo. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero, ovvero il `self::node()` nodo il **variabili locali** finestra, fornisce il contesto di valutazione per l'espressione XPath.  
@@ -35,7 +30,7 @@ ms.locfileid: "49210431"
 -   Non sono supportate le funzioni definite dall'utente.  
   
 > [!NOTE]
->  La procedura seguente usa i file belowAvg. xsl e books. XML dal [procedura dettagliata: eseguire il Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) argomento.  
+>  La procedura seguente usa i file belowAvg. xsl e books. XML dal [procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) argomento.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Per valutare un'espressione XPath  
   
@@ -59,4 +54,3 @@ ms.locfileid: "49210431"
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)
-

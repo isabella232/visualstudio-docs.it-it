@@ -1,25 +1,20 @@
 ---
 title: La comprensione SAL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970229"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  È possibile conoscere ciò che svolge questa funzione? Quando una funzione è implementata o chiamata, è necessario mantenere alcune proprietà per garantire la correttezza del programma. Osservando semplicemente una dichiarazione come quello nell'esempio, non si conosce quali siano. Senza annotazioni SAL, è necessario fare affidamento sulla documentazione o commenti del codice. Ecco quali la documentazione di MSDN per `memcpy` afferma:  
   
 > "Copie contano i byte di src a dest. Se l'origine e destinazione si sovrappongono, il comportamento di memcpy è definito. Usare memmove per gestire le aree di sovrapposizione.   
-> **Nota sulla sicurezza:** assicurarsi che il buffer di destinazione sia della stessa dimensione o maggiore del buffer di origine. Per altre informazioni, vedere evitare sovraccarichi del Buffer".  
+> **Nota sulla sicurezza:** Verificare che il buffer di destinazione abbia una dimensione maggiore o uguale al buffer di origine. Per altre informazioni, vedere evitare sovraccarichi del Buffer".  
   
  La documentazione contiene un paio di bit di informazioni che suggeriscono che il codice deve gestire alcune proprietà per garantire la correttezza del programma:  
   
@@ -126,7 +121,7 @@ wchar_t * wmemcpy(
    > **C6387 Valore di parametro non valido**   
    > 'pInt' potrebbe essere '0': questa condizione non soddisfa la specifica la funzione 'InCallee'.  
   
-### <a name="example-the-in-annotation"></a>Esempio: La \_In\_ annotazione  
+### <a name="example-the-in-annotation"></a>Esempio: Il \_In\_ annotazione  
  Il `_In_` annotazione indica che:  
   
 -   Il parametro deve essere valido e non verrà modificato.  
@@ -164,7 +159,7 @@ void BadInCaller()
   
  Se si usa analisi di Visual Studio Code in questo esempio, verifica che i chiamanti passare un puntatore non Null a un buffer inizializzato per `pInt`. In questo caso, `pInt` puntatore non può essere NULL.  
   
-### <a name="example-the-inopt-annotation"></a>Esempio: La \_In_opt\_ annotazione  
+### <a name="example-the-inopt-annotation"></a>Esempio: Il \_In_opt\_ annotazione  
  `_In_opt_` equivale a `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve cercare.  
   
 ```cpp  
@@ -192,7 +187,7 @@ void InOptCaller()
   
  Analisi del codice di Visual Studio consente di verificare che la funzione controlla i valori NULL prima di accedere ai buffer.  
   
-### <a name="example-the-out-annotation"></a>Esempio: La \_Out\_ annotazione  
+### <a name="example-the-out-annotation"></a>Esempio: Il \_Out\_ annotazione  
  `_Out_` supporta uno scenario comune in cui viene passato un puntatore non NULL che punta a un buffer di elemento e la funzione Inizializza l'elemento. Il chiamante non dispone di inizializzare il buffer prima della chiamata. la funzione chiamata promette di inizializzarlo prima della restituzione.  
   
 ```cpp  
@@ -219,7 +214,7 @@ void OutCaller()
   
  Visual Studio Code Analysis Tool verifica che il chiamante passa un puntatore non NULL a un buffer per `pInt` e che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
-### <a name="example-the-outopt-annotation"></a>Esempio: La \_Out_opt\_ annotazione  
+### <a name="example-the-outopt-annotation"></a>Esempio: Il \_Out_opt\_ annotazione  
  `_Out_opt_` equivale a `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, pertanto, la funzione deve cercare.  
   
 ```cpp  
@@ -247,7 +242,7 @@ void OutOptCaller()
   
  Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima `pInt` è dereferenziato e se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
-### <a name="example-the-inout-annotation"></a>Esempio: La \_Inout\_ annotazione  
+### <a name="example-the-inout-annotation"></a>Esempio: Il \_Inout\_ annotazione  
  `_Inout_` viene usato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche se subisce delle modifiche, comunque deve avere un valore valido in fase di restituzione. L'annotazione specifica che la funzione può liberamente leggere e scrivere nel buffer di un solo elemento. Il chiamante deve fornire al buffer e inizializzarla.  
   
 > [!NOTE]
@@ -279,7 +274,7 @@ void BadInOutCaller()
   
  Analisi del codice di Visual Studio verifica che i chiamanti passare un puntatore non NULL in un buffer inizializzato per `pInt`e che, prima della restituzione, `pInt` ancora non è null e il buffer viene inizializzato.  
   
-### <a name="example-the-inoutopt-annotation"></a>Esempio: La \_Inout_opt\_ annotazione  
+### <a name="example-the-inoutopt-annotation"></a>Esempio: Il \_Inout_opt\_ annotazione  
  `_Inout_opt_` equivale a `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve cercare.  
   
 ```cpp  
@@ -309,7 +304,7 @@ void InOutOptCaller()
   
  Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di accedere ai buffer e se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
-### <a name="example-the-outptr-annotation"></a>Esempio: La \_Outptr\_ annotazione  
+### <a name="example-the-outptr-annotation"></a>Esempio: Il \_Outptr\_ annotazione  
  `_Outptr_` viene usato per annotare un parametro che è progettata per restituire un puntatore.  Il parametro stesso non deve essere NULL, la funzione chiamata restituisce un puntatore non NULL e tale puntatore punta a dati inizializzati.  
   
 ```cpp  
@@ -340,7 +335,7 @@ void OutPtrCaller()
   
  Analisi del codice di Visual Studio verifica che il chiamante passa un puntatore non NULL `*pInt`, e che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
-### <a name="example-the-outptropt-annotation"></a>Esempio: La \_Outptr_opt\_ annotazione  
+### <a name="example-the-outptropt-annotation"></a>Esempio: Il \_Outptr_opt\_ annotazione  
  `_Outptr_opt_` equivale a `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.  
   
 ```cpp  
@@ -373,7 +368,7 @@ void OutPtrOptCaller()
   
  Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima `*pInt` è dereferenziato, e che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Esempio: La \_Success\_ annotazione in combinazione con \_Out\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Esempio: Il \_Success\_ annotazione in combinazione con \_Out\_  
  Annotazioni possono essere applicate alla maggior parte degli oggetti.  In particolare, è possibile annotare un'intera funzione.  Una delle caratteristiche più ovvie di una funzione è che può avere esito positivo o esito negativo. Ma, come l'associazione tra un buffer e le relative dimensioni, C/C++ non può esprimere funzione esito positivo o negativo. Tramite il `_Success_` annotazione, è possibile dire quali operazioni riuscite per una funzione simile.  Il parametro per il `_Success_` annotazione è semplicemente un'espressione che quando è true indica che la funzione ha avuto esito positivo. L'espressione può essere in grado di gestire il parser di annotazione. Gli effetti delle annotazioni dopo la funzione restituisce sono applicabili solo quando la funzione ha esito positivo. Questo esempio viene illustrato come `_Success_` interagisce con `_Out_` a fare la cosa giusta. È possibile usare la parola chiave `return` per rappresentare il valore restituito.  
   
 ```cpp  
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)   
  [Specificare quando e dove applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)
-
-
-
