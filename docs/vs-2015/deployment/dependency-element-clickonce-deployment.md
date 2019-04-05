@@ -1,14 +1,9 @@
 ---
 title: '&lt;dipendenza&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -30,13 +25,13 @@ ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966196"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dipendenza&gt; elemento (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,10 +106,10 @@ Identifica la versione dell'applicazione per l'installazione e la posizione del 
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
   
-## <a name="dsigtransforms"></a>dsig: Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
   
-## <a name="dsigtransform"></a>dsig: Transform  
+## <a name="dsigtransform"></a>dsig:Transform  
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. La tabella seguente illustra gli attributi del `dsig:Transform` elemento.  
   
 |Attributo|Descrizione|  
@@ -190,7 +185,4 @@ Identifica la versione dell'applicazione per l'installazione e la posizione del 
   
 ## <a name="see-also"></a>Vedere anche  
  [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<dipendenza > elemento](../deployment/dependency-element-clickonce-application.md)
-
-
-
+ [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)

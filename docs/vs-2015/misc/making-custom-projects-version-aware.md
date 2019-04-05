@@ -1,23 +1,18 @@
 ---
 title: Creazione di progetti personalizzati compatibili con versione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965107"
 ---
 # <a name="making-custom-projects-version-aware"></a>Impostazione del riconoscimento della versione per i progetti personalizzati
 Nel sistema di progetto personalizzato è possibile consentire il caricamento di progetti di un tipo specifico in più versioni di Visual Studio. È anche possibile impedire che progetti di un tipo specifico vengano caricati in una versione precedente di Visual Studio. È inoltre possibile consentire al progetto di identificarsi in una versione successiva in caso sia necessaria un'operazione di ripristino, conversione o deprecazione.  
@@ -27,19 +22,19 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
   
  Prima di caricare un progetto, Visual Studio chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> per determinare se il progetto può essere aggiornato. Se il progetto può essere aggiornato, il metodo `UpgradeProject_CheckOnly` imposta un flag che fa in modo che una chiamata successiva al metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> aggiorni il progetto. Poiché i progetti incompatibili non possono essere aggiornati, `UpgradeProject_CheckOnly` deve prima controllare la compatibilità del progetto, come descritto nella sezione precedente.  
   
- L'autore di un sistema di progetto implementa `UpgradeProject_CheckOnly` (dall'interfaccia `IVsProjectUpgradeViaFactory4` ) per fornire agli utenti del sistema di progetto un controllo dell'aggiornamento. Quando gli utenti aprono un progetto, questo metodo viene chiamato per determinare se un progetto deve essere ripristinato prima del caricamento. I requisiti di aggiornamento possibili sono enumerati in `VSPUVF_REPAIRFLAGS` e includono le possibilità seguenti:  
+ L'autore di un sistema di progetto implementa `UpgradeProject_CheckOnly` (dall'interfaccia `IVsProjectUpgradeViaFactory4` ) per fornire agli utenti del sistema di progetto un controllo dell'aggiornamento. Quando gli utenti aprono un progetto, questo metodo viene chiamato per determinare se un progetto deve essere ripristinato prima del caricamento. I requisiti di aggiornamento possibili sono enumerati in `VSPUVF_REPAIRFLAGS`e includono le possibilità seguenti:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: non è necessario il ripristino.  
+1.  `SPUVF_PROJECT_NOREPAIR`: È necessario alcun processo di ripristino.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: rende il progetto compatibile con una versione precedente senza i problemi che si sarebbero potuti verificare con le versioni precedenti del prodotto.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Rende il progetto compatibile con una versione precedente senza i problemi che si sarebbero potuti verificare con le versioni precedenti del prodotto.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: rende il progetto compatibile con le versioni precedenti con alcuni rischi correlati ai problemi che si sarebbero potuti verificare con le versioni precedenti del prodotto. Ad esempio, il progetto non sarà compatibile se dipende da versioni di SDK diverse.  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Rende il progetto compatibile con alcuni rischi dei problemi che si sarebbero potuti con le versioni precedenti del prodotto. Ad esempio, il progetto non sarà compatibile se dipende da versioni di SDK diverse.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: rende il progetto incompatibile con una versione precedente.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Rende il progetto incompatibile con una versione precedente.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: indica che la versione corrente non supporta il progetto.  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Indica che la versione corrente non supporta questo progetto.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: indica che il progetto non è più supportato.  
+6.  `VSPUVF_PROJECT_DEPRECATED`: Indica che questo progetto non è più supportato.  
   
 > [!NOTE]
 >  Per evitare confusione, non combinare flag di aggiornamento quando li si imposta. Ad esempio, non creare uno stato di aggiornamento ambiguo, come `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -65,7 +60,7 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
   
      Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  Nel componente chiamare `IVsAppCompat.AskForUserConsentToBreakAssetCompat` e passare una matrice di interfacce `IVsHierarchy` che rappresentano i progetti di interesse.  
+2.  Nel componente chiamare `IVsAppCompat.AskForUserConsentToBreakAssetCompat`e passare una matrice di interfacce `IVsHierarchy` che rappresentano i progetti di interesse.  
   
      Questo metodo ha la firma seguente:  
   

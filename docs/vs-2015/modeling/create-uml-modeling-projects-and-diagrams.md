@@ -1,12 +1,9 @@
 ---
 title: Creare diagrammi e progetti di modellazione UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964548"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Creare diagrammi e progetti di modellazione UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
   
 |**Problema**|**Cause**|**Risoluzione**|  
 |---------------|----------------|--------------------|  
-|Non è possibile aprire o caricare il progetto di modello nella soluzione.<br /><br /> Viene visualizzato il seguente messaggio:<br /><br /> "Uno o più progetti della soluzione non sono stati caricati correttamente. Per dettagli, vedere la finestra di output".<br /><br /> Nella finestra di output viene visualizzato il messaggio seguente:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: errore: formato Guid non riconosciuto."|Un progetto di modello include riferimenti a progetti con lo stesso nome e nella stessa soluzione.<br /><br /> Ad esempio, un livello è collegato a progetti con lo stesso nome che si trovano nella stessa soluzione.|Usare un editor di testo per aprire il file del progetto di modello, rimuovere i riferimenti e quindi provare ad aprire di nuovo il progetto di modello.<br /><br /> Per evitare questo problema, non aggiungere riferimenti a progetti con lo stesso nome. Assicurarsi che i nomi dei progetti siano univoci.|  
+|Non è possibile aprire o caricare il progetto di modello nella soluzione.<br /><br /> Viene visualizzato il seguente messaggio:<br /><br /> "Uno o più progetti della soluzione non sono stati caricati correttamente. Per dettagli, vedere la finestra di output".<br /><br /> Nella finestra di output viene visualizzato il messaggio seguente:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: errore: Formato Guid non riconosciuto".|Un progetto di modello include riferimenti a progetti con lo stesso nome e nella stessa soluzione.<br /><br /> Ad esempio, un livello è collegato a progetti con lo stesso nome che si trovano nella stessa soluzione.|Usare un editor di testo per aprire il file del progetto di modello, rimuovere i riferimenti e quindi provare ad aprire di nuovo il progetto di modello.<br /><br /> Per evitare questo problema, non aggiungere riferimenti a progetti con lo stesso nome. Assicurarsi che i nomi dei progetti siano univoci.|  
 |Elementi mancanti da diagrammi aggiunti, copiati o trascinati in altri progetti di modello o altre posizioni nella soluzione.<br /><br /> -oppure-<br /><br /> I messaggi seguenti vengono visualizzati quando si tenta di aprire un diagramma:<br /><br /> -"Alcune forme o connettori nel diagramma non sono presenti perché le relative definizioni non esistono nel progetto. Le definizioni sono state eliminate dal modello durante la chiusura del diagramma oppure il diagramma è stato copiato in un progetto che non contiene tali definizioni".<br /><br /> -oppure-<br /><br /> -"Questo documento viene aperto da un altro progetto".|Il file di diagramma è stato aggiunto, trascinato o copiato da un progetto di modello a un altro progetto di modello o in un'altra posizione nella soluzione.|Per copiare un file di diagramma, creare un nuovo diagramma e quindi copiare gli elementi dal diagramma di origine al nuovo diagramma.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)
-
-
-

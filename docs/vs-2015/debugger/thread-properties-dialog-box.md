@@ -1,14 +1,9 @@
 ---
 title: Finestra di dialogo Proprietà thread | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
@@ -16,13 +11,13 @@ ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bc6a20b8c1d74d322a21d56a3fbe1cd124bc7cd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0515e5905a18db0979b30f74a61ddc19dd2a27a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965916"
 ---
 # <a name="thread-properties-dialog-box"></a>Finestra di dialogo Proprietà thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,6 +48,3 @@ Utilizzare questa finestra di dialogo per ulteriori informazioni su un thread sp
   
  [Uso di Spy++](../debugger/using-spy-increment.md)  
  Introduce lo strumento Spy + + e spiega come può essere usato.
-
-
-

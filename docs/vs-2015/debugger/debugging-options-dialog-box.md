@@ -1,14 +1,9 @@
 ---
 title: Il debug, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -29,18 +24,18 @@ ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c535769e333cd1301a85ac05752d22d92f6ad55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1f3b6f6ee2c5a815bfa4f3a9744b3ad2c8cc690
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964630"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **debug** cartella, nella **opzioni** nella finestra di dialogo il **strumenti** menu, sono disponibili le pagine seguenti, che consentono di specificare i debugger opzioni dello strumento.  
+Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal menu **Strumenti** sono contenute le pagine elencate di seguito, che consentono di specificare le impostazioni del debugger.  
   
 -   [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)  
   
@@ -48,12 +43,9 @@ Il **debug** cartella, nella **opzioni** nella finestra di dialogo il **strument
   
 -   [Finestra di output, Debug, finestra di dialogo Opzioni](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Simboli, debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+-   [Simboli, Debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
  [Riferimenti dell'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md)
-
-
-

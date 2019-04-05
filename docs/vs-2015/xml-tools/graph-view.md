@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione grafico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813622"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964555"
 ---
 # <a name="graph-view"></a>Visualizzazione grafico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
   
  Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, XML Schema Explorer e la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.  
   
- ![Finestra di progettazione XSD; Visualizzazione grafico](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
+ ![XSD Designer; Graph View](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".  
+ Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".  
   
 ## <a name="breadcrumb-bar"></a>Barra di navigazione  
  Tramite la barra di navigazione nella parte inferiore della visualizzazione grafico viene mostrato dove si trova il nodo selezionato nel set di schemi. Se vengono selezionati più elementi, la barra di navigazione sarà vuota.  
@@ -100,7 +95,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 ## <a name="xsd-toolbar"></a>Barra degli strumenti XSD  
  I seguenti pulsanti della barra degli strumenti XSD sono abilitati quando la visualizzazione grafico è attiva.  
   
- ![Barra degli strumenti della finestra di progettazione di XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")  
+ ![XML Schema Designer Toolbar](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")  
   
 |Opzione|Descrizione|  
 |------------|-----------------|  
@@ -110,10 +105,10 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 |**Cancella l'area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|  
 |**Rimuovere dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|  
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|  
-|**Zleva Doprava**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt + freccia destra**.|  
-|**Zprava Doleva**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt + freccia sinistra**.|  
-|**Dall'alto verso il basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt + freccia giù**.|  
-|**Basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. Questa opzione è possibile accedere usando il tasto di scelta rapida: **Alt + freccia**.|  
+|**Zleva Doprava**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT + freccia destra**.|  
+|**Zprava Doleva**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT + freccia sinistra**.|  
+|**Dall'alto verso il basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT + freccia giù**.|  
+|**Basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. Questa opzione sono accessibili tramite il tasto di scelta rapida: **ALT + freccia**.|  
   
 ## <a name="panscroll"></a>Panoramica/scorrimento  
  È possibile eseguire una panoramica dell'area di progettazione tramite le barre di scorrimento o tenendo premuto il tasto CTRL mentre si fa clic e si trascina il mouse. Quando si esegue una panoramica dell'area di progettazione tramite selezione e trascinamento, il cursore sarà modificato in quattro frecce incrociate che puntano in quattro direzioni.  
@@ -121,7 +116,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 ## <a name="undoredo"></a>Annullamento/ripristino  
  La funzionalità di annullamento/ripristino è abilitata nella visualizzazione grafico per le seguenti azioni:  
   
--   Aggiunta di un singolo nodo tramite trascinamento.  
+-   Aggiunta di un singolo nodo con trascinamento della selezione.  
   
 -   Aggiunta di più nodi dalla finestra dei risultati della ricerca nelle query relative a Schema Explorer o alla visualizzazione iniziale.  
   
@@ -145,6 +140,3 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
   
 ## <a name="see-also"></a>Vedere anche  
  [Nell'area di progettazione](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

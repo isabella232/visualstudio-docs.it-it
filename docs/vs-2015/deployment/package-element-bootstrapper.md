@@ -1,14 +1,9 @@
 ---
 title: '&lt;Pacchetto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967092"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,7 +150,7 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 |---------------|-----------------|  
 |`Culture`|Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione.|  
 |`Name`|Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`.|  
-|`LicenseAgreement`|Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere testo normale (con estensione txt) o il formato RTF. Format (RTF)|  
+|`LicenseAgreement`|Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere testo normale (con estensione txt) o il formato RTF. (.rtf)|  
   
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente viene illustrato un file del pacchetto completo per la ridistribuzione di [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  
@@ -197,6 +192,3 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
-
-
-

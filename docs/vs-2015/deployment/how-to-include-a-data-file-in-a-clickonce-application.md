@@ -1,14 +1,9 @@
 ---
-title: "Procedura: includere un File di dati in un'applicazione ClickOnce | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: Includere un File di dati in un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955539"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: includere un file di dati in un'applicazione ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: Includere un file di dati in un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegnata una directory di dati sul disco locale del computer di destinazione in cui l'applicazione può gestire i propri dati. File di dati possono includere file di qualsiasi tipo: file di testo, file XML o anche i file di Microsoft Access (mdb). Le procedure seguenti illustrano come aggiungere un file di dati di qualsiasi tipo nel [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione.  
@@ -42,7 +37,7 @@ Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegn
   
 2. Aggiornare il manifesto dell'applicazione all'elenco di file di dati.  
   
-    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
   
     Per eseguire questa attività verrà ricreato l'elenco dei file nel manifesto dell'applicazione e genera anche automaticamente le firme hash.  
   
@@ -60,11 +55,11 @@ Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegn
   
     È necessario firmare nuovamente il manifesto di distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
   
-    **app -s Mage manifesto - cf cert_file - pwd password**  
+    **mage -s app manifest -cf cert_file -pwd password**  
   
     **Mage -u - appm manifesto dell'app del manifesto**  
   
-    **manifesto della distribuzione -s di Mage cf - certfile - pwd password**  
+    **mage -s deployment manifest -cf certfile -pwd password**  
   
 6. 
   
@@ -94,6 +89,3 @@ Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegn
   
 ## <a name="see-also"></a>Vedere anche  
  [Accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

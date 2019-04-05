@@ -1,13 +1,8 @@
 ---
 title: Spostarsi nel codice con il Debugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965588"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Spostarsi nel codice con il Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
 -   **Inserire un'interruzione nel codice manualmente**  
   
-     Per inserire un'interruzione nella successiva riga di codice disponibile in un'applicazione in esecuzione, scegliere **Debug**, **Interrompi tutto** (tastiera: **Ctrl+Alt+Break**).  
+     Per inserire un'interruzione nella successiva riga disponibile di codice in un'applicazione in esecuzione, scegliere **Debug**, **Interrompi tutto** (tastiera: **Ctrl + Alt + INTERR**).  
   
      Se si interrompe l'esecuzione del codice senza file (con estensione pdb) di simboli o di origine corrispondenti, il debugger visualizza una pagina **File di origine non trovati** o **Simboli non trovati** che consente di trovare i file appropriati. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile accedere ai file di supporto, è comunque possibile eseguire il debug delle istruzioni di assembly nella finestra Disassembly.  
   
@@ -181,7 +176,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
  Per caricare i simboli per un componente di sistema specifico durante il debug:  
   
-1.  Aprire la finestra Moduli (tastiera: **Ctrl+Alt+U**).  
+1.  Aprire la finestra moduli (tastiera: **Ctrl + Alt + U**).  
   
 2.  Selezionare il modulo per cui si desidera caricare i simboli.  
   
@@ -191,8 +186,3 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito  
  Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di operatori o proprietà, scegliere **Debug** / **opzioni**. Nella pagina **Debug** / **Generale** deselezionare la casella di controllo **Esegui istruzione/routine di proprietà e operatori (solo gestito)** 
-
-
-
-
-

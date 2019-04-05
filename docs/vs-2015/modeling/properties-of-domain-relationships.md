@@ -1,25 +1,22 @@
 ---
 title: Proprietà delle relazioni di dominio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 ms.assetid: 9ccb3dc2-b80c-4585-932f-3c5f87bafbcd
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 48af74aa470f195c1cfbd49ffbabb37e2461251d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 56deef795d1b48dc1b49d8ab255fc7a4fbf7379e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965026"
 ---
 # <a name="properties-of-domain-relationships"></a>Proprietà delle relazioni di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +26,19 @@ Le proprietà nella tabella seguente sono associate a una relazione di dominio. 
 |Proprietà|Descrizione|Impostazione predefinita|  
 |--------------|-----------------|-------------|  
 |Modificatore di accesso|Il livello di accesso della relazione di dominio (`public` o `internal`).|`public`|  
-|Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato dalla relazione di dominio.|\<Nessuno >|  
+|Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato dalla relazione di dominio.|\<nessuno>|  
 |Genera l'errore doppia derivati|Se `True`, viene generata una classe di base sia una classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
 |Ha un costruttore personalizzato|Se `True`, indica che viene fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla relazione di dominio (`none`, `abstract` o `sealed`).|\<Nessuno >|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla relazione di dominio (`none`, `abstract` o `sealed`).|\<nessuno>|  
 |Consente i duplicati|Se `True`, è possibile creare collegamenti duplicati di relazione di dominio tra gli stessi due elementi.|`False`|  
-|Relazioni di base|Se la relazione di dominio è derivata, la relazione di base della relazione di dominio.|\<Nessuno >|  
-|È di incorporamento|Se `True`, la relazione di dominio è una relazione di incorporamento. Se `False`, la relazione è una relazione di riferimento.|\<entrambi >|  
-|nome|Il nome della relazione di dominio.|Nome corrente|  
+|Relazioni di base|Se la relazione di dominio è derivata, la relazione di base della relazione di dominio.|\<nessuno>|  
+|È di incorporamento|Se `True`, la relazione di dominio è una relazione di incorporamento. Se `False`, la relazione è una relazione di riferimento.|\<both>|  
+|Nome|Il nome della relazione di dominio.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è affiliato alla relazione di dominio.|Spazio dei nomi corrente|  
-|Note|Note informali associate la relazione di dominio.|\<Nessuno >|  
-|Descrizione|La descrizione che consente di documentare il codice e viene utilizzata nell'interfaccia utente della finestra di progettazione generata.|\<Nessuno >|  
-|Nome visualizzato|Il nome visualizzato nella finestra di progettazione generata per la relazione di dominio.|\<Nessuno >|  
-|Parola chiave della Guida|La parola chiave facoltativa utilizzata per indicizzare la Guida F1 per la relazione di dominio.|\<Nessuno >|  
+|Note|Note informali associate la relazione di dominio.|\<nessuno>|  
+|Descrizione|La descrizione che consente di documentare il codice e viene utilizzata nell'interfaccia utente della finestra di progettazione generata.|\<nessuno>|  
+|Nome visualizzato|Il nome visualizzato nella finestra di progettazione generata per la relazione di dominio.|\<nessuno>|  
+|Parola chiave della Guida|La parola chiave facoltativa utilizzata per indicizzare la Guida F1 per la relazione di dominio.|\<nessuno>|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario sugli strumenti Domain-Specific Language](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

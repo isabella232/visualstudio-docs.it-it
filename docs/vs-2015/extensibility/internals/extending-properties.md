@@ -1,33 +1,28 @@
 ---
 title: Estensione delle proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 919b5a08f003d6e6c320edef4c1321af35f17388
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966440"
 ---
 # <a name="extending-properties"></a>Estensione delle proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **delle proprietà** finestra è un visualizzatore proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prodotti. Il **delle proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
   
- Il **delle proprietà** finestra, che può essere aperta, premere F4 sulla tastiera, oppure selezionando **finestra delle proprietà** sul **visualizzazione** menu, viene utilizzato per visualizzare e modificare proprietà indipendenti dalla configurazione, in fase di progettazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associate a soluzioni e progetti, vengono visualizzate nella [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per altre informazioni, vedere [le proprietà del progetto: NIB](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [la gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md), e [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Il **delle proprietà** finestra, che può essere aperta, premere F4 sulla tastiera, oppure selezionando **finestra delle proprietà** sul **visualizzazione** menu, viene utilizzato per visualizzare e modificare proprietà indipendenti dalla configurazione, in fase di progettazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associate a soluzioni e progetti, vengono visualizzate nella [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per altre informazioni, vedere [le proprietà del progetto: NIB](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [la gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md), e [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  ![Panoramica della finestra proprietà](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Finestra Proprietà  
@@ -78,16 +73,16 @@ Finestra Proprietà
  [Proprietà documento HTML, finestra proprietà](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  Vengono fornite istruzioni per la modifica di un documento HTML direttamente dalla finestra delle proprietà e viene fornita una tabella che riporta in dettaglio i campi in un documento HTML nella finestra Proprietà.  
   
- [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  Viene descritto il `IDispatch` interfaccia, prima di tutto è stato progettato per supportare l'automazione, che fornisce un meccanismo di associazione tardiva per accedere e recuperare informazioni sui metodi e proprietà di un oggetto.  
   
- [NIB: Introduzione a proprietà dinamiche (Visual Studio)](http://msdn.microsoft.com/en-us/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB: Introduzione alle proprietà dinamiche (Visual Studio)](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  Fornisce una panoramica delle proprietà dinamiche che consentono di configurare l'applicazione in modo che i valori delle proprietà sono archiviati in un file di configurazione esterno anziché il codice dell'applicazione compilata.  
   
- [NIB: progetti come contenitori](http://msdn.microsoft.com/en-us/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB: progetti come contenitori](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  Descrive il ruolo del progetto come un contenitore in una soluzione per gestire in modo logico, compilazione e debug gli elementi che costituiscono l'applicazione.  
   
- [Proprietà NIB: progetto](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [Proprietà NIB: progetto](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  Viene descritto come il progetto gestisce le impostazioni che consentono di proprietà di controllo che si applicano all'intero progetto e anche le proprietà sono limitate a determinate configurazioni di compilazione del progetto.  
   
  [Solutions and Projects](../../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)  
@@ -95,4 +90,3 @@ Finestra Proprietà
   
  [Estensione di altre parti di Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
  Spiega come usare i servizi di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per creare elementi dell'interfaccia utente che corrispondono al resto di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
-

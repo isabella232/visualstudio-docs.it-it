@@ -1,26 +1,21 @@
 ---
 title: Panoramica della finestra proprietà | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752104"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963839"
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Il **delle proprietà** finestra viene utilizzata per visualizzare le proprietà
 |Nome dell'interfaccia|Descrizione|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fornisce un elenco di categorie per il **proprietà** finestra ed esegue il mapping di ogni proprietà a una categoria.|  
-|[Interfaccia IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Espone metodi e proprietà per la programmazione di strumenti e altre applicazioni che supportano l'automazione di un oggetto.|  
+|[Interfaccia IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Espone metodi e proprietà per la programmazione di strumenti e altre applicazioni che supportano l'automazione di un oggetto.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Sono disponibili i pulsanti di puntini di sospensione (...) denominati *generatori* che aprire finestre di dialogo modale implementate dall'oggetto stesso. Utilizzato quando un valore non è tipizzato con facilità dall'utente in un campo di testo. Ad esempio, potrebbe essere utilizzato per aprire un selettore di colore che determina il valore RGB per l'utente.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornisce l'accesso agli oggetti utilizzati per aggiornare le informazioni visualizzate nel **proprietà** finestra. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene implementata dai pacchetti VSPackage per ogni finestra che contiene oggetti selezionabili con le proprietà correlate da visualizzare.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fornisce informazioni sul tipo di oggetto, ad esempio i metodi di un'interfaccia e i campi di una struttura.|  
@@ -58,4 +53,3 @@ Il **delle proprietà** finestra viene utilizzata per visualizzare le proprietà
 ## <a name="see-also"></a>Vedere anche  
  [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)   
  [Campi e interfacce della finestra Proprietà](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

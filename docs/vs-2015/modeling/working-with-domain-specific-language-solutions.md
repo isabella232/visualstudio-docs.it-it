@@ -1,23 +1,20 @@
 ---
 title: Utilizzo di soluzioni Domain-Specific Language | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3db02722-5fd5-437f-a789-9acaaa809de8
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eab5a1b645023537ffee182804554f483d81f727
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964815"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilizzo di soluzioni per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +46,8 @@ Un linguaggio specifico di dominio (DSL) viene creato utilizzando una [!INCLUDE[
  [Procedura: Modificare lo spazio dei nomi di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
  Il codice che è generare da un linguaggio DSL con uno spazio dei nomi che è impostato quando si avvia la soluzione, ma è possibile modificarlo in un secondo momento.  
   
- [Procedura: Estendere la finestra di progettazione di linguaggio specifico di dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ [Procedura: Estendere la finestra di progettazione Domain-Specific Language](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  È possibile personalizzare la finestra di progettazione DSL con comandi di menu.  
   
- [Come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Per evitare di fare clic su Trasforma tutti i modelli, è possibile renderlo una parte della compilazione automatica.
-
-
-

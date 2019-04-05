@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: firmare i file con SignTool.exe (ClickOnce) di installazione | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Firmare con SignTool.exe (ClickOnce) i file di installazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965821"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: firmare i file di installazione con SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: Firmare i file di installazione con SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare SignTool.exe per firmare un programma di installazione (setup.exe). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.  
@@ -46,23 +41,23 @@ ms.locfileid: "49179309"
   
 2.  Selezionare il progetto in **Esplora soluzioni**.  
   
-3.  Nel **Project** menu, fare clic su *NomeProgetto* **proprietà**.  
+3.  Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
   
-4.  Nel **Signing** pagina, deseleziona **firma i manifesti ClickOnce**.  
+4.  Nella pagina **Firma** deselezionare l'opzione **Firma i manifesti ClickOnce**.  
   
-5.  Nel **Publish** pagina, fare clic su **prerequisiti**.  
+5.  Nella pagina **Pubblica** fare clic su **Prerequisiti**.  
   
-6.  Verificare che tutti i prerequisiti siano selezionati e quindi fare clic su **OK**.  
+6.  Verificare che siano selezionati tutti i prerequisiti, quindi fare clic su **OK**.  
   
-7.  Nel **Publish** pagina, verificare le impostazioni di pubblicazione e quindi fare clic su **pubblica**.  
+7.  Nella pagina **Pubblica** verificare le impostazioni di pubblicazione e quindi fare clic su **Pubblica**.  
   
      La soluzione pubblica il manifesto dell'applicazione non firmato, il manifesto della distribuzione non firmato, i file specifici della versione e il programma di installazione non firmato nel percorso della cartella di pubblicazione.  
   
-8.  Nel **Publish** pagina, fare clic su **prerequisiti**.  
+8.  Nella pagina **Pubblica** fare clic su **Prerequisiti**.  
   
-9. Nel **prerequisiti** della finestra di dialogo deseleziona **Crea programma di installazione per installare i componenti prerequisiti**.  
+9. Nella finestra di dialogo **Prerequisiti** deselezionare l'opzione **Crea programma di installazione per installare componenti dei prerequisiti**.  
   
-10. Nel **Publish** pagina, verificare le impostazioni di pubblicazione e quindi fare clic su **pubblica**.  
+10. Nella pagina **Pubblica** verificare le impostazioni di pubblicazione e quindi fare clic su **Pubblica**.  
   
      La soluzione pubblica il manifesto dell'applicazione firmato, il manifesto della distribuzione firmato e i file specifici della versione nel percorso della cartella di pubblicazione. Il programma di installazione non firmato non sarà sovrascritto dal processo di pubblicazione.  
   
@@ -85,7 +80,4 @@ ms.locfileid: "49179309"
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Ripetere la firma dei manifesti dell'applicazione e di distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

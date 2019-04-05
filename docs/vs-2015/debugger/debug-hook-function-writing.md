@@ -1,14 +1,9 @@
 ---
 title: Scrittura di funzioni Hook di debug | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47cd3d42639785290f26d7acbbad15cd948b4f51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0554c1494bec757d1baecd78cdc302608e5b6b3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966974"
 ---
 # <a name="debug-hook-function-writing"></a>Scrittura di funzioni hook di debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,13 @@ In questa sezione vengono descritte alcune funzioni hook di debug personalizzate
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Funzioni hook del blocco client](../debugger/client-block-hook-functions.md)  
- Viene fornito materiale sussidiario e un prototipo per la scrittura di funzioni che convalidano o inseriscono nei report il contenuto dei dati archiviati nei blocchi _CLIENT_BLOCK.  
+ Vengono forniti le indicazioni e un prototipo per la scrittura di funzioni che convalidano o inseriscono nei report il contenuto dei dati archiviati nei blocchi _CLIENT_BLOCK.  
   
  [Funzioni hook di allocazione](../debugger/allocation-hook-functions.md)  
  Viene definita una funzione hook di allocazione, ne vengono esaminati i diversi utilizzi, vengono indicate le restrizioni e viene fornito un prototipo.  
   
  [Hook di allocazione e allocazioni di memoria CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- Viene descritta la restrizione sulle funzioni hook di allocazione per ignorare in modo esplicito i blocchi `_CRT_BLOCK` se vengono effettuate chiamate alle funzioni della libreria di runtime del linguaggio C che allocano la memoria interna. In questo argomento elenca le conseguenze anche se l'hook di allocazione non ignora `_CRT_BLOCK` funzione di hook di blocchi (con esempi) e su come modificare l'allocazione predefinita **CrtDefaultAllocHook**.  
+ Viene descritta la restrizione sulle funzioni hook di allocazione per ignorare in modo esplicito i blocchi `_CRT_BLOCK` se vengono effettuate chiamate alle funzioni della libreria di runtime del linguaggio C che allocano la memoria interna. In questo argomento vengono anche elencate le conseguenze nel caso in cui l'hook di allocazione non ignori i blocchi `_CRT_BLOCK` (con esempi) e la modifica della funzione predefinita di hook di allocazione, **CrtDefaultAllocHook**.  
   
  [Funzioni hook per la creazione di report](../debugger/report-hook-functions.md)  
  Viene discussa la funzione `_CrtSetReportHook`, che è possibile utilizzare per filtrare i report in modo da concentrarsi su tipi specifici di allocazioni. In questo argomento viene fornito anche un prototipo.  
@@ -56,6 +51,3 @@ In questa sezione vengono descritte alcune funzioni hook di debug personalizzate
 ## <a name="related-sections"></a>Sezioni correlate  
  [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)  
  È possibile collegarsi alle tecniche di debug per la libreria di runtime del linguaggio C, tra cui: utilizzo della libreria di debug CRT, macro per la creazione di report, differenze tra `malloc` e `_malloc_dbg`, scrittura di funzioni hook di debug e heap di debug CRT.
-
-
-

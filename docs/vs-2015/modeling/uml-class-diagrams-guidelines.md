@@ -1,12 +1,9 @@
 ---
 title: 'Diagrammi classi UML: Linee guida | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,15 +16,15 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965911"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>Diagrammi classi UML: linee guida
+# <a name="uml-class-diagrams-guidelines"></a>Diagrammi classi UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i tipi di dati e le relative relazioni separatamente dall'implementazione. Il diagramma viene usato per concentrarsi sugli aspetti logici delle classi, anziché sull'implementazione.  
@@ -48,7 +45,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
 -   Per chiarire il glossario di termini usati per la comunicazione tra l'applicazione e gli utenti e nelle descrizioni delle esigenze degli utenti. Visualizzare [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
-     Si considerino ad esempio le descrizioni di storie utente, di casi d'uso o di altri requisiti di un'applicazione ristorante. In tali descrizioni vengono usati termini come Menu, Ordine, Pasto, Prezzo, Pagamento e così via. È possibile creare un diagramma classi UML che definisca le relazioni tra questi termini riducendo in questo modo il rischio di incoerenze nelle descrizioni dei requisiti nonché nell'interfaccia utente e nei documenti della guida.  
+     Si considerino ad esempio le descrizioni di storie utente, di casi di utilizzo o di altri requisiti di un'applicazione ristorante. In tali descrizioni vengono usati termini come Menu, Ordine, Pasto, Prezzo, Pagamento e così via. È possibile creare un diagramma classi UML che definisca le relazioni tra questi termini riducendo in questo modo il rischio di incoerenze nelle descrizioni dei requisiti nonché nell'interfaccia utente e nei documenti della guida.  
   
 ### <a name="relationship-to-other-diagrams"></a>Relazione con altri diagrammi  
  Un diagramma classi UML viene in genere creato con altri diagrammi di modellazione per fornire descrizioni dei tipi usati. In ogni caso, la rappresentazione fisica dei tipi non è implicita nei diagrammi.  
@@ -59,7 +56,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Tipi di pin di input e output e di nodi parametro attività.  
   
- Visualizzare [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+ Vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
  Diagramma sequenza  
   
@@ -67,22 +64,22 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Tipi di linee di vita. La classe di una linea di vita deve includere le operazioni per tutti i messaggi che può ricevere.  
   
- Visualizzare [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  Diagramma dei componenti  
   
  Interfacce di componenti con le relative operazioni.  
   
- Visualizzare [diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md).  
+ Vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md).  
   
  Diagramma caso di utilizzo  
   
  Tipi indicati nelle descrizioni degli obiettivi e dei passaggi di un caso d'uso.  
   
- Visualizzare [diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Vedere [diagrammi caso di utilizzo UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi classi  
- Per informazioni di riferimento sugli elementi in diagrammi classi UML, vedere [diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md).  
+ Per informazioni di riferimento sugli elementi in diagrammi classi UML, vedere [diagrammi classi UML: informazioni di riferimento](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
 >  I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
@@ -149,13 +146,13 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Se sono state definite interfacce nei componenti di un diagramma dei componenti, è possibile trascinare un'interfaccia da **Esplora modelli UML** al diagramma classi. Nel diagramma classe è possibile definire i metodi inclusi nell'interfaccia.  
   
- Visualizzare [diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md).  
+ Vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md).  
   
  Diagramma di sequenza UML  
   
  È possibile creare classi e interfacce dalle linee di vita in un diagramma di sequenza e quindi trascinare la classe da **Esplora modelli UML** a un diagramma classi UML. Ogni linea di vita in un diagramma di sequenza rappresenta un'istanza di un oggetto, un componente o un attore.  
   
- Per creare una classe da una linea di vita, aprire il menu di scelta rapida per la linea di vita e quindi scegliere **Crea classe** oppure **Crea interfaccia**. Visualizzare [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Per creare una classe da una linea di vita, aprire il menu di scelta rapida per la linea di vita e quindi scegliere **Crea classe** oppure **Crea interfaccia**. Vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ##  <a name="AttributesAndOperations"></a> Attributi e operazioni  
  Un attributo (4) è un valore denominato che ogni istanza di un tipo può avere. L'accesso a un attributo non modifica lo stato dell'istanza.  
@@ -179,7 +176,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
 - **(nessuno)**  -È possibile lasciare un tipo non specificato nella firma omettendo i due punti precedenti (`:`).  
   
-- Uno dei tipi primitivi standard: **booleana**, **Integer**, **stringa**.  
+- Uno dei tipi primitivi standard: **Booleano**, **Integer**, **stringa**.  
   
 - Un tipo definito nel modello.  
   
@@ -341,7 +338,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Oltre alle proprietà dell'associazione nel suo complesso, ogni *ruolo*, ovvero ogni estremità dell'associazione, ha alcune proprietà di un proprio. Per visualizzarle, espandere la **primo ruolo** e **secondo ruolo** proprietà.  
   
- Alcune proprietà di ogni ruolo sono visibili direttamente nel diagramma. Esse sono:  
+ Alcune proprietà di ogni ruolo sono visibili direttamente nel diagramma. Le visualizzazioni sono le seguenti:  
   
 - Role name. Viene visualizzato all'estremità appropriata dell'associazione nel diagramma. È possibile impostarlo nel diagramma o nel **proprietà** finestra.  
   
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
  [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: riferimenti](../modeling/uml-component-diagrams-reference.md)

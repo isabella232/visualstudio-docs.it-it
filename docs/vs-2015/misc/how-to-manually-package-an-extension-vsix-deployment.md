@@ -1,25 +1,20 @@
 ---
-title: 'Procedura: creare manualmente il pacchetto estensione (distribuzione VSIX) | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare manualmente il pacchetto estensione (distribuzione VSIX) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
-manager: douge
-ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965955"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedura: Creare manualmente il pacchetto di un'estensione (distribuzione VSIX)
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedura: Creare manualmente il pacchetto estensione (distribuzione VSIX)
 È possibile creare un pacchetto VSIX per eseguire il wrapping di un'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per la distribuzione. La creazione del pacchetto può avvenire in tre modi:  
   
 - Creare un progetto di pacchetto VSIX usando uno dei modelli di estendibilità inclusi in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Questa è l'opzione più semplice per la maggior parte degli scenari.  
@@ -31,7 +26,7 @@ ms.locfileid: "49925838"
   Questo documento descrive la terza opzione.  
   
 ## <a name="creating-a-vsix-package"></a>Creazione di un pacchetto VSIX  
- Per creare manualmente un pacchetto di un'estensione, aggiungere un file extension.manifest e un file [Content_Types].xml al progetto di estensione, inserirli in un file compresso con l'output di compilazione e rinominare il file compresso assegnandogli un'estensione di file vsix. L'estensione di cui creare il pacchetto deve essere di un tipo supportato dallo [schema VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Per creare manualmente un pacchetto di un'estensione, aggiungere un file extension.manifest e un file [Content_Types].xml al progetto di estensione, inserirli in un file compresso con l'output di compilazione e rinominare il file compresso assegnandogli un'estensione di file vsix. L'estensione di cui creare il pacchetto deve essere di un tipo supportato dallo [schema VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 >  I nomi dei file nei pacchetti VSIX non devono includere spazi, né caratteri riservati in identificatori URI (Uniform Resource), come definito in [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -42,7 +37,7 @@ ms.locfileid: "49925838"
   
 2.  Creare un file XML e assegnargli il nome `extension.vsixmanifest`.  
   
-3.  Compilare il file extension.vsixmanifest in base allo schema VSIX. Per un esempio di manifesto, vedere [Elemento PackageManifest (elemento radice, schema VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3.  Compilare il file extension.vsixmanifest in base allo schema VSIX. Per un esempio di manifesto, vedere [Elemento PackageManifest (elemento radice, schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4.  Creare un secondo file XML e assegnargli il nome `[Content_Types].xml`.  
   
@@ -61,4 +56,4 @@ ms.locfileid: "49925838"
 ## <a name="see-also"></a>Vedere anche  
  [Estensioni di Visual Studio di spedizione](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Elemento PackageManifest (elemento radice, Schema VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Elemento PackageManifest (elemento radice, Schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
