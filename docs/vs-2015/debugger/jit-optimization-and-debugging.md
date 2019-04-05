@@ -1,14 +1,9 @@
 ---
 title: JIT debug e ottimizzazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab86e023b99f524651b56bbca4ddea2d613448e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4a0cf53dcc9870b5d0c93d2fcaaf2d942fd9959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965094"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +40,5 @@ Quando si esegue il debug di un'applicazione gestita, [!INCLUDE[vsprvs](../inclu
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
  [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)   
- [Collegamento a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Processo di esecuzione gestita](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
-
-
-
