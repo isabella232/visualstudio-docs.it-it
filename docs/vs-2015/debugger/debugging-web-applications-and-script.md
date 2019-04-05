@@ -1,14 +1,9 @@
 ---
 title: Debug di Script e applicazioni Web | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,13 +21,13 @@ ms.assetid: 6968625d-9783-4ad6-8bf5-eb85b548844c
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f44dc85d6378f4a8303fac846ad32528081b54b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955716"
 ---
 # <a name="debugging-web-applications-and-script"></a>Debug di script e applicazioni Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +40,11 @@ Legenda tabella:
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
  Vengono forniti prerequisiti e istruzioni relativi all'esecuzione del debug di un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] durante lo sviluppo o dopo la distribuzione.  
   
- [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Vengono elencati gli errori riscontrabili durante il debug di applicazioni Web e vengono suggerite le soluzioni.  
   
- [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Viene descritto come utilizzare il **attività in parallelo** e **stack in parallelo** finestre degli strumenti di debug di un'applicazione parallela.  
+ [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Applicazioni Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
@@ -67,6 +62,3 @@ Legenda tabella:
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

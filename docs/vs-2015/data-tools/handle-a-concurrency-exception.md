@@ -1,12 +1,9 @@
 ---
 title: Gestire un'eccezione di concorrenza | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955157"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 4.  Inserire dati da un set di dati di `Customers` tabella nel database Northwind.  
   
-5.  Usare la [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio per accedere direttamente il `Customers` dati tabella e modificare un record.  
+5.  Usare la [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio per accedere direttamente il `Customers` dati tabella e modificare un record.  
   
 6.  Modificare lo stesso record su un valore diverso, aggiornare il set di dati e tentano di scrivere le modifiche al database, che comporta un errore di concorrenza.  
   
@@ -56,10 +53,10 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  
   
--   Accesso al database Northwind di esempio con l'autorizzazione per eseguire gli aggiornamenti. Per altre informazioni, vedere [procedura: installare database di esempio](../data-tools/how-to-install-sample-databases.md).  
+-   Accesso al database Northwind di esempio con l'autorizzazione per eseguire gli aggiornamenti.
   
 > [!NOTE]
->  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto  
  Iniziare la procedura dettagliata creando una nuova applicazione Windows.  
@@ -83,7 +80,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 1.  Nel **Data** menu, scegliere **origine aggiungere nuovi dati**.  
   
-     Il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) apre.  
+     Viene avviata la [Configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 2.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**.  
   
@@ -211,7 +208,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 8.  Nel primo record nel form (`ALFKI`), cambiare`ContactName` a `Maria Anders1`.  
   
-9. Selezionare il **salvare** pulsante.  
+9. Selezionare il pulsante **Salva**.  
   
      Viene generato l'errore di concorrenza e viene visualizzata la finestra di messaggio.  
   

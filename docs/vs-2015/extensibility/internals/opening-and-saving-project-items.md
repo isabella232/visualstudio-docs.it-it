@@ -1,14 +1,9 @@
 ---
 title: Apertura e salvataggio di elementi di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], file persistence
 - files [Visual Studio], opening and saving
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964990"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura e salvataggio di elementi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,10 +31,10 @@ Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e
  [Visualizzazione di file tramite il comando Apri con](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Fornisce una spiegazione dettagliata e dettagliata del modo in cui l'IDE gestisce i **aperta con** comando, che richiede l'apertura di un file con alcune scelte degli editor standard.  
   
- [Procedura: Aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Procedura: Apri editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)  
  Vengono fornite istruzioni dettagliate che consentono di specificare che i file di un determinato tipo nel progetto devono essere aperto usando un editor specifico del progetto.  
   
- [Procedura: Aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)  
+ [Procedura: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md)  
  Vengono fornite istruzioni dettagliate per la specifica come abilitare l'IDE aprire un editor standard per i file nel tipo di progetto.  
   
  [Procedura: Aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)  
@@ -60,4 +55,3 @@ Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e
   
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
  Illustra come progetti consentono di controllare la modalità di codice viene compilato e creato, come aprire gli editor e come formattare gli elementi del progetto.
-

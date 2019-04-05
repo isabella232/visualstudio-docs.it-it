@@ -1,14 +1,9 @@
 ---
 title: Codici di errore | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
 - source control plug-ins, error codes
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb27b2b64df0d7f8c0aefb5975844126363fe31d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fef596fdfa9bb29fac38c72890392c33a86b31d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808343"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955074"
 ---
 # <a name="error-codes"></a>Codici di errore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando una funzione API dei plug-in del controllo origine restituisce un errore, si dovrà essere uno dei seguenti codici di errore. Tutti gli errori sono negativi, sono positivi, avvisi o i codici di errore informativo e operazioni riuscite sono 0.  
   
-|Codice di errore|Valore|Descrizione|  
+|Codice di errore|Value|Descrizione|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Plug-in supporta l'aggiunta di file dal controllo del codice sorgente in due passaggi. Per altre informazioni, vedere [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|Il file locale è diverso dal file nel database di controllo di origine (ad esempio, [SccDiff](../extensibility/sccdiff-function.md) può restituire questo valore).|  
@@ -88,4 +83,3 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
   
 ## <a name="see-also"></a>Vedere anche  
  [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
-

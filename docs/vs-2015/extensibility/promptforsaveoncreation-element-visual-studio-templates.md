@@ -1,14 +1,9 @@
 ---
 title: Elemento PromptForSaveOnCreation (modelli di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
 helpviewer_keywords:
@@ -16,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6d6480df4d51e91f6953fcbb5c5c00542dac2d8e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966952"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il **nuovo progetto** finestra di dialogo durante la creazione di un progetto. Se questo elemento è impostato su `true`, quindi l'utente viene richiesto un salvataggio posizione; se `false`, quindi non vengono visualizzate. (Vale a dire, un progetto temporaneo viene creato.)  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -62,7 +57,7 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 ## <a name="remarks"></a>Note  
  `PromptForSaveOnCreation` è un elemento facoltativo. Il valore predefinito è `false`.  
   
- I progetti temporanei sono progetti che è possibile creare e modificare senza salvarne i contenuti del progetto su disco. Per altre informazioni, vedere [progetti temporanei NIB](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ I progetti temporanei sono progetti che è possibile creare e modificare senza salvarne i contenuti del progetto su disco. Per altre informazioni, vedere [progetti temporanei NIB](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente imposta il valore della `PromptForSaveOnCreation` uguale a `false`, che specifica il progetto deve essere creato come progetto temporaneo.  
@@ -95,4 +90,3 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-

@@ -1,24 +1,19 @@
 ---
 title: Creazione di un Software Development Kit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969473"
 ---
 # <a name="creating-a-software-development-kit"></a>Creazione di un Software Development Kit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +57,8 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
 |Cartella riferimenti|Contiene i file binari che contengono le API che possono essere codificate a fronte. Questi possono includere i file di metadati Windows (WinMD) o assembly.|  
 |Cartella DesignTime|Contiene i file che sono necessari solo in fase di pre-run/debug. Quali documenti XML, librerie, intestazioni, i file binari in fase di progettazione della casella degli strumenti, gli elementi di MSBuild e così via<br /><br /> Documentazione XML sarebbe, in teoria, trovarsi nella cartella \DesignTime, ma la documentazione XML per i riferimenti continuerà a essere inseriti accanto ai file di riferimento in Visual Studio. Ad esempio, il documento XML per un riferimento \References\\[configurazione]\\[arch]\sample.dll saranno \References\\[configurazione]\\[arch]\sample.xml e la versione localizzata di tale documentazione si troveranno \References\\[configurazione]\\[arch]\\[locale]\sample.xml.|  
 |Cartella di configurazione|Possono essere presenti solo tre cartelle: il debug, vendita al dettaglio e CommonConfiguration. Se lo stesso set di file del SDK devono essere usati, indipendentemente dalla configurazione che sarà destinati al consumer SDK, è possono distribuire i file sotto CommonConfiguration gli autori SDK.|  
-|Cartella di architettura|Può esistere una cartella qualsiasi architettura supportata. Visual Studio supporta le seguenti architetture: x86, x64, ARM e neutral. Nota: Win32 esegue il mapping a x86 e AnyCPU esegue il mapping a neutro.<br /><br /> MSBuild cerca solo in \CommonConfiguration\neutral SDK della piattaforma.|  
-|Sdkmanifest|Questo file illustra la procedura Visual Studio devono usare il SDK. Esaminare il manifesto SDK per [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** il valore che consente di visualizzare il Visualizzatore oggetti nell'elenco di ricerca.<br /><br /> **PlatformIdentity:** l'esistenza di questo attributo indica a Visual Studio e MSBuild che il SDK è una piattaforma SDK e che i riferimenti aggiunti da quest'ultimo non devono essere copiati localmente.<br /><br /> **TargetFramework:** questo attributo viene utilizzato da Visual Studio per garantire che solo i progetti che hanno come destinazione il Framework stesso come specificato nel valore di questo attributo può utilizzare il SDK.<br /><br /> **MinVSVersion:** questo attributo viene utilizzato da Visual Studio per utilizzare solo gli SDK che si applicano a esso.<br /><br /> **Informazioni di riferimento:** questo attributo deve essere specificato per solo tali riferimenti che contengono controlli. Per informazioni su come specificare se un riferimento contiene i controlli, vedere di seguito.|  
+|Cartella di architettura|Può esistere una cartella qualsiasi architettura supportata. Visual Studio supporta le seguenti architetture: x86, x64, ARM e neutral. Nota: Esegue il mapping di Win32 per x86 e AnyCPU esegue il mapping a neutro.<br /><br /> MSBuild cerca solo in \CommonConfiguration\neutral SDK della piattaforma.|  
+|SDKManifest.xml|Questo file illustra la procedura Visual Studio devono usare il SDK. Esaminare il manifesto SDK per [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Il valore che consente di visualizzare il Visualizzatore oggetti nell'elenco di ricerca.<br /><br /> **PlatformIdentity:** L'esistenza di questo attributo indica a Visual Studio e MSBuild che il SDK è un SDK della piattaforma e che i riferimenti aggiunti da quest'ultimo non devono essere copiati localmente.<br /><br /> **TargetFramework:** Questo attributo viene utilizzato da Visual Studio per garantire che solo i progetti che hanno come destinazione il Framework stesso come specificato nel valore di questo attributo può utilizzare il SDK.<br /><br /> **MinVSVersion:** Questo attributo viene utilizzato da Visual Studio per utilizzare solo gli SDK che si applicano a esso.<br /><br /> **Informazioni di riferimento:** Questo attributo deve essere specificato per solo tali riferimenti che contengono controlli. Per informazioni su come specificare se un riferimento contiene i controlli, vedere di seguito.|  
   
 ##  <a name="ExtensionSDKs"></a> SDK di estensione  
  Le sezioni seguenti descrivono ciò che è necessario eseguire per distribuire un SDK di estensione.  
@@ -137,7 +132,7 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
   
 6.  Cartella di architettura: sono supportate le seguenti architetture: x86, x64, ARM, neutro. Esegue il mapping di Win32 per x86 e AnyCPU esegue il mapping a neutro.  
   
-### <a name="sdkmanifestxml"></a>Sdkmanifest  
+### <a name="sdkmanifestxml"></a>SDKManifest.xml  
  Questo file illustra la procedura Visual Studio devono usare il SDK. Di seguito è riportato un esempio.  
   
 ```  
@@ -166,7 +161,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 1.  DisplayName: il valore visualizzato in Gestione riferimenti, Esplora soluzioni, Visualizzatore oggetti e in altre posizioni nell'interfaccia utente per Visual Studio.  
   
-2.  ProductFamilyName: Complessiva SDK nome prodotto. Ad esempio, il [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK è denominata "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", che appartengono alla stessa famiglia della famiglia di prodotti SDK, "Microsoft.WinJS". Questo attributo consente a Visual Studio e MSBuild realizzare tale connessione. Se questo attributo non esiste, il nome del SDK viene utilizzato come il nome della famiglia di prodotti.  
+2.  ProductFamilyName: Il nome del prodotto SDK globale. Ad esempio, il [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK è denominata "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", che appartengono alla stessa famiglia della famiglia di prodotti SDK, "Microsoft.WinJS". Questo attributo consente a Visual Studio e MSBuild realizzare tale connessione. Se questo attributo non esiste, il nome del SDK viene utilizzato come il nome della famiglia di prodotti.  
   
 3.  Formato di FrameworkIdentity: specifica una dipendenza da uno o più librerie dei componenti Windows che il valore di questo attributo viene inserito nel manifesto dell'app consumer. Questo attributo è applicabile solo per le librerie dei componenti di Windows.  
   
@@ -174,9 +169,9 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 5.  MinVSVersion: versione minima di Visual Studio.  
   
-6.  MaxPlatformVerson: Versione piattaforma di destinazione massimo deve essere consente di specificare le versioni di piattaforma in cui il SDK di estensione non funzionerà. Ad esempio, di Microsoft Visual C++ Runtime Package v11.0 deve fare riferimento solo progetti Windows 8. Pertanto, MaxPlatformVersion del progetto Windows 8 è 8.0. Ciò significa che la gestione di riferimenti vengono esclusi Microsoft Visual C++ Runtime Package per un progetto Windows 8.1 e MSBuild genera un errore quando un [!INCLUDE[win81](../includes/win81-md.md)] progetto fa riferimento a essa. Nota: questo elemento è supportato a partire da [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
+6.  MaxPlatformVerson: Versione piattaforma di destinazione massima deve essere consente di specificare le versioni di piattaforma in cui il SDK di estensione non funzionerà. Ad esempio, di Microsoft Visual C++ Runtime Package v11.0 deve fare riferimento solo progetti Windows 8. Pertanto, MaxPlatformVersion del progetto Windows 8 è 8.0. Ciò significa che la gestione di riferimenti vengono esclusi Microsoft Visual C++ Runtime Package per un progetto Windows 8.1 e MSBuild genera un errore quando un [!INCLUDE[win81](../includes/win81-md.md)] progetto fa riferimento a essa. Nota: questo elemento è supportato a partire da [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
-7.  AppliesTo: specifica gli SDK che sono disponibili in Gestione riferimenti, specificando i tipi di progetto di Visual Studio applicabili. Nove valori riconosciuti: WindowsAppContainer, schermata di VisualC, VB, CSharp, WindowsXAML, JavaScript, gestito e nativo. Può usare l'autore SDK e ("+'), o ("&#124;"), non ("! ") operatori per specificare esattamente l'ambito dei tipi di progetto che si applicano al SDK.  
+7.  AppliesTo: specifica gli SDK che sono disponibili in Gestione riferimenti, specificando i tipi di progetto di Visual Studio applicabili. Nove valori vengono riconosciuti: WindowsAppContainer, schermata di VisualC, VB, CSharp, WindowsXAML, JavaScript, gestito e nativo. Può usare l'autore SDK e ("+'), o ("&#124;"), non ("! ") operatori per specificare esattamente l'ambito dei tipi di progetto che si applicano al SDK.  
   
      WindowsAppContainer identifica i progetti per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app.  
   
@@ -271,6 +266,5 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creazione di un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Procedura dettagliata: Creazione di un SDK tramite c# o Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [Procedura dettagliata: Creazione di un SDK tramite C# o Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)
-

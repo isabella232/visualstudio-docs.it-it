@@ -1,31 +1,26 @@
 ---
 title: 'Procedura dettagliata: Salvataggio delle impostazioni utente in una pagina di avvio | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969733"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale
+# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procedura dettagliata: Salvataggio delle impostazioni utente in una pagina iniziale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile mantenere le impostazioni utente per la pagina iniziale. Seguendo questa procedura dettagliata, è possibile creare un controllo per salvare un'impostazione nel Registro di sistema quando l'utente fa clic su un pulsante e quindi recupera impostata ogni volta che viene caricata la pagina iniziale. Poiché il modello di progetto di pagina iniziale include un controllo utente personalizzabile, e il valore predefinito avviare pagina XAML chiama tale controllo, non è necessario modificare la pagina iniziale di se stesso.  
   
- L'archivio delle impostazioni che viene creata un'istanza di questa procedura dettagliata è un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaccia, che legge e scrive nel percorso seguente del Registro di sistema quando viene chiamato: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  
+ L'archivio delle impostazioni che viene creata un'istanza di questa procedura dettagliata è un'istanza del <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaccia, che legge e scrive nel percorso seguente del Registro di sistema quando viene chiamata: HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
   
  Quando viene eseguito nell'istanza sperimentale di Visual Studio, l'archivio delle impostazioni legge e scrive HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
   
@@ -50,7 +45,7 @@ ms.locfileid: "51763297"
   
     -   EnvDTE80  
   
-    -   Interop  
+    -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   
@@ -210,4 +205,3 @@ ms.locfileid: "51763297"
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
  [Creazione di pagina iniziale personalizzata](../misc/creating-your-own-start-page.md)   
  [Aggiunta di comandi di Visual Studio in una pagina iniziale](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
-

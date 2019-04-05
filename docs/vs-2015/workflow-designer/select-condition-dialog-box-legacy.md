@@ -1,11 +1,8 @@
 ---
 title: Dialogo Seleziona condizione (Legacy) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968491"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Finestra di dialogo Seleziona condizione (legacy)
 Questo argomento viene descritto come usare il **Seleziona condizione** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -32,11 +29,11 @@ Questo argomento viene descritto come usare il **Seleziona condizione** nella fi
   
 - [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
-- [Attività ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
-- [Attività WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  Per informazioni su come accedere al **Seleziona condizione** della finestra di dialogo vedere [procedura: creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Per informazioni su come accedere al **Seleziona condizione** finestra di dialogo, vedere [come: Creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
   La tabella seguente descrive gli elementi dell'interfaccia utente di **Seleziona condizione** nella finestra di dialogo.  
   
@@ -55,7 +52,7 @@ Questo argomento viene descritto come usare il **Seleziona condizione** nella fi
   
 ## <a name="see-also"></a>Vedere anche  
  [Finestra di dialogo Editor condizione della regola (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Procedura: creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
+ [Procedura: Creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [Uso delle condizioni nei flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65009)   
  [Utilizzo dell'attività ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
  [Utilizzo dell'attività IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   

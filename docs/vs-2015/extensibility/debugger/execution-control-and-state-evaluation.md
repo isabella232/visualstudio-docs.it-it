@@ -1,27 +1,22 @@
 ---
 title: Controllo dell'esecuzione e valutazione dello stato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], execution control
 - expression evaluation, control of execution
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9ca3dfd470a9f6d1440b730783d0f537289385ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc6476c925f37d70ab45bae129a8b8a379ee519c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954264"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Controllo dell'esecuzione e valutazione dello stato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ Debug di un'applicazione richiede l'implementazione di tali funzionalità di con
   
  [Eventi di controllo](../../extensibility/debugger/control-events.md)  
  Descrive l'interfaccia utilizzata per inviare gli eventi durante l'esecuzione del programma controllato.
-

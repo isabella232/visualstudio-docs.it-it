@@ -1,25 +1,22 @@
 ---
 title: Definire un gestore di collegamento elemento di lavoro | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965102"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definire un gestore dei collegamenti agli elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +160,7 @@ namespace WorkItems
   
      Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Risoluzione dei problemi**: se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non viene avviato, verificare che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
+     **Risoluzione dei problemi**: Se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non viene avviato, verificare che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
 2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
   
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  Verificare che l'elemento di lavoro sia ora visualizzato in rosso. Ciò dimostra `OnWorkItemLinked()` nel codice di esempio.  
   
-     **Risoluzione dei problemi**: se i metodi del gestore non è sono eseguito, verificare che:  
+     **Risoluzione dei problemi**: Se i metodi del gestore non è sono eseguito, verificare che:  
   
     -   Progetto libreria di classi è elencato come componente MEF nel **contenuti** nell'elenco **manifest** nel progetto VSIX.  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Allegare stringhe di riferimento agli elementi del modello UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md)   
  [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Funzione SccBeginBatch | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 31064e0bc746ecc6fb67f5e2feacbd9ae91ca7bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 264d9057bf4f17281d6d8a16ed3a6794004e0e21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724356"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970038"
 ---
 # <a name="sccbeginbatch-function"></a>Funzione SccBeginBatch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Batch di operazioni completata è stata avviata.|  
 |SCC_E_UNKNOWNERROR|Errore non specifico.|  
@@ -54,4 +49,3 @@ SCCRTN SccBeginBatch(void);
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)
-

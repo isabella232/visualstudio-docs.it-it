@@ -1,25 +1,23 @@
 ---
 title: Visual Studio data tools per C++ | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a3849d9-1bc7-47d1-805e-1755223ccba2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970057"
 ---
-# <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools per C++
+# <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -27,7 +25,7 @@ C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini d
   
  Per connettersi al database SQL, le applicazioni C++ native possono usare i driver ODBC e OLE DB e il provider ADO che sono inclusi in Windows.     Questi possono connettersi a qualsiasi database che supporta tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornito per compatibilità con le versioni precedenti. Per altre informazioni su queste tecnologie di dati, vedere [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  
   
- Per sfruttare i vantaggi di funzionalità personalizzate in SQL Server 2005 e versioni successive, usare il [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Il client nativo contiene anche il driver ODBC di SQL Server e il provider OLE DB per SQL Server in una libreria di collegamento dinamico (DLL). Che supportano applicazioni che utilizzano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server.  SQL Server Native Client viene installato con SQL Server Data Tools. La Guida di programmazione è qui: [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892.aspx).  
+ Per sfruttare i vantaggi di funzionalità personalizzate in SQL Server 2005 e versioni successive, usare il [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Il client nativo contiene anche il driver ODBC di SQL Server e il provider OLE DB per SQL Server in una libreria di collegamento dinamico (DLL). Che supportano applicazioni che utilizzano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server.  SQL Server Native Client viene installato con SQL Server Data Tools. La Guida di programmazione è qui: [Programmazione di SQL Server Native Client](https://msdn.microsoft.com/library/ms130892.aspx).  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Per connettersi al database locale tramite ODBC e SQL Native Client da un'applicazione C++  
   
@@ -66,11 +64,9 @@ C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini d
    DRIVER="SQL Server Native Client 11.0"  
    ```  
   
-8. Premere F5 per compilare ed eseguire l'applicazione. Si deve visualizzare una finestra di dialogo del driver che viene richiesto di immettere un database. Immettere `(localdb)\MSSQLLocalDB`e controllare **Usa connessione Trusted**. Premere **OK**. Verrà visualizzata una console con i messaggi che indicano una connessione riuscita. È visualizzato anche un prompt dei comandi in cui è possibile digitare in un'istruzione SQL. La schermata seguente mostra un esempio di query e i risultati:  
+8. Premere F5 per compilare ed eseguire l'applicazione. Si deve visualizzare una finestra di dialogo del driver che viene richiesto di immettere un database. Immettere `(localdb)\MSSQLLocalDB`e controllare **Usa connessione Trusted**. Fare clic su **OK**. Verrà visualizzata una console con i messaggi che indicano una connessione riuscita. È visualizzato anche un prompt dei comandi in cui è possibile digitare in un'istruzione SQL. La schermata seguente mostra un esempio di query e i risultati:  
   
     ![Output di query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "output della query di esempio di ODBC raddata")  
   
 ## <a name="see-also"></a>Vedere anche  
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-

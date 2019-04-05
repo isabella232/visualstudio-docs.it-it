@@ -1,27 +1,22 @@
 ---
 title: Riferimenti su VSIX Extension Schema 2.0 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954462"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informazioni di riferimento su schema estensione VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
   
     -   `Id` : Questo attributo deve essere un ID univoco per il pacchetto scelto dall'autore. Il nome deve essere qualificato esattamente i tipi CLR sono con spazio dei nomi: Company.Product.Feature.Name. Il `Id` attributo è limitato a 100 caratteri.  
   
-    -   `Version` : Definisce la versione di questo pacchetto e il relativo contenuto. Questo attributo viene indicato il formato di controllo delle versioni di assembly CLR: revisione (1.2.40308.00). Un pacchetto con un numero di versione superiore viene considerato aggiornamenti del pacchetto e può essere installato tramite le versioni esistenti.  
+    -   `Version` : Definisce la versione di questo pacchetto e il relativo contenuto. Questo attributo viene indicato il formato di controllo delle versioni di assembly CLR: Major.Minor.Build.Revision (1.2.40308.00). Un pacchetto con un numero di versione superiore viene considerato aggiornamenti del pacchetto e può essere installato tramite le versioni esistenti.  
   
     -   `Language` : Questo attributo è la lingua predefinita per il pacchetto e corrisponde ai dati testuali di questo manifesto. Questo attributo segue la convenzione di codice delle impostazioni locali CLR per gli assembly di risorse, ad esempio: en-us, en, fr-fr. È possibile specificare `neutral` per dichiarare un'estensione indipendente dalla lingua che verrà eseguito in qualsiasi versione di Visual Studio. Il valore predefinito è `neutral`.  
   
@@ -222,4 +217,3 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

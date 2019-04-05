@@ -1,30 +1,25 @@
 ---
 title: Strumento di acquisizione da riga di comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968758"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica della grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.  
+DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- Il comando nell'esempio precedente consente di acquisire informazioni grafiche della versione desktop di Internet Explorer durante la visualizzazione della pagina Web disponibile all'indirizzo www.fishgl.com che usa l'API WebGL per il rendering del contenuto 3D.  
+ Il comando dell'esempio precedente acquisisce informazioni grafiche della versione desktop di Internet Explorer durante la visualizzazione della pagina Web all'indirizzo www.fishgl.com che usa l'API WebGL per il rendering del contenuto in 3D.  
   
 > [!NOTE]
->  Poiché gli argomenti della riga di comando che segue l'app vengono passati all'App, è necessario specificare gli argomenti per DXCap.exe prima di usare il `–c` opzione.  
+>  Poiché gli argomenti della riga di comando inseriti dopo l'app vengono passati all'app, è necessario specificare gli argomenti per DXCap.exe prima di usare l'opzione `–c`.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Acquisizione di informazioni grafiche da un'app di Windows Store  
  È possibile acquisire informazioni grafiche da un'app di Windows Store.  
@@ -168,14 +163,14 @@ DXCap.exe –e map
   
  Il comando precedente enumera le app di Windows Store che corrispondono a "map". Di seguito è riportato l'output:  
   
- **Creare un pacchetto "Microsoft.BingMaps":**  
- **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe c:\Programmi\Microsoft**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Nome: Microsoft.BingMaps**  
- **Editore: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Versione: 2.1.2914.1734**  
- **Applicazioni offline:**  
+ **Package "Microsoft.BingMaps":**  
+ **InstallDirectory: C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Name             : Microsoft.BingMaps**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          : 2.1.2914.1734**  
+ **Launchable Applications:**  
  **ID: AppexMaps**  
  **File exe: C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: No**  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>Requisiti
-
-
-

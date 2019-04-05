@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: modificare i file XML | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Modificare i file XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3864b3d3a3074f9b6be2529e8f674df90532c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966874"
 ---
-# <a name="how-to-edit-xml-files"></a>Procedura: modificare i file XML
+# <a name="how-to-edit-xml-files"></a>Procedura: di file XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -60,7 +55,7 @@ L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML 
   
 2.  Selezionare **File XML** per creare un nuovo file XML; o, selezionare **File XSLT** per creare un nuovo foglio di stile XSLT.  
   
-3.  Fare clic su **aperto**.  
+3.  Fare clic su **Apri**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>Per creare un progetto per i file XML  
   
@@ -77,7 +72,4 @@ L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML 
 ## <a name="see-also"></a>Vedere anche  
  [Editor XML](../xml-tools/xml-editor.md)   
  [Proprietà di documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)   
- [Procedura: Creare uno schema XML da un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
-
-
-
+ [Procedura: Creare un XML Schema da un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

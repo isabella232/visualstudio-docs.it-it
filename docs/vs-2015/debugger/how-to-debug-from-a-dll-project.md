@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: eseguire il Debug da un progetto di DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug da un progetto di DLL | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,20 +19,20 @@ ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796259"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967338"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>Procedura: eseguire il debug da un progetto di DLL
+# <a name="how-to-debug-from-a-dll-project"></a>Procedura: Eseguire il debug da un progetto di DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per avviare il debug di un progetto DLL, è necessario specificare l'applicazione chiamante nelle proprietà del progetto. Il layout e il contenuto delle pagine delle proprietà di C++ sono diversi da quelli delle pagine delle proprietà di C# e Visual Basic.  
   
- Se una DLL gestita viene chiamata da codice nativo e si vuole eseguire il debug di entrambi, specificarlo nelle proprietà del progetto. Per altre informazioni, vedere [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  
+ Se una DLL gestita viene chiamata da codice nativo e si vuole eseguire il debug di entrambi, specificarlo nelle proprietà del progetto. Per altre informazioni, vedere [Procedura: Eseguire il debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
 >  Non è possibile specificare un'applicazione chiamante esterna nelle edizioni Express di Visual Studio. È necessario aggiungere un progetto eseguibile alla soluzione, impostarlo come progetto di avvio e chiamare i metodi nella DLL dal progetto eseguibile.  
@@ -46,7 +41,7 @@ Per avviare il debug di un progetto DLL, è necessario specificare l'applicazion
   
 1.  Fare clic sul nodo del progetto nel **Esplora soluzioni** e selezionare **proprietà**. Andare alla **Debug** scheda.  
   
-2.  Assicurarsi che il **Configuration** campo nella parte superiore della finestra è impostato su **Debug**.  
+2.  Assicurarsi che il campo **Configurazione** nella parte superiore della finestra sia impostato su **Debug**.  
   
 3.  Passare a **le proprietà di configurazione / Debug**.  
   
@@ -54,7 +49,7 @@ Per avviare il debug di un progetto DLL, è necessario specificare l'applicazion
   
 5.  Nel **comandi** oppure **comando remoto** , aggiungere il nome del percorso completo dell'applicazione.  
   
-6.  Aggiungere gli argomenti del programma necessari per il **argomenti del comando** casella.  
+6.  Aggiungere tutti gli argomenti del programma necessari nella casella **Argomenti del comando**.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Per specificare l'applicazione chiamante in un progetto C# o Visual Basic  
   
@@ -79,6 +74,3 @@ Per avviare il debug di un progetto DLL, è necessario specificare l'applicazion
  [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-

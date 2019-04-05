@@ -1,14 +1,9 @@
 ---
-title: 'Errore: Impossibile avviare la comunicazione DCOM | Microsoft Docs'
-ms.custom: ''
+title: 'Errore: Non è possibile avviare la comunicazione DCOM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.unmarshal_server_failed
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 2a7b27e6-2526-4f32-bc4d-eaee447f24ec
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 69fc98b18b89e3720340298500b44e62b621f0c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 514f4e3de9bd5b79387a17dffe0e016dc92ea91e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955724"
 ---
-# <a name="error-unable-to-initiate-dcom-communication"></a>Errore: impossibile avviare la comunicazione DCOM
+# <a name="error-unable-to-initiate-dcom-communication"></a>Errore: Impossibile iniziare la comunicazione DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si è verificato un errore DCOM quando il computer locale ha tentato di comunicare con il computer remoto. Questo errore è causato dalla presenza di un firewall nel server remoto oppure dall'interruzione dell'autenticazione di Windows nel computer remoto.  
@@ -41,6 +36,3 @@ Si è verificato un errore DCOM quando il computer locale ha tentato di comunica
   
 ## <a name="see-also"></a>Vedere anche  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

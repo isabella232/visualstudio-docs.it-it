@@ -1,25 +1,22 @@
 ---
 title: Aggiungere la convalida architettura personalizzati a diagrammi livelli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969393"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +191,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".  
   
 ##  <a name="debugging"></a> Debug della convalida  
- Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.  
+ Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Eseguire il test con una soluzione che contiene dipendenze  
  La convalida non viene eseguita se non sono presenti le caratteristiche seguenti:  
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>Vedere anche  
  [Estendere i diagrammi livello](../modeling/extend-layer-diagrams.md)
-
-
-
