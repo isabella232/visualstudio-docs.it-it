@@ -1,25 +1,20 @@
 ---
-title: 'Procedura dettagliata: Uso di IntelliTrace | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Utilizzo di IntelliTrace | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955543"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Procedura dettagliata: Utilizzo di IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,13 +63,13 @@ ms.locfileid: "51781309"
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace Update1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 7.  Selezionare l'evento per espandere i dettagli.  
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
   
      È possibile scegliere il collegamento al percorso per aprire il file. Se il nome del percorso completo non è disponibile, viene visualizzata la finestra di dialogo **Apri file** .  
   
@@ -82,7 +77,7 @@ ms.locfileid: "51781309"
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 8.  Se il bug non viene trovato, provare ad analizzare altri eventi. È anche possibile che IntelliTrace registri le informazioni sulle chiamate in modo da eseguire le chiamate alle funzioni.  
   
@@ -106,9 +101,3 @@ ms.locfileid: "51781309"
     >  È possibile riscontrare che alcune chiamate sono visualizzate in grigio. Le chiamate vengono visualizzate in grigio perché IntelliTrace non ha registrato i dati dei moduli corrispondenti. Per visualizzare questi dati, impostare la raccolta dei dati da tali moduli da parte di IntelliTrace. Per informazioni sulla specifica di moduli, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Passaggi successivi
-
-
-
-
-
-

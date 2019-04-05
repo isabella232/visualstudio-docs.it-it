@@ -1,25 +1,22 @@
 ---
 title: Leggere un modello UML nel codice del programma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, reading models
 ms.assetid: 0f63105e-6079-498a-94f1-318c0f5f9621
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62355c8b934b152aae8d3a4102432d2eb0553473
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955182"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Leggere un modello UML nel codice programma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,6 +107,3 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ## <a name="see-also"></a>Vedere anche  
  [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md)   
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

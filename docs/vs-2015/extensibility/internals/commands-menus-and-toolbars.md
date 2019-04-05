@@ -1,14 +1,9 @@
 ---
 title: I comandi, menu e barre degli strumenti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966940"
 ---
 # <a name="commands-menus-and-toolbars"></a>Comandi, menu e barre degli strumenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Menu e barre degli strumenti sono che consente agli utenti di accedere ai comand
   
 - Quando si crea un comando, è anche necessario creare un gestore eventi per esso. Il gestore eventi determina quando il comando è visibile o abilitato, consente di modificarne il testo e garantisce che il comando risponda in modo appropriato ("routing") quando attivato. Nella maggior parte dei casi, l'IDE gestisce i comandi usando l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. I comandi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] eseguono il routing in modo gerarchico, a partire dal contesto del comando più interno, in base alla selezione locale, e procedendo verso il contesto più esterno, in base alla selezione globale. I comandi aggiunti al menu principale sono immediatamente disponibili per lo scripting. Per altre informazioni, vedere [Vs confronto tra oggetti MenuCommand. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) e [gli oggetti di contesto di selezione](../../extensibility/internals/selection-context-objects.md).  
   
-  Per definire nuovi menu e barre degli strumenti, è necessario descriverli in un file VSCT (Visual Studio Command Table). Il modello di pacchetto di Visual Studio crea automaticamente questo file, insieme agli elementi necessari per supportare qualsiasi comando, barra degli strumenti ed editor selezionato nel modello. In alternativa, è possibile scrivere il proprio file VSCT usando il linguaggio XML Schema descritto qui: [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
+  Per definire nuovi menu e barre degli strumenti, è necessario descriverli in un file VSCT (Visual Studio Command Table). Il modello di pacchetto di Visual Studio crea automaticamente questo file, insieme agli elementi necessari per supportare qualsiasi comando, barra degli strumenti ed editor selezionato nel modello. In alternativa, è possibile scrivere il proprio file vsct usando il linguaggio xml schema descritto qui: [Riferimento allo Schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
   Per altre informazioni sull'utilizzo dei file con estensione vsct, vedere [Visual Studio Command Table (. File Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
@@ -69,4 +64,3 @@ Menu e barre degli strumenti sono che consente agli utenti di accedere ai comand
 ## <a name="related-sections"></a>Sezioni correlate  
  [Routing dei comandi nei pacchetti VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
  Viene illustrato il routing dei comandi nei pacchetti VSPackage.
-

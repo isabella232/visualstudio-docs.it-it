@@ -1,14 +1,9 @@
 ---
 title: 'CA1710: Gli identificatori devono contenere il suffisso corretto | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1710
 - IdentifiersShouldHaveCorrectSuffix
@@ -20,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2256e3f20dfdb4ddb8efa28d7ecdd203a139bcc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5b0336e1f503d3f540fb8129beab57891564ce0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965442"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Gli identificatori devono contenere il suffisso corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,10 +90,7 @@ foreach(SomeType x in SomeDictionary.Values) { }
  Per altri suffissi, non escludere un avviso da questa regola. Il suffisso consente l'utilizzo previsto sia evidente dal nome del tipo.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1711: Gli identificatori non devono contenere un suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711: Gli identificatori non devono contenere il suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Gli attributi](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: eventi e delegati](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [Gli attributi](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Eventi e delegati](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

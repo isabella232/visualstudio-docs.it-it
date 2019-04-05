@@ -1,31 +1,28 @@
 ---
 title: Impossibile creare un'associazione &lt;il nome dell'associazione&gt; -tipi di proprietà non corrispondono | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968112"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;il nome dell'associazione&gt; -tipi di proprietà non corrispondono
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. Le proprietà non hanno tipi corrispondenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Impossibile creare un'associazione \<nome associazione >-tipi di proprietà non corrispondono. Proprietà non hanno tipi corrispondenti: \<i nomi delle proprietà >.  
+Impossibile creare un'associazione \<nome associazione>. Le proprietà non hanno tipi corrispondenti. Le proprietà non hanno tipi corrispondenti: \<nomi proprietà>.  
   
- Le associazioni vengono definite dall'oggetto selezionato **le proprietà di associazione** nel **Editor di associazione** nella finestra di dialogo. Le proprietà di ciascun lato dell'associazione devono presentare lo stesso tipo di dati.  
+ Le associazioni vengono definite dalle **Proprietà associazione** selezionate nella finestra di dialogo **Editor di associazione**. Le proprietà di ciascun lato dell'associazione devono presentare lo stesso tipo di dati.  
   
  Quelle elencate nel messaggio non presentano gli stessi tipi di dati.  
   
@@ -35,12 +32,11 @@ Impossibile creare un'associazione \<nome associazione >-tipi di proprietà non 
   
 2.  Fare clic su **OK** per chiudere la finestra di dialogo.  
   
-3.  Esaminare i **le proprietà di associazione** e selezionare le proprietà del tipo di dati stesso.  
+3.  Controllare le **Proprietà associazione** e selezionare le proprietà che presentano lo stesso tipo di dati.  
   
 4.  Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare un'associazione (relazione) tra classi LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [Procedura: Creare un'associazione (relazione) tra classi LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
  [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

@@ -1,25 +1,20 @@
 ---
 title: Formattazione, XML, Editor di testo, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d4f759b947344298eca36c3fd99d024f7fcde2c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968118"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formattazione, XML, Editor di testo, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,6 +65,3 @@ Questa finestra di dialogo consente di specificare le impostazioni di formattazi
 ## <a name="see-also"></a>Vedere anche  
  [Proprietà di documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)   
  [Componenti dell'editor XML](../xml-tools/xml-editor-components.md)
-
-
-

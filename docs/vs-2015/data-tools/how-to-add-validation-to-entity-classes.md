@@ -1,29 +1,26 @@
 ---
-title: 'Procedura: aggiungere la convalida a classi di entità | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Aggiungere la convalida a classi di entità | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965776"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Procedura: aggiungere la convalida a classi di entità
+# <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-*La convalida* le classi di entità è il processo di conferma che i valori immessi negli oggetti dati sono conformi con i vincoli nello schema di un oggetto, nonché alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.  
+La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.  
   
  Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) vengono forniti metodi parziali che consentono agli utenti di estendere il codice generato da progettazione che viene eseguito durante l'inserimento, aggiornamento ed eliminazione di entità complete nonché durante e dopo la singola colonna modifiche.  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49812752"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Per convalidare i dati durante la modifica del valore di una colonna  
   
-1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic il **dbml** del file in **Esplora soluzioni**.)  
+1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)  
   
 2. Nella finestra di Progettazione relazionale oggetti, fare doppio clic su della classe per cui si desidera aggiungere la convalida e quindi fare clic su **Visualizza codice**.  
   
@@ -47,7 +44,7 @@ ms.locfileid: "49812752"
   
 4. Per i progetti di Visual Basic:  
   
-   1. Espandere la **nome del metodo** elenco.  
+   1. Espandere l'elenco **Nome metodo**.  
   
    2. Individuare il **sul**_nomecolonna_**Changing** metodo per la colonna che si desidera aggiungere la convalida.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49812752"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità  
   
-1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic il **dbml** del file in **Esplora soluzioni**.)  
+1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)  
   
 2. Fare doppio clic su un'area vuota della finestra di Progettazione relazionale oggetti e fare clic su **Visualizza codice**.  
   
@@ -96,7 +93,7 @@ ms.locfileid: "49812752"
   
 4. Per i progetti di Visual Basic:  
   
-   1. Espandere la **nome del metodo** elenco.  
+   1. Espandere l'elenco **Nome metodo**.  
   
    2. Fare clic su **Update**_NOMECLASSEDIENTITÀ_.  
   
@@ -131,5 +128,4 @@ ms.locfileid: "49812752"
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [La convalida dei dati](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
-
+ [Convalida dei dati](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

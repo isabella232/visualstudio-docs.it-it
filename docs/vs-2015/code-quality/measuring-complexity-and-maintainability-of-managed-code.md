@@ -1,14 +1,9 @@
 ---
 title: Misurazione della complessità e della manutenibilità del codice gestito | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: 952b6f2e-584f-4c97-a5ba-42d7bd47a576
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2926fb0ced23fb7bdf794730898313ce8b4e9d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964482"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Misurazione della complessità e della manutenibilità del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +42,12 @@ La maggiore complessità delle applicazioni software moderne aumenta anche la di
   
  [Uso di dati di metrica del codice](../code-quality/working-with-code-metrics-data.md)  
   
- [Procedura: copiare i risultati metrica codice negli Appunti](http://msdn.microsoft.com/en-us/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Procedura: Copiare i risultati metrica codice negli Appunti](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Procedura: esportare i risultati metrica codice in Excel](http://msdn.microsoft.com/en-us/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Procedura: Esportare i risultati metrica codice in Excel](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Procedura: creare un elemento di lavoro basato su un risultato](http://msdn.microsoft.com/en-us/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Procedura: Creare un elemento di lavoro basato su un risultato](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Risoluzione dei problemi di metrica codice](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Esecuzione di attività di sviluppo comuni](http://msdn.microsoft.com/en-us/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
-
-
-
+ [Esecuzione di attività di sviluppo comuni](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

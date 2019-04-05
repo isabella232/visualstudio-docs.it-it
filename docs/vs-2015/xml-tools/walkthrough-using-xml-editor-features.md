@@ -1,27 +1,22 @@
 ---
-title: "Procedura dettagliata: Uso funzionalità dell'Editor XML | Microsoft Docs"
-ms.custom: ''
+title: "Procedura dettagliata: Utilizzo delle funzionalità dell'Editor XML | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966650"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Procedura dettagliata: utilizzo delle funzionalità dell'editor XML
+# <a name="walkthrough-using-xml-editor-features"></a>Procedura dettagliata: Utilizzo delle funzionalità dell'Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. Nella procedura dettagliata vengono inoltre usate alcune delle funzionalità dell'editor XML che lo rendono particolarmente utile per la creazione di codice XML.  
@@ -77,7 +72,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
   
 5.  Digitare `>` per chiudere il tag.  
   
-6.  L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. La descrizione comando visualizza il messaggio: contenuto dell'elemento 'employee' incompleto. Previsto "Identificatore".  
+6.  L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. Nella descrizione del comando viene visualizzato il messaggio: Contenuto dell'elemento 'employee' incompleto. Previsto "Identificatore".  
   
 7.  Tipo di `<` e selezionare **ID** dall'elenco dei membri. Digitare quindi `>`.  
   
@@ -85,7 +80,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
   
 8.  Tipo di **abc**.  
   
-     Il **abc** testo ha una sottolineatura ondulata. La descrizione comando visualizza il messaggio: l'elemento 'identificatore' non ha un valore valido per il relativo tipo di dati.  
+     Il **abc** testo ha una sottolineatura ondulata. Nella descrizione del comando viene visualizzato il messaggio: l'elemento 'identificatore' non ha un valore valido per il relativo tipo di dati.  
   
 9. Fare clic con il pulsante destro sull'elemento ID e selezionare **Vai a definizione**.  
   
@@ -93,7 +88,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
   
 10. Tornare al file XML e sostituire il **abc** testo con **123**.  
   
-     La sottolineatura ondulata e la descrizione comando sotto il valore identificatore dell'elemento vengono cancellati. La descrizione comando del tag di fine del dipendente visualizza il messaggio: contenuto dell'elemento 'employee' incompleto. Previsto 'hire-date'.  
+     La sottolineatura ondulata e la descrizione comando sotto il valore identificatore dell'elemento vengono cancellati. La descrizione comando del tag di fine del dipendente ora visualizza il messaggio: Contenuto dell'elemento 'employee' incompleto. Previsto 'hire-date'.  
   
 11. Posizionare il cursore dopo il tag di fine identificatore, digitare `<`, scegliere la data di assunzione dall'elenco dei membri, quindi digitare `>`.  
   
@@ -136,4 +131,3 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
   
 ## <a name="see-also"></a>Vedere anche  
  [Editor XML](../xml-tools/xml-editor.md)
-

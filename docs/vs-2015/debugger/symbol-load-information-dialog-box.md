@@ -1,14 +1,9 @@
 ---
 title: Finestra di dialogo informazioni caricamento dei simboli | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.symbols.loadinfo
 dev_langs:
@@ -20,28 +15,25 @@ ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb7b52a0403a1a982e398a3ac6e90a3fe1256ada
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 321de64442b983dd6da1d23c25d535b389f15bfc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955768"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **informazioni sul caricamento simboli** verrà visualizzata la finestra di dialogo quando facendo clic sui **moduli** finestra e scegliere **informazioni sul caricamento simboli**.  
+La finestra di dialogo **Informazioni sul caricamento simboli** viene visualizzata quando si fa clic con il pulsante destro del mouse nella finestra **Moduli** e si sceglie **Informazioni sul caricamento simboli**.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Informazioni**  
- Mostra le directory cercate i file di simboli (file PDB) basati su Visual Studio installa le impostazioni e le modifiche apportate alle impostazioni dei simboli nel **opzioni** nella finestra di dialogo.  
+ Visualizza le directory in cui vengono cercati i file di simboli con estensione PDB in base alle impostazioni di installazione di Visual Studio e alle modifiche apportate alle impostazioni dei simboli nella finestra di dialogo **Opzioni**.  
   
  **Impostazioni simboli**  
- Fare clic su questo pulsante per modificare le impostazioni dei simboli nel **le opzioni** finestra di dialogo (**debug** categoria **simboli** pagina). In questa pagina è possibile aggiungere o rimuovere percorsi di simboli, specificare un percorso di cache locale se si utilizza un server di simboli e controllare quando vengono eseguite ricerche in tali percorsi.  
+ Scegliere questo pulsante per modificare le impostazioni dei simboli nella finestra di dialogo **Opzioni** (categoria **Debug**, pagina **Simboli**). In questa pagina è possibile aggiungere o rimuovere percorsi di simboli, specificare un percorso di cache locale se si utilizza un server di simboli e controllare quando vengono eseguite ricerche in tali percorsi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
