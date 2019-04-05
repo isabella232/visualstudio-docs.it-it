@@ -1,11 +1,8 @@
 ---
 title: Finestra di dialogo Definizione di CorrelatesOn | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
@@ -13,13 +10,13 @@ ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3171efb985eec54d0e935d2e8499c69631c6dfc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285818"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001637"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Finestra di dialogo Definizione di CorrelatesOn
 Il **CorrelatesOn** finestra di dialogo viene utilizzata nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] per modificare la <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> proprietà di un <xref:System.ServiceModel.Activities.Receive> attività. [!INCLUDE[crdefault](../includes/crdefault-md.md)] il [ricezione](../workflow-designer/receive-activity-designer.md) argomento.  
@@ -39,5 +36,4 @@ Il **CorrelatesOn** finestra di dialogo viene utilizzata nella [!INCLUDE[wfd1](.
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.ServiceModel.Activities.Receive>   
  [Aggiungi finestra di dialogo di inizializzatori di correlazione](../workflow-designer/add-correlationinitializers-dialog-box.md)   
- [Aggiungi finestra di dialogo di correlazione](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [Finestra di dialogo Inizializza correlazione](../workflow-designer/initialize-correlation-dialog-box.md)

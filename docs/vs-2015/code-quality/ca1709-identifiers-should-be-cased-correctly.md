@@ -1,14 +1,9 @@
 ---
 title: 'CA1709: Gli identificatori devono essere digitati correttamente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -20,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 795bf9c307862195cd9ec70bb2de1f89ca4d1e17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4f2fff418e8d791898a4e5db00fe639b5d524d95
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199550"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001848"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1709: gli identificatori devono essere digitati correttamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1709: Gli identificatori devono essere digitati correttamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) su docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -57,7 +52,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1709: gli id
   
  Questa regola suddivide il nome in base alle maiuscole e minuscole di parole e controlla le parole di due lettere rispetto a un elenco di parole di due lettere comuni, ad esempio "In" o "My". Se non viene trovata una corrispondenza, la parola è considerata un acronimo. Inoltre, questa regola presuppone che è stata rilevata l'acronimo quando il nome contiene quattro lettere maiuscole in una riga o tre lettere maiuscole in una riga alla fine del nome.  
   
- Per convenzione, gli acronimi di due lettere usano lettere maiuscole e gli acronimi di tre o più caratteri utilizzano la convenzione Pascal maiuscole e minuscole. Gli esempi seguenti usano questa convenzione di denominazione: 'DB', 'CR', 'Cpa' e 'Ecma'. Negli esempi seguenti violano la convenzione: 'Io', 'XML' e 'DoD' e per i nomi, "xp" e "cpl".  
+ Per convenzione, gli acronimi di due lettere usano lettere maiuscole e gli acronimi di tre o più caratteri utilizzano la convenzione Pascal maiuscole e minuscole. Gli esempi seguenti usano questa convenzione di denominazione: 'DB', 'CR', 'Cpa' e 'Ecma'. Negli esempi seguenti non rispettano la convenzione: 'Io', 'XML' e 'DoD' e per i nomi, "xp" e "cpl".  
   
  'ID' è maiuscole/minuscole speciale per causare una violazione della regola. 'ID' non è un acronimo bensì l'abbreviazione di 'identification'.  
   
@@ -67,8 +62,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1709: gli id
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  È possibile eliminare questo avviso se si dispone di proprie convenzioni di denominazione oppure se l'identificatore rappresenta un nome appropriato, ad esempio, il nome di una società o una tecnologia.  
   
- È anche possibile aggiungere condizioni specifiche, le abbreviazioni e gli acronimi che a un dizionario personalizzato di analisi del codice. I termini specificati nel dizionario personalizzato non genererà le violazioni di questa regola. Per altre informazioni, vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ È anche possibile aggiungere condizioni specifiche, le abbreviazioni e gli acronimi che a un dizionario personalizzato di analisi del codice. I termini specificati nel dizionario personalizzato non genererà le violazioni di questa regola. Per altre informazioni, vedere [Procedura: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Regole correlate  
- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

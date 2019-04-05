@@ -1,14 +1,9 @@
 ---
-title: 'CA1801: Rivedere i parametri inutilizzati | Microsoft Docs'
-ms.custom: ''
+title: 'CA1801: Controllare i parametri inutilizzati | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,17 +16,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269685"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001836"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Rivedere i parametri inutilizzati
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Controllare i parametri non usati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [CA1801: rivedere i parametri inutilizzati](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1801: Controllare i parametri inutilizzati](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) su docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -72,9 +67,8 @@ Per la documentazione più recente di Visual Studio 2017, vedere [CA1801: rivede
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
   
 ## <a name="related-rules"></a>Regole correlate  
- [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: Evitare il codice privato](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)

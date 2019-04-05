@@ -1,26 +1,21 @@
 ---
-title: 'Procedura dettagliata: Creazione di un SDK tramite c# o Visual Basic | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Creazione di un SDK tramite C# o Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736764"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001769"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: creazione di un SDK con C# o Visual Basic
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creazione di un SDK con C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
@@ -120,7 +115,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 22. Nelle **Esplora soluzioni**, scegliere **SimpleMath.winmd**.  
   
-23. Nella barra dei menu, scegliere **View**, **proprietà** (tastiera: premere il tasto F4).  
+23. Nella barra dei menu, scegliere **View**, **proprietà** (tastiera: Premere il tasto F4).  
   
 24. Nel **delle proprietà** finestra Modifica il **azione di compilazione** proprietà **contenuto**e quindi modificare il **Includi in VSIX** proprietà  **True**.  
   
@@ -180,6 +175,5 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creazione di un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Procedura dettagliata: Creazione di un SDK con JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Procedura dettagliata: Creazione di un SDK con JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md)
-

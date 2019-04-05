@@ -1,14 +1,9 @@
 ---
 title: Creazione di un controllo della casella degli strumenti WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786028"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001493"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Creazione di un controllo della casella degli strumenti WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,5 +99,4 @@ Il modello di controllo della casella degli strumenti WPF (Windows Presentation 
   
 3.  Caricare il file VSIX in una rete o in un sito Web.  
   
-     Se si carica il file per il [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) sito Web, altri utenti potranno usare **strumenti / estensioni e aggiornamenti** in Visual Studio per trovare il controllo online e installarlo.
-
+     Se si carica il file per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web, altri utenti potranno usare **strumenti / estensioni e aggiornamenti** in Visual Studio per trovare il controllo online e installarlo.

@@ -1,23 +1,18 @@
 ---
 title: Colori condivisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
-ms.author: v-brickg
-ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.author: brgeorge
+ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805515"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001727"
 ---
 # <a name="shared-colors"></a>Colori condivisi
 Inserire qui l'introduzione.  
@@ -40,7 +35,7 @@ Inserire qui l'introduzione.
   
 ### <a name="command-structures"></a>Strutture dei comandi  
   
-####  <a name="BKMK_CommandMenus"></a> Menu  
+####  <a name="BKMK_CommandMenus"></a> Menus  
  I menu possono trovarsi in diverse posizioni all'interno di Visual Studio 2013: sulla barra dei menu principale, incorporati in finestre dei documenti o degli strumenti o visualizzati tramite clic con il pulsante destro del mouse in diversi punti dell'IDE. Le implementazioni dei menu associati ad altri elementi dell'interfaccia utente vengono descritte nella sezione relativa al rispettivo elemento. È preferibile usare sempre l'implementazione dei menu standard fornita dall'ambiente di Visual Studio. Tuttavia, in alcuni casi rari si potrebbe non avere accesso ai menu standard di Visual Studio. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri menu in Visual Studio.  
   
  ![Menu con linea rossa](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")  
@@ -68,16 +63,16 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Titolo menu predefinito](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Titolo menu**|Sfondo|nessuno|  
 |![Titolo menu predefinito](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Titolo menu**|Primo piano (testo)|`Environment.CommandBarTextActive`|  
 |![Titolo menu con glifo predefinito](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Titolo menu con glifo**|Primo piano (glifo)|`Environment.CommandBarMenuGlyph`|  
 |![Titolo menu con glifo predefinito](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Titolo menu con glifo**|Bordo|nessuno|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Titolo menu al passaggio del mouse](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **Titolo menu**|Sfondo|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Titolo menu al passaggio del mouse](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **Titolo menu**|Primo piano (testo)|`Environment.CommandBarTextHover`|  
@@ -86,7 +81,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Titolo menu selezionato](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **Titolo menu**|Sfondo|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Titolo menu selezionato](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **Titolo menu**|Primo piano (testo)|`Environment.CommandBarTextActive`|  
@@ -95,12 +90,12 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Titolo menu con glifo disabilitato](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Titolo menu con glifo**|Sfondo|nessuno|  
 |![Titolo menu con glifo disabilitato](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Titolo menu con glifo**|Primo piano (testo)|`Environment.CommandBarTextInactive`|  
 |![Titolo menu con glifo disabilitato](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Titolo menu con glifo**|Primo piano (glifo)|`Environment.CommandBarTextInactive`|  
-|![Titolo menu con glifo disabilitato](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Titolo menu con glifo**|Bordo|Nessuno|  
+|![Titolo menu con glifo disabilitato](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Titolo menu con glifo**|Bordo|nessuno|  
   
 ##### <a name="menu"></a>Menu  
  Una singola voce di menu è costituita dal testo del menu e da un'icona facoltativa, una casella di controllo o un glifo del sottomenu. Il colore di sfondo e del testo cambiano al passaggio del mouse. Questo token di colore è una coppia sfondo/primo piano.  
@@ -117,7 +112,7 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Menu predefinito](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Sfondo|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Menu predefinito](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Primo piano (testo)|`Environment.CommandBarTextActive`|  
@@ -131,9 +126,9 @@ Inserire qui l'introduzione.
 |![Menu selezionato](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")<br /><br /> **selezionato**|Sfondo dell'icona|`Environment.CommandBarSelected`|  
 |![Menu selezionato](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")<br /><br /> **selezionato**|Bordo dell'icona|`Environment.CommandBarSelectedBorder`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Al passaggio del mouse dal menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Voce di menu**|Sfondo|`Environment.CommandBarMenuItemMouseOver`|  
 |![Al passaggio del mouse dal menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Voce di menu**|Primo piano (testo)|`Environment.CommandBarMenuItemMouseOver`|  
@@ -145,7 +140,7 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Menu disabilitato](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> Voce di menu|Primo piano (testo)|`Environment.CommandBarTextInactive`|  
 |![Menu disabilitato](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> Voce di menu|Primo piano (glifo del sottomenu)|`Environment.CommandBarMenuSubmenuGlyph`|  
@@ -159,7 +154,7 @@ Inserire qui l'introduzione.
   
  ![Sulla barra dei comandi con linea rossa](../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")  
   
- ![Pulsante di overflow con linea rossa](../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")  
+ ![Overflow button redline](../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")  
   
  Usare...  
  Nelle posizioni in cui è necessaria una barra dei comandi incorporata, ma non è possibile usare l'implementazione della barra dei comandi standard di Visual Studio.  
@@ -184,7 +179,7 @@ Inserire qui l'introduzione.
   
   **Predefinito** (nessun altro stato)  
   
-|Elemento|Nome token: Category.color|  
+|Elemento|Nome token: Category. Color|  
 |-------------|--------------------------------|  
 |Sfondo|`Environment.CommandBarGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |Bordo|`Environment.CommandBarToolBarBorder`|  
@@ -206,7 +201,7 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Icona predefinita di comando](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Sfondo|N/D (eredita dallo sfondo della barra dei comandi)|  
 |![Icona predefinita di comando](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Primo piano (testo)|`Environment.CommandBarTextActive`|  
@@ -217,7 +212,7 @@ Inserire qui l'introduzione.
   
  **Al passaggio del mouse e stato attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Al passaggio del mouse sull'icona di comando](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standard al passaggio del mouse**|Sfondo|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Al passaggio del mouse sull'icona di comando](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standard al passaggio del mouse**|Primo piano (testo)|`Environment.CommandBarTextHover`|  
@@ -228,7 +223,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Icona del comando selezionata](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Icona del comando premuta**|Sfondo|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Icona del comando selezionata](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Icona del comando premuta**|Primo piano (testo)|`Environment.CommandBarTextMouseDown`|  
@@ -236,7 +231,7 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Icona del comando disabilitata](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Icona del comando disabilitata**|Sfondo|N/D (eredita dallo sfondo della barra dei comandi)|  
 |![Icona del comando disabilitata](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Icona del comando disabilitata**|Primo piano (testo)|`Environment.CommandBarTextInactive`|  
@@ -247,7 +242,7 @@ Inserire qui l'introduzione.
 > [!IMPORTANT]
 >  Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
- ![Casella combinata con linea rossa](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
+ ![Combo box redline](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
  Usare…  
  -   Quando si compilano caselle combinate personalizzate.  
@@ -261,7 +256,7 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input di casella combinata](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Campo di input**|Sfondo|`Environment.ComboBoxBackground`|  
 |![Campo di input di casella combinata](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Campo di input**|Primo piano (testo)|`Environment.ComboBoxText`|  
@@ -269,13 +264,13 @@ Inserire qui l'introduzione.
 |![Campo di input di casella combinata](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Campo di input**|Separatore|Nessun separatore|  
 |![Rilascio di casella combinata&#45;pulsante giù](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br /><br /> **Pulsante elenco a discesa**|Sfondo|N/D (eredita)|  
 |![Rilascio di casella combinata&#45;pulsante giù](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br /><br /> **Pulsante elenco a discesa**|Primo piano (glifo)|`Environment.ComboBoxGlyph`|  
-|![Casella combinata&#47;drop&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br /><br /> **Elenco a discesa**|Sfondo|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
-|![Casella combinata&#47;drop&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br /><br /> **Elenco a discesa**|Primo piano (testo)|`Environment.ComboBoxItemText`|  
-|![Casella combinata&#47;drop&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br /><br /> **Elenco a discesa**|Bordo|`Environment.ComboBoxPopupBorder`|  
+|![Combo box&#47;drop&#45;down list](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Elenco a discesa**|Sfondo|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
+|![Combo box&#47;drop&#45;down list](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Elenco a discesa**|Primo piano (testo)|`Environment.ComboBoxItemText`|  
+|![Combo box&#47;drop&#45;down list](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Elenco a discesa**|Bordo|`Environment.ComboBoxPopupBorder`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input casella combinata al passaggio del mouse](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Campo di input**|Sfondo|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Campo di input casella combinata al passaggio del mouse](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Campo di input**|Primo piano (testo)|`Environment.ComboBoxMouseOverText`|  
@@ -287,9 +282,9 @@ Inserire qui l'introduzione.
 |![Casella combinata&#47;drop&#45;elenco al passaggio del mouse verso il basso](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br /><br /> **Elenco a discesa**|Primo piano (testo)|`Environment.ComboBoxItemMouseOverText`|  
 |![Casella combinata&#47;drop&#45;elenco al passaggio del mouse verso il basso](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br /><br /> **Elenco a discesa**|Bordo (voce di menu)|`Environment.ComboBoxItemMouseOverBorder`|  
   
- **Con stato attivo**  
+ **Focused**  
   
-|Componente|Elemento|Nome token: Color.category|  
+|Componente|Elemento|Nome token: Color. Category|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **Campo di input**|Sfondo|`Environment.ComboBoxFocusedBackground`|  
 |![Campo di input casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **Campo di input**|Primo piano (testo)|`Environment.ComboBoxFocusedText`|  
@@ -300,7 +295,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Color.category|  
+|Componente|Elemento|Nome token: Color. Category|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input casella combinata premuto](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **Campo di input**|Sfondo|`Environment.ComboBoxMouseDownBackground`|  
 |![Campo di input casella combinata premuto](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **Campo di input**|Primo piano (testo)|`Environment.ComboBoxMouseDownText`|  
@@ -311,7 +306,7 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Color.category|  
+|Componente|Elemento|Nome token: Color. Category|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input casella combinata disabilitata](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Campo di input**|Sfondo|`Environment.ComboBoxDisabledBackground`|  
 |![Campo di input casella combinata disabilitata](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Campo di input**|Primo piano (testo)|`Environment.ComboBoxDisabledText`|  
@@ -325,7 +320,7 @@ Inserire qui l'introduzione.
 > [!IMPORTANT]
 >  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
- ![Eliminare&#45;verso il basso con linea rossa](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
+ ![Drop&#45;down redline](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
  Usare…  
  Quando si creano controlli elenco a discesa personalizzati.  
@@ -337,7 +332,7 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;a discesa il campo di selezione](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Campo di selezione**|Sfondo|`Environment.DropDownBackground`|  
 |![Eliminare&#45;a discesa il campo di selezione](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Campo di selezione**|Primo piano (testo)|`DropDownText`|  
@@ -345,14 +340,14 @@ Inserire qui l'introduzione.
 |![Eliminare&#45;a discesa il campo di selezione](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Campo di selezione**|Separatore|Nessun separatore|  
 |![Eliminare&#45;pulsante giù](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Pulsante elenco a discesa**|Sfondo|nessuno|  
 |![Eliminare&#45;pulsante giù](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Pulsante elenco a discesa**|Primo piano (glifo)|`Environment.DropDownGlyph`|  
-|![Eliminare&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Elenco a discesa**|Sfondo|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
-|![Eliminare&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Elenco a discesa**|Primo piano (testo)|`Environment.ComboBoxItemText`|  
-|![Eliminare&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Elenco a discesa**|Bordo|`Environment.DropDownPopupBorder`|  
-|![Eliminare&#45;elenco a discesa](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Elenco a discesa**|Ombreggiatura|`Environment.DropShadowBackground`|  
+|![Drop&#45;down list](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Elenco a discesa**|Sfondo|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
+|![Drop&#45;down list](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Elenco a discesa**|Primo piano (testo)|`Environment.ComboBoxItemText`|  
+|![Drop&#45;down list](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Elenco a discesa**|Bordo|`Environment.DropDownPopupBorder`|  
+|![Drop&#45;down list](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Elenco a discesa**|Ombreggiatura|`Environment.DropShadowBackground`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;a discesa il campo di selezione del mouse](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Campo di selezione**|Sfondo|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Eliminare&#45;a discesa il campo di selezione del mouse](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Campo di selezione**|Primo piano (testo)|`Environment.DropDownMouseOverText`|  
@@ -366,7 +361,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;inattivo premuto campo di selezione](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Campo di selezione**|Sfondo|`Environment.DropDownMouseDownBackground`|  
 |![Eliminare&#45;inattivo premuto campo di selezione](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Campo di selezione**|Primo piano (testo)|`Environment.DropDownMouseDownText`|  
@@ -377,7 +372,7 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;a discesa il campo di selezione disabilitato](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Sfondo|`Environment.DropDownDisabledBackground`|  
 |![Eliminare&#45;a discesa il campo di selezione disabilitato](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Primo piano (testo)|`Environment.DropDownDisabledText`|  
@@ -401,7 +396,7 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante di menu combinato](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Pulsante di menu combinato (predefinito)**|Sfondo|nessuno|  
 |![Pulsante di menu combinato](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Pulsante di menu combinato (predefinito)**|Primo piano (testo)|`Environment.CommandBarTextActive`|  
@@ -409,9 +404,9 @@ Inserire qui l'introduzione.
 |![Pulsante di menu combinato](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Pulsante di menu combinato (predefinito)**|Bordo|N/D|  
 |![Pulsante di menu combinato](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Pulsante di menu combinato (predefinito)**|Separatore|N/D|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante di menu combinato al passaggio del mouse](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Pulsante di menu combinato (al passaggio del mouse)**|Sfondo|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Pulsante di menu combinato al passaggio del mouse](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Pulsante di menu combinato (al passaggio del mouse)**|Primo piano (testo)|`Environment.CommandBarTextHover`|  
@@ -421,7 +416,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante di menu combinato premuto](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Pulsante di menu combinato (premuto)**|Sfondo|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Pulsante di menu combinato premuto](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Pulsante di menu combinato (premuto)**|Primo piano (testo)|`Environment.CommandBarTextMouseDown`|  
@@ -431,7 +426,7 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante di menu combinato disabilitato](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Pulsante di menu combinato (disabilitato)**|Sfondo|N/D|  
 |![Pulsante di menu combinato disabilitato](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Pulsante di menu combinato (disabilitato)**|Primo piano (testo)|`Environment.ComboBoxItemTextInactive`|  
@@ -452,16 +447,16 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Altre opzioni](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **Altre opzioni**|Sfondo|`Environment.CommandBarOptionsBackground`|  
 |![Altre opzioni](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **Altre opzioni**|Primo piano (glifo)|`Environment.CommandBarOptionsGlyph`|  
 |![Pulsante di overflow](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 060_Overflow")<br /><br /> **overflow**|Sfondo|`Environment.CommandBarOptionsBackground`|  
 |![Pulsante di overflow](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 060_Overflow")<br /><br /> **overflow**|Primo piano (glifo)|`Environment.CommandBarOptionsGlyph`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Altre opzioni al passaggio del mouse](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **Altre opzioni**|Sfondo|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Altre opzioni al passaggio del mouse](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **Altre opzioni**|Primo piano (glifo)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -470,7 +465,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Altre opzioni premuto](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **Altre opzioni**|Sfondo|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Altre opzioni premuto](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **Altre opzioni**|Primo piano (glifo)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -501,7 +496,7 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |Documento: ancorato o mobile|Sfondo|Dipende dal tipo di documento|  
 |Documento: ancorato o mobile|Primo piano (testo)|Dipende dal tipo di documento|  
@@ -517,9 +512,9 @@ Inserire qui l'introduzione.
 |![Frame con stato non attivo](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Cornice: mobile, con stato non attivo**|Bordo|`Environment.MainWindowInactiveBorder`|  
 |![Frame con stato non attivo](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Cornice: mobile, con stato non attivo**|Bordo (glifo)|`Environment.RaftedWindowButtonInactiveBorder`<br /><br /> Impostato su trasparente|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Frame con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Cornice: mobile, con stato attivo**|Sfondo (glifo)|`Environment.RaftedWindowButtonHoverActive`|  
 |![Frame con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Cornice: mobile, con stato attivo**|Primo piano (glifo)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
@@ -530,7 +525,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Frame con stato attivo selezionato](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Cornice: mobile, con stato attivo**|Sfondo (glifo)|`Environment.RaftedWindowButtonDown`|  
 |![Frame con stato attivo selezionato](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Cornice: mobile, con stato attivo**|Primo piano (glifo)|`Environment.RaftedWindowButtonDownGlyph`|  
@@ -565,9 +560,9 @@ Inserire qui l'introduzione.
 - Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
 ##### <a name="selected-tab"></a>Scheda selezionata  
- **Con stato attivo**  
+ **Focused**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda selezionata con stato attivo](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Scheda di documento selezionata, con stata attivata**|Sfondo|`Environment.FileTabSelectedGradientTop`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Scheda selezionata con stato attivo](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Scheda di documento selezionata, con stata attivata**|Primo piano (testo)|`Environment.FileTabSelectedText`|  
@@ -576,7 +571,7 @@ Inserire qui l'introduzione.
   
  **Con stato non attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda selezionata con stato non attivo](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Scheda di documento selezionata, con stato non attivo**|Sfondo|`Environment.FileTabInactiveGradientTop`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Scheda selezionata con stato non attivo](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Scheda di documento selezionata, con stato non attivo**|Primo piano (testo)|`Environment.FileTabInactiveText`|  
@@ -586,15 +581,15 @@ Inserire qui l'introduzione.
 ##### <a name="background-tab"></a>Scheda di sfondo  
  **Default**  
   
-|Componente|Elemento|Nome token: Color.category|  
+|Componente|Elemento|Nome token: Color. Category|  
 |---------------|-------------|--------------------------------|  
 |![Scheda sfondo](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **Impostazione predefinita della scheda in background**|Sfondo|`Environment.FileTabBackground`|  
 |![Scheda sfondo](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **Impostazione predefinita della scheda in background**|Primo piano (testo)|`Environment.FileTabText`|  
 |![Scheda sfondo](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **Impostazione predefinita della scheda in background**|Bordo|`Environment.FileTabBorder`<br /><br /> Impostato sullo stesso colore dello sfondo.|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Color.category|  
+|Componente|Elemento|Nome token: Color. Category|  
 |---------------|-------------|--------------------------------|  
 |![Scheda sfondo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **Scheda sfondo al passaggio del mouse**|Sfondo|`Environment.FileTabHotGradientTop`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Scheda sfondo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **Scheda sfondo al passaggio del mouse**|Primo piano (testo)|`Environment.FileTabHotText`|  
@@ -613,35 +608,35 @@ Inserire qui l'introduzione.
   
 - Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
-  **Scheda anteprima selezionata: con stato attivo**  
+  **Scheda anteprima selezionata: Con stato attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda Anteprima con stato attivo](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Scheda Anteprima con stato attivo**|Sfondo|`Environment.FileTabProvisionalSelectedActive`|  
 |![Scheda Anteprima con stato attivo](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Scheda Anteprima con stato attivo**|Primo piano (testo)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
 |![Scheda Anteprima con stato attivo](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Scheda Anteprima con stato attivo**|Bordo|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Impostato sullo stesso colore dello sfondo.|  
 |![Scheda Anteprima con stato attivo](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Scheda Anteprima con stato attivo**|Bordo del documento|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
- **Scheda anteprima selezionata: con stato non attivo**  
+ **Scheda anteprima selezionata: Con stato non attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda Anteprima con stato non attivo](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Scheda Anteprima con stato non attivo**|Sfondo|`Environment.FileTabProvisionalSelectedInactive`|  
 |![Scheda Anteprima con stato non attivo](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Scheda Anteprima con stato non attivo**|Primo piano (testo)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
 |![Scheda Anteprima con stato non attivo](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Scheda Anteprima con stato non attivo**|Bordo|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
 |![Scheda Anteprima con stato non attivo](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Scheda Anteprima con stato non attivo**|Bordo del documento|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
- **Scheda Anteprima sfondo: predefinita**  
+ **Scheda Anteprima sfondo: Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda Anteprima sfondo](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **Scheda sfondo della scheda di anteprima**|Sfondo|`Environment.FileTabProvisionalInactive`|  
 |![Scheda Anteprima sfondo](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **Scheda sfondo della scheda di anteprima**|Primo piano (testo)|`Environment.FileTabProvisionalInactiveForeground`|  
 |![Scheda Anteprima sfondo](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **Scheda sfondo della scheda di anteprima**|Bordo|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Impostato sullo stesso colore dello sfondo.|  
   
- **Scheda Anteprima sfondo: passare il mouse**  
+ **Scheda Anteprima sfondo: Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda Anteprima sfondo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **Scheda scheda Anteprima sfondo al passaggio del mouse**|Sfondo|`Environment.FileTabProvisionalHover`|  
 |![Scheda Anteprima sfondo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **Scheda scheda Anteprima sfondo al passaggio del mouse**|Primo piano (testo)|`Environment.FileTabProvisionalHoverForeground`|  
@@ -650,7 +645,7 @@ Inserire qui l'introduzione.
 ##### <a name="document-overflow-button"></a>Pulsante di overflow dei documenti  
  Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow dei documenti, controllato dai colori di **CommandBarMenu** (vedere [Menus](../misc/shared-colors.md#BKMK_CommandMenus)), visualizza un elenco di tutti i documenti aperti, sia visibili sia nascosti, e il glifo di overflow cambia a seconda che tutti i documenti aperti siano o meno visualizzati nel canale delle schede.  
   
- ![Overflow con linea rossa](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
+ ![Overflow redline](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
  Usare…  
  Quando si crea un pulsante di overflow dei documenti personalizzato.  
@@ -662,15 +657,15 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Pulsante di overflow dei documenti**|Sfondo|`Environment.DocWellOverflowButtonBackground`|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Pulsante di overflow dei documenti**|Primo piano (glifo)|`Environment.DocWellOverflowButtonGlyph`|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Pulsante di overflow dei documenti**|Bordo|N/D|  
+|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Pulsante di overflow dei documenti**|Sfondo|`Environment.DocWellOverflowButtonBackground`|  
+|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Pulsante di overflow dei documenti**|Primo piano (glifo)|`Environment.DocWellOverflowButtonGlyph`|  
+|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Pulsante di overflow dei documenti**|Bordo|N/D|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow al passaggio del mouse](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Pulsante di overflow dei documenti al passaggio del mouse**|Sfondo|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![Overflow al passaggio del mouse](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Pulsante di overflow dei documenti al passaggio del mouse**|Primo piano (glifo)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
@@ -678,7 +673,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow premuto](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Pulsante di overflow dei documenti premuto**|Sfondo|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![Overflow premuto](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Pulsante di overflow dei documenti premuto**|Primo piano (glifo)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
@@ -706,23 +701,23 @@ Inserire qui l'introduzione.
  Non usare...  
  Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
- **Ancorata**  
+ **Docked**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Finestra degli strumenti ancorata](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|Sfondo|`Environment.ToolWindowBackground`|  
 |![Finestra degli strumenti ancorata](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|Bordo|`Environment.ToolWindowBorder`|  
   
  **Mobile: con stato attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Finestra degli strumenti con stato attivato](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|Sfondo|`Environment.ToolWindowBackground`|  
 |![Finestra degli strumenti con stato attivato](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|Bordo|`Environment.MainWindowActiveDefaultBorder`|  
   
  **Mobile: con stato non attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Finestra degli strumenti con stato non attivo](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|Sfondo|`Environment.ToolWindowBackground`|  
 |![Finestra degli strumenti con stato non attivo](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|Bordo|`Environment.MainWindowInactiveBorder`|  
@@ -738,9 +733,9 @@ Inserire qui l'introduzione.
  Non usare...  
  Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.  
   
- **Con stato attivo**  
+ **Focused**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Sulla barra del titolo con stato attivo](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Sulla barra del titolo con stato attivo**|Sfondo|`Environment.TitleBarActiveGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Sulla barra del titolo con stato attivo](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Sulla barra del titolo con stato attivo**|Primo piano (testo)|`Environment.TitleBarActiveText`|  
@@ -749,7 +744,7 @@ Inserire qui l'introduzione.
   
  **Con stato non attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Sulla barra del titolo con stato non attivo](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Sulla barra del titolo con stato non attivo**|Sfondo|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Sulla barra del titolo con stato non attivo](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Sulla barra del titolo con stato non attivo**|Primo piano (testo)|`Environment.TitleBarInactiveText`|  
@@ -769,33 +764,33 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Spostare il titolo della pulsante con stato attivo barra](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Con stato attivo**|Sfondo|N/D|  
-|![Spostare il titolo della pulsante con stato attivo barra](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Con stato attivo**|Primo piano (glifo)|`Environment.ToolWindowButtonActiveGlyph`|  
-|![Spostare il titolo della pulsante con stato attivo barra](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Con stato attivo**|Bordo|N/D|  
+|![Spostare il titolo della pulsante con stato attivo barra](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Focused**|Sfondo|N/D|  
+|![Spostare il titolo della pulsante con stato attivo barra](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Focused**|Primo piano (glifo)|`Environment.ToolWindowButtonActiveGlyph`|  
+|![Spostare il titolo della pulsante con stato attivo barra](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Focused**|Bordo|N/D|  
 |![Spostare il titolo della barra pulsante con stato non attivo](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Con stato non attivo**|Sfondo|N/D|  
 |![Spostare il titolo della barra pulsante con stato non attivo](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Con stato non attivo**|Primo piano (glifo)|`Environment.ToolWindowButtonInactiveGlyph`|  
 |![Spostare il titolo della barra pulsante con stato non attivo](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Con stato non attivo**|Bordo|N/D|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Con stato attivo**|Sfondo|`Environment.ToolWindowButtonHoverActive`|  
-|![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Con stato attivo**|Primo piano (glifo)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
-|![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Con stato attivo**|Bordo|`Environment.ToolWindowButtonHoverActiveBorder`|  
+|![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Sfondo|`Environment.ToolWindowButtonHoverActive`|  
+|![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Primo piano (glifo)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
+|![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Focused**|Bordo|`Environment.ToolWindowButtonHoverActiveBorder`|  
 |![Spostare il titolo della barra pulsante con stato non attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br /><br /> **Con stato non attivo**|Sfondo|`Environment.ToolWindowButtonHoverInactive`|  
 |![Spostare il titolo della barra pulsante con stato non attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br /><br /> **Con stato non attivo**|Primo piano (glifo)|`Environment.ToolWindowButtonHoverInactiveGlyph`|  
 |![Spostare il titolo della barra pulsante con stato non attivo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br /><br /> **Con stato non attivo**|Bordo|`Environment.ToolWindowButtonHoverInactiveBorder`|  
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Con stato attivo**|Sfondo|`Environment.ToolWindowButtonDown`|  
-|![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Con stato attivo**|Primo piano (glifo)|`Environment.ToolWindowButtonDownActiveGlyph`|  
-|![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Con stato attivo**|Bordo|`Environment.ToolWindowButtonDownBorder`|  
+|![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Sfondo|`Environment.ToolWindowButtonDown`|  
+|![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Primo piano (glifo)|`Environment.ToolWindowButtonDownActiveGlyph`|  
+|![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Focused**|Bordo|`Environment.ToolWindowButtonDownBorder`|  
 |![Pulsante della barra del titolo con stato non attivo e premuta](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Con stato non attivo**|Sfondo|`Environment.ToolWindowButtonDown`|  
 |![Pulsante della barra del titolo con stato non attivo e premuta](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Con stato non attivo**|Primo piano (glifo)|`Environment.ToolWindowButtonDownInactiveGlyph`|  
 |![Pulsante della barra del titolo con stato non attivo e premuta](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Con stato non attivo**|Bordo|`Environment.ToolWindowButtonDownBorder`|  
@@ -811,13 +806,13 @@ Inserire qui l'introduzione.
   
  **Scheda selezionata**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda casella degli strumenti con stato attivo](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Scheda della finestra degli strumenti con stato attivo selezionata**|Sfondo|`Environment.ToolWindowTabSelectedTab`|  
 |![Scheda casella degli strumenti con stato attivo](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Scheda della finestra degli strumenti con stato attivo selezionata**|Primo piano (testo)|`Environment.ToolWindowTabSelectedActiveText`|  
 |![Scheda casella degli strumenti con stato attivo](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Scheda della finestra degli strumenti con stato attivo selezionata**|Bordo|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Impostato sullo stesso colore dello sfondo.|  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda della finestra degli strumenti con stato non attivo](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Scheda della finestra degli strumenti con stato non attivo selezionata**|Sfondo|`Environment.ToolWindowTabSelectedTab`|  
 |![Scheda della finestra degli strumenti con stato non attivo](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Scheda della finestra degli strumenti con stato non attivo selezionata**|Primo piano (testo)|`Environment.ToolWindowTabSelectedText`|  
@@ -825,13 +820,13 @@ Inserire qui l'introduzione.
   
  **Scheda sfondo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda sfondo della finestra degli strumenti](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Scheda casella degli strumenti in background**|Sfondo|`Environment.ToolWindowTabGradientBegin`<br /><br /> Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013.|  
 |![Scheda sfondo della finestra degli strumenti](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Scheda casella degli strumenti in background**|Primo piano (testo)|`Environment.ToolWindowTabText`|  
 |![Scheda sfondo della finestra degli strumenti](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Scheda casella degli strumenti in background**|Bordo|`Environment.ToolWindowTabBorder`|  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Scheda sfondo della finestra degli strumenti al passaggio del mouse](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Scheda della finestra degli strumenti dello sfondo al passaggio del mouse**|Sfondo|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013.|  
 |![Scheda sfondo della finestra degli strumenti al passaggio del mouse](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Scheda della finestra degli strumenti dello sfondo al passaggio del mouse**|Primo piano (testo)|`Environment.ToolWindowTabMouseOverText`|  
@@ -848,15 +843,15 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Automatico&#45;Nascondi della scheda](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Scheda Nascondi automaticamente predefinita**|Sfondo|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Automatico&#45;Nascondi della scheda](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Scheda Nascondi automaticamente predefinita**|Primo piano (testo)|`Environment.AutoHideTabText`|  
 |![Automatico&#45;Nascondi della scheda](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Scheda Nascondi automaticamente predefinita**|Bordo|`Environment.AutoHideTabBorder`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Automatico&#45;nascondere scheda al passaggio del mouse](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Scheda Nascondi automaticamente al passaggio del mouse**|Sfondo|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Automatico&#45;nascondere scheda al passaggio del mouse](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Scheda Nascondi automaticamente al passaggio del mouse**|Primo piano (testo)|`Environment.AutoHideTabMouseOverText`|  
@@ -888,9 +883,9 @@ Inserire qui l'introduzione.
   
 - Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.  
   
-  **Con stato attivo**  
+  **Focused**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input di ricerca con stato attivo](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Campo di input**|Sfondo|`SearchControl.FocusedBackground`|  
 |![Campo di input di ricerca con stato attivo](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Campo di input**|Primo piano (testo)|`SearchControl.FocusedBackground`|  
@@ -907,7 +902,7 @@ Inserire qui l'introduzione.
   
  **Con stato non attivo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input ricerca con stato non attivo](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Campo di input attivo**|Sfondo|`SearchControl.SearchActiveBackground`|  
 |![Campo di input ricerca con stato non attivo](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Campo di input attivo**|Primo piano (testo)|`SearchControl.SearchActiveBackground`|  
@@ -928,7 +923,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Ricerca azione pulsante premuto](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Pulsante di azione**|Sfondo|`SearchControl.ActionButtonMouseDown`|  
 |![Ricerca azione pulsante premuto](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Pulsante di azione**|Primo piano (glifo)|`SearchControl.ActionButtonMouseDownGlyph`|  
@@ -939,7 +934,7 @@ Inserire qui l'introduzione.
   
  **Evidenziato (solo testo)**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Evidenziazione di campo di input di ricerca](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Campo di input con testo evidenziato**|Sfondo|`SearchControl.Selection`|  
 |![Evidenziazione di campo di input di ricerca](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Campo di input con testo evidenziato**|Primo piano (testo)|`SearchControl.FocusedBackground`|  
@@ -948,7 +943,7 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Campo di input di ricerca disabilitato](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Campo di input**|Sfondo|`SearchControl.Disabled`|  
 |![Campo di input di ricerca disabilitato](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Campo di input**|Primo piano (testo)|`SearchControl.Disabled`|  
@@ -978,7 +973,7 @@ Inserire qui l'introduzione.
   
   **Predefinito (nessun altro stato)**  
   
-|Elemento|Nome token: Category.color|  
+|Elemento|Nome token: Category. Color|  
 |-------------|--------------------------------|  
 |Bordo|`SearchControl.PopupBorder`|  
 |Separatore|`SearchControl.PopupSectionHeaderSeparator`|  
@@ -986,24 +981,24 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Ricerca con suggerita](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **Ricerche suggerite**|Sfondo|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Ricerca con suggerita](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **Ricerche suggerite**|Primo piano (testo)|`SearchControl.PopupItemText`|  
-|![Casella di controllo di ricerca](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Sfondo|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
+|![Search check box](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Sfondo|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Le opzioni di ricerca](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opzioni di ricerca (collegamento)**|Sfondo|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
-|![Casella di controllo di ricerca](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Primo piano (testo della casella di controllo)|`SearchControl.PopupCheckboxText`|  
+|![Search check box](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Primo piano (testo della casella di controllo)|`SearchControl.PopupCheckboxText`|  
 |![Le opzioni di ricerca](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opzioni di ricerca (collegamento)**|Primo piano (testo della casella di controllo)|`SearchControl.PopupCheckboxText`|  
-|![Casella di controllo di ricerca](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Primo piano (testo del collegamento)|`SearchControl.PopupButtonText`|  
+|![Search check box](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Primo piano (testo del collegamento)|`SearchControl.PopupButtonText`|  
 |![Le opzioni di ricerca](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opzioni di ricerca (collegamento)**|Primo piano (testo del collegamento)|`SearchControl.PopupButtonText`|  
-|![Casella di controllo di ricerca](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Sfondo dell'intestazione|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
+|![Search check box](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Sfondo dell'intestazione|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Le opzioni di ricerca](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opzioni di ricerca (collegamento)**|Sfondo dell'intestazione|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
-|![Casella di controllo di ricerca](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Primo piano (testo dell'intestazione)|`SearchControl.PopupSectionHeaderText`|  
+|![Search check box](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opzioni di ricerca (casella di controllo)**|Primo piano (testo dell'intestazione)|`SearchControl.PopupSectionHeaderText`|  
 |![Le opzioni di ricerca](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opzioni di ricerca (collegamento)**|Primo piano (testo dell'intestazione)|`SearchControl.PopupSectionHeaderText`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Ricerca con suggerita al passaggio del mouse](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Ricerche suggerite**|Sfondo|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Ricerca con suggerita al passaggio del mouse](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Ricerche suggerite**|Primo piano (testo)|`SearchControl.PopupMouseOverItemText`|  
@@ -1019,7 +1014,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Ricerca con suggerimento selezionata](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Ricerche suggerite (casella di controllo)**|Sfondo della casella di controllo|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
 |![Cerca opzioni premute](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opzioni di ricerca**|Sfondo della casella di controllo|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Benché non sia usato nella moderna interfaccia utente con temi, per questo sfondo sono disponibili cursori sfumatura e valori.|  
@@ -1045,25 +1040,25 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Collegamento ipertestuale predefinito](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")|Primo piano (testo)|`Environment.PanelHyperlink`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Collegamento ipertestuale al passaggio del mouse](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")|Primo piano (testo)|`Environment.PanelHyperlinkHover`|  
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Collegamento ipertestuale selezionato](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")|Primo piano (testo)|`Environment.PanelHyperlinkPressed`|  
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Collegamento ipertestuale disabilitato](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")|Primo piano (testo)|`Environment.PanelHyperlinkDisabled`|  
   
@@ -1078,11 +1073,11 @@ Inserire qui l'introduzione.
  Non usare...  
  Per gli elementi dell'interfaccia utente che non sono simili a una barra informazioni.  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Barra informazioni](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Barra informazioni**|Sfondo|`Environment.InfoBackground`|  
-|![Barra informazioni](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Barra informazioni**|Primo piano (testo)|`Environment.InfoText`|  
-|![Barra informazioni](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Barra informazioni**|Bordo|`Environment.ToolWindowBorder`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Sfondo|`Environment.InfoBackground`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Primo piano (testo)|`Environment.InfoText`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Bordo|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Barra di scorrimento  
  Le barre di scorrimento hanno uno stile che riflette l'ambiente di Visual Studio e non è necessario applicarvi un tema. Tuttavia, si potrebbe decidere che si desidera sfruttare i colori usati nelle barre di scorrimento in modo che l'interfaccia utente appaia sempre coerenza con questa parte dell'ambiente di Visual Studio.  
@@ -1097,16 +1092,16 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Barra di scorrimento](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **Barra di scorrimento**|Barra di scorrimento|`Environment.ScrollBarBackground`|  
 |![Barra di scorrimento](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **Barra di scorrimento**|Primo piano (anteprima)|`Environment.ScrollBarThumbBackground`|  
 |![Barra freccia di scorrimento](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 142_ScrollbarArrow")<br /><br /> **Freccia di scorrimento**|Sfondo|`Environment.ScrollBarArrowBackground`<br /><br /> Impostato sullo stesso colore della barra di scorrimento.|  
 |![Barra freccia di scorrimento](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 142_ScrollbarArrow")<br /><br /> **Freccia di scorrimento**|Primo piano (glifo)|`Environment.ScrollBarArrowGlyph`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Barra di scorrimento al passaggio del mouse](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **Barra di scorrimento**|Barra di scorrimento|`Environment.ScrollBarBackground`|  
 |![Barra di scorrimento al passaggio del mouse](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **Barra di scorrimento**|Primo piano (anteprima)|`Environment.ScrollBarThumbMouseOverBackground`|  
@@ -1115,7 +1110,7 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Barra di scorrimento premuto](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **Barra di scorrimento**|Barra di scorrimento|`Environment.ScrollBarBackground`|  
 |![Barra di scorrimento premuto](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **Barra di scorrimento**|Primo piano (anteprima)|`Environment.ScrollBarThumbPressedBackground`|  
@@ -1137,16 +1132,16 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Visualizzazione struttura ad albero](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Sfondo|`TreeView.Background`|  
 |![Visualizzazione struttura ad albero](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Primo piano (testo)|`TreeView.Background`|  
 |![Visualizzazione struttura ad albero](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Primo piano (glifo)|`TreeView.Glyph`|  
 |![Visualizzazione struttura ad albero](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Bordo|nessuno|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Visualizazione al passaggio del mouse](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Sfondo|`TreeView.Background`|  
 |![Visualizazione al passaggio del mouse](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Primo piano (testo)|`TreeView.Background`|  
@@ -1155,7 +1150,7 @@ Inserire qui l'introduzione.
   
  **Trascinare su**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Visualizzazione albero con trascinamento](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Sfondo|`TreeView.DragOverItem`|  
 |![Visualizzazione albero con trascinamento](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Primo piano (testo)|`TreeView.DragOverItem`|  
@@ -1164,12 +1159,12 @@ Inserire qui l'introduzione.
   
  **selezionato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Con stato attivo**|Sfondo|`TreeView.SelectedItemActive`|  
-|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Con stato attivo**|Primo piano (testo)|`TreeView.SelectedItemActive`|  
-|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Con stato attivo**|Primo piano (glifo)|`TreeView.SelectedItemActiveGlyph`|  
-|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Con stato attivo**|Bordo|`TreeView.FocusVisualBorder`|  
+|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Focused**|Sfondo|`TreeView.SelectedItemActive`|  
+|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Focused**|Primo piano (testo)|`TreeView.SelectedItemActive`|  
+|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Focused**|Primo piano (glifo)|`TreeView.SelectedItemActiveGlyph`|  
+|![Con stato attivato di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Focused**|Bordo|`TreeView.FocusVisualBorder`|  
 |![Con stato non attivo di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Con stato non attivo**|Sfondo|`TreeView.SelectedItemInactive`|  
 |![Con stato non attivo di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Con stato non attivo**|Primo piano (testo)|`TreeView.SelectedItemInactive`|  
 |![Con stato non attivo di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Con stato non attivo**|Primo piano (glifo)|`TreeView.SelectedItemInactiveGlyph`|  
@@ -1177,12 +1172,12 @@ Inserire qui l'introduzione.
   
  **Selezionato al passaggio del mouse**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Con stato attivo**|Sfondo|`TreeView.SelectedItemActive`|  
-|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Con stato attivo**|Primo piano (testo)|`TreeView.SelectedItemActive`|  
-|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Con stato attivo**|Primo piano (glifo)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Con stato attivo**|Bordo|Nessuno`TreeView.FocusVisualBorder`|  
+|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Focused**|Sfondo|`TreeView.SelectedItemActive`|  
+|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Focused**|Primo piano (testo)|`TreeView.SelectedItemActive`|  
+|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Focused**|Primo piano (glifo)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
+|![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Focused**|Bordo|Nessuno`TreeView.FocusVisualBorder`|  
 |![Visualizzazione con stato non attivo al passaggio del mouse ad albero](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Con stato non attivo**|Sfondo|`TreeView.SelectedItemInactive`|  
 |![Visualizzazione con stato non attivo al passaggio del mouse ad albero](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Con stato non attivo**|Primo piano (testo)|`TreeView.SelectedItemInactive`|  
 |![Visualizzazione con stato non attivo al passaggio del mouse ad albero](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Con stato non attivo**|Primo piano (glifo)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
@@ -1199,35 +1194,35 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Pulsante](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|Button|`CommonControls.Button`|  
-|![Pulsante](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|Bordo del pulsante|`CommonControls.ButtonBorder`|  
+|![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Button|`CommonControls.Button`|  
+|![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Bordo del pulsante|`CommonControls.ButtonBorder`|  
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante disattivato](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|Button|`CommonControls.ButtonDisabled`|  
 |![Pulsante disattivato](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|Bordo del pulsante|`CommonControls.ButtonBorderDisabled`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante al passaggio del mouse](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|Button|`CommonControls.ButtonHover`|  
 |![Pulsante al passaggio del mouse](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|Bordo del pulsante|`CommonControls.ButtonBorderHover`|  
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante premuto](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|Button|`CommonControls.ButtonPressed`|  
 |![Pulsante premuto](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|Bordo del pulsante|`CommonControls.ButtonBorderPressed`|  
   
- **Con stato attivo**  
+ **Focused**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Pulsante con stato attivo](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|Button|`CommonControls.ButtonFocused`|  
 |![Pulsante con stato attivo](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|Bordo del pulsante|`CommonControls.ButtonBorderFocused`|  
@@ -1243,7 +1238,7 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Casella di controllo](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Sfondo|`CommonControls.CheckBoxBackground`|  
 |![Casella di controllo](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Bordo|`CommonControls.CheckBoxBorder`|  
@@ -1252,16 +1247,16 @@ Inserire qui l'introduzione.
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Casella di controllo disabilitata](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Sfondo|`CommonControls.CheckBoxBackgroundDisabled`|  
 |![Casella di controllo disabilitata](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Bordo|`CommonControls.CheckBoxBorderDisabled`|  
 |![Casella di controllo disabilitata](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Testo|`CommonControls.CheckBoxTextDisabled`|  
 |![Casella di controllo disabilitata](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Icona|`CommonControls.CheckBoxGlyphDisabled`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Casella di controllo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Sfondo|`CommonControls.CheckBoxBackgroundHover`|  
 |![Casella di controllo al passaggio del mouse](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Bordo|`CommonControls.CheckBoxBorderHover`|  
@@ -1270,16 +1265,16 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Casella di controllo premuta](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Sfondo|`CommonControls.CheckBoxBackgroundPressed`|  
 |![Casella di controllo premuta](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Bordo|`CommonControls.CheckBoxBorderPressed`|  
 |![Casella di controllo premuta](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Testo|`CommonControls.CheckBoxTextPressed`|  
 |![Casella di controllo premuta](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Icona|`CommonControls.CheckBoxGlyphPressed`|  
   
- **Con stato attivo**  
+ **Focused**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Casella di controllo con stato attivato](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Sfondo|`CommonControls.CheckBoxBackgroundFocused`|  
 |![Casella di controllo con stato attivato](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Bordo|`CommonControls.CheckBoxBorderFocused`|  
@@ -1287,7 +1282,7 @@ Inserire qui l'introduzione.
 |![Casella di controllo con stato attivato](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Icona|`CommonControls.CheckBoxGlyphFocused`|  
   
 #### <a name="drop-boxcombo-box-controls"></a>Controlli casella combinata/casella di riepilogo a discesa  
- ![Eliminare&#45;inattivo&#47;casella combinata con linea rossa](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")  
+ ![Drop&#45;down&#47;combo box redline](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
   
  Usare…  
  Per elenchi a discesa e caselle combinate che fanno parte dell'area dei documenti.  
@@ -1299,18 +1294,18 @@ Inserire qui l'introduzione.
   
   **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Eliminare&#45;inattivo&#47;casella combinata](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Sfondo|`CommonControls.ComboBoxBackground`|  
-|![Eliminare&#45;inattivo&#47;casella combinata](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Bordo|`CommonControls.ComboBoxBorder`|  
-|![Eliminare&#45;inattivo&#47;casella combinata](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Testo|`CommonControls.ComboBoxText`|  
-|![Eliminare&#45;inattivo&#47;casella combinata](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Separatore|`CommonControls.ComboBoxSeparator`|  
-|![Eliminare&#45;inattivo&#47;casella combinata](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Icona|`CommonControls.ComboBoxGlyph`|  
-|![Eliminare&#45;inattivo&#47;casella combinata](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackground`|  
+|![Drop&#45;down&#47;combo box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Sfondo|`CommonControls.ComboBoxBackground`|  
+|![Drop&#45;down&#47;combo box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Bordo|`CommonControls.ComboBoxBorder`|  
+|![Drop&#45;down&#47;combo box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Testo|`CommonControls.ComboBoxText`|  
+|![Drop&#45;down&#47;combo box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Separatore|`CommonControls.ComboBoxSeparator`|  
+|![Drop&#45;down&#47;combo box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Icona|`CommonControls.ComboBoxGlyph`|  
+|![Drop&#45;down&#47;combo box](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackground`|  
   
  **Disabilitato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;inattivo&#47;casella combinata disabilitata](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Sfondo|`CommonControls.ComboBoxBackgroundDisabled`|  
 |![Eliminare&#45;inattivo&#47;casella combinata disabilitata](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Bordo|`CommonControls.ComboBoxBorderDisabled`|  
@@ -1319,9 +1314,9 @@ Inserire qui l'introduzione.
 |![Eliminare&#45;inattivo&#47;casella combinata disabilitata](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Icona|`CommonControls.ComboBoxGlyphDisabled`|  
 |![Eliminare&#45;inattivo&#47;casella combinata disabilitata](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;inattivo&#47;casella combinata al passaggio del mouse](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Sfondo|`CommonControls.ComboBoxBackgroundHover`|  
 |![Eliminare&#45;inattivo&#47;casella combinata al passaggio del mouse](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Bordo|`CommonControls.ComboBoxBorderHover`|  
@@ -1332,35 +1327,35 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Eliminare&#45;inattivo&#47;casella combinata premuta](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Sfondo|`CommonControls.ComboBoxBackgroundPressed`|  
-|![Eliminare&#45;inattivo&#47;casella combinata premuta](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Bordo|`CommonControls.ComboBoxBorderPressed`|  
-|![Eliminare&#45;inattivo&#47;casella combinata premuta](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Testo|`CommonControls.ComboBoxTextPressed`|  
-|![Eliminare&#45;inattivo&#47;casella combinata premuta](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Separatore|`CommonControls.ComboBoxSeparatorPressed`|  
-|![Eliminare&#45;inattivo&#47;casella combinata premuta](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Icona|`CommonControls.ComboBoxGlyphPressed`|  
-|![Eliminare&#45;inattivo&#47;casella combinata premuta](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
+|![Drop&#45;down&#47;combo box pressed](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Sfondo|`CommonControls.ComboBoxBackgroundPressed`|  
+|![Drop&#45;down&#47;combo box pressed](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Bordo|`CommonControls.ComboBoxBorderPressed`|  
+|![Drop&#45;down&#47;combo box pressed](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Testo|`CommonControls.ComboBoxTextPressed`|  
+|![Drop&#45;down&#47;combo box pressed](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Separatore|`CommonControls.ComboBoxSeparatorPressed`|  
+|![Drop&#45;down&#47;combo box pressed](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Icona|`CommonControls.ComboBoxGlyphPressed`|  
+|![Drop&#45;down&#47;combo box pressed](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
   
- **Con stato attivo**  
+ **Focused**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Sfondo|`CommonControls.ComboBoxBackgroundFocused`|  
-|![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Bordo|`CommonControls.ComboBoxBorderFocused`|  
-|![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Testo|`CommonControls.ComboBoxTextFocused`|  
-|![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Separatore|`CommonControls.ComboBoxSeparatorFocused`|  
-|![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Icona|`CommonControls.ComboBoxGlyphFocused`|  
-|![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
+|![Drop&#45;down&#47;combo box focused](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Sfondo|`CommonControls.ComboBoxBackgroundFocused`|  
+|![Drop&#45;down&#47;combo box focused](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Bordo|`CommonControls.ComboBoxBorderFocused`|  
+|![Drop&#45;down&#47;combo box focused](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Testo|`CommonControls.ComboBoxTextFocused`|  
+|![Drop&#45;down&#47;combo box focused](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Separatore|`CommonControls.ComboBoxSeparatorFocused`|  
+|![Drop&#45;down&#47;combo box focused](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Icona|`CommonControls.ComboBoxGlyphFocused`|  
+|![Drop&#45;down&#47;combo box focused](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Sfondo del glifo|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
   
  **Selezione di input di testo**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Eliminare&#45;inattivo&#47;input di testo casella combinata](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")|Evidenziazione|`CommonControls.ComboBoxTextInputSelection`|  
+|![Drop&#45;down&#47;combo box text input](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|Evidenziazione|`CommonControls.ComboBoxTextInputSelection`|  
   
  **Premuto-visualizzazione elementi elenco**  
   
-|Componente|Elemento|Nome token: Color.category|  
+|Componente|Elemento|Nome token: Color. Category|  
 |---------------|-------------|--------------------------------|  
 |![Eliminare&#45;inattivo&#47;visualizzazione elenco della casella combinata](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Sfondo|`CommonControls.ComboBoxListBackground`|  
 |![Eliminare&#45;inattivo&#47;visualizzazione elenco della casella combinata](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Sfondo|`CommonControls.ComboBoxListBackgroundHover`|  
@@ -1390,7 +1385,7 @@ Inserire qui l'introduzione.
 ##### <a name="column-headers"></a>Intestazioni di colonna  
  Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del titolo e un glifo facoltativo, usato in genere quando una griglia viene ordinata in base alla colonna.  
   
-|Stato|Elemento|Nome token: Category.color|  
+|Stato|Elemento|Nome token: Category. Color|  
 |-----------|-------------|--------------------------------|  
 |Impostazione predefinita|Sfondo|`Header.Default`|  
 |Impostazione predefinita|Primo piano (testo)|`Environment.CommandBarTextActive`|  
@@ -1408,7 +1403,7 @@ Inserire qui l'introduzione.
 ##### <a name="list-view-items"></a>Elementi della visualizzazione elenco  
  Gli elementi della visualizzazione elenco sono costituiti da uno sfondo e da contenuto. Il contenuto può essere sotto forma di testo, icona o entrambi.  
   
-|Stato|Elemento|Nome token: Category.color|  
+|Stato|Elemento|Nome token: Category. Color|  
 |-----------|-------------|--------------------------------|  
 |Impostazione predefinita|Sfondo|Trasparente|  
 |Impostazione predefinita|Primo piano (testo)|`Environment.CommandBarTextActive`|  
@@ -1435,7 +1430,7 @@ Inserire qui l'introduzione.
   
 - Per qualsiasi interfaccia utente non strutturata come la finestra Progettazione manifesto.  
   
-|Stato|Componente|Elemento|Nome token: Category.color|  
+|Stato|Componente|Elemento|Nome token: Category. Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Predefinito (selezionato)|Scheda|Sfondo|`ManifestDesigner.TabActive`|  
 |Predefinito (selezionato)|Scheda|Bordo|nessuno|  
@@ -1448,7 +1443,7 @@ Inserire qui l'introduzione.
 ### <a name="tagging"></a>Assegnazione di tag  
  Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichiarare parole chiave da cercare per scopi di verifica. Ad esempio, i project manager e gli sviluppatori possono usare Team Foundation Server (TFS) per assegnare tag a elementi di lavoro. La tabella seguente indica i nomi di colore per il tag stesso e il glifo dell'icona di chiusura visualizzato negli stati corrispondenti al passaggio del mouse e alla selezione.  
   
- ![L'assegnazione di tag con linea rossa](../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")  
+ ![Tagging redline](../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")  
   
  Usare…  
  Per un'interfaccia utente che supporta l'assegnazione di tag.  
@@ -1458,12 +1453,12 @@ Inserire qui l'introduzione.
   
 #### <a name="tag"></a>Tag  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Sfondo|`Tag.Background`|  
-|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Primo piano (testo)|`Tag.Background`|  
-|![Tag al passaggio del mouse](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Passare il mouse**|Sfondo|`Tag.HoverBackground`|  
-|![Tag al passaggio del mouse](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Passare il mouse**|Primo piano (testo)|`Tag.HoverBackgroundText`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Sfondo|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Primo piano (testo)|`Tag.Background`|  
+|![Tag al passaggio del mouse](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Hover**|Sfondo|`Tag.HoverBackground`|  
+|![Tag al passaggio del mouse](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Hover**|Primo piano (testo)|`Tag.HoverBackgroundText`|  
 |![Tag premuto](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **Premuto**|Sfondo|`Tag.PressedBackground`|  
 |![Tag premuto](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **Premuto**|Primo piano (testo)|`Tag.PressedBackgroundText`|  
 |![Tag selezionato](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 180_TagSelected")<br /><br /> **selezionato**|Sfondo|`Tag.SelectedBackground`|  
@@ -1472,14 +1467,14 @@ Inserire qui l'introduzione.
 #### <a name="glyph-close-icon"></a>Glifo (icona di chiusura)  
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;icona&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Predefinito (impostazione predefinita del tag)**|Sfondo|N/D|  
-|![Tag &#40;icona&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Predefinito (impostazione predefinita del tag)**|Primo piano (glifo)|`Tag.TagHoverGlyph`|  
+|![Tag &#40;glyph&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Predefinito (impostazione predefinita del tag)**|Sfondo|N/D|  
+|![Tag &#40;glyph&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Predefinito (impostazione predefinita del tag)**|Primo piano (glifo)|`Tag.TagHoverGlyph`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;icona&#41; al passaggio del mouse](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Al passaggio del mouse (impostazione predefinita del tag)**|Sfondo|`Tag.TagHoverGlyphHoverBackground`|  
 |![Tag &#40;icona&#41; al passaggio del mouse](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Al passaggio del mouse (impostazione predefinita del tag)**|Primo piano (glifo)|`Tag.TagHoverGlyphHover`|  
@@ -1487,22 +1482,22 @@ Inserire qui l'introduzione.
   
  **Premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;icona&#41; premuto](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Premuto (impostazione predefinita del tag)**|Sfondo|`Tag.TagHoverGlyphPressedBackground`|  
-|![Tag &#40;icona&#41; premuto](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Premuto (impostazione predefinita del tag)**|Primo piano (glifo)|`Tag.TagHoverGlyphPressed`|  
-|![Tag &#40;icona&#41; premuto](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Premuto (impostazione predefinita del tag)**|Bordo|`Tag.TagHoverGlyphPressedBorder`|  
+|![Tag &#40;glyph&#41; pressed](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Premuto (impostazione predefinita del tag)**|Sfondo|`Tag.TagHoverGlyphPressedBackground`|  
+|![Tag &#40;glyph&#41; pressed](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Premuto (impostazione predefinita del tag)**|Primo piano (glifo)|`Tag.TagHoverGlyphPressed`|  
+|![Tag &#40;glyph&#41; pressed](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Premuto (impostazione predefinita del tag)**|Bordo|`Tag.TagHoverGlyphPressedBorder`|  
   
  **Tag selezionato/glifo predefinito**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag selezionato](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Predefinito (tag selezionato)**|Sfondo|N/D|  
 |![Tag selezionato](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Predefinito (tag selezionato)**|Primo piano (glifo)|`Tag.TagSelectedGlyph`|  
   
  **Tag selezionato/glifo al passaggio del mouse**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag selezionato al passaggio del mouse](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Al passaggio del mouse (tag selezionato)**|Sfondo|`Tag.TagSelectedGlyphHoverBackground`|  
 |![Tag selezionato al passaggio del mouse](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Al passaggio del mouse (tag selezionato)**|Primo piano (glifo)|`Tag.TagSelectedGlyphHover`|  
@@ -1510,7 +1505,7 @@ Inserire qui l'introduzione.
   
  **Tag selezionato/glifo premuto**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag selezionato premuto](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Premuto (tag selezionato)**|Sfondo|`Tag.TagSelectedGlyphPressedBackground`|  
 |![Tag selezionato premuto](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Premuto (tag selezionato)**|Primo piano (glifo)|`Tag.TagSelectedGlyphPressed`|  
@@ -1531,11 +1526,11 @@ Inserire qui l'introduzione.
   
 -   Come sfondo su cui si vuole posizionare elementi in primo piano.  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |Livello inferiore|Sfondo|`Environment.EnvironmentBackground`|  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |Livello superiore|Sfondo<br /><br /> *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*|`Environment.EnvironmentBackgroundGradientBegin`|  
 |Livello superiore|Sfondo<br /><br /> *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*|`Environment.EnvironmentBackgroundGradientEnd`|  
@@ -1555,7 +1550,7 @@ Inserire qui l'introduzione.
   Non usare...  
   Per aree che non sono simili a uno scaffale dei comandi.  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |Barra dei menu|Sfondo<br /><br /> *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*|`Environment.CommandShelfHighlightGradientBegin`|  
 |Barra dei menu|Sfondo<br /><br /> *Cursori sfumatura impostati sullo stesso valore di colore dei temi di Visual Studio 2013 chiaro e scuro.*|`Environment.CommandShelfHighlightGradientMiddle`|  
@@ -1577,7 +1572,7 @@ Inserire qui l'introduzione.
   
  **Default**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Nodo padre della casella degli strumenti](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nodo padre**|Sfondo|`Environment.ToolboxContent`<br /><br /> Intestazioni<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Singoli elementi o intera finestra se non è disponibile alcun controllo|  
 |![Nodo figlio della casella degli strumenti](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Nodo figlio**|Sfondo|`Environment.ToolboxContent`<br /><br /> Intestazioni<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Singoli elementi o intera finestra se non è disponibile alcun controllo|  
@@ -1588,9 +1583,9 @@ Inserire qui l'introduzione.
 |![Nodo padre della casella degli strumenti](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Nodo padre**|Primo piano (testo)|`Environment.ToolboxContent`|  
 |![Nodo figlio della casella degli strumenti](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Nodo figlio**|Primo piano (testo)|`Environment.ToolboxContent`|  
   
- **Passare il mouse**  
+ **Hover**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Nodo figlio della casella degli strumenti al passaggio del mouse](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Al passaggio del mouse della casella degli strumenti sul nodo figlio**|Sfondo|`Environment.ToolboxContentMouseOver`<br /><br /> Solo singoli elementi|  
 |![Nodo figlio della casella degli strumenti al passaggio del mouse](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Al passaggio del mouse della casella degli strumenti sul nodo figlio**|Bordo|nessuno|  
@@ -1598,7 +1593,7 @@ Inserire qui l'introduzione.
   
  **selezionato**  
   
-|Componente|Elemento|Nome token: Category.color|  
+|Componente|Elemento|Nome token: Category. Color|  
 |---------------|-------------|--------------------------------|  
 |![Nodo padre della casella degli strumenti con stato attivo](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **Nodo padre con stato attivo**|Sfondo|`TreeView.SelectedItemActive`<br /><br /> Dalla categoria [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Nodo figlio della casella degli strumenti con stato attivo](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Nodo figlio con stato attivo**|Sfondo|`TreeView.SelectedItemActive`<br /><br /> Dalla categoria [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  

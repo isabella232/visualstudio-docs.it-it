@@ -1,8 +1,8 @@
 ---
-title: Configurare i ruoli per un servizio cloud di Azure con Visual Studio | Microsoft Docs
-description: Informazioni su come installare e configurare i ruoli per servizi cloud di Azure con Visual Studio.
+title: Configurare i ruoli per un servizio cloud di Azure
+description: Informazioni su come impostare e configurare i ruoli per i servizi cloud di Azure usando Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,124 +11,124 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ce2259debb55c4792c2998f0e67df69dbc8cb7f9
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003080"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59001277"
 ---
-# <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare i ruoli dei servizi cloud di Azure con Visual Studio
-Un servizio cloud di Azure può avere uno o più lavoro o i ruoli web. Per ogni ruolo, è necessario definire come tale ruolo viene configurato e anche configurare la modalità di esecuzione del ruolo. Per altre informazioni sui ruoli in servizi cloud, vedere il video [Introduzione a servizi Cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 
+# <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare un ruolo per un servizio cloud di Azure con Visual Studio
+Un servizio cloud di Azure può includere uno o più ruoli di lavoro o ruoli Web. Per ogni ruolo è necessario definire la modalità di configurazione e configurare la modalità di esecuzione. Per altre informazioni sui ruoli nei servizi cloud, vedere il video [Introduzione ai servizi cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 Le informazioni per il servizio cloud vengono archiviate nei file seguenti:
 
-- **Servicedefinition. Csdef** -file di definizione del servizio definisce le impostazioni di runtime per il servizio cloud include i ruoli richiesti, endpoint e le dimensioni della macchina virtuale. Nessuno dei dati archiviati in `ServiceDefinition.csdef` può essere modificato durante l'esecuzione del ruolo.
-- **ServiceConfiguration. cscfg** : file di configurazione del servizio configura il numero di istanze di un ruolo viene eseguito e i valori delle impostazioni definiti per un ruolo. I dati archiviati in `ServiceConfiguration.cscfg` possono essere modificati durante l'esecuzione del ruolo.
+- **ServiceDefinition.csdef** - Il file di definizione del servizio definisce le impostazioni di runtime per il servizio cloud e include i ruoli richiesti, gli endpoint e le dimensioni della macchina virtuale. Nessun dato archiviato in `ServiceDefinition.csdef` può essere modificato durante l'esecuzione del ruolo.
+- **ServiceConfiguration.cscfg** - Il file di configurazione del servizio configura il numero delle istanze di un ruolo che vengono eseguite e i valori delle impostazioni definiti per un ruolo. I dati archiviati in `ServiceConfiguration.cscfg` possono essere modificati durante l'esecuzione del ruolo.
 
-Per archiviare valori diversi per le impostazioni che controllano la modalità di esecuzione di un ruolo, è possibile definire più configurazioni del servizio. È possibile usare una configurazione del servizio diversa per ogni ambiente di distribuzione. Ad esempio, è possibile impostare la stringa di connessione di account di archiviazione per usare l'emulatore di archiviazione di Azure locale in una configurazione del servizio locale e creare un'altra configurazione del servizio per usare archiviazione di Azure nel cloud.
+Per archiviare valori diversi per le impostazioni che controllano l'esecuzione del ruolo, è possibile creare più configurazioni del servizio. È possibile usare una configurazione del servizio diversa per ogni ambiente di distribuzione. Ad esempio, è possibile configurare la stringa di connessione dell'account di archiviazione in modo che usi l'emulatore di archiviazione di Azure locale in una configurazione del servizio locale e creare un'altra configurazione del servizio in modo che usi l'archiviazione di Azure nel cloud.
 
-Quando si crea un servizio cloud di Azure in Visual Studio, due configurazioni del servizio vengono automaticamente create e aggiunti al progetto di Azure:
+Quando si crea un servizio cloud in Visual Studio, vengono automaticamente create due configurazioni del servizio che sono poi aggiunte al progetto Azure:
 
 - `ServiceConfiguration.Cloud.cscfg`
 - `ServiceConfiguration.Local.cscfg`
 
 ## <a name="configure-an-azure-cloud-service"></a>Configurare un servizio cloud di Azure
-È possibile configurare un servizio cloud di Azure da Esplora soluzioni in Visual Studio, come illustrato nei passaggi seguenti:
+È possibile configurare un servizio cloud di Azure da Esplora soluzioni in Visual Studio, come illustrato nella procedura seguente:
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, fare clic sul progetto e, dal menu di scelta rapida, selezionare **proprietà**.
-   
-    ![Menu di scelta rapida progetto Esplora soluzioni](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà** dal menu di scelta rapida.
 
-1. Nella pagina delle proprietà del progetto, selezionare la **sviluppo** scheda. 
+    ![Menu di scelta rapida di Esplora soluzioni](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
-    ![Pagina delle proprietà di progetto - scheda sviluppo](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
+1. Nella pagina delle proprietà del progetto, selezionare la scheda **Sviluppo**.
 
-1. Nel **configurazione del servizio** elencare, selezionare il nome della configurazione del servizio che si desidera modificare. (Se si desidera apportare modifiche a tutte le configurazioni di servizio per questo ruolo, selezionare **tutte le configurazioni**.)
-   
+    ![Pagina delle proprietà del progetto - Scheda Sviluppo](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
+
+1. Nell'elenco **Configurazione del servizio** scegliere il nome della configurazione del servizio da modificare. Per apportare modifiche a tutte le configurazioni del servizio per questo ruolo, è possibile scegliere **Tutte le configurazioni**.
+
     > [!IMPORTANT]
-    > Se si sceglie una configurazione del servizio specifica, alcune proprietà sono disabilitate perché può essere impostati solo per tutte le configurazioni. Per modificare queste proprietà, è necessario selezionare **tutte le configurazioni**.
-    > 
-    > 
-   
-    ![Elenco di configurazione del servizio per un servizio cloud di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
+    > Se si sceglie una configurazione del servizio specifica, alcune proprietà verranno disabilitate perché possono essere impostate solo per tutte le configurazioni. Per modificare queste proprietà, è necessario scegliere **Tutte le configurazioni**.
+    >
+    >
 
-## <a name="change-the-number-of-role-instances"></a>Modificare il numero di istanze del ruolo
-Per migliorare le prestazioni del servizio cloud, è possibile modificare il numero di istanze di un ruolo in esecuzione, in base al numero di utenti o al carico previsto per un particolare ruolo. Una macchina virtuale separata viene creata per ogni istanza di un ruolo quando il servizio cloud in esecuzione in Azure. Ciò influirà sulla fatturazione per la distribuzione di questo servizio cloud. Per altre informazioni sulla fatturazione, vedere [comprendere la fattura per Microsoft Azure](/azure/billing/billing-understand-your-bill).
+    ![Elenco Configurazione del servizio per un servizio cloud di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
+
+## <a name="change-the-number-of-role-instances"></a>Cambiare il numero di istanze del ruolo
+Per migliorare le prestazioni del servizio cloud, è possibile cambiare il numero di istanze di un ruolo in esecuzione, in base al numero di utenti o al carico previsto per un ruolo specifico. Una macchina virtuale separata viene creata per ogni istanza di un ruolo quando il servizio cloud è in esecuzione in Azure. Ciò influirà sulla fatturazione per la distribuzione di questo servizio cloud. Per altre informazioni sulla fatturazione, vedere l'argomento contenente [informazioni sulla fatturazione per Microsoft Azure](/azure/billing/billing-understand-your-bill).
 
 1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, espandere il nodo del progetto. Sotto il **ruoli** nodo, fare doppio clic il ruolo da aggiornare e, dal menu di scelta rapida, selezionare **proprietà**.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
-    ![Menu di scelta rapida ruolo Azure di Esplora soluzioni](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
+    ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selezionare il **configurazione** scheda.
+1. Scegliere la scheda **Configurazione**.
 
     ![Scheda Configurazione](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page.png)
 
-1. Nel **configurazione del servizio** elencare, selezionare la configurazione del servizio che si desidera aggiornare.
-   
+1. Nell'elenco **Configurazione servizio** scegliere la configurazione del servizio da aggiornare.
+
     ![Elenco Configurazione servizio](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
-1. Nel **numero di istanze** testo casella, immettere il numero di istanze che si desidera avviare per questo ruolo. Ogni istanza viene eseguita su una macchina virtuale separata quando si pubblica il servizio cloud in Azure.
+1. Nella casella di testo **Conteggio istanze** immettere il numero di istanze da avviare per questo ruolo. Quando il servizio cloud viene pubblicato in Azure, ogni istanza viene eseguita in una macchina virtuale diversa.
 
     ![Aggiornamento del conteggio istanze](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Da Visual Studio, sulla barra degli strumenti, seleziona **salvare**.
+1. Dalla barra degli strumenti di Visual Studio selezionare **Salva**.
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>Gestire le stringhe di connessione per gli account di archiviazione
-È possibile aggiungere, rimuovere o modificare le stringhe di connessione per le configurazioni del servizio. Ad esempio, è possibile una stringa di connessione locale per una configurazione del servizio locale che ha un valore pari `UseDevelopmentStorage=true`. È anche possibile configurare una configurazione del servizio cloud che usa un account di archiviazione di Azure.
+È possibile aggiungere, rimuovere o modificare le stringhe di connessione per le configurazioni del servizio. Ad esempio, è possibile che si voglia creare una stringa di connessione locale per una configurazione del servizio locale con valore `UseDevelopmentStorage=true`. È anche possibile che si voglia definire una configurazione del servizio cloud che usa un account di archiviazione di Azure.
 
 > [!WARNING]
-> Quando si immettono le informazioni chiave account di archiviazione di Azure per una stringa di connessione di account di archiviazione, queste informazioni vengono archiviate in locale nel file di configurazione del servizio. Tuttavia, queste informazioni attualmente non archiviate come testo crittografato.
-> 
-> 
+> Quando si immettono le informazioni chiave dell'account di archiviazione di Azure per una stringa di connessione dell'account di archiviazione, tali informazioni vengono archiviate localmente nel file di configurazione del servizio. Queste informazioni, tuttavia, non vengono attualmente archiviate come testo crittografato.
+>
+>
 
-Utilizzando un valore diverso per ogni configurazione del servizio, non è necessario usare stringhe di connessione diverse nel servizio cloud o modificare il codice quando si pubblica il servizio cloud in Azure. È possibile usare lo stesso nome per la stringa di connessione nel codice e il valore sarà diverso in base alla configurazione del servizio selezionata quando si compila il servizio cloud o quando lo si pubblica.
+Se si usa un valore diverso per ogni configurazione del servizio, non sarà necessario usare stringhe di connessione diverse nel servizio cloud o modificare il codice quando si pubblica il servizio cloud in Azure. È possibile usare lo stesso nome per la stringa di connessione nel codice e il valore sarà diverso in base alla configurazione del servizio selezionata quando si compila il servizio cloud o quando lo si pubblica.
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, espandere il nodo del progetto. Sotto il **ruoli** nodo, fare doppio clic il ruolo da aggiornare e, dal menu di scelta rapida, selezionare **proprietà**.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
-    ![Menu di scelta rapida ruolo Azure di Esplora soluzioni](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
+    ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selezionare il **impostazioni** scheda.
+1. Fare clic sulla scheda **Impostazioni**.
 
-    ![Scheda Impostazioni](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
+    ![Scheda Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
-1. Nel **configurazione del servizio** elencare, selezionare la configurazione del servizio che si desidera aggiornare.
+1. Nell'elenco **Configurazione servizio** scegliere la configurazione del servizio da aggiornare.
 
-    ![Configurazione del servizio](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![Service Configuration](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. Per aggiungere una stringa di connessione, selezionare **Aggiungi impostazione**.
+1. Per aggiungere una stringa di connessione, scegliere **Aggiungi impostazione**.
 
-    ![Aggiungere la stringa di connessione](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
+    ![Aggiungere una stringa di connessione](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
 1. Dopo aver aggiunto la nuova impostazione all'elenco, aggiornare la riga nell'elenco con le informazioni necessarie.
 
     ![Nuova stringa di connessione](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Nome** -immettere il nome che si desidera usare per la stringa di connessione.
-    - **Tipo di** : selezionare questa opzione **stringa di connessione** nell'elenco a discesa.
-    - **Valore** -è possibile immettere la stringa di connessione direttamente nella **valore** cella oppure selezionare i puntini di sospensione (...) per lavorare **crea stringa di connessione di archiviazione** finestra di dialogo.  
+    - **Nome**: digitare il nome da usare per la stringa di connessione.
+    - **Tipo**: scegliere **Stringa di connessione** nell'elenco a discesa.
+    - **Valore**: è possibile immettere la stringa di connessione direttamente nella cella **Valore** o selezionare i puntini di sospensione (...) per lavorare nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**.
 
-1. Nel **crea stringa di connessione di archiviazione** finestra di dialogo, selezionare un'opzione per **connettersi usando**. Seguire quindi le istruzioni per l'opzione selezionata:
+1. Nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**, selezionare un'opzione per **Connetti tramite**. Seguire quindi le istruzioni relative all'opzione selezionata:
 
-    - **Emulatore di archiviazione di Microsoft Azure** -se si seleziona questa opzione, le impostazioni rimanenti nella finestra di dialogo sono disabilitate perché vengono applicati solo ad Azure. Scegliere **OK**.
-    - **La sottoscrizione** : se si seleziona questa opzione, usare l'elenco a discesa per selezionare e accedere a un account Microsoft oppure aggiungere un account Microsoft. Selezionare un account di archiviazione e di sottoscrizione di Azure. Scegliere **OK**.
-    - **Credenziali immesse manualmente** -immettere il nome di account di archiviazione e la chiave primaria o secondaria. Selezionare un'opzione per **connessione** (per la maggior parte degli scenari è consigliato HTTPS). Scegliere **OK**.
+    - **Emulatore di archiviazione di Microsoft Azure**: se si seleziona questa opzione, le impostazioni rimanenti nella finestra di dialogo vengono disabilitate, poiché sono valide solo per Azure. Scegliere **OK**.
+    - **Sottoscrizione**: se si seleziona questa opzione, usare l'elenco a discesa per selezionare e accedere a un account Microsoft oppure aggiungere un account Microsoft. Selezionare una sottoscrizione e un account di archiviazione di Azure. Scegliere **OK**.
+    - **Credenziali immesse manualmente**: immettere il nome dell'account di archiviazione e la chiave primaria o secondaria. Selezionare un'opzione per **Connessione**. Nella maggior parte dei casi è consigliato HTTPS. Selezionare **OK**.
 
-1. Per eliminare una stringa di connessione, selezionare la stringa di connessione e quindi selezionare **Rimuovi impostazione**.
+1. Per eliminare una stringa di connessione, selezionarla e quindi scegliere **Rimuovi impostazione**.
 
-1. Da Visual Studio, sulla barra degli strumenti, seleziona **salvare**.
+1. Dalla barra degli strumenti di Visual Studio selezionare **Salva**.
 
-## <a name="programmatically-access-a-connection-string"></a>Accedere a livello di codice a una stringa di connessione
+## <a name="programmatically-access-a-connection-string"></a>Accedere a una stringa di connessione a livello di codice
 
-La procedura seguente illustra come accedere a livello di codice a una stringa di connessione usando C#.
+La procedura seguente illustra come accedere a una stringa di connessione a livello di codice usando C#.
 
-1. Aggiungere le seguenti direttive using un C# file in cui si intende usare l'impostazione:
+1. Aggiungere le seguenti direttive using al file C# in cui si vuole usare l'impostazione:
 
     ```csharp
     using Microsoft.WindowsAzure;
@@ -136,7 +136,7 @@ La procedura seguente illustra come accedere a livello di codice a una stringa d
     using Microsoft.WindowsAzure.ServiceRuntime;
     ```
 
-1. Il codice seguente illustra un esempio di come accedere a una stringa di connessione. Sostituire il &lt;ConnectionStringName > segnaposto con il valore appropriato. 
+1. Il codice seguente è un esempio di come accedere a una stringa di connessione. Sostituire il segnaposto &lt;ConnectionStringName > con il valore appropriato.
 
     ```csharp
     // Setup the connection to Azure Storage
@@ -144,23 +144,23 @@ La procedura seguente illustra come accedere a livello di codice a una stringa d
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Aggiungere impostazioni personalizzate da usare nel servizio cloud di Azure
-Le impostazioni personalizzate nel file di configurazione del servizio consentono di aggiungere un nome e il valore di una stringa per una configurazione del servizio specifico. È possibile scegliere di utilizzare questa impostazione per configurare una funzionalità nel servizio cloud leggendo il valore dell'impostazione e utilizzando questo valore per controllare la logica nel codice. È possibile modificare questi valori di configurazione del servizio senza dovere ricompilare il pacchetto del servizio o quando è in esecuzione il servizio cloud. Il codice può cercare notifiche di quando viene modificata un'impostazione. Visualizzare [evento roleenvironment. Changing](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx).
+Le impostazioni personalizzate nel file di configurazione del servizio consentono di aggiungere un nome e un valore per una stringa per una configurazione del servizio specifica. È possibile scegliere di usare questa impostazione per configurare una funzionalità nel servizio cloud leggendo il valore dell'impostazione e usando questo valore per controllare la logica nel codice. È possibile cambiare questi valori della configurazione del servizio senza dovere ricompilare il pacchetto del servizio o quando il servizio cloud è in esecuzione. Il codice può cercare notifiche in caso di modifiche di un'impostazione. Vedere l' [Evento RoleEnvironment.Changing](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx).
 
-È possibile aggiungere, rimuovere o modificare le impostazioni personalizzate per le configurazioni del servizio. È possibile valori diversi per queste stringhe per configurazioni del servizio diverse.
+È possibile aggiungere, rimuovere o modificare impostazioni personalizzate per le configurazioni del servizio. Potrebbero essere necessari diversi valori per queste stringhe per configurazioni del servizio diverse.
 
-Utilizzando un valore diverso per ogni configurazione del servizio, non è necessario usare stringhe diverse nel servizio cloud o modificare il codice quando si pubblica il servizio cloud in Azure. È possibile usare lo stesso nome per la stringa nel codice e il valore sarà diverso in base alla configurazione del servizio selezionata quando si compila il servizio cloud o quando lo si pubblica.
+Se si usa un valore diverso per ogni configurazione del servizio, non sarà necessario usare stringhe diverse nel servizio cloud o modificare il codice quando si pubblica il servizio cloud in Azure. È possibile usare lo stesso nome per la stringa nel codice e il valore sarà diverso in base alla configurazione del servizio selezionata quando si compila il servizio cloud o quando lo si pubblica.
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, espandere il nodo del progetto. Sotto il **ruoli** nodo, fare doppio clic il ruolo da aggiornare e, dal menu di scelta rapida, selezionare **proprietà**.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
-    ![Menu di scelta rapida ruolo Azure di Esplora soluzioni](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
+    ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selezionare il **impostazioni** scheda.
+1. Fare clic sulla scheda **Impostazioni**.
 
-    ![Scheda Impostazioni](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
+    ![Scheda Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
-1. Nel **configurazione del servizio** elencare, selezionare la configurazione del servizio che si desidera aggiornare.
+1. Nell'elenco **Configurazione servizio** scegliere la configurazione del servizio da aggiornare.
 
     ![Elenco Configurazione servizio](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
@@ -172,19 +172,19 @@ Utilizzando un valore diverso per ogni configurazione del servizio, non è neces
 
     ![Nuova impostazione personalizzata](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Nome** -immettere il nome dell'impostazione.
-    - **Tipo di** : selezionare questa opzione **stringa** nell'elenco a discesa.
-    - **Valore** -immettere il valore dell'impostazione. È possibile immettere il valore direttamente nel **valore** delle celle o selezionare i puntini di sospensione (...) immettere il valore di **Modifica stringa** finestra di dialogo.  
+    - **Nome**: inserire il nome dell'impostazione.
+    - **Tipo**: scegliere **Stringa di connessione** dall'elenco a discesa.
+    - **Valore**: inserire il valore dell'impostazione. È possibile immettere il valore direttamente nella cella **Valore** o selezionare i puntini di sospensione (...) per immettere il valore nella finestra di dialogo **Modifica stringa**.
 
-1. Per eliminare un'impostazione personalizzata, selezionare l'impostazione e quindi selezionare **Rimuovi impostazione**.
+1. Per eliminare un'impostazione personalizzata, selezionarla e quindi scegliere **Rimuovi impostazione**.
 
-1. Da Visual Studio, sulla barra degli strumenti, seleziona **salvare**.
+1. Dalla barra degli strumenti di Visual Studio selezionare **Salva**.
 
-## <a name="programmatically-access-a-custom-settings-value"></a>Accedere a livello di codice al valore dell'impostazione personalizzata
- 
-La procedura seguente illustra come accedere a livello di programmazione utilizzando un'impostazione personalizzata a C#.
+## <a name="programmatically-access-a-custom-settings-value"></a>Accedere al valore dell'impostazione personalizzata a livello di codice
 
-1. Aggiungere le seguenti direttive using un C# file in cui si intende usare l'impostazione:
+La procedura seguente illustra come accedere a un'impostazione personalizzata a livello di codice usando C#.
+
+1. Aggiungere le seguenti direttive using al file C# in cui si vuole usare l'impostazione:
 
     ```csharp
     using Microsoft.WindowsAzure;
@@ -192,61 +192,61 @@ La procedura seguente illustra come accedere a livello di programmazione utilizz
     using Microsoft.WindowsAzure.ServiceRuntime;
     ```
 
-1. Il codice seguente illustra un esempio di come accedere a un'impostazione personalizzata. Sostituire il &lt;SettingName > segnaposto con il valore appropriato. 
-    
+1. Il codice seguente è un esempio di come accedere a un'impostazione personalizzata. Sostituire il segnaposto &lt;SettingName> con il valore appropriato.
+
     ```csharp
     var settingValue = RoleEnvironment.GetConfigurationSettingValue("<SettingName>");
     ```
 
-## <a name="manage-local-storage-for-each-role-instance"></a>Gestire l'archiviazione locale per ogni istanza del ruolo
-È possibile aggiungere archiviazione di file locale del sistema per ogni istanza di un ruolo. I dati archiviati nella risorsa di archiviazione non è accessibile da altre istanze del ruolo per cui sono archiviati i dati o da altri ruoli.  
+## <a name="manage-local-storage-for-each-role-instance"></a>Gestire le risorse di archiviazione locali per ogni istanza del ruolo
+È possibile aggiungere una risorsa di archiviazione del file system locale per ogni istanza del ruolo. I dati archiviati nella risorsa di archiviazione non sono accessibili da altre istanze del ruolo per il quale sono archiviati, né da altri ruoli.
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, espandere il nodo del progetto. Sotto il **ruoli** nodo, fare doppio clic il ruolo da aggiornare e, dal menu di scelta rapida, selezionare **proprietà**.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
-    ![Menu di scelta rapida ruolo Azure di Esplora soluzioni](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
+    ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selezionare il **risorsa di archiviazione locale** scheda.
+1. Selezionare la scheda **Risorsa di archiviazione locale**.
 
-    ![Scheda archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
+    ![Scheda Archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. Nel **configurazione del servizio** elenco, assicurarsi che **tutte le configurazioni** selezionata come le impostazioni di archiviazione locale si applicano a tutte le configurazioni di servizio. Qualsiasi altro valore comporta in tutti i campi di input nella pagina di cui è stato disabilitato. 
+1. Nell'elenco **Configurazione del servizio**, verificare che l'opzione selezionata sia **Tutte le configurazioni**, poiché le impostazioni di archiviazione locale si applicano a tutte le configurazioni di servizio. Qualsiasi altro valore comporta la disabilitazione di tutti i campi di input della pagina.
 
     ![Elenco Configurazione servizio](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
-1. Per aggiungere una voce di risorsa di archiviazione locale, selezionare **Aggiungi risorsa di archiviazione locale**.
+1. Per aggiungere una voce relativa a una risorsa di archiviazione locale, selezionare **Aggiungi risorsa di archiviazione locale**.
 
-    ![Aggiungere spazio di archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-add-local-storage.png)
+    ![Aggiungi risorsa di archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-add-local-storage.png)
 
-1. Dopo aver aggiunto la nuova voce di risorsa di archiviazione locale all'elenco, aggiornare la riga nell'elenco con le informazioni necessarie.
+1. Dopo aver aggiunto la nuova risorsa di archiviazione locale all'elenco, aggiornare la riga nell'elenco con le informazioni necessarie.
 
     ![Nuova risorsa di archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
-    - **Nome** -immettere il nome che si desidera utilizzare per la nuova risorsa di archiviazione locale.
-    - **Dimensioni (MB)** -immettere la dimensione in MB necessaria per la nuova risorsa di archiviazione locale.
-    - **Pulisci a riciclo ruolo** -selezionare questa opzione per rimuovere i dati nella nuova risorsa di archiviazione locale quando la macchina virtuale per il ruolo viene riciclata.
+    - **Nome**: digitare il nome da usare per la nuova risorsa di archiviazione locale.
+    - **Dimensione (MB)**: immettere la dimensione in MB necessaria per la nuova risorsa di archiviazione locale.
+    - **Pulisci a riciclo ruolo**: selezionare questa opzione per rimuovere i dati dalla nuova risorsa di archiviazione locale quando la macchina virtuale per il ruolo viene riciclata.
 
-1. Per eliminare una voce di risorsa di archiviazione locale, selezionare la voce e quindi selezionare **Rimuovi risorsa di archiviazione locale**.
+1. Per eliminare una risorsa di archiviazione locale, selezionarla e scegliere **Remove Local Storage** (Rimuovi risorsa di archiviazione locale).
 
-1. Da Visual Studio, sulla barra degli strumenti, seleziona **salvare**.
+1. Dalla barra degli strumenti di Visual Studio selezionare **Salva**.
 
-## <a name="programmatically-accessing-local-storage"></a>A livello di codice l'accesso all'archiviazione locale
+## <a name="programmatically-accessing-local-storage"></a>Accedere alla risorsa di archiviazione locale a livello di codice
 
-Questa sezione illustra come accedere a livello di archiviazione locale usando C# scrivendo un file di testo test `MyLocalStorageTest.txt`.  
+Questa sezione illustra come accedere alla risorsa di archiviazione locale a livello di codice usando C# per scrivere il file di testo di prova `MyLocalStorageTest.txt`.
 
-### <a name="write-a-text-file-to-local-storage"></a>Scrivere un file di testo nell'archivio locale
+### <a name="write-a-text-file-to-local-storage"></a>Scrivere un file di testo in una risorsa di archiviazione locale
 
-Il codice seguente illustra un esempio di come scrivere un file di testo nell'archivio locale. Sostituire il &lt;LocalStorageName > segnaposto con il valore appropriato. 
+Il codice seguente è un esempio di come scrivere un file di testo in una risorsa di archiviazione locale. Sostituire il segnaposto &lt;LocalStorageName> con il valore appropriato.
 
     ```csharp
     // Retrieve an object that points to the local storage resource
     LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
-    
+
     //Define the file name and path
     string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
     String filePath = Path.Combine(paths);
-    
+
     using (FileStream writeStream = File.Create(filePath))
     {
         Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
@@ -255,24 +255,23 @@ Il codice seguente illustra un esempio di come scrivere un file di testo nell'ar
 
     ```
 
-### <a name="find-a-file-written-to-local-storage"></a>Trovare un file scritto nell'archivio locale
+### <a name="find-a-file-written-to-local-storage"></a>Trovare un file scritto in una risorsa di archiviazione locale
 
 Per visualizzare il file creato dal codice nella sezione precedente, seguire questa procedura:
-    
-1.  Nell'area di notifica Windows, fare doppio clic sull'icona di Azure e, dal menu di scelta rapida, selezionare **Mostra interfaccia emulatore di calcolo**. 
+
+1.  Nell'area di notifica di Windows, fare clic con il pulsante destro del mouse sull'icona di Azure e, dal menu di scelta rapida, selezionare **Show Compute Emulator UI** (Mostra interfaccia utente dell'emulatore di calcolo).
 
     ![Mostra emulatore di calcolo di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
-1. Selezionare il ruolo web.
+1. Selezionare il ruolo Web.
 
     ![Emulatore di calcolo di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator.png)
 
-1. Nel **emulatore di calcolo di Microsoft Azure** dal menu **Tools** > **Apri archivio locale**.
+1. Dal menu **Emulatore di calcolo di Microsoft Azure**, selezionare **Strumenti** > **Open local store** (Apri risorsa di archiviazione locale).
 
-    ![Voce di menu Apri archivio locale](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
+    ![Voce di menu Apri risorsa di archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 
-1. Quando si apre la finestra di Windows Explorer, immettere "mylocalstoragetest. txt ' nel **ricerca** casella di testo e selezionare **invio** per avviare la ricerca. 
+1. Nella finestra di Esplora risorse visualizzata, immettere "MyLocalStorageTest.txt" nella casella di testo **Cerca** e premere **Invio** per avviare la ricerca.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sui progetti Azure in Visual Studio, vedere [configurazione di un progetto Azure](vs-azure-tools-configuring-an-azure-project.md). Altre informazioni sullo schema del servizio cloud leggendo [riferimenti allo Schema](https://msdn.microsoft.com/library/azure/dd179398).
-
+Per altre informazioni sui progetti Azure in Visual Studio, vedere [Configurazione di un progetto Azure](vs-azure-tools-configuring-an-azure-project.md). Per altre informazioni sullo schema del servizio cloud, vedere [Guida di riferimento agli schemi](https://msdn.microsoft.com/library/azure/dd179398).

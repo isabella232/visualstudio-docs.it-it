@@ -1,12 +1,9 @@
 ---
 title: Generazione di testo in fase di esecuzione con modelli di testo T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920131"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001368"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Ereditarietà tra i modelli di testo in fase di esecuzione  
  È possibile condividere il contenuto tra i modelli in fase di esecuzione mediante la scrittura di un modello di classe di base che può essere astratto. Usare la `inherits` parametro del `<@#template#>` direttiva per fare riferimento a un'altra classe di modello di runtime.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modello di ereditarietà: frammenti nei metodi di Base  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modello di ereditarietà: Frammenti nei metodi di Base  
  Nel modello usato nell'esempio seguente, si noti quanto riportato di seguito:  
   
 - La classe di base `SharedFragments` definisce i metodi all'interno di blocchi della funzionalità di classe `<#+ ... #>`.  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>Argomenti correlati  
- Modelli di fase di progettazione: Se si desidera usare un modello per generare il codice che diventa parte dell'applicazione, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+ Modelli della fase di progettazione: Se si desidera usare un modello per generare il codice che diventa parte dell'applicazione, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
  Modelli di runtime possono essere usati in qualsiasi applicazione in cui i modelli e il relativo contenuto sono determinati in fase di compilazione. Tuttavia, se si vuole scrivere una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che generi il testo dai modelli che cambiano in fase di esecuzione, vedere [richiamo di trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)   
- [Informazioni su T4: I modelli di testo pre-elaborato dal Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Informazioni su T4: Modelli di testo pre-elaborato](https://github.com/olegsych/T4Toolbox)

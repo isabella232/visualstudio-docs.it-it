@@ -1,8 +1,8 @@
 ---
-title: Gestione dei ruoli nei servizi cloud di Azure con Visual Studio | Microsoft Docs
+title: Gestione dei ruoli nei servizi cloud di Azure
 description: Informazioni su come aggiungere e rimuovere i ruoli nei servizi cloud di Azure con Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,44 +11,44 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 35221cbf98f26a71e2b4adf0a7178342616ff7c0
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002890"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59001799"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Gestione dei ruoli nei servizi cloud di Azure con Visual Studio
-Dopo aver creato il servizio cloud di Azure, è possibile aggiungervi nuovi ruoli o rimuovere quelli esistenti. È anche possibile importare un progetto esistente e convertirlo in un ruolo. Ad esempio, è possibile importare un'applicazione web ASP.NET e specificarla come ruolo web.
+Dopo aver creato il servizio cloud di Azure, è possibile aggiungervi nuovi ruoli o rimuovere quelli esistenti. È possibile anche importare un progetto esistente e convertirlo in un ruolo. Ad esempio, è possibile importare un'applicazione Web ASP.NET e specificarla come ruolo Web.
 
-## <a name="adding-a-role-to-an-azure-cloud-service"></a>Aggiunta di un ruolo a un servizio cloud di Azure
-Nella procedura seguente consente di aggiungere un ruolo web o di lavoro a un progetto di servizio cloud di Azure in Visual Studio.
+## <a name="adding-a-role-to-an-azure-cloud-service"></a>Aggiungere un ruolo a un servizio cloud di Azure
+La procedura seguente consente di aggiungere un ruolo Web o di lavoro a un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, espandere il nodo del progetto
+1. In **Esplora soluzioni** espandere il nodo del progetto
 
-1. Fare doppio clic il **ruoli** nodo per visualizzare il menu di scelta rapida. Dal menu di scelta rapida, selezionare **Add**, quindi selezionare un ruolo web esistente o un ruolo di lavoro dalla soluzione corrente o creare un progetto di ruolo web o di lavoro. È anche possibile selezionare un progetto appropriato, ad esempio un progetto di applicazione web ASP.NET e associarlo a un progetto di ruolo.
+1. Fare clic con il pulsante destro del mouse sul nodo **Ruoli** per visualizzare il menu di scelta rapida. Dal menu di scelta rapida selezionare **Aggiungi** quindi selezionare un ruolo Web o di lavoro esistente dalla soluzione corrente o creare un progetto per il ruolo Web o di lavoro. È inoltre possibile selezionare un progetto appropriato, ad esempio un progetto di applicazione Web ASP.NET, e associarlo a un progetto di ruolo.
 
     ![Opzioni di menu per aggiungere un ruolo a un progetto di servizio cloud di Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Rimuovere un ruolo da un servizio cloud di Azure
-Nella procedura seguente consente di rimuovere un ruolo web o di lavoro da un progetto di servizio cloud di Azure in Visual Studio.
+La procedura seguente consente di rimuovere un ruolo Web o di lavoro da un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, espandere il nodo del progetto
+1. In **Esplora soluzioni** espandere il nodo del progetto
 
-1. Espandere la **ruoli** nodo.
+1. Espandere il nodo **Ruoli**.
 
-1. Pulsante destro del mouse sul nodo si desidera rimuovere e, dal menu di scelta rapida, selezionare **rimuovere**. 
+1. Fare clic con il pulsante destro del mouse sul nodo che si desidera rimuovere e, dal menu di scelta rapida, scegliere **Rimuovi**.
 
     ![Opzioni di menu per aggiungere un ruolo a un servizio cloud di Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
-## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Aggiungere nuovamente un ruolo a un progetto servizio cloud di Azure
-Se si rimuove un ruolo dal progetto servizio cloud ma successivamente si decide di aggiungere il ruolo di nuovo al progetto, solo la dichiarazione del ruolo e gli attributi di base, ad esempio le informazioni di diagnostica e gli endpoint, vengono aggiunti. Nessun risorse o riferimenti aggiuntivi vengono aggiunti per il `ServiceDefinition.csdef` file o al `ServiceConfiguration.cscfg` file. Se si vuole aggiungere queste informazioni, è necessario aggiungerlo manualmente nei file.
+## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Aggiungere di nuovo un ruolo a un progetto di servizio cloud di Azure
+Se si rimuove un ruolo dal progetto di servizio cloud ma in un secondo momento si decide di aggiungere nuovamente tale ruolo al progetto, verranno aggiunti solo la dichiarazione del ruolo e gli attributi di base, ad esempio gli endpoint e le informazioni di diagnostica. Risorse o riferimenti aggiuntivi non vengono aggiunti al file `ServiceDefinition.csdef` o al file `ServiceConfiguration.cscfg`. Se si vuole aggiungere queste informazioni, è necessario aggiungerle di nuovo a questi file in modo manuale.
 
-Ad esempio, è possibile rimuovere un ruolo del servizio web e successivamente si decide di aggiungere di nuovo questo ruolo la soluzione. In questo caso, si verifica un errore. Per evitare questo errore, è necessario aggiungere il `<LocalResources>` elemento mostrato nel codice XML seguente nel `ServiceDefinition.csdef` file. Usare il nome del ruolo del servizio web aggiunto di nuovo il progetto come parte dell'attributo del nome per il **<LocalStorage>** elemento. In questo esempio, è il nome del ruolo del servizio web **WCFServiceWebRole1**.
+Ad esempio, è possibile rimuovere un ruolo del servizio Web e poi decidere di aggiungere di nuovo questo ruolo nella soluzione. Se si esegue questa operazione, si verificherà un errore. Per impedire questo errore, è necessario aggiungere nel file `ServiceDefinition.csdef` l'elemento `<LocalResources>` mostrato nel codice XML seguente. Usare il nome del ruolo del servizio Web aggiunto di nuovo al progetto come parte dell'attributo nome per l'elemento **\<LocalStorage>**. In questo esempio il nome del ruolo del servizio Web è **WCFServiceWebRole1**.
 
     <WebRole name="WCFServiceWebRole1">
         <Sites>

@@ -1,32 +1,27 @@
 ---
-title: 'Procedura: usare diagnostica della grafica con un dispositivo ARM | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare diagnostica della grafica con un dispositivo ARM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728685"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001374"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procedura: Usare la diagnostica della grafica con un dispositivo ARM
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procedura: Usare diagnostica della grafica con un dispositivo ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La diagnostica della grafica supporta il debug remoto di app Direct3D su dispositivi basati su ARM che eseguono Windows RT 8.1 o Windows Phone 8.1. È possibile acquisire informazioni grafiche dall'app Direct3D mentre è in esecuzione nel dispositivo oppure usare quest'ultimo come dispositivo di riproduzione per le informazioni grafiche acquisite in precedenza.  
   
-## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>Uso della diagnostica grafica con un dispositivo basato su ARM  
+## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>Uso della diagnostica della grafica con un dispositivo basato su ARM  
  Dato che Visual Studio non può essere eseguito su dispositivi basati su ARM, è necessario usare il debugger remoto per analizzare app che vengono eseguite su tali dispositivi. Il debugger remoto supporta l'acquisizione e la riproduzione della grafica, consentendo in tal modo di diagnosticare errori di rendering e di valutare le prestazioni grafiche su qual tipo di dispositivi con la stessa semplicità con cui vi si esegue il debug dell'app.  
   
  Per usare le funzionalità di diagnostica grafica, abilitare prima il debug remoto nel dispositivo.  
@@ -35,12 +30,12 @@ La diagnostica della grafica supporta il debug remoto di app Direct3D su disposi
   
 1.  Installare il [criteri dei kit ARM](http://msdn.microsoft.com/windows/desktop/dn469188) nel dispositivo basato su ARM.  
   
-2.  Installare il [strumenti di debug remoto](http://go.microsoft.com/fwlink/?LinkId=393086) nel dispositivo basato su ARM.  
+2.  Installare il [strumenti di debug remoto](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) nel dispositivo basato su ARM.  
   
 > [!IMPORTANT]
 >  Per dispositivi Windows Phone 8.1, potrebbe essere necessario registrare il proprio telefono per lo sviluppo. Per tale operazione è necessario essere uno sviluppatore registrato. Per altre informazioni, vedere [come distribuire ed eseguire un'app per Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
- Dopo aver abilitato il debug remoto nel dispositivo, renderlo la destinazione del debug e avviare la diagnostica della grafica.  
+ Dopo aver abilitato il debug remoto nel dispositivo, renderlo la destinazione del debug e avviare la diagnostica grafica.  
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Per configurare e avviare la diagnostica della grafica nel dispositivo  
   
@@ -48,11 +43,8 @@ La diagnostica della grafica supporta il debug remoto di app Direct3D su disposi
   
 2.  Nel **destinazione di Debug** elenco a discesa selezionare il dispositivo ARM.  
   
-3.  Nel menu, scegliere **Debug**, **grafica**, **avvia diagnostica**. (da tastiera: ALT+F5)  
+3.  Nel menu, scegliere **Debug**, **grafica**, **avvia diagnostica**. (Tastiera: ALT + F5)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire Windows App Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Convalidare il sistema durante lo sviluppo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams
 ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 03cac924853f4348faabd773260a9512c2d82b6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760983"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001206"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
   
 |**Categoria**|**Collegamenti**|  
 |------------------|---------------|  
-|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sette: comprensione del codice e progettazione di sistemi con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: progettazione di un'applicazione usando un diagramma livelli](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: come convalidare il codice con diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=214405)|  
+|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug Seven: Comprensione del codice e progettazione di sistemi con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Progettazione di un'applicazione usando un diagramma livelli](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: Come convalidare il codice con diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=214405)|  
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -53,6 +48,3 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
  [Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)
-
-
-

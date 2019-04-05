@@ -1,14 +1,9 @@
 ---
 title: Generale, debug, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.General
 - VS.ToolsOptionsPages.Debugger.General
@@ -26,13 +21,13 @@ ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3a9e0b8008da5b648ae156235a20964fc0952b1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742772"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000894"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51742772"
 Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opzioni seguenti:  
   
  **Chiedi prima di eliminare tutti i punti di interruzione**  
- Richiede conferma prima di completare la **eliminare tutti i punti di interruzione** comando.  
+ Richiede conferma prima dell'esecuzione del comando **Elimina tutti i punti di interruzione**.  
   
  **Quando si interrompe un processo, interrompi tutti i processi**  
  Interrompe simultaneamente tutti i processi a cui è connesso il debugger quando si verifica un'interruzione.  
@@ -50,14 +45,14 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
   
  1\) quando codice nativo chiama il codice gestito mediante interoperabilità COM e il codice gestito genera un'eccezione. Visualizzare [Introduzione all'interoperabilità COM](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) quando il codice gestito in esecuzione nel dominio applicazione 1 chiama il codice gestito nel dominio applicazione 2 e il codice nel dominio applicazione 2 genera un'eccezione. Visualizzare [programmazione con domini applicazione](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) quando il codice gestito in esecuzione nel dominio applicazione 1 chiama il codice gestito nel dominio applicazione 2 e il codice nel dominio applicazione 2 genera un'eccezione. Visualizzare [programmazione con domini applicazione](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
  3\) quando viene richiamata la funzione tramite reflection e la funzione genera un'eccezione. Visualizzare [Reflection](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  Nei casi 2) e 3) l'eccezione viene talvolta intercettata dal codice gestito in `mscorlib` anziché da Common Language Runtime. Questa opzione non influisce sull'interruzione di eccezioni intercettate da `mscorlib`.  
   
  **Abilitare il debug a livello di indirizzo**  
- Abilita le funzionalità avanzate per il debug a livello di indirizzo (il **Disassembly** finestra, il **registra** finestra e punti di interruzione).  
+ Abilita le funzionalità avanzate per il debug a livello di indirizzo (finestra **Disassembly**, finestra **Registri** e punti di interruzione).  
   
  **Mostra disassembly se l'origine non è disponibile**  
  Mostra automaticamente il **Disassembly** finestra quando si prova a eseguire il debug di codice per cui l'origine non è disponibile.  
@@ -69,7 +64,7 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
  Solo per il codice gestito. Le eccezioni gestite aprono la finestra di dialogo Informazioni sulle eccezioni.  Visualizzare [informazioni sulle eccezioni](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Rimuovi stack di chiamate su eccezioni non gestite**  
- Fa sì che il **Stack di chiamate** finestra eseguire il rollback dello stack di chiamate al punto prima che si è verificata un'eccezione non gestita.  
+ La finestra **Stack di chiamate** esegue il rollback dello stack di chiamate al punto precedente l'eccezione non gestita.  
   
  **Abilitare Just My Code**  
  Il debugger visualizza ed esegue solo il codice utente ("My Code"), ignorando il codice di sistema e altro codice ottimizzato o privo di simboli di debug.  
@@ -87,12 +82,12 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
  Impedisce al debugger di eseguire istruzioni di proprietà e operatori nel codice gestito.  
   
  **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**  
- Attiva la valutazione automatica delle proprietà e funzioni implicite chiamate nelle finestre delle variabili e le **controllo immediato** nella finestra di dialogo.  
+ Attiva la valutazione automatica di proprietà e altre chiamate di funzioni implicite nelle finestre delle variabili e nella finestra di dialogo **Controllo immediato**.  
   
  **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (c# e solo JavaScript)**  
  Esegue una chiamata di conversione delle stringhe implicita durante la valutazione di oggetti nelle finestre delle variabili. Pertanto, il risultato viene visualizzato come stringa anziché come nome del tipo. Questa opzione è applicabile solo al debug in codice C#. Questa impostazione può essere sottoposto a override mediante l'attributo DebuggerDisplay (vedere [usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
- **Abilitare il supporto del server di origine**  
+ **Abilita il supporto del server di origine**  
  Indica al debugger di Visual Studio di ottenere i file di origine da server di origine che implementano il protocollo di SrcSrv (`srcsrv.dll`). Team Foundation Server e gli strumenti di debug per Windows sono due server di origine che implementano il protocollo. Per altre informazioni sull'installazione di SrcSrv, vedere la documentazione relativa agli Strumenti di debug per Windows. Inoltre, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
@@ -111,7 +106,7 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
  Indica al debugger di verificare che un file di origine corrisponda alla versione del codice sorgente utilizzato per compilare l'eseguibile sottoposto a debug. Se la versione non corrisponde, verrà chiesto di cercare un'origine corrispondente. Se la ricerca ha esito negativo, il codice sorgente non verrà visualizzato durante il debug.  
   
  **Reindirizza tutto il testo di finestra di Output nella finestra controllo immediata**  
- Invia tutti i messaggi del debugger che normalmente verrebbero visualizzati nella **Output** finestra di **immediato** finestra invece.  
+ Invia alla finestra **Controllo immediato** tutti i messaggi del debugger che normalmente verrebbero visualizzati nella finestra **Output**.  
   
  **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili**  
  Disattiva tutte le personalizzazioni di visualizzazione della struttura degli oggetti. Per altre informazioni sulla personalizzazione delle visualizzazioni, vedere [creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-dot-managed-objects.md).  
@@ -131,7 +126,7 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
  Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports`, è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Mostra diagramma di stack in parallelo dal basso in alto**  
- Controlla la direzione in cui vengono visualizzati gli stack nel **stack in parallelo** finestra.  
+ Controlla la direzione in cui vengono visualizzati gli stack nella finestra **Stack in parallelo**.  
   
  **Ignora eccezioni di accesso a memoria GPU se i dati scritti non hanno modificato il valore**  
  Ignora le race condition rilevate durante il debug se i dati non sono stati modificati. Per altre informazioni, vedere [debug del codice GPU](../debugger/debugging-gpu-code.md).  
@@ -160,16 +155,16 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
   Consente all'heap per il debug di Windows di migliorare la diagnostica dell'heap. L'abilitazione di questa opzione influirà sulle prestazioni di debug.  
   
   **Abilita strumenti di debug per XAML dell'interfaccia utente**  
-  Le finestre Struttura ad albero visuale attiva e Esplora proprietà attive vengono visualizzate quando si avvia il debug (F5) di un tipo di progetto supportato. Per altre informazioni, vedere [delle proprietà di ispezionare XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md).  
+  Le finestre Albero elementi visivi attivi e Esplora proprietà attive vengono visualizzate quando si avvia il debug (F5) di un tipo di progetto supportato. Per altre informazioni, vedere [delle proprietà di ispezionare XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md).  
   
   **Anteprima degli elementi selezionati in albero elementi visivi attivi**  
-  L'elemento XAML viene selezionato il cui contesto viene selezionata anche nella **albero elementi visivi attivi** finestra.  
+  Anche l'elemento XAML di cui è selezionato il contesto viene selezionato nella finestra **Struttura ad albero visuale** attiva.  
   
   **Mostra strumenti di runtime nell'applicazione**  
   Viene illustrato il **albero elementi visivi attivi** comandi in una barra degli strumenti nella finestra principale dell'applicazione XAML in fase di debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.  
   
   **Abilita strumenti di diagnostica durante il debug**  
-  Il **strumenti di diagnostica** verrà visualizzata la finestra durante il debug. Per altre informazioni, vedere [integrati nel Debugger profilatura](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Durante il debug viene visualizzata la finestra **Strumenti di diagnostica**. Per altre informazioni, vedere [integrati nel Debugger profilatura](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Mostra il perftip relativo al tempo trascorso durante il debug**  
   La finestra di codice mostra il tempo trascorso di una specifica chiamata al metodo quando si esegue il debug.  
@@ -180,10 +175,10 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
   **Abilitare nativa modifica e continuazione**  
   È possibile usare la funzionalità Modifica e continuazione durante il debug del codice C++ nativo. Per altre informazioni, vedere [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
-  **Applicare le modifiche durante la continuazione (solo nativo)**  
+  **Applica le modifiche durante la continuazione (solo nativo)**  
   Visual Studio compila e applica automaticamente le modifiche di codice in sospeso apportate quando il processo viene ripreso da uno stato di interruzione. Se non è selezionato, è possibile scegliere di applicare le modifiche usando l'elemento "Applica modifiche del codice" nel menu Debug.  
   
-  **Avvisa in codice non aggiornato (solo nativo)**  
+  **Avvisa in caso di codice non aggiornato (solo nativo)**  
   Consente di ricevere avvisi relativi al codice non aggiornato.  
   
   **Consenti precompilazione (solo nativo)**  
@@ -191,6 +186,3 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

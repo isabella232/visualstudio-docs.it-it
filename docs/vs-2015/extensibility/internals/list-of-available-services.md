@@ -1,27 +1,22 @@
 ---
 title: Elenco dei servizi disponibili | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001470"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -127,7 +122,7 @@ ms.locfileid: "51730703"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Yes|Yes|Consente a un pacchetto VSPackage per la selezione corrente di accedere e gestire contesti dei comandi dell'interfaccia utente.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider>|IVSMDCodeDomProvider|No|Yes|Fornisce l'accesso a un provider model (DOM) documento oggetto di codice che può essere usato nel codice nativo.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService>|IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService|No|Yes|Fornisce l'accesso al supporto dell'IDE per finestre di progettazione form gestita. Il `IVSMDCodeDomCreator` può essere utilizzato per creare codice DOM provider.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser>|Ivsmdcodedomprovider|No|Yes|Fornisce l'accesso al servizio windows di proprietà della finestra di progettazione.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser>|IVSMDPropertyBrowser|No|Yes|Fornisce l'accesso al servizio windows di proprietà della finestra di progettazione.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService>|No|Yes|Fornisce l'accesso a un'interfaccia che può restituire un <xref:System.ComponentModel.Design.ITypeResolutionService> oggetto utilizzabile in codice nativo.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope>|No|Yes|Fornisce un modo per aprire un ambito in un assembly, prendendo in considerazione il blocco in base alle esigenze.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution>|Yes|Yes|Fornisce l'accesso di primo livello alla soluzione corrente.|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730703"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Yes|Yes|Fornisce accesso ai file di formato XML documentazione associata a un file di metadati particolare.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [COM e i servizi gestiti](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM e i servizi gestiti](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Uso e fornitura di servizi](../../extensibility/using-and-providing-services.md)
-

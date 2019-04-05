@@ -1,25 +1,20 @@
 ---
 title: Set di regole regole consigliate native | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 8d845b5a-1b75-4e9d-861a-7c59cb7752af
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a84a72046ece48fce16734cf9be838fa1f042478
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891167"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001404"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Set di regole consigliate native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ Le regole consigliate Native orientate ai problemi più critici e comuni nel cod
 |                       [C6504](../code-quality/c6504.md)                        |                                                         Null su non puntatore                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          MustCheck su nullo                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 Dimensioni buffer su non puntatore o matrice                                                 |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Errata corrispondenza null al livello di dereferenziazione zero                                                  |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Errata corrispondenza null al livello di dereferenziazione zero                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      Accesso in scrittura a costante                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     Restituzione utilizzati in precondizione                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   Null terminato su non puntatore                                                    |
@@ -133,13 +128,12 @@ Le regole consigliate Native orientate ai problemi più critici e comuni nel cod
 |                       [C6516](../code-quality/c6516.md)                        |                                                     Nessuna proprietà su attributo                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  Dimensioni valide su buffer non leggibile                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                Dimensioni scrivibili su buffer non scrivibile                                                 |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                             Annotazione non valida: il valore della proprietà 'NeedsRelease' deve essere Yes o No                              |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Deferenziazione stringa dimensioni non valida                                                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Deferenziazione stringa dimensioni non valida                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      Tipo stringa dimensioni non valida                                                       |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Parametro stringa dimensioni non valido                                                    |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Parametro stringa dimensioni non valido                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              Percorso irraggiungibile stringa dimensioni non valida                                               |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Tipo buffer stringa dimensioni non valido                                                   |
-|                       [C6527](../code-quality/c6527.md)                        |                         Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void                          |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Tipo buffer stringa dimensioni non valido                                                   |
+|                       [C6527](../code-quality/c6527.md)                        |                         Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  Stile stringa formato non riconosciuto                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec             |
 |                       [C6551](../code-quality/c6551.md)                        |                                         Specifica di dimensione non valida: espressione non analizzabile                                         |
@@ -181,19 +175,19 @@ Le regole consigliate Native orientate ai problemi più critici e comuni nel cod
 |                      [C28196](../code-quality/c28196.md)                       |                            Non viene soddisfatto il requisito. (L'espressione non restituisce true.)                            |
 |                      [C28202](../code-quality/c28202.md)                       |                                               Riferimento non valido a membro non statico                                                |
 |                      [C28203](../code-quality/c28203.md)                       |                                                Riferimento ambiguo al membro di classe.                                                 |
-|                      [C28205](../code-quality/c28205.md)                       |                                      \_Operazione riuscita\_ oppure \_On_failure\_ usato in un contesto non valido                                       |
+|                      [C28205](../code-quality/c28205.md)                       |                                      \_Success\_ o \_On_failure\_ usato in un contesto non valido                                       |
 |                      [C28206](../code-quality/c28206.md)                       |                                              L'operando sinistro punta a uno struct. Utilizzare '->'                                              |
 |                      [C28207](../code-quality/c28207.md)                       |                                                  L'operando sinistro è uno struct. Utilizzare '.'                                                  |
 |                      [C28209](../code-quality/c28209.md)                       |                                      La dichiarazione del simbolo dispone di una dichiarazione in conflitto                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                            Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito                             |
 |                      [C28211](../code-quality/c28211.md)                       |                                            Previsto nome contesto statico per SAL_context                                             |
 |                      [C28212](../code-quality/c28212.md)                       |                                             Prevista espressione del puntatore per l'annotazione                                              |
-|                      [C28213](../code-quality/c28213.md)                       |            Il \_Use_decl_annotations\_ annotazione deve essere utilizzata per fare riferimento, senza alcuna modifica, una dichiarazione precedente.            |
+|                      [C28213](../code-quality/c28213.md)                       |            L'annotazione \_Use_decl_annotations\_ deve essere usata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.            |
 |                      [C28214](../code-quality/c28214.md)                       |                                              I nomi di parametro di attributo devono essere p1...p9                                              |
 |                      [C28215](../code-quality/c28215.md)                       |                               Impossibile applicare typefix a un parametro che già dispone di un typefix                               |
 |                      [C28216](../code-quality/c28216.md)                       |                   L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.                    |
 |                      [C28217](../code-quality/c28217.md)                       |                       Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file                        |
-|                      [C28218](../code-quality/c28218.md)                       |                        Per il parametro della funzione, nell'annotazione, il numero di parametri dell'annotazione non corrisponde a quello trovato nel file                         |
+|                      [C28218](../code-quality/c28218.md)                       |                        Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file                         |
 |                      [C28219](../code-quality/c28219.md)                       |                            Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione                            |
 |                      [C28220](../code-quality/c28220.md)                       |                             Espressione integer prevista per l'annotazione del parametro nell'annotazione                              |
 |                      [C28221](../code-quality/c28221.md)                       |                                   Prevista espressione di tipo String per il parametro nell'annotazione                                    |
@@ -228,29 +222,27 @@ Le regole consigliate Native orientate ai problemi più critici e comuni nel cod
 |                      [C28254](../code-quality/c28254.md)                       |                                          dynamic_cast<>() non è supportato nelle annotazioni                                           |
 |                      [C28262](../code-quality/c28262.md)                       |                               Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione                                |
 |                      [C28263](../code-quality/c28263.md)                       |                            Errore di sintassi nell'annotazione condizionale rilevato nell'oggetto annotazione intrinseco                            |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                               I valori degli elenchi di risultati devono essere costanti.                                                |
 |                      [C28267](../code-quality/c28267.md)                       |                               Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.                               |
 |                      [C28272](../code-quality/c28272.md)                       |                 L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione                 |
 |                      [C28273](../code-quality/c28273.md)                       |                               Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione                                |
-|                      [C28275](../code-quality/c28275.md)                       |                                              Il parametro \_Macro_value\_ è null                                               |
+|                      [C28275](../code-quality/c28275.md)                       |                                              Il parametro per \_Macro_value\_ è null                                               |
 |                      [C28279](../code-quality/c28279.md)                       |                                      Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'                                       |
 |                      [C28280](../code-quality/c28280.md)                       |                                      Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente                                      |
 |                      [C28282](../code-quality/c28282.md)                       |                                               Le stringhe di formato devono essere nelle precondizioni                                               |
 |                      [C28285](../code-quality/c28285.md)                       |                                               Per la funzione, errore di sintassi nel parametro                                               |
 |                      [C28286](../code-quality/c28286.md)                       |                                               Per la funzione, errore di sintassi vicino alla fine                                               |
-|                      [C28287](../code-quality/c28287.md)                       |                           Per una funzione, errore di sintassi nelle \_a\_annotazione () (nome parametro non riconosciuto)                           |
-|                      [C28288](../code-quality/c28288.md)                       |                             Per una funzione, errore di sintassi nelle \_a\_annotazione () (nome parametro non valido)                              |
+|                      [C28287](../code-quality/c28287.md)                       |                           Per la funzione, errore di sintassi nell'annotazione \_At\_() (nome parametro non riconosciuto)                           |
+|                      [C28288](../code-quality/c28288.md)                       |                             Per la funzione, errore di sintassi nell'annotazione \_At\_() (nome parametro non valido)                              |
 |                      [C28289](../code-quality/c28289.md)                       |                           Per la funzione: ReadableTo o WritableTo non disponeva di limit-spec come parametro                           |
 |                      [C28290](../code-quality/c28290.md)                       |                      L'annotazione per la funzione contiene un numero di riferimenti esterni maggiore del numero di parametri effettivi                       |
 |                      [C28291](../code-quality/c28291.md)                       |                                   Il post null/notnull al livello deref 0 è privo di significato per la funzione.                                   |
 |                      [C28300](../code-quality/c28300.md)                       |                                       Operandi dell'espressione di tipi incompatibili per l'operatore                                        |
 |                      [C28301](../code-quality/c28301.md)                       |                                          Nessuna annotazione per la prima dichiarazione di funzione.                                          |
-|                      [C28302](../code-quality/c28302.md)                       |                                        Un ulteriore \_Deref\_ operatore rilevato nell'annotazione.                                         |
-|                      [C28303](../code-quality/c28303.md)                       |                                      Un ambiguo \_Deref\_ operatore rilevato nell'annotazione.                                       |
-|                      [C28304](../code-quality/c28304.md)                       |                                Un non correttamente posizionato \_Notref\_ operatore è stato trovato applicato al token.                                 |
+|                      [C28302](../code-quality/c28302.md)                       |                                        Operatore \_Deref\_ aggiuntivo rilevato nell'annotazione.                                         |
+|                      [C28303](../code-quality/c28303.md)                       |                                      Operatore \_Deref\_ ambiguo trovato nell'annotazione.                                       |
+|                      [C28304](../code-quality/c28304.md)                       |                                Operatore \_Notref\_ non correttamente posizionato applicato al token.                                 |
 |                      [C28305](../code-quality/c28305.md)                       |                                           È stato individuato un errore durante l'analisi di un token.                                            |
 |                      [C28306](../code-quality/c28306.md)                       |                                             L'annotazione su parametro è obsoleta                                              |
 |                      [C28307](../code-quality/c28307.md)                       |                                             L'annotazione su parametro è obsoleta                                              |
 |                      [C28350](../code-quality/c28350.md)                       |                             L'annotazione descrive una situazione non applicabile in modo condizionale.                              |
 |                      [C28351](../code-quality/c28351.md)                       |                    L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).                     |
-

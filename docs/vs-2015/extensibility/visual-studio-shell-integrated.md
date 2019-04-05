@@ -1,29 +1,24 @@
 ---
 title: Visual Studio Shell (integrata) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765286"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "59001895"
 ---
-# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrata)
+# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (IDE) debugger e integrazione del controllo codice sorgente. Non è incluso alcun linguaggio di programmazione. Tuttavia, la shell integrata forniscono un framework che consente di aggiungere i linguaggi di programmazione.  
@@ -44,10 +39,10 @@ La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (ID
 |IDE|<ul><li>Impostazioni<br /><br /> <ul><li>Creare le impostazioni</li><li>Importa / Esporta impostazioni</li><li>Reimpostare le impostazioni</li></ul></li><li>**Casella degli strumenti** integrazione</li><li>**Elenco delle attività** integrazione</li><li>Integrazione della Guida</li><li>**Opzioni** nella finestra di dialogo</li><li>Gestione tipi di carattere e colori</li><li>**Output** finestra</li><li>**Comando** finestra</li><li>Gestione delle finestre</li><li>I comandi, menu e tasti di scelta rapida</li><li>Runtime di linguaggio specifico di dominio (DSL)</li></ul>|  
 |Sistema di progetto e tipi di progetto|-Soluzioni e le cartelle della soluzione<br />-Gestione configurazione soluzione<br />-Gestione elemento<br />-Soluzioni progetto singolo e più progetti<br />-Progettazione di applicazioni (proprietà del progetto semplificata)<br />-Aggiungi riferimento Web<br />-Aggiungi riferimento al servizio<br />Progetto singolo<br />: Tipi di progetto sito Web<br />-Progetti di applicazione web|  
 |Compilazione|-Istruzioni di compilazione personalizzate nell'IDE<br />-Pre-compilazione per la protezione della proprietà intellettuale (IP)<br />-La firma del codice<br />     MSBuild|  
-|Editor|-Esplorazione di strumenti (ricerca unificata, definizione dell'origine, ereditarietà) del codice<br />-Esplorazione del codice<br />-IntelliSense<br />-Degli smart tag<br />-Refactoring<br />-Riformatta il listato<br />: Filtro IntelliSense<br />-   **Definizione di codice** finestra|  
+|Editor|-Esplorazione di strumenti (ricerca unificata, definizione dell'origine, ereditarietà) del codice<br />-Esplorazione del codice<br />-   IntelliSense<br />-   SmartTags<br />-Refactoring<br />-Riformatta il listato<br />: Filtro IntelliSense<br />-   **Definizione di codice** finestra|  
 |Designer|-Windows Presentation Foundation Designer<br />-Windows Form Designer<br />-Finestra di progettazione e web Editor HTML|  
 |Dati|-   **Esplora server** (semplificato: solo i dati). Vedere la nota 1.<br />-   **Zdroje dat** finestra<br />-Set completo di controlli dati<br />: Editor XML<br />-Data binding all'origine dati locale (. File MDF o. MDB)<br />-Associare i dati oggetto<br />-Data binding al servizio Web<br />-Data binding al server di database locale<br />-Data binding al server di database remoto<br />-Strumenti DDL per i dati remoti<br />-   **Esplora server** estendibilità ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] esempi)|  
-|Debugger|-Debug locale. Vedere la nota 2.<br />-Il debug gestito<br />-Debug locale<br />-Connetti a processo locale<br />-Connettersi al processo remoto<br />-Delegato anonimo<br />-Domini dell'applicazione<br />-Debug ASPX<br />-Attributi<br />-Interrompere la funzione eval<br />-Punti di interruzione<br />-I vincoli punto di interruzione<br />-Stack di chiamate<br />-   **Comando** finestra<br />-Debug Cross-thread<br />-Suggerimenti sui dati<br />-Visualizzatore dati<br />-Supporto debugger per assistenti al debug gestiti (MDA)<br />-Supporto debugger per server d'inoltro<br />-Supporto DTEEvents per OTB<br />-Gestore di JMC istruzioni<br />-Test di AppID debugger (DBGCLR)<br />-Profilo debugger<br />-Del debugger strumenti e opzioni<br />-Debug iterator<br />-Valutazione dell'espressione design-time<br />-C# l'analizzatore di espressioni<br />-Disassembly<br />-Modifica e continuazione<br />-Windows dell'analizzatore di espressioni expression (espressione di controllo, variabili locali, Auto)<br />-Supporto eccezione<br />-Le eccezioni<br />-Execution<br />- Generics<br />-Recupero origine corretta<br />-Debug/Cluster HPC<br />-Multilingue debug integrato<br />-Debug interoperabilità<br />Debug just-in-time<br />-Debug locale<br />-Il debug gestito<br />-Controllo manuale (finestra processi)<br />-Memoria<br />-Supporto miniDump<br />-I moduli<br />-Debug a più processori<br />-Debug nativo<br />-Nuovo supporto di motore di debug<br />-Debug del codice ottimizzato<br />-La finestra di output applicazione di filtri<br />-Processo di hosting per il debug gestito<br />-Processi<br />-Controllo immediato<br />: Registra<br />-Registri nello stack<br />-Debug remoto<br />: Restituisce valori<br />: Debug degli script<br />-Supporto del servizio origine<br />-Sicurezza<br />Side-by-side<br />-SQL<br />: Server di simboli<br />: Punti di traccia<br />-Thread<br />-Visualizzazioni<br />-Debugger di extensible Stylesheet Language Transformations (XSLT)|  
+|Debugger|-Debug locale. Vedere la nota 2.<br />-Il debug gestito<br />-Debug locale<br />-Connetti a processo locale<br />-Connettersi al processo remoto<br />-Delegato anonimo<br />-Domini dell'applicazione<br />-Debug ASPX<br />-Attributi<br />-Interrompere la funzione eval<br />-Punti di interruzione<br />-I vincoli punto di interruzione<br />-Stack di chiamate<br />-   **Comando** finestra<br />-Debug Cross-thread<br />-Suggerimenti sui dati<br />-Visualizzatore dati<br />-Supporto debugger per assistenti al debug gestiti (MDA)<br />-Supporto debugger per server d'inoltro<br />-Supporto DTEEvents per OTB<br />-   JMC Stepper<br />-Test di AppID debugger (DBGCLR)<br />-Profilo debugger<br />-Del debugger strumenti e opzioni<br />-Debug iterator<br />-Valutazione dell'espressione design-time<br />-C# l'analizzatore di espressioni<br />-Disassembly<br />-Modifica e continuazione<br />-Windows dell'analizzatore di espressioni expression (espressione di controllo, variabili locali, Auto)<br />-Supporto eccezione<br />-Le eccezioni<br />-Execution<br />- Generics<br />-Recupero origine corretta<br />-Debug/Cluster HPC<br />-Multilingue debug integrato<br />-Debug interoperabilità<br />Debug just-in-time<br />-Debug locale<br />-Il debug gestito<br />-Controllo manuale (finestra processi)<br />-Memoria<br />-Supporto miniDump<br />-I moduli<br />-Debug a più processori<br />-Debug nativo<br />-Nuovo supporto di motore di debug<br />-Debug del codice ottimizzato<br />-La finestra di output applicazione di filtri<br />-Processo di hosting per il debug gestito<br />-Processi<br />-Controllo immediato<br />: Registra<br />-Registri nello stack<br />-Debug remoto<br />: Restituisce valori<br />: Debug degli script<br />-Supporto del servizio origine<br />-Sicurezza<br />Side-by-side<br />-   SQL<br />: Server di simboli<br />: Punti di traccia<br />-Thread<br />-Visualizzazioni<br />-Debugger di extensible Stylesheet Language Transformations (XSLT)|  
 |Supporto a 64 bit|-debug a 64 bit per codice gestito e nativo, tutte le lingue<br />-supporto x64 nativo|  
 |Controllo del codice sorgente (SCC)|-L'integrazione di SCC di base. Vedere la nota 3.<br />-Strumenti e le opzioni di verifica|  
 |Estendibilità|-Utilizzo di componenti MEF e i pacchetti VSPackage|  
@@ -75,7 +70,7 @@ La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (ID
   
 -   Progettazione classi  
   
--   DotFuscator preventiva  
+-   PreEmptive Protection - Dotfuscator  
   
 -   Funzionalità del linguaggio  
   
@@ -84,4 +79,4 @@ La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (ID
 -   Nessuna lingua di Visual Studio o i modelli di progetto associata o i modelli di progetto, sono inclusi nella shell integrata. Nessun implementazioni specifiche della lingua di altre funzionalità sono incluse, per i frammenti di codice di esempio Visual Basic.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Estensione di panoramica di Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Panoramica sull'estensione di Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

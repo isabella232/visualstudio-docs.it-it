@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: creare un controllo della casella degli strumenti che usa Windows Form | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un controllo della casella degli strumenti che usa Windows Form | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263718"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001434"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procedura: Creare un controllo della casella degli strumenti che usa Windows Form
 Il modello di controllo della casella degli strumenti Windows Form incluso in [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] consente di creare controlli Windows Form che vengono aggiunti automaticamente alla **casella degli strumenti** quando l'estensione viene installata. Questo argomento mostra come usare il modello per creare un controllo della **casella degli strumenti** che è possibile distribuire ad altri utenti.  
@@ -92,7 +87,7 @@ Il modello di controllo della casella degli strumenti Windows Form incluso in [!
   
 2.  Caricare il file VSIX in una rete o in un sito Web.  
   
-     Se si carica il file nel sito Web [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) , altri utenti potranno usare **Gestione estensioni** in Visual Studio per trovare il controllo e installarlo.  
+     Se si carica il file per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web, altri utenti potranno usare **gestore estensioni del** in Visual Studio per trovare il controllo e installarlo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)

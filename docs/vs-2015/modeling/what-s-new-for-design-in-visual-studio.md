@@ -1,35 +1,30 @@
 ---
-title: Cosa&#39;novità per la progettazione in Visual Studio s | Microsoft Docs
-ms.custom: ''
+title: Cosa&#39;s novità per la progettazione
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771292"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001697"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Novità relative alla progettazione in Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quali sono le novità relative alla progettazione in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Questa versione di Visual Studio include i seguenti miglioramenti, utili per comprendere e progettare meglio il codice.
 
- **Le mappe codici e grafici delle dipendenze**
+ **Mappe codici e grafici delle dipendenze**
 
  In Visual Studio Enterprise, per comprendere le dipendenze specifiche nel codice, visualizzarle creando mappe codici. È quindi possibile esplorare queste relazioni tramite la mappa, visualizzata accanto al codice. Le mappe codici consentono di tenere traccia della propria posizione nel codice mentre si usa o si esegue il debug del codice, per cui una parte minore di codice verrà letta mentre si acquisiscono altre informazioni sulla progettazione del codice.
 
