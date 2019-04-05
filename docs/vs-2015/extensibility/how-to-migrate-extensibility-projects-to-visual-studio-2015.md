@@ -1,28 +1,23 @@
 ---
-title: 'Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2015 | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 564e279d259cae879ca2925eed3309c30d7513db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9715a71869ebb24e2631fa962f7078cd7044b0cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968919"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ecco come eseguire l'aggiornamento dell'estensione.  
@@ -60,4 +55,3 @@ Ecco come eseguire l'aggiornamento dell'estensione.
   
 > [!NOTE]
 >  Non è necessario aggiornare i progetti di estendibilità esistenti per l'uso di strumenti e gli assembly di riferimento di NuGet.  È possibile continuare a compilare usando gli assembly di riferimento e gli strumenti installati con il SDK di Visual Studio.
-

@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: creare un pacchetto Bootstrapper localizzato | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un pacchetto Bootstrapper localizzato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,15 +12,15 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304759"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968621"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: creare un pacchetto del programma di avvio automatico personalizzato
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto Bootstrapper localizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ognuna delle impostazioni locali, ovvero un file per le condizioni di licenza software (ad esempio eula.rtf) e un manifesto di pacchetto (package.xml).  
@@ -39,7 +34,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 3.  Creare un manifesto di pacchetto denominato package.xml, aggiornare le stringhe e le impostazioni cultura e quindi inserire il file nella nuova cartella. Se è già stato creato un programma di avvio automatico di Visual Studio nella lingua di destinazione, è possibile copiare il file package.xml di Visual Studio e modificarlo in questo passaggio.  
   
 > [!NOTE]
->  Se si usa un progetto di installazione per distribuire le applicazioni, è possibile localizzare l'applicazione modificando la **localizzazione** proprietà.  
+>  Se si intende usare un progetto di installazione per la distribuzione delle applicazioni, è possibile localizzare l'applicazione modificando la proprietà **Localization**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,7 +48,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
   
      La tabella seguente illustra i nomi di cartella che è possibile usare in base alle impostazioni locali.  
   
-    |Impostazioni locali|Nome della cartella|  
+    |Impostazioni locali|Nome cartella|  
     |------------|-----------------|  
     |Cinese (semplificato)|zh-Hans|  
     |Cinese (tradizionale)|zh-Hant|  
@@ -72,7 +67,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
   
 2.  Creare un file contenente le condizioni di licenza software per il pacchetto del programma di avvio automatico e inserirlo nella nuova cartella.  
   
-3.  Creare un manifesto di pacchetto denominato package.xml e inserirlo nella nuova cartella. Per altre informazioni, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).  
+3.  Creare un manifesto di pacchetto denominato package.xml e inserirlo nella nuova cartella. Per altre informazioni, vedere [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Aggiornare la sezione `<Strings>` del manifesto di pacchetto in modo che le stringhe siano nella lingua appropriata per le impostazioni locali.  
   
@@ -102,6 +97,3 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
  [Creazione di pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md)   
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)   
  [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)
-
-
-

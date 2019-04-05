@@ -1,14 +1,9 @@
 ---
 title: Nella panoramica dell'eliminazione origine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209040"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968942"
 ---
 # <a name="in-source-suppression-overview"></a>Panoramica dell'eliminazione nell'origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ L'eliminazione nell'origine è la possibilità di eliminare o Ignora le violazio
  Non utilizzare le eliminazioni nell'origine nelle build di rilascio per evitare che i metadati di eliminazione nell'origine di spedizione accidentalmente. A causa del costo di elaborazione di eliminazione nell'origine, le prestazioni dell'applicazione possono essere ridotte, includendo i metadati di eliminazione nell'origine.  
   
 > [!NOTE]
->  Non è per presentare codice questi attributi se stessi. Per altre informazioni, vedere [procedura: disattivazione degli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). La voce di menu non è disponibile per il codice C++.  
+>  Non è per presentare codice questi attributi se stessi. Per altre informazioni, vedere [Procedura: Eliminare gli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). La voce di menu non è disponibile per il codice C++.  
   
 ## <a name="suppressmessage-attribute"></a>Attributo SuppressMessage  
  Quando si fare doppio clic su un avviso di analisi del codice nel **elenco errori** e quindi fare clic su **Elimina messaggi**, una **SuppressMessage** attributo viene aggiunto a o nel codice il file delle eliminazioni globali del progetto.  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>Codice generato  
  I compilatori di codice gestito e alcuni strumenti di terze parti generano codice per facilitare lo sviluppo rapido di codice. Il codice generato dal compilatore che viene visualizzato nel file di origine in genere è contrassegnato con il **GeneratedCodeAttribute** attributo.  
   
- È possibile scegliere se eliminare gli avvisi dell'analisi codice e gli errori per il codice generato. Per informazioni su come eliminare questi avvisi ed errori, vedere [procedura: disattivazione degli avvisi per il codice generato](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ È possibile scegliere se eliminare gli avvisi dell'analisi codice e gli errori per il codice generato. Per informazioni su come eliminare questi avvisi ed errori, vedere [come: Non visualizzare avvisi per il codice generato](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
  Si noti che l'analisi del codice ignora **GeneratedCodeAttribute** quando viene applicata a un intero assembly o un singolo parametro. Queste situazioni si verificano raramente.  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  La destinazione contiene sempre il nome dell'elemento completo.  
   
 ## <a name="global-suppression-file"></a>File eliminazione globale  
- Il file di eliminazione globale conserva le eliminazioni a livello globale o le eliminazioni che non si specificano una destinazione. Ad esempio, in questo file vengono archiviate le eliminazioni per le violazioni del livello assembly. Inoltre, alcune eliminazioni ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per un modello code-behind. Eliminazione globale viene creata e aggiunto al progetto la prima volta che si seleziona il **File di progetto eliminazione** opzione del **Elimina messaggi** comando nella finestra Elenco errori. Per altre informazioni, vedere [procedura: disattivazione degli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ Il file di eliminazione globale conserva le eliminazioni a livello globale o le eliminazioni che non si specificano una destinazione. Ad esempio, in questo file vengono archiviate le eliminazioni per le violazioni del livello assembly. Inoltre, alcune eliminazioni ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per un modello code-behind. Eliminazione globale viene creata e aggiunto al progetto la prima volta che si seleziona il **File di progetto eliminazione** opzione del **Elimina messaggi** comando nella finestra Elenco errori. Per altre informazioni, vedere [Procedura: Eliminare gli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-
