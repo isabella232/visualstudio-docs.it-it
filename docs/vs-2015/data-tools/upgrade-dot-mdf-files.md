@@ -1,12 +1,9 @@
 ---
 title: Aggiornare i file con estensione mdf | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812634"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964472"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +71,17 @@ In questo argomento descrive le opzioni per l'aggiornamento del file di database
   
 2. Nel **Aggiungi connessione** finestra di dialogo, specificare le informazioni seguenti:  
   
-   -   **Zdroj dat**: `Microsoft SQL Server (SqlClient)`  
+   -   **Origine dati**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **Nome del server**:  
+   -   **Nome server**:  
   
        -   Usare la versione predefinita: `(localdb)\MSSQLLocalDB`.  Si specificherà ProjectV12 o ProjectV13, a seconda di quale versione di Visual Studio viene installata e quando è stata creata la prima istanza di Local DB. Il **MSSQLLocalDB** nodo **Esplora oggetti di SQL Server** mostra quale versione fa riferimento a.  
   
        -   Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, dove V12 è LocalDB 2014 e V13 è LocalDB 2016.  
   
-   -   **Collegare un file di database**: il percorso fisico del file mdf primario.  
+   -   **Collegare un file di database**: Il percorso fisico del file mdf primario.  
   
-   -   **Nome logico**: il nome che si desidera utilizzare con il file.  
+   -   **Nome logico**: Il nome che si desidera utilizzare con il file.  
   
 3. Selezionare il pulsante **OK** .  
   
@@ -123,8 +120,3 @@ In questo argomento descrive le opzioni per l'aggiornamento del file di database
 4. Selezionare il pulsante **OK** .  
   
    SQL Server Express è il motore di database predefinito per le applicazioni.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Panoramica dei dati locali](../data-tools/local-data-overview.md)   
- [Procedura dettagliata: connessione ai dati in un file di database lodale (Windows Form)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

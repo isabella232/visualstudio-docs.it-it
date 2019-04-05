@@ -1,14 +1,9 @@
 ---
 title: Elemento ProjectType (modelli di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d76962d5a8b90b5cc947721608aa1758193fe6c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964569"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo
 > [!WARNING]
 >  Per C++, a partire da Visual Studio 2012 sono supportati i modelli di progetto. Non sono supportati per C++ in Visual Studio 2010 e versioni precedenti.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Tipoprogetto >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -106,4 +101,3 @@ Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
-

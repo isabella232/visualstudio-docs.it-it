@@ -1,14 +1,9 @@
 ---
 title: Modifica e continuazione (Visual c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fff791d948d12d88b5e4813d106baa21740b0269
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954257"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +35,10 @@ La funzionalità Modifica e continuazione per C# consente di apportare modifiche
   
  La modalità Modifica e continuazione è supportata per i progetti a 64 bit destinati a .NET Framework 4.5.1.  
   
- Quando si modifica e continuazione è abilitata, le modifiche supportate vengono applicate automaticamente quando si usa un comando di esecuzione del debugger, ad esempio **continuazione**, **passaggio**, **Imposta istruzione successiva**, o eseguire una valutazione della funzione in una finestra del debugger.  
+ Nella modalità Modifica e continuazione, le modifiche supportate vengono applicate automaticamente quando si utilizza un comando di esecuzione del debugger, ad esempio **Continua**, **Passaggio** o **Imposta istruzione successiva** oppure si valuta una funzione in una finestra del debugger.  
   
- Per altre informazioni, vedere [procedura: usare modifica e continuazione (c#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Per altre informazioni, vedere [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: usare modifica e continuazione (c#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Modifiche al codice supportate (C#)](../debugger/supported-code-changes-csharp.md)
-
-
-

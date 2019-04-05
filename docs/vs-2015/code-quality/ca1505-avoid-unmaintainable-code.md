@@ -1,14 +1,9 @@
 ---
 title: 'CA1505: Evitare codice non gestibile | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnmaintainableCode
 - CA1505
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 089a4d45c74b1849a73c99c8065f1f67ca9b0e43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9d5dc976c27ca2459fa64b95fe0502579a500b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964778"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: evitare codice non manutenibile
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitare codice non gestibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -53,6 +48,3 @@ ms.locfileid: "49906107"
 
 ## <a name="see-also"></a>Vedere anche
  [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md) [misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

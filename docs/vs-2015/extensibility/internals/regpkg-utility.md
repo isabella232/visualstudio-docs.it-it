@@ -1,27 +1,22 @@
 ---
 title: Utilità RegPkg | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: da637b365eec260a7c1c34bbe7ba96c785cc18fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b93f6946f8043a2e4aecfda91ceb02e568a17869
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781283"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970105"
 ---
 # <a name="regpkg-utility"></a>Utilità RegPkg
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,19 +39,19 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] radice.  
   
- /regfile:filename  
+ /regfile:FileName  
  Crea un file con estensione reg anziché l'aggiornamento del Registro di sistema.  Non è utilizzabile con /vrgfile o /rgsfile o /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Crea un file con estensione RGS anziché l'aggiornamento del Registro di sistema.  Non è utilizzabile con /vrgfile o /regfile o /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Crea un file .vrg anziché l'aggiornamento del Registro di sistema.  Non è utilizzabile con /regfile o /rgsfile o /wixfile.  
   
  /rgm  
  Crea un file .rgm oltre al file rgs.  Deve essere combinato con /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Crea un file compatibile con set di strumenti Windows Installer XML anziché l'aggiornamento del Registro di sistema.  Non è utilizzabile con /regfile o /rgsfile o /vrgfile.  
   
  /codebase  
@@ -65,7 +60,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /assembly  
  Forza la registrazione dell'utente con Assembly anziché CodeBase.  
   
- / annullare la registrazione  
+ /unregister  
  Annulla la registrazione di questo pacchetto.  Non è possibile usare  
   
  con /regfile o /vrgfile /rgsfile o /wixfile.  
@@ -73,4 +68,3 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 ## <a name="see-also"></a>Vedere anche  
  [Il rilascio di un prodotto](../../misc/releasing-a-visual-studio-integration-product.md)   
  [Risoluzione dei problemi di registrazione dei pacchetti RegPkg](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)
-

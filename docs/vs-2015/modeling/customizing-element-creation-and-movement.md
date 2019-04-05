@@ -1,12 +1,9 @@
 ---
 title: Personalizzazione di spostamento e la creazione dell'elemento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965117"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ ms.locfileid: "49853831"
   
    1.  Nelle **DSL Explorer**, espandere **classi di dominio**. Fare doppio clic su `ExampleElement` e quindi fare clic su **Aggiungi nuova direttiva di unione**.  
   
-   2.  Assicurarsi che il **dettagli DSL** finestra è aperta, in modo che è possibile visualizzare i dettagli di EMD di nuovo. (Menu: **View**, **altri Windows**, **dettagli DSL**.)  
+   2.  Assicurarsi che il **dettagli DSL** finestra è aperta, in modo che è possibile visualizzare i dettagli di EMD di nuovo. (Menu: **Consente di visualizzare**, **altri Windows**, **dettagli DSL**.)  
   
 3. Impostare il **classe di indicizzazione** nella finestra Dettagli DSL per definire la classe di elementi può essere unita nel `ExampleElement` oggetti.  
   
@@ -324,6 +321,3 @@ ms.locfileid: "49853831"
  [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md)   
  [Esempio di diagrammi circuito DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

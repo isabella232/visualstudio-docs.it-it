@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: trovare il nome del processo ASP.NET | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Trovare il nome del processo ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793243"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58963855"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procedura: individuare il nome del processo ASP.NET
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procedura: Trovare il nome del processo ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per connettersi a un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in esecuzione, è necessario conoscere il nome del processo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -43,7 +38,7 @@ Per connettersi a un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md
   Le applicazioni ASP più obsolete vengono eseguite nel processo IIS inetinfo.exe quando sono in esecuzione all'interno del processo.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Per determinare se il codice di progetto risiede nel file system o in IIS  
   
@@ -72,6 +67,3 @@ Per connettersi a un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md
  [Requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)   
  [Preparazione al Debug di ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)
-
-
-

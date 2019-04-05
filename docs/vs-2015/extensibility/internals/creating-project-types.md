@@ -1,27 +1,22 @@
 ---
 title: Creazione di tipi di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58b31e363d78af7902e6174c9683b7e794031263
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756200"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970023"
 ---
 # <a name="creating-project-types"></a>Creazione di tipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ ms.locfileid: "51756200"
   
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
  Illustra come usare i progetti per modificare il codice, compilare e codice, compilare ed eseguire e il debug del codice e vengono forniti collegamenti ad argomenti dettagliati su come creare tipi di progetto.
-

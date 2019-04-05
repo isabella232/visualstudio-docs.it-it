@@ -1,14 +1,9 @@
 ---
 title: Funzione SccGetProjPath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 978316cd9c953217a3e59a7ecd1b047cab12734b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964622"
 ---
 # <a name="sccgetprojpath-function"></a>Funzione SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +83,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Il progetto è stata correttamente creato o recuperato.|  
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata.|  
@@ -115,4 +110,3 @@ SCCRTN SccGetProjPath (
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

@@ -1,8 +1,8 @@
 ---
-title: Con Visual Studio pubblicazione guidata applicazione di Azure | Microsoft Docs
-description: Informazioni su come configurare le varie impostazioni in Visual Studio la pubblicazione guidata di Azure dell'applicazione
+title: Usando la pubblicazione guidata applicazione di Azure | Microsoft Docs
+description: Informazioni su come configurare le varie impostazioni della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,115 +11,115 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c9c4104d4d07cab7486038a8787ed0c7759abd60
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: a75e83e3fb2ac43b4fa1d658c7e2a08ec1ae3c1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964935"
 ---
-# <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata di Visual Studio Pubblica applicazione Azure
+# <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 
-Dopo aver sviluppato un'applicazione web in Visual Studio, è possibile pubblicare in un servizio cloud di Azure usando il **pubblica applicazione Azure** procedura guidata.
+Un'applicazione Web sviluppata in Visual Studio può essere pubblicata in un servizio cloud di Azure mediante la procedura guidata **Pubblica l'applicazione Azure**.
 
 > [!Note]
-> Questo articolo riguarda la distribuzione in servizi cloud, non in siti web. Per informazioni sulla distribuzione in siti web, vedere [come distribuire un sito Web Azure](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false).
+> Questo articolo illustra la distribuzione in servizi cloud, non in siti Web. Per informazioni sulla distribuzione in siti Web, vedere l'argomento relativo alla [Come distribuire un sito Web di Azure](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false).
 
-## <a name="accessing-the-publish-azure-application-wizard"></a>Accesso alla procedura guidata pubblica l'applicazione Azure
+## <a name="accessing-the-publish-azure-application-wizard"></a>Accesso alla procedura guidata Pubblica l'applicazione Azure
 
-È possibile accedere la procedura guidata pubblica l'applicazione Azure in due modi a seconda del tipo di progetto di Visual Studio che è necessario.
+È possibile accedere alla procedura guidata Pubblica l'applicazione Azure in due modi diversi, a seconda del tipo di progetto di Visual Studio di cui si dispone.
 
-**Se si dispone di un progetto di servizio cloud di Azure:**
+**Se si dispone di un progetto servizio cloud di Azure:**
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, fare clic sul progetto e, dal menu di scelta rapida, selezionare **Publish**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** dal menu di scelta rapida.
 
-**Se si dispone di un progetto di applicazione web che non è abilitato per Azure:**
+**Se si dispone di un progetto applicazione Web non abilitato per Azure:**
 
-1. Creare o aprire un progetto di servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. Nelle **Esplora soluzioni**, fare clic sul progetto e, dal menu di scelta rapida, selezionare **convertire** > **Converti in progetto servizio Cloud Azure**. 
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Converti** > **Converti in progetto servizio cloud di Azure** dal menu di scelta rapida.
 
-1. Nelle **Esplora soluzioni**, fare doppio clic su progetto Azure appena creato e, dal menu di scelta rapida, selezionare **Publish**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di Azure appena creato e scegliere **Pubblica** dal menu di scelta rapida.
 
-## <a name="sign-in-page"></a>Nella pagina di accesso
+## <a name="sign-in-page"></a>Pagina di accesso
 
-![Nella pagina di accesso](./media/vs-azure-tools-publish-azure-application-wizard/sign-in.png)
+![Pagina di accesso](./media/vs-azure-tools-publish-azure-application-wizard/sign-in.png)
 
-**Account** : selezionare un account o selezionarne **aggiungere un account** nell'elenco a discesa degli account.
+**Account** - Selezionare un account o fare clic su **Aggiungi un account** nell'elenco a discesa degli account.
 
-**Scegliere la sottoscrizione** -scegliere la sottoscrizione da usare per la distribuzione.
+**Scegliere la sottoscrizione** - Scegliere la sottoscrizione da usare per la distribuzione.
 
-## <a name="settings-page---common-settings-tab"></a>Pagina Impostazioni - scheda delle impostazioni comuni
+## <a name="settings-page---common-settings-tab"></a>Pagina Impostazioni - Scheda Impostazioni comuni
 
 ![Impostazioni comuni](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Servizio cloud** -Usa l'elenco a discesa, selezionare un cloud esistente, oppure selezionare  **&lt;Crea nuovo >** e creare un servizio cloud. Il data center viene visualizzato tra parentesi per ogni servizio cloud. È consigliabile che la posizione del data center per il servizio cloud corrispondere alla posizione del data center dell'account di archiviazione (impostazioni avanzate).
+**Servizio cloud** - Usando l'elenco a discesa, selezionare un servizio cloud esistente oppure fare clic su **&lt;Crea nuovo&gt;** e creare un servizio cloud. Per ogni servizio cloud viene visualizzato tra parentesi il data center. È consigliabile che la posizione del data center per il servizio cloud corrisponda a quella del data center per l'account di archiviazione (Impostazioni avanzate).
 
-**Ambiente** -selezionare il **produzione** oppure **Staging**. Se si desidera distribuire l'applicazione in un ambiente di test, scegliere l'ambiente di gestione temporanea. 
+**Ambiente** - Selezionare **Produzione** o **Gestione temporanea**. Scegliere l'ambiente di gestione temporanea se si vuole distribuire l'applicazione in un ambiente di test.
 
-**Configurazione della build** -selezionare il **Debug** oppure **versione**.
+**Configurazione compilazione** - Selezionare **Debug** o **Rilascio**.
 
-**Configurazione del servizio** -selezionare il **Cloud** oppure **locale**.
+**Configurazione servizio** - Selezionare **Cloud** o **Locale**.
 
-**Abilitare Desktop remoto per tutti i ruoli** -selezionare questa opzione se si desidera essere in grado di connettersi in modalità remota al servizio. Questa opzione viene utilizzata principalmente per la risoluzione dei problemi. Per altre informazioni, vedere [abilitare connessione Desktop remoto per un ruolo nei servizi Cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+**Abilita Desktop remoto per tutti i ruoli** - Selezionare questa opzione per consentire la connessione remota al servizio. Questa opzione viene usata principalmente per la risoluzione dei problemi. Per altre informazioni, vedere [Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio) (Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio).
 
-**Abilita distribuzione Web per tutti i ruoli web** -selezionare questa opzione per abilitare distribuzione web per il servizio. È necessario selezionare anche il **Abilita Desktop remoto per tutti i ruoli** possibilità di usare questa funzionalità. Per altre informazioni, vedere [pubblicazione di un servizio cloud con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
+**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per altre informazioni, vedere [Pubblicazione di un servizio cloud con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-## <a name="settings-page---advanced-settings-tab"></a>Pagina Impostazioni - scheda Impostazioni avanzata
+## <a name="settings-page---advanced-settings-tab"></a>Pagina Impostazioni - Scheda Impostazioni avanzate
 
 ![Impostazioni avanzate](./media/vs-azure-tools-publish-azure-application-wizard/settings-advanced-settings.png)
 
-**Etichetta distribuzione** -accettare il nome predefinito oppure immettere un nome a scelta. Per aggiungere la data all'etichetta di distribuzione, lasciare selezionata la casella di controllo. 
+**Etichetta distribuzione** - Accettare il nome predefinito o immettere un nome personalizzato. Per aggiungere la data all'etichetta di distribuzione, lasciare selezionata la casella di controllo.
 
-**Account di archiviazione** -selezionare l'account di archiviazione da usare per questa distribuzione, * *&lt;Crea nuovo > per creare un account di archiviazione. Il data center viene visualizzato tra parentesi per ogni account di archiviazione. È consigliabile che la posizione del data center dell'account di archiviazione è quello utilizzato per la posizione del data center per il servizio cloud (impostazioni comuni).
+**Account di archiviazione** - Selezionare l'account di archiviazione da usare per questa distribuzione, **&lt;Crea nuovo> per creare un nuovo account di archiviazione. Per ogni account di archiviazione viene visualizzato tra parentesi il data center. È consigliabile che la posizione del data center per l'account di archiviazione corrisponda a quella del data center per il servizio cloud (Impostazioni comuni).
 
-L'account di archiviazione di Azure archivia il pacchetto per la distribuzione dell'applicazione. Dopo l'applicazione viene distribuita, il pacchetto viene rimosso dall'account di archiviazione.
+L'account di archiviazione di Azure archivia il pacchetto per la distribuzione dell'applicazione. Dopo la distribuzione dell'applicazione, il pacchetto viene rimosso dall'account di archiviazione.
 
-**Elimina distribuzione in caso di errore** -selezionare questa opzione per eliminare la distribuzione se si verificano errori durante la pubblicazione. Deve essere deselezionata se si vuole mantenere un indirizzo IP virtuale costante per il servizio cloud.
+**Elimina distribuzione in caso di errore** - Selezionare questa opzione per eliminare la distribuzione se si verificano errori durante la pubblicazione. Questa opzione deve essere deselezionata se si vuole mantenere un indirizzo IP virtuale costante per il servizio cloud.
 
-**Aggiornamento distribuzione** -selezionare questa opzione se si desidera distribuire solo componenti aggiornati. Questo tipo di distribuzione può essere più veloce di una distribuzione completa. Ciò è necessario verificare se si vuole mantenere un indirizzo IP virtuale costante per il servizio cloud. 
+**Aggiornamento distribuzione** - Selezionare questa opzione se si vogliono distribuire solo componenti aggiornati. Questo tipo di distribuzione risulta più rapida della distribuzione completa. Questa opzione deve essere selezionata se si vuole mantenere un indirizzo IP virtuale costante per il servizio cloud.
 
-**Impostazioni aggiornamento distribuzione** -questa finestra di dialogo viene utilizzata per specificare ulteriormente come aggiornare i ruoli. Se si sceglie **aggiornamento incrementale**, le istanze dell'applicazione vengono aggiornate una dopo l'altra, in modo che l'applicazione sia sempre disponibile. Se si sceglie **aggiornamento simultaneo**, tutte le istanze dell'applicazione vengono aggiornate contemporaneamente. L'aggiornamento simultaneo è più veloce, ma il servizio potrebbe non essere disponibile durante il processo di aggiornamento.
+**Impostazioni aggiornamento distribuzione** - Questa finestra di dialogo viene usata per specificare ulteriormente come aggiornare i ruoli. Se si sceglie **Aggiornamento incrementale**, le istanze dell'applicazione vengono aggiornate una dopo l'altra, in modo che l'applicazione sia sempre disponibile. Se si sceglie **Simultaneous update** (Aggiornamento simultaneo), tutte le istanze dell'applicazione vengono aggiornate contemporaneamente. L'aggiornamento simultaneo è più veloce, ma è possibile che il servizio non sia disponibile durante il processo di aggiornamento.
 
 ![Impostazioni di distribuzione](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**Abilita IntelliTrace** -specificare se si vuole abilitare IntelliTrace. Con IntelliTrace, è possibile registrare informazioni di debug approfondite per un'istanza del ruolo quando è in esecuzione in Azure. Se è necessario individuare la causa di un problema, è possibile utilizzare i log di IntelliTrace per esaminare il codice da Visual Studio come se fosse in esecuzione in Azure. Per altre informazioni sull'uso di IntelliTrace, vedere [debug di un servizio cloud di Azure pubblicato con Visual Studio e IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
+**Abilita IntelliTrace** - Specificare se si vuole abilitare IntelliTrace. Con IntelliTrace è possibile registrare informazioni di debug approfondite per un'istanza del ruolo quando è in esecuzione in Azure. Se è necessario individuare la causa di un problema, è possibile usare i log di IntelliTrace per esaminare il codice da Visual Studio come se fosse in esecuzione in Azure. Per altre informazioni sull'uso di IntelliTrace, vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
-**Abilitare la profilatura** -specificare se si desidera abilitare la profilatura delle prestazioni. Il profiler di Visual Studio consente di ottenere un'analisi approfondita degli aspetti computazionali dell'esecuzione del servizio cloud. Per altre informazioni sull'uso di profiler di Visual Studio, vedere [testare le prestazioni di un servizio cloud di Azure](./vs-azure-tools-performance-profiling-cloud-services.md).
+**Abilita profilatura** - Specificare se si vuole abilitare la profilatura delle prestazioni. Il profiler di Visual Studio consente di ottenere un'analisi approfondita degli aspetti computazionali dell'esecuzione del servizio cloud. Per altre informazioni sull'uso del profiler di Visual Studio, vedere [Test delle prestazioni di un servizio cloud](./vs-azure-tools-performance-profiling-cloud-services.md).
 
-**Abilita debug remoto per tutti i ruoli** -specificare se si desidera abilitare il debug remoto. Per altre informazioni sul debug dei servizi cloud con Visual Studio, vedere [debug di un servizio cloud di Azure o una macchina virtuale in Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md).
+**Abilita debug remoto per tutti i ruoli** - Specificare se si vuole abilitare il debug remoto. Per altre informazioni sul debug dei servizi cloud con Visual Studio, vedere [Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md).
 
 ## <a name="diagnostics-settings-page"></a>Pagina Impostazioni di diagnostica
 
 ![Impostazioni di diagnostica](./media/vs-azure-tools-publish-azure-application-wizard/diagnostic-settings.png)
 
-È possibile utilizzare diagnostica risolvere i problemi di un servizio cloud di Azure (o macchina virtuale di Azure). Per informazioni sulla diagnostica, vedere [configurazione della diagnostica per servizi Cloud di Azure e macchine virtuali](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Per informazioni su Application Insights, vedere [What ' s Application Insights?](/azure/application-insights/app-insights-overview.md).
+La diagnostica consente di risolvere i problemi relativi a un servizio cloud di Azure (o a una macchina virtuale di Azure). Per informazioni sulla diagnostica, vedere [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Per informazioni su Application Insights, vedere [Informazioni su Azure Application Insights](/azure/application-insights/app-insights-overview).
 
-## <a name="summary-page"></a>Pagina di riepilogo
+## <a name="summary-page"></a>Pagina Riepilogo
 
 ![Riepilogo](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profilo di destinazione** -è possibile scegliere di creare un profilo di pubblicazione dalle impostazioni scelte. Ad esempio, si potrebbe creare un profilo per un ambiente di test e per la produzione. Per salvare questo profilo, scegliere il **salvare** icona. La procedura guidata crea il profilo e viene salvato nel progetto di Visual Studio. Per modificare il nome del profilo, aprire il **profilo di destinazione** elenco e quindi scegliere  **&lt;Gestisci... &gt;**.
+**Profilo di destinazione** - È possibile scegliere di creare un profilo di pubblicazione dalle impostazioni scelte. È ad esempio possibile creare un profilo per un ambiente di test e un altro per l'ambiente di produzione. Per salvare il profilo, fare clic sull'icona **Salva** . La procedura guidata crea e salva il profilo nel progetto Visual Studio. Per modificare il nome del profilo, aprire l'elenco **Profilo di destinazione**, quindi scegliere **&lt;Gestisci&gt;**.
 
    > [!Note]
-   > Il profilo di pubblicazione viene visualizzato in Esplora soluzioni in Visual Studio e le impostazioni del profilo vengono scritte in un file con estensione azurepubxml. Le impostazioni vengono salvate come attributi di tag XML.
+   > Il profilo di pubblicazione viene visualizzato in Esplora soluzioni di Visual Studio e le impostazioni del profilo vengono scritte in un file con estensione azurePubxml. Le impostazioni vengono salvate come attributi dei tag XML.
 
 ## <a name="publishing-your-application"></a>Pubblicazione dell'applicazione
 
-Dopo aver configurato tutte le impostazioni per la distribuzione del progetto, selezionare **pubblica** nella parte inferiore della finestra di dialogo. È possibile monitorare lo stato del processo nel **Output** finestra in Visual Studio.
+Dopo avere configurato tutte le impostazioni per la distribuzione del progetto, selezionare **Pubblica** nella parte inferiore della finestra di dialogo. È possibile monitorare lo stato del processo nella finestra **Output** in Visual Studio.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Eseguire la migrazione e pubblicare un'applicazione Web a un servizio cloud di Azure da Visual Studio](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
+- [Eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
 
-- [Informazioni su come usare Visual Studio per pubblicare un servizio cloud di Azure](./vs-azure-tools-publishing-a-cloud-service.md)
+- [Imparare a usare Visual Studio per pubblicare un servizio cloud di Azure](./vs-azure-tools-publishing-a-cloud-service.md)
 
-- [Debug di un servizio cloud di Azure pubblicato con IntelliTrace e Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
+- [Debug di un servizio cloud di Azure pubblicato con Visual Studio e IntelliTrace](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)
 
 - [Test delle prestazioni di un servizio cloud di Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configurazione della diagnostica per servizi Cloud di Azure e macchine virtuali](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+- [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
 
-- [Che cos'è Application Insights?](/azure/application-insights/app-insights-overview.md)
+- [Informazioni su Azure Application Insights](/azure/application-insights/app-insights-overview)

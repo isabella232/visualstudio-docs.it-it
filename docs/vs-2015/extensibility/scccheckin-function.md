@@ -1,14 +1,9 @@
 ---
 title: Funzione SccCheckin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 26daf5fcd3ee4ec14b0801c828a6e536a65150d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798001"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964679"
 ---
 # <a name="scccheckin-function"></a>Funzione SccCheckin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ SCCRTN SccCheckin (
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFile  
+ nFiles  
  [in] Numero di file selezionati da archiviare.  
   
  lpFileNames  
@@ -59,7 +54,7 @@ SCCRTN SccCheckin (
  lpComment  
  [in] Commento da applicare a ogni file selezionati da archiviare. Si tratta di `NULL` se il controllo del codice sorgente del plug-in una richiesta per un commento.  
   
- Opzioni  
+ fOptions  
  [in] Flag di comando, i valori validi sono 0 o `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
@@ -68,14 +63,14 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|I file è stato correttamente archiviato.|  
 |SCC_E_FILENOTCONTROLLED|Il file selezionato non è incluso nel controllo del codice sorgente.|  
 |SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico. File non è stato archiviato.|  
 |SCC_E_NOTCHECKEDOUT|L'utente non è estratto il file, in modo che non è possibile eseguirne l'archiviazione.|  
-|SCC_E_CHECKINCONFLICT|Check-in non può essere eseguita perché:<br /><br /> -Un altro utente è stata archiviata direttamente e `bAutoReconcile` fosse falsa.<br /><br /> oppure<br /><br /> -Il merge automatico non può essere eseguito (ad esempio, quando i file sono: binari).|  
+|SCC_E_CHECKINCONFLICT|Check-in non può essere eseguita perché:<br /><br /> -Un altro utente è stata archiviata direttamente e `bAutoReconcile` fosse falsa.<br /><br /> -oppure-<br /><br /> -Il merge automatico non può essere eseguito (ad esempio, quando i file sono: binari).|  
 |SCC_E_VERIFYMERGE|File è stata unita automatico ma non è stato archiviato attesa di verifica dell'utente.|  
 |SCC_E_FIXMERGE|File è stata unita automatico ma non è stato archiviato a causa di un conflitto di merge che deve essere risolti manualmente.|  
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|  
@@ -90,4 +85,3 @@ SCCRTN SccCheckin (
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
-

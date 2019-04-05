@@ -1,12 +1,9 @@
 ---
 title: Salvare i dati in un database (più tabelle) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964488"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
  È possibile salvare nel database i dati dell'applicazione chiamando il metodo `Update` di un oggetto TableAdapter. Quando si trascinano tabelle dal **Zdroje dat** finestra in un form, il codice necessario per salvare i dati viene aggiunto automaticamente. Le tabelle aggiuntive che vengono aggiunti a un form richiedono l'aggiunta manuale di questo codice. In questa procedura dettagliata viene descritto come aggiungere il codice per salvare gli aggiornamenti da più di una tabella.  
   
 > [!NOTE]
->  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Le attività illustrate nella procedura dettagliata sono le seguenti:  
   
@@ -48,7 +45,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 -   Impostazione dei controlli degli elementi di [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Creazione di controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra nei form.  
+-   Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.  
   
 -   Modifica di alcuni record in ogni tabella nel set di dati.  
   
@@ -57,7 +54,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  
   
--   Accedere al database di esempio Northwind.  Per altre informazioni, vedere [procedura: installare database di esempio](../data-tools/how-to-install-sample-databases.md).  
+-   Accedere al database di esempio Northwind.
   
 ## <a name="create-the-windows-application"></a>Creare l'applicazione di Windows  
  Il primo passaggio consiste nel creare un **applicazioni Windows**. L'assegnazione di un nome al progetto è facoltativa durante questo passaggio, ma viene assegnato un nome perché è comunque prevista salvandolo in un secondo momento.  
@@ -70,10 +67,10 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 3.  Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-     Il **UpdateMultipleTablesWalkthrough** viene creato e aggiunto al progetto **Esplora soluzioni**.  
+     Il progetto **UpdateMultipleTablesWalkthrough** viene creato e aggiunto in **Esplora soluzioni**.  
   
 ## <a name="create-the-data-source"></a>Creare l'origine dati  
- Questo passaggio consente di creare un'origine dati dal database Northwind usando il **configurazione guidata origine dati**. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/how-to-install-sample-databases.md).  
+ Questo passaggio consente di creare un'origine dati dal database Northwind usando la **Configurazione guidata origine dati**. Per creare la connessione, è necessario avere accesso al database di esempio Northwind.
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
@@ -87,9 +84,9 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
-         oppure  
+         -oppure-  
   
-    -   Selezionare **nuova connessione** per aprire il **Aggiungi/Modifica connessione** nella finestra di dialogo.  
+    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.  
   
 5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
   
@@ -99,7 +96,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 8.  Selezionare il **clienti** e **ordini** tabelle e quindi selezionare **fine**.  
   
-     Il **NorthwindDataSet** viene aggiunto al progetto, e le tabelle sono visualizzate nel **Zdroje dat** finestra.  
+     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle vengono visualizzate nella finestra **Origini dati**.  
   
 ## <a name="set-the-controls-to-be-created"></a>Impostare i controlli da creare  
  Per i dati in questa procedura dettagliata il `Customers` la tabella è in un **dettagli** layout in cui i dati vengono visualizzati in singoli controlli. I dati dal `Orders` tabella si trova in un **griglia** layout che viene visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo.  
@@ -111,23 +108,23 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
 2.  Nel **clienti** nodo, seleziona **dettagli** dall'elenco di controllo per impostare il controllo della **clienti** tabella sui singoli controlli. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 ## <a name="create-the-data-bound-form"></a>Creare il form con associazione a dati  
- È possibile creare i controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra nei form.  
+ È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form  
   
-1.  Trascinare l'oggetto principale **clienti** nodo dalle **Zdroje dat** finestra nei **Form1**.  
+1.  Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.  
   
-     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
+     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
-2.  Trascinare i relativi **ordini** nodo dalle **Zdroje dat** finestra nei **Form1**.  
+2.  Trascinare il nodo **Orders** correlato dalla finestra **Origini dati** in **Form1**.  
   
     > [!NOTE]
-    >  I relativi **ordini** nodo si trova sotto il **Fax** colonna ed è un nodo figlio del **clienti** nodo.  
+    >  Il nodo **Orders** correlato si trova sotto la colonna **Fax** ed è un nodo figlio del nodo **Customers**.  
   
-     Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un' [OrdersTableAdapter](../data-tools/tableadapter-overview.md) e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.  
+     Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto OrdersTableAdapter e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode per aggiornare il database  
- È possibile aggiornare il database chiamando il `Update` metodi del **clienti** e **ordini** TableAdapter. Per impostazione predefinita, un gestore eventi per il **salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.  
+ È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il **salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.  
   
 > [!NOTE]
 >  Per maggiore chiarezza, questa procedura dettagliata non utilizza una transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che assicura che tutte le modifiche relative a un database vengano completate prima che eventuali modifiche vanno eseguito il commit. Per altre informazioni, vedere [transazioni e concorrenza](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -149,17 +146,16 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 2.  Apportare alcune modifiche ai dati di uno o più record di ogni tabella.  
   
-3.  Selezionare il **salvare** pulsante.  
+3.  Selezionare il pulsante **Salva**.  
   
 4.  Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, sono disponibili diversi passaggi, che si potrebbe voler eseguire dopo la creazione di un form con associazione a dati nell'applicazione Windows. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:  
   
--   Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [procedura: aggiungere una Query con parametri a un'applicazione di Windows Forms](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+-   Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Modifica dell'origine dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [procedura: modificare un set di dati](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+-   Modifica dell'origine dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Procedura: Modificare un set di dati](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
-

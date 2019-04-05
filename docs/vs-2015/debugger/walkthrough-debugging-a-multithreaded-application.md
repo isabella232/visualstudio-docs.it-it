@@ -1,14 +1,9 @@
 ---
 title: "Procedura dettagliata: Debug di un'applicazione multithreading | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969970"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>Procedura dettagliata: debug di un'applicazione multithreading
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>Procedura dettagliata: Debug di un'applicazione multithreading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] fornisce un miglioramento **thread** finestra e un'interfaccia utente miglioramenti per renderne più semplice eseguire il debug di applicazioni multithreading. Il completamento di questa procedura dettagliata richiede solo alcuni minuti, ma è utile per familiarizzare con le nuove funzionalità dell'interfaccia per il debug delle applicazioni multithreading.  
@@ -42,7 +37,7 @@ ms.locfileid: "51798632"
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Nel **tipo di progetto**s, scegliere il linguaggio di propria scelta: **Visual Basic**, **Visual c#**, oppure **Visual C++**.  
+2.  Nel **tipo di progetto**s, scegliere il linguaggio di propria scelta: **Visual Basic**, **Visual C#** , o **Visual C++**.  
   
 3.  Nel **modelli** , scegliere **applicazione Console** oppure **applicazione Console CLR**.  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51798632"
   
 6.  Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio che viene visualizzato nella sezione "Creazione di un Thread" dell'argomento [creazione di thread e passaggio di dati in fase di avvio](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  Nel **File** menu, fare clic su **Salva tutto**.  
+7.  Nel menu **File** fare clic su **Salva tutto**.  
   
 #### <a name="to-begin-the-walkthrough"></a>Per iniziare la procedura dettagliata  
   
@@ -115,7 +110,7 @@ Thread::Sleep(3000);
   
    Questa icona è un *marcatore del thread*:  
   
-   ![Marcatore del thread](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Thread Marker](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Impostazione e rimozione dei flag dei thread  
  In [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] è possibile impostare i flag dei thread a cui si desidera attribuire particolare attenzione. L'impostazione dei flag dei thread è un ottimo strumento per tenere traccia dei thread importanti e per ignorare quelli a cui non si desidera prestare attenzione.  
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  Andare alla **posizione di debug** sulla barra degli strumenti e fare clic sui **Thread** elenco.  
   
     > [!NOTE]
-    >  In questa barra degli strumenti sono presenti tre elenchi principali: **processo**, **Thread**, e **Stack Frame**.  
+    >  In questa barra degli strumenti sono presenti tre elenchi principali: **Processo**, **Thread**, e **Stack Frame**.  
   
 3.  Osservare il numero di thread visualizzati nell'elenco.  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. Scegliere il pulsante del flag per visualizzare nuovamente **Mostra solo thread con flag**.  
   
-11. Nel **Debug** dal menu **Windows** e quindi fare clic su **thread**.  
+11. Scegliere **Finestre** dal menu **Debug**, quindi **Thread**.  
   
      Il **thread** verrà visualizzata la finestra. in cui è presente un thread con un'icona del flag associata.  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      Sono stati analizzati tre modi di modifica del thread attivo: usando il **thread** finestra, il **Thread** nella casella il **posizione di Debug** sulla barra degli strumenti e l'indicatore del thread nel finestra di origine.  
   
-     Con l'indicatore del thread è possibile passare solo ai thread che sono stati interrotti in quella determinata posizione. Tramite il **thread** finestra e **posizione di Debug** sulla barra degli strumenti, è possibile passare a uno o più thread.  
+     Con l'indicatore del thread è possibile passare solo ai thread che sono stati interrotti in quella determinata posizione. Con la finestra **Thread** e la barra degli strumenti **Posizione di debug** è possibile passare a tutti i tipi di thread.  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>Blocco e sblocco dell'esecuzione dei thread  
   
@@ -264,6 +259,3 @@ Thread::Sleep(3000);
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-
