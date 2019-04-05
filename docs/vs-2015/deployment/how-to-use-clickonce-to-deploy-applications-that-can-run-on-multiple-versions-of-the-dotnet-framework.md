@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 7731526b09ab3014b9f3256ee1f4e4d0dd653a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970164"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: utilizzare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile distribuire un'applicazione destinata a più versioni di .NET Framework tramite la tecnologia di distribuzione ClickOnce. Ciò richiede di generare e aggiornare i manifesti dell'applicazione e della distribuzione.  
@@ -53,7 +48,7 @@ ms.locfileid: "49259063"
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Per generare i manifesti dell'applicazione e distribuzione  
   
--   Usare la procedura guidata di pubblicazione o la pagina di pubblicazione di creazione progetti per pubblicare l'applicazione e generare l'applicazione e i file manifesto di distribuzione. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oppure [pubblicare Page, Project Designer](../ide/reference/publish-page-project-designer.md).  
+-   Usare la procedura guidata di pubblicazione o la pagina di pubblicazione di creazione progetti per pubblicare l'applicazione e generare l'applicazione e i file manifesto di distribuzione. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oppure [pubblicare Page, Project Designer](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Per modificare il manifesto di distribuzione per visualizzare un elenco di più versioni di .NET Framework  
   
@@ -65,11 +60,11 @@ ms.locfileid: "49259063"
   
     |Versione di .NET Framework|XML|  
     |----------------------------|---------|  
-    |Client 4|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
-    |Full 4|\<Framework targetVersion = "4.0" profile = supportedRuntime "Completo" = "4.0.30319" / >|  
-    |3.5 client|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
-    |3.5 completo|\<Framework targetVersion = "3.5" profile = supportedRuntime "Completo" = "2.0.50727" / >|  
-    |3.0|\<Framework targetVersion = supportedRuntime "3.0" = "2.0.50727" / >|  
+    |4 Client|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
+    |4 Completo|\<Framework targetVersion = "4.0" profile = supportedRuntime "Completo" = "4.0.30319" / >|  
+    |3.5 Client|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|  
+    |3.5 Completo|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Per modificare il file app. config per elencare le versioni di runtime di .NET Framework compatibili  
   
@@ -81,10 +76,10 @@ ms.locfileid: "49259063"
   
     |Versione di runtime di .NET framework|XML|  
     |------------------------------------|---------|  
-    |Client 4|\<versione supportedRuntime = sku "v4.0.30319" = ". NETFramework, versione = v4.0, profilo = Client "/ >|  
-    |Full 4|\<versione supportedRuntime = sku "v4.0.30319" = ". NETFramework, versione = v4.0 "/ >|  
-    |3.5 completo|\<version="v2.0.50727"/ supportedRuntime >|  
-    |3.5 client|\<versione supportedRuntime = sku "v2.0.50727" = "Client" / >|  
+    |4 Client|\<versione supportedRuntime = sku "v4.0.30319" = ". NETFramework, versione = v4.0, profilo = Client "/ >|  
+    |4 Completo|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
+    |3.5 Completo|\<supportedRuntime version="v2.0.50727"/>|  
+    |3.5 Client|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Per modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework  
   
@@ -108,7 +103,7 @@ ms.locfileid: "49259063"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Per aggiornare e firmare nuovamente l'applicazione e distribuzione di manifesti  
   
--   Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [Procedura: ripetere la firma dei manifesti dell'applicazione e di distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
@@ -116,6 +111,3 @@ ms.locfileid: "49259063"
  [\<dipendenza > elemento](../deployment/dependency-element-clickonce-application.md)   
  [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [Schema dei file di configurazione](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
-
-
-

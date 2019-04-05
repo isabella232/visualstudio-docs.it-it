@@ -1,14 +1,9 @@
 ---
 title: Funzione SccCreateSubProject | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCreateSubProject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 905a3319627a54ef84b5d473d3725069a9f1eecb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c2f28d8bb9ebc440db69085324becb6a96c19afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58954286"
 ---
 # <a name="scccreatesubproject-function"></a>Funzione SccCreateSubProject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Sottoprogetto creato correttamente.|  
 |SCC_E_INITIALIZEFAILED|Nelze inicializovat progetto padre.|  
@@ -92,7 +87,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Note tecniche per SccCreateSubProject e SccGetParentProjectPath  
  Aggiunta di soluzioni e progetti al controllo del codice sorgente è stato semplificato in Visual Studio per ridurre al minimo il numero di volte in cui che un utente viene richiesto di selezionare i percorsi nel sistema di controllo di origine. Queste modifiche sono attivate da Visual Studio, se un controllo del codice sorgente del plug-in supporta sia le nuove funzioni, `SccCreateSubProject` e `SccGetParentProjectPath`. Tuttavia, la voce del Registro di sistema seguente consente di disabilitare queste modifiche e tornare al comportamento precedente di Visual Studio (origine controllo plug-in API versione 1.1):  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" runasppl"=DWORD:00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
  Se questa voce del Registro di sistema non esiste o è impostata su dword:00000000, Visual Studio prova a usare le nuove funzioni `SccCreateSubProject` e `SccGetParentProjectPath`.  
   
@@ -102,4 +97,3 @@ SCCRTN SccCreateSubProject(
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
-

@@ -1,12 +1,9 @@
 ---
 title: 'Diagrammi dei componenti UML: Linee guida | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968091"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>Diagrammi dei componenti UML: linee guida
+# <a name="uml-component-diagrams-guidelines"></a>Diagrammi dei componenti UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare la struttura di un sistema software. Per una dimostrazione video, vedere [progettazione della struttura fisica tramite i diagrammi componente](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -45,17 +42,17 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   È possibile usare un diagramma dei componenti per rappresentare la progettazione indipendentemente dalla lingua o dalla piattaforma usata.  
   
 ##  <a name="OtherDiagrams"></a> Relazione con altri diagrammi  
- È possibile utilizzare un diagramma dei componenti insieme ad altri diagrammi.  
+ È possibile usare un diagramma dei componenti insieme ad altri diagrammi.  
   
 |Altro diagramma|Discussione e comunicazione dei seguenti aspetti della progettazione|  
 |-------------------|--------------------------------------------------------------------|  
-|Diagramma di sequenza UML|-Le interazioni tra componenti del sistema<br />-Le interazioni tra le parti all'interno di un componente.<br /><br /> Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|Diagramma classi UML|-Le interfacce di un componente. Il diagramma classi consente di descrivere in dettaglio i metodi di interfaccia.<br />-I dati inviati nei parametri attraverso le interfacce dei componenti.<br /><br /> Per altre informazioni, vedere [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md).|  
-|Diagrammi di attività|-L'elaborazione interna eseguita da un componente in risposta ai messaggi in arrivo.<br /><br /> Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Diagrammi livello|-Livelli architetturali logici per i componenti.<br /><br /> Per altre informazioni, vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md).|  
+|Diagramma di sequenza UML|-Le interazioni tra componenti del sistema<br />-Le interazioni tra le parti all'interno di un componente.<br /><br /> Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|Diagramma classi UML|-Le interfacce di un componente. Il diagramma classi consente di descrivere in dettaglio i metodi di interfaccia.<br />-I dati inviati nei parametri attraverso le interfacce dei componenti.<br /><br /> Per altre informazioni, vedere [Diagrammi classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md).|  
+|Diagrammi di attività|-L'elaborazione interna eseguita da un componente in risposta ai messaggi in arrivo.<br /><br /> Per altre informazioni, vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Diagrammi livello|-Livelli architetturali logici per i componenti.<br /><br /> Per altre informazioni, vedere [diagrammi livello: informazioni di riferimento](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Passaggi di base per la creazione di diagrammi componente  
- Per informazioni di riferimento sugli elementi nei diagrammi dei componenti, vedere [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md).  
+ Per informazioni di riferimento sugli elementi nei diagrammi dei componenti, vedere [diagrammi dei componenti UML: informazioni di riferimento](../modeling/uml-component-diagrams-reference.md).  
   
  Per altre informazioni su come usare i diagrammi dei componenti nel processo di progettazione, vedere [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md).  
   
@@ -112,7 +109,7 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
  Una porta con un *interfaccia richiesta* (3) rappresenta il requisito di un componente per un gruppo di operazioni o servizi devono essere fornite da altri componenti o sistemi esterni.  
   
- Ad esempio, un Web browser richiede server Web o un componente aggiuntivo dell'applicazione richiede i servizi dall'applicazione.  
+ Ad esempio, un browser Web richiede server Web o un componente aggiuntivo dell'applicazione richiede i servizi dall'applicazione.  
   
  Un componente può contenere un qualsiasi numero di porte.  
   
@@ -135,7 +132,7 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
    Se si desidera elencare gli attributi e le operazioni dell'interfaccia, è possibile aggiungerli all'interfaccia in Esplora modelli UML. In alternativa, è possibile trascinare l'interfaccia da Esplora modelli UML in un diagramma classi e aggiungere le operazioni e gli attributi in tale posizione.  
   
 ### <a name="linking-between-components"></a>Collegamento tra componenti  
- Usare una dipendenza (4) per mostrare che il requisito di un componente può essere soddisfatto dalle operazioni o dai servizi forniti da un altro componente.  
+ Utilizzare una dipendenza (4) per mostrare che il requisito di un componente può essere soddisfatto dalle operazioni o dai servizi forniti da un altro componente.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Per mostrare che un'interfaccia fornita può soddisfare un'interfaccia richiesta  
   
@@ -149,7 +146,7 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
 -   Trovare l'interfaccia **Esplora modelli UML** e quindi trascinarla sul componente.  
   
-     oppure  
+     -oppure-  
   
 -   Copiare e incollare un riferimento a un'interfaccia da un diagramma.  
   
@@ -263,11 +260,11 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
 ### <a name="describing-how-the-parts-collaborate"></a>Descrizione del modo in cui collaborano le parti  
  È possibile creare un diagramma di sequenza per illustrare il modo in cui le parti collaborano in risposta a un messaggio che arriva nel componente padre.  
   
- È possibile usare questi diagrammi sia per illustrare un componente esistente che per progettare un nuovo componente.  
+ È possibile utilizzare questi diagrammi sia per illustrare un componente esistente che per progettare un nuovo componente.  
   
- Se il componente è ancora in fase di progettazione, è possibile creare i diagrammi di sequenza prima di decidere le parti che conterrà. È possibile usare i diagrammi di sequenza per sperimentare parti diverse, interfacce richieste e sequenze di messaggi. Creare i diagrammi di sequenza per i messaggi in arrivo più frequenti e più importanti. È possibile creare quindi le parti nel componente che corrispondono alle linee di vita scelte.  
+ Se il componente è ancora in fase di progettazione, è possibile creare i diagrammi di sequenza prima di decidere le parti che conterrà. È possibile utilizzare i diagrammi di sequenza per sperimentare parti diverse, interfacce richieste e sequenze di messaggi. Creare i diagrammi di sequenza per i messaggi in arrivo più frequenti e più importanti. È possibile creare quindi le parti nel componente che corrispondono alle linee di vita scelte.  
   
- Usare i diagrammi di sequenza per valutare il modo in cui il lavoro del sistema viene distribuito tra i diversi componenti.  
+ Utilizzare i diagrammi di sequenza per valutare il modo in cui il lavoro del sistema viene distribuito tra i diversi componenti.  
   
 - Se su una parte viene caricato troppo lavoro, probabilmente sarà più difficile aggiornare l'applicazione, rispetto a una condizione in cui il carico di lavoro viene distribuito in modo uniforme.  
   
@@ -279,7 +276,7 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
 1.  Creare un nuovo diagramma di sequenza.  
   
-     Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Creare una linea di vita per un componente esterno, un utente, un dispositivo o un altro attore (1) che invia messaggi a questo componente.  
   
@@ -301,16 +298,16 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
  È possibile indicarlo nel modello impostando il **Is Indirectly Instantiated** proprietà del componente. In questo caso, tutte le interfacce del componente devono trovarsi sulle porte, con deleghe alle parti interne.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Descrizione del processo all'interno di ogni parte  
- È possibile usare i diagrammi di attività per illustrare come un componente elabori ogni messaggio in arrivo. Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+ È possibile usare i diagrammi di attività per illustrare come un componente elabori ogni messaggio in arrivo. Per altre informazioni, vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Diagramma di attività con buffer di dati](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
  Usare la proprietà Accept Event Action (1) per indicare che un messaggio in arrivo avvia un nuovo thread.  
   
- Usare i nodi dell'oggetto e i pin di input/output per mostrare il flusso di informazioni e dove vengono archiviate le informazioni. Nell'esempio un nodo dell'oggetto (2) viene usato per mostrare gli elementi memorizzati nel buffer tra un thread e l'altro.  
+ Usare i nodi dell'oggetto e i pin di input/output per mostrare il flusso di informazioni e dove vengono archiviate le informazioni. Nell'esempio un nodo dell'oggetto (2) viene utilizzato per mostrare gli elementi memorizzati nel buffer tra un thread e l'altro.  
   
 ### <a name="defining-data-and-classes"></a>Definizione di dati e classi  
- È possibile usare un diagramma classi UML per descrivere il contenuto dettagliato di:  
+ È possibile utilizzare un diagramma classi UML per descrivere il contenuto dettagliato di:  
   
 -   Interfacce dei componenti. Quando si aggiunge una richiesta o si fornisce una porta a un componente, in Esplora modelli UML viene visualizzata un'interfaccia. È possibile trascinare o copiare tale interfaccia in un diagramma classi UML per visualizzarne attributi, operazioni e relazioni con altre interfacce.  
   
@@ -331,18 +328,15 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
   
 - Un componente crea un'istanza di una classe definita all'interno di un'altra classe.  
   
-- Un componente usa le informazioni create da un altro componente.  
+- Un componente utilizza le informazioni create da un altro componente.  
   
-  È possibile usare il nome della freccia di dipendenza per indicare un particolare tipo di utilizzo. Per impostare il nome, fare doppio clic sulla freccia, quindi fare clic su **delle proprietà**e impostare le **nome** campo nella finestra Proprietà.  
+  È possibile utilizzare il nome della freccia di dipendenza per indicare un particolare tipo di utilizzo. Per impostare il nome, fare doppio clic sulla freccia, quindi fare clic su **delle proprietà**e impostare le **nome** campo nella finestra Proprietà.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
- [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
+ [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)   
  [Video: Progettazione della struttura fisica tramite i diagrammi componente](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-

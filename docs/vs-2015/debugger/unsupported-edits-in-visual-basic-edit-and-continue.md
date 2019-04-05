@@ -1,14 +1,9 @@
 ---
 title: Modifica e continuazione di modifiche non supportate in Visual Basic | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787900"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58970375"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Modifiche non supportate in Modifica e continuazione di Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
  Se è necessario apportare una modifica non supportata, terminare il debug, apportare le modifiche e avviare una nuova sessione di debug.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Modifiche al corpo di proprietà e metodi  
- **Modifiche non supportate per le variabili locali statiche**: aggiunta o l'aggiornamento di una variabile locale o la rimozione di una variabile locale statica se questa può provocare un errore di compilazione.  
+ **Modifiche non supportate per le variabili locali statiche**: Aggiunta o l'aggiornamento di una variabile locale o la rimozione di una variabile locale statica se tale provocherebbe un errore di compilazione.  
   
- **Modifiche non supportate per i Generics**: modifiche al metodo generico stesso o al corpo del metodo generico non sono supportate. È possibile aggiungere, eliminare o modificare istanze di un tipo generico o chiamate a metodi generici esistenti.  
+ **Modifiche non supportate per i Generics**: Le modifiche al metodo generico stesso o al relativo corpo non sono supportate. È possibile aggiungere, eliminare o modificare istanze di un tipo generico o chiamate a metodi generici esistenti.  
   
  **Altre modifiche non supportate**  
   
@@ -223,8 +218,5 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
 -   Modifica del tipo di un campo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: applicare modifiche in modalità di interruzione con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

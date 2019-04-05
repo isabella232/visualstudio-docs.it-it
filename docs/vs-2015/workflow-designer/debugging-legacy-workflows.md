@@ -1,11 +1,8 @@
 ---
 title: Debug dei flussi di lavoro Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, debugging
@@ -15,13 +12,13 @@ ms.assetid: e6097b47-760a-4b30-a92c-ae70cdbda49f
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5d835ddc84fae24130035f0664d446a73b7ac3f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964773"
 ---
 # <a name="debugging-legacy-workflows"></a>Debug dei flussi di lavoro legacy
 Se si sta usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] per compilare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] destinate a .NET Framework 3.0 o 3.5, è possibile eseguire il debug dei flussi di lavoro come con qualsiasi altro programma impostando punti di interruzione, creando connessioni ai processi ed esaminando i thread e lo stack di chiamate. È inoltre possibile eseguire il debug in modalità remota.  
@@ -38,11 +35,11 @@ Se si sta usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_cur
   
  La [!INCLUDE[wf2](../includes/wf2-md.md)] si integra con le seguenti finestre di debug standard di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:  
   
-- **Punto di interruzione**: funziona come previsto, ma si specifica un'attività per il nome della funzione.  
+- **Punto di interruzione**: Funziona come previsto, ma si specifica un'attività per il nome della funzione.  
   
-- **Stack di chiamate**: modificato per fornire una descrizione delle attività eseguite in un'istanza del flusso di lavoro. Le voci nella **Stack di chiamate** finestra sono una ricerca in profondità di esecuzione dell'attività. È possibile fare doppio clic su una voce per selezionare l’attività desiderata.  
+- **Stack di chiamate**: Modificato per fornire una descrizione delle attività eseguite in un'istanza del flusso di lavoro. Le voci nella **Stack di chiamate** finestra sono una ricerca in profondità di esecuzione dell'attività. È possibile fare doppio clic su una voce per selezionare l’attività desiderata.  
   
-- **Thread**: fornisce l'ID dell'istanza del flusso di lavoro che viene eseguito il debug.  
+- **Thread**: Fornisce l'ID dell'istanza del flusso di lavoro che viene eseguito il debug.  
   
   Visual Studio per Windows Workflow Foundation non supporta le funzionalità di debug seguenti:  
   
@@ -67,7 +64,7 @@ Se si sta usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_cur
   
  [Procedura: Eseguire il debug di flussi di lavoro basati su ASP.NET (legacy)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
   
- [Procedura: Impostare punti di interruzione nei flussi di lavoro (legacy)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
+ [Procedura: Impostare punti di interruzione in flussi di lavoro (legacy)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
   
  [Esecuzione del debug dei flussi di lavoro da computer remoto (legacy)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
   

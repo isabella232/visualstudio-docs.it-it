@@ -1,14 +1,9 @@
 ---
 title: Just-In-Time, debug, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
 - vs.debug.options.JIT
@@ -28,18 +23,18 @@ ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06fdd9d12003053ea6d992aa1d7d0fe9ed7144d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968227"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>JIT, Debug, Finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per l'accesso il **Just-In-Time** page, passare al **strumenti** dal menu **opzioni**. Nel **opzioni** finestra di dialogo espandere il **Debugging** nodo e selezionare **Just-In-Time**. Questa pagina consente di abilitare il debug JIT per codice gestito, codice nativo e script. Per altre informazioni, vedere [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).  
+Per accedere alla pagina **JIT** scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere il nodo **Debug** e selezionare **JIT**. Questa pagina consente di abilitare il debug JIT per codice gestito, codice nativo e script. Per altre informazioni, vedere [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  È possibile abilitare il debug JIT per questi tipi di programma:  
   
@@ -52,23 +47,20 @@ Per l'accesso il **Just-In-Time** page, passare al **strumenti** dal menu **opzi
   Il debug JIT è una tecnica per il debug di un programma avviato al di fuori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile eseguire un programma creato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al di fuori dell'ambiente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se il debug JIT è abilitato e si verifica un arresto anomalo, viene visualizzata una finestra di dialogo in cui viene chiesto se si desidera eseguire il debug.  
   
 ## <a name="associated-warnings"></a>Avvisi associati  
- Quando si visita questa pagina della finestra di **opzioni** nella finestra di dialogo si potrebbe essere visualizzato un messaggio simile al seguente:  
+ Quando si accede a questa pagina della finestra di dialogo **Opzioni**, è possibile che venga visualizzato il seguente messaggio di avviso:  
   
- **Un altro debugger è registrata come Just-In-Time debugger. Per correggere, abilitare Just-In-Time di debug o ripristinare Visual Studio.**  
+ **Un altro debugger è stato registrato come debugger JIT. Per risolvere il problema, abilitare il debug JIT o ripristinare Visual Studio.**  
   
  Questo messaggio viene visualizzato se come debugger JIT è impostato un altro debugger, ad esempio una versione precedente del debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  È anche possibile che venga visualizzato il messaggio seguente:  
   
- **Just-In-Time debug rilevati errori di registrazione. Per correggere, abilitare Just-In-Time di debug o ripristinare Visual Studio.**  
+ **Rilevati errori di registrazione del debug JIT. Per risolvere il problema, abilitare il debug JIT o ripristinare Visual Studio.**  
   
- Se viene visualizzato uno di questi avvisi, eseguire il debug con Just-In-Time [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] richiede privilegi di amministratore fino a quando non è stato risolto il problema. Se si tenta di abilitare la modalità JIT in queste condizioni senza disporre di questi privilegi, viene visualizzato il seguente messaggio di errore:  
+ In entrambi i casi, finché il problema non viene risolto, per l'esecuzione del debug JIT con [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] sarà necessario disporre dei privilegi di amministratore. Se si tenta di abilitare la modalità JIT in queste condizioni senza disporre di questi privilegi, viene visualizzato il seguente messaggio di errore:  
   
- **Accesso negato. Dispone un amministratore enable Just-In-Time di debug o ripristinare l'installazione di Visual Studio.**  
+ **Accesso negato. Chiedere a un amministratore di abilitare il debug JIT o ripristinare l'installazione di Visual Studio.**  
   
 ## <a name="see-also"></a>Vedere anche  
- [Il debug, finestra di dialogo Opzioni](../debugger/debugging-options-dialog-box.md)   
+ [Debug, finestra di dialogo Opzioni](../debugger/debugging-options-dialog-box.md)   
  [Procedura: Specificare le impostazioni del debugger](../debugger/how-to-specify-debugger-settings.md)
-
-
-

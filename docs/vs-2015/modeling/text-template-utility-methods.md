@@ -1,25 +1,22 @@
 ---
 title: Metodi di utilità Configurazione di modelli di testo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, utility methods
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
 caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 84f5b5de8b28062023d851e38e26930718d599e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968479"
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49186303"
 Esistono diversi metodi che sono sempre disponibili quando si scrive codice un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modello di testo. Questi metodi sono definiti <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  È anche possibile usare altri metodi e i servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi dei file, registrare gli errori e ottenere servizi forniti da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e qualsiasi pacchetto caricato.  Per altre informazioni, vedere [l'accesso a Visual Studio da un modello di testo](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+>  È anche possibile usare altri metodi e i servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi dei file, registrare gli errori e ottenere servizi forniti da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e qualsiasi pacchetto caricato.  Per altre informazioni, vedere [l'accesso a Visual Studio da un modello di testo](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Scrivere metodi  
  È possibile usare la `Write()` e `WriteLine()` metodi per aggiungere un testo in un blocco di codice standard, invece di usare un blocco di codice di espressione. I blocchi di codice seguenti sono funzionalmente equivalenti.  
@@ -136,6 +133,3 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 ```  
   
  Usare il `assembly` direttiva per fare riferimento all'assembly di cui è possibile trovare la classe compilata.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Individuazione di perdite di memoria tramite la libreria CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,20 +29,20 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969939"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappresentato dalle perdite di memoria, ovvero dall'impossibilità di deallocare correttamente la memoria allocata in precedenza. Una piccola perdita di memoria potrebbe passare inosservata, ma nel tempo può causare problemi come un calo delle prestazioni o l'arresto anomalo in caso di completo esaurimento della memoria. Nel peggiore dei casi, un'applicazione che usa tutta la memoria disponibile può causare l'arresto di un'altra applicazione, rendendo più difficile l'individuazione dell'applicazione responsabile del problema. Anche le perdite di memoria apparentemente inoffensive possono essere indice di altri problemi che è necessario correggere.  
   
- Il debugger di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e le librerie di runtime C (CRT) offrono gli strumenti necessari per rilevare e identificare le perdite di memoria.  
+ Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e le librerie di runtime C (CRT) offrono gli strumenti necessari per rilevare e identificare le perdite di memoria.  
   
 ## <a name="enabling-memory-leak-detection"></a>Attivazione del rilevamento di perdite di memoria  
  I principali strumenti per il rilevamento delle perdite di memoria sono il debugger e le funzioni degli heap di debug delle librerie di runtime del linguaggio C (CRT, C Run-Time Libraries).  
@@ -114,7 +109,7 @@ Object dump complete.
   
 - Numero di allocazione della memoria, che in questo esempio è `18`  
   
-- [Tipo di blocco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
+- [Tipo di blocco](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
   
 - Posizione esadecimale della memoria che in questo esempio è `0x00780E80` .  
   
@@ -271,6 +266,3 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  [Informazioni dettagliate sull'Heap di Debug CRT](../debugger/crt-debug-heap-details.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug del codice nativo](../debugger/debugging-native-code.md)
-
-
-

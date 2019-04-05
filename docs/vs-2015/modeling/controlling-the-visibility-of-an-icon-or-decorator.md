@@ -1,23 +1,20 @@
 ---
 title: Controllo della visibilità di un'icona o un elemento Decorator | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964831"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
 4.  Fare clic su **Compila soluzione** nel **compilazione** menu.  
   
-5.  Fare doppio clic sulla segnalazione di errori che è apparsa: "*ClasseUtente* non contiene una definizione per GetDecoratorControlValue...".  
+5.  Fare doppio clic la segnalazione di errori che è apparsa: "*ClasseUtente* non contiene una definizione per GetDecoratorControlValue...".  
   
      Consente di aprire l'editor di testo in dsl\generatedcode\domainclasses.cs. Il messaggio di errore evidenziato precedente è un commento che viene chiesto di aggiungere un metodo.  
   
@@ -115,6 +112,3 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
  [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

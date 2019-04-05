@@ -1,12 +1,9 @@
 ---
 title: "Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58964328"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i dati dalle tabelle di database che hanno una relazione padre/figlio. I dati sono incapsulati in entità in Entity Data Model. L'entità padre contiene informazioni generali per un set di ordini. Ogni proprietà dell'entità è associata a un controllo diverso nell'applicazione. L'entità figlio contiene i dettagli per ogni ordine. Questo set di dati è associato a un <xref:System.Windows.Controls.DataGrid> controllo.  
@@ -55,7 +52,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
 - Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Panoramica di Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -72,7 +69,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
 4.  Verificare che l'opzione **.NET Framework 4** è selezionata nella casella combinata nella parte superiore della finestra di dialogo. Il <xref:System.Windows.Controls.DataGrid> controllo utilizzati in questa procedura dettagliata è disponibile solo in .NET Framework 4.  
   
-5.  Selezionare il **WPF Application** modello di progetto.  
+5.  Selezionare il modello di progetto **Applicazione WPF**.  
   
 6.  Nella casella **Nome** digitare `AdventureWorksOrdersViewer`.  
   
@@ -81,7 +78,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
      Visual Studio crea il `AdventureWorksOrdersViewer` progetto.  
   
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Creazione di un Entity Data Model per l'applicazione  
- Prima di creare controlli associati a dati, è necessario definire un modello di dati per l'applicazione e aggiungere il **Zdroje dat** finestra. In questa procedura dettagliata, il modello di dati è un Entity Data Model.  
+ Prima di poter creare i controlli associati a dati, è necessario definire un modello di dati per l'applicazione e aggiungerlo alla finestra **Origini dati**. In questa procedura dettagliata, il modello di dati è un Entity Data Model.  
   
 #### <a name="to-create-an-entity-data-model"></a>Per creare un modello Entity Data Model  
   
@@ -97,7 +94,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
    - Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente.  
   
-      oppure  
+      -oppure-  
   
    - Fare clic su **nuova connessione** e creare una connessione al database AdventureWorksLT.  
   
@@ -126,7 +123,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
 3. Nel **Zdroje dat** finestra, fare clic sul menu a discesa per il **SalesOrderHeaders** nodo e selezionare **dettagli**.  
   
-4. Espandere la **SalesOrderHeaders** nodo.  
+4. Espandere il nodo **SalesOrderHeaders**.  
   
 5. Fare clic sul menu di riepilogo a discesa accanto a **SalesOrderID** e selezionare **ComboBox**.  
   
@@ -142,11 +139,11 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
    - **CreditCardApprovalCode**  
   
-   - **Subtotale**  
+   - **SubTotal**  
   
    - **TaxAmt**  
   
-   - **Costo di spedizione**  
+   - **Freight**  
   
    - **rowguid**  
   
@@ -160,7 +157,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
 8. Nella finestra di progettazione fare clic sulla casella combinata accanto al **Sales Order ID** etichetta.  
   
-9. Nel **delle proprietà** finestra, seleziona la casella di controllo accanto al **IsReadOnly** proprietà.  
+9. Nella finestra **Proprietà** selezionare la casella di controllo accanto alla proprietà **IsReadOnly**.  
   
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Creazione di un DataGrid che visualizza i dettagli dell'ordine  
  Creare un <xref:System.Windows.Controls.DataGrid> controllo che visualizza i dettagli dell'ordine trascinando le `SalesOrderDetails` entità dal **Zdroje dat** finestra di progettazione WPF.  

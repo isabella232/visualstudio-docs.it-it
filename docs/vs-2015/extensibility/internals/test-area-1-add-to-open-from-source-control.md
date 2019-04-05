@@ -1,29 +1,24 @@
 ---
 title: 'Area di test 1: Aggiungere o aprire dal controllo del codice sorgente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968419"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere in / Apri dal controllo del codice sorgente
+# <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Questo controllo del codice sorgente del plug-in di test viene illustrata l'area immissione soluzioni o progetti di controllo del codice sorgente e il loro recupero dal controllo del codice sorgente.  
@@ -31,15 +26,15 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
  Nell'esempio [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vengono usati percorsi di menu ambiente di sviluppo integrato nei test case:  
   
--   Per la [!INCLUDE[vsvss](../../includes/vsvss-md.md)], aprire dal controllo del codice sorgente: **File**, **aprire**, **progetto**/**soluzione**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
+-   Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aprire dal controllo del codice sorgente: **File**, **aperta**, **Project**/**soluzione**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
   
--   Per altre origine plug-in del controllo, aprire dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **aprire dal controllo del codice sorgente**.  
+-   Per altre origine plug-in del controllo, aprire dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Apri dal controllo del codice sorgente**.  
   
--   Aggiungere al controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo codice sorgente**, **controllo del codice sorgente**, **Add Progetti al controllo del codice sorgente selezionati**.  
+-   Aggiungere al controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi soluzione al File di controllo di origine**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**.  
   
 -   Menu di scelta rapida (progetto/soluzione), **Aggiungi soluzione al controllo del codice sorgente**.  
   
--   Aggiungi dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**.  
+-   Aggiungere dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **aggiungere progetto dal controllo del codice sorgente**.  
   
 -   Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)], aggiungere dall'origine controllo è disponibile anche dal **File**, **Add**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
   
@@ -61,7 +56,7 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'aggiunta a / Open dall'area di test di controllo del codice sorgente.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Caso 1a: Aggiungi soluzione al controllo del codice sorgente  
+### <a name="case-1a-add-solution-to-source-control"></a>Case 1a: Aggiungi soluzione al controllo del codice sorgente  
  Questo test case è incentrata sull'aggiunta di soluzioni di controllo del codice sorgente.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
@@ -92,4 +87,3 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-
