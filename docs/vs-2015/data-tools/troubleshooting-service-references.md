@@ -1,12 +1,9 @@
 ---
 title: I riferimenti al servizio di risoluzione dei problemi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223964"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58970225"
 ---
 # <a name="troubleshooting-service-references"></a>Risoluzione dei problemi relativi ai riferimenti al servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Questo argomento elenca i problemi comuni che possono verificarsi quando si sta 
 -   Nelle **Esplora soluzioni**, fare clic sul progetto libreria di servizi WCF e fare clic su **compilazione**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Errore di accesso a un servizio su un Desktop remoto
- Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non ha le autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "la richiesta HTTP non è autorizzata con lo schema di autenticazione client 'Anonimo'. L'intestazione di autenticazione ricevuta dal server: 'NTLM'."
+ Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non ha le autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "La richiesta HTTP non è autorizzata con lo schema di autenticazione client 'Anonimo'. L'intestazione di autenticazione ricevuta dal server: 'NTLM'."
 
  Per correggere l'errore:
 
@@ -79,9 +76,9 @@ Questo argomento elenca i problemi comuni che possono verificarsi quando si sta 
 
 3.  Assicurarsi che il **advanced Mostra configurazioni della build** casella di controllo sia selezionata e quindi fare clic su **OK**.
 
-4.  Caricare il progetto di servizio WCF. Per altre informazioni, vedere [NIB procedura: creare soluzioni multiprogetto](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Caricare il progetto di servizio WCF. Per altre informazioni, vedere [NIB procedura: Creare soluzioni multiprogetto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  Nel **Configuration Manager** finestra di dialogo, impostare il **configurazione soluzione attiva** a **Debug**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).
+5.  Nel **Configuration Manager** finestra di dialogo, impostare il **configurazione soluzione attiva** a **Debug**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
 6.  Nelle **Esplora soluzioni**, selezionare il progetto di servizio WCF.
 
@@ -92,13 +89,13 @@ Questo argomento elenca i problemi comuni che possono verificarsi quando si sta 
 
  Per correggere questo errore, disabilitare il feed RSS:
 
-1.  In Internet Explorer sul **degli strumenti** menu, fare clic su **Opzioni Internet**.
+1.  In Internet Explorer scegliere **Opzioni Internet** dal menu **Strumenti**.
 
 2.  Nel **contenuti** nella scheda il **feed** fare clic su **impostazioni**.
 
 3.  Nel **impostazioni Feed** della finestra di dialogo deseleziona le **attivare la visualizzazione di lettura feed** casella di controllo e quindi fare clic su **OK**.
 
-4.  Fare clic su **OK** per chiudere la **Opzioni Internet** nella finestra di dialogo.
+4.  Scegliere **OK** per chiudere la finestra di dialogo **Opzioni Internet**.
 
 ## <a name="see-also"></a>Vedere anche
 

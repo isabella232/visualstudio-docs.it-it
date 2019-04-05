@@ -1,25 +1,20 @@
 ---
 title: Attività di progettazione XML Schema | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f413f208-696f-446a-bb78-7fc55cf96d6c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e69fdb617fc5ce6fd91bd89422561ab6a1c65d61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 87ac827dff2920924bee3a2730fee0ae44f411fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965084"
 ---
 # <a name="xml-schema-designer-tasks"></a>Attività di Progettazione XML Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,13 @@ Contenuto della sezione viene descritto come completare attività comuni con gli
  [Procedura: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)  
  Viene descritto come creare un nuovo file XML Schema (XSD) e quindi aggiungervi contenuto.  
   
- [Procedura: Creare un documento XML in base allo schema XSD](../xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema.md)  
+ [Procedura: Creare un documento XML in base a uno schema XSD](../xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema.md)  
  Viene descritto come creare un documento XML in base allo schema XSD.  
   
  [Procedura: Aggiungere nodi dei risultati di ricerca del set di schemi all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)  
  Viene illustrato come aggiungere nodi evidenziati in XML Schema Explorer come risultato di una ricerca per parole chiave all'area di lavoro.  
   
- [Procedura: Passare dalle visualizzazioni all'editor XML](../xml-tools/how-to-switch-between-views-and-the-xml-editor.md)  
+ [Procedura: Spostarsi tra le visualizzazioni e l'editor XML](../xml-tools/how-to-switch-between-views-and-the-xml-editor.md)  
  Viene illustrato come passare dalle visualizzazioni di Progettazione XML Schema all'editor XML.  
   
  [Procedura: Aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)  
@@ -63,6 +58,3 @@ Contenuto della sezione viene descritto come completare attività comuni con gli
   
 ## <a name="see-also"></a>Vedere anche  
  [Progettazione XML Schema](../xml-tools/xml-schema-designer.md)
-
-
-

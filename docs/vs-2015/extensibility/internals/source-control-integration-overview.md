@@ -1,26 +1,21 @@
 ---
 title: Panoramica dell'integrazione di controllo di origine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969020"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Questa sezione Confronta i due modi per integrare nel controllo del codice sorge
   
 1. Creare una DLL che implementa le funzioni specificate nei [Plug-in controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrare la DLL, rendendo le voci del Registro di sistema (descritto nella [procedura: installare un plug-in controllo origine](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrare la DLL, rendendo le voci del Registro di sistema (descritto in [come: Installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Creare un file di supporto dell'interfaccia utente e la visualizzazione quando viene richiesto dal pacchetto di scheda di controllo di origine (il componente di Visual Studio che gestisce la funzionalità di controllo sorgente tramite plug-in controllo codice sorgente)  
   
@@ -85,4 +80,3 @@ Questa sezione Confronta i due modi per integrare nel controllo del codice sorge
  [Creazione di un controllo del codice sorgente del plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Creazione di un VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [Novità del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-source-control.md)
-

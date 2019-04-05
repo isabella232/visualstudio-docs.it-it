@@ -1,12 +1,9 @@
 ---
 title: Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968867"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
   
  Ad esempio, in Domain-Specific Language Tools (strumenti DSL), il nome visualizzato proprietà di una classe di dominio ha un valore predefinito calcolato utilizzando il nome della classe di dominio, ma un utente può modificare il valore in fase di progettazione o ripristinare le impostazioni per il valore calcolato.  
   
- In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL) che dispone di una proprietà che ha un valore predefinito in base alla proprietà Namespace predefinito del modello di rilevamento di Namespace. Per altre informazioni sulle proprietà di rilevamento, vedere [che definisce le proprietà di rilevamento](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL) che dispone di una proprietà che ha un valore predefinito in base alla proprietà Namespace predefinito del modello di rilevamento di Namespace. Per altre informazioni sulle proprietà di rilevamento, vedere [che definisce le proprietà di rilevamento](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - Il supporto degli strumenti DSL descrittori di proprietà di rilevamento. Tuttavia, la finestra di progettazione DSL non è utilizzabile per aggiungere una proprietà di rilevamento per una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.  
   
@@ -725,7 +722,7 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
   
 #### <a name="to-exercise-the-language"></a>Tenta di eseguire il linguaggio  
   
-1.  Nel **compilare** menu, fare clic su **Ricompila soluzione**.  
+1.  Nel menu **Compila** fare clic su **Ricompila soluzione**.  
   
 2.  Scegliere **Avvia debug** dal menu **Debug**.  
   
@@ -766,8 +763,5 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Procedura: creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md)   
- [Procedura dettagliata: personalizzazione della definizione del linguaggio specifico di dominio](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-
+ [Procedura: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [Procedura dettagliata: Personalizzazione della definizione del linguaggio specifico di dominio](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

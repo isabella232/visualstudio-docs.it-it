@@ -1,14 +1,9 @@
 ---
-title: 'Guida introduttiva: Analisi del codice per C / C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Avvio rapido: Analisi del codice per C / C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,18 +11,18 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968441"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Guida introduttiva all'analisi del codice per C/C++
+# <a name="quick-start-code-analysis-for-cc"></a>Avvio rapido: Analisi codice per C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile migliorare la qualità dell'applicazione eseguendo regolarmente l'analisi del codice C o C++. Ciò consente di individuare i problemi comuni, le violazioni delle buone norme di programmazione o i difetti che sono difficili da individuare tramite test. Gli avvisi dell'analisi del codice sono diversi dagli avvisi e dagli errori del compilatore perché l'analisi del codice esegue la ricerca di modelli di codice specifici che risultano validi ma che potrebbero comunque causare problemi per gli utenti che usano il codice.  
+È possibile migliorare la qualità dell'applicazione eseguendo regolarmente l'analisi del codice C o C++. Ciò consente di individuare i problemi comuni, le violazioni delle buone norme di programmazione o i difetti che sono difficili da individuare tramite test. Gli avvisi di analisi del codice sono diversi rispetto agli errori e agli avvisi del compilatore in quanto durante l'analisi del codice vengono cercati modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che usano il codice.  
   
 ## <a name="in-this-topic"></a>Contenuto dell'argomento  
   
@@ -130,11 +125,8 @@ ms.locfileid: "51758201"
 ##  <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice  
  Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.  
   
-1.  **Per filtrare gli avvisi per titolo o id avviso**: immettere la parola chiave nel **filtro** casella di testo.  
+1.  **Per filtrare gli avvisi per titolo o id avviso**: Immettere la parola chiave nel **filtro** casella di testo.  
   
 2.  **Per filtrare gli avvisi per progetto**: In una soluzione multiprogetto, scegliere uno o più progetti nell'elenco nella parte superiore destra della finestra Analisi codice. Scegliere il nome della soluzione per visualizzare tutti gli avvisi.  
   
-3.  **Per filtrare gli avvisi per gravità**: per impostazione predefinita, ai messaggi di analisi codice viene assegnato un livello di gravità **avviso**. È possibile assegnare la gravità di una o più messaggi come **errore** in una regola personalizzata impostata. Scegliere uno **avviso** oppure **errore** per visualizzare solo i messaggi che vengono assegnati il rispettivo livello di gravità. Scegli **tutti** per visualizzare tutti i messaggi.
-
-
-
+3.  **Per filtrare gli avvisi per gravità**: Per impostazione predefinita, ai messaggi di analisi codice viene assegnato un livello di gravità **avviso**. È possibile assegnare la gravità di una o più messaggi come **errore** in una regola personalizzata impostata. Scegliere uno **avviso** oppure **errore** per visualizzare solo i messaggi che vengono assegnati il rispettivo livello di gravità. Scegli **tutti** per visualizzare tutti i messaggi.
