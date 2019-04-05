@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: creare una. File Vsct da un oggetto esistente. File CTC | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare una. File Vsct da un oggetto esistente. File CTC | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating based on a .ctc file
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969408"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare un file con estensione vsct da un file CTC esistente
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare una. File Vsct da un oggetto esistente. File CTC
 È possibile creare un file con estensione vsct basato su XML da un file di origine CTC esistente della tabella comandi. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Per creare un file con estensione vsct da un file CTC  
@@ -36,7 +31,7 @@ ms.locfileid: "49303485"
   
 5.  Nella finestra del prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spostarsi nella directory.  
   
-6.  Digitare  
+6.  Tipo  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
@@ -50,5 +45,5 @@ ms.locfileid: "49303485"
     >  È possibile migliorare la leggibilità del file con estensione vsct riformattando i commenti XML.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare una. File Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+ [Procedura: Creare una. File Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

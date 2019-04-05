@@ -1,11 +1,8 @@
 ---
 title: Creazione di un progetto di flusso di lavoro | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
@@ -15,13 +12,13 @@ ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236717"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58969579"
 ---
 # <a name="creating-a-workflow-project"></a>Creazione di un progetto flusso di lavoro
 Grazie ai modelli di progetto di [!INCLUDE[indigo1](../includes/indigo1-md.md)] è possibile creare flussi di lavoro, servizi flusso di lavoro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], attività personalizzate e ActivityDesigner personalizzati. Questa sezione descrive come creare librerie e applicazioni con i modelli di progetto disponibili in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -40,10 +37,10 @@ Grazie ai modelli di progetto di [!INCLUDE[indigo1](../includes/indigo1-md.md)] 
  [Procedura: Creare una libreria attività](../workflow-designer/how-to-create-an-activity-library.md)  
  Vengono descritti i passaggi necessari per creare una libreria attività in [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
   
- [Procedura: Creare una libreria Activity Designer](../workflow-designer/how-to-create-an-activity-designer-library.md)  
+ [Procedura: Creare una libreria ActivityDesigner](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  Viene descritto come creare finestre di progettazione personalizzate per più destinatari.  
   
- [Procedura: Aggiungere un nuovo elemento ad un progetto flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
+ [Procedura: Aggiungere un nuovo elemento a un progetto flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  Viene descritto come aggiungere a un progetto flusso di lavoro esistente ulteriori attività del flusso di lavoro o finestre di progettazione e altri elementi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quali le attività del codice.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
