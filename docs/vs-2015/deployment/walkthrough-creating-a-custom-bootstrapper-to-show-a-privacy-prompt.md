@@ -1,14 +1,9 @@
 ---
 title: "Procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare l'informativa sulla Privacy dei messaggi di richiesta | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967058"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare un Prompt di Privacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile configurare le applicazioni ClickOnce per l'aggiornamento automatico quando gli assembly con le versioni più recenti di file e delle versioni degli assembly saranno disponibili. Per assicurarsi che i clienti di consenso a questo comportamento, è possibile visualizzare un prompt di privacy a essi. Quindi, è possibile scegliere se concedere l'autorizzazione per l'applicazione per aggiornare automaticamente. Se l'applicazione non è consentita l'aggiornamento automatico, non viene installato.  
@@ -154,7 +149,7 @@ ms.locfileid: "49893392"
   
 -   Un documento per le condizioni di licenza software.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Passaggio 1: Creare la directory di avvio automatico  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Passaggio 1: Per creare la directory di avvio automatico  
   
 1.  Creare una directory denominata **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.  
   
@@ -166,7 +161,7 @@ ms.locfileid: "49893392"
     > [!NOTE]
     >  Creare una nuova directory per ciascuna lingua. Ad esempio, è possibile aggiungere le sottodirectory per le impostazioni locali de e fr. Queste directory conterrebbe il francese e tedesco stringhe e i language pack, se necessario.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Passaggio 2: Creare il file manifesto di Product. Xml  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Passaggio 2: Per creare il file manifesto di Product. Xml  
   
 1.  Creare un file di testo denominato `product.xml`.  
   
@@ -198,7 +193,7 @@ ms.locfileid: "49893392"
   
 3.  Salvare il file alla directory bootstrapper UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Passaggio 3: Creare il manifesto del package. XML file e il software di condizioni di licenza  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Passaggio 3: Per creare il file manifesto di package. XML e le condizioni di licenza software  
   
 1.  Creare un file di testo denominato `package.xml`.  
   
@@ -242,7 +237,7 @@ ms.locfileid: "49893392"
   
 1.  Nelle **Esplora soluzioni**, fare clic sul nome dell'applicazione che si desidera distribuire.  
   
-2.  Nel **Project** menu, fare clic su *NomeProgetto* **proprietà**.  
+2.  Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
   
 3.  Scegliere il **Publish** pagina e quindi fare clic su **prerequisiti**.  
   
@@ -260,7 +255,7 @@ ms.locfileid: "49893392"
   
 1.  Nelle **Esplora soluzioni**, fare clic sul nome dell'applicazione che si desidera distribuire.  
   
-2.  Nel **Project** menu, fare clic su *NomeProgetto* **proprietà**.  
+2.  Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
   
 3.  Fare clic sui **Publish** pagina e quindi fare clic su **pubblica**.  
   
@@ -272,13 +267,13 @@ ms.locfileid: "49893392"
   
 6.  Leggere il contratto di licenza software e quindi fare clic su **Accept**.  
   
-     L'applicazione di aggiornamento finestra di dialogo di consenso viene visualizzata e viene visualizzato il testo seguente: controlla l'applicazione che sta tentando di installare gli aggiornamenti più recenti sul Web. Facendo clic su accetto, si autorizza l'applicazione per cercare gli aggiornamenti automaticamente su Internet.  
+     L'applicazione di aggiornamento finestra di dialogo di consenso viene visualizzata e Mostra il testo seguente: L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su accetto, si autorizza l'applicazione per cercare gli aggiornamenti automaticamente su Internet.  
   
 7.  Chiudere l'applicazione o fare clic su Annulla.  
   
-     L'applicazione viene visualizzato un errore: si è verificato un errore durante l'installazione dei componenti di sistema per *ApplicationName*. Impossibile continuare fino a quando tutti i componenti di sistema sono stati installati correttamente.  
+     L'applicazione viene visualizzato un errore: Si è verificato un errore durante l'installazione dei componenti di sistema per *ApplicationName*. Impossibile continuare fino a quando tutti i componenti di sistema sono stati installati correttamente.  
   
-8.  Fare clic su Dettagli per visualizzare il seguente messaggio di errore: componente aggiornare dialogo di consenso non è riuscito a installare il seguente messaggio di errore: "il contratto per l'aggiornamento automatico non è accettato". Impossibile installare i componenti seguenti:-finestra di dialogo di consenso Update  
+8.  Fare clic su Dettagli per visualizzare il messaggio di errore seguente: Finestra di dialogo aggiornamento fornire il consenso del componente non è riuscita per l'installazione con il messaggio di errore seguente: "Il contratto per l'aggiornamento automatico non è accettato". Impossibile installare i componenti seguenti:-finestra di dialogo di consenso Update  
   
 9. Fare clic su **Chiudi**.  
   
@@ -286,7 +281,7 @@ ms.locfileid: "49893392"
   
 1.  Nelle **Esplora soluzioni**, fare clic sul nome dell'applicazione che si desidera distribuire.  
   
-2.  Nel **Project** menu, fare clic su *NomeProgetto* **proprietà**.  
+2.  Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
   
 3.  Fare clic sui **Publish** pagina e quindi fare clic su **pubblica**.  
   
@@ -298,7 +293,7 @@ ms.locfileid: "49893392"
   
 6.  Leggere il contratto di licenza software e quindi fare clic su **Accept**.  
   
-     L'applicazione di aggiornamento finestra di dialogo di consenso viene visualizzata e viene visualizzato il testo seguente: controlla l'applicazione che sta tentando di installare gli aggiornamenti più recenti sul Web. Facendo clic su accetto, si autorizza l'applicazione per cercare gli aggiornamenti automaticamente su Internet.  
+     L'applicazione di aggiornamento finestra di dialogo di consenso viene visualizzata e Mostra il testo seguente: L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su accetto, si autorizza l'applicazione per cercare gli aggiornamenti automaticamente su Internet.  
   
 7.  Fare clic su **accetto**, quindi fare clic su **procedi**.  
   
@@ -309,9 +304,6 @@ ms.locfileid: "49893392"
 ## <a name="see-also"></a>Vedere anche  
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)   
  [Creazione di pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md)   
- [Procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md)   
- [Procedura: creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)   
+ [Procedura: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md)   
+ [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)   
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
-
-
-

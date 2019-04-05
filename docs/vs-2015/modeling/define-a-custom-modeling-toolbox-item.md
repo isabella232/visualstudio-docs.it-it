@@ -1,25 +1,22 @@
 ---
 title: Definire una classe personalizzata elemento della casella degli strumenti di modellazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965478"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definire un elemento della casella degli strumenti di modellazione personalizzata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
 4.  Aggiungere le definizioni della casella degli strumenti al progetto. Includere il **con estensione tbxinfo** file, i file di diagramma, i file bitmap e qualsiasi file di risorse e assicurarsi che siano inclusi in VSIX.  
   
-    -   In Esplora soluzioni, nel menu di scelta rapida del progetto VSIX, scegliere **Add**, **elemento esistente**. Nella finestra di dialogo, impostare **gli oggetti di tipo: tutti i file**. Individuare i file, selezionarli tutti e quindi scegliere **Add**.  
+    -   In Esplora soluzioni, nel menu di scelta rapida del progetto VSIX, scegliere **Add**, **elemento esistente**. Nella finestra di dialogo, impostare **gli oggetti di tipo: Tutti i file**. Individuare i file, selezionarli tutti e quindi scegliere **Add**.  
   
         > [!NOTE]
         >  In questo progetto non è possibile aprire i file del diagramma nell'editor del modello.  
@@ -200,7 +197,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
      Nell'istanza sperimentale creare o aprire un diagramma UML del tipo pertinente. Verificare che venga visualizzato il nuovo strumento nella casella degli strumenti e che vengano creati correttamente gli elementi.  
   
-10. **Per ottenere un file VSIX per la distribuzione:** In Windows Explorer, aprire la cartella **.\bin\Debug** oppure **.\bin\Release** per trovare il **VSIX** file. Si tratta di un file di estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Può essere installato nel computer e inviato anche ad altri utenti di Visual Studio.  
+10. **Per ottenere un file VSIX per la distribuzione:** In Windows Explorer, aprire la cartella **.\bin\Debug** oppure **.\bin\Release** per trovare i **VSIX** file. Si tratta di un file di estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Può essere installato nel computer e inviato anche ad altri utenti di Visual Studio.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Per installare gli strumenti personalizzati da un'estensione di Visual Studio  
   
@@ -241,6 +238,3 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
  [Definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Debug del codice nativo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965975"
 ---
 # <a name="debugging-native-code"></a>Debug del codice nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +59,14 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
  [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)  
  Vengono fornite informazioni sul debug delle applicazioni COM e ActiveX, inclusi gli strumenti da utilizzare al riguardo.  
   
- [Procedura: Eseguire il debug di DLL native](../debugger/how-to-debug-native-dlls.md)  
+ [Procedura: Eseguire il debug di codice nativo](../debugger/how-to-debug-native-dlls.md)  
  Viene descritto come impostare il debug delle DLL dal codice nativo.  
   
  [Procedura: Eseguire il debug di codice inserito](../debugger/how-to-debug-injected-code.md)  
- Viene fornito materiale sussidiario sul debug del codice che utilizza gli attributi. Sono incluse istruzioni per l'attivazione del codice sorgente, la visualizzazione del codice inserito e del codice disassembly in corrispondenza del punto di esecuzione corrente.  
+ Vengono fornite indicazioni sul debug del codice che utilizza gli attributi. Sono incluse istruzioni per l'attivazione del codice sorgente, la visualizzazione del codice inserito e del codice disassembly in corrispondenza del punto di esecuzione corrente.  
   
- [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Viene descritto come utilizzare il **attività in parallelo** e **stack in parallelo** finestre degli strumenti di debug di un'applicazione parallela.  
+ [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -83,6 +78,3 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Editor dei colori VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ac81f039bf5357f9488aeba439c27814cdf7e3d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1a4f38224c31862f44e7d1d09578325ccc710bd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727606"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58967333"
 ---
 # <a name="vsix-color-editor"></a>Editor dei colori VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +28,13 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
  Un token di colore è costituito da quattro elementi:  
   
--   **Nome della categoria:** un raggruppamento logico per un set di colori. Usare un nome di categoria esistente se sono già presenti colori specifici per l'elemento dell'interfaccia utente desiderata, o il gruppo di elementi dell'interfaccia utente.  
+-   **Nome della categoria:** Un raggruppamento logico per un set di colori. Usare un nome di categoria esistente se sono già presenti colori specifici per l'elemento dell'interfaccia utente desiderata, o il gruppo di elementi dell'interfaccia utente.  
   
--   **Nome token:** un nome descrittivo per il token di colore e il set di token. Set includono sfondo e i nomi di token di primo piano (testo), nonché tutti i relativi stati e devono essere denominati in modo che risulti semplice identificare gli Stati che si applicano a e le coppie.  
+-   **Nome token:** Un nome descrittivo per il token di colore e il set di token. Set includono sfondo e i nomi di token di primo piano (testo), nonché tutti i relativi stati e devono essere denominati in modo che risulti semplice identificare gli Stati che si applicano a e le coppie.  
   
--   **Colore i valori (o scure):** necessari per ogni tema colorato. Creare sempre sfondo e testo i valori di colore in coppie. I colori vengono abbinati per sfondo/primo piano in modo che il colore del testo (primo piano) è sempre leggibile il colore di sfondo in cui disegnarlo. Tali colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non è previsto per l'uso con il testo, non si definisce un colore di primo piano.  
+-   **I valori di colore (o scure):** Necessaria per ogni tema colorato. Creare sempre sfondo e testo i valori di colore in coppie. I colori vengono abbinati per sfondo/primo piano in modo che il colore del testo (primo piano) è sempre leggibile il colore di sfondo in cui disegnarlo. Tali colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non è previsto per l'uso con il testo, non si definisce un colore di primo piano.  
   
--   **Nome di colore di sistema:** per l'uso nelle visualizzazioni a contrasto elevato.  
+-   **Nome di colore di sistema:** Per l'uso nelle visualizzazioni a contrasto elevato.  
   
 ## <a name="how-to-use-the-tool"></a>Come usare lo strumento  
  Quanto più possibile, e laddove appropriato, i colori di Visual Studio esistenti devono essere riutilizzati anziché lasciare che quelli nuovi. Tuttavia, per i casi in cui non sono definiti colori appropriati, colori personalizzati devono essere creati per mantenere un'applicazione di temi estensione compatibile.  
@@ -57,7 +53,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
 5. Testare le modifiche in Visual Studio.  
   
-   **Passaggio 1: Determinare la categoria e i nomi di token per il nuovo token di colore.**  
+   **Passaggio 1: Determinare i nomi di categoria e il token per il nuovo token di colore.**  
   
    La denominazione preferita schema per è un VSColor **[Category] [tipo di interfaccia utente] [stato]**. Non usare la parola "color" nei nomi VSColor, perché è ridondante.  
   
@@ -71,7 +67,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
 - Attivo  
   
-- inattivo  
+- Inattivo  
   
 - MouseOver  
   
@@ -129,7 +125,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
   
   Per i componenti che non sono necessario per visualizzare il testo, immettere il valore di un solo colore: il colore di sfondo. In caso contrario, immettere i valori per il colore di sfondo e di testo, separato da una barra rovesciata.  
   
-  Quando si immettono valori per il contrasto elevato, immettere i nomi dei colori di sistema Windows validi. Non immettere valori ARGB hardcoded. È possibile visualizzare un elenco di nomi di colori di sistema valido selezionando "Sfondo: sistema" o "In primo piano: sistema" dai menu a discesa valore colore. Durante la creazione di elementi che contengono componenti di testo, usare la coppia di colore di sistema in background/testo corretto o potrebbe essere Impossibile leggere il testo.  
+  Quando si immettono valori per il contrasto elevato, immettere i nomi dei colori di sistema Windows validi. Non immettere valori ARGB hardcoded. È possibile visualizzare un elenco di nomi di colori di sistema valido selezionando "in Background: System"o" in primo piano: Sistema"dai menu a discesa valore colore. Durante la creazione di elementi che contengono componenti di testo, usare la coppia di colore di sistema in background/testo corretto o potrebbe essere Impossibile leggere il testo.  
   
   Dopo la creazione, l'impostazione e modifica i token di colore, salvarle nel formato con estensione pkgdef o. XML desiderato. I token di colore con uno sfondo a nessuno dei due né un set di primo piano verrà salvato come colori vuoti in formato XML, ma eliminato, con formato con estensione pkgdef. Una finestra di dialogo avviserà l'utente della potenziale perdita di colore se si prova a salvare colori vuoti in un file con estensione pkgdef.  
   
@@ -297,4 +293,3 @@ namespace MyNamespace
   <Color x:Key="{x:Static colors:MyColors.ColorName4TextColorKey}" A="255" R="255" G="255" B="255" />  
 </ResourceDictionary>  
 ```
-

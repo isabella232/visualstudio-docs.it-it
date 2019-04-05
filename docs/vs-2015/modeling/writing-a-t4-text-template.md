@@ -1,12 +1,9 @@
 ---
 title: Scrittura di un modello di testo T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897797"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966353"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- Si noti che il simbolo di apertura contiene tre caratteri "<#=".  
+ Si noti che il simbolo di apertura contiene tre caratteri "< #=".  
   
  L'espressione può includere qualsiasi variabile che fa parte dell'ambito. Ad esempio, il blocco seguente visualizza righe con numeri:  
   
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- È anche possibile ottenere altri servizi forniti dall'host. Per altre informazioni, vedere [l'accesso a Visual Studio o altri host da un modello](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ È anche possibile ottenere altri servizi forniti dall'host. Per altre informazioni, vedere [l'accesso a Visual Studio o altri host da un modello](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelli di testo della fase di progettazione eseguiti in un AppDomain separato  
  È necessario essere consapevoli che un [modello di testo in fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md) viene eseguito in un AppDomain separato dall'applicazione principale. Nella maggior parte dei casi tale aspetto non è importante, ma in determinati casi complessi potrebbero verificarsi delle restrizioni. Se ad esempio si desidera passare i dati all'intero o all'esterno del modello da un servizio separato, il servizio deve fornire un'API serializzabile.  
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |Eseguire la generazione di testo all'esterno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Trasformare i dati nel formato di un linguaggio specifico di dominio.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Scrivere processori di direttive per trasformare le origini dati.|[Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)|
-
-
-

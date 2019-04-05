@@ -1,14 +1,9 @@
 ---
 title: 'CA1030: Utilizzare eventi dove appropriato | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870133"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58967348"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizzare eventi dove appropriato
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usare eventi dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +35,7 @@ ms.locfileid: "49870133"
 ## <a name="cause"></a>Causa
  Nome di un metodo pubblico, protetto o privato inizia con uno dei seguenti:
 
--   Componente aggiuntivo
+-   AddOn
 
 -   RemoveOn
 
@@ -58,6 +53,3 @@ ms.locfileid: "49870133"
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Eliminare un avviso da questa regola se il metodo non funziona con il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modello di eventi.
-
-
-

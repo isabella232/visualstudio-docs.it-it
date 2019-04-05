@@ -1,12 +1,9 @@
 ---
 title: Creare un database SQL usando uno script | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966054"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Creare un database SQL usando uno script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -276,4 +273,3 @@ In questa procedura dettagliata, si usa Visual Studio per creare un database di 
   
 ##  <a name="DeployDatabase"></a> Distribuire il database  
  Quando si preme il **F5** chiave, si distribuisce (o si pubblica) del database in un database LocalDB per impostazione predefinita. È possibile distribuire il database in una posizione diversa, aprire la pagina delle proprietà per il progetto, selezionare la **Debug** scheda e quindi modificando la stringa di connessione.
-

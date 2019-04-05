@@ -1,28 +1,23 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione degli smart tag | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967396"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Procedura dettagliata: Visualizzazione degli smart tag
-Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere [Procedura dettagliata: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Gli smart tag sono tag sul testo che si espandono per visualizzare un set di azioni. Ad esempio, in un progetto di Visual Basic o Visual C# viene visualizzata una linea rossa sotto una parola quando si rinomina un identificatore, come un nome di variabile. Quando si sposta il puntatore del mouse sulla sottolineatura, viene visualizzato un pulsante accanto al puntatore. Se si fa clic sul pulsante, viene visualizzata un'azione consigliata, ad esempio la ridenominazione di **IsRead in IsReady**. Se si fa clic sull'azione, tutti i riferimenti a **IsRead** nel progetto vengono rinominati in **IsReady**.  
   
@@ -31,7 +26,7 @@ Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere 
 > [!NOTE]
 >  Altri tipi di tag possono essere implementati in modo simile.  
   
- La procedura dettagliata seguente mostra come creare uno smart tag da visualizzare sulla parola corrente, contenente due azioni consigliate: la **conversione in maiuscole** e la **conversione in minuscole**.  
+ Procedura dettagliata illustra come creare uno smart tag che viene visualizzato sulla parola corrente e ha due azioni consigliate: **Converti in maiuscolo** e **Convert in lettere minuscole**.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -90,7 +85,7 @@ Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere 
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implementare <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> in modo da creare il tag per la parola corrente. Questo metodo chiama anche un metodo privato `GetSmartTagActions`, che viene descritto più avanti.  
+8.  Implementare <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> in modo da creare il tag per la parola corrente. Questo metodo chiama anche un metodo privato `GetSmartTagActions` , che viene descritto più avanti.  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -100,7 +95,7 @@ Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere 
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Dichiarare l'evento `SmartTagsChanged`.  
+10. Dichiarare l'evento `SmartTagsChanged` .  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
@@ -185,7 +180,7 @@ Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere 
   
      Accanto al puntatore dovrebbe essere visualizzato un pulsante.  
   
-5.  Quando si fa clic sul pulsante, dovrebbero essere visualizzate due azioni consigliate, ovvero la **conversione in maiuscole** e la **conversione in minuscole**. Se si fa clic sulla prima azione, tutto il testo nella parola corrente verrà convertito in maiuscole. Se si fa clic sulla seconda azione, tutto il testo nella parola corrente verrà convertito in minuscole.  
+5.  Quando si fa clic sul pulsante, dovrebbero essere visualizzate due azioni consigliate: **Converti in maiuscolo** e **Convert in lettere minuscole**. Se si fa clic sulla prima azione, tutto il testo nella parola corrente verrà convertito in maiuscole. Se si fa clic sulla seconda azione, tutto il testo nella parola corrente verrà convertito in minuscole.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

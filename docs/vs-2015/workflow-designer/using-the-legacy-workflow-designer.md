@@ -1,11 +1,8 @@
 ---
 title: Usando la finestra di progettazione del flusso di lavoro Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio 2005 Extensions for Windows Workflow Foundation, about
@@ -13,13 +10,13 @@ ms.assetid: 7af53077-afd7-465f-9c1d-b387e9d4f216
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 012be918b415d863d9f3b2c08fdd1e0636a5da5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 899f0b81055f67c323c2efb60a07280368dad321
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965899"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro legacy
 La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -32,7 +29,7 @@ La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](
   
 |Funzionalità|Descrizione|  
 |-------------|-----------------|  
-|Attività di trascinamento e rilascio|Trascinare le attività eseguite dal **casella degli strumenti** nell'area di progettazione per creare un flusso di lavoro.|  
+|Attività di trascinamento della selezione|Trascinare le attività eseguite dal **casella degli strumenti** nell'area di progettazione per creare un flusso di lavoro.|  
 |Visualizzatore proprietà|Lo standard **delle proprietà** finestra in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di configurare le proprietà di un'attività.|  
 |Zoom|A forma di binocolo **a livello di Zoom** icona si trova sotto la barra di scorrimento verticale sul lato destro dell'area di progettazione. Fare clic sul binocolo e selezionare una percentuale dello zoom per eseguire lo zoom dell'elemento grafico del flusso di lavoro avanti e indietro. È anche possibile usare la **Pan** le opzioni del cursore sull'icona della lente di ingrandimento per fare zoom avanti e indietro.|  
 |Dettaglio|Il **Pan** icona, un cerchio contenente quattro frecce incrociate che puntano in quattro direzioni, si trova sotto la barra di scorrimento verticale sul lato destro dell'area di progettazione sotto l'icona dello zoom a forma di binocolo. Facendo clic sull'icona di panoramica, le opzioni del cursore seguenti verranno offerte da un menu a comparsa:<br /><br /> -il **zoom avanti** lente di ingrandimento cursore consente di eseguire lo zoom avanti facendo clic nell'area di progettazione.<br />-il **Zoom indietro** lente di ingrandimento cursore consente di ingrandire indietro facendo l'area di progettazione.<br />-il **strumento di navigazione** cursore mano ti permette di "Scarica" e spostare la visualizzazione di un flusso di lavoro nell'area di progettazione.<br />-il **predefinito** cursore a freccia consente di tornare dagli altri cursori al cursore della freccia predefinito.|  

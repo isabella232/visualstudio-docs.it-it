@@ -1,11 +1,8 @@
 ---
 title: Activity Designer Confirm | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
@@ -13,13 +10,13 @@ ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: df1943314163ab71925620a2f8a2f8431a8033d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 29635044eb4cca558d631ab959b1b4f5480dbdbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967237"
 ---
 # <a name="confirm-activity-designer"></a>ActivityDesigner Confirm
 Il **Confirm** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Confirm> attività.  
@@ -35,7 +32,7 @@ Il **Confirm** ActivityDesigner viene utilizzato per creare e configurare un <xr
  Il **Confirm** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../includes/wfd2-md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. In questo modo viene creata un'attività <xref:System.Activities.Statements.Confirm> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Confirm. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione del **Confirm** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.  
   
 ### <a name="the-confirm-properties"></a>Proprietà di Confirm  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Confirm> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. La proprietà <xref:System.Activities.Activity.DisplayName%2A> può essere modificata nella griglia delle proprietà o nell'area di [!INCLUDE[wfd2](../includes/wfd2-md.md)], mentre la proprietà <xref:System.Activities.Statements.Confirm.Target%2A> deve essere modificata nella griglia delle proprietà.  
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Confirm> e ne viene descritta la modalità di uso nella finestra di progettazione. La proprietà <xref:System.Activities.Activity.DisplayName%2A> può essere modificata nella griglia delle proprietà o nell'area di [!INCLUDE[wfd2](../includes/wfd2-md.md)], mentre la proprietà <xref:System.Activities.Statements.Confirm.Target%2A> deve essere modificata nella griglia delle proprietà.  
   
 |Nome proprietà|Obbligatorio|Utilizzo|  
 |-------------------|--------------|-----------|  
@@ -44,7 +41,7 @@ Il **Confirm** ActivityDesigner viene utilizzato per creare e configurare un <xr
   
 ## <a name="see-also"></a>Vedere anche  
  [Transazione](../workflow-designer/transaction-activity-designers.md)   
- [Dell'attività CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
+ [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
  [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
  [Compensare](../workflow-designer/compensate-activity-designer.md)   
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

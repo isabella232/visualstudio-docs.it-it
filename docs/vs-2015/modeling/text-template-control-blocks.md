@@ -1,25 +1,22 @@
 ---
 title: Blocchi di controllo di modello di testo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967588"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -176,6 +173,3 @@ Some text.
     ```  
   
 -   **Il refactoring.** Per garantire la brevità e la comprensibilità dei modelli di testo, è consigliabile evitare di usare codice ripetitivo eseguendo il factoring del codice riutilizzabile all'interno di funzioni di supporto nei blocchi della funzionalità di classe o creando una classe di modello di testo personale che eredita dalla classe Microsoft.VisualStudio.TextTemplating.TextTransformation.
-
-
-

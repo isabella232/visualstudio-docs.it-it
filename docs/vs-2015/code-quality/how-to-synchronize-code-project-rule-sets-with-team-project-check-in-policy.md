@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: sincronizzare set di regole di progetto di codice con i criteri di controllo del progetto Team | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Sincronizzare i set di regole di progetto di codice con i criteri di controllo del progetto Team | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965690"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Procedura: Sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specificando un set di regole che contiene almeno le regole specificate nel set di regole per i criteri di controllo è sincronizzare le impostazioni di analisi codice per progetti di codice per i criteri di controllo per il progetto team. Il responsabile per gli sviluppatori può dare è il nome e la posizione del set di regole per i criteri di controllo. Assicurarsi che l'analisi del codice per il progetto usi il set di regole corretto, è possibile usare una delle opzioni seguenti:  
@@ -60,7 +55,7 @@ Specificando un set di regole che contiene almeno le regole specificate nel set 
   
 1.  Seguire una delle procedure riportate in precedenza in questo argomento per selezionare i criteri di controllo del progetto team nella pagina analisi del codice della finestra di dialogo Impostazioni di progetto.  
   
-2.  Fare clic su **aperto**.  
+2.  Fare clic su **Apri**.  
   
 3.  Aggiungere o rimuovere le regole utilizzando l'editor set di regole.  
   
@@ -73,6 +68,3 @@ Specificando un set di regole che contiene almeno le regole specificate nel set 
 6.  Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >**.  
   
 7.  Nel **aperto** finestra di dialogo, specificare il set di regole file.
-
-
-

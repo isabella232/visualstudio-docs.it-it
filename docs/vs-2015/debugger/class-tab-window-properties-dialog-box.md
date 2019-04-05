@@ -1,27 +1,22 @@
 ---
 title: Scheda classe, finestra di dialogo Proprietà finestra | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eba6a12714c1b4f58ae9d6bb17f696c3c452411
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a7f81a100b2c2311444732434df0f5c5599742a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965846"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Scheda Classe, finestra di dialogo Proprietà finestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +28,13 @@ Usare la **classe** pressione di tab per visualizzare informazioni sulla classe 
 |Voce|Descrizione|  
 |-----------|-----------------|  
 |**Nome di classe**|Il nome (o numero ordinale) di questa classe di finestra.|  
-|**Stili delle classi**|Una combinazione dei codici di stile di classe.|  
+|**Stili classe**|Una combinazione dei codici di stile di classe.|  
 |**Byte classe**|Dati specifici dell'applicazione associati a questa classe della finestra.|  
-|**Classe Atom**|Il formato atom per la classe restituita dal **RegisterClass** chiamare.|  
-|**Handle di istanza**|L'handle di istanza del modulo che ha registrato la classe. Gli handle di istanza non sono univoci.|  
+|**Atomo classe**|Il formato atom per la classe restituita dal **RegisterClass** chiamare.|  
+|**Handle istanza**|L'handle di istanza del modulo che ha registrato la classe. Gli handle di istanza non sono univoci.|  
 |**Byte finestra**|Il numero di byte aggiuntivi associati a ogni finestra di questa classe. Il significato di questi byte è determinato dall'applicazione. Espandere la casella di riepilogo per visualizzare i valori di byte in formato DWORD.|  
 |**Routine finestra**|L'indirizzo corrente del **WndProc** funzione per le finestre di questa classe. Questo comportamento è diverso da **Window Proc** nel **generali** scheda se la finestra è una sottoclasse.|  
-|**Nome del menu**|Il nome del menu principale di cui è associato alle finestre di questa classe ("none" Se non vi è alcun menu).|  
-|**Handle dell'icona**|L'handle per l'icona associata a windows di questa classe ("none" Se non è presente alcuna icona).|  
-|**Handle del cursore**|L'handle per il cursore tramite cui è associato alle finestre di questa classe ("none" se vi è alcun cursore).|  
+|**Nome menu**|Il nome del menu principale di cui è associato alle finestre di questa classe ("none" Se non vi è alcun menu).|  
+|**Handle icona**|L'handle per l'icona associata a windows di questa classe ("none" Se non è presente alcuna icona).|  
+|**Handle cursore**|L'handle per il cursore tramite cui è associato alle finestre di questa classe ("none" se vi è alcun cursore).|  
 |**Riempimento sfondo**|L'handle per il pennello di sfondo associata a windows di questa classe o uno dei colori predefiniti Color _ * per disegnare lo sfondo della finestra ("none" se è presente Nessun pennello).|
-
-
-

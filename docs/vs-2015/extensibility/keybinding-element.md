@@ -1,27 +1,22 @@
 ---
 title: Elemento KeyBinding | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966630"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +42,9 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 |ID|Obbligatorio.|  
 |editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale sarà attiva questo tasto di scelta rapida. Il valore dell'ambito dell'associazione globale è "guidVSStd97".|  
 |key1|Obbligatorio. I valori validi includono tutti i caratteri alfanumerici possibile digitare e inoltre valori esadecimali a due cifre preceduti da 0 x e VK_constants.|  
-|MOD1|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
+|mod1|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
 |key2|Facoltativo. I valori validi includono tutti i caratteri alfanumerici possibile digitare e inoltre valori esadecimali a due cifre preceduti da 0 x e VK_constants.|  
-|MOD2|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
+|mod2|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
 |Emulatore|Facoltativo.|  
 |Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -80,4 +75,3 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 ## <a name="see-also"></a>Vedere anche  
  [Elemento KeyBindings](../extensibility/keybindings-element.md)   
  [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

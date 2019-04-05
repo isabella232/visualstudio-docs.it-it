@@ -1,14 +1,9 @@
 ---
 title: '&lt;trustInfo&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965386"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -158,7 +153,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
   
      `requireAdministrator`, vengono richieste autorizzazioni di amministrazione complete.  
   
-     Le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verranno installate solo con un valore `asInvoker`. L'installazione con qualsiasi altro valore avrà esito negativo.  
+     Le applicazioni[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verranno installate solo con un valore `asInvoker`. L'installazione con qualsiasi altro valore avrà esito negativo.  
   
 -   `uiAccess`  
   
@@ -172,7 +167,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
  Per altre informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Esempi  
- I seguenti tre esempi di codice descrivono gli elementi `trustInfo` per le aree di sicurezza denominate predefinite, ovvero Internet, LocalIntranet e FullTrust, per l'uso in un manifesto dell'applicazione di distribuzione di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ I seguenti tre esempi di codice descrivono gli elementi `trustInfo` per le aree di sicurezza denominate predefinite, ovvero Internet, LocalIntranet e FullTrust, per l'uso in un manifesto dell'applicazione di distribuzione di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
  Il primo esempio descrive l'elemento `trustInfo` per le autorizzazioni predefinite disponibili nell'area di sicurezza Internet.  
   
@@ -278,6 +273,3 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 ## <a name="see-also"></a>Vedere anche  
  [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

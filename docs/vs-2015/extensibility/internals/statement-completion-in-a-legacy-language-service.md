@@ -1,34 +1,29 @@
 ---
 title: Completamento delle istruzioni in un servizio di linguaggio Legacy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967067"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Completamento delle istruzioni in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Completamento delle istruzioni è il processo mediante il quale il servizio di linguaggio consente agli utenti di completare una parola chiave del linguaggio o l'elemento che è stato avviato la digitazione nell'editor principale. Questo argomento illustra come funziona il completamento delle istruzioni e come implementarlo nel servizio di linguaggio.  
   
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare il completamento delle istruzioni, vedere [procedura dettagliata: visualizzazione di completamento delle istruzioni](../../extensibility/walkthrough-displaying-statement-completion.md).  
+ Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare il completamento delle istruzioni, vedere [procedura dettagliata: Visualizzazione del completamento istruzioni](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
 >  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
@@ -45,4 +40,3 @@ Completamento delle istruzioni è il processo mediante il quale il servizio di l
   
 ## <a name="see-also"></a>Vedere anche  
  [Intercettazione dei comandi dei servizi di linguaggio legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

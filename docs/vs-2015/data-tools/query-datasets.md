@@ -1,22 +1,20 @@
 ---
 title: Eseguire query sui set di dati | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890569"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965627"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Record Accessrelated  
+## <a name="access-related-records"></a>Accesso per i record correlati.  
  Quando le tabelle in un set di dati sono correlate, un <xref:System.Data.DataRelation> oggetto può rendere i record correlati disponibili in un'altra tabella. Ad esempio, un set di dati che contiene `Customers` e `Orders` tabelle possono essere rese disponibili.  
   
  È possibile usare una <xref:System.Data.DataRelation> oggetto da individuare i record correlati chiamando il <xref:System.Data.DataRow.GetChildRows%2A> metodo di un <xref:System.Data.DataRow> nella tabella padre. Questo metodo restituisce una matrice di record figlio correlati. Oppure è possibile chiamare il <xref:System.Data.DataRow.GetParentRow%2A> metodo di un <xref:System.Data.DataRow> nella tabella figlio. Questo metodo restituisce un singolo <xref:System.Data.DataRow> dalla tabella padre.  
@@ -71,7 +69,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
  Questa pagina fornisce esempi che usano i dataset tipizzati. Per informazioni sull'esplorazione di relazioni nei dataset non tipizzati, vedere [esplorazione oggetti DataRelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Se si lavora in un'applicazione Windows Form e utilizza le funzionalità di data binding per visualizzare i dati, il modulo generato da progettazione potrebbe essere fornite funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere[procedura: visualizzare dati correlati in una Windows Forms Application](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) e [procedura dettagliata: visualizzazione di dati correlati in un Windows Form](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Se si lavora in un'applicazione Windows Form e utilizza le funzionalità di data binding per visualizzare i dati, il modulo generato da progettazione potrebbe essere fornite funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Gli esempi di codice seguenti illustrano come spostarsi su e giù relazioni nei dataset tipizzato. L'uso di esempi di codice tipizzato <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e generato `FindBy` *PrimaryKey* (`FindByCustomerID`) i metodi per individuare una riga desiderata e restituire i record correlati. Gli esempi compilati ed eseguiti correttamente solo se è necessario:  
   
@@ -81,7 +79,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
 - Una relazione denominata `FK_Orders_Customers`collega le due tabelle disponibili per l'ambito del codice  
   
-  Inoltre, entrambe le tabelle devono essere occupata dai dati per tutti i record da restituire.  
+Inoltre, entrambe le tabelle devono essere occupata dai dati per tutti i record da restituire.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Per restituire i record di un record padre selezionato figlio  
   
@@ -96,4 +94,3 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

@@ -1,26 +1,21 @@
 ---
 title: Aggiunta di un attributo a un elemento di progetto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 03faec8cdb79dcaf8bc074328da84af77d1cb17c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b4ceb80a76843de8eb0fc42c7212e5fbecb330c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965651"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Aggiunta di un attributo a un elemento di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ I metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetI
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvataggio permanente dei dati nel file di progetto MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
-

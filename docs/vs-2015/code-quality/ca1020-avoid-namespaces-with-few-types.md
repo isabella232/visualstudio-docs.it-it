@@ -1,14 +1,9 @@
 ---
 title: 'CA1020: Evitare gli spazi dei nomi con alcuni tipi | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1020
 - AvoidNamespacesWithFewTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6663660319791f1e81d0ed89f171c929c3e50725
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 338bc8ff9d7bc273898e57650971607f944b4feb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968035"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare l'utilizzo di spazi dei nomi con un numero ridotto di tipi
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare l'uso di spazi dei nomi con un numero ridotto di tipi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,6 +46,3 @@ ms.locfileid: "49906182"
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola quando lo spazio dei nomi non contiene tipi che vengono usati con i tipi di spazi dei nomi.
-
-
-

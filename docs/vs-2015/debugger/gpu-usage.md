@@ -1,25 +1,20 @@
 ---
 title: Utilizzo GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965647"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +94,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
 |--------------------|-----------------|  
 |**Processo**|Nome del processo a cui si è interessati. Questo elenco a discesa contiene tutti i processi che hanno utilizzato la GPU durante la sessione di diagnostica. Il colore associato al processo nell'elenco a discesa è il colore dell'attività del thread nelle sequenze temporali successive.|  
 |**Thread**|ID del thread a cui si è interessati. In un'app multithread, questo consente di isolare gli specifici thread che appartengono al processo a cui si è interessati. Gli eventi associati al thread selezionato sono evidenziati in ogni sequenza temporale.|  
-|**Schermo**|Numero dello schermo di cui è visualizzata la frequenza di aggiornamento **Nota:** alcuni driver possono essere configurati in modo da presentare più schermi fisici come un unico schermo virtuale di grandi dimensioni. È possibile che nell'elenco sia presente un solo schermo, anche se al computer sono collegati più schermi.|  
+|**Schermo**|Numero dello schermo di cui viene visualizzata la frequenza di aggiornamento **Nota:**  Alcuni driver possono essere configurati in modo da presentare più schermi fisici come un unico schermo virtuale di grandi dimensioni. È possibile che nell'elenco sia presente un solo schermo, anche se al computer sono collegati più schermi.|  
 |**Filtro**|Parole chiave a cui si è interessati. Nella parte inferiore del report saranno visualizzati solo gli eventi che corrispondono completamente o parzialmente a una parola chiave. È possibile specificare più parole chiave separandole con un punto e virgola (;).|  
 |**Hierarchy Sort** (Ordinamento gerarchia)|Casella di controllo che indica se le gerarchie degli eventi, definite mediante marcatori utente, vengono mantenute o ignorate.|  
   
@@ -155,6 +150,3 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
 -   [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx) (Strumento Utilizzo GPU in Visual Studio 2013 Update 4 CTP1)  
   
 -   [GPU Usage for DirectX in Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx) (Utilizzo GPU per DirectX in Visual Studio)
-
-
-

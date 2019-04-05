@@ -1,32 +1,29 @@
 ---
 title: Informazioni sul codice DSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966607"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questa API è definita nel codice generato dalla definizione DSL. Questo argomento descrive l'API generata.  
   
-## <a name="the-example-solution-component-diagrams"></a>Soluzione di esempio: Diagrammi componente  
+## <a name="the-example-solution-component-diagrams"></a>La soluzione di esempio: Diagrammi dei componenti  
  Per creare la soluzione che rappresenta l'origine della maggior parte degli esempi in questo argomento, creare un DSL dal **modelli componente** modello di soluzione. che è uno dei modelli standard visualizzati quando si crea una nuova soluzione DSL.  
   
 > [!NOTE]
@@ -63,15 +60,15 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 ## <a name="generated-files-in-dsl"></a>File generati in DSL  
  I seguenti file generati vengono visualizzati nei **Dsl** progetto.  
   
- *Dslutente* `Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
- Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato per la compilazione (**bin**) directory. Quando si installa il linguaggio DSL, è possibile copiare questo file per **\Programmi\Microsoft Visual Studio 11.0\Xml\Schemas** in modo che i file di modello possono essere convalidati. Per altre informazioni, vedere [distribuzione di soluzioni Domain-Specific Language](../modeling/deploying-domain-specific-language-solutions.md).  
+ Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato per la compilazione (**bin**) directory. Quando si installa il linguaggio DSL, è possibile copiare questo file per **\Programmi\Microsoft Visual Studio 11.0\Xml\Schemas** in modo che i file di modello possono essere convalidati. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
  Se si personalizza la serializzazione impostando le opzioni in Esplora DSL, lo schema cambierà di conseguenza. Se, tuttavia, si scrive il proprio codice di serializzazione, questo file potrebbe non rappresentare più lo schema effettivo. Per altre informazioni, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
  `ConnectionBuilders.cs`  
   
- Un generatore di connessioni è una classe che crea relazioni. È il codice associato a uno strumento di connessione. Questo file contiene una coppia di classi per ogni strumento di connessione. I nomi sono derivati dai nomi dello strumento di connessione e di relazione di dominio: *relazione*generatore, e *Strumentoconnettore*ConnectAction.  
+ Un generatore di connessioni è una classe che crea relazioni. È il codice associato a uno strumento di connessione. Questo file contiene una coppia di classi per ogni strumento di connessione. I nomi sono derivati dai nomi dello strumento di connessione e di relazione di dominio: *Relazione*generatore, e *Strumentoconnettore*ConnectAction.  
   
  Nell'esempio di soluzione componente, uno dei generatori di connessione si chiama ConnectionBuilder, ma è una coincidenza, perché la relazione di dominio è denominata Connection.  
   
@@ -138,13 +135,13 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 > [!NOTE]
 >  È diversa dalla classe radice del modello.  
   
- Le chiusure di copie ed eliminazioni definiscono quali altri elementi devono essere inclusi quando un elemento viene copiato o eliminato. È possibile controllare questo comportamento impostando il **propaga copia** e **Propaga eliminazione** proprietà dei ruoli su ciascun lato di ogni relazione. Per determinare i valori in modo dinamico, è possibile scrivere codice per eseguire l'override dei metodi delle classi delle chiusure. Per altre informazioni, vedere [procedura: programmare il copia e Incolla Behavior - reindirizzamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
+ Le chiusure di copie ed eliminazioni definiscono quali altri elementi devono essere inclusi quando un elemento viene copiato o eliminato. È possibile controllare questo comportamento impostando il **propaga copia** e **Propaga eliminazione** proprietà dei ruoli su ciascun lato di ogni relazione. Per determinare i valori in modo dinamico, è possibile scrivere codice per eseguire l'override dei metodi delle classi delle chiusure. Per altre informazioni, vedere [Procedura: Copia e Incolla il comportamento del programma: reindirizzamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
  `DomainModelResx.resx`  
   
  Contiene stringhe come le descrizioni delle classi di dominio e delle proprietà, i nomi delle proprietà, le etichette delle caselle degli strumenti, i messaggi di errore standard e altre stringhe che possono essere visualizzate per l'utente. Contiene anche le icone degli strumenti e le immagini per le forme immagine.  
   
- Questo file è associato all'assembly compilato e contiene i valori predefiniti di queste risorse. È possibile localizzare il linguaggio DSL creando un assembly satellite contenente una versione localizzata delle risorse, che verrà usata quando il linguaggio DSL verrà installato in impostazioni cultura corrispondenti alle risorse localizzate. Per altre informazioni, vedere [distribuzione di soluzioni Domain-Specific Language](../modeling/deploying-domain-specific-language-solutions.md).  
+ Questo file è associato all'assembly compilato e contiene i valori predefiniti di queste risorse. È possibile localizzare il linguaggio DSL creando un assembly satellite contenente una versione localizzata delle risorse, che verrà usata quando il linguaggio DSL verrà installato in impostazioni cultura corrispondenti alle risorse localizzate. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
  `DomainRelationships.cs`  
   
@@ -349,13 +346,10 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e verificare che il **Includi in VSIX** è di proprietà `True`.  
   
- Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [distribuzione di soluzioni Domain-Specific Language](../modeling/deploying-domain-specific-language-solutions.md).  
+ Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)   
  [Personalizzazione ed estensione di un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

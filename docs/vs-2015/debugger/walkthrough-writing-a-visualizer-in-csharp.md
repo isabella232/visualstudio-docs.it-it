@@ -1,14 +1,9 @@
 ---
-title: 'Procedura dettagliata: Scrittura di un visualizzatore in c# | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Scrittura di un visualizzatore in C# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e265810e30423064e27b1650f57fb054743341ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a179ae7fbfc0a947725bf47a2e2c86187e0adebd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817334"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966685"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: Scrittura di un visualizzatore in C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa procedura dettagliata illustra come scrivere un visualizzatore semplice usando c#. Il visualizzatore che verrà creato in questa procedura dettagliata consente di visualizzare il contenuto di una stringa usando una finestra di messaggio Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile di per sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
+In questa procedura dettagliata viene descritto come usare C# per creare un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile di per sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, vedere il **strumenti** menu e scegliere **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, vedere il **strumenti** menu e scegliere **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. Pertanto, il primo passaggio consiste nel creare un progetto libreria di classi per la DLL.  
   
@@ -47,11 +42,11 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
   
 3. Nel **modelli** , scegliere **libreria di classi**.  
   
-4. Nel **nome** , digitare un nome appropriato per la libreria di classi, ad esempio MyFirstVisualizer.  
+4. Nella casella **Nome** digitare un nome appropriato per la libreria di classi, ad esempio MyFirstVisualizer.  
   
 5. Fare clic su **OK**.  
   
-   Dopo aver creato la libreria di classi, è necessario aggiungere un riferimento a DebuggerVisualizers in modo che è possibile usare le classi definite non esiste. Prima di aggiungere il riferimento, tuttavia, è necessario rinominare alcune classi in modo che abbiano nomi significativi.  
+   Dopo avere creato la libreria di classi, è necessario aggiungere un riferimento a Microsoft.VisualStudio.DebuggerVisualizers.DLL in modo da poter usare le classi definite in questa DLL. Prima di aggiungere il riferimento, tuttavia, è necessario rinominare alcune classi in modo che abbiano nomi significativi.  
   
 #### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Per rinominare Class1.cs e aggiungere DebuggerVisualizers  
   
@@ -74,7 +69,7 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
    using Microsoft.VisualStudio.DebuggerVisualizers;  
    ```  
   
-   A questo punto si è pronti per creare il codice del lato debugger. Questo codice verrà eseguito all'interno del debugger per visualizzare le informazioni desiderate. In primo luogo, è necessario modificare la dichiarazione del `DebuggerSide` in modo che eredita dalla classe di base dell'oggetto `DialogDebuggerVisualizer`.  
+   A questo punto è possibile creare il codice sul lato debugger. Questo codice verrà eseguito all'interno del debugger per visualizzare le informazioni desiderate. In primo luogo, è necessario modificare la dichiarazione del `DebuggerSide` in modo che eredita dalla classe di base dell'oggetto `DialogDebuggerVisualizer`.  
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>Per ereditare da DialogDebuggerVisualizer  
   
@@ -90,11 +85,11 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
    public class DebuggerSide : DialogDebuggerVisualizer  
    ```  
   
-   `DialogDebuggerVisualizer` dispone di un metodo astratto (`Show`) che è necessario eseguire l'override.  
+   `DialogDebuggerVisualizer` ha un solo metodo astratto, `Show`, di cui è necessario eseguire l'override.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Per eseguire l'override del metodo DialogDebuggerVisualizer.Show  
   
-- Nelle `public class DebuggerSide`, aggiungere il codice seguente **metodo:**  
+- In `public class DebuggerSide` aggiungere il seguente **metodo:**  
   
   ```  
   override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
@@ -102,7 +97,7 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
   }  
   ```  
   
-  Il `Show` metodo contiene il codice che effettivamente crea la finestra di dialogo Visualizzatore o un'altra interfaccia utente e visualizza le informazioni che sono state passate al visualizzatore dal debugger. Questo codice deve essere aggiunto dallo sviluppatore. In questa procedura dettagliata, si eseguirà questo usando una finestra di messaggio Windows Form. In primo luogo, è necessario aggiungere un riferimento e `using` informativa per System.  
+  Il metodo `Show` contiene il codice per la creazione della finestra di dialogo del visualizzatore o un'altra interfaccia utente e per la visualizzazione delle informazioni passate al visualizzatore dal debugger. Questo codice deve essere aggiunto dallo sviluppatore. A tale scopo, in questa procedura dettagliata verrà usata una finestra di messaggio Windows Form. In primo luogo, è necessario aggiungere un riferimento e `using` informativa per System.  
   
 #### <a name="to-add-systemwindowsforms"></a>Per aggiungere System.Windows.Forms  
   
@@ -118,9 +113,9 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
    using System.Windows.Forms;  
    ```  
   
-   A questo punto, si aggiungerà codice per creare e visualizzare l'interfaccia utente del visualizzatore. Poiché si tratta del primo visualizzatore creato, verranno mantenere semplice l'interfaccia utente e usare una finestra di messaggio.  
+   A questo punto è necessario aggiungere una sezione di codice per la creazione e la visualizzazione dell'interfaccia utente del visualizzatore. Poiché si tratta del primo visualizzatore creato, verranno mantenere semplice l'interfaccia utente e usare una finestra di messaggio.  
   
-#### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Per visualizzare l'Output del visualizzatore in una finestra di dialogo  
+#### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Per visualizzare l'output del visualizzatore in una finestra di dialogo  
   
 1. Nel metodo `Show` aggiungere la riga di codice seguente:  
   
@@ -128,11 +123,11 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
    MessageBox.Show(objectProvider.GetObject().ToString());  
    ```  
   
-    Questo codice di esempio non include la gestione degli errori. È necessario includere in un vero visualizzatore o qualsiasi altro tipo di applicazione di gestione degli errori.  
+    Questo codice di esempio non include la gestione degli errori. In un vero visualizzatore o in un qualsiasi altro tipo di applicazione è consigliabile includere la gestione degli errori.  
   
 2. Nel **compilare** menu, scegliere **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
-   Che rappresenta la fine del codice sul lato debugger. C'è un altro passaggio, tuttavia; l'attributo che indica il lato oggetto del debug la raccolta di classi che comprende il visualizzatore.  
+   Il codice sul lato debugger è stato completato. È tuttavia necessario eseguire un altro passaggio, ovvero specificare l'attributo che indica al lato dell'oggetto del debug la raccolta di classi che comprende il visualizzatore.  
   
 #### <a name="to-add-the-debuggee-side-code"></a>Per aggiungere il codice del lato oggetto del debug  
   
@@ -150,7 +145,7 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
   
    A questo punto il visualizzatore è pronto. Se la procedura è stata completata in modo corretto, è possibile compilare il visualizzatore e installarlo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Prima di installare un visualizzatore in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è tuttavia consigliabile testarlo per assicurarsi che funzioni in modo corretto. Di seguito viene descritto come creare un test harness per eseguire il visualizzatore senza installarlo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-#### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Per aggiungere un metodo di Test per visualizzare il Visualizzatore  
+#### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Per aggiungere un metodo di test per aggiungere il visualizzatore  
   
 1. Aggiungere il metodo seguente alla classe `public DebuggerSide`:  
   
@@ -215,19 +210,19 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
    DebuggerSide.TestShowVisualizer(myString);  
    ```  
   
-   A questo punto, si è pronti per eseguire il test del visualizzatore.  
+   A questo punto è possibile eseguire il test del visualizzatore.  
   
 #### <a name="to-test-the-visualizer"></a>Per eseguire il test del visualizzatore  
   
 1. Nelle **Esplora soluzioni**, fare doppio clic su **MyTestConsole** e scegliere **imposta come progetto di avvio** menu di scelta rapida.  
   
-2. Nel **Debug** menu, scegliere **avviare**.  
+2. Scegliere **Avvia** dal menu **Debug**.  
   
     Avvio dell'applicazione console e viene visualizzato il visualizzatore con la stringa "Hello, World".  
   
    Il visualizzatore è stato compilato e sottoposto a test.  
   
-   Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
+   Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="using-the-visualizer-item-template"></a>Usando il modello di elemento  
  Finora, questa procedura dettagliata è stato illustrato come creare manualmente un visualizzatore. Questa operazione è stata eseguita come un esercizio di apprendimento. Dopo avere appreso come funziona un visualizzatore semplice, vi è un modo più semplice per crearne uno: usando il modello di elemento.  
@@ -263,9 +258,6 @@ Questa procedura dettagliata illustra come scrivere un visualizzatore semplice u
    Che è tutto qui. Esaminare il file SecondVisualizer.cs e visualizzare il codice che il modello aggiunto automaticamente. Proseguo e provare a usare il codice. Dopo avere appreso le nozioni di base, è pronti per la creazione di visualizzatori personalizzati più complessi e utili.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)   
- [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
+ [Architettura del visualizzatore](../debugger/visualizer-architecture.md)   
+ [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
  [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
-
-
-

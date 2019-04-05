@@ -1,27 +1,22 @@
 ---
-title: 'Procedura: selezionare gli schemi XML da usare | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Selezionare gli schemi XML da usare | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965493"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: Selezionare gli XML Schema da usare
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -46,7 +41,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
   
    - Selezionare uno schema elencato nella **schemi XML** finestra di dialogo, fare clic sul **utilizzare** colonna e quindi selezionare **utilizzano questo schema**.  
   
-     oppure  
+     -oppure-  
   
    - Selezionare più schemi elencati nella **schemi XML** finestra di dialogo, pulsante destro del mouse e scegliere **utilizzano questo schema**.  
   
@@ -64,7 +59,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
   
 3.  Individuare e selezionare gli schemi da aggiungere alla cache degli schemi.  
   
-4.  Fare clic su **aperto**.  
+4.  Fare clic su **Apri**.  
   
      Gli schemi vengono aggiunti allo schema di memorizzare nella cache ed è il **utilizzo** il valore di colonna è impostato su **utilizzano questo schema**.  
   
@@ -83,6 +78,3 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
  [Cache degli schemi](../xml-tools/schema-cache.md)   
  [Finestra di dialogo schemi XML](../xml-tools/xml-schemas-dialog-box.md)   
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

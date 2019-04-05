@@ -1,14 +1,9 @@
 ---
-title: Get_undecoratednameex | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e1902c6300a35924e7fcd626d9b63f69bc5bbc2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 889412b3fb060250a0ff8392bf959c2759cf81d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965277"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.  
   
-|Flag|Valore|Descrizione|  
+|Flag|Value|Descrizione|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|  
@@ -78,11 +73,8 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_TYPE_ONLY|0x2000|L'input è solo un tipo di codifica; compone un dichiaratore astratto.|  
 |UNDNAME_HAVE_PARAMETERS|0x4000|I parametri di modello reali sono disponibili.|  
 |UNDNAME_NO_ECSU|0x8000|Elimina enum, classe o struct/unione.|  
-|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000.|Elimina controllo per i caratteri di identificatore valido.|  
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Elimina controllo per i caratteri di identificatore valido.|  
 |UNDNAME_NO_PTR64|0x20000|Non include ptr64 nell'output.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

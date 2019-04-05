@@ -1,14 +1,9 @@
 ---
 title: Aggiornare un'applicazione (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965943"
 ---
 # <a name="refresh-an-app-javascript"></a>Aggiornare un'applicazione (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,12 +78,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     Hello!  
     ```  
   
-7.  Fare clic sui **app di Windows di aggiornare** pulsante, che ha un aspetto simile al seguente: ![pulsante di aggiornamento Windows app](../debugger/media/js-refresh.png "JS_Refresh"). o premi F4.  
+7.  Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js-refresh.png "JS_Refresh"). o premi F4.  
   
 8.  Torna all'app. L'app viene ricaricata senza riavviare il debugger e viene visualizzato il nuovo titolo della pagina.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

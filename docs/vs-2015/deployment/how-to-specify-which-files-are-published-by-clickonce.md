@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: specificare i file da pubblicare mediante ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Specificare i file da pubblicare mediante ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268320"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966409"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: specificare i file da pubblicare mediante ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: Specificare i file da pubblicare mediante ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i file di applicazione, tutte le non di codice nel progetto vengono distribuiti insieme all'applicazione. In alcuni casi, si potrebbe non desidera che la pubblicazione di determinati file o che si desidera installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere i file, contrassegnarli come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.  
@@ -45,7 +40,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
   
 -   I file di dati, ad esempio file XML e file di Database SQL (con estensione mdf e mdb) verranno contrassegnati come file di dati per impostazione predefinita.  
   
--   I riferimenti agli assembly (file con estensione dll) vengono designati come indicato di seguito quando si aggiunge il riferimento: se **Copia localmente** viene **False**, è contrassegnata per impostazione predefinita come assembly prerequisiti (**(dei prerequisiti Auto)**) che deve essere presente nella Global Assembly Cache prima di installare l'applicazione. Se **Copia localmente** viene **True**, l'assembly è contrassegnato per impostazione predefinita come un assembly dell'applicazione (**Includi (Auto)**) e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nei **i file dell'applicazione** finestra di dialogo casella (come un file ocx) solo se relativo **Isolated** viene impostata su **True**. Per impostazione predefinita, verrà incluso.  
+-   I riferimenti agli assembly (file con estensione dll) vengono designati come indicato di seguito quando si aggiunge il riferimento: Se **Copia localmente** viene **False**, è contrassegnata per impostazione predefinita come assembly prerequisiti (**prerequisito (Auto)**) che deve essere presente nella Global Assembly Cache prima di installare l'applicazione. Se **Copia localmente** viene **True**, l'assembly è contrassegnato per impostazione predefinita come un assembly dell'applicazione (**Includi (Auto)**) e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nei **i file dell'applicazione** finestra di dialogo casella (come un file ocx) solo se relativo **Isolated** viene impostata su **True**. Per impostazione predefinita, verrà incluso.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Per aggiungere file alla finestra di dialogo file applicazione  
   
@@ -57,7 +52,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -69,7 +64,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -81,7 +76,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -93,7 +88,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -110,7 +105,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Scegliere il **pubblica** scheda.  
+2.  Fare clic sulla scheda **Pubblica**.  
   
 3.  Fare clic sul **i file dell'applicazione** per aprire il **i file dell'applicazione** nella finestra di dialogo.  
   
@@ -124,6 +119,3 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

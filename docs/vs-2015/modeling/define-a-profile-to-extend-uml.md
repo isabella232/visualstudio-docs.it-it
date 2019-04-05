@@ -1,12 +1,9 @@
 ---
 title: Definire un profilo per estendere UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,18 +15,18 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730333"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965477"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile definire un *profilo UML* per personalizzare gli elementi del modello standard per scopi specifici. Un profilo definisce uno o più *stereotipi UML*. Uno stereotipo può essere usato per contrassegnare un tipo come rappresentazione di un determinato tipo di oggetto. Uno stereotipo può anche essere usato per estendere l'elenco di proprietà di un elemento.  
+È possibile definire un *profilo UML* per personalizzare gli elementi del modello standard per scopi specifici. Un profilo definisce uno o più *stereotipi UML*. Uno stereotipo può essere utilizzato per contrassegnare un tipo come rappresentazione di un determinato tipo di oggetto. Uno stereotipo può anche essere usato per estendere l'elenco di proprietà di un elemento.  
   
  Vengono installati diversi profili con le edizioni supportate di Visual Studio. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Per altre informazioni su questi profili e su come applicare gli stereotipi, vedere [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
   
@@ -112,7 +109,7 @@ ms.locfileid: "51730333"
   
    -   Impostare **tipo** a `Microsoft.VisualStudio.UmlProfile`  
   
-        Non si tratta di una delle opzioni a discesa. Inserire il nome usando la tastiera.  
+        Non si tratta di una delle opzioni a discesa. Inserire il nome utilizzando la tastiera.  
   
    -   Fare clic su **File in filesystem** e selezionare il nome del file di profilo, ad esempio `MyProfile.profile`  
   
@@ -223,7 +220,7 @@ ms.locfileid: "51730333"
 7.  Compilare l'estensione di Visual Studio, compilando il progetto di estensione o comprimendo tutti i file, come spiegato nelle precedenti sezioni.  
   
 ##  <a name="Schema"></a> La struttura di un profilo  
- Il file XSD per i profili UML è reperibile nell'esempio seguente: [impostazione di stereotipi e profili XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:  
+ Il file XSD per i profili UML è reperibile nell'esempio seguente: [Impostazione di stereotipi e profili XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:  
   
  **%ProgramFiles%\Microsoft visual Studio [versione] \Xml\Schemas.**  
   
@@ -345,7 +342,7 @@ ms.locfileid: "51730333"
  Gli stereotipi non vengono visualizzati nei modelli UML.  
  È necessario selezionare il profilo in un pacchetto o in un modello. Gli stereotipi verranno visualizzati negli elementi all'interno del pacchetto o del modello. Per altre informazioni, vedere [Add stereotipi UML di elementi del modello](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- Viene visualizzato l'errore seguente quando si apre un modello UML: **VS1707: Impossibile caricare i profili seguenti perché si è verificato un errore di serializzazione: MyProfile.profile**  
+ Quando si apre un modello UML, viene visualizzato l'errore seguente: **VS1707: Poiché si è verificato un errore di serializzazione, non è possibile caricare i profili seguenti: MyProfile.profile**  
  1.  Verificare che la sintassi XML di base del file con estensione profile sia corretta.  
   
 2. Assicurarsi che ogni nome di moniker sia nel formato /profileName/nodeName. profileName è il valore dell'attributo name nel nodo del profilo radice. nodeName è il valore dell'attributo name di una metaclasse, externalType o enumerationType.  
@@ -358,7 +355,7 @@ ms.locfileid: "51730333"
   
 5. Ricompilare il file VSIX e aprirlo in Esplora risorse per reinstallarlo. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   L'estensione non visibile in Gestione estensioni, ma quando si prova a installarla nuovamente, verrà visualizzato il messaggio seguente: **l'estensione è già installata per tutti i prodotti applicabili.**  
+   L'estensione non visibile in Gestione estensioni, ma quando si prova a installarla nuovamente, verrà visualizzato il messaggio seguente: **L'estensione è già installata per tutti i prodotti applicabili.**  
    1.  Rimuovere il file di estensione da una sottocartella della *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versione]  
   
    -   Per visualizzare *LocalAppData*, è necessario impostare cartelle e visualizzare file nascosti nella scheda Visualizza di opzioni cartella Windows Explorer.  
@@ -373,6 +370,3 @@ ms.locfileid: "51730333"
  [Stereotipi standard per modelli UML](../modeling/standard-stereotypes-for-uml-models.md)   
  [Esempio: Colorazione di elementi UML per stereotipo](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Esempio: Impostazione di stereotipi e profili XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: IDiaEnumSegments | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0c9edd5e-b9ce-43e1-a791-cd4c5d16d923
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 192edcf8bff9f72edfd022684bb2453e3f774149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 45ab7bdf76cf169fbc2eee6669771a95ff767006
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966254"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaEnumSegments : IUnknown
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versione l'enumeratore.|  
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) versione l'enumeratore.|  
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Recupera il numero di segmenti.|  
 |[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Recupera un segmento per mezzo di un indice.|  
 |[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Recupera un determinato numero di segmenti nella sequenza di enumerazione.|  
@@ -73,7 +68,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Dia2.h  
+ Intestazione: DIA2.h  
   
  Libreria: diaguids.lib  
   
@@ -83,6 +78,3 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
-
-
-

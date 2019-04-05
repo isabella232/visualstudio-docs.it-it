@@ -1,12 +1,9 @@
 ---
 title: Debug di un modello di testo T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965473"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debug di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +81,3 @@ ms.locfileid: "49298909"
 |È stata generata un'eccezione durante l'elaborazione di una direttiva denominata '{0}'.|Si verifica quando un processore di direttiva genera un'eccezione durante l'elaborazione di una direttiva.|Assicurarsi che i parametri al processore di direttiva siano corretti.|  
 |L'host ha generato un'eccezione durante il tentativo di risolvere il riferimento all'assembly '{0}'.|Si verifica quando l'host genera un'eccezione quando tenta di risolvere un riferimento all'assembly. Il messaggio include l'assembly di riferimento stringa.|Assembly riferimenti provenire da \<@# assembly #> direttive e dai processori di direttiva. Assicurarsi che il parametro 'name' fornito dal parametro assembly sia corretto.|  
 |Provare a specificare non supportata {1} valore '{0}' per la direttiva {2}|Si verifica con RequiresProvidesDirectiveProcessor (tutti i processori di direttiva generati in modo derivano), quando si fornisce un non supportato richiede o include argomenti.|Assicurarsi che i nomi in name = 'value' specificate coppie di richiede e fornisce i parametri siano corretti.|
-
-
-

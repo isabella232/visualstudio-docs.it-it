@@ -1,14 +1,9 @@
 ---
 title: La registrazione di Project and Item Templates | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965565"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|nome|Tipo|Descrizione|  
+|Nome|Tipo|Descrizione|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nome predefinito di progetti di questo tipo.|  
 |DisplayName|REG_SZ|ID risorsa del nome da recuperare dalla DLL satellite registrato in pacchetti.|  
@@ -62,7 +57,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064  
 ```  
   
-|nome|Tipo|Descrizione|  
+|Nome|Tipo|Descrizione|  
 |----------|----------|-----------------|  
 |@|REG_SZ|ID risorsa per i modelli di elemento aggiunta.|  
 |TemplatesDir|REG_SZ|Percorso degli elementi di progetto visualizzato nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata.|  
@@ -89,7 +84,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064  
 ```  
   
-|nome|Tipo|Descrizione|  
+|Nome|Tipo|Descrizione|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Cerca nei file** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|  
 |CommonOpenFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Apri File** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|  
@@ -128,4 +123,3 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
  [Procedure guidate](../../extensibility/internals/wizards.md)   
  [Applicazioni localizzate](../../ide/localizing-applications.md)   
  [CATID per gli oggetti che vengono in genere usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

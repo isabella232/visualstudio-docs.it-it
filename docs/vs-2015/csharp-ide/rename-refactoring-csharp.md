@@ -1,14 +1,9 @@
 ---
 title: Rinominare il Refactoring (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967353"
 ---
 # <a name="rename-refactoring-c"></a>Refactoring di ridenominazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274963"
 |Visualizzazione classi|Quando si seleziona un identificatore in visualizzazione classi, il refactoring di ridenominazione è disponibile dal menu di scelta rapida e **refactoring** menu.|  
 |Visualizzatore oggetti|Quando si seleziona un identificatore nel Visualizzatore oggetti, il refactoring di ridenominazione è disponibile solo il **refactoring** menu.|  
 |Griglia delle proprietà della finestra di progettazione Windows Form|Nel **griglia delle proprietà** della finestra di progettazione Windows Form, la modifica del nome di un controllo avvierà un'operazione di ridenominazione per tale controllo. Il **Rinomina** non verrà visualizzata la finestra di dialogo.|  
-|Esplora soluzioni|Nelle **Esplora soluzioni**, un **rinominare** comando è disponibile nel menu di scelta rapida. Se il file di origine selezionato contiene una classe il cui nome è lo stesso nome del file, è possibile usare questo comando Rinomina il file di origine e di eseguire il refactoring di ridenominazione simultaneamente.<br /><br /> Ad esempio, se si crea un'applicazione basata su Windows predefinito e quindi rinominare Form1.cs TestForm.cs, il nome di file di origine Form1.cs cambierà da TestForm.cs e la classe Form1 e tutti i riferimenti a che classe verrà rinominata in TestForm. **Nota:** il **annullare** comandi (CTRL + Z) verranno solo annullare il refactoring di ridenominazione nel codice e verrà non tornare il nome del file con il nome originale. <br /><br /> Se il file di origine selezionato non contiene una classe il cui nome corrisponde al nome del file, il **rinominare** comando **Esplora soluzioni** verranno rinominati solo il file di origine e non eseguirà la ridenominazione il refactoring.|  
+|Esplora soluzioni|Nelle **Esplora soluzioni**, un **rinominare** comando è disponibile nel menu di scelta rapida. Se il file di origine selezionato contiene una classe il cui nome è lo stesso nome del file, è possibile usare questo comando Rinomina il file di origine e di eseguire il refactoring di ridenominazione simultaneamente.<br /><br /> Ad esempio, se si crea un'applicazione basata su Windows predefinito e quindi rinominare Form1.cs TestForm.cs, il nome di file di origine Form1.cs cambierà da TestForm.cs e la classe Form1 e tutti i riferimenti a che classe verrà rinominata in TestForm. **Nota:**  Il **annullare** comandi (CTRL + Z) verranno solo annullare il refactoring di ridenominazione nel codice e verrà non tornare il nome del file con il nome originale. <br /><br /> Se il file di origine selezionato non contiene una classe il cui nome corrisponde al nome del file, il **rinominare** comando **Esplora soluzioni** verranno rinominati solo il file di origine e non eseguirà la ridenominazione il refactoring.|  
   
 ## <a name="rename-operations"></a>Operazioni di ridenominazione  
  Quando si esegue **Rinomina**, il motore di refactoring consente di eseguire un'operazione di ridenominazione specifica per ogni simbolo del codice, come descritto nella tabella seguente.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274963"
 |-----------------|----------------------|  
 |Campo|Modifica la dichiarazione e gli utilizzi del campo per il nuovo nome.|  
 |variabile locale|Modifica la dichiarazione e gli utilizzi della variabile per il nuovo nome.|  
-|Metodo|Modifica il nome del metodo e tutti i riferimenti a tale metodo per il nuovo nome. **Nota:** quando si rinomina un metodo di estensione, l'operazione di ridenominazione verrà propagata a tutte le istanze del metodo che rientrano nell'ambito, indipendentemente dal fatto se il metodo di estensione viene usato come metodo statico o un metodo di istanza. Per altre informazioni, vedere [Metodi di estensione](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Spazio dei nomi|Modifica il nome dello spazio dei nomi per il nuovo nome nella dichiarazione, tutte le `using` istruzioni e i nomi completi. **Nota:** quando si rinomina uno spazio dei nomi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiorna anche il **Namespace predefinito** proprietà nel **applicazione** pagina del **Progettazione progetti**. Questa proprietà non può essere reimpostata selezionando **Undo** dalle **modificare** menu. Per reimpostare il **Namespace predefinito** valore della proprietà, è necessario modificare la proprietà nel **creazione progetti**. Per altre informazioni, vedere [pagina dell'applicazione](../ide/reference/application-page-project-designer-csharp.md).|  
+|Metodo|Modifica il nome del metodo e tutti i riferimenti a tale metodo per il nuovo nome. **Nota:**  Quando si rinomina un metodo di estensione, l'operazione di ridenominazione verrà propagata a tutte le istanze del metodo che rientrano nell'ambito, indipendentemente dal fatto se il metodo di estensione viene usato come metodo statico o un metodo di istanza. Per altre informazioni, vedere [Metodi di estensione](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Spazio dei nomi|Modifica il nome dello spazio dei nomi per il nuovo nome nella dichiarazione, tutte le `using` istruzioni e i nomi completi. **Nota:**  Quando si rinomina uno spazio dei nomi, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiorna anche il **Default Namespace** proprietà il **applicazione** pagina del **Progettazione progetti**. Questa proprietà non può essere reimpostata selezionando **Undo** dalle **modificare** menu. Per reimpostare il **Namespace predefinito** valore della proprietà, è necessario modificare la proprietà nel **creazione progetti**. Per altre informazioni, vedere [pagina dell'applicazione](../ide/reference/application-page-project-designer-csharp.md).|  
 |Proprietà|Modifica la dichiarazione e gli utilizzi della proprietà per il nuovo nome.|  
 |Tipo|Modifica tutte le dichiarazioni e tutti gli utilizzi del tipo per il nuovo nome, inclusi costruttori e distruttori. Per i tipi parziali, l'operazione di ridenominazione verrà propagate a tutte le parti.|  
   
@@ -125,13 +120,13 @@ ms.locfileid: "49274963"
   
 3.  Digitare il tasto di scelta rapida MAIUSC + ALT + F10 e quindi premere la freccia giù per visualizzare il menu smart tag.  
   
-     oppure  
+     -oppure-  
   
      Spostare il puntatore del mouse su prompt dei comandi di smart tag per visualizzare lo smart tag. Quindi spostare il puntatore del mouse sullo smart tag e fare clic sulla freccia verso il basso per visualizzare il menu smart tag.  
   
 4.  Selezionare il **rinominare '\<identifer1 >' a '\<identifier2 >'** voce di menu per richiamare il refactoring di ridenominazione senza un'anteprima delle modifiche al codice. Tutti i riferimenti a  **\<identifer1 >** verrà automaticamente aggiornato a  **\<identifier2 >**.  
   
-     oppure  
+     -oppure-  
   
      Selezionare il **Rinomina con anteprima** voce di menu per richiamare il refactoring di ridenominazione con una versione di anteprima delle modifiche al codice. Il **Anteprima modifiche** verrà visualizzata la finestra di dialogo.  
   

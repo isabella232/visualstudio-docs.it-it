@@ -1,11 +1,8 @@
 ---
 title: Activity Designer DoWhile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
@@ -13,13 +10,13 @@ ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ec9bc21095905f373cf302deedd73bbce678a6de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d09954409baccfdc5d9eb083a15bd02f5d16cb85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965490"
 ---
 # <a name="dowhile-activity-designer"></a>ActivityDesigner DoWhile
 Il <xref:System.Activities.Statements.DoWhile> attività viene eseguita l'attività contenuta nel relativo <xref:System.Activities.Statements.DoWhile.Body%2A> almeno una volta, fino a quando non viene valutata una condizione specificata **false**. Se è necessario non eseguire l'attività contenuta in un corpo del ciclo o eseguirla più volte, usare l'attività alternativa <xref:System.Activities.Statements.While>.  
@@ -33,5 +30,5 @@ Il <xref:System.Activities.Statements.DoWhile> attività viene eseguita l'attivi
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|Condizione da valutare prima di ogni iterazione del ciclo. Per impostare il <xref:System.Activities.Statements.DoWhile.Condition%2A>, digitare un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] espressione nel **condizione** nella casella il **DoWhile** attività della finestra di progettazione o nella griglia delle proprietà.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [periodo di tempo](../workflow-designer/while-activity-designer.md)   
+ [While](../workflow-designer/while-activity-designer.md)   
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

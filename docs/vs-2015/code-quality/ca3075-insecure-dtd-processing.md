@@ -1,24 +1,19 @@
 ---
-title: 'CA3075: Elaborazione DTD non protetta | Microsoft Docs'
-ms.custom: ''
+title: "CA3075: L'elaborazione DTD non protetta | Microsoft Docs"
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967691"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "49850179"
 
 - Disabilitare l'elaborazione DTD se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà **true** .
 
-- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
+- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
 
   .NET 4 e versioni successive
 
@@ -387,6 +382,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

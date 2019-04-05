@@ -1,14 +1,9 @@
 ---
 title: Guida per i Plug-in controllo codice sorgente di test | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eea089da8c8e0b7e626f58660a57cd499a93fb7c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966447"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per il test dei plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,56 +57,55 @@ Questa sezione vengono fornite indicazioni per il test di controllo del codice s
   
 ## <a name="test-areas-covered-in-this-section"></a>Aree di test trattate in questa sezione  
   
--   [Area di test 1: Aggiungere o aprire elementi dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Caso 1a: Aggiungi soluzione al controllo del codice sorgente  
+    -   Case 1a: Aggiungi soluzione al controllo del codice sorgente  
   
-    -   Caso 1b: aprire soluzioni dal controllo del codice sorgente  
+    -   Case 1b: Apri soluzione dal controllo del codice sorgente  
   
     -   Caso 1c: Aggiungi soluzione dal controllo del codice sorgente  
   
--   [Area di test 2: Recuperare elementi dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Area di test 2: Ottenere dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Area di test 3: Estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Area di test 3: Check-Out / Annulla estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Caso 3: Estrarre / Annulla estrazione  
+    -   Caso 3: Check-Out / Annulla estrazione  
   
-    -   Caso 3: estrarre  
+    -   Case 3a: Estrai  
   
-    -   Caso 3b: disconnessa estrazione  
+    -   Case 3b: Estrazione disconnessa  
   
-    -   Caso 3c: Query di modifica/Query salvare (QEQS)  
+    -   Caso 3C: Query Edit/Query Save (QEQS)  
   
-    -   Caso 3d: Estrazione invisibile all'utente  
+    -   Caso 3d: Estrazione automatica  
   
-    -   Caso 3e: Annulla estrazione  
+    -   Case 3e: Annulla estrazione  
   
--   [Area di test 4: Archiviare](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Area di test 4: Check-In](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Caso 4a: elementi modificati  
+    -   Case 4a: Elementi modificati  
   
-    -   Caso 4b: aggiunta di file  
+    -   Case 4b: Aggiunta di file  
   
-    -   Caso c 4: aggiunta di progetti  
+    -   Caso 4c: Aggiunta di progetti  
   
--   [Area di test 5: Modificare il controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Area di test 5: Modifica controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Caso 5a: eseguire l'associazione  
+    -   Case 5a: Eseguire l'associazione  
   
-    -   Caso 5b: separazione  
+    -   Case 5b: annullamento del binding  
   
-    -   Caso 5C: Rebind  
+    -   Caso 5C: riassociazione  
   
--   [Area di test 6: Eliminare](../../extensibility/internals/test-area-6-delete.md)  
+-   [Area di test 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Area di test 7: Condividere](../../extensibility/internals/test-area-7-share.md)  
+-   [Area di test 7: Condividi](../../extensibility/internals/test-area-7-share.md)  
   
 -   [Area di test 8: Cambio di plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Caso 8a: modifiche automatico  
+    -   Case 8a: Modifiche automatico  
   
-    -   Caso 8b: modifica basati su soluzioni  
+    -   Case 8b: Modifica basati su soluzioni  
   
 ## <a name="see-also"></a>Vedere anche  
  [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)
-

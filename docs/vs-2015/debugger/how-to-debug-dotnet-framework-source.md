@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: eseguire il Debug di codice sorgente di .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Eseguire il debug di codice sorgente di .NET Framework | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966725"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Procedura: debug del codice sorgente di .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug di codice sorgente di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce nuove funzionalità per [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] debug. Per eseguire il debug [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origine, è necessario avere accesso ai simboli per il codice di debug. È anche necessario attivare l'esecuzione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origine.  
@@ -80,6 +75,3 @@ La versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisc
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
  [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

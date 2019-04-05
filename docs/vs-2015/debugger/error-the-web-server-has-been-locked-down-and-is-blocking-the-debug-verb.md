@@ -1,14 +1,9 @@
 ---
 title: 'Errore: Il Server Web è stato bloccato e blocca il verbo DEBUG | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965644"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Errore: il server Web è stato bloccato e blocca il verbo DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Errore: Il verbo DEBUG è bloccato dal server Web, che è stato a sua volta bloccato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quanto è stato eseguito lo strumento di blocco IIS ed è stato installato e attivato URLScan. Questa condizione impedisce la ricezione del verbo DEBUG da parte di IIS.  
@@ -45,7 +40,7 @@ L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quant
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Creare una copia del file e denominarlo **URLScan**.  
+2.  Creare una copia del file e assegnarvi il nome **Urlscan.old**.  
   
 3.  Aprire la copia originale del file Urlscan.ini mediante il Blocco note o l'editore di testo desiderato.  
   
@@ -59,7 +54,4 @@ L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quant
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Errore: il server Web non è in grado di trovare la risorsa richiesta](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-
+ [Errore: Impossibile trovare la risorsa richiesta nel server Web](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

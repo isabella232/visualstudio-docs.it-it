@@ -1,14 +1,9 @@
 ---
-title: 'Procedura: creare un manifesto del prodotto | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare un manifesto del prodotto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968234"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Procedura: creare il manifesto di un prodotto
+# <a name="how-to-create-a-product-manifest"></a>Procedura: Creare un manifesto del prodotto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Il manifesto del pacchetto contiene gli aspetti specifici della localizzazione del pacchetto. Si tratta di stringhe, contratti di licenza dell'utente finale e i language pack.  
   
- Per altre informazioni sui manifesti di prodotto, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).  
+ Per altre informazioni sui manifesti di prodotto, vedere [come: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="creating-the-product-manifest"></a>Creazione del manifesto del prodotto  
   
@@ -168,6 +163,3 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
-
-
-

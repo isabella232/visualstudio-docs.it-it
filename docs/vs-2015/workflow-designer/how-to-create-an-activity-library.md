@@ -1,25 +1,22 @@
 ---
-title: 'Procedura: creare una libreria attività | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Creare una libreria attività | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 341e87459cbaae204baba66108a5944eb1f7f97f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966383"
 ---
-# <a name="how-to-create-an-activity-library"></a>Procedura: creare una libreria attività
+# <a name="how-to-create-an-activity-library"></a>Procedura: Creare una libreria attività
 Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello Libreria attività in [!INCLUDE[vs2010](../includes/vs2010-md.md)] è stato fornito per consentire di creare tali attività personalizzate usando visivamente [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Per creare una libreria attività flussi di lavoro  
@@ -51,5 +48,5 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
     >  È consentita una sola attività figlio nel corpo dell'attività personalizzata. L'attività in questione può tuttavia essere un oggetto CompositeActivity, quale <xref:System.Activities.Statements.Sequence> o <xref:System.Activities.Statements.Flowchart>.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare un'attività](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Procedura: Creare un'attività](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)

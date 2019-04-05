@@ -1,23 +1,20 @@
 ---
 title: La definizione di un criterio di blocco per creare segmenti di sola lettura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965886"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +77,7 @@ partition.SetLocks(Locks.Delete);
   
   È possibile impostare un blocco su una partizione o archiviare e allo stesso tempo disabilitare il blocco su un singolo elemento.  
   
-|Valore|Vale a dire se `IsLocked(Value)` è true|  
+|Value|Vale a dire se `IsLocked(Value)` è true|  
 |-----------|------------------------------------------|  
 |nessuno|Nessuna restrizione.|  
 |Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Ciò non è applicabile alle proprietà che vengono generate dal ruolo di una classe di dominio in una relazione.|  
@@ -88,7 +85,7 @@ partition.SetLocks(Locks.Delete);
 |Move|Elemento non può essere spostato tra le partizioni se `element.IsLocked(Move)` è true, o se `targetPartition.IsLocked(Move)` è true.|  
 |Eliminare|Un elemento non può essere eliminato se questo blocco è impostato sull'elemento stesso o in uno qualsiasi degli elementi a cui verrebbe propagare l'eliminazione, quali forme e gli elementi incorporati.<br /><br /> È possibile usare `element.CanDelete()` per individuare se un elemento può essere eliminato.|  
 |Riordinare|L'ordine dei collegamenti a un assegnatario di ruolo non può essere modificato.|  
-|Assegnatario del ruolo|Il set di collegamenti che hanno origine in questo elemento non può essere modificato. Ad esempio, nuovi elementi non possono essere incorporati sotto questo elemento. Questa operazione non influenza i collegamenti per il quale questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e destinazione non sono interessate.|  
+|RolePlayer|Il set di collegamenti che hanno origine in questo elemento non può essere modificato. Ad esempio, nuovi elementi non possono essere incorporati sotto questo elemento. Questa operazione non influenza i collegamenti per il quale questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e destinazione non sono interessate.|  
 |Tutti|OR bit per bit degli altri valori.|  
   
 ## <a name="locking-policies"></a>Criteri di blocchi  
@@ -193,6 +190,3 @@ namespace Company.YourDsl.DslPackage // Change
     }  
 }  
 ```
-
-
-

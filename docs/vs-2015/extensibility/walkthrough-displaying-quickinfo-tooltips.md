@@ -1,28 +1,23 @@
 ---
-title: 'Procedura dettagliata: Visualizzazione delle descrizioni comando informazioni rapide | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura dettagliata: Visualizzazione di descrizioni comandi informazioni rapide | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9cd0e331536c194acdde95bdd74e5f41668a23e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79ce531d36b21ab26cf4c6e6dc76e8c4d98d8763
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968132"
 ---
-# <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase
+# <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procedura dettagliata: Visualizzazione delle descrizioni comando di InformazioniBase
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Informazioni rapide è una funzionalità di IntelliSense che consente di visualizzare le firme dei metodi e le descrizioni quando l'utente sposta il puntatore sul nome di un metodo. È possibile implementare funzionalità basata sul linguaggio, ad esempio informazioni rapide che definisce gli identificatori per il quale si desidera fornire descrizioni Informazionibase, e quindi creando una descrizione comando in cui visualizzare il contenuto. È possibile definire QuickInfo nel contesto di un servizio di linguaggio, è possibile definire il tipo di contenuto e l'estensione di nome file e visualizzare le informazioni rapide per solo tale tipo o è possibile visualizzare informazioni rapide per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come visualizzare informazioni rapide per il tipo di contenuto "text".  
@@ -182,5 +177,4 @@ Informazioni rapide è una funzionalità di IntelliSense che consente di visuali
 4.  Spostare il puntatore del mouse su una delle occorrenze di "Aggiungi". La firma e la descrizione del `add` metodo deve essere visualizzato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

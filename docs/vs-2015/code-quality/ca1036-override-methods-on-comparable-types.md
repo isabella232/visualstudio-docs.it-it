@@ -1,14 +1,9 @@
 ---
-title: "CA1036: Eseguire l'Override di metodi su tipi confrontabili | Microsoft Docs"
-ms.custom: ''
+title: "CA1036: Eseguire l'override di metodi su tipi confrontabili | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1036
 - OverrideMethodsOnComparableTypes
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966916"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Eseguire l'override di metodi su tipi confrontabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,6 +67,3 @@ ms.locfileid: "49948782"
 ## <a name="see-also"></a>Vedere anche
  <xref:System.IComparable?displayProperty=fullName> <xref:System.Object.Equals%2A?displayProperty=fullName>
  [Operatori di uguaglianza](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-

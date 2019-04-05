@@ -1,14 +1,9 @@
 ---
 title: 'CA1716: Gli identificatori non devono corrispondere a parole chiave | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
 - CA1716
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965418"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Gli identificatori non devono corrispondere a parole chiave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "49858875"
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se si sono convinti che l'identificatore sarà importante non confondere gli utenti dell'API e che sia utilizzabile in tutte le lingue disponibili nella libreria di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
-
-
-

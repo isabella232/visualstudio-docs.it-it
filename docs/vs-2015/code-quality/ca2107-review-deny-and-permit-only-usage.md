@@ -1,14 +1,9 @@
 ---
-title: 'CA2107: Controllare negare e consentire solo utilizzo | Microsoft Docs'
-ms.custom: ''
+title: 'CA2107: Revisione negare e consentire solo utilizzo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2107
 - ReviewDenyAndPermitOnlyUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7a82e6b1acdb8eee1d97dcf6f264ebf66343b58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851113"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965806"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'utilizzo di Deny e PermitOnly
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'uso di Deny e PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49851113"
  Un metodo contiene un controllo di sicurezza che specifica l'azione di sicurezza Deny o PermitOnly.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il [utilizzando il metodo PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azioni di sicurezza devono essere utilizzate solo da coloro che hanno una conoscenza approfondita di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.
+ Il [utilizzando il metodo PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azioni di sicurezza devono essere utilizzate solo da coloro che hanno una conoscenza approfondita di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.
 
  Nega modifica il comportamento predefinito dell'analisi dello stack che si verifica in risposta a una richiesta di sicurezza. Consente di specificare le autorizzazioni che non devono essere concesse per la durata del metodo Deny, indipendentemente dalle autorizzazioni effettive dei chiamanti nello stack di chiamate. Se il percorso stack rileva un metodo protetto da Nega e l'autorizzazione richiesta è inclusa nelle autorizzazioni negate, il percorso stack avrà esito negativo. PermitOnly modifica anche il comportamento predefinito dell'analisi dello stack. Consente al codice specificare solo le autorizzazioni che possono essere concesse, indipendentemente dalle autorizzazioni dei chiamanti. Se il percorso stack viene rilevato un metodo che è protetta da PermitOnly e se l'autorizzazione richiesta non è incluso nelle autorizzazioni specificate da PermitOnly, analisi dello stack ha esito negativo.
 
@@ -78,14 +73,11 @@ ms.locfileid: "49851113"
  Questo esempio produce il seguente output:
 
  **Domanda: Negazione del chiamante non ha effetto su richiesta con autorizzazione oggetto dell'asserzione. ** 
- **LinkDemand: negazione del chiamante non ha alcun effetto su LinkDemand con autorizzazione oggetto dell'asserzione.** 
- **LinkDemand: negazione del chiamante non ha alcun effetto con il codice protetto da LinkDemand.** 
- **LinkDemand: negare questa non ha alcun effetto con il codice protetto da LinkDemand.**
+ **LinkDemand: Negazione del chiamante non ha effetto su LinkDemand con autorizzazione oggetto dell'asserzione. ** 
+ **LinkDemand: Negazione del chiamante non ha effetto con il codice protetto da LinkDemand. ** 
+ **LinkDemand: Questo Nega non ha effetto con il codice protetto da LinkDemand.**
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [eseguendo l'override dei controlli di sicurezza](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28) [mediante il metodo PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
-
-
-
+ [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [eseguendo l'override dei controlli di sicurezza](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [mediante il metodo PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

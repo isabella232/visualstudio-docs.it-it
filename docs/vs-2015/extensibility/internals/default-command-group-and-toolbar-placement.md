@@ -1,14 +1,9 @@
 ---
 title: Comando, gruppo e il posizionamento della barra degli strumenti predefiniti | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -19,23 +14,23 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7fc877332f7db7b27c4a30c23f1ac395a4fc22e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967653"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posizionamento predefinito di comandi, gruppi e barre degli strumenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Per prodotto uniformità e stabilità, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] includono le definizioni dei comandi e i gruppi di comandi. I VSPackage possono anche usare i comandi standard e i gruppi di comandi.  
   
- I gruppi di comandi predefiniti possono essere suddivise in tre categorie: IDE comandi, i comandi di prodotto e i comandi dell'editor.  
+ I gruppi di comandi predefiniti possono essere suddivise in tre categorie: Comandi dell'IDE, comandi di prodotto e i comandi dell'editor.  
   
 ## <a name="default-ide-commands"></a>Comandi predefiniti dell'IDE  
- La barra degli strumenti dell'IDE predefinito include i comandi condivisi da tutti i prodotti contenuti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Sono inclusi i comandi relativi alle operazioni del progetto generico, ad esempio la **salvare** comando e il **Aggiungi elemento** comando. I pacchetti VSPackage non devono aggiungere o sottrarre da questa barra degli strumenti, con una sola eccezione: se il prodotto o un pacchetto VSPackage aggiunge una nuova finestra degli strumenti, quindi la finestra deve essere aggiunto all'elenco di finestre degli strumenti disponibili nel **vista** menu. Nuovi prodotti o i pacchetti VSPackage possono aggiungere i propri sulla barra degli strumenti.  
+ La barra degli strumenti dell'IDE predefinito include i comandi condivisi da tutti i prodotti contenuti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Sono inclusi i comandi relativi alle operazioni del progetto generico, ad esempio la **salvare** comando e il **Aggiungi elemento** comando. I pacchetti VSPackage devono non aggiungere o sottrarre da questa barra degli strumenti, con una sola eccezione: Se il prodotto o un pacchetto VSPackage aggiunge una nuova finestra degli strumenti, quindi la finestra deve essere aggiunto all'elenco di finestre degli strumenti disponibili nel **vista** menu. Nuovi prodotti o i pacchetti VSPackage possono aggiungere i propri sulla barra degli strumenti.  
   
 ## <a name="default-product-commands"></a>Comandi predefinito del prodotto  
  Ogni prodotto può fornire l'IDE con la propria barra degli strumenti predefinita che contiene importanti e comandi utilizzati di frequente. È consigliabile, tuttavia, per utilizzare i menu e barre degli strumenti ogni volta che è possibile esistenti e integrare con altre barre degli strumenti attività specifiche in base alle esigenze.  
@@ -50,4 +45,3 @@ Per prodotto uniformità e stabilità, l'interfaccia utente visualizza determina
 ## <a name="see-also"></a>Vedere anche  
  [I gruppi, menu e comandi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

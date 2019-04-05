@@ -1,11 +1,8 @@
 ---
 title: Commutatore&lt;T&gt; ActivityDesigner | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
@@ -14,13 +11,13 @@ ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7e2baacdfb35e2360a0e9dcc56891cadbe7d3ff3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58968178"
 ---
 # <a name="switchlttgt-activity-designer"></a>Commutatore&lt;T&gt; ActivityDesigner
 L'attività <xref:System.Activities.Statements.Switch%601> valuta un'espressione specificata e viene eseguita da una raccolta di attività la cui chiave associata corrisponde al valore ottenuto dalla valutazione.  

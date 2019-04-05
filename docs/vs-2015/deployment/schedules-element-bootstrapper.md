@@ -1,14 +1,9 @@
 ---
 title: '&lt;Le pianificazioni&gt; elemento (programma di avvio automatico) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 85ffab2272a55bfe77c5f2a73c6e25967a203c85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250991"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58965580"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Le pianificazioni&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora 
 ## <a name="see-also"></a>Vedere anche  
  [\<Product > elemento](../deployment/product-element-bootstrapper.md)   
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
-
-
-

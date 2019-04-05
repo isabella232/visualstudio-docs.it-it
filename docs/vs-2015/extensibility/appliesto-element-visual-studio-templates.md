@@ -1,24 +1,19 @@
 ---
 title: Elemento AppliesTo (modelli di Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6f789a574b7db1c30dceea32e5d2c0d4ef9afb7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967056"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +22,11 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
   
  Questo elemento è facoltativo. Può essere presente massimo una istanza in un file modello. Questo elemento consente di includere come applicabile solo un modello di elemento, in base alle funzionalità del progetto attivo correntemente selezionato. Non può essere usato per rendere un modello di elemento non applicabile. Se `AppliesTo` è assente o l'espressione non è inclusa correttamente, viene usato `TemplateID` o `TemplateGroupID` per rendere il modello applicabile, come con le versioni precedenti del prodotto.  
   
- Introdotto in Visual Studio 2013 Update 2. Per correlare la versione corretta, vedere [che fanno riferimento a recapitare gli assembly in Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Introdotto in Visual Studio 2013 Update 2. Per correlare la versione corretta, vedere [che fanno riferimento a recapitare gli assembly in Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<AppliesTo >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -63,7 +58,7 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
   
 -   Il "&#124;" è l'operatore OR.  
   
--   I caratteri "&" e "+" sono entrambi operatori AND.  
+-   Il "&" e "+" caratteri sono entrambi operatori AND.  
   
 -   Il carattere "!" è l'operatore NOT.  
   
@@ -106,4 +101,3 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-

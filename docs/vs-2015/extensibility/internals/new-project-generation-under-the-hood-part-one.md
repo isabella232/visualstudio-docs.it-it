@@ -1,29 +1,24 @@
 ---
-title: 'Nuova generazione del progetto: Dietro le quinte, parte 1 | Microsoft Docs'
-ms.custom: ''
+title: 'Generazione nuovo progetto: Dietro le quinte, parte 1 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966634"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generazione di un nuovo progetto: dietro le quinte, parte 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generazione nuovo progetto: Dietro le quinte, prima parte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Mai pensato di come creare un proprio tipo di progetto? Chiedersi cosa succede effettivamente quando si crea un nuovo progetto? Verrà esaminato un peek dietro le quinte e vedere cosa sta effettivamente succedendo.  
@@ -77,7 +72,7 @@ devenv /installvstemplates
   
  Nell'esempio, il GUID di VSPackage è  
   
- {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC IL}  
+ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}  
   
  e l'ID di risorsa (valore predefinito) del nodo radice (/ 1) è 2345 #  
   
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Se questa sottochiave è presente, la posizione del nodo radice è controllata dalla finestra di dialogo Impostazioni modalità sviluppatore. Ad esempio,  
   
- REG_SZ DeveloperActivity VC #  
+ REG_SZ DeveloperActivityVC#  
   
  indica che Visual c# è un nodo radice se Visual Studio è impostato per [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] lo sviluppo. In caso contrario, sarà un nodo figlio del **altri linguaggi**.  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   L'ordinamento può essere modificato.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Ricerca del nodo radice per un tipo di progetto  
- Quando Visual Studio attraversa le cartelle ProjectTemplates, apre tutti i file con estensione zip ed estrae i file con estensione vstemplate. Un file con estensione vstemplate Usa XML per descrivere un modello di applicazione. Per altre informazioni, vedere [nuova generazione progetto: Under the Hood, parte due](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Quando Visual Studio attraversa le cartelle ProjectTemplates, apre tutti i file con estensione zip ed estrae i file con estensione vstemplate. Un file con estensione vstemplate Usa XML per descrivere un modello di applicazione. Per altre informazioni, vedere [nuova generazione progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Il \<ProjectType > tag determina il tipo di progetto per l'applicazione. Ad esempio, il file \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contiene un file EmptyProject.vstemplate con questo tag:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **Nodo progetto personalizzato** visualizzato come nodo figlio di Visual c# appena sotto il nodo di Windows.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Generazione di un nuovo progetto: dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Nuova generazione del progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

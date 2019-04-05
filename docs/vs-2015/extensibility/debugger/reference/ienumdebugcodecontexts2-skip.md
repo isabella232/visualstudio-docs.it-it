@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugCodeContexts2::Skip | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugCodeContexts2::Skip
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3451a3eb-bf5b-4ec5-acc9-aa5a24363801
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 729e13a4e6405a0bd8fbf5196e6dcb63519fc89d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: abf8ea0b14f1afdda3d950127ca814993c29eea1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967363"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,11 +43,10 @@ int Skip(
  [in] Numero di elementi da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
  Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione è impostata su Fine e `S_FALSE` viene restituito.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
-
