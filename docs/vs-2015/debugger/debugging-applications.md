@@ -31,7 +31,7 @@ Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. 
 |||  
 |-|-|  
 |[Debug delle app di Windows Store e Windows Universal](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Viene descritto come eseguire il debug delle app Windows Store.|  
-|[Debug di codice gestito](../debugger/debugging-managed-code.md)|Viene descritto come eseguire il debug di codice gestito (Visual c#, Visual Basic e F3).|  
+|[Debug di codice gestito](../debugger/debugging-managed-code.md)|Viene descritto come eseguire il debug di codice gestito (Visual C#, Visual Basic e F3).|  
 |[Debug del codice nativo](../debugger/debugging-native-code.md)|Viene descritto come eseguire il debug di tipi diversi di applicazioni C++ native.|  
 |[Debug del codice GPU](../debugger/debugging-gpu-code.md)|Viene descritto come eseguire il debug di codice C++ in esecuzione nell'unità di elaborazione grafica (GPU).|  
 |[Diagnostica della grafica (debug della grafica DirectX)](../debugger/visual-studio-graphics-diagnostics.md)|Viene descritto come eseguire il debug della grafica DirectX.|  

@@ -175,7 +175,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
      WindowsAppContainer identifica i progetti per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app.  
   
-8.  SupportPrefer32Bit: I valori supportati sono "True" e "False". Il valore predefinito è "True". Se il valore è impostato su "False", MSBuild restituisce un errore per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] progetti (o un avviso per i progetti desktop) se il progetto che fa riferimento al SDK ha Prefer32Bit abilitata. Per altre informazioni sulle Prefer32Bit, vedere [pagina compilazione, creazione progetti (c#)](../ide/reference/build-page-project-designer-csharp.md) oppure [pagina compilazione, creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).  
+8.  SupportPrefer32Bit: I valori supportati sono "True" e "False". Il valore predefinito è "True". Se il valore è impostato su "False", MSBuild restituisce un errore per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] progetti (o un avviso per i progetti desktop) se il progetto che fa riferimento al SDK ha Prefer32Bit abilitata. Per altre informazioni sulle Prefer32Bit, vedere [pagina compilazione, creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md) oppure [pagina compilazione, creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).  
   
 9. SupportedArchitectures: elenco delle architetture supportate da SDK delimitato da punti e virgola. MSBuild viene visualizzato un avviso se non è supportata l'architettura di destinazione SDK nel progetto utilizzato. Se questo attributo non è specificato, MSBuild non visualizza mai questo tipo di avviso.  
   

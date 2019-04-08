@@ -1,5 +1,5 @@
 ---
-title: Modifiche supportate al codice (c#) | Microsoft Docs
+title: Modifiche supportate al codice (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug

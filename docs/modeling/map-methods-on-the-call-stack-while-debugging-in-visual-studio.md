@@ -44,7 +44,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 - [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-- Codice che è possibile eseguire il debug, ad esempio Visual c#, Visual Basic, C++, JavaScript o X + +
+- Codice che è possibile eseguire il debug, ad esempio Visual C#, Visual Basic, C++, JavaScript o X + +
 
   Vedere:
 
@@ -89,7 +89,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
  ![Aggiornare la mappa del codice con lo stack di chiamate successivo](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
- Ora hai una mappa - che cosa successivamente? Se si lavora con c# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di ciò che avviene nel codice.
+ Ora hai una mappa - che cosa successivamente? Se si lavora con C# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di ciò che avviene nel codice.
 
  Fare doppio clic su un metodo per visualizzarne la definizione del codice o usare il menu di scelta rapida del metodo. (Tastiera: Selezionare il metodo nella mappa e premere **F12**)
 

@@ -16,7 +16,7 @@ ms.locfileid: "58968156"
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il manifesto per lo strumento di codice è un'applicazione console che accetta un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto di immagini in C++, c#, VB o file con estensione vsct per le estensioni di Visual Studio. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini richiedente da Visual Studio Image Service direttamente o per passare i valori del manifesto tramite le API, se il codice non gestisce la propria interfaccia utente e per il rendering.  
+Il manifesto per lo strumento di codice è un'applicazione console che accetta un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto di immagini in C++, C#, VB o file con estensione vsct per le estensioni di Visual Studio. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini richiedente da Visual Studio Image Service direttamente o per passare i valori del manifesto tramite le API, se il codice non gestisce la propria interfaccia utente e per il rendering.  
   
 ## <a name="how-to-use-the-tool"></a>Come usare lo strumento  
  **Sintassi**  
@@ -53,9 +53,9 @@ Il manifesto per lo strumento di codice è un'applicazione console che accetta u
 -   Lo strumento analizza solo le voci di simboli per generare il wrapper del codice. Se un manifesto di immagini non contiene simboli, i wrapper del codice generato sarà vuoti. Se è presente un'immagine o un set di immagini nel manifesto dell'immagine che non utilizzano i simboli, essi verranno esclusi dal wrapper codice.  
   
 ## <a name="sample-output"></a>Esempio di output  
- **Wrapper c#**  
+ **Wrapper C#**  
   
- Le classi di una coppia di ID immagine semplice e il moniker di immagini per c# sarà simile al codice riportato di seguito:  
+ Le classi di una coppia di ID immagine semplice e il moniker di immagini per C# sarà simile al codice riportato di seguito:  
   
 ```csharp  
 //-----------------------------------------------------------------------------  

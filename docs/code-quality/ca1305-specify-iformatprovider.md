@@ -56,7 +56,7 @@ Anche se il comportamento predefinito del membro di overload è adatto alle prop
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.IFormatProvider> argomento. In alternativa, usare una [c# stringa interpolata](/dotnet/csharp/tutorials/string-interpolation) e passarlo al <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (metodo).
+Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.IFormatProvider> argomento. In alternativa, usare una [C# stringa interpolata](/dotnet/csharp/tutorials/string-interpolation) e passarlo al <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (metodo).
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 

@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799155"
@@ -48,7 +48,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
     ![Finestra di dialogo Estensioni e aggiornamenti](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
   
-4. Nell'elenco dei risultati scegliere **Introduzione alla creazione di applicazioni WPF (Visual c#)** o **Introduzione alla creazione di applicazioni WPF (Visual Basic)**.  
+4. Nell'elenco dei risultati scegliere **Introduzione alla creazione di applicazioni WPF (Visual C#)** o **Introduzione alla creazione di applicazioni WPF (Visual Basic)**.  
   
 5. Scegliere il pulsante **Scarica** e quindi fare clic sul pulsante **Chiudi**.  
   

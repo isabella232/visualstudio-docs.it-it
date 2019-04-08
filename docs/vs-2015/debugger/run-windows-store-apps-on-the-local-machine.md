@@ -46,7 +46,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
   
  Puoi anche impostare la destinazione di esecuzione direttamente nel file delle proprietà del progetto. Fare clic sul nome del progetto in **Esplora soluzioni** e quindi scegliere **proprietà**. Effettua una delle seguenti operazioni:  
   
--   Nei progetti c# e Visual Basic, fare clic su **Debug** e quindi selezionare **computer locale** dal **dispositivo di destinazione** elenco a discesa.  
+-   Nei progetti C# e Visual Basic, fare clic su **Debug** e quindi selezionare **computer locale** dal **dispositivo di destinazione** elenco a discesa.  
   
      ![C&#35; pagina delle proprietà progetto Visual Basic e](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   

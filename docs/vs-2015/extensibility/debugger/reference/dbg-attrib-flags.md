@@ -300,7 +300,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Note  
   
 > [!NOTE]
->  I valori nell'enumerazione non sono effettivamente definiti nell'assembly per il linguaggio c#. In alternativa, è necessario copiare le definizioni per il file di origine.  
+>  I valori nell'enumerazione non sono effettivamente definiti nell'assembly per il linguaggio C#. In alternativa, è necessario copiare le definizioni per il file di origine.  
   
  Questi flag vengono usanti anche per filtrare i figli di un oggetto, ad esempio, quando viene passato come argomento al [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). I valori possono essere combinati con un bit per bit `OR`.  
   

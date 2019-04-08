@@ -256,7 +256,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 -   Implementazione del controllo della concorrenza durante gli aggiornamenti. Per informazioni, vedere [la concorrenza ottimistica: Panoramica](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
--   Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+-   Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

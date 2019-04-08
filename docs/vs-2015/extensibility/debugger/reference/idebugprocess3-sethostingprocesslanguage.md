@@ -40,7 +40,7 @@ int SetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parametri  
  `guidLang`  
- [in] `GUID` del linguaggio che deve usare la Germania. Specificare `GUID_NULL` (C++) o `Guid.Empty` (c#) per disporre il DE utilizzare la lingua predefinita.  
+ [in] `GUID` del linguaggio che deve usare la Germania. Specificare `GUID_NULL` (C++) o `Guid.Empty` (C#) per disporre il DE utilizzare la lingua predefinita.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  

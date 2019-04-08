@@ -30,7 +30,7 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 
 Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono validi per ogni tipo di estensione.
 
-1. Creare un pacchetto VSPackage in c# denominato `TestPublish` che dispone di un comando di menu. Per altre informazioni, vedere [creare la prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
+1. Creare un pacchetto VSPackage in C# denominato `TestPublish` che dispone di un comando di menu. Per altre informazioni, vedere [creare la prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Creare un pacchetto di estensione
 

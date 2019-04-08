@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione errori e avvisi (c#) | Microsoft Docs
+title: Modifica e continuazione errori e avvisi (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -69,7 +69,7 @@ ms.lasthandoff: 01/24/2019
 ms.locfileid: "58965741"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Errori e avvisi di Modifica e continuazione (C#)
-È stata apportata una modifica a una sezione di codice che non è consentita in Modifica e continuazione di Visual c#.  
+È stata apportata una modifica a una sezione di codice che non è consentita in Modifica e continuazione di Visual C#.  
   
  La funzionalità Modifica e continuazione di [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] consente di arrestare l'esecuzione del programma in modalità di interruzione, apportare modifiche al codice in esecuzione e riprendere l'esecuzione del programma con le modifiche incorporate.  
   

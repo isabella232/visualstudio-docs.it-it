@@ -44,7 +44,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Determina l'ordine di ordinamento nel nodo della struttura dei file visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo.|  
   
 > [!NOTE]
->  I GUID per i tipi di progetto Visual c# e Visual Basic sono i seguenti:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  I GUID per i tipi di progetto Visual C# e Visual Basic sono i seguenti:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  La directory elencate per TemplateDirs, ovvero % TEMPLATE_PATH%\SomeProjectItems, è il nodo sul lato sinistro della **Aggiungi nuovo elemento** struttura ad albero casella di dialogo. Elementi aggiuntivi dell'albero si basano sulla sottodirectory della directory radice. I file possono essere aggiunti al progetto sono gli elementi nel riquadro di destra del **Aggiungi nuovo elemento** nella finestra di dialogo.  
   

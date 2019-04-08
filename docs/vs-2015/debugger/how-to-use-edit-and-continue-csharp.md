@@ -39,7 +39,7 @@ La funzionalità Modifica e continuazione per C# consente di apportare modifiche
   
 2.  Dal **eseguire il Debug** dal menu fare clic su **continua**, **passaggio**, oppure **Imposta istruzione successiva** o valuta una funzione in una finestra del debugger.  
   
-     Il nuovo codice viene compilato e il debug continua con il nuovo codice. Alcune modifiche non sono supportate in modifica e continuazione. Per altre informazioni, vedere [modifiche al codice supportate (c#)](../debugger/supported-code-changes-csharp.md).  
+     Il nuovo codice viene compilato e il debug continua con il nuovo codice. Alcune modifiche non sono supportate in modifica e continuazione. Per altre informazioni, vedere [modifiche al codice supportate (C#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Per abilitare o disabilitare Modifica e continuazione  
   
@@ -53,5 +53,5 @@ La funzionalità Modifica e continuazione per C# consente di apportare modifiche
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Modifiche al codice supportate (c#)](../debugger/supported-code-changes-csharp.md)   
+ [Modifiche al codice supportate (C#)](../debugger/supported-code-changes-csharp.md)   
  [Errori e avvisi di Modifica e continuazione (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

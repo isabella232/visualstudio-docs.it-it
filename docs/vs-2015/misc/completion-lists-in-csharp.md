@@ -1,5 +1,5 @@
 ---
-title: Elenchi di completamento in c# | Microsoft Docs
+title: Elenchi di completamento in C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,7 +20,7 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58969410"
 ---
 # <a name="completion-lists-in-c"></a>Elenchi di completamento in C# #
-Questo contenuto è stato spostato in [IntelliSense per Visual c#](../ide/visual-csharp-intellisense.md)  
+Questo contenuto è stato spostato in [IntelliSense per Visual C#](../ide/visual-csharp-intellisense.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md)

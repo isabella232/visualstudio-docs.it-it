@@ -49,7 +49,7 @@ Per correggere una violazione di questa regola, eseguire l'override <xref:System
 - op_LessThan
 - op_GreaterThan
 
-In c#, i token che vengono usati per rappresentare questi operatori sono i seguenti:
+In C#, i token che vengono usati per rappresentare questi operatori sono i seguenti:
 
 ```csharp
 ==

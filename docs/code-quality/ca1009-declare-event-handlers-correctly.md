@@ -40,7 +40,7 @@ ms.locfileid: "55956070"
 ## <a name="rule-description"></a>Descrizione della regola
  I metodi di gestione eventi accettano due parametri. Il primo è di tipo <xref:System.Object?displayProperty=fullName> ed è denominato 'sender'. Corrisponde all'oggetto che ha generato l'evento. Il secondo parametro è di tipo <xref:System.EventArgs?displayProperty=fullName> ed è denominato 'e'. Questi sono i dati associati all'evento. Ad esempio, se l'evento viene generato ogni volta che viene aperto un file, i dati dell'evento contengano in genere il nome del file.
 
- Metodi del gestore eventi non devono restituire un valore. In c# programming language, ciò è indicato il tipo restituito `void`. Un gestore eventi può richiamare più metodi in più oggetti. Se i metodi sono stati consentiti per restituire un valore, si verificherà più valori restituiti per ogni evento e sarà disponibile solo il valore dell'ultimo metodo richiamato.
+ Metodi del gestore eventi non devono restituire un valore. In C# programming language, ciò è indicato il tipo restituito `void`. Un gestore eventi può richiamare più metodi in più oggetti. Se i metodi sono stati consentiti per restituire un valore, si verificherà più valori restituiti per ogni evento e sarà disponibile solo il valore dell'ultimo metodo richiamato.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, correggere la firma, il tipo restituito o i nomi dei parametri del delegato. Per informazioni dettagliate, vedere l'esempio seguente.

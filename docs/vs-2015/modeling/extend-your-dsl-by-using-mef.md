@@ -125,7 +125,7 @@ ms.locfileid: "58955179"
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>Per creare una DSL estensione VSIX  
   
-1. Creare un nuovo progetto Libreria di classi. A questo scopo, nella **nuovo progetto** finestra di dialogo **Visual Basic** oppure **Visual c#** e quindi selezionare **libreria di classi**.  
+1. Creare un nuovo progetto Libreria di classi. A questo scopo, nella **nuovo progetto** finestra di dialogo **Visual Basic** oppure **Visual C#** e quindi selezionare **libreria di classi**.  
   
 2. Nel nuovo progetto di libreria di classi, aggiungere un riferimento all'assembly del linguaggio DSL.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "58955179"
   
    -   System.Windows.Forms.dll  
   
-4. Creare un progetto VSIX nella stessa soluzione. A questo scopo, nella **nuovo progetto** finestra di dialogo, espandere **Visual Basic** oppure **Visual c#**, fare clic su **estendibilità**e quindi scegliere  **Progetto VSIX**.  
+4. Creare un progetto VSIX nella stessa soluzione. A questo scopo, nella **nuovo progetto** finestra di dialogo, espandere **Visual Basic** oppure **Visual C#**, fare clic su **estendibilità**e quindi scegliere  **Progetto VSIX**.  
   
 5. In Esplora soluzioni fare doppio clic su progetto VSIX e quindi fare clic su **imposta come progetto di avvio**.  
   

@@ -275,7 +275,7 @@ In questo argomento descrive la struttura del file Dsldefinition DSL nel progett
   
  In questo esempio, InPort è una sottoclasse di ComponentPort e ha una relazione ComponentHasPorts. La proprietà è denominata Component.  
   
- Quando si scrive codice c# per questo modello, è possibile passare attraverso un collegamento in un unico passaggio usando la proprietà che la relazione genera su ciascuna delle classi che collega:  
+ Quando si scrive codice C# per questo modello, è possibile passare attraverso un collegamento in un unico passaggio usando la proprietà che la relazione genera su ciascuna delle classi che collega:  
   
 ```  
      InPort port; ...  Component c = port.Component;  

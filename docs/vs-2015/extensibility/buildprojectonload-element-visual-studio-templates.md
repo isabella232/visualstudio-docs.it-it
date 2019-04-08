@@ -54,7 +54,7 @@ Compila solo i nuovi progetti durante la creazione e aggiungerle a una soluzione
  `BuildProjectOnLoad` è un elemento facoltativo. Il valore predefinito è `false`.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per un modello di Visual c#.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

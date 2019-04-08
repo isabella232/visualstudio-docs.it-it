@@ -92,7 +92,7 @@ public struct BP_LOCATION {
 ## <a name="remarks"></a>Note  
  Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.  
   
- [C# solo] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpLocationType` valore per poi passare tra le altre colonne per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare una parte di questa struttura in c#.  
+ [C# solo] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpLocationType` valore per poi passare tra le altre colonne per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare una parte di questa struttura in C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -105,7 +105,7 @@ public struct BP_LOCATION {
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come interpretare la `BP_LOCATION` struttura in c# per il `BPLT_DATA_STRING` tipo. Questo tipo particolare di seguito viene illustrato come interpretare tutte e quattro `unionmemberX` membri in tutti i formati possibili (oggetto, stringa e numero).  
+ In questo esempio viene illustrato come interpretare la `BP_LOCATION` struttura in C# per il `BPLT_DATA_STRING` tipo. Questo tipo particolare di seguito viene illustrato come interpretare tutte e quattro `unionmemberX` membri in tutti i formati possibili (oggetto, stringa e numero).  
   
 ```csharp  
 using System;  

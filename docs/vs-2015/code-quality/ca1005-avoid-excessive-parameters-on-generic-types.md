@@ -36,7 +36,7 @@ ms.locfileid: "58965887"
  Un tipo generico visibile esternamente contiene più di due parametri di tipo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quanto più è alto il numero di parametri di tipo contenuti, maggiore è la difficoltà di sapere e ricordare cosa rappresenta ciascun parametro. È in genere ovvio con un parametro di tipo, come in `List<T>`e in alcuni casi con due parametri di tipo, come in `Dictionary<TKey, TValue>`. Se esistono più di due parametri di tipo, il livello di difficoltà sarà troppo elevato per la maggior parte degli utenti (ad esempio, `TooManyTypeParameters<T, K, V>` in c# o `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Quanto più è alto il numero di parametri di tipo contenuti, maggiore è la difficoltà di sapere e ricordare cosa rappresenta ciascun parametro. È in genere ovvio con un parametro di tipo, come in `List<T>`e in alcuni casi con due parametri di tipo, come in `Dictionary<TKey, TValue>`. Se esistono più di due parametri di tipo, il livello di difficoltà sarà troppo elevato per la maggior parte degli utenti (ad esempio, `TooManyTypeParameters<T, K, V>` in C# o `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare la struttura da usare non più di due parametri di tipo.

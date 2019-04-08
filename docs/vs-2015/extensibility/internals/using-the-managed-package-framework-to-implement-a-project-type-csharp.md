@@ -1,5 +1,5 @@
 ---
-title: Usando il Framework di pacchetto gestito per implementare un tipo di progetto (c#) | Microsoft Docs
+title: Usando il Framework di pacchetto gestito per implementare un tipo di progetto (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,7 +22,7 @@ ms.locfileid: "58969851"
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Uso del framework di pacchetto gestito per implementare un tipo di progetto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il Framework di pacchetto gestito (MPF) fornisce le classi di c# è possibile usare o ereditare da implementare tipi di progetto personalizzati. MPF implementa molte delle interfacce di che Visual Studio prevede un tipo di progetto per fornire, permettendo all'utente di concentrarsi sull'implementazione delle indicazioni del tipo di progetto.  
+Il Framework di pacchetto gestito (MPF) fornisce le classi di C# è possibile usare o ereditare da implementare tipi di progetto personalizzati. MPF implementa molte delle interfacce di che Visual Studio prevede un tipo di progetto per fornire, permettendo all'utente di concentrarsi sull'implementazione delle indicazioni del tipo di progetto.  
   
 ## <a name="using-the-mpf-project-source-code"></a>Usando il codice sorgente del progetto MPF  
  Il Framework di pacchetto gestito per progetti (MPFProj) fornisce classi helper per la creazione e la gestione di nuovo sistema di progetto. A differenza di altre classi in MPF, le classi di progetto non sono inclusi negli assembly forniti con Visual Studio. Al contrario, le classi di progetto vengono fornite come codice sorgente, in [MPF di progetti 2013](http://mpfproj12.codeplex.com).  

@@ -27,7 +27,7 @@ ms.locfileid: "58954306"
   
 ## <a name="creating-a-mef-project"></a>Creazione di un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `HighlightWordTest`.  
+1.  Creare un progetto C# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual C# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `HighlightWordTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -308,7 +308,7 @@ ms.locfileid: "58954306"
   
 8.  È necessario implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> (metodo). Questo metodo accetta una raccolta di <xref:Microsoft.VisualStudio.Text.SnapshotSpan> degli oggetti e restituisce un'enumerazione di intervalli di tag.  
   
-     In c#, è possibile implementare questo metodo come iteratore yield, che consente la valutazione lazy (vale a dire, valutazione del set di solo quando si accede a singoli elementi) dei tag. In Visual Basic, aggiungere i tag per un elenco e restituisce l'elenco.  
+     In C#, è possibile implementare questo metodo come iteratore yield, che consente la valutazione lazy (vale a dire, valutazione del set di solo quando si accede a singoli elementi) dei tag. In Visual Basic, aggiungere i tag per un elenco e restituisce l'elenco.  
   
      In questo caso il metodo restituisce un <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> oggetto che ha un "blue" <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, che forniscono uno sfondo blu.  
   

@@ -29,7 +29,7 @@ Nei pacchetti VSPackage, è possibile ottenere l'oggetto DTE chiamando il <xref:
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Per ottenere l'oggetto DTE da ServiceProvider  
   
-1.  Creare un progetto c# VSIX denominato `DTETest`. Aggiungere un modello di elemento di classificatore Editor e denominarlo `DTETest`. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1.  Creare un progetto C# VSIX denominato `DTETest`. Aggiungere un modello di elemento di classificatore Editor e denominarlo `DTETest`. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 2.  Aggiungere i riferimenti assembly seguenti al progetto:  
   

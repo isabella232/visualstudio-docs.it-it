@@ -50,7 +50,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
 1.  Creare un progetto VSIX in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   Nel **nuovo progetto** finestra di dialogo espandere **Visual Basic** oppure **Visual c#**, quindi espandere **estendibilità**. Fare clic su **progetto VSIX**.  
+    -   Nel **nuovo progetto** finestra di dialogo espandere **Visual Basic** oppure **Visual C#**, quindi espandere **estendibilità**. Fare clic su **progetto VSIX**.  
   
 2.  Nelle **vsixmanifest**, impostare il tipo di contenuto e le edizioni supportate.  
   

@@ -38,7 +38,7 @@ In questa procedura dettagliata viene descritto come usare C# per creare un visu
   
 1. Nel **File** menu, scegliere **New** e quindi fare clic su **nuovo progetto**.  
   
-2. Nel **nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual c#**.  
+2. Nel **nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual C#**.  
   
 3. Nel **modelli** , scegliere **libreria di classi**.  
   
@@ -233,7 +233,7 @@ In questa procedura dettagliata viene descritto come usare C# per creare un visu
   
 1. Nel **File** menu, scegliere **Add** e quindi fare clic su **nuovo progetto**.  
   
-2. Nel **Aggiungi nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual c#**.  
+2. Nel **Aggiungi nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual C#**.  
   
 3. Nel **modelli** , scegliere **libreria di classi**.  
   

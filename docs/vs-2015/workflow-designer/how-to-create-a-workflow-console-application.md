@@ -29,7 +29,7 @@ ms.locfileid: "58965993"
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-3.  Nel **modelli installati** riquadro, selezionare **flusso di lavoro** dal **Visual c#** o **Visual Basic** raggruppamenti, a seconda di lingua di preferenza.  
+3.  Nel **modelli installati** riquadro, selezionare **flusso di lavoro** dal **Visual C#** o **Visual Basic** raggruppamenti, a seconda di lingua di preferenza.  
   
 4.  Nel riquadro centrale, selezionare **applicazione Console flusso di lavoro**.  
   

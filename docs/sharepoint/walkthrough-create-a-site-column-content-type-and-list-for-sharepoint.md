@@ -55,7 +55,7 @@ ms.locfileid: "57870399"
 
 1.  Nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **File** menu, scegliere **New** > **progetto**.
 
-2.  Nel **nuovo progetto** in presenza di una finestra di dialogo **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere **2010**.
+2.  Nel **nuovo progetto** in presenza di una finestra di dialogo **Visual C#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere **2010**.
 
 3.  Nel **modelli** riquadro, scegliere **progetto SharePoint 2010**, modificare il nome del progetto in cui **Clinic**e quindi scegliere il **OK** pulsante.
 
@@ -99,7 +99,7 @@ ms.locfileid: "57870399"
 
 2.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-3.  In presenza di una **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
+3.  In presenza di una **Visual C#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
 
 4.  Nel **modelli** riquadro, scegliere il **tipo di contenuto** modello, modificare il nome in **informazioni di paziente**e quindi scegliere il **Aggiungi** pulsante.
 
@@ -133,7 +133,7 @@ ms.locfileid: "57870399"
 
 2.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-3.  In presenza di una **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
+3.  In presenza di una **Visual C#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
 
 4.  Nel **modelli** riquadro, scegliere il **elenco** modello, modificare il nome in **pazienti**e quindi scegliere il **Aggiungi** pulsante.
 

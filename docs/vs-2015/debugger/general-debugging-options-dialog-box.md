@@ -84,7 +84,7 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
  **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**  
  Attiva la valutazione automatica di proprietà e altre chiamate di funzioni implicite nelle finestre delle variabili e nella finestra di dialogo **Controllo immediato**.  
   
- **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (c# e solo JavaScript)**  
+ **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (C# e solo JavaScript)**  
  Esegue una chiamata di conversione delle stringhe implicita durante la valutazione di oggetti nelle finestre delle variabili. Pertanto, il risultato viene visualizzato come stringa anziché come nome del tipo. Questa opzione è applicabile solo al debug in codice C#. Questa impostazione può essere sottoposto a override mediante l'attributo DebuggerDisplay (vedere [usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Abilita il supporto del server di origine**  
@@ -145,7 +145,7 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
   
   Usare questa opzione quando si esegue il debug di codice C++ .NET perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Ad esempio, il motore legacy non contiene molti dei visualizzatori per i tipi incorporati, ad esempio `std::string` nei progetti di Visual Studio 2015.   Per un'esperienza di debug ottimale, in questi casi usare i progetti di Visual Studio 2013.  
   
-  **Usa gli analizzatori di espressioni c# e VB legacy**  
+  **Usa gli analizzatori di espressioni C# e VB legacy**  
   Il debugger userà gli analizzatori di espressioni di Visual Studio 2013 C#/VB anziché quelli basati su Visual Studio 2015 Roslyn.  
   
   **Avvisa quando si usano visualizzatori di debugger personalizzati processi potenzialmente non sicuri (solo gestito)**  

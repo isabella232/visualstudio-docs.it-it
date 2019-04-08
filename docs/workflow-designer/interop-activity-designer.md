@@ -31,7 +31,7 @@ Il **interoperabilità** ActivityDesigner è reperibile nel **migrazione** categ
 
 Il [Migration](../workflow-designer/migration-activity-designers.md) categoria che contiene il <xref:System.Activities.Statements.Interop> attività si manifesta solo nella **casella degli strumenti** se il progetto è destinato a completa di .NET Framework 4.
 
-Per i progetti c#, è possibile modificare la destinazione del progetto per usare la versione completa di .NET Framework 4 facendo clic con il progetto in **Esplora soluzioni** e selezionando **proprietà**. Nel **Application** scheda, seleziona il **NET Framework 4** opzione il **framework di destinazione**. Selezionare **Sì** di confermare la modifica.
+Per i progetti C#, è possibile modificare la destinazione del progetto per usare la versione completa di .NET Framework 4 facendo clic con il progetto in **Esplora soluzioni** e selezionando **proprietà**. Nel **Application** scheda, seleziona il **NET Framework 4** opzione il **framework di destinazione**. Selezionare **Sì** di confermare la modifica.
 
 Per i progetti Visual Basic, è possibile modificare la destinazione del progetto per usare la versione completa di .NET Framework 4 facendo clic sul progetto in **Esplora soluzioni** e selezionando **proprietà**. Nel **Compile** scheda, fare clic sui **opzioni di compilazione avanzate** pulsante. Selezionare **.Net Framework 4** dalle **elenco framework di destinazione**, quindi fare clic su **OK**. Selezionare **Sì** di confermare la modifica.
 

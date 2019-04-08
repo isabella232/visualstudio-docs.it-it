@@ -20,6 +20,6 @@ il SDK di Visual Studio include diversi strumenti per aiutare i generatori di es
   
 -   Il [manifesto dalle risorse](../../extensibility/internals/manifest-from-resources.md) strumento accetta un elenco di risorse grafiche (file con estensione PNG o XAML) e genera un file manifesto dell'immagine.  
   
--   Il [manifesto al codice](../../extensibility/internals/manifest-to-code.md) strumento prende un file manifesto dell'immagine e genera un file wrapper da utilizzare nei file C++, c#, VB o con estensione vsct.  
+-   Il [manifesto al codice](../../extensibility/internals/manifest-to-code.md) strumento prende un file manifesto dell'immagine e genera un file wrapper da utilizzare nei file C++, C#, VB o con estensione vsct.  
   
 -   Il [Visualizzatore della libreria di immagini](../../extensibility/internals/image-library-viewer.md) può caricare, modifica e ricerca di manifesti dell'immagine.

@@ -36,7 +36,7 @@ ms.locfileid: "58966516"
  Un tipo pubblico implementa un finalizzatore che non specifica della famiglia di accesso (protetto).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori c#, Visual Basic e Visual C++.
+ I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori C#, Visual Basic e Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impostare il finalizzatore per essere accessibile tramite la famiglia.

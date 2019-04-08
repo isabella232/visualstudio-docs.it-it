@@ -85,7 +85,7 @@ ms.locfileid: "54864072"
 ### <a name="namespace-considerations-in-office-solutions"></a>Considerazioni di Namespace nelle soluzioni Office
  Non è possibile modificare lo *spazio dei nomi predefinito* (o *spazio dei nomi radice* in Visual Basic) di un progetto di Office dopo averlo creato. Lo spazio dei nomi predefinito corrisponderà sempre al nome del progetto specificato durante la creazione del progetto. Se si rinomina il progetto, lo spazio dei nomi predefinito non viene modificato. Per altre informazioni su spazio dei nomi predefinito nei progetti, vedere [Application Page, Project Designer &#40;C&#35; &#41; ](../ide/reference/application-page-project-designer-csharp.md) e [pagina applicazione, creazione progetti &#40;Visual Basic&#41; ](../ide/reference/application-page-project-designer-visual-basic.md).
 
-### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Modificare lo spazio dei nomi di classi dell'elemento host nei progetti c#
+### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Modificare lo spazio dei nomi di classi dell'elemento host nei progetti C#
  Le classi dell'elemento host (ad esempio, le classi `ThisAddIn`, `ThisWorkbook`o `ThisDocument` ) hanno spazi dei nomi specifici nei progetti di Office di Visual C#. Per impostazione predefinita, lo spazio dei nomi per gli elementi host nel progetto corrisponde al nome del progetto specificato durante la creazione del progetto.
 
  Per modificare lo spazio dei nomi degli elementi host in un progetto di Office di Visual C#, usare la proprietà **Spazio dei nomi per elemento host** . Per altre informazioni, vedere [delle proprietà nei progetti di Office](../vsto/properties-in-office-projects.md).
@@ -96,10 +96,10 @@ ms.locfileid: "54864072"
 ## <a name="language-choice-and-office-programming"></a>Scelta del linguaggio e programmazione di Office
  Microsoft Office e VBA (Visual Basic, Applications Edition) sono stati sviluppati per l'integrazione al fine di ottimizzare il flusso di lavoro di personalizzazione delle applicazioni. Visual Basic ha ereditato alcuni di tali sviluppi. Ad esempio, in Visual Basic vengono supportati i parametri facoltativi e quindi si scrive meno codice quando si chiamano alcuni metodi negli assembly di interoperabilità primari di Microsoft Office rispetto a Visual C#.
 
-## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programma con Visual Studio di Visual Basic. Visual c# nelle soluzioni Office
+## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programma con Visual Studio di Visual Basic. Visual C# nelle soluzioni Office
  È possibile creare soluzioni Office usando Visual Basic o Visual C#. Poiché i modelli a oggetti di Microsoft Office sono stati progettati per l'utilizzo con Microsoft VBA (Visual Basic, Applications Edition), gli sviluppatori di Visual Basic possono usare agevolmente gli oggetti esposti dalle applicazioni di Microsoft Office. Gli sviluppatori di Visual C# possono usare gran parte delle stesse funzionalità usate dagli sviluppatori di Visual Basic, ma in alcuni casi devono scrivere codice aggiuntivo per usare i modelli a oggetti di Office. Esistono inoltre alcune differenze tra le funzionalità di programmazione di base usate nello sviluppo di applicazioni per Office e il codice gestito scritto in Visual Basic e C#.
 
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Differenze principali tra Visual Basic e Visual c#
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Differenze principali tra Visual Basic e Visual C#
  Nella tabella seguente sono illustrate le differenze principali tra Visual Basic e Visual C# nello sviluppo di applicazioni per Office.
 
 |Funzionalità|Descrizione|Supporto in Visual Basic|Supporto in Visual C#|

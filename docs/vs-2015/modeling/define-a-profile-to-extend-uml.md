@@ -87,7 +87,7 @@ ms.locfileid: "58965477"
   
    1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-   2.  Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, espandere **Visual c#**, fare clic su **estendibilità**, quindi fare clic su  **Progetto VSIX**. Impostare il nome del progetto e scegliere **OK**.  
+   2.  Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, espandere **Visual C#**, fare clic su **estendibilità**, quindi fare clic su  **Progetto VSIX**. Impostare il nome del progetto e scegliere **OK**.  
   
 2. Aggiungere il profilo al progetto.  
   

@@ -61,7 +61,7 @@ int GetText( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- Questo esempio mostra come questo metodo può essere chiamato da codice c#.  
+ Questo esempio mostra come questo metodo può essere chiamato da codice C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

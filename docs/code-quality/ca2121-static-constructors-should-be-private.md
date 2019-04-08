@@ -38,7 +38,7 @@ Un tipo ha un costruttore statico non è privato.
 
 Un costruttore statico, noto anche come un costruttore di classe, viene utilizzato per inizializzare un tipo. Il costruttore statico viene chiamato prima che venga creata la prima istanza del tipo o venga fatto riferimento a qualsiasi membro statico. L'utente non ha alcun controllo su quando viene chiamato il costruttore statico. Se un costruttore statico non è privato, può essere chiamato da codice esterno al sistema. A seconda delle operazioni eseguite nel costruttore, questa situazione può causare comportamenti imprevisti.
 
-Questa regola viene applicata dai compilatori c# e Visual Basic.
+Questa regola viene applicata dai compilatori C# e Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

@@ -39,7 +39,7 @@ ms.locfileid: "58968925"
   
 ## <a name="creating-a-mef-project"></a>Creazione di un progetto MEF  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `ViewPropertyTest`.  
+1.  Creare un progetto C# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual C# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `ViewPropertyTest`.  
   
 2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

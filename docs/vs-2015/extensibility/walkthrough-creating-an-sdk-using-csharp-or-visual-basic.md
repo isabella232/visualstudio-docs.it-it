@@ -18,7 +18,7 @@ ms.locfileid: "59001769"
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creazione di un SDK con C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
+In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual C# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
   
 -   [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   
@@ -33,7 +33,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 1.  Nella barra dei menu, scegliere **File**, **New**, **nuovo progetto**.  
   
-2.  Nell'elenco dei modelli, espandere **Visual c#** o **Visual Basic**, scegliere il **Windows Store** nodo, quindi scegliere il **componente di Runtime di Windows** modello.  
+2.  Nell'elenco dei modelli, espandere **Visual C#** o **Visual Basic**, scegliere il **Windows Store** nodo, quindi scegliere il **componente di Runtime di Windows** modello.  
   
 3.  Nel **nome** , specificare **SimpleMath**, quindi scegliere il **OK** pulsante.  
   
@@ -61,7 +61,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 1.  Nel menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, scegliere **Add**, **nuovo progetto**.  
   
-2.  Nell'elenco dei modelli, espandere **Visual c#** o **Visual Basic**, scegliere il **estendibilità** nodo, quindi scegliere il **progetto VSIX** modello.  
+2.  Nell'elenco dei modelli, espandere **Visual C#** o **Visual Basic**, scegliere il **estendibilità** nodo, quindi scegliere il **progetto VSIX** modello.  
   
 3.  Nel **nome** , specificare **SimpleMathVSIX**, quindi scegliere il **OK** pulsante.  
   
@@ -135,7 +135,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 1. Nella barra dei menu, scegliere **File**, **New**, **nuovo progetto**.  
   
-2. Nell'elenco dei modelli, espandere **Visual c#** oppure **Visual Basic**, quindi scegliere il **Windows Store** nodo.  
+2. Nell'elenco dei modelli, espandere **Visual C#** oppure **Visual Basic**, quindi scegliere il **Windows Store** nodo.  
   
 3. Scegliere il **App vuota** modello, nome del progetto **ArithmeticUI**, quindi scegliere il **OK** pulsante.  
   

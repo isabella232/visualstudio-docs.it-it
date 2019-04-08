@@ -40,7 +40,7 @@ ms.locfileid: "54865099"
 
 3.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-4.  In presenza di una **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** elemento.
+4.  In presenza di una **Visual C#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** elemento.
 
 5.  Nel **modelli** riquadro, scegliere **ricevitore di eventi**, denominarlo **il nome TestEventReceiver1**e quindi scegliere il **OK** pulsante.
 

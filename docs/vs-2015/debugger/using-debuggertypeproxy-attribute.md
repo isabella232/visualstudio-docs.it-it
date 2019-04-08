@@ -57,7 +57,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  Se si utilizza un tipo generico come destinazione in `DebuggerTypeProxy`, è necessario adottare questa sintassi. Il meccanismo di `DebuggerTypeProxy` deduce automaticamente i parametri di tipo.  
   
- Per altre informazioni sui tipi aperti e chiusi in c#, vedere la [specifiche del linguaggio c#](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), sezione 20.5.2 relativa nella e tipi chiusi.  
+ Per altre informazioni sui tipi aperti e chiusi in C#, vedere la [specifiche del linguaggio C#](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), sezione 20.5.2 relativa nella e tipi chiusi.  
   
  In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è possibile eseguire la stessa operazione in questo linguaggio, ma è necessario utilizzare una rappresentazione del nome del tipo aperto in formato stringa.  
   

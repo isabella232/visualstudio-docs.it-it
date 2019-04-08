@@ -29,7 +29,7 @@ ms.locfileid: "59001644"
 >  Per usare progetti VSIX, è necessario installare Visual Studio SDK. Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Dove trovare il modello di progetto VSIX  
- Il modello di progetto VSIX è disponibile nel **nuovo progetto** nella finestra di dialogo. Espandere la **Visual Basic** nodo o il **Visual c#** nodo e quindi scegliere **estendibilità**.  
+ Il modello di progetto VSIX è disponibile nel **nuovo progetto** nella finestra di dialogo. Espandere la **Visual Basic** nodo o il **Visual C#** nodo e quindi scegliere **estendibilità**.  
   
 > [!TIP]
 >  È necessario assicurarsi che .NET Framework 4.5 o versione successiva è specificato nell'elenco a discesa nella parte superiore del **nuovo progetto** nella finestra di dialogo.  

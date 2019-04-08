@@ -185,7 +185,7 @@ Type Class2 ::
   
 2. Creare un progetto C# o Visual Basic nella stessa soluzione.  
   
-   -   In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**. Sotto **modelli installati**, fare clic su **Visual Basic** oppure **Visual c#** e quindi selezionare un tipo di progetto, ad esempio **applicazione Console**.  
+   -   In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**. Sotto **modelli installati**, fare clic su **Visual Basic** oppure **Visual C#** e quindi selezionare un tipo di progetto, ad esempio **applicazione Console**.  
   
 3. Aggiungere un file di testo normale al progetto C# o Visual Basic. Il file conterrà codice condiviso se si vogliono scrivere più modelli di testo.  
   

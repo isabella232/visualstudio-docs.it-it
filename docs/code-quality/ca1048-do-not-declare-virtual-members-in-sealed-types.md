@@ -36,7 +36,7 @@ ms.locfileid: "55924500"
 ## <a name="rule-description"></a>Descrizione della regola
  I tipi dichiarano metodi come virtuali in modo che l'ereditarietà di tipi possa eseguire l'override dell'implementazione del metodo virtuale. Per definizione, è possibile ereditare da un tipo sealed, rendere un metodo virtuale su un tipo sealed privo di significato.
 
- I compilatori Visual Basic e c# non consentono tipi violano questa regola.
+ I compilatori Visual Basic e C# non consentono tipi violano questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impostare il metodo non virtuale o rendere ereditabile il tipo.

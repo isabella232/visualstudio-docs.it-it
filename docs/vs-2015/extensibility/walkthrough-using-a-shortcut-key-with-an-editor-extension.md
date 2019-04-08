@@ -27,7 +27,7 @@ ms.locfileid: "58963924"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creazione di un progetto Managed Extensibility Framework (MEF)  
   
-1. Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `KeyBindingTest`.  
+1. Creare un progetto C# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual C# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `KeyBindingTest`.  
   
 2. Aggiungere un modello di elemento dell'area di controllo Text Editor per il progetto e denominarlo `KeyBindingTest`. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

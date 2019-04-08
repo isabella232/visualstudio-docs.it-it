@@ -72,7 +72,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
 1.  Dal **File** menu, creare un nuovo progetto.  
   
     > [!NOTE]
-    >  Il **Progettazione Dataset** è supportato in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e i progetti c#. Creare il nuovo progetto in uno di questi linguaggi  
+    >  Il **Progettazione Dataset** è supportato in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e i progetti C#. Creare il nuovo progetto in uno di questi linguaggi  
   
 2.  Nel **nuovo progetto** nella finestra di dialogo il **tipi di progetto** riquadro, fare clic su **Windows**.  
   

@@ -36,7 +36,7 @@ ms.locfileid: "58966200"
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.  
+Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, C# o C++.  
   
  In primo luogo, è necessario chiudere eventuali soluzioni aperte.  
   
@@ -53,9 +53,9 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual c#**, o **Visual C++** nodo, quindi  
+2.  Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual C#**, o **Visual C++** nodo, quindi  
   
-    1.  Per Visual Basic o Visual c#, selezionare la **Windows** nodo, quindi selezionare **applicazione di Windows Form** nel **modelli** riquadro.  
+    1.  Per Visual Basic o Visual C#, selezionare la **Windows** nodo, quindi selezionare **applicazione di Windows Form** nel **modelli** riquadro.  
   
     2.  Per Visual C++, selezionare la **CLR** nodo, quindi selezionare **applicazione di Windows Form** nel **modelli** riquadro...  
   
@@ -129,7 +129,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
 4.  Nel **Debug** menu, scegliere **Windows**, quindi **Watch**e fare clic su **espressione di controllo1**.  
   
-5.  Nel **espressione di controllo1** finestra, fare clic su una riga vuota. Nel **Name** colonna, digitare `textBox1.Text` (se si usa Visual Basic, Visual c# o j#) o `textBox1->Text` (se si usa C++), quindi premere INVIO.  
+5.  Nel **espressione di controllo1** finestra, fare clic su una riga vuota. Nel **Name** colonna, digitare `textBox1.Text` (se si usa Visual Basic, Visual C# o j#) o `textBox1->Text` (se si usa C++), quindi premere INVIO.  
   
      Il **espressione di controllo1** finestra verrà visualizzato il valore di questa variabile tra virgolette come:  
   

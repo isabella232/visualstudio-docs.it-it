@@ -31,7 +31,7 @@ Azure SDK per consente di .NET creare, configurare, compilare, eseguire il debug
   
 1.  Nel **File** menu, creare un nuovo progetto. (Fare clic su **New** e quindi fare clic su **progetto**.)  
   
-2.  Espandere il nodo di uno **Visual Basic** oppure **c#** e quindi fare clic su **Cloud**.  
+2.  Espandere il nodo di uno **Visual Basic** oppure **C#** e quindi fare clic su **Cloud**.  
   
 3.  Nel riquadro centrale, selezionare **ottenere Azure SDK per .NET**, quindi fare clic su **OK**.  
   

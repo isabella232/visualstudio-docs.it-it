@@ -116,7 +116,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
  **NOTA:** I valori COLORREF restituiti da **GetVSSysColorEx()** contengono solo R, G, componenti B di un colore del tema. Se una voce di tema usa la trasparenza, il valore di canale alfa viene eliminato prima della restituzione. Pertanto, il colore di ambiente di interesse deve essere utilizzata in una posizione in cui il canale di trasparenza è importante, è necessario utilizzare IVsUIShell5.GetThemedColor anziché IVsUIShell2::GetVSSysColorEx, come descritto più avanti in questo argomento.
 
 ##### <a name="from-managed-code"></a>Dal codice gestito
- L'accesso al servizio VSColor attraverso il codice nativo è piuttosto semplice. Se si lavora con codice gestito, tuttavia, che determina come usare il servizio può essere difficile. Con tali presupposti, ecco un frammento di codice c# che illustra questo processo:
+ L'accesso al servizio VSColor attraverso il codice nativo è piuttosto semplice. Se si lavora con codice gestito, tuttavia, che determina come usare il servizio può essere difficile. Con tali presupposti, ecco un frammento di codice C# che illustra questo processo:
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)

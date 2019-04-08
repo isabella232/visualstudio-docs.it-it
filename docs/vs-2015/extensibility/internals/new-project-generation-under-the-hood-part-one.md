@@ -40,7 +40,7 @@ Mai pensato di come creare un proprio tipo di progetto? Chiedersi cosa succede e
   
  ![Finestra di dialogo Nuovo progetto](../../extensibility/internals/media/newproject.gif "NewProject")  
   
- Diamo uno sguardo. Il **tipi di progetto** albero sono elencati i vari tipi di progetto è possibile creare. Quando si seleziona un tipo di progetto, ad esempio **Visual c# Windows**, verrà visualizzato un elenco dei modelli di applicazione per iniziare a usare. **Modelli Visual Studio installati** vengono installati da Visual Studio e sono disponibili a tutti gli utenti del computer in uso. Nuovi modelli di creazione o la raccolta possono essere aggiunto a **modelli personali** e sono accessibili solo all'utente.  
+ Diamo uno sguardo. Il **tipi di progetto** albero sono elencati i vari tipi di progetto è possibile creare. Quando si seleziona un tipo di progetto, ad esempio **Visual C# Windows**, verrà visualizzato un elenco dei modelli di applicazione per iniziare a usare. **Modelli Visual Studio installati** vengono installati da Visual Studio e sono disponibili a tutti gli utenti del computer in uso. Nuovi modelli di creazione o la raccolta possono essere aggiunto a **modelli personali** e sono accessibili solo all'utente.  
   
  Quando si seleziona un modello simile **dell'applicazione Windows**, nella finestra di dialogo, in questo caso, viene visualizzata una descrizione del tipo di applicazione **un progetto per la creazione di un'applicazione con un'interfaccia utente di Windows**.  
   
@@ -62,7 +62,7 @@ devenv /installvstemplates
 ```  
   
 ### <a name="project-types"></a>Tipi di progetto  
- La posizione e i nomi del **tipi di progetto** radice, ad esempio, i nodi **Visual c#** e **altri linguaggi**, viene determinato dalle voci di registro di sistema. L'organizzazione dei nodi figlio, ad esempio **Database** e **Smart Device**, rispecchia la gerarchia delle cartelle che contengono i file con estensione vstemplate corrispondenti. Esaminiamo i nodi radice prima di tutto.  
+ La posizione e i nomi del **tipi di progetto** radice, ad esempio, i nodi **Visual C#** e **altri linguaggi**, viene determinato dalle voci di registro di sistema. L'organizzazione dei nodi figlio, ad esempio **Database** e **Smart Device**, rispecchia la gerarchia delle cartelle che contengono i file con estensione vstemplate corrispondenti. Esaminiamo i nodi radice prima di tutto.  
   
 #### <a name="project-type-root-nodes"></a>Nodi radice di tipo di progetto  
  Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene inizializzato, attraversa le sottochiavi della chiave del Registro di sistema del sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs per creare e denominare i nodi radice del **tipidiprogetto** struttura ad albero. Queste informazioni sono memorizzato nella cache per un uso successivo. Esaminare il TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC il} \\ /1 chiave. Ogni voce è un GUID di VSPackage. Il nome della sottochiave (/ 1) viene ignorato, ma la sua presenza indica che si tratta di un **tipi di progetto** nodo radice. Un nodo radice potrebbe essere a sua volta sottochiavi diverse che consentono di controllare l'aspetto nella **tipi di progetto** struttura ad albero. Esaminiamo alcune di esse.  
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Percorso di installazione di Visual Studio > \VC#\VCSPackages\1033\csprojui.dll  
   
- Per verificarlo, aprire Esplora File e trascinare csprojui.dll nella directory di Visual Studio... Tabella di stringhe viene illustrato che risorse 2345 # contiene la didascalia **Visual c#**.  
+ Per verificarlo, aprire Esplora File e trascinare csprojui.dll nella directory di Visual Studio... Tabella di stringhe viene illustrato che risorse 2345 # contiene la didascalia **Visual C#**.  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Questa impostazione determina la posizione del nodo radice nel **tipi di progetto** struttura ad albero.  
@@ -94,7 +94,7 @@ devenv /installvstemplates
   
  REG_SZ DeveloperActivityVC#  
   
- indica che Visual c# è un nodo radice se Visual Studio è impostato per [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] lo sviluppo. In caso contrario, sarà un nodo figlio del **altri linguaggi**.  
+ indica che Visual C# è un nodo radice se Visual Studio è impostato per [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] lo sviluppo. In caso contrario, sarà un nodo figlio del **altri linguaggi**.  
   
 ##### <a name="folder"></a>Cartella  
  Se questa sottochiave è presente, il nodo radice diventa quindi un nodo figlio della cartella specificata. Viene visualizzato un elenco di possibili cartelle sotto la chiave  
@@ -106,7 +106,7 @@ devenv /installvstemplates
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>I nodi figlio di tipo di progetto e i file. vstdir  
  La posizione dei nodi figlio di **tipi di progetto** albero segue la gerarchia delle cartelle nelle cartelle ProjectTemplates. Per i modelli di computer (**Modelli Visual Studio installati**), il percorso tipico è \Programmi\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\ e per i modelli utente (**modelli personali**), il percorso tipico è Documents\Visual Studio 14.0\Templates\ProjectTemplates\\. Le gerarchie di cartelle da questi due percorsi vengono unite per creare il **tipi di progetto** struttura ad albero.  
   
- Per Visual Studio con c# impostazioni modalità sviluppatore, il **tipi di progetto** albero simile al seguente:  
+ Per Visual Studio con C# impostazioni modalità sviluppatore, il **tipi di progetto** albero simile al seguente:  
   
  ![Tipi di progetto](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
@@ -131,7 +131,7 @@ devenv /installvstemplates
 <ProjectType>CSharp</ProjectType>  
 ```  
   
- Il \<ProjectType > tag e non la sottocartella nella cartella ProjectTemplates, determina il nodo radice di un'applicazione nel **tipi di progetto** struttura ad albero. Nell'esempio, le applicazioni di Windows CE queste appariranno sotto la **Visual c#** nodo radice, e anche se si intende spostare la cartella WindowsCE nella cartella VisualBasic, le applicazioni di Windows CE comunque queste appariranno sotto la  **Visual c#** nodo radice.  
+ Il \<ProjectType > tag e non la sottocartella nella cartella ProjectTemplates, determina il nodo radice di un'applicazione nel **tipi di progetto** struttura ad albero. Nell'esempio, le applicazioni di Windows CE queste appariranno sotto la **Visual C#** nodo radice, e anche se si intende spostare la cartella WindowsCE nella cartella VisualBasic, le applicazioni di Windows CE comunque queste appariranno sotto la  **Visual C#** nodo radice.  
   
 ##### <a name="localizing-the-node-name"></a>Localizzare il nome del nodo  
  Quando Visual Studio attraversa le cartelle ProjectTemplates, esamina tutti i file. vstdir rilevati. Un file. vstdir è un file XML che controlla l'aspetto del tipo di progetto nel **nuovo progetto** nella finestra di dialogo. Nel file. vstdir, usare il \<LocalizedName > tag al nome il **tipi di progetto** nodo.  
@@ -208,11 +208,11 @@ devenv /installvstemplates
   
    Aprire Visual Studio.  
   
-10. Aprire il **nuovo progetto** finestra di dialogo casella ed espandere le **Visual c#** nodo del progetto.  
+10. Aprire il **nuovo progetto** finestra di dialogo casella ed espandere le **Visual C#** nodo del progetto.  
   
     ![Nodo progetto personalizzato](../../extensibility/internals/media/myprojectnode.png "nodo progetto personalizzato")  
   
-    **Nodo progetto personalizzato** visualizzato come nodo figlio di Visual c# appena sotto il nodo di Windows.  
+    **Nodo progetto personalizzato** visualizzato come nodo figlio di Visual C# appena sotto il nodo di Windows.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Nuova generazione del progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

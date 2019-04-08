@@ -287,4 +287,4 @@ ms.locfileid: "57870478"
 
 1.  Controllare l'elenco degli [scelte rapide di Visual Studio 2013](http://visualstudioshortcuts.com/2013/) per determinare se sono presenti comandi simili a quelle in uso con gruppo.
 
-2.  Passare a **strumenti > Opzioni > ambiente > tasti** e testare il collegamento. Selezionare che ogni schema di mappatura della tastiera elencato in "Applica il seguente schema di mappatura della tastiera aggiuntive". Controllare i profili in generale, c#, VB e C++, come quelle condivise tasti di scelta rapida univoci. Il collegamento è disponibile se non è mappata in una qualsiasi di queste posizioni.
+2.  Passare a **strumenti > Opzioni > ambiente > tasti** e testare il collegamento. Selezionare che ogni schema di mappatura della tastiera elencato in "Applica il seguente schema di mappatura della tastiera aggiuntive". Controllare i profili in generale, C#, VB e C++, come quelle condivise tasti di scelta rapida univoci. Il collegamento è disponibile se non è mappata in una qualsiasi di queste posizioni.

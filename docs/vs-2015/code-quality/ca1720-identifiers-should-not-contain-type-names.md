@@ -40,7 +40,7 @@ ms.locfileid: "58967689"
  Il nome di un membro visibile esternamente contiene un nome di tipo di dati specifico del linguaggio.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I nomi dei parametri e membri sono meglio utilizzati per comunicare il significato di to descriverne il tipo, il quale viene in genere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario utilizzare un nome di tipo di dati, usare un nome indipendente dalla lingua anziché uno specifico del linguaggio. Anziché il nome di tipo c# 'int', ad esempio, usare il nome del tipo di dati indipendenti dal linguaggio, Int32.
+ I nomi dei parametri e membri sono meglio utilizzati per comunicare il significato di to descriverne il tipo, il quale viene in genere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario utilizzare un nome di tipo di dati, usare un nome indipendente dalla lingua anziché uno specifico del linguaggio. Anziché il nome di tipo C# 'int', ad esempio, usare il nome del tipo di dati indipendenti dal linguaggio, Int32.
 
  Ogni token discreti il nome del parametro o un membro viene confrontato con i nomi dei tipi di dati specifico del linguaggio seguenti, in modo tra maiuscole e minuscole:
 

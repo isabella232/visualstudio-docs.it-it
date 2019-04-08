@@ -144,7 +144,7 @@ ms.locfileid: "58967912"
 ## <a name="implementing-the-dynamic-menu-command"></a>Implementazione del comando di menu dinamico  
  Si crea una classe di comando di menu dinamico che eredita da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. In questa implementazione, il costruttore viene specificato un predicato da utilizzare per la corrispondenza di comandi. È necessario eseguire l'override di <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> metodo da usare il predicato per impostare il <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> proprietà, che identifica il comando da richiamare.  
   
-1.  Creare un nuovo file classe c# denominato DynamicItemMenuCommand.cs e aggiungere una classe denominata **DynamicItemMenuCommand** che eredita da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1.  Creare un nuovo file classe C# denominato DynamicItemMenuCommand.cs e aggiungere una classe denominata **DynamicItemMenuCommand** che eredita da <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  

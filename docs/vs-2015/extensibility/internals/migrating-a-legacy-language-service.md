@@ -85,7 +85,7 @@ ms.locfileid: "58955647"
   
 10. È necessario aggiungere un file vsixmanifest.  
   
-    -   Copiare questo file da un'estensione esistente alla directory del progetto. (Un modo per ottenere questo file consiste nel creare un progetto VSIX (sotto **File**, fare clic su **New**, quindi fare clic su **progetto**. Fare clic in Visual Basic o c# **estendibilità**, quindi selezionare **progetto VSIX**.)  
+    -   Copiare questo file da un'estensione esistente alla directory del progetto. (Un modo per ottenere questo file consiste nel creare un progetto VSIX (sotto **File**, fare clic su **New**, quindi fare clic su **progetto**. Fare clic in Visual Basic o C# **estendibilità**, quindi selezionare **progetto VSIX**.)  
   
     -   Aggiungere il file al progetto.  
   

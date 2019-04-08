@@ -26,7 +26,7 @@ Nel processo, si apprenderà come:
 * **[Modificare il codice sorgente](#modify-the-source-code)**
 * **[Eseguirlo](#run-it)**
 
-In questo esempio si userà Visual c# per aggiungere che un pulsante di menu personalizzato denominato "Say Hello World!" che aspetto simile al seguente:
+In questo esempio si userà Visual C# per aggiungere che un pulsante di menu personalizzato denominato "Say Hello World!" che aspetto simile al seguente:
 
 ![Comando di Hello World](media/hello-world-say-hello-world.png)
 

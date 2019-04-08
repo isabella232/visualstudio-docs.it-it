@@ -40,7 +40,7 @@ int GetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parametri  
  `pguidLang`  
- [out] Il `GUID` del linguaggio di questo processo. `GUID_NULL` (C++) o `Guid.Empty` (c#) significa che la lingua non è impostata.  
+ [out] Il `GUID` del linguaggio di questo processo. `GUID_NULL` (C++) o `Guid.Empty` (C#) significa che la lingua non è impostata.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  

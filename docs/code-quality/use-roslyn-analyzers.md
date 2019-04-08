@@ -20,7 +20,7 @@ ms.locfileid: "58515337"
 ---
 # <a name="use-roslyn-analyzers"></a>Usare gli analizzatori di Roslyn
 
-Le regole dell'analizzatore di .NET compiler Platform ("Roslyn"), oppure *diagnostica*, analizzare il codice c# o Visual Basic mentre si digita. Ogni dato diagnostico ha uno stato di gravità e la soppressione predefinito che può essere sovrascritto per il progetto. Questo articolo illustra l'impostazione regola livello di gravità, usando i set di regole e le violazioni di disattivazione.
+Le regole dell'analizzatore di .NET compiler Platform ("Roslyn"), oppure *diagnostica*, analizzare il codice C# o Visual Basic mentre si digita. Ogni dato diagnostico ha uno stato di gravità e la soppressione predefinito che può essere sovrascritto per il progetto. Questo articolo illustra l'impostazione regola livello di gravità, usando i set di regole e le violazioni di disattivazione.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analizzatori in Esplora soluzioni
 
@@ -124,7 +124,7 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **In origine**  oppure **sopprimere** > **nel File di eliminazione**.
 
-- Se si seleziona **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del linguaggio c# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
+- Se si seleziona **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del linguaggio C# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
 
    ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
 

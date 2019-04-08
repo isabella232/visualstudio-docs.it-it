@@ -40,7 +40,7 @@ A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i model
  A partire da Visual Studio 2015 SDK, sono disponibili diverse opzioni per la creazione di estensioni, a seconda del linguaggio di programmazione in uso.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# e Visual Basic
- Per c# e Visual Basic, sussiste una gamma completa di modelli di elemento di progetto che consentono di creare pacchetti VSPackage, i comandi di menu, finestre degli strumenti, editor classificatori, le aree di controllo dell'editor e le estensioni margine dell'editor. È possibile aggiungere alcuni o tutti questi componenti al progetto VSIX standard. Per altre informazioni, vedere:
+ Per C# e Visual Basic, sussiste una gamma completa di modelli di elemento di progetto che consentono di creare pacchetti VSPackage, i comandi di menu, finestre degli strumenti, editor classificatori, le aree di controllo dell'editor e le estensioni margine dell'editor. È possibile aggiungere alcuni o tutti questi componenti al progetto VSIX standard. Per altre informazioni, vedere:
 
 -   [Creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,7 +50,7 @@ A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i model
 
 -   [Creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     La creazione guidata pacchetto VSPackage non crea più estensioni in c# o Visual Basic.
+     La creazione guidata pacchetto VSPackage non crea più estensioni in C# o Visual Basic.
 
 ### <a name="c"></a>C++
  Per C++, la creazione guidata pacchetto Visual Studio supporta i comandi di menu, finestre degli strumenti ed editor personalizzati. Cercala nella **nuovo progetto** finestra di dialogo **Visual C++ / Extensibility**.

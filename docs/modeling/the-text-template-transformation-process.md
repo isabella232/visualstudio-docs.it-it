@@ -17,7 +17,7 @@ ms.lasthandoff: 02/08/2019
 ms.locfileid: "55929323"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
-Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o c# oppure è possibile generare un report HTML.
+Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o C# oppure è possibile generare un report HTML.
 
  Tre componenti di partecipano a questo processo: il motore, l'host e i processori di direttiva. Il motore controlla il processo. interagisce con l'host e il processore di direttiva per generare il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di assembly e file. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura dei dati da un file XML o un database.
 

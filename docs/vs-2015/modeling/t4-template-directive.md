@@ -36,7 +36,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
  `compilerOptions="optimize+"`  
   
  Valori validi:  
- Qualsiasi opzione del compilatore valida. Per altre informazioni, vedere [c# Compiler Options Listed by categoria](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [opzioni del compilatore Visual Basic elencate per categoria](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Qualsiasi opzione del compilatore valida. Per altre informazioni, vedere [C# Compiler Options Listed by categoria](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [opzioni del compilatore Visual Basic elencate per categoria](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignorato per i modelli (pre-elaborati) della fase di esecuzione.  
   

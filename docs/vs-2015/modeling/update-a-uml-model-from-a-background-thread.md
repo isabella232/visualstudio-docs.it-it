@@ -1,23 +1,20 @@
 ---
 title: Aggiornare un modello UML da un thread in background | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969371"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aggiornare un modello UML da un thread in background
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +23,7 @@ A volte può essere utile apportare modifiche a un modello in un thread in backg
   
  È tuttavia necessario tenere presente che l'archivio UML non è thread-safe. Ecco alcune precauzioni importanti:  
   
--   Ogni aggiornamento a un modello o a un diagramma deve essere eseguito nel thread dell'interfaccia utente. Il thread in background deve usare <xref:System.Windows.Forms.Control.Invoke%2A> o `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> per fare in modo che il thread dell'interfaccia utente esegua gli aggiornamenti effettivi.  
+-   Ogni aggiornamento a un modello o a un diagramma deve essere eseguito nel thread dell'interfaccia utente.  Il thread in background deve usare <xref:System.Windows.Forms.Control.Invoke%2A> o `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> per fare in modo che il thread dell'interfaccia utente esegua gli aggiornamenti effettivi.  
   
 -   Se si raggruppa una serie di modifiche in un'unica transazione, è consigliabile impedire all'utente di modificare il modello mentre la transazione è in corso. In caso contrario, qualsiasi modifica apportata dall'utente diventerà parte della stessa transazione. È possibile impedire all'utente di apportare modifiche visualizzando una finestra di dialogo modale. Eventualmente, è possibile visualizzare un pulsante Annulla nella finestra di dialogo. L'utente può visualizzare le modifiche man mano che si verificano.  
   
@@ -193,6 +190,3 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 ## <a name="see-also"></a>Vedere anche  
  [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definire un gestore modelli in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-
-

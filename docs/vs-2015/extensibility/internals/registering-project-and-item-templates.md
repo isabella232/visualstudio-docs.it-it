@@ -67,7 +67,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 ### <a name="registering-file-filters"></a>La registrazione di filtri file  
  Facoltativamente, è possibile registrare i filtri che [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizza quando richiesto, specificare i nomi file. Ad esempio, il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Filtra per il **Apri File** è la finestra di dialogo:  
   
- **File Visual c# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*, RESX\*Settings,\*XSD,\*. WSDL)**  
+ **File Visual C# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*, RESX\*Settings,\*XSD,\*. WSDL)**  
   
  Per supportare la registrazione di più filtri, ogni filtro è registrato nella propria sottochiave in HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versione*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*sottochiave*>. Il nome della sottochiave è arbitrario. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignora il nome della sottochiave e utilizza solo i relativi valori.  
   

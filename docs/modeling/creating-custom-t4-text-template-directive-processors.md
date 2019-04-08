@@ -60,7 +60,7 @@ Dopo tutte le chiamate a ProcessDirective () il motore del modello chiameranno t
 
 -   `string[] GetImportsForProcessingRun()` -Restituire gli spazi dei nomi che può essere usato nel codice del modello.
 
--   `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice c# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.
+-   `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice C# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.
 
 -   Per altre informazioni, vedere [Procedura dettagliata: Creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 

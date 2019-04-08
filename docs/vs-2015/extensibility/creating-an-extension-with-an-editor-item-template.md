@@ -20,7 +20,7 @@ ms.locfileid: "58968626"
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Creazione di un'estensione con un modello di elemento dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare i modelli di elementi inclusi in Visual Studio SDK per creare estensioni di editor di base di classificatori, le aree di controllo e i margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual c# o Visual Basic VSIX.  
+È possibile usare i modelli di elementi inclusi in Visual Studio SDK per creare estensioni di editor di base di classificatori, le aree di controllo e i margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual C# o Visual Basic VSIX.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -28,9 +28,9 @@ ms.locfileid: "58968626"
 ## <a name="creating-a-classifier-extension"></a>Creazione di un'estensione di classificazione  
  Il modello di elemento di classificatore Editor Crea un classificatore editor che colora il testo appropriato (in questo caso, tutto) in qualsiasi file di testo.  
   
-1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestClassifier`. Fare clic su **OK**.  
+1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual C#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestClassifier`. Fare clic su **OK**.  
   
-2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **classificatore Editor**. Lasciare il nome file predefinito (EditorClassifier1.cs).  
+2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual C# **estendibilità** nodo e selezionare **classificatore Editor**. Lasciare il nome file predefinito (EditorClassifier1.cs).  
   
 3.  Sono presenti tre file di codice, come indicato di seguito:  
   
@@ -49,9 +49,9 @@ ms.locfileid: "58968626"
 ## <a name="creating-a-text-relative-adornment-extension"></a>Creazione di un'estensione dell'area di controllo relativo al testo  
  Il modello di area di controllo Text Editor crea un'area di controllo di testo relativa che decora tutte le istanze dei caratteri del testo "a" tramite una finestra che ha un bordo rosso e uno sfondo blu. È relativo al testo perché la casella sempre le sovrimpressioni 'a' caratteri, anche quando vengono spostati o riformattati.  
   
-1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestAdornment`. Fare clic su **OK**.  
+1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual C#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestAdornment`. Fare clic su **OK**.  
   
-2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **Editor di testo Adornment**. Lasciare il nome file predefinito (TextAdornment1.cs/vb).  
+2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual C# **estendibilità** nodo e selezionare **Editor di testo Adornment**. Lasciare il nome file predefinito (TextAdornment1.cs/vb).  
   
 3.  Sono presenti due file di codice, come indicato di seguito:  
   
@@ -69,9 +69,9 @@ ms.locfileid: "58968626"
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Per creare un'estensione dell'area di controllo del riquadro di visualizzazione utilizzando il modello di area di controllo del riquadro di visualizzazione dell'Editor  
   
-1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `ViewportAdornment`. Fare clic su **OK**.  
+1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual C#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `ViewportAdornment`. Fare clic su **OK**.  
   
-2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **dell'area di controllo del riquadro di visualizzazione dell'Editor**. Lasciare il nome file predefinito (ViewportAdornment1.cs/vb).  
+2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual C# **estendibilità** nodo e selezionare **dell'area di controllo del riquadro di visualizzazione dell'Editor**. Lasciare il nome file predefinito (ViewportAdornment1.cs/vb).  
   
 3.  Sono presenti due file di codice, come indicato di seguito:  
   
@@ -86,9 +86,9 @@ ms.locfileid: "58968626"
   
 #### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Per creare un'estensione di margine usando il modello di margine dell'Editor  
   
-1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `MarginExtension`. Fare clic su **OK**.  
+1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual C#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `MarginExtension`. Fare clic su **OK**.  
   
-2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **dell'area di controllo del riquadro di visualizzazione dell'Editor**. Lasciare il nome file predefinito (EditorMargin1.cs/vb).  
+2.  Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Passare a Visual C# **estendibilità** nodo e selezionare **dell'area di controllo del riquadro di visualizzazione dell'Editor**. Lasciare il nome file predefinito (EditorMargin1.cs/vb).  
   
 3.  Sono presenti due file di codice, come indicato di seguito:  
   

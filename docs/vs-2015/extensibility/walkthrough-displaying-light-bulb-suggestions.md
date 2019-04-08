@@ -20,7 +20,7 @@ ms.locfileid: "58955283"
 
 Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono per visualizzare un set di azioni, ad esempio correzioni per problemi identificati dagli analizzatori di codice predefiniti o il refactoring del codice.  
   
- Negli editor di Visual c# e Visual Basic, è anche possibile usare .NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti personalizzati analizzatori di codice con le azioni che consentono di visualizzare le lampadine automaticamente. Per altre informazioni, vedere:  
+ Negli editor di Visual C# e Visual Basic, è anche possibile usare .NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti personalizzati analizzatori di codice con le azioni che consentono di visualizzare le lampadine automaticamente. Per altre informazioni, vedere:  
   
 - [Procedura: Scrivere un C# diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
@@ -28,7 +28,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
   
   Altri linguaggi come C++ forniscono anche le lampadine per alcune azioni rapide, ad esempio un suggerimento per creare un'implementazione stub della funzione.  
   
-  Ecco come appare una lampadina. In un progetto Visual Basic o Visual c#, una sottolineatura ondulata rossa viene visualizzata sotto un nome di variabile quando non è valido. Quando si passa il mouse sull'identificatore non valido, un indicatore lampadina viene visualizzata accanto al cursore.  
+  Ecco come appare una lampadina. In un progetto Visual Basic o Visual C#, una sottolineatura ondulata rossa viene visualizzata sotto un nome di variabile quando non è valido. Quando si passa il mouse sull'identificatore non valido, un indicatore lampadina viene visualizzata accanto al cursore.  
   
   ![lampadina](../extensibility/media/lightbulb.png "a forma di lampadina")  
   
@@ -43,7 +43,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creazione di un progetto Managed Extensibility Framework (MEF)  
   
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `LightBulbTest`.  
+1.  Creare un progetto C# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual C# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `LightBulbTest`.  
   
 2.  Aggiungere un **classificatore Editor** modello di elemento al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

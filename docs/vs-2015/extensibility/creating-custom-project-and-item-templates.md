@@ -29,7 +29,7 @@ A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i model
 
 ## <a name="create-a-project-template"></a>Creare un modello di progetto
 
-1.  Creare un progetto di modello di progetto. È possibile trovare il modello di progetto di **nuovo progetto** finestra di dialogo, in Visual Basic o Visual c# **estendibilità** cartella.
+1.  Creare un progetto di modello di progetto. È possibile trovare il modello di progetto di **nuovo progetto** finestra di dialogo, in Visual Basic o Visual C# **estendibilità** cartella.
 
      Il modello genera un file di classe, un'icona, un file con estensione vstemplate, un file di progetto modificabile denominato ProjectTemplate o csproj e alcuni file che in genere vengono generati da altri tipi di progetto, questo tipo un file resources. resx, un AssemblyInfo file e un file Settings. Ogni file di codice contiene le sostituzioni dei parametri comuni nei casi appropriati.
 
@@ -77,7 +77,7 @@ A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i model
 
 4.  Compilare la soluzione e premere F5. Viene visualizzata l'istanza sperimentale.
 
-5.  Per un progetto di modello di progetto, verrà visualizzato il modello di progetto elencato nella **nuovo progetto** finestra di dialogo (**File / nuovo / progetto**), nel nodo Visual Basic o Visual c#. Per un progetto di modello di elemento, si dovrebbe essere elencato nella finestra di dialogo Aggiungi nuovo elemento del modello di elemento (nelle **Esplora soluzioni**, selezionare il nodo del progetto e fare clic su **Aggiungi / nuovo elemento**).
+5.  Per un progetto di modello di progetto, verrà visualizzato il modello di progetto elencato nella **nuovo progetto** finestra di dialogo (**File / nuovo / progetto**), nel nodo Visual Basic o Visual C#. Per un progetto di modello di elemento, si dovrebbe essere elencato nella finestra di dialogo Aggiungi nuovo elemento del modello di elemento (nelle **Esplora soluzioni**, selezionare il nodo del progetto e fare clic su **Aggiungi / nuovo elemento**).
 
 ## <a name="see-also"></a>Vedere anche
 

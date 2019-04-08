@@ -109,7 +109,7 @@ public struct DEBUG_ADDRESS_UNION {
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come interpretare un tipo di indirizzo (`METADATA_ADDRESS_ARRAYELEM`) del `DEBUG_ADDRESS_UNION` struttura nel linguaggio c#. Gli elementi rimanenti possono essere interpretati nello stesso modo.  
+ In questo esempio viene illustrato come interpretare un tipo di indirizzo (`METADATA_ADDRESS_ARRAYELEM`) del `DEBUG_ADDRESS_UNION` struttura nel linguaggio C#. Gli elementi rimanenti possono essere interpretati nello stesso modo.  
   
 ```csharp  
 using System;  

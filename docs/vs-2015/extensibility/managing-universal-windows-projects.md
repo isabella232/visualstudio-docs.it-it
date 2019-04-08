@@ -25,7 +25,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
   
 ### <a name="navigate-the-shared-project"></a>Passare al progetto condiviso  
   
-1.  Creare un progetto VSIX c# denominato **TestUniversalProject**. (**File, nuovo, progetto** e quindi **il pacchetto di Visual Studio c#, estendibilità,**). Aggiungi un **comando personalizzato** modello di elemento di progetto (in Esplora soluzioni fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**, quindi passare a **estendibilità**). Denominare il file **TestUniversalProject**.  
+1.  Creare un progetto VSIX C# denominato **TestUniversalProject**. (**File, nuovo, progetto** e quindi **il pacchetto di Visual Studio C#, estendibilità,**). Aggiungi un **comando personalizzato** modello di elemento di progetto (in Esplora soluzioni fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**, quindi passare a **estendibilità**). Denominare il file **TestUniversalProject**.  
   
 2.  Aggiungere un riferimento a Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll e Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (nelle **estensioni** sezione).  
   
@@ -293,7 +293,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');  
     ```  
   
-16. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub c# nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual c# / Windows / Windows 8 / universale / App Hub**). Dopo il caricamento della soluzione, passare al **strumenti** menu e fare clic su **TestUniversalProject richiamare**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
+16. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub C# nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual C# / Windows / Windows 8 / universale / App Hub**). Dopo il caricamento della soluzione, passare al **strumenti** menu e fare clic su **TestUniversalProject richiamare**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -355,7 +355,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub c# nell'istanza sperimentale (nelle **nuovo progetto** nella finestra di dialogo **Visual c# / Windows / Windows 8 / universale / App Hub**) andare alla **strumenti** menu e scegliere **richiamare TestUniversalProject**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
+4.  Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub C# nell'istanza sperimentale (nelle **nuovo progetto** nella finestra di dialogo **Visual C# / Windows / Windows 8 / universale / App Hub**) andare alla **strumenti** menu e scegliere **richiamare TestUniversalProject**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -555,7 +555,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     this.ModifyFileNameInProject(sharedHier, fullPath);  
     ```  
   
-11. Compilare ed eseguire il progetto. Creare un'app universale hub c# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Il nome del primo elemento condiviso progetto (si presume che sia il file app. XAML) deve essere modificato e verificare che il <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha generato l'evento. In questo caso, poiché la ridenominazione di App. XAML provoca App.xaml.cs da rinominare anche, dovrebbe essere quattro eventi (due per ogni progetto della piattaforma). (Gli eventi DTE non rilevare gli elementi nel progetto condiviso). Si dovrebbe visualizzare due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ognuno dei progetti di piattaforma), ma non <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> gli eventi.  
+11. Compilare ed eseguire il progetto. Creare un'app universale hub C# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Il nome del primo elemento condiviso progetto (si presume che sia il file app. XAML) deve essere modificato e verificare che il <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha generato l'evento. In questo caso, poiché la ridenominazione di App. XAML provoca App.xaml.cs da rinominare anche, dovrebbe essere quattro eventi (due per ogni progetto della piattaforma). (Gli eventi DTE non rilevare gli elementi nel progetto condiviso). Si dovrebbe visualizzare due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ognuno dei progetti di piattaforma), ma non <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> gli eventi.  
   
 12. Ora provare a rinominare un file in un progetto di piattaforma ed è possibile visualizzare la differenza tra gli eventi che vengono generate. Aggiungere il codice seguente nel `ShowMessageBox` dopo la chiamata a `ModifyFileName`.  
   
@@ -572,4 +572,4 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);  
     ```  
   
-13. Compilare ed eseguire il progetto. Creare un progetto universale c# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Dopo la ridenominazione di file nel progetto di piattaforma, dovrebbe essere sia un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventi e un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Dopo aver modificato il file non causato da nessun altro file da modificare e poiché le modifiche agli elementi in un progetto di piattaforma non vengono propagate in qualsiasi punto, è solo uno di questi eventi.
+13. Compilare ed eseguire il progetto. Creare un progetto universale C# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Dopo la ridenominazione di file nel progetto di piattaforma, dovrebbe essere sia un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventi e un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Dopo aver modificato il file non causato da nessun altro file da modificare e poiché le modifiche agli elementi in un progetto di piattaforma non vengono propagate in qualsiasi punto, è solo uno di questi eventi.

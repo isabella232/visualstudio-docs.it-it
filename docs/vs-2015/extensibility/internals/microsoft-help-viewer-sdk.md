@@ -63,7 +63,7 @@ Questo articolo contiene le attività seguenti per gli integratori di Visualizza
 
 - JavaScript
 
-- in c# o CSharp
+- in C# o CSharp
 
 - cplusplus o Visual c++ o c + +
 

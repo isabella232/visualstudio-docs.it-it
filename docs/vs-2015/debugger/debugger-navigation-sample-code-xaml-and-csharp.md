@@ -1,5 +1,5 @@
 ---
-title: Il debugger di codice di esempio di navigazione (Xaml e c#) | Microsoft Docs
+title: Il debugger di codice di esempio di navigazione (Xaml e C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,7 +24,7 @@ ms.locfileid: "58967622"
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>Codice di esempio di navigazione del debugger (Xaml e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il codice in questo argomento è il file di esempio per la [esplorare una sessione di debug (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) argomento.  
+Il codice in questo argomento è il file di esempio per la [esplorare una sessione di debug (Xaml e C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) argomento.  
   
 ## <a name="sample-code"></a>Codice di esempio  
   

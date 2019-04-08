@@ -38,10 +38,10 @@ ms.locfileid: "58967693"
 ## <a name="rule-description"></a>Descrizione della regola
  Il `VarArgs` convenzione di chiamata viene usato con alcune definizioni di metodi che accettano un numero variabile di parametri. Un metodo tramite la `VarArgs` convenzione di chiamata non Common Language Specification (conforme a CLS) e potrebbe non essere accessibile in linguaggi di programmazione.
 
- In c#, il `VarArgs` convenzione di chiamata viene utilizzato quando l'elenco dei parametri del metodo termina con il `__arglist` (parola chiave). Visual Basic non supporta il `VarArgs` convenzione di chiamata e Visual C++ consente l'utilizzo solo nel codice non gestito che utilizza l'ellisse `...` notation.
+ In C#, il `VarArgs` convenzione di chiamata viene utilizzato quando l'elenco dei parametri del metodo termina con il `__arglist` (parola chiave). Visual Basic non supporta il `VarArgs` convenzione di chiamata e Visual C++ consente l'utilizzo solo nel codice non gestito che utilizza l'ellisse `...` notation.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione della regola nel linguaggio c#, usare il [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) parola chiave anziché `__arglist`.
+ Per correggere una violazione della regola nel linguaggio C#, usare il [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) parola chiave anziché `__arglist`.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

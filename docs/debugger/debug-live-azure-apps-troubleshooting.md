@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di debug snapshot | Microsoft Docs
+title: Risoluzione dei problemi relativi al debug di snapshot | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/07/2018
 ms.topic: troubleshooting
@@ -11,93 +11,138 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2213c1e573efa1811d3b578c3d7bd92f1b77f2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526415"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857762"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se i passaggi descritti in questo articolo non risolvono il problema, contattare il tecnico snaphelp@microsoft.com.
+Se i passaggi descritti in questo articolo non risolvono il problema, contattare snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Punto di ancoraggio non attiva
+## <a name="issue-snappoint-does-not-turn-on"></a>Problema: il punto di acquisizione snapshot di ancoraggio non viene attivato
 
-Se viene visualizzata un'icona di avviso ![icona di avviso punto di ancoraggio](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "icona di avviso punto di ancoraggio") con il punto di ancoraggio anziché l'icona di punto di ancoraggio regolari, quindi il punto di ancoraggio non è attivata.
+Se viene visualizzata un'icona di avviso ![Icona di avviso punto di acquisizione snapshot](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icona di avviso punto di acquisizione snapshot") con il punto di acquisizione snapshot al posto della normale icona di punto di acquisizione snapshot, questo significa che il punto di acquisizione snapshot non è attivato.
 
-![Punto di ancoraggio non attivata](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "punto di ancoraggio non attiva")
+![Punto di acquisizione snapshot non attivato](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Punto di acquisizione snapshot non attivato")
 
-Eseguire questi passaggi:
+Seguire questa procedura:
 
-1. Assicurarsi di avere la stessa versione del codice sorgente che è stato usato per compilare e distribuire il app.isua1. Assicurarsi che si siano caricando i simboli corretti per la distribuzione. A tale scopo, visualizzare il **moduli** finestra durante il debug di Snapshot e verificare la colonna del File di simboli viene illustrato un file con estensione pdb caricato per il modulo si esegue il debug. Il Debugger di Snapshot tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
+1. Assicurarsi di avere la stessa versione del codice sorgente che è stata usata per compilare e distribuire l'app. Assicurarsi di caricare i simboli corretti per la distribuzione. A tale scopo, visualizzare la finestra **Moduli** durante il debug di snapshot e verificare che nella colonna File di simboli sia indicato un file con estensione pdb caricato per il modulo di cui si esegue il debug. Snapshot Debugger tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: I simboli non vengono caricati quando si apre uno Snapshot
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: i simboli non vengono caricati quando si apre uno snapshot
 
-Se verrà visualizzata la seguente finestra, i simboli non è stato caricato.
+Se viene visualizzata la finestra seguente, i simboli non sono stati caricati.
 
-![Non è possibile caricare i simboli](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "non è possibile caricare i simboli")
+![Simboli non caricati](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "Simboli non caricati")
 
-Eseguire questi passaggi:
+Seguire questa procedura:
 
-- Fare clic su di **modificare le impostazioni dei simboli...** collegamento in questa pagina. Nel **Debug > simboli** impostazioni, aggiungere una directory cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
+- Fare clic sul collegamento **Cambia impostazioni simboli** in questa pagina. Nelle impostazioni **Debug > Simboli** aggiungere una directory di cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
 
-   I simboli o un file con estensione pdb, disponibili nel progetto devono corrispondere la distribuzione del servizio App. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, integrazione continua/recapito Continuo con le pipeline di Azure o Kudu, e così via) verranno pubblicati i file di simboli insieme al servizio App. Impostare la directory cache dei simboli consente a Visual Studio usare questi simboli.
+   I simboli, o file con estensione pdb, disponibili nel progetto devono corrispondere alla distribuzione del servizio app. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, CI/CD con Azure Pipelines o Kudu e così via) pubblica i file di simboli insieme al servizio app. L'impostazione della directory di cache dei simboli consente a Visual Studio di usarli.
 
-   ![Impostazioni dei simboli](../debugger/media/snapshot-troubleshooting-symbol-settings.png "impostazioni dei simboli")
+   ![Impostazioni simboli](../debugger/media/snapshot-troubleshooting-symbol-settings.png "Impostazioni simboli")
 
-- In alternativa, se l'organizzazione Usa un server di simboli o Elimina i simboli in un percorso diverso, usare le impostazioni dei simboli per caricare i simboli corretti per la distribuzione.
+- In alternativa, se l'organizzazione usa un server di simboli o posiziona i simboli in un percorso diverso, usare le impostazioni dei simboli per caricare i simboli corretti per la distribuzione.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: non è possibile visualizzare l'opzione "Collegare Snapshot Debugger" in Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: non è possibile visualizzare l'opzione "Collega Snapshot Debugger" in Cloud Explorer
 
-Eseguire questi passaggi:
+Seguire questa procedura:
 
-- Verificare che sia installato il componente Debugger di Snapshot. Aprire l'installazione di Visual Studio e verificare i **Snapshot Debugger** componente del carico di lavoro di Azure.
+- Verificare che il componente Snapshot Debugger sia installato. Aprire il programma di installazione di Visual Studio e selezionare il componente **Snapshot Debugger** nel carico di lavoro di Azure.
 ::: moniker range="< vs-2019"
-- Assicurarsi che l'app sia supportato. Attualmente, solo ASP.NET (4.6.1+) e le app ASP.NET Core (2.0 +) distribuite in servizi App di Azure sono supportate.
+- Assicurarsi che l'app sia supportata. Attualmente, sono supportate solo le app ASP.NET (4.6.1+) e ASP.NET Core (2.0 +) distribuite in servizi app di Azure.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-- Assicurarsi che l'app sia supportato:
-  - Servizi App di Azure - applicazioni ASP.NET in esecuzione su .NET Framework 4.6.1 o versioni successive.
-  - Servizi App di Azure - applicazioni ASP.NET Core in esecuzione su .NET Core 2.0 o versioni successive in Windows.
-  - Azure le macchine virtuali (VMSS) - ASP.NET applicazioni in esecuzione in .NET Framework 4.6.1 o versioni successive.
-  - Azure le macchine virtuali (e VMSS) - applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
-  - Servizi di Azure Kubernetes - applicazioni ASP.NET Core in esecuzione su .NET Core 2.2 o versioni successive in Debian 9.
-  - Servizi di Azure Kubernetes - applicazioni ASP.NET Core in esecuzione su .NET Core 2.2 o versioni successive in Alpine 3.8.
-  - Servizi di Azure Kubernetes - applicazioni ASP.NET Core in esecuzione su .NET Core 2.2 o versioni successive in Ubuntu 18.04.
+- Assicurarsi che l'app sia supportata:
+  - Servizi app di Azure - Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
+  - Servizi app di Azure - Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
+  - Macchine virtuali di Azure (e set di scalabilità di macchine virtuali) - Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
+  - Macchine virtuali di Azure (e set di scalabilità di macchine virtuali) - Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
+  - Servizi Azure Kubernetes - Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Debian 9.
+  - Servizi Azure Kubernetes - Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Alpine 3.8.
+  - Servizi Azure Kubernetes - Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: è visibile solo gli snapshot limitato in strumenti di diagnostica
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: negli strumenti di diagnostica sono visibili solo snapshot soggetti a limitazioni
 
-![Punto di ancoraggio limitate](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitate punto di ancoraggio")
+![Punto di acquisizione snapshot soggetto a limitazioni](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Punto di acquisizione snapshot soggetto a limitazioni")
 
-Eseguire questi passaggi:
+Seguire questa procedura:
 
-- Gli snapshot occupano memoria piccolo ma è previsto un addebito commit. Se il Debugger di Snapshot rileva che il server è in condizioni di carico di memoria pesanti, non registra snapshot. È possibile eliminare gli snapshot già acquisiti interrompendo la sessione del Debugger di Snapshot e riprovare.
+- Gli snapshot usano poca memoria, ma prevedono un carico per il commit. Se Snapshot Debugger rileva che il server è in condizioni di carico elevato per la memoria, non verranno acquisiti snapshot. È possibile eliminare gli snapshot già acquisiti interrompendo la sessione di Snapshot Debugger e riprovando.
+
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: Il debug di snapshot con più versioni di Visual Studio genera errori
+
+Visual Studio 2019 richiede una versione più recente dell'estensione del sito Snapshot Debugger nel servizio app di Azure.  Questa versione non è compatibile con la versione precedente dell'estensione del sito Snapshot Debugger usata da Visual Studio 2017.  Se si prova a collegare Snapshot Debugger in Visual Studio 2019 a un servizio app di Azure di cui è stato precedentemente eseguito il debug con Snapshot Debugger di Visual Studio 2017, verrà generato l'errore seguente:
+
+![Estensione del sito Snapshot Debugger di VS 2019 non compatibile](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Estensione del sito Snapshot Debugger di VS 2019 non compatibile")
+
+Viceversa, se si usa Visual Studio 2017 per collegare Snapshot Debugger a un servizio app di Azure di cui è stato precedentemente eseguito il debug da Snapshot Debugger in Visual Studio 2019, si riceverà l'errore seguente:
+
+![Estensione del sito Snapshot Debugger di VS 2017 non compatibile](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Estensione del sito Snapshot Debugger di VS 2017 non compatibile")
+
+Per risolvere questo problema, eliminare le impostazioni dell'app seguenti nel portale di Azure e collegare nuovamente Snapshot Debugger:
+
+- INSTRUMENTATIONENGINE_EXTENSION_VERSION
+- SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: si verificano problemi con il debug di snapshot ed è necessario abilitare ulteriori log
+
+### <a name="enable-agent-logs"></a>Abilitare i log dell'agente
+
+Per abilitare e disabilitare la registrazione dell'agente, aprire Visual Studio e passare a *Strumenti > Opzioni > Snapshot Debugger > Abilita la registrazione dell'agente*. Si noti che se è abilitata anche l'opzione *Elimina i log dell'agente meno recenti all'avvio della sessione*, per ogni collegamento corretto a Visual Studio verranno eliminati i log dell'agente precedenti.
+
+I log dell'agente sono disponibili nelle posizioni seguenti:
+
+- Servizi app:
+  - Passare al sito di Kudu del servizio app (ovvero, servizioapp.**scm**.azurewebsites.net) e passare alla console di debug.
+  - I log dell'agente vengono archiviati nella directory seguente: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+- Macchina virtuale/set di scalabilità di macchine virtuali:
+  - Accedere alla macchina virtuale. I log dell'agente sono archiviati nella posizione seguente: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Versione>\SnapshotDebuggerAgent_*.txt
+- Servizio Azure Kubernetes
+  - Passare alla directory seguente: /tmp/diag/AgentLogs/*
+
+### <a name="enable-profilerinstrumentation-logs"></a>Abilitare i log di profiler/strumentazione
+
+I log di strumentazione sono disponibili nelle posizioni seguenti:
+
+- Servizi app:
+  - La registrazione degli errori viene inviata automaticamente a D:\Home\LogFiles\eventlog.xml, gli eventi sono contrassegnati con <<Provider Name="Instrumentation Engine" //>> o "Production Breakpoints"
+- Macchina virtuale/set di scalabilità di macchine virtuali:
+  - Accedere alla macchina virtuale e aprire il Visualizzatore eventi.
+  - Aprire la visualizzazione seguente: *Registri di Windows > Applicazione*.
+  - Selezionare *Filtro registro corrente* e in *Origine eventi* selezionare *Production Breakpoints* o *Instrumentation Engine*.
+- Servizio Azure Kubernetes
+  - La registrazione del motore di strumentazione è disponibile in /tmp/diag/log.txt (impostare MicrosoftInstrumentationEngine_FileLogPath in DockerFile)
+  - La registrazione ProductionBreakpoint è disponibile in /tmp/diag/shLog.txt
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Debug di snapshot con più client di Visual Studio con lo stesso servizio App non è attualmente supportato.
-- Ottimizzazioni di linguaggio intermedio Roslyn non sono completamente supportate nei progetti ASP.NET Core. Per alcuni progetti ASP.NET Core, potrebbe non essere in grado di vedere alcune variabili o usare alcune variabili nelle istruzioni condizionali.
-- Variabili speciali, ad esempio *$FUNCTION* oppure *$CALLER*, non è possibile valutare in istruzioni condizionali o punti di registrazione per i progetti ASP.NET Core.
-- Debug di snapshot non funziona nei servizi di App che hanno [memorizzazione nella cache locale](/azure/app-service/app-service-local-cache) attivata.
-- Snapshot di debug di App per le API non è attualmente supportato.
+- Il debug di snapshot con più client di Visual Studio sullo stesso servizio app non è attualmente supportato.
+- Le ottimizzazioni IL per Roslyn non sono completamente supportate nei progetti ASP.NET Core. Per alcuni progetti ASP.NET Core, potrebbe non essere possibile vedere alcune variabili o usare alcune variabili nelle istruzioni condizionali.
+- Le variabili speciali, ad esempio *$FUNCTION* oppure *$CALLER*, non possono essere valutate in istruzioni condizionali o punti di inserimento istruzione di registrazione per i progetti ASP.NET Core.
+- Il debug di snapshot non funziona nei servizi app con [Cache locale](/azure/app-service/app-service-local-cache) attivata.
+- Il debug di snapshot di app API non è attualmente supportato.
 
-## <a name="site-extension-upgrade"></a>Aggiornamento di estensione del sito
+## <a name="site-extension-upgrade"></a>Aggiornamento dell'estensione del sito
 
-Debug di snapshot e Application Insights variano in base un ICorProfiler, che viene caricato il processo del sito e fa in modo che i problemi di blocco di file durante l'aggiornamento. È consigliabile assicurarsi che non ci sia alcun tempo di inattività per il sito di produzione del processo.
+Il debug di snapshot e Application Insights dipendono da un ICorProfiler, che viene caricato nel processo del sito e causa problemi di blocco di file durante l'aggiornamento. È consigliabile seguire questo processo per assicurarsi di evitare tempi di inattività per il sito di produzione.
 
-- Creare un [Slot di distribuzione](/azure/app-service/web-sites-staged-publishing) all'interno del servizio App e Distribuisci il tuo sito nello slot.
-- Trasferire lo Slot di produzione da Esplora Cloud in Visual Studio o dal portale di Azure.
-- Arrestare il sito dello Slot. Questo richiederà alcuni secondi per terminare il processo w3wp.exe di sito da tutte le istanze.
-- Aggiornare l'estensione dello Slot del sito dal sito di Kudu o il portale di Azure (*pannello servizio App > Strumenti di sviluppo > estensioni > aggiornamenti*).
-- Avviare il sito dello Slot. È consigliabile visitare il sito per riscaldamento nuovamente.
-- Trasferire lo Slot di produzione.
+- Creare uno [slot di distribuzione](/azure/app-service/web-sites-staged-publishing) all'interno del servizio app e distribuire il sito nello slot.
+- Scambiare questo slot con quello di produzione da Cloud Explorer in Visual Studio o dal portale di Azure.
+- Arrestare il sito dello slot. In questo modo, entro pochi secondi il processo w3wp.exe del sito verrà terminato in tutte le istanze.
+- Aggiornare l'estensione dello slot del sito dal sito di Kudu o dal portale di Azure (*pannello del servizio app > Strumenti di sviluppo > Estensioni > Aggiornamento*).
+- Avviare il sito dello slot. È consigliabile visitare il sito per eseguire di nuovo il riscaldamento.
+- Scambiare questo slot con quello di produzione.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug in Visual Studio](../debugger/index.md)
-- [Il debug in tempo reale delle App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md)
-- [Eseguire il debug in tempo reale ASP.NET Azure virtuale Machines\Virtual macchine set di scalabilità tramite il Debugger di Snapshot](../debugger/debug-live-azure-virtual-machines.md)
-- [Eseguire il debug in tempo reale ASP.NET Azure Kubernetes con il Debugger di Snapshot](../debugger/debug-live-azure-kubernetes.md)
+- [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Eseguire il debug di app ASP.NET attive in macchine virtuali/set di scalabilità di macchine virtuali di Azure con Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Eseguire il debug di servizi Azure Kubernetes ASP.NET attivi con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)

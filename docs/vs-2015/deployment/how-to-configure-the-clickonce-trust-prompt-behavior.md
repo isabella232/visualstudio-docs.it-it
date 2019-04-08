@@ -82,7 +82,7 @@ ms.locfileid: "59001169"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Per abilitare a livello di codice la richiesta di attendibilità di ClickOnce  
   
-1.  Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.  
+1.  Creare un'applicazione console Visual Basic o Visual C# in Visual Studio.  
   
 2.  Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
   
@@ -139,7 +139,7 @@ ms.locfileid: "59001169"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Per limitare a livello di codice la richiesta di attendibilità di ClickOnce  
   
-1.  Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.  
+1.  Creare un'applicazione console Visual Basic o Visual C# in Visual Studio.  
   
 2.  Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
   
@@ -196,7 +196,7 @@ ms.locfileid: "59001169"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Per disabilitare a livello di codice la richiesta di attendibilità di ClickOnce  
   
-1.  Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.  
+1.  Creare un'applicazione console Visual Basic o Visual C# in Visual Studio.  
   
 2.  Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
   

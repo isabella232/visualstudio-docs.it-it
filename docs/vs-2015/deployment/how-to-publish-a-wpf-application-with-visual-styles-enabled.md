@@ -66,7 +66,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
          Il file app. manifest verrà aperto nel **Editor di codice**.
 
-    **Per aprire il file manifesto in un progetto c#**
+    **Per aprire il file manifesto in un progetto C#**
 
     1. Nella barra dei menu, scegliere **Project**, _NomeProgetto_**proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
 

@@ -73,7 +73,7 @@ Prima di iniziare questa procedura, è possibile installare questi componenti:
 Scegliere un modello simile al linguaggio specifico di dominio che si desidera creare. I diversi modelli forniscono punti di partenza utili. Quando si seleziona un modello di soluzione, la procedura guidata visualizza una descrizione. Per altre informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Ciò che si desidera assegnare un nome di linguaggio specifico di dominio?**
-Il valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe c#.
+Il valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe C#.
 
 ### <a name="file-extension-page"></a>Pagina estensione file
  **Usare i file di modello quale estensione?**
