@@ -584,7 +584,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 3. Modificare l'implementazione del VSHPROPIDs originali per le icone per creare versioni "legacy" delle icone se li hanno richiesti punti di estensione. **IVsImageService2** fornisce la funzionalità necessaria per ottenere tali icone
 
-   **Requisiti aggiuntivi per VB / caratteristiche progetti c#**
+   **Requisiti aggiuntivi per VB / caratteristiche progetti C#**
 
    Implementare solo **VSHPROPID_SupportsIconMonikers** se si rileva che il progetto sia la **flavor più esterno**. In caso contrario, la versione più esterna effettiva potrebbe non supportare i moniker di immagine in realtà, e la versione di base potrebbe essere effettivamente "nascondere" immagini personalizzate.
 
@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- Il manifesto per lo strumento di Code accetta un file manifesto dell'immagine e genera un file wrapper per fare riferimento i valori del manifesto nel codice (C++, c# o Visual Basic) o *vsct* file.
+ Il manifesto per lo strumento di Code accetta un file manifesto dell'immagine e genera un file wrapper per fare riferimento i valori del manifesto nel codice (C++, C# o Visual Basic) o *vsct* file.
 
  **ImageLibraryViewer**
 

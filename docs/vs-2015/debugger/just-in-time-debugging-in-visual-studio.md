@@ -125,9 +125,9 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
 
  Quando si installa Visual Studio, il debug JIT è abilitato per impostazione predefinita.
 
- Ai fini di questa sezione, ci assicureremo un'app console c# in Visual Studio che genera un <xref:System.NullReferenceException>.
+ Ai fini di questa sezione, ci assicureremo un'app console C# in Visual Studio che genera un <xref:System.NullReferenceException>.
 
- In Visual Studio, creare un'app console c# (**File / nuovo / progetto / Visual c# / applicazione Console**) denominata **ThrowsNullException**. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ In Visual Studio, creare un'app console C# (**File / nuovo / progetto / Visual C# / applicazione Console**) denominata **ThrowsNullException**. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Quando si apre il progetto in Visual Studio, aprire il file Program.cs. Sostituire il metodo Main () con il codice seguente, che stampa una riga nella console e quindi genera un'eccezione NullReferenceException:
 
@@ -144,7 +144,7 @@ static void Main(string[] args)
 
  Compilare la soluzione (in Visual Studio, scegliere **Build / Ricompila soluzione**). È possibile scegliere il Debug o la configurazione di rilascio. Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
- Il processo di compilazione crea un ThrowsNullException.exe eseguibile. È possibile trovarlo nella cartella in cui la creazione del progetto c#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** oppure **...\ThrowsNullException\ThrowsNullException\bin\Release**.
+ Il processo di compilazione crea un ThrowsNullException.exe eseguibile. È possibile trovarlo nella cartella in cui la creazione del progetto C#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** oppure **...\ThrowsNullException\ThrowsNullException\bin\Release**.
 
  Fare doppio clic il ThrowsNullException.exe. Si dovrebbe essere una finestra di comando simile al seguente:
 

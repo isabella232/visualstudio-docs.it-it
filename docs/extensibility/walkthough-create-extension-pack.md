@@ -33,7 +33,7 @@ Il modello di elemento Extension Pack crea un pacchetto di estensione con set di
 
 1. Nel **nuovo progetto** finestra di dialogo, cercare "vsix" e selezionare **progetto VSIX**. Per la **nome progetto**, digitare "Pacchetto di estensioni di Test". Scegliere **Crea**.
 
-2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **Extension Pack**. Lasciare il nome file predefinito (ExtensionPack1.cs).
+2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual C# **estendibilità** nodo e selezionare **Extension Pack**. Lasciare il nome file predefinito (ExtensionPack1.cs).
 
 3. Aggiunta di file ExtensionPack1.vsext che contiene il codice seguente
 

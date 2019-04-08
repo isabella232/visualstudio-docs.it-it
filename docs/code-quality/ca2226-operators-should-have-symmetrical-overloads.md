@@ -40,7 +40,7 @@ Per impostazione predefinita, questa regola cerca solo tipi visibili esternament
 
 Non esistono nessuna circostanza in cui è applicabile alle istanze di un tipo di uguaglianza o disuguaglianza e non è definito l'operatore opposto. Tipi implementano in genere l'operatore di disuguaglianza, restituendo il valore negato dell'operatore di uguaglianza.
 
-Il compilatore c# genera un errore per le violazioni di questa regola.
+Il compilatore C# genera un errore per le violazioni di questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

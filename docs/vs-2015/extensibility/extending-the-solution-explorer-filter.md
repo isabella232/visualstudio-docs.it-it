@@ -21,7 +21,7 @@ ms.locfileid: "58968918"
 # <a name="extending-the-solution-explorer-filter"></a>Estensione del filtro di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile estendere **Esplora soluzioni** filtrare la funzionalità per mostrare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo classi factory file c# la **Esplora soluzioni**, come illustrato di seguito in questa procedura dettagliata.  
+È possibile estendere **Esplora soluzioni** filtrare la funzionalità per mostrare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo classi factory file C# la **Esplora soluzioni**, come illustrato di seguito in questa procedura dettagliata.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -190,7 +190,7 @@ ms.locfileid: "58968918"
   
 1.  Compilare ed eseguire il progetto. Verrà visualizzata una seconda istanza di Visual Studio. Ciò è chiamata istanza sperimentale.  
   
-2.  Nell'istanza sperimentale di Visual Studio, aprire un progetto c#.  
+2.  Nell'istanza sperimentale di Visual Studio, aprire un progetto C#.  
   
 3.  Cercare il pulsante che è stato aggiunto nella barra degli strumenti Esplora soluzioni. Deve essere il quarto pulsante da sinistra.  
   

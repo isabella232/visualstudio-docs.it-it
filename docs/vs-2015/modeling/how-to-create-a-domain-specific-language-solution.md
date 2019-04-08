@@ -55,7 +55,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando un specializzato [!
        Il **Creazione guidata finestra di progettazione di linguaggio specifico di dominio** viene visualizzata.  
   
       > [!NOTE]
-      >  Preferibilmente, il nome indipendente dai tipi deve essere un Visual identificatore c# valido, poiché potrebbero essere utilizzata per generare il codice.  
+      >  Preferibilmente, il nome indipendente dai tipi deve essere un Visual identificatore C# valido, poiché potrebbero essere utilizzata per generare il codice.  
   
       ![Creare finestra di dialogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -86,7 +86,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando un specializzato [!
  Scegliere un modello simile al linguaggio specifico di dominio che si desidera creare. I diversi modelli forniscono punti di partenza utili. Quando si seleziona un modello di soluzione, la procedura guidata visualizza una descrizione. Per altre informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
  **Ciò che si desidera assegnare un nome di linguaggio specifico di dominio?**  
- Il valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe c#.  
+ Il valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe C#.  
   
 ### <a name="file-extension-page"></a>Pagina estensione file  
  **Usare i file di modello quale estensione?**  

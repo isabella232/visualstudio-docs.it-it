@@ -25,7 +25,7 @@ Gli ActivityDesigner personalizzati consentono di creare un'interfaccia utente p
   
 2.  Nel **File** dal menu **New**, quindi selezionare **progetto...** Per aprire la **nuovo progetto** nella finestra di dialogo.  
   
-3.  Nel **tipi di progetto** riquadro, selezionare **flusso di lavoro** da una il **Visual c#** oppure **Visual Basic** a seconda la voce preferita lingua.  
+3.  Nel **tipi di progetto** riquadro, selezionare **flusso di lavoro** da una il **Visual C#** oppure **Visual Basic** a seconda la voce preferita lingua.  
   
 4.  Nel **modelli** riquadro, selezionare **libreria ActivityDesigner**.  
   

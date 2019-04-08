@@ -29,7 +29,7 @@ Barra di spostamento nella parte superiore della visualizzazione dell'editor con
  Quando si sposta il punto di inserimento, il <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> (metodo). La base <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo nel <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe per aggiornare lo stato della barra di spostamento. Si passa un set di <xref:Microsoft.VisualStudio.Package.DropDownMember> oggetti a questo metodo. Ogni oggetto rappresenta una voce nell'elenco a discesa.  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>Il contenuto della barra di spostamento  
- La barra di spostamento contiene in genere un elenco di tipi e un elenco di membri. L'elenco dei tipi include tutti i tipi disponibili nel file di origine corrente. I nomi dei tipi includono le informazioni dello spazio dei nomi completo. Di seguito è riportato un esempio di codice c# con due tipi:  
+ La barra di spostamento contiene in genere un elenco di tipi e un elenco di membri. L'elenco dei tipi include tutti i tipi disponibili nel file di origine corrente. I nomi dei tipi includono le informazioni dello spazio dei nomi completo. Di seguito è riportato un esempio di codice C# con due tipi:  
   
 ```csharp  
 namespace TestLanguagePackage  

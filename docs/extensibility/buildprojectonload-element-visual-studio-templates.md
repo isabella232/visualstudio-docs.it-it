@@ -57,7 +57,7 @@ Gerarchia di elementi:
  `BuildProjectOnLoad` è un elemento facoltativo. Il valore predefinito è `false`.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per un modello di Visual c#.
+ Nell'esempio seguente vengono illustrati i metadati per un modello di Visual C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

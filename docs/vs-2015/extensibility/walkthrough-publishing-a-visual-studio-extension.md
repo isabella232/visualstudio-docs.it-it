@@ -32,7 +32,7 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 ## <a name="create-a-visual-studio-extension"></a>Creare un'estensione di Visual Studio
  In questo caso si userà un'estensione VSPackage predefinito, ma gli stessi passaggi sono validi per ogni tipo di estensione.
 
-1.  Creare un pacchetto VSPackage in c# denominato `TestPublishing` che dispone di un comando di menu. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Creare un pacchetto VSPackage in C# denominato `TestPublishing` che dispone di un comando di menu. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Testare l'estensione
  Prima di distribuire l'estensione, compilare e testare per verificare che sia installato correttamente nell'istanza sperimentale di Visual Studio.

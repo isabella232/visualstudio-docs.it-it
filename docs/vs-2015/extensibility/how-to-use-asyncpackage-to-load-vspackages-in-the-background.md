@@ -18,7 +18,7 @@ ms.locfileid: "58965695"
 Il caricamento e l'inizializzazione di un pacchetto di Visual Studio può comportare i/o disco. Se questo tipo i/o si verifica nel thread UI, può causare problemi di velocità di risposta. Per risolvere questo problema, Visual Studio 2015 è stato introdotto il <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe che consente il caricamento del pacchetto in un thread in background.  
   
 ## <a name="creating-an-asyncpackage"></a>Creazione di un AsyncPackage  
- È possibile iniziare creando un progetto VSIX (**File / nuovo / progetto / Visual c# / Extensibility / progetto VSIX**) e l'aggiunta di un pacchetto VSPackage per il progetto (fare clic con il pulsante destro sul progetto e **Aggiungi/nuovo elemento / c# elemento/estendibilità/Visual Il pacchetto di Studio**). È quindi possibile creare i servizi e aggiungere tali servizi per il pacchetto.  
+ È possibile iniziare creando un progetto VSIX (**File / nuovo / progetto / Visual C# / Extensibility / progetto VSIX**) e l'aggiunta di un pacchetto VSPackage per il progetto (fare clic con il pulsante destro sul progetto e **Aggiungi/nuovo elemento / C# elemento/estendibilità/Visual Il pacchetto di Studio**). È quindi possibile creare i servizi e aggiungere tali servizi per il pacchetto.  
   
 1. Derivare il pacchetto da <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   

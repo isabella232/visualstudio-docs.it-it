@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
 ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2019
 ms.locfileid: "58195164"
@@ -242,7 +242,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ## <a name="visual-studio-extensibility-tools"></a>Strumenti di estendibilità in Visual Studio
  Non è mai stato così semplice installare Visual Studio Extensibility Tools (Visual Studio SDK e modelli). Infatti ora vengono inclusi come componenti facoltativi durante l'installazione.  Gli strumenti di estendibilità consentono agli sviluppatori di scrivere le estensioni da personalizzare e aggiungere funzionalità a Visual Studio. Per ulteriori informazioni sulle estendibilità di Visual Studio, vedere [Visual Studio SDK](./extensibility/visual-studio-sdk.md).
 
- Se si desidera includere gli strumenti di estendibilità con l'installazione personalizzata, è possibile trovarli in **Funzionalità / Strumenti comuni / Strumenti di estendibilità di Visual Studio**.  È inoltre possibile installare gli strumenti di estendibilità in un secondo momento aprendo la finestra di dialogo **Nuovo progetto** e selezionando l’elemento **Installare gli strumenti di estendibilità di Visual Studio** in **Visual c# / Extensibility**.
+ Se si desidera includere gli strumenti di estendibilità con l'installazione personalizzata, è possibile trovarli in **Funzionalità / Strumenti comuni / Strumenti di estendibilità di Visual Studio**.  È inoltre possibile installare gli strumenti di estendibilità in un secondo momento aprendo la finestra di dialogo **Nuovo progetto** e selezionando l’elemento **Installare gli strumenti di estendibilità di Visual Studio** in **Visual C# / Extensibility**.
 
 ## <a name="please-give-feedback"></a>Invio di commenti e suggerimenti
  È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, esaminando singolarmente tutti quelli pervenuti nel proprio sistema e usandoli per migliorare i propri prodotti.

@@ -110,7 +110,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
   
       Per i progetti C#:  
   
-   5. Poiché i progetti c# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `Update` *NomeClasse* (metodo).  
+   5. Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `Update` *NomeClasse* (metodo).  
   
    6. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento relativo alla classe per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona una `Update` *NomeClasse* metodo parziale:  
   

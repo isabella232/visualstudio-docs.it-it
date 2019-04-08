@@ -32,7 +32,7 @@ I linguaggi di programmazione in genere forniscono un mezzo per inserire annotaz
   
 2. Commenti di blocco, dove il commento può includere più righe.  
   
-   I commenti a riga sono in genere un carattere iniziale (o caratteri), mentre i commenti di blocco sono caratteri di inizio e fine. Ad esempio, nel linguaggio c#, un commento a riga inizia con / /, e inizia un blocco di commento con / * e termina con \*/.  
+   I commenti a riga sono in genere un carattere iniziale (o caratteri), mentre i commenti di blocco sono caratteri di inizio e fine. Ad esempio, nel linguaggio C#, un commento a riga inizia con / /, e inizia un blocco di commento con / * e termina con \*/.  
   
    Quando l'utente seleziona il comando **Commenta selezione** dal **modificare** -> **avanzate** dal menu il comando viene indirizzato al <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metodo sul <xref:Microsoft.VisualStudio.Package.Source> classe. Quando l'utente seleziona il comando **rimuovere il commento dalla selezione**, il comando viene instradato al <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> (metodo).  
   

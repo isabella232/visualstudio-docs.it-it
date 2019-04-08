@@ -25,9 +25,9 @@ In questa procedura descrive come usare il modello di progetto VSIX e il **fines
   
 ### <a name="creating-a-tool-window"></a>Creazione di una finestra degli strumenti  
   
-1.  Creare un progetto VSIX denominato **FirstWindow**. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+1.  Creare un progetto VSIX denominato **FirstWindow**. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual C# / Extensibility**.  
   
-2.  Quando si apre il progetto, aggiungere un modello di elemento di finestra degli strumenti denominato **FirstWindow**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome file della finestra degli strumenti per **FirstWindow.cs**.  
+2.  Quando si apre il progetto, aggiungere un modello di elemento di finestra degli strumenti denominato **FirstWindow**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual C# / Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome file della finestra degli strumenti per **FirstWindow.cs**.  
   
 3.  Compilare il progetto e avviare il debug.  
   

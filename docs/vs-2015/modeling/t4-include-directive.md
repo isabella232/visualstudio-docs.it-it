@@ -49,7 +49,7 @@ In un modello di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possi
   
 - Utilizzare `once="true"` per verificare che un modello sia incluso una sola volta, anche se viene chiamato da più file di inclusione.  
   
-   Rende questa funzionalità è più facile creare una libreria di frammenti T4 riutilizzabili che è possibile includere in verrà senza doversi preoccupare che un altro frammento di codice ha già incluse.  Ad esempio, si supponga di che avere una libreria di frammenti molto accurati che gestiscono l'elaborazione di modello e la generazione di codice c#.  A sua volta, questi vengono usati da alcune utilità di più attività specifiche, ad esempio la generazione di eccezioni, che è quindi possibile usare qualsiasi modello più specifico dell'applicazione. Se si crea il grafico dipendenze, si noterà che alcuni frammenti verranno inclusi più volte. Ma il parametro `once` impedisce le inclusioni successive.  
+   Rende questa funzionalità è più facile creare una libreria di frammenti T4 riutilizzabili che è possibile includere in verrà senza doversi preoccupare che un altro frammento di codice ha già incluse.  Ad esempio, si supponga di che avere una libreria di frammenti molto accurati che gestiscono l'elaborazione di modello e la generazione di codice C#.  A sua volta, questi vengono usati da alcune utilità di più attività specifiche, ad esempio la generazione di eccezioni, che è quindi possibile usare qualsiasi modello più specifico dell'applicazione. Se si crea il grafico dipendenze, si noterà che alcuni frammenti verranno inclusi più volte. Ma il parametro `once` impedisce le inclusioni successive.  
   
   **MyTextTemplate.tt:**  
   

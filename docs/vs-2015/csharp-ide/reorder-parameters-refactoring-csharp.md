@@ -1,5 +1,5 @@
 ---
-title: Riordina parametri Refactoring (c#) | Microsoft Docs
+title: Riordina parametri Refactoring (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -26,7 +26,7 @@ ms.locfileid: "58967555"
 # <a name="reorder-parameters-refactoring-c"></a>Refactoring Riordina parametri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` è un linguaggio Visual c# il refactoring di operazione che fornisce un modo semplice per modificare l'ordine dei parametri per metodi, indicizzatori e delegati. `Reorder Parameters` la dichiarazione viene modificata e in tutti i percorsi in cui viene chiamato il membro, i parametri vengono riorganizzati in modo da riflettere il nuovo ordine.  
+`Reorder Parameters` è un linguaggio Visual C# il refactoring di operazione che fornisce un modo semplice per modificare l'ordine dei parametri per metodi, indicizzatori e delegati. `Reorder Parameters` la dichiarazione viene modificata e in tutti i percorsi in cui viene chiamato il membro, i parametri vengono riorganizzati in modo da riflettere il nuovo ordine.  
   
  Per eseguire il `Reorder Parameters` operazione, posizionare il cursore sopra o accanto a un metodo, l'indicizzatore o delegato. Quando il cursore si trova nella posizione, richiamare il `Reorder Parameters` operazione premendo il tasto di scelta rapida oppure scegliendo il comando dal menu di scelta rapida.  
   

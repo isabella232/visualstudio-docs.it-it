@@ -27,7 +27,7 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-3.  Nel **tipi di progetto** riquadro, selezionare **flusso di lavoro** dal **Visual c#** progetti o **Visual Basic** raggruppamenti in base il preferenze della lingua.  
+3.  Nel **tipi di progetto** riquadro, selezionare **flusso di lavoro** dal **Visual C#** progetti o **Visual Basic** raggruppamenti in base il preferenze della lingua.  
   
 4.  Nel **modelli** riquadro, selezionare **libreria attività**.  
   

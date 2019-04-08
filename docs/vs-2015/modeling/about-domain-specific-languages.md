@@ -21,7 +21,7 @@ ms.locfileid: "58969392"
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A differenza di un linguaggio generico come c# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.  
+A differenza di un linguaggio generico come C# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.  
   
  DSL Well-Known includere espressioni regolari e SQL. Ogni linguaggio specifico di dominio è preferibile rispetto a un linguaggio generico per descrivere le operazioni su stringhe di testo o un database, ma molto peggiori per descrivere le idee che esulano dall'ambito di un proprio. Singoli settori hanno anche le proprie soluzioni DSL. Ad esempio, nel settore delle telecomunicazioni, chiamare descrizione lingue vengono ampiamente utilizzate per specificare la sequenza degli stati in una chiamata telefonica e in modalità wireless nel settore di viaggio standard che DSL viene usato per descrivere ogni nuova prenotazione dei voli.  
   

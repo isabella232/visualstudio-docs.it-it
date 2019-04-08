@@ -35,7 +35,7 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
   
 ## <a name="configure-the-project"></a>Configurare il progetto  
   
-1.  In Visual Studio, scegliere **File &#124; nuovo progetto** e quindi creare una nuova applicazione WPF in c#.  
+1.  In Visual Studio, scegliere **File &#124; nuovo progetto** e quindi creare una nuova applicazione WPF in C#.  
   
 2.  Successivamente si aggiungerà il pacchetto NuGet di Entity Framework 6. In Esplora soluzioni selezionare il nodo del progetto. Nel menu principale, scegliere **progetto &#124; Gestisci pacchetti NuGet...**  
   
@@ -49,7 +49,7 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
   
 ## <a name="create-the-model"></a>Creare il modello  
   
-1. Fare clic con il pulsante destro sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi &#124; nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale scegliere **ADO.NET Entity Data Model**.  
+1. Fare clic con il pulsante destro sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi &#124; nuovo elemento**. Nel riquadro di sinistra, sotto il nodo C#, scegliere **Data** nel riquadro centrale scegliere **ADO.NET Entity Data Model**.  
   
     ![Entity Framework modello nuovo elemento di progetto](../data-tools/media/raddata-ef-new-project-item.png "raddata nuovo elemento di progetto Entity Framework")  
   
@@ -63,7 +63,7 @@ Questa procedura dettagliata viene illustrato come creare un'applicazione di bas
   
     ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png "raddata Scegli oggetti di Entity Framework")  
   
-5. La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Questi sono plain precedente le classi di c# e sono ciò che si eseguirà il metodo databind all'interfaccia utente WPF. Il file con estensione edmx vengono descritte le relazioni e altri metadati che associa le classi di oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che operano sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in Esplora soluzioni sotto il nodo Northwind_model:  
+5. La procedura guidata genera le classi di C# che rappresentano il modello di Entity Framework. Questi sono plain precedente le classi di C# e sono ciò che si eseguirà il metodo databind all'interfaccia utente WPF. Il file con estensione edmx vengono descritte le relazioni e altri metadati che associa le classi di oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che operano sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in Esplora soluzioni sotto il nodo Northwind_model:  
   
     ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata i file del modello EF di Esplora soluzioni")  
   

@@ -36,7 +36,7 @@ ms.locfileid: "58965102"
   
     1.  Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
   
-    2.  Sotto **modelli installati**, espandere **Visual c#** oppure **Visual Basic**, quindi nella colonna centrale fare clic su **libreria di classi**.  
+    2.  Sotto **modelli installati**, espandere **Visual C#** oppure **Visual Basic**, quindi nella colonna centrale fare clic su **libreria di classi**.  
   
     3.  Impostare **Soluzione** per indicare se si desidera creare una nuova soluzione o aggiungere un componente a una soluzione VSIX che è già stata aperta.  
   

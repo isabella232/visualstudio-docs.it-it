@@ -25,7 +25,7 @@ ms.locfileid: "58965797"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di una semplice applicazione "Form over data" di Windows Forms con Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.  
+Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di una semplice applicazione "Form over data" di Windows Forms con Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.  
   
  Questo articolo illustra un modo semplice per ottenere dati da un database in modo molto veloce. Se l'applicazione deve modificare i dati in modi non semplice e aggiornare il database, è consigliabile mediante Entity Framework e l'uso di data binding per la sincronizzazione automatica controlli dell'interfaccia utente per le modifiche nei dati sottostanti.  
   
@@ -57,7 +57,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
 - La stringa di connessione per il database dopo averla configurata. È possibile trovare questo valore aprendo **Esplora oggetti di SQL Server**, aprendo il menu di scelta rapida per il database, selezionando **delle proprietà**e quindi scorrere verso il **ConnectionString** proprietà.  
   
-  In questo argomento si presuppone una certa familiarità con la funzionalità di base dell'IDE di Visual Studio e la capacità di creare un'applicazione Windows Forms, aggiungere form a tale progetto, inserire i pulsanti e altri controlli presenti in tali form, impostare le proprietà di tali controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) prima di iniziare questo argomento.  
+  In questo argomento si presuppone una certa familiarità con la funzionalità di base dell'IDE di Visual Studio e la capacità di creare un'applicazione Windows Forms, aggiungere form a tale progetto, inserire i pulsanti e altri controlli presenti in tali form, impostare le proprietà di tali controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) prima di iniziare questo argomento.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Configurare il database di esempio  
  Il database di esempio per questa procedura dettagliata è costituito dalle tabelle Customer e Orders. Le tabelle inizialmente non contengono dati. I dati verranno aggiunti quando si esegue l'applicazione creata. Il database include inoltre cinque stored procedure semplici. [Creare un database SQL usando uno script](../data-tools/create-a-sql-database-by-using-a-script.md) contiene uno script Transact-SQL che crea le tabelle, le chiavi primarie ed esterne, i vincoli e le stored procedure.  
@@ -218,7 +218,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
     |-------------|-----------------|  
     |Util-1|Aggiungere lo spazio dei nomi `System.Configuration` .|  
     |Util-2|Definire una variabile `returnValue` e inizializzarla su `null` (C#) o `Nothing` (Visual Basic).|  
-    |Util-3|Anche se è stato immesso `connString` come nome della stringa di connessione nel **delle proprietà** finestra, è necessario specificare `"SimpleDataApp.Properties.Settings.connString"` (c#) o `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) nel codice.|  
+    |Util-3|Anche se è stato immesso `connString` come nome della stringa di connessione nel **delle proprietà** finestra, è necessario specificare `"SimpleDataApp.Properties.Settings.connString"` (C#) o `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) nel codice.|  
   
 ##  <a name="BKMK_writethecodefortheforms"></a> Scrivere il codice per i form  
  Questa sezione contiene una breve panoramica sulle funzionalità di ciascun form e una descrizione del codice necessario per crearlo. I commenti numerati identificano le sezioni del codice.  
@@ -227,7 +227,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
  Quando si esegue l'applicazione, verrà visualizzato il form Navigazione. Il pulsante **Aggiungi un account** consente di aprire il form NewCustomer. Il pulsante **Completare o annullare gli ordini** consente di aprire il form FillOrCancel. Il pulsante **Esci** consente di chiudere l'applicazione.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Impostare il form Navigazione come form di avvio  
- Se si usa c#, in **Esplora soluzioni**, aprire Program.cs e modificare il `Application.Run` riga al seguente: `Application.Run(new Navigation());`  
+ Se si usa C#, in **Esplora soluzioni**, aprire Program.cs e modificare il `Application.Run` riga al seguente: `Application.Run(new Navigation());`  
   
  Se si usa Visual Basic, in **Esplora soluzioni**, aprire il **delle proprietà** finestra, seleziona il **applicazione** scheda e quindi selezionare  **Simpledataapp. Navigation** nella **form di avvio** elenco.  
   

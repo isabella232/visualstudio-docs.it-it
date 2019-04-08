@@ -98,9 +98,9 @@ I blocchi selezionati non sono supportati in [!INCLUDE[vbprvb](../code-quality/i
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Attivare Overflow/Underflow aritmetico selezionato
 
-Se si attiva checked overflow/underflow aritmetico in c#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
+Se si attiva checked overflow/underflow aritmetico in C#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
 
-Per attivare la verifica overflow/underflow aritmetico in c#:
+Per attivare la verifica overflow/underflow aritmetico in C#:
 
 1.  Nelle **Esplora soluzioni**, fare clic sul progetto e scegliere **proprietà**.
 

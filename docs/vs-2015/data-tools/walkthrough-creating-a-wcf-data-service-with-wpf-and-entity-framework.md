@@ -145,7 +145,7 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
   
 1. Nella barra dei menu scegliere File, **Add**, **nuovo progetto**.  
   
-2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual Basic** o **Visual c#** nodo e scegliere il **Windows** nodo e quindi scegliere  **Windows Forms Application**.  
+2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual Basic** o **Visual C#** nodo e scegliere il **Windows** nodo e quindi scegliere  **Windows Forms Application**.  
   
 3. Nella casella di testo **Nome** immettere `NorthwindClient` e quindi scegliere il pulsante **OK**.  
   

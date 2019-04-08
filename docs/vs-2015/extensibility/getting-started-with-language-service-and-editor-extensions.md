@@ -78,7 +78,7 @@ ms.locfileid: "58969255"
  Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Usare modelli per creare estensioni dell'Editor  
- È possibile utilizzare editor modelli per creare estensioni MEF che consentono di personalizzare i margini classificatori e le aree di controllo. Sono disponibili modelli per progetti c# e Visual Basic. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+ È possibile utilizzare editor modelli per creare estensioni MEF che consentono di personalizzare i margini classificatori e le aree di controllo. Sono disponibili modelli per progetti C# e Visual Basic. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
  È anche possibile usare il modello di progetto VSIX per creare estensioni. Questo modello vengono forniti solo gli elementi necessari per distribuire qualsiasi tipo di estensione e includere il file vsixmanifest, i riferimenti ad assembly richiesti e un file di progetto che include le attività di compilazione che consentono di distribuire la estensione. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).  
   

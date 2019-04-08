@@ -32,7 +32,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Questo argomento descrive come avviare una sessione di debug per app Windows Store scritte in JavaScript e HTML5. Puoi avviare il debug con una sola sequenza di tasti oppure puoi configurare la sessione di debug per scenari specifici e poi scegliere il modo in cui avviare l'app.
 
 > [!NOTE]
->  Per le app scritte in XAML e Visual c#, Visual C++ o Visual Basic, vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  Per le app scritte in XAML e Visual C#, Visual C++ o Visual Basic, vedere [avviare una sessione di debug (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a> In questo argomento
  [In questo argomento](#BKMK_In_this_topic)

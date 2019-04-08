@@ -72,7 +72,7 @@ ms.locfileid: "54864605"
 
 3.  In cima il **nuovo progetto** finestra di dialogo, assicurarsi che **.NET Framework 4.5** viene scelto nell'elenco delle versioni di .NET Framework.
 
-4.  Espandere la **Visual Basic** o **Visual c#** nodi, quindi scegliere il **estendibilità** nodo.
+4.  Espandere la **Visual Basic** o **Visual C#** nodi, quindi scegliere il **estendibilità** nodo.
 
     > [!NOTE]
     >  Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
@@ -89,9 +89,9 @@ ms.locfileid: "54864605"
 
 2.  In cima il **nuovo progetto** finestra di dialogo, assicurarsi che **.NET Framework 4.5** viene scelto nell'elenco delle versioni di .NET Framework.
 
-3.  Espandere la **Visual c#** o **Visual Basic** nodo, quindi scegliere il **estendibilità** nodo.
+3.  Espandere la **Visual C#** o **Visual Basic** nodo, quindi scegliere il **estendibilità** nodo.
 
-4.  Nell'elenco dei modelli di progetto, scegliere il **modello di progetto c#** oppure **modello di progetto Visual Basic** modello.
+4.  Nell'elenco dei modelli di progetto, scegliere il **modello di progetto C#** oppure **modello di progetto Visual Basic** modello.
 
 5.  Nel **Name** casella, immettere **SiteColumnProjectTemplate**e quindi scegliere il **OK** pulsante.
 
@@ -119,7 +119,7 @@ ms.locfileid: "54864605"
 
 2.  In cima il **nuovo progetto** finestra di dialogo, assicurarsi che **.NET Framework 4.5** viene scelto nell'elenco delle versioni di .NET Framework.
 
-3.  Espandere la **Visual c#** oppure **Visual Basic** nodi, scegliere il **Windows** nodo e quindi scegliere il **libreria di classi** modello.
+3.  Espandere la **Visual C#** oppure **Visual Basic** nodi, scegliere il **Windows** nodo e quindi scegliere il **libreria di classi** modello.
 
 4.  Nel **Name** casella, immettere **ProjectItemTypeDefinition** e quindi scegliere il **OK** pulsante.
 
@@ -353,7 +353,7 @@ ms.locfileid: "54864605"
 
 1. Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del file SiteColumnProjectTemplate con una delle seguenti sezioni di codice XML.
 
-   -   Se si sta creando un modello di progetto Visual c#, usare il codice XML seguente.
+   -   Se si sta creando un modello di progetto Visual C#, usare il codice XML seguente.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -441,7 +441,7 @@ ms.locfileid: "54864605"
 
 1.  Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del *csproj* file o *ProjectTemplate* file con una delle seguenti sezioni di codice XML.
 
-    -   Se si sta creando un modello di progetto Visual c#, usare il codice XML seguente.
+    -   Se si sta creando un modello di progetto Visual C#, usare il codice XML seguente.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -692,7 +692,7 @@ ms.locfileid: "54864605"
 
 1.  Nell'istanza sperimentale di Visual Studio, sulla barra dei menu, scegliere **File** > **New** > **progetto**.
 
-2.  Espandere la **Visual c#** o **Visual Basic** nodo (a seconda del linguaggio che supporta il modello di progetto), espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
+2.  Espandere la **Visual C#** o **Visual Basic** nodo (a seconda del linguaggio che supporta il modello di progetto), espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
 
 3.  Nell'elenco dei modelli di progetto, scegliere il **colonne del sito** modello.
 

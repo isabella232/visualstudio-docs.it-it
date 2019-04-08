@@ -67,7 +67,7 @@ ms.locfileid: "54875940"
 
 2.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-3.  Nel riquadro dei modelli, espandere **Visual c#** oppure **Visual Basic**, quindi fare clic su **Windows**.
+3.  Nel riquadro dei modelli, espandere **Visual C#** oppure **Visual Basic**, quindi fare clic su **Windows**.
 
 4.  Nell'elenco dei modelli di progetto, selezionare **libreria di classi**.
 
@@ -210,7 +210,7 @@ ms.locfileid: "54875940"
 
 1.  In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksDataSet** soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**.
 
-2.  Nel **tipi di progetto** riquadro, espandere **Visual c#** o **Visual Basic**, quindi fare clic su **Windows**.
+2.  Nel **tipi di progetto** riquadro, espandere **Visual C#** o **Visual Basic**, quindi fare clic su **Windows**.
 
 3.  Nel **modelli** riquadro, selezionare **applicazione Console**.
 
@@ -237,7 +237,7 @@ ms.locfileid: "54875940"
 
 6. Aprire il *Program.cs* oppure *Module1.vb* file nell'Editor del codice.
 
-7. Aggiungere il codice seguente **usando** (per c#) o **Imports** (per Visual Basic) all'inizio del file di codice.
+7. Aggiungere il codice seguente **usando** (per C#) o **Imports** (per Visual Basic) all'inizio del file di codice.
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]

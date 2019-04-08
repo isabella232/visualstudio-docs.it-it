@@ -20,7 +20,7 @@ ms.locfileid: "58965747"
 # <a name="walkthrough-creating-a-custom-editor"></a>Procedura dettagliata: Creazione di un editor personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il modello di progetto VSPackage può creare un semplice editor personalizzato in C++.  Il modello di progetto VSPackage non supporta più progetti c# o Visual Basic. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+Il modello di progetto VSPackage può creare un semplice editor personalizzato in C++.  Il modello di progetto VSPackage non supporta più progetti C# o Visual Basic. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

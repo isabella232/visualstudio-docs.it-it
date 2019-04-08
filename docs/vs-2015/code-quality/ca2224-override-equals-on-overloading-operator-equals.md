@@ -39,7 +39,7 @@ ms.locfileid: "58955796"
 ## <a name="rule-description"></a>Descrizione della regola
  L'operatore di uguaglianza deve essere un modo pratico sintatticamente per accedere alla funzionalità del <xref:System.Object.Equals%2A> (metodo). Se si implementa l'operatore di uguaglianza, la logica deve essere identica a quello di <xref:System.Object.Equals%2A>.
 
- Il compilatore c# genera un avviso se il codice viola questa regola.
+ Il compilatore C# genera un avviso se il codice viola questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, è necessario rimuovere l'implementazione dell'operatore di uguaglianza oppure eseguire l'override <xref:System.Object.Equals%2A> e dispone di due metodi restituiscono gli stessi valori. Se l'operatore di uguaglianza non introduce un comportamento incoerente, è possibile correggere la violazione, fornendo un'implementazione di <xref:System.Object.Equals%2A> che chiama il <xref:System.Object.Equals%2A> metodo nella classe di base.

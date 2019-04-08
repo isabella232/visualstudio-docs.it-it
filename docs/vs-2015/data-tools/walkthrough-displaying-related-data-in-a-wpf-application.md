@@ -65,7 +65,7 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
 2.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-3.  Espandere **Visual c#** oppure **Visual Basic**, quindi selezionare **Windows**.  
+3.  Espandere **Visual C#** oppure **Visual Basic**, quindi selezionare **Windows**.  
   
 4.  Verificare che l'opzione **.NET Framework 4** è selezionata nella casella combinata nella parte superiore della finestra di dialogo. Il <xref:System.Windows.Controls.DataGrid> controllo utilizzati in questa procedura dettagliata è disponibile solo in .NET Framework 4.  
   

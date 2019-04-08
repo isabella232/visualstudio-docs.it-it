@@ -46,7 +46,7 @@ Per assicurarsi che non entrino in conflitto con la progettazione codice, è pos
 
 - Visual Studio
 
-- Una soluzione che include un progetto di modellazione con un diagramma delle dipendenze. Questo diagramma di dipendenza deve essere collegato agli artefatti nei progetti c# o Visual Basic che si desidera convalidare. Visualizzare [creare i diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md).
+- Una soluzione che include un progetto di modellazione con un diagramma delle dipendenze. Questo diagramma di dipendenza deve essere collegato agli artefatti nei progetti C# o Visual Basic che si desidera convalidare. Visualizzare [creare i diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
 > I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio.
@@ -62,7 +62,7 @@ Per informazioni su quali edizioni di Visual Studio supportano questa funzionali
 
 Convalida della dipendenza si verifica in tempo reale e gli errori vengono visualizzati immediatamente nella **elenco errori**.
 
-* Convalida in tempo reale è supportata per c# e Visual Basic.
+* Convalida in tempo reale è supportata per C# e Visual Basic.
 
 * Per abilitare l'analisi della soluzione completa quando si usa la convalida live delle dipendenze, aprire le impostazioni delle opzioni da barra color oro che viene visualizzato nei **elenco errori**.
 

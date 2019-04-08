@@ -25,7 +25,7 @@ Se non è possibile creare una pagina iniziale personalizzata usando il modello 
   
 #### <a name="to-create-a-blank-start-page"></a>Per creare una pagina iniziale vuota  
   
-1.  Creare un nuovo progetto di tipo **applicazione WPF** (**Visual c# / Desktop Windows**.  
+1.  Creare un nuovo progetto di tipo **applicazione WPF** (**Visual C# / Desktop Windows**.  
   
 2.  Aggiungere un riferimento a `Microsoft.VisualStudio.Shell.14.0`.  
   

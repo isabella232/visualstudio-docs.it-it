@@ -28,7 +28,7 @@ ms.locfileid: "55952697"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Per trovare i comandi modificabili
 
-1.  Nel `DslPackage` progetto aprire `GeneratedCode\CommandSet.cs`. Questo file c# è reperibile in Esplora soluzioni come file secondario del `CommandSet.tt`.
+1.  Nel `DslPackage` progetto aprire `GeneratedCode\CommandSet.cs`. Questo file C# è reperibile in Esplora soluzioni come file secondario del `CommandSet.tt`.
 
 2.  Trovare le classi in questo file i cui nomi terminano con "`CommandSet`", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet`.
 

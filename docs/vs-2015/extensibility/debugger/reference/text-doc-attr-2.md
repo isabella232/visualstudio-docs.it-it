@@ -42,7 +42,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Note  
   
 > [!NOTE]
->  Questo valore non viene effettivamente definito nell'assembly per il linguaggio c#. In alternativa, è necessario copiare la definizione per il file di origine.  
+>  Questo valore non viene effettivamente definito nell'assembly per il linguaggio C#. In alternativa, è necessario copiare la definizione per il file di origine.  
   
  Passato come argomento per il [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (metodo).  
   

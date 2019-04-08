@@ -33,12 +33,12 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
   
 2.  Nella **Esplora soluzioni**, fare doppio clic la soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**.  
   
-3.  Nel riquadro sinistro della finestra il **nuovo progetto** finestra di dialogo espandere uno il **Visual Basic** o **Visual c#** nodo e fare clic su **Windows**. Nel riquadro centrale, selezionare **libreria di controlli utente WPF**.  
+3.  Nel riquadro sinistro della finestra il **nuovo progetto** finestra di dialogo espandere uno il **Visual Basic** o **Visual C#** nodo e fare clic su **Windows**. Nel riquadro centrale, selezionare **libreria di controlli utente WPF**.  
   
 4.  Denominare il controllo `WebUserControl` e quindi fare clic su **OK**.  
   
 ## <a name="implementing-the-user-control"></a>Implementazione del controllo utente  
- Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in XAML e quindi scrivono gli eventi di code-behind in c# o un altro linguaggio .NET.  
+ Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in XAML e quindi scrivono gli eventi di code-behind in C# o un altro linguaggio .NET.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Per scrivere il XAML per il controllo utente  
   

@@ -35,7 +35,7 @@ Seguire questi passaggi per creare un progetto [!INCLUDE[wf](../includes/wf-md.m
     > [!NOTE]
     >  L'opzione predefinita nel [!INCLUDE[vs2010](../includes/vs2010-md.md)] viene **.NET Framework 4**. Questa opzione viene usata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e non usa la finestra di progettazione legacy.  
   
-4.  Nel **tipi di progetto** riquadro, selezionare progetti Visual c# o progetti Visual Basic e quindi selezionare **flusso di lavoro**.  
+4.  Nel **tipi di progetto** riquadro, selezionare progetti Visual C# o progetti Visual Basic e quindi selezionare **flusso di lavoro**.  
   
 5.  Nel **modelli** riquadro, selezionare uno dei modelli di progetto installati:  
   

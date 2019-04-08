@@ -29,7 +29,7 @@ Gli sviluppatori di applicazioni aziendali che usano il pacchetto di Visual Stud
   
  Annidamento di progetto non è una parte intrinseca di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. È necessario scrivere il codice per abilitare la nidificazione e un sottoprogetto annidamento all'interno dei progetti figlio. Il progetto padre è un pacchetto VSPackage speciali o tipo di progetto creato e registrato con un proprio GUID che include il codice necessario per implementare la nidificazione di progetto.  
   
- Nell'esempio c# Example.Nested Project, è possibile trovare un esempio di progetti annidati.  
+ Nell'esempio C# Example.Nested Project, è possibile trovare un esempio di progetti annidati.  
   
 ## <a name="nested-projects-example"></a>Esempio di progetti annidati  
  ![Esplora i progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  

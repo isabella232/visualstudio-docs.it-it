@@ -28,7 +28,7 @@ ms.locfileid: "58966175"
   
 ### <a name="to-create-inherited-data-classes"></a>Per creare classi di dati ereditate  
   
-1.  Aprire il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] mediante l'aggiunta di un **classi LINQ to SQL** elemento a un progetto di Visual Basic o c# esistente.  
+1.  Aprire il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] mediante l'aggiunta di un **classi LINQ to SQL** elemento a un progetto di Visual Basic o C# esistente.  
   
 2.  Trascinare la tabella che si desidera usare come classe di base in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   

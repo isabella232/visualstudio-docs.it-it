@@ -1,30 +1,27 @@
 ---
 title: Sviluppare test da un modello | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58969766"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../includes/tcmext-md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.  
+È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../includes/tcmext-md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.  
   
  Per le versioni di Visual Studio che supportano queste funzionalità, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -45,7 +42,7 @@ ms.locfileid: "51787185"
  È possibile creare e gestire una relazione tra i test di sistema e un modello di requisiti. Per stabilire questa relazione, si scrivono test che corrispondono agli elementi principali del modello di requisiti. Visual Studio facilita il mantenimento di tale relazione permettendo di creare collegamenti tra i test e le parti del modello. Per altre informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Scrivere test per ogni caso di utilizzo  
- Se si usa [!INCLUDE[TCMext](../includes/tcmext-md.md)], è possibile creare un gruppo di test per ogni caso di utilizzo definito nel modello di requisiti. Se ad esempio si ha un caso di utilizzo Ordinazione pasto che include Creazione ordine e Aggiunta elemento all'ordine, è possibile creare i test sia per i casi di utilizzo in generale che per quelli più dettagliati. Per altre informazioni sui casi di utilizzo, vedere [diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Se si usa [!INCLUDE[TCMext](../includes/tcmext-md.md)], è possibile creare un gruppo di test per ogni caso di utilizzo definito nel modello di requisiti. Se ad esempio si ha un caso di utilizzo Ordinazione pasto che include Creazione ordine e Aggiunta elemento all'ordine, è possibile creare i test sia per i casi di utilizzo in generale che per quelli più dettagliati. Per altre informazioni sui casi di utilizzo, vedere [diagrammi caso di utilizzo UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
  Le linee guida seguenti possono risultare utili:  
   
@@ -59,7 +56,7 @@ ms.locfileid: "51787185"
   
     -   Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.  
   
--   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, il test di una funzione aritmetica semplice, può essere: Input 4; verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input; moltiplicare l'output per se stesso e verificare che il risultato sia l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.  
+-   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.  
   
 #### <a name="linking-tests-to-use-cases"></a>Collegamento di test ai casi di utilizzo  
  Se si usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] per progettare ed eseguire i test, è possibile organizzare i test in elementi di lavoro storia utente requisito o caso d'uso. È possibile collegare questi elementi di lavoro ai casi di utilizzo del modello, in modo da tenere traccia rapidamente delle modifiche dei requisiti nei test, oltre che dello stato di avanzamento di ogni caso di utilizzo.  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Una regola invariante di questo tipo gestisce non solo tutti i casi di utilizzo definiti al momento, ma anche tutti quelli che saranno definiti successivamente. È quindi utile scriverla separatamente dai casi di utilizzo e testarla separatamente dagli stessi.  
   
- È possibile scrivere una regola di business invariante come commento in un diagramma classi. Per altre informazioni, vedere [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md).  
+ È possibile scrivere una regola di business invariante come commento in un diagramma classi. Per altre informazioni, vedere [Diagrammi classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md).  
   
  È possibile collegare i test a una regola di business collegando il commento a un elemento di lavoro requisito o storia utente, che può essere collegato a un gruppo di test in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Per altre informazioni, vedere [collegare Test case agli elementi del modello](#Attaching).  
   
@@ -130,14 +127,14 @@ Assert (countAfter == countBefore = 1);
  Provare a verificare lo stato del sistema dopo ogni messaggio o azione. Questa operazione potrebbe richiedere una strumentazione aggiuntiva.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>Derivazione dei test di sottosistema dai modelli  
- Nella progettazione di alto livello di un sistema di grandi dimensioni è possibile identificare componenti o sottosistemi. Rappresentano le parti che possono essere progettate separatamente, che risiedono in computer diversi o che sono moduli riutilizzabili da ricombinare in vari modi. Per altre informazioni, vedere [diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md).  
+ Nella progettazione di alto livello di un sistema di grandi dimensioni è possibile identificare componenti o sottosistemi. Rappresentano le parti che possono essere progettate separatamente, che risiedono in computer diversi o che sono moduli riutilizzabili da ricombinare in vari modi. Per altre informazioni, vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md).  
   
  A ciascun componente principale è possibile applicare gli stessi principi usati per il sistema completo. In un progetto di grandi dimensioni, ogni componente può avere il proprio modello di requisiti. Nei progetti più piccoli è possibile creare un modello architetturale o una progettazione di alto livello per mostrare i componenti principali e le relative interazioni. Per altre informazioni, vedere [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md).  
   
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.  
   
 ### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolare i componenti con interfacce fornite e richieste  
- È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste. Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.  
+ È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste.  Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.  
   
  Un vantaggio costituito da questa separazione è la possibilità di eseguire il test del componente sostituendo i servizi usati generalmente con oggetti fittizi. Si tratta di componenti configurati a scopo di test. Un componente fittizio fornisce l'interfaccia richiesta dal componente, rispondendo alle query con dati simulati. I componenti fittizi fanno parte di un test harness completo che è possibile connettere a tutte le interfacce del componente.  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
  [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)   
  [Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)
-
-
-

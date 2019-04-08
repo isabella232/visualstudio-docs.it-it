@@ -34,7 +34,7 @@ ms.locfileid: "58969486"
   
 3.  Formatta il valore in base al tipo dell'oggetto locale.  
   
-4.  Restituisce un oggetto generico che contiene il valore dell'oggetto locale. In c#, questo è un `object`, e in C++, questo è un `VARIANT`.  
+4.  Restituisce un oggetto generico che contiene il valore dell'oggetto locale. In C#, questo è un `object`, e in C++, questo è un `VARIANT`.  
   
 ## <a name="managed-code"></a>Codice gestito  
  Questa è un'implementazione di una funzione che recupera il valore di una variabile locale nel codice gestito.  

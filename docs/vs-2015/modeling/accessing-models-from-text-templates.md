@@ -63,7 +63,7 @@ Here is a list of elements in the model:
   
 -   Una proprietà in `this` contiene l'elemento radice. Da qui, il codice può passare agli altri elementi del modello. Il nome della proprietà è in genere quello utilizzato per la classe di dominio di primo livello del linguaggio DSL. In questo esempio si tratta di `this.ExampleModel`.  
   
--   Anche se la lingua in cui vengono scritti i frammenti di codice c#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.  
+-   Anche se la lingua in cui vengono scritti i frammenti di codice C#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.  
   
 -   Per eseguire il debug del modello, aggiungere `debug="true"` per il `template` direttiva. Il modello verrà aperto in un'altra istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se si verifica un'eccezione. Se si desidera interrompere il debugger in un momento specifico nel codice, l'istruzione insert `System.Diagnostics.Debugger.Break();`  
   

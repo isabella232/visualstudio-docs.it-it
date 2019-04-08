@@ -58,7 +58,7 @@ int GetMessage( 
  [out] Restituisce il tipo del messaggio, usando le convenzioni di Win32 `MessageBox` (funzione). Vedere le [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) funzione per i dettagli.  
   
  `pbstrHelpFileName`  
- [in, out] Restituisce il nome del file della Guida. Può essere un valore null (C++) o un valore vuoto (c#) se è presente alcun file della Guida.  
+ [in, out] Restituisce il nome del file della Guida. Può essere un valore null (C++) o un valore vuoto (C#) se è presente alcun file della Guida.  
   
  `pdwHelpId`  
  [in, out] Restituisce l'identificatore della Guida. Può essere 0 se non esiste alcuna informazione della Guida associato al messaggio.  

@@ -200,31 +200,31 @@ In questa sezione contiene informazioni su Visual Studio gli spazi dei nomi rela
  Utilizzato per la procedura guidata di Visual Studio.  
   
  <xref:VSLangProj>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:VSLangProj2>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:VSLangProj80>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:VSLangProj90>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:VSLangProj100>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:VSLangProj110>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:VSLangProj140>  
- Utilizzato per l'automazione dei progetti c# e Visual Basic.  
+ Utilizzato per l'automazione dei progetti C# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.CallHierarchy>  
- Utilizzato per l'automazione in c# e Visual Basic.  
+ Utilizzato per l'automazione in C# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>  
- Utilizzato per l'automazione in c# e Visual Basic.  
+ Utilizzato per l'automazione in C# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Threading>  
  Utilizzato per il threading di Visual Studio.  

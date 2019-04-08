@@ -29,9 +29,9 @@ ms.locfileid: "58324682"
 ## <a name="update-the-generated-ribbon-code"></a>Aggiornare il codice della barra multifunzione generato
  Se la versione di. il Framework di destinazione del progetto viene aggiornato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario modificare il codice generato per l'elemento barra multifunzione effettuando i passaggi seguenti. I file di codice che è necessario aggiornare dipendono dal linguaggio di programmazione e dalla modalità di creazione del progetto:
 
--   Nei progetti Visual Basic o nei progetti Visual c# creato in uno [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] oppure [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] eseguire tutti i passaggi nel file code-behind della barra multifunzione (*YourRibbonItem*. Designer.cs o *YourRibbonItem*. VB). Per visualizzare il file code-behind nei progetti Visual Basic, scegliere il **Mostra tutti i file** sul pulsante **Esplora soluzioni**.
+-   Nei progetti Visual Basic o nei progetti Visual C# creato in uno [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] oppure [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] eseguire tutti i passaggi nel file code-behind della barra multifunzione (*YourRibbonItem*. Designer.cs o *YourRibbonItem*. VB). Per visualizzare il file code-behind nei progetti Visual Basic, scegliere il **Mostra tutti i file** sul pulsante **Esplora soluzioni**.
 
--   Nei progetti Visual c# creato in Visual Studio 2008 e successivamente aggiornato a [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], eseguire i primi due passaggi nel file di codice della barra multifunzione (*YourRibbonItem*cs oppure *YourRibbonItem*VB), e eseguire i passaggi rimanenti nel file code-behind della barra multifunzione.
+-   Nei progetti Visual C# creato in Visual Studio 2008 e successivamente aggiornato a [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], eseguire i primi due passaggi nel file di codice della barra multifunzione (*YourRibbonItem*cs oppure *YourRibbonItem*VB), e eseguire i passaggi rimanenti nel file code-behind della barra multifunzione.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>Per modificare il codice della barra multifunzione generato
 

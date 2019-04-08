@@ -5,6 +5,12 @@ title: Prodotti di Visual Studio | Microsoft Docs
 description: Esplorare la famiglia di prodotti di Visual Studio.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59017992"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -24,7 +30,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,12 +49,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio per Mac</h3>
-                                                    <p>Creare app e giochi, usando il Mac, per cloud, iOS, Android, macOS e i dispositivi indossabili.</p>
+                                                    <p>Sviluppare app e giochi per iOS, Android, desktop e Web con .NET.</p>
                                                 </div>
                                             </div>
                                         </div>

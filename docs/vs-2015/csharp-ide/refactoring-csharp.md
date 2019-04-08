@@ -1,5 +1,5 @@
 ---
-title: Refactoring (c#) | Microsoft Docs
+title: Refactoring (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -30,7 +30,7 @@ ms.locfileid: "58967788"
 
 Refactoring è il processo di miglioramento del codice dopo che è stata scritta modificando la struttura interna del codice senza modificare il comportamento esterno del codice.  
   
- Visual c# fornisce i seguenti comandi di refactoring nel **Refactoring** menu:  
+ Visual C# fornisce i seguenti comandi di refactoring nel **Refactoring** menu:  
   
 -   [Refactoring per Estrai Metodo (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
@@ -69,7 +69,7 @@ Refactoring è il processo di miglioramento del codice dopo che è stata scritta
   
  Il **risultati della verifica** nella finestra di dialogo può ricevere una notifica se il motore di refactoring rilevi errori di compilazione o che un'operazione di refactoring provoca inavvertitamente un riferimento al codice per l'associazione a un elemento diverso da quello associato in origine (riassociazione problema).  
   
- Per attivare la funzionalità dei risultati della verifica, scegliere il **strumenti** menu, fare clic su **opzioni**. Nel **le opzioni** finestra di dialogo espandere **Editor di testo**, quindi espandere **c#**. Fare clic su **avanzate** e selezionare il **verifica risultati del refactoring** casella di controllo.  
+ Per attivare la funzionalità dei risultati della verifica, scegliere il **strumenti** menu, fare clic su **opzioni**. Nel **le opzioni** finestra di dialogo espandere **Editor di testo**, quindi espandere **C#**. Fare clic su **avanzate** e selezionare il **verifica risultati del refactoring** casella di controllo.  
   
  Il **risultati della verifica** nella finestra di dialogo consente di distinguere la differenza tra due tipi di problemi di riassociazione.  
   
@@ -107,5 +107,5 @@ class Example
  Se si usa il refactoring per rinominare `OtherMethod` a `Method`, viene visualizzata questa finestra di dialogo. Il riferimento nel `Main` fa riferimento al metodo di overload che accetta un `int` parametro anziché il metodo di overload che accetta un `object` parametro.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Usando l'ambiente di sviluppo di Visual Studio per c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [Usando l'ambiente di sviluppo di Visual Studio per C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Procedura: Ripristinare refactoring di frammenti C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

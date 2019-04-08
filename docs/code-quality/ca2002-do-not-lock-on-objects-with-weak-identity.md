@@ -83,5 +83,5 @@ L'esempio seguente illustra alcuni blocchi di oggetti che violano la regola.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [blocco di istruzione (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [blocco di istruzione (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [Istruzione SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

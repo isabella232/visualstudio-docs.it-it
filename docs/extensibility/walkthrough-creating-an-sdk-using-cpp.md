@@ -59,7 +59,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
 
 1.  In **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'**, quindi scegliere **Add** > **nuovo progetto**.
 
-2.  Nell'elenco dei modelli, espandere **Visual c#** > **Extensibility**, quindi selezionare **progetto VSIX**. Nel **nome** , specificare **NativeMathVSIX**, quindi scegliere il **OK** pulsante.
+2.  Nell'elenco dei modelli, espandere **Visual C#** > **Extensibility**, quindi selezionare **progetto VSIX**. Nel **nome** , specificare **NativeMathVSIX**, quindi scegliere il **OK** pulsante.
 
 3.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida **vsixmanifest**, quindi scegliere **Visualizza codice**.
 
@@ -69,7 +69,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
 
 5.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NativeMathVSIX** del progetto e quindi scegliere **Add** > **nuovo elemento**.
 
-6.  Nell'elenco degli **elementi di Visual c#**, espandere **dati**, quindi selezionare **File XML**. Nel **nome** , specificare `SDKManifest.xml`, quindi scegliere il **OK** pulsante.
+6.  Nell'elenco degli **elementi di Visual C#**, espandere **dati**, quindi selezionare **File XML**. Nel **nome** , specificare `SDKManifest.xml`, quindi scegliere il **OK** pulsante.
 
 7.  Usare questo codice XML per sostituire il contenuto del file:
 

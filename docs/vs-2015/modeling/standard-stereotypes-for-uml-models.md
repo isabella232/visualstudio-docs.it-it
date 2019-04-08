@@ -33,7 +33,7 @@ ms.locfileid: "58965475"
 |-------------|-------------|  
 |[Profilo Standard UML L2](#L2)|Set standard di stereotipi che possono essere usati per aggiungere altre informazioni su un elemento o una relazione.|  
 |[Profilo Standard UML L3](#L3)|Set standard di stereotipi che possono essere usati per aggiungere altre informazioni su un elemento o una relazione.|  
-|[Profilo c#](#NetProfile)|Se si vuole che una classe o un altro elemento in un modello UML rappresenti il codice programma, è possibile indicarlo applicando uno degli stereotipi del profilo C#.<br /><br /> Questi stereotipi inoltre aggiungono le proprietà agli elementi del modello.|  
+|[Profilo C#](#NetProfile)|Se si vuole che una classe o un altro elemento in un modello UML rappresenti il codice programma, è possibile indicarlo applicando uno degli stereotipi del profilo C#.<br /><br /> Questi stereotipi inoltre aggiungono le proprietà agli elementi del modello.|  
   
  Quando si crea un nuovo modello UML, i profili standard UML L2 e L3 vengono collegati al modello, a meno che non si rimuovano i collegamenti.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "58965475"
 |metaModel|Modello|Definisce un linguaggio di modellazione, ad esempio una variante di UML, o un linguaggio specifico del dominio.|  
 |systemModel|Modello|Modello che è una raccolta di modelli che si applicano allo stesso sistema, ad esempio una specifica, una realizzazione e le relazioni di traccia reciproche.|  
   
-##  <a name="NetProfile"></a> Profilo c#  
+##  <a name="NetProfile"></a> Profilo C#  
  Gli stereotipi definiti in questo profilo consentono di indicare che un elemento del modello verrà tradotto in codice programma. Ogni stereotipo definisce proprietà aggiuntive che è possibile impostare nell'elemento del modello.  
   
  Per rendere disponibili questi stereotipi, collegare un modello o un pacchetto al profilo C#. È quindi possibile applicare gli stereotipi agli elementi del modello in tale modello o pacchetto.  
@@ -131,12 +131,12 @@ ms.locfileid: "58965475"
   
 |Stereotipo|Si applica a|Proprietà|  
 |----------------|----------------|----------------|  
-|**Classe c#**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **È parziale**<br /><br /> **È Sealed**<br /><br /> **È statico**<br /><br /> **Non è sicuro**<br /><br /> **Visibilità del pacchetto**|  
-|**Struct c#**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **È parziale**<br /><br /> **Non è sicuro**<br /><br /> **Visibilità del pacchetto**|  
-|**Membri globali c#**|Classe UML<br /><br /> Componente|**Attributi CLR**|  
-|**Interfaccia c#**|Interfaccia UML|**Attributi CLR**<br /><br /> **È parziale**<br /><br /> **Visibilità del pacchetto**|  
-|**Enum in c#**|Enumerazione UML|**ClrAttributes**<br /><br /> **Tipo di base**|  
-|**Spazio dei nomi c#**|Pacchetto UML|**Attributi CLR**<br /><br /> **Nome di base**<br /><br /> **Uso degli spazi dei nomi**|  
+|**Classe C#**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **È parziale**<br /><br /> **È Sealed**<br /><br /> **È statico**<br /><br /> **Non è sicuro**<br /><br /> **Visibilità del pacchetto**|  
+|**Struct C#**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **È parziale**<br /><br /> **Non è sicuro**<br /><br /> **Visibilità del pacchetto**|  
+|**Membri globali C#**|Classe UML<br /><br /> Componente|**Attributi CLR**|  
+|**Interfaccia C#**|Interfaccia UML|**Attributi CLR**<br /><br /> **È parziale**<br /><br /> **Visibilità del pacchetto**|  
+|**Enum in C#**|Enumerazione UML|**ClrAttributes**<br /><br /> **Tipo di base**|  
+|**Spazio dei nomi C#**|Pacchetto UML|**Attributi CLR**<br /><br /> **Nome di base**<br /><br /> **Uso degli spazi dei nomi**|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Aggiungere stereotipi a elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md)   

@@ -45,7 +45,7 @@ ms.locfileid: "58968276"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra un delegato che viola la regola. Nel [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] esempio, i commenti descrivono come modificare l'esempio per soddisfare la regola. Nell'esempio c#, vedere l'esempio seguente che mostra il codice modificato.
+ L'esempio seguente illustra un delegato che viola la regola. Nel [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] esempio, i commenti descrivono come modificare l'esempio per soddisfare la regola. Nell'esempio C#, vedere l'esempio seguente che mostra il codice modificato.
 
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/cs/FxCop.Design.CustomEventHandler.cs#1)]
  [!code-vb[FxCop.Design.CustomEventHandler#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/vb/FxCop.Design.CustomEventHandler.vb#1)]

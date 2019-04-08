@@ -1,5 +1,5 @@
 ---
-title: Rimuovere i parametri di Refactoring (c#) | Microsoft Docs
+title: Rimuovere i parametri di Refactoring (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

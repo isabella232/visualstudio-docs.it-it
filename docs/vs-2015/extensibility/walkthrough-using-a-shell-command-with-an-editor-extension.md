@@ -30,7 +30,7 @@ Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio 
 ## <a name="creating-an-extension-with-a-menu-command"></a>Creazione di un'estensione con un comando di menu  
  Creare un pacchetto VSPackage che inserisce un comando di menu denominato **Aggiungi area di controllo** nel **Tools** menu.  
   
-1.  Creare un progetto VSIX c# denominato `MenuCommandTest`e aggiungere un nome di modello di elemento di comando personalizzati **AddAdornment**. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Creare un progetto VSIX C# denominato `MenuCommandTest`e aggiungere un nome di modello di elemento di comando personalizzati **AddAdornment**. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 2.  Viene aperta una soluzione denominata MenuCommandTest. Il file MenuCommandTestPackage ha il codice che crea il comando di menu e lo aggiunge il **strumenti** menu. A questo punto, il comando verifica semplicemente una finestra di messaggio da visualizzare. Passaggi successivi illustrano come modificare questa impostazione per visualizzare l'area di controllo di commento.  
   
@@ -40,7 +40,7 @@ Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio 
   
 ## <a name="adding-a-mef-extension-to-the-command-extension"></a>Aggiunta di un'estensione MEF all'estensione del comando  
   
-1.  Nella **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**. Nel **Aggiungi nuovo progetto** finestra di dialogo, fare clic su **Extensibility** sotto **Visual c#**, quindi **progetto VSIX**. Denominare il progetto `CommentAdornmentTest`.  
+1.  Nella **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**. Nel **Aggiungi nuovo progetto** finestra di dialogo, fare clic su **Extensibility** sotto **Visual C#**, quindi **progetto VSIX**. Denominare il progetto `CommentAdornmentTest`.  
   
 2.  Poiché questo progetto interagirà con il pacchetto VSPackage assembly con nome sicuro, è necessario firmare l'assembly. È possibile riutilizzare il file di chiave già creato per l'assembly VSPackage.  
   

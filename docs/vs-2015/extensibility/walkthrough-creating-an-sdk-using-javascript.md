@@ -33,7 +33,7 @@ Questa procedura dettagliata illustra come usare JavaScript per creare una sempl
   
 1.  Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2.  Nell'elenco delle categorie dei modelli, sotto **Visual c#**, selezionare **estendibilità**, quindi selezionare il **progetto VSIX** modello.  
+2.  Nell'elenco delle categorie dei modelli, sotto **Visual C#**, selezionare **estendibilità**, quindi selezionare il **progetto VSIX** modello.  
   
 3.  Nel **Name** testo, specificare `SimpleMathVSIX` e scegliere il **OK** pulsante.  
   
@@ -98,7 +98,7 @@ Questa procedura dettagliata illustra come usare JavaScript per creare una sempl
   
 14. Scegliere il menu di scelta rapida per la cartella \js\ **Add**, **nuovo elemento**.  
   
-15. Sotto **elementi Visual c#**, selezionare la **Web** categoria e quindi selezionare il **JavaScript File** elemento. Denominare il file `arithmetic.js`, quindi scegliere il **Add** pulsante.  
+15. Sotto **elementi Visual C#**, selezionare la **Web** categoria e quindi selezionare il **JavaScript File** elemento. Denominare il file `arithmetic.js`, quindi scegliere il **Add** pulsante.  
   
 16. Inserire il codice seguente nel arithmetic.js:  
   

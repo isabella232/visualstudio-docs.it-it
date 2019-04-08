@@ -30,7 +30,7 @@ ms.locfileid: "58968541"
   
 1.  Sotto **Visual Basic**, **estendibilità**. Il linguaggio predefinito del progetto è Visual Basic.  
   
-2.  Sotto **Visual c#**, **estendibilità**. Il linguaggio predefinito del progetto è C#.  
+2.  Sotto **Visual C#**, **estendibilità**. Il linguaggio predefinito del progetto è C#.  
   
 3.  Sotto **altri tipi di progetto**, **estendibilità**. Il linguaggio predefinito del progetto è C++.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58968541"
   
 #### <a name="to-add-a-mef-component"></a>Per aggiungere un componente MEF  
   
-1.  Nel **Aggiungi nuovo progetto** nella finestra di dialogo **Visual c#**, **estendibilità**, usare il **margine dell'Editor** modello per aggiungere un progetto. Assegnargli il nome `ShellEditorMargin`.  
+1.  Nel **Aggiungi nuovo progetto** nella finestra di dialogo **Visual C#**, **estendibilità**, usare il **margine dell'Editor** modello per aggiungere un progetto. Assegnargli il nome `ShellEditorMargin`.  
   
 2.  Nel progetto ShellExtensionsVSIX, aprire il file vsixmanifest nella visualizzazione progettazione, non la visualizzazione del codice.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "58968541"
   
 #### <a name="to-add-a-generic-vsix-project"></a>Per aggiungere un progetto VSIX generico  
   
-1.  Nel **Aggiungi nuovo progetto** nella finestra di dialogo **Visual c#**, **estendibilità**, usare il **VSIXProject** modello per aggiungere un progetto. Assegnargli il nome `EmptyVSIX`.  
+1.  Nel **Aggiungi nuovo progetto** nella finestra di dialogo **Visual C#**, **estendibilità**, usare il **VSIXProject** modello per aggiungere un progetto. Assegnargli il nome `EmptyVSIX`.  
   
 2.  Nel progetto ShellExtensionsVSIX, aprire il file Source.extensions.vsixmanifest nella visualizzazione progettazione, non la visualizzazione del codice.  
   

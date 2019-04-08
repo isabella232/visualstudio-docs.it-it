@@ -65,7 +65,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
   
 1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
   
-2. Nel **modelli installati** riquadro, selezionare Visual c#, Visual Basic o Visual C++. Per i linguaggi gestiti, assicurarsi che [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] sia visualizzato nella casella del framework.  
+2. Nel **modelli installati** riquadro, selezionare Visual C#, Visual Basic o Visual C++. Per i linguaggi gestiti, assicurarsi che [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] sia visualizzato nella casella del framework.  
   
 3. Selezionare **applicazione Console** e quindi fare clic su **OK**. Restare nella configurazione per il debug, ovvero l'impostazione predefinita.  
   

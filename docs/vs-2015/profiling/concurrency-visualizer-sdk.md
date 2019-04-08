@@ -13,7 +13,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54769320"
@@ -30,7 +30,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
  Il visualizzatore di concorrenza espone un provider predefinito che è possibile usare per generare i marcatori. Il provider è già registrato nel visualizzatore di concorrenza e non è necessario eseguire altre operazioni per visualizzare i marcatori nell'interfaccia utente.  
   
 ### <a name="c-and-visual-basic"></a>C# e Visual Basic  
- In C#, Visual basic e altro codice gestito usare il provider predefinito chiamando <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Espone le quattro funzioni per la generazione di marcatori: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> e <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.  
+ In C#, Visual Basic e altro codice gestito usare il provider predefinito chiamando <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Espone le quattro funzioni per la generazione di marcatori: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> e <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.  
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Per aggiungere un SDK a un progetto C# o Visual Basic  
   

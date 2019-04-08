@@ -197,7 +197,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 12. Trovare il \<ItemGroup > elemento che contiene altre risorse che vengono aggiunti al progetto, ad esempio file con estensione png del logo (\<Include="Assets\Logo.scale-100.png contenuto" / >). Aggiungere il codice seguente \<Content > elemento figlio a questa \<ItemGroup > elemento:  
   
-     **Per c#:**  
+     **Per C#:**  
   
     ```xml  
     <Content Include="Properties\default.rd.xml" />  

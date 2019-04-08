@@ -39,7 +39,7 @@ ms.locfileid: "58966719"
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando l'esecuzione viene interrotta dal debugger a causa di un'eccezione, viene visualizzata una finestra di dialogo. Per Visual Basic o c#, verrà visualizzato il [informazioni sulle eccezioni](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) finestra di dialogo, per impostazione predefinita. Per C++, si noterà il precedente **eccezione** nella finestra di dialogo. Se Usa Visual Basic o c#, ma sono disabilitate le **informazioni sulle eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **eccezione** nella finestra di dialogo.  
+Quando l'esecuzione viene interrotta dal debugger a causa di un'eccezione, viene visualizzata una finestra di dialogo. Per Visual Basic o C#, verrà visualizzato il [informazioni sulle eccezioni](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) finestra di dialogo, per impostazione predefinita. Per C++, si noterà il precedente **eccezione** nella finestra di dialogo. Se Usa Visual Basic o C#, ma sono disabilitate le **informazioni sulle eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **eccezione** nella finestra di dialogo.  
   
  Quando la **informazioni sulle eccezioni** oppure **eccezione** verrà visualizzata la finestra di dialogo, è possibile provare a risolvere il problema che ha causato l'eccezione.  
   

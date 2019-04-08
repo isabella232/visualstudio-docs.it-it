@@ -39,7 +39,7 @@ Un tipo pubblico implementa l'operatore di uguaglianza, ma non esegue l'override
 
 L'operatore di uguaglianza deve essere un modo pratico sintatticamente per accedere alla funzionalità del <xref:System.Object.Equals%2A> (metodo). Se si implementa l'operatore di uguaglianza, la logica deve essere identica a quello di <xref:System.Object.Equals%2A>.
 
-Il compilatore c# genera un avviso se il codice viola questa regola.
+Il compilatore C# genera un avviso se il codice viola questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

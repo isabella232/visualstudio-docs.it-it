@@ -24,7 +24,7 @@ ms.locfileid: "58968640"
 
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse. I progetti vengono visualizzati come figli di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.  
   
- I progetti sono definiti nel file di progetto, ad esempio un file con estensione csproj per un progetto Visual c#. È possibile creare un proprio tipo di progetto che ha il proprio estensione nome file di progetto. Per altre informazioni sui tipi di progetto, vedere [tipi di progetto](../extensibility/internals/project-types.md).  
+ I progetti sono definiti nel file di progetto, ad esempio un file con estensione csproj per un progetto Visual C#. È possibile creare un proprio tipo di progetto che ha il proprio estensione nome file di progetto. Per altre informazioni sui tipi di progetto, vedere [tipi di progetto](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
 >  Se è necessario estendere Visual Studio con un tipo di progetto personalizzati, è consigliabile sfruttare il [sistema di progetto di Visual Studio](https://github.com/Microsoft/VSProjectSystem) che offre numerosi vantaggi rispetto alla creazione di un sistema di progetto da zero:  
@@ -34,7 +34,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
 > 
 >   Se è necessario destinate alle versioni di Visual Studio precedenti a Visual Studio 2013, non sarà in grado di sfruttare CPS in un'estensione di Visual Studio.  Se è questo il caso, questa procedura dettagliata è ideale per iniziare.  
   
- Questa procedura dettagliata illustra come creare un tipo di progetto che ha il .myproj di estensione nome file progetto. Questa procedura dettagliata Usa il sistema di progetto Visual c# esistente.  
+ Questa procedura dettagliata illustra come creare un tipo di progetto che ha il .myproj di estensione nome file progetto. Questa procedura dettagliata Usa il sistema di progetto Visual C# esistente.  
   
 > [!NOTE]
 >  Per un esempio end-to-end di un sistema di progetto linguaggio completo, vedere Approfondimenti esempio IronPython nel [esempi di VSSDK](../misc/vssdk-samples.md).  
@@ -63,7 +63,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
  È inoltre necessario scaricare il codice sorgente per il [Framework di pacchetto gestito per progetti](http://mpfproj12.codeplex.com/). Estrarre il file in una posizione accessibile per la soluzione che si intende creare.  
   
 ## <a name="creating-a-basic-project-type"></a>Creazione di un tipo di progetto di base  
- Creare un progetto VSIX c# denominato **SimpleProject**. (**File, nuovo, progetto** e quindi **il pacchetto di Visual Studio c#, estendibilità,**). Aggiungere un modello di elemento di progetto di pacchetto di Visual Studio (in Esplora soluzioni fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**, quindi passare alla **estendibilità / pacchetto di Visual Studio**). Denominare il file **SimpleProjectPackage**.  
+ Creare un progetto VSIX C# denominato **SimpleProject**. (**File, nuovo, progetto** e quindi **il pacchetto di Visual Studio C#, estendibilità,**). Aggiungere un modello di elemento di progetto di pacchetto di Visual Studio (in Esplora soluzioni fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**, quindi passare alla **estendibilità / pacchetto di Visual Studio**). Denominare il file **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Creazione di un modello di progetto di base  
  A questo punto, è possibile modificare questo VSPackage di base per implementare il nuovo tipo di progetto .myproj. Per creare un progetto che si basa sul tipo di progetto .myproj, deve conoscere quali file, risorse e riferimenti da aggiungere al nuovo progetto di Visual Studio. Per fornire questa informazione, inserire i file di progetto in una cartella di modello di progetto. Quando un utente usa il progetto .myproj per creare un progetto, i file vengono copiati nel nuovo progetto.  
@@ -158,7 +158,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
   
 12. Nel **proprietà** impostare nella finestra di **azione di compilazione** AssemblyInfo.cs, Program.cs, SimpleProject.ico e SimpleProject.myproj a **contenuto**e impostare i  **Includi in VSIX** delle proprietà per **True**.  
   
-    Questo modello descrive un progetto Visual c# base con una configurazione di Debug e una configurazione di rilascio. Il progetto include due file di origine, AssemblyInfo.cs e Program.cs e numerosi assembly che i riferimenti. Quando viene creato un progetto dal modello, il valore ProjectGuid verrà automaticamente sostituito da un nuovo GUID.  
+    Questo modello descrive un progetto Visual C# base con una configurazione di Debug e una configurazione di rilascio. Il progetto include due file di origine, AssemblyInfo.cs e Program.cs e numerosi assembly che i riferimenti. Quando viene creato un progetto dal modello, il valore ProjectGuid verrà automaticamente sostituito da un nuovo GUID.  
   
     Nelle **Esplora soluzioni**, espanso **modelli** cartella apparirà come segue:  
   

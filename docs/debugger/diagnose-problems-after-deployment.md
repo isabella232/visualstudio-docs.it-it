@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316886"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857775"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticare i problemi dopo la distribuzione usando IntelliTrace (C#, Visual Basic)
 
@@ -21,17 +21,17 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
  Se si usa Microsoft Monitoring Agent per controllare IntelliTrace, è necessario configurare il monitoraggio delle prestazioni delle applicazioni nel server Web. In questo modo vengono registrati gli eventi di diagnostica durante l'esecuzione dell'applicazione e vengono salvati gli eventi nel file di log IntelliTrace. È quindi possibile esaminare gli eventi in Visual Studio Enterprise (ma non edizioni Professional o Community), passare al codice nel punto in cui si è verificato l'evento, esaminare i valori registrati in quel momento e spostarsi avanti o indietro lungo il codice che è stato eseguito. Dopo aver trovato e risolto il problema, ripetere il ciclo per compilare, rilasciare e monitorare la versione per risolvere eventuali problemi futuri più tempestivamente e rapidamente.
 
- ![Codice, compilare, rilasciare, monitoraggio, diagnosi, correzione](../debugger/media/ffr_cycle.png "FFR_Cycle")
+ ![Scrivere il codice, compilare, rilasciare, monitorare, diagnosticare, correggere](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
  **Sono necessari:**
 
--   Visual Studio, Azure DevOps o Team Foundation Server 2017, 2015, 2013, 2012 o 2010 per configurare la compilazione
+-   Visual Studio, Azure DevOps o Team Foundation Server 2017, 2015, 2013, 2012 o 2010 per configurare la build
 
 -   Microsoft Monitoring Agent per monitorare i dati di diagnostica della registrazione dell'applicazione
 
 -   Visual Studio Enterprise (ma non edizioni Professional o Community) per esaminare i dati diagnostici ed eseguire il debug del codice con IntelliTrace
 
-##  <a name="SetUpBuild"></a>Passaggio 1: Includere le informazioni sulla build nella versione
+##  <a name="SetUpBuild"></a> Passaggio 1: Includere le informazioni sulla build nella versione
  Configurare il processo di compilazione per creare un manifesto di compilazione (file *BuildInfo.config*) per il progetto Web e includere il manifesto nella versione. Il manifesto contiene informazioni relative al progetto, al controllo del codice sorgente e al sistema di compilazione usati per creare una specifica build. Con queste informazioni, è possibile trovare tramite Visual Studio l'origine e i simboli corrispondenti, dopo aver aperto il log IntelliTrace per esaminare gli eventi registrati.
 
 ###  <a name="AutomatedBuild"></a> Creare il manifesto di compilazione per una compilazione automatica con Team Foundation Server
@@ -40,15 +40,15 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 ####  <a name="TFS2017"></a> Azure DevOps e Team Foundation Server 2017
 
-Visual Studio 2017 non include il *buildinfo. config* file, che è stato deprecato e quindi rimosso. Per eseguire il debug di App web ASP.NET dopo la distribuzione, usare uno dei metodi seguenti:
+Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config*, che è stato deprecato e quindi rimosso. Per eseguire il debug di app Web ASP.NET dopo la distribuzione, usare uno dei metodi seguenti:
 
 * Per la distribuzione in Azure, usare [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
-* Se si desidera utilizzare IntelliTrace, aprire il progetto in Visual Studio e caricare i file di simboli dalla compilazione corrisponda. È possibile caricare i file di simboli dal **moduli** finestra o configurando i simboli nel **Tools** > **opzioni** > **debug**   >  **Simboli**.
+* Se è necessario usare IntelliTrace, aprire il progetto in Visual Studio e caricare i file di simboli dalla build corrispondente. È possibile caricare i file di simboli dalla finestra **Moduli** o configurando i simboli in **Strumenti** > **Opzioni** > **Debug** > **Simboli**.
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- Configurare la pipeline di compilazione per aggiungere i percorsi dell'origine, compilazione e simboli al manifesto di compilazione (file buildinfo. config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.
+ Configurare la pipeline di compilazione per aggiungere le posizioni di origine, build e simboli al manifesto di compilazione (file BuildInfo.config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.
 
 1.  [Modificare la pipeline di compilazione o creare una nuova pipeline di compilazione.](/azure/devops/pipelines/get-started-designer?view=vsts)
 
@@ -97,11 +97,11 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 
 1.  Installare Visual Studio 2013 (qualsiasi edizione) nel server Team Foundation Build.
 
-2.  Nella pipeline di compilazione, specificare dove salvare i simboli in modo da indicizzare automaticamente l'origine.
+2.  Nella pipeline di compilazione specificare il percorso in cui salvare i simboli in modo da indicizzare automaticamente l'origine.
 
      Se si usa un modello personalizzato, verificare che disponga di un'attività per l'indicizzazione dell'origine.
 
-3.  Aggiungere gli argomenti MSBuild alla pipeline di compilazione:
+3.  Aggiungere questi argomenti MSBuild alla pipeline di compilazione:
 
     -   **/p:VisualStudioVersion=12.0**
 
@@ -153,7 +153,7 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 
  **/p:BuildSymbolStorePath=**\<*percorso dei simboli*>
 
-##  <a name="DeployRelease"></a>Passaggio 2: Rilasciare l'applicazione
+##  <a name="DeployRelease"></a> Passaggio 2: Rilasciare l'app
  Se si usa il [pacchetto Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) creato dal processo di compilazione per distribuire l'applicazione, il manifesto di compilazione viene rinominato automaticamente da "*NomeProgetto*.BuildInfo.config" a "BuildInfo.config" e viene inserito nella stessa cartella del file Web.config dell'applicazione, nel server Web.
 
  Se vengono usati altri metodi per distribuire l'applicazione, assicurarsi che il manifesto di compilazione sia rinominato da "*ProjectName*.BuildInfo.config" a "BuildInfo.config" inserito nella stessa cartella del file Web.config dell'applicazione, nel server Web.
@@ -161,28 +161,28 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 ## <a name="step-3-monitor-your-app"></a>Passaggio 3: Monitorare l'applicazione
  Impostare il monitoraggio delle prestazioni dell'applicazione sul server Web in modo tale da poter monitorare l'insorgere di problemi nell'applicazione, registrare eventi diagnostici e salvare tali eventi nel file di log IntelliTrace. Vedere la pagina relativa al [monitoraggio della versione per il rilevamento di problemi di distribuzione](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents"></a>Passaggio 4: Individuare il problema
+##  <a name="InvestigateEvents"></a> Passaggio 4: Individuare il problema
  È necessario che sia presente Visual Studio Enterprise nel computer di sviluppo o in un altro computer per esaminare gli eventi registrati ed eseguire il debug del codice con IntelliTrace. È inoltre possibile usare strumenti come CodeLens, mappe del debugger e mappe del codice per diagnosticare il problema.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Aprire il log IntelliTrace e la soluzione corrispondente
 
 1.  Aprire il log IntelliTrace (file .iTrace) da Visual Studio Enterprise. In alternativa, fare doppio clic sul file se nello stesso computer è presente Visual Studio Enterprise.
 
-2.  Scegliere **Apri soluzione** per fare in modo che Visual Studio apra automaticamente la soluzione o il progetto corrispondente, se il progetto non è stato compilato come parte di una soluzione. [D: Nel log IntelliTrace mancano le informazioni sull'applicazione distribuita. Per quale motivo? Quale operazione devo eseguire?](#InvalidConfigFile)
+2.  Scegliere **Apri soluzione** per fare in modo che Visual Studio apra automaticamente la soluzione o il progetto corrispondente, se il progetto non è stato compilato come parte di una soluzione. [D: Nel log IntelliTrace mancano le informazioni sull'applicazione distribuita. Per quale motivo? Che cosa si può fare?](#InvalidConfigFile)
 
      Visual Studio esegue automaticamente lo shelving di qualsiasi modifica in sospeso all'apertura della soluzione o del progetto corrispondente. Per ottenere ulteriori dettagli su questo shelveset, aprire la finestra **Output** o **Team Explorer**.
 
      Prima di apportare modifiche, verificare di disporre dell'origine corretta. Se si usano i rami, è possibile che il ramo su cui si sta lavorando sia diverso rispetto a quello in cui Visual Studio cerca l'origine corrispondente, ad esempio il ramo della versione.
 
-     ![Apri soluzione dal log di IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
+     ![Aprire la soluzione dal log di IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
      Se è presente un'area di lavoro mappata per questa soluzione o questo progetto, Visual Studio la seleziona per inserirvi l'origine trovata.
 
-     ![Apri dal controllo del codice sorgente all'area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
+     ![Aprire dal controllo del codice sorgente nell'area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
      In caso contrario, scegliere un'altra area di lavoro già mappata o crearne una nuova. Visual Studio esegue il mapping dell'intero ramo a quest'area di lavoro.
 
-     ![Apri dal controllo del codice sorgente &#45; Crea nuova area di lavoro](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
+     ![Aprire dal controllo del codice sorgente &#45; creare una nuova area di lavoro](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
      Per creare un'area di lavoro con mapping specifici o un nome diverso dal nome del computer, scegliere **Gestisci**.
 
@@ -194,7 +194,7 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 
 1.  In **Violazioni prestazioni**esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.
 
-     ![Visualizzare i dettagli evento prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![Visualizzare i dettagli degli eventi di prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      È inoltre sufficiente fare doppio clic sull'evento.
 
@@ -204,25 +204,25 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 
      Espandere tale chiamata per rivedere tutte le chiamate e i valori annidati registrati in quel momento. Avviare quindi il debug dalla chiamata.
 
-     ![Avviare il debug dalla chiamata al metodo](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+     ![Avviare il debug da una chiamata di metodo](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
 
      È inoltre sufficiente fare doppio clic sulla chiamata.
 
      Se il metodo è incluso nel codice dell'applicazione, Visual Studio passa a tale metodo.
 
-     ![Passare al codice dell'applicazione dall'evento prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![Passare al codice dell'applicazione da un evento di prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni.
 
     - [Che cosa sono gli altri eventi e informazioni riportati nel log IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
-    - [Quali altre operazioni posso eseguire da qui?](#WhatElse)
+    - [Quali altre operazioni si possono eseguire da qui?](#WhatElse)
     - [Servono altre informazioni sugli eventi relativi alle prestazioni?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnosticare un'eccezione
 
 1.  In **Dati eccezione**esaminare gli eventi di eccezione registrati, i relativi tipi, i messaggi e il momento in cui si sono verificate le eccezioni. Per esaminare il codice in dettaglio, avviare il debug dall'evento più recente in un gruppo di eccezioni.
 
-     ![Avviare il debug da eventi di eccezione](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+     ![Avviare il debug da un evento di eccezione](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
      È inoltre sufficiente fare doppio clic sull'evento.
 
@@ -238,9 +238,9 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 
 -   [Ottenere altre informazioni su questo codice](../ide/find-code-changes-and-other-history-with-codelens.md). Per trovare riferimenti a questo codice, alla cronologia delle modifiche, a bug, elementi di lavoro, revisioni del codice o unit test correlati senza uscire dall'editor, usare gli indicatori di CodeLens nell'editor.
 
-     ![CodeLens &#45; visualizzare i riferimenti a questo codice](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
+     ![CodeLens &#45; Visualizzare i riferimenti a questo codice](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
-     ![CodeLens &#45; visualizzazione cronologia delle modifiche per questo codice](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
+     ![CodeLens &#45; Visualizzare la cronologia delle modifiche per questo codice](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
 -   [Eseguire il mapping della posizione nel codice durante il debug.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Per rilevare visivamente i metodi chiamati durante la sessione di debug, eseguire il mapping dello stack di chiamate.
 
@@ -316,7 +316,7 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
     </SourceControl>
     ```
 
-- **Compila**
+- **Compilazione**
 
    Informazioni sul sistema di compilazione, `"TeamBuild"` o `"MSBuild"`e queste proprietà richieste:
 
@@ -360,14 +360,14 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 ####  <a name="IneligibleWorkspace"></a> D: Perché secondo Visual Studio l'area di lavoro selezionata è inadatta?
  **R:** L'area di lavoro selezionata non include mapping tra la cartella del controllo del codice sorgente e una cartella locale. Per creare un mapping per questa area di lavoro, scegliere **Gestisci**. In caso contrario, scegliere un'area di lavoro già mappata o creare una nuova area di lavoro.
 
- ![Apri dal controllo del codice sorgente con nessuna area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
+ ![Aprire dal controllo del codice sorgente senza area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
 ####  <a name="ChooseTeamProject"></a> D: Perché non è possibile continuare finché non si sceglie una raccolta team o una raccolta diversa?
  **R:** Questo può verificarsi per uno qualsiasi dei seguenti motivi:
 
 -   Visual Studio non è connesso a TFS.
 
-     ![Apri dal controllo del codice sorgente &#45; non connesso](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![Aprire dal controllo del codice sorgente &#45; non connesso](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 -   In Visual Studio non è stata trovata la soluzione o il progetto nella raccolta del team corrente.
 
@@ -377,12 +377,12 @@ Visual Studio 2017 non include il *buildinfo. config* file, che è stato depreca
 
      È possibile che il TFS specificato non disponga più dell'origine corrispondente o non esista più, probabilmente perché è stata eseguita la migrazione a un nuovo TFS. Se il TFS specificato non esiste, è possibile che si verifichi il timeout di Visual Studio dopo circa un minuto e viene quindi richiesto di connettersi a una raccolta diversa. Per continuare, connettersi al server TFS corretto.
 
-     ![Apri dal controllo del codice sorgente &#45; migrate](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![Apri dal controllo del codice sorgente &#45; migrazione](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a>D: Che cos'è un'area di lavoro?
+####  <a name="WhatWorkspace"></a> D: Che cos'è un'area di lavoro?
  **R:** [L'area di lavoro consente di archiviare una copia dell'origine](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) per consentire di svilupparla prima di archiviare il lavoro. Se non è già presente un'area di lavoro mappata specificatamente alla soluzione o al progetto trovato, in Visual Studio viene richiesto di scegliere un'area di lavoro disponibile oppure di crearne una nuova con il nome del computer in uso come nome predefinito dell'area di lavoro.
 
 ####  <a name="UntrustedSymbols"></a> D: Perché viene visualizzato questo messaggio sui simboli non attendibili?
- ![Eseguire il debug con percorso dei simboli non attendibili? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+ ![Debug con percorso simboli non attendibili?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **R:** Questo messaggio viene visualizzato quando il percorso dei simboli nel file manifesto di compilazione (\<*NomeProgetto*>.BuildInfo.config) non è incluso nell'elenco di percorsi dei simboli attendibili. È possibile aggiungere il percorso dell'elenco di percorsi di simboli nelle opzioni del debugger.

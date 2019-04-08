@@ -200,7 +200,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 In questo caso, si userà un'estensione VSPackage predefinito, ma gli stessi passaggi sono validi per ogni tipo di estensione.
 
-1. Creare un pacchetto VSPackage in c# denominato "TestPublish" che dispone di un comando di menu. Per altre informazioni, vedere [creazione della prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
+1. Creare un pacchetto VSPackage in C# denominato "TestPublish" che dispone di un comando di menu. Per altre informazioni, vedere [creazione della prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Creare un pacchetto di estensione
 

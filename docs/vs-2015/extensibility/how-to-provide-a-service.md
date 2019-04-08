@@ -31,9 +31,9 @@ Un pacchetto VSPackage può fornire servizi che è possibile usare altri pacchet
   
 #### <a name="implementing-a-service"></a>Implementazione di un servizio  
   
-1. Creare un progetto VSIX (**File / nuovo / progetto / Visual c# / estendibilità / progetto VSIX**).  
+1. Creare un progetto VSIX (**File / nuovo / progetto / Visual C# / estendibilità / progetto VSIX**).  
   
-2. Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora soluzioni** e fare clic su **Aggiungi / nuovo elemento / elementi di Visual c# / Extensibility / pacchetto di Visual Studio**.  
+2. Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora soluzioni** e fare clic su **Aggiungi / nuovo elemento / elementi di Visual C# / Extensibility / pacchetto di Visual Studio**.  
   
 3. Per implementare un servizio, è necessario creare tre tipi:  
   

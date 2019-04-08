@@ -26,8 +26,8 @@ ms.locfileid: "58964340"
 
 Il debugger di Visual Studio è facile da utilizzare in qualsiasi linguaggio. Di seguito viene illustrato come eseguire il debug di un semplice programma C#, ma è possibile applicare gli stessi passaggi al codice in altri linguaggi come C++ e JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Eseguire il debug di un progetto c# di base  
- Si inizierà con una semplice applicazione console c# (**File / nuovo / progetto**, quindi selezionare **Visual c#** e quindi selezionare **applicazione Console**). Se non si è mai lavorato con Visual Studio in precedenza, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Il **Main** metodo semplicemente aggiunge 1 a una variabile integer 10 volte e stampa il risultato nella console:  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Eseguire il debug di un progetto C# di base  
+ Si inizierà con una semplice applicazione console C# (**File / nuovo / progetto**, quindi selezionare **Visual C#** e quindi selezionare **applicazione Console**). Se non si è mai lavorato con Visual Studio in precedenza, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Il **Main** metodo semplicemente aggiunge 1 a una variabile integer 10 volte e stampa il risultato nella console:  
   
 ```csharp  
 static void Main(string[] args)  

@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763323"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866766"
 ---
 # <a name="managing-external-tools"></a>Gestione di strumenti esterni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ ms.locfileid: "54763323"
   
 3.  Strumento di traccia ATL/MFC: mostra i messaggi di traccia di debug nelle origini ATL e MFC.  
   
-4.  PreEmptive Dotfuscator e Analitica: Protegge programmi .NET da attacchi di reverse engineering.  
+4.  PreEmptive Protection - Dotfuscator: protegge programmi .NET da attacchi di reverse engineering.  
   
-5.  SPY++ Consente di visualizzare graficamente i processi, thread, windows e i messaggi della finestra.  
+5.  SPY++: mostra processi, thread, finestre e messaggi graficamente.  
   
-6.  Editor configurazione servizio &WCF Consente di creare e modificare le impostazioni di configurazione per i servizi WCF.  
+6.  Editor configurazione servizi WCF: consente di creare e modificare le impostazioni di configurazione dei servizi WCF.  
   
 > [!WARNING]
 >  È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -102,7 +102,7 @@ ms.locfileid: "54763323"
 > [!NOTE]
 >  La barra di stato dell'IDE visualizza le variabili di Riga corrente e Colonna corrente per indicare dove si trova il punto di inserimento nell'Editor codice attivo. La variabile di Testo corrente restituisce il testo o codice selezionato in quella posizione.  
   
-|nome|Argomento|Descrizione|  
+|nome|Argomento|Description|  
 |----------|--------------|-----------------|  
 |Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|  
 |Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|  

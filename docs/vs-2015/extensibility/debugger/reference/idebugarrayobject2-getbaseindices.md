@@ -50,7 +50,7 @@ int GetBaseIndices (
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Ad esempio, questa funzione restituirà '5' per la matrice creata dal codice c# seguente:  
+ Ad esempio, questa funzione restituirà '5' per la matrice creata dal codice C# seguente:  
   
 ```  
 int[] lengths = { 12 };  

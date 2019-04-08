@@ -23,7 +23,7 @@ ms.locfileid: "58968890"
 
 Corrispondenza delle parentesi graffe consente allo sviluppatore di tenere traccia di elementi del linguaggio che si verificano insieme, ad esempio le parentesi tonde e parentesi graffe devono. Quando uno sviluppatore immette una parentesi graffa di chiusura, parentesi graffa di apertura viene evidenziata.  
   
- È possibile associare due o tre elementi che si verificano contemporaneamente, denominate coppie e Triple. Triple sono set di tre elementi che si verificano contemporaneamente. Ad esempio, in c#, il `foreach` istruzione costituisce una tripla: "`foreach()`","`{`", e "`}`". I tre elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.  
+ È possibile associare due o tre elementi che si verificano contemporaneamente, denominate coppie e Triple. Triple sono set di tre elementi che si verificano contemporaneamente. Ad esempio, in C#, il `foreach` istruzione costituisce una tripla: "`foreach()`","`{`", e "`}`". I tre elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.  
   
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare corrispondenza parentesi graffe, vedere [procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe](../../extensibility/walkthrough-displaying-matching-braces.md).  
   

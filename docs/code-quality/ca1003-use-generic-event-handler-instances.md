@@ -65,7 +65,7 @@ dotnet_code_quality.ca1003.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente illustra un delegato che viola la regola. Nell'esempio Visual Basic, i commenti descrivono come modificare l'esempio per soddisfare la regola. Nell'esempio c#, vedere l'esempio seguente che mostra il codice modificato.
+L'esempio seguente illustra un delegato che viola la regola. Nell'esempio Visual Basic, i commenti descrivono come modificare l'esempio per soddisfare la regola. Nell'esempio C#, vedere l'esempio seguente che mostra il codice modificato.
 
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]

@@ -92,7 +92,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
   
 1.  Scegliere **Aggiungi** dal menu **File** e quindi fare clic su **Nuovo progetto**.  
   
-2.  Nel **nuovo progetto** finestra di dialogo, espandere il **Visual Basic** oppure **Visual c#** nodo e selezionare **Windows**e quindi scegliere **Windows Forms Application**. Fare clic su **OK** per aprire il progetto.  
+2.  Nel **nuovo progetto** finestra di dialogo, espandere il **Visual Basic** oppure **Visual C#** nodo e selezionare **Windows**e quindi scegliere **Windows Forms Application**. Fare clic su **OK** per aprire il progetto.  
   
      ![Progetto Windows Forms Application](../data-tools/media/wcf7.png "wcf7")  
   

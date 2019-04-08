@@ -56,7 +56,7 @@ int EnumPossibleEngines( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007A se il buffer non è sufficientemente grande.  
   
 ## <a name="remarks"></a>Note  
- Per determinare il numero di motori, chiamare questo metodo una volta con il `celtBuffer` parametro è impostato su 0 e il `rgguidEngines` parametro impostato su un valore null. Verranno restituite `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A per c#) e il `pceltEngines` parametro restituisce la dimensione del buffer necessaria.  
+ Per determinare il numero di motori, chiamare questo metodo una volta con il `celtBuffer` parametro è impostato su 0 e il `rgguidEngines` parametro impostato su un valore null. Verranno restituite `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A per C#) e il `pceltEngines` parametro restituisce la dimensione del buffer necessaria.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

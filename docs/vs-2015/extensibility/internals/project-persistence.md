@@ -27,7 +27,7 @@ La persistenza è una considerazione di progettazione chiave per il progetto. La
   
  Elementi di progetto possono essere basata su file o non basate su file:  
   
--   Gli elementi basati su file possono essere locale o remoto. Nei progetti Web nel linguaggio c#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenuti in locale, mentre gli stessi file persistono nel sistema remoto.  
+-   Gli elementi basati su file possono essere locale o remoto. Nei progetti Web nel linguaggio C#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenuti in locale, mentre gli stessi file persistono nel sistema remoto.  
   
 -   Elementi basati su file non è possono salvare gli elementi di un database o nell'archivio.  
   

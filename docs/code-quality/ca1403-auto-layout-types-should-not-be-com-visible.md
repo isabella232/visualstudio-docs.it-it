@@ -39,7 +39,7 @@ Un tipo di valore visibile modello COM (Component Object) è contrassegnato con 
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-<xref:System.Runtime.InteropServices.LayoutKind> tipi di layout sono gestiti da common language runtime. Il layout di questi tipi può variare tra le versioni di .NET Framework, che interrompe i client COM che prevedono un layout specifico. Se il <xref:System.Runtime.InteropServices.StructLayoutAttribute> attributo viene omesso, i compilatori c#, Visual Basic e C++ specificano [LayoutKind](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) per i tipi di valore.
+<xref:System.Runtime.InteropServices.LayoutKind> tipi di layout sono gestiti da common language runtime. Il layout di questi tipi può variare tra le versioni di .NET Framework, che interrompe i client COM che prevedono un layout specifico. Se il <xref:System.Runtime.InteropServices.StructLayoutAttribute> attributo viene omesso, i compilatori C#, Visual Basic e C++ specificano [LayoutKind](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) per i tipi di valore.
 
 Se non diversamente specificato, tutti i tipi pubblici e non generica sono visibili a COM, e tutti i tipi generici e non pubblici non sono visibili a COM. Tuttavia, per ridurre i falsi positivi, questa regola richiede la visibilità COM per essere dichiarata in modo esplicito il tipo. L'assembly che contiene deve essere contrassegnato con il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> impostata su `false` e il tipo deve essere contrassegnato con il <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su `true`.
 

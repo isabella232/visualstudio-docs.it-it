@@ -41,7 +41,7 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
 1.  Nel **File** dal menu del [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], fare clic su **New** e quindi fare clic su **progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#**.  
+2.  Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual C#**.  
   
 3.  Sotto **modelli**, selezionare **libreria di classi**.  
   

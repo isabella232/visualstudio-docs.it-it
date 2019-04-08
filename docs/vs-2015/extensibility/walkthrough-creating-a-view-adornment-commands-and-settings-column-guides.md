@@ -44,7 +44,7 @@ Si verrà prima di tutto creare un progetto VSIX, aggiungere un'area di controll
 - È un pacchetto VSIP che è necessario se si dispone di comandi dell'utente, ma è solo codice boilerplate che inizializza l'oggetto di implementazione di comandi.
 - È presente un `ColumnGuideCommands` oggetto che implementa i comandi dell'utente e associa i gestori di comando per i comandi dichiarati nel file con estensione vsct.
   
-  **VSIX**. Uso **File &#124; New...** comando per creare un progetto. Scegliere il nodo di estendibilità in c# nel riquadro di spostamento a sinistra e scegliere **progetto VSIX** nel riquadro di destra. Immettere il nome ColumnGuides e scegliere **OK** per creare il progetto.
+  **VSIX**. Uso **File &#124; New...** comando per creare un progetto. Scegliere il nodo di estendibilità in C# nel riquadro di spostamento a sinistra e scegliere **progetto VSIX** nel riquadro di destra. Immettere il nome ColumnGuides e scegliere **OK** per creare il progetto.
   
   **Visualizzare l'area di controllo**. Premere il pulsante destro del puntatore sul nodo del progetto in Esplora soluzioni. Scegliere il **Aggiungi &#124; nuovo elemento...** comando per aggiungere un nuovo elemento dell'area di controllo di visualizzazione. Scegli **estendibilità &#124; Editor** nel riquadro di spostamento a sinistra e scegliere **area di controllo del riquadro di visualizzazione dell'Editor** nel riquadro di destra. Immettere il nome ColumnGuideAdornment come il nome dell'elemento e scegliere **Add** per aggiungerlo.
   

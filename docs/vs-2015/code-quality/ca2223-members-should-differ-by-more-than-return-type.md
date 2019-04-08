@@ -45,7 +45,7 @@ ms.locfileid: "58967959"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola la regola. Si noti che questa regola non può essere violata usando c# o Visual Basic .NET.
+ L'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola la regola. Si noti che questa regola non può essere violata usando C# o Visual Basic .NET.
 
 ```
 

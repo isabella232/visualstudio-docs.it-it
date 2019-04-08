@@ -1,5 +1,5 @@
 ---
-title: Filtrare gli elenchi di completamento in c# | Microsoft Docs
+title: Filtrare gli elenchi di completamento in C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,4 +21,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58969411"
 ---
 # <a name="filtered-completion-lists-in-c"></a>Elenchi di completamento filtrati in C# #
-Questo contenuto è stato spostato in [elenchi di completamento in c#](../misc/completion-lists-in-csharp.md)
+Questo contenuto è stato spostato in [elenchi di completamento in C#](../misc/completion-lists-in-csharp.md)

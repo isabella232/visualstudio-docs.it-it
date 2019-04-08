@@ -152,7 +152,7 @@ Un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> rappresenta un intervallo di
 
 #### <a name="content-types"></a>Tipi di contenuto
 
-Tipi di contenuto sono un meccanismo per definire tipi diversi di contenuto. Un tipo di contenuto può essere un tipo di file, ad esempio "text", "code" o "binary" o un tipo di tecnologia, ad esempio "xml", "vb" o "c#". Ad esempio, la parola "using" è una parola chiave in c# e Visual Basic, ma non in altri linguaggi di programmazione. Pertanto, la definizione di questa parola chiave sarebbe limitata per i tipi di contenuto "c#" e "vb".
+Tipi di contenuto sono un meccanismo per definire tipi diversi di contenuto. Un tipo di contenuto può essere un tipo di file, ad esempio "text", "code" o "binary" o un tipo di tecnologia, ad esempio "xml", "vb" o "C#". Ad esempio, la parola "using" è una parola chiave in C# e Visual Basic, ma non in altri linguaggi di programmazione. Pertanto, la definizione di questa parola chiave sarebbe limitata per i tipi di contenuto "C#" e "vb".
 
 I tipi di contenuto vengono utilizzati come filtro per le aree di controllo e gli altri elementi dell'editor. Molte funzionalità dell'editor e punti di estensione sono definiti per ogni tipo di contenuto. Colorazione del testo, ad esempio, è diversa per i file di testo normale, i file XML e file del codice sorgente Visual Basic. I buffer di testo sono in genere assegnati un tipo di contenuto quando vengono creati e il tipo di contenuto di un buffer di testo può essere modificato.
 
@@ -236,13 +236,13 @@ Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> è un meccanism
 
 #### <a name="classifier-aggregators"></a>Aggregatori di classificazione
 
-Un aggregatore di classificatore è un meccanismo che combina tutti i classificatori per buffer di uno testo in un solo set di classificazioni. Ad esempio, un classificatore c# sia un classificatore di lingua inglese è stato possibile creare classificazioni su un commento in un file c#. Prendere in considerazione questo commento:
+Un aggregatore di classificatore è un meccanismo che combina tutti i classificatori per buffer di uno testo in un solo set di classificazioni. Ad esempio, un classificatore C# sia un classificatore di lingua inglese è stato possibile creare classificazioni su un commento in un file C#. Prendere in considerazione questo commento:
 
 ```
 // This method produces a classifier
 ```
 
-Un classificatore di c# potrebbe assegnare un'etichetta all'intero intervallo come commento e la funzione di classificazione in lingua inglese può classificare "produce" come "verbo" e "method" come "sostantivo". L'aggregatore genera un set di classificazioni non sovrapposti e il tipo del set si basa su tutti i contributi.
+Un classificatore di C# potrebbe assegnare un'etichetta all'intero intervallo come commento e la funzione di classificazione in lingua inglese può classificare "produce" come "verbo" e "method" come "sostantivo". L'aggregatore genera un set di classificazioni non sovrapposti e il tipo del set si basa su tutti i contributi.
 
 Un aggregatore di classificatore è anche un classificatore perché suddivide il testo in un set di classificazioni. Aggregatore di classificatori garantisce inoltre che non esistono Nessun classificazioni sovrapposte e che le classificazioni sono ordinate. Classificatori singoli sono liberi di restituire qualsiasi set di classificazioni degli aggiornamenti, in qualsiasi ordine e sovrapposti in alcun modo.
 
@@ -264,7 +264,7 @@ Le aree di controllo popup sono immagini che vengono visualizzati in una finestr
 
 ###  <a name="projection"></a> Proiezione
 
-Proiezione è una tecnica per la costruzione di un tipo diverso di buffer di testo che non archivia effettivamente il testo, ma invece Combina testo dagli altri buffer di testo. Ad esempio, un buffer di proiezione utilizzabile per concatenare il testo di due altri buffer e presentare i risultati come se fosse in un solo buffer o per nascondere le parti del testo in un buffer. Un buffer di proiezione può fungere da buffer di origine a un altro buffer di proiezione. È possibile costruire un set di buffer che sono correlati tramite proiezione per ridisporre il testo in molti modi diversi. (Un set di questo tipo è noto anche come un *grafico del buffer*.) La funzionalità di struttura di testo di Visual Studio viene implementata usando un buffer di proiezione per nascondere il testo compresso e l'editor di Visual Studio per le pagine ASP.NET utilizza proiezione per il supporto incorporati linguaggi quali Visual Basic e c#.
+Proiezione è una tecnica per la costruzione di un tipo diverso di buffer di testo che non archivia effettivamente il testo, ma invece Combina testo dagli altri buffer di testo. Ad esempio, un buffer di proiezione utilizzabile per concatenare il testo di due altri buffer e presentare i risultati come se fosse in un solo buffer o per nascondere le parti del testo in un buffer. Un buffer di proiezione può fungere da buffer di origine a un altro buffer di proiezione. È possibile costruire un set di buffer che sono correlati tramite proiezione per ridisporre il testo in molti modi diversi. (Un set di questo tipo è noto anche come un *grafico del buffer*.) La funzionalità di struttura di testo di Visual Studio viene implementata usando un buffer di proiezione per nascondere il testo compresso e l'editor di Visual Studio per le pagine ASP.NET utilizza proiezione per il supporto incorporati linguaggi quali Visual Basic e C#.
 
 Un' <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> viene creato usando <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Rappresentato da una sequenza ordinata di un buffer di proiezione <xref:Microsoft.VisualStudio.Text.ITrackingSpan> gli oggetti che sono note come *intervalli di origine*. Il contenuto di questi intervalli viene presentato come una sequenza di caratteri. I buffer di testo da cui vengono disegnati gli intervalli di origine vengono denominati *buffer di origine*. I client di un buffer di proiezione non sono necessario tenere presente che differisce da un buffer di testo normale.
 

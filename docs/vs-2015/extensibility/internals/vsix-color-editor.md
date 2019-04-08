@@ -238,7 +238,7 @@ namespace MyCustomColors
   
 ```  
   
- **Wrapper di chiavi risorse c#**  
+ **Wrapper di chiavi risorse C#**  
   
  Le chiavi di risorsa colore generate dallo strumento sarà simile al seguente:  
   

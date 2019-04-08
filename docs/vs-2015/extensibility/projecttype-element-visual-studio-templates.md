@@ -66,7 +66,7 @@ Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo
 ## <a name="remarks"></a>Note  
  `ProjectType` è un elemento figlio obbligatorio di `TemplateData`.  
   
- Il valore della `ProjectType` elemento specifica in cui il modello è disponibile nel **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo. Ad esempio, un modello con un `ProjectType` pari a `CSharp` viene visualizzata sotto il **Visual c#** nodo nel **nuovo progetto** nella finestra di dialogo.  
+ Il valore della `ProjectType` elemento specifica in cui il modello è disponibile nel **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo. Ad esempio, un modello con un `ProjectType` pari a `CSharp` viene visualizzata sotto il **Visual C#** nodo nel **nuovo progetto** nella finestra di dialogo.  
   
  Un sottotipo di modello può essere specificato usando il [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elemento.  
   

@@ -78,7 +78,7 @@ ms.locfileid: "54876018"
 
 3.  Nell'elenco nella parte superiore della **nuovo progetto** finestra di dialogo, assicurarsi che **.NET Framework 4.5** sia selezionata.
 
-4.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
+4.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual C#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
 
     > [!NOTE]
     >  Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
@@ -95,9 +95,9 @@ ms.locfileid: "54876018"
 
 2.  Nell'elenco nella parte superiore della **nuovo progetto** finestra di dialogo, assicurarsi che **.NET Framework 4.5** sia selezionata.
 
-3.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
+3.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual C#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
 
-4.  Nell'elenco dei modelli di progetto, scegliere il **modello di elemento di linguaggio c#** oppure **modello di elemento di Visual Basic** modello.
+4.  Nell'elenco dei modelli di progetto, scegliere il **modello di elemento di linguaggio C#** oppure **modello di elemento di Visual Basic** modello.
 
 5.  Nel **Name** casella, immettere **ItemTemplate**e quindi scegliere il **OK** pulsante.
 
@@ -109,7 +109,7 @@ ms.locfileid: "54876018"
 
 2.  Nell'elenco nella parte superiore della **nuovo progetto** finestra di dialogo, assicurarsi che **.NET Framework 4.5** sia selezionata.
 
-3.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi, scegliere il **Windows** nodo e quindi scegliere il  **Libreria di classi** modello di progetto.
+3.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual C#** o **Visual Basic** nodi, scegliere il **Windows** nodo e quindi scegliere il  **Libreria di classi** modello di progetto.
 
 4.  Nel **Name** casella, immettere **ProjectItemDefinition**e quindi scegliere il **OK** pulsante.
 
@@ -197,7 +197,7 @@ ms.locfileid: "54876018"
 3.  Sostituire il contenuto del file con il codice XML seguente, quindi salvare e chiudere il file.
 
     > [!NOTE]
-    >  Il codice XML seguente è per un modello di elemento di Visual c#. Se si sta creando un modello di elemento di Visual Basic, sostituire il valore dei `ProjectType` elemento con `VisualBasic`.
+    >  Il codice XML seguente è per un modello di elemento di Visual C#. Se si sta creando un modello di elemento di Visual Basic, sostituire il valore dei `ProjectType` elemento con `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -354,7 +354,7 @@ ms.locfileid: "54876018"
 
 1.  Nell'istanza sperimentale di Visual Studio, sulla barra dei menu, scegliere **File** > **New** > **progetto**.
 
-2.  Espandere **Visual c#** oppure **Visual Basic** (a seconda del linguaggio che supporta il modello di elemento), espandere **SharePoint**, quindi scegliere il **2010**  nodo.
+2.  Espandere **Visual C#** oppure **Visual Basic** (a seconda del linguaggio che supporta il modello di elemento), espandere **SharePoint**, quindi scegliere il **2010**  nodo.
 
 3.  Nell'elenco dei modelli di progetto, scegliere **progetto SharePoint 2010**.
 

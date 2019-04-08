@@ -63,7 +63,7 @@ Stringhe lingua supportate (non maiuscole / minuscole):
 
 -   JavaScript
 
--   in c# o CSharp
+-   in C# o CSharp
 
 -   cplusplus o Visual c++ o c + +
 

@@ -28,11 +28,11 @@ ms.locfileid: "58964817"
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Per creare una soluzione di estensione di progettazione DSL  
   
-1.  Creare un nuovo progetto usando il modello di progetto libreria di classi. Nel **nuovo progetto** finestra di dialogo, fare clic su **Visual c#** e quindi nella finestra centrale fare clic su **libreria di classi**.  
+1.  Creare un nuovo progetto usando il modello di progetto libreria di classi. Nel **nuovo progetto** finestra di dialogo, fare clic su **Visual C#** e quindi nella finestra centrale fare clic su **libreria di classi**.  
   
      Questo progetto conterrà il codice delle estensioni.  
   
-2.  Creare un nuovo progetto usando il modello di progetto VSIX. Nel **nuovo progetto** finestra di dialogo espandere **Visual c#**, fare clic su **estendibilità**e quindi nella finestra centrale selezionare **progetto VSIX**.  
+2.  Creare un nuovo progetto usando il modello di progetto VSIX. Nel **nuovo progetto** finestra di dialogo espandere **Visual C#**, fare clic su **estendibilità**e quindi nella finestra centrale selezionare **progetto VSIX**.  
   
      Selezionare **Aggiungi a soluzione**.  
   

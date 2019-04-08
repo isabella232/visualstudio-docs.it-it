@@ -27,7 +27,7 @@ Le applicazioni di servizi flusso di lavoro di [!INCLUDE[indigo1](../includes/in
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-3.  Nel **modelli installati** riquadro, selezionare **WCF** oppure **flusso di lavoro** da una il **Visual c#** o **Visual Basic** a seconda del linguaggio scelto.  
+3.  Nel **modelli installati** riquadro, selezionare **WCF** oppure **flusso di lavoro** da una il **Visual C#** o **Visual Basic** a seconda del linguaggio scelto.  
   
 4.  Nel riquadro centrale, selezionare **applicazione del servizio del flusso di lavoro WCF**.  
   

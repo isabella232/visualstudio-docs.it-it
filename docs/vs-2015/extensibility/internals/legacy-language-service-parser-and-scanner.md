@@ -24,7 +24,7 @@ ms.locfileid: "58966438"
 Il parser è il cuore del servizio di linguaggio. Le classi di lingua di Framework di pacchetto gestito (MPF) richiedono un parser del linguaggio per selezionare le informazioni sul codice di visualizzazione. Un parser separa il testo in token lessicale e quindi identifica i token dal tipo e funzionalità.  
   
 ## <a name="discussion"></a>Discussione  
- Di seguito è riportato un metodo c#.  
+ Di seguito è riportato un metodo C#.  
   
 ```csharp  
 namespace MyNamespace  

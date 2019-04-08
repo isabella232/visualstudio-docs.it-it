@@ -42,7 +42,7 @@ La chiamata alla direttiva personalizzata presenta la sintassi seguente:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Il processore di direttiva personalizzato aggiunge la variabile e la proprietà alla classe della trasformazione generata. La direttiva che si scrive utilizza le classi <xref:System.CodeDom> per creare il codice che il motore aggiunge alla classe della trasformazione generata. Il <xref:System.CodeDom> classi creano codice in Visual c# o Visual Basic, a seconda del linguaggio specificato nella `language` parametro del `template` direttiva. Il linguaggio del processore di direttiva e il linguaggio del modello di testo che accede al processore di direttiva non devono essere uguali.
+Il processore di direttiva personalizzato aggiunge la variabile e la proprietà alla classe della trasformazione generata. La direttiva che si scrive utilizza le classi <xref:System.CodeDom> per creare il codice che il motore aggiunge alla classe della trasformazione generata. Il <xref:System.CodeDom> classi creano codice in Visual C# o Visual Basic, a seconda del linguaggio specificato nella `language` parametro del `template` direttiva. Il linguaggio del processore di direttiva e il linguaggio del modello di testo che accede al processore di direttiva non devono essere uguali.
 
 Il codice creato dalla direttiva è il seguente:
 

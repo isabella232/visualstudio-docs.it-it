@@ -36,7 +36,7 @@ Seguire questi passaggi per creare un progetto libreria flusso di lavoro di una 
     > [!NOTE]
     >  L'opzione predefinita nel [!INCLUDE[vs2010](../includes/vs2010-md.md)] viene **.NET Framework 4**. Questa opzione viene usata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e non usa la finestra di progettazione legacy.  
   
-4.  Nel **tipi di progetto** riquadro, selezionare Visual c# o Visual Basic (sotto **Other Languages**) e quindi selezionare **flusso di lavoro**.  
+4.  Nel **tipi di progetto** riquadro, selezionare Visual C# o Visual Basic (sotto **Other Languages**) e quindi selezionare **flusso di lavoro**.  
   
 5.  Nel **modelli** riquadro, selezionare **libreria del flusso di lavoro macchina a stati**.  
   

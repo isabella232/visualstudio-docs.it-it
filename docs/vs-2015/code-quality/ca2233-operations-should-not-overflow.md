@@ -103,9 +103,9 @@ End Sub
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Attivare Overflow/Underflow aritmetico selezionato
- Se si attiva checked overflow/underflow aritmetico in c#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
+ Se si attiva checked overflow/underflow aritmetico in C#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
 
- **Per attivare overflow/underflow aritmetico nel linguaggio c# selezionata**
+ **Per attivare overflow/underflow aritmetico nel linguaggio C# selezionata**
 
 1.  Nelle **Esplora soluzioni**, fare clic sul progetto e scegliere **proprietà**.
 
@@ -114,4 +114,4 @@ End Sub
 3.  Selezionare **Controlla overflow/underflow aritmetico** e fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.OverflowException?displayProperty=fullName> [Operatori di c#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName> [Operatori di C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
