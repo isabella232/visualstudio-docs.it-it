@@ -1,5 +1,5 @@
 ---
-title: "Procedura: includere i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: Includere i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620005"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232853"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedura: Includere i prerequisiti con un'applicazione ClickOnce
 Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione**, si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
@@ -25,7 +25,7 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
 
 1. In Esplora file aprire la cartella **Pacchetti**.
 
-    Per impostazione predefinita, il percorso è *C:\Programmi\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* in un sistema a 32 bit e *C:\Programmi (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* in un sistema a 64 bit.
+    Per impostazione predefinita, il percorso è `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
 
 2. Aprire la cartella per il prerequisito che si desidera aggiungere e quindi aprire la cartella del linguaggio per la versione installata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (ad esempio **en** per l'inglese).
 
@@ -50,4 +50,4 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
     È ora possibile distribuire il pacchetto di installazione con la propria applicazione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
