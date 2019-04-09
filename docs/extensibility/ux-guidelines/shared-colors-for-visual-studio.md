@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31912d5528c38374aafd1212767bfb850a8b976
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723578"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232814"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che l'elemento dell'interfaccia siano coerenti con funzionalità simili, usare nomi di token esistenti in file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.
@@ -22,7 +22,7 @@ Questo articolo descrive gli elementi dell'interfaccia utente comuni e i nomi di
 
 Assicurarsi di usare correttamente i nomi di token:
 
--   **Usare i nomi di token basati su funzione e non al colore stesso.** I colori condivisi comuni sono associati a elementi dell'interfaccia specifici e destinati solo a essere usati per le stesse funzionalità o altre simili. Ad esempio, evitare di riutilizzare il colore di una casella combinata premuta per un'animazione di stato rotante solo perché si ha una preferenza per questo colore. Le funzioni della casella combinata e dell'animazione sono diverse, e se il colore associato alla casella combinata cambia, non potrebbe essere non è più un colore appropriato per l'elemento animazione. Un uso coerente del colore aiuta a orientare correttamente gli utenti e a impedire confusione.
+-   **Usare i nomi di token in base alla funzione e non al colore stesso.** I colori condivisi comuni sono associati a elementi dell'interfaccia specifici e destinati solo a essere usati per le stesse funzionalità o altre simili. Ad esempio, evitare di riutilizzare il colore di una casella combinata premuta per un'animazione di stato rotante solo perché si ha una preferenza per questo colore. Le funzioni della casella combinata e dell'animazione sono diverse, e se il colore associato alla casella combinata cambia, non potrebbe essere non è più un colore appropriato per l'elemento animazione. Un uso coerente del colore aiuta a orientare correttamente gli utenti e a impedire confusione.
 
 -   **Usare colori di sfondo e del testo nella combinazione corretta.** I colori di sfondo destinati a essere usati con il testo implicano un colore del testo associato. Non usare colori del testo diversi da quelli specificati per un determinato sfondo. Se non c'è un colore del testo associato, non usare tale colore di sfondo per alcuna superficie in cui si prevede di visualizzare il testo. Altre combinazioni di colori di sfondo e testo potrebbero comportare un'interfaccia illeggibile.
 
@@ -985,7 +985,7 @@ Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi
 | --- | --- |
 | Sfondo | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-* * Comando dello scaffale dei comandi barra * *
+**Sulla barra dei comandi dello scaffale dei comandi**
 
 > Cursori sfumatura impostati sullo stesso valore di colore dei temi Chiaro e Scuro di Visual Studio 2013.
 
@@ -2079,7 +2079,7 @@ Il bordo della barra del titolo non è un bordo vero, è una linea spessa nella 
 | --- | --- |
 | ... ovunque si sta creando un'interfaccia utente che deve corrispondere alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si desidera cambiare automaticamente se la shell include un aggiornamento del tema. |
 
-**Sulla barra del titolo con stato attivo**
+**Barra del titolo con stato attivo**
 
 ![Sulla barra del titolo con stato attivo](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303 093_TitleBarFocused")<br />Barra del titolo con stato attivo
 
@@ -2090,7 +2090,7 @@ Il bordo della barra del titolo non è un bordo vero, è una linea spessa nella 
 | Bordo | `Environment.TitleBarActiveBorder`<br />(Impostato sullo stesso colore di sfondo). |
 | Quadratino di trascinamento | `Environment.TitleBarDragHandleActive` |
 
-**Sulla barra del titolo con stato non attivo**
+**Barra del titolo con stato non attivo**
 
 ![Sulla barra del titolo con stato non attivo](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303 094_TitleBarUnfocused")<br />Barra del titolo con stato non attivo
 

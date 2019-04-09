@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0312289379e8aea79ee4e8291d9f4ee984949aaa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934289"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232483"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitare un numero eccessivo di accoppiamenti tra classi
 
@@ -31,20 +31,24 @@ ms.locfileid: "55934289"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo o metodo è associata a molti altri tipi.
+
+Un tipo o metodo è associata a molti altri tipi.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo.
 
- Tipi e metodi che hanno un livello elevato di accoppiamenti di classi possono essere difficili da gestire. È buona norma disporre di tipi e metodi che mostrano uno stile accoppiamento ridotto e un'elevata coesione.
+Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo.
+
+Tipi e metodi che hanno un livello elevato di accoppiamenti di classi possono essere difficili da gestire. È buona norma disporre di tipi e metodi che mostrano uno stile bassi di controllo libero ed elevata coesione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere questa violazione, provare a riprogettare il tipo o metodo in modo da ridurre il numero di tipi a cui è associato.
+
+Per correggere questa violazione, provare a riprogettare il tipo o metodo in modo da ridurre il numero di tipi a cui è associato.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Escludere questo avviso quando il tipo o metodo è considerato accettabile, nonostante il numero elevato di dipendenze da altri tipi.
+
+Escludere questo avviso quando il tipo o metodo è considerato accettabile, nonostante il numero elevato di dipendenze da altri tipi.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)
+- [avvisi di manutenibilità](../code-quality/maintainability-warnings.md)
 - [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)
