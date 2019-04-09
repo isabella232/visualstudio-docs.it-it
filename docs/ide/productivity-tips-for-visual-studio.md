@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355763"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789913"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -66,7 +66,7 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
 - **Visualizzazione dei soli errori da risolvere**. Se si sceglie il pulsante **Filtro** nella barra degli strumenti **Elenco errori**, è possibile ridurre il numero di errori visualizzati nella finestra **Elenco errori**. È possibile visualizzare solo gli errori nei file aperti nell'editor, solo gli errori nel file corrente o solo gli errori nel progetto corrente. È possibile anche eseguire ricerche nella finestra **Elenco errori** per trovare errori specifici.
 
-- **Ricerca di finestre di dialogo, comandi di menu, opzioni e altro**. Nella casella di ricerca [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave corrispondenti agli elementi da trovare. Se ad esempio si digita **nuovo progetto** vengono visualizzate le opzioni seguenti:
+- **Ricerca di finestre di dialogo, comandi di menu, opzioni e altro**. Nella casella di ricerca immettere le frasi o le parole chiave per gli elementi da trovare. Se ad esempio si digita **nuovo progetto** vengono visualizzate le opzioni seguenti:
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
    ::: moniker range=">=vs-2019"
 
-   ![Risultati di Avvio veloce per "nuovo progetto"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Risultati di ricerca per 'nuovo progetto'](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Premere **CTRL**+**Q** per passare direttamente alla casella di ricerca **Avvio veloce**.
+   Premere **CTRL**+**Q** per passare direttamente alla casella di ricerca.
 
 ## <a name="debug-code"></a>Debug del codice
 

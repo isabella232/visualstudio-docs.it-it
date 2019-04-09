@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325094"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790342"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -54,7 +54,7 @@ Dopo aver aperto Visual Studio, saranno visibili le tre parti fondamentali dell'
 
 Dopo l'apertura di Visual Studio, la prima finestra visualizzata è la finestra Avvio. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo.
 
-Verranno visualizzate le tre parti fondamentali dell'IDE: le finestre degli strumenti, i menu e le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di **Avvio veloce**, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+Verranno visualizzate le tre parti fondamentali dell'IDE: le finestre degli strumenti, i menu e le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di ricerca, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
 ::: moniker-end
 

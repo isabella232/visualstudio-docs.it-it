@@ -38,7 +38,7 @@ ms.locfileid: "58967133"
 ## <a name="rule-description"></a>Descrizione della regola
  Non esistono nessuna circostanza in cui è applicabile alle istanze di un tipo di uguaglianza o disuguaglianza e non è definito l'operatore opposto. Tipi implementano in genere l'operatore di disuguaglianza, restituendo il valore negato dell'operatore di uguaglianza.
 
- Il compilatore c# genera un errore per le violazioni di questa regola.
+ Il compilatore C# genera un errore per le violazioni di questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, implementare l'uguaglianza e gli operatori di disuguaglianza o rimuovere quello che è presente.

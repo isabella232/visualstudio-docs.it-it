@@ -2,18 +2,20 @@
 title: 'Passaggio 1: Creare un progetto e aggiungere una tabella al modulo'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940659"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647492"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -21,7 +23,23 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Per creare un progetto e aggiungere una tabella al form
 
+::: moniker range="vs-2017"
+
 1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+1. Nella casella di ricerca, digitare "WPF", scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti**.
+
+   Se non viene visualizzato il modello **App WPF (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.
+
+1. Specificare il nome **MatchingGame** per il progetto e scegliere **Crea**.
+
+::: moniker-end
 
 2. Se non si usa Visual Studio Express, occorre prima selezionare un linguaggio di programmazione. Nell'elenco **Modelli installati** scegliere **Visual C#** o **Visual Basic**.
 

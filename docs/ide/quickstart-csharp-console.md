@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5622741a394f11444bcdc432cc5a0a25fddb92
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: a90324d1d9321be3f3105d5830e0c08927c4f535
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416297"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856580"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app console C#
 
@@ -34,7 +34,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
    ![Finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Quindi scegliere **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#**  dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
 
    Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e quindi scegliere **Avanti**.
 
@@ -79,13 +79,13 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
    > [!NOTE]
    > Se il modello **App console (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
-   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra Crea un nuovo progetto](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
    >
    > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -156,4 +156,4 @@ Ciò accade perché il metodo `Main` termina dopo l'esecuzione dell'unica istruz
 La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C# e dell'IDE di Visual Studio. Per altre informazioni, continuare con le esercitazioni seguenti.
 
 > [!div class="nextstepaction"]
-> [Introduzione a un'app console C# in Visual Studio](../get-started/csharp/tutorial-console.md)
+> [introduzione a un'app console C# in Visual Studio](../get-started/csharp/tutorial-console.md)

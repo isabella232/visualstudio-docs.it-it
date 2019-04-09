@@ -1,6 +1,6 @@
 ---
 title: Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Profiles
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8cd7766bf51190a0b925c66d49ffc04a23cff1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921042"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647193"
 ---
-# <a name="import-and-export-settings-environment-options-dialog-box"></a>Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Finestra di dialogo Opzioni: Ambiente \> Importa/Esporta impostazioni
 
-Usare questa pagina per specificare dove viene salvato il file delle impostazioni utente e se usare un file di impostazioni team. Per altre informazioni sulle impostazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Usare questa pagina per specificare dove viene salvato il file delle impostazioni utente. Per altre informazioni sulle impostazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ### <a name="see-also"></a>Vedere anche
 

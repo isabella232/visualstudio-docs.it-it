@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957468"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866692"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 
@@ -31,7 +31,7 @@ Per informazioni sulla firma degli assembly nei progetti Visual Basic e C#, vede
 Per informazioni sulla firma degli assembly nei progetti Visual C++, vedere [Assembly con nome sicuro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> La firma con nome sicuro non offre protezione da attacchi di reverse engineering dell'assembly. Per proteggere da attacchi di reverse engineering, vedere [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> La firma con nome sicuro non offre protezione da attacchi di reverse engineering dell'assembly. Per la protezione da attacchi di reverse engineering, vedere [Dotfuscator Community](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Tipi di asset e firma
 
@@ -57,7 +57,7 @@ In generale è consigliabile non firmare i file eseguibili. Un componente con no
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Come firmare un assembly in Visual Studio
 
-Per firmare un'applicazione o un componente, usare la scheda **Firma** della finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** o digitare **proprietà del progetto** nella finestra **Avvio veloce** oppure premere **Alt**+**Invio** in **Esplora soluzioni**). Selezionare la scheda **Firma**, quindi la casella di controllo **Firma assembly**.
+Per firmare un'applicazione o un componente, usare la scheda **Firma** della finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**). Selezionare la scheda **Firma**, quindi la casella di controllo **Firma assembly**.
 
 Specificare un file di chiave. Se si sceglie di creare un nuovo file di chiave, i nuovi file di chiave vengono sempre creati in formato *.pfx*. Sono necessari un nome e una password per il nuovo file.
 

@@ -2,18 +2,20 @@
 title: 'Passaggio 1: Creare un progetto e aggiungere etichette al modulo'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917753"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647401"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 
@@ -24,23 +26,39 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Per creare un progetto e impostare le proprietà per un modulo
 
+::: moniker range="vs-2017"
+
 1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
-2.  Nell'elenco **Modelli installati** scegliere **C#** o **Visual Basic**.
+1.  Nell'elenco **Modelli installati** scegliere **C#** o **Visual Basic**.
 
-3.  Nell'elenco di modelli scegliere il modello **Windows Forms Application**, assegnare a esso il nome **Quiz matematico** e scegliere il pulsante **OK**.
+1.  Nell'elenco di modelli scegliere il modello **Applicazione Windows Forms**, assegnare il nome **QuizMatematico** e scegliere il pulsante **OK**.
 
      Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
 
-4.  Scegliere il modulo e impostare la proprietà **Text** su **Quiz matematico**.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+1. Nella casella di ricerca, digitare "WPF", scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti**.
+
+   Se non viene visualizzato il modello **App WPF (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.
+
+1. Specificare il nome **QuizMatematico** per il progetto e scegliere **Crea**.
+
+::: moniker-end
+
+1.  Scegliere il modulo e impostare la proprietà **Text** su **Quiz matematico**.
 
      La finestra **Proprietà** conterrà le proprietà per il modulo.
 
-5.  Impostare le dimensioni del modulo su 500 pixel di larghezza per 400 pixel di altezza.
+1.  Impostare le dimensioni del modulo su 500 pixel di larghezza per 400 pixel di altezza.
 
      È possibile ridimensionare il modulo trascinando i relativi bordi finché le dimensioni corrette non compaiono nell'angolo inferiore sinistro dell'ambiente di sviluppo integrato (IDE). In alternativa, è possibile modificare i valori della proprietà **Size**.
 
-6.  Impostare il valore della proprietà **FormBorderStyle** su **Fixed3D** e la proprietà **MaximizeBox** su **False**.
+1.  Impostare il valore della proprietà **FormBorderStyle** su **Fixed3D** e la proprietà **MaximizeBox** su **False**.
 
      Questi valori impediranno agli esecutori del quiz di ridimensionare il modulo.
 

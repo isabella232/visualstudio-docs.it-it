@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680932"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789692"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
 
@@ -60,14 +60,14 @@ Tra le altre combinazioni di tasti utili ricordiamo le seguenti.
 
 |Funzionalità|Description|Combinazione di tasti|
 |-------------|-----------------| - |
-|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **NOTA:** scelta rapida standard di Windows|**ALT di sinistra + MAIUSC di sinistra + STAMP**|
+|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **NOTA:** scelta rapida standard di Windows|**ALT di sinistra+MAIUSC di sinistra+STAMP**|
 |Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **NOTA:** scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
 |Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **NOTA:** scelta rapida standard di Windows|**MAIUSC** + **F10**|
-|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Scegliere **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio selezionare **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** scelta rapida standard di Windows|**ALT** + **[lettera]**|
-|Casella di ricerca di Avvio veloce| Usare la funzionalità di ricerca in Visual Studio|**CTRL** + **Q**|
+|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Premere **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio premere **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** scelta rapida standard di Windows|**ALT** + **[lettera]**|
+|Casella di ricerca|Usare la funzionalità di ricerca in Visual Studio.|**CTRL** + **Q**|
 |Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL** + **Freccia SU**<br /><br /> e<br /><br /> **CTRL** + **Freccia GIÙ**|
 |Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un form o finestra di progettazione.|**INVIO**|
-|Tastiera, Ambiente, finestra di dialogo Opzioni|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**BACKSPACE**|
+|Finestra di dialogo Opzioni: Ambiente > Tastiera|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**Backspace**|
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma.
@@ -76,12 +76,12 @@ Tra le altre combinazioni di tasti utili ricordiamo le seguenti.
 
 Per assegnare un suono a eventi di Visual Studio, è possibile usare l'applet Suono in Windows. In particolare, è possibile assegnare suoni agli eventi seguenti:
 
- * Punto di interruzione raggiunto
- * Compilazione annullata
- * Compilazione non riuscita
- * Compilazione completata
+* Punto di interruzione raggiunto
+* Compilazione annullata
+* Compilazione non riuscita
+* Compilazione completata
 
-Ecco come fare.
+Ecco come:
 
 1. Nella casella **Ricerca** in un computer con Windows 10, digitare **Cambia segnali acustici emessi dal sistema**.
 

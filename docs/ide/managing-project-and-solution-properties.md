@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928036"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789705"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gestire le proprietà di progetti e soluzioni
 
-Le proprietà dei progetti governano molti aspetti della compilazione, del debug, del test e della distribuzione. Alcune proprietà sono comuni tra tutti i tipi di progetto e altre sono univoche di piattaforme o linguaggi specifici. Per accedere alle proprietà del progetto, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** oppure digitare "proprietà" nella casella di ricerca **Avvio veloce** nella barra dei menu.
+Le proprietà dei progetti governano molti aspetti della compilazione, del debug, del test e della distribuzione. Alcune proprietà sono comuni tra tutti i tipi di progetto e altre sono univoche di piattaforme o linguaggi specifici. Per accedere alle proprietà del progetto, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** oppure digitare **proprietà** nella casella di ricerca sulla barra dei menu e scegliere **Finestra Proprietà** nei risultati.
 
 ![Menu di scelta rapida Progetto](../ide/media/vs2015_proj_prop_menu.gif)
 

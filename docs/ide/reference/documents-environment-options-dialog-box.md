@@ -1,6 +1,6 @@
 ---
 title: Documenti, Ambiente, finestra di dialogo Opzioni
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912820"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647258"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Documenti, Ambiente, finestra di dialogo Opzioni
+# <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: Ambiente \> Documenti
 
-Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** dal menu **Strumenti** e selezionare **Documenti** nel nodo **Ambiente**. Se l'opzione **Documenti** non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
-
-**Riutilizza la finestra del documento corrente, se salvato**
-
-Quando l'opzione viene selezionata, il documento corrente viene chiuso se è stato salvato e nella stessa finestra viene aperto un nuovo documento. Se non è stato salvato, il documento corrente rimane aperto e il nuovo documento viene aperto in una finestra separata. Quando l'opzione non viene selezionata, i nuovi documenti vengono sempre aperti in finestre separate.
-
-È consigliabile abilitare questa opzione se non si eseguono spesso operazioni di taglia e incolla di più documenti e si vuole ridurre il numero di documenti e finestre aperti nello spazio di lavoro.
+Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** nel menu **Strumenti** e quindi selezionare **Ambiente** > **Documenti**.
 
 **Rileva quando il file viene modificato al di fuori dell'ambiente**
 
 Quando l'opzione viene selezionata, viene inviato immediatamente un messaggio per notificare che sono state apportate modifiche al file aperto da un editor all'esterno dell'IDE. Il messaggio consente di ricaricare il file dall'archiviazione.
 
-**Carica modifiche automaticamente, se salvate**
+**Ricarica i file modificati a meno che non ci siano modifiche non salvate**
 
 Quando viene selezionata l'opzione **Rileva quando il file viene modificato al di fuori dell'ambiente** e un file aperto nell'IDE viene modificato all'esterno dell'IDE, per impostazione predefinita viene generato un messaggio di avviso. Se questa opzione viene abilitata, non vengono visualizzati avvisi e il documento viene ricaricato nell'IDE per acquisire le modifiche esterne.
 
@@ -79,7 +73,7 @@ Selezionare questa opzione per il nodo **File esterni** in **Esplora soluzioni**
 > [!NOTE]
 > Selezionare questa opzione per abilitare il comando **Visualizza nel browser** nel menu **File** per i documenti Web non inclusi nell'applicazione Web attiva.
 
-**\<** *n* **> elementi salvati nel progetto di file esterni**
+**Elementi salvati nel progetto File esterni**
 
 Specifica il numero di file da salvare in modo permanente nella cartella **File esterni** di **Esplora soluzioni**. Questi file vengono elencati anche se non sono più aperti in un editor. È possibile specificare un numero intero qualsiasi compreso tra 0 e 256. Il numero predefinito è 0.
 

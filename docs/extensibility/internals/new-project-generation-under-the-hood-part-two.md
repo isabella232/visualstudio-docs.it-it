@@ -20,7 +20,7 @@ ms.locfileid: "58148204"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nuova generazione del progetto: Dietro le quinte, parte 2
 
-In [nuova generazione progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual c#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.
+In [nuova generazione progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual C#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.
 
 ## <a name="generating-the-solution-files"></a>Per generare i file di soluzione
  Scelta di un modello di applicazione indirizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per decomprimere e aprire il file con estensione vstemplate corrispondente e per avviare un modello per interpretare i comandi XML in questo file. Questi comandi creano progetti ed elementi del progetto nella soluzione nuova o esistente.

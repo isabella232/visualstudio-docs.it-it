@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934640"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647115"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Tastiera, Ambiente, finestra di dialogo Opzioni
+# <a name="options-dialog-box-environment--keyboard"></a>Finestra di dialogo Opzioni: Ambiente \> Tastiera
+
 Usare questa pagina per impostare le mappature della tastiera. Per altre informazioni sulle mappature, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche

@@ -2,6 +2,7 @@
 title: Creare per la prima volta un'app console con Visual Basic
 description: Informazioni dettagliate su come creare un'app console Hello World semplice in Visual Studio con Visual Basic.
 ms.custom: seodec18
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -13,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d0ccaf648d4109679b7d1343df462ae4e8da3822
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415837"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856243"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic
 
@@ -32,7 +33,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -69,28 +70,28 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra "Crea un nuovo progetto" ](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Quindi scegliere **Visual Basic** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
 
-   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e quindi scegliere **Avanti**.
+   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
 
    ![Scegliere il modello Visual Basic per l'app console (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
    > Se il modello **App console (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
-   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra Crea un nuovo progetto](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
    >
    > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *WhatIsYourName* nella casella **Nome del progetto**. Scegliere **Crea**.
 
-   ![Nella finestra Configura il nuovo progetto assegnare al progetto il nome "WhatIsYourName"](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+   ![Nella finestra Configura il nuovo progetto assegnare al progetto il nome "WhatIsYourName"](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio aprirà il nuovo progetto.
 
