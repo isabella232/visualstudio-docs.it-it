@@ -32,7 +32,7 @@ A volte può essere utile apportare modifiche a un modello in un thread in backg
   
 #### <a name="to-run-the-example"></a>Per eseguire l'esempio  
   
-1. Creare un gestore comando in un progetto c#, come descritto in [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Creare un gestore comando in un progetto C#, come descritto in [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
 2. Verificare che il progetto includa riferimenti a questi assembly:  
   

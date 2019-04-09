@@ -130,7 +130,7 @@ ms.locfileid: "58967058"
        > [!NOTE]
        >  La disabilitazione di framework applicazione disattiva le funzionalità, ad esempio stili di Windows XP, gli eventi dell'applicazione, la schermata iniziale, un'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-       Per Visual c# solo per gli sviluppatori:  
+       Per Visual C# solo per gli sviluppatori:  
   
        Aprire il file di codice Program.cs e aggiungere il codice seguente.  
   
