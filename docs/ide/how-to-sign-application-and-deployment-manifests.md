@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916883"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790849"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazione e distribuzione
 
@@ -35,11 +35,11 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
  Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta solo file di chiave Scambio informazioni personali con estensione *pfx*. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.
+> Visual Studio supporta solo file di chiave Scambio informazioni personali con estensione *pfx*. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Per firmare manifesti dell'applicazione e di distribuzione usando un certificato
+## <a name="sign-using-a-certificate"></a>Firmare con un certificato
 
-1.  Aprire la finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Proprietà** o digitare **proprietà del progetto** nella finestra **Avvio veloce** oppure premere **ALT**+**INVIO** in **Esplora soluzioni**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1.  Passare alla finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
 2.  Fare clic sul pulsante **Seleziona da archivio**.
 
@@ -52,7 +52,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
 4.  È possibile anche specificare l'indirizzo di un server di timestamp nella casella di testo **URL del server di timestamp**. Questo server indica quando è stato firmato il manifesto.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Per firmare manifesti dell'applicazione e di distribuzione tramite un file di chiave esistente
+## <a name="sign-using-an-existing-key-file"></a>Firmare con un file di chiave esistente
 
 1.  Nella pagina **Firma** selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
@@ -69,7 +69,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
 4.  Immettere la password per accedere al file di chiave e premere **INVIO**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Per firmare manifesti dell'applicazione e di distribuzione tramite un certificato di test
+## <a name="sign-using-a-test-certificate"></a>Firmare con un certificato di prova
 
 1.  Nella pagina **Firma** selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 

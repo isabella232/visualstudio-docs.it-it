@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223364"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790368"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida per Visual Studio
 
@@ -51,8 +51,8 @@ ms.locfileid: "57223364"
 |-|-|
 |Ricerca in Esplora soluzioni|**CTRL**+**,**|
 |Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti|**ALT**+**`** quando la finestra degli strumenti è attiva|
-|Avvio veloce|**CTRL**+**Q**|
-|Definire ambito risultati di Avvio veloce|-   @opt Opzioni<br />-   @cmd Comandi<br />-   @mru Usati più di recente<br />-   @doc Documenti aperti|
+|Casella di ricerca|**CTRL**+**Q**|
+|Risultati ambito casella di ricerca|-   @opt Opzioni<br />-   @cmd Comandi<br />-   @mru Usati più di recente<br />-   @doc Documenti aperti|
 |Opzioni di ricerca negli strumenti|**CTRL**+**E**|
 
 ## <a name="editor-find"></a>Ricerca nell'editor

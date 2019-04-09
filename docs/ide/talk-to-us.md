@@ -1,6 +1,6 @@
 ---
 title: Comunicazioni con Microsoft
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953519"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857138"
 ---
 # <a name="visual-studio-product-feedback"></a>Commenti e suggerimenti per il prodotto Visual Studio
 
@@ -24,11 +26,11 @@ Comunicazioni con Microsoft Microsoft è interessata alle idee degli utenti per 
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Segnalare un problema con Visual Studio
 
-Se si riscontrano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte o un comportamento imprevisto, è possibile segnalarli tramite lo strumento **Segnala un problema**. In Visual Studio scegliere l'icona dei commenti e suggerimenti accanto ad **Avvio veloce** o scegliere **Guida** > **Invia commenti e suggerimenti** > **Segnala un problema** sulla barra dei menu. Visual Studio apre quindi la pagina [Developer Community](https://developercommunity.visualstudio.com) nel browser, in cui è possibile accedere per segnalare il problema. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Se si riscontrano problemi con Visual Studio, ad esempio arresti anomali, prestazioni ridotte o un comportamento imprevisto, è possibile segnalarli tramite lo strumento **Segnala un problema**. In Visual Studio scegliere l'icona dei commenti e suggerimenti accanto alla casella di ricerca oppure scegliere **Guida** > **Invia commenti e suggerimenti** > **Segnala un problema** sulla barra dei menu. Visual Studio apre quindi la pagina [Developer Community](https://developercommunity.visualstudio.com) nel browser, in cui è possibile accedere per segnalare il problema. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Inviare suggerimenti sulle funzionalità di Visual Studio
 
-Se si individuano aree di miglioramento, è possibile indicarle a Microsoft. In Visual Studio scegliere **Guida** > **Invia commenti e suggerimenti** > **Invia un suggerimento** sulla barra dei menu. Visual Studio apre quindi la pagina [Developer Community](https://developercommunity.visualstudio.com) nel browser, in cui è possibile accedere per condividere un'idea. Per altre informazioni, vedere [Suggerire una funzionalità per Visual Studio 2017](suggest-a-feature.md).
+Se si individuano aree di miglioramento, è possibile indicarle a Microsoft. In Visual Studio scegliere **Guida** > **Invia commenti e suggerimenti** > **Invia un suggerimento** sulla barra dei menu. Visual Studio apre quindi la pagina [Developer Community](https://developercommunity.visualstudio.com) nel browser, in cui è possibile accedere per condividere un'idea. Per altre informazioni, vedere [Suggerire una funzionalità per Visual Studio](suggest-a-feature.md).
 
 ### <a name="rate-this-product"></a>Valutare il prodotto
 
@@ -36,7 +38,7 @@ Le versioni non definitive di Visual Studio includono una voce di menu **Valuta 
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Contattare il supporto Microsoft
 
-Per informazioni sul supporto per Visual Studio, vedere la pagina [Informazioni sul ciclo di vita e sulla manutenzione dei prodotti per Visual Studio e Team Foundation Server](/visualstudio/productinfo/vs-servicing-vs).
+Per informazioni sul supporto per Visual Studio, vedere la pagina [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
 
 Per altri prodotti e servizi Microsoft, vedere [Supporto Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) per assistenza online.
 
@@ -55,7 +57,7 @@ Per condividere domande e risposte con altri sviluppatori, usare il sito [Develo
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Migliorare la documentazione di Visual Studio
 
-Usare il pulsante per l'invio di commenti e suggerimenti **Questa pagina è stata utile?** nella parte inferiore della pagina. Questo pulsante si trova in tutte le pagine della documentazione. In alternativa, è possibile aggiungere commenti e suggerimenti in qualsiasi pagina di Visual Studio in [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) usando il pulsante **Sign in to give documentation feedback** (Accedi per fornire commenti sulla documentazione), anch'esso disponibile nella parte inferiore della pagina.
+Usare il pulsante per l'invio di commenti e suggerimenti **Questa pagina è stata utile?** nella parte inferiore della pagina. Questo pulsante si trova in tutte le pagine della documentazione. In alternativa, è possibile aggiungere commenti e suggerimenti in qualsiasi pagina di Visual Studio in [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) usando l'account di GitHub. Scegliere il pulsante **Sign in to give documentation feedback** (Accedi per fornire commenti sulla documentazione), anch'esso disponibile nella parte inferiore della pagina.
 
 ## <a name="see-also"></a>Vedere anche
 

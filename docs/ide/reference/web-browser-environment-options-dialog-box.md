@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700004"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647284"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
+# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: Ambiente \> Web browser
 
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
@@ -50,11 +50,11 @@ Consente di definire una pagina di ricerca per il Web browser interno. Questo pe
 
 Consente di impostare l'editor usato per aprire una pagina Web quando si sceglie **Visualizza origine** nella pagina dal Web browser interno.
 
--   **Editor standard** Selezionare questa opzione per visualizzare l'origine nell'[editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Editor standard** Selezionare questa opzione per visualizzare l'origine nell'[editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.
+- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.
 
--   **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.
+- **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opzioni di Internet Explorer
 

@@ -1,6 +1,6 @@
 ---
 title: Avvio, Ambiente, finestra di dialogo Opzioni
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Startup
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696493"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647232"
 ---
-# <a name="startup-environment-options-dialog-box"></a>Avvio, Ambiente, finestra di dialogo Opzioni
+# <a name="options-dialog-box-environment--startup"></a>Finestra di dialogo Opzioni: Ambiente \> Avvio
 
 ::: moniker range="vs-2017"
 

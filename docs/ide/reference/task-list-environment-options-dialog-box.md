@@ -1,6 +1,6 @@
 ---
 title: Elenco attività, Ambiente, finestra di dialogo Opzioni
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
@@ -22,64 +22,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda16e5939f34cbea29eb92e08ee7325b49301b5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912170"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647219"
 ---
-# <a name="task-list-environment-options-dialog-box"></a>Elenco attività, Ambiente, finestra di dialogo Opzioni
+# <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: Ambiente \> Elenco attività
 
 La pagina Opzioni consente di aggiungere, eliminare e modificare i token di commento che generano i promemoria di **Elenco attività**. Per visualizzare queste impostazioni selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e quindi scegliere **Elenco attività**.
 
-## <a name="task-list-options"></a>Opzioni di Elenco attività
- Chiedi conferma prima di eliminare un'attività
+## <a name="task-list-tokens"></a>Token elenco attività
 
- Quando questa opzione è selezionata, viene visualizzata una finestra di messaggio ogni volta che un'attività utente viene eliminata da **Elenco attività** in modo da poter confermare l'eliminazione. Questa opzione è selezionata per impostazione predefinita.
+Quando si inserisce un commento nel codice il cui testo inizia con un token proveniente da **Elenco token**, in **Elenco attività** il commento viene visualizzato come nuova voce ogni volta che il file viene aperto per la modifica. Fare clic su una voce in **Elenco attività** per passare direttamente alla riga del commento nel codice. Per altre informazioni, vedere [Uso dell'elenco attività](../../ide/using-the-task-list.md).
 
-> [!NOTE]
-> Per eliminare il commento di un'attività, usare il collegamento per trovare il commento e quindi rimuoverlo dal codice.
-
-
- Mostra solo nomi file
-
- Quando questa opzione è selezionata, nella colonna **File** di **Elenco attività** vengono visualizzati solo i nomi dei file da modificare e non i percorsi completi.
-
-## <a name="tokens"></a>token
- Quando si inserisce un commento nel codice il cui testo inizia con un token proveniente da **Elenco token**, in **Elenco attività** il commento viene visualizzato come nuova voce ogni volta che il file viene aperto per la modifica. È possibile fare clic su questa voce di **Elenco attività** per passare direttamente alla riga del commento nel codice. Per altre informazioni, vedere [Uso dell'elenco attività](../../ide/using-the-task-list.md).
-
- Elenco dei token
-
- Visualizza un elenco di token e permette di aggiungere o rimuovere token personalizzati. Per i token di commento viene fatta distinzione tra maiuscole e minuscole in C# e Visual C++, ma non in Visual Basic.
+Elenco dei token\
+Visualizza un elenco di token e permette di aggiungere o rimuovere token personalizzati. Per i token di commento viene fatta distinzione tra maiuscole e minuscole in C# e C++, ma non in Visual Basic.
 
 > [!NOTE]
-> Se non si digita il token desiderato esattamente come è specificato in **Elenco token**, non verrà visualizzata alcuna attività di commento in **Elenco attività**.
+> Se non si digita il token desiderato esattamente come è specificato nell'elenco dei token, non verrà visualizzata alcuna attività di commento in **Elenco attività**.
 
+Priorità\
+Imposta la priorità delle attività che usano il token selezionato (bassa, normale o alta). Ai commenti delle attività che iniziano con questo token viene automaticamente assegnata la priorità designata in **Elenco attività**.
 
- Priorità
+Nome\
+Immettere la stringa del token e quindi fare clic su **Aggiungi** per aggiungere la stringa all'elenco di token.
 
- Imposta la priorità delle attività che usano il token selezionato. Ai commenti delle attività che iniziano con questo token viene automaticamente assegnata la priorità designata in **Elenco attività**.
+Aggiungi\
+Pulsante abilitato quando si immette un nuovo **Nome**. Fare clic su questo pulsante per aggiungere una nuova stringa di token usando i valori immessi nei campi **Nome** e **Priorità**.
 
- nome
+Elimina\
+Fare clic per eliminare il token selezionato dall'elenco di token. Non è possibile eliminare il token di commento predefinito.
 
- Immettere la stringa del token. Viene abilitato il pulsante **Aggiungi**. Quando si sceglie il pulsante **Aggiungi**, questa stringa viene inclusa in **Elenco token** e i commenti che iniziano con questo nome verranno visualizzati in **Elenco attività**.
-
- Aggiunta
-
- Pulsante abilitato quando si immette un nuovo **Nome**. Fare clic su questo pulsante per aggiungere una nuova stringa di token usando i valori immessi nei campi **Nome** e **Priorità**.
-
- Eliminare
-
- Fare clic su questo pulsante per eliminare il token selezionato da **Elenco token**. Non è possibile eliminare il token di commento predefinito.
-
- Modifica
-
- Fare clic su questo pulsante per apportare modifiche a un token esistente usando i valori immessi nei campi **Nome** e **Priorità**.
+Modifica\
+Fare clic su questo pulsante per apportare modifiche a un token esistente usando i valori immessi nei campi **Nome** e **Priorità**.
 
 > [!NOTE]
 > Non è possibile rinominare o eliminare il token di commento predefinito, ma è possibile modificarne il livello di priorità.
-
 
 ## <a name="see-also"></a>Vedere anche
 

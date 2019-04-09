@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354729"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790901"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -125,15 +125,15 @@ Ora si procederà alla compilazione del progetto per esaminare alcuni elementi d
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Avvio veloce
+## <a name="search-box"></a>Casella di ricerca
 
-La casella di ricerca **Avvio veloce** è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
+La casella di ricerca è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
 
 ::: moniker range="vs-2017"
 
 1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa premere **CTRL**+**Q** per accedere.
 
-2. Digitare **verbosity** nella casella di ricerca **Avvio veloce**. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
+2. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
 
    ![Casella di ricerca di Avvio veloce in Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ La casella di ricerca **Avvio veloce** è un modo rapido e semplice per eseguire
 
 ::: moniker range=">=vs-2019"
 
-1. Individuare la casella di ricerca **Avvio veloce** nella parte superiore dell'IDE, a destra dei menu. In alternativa premere **CTRL**+**Q** per accedere.
+1. Premere **CTRL**+**Q** per attivare la casella di ricerca nella parte superiore dell'IDE.
 
-2. Digitare **verbosity** nella casella di ricerca **Avvio veloce**. Nei risultati visualizzati scegliere **Modifica livello di dettaglio di MSBuild**.
+2. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Modifica livello di dettaglio di MSBuild**.
 
-   ![Casella di ricerca di Avvio veloce in Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+   ![Casella di ricerca in Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
    Si apre la pagina delle opzioni **Compila ed esegui** della finestra di dialogo **Opzioni**.
 
@@ -163,7 +163,7 @@ La casella di ricerca **Avvio veloce** è un modo rapido e semplice per eseguire
 
 ## <a name="send-feedback-menu"></a>Menu Invia commenti e suggerimenti
 
-Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile usare il menu **Invia commenti e suggerimenti** nella parte superiore di Visual Studio, accanto alla casella **Avvio veloce**.
+Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile usare il menu **Invia commenti e suggerimenti** nella parte superiore della finestra di Visual Studio.
 
 ::: moniker range="vs-2017"
 

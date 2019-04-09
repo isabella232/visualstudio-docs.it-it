@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Sbloccare Visual Studio'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943142"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856820"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedura: Sbloccare Visual Studio
 
@@ -27,7 +30,7 @@ ms.locfileid: "55943142"
 
 Per sbloccare Visual Studio usando una sottoscrizione di Visual Studio o un'organizzazione di Azure DevOps associata a un account Microsoft o un account aziendale o dell'istituto di istruzione:
 
-1. Fare clic sul pulsante **Accedi** nell'angolo superiore destro dell'IDE oppure scegliere **File** > **Impostazioni account** per aprire la finestra di dialogo **Impostazioni account** e fare clic sul pulsante **Accedi**.
+1. Scegliere il pulsante **Accedi** nell'angolo superiore destro dell'IDE oppure scegliere **File** > **Impostazioni account** per aprire la finestra di dialogo **Impostazioni account** e scegliere il pulsante **Accedi**.
 
 1. Immettere le credenziali per un account Microsoft oppure un account aziendale o dell'istituto di istruzione. Visual Studio individua una sottoscrizione di Visual Studio o un'organizzazione di Azure DevOps associata all'account.
 
@@ -36,9 +39,9 @@ Per sbloccare Visual Studio usando una sottoscrizione di Visual Studio o un'orga
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Per sbloccare Visual Studio con un codice Product Key
 
-1. Selezionare **File** > **Impostazioni account** per aprire la finestra di dialogo **Impostazioni account** e fare clic sul collegamento **Licenza con codice Product Key**.
+1. Selezionare **File** > **Impostazioni account** per aprire la finestra di dialogo **Impostazioni account** e quindi scegliere il collegamento **Licenza con codice Product Key**.
 
-Immettere il codice Product Key nell'apposita casella.
+1. Immettere il codice Product Key nell'apposita casella.
 
 > [!TIP]
 > Le versioni preliminari di Visual Studio non includono codici Product Key. Per usare le versioni preliminari, è necessario accedere all'IDE.
@@ -47,7 +50,7 @@ Immettere il codice Product Key nell'apposita casella.
 
 ### <a name="update-stale-licenses"></a>Aggiornare le licenze non aggiornate
 
- È possibile che sia stato visualizzato il messaggio seguente, che indica che la licenza è diventata obsoleta in Visual Studio: "La licenza deve essere aggiornata."
+ È possibile che sia stato visualizzato il messaggio seguente, che indica che la licenza sta per diventare obsoleta in Visual Studio. Il messaggio è "La licenza è diventata obsoleta e deve essere aggiornata."
 
  ![Messaggio di licenza non aggiornata di Visual Studio](../ide/media/vs2017_stale-license.png)
 
@@ -58,10 +61,10 @@ Immettere il codice Product Key nell'apposita casella.
 
 Prima che il token della licenza diventi obsoleto, Visual Studio visualizza un messaggio di avviso che richiede di immettere nuovamente le credenziali.
 
-Se non si immettono di nuovo le credenziali, il token inizia a diventare obsoleto e la finestra di dialogo **Impostazioni account** indica il numero di giorni rimanenti prima della scadenza completa del token. Dopo la scadenza del token, sarà necessario immettere di nuovo le credenziali per questo account oppure ottenere la licenza con un altro metodo indicato prima di potere continuare a usare Visual Studio.
+Se non si immettono di nuovo le credenziali, il token inizia a diventare obsoleto e la finestra di dialogo **Impostazioni account** indica il numero di giorni rimanenti prima della scadenza completa del token. Dopo la scadenza del token, è necessario immettere nuovamente le credenziali per l'account prima di continuare a usare Visual Studio.
 
 > [!Important]
-> Se si usa Visual Studio per lunghi periodi di tempo in ambienti con accesso a Internet assente o limitato, è consigliabile usare un codice Product Key per sbloccare Visual Studio, in modo da evitare interruzioni.
+> Se si usa Visual Studio per lunghi periodi di tempo in ambienti con accesso a Internet assente o limitato, è consigliabile usare un codice Product Key per sbloccare Visual Studio ed evitare interruzioni.
 
 ### <a name="update-expired-licenses"></a>Aggiornare le licenze scadute
 
@@ -69,4 +72,4 @@ Se non si immettono di nuovo le credenziali, il token inizia a diventare obsolet
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Accedere a Visual Studio](../ide/signing-in-to-visual-studio.md)
+* [Accedi a Visual Studio](../ide/signing-in-to-visual-studio.md)

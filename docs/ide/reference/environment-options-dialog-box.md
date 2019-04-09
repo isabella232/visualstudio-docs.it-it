@@ -11,20 +11,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983715"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790043"
 ---
-# <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
+# <a name="options-dialog-box-environment"></a>Finestra di dialogo Opzioni: Ambiente
 
-È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.
+È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine Ambiente, scegliere **Strumenti** > **Opzioni** e quindi selezionare **Ambiente**.
 
 |Per informazioni sulla procedura|Vedere|
 | - |---------|
 |Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|
+|Per specificare se effettuare il roaming delle impostazioni tra computer.|[Account, Ambiente, finestra di dialogo Opzioni](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Modificare le impostazioni predefinite per il salvataggio e il recupero automatici dei file|[Salvataggio automatico, Ambiente, finestra di dialogo Opzioni](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|
 |Personalizzare l'esecuzione degli aggiornamenti e la modalità di gestione delle estensioni.|[Estensioni, Ambiente, finestra di dialogo Opzioni](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
@@ -33,10 +34,7 @@ ms.locfileid: "57983715"
 |Personalizzare il percorso dei file vssettings che archiviano le informazioni sulle impostazioni utente.|[Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Selezionare un linguaggio predefinito per Visual Studio.|[Impostazioni internazionali, Ambiente, finestra di dialogo Opzioni](../../ide/reference/international-settings-environment-options-dialog-box.md)|
 |Impostare le opzioni di mappatura della tastiera.|[Tastiera, Ambiente, finestra di dialogo Opzioni](../../ide/reference/keyboard-environment-options-dialog-box.md)|
-|Per specificare se le notifiche sono abilitate.|[Notifiche, Ambiente, finestra di dialogo Opzioni](../../ide/reference/notifications-environment-options-dialog-box.md)|
-|Per specificare le opzioni per la finestra Avvio veloce.|[Avvio veloce, Ambiente, finestra di dialogo Opzioni](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Per specificare le opzioni di avvio.|[Avvio, Ambiente, finestra di dialogo Opzioni](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Per specificare se effettuare il roaming delle impostazioni tra computer.|[Impostazioni sincronizzate, Ambiente, finestra di dialogo Opzioni](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Informazioni su come impostare le opzioni per attività ed elenchi di attività.|[Elenco attività, Ambiente, finestra di dialogo Opzioni](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Modificare le pagine iniziale e di ricerca predefinite modificando l'editor di origine del sistema e configurando le opzioni di Internet Explorer.|[Web Browser, Ambiente, finestra di dialogo Opzioni](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
