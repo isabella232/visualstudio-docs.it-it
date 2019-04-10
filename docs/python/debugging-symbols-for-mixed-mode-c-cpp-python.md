@@ -3,18 +3,18 @@ title: Simboli per il debug in modalità mista con Python/C++
 description: Come Visual Studio offre la possibilità di caricare i simboli per il debug completo in modalità mista con C++ e Python.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 77dc73b0be050e5108f73d38dfbbaa763d236995
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355435"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365603"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installare i simboli di debug per interpreti Python
 
