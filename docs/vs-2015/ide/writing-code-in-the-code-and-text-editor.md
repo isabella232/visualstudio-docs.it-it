@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366614"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
  ![Pulsanti di navigazione per spostarsi avanti e indietro](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping, è possibile visualizzare l'anteprima del codice quando il cursore si sposta su e giù la barra di scorrimento, per altre informazioni, vedere [come: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+ Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping, è possibile visualizzare l'anteprima del codice quando il cursore si sposta su e giù la barra di scorrimento, per altre informazioni, vedere [come: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  I comandi seguenti sono metodi di spostamento specifici per il codice:  
 
@@ -130,9 +130,9 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 |-|-|  
 |Vai a \<numero di riga>|(**Modifica/Vai a** o CTRL + G): Spostare in un numero di riga specifico nel documento attivo.|  
 |Passa a|(**Modifica/passa a** o CTRL +,): Trova un simbolo o del file della soluzione attiva. Consente di ottenere un buon numero di risultati corrispondenti da una query. È possibile cercare parole chiave contenute in un simbolo usando la convenzione Camel e i caratteri di sottolineatura per dividere il simbolo in parole chiave.|  
-|Trova tutti i riferimenti|(Menu di scelta rapida): trova tutti i riferimenti all'elemento selezionato nella soluzione|  
+|Trova tutti i riferimenti|(menu di scelta rapida): Trova tutti i riferimenti all'elemento selezionato nella soluzione.|  
 |Vai a definizione|(menu di scelta rapida o F12): Trova la definizione dell'elemento selezionato.|  
-|Visualizza definizione|(menu di scelta rapida o ALT+F12): Trova la definizione dell'elemento selezionato e lo visualizza in una finestra popup. Per altre informazioni, vedere [Procedura: Visualizzare e modificare il codice utilizzando la finestra Visualizza definizione (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Visualizza definizione|(menu di scelta rapida o ALT+F12): Trova la definizione dell'elemento selezionato e lo visualizza in una finestra popup. Per altre informazioni, vedere [Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Metodo successivo, Metodo precedente|(**Modifica/Metodo successivo, Metodo precedente**) Nei file di codice di Visual Basic, usare questi comandi per spostare il punto di inserimento in metodi diversi.|  
 |Evidenziazione di riferimenti|Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per spostarsi al simbolo evidenziato successivo o precedente, premere CTRL+MAIUSC+ freccia GIÙ o CTRL+MAIUSC+freccia SU. È possibile modificare il colore di evidenziazione in **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori/Riferimento evidenziato.**|  
 |Trova informazioni relative al codice|È possibile trovare informazioni relative a codice specifico, ad esempio modifiche, autori delle modifiche, riferimenti, bug, elementi di lavoro, revisioni del codice e stato dello unit test quando si usa CodeLens nell'editor del codice. CodeLens funziona come una visualizzazione preliminare quando si usa Visual Studio Enterprise con Team Foundation Server. Vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -174,7 +174,7 @@ Il comando Passa a di Visual Studio esegue una ricerca mirata del codice per con
 
 ### <a name="filter-your-search"></a>Filtrare la ricerca
 
-Per limitare la ricerca solo ai simboli del codice, anteporre alla query Passa a un carattere "@". Ad esempio, se si cerca `@application`, Passa a visualizza solo le classi che contengono la parola "application".
+Per limitare la ricerca solo ai simboli del codice, anteporre alla query passa a con un "\@" caratteri. Ad esempio, se si cerca `@application`, Passa a visualizza solo le classi che contengono la parola "application".
 
 Se si usa la convenzione camel per maiuscole e minuscole nel codice, è possibile trovare gli elementi di codice più rapidamente immettendo solo le lettere maiuscole dei nomi degli elementi di codice. Ad esempio, se il codice ha un componente denominato `ViewSwitcher`, è possibile trovarlo immettendo solo le lettere maiuscole del nome (`"VS"`) nella finestra Passa a.
 
@@ -183,7 +183,7 @@ Se si usa la convenzione camel per maiuscole e minuscole nel codice, è possibil
 Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
 ## <a name="customize-the-editor"></a>Personalizzare l'editor  
- **Importare ed esportare le impostazioni**: è possibile condividere le impostazioni con un altro sviluppatore, renderle conformi a uno standard o ripristinare le impostazioni predefinite di Visual Studio usando **Importazione/Esportazione guidata delle impostazioni** nel menu **Strumenti** . È possibile modificare le impostazioni generali o le impostazioni specifiche di un linguaggio o di un progetto.  
+ **Importa / Esporta impostazioni**: È possibile condividere le impostazioni con un altro sviluppatore, renderle conformi a uno standard o ripristinare le impostazioni predefinite di Visual Studio usando il **importazione / esportazione guidata delle impostazioni** nel **strumenti** menu. È possibile modificare le impostazioni generali o le impostazioni specifiche di un linguaggio o di un progetto.  
 
  **Mapping della tastiera**: È possibile definire nuovi tasti di scelta o ridefinire quelli esistenti nelle impostazioni strumenti/opzioni/ambiente/tastiera. Per altre informazioni sui tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
@@ -191,29 +191,29 @@ Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
 -   [Impostazioni di Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Using the Visual Studio Development Environment for C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)  
+-   [Usando l'ambiente di sviluppo di Visual Studio per c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Opzioni, Editor di testo, JavaScript, formattazione](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Opzioni, Editor di testo, JavaScript, Formattazione](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Contenuto della sezione  
 
--   [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)  
+-   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
 
 -   [Codifiche e interruzioni di riga](../ide/encodings-and-line-breaks.md)  
 
--   [Struttura](../ide/outlining.md)  
+-   [struttura](../ide/outlining.md)  
 
 -   [Refactoring](../ide/refactoring-in-visual-studio.md)  
 
 -   [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Utilizzo di IntelliSense](../ide/using-intellisense.md)  
+-   [Using IntelliSense](../ide/using-intellisense.md)  
 
 -   [Personalizzazione dell'editor](../ide/customizing-the-editor.md)  
 
 -   [Procedura: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Procedura: Visualizzare e modificare il codice utilizzando la finestra Visualizza definizione (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Eseguire azioni rapide con le lampadine](../ide/perform-quick-actions-with-light-bulbs.md)  
 

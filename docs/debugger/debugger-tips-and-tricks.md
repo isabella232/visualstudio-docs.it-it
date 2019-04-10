@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526360"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366302"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni su consigli e suggerimenti relativi alla produttività per il Debugger di Visual Studio
 
@@ -31,7 +31,7 @@ Se si passa spesso sui suggerimenti per i dati durante il debug, è possibile ag
 
 ![L'aggiunta di un suggerimento dati](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modificare il codice e continuare il debug (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modificare il codice e continuare il debug (c#, VB, C++)
 
 Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice all'interno di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic nel codice con il cursore durante la pausa del debugger, apportare modifiche e premere **F5**, **F10**, o **F11** per continuare il debug.
 
@@ -64,7 +64,7 @@ Modificando il flusso di esecuzione è possibile eseguire operazioni come testar
 > [!WARNING]
 > Spesso questa funzionalità deve essere usata con attenzione. Nella descrizione comando viene visualizzato un avviso. È anche possibile che vengano visualizzati altri avvisi. Spostare il puntatore del mouse non è possibile ripristinare l'app a uno stato precedente dell'applicazione.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Tenere traccia di un oggetto out-of-scope (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Tenere traccia di un oggetto out-of-scope (c#, Visual Basic)
 
 È facile visualizzare le variabili usando finestre del debugger, ad esempio la **Watch** finestra. Tuttavia, quando una variabile esce dall'ambito nel **Watch** finestra, è possibile notare che è disattivato. In alcuni scenari di app, il valore di una variabile può cambiare anche quando la variabile esula dall'ambito, e si potrebbe voler guardala strettamente (ad esempio, una variabile venga sottoposto a garbage collection). È possibile monitorare la variabile tramite la creazione di un ID oggetto corrispondente nei **Watch** finestra.
 
@@ -106,7 +106,7 @@ Un visualizzatore di stringhe può aiutare a determinare se una stringa è in fo
 
 ![Visualizzatore di stringhe JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Per alcuni altri tipi, ad esempio gli oggetti WPF visualizzati nelle finestre del debugger, è anche possibile aprire i visualizzatori.
+Per alcuni altri tipi, ad esempio oggetti DataSet e DataTable che vengono visualizzati nelle finestre del debugger, è anche possibile aprire un visualizzatore predefinito.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Inserire un'interruzione nel codice in corrispondenza di eccezioni gestite
 

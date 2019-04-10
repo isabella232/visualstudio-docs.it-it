@@ -1,7 +1,7 @@
 ---
 title: Collegamento a processi in esecuzione con il debugger | Microsoft Docs
 ms.custom: seodec18
-ms.date: 09/27/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,19 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323094"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366406"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
 
 È possibile usare **Connetti a processo** per eseguire il debug delle App in esecuzione su computer locali o remoti, eseguire il debug di più processi contemporaneamente, il debug delle App che non sono state create in Visual Studio o il debug di qualsiasi app non è stato avviato da Visual Studio con il debugger collegato. Ad esempio, se si sta eseguendo un'app senza il debugger e verificata un'eccezione, si può quindi collegare il debugger al processo di esecuzione dell'app e iniziare il debug.
-
-Per informazioni sul debug di base in Visual Studio, vedere [innanzitutto osservare il debugger](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Non si è sicuri se usare **Connetti a processo** per lo scenario di debug? Visualizzare [comuni scenari di debug](#BKMK_Scenarios).
@@ -94,19 +92,20 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
 2. **Tipo di connessione** deve essere **predefinito** per la maggior parte dei casi. Nel **destinazione della connessione** , selezionare il computer remoto, utilizzando uno dei metodi seguenti:
 
    - Selezionare la freccia giù accanto a **destinazione della connessione**e selezionare il nome del computer nell'elenco a discesa.
-   - Digitare il nome del computer nel **destinazione della connessione** casella.
-   
-     ::: moniker range="vs-2017"
+   - Digitare il nome del computer nel **destinazione della connessione** casella e premere **invio**.
 
-     > [!NOTE]
-     > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4022 è la porta predefinita per il debugger remoto di Visual Studio 2017 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).
-
-     ::: moniker-end
+     Verificare che Visual Studio aggiunge la porta necessaria per il nome del computer, che viene visualizzata nel formato:  **\<nome del computer remoto >: porta**
 
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]
      > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4024 è la porta predefinita per il debugger remoto di Visual Studio 2019 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     ::: moniker range="vs-2017"
+
+     > [!NOTE]
+     > Se non è possibile connettersi usando il nome del computer remoto, provare a usare l'indirizzo IP e indirizzi di porta (ad esempio, `123.45.678.9:4022`). 4022 è la porta predefinita per il debugger remoto di Visual Studio 2017 x64. Per altre assegnazioni di porta del debugger remoto, vedere [assegnazioni di porta del debugger remoto](remote-debugger-port-assignments.md).
 
      ::: moniker-end
 
@@ -129,7 +128,7 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
    - Per trovare i processi in esecuzione in tutti gli account utente, selezionare la **Mostra i processi di tutti gli utenti** casella di controllo.
 
      >[!NOTE]
-     >Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+     >Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti risultano sospette o non si è certi, non stabilire la connessione al processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 5. Nel **Collega a** campo, assicurarsi che sia elencato il tipo di codice si prevede di eseguire il debug. Il valore predefinito **automatica** l'impostazione funziona per la maggior parte dei tipi di app.
 
@@ -146,7 +145,7 @@ Per istruzioni più complete per il debug di applicazioni ASP.NET che sono state
 
 In alcuni casi, quando esegue il debug in una sessione Desktop remoto (servizi Terminal), il **processi disponibili** elenco non verrà visualizzati tutti i processi disponibili. Se si esegue Visual Studio come utente che ha un account utente con limitazioni, il **processi disponibili** elenco non verrà visualizzati i processi sono in esecuzione nella sessione 0. Sessione 0 viene usata per i servizi e gli altri processi server, incluso *w3wp.exe*. È possibile risolvere il problema eseguendo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con un account amministratore o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalla console del server invece di una sessione di Servizi Terminal.
 
-Se non è possibile adottare una di queste soluzioni alternative, una terza opzione consiste nel connettersi al processo eseguendo `vsjitdebugger.exe -p <ProcessId>` dalla riga di comando di Windows. È possibile determinare l'ID processo usando *tlist.exe*. Per ottenere *tlist.exe*, scaricare e installare gli strumenti di debug per Windows disponibili in [Download di WDK e WinDbg](/windows-hardware/drivers/download-the-wdk).
+Se non è possibile adottare una di queste soluzioni alternative, una terza opzione consiste nel connettersi al processo eseguendo `vsjitdebugger.exe -p <ProcessId>` dalla riga di comando di Windows. È possibile determinare l'ID di processo con *tlist.exe*. Per ottenere *tlist.exe*, scaricare e installare gli strumenti di debug per Windows disponibili in [Download di WDK e WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ## <a name="BKMK_reattach"></a> Riassocia a un processo
 
@@ -163,7 +162,7 @@ Per alcuni tipi di app, ad esempio le app di App di Windows universale (UWP), no
 
 Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) .
 
-Per il debug di script lato client, è necessario abilitare il debug degli script nel browser. Per eseguire il debug dello script lato client in Chrome, scegliere **Webkit** come tipo di codice e a seconda del tipo di app, potrebbe essere necessario chiudere tutte le istanze di Chrome e avviare il browser in modalità di debug (tipo `chrome.exe --remote-debugging-port=9222` dalla riga di comando).
+Per il debug di script lato client, è necessario abilitare il debug degli script nel browser. Per eseguire il debug dello script lato client in Chrome, scegliere **Web kit** come tipo di codice e a seconda del tipo di app, potrebbe essere necessario chiudere tutte le istanze di Chrome e avviare il browser in modalità di debug (tipo `chrome.exe --remote-debugging-port=9222` dalla riga di comando).
 
 Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visual Studio, digitare **Ctrl**+**Alt**+**P**, quindi digitare la prima lettera del nome del processo.
 
@@ -172,8 +171,8 @@ Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visu
 |Il debug remoto di ASP.NET 4 o 4.5 in un server IIS|Utilizzare gli strumenti remoti e **Connetti a processo**|*w3wp.exe*|Vedere [Remote Debug ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Debug remoto di ASP.NET Core in un server IIS|Utilizzare gli strumenti remoti e **Connetti a processo**|*dotnet.exe*|Per la distribuzione di app, vedere [pubblicazione su IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per eseguire il debug, vedere [Remote Debug ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Eseguire il debug di script sul lato client in un server IIS locale, per tipi di app supportati |Usare **Connetti a processo**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debug degli script deve essere abilitato. Per Chrome, è necessario eseguire anche Chrome in modalità di debug e selezionare **Webkit code** nel **collegare a** campo.|
-|Il debug di un C#, Visual Basic o C++ app nel computer locale|Usare uno [debug standard](../debugger/debugger-feature-tour.md) o **Connetti a processo**|*\<appname>.exe*|Nella maggior parte degli scenari, usare il debug standard e non **Connetti a processo**.|
-|Debug remoto di un'app desktop di Windows|Remote tools|N/D| Vedere [eseguire il debug remoto un C# o un'app Visual Basic](../debugger/remote-debugging-csharp.md) oppure [remoto il debug di un'app C++](../debugger/remote-debugging-cpp.md)|
+|Debug di un'app c#, Visual Basic o C++ nel computer locale|Usare il debug standard (**F5**) o **Connetti a processo**|*\<appname>.exe*|Nella maggior parte degli scenari, usare il debug standard e non **Connetti a processo**.|
+|Debug remoto di un'app desktop di Windows|Remote tools|N/D| Visualizzare [Remote debug di un'app c# o Visual Basic](../debugger/remote-debugging-csharp.md) o [un'app C++ di eseguire il debug remoto](../debugger/remote-debugging-cpp.md)|
 |Eseguire il debug di un'app ASP.NET nel computer locale dopo avere avviato l'app senza il debugger|Usare **Connetti a processo**|*iiexpress.exe*|Questo potrebbe essere utile per rendere l'app di caricare più veloce, ad esempio, ad esempio, la profilatura. |
 |Eseguire il debug di altri tipi di app supportati in un processo del server|Se il server è remoto, utilizzare gli strumenti remoti, e **Connetti a processo**|*Chrome.exe*, *iexplore.exe*, o di altri processi|Se necessario, è possibile utilizzare Monitoraggio risorse per semplificare l'identificazione del processo. Vedere [Debug remoto](../debugger/remote-debugging.md).|
 |Un'app di App di Windows universale (UWP), OneCore, HoloLens o IoT eseguire il debug remoto|Debug pacchetto dell'app installato|N/D|Visualizzare [eseguire il Debug di un pacchetto dell'app installate](debug-installed-app-package.md) invece di usare **Connetti a processo**|
@@ -198,7 +197,7 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
 
  Se si desiderano informazioni più specifiche sul motivo per cui il debugger non è stato possibile collegare a un tipo di codice, provare a ricollegare solo tale tipo di codice.
 
- **Per ottenere informazioni specifiche sulla causa dell'errore di connessione a un tipo di codice:**
+ **Per ottenere informazioni specifiche sul motivo per cui un tipo di codice non è stato possibile collegare:**
 
 1.  Disconnettersi dal processo. Nel **Debug** dal menu **Disconnetti tutto**.
 
@@ -219,5 +218,5 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
 ## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
-- [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Debug remoto](../debugger/remote-debugging.md)

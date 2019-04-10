@@ -1,25 +1,22 @@
 ---
 title: Definire vincoli di convalida per i modelli UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782414"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58967025"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+     **Risoluzione dei problemi**: Se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
   
     -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  Fare doppio clic sulla segnalazione errori. Se gli elementi citati nel report sono visibili nella schermata, saranno evidenziati.  
   
-     **Risoluzione dei problemi**: se il comando **Convalida** non appare nel menu, verificare che:  
+     **Risoluzione dei problemi**: Se il **Validate** comando non viene visualizzato nel menu, assicurarsi che:  
   
     -   Il progetto di convalida sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
   
@@ -274,9 +271,9 @@ public void ValidateSomething
   
 - `"error string"` viene visualizzato nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-- `errorCode` è una stringa che identifica l'errore in modo univoco  
+- `errorCode` è una stringa che dovrebbe identificare l'errore in modo univoco  
   
-- `elementsWithError` identifica gli elementi del modello. Quando l'utente fa doppio clic sul report errori, verrà selezionata la forma che rappresenta questo elemento.  
+- `elementsWithError` identifica gli elementi del modello. Quando l'utente fa doppio clic sulla segnalazione errori, verrà selezionata la forma che rappresenta questo elemento.  
   
   `LogError(),` `LogWarning()` e `LogMessage()` inseriscono i messaggi in sezioni diverse dell'elenco errori.  
   
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente in cui *% LocalAppData %* è in genere *DriveName*: \Users\\*UserName*\AppData\Local:  
   
-   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versione]**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> Esempio  
  In questo esempio vengono trovati i cicli nella relazione di dipendenza tra gli elementi.  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>Vedere anche  
  [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md)   
  [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

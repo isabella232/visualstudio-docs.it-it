@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636905"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366549"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
 
@@ -59,6 +59,19 @@ Nel codice C++ nativo potrebbe essere necessario qualificare il contesto di un n
 >-   La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. Ad esempio, la valutazione `var1 = ++var2` modifica il valore di entrambe `var1` e `var2`. Queste espressioni le seconde esiste [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effetti collaterali può causare risultati imprevisti se non si è necessario tenere in considerazione.
 >
 >-   La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può comportare modifiche ad alcuni dei bit in una variabile a virgola mobile.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Eseguire la ricerca nella finestra variabili locali o Auto
+
+È possibile cercare parole chiave nelle colonne del nome, valore e tipo di **Auto** o **variabili locali** finestra usando la barra di ricerca sopra ogni finestra. Premere INVIO o selezionare una delle frecce per eseguire una ricerca. Per annullare una ricerca in corso, selezionare l'icona "x" nella barra di ricerca.
+
+Utilizzare le frecce sinistra e destra (MAIUSC+F3 e F3, rispettivamente) per spostarsi tra trovare corrispondenze.
+
+![Ricerca nella finestra variabili locali](../debugger/media/ee-search-locals.png "ricerca nella finestra variabili locali")
+
+Per eseguire una ricerca più o meno approfonditi, usare il **ricerca più approfondita** elenco a discesa nella parte superiore del **Auto** o **variabili locali** finestra consente di selezionare quanti livelli di nidificazione per la ricerca in oggetti annidati. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modificare il contesto per la finestra variabili locali o Auto
 
@@ -151,6 +164,6 @@ Per visualizzare i valori restituiti di `sumVars()` e `subtractVars()` chiamate 
 ## <a name="see-also"></a>Vedere anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
-- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)
+- [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Presentazione di debug](../debugger/debugger-feature-tour.md)
 - [Finestre del debugger](../debugger/debugger-windows.md)

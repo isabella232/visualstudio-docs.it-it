@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766152"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366731"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibile usare la** Creazione guidata sessione di prestazioni[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. È possibile profilare un'applicazione Web aperta in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oppure un sito Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] disponibile nel computer locale e non aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibile usare la** Creazione guidata sessione di prestazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . È possibile profilare un'applicazione Web aperta in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oppure un sito Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] disponibile nel computer locale e non aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
 >  La **Creazione guidata sessione di prestazioni** consente di aggiungere dati di interazione tra livelli (TIP), dati relativi alle prestazioni di JScript o entrambi ai dati di profilatura raccolti. L'opzione TIP raccoglie dati dai processi sul lato server. L'opzione di profilatura JScript raccoglie dati da script in esecuzione in un sito Web locale o remoto. Nella maggior parte dei casi, è consigliabile scegliere solo una delle opzioni.  
@@ -84,7 +84,7 @@ Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibi
   
    - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina http://localhost:nnnn/MySite/default.aspx per avviare la sessione.  
   
-   - Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http://www.contoso.com.  
+   - Per i siti esterni che si desidera raccogliere dati JavaScript, digitare l'URL, ad esempio http:\//www.contoso.com.  
   
      Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -103,7 +103,7 @@ Per raccogliere dati sulle prestazioni per un'applicazione Web di **, è possibi
      Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
- [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Cenni preliminari](../profiling/overviews-performance-tools.md)   
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

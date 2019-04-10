@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723253"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366811"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Controllare le variabili con finestre Espressioni di controllo e controllo immediato
 
@@ -91,6 +91,19 @@ Le regole per la valutazione delle espressioni nel **Watch** finestra sono in ge
 ![Guarda l'errore di espressione](../debugger/media/watchexpressionerror.png "guarda errore di espressione")
 
 Potrebbe essere visualizzato un cerchio con due linee ondulate nella **Watch** finestra. Questa icona indica che il debugger non valuta l'espressione a causa di una potenziale dipendenza cross-thread. La valutazione del codice richiede altri thread di eseguire temporaneamente l'app, ma poiché si è in modalità di interruzione, tutti i thread nell'app vengono in genere interrotti. L'esecuzione temporanea di altri thread può avere effetti imprevisti sullo stato dell'app e il debugger potrebbero ignori alcuni eventi quali i punti di interruzione ed eccezioni nei thread.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Nella finestra Espressioni di controllo di ricerca
+
+È possibile cercare parole chiave nelle colonne del nome, valore e tipo di **Watch** finestra usando la barra di ricerca sopra ogni finestra. Premere INVIO o selezionare una delle frecce per eseguire una ricerca. Per annullare una ricerca in corso, selezionare l'icona "x" nella barra di ricerca.
+
+Utilizzare le frecce sinistra e destra (MAIUSC+F3 e F3, rispettivamente) per spostarsi tra trovare corrispondenze.
+
+![Ricerca nella finestra Espressioni di controllo](../debugger/media/ee-search-watch.png "ricerca nella finestra Espressioni di controllo")
+
+Per eseguire una ricerca più o meno approfonditi, usare il **ricerca più approfondita** elenco a discesa nella parte superiore del **Watch** finestra consente di selezionare quanti livelli di nidificazione per la ricerca in oggetti nidificati. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Aggiornare i valori di espressioni di controllo
 
@@ -280,6 +293,6 @@ Per osservare il `a` variabile,
 
 ## <a name="see-also"></a>Vedere anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
-- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)
+- [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Presentazione di debug](../debugger/debugger-feature-tour.md)
 - [Finestre del debugger](../debugger/debugger-windows.md)

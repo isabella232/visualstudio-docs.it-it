@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355802"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365914"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio
 
@@ -211,16 +211,19 @@ Scaricare la versione di remote tools corrispondente alla versione di Visual Stu
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017 e versioni successive, è possibile collegare nuovamente allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** MAIUSC+ALT+P
+    > In Visual Studio 2017 e versioni successive, è possibile collegare nuovamente allo stesso processo è associato in precedenza usando **Debug > riassocia a processo...** (Maiusc + Alt + P).
 
-3. Impostare il campo qualificatore  **\<nome del computer remoto >: porta**.
+3. Impostare il campo qualificatore  **\<nome del computer remoto >** , quindi premere **invio**.
+
+    Verificare che Visual Studio aggiunge la porta necessaria per il nome del computer, che viene visualizzata nel formato:  **\<nome del computer remoto >: porta**
 
     ::: moniker range=">=vs-2019"
-    **\<nome del computer remoto >: 4024** Visual Studio 2019
+    Visual Studio 2019, dovrebbe  **\<nome del computer remoto >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<nome del computer remoto >: 4022** in Visual Studio 2017
+    In Visual Studio 2017, dovrebbe  **\<nome del computer remoto >: 4022**
     ::: moniker-end
+    La porta è obbligatoria. Se non viene visualizzato il numero di porta, aggiungerlo manualmente.
 
 4. Fare clic su **Aggiorna**.
     Nella finestra **Processi disponibili** verranno visualizzati alcuni processi.
@@ -231,11 +234,20 @@ Scaricare la versione di remote tools corrispondente alla versione di Visual Stu
 
 5. Selezionare  **Mostra i processi di tutti gli utenti**.
 
-6. Digitare la prima lettera del nome di un processo per trovare rapidamente *dotnet.exe* (per ASP.NET Core).
+6. Digitare la prima lettera del nome del processo per trovare rapidamente la tua app.
 
-   Per un'app ASP.NET Core, il nome del processo precedente è stata *dnx.exe*.
+    * Selezionare **dotnet.exe** (per .NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      Se si dispone di più processi che illustra **dotnet.exe**, selezionare la **nome utente** colonna. In alcuni scenari, il **nome utente** colonna indica il nome del pool di app, ad esempio **IIS APPPOOL\DefaultAppPool**. Se viene visualizzato il Pool di App, un modo semplice per identificare il processo corretto consiste nel creare un nuovo nome Pool di App per l'istanza dell'app da sottoporre a debug e quindi è possibile trovarlo facilmente nel **nome utente** colonna.
+
+    * In alcuni scenari IIS, si potrebbe trovare il nome dell'app nell'elenco dei processi, come **MyASPApp.exe**. È possibile collegare invece al processo.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Scegliere **Connetti**.
 
@@ -246,7 +258,7 @@ Scaricare la versione di remote tools corrispondente alla versione di Visual Stu
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-### <a name="bkmk_openports"></a> Risoluzione dei problemi Aprire le porte necessarie in Windows Server
+### <a name="bkmk_openports"></a> Risoluzione dei problemi: Aprire le porte necessarie in Windows Server
 
 Nella maggior parte delle configurazioni, vengono aperte le porte richieste dall'installazione di ASP.NET e il debugger remoto. Tuttavia, se la risoluzione dei problemi di distribuzione e l'app è ospitata dietro un firewall, potrebbe essere necessario verificare che le porte appropriate siano aperte.
 

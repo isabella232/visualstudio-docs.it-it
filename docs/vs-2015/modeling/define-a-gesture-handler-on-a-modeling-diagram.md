@@ -1,12 +1,9 @@
 ---
 title: Definire un gestore movimenti in un diagramma di modellazione | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58966830"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-    **Risoluzione dei problemi**: se non viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+    **Risoluzione dei problemi**: Se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
   
    -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
@@ -256,7 +253,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 4. Trascinare un elemento da Esplora modelli UML nel diagramma. Dovrebbe essere chiamato il gestore di trascinamento.  
   
-   **Risoluzione dei problemi**: se il gestore movimenti non funziona, assicurarsi che:  
+   **Risoluzione dei problemi**: Se il gestore movimenti non funziona, assicurarsi che:  
   
 -   Il progetto del gestore movimenti sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
   
@@ -320,7 +317,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
     ```  
   
-     È possibile trascinare elementi di molti tipi diversi in un diagramma, da parti diverse di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o dal desktop di Windows. Tipi di elemento diversi vengono codificati diversamente in `IDataObject`. Per estrarre gli elementi da questo oggetto, fare riferimento alla documentazione per il tipo appropriato di oggetto.  
+     È possibile trascinare elementi di molti tipi diversi in un diagramma, da parti diverse di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o dal desktop di Windows. Tipi di elemento diversi vengono codificati diversamente in `IDataObject`. Per estrarre gli elementi da questo oggetto, fare riferimento alla documentazione per il tipo appropriato di oggetto.  
   
      Se l'oggetto di origine è un elemento UML trascinato da Esplora modelli UML o da un altro diagramma UML, vedere [elementi di modello Get UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
@@ -382,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:  
   
-   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [versione]**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="DragExample"></a> Esempio  
  L'esempio seguente mostra come creare linee di vita in un diagramma di sequenza in base alle parti e alle porte di un componente, trascinate da un diagramma dei componenti.  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md)
-
-
-
