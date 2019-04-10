@@ -34,22 +34,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea096ce0880ff3126e7aff98e037c75dc457997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719600"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366703"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
 ##  <a name="BKMK_Overview"></a> Impostare punti di interruzione nel codice sorgente
- È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Ad esempio, in quanto segue C# codice, è possibile impostare un punto di interruzione nella dichiarazione di variabile, il `for` ciclo o in qualsiasi codice all'interno di `for` ciclo. È possibile impostare un punto di interruzione, le dichiarazioni dello spazio dei nomi o una classe o nella firma del metodo.
+ È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Nel seguente codice c#, ad esempio, è possibile impostare un punto di interruzione nella dichiarazione di variabile, il `for` ciclo o in qualsiasi codice all'interno di `for` ciclo. È possibile impostare un punto di interruzione, le dichiarazioni dello spazio dei nomi o una classe o nella firma del metodo.
 
  Per impostare un punto di interruzione nel codice sorgente, fare clic nel margine di estrema sinistra accanto a una riga di codice. È anche possibile selezionare la riga e premere **F9**, selezionare **Debug** > **Attiva/Disattiva punto di interruzione**, o fare doppio clic e selezionare **puntodiinterruzione**  >  **Inserisci punto di interruzione**. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro.
 
-In C# code, punto di interruzione e le righe di esecuzione correnti vengono automaticamente evidenziate. Per codice C++, è possibile attivare l'evidenziazione di righe corrente e punto di interruzione selezionando **degli strumenti** (o **Debug**) > **opzioni**  >   **Debugging** >  **Evidenzia intera riga di origine per i punti di interruzione e l'istruzione corrente (solo C++)**.
+In C# code, punto di interruzione e le righe di esecuzione correnti vengono automaticamente evidenziate. Per C++ codice, è possibile attivare l'evidenziazione di righe corrente in punto di interruzione e selezionando **Tools** (o **Debug**) > **opzioni**  >  **Debugging** >  **Evidenzia intera riga di origine per i punti di interruzione e l'istruzione corrente (C++ solo)**.
 
  ![Impostare un punto di interruzione](../debugger/media/basicbreakpoint.png "base punto di interruzione")
 
@@ -59,7 +59,7 @@ In C# code, punto di interruzione e le righe di esecuzione correnti vengono auto
 
  ![Esecuzione punto di interruzione arrestata](../debugger/media/breakpointexecution.png "esecuzione punto di interruzione")
 
- Quando il debugger si arresta nel punto di interruzione, è possibile esaminare lo stato corrente dell'app, inclusi i valori delle variabili e lo stack di chiamate. Per altre informazioni sullo stack di chiamate, vedere [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+ Quando il debugger si arresta nel punto di interruzione, è possibile esaminare lo stato corrente dell'app, inclusi i valori delle variabili e lo stack di chiamate. Per altre informazioni sullo stack di chiamate, vedere [come: Utilizzare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 - Il punto di interruzione è un elemento toggle. È possibile selezionarlo, premere **F9**, oppure utilizzare **Debug** > **Attiva/Disattiva punto di interruzione** eliminare o reinserirla.
 
@@ -87,7 +87,7 @@ Il punto di interruzione dello stack di chiamate viene visualizzato nei **i punt
 
 Il debugger si interrompe all'istruzione.
 
-Per altre informazioni sullo stack di chiamate, vedere [Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+Per altre informazioni sullo stack di chiamate, vedere [come: Utilizzare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -113,11 +113,11 @@ Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, ve
 
    - Usare il nome completo di funzione.
 
-     Esempio: `Namespace1.ClassX.MethodA()`
+     Esempio:  `Namespace1.ClassX.MethodA()`
 
    - Aggiungere i tipi di parametro di una funzione in overload.
 
-     Esempio: `MethodA(int, string)`
+     Esempio:  `MethodA(int, string)`
 
    - Uso di '!' simbolo per specificare il modulo.
 
@@ -148,7 +148,7 @@ Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, ve
     ((my_class *) 0xcccccccc)->my_method
     ```
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Impostare punti di interruzione dei dati (solo C++ nativo)
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Impostare punti di interruzione dei dati (solo C++ nativo)
 
  I punti di interruzione dei dati interrompono l'esecuzione quando un valore archiviato in delle modifiche indirizzo di memoria specificato. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta.
 
@@ -218,7 +218,7 @@ I punti di interruzione con set di condizioni vengono visualizzati con un **+** 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Espressione condizionale
 
-Quando si seleziona **espressione condizionale**, è possibile scegliere tra due condizioni: **vale** oppure **quando modificato**. Scegliere **vale** per interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure **quando modificato** per interrompere l'esecuzione quando viene modificato il valore dell'espressione.
+Quando si seleziona **espressione condizionale**, è possibile scegliere tra due condizioni: **Vale** oppure **quando modificato**. Scegliere **vale** per interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure **quando modificato** per interrompere l'esecuzione quando viene modificato il valore dell'espressione.
 
  Nell'esempio seguente viene raggiunto il punto di interruzione solo quando il valore di `testInt` viene **4**:
 
@@ -286,7 +286,7 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 1. Fare doppio clic su un punto di interruzione e scegliere **azioni**. O, nelle **impostazioni punto di interruzione** della finestra, passare il mouse sul punto di interruzione, selezionare la **impostazioni** icona e quindi selezionare **azioni**.
 
-1. Immettere un messaggio nel **registra un messaggio alla finestra di Output** campo. Il messaggio può includere stringhe di testo generico, i valori delle variabili o espressioni racchiuse tra parentesi graffe e gli identificatori di formato ([ C# ](../debugger/format-specifiers-in-csharp.md) e [C++](../debugger/format-specifiers-in-cpp.md)) per i valori.
+1. Immettere un messaggio nel **registra un messaggio alla finestra di Output** campo. Il messaggio può includere stringhe di testo generico, i valori delle variabili o espressioni racchiuse tra parentesi graffe e gli identificatori di formato ([c#](../debugger/format-specifiers-in-csharp.md) e [C++](../debugger/format-specifiers-in-cpp.md)) per i valori.
 
    È anche possibile usare le seguenti parole chiave speciali nel messaggio:
 

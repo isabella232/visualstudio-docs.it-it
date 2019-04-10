@@ -1,5 +1,5 @@
 ---
-title: 'CA3010: Esaminare il codice per vulnerabilità di tipo injection XAML'
+title: 'CA3010: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XAML injection'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018676"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365016"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Esaminare il codice per vulnerabilità di tipo injection XAML
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XAML injection
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018676"
 
 ## <a name="cause"></a>Causa
 
-Richiesta HTTP potenzialmente non attendibile di input raggiunge un <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> metodo Load.
+Richiesta HTTP potenzialmente non attendibile di input raggiunge un <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> metodo Load.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
