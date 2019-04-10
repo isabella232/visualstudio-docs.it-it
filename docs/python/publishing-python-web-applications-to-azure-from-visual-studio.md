@@ -3,20 +3,20 @@ title: Pubblicare un'app Python in Servizio app di Azure
 description: Opzioni per la pubblicazione di un'app Python in Servizio app di Azure, inclusi distribuzione GIT e contenitori per Linux, e per la distribuzione in IIS.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 1f6d202bf51a31273eb4571bc6ff8ca497ec9a68
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159192"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365472"
 ---
 # <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 

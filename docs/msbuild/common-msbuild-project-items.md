@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610346"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897686"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
@@ -46,9 +46,9 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nome metadati degli elementi|Description|
 |---------------|-----------------|
 |nome|Stringa facoltativa. Nome visualizzato del componente|
-|GUID|Stringa facoltativa. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Stringa facoltativa. La parte principale del numero di versione del componente. Ad esempio, "5" se il numero di versione completo è "5.46".|
-|VersionMinor|Stringa facoltativa. La parte secondaria del numero di versione del componente. Ad esempio, "46" se il numero di versione completo è "5.46."|
+|GUID|Stringa obbligatoria. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Stringa obbligatoria. La parte principale del numero di versione del componente. Ad esempio, "5" se il numero di versione completo è "5.46".|
+|VersionMinor|Stringa obbligatoria. La parte secondaria del numero di versione del componente. Ad esempio, "46" se il numero di versione completo è "5.46."|
 |LCID|Stringa facoltativa. LocaleID per il componente.|
 |WrapperTool|Stringa facoltativa. Il nome dello strumento wrapper usato per il componente, ad esempio, "tlbimp".|
 |Isolated|Valore booleano facoltativo. Specifica se il componente è un componente reg-free.|
@@ -76,7 +76,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |nome|Stringa facoltativa. Nome visualizzato del riferimento.|
 |Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
 |Pacchetto|Stringa facoltativa. Il percorso del file di progetto a cui viene fatto riferimento.|
-|ReferenceOutputAssembly|Valore booleano facoltativo. Se impostato su `false`, non include l'output del progetto a cui si fa riferimento come [riferimento](#Reference) del progetto, ma assicura che l'altro progetto venga compilato prima di questo. Il valore predefinito è `true`.|
+|ReferenceOutputAssembly|Valore booleano facoltativo. Se impostato su `false`, non include l'output del progetto a cui si fa riferimento come [riferimento](#reference) del progetto, ma assicura che l'altro progetto venga compilato prima di questo. Il valore predefinito è `true`.|
 
 ### <a name="compile"></a>Compile
  Rappresenta i file di origine per il compilatore.
