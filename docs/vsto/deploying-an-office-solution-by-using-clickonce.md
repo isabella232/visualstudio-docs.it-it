@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863929"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504432"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office usando ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è necessario considerare tramite Windows Installer (*file con estensione msi*) se la soluzione sarà eseguita da più di un utente nello stesso computer.
@@ -29,11 +29,11 @@ ms.locfileid: "54863929"
 
 - [Scegliere come si desidera concedere l'attendibilità alla soluzione](#Trust)
 
-- [Consentire agli utenti di installare la soluzione](#Helping)
+- [Aiutare gli utenti a installare la soluzione](#Helping)
 
 - [Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)](#Put)
 
-- [Inserire il documento di una soluzione in un server di cui è eseguito SharePoint (solo personalizzazioni a livello di documento)](#SharePoint)
+- [Inserire il documento di una soluzione in un server in cui è eseguito SharePoint (solo personalizzazioni a livello di documento)](#SharePoint)
 
 - [Creare un programma di installazione personalizzato](#Custom)
 
@@ -60,7 +60,7 @@ ms.locfileid: "54863929"
 
 4. Nel **posizione cartella di pubblicazione (server ftp o percorso file)** immettere il percorso della cartella in cui si desidera il **creazione progetti** per copiare i file della soluzione.
 
-    È possibile fornire uno dei tipi di percorso seguenti.
+    È possibile fornire uno dei seguenti tipi di percorso.
 
    -   Un percorso locale (ad esempio, *C:\FolderName\FolderName*).
 
@@ -91,8 +91,8 @@ ms.locfileid: "54863929"
 
     |Opzione|Descrizione|
     |------------|-----------------|
-    |**Scarica prerequisiti dal sito Web del fornitore del componente**|All'utente viene chiesto di scaricare e installare questi prerequisiti dal fornitore.|
-    |**Scarica prerequisiti dallo stesso percorso dell'applicazione**|Il software prerequisito viene installato insieme alla soluzione. Se si seleziona questa opzione, tutti i pacchetti di prerequisiti vengono copiati automaticamente da Visual Studio nel percorso di pubblicazione. Per il corretto funzionamento di questa opzione, i pacchetti di prerequisiti devono essere presenti nel computer di sviluppo.|
+    |**Scaricare i prerequisiti dal sito Web del fornitore del componente**|All'utente viene chiesto di scaricare e installare questi prerequisiti dal fornitore.|
+    |**Scaricare i prerequisiti dallo stesso percorso dell'applicazione**|Il software prerequisito viene installato insieme alla soluzione. Se si seleziona questa opzione, tutti i pacchetti di prerequisiti vengono copiati automaticamente da Visual Studio nel percorso di pubblicazione. Per il corretto funzionamento di questa opzione, i pacchetti di prerequisiti devono essere presenti nel computer di sviluppo.|
     |**Scarica prerequisiti dal seguente percorso**|Tutti i pacchetti di prerequisiti vengono copiati da Visual Studio nella posizione specificata e vengono installati insieme alla soluzione.|
 
      Visualizzare [finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).
@@ -139,7 +139,7 @@ ms.locfileid: "54863929"
  Se si distribuisce una personalizzazione a livello di documento e si vuole inserire il documento in una cartella nel computer dell'utente o rendere disponibile il documento in un sito di SharePoint, verificare che Office consideri attendibile il percorso del documento. Visualizzare [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Consentire agli utenti di installare la soluzione
- Gli utenti possono installare la soluzione eseguendo il programma di installazione, aprendo il manifesto di distribuzione oppure, nel caso di una personalizzazione a livello di documento, aprendo direttamente il documento. Come procedura consigliata, gli utenti devono installare la soluzione usando il programma di installazione. Gli altri due approcci non garantiscono che i prerequisiti software siano installati. Se gli utenti desiderano aprire il documento dal percorso di installazione, devono aggiungerlo all'elenco dei percorsi attendibili nel Centro protezione dell'applicazione di Office.
+ Gli utenti possono installare la soluzione eseguendo il programma di installazione, aprendo il manifesto di distribuzione o durante la personalizzazione a livello di documento, aprendo direttamente il documento. Come procedura consigliata, gli utenti devono installare la soluzione usando il programma di installazione. Gli altri due approcci non garantiscono che i prerequisiti software siano installati. Se gli utenti desiderano aprire il documento dal percorso di installazione, devono aggiungerlo all'elenco dei percorsi attendibili nel Centro protezione dell'applicazione di Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Apertura del documento di una personalizzazione a livello di documento
  Gli utenti possono aprire il documento di una personalizzazione a livello di documento direttamente dal percorso di installazione oppure copiando il documento nei propri computer locali e aprendo quindi la copia.
@@ -190,7 +190,7 @@ ms.locfileid: "54863929"
 ##  <a name="Put"></a> Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)
  È possibile copiare il documento della soluzione nel computer dell'utente finale per essi mediante la creazione di un'azione post-distribuzione. In questo modo, l'utente non dovrà copiare manualmente il documento dal percorso di installazione nei propri computer dopo l'installazione della soluzione. È possibile creare una classe che definisca l'azione post-distribuzione, compilare e pubblicare la soluzione, modificare il manifesto dell'applicazione e firmare nuovamente il manifesto dell'applicazione e la distribuzione.
 
- Le procedure seguenti presuppongono che sia il nome del progetto **ExcelWorkbook** e che si pubblica la soluzione per il **C:\publish** directory nel computer.
+ Le procedure seguenti presuppongono che sia il nome del progetto **ExcelWorkbook** e si pubblica la soluzione in una cartella creata denominata **C:\publish** nel computer.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Creare una classe che definisca l'azione post-distribuzione
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863929"
 
 ### <a name="modify-the-application-manifest"></a>Modificare il manifesto dell'applicazione
 
-1.  Aprire il **c:\publish** directory usando **Esplora File**.
+1.  Directory della soluzione, aprire **c:\publish**, usando **Esplora File**.
 
 2.  Aprire il **i file dell'applicazione** cartella e quindi aprire la cartella che corrisponde a più recente pubblicata versione della soluzione.
 
@@ -336,11 +336,11 @@ ms.locfileid: "54863929"
              Nel momento in cui gli utenti aprono il documento dal sito di SharePoint, il documento viene aperto e la personalizzazione viene installata. Gli utenti possono copiare il documento sul proprio desktop. L'esecuzione della personalizzazione continuerà perché le proprietà nel documento puntano al percorso di rete del documento.
 
 ##  <a name="Custom"></a> Creare un programma di installazione personalizzato
- È possibile creare un programma di installazione personalizzato per la soluzione Office, anziché usare il programma di installazione che viene creato automaticamente quando si pubblica la soluzione. Ad esempio, è possibile usare uno script di accesso per avviare l'installazione oppure usare un file batch per installare la soluzione senza alcuna interazione da parte dell'utente. Questi scenari offrono i risultati migliori se i prerequisiti sono già installati nei computer degli utenti finali.
+ È possibile creare un programma di installazione personalizzato per la soluzione Office, anziché usare il programma di installazione che viene creato automaticamente quando si pubblica la soluzione. Ad esempio, è possibile usare un segno nello script per avviare l'installazione oppure è possibile usare un file batch per installare la soluzione senza interazione dell'utente. Questi scenari offrono i risultati migliori se i prerequisiti sono già installati nei computer degli utenti finali.
 
  Come parte del processo di installazione personalizzata, chiamare lo strumento programma di installazione per le soluzioni Office (*VSTOInstaller.exe*), impostazione predefinita che viene installato nel percorso seguente:
 
- *shared\VSTO\10.0\VSTOInstaller.exe %CommonProgramFiles%\Microsoft*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Se lo strumento non è in tale percorso, è possibile usare la **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** chiave del Registro di sistema per individuare il percorso dello strumento.
 
@@ -360,7 +360,7 @@ ms.locfileid: "54863929"
 |----------------|----------------|
 |0|La soluzione è stata installata o disinstallata correttamente oppure è stata visualizzata la Guida di VSTOInstaller.|
 |-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più volte. Per altre informazioni, immettere "vstoinstaller /?" oppure vedere [creare un programma di installazione personalizzato per una soluzione ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Una o più opzioni della riga di comando non è valido. Per altre informazioni, immettere "vstoinstaller /?".|
+|-101|Una o più opzioni della riga di comando non sono valide. Per altre informazioni, immettere "vstoinstaller /?".|
 |-200|L'URI del manifesto di distribuzione non è valido. Per altre informazioni, immettere "vstoinstaller /?".|
 |-201|Non è stato possibile installare la soluzione perché il manifesto di distribuzione non è valido. Visualizzare [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|Non è stato possibile installare la soluzione perché Visual Studio Tools per la sezione Office del manifesto dell'applicazione non è valido. Visualizzare [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).|
@@ -376,7 +376,7 @@ ms.locfileid: "54863929"
  La prossima volta che la soluzione controlla per un aggiornamento, verrà trovare e caricare automaticamente la nuova versione.
 
 ##  <a name="Location"></a> Modificare il percorso di installazione di una soluzione
- È possibile aggiungere o modificare il percorso di installazione dopo la pubblicazione di una soluzione. È possibile che si desideri modificare il percorso di installazione per uno o più dei seguenti motivi:
+ È possibile aggiungere o modificare il percorso di installazione dopo la pubblicazione di una soluzione. È possibile che si desideri modificare il percorso di installazione per uno o più dei motivi seguenti:
 
 - Il percorso di installazione non era noto quando il programma di installazione è stato compilato.
 

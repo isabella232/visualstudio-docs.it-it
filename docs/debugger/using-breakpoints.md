@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366703"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504328"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
@@ -147,6 +147,28 @@ Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, ve
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Impostare punti di interruzione dei dati (.NET Core 3.0 o versione successiva)
+
+I punti di interruzione dei dati esecuzione si interrompe quando viene modificata la proprietà dell'oggetto specifico.
+
+**Per impostare un punto di interruzione dei dati**
+
+1. In un progetto .NET Core, avviare il debug e attendere finché non viene raggiunto un punto di interruzione.
+
+2. Nel il **Auto**, **Watch**, o **variabili locali** finestra, fare doppio clic su una proprietà e selezionare **interrompere l'esecuzione quando viene modificato valore** nel menu di scelta rapida.
+
+    ![Interruzione dei dati gestiti](../debugger/media/managed-data-breakpoint.png "gestiti interruzione dei dati")
+
+I punti di interruzione dei dati in .NET Core non funzionerà per:
+
+- Proprietà che non è espandibile nella descrizione comandi, variabili locali, Auto, variabili o finestra Espressioni di controllo
+- Variabili statiche
+- Classi con l'attributo DebuggerTypeProxy
+- Campi all'interno di struct 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Impostare punti di interruzione dei dati (solo C++ nativo)
 
@@ -156,7 +178,7 @@ Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, ve
 
 1.  In un progetto C++, avviare il debug e attendere finché non viene raggiunto un punto di interruzione. Nel **Debug** menu, scegliere **nuovo punto di interruzione** > **interruzione dei dati**
 
-    È anche possibile selezionare **New** > **interruzione dei dati** nel **i punti di interruzione** finestra.
+    È anche possibile selezionare **New** > **interruzione dei dati** nel **i punti di interruzione** finestra oppure fare doppio clic su un elemento nel **Auto**, **Watch**, o **variabili locali** finestra e selezionare **interrompere l'esecuzione quando viene modificato valore**nel menu di scelta rapida.
 
 2.  Nella casella **Indirizzo** digitare un indirizzo di memoria o un'espressione che restituisca un indirizzo di memoria. Ad esempio, digitare `&avar` per eseguire l'interruzione quando viene modificato il contenuto della variabile `avar` .
 
