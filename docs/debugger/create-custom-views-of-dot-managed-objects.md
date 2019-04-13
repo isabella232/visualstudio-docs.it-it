@@ -23,33 +23,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597421"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537478"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Creare viste personalizzate di oggetti (C#, Visual Basic, C++)
 È possibile personalizzare la modalità di visualizzazione dei tipi di dati nelle finestre delle variabili del debugger in Visual Studio.
 
 ## <a name="native-code"></a>Codice nativo
 
-Per codice C++, è possibile aggiungere espansioni di tipo di dati personalizzati usando il framework Natvis, come descritto in [creare viste personalizzate di oggetti nativi nel debugger](/visualstudio/debugger/create-custom-views-of-native-objects). Per C + + c++ /CLI codice dell'interfaccia della riga, è anche possibile usare gli attributi, descritti di seguito in questo articolo.
+Per C++ codice, è possibile aggiungere espansioni di tipo di dati personalizzati usando il framework Natvis, come descritto in [creare viste personalizzate di C++ gli oggetti nel debugger](/visualstudio/debugger/create-custom-views-of-native-objects). Per C++/codice dell'interfaccia della riga, è anche possibile usare gli attributi, descritti di seguito in questo articolo.
 
 ## <a name="attributes"></a>Attributi
 
-In C#, Visual Basic e C++ (C + + / solo il codice dell'interfaccia della riga), è possibile aggiungere espansioni per dati personalizzati utilizzando <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, e <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+In C#, Visual Basic, e C++ (C++solo codice /CLI), è possibile aggiungere espansioni per dati personalizzati tramite <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, e <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
 Nel codice [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] Visual Basic non supporta l'attributo DebuggerBrowsable. Questa limitazione è stata rimossa nelle versioni più recenti di .NET Framework.
 
 ## <a name="visualizers"></a>Visualizzatori
 
-È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [procedura: scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data).
+È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Uso dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Indicare al debugger gli elementi da visualizzare utilizzando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Indicare al debugger il tipo per cui viene illustrato l'utilizzo dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
 - [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

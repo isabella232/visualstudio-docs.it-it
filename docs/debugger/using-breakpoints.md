@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504328"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537598"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
@@ -113,11 +113,11 @@ Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, ve
 
    - Usare il nome completo di funzione.
 
-     Esempio:  `Namespace1.ClassX.MethodA()`
+     Esempio: `Namespace1.ClassX.MethodA()`
 
    - Aggiungere i tipi di parametro di una funzione in overload.
 
-     Esempio:  `MethodA(int, string)`
+     Esempio: `MethodA(int, string)`
 
    - Uso di '!' simbolo per specificare il modulo.
 
@@ -176,13 +176,13 @@ I punti di interruzione dei dati in .NET Core non funzionerà per:
 
 **Per impostare un punto di interruzione dei dati:**
 
-1.  In un progetto C++, avviare il debug e attendere finché non viene raggiunto un punto di interruzione. Nel **Debug** menu, scegliere **nuovo punto di interruzione** > **interruzione dei dati**
+1. In un progetto C++, avviare il debug e attendere finché non viene raggiunto un punto di interruzione. Nel **Debug** menu, scegliere **nuovo punto di interruzione** > **interruzione dei dati**
 
     È anche possibile selezionare **New** > **interruzione dei dati** nel **i punti di interruzione** finestra oppure fare doppio clic su un elemento nel **Auto**, **Watch**, o **variabili locali** finestra e selezionare **interrompere l'esecuzione quando viene modificato valore**nel menu di scelta rapida.
 
-2.  Nella casella **Indirizzo** digitare un indirizzo di memoria o un'espressione che restituisca un indirizzo di memoria. Ad esempio, digitare `&avar` per eseguire l'interruzione quando viene modificato il contenuto della variabile `avar` .
+2. Nella casella **Indirizzo** digitare un indirizzo di memoria o un'espressione che restituisca un indirizzo di memoria. Ad esempio, digitare `&avar` per eseguire l'interruzione quando viene modificato il contenuto della variabile `avar` .
 
-3.  Nell'elenco a discesa **Conteggio byte** selezionare il numero di byte che si desidera controllare tramite il debugger. Ad esempio, se si seleziona **4**, il debugger controllerà i quattro byte a partire da `&avar` e si interromperà se viene modificato il valore di uno di questi byte.
+3. Nell'elenco a discesa **Conteggio byte** selezionare il numero di byte che si desidera controllare tramite il debugger. Ad esempio, se si seleziona **4**, il debugger controllerà i quattro byte a partire da `&avar` e si interromperà se viene modificato il valore di uno di questi byte.
 
 Punti di interruzione non funzionano nelle condizioni seguenti:
 -   Un processo di cui non viene eseguito il debug scrive nella posizione di memoria.

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710487"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537491"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Creare viste personalizzate dei dati nel debugger di Visual Studio (C#, Visual Basic, C++)
 
@@ -32,7 +32,7 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger fornisce m
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Creare visualizzazioni personalizzate dei dati nelle finestre delle variabili e i suggerimenti dati
 
- Molte del [finestre del debugger](../debugger/debugger-windows.md), ad esempio il **Auto** e **Watch** windows, consentono di controllare le variabili. È possibile personalizzare i tipi come nativi, gli oggetti gestiti e i tipi personalizzati vengono visualizzati nelle finestre delle variabili del debugger e in [suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Per altre informazioni, vedere [creare viste personalizzate di oggetti nativi](../debugger/create-custom-views-of-native-objects.md) e [creare viste personalizzate di oggetti](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Molte del [finestre del debugger](../debugger/debugger-windows.md), ad esempio il **Auto** e **Watch** windows, consentono di controllare le variabili. È possibile personalizzare la modalità C++ tipi di oggetti gestiti e i tipi personalizzati vengono visualizzati nelle finestre delle variabili del debugger e in [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Per altre informazioni, vedere [creare viste personalizzate di C++ oggetti](../debugger/create-custom-views-of-native-objects.md) e [creare viste personalizzate di oggetti](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Creare visualizzatori personalizzati
 

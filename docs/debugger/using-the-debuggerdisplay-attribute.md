@@ -1,5 +1,5 @@
 ---
-title: Uso dell'attributo DebuggerDisplay | Microsoft Docs
+title: Visualizzare le informazioni personalizzate utilizzando DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680188"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537637"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Uso dell'attributo DebuggerDisplay (C#, Visual Basic, F#, C + + / CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger gli elementi da visualizzare utilizzando l'attributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.
 
 L'attributo `DebuggerDisplay` presenta un solo argomento, costituito da una stringa da visualizzare nella colonna del valore per le istanze del tipo. Questa stringa può contenere parentesi graffe (`{` e `}`). Il testo racchiuso tra due parentesi graffe viene valutato come un campo, una proprietà o un metodo.
@@ -32,7 +32,7 @@ La valutazione da parte del debugger di questa chiamata implicita a `ToString()`
 > Se la casella di controllo **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili** è selezionata nella finestra di dialogo **Strumenti / Opzioni / Debug** , l'attributo `DebuggerDisplay` viene ignorato.
 
 > [!NOTE]
-> Per il codice nativo, questo attributo è supportato solo in c++ /CLI codice dell'interfaccia della riga.
+> Per il codice nativo, questo attributo è supportato solo in C++codice /CLI.
 
 Nella tabella riportata di seguito vengono visualizzati alcuni utilizzi possibili dell'attributo `DebuggerDisplay` e alcuni output di esempio.
 
@@ -97,7 +97,7 @@ Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`
 |**Name**|**Valore**|**Type**|
 |--------------|---------------|--------------|
 |Chiave|"three"|oggetto {string}|
-|Valore|3|oggetto {int}|
+|Value|3|oggetto {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
