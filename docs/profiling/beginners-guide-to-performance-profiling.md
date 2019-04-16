@@ -2,7 +2,7 @@
 title: Misurare l'utilizzo della CPU nelle app
 description: Analizzare i problemi relativi alle prestazioni della CPU nell'applicazione con gli strumenti di diagnostica integrati nel debugger.
 ms.custom: seodec18
-ms.date: 02/27/2017
+ms.date: 04/03/2019
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf5fb798bde008da1be3bc562ca0974d2ed916e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634305"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232671"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare la scheda **Utilizzo CPU** della finestra Strumenti di diagnostica per ottenere i dati relativi alle prestazioni per l'applicazione. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
@@ -43,52 +43,52 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 
-1.  Aprire il progetto per cui si vuole eseguire il debug in Visual Studio e impostare un punto di interruzione nell'applicazione in corrispondenza del punto in cui si vuole esaminare l'utilizzo della CPU.
+1. Aprire il progetto per cui si vuole eseguire il debug in Visual Studio e impostare un punto di interruzione nell'applicazione in corrispondenza del punto in cui si vuole esaminare l'utilizzo della CPU.
 
-2.  Impostare un secondo punto di interruzione alla fine della funzione o dell'area di codice da analizzare.
+2. Impostare un secondo punto di interruzione alla fine della funzione o dell'area di codice da analizzare.
 
     > [!TIP]
     > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3.  La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+3. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-4.  È possibile scegliere se visualizzare **Utilizzo CPU**, [Utilizzo memoria](../profiling/Memory-Usage.md) o entrambi usando l'impostazione **Seleziona strumenti** della barra degli strumenti. Se si usa Visual Studio Enterprise, è anche possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.
+4. È possibile scegliere se visualizzare **Utilizzo CPU**, [Utilizzo memoria](../profiling/Memory-Usage.md) o entrambi usando l'impostazione **Seleziona strumenti** della barra degli strumenti. Se si usa Visual Studio Enterprise, è anche possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.
 
-     ![Mostra strumenti di diagnostica](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Mostra strumenti di diagnostica](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      In questa sede ci si occupa principalmente dell'utilizzo della CPU, quindi verificare che l'opzione **Utilizzo CPU** è abilitata (è abilitata per impostazione predefinita).
 
-5.  Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+5. Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
-     Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica.
+     Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica. Se è necessario aprire la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-     ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
      Per altre informazioni sugli eventi, vedere l'articolo relativo a come [eseguire ricerche e applicare filtri nella scheda Eventi della finestra Strumenti di diagnostica](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
-6.  Eseguire lo scenario in cui viene raggiunto il primo punto di interruzione.
+6. Eseguire lo scenario in cui viene raggiunto il primo punto di interruzione.
 
-7.  Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU e quindi aprire la scheda **Utilizzo CPU**.
+7. Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU e quindi aprire la scheda **Utilizzo CPU**.
 
-     ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
      Quando si sceglie **Registra profilo CPU** Visual Studio avvia la registrazione delle funzioni e del tempo necessario per eseguirle. È possibile visualizzare i dati raccolti solo quando l'applicazione viene interrotta in un punto di interruzione.
 
-8.  Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
+8. Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
 
      Ora si hanno a disposizione i dati relativi alle prestazioni per l'applicazione, precisamente per l'area di codice compresa tra i due punti di interruzione.
 
-9.  Selezionare l'area da analizzare nella sequenza temporale della CPU (deve essere un'area che indica dati di profilatura).
-
-     ![Strumenti di diagnostica Selezione di un segmento di tempo](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
-
      Il profiler inizia a preparare i dati di thread. Attendere il completamento.
 
-     ![Strumenti di diagnostica - Preparazione thread](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Strumenti di diagnostica - Preparazione thread](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
      Lo strumento Utilizzo CPU consente di visualizzare il report nella scheda **Utilizzo CPU**.
 
-     ![Strumenti di diagnostica - Scheda Utilizzo CPU](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Strumenti di diagnostica - Scheda Utilizzo CPU](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
+
+9. Se si vuole selezionare un'area di codice più specifica da analizzare, selezionare un'area nella sequenza temporale della CPU (deve essere un'area con dati di profilatura).
+
+     ![Strumenti di diagnostica Selezione di un segmento di tempo](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
@@ -98,7 +98,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
 1. Nell'elenco delle funzioni esaminare le funzioni che eseguono il maggior numero di operazioni.
 
-    ![Strumenti di diagnostica Elenco funzioni di Utilizzo CPU](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Strumenti di diagnostica Elenco funzioni di Utilizzo CPU](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Le funzioni sono elencate in ordine a partire da quelle che svolgono la maggior parte del lavoro (non sono in ordine di chiamata). Ciò consente di identificare rapidamente le funzioni in esecuzione da più tempo.
@@ -107,36 +107,47 @@ In questa esercitazione si eseguono le attività seguenti:
 
     Quando si fa doppio clic su una funzione viene aperta la visualizzazione **Chiamante/Chiamato** nel riquadro a sinistra.
 
-    ![Strumenti di diagnostica Visualizzazione Chiamante Chiamato](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Strumenti di diagnostica Visualizzazione Chiamante Chiamato](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
-    In questa visualizzazione la funzione selezionata viene visualizzata nell'intestazione e nella casella **Funzione corrente** (GetNumber, in questo esempio). La funzione che ha chiamato la funzione corrente viene visualizzata a sinistra, sotto **Funzioni chiamanti**, e tutte le funzioni chiamate dalla funzione corrente sono riportate nella casella **Funzioni chiamate** sulla destra. Selezionare una delle due caselle per modificare la funzione corrente.
+    In questa visualizzazione la funzione selezionata viene visualizzata nell'intestazione e nella casella **Funzione corrente** (GetNumber, in questo esempio). La funzione che ha chiamato la funzione corrente viene visualizzata a sinistra, in **Funzioni chiamanti**, e tutte le funzioni chiamate dalla funzione corrente sono riportate nella casella **Funzioni chiamate** sulla destra. Selezionare una delle due caselle per modificare la funzione corrente.
 
     Questa visualizzazione indica il tempo totale (ms) e la percentuale del tempo complessivo di esecuzione dell'applicazione dedicato al completamento della funzione.
-    **Corpo funzione** indica anche la quantità totale di tempo (e la percentuale di tempo) impiegata nel corpo della funzione, escluso il tempo dedicato alle funzioni chiamanti e chiamate. In questo esempio 3713 su 3729 ms sono stati usati nel corpo della funzione e i 16 ms rimanenti nel codice esterno chiamato dalla funzione.
+    **Corpo funzione** indica anche la quantità totale di tempo (e la percentuale di tempo) impiegata nel corpo della funzione, escluso il tempo dedicato alle funzioni chiamanti e chiamate. In questo esempio 2367 su 2389 ms sono stati usati nel corpo della funzione e i 22 ms rimanenti nel codice esterno chiamato dalla funzione.
 
     > [!TIP]
     > Valori elevati in **Corpo funzione** possono indicare un collo di bottiglia delle prestazioni all'interno della funzione stessa.
 
-3. Per una visualizzazione di livello superiore in cui appaia l'ordine in cui le funzioni vengono chiamate, selezionare **Albero delle chiamate** dall'elenco a discesa nella parte superiore del riquadro.
+3. Per una visualizzazione più generale che mostra l'ordine di chiamata delle funzioni, selezionare **Albero delle chiamate** nell'elenco a discesa nella parte superiore del riquadro.
 
     Ogni area numerata nella figura si riferisce a un passaggio della procedura.
 
-    ![Strumenti di diagnostica Albero delle chiamate](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ::: moniker range=">=vs-2019"
+    ![Strumenti di diagnostica Albero delle chiamate](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![Strumenti di diagnostica Albero delle chiamate](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ::: moniker-end
 
-|||
-|-|-|
-|![Passaggio 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Il nodo di livello principale nell'albero delle chiamate di Utilizzo CPU è uno pseudo-nodo|
-|![Passaggio 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Nella maggior parte delle app, quando l'opzione [Mostra codice esterno](#view-external-code) è disabilitata, il nodo di secondo livello è un nodo **[Codice esterno]** contenente il codice di sistema e di framework che avvia e arresta l'app, disegna l'interfaccia utente, controlla la pianificazione dei thread e fornisce altri servizi di basso livello all'app.|
-|![Passaggio 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|
-|![Passaggio 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
+    |||
+    |-|-|
+    |![Passaggio 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Il nodo di livello principale nell'albero delle chiamate di Utilizzo CPU è uno pseudo-nodo|
+    |![Passaggio 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Nella maggior parte delle app, quando l'opzione [Mostra codice esterno](#view-external-code) è disabilitata, il nodo di secondo livello è un nodo **[Codice esterno]** contenente il codice di sistema e di framework che avvia e arresta l'app, disegna l'interfaccia utente, controlla la pianificazione dei thread e fornisce altri servizi di basso livello all'app.|
+    |![Passaggio 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|
+    |![Passaggio 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
 
-Di seguito sono riportate altre informazioni sui valori di colonna:
+    Di seguito sono riportate altre informazioni sui valori di colonna:
 
-- **CPU totale** indica la quantità di lavoro svolta dalla funzione e dalle funzioni chiamate dalla funzione. Valori elevati di CPU totale indicano le funzioni più dispendiose in generale.
+    - **CPU totale** indica la quantità di lavoro svolta dalla funzione e dalle funzioni chiamate dalla funzione. Valori elevati di CPU totale indicano le funzioni più dispendiose in generale.
 
-- **CPU auto** indica la quantità di operazioni eseguite dal codice nel corpo della funzione, escluse quelle eseguite dalle funzioni chiamate dalla funzione. Valori elevati di **CPU auto** possono indicare un collo di bottiglia delle prestazioni all'interno della funzione stessa.
+    - **CPU auto** indica la quantità di operazioni eseguite dal codice nel corpo della funzione, escluse quelle eseguite dalle funzioni chiamate dalla funzione. Valori elevati di **CPU auto** possono indicare un collo di bottiglia delle prestazioni all'interno della funzione stessa.
 
-- **Moduli** Nome del modulo contenente la funzione o numero dei moduli contenenti le funzioni in un nodo [Codice esterno].
+    - **Moduli** Nome del modulo contenente la funzione o numero dei moduli contenenti le funzioni in un nodo [Codice esterno].
+
+    ::: moniker range=">=vs-2019"
+    Per visualizzare le chiamate di funzioni che usano la percentuale massima della CPU nella visualizzazione dell'albero delle chiamate, fare clic su **Espandi percorso critico**.
+
+    ![Percorso critico degli strumenti di diagnostica](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ::: moniker-end
 
 ## <a name="view-external-code"></a>Visualizzare codice esterno
 
@@ -144,7 +155,7 @@ Il codice esterno rappresenta funzioni nei componenti del sistema e del framewor
 
 Per visualizzare i percorsi delle chiamate del codice esterno, scegliere **Mostra codice esterno** dall'elenco **Visualizzazione filtro** e quindi scegliere **Applica**.
 
-![Scegliere Visualizzazione filtro, quindi Mostra codice esterno](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")
+![Scegliere Visualizzazione filtro, quindi Mostra codice esterno](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
 Tieni presente che numerose catene di chiamate del codice esterno sono molto annidate, pertanto la larghezza della colonna Nome funzione può superare la larghezza di visualizzazione in quasi tutti i monitor, ad eccezione di quelli più grandi. Quando ciò si verifica, i nomi delle funzioni sono visualizzati come **[…]**.
 

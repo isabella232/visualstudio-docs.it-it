@@ -3,18 +3,18 @@ title: Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dat
 description: Questo carico di lavoro di Visual Studio riunisce Python, F# e le rispettive distribuzioni di runtime, tra cui Anaconda. Visual Studio 2017 include anche R.
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324926"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366328"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
@@ -98,9 +98,9 @@ Per ulteriori informazioni:
 
 ::: moniker range="vs-2017"
 - [Usare SQL Server ed R](../rtvs/integrating-sql-server-with-r.md)
-- [In-database Advanced Analytics with R in SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/) (Analisi avanzata all'interno del database con R in SQL Server 2016)
+- [In-database Advanced Analytics with R in SQL Server 2016 (blog) (Analisi avanzata all'interno del database con R in SQL Server 2016)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 ::: moniker-end
-- [Python in SQL Server 2017: enhanced in-database machine learning (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/) (Python in SQL Server 2017: funzionalità avanzate di Machine Learning all'interno del database)
+- [Python in SQL Server 2017: enhanced in-database machine learning (blog) (Python in SQL Server 2017: funzionalità avanzate di Machine Learning all'interno del database)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
 ## <a name="additional-services-and-sdks"></a>Servizi aggiuntivi e SDK
 

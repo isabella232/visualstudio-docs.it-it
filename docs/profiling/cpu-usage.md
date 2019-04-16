@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640792"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366757"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
@@ -56,6 +56,10 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 
 Il report di diagnostica viene ordinato per **CPU totale**, dal valore maggiore al minore. Per modificare l'ordinamento o la colonna di ordinamento, selezionare le intestazioni di colonna. Usare l'elenco a discesa **Filtro** per selezionare o deselezionare i thread da visualizzare e usare la casella **Ricerca** per cercare un thread o un nodo specifico.
 
+::: moniker range=">=vs-2019"
+A partire da Visual Studio 2019, è possibile scegliere i pulsanti **Espandi percorso critico** e **Mostra percorso critico** per visualizzare le chiamate di funzione che usano la percentuale massima della CPU nella visualizzazione dell'albero delle chiamate.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Colonne di dati Utilizzo CPU
 
 |||
@@ -70,7 +74,12 @@ Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. 
 
 ####  <a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate
 
- ![Struttura dell'albero delle chiamate](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struttura dell'albero delle chiamate")
+::: moniker range=">=vs-2019"
+![Struttura dell'albero delle chiamate](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Struttura dell'albero delle chiamate")
+::: moniker-end
+::: moniker range="vs-2017"
+![Struttura dell'albero delle chiamate](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struttura dell'albero delle chiamate")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. 
 
 ####  <a name="BKMK_External_Code"></a> Codice esterno
 
- Le funzioni di sistema e framework eseguite dal codice sono dette *codice esterno*. Le funzioni codice esterno avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e offre altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno non risulta interessante, pertanto l'albero delle chiamate di Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]**.
+Le funzioni di sistema e framework eseguite dal codice sono dette *codice esterno*. Le funzioni codice esterno avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e offre altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno non risulta interessante, pertanto l'albero delle chiamate di Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]**.
 
- Per visualizzare i percorsi delle chiamate di codice esterno, nella pagina del report di diagnostica principale (riquadro destro) selezionare **Mostra codice esterno** nell'elenco a discesa **Filtro** e quindi selezionare **Applica**. La visualizzazione **Albero delle chiamate** della pagina **Utilizzo CPU** espande le chiamate al codice esterno. L'elenco a discesa **Filtro** è disponibile nella pagina di diagnostica principale, non nelle visualizzazioni dettagliate.
+Per visualizzare i percorsi delle chiamate di codice esterno, nella pagina del report di diagnostica principale (riquadro destro) selezionare **Mostra codice esterno** nell'elenco a discesa **Filtro** e quindi selezionare **Applica**. La visualizzazione **Albero delle chiamate** della pagina **Utilizzo CPU** espande le chiamate al codice esterno. L'elenco a discesa **Filtro** è disponibile nella pagina di diagnostica principale, non nelle visualizzazioni dettagliate.
 
- ![Mostra codice esterno](../profiling/media/cpu_use_wt_filterview.png "Mostra codice esterno")
+![Mostra codice esterno](../profiling/media/cpu_use_wt_filterview.png "Mostra codice esterno")
 
- Numerose catene di chiamate del codice esterno sono annidate in profondità, pertanto la larghezza della catena può superare la larghezza di visualizzazione della colonna **Nome funzione**. In questo caso i nomi delle funzioni vengono visualizzati come **...**.
+Numerose catene di chiamate del codice esterno sono annidate in profondità, pertanto la larghezza della catena può superare la larghezza di visualizzazione della colonna **Nome funzione**. In questo caso i nomi delle funzioni vengono visualizzati come **...**.
 
- ![Codice esterno annidato nell'albero delle chiamate](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Codice esterno annidato nell'albero delle chiamate")
+![Codice esterno annidato nell'albero delle chiamate](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Codice esterno annidato nell'albero delle chiamate")
 
- Per trovare il nome di una funzione, usare la casella di ricerca. Passare il mouse sopra la riga selezionata oppure usare la barra di scorrimento orizzontale per visualizzare i dati.
+Per trovare il nome di una funzione, usare la casella di ricerca. Passare il mouse sopra la riga selezionata oppure usare la barra di scorrimento orizzontale per visualizzare i dati.
 
- ![Ricerca di codice esterno annidato](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Ricerca di codice esterno annidato")
+::: moniker range=">=vs-2019"
+![Ricerca di codice esterno annidato](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "Ricerca di codice esterno annidato")
+::: moniker-end
+::: moniker range="vs-2017"
+![Ricerca di codice esterno annidato](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Ricerca di codice esterno annidato")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU
 

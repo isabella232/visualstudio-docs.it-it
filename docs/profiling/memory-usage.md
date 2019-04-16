@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868986"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232775"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 
@@ -54,13 +54,13 @@ In questa esercitazione si eseguono le attività seguenti:
 
 4.  Scegliere **Utilizzo memoria** con l'impostazione **Seleziona strumenti** sulla barra degli strumenti.
 
-     ![Mostra strumenti di diagnostica](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Mostra strumenti di diagnostica](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  Fare clic su **Debug / Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
      Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica.
 
-     ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare gli snapshot in app native o in modalità mista, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando viene visualizzata la finestra **Strumenti di diagnostica**, scegliere la scheda **Utilizzo memoria** e quindi **Profilatura heap**.
@@ -150,7 +150,7 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
 - Scegliere il collegamento di modifica in una cella della tabella di riepilogo della scheda **Utilizzo memoria** nella finestra **Strumenti di diagnostica** .
 
-   ![Scegliere un report delle modifiche &#40;dif&#41;f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Scegliere un report delle modifiche &#40;diff&#41;](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Scegliere uno snapshot dall'elenco **Confronta con** di un report gestito o nativo.
 
@@ -158,13 +158,13 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
 Il report di modifica aggiunge colonne (contrassegnate con **(Diff)**) al report di base che mostra la differenza tra il valore di snapshot di base e lo snapshot di confronto. Ecco un esempio di come potrebbe apparire un report delle differenze di visualizzazione del tipo nativo:
 
-![Visualizzazione differenze dei tipi nativi](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Visualizzazione delle differenze dei tipi nativi](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Blog e video
 
 [Analizzare CPU e memoria in fase di debug](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/) (Blog di Visual C++: Profilatura della memoria in Visual C++ 2015)
+[Visual C++ Blog: Memory Profiling in Visual C++ 2015 (Blog di Visual C++: Profilatura della memoria in Visual C++ 2015)](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

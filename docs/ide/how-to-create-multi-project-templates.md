@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416253"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232629"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
@@ -75,7 +75,11 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 2. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
 
    > [!TIP]
-   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio `$ext_safeprojectname$`.
+   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio `$ext_safeprojectname$`. Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
+   >
+   > ```xml
+   > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
+   > ```
 
 3. Nel menu **Progetto** scegliere**Esporta modello**.
 
@@ -173,6 +177,6 @@ Questo esempio usa l'elemento **SolutionFolder** per suddividere i progetti in d
 
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
-- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Informazioni di riferimento sullo schema dei modelli di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

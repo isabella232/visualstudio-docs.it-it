@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Passaggio 6 di un'esercitazione di base per l'uso di Python in Visual Studio, dedicato alle funzionalità di Visual Studio correlate a Git.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 386821867b1f7290fd195322a699eb161536a06b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919859"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365998"
 ---
 # <a name="step-6-work-with-git"></a>Passaggio 6: usare Git
 
-**Passaggio precedente: [installare pacchetti e gestire l'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Passaggio precedente: [Installare pacchetti e gestire l'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio offre l'integrazione diretta con repository Git locali e repository remoti di servizi quali GitHub e Azure Repos. L'integrazione include la clonazione di un repository, le modifiche di esecuzione del commit e la gestione dei rami.
 
@@ -74,4 +74,4 @@ Da qui è possibile esaminare i concetti e le procedure dettagliate, inclusi gli
 - [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md)
 - [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Profilatura](profiling-python-code-in-visual-studio.md)
-- [Testing unità](unit-testing-python-in-visual-studio.md)
+- [Unit test](unit-testing-python-in-visual-studio.md)

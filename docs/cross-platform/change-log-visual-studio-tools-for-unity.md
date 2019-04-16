@@ -1,7 +1,7 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803740"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232762"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="4005"></a>4.0.0.5
+ Data di rilascio: 27 febbraio 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione del rilevamento della versione di Visual Studio con il pacchetto di installazione.
+
+    -   Rimozione degli assembly inutilizzati dal pacchetto di installazione.
+
+## <a name="4004"></a>4.0.0.4
+ Data di rilascio: 13 febbraio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiunta del supporto per rilevare correttamente i processi Unity durante l'installazione e per consentire al motore di installazione di gestire meglio i blocchi di file.
+    
+    -   Aggiornamento dell'API ScriptableObject.
+
+## <a name="4003"></a>4.0.0.3
+ Data di rilascio: 31 gennaio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Generazione del progetto:**
+
+    -   I campi pubblici e serializzati non causeranno più avvisi. Sono stati soppressi automaticamente gli avvisi del compilatore CS0649 e IDE0051 nei progetti di Unity che creavano questi messaggi.
+
+-   **Integrazione:**
+
+    -   Miglioramento dell'esperienza utente per visualizzare le istanze dell'editor di Unity e del lettore (le finestre sono ora ridimensionabili, usano margini uniformi e visualizzano un controllo di ridimensionamento). Aggiunta di informazioni dall'ID del processo per gli editor di Unity.
+    
+    -   Aggiornamento dell'API MonoBehaviour.
+    
+-   **Valutazione:**
+
+    -   Aggiunta del supporto per le funzioni locali.
+    
+    -   Aggiunta del supporto per le pseudovariabili (identificatori di eccezione e oggetto).
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione di un problema con i temi e le immagini del moniker.
+
+    -   Solo scrittura nella finestra di output durante il debug, durante l'aggiornamento automatico del database degli asset.
+
+    -   Correzione dei ritardi dell'interfaccia utente con il filtraggio della procedura guidata MonoBehaviour.
+    
+-   **Debugger:**
+
+    -   Correzione per la lettura di attributi personalizzati per argomenti denominati quando si usano versioni meno recenti del protocollo.
+
+## <a name="4002"></a>4.0.0.2
+ Data di rilascio: 23 gennaio 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione della generazione di build sperimentale.
+
+    -   Correzione della gestione degli eventi del file di progetto per ridurre al minimo la pressione sul thread dell'interfaccia utente.
+
+    -   Correzione del provider di completamento con modifiche al testo in modalità batch.
+    
+-   **Debugger:**
+
+    -   Correzione della visualizzazione di messaggi di debug utente nel debugger collegato.
+
+## <a name="4001"></a>4.0.0.1
+ Data di rilascio: 10 dicembre 2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Valutazione:**
+
+    -   Sostituzione di NRefactory a favore di Roslyn per la valutazione delle espressioni.
+
+    -   Aggiunta del supporto per i puntatori: dereferenziazione, cast e aritmetica dei puntatori (sono richiesti sia Unity 2018.2+ che il nuovo runtime).
+
+    -   Aggiunta del supporto per la visualizzazione dei puntatori di matrici (come nel C++). In un'espressione per puntatori aggiungere una virgola e il numero di elementi che si vogliono visualizzare.
+
+    -   Aggiunta del supporto per i costrutti async.
+
+-   **Integrazione:**
+    
+    -   Aggiunta del supporto per l'aggiornamento automatico dei database degli asset Unity al momento del salvataggio. Questa funzionalità è abilitata per impostazione predefinita e verrà attivata una ricompilazione sul lato di Unity quando si salva uno script in Visual Studio. È possibile disabilitare questa funzionalità in Strumenti\Opzioni\Strumenti per Unity\Aggiorna il database degli asset di Unity durante il salvataggio.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione dell'attivazione del bridge quando Visual Studio non è selezionato come editor esterno preferito.
+
+    -   Correzione della valutazione delle espressioni con espressioni in formato non valido o non supportate.
+
+## <a name="4000"></a>4.0.0.0
+ Data di rilascio: 4 dicembre 2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiunta del supporto per Visual Studio 2019.
+
+    -   Adozione del servizio immagini e del catalogo di Visual Studio, con supporto completo per ridimensionamento HDPI, immagini perfette al pixel e temi.
+
+### <a name="deprecated-features"></a>Funzionalità deprecate
+
+-   **Integrazione:**
+
+    -   Da ora in poi, Visual Studio Tools per Unity supporterà solo Unity 5.2+ (con l'integrazione di Visual Studio predefinita di Unity).
+
+    -   Da ora in poi, Visual Studio Tools per Unity supporterà solo Visual Studio 2015+.
+
+    -   Rimozione del servizio di linguaggio, dell'elenco di errori e della barra di stato legacy.
+    
+    -   Rimozione della procedura guidata rapida Monobehaviour (a favore del supporto dedicato di IntelliSense).
 
 ## <a name="3903"></a>3.9.0.3
  Data di rilascio: 28 novembre 2018
@@ -52,7 +176,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
@@ -105,7 +229,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   (Backporting dalla versione 3.9.0.0) Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
@@ -114,7 +238,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
 
@@ -152,7 +276,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
 
@@ -190,7 +314,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Correzione dell'utilizzo delle impostazioni di eccezione.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Esclusione delle unità di compilazione di gestione pacchetti dalla generazione.
 
@@ -199,7 +323,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
 
@@ -218,7 +342,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Correzione del rilevamento della versione di Mono.
 
@@ -231,13 +355,13 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per .NET Standard.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Correzione del rilevamento del framework di destinazione Unity.
 
@@ -276,7 +400,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per il modello di riferimento MonoIsland 2018.1.
 
@@ -294,7 +418,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Correzione del calcolo del GUID di progetto per i progetti di lettore.
 
@@ -338,7 +462,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   È stata corretta la mancata visualizzazione del menu della Guida dell'API di Unity.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   È stata corretta la generazione di un progetto giocatore quando si lavora a un gioco UWP con il back-end IL2CPP/.NET 4.6.
 
@@ -353,7 +477,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Supporto aggiunto per le unità di compilazione assembly.json.
 
@@ -375,7 +499,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Il compilatore di Fixed ha generato degli elementi con variabili locali.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Riferimento di Fixed a Microsoft.CSharp per il livello API 4.6.
 
@@ -384,7 +508,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   È stata corretta la generazione della soluzione Visual Studio in Unity 5.5 e versioni precedenti.
 
@@ -411,7 +535,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Problemi di Fixed quando si aggiungono elementi all'espressione di controllo di Visual Studio.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Riferimenti ai nomi assembly di Fixed con i file mcs.rsp.
 
@@ -428,7 +552,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Editor di codice:**
+-   **Editor del codice:**
 
     -   Classificazione/completamento di Fixed con gli attributi personalizzati.
 
@@ -443,7 +567,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunto il supporto per il nuovo runtime di Unity, compatibile con .NET 4.6 / C# 6.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per il profilo .NET 4.6.
 
@@ -455,11 +579,11 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Editor di codice:**
+-   **Editor del codice:**
 
     -   Corretta la posizione del cursore dopo l'inserimento del metodo con completamento automatico.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Eliminata la post-elaborazione della versione dell'assembly.
 
@@ -482,7 +606,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Editor di codice:**
+-   **Editor del codice:**
 
     -   Corretto un arresto anomalo all'avvio di una dichiarazione di attributo senza completamento parentesi graffa.
 
@@ -492,7 +616,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunto un avviso in caso di punto di interruzione non associabile (quando non viene trovato alcun percorso di origine corrispondente).
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Corretta la generazione di file csproj con caratteri speciali/localizzati.
 
@@ -517,7 +641,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunto il supporto per la localizzazione.
 
--   **Editor di codice:**
+-   **Editor del codice:**
 
     -   Aggiunto IntelliSense C# per i messaggi di Unity.
 
@@ -537,7 +661,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunti messaggi di errore più efficaci quando un tipo è previsto o non trovato.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Rimosso il suffisso CSharp dai nomi di progetto.
 
@@ -565,7 +689,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Corretto il supporto per il debug dei frame di iteratore con il nuovo compilatore C#.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Corretto il bug che impediva la compilazione quando si usava Unity Web Player.
 

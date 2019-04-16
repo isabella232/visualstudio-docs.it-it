@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355565"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897712"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 
@@ -78,7 +78,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene codice p
 1. Creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
@@ -186,7 +186,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
 1. Correggere il codice aggiungendo la virgola (`,`) prima di `"data"`.
 
-    Il codice corretto dovrebbe assomigliare al seguente:`res.render('index', { title: 'Express', "data": getData() });`
+    La riga di codice corretta dovrebbe essere simile alla seguente: `res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>Imposta punto di interruzione
 
@@ -204,7 +204,12 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 1. Selezionare la destinazione di debug sulla barra degli strumenti Debug, ad esempio Microsoft Edge o Chrome.
 
+    ::: moniker range=">=vs-2019"
+    ![Selezione della destinazione di debug](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Selezione della destinazione di debug](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     Se Chrome è disponibile nel computer in uso ma non viene visualizzato come opzione, scegliere **Esplora con** dall'elenco a discesa delle destinazioni di debug e selezionare Chrome come destinazione browser predefinita (scegliere **Imposta come predefinito**).
 
@@ -251,4 +256,4 @@ L'esercitazione è stata completata.
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)
+> [Distribuire l'app nel servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

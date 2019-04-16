@@ -1,8 +1,8 @@
 ---
-title: Eseguire il debug di app in Visual Studio
+title: Presentazione del debugger
 description: Introduzione al debug di applicazioni con il debugger di Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428687"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366770"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -188,7 +188,7 @@ In questo esempio l'errore è stato restituito dalla chiamata di `DirectoryInfo`
 L'Helper eccezioni è un'ottima funzionalità che può facilitare il debug degli errori. La funzionalità consente di eseguire anche altre operazioni, ad esempio visualizzare i dettagli dell'errore e aggiungere un'espressione di controllo. Oppure, se necessario, è possibile modificare le condizioni che determinano la generazione di una particolare eccezione. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> L'Helper eccezioni ha sostituito Informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> L'Helper eccezioni ha sostituito Informazioni sulle eccezioni a partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Espandere il nodo **Impostazioni eccezioni** per vedere altre opzioni relative alla gestione di questo tipo di eccezione, ma non apportare alcuna modifica per questa presentazione.
 

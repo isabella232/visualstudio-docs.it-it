@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647271"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018194"
 ---
 # <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Ambiente \> Generale
 
@@ -43,7 +43,7 @@ Scegliere il tema colori **Blu**, **Chiaro**, **Scuro** oppure **Blu (massimo co
 
 È possibile installare temi predefiniti aggiuntivi e creare temi personalizzati scaricando e installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nella casella di riepilogo **Tema colori**.
 
-**Applica lo stile Tutte Iniziali Maiuscole alla barra dei menu**
+**applica lo stile Tutte Iniziali Maiuscole alla barra dei menu**
 
 I menu usano lo stile con tutte iniziali maiuscole per impostazione predefinita. Deselezionare questa opzione per usare invece lo stile con tutte lettere maiuscole.
 
@@ -53,11 +53,22 @@ I menu usano lo stile con tutte iniziali maiuscole per impostazione predefinita.
 
 Questa opzione abilita o disabilita la sensibilità ai valori DPI (punti per pollice) per monitor (o *PMA*). Quando la funzionalità PMA è abilitata, l'interfaccia utente di Visual Studio viene visualizzata in modo nitido con qualsiasi fattore di scala di visualizzazione e configurazione DPI, anche su più monitor. Per abilitare PMA, sono necessari Windows 10 April 2018 Update o versioni successive e .NET Framework 4.8 o versioni successive. (Questa opzione risulta inattiva se i due prerequisiti non sono soddisfatti.)
 
+> [!TIP]
+> - Windows 10 include l'impostazione **Consenti a Windows di provare a risolvere i problemi delle app in modo da non essere sfocate**. L'impostazione di questa opzione di Windows su **Attivato** ha effetti trascurabili se è selezionata l'opzione **Ottimizza il rendering per schermi con densità pixel diverse**.
+> - Windows 10 include anche uno **strumento di risoluzione dei problemi di compatibilità dei programmi**. Non è consigliabile provare a correggere l'aspetto di Visual Studio usando tale strumento di risoluzione dei problemi.
+
 ::: moniker-end
 
-**Regola automaticamente esperienza visiva in base alle prestazioni del client**
+**Regola automaticamente in base alle prestazioni del client**
 
 Specifica se Visual Studio imposta automaticamente la regolazione dell'esperienza visiva o la regolazione viene impostata in modo esplicito dall'utente. Questa regolazione può modificare la visualizzazione di colori da gradienti a colori uniformi o può limitare l'uso di animazioni nei menu o finestre a comparsa.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 include l'impostazione **Consenti a Windows di provare a risolvere i problemi delle app in modo da non essere sfocate**. L'impostazione di questa opzione su **Attivato** è consigliata se Visual Studio viene visualizzato sfocato sullo schermo. Prendere in considerazione l'aggiornamento a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), che include una nitidezza di visualizzazione notevolmente migliorata, essendo un'applicazione con sensibilità ai valori DPI per monitor.
+
+::: moniker-end
 
 **Abilita esperienza visiva dettagliata del client**
 
@@ -73,7 +84,7 @@ Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazi
 
 Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Immettere un numero compreso tra 1 e 24. Il valore predefinito è 10.
 
-**elementi negli elenchi degli ultimi file usati**
+**Elementi negli elenchi degli ultimi file usati**
 
 Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Immettere un numero compreso tra 1 e 24. Il valore predefinito è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
 
@@ -92,4 +103,4 @@ Consente di specificare che se si fa clic sul pulsante **Nascondi automaticament
 ## <a name="see-also"></a>Vedere anche
 
 - [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
-- [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Personalizzazione del layout della finestra](../../ide/customizing-window-layouts-in-visual-studio.md)

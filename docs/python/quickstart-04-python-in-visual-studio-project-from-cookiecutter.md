@@ -3,19 +3,19 @@ title: 'Guida introduttiva: creare un progetto Python tramite Cookiecutter'
 description: In questa guida introduttiva viene creato un progetto Visual Studio per Python tramite un modello Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aaa1c3d4164946c43dbd40264838d84e4fd2dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355131"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365297"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida introduttiva: Creare un progetto da un modello di Cookiecutter
 
@@ -44,7 +44,7 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Esercitazione: usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,20 +1,20 @@
 ---
 title: Vantaggio IDE di Visual Studio nella sottoscrizione di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789887"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018142"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Uso del vantaggio di Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Uso del vantaggio di Visual Studio 2019
 
 I sottoscrittori di Visual Studio hanno accesso all'ambiente IDE di Visual Studio.  La versione specifica dipende dal livello della sottoscrizione.  Il vantaggio viene visualizzato sotto forma di riquadro nella categoria Strumenti della pagina [Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del portale sottoscrittori.
 
@@ -29,7 +29,7 @@ Per scaricare l'ambiente IDE:
    > [!div class="mx-imgBorder"]
    > ![Riquadro Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Si verrà reindirizzati alla pagina Scarica i risultati di Visual Studio Enterprise, dove è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
+3. Verrà effettuato il reindirizzamento alla pagina Scarica i risultati di Visual Studio. Qui è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
 4. Nella scheda Dettagli della pagina Scarica i risultati:
    - Selezionare l'architettura (x86, x64)
    - Selezionare il linguaggio preferito.

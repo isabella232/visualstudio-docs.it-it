@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Procedura dettagliata sui concetti di base relativi a Flask nel contesto dei progetti di Visual Studio, che illustra, in particolare, le funzionalit√† offerte dai modelli Progetto Web Flask e Progetto Web Flask/Jade.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908920"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366445"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -229,7 +229,7 @@ Provare a usare entrambe le sintassi, Jinja e Jade, per vedere quale delle due √
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Il modello Progetto Web Flask di sondaggi](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+> [Il modello di progetto Web Flask di sondaggi](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
 ## <a name="go-deeper"></a>Approfondimento
 

@@ -11,18 +11,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151167"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365798"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -51,7 +51,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 | **Mostra la barra di notifica per la creazione di ambienti** | Attivato | *Solo Visual Studio 2019.* Quando questa opzione è impostata e l'utente apre un progetto che contiene un file *requirements.txt* oppure *environment.yml*, Visual Studio visualizza una barra informazioni con i suggerimenti per creare rispettivamente un ambiente virtuale o un ambiente conda, invece di usare l'ambiente globale predefinito. |
 | **Mostra la barra di notifica per l'installazione di pacchetti** | Attivato | *Solo Visual Studio 2019.* Quando questa opzione è impostata e l'utente apre un progetto che contiene un file *requirements.txt* (e non usa l'ambiente globale predefinito) Visual Studio confronta tali requisiti con i pacchetti installati nell'ambiente corrente. Se mancano pacchetti, Visual Studio visualizza un prompt per installare tali dipendenze. |
 | **Esegui sempre strumenti di gestione pacchetti come amministratore** | Disattivato | Eleva sempre i privilegi per `pip install` e operazioni di gestione pacchetti simili per tutti gli ambienti. Durante l'installazione dei pacchetti, Visual Studio richiede i privilegi di amministratore se l'ambiente si trova in un'area protetta del file system, come *c:\Programmi*. In questo prompt è possibile scegliere di elevare sempre i privilegi del comando di installazione solo per tale specifico ambiente. Vedere la [scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab). |
-| **Genera automaticamente il database di completamento al primo utilizzo** | Attivato | *Si applica a Visual Studio 2017 versione 15.5 e versioni successive quando si usa un database di IntelliSense.* Assegna la priorità del completamento del database per una libreria, quando si scrive un codice che ne fa uso. Per altre informazioni, vedere [Scheda Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
+| **Genera automaticamente il database di completamento al primo uso** | Attivato | *Si applica a Visual Studio 2017 versione 15.5 e versioni precedenti quando si usa un database di IntelliSense.* Assegna la priorità del completamento del database per una libreria, quando si scrive un codice che ne fa uso. Per altre informazioni, vedere [Scheda Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignora variabili PYTHONPATH a livello di sistema** | Attivato | PYTHONPATH viene ignorato per impostazione predefinita perché Visual Studio offre un mezzo più diretto per specificare i percorsi di ricerca negli ambienti e nei progetti. Per altri dettagli, vedere [Percorsi di ricerca](search-paths.md). |
 | **Aggiorna percorsi di ricerca quando vengono aggiunti file collegati** | Attivato | Quando questa opzione è impostata, l'aggiunta di un [file collegato](managing-python-projects-in-visual-studio.md#linked-files) a un progetto aggiorna [Percorsi di ricerca](search-paths.md) in modo che IntelliSense possa includere il contenuto della cartella del file collegato nel relativo database di completamento. Deselezionare questa opzione per escludere tale contenuto dal database di completamento. |
 | **Avvisa quando non è possibile trovare il modulo importato** | Attivato | Deselezionare questa opzione per non visualizzare gli avvisi quando si è certi che un modulo importato non è attualmente disponibile, ma non influisce comunque sul funzionamento del codice. |
@@ -120,7 +120,7 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 | --- | --- | --- |
 | **Script** | N/D | Specifica una cartella generale per gli script di avvio valida per le finestre **interattive** per tutti gli ambienti. Vedere [Script di avvio](python-environments-window-tab-reference.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
 | **Spostarsi nella cronologia con le frecce su/giù** | Attivato | Usare i tasti freccia per spostarsi nella cronologia nella finestra **interattiva**. Deselezionare questa impostazione per usare i tasti freccia per spostarsi invece all'interno dell'output della finestra **interattiva**. |
-| **Modalità di completamento** | **Valuta solo le espressioni senza chiamate di funzione** | Il processo di determinazione dei membri disponibili su un'espressione nella finestra **interattiva** può richiedere la valutazione dell'espressione incompleta corrente, con la conseguente chiamata ripetuta di effetti collaterali o funzioni. L'impostazione predefinita, **Valuta solo le espressioni senza chiamate di funzione** esclude le espressioni che sembrano chiamare una funzione, ma valuta altre espressioni. Ad esempio, valuta `a.b` ma non `a().b`.  **Non valutare mai le espressioni** evita tutti gli effetti collaterali e usa solo il motore di IntelliSense normale per i suggerimenti. **Valuta tutte le espressioni** valuta l'espressione completa per ottenere suggerimenti, indipendentemente dagli effetti collaterali. |
+| **Modalità di completamento** | **Valutare unicamente le espressioni senza chiamate di funzione** | Il processo di determinazione dei membri disponibili su un'espressione nella finestra **interattiva** può richiedere la valutazione dell'espressione incompleta corrente, con la conseguente chiamata ripetuta di effetti collaterali o funzioni. L'impostazione predefinita, **Valuta solo le espressioni senza chiamate di funzione** esclude le espressioni che sembrano chiamare una funzione, ma valuta altre espressioni. Ad esempio, valuta `a.b` ma non `a().b`.  **Non valutare mai le espressioni** evita tutti gli effetti collaterali e usa solo il motore di IntelliSense normale per i suggerimenti. **Valuta tutte le espressioni** valuta l'espressione completa per ottenere suggerimenti, indipendentemente dagli effetti collaterali. |
 | **Nascondi suggerimenti analisi statica** | Disattivato | Se è impostata questa opzione, vengono visualizzati solo i suggerimenti ottenuti dalla valutazione dell'espressione. Se è associata alla **modalità di completamento** **Non valutare mai le espressioni**, non viene visualizzato alcun completamento utile nella finestra **interattiva**. |
 
 ![Finestra di dialogo delle opzioni di Python, scheda Finestre interattive](media/options-interactive-windows.png)
@@ -148,8 +148,8 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 | Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Il completamento dei membri visualizza l'intersezione dei membri** | Disattivato | Se l'opzione è impostata, vengono visualizzati solo i completamenti supportati da tutti i tipi possibili. |
-| **Filtra elenco in base alla stringa di ricerca** | Attivato | Applica il filtro dei suggerimenti di completamento durante la digitazione (l'opzione è selezionata per impostazione predefinita). |
-| **Mostra automaticamente i completamenti per tutti gli identificatori** | Attivato | Deselezionare questa opzione per disabilitare i completamenti sia nell'editor che nelle finestre **interattive**. |
+| **Elenco di filtri in base alla stringa di ricerca** | Attivato | Applica il filtro dei suggerimenti di completamento durante la digitazione (l'opzione è selezionata per impostazione predefinita). |
+| **Visualizza automaticamente i completamenti per tutti gli identificatori** | Attivato | Deselezionare questa opzione per disabilitare i completamenti sia nell'editor che nelle finestre **interattive**. |
 
 ### <a name="selection-in-completion-list"></a>Selezione negli elenchi di completamento
 
@@ -157,14 +157,14 @@ Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di te
 | --- | --- | --- |
 | **Commit alla digitazione dei caratteri seguenti** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
 | **Immetti completamento corrente dei commit** | Attivato | Se questa opzione è impostata, il tasto **INVIO** sceglie e applica il completamento attualmente selezionato in modo analogo ai caratteri riportati sopra e poiché non esiste un carattere per il tasto **INVIO**, non è stato possibile includerlo direttamente nell'elenco. |
-| **Aggiungi nuova riga Invio alla fine della parola digitata** | Disattivato | Per impostazione predefinita, se si digita la parola che viene visualizzata nella finestra popup di completamento e si preme **INVIO**, si esegue il commit di tale completamento. Impostando questa opzione, si esegue il commit dei completamenti quando si finisce di digitare l'identificatore, di conseguenza, premendo il tasto **INVIO** viene inserita una nuova riga. |
+| **Aggiungi nuova riga quando si preme Invio alla fine della parola digitata** | Disattivato | Per impostazione predefinita, se si digita la parola che viene visualizzata nella finestra popup di completamento e si preme **INVIO**, si esegue il commit di tale completamento. Impostando questa opzione, si esegue il commit dei completamenti quando si finisce di digitare l'identificatore, di conseguenza, premendo il tasto **INVIO** viene inserita una nuova riga. |
 
 ### <a name="miscellaneous-options"></a>Altre opzioni
 
 | Opzione | Impostazione predefinita | Description |
 | --- | --- | --- |
 | **Attiva modalità struttura all'apertura del file** | Attivato | Attiva automaticamente la funzionalità di struttura nell'editor di Visual Studio all'apertura di un file di codice Python. |
-| **L'operazione Incolla rimuove i prompt REPL** | Attivato | Rimuove **>>>** e **...** dal testo incollato, consentendo il trasferimento agevole del codice dalla finestra **interattiva** all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |
+| **Paste removed REPL prompts (Incolla prompt REPL rimossi)** | Attivato | Rimuove **>>>** e **...** dal testo incollato, consentendo il trasferimento agevole del codice dalla finestra **interattiva** all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |
 | **Nomi dei colori in base ai tipi** | Attivato | Abilita la colorazione della sintassi nel codice Python. |
 
 ![Finestra di dialogo delle opzioni dell'editor di Python, scheda avanzate](media/options-editor-advanced.png)

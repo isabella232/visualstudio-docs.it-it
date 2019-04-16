@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Riepilogo delle funzionalità Python di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS).
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195008"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366875"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -98,7 +98,7 @@ Visual Studio consente di gestire la complessità di un progetto man mano che le
 
 Grazie ai modelli di progetto e di elemento, è possibile automatizzare il processo di impostazione di tipi di progetti e file diversi, risparmiando tempo prezioso ed evitando di gestire dettagli complessi e soggetti a errori. Visual Studio mette a disposizione modelli per progetti Web, Azure, data science, console e altri tipi di progetti, insieme a modelli per file quali classi, unit test, configurazioni Web di Azure, HTML e persino app Django.
 
-[![Progetto Python e modelli di elemento in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![PProgetto Python e modelli di elemento in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Per ulteriori informazioni:
 
@@ -130,7 +130,7 @@ Per ulteriori informazioni:
 
 La profilatura esplora come viene impiegato il tempo all'interno dell'applicazione. Visual Studio supporta la profilatura con interpreti basati su CPython e include la possibilità di confrontare le prestazioni tra esecuzioni diverse della profilatura.
 
-[![Risultati del profiler di Visual Studio per un progetto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VRisultati del profiler di Visual Studio per un progetto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Per ulteriori informazioni:
 

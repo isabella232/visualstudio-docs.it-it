@@ -3,19 +3,19 @@ title: Informazioni di riferimento sulla finestra Ambienti Python
 description: Dettagli su ognuna delle schede visualizzate nella finestra Ambienti Python in Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355776"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366523"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -47,7 +47,7 @@ Include informazioni di base e comandi per l'ambiente:
 | Comando | Description |
 | --- | --- |
 | **Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti)** | Imposta l'ambiente attivo, facendo sì che Visual Studio (2017 versione 15.5 e precedenti) non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
-| **Visit the distributor's website (Visita il sito Web del server di distribuzione)** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
+| **Visita il sito Web del server di distribuzione** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
 | **Apri finestra interattiva** | Apre la [finestra (REPL) interattiva](python-interactive-repl-in-visual-studio.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
 | **Esplora gli script interattivi** | Vedere [Script di avvio](#startup-scripts). |
 | **Usa la modalità interattiva IPython** | Se impostato, apre la finestra **Interattiva** con IPython per impostazione predefinita. Vengono abilitati i tracciati inline e la sintassi IPython estesa, come `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Usare IPython nella finestra interattiva](interactive-repl-ipython.md). |
@@ -60,7 +60,7 @@ Quando si usano le finestre interattive nel proprio flusso di lavoro quotidiano,
 
 Gli script di avvio contengono codice che la finestra **Interattiva** carica ed esegue automaticamente, incluse le importazioni, le definizioni di funzione e letteralmente qualunque altra cosa. Tali script sono referenziati in due modi:
 
-1. Quando si installa un ambiente, Visual Studio crea una cartella *Documents\Visual Studio<version>\Python Scripts\\\<environment>* dove &lt;version&gt; corrisponde alla versione di Visual Studio (ad esempio 2017 o 2019) e &lt;environment&gt; corrisponde al nome dell'ambiente. È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra **Interattiva** per tale ambiente, vengono caricati ed eseguiti tutti i file con estensione *py* disponibili qui in ordine alfabetico.
+1. Quando si installa un ambiente, Visual Studio crea una cartella *Documents\Visual Studio\<versione>\Python Scripts\\\<ambiente>* dove &lt;versione&gt; corrisponde alla versione di Visual Studio (ad esempio 2017 o 2019) e &lt;ambiente&gt; corrisponde al nome dell'ambiente. È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra **Interattiva** per tale ambiente, vengono caricati ed eseguiti tutti i file con estensione *py* disponibili qui in ordine alfabetico.
 
 1. Il controllo **Script** nella scheda **Strumenti** > **Opzioni** > **Python** > **Finestre interattive** (vedere [Opzioni delle finestre interattive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) è destinato a specificare una cartella aggiuntiva per gli script di avvio che vengono caricati ed eseguiti in tutti gli ambienti. Tuttavia, questa funzionalità non è attualmente operativa.
 
@@ -77,11 +77,11 @@ Se disponibile, la scheda **Configura** contiene i dettagli descritti nella tabe
 
 | Campo | Description |
 | --- | --- |
-| **Descrizione** | Nome da assegnare all'ambiente. |
+| **Description** | Nome da assegnare all'ambiente. |
 | **Percorso di prefisso** | Percorso della cartella di base dell'interprete. Se si compila questo valore e si fa clic su **Rilevamento automatico**, Visual Studio prova a compilare automaticamente gli altri campi. |
 | **Percorso dell'interprete** | Percorso del file eseguibile dell'interprete, costituito in genere dal percorso di prefisso seguito da **python.exe** |
 | **Interprete con finestra** | Percorso del file eseguibile non di console, spesso costituito dal percorso di prefisso seguito da **pythonw.exe**. |
-| **Percorso della libreria**<br/>(se disponibile) | Radice della libreria standard. Questo valore può essere ignorato se Visual Studio è in grado di richiedere un percorso più accurato all'interprete. |
+| **Percorso di libreria**<br/>(se disponibile) | Radice della libreria standard. Questo valore può essere ignorato se Visual Studio è in grado di richiedere un percorso più accurato all'interprete. |
 | **Versione del linguaggio** | Selezionata dal menu a discesa. |
 | **Architettura** | In genere rilevata e inserita automaticamente; in caso contrario, il valore da specificare è **32 bit** o **64 bit**. |
 | **Variabile di ambiente del percorso** | Variabile di ambiente usata dall'interprete per trovare i percorsi di ricerca. All'avvio di Python, Visual Studio modifica il valore della variabile in modo che contenga i percorsi di ricerca del progetto. In genere questa proprietà deve essere impostata su **PYTHONPATH**, ma alcuni interpreti usano un valore diverso. |

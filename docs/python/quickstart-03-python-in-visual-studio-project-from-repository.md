@@ -3,19 +3,19 @@ title: 'Guida rapida: Clonare un repository di codice Python'
 description: In questa guida introduttiva viene creato un progetto Python in Visual Studio tramite la clonazione del repository koans Python con Visual Studio Team Explorer.
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355286"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367004"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida introduttiva: Clonare un repository del codice Python in Visual Studio
 
@@ -78,7 +78,7 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Esercitazione: usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 

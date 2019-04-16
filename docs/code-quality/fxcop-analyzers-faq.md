@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222486"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232554"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -41,8 +41,16 @@ No. La proprietà **RunCodeAnalysis** in un file di progetto (ad esempio, un fil
 
 Per eseguire gli analizzatori FxCop, per prima cosa [installare il pacchetto NuGet](install-fxcop-analyzers.md) applicabile. Compilare quindi il progetto o soluzione da Visual Studio o mediante msbuild. Gli avvisi ed errori generati dagli analizzatori FxCop verranno visualizzati nell'**Elenco errori** o nella finestra di comando.
 
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Viene visualizzato l'avviso CA0507 anche dopo aver installato il pacchetto NuGet degli analizzatori FxCop
+
+Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso CA0507 **"Esegui analisi codice" è stato deprecato e sostituito da analizzatori FxCop, che vengono eseguiti durante la compilazione**, potrebbe essere necessario impostare la proprietà msbuild **RunCodeAnalysis** nel file di progetto su **false**. In caso contrario, verrà eseguita l'analisi del codice statico dopo ogni compilazione.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli analizzatori .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Introduzione agli analizzatori](fxcop-analyzers.yml)
-- [Installare gli analizzatori FxCop](install-fxcop-analyzers.md)
+- [Installare gli analizzatori FXCop](install-fxcop-analyzers.md)
