@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983274"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232593"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -76,8 +76,21 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - private\_protected
 - locali
 
-> [!NOTE]
-> Non specificare un livello di accessibilità come parte della convenzione di denominazione, se l'accessibilità non è applicabile al tipo di simbolo di destinazione. Ad esempio, per i parametri non sono previsti livelli di accessibilità. Se si specifica un livello di accessibilità per una convenzione di denominazione di parametri, la regola di denominazione non funzionerà correttamente.
+   Il livello di accessibilità `local` si applica ai simboli definiti all'interno di un metodo. È utile per la definizione delle convenzioni di denominazione per i simboli la cui accessibilità non può essere specificata nel codice. Ad esempio, se si specifica `applicable_accessibilities = local` per una convenzione di denominazione per le costanti (`required_modifiers = const`), la regola viene applicata solo alle costanti definite all'interno di un metodo e non a quelle definite in un tipo.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Modificatori dei simboli (facoltativi)
 
@@ -87,11 +100,11 @@ Per descrivere i modificatori dei simboli a cui si vuole applicare la regola di 
 
 L'elenco seguente mostra i valori consentiti. Se si specificano più valori, separarli con virgole:
 
-- `abstract` o `must_inherit`
+- `abstract` oppure `must_inherit`
 - `async`
 - `const`
 - `readonly`
-- `static` o `shared`
+- `static` oppure `shared`
 
    > [!NOTE]
    > Se è presente una regola di denominazione per i simboli `static` o `shared`, la regola viene applicata anche ai simboli `const` perché sono statici in modo implicito. Se non si vuole che la regola di denominazione `static` venga applicata ai simboli `const`, creare una regola di denominazione separata per i simboli `const`.
@@ -156,8 +169,8 @@ Gravità | Effetto
 ------------ | -------------
 none o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
-avviso | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
-errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
+warning | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
+error | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
 
 > [!NOTE]
 > Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.
@@ -196,6 +209,6 @@ Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la vi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostazioni delle convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Impostare le convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
 - [File .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

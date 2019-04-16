@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Passaggio 4 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato a come eseguire il codice Python nel debugger.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716506"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366796"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: eseguire il codice nel debugger
 
-**Passaggio precedente: [usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Passaggio precedente: [Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di modifica completa e la finestra **Interattiva**, Visual Studio offre il debug completo per il codice Python. Nel debugger, è possibile eseguire il codice in dettaglio, incluse le interazioni di un ciclo. È anche possibile sospendere il programma ogni volta che vengono soddisfatte determinate condizioni. Quando il programma viene sospeso nel debugger, è possibile esaminare in qualsiasi momento lo stato dell'intero programma e modificare il valore di variabili. Tali azioni sono essenziali per individuare i bug del programma e offrire supporto per seguire attentamente il flusso esatto del programma.
 
@@ -101,7 +101,7 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 ## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
-> [Installare i pacchetti nell'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+> [installare pacchetti nell'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 ## <a name="go-deeper"></a>Approfondimento
 

@@ -3,19 +3,19 @@ title: Debug del codice Python
 description: Visual Studio offre funzionalità di debug avanzate per il codice Python, tra cui l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'analisi delle eccezioni e il debug nella finestra interattiva.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151362"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366497"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -68,7 +68,7 @@ Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di 
 
 | Funzionalità | Tasto o combinazione di tasti | Description |
 | --- | --- | --- |
-| **Continue** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
+| **Continua** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
 | **Esegui istruzione** | **F11** | Esegue l'istruzione successiva e si arresta. Se l'istruzione successiva è una chiamata a una funzione, il debugger si arresta in corrispondenza della prima riga della funzione chiamata. |
 | **Esegui istruzione/routine** | **F10** | Esegue l'istruzione successiva, effettuando anche una chiamata a una funzione (ed eseguendone tutto il relativo codice) ed applicando l'eventuale valore restituito. Questo comando consente di ignorare facilmente le funzioni di cui non è necessario eseguire il debug. |
 | **Esci da istruzione/routine** | **MAIUSC**+**F11** | Esegue il codice fino alla fine della funzione corrente, quindi passa all'istruzione di chiamata.  Questo comando è utile quando non è necessario eseguire il debug della parte restante della funzione corrente. |

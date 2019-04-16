@@ -3,20 +3,20 @@ title: Avvio rapido - Aprire una cartella di codice Python
 description: In questa guida di avvio rapido viene illustrato come aprire ed eseguire codice Python da una cartella senza usare un progetto di Visual Studio (solo Visual Studio 2019).
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354908"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366120"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: Aprire ed eseguire il codice Python in una cartella
 
@@ -107,10 +107,10 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Esercitazione: usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Avvio rapido: Creare un progetto Python a partire da un codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [Avvio rapido: Creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)
+- [Guida introduttiva: Creare un progetto Python a partire da un codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+- [Guida introduttiva: Creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

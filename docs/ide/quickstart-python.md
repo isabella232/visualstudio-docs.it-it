@@ -4,18 +4,18 @@ description: In questa guida introduttiva vengono usati Visual Studio e il frame
 ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683385"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366693"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -114,7 +114,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 > [!Note]
 > Invece di installare le librerie nell'ambiente globale, gli sviluppatori in genere creano un "ambiente virtuale" in cui installare le librerie per un progetto specifico. I modelli di Visual Studio offrono in genere questa opzione, come descritto in [Guida introduttiva: creare un progetto Python da un modello](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
 
-**Domanda: dove è possibile trovare altre informazioni su altri pacchetti Python disponibili?**
+**Domanda: dove è possibile trovare informazioni su altri pacchetti Python disponibili?**
 
 **Risposta:** visitare la pagina dell'[indice dei pacchetti Python](https://pypi.org/).
 
@@ -193,7 +193,7 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 È stata eseguita la prima app Python in Visual Studio. In questo modo si sono apprese alcune informazioni sull'uso di Visual Studio come ambiente di sviluppo integrato per Python.
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Distribuire l'app nel servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 I passaggi eseguiti in questa guida introduttiva sono piuttosto generici e si è probabilmente capito che questi passaggi possono e devono essere automatizzati. Tale automazione è il ruolo dei modelli di progetto di Visual Studio. Scegliere la [Guida introduttiva: Creare un progetto Python da un modello](../python/quickstart-02-python-in-visual-studio-project-from-template.md) per una dimostrazione in cui viene creata un'app Web simile a quella creata in questo articolo, ma con un numero minore di passaggi.
 

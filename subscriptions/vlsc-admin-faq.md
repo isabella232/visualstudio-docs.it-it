@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Domande frequenti sulla migrazione dell'amministrazione del Volume License Service Center
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145265"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897660"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrazione dell'amministrazione delle sottoscrizioni di Visual Studio
 
@@ -36,7 +36,7 @@ Si tratta di una transizione molto importante e verrà completata in fasi fino q
 Non è necessario iscrivere l'organizzazione ad Azure AD. È comunque possibile eseguire tale operazione in qualsiasi momento. È possibile scegliere di caricare Azure AD senza alcun costo usando il livello gratuito per Azure AD. Azure Active Directory consente di proteggere l'organizzazione aumentando sicurezza, controllo e affidabilità a lungo termine. Se non si è pronti per Azure AD, sarà comunque possibile continuare a usare gli account Microsoft.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>In che modo l'organizzazione viene informata della migrazione?
-Microsoft invierà un messaggio di posta elettronica ai contatti principali o per le comunicazioni invitandoli a completare il processo di caricamento una settimana prima della migrazione dell'organizzazione. Anche i gestori delle sottoscrizioni riceveranno un messaggio di posta elettronica per informarli che Microsoft ha contattato i contatti primari o per le comunicazioni e ha comunicato i dettagli necessari per eseguire correttamente il caricamento. Informazioni su come [individuare i contatti principali o per le comunicazioni dell'organizzazione](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
+Microsoft invierà un messaggio di posta elettronica ai contatti principali o per le comunicazioni invitandoli a completare il processo di caricamento una settimana prima della migrazione dell'organizzazione. Anche i gestori delle sottoscrizioni riceveranno un messaggio di posta elettronica per informarli che Microsoft ha contattato i contatti primari o per le comunicazioni e ha comunicato i dettagli necessari per eseguire correttamente il caricamento. Informazioni su come [individuare i contatti principali o per le comunicazioni dell'organizzazione](#how-do-i-find-out-who-my-primary-or-notices-contact-is).
 
 ### <a name="is-onboarding-different-from-migration"></a>L'operazione di caricamento è diversa dalla migrazione?
 Sì.  Questo processo prevede due fasi. Se si esegue la configurazione (o il caricamento) dell'organizzazione prima della migrazione, le attività dell'amministratore non saranno interrotte. Dopo aver eseguito la migrazione delle informazioni dell'organizzazione, sarà possibile gestire le sottoscrizioni di Visual Studio nel nuovo portale. Se i contatti principali o per le comunicazione non si occupano del caricamento prima della migrazione, i gestori delle sottoscrizioni verranno bloccati e non sarà possibile gestire le sottoscrizioni fino al completamento del processo di caricamento.
@@ -54,7 +54,7 @@ Per istruzioni sul processo, leggere quanto riportato di seguito.
 
     d. Successivamente, sarà richiesto di immettere il PCN.
 
-2. **Configurare gli amministratori.**
+2. **Configurare gli amministratori:**
 
     Dopo aver immesso il PCN, si aprirà la pagina in cui sarà possibile aggiungere amministratori e amministratori con privilegi elevati (precedentemente noti come gestori delle sottoscrizioni). Sarebbe buona norma completare tale operazione prima della data di migrazione dell'organizzazione. In questo modo si evitano interruzioni nella gestione delle sottoscrizioni.
 

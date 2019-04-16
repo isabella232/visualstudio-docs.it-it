@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027289"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897699"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
 
@@ -62,7 +62,7 @@ In primo luogo, verificare che Visual Studio sia impostato come editor di script
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Ricarichi aggiuntivi o perdita di tutte le finestre aperte di Visual Studio
 
-Verificare di non toccare mai i file di progetto direttamente da un processore di risorse o qualsiasi altro strumento. Se è necessario modificare il file di progetto, è disponibile un'API. Controllare la [sezione relativa ai problemi dei riferimenti degli assembly](#Assembly-reference-issues).
+Verificare di non toccare mai i file di progetto direttamente da un processore di risorse o qualsiasi altro strumento. Se è necessario modificare il file di progetto, è disponibile un'API. Controllare la [sezione relativa ai problemi dei riferimenti degli assembly](#assembly-reference-issues).
 
 Se si verificano ricaricamenti aggiuntivi o se Visual Studio perde tutte le finestre aperte durante il ricaricamento, verificare di aver installato i .NET Targeting Pack appropriati. Per altre informazioni, controllare la sezione seguente sui framework.
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416266"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897725"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -144,7 +144,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 8. Eseguire il test.
 
-   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni sull'esecuzione dei test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Usare l'automazione dell'interfaccia utente per testare il codice* nella sezione [Argomenti successivi](#whats-next?) alla fine di questo argomento.
+   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni sull'esecuzione dei test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Usare l'automazione dell'interfaccia utente per testare il codice* nella sezione [Argomenti successivi](#whats-next) alla fine di questo argomento.
 
 Le sezioni rimanenti di questo argomento offrono informazioni più dettagliate sui passaggi di questa procedura.
 
@@ -253,7 +253,7 @@ Se necessario, è possibile modificare la scelta rapida da tastiera**CTRL**+**MA
 
 Per modificare le scelte rapide da tastiera è necessario modificare il file di configurazione seguente:
 
-*%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDECodedUITestBuilder.exe.config*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
 Nel file di configurazione modificare i valori per i tasti `HoverKeyModifier` e `HoverKey` per modificare la scelta rapida da tastiera:
 
@@ -272,7 +272,7 @@ In molti siti Web, quando si passa il puntatore su un particolare controllo, que
 
 Per abilitare la registrazione degli eventi di passaggio del mouse impliciti in un Web browser, aprire il file di configurazione:
 
-*%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDECodedUITestBuilder.exe.config*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
 Verificare che nel file di configurazione il tasto `RecordImplicitiHovers` sia impostato sul valore `true`, come mostrato nell'esempio seguente:
 
@@ -289,7 +289,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
 - L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-- **Editor di codice:**
+- **Editor del codice:**
 
     - Aggiungere manualmente il codice per i controlli nel test come descritto nella sezione [Azioni e proprietà dei controlli codificati dell'interfaccia utente](#coded-ui-control-actions-and-properties) in questo argomento.
 

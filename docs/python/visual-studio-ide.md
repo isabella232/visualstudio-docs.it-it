@@ -3,26 +3,26 @@ title: Panoramica di Visual Studio per sviluppatori Python
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354748"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365730"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa per Python e altri linguaggi, che consente di modificare il codice, eseguire il debug e il test del codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include strumenti di completamento codice, ambienti REPL interattivi e altre funzionalità che semplificano il processo di sviluppo del software.
 
-[![Visual Studio con un progetto Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![VVisual Studio con un progetto Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Questa immagine presenta Visual Studio con un progetto Python aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
@@ -68,11 +68,11 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Comando PyLint nel menu di scelta rapida per i progetti Python](media/code-pylint-command.png)
 
-- [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Casella di ricerca
 
-   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca **Avvio veloce** è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, **Avvio veloce** fornisce risultati che aprono il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
+   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
-   ![Casella di ricerca di Avvio veloce in Visual Studio](media/tour-ide-quick-launch.png)
+   ![Casella di ricerca in Visual Studio](media/tour-ide-quick-launch.png)
 
 - Controllo ortografia durante la digitazione e [azioni rapide](../ide/quick-actions.md)
 
@@ -129,10 +129,10 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 Per approfondire altri aspetti di Python in Visual Studio, eseguire una delle esercitazioni seguenti:
 
 > [!div class="nextstepaction"]
-> [Avvio rapido: Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Guida introduttiva: Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
-> [Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
 > [Introduzione al framework Web Django in Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)

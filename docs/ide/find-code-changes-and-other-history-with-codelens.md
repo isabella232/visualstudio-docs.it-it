@@ -9,16 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867855"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232710"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
 CodeLens consente di rimanere concentrati sulle proprie attività mentre si cercano informazioni sul codice senza uscire dall'editor. È possibile trovare i riferimenti a un frammento di codice, le modifiche apportate al codice, i bug collegati, gli elementi di lavoro, le revisioni del codice e gli unit test.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Gli indicatori CodeLens del controllo del codice sorgente non sono disponibili nell'edizione Visual Studio Community.
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -60,15 +67,15 @@ Per visualizzare le relazioni tra il codice e i relativi riferimenti, [creare un
 
 ![CodeLens - Riferimenti sulla mappa codici](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Individuare le modifiche nel codice
+## <a name="find-changes-in-your-code"></a>Individuare le modifiche nel codice
 
 Esaminare la cronologia del codice per scoprire cosa è successo oppure esaminare le modifiche prima che vengano unite nel codice per ottenere altre informazioni sull'eventuale impatto di modifiche in altri rami sul codice.
 
 Requisiti:
 
-- Visual Studio 2019 (o Visual Studio 2017 Enterprise o Professional edition)
+- Visual Studio Enterprise o Professional
 
-- Team Foundation Server 2013 o versioni successive, Azure DevOps Services o GIT
+- Azure DevOps Services, Team Foundation Server 2013 o versioni successive o Git
 
 - [Skype for Business](/skypeforbusiness/) per contattare il team dall'editor di codice
 
@@ -228,7 +235,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
      ![CodeLens - Visualizzare il risultato dello unit test](../ide/media/codelens-unit-test-result.png)
 
-7. Per vedere quante persone hanno modificato il test, gli autori delle modifiche o il numero di modifiche apportate al test, [individuare la cronologia del codice](#find-code-history) e gli elementi collegati.
+7. Per vedere quante persone hanno modificato il test, gli autori delle modifiche o il numero di modifiche apportate al test, [individuare la cronologia del codice](#find-changes-in-your-code) e gli elementi collegati.
 
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
@@ -264,6 +271,20 @@ Attivare gli indicatori CodeLens a livello di file e disattivare l’utilizzo de
 - Gli indicatori DevOps vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando l'utente è autorizzato ad aprire gli elementi di lavoro collegati. Assicurarsi di avere le [autorizzazioni dei membri del team](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Gli indicatori di unit test non vengono visualizzati quando il codice dell'applicazione non contiene unit test. Gli indicatori di stato del test vengono visualizzati automaticamente nei progetti di test. Se si è certi che il codice dell'applicazione include unit test, ma gli indicatori del test non vengono visualizzati, provare a compilare la soluzione (**CTRL**+**MAIUSC**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Gli indicatori del controllo del codice sorgente non sono disponibili nell'edizione Visual Studio Community.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens non è disponibile nell'edizione Visual Studio Community.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>D: perché non vengono visualizzati i dettagli degli elementi di lavoro per un commit?
 
@@ -313,11 +334,11 @@ Per usare la tastiera:
 
 - **Riferimenti**: questo indicatore viene aggiornato automaticamente in caso di modifica del codice. Se l'indicatore **Riferimenti** è ancorato come finestra separata, è possibile aggiornarlo selezionando **Aggiorna**:
 
-     ![Pulsante Aggiorna nei riferimenti CodeLens](../ide/media/codelensviewreferencesdocked.png)
+   ![Pulsante Aggiorna nei riferimenti CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
 - **Team**: aggiornare questi indicatori selezionando **Aggiorna indicatori team CodeLens** dal menu di scelta rapida:
 
-     ![Voce di menu Aggiorna indicatori team CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![Voce di menu Aggiorna indicatori team CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Test**: [trovare unit test per il codice](#associated-unit-tests) per aggiornare l'indicatore **Test**.
 

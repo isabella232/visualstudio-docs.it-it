@@ -1,7 +1,7 @@
 ---
 title: Registro modifiche (Visual Studio Tools per Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,15 +10,148 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 25269189489dab4a51b7f3b45f0aa670e39f50fb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611074"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232625"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="2020"></a>2.0.2.0
+ Data di rilascio: 2 aprile 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiunta del supporto per l'aggiornamento automatico dei database degli asset Unity al momento del salvataggio. Questa funzionalità è abilitata per impostazione predefinita e verrà attivata una ricompilazione sul lato di Unity quando si salva uno script in Visual Studio. È possibile disabilitare questa funzionalità in Strumenti\Opzioni\Strumenti per Unity\Aggiorna il database degli asset di Unity durante il salvataggio.
+
+    -   Aggiunta del supporto per l'impostazione dell'installazione preferita di Unity per la documentazione offline.
+
+    -   Aggiunta del menu di scelta rapida per il nuovo editor.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Debugger:**
+
+    -   Correzione del filtraggio degli assembly e dell'ispezione dei frame con frame vuoti.
+
+## <a name="2011"></a>2.0.1.1
+ Data di rilascio: 26 marzo 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Mono impostato temporaneamente come debugger predefinito e unico debugger utilizzabile per questa specifica versione.
+
+## <a name="2006"></a>2.0.0.6
+ Data di rilascio: 26 marzo 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiunta del supporto per "Collega a Unity e gioca".
+
+## <a name="2005"></a>2.0.0.5
+ Data di rilascio: 20 marzo 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Generazione del progetto:**
+
+    -   Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
+
+## <a name="2004"></a>2.0.0.4
+ Data di rilascio: 5 marzo 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiornamento dell'API ScriptableObject.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Rimozione di spazi dei nomi dai modelli.
+
+## <a name="2003"></a>2.0.0.3
+ Data di rilascio: 5 marzo 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Generazione del progetto:**
+
+    -   I campi pubblici e serializzati non causeranno più avvisi. Sono stati soppressi automaticamente gli avvisi del compilatore CS0649 e IDE0051 nei progetti di Unity che creavano questi messaggi.
+
+-   **Integrazione:**
+
+    -   Richiesta di collegamento a un'istanza specifica se sono in esecuzione più processi Unity.
+
+-   **Valutazione:**
+
+    -   Aggiunta del supporto per le funzioni locali.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Debugger:**
+
+    -   Correzione per la lettura di attributi personalizzati per argomenti denominati quando si usano versioni meno recenti del protocollo.
+
+## <a name="2002"></a>2.0.0.2
+ Data di rilascio: 4 febbraio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiornamento dell'API MonoBehaviour.
+   
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Debugger:**
+
+    -   Correzione dell'impostazione di valori primitivi nel debugger.
+
+## <a name="2001"></a>2.0.0.1
+ Data di rilascio: 4 dicembre 2018
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione del contenimento del pacchetto di installazione.
+
+## <a name="2000"></a>2.0.0.0
+ Data di rilascio: 4 dicembre 2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Debugger:**
+
+    -   Sostituzione del debugger di Unity in Mac con lo stesso debugger di Unity core di Windows.
+
+    -   Sostituzione di NRefactory a favore di Roslyn per la valutazione delle espressioni.
+
+    -   Aggiunta del supporto per i puntatori: dereferenziazione, cast e aritmetica dei puntatori (sono richiesti sia Unity 2018.2+ che il nuovo runtime).
+
+    -   Aggiunta del supporto per la visualizzazione dei puntatori di matrici (come nel C++). In un'espressione per puntatori aggiungere una virgola e il numero di elementi che si vogliono visualizzare.
+
+    -   Aggiunta del supporto per i costrutti async.
+
+    -   Aggiunta del supporto per le pseudovariabili (identificatori di eccezione e oggetto).
+    
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Debugger:**
+
+    -   Correzione della valutazione delle espressioni con espressioni in formato non valido o non supportate.
 
 ## <a name="1700"></a>1.7.0.0
  Data di rilascio: 13 novembre 2018
@@ -33,13 +166,13 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   **Debugger:**
 
-     -   Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento di "Collega a Unity" o al riavvio del gioco.
+    -   Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento di "Collega a Unity" o al riavvio del gioco.
 
 -   **Integrazione:**
 
-     -   Correzione dell'attivazione del plug-in Unity quando veniva selezionato un altro editor predefinito.
+    -   Correzione dell'attivazione del plug-in Unity quando veniva selezionato un altro editor predefinito.
 
-     -   Correzione della creazione di un modello di file Unity.
+    -   Correzione della creazione di un modello di file Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Data di rilascio: 24 luglio 2018
@@ -48,7 +181,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   **Integrazione:**
 
-     -   Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
+    -   Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
 ## <a name="1601"></a>1.6.0.1
  Data di rilascio: 10 luglio 2018
@@ -57,7 +190,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   **Integrazione:**
 
-     -   Correzione del supporto della colorazione del codice di Shader.
+    -   Correzione del supporto della colorazione del codice di Shader.
 
 ## <a name="1600"></a>1.6.0.0
  Data di rilascio: 26 giugno 2018
@@ -68,11 +201,11 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Correzione di un errore ortografico per il messaggio OnApplicationFocus.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
-     -   Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
+    -   Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
 
-     -   Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
+    -   Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
 
 ## <a name="1502"></a>1.5.0.2
  Data di rilascio: 18 aprile 2018
@@ -108,7 +241,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
 
@@ -121,7 +254,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Correzione del rilevamento della versione di Mono.
 
@@ -145,7 +278,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per .NET Standard.
 
@@ -190,7 +323,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   È stato corretto il problema dell'aggiunta di estensioni dll in eccesso al nome del file di assembly.
 
@@ -201,7 +334,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ### <a name="new-features"></a>Nuove funzionalità
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Aggiunta del supporto per il profilo .NET 4.6.
 
@@ -214,7 +347,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Avvia il collegamento per elaborare la finestra di dialogo, se non si sa a quale Unity collegarsi.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Abilita sempre l'opzione di compilazione non sicura quando viene usato Unity 5.6.
 
@@ -236,7 +369,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunta del supporto per la connessione ai lettori ed editor tramite la finestra Associa a processo.
 
--   **Project Generation:**
+-   **Generazione del progetto:**
 
     -   Riferimenti ai nomi assembly di Fixed con i file mcs.rsp.
 

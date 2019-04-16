@@ -3,19 +3,19 @@ title: Modelli di elementi per progetti Python
 description: Elenco di riferimento di modelli di elementi per progetti Python disponibili nella finestra di dialogo Aggiungi > Nuovo elemento in Visual Studio.
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924695"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366458"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
@@ -49,5 +49,5 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 ## <a name="see-also"></a>Vedere anche
 
 - [Gestire progetti Python - Modelli di progetto](managing-python-projects-in-visual-studio.md#project-templates)
-- [Modelli di progetto applicazione Web di Python](python-web-application-project-templates.md)
+- [Modelli di progetti Web Python](python-web-application-project-templates.md)
 - [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
