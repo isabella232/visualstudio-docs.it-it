@@ -12,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227761"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584415"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
-Visual Studio 2017 include miglioramenti al supporto del framework [Vue.js](https://vuejs.org/), che offre una migliore esperienza di sviluppo durante la creazione di un'applicazione con Vue.js, JavaScript e TypeScript.
+Visual Studio supporta lo sviluppo di app con il framework [Vue.js](https://vuejs.org/) in JavaScript o TypeScript.
 
 Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove funzionalità seguenti:
 
@@ -38,7 +38,7 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
 
     Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  per installarlo gratuitamente.
 
-    Se il carico di lavoro è già installato ed è necessario installare Visual Studio, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto** (selezionare **File** > **Nuovo** > **Progetto**). Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
 * Per creare il progetto ASP.NET Core, è necessario che siano installati i carichi di lavoro Sviluppo ASP.NET e Web e il carico di lavoro di sviluppo multipiattaforma di .NET Core.
 
@@ -63,9 +63,14 @@ In questo esempio si usa un'applicazione ASP.NET Core vuota (C#). È tuttavia po
 
 #### <a name="create-an-empty-project"></a>Creare un progetto vuoto
 
-1. Aprire Visual Studio e scegliere **File** > **Nuovo** > **Progetto** dal menu principale.
+1. Aprire Visual Studio e creare un nuovo progetto.
 
-1. In **Visual C#** > **Web** scegliere **Applicazione Web ASP.NET Core** e quindi fare clic su **OK**.
+    ::: moniker range=">=vs-2019"
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net** e quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e quindi scegliere **Web**. Nel riquadro centrale, scegliere **Applicazione Web ASP.NET Core**, quindi scegliere **OK**.
+    ::: moniker-end
 
     Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato, è prima necessario installare il carico di lavoro **Sviluppo ASP.NET e Web** e il carico di lavoro di sviluppo di .**NET Core**. Per installare uno o entrambi i carichi di lavoro, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto** (selezionare **File** > **Nuovo** > **Progetto**). Verrà avviato il Programma di installazione di Visual Studio. Selezionare i carichi di lavoro necessari.
 
@@ -91,6 +96,9 @@ Per installare il modulo vue-cli npm, aprire un prompt dei comandi e digitare `n
 1. Passare al prompt dei comandi e passare dalla directory corrente alla cartella radice del progetto.
 
 1. Digitare `vue init webpack ClientApp` e seguire questa procedura quando viene richiesto di rispondere a domande aggiuntive.
+
+    > [!NOTE]
+    > Per i file con estensione *vue*, è necessario usare WebPack o un framework simile con un caricatore per eseguire la conversione. TypeScript e Visual Studio non supportano la compilazione di file *vue*. Lo stesso vale per la creazione di bundle. TypeScript non supporta la conversione di moduli ES2015 (ovvero, le istruzioni `import` e `export`) in un singolo file *js* finale da caricare nel browser. Anche in questo caso WebPack è la scelta migliore. Per gestire questo processo da Visual Studio con MSBuild, è necessario iniziare da un modello di Visual Studio. Al momento, non è disponibile alcun modello ASP.NET predefinito per lo sviluppo di Vue.js.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Modificare la configurazione di webpack per inviare i file compilati a wwwroot
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018155"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477541"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
@@ -34,10 +34,10 @@ Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qu
 Ecco un riepilogo generale delle novità:
 
 * **[Sviluppo](#develop)**: rimanere concentrati e produttivi con prestazioni migliorate, pulizia del codice immediata e risultati di ricerca ottimizzati.
-* **[Collaborazione](#collaborate)**: il piacere di collaborare in modo naturale grazie a un flusso di lavoro cloud-first, modifica e debug in tempo reale e revisioni del codice direttamente in Visual Studio.
+* **[Collaborazione](#collaborate)**: il piacere di collaborare in modo naturale grazie a un flusso di lavoro basato su Git, modifica e debug in tempo reale e revisioni del codice direttamente in Visual Studio.
 * **[Debug](#debug)**: evidenziare e passare a valori specifici, ottimizzare l'uso della memoria e acquisire snapshot automatici dell'esecuzione dell'applicazione.
 
-Per un elenco completo di tutte le novità in questa versione, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/). 
+Per un elenco completo di tutte le novità in questa versione, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Sviluppo
 
@@ -55,11 +55,11 @@ La nuova logica di ricerca fuzzy consentirà di trovare tutto quello che serve, 
 
 ### <a name="refactorings"></a>Refactoring
 
-I nuovi refactoring C# rendono più semplice organizzare il codice. È sufficiente richiamare i refactoring premendo **CTRL+.** e selezionando l'azione che si vuole eseguire. 
+Esistono molti refactoring nuovi ed estremamente utili in C# che rendono più semplice organizzare il codice. Vengono visualizzati come suggerimenti nella lampadina e includono azioni, ad esempio lo spostamento di membri in un'interfaccia o una classe di base, l'adattamento degli spazi dei nomi alla struttura delle cartelle, la conversione dei cicli foreach per le query Linq e altro ancora.
 
    ![Animazione dell'esperienza di refactoring in Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Sono stati aggiunti molti nuovi refactoring, tra cui uno che consente di eseguire il wrapping dei parametri dei metodi.
+È sufficiente richiamare i refactoring premendo **CTRL+.** e selezionando l'azione che si vuole eseguire.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Per la versione di anteprima dell'estensione IntelliCode per Visual Studio è st
 
 Per chi usa C#, è stata inoltre aggiunta la possibilità di eseguire il training di un modello personalizzato nel proprio codice.
 
-Per altre informazioni su IntelliCode, vedere il post di blog [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) (Più codice, meno spostamenti con Visual Studio IntelliCode). 
+Per altre informazioni su IntelliCode, vedere il post di blog [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) (Più codice, meno spostamenti con Visual Studio IntelliCode).
 
 ### <a name="code-cleanup"></a>Pulizia del codice
 
@@ -142,7 +142,7 @@ I punti di interruzione dei dati C++, una volta esclusivi, sono stati adattati p
 
    ![Animazione che mostra i punti di interruzione dei dati di debug in Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif)
 
-Indipendentemente dal fatto che il codice venga scritto in C++ o .NET Core, quindi, i punti di interruzione dei dati possono essere una valida alternativa al semplice inserimento di punti di interruzione normali. I punti di interruzione dei dati sono anche ideali in situazioni in cui occorre ad esempio scoprire se un oggetto globale viene modificato o viene aggiunto o rimosso da un elenco. 
+Indipendentemente dal fatto che il codice venga scritto in C++ o .NET Core, quindi, i punti di interruzione dei dati possono essere una valida alternativa al semplice inserimento di punti di interruzione normali. I punti di interruzione dei dati sono anche ideali in situazioni in cui occorre ad esempio scoprire se un oggetto globale viene modificato o viene aggiunto o rimosso da un elenco.
 
 Per gli sviluppatori C++ che realizzano applicazioni di grandi dimensioni, inoltre, i simboli in Visual Studio 2019 sono out-of-process e ciò consente di eseguire il debug di tali applicazioni senza sperimentare problemi correlati alla memoria.
 

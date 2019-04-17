@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790537"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504302"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -100,7 +100,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 ## <a name="debug-test-and-improve-your-code"></a>Eseguire il debug del codice, testarlo e migliorarlo
 
-Durante la scrittura del codice è necessario eseguirlo e testarlo per individuare eventuali bug e controllarne le prestazioni. Il sistema di debug all'avanguardia di Visual Studio consente di eseguire il debug del codice in esecuzione nel progetto locale, in un dispositivo remoto o in un [emulatore di dispositivo](../cross-platform/visual-studio-emulator-for-android.md). È possibile esaminare il codice un'istruzione alla volta e controllare le variabili man mano. È possibile impostare punti di interruzione che vengono raggiunti solo quando viene soddisfatta una condizione specificata. Le opzioni di debug possono essere gestite nell'editor del codice senza uscire dal codice. Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md).
+Durante la scrittura del codice è necessario eseguirlo e testarlo per individuare eventuali bug e controllarne le prestazioni. Il sistema di debug all'avanguardia di Visual Studio consente di eseguire il debug del codice in esecuzione nel progetto locale, in un dispositivo remoto o in un [emulatore di dispositivo](../cross-platform/visual-studio-emulator-for-android.md). È possibile esaminare il codice un'istruzione alla volta e controllare le variabili man mano. È possibile impostare punti di interruzione che vengono raggiunti solo quando viene soddisfatta una condizione specificata. Le opzioni di debug possono essere gestite nell'editor del codice senza uscire dal codice. Per altri dettagli sul debug in Visual Studio, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 Per altre informazioni su come migliorare le prestazioni delle app, vedere la funzionalità di [profilatura](../profiling/profiling-feature-tour.md) di Visual Studio.
 
@@ -138,6 +138,6 @@ Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
+- [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Novità di Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Novità di Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703578"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504362"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Controllare gli stati precedenti delle app usando la funzionalità per tornare indietro di IntelliTrace in Visual Studio (Visual Studio Enterprise)
 
@@ -87,7 +87,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
     ![Panoramica della funzionalità per tornare indietro di IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Panoramica della funzionalità per tornare indietro di IntelliTrace")
 
-    Per altre informazioni su come controllare le variabili in Visual Studio, vedere il [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+    Per altre informazioni su come controllare le variabili in Visual Studio, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

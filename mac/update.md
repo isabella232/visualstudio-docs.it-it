@@ -3,24 +3,24 @@ title: Aggiornamento di Visual Studio per Mac
 description: Istruzioni per l'aggiornamento di Visual Studio per Mac e l'accesso a versioni di anteprima.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8c2c6fa6f947f43ed03fd1ec474c9ecb8b84a9fa
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294403"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584467"
 ---
 # <a name="update-visual-studio-for-mac"></a>Aggiornare Visual Studio per Mac
 
 Visual Studio per Mac distribuisce gli aggiornamenti per l'ambiente di sviluppo integrato e framework supportati a intervalli regolari. Questi aggiornamenti possono essere sotto forma di nuove funzionalità, miglioramenti e correzioni di bug.
 
-Visual Studio per Mac offre tre canali per ottenere le versioni più recenti:
+Visual Studio per Mac offre due canali per ottenere le versioni più recenti:
 
 * **Stabile**: fornisce aggiornamenti completamenti testati. Questo canale è consigliato per un'esperienza di sviluppo ottimale.
-* **Beta** / **Alfa**: consente di accedere anticipatamente agli aggiornamenti candidati per il rilascio nel canale Stabile. Queste versioni possono non essere affidabili per l'uso quotidiano.
+* **Anteprima**: consente di accedere anticipatamente agli aggiornamenti candidati per il rilascio nel canale Stabile. Queste versioni possono non essere affidabili per l'uso quotidiano.
 
 ## <a name="checking-for-updates"></a>Verifica della presenza di aggiornamenti
 
@@ -51,6 +51,10 @@ Per avviare l'installazione degli aggiornamenti, selezionare il pulsante **Riavv
 ![Pulsante per avviare l'installazione degli aggiornamenti](media/update-image4.png)
 
 A seconda dei componenti da installare, può essere necessario accettare licenze aggiuntive o inserire nome utente e password dell'amministratore del computer.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+In caso di problemi con lo strumento di aggiornamento, provare a seguire i passaggi descritti nella [guida alla risoluzione dei problemi di aggiornamento](updater-troubleshooting.md).
 
 ## <a name="see-also"></a>Vedere anche
 

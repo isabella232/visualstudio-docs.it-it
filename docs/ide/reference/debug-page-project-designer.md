@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949681"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504406"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 
@@ -83,7 +83,7 @@ Selezionare o deselezionare questa casella di controllo per abilitare o disabili
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debug in Visual Studio](../../debugger/debugger-feature-tour.md)
+- [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
 - [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Impostazioni di progetto per una configurazione di debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232762"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477665"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
@@ -128,7 +128,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   **Integrazione:**
 
-    -   Aggiunta del supporto per Visual Studio 2019.
+    -   Aggiunta del supporto per Visual Studio 2019 (è necessaria almeno la versione 2018.3 di Unity per poter usare Visual Studio 2019 come editor di script esterno).
 
     -   Adozione del servizio immagini e del catalogo di Visual Studio, con supporto completo per ridimensionamento HDPI, immagini perfette al pixel e temi.
 

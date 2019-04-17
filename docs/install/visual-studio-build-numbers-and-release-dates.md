@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/03/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018246"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537650"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018246"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.11 | Versione | 2 aprile 2019 | 15.9.28307.586 |
 | 15.9.10 | Versione | 25 marzo 2019 | 15.9.28307.557 |
@@ -191,8 +191,11 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Preview 1 | 10 aprile 2019 | 16.1.28809.33 |
+| 16.0.1 | Versione | 9 aprile 2019 | 16.0.28803.156 |
+| 16.0.1 | Preview 1 | 9 aprile 2019 | 16.0.28803.156 |
 | 16.0.0 | Versione | 2 aprile 2019 | 16.0.28729.10 |
 | 16.0.0 | Preview 5 | 2 aprile 2019 | 16.0.28729.10 |
 | 16.0.0 | Release Candidate 4 (RC.4) | 26 marzo 2019 | 16.0.28721.148 |
@@ -224,6 +227,6 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 ## <a name="see-also"></a>Vedere anche
 
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm/)
-* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)

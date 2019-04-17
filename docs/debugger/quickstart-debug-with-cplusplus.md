@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475955"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504211"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C++ usando il debugger di Visual Studio
 
@@ -28,7 +28,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 1. Aprire Visual Studio e creare un progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **c++**, scegliere **Modelli** e quindi scegliere **Create new Console App project** (Crea nuovo progetto app console). Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **c++**, scegliere **Modelli** e quindi scegliere **Create new Console App project** (Crea nuovo progetto app console). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C++** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **Applicazione console di Windows**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
@@ -138,4 +138,4 @@ Per altre informazioni sull'uso della funzione di modifica e continua e sulle li
 In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. Sono disponibili una panoramica delle funzionalità del debugger e collegamenti a ulteriori informazioni.
 
 > [!div class="nextstepaction"]
-> [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+> [Presentazione del debugger](../debugger/debugger-feature-tour.md)
