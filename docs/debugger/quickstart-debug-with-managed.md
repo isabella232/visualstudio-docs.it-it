@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475968"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504081"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
@@ -28,7 +28,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Core) project** (Crea nuovo progetto app console (.NET Core)). Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Core) project** (Crea nuovo progetto app console (.NET Core)). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **.NET Core** e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
@@ -186,4 +186,4 @@ Per altre informazioni sull'uso della funzione di modifica e continua e sulle li
 In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. Sono disponibili una panoramica delle funzionalità del debugger e collegamenti a ulteriori informazioni.
 
 > [!div class="nextstepaction"]
-> [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+> [Presentazione del debugger](../debugger/debugger-feature-tour.md)

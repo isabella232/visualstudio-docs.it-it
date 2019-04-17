@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc0482152b3da0b52950ab6389cc9f7d9e83e3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974280"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584389"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizza i valori del registro nella finestra di registri (C#, C++, Visual Basic, F#)
 
@@ -41,6 +41,8 @@ Il **registra** finestra consente di visualizzare il contenuto del registro dura
 Durante il debug, registrare valori modifica durante l'esecuzione di codice nell'app. I valori che sono stati modificati di recente vengono visualizzati in rosso nel **registra** finestra.
 
 Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi che variano secondo la piattaforma e il tipo di processore. È possibile visualizzare o nascondere i gruppi di registri. Per altre informazioni, vedere [Procedura: Visualizzare e nascondere gruppi di registri](../debugger/how-to-display-and-hide-register-groups.md).
+
+Per informazioni sui flag presenti il **registra** finestra, vedere [finestra di registri](../debugger/debugging-basics-registers-window.md)
 
 È possibile modificare i valori dei registri. Per altre informazioni, vedere [Procedura: Modificare un valore di registro](../debugger/how-to-edit-a-register-value.md).
 

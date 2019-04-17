@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d263344b84ad93cc582d05112c08d2bad1aa998
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632446"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584324"
 ---
 # <a name="special-characters-to-escape"></a>Caratteri speciali di escape
 I caratteri speciali devono essere preceduto da un carattere di escape solo se hanno un significato speciale nel contesto in cui vengono usati. Ad esempio, l'asterisco (*) è un carattere speciale solo negli attributi "Include" ed "Exclude" di una definizione di elemento o in una chiamata a <xref:Microsoft.Build.Tasks.CreateItem>. In tutti gli altri casi, l'asterisco viene considerato come un asterisco letterale. Nonostante non sia necessario usare il carattere di escape davanti agli asterischi in ogni parte dei file di progetto, l'operazione non causa problemi.
@@ -37,7 +37,7 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 |@|Chiocciola, usata per fare riferimento agli elenchi di elementi.|
 |(|Parentesi di apertura, usata negli elenchi.|
 |)|Parentesi di chiusura, usata negli elenchi.|
-|`|Apostrofo o segno di graduazione, usato in condizioni e in altre espressioni.|
+|\`|Apostrofo o segno di graduazione, usato nelle condizioni e in altre espressioni.|
 |;|Punto e virgola, separatore di elenco.|
 |?|Punto interrogativo, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|
 |*|Asterisco, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|

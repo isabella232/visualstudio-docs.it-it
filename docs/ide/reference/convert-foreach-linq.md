@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eadad8fdbec990607450b374a32758547194f734
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160274"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504068"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>Convertire il ciclo foreach in LINQ
 
@@ -46,9 +46,37 @@ Questo refactoring si applica a:
    ![Risultato della query LINQ](media/convert-foreach-to-LINQ-result.png)
    
    ![Risultato del modulo di chiamata LINQ](media/convert-foreach-to-LINQ-callform-result.png)
+   
+### <a name="sample-code"></a>Codice di esempio
+
+```csharp
+using System.Collections.Generic;
+
+public class Class1
+{
+    public void MyMethod()
+    {
+        var greetings = new List<string>()
+            { "hi", "yo", "hello", "howdy" };
+
+        IEnumerable<string> enumerable()
+        {
+            foreach (var greet in greetings)
+            {
+                if (greet.Length < 3)
+                {
+                    yield return greet;
+                }
+            }
+
+            yield break;
+        }
+    }
+}
+```
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)
 - [Suggerimenti per gli sviluppatori di .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

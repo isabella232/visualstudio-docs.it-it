@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897738"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584402"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -200,7 +200,7 @@ $(PropertyName)
 
  Usare questa sintassi per esaminare alcune delle proprietà nel file di progetto.
 
-**Per esaminare un valore della proprietà**
+**Per esaminare un valore di proprietà**
 
 1. Nell'editor di codice sostituire la destinazione HelloWorld con questo codice:
 
@@ -261,7 +261,7 @@ $(PropertyName)
 
  Le proprietà possono essere definite dalla riga di comando usando l'opzione della riga di comando -property o -p. I valori delle proprietà ricevuti dalla riga di comando eseguono l'override dei valori delle proprietà impostati nel file di progetto e nelle variabili di ambiente.
 
-**Per impostare un valore della proprietà dalla riga di comando**
+**Per impostare un valore di proprietà dalla riga di comando**
 
 1.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
@@ -416,7 +416,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
  aggiunge tutti i file con estensione *jpeg* nella cartella *images* al tipo di elemento Photos, mentre
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  aggiunge tutti i file con estensione *jpeg* nella cartella *images* e in tutte le relative sottocartelle al tipo di elemento Photos. Per altri esempi, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
@@ -428,7 +428,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 <Photos Include="images\*.gif" />
 ```
 
- crea un tipo di elemento denominato Photo contenente tutti i file nella cartella *image* con estensione *jpeg* o *gif*. Il codice equivale alla riga seguente:
+ crea un tipo di elemento denominato Photo contenente tutti i file nella cartella *images* con estensione *jpeg* o *gif*. Il codice equivale alla riga seguente:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />

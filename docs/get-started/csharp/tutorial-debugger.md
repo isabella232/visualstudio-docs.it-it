@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba9ff86db64c59d8be581dc778db5ffa6d56f4a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cdd82bffcbdbbf4ee176c7ffd643cd920d1c5268
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355659"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790147"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
 
@@ -58,7 +58,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli**, quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework). Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli**, quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework). Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App console (.NET Framework)**. Digitare quindi un nome come **get-started-debugging** e fare clic su **OK**.

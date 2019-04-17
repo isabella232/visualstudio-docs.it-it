@@ -77,3 +77,5 @@
 # [Risoluzione dei problemi](troubleshooting.md)
 ## [Analisi utilizzo software di Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Segnalare un problema](report-a-problem.md)
+## [Risoluzione dei problemi: Non è possibile visualizzare tutti i modelli](troubleshooting-no-templates.md)
+## [Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti](updater-troubleshooting.md)

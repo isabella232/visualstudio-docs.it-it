@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355185"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537504"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generare istruzioni using in Visual Studio
 
@@ -22,20 +22,20 @@ Questa generazione di codice si applica a:
 
 - C#
 
-**Cosa:** Consente di aggiungere immediatamente le importazioni necessarie o le [istruzioni using](/dotnet/csharp/language-reference/keywords/using-statement) di codice copiato e incollato.
+**Cosa:** Consente di aggiungere immediatamente le importazioni necessarie o le [istruzioni using](/dotnet/csharp/language-reference/keywords/using-statement) per il codice copiato e incollato.
 
-**Quando:** È pratica comune copiare e incollare codice da posizioni diverse nel progetto o in altre origini di codice. Questa azione rapida analizza le importazioni mancanti per il codice copiato e incollato e quindi ne richiede l'aggiunta.
+**Quando:** È pratica comune copiare codice da posizioni diverse nel progetto o in altre origini e incollarlo nel codice nuovo. Questa azione rapida consente di trovare le istruzioni imports mancanti per il codice copiato e incollato e quindi ne richiede l'aggiunta.
 
-**Perché?:** Aggiungendo automaticamente le importazioni necessarie, l'utente non dovrà copiare manualmente le istruzioni `using` necessarie.
+**Perché?:** Dato che l'azione rapida aggiunge automaticamente le importazioni necessarie, non è necessario copiare manualmente le istruzioni `using` necessarie per il codice.
 
 ## <a name="generate-usings-refactoring"></a>Refactoring per la generazione di istruzioni using
 
-1. Copiare e incollare codice da un file diverso senza includere le istruzioni `using` necessarie. L'errore è ora accompagnato da una correzione del codice che aggiunge le istruzioni `using` mancanti.
+1. Copiare codice da un file e incollarlo in un nuovo file senza includere le istruzioni `using` necessarie. L'errore risultante è accompagnato da una correzione del codice che aggiunge le istruzioni `using` mancanti.
 
     > [!NOTE] 
-    > Questo suggerimento deve essere attivato in **Strumenti > Opzioni > Editor di testo > C# > Avanzate > Direttive using**.
+    > È necessario abilitare questo suggerimento in **Strumenti > Opzioni > Editor di testo > C# > Avanzate > Direttive using**.
 
-2. Premere **CTRL**+**.** per aprire il menu **Azioni rapide e refactoring**. 
+2. Selezionare CTRL+. per aprire il menu **Azioni rapide e refactoring**.
 
     ![Generare istruzioni using](media/generate-using-codefix.png)
 
@@ -45,6 +45,6 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione codice](../code-generation-in-visual-studio.md)
+- [Generazione di codice](../code-generation-in-visual-studio.md)
 - [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
 - [Suggerimenti per gli sviluppatori di .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

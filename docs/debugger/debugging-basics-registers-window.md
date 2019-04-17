@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685053"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584519"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra Registri in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -47,7 +47,23 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
  Oltre a esaminare il contenuto di un registro, nella finestra **Registri** è possibile eseguire altre attività. Se si sta utilizzando codice nativo in modalità di interruzione, è possibile fare clic sul contenuto di un registro e modificarne il valore. Si tratta di un'operazione che deve essere eseguita con criterio. Se non si comprende la funzione del registro che si sta modificando e quali dati esso contenga, un'incauta modifica provocherà, con molta probabilità, un arresto anomalo del programma o altri effetti indesiderati. Una spiegazione dettagliata degli insiemi di registri dei vari processori Intel e compatibili, tuttavia, eccede l'ambito di questa breve introduzione.
 
 ## <a name="register-groups"></a>Gruppi di registri
- Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra **Registri** verrà visualizzato un menu di scelta rapida in cui sono elencati i gruppi, che è possibile visualizzare o nascondere secondo necessità.
+
+Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra **Registri** verrà visualizzato un menu di scelta rapida in cui sono elencati i gruppi, che è possibile visualizzare o nascondere secondo necessità.
+
+## <a name="register-flags"></a>Registrare i flag
+
+Per i processori Intel x86, è probabile che i flag seguenti nel **registra** finestra. Durante una sessione di debug, è anche possibile modificare questi flag.
+
+|Flag|Imposta valore|
+|-|-|
+|Overflow|OV = 1|
+|Direzione|UP = 1|
+|interrupt|EI = 1|
+|Sign|PL = 1|
+|Zero|ZR = 1|
+|Carry ausiliario|AC = 1|
+|Parità|PE = 1|
+|Carry|CY = 1|
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
