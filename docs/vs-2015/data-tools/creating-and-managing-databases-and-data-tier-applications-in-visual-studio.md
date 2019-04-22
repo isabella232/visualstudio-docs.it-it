@@ -14,16 +14,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c3a8a1f4b0c6e242e3999d870fdfcdc764d8336
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964951"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651383"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creazione e gestione di database e applicazioni livello dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 IMPORTANT]
 >  I progetti di database che sono state incluse nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono ora disponibili [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] strumenti. Per altre informazioni, vedere [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366848"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo variabili nel debugger di Visual Studio
@@ -36,7 +36,7 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
-|`$err`|Visualizza l'ultimo set di valori di errore con la funzione SetLastError. Il valore visualizzato rappresenta ciò che viene restituito dalla funzione GetLastError.<br /><br /> Usare `$err,hr` per vedere il formato decodificato di questo valore. Ad esempio, se l'ultimo errore era 3, il `$err,hr` visualizzerebbe `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|Visualizza l'ultimo set di valori di errore con la funzione SetLastError. Il valore visualizzato rappresenta ciò che viene restituito dalla funzione GetLastError.<br /><br /> Usare `$err,hr` per vedere il formato decodificato di questo valore. Ad esempio, se l'ultimo errore era 3, `$err,hr` visualizza `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|Consente di visualizzare il numero di handle allocati nell'applicazione.|
 |`$vframe`|Consente di visualizzare l'indirizzo dello stack frame corrente.|
 |`$tid`|Consente di visualizzare l'ID del thread corrente.|
@@ -62,11 +62,11 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
 |`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.|
-|`$delete` oppure `$$delete`|Elimina una variabile implicita creata nella finestra **Immediata**. La sintassi è `$delete,` *variabile* oppure`$delete,` *variabile*`.`|
-|`$objectids` oppure `$listobjectids`|Visualizza tutti gli ID oggetto attivi come figli dell'espressione specificata. La sintassi è `$objectid,` *espressione* oppure`$listobjectids,` *espressione*`.`|
+|`$delete` o `$$delete`|Elimina una variabile implicita creata nella finestra **Immediata**. La sintassi è `$delete,` *variabile* oppure`$delete,` *variabile*`.`|
+|`$objectids` o `$listobjectids`|Visualizza tutti gli ID oggetto attivi come figli dell'espressione specificata. La sintassi è `$objectid,` *espressione* oppure`$listobjectids,` *espressione*`.`|
 |`$` *N* `#`|Visualizza l'oggetto con ID dell'oggetto uguale a *N*.|
 |`$dynamic`|Visualizza il nodo **Visualizzazione dinamica** speciale per un oggetto che implementa `IDynamicMetaObjectProvider`. Interfaccia. La sintassi è `$dynamic,` *object*. Questa funzionalità si applica solo al codice che usa .NET Framework versione 4.|
 
 ## <a name="see-also"></a>Vedere anche
 - [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
-- [Finestre delle variabili](../debugger/debugger-windows.md)
+- [Finestra delle variabili](../debugger/debugger-windows.md)

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fa0c6e6e968f05ed8e2612e330d251ee7251206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967004"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652469"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Impossibile recuperare le informazioni sullo schema per l'oggetto di database &lt;nome oggetto&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Questo messaggio viene in genere visualizzato quando un oggetto in **Esplora Server/Esplora Database** viene copiato negli Appunti, eliminato dal database e incollato nella finestra di progettazione. La visualizzazione del messaggio è pertanto dovuta al fatto che l'oggetto di database non esiste più.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  

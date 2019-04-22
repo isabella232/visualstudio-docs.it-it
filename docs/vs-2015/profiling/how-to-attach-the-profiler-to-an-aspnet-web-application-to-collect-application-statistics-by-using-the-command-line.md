@@ -9,14 +9,14 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d873d166e2275e68231dfd0e7f6edbffd04ab1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781101"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648655"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: connettere il profiler a un'applicazione Web ASP.NET per raccogliere statistiche dell'applicazione tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere statistiche dell'applicazione tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un'applicazione Web ASP.NET e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.  
@@ -69,7 +69,6 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.                                                                                          |
 
-
 5. Avviare l'applicazione Web ASP.NET nel modo usuale.  
 
 6. Connettere il profiler al processo di lavoro ASP.NET. Digitare: **VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
@@ -114,7 +113,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     -   Digitare **VSPerfCmd /detach**  
 
-         oppure  
+         -oppure-  
 
     -   Chiudere il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
 

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b46b1b5fa7952fbd1a14dc9eca7f67c493ea2807
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504359"
 ---
 # <a name="publish-clickonce-applications"></a>Pubblicare applicazioni ClickOnce
@@ -86,11 +86,11 @@ Quando si pubblica un'applicazione [!INCLUDE[ndptecclick](../deployment/includes
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Procedura: Creare le associazioni di file dell'applicazione per un ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Viene descritto come aggiungere il supporto delle estensioni di file a un'applicazione ClickOnce.|
+|[Procedura: Creare associazioni di file per un'applicazione ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Viene descritto come aggiungere il supporto delle estensioni di file a un'applicazione ClickOnce.|
 |[Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Viene illustrato come recuperare i parametri passati nell'URL usato per eseguire un'applicazione ClickOnce.|
-|[Procedura: Disabilitare l'attivazione dell'URL di applicazioni ClickOnce tramite la finestra di progettazione](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Viene descritto come forzare l'avvio dell'applicazione dal menu **Start** usando la finestra di progettazione.|
+|[Procedura: Disabilitare gli URL di applicazioni ClickOnce tramite la finestra di progettazione](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Viene descritto come forzare l'avvio dell'applicazione dal menu **Start** usando la finestra di progettazione.|
 |[Procedura: Disabilitare l'attivazione dell'URL delle applicazioni ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Viene descritto come forzare l'avvio dell'applicazione dal menu **Start**.|
-|[Procedura dettagliata: Download di assembly su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Viene spiegato come scaricare gli assembly dell'applicazione solo quando vengono innanzitutto usati dall'applicazione con la finestra di progettazione.|
+|[Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Viene spiegato come scaricare gli assembly dell'applicazione solo quando vengono innanzitutto usati dall'applicazione con la finestra di progettazione.|
 |[Procedura dettagliata: Scaricare gli assembly su richiesta con l'API della distribuzione ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Viene spiegato come scaricare gli assembly dell'applicazione solo quando vengono innanzitutto usati dall'applicazione.|
 |[Procedura dettagliata: Scaricare gli assembly satellite su richiesta con l'API della distribuzione ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Viene descritto come contrassegnare gli assembly satellite come facoltativi e scaricare solo l'assembly di cui un computer client ha bisogno per le impostazioni cultura correnti.|
 |[Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Viene illustrato come usare le utilità di.NET Framework per distribuire l'applicazione ClickOnce.|

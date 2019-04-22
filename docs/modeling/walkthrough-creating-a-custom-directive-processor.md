@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195125"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649108"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
@@ -42,7 +42,7 @@ La chiamata alla direttiva personalizzata presenta la sintassi seguente:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Il processore di direttiva personalizzato aggiunge la variabile e la proprietà alla classe della trasformazione generata. La direttiva che si scrive utilizza le classi <xref:System.CodeDom> per creare il codice che il motore aggiunge alla classe della trasformazione generata. Il <xref:System.CodeDom> classi creano codice in Visual C# o Visual Basic, a seconda del linguaggio specificato nella `language` parametro del `template` direttiva. Il linguaggio del processore di direttiva e il linguaggio del modello di testo che accede al processore di direttiva non devono essere uguali.
+Il processore di direttiva personalizzato aggiunge la variabile e la proprietà alla classe della trasformazione generata. La direttiva che si scrive utilizza le classi <xref:System.CodeDom> per creare il codice che il motore aggiunge alla classe della trasformazione generata. Il <xref:System.CodeDom> classi creano codice in Visual c# o Visual Basic, a seconda del linguaggio specificato nella `language` parametro del `template` direttiva. Il linguaggio del processore di direttiva e il linguaggio del modello di testo che accede al processore di direttiva non devono essere uguali.
 
 Il codice creato dalla direttiva è il seguente:
 
@@ -654,7 +654,6 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      La chiave del Registro di sistema deve contenere i valori seguenti:
 
-
    | nome | Tipo | Dati |
    |-|-|-|
    | (Predefinito) | REG_SZ | (valore non impostato) |
@@ -663,13 +662,11 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:
 
-
    | nome | Tipo | Dati |
    |-|-|-|
    | (Predefinito) | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Riavviare Visual Studio.
 

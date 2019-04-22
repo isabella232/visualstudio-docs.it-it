@@ -14,10 +14,10 @@ ms.workload:
 - uwp
 - cordova
 ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790771"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
@@ -26,7 +26,7 @@ ms.locfileid: "58790771"
 È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Le informazioni contenute in questo argomento si applicano alle App Node. js creata con Visual Studio con il **sviluppo Node. js** installato il carico di lavoro.
 ::: moniker-end
 ::: moniker range="vs-2017"
-È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: eseguire il Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Le informazioni contenute in questo argomento si applicano all'app Node. js, UWP, App e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: Eseguire il debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Le informazioni contenute in questo argomento si applicano all'app Node. js, UWP, App e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
 ::: moniker-end
 
 Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.
@@ -44,7 +44,7 @@ Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è po
 > [!TIP]
 > Le versioni precedenti di Visual Studio non supportano il set completo di comandi. Usare IntelliSense sull'oggetto console per ottenere informazioni rapide sui comandi supportati.
 
-|Comando|Description|Esempio|
+|Comando|Descrizione|Esempio|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|Invia un messaggio quando `expression` restituisce **false**.|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|Cancella i messaggi dalla finestra della console, inclusi i messaggi di errore di script, e cancella inoltre lo script visualizzato nella finestra della console. Non cancella lo script immesso nella richiesta di input della console.|`console.clear();`|
@@ -70,7 +70,7 @@ Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è po
 ## <a name="miscellaneous-commands"></a>Comandi vari
 Questi comandi sono disponibili anche nella finestra della console JavaScript (non sono disponibili dal codice).
 
-|Comando|Description|Esempio|
+|Comando|Descrizione|Esempio|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|Restituisce l'elemento specificato nella finestra della console. `$0` restituisce l'elemento al momento selezionato in DOM Explorer, `$1` restituisce l'elemento selezionato in precedenza in DOM Explorer e così via, fino al quarto elemento selezionato in precedenza.|$3|
 |`$(id)`|Restituisce un elemento in base all'ID. Si tratta di un comando di scelta rapida per `document.getElementById(id)`, dove `id` è una stringa che rappresenta l'ID dell'elemento.|`$("contenthost")`|
@@ -130,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

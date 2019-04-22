@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969216"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648965"
 ---
 # <a name="schema-cache"></a>Cache degli schemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoot%\Xml\Schemas. La cache degli schemi è globale per tutti gli utenti di un computer e include gli schemi XML standard usati per la convalida dei documenti IntelliSense e XML.  
 
  L'editor XML può anche individuare gli schemi che si trova nella soluzione, gli schemi specificati nel **schemi** campo del documento **delle proprietà** finestra e gli schemi identificati dal `xsi:schemaLocation` e`xsi:noNamespaceSchemaLocation`degli attributi.  
 
  Nella tabella seguente vengono descritti gli schemi installati con l'editor XML.  
-
 
 |     Nomefile      |                                                      Descrizione                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|

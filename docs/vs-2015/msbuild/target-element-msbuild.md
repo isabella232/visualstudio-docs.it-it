@@ -19,17 +19,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758290"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651448"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  \<Project>  
@@ -64,8 +63,8 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 |---------------|-----------------|  
 |`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione.|  
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Se la condizione restituisce `false`, la destinazione non eseguirà il corpo della destinazione o di eventuali destinazioni impostate nell'attributo `DependsOnTargets`. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli input in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Outputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md), [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md) e [Trasformazioni](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli output in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Inputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md), [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md) e [Trasformazioni](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli input in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Outputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [compilazioni incrementali](../msbuild/incremental-builds.md), [come: La compilazione incrementale](../msbuild/how-to-build-incrementally.md), e [trasforma](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli output in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Inputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [compilazioni incrementali](../msbuild/incremental-builds.md), [come: La compilazione incrementale](../msbuild/how-to-build-incrementally.md), e [trasforma](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Attributo facoltativo.<br /><br /> Set di elementi che saranno disponibili per le attività che richiamano questa destinazione, ad esempio, le attività di MSBuild. Se si specificano più destinazioni, usare il punto e virgola per separarle. Se le destinazioni nel file non hanno attributi `Returns`, in alternativa vengono usati gli attributi Outputs a questo scopo.|  
 |`KeepDuplicateOutputs`|Attributo booleano facoltativo.<br /><br /> Se `true`, vengono registrati più riferimenti allo stesso elemento negli attributi Returns della destinazione.  Per impostazione predefinita, questo attributo è `false`.|  
 |`BeforeTargets`|Attributo facoltativo.<br /><br /> Elenco di nomi di destinazione delimitato a punti e virgola.  Se specificato, indica che questa destinazione deve essere eseguita prima della destinazione o delle destinazioni specificate. Ciò consente all'autore del progetto di estendere un set di destinazioni esistente senza modificarle direttamente. Per altre informazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).|  

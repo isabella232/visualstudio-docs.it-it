@@ -20,17 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788726"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650396"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell'applicazione e di distribuzione, nonché l'assembly (firma con nome sicuro).  
   
  La firma dei manifesti dell'applicazione e di distribuzione è un processo distinto dalla firma di un assembly, anche se entrambe le attività vengono eseguite nella pagina **Firma**.  
@@ -41,7 +40,7 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
   
 ## <a name="application-and-deployment-manifest-signing"></a>Firma del manifesto di applicazione e distribuzione  
  Casella di controllo **Firma i manifesti ClickOnce**  
- Selezionare questa casella di controllo per firmare i manifesti dell'applicazione e di distribuzione con una coppia di chiavi pubblica/privata. Per altre informazioni su questa operazione, vedere [Procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Selezionare questa casella di controllo per firmare i manifesti dell'applicazione e di distribuzione con una coppia di chiavi pubblica/privata. Per altre informazioni su come eseguire questa operazione, vedere [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md).  
   
  Pulsante **Seleziona dall'archivio**  
  Consente di selezionare un certificato esistente dall'archivio dei certificati personali dell'utente corrente. È possibile selezionare uno dei certificati disponibili per firmare i manifesti di distribuzione e dell'applicazione.  
@@ -67,9 +66,9 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
   
 ## <a name="assembly-signing"></a>Firma degli assembly  
  Casella di controllo **Firma assembly**  
- Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: firmare un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: Firmare un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Per firmare l'assembly, questa opzione usa lo strumento Al.exe fornito da [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)]. Per altre informazioni su Al.exe, vedere [Procedura: firmare un assembly con un nome sicuro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Per firmare l'assembly, questa opzione usa lo strumento Al.exe fornito da [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)]. Per altre informazioni su Al.exe, vedere [Procedura: Firmare un assembly con un nome sicuro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Elenco **Scegliere un file di chiave con nome sicuro**  
  Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare **\<Sfoglia...>** per selezionare un file di chiave esistente.  
@@ -93,7 +92,7 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
  [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)   
  [Gestione delle firme di assembly e manifesti](../../ide/managing-assembly-and-manifest-signing.md)   
  [Firma con nome sicuro per applicazioni gestite](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Procedura: firmare un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Procedura: firmare un assembly con un nome sicuro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Procedura: Sign Application and manifesti di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)   
+ [Procedura: Firmare un Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Procedura: Firmare un Assembly con nome sicuro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Assembly con nomi sicuri](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

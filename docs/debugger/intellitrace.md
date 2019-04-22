@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232697"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
@@ -43,7 +43,7 @@ ms.locfileid: "59232697"
 
 |||
 |-|-|
-|**Eseguire il debug dell’applicazione con IntelliTrace:**<br /><br /> - Mostrare gli eventi passati.<br />- Mostrare le informazioni sulle chiamate con gli eventi passati.<br />- Salvare la sessione di IntelliTrace.<br />- Controllare i dati raccolti da IntelliTrace.|- [Esaminare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debug cronologico](../debugger/historical-debugging.md)|
+|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> - Mostrare gli eventi passati.<br />- Mostrare le informazioni sulle chiamate con gli eventi passati.<br />- Salvare la sessione di IntelliTrace.<br />- Controllare i dati raccolti da IntelliTrace.|- [Esaminare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debug cronologico](../debugger/historical-debugging.md)|
 |**Raccogliere i dati IntelliTrace durante una sessione di test in Test Manager**|- [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Raccogliere dati IntelliTrace dalle applicazioni distribuite**|- [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Avviare il debug da un file di log IntelliTrace (file .iTrace).**|- [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)|

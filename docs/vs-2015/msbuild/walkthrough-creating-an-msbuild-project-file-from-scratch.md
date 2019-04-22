@@ -11,17 +11,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 388b0ebbeea9cd9adb15629f34952ef0307a842b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769432"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648817"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 I linguaggi di programmazione destinati a .NET Framework usano i file di progetto MSBuild per descrivere e controllare il processo di compilazione dell'applicazione. Quando si usa Visual Studio per creare un file di progetto MSBuild, il codice XML appropriato viene aggiunto automaticamente al file. Può tuttavia risultare utile comprendere l'organizzazione del codice XML e come è possibile modificarlo per controllare una compilazione.  
   
  Per informazioni sulla creazione di un file di progetto per un progetto C++, vedere [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
@@ -402,7 +401,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[csprcs](../includes/csprcs-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -442,7 +441,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Descrizione  
+### <a name="description"></a>Description  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  

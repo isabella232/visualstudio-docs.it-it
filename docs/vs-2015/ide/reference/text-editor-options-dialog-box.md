@@ -21,24 +21,23 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788099"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649069"
 ---
 # <a name="text-editor-options-dialog-box"></a>Finestra di dialogo Opzioni editor di testo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Le opzioni dell'editor nella finestra di dialogo **Opzioni** consentono di personalizzare in modi diversi l'aspetto e il comportamento dell'editor.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Modificare i tipi di carattere e i colori usati nell'editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Procedura: Modificare i tipi di carattere e i colori dell'editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Illustra come modificare i tipi di carattere e i colori dell'editor.  
   
- [Procedura: Gestire la modalità A capo automatico nell'editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Procedura: Gestire il ritorno a capo automatico nell'editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Illustra le opzioni di ritorno a capo automatico.  
   
  [Procedura: Visualizzare i numeri di riga nell'editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  

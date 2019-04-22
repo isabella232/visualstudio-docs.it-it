@@ -21,17 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954760"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649667"
 ---
 # <a name="relationships-in-datasets"></a>Relazioni nei DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati con il **configurazione guidata origine dati**, o il **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto per l'utente.  
   
  Il <xref:System.Data.DataRelation> oggetto esegue due funzioni:  

@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774774"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649407"
 ---
-# <a name="call-hierarchy"></a>Gerarchia di chiamata
+# <a name="call-hierarchy"></a>Gerarchia delle chiamate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La gerarchia di chiamata consente di spostarsi nel codice visualizzando tutte le chiamate da e verso un metodo, una proprietà o un costruttore selezionato. Ciò consente di comprendere meglio il flusso del codice e di valutare gli effetti delle modifiche al codice. È possibile esaminare diversi livelli del codice per visualizzare le complesse catene di chiamate di metodi e i punti di ingresso aggiuntivi al codice, in modo da poter esplorare tutti i possibili percorsi di esecuzione.  
   
  La gerarchia di chiamata è disponibile in fase di progettazione, a differenza dello stack di chiamate che viene visualizzato dal debugger.  
@@ -61,7 +60,7 @@ Finestra Gerarchia di chiamata
 ## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida  
  La tabella seguente descrive i vari comandi del menu di scelta rapida disponibili quando si fa clic con il pulsante destro del mouse su un nodo nel riquadro della visualizzazione struttura ad albero.  
   
-|Comando del menu di scelta rapida|Description|  
+|Comando del menu di scelta rapida|Descrizione|  
 |-----------------------|-----------------|  
 |**Aggiungi come nuova radice**|Aggiunge il nodo selezionato al riquadro della visualizzazione struttura ad albero come un nuovo nodo radice. Questo permette di concentrare l'attenzione su un sottoalbero specifico.|  
 |**Rimuovi radice**|Rimuove il nodo radice selezionato dal riquadro di visualizzazione albero. Questa opzione è disponibile solo da un nodo radice.<br /><br /> È anche possibile usare il pulsante della barra degli strumenti **Rimuovi radice** per rimuovere il nodo radice selezionato.|  

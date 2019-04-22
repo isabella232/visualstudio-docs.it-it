@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620993"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651298"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, il **AddItemTemplates** sezione contiene il percorso e il nome della directory degli elementi reso disponibile nel **Aggiungi nuovo elemento** vengono inseriti nella finestra di dialogo.
@@ -34,7 +34,6 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
  **TemplatesDir** = \\&lt;percorso di installazione di Visual Studio SDK&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\ &lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
 
  **SortPriority** = dword:00000064
-
 
 | nome | Tipo | I dati (dal *RGS* file) | Descrizione |
 |------------------|-----------| - | - |

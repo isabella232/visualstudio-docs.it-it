@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790381"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
@@ -28,7 +28,7 @@ La funzionalità di distribuzione di Visual Studio compila e registra le app UWP
 
 - Quando la destinazione è un dispositivo remoto, Visual Studio copia i file necessari nel computer remoto e registra l'app su questo dispositivo.
 
-La distribuzione avviene automaticamente quando si esegue il debug dell'app da Visual Studio usando l'opzione **Avvia debug** (tastiera: F5) oppure l'opzione **Avvia senza eseguire debug** (tastiera: CTRL+F5). Puoi distribuire l'app anche manualmente. Ecco gli scenari in cui la distribuzione manuale può essere utile:
+Distribuzione avviene automaticamente quando si esegue il debug dell'app da Visual Studio usando il **Avvia debug** opzione (tastiera: F5) o la **Avvia senza eseguire debug** opzione (tastiera: CTRL + F5). Puoi distribuire l'app anche manualmente. Ecco gli scenari in cui la distribuzione manuale può essere utile:
 
 - Test ad hoc su un computer locale o remoto.
 
@@ -76,7 +76,7 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
     Il **connessione remota** nella finestra di dialogo Visualizza i dispositivi sulla subnet di rete locale e qualsiasi dispositivo che è direttamente connesso al computer Visual Studio tramite un cavo Ethernet.
 
-   **Indicazione del dispositivo remoto nella pagina di un progetto di Visual C++**
+   **Indicazione del dispositivo remoto in un oggetto visivo C++ pagina del progetto**
 
    ![C&#43; &#43; le proprietà per il debug remoto di progetto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Per rimuovere l'esenzione relativa al loopback della rete:
 
 - Nel C# e il Debug di Visual Basic pagina delle proprietà, deseleziona il **Consenti loopback della rete locale** casella di controllo.
 
-- Nella pagina delle proprietà Debug C++, impostare il **Consenti loopback della rete locale** valore **No**.
+- Nel C++ pagina delle proprietà di Debug, impostare la **Consenti loopback della rete locale** valore per **No**.
 
-**Non devono essere avviate, ma eseguine il debug del codice all'avvio (C# e Visual Basic) o avviare Application (C++)**
+**Non devono essere avviate, ma eseguine il debug del codice all'avvio (C# e Visual Basic) / /Avvia applicazione (C++)**
 
 Per configurare la distribuzione in modo da avviare automaticamente una sessione di debug all'avvio dell'app:
 
 - Nel C# e Visual Basic pagina delle proprietà Debug, controllare le **non, ma eseguine il debug del codice quando viene avviato** casella di controllo.
 
-- Nella pagina delle proprietà Debug C++, impostare il **Avvia applicazione** valore **Yes**.
+- Nel C++ pagina delle proprietà di Debug, impostare il **Avvia applicazione** valore **Yes**.
 
 ## <a name="see-also"></a>Vedere anche
 

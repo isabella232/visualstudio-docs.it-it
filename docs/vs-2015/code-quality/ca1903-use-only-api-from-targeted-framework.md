@@ -15,24 +15,24 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001823"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647155"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usare solo API della versione di .NET Framework di destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio, vedere [CA1903: Utilizzare solo API dal framework di destinazione](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1903: Utilizzare solo API dal framework di destinazione](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
   
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
 |Category|Microsoft.Portability|  
-|Modifica importante|Rilievo - quando viene attivato in base alla firma di un membro visibile esternamente o un tipo.<br /><br /> Non importante - quando viene attivato nel corpo di un metodo.|  
+|Modifica importante|Rilievo - quando viene attivato in base alla firma di un membro visibile esternamente o un tipo.<br /><br /> Non sostanziale - Quando viene attivato nel corpo di un metodo.|  
   
 ## <a name="cause"></a>Causa  
  Un membro o tipo sta utilizzando un membro o un tipo che è stato introdotto in un service pack che non è stata incluso con framework di destinazione del progetto.  

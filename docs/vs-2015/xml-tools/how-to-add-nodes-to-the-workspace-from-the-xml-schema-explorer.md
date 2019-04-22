@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a99426cf32477e0661872c09f41ec50aeb2842
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954277"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651501"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedura: Aggiungere nodi all'area di lavoro da XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In questo argomento viene illustrato come aggiungere nodi per il [dell'area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) da XML Schema Explorer. È possibile trascinare e rilasciare nodi da XML Schema Explorer su una visualizzazione di Progettazione XSD o tramite il menu di scelta rapida di XML Schema Explorer. È anche possibile aggiungere nodi evidenziati come risultato di una ricerca eseguita da XML Schema Explorer. Per altre informazioni, vedere [Procedura: Aggiungere nodi dei risultati ricerca Set di schemi all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]

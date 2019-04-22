@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920574"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653008"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -104,7 +104,6 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 |`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Il parametro della funzione con annotazioni è l'operando di destinazione di una delle varie funzioni Interlocked.  Tali operandi devono avere le proprietà aggiuntive specifiche.|
 |`_Write_guarded_by_(expr)`|Annota una variabile e indica se la variabile è modificata, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock e RAII annotazioni
  Blocchi intelligenti in genere il wrapping dei blocchi nativi e gestiscono la durata. Nella tabella seguente sono elencate le annotazioni che possono essere utilizzate con blocchi intelligenti e scrittura del codice con il supporto per il modello RAII `move` semantica.

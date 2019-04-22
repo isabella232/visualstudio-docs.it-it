@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790706"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: Debug di un'applicazione parallela in Visual Studio (C#, Visual Basic, C++)
@@ -65,7 +65,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **Esc** per chiudere la finestra di avvio. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
 
     - Per C# o Visual Basic, scegli **Crea nuovo progetto App Console (.NET Framework)** entrambi C# o Visual Basic. Nella finestra di dialogo visualizzata scegliere **Crea**.
     - Per C++, scegliere **Crea nuovo progetto App Console** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**.
@@ -77,7 +77,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
     - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
     - Per un'app Visual Basic, sotto **Visual Basic**, scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
-    - Per un'app C++, sotto **Visual C++**, scegliere **Windows Desktop**, quindi scegliere **applicazione Console Windows**.
+    - Per un C++ app, sotto **Visual C++** , scegliere **Desktop di Windows**, quindi scegliere **applicazione Console di Windows**.
 
     Quindi, digitare un nome o utilizzare quello predefinito e fare clic su **OK**.
     ::: moniker-end
@@ -98,7 +98,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
     Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizzo della finestra Stack in parallelo: visualizzazione Thread
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Uso della finestra Stack in parallelo: Visualizzazione Thread
  Scegliere **Avvia debug** dal menu **Debug**. Attendere che venga raggiunto il primo punto di interruzione.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Per visualizzare lo stack di chiamate di un singolo thread

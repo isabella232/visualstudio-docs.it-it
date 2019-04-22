@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22db62a186c1f1c668a0304a9b586aca85e713c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651045"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Creare commenti JSDoc per IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,6 @@ IntelliSense in Visual Studio visualizza le informazioni aggiunte a uno script t
 
 ## <a name="jsdoc-comment-tags"></a>Tag di commento JSDoc  
  I tag di commento JSDoc standard elencati di seguito vengono usati da IntelliSense per visualizzare informazioni sul codice.  
-
 
 |  Tag JSDoc   |                       Sintassi                        |                                                     Note                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|

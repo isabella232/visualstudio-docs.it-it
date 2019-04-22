@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602065"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651890"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: Aggiornamento di un grafico in un foglio di lavoro mediante pulsanti di opzione
   Questa procedura dettagliata illustra le nozioni di base dell'uso di pulsanti di opzione in un foglio di lavoro di Microsoft Office Excel per consentire all'utente un modo per passare rapidamente tra le opzioni. In questo caso, le opzioni di modificare lo stile di un grafico.
@@ -108,7 +108,7 @@ ms.locfileid: "56602065"
 
 1.  Selezionare il <xref:Microsoft.Office.Tools.Excel.Chart> nella finestra di progettazione e modificare le proprietà seguenti nella **proprietà** finestra.
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Name**|**dataChart**|
     |**HasLegend**|**false**|
@@ -132,34 +132,28 @@ ms.locfileid: "56602065"
 
 2. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare un **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
-
-   | Proprietà | Value |
+   | Proprietà | Valore |
    |----------|------------------|
    | **Name** | **columnChart** |
    | **per** | **Istogramma a colonne** |
 
-
 3. Aggiungere un secondo pulsante di opzione nel controllo utente e modificare le proprietà seguenti.
 
-
-   | Proprietà | Value |
+   | Proprietà | Valore |
    |----------|---------------|
    | **Name** | **barChart** |
    | **per** | **Grafico a barre** |
 
-
 4. Aggiungere un terzo pulsante di opzione nel controllo utente e modificare le proprietà seguenti.
-
 
    | Proprietà | Valore |
    |----------|----------------|
    | **Name** | **lineChart** |
    | **per** | **Grafico a linee** |
 
-
 5. Aggiungere un quarto pulsante di opzione nel controllo utente e modificare le proprietà seguenti.
 
-   |Proprietà|Value|
+   |Proprietà|Valore|
    |--------------|-----------|
    |**Name**|**areaBlockChart**|
    |**per**|**Grafico ad area**|

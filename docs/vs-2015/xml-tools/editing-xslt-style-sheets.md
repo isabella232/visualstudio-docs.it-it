@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a442612d3eb4845def1a82712ac01c6b90d4047c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2279a193b173924b45f42172281e106370131023
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970303"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648174"
 ---
 # <a name="editing-xslt-style-sheets"></a>Modifica di fogli di stile XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'editor XML consente anche di modificare i fogli di stile XSLT. È possibile usare le funzionalità predefinite dell'editor, quali IntelliSense, struttura, frammenti XML e così via. Sono inoltre disponibili nuove funzionalità che semplificano lo sviluppo in XSLT.  
   
 ## <a name="xslt-features"></a>Funzionalità XSLT  

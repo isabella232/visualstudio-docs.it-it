@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a67804984c427062e55b72e3bbe942e6e4839f99
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758567"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652826"
 ---
 # <a name="convert-dialog-box"></a>Finestra di dialogo Converti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La finestra di dialogo **Converti** consente di selezionare uno strumento di conversione per creare un progetto da un progetto precedente, ad esempio un progetto [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] da un progetto di Visual Basic 6. È inoltre possibile usare lo strumento [Visual Studio Project Converter](http://go.microsoft.com/fwlink/?LinkID=246465), disponibile sul sito Web CodePlex, per aggiornare i progetti creati in versioni precedenti di Visual Studio.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  

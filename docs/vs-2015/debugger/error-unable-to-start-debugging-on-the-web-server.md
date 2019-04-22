@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964864"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652059"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: Impossibile avviare il debug sul server Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,6 @@ Se si usa una versione precedente di Visual Studio:
     Un bug nelle versioni precedenti (fissato in un secondo momento) necessaria di privilegi elevati in alcuni scenari di debug di ASP.NET.
     
 - Se si eseguono più istanze di Visual Studio, aprire nuovamente il progetto in un'unica istanza di Visual Studio e riprovare.
-   
-  
+
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -19,23 +19,22 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e9432423c9614a05092fd2a7bfff8557cdf845e7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 70bd6623d86ecfa76d3e09de09a8dcfad3d5da20
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770679"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648615"
 ---
 # <a name="removedir-task"></a>Attività RemoveDir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Rimuove le directory specificate con tutti i relativi file e sottodirectory.  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `RemoveDir` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Directories`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica le directory da eliminare.|  
 |`RemovedDirectories`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene le directory che sono state eliminate correttamente.|  

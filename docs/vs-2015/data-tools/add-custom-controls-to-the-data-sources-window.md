@@ -23,17 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964770"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651125"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si trascina un elemento dal **Zdroje dat** finestra per un'area di progettazione per creare un controllo con associazione a dati, è possibile selezionare il tipo di controllo da creare. Ogni elemento nella finestra ha un elenco di riepilogo a discesa che visualizza i controlli che è possibile scegliere tra. Il set di controlli associati a ogni elemento è determinato dal tipo di dati dell'elemento. Se il controllo che si desidera creare non viene visualizzato nell'elenco, è possibile seguire le istruzioni in questo argomento per aggiungere il controllo all'elenco.  
   
  Per altre informazioni sulla selezione di controlli con associazione a dati da creare per gli elementi di **Zdroje dat** finestra, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  

@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758454"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649121"
 ---
 # <a name="comparing-properties-and-items"></a>Confronto di proprietà ed elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.  
   
 -   Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683679"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649992"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.
@@ -105,8 +105,7 @@ Visual Studio 2017 e versioni successiva contengono il **cronologia risorse** fi
 
 In questa finestra consente di visualizzare la cronologia dell'elemento selezionato nell'elenco eventi.  L'elenco a discesa nella parte superiore è utilizzabile per selezionare altri elementi per visualizzare la cronologia di.  Nella metà superiore della finestra contiene il **eventi di configurazione fotogrammi**.  Questi sono gli eventi che rientrano i *Create* categoria di tipi e sono chiamate che in genere inizializzano e creare la risorsa.  Nella parte inferiore della metà della finestra contiene il **eventi della cornice** sezione.  Si tratta la normale operazione di lettura e scrittura di eventi che si verificano durante l'utilizzo della risorsa.
 
-
-| Colonna | Description |
+| Colonna | Descrizione |
 |-----------| - |
 | **Type** | Mostra il tipo di voce, in genere *Create*, *lettura* e *scrivere*. |
 | **Visualizza** | Mostra un'anteprima della risorsa in quel momento nel tempo.  Fare doppio clic su Anteprima per aprire una visualizzazione dei dettagli della risorsa in quel momento. |
@@ -115,4 +114,4 @@ In questa finestra consente di visualizzare la cronologia dell'elemento selezion
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)

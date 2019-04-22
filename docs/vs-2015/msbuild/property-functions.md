@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758361"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649238"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usate per valutare gli script MSBuild. Le funzioni di proprietà possono essere usate ovunque siano presenti le proprietà. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.  
   
  Senza usare le attività MSBuild, è possibile leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni nello script di compilazione. MSBuild tenterà di convertire le stringhe in numeri e i numeri in stringhe nonché di eseguire altre conversioni secondo le esigenze.  
@@ -189,7 +188,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  Di seguito è riportato un elenco di funzioni di proprietà MSBuild:  
   
-|Firma funzione|Descrizione|  
+|Firma funzione|Description|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Esegue l'addizione di due valori Double.|  
 |long Add(long a, long b)|Esegue l'addizione di due valori Long.|  

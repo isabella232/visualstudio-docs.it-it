@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 276667993fa1c3448af3168403d18c2e55a118af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56cda28a66d7d956ef46ed335765fe8fab430301
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649628"
 ---
 # <a name="xml-editor-tasks"></a>Attività dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Contenuto della sezione viene descritto come completare attività comuni con l'editor XML.  
   
 ## <a name="in-this-section"></a>In questa sezione  

@@ -16,17 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804176"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649560"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Proprietà riservate e note MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è disponibile un set di proprietà predefinite che archiviano informazioni sul file di progetto e i file binari di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Queste proprietà vengono valutate come le altre proprietà di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ad esempio, per usare la proprietà `MSBuildProjectFile`, è necessario digitare `$(MSBuildProjectFile)`.  
   
  MSBuild usa i valori indicati nella tabella seguente per predefinire le proprietà riservate e quelle note. L'override può essere eseguito solo per le proprietà note usando proprietà globali, proprietà di ambiente con nomi identici o proprietà dichiarate nel file di progetto.  
@@ -34,7 +33,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è disponibile un se
 ## <a name="reserved-and-well-known-properties"></a>Proprietà riservate e proprietà note  
  Nella tabella seguente vengono descritte le proprietà predefinite di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Proprietà|Descrizione|Riservata o nota|  
+|Proprietà|Description|Riservata o nota|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Percorso assoluto della cartella in cui si trovano i file binari di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] attualmente in uso, ad esempio C:\Windows\Microsoft.Net\Framework\\*versionNumber*. Questa proprietà risulta utile quando è necessario fare riferimento ai file nella directory di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> Non includere la barra rovesciata finale in questa proprietà.|Riservata|  
 |`MSBuildExtensionsPath`|Introdotta in .NET Framework 4: nessuna differenza tra i valori predefiniti di `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`. È possibile impostare la variabile di ambiente `MSBUILDLEGACYEXTENSIONSPATH` su un valore non Null per abilitare il comportamento del valore predefinito di `MSBuildExtensionsPath` nelle versioni precedenti.<br /><br /> In .NET Framework 3.5 e versioni precedenti il valore predefinito di `MSBuildExtensionsPath` fa riferimento al percorso della sottocartella MSBuild nella cartella \Programmi\ o \Programmi (x86), in base al numero di bit del processo corrente. Ad esempio, per un processo a 32 bit in un computer a 64 bit, la proprietà fa riferimento alla cartella \Programmi (x86). Per un processo a 64 bit in un computer a 64 bit, questa proprietà fa riferimento alla cartella \Programmi.<br /><br /> Non includere la barra rovesciata finale in questa proprietà.<br /><br /> Questo percorso è ideale per contenere i file di destinazione personalizzati. È ad esempio possibile installare i file di destinazione in \Programmi\MSBuild\MyFiles\Northwind.targets, quindi importarli nei file di progetto usando il codice XML seguente:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Nota|  

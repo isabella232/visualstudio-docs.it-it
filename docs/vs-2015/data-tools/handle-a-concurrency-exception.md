@@ -21,17 +21,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c18b34cd3a38f41279885658a8d354ff6f9e8fe7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955157"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650174"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono generati quando due utenti tentano di modificare gli stessi dati in un database nello stesso momento. In questa procedura dettagliata, si crea un'applicazione Windows che illustra come intercettare una <xref:System.Data.DBConcurrencyException>, individuare la riga che ha causato l'errore e informazioni su una strategia per come gestirlo.  
   
  Questa procedura dettagliata illustra il processo seguente:  

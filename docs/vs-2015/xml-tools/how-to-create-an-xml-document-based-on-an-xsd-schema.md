@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e857befa71095572661ff2c2e1a2ba074444f231
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b42db031c200f16a9189c4d750c9011e739029
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969773"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647571"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: Creare un documento XML in base a uno schema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Il **genera XML di esempio** funzionalità genera un file XML di esempio basato su file di Schema XSD (XML).  
   
  È possibile usare questa opzione per gli scenari seguenti:  

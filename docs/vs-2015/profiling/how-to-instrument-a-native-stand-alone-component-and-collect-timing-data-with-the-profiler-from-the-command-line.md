@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757108"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649772"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il Profiler da riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per instrumentare un componente nativo, ad esempio un file con estensione exe o dll C++, e raccogliere dati di intervallo dettagliati.  
@@ -55,7 +55,6 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                  Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.                                                                                                                  |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms.                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.                                                                                   |
-
 
 4. Avviare l'applicazione di destinazione nel modo usuale.  
 
