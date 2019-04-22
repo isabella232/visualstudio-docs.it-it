@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968474"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656778"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un componente di TableAdapter inserisce un set di dati con i dati dal database, in base a uno o più query o stored procedure specificato. Gli oggetti TableAdapter possono anche eseguire aggiunte, aggiornamenti ed eliminazioni sul database per rendere persistenti le modifiche apportate al set di dati. È inoltre possibile emettere comandi globali che sono correlati a qualsiasi tabella specifica.  
   
 > [!NOTE]
@@ -107,7 +106,7 @@ Un componente di TableAdapter inserisce un set di dati con i dati dal database, 
  Se non si desidera creare questi metodi diretti, impostare dell'oggetto TableAdapter **GenerateDbDirectMethods** proprietà `false` (nelle **proprietà** finestra). Query aggiuntive che vengono aggiunti all'oggetto TableAdapter sono query autonomo, ovvero non generano questi metodi.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Supporto di TableAdapter per i tipi nullable  
- Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Per altre informazioni sui tipi nullable in C#, vedere [utilizzando i tipi Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Per altre informazioni sui tipi nullable in c#, vedere [utilizzando i tipi Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Sicurezza  
  Quando si usano i comandi di dati con un `CommandType` impostata su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. Una procedura consigliata consiste nell'utilizzare sempre query con parametri o stored procedure, laddove possibile.  

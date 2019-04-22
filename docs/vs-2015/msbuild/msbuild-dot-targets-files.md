@@ -17,17 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4292509e9177c64a0018e0f1c7e95eebf442ffcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 74ac0a2c1ab50cf4c707f4fc9414fe4aa4f403b8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772286"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655062"
 ---
 # <a name="msbuild-targets-files"></a>File con estensione targets di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] include più file con estensione targets che contengono elementi, proprietà, destinazioni e attività per gli scenari comuni. Questi file vengono automaticamente importati nella maggior parte dei file di progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per semplificare la manutenzione e la leggibilità.  
   
  I progetti importano generalmente uno o più file con estensione TARGETS per definire il processo di compilazione. Ad esempio, un progetto di [!INCLUDE[csprcs](../includes/csprcs-md.md)] creato da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] importerà Microsoft.CSharp.targets che importa Microsoft.Common.targets. Il progetto stesso di [!INCLUDE[csprcs](../includes/csprcs-md.md)] definirà gli elementi e le proprietà specifici di tale progetto, ma le regole di compilazione standard per un progetto di [!INCLUDE[csprcs](../includes/csprcs-md.md)] vengono definite nei file con estensione targets importati.  
@@ -35,7 +34,7 @@ ms.locfileid: "54772286"
  Il valore `$(MSBuildToolsPath)` specifica il percorso di questi file con destinazione .targets comuni. Se `ToolsVersion` è 4.0, i file sono nel percorso seguente: `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
->  Per informazioni su come creare destinazioni personalizzate, vedere [Destinazioni](../msbuild/msbuild-targets.md). Per informazioni su come usare l'elemento `Import` per inserire un file di progetto in un altro file di progetto, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+>  Per informazioni su come creare destinazioni personalizzate, vedere [Destinazioni](../msbuild/msbuild-targets.md). Per informazioni su come usare il `Import` elemento da inserire un file di progetto in un altro file di progetto, vedere [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [come: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
   
 ## <a name="common-targets-files"></a>File con estensione targets comuni  
   

@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dca0197ee25bc56f3ab017530baeb842572fc16
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801744"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657103"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Risoluzione di assembly in fase di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si aggiunge un riferimento a un assembly tramite la scheda .NET della finestra di dialogo Aggiungi riferimento, il riferimento punta a un riferimento assembly intermedio, vale a dire un assembly in cui sono contenute tutte le informazioni sul tipo e sulla firma, ma in cui non è incluso necessariamente del codice. Nella scheda .NET sono elencati gli assembly di riferimento corrispondenti agli assembly di runtime in .NET Framework. Sono inoltre elencati gli assembly di riferimento corrispondenti agli assembly di runtime nelle cartelle AssemblyFoldersEx registrate usate da terzi.  
   
 ## <a name="multi-targeting"></a>Multitargeting  

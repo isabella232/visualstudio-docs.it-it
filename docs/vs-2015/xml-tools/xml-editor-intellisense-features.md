@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970113"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653645"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle di altri editor di linguaggio forniti in Visual Studio. Questa sezione illustra come usare IntelliSense con documenti XML Schema Definition Language (XSD) e XSLT.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in un documento XSD  

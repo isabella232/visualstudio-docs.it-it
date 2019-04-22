@@ -16,17 +16,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d42495542f96a4ae4918d9d6477f0877979871d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755006"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655894"
 ---
 # <a name="options-text-editor-file-extension"></a>Opzioni, Editor di testo, Estensione file
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La finestra di dialogo Opzioni consente di specificare il modo in cui tutti i file con determinate estensioni verranno gestiti nell'ambiente di sviluppo integrato (IDE) di Visual Studio. Per ogni **estensione** è possibile selezionare uno strumento di modifica. In questo modo è possibile scegliere l'editor dell'IDE o la finestra di progettazione in cui verranno aperti i documenti di un determinato tipo. Per visualizzare queste opzioni, scegliere **Opzioni** dal **Strumenti**, espandere il nodo **Editor di testo** e selezionare **Estensione di file**.  
   
  Quando si seleziona un'opzione "con codifica", ogni volta che si apre un documento del tipo specifico viene visualizzata una finestra di dialogo che consente di selezionare uno schema di codifica per il documento. Ciò può rivelarsi utile se si preparano versioni dei documenti di progetto da usare in piattaforme diverse o con lingue di destinazione diverse.  

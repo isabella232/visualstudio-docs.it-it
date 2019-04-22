@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597797"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654087"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzione contiene un tipo di file che Windows non riconosce, ad esempio un file di Microsoft Word, IIS non le consentirà nemmeno la trasmissione del file e la distribuzione non riuscirà.
@@ -49,7 +49,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticazione proxy e ClickOnce
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornisce il supporto per l'autenticazione di Windows integrata proxy a partire da .NET Framework 3.5. Nessun direttive Machine. config specifico sono necessari. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non fornisce supporto per altri protocolli di autenticazione, ad esempio di base o Digest.
 
- È anche possibile applicare un hotfix per .NET Framework 2.0 per abilitare questa funzionalità. Per ulteriori informazioni, vedere http://go.microsoft.com/fwlink/?LinkId=158730.
+ È anche possibile applicare un hotfix per .NET Framework 2.0 per abilitare questa funzionalità. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkId=158730.
 
  Per altre informazioni, vedere [ \<defaultProxy > (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
@@ -94,8 +94,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocollo FTP non è supportato per l'installazione di applicazioni
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supporta l'installazione di applicazioni da qualsiasi server Web HTTP 1.1 o un file server. FTP, il File Transfer Protocol, non è supportato per l'installazione di applicazioni. È possibile utilizzare FTP per la pubblicazione solo le applicazioni. Queste differenze sono riepilogate nella tabella seguente:
 
-
-| Tipo di URL | Description |
+| Tipo di URL | Descrizione |
 |----------| - |
 | ftp:// | È possibile pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
 | http:// | È possibile installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione utilizzando questo protocollo. |
@@ -110,7 +109,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 
  Per impostazione predefinita, Windows Server non dispone di estensioni del Server di FrontPage installate. Se si desidera utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per pubblicare in un server Web di Windows Server che utilizza il protocollo HTTP con le estensioni del Server di FrontPage, è necessario installare prima le estensioni del Server di FrontPage. È possibile eseguire l'installazione usando lo strumento di amministrazione di gestione Server in Windows Server.
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipi di contenuto bloccata
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipi di contenuto bloccato
  IIS in [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] Blocca tutti i tipi di file, ad eccezione di alcuni tipi di contenuto noti (ad esempio, *htm*, *. HTML*, *txt*e così via). Per abilitare la distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni che utilizzano questo server, è necessario modificare le impostazioni di IIS per consentire il download dei file di tipo *Application*, *manifest*e qualsiasi altro tipo di file personalizzato usato dall'applicazione.
 
  Se si distribuisce tramite un server IIS, eseguire *inetmgr.exe* e aggiungere nuovi tipi di File per la pagina Web predefinita:

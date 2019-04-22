@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763409"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654373"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Gli alias consentono di immettere un comando nella casella **Trova/Comando** o nella finestra di **comando** usando un testo ridotto per eseguire il comando. Ad esempio, anziché immettere `>File.OpenFile` per visualizzare la finestra di dialogo **Apri file** è possibile usare l'alias predefinito `>of`.
 
@@ -72,7 +71,7 @@ Gli alias consentono di immettere un comando nella casella **Trova/Comando** o n
 |[Comando Avvia](../../ide/reference/start-command.md)|V|Debug.Start|
 |[Comando Vai a](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Vai a parentesi graffa|GotoBrace|Edit.GotoBrace|
-|F1Help|?|Help.F1Help|
+|F1Help|Help|Help.F1Help|
 |Modalità immediata|immed|Tools.ImmediateMode|
 |Inserisci file come testo|InsertFile|Edit.InsertFileAsText|
 |[Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|

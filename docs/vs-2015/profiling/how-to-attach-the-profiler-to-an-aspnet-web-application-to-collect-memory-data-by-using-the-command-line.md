@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783472"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653281"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e raccogliere dati sul numero e le dimensioni delle allocazioni di memoria .NET Framework. È anche possibile raccogliere dati sulla durata degli oggetti di memoria di .NET Framework.  
@@ -76,7 +76,6 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                         Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.                                                                                                                         |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.                                                                                          |
-
 
 6. Avviare l'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nel modo usuale.  
 

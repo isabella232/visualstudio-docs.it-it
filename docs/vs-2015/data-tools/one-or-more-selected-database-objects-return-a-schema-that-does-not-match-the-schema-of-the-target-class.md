@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9696d41b228cedb301239ebcd59cb68bc7e437f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955150"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655556"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione. Non è stato aggiunto nulla alla finestra di progettazione.  
   
  Quando si trascinano oggetti di database in classi di entità esistenti, i dati restituiti dall'oggetto di database devono corrispondere allo schema della classe di entità di destinazione. Verificare che sia selezionato l'oggetto di database corretto e che la classe di entità di destinazione sia quella corretta.  

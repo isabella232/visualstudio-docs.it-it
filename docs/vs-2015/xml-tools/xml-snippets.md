@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654655"
 ---
 # <a name="xml-snippets"></a>Frammenti di codice XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'Editor XML offre una funzionalità denominata *frammenti di codice XML*, che consente di compilare più rapidamente i file XML. È possibile riutilizzare i frammenti di codice XML inserendoli nei file. È possibile inoltre generare dati XML basati su uno schema XSD (XML Schema Definition Language).  
   
 ## <a name="reusable-xml-snippets"></a>Frammenti di codice XML riutilizzabili  

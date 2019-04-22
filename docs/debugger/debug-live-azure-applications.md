@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857476"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656440"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Eseguire il debug di app di Azure ASP.NET attive con Snapshot Debugger
 
@@ -34,9 +34,14 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Snapshot Debugger è disponibile solo per Visual Studio 2017 Enterprise versione 15.5 o versioni successive con il **carico di lavoro Sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
+* Snapshot Debugger è solo disponibile a partire da Visual Studio 2017 Enterprise versione 15.5 o versione successiva con il **carico di lavoro sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
 
-    Se non è già installato, installare [Visual Studio 2017 Enterprise versione 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) o versione successiva. Se si sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire il programma di installazione di Visual Studio e selezionare il componente Snapshot Debugger nel **carico di lavoro Sviluppo ASP.NET e Web**.
+    ::: moniker range=">=vs-2019"
+    Se non è già installato, installarlo [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Se sta aggiornando un'installazione precedente di Visual Studio, eseguire l'installazione di Visual Studio e verificare il componente Debugger di Snapshot **carico di lavoro sviluppo ASP.NET e web**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se non è già installato, installare [Visual Studio 2017 Enterprise versione 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) o versione successiva. Se si sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire il programma di installazione di Visual Studio e selezionare il componente Snapshot Debugger nel **carico di lavoro Sviluppo ASP.NET e Web**.
+    ::: moniker-end
 
 * Piano di servizio app di Azure Basic o superiore.
 
@@ -73,7 +78,7 @@ In questa esercitazione si eseguono le attività seguenti:
   > L'estensione del sito Application Insights supporta anche il debug di snapshot. Se viene visualizzato un messaggio di errore "estensione del sito non aggiornata", vedere i [suggerimenti per la risoluzione dei problemi e i problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per informazioni dettagliate sull'aggiornamento.
 
    Visual Studio è ora in modalità debug di snapshot.
-   ![Modalità debug di snapshot](../debugger/media/snapshot-message.png)
+   ![Modalità di debug snapshot](../debugger/media/snapshot-message.png)
 
    Nella finestra **Moduli** viene indicato quando tutti i moduli sono caricati per il servizio app di Azure (scegliere **Debug > Finestre > Moduli** per aprire questa finestra).
 
@@ -112,7 +117,7 @@ Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno sn
 
 È anche possibile aggiungere ulteriori punti di acquisizione snapshot all'app e attivarli con il pulsante **Aggiorna raccolta**.
 
-**Per ulteriori informazioni, vedere** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
+**Serve aiuto?** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 

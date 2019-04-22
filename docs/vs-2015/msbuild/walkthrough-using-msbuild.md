@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655010"
 ---
-# <a name="walkthrough-using-msbuild"></a>Procedura dettagliata: utilizzo di MSBuild
+# <a name="walkthrough-using-msbuild"></a>Procedura dettagliata: Uso di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:  
   
 - Creazione e modifica di un file di progetto.  
@@ -242,7 +241,7 @@ $(PropertyName)
  Quasi tutti gli elementi di MSBuild possono avere un attributo Condition. Per altre informazioni sull'uso dell'attributo Condition, vedere [Condizioni](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Proprietà riservate  
- In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o percorso del File di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [MSBuild proprietà riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Variabili di ambiente  
  È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).  
@@ -424,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- aggiunge tutti i file con estensione ".cs" al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa "Designer". Per altri esempi, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
+ aggiunge tutti i file con estensione ".cs" al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa "Designer". Per altri esempi, vedere [Procedura: Escludi file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,  
   
@@ -577,7 +576,7 @@ $(PropertyName)
    Si noti che i metadati espressi in questa sintassi non causano la divisione in batch.  
   
 ## <a name="whats-next"></a>Argomenti successivi  
- Per informazioni su come creare un file di progetto semplice passaggio per passaggio, vedere [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Per informazioni su come creare un file di progetto semplice passaggio per passaggio, vedere [Procedura dettagliata: Creazione di un File di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Vedere anche
 [Panoramica di MSBuild](msbuild.md)  

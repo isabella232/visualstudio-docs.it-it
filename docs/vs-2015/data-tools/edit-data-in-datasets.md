@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968847"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656609"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Si modificano i dati in tabelle di dati proprio come si modificano i dati in una tabella in qualsiasi database. Può includere il processo di inserimento, aggiornamento ed eliminazione di record nella tabella. In un form con associazione a dati, è possibile specificare quali campi sono modificabili dall'utente. In questi casi, l'infrastruttura di associazione dati gestisce tutto il rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare tali modifiche nel database, è necessario utilizzare gli oggetti e metodi che eseguono il rilevamento delle modifiche per l'utente.  
   
  Oltre a modificare i dati effettivi, è possibile anche eseguire una query un <xref:System.Data.DataTable> per restituire righe specifiche di dati. Ad esempio, potrebbe eseguire una query per singole righe, versioni specifiche di righe (originale e proposte), le righe che sono stati modificati o righe che contengono errori.  

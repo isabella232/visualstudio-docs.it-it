@@ -11,17 +11,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41be21f3b28cccfe735a2a908851ebe3b181ce7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e0fdfc710abfc40005f3480e66b4411e93d0623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762895"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654724"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Modificando queste opzioni è possibile modificare il comportamento correlato a IntelliSense e il database di esplorazione quando si programma in C o C++.  
   
  Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo**e **C/C++**, quindi fare clic su **Sperimentale**.  

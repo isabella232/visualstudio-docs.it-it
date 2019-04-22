@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a436135d4acb27e9f875d6a0bd348e37b91c06a6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758447"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654035"
 ---
 # <a name="incremental-builds"></a>Compilazioni incrementali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le compilazioni incrementali sono compilazioni ottimizzate in modo da non eseguire le destinazioni con file di output aggiornati rispetto ai file di input corrispondenti. Un elemento di destinazione può avere sia un attributo `Inputs`, che indica quali elementi la destinazione accetta come input, sia un attributo `Outputs`, che indica quali elementi vengono generati come output. MSBuild tenta di trovare un mapping uno a uno tra i valori di questi attributi. Se esiste un mapping uno a uno, MSBuild confronta il timestamp di ogni elemento di input con il timestamp dell'elemento di output corrispondente. I file di output per cui non esiste un mapping uno a uno vengono confrontati con tutti i file di input. Un elemento viene considerato aggiornato se il relativo file di output è stato creato nello stesso momento dei relativi file di input o è più recente.  
   
  Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione. Questa *compilazione incrementale* della destinazione può migliorare significativamente la velocità di compilazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione, ma ignora gli elementi aggiornati e in questo modo tutti gli elementi vengono aggiornati. Questo processo è noto come *compilazione incrementale parziale*.  

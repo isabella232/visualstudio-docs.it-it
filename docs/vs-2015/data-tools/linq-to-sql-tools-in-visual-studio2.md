@@ -9,16 +9,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7dcb33add9726a341c1b4b92c032be7c289c2d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955148"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656934"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Strumenti LINQ to SQL in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 LINQ to SQL è la prima tecnologia di mapping relazionale a oggetti rilasciata da Microsoft. Funziona bene in scenari di base e continua a essere supportato in Visual Studio, ma non è più in fase di sviluppo. Usare LINQ to SQL per la manutenzione di un'applicazione legacy che è già in uso o in semplici applicazioni che usano SQL Server e non richiedono il mapping a più tabelle. In generale, le nuove applicazioni devono usare Entity Framework quando è necessario un livello di mapper relazionale a oggetti.
 

@@ -14,17 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 611b9c02fd7aaeb4621c4e59555fae2c6dfab247
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776144"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656947"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 > [!WARNING]
 >  Questo argomento non si applica alle app di Windows Store. Vedere [Avviare una sessione di debug (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) in Windows Dev Center.  
   
@@ -41,7 +40,7 @@ ms.locfileid: "54776144"
  **Piattaforma**  
  Specifica le impostazioni della piattaforma da visualizzare o modificare. Le scelte possono includere **Qualsiasi CPU** (impostazione predefinita), **x64** e **x86**. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
-## <a name="start-action"></a>Avvia azione  
+## <a name="start-action"></a>Azione di avvio  
  **Avvia azione** indica l'elemento da avviare durante il debug dell'applicazione: il progetto, un programma personalizzato, un URL o nulla. Per impostazione predefinita, questa opzione è impostata su **Avvia progetto**. L'impostazione **Avvia azione** nella pagina **Debug** determina il valore della proprietà `StartAction`.  
   
  **Avvia progetto**  
@@ -80,5 +79,5 @@ ms.locfileid: "54776144"
  [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Impostazioni di progetto per una configurazione di debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Gestione delle proprietà di debug](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

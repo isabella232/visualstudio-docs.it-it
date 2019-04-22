@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653892"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modificare la formattazione dei documenti mediante controlli CheckBox
   Questa procedura dettagliata illustra come usare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
@@ -67,7 +67,7 @@ ms.locfileid: "56621513"
 
 3.  Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Name**|**applyBoldFont**|
     |**per**|**Grassetto**|
@@ -76,7 +76,7 @@ ms.locfileid: "56621513"
 
 5.  Aggiungere una seconda casella di controllo al documento riportato di seguito il `ApplyBoldFont` casella di controllo e modificare le proprietà seguenti.
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Name**|**applyItalicFont**|
     |**per**|**Corsivo**|
@@ -85,7 +85,7 @@ ms.locfileid: "56621513"
 
 7.  Aggiungere una terza casella di controllo al documento riportato di seguito il `ApplyItalicFont` casella di controllo e modificare le proprietà seguenti.
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Name**|**applyUnderlineFont**|
     |**per**|**Carattere di sottolineatura**|
@@ -155,7 +155,6 @@ ms.locfileid: "56621513"
 -   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
 -   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
-
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)

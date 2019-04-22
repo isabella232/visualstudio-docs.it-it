@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2328b318c00b214138cf70e505c1988f8f1afc6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 75c1a94e9db6e1a141668f6ba314c39cedc3fd6c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802202"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655907"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Riprende la verifica nel contesto corrente.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,7 +36,7 @@ HRESULT WINAPI ResumeTracking();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il bit [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) impostato se la verifica è ripresa. Se non è possibile riprendere la verifica perché il contesto non è disponibile viene restituito [E_FAIL](<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->).  
+ Un ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il ([riuscito]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) bit impostato se verifica è ripresa. [E_FAIL](<!-- TODO: review code entity reference <xref:assetId:///E_FAIL?qualifyHint=False&amp;autoUpgrade=True>  -->) viene restituito se non è possibile riprendere il rilevamento perché il contesto non è disponibile.  
   
 ## <a name="requirements"></a>Requisiti  
  **Intestazione:** FileTracker.h  

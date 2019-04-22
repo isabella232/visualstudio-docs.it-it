@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780857"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654347"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: connettere il profiler a un servizio nativo per raccogliere dati di concorrenza tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un servizio nativo per raccogliere dati di concorrenza tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un servizio nativo (C/C++) e raccogliere dati di concorrenza di thread e processi tramite il metodo di campionamento.  
@@ -54,7 +54,6 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.       |
-
 
 3. Connettere il profiler al servizio digitando il comando seguente al prompt dei comandi:  
 

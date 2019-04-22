@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3ca198b88a8e42ba937ceb2426edd23793765b03
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792863"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656206"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 È possibile usare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma per modificare, eseguire il debug e distribuire codice iOS al simulatore iOS o a un dispositivo iOS. Tuttavia, a causa di restrizioni di licenza, il codice deve essere compilato ed eseguito in modalità remota su Mac. Per compilare ed eseguire le app iOS usando Visual Studio, è necessario installare e configurare l'agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), sul Mac. L'agente remoto gestisce le richieste di compilazione da parte di Visual Studio ed esegue l'app su un dispositivo iOS connesso a Mac o nel simulatore iOS su Mac.  
   
 > [!NOTE]
@@ -241,4 +240,4 @@ ms.locfileid: "54792863"
      dove *config_file_path* è il percorso di un file di configurazione in formato JSON. Le opzioni di avvio e i relativi valori non devono includere trattini.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

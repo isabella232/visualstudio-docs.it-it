@@ -20,22 +20,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e29a80c9cc3f492a19de630e2a09e1f15ca9c45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791439"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654997"
 ---
 # <a name="cppclean-task"></a>Attività CPPClean
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Elimina i file temporanei creati da MSBuild al momento della compilazione di un progetto Visual C++. Il processo di eliminazione dei file di compilazione è noto come *pulizia*.  
 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **CPPClean**.  
-
 
 |            Parametro            |                                                                                                Descrizione                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +43,7 @@ Elimina i file temporanei creati da MSBuild al momento della compilazione di un 
 |   **FilesExcludedFromClean**    |                                                    Parametro `String` facoltativo.<br /><br /> Specifica un elenco delimitato da punto e virgola dei file di cui non eseguire la pulizia.                                                    |
 |       **FoldersToClean**        | Parametro `String` obbligatorio.<br /><br /> Specifica un elenco delimitato da punto e virgola delle directory di cui eseguire la pulizia. È possibile specificare un percorso completo o relativo. Il percorso può contenere il carattere jolly (**\\**\*). |
 
-## <a name="remarks"></a>Osservazioni  
+## <a name="remarks"></a>Note  
 
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)

@@ -17,23 +17,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54364f40c25deb4a32431c42f74d76bbdd42b155
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5e2ec8a0cd854a04c338add22c3f90daf0bf14ba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802147"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656999"
 ---
 # <a name="updatemanifest-task"></a>Attività UpdateManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aggiorna le proprietà selezionate in un manifesto e ripete la firma.  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `UpdateManifest` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica il manifesto dell'applicazione.|  
 |`ApplicationPath`|Parametro `String` obbligatorio.<br /><br /> Specifica il percorso del manifesto dell'applicazione.|  

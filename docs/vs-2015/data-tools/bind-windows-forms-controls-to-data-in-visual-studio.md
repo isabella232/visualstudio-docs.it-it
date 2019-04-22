@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968040"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653996"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 È possibile visualizzare i dati agli utenti dell'applicazione mediante l'associazione dati a un Windows Form. Per creare questi controlli con associazione a dati, è possibile trascinare elementi dal **Zdroje dat** finestra in Progettazione Windows Form in Visual Studio. Questo argomento descrive alcune delle più comuni attività, strumenti e le classi coinvolte nella creazione di applicazioni di Windows Form con associazione a dati.
 

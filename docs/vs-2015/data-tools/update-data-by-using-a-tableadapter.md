@@ -21,17 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec53e42a5e49d48e76c6c00e2ffbd5a8a3daafa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967749"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653751"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aggiornare i dati mediante un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dopo aver modificati i dati nel set di dati e convalidati, è possibile inviare i dati aggiornati all'oggetto chiamando il metodo databaseby il `Update` metodo di un oggetto TableAdapter. Il `Update` metodo aggiorna una singola tabella di dati ed esegue il comando corretto (INSERT, UPDATE o DELETE) in base il <xref:System.Data.DataRow.RowState%2A> di ogni riga di dati nella tabella. Quando un set di dati dispone di tabelle correlate, Visual Studio genera una classe di TableAdapterManager utilizzabili per eseguire gli aggiornamenti. La classe di TableAdapterManager assicura che gli aggiornamenti vengono eseguiti nell'ordine corretto in base ai vincoli di chiave esterna che sono definiti nel database. Quando si usano controlli associati a dati, l'architettura di Data Binding crea una variabile membro della classe TableAdapterManager chiamata tableAdapterManager. Per altre informazioni, vedere [Cenni preliminari sull'aggiornamento gerarchico](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]

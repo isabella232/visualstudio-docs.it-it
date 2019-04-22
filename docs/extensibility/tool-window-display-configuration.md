@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707042"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653775"
 ---
 # <a name="tool-window-display-configuration"></a>Configurazione visualizzazione della finestra degli strumenti
 Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, stile di ancoraggio e altre informazioni sulla visibilità è specificato in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere [strumento Windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md)
@@ -35,10 +35,9 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
 
-
-| nome | Tipo | Dati | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 |-----------------|-----------| - | - |
-| nome | REG_SZ | "Short name goes here" | Nome breve che descrive la finestra degli strumenti. Utilizzato solo per riferimento nel Registro di sistema. |
+| Nome | REG_SZ | "Short name goes here" | Nome breve che descrive la finestra degli strumenti. Utilizzato solo per riferimento nel Registro di sistema. |
 | Float | REG_SZ | "X1, Y1, X2, Y2" | Quattro valori delimitati da virgole. X1, Y1 è le coordinate dell'angolo superiore sinistro della finestra degli strumenti. X2, Y2 sia le coordinate dell'angolo inferiore destro. Tutti i valori sono nelle coordinate dello schermo. |
 | Stile | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Collegato"<br /><br /> "Schede"<br /><br /> "AlwaysFloat" | Una parola chiave specifica iniziale visualizzare lo stato della finestra degli strumenti.<br /><br /> "MDI" = ancorate con finestra MDI.<br /><br /> "Mobile" = mobile.<br /><br /> "Collegate" = collegata a un'altra finestra (specificata nella voce della finestra).<br /><br /> "Schede" = combinati con un'altra finestra degli strumenti.<br /><br /> "AlwaysFloat" = non può essere ancorata.<br /><br /> Per altre informazioni, vedere la sezione commenti riportata di seguito. |
 | Finestra | REG_SZ | *\<GUID>* | Il GUID di una finestra in cui la finestra degli strumenti può essere collegata o a schede. Il GUID può appartenere a uno dei propri windows o una delle finestre nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
@@ -85,7 +84,7 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |(Predefinito)|REG_SZ|nessuno|Lasciare vuoto.|
 |*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|Facoltativo. Nome della voce deve essere il GUID di un comando che richiedono la visibilità. Il valore contiene solo una stringa informativa. In genere, il valore è un `reg_dword` impostato su 0.|
