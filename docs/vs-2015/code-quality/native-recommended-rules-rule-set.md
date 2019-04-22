@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001404"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658851"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Set di regole consigliate native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le regole consigliate Native orientate ai problemi più critici e comuni nel codice nativo, incluse potenziali lacune nella protezione e arresti anomali delle applicazioni.  È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.  Questo set di regole è progettato per funzionare con l'edizione di Visual Studio Professional e versioni successive.  
-
 
 |                                      Regola                                      |                                                             Descrizione                                                             |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

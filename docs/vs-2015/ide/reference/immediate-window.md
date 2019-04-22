@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802674"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660294"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.  
   
  È possibile usare questa finestra per eseguire singoli comandi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. I comandi disponibili includono `EvaluateStatement`, che consente di assegnare valori alle variabili. Il **immediato** finestra supporta anche IntelliSense.  

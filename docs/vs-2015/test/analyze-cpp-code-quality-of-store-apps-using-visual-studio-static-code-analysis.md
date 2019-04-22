@@ -1,5 +1,5 @@
 ---
-title: App Store di analisi statica del codice C++
+title: C++App Store di analisi statica del codice
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873243"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659826"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,8 +78,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ##  <a name="Warnings"></a> Avvisi di analisi del codice C++
  L'analisi del codice genera gli avvisi seguenti per il codice C++:
 
-
-|                                      Regola                                      |                                                  Description                                                  |
+|                                      Regola                                      |                                                  Descrizione                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          Utilizzo di memoria non inizializzata                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          Dereferenziazione del puntatore Null                                           |
@@ -133,7 +132,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Percorso irraggiungibile stringa dimensioni non valida                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Stile stringa formato non riconosciuto                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Specifica di dimensione non valida: espressione non analizzabile                              |

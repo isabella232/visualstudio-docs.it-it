@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630522"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658398"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 Tipi di progetto devono registrare le directory in cui si trovano i relativi modelli di progetto ed elemento di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Usa le informazioni di registrazione associate ai tipi di progetto per determinare gli elementi da visualizzare nel **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** finestre di dialogo.
@@ -37,7 +37,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|nome|Tipo|Descrizione|
+|Nome|Tipo|Descrizione|
 |----------|----------|-----------------|
 |@|REG_SZ|Nome predefinito di progetti di questo tipo.|
 |DisplayName|REG_SZ|ID risorsa del nome da recuperare dalla DLL satellite registrato in pacchetti.|
@@ -55,8 +55,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064
 ```
 
-
-| nome | Tipo | Descrizione |
+| Nome | Tipo | Descrizione |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID risorsa per i modelli di elemento aggiunta. |
 | TemplatesDir | REG_SZ | Percorso degli elementi di progetto visualizzato nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata. |
@@ -83,7 +82,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064
 ```
 
-|nome|Tipo|Descrizione|
+|Nome|Tipo|Descrizione|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Cerca nei file** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|
 |CommonOpenFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Apri File** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|

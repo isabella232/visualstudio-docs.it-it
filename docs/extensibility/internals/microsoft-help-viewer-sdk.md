@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868301"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660712"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -63,7 +63,7 @@ Stringhe lingua supportate (non maiuscole / minuscole):
 
 -   JavaScript
 
--   in C# o CSharp
+-   in c# o CSharp
 
 -   cplusplus o Visual c++ o c + +
 
@@ -352,14 +352,13 @@ Aggiungere la seguente chiave del Registro di sistema e il valore:
 
 ::: moniker-end
 
-Valore: Visualizzazione Output di Debug nei dati delle vendite al dettaglio: SÌ
+Valore: Visualizzazione Output di Debug nei dati delle vendite al dettaglio: YES
 
 Nell'IDE, sotto la voce di menu della Guida, selezionare **Debug contesto Guida**.
 
 **Contenuto dei metadati**
 
 Nella tabella seguente, qualsiasi stringa che viene visualizzato tra parentesi quadre è un segnaposto che dovrà essere sostituito da un valore riconosciuto. Ad esempio, in \<meta name="Microsoft.Help.Locale" contenuto = "[codice di lingua]" / >, "[codice di lingua]" deve essere sostituito da un valore, ad esempio "en-us".
-
 
 | Proprietà (rappresentazione HTML) | Descrizione |
 | - | - |

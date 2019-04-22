@@ -11,17 +11,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f60f952b5784b0901c89f0c1f846ac39e6212a6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800788"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660152"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Suggerimenti sull'accessibilità
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include funzionalità di accessibilità incorporate che consentono di operare facilmente dalla tastiera e usare utilità per la lettura o altri dispositivi di assistenza per utenti disabili. In questo argomento sono riportati alcuni suggerimenti per l'ottimizzazione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] relativamente all'accessibilità, nonché alcune utili combinazioni di tasti.  
   
 > [!NOTE]
@@ -33,7 +32,7 @@ ms.locfileid: "54800788"
 ## <a name="common-windows-shortcut-key-combinations"></a>Combinazioni di tasti comuni di Windows  
  Per eseguire attività all'interno di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è possibile usare molte delle combinazioni di tasti standard di Windows. Tra queste combinazioni di tasti sono incluse le seguenti:  
   
-|Descrizione|Combinazione di tasti|  
+|Description|Combinazione di tasti|  
 |-----------------|---------------------|  
 |Consente di attivare e disattivare l'impostazione Contrasto elevato|**ALT di sinistra + MAIUSC di sinistra + STAMP**|  
 |Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo|**BARRA SPAZIATRICE**|  
@@ -44,7 +43,7 @@ ms.locfileid: "54800788"
 ## <a name="hidden-visual-studio-shortcut-key-combinations"></a>Combinazioni di tasti nascoste di Visual Studio  
  Alcune funzionalità prevedono combinazioni di tasti che non vengono visualizzate nella finestra di dialogo Opzioni del riquadro Ambiente\Tastiera. Tra queste combinazioni di tasti sono incluse le seguenti:  
   
-|Funzionalità|Descrizione|Combinazione di tasti|  
+|Funzionalità|Description|Combinazione di tasti|  
 |-------------|-----------------|---------------------|  
 |Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti|**CTRL** + **Freccia SU**<br /><br /> e<br /><br /> **CTRL** + **Freccia GIÙ**|  
 |Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un modulo o una finestra di progettazione|**INVIO**|  

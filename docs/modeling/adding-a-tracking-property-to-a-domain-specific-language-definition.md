@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944533"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657389"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -45,7 +45,6 @@ In questa procedura dettagliata, si crea un linguaggio specifico di dominio (DSL
 ## <a name="prerequisites"></a>Prerequisiti
 
 Prima di iniziare questa procedura dettagliata, è innanzitutto necessario installare questi componenti:
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ Se si prevede di usare rilevamento più di una proprietà o implementare proprie
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Procedura: Creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Procedura: Creare una soluzione per un linguaggio specifico di dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)

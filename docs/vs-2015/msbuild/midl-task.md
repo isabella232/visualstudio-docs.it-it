@@ -27,17 +27,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782475"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657428"
 ---
 # <a name="midl-task"></a>Attività MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Esegue il wrapping dello strumento di compilazione Microsoft Interface Definition Language (MIDL), midl.exe. Per altre informazioni, vedere "MIDL Command-Line Reference" (Informazioni di riferimento sulla riga di comando MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
 ## <a name="parameters"></a>Parametri  
@@ -91,7 +90,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -115,7 +114,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**None**|**/error none**|  
     |**EnableCustom**|**/error**|  
@@ -303,7 +302,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**NotSet**|*\<nessuno>*|  
     |**1**|**/Zp1**|  
@@ -337,7 +336,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**NotSet**|*\<nessuno>*|  
     |**Win32**|**/env win32**|  
@@ -360,7 +359,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Value|Opzione della riga di comando|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  

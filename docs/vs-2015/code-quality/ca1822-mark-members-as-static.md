@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001829"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659774"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Contrassegna i membri come statici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio, vedere [CA1822: Contrassegnare i membri come statici](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [CA1822: Contrassegnare i membri come statici](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |TypeName|MarkMethodsAsStatic|  
 |CheckId|CA1822|  
 |Category|Microsoft.Performance|  
-|Modifica importante|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dalle modifiche apportate. Non importante: se si modifica semplicemente il membro a un membro di istanza con il `this` (parola chiave).<br /><br /> Rilievo - se si modifica il membro da un membro di istanza a un membro statico ed è visibile all'esterno dell'assembly.|  
+|Modifica importante|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dalle modifiche apportate.<br /><br /> Non sostanziale - Se si modifica semplicemente il membro a un membro di istanza con il `this` (parola chiave).<br /><br /> Rilievo - se si modifica il membro da un membro di istanza a un membro statico ed è visibile all'esterno dell'assembly.|  
   
 ## <a name="cause"></a>Causa  
  Un membro che non accede ai dati dell'istanza non è contrassegnato come static (Shared in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  

@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798904"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659814"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Procedura: selezionare i file da compilare
+# <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si compila un progetto che contiene molti file, è possibile elencare separatamente ogni file nel file di progetto oppure è possibile usare caratteri jolly per includere tutti i file contenuti in una directory o in un set nidificato di directory.  
   
 ## <a name="specifying-inputs"></a>Specifica di input  
@@ -174,5 +173,5 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Procedura: Escludi file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Elementi](../msbuild/msbuild-items.md)

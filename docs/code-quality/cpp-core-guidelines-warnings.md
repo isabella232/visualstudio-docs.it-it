@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323451"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661386"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 
@@ -95,7 +95,6 @@ Come vengono aggiunte nuove regole per il controllo di linee guida di base di C+
   - **Regole dei limiti** applicare le [delimita profilo delle linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
   - **Regole di tipo** applicare le [tipo di profilo delle linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
-
 
 È possibile scegliere di limitare gli avvisi solo da uno o più dei gruppi. Il **minimo Native** e **consigliato Native** regola set di includono le regole di controllo di base di C++ oltre a altri controlli di PREfast. Per visualizzare il disponibili set di regole, aprire la finestra di dialogo proprietà del progetto, selezionare **codice Analysis\General**, aprire l'elenco a discesa nel **set di regole** casella combinata e pick **Scegli più set di regole** . Per altre informazioni sull'uso di set di regole in Visual Studio, vedere [usando i set di regole per raggruppare regole di analisi codice](using-rule-sets-to-group-code-analysis-rules.md).
 

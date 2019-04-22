@@ -16,17 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772586"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660528"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Riferimenti dello schema del file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con gli attributi e gli elementi figlio disponibili.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] usa i file di progetto per indicare al motore di compilazione che cosa compilare e come compilarlo. I file di progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sono file XML che rispettano l'XML Schema di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Questa sezione documenta il file XSD (XML Schema Definition) per [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

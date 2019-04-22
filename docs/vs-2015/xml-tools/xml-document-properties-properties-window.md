@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 957abb04b6da602b711bef55b8ff8e62edaecaac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4b1441ef6547fe955734fd7556b27a08781461c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969989"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660658"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà dei documenti XML, finestra Proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Il **proprietà** finestra fornisce informazioni di base relative al documento attivo nell'Editor XML. Le proprietà disponibili variano in base al tipo di documento XML correntemente attivo.  
   
 > [!NOTE]

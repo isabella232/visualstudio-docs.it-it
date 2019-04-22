@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504250"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660697"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per il riconoscimento di Monitor per estensioni di Visual Studio
 Versioni precedenti a Visual Studio 2019 era relativo contesto di riconoscimento DPI imposta sistema compatibile con, piuttosto che per ogni monitoraggio compatibili con DPI (PMA). Esecuzione della consapevolezza del sistema ha restituito un oggetto visivo con funzionalità ridotto verifichi (i tipi di carattere, ad esempio sfocati o le icone) ogni volta che Visual Studio doveva eseguire il rendering su monitor con fattori di scala diversa o remoto in computer con configurazioni diverse, ad esempio (diverse Windows scalabilità).
@@ -40,10 +40,13 @@ Vedere la [sviluppo di applicazioni Desktop DPI elevato in Windows](https://docs
 ## <a name="enabling-pma"></a>Abilitazione PMA
 Per abilitare PMA in Visual Studio, è necessario soddisfare i requisiti seguenti:
 1)  Windows 10 April 2018 Update (v1803, RS4) o versione successiva
-2)  Versione RTM di .NET framework 4.8 o versione successiva (attualmente è disponibile come anteprima autonomo o bundle con recenti Windows build Insider)
+2)  Versione RTM di .NET framework 4.8 o versione successiva
 3)  Visual Studio 2019 con il ["Ottimizzare il rendering per le schermate con densità di pixel diversa"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) opzione abilitata
 
 Una volta soddisfatti questi requisiti, Visual Studio verrà abilitata automaticamente la modalità PMA nell'intero processo.
+
+> [!NOTE]
+> Contenuto di Windows Forms in Visual Studio (ad esempio proprietà Browser) supporterà PMA solo quando si dispone di Visual Studio 2019 Update #1.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Le estensioni per i problemi PMA di test
 
@@ -106,12 +109,18 @@ Ogni volta che all'interno di scenari DPI in modalità mista (ad esempio, divers
 #### <a name="out-of-process-ui"></a>Interfaccia utente di out-of-process
 Parte dell'interfaccia utente viene creato out-of-process e se il processo esterno creazione in una modalità di compatibilità DPI diversi rispetto a Visual Studio, questo può causare i problemi di rendering precedente.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows non vengono visualizzati, immagini o controlli Windows Form
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Controlli Windows Form, immagini o layout viene eseguito il rendering in modo non corretto
+Non tutto il contenuto di Windows Form supporta la modalità PMA. Di conseguenza, si può vedere il rendering di problema di layout non corretto o la scalabilità. In questo caso una possibile soluzione consiste in modo esplicito il rendering del contenuto di Windows Form in DpiAwarenessContext "Sistema compatibile con" (si intende [forzare un controllo in un determinato DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Controlli Windows Form o windows non visualizzati
 Una delle cause principali per risolvere questo problema è sviluppatori tentando di assegnare un nuovo elemento di un controllo o finestra con una DpiAwarenessContext a una finestra con una diversa DpiAwarenessContext.
 
-Le figure seguenti illustrano le restrizioni di sistema operativo di Windows corrente nel padre di windows:
+Le figure seguenti illustrano l'oggetto corrente **predefinito** restrizioni di sistema operativo Windows nel padre di windows:
 
 ![Screenshot del comportamento corretto genitorialità](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> È possibile modificare questo comportamento impostando il comportamento di Hosting di Thread (si intende [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Di conseguenza, se si imposta la relazione padre-figlio tra le modalità non supportate, viene restituito un errore e il controllo o la finestra non vengono visualizzata come previsto.
 

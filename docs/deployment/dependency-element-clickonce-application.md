@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612673"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658058"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dipendenza&gt; elemento (applicazione ClickOnce)
 Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'applicazione.
@@ -96,7 +96,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 
  `dependentOS` supporta gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`supportUrl`|Facoltativo. Specifica un URL di supporto per la piattaforma di dipendenti. L'URL viene visualizzato all'utente se viene trovata la piattaforma richiesta.|
 |`description`|Facoltativo. Descrive, in forma leggibile, il sistema operativo descritto dal `dependentOS` elemento.|
@@ -107,7 +107,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="os"></a>Sistema operativo
  Obbligatorio. Questo elemento è figlio dell'elemento `osVersionInfo` . Questo elemento ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`majorVersion`|Obbligatorio. Specifica il numero di versione principale del sistema operativo.|
 |`minorVersion`|Obbligatorio. Specifica il numero di versione secondaria del sistema operativo.|
@@ -122,8 +122,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 
  `dependentAssembly` ha gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |-----------------------| - |
 | `dependencyType` | Obbligatorio. Specifica il tipo di dipendenza. I valori validi sono `preprequisite` e `install`. Un' `install` assembly viene installato come parte di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Oggetto `prerequisite` assembly deve essere presente nella global assembly cache (GAC) prima di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata. |
 | `allowDelayedBinding` | Obbligatorio. Specifica se l'assembly può essere caricato a livello di codice in fase di esecuzione. |
@@ -134,7 +133,7 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="assemblyidentity"></a>assemblyIdentity
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly` e ha l'attributo seguente.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`name`|Obbligatorio. Identifica il nome dell'applicazione.|
 |`version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|
@@ -153,23 +152,21 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 ### <a name="dsigtransform"></a>dsig:Transform
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ### <a name="dsigdigestmethod"></a>dsig: DigestMethod
  Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
 ### <a name="dsigdigestvalue"></a>dsig:
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Tutti gli assembly usati dall'applicazione devono avere una corrispondente `dependency` elemento. Gli assembly dipendenti non includono gli assembly che devono essere preinstallati nella global assembly cache degli assembly di piattaforma.
 
 ## <a name="example"></a>Esempio

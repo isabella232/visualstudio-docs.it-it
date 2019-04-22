@@ -14,17 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773038"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657506"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file microsoft.common.tasks, un file microsoft.common.targets e compilatori come csc.exe e vbc.exe. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Attributo ToolsVersion  
@@ -72,7 +71,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
   
 - Con i metodi <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
-  Le proprietà del set di strumenti specificano i percorsi degli strumenti. MSBuild usa il valore dell'attributo `ToolsVersion` nel file di progetto per individuare la chiave corrispondente del Registro di sistema e quindi usa le informazioni della chiave del Registro di sistema per impostare le proprietà del set di strumenti. Ad esempio, se `ToolsVersion` ha il valore `12.0`, MSBuild imposterà le proprietà del set di strumenti in base alla chiave del Registro di sistema HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Le proprietà del set di strumenti specificano i percorsi degli strumenti. MSBuild usa il valore dell'attributo `ToolsVersion` nel file di progetto per individuare la chiave corrispondente del Registro di sistema e quindi usa le informazioni della chiave del Registro di sistema per impostare le proprietà del set di strumenti. Se, ad esempio, `ToolsVersion` ha il valore `12.0`, MSBuild imposta le proprietà del set di strumenti in base alla chiave del Registro di sistema HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   Le proprietà del set di strumenti sono:  
   
