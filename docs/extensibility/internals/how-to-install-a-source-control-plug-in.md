@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9e368a318b2f6c552ce815c839e73f0a18ea5c9b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323386"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648802"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: Installare un plug-in del controllo del codice sorgente
 Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
@@ -37,7 +37,7 @@ Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
 
 1. Aggiungere due voci con i **HKEY_LOCAL_MACHINE** chiave nel **SOFTWARE** sottochiave che specifica la sottochiave nome società aggiungendo la sottochiave del nome di prodotto. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\\\<nome società >\\\<nome prodotto >\\\<voce >**  =  *valore*. Le due voci vengono sempre chiamate **SCCServerName** e **SCCServerPath**. Ognuno è una stringa normale.
 
-    Ad esempio, se il nome della società è Microsoft e il controllo del codice sorgente è denominato SourceSafe, quindi questo percorso del Registro di sistema sarebbe **HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe**. Questa sottochiave, la prima voce **SCCServerName**, è una stringa leggibile dall'utente di denominazione del prodotto. La seconda voce **SCCServerPath**, il percorso completo all'origine di controllare le DLL del plug-in cui deve connettersi l'IDE. Di seguito sono riportate le voci del Registro di sistema di esempio:
+    Ad esempio, se il nome della società è Microsoft e il controllo del codice sorgente è denominato SourceSafe, quindi questo percorso del Registro di sistema sarebbe **HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe.**. Questa sottochiave, la prima voce **SCCServerName**, è una stringa leggibile dall'utente di denominazione del prodotto. La seconda voce **SCCServerPath**, il percorso completo all'origine di controllare le DLL del plug-in cui deve connettersi l'IDE. Di seguito sono riportate le voci del Registro di sistema di esempio:
 
    |Voce del Registro di sistema di esempio|Valore di esempio|
    |---------------------------|------------------|
@@ -61,7 +61,6 @@ Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
    | - |--------------|
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
-
 
 3. Aggiungere la sottochiave **SourceCodeControlProvider**, sotto il **HKEY_LOCAL_MACHINE** chiave nel **SOFTWARE** sottochiave.
 

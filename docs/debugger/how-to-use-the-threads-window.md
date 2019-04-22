@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790797"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procedura dettagliata: Debug di un'app con multithreading usando la finestra thread (C#, Visual Basic, C++)
@@ -37,7 +37,7 @@ Creare il progetto di app con multithreading seguenti da usare in questa esercit
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **Esc** per chiudere la finestra di avvio. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
 
     - Per C#, scegliere **Crea nuovo progetto App Console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
     - Per C++, scegliere **Crea nuovo progetto App Console**. Nella finestra di dialogo visualizzata scegliere **Crea**.
@@ -47,7 +47,7 @@ Creare il progetto di app con multithreading seguenti da usare in questa esercit
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di **nuovo progetto** dialogo finestra, scegliere le opzioni seguenti:
     - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
-    - Per un'app C++, sotto **Visual C++**, scegliere **Windows Desktop**, quindi scegliere **applicazione Console Windows**.
+    - Per un C++ app, sotto **Visual C++** , scegliere **Desktop di Windows**, quindi scegliere **applicazione Console di Windows**.
 
     Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **OK**.
     ::: moniker-end
@@ -56,7 +56,7 @@ Creare il progetto di app con multithreading seguenti da usare in questa esercit
 
     Verrà visualizzato il nuovo progetto **Esplora soluzioni**, e un file di origine denominata *Program.cs* oppure *MyThreadWalkthroughApp. cpp* viene aperto nella finestra del codice sorgente.
 
-1. Sostituire il codice nel file di origine con il C# o codice di esempio di C++ da [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md).
+1. Sostituire il codice nel file di origine con il C# o C++ esempio di codice dal [iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md).
 
 1. Selezionare **File** > **Salva tutto**.
 
@@ -109,7 +109,7 @@ Impostare e rimuovere i flag dei thread da editor del codice sorgente o dal **th
 
 1. Aprire il **posizione di Debug** sulla barra degli strumenti selezionando **View** > **barre degli strumenti** > **posizione di Debug**. È anche possibile fare doppio clic nell'area della barra degli strumenti e selezionare **posizione di Debug**.
 
-1. Il **posizione di Debug** sulla barra degli strumenti dispone di tre campi: **processo**, **Thread**, e **Stack Frame**. Elenco a discesa la **Thread** elencare e sono il numero di thread. Nel **Thread** elenco, il thread attualmente in esecuzione è contrassegnato da un **>** simbolo.
+1. Il **posizione di Debug** sulla barra degli strumenti dispone di tre campi: **Processo**, **Thread**, e **Stack Frame**. Elenco a discesa la **Thread** elencare e sono il numero di thread. Nel **Thread** elenco, il thread attualmente in esecuzione è contrassegnato da un **>** simbolo.
 
 1. Nella finestra del codice sorgente, passare il mouse su un'icona di marcatore del thread nella barra di navigazione e selezionare l'icona del contrassegno (o una delle icone flag vuoti) nel suggerimento dati. L'icona del contrassegno diventa rosso.
 

@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001104"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653268"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aspetto di selezione di oggetti grafici
  Quadratini di ridimensionamento sono quadratini disegnate in un modello rettangolare intorno alla casella di delimitazione dell'oggetto. Il grafico seguente mostra esempi dei vari stati che può disporre di un oggetto grafico con handle di ridimensionamento e aspetto modifica sul posto. Le dimensioni dei punti di controllo devono essere collegate al bordo della finestra ed edge le metriche usando il **GetSystemMetrics** API.
 
-
 |          Stato          |  Aspetto   |                                                                  Dettagli su Visual                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Non selezionato**      |    Impostazione predefinita    |                 ![Default button state](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
@@ -437,7 +436,6 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 >  **Messa a fuoco** e **selezione** sono due concetti diversi. *Messa a fuoco* è un valore che indica quale dell'interfaccia utente di elemento è destinato per ricevere l'input non esplicitamente dirette a un altro oggetto, mentre *selezione* si riferisce allo stato dell'inclusione di un oggetto in un set di oggetti da cui successivi operazioni possono aver luogo.
 
  Selezioni negli elenchi possono essere contigui, non contiguo, o area geografica. Quando selezioni multiple sono consentite, contigui e selezione indipendente deve sempre essere supportate, mentre il supporto per le selezioni di area (casella) è facoltativo. Selezioni per l'area possono essere avviate tramite trascinamento nello spazio vuoto del corpo dell'elenco.
-
 
 | Object | Selection  |
 |--------|------------|
@@ -508,7 +506,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
  Una configurazione di finestre è la presentazione di base dell'ambiente di sviluppo, è un schema costituito l'elenco delle finestre degli strumenti presente e il modo in cui sono disposte. Per windows gestiti dall'IDE (windows IDE), le informazioni sul layout vengono resi persistenti per ogni utente, in modo che quando si avvia un utente dell'IDE, il layout di finestra viene visualizzato lo stesso come quando rimangono valide terminato Visual Studio. Lo stato e la posizione di windows dell'IDE viene mantenuto in un file di opzioni personalizzate in formato XML. Finestre degli strumenti che vengono create dai pacchetti caricati nell'IDE di rendere persistenti le informazioni sullo stato nel Registro di sistema e potrebbero o non sia per ogni utente.
 
 #### <a name="profile-specific-layouts"></a>Layout per il profilo
- Ogni profilo includerà i layout delle finestre degli strumenti, organizzati in modo familiare agli utenti specifici degli sviluppatori (agli sviluppatori di Visual C++ prevedono di vedere le **Esplora soluzioni** sul lato sinistro dell'IDE, mentre gli sviluppatori C# prevedono di vedere la  **Esplora soluzioni** sulla destra). Layout delle finestre per il profilo vengono caricate dopo che l'utente sceglie un profilo di avvio. Un autore del pacchetto deve determinare il layout di finestra più adatto per l'esperienza dei clienti, sapendo che le modifiche apportate dall'utente per la configurazione della finestra quindi vengono rese persistenti.
+ Ogni profilo includerà i layout delle finestre degli strumenti, organizzati in modo familiare agli utenti specifici degli sviluppatori (agli sviluppatori di Visual C++ prevedono di vedere le **Esplora soluzioni** sul lato sinistro dell'IDE, mentre gli sviluppatori c# prevedono di vedere la  **Esplora soluzioni** sulla destra). Layout delle finestre per il profilo vengono caricate dopo che l'utente sceglie un profilo di avvio. Un autore del pacchetto deve determinare il layout di finestra più adatto per l'esperienza dei clienti, sapendo che le modifiche apportate dall'utente per la configurazione della finestra quindi vengono rese persistenti.
 
 ##  <a name="BKMK_TouchInput"></a> Input tocco
  Gli utenti stanno utilizzando i prodotti di sviluppo Microsoft nei dispositivi di tocco. Tuttavia, esistono le barriere che rendono difficile usare gli strumenti di sviluppo nei dispositivi di tocco. Gli utenti si aspettano i prodotti per offrire un'esperienza touch affidabile e precisa. Lo scopo di queste linee guida è per guidare le decisioni sulle quali funzionalità di tocco di incorporare e per favorire un'esperienza touch coerente tra Visual Studio e i prodotti correlati.

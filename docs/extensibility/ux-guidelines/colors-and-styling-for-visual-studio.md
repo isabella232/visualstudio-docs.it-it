@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027711"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650629"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 
@@ -113,7 +113,6 @@ Nel file VSShell80.idl, l'enumerazione `__VSSYSCOLOREX` ha costanti dei colori d
 
 Se archiviano una penna o il pennello con un nuovo colore, è necessario `AdviseBroadcastMessages` (all'esterno di Visual Studio shell) e attendere `WM_SYSCOLORCHANGE` e `WM_THEMECHANGED` messaggi.
 
-
 Per accedere al servizio di colore nel codice nativo, è possibile effettuare una chiamata simile alla seguente:
 
 ```
@@ -125,7 +124,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ##### <a name="from-managed-code"></a>Dal codice gestito
 
-L'accesso al servizio VSColor attraverso il codice nativo è piuttosto semplice. Se si lavora con codice gestito, tuttavia, che determina come usare il servizio può essere difficile. Con tali presupposti, ecco un frammento di codice C# che illustra questo processo:
+L'accesso al servizio VSColor attraverso il codice nativo è piuttosto semplice. Se si lavora con codice gestito, tuttavia, che determina come usare il servizio può essere difficile. Con tali presupposti, ecco un frammento di codice c# che illustra questo processo:
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -359,7 +358,7 @@ Costruire un tipo speciale di voce del Registro di sistema categoria sotto `[HKL
 
 Popolare il Registro di sistema con due valori:
 
-| nome | Tipo | Dati | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | Il GUID del servizio di VSPackage che supporta la categoria |
@@ -372,7 +371,7 @@ Costruire un tipo speciale di voce del Registro di sistema categoria sotto `[HKL
 
 Popolare il Registro di sistema con due valori:
 
-| nome | Tipo | Dati | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | Il GUID del servizio di VSPackage che supporta la categoria |

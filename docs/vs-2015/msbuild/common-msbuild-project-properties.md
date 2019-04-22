@@ -19,24 +19,23 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650240"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione TARGETS forniti da MSBuild.  
   
  I file di progetto in Visual Studio (con estensione CSPROJ, VBPROJ, VCXPROJ e altre) contengono il codice XML di MSBuild che viene eseguito quando si compila un progetto usando l'IDE. I progetti importano generalmente uno o più file con estensione TARGETS per definire il processo di compilazione. Per altre informazioni, vedere [File con estensione targets](../msbuild/msbuild-dot-targets-files.md).  
   
 ## <a name="list-of-common-properties-and-parameters"></a>Elenco delle proprietà e dei parametri comuni  
   
-|Nome della proprietà o del parametro|Descrizione|  
+|Nome della proprietà o del parametro|Description|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|Specifica le cartelle aggiuntive nelle quali i compilatori devono cercare gli assembly di riferimento.|  
 |AddModules|Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questa proprietà è equivalente all'opzione del compilatore `/addModules`.|  

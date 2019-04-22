@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001608"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649446"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 > [!TIP] 
 > Per l'installazione dalla riga di comando e i riferimenti alla riga di comando, vedere la pagina della Guida per **msvsmon.exe** digitando ``msvsmon.exe /?`` nella riga di comando nel computer con installato Visual Studio (o passare a **Guida / utilizzo**nel debugger remoto).
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi:  
   

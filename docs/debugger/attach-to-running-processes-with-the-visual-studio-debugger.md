@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366406"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
@@ -197,7 +197,7 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
 
  Se si desiderano informazioni più specifiche sul motivo per cui il debugger non è stato possibile collegare a un tipo di codice, provare a ricollegare solo tale tipo di codice.
 
- **Per ottenere informazioni specifiche sul motivo per cui un tipo di codice non è stato possibile collegare:**
+ **Per ottenere informazioni specifiche sulla causa dell'errore di connessione a un tipo di codice:**
 
 1.  Disconnettersi dal processo. Nel **Debug** dal menu **Disconnetti tutto**.
 
@@ -218,5 +218,5 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
 ## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
-- [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Debug remoto](../debugger/remote-debugging.md)

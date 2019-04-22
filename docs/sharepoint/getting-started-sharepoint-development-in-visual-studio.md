@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504107"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Ottenere introduttiva (sviluppo per SharePoint in Visual Studio)
@@ -47,13 +47,13 @@ ms.locfileid: "59504107"
 |[Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Descrive come progettare pagine applicazione usando una finestra di progettazione.|
 |[Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Descrive come creare controlli personalizzati riutilizzabili per le pagine applicazione e le web part in SharePoint.|
 |[Esplorare le connessioni di SharePoint tramite Esplora Server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Descrive come spostarsi tra i componenti di un sito di SharePoint in una finestra degli strumenti di Visual Studio.|
-|[Compilare ed eseguire il debug di soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Viene descritto come compilare e delle soluzioni SharePoint eseguire il Debug.|
+|[Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Viene descritto come compilare e delle soluzioni SharePoint eseguire il Debug.|
 |[Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Viene descritto come pacchetto e distribuire soluzioni di SharePoint.|
 |[Estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Descrive come estendere gli strumenti di SharePoint per creare le funzionalità necessarie.|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
+- [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Esplorare le connessioni di SharePoint tramite Esplora Server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
-- [Compilare ed eseguire il debug di soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

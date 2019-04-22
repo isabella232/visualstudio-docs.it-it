@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599649"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649251"
 ---
-# <a name="test-area-5-change-source-control"></a>Area di test 5: Modifica controllo del codice sorgente
+# <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
 Quest'area del plug-in test di controllo del codice sorgente illustra la modifica il controllo del codice sorgente tramite il **Modifica controllo del codice sorgente** comando.
 
  **Modifica controllo del codice sorgente** comando fornisce quattro funzioni di base per l'utente:
@@ -45,7 +45,6 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 
 ### <a name="case-5a-bind"></a>Case 5a: Eseguire l'associazione
  Binding consente all'utente di aggiungere le informazioni sul controllo codice sorgente per i progetti selezionati e le soluzioni. L'utente è in genere viene richiesto di identificare un progetto nel controllo del codice sorgente in cui questi devono essere aggiunti. L'utente non può creare un nuovo progetto nel controllo del codice sorgente come parte di questa operazione (a contrasto elevato con Aggiungi al controllo del codice sorgente).
-
 
 | Operazione | Passi del test | Per verificare i risultati previsti |
 | - | - | - |

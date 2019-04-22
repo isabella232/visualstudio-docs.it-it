@@ -17,23 +17,22 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7b7757087b942132523bda81ece7f879b19a4ba
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3b97714fc707d8f9174a01dcc1fe7b3b59176de2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798838"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651579"
 ---
 # <a name="combinepath-task"></a>Attività CombinePath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Combina i percorsi specificati in un singolo percorso.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
  La tabella seguente descrive i parametri dell'[attività CombinePath](../msbuild/combinepath-task.md).  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`BasePath`|Parametro `String` obbligatorio.<br /><br /> Percorso base da combinare con gli altri percorsi. Può essere un percorso relativo, assoluto o vuoto.|  
 |`Paths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Elenco di singoli percorsi da combinare con l'oggetto BasePath per formare il percorso combinato. I percorsi possono essere relativi o assoluti.|  

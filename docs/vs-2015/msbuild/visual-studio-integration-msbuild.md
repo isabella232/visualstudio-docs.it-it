@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194509"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649264"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio ospita [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per caricare e compilare progetti gestiti. Poiché [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è responsabile del progetto, in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è possibile usare efficacemente praticamente qualsiasi progetto nel formato di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], anche se il progetto è stato creato da uno strumento diverso e presenta un processo di compilazione personalizzato.  
   
  In questo argomento vengono descritti aspetti specifici dell'hosting di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], da considerare quando si personalizzano progetti e file .TARGETS che si desidera caricare e compilare in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Queste considerazioni consentono di assicurarsi che funzionalità di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come IntelliSense e il debug funzionino con un progetto personalizzato.  

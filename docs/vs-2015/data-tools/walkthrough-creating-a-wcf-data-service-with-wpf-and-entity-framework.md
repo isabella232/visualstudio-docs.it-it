@@ -14,17 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966724"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653086"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] che è ospitato in un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione Web e quindi accedervi da un'applicazione Windows Forms.  
   
  In questa procedura dettagliata vengono illustrate le seguenti operazioni:  
@@ -145,7 +144,7 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
   
 1. Nella barra dei menu scegliere File, **Add**, **nuovo progetto**.  
   
-2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual Basic** o **Visual C#** nodo e scegliere il **Windows** nodo e quindi scegliere  **Windows Forms Application**.  
+2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual Basic** o **Visual c#** nodo e scegliere il **Windows** nodo e quindi scegliere  **Windows Forms Application**.  
   
 3. Nella casella di testo **Nome** immettere `NorthwindClient` e quindi scegliere il pulsante **OK**.  
   

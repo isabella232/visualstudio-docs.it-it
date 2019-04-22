@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970057"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653060"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini dati. Tuttavia, i dati degli strumenti per le applicazioni C++ in Visual Studio non avanzati come nel caso di applicazioni .NET. Ad esempio, le finestre di origini dati non sono utilizzabile per trascinamento della selezione di origini dati in un'area di progettazione di C++. Se è necessario un livello relazionale a oggetti, sarà necessario scriverne uno proprio, oppure utilizzare un prodotto di terze parti.  Lo stesso vale per la funzionalità di data binding, sebbene le applicazioni che usano la libreria Microsoft Foundation Class è possono usare alcune classi di database, insieme ai documenti e visualizzazioni, per archiviare i dati in memoria e la visualizza all'utente. Per altre informazioni, vedere [l'accesso ai dati in Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Per connettersi al database SQL, le applicazioni C++ native possono usare i driver ODBC e OLE DB e il provider ADO che sono inclusi in Windows.     Questi possono connettersi a qualsiasi database che supporta tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornito per compatibilità con le versioni precedenti. Per altre informazioni su queste tecnologie di dati, vedere [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

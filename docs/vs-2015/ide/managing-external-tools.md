@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866766"
 ---
 # <a name="managing-external-tools"></a>Gestione di strumenti esterni
@@ -78,11 +78,11 @@ ms.locfileid: "58866766"
   
 3.  Strumento di traccia ATL/MFC: mostra i messaggi di traccia di debug nelle origini ATL e MFC.  
   
-4.  PreEmptive Protection - Dotfuscator: protegge programmi .NET da attacchi di reverse engineering.  
+4.  PreEmptive Protection - Dotfuscator: Protegge programmi .NET da attacchi di reverse engineering.  
   
-5.  SPY++: mostra processi, thread, finestre e messaggi graficamente.  
+5.  SPY + +: Consente di visualizzare graficamente i processi, thread, windows e i messaggi della finestra.  
   
-6.  Editor configurazione servizi WCF: consente di creare e modificare le impostazioni di configurazione dei servizi WCF.  
+6.  Editor configurazione servizi WCF: Consente di creare e modificare le impostazioni di configurazione per i servizi WCF.  
   
 > [!WARNING]
 >  È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,7 +90,7 @@ ms.locfileid: "58866766"
 ## <a name="adding-new-tools"></a>Aggiunta di nuovi strumenti  
  È possibile aggiungere uno strumento esterno al menu **Strumenti**. Aprire la finestra di dialogo **Strumenti esterni**, fare clic su **Aggiungi**, quindi inserire le informazioni. L'immissione seguente consente ad esempio di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:  
   
-1.  Titolo: Apri percorso file  
+1.  Titolo: Apri percorso File  
   
 2.  Comando: explorer.exe  
   
@@ -102,7 +102,7 @@ ms.locfileid: "58866766"
 > [!NOTE]
 >  La barra di stato dell'IDE visualizza le variabili di Riga corrente e Colonna corrente per indicare dove si trova il punto di inserimento nell'Editor codice attivo. La variabile di Testo corrente restituisce il testo o codice selezionato in quella posizione.  
   
-|nome|Argomento|Description|  
+|Nome|Argomento|Descrizione|  
 |----------|--------------|-----------------|  
 |Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|  
 |Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|  

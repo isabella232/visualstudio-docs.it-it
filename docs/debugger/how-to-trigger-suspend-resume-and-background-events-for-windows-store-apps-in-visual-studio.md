@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790355"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospensione, ripresa e background eventi durante il debug di App UWP in Visual Studio
@@ -72,7 +72,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
 
 2.  Apri la pagina delle proprietà di debug per il progetto di avvio. Selezionare il progetto in Esplora soluzioni. Scegli **Proprietà** dal menu **Debug**.
 
-     Per i progetti C++, espandere **le proprietà di configurazione** e quindi scegliere **debug**.
+     Per C++ progetti, espandere **le proprietà di configurazione** e quindi scegliere **debug**.
 
 3.  Eseguire una delle operazioni seguenti:
 
@@ -80,7 +80,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
 
          ![C&#35;&#47;proprietà avvio applicazione debug Visual Basic](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Per i progetti Visual C++, scegli **No** dalle **Avvia applicazione** elenco.
+    -   Per oggetto visivo C++ progetti, scegliere **No** dal **Avvia applicazione** elenco.
 
          ![C&#43;&#43;&#47;proprietà di debug applicazione avviare VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

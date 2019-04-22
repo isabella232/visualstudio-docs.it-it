@@ -20,17 +20,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1011ccfe1609376dc496dc6eb8e7f50795fab5c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784499"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652371"
 ---
 # <a name="vcmessage-task"></a>Attività VCMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Registra gli avvisi e i messaggi di errore durante una compilazione.  
   
 ## <a name="remarks"></a>Osservazioni  
@@ -39,7 +38,7 @@ Registra gli avvisi e i messaggi di errore durante una compilazione.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **VCMessage**.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |**Argomenti**|Parametro **String** facoltativo.<br /><br /> Elenco delimitato da punto e virgola dei messaggi da visualizzare.|  
 |**Codice**|Parametro **String** obbligatorio.<br /><br /> Un numero di errore che qualifica il messaggio.|  

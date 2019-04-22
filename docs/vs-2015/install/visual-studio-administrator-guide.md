@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868884"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649368"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di amministratore di Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
+Per la documentazione più recente di Visual Studio, vedere la [Guida all'amministratore di Visual Studio](/visualstudio/install/visual-studio-administrator-guide).
 
 È possibile distribuire Visual Studio 2015 in una rete purché ogni computer di destinazione soddisfi le [requisiti di installazione minimi](https://visualstudio.microsoft.com/vs/older-downloads/). È possibile creare una condivisione di rete eseguendo il file di installazione con l'opzione /layout, come descritto nella pagina [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md), quindi copiarla dal computer locale alla condivisione di rete. Se si usa un'immagine ISO, è possibile montare l'immagine ISO e condividerla o copiarla in una condivisione di rete.  
   
@@ -40,7 +40,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di 
 ## <a name="error-return-codes"></a>Codici di errore restituiti  
  La tabella seguente riporta codici di errore importanti. È possibile usare questi codici di errore nell'automazione per decidere se è necessario un riavvio e se l'installazione è riuscita. Se si riceve un codice di errore, prendere in considerazione la risoluzione dei problemi nel [installazione di Visual Studio](../install/install-visual-studio-2015.md) pagina.  
   
-|Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|Description|  
+|Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|Descrizione|  
 |------------------|--------------------------|----------------------|-----------------|  
 |Riuscito|0x00000000 [0]|0x00000bc2 [3010]|Installazione riuscita.|  
 |Blocco|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se l'unico blocco da segnalare è "Riavvio in sospeso", il valore restituito è il valore Incompleto-Richiesto riavvio (0x80048bc7).|  
@@ -54,19 +54,20 @@ Per la documentazione più recente di Visual Studio 2017, vedere la [manuale di 
 ## <a name="controlling-what-is-installed"></a>Controllo dei componenti installati  
  Se si vuole controllare cosa può installare l'utente finale esistono due opzioni: l'installazione del file dell'amministratore e le opzioni da riga di comando. Selezionare l'installazione del file dell'amministratore se l'obiettivo è quello di limitare le scelte dell'utente finale nell'esperienza di installazione di Visual Studio. Selezionare i parametri della riga di comando se si intende creare una configurazione iniziale ma si vuole consentire all'utente finale di personalizzare la propria esperienza di installazione di Visual Studio.  
   
- Per altre informazioni sull'esperienza relativa al file dell'amministratore, vedere [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) e [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Per altre informazioni sui controlli della riga di comando, vedere la [utilizzare i parametri della riga di comando per installare Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pagina.  
+ Per altre informazioni sull'esperienza di file dell'amministratore, vedere [come: Creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) e [come: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Per altre informazioni sui controlli della riga di comando, vedere la [utilizzare i parametri della riga di comando per installare Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pagina.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Specifica delle impostazioni dei commenti e suggerimenti del cliente  
- Per impostazione predefinita, l'installazione di Visual Studio consente l'invio di commenti dei clienti. È possibile configurare Visual Studio per disabilitare i suggerimenti dei clienti nei singoli computer modificando in stringa "0" il valore della chiave seguente del Registro di sistema:  
+
+Per impostazione predefinita, l'installazione di Visual Studio consente l'invio di commenti dei clienti. È possibile configurare Visual Studio per disabilitare i suggerimenti dei clienti nei singoli computer modificando in stringa "0" il valore della chiave seguente del Registro di sistema:  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- Ad esempio, modificare il valore in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0"  
+Ad esempio, modificare il valore in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0"  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Argomento|Description|  
+|Argomento|Descrizione|  
 |-----------|-----------------|  
 |[Procedura: Installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Viene descritto come installare configurazioni specifiche della versione corrente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Procedura: Creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica.|  

@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790628"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Eseguire il debug del codice di esempio HTML e CSS
 
-Il codice in questo argomento è il file di esempio per [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.
+Il codice in questo argomento è il file di esempio per [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.
 
 ## <a name="sample-code"></a>Codice di esempio
 Il codice HTML seguente viene usato nel tag \<body> della guida introduttiva.
@@ -102,4 +102,4 @@ Nell'esempio di codice seguente viene illustrato il codice JavaScript completo i
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

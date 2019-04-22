@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da625db79e8738bad2a5e73ceee5d8b0adb6603d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605146"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651838"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.
@@ -44,7 +44,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  L'elemento `PackageFiles` presenta l'attributo seguente:
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`CopyAllPackageFiles`|Facoltativo. Se impostato su `false`, il programma di installazione scaricherà solo i file a cui fa riferimento il `Command` elemento. Se impostato su `true`, verranno scaricati tutti i file.<br /><br /> Se impostato su `IfNotHomesite`, il programma di installazione si comporterà come se `False` se `ComponentsLocation` è impostata su `HomeSite`e in caso contrario, si comportano allo stesso come se `True`. Questa impostazione può essere utile per consentire ai pacchetti che sono essi stessi programmi di bootstrap eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|
 
@@ -53,8 +53,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 
  `PackageFile` ha gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |---------------| - |
 | `Name` | Obbligatorio. Il nome del file del pacchetto. Si tratta del nome che il `Command` elemento farà riferimento quando definisce le condizioni in cui viene installato un pacchetto. Questo valore viene anche utilizzato come chiave nel `Strings` tabella per recuperare il nome localizzato che gli strumenti, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà utilizzato per descrivere il pacchetto. |
 | `HomeSite` | Facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione. |

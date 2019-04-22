@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b55dba438280fc4579fe15bd2a423d323c38abf6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767283"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648247"
 ---
 # <a name="proxy-authorization-required"></a>Autorizzazione del proxy richiesta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Generalmente questo errore si verifica quando gli utenti sono connessi a Visual Studio Online tramite un server proxy e il server proxy blocca le chiamate. Visual Studio Online viene usato per mantenere l'utente connesso all'IDE.  
   
 ## <a name="to-correct-this-error"></a>Per correggere l'errore  
