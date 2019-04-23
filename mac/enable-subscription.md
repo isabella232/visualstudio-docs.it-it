@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987641"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856406"
 ---
 # <a name="enable-subscription"></a>Abilitare la sottoscrizione
 
@@ -40,10 +40,10 @@ Attualmente, non è possibile usare un codice Product Key per abilitare i diritt
 
 > [!NOTE]
 > L'attivazione offline non è disponibile per Visual Studio per Mac.
-> Per attivare la sottoscrizione a Visual Studio 2017 per Mac Professional o Enterprise, è necessaria la connessione a Internet al momento dell'accesso.
+> Per attivare la sottoscrizione a Visual Studio 2019 per Mac Professional o Enterprise, è necessaria la connessione a Internet al momento dell'accesso.
 
-Se si è acquistato Visual Studio Enterprise 2017 per Mac per computer senza connessione Internet, è possibile usarlo senza attivazione, ma Xamarin Inspector e Xamarin Profiler e le funzionalità degli assembly incorporati non saranno disponibili.
+Se si è acquistato Visual Studio Enterprise 2019 per Mac per computer senza connessione Internet, è possibile usarlo senza attivazione, ma Xamarin Inspector e Xamarin Profiler e le funzionalità degli assembly incorporati non saranno disponibili.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accesso a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Accedere a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)

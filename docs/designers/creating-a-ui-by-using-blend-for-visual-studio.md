@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941082"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647440"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Panoramica di Blend per Visual Studio
 
@@ -30,11 +30,18 @@ Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti al
 > [!NOTE]
 > Per una panoramica delle funzionalità di progettazione, ad esempio la tavola da disegno, la finestra **Struttura documento** e la finestra **Dispositivo**, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Panoramica del pannello Strumenti
+## <a name="tools-panel"></a>Pannello Strumenti
 
-È possibile usare il pannello **Strumenti** in Blend per Visual Studio per creare e modificare oggetti nell'applicazione. Per creare oggetti, si seleziona lo strumento e si disegna sulla tavola da disegno con il mouse.
+È possibile usare il pannello **Strumenti** in Blend per Visual Studio per creare e modificare oggetti nell'applicazione. Il pannello **Strumenti** è visualizzato sul lato sinistro della finestra di progettazione XAML quando è aperto un file *XAML*.
 
-![Pannello Strumenti](../designers/media/blend5toolspanel.png)
+Per creare oggetti, si seleziona lo strumento e si disegna sulla tavola da disegno con il mouse.
+
+![Pannello Strumenti in Blend per Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Alcuni degli strumenti nel pannello **Strumenti** presentano varianti (contrassegnate con le lettere da A a F nella figura). Per accedere a queste varianti, fare clic con il pulsante destro del mouse o fare clic e tenere premuto sullo strumento.
+>
+> ![Varianti dello strumento Forma in Blend per Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti al
 |![Strumenti per gli asset](../designers/media/b1_5.png)|**Strumenti per gli asset** Consente di accedere al pannello **Assets** e visualizzare l'ultimo asset usato nella libreria.|![Callout E](../designers/media/b5_label_e.png)|**Controlli testo**|
 |||![Callout F](../designers/media/b5_label_f.png)|**Controlli comuni**|
 
-**Breve video:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [The Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4) (Barra degli strumenti).
+## <a name="assets-window"></a>Finestra Asset
 
-## <a name="tour-of-the-assets-panel"></a>Panoramica del pannello Asset
+La finestra **Asset** contiene tutti i controlli disponibili ed è simile alla **casella degli strumenti** di Visual Studio. Oltre ai controlli, nella finestra **Asset** è disponibile tutto ciò che può essere aggiunto alla tavola da disegno, inclusi gli stili, gli elementi multimediali, i comportamenti e gli effetti. Per aprire la finestra **Asset**, scegliere **Visualizza** > **Finestra Asset** oppure premere **CTRL**+**ALT**+**X**.
 
-Tutti i controlli sono disponibili nel pannello **Assets**, che è simile alla **Casella degli strumenti** in Visual Studio. Oltre ai controlli, nel pannello **Asset** è disponibile tutto ciò che può essere aggiunto alla tavola da disegno, inclusi gli stili, gli elementi multimediali, i comportamenti e gli effetti.
-
-![Pannello Asset](../designers/media/blend5_assets_panel.png)
+![Finestra Asset in Blend per Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -59,13 +64,13 @@ Tutti i controlli sono disponibili nel pannello **Assets**, che è simile alla *
 |![Modalità griglia e modalità elenco](../designers/media/b1_2.png)|**Modalità griglia e Modalità elenco** Consente di passare dalla visualizzazione **Modalità griglia** alla visualizzazione **Modalità elenco** e viceversa.|
 |![Categorie di asset](../designers/media/b1_3.png)|**Categorie di asset** Fare clic su una categoria o sottocategoria per visualizzare l'elenco di asset corrispondente.|
 |![Stili](../designers/media/b1_4.png)|**Stili** Consente di visualizzare tutti gli stili disponibili nel dizionario risorse.|
-|![Descrizione](../designers/media/b1_5.png)|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
+|![Description](../designers/media/b1_5.png)|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Panoramica del pannello Oggetti e sequenza temporale
+## <a name="objects-and-timeline-window"></a>Finestra Oggetti e sequenza temporale
 
-Usare questo pannello per organizzare gli oggetti nella tavola da disegno e, se si vuole, per animarli.
+Usare questa finestra per organizzare gli oggetti nella tavola da disegno e, se si vuole, per animarli. Per aprire la finestra **Oggetti e sequenza temporale**, scegliere **Visualizza** > **Oggetti e sequenza temporale** oppure premere **CTRL**+**W**, **U**.
 
-![Pannello Oggetti e Sequenza temporale in modalità animazione](../designers/media/b5_object_timeline_animation.png)
+![Finestra Oggetti e sequenza temporale in modalità animazione](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Usare questo pannello per organizzare gli oggetti nella tavola da disegno e, se 
 |![Zoom sequenza temporale](../designers/media/b1_15.png)|**Zoom sequenza temporale** Consente di impostare la risoluzione di zoom della sequenza temporale. Lo zoom avanti permette di modificare un'animazione a un maggior livello di dettaglio, mentre lo zoom indietro permette di ottenere una panoramica del comportamento di un'animazione su periodi di tempo più lunghi. Se si applica lo zoom avanti, ma non è possibile impostare un fotogramma chiave nella posizione corrispondente all'istante desiderato, verificare che la risoluzione di snap sia sufficientemente elevata.|
 |![Callout 16](../designers/media/b5_label_16.png)|**Area di composizione della sequenza temporale** Consente di visualizzare la sequenza temporale e spostare i fotogrammi chiave trascinandoli o usando i relativi menu di scelta rapida.|
 
-## <a name="tour-of-the-properties-panel"></a>Panoramica del pannello Proprietà
+## <a name="properties-window"></a>Finestra Proprietà
 
-Usare questo pannello per visualizzare e modificare le proprietà di un oggetto. È anche possibile impostarle direttamente sulla tavola da disegno. In questo caso, le modifiche alle proprietà si rifletteranno nel pannello **Proprietà**.
+Usare questa finestra per visualizzare e modificare le proprietà di un oggetto. È anche possibile impostarle direttamente sulla tavola da disegno. In questo caso, le modifiche alle proprietà si riflettono nella finestra **Proprietà**. Per aprire la finestra **Proprietà**, scegliere **Visualizza** > **Finestra Proprietà** o premere **CTRL**+**W**, **P**.
 
-![Pannello Proprietà](../designers/media/blend5_properties_panel.png)
+![Finestra Proprietà in Blend per Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Categorie** Consente di espandere e comprimere le categorie delle proprietà. Fare clic su **Espandi** ![Espandi](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) e **Comprimi** ![Comprimi](../designers/media/b5_collapse_button.png) per visualizzare o nascondere i dettagli della categoria.
 
@@ -113,8 +118,6 @@ Usare questo pannello per visualizzare e modificare le proprietà di un oggetto.
 |![](../designers/media/b1_15.png)|**Valore hex** Consente di visualizzare il valore esadecimale del colore visualizzato.|
 |![Callout 16](../designers/media/b5_label_16.png)|**Cursore sfumatura** Viene visualizzato solo se è selezionato un pennello sfumato.|
 |![Mostra proprietà avanzate](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostra proprietà avanzate** Consente di visualizzare le categorie di proprietà che vengono usate meno.|
-
-**Breve video:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) (Configurare le funzionalità installate) [Properties panel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7) (Pannello Proprietà).
 
 ## <a name="see-also"></a>Vedere anche
 

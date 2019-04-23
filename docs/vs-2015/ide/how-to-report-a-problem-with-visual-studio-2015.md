@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834439"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665142"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Come segnalare un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [come segnalare un problema in Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Per la documentazione più recente di Visual Studio, vedere [Come segnalare un problema in Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
-Se si verifica un problema con Visual Studio 2015, è necessario conoscere in modo che Microsoft possa diagnosticarlo e risolverlo.  Con lo strumento **Segnala un problema** è possibile raccogliere informazioni dettagliate sul problema e inviarle a Microsoft in pochi clic.
+Se si verifica un problema con Visual Studio 2015, è opportuno segnalarlo a Microsoft in modo che possa diagnosticarlo e risolverlo.  Con lo strumento **Segnala un problema** è possibile raccogliere informazioni dettagliate sul problema e inviarle a Microsoft in pochi clic.
 
- Microsoft rispetta la privacy degli utenti. Per informazioni sul trattamento dei dati inviati a Microsoft, vedere l'[Informativa sulla privacy Microsoft per aziende e sviluppatori](https://www.visualstudio.com/dn948229).
+Microsoft rispetta la privacy degli utenti. Per informazioni sul trattamento dei dati inviati a Microsoft, vedere l'[Informativa sulla privacy Microsoft per aziende e sviluppatori](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Aprire lo strumento Segnala un problema
- Fare clic sull'icona dei commenti e suggerimenti utente accanto ad **Avvio veloce** sulla barra del titolo oppure fare clic su **? &#124; Commenti e suggerimenti &#124; Segnala un problema**.
 
- ![Voce di menu Segnala un problema](../ide/media/report-a-problem-menu-item.png "Voce di menu Segnala un problema")
+Fare clic sull'icona di feedback utente accanto ad **Avvio veloce** nella barra del titolo oppure fare clic su **Guida > Commenti e suggerimenti > Segnala un problema**.
+
+![Voce di menu Segnala un problema](../ide/media/report-a-problem-menu-item.png "Voce di menu Segnala un problema")
 
 ## <a name="describe-the-problem"></a>Descrivere il problema
 
@@ -43,7 +44,8 @@ Se si verifica un problema con Visual Studio 2015, è necessario conoscere in mo
    ![Finestra di dialogo Segnala un problema](../ide/media/report-a-problem-dialog.png "Finestra di dialogo Segnala un problema")
 
 ## <a name="provide-a-screenshot-optional"></a>Aggiungere uno screenshot (facoltativo)
- Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microsoft. Lo strumento consente di ritagliare l'immagine per visualizzare solo la parte della schermata che illustra il problema. È possibile allegare altri screenshot o altri file facendo clic sul pulsante **Allega altri file**.
+
+Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microsoft. Lo strumento consente di ritagliare l'immagine per visualizzare solo la parte della schermata che illustra il problema. È possibile collegare ulteriori screenshot o altri file facendo clic sul pulsante **Allega file aggiuntivi** .
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fornire una traccia e un dump di heap (facoltativo)
 
@@ -60,10 +62,13 @@ Se si verifica un problema con Visual Studio 2015, è necessario conoscere in mo
      ![Registrare un file di traccia](../ide/media/record-a-trace-file.png "Registrare un file di traccia")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Descrivere la soluzione alternativa, se presente
- Se è stata trovata una soluzione alternativa, descriverla nella casella di modifica fornita a tale scopo. In questo modo, Microsoft sarà in grado di fornire agli utenti non solo una diagnosi del problema, ma anche una possibile soluzione.
+
+Se è stata trovata una soluzione alternativa, descriverla nella casella di modifica fornita a tale scopo. In questo modo, Microsoft sarà in grado di fornire agli utenti non solo una diagnosi del problema, ma anche una possibile soluzione.
 
 ## <a name="submit-the-report"></a>Inviare il report
- Fare clic sul pulsante Invia per inviare il report, insieme a eventuali immagini e ai file di traccia o di dump. Se il pulsante **Invia** è disattivato, verificare di aver specificato un titolo e una descrizione.
+
+Fare clic sul pulsante Invia per inviare il report, insieme a eventuali immagini e ai file di traccia o di dump. Se il pulsante **Invia** è disattivato, verificare di aver specificato un titolo e una descrizione.
 
 ## <a name="see-also"></a>Vedere anche
- [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)
+
+- [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)

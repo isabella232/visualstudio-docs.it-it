@@ -3,14 +3,14 @@ title: Uso di Visual Studio per Mac Tools per Unity
 description: Questa guida spiega come usare l'estensione di Visual Studio per Mac Tools per Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027302"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857008"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Uso di Visual Studio per Mac Tools per Unity
 
@@ -103,6 +103,13 @@ Per avviare il debug:
 
 3. Quando il gioco è in esecuzione nell'editor di Unity mentre è connesso a Visual Studio, qualsiasi punto di interruzione incontrato causa la sospensione dell'esecuzione del gioco e la visualizzazione della riga di codice dove il gioco ha incontrato il punto di interruzione in Visual Studio per Mac.
 
+
+### <a name="start-debugging-in-a-single-step"></a>Avviare il debug in un unico passaggio
+
+È possibile avviare il debug e riprodurre l'editor di Unity in un unico passaggio direttamente da Visual Studio per Mac scegliendo la configurazione **Collega a Unity e gioca**.
+
+![Selezionare Collega a Unity e gioca](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Arrestare il debug
 
 Per arrestare il debug:
@@ -110,5 +117,8 @@ Per arrestare il debug:
 1. Fare clic sul pulsante **Interrompi** in Visual Studio per Mac oppure premere **Maiusc + Command + Return**.
 
    ![Fare clic su Interrompi in Visual Studio](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Se il debug è stato avviato con la configurazione **Collega a Unity e gioca**, il pulsante **Interrompi** interromperà anche Unity.
 
 Per ulteriori informazioni sul debug in Visual Studio per Mac, vedere [Uso del debugger](debugging.md).

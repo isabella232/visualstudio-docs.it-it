@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872057"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790433"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 
@@ -64,6 +64,7 @@ Ad esempio, la batteria completamente carica di un tablet dispone di una certa q
 
 Per un esempio di codice, vedere [Esempio di LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) in Windows SDK.
 
+::: moniker range="vs-2017"
 **Aggiungere contrassegni al codice JavaScript**
 
 Per aggiungere contrassegni utente aggiungi il seguente codice in corrispondenza dei punti nel codice che desideri contrassegnare:
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* è una stringa che contiene il messaggio da visualizzare nella descrizione comando del contrassegno utente.
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>Configurare l'ambiente per la profilatura
  Per ottenere stime ottimali, è consigliabile profilare il consumo di energia dell'applicazione su un dispositivo a basso consumo alimentato dalle batterie integrate. Poiché Visual Studio non viene eseguito nella maggior parte di questi dispositivi, è necessario connettere il computer che esegue Visual Studio al dispositivo usando Visual Studio Remote Tools. Per connetterti a un dispositivo remoto, devi configurare sia il progetto di Visual Studio che il dispositivo remoto. Per altre informazioni, vedere [Eseguire app UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Altre risorse
 
-- Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) e per [HTML e JavaScript](/previous-versions/windows/apps/hh452983(v=win.10)) vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'app per ridurre il costo del traffico di rete.
+- Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'app per ridurre il costo del traffico di rete.
 
    Il simulatore di Visual Studio per le app UWP consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Eseguire app UWP nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- Gli strumenti **Temporizzazione funzione JavaScript** e **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [Analizzare l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
+- Gli strumenti **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [Analizzare l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Vedere anche
 

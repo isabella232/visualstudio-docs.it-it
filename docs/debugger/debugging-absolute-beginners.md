@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476046"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789393"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -85,7 +85,7 @@ Verrà creata un'applicazione con alcuni bug.
 1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework) o **Create new Console App (.NET Core)** (Crea nuova app console - .NET Core). Nella finestra di dialogo visualizzata scegliere **Crea**. Digitare un nome, ad esempio **ConsoleApp-FirstApp** e fare clic su **Crea**.
+    Nella finestra iniziale scegliere **Crea un nuovo progetto**. Digitare **console** nella casella di ricerca per filtrare i risultati, scegliere **App console (.NET Framework)** o **App console (.NET Core)**. Scegliere **Avanti**. Digitare un nome di progetto, ad esempio **ConsoleApp-FirstApp** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **App console** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**. Digitare un nome, ad esempio **ConsoleApp-FirstApp** e fare clic su **OK**.

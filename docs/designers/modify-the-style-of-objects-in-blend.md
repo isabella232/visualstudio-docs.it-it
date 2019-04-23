@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955310"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647453"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificare lo stile degli oggetti in Blend
 
@@ -78,13 +78,13 @@ Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è p
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Applicare uno stile o un modello a un controllo
 
-Fare clic con il pulsante destro del mouse su un oggetto nel pannello [Oggetti e sequenza temporale](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), scegliere **Modifica modello** e quindi **Applica risorsa**.
+Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti e sequenza temporale](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), scegliere **Modifica modello** e quindi **Applica risorsa**.
 
 ![Menu Applica risorsa](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo
 
-Selezionare il controllo e nel pannello [Proprietà](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
+Selezionare il controllo e nella finestra [Proprietà](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Stati di visualizzazione: modificare l'aspetto di un controllo in base al relativo stato
 

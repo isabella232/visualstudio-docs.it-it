@@ -3,20 +3,20 @@ title: Creazione di nuovi progetti e soluzioni
 description: Questo articolo descrive come creare progetti e soluzioni in Visual Studio per Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294266"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856473"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creazione di nuovi progetti e soluzioni
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Creazione di nuovi progetti e soluzioni da un modello
 
-È possibile creare soluzioni in qualsiasi momento usando un modello predefinito. Per creare una soluzione in questo modo, passare a  **File > Nuova soluzione**, selezionare la piattaforma o le piattaforme richieste e quindi il modello necessario:
+È possibile creare soluzioni in qualsiasi momento usando un modello predefinito. A partire da Visual Studio 2019 per Mac, scegliere **Nuovo** dalla finestra iniziale. In alternativa, passare a  **File > Nuova soluzione**. Selezionare la piattaforma o le piattaforme richieste e quindi il modello necessario:
 
 ![Creare nuove soluzioni](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ Questo metodo di aggiunta di nuovi progetti consente di sfruttare le funzionalit
 
 ## <a name="opening-recent-solutions"></a>Apertura di soluzioni recenti
 
-La pagina di destinazione di Visual Studio visualizza un elenco di progetti su cui l'utente ha lavorato di recente:
+La finestra iniziale di Visual Studio visualizza un elenco di progetti su cui l'utente ha lavorato di recente:
 
 ![Sezione delle soluzioni recenti nella pagina iniziale](media/create-new-projects-recent.png)
 

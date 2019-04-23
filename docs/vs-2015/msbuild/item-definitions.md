@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796673"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668494"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 consente la dichiarazione statica di elementi nei file di progetto mediante l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, è stato introdotto un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) che consente di superare questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.  
   
  L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. Le definizioni degli elementi offrono le funzionalità seguenti:  
@@ -175,7 +174,7 @@ ms.locfileid: "54796673"
 </ItemDefinitionGroup>  
 ```  
   
- In questo esempio, elemento "i" fa riferimento all'elemento "test" nella condizione.  
+ In questo esempio l'elemento "i" fa riferimento all'elemento "test" nella condizione.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Override ed eliminazione di metadati  
  È possibile eseguire l'override dei metadati definiti in un elemento ItemDefinitionGroup in un elemento ItemDefinitionGroup successivo lasciando vuoto il valore dei metadati. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio:  

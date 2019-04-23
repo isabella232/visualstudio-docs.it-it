@@ -1,17 +1,17 @@
 ---
 title: Refactoring del codice
-description: La riorganizzazione del codice in Visual Studio per Mac è stata semplificata grazie all'analisi dell'origine.
+description: Ridefinizione del codice usando Visual Studio per Mac e le azioni rapide.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335389"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856515"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -23,25 +23,45 @@ L'integrazione di Visual Studio per Mac con Roslyn, la piattaforma di compilazio
 
 ## <a name="renaming"></a>Ridenominazione
 
-Il comando di refactoring *Rinomina* può essere usato su qualsiasi identificatore del codice (ad esempio un nome di classe, un nome di proprietà e così via) per trovare tutte le occorrenze di tale identificatore e modificarle. Per rinominare un simbolo, fare clic con il pulsante destro del mouse su di esso e scegliere **Refactoring > Rinomina** oppure usare il tasto di scelta rapida **Cmd+R**:
+Il comando di refactoring *Rinomina* può essere usato su qualsiasi identificatore del codice (ad esempio un nome di classe, un nome di proprietà e così via) per trovare tutte le occorrenze di tale identificatore e modificarle. Per rinominare un simbolo, fare clic con il pulsante destro del mouse su di esso e scegliere **Rinomina...** oppure usare il tasto di scelta rapida **Cmd (⌘) + R**:
 
 ![Voce di menu Rinomina](media/refactoring-renaming1.png)
 
-Viene evidenziato il simbolo e tutti i relativi riferimenti. Quando si inizia a digitare un nuovo nome, verranno modificati automaticamente tutti i riferimenti nel codice. Per segnalare il completamento dell'operazione di ridenominazione, premere **INVIO**:
+Viene evidenziato il simbolo e tutti i relativi riferimenti. Quando si inizia a digitare un nuovo nome, verranno modificati automaticamente tutti i riferimenti nel codice. È possibile eseguire il commit delle modifiche premendo **INVIO**:
 
 ![Ridenominazione e identificatore](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Azioni di contesto
+## <a name="quick-actions"></a>Azioni rapide
 
-Le azioni di contesto consentono di esaminare il codice C# e vedere tutte le possibili opzioni di refactoring.
+Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione.
 
-Le voci di contesto **Risolvi** e **Refactoring** sono combinate in una singola voce *Correzione rapida* che fornisce tutte le azioni di contesto disponibili:
+È possibile usare le azioni rapide per:
+
+* Applicare una correzione del codice per la violazione di una regola dell'analizzatore del codice
+* Eliminare la violazione di una regola dell'analizzatore del codice
+* Effettuare un refactoring (ad esempio impostare come inline una variabile temporanea)
+* Generare codice (ad esempio introdurre una variabile locale)
+
+È possibile applicare le azioni rapide usando le icone a forma di lampadina ![icona lampadina](media/quick-actions-light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/quick-actions-screwdriver-icon.png) oppure premendo **Opzione (⌥)**+**Invio** quando il cursore si trova su una riga di codice per il quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/quick-actions-error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
+
+È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio si illumineranno in base a tali regole.
+
+### <a name="quick-action-icons"></a>Icone azione rapida
+L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. L'icona a forma di *cacciavite* ![icona cacciavite](media/quick-actions-screwdriver-icon.png) indica semplicemente che sono disponibili azioni per la modifica del codice, ma l'utente può scegliere di non usarle. L'icona a forma di *lampadina gialla* ![icona lampadina](media/quick-actions-light-bulb-icon.png) indica che sono disponibili azioni che si *devono* eseguire per migliorare il codice. L'icona a forma di *lampadina che indica un errore* ![icona lampadina di errore](media/quick-actions-error-light-bulb-icon.png) suggerisce che è disponibile un'azione che corregge un errore nel codice.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>Per visualizzare una lampadina o un cacciavite
+
+- Se è disponibile una correzione, le lampadine vengono visualizzate spontaneamente quando si passa il mouse sulla posizione di un errore.
+
+   ![Lampadina con passaggio del puntatore del mouse](media/refactoring-lightbulb-hover.png)
+
+- Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per cui è disponibile un'azione rapida.
+
+- Premere **Opzione (⌥)**+**Invio** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 
 ![Visualizzare le voci di contesto](media/refactoring-context-action.png)
 
 Passando il puntatore su una delle azioni di contesto, viene visualizzata un'anteprima di ciò che verrà aggiunto o rimosso dal codice.
-
-In alternativa, è possibile premere **Opzione+INVIO** in qualsiasi punto nel codice:
 
 ![Voci di contesto visualizzate con Opzione+INVIO](media/refactoring-image2a.png)
 
@@ -53,47 +73,9 @@ Ci sono più di 100 azioni che possono essere suggerite, che è possibile abilit
 
 ![Azioni di analisi dell'origine C#](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Azioni di contesto comuni
+### <a name="common-quick-actions"></a>Azioni rapide comuni
 
-Di seguito sono illustrate alcune delle azioni di contesto usate più comunemente.
-
-#### <a name="extract-method"></a>Estrai metodo
-
-L'operazione di refactoring Estrai metodo consente di creare un nuovo metodo estraendo una selezione di codice in un membro esistente. Questa azione esegue due operazioni:
-
-* Crea un nuovo metodo contenente il codice selezionato
-* Chiama il nuovo metodo nella posizione del codice selezionato.
-
-##### <a name="example"></a>Esempio
-
-1. Aggiungere il codice seguente:
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Evidenziare la riga `double volume = (baseArea * height) / 3;`, fare clic con il pulsante destro su di essa e scegliere **Refactoring > Estrai metodo**.
-
-3. Usare i tasti di direzione per selezionare dove posizionare il nuovo metodo nel codice.
-
-#### <a name="encapsulate-field"></a>Incapsula campo
-
-L'operazione Incapsula campo consente di creare una proprietà da un campo esistente e aggiornare il codice per fare riferimento alla nuova proprietà creata. Creando una proprietà che incapsula il campo, si impedisce l'accesso diretto al campo pubblico, ovvero la sua modifica da parte di altri oggetti.
-
-L'azione eseguirà le operazioni seguenti:
-
-* Cambia il modificatore di accesso impostandolo come privato.
-* Genera un getter e un setter per il campo (a meno che il campo non sia di sola lettura, nel qual caso genera solo un getter).
+Altre informazioni sulle azioni rapide comuni sono disponibili nell'articolo sulle [azioni rapide comuni](/visualstudio/ide/common-quick-actions).
 
 ## <a name="source-analysis"></a>Analisi dell'origine
 

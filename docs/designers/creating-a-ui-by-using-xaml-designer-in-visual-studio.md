@@ -1,6 +1,6 @@
 ---
 title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML
-ms.date: 11/05/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955193"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658866"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 
@@ -104,56 +104,9 @@ La barra della visualizzazione suddivisa compare nella parte superiore della vis
 
 Lo zoom di markup permette di ridimensionare la visualizzazione **XAML**. È possibile ingrandire dal 20% al 400%.
 
-## <a name="device-window"></a>Finestra Dispositivo
-
-> [!NOTE]
-> Se la versione della piattaforma di destinazione (`TargetPlatformVersion`) di un'applicazione UWP è 10.0.16299.0 o successiva, la finestra **Dispositivo** non è disponibile.
-
-La finestra **Dispositivo** nella finestra di progettazione XAML consente di simulare in fase di progettazione diverse viste, visualizzazioni e opzioni di visualizzazione per il progetto. La finestra **Dispositivo** è disponibile nel menu **Progettazione** quando si usa la finestra di progettazione XAML e ha l'aspetto seguente:
-
-![Finestra Dispositivo](../designers/media/xaml_editor_device_panel.png)
-
-Le opzioni della finestra Dispositivo sono le seguenti:
-
-**Visualizzazione**
-
-Specifica dimensioni e risoluzioni di visualizzazione diverse per l'app.
-
-**Orientamento**
-
-Specifica diversi orientamenti per l'app: **Orizzontale** o **Verticale**.
-
-**Microsoft Edge**
-
-Specifica diversi allineamenti per i bordi dell'app: **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
-
-**Contrasto elevato**
-
-Visualizza l'app in anteprima in base all'impostazione di contrasto selezionata. Se per l'impostazione viene specificato un valore diverso da **Predefinito**, l'impostazione della proprietà `RequestedTheme` in *App.xaml* verrà sovrascritta.
-
-**Override ridimensionamento**
-
-Attiva e disattiva l'emulazione delle proporzioni del documento nell'area di progettazione. Ciò permette di aumentare la percentuale di scala di un fattore. Selezionare la casella di controllo per attivare l'emulazione. Ad esempio, se la percentuale di scala è 100%, al documento nell'area di progettazione verrà applicato un valore di scala fino a 140%. Questa opzione è disabilitata se la percentuale di scala corrente è 180.
-
-**Larghezza minima**
-
-Specifica l'impostazione della larghezza minima. Il valore può essere modificato nel file *App.xaml*.
-
-**Tema**
-
-Specifica il tema dell'app. È ad esempio possibile alternare un tema **Scuro** e **Chiaro**.
-
-**Mostra riquadro**
-
-Attiva e disattiva il frame simulato per tablet intorno all'app nella visualizzazione Progettazione. Selezionare la casella di controllo per mostrare il frame.
-
-**Ritaglia per visualizzare**
-
-Specifica la modalità di visualizzazione. Selezionare la casella di controllo per ritagliare le dimensioni del documento in base alle dimensioni di visualizzazione.
-
 ## <a name="document-outline-window"></a>Finestra Struttura documento
 
-La finestra Struttura documento nella finestra di progettazione XAML permette di eseguire le operazioni seguenti:
+La finestra Struttura documento nella finestra di progettazione XAML è simile alla finestra **Oggetti e sequenza temporale** in Blend per Visual Studio. **Struttura documento** consente di eseguire le attività seguenti:
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
@@ -165,7 +118,7 @@ La finestra Struttura documento nella finestra di progettazione XAML permette di
 
 Per visualizzare la finestra **Struttura documento**, scegliere **Visualizza** > **Altre finestre** > **Struttura documento** sulla barra dei menu.
 
-![Finestra Struttura documento](../designers/media/xaml_editor_doc_outline.png)
+![Finestra Struttura documento in Visual Studio](../designers/media/document-outline-window.png)
 
 Le opzioni della finestra **Struttura documento** sono le seguenti:
 
@@ -189,9 +142,13 @@ L'opzione nella parte superiore della finestra **Struttura documento**, che most
 
 La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. e ha l'aspetto seguente:
 
-![Finestra Proprietà](../designers/media/xaml_editor_prop_window.png)
+![Finestra Proprietà](../designers/media/xaml-designer-properties-window.png)
 
-Nella parte superiore della finestra **Proprietà** sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra **Proprietà** mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Intro to controls and patterns](/windows/uwp/design/controls-and-patterns/controls-and-events-intro) (Introduzione a controlli e modelli)
+Nella parte superiore della finestra **Proprietà** sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine.
+
+Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella di ricerca. La finestra **Proprietà** mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ.
+
+Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Intro to controls and patterns](/windows/uwp/design/controls-and-patterns/controls-and-events-intro) (Introduzione a controlli e modelli)
 
 A destra di ogni valore di proprietà è presente un *marcatore della proprietà* , visualizzato sotto forma di simbolo di casella. L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
 

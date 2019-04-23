@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416163"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857593"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: Introduzione a Visual Basic in Visual Studio
 
@@ -33,7 +33,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *WhatIsYourName* nella casella **Nome del progetto**. Scegliere **Crea**.
 
-   ![nella finestra "Configura il nuovo progetto", denominare il progetto "WhatIsYourName"](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![Nella finestra Configura il nuovo progetto assegnare al progetto il nome "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio aprirà il nuovo progetto.
 
@@ -262,7 +262,7 @@ Un'app console riceve input e visualizza output in una finestra della riga di co
 L'esercitazione è stata completata. Per altre informazioni, vedere l'esercitazione seguente.
 
 > [!div class="nextstepaction"]
-> [Compilare una libreria .NET Standard con Visual Basic e .NET Core SDK in Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Compilare una libreria .NET Standard con Visual Basic e .NET Core SDK in Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vedere anche
 

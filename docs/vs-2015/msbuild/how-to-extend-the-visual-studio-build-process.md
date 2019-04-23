@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: estendere il processo di compilazione | Microsoft Docs'
+title: 'Procedura: Estendere il processo di compilazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,16 +14,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758665"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652163"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: estendere il processo di compilazione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è definito da una serie di file di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con estensione targets che vengono importati nel file di progetto. Uno di questi file importati, Microsoft.Common.targets, può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo argomento illustra due metodi che è possibile usare per estendere il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -56,7 +55,7 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
    Nella tabella seguente sono indicate tutte le destinazioni in Microsoft.Common.targets di cui è possibile eseguire l'override in totale sicurezza.
 
-|Target Name|Descrizione|
+|Target Name|Description|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
 |`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:** le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto. Questo agevola l'aggiunta di eventi di pre-compilazione e post-compilazione al file di progetto.|
@@ -120,11 +119,11 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
 ### <a name="commonly-overridden-dependson-properties"></a>Proprietà "DependsOn" comunemente sottoposte a override
 
-|Nome proprietà|Descrizione|
+|Nome proprietà|Description|
 |-------------------|-----------------|
 |`BuildDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire destinazioni personalizzate prima o dopo l'intero processo di compilazione.|
 |`CleanDependsOn`|Proprietà di cui eseguire l'override se si vuole pulire l'output del processo di compilazione personalizzato.|
 |`CompileDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire processi personalizzati prima o dopo la fase di compilazione.|
 
 ## <a name="see-also"></a>Vedere anche
- [Integrazione di Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [concetti relativi a MSBuild](../msbuild/msbuild-concepts.md) [. File di destinazioni](../msbuild/msbuild-dot-targets-files.md)
+ [Integrazione di Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md) [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)

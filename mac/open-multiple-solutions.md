@@ -3,15 +3,15 @@ title: 'Procedura: Aprire più soluzioni in Visual Studio per Mac'
 description: Informazioni su come aprire più soluzioni in Visual Studio per Mac e su come aprire più istanze dell'applicazione.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768235"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856344"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Aprire più soluzioni o istanze di Visual Studio per Mac
 
@@ -21,11 +21,9 @@ Quando si apre una soluzione, poi, il comportamento predefinito corrisponde all'
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Aprire una seconda istanza di Visual Studio per Mac
 
-Per aprire una seconda istanza dell'ambiente di sviluppo integrato (IDE), aprire l'applicazione **Terminale** e immettere la riga seguente:
+Per aprire una seconda istanza dell'ambiente di sviluppo integrato (IDE), fare clic con il pulsante destro del mouse sull'icona di Visual Studio nell'ancoraggio o nella cartella **Applicazioni** e selezionare **Nuova istanza**.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Screenshot dell'opzione di menu Nuova istanza nell'icona di Visual Studio selezionata con il pulsante destro del mouse](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Aprire una seconda soluzione all'interno di un'istanza singola
 
