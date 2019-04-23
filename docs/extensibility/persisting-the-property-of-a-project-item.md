@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047385"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rendere permanente la proprietà di un elemento del progetto
 È possibile mantenere una proprietà che è aggiungere a un elemento del progetto, ad esempio l'autore di un file di origine. Questo scopo, è possibile archiviare la proprietà nel file di progetto.
@@ -27,7 +27,7 @@ ms.locfileid: "54963983"
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Per ottenere la gerarchia del progetto con l'oggetto DTE
 
-1.  Per il pacchetto VSPackage, aggiungere il codice seguente:
+1. Per il pacchetto VSPackage, aggiungere il codice seguente:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ ms.locfileid: "54963983"
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Per rendere permanente la proprietà di elemento di progetto con l'oggetto DTE
 
-1.  Aggiungere il codice seguente al codice fornito nel metodo nella procedura precedente:
+1. Aggiungere il codice seguente al codice fornito nel metodo nella procedura precedente:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ ms.locfileid: "54963983"
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Per ottenere la gerarchia del progetto usando IVsMonitorSelection
 
-1.  Per il pacchetto VSPackage, aggiungere il codice seguente:
+1. Per il pacchetto VSPackage, aggiungere il codice seguente:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ ms.locfileid: "54963983"
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Per rendere persistente la proprietà di elemento di progetto selezionato, assegnato alla gerarchia del progetto
 
-1.  Aggiungere il codice seguente al codice fornito nel metodo nella procedura precedente:
+1. Aggiungere il codice seguente al codice fornito nel metodo nella procedura precedente:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045537"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Evitare l'overflow delle operazioni
 
@@ -98,15 +98,15 @@ I blocchi selezionati non sono supportati in [!INCLUDE[vbprvb](../code-quality/i
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Attivare Overflow/Underflow aritmetico selezionato
 
-Se si attiva checked overflow/underflow aritmetico in C#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
+Se si attiva checked overflow/underflow aritmetico in c#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
 
-Per attivare la verifica overflow/underflow aritmetico in C#:
+Per attivare la verifica overflow/underflow aritmetico in c#:
 
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto e scegliere **proprietà**.
+1. Nelle **Esplora soluzioni**, fare clic sul progetto e scegliere **proprietà**.
 
-2.  Nella scheda **Compilazione** scegliere **Avanzate**.
+2. Nella scheda **Compilazione** scegliere **Avanzate**.
 
-3.  Selezionare **Controlla overflow/underflow aritmetico** e fare clic su **OK**.
+3. Selezionare **Controlla overflow/underflow aritmetico** e fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 

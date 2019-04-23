@@ -13,23 +13,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f7b463721b840847bf609ec70f8818e904fdd0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058304"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 È possibile fare in modo che l'Editor del codice consideri gli URL (Uniform Resource Locator) all'interno del codice come collegamenti attivi. Quando si usa questa funzionalità, gli URL:  
   
--   Vengono sottolineati.  
+- Vengono sottolineati.  
   
--   Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.  
+- Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.  
   
--   Tentano di aprire il sito Web indicato quando si fa clic sul collegamento tenendo premuto **CTRL**. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.  
+- Tentano di aprire il sito Web indicato quando si fa clic sul collegamento tenendo premuto **CTRL**. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.  
   
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -38,17 +38,17 @@ ms.locfileid: "59658838"
   
 #### <a name="to-display-urls-as-links"></a>Per visualizzare gli URL come collegamenti  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Fare clic su **Editor di testo**.  
+2. Fare clic su **Editor di testo**.  
   
-3.  Per modificare l'opzione per un solo linguaggio, espandere la cartella corrispondente a questo e scegliere **Generale**.  
+3. Per modificare l'opzione per un solo linguaggio, espandere la cartella corrispondente a questo e scegliere **Generale**.  
   
      -oppure-  
   
      Per modificare l'opzione per tutti i linguaggi, espandere la cartella **Tutti i linguaggi** e scegliere **Generale**.  
   
-4.  In **Display** selezionare **Consenti apertura URL con clic singolo**.  
+4. In **Display** selezionare **Consenti apertura URL con clic singolo**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing the Editor](../../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  

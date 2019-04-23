@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044824"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procedura: Abilitare e disabilitare l'analisi della soluzione completa per il codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ ms.locfileid: "58954843"
 NOTA]
 >  Questo argomento si applica solo a Visual Studio 2015 Update 3 RC e versioni successive.  
   
- *Analisi della soluzione completa* è una funzionalità di Visual Studio che consente di scegliere se vengono visualizzati i problemi di analisi codice solo in Visual C# o Visual Basic file aperti nella soluzione o nel file Visual C# o Visual Basic sia aperti e chiusi nella soluzione.  
+ *Analisi della soluzione completa* è una funzionalità di Visual Studio che consente di scegliere se vengono visualizzati i problemi di analisi codice solo in Visual c# o Visual Basic file aperti nella soluzione o nel file Visual c# o Visual Basic sia aperti e chiusi nella soluzione.  
   
  Benché sia utile la possibilità di vedere tutti i problemi in tutti i file, può essere fonte di distrazione e rallentano anche a Visual Studio se la soluzione è molto grande o contiene una grande quantità di file.  Per limitare il numero di problemi visualizzati e migliorare le prestazioni di Visual Studio, è possibile disabilitare l'analisi della soluzione completa. Se si desidera, è possibile riabilitare facilmente questa funzionalità.  
   
 #### <a name="to-toggle-full-solution-analysis"></a>Per attivare o disattivare analisi della soluzione completa  
   
-1.  Nel menu principale in Visual Studio, scegliere **degli strumenti** &#124; **opzioni** per visualizzare il **opzioni** nella finestra di dialogo.  
+1. Nel menu principale in Visual Studio, scegliere **degli strumenti** &#124; **opzioni** per visualizzare il **opzioni** nella finestra di dialogo.  
   
-2.  Nel **le opzioni** finestra di dialogo, scegliere **Editor di testo** &#124; **C#** o **Basic** &#124; **avanzate**.  
+2. Nel **le opzioni** finestra di dialogo, scegliere **Editor di testo** &#124; **c#** o **Basic** &#124; **avanzate**.  
   
-3.  Selezionare il **Abilita analisi della soluzione completa** casella di controllo per abilitare l'analisi della soluzione completa o deselezionare la casella per disabilitarla. Scegliere il **OK** pulsante al termine.  
+3. Selezionare il **Abilita analisi della soluzione completa** casella di controllo per abilitare l'analisi della soluzione completa o deselezionare la casella per disabilitarla. Scegliere il **OK** pulsante al termine.  
   
      ![Abilitare la casella di controllo analysis soluzione completa. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

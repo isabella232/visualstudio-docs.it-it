@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050310"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Procedura: Utilizzare la finestra Espressioni di controllo parallela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
   
 ### <a name="to-display-the-parallel-watch-window"></a>Per visualizzare la finestra Espressione di controllo in parallelo  
   
-1.  Impostare un punto di interruzione nel codice.  
+1. Impostare un punto di interruzione nel codice.  
   
-2.  Nella barra dei menu scegliere **Debug**, **Avvia debug**. Attendere che l'applicazione raggiunga il punto di interruzione.  
+2. Nella barra dei menu scegliere **Debug**, **Avvia debug**. Attendere che l'applicazione raggiunga il punto di interruzione.  
   
-3.  Sulla barra dei menu scegliere **Debug**, **Finestre**, **Espressione di controllo in parallelo** e scegliere una finestra Espressione di controllo. È possibile aprire un massimo di quattro finestre.  
+3. Sulla barra dei menu scegliere **Debug**, **Finestre**, **Espressione di controllo in parallelo** e scegliere una finestra Espressione di controllo. È possibile aprire un massimo di quattro finestre.  
   
 ### <a name="to-add-a-watch-expression"></a>Per aggiungere un'espressione di controllo  
   
--   Selezionare  **\<Aggiungi espressione di controllo >** e quindi specificare un'espressione di controllo.  
+- Selezionare  **\<Aggiungi espressione di controllo >** e quindi specificare un'espressione di controllo.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Per aggiungere o rimuovere flag che contrassegnano un thread  
   
--   Selezionare la colonna del contrassegno per la riga o aprire il menu di scelta rapida per il thread e scegliere **Flag** oppure **Rimuovi flag**.  
+- Selezionare la colonna del contrassegno per la riga o aprire il menu di scelta rapida per il thread e scegliere **Flag** oppure **Rimuovi flag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag  
   
--   Scegliere il pulsante Mostra solo con flag nell'angolo superiore sinistro della **espressioni di controllo parallela** finestra.  
+- Scegliere il pulsante Mostra solo con flag nell'angolo superiore sinistro della **espressioni di controllo parallela** finestra.  
   
 ### <a name="to-switch-frames"></a>Per passare da un frame a un altro  
   
--   Fare doppio clic sulla colonna frame. (Tastiera: Selezionare la riga e premere INVIO).  
+- Fare doppio clic sulla colonna frame. (Tastiera: Selezionare la riga e premere INVIO).  
   
 ### <a name="to-sort-a-column"></a>Per ordinare una colonna  
   
--   Selezionare l'intestazione della colonna.  
+- Selezionare l'intestazione della colonna.  
   
 ### <a name="to-group-threads"></a>Per raggruppare i thread  
   
--   Aprire il menu di scelta rapida per la finestra Espressione di controllo in parallelo, scegliere **Raggruppa**, quindi scegliere la voce del sottomenu appropriata.  
+- Aprire il menu di scelta rapida per la finestra Espressione di controllo in parallelo, scegliere **Raggruppa**, quindi scegliere la voce del sottomenu appropriata.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Per bloccare o sbloccare i thread  
   
--   Aprire il menu di scelta rapida per la riga e scegliere **Blocca** o **Sblocca**.  
+- Aprire il menu di scelta rapida per la riga e scegliere **Blocca** o **Sblocca**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Per esportare i dati nella finestra Espressione di controllo in parallelo  
   
--   Scegliere il pulsante **Apri in Excel** e scegliere **Apri in Excel** o **Esporta in CSV**.  
+- Scegliere il pulsante **Apri in Excel** e scegliere **Apri in Excel** o **Esporta in CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Per filtrare in base a un'espressione booleana  
   
--   Immettere un'espressione booleana nella casella **Filtra per espressione booleana**. Il debugger valuta l'espressione per ogni contesto del thread. Vengono visualizzate solo le righe in cui valore è `true`.  
+- Immettere un'espressione booleana nella casella **Filtra per espressione booleana**. Il debugger valuta l'espressione per ogni contesto del thread. Vengono visualizzate solo le righe in cui valore è `true`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046249"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
@@ -104,24 +104,24 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori Windows supportati sulla piattaforma corrente  
   
-1.  In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione prestazioni e quindi fare clic su **Proprietà**.  
+1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione prestazioni e quindi fare clic su **Proprietà**.  
   
-2.  Fare clic su **Contatori Windows**.  
+2. Fare clic su **Contatori Windows**.  
   
-3.  Selezionare **Raccogliere contatori Windows**.  
+3. Selezionare **Raccogliere contatori Windows**.  
   
-4.  Selezionare un gruppo di contatori dall'elenco **Categoria contatori**. Il contatore di Windows per il gruppo viene visualizzato nella casella di riepilogo.  
+4. Selezionare un gruppo di contatori dall'elenco **Categoria contatori**. Il contatore di Windows per il gruppo viene visualizzato nella casella di riepilogo.  
   
-     **Nota** Fare clic su **Annulla** per tornare alla configurazione di raccolta contatori precedente.  
+     **Nota:** Fare clic su **Annulla** per tornare alla configurazione di raccolta contatori precedente.  
   
 ### <a name="command-line"></a>Riga di comando  
  Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) è possibile elencare i contatori CPU disponibili in un computer dalla riga di comando.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori CPU supportati sulla piattaforma corrente  
   
-1.  Aprire una finestra del prompt dei comandi.  
+1. Aprire una finestra del prompt dei comandi.  
   
-2.  Tipo  
+2. Tipo  
   
      **\<Directory degli strumenti per le prestazioni di Visual Studio > \VSPerfCmd /QueryCounters.**  
   
@@ -131,6 +131,6 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
   
 ## <a name="see-also"></a>Vedere anche  
  [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
- [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)  (Procedura: Scegliere eventi di campionamento)  
- [How to: Collect CPU Counter Data](../profiling/how-to-collect-cpu-counter-data.md)  (Procedura: Raccogliere i dati dei contatori CPU)  
+ [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)   
+ [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)   
  [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)

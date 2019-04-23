@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045603"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Per impostare un gruppo di proprietà in base a un'altra proprietà  
   
--   Usare un attributo `Condition` in un elemento `PropertyGroup` simile al seguente:  
+- Usare un attributo `Condition` in un elemento `PropertyGroup` simile al seguente:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Per definire una proprietà in base a un'altra proprietà  
   
--   Usare un attributo `Condition` in un elemento `Property` simile al seguente:  
+- Usare un attributo `Condition` in un elemento `Property` simile al seguente:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Per impostare una proprietà del progetto nella riga di comando  
   
--   Usare l'opzione **/property** con la proprietà e il valore della proprietà. Ad esempio:  
+- Usare l'opzione **/property** con la proprietà e il valore della proprietà. Ad esempio:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

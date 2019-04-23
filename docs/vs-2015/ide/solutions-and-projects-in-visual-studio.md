@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045329"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in 
 
 ## <a name="in-this-section"></a>In questa sezione
 
--   [Creazione di soluzioni e progetti](../ide/creating-solutions-and-projects.md)
+- [Creazione di soluzioni e progetti](../ide/creating-solutions-and-projects.md)
 
--   [Aggiunta e rimozione di elementi di progetto](../ide/adding-and-removing-project-items.md)
+- [Aggiunta e rimozione di elementi di progetto](../ide/adding-and-removing-project-items.md)
 
--   [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
+- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
 
--   [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)
+- [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 
--   [Proprietà dell'applicazione](../ide/application-properties.md)
+- [Proprietà dell'applicazione](../ide/application-properties.md)
 
--   [Gestione delle firme di assembly e manifesti](../ide/managing-assembly-and-manifest-signing.md)
+- [Gestione delle firme di assembly e manifesti](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>Vedere anche
  [IDE di Visual Studio](../ide/visual-studio-ide.md)

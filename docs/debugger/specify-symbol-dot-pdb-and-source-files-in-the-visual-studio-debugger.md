@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045342"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -128,9 +128,9 @@ Nel **degli strumenti** > **opzioni** > **debug** > **simboli** pagina, è possi
 
 4. Specificare i moduli desiderati il debugger deve caricare dal **percorsi di file (con estensione pdb) di simboli** quando viene avviato.
 
-   -  Selezionare **caricare tutti i moduli, eccetto quelli esclusi** (predefinito) per caricare tutti i simboli per tutti i moduli nel percorso del file di simboli, ad eccezione di moduli escludere in modo specifico. Per escludere alcuni moduli, selezionare **specificare moduli esclusi**, selezionare la **+** icona, digitare i nomi dei moduli per escludere, quindi selezionare **OK**.
+   - Selezionare **caricare tutti i moduli, eccetto quelli esclusi** (predefinito) per caricare tutti i simboli per tutti i moduli nel percorso del file di simboli, ad eccezione di moduli escludere in modo specifico. Per escludere alcuni moduli, selezionare **specificare moduli esclusi**, selezionare la **+** icona, digitare i nomi dei moduli per escludere, quindi selezionare **OK**.
 
-   -  Per caricare solo i moduli specificati da percorsi dei file di simboli, selezionare **carico solo moduli specificati**. Selezionare **specificare moduli inclusi**, selezionare la **+** icona, digitare i nomi dei moduli da includere e quindi selezionare **OK**. I file di simboli per altri moduli non vengono caricati.
+   - Per caricare solo i moduli specificati da percorsi dei file di simboli, selezionare **carico solo moduli specificati**. Selezionare **specificare moduli inclusi**, selezionare la **+** icona, digitare i nomi dei moduli da includere e quindi selezionare **OK**. I file di simboli per altri moduli non vengono caricati.
 
 5. Scegliere **OK**.
 
@@ -199,7 +199,7 @@ Compilazione con **/debug** per creare un *PDB* file. È possibile compilare app
 
 Impostare il *Web. config* file dell'applicazione ASP.NET in modalità debug. Tramite la modalità di debug, ASP.NET genera simboli per i file generati dinamicamente e il debugger si collega all'applicazione ASP.NET. Visual Studio configura automaticamente questa impostazione quando si avvia il debug, se è stato creato il progetto dal modello dei progetti web.
 
-##  <a name="manage-symbols-while-debugging"></a>Gestire i simboli durante il debug
+## <a name="manage-symbols-while-debugging"></a>Gestire i simboli durante il debug
 
 È possibile usare la **moduli**, **Stack di chiamate**, **variabili locali**, **Auto**, o qualsiasi **Watch** finestra da caricare i simboli o modifica le opzioni dei simboli durante il debug. Per altre informazioni, vedere [acquisire maggiore familiarità con la modalità con cui il debugger si connette all'app](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Durante il debug, il **moduli** finestra Mostra i moduli di codice il debugger �
 
 Esistono diversi modi per il debugger inserire un'interruzione nel codice che non esistono file di simboli o di origine disponibili:
 
--  L'istruzione nel codice.
--  Inserire un'interruzione nel codice da un punto di interruzione o eccezione.
--  Passare a un altro thread.
--  Cambiare lo stack frame facendo doppio clic su un frame nel **Stack di chiamate** finestra.
+- L'istruzione nel codice.
+- Inserire un'interruzione nel codice da un punto di interruzione o eccezione.
+- Passare a un altro thread.
+- Cambiare lo stack frame facendo doppio clic su un frame nel **Stack di chiamate** finestra.
 
 In questo caso, il debugger visualizza i **Nessun simbolo caricato** oppure **Nessuna origine caricata** pagine che consentono di individuare e caricare l'origine o dei simboli necessari.
 
@@ -235,11 +235,11 @@ In questo caso, il debugger visualizza i **Nessun simbolo caricato** oppure **Ne
 
 **Per usare la pagina del documento Nessun simbolo caricato per trovare e caricare i simboli mancanti:**
 
--   Per modificare il percorso di ricerca, selezionare un percorso non selezionato o selezionare **nuovo percorso** oppure **nuovo percorso VSTS** e immettere o selezionare un nuovo percorso. Selezionare **caricare** per cercare nuovamente i percorsi e caricare il file di simboli se viene trovato.
--   Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **cercare e trovare \<nome eseguibile >**. Il file di simboli viene caricato se viene trovato, o **Esplora File** apre in modo che è possibile selezionare manualmente il file di simboli.
--   Per aprire la **le opzioni** > **debug** > **simboli** selezionare **Cambia impostazioni simboli**.
--   Per visualizzare il disassembly in una nuova finestra una volta, selezionare **visualizzare il disassembly**, o selezionare **finestra di dialogo Opzioni** per impostare l'opzione per visualizzare sempre il disassembly quando i file di origine o di simboli non vengono trovati.
--   Per visualizzare i percorsi di ricerca e il risultato, espandere **informazioni sul caricamento simboli**.
+- Per modificare il percorso di ricerca, selezionare un percorso non selezionato o selezionare **nuovo percorso** oppure **nuovo percorso VSTS** e immettere o selezionare un nuovo percorso. Selezionare **caricare** per cercare nuovamente i percorsi e caricare il file di simboli se viene trovato.
+- Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **cercare e trovare \<nome eseguibile >**. Il file di simboli viene caricato se viene trovato, o **Esplora File** apre in modo che è possibile selezionare manualmente il file di simboli.
+- Per aprire la **le opzioni** > **debug** > **simboli** selezionare **Cambia impostazioni simboli**.
+- Per visualizzare il disassembly in una nuova finestra una volta, selezionare **visualizzare il disassembly**, o selezionare **finestra di dialogo Opzioni** per impostare l'opzione per visualizzare sempre il disassembly quando i file di origine o di simboli non vengono trovati.
+- Per visualizzare i percorsi di ricerca e il risultato, espandere **informazioni sul caricamento simboli**.
 
 Se il debugger rileva il *PDB* file dopo l'esecuzione di una delle opzioni e può recuperare file di origine utilizzando le informazioni contenute nel *PDB* file, Visualizza l'origine. In caso contrario, viene visualizzato un **Nessuna origine caricata** pagina che descrive il problema, con collegamenti alle azioni che potrebbero risolvere il problema.
 

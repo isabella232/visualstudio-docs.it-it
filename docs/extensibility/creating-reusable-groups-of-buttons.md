@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89b4f55e5e5de564db6cb7a1217b79a15283fb93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051661"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
 Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati insieme in un menu o sulla barra degli strumenti. Qualsiasi gruppo di comandi può essere riusato assegnandolo ai menu padre diverso nella sezione CommandPlacements del *vsct* file.
@@ -26,13 +26,13 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>Per creare un gruppo riutilizzabile di pulsanti
 
-1.  Creare un progetto VSIX denominato `ReusableButtons`. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Creare un progetto VSIX denominato `ReusableButtons`. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **ReusableCommand**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c#** > **Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *ReusableCommand.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **ReusableCommand**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c#** > **Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *ReusableCommand.cs*.
 
-3.  Nel *vsct* file, vedere la sezione di simboli e trovare l'elemento GuidSymbol che contiene gruppi e i comandi per il progetto. Devono essere denominato guidReusableCommandPackageCmdSet.
+3. Nel *vsct* file, vedere la sezione di simboli e trovare l'elemento GuidSymbol che contiene gruppi e i comandi per il progetto. Devono essere denominato guidReusableCommandPackageCmdSet.
 
-4.  Aggiungere un IDSymbol per ciascun pulsante che verrà aggiunta al gruppo, come nell'esempio seguente.
+4. Aggiungere un IDSymbol per ciascun pulsante che verrà aggiunta al gruppo, come nell'esempio seguente.
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
 
      Per impostazione predefinita, il modello di elemento di comando crea un gruppo denominato **MyMenuGroup** e un pulsante con il nome specificato, insieme a una voce IDSymbol per ognuno.
 
-5.  Nella sezione Groups, creare un elemento di gruppo che ha gli stessi attributi GUID e ID di quelle contenute nella sezione dei simboli. È anche possibile usare un gruppo esistente o usare la voce che viene fornita dal modello di comando, come nell'esempio seguente. Questo gruppo sono presenti il **strumenti** menu
+5. Nella sezione Groups, creare un elemento di gruppo che ha gli stessi attributi GUID e ID di quelle contenute nella sezione dei simboli. È anche possibile usare un gruppo esistente o usare la voce che viene fornita dal modello di comando, come nell'esempio seguente. Questo gruppo sono presenti il **strumenti** menu
 
     ```xml
     <Groups>
@@ -56,7 +56,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>Per creare un gruppo di pulsanti per il riutilizzo
 
-1.  È possibile inserire un comando o un menu in un gruppo usando il gruppo come elemento padre nella definizione di comando o menu, oppure inserendo il comando o il menu del gruppo usando la sezione CommandPlacements.
+1. È possibile inserire un comando o un menu in un gruppo usando il gruppo come elemento padre nella definizione di comando o menu, oppure inserendo il comando o il menu del gruppo usando la sezione CommandPlacements.
 
      Nella sezione pulsanti definiscono un pulsante con il gruppo come elemento padre, o usare il pulsante che viene fornito dal modello di pacchetto, come illustrato nell'esempio seguente.
 
@@ -70,7 +70,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     </Button>
     ```
 
-2.  Se un pulsante deve apparire in più di un gruppo, creare una voce per tale nella sezione CommandPlacements, che deve essere inserita dopo la sezione di comandi. Impostare gli attributi GUID e ID dell'elemento CommandPlacement affinché corrispondano a quelle del pulsante che si desidera posizionare e quindi impostare il GUID e ID dell'elemento padre a quelle del gruppo di destinazione, come illustrato nell'esempio seguente.
+2. Se un pulsante deve apparire in più di un gruppo, creare una voce per tale nella sezione CommandPlacements, che deve essere inserita dopo la sezione di comandi. Impostare gli attributi GUID e ID dell'elemento CommandPlacement affinché corrispondano a quelle del pulsante che si desidera posizionare e quindi impostare il GUID e ID dell'elemento padre a quelle del gruppo di destinazione, come illustrato nell'esempio seguente.
 
     ```xml
     <CommandPlacements>

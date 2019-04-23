@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0faac79e99b425eadd4e43c88b0a04dba670731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044264"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: Associare estensioni di codice gestito a documenti
   È possibile collegare un assembly di personalizzazione in un documento esistente di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file che è supportato per i progetti di Microsoft Office e gli strumenti di sviluppo in Visual Studio. Per altre informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).
@@ -34,21 +34,21 @@ ms.locfileid: "56646773"
 
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Per associare estensioni di codice gestito a un documento
 
-1.  In un progetto che non richiede Microsoft Office, ad esempio un'applicazione console o un progetto Windows Forms, aggiungere un riferimento per la *ServerDocument* e  *VisualStudio* assembly.
+1. In un progetto che non richiede Microsoft Office, ad esempio un'applicazione console o un progetto Windows Forms, aggiungere un riferimento per la *ServerDocument* e  *VisualStudio* assembly.
 
-2.  Aggiungere il codice seguente **importazioni** oppure **usando** istruzioni all'inizio del file di codice.
+2. Aggiungere il codice seguente **importazioni** oppure **usando** istruzioni all'inizio del file di codice.
 
      [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
      [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
 
-3.  Chiamare il metodo statico <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> (metodo).
+3. Chiamare il metodo statico <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> (metodo).
 
      Il codice seguente viene illustrato come utilizzare il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> rapporto di overload. Questo overload accetta il percorso completo del documento e una <xref:System.Uri> che specifica il percorso del manifesto della distribuzione per la personalizzazione si desidera collegare al documento. Questo esempio si presuppone che un documento di Word denominato **WordDocument1.docx** sul desktop, e che il manifesto di distribuzione si trova in una cartella denominata **Publish** che è anche sul desktop.
 
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
 
-4.  Compilare il progetto ed eseguire l'applicazione nel computer in cui si desidera collegare la personalizzazione. Il computer deve disporre di Visual Studio 2010 Tools per Office Runtime installato.
+4. Compilare il progetto ed eseguire l'applicazione nel computer in cui si desidera collegare la personalizzazione. Il computer deve disporre di Visual Studio 2010 Tools per Office Runtime installato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Gestire documenti in un server usando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

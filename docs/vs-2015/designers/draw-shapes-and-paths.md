@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046073"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
   
  **Contenuto dell'argomento:**  
   
--   [Disegnare una forma](#Shape)  
+- [Disegnare una forma](#Shape)  
   
--   [Disegnare un tracciato](#Path)  
+- [Disegnare un tracciato](#Path)  
   
--   [Convertire una forma in un tracciato](#Convert)  
+- [Convertire una forma in un tracciato](#Convert)  
   
--   [Combinare tracciati](#Combine)  
+- [Combinare tracciati](#Combine)  
   
--   [Creare un tracciato composto](#Compound)  
+- [Creare un tracciato composto](#Compound)  
   
--   [Creare un tracciato di ritaglio](#Clipping)  
+- [Creare un tracciato di ritaglio](#Clipping)  
   
-##  <a name="Shape"></a> Disegnare una forma  
+## <a name="Shape"></a> Disegnare una forma  
  Le forme sono disponibili nel pannello **Asset** .  
   
  ![Categoria Forme nel pannello Asset](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -46,7 +46,7 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a> Disegnare un tracciato  
+## <a name="Path"></a> Disegnare un tracciato  
  Un tracciato è costituito da una serie di linee e curve collegate. Usare un tracciato per creare forme interessanti, non disponibili nel pannello **Asset** .  
   
  È possibile disegnare un tracciato usando una riga, una penna o una matita. Questi strumenti sono disponibili nel pannello **Strumenti** .  
@@ -96,12 +96,12 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
   
  Usare lo strumento **Selezione** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") per selezionare il percorso. Usare lo strumento **Penna** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") per fare clic in un punto qualsiasi del tracciato in cui si vuole aggiungere il punto.  
   
-##  <a name="Convert"></a> Convertire una forma in un tracciato  
+## <a name="Convert"></a> Convertire una forma in un tracciato  
  Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato.  
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [uso dei tracciati: Convertire una forma in un tracciato](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
-##  <a name="Combine"></a> Combinare tracciati  
+## <a name="Combine"></a> Combinare tracciati  
  È possibile combinare forme e tracciati in un unico tracciato.  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
@@ -114,7 +114,7 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [uso dei tracciati: Combinare tracciati](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
-##  <a name="Compound"></a> Creare un tracciato composto  
+## <a name="Compound"></a> Creare un tracciato composto  
  Quando si crea un tracciato composto, eventuali parti del tracciato che si intersecano vengono sottratte dal risultato e il tracciato risultante assume le proprietà visive del percorso situato più in basso.  
   
  È possibile separare un tracciato composto in qualsiasi momento dopo averlo creato.  
@@ -123,7 +123,7 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [uso dei tracciati: Creare un tracciato composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
-##  <a name="Clipping"></a> Creare un tracciato di ritaglio  
+## <a name="Clipping"></a> Creare un tracciato di ritaglio  
  Un tracciato di ritaglio è un tracciato o una forma applicato a un altro oggetto, in modo da nascondere le parti dell'oggetto mascherato esterne al tracciato di ritaglio.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  

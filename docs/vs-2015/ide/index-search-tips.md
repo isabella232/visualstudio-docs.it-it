@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a05e767330f0c1df5b30af6660a3f6e5ba4971e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044213"
 ---
 # <a name="index-search-tips"></a>Suggerimenti per la ricerca nell'indice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,32 +31,32 @@ ms.locfileid: "54764978"
   
 ### <a name="general-guidelines"></a>Indicazioni generali  
   
--   Scorrere le voci dell'indice. Non tutti gli argomenti sono indicizzati nello stesso modo e quello che può essere più utile potrebbe essere elencato più in alto o più in basso di quanto ci si aspetterebbe.  
+- Scorrere le voci dell'indice. Non tutti gli argomenti sono indicizzati nello stesso modo e quello che può essere più utile potrebbe essere elencato più in alto o più in basso di quanto ci si aspetterebbe.  
   
--   Omettere gli articoli, ad esempio "uno" o "il" perché l'indice li ignora.  
+- Omettere gli articoli, ad esempio "uno" o "il" perché l'indice li ignora.  
   
--   Cambiare l'ordine delle parole immesse se non si trovano le voci previste.  
+- Cambiare l'ordine delle parole immesse se non si trovano le voci previste.  
   
      Se ad esempio "debug di codice assembly inline" non ha visualizzato voci pertinenti, provare a digitare "codice assembly, debug inline".  
   
--   Usare i filtri con la scheda **Indice** per ridurre il numero di risultati.  
+- Usare i filtri con la scheda **Indice** per ridurre il numero di risultati.  
   
 ### <a name="syntax-tips"></a>Suggerimenti per la sintassi  
  Se non si trova una voce per la parola o la frase immessa, provare a eseguire le operazioni seguenti:  
   
--   Digitare le prime lettere o la radice della parola. Immettendo una stringa parziale, è possibile accedere agli argomenti indicizzati con parole chiave singolari o plurali.  
+- Digitare le prime lettere o la radice della parola. Immettendo una stringa parziale, è possibile accedere agli argomenti indicizzati con parole chiave singolari o plurali.  
   
      Immettere ad esempio "attribut" per avviare la ricerca di attributo e attributi.  
   
--   Immettere il sostantivo corrispondente al verbo indicante l'attività che si vuole completare. Per trovare voci di indice più specifiche, aggiungere una parola che descriva esattamente che cosa si sta cercando.  
+- Immettere il sostantivo corrispondente al verbo indicante l'attività che si vuole completare. Per trovare voci di indice più specifiche, aggiungere una parola che descriva esattamente che cosa si sta cercando.  
   
      Digitare ad esempio "esecuzione" per trovare più voci o "esecuzione di programmi" per trovarne di meno.  
   
--   Immettere aggettivi autonomi. Per limitare i risultati, aggiungere una parola che descriva esattamente che cosa si sta cercando.  
+- Immettere aggettivi autonomi. Per limitare i risultati, aggiungere una parola che descriva esattamente che cosa si sta cercando.  
   
      Immettere ad esempio "COM+" per ottenere un lungo elenco di voci o "componenti COM+" per ottenerne di meno.  
   
--   Immettere un sinonimo della parola o del verbo che si sta cercando.  
+- Immettere un sinonimo della parola o del verbo che si sta cercando.  
   
      Ad esempio, se è stata immessa la compilazione"sostantivo" prova "creazione".  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051317"
 ---
 # <a name="create-sharepoint-features"></a>Creare funzionalità di SharePoint
   È possibile utilizzare una funzionalità di SharePoint per raggruppare gli elementi di progetto di SharePoint correlati per facilitare la distribuzione. È possibile creare funzionalità imposta ambiti di e contrassegnare altre funzionalità come dipendenze utilizzando la finestra di progettazione di funzionalità di SharePoint. La finestra di progettazione genera inoltre un manifesto, ovvero un file XML che descrive ogni funzionalità.
@@ -26,9 +26,9 @@ ms.locfileid: "56644458"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Aggiungere funzionalità alla soluzione di SharePoint
  È possibile aggiungere una funzionalità per la soluzione SharePoint tramite Esplora soluzioni o Esplora pacchetti. È possibile usare uno dei metodi seguenti per aggiungere una funzionalità.
 
--   In **Esplora soluzioni**, aprire il menu di scelta rapida **funzionalità**, quindi scegliere **Aggiungi funzionalità**.
+- In **Esplora soluzioni**, aprire il menu di scelta rapida **funzionalità**, quindi scegliere **Aggiungi funzionalità**.
 
--   Nelle **Esplora pacchetti**, aprire il menu di scelta rapida per il pacchetto e quindi scegliere **Aggiungi funzionalità**.
+- Nelle **Esplora pacchetti**, aprire il menu di scelta rapida per il pacchetto e quindi scegliere **Aggiungi funzionalità**.
 
 ## <a name="using-the-feature-designer"></a>Usando la finestra di progettazione di funzionalità
  Una soluzione di SharePoint può contenere uno o più funzionalità di SharePoint, vengono raggruppati sotto il nodo di funzionalità in Esplora soluzioni. Ogni funzionalità ha il proprio **Progettazione funzionalità** che è possibile usare per personalizzare le proprietà di funzionalità. Per altre informazioni, vedere [Procedura: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Per distinguere le funzionalità uno da altro, è possibile configurare le proprietà della funzionalità, ad esempio il titolo, descrizione, versione e ambito.

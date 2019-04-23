@@ -12,12 +12,12 @@ ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 74f77112965e774bc2fcb278be08f6e9b61774d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052480"
 ---
 # <a name="saving-a-standard-document"></a>Salvataggio di un documento standard
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Salvare, Salva con nome e la gestione di un editor standard del comando Salva tu
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Per modificare la proprietà del file al progetto file esterni  
   
-1.  Eseguire una query del servizio per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaccia.  
+1. Eseguire una query del servizio per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaccia.  
   
      Un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> viene restituito.  
   
-2.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) metodo per trasferire i documenti nella nuova gerarchia. La gerarchia esegue il comando Salva con nome chiama questo metodo.  
+2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) metodo per trasferire i documenti nella nuova gerarchia. La gerarchia esegue il comando Salva con nome chiama questo metodo.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

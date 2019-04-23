@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1df80c41c71b02b8dfc8d99553e2d5b22afdd8a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044070"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
  È possibile espandere ogni primitiva per esaminare in che modo l'output del pixel shader è stato unito al colore del pixel esistente per produrre il colore risultante. A questo punto è possibile esaminare o eseguire il debug del codice del pixel shader associato alla primitiva ed è inoltre possibile espandere il nodo di vertex shader per esaminare l'input del vertex shader.  
   
-###  <a name="exclusion"></a> Esclusione di primitive  
+### <a name="exclusion"></a> Esclusione di primitive  
  Se una primitiva viene esclusa dall'influenzare il colore del pixel, l'esclusione può verificarsi per diversi motivi. Ogni motivo è rappresentato da un'icona descritta nella tabella seguente:  
   
 |Icona|Motivo dell'esclusione|  
@@ -55,22 +55,22 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
 ##### <a name="to-view-a-shaders-source-code"></a>Per visualizzare il codice sorgente di uno shader  
   
-1.  Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.  
+1. Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.  
   
-2.  Sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.  
+2. Sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.  
   
-3.  Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
+3. Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
   
     > [!TIP]
     >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.  
   
 ##### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader  
   
-1.  Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.  
+1. Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.  
   
-2.  Quindi, sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.  
+2. Quindi, sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.  
   
-3.  Sotto la primitiva scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la primitiva corrispondente, ovvero il primo pixel o vertice elaborato dallo shader. Esiste un solo pixel associato alla primitiva, ma esistono più chiamate del vertex shader per linee e triangoli.  
+3. Sotto la primitiva scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la primitiva corrispondente, ovvero il primo pixel o vertice elaborato dallo shader. Esiste un solo pixel associato alla primitiva, ma esistono più chiamate del vertex shader per linee e triangoli.  
   
      Per eseguire il debug della chiamata del vertex shader per un vertice specifico, espandere il collegamento del titolo VertexShader e individuare il vertice a cui si è interessati, quindi scegliere **Avvia debug** accanto al vertice.  
   

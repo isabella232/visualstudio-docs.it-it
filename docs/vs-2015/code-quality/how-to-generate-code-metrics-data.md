@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045629"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58965173"
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Per generare risultati metrica codice per un'intera soluzione  
   
--   Fare clic su **menu Analizza**, quindi fare clic su **CalculateCode metriche per la soluzione**.  
+- Fare clic su **menu Analizza**, quindi fare clic su **CalculateCode metriche per la soluzione**.  
   
      \- oppure -  
   
--   Nelle **Esplora soluzioni**, fare doppio clic la soluzione e quindi fare clic su **metriche CalculateCode**.  
+- Nelle **Esplora soluzioni**, fare doppio clic la soluzione e quindi fare clic su **metriche CalculateCode**.  
   
      \- oppure -  
   
--   Nel **risultati metrica codice** finestra, fare clic sui **CalculateCode metriche per la soluzione** pulsante.  
+- Nel **risultati metrica codice** finestra, fare clic sui **CalculateCode metriche per la soluzione** pulsante.  
   
      I risultati vengono generati e il **risultati metrica codice** viene visualizzata la finestra.  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58965173"
   
 ### <a name="to-view-the-results-details"></a>Per visualizzare i dettagli dei risultati  
   
--   Espandere l'albero nel **gerarchia** colonna.  
+- Espandere l'albero nel **gerarchia** colonna.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

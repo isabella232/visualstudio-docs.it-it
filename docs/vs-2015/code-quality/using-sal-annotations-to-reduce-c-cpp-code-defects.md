@@ -1,5 +1,5 @@
 ---
-title: Uso delle annotazioni SAL per ridurre i difetti del codice C-c + + | Microsoft Docs
+title: Uso delle annotazioni SAL per ridurre C -C++ difetti del codice | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1331fb7df7cc2c1aaff6a498aab0d9cf8ec8f57f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046266"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Uso delle annotazioni SAL per ridurre gli errori del codice C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ SAL è il linguaggio di annotazione Microsoft source code. Utilizzando le annota
   
  Gli articoli in questa sezione della documentazione illustrano gli aspetti di SAL forniscono riferimento per la sintassi SAL e offrono esempi del relativo utilizzo.  
   
--   [Informazioni su SAL](../code-quality/understanding-sal.md)  
+- [Informazioni su SAL](../code-quality/understanding-sal.md)  
   
      Fornisce informazioni ed esempi che illustrano il nucleo delle annotazioni SAL.  
   
--   [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)  
+- [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)  
   
      Elenca le annotazioni SAL per le funzioni e parametri della funzione.  
   
--   [Annotazione del comportamento delle funzioni](../code-quality/annotating-function-behavior.md)  
+- [Annotazione del comportamento delle funzioni](../code-quality/annotating-function-behavior.md)  
   
      Elenca le annotazioni SAL per le funzioni e comportamento della funzione.  
   
--   [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)  
+- [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)  
   
      Elenca le annotazioni SAL per le strutture e classi.  
   
--   [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)  
+- [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)  
   
      Viene illustrato come usare le annotazioni SAL con meccanismi di blocco.  
   
--   [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+- [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      Elenca le annotazioni SAL che specificano la condizione o l'ambito (posizione) di altre annotazioni SAL.  
   
--   [Funzioni intrinseche](../code-quality/intrinsic-functions.md)  
+- [Funzioni intrinseche](../code-quality/intrinsic-functions.md)  
   
      Elenca le annotazioni SAL intrinseche.  
   
--   [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)  
+- [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)  
   
      Vengono forniti esempi che illustrano come usare le annotazioni SAL. Viene inoltre spiegato alcuni errori comuni.  
   

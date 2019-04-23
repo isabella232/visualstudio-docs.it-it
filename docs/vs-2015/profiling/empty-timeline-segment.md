@@ -13,25 +13,25 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052818"
 ---
 # <a name="empty-timeline-segment"></a>Segmento della cronologia vuoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nel visualizzatore di concorrenza, il motivo per cui una sezione della sequenza temporale è vuota (presenta uno sfondo bianco) dipende dal tipo di canale.  
   
--   Per un canale di thread di CPU, significa che il thread non esisteva in quella parte della sequenza temporale. Se si è interessati al thread, è possibile trovare la relativa sezione in esecuzione usando il controllo zoom o lo scorrimento orizzontale.  
+- Per un canale di thread di CPU, significa che il thread non esisteva in quella parte della sequenza temporale. Se si è interessati al thread, è possibile trovare la relativa sezione in esecuzione usando il controllo zoom o lo scorrimento orizzontale.  
   
--   Per un canale I/O, significa che non si è verificato alcun accesso al disco per conto del processo di destinazione in quel momento.  
+- Per un canale I/O, significa che non si è verificato alcun accesso al disco per conto del processo di destinazione in quel momento.  
   
--   Per un canale di DirectX, significa che non è stata eseguita alcuna operazione GPU per conto del processo di destinazione in quella parte della sequenza temporale.  
+- Per un canale di DirectX, significa che non è stata eseguita alcuna operazione GPU per conto del processo di destinazione in quella parte della sequenza temporale.  
   
--   Per un canale di marcatore, significa che non sono stati generati marcatori.  
+- Per un canale di marcatore, significa che non sono stati generati marcatori.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Threads View](../profiling/threads-view-parallel-performance.md)  (Visualizzazione thread)  
