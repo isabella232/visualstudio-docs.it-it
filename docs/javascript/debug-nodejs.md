@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223390"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856593"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
 È possibile eseguire il debug di codice JavaScript e TypeScript con Visual Studio. È possibile impostare e raggiungere punti di interruzione, collegare il debugger, esaminare variabili, visualizzare lo stack di chiamate e usare altre funzionalità di debug.
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
+> Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Eseguire il debug di script lato server
 
@@ -60,6 +60,11 @@ Per il collegamento del debugger da Visual Studio e l'accesso a punti di interru
     `chrome.exe --remote-debugging-port=9222`
 
     Chrome viene avviato con il debug abilitato.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > È anche possibile impostare il flag `--remote-debugging-port` all'avvio del browser. Selezionare **Esplora con** sulla barra degli strumenti **Debug**, scegliere **Aggiungi** e quindi impostare il flag nel campo **Argomenti**. Usare un nome descrittivo diverso per il browser, ad esempio **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Passare a Visual Studio e impostare un punto di interruzione nel codice sorgente. Impostare il punto di interruzione in una riga di codice che consente i punti di interruzione, ad esempio un'istruzione `return` o una dichiarazione `var`.
 
@@ -101,7 +106,7 @@ Per il collegamento del debugger da Visual Studio e l'accesso a punti di interru
     * Se è necessario inserire un'interruzione nel codice in un file JavaScript sottoposto a transpile, ad esempio *app bundle.js*, ma non si riesce a eseguire questa operazione, rimuovere il file del mapping di origine *filename.js.map*.
 
      > [!TIP]
-     > Dopo aver eseguito per la prima volta l'associazione al processo seguendo questa procedura, è possibile ripetere rapidamente l'associazione allo stesso processo in Visual Studio 2017 scegliendo **Debug** > **Riassocia a processo**.
+     > Dopo aver eseguito per la prima volta l'associazione al processo seguendo questa procedura, è possibile ripetere rapidamente l'associazione allo stesso processo scegliendo **Debug** > **Riassocia a processo**.
 
 ## <a name="generate_sourcemaps"></a> Generare mapping di origine per il debug
 

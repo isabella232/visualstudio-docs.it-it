@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476007"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856502"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di C# e C++ nella stessa sessione di debug
 
@@ -44,7 +44,7 @@ In questa esercitazione si eseguono le attività seguenti:
 - **Sviluppo di applicazioni desktop con C++**
 - **Sviluppo per desktop .NET** oppure **Sviluppo multipiattaforma .NET Core**, a seconda di quale tipo di app si vuole creare.
 
-Se Visual Studio non è installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  per installarlo gratuitamente.
+Se Visual Studio non è installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
 
 Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, selezionare **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Nel programma di installazione di Visual Studio, selezionare i carichi di lavoro necessari e quindi **Modifica**.
 
@@ -55,7 +55,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL + Q** per aprire la casella di ricerca, digitare **Progetto vuoto**, scegliere **Modelli**, quindi **Crea nuovo progetto Progetto vuoto** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL + Q** per aprire la casella di ricerca, digitare **Progetto vuoto**, scegliere **Modelli**, quindi **Crea nuovo progetto Progetto vuoto** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
@@ -132,7 +132,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework) per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework) per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **Crea**.
     ::: moniker-end
@@ -193,7 +193,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Per configurare il debug in modalità mista per un'app .NET Core
 
-Nella maggior parte delle versioni di Visual Studio 2017 è necessario usare il file *launchSettings.json*, anziché le proprietà del progetto, per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per tenere traccia degli aggiornamenti dell'interfaccia utente per questa funzionalità, vedere questo [problema di GitHub](https://github.com/dotnet/project-system/issues/1125).
+Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2017 è necessario usare il file *launchSettings.json*, anziché le proprietà del progetto, per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per tenere traccia degli aggiornamenti dell'interfaccia utente per questa funzionalità, vedere questo [problema di GitHub](https://github.com/dotnet/project-system/issues/1125).
 
 1. In **Esplora soluzioni** espandere **Proprietà** e aprire il file *launchSettings.json*.
 
