@@ -2,7 +2,7 @@
 title: 'Esercitazione: Aprire un progetto da un repository'
 description: Informazioni su come aprire un progetto in un repository Git o Azure DevOps con Visual Studio.
 ms.custom: get-started
-ms.date: 03/13/2019
+ms.date: 03/30/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f017e0ef3d7b76ba4d5de18ecab614f030b07501
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070074"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857567"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Esercitazione: Aprire un progetto da un repository
 
@@ -33,15 +33,17 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ## <a name="open-a-project-from-a-github-repo"></a>Aprire un progetto da un repository GitHub
 
+::: moniker range="vs-2017"
+
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore scegliere **File** > **Apri** > **Apri dal controllo del codice sorgente**.
+1. Nella barra dei menu superiore scegliere **File**> **Apri** >**Apri dal controllo del codice sorgente**.
 
    Si apre il riquadro **Team Explorer - Connetti**.
 
@@ -69,11 +71,37 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
    ![Animazione dell'apertura di un progetto in un repository GitHub con Visual Studio](./media/open-project-from-github.gif)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Aprire Visual Studio 2019.
+
+1. Nella finestra iniziale scegliere **Clona o esegui checkout del codice**.
+
+   ![Visualizzare la finestra "Crea un nuovo progetto" ](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Immettere o digitare il percorso del repository e quindi scegliere **Clona**.
+
+   ![Visualizzare la finestra Clona o esegui checkout del codice](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Visual Studio apre il progetto dal repository.
+
+1. Se si ha un file di soluzione disponibile, verrà visualizzato nel menu a comparsa "Soluzioni e cartelle". Selezionarlo e Visual Studio aprirà la soluzione.
+
+   ![Scegliere cosa si vuole aprire nell'elenco a discesa Esplora soluzioni](./media/open-proj-repo-github-solutions-folders-picker.png)
+
+   Se nel repository non è disponibile un file di soluzione (con estensione sln), il menu a comparsa indicherà che "Non sono state trovate soluzioni". Tuttavia, è possibile fare doppio clic su qualsiasi file nel menu della cartella per aprirlo nell'editor di codice di Visual Studio.
+
+::: moniker-end
+
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>Aprire un progetto da un repository Azure DevOps
+
+::: moniker range="vs-2017"
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore scegliere **File** > **Apri** > **Apri dal controllo del codice sorgente**.
+1. Nella barra dei menu superiore scegliere **File**> **Apri** >**Apri dal controllo del codice sorgente**.
 
    Si apre il riquadro **Team Explorer - Connetti**.
 
@@ -103,7 +131,48 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
    Un file di soluzione (con estensione sln) verrà visualizzato nel menu a comparsa "Soluzioni e cartelle". Selezionarlo e Visual Studio aprirà la soluzione.
 
    Se nel repository non è disponibile un file di soluzione, il menu a comparsa indicherà che "Non sono state trovate soluzioni". Tuttavia, è possibile fare doppio clic su qualsiasi file nel menu della cartella per aprirlo nell'editor di codice di Visual Studio.
-  
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Aprire Visual Studio 2019.
+
+1. Nella finestra iniziale scegliere **Clona o esegui checkout del codice**.
+
+   ![Visualizzare la finestra "Crea un nuovo progetto" ](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Nella sezione **Sfoglia un repository** scegliere **Azure DevOps**.
+
+   ![Visualizzare la finestra Clona o esegui checkout del codice](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Se viene visualizzata una finestra di accesso, accedere al proprio account.
+
+1. Nella finestra di dialogo **Connetti a un progetto** scegliere il repository a cui connettersi e quindi scegliere **Clona**.
+
+      ![La finestra di dialogo "Connetti a un progetto" generata da Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+
+    > [!NOTE]
+    > Ciò che compare nella casella di riepilogo dipende dai repository Azure DevOps ai quali si ha accesso.
+
+   Visual Studio apre **Team Explorer** e viene visualizzata una notifica quando il clone è stato completato.
+
+     ![Finestra Team Explorer in Visual Studio dopo il completamento del clone](./media/vs-2019/clone-complete-azure-devops.png)
+
+1. Per visualizzare le cartelle e i file, scegliere il collegamento **Mostra visualizzazione cartelle**.
+
+     ![Sezione Soluzioni della finestra Team Explorer in Visual Studio dopo il completamento del clone](./media/vs-2019/show-folder-view-azure-devops.png)
+
+     Visual Studio apre **Esplora soluzioni**.
+
+1. Scegliere il collegamento **Soluzioni e cartelle** per cercare un file di soluzione (con estensione sln) da aprire.
+
+      ![La notifica "Soluzioni e cartelle" da Team Explorer in Visual Studio](./media/open-proj-repo-solutions-folders.png)
+
+   Se nel repository non è disponibile un file di soluzione, verrà visualizzato il messaggio "Non sono state trovate soluzioni". Tuttavia, è possibile fare doppio clic su qualsiasi file nel menu della cartella per aprirlo nell'editor di codice di Visual Studio.
+
+::: moniker-end
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 Se è pronti a scrivere codice con Visual Studio, è possibile approfondire l'argomento in una delle esercitazioni specifiche per linguaggio seguenti:
@@ -116,5 +185,5 @@ Se è pronti a scrivere codice con Visual Studio, è possibile approfondire l'ar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Introduzione ad Azure Repos e Visual Studio)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio (Introduzione ad Azure Repos e Visual Studio)](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: Introduzione ad Azure DevOps](/learn/modules/get-started-with-devops/)

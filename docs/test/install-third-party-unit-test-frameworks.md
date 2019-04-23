@@ -1,70 +1,36 @@
 ---
 title: Installare framework di unit test di terze parti
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982922"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857702"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
-Esplora test di Visual Studio può eseguire qualsiasi framework di unit test che ha sviluppato un'interfaccia di adattatore per Esplora test. Il programma di installazione del framework installa i file binari e aggiunge modelli di progetto di Visual Studio per i linguaggi supportati. Quando si crea un progetto con il modello, il framework viene registrato con Esplora test. Una soluzione di Visual Studio può includere progetti unit test che usano diversi framework e fanno riferimento a diversi linguaggi. Esplora test li esegue tutti.
+Esplora test di Visual Studio può eseguire test da qualsiasi framework di unit test che ha sviluppato un'interfaccia di adattatore per Esplora test. L'installazione del framework copia i file binari e aggiunge modelli di progetto di Visual Studio per i linguaggi supportati. Quando si crea un progetto con il modello, il framework viene registrato con Esplora test.
 
-[MSTest](getting-started-with-unit-testing.md) è il framework di test offerto da Visual Studio che viene installato con Visual Studio per impostazione predefinita.
+Una soluzione di Visual Studio può includere progetti unit test che usano diversi framework e fanno riferimento a diversi linguaggi.
+
+[MSTest](getting-started-with-unit-testing.md) è il framework di test offerto da Visual Studio che viene installato per impostazione predefinita.
 
 ## <a name="acquire-frameworks"></a>Acquisire framework
 
-È possibile scaricare e installare framework di unit test di terze parti usando Gestione estensioni di Visual Studio o da [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). I framework sono disponibili per il download anche da altri siti, ad esempio il sito Web specifico del framework.
+Installare framework di unit test di terze parti usando **Gestione pacchetti NuGet**.
 
-### <a name="install-from-visual-studio"></a>Installare da Visual Studio
+1. Fare clic con il pulsante destro del mouse sul progetto che conterrà il codice di test e selezionare **Gestisci pacchetti NuGet**.
 
-::: moniker range="vs-2017"
+2. In **Gestione pacchetti NuGet** cercare il framework di test da installare e quindi scegliere **Installa**.
 
-1. Scegliere **Strumenti** > **Estensioni e aggiornamenti**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Scegliere **Estensioni** > **Gestisci estensioni**.
-
-::: moniker-end
-
-2. Espandere **Online** > **Visual Studio Marketplace** > **Strumenti** e scegliere **Test**.
-
-3. Cercare il framework nell'elenco.
-
-4. Selezionare il framework e scegliere **Download**.
-
-Per altre informazioni, vedere [Cercare e usare le estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Installazione dal Web
-
-Se si conosce il framework che si vuole usare:
-
-1. Aprire [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. Digitare il nome del framework nella casella **Trova**.
-
-3. Scegliere il framework dall'elenco di risultati per passare alla pagina di **Visual Studio Marketplace** per lo strumento.
-
-Per sfogliare un elenco di framework e di altri strumenti di test:
-
-1. Aprire [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. In **Filtra per categoria/raccolta** scegliere **Visualizza tutto**.
-
-3. Nell'elenco **Categoria** con etichetta **Visualizzazione di**, espandere il nodo **Strumenti** e scegliere **Test**.
-
-4. Scegliere un framework dall'elenco di risultati per passare alla pagina di **Visual Studio Marketplace** per lo strumento.
+   ![Gestione pacchetti NuGet in Visual Studio](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>Eseguire l'aggiornamento agli adattatori di test più recenti
 

@@ -3,20 +3,17 @@ title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 02/07/2019
+ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 0ab7293a7b7d956778d1dbab568d609e6bf3d644
+ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
 ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857257"
+ms.locfileid: "58856314"
 ---
-# <a name="visual-studio-2017-for-mac-tour"></a>Presentazione di Visual Studio 2017 per Mac
-
-> [!NOTE]
-> Visual Studio 2019 per Mac è [ora disponibile](installation.md).
+# <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
 
 Visual Studio per Mac è un _ambiente di sviluppo integrato_ .NET nel Mac che può essere usato per modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Oltre alle funzionalità previste, ad esempio un editor e un debugger standard, Visual Studio per Mac include compilatori, strumenti di completamento del codice, finestre di progettazione con interfaccia grafica e controllo del codice sorgente che semplificano il processo di sviluppo del software.
 
@@ -39,18 +36,15 @@ L'articolo illustra varie sezioni di Visual Studio per Mac e presenta alcune del
 
 Visual Studio per Mac è organizzato in sezioni diverse per la gestione di impostazioni e file delle applicazioni, la creazione di codice delle applicazioni e il debug.
 
-## <a name="welcome-screen"></a>Schermata iniziale
+## <a name="start-window"></a>Finestra iniziale
 
-All'avvio, Visual Studio per Mac visualizza una *schermata iniziale*:
+Quando si avvia Visual Studio 2019 per Mac, verrà visualizzata una finestra di accesso. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile premere **Ignora** ed eseguire l'accesso in un secondo momento tramite la voce di menu **Visual Studio > Accedi**:
 
-![Schermata iniziale](media/ide-tour-image1.png)
+![Accedere all'account Microsoft](media/ide-tour-2019-start-signin.png)
 
-La schermata iniziale contiene le sezioni seguenti:
+Gli utenti che hanno eseguito l'accesso visualizzeranno la nuova _finestra iniziale_, che mostra un elenco dei progetti recenti e i pulsanti per aprire un progetto esistente o crearne uno nuovo:
 
-- **Barra degli strumenti** - Consente l'accesso rapido alla barra di ricerca. Quando viene caricata una soluzione, la barra degli strumenti viene usata per definire le configurazioni dell'app, per eseguire il debug e per visualizzare gli errori.
-- **Guida introduttiva** - Consente l'accesso rapido ad argomenti utili per gli sviluppatori, per iniziare a usare Visual Studio per Mac.
-- **Soluzioni recenti** - Consente l'accesso rapido alle soluzioni aperte di recente, oltre che fornire comodi pulsanti per aprire o creare progetti.
-- **Novità per gli sviluppatori** - Newsfeed che offre aggiornamenti sulle ultime novità per gli sviluppatori Microsoft.
+![Scegliere tra i progetti recenti o crearne uno nuovo](media/ide-tour-2019-start-projects.png)
 
 ## <a name="solutions-and-projects"></a>Soluzioni e progetti
 
@@ -70,7 +64,7 @@ In questa posizione i file per il codice sorgente, le risorse, l'interfaccia ute
 
 Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac, vedere l'articolo [Progetti e soluzioni](/visualstudio/mac/projects-and-solutions).
 
-## <a name="assembly-references"></a>Riferimenti dell'assembly
+## <a name="assembly-references"></a>Riferimenti ad assembly
 
 I riferimenti ad assembly per ogni progetto sono disponibili nella cartella Riferimenti:
 
@@ -118,10 +112,14 @@ I file con modifiche non sottoposte a commit presentano un'annotazione nelle rel
 
 Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](/visualstudio/mac/version-control).
 
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Installare Visual Studio per Mac](installation.md)
+- [Esaminare i carichi di lavoro disponibili](/visualstudio/mac/workloads/)
+
 ## <a name="related-video"></a>Video correlato
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
-
 
 ## <a name="see-also"></a>Vedere anche
 

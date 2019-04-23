@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi correlati alla rete o al proxy
 description: Trovare soluzioni per gli errori correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324961"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790498"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio
 
@@ -54,6 +54,8 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
 
 - Se si vogliono usare le credenziali predefinite con il proxy, è possibile eseguire le azioni seguenti:
 
+::: moniker range="vs-2017"
+
   1. Individuare **devenv.exe.config** (il file di configurazione di devenv.exe) in: **%Programmi%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** o **%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
   2. Nel file di configurazione trovare il blocco `<system.net>` e quindi aggiungere il codice seguente:
@@ -67,11 +69,28 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
       È necessario inserire l'indirizzo del proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Per altre informazioni, vedere le pagine relative all'elemento [&lt;defaultProxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) e all'elemento [&lt;proxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Per altre informazioni, vedere le pagine relative all'elemento [&lt;defaultProxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e all'elemento [&lt;proxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
 
-  OPPURE
+::: moniker-end
 
-- È anche possibile seguire le istruzioni nel post di blog [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Come connettersi tramite un proxy Web autenticato), che illustra come aggiungere codice che consente di usare il proxy.
+::: moniker range="vs-2019"
+
+  1. Individuare **devenv.exe.config** (il file di configurazione di devenv.exe) in: **%Programmi%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** o **%Programmi(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
+
+  2. Nel file di configurazione trovare il blocco `<system.net>` e quindi aggiungere il codice seguente:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      È necessario inserire l'indirizzo del proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Per altre informazioni, vedere le pagine relative all'elemento [&lt;defaultProxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e all'elemento [&lt;proxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Errore: "Connessione sottostante chiusa"
 

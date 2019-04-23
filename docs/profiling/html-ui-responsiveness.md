@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f95daba8d1a7a8965be223ff2a9787101530edc1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868156"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790927"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.
@@ -178,7 +179,7 @@ if (performance.mark && performance.measure) {
 
  ![Righello della sessione di diagnostica](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
- La sequenza temporale mostra quando si verificano eventi del ciclo di vita dell'app, ad esempio l'evento di attivazione, nonché i contrassegni utente (triangoli con l'etichetta Contrassegno utente) che è possibile aggiungere al codice. È possibile selezionare gli eventi per visualizzare descrizioni comandi con informazioni aggiuntive. Per ulteriori informazioni sui contrassegni utente, vedi [Contrassegnare il codice per l'analisi](#ProfileMark) in questo argomento.
+ La sequenza temporale mostra quando si verificano eventi del ciclo di vita dell'app, ad esempio l'evento di attivazione, nonché i contrassegni utente (triangoli con l'etichetta Contrassegno utente) che puoi aggiungere al codice. È possibile selezionare gli eventi per visualizzare descrizioni comandi con informazioni aggiuntive. Per ulteriori informazioni sui contrassegni utente, vedi [Contrassegnare il codice per l'analisi](#ProfileMark) in questo argomento.
 
  Gli eventi del ciclo di vita dell'app vengono visualizzati come simboli a forma di rombo. Si tratta di eventi DOM che includono i seguenti:
 

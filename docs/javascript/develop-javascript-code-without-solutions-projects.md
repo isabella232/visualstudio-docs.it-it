@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796764"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857840"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Sviluppare il codice JavaScript e TypeScript in Visual Studio senza soluzioni o progetti
 
-Visual Studio 2017 ha introdotto la possibilità [sviluppare codice senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), quindi di aprire una cartella del codice e iniziare immediatamente a lavorare con le opzioni di supporto di un editor avanzato, ad esempio IntelliSense, la ricerca, il refactoring, il debug e altro ancora. Oltre a queste funzionalità, Node.js Tools for Visual Studio aggiunge il supporto per la compilazione dei file TypeScript, la gestione dei pacchetti npm e l'esecuzione degli script npm.
+A partire da Visual Studio 2017 è possibile [sviluppare codice senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), quindi aprire una cartella del codice e iniziare immediatamente a lavorare con le opzioni di supporto di un editor avanzato, ad esempio IntelliSense, la ricerca, il refactoring, il debug e altro ancora. Oltre a queste funzionalità, Node.js Tools for Visual Studio aggiunge il supporto per la compilazione dei file TypeScript, la gestione dei pacchetti npm e l'esecuzione degli script npm.
 
 Per iniziare, selezionare **File** > **Apri** > **Cartella** nella barra degli strumenti. Esplora soluzioni visualizza tutti i file della cartella ed è possibile aprire qualsiasi file per iniziare ad apportare modifiche. Visual Studio indicizza in background i file per abilitare le funzionalità di npm, compilazione e debug.
 
 > [!IMPORTANT]
-> Molte delle funzionalità descritte in questo articolo, inclusa l'integrazione di npm, richiedono Visual Studio 2017 versione 15.8.
+> Molte delle funzionalità descritte in questo articolo, inclusa l'integrazione di npm, richiedono Visual Studio 2017 versione 15.8 o successive.
 
 ## <a name="npm-integration"></a>Integrazione di npm
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325292"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790667"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 
@@ -112,13 +112,13 @@ Ora si procederà alla compilazione del progetto per esaminare alcuni elementi d
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Avvio veloce
+## <a name="search-box"></a>Casella di ricerca
 
-La casella **Avvio veloce** è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
+La casella di ricerca è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
 
-1. Digitare **verbosity** nella casella **Avvio veloce**. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
+1. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
 
-   ![Avvio veloce in Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Casella di ricerca in Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    Si apre la pagina delle opzioni **Compila ed esegui** della finestra di dialogo **Opzioni**.
 
@@ -132,7 +132,7 @@ La casella **Avvio veloce** è un modo rapido e semplice per eseguire pressoché
 
 ## <a name="send-feedback-menu"></a>Menu Invia commenti e suggerimenti
 
-Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile usare il menu **Invia commenti e suggerimenti** nella parte superiore di Visual Studio, accanto alla casella **Avvio veloce**.
+Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile usare il menu **Invia commenti e suggerimenti** nella parte superiore della finestra di Visual Studio.
 
 ![Inviare commenti e suggerimenti in Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

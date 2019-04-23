@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204333"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856447"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Disinstallazione di Visual Studio per Mac
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Può anche essere necessario rimuovere la directory seguente che contiene diversi file e cartelle di Xamarin. Tuttavia, prima di procedere è necessario tenere presente che questa directory contiene le chiavi di firma di Android. Per altre informazioni, vedere la sezione **[Disinstallazione di Android SDK e Java SDK](#uninstall-android-sdk-and-java-sdk)**:
@@ -195,7 +196,7 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 Per le versioni precedenti, è necessario rimuovere manualmente gli artefatti seguenti:
 
 * Eliminare l'app Workbooks all'indirizzo `"/Applications/Xamarin Workbooks.app"`
-* Eliminare l'app Inspector `"Applications/Xamarin Inspector.app"`
+* Eliminare l'app Inspector all'indirizzo `"Applications/Xamarin Inspector.app"`
 * Eliminare i componenti aggiuntivi: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` e `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
 * Eliminare Inspector e i file di supporto qui: `/Library/Frameworks/Xamarin.Interactive.framework` e `/Library/Frameworks/Xamarin.Inspector.framework`
 
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Disinstallare Visual Studio 2019 per Mac Preview
+
+Visual Studio 2019 per Mac Preview viene avviato come anteprima distinta e consente di continuare a lavorare parallelamente con l'installazione di Visual Studio 2017 per Mac.
+
+Ora che Visual Studio 2019 per Mac è stato rilasciato, è possibile rimuovere in modo sicuro l'applicazione Visual Studio 2019 per Mac Preview.
+
+Per disinstallare il bundle dell'applicazione in anteprima, selezionare **Visual Studio (Preview)** nella cartella **Applicazioni** e fare clic su **Sposta nel cestino**, come illustrato nell'immagine seguente:
+
+![selezione dell'opzione "Sposta nel cestino" in Finder](media/uninstall-remove-vspreview.png)
+
+È possibile rimuovere il file con estensione plist dell'anteprima anche con il comando seguente:
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>Vedere anche

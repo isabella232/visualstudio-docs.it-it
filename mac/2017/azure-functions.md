@@ -3,16 +3,16 @@ title: Introduzione alle funzioni di Azure
 description: Uso delle funzioni di Azure in Visual Studio per Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/02/2019
+ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857243"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568373"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
@@ -20,7 +20,7 @@ Le funzioni di Azure sono un metodo per la creazione e l'esecuzione di frammenti
 
 ## <a name="requirements"></a>Requisiti
 
-Gli strumenti per le funzioni di Azure sono inclusi in **Visual Studio per Mac 7.5** e versioni successive.
+Gli strumenti Funzioni di Azure sono inclusi in **Visual Studio per Mac 7.5**.
 
 Per creare e distribuire le funzioni è necessaria anche una sottoscrizione di Azure, disponibile gratuitamente in [https://azure.com/free](https://azure.com/free).
 
@@ -34,10 +34,6 @@ Per creare e distribuire le funzioni è necessaria anche una sottoscrizione di A
 3. Selezionare il modello iniziale di Funzioni di Azure che si desidera usare, immettere il nome della funzione e fare clic su **Avanti**.
 
     ![Finestra Nuovo progetto che mostra i modelli di funzioni di Azure](media/azure-functions-image2.png)
-
-    > [!TIP]
-    > Anche se si cerca di mantenere il più possibile aggiornati il runtime e i modelli di Funzioni di Azure (interfaccia della riga di comando) in bundle, è inevitabile che diventino obsoleti. Quando si crea un nuovo progetto Funzioni, Visual Studio per Mac controlla la disponibilità di aggiornamenti per l'interfaccia della riga di comando e invia una notifica come illustrato nell'immagine seguente. È sufficiente fare clic sul pulsante per scaricare i modelli aggiornati.
-    > ![Finestra Nuovo progetto che mostra che sono disponibili aggiornamenti per le funzioni di Azure](media/azure-functions-update.png)
 
     A seconda del tipo di funzione selezionato, nella pagina successiva verrà richiesto di immettere i dettagli, ad esempio i diritti di accesso, come illustrato nell'immagine seguente:
 
@@ -103,9 +99,12 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
     |Impostazione  |Description  |
     |---------|---------|
     |**Nome del servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
-    |**Sottoscrizione**|Sottoscrizione di Azure da usare.|
+    |**Sottoscrizione**|La sottoscrizione di Azure da usare.|
     |**[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)**|Nome del gruppo di risorse in cui creare l'app per le funzioni. Scegliere **+** per creare un nuovo gruppo di risorse.|
     |**[Piano di servizio](/azure/azure-functions/functions-scale)**|Scegliere un piano esistente o creare un piano personalizzato. Scegliere una località in un'area nelle vicinanze o vicino ad altri servizi a cui accedono le funzioni.|
+
+    > [!CAUTION]
+    > È presente un bug nella versione 7.6 di Visual Studio per Mac che causerà l'esito negativo della pubblicazione con un errore di provisioning, se si prova a creare un piano di servizio personalizzato con l'opzione **Prezzi** impostata su **Consumo**. Questo problema verrà risolto nella prossima versione.
 
 5. Fare clic su **Avanti** per creare un account di archiviazione. Il runtime di Funzioni richiede un account di archiviazione di Azure. Fare clic su **Personalizzato** per creare un account di archiviazione per utilizzo generico oppure usarne uno esistente:
 
@@ -116,6 +115,9 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 7. Potrebbe essere visualizzata una finestra di dialogo durante la pubblicazione con la richiesta "Aggiorna versione di Funzioni in Azure". Fare clic su **Sì**:
 
     ![Opzione di menu Pubblica in Azure](media/azure-functions-image12.png)
+
+> [!CAUTION]
+> È presente un bug nella versione 7.6 di Visual Studio per Mac a causa del quale `FUNCTIONS_EXTENSION_VERSION` non è impostato correttamente su "beta" e ciò significa che la funzione potrebbe non essere eseguita correttamente. Per risolvere questo problema, passare a [Impostazioni dell'app per le funzioni](#function-app-settings) e modificare l'impostazione di `FUNCTIONS_EXTENSION_VERSION` da "-1" a "beta".
 
 ## <a name="function-app-settings"></a>Impostazioni dell'app per le funzioni
 

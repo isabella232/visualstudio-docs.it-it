@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780424"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663729"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, Scheda HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La scheda **HTML** della casella degli strumenti contiene componenti utili nelle pagine Web e nei Web Form. Per visualizzare questa scheda, aprire un documento per la modifica nella finestra di progettazione HTML. Scegliere **Casella degli strumenti** dal menu **Visualizza** e quindi fare clic sulla scheda **HTML** della casella degli strumenti.  
   
  Per creare un'istanza di uno strumento nella scheda **HTML**, fare doppio clic sullo strumento per aggiungerlo al documento nel punto di inserimento corrente o selezionare lo strumento e trascinarlo nella posizione voluta nell'area di modifica.  
@@ -55,7 +54,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: procedura: creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Mappa del contenuto per i controlli Server Web pulsante](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, e <xref:System.Web.UI.WebControls.Button>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [Procedura: creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sui controlli server Web pulsante](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> e <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Reimposta)**  
  ![Screenshot HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -68,7 +67,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputReset](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, e <xref:System.Web.UI.WebControls.Button>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputReset](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton> e <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Invia)**  
  ![Screenshot HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -81,7 +80,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputSubmit](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, e <xref:System.Web.UI.WebControls.Button>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputSubmit](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton> e <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Testo)**  
  ![Screenshot HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -94,7 +93,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Cenni preliminari sul controllo Server Web nella casella di testo](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, e <xref:System.Web.UI.WebControls.TextBox>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Cenni preliminari sul controllo server Web TextBox](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText> e <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -110,7 +109,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="File1" type="file" name="File1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), e <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) e <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
 >  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -142,7 +141,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputCheckBox](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [casella di controllo e Cenni preliminari sui controlli Server Web CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, e <xref:System.Web.UI.WebControls.CheckBox>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputCheckBox](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [Cenni preliminari sul controllo server Web CheckBox e CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> e <xref:System.Web.UI.WebControls.CheckBox>.  
   
  **Input (Pulsante di opzione)**  
  ![Screenshot VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -155,7 +154,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputRadioButton](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton e RadioButtonListCennipreliminaridicontrolliServerWeb](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, e <xref:System.Web.UI.WebControls.RadioButton>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputRadioButton](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [Cenni preliminari sul controllo server Web RadioButton e RadioButtonList](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> e <xref:System.Web.UI.WebControls.RadioButton>.  
   
  **Input (Nascosto)**  
  ![Elemento nascosto pagina HTML](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -168,7 +167,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- Per altre informazioni, vedere [controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [sintassi dichiarativa per il controllo Server HtmlInputHidden](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), e <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
+ Per altre informazioni, vedere [Controlli Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputHidden](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) e <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
   
  **Area di testo**  
  ![Area testo casella degli strumenti pagina HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -181,7 +180,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- Per altre informazioni, vedere [sintassi dichiarativa per il controllo Server HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, e <xref:System.Web.UI.WebControls.TextBox>.  
+ Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> e <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -197,7 +196,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- Per altre informazioni, vedere [sintassi dichiarativa per il controllo Server HtmlTable](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow e TableCell Panoramica del controllo Server Web](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, e <xref:System.Web.UI.WebControls.Table>.  
+ Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlTable](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Cenni preliminari sui controlli server Web Table, TableRow e TableCell](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable> e <xref:System.Web.UI.WebControls.Table>.  
   
  **Immagine**  
  ![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif "vxImage")  
@@ -210,7 +209,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <img alt="" src="">  
 ```  
   
- Per altre informazioni, vedere [sintassi dichiarativa per il controllo Server HtmlImage](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Cenni preliminari sul controllo Server Web Image](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, e <xref:System.Web.UI.WebControls.Image>.  
+ Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlImage](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Cenni preliminari sul controllo server Web Image](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> e <xref:System.Web.UI.WebControls.Image>.  
   
  **Seleziona**  
  ![Elenco a discesa casella degli strumenti pagina HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -225,7 +224,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
   
  È possibile creare un elemento `select` aumentando il valore della proprietà Size.  
   
- Per altre informazioni, vedere [sintassi dichiarativa per il controllo Server HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: procedura: creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Panoramica del controllo Server Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo Server Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, e <xref:System.Web.UI.WebControls.DropDownList>.  
+ Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [Procedura: creare script e modificare gestori eventi](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sul controllo server Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo server Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> e <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Righello orizzontale**  
  ![Elemento righello orizzontale pagina HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -251,7 +250,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
   
- Per altre informazioni, vedere [controllo Div HTML](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Cenni preliminari sul controllo Server Web Label](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac), e <xref:System.Web.UI.WebControls.Label>.  
+ Per altre informazioni, vedere [Controllo Div HTML](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Cenni preliminari sul controllo server Web Label](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) e <xref:System.Web.UI.WebControls.Label>.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Casella degli strumenti](../../ide/reference/toolbox.md)   

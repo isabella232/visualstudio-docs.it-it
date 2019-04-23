@@ -1,6 +1,6 @@
 ---
 title: Pubblicare in una cartella
-ms.date: 01/22/2019
+ms.date: 04/02/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: c59e19434edcb19982fa72d3ddc96d7cb6a870a8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0ab1b01900077fdbad5dec3fb968abcf46db62d8
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840367"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856528"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare un'app Web in una cartella usando Visual Studio per Mac
 
@@ -22,8 +22,8 @@ ms.locfileid: "56840367"
 
 ## <a name="prerequisites"></a>Prerequisiti
 
- - [Visual Studio 2017 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) installato con ASP.NET Core abilitato.
- - Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+ - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con ASP.NET Core abilitato.
+ - Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Pubblicare in una cartella
 

@@ -7,14 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
-ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
+ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443793"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856677"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installare Visual Studio 2017 per Mac
+
+> [!NOTE]
+> Visual Studio 2019 per Mac è [ora disponibile](installation.md?view=vsmac-2019).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -23,11 +26,8 @@ Per iniziare a sviluppare app native multipiattaforma quando si scarica Visual S
 Per l'uso di iOS in Visual Studio è necessario quanto segue:
 
 - Mac con macOS Sierra 10.12 o versione successiva
-- Xcode 8.3 o versione successiva. È in genere consigliabile usare la versione stabile più recente.
+- Xcode 9.3 o versione successiva. È in genere consigliabile usare la versione stabile più recente.
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
-
-> [!NOTE]
-> L'anteprima di Visual Studio 2019 per Mac è [ora disponibile per l'installazione](installation.md?view=vsmac-2019) e per i test.
 
 ## <a name="install"></a>Installazione di
 
@@ -109,9 +109,9 @@ L'installazione di Visual Studio per Mac consente di iniziare a scrivere codice 
 
 ### <a name="android"></a>Android
 
-1. [Using the Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) (Uso di Xamarin Android SDK Manager)
-2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/) (Emulatore di Android SDK)
-4. [Set Up Device for Development](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/) (Configurare il dispositivo per lo sviluppo)
+1. [Using the Xamarin Android SDK Manager (Uso di Xamarin Android SDK Manager)](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Emulatore di Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Set Up Device for Development (Configurare il dispositivo per lo sviluppo)](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>app .NET core, app Web ASP.NET Core, sviluppo di giochi Unity
 

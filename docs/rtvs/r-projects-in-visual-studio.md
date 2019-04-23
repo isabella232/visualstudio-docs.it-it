@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324786"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515190"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Creare progetti R in Visual Studio
 
@@ -56,7 +56,7 @@ Se si vuole gestire all'interno di un progetto una cartella di file *.R* esisten
 
 1. Creare un nuovo progetto in Visual Studio come descritto nella sezione precedente.
 1. Copiare i file nella cartella del progetto.
-1. In Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, selezionare **Aggiungi** > **Exiting Item** (Elemento esistente) e selezionare i file da aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
+1. In Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, selezionare **Aggiungi** > **Elemento esistente** e selezionare i file da aggiungere. Quando si seleziona **OK**, questi compaiono nell'albero del progetto.
 1. Per organizzare il codice in sottocartelle, fare clic con il pulsante destro del mouse sul progetto, selezionare **Aggiungi** > **Nuova cartella**, quindi copiare i file nella cartella appena creata e aggiungere gli elementi esistenti nel passaggio 3.
 
 ## <a name="project-properties"></a>Proprietà di progetti

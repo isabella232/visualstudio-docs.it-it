@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio 2015 | Microsoft Docs'
+title: 'Procedura: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,17 +10,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834848"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656726"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Procedura: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio 2017, vedere [applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Per la documentazione più recente di Visual Studio, vedere [Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 È possibile applicare il codice Product Key a livello di programmazione come parte dello script usato per automatizzare la distribuzione di Visual Studio 2015. I codici Product Key possono essere impostati su un dispositivo a livello di programmazione durante l'installazione di Visual Studio o al termine dell'installazione.
 
@@ -38,7 +38,7 @@ Per la documentazione più recente di Visual Studio 2017, vedere [applicare auto
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
- Questa è una riga di comando di esempio per l'installazione di Visual Studio 2015 Enterprise, con MPC uguale a 07060 e un codice Product Key "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE":
+ Questa è una riga di comando di esempio per l'installazione di Visual Studio 2015 Enterprise, con codice MPC uguale a 07060 e codice Product Key "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE":
 
  `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 07060`
 
@@ -54,9 +54,10 @@ Per la documentazione più recente di Visual Studio 2017, vedere [applicare auto
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Per altre informazioni su come ottenere un codice Product Key, vedere [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).
+Per altre informazioni su come ottenere un codice Product Key, vedere [Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
 
- Se StorePID.exe ha applicato correttamente il codice Product Key, verrà restituito 0. Se si verificano errori, verrà restituito un numero compreso tra 1 e 6.
+Se StorePID.exe ha applicato correttamente il codice Product Key, verrà restituito 0. Se si verificano errori, verrà restituito un numero compreso tra 1 e 6.
 
 ## <a name="see-also"></a>Vedere anche
- [Installare Visual Studio](../install/install-visual-studio-2015.md)
+
+- [Installare Visual Studio](../install/install-visual-studio-2015.md)
