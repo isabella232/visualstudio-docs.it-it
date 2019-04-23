@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790511"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669786"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Avviare una sessione di debug per un'app UWP
 
@@ -51,7 +51,7 @@ Questo articolo descrive come avviare una sessione di debug di Visual Studio per
 > A partire da Visual Studio 2019, le app UWP per HTML e JavaScript non sono più supportate.
 ::: moniker-end
 ::: moniker range="vs-2017"
-In Visual Studio 2017, la maggior parte dei comandi e opzioni illustrate in questo articolo si applicano anche alle App UWP per HTML e JavaScript. In cui i comandi sono diversi tra gestiti e le app C++, le app JavaScript sono in genere gli stessi comandi per le app UWP C++.
+In Visual Studio 2017, la maggior parte dei comandi e opzioni illustrate in questo articolo si applicano anche alle App UWP per HTML e JavaScript. In cui i comandi sono diversi tra gestito e C++ le app, le app JavaScript in genere sono gli stessi comandi per C++ le app UWP.
 ::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Avviare il debug nella barra degli strumenti di Visual Studio
@@ -98,9 +98,9 @@ Per configurare le opzioni di debug aggiuntive, usare pagina delle proprietà de
 
      ![C#pagina delle proprietà debug progetto Visual Basic e](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Per le app C++, selezionare **le proprietà di configurazione** > **debug**.
+   - Per C++ App, selezionare **le proprietà di configurazione** > **debug**.
 
-     ![App UWP C++ pagina delle proprietà di debug](../debugger/media/dbg_cpp_debugpropertypage.png)
+     ![C++Pagina delle proprietà Debug app UWP](../debugger/media/dbg_cpp_debugpropertypage.png)
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Scegliere il debugger da utilizzare
 
@@ -112,17 +112,16 @@ Nelle App C++, Visual Studio esegue il debug del codice nativo per impostazione 
 
 - Per C# e le app Visual Basic, selezionare uno dei seguenti debugger dal **tipo di applicazione** e **tipo di processo in Background** elenchi a discesa sotto **tipo di Debugger** in il **Debug** pagina delle proprietà.
 
-- Per le app C++, selezionare uno dei seguenti debugger dal **tipo di Debugger** elenco a discesa sulle **debug** pagina delle proprietà.
+- Per C++ App, selezionare uno dei seguenti debugger dal **tipo di Debugger** casella a discesa la **debug** pagina delle proprietà.
 
 |||
 |-|-|
 |**Solo gestito**|Esegue il debug del codice gestito nell'app. Il codice JavaScript e il codice C/C++ nativo vengono ignorati.|
 |**Solo nativo**|Esegue il debug del codice C/C++ nativo nell'app. Il codice gestito e il codice JavaScript vengono ignorati.|
-|**Misto (gestito e nativo)**|Esegue il debug sia del codice C++ nativo e del codice gestito nell'app. Il codice JavaScript viene ignorato. Nei progetti C++, questa opzione, detta **gestito e nativo**.|
+|**Misto (gestito e nativo)**|Esegue il debug sia del codice C++ nativo e del codice gestito nell'app. Il codice JavaScript viene ignorato. In C++ progetti, questa opzione, detta **gestito e nativo**.|
 |**Script**|Esegue il debug del codice JavaScript nell'app. Il codice gestito e il codice nativo vengono ignorati.|
-|**Nativo con script**|Eseguire il debug di codice C/C++ nativo e il codice JavaScript nell'app. Il codice gestito viene ignorato. Disponibile in progetti C++ o solo le attività in background.|
+|**Nativo con script**|Eseguire il debug di codice C/C++ nativo e il codice JavaScript nell'app. Il codice gestito viene ignorato. Disponibile in C++ progetti o in background elencate solo le attività.|
 |**Solo GPU (C++ AMP)**|Esegue il debug del codice C++ nativo eseguito su un'unità di elaborazione grafica (GPU). Disponibile in solo progetti C++.|
-
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Disabilitare i loopback di rete (facoltativi)
 
@@ -132,10 +131,10 @@ Nelle App C++, Visual Studio esegue il debug del codice nativo per impostazione 
 
 -   Per C# e le app Visual Basic, deseleziona il **Consenti loopback della rete locale** casella di controllo sotto **opzioni di avvio** sul **Debug** pagina delle proprietà.
 
--   Per le app Visual C++, selezionare **No** dalle **Consenti Loopback della rete locale** elenco a discesa al **debug** pagina delle proprietà.
+-   Per oggetto visivo C++ le app, selezionare **No** dal **Consenti Loopback della rete locale** casella a discesa il **debug** pagina delle proprietà.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Reinstallare l'app all'avvio del debug (facoltativo)
- Per diagnosticare i problemi di installazione con un C# o app Visual Basic, selezionare **Disinstalla e reinstalla il pacchetto** sul **Debug** pagina delle proprietà. Questa opzione viene ricreata l'installazione originale all'avvio del debug. Questa opzione non è disponibile per i progetti C++.
+ Per diagnosticare i problemi di installazione con un C# o app Visual Basic, selezionare **Disinstalla e reinstalla il pacchetto** sul **Debug** pagina delle proprietà. Questa opzione viene ricreata l'installazione originale all'avvio del debug. Questa opzione non è disponibile per C++ progetti.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Impostare le opzioni di autenticazione per il debug remoto
 
@@ -147,7 +146,7 @@ Il **universale (protocollo non crittografato)** è la modalità di autenticazio
 
 - Per C# e le app Visual Basic, su di **eseguire il Debug** pagina delle proprietà, seleziona **computer remoto** come il **dispositivo di destinazione**. Quindi, selezionare **None** oppure **universale (protocollo non crittografato)** per **modalità di autenticazione**.
 
-- Per le app C++, selezionare **computer remoto** sotto **Debugger da avviare** sul **debug** pagina delle proprietà. Quindi, selezionare **Nessuna autenticazione** oppure **universale (protocollo non crittografato)** per **tipo di autenticazione**.
+- Per C++ App, selezionare **computer remoto** sotto **Debugger da avviare** sul **debug** pagina delle proprietà. Quindi, selezionare **Nessuna autenticazione** oppure **universale (protocollo non crittografato)** per **tipo di autenticazione**.
 
 > [!CAUTION]
 > Non vi è alcuna sicurezza di rete quando si esegue il debugger remoto in **None** oppure **universale (protocollo non crittografato)** modalità. Scegliere queste modalità solo su reti attendibili che si sono certi non sono esposti da traffico ostile o codice dannoso.
@@ -164,7 +163,7 @@ Per impostazione predefinita, Visual Studio avvia l'app immediatamente all'avvio
 
 - Per C# e le app Visual Basic, selezionare **non, ma eseguine il debug del codice quando viene avviato** sotto **opzioni di avvio** sul **Debug** pagina delle proprietà.
 
-- Per le app C++, selezionare **No** dalle **Avvia applicazione** elenco a discesa al **debug** pagina delle proprietà.
+- Per C++ App, selezionare **No** dal **Avvia applicazione** casella a discesa la **debug** pagina delle proprietà.
 
 Per altre informazioni sul debug di attività in background, vedere [Trigger di sospensione, ripresa e background eventi per le app UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 

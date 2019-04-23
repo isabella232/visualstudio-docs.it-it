@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966822"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663297"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati con due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento a regole di coerenza fornite tramite i vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per altre informazioni sulle relazioni nei set di dati, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md)  
   
  La funzionalità di aggiornamento gerarchico Usa una `TableAdapterManager` per gestire il `TableAdapter`s in un dataset tipizzato. Il `TableAdapterManager` componente è un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-generato (classe), pertanto non è in parte il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Quando si trascina una tabella dalla finestra Origini dei dati in un Windows Form o nella pagina WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o nella pagina e visualizzarlo nella finestra di progettazione nella barra dei componenti. Per informazioni dettagliate sul `TableAdapterManager` classe, vedere la sezione riferimento TableAdapterManager [Panoramica di TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

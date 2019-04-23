@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001355"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669705"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Nota**: Raccolta di Visual Studio verrà sostituita da Visual Studio Marketplace. Vedere la versione più recente di questo argomento per informazioni dettagliate.
-
 
 Questa procedura dettagliata illustra come pubblicare un'estensione di Visual Studio in Visual Studio Gallery. Quando si aggiunge l'estensione alla raccolta, gli sviluppatori possono utilizzare **estensioni e aggiornamenti** per cercare estensioni nuove e aggiornate.
 
@@ -32,7 +31,7 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 ## <a name="create-a-visual-studio-extension"></a>Creare un'estensione di Visual Studio
  In questo caso si userà un'estensione VSPackage predefinito, ma gli stessi passaggi sono validi per ogni tipo di estensione.
 
-1.  Creare un pacchetto VSPackage in C# denominato `TestPublishing` che dispone di un comando di menu. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Creare un pacchetto VSPackage in c# denominato `TestPublishing` che dispone di un comando di menu. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Testare l'estensione
  Prima di distribuire l'estensione, compilare e testare per verificare che sia installato correttamente nell'istanza sperimentale di Visual Studio.

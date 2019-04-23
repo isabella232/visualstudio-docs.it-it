@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696311"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662907"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Specifica la struttura del percorso di risoluzione dei punti di interruzione.
@@ -50,15 +50,15 @@ public struct BP_RESOLUTION_LOCATION {
 
 `bpResLocation.bpresCode`
 
- [Solo C++] Contiene il [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struttura se `bpType`  =  `BPT_CODE`.
+ [C++ solo] Contiene il [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struttura se `bpType`  =  `BPT_CODE`.
 
 `bpResLocation.bpresData`
 
- [Solo C++] Contiene il [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura se `bpType`  =  `BPT_DATA`.
+ [C++ solo] Contiene il [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura se `bpType`  =  `BPT_DATA`.
 
 `bpResLocation.unused`
 
- [Solo C++] Un segnaposto.
+ [C++ solo] Un segnaposto.
 
 `unionmember1`
 
@@ -78,7 +78,6 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="remarks"></a>Note
 Questa struttura è un membro del [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) strutture.
-
 
  [C# solo] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpType` tra valore quindi per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling il `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare questa struttura in c#.
 

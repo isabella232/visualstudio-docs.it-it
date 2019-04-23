@@ -11,17 +11,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770866"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663310"
 ---
 # <a name="msbuild-concepts"></a>Concetti relativi a MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornisce un XML Schema di base che è possibile usare per controllare come la piattaforma di compilazione compila il software. Per specificare i componenti nella compilazione e come devono essere compilati, usare queste quattro parti di MSBuild: proprietà, elementi, attività e destinazioni.  
   
 ## <a name="related-topics"></a>Argomenti correlati  
@@ -34,7 +33,7 @@ ms.locfileid: "54770866"
 |[Attività](../msbuild/msbuild-tasks.md)|Mostra come creare un'unità di codice eseguibile che [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] può usare per eseguire operazioni di compilazione atomiche.|  
 |[Confronto di proprietà ed elementi](../msbuild/comparing-properties-and-items.md)|Confronta le proprietà e gli elementi di MSBuild. Entrambi vengono usati per trasmettere informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.|  
 |[Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md)|Illustra come usare caratteri di escape per alcuni caratteri che in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sono riservati a contesti specifici.|  
-|[Procedura dettagliata: creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo.|  
-|[Procedura dettagliata: uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)|Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'ambiente di sviluppo integrato (IDE) di Visual Studio.|  
+|[Procedura dettagliata: Creazione di un File di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo.|  
+|[Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)|Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'ambiente di sviluppo integrato (IDE) di Visual Studio.|  
 |[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)|Collegamenti a documenti che contengono informazioni di riferimento.|  
 |[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Presenta una panoramica di XML Schema per un file di progetto e illustra come controllare i processi che compilano il software.|

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616872"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661893"
 ---
 # <a name="legacy-language-service-essentials"></a>Nozioni fondamentali sui servizi di linguaggio legacy
 È necessario fornire un servizio di linguaggio per integrare un linguaggio di programmazione in Visual Studio. In questo argomento illustra le funzionalità disponibili in servizi di linguaggio legacy.
@@ -41,7 +41,6 @@ ms.locfileid: "56616872"
  Molte di queste funzionalità richiedono il servizio di linguaggio per analizzare il codice sorgente. È spesso possibile riutilizzare la suddivisione in token e l'analisi del codice per il compilatore o l'interprete.
 
  Le funzionalità seguenti sono correlate al supporto per linguaggi di programmazione, ma non fanno parte di servizi di linguaggio:
-
 
 | Funzionalità | Descrizione |
 |-----------------------| - |

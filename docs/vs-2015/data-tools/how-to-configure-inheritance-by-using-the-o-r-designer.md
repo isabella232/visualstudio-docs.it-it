@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966175"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662270"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: Configurare l'ereditarietà usando Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) supporta il concetto di ereditarietà a tabella singola in quanto viene spesso implementato nei sistemi relazionali. Nell'ereditarietà a tabella singola, è presente una singola tabella di database che contiene campi per le informazioni padre e le informazioni figlio. Insieme ai dati relazionali, una colonna discriminatore contiene il valore che determina la classe a cui appartiene un record.  
   
  Ad esempio, si consideri una tabella Persons che contiene tutte le persone impiegate in una società, alcune delle quali sono dipendenti mentre altre sono manager. La tabella Persons contiene una colonna denominata `EmployeeType` con un valore 1 per i manager e un valore 2 per i dipendenti e che costituisce la colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolarla solo con i record che hanno un valore 2 in `EmployeeType`. È anche possibile rimuovere le colonne non appropriate da ognuna delle classi.  
@@ -28,7 +27,7 @@ ms.locfileid: "58966175"
   
 ### <a name="to-create-inherited-data-classes"></a>Per creare classi di dati ereditate  
   
-1.  Aprire il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] mediante l'aggiunta di un **classi LINQ to SQL** elemento a un progetto di Visual Basic o C# esistente.  
+1.  Aprire il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] mediante l'aggiunta di un **classi LINQ to SQL** elemento a un progetto di Visual Basic o c# esistente.  
   
 2.  Trascinare la tabella che si desidera usare come classe di base in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   

@@ -11,17 +11,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5176a3a8c5575521c3adaea13f1f1b862010217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663375"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Avvio di una compilazione all'interno dell'IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 I sistemi di progetto personalizzati devono usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> per avviare le compilazioni. In questo argomento vengono descritti i motivi e la procedura da seguire.  
   
 ## <a name="parallel-builds-and-threads"></a>Compilazioni parallele e thread  

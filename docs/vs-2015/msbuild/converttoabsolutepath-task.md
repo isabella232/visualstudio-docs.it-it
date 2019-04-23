@@ -19,23 +19,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 825f6db04b20470bec67ed5e4a5ddfc7be7d28d8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 399ffeae65ba935e3682b54eff5ee1b0b687aa9d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803829"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667729"
 ---
 # <a name="converttoabsolutepath-task"></a>Attività ConvertToAbsolutePath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Converte un percorso relativo, o un riferimento, in un percorso assoluto.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Nella tabella che segue vengono descritti i parametri dell'attività `ConvertToAbsolutePath`.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Paths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Elenco di percorsi relativi da convertire in percorsi assoluti.|  
 |`AbsolutePaths`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Elenco di percorsi assoluti per gli elementi passati.|  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612465"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666585"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedura: Esporre gli elenchi dei simboli forniti dalla libreria per la gestione degli oggetti
 Gli strumenti di esplorazione dei simboli **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **risultati ricerca simbolo**, il passaggio delle richieste per i nuovi dati per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti. Il gestore oggetti consente di trovare le librerie appropriate e richiede nuovi elenchi dei simboli. Le librerie di rispondono fornendo dati richiesti per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti chiama i metodi in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia per ottenere i dati e lo usa per popolare o aggiornare le visualizzazioni degli strumenti di esplorazione dei simboli.
@@ -30,7 +30,6 @@ Gli strumenti di esplorazione dei simboli **Visualizzazione classi**, **Visualiz
 >  Gli esempi di codice gestito seguenti illustrano come specificare gli elenchi dei simboli illustrata l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il gestore oggetti chiama i metodi in questa interfaccia e Usa i dati ottenuti per inserire o aggiornare gli strumenti di esplorazione dei simboli.
 >
 >  Per l'implementazione di provider di simboli codice nativo, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaccia.
-
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Per fornire gli elenchi dei simboli per il gestore oggetti
 

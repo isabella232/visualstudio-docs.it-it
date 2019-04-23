@@ -26,22 +26,20 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 338b5a93ebedca14c6ceb531354cd1852fbaae6e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763393"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665428"
 ---
 # <a name="lib-task"></a>Attività LIB
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, lib.exe. Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per altre informazioni, vedere [Riferimenti a LIB](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) ed [Esecuzione di LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
 
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività **LIB**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.  
-
 
 |             Parametro              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,7 +68,7 @@ Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, lib.
 |    **UseUnicodeResponseFiles**     |                                                                                                                                                                                                                                                                                                                                                               Parametro **Boolean** facoltativo.<br /><br /> Se `true`, consente al sistema di progetto di generare file di risposta UNICODE quando viene generata la Gestione di librerie. Specificare `true` quando i percorsi dei file nel progetto sono UNICODE.                                                                                                                                                                                                                                                                                                                                                               |
 |            **Verbose**             |                                                                                                                                                                                                                                                                       Parametro **Boolean** facoltativo.<br /><br /> Se `true`, vengono visualizzati i dettagli sullo stato di avanzamento della sessione, inclusi i nomi dei file con estensione obj da aggiungere. Le informazioni vengono inviate all'output standard e possono essere reindirizzate a un file.<br /><br /> Per altre informazioni, vedere l'opzione **/VERBOSE** in [Esecuzione di LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                                                                                                                                                        |
 
-## <a name="remarks"></a>Osservazioni  
+## <a name="remarks"></a>Note  
 
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)

@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bc9b014eede5ac19935f29ed8317e1507ae8a42
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f762920f61b649023f98810f7de8cdb7e3cf908a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001619"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662406"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Regole consigliate miste Microsoft orientate ai problemi più critici e comuni nei progetti C++ che supportano Common Language Runtime, incluse potenziali lacune nella protezione, arresti anomali delle applicazioni e altri errori importanti per la logica e progettazione. È necessario includere questo set di regole nel set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime. Questo set di regole è progettato per essere configurato con l'edizione di Visual Studio Professional e versioni successive.  
-
 
 |                                                              Regola                                                              |                                                             Descrizione                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

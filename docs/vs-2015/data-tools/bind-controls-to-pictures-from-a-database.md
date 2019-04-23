@@ -23,17 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966046"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666136"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associare controlli alle immagini di un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 È possibile usare la **Zdroje dat** finestra per associare un'immagine in un database a un controllo nell'applicazione. Ad esempio, è possibile associare un'immagine da un <xref:System.Windows.Controls.Image> controllo in un'applicazione WPF o a un <xref:System.Windows.Forms.PictureBox> controllo in un'applicazione Windows Form.  
   
  Le immagini in un database sono in genere archiviate come matrici di byte. Gli elementi nel **Zdroje dat** finestra in cui vengono archiviati come matrici di byte avere il controllo tipo impostato su **None** per impostazione predefinita, poiché le matrici di byte possono contenere qualsiasi elemento da una semplice matrice di byte del file eseguibile un'applicazione di grandi dimensioni. Per creare un controllo con associazione a dati per un elemento di matrice di byte nel **Zdroje dat** finestra che rappresenta un'immagine, è necessario selezionare il controllo da creare.  

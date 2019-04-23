@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964644"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670095"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58964644"
 |Si dispone di una singola funzionalità o un gruppo di funzionalità e non vi è alcun colore condiviso per gli elementi simili.|**Colori personalizzati**|Nomi di token di colore specifici da un'area e non devono essere condiviso con altri dell'interfaccia utente|
 |Si vuole consentire all'utente finale di personalizzare l'interfaccia utente o il contenuto (ad esempio, per gli editor di testo o finestre di progettazione specializzate).|**Personalizzazione degli utenti finali**<br /><br /> **(Strumenti > finestra di dialogo Opzioni)**|Le impostazioni definite nella scheda "Tipi di carattere e colori" della finestra di **strumenti > Opzioni** finestra di dialogo o una pagina specializzata specifica di una funzionalità dell'interfaccia utente.|
 
-
 ### <a name="visual-studio-themes"></a>Temi di Visual Studio
  Visual Studio offre tre temi di colore diverso: chiaro, scuro e blu. Rileva anche modalità a contrasto elevato, ovvero una combinazione di colori a livello di sistema progettata per l'accessibilità.
 
@@ -79,7 +78,6 @@ ms.locfileid: "58964644"
  ![Strumenti di &#62; finestra di dialogo Opzioni in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
 
  **Strumenti > finestra di dialogo Opzioni**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio offre un servizio colori ambiente, denominato anche VSColor service o il servizio di colore della shell. Questo servizio consente di associare i valori di colore degli elementi dell'interfaccia utente per un set contenente i colori per ogni tema colori di nome-valore. VSColor service deve essere usato per tutti gli elementi dell'interfaccia utente, in modo da colori automaticamente cambiano per riflettere il tema selezionato dall'utente corrente, in modo che l'interfaccia utente associato al servizio colori ambiente si integreranno con nuovi temi nelle future versioni di Visual Studio.
@@ -116,7 +114,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
  **NOTA:** I valori COLORREF restituiti da **GetVSSysColorEx()** contengono solo R, G, componenti B di un colore del tema. Se una voce di tema usa la trasparenza, il valore di canale alfa viene eliminato prima della restituzione. Pertanto, il colore di ambiente di interesse deve essere utilizzata in una posizione in cui il canale di trasparenza è importante, è necessario utilizzare IVsUIShell5.GetThemedColor anziché IVsUIShell2::GetVSSysColorEx, come descritto più avanti in questo argomento.
 
 ##### <a name="from-managed-code"></a>Dal codice gestito
- L'accesso al servizio VSColor attraverso il codice nativo è piuttosto semplice. Se si lavora con codice gestito, tuttavia, che determina come usare il servizio può essere difficile. Con tali presupposti, ecco un frammento di codice C# che illustra questo processo:
+ L'accesso al servizio VSColor attraverso il codice nativo è piuttosto semplice. Se si lavora con codice gestito, tuttavia, che determina come usare il servizio può essere difficile. Con tali presupposti, ecco un frammento di codice c# che illustra questo processo:
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)

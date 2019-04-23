@@ -17,23 +17,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc39cde1a332e925f998a67ed261346320f18a3c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d82deb9c363c1a1bd587cc9a6e48c5d6bf2138bd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787795"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666494"
 ---
 # <a name="xmlpeek-task"></a>Attività XmlPeek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Restituisce valori come specificato dalla query XPath da un file XML.  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `XmlPeek` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Namespaces`|Parametro `String` facoltativo.<br /><br /> Specifica gli spazi dei nomi per i prefissi della query XPath.|  
 |`Query`|Parametro `String` facoltativo.<br /><br /> Specifica la query XPath.|  

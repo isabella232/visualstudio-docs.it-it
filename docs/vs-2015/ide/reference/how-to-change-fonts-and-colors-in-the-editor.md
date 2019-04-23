@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799108"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661867"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: modificare i tipi di carattere e i colori utilizzati nell'editor
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: Modificare i tipi di carattere e colori nell'Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 È possibile modificare il tipo di carattere predefinito, le dimensioni del carattere e i colori di sfondo e primo piano dei diversi **elementi di visualizzazione** del testo nell'Editor del codice. Quando si modificano le impostazioni del carattere tenere presente le informazioni seguenti:  
   
 -   Le impostazioni **Tipo di carattere** e **Dimensioni** sono globali per tutti gli elementi di testo in tutti gli editor di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -58,4 +57,4 @@ ms.locfileid: "54799108"
  [Customizing the Editor](../../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  
  [Text Editor Options Dialog Box](../../ide/reference/text-editor-options-dialog-box.md)  (Finestra di dialogo Opzioni editor di testo)  
  [Scrittura di codice](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -14,17 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 291b8a33b5cf8777259be6325be9596bd9dc95e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d6b10c8f4b2658acc3dd4dfa113c8edd8f1de5b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834600"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665715"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Procedura: utilizzare caratteri di escape speciali in MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Alcuni caratteri hanno un significato particolare nei file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tra gli esempi di carattere sono inclusi il punto e virgola (;) e l'asterisco (*). Per un elenco completo di questi caratteri speciali, vedere [Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).  
   
  Per usare questi caratteri speciali come valori letterali in un file di progetto, è necessario specificarli usando la sintassi %*xx*, dove *xx* rappresenta il valore esadecimale ASCII del carattere.  

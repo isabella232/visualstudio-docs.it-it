@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968492"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668444"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Proprietà di operazioni in diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,6 @@ In un diagramma classi UML, è possibile aggiungere *operazioni* a classi e inte
  In questa sezione sono illustrate le proprietà di un'operazione in una classe o in un'interfaccia di un diagramma classi UML.  
 
  Per visualizzare le proprietà di un'operazione, fare doppio clic sull'operazione nella classe o interfaccia nel diagramma e quindi fare clic su **proprietà**. Le proprietà vengono visualizzate nel **proprietà** finestra.  
-
 
 |      Proprietà       |   Impostazione predefinita    |                                                                                                                                                                                 Descrizione                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

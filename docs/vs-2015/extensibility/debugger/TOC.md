@@ -128,4 +128,3 @@
 ### [Campo m_objectIdForDebugger](asyncvoidmethodbuilder-m-objectidfordebugger-field.md)
 # [Riferimento](reference/reference-visual-studio-debugging-apis.md)
 # [Esempi](visual-studio-debugging-samples.md)
-

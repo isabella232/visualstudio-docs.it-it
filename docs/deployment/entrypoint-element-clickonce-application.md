@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3002fa5c015d80304a9de5aaf3b7f7aa1d2d85f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629040"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665259"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto di ingresso&gt; elemento (applicazione ClickOnce)
 Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene eseguita in un computer client.
@@ -54,7 +54,7 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 
  L'elemento `entryPoint` presenta l'attributo seguente:
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`name`|Facoltativo. Questo valore non viene utilizzato da .NET Framework.|
 
@@ -68,8 +68,7 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 ## <a name="commandline"></a>commandLine
  Obbligatorio. Deve essere un figlio di `entryPoint` elemento. Non dispone di alcun elemento figlio e ha gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |--------------| - |
 | `file` | Obbligatorio. Un riferimento locale all'assembly di avvio per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo valore non può contenere barra (/) o una barra rovesciata (\\) separatori del percorso. |
 | `parameters` | Obbligatorio. Descrive l'azione da intraprendere con il punto di ingresso. È l'unico valore valido `run`; se viene fornita una stringa vuota, `run` presuppone. |
@@ -88,12 +87,12 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
 ```
 
- Un'applicazione che include l'elemento customUX deve fornire un programma di installazione personalizzato che usa il <xref:System.Deployment.Application.InPlaceHostingManager> classe per eseguire le operazioni di installazione. Un'applicazione con questo elemento non può essere installata facendo doppio clic sul relativo manifesto o setup.exe avvio automatico di prerequisiti. Il programma di installazione personalizzato è possibile creare le voci di menu Start, collegamenti e voci Aggiungi / Rimuovi programmi. Se il programma di installazione personalizzato non crea una voce in Installazione applicazioni, è necessario archiviare l'identificatore della sottoscrizione fornito per il <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> proprietà e consentono all'utente di disinstallare l'applicazione in un secondo momento chiamando il <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> (metodo). Per altre informazioni, vedere [procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
+ Un'applicazione che include l'elemento customUX deve fornire un programma di installazione personalizzato che usa il <xref:System.Deployment.Application.InPlaceHostingManager> classe per eseguire le operazioni di installazione. Un'applicazione con questo elemento non può essere installata facendo doppio clic sul relativo manifesto o setup.exe avvio automatico di prerequisiti. Il programma di installazione personalizzato è possibile creare le voci di menu Start, collegamenti e voci Aggiungi / Rimuovi programmi. Se il programma di installazione personalizzato non crea una voce in Installazione applicazioni, è necessario archiviare l'identificatore della sottoscrizione fornito per il <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> proprietà e consentono all'utente di disinstallare l'applicazione in un secondo momento chiamando il <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> (metodo). Per altre informazioni, vedere [Procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questo elemento identifica l'assembly e punto di ingresso per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.
 
- Non è possibile usare `commandLine` passare parametri all'interno dell'applicazione in fase di esecuzione. È possibile accedere ai parametri della stringa di query per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione dell'applicazione <xref:System.AppDomain>. Per altre informazioni, vedere [procedura: recuperare le informazioni di stringa di Query in un'applicazione ClickOnce Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
+ Non è possibile usare `commandLine` passare parametri all'interno dell'applicazione in fase di esecuzione. È possibile accedere ai parametri della stringa di query per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione dell'applicazione <xref:System.AppDomain>. Per altre informazioni, vedere [Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
 
 ## <a name="example"></a>Esempio
  L'esempio di codice seguente illustra un' `entryPoint` elemento in un manifesto dell'applicazione per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo esempio di codice è parte di un esempio più esaustivo disponibile per il [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) argomento.

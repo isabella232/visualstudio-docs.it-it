@@ -26,17 +26,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 407e438193e5ee328a8cbc6743829e40f2c366fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800768"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665662"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opzioni, Editor di testo, C#, Formattazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa finestra di dialogo, scegliere **Opzioni** dal menu **Strumenti**, espandere **Editor di testo**, espandere **C#** e quindi fare clic su **Formattazione**.  
   
 > [!NOTE]
@@ -47,7 +46,7 @@ Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di f
   
 ## <a name="uielement-list"></a>Elenco UIElement  
   
-|Label|Descrizione|  
+|Label|Description|  
 |-----------|-----------------|  
 |**Formatta automaticamente istruzione completata dopo l'immissione di ;**|Quando questa opzione è selezionata, vengono formattate le istruzioni al completamento in base alle opzioni di formattazione selezionate per l'editor del codice. Deselezionare questa opzione se non si vuole modificare le istruzioni con l'editor di codice.|  
 |**Formatta automaticamente blocco completato dopo l'immissione di }**|Quando l'opzione è selezionata, i blocchi di codice vengono formattati in base alle opzioni di formattazione selezionate per l'editor di codice subito dopo il completamento del blocco. Deselezionare questa opzione se non si vuole modificare i blocchi con l'editor di codice.|  

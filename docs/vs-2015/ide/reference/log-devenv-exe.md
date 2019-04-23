@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e9e5178be0301bcf2ab14b0d52d6aa3b54bc52a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 18b455d3da5693e5a82dbf45e52d04b18edaef5d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763172"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664726"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Registra tutte le attività nel file di log per la risoluzione dei problemi. Il file verrà visualizzato dopo aver chiamato `devenv /log` almeno una volta. Per impostazione predefinita, il file di log è:  
   
  *%APPDATA%* \Microsoft\VisualStudio\\*Versione*\ActivityLog.xml  

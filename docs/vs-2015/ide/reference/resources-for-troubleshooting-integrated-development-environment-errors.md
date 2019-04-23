@@ -94,17 +94,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869866"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666065"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute nel messaggio di errore non sono sufficienti a risolvere il problema, è possibile consultare altre risorse, ad esempio gli articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.  
   
 ## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base  

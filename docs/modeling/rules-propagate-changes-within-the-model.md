@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416207"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669953"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando viene apportata una modifica a qualsiasi elemento nella finestra di Store, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio aggiungendo un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o i diagrammi. Molte funzionalità incorporate sono definite da regole: ad esempio, le regole di assicurano che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - Derivare la classe di regola da una delle classi base seguenti:
 
-
   | Classe base | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Questa procedura guidata consente di rilevare relazioni nuove, oltre a nuovi elementi. |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Eseguito quando viene creata una transazione. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Eseguito quando la transazione sta per essere eseguito il commit. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Eseguito quando la transazione sta per essere eseguito il rollback. |
-
 
 - Ogni classe dispone di un metodo che si esegue l'override. Tipo `override` nella classe per individuarlo. Il parametro di questo metodo identifica l'elemento che viene modificato.
 

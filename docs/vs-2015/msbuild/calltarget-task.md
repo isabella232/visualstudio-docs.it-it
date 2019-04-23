@@ -17,23 +17,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c0992cd9d1ece4f9d3ea0d22512948fafaf5cf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9093b35cc444fc0b346f81a91d20afe73bd476cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791394"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667586"
 ---
 # <a name="calltarget-task"></a>Attività CallTarget
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Richiama le destinazioni specificate nel file di progetto.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
  Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget`.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`RunEachTargetSeparately`|Parametro di ouput facoltativo `Boolean`.<br /><br /> Se `true`, il motore [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] viene chiamato una volta per ogni destinazione. Se `false`, il motore [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] viene chiamato una volta per compilare tutte le destinazioni. Il valore predefinito è `false`.|  
 |`TargetOutputs`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene l'output di tutte le destinazioni compilate.|  

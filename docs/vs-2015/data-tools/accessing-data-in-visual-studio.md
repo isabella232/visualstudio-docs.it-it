@@ -22,16 +22,15 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001709"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669458"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Accesso ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 In Visual Studio, è possibile creare applicazioni che si connettono ai dati in qualsiasi prodotto di database o servizio, in qualsiasi formato, ovunque, in un computer locale, in una rete locale o in un cloud pubblico, privato o ibrido.
 
@@ -78,7 +77,7 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
 
  Per la documentazione di accesso ai dati correlata in modo specifico per ASP.NET, vedere [utilizzo di dati](http://www.asp.net/web-forms/overview/presenting-and-managing-data) sul sito ASP.NET. Per un'esercitazione sull'uso di Entity Framework con MVC ASP.NET, vedere [Introduzione a Entity Framework 6 Code First con MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
- Universal Windows Platform (UWP) le App in C# o Visual Basic possono usare Microsoft Azure SDK per .NET per accedere all'archiviazione di Azure e altri servizi di Azure. La classe Windows.Web.HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per altre informazioni, vedere [come connettersi a un server HTTP utilizzando consente](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+ Universal Windows Platform (UWP) le App in c# o Visual Basic possono usare Microsoft Azure SDK per .NET per accedere all'archiviazione di Azure e altri servizi di Azure. La classe Windows.Web.HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per altre informazioni, vedere [come connettersi a un server HTTP utilizzando consente](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
  Per l'archiviazione dei dati nel computer locale, l'approccio consigliato consiste nell'utilizzare SQLite, che viene eseguito nello stesso processo dell'app. Se è necessario un livello di mapping relazionale a oggetti (ORM), è possibile usare Entity Framework. Per altre informazioni, vedere [DAS](https://msdn.microsoft.com/windows/uwp/data-access/index) nel Centro sviluppatori Windows.
 

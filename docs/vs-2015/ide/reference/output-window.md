@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784819"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668912"
 ---
 # <a name="output-window"></a>Finestra di output
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Nella finestra **Output** è possibile che vengano visualizzati messaggi di stato per diverse funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per aprire la finestra **Output**, nella barra dei menu scegliere **Visualizza/Output** oppure premere CTRL+ALT+O.  
   
 > [!WARNING]
@@ -69,7 +68,7 @@ Nella finestra **Output** è possibile che vengano visualizzati messaggi di stat
   
 ## <a name="see-also"></a>Vedere anche  
  [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Procedura: Controllare la finestra di output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Procedura: Controllare la finestra di Output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md)  (Compilazione e creazione)  
  [Understanding Build Configurations](../../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  
  [Panoramica della libreria di classi](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

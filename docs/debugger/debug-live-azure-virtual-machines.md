@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856956"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663190"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Eseguire il debug di app ASP.NET attive in macchine virtuali di Azure e set di scalabilità di macchine virtuali di Azure con Snapshot Debugger
 
@@ -35,11 +35,11 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Snapshot Debugger per le macchine virtuali di Azure e i set di scalabilità macchine virtuali di Azure è disponibile solo per l'anteprima di Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro Sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
+* Snapshot Debugger per le macchine virtuali (VM) di Azure e set di scalabilità di macchine virtuali di Azure è disponibile solo per Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
 
-    Se non è già installata, installare l'[anteprima di Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/preview/).
+    Se non è già installato, installarlo [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
-* La raccolta di snapshot è disponibile per le app Web nelle macchine virtuali o nei set di scalabilità di macchine virtuali di Azure seguenti:
+* Raccolta di snapshot è disponibile per le app web di Azure virtuale Machines\Virtual Machine Scale set seguenti:
   * Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
   * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
 
@@ -48,9 +48,9 @@ In questa esercitazione si eseguono le attività seguenti:
 1. Aprire il progetto di cui si vuole eseguire il debug di snapshot.
 
     > [!IMPORTANT]
-    > Per eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio macchina virtuale/set di scalabilità di macchine virtuali di Azure.
+    > Eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* che viene pubblicato nel servizio Azure virtuale Machine\Virtual Machine Scale Set.
 
-1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare la macchina virtuale o il set di scalabilità di macchine virtuali di Azure in cui è distribuita l'app Web e un account di archiviazione di Azure, quindi fare clic su **Collega**.
+1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare l'Azure virtuale Machine\Virtual Set di scalabilità viene distribuito l'app web e un account di archiviazione di Azure e quindi fare clic su **Attach**.
 
       ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
     > [!IMPORTANT]
     > La prima volta che si seleziona **Collega Snapshot Debugger** per la macchina virtuale, viene automaticamente riavviato IIS.
-    > La prima volta che si seleziona **Collega Snapshot Debugger** per il set di scalabilità di macchine virtuali, è richiesto l'aggiornamento manuale di ogni istanza del set di scalabilità di macchine virtuali.
+    > La prima volta che si seleziona **collegare Snapshot Debugger** per i set di scalabilità di macchine virtuali, richiede l'aggiornamento manuale di ogni istanza del set di scalabilità di macchine virtuali.
 
     I metadati per i **moduli** non verranno inizialmente attivati. Passare all'app Web e il pulsante **Avvia raccolta** diventerà attivo. Visual Studio è ora in modalità debug di snapshot.
 
@@ -66,9 +66,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
     > [!NOTE]
     > L'estensione del sito Application Insights supporta anche il debug di snapshot. Se viene visualizzato un messaggio di errore "estensione del sito non aggiornata", vedere i [suggerimenti per la risoluzione dei problemi e i problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per informazioni dettagliate sull'aggiornamento.
-    > Per i set di scalabilità di macchine virtuali è richiesto l'aggiornamento manuale delle istanze nei relativi set di scalabilità dopo aver collegato Snapshot Debugger per la prima volta.
+    > Per VMSS è necessario aggiornare manualmente le istanze nei relativi set di scalabilità di macchine virtuali dopo aver collegato il Debugger di Snapshot per la prima volta che l'utente.
 
-   Nella finestra **Moduli** viene indicato quando tutti i moduli sono caricati per la macchina virtuale o il set di scalabilità di macchine virtuali di Azure (scegliere **Debug > Finestre > Moduli** per aprire questa finestra).
+   Il **moduli** finestra viene visualizzato quando tutti i moduli sono caricati per l'Azure virtuale Machine\Virtual Set di scalabilità (sceglie **Debug > Windows > moduli** per aprire questa finestra).
 
    ![Controllare la finestra Moduli](../debugger/media/snapshot-modules.png)
 
@@ -105,7 +105,7 @@ Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno sn
 
 È anche possibile aggiungere ulteriori punti di acquisizione snapshot all'app e attivarli con il pulsante **Aggiorna raccolta**.
 
-**Per ulteriori informazioni, vedere** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
+**Serve aiuto?** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 

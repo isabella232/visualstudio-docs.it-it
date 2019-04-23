@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645927"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666455"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (programma di avvio automatico)
 Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer locale per assicurarsi che siano stati installati tutti i prerequisiti appropriati per un'applicazione.
@@ -72,7 +72,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 ## <a name="assemblycheck"></a>AssemblyCheck
  Questo elemento è un elemento figlio facoltativo di `InstallChecks`. Per ogni istanza di `AssemblyCheck`, il programma di bootstrap garantirà che l'assembly identificato dall'elemento sia presente nella global assembly cache (GAC). Non contiene elementi e ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|
 |`Name`|Obbligatorio. Il nome completo dell'assembly da verificare.|
@@ -86,7 +86,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `ExternalCheck` non contiene elementi e ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|
 |`PackageFile`|Obbligatorio. Il programma esterno per l'esecuzione. Il programma deve far parte del pacchetto di distribuzione di installazione.|
@@ -97,8 +97,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `FileCheck` non contiene elementi e ha gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |-----------------| - |
 | `Property` | Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md). |
 | `FileName` | Obbligatorio. Il nome del file da trovare. |
@@ -111,7 +110,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `MsiProductCheck` non contiene elementi e ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|
 |`Product`|Obbligatorio. GUID per il prodotto installato.|
@@ -122,7 +121,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `RegistryCheck` non contiene elementi e ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obbligatorio. Nome della chiave del Registro di sistema.|
@@ -133,7 +132,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 
  `RegistryFileCheck` non contiene elementi e ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Property`|Obbligatorio. Il nome della proprietà per archiviare il risultato. Questa proprietà è possibile fare riferimento da un test sotto il `InstallConditions` elemento, che è un elemento figlio del `Command` elemento. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obbligatorio. Nome della chiave del Registro di sistema. Il valore viene interpretato come il percorso di un file, a meno che non la `File` attributo è impostato. Se questa chiave non esiste, `Property` non è impostata.|
@@ -141,7 +140,7 @@ Il `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |`FileName`|Facoltativo. Il nome di un file. Se specificato, si presuppone che il valore ottenuto dalla chiave del Registro di sistema da un percorso di directory e questo nome viene aggiunto a esso. Se non specificato, il valore restituito dal Registro di sistema viene considerato il percorso completo in un file.|
 |`SearchDepth`|Facoltativo. La profondità in corrispondenza del quale eseguire la ricerca nelle sottocartelle per il file specificato. La ricerca è depth-first. Il valore predefinito è 0, che limita la ricerca per la cartella di primo livello specificata dal valore della chiave del Registro di sistema.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Mentre gli elementi sotto `InstallChecks` definire i test da eseguire, essi non vengono eseguiti. Per eseguire i test, è necessario creare `Command` elementi di sotto di `Commands` elemento.
 
 ## <a name="example"></a>Esempio

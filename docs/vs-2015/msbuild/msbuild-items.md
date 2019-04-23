@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770850"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669809"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Gli elementi MSBuild sono input nel sistema di compilazione e in genere rappresentano i file. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.  
   
  Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini "elemento" e "valore dell'elemento" sono interscambiabili.  
@@ -90,7 +89,7 @@ Gli elementi MSBuild sono input nel sistema di compilazione e in genere rapprese
 ##  <a name="BKMK_ReferencingItems"></a> Riferimento a elementi in un file di progetto  
  Per fare riferimento ai tipi di elemento nel file di progetto viene usata la sintassi @(`ItemType`). Ad esempio, per fare riferimento al tipo di elemento nell'esempio precedente, si userà `@(Compile)`. Usando questa sintassi, è possibile passare gli elementi alle attività specificando il tipo di elemento come parametro di tale attività. Per altre informazioni, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).  
   
- Per impostazione predefinita, gli elementi di un tipo di elemento vengono separati da punto e virgola (;) quando viene espanso. È possibile usare la sintassi @(*ItemType*, '*separatore*') per specificare un separatore diverso da quello predefinito. Per altre informazioni, vedere [Procedura: Visualizzare un elenco di elementi separati da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Per impostazione predefinita, gli elementi di un tipo di elemento vengono separati da punto e virgola (;) quando viene espanso. È possibile usare la sintassi @(*ItemType*, '*separatore*') per specificare un separatore diverso da quello predefinito. Per altre informazioni, vedere [Procedura: Visualizzare un elenco di elementi separato da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a> Uso di caratteri jolly per specificare gli elementi  
  È possibile usare i caratteri jolly **, \* e ? per specificare un gruppo di file come input per una compilazione invece di elencare ogni file separatamente.  
@@ -131,7 +130,7 @@ Gli elementi MSBuild sono input nel sistema di compilazione e in genere rapprese
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Per altre informazioni, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Per altre informazioni, vedere [Procedura: Escludi file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="BKMK_ItemMetadata"></a> Metadati degli elementi  
  Gli elementi possono contenere metadati oltre alle informazioni negli attributi `Include` e `Exclude`. Questi metadati possono essere usati dalle attività che richiedono altre informazioni sugli elementi o per dividere in batch le attività e le destinazioni. Per altre informazioni, vedere [Batch](../msbuild/msbuild-batching.md).  
@@ -359,8 +358,8 @@ Output:
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
  [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)   
- [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Procedura: Visualizzare un elenco di elementi separati da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Procedura: Escludi file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Procedura: Visualizzare un elenco di elementi separato da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definizioni degli elementi](../msbuild/item-definitions.md)   
  [Suddivisione in batch](../msbuild/msbuild-batching.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)

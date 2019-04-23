@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910025"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663846"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Usare un modello concettuale (WCF Data Services)
 
@@ -25,11 +25,10 @@ Quando si usa un modello concettuale per descrivere i dati in un database, è po
 
  È possibile utilizzare i modelli concettuali con le applicazioni Data Services WCF. Gli argomenti seguenti illustrano come eseguire query sui dati tramite un modello concettuale.
 
-
 | Argomento | Descrizione |
 | - | - |
 | [Procedura: Eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Viene illustrato come eseguire query su un servizio dati da un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dell'applicazione. |
-| [Procedura: Proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
+| [Procedura: Risultati della query di progetto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
 
  Quando si usa un modello concettuale, è possibile definire il tipo di dati è valido nella lingua corrispondente al dominio. È possibile definire dati validi nel modello oppure è possibile aggiungere la convalida per le operazioni eseguite su un'entità o un servizio dati.
 

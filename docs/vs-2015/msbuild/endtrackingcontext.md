@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c31753d5e5155156006d67d621490a8b2c4077a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 641c67c4830f4d882d2d81cb2f00599825ae5d9f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772416"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667087"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Consente di terminare il contesto di verifica corrente.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,7 +36,7 @@ HRESULT WINAPI EndTrackingContext();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il bit [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) impostato se il contesto di verifica è stato terminato.  
+ Un ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il ([riuscito]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) bit impostato se il contesto di verifica è stato terminato.  
   
 ## <a name="requirements"></a>Requisiti  
  **Intestazione:** FileTracker.h  

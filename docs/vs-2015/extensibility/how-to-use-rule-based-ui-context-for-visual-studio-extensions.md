@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955344"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664314"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedura: Usare un contesto di interfaccia utente basato su regole per le estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio consente il caricamento di VSPackage durante determinati noto <xre
 |ActiveProjectCapability:\<espressione >|Il termine è true quando le funzionalità del progetto attivo corrisponde all'espressione specificata. Un'espressione può essere simile a VB &#124; CSharp|
 |SolutionHasProjectCapability:\<Expression>|Analogamente al precedente ma termine è true quando si dispone di qualsiasi progetto caricato corrispondente all'espressione.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Al termine sarà true ogni volta che una soluzione di progetto che è flavored (valore aggregato) che ha una versione che corrisponde al tipo di progetto specificato GUID.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilità con l'estensione tra versioni
  Regola in base i contesti dell'interfaccia utente è una nuova funzionalità di Visual Studio 2015 e potrebbe non essere trasferito a versioni precedenti. Questo costituisce un problema con le estensioni/pacchetti destinati a più versioni di Visual Studio che dovrà essere caricato automaticamente in Visual Studio 2013 e versioni precedenti, ma possono trarre vantaggio dal basato su regole contesti dell'interfaccia utente per evitare che viene caricato automaticamente in Visual Studio 2015.

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b0acfd0f2ec81e349bd6a69db0fb64bff94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a29d98455ccf796f331513c7abf5e679e55af8b5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954378"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669471"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata. È stata invece usata la stringa di connessione del file .dbml.  
   
  Il file .dbml contiene un riferimento a una stringa di connessione nel file di impostazioni dell'applicazione che non è possibile trovare. Questo messaggio è puramente informativo: l'impostazione della stringa di connessione verrà creata quando si fa clic su **OK**.  
