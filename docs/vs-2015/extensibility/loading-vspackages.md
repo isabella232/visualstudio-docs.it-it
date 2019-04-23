@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 805b86802e64c91e52d869b067fac871603019e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066572"
 ---
 # <a name="loading-vspackages"></a>Caricamento di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Caricamento automatico un pacchetto VSPackage in un contesto specifico  
   
--   Aggiungere il `ProvideAutoLoad` gli attributi di VSPackage dell'attributo:  
+- Aggiungere il `ProvideAutoLoad` gli attributi di VSPackage dell'attributo:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -43,11 +43,11 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta
   
      Visualizzare i campi enumerati di <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> per un elenco di contesti dell'interfaccia utente e i relativi valori GUID.  
   
--   Impostare un punto di interruzione il <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (metodo).  
+- Impostare un punto di interruzione il <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (metodo).  
   
--   Compilare il pacchetto VSPackage e avviare il debug.  
+- Compilare il pacchetto VSPackage e avviare il debug.  
   
--   Caricare una soluzione oppure crearne uno.  
+- Caricare una soluzione oppure crearne uno.  
   
      Il pacchetto VSPackage viene caricato e si arresta in corrispondenza del punto di interruzione.  
   
@@ -56,7 +56,7 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta
   
  È possibile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metodo per forzare un pacchetto VSPackage da caricare.  
   
--   Inserire questo codice nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo del pacchetto VSPackage che forza un altro VSPackage da caricare:  
+- Inserire questo codice nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo del pacchetto VSPackage che forza un altro VSPackage da caricare:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  

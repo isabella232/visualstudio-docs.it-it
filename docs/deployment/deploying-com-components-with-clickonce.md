@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069120"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Distribuire componenti COM con ClickOnce
 Distribuzione di componenti COM legacy è tradizionalmente difficile. I componenti devono essere registrati a livello globale e pertanto possono causare effetti collaterali indesiderati applicazioni sovrapposte. Questa situazione non è in genere un problema in applicazioni .NET Framework perché i componenti sono completamente isolati a un'applicazione o sono compatibili con side-by-side. Visual Studio consente di distribuire i componenti COM isolati nel Windows XP o versioni successive del sistema operativo.
@@ -46,9 +46,9 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
 
  Esistono due modi che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consente di distribuire i componenti COM:
 
--   Usare il programma di avvio per distribuire i componenti COM. Questa opzione funziona su tutte le piattaforme supportate.
+- Usare il programma di avvio per distribuire i componenti COM. Questa opzione funziona su tutte le piattaforme supportate.
 
--   Usare la distribuzione di isolamento (noto anche come COM senza registrazione) componente nativo. Tuttavia, questa impostazione funziona solo in un Windows XP o versioni successive del sistema operativo.
+- Usare la distribuzione di isolamento (noto anche come COM senza registrazione) componente nativo. Tuttavia, questa impostazione funziona solo in un Windows XP o versioni successive del sistema operativo.
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Esempio di isolamento e la distribuzione di un semplice componente COM
  Per dimostrare la distribuzione di componenti COM senza registrazione, in questo esempio verrà creare un'applicazione basata su Windows in Visual Basic che fa riferimento a un componente COM nativo isolato creato utilizzando Visual Basic 6.0 e distribuirla tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -57,16 +57,16 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
 
 ##### <a name="to-create-a-native-com-component"></a>Per creare un componente COM nativo
 
-1.  Utilizzando Visual Basic 6.0, dal **File** menu, fare clic su **New**, quindi **progetto**.
+1. Utilizzando Visual Basic 6.0, dal **File** menu, fare clic su **New**, quindi **progetto**.
 
-2.  Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare un **DLL ActiveX** progetto. Nella casella **Nome** digitare `VB6Hello`.
+2. Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare un **DLL ActiveX** progetto. Nella casella **Nome** digitare `VB6Hello`.
 
     > [!NOTE]
     >  Sono supportati solo i tipi di progetto DLL ActiveX e il controllo ActiveX con COM senza registrazione. Tipi di progetto EXE ActiveX e il documento ActiveX non sono supportati.
 
-3.  Nelle **Esplora soluzioni**, fare doppio clic su **Class1.vb** per aprire l'editor di testo.
+3. Nelle **Esplora soluzioni**, fare doppio clic su **Class1.vb** per aprire l'editor di testo.
 
-4.  In Class1, aggiungere il codice seguente dopo il codice generato per il `New` metodo:
+4. In Class1, aggiungere il codice seguente dopo il codice generato per il `New` metodo:
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
     End Sub
     ```
 
-5.  Compilare il componente. Dal **compilare** menu, fare clic su **Compila soluzione**.
+5. Compilare il componente. Dal **compilare** menu, fare clic su **Compila soluzione**.
 
 > [!NOTE]
 >  COM senza registrazione supporta solo le DLL e controlla i tipi di progetto di COM. È possibile usare file eseguibili con COM senza registrazione.
@@ -163,7 +163,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
 
 - Il componente gestisce un dispositivo fisico o virtuale per il sistema, ad esempio, un driver di dispositivo per uno spooler di stampa.
 
-- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; visualizzare [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
+- Il componente è un accesso ai dati ridistribuibile. Applicazioni di dati richiedono in genere un accesso ai dati ridistribuibili da installare prima che possano eseguire. Non provare a isolare i componenti, ad esempio il controllo dati ADO di Microsoft, Microsoft OLE DB o Microsoft Data Access Components (MDAC). In alternativa, se l'applicazione usa MDAC o SQL Server Express, è necessario impostarli come prerequisiti; vedere [come: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
   In alcuni casi, potrebbe essere possibile per lo sviluppatore del componente, riprogettare per COM senza registrazione. Se questo non è possibile, è possibile compilare e pubblicare applicazioni che dipendono da essi tramite lo schema di registrazione standard usando il programma di bootstrap. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).
 

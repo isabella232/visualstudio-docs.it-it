@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067235"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione
 
@@ -30,17 +30,17 @@ Questa procedura dettagliata illustra come usare il modello a oggetti della barr
 
 [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-L'esempio effettua il pull dei dati del database di esempio Northwind per popolare una casella combinata e un menu in Microsoft Office Outlook. Gli elementi che selezionano automaticamente in questi controlli popolano i campi, ad esempio **al** e **Subject** in un messaggio di posta elettronica.
+L'esempio usa i dati del database di esempio Northwind per popolare una casella combinata e un menu in Microsoft Office Outlook. Gli elementi che selezionano automaticamente in questi controlli popolano i campi, ad esempio **al** e **Subject** in un messaggio di posta elettronica.
 
 Questa procedura dettagliata illustra le attività seguenti:
 
--   Creare un nuovo progetto di componente aggiuntivo VSTO di Outlook.
+- Creare un nuovo progetto di componente aggiuntivo VSTO di Outlook.
 
--   Progettazione di un gruppo della barra multifunzione personalizzato.
+- Progettazione di un gruppo della barra multifunzione personalizzato.
 
--   Aggiungere il gruppo personalizzato a una scheda incorporata.
+- Aggiungere il gruppo personalizzato a una scheda incorporata.
 
--   Aggiornare i controlli della barra multifunzione in fase di esecuzione.
+- Aggiornare i controlli della barra multifunzione in fase di esecuzione.
 
 > [!NOTE]
 > I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Creare un nuovo progetto di componente aggiuntivo VSTO di Outlook
 
@@ -59,11 +59,11 @@ Prima di tutto, creare un progetto di componente aggiuntivo VSTO di Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO di Outlook
 
-1.  Nelle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare un progetto di componente aggiuntivo VSTO per Outlook con il nome **Ribbon_Update_At_Runtime**.
+1. Nelle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare un progetto di componente aggiuntivo VSTO per Outlook con il nome **Ribbon_Update_At_Runtime**.
 
-2.  Nella finestra di dialogo **Nuovo progetto** selezionare **Crea directory per soluzione**.
+2. Nella finestra di dialogo **Nuovo progetto** selezionare **Crea directory per soluzione**.
 
-3.  Salvare il progetto nella directory del progetto predefinita.
+3. Salvare il progetto nella directory del progetto predefinita.
 
      Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ La barra multifunzione per questo esempio verrà visualizzato quando un utente c
 
 ### <a name="to-design-a-custom-group"></a>Per progettare un gruppo personalizzato
 
-1.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
-3.  Modificare il nome della nuova barra multifunzione **CustomerRibbon**, quindi fare clic su **Add**.
+3. Modificare il nome della nuova barra multifunzione **CustomerRibbon**, quindi fare clic su **Add**.
 
      Il *CustomerRibbon.cs* oppure *CustomerRibbon. vb* file viene aperto nella finestra di progettazione della barra multifunzione e visualizza una scheda predefinita e un gruppo.
 
-4.  Fare clic nella finestra di progettazione per selezionarlo.
+4. Fare clic nella finestra di progettazione per selezionarlo.
 
-5.  Nel **delle proprietà** finestra, fare clic sulla freccia giù accanto al **RibbonType** proprietà e quindi fare clic su **Compose**.
+5. Nel **delle proprietà** finestra, fare clic sulla freccia giù accanto al **RibbonType** proprietà e quindi fare clic su **Compose**.
 
      In questo modo, la barra multifunzione viene visualizzata quando l'utente compone un nuovo messaggio di posta elettronica in Outlook.
 
-6.  Nella finestra di progettazione della barra multifunzione, fare clic su **Group1** per selezionarlo.
+6. Nella finestra di progettazione della barra multifunzione, fare clic su **Group1** per selezionarlo.
 
-7.  Nel **delle proprietà** impostare nella finestra **etichetta** al **Customer Purchases**.
+7. Nel **delle proprietà** impostare nella finestra **etichetta** al **Customer Purchases**.
 
-8.  Dal **controlli della barra multifunzione di Office** scheda della finestra di **della casella degli strumenti**, trascinare un **ComboBox** nel **Customer Purchases** gruppo.
+8. Dal **controlli della barra multifunzione di Office** scheda della finestra di **della casella degli strumenti**, trascinare un **ComboBox** nel **Customer Purchases** gruppo.
 
 9. Fare clic su **ComboBox1** per selezionarlo.
 
@@ -111,17 +111,17 @@ Una scheda incorporata rappresenta una scheda già presente sulla barra multifun
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Per aggiungere il gruppo personalizzato a una scheda predefinita
 
-1.  Scegliere il **TabAddins (Built-)** pressione di tab per selezionarlo.
+1. Scegliere il **TabAddins (Built-)** pressione di tab per selezionarlo.
 
-2.  Nel **delle proprietà** finestra, espandere il **ControlId** proprietà e quindi impostare **OfficeId** a **TabNewMailMessage**.
+2. Nel **delle proprietà** finestra, espandere il **ControlId** proprietà e quindi impostare **OfficeId** a **TabNewMailMessage**.
 
      Verrà aggiunta la **Customer Purchases** gruppo per il **messaggi** della barra multifunzione che viene visualizzato in un nuovo messaggio di posta elettronica.
 
-3.  Scegliere il **Customer Purchases** gruppo per selezionarlo.
+3. Scegliere il **Customer Purchases** gruppo per selezionarlo.
 
-4.  Nel **delle proprietà** finestra, espandere il **posizione** proprietà, fare clic sulla freccia giù accanto al **PositionType** proprietà e quindi fare clic su  **BeforeOfficeId**.
+4. Nel **delle proprietà** finestra, espandere il **posizione** proprietà, fare clic sulla freccia giù accanto al **PositionType** proprietà e quindi fare clic su  **BeforeOfficeId**.
 
-5.  Impostare il **OfficeId** proprietà **GroupClipboard**.
+5. Impostare il **OfficeId** proprietà **GroupClipboard**.
 
      Si posiziona il **Customer Purchases** gruppo prima del **negli Appunti** gruppo o la **messaggi** scheda.
 
@@ -131,31 +131,31 @@ Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al proget
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1.  Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
+1. Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
      Verrà avviata il **configurazione guidata origine dati**.
 
-2.  Selezionare **Database**, quindi fare clic su **successivo**.
+2. Selezionare **Database**, quindi fare clic su **successivo**.
 
-3.  Selezionare **set di dati**, quindi fare clic su **successivo**.
+3. Selezionare **set di dati**, quindi fare clic su **successivo**.
 
-4.  Selezionare una connessione dati al database Northwind di esempio Microsoft SQL Server Compact 4.0 oppure aggiungere una nuova connessione utilizzando il **nuova connessione** pulsante.
+4. Selezionare una connessione dati al database Northwind di esempio Microsoft SQL Server Compact 4.0 oppure aggiungere una nuova connessione utilizzando il **nuova connessione** pulsante.
 
-5.  Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.
+5. Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.
 
-6.  Fare clic su **successivo** per salvare la stringa di connessione.
+6. Fare clic su **successivo** per salvare la stringa di connessione.
 
-7.  Nel **Scegli oggetti di Database** , espandere **tabelle**.
+7. Nel **Scegli oggetti di Database** , espandere **tabelle**.
 
-8.  Selezionare la casella di controllo accanto a ciascuna delle seguenti tabelle:
+8. Selezionare la casella di controllo accanto a ciascuna delle seguenti tabelle:
 
-    1.  **Clienti**
+    1. **Clienti**
 
-    2.  **Dettagli dell'ordine**
+    2. **Dettagli dell'ordine**
 
-    3.  **Ordini**
+    3. **Ordini**
 
-    4.  **Prodotti**
+    4. **Prodotti**
 
 9. Scegliere **Fine**.
 
@@ -163,11 +163,11 @@ Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al proget
 
 Usare il modello a oggetti della barra multifunzione per effettuare le seguenti attività:
 
--   Aggiungere i nomi dei clienti per il **clienti** casella combinata.
+- Aggiungere i nomi dei clienti per il **clienti** casella combinata.
 
--   Aggiungere i controlli menu e pulsante di **Products Purchased** menu che rappresentano gli ordini di vendita e i prodotti venduti.
+- Aggiungere i controlli menu e pulsante di **Products Purchased** menu che rappresentano gli ordini di vendita e i prodotti venduti.
 
--   Popolare a, oggetto e corpo campi dei nuovi messaggi di posta elettronica con i dati di **i clienti** casella combinata e **Products Purchased** menu.
+- Popolare a, oggetto e corpo campi dei nuovi messaggi di posta elettronica con i dati di **i clienti** casella combinata e **Products Purchased** menu.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Per aggiornare i controlli nel gruppo personalizzato usando il modello a oggetti della barra multifunzione
 
@@ -257,31 +257,31 @@ Per creare un messaggio di posta elettronica di follow-up dei clienti, seleziona
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Per testare i controlli nel gruppo personalizzato
 
-1.  Premere **F5** per eseguire il progetto.
+1. Premere **F5** per eseguire il progetto.
 
      Viene avviato Outlook.
 
-2.  In Outlook sul **File** dal menu **New**e quindi fare clic su **messaggio di posta elettronica**.
+2. In Outlook sul **File** dal menu **New**e quindi fare clic su **messaggio di posta elettronica**.
 
      Eseguire le azioni seguenti:
 
-    -   Viene visualizzata una nuova finestra di controllo del messaggio di posta.
+    - Viene visualizzata una nuova finestra di controllo del messaggio di posta.
 
-    -   Nel **messaggio** della barra multifunzione, il **Customer Purchases** viene posizionato prima il **negli Appunti** gruppo.
+    - Nel **messaggio** della barra multifunzione, il **Customer Purchases** viene posizionato prima il **negli Appunti** gruppo.
 
-    -   Il **clienti** casella combinata del gruppo viene aggiornato con i nomi dei clienti nel database Northwind.
+    - Il **clienti** casella combinata del gruppo viene aggiornato con i nomi dei clienti nel database Northwind.
 
-3.  Nel **messaggio** della barra multifunzione, nel **Customer Purchases** gruppo, selezionare un cliente dal **clienti** casella combinata.
+3. Nel **messaggio** della barra multifunzione, nel **Customer Purchases** gruppo, selezionare un cliente dal **clienti** casella combinata.
 
      Eseguire le azioni seguenti:
 
-    -   Il **Products Purchased** menu viene aggiornato per mostrare ogni ordine di vendita per il cliente selezionato.
+    - Il **Products Purchased** menu viene aggiornato per mostrare ogni ordine di vendita per il cliente selezionato.
 
-    -   Ogni sottomenu dell'ordine di vendita viene aggiornato in modo da visualizzare i prodotti acquistati in quell'ordine.
+    - Ogni sottomenu dell'ordine di vendita viene aggiornato in modo da visualizzare i prodotti acquistati in quell'ordine.
 
-    -   Indirizzo di posta elettronica al cliente selezionato viene aggiunto per il **a** riga del messaggio di posta elettronica e l'oggetto e corpo del messaggio di posta vengono popolati con il testo.
+    - Indirizzo di posta elettronica al cliente selezionato viene aggiunto per il **a** riga del messaggio di posta elettronica e l'oggetto e corpo del messaggio di posta vengono popolati con il testo.
 
-4.  Scegliere il **Products Purchases** menu, selezionare un ordine di vendita e quindi fare clic su un prodotto dall'ordine di vendita.
+4. Scegliere il **Products Purchases** menu, selezionare un ordine di vendita e quindi fare clic su un prodotto dall'ordine di vendita.
 
      Il nome di prodotto viene aggiunto al corpo del messaggio di posta.
 
@@ -289,11 +289,11 @@ Per creare un messaggio di posta elettronica di follow-up dei clienti, seleziona
 
 È possibile trovare ulteriori informazioni sulla personalizzazione dell'interfaccia utente di Office nei seguenti argomenti:
 
--   Aggiunta di un'interfaccia utente basata sul contesto a una personalizzazione a livello di documento. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
+- Aggiunta di un'interfaccia utente basata sul contesto a una personalizzazione a livello di documento. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
 
--   Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area del modulo Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area del modulo Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Aggiungere un riquadro attività personalizzato a Outlook. Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
+- Aggiungere un riquadro attività personalizzato a Outlook. Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Vedere anche
 

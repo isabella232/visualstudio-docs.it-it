@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066712"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Per posticipare la profilatura rispetto all'avvio dell'app:  
   
-1.  Nel menu principale scegliere **Debug**, quindi **Prestazioni e diagnostica** (tastiera: premere ALT+F2).  
+1. Nel menu principale scegliere **Debug**, quindi **Prestazioni e diagnostica** (tastiera: premere ALT+F2).  
   
-2.  Nell'hub Prestazioni e diagnostica seguire il collegamento **Impostazioni** accanto a **Utilizzo GPU**.  
+2. Nell'hub Prestazioni e diagnostica seguire il collegamento **Impostazioni** accanto a **Utilizzo GPU**.  
   
-3.  In **Configurazione Profilatura GPU** nella pagina delle proprietà **Generale** deselezionare la casella di controllo **Begin profiling at app start** (Inizia profilatura all'avvio dell'app) per posticipare la profilatura.  
+3. In **Configurazione Profilatura GPU** nella pagina delle proprietà **Generale** deselezionare la casella di controllo **Begin profiling at app start** (Inizia profilatura all'avvio dell'app) per posticipare la profilatura.  
   
      ![Configurare l'inizio della raccolta Utilizzo GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
  Se si posticipa la raccolta delle informazioni di profilatura con questa impostazione, quando si esegue l'app nello strumento Utilizzo GPU, nella parte inferiore della finestra dello strumento diventa disponibile un collegamento aggiuntivo. Per avviare la raccolta di informazioni di profilatura, scegliere il collegamento **Inizia** nel messaggio **Inizia a raccogliere altri dati dettagliati sull'utilizzo della GPU**.  
   
-##  <a name="hwsupport"></a> Hardware e driver supportati  
+## <a name="hwsupport"></a> Hardware e driver supportati  
  Di seguito è riportato un elenco delle GPU e dei driver supportati:  
   
 |Vendor|Descrizione GPU|Versione driver richiesta|  
@@ -143,10 +143,10 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
 ## <a name="see-also"></a>Vedere anche  
   
--   [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools) (Risolvere problemi di grafica complessi del gioco usando gli strumenti DirectX)  
+- [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools) (Risolvere problemi di grafica complessi del gioco usando gli strumenti DirectX)  
   
--   [GPU Usage Tool in Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715) (Strumento Utilizzo GPU in Visual Studio)  
+- [GPU Usage Tool in Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715) (Strumento Utilizzo GPU in Visual Studio)  
   
--   [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx) (Strumento Utilizzo GPU in Visual Studio 2013 Update 4 CTP1)  
+- [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx) (Strumento Utilizzo GPU in Visual Studio 2013 Update 4 CTP1)  
   
--   [GPU Usage for DirectX in Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx) (Utilizzo GPU per DirectX in Visual Studio)
+- [GPU Usage for DirectX in Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx) (Utilizzo GPU per DirectX in Visual Studio)

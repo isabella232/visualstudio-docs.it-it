@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071928"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Procedura: Trovare il nome del processo ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Per connettersi a un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Per determinare se il codice di progetto risiede nel file system o in IIS  
   
-1.  In Visual Studio, aprire **Esplora soluzioni** se non è già aperto.  
+1. In Visual Studio, aprire **Esplora soluzioni** se non è già aperto.  
   
-2.  Selezionare il nodo superiore che contiene il nome dell'applicazione.  
+2. Selezionare il nodo superiore che contiene il nome dell'applicazione.  
   
-3.  Se il **proprietà** titolo della finestra contiene un percorso di file, il codice dell'applicazione si trova nel file system.  
+3. Se il **proprietà** titolo della finestra contiene un percorso di file, il codice dell'applicazione si trova nel file system.  
   
      In caso contrario, il **proprietà** titolo della finestra conterrà il nome del sito Web.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Per determinare la versione di IIS in cui l'applicazione è in esecuzione  
   
-1.  Trovare **strumenti di amministrazione** ed eseguirlo. A seconda del sistema operativo, potrebbe trattarsi di un'icona all'interno **Pannello di controllo**, o una voce di menu che viene visualizzato quando si fa clic **avviare**.  
+1. Trovare **strumenti di amministrazione** ed eseguirlo. A seconda del sistema operativo, potrebbe trattarsi di un'icona all'interno **Pannello di controllo**, o una voce di menu che viene visualizzato quando si fa clic **avviare**.  
   
      In Windows XP **Pannello di controllo** può essere nella visualizzazione classica o categoria. In visualizzazione per categorie, è necessario fare clic su **passa alla visualizzazione classica** oppure **prestazioni e manutenzione** per visualizzare il **strumenti di amministrazione** icona.  
   
-2.  Dal **strumenti di amministrazione**, eseguire Internet Information Services. Viene visualizzata una finestra di dialogo MMC.  
+2. Dal **strumenti di amministrazione**, eseguire Internet Information Services. Viene visualizzata una finestra di dialogo MMC.  
   
-3.  Se nel riquadro sinistro sono elencati più computer, selezionare quello in cui risiede il codice dell'applicazione.  
+3. Se nel riquadro sinistro sono elencati più computer, selezionare quello in cui risiede il codice dell'applicazione.  
   
-4.  La versione di IIS è nel **versione** colonna del riquadro di destra.  
+4. La versione di IIS è nel **versione** colonna del riquadro di destra.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Prerequisiti per il debug di applicazioni Web remoto](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

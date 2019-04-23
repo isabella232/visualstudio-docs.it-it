@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070381"
 ---
 # <a name="service-essentials"></a>Nozioni fondamentali sui servizi
 Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage fornisce un set specifico di interfacce per un altro VSPackage da utilizzare. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è a sua volta una raccolta di VSPackage che fornisce servizi per gli altri pacchetti VSPackage.
@@ -68,15 +68,15 @@ In alcuni casi potrebbe essere necessario ottenere un servizio da una finestra d
 
 Fortunatamente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> funziona correttamente la maggior parte dei casi.
 
--   Se un pacchetto VSPackage fornisce un servizio noto solo a un altro VSPackage, il pacchetto VSPackage che richiede il servizio viene individuato prima il pacchetto VSPackage che fornisce che il servizio sia caricato.
+- Se un pacchetto VSPackage fornisce un servizio noto solo a un altro VSPackage, il pacchetto VSPackage che richiede il servizio viene individuato prima il pacchetto VSPackage che fornisce che il servizio sia caricato.
 
--   Se una finestra degli strumenti viene creata da un pacchetto VSPackage, il pacchetto VSPackage è collocato prima che venga creata la finestra degli strumenti.
+- Se una finestra degli strumenti viene creata da un pacchetto VSPackage, il pacchetto VSPackage è collocato prima che venga creata la finestra degli strumenti.
 
--   Se un contenitore di controlli è ospitato da una finestra degli strumenti creata da un pacchetto VSPackage, il pacchetto VSPackage è collocato prima che venga creato il contenitore del controllo.
+- Se un contenitore di controlli è ospitato da una finestra degli strumenti creata da un pacchetto VSPackage, il pacchetto VSPackage è collocato prima che venga creato il contenitore del controllo.
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Per ottenere un servizio dall'interno di un contenitore di controllo o finestra degli strumenti
 
--   Inserire questo codice nel costruttore, finestra degli strumenti o contenitore di controlli:
+- Inserire questo codice nel costruttore, finestra degli strumenti o contenitore di controlli:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

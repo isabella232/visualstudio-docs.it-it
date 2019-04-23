@@ -13,12 +13,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067443"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: Check-Out / Annulla estrazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 ##### <a name="check-out"></a>Vedere:  
   
--   **File**, **controllo del codice sorgente**, **Scopri**.  
+- **File**, **controllo del codice sorgente**, **Scopri**.  
   
--   **File**, **consultare**.  
+- **File**, **consultare**.  
   
--   Menu di scelta rapida **Estrai**.  
+- Menu di scelta rapida **Estrai**.  
   
--   Annulla estrazione: **File**, **controllo del codice sorgente**, **Annulla estrazione**.  
+- Annulla estrazione: **File**, **controllo del codice sorgente**, **Annulla estrazione**.  
   
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune  
   
--   Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.  
+- Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.  
   
--   L'archivio delle versioni l'estrazione di attributi per l'utente corretto.  
+- L'archivio delle versioni l'estrazione di attributi per l'utente corretto.  
   
--   La data dell'estrazione e l'ora siano corretti (per le impostazioni dell'utente).  
+- La data dell'estrazione e l'ora siano corretti (per le impostazioni dell'utente).  
   
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'area di test di estrazione/annullamento dell'estrazione.  
@@ -72,11 +72,11 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
   
--   Non è possibile usare **Out esclusivamente** comando durante la disconnessione dall'archivio versioni.  
+- Non è possibile usare **Out esclusivamente** comando durante la disconnessione dall'archivio versioni.  
   
--   Non è possibile usare **Annulla estrazione** comando durante la disconnessione dall'archivio versioni.  
+- Non è possibile usare **Annulla estrazione** comando durante la disconnessione dall'archivio versioni.  
   
--   **Condiviso Check Out** comando funziona.  
+- **Condiviso Check Out** comando funziona.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
@@ -87,13 +87,13 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
   
--   Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.  
+- Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.  
   
--   L'archivio delle versioni di attributi di check-out per l'utente corretto.  
+- L'archivio delle versioni di attributi di check-out per l'utente corretto.  
   
--   La data e ora del check-out sono corretti (per le impostazioni dell'utente).  
+- La data e ora del check-out sono corretti (per le impostazioni dell'utente).  
   
--   La copia locale della cartella o file di destinazione è scrivibile.  
+- La copia locale della cartella o file di destinazione è scrivibile.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
@@ -106,13 +106,13 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
   
--   Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.  
+- Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.  
   
--   L'archivio delle versioni di attributi di check-out per l'utente corretto.  
+- L'archivio delle versioni di attributi di check-out per l'utente corretto.  
   
--   La data e ora del check-out è corretto (per le impostazioni dell'utente).  
+- La data e ora del check-out è corretto (per le impostazioni dell'utente).  
   
--   La copia locale della cartella o file di destinazione è scrivibile.  
+- La copia locale della cartella o file di destinazione è scrivibile.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
@@ -124,9 +124,9 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 #### <a name="expected-behavior"></a>Comportamento previsto  
   
--   Il valore predefinito si basa il suo **Estrai versione locale** impostazione. Se l'utente ha scelto di estrarre la versione locale, il valore predefinito per l'operazione di annullamento estrazione consiste nel ripristinare in qualsiasi momento la versione estratta.  
+- Il valore predefinito si basa il suo **Estrai versione locale** impostazione. Se l'utente ha scelto di estrarre la versione locale, il valore predefinito per l'operazione di annullamento estrazione consiste nel ripristinare in qualsiasi momento la versione estratta.  
   
--   Dopo l'accettazione dell'operazione di annullamento, le icone nel **Esplora soluzioni** vengono aggiornati per interessati i file e l'elemento viene rimosso dal **archiviazioni in sospeso** finestra.  
+- Dopo l'accettazione dell'operazione di annullamento, le icone nel **Esplora soluzioni** vengono aggiornati per interessati i file e l'elemento viene rimosso dal **archiviazioni in sospeso** finestra.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  

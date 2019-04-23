@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: abilitare e disabilitare Modifica e continuazione | Microsoft Docs'
+title: 'Procedura: Abilitare e disabilitare Modifica e continuazione | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070409"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: abilitare e disabilitare Modifica e continuazione (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: Abilitare e disabilitare Modifica e continuazione (C#, Visual Basic, C++)
 
 È possibile disabilitare o abilitare **modifica e continuazione** in Visual Studio **opzioni** finestra di dialogo in fase di progettazione. La funzionalità **Modifica e continuazione** può essere usata solo nelle build di debug. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
 
@@ -41,14 +41,14 @@ C++ nativo **modifica e continuazione** richiede l'uso di `/INCREMENTAL` opzione
 
 **Per abilitare o disabilitare Modifica e continuazione:**
 
-1.  Se lavora in una sessione di debug, arrestare il debug (**Debug** > **Termina debug** oppure **MAIUSC**+**F5**) .
+1. Se lavora in una sessione di debug, arrestare il debug (**Debug** > **Termina debug** oppure **MAIUSC**+**F5**) .
 
-1.  Nella **degli strumenti** > **opzioni** > (o **Debug** > **opzioni**) > **debug**  >  **Generali**, selezionare **modifica e continuazione** nel riquadro di destra.
+1. Nella **degli strumenti** > **opzioni** > (o **Debug** > **opzioni**) > **debug**  >  **Generali**, selezionare **modifica e continuazione** nel riquadro di destra.
 
     > [!NOTE]
     >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [IntelliTrace](../debugger/intellitrace.md).
 
-1.  Per codice C++, assicurarsi che **abilitare Modifica e continuazione nativo** sia selezionato e impostare le opzioni aggiuntive:
+1. Per codice C++, assicurarsi che **abilitare Modifica e continuazione nativo** sia selezionato e impostare le opzioni aggiuntive:
     - **Applica le modifiche durante la continuazione (solo nativo)**
 
       Se selezionata, Visual Studio viene compilato automaticamente e applica le modifiche al codice quando si continua il debug da uno stato di interruzione. In caso contrario, è possibile scegliere di applicare modifiche mediante **Debug** > **Applica modifiche del codice**.
@@ -57,4 +57,4 @@ C++ nativo **modifica e continuazione** richiede l'uso di `/INCREMENTAL` opzione
 
       Se selezionata, consente di avvisi relativi a codice non aggiornato.
 
-1.  Fare clic su **OK**.
+1. Fare clic su **OK**.

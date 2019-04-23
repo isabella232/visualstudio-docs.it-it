@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069389"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Aggiunta di un controllo utente nella pagina iniziale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
 ## <a name="adding-a-wpf-user-control-to-the-solution"></a>Aggiunta di un controllo utente WPF alla soluzione  
  In primo luogo, aggiungere un controllo utente Windows Presentation Foundation (WPF) per la soluzione di pagina iniziale.  
   
-1.  Creare una pagina iniziale con creato nel [creazione di una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).  
+1. Creare una pagina iniziale con creato nel [creazione di una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).  
   
-2.  Nella **Esplora soluzioni**, fare doppio clic la soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**.  
+2. Nella **Esplora soluzioni**, fare doppio clic la soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**.  
   
-3.  Nel riquadro sinistro della finestra il **nuovo progetto** finestra di dialogo espandere uno il **Visual Basic** o **Visual C#** nodo e fare clic su **Windows**. Nel riquadro centrale, selezionare **libreria di controlli utente WPF**.  
+3. Nel riquadro sinistro della finestra il **nuovo progetto** finestra di dialogo espandere uno il **Visual Basic** o **Visual c#** nodo e fare clic su **Windows**. Nel riquadro centrale, selezionare **libreria di controlli utente WPF**.  
   
-4.  Denominare il controllo `WebUserControl` e quindi fare clic su **OK**.  
+4. Denominare il controllo `WebUserControl` e quindi fare clic su **OK**.  
   
 ## <a name="implementing-the-user-control"></a>Implementazione del controllo utente  
- Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in XAML e quindi scrivono gli eventi di code-behind in C# o un altro linguaggio .NET.  
+ Per implementare un controllo utente WPF, compilare l'interfaccia utente (UI) in XAML e quindi scrivono gli eventi di code-behind in c# o un altro linguaggio .NET.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Per scrivere il XAML per il controllo utente  
   
-1.  Aprire il file XAML per il controllo utente. Nel \<griglia > elemento, aggiungere le seguenti definizioni di riga per il controllo.  
+1. Aprire il file XAML per il controllo utente. Nel \<griglia > elemento, aggiungere le seguenti definizioni di riga per il controllo.  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
   
     ```  
   
-2.  Nel principale `Grid` elemento, aggiungere la seguente nuovo `Grid` elemento che contiene una casella di testo per digitare gli indirizzi Web e un pulsante per impostare il nuovo indirizzo.  
+2. Nel principale `Grid` elemento, aggiungere la seguente nuovo `Grid` elemento che contiene una casella di testo per digitare gli indirizzi Web e un pulsante per impostare il nuovo indirizzo.  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
     </Grid>  
     ```  
   
-3.  Aggiungere il frame seguente al livello superiore `Grid` elemento subito dopo il `Grid` elemento che contiene il pulsante e casella di testo.  
+3. Aggiungere il frame seguente al livello superiore `Grid` elemento subito dopo il `Grid` elemento che contiene il pulsante e casella di testo.  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4.  Nell'esempio seguente viene illustrato il XAML completato per il controllo utente.  
+4. Nell'esempio seguente viene illustrato il XAML completato per il controllo utente.  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -102,11 +102,11 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
   
 #### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Per scrivere gli eventi di code-behind per il controllo utente  
   
-1.  Nella finestra di progettazione XAML fare doppio clic il **impostare indirizzo** pulsante è stato aggiunto al controllo.  
+1. Nella finestra di progettazione XAML fare doppio clic il **impostare indirizzo** pulsante è stato aggiunto al controllo.  
   
      Il file UserControl1.cs verrà aperto nell'editor del codice.  
   
-2.  Compilare il gestore dell'evento SetButton_Click come indicato di seguito.  
+2. Compilare il gestore dell'evento SetButton_Click come indicato di seguito.  
   
     ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
@@ -124,14 +124,14 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
   
      Questo codice imposta l'indirizzo Web che viene digitato nella casella di testo come destinazione per il Web browser. Se l'indirizzo non è valido, il codice genera un errore.  
   
-3.  È anche necessario gestire l'evento WebFrame_Navigated:  
+3. È anche necessario gestire l'evento WebFrame_Navigated:  
   
     ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  
   
-4.  Compilare la soluzione.  
+4. Compilare la soluzione.  
   
 ## <a name="adding-the-user-control-to-the-start-page"></a>Aggiunta del controllo utente alla pagina iniziale  
  Per rendere disponibili per il progetto di pagina iniziale, questo controllo nel file di progetto di pagina di avvio, aggiungere un riferimento alla nuova libreria di controllo. È quindi possibile aggiungere il controllo al markup XAML pagina Start.  
@@ -174,15 +174,15 @@ Questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Test di una pagina di avvio personalizzata creata manualmente  
   
-1.  Copiare il file XAML e qualsiasi file di testo o markup supporto file, per il **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  cartella.  
+1. Copiare il file XAML e qualsiasi file di testo o markup supporto file, per il **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  cartella.  
   
-2.  Se la pagina iniziale di fa riferimento a tutti i controlli o i tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e quindi incollarli nella _cartella di installazione di Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
+2. Se la pagina iniziale di fa riferimento a tutti i controlli o i tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e quindi incollarli nella _cartella di installazione di Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
-3.  Un prompt dei comandi di Visual Studio, digitare **devenv /rootsuffix Exp** per aprire un'istanza sperimentale di Visual Studio.  
+3. Un prompt dei comandi di Visual Studio, digitare **devenv /rootsuffix Exp** per aprire un'istanza sperimentale di Visual Studio.  
   
-4.  Nell'istanza sperimentale, passare al **Strumenti / opzioni / ambiente / avvio** pagina e selezionare il file XAML dalle **Personalizza pagina iniziale** elenco a discesa.  
+4. Nell'istanza sperimentale, passare al **Strumenti / opzioni / ambiente / avvio** pagina e selezionare il file XAML dalle **Personalizza pagina iniziale** elenco a discesa.  
   
-5.  Scegliere **Pagina iniziale** dal menu **Visualizza**.  
+5. Scegliere **Pagina iniziale** dal menu **Visualizza**.  
   
      La pagina iniziale personalizzata deve essere visualizzata. Se si desidera modificare tutti i file, è necessario chiudere l'istanza sperimentale, apportare le modifiche, copiare e incollare i file modificati e quindi aprire nuovamente l'istanza sperimentale per visualizzare le modifiche.  
   

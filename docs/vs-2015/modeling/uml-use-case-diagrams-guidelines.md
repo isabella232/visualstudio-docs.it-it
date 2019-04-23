@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068003"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi caso di utilizzo UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,71 +59,71 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
    Un diagramma caso di utilizzo è in grado di mostrare quali casi di utilizzo sono supportati dal sistema o dai relativi sottosistemi.  
   
-##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi casi d'uso  
+## <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi casi d'uso  
   
 > [!NOTE]
 >  I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Per creare un nuovo diagramma caso di utilizzo  
   
-1.  Nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
+1. Nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
   
-2.  Sotto **modelli**, fare clic su **diagramma caso di UMLUse**.  
+2. Sotto **modelli**, fare clic su **diagramma caso di UMLUse**.  
   
-3.  Assegnare un nome al diagramma.  
+3. Assegnare un nome al diagramma.  
   
-4.  Nelle **aggiungere al progetto di modellazione**, selezionare un progetto di modellazione esistente nella soluzione, o **creare un nuovo progetto di modellazione**, quindi fare clic su **OK**.  
+4. Nelle **aggiungere al progetto di modellazione**, selezionare un progetto di modellazione esistente nella soluzione, o **creare un nuovo progetto di modellazione**, quindi fare clic su **OK**.  
   
 #### <a name="to-draw-a-use-case-diagram"></a>Per creare un diagramma caso di utilizzo  
   
-1.  Trascinare **sottosistema** limiti dalla casella degli strumenti sul diagramma per rappresentare l'intero sistema o i relativi componenti principali.  
+1. Trascinare **sottosistema** limiti dalla casella degli strumenti sul diagramma per rappresentare l'intero sistema o i relativi componenti principali.  
   
-    -   È possibile creare un diagramma caso di utilizzo senza limiti di sistema se non si vuole descrivere quali casi di utilizzo sono supportati dal sistema o dai relativi componenti.  
+    - È possibile creare un diagramma caso di utilizzo senza limiti di sistema se non si vuole descrivere quali casi di utilizzo sono supportati dal sistema o dai relativi componenti.  
   
-    -   Trascinare l'angolo di un sistema per ingrandirlo, se necessario.  
+    - Trascinare l'angolo di un sistema per ingrandirlo, se necessario.  
   
-    -   Rinominarlo in modo appropriato.  
+    - Rinominarlo in modo appropriato.  
   
-2.  Trascinare **attori** dalla casella degli strumenti nel diagramma (posizionandoli all'esterno dei limiti del sistema).  
+2. Trascinare **attori** dalla casella degli strumenti nel diagramma (posizionandoli all'esterno dei limiti del sistema).  
   
-    -   Gli attori rappresentano classi di utenti, organizzazioni e sistemi esterni che interagiscono con il sistema.  
+    - Gli attori rappresentano classi di utenti, organizzazioni e sistemi esterni che interagiscono con il sistema.  
   
-    -   Rinominarli. Ad esempio: **Agenzia di cliente, ristorante, carta di credito.**  
+    - Rinominarli. Ad esempio: **Agenzia di cliente, ristorante, carta di credito.**  
   
-3.  Trascinare **casi d'uso** dalla casella degli strumenti sui sistemi appropriati.  
+3. Trascinare **casi d'uso** dalla casella degli strumenti sui sistemi appropriati.  
   
-    -   I casi di utilizzo rappresentano le attività che gli attori eseguono con l'aiuto del sistema.  
+    - I casi di utilizzo rappresentano le attività che gli attori eseguono con l'aiuto del sistema.  
   
-    -   Rinominarli usando titoli che gli attori stessi potrebbero comprendere. Non usare i titoli correlati al codice. Ad esempio: **Ordinare pasto, pagamento pasto, recapitare pasto**.  
+    - Rinominarli usando titoli che gli attori stessi potrebbero comprendere. Non usare i titoli correlati al codice. Ad esempio: **Ordinare pasto, pagamento pasto, recapitare pasto**.  
   
-    -   Iniziare con le transazioni principali, ad esempio **Ordinazione pasto**, lasciando finché successive interazioni più piccole, ad esempio **voce di Menu selezionare**.  
+    - Iniziare con le transazioni principali, ad esempio **Ordinazione pasto**, lasciando finché successive interazioni più piccole, ad esempio **voce di Menu selezionare**.  
   
-    -   Inserire ogni caso di utilizzo nel sistema o sottosistema principale che lo supporta (ignorando tutti gli aspetti o i componenti coinvolti unicamente nella connessione all'utente).  
+    - Inserire ogni caso di utilizzo nel sistema o sottosistema principale che lo supporta (ignorando tutti gli aspetti o i componenti coinvolti unicamente nella connessione all'utente).  
   
-    -   È possibile creare un caso di utilizzo al di fuori del limite per mostrare che non è supportato dal sistema, ad esempio in una particolare versione del sistema.  
+    - È possibile creare un caso di utilizzo al di fuori del limite per mostrare che non è supportato dal sistema, ad esempio in una particolare versione del sistema.  
   
-4.  Fare clic su **Association** nella casella degli strumenti, quindi un caso d'uso e quindi un attore che fa parte del caso d'uso. Collegare ogni attore ai relativi casi di utilizzo in questo modo.  
+4. Fare clic su **Association** nella casella degli strumenti, quindi un caso d'uso e quindi un attore che fa parte del caso d'uso. Collegare ogni attore ai relativi casi di utilizzo in questo modo.  
   
-5.  Case struttura l'uso con il **inclusione**, **Estendi** e **generalizzazione** relazioni. Per creare ciascuno di questi collegamenti, fare clic sullo strumento, poi sul caso di utilizzo di origine e quindi sulla destinazione. Vedere la sezione seguente intitolata [strutturazione dei casi d'uso](#Structuring).  
+5. Case struttura l'uso con il **inclusione**, **Estendi** e **generalizzazione** relazioni. Per creare ciascuno di questi collegamenti, fare clic sullo strumento, poi sul caso di utilizzo di origine e quindi sulla destinazione. Vedere la sezione seguente intitolata [strutturazione dei casi d'uso](#Structuring).  
   
-6.  Vengono descritti i casi di utilizzo in modo più dettagliato. Vedere la sezione seguente intitolata [casi d'uso che descrive in dettaglio](#Details).  
+6. Vengono descritti i casi di utilizzo in modo più dettagliato. Vedere la sezione seguente intitolata [casi d'uso che descrive in dettaglio](#Details).  
   
-7.  Creare diagrammi separati per concentrarsi su sottosistemi o gruppi diversi di casi di utilizzo correlati. Tutti i diagrammi in un progetto di modellazione sono viste dello stesso modello.  
+7. Creare diagrammi separati per concentrarsi su sottosistemi o gruppi diversi di casi di utilizzo correlati. Tutti i diagrammi in un progetto di modellazione sono viste dello stesso modello.  
   
-##  <a name="Actors"></a> Creazione di attori e casi d'uso  
+## <a name="Actors"></a> Creazione di attori e casi d'uso  
  Lo scopo principale di un diagramma caso di utilizzo è mostrare che interagisce con il sistema e gli obiettivi principali raggiunti.  
   
--   Creare **attori** per rappresentare le classi di persone, organizzazioni, altri sistemi, software o dispositivi che interagiscono con il sistema o sottosistema.  
+- Creare **attori** per rappresentare le classi di persone, organizzazioni, altri sistemi, software o dispositivi che interagiscono con il sistema o sottosistema.  
   
-    -   Per informazioni su come creare attori e altri elementi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+    - Per informazioni su come creare attori e altri elementi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
-    -   Per ogni set distinto di obiettivi, identificare gli attori in base al tipo o al ruolo, anche se le persone fisiche o le entità potrebbero essere le stesse. Ad esempio, Ristorante e Cliente sono attori separati, anche se un dipendente del ristorante potrebbe talvolta essere un cliente.  
+    - Per ogni set distinto di obiettivi, identificare gli attori in base al tipo o al ruolo, anche se le persone fisiche o le entità potrebbero essere le stesse. Ad esempio, Ristorante e Cliente sono attori separati, anche se un dipendente del ristorante potrebbe talvolta essere un cliente.  
   
--   Creare **casi d'uso** per ognuno degli obiettivi che ogni attore cerca di raggiungere con il sistema.  
+- Creare **casi d'uso** per ognuno degli obiettivi che ogni attore cerca di raggiungere con il sistema.  
   
-    -   Denominare e descrivere i casi di utilizzo con parole che l'attore è in grado di comprendere, anziché termini di implementazione.  
+    - Denominare e descrivere i casi di utilizzo con parole che l'attore è in grado di comprendere, anziché termini di implementazione.  
   
--   Usare **associazioni** per collegare gli attori ai casi d'uso.  
+- Usare **associazioni** per collegare gli attori ai casi d'uso.  
   
 ### <a name="inheritance-between-actors"></a>Ereditarietà tra attori  
  ![Diagramma caso d'uso che mostra l'ereditarietà](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")  
@@ -140,19 +140,19 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 ##### <a name="to-change-the-appearance-of-an-actor"></a>Per modificare l'aspetto di un attore  
   
-1.  Fare doppio clic dell'attore e quindi fare clic su **proprietà**.  
+1. Fare doppio clic dell'attore e quindi fare clic su **proprietà**.  
   
      La finestra **Proprietà** verrà visualizzata.  
   
-2.  Impostare il **percorso dell'immagine** proprietà al percorso del file di immagine.  
+2. Impostare il **percorso dell'immagine** proprietà al percorso del file di immagine.  
   
-    -   È possibile usare uno dei diversi formati di immagine, tra cui gif, jpg e bmp.  
+    - È possibile usare uno dei diversi formati di immagine, tra cui gif, jpg e bmp.  
   
-    -   Usare un file incluso nel controllo del codice sorgente di una soluzione o un progetto in modo che sia ancora disponibile quando la soluzione viene spostata o copiata.  
+    - Usare un file incluso nel controllo del codice sorgente di una soluzione o un progetto in modo che sia ancora disponibile quando la soluzione viene spostata o copiata.  
   
-3.  Per replicare questa visualizzazione in altri diagrammi uso di utilizzo, copiare l'attore e incollarlo in un altro diagramma.  
+3. Per replicare questa visualizzazione in altri diagrammi uso di utilizzo, copiare l'attore e incollarlo in un altro diagramma.  
   
-    -   La modifica dell'immagine viene applicata solo alla visualizzazione di un diagramma specifico. Non si applica all'elemento del modello sottostante. Se si trascina l'attore da Esplora modelli UML in un altro diagramma, verrà visualizzato come la figura stilizzata standard.  
+    - La modifica dell'immagine viene applicata solo alla visualizzazione di un diagramma specifico. Non si applica all'elemento del modello sottostante. Se si trascina l'attore da Esplora modelli UML in un altro diagramma, verrà visualizzato come la figura stilizzata standard.  
   
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Molteplicità tra attori e casi di utilizzo  
  L'associazione tra un attore e un caso d'uso può mostrare una *molteplicità* a ogni estremità.  
@@ -202,22 +202,22 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Uso di un attore o un caso di utilizzo in più diagrammi  
  È possibile visualizzare gli stessi attori e casi di utilizzo in diversi diagrammi. Ad esempio:  
   
--   È possibile descrivere in diversi diagrammi caso di utilizzo diversi in cui un attore è coinvolto.  
+- È possibile descrivere in diversi diagrammi caso di utilizzo diversi in cui un attore è coinvolto.  
   
--   È possibile usare un diagramma per mostrare gli attori e i sottosistemi a cui è associato un caso di utilizzo e usare un altro diagramma per visualizzare la struttura del caso di utilizzo in casi di utilizzo inclusi ed estesi.  
+- È possibile usare un diagramma per mostrare gli attori e i sottosistemi a cui è associato un caso di utilizzo e usare un altro diagramma per visualizzare la struttura del caso di utilizzo in casi di utilizzo inclusi ed estesi.  
   
 ##### <a name="to-show-the-same-actor-or-use-case-on-different-diagrams"></a>Per visualizzare lo stesso attore o caso di utilizzo in diagrammi diversi  
   
-1.  Creare l'attore o un caso di utilizzo in un diagramma.  
+1. Creare l'attore o un caso di utilizzo in un diagramma.  
   
-2.  Creare un altro diagramma caso di utilizzo.  
+2. Creare un altro diagramma caso di utilizzo.  
   
-3.  Trascinare un attore o caso d'uso **Esplora modelli** nel nuovo diagramma.  
+3. Trascinare un attore o caso d'uso **Esplora modelli** nel nuovo diagramma.  
   
     > [!NOTE]
     >  Se si inserisce nel nuovo diagramma un attore e un caso di utilizzo già associati, l'associazione tra di loro verrà visualizzata automaticamente nel nuovo diagramma.  
   
-##  <a name="Details"></a> Casi d'uso che descrive in dettaglio  
+## <a name="Details"></a> Casi d'uso che descrive in dettaglio  
  Un caso di utilizzo rappresenta:  
   
 - Un obiettivo di un attore nell'utilizzo del sistema, ad esempio **acquista un pasto**; e  
@@ -230,9 +230,9 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 - Collegare il caso di utilizzo a un altro diagramma o ai diagrammi nel progetto.  
   
-  -   Un diagramma di attività consente di illustrare un processo più complesso se sono presenti cicli, diramazioni e thread paralleli. Inoltre è possibile visualizzare il flusso di dati tra le parti del processo. Per altre informazioni, vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+  - Un diagramma di attività consente di illustrare un processo più complesso se sono presenti cicli, diramazioni e thread paralleli. Inoltre è possibile visualizzare il flusso di dati tra le parti del processo. Per altre informazioni, vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Un diagramma di sequenza consente di illustrare una serie complessa di interazioni tra diversi attori. È possibile anche usarlo per mostrare cosa succede all'interno del sistema in risposta a ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+  - Un diagramma di sequenza consente di illustrare una serie complessa di interazioni tra diversi attori. È possibile anche usarlo per mostrare cosa succede all'interno del sistema in risposta a ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Collegare il caso di utilizzo a una pagina, una sezione o un paragrafo OneNote in cui viene descritto in dettaglio il caso di utilizzo.  
   
@@ -240,41 +240,41 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Per collegare un caso di utilizzo a un diagramma o a un file nella stessa soluzione  
   
-1.  Disegnare un diagramma, ad esempio un diagramma di sequenza o di attività, per illustrare uno scenario del caso di utilizzo.  
+1. Disegnare un diagramma, ad esempio un diagramma di sequenza o di attività, per illustrare uno scenario del caso di utilizzo.  
   
-2.  Tornare al diagramma caso di utilizzo.  
+2. Tornare al diagramma caso di utilizzo.  
   
-3.  Trascinare il diagramma o il file da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
+3. Trascinare il diagramma o il file da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
   
-4.  Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
+4. Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
   
 #### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Per eseguire il collegamento a un file di soluzione, ad esempio un documento di Word o una presentazione di PowerPoint  
   
-1.  Scrivere un documento che usa testo, schermate e così via per descrivere lo scenario del caso di utilizzo.  
+1. Scrivere un documento che usa testo, schermate e così via per descrivere lo scenario del caso di utilizzo.  
   
-2.  Aggiungere il documento alla soluzione.  
+2. Aggiungere il documento alla soluzione.  
   
-    1.  Spostare il documento di Word nella stessa cartella di Windows della soluzione.  
+    1. Spostare il documento di Word nella stessa cartella di Windows della soluzione.  
   
-    2.  In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **elemento esistente**.  
+    2. In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **elemento esistente**.  
   
-    3.  Passare al documento di Word e fare clic su **Add**.  
+    3. Passare al documento di Word e fare clic su **Add**.  
   
          Il documento di Word viene visualizzato in una cartella della soluzione in Esplora soluzioni.  
   
-3.  Trascinare il documento di Word da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
+3. Trascinare il documento di Word da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
   
      Viene visualizzato un nuovo elemento.  
   
-4.  Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
+4. Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
   
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Per eseguire il collegamento a un documento condiviso, un elemento OneNote o una pagina Web  
   
-1.  Ottenere l'URL dell'elemento condiviso. Può trattarsi, ad esempio, un percorso che inizia file rete»\\\\', o una pagina web o URL di Sharepoint inizia con 'http://' o un collegamento a una sezione, pagina o paragrafo iniziale ' onenote:'.  
+1. Ottenere l'URL dell'elemento condiviso. Può trattarsi, ad esempio, un percorso che inizia file rete»\\\\', o una pagina web o URL di Sharepoint inizia con 'http://' o un collegamento a una sezione, pagina o paragrafo iniziale ' onenote:'.  
   
-2.  Nella casella degli strumenti, fare clic su **artefatto** e quindi fare clic nel diagramma caso di utilizzo.  
+2. Nella casella degli strumenti, fare clic su **artefatto** e quindi fare clic nel diagramma caso di utilizzo.  
   
-3.  Con il nuovo elemento selezionato, digitare o incollare l'URL nel **Hyperlink** proprietà.  
+3. Con il nuovo elemento selezionato, digitare o incollare l'URL nel **Hyperlink** proprietà.  
   
 > [!NOTE]
 >  Fare doppio clic su un elemento per aprire il diagramma o il documento a cui è collegato.  
@@ -284,13 +284,13 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  In questo modo è possibile:  
   
--   Descrivere il caso di utilizzo nell'elemento di lavoro collegato. In particolare, se il progetto usa il modello di processo formale di Visual Studio, è possibile collegarsi a un elemento di lavoro del caso di utilizzo. Questo tipo di elemento di lavoro fornisce campi per descrivere gli obiettivi e scenari del caso di utilizzo.  
+- Descrivere il caso di utilizzo nell'elemento di lavoro collegato. In particolare, se il progetto usa il modello di processo formale di Visual Studio, è possibile collegarsi a un elemento di lavoro del caso di utilizzo. Questo tipo di elemento di lavoro fornisce campi per descrivere gli obiettivi e scenari del caso di utilizzo.  
   
--   Collegare i test case al caso di utilizzo in modo che sia possibile ottenere report sulla misura in cui un codice in fase di sviluppo implementa il caso di utilizzo.  
+- Collegare i test case al caso di utilizzo in modo che sia possibile ottenere report sulla misura in cui un codice in fase di sviluppo implementa il caso di utilizzo.  
   
--   Collegare le attività al caso di utilizzo in modo da consentire il monitoraggio dell'avanzamento del lavoro di sviluppo.  
+- Collegare le attività al caso di utilizzo in modo da consentire il monitoraggio dell'avanzamento del lavoro di sviluppo.  
   
-##  <a name="Structuring"></a> Strutturazione di casi d'uso  
+## <a name="Structuring"></a> Strutturazione di casi d'uso  
  È consigliabile provare a descrivere il comportamento del sistema con pochi casi di utilizzo principali. Ogni caso di utilizzo di grandi dimensioni definisce un obiettivo principale che un attore raggiunge, ad esempio l'acquisto di un prodotto oppure, dal punto di vista del fornitore, l'offerta di prodotti in vendita.  
   
  Dopo aver chiarito questi obiettivi, è possibile passare informazioni più dettagliate su come raggiungere ogni obiettivo e sulle variazioni negli obiettivi di base.  
@@ -299,13 +299,13 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  È possibile riepilogare in un diagramma caso di utilizzo le relazioni tra i casi di utilizzo principali e più dettagliati. Le seguenti sezioni descrivono quanto segue:  
   
--   [Visualizzazione dei dettagli di un caso d'uso con Includi](#Include)  
+- [Visualizzazione dei dettagli di un caso d'uso con Includi](#Include)  
   
--   [Condivisione degli obiettivi con generalizzazione](#Inheritance)  
+- [Condivisione degli obiettivi con generalizzazione](#Inheritance)  
   
--   [Separazione di casi varianti con Estendi](#Extend)  
+- [Separazione di casi varianti con Estendi](#Extend)  
   
-###  <a name="Include"></a> Visualizzazione dei dettagli di un caso d'uso con Includi  
+### <a name="Include"></a> Visualizzazione dei dettagli di un caso d'uso con Includi  
  Usare un **inclusione** relazione per mostrare che un caso di utilizzo descrive alcuni dettagli di un altro. Nell'illustrazione **ordinare un pasto** include **pagare**, **dal Menu scegliere**, e **scegliere voce di Menu**. Ognuno dei casi di utilizzo più dettagliati inclusi è un passaggio che l'attore o gli attori dovrebbero poter eseguire per raggiungere l'obiettivo complessivo del caso di utilizzo incluso. La freccia deve puntare al caso di utilizzo incluso più dettagliato.  
   
 > [!CAUTION]
@@ -319,11 +319,11 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  La separazione di casi di utilizzo in parti di inclusione e incluse è utile per realizzare gli obiettivi seguenti:  
   
--   Strutturare le descrizioni dei casi di utilizzo in diversi livelli di dettaglio.  
+- Strutturare le descrizioni dei casi di utilizzo in diversi livelli di dettaglio.  
   
--   Evitare di ripetere scenari condivisi in diversi casi di utilizzo.  
+- Evitare di ripetere scenari condivisi in diversi casi di utilizzo.  
   
-####  <a name="Steps"></a> Definire l'ordine dei passaggi dettagliati  
+#### <a name="Steps"></a> Definire l'ordine dei passaggi dettagliati  
  Il diagramma caso di utilizzo non indica l'ordine in cui è necessario eseguire i passaggi più dettagliati, né se ognuno di essi è sempre necessario.  
   
  Per rendere l'ordine di cancellare i passaggi, è possibile usare un **artefatto** per allegare un documento separato di, tra cui caso d'uso. Nell'esempio seguente viene riportato un diagramma di attività associato al caso di utilizzo di ordinazione di un pasto. In alternativa, è possibile usare un documento di testo contenente un elenco di passaggi o una sequenza di schermate. Per altre informazioni, vedere [casi d'uso che descrive in dettaglio](#Details).  
@@ -338,7 +338,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
   ![Usare case passaggi illustrati nel diagramma di attività collegata](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
-###  <a name="Inheritance"></a> Condivisione degli obiettivi con generalizzazione  
+### <a name="Inheritance"></a> Condivisione degli obiettivi con generalizzazione  
  Usare una relazione generalizzazione per mostrare che un *specializzato* caso d'uso è un modo specifico per raggiungere gli obiettivi espressi da un altro *generali* caso d'uso. La freccia aperta deve puntare al caso di utilizzo più generale.  
   
  ![Utilizzare i case che mostra la relazione generalizzazione](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")  
@@ -354,21 +354,21 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 ##### <a name="to-refactor-common-goals-from-two-or-more-use-cases"></a>Per effettuare il refactoring di obiettivi comuni da due o più casi di utilizzo  
   
-1.  Creare e denominare il caso di utilizzo generale.  
+1. Creare e denominare il caso di utilizzo generale.  
   
-2.  Creare un **generalizzazione** relazione con la freccia che punta al nuovo caso di utilizzo generale.  
+2. Creare un **generalizzazione** relazione con la freccia che punta al nuovo caso di utilizzo generale.  
   
-    1.  Fare clic su **generalizzazione** della casella degli strumenti.  
+    1. Fare clic su **generalizzazione** della casella degli strumenti.  
   
-    2.  Fare clic su un caso di utilizzo specializzato (**pagare tramite carta di credito** nell'esempio).  
+    2. Fare clic su un caso di utilizzo specializzato (**pagare tramite carta di credito** nell'esempio).  
   
-    3.  Fare clic sul caso di utilizzo generale (**pagare** nell'esempio).  
+    3. Fare clic sul caso di utilizzo generale (**pagare** nell'esempio).  
   
-3.  Se sono stati descritti gli obiettivi per i casi di utilizzo specializzati, spostare le parti comuni nella descrizione del caso di utilizzo generale.  
+3. Se sono stati descritti gli obiettivi per i casi di utilizzo specializzati, spostare le parti comuni nella descrizione del caso di utilizzo generale.  
   
-4.  È possibile spostare gli attori condivisi tra i casi di utilizzo specializzati al caso di utilizzo generale.  
+4. È possibile spostare gli attori condivisi tra i casi di utilizzo specializzati al caso di utilizzo generale.  
   
-###  <a name="Extend"></a> Separazione di casi varianti con Estendi  
+### <a name="Extend"></a> Separazione di casi varianti con Estendi  
  Usare e un collegamento Estendi per indicare che un caso di utilizzo può aggiungere funzionalità a un altro caso di utilizzo in determinate circostanze. La freccia deve puntare al caso di utilizzo esteso principale.  
   
  ![Un caso di utilizzo estende un altro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
@@ -384,11 +384,11 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 2. Creare un **Estendi** relazione con la freccia rivolta al caso di utilizzo esteso.  
   
-   1.  Fare clic su **Estendi** della casella degli strumenti.  
+   1. Fare clic su **Estendi** della casella degli strumenti.  
   
-   2.  Fare clic sul caso di utilizzo di estensione (**Registra nuovo utente** nell'esempio).  
+   2. Fare clic sul caso di utilizzo di estensione (**Registra nuovo utente** nell'esempio).  
   
-   3.  Fare clic sul caso di utilizzo esteso (**account di accesso** nell'esempio).  
+   3. Fare clic sul caso di utilizzo esteso (**account di accesso** nell'esempio).  
   
        > [!NOTE]
        >  Evitare di creare un ciclo di relazioni Estendi nel diagramma. Non è corretto che un caso di utilizzo sia un'estensione di se stesso.  
@@ -401,13 +401,13 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
    La separazione delle estensioni può risultare utile per descrivere tali situazioni:  
   
--   Sono presenti attori aggiuntivi che sono coinvolti solo nel caso di utilizzo di estensione. Ad esempio, un amministratore deve approvare una registrazione di un cliente sul sito Web.  
+- Sono presenti attori aggiuntivi che sono coinvolti solo nel caso di utilizzo di estensione. Ad esempio, un amministratore deve approvare una registrazione di un cliente sul sito Web.  
   
--   Un sottosistema separato gestirà il caso di utilizzo di estensione.  
+- Un sottosistema separato gestirà il caso di utilizzo di estensione.  
   
--   Questa estensione sarà disponibile solo in versioni specifiche del sistema. È possibile visualizzare ogni versione come sottosistema separato nel diagramma caso di utilizzo.  
+- Questa estensione sarà disponibile solo in versioni specifiche del sistema. È possibile visualizzare ogni versione come sottosistema separato nel diagramma caso di utilizzo.  
   
-##  <a name="Subsystems"></a> Usando i limiti del sottosistema  
+## <a name="Subsystems"></a> Usando i limiti del sottosistema  
  Usare un limite del sottosistema per mostrare quali casi di utilizzo sono compresi nell'ambito del sistema.  
   
 #### <a name="to-draw-a-subsystem-boundary"></a>Per creare un limite del sottosistema  

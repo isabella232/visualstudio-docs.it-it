@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069536"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Per ottenere informazioni sulla stringa di query da un'applicazione ClickOnce  
   
-1.  Includere il codice seguente nel progetto. Affinché questo codice funzioni, è necessario avere un riferimento a System.Web e aggiungere le istruzioni `using` o `Imports` per System.Web, System.Collections.Specialized e System.Deployment.Application.  
+1. Includere il codice seguente nel progetto. Affinché questo codice funzioni, è necessario avere un riferimento a System.Web e aggiungere le istruzioni `using` o `Imports` per System.Web, System.Collections.Specialized e System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Chiamare la funzione definita in precedenza per recuperare un <xref:System.Collections.DictionaryBase.Dictionary%2A> dei parametri della stringa di query, indicizzati per nome.  
+2. Chiamare la funzione definita in precedenza per recuperare un <xref:System.Collections.DictionaryBase.Dictionary%2A> dei parametri della stringa di query, indicizzati per nome.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Per abilitare la stringa di query passando un'applicazione ClickOnce con MageUI.exe  
   
-1.  Aprire il prompt dei comandi .NET e digitare:  
+1. Aprire il prompt dei comandi .NET e digitare:  
   
     ```  
     MageUI  
     ```  
   
-2.  Nel menu **File** selezionare **Apri**e aprire il manifesto di distribuzione per l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , che è il file con l'estensione `.application` .  
+2. Nel menu **File** selezionare **Apri**e aprire il manifesto di distribuzione per l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , che è il file con l'estensione `.application` .  
   
-3.  Selezionare il riquadro **Opzioni di distribuzione** nella finestra di navigazione a sinistra e selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** .  
+3. Selezionare il riquadro **Opzioni di distribuzione** nella finestra di navigazione a sinistra e selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** .  
   
-4.  Nel menu **File** selezionare **Salva**.  
+4. Nel menu **File** selezionare **Salva**.  
   
 > [!NOTE]
 >  In alternativa è possibile abilitare la stringa di query passando [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** , a cui si accede aprendo **Proprietà progetto**selezionando la scheda **Pubblica** e facendo clic sul pulsante **Opzioni** e quindi selezionando **Manifesti**.  

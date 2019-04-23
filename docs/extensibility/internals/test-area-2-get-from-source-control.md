@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067183"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Area di test 2: Ottenere dal controllo del codice sorgente
+# <a name="test-area-2-get-from-source-control"></a>Area di test 2: Caricare dal controllo del codice sorgente
 Questa area di test riguarda casi di test per il recupero di elementi dall'archivio delle versioni tramite il comando Get. Questi test case possono essere applicati a locali e ai progetti Web.
 
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu
@@ -26,13 +26,13 @@ Questa area di test riguarda casi di test per il recupero di elementi dall'archi
 
 ##### <a name="get-latest-version"></a>Ottenere la versione più recente:
 
--   **File**, **controllo del codice sorgente**, **Leggi ultima versione**.
+- **File**, **controllo del codice sorgente**, **Leggi ultima versione**.
 
--   **File**, **Leggi ultima versione**.
+- **File**, **Leggi ultima versione**.
 
--   Menu di scelta rapida **Leggi ultima versione**.
+- Menu di scelta rapida **Leggi ultima versione**.
 
--   Ottieni: **File**, **controllo del codice sorgente**, **ottenere**.
+- Ottieni: **File**, **controllo del codice sorgente**, **ottenere**.
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 

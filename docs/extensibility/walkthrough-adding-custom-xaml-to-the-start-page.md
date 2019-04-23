@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072176"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procedura dettagliata: Aggiungere XAML personalizzato nella pagina iniziale
 
@@ -25,11 +25,11 @@ Questa procedura dettagliata viene illustrato come creare una pagina di avvio pe
 
 ## <a name="add-custom-xaml"></a>Aggiungere XAML personalizzato
 
-1.  Creare una pagina iniziale, seguendo le istruzioni in [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).
+1. Creare una pagina iniziale, seguendo le istruzioni in [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).
 
-2.  Nel *MainWindow. XAML* del file, trovare il \<griglia > sezione.
+2. Nel *MainWindow. XAML* del file, trovare il \<griglia > sezione.
 
-3.  Aggiungere un \<TabControl > elemento e un \<TabItem > all'interno di \< griglia > elemento, come illustrato nell'esempio seguente.
+3. Aggiungere un \<TabControl > elemento e un \<TabItem > all'interno di \< griglia > elemento, come illustrato nell'esempio seguente.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ Questa procedura dettagliata viene illustrato come creare una pagina di avvio pe
     </Grid>
     ```
 
-4.  Aggiungere una seconda \<TabItem >, con un \<pulsante > elemento che si apre un nuovo progetto:
+4. Aggiungere una seconda \<TabItem >, con un \<pulsante > elemento che si apre un nuovo progetto:
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ Questa procedura dettagliata viene illustrato come creare una pagina di avvio pe
 
 ## <a name="test-the-custom-start-page"></a>Testare la pagina iniziale personalizzata
 
-1.  Premere **F5**.
+1. Premere **F5**.
 
      Si apre l'istanza sperimentale di Visual Studio, con la pagina iniziale personalizzata installata ma non è selezionata.
 
-2.  Nell'istanza sperimentale di Visual Studio, aprire il **Strumenti/opzioni / ambiente** pagina.
+2. Nell'istanza sperimentale di Visual Studio, aprire il **Strumenti/opzioni / ambiente** pagina.
 
-3.  Selezionare **avvio**. Nel **Personalizza pagina iniziale** elenco, selezionare la *XAML* file e fare clic su **OK**.
+3. Selezionare **avvio**. Nel **Personalizza pagina iniziale** elenco, selezionare la *XAML* file e fare clic su **OK**.
 
-4.  Scegliere **Pagina iniziale** dal menu **Visualizza**.
+4. Scegliere **Pagina iniziale** dal menu **Visualizza**.
 
-5.  Scegliere il **Bing** scheda.
+5. Scegliere il **Bing** scheda.
 
      Si verrà visualizzata una pagina web di Bing.
 
-6.  Scegliere il **MyButton** scheda.
+6. Scegliere il **MyButton** scheda.
 
      Dovrebbe essere un **MyProject** button, che consente di visualizzare i **nuovo progetto** finestra di dialogo.
 
-7.  Chiudere l'istanza sperimentale.
+7. Chiudere l'istanza sperimentale.
 
 Per applicare la pagina iniziale personalizzata, in **degli strumenti** > **opzioni** > **ambiente**selezionare **avvio**. Nel **Personalizza pagina iniziale** elenco, selezionare la *XAML* file e fare clic su **OK**.
 

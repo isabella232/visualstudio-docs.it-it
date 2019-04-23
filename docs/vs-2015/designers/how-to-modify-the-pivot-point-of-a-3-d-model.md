@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071785"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedura: Modificare il punto di perno di un modello 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Questo documento illustra come usare l'editor dei modelli per modificare il *pun
   
  Questo documento illustra questa attività:  
   
--   Modifica del punto di perno di un oggetto  
+- Modifica del punto di perno di un oggetto  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>Modifica del punto di perno di un modello 3D  
  È possibile ridefinire l'origine di un modello 3D modificandone il punto di perno.  

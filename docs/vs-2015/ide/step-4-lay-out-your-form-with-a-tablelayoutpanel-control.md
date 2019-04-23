@@ -9,30 +9,30 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070251"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: creare il layout del form con un controllo TableLayoutPanel
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLayoutPanel consente di allineare in modo corretto i controlli nel form che si aggiungerà successivamente.  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Esercitazione 1: creare un visualizzatore di immagini in Visual Basic - Video 2) o [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Esercitazione 1: creare un visualizzatore di immagini in C# - Video 2). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
+ ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo")per una versione video di questo argomento, vedere [esercitazione 1: Creare un Visualizzatore immagini in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) o [esercitazione 1: Creare un Visualizzatore immagini in C# -Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Per creare il layout del form con un controllo TableLayoutPanel  
   
-1.  Sul lato sinistro dell'IDE di Visual Studio individuare la scheda **Casella degli strumenti**. Scegliere la scheda **Casella degli strumenti**. Verrà visualizzata la casella degli strumenti. In alternativa, nella barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.  
+1. Sul lato sinistro dell'IDE di Visual Studio individuare la scheda **Casella degli strumenti**. Scegliere la scheda **Casella degli strumenti**. Verrà visualizzata la casella degli strumenti. In alternativa, nella barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.  
   
-2.  Scegliere il piccolo simbolo del triangolo accanto al gruppo **Contenitori** per aprirlo, come mostrato nell'immagine seguente.  
+2. Scegliere il piccolo simbolo del triangolo accanto al gruppo **Contenitori** per aprirlo, come mostrato nell'immagine seguente.  
   
      ![Gruppo contenitori](../ide/media/express-toolbox.png "Express_Toolbox")  
 Gruppo di contenitori  
   
-3.  È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo `TableLayoutPanel` nella casella degli strumenti. In alternativa, è possibile trascinare il controllo dalla casella degli strumenti al form. Quando si esegue questa operazione, l'IDE aggiunge un controllo `TableLayoutPanel` al form, come mostrato nell'immagine seguente.  
+3. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo `TableLayoutPanel` nella casella degli strumenti. In alternativa, è possibile trascinare il controllo dalla casella degli strumenti al form. Quando si esegue questa operazione, l'IDE aggiunge un controllo `TableLayoutPanel` al form, come mostrato nell'immagine seguente.  
   
      ![Controllo TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout")  
 Controllo TableLayoutPanel  
@@ -45,26 +45,26 @@ Controllo TableLayoutPanel
      ![Icona della puntina da disegno](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")  
 Icona della puntina da disegno  
   
-4.  Verificare che **TableLayoutPanel** sia selezionato facendo clic su di esso. È possibile verificare il controllo selezionato osservando l'elenco a discesa nella parte superiore della finestra **Proprietà**, come mostrato nell'immagine seguente.  
+4. Verificare che **TableLayoutPanel** sia selezionato facendo clic su di esso. È possibile verificare il controllo selezionato osservando l'elenco a discesa nella parte superiore della finestra **Proprietà**, come mostrato nell'immagine seguente.  
   
      ![Finestra Proprietà con il controllo TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")  
 Finestra Proprietà con il controllo TableLayoutPanel  
   
-5.  Scegliere il pulsante **Alfabetico** nella barra degli strumenti nella finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene visualizzato in ordine alfabetico per semplificare l'individuazione delle proprietà in questa esercitazione.  
+5. Scegliere il pulsante **Alfabetico** nella barra degli strumenti nella finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene visualizzato in ordine alfabetico per semplificare l'individuazione delle proprietà in questa esercitazione.  
   
-6.  Il selettore dei controlli è un elenco a discesa che si trova nella parte superiore della finestra **Proprietà**. In questo esempio è selezionato un controllo denominato `tableLayoutPanel1`. È possibile selezionare i controlli scegliendo un'area in Progettazione Windows Form o selezionandoli dal selettore dei controlli. Dopo aver selezionato `TableLayoutPanel`, individuare la proprietà **Dock** e scegliere **Ancora** che dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Fare clic sulla freccia, quindi selezionare il pulsante **Riempimento** (il pulsante grande al centro), come mostrato nell'immagine seguente.  
+6. Il selettore dei controlli è un elenco a discesa che si trova nella parte superiore della finestra **Proprietà**. In questo esempio è selezionato un controllo denominato `tableLayoutPanel1`. È possibile selezionare i controlli scegliendo un'area in Progettazione Windows Form o selezionandoli dal selettore dei controlli. Dopo aver selezionato `TableLayoutPanel`, individuare la proprietà **Dock** e scegliere **Ancora** che dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Fare clic sulla freccia, quindi selezionare il pulsante **Riempimento** (il pulsante grande al centro), come mostrato nell'immagine seguente.  
   
      ![Finestra Proprietà con Fill selezionato](../ide/media/express-docktable.png "Express_DockTable")  
 Finestra Proprietà con Fill selezionato  
   
      Il termine *ancoraggio* in Visual Studio indica l'associazione di una finestra un'altra finestra o area nell'IDE. La finestra Proprietà può essere ad esempio non ancorata, vale a dire non è collegata ed è mobile all'interno di Visual Studio, oppure può essere ancorata a **Esplora soluzioni**.  
   
-7.  Dopo aver impostato la proprietà **Dock** di TableLayoutPanel su **Fill**, il pannello riempie l'intero form. Se si ridimensiona nuovamente il form, TableLayoutPanel resta ancorato e viene ridimensionato correttamente.  
+7. Dopo aver impostato la proprietà **Dock** di TableLayoutPanel su **Fill**, il pannello riempie l'intero form. Se si ridimensiona nuovamente il form, TableLayoutPanel resta ancorato e viene ridimensionato correttamente.  
   
     > [!NOTE]
     >  Un controllo TableLayoutPanel funziona come una tabella di Microsoft Office Word: dispone di righe e colonne e una singola cella può estendersi su più righe e colonne. Ogni cella può contenere un controllo (come un pulsante, una casella di controllo o un'etichetta). TableLayoutPanel avrà un controllo `PictureBox` che si estende sull'intera riga superiore, un controllo `CheckBox` nella cella inferiore sinistra e quattro controlli `Button` nella cella inferiore destra.  
   
-8.  Attualmente, TableLayoutPanel dispone di due righe delle stesse dimensioni e di due colonne delle stesse dimensioni. È necessario ridimensionarle in modo che la riga superiore e la colonna a destra siano entrambe molto più grandi. In Progettazione Windows Form selezionare il controllo TableLayoutPanel. Nell'angolo superiore destro si trova un piccolo pulsante a forma di triangolo nero, illustrato di seguito.  
+8. Attualmente, TableLayoutPanel dispone di due righe delle stesse dimensioni e di due colonne delle stesse dimensioni. È necessario ridimensionarle in modo che la riga superiore e la colonna a destra siano entrambe molto più grandi. In Progettazione Windows Form selezionare il controllo TableLayoutPanel. Nell'angolo superiore destro si trova un piccolo pulsante a forma di triangolo nero, illustrato di seguito.  
   
      ![Pulsante triangolare](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle")  
 Pulsante triangolare  
@@ -90,6 +90,6 @@ Form1 con TableLayoutPanel ridimensionato
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 5: Aggiungere controlli al Form](../ide/step-5-add-controls-to-your-form.md).  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: impostare le proprietà del form](../ide/step-3-set-your-form-properties.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del Form](../ide/step-3-set-your-form-properties.md).

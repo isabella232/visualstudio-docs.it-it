@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071278"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struttura VSPackage (VSPackage di controllo del codice sorgente)
 
@@ -28,23 +28,23 @@ Un pacchetto VSPackage dichiara le voci di menu e viene stabilito uno stato dell
 
 Un pacchetto VSPackage di controllo di origine è integrato in Visual Studio. La semantica di VSPackage include:
 
--   Interfaccia da implementare poiché è un pacchetto VSPackage (il `IVsPackage` interfaccia)
+- Interfaccia da implementare poiché è un pacchetto VSPackage (il `IVsPackage` interfaccia)
 
--   Implementazione dei comandi dell'interfaccia utente (file con estensione vsct e l'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia)
+- Implementazione dei comandi dell'interfaccia utente (file con estensione vsct e l'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia)
 
--   Registrazione del pacchetto VSPackage con Visual Studio.
+- Registrazione del pacchetto VSPackage con Visual Studio.
 
 Il controllo del codice sorgente VSPackage deve comunicare con queste altre entità di Visual Studio:
 
--   Progetti
+- Progetti
 
--   Editor
+- Editor
 
--   Soluzioni
+- Soluzioni
 
--   WINDOWS
+- WINDOWS
 
--   La tabella documenti in esecuzione
+- La tabella documenti in esecuzione
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Servizi dell'ambiente Visual Studio che possono essere usati
 

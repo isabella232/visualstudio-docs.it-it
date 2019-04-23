@@ -11,12 +11,12 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068730"
 ---
 # <a name="test-area-4-check-in"></a>Area di test 4: Archiviare
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di
   
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune  
   
--   Vengono visualizzati i progetti e i file aggiunti a una soluzione o progetto incluso nel controllo del codice sorgente nel **Archivia** finestra di dialogo e il **archiviazioni in sospeso** finestra.  
+- Vengono visualizzati i progetti e i file aggiunti a una soluzione o progetto incluso nel controllo del codice sorgente nel **Archivia** finestra di dialogo e il **archiviazioni in sospeso** finestra.  
   
--   Dopo il check-in, gli elementi aggiunti vengono visualizzati nel controllo del codice sorgente.  
+- Dopo il check-in, gli elementi aggiunti vengono visualizzati nel controllo del codice sorgente.  
   
--   Dopo il check-in, gli elementi aggiornati sono versioni correttamente nell'archivio.  
+- Dopo il check-in, gli elementi aggiornati sono versioni correttamente nell'archivio.  
   
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'area di test di archiviazione.  

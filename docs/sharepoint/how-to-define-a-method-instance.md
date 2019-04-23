@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068496"
 ---
 # <a name="how-to-define-a-method-instance"></a>Procedura: Definire un'istanza del metodo
   Nel modello, è necessario definire almeno un'istanza di metodo per ogni metodo.
@@ -29,15 +29,15 @@ ms.locfileid: "56608010"
 
 ### <a name="to-define-a-method-instance"></a>Per definire un'istanza del metodo
 
-1.  Nel **Dettagli metodo BDC** finestra, espandere il nodo di un metodo e quindi espandere il **istanze** nodo.
+1. Nel **Dettagli metodo BDC** finestra, espandere il nodo di un metodo e quindi espandere il **istanze** nodo.
 
-2.  Nel **aggiungere un'istanza del metodo** casella di riepilogo **Crea istanza Finder**.
+2. Nel **aggiungere un'istanza del metodo** casella di riepilogo **Crea istanza Finder**.
 
      Verrà visualizzata una nuova istanza di metodo sotto il **istanze** nodo.
 
-3.  Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+3. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
 
-4.  Nel **proprietà** finestra, impostare le proprietà dell'istanza del metodo. Per altre informazioni su ogni proprietà, vedere [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. Nel **proprietà** finestra, impostare le proprietà dell'istanza del metodo. Per altre informazioni su ogni proprietà, vedere [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ca7b4254ac359158b9cf42600b28ef533372813
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071863"
 ---
 # <a name="link-model-elements-and-work-items"></a>Collegare elementi di modello ed elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,108 +63,108 @@ ms.locfileid: "58966603"
 > [!WARNING]
 >  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
--   [Connettersi a un progetto team](#ConnectTFS)  
+- [Connettersi a un progetto team](#ConnectTFS)  
   
--   [Collegare un elemento del modello a un nuovo elemento di lavoro](#LinkNew)  
+- [Collegare un elemento del modello a un nuovo elemento di lavoro](#LinkNew)  
   
--   [Collegare un elemento del modello a un elemento di lavoro esistente](#LinkExisting)  
+- [Collegare un elemento del modello a un elemento di lavoro esistente](#LinkExisting)  
   
--   [Visualizza elementi di lavoro collegato a un elemento del modello](#OpenWorkItem)  
+- [Visualizza elementi di lavoro collegato a un elemento del modello](#OpenWorkItem)  
   
--   [Visualizzare elementi del modello collegati a un elemento di lavoro](#ViewLinkedModels)  
+- [Visualizzare elementi del modello collegati a un elemento di lavoro](#ViewLinkedModels)  
   
--   [Eliminare collegamenti tra elementi del modello ed elementi di lavoro](#RemoveLinks)  
+- [Eliminare collegamenti tra elementi del modello ed elementi di lavoro](#RemoveLinks)  
   
--   [Risoluzione dei problemi](#Troubleshooting)  
+- [Risoluzione dei problemi](#Troubleshooting)  
   
-##  <a name="ConnectTFS"></a> Connettersi a un progetto team  
+## <a name="ConnectTFS"></a> Connettersi a un progetto team  
  Per creare, visualizzare o rimuove collegamenti, è necessario innanzitutto connettersi al progetto team.  
   
-1.  Nel menu **Team** scegliere **Gestione connessioni** per visualizzare la finestra Team Explorer.  
+1. Nel menu **Team** scegliere **Gestione connessioni** per visualizzare la finestra Team Explorer.  
   
-2.  Se non viene visualizzato il progetto corretto, in Team Explorer scegliere **Gestione connessioni** e quindi scegliere **Connessione al progetto team**. Scegliere i progetti corretti o il server se necessario.  
+2. Se non viene visualizzato il progetto corretto, in Team Explorer scegliere **Gestione connessioni** e quindi scegliere **Connessione al progetto team**. Scegliere i progetti corretti o il server se necessario.  
   
-3.  In **Team Explorer**scegliere il progetto in cui si desidera creare, collegare o visualizzare elementi di lavoro.  
+3. In **Team Explorer**scegliere il progetto in cui si desidera creare, collegare o visualizzare elementi di lavoro.  
   
-##  <a name="LinkNew"></a> Collegare un elemento del modello a un nuovo elemento di lavoro  
+## <a name="LinkNew"></a> Collegare un elemento del modello a un nuovo elemento di lavoro  
   
-1.  Verificare che si è connessi all'istanza di TFS che si desidera utilizzare.  
+1. Verificare che si è connessi all'istanza di TFS che si desidera utilizzare.  
   
-2.  Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello.  
+2. Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello.  
   
-3.  Scegliere **Crea elemento di lavoro** e il tipo di elemento di lavoro da creare.  
+3. Scegliere **Crea elemento di lavoro** e il tipo di elemento di lavoro da creare.  
   
-4.  Nel modulo relativo all'elemento di lavoro compilare i campi. Scegliere **Salva elemento di lavoro**.  
+4. Nel modulo relativo all'elemento di lavoro compilare i campi. Scegliere **Salva elemento di lavoro**.  
   
      In Visual Studio l'elemento del modello viene collegato all'elemento di lavoro. Verrà visualizzata un'icona sull'elemento del modello o nelle sue vicinanze.  
   
 > [!WARNING]
 >  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
-##  <a name="LinkExisting"></a> Collegare un elemento del modello a un elemento di lavoro esistente  
+## <a name="LinkExisting"></a> Collegare un elemento del modello a un elemento di lavoro esistente  
  Quando si collegano elementi del modello a elementi di lavoro, partire dall'elemento del modello e non dall'elemento di lavoro.  
   
-1.  Verificare che si è connessi all'istanza di TFS che si desidera utilizzare.  
+1. Verificare che si è connessi all'istanza di TFS che si desidera utilizzare.  
   
-2.  Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello. Scegliere **Collega a elemento di lavoro**. Selezionare il progetto nel campo **Progetto** .  
+2. Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello. Scegliere **Collega a elemento di lavoro**. Selezionare il progetto nel campo **Progetto** .  
   
-3.  Scegliere uno o più elementi di lavoro da collegare all'elemento del modello con una delle operazioni seguenti:  
+3. Scegliere uno o più elementi di lavoro da collegare all'elemento del modello con una delle operazioni seguenti:  
   
-    -   Scegliere una query in **Query salvata**.  
+    - Scegliere una query in **Query salvata**.  
   
-    -   Digitare l'ID di uno o più elementi di lavoro separati da spazi in **ID**.  
+    - Digitare l'ID di uno o più elementi di lavoro separati da spazi in **ID**.  
   
-    -   Digitare una parola o una frase in **Il titolo contiene**.  
+    - Digitare una parola o una frase in **Il titolo contiene**.  
   
-4.  Scegliere **Trova**.  
+4. Scegliere **Trova**.  
   
-5.  Nell'elenco di elementi di lavoro selezionare l'elemento o gli elementi di lavoro da collegare.  
+5. Nell'elenco di elementi di lavoro selezionare l'elemento o gli elementi di lavoro da collegare.  
   
      A termine, la proprietà **Elementi di lavoro** dell'elemento del modello è associata a un numero maggiore del precedente. Verrà visualizzata anche un'icona accanto o sull'elemento del modello.  
   
 > [!WARNING]
 >  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
-##  <a name="OpenWorkItem"></a> Visualizza elementi di lavoro collegato a un elemento del modello  
+## <a name="OpenWorkItem"></a> Visualizza elementi di lavoro collegato a un elemento del modello  
   
-1.  In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi di lavoro sono collegati all'elemento del modello.  
+1. In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi di lavoro sono collegati all'elemento del modello.  
   
-2.  Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello. Scegliere **Visualizza elementi di lavoro** per visualizzare l'elenco di elementi di lavoro collegati.  
+2. Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello. Scegliere **Visualizza elementi di lavoro** per visualizzare l'elenco di elementi di lavoro collegati.  
   
     > [!NOTE]
     >  Vengono visualizzati solo gli elementi di lavoro del server attualmente connesso. Se non viene visualizzato alcun elemento di lavoro, verificare di essere connessi al server corretto in **Team Explorer**.  
   
-##  <a name="ViewLinkedModels"></a> Visualizzare elementi del modello collegati a un elemento di lavoro  
+## <a name="ViewLinkedModels"></a> Visualizzare elementi del modello collegati a un elemento di lavoro  
  È possibile visualizzare elementi e diagrammi di modellazione collegati a un elemento di lavoro in Visual Studio Online e in Team Foundation Server 2012 o versioni successive. Un elemento di lavoro potrebbe essere collegato ad esempio a modelli di classe che mostrano la progettazione di nuove classi da implementare.  
   
-1.  In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi del modello sono collegati all'elemento di lavoro.  
+1. In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi del modello sono collegati all'elemento di lavoro.  
   
     > [!NOTE]
     >  Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Vedere [Risoluzione dei problemi](#Troubleshooting) e [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
-2.  Aprire l'elemento di lavoro e scegliere **Collegamenti**. In **Collegamento modello**aprire il menu di scelta rapida per l'elemento del modello collegato. Scegliere **Apri elemento collegato**.  
+2. Aprire l'elemento di lavoro e scegliere **Collegamenti**. In **Collegamento modello**aprire il menu di scelta rapida per l'elemento del modello collegato. Scegliere **Apri elemento collegato**.  
   
      ![Elemento del modello collegato aperto da un elemento di lavoro](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")  
   
-##  <a name="RemoveLinks"></a> Eliminare collegamenti tra elementi del modello ed elementi di lavoro  
+## <a name="RemoveLinks"></a> Eliminare collegamenti tra elementi del modello ed elementi di lavoro  
  Eliminare un elemento di lavoro collegato a partire dall'elemento del modello. In questo modo viene rimosso il collegamento reciproco all'elemento del modello dall'elemento di lavoro. In caso contrario, se si inizia con l'elemento di lavoro, il collegamento reciproco dall'elemento del modello all'elemento di lavoro non verrà eliminato.  
   
-1.  Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello.  
+1. Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello.  
   
-2.  Scegliere **Rimuovi elementi di lavoro**.  
+2. Scegliere **Rimuovi elementi di lavoro**.  
   
      \- oppure -  
   
-    1.  Scegliere **Proprietà**, quindi **Elementi di lavoro** in cui viene visualizzato il numero di elementi di lavoro collegati.  
+    1. Scegliere **Proprietà**, quindi **Elementi di lavoro** in cui viene visualizzato il numero di elementi di lavoro collegati.  
   
-    2.  Nella proprietà **Elementi di lavoro** scegliere il pulsante con i puntini di sospensione **[…]**.  
+    2. Nella proprietà **Elementi di lavoro** scegliere il pulsante con i puntini di sospensione **[…]**.  
   
         > [!NOTE]
         >  Vengono visualizzati solo gli elementi di lavoro sul server corrente. Se l'elenco è vuoto, ma il numero di elementi di lavoro è diverso da zero, assicurarsi di essere connessi al server corretto in **Team Explorer**.  
   
-3.  In **Rimuovi collegamenti a elementi di lavoro**rimuovere gli elementi selezionati da scollegare. Scegliere **OK**.  
+3. In **Rimuovi collegamenti a elementi di lavoro**rimuovere gli elementi selezionati da scollegare. Scegliere **OK**.  
   
-##  <a name="Troubleshooting"></a> Risoluzione dei problemi  
+## <a name="Troubleshooting"></a> Risoluzione dei problemi  
   
 |**Problema**|**Possibile causa**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068665"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedura: Aggiungere un descrittore di filtro a un metodo Finder
   Descrittori di filtro consentono ai consumer del modello passare valori ai metodi prima che vengano eseguiti. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617782"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Per aggiungere un descrittore di filtro a un metodo Finder
 
-1.  Nel **Dettagli metodo BDC** finestra, espandere il nodo di un metodo Finder, il **parametri** nodo e quindi aggiungere un parametro di input. Per altre informazioni, vedere [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. Nel **Dettagli metodo BDC** finestra, espandere il nodo di un metodo Finder, il **parametri** nodo e quindi aggiungere un parametro di input. Per altre informazioni, vedere [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  Nel **Dettagli metodo** finestra, scegliere il descrittore di tipo del parametro.
+2. Nel **Dettagli metodo** finestra, scegliere il descrittore di tipo del parametro.
 
-3.  Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+3. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
 
-4.  Nel **proprietà** impostare nella finestra di **nome tipo** proprietà a un tipo di dati che è appropriato per il filtro.
+4. Nel **proprietà** impostare nella finestra di **nome tipo** proprietà a un tipo di dati che è appropriato per il filtro.
 
      Ad esempio, un filtro potrebbe usare una data di ordine per limitare il numero di ordini di vendita restituiti dal metodo. Per supportare tale filtro, il **nome del tipo** proprietà del descrittore del tipo deve essere impostata su **System. DateTime**.
 
-5.  Nel **Dettagli metodo** finestra, espandere il **descrittori di filtro** nodo.
+5. Nel **Dettagli metodo** finestra, espandere il **descrittori di filtro** nodo.
 
-6.  Nelle **aggiungere un descrittore di filtro** casella di riepilogo **Crea descrittore di filtro**.
+6. Nelle **aggiungere un descrittore di filtro** casella di riepilogo **Crea descrittore di filtro**.
 
      Un nuovo descrittore di filtro viene visualizzato sotto il **descrittori di filtro** nodo.
 
-7.  Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+7. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
 
-8.  Nel **delle proprietà** finestra, scegliere il **tipo** proprietà.
+8. Nel **delle proprietà** finestra, scegliere il **tipo** proprietà.
 
 9. Nell'elenco visualizzato per il **tipo** proprietà, scegliere il criterio di filtro desiderati.
 

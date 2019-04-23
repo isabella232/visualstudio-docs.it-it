@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: creazione di una DataTable in Progettazione DataSet'
+title: 'Procedura dettagliata: Creazione di una DataTable in Progettazione Dataset'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072669"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: Creare un oggetto DataTable in Progettazione Dataset
 
@@ -27,7 +27,7 @@ Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -37,33 +37,33 @@ Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Aggiungere un nuovo set di dati all'applicazione
 
-1.  Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
+1. Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2.  Nel riquadro di sinistra, selezionare **Data**, quindi selezionare **DataSet** nel riquadro centrale.
+2. Nel riquadro di sinistra, selezionare **Data**, quindi selezionare **DataSet** nel riquadro centrale.
 
-3.  Scegliere **Aggiungi**.
+3. Scegliere **Aggiungi**.
 
      Visual Studio aggiunge un file denominato **DataSet1.xsd** al progetto e lo apre nella **Progettazione Dataset**.
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Aggiungere un nuovo DataTable al set di dati
 
-1.  Trascinare un **DataTable** dal **set di dati** scheda della finestra di **della casella degli strumenti** nel **Progettazione Dataset**.
+1. Trascinare un **DataTable** dal **set di dati** scheda della finestra di **della casella degli strumenti** nel **Progettazione Dataset**.
 
      Una tabella denominata **DataTable1** viene aggiunto al set di dati.
 
-2.  Fare clic sulla barra del titolo della **DataTable1** e rinominarlo `Music`.
+2. Fare clic sulla barra del titolo della **DataTable1** e rinominarlo `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Aggiungere colonne alla tabella di dati
 
-1.  Fare doppio clic il **musica** tabella. Puntare **Add**, quindi fare clic su **colonna**.
+1. Fare doppio clic il **musica** tabella. Puntare **Add**, quindi fare clic su **colonna**.
 
-2.  Assegnare un nome di colonna `SongID`.
+2. Assegnare un nome di colonna `SongID`.
 
-3.  Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataColumn.DataType%2A> su <xref:System.Int16?displayProperty=fullName>.
+3. Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataColumn.DataType%2A> su <xref:System.Int16?displayProperty=fullName>.
 
-4.  Ripetere questo processo e aggiungere le colonne seguenti:
+4. Ripetere questo processo e aggiungere le colonne seguenti:
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

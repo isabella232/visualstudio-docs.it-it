@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: espandere e comprimere alberi di Spy + + | Microsoft Docs'
+title: 'Procedura: Espandere e comprimere alberi di Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071187"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: espandere e comprimere strutture ad albero di Spy++
-È possibile espandere e comprimere le visualizzazioni di Windows, processi e thread usando due metodi: facendo clic sulle icone nella finestra o usando il **albero** menu. Il + e - icone nella struttura agiscono come avviene nella finestra del progetto Visual C++.
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: Espandere e comprimere alberi di Spy++
+È possibile espandere e comprimere le visualizzazioni di Windows, processi e thread usando due metodi: facendo clic sulle icone nella finestra o usando il **albero** menu. Il + e - icone nella struttura agiscono come avviene nell'oggetto visivo C++ finestra del progetto.
 
  Il **albero** menu contiene quattro comandi:
 
-|Comando di menu|Description|
+|Comando di menu|Descrizione|
 |------------------|-----------------|
 |**Espandi un livello**|Espande l'elemento attualmente selezionato a un livello superiore.|
 |**Il ramo**|Espande completamente l'elemento attualmente selezionato.|
@@ -34,9 +34,9 @@ ms.locfileid: "56687601"
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>Per espandere o comprimere alberi di Spy + +
 
-1.  Evidenziare uno degli elementi nella visualizzazione di Windows, processi o thread.
+1. Evidenziare uno degli elementi nella visualizzazione di Windows, processi o thread.
 
-2.  Dal **albero** menu, scegliere uno di espansione o compressione comandi.
+2. Dal **albero** menu, scegliere uno di espansione o compressione comandi.
 
 ## <a name="see-also"></a>Vedere anche
 - [Uso di Spy++](../debugger/using-spy-increment.md)

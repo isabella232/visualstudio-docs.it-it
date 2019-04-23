@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068691"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporamento di un diagramma in Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "58967796"
   
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Per incorporare un diagramma DSL in un controllo di Windows  
   
-1.  Aggiungere un nuovo **controllo utente** file al progetto DslPackage.  
+1. Aggiungere un nuovo **controllo utente** file al progetto DslPackage.  
   
-2.  Aggiungere un controllo Panel al controllo utente. Questo pannello conterrà il diagramma DSL.  
+2. Aggiungere un controllo Panel al controllo utente. Questo pannello conterrà il diagramma DSL.  
   
      Aggiungere altri controlli necessari.  
   
      Impostare le proprietà di ancoraggio dei controlli.  
   
-3.  In Esplora soluzioni fare doppio clic su file del controllo utente e fare clic su **Visualizza codice**. Aggiungere questo costruttore e una variabile per il codice:  
+3. In Esplora soluzioni fare doppio clic su file del controllo utente e fare clic su **Visualizza codice**. Aggiungere questo costruttore e una variabile per il codice:  
   
     ```csharp  
   
@@ -47,7 +47,7 @@ ms.locfileid: "58967796"
   
     ```  
   
-4.  Aggiungere un nuovo file al progetto DslPackage, con il contenuto seguente:  
+4. Aggiungere un nuovo file al progetto DslPackage, con il contenuto seguente:  
   
     ```  
     using System.Windows.Forms;  
@@ -71,13 +71,13 @@ ms.locfileid: "58967796"
   
     ```  
   
-5.  Per testare il linguaggio DSL, premere F5 e aprire un file di modello di esempio. Il diagramma viene visualizzato all'interno del controllo. Casella degli strumenti e altre funzionalità funzionano normalmente.  
+5. Per testare il linguaggio DSL, premere F5 e aprire un file di modello di esempio. Il diagramma viene visualizzato all'interno del controllo. Casella degli strumenti e altre funzionalità funzionano normalmente.  
   
 #### <a name="updating-the-form-using-store-events"></a>Aggiornamenti del modulo usando gli eventi di Store  
   
-1.  In Progettazione Windows form, aggiungere un **ListBox** denominata `listBox1`. Verrà visualizzato un elenco degli elementi del modello. Verrà conservato nel synchronism con il modello usando *archiviare eventi*. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+1. In Progettazione Windows form, aggiungere un **ListBox** denominata `listBox1`. Verrà visualizzato un elenco degli elementi del modello. Verrà conservato nel synchronism con il modello usando *archiviare eventi*. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-2.  Nel file di codice personalizzato, eseguire l'override ulteriormente metodi alla classe DocView:  
+2. Nel file di codice personalizzato, eseguire l'override ulteriormente metodi alla classe DocView:  
   
     ```  
   
@@ -120,7 +120,7 @@ ms.locfileid: "58967796"
   
     ```  
   
-3.  Nel code-behind del controllo utente, inserire i metodi per l'ascolto per gli elementi aggiunti e rimossi:  
+3. Nel code-behind del controllo utente, inserire i metodi per l'ascolto per gli elementi aggiunti e rimossi:  
   
     ```  
   
@@ -149,7 +149,7 @@ ms.locfileid: "58967796"
   
     ```  
   
-4.  Per testare il linguaggio DSL, premere F5 e nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aprire un file di modello di esempio.  
+4. Per testare il linguaggio DSL, premere F5 e nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aprire un file di modello di esempio.  
   
      Si noti che la casella di riepilogo Mostra un elenco degli elementi del modello e che sia corretto dopo qualsiasi aggiunta o eliminazione e dopo l'annullamento e ripristino.  
   

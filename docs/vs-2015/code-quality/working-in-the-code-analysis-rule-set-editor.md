@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072253"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilizzo dell'editor set di regole di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ L'editor set di regole di analisi del codice consente di specificare le regole i
   
  L'editor visualizza le regole in una struttura ad albero che set di gruppi di regole da una regola di campo specificato. Per aggiungere o rimuovere le regole da un set di regole, eseguire una o più delle operazioni seguenti:  
   
--   Selezionare o deselezionare la casella di controllo del nodo di gruppo per aggiungere o rimuovere tutte le regole del gruppo. Quando si seleziona un gruppo, tutte le regole sono impostate il **avviso** azione.  
+- Selezionare o deselezionare la casella di controllo del nodo di gruppo per aggiungere o rimuovere tutte le regole del gruppo. Quando si seleziona un gruppo, tutte le regole sono impostate il **avviso** azione.  
   
--   Fare clic sui **azione** campo di un gruppo, quindi specificare l'azione da applicare a tutte le regole del gruppo.  
+- Fare clic sui **azione** campo di un gruppo, quindi specificare l'azione da applicare a tutte le regole del gruppo.  
   
--   Selezionare o deselezionare la casella di controllo per una singola regola. Quando si seleziona la casella di controllo per una regola, la regola è impostata per l'azione di avviso.  
+- Selezionare o deselezionare la casella di controllo per una singola regola. Quando si seleziona la casella di controllo per una regola, la regola è impostata per l'azione di avviso.  
   
 ## <a name="rule-set-editor-toolbar"></a>Editor barra degli strumenti del Set di regole  
  È possibile utilizzare la barra degli strumenti dell'editor set di regole per raggruppare, filtrare e cercare i dati visualizzati nella griglia set di regole.  
@@ -73,6 +73,6 @@ L'editor set di regole di analisi del codice consente di specificare le regole i
 ## <a name="sorting-and-filtering-rule-sets"></a>Ordinare e filtrare i set di regole  
  Delle intestazioni di colonna della griglia set di regole, è possibile ordinare e filtrare le regole in base ai valori del campo.  
   
--   Per ordinare gli elenchi di set di regole, fare clic sull'intestazione di colonna del campo da cui si desidera ordinare. Se vengono raggruppati i set di regole, ogni gruppo viene ordinato singolarmente.  
+- Per ordinare gli elenchi di set di regole, fare clic sull'intestazione di colonna del campo da cui si desidera ordinare. Se vengono raggruppati i set di regole, ogni gruppo viene ordinato singolarmente.  
   
--   Per filtrare i set di regole per il valore di un campo, fare clic sul pulsante filtro nell'intestazione di colonna del campo da cui si desidera filtrare. Selezionare le caselle di controllo dei valori che si desidera visualizzare e deselezionare le caselle di controllo dei valori che si desidera nascondere.
+- Per filtrare i set di regole per il valore di un campo, fare clic sul pulsante filtro nell'intestazione di colonna del campo da cui si desidera filtrare. Selezionare le caselle di controllo dei valori che si desidera visualizzare e deselezionare le caselle di controllo dei valori che si desidera nascondere.

@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068301"
 ---
 # <a name="sccget-function"></a>Funzione SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Esistono due modi per risolvere questa situazione in cui la cache locale delle versioni di controllo di origine diventa sincronizzata con il database del controllo del codice sorgente:  
   
-1.  Non consentire la ridenominazione di un file nel database di controllo di origine che è attualmente estratto.  
+1. Non consentire la ridenominazione di un file nel database di controllo di origine che è attualmente estratto.  
   
-2.  È l'equivalente di "eliminazione precedente" seguita da "Aggiungi nuovo". L'algoritmo seguente è un modo per eseguire questa operazione.  
+2. È l'equivalente di "eliminazione precedente" seguita da "Aggiungi nuovo". L'algoritmo seguente è un modo per eseguire questa operazione.  
   
-    1.  Chiamare il [SccQueryChanges](../extensibility/sccquerychanges-function.md) funzione per apprendere la ridenominazione di a. txt in b. txt nel database di controllo di origine.  
+    1. Chiamare il [SccQueryChanges](../extensibility/sccquerychanges-function.md) funzione per apprendere la ridenominazione di a. txt in b. txt nel database di controllo di origine.  
   
-    2.  Rinominare il txt locale in b. txt.  
+    2. Rinominare il txt locale in b. txt.  
   
-    3.  Chiamare il `SccGet` funzione txt sia b. txt.  
+    3. Chiamare il `SccGet` funzione txt sia b. txt.  
   
-    4.  Poiché txt non esiste nel database del controllo del codice sorgente, le informazioni sulla versione txt mancanti verrà eliminata la cache della versione locale.  
+    4. Poiché txt non esiste nel database del controllo del codice sorgente, le informazioni sulla versione txt mancanti verrà eliminata la cache della versione locale.  
   
-    5.  Il file di b. txt in corso l'estrazione viene unito con il contenuto del file locale b. txt.  
+    5. Il file di b. txt in corso l'estrazione viene unito con il contenuto del file locale b. txt.  
   
-    6.  Il file aggiornato b. txt può ora essere archiviato.  
+    6. Il file aggiornato b. txt può ora essere archiviato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   

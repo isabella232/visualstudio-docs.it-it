@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068223"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedura: I tipi di carattere incorporati di accesso e il colore ccheme
 L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.
@@ -34,28 +34,28 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di t
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Per definire una categoria utilizzando i colori e tipi di carattere predefiniti
 
-1.  Creare un GUID non autorizzato.
+1. Creare un GUID non autorizzato.
 
      Questo GUID è utilizzato per identificare in modo univoco una categoria. Questa categoria riutilizza specifica di colori e tipi di carattere predefiniti dell'IDE.
 
     > [!NOTE]
     >  Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage questo GUID usano per fare riferimento a informazioni incorporate.
 
-2.  Nome della categoria deve essere aggiunto a una tabella di stringhe all'interno delle risorse del pacchetto VSPackage (*RC*) del file, in modo che possa essere localizzata in base alle necessità quando visualizzati nell'IDE.
+2. Nome della categoria deve essere aggiunto a una tabella di stringhe all'interno delle risorse del pacchetto VSPackage (*RC*) del file, in modo che possa essere localizzata in base alle necessità quando visualizzati nell'IDE.
 
      Per altre informazioni, vedere [aggiungere o eliminare una stringa](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Per registrare una categoria utilizzando i colori e tipi di carattere predefiniti
 
-1.  Costruire un tipo speciale di voce del Registro di sistema categoria nel percorso seguente:
+1. Costruire un tipo speciale di voce del Registro di sistema categoria nel percorso seguente:
 
      *[HKLM\Software\Microsoft. \Visual Studio\\\<versione di Visual Studio > \FontAndColors\\\<categoria >*]
 
      *\<Categoria >* è il nome non localizzato della categoria.
 
-2.  Popolare il Registro di sistema per usare i tipi di carattere azionari e combinazione di colori con quattro valori:
+2. Popolare il Registro di sistema per usare i tipi di carattere azionari e combinazione di colori con quattro valori:
 
-    |nome|Tipo|Dati|Descrizione|
+    |Nome|Tipo|Dati|Descrizione|
     |----------|----------|----------|-----------------|
     |Category|REG_SZ|GUID|Un GUID arbitrario che identifica una categoria che contiene lo schema di carattere e colori predefinito.|
     |Pacchetto|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Il GUID viene utilizzato da tutti i pacchetti VSPackage che utilizzano le configurazioni predefinite di carattere e colori.|

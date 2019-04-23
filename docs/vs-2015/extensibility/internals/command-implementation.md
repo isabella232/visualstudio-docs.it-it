@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067833"
 ---
 # <a name="command-implementation"></a>Implementazione dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - Se l'implementazione di uno dei due metodi riconosce il GUID e il comando, quindi il metodo deve impostare il campo flag dei comandi di ogni comando (nel `prgCmds` parametro) tramite i flag seguenti:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando è supportato.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando è supportato.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando non deve essere visibile.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando non deve essere visibile.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando viene attivato e viene visualizzato per sono state controllate.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando viene attivato e viene visualizzato per sono state controllate.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando è abilitato.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando è abilitato.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando deve essere nascosto quando viene visualizzato un menu di scelta rapida.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando deve essere nascosto quando viene visualizzato un menu di scelta rapida.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando è un controller di menu e non è abilitato, ma l'elenco di menu a discesa non è vuoto e è ancora disponibile. (Questo flag viene raramente utilizzato).  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Se il comando è un controller di menu e non è abilitato, ma l'elenco di menu a discesa non è vuoto e è ancora disponibile. (Questo flag viene raramente utilizzato).  
   
 - Se il comando è stato definito nel file con estensione vsct con il `TextChanges` flag, impostare i parametri seguenti:  
   
-  -   Impostare il `rgwz` elemento del `pCmdText` parametro per il nuovo testo del comando.  
+  - Impostare il `rgwz` elemento del `pCmdText` parametro per il nuovo testo del comando.  
   
-  -   Impostare il `cwActual` elemento del `pCmdText` parametro per la dimensione della stringa di comando.  
+  - Impostare il `cwActual` elemento del `pCmdText` parametro per la dimensione della stringa di comando.  
   
   Inoltre assicurarsi che il contesto corrente non è una funzione di automazione, a meno che il comando è concepito appositamente per la gestione delle funzioni di automazione.  
   

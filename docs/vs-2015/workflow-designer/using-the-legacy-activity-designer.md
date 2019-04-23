@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070784"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilizzo dell'ActivityDesigner legacy
 In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la finestra di progettazione legacy quando si fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,9 +35,9 @@ In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd
   
 2. Selezionare il **impegno** oppure **attività (con separazione del codice)** modello.  
   
-   1.  Usare la **attività** modello per creare un'attività con la definizione di attività e il codice utente nello stesso file di codice.  
+   1. Usare la **attività** modello per creare un'attività con la definizione di attività e il codice utente nello stesso file di codice.  
   
-   2.  Usare la **attività (con separazione del codice)** modello per creare un'attività con la definizione di attività espressa come markup del flusso di lavoro e il codice utente in un file di codice separato.  
+   2. Usare la **attività (con separazione del codice)** modello per creare un'attività con la definizione di attività espressa come markup del flusso di lavoro e il codice utente in un file di codice separato.  
   
 3. Digitare un nome di attività o mantenere il nome predefinito e quindi fare clic su **Add**.  
   

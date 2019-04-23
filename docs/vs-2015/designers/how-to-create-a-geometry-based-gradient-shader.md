@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071720"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  Questo documento illustra le attività seguenti:  
   
--   Aggiunta di nodi a un grafico shader  
+- Aggiunta di nodi a un grafico shader  
   
--   Impostazione delle proprietà del nodo  
+- Impostazione delle proprietà del nodo  
   
--   Disconnessione di nodi  
+- Disconnessione di nodi  
   
--   Connessione ai nodi  
+- Connessione ai nodi  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Creazione di uno shader con sfumatura basata sulla geometria  
  È possibile implementare uno shader basato sulla geometria incorporando la posizione del pixel nello shader. Nei linguaggi shader, oltre al colore e alla posizione sullo schermo 2D, un pixel contiene altre informazioni. Un pixel, noto in alcuni sistemi come *frammento*, è costituito da una raccolta di valori che descrivono l'area corrispondente a un pixel. Lo shader descritto in questo documento utilizza l'altezza di ciascun pixel di un oggetto 3D nello spazio globale per influire sul colore di output finale del frammento.  
@@ -73,7 +73,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
+ [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md)   
  [Procedura: Modello di terreno 3D](../designers/how-to-model-3-d-terrain.md)   
  [Procedura: Creare uno shader con trama in scala di grigi](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   

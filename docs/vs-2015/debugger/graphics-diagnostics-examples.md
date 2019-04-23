@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52c1c2cc7304828e9ace7e9b5072d262a5395a1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072773"
 ---
 # <a name="graphics-diagnostics-examples"></a>Esempi di diagnostica grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle ap
 ## <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche  
  Prima di poter usare la diagnostica della grafica per individuare problemi di rendering dell'app, è necessario acquisire informazioni grafiche dall'applicazione durante l'esecuzione. È possibile acquisire informazioni grafiche da un'app eseguita in un computer locale o da un'app eseguita in un computer o dispositivo remoto. Queste procedure dettagliate dimostrano come è possibile acquisire informazioni grafiche da un'app manualmente o a livello di codice:  
   
--   [Procedura dettagliata: Acquisizione di informazioni grafiche](../debugger/walkthrough-capturing-graphics-information.md)  
+- [Procedura dettagliata: Acquisizione di informazioni grafiche](../debugger/walkthrough-capturing-graphics-information.md)  
   
--   [Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
+- [Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>Usare la diagnostica della grafica con un dispositivo basato su ARM  
  È possibile usare la diagnostica della grafica per eseguire il debug della propria app Direct3D in un dispositivo basato su ARM tramite debug remoto. Per altre informazioni, vedere [Procedura: Usare la diagnostica della grafica con un dispositivo ARM](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md).  
@@ -39,18 +39,18 @@ Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle ap
   
  Questi scenari illustrano come usare la diagnostica della grafica per determinare perché manca un oggetto e per trovare il codice responsabile.  
   
--   [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
+- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
   
--   [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
+- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+- [Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>Debug degli errori di rendering  
  Un oggetto (o più oggetti) che non ha l'aspetto corretto è un altro problema comune agli sviluppatori di grafica. Questo tipo di problema può essere difficile da individuare perché le cause di un aspetto non corretto possono variare da errori molto banali, ad esempio l'associazione di una trama errata, a errori meno ovvi, come un bug nel codice dello shader o un'interazione inattesa tra shader. Alcuni problemi possono essere causati da una combinazione di errori.  
   
  Di seguito è riportato uno scenario che dimostra come usare la diagnostica grafica per individuare un problema di rendering non troppo complesso causato da un bug secondario dello shader:  
   
--   [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
+- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>Debug di compute shader  
  È possibile usare la diagnostica della grafica per il debug dei kernel del compute shader DirectCompute che generano risultati errati. Con DirectCompute, è possibile usare la potenza di calcolo della GPU per eseguire calcoli su un numero elevato di elementi dati in parallelo. Per alcuni tipi di problemi, l'uso della GPU può fornire prestazioni molto superiori a quelle offerte da un codice, per quanto ben ottimizzato, per CPU. I debugger tradizionali non possono tuttavia rilevare codice eseguito su GPU. Il debug di questo tipo di codice spesso richiede strumenti specializzati specifici del fornitore, che potrebbero non integrarsi bene con Visual Studio. Per rendere il debug di compute shader più coerente su un intervallo di GPU, la diagnostica della grafica acquisisce eventi di invio di DirectCompute, in aggiunta agli eventi di rendering Direct3D, così che sia possibile usare strumenti comuni per il debug dei problemi nel codice del compute shader.  

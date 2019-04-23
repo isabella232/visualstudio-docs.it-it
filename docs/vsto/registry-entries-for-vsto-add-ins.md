@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071808"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del Registro di sistema per componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.
@@ -78,7 +78,7 @@ ms.locfileid: "56612712"
 |**LoadBehavior**|REG_DWORD|Obbligatorio. Valore che specifica quando l'applicazione tenta di caricare il componente aggiuntivo VSTO e lo stato corrente del componente aggiuntivo VSTO (caricato o scaricato).<br /><br /> Per impostazione predefinita, questo valore è impostato su 3, a indicare che il componente aggiuntivo VSTO viene caricato all'avvio. Per altre informazioni, vedere [valori di LoadBehavior](#LoadBehavior). **Nota:**  Se un utente disabilita il componente aggiuntivo VSTO, tale azione Modifica **LoadBehavior** nel valore di **HKEY_CURRENT_USER** hive del Registro di sistema. Per ogni utente, il valore della **LoadBehavior** nell'hive HKEY_CURRENT_USER ha la precedenza il valore predefinito **LoadBehavior** definito nel **HKEY_LOCAL_MACHINE** hive.|
 |**Manifest**|REG_SZ|Obbligatorio. Percorso completo del manifesto della distribuzione del componente aggiuntivo VSTO. Può essere un percorso contenuto nel computer locale, una condivisione di rete (UNC) o un server Web (HTTP).<br /><br /> Se si usa Windows Installer per distribuire la soluzione, è necessario aggiungere il prefisso **file:///** al percorso di **manifesto** . È anche necessario accodare la stringa  **&#124;vstolocal** (ovvero, il carattere di barra verticale **&#124;** seguita da **vstolocal**) alla fine di questo percorso. Il suffisso garantisce che la soluzione venga caricata dalla cartella di installazione e non dalla cache ClickOnce. Per altre informazioni, vedere [distribuire una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:**  Quando si compila un componente aggiuntivo VSTO nel computer di sviluppo, Visual Studio aggiunge automaticamente il  **&#124;vstolocal** stringa di questa voce del Registro di sistema.|
 
-###  <a name="OutlookEntries"></a> Voci del Registro di sistema per le aree del modulo di Outlook
+### <a name="OutlookEntries"></a> Voci del Registro di sistema per le aree del modulo di Outlook
  Se si crea un'area del modulo personalizzata in un componente aggiuntivo VSTO per Outlook, vengono usate voci aggiuntive del Registro di sistema per registrare l'area con Outlook. Queste voci vengono create in una chiave del Registro di sistema diversa per ogni classe di messaggio supportata dall'area. Queste chiavi del Registro di sistema si trovano nel percorso seguente, dove *radice* viene **HKEY_CURRENT_USER** oppure **HKEY_LOCAL_MACHINE**.
 
  *Radice*\Software\Microsoft\Office\Outlook\FormRegions\\*classe message*
@@ -87,7 +87,7 @@ ms.locfileid: "56612712"
 
  Per altre informazioni sulle voci del Registro di sistema area del modulo, vedere [specificare il percorso di un'area del modulo in un form personalizzato](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Per altre informazioni sulle aree del modulo Outlook, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
 
-##  <a name="LoadBehavior"></a> Valori di LoadBehavior
+## <a name="LoadBehavior"></a> Valori di LoadBehavior
  Il **LoadBehavior** voce sotto il *radice*\Software\Microsoft\Office\\*nome applicazione*\Addins\\*componente aggiuntivo ID* chiave contiene una combinazione bit per bit dei valori che specificano il comportamento in fase di esecuzione del componente aggiuntivo VSTO. Il bit di ordine più basso (valori 0 e 1) indica se il componente aggiuntivo VSTO è attualmente caricato o scaricato. Gli altri bit indicano quando l'applicazione tenta di caricare il componente aggiuntivo VSTO.
 
  In genere, il **LoadBehavior** voce deve essere impostata su 0, 3 o 16 (in decimale) quando il componente aggiuntivo VSTO viene installato nei computer degli utenti finali. Per impostazione predefinita, Visual Studio imposta la voce **LoadBehavior** del componente aggiuntivo VSTO su 3 quando questo viene compilato o pubblicato.

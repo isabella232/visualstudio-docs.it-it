@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e326bac1138fc03be94c1e6d1a5037e3d1a2f40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068886"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Una sessione di prestazioni può essere creata manualmente. Per eseguire questa 
   
 ### <a name="to-manually-create-a-performance-session"></a>Per creare manualmente una sessione di prestazioni  
   
-1.  Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Nuova sessione di prestazioni**.  
+1. Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Nuova sessione di prestazioni**.  
   
      Verrà aggiunta una sessione di prestazioni vuota in **Esplora prestazioni**.  
   
-2.  Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi fare clic su **Aggiungi binario di destinazione**.  
+2. Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi fare clic su **Aggiungi binario di destinazione**.  
   
-3.  Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**.  
+3. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**.  
   
      Verrà aggiunto un nuovo file binario.  
   
