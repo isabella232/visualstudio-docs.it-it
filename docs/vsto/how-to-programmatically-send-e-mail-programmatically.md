@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110791"
 ---
 # <a name="how-to-programmatically-send-email"></a>Procedura: A livello di codice Invia messaggio di posta elettronica
   In questo esempio invia un messaggio di posta elettronica per i contatti con il nome di dominio **example.com** nei relativi indirizzi di posta elettronica.
@@ -33,7 +33,7 @@ ms.locfileid: "56646005"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
--   I contatti con il nome di dominio **example.com** nei relativi indirizzi di posta elettronica.
+- I contatti con il nome di dominio **example.com** nei relativi indirizzi di posta elettronica.
 
 ## <a name="robust-programming"></a>Programmazione efficiente
  Non rimuovere il codice di filtro che cerca il nome di dominio **example.com**. Se si rimuove il filtro, la soluzione invierà messaggi di posta elettronica a tutti i contatti.

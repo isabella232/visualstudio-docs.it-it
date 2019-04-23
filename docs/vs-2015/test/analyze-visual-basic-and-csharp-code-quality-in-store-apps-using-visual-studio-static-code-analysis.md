@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108340"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice Visual Basic e C# nelle app dello Store con l'analisi statica del codice di Visual Studio
 
@@ -42,7 +42,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
  [Avvisi di analisi del codice Visual Basic e C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice
+## <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice
  Per eseguire l'analisi del codice nella soluzione di Visual Studio:
 
 - Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.
@@ -57,12 +57,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
    ![Finestra Analisi codice](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
+## <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
  Per analizzare un avviso specifico, fai clic sul titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema.
 
  ![Avviso di analisi del codice espanso](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- Quando espandi un avviso, la riga di codice che ha provocato l'avviso viene evidenziata nell'editor di Visual Studio Code.
+ Quando si espande un avviso, la riga di codice che ha provocato l'avviso viene evidenziata nell'editor del codice di Visual Studio.
 
  ![Evidenziazione del testo di analisi del codice](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
@@ -71,7 +71,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 > [!TIP]
 >  Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Fare clic sul pulsante **Analizza** e quindi scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.
 
-##  <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice
+## <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice
  In alcuni casi potresti decidere di non correggere un avviso di analisi del codice. Puoi decidere che risolvere il problema richiede un'eccessiva ricodificazione relativamente alla probabilità che il problema si ripresenti in qualsiasi implementazione realistica del codice. Oppure potresti ritenere che l'analisi utilizzata nell'avviso sia inadeguata per il contesto specifico. Puoi eliminare gli avvisi in modo che non vengano più visualizzati nella finestra Analisi codice.
 
  Per eliminare un avviso:
@@ -88,14 +88,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
      La decisione se eliminare l'avviso nel file di origine o nel file di eliminazione dipende dal tuo stile di codifica e dalle esigenze.
 
-##  <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
+## <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
  Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
  ![Finestra di ricerca e filtro dell'analisi del codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  In [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] a tutti gli avvisi di analisi del codice viene assegnato un livello di gravità Warning.
 
-##  <a name="BKMK_Warnings"></a> Avvisi di analisi del codice Visual Basic e C#
+## <a name="BKMK_Warnings"></a> Avvisi di analisi del codice Visual Basic e C#
  L'analisi del codice genera gli avvisi seguenti:
 
  [CA1001: I tipi proprietari di campi eliminabili devono essere eliminabili](http://msdn.microsoft.com/library/ms182172.aspx)

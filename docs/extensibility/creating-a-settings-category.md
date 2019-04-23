@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100586"
 ---
 # <a name="create-a-settings-category"></a>Creare una categoria di impostazioni
 
@@ -33,11 +33,11 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
 
 ### <a name="to-create-a-settings-category"></a>Per creare una categoria di impostazioni
 
-1.  Completare la [creare una pagina di opzioni](../extensibility/creating-an-options-page.md).
+1. Completare la [creare una pagina di opzioni](../extensibility/creating-an-options-page.md).
 
-2.  Aprire il *VSPackage.resx* file e aggiungere le risorse di queste tre stringhe:
+2. Aprire il *VSPackage.resx* file e aggiungere le risorse di queste tre stringhe:
 
-    |nome|Value|
+    |Nome|Value|
     |----------|-----------|
     |106|La categoria|
     |107|Impostazioni personali|
@@ -48,7 +48,7 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
     > [!NOTE]
     >  Di questi tre, solo il nome della categoria non è nel **Importa / Esporta impostazioni** procedura guidata.
 
-3.  Nelle *MyToolsOptionsPackage.cs*, aggiungere un `float` proprietà denominata `OptionFloat` per il `OptionPageGrid` classe, come illustrato nell'esempio seguente.
+3. Nelle *MyToolsOptionsPackage.cs*, aggiungere un `float` proprietà denominata `OptionFloat` per il `OptionPageGrid` classe, come illustrato nell'esempio seguente.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,39 +78,39 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
     > [!NOTE]
     >  Il `OptionPageGrid` categoria denominata "My Category" ora è costituita da due proprietà, `OptionInteger` e `OptionFloat`.
 
-4.  Aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> per il `MyToolsOptionsPackage` classe e assegnargli CategoryName "My Category", assegnargli ObjectName "My Settings" e impostare isToolsOptionPage su true. Impostare il categoryResourceID, objectNameResourceID e DescriptionResourceID alla risorsa di stringa corrispondente che ID creato in precedenza.
+4. Aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> per il `MyToolsOptionsPackage` classe e assegnargli CategoryName "My Category", assegnargli ObjectName "My Settings" e impostare isToolsOptionPage su true. Impostare il categoryResourceID, objectNameResourceID e DescriptionResourceID alla risorsa di stringa corrispondente che ID creato in precedenza.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Compilare il progetto e avviare il debug. Nell'istanza sperimentale dovrebbe che **pagina della griglia My** ha ora i valori sia integer e float.
+5. Compilare il progetto e avviare il debug. Nell'istanza sperimentale dovrebbe che **pagina della griglia My** ha ora i valori sia integer e float.
 
 ## <a name="examine-the-settings-file"></a>Esaminare il file di impostazioni
  In questa sezione vengono esportati valori di categoria di proprietà in un file di impostazioni. Si esamina il file e quindi importare i valori nella categoria della proprietà.
 
-1.  Avviare il progetto in modalità di debug premendo **F5**. Verrà avviata l'istanza sperimentale.
+1. Avviare il progetto in modalità di debug premendo **F5**. Verrà avviata l'istanza sperimentale.
 
-2.  Aprire il **degli strumenti** > **opzioni** finestra di dialogo.
+2. Aprire il **degli strumenti** > **opzioni** finestra di dialogo.
 
-3.  Nella visualizzazione albero nel riquadro sinistro, espandere **My Category** e quindi fare clic su **My pagina della griglia**.
+3. Nella visualizzazione albero nel riquadro sinistro, espandere **My Category** e quindi fare clic su **My pagina della griglia**.
 
-4.  Modificare il valore della **OptionFloat** a 3,1416 e **OptionInteger** a 12. Fare clic su **OK**.
+4. Modificare il valore della **OptionFloat** a 3,1416 e **OptionInteger** a 12. Fare clic su **OK**.
 
-5.  Scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**.
+5. Scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**.
 
      Il **Importa / Esporta impostazioni** procedura guidata viene visualizzata.
 
-6.  Assicurarsi che **Esporta le impostazioni di ambiente selezionate** sia selezionata e quindi fare clic su **successivo**.
+6. Assicurarsi che **Esporta le impostazioni di ambiente selezionate** sia selezionata e quindi fare clic su **successivo**.
 
      Il **scegliere le impostazioni da esportare** verrà visualizzata la pagina.
 
-7.  Fare clic su **impostazioni personali**.
+7. Fare clic su **impostazioni personali**.
 
      Il **Description** diventa **OptionInteger e OptionFloat**.
 
-8.  Verificare che l'opzione **My Settings** è l'unica categoria che sia selezionata e quindi fare clic su **successivo**.
+8. Verificare che l'opzione **My Settings** è l'unica categoria che sia selezionata e quindi fare clic su **successivo**.
 
      Il **nome del File di impostazioni** verrà visualizzata la pagina.
 

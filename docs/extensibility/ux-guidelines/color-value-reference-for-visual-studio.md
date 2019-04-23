@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118084"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento del valore di colore per Visual Studio
 
@@ -26,13 +26,13 @@ Per i token di colore da utilizzare con l'interfaccia utente esistente, vedere [
 
 Quando si usa questa Guida di riferimento, tenere presenti:
 
--   **Copia sempre in primo piano e sfondo sfumature diverse tra loro.** Non scegliere un primo piano da un elemento dell'interfaccia utente e uno sfondo da altro il fatto che si desidera che le tonalità.
+- **Copia sempre in primo piano e sfondo sfumature diverse tra loro.** Non scegliere un primo piano da un elemento dell'interfaccia utente e uno sfondo da altro il fatto che si desidera che le tonalità.
 
--   **Si tratta di codici esadecimali, non i token di colore.** È possibile usare i nomi di token di colore effettivo di questi elementi dell'interfaccia utente perché non è possibile controllare come i token potrebbero cambiare in futuro. Invece di creare token personalizzati categoria e usare i valori di tonalità visualizzati nelle tabelle. I token di colore per interfaccia utente esistenti è disponibili nel [condivisi i colori per Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Si tratta di codici esadecimali, non i token di colore.** È possibile usare i nomi di token di colore effettivo di questi elementi dell'interfaccia utente perché non è possibile controllare come i token potrebbero cambiare in futuro. Invece di creare token personalizzati categoria e usare i valori di tonalità visualizzati nelle tabelle. I token di colore per interfaccia utente esistenti è disponibili nel [condivisi i colori per Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Campioni di contrasto elevati vengono visualizzati per il confronto solo.** Usare il nome di colore di sistema per l'interfaccia utente a contrasto elevato e non usare un selettore di colore o contagocce in questi campioni. Campioni di contrasto elevati in questo argomento riflettono il tema a contrasto elevato n. 1 in Windows. I colori avrà un aspetto diversi in altri temi a contrasto elevato.
 
--   **Per ottenere risultati ottimali, colore coppia imposta con l'interfaccia utente simile all'esempio.**
+- **Per ottenere risultati ottimali, colore coppia imposta con l'interfaccia utente simile all'esempio.**
 
 ## <a name="properties-window"></a>Finestra Proprietà
 
@@ -96,7 +96,7 @@ Quando si usa questa Guida di riferimento, tenere presenti:
 | In primo piano: passaggio del mouse | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione & FFF1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "& FFF1F1F1 campione")<br />`#FFF1F1F1` | ![Campione & FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "& FF1E1E1E campione")<br />`#FF1E1E1E` | ![Campione HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText campione")<br />`HighlightText` |
 | Sfondo | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![Campione & FF292929](../../extensibility/ux-guidelines/media/292929.png "& FF292929 campione")<br />`#FF292929` | ![Campione & FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "& FFEEEEF2 campione")<br />`#FFEEEEF2` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "campione di controllo")<br />`Control` |
 | In background: al passaggio del mouse | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Campione & FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "& FF3E3E40 campione")<br />`#FF3E3E40` | ![Campione & FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "& FFFFFCF4 campione")<br />`#FFFFFCF4` | ![Evidenziare campione](../../extensibility/ux-guidelines/media/HCHighlight.png "evidenziazione campione")<br />`Highlight` |
-| Bordo | nessuno | Nessuna | Nessuna | nessuno |
+| Bordo | nessuno | nessuno | nessuno | nessuno |
 | Bordo: al passaggio del mouse | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Campione & FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "& FF3E3E40 campione")<br />`#FF3E3E40` | ![#FFE5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "##FFE5C365 swatch")<br />`#FFE5C365` | ![Campione WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame campione")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Gruppo di categorie

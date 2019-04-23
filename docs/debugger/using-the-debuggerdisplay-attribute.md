@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099893"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger gli elementi da visualizzare utilizzando l'attributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 Il ", nq" suffisso indica l'analizzatore di espressioni per rimuovere le virgolette, la visualizzazione del valore finale (nq non = virgolette).
 
 ## <a name="example"></a>Esempio
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

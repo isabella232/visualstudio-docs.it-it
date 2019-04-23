@@ -8,12 +8,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b111ee037fe02e3c98d0628a4c358c56153c2053
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: badf8d53a73c86bac9422fd2bb7e1f073dd291eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108269"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Uso di emulatori per isolare gli unit test per le applicazioni di SharePoint 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Il pacchetto Microsoft.SharePoint.Emulators fornisce un set di librerie che cons
   
  Le classi e i metodi di test esistenti possono essere facilmente convertiti per essere eseguiti nel contesto dell'emulatore. Questa funzionalità consente di creare test a doppio uso. Un test a doppio uso consente di passare tra test di integrazione eseguiti sull'API di SharePoint reale e unit test isolati che usano gli emulatori.  
   
-##  <a name="BKMK_In_this_topic"></a> In questo argomento  
+## <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Requisiti](#BKMK_Requirements)  
   
  [Esempio di AppointmentsWebPart](#BKMK_The_AppointmentsWebPart_example)  
@@ -45,7 +45,7 @@ Il pacchetto Microsoft.SharePoint.Emulators fornisce un set di librerie che cons
   
   [Tipi emulati di SharePoint](#BKMK_Emulated_SharePoint_types)  
   
-##  <a name="BKMK_Requirements"></a> Requisiti  
+## <a name="BKMK_Requirements"></a> Requisiti  
   
 - Microsoft SharePoint 2010 (SharePoint 2010 Server o SharePoint 2010 Foundation)  
   
@@ -55,7 +55,7 @@ Il pacchetto Microsoft.SharePoint.Emulators fornisce un set di librerie che cons
   
   È inoltre necessario avere familiarità con le [nozioni di base sul testing unità in Visual Studio](../test/unit-test-basics.md) e una discreta conoscenza di [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
-##  <a name="BKMK_The_AppointmentsWebPart_example"></a> Esempio di AppointmentsWebPart  
+## <a name="BKMK_The_AppointmentsWebPart_example"></a> Esempio di AppointmentsWebPart  
  AppointmentsWebPart consente di visualizzare e gestire un elenco SharePoint di appuntamenti.  
   
  ![AppointmentsWebPart](../test/media/ut-emulators-appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")  
@@ -68,7 +68,7 @@ Il pacchetto Microsoft.SharePoint.Emulators fornisce un set di librerie che cons
   
   [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Converting_an_existing_test"></a> Conversione di un test esistente  
+## <a name="BKMK_Converting_an_existing_test"></a> Conversione di un test esistente  
  In un test tipico di un metodo in un componente di SharePoint, il metodo di test crea un sito temporaneo in SharePoint Foundation e aggiunge al sito i componenti di SharePoint richiesti dal codice sottoposto a test. Il metodo di test quindi crea e usa un'istanza del componente. Alla fine del test, il sito viene eliminato.  
   
  Il metodo `ScheduleAppointment` del codice sottoposto a test è probabilmente uno dei primi metodi scritti per il componente:  
@@ -138,7 +138,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> Aggiunta del pacchetto di emulatori a un progetto di test  
+### <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> Aggiunta del pacchetto di emulatori a un progetto di test  
  Per aggiungere gli emulatori SharePoint a un progetto di test:  
   
 1. Selezionare il progetto di test in Esplora soluzioni.  
@@ -151,7 +151,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
    [In questo argomento](#BKMK_In_this_topic)  
   
-###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Esecuzione di un metodo di test con l'emulazione  
+### <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Esecuzione di un metodo di test con l'emulazione  
  Installando il pacchetto vengono aggiunti riferimenti alle librerie necessarie ai progetti. Per semplificare l'uso degli emulatori in una classe di test esistente, aggiungere gli spazi dei nomi `Microsoft.SharePoint.Emulators` e `Microsoft.QualityTools.Testing.Emulators`.  
   
  Per abilitare l'emulazione nei metodi di test, eseguire il wrapping del corpo del metodo in un'istruzione `using` che crea un oggetto `SharePointEmulationScope`. Ad esempio:  
@@ -190,7 +190,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Creazione di metodi e classi a doppio uso  
+## <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Creazione di metodi e classi a doppio uso  
  Per creare metodi che possono essere usati sia per i test di integrazione sull'API di SharePoint reale sia per gli unit test isolati che usano gli emulatori, usare il costruttore di overload `SharePointEmulationScope(EmulationMode)` per eseguire il wrapping del codice del metodo di test. I due valori dell'enumerazione `EmulationMode` specificano se l'ambito usa gli emulatori (`EmulationMode.Enabled`) o l'API di SharePoint (`EmulationMode.Passthrough`).  
   
  Ad esempio, ecco come è possibile modificare il test precedente perché sia a doppio uso:   
@@ -227,10 +227,10 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> Uso degli attributi TestInitialize e TestCleanup per creare una classe di test a doppio uso  
+## <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> Uso degli attributi TestInitialize e TestCleanup per creare una classe di test a doppio uso  
  Se si eseguono tutti i test, o la maggior parte di essi, in una classe mediante `SharePointEmulationScope`, è possibile sfruttare le tecniche a livello di classe per impostare la modalità di emulazione.  
   
-- I metodi della classe di test con attribuiti <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> e <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> possono creare ed eliminare l'ambito.  
+- I metodi della classe di test con attribuiti <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> e <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> possono creare ed eliminare definitivamente l'ambito.  
   
 - L'impostazione di `EmulationMode` a livello di classe consente di automatizzare il passaggio della modalità tra `EmulationMode.Enabled` e `EmulationMode.Passthrough`.  
   
@@ -294,7 +294,7 @@ namspace MySPAppTests
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> Gestione dei metodi non emulati di SharePoint  
+## <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> Gestione dei metodi non emulati di SharePoint  
  Non tutti i tipi di SharePoint vengono emulati e non tutti i metodi di alcuni tipi emulati vengono emulati. Se il codice sottoposto a test chiama un metodo di SharePoint che non viene emulato, il metodo genera un'eccezione `NotSupportedException`. Quando si verifica un'eccezione, si aggiunge uno shim Fakes per il metodo di SharePoint.  
   
  **Configurazione di Sharepoint Fakes**  
@@ -385,7 +385,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> Scrittura di test di emulazione da zero e riepilogo  
+## <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> Scrittura di test di emulazione da zero e riepilogo  
  Sebbene le tecniche per creare i test di emulazione e a doppio uso descritte nelle sezioni precedenti presuppongano che si stiano convertendo test esistenti, è anche possibile usare tali tecniche per scrivere i test da zero. Le tecniche sono riepilogate nell'elenco seguente:  
   
 - Per usare gli emulatori in un progetto di test, aggiungere il pacchetto NuGet Microsoft.SharePoint.Emulators al progetto.  
@@ -402,7 +402,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
   
   [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Example"></a> Esempio  
+## <a name="BKMK_Example"></a> Esempio  
  Di seguito è riportato l'esempio finale che include le tecniche degli emulatori di SharePoint descritte in precedenza:  
   
 ```csharp  
@@ -522,7 +522,7 @@ namspace MySPAppTests
   
 ```  
   
-##  <a name="BKMK_Emulated_SharePoint_types"></a> Tipi emulati di SharePoint  
+## <a name="BKMK_Emulated_SharePoint_types"></a> Tipi emulati di SharePoint  
  [Microsoft.SharePoint.SPField](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)  
   
  [Microsoft.SharePoint.SPFieldIndex](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndex)  

@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ebff9b9e41212fcb1d33b7672e87aae8103571b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103292"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
 
  Di seguito sono elencate le diverse sezioni di questo argomento:
 
--   [Elenco di controllo rapido](#Checklist)
+- [Elenco di controllo rapido](#Checklist)
 
--   [Requisiti di sistema](#System)
+- [Requisiti di sistema](#System)
 
--   [Requisiti di rete](#Network)
+- [Requisiti di rete](#Network)
 
--   [Requisiti di Hyper-V](#HyperV)
+- [Requisiti di Hyper-V](#HyperV)
 
--   [L'esecuzione dell'emulatore da un VHD di avvio non è supportata](#BootableVHD)
+- [L'esecuzione dell'emulatore da un VHD di avvio non è supportata](#BootableVHD)
 
--   [Hyper-V richiede file non compressi e non crittografati](#Files)
+- [Hyper-V richiede file non compressi e non crittografati](#Files)
 
-##  <a name="Checklist"></a> Elenco di controllo rapido
+## <a name="Checklist"></a> Elenco di controllo rapido
  Di seguito è riportato un elenco di controllo rapido dei requisiti per l'esecuzione di Visual Studio Emulator per Android. Per informazioni più dettagliate, vedere le sezioni successive in questo argomento.
 
  Requisiti di sistema
@@ -62,17 +62,17 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
 
 - Nel BIOS, devono essere supportate le funzionalità seguenti:
 
-  -   Virtualizzazione assistita da hardware
+  - Virtualizzazione assistita da hardware
 
-  -   Conversione indirizzi di secondo livello
+  - Conversione indirizzi di secondo livello
 
-  -   Protezione esecuzione programmi basata su hardware
+  - Protezione esecuzione programmi basata su hardware
 
 - In Windows, Hyper-V deve essere abilitato e in esecuzione.
 
 - È necessario essere un membro del gruppo di amministratori di Hyper-V locali.
 
-##  <a name="System"></a> Requisiti di sistema
+## <a name="System"></a> Requisiti di sistema
  Il computer deve soddisfare i seguenti requisiti:
 
 - Supporto di Hyper-V (vedere [Requisiti di Hyper-V](#HyperV))
@@ -85,7 +85,7 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
 
   ![Verificare i requisiti di sistema](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> Requisiti di rete
+## <a name="Network"></a> Requisiti di rete
  La rete deve soddisfare i seguenti requisiti:
 
 - DHCP
@@ -100,7 +100,7 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
 
 - [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Requisiti di Hyper-V
+## <a name="HyperV"></a> Requisiti di Hyper-V
  Requisiti di Hyper-V nel BIOS
 
  Il BIOS del computer deve supportare i requisiti seguenti e tali requisiti devono essere abilitati:
@@ -133,12 +133,12 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
 
  Per aggiungersi manualmente a un gruppo, aprire lo snap-in Utenti e gruppi locali.
 
-##  <a name="BootableVHD"></a> L'esecuzione dell'emulatore da un VHD di avvio non è supportata
+## <a name="BootableVHD"></a> L'esecuzione dell'emulatore da un VHD di avvio non è supportata
  Se si tenta di eseguire un'applicazione in Visual Studio Emulator per Android durante l'esecuzione di Windows da un VHD di avvio, l'emulatore in genere richiede alcuni minuti per l'avvio o non viene avviato. Se l'emulatore non viene avviato, viene visualizzato il messaggio seguente: Distribuzione dell'app non riuscita. Riprovare.
 
  Questa configurazione non è supportata. Per informazioni sui problemi correlati, vedere [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-##  <a name="Files"></a> Hyper-V richiede file non compressi e non crittografati
+## <a name="Files"></a> Hyper-V richiede file non compressi e non crittografati
  Su un disco rigido configurato con il file system NTFS, i file del disco rigido virtuale usati da Hyper-V devono essere non compressi e non crittografati. Assicurarsi che le seguenti directory non siano compresse o crittografate:
 
 - %localappdata%\Microsoft\XDE

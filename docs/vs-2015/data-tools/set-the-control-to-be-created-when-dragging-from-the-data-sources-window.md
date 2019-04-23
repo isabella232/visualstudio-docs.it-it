@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3c9902080ae501c1d77a59f152d7d272462d2264
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115419"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,13 +57,13 @@ ms.locfileid: "59657454"
   
 #### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Per impostare i controlli da creare per le colonne o proprietà  
   
-1.  Assicurarsi che sia aperta la finestra di progettazione WPF o in Progettazione Windows Form.  
+1. Assicurarsi che sia aperta la finestra di progettazione WPF o in Progettazione Windows Form.  
   
-2.  Nel **Zdroje dat** finestra, espandere la tabella desiderata o per visualizzare le colonne o proprietà dell'oggetto.  
+2. Nel **Zdroje dat** finestra, espandere la tabella desiderata o per visualizzare le colonne o proprietà dell'oggetto.  
   
-3.  Selezionare ogni colonna o proprietà per il quale si desidera impostare il controllo da creare.  
+3. Selezionare ogni colonna o proprietà per il quale si desidera impostare il controllo da creare.  
   
-4.  Fare clic sul menu a discesa per la colonna o proprietà e quindi selezionare il controllo da creare quando l'elemento viene trascinato nella finestra di progettazione.  
+4. Fare clic sul menu a discesa per la colonna o proprietà e quindi selezionare il controllo da creare quando l'elemento viene trascinato nella finestra di progettazione.  
   
      L'elenco dei controlli disponibili dipende dalla progettazione aperta, la versione di .NET Framework le destinazioni del progetto e dai controlli personalizzati che supportano i dati di associazione si sono aggiunte alle **casella degli strumenti**. Se il controllo da creare è nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73266c77a26f614af9978b48f7475086070aa5e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108282"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Cenni preliminari sul multitargeting di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
   
  Di seguito sono riportate alcune delle funzionalità di definizione destinazione di MSBuild:  
   
--   È possibile sviluppare applicazioni destinate a una precedente versione di .NET Framework, ad esempio le versioni 2.0, 3.5 e 4.  
+- È possibile sviluppare applicazioni destinate a una precedente versione di .NET Framework, ad esempio le versioni 2.0, 3.5 e 4.  
   
--   È possibile avere un framework di destinazione diverso da .NET Framework, ad esempio Silverlight.  
+- È possibile avere un framework di destinazione diverso da .NET Framework, ad esempio Silverlight.  
   
--   L'applicazione può essere destinata a un *profilo del framework*, vale a dire un subset predefinito di un framework di destinazione.  
+- L'applicazione può essere destinata a un *profilo del framework*, vale a dire un subset predefinito di un framework di destinazione.  
   
--   In caso di rilascio di un Service Pack per la versione corrente di .NET Framework, è possibile destinare l'applicazione a esso.  
+- In caso di rilascio di un Service Pack per la versione corrente di .NET Framework, è possibile destinare l'applicazione a esso.  
   
--   Il multitargeting di MSBuild garantisce che un'applicazione usi solo le funzionalità disponibili nel framework e nella piattaforma di destinazione.  
+- Il multitargeting di MSBuild garantisce che un'applicazione usi solo le funzionalità disponibili nel framework e nella piattaforma di destinazione.  
   
 ## <a name="target-framework-and-platform"></a>Framework e piattaforma di destinazione  
  Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è preferibile destinare un'applicazione a .NET Framework 2.0 per eseguirla su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione di MSBuild](../msbuild/msbuild-target-framework-and-target-platform.md).  

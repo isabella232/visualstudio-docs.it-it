@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e5e7eb7dcfe8103370e30b0be18a0fdcda298d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094899"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedura: Eseguire il debug di codice assembly inline
 
@@ -35,9 +35,9 @@ Per il debug di codice assembly inline sono disponibili le finestre **Disassembl
 
 ## <a name="debug-inline-assembly-code"></a>Eseguire il debug di codice assembly inline
 
-1.  Usare la finestra **Disassembly** per visualizzare le istruzioni dell'assembly.
+1. Usare la finestra **Disassembly** per visualizzare le istruzioni dell'assembly.
 
-2.  Usare la finestra **Registri** per visualizzare il contenuto del registro.
+2. Usare la finestra **Registri** per visualizzare il contenuto del registro.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 866b3718ac6071b5e7bd5cc44ed2ca17dd54dc8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a37ad954202910930ff06c8206e66c0594a8d1d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107398"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Questa interfaccia enumera i programmi in esecuzione nella sessione di debug corrente.
@@ -48,13 +48,13 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="remarks"></a>Note
  Visual Studio Usa questa interfaccia per:
 
--   Popolare la **moduli** finestra (chiamando [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) e quindi chiamando [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) su ciascun programma).
+- Popolare la **moduli** finestra (chiamando [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) e quindi chiamando [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) su ciascun programma).
 
--   Popolare la **Connetti a processo** elenco (chiamando `IDebugProcess2::EnumPrograms` e quindi chiamare [QueryInterface](/cpp/atl/queryinterface) su ogni [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per ottenere un [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) interface).
+- Popolare la **Connetti a processo** elenco (chiamando `IDebugProcess2::EnumPrograms` e quindi chiamare [QueryInterface](/cpp/atl/queryinterface) su ogni [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per ottenere un [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) interface).
 
--   Generare un elenco di DEs che è possibile eseguire il debug di ogni programma nel processo (tramite [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
+- Generare un elenco di DEs che è possibile eseguire il debug di ogni programma nel processo (tramite [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
 
--   Applicare gli aggiornamenti di modifica e Continuazione per ogni programma (chiamando IDebugProcess2::EnumPrograms e quindi chiamare [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).
+- Applicare gli aggiornamenti di modifica e Continuazione per ogni programma (chiamando IDebugProcess2::EnumPrograms e quindi chiamare [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099591"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ ms.locfileid: "54774993"
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Per aggiungere l'assembly ASPNetHelper come elemento configuration/runtime/assemblyBinding/dependentAssembly  
   
-1.  Se necessario, aggiungere l'elemento **runtime** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.  
+1. Se necessario, aggiungere l'elemento **runtime** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.  
   
      L'elemento **runtime** non contiene attributi. L'elemento **configuration** può avere un solo elemento **runtime** figlio.  
   
-2.  Se necessario, aggiungere l'elemento **assemblyBinding** come elemento figlio dell'elemento **runtime**; in caso contrario, andare al passaggio successivo.  
+2. Se necessario, aggiungere l'elemento **assemblyBinding** come elemento figlio dell'elemento **runtime**; in caso contrario, andare al passaggio successivo.  
   
      L'elemento **runtime** può avere un solo elemento **assemblyBinding** figlio.  
   
-3.  Aggiungere il nome e il valore di attributo riportati di seguito all'elemento **assemblyBinding**:  
+3. Aggiungere il nome e il valore di attributo riportati di seguito all'elemento **assemblyBinding**:  
   
     |Nome attributo|Valore attributo|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Aggiungere un elemento **dependentAssembly** come elemento figlio dell'elemento **assemblyBinding**.  
+4. Aggiungere un elemento **dependentAssembly** come elemento figlio dell'elemento **assemblyBinding**.  
   
      L'elemento **dependentAssembly** non contiene attributi.  
   
-5.  Aggiungere un elemento **assemblyIdentity** come elemento figlio dell'elemento **dependentAssembly**.  
+5. Aggiungere un elemento **assemblyIdentity** come elemento figlio dell'elemento **dependentAssembly**.  
   
-6.  Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **assemblyIdentity**:  
+6. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **assemblyIdentity**:  
   
     |Nome attributo|Valore attributo|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ ms.locfileid: "54774993"
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Aggiungere un elemento **codeBase** come elemento figlio dell'elemento **dependentAssembly**.  
+7. Aggiungere un elemento **codeBase** come elemento figlio dell'elemento **dependentAssembly**.  
   
-8.  Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **codeBase**:  
+8. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **codeBase**:  
   
     |Nome attributo|Valore attributo|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ ms.locfileid: "54774993"
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Per aggiungere il passaggio di post-elaborazione del profiler all'elemento configuration/system.web/compilation  
   
-1.  Se necessario, aggiungere l'elemento **system.web** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.  
+1. Se necessario, aggiungere l'elemento **system.web** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.  
   
      L'elemento **system.web** non contiene attributi. L'elemento **configuration** può avere un solo elemento **system.web** figlio.  
   
-2.  Se necessario, aggiungere l'elemento **compilation** come elemento figlio dell'elemento **system.web**; in caso contrario, andare al passaggio successivo.  
+2. Se necessario, aggiungere l'elemento **compilation** come elemento figlio dell'elemento **system.web**; in caso contrario, andare al passaggio successivo.  
   
      L'elemento **system.web** può avere un solo elemento **compilation** figlio.  
   
-3.  Rimuovere qualsiasi attributo esistente dall'elemento **compilation** e aggiungere il nome e il valore di attributo seguenti:  
+3. Rimuovere qualsiasi attributo esistente dall'elemento **compilation** e aggiungere il nome e il valore di attributo seguenti:  
   
     |Nome attributo|Valore attributo|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ ms.locfileid: "54774993"
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Per aggiungere le impostazioni del percorso del profiler all'elemento configuration/appSettings  
   
-1.  Se necessario, aggiungere l'elemento **appSettings** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.  
+1. Se necessario, aggiungere l'elemento **appSettings** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.  
   
      L'elemento **appSettings** non contiene attributi. L'elemento **configuration** può avere un solo elemento **appSettings** figlio.  
   
-2.  Aggiungere un elemento **add** come elemento figlio dell'elemento **appSettings**.  
+2. Aggiungere un elemento **add** come elemento figlio dell'elemento **appSettings**.  
   
-3.  Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **add**:  
+3. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **add**:  
   
     |Nome attributo|Valore attributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Aggiungere un altro elemento **add** come elemento figlio dell'elemento **appSettings**.  
+4. Aggiungere un altro elemento **add** come elemento figlio dell'elemento **appSettings**.  
   
-5.  Aggiungere i nomi e i valori di attributo riportati di seguito a questo elemento **add**:  
+5. Aggiungere i nomi e i valori di attributo riportati di seguito a questo elemento **add**:  
   
     |Nome attributo|Valore attributo|  
     |--------------------|---------------------|  

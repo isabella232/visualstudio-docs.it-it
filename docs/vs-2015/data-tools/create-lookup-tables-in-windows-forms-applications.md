@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102978"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Il termine *tabella di ricerca* descrive i controlli associati a due tabelle dat
   
 ## <a name="to-databind-a-lookup-control"></a>Come associare un controllo di ricerca  
   
-1.  Aprire la finestra **Origini dati**.  
+1. Aprire la finestra **Origini dati**.  
   
     > [!NOTE]
     > Le tabelle di ricerca richiedono che siano disponibili in due tabelle correlate o gli oggetti di **Zdroje dat** finestra.
   
-2.  Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre e tutte le relative colonne e la tabella figlio correlata e tutte le relative colonne.  
+2. Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre e tutte le relative colonne e la tabella figlio correlata e tutte le relative colonne.  
   
     > [!NOTE]
     >  Il nodo della tabella figlio è il nodo che viene visualizzato come nodo figlio espandibile nella tabella padre.  
   
-3.  Modificare il tipo di rilascio della tabella figlio alla **informazioni dettagliate** selezionando **dettagli** dall'elenco di controllo sul nodo della tabella figlio. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Modificare il tipo di rilascio della tabella figlio alla **informazioni dettagliate** selezionando **dettagli** dall'elenco di controllo sul nodo della tabella figlio. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  Individuare il nodo che correla le due tabelle (il `CustomerID` nodo nell'esempio precedente). Modificare il tipo di rilascio a un <xref:System.Windows.Forms.ComboBox> selezionando **ComboBox** dall'elenco di controllo.  
+4. Individuare il nodo che correla le due tabelle (il `CustomerID` nodo nell'esempio precedente). Modificare il tipo di rilascio a un <xref:System.Windows.Forms.ComboBox> selezionando **ComboBox** dall'elenco di controllo.  
   
-5.  Trascinare il nodo della tabella figlio principale dal **Zdroje dat** finestra nei form.  
+5. Trascinare il nodo della tabella figlio principale dal **Zdroje dat** finestra nei form.  
   
      I controlli con associazione a dati (con etichette descrittive) e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) vengono visualizzati nel form. Oggetto [set di dati](../data-tools/dataset-tools-in-visual-studio.md), oggetto TableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.  
   
-6.  Trascinare ora il nodo della tabella padre principale dal **Zdroje dat** finestra direttamente al controllo di ricerca (il <xref:System.Windows.Forms.ComboBox>).  
+6. Trascinare ora il nodo della tabella padre principale dal **Zdroje dat** finestra direttamente al controllo di ricerca (il <xref:System.Windows.Forms.ComboBox>).  
   
      A questo punto vengono stabilite le associazioni di ricerca. Vedere la tabella seguente per le proprietà specifiche di quelle impostate nella finestra di controllo.  
   

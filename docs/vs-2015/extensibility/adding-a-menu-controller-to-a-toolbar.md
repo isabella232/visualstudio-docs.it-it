@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107801"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Aggiunta di un controller di menu a una barra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementazione dei comandi di Controller di Menu  
   
-1.  In TWTestCommandPackageGuids.cs, aggiungere gli ID comando per le tre voci di menu dopo l'ID di comando esistenti.  
+1. In TWTestCommandPackageGuids.cs, aggiungere gli ID comando per le tre voci di menu dopo l'ID di comando esistenti.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  In TWTestCommand.cs, aggiungere il codice seguente all'inizio della classe TWTestCommand.  
+2. In TWTestCommand.cs, aggiungere il codice seguente all'inizio della classe TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  Nel costruttore TWTestCommand, dopo l'ultima chiamata al `AddCommand` metodo, aggiungere il codice per instradare gli eventi per ogni comando tramite i gestori di eventi stesso.  
+3. Nel costruttore TWTestCommand, dopo l'ultima chiamata al `AddCommand` metodo, aggiungere il codice per instradare gli eventi per ogni comando tramite i gestori di eventi stesso.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
     }  
     ```  
   
-4.  Aggiungere un gestore eventi alla classe TWTestCommand per contrassegnare il comando selezionato come selezionato.  
+4. Aggiungere un gestore eventi alla classe TWTestCommand per contrassegnare il comando selezionato come selezionato.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
     }  
     ```  
   
-5.  Aggiungere un gestore eventi che consente di visualizzare una finestra di messaggio quando l'utente seleziona un comando nel controller di menu:  
+5. Aggiungere un gestore eventi che consente di visualizzare una finestra di messaggio quando l'utente seleziona un comando nel controller di menu:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ Questa procedura dettagliata si basa sulle [aggiunta di una barra degli strument
   
 ## <a name="testing-the-menu-controller"></a>Il test Controller di Menu  
   
-1.  Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.  
+1. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.  
   
-2.  Aprire il **ToolWindow di Test** nel **visualizzazione / Other Windows** menu.  
+2. Aprire il **ToolWindow di Test** nel **visualizzazione / Other Windows** menu.  
   
      Il controller di menu viene visualizzato nella barra degli strumenti nella finestra degli strumenti e consente di visualizzare **MC elemento 1**.  
   
-3.  Fare clic sul pulsante di controller di menu a sinistra della freccia.  
+3. Fare clic sul pulsante di controller di menu a sinistra della freccia.  
   
      Verranno visualizzati tre elementi, il primo dei quali è selezionato e dispone di una casella evidenziazione intorno relativa icona. Fare clic su **MC elemento 3**.  
   

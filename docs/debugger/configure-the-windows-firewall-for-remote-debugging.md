@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100365"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per debug remoto
 
@@ -102,13 +102,13 @@ In un computer remoto, gli strumenti di debug remoti sono:
 
 1. Selezionare **consentire a un'app tramite Windows Firewall**.
 
-1.  Se **Remote Debugger** oppure **Visual Studio Remote Debugger** non viene visualizzato sotto **App e funzionalità consentite**, selezionare **modificare impostazioni**, quindi selezionare **Consenti un'altra app**.
+1. Se **Remote Debugger** oppure **Visual Studio Remote Debugger** non viene visualizzato sotto **App e funzionalità consentite**, selezionare **modificare impostazioni**, quindi selezionare **Consenti un'altra app**.
 
-1.  Se l'app del debugger remoto non è ancora presente nel **aggiungere un'app** finestra di dialogo, seleziona **Sfoglia**e passare a  *\<directory di installazione di Visual Studio\> \\Common7\\IDE\\Debugger remoto\\\<x86*, *x64*, o *Appx* \> , a seconda dell'architettura appropriata per l'app. Selezionare *msvsmon.exe*, quindi selezionare **Add**.
+1. Se l'app del debugger remoto non è ancora presente nel **aggiungere un'app** finestra di dialogo, seleziona **Sfoglia**e passare a  *\<directory di installazione di Visual Studio\> \\Common7\\IDE\\Debugger remoto\\\<x86*, *x64*, o *Appx* \> , a seconda dell'architettura appropriata per l'app. Selezionare *msvsmon.exe*, quindi selezionare **Add**.
 
-1.  Nel **Apps** elenco, selezionare la **Debugger remoto** appena aggiunto. Selezionare **tipi di rete**e quindi selezionare uno o più tipi di rete, incluso il tipo di rete per la connessione remota.
+1. Nel **Apps** elenco, selezionare la **Debugger remoto** appena aggiunto. Selezionare **tipi di rete**e quindi selezionare uno o più tipi di rete, incluso il tipo di rete per la connessione remota.
 
-1.  Selezionare **Add**, quindi selezionare **OK**.
+1. Selezionare **Add**, quindi selezionare **OK**.
 
 ## <a name="troubleshooting"></a>Risolvere i problemi di connessione al debug remoto
 

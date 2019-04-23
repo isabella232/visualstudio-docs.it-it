@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103368"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Miglioramento della qualità del codice con i criteri di archiviazione del progetto team
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Quando si usa il controllo della versione di Team Foundation (TFVC), è possibil
   
  È possibile specificare i seguenti criteri di archiviazione del progetto team:  
   
--   **Compila**: Richiede che le interruzioni di compilazione create durante una compilazione vengano corrette prima di un nuovo controllo aggiuntivo.  
+- **Compila**: Richiede che le interruzioni di compilazione create durante una compilazione vengano corrette prima di un nuovo controllo aggiuntivo.  
   
--   **I commenti dell'insieme di modifiche**: Richiede che gli utenti forniscano commenti quando archiviano le modifiche.  
+- **I commenti dell'insieme di modifiche**: Richiede che gli utenti forniscano commenti quando archiviano le modifiche.  
   
--   **Analisi del codice**: Richiede che venga eseguita l'analisi del codice prima dell'archiviazione.  
+- **Analisi del codice**: Richiede che venga eseguita l'analisi del codice prima dell'archiviazione.  
   
--   **Gli elementi di lavoro**: Richiede che uno o più elementi di lavoro sia associato a check-in.  
+- **Gli elementi di lavoro**: Richiede che uno o più elementi di lavoro sia associato a check-in.  
   
 > [!IMPORTANT]
 >  Per usare i criteri di archiviazione, è necessario essere connessi a [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  

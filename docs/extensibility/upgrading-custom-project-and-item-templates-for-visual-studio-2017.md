@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102627"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Eseguire l'aggiornamento di progetto personalizzato e modelli di elementi per Visual Studio 2017
 
@@ -32,36 +32,36 @@ Per altre posizioni (non-utente), è necessario includere un file manifest(.vstm
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Come aggiornare un'estensione VSIX con i modelli di elemento o progetto
 
-1.  Aprire la soluzione in Visual Studio 2017. Verrà richiesto di aggiornare il codice. Fare clic su **OK**.
+1. Aprire la soluzione in Visual Studio 2017. Verrà richiesto di aggiornare il codice. Fare clic su **OK**.
 
-2.  Al termine dell'aggiornamento, si potrebbe essere necessario modificare la versione della destinazione di installazione. Nel progetto VSIX, aprire il file vsixmanifest e selezionare il **destinazioni di installazione** scheda. Se il **intervallo di versioni** campo **[14.0]**, fare clic su **Edit** e modificare in modo da includere Visual Studio 2017. Ad esempio, è possibile impostare **[14.0,15.0]** per installare l'estensione per Visual Studio 2015 o Visual Studio 2017 o a **[15.0]** per installarlo semplicemente Visual Studio 2017.
+2. Al termine dell'aggiornamento, si potrebbe essere necessario modificare la versione della destinazione di installazione. Nel progetto VSIX, aprire il file vsixmanifest e selezionare il **destinazioni di installazione** scheda. Se il **intervallo di versioni** campo **[14.0]**, fare clic su **Edit** e modificare in modo da includere Visual Studio 2017. Ad esempio, è possibile impostare **[14.0,15.0]** per installare l'estensione per Visual Studio 2015 o Visual Studio 2017 o a **[15.0]** per installarlo semplicemente Visual Studio 2017.
 
-3.  Ricompilare il codice.
+3. Ricompilare il codice.
 
-4.  Chiudere Visual Studio.
+4. Chiudere Visual Studio.
 
-5.  Installare l'estensione VSIX.
+5. Installare l'estensione VSIX.
 
-6.  È possibile testare l'aggiornamento eseguendo queste operazioni:
+6. È possibile testare l'aggiornamento eseguendo queste operazioni:
 
-    1.  L'analisi dei modifica il file viene attivato mediante la chiave del Registro di sistema seguente:
+    1. L'analisi dei modifica il file viene attivato mediante la chiave del Registro di sistema seguente:
 
          **REG aggiungere hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  Dopo aver aggiunto la chiave, eseguire **devenv /installvstemplates**.
+    2. Dopo aver aggiunto la chiave, eseguire **devenv /installvstemplates**.
 
-    3.  Riaprire Visual Studio. È necessario trovare il modello nel percorso previsto.
+    3. Riaprire Visual Studio. È necessario trovare il modello nel percorso previsto.
 
     > [!NOTE]
     >  I modelli di progetto Extensibility di Visual Studio non sono disponibili quando la chiave del Registro di sistema è presente. È necessario eliminare la chiave del Registro di sistema (e rieseguire **devenv /installvstemplates**) di utilizzarli.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Altri suggerimenti per la distribuzione di Project and Item Templates
 
--   Evitare di usare i file di modello compresso. Compressi in file devono essere compressi per recuperare le risorse e il contenuto modello pertanto saranno costlier da usare. In alternativa, è consigliabile distribuire i modelli di progetti ed elementi come file singoli nella propria directory per velocizzare l'inizializzazione di modello. Per le estensioni VSIX, le attività di compilazione SDK decomprimerà automaticamente qualsiasi modello compresso durante la creazione del file VSIX.
+- Evitare di usare i file di modello compresso. Compressi in file devono essere compressi per recuperare le risorse e il contenuto modello pertanto saranno costlier da usare. In alternativa, è consigliabile distribuire i modelli di progetti ed elementi come file singoli nella propria directory per velocizzare l'inizializzazione di modello. Per le estensioni VSIX, le attività di compilazione SDK decomprimerà automaticamente qualsiasi modello compresso durante la creazione del file VSIX.
 
--   Evitare di usare le voci di ID di pacchetto/risorsa per il nome del modello, la descrizione, icona o visualizzare un'anteprima per evitare di caricamenti di assembly di risorse non necessarie durante l'individuazione dei modelli. In alternativa, è possibile utilizzare manifesti localizzati per creare una voce di modello per ogni impostazione locale, che Usa nomi localizzati o proprietà.
+- Evitare di usare le voci di ID di pacchetto/risorsa per il nome del modello, la descrizione, icona o visualizzare un'anteprima per evitare di caricamenti di assembly di risorse non necessarie durante l'individuazione dei modelli. In alternativa, è possibile utilizzare manifesti localizzati per creare una voce di modello per ogni impostazione locale, che Usa nomi localizzati o proprietà.
 
--   Se si includono i modelli come elementi del file, la generazione del manifesto potrebbe non fornire i risultati previsti. In tal caso, è necessario aggiungere un manifesto generato manualmente al progetto VSIX.
+- Se si includono i modelli come elementi del file, la generazione del manifesto potrebbe non fornire i risultati previsti. In tal caso, è necessario aggiungere un manifesto generato manualmente al progetto VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Modifiche ai file nel progetto e modelli di elemento
 Illustra i punti della differenza tra Visual Studio 2015 e Visual Studio 2017 versioni dei file di modello, in modo che sia possibile creare i nuovi file in modo corretto.

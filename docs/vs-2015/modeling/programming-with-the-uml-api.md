@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111753"
 ---
 # <a name="programming-with-the-uml-api"></a>Programmazione con l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
   
  I tipi di questa piattaforma sono visibili in tutti gli assembly cui viene fatto riferimento per scrivere estensioni UML. Sebbene sia possibile creare estensioni agli strumenti UML effettuando l'accesso all'API [!INCLUDE[dsl](../includes/dsl-md.md)], tenere presenti le considerazioni:  
   
--   Si potrebbe scoprire che alcune modifiche apparentemente semplici introducono incoerenze ed effetti imprevisti.  
+- Si potrebbe scoprire che alcune modifiche apparentemente semplici introducono incoerenze ed effetti imprevisti.  
   
--   L'implementazione può cambiare in futuro, pertanto gli adattamenti effettuati usando l'API [!INCLUDE[dsl](../includes/dsl-md.md)] potrebbero non essere più validi.  
+- L'implementazione può cambiare in futuro, pertanto gli adattamenti effettuati usando l'API [!INCLUDE[dsl](../includes/dsl-md.md)] potrebbero non essere più validi.  
   
 ## <a name="the-api-assemblies"></a>Assembly API  
  In questa tabella sono riepilogati gli assembly che forniscono estensibilità per gli strumenti UML e gli spazi dei nomi che si consiglia di usare.  

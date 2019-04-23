@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103433"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Esposizione di tipi nelle finestre di progettazione visiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "58964922"
   
  Gli strumenti personalizzati che sfruttano i vantaggi del supporto PE temporaneo devono rispettare le regole seguenti:  
   
--   `GeneratesDesignTimeSource` deve essere impostato su 1 nel Registro di sistema.  
+- `GeneratesDesignTimeSource` deve essere impostato su 1 nel Registro di sistema.  
   
      Nessuna compilazione file eseguibile di programma viene eseguito senza questa impostazione.  
   
--   Il codice generato deve essere nella stessa lingua come l'impostazione di progetti globale.  
+- Il codice generato deve essere nella stessa lingua come l'impostazione di progetti globale.  
   
      Indipendentemente dal report che lo strumento personalizzato come l'estensione nella richiesta viene compilato il file PE temporaneo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> purché `GeneratesDesignTimeSource` è impostato su 1 nel Registro di sistema. L'estensione non dovrà essere JLS; con estensione cs o vb può essere qualsiasi estensione.  
   
--   Il codice generato dallo strumento personalizzato deve essere valido e deve essere compilato in proprio utilizzando solo il set di riferimenti presenti nel progetto al momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina l'esecuzione.  
+- Il codice generato dallo strumento personalizzato deve essere valido e deve essere compilato in proprio utilizzando solo il set di riferimenti presenti nel progetto al momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina l'esecuzione.  
   
      Quando viene compilato un file PE temporaneo, l'unico file di origine fornito al compilatore è l'output dello strumento personalizzato. Pertanto, uno strumento personalizzato che usa un file PE temporaneo necessario generare i file di output che possono essere compilati indipendentemente da altri file nel progetto.  
   

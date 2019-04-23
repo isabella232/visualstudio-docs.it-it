@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094821"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Esistono due tipi di archivi di impostazioni:
 ## <a name="creating-the-example-project"></a>Creazione del progetto di esempio  
  Questa sezione illustra come creare un progetto di estensione semplice con un comando di menu a scopo dimostrativo.  
   
-1.  Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `SettingsStoreExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual C# / Extensibility**.  
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `SettingsStoreExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
   
-2.  A questo punto aggiungere un modello di elemento di comando personalizzato denominato **SettingsStoreCommand**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual C# / Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **SettingsStoreCommand.cs**. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **SettingsStoreCommand**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **SettingsStoreCommand.cs**. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>Con il Store le impostazioni di configurazione  
  In questa sezione viene illustrato come rilevare e visualizzare le impostazioni di configurazione.  
@@ -79,11 +79,11 @@ Esistono due tipi di archivi di impostazioni:
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usare un editor del Registro di sistema per verificare le impostazioni di configurazione  
   
-1.  Aprire Regedit.exe.  
+1. Aprire Regedit.exe.  
   
-2.  Passare a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Passare a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
     >  Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp_Config\ e non \14.0_Config\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni di configurazione disponibili nell'hive del Registro di sistema "14.0Exp_Config".  
   
-3.  Espandere il nodo \Installed Products\. Se il messaggio nei passaggi precedenti è **installata di Microsoft Windows Phone Developer Tools: True**, \Installed Products\ deve contenere un nodo di Microsoft Windows Phone Developer Tools. Se il messaggio è **installata di Microsoft Windows Phone Developer Tools: False**, quindi \Installed Products\ non deve contenere un nodo di Microsoft Windows Phone Developer Tools.
+3. Espandere il nodo \Installed Products\. Se il messaggio nei passaggi precedenti è **installata di Microsoft Windows Phone Developer Tools: True**, \Installed Products\ deve contenere un nodo di Microsoft Windows Phone Developer Tools. Se il messaggio è **installata di Microsoft Windows Phone Developer Tools: False**, quindi \Installed Products\ non deve contenere un nodo di Microsoft Windows Phone Developer Tools.

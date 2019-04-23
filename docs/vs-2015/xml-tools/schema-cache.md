@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115991"
 ---
 # <a name="schema-cache"></a>Cache degli schemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
 
 #### <a name="to-change-the-schema-cache-location"></a>Per modificare il percorso della cache degli schemi  
 
-1.  Dal **degli strumenti** dal menu **opzioni**.  
+1. Dal **degli strumenti** dal menu **opzioni**.  
 
-2.  Espandere **Editor di testo**, espandere **XML**, quindi fare clic su **varie**.  
+2. Espandere **Editor di testo**, espandere **XML**, quindi fare clic su **varie**.  
 
-3.  Fare clic sul **esplorare** pulsante il **schemi** campo.  
+3. Fare clic sul **esplorare** pulsante il **schemi** campo.  
 
-4.  Selezionare la cartella della cache degli schemi e fare clic su **OK**.  
+4. Selezionare la cartella della cache degli schemi e fare clic su **OK**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Per aggiungere un'altra directory di schemi comuni  
 
-1.  Modificare il file catalog.xml nella directory della cache di schema dell'editor XML.  
+1. Modificare il file catalog.xml nella directory della cache di schema dell'editor XML.  
 
-2.  Aggiungere un nuovo elemento `<Catalog href="…"/>` che fa riferimento alla directory degli schemi aggiuntivi.  
+2. Aggiungere un nuovo elemento `<Catalog href="…"/>` che fa riferimento alla directory degli schemi aggiuntivi.  
 
-3.  Salvare le modifiche.  
+3. Salvare le modifiche.  
 
      Il catalogo viene ricaricato automaticamente.  
 

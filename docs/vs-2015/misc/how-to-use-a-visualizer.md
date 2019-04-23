@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100978"
 ---
 # <a name="how-to-use-a-visualizer"></a>Procedura: Usare un visualizzatore
 È possibile usare un visualizzatore per visualizzare il contenuto di una variabile o di un oggetto in modo significativo per il tipo di dati. È possibile utilizzare i visualizzatori da **suggerimenti dati**, un **Watch** finestra, il **Auto** finestra o il **variabili locali** finestra.  
@@ -40,15 +40,15 @@ ms.locfileid: "58965968"
   
 ### <a name="to-open-a-visualizer"></a>Per aprire un visualizzatore  
   
-1.  Scegliere l'icona della lente di ingrandimento visualizzata accanto al nome di una variabile in **suggerimenti dati**, un **Watch** finestra o nella **Auto**, **variabili locali**, o **Controllo immediato** finestra.  
+1. Scegliere l'icona della lente di ingrandimento visualizzata accanto al nome di una variabile in **suggerimenti dati**, un **Watch** finestra o nella **Auto**, **variabili locali**, o **Controllo immediato** finestra.  
   
      Verrà visualizzato un elenco di visualizzatori.  
   
-2.  Fare clic sul visualizzatore da usare.  
+2. Fare clic sul visualizzatore da usare.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Per usare un visualizzatore per il codice gestito durante il debug remoto  
   
--   Copiare la DLL del visualizzatore nel computer remoto prima di avviare la sessione di debug.  
+- Copiare la DLL del visualizzatore nel computer remoto prima di avviare la sessione di debug.  
   
      Il percorso della DLL deve essere lo stesso sia nel computer remoto che in quello locale. Il percorso può essere uno dei seguenti:  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110466"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un
   
 ### <a name="to-set-a-security-zone"></a>Per impostare un'area di sicurezza  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic sulla scheda **Sicurezza** .  
+2. Fare clic sulla scheda **Sicurezza** .  
   
-3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .  
+3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .  
   
-4.  Selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
+4. Selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
   
      I controlli nella sezione **Autorizzazioni di sicurezza ClickOnce** sono abilitati.  
   
-5.  Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare un'area di sicurezza.  
+5. Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare un'area di sicurezza.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

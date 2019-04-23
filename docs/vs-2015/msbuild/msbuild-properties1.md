@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101184"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>Creazione di proprietà durante l'esecuzione  
  Alle proprietà non comprese in elementi `Target` vengono assegnati valori durante la fase di valutazione di una compilazione. Durante la fase di esecuzione successiva, le proprietà possono essere create o modificate come segue:  
   
--   Una proprietà può essere creata da qualsiasi attività. Per creare una proprietà, l'elemento [Task](../msbuild/task-element-msbuild.md) deve avere un elemento [Output](../msbuild/output-element-msbuild.md) figlio con un attributo `PropertyName`.  
+- Una proprietà può essere creata da qualsiasi attività. Per creare una proprietà, l'elemento [Task](../msbuild/task-element-msbuild.md) deve avere un elemento [Output](../msbuild/output-element-msbuild.md) figlio con un attributo `PropertyName`.  
   
--   Una proprietà può essere creata dall'attività [CreateProperty](../msbuild/createproperty-task.md). Questo utilizzo è deprecato.  
+- Una proprietà può essere creata dall'attività [CreateProperty](../msbuild/createproperty-task.md). Questo utilizzo è deprecato.  
   
--   A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi `PropertyGroup` che possono contenere dichiarazioni di proprietà.  
+- A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi `PropertyGroup` che possono contenere dichiarazioni di proprietà.  
   
 ## <a name="storing-xml-in-properties"></a>Archiviazione di codice XML nelle proprietà  
  Le proprietà possono contenere codice XML arbitrario, che consente di passare i valori alle attività o di visualizzare le informazioni di registrazione. L'esempio seguente illustra la proprietà `ConfigTemplate`, che ha un valore contenente codice XML e riferimenti ad altre proprietà. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sostituisce i riferimenti alle proprietà con i rispettivi valori delle proprietà. I valori delle proprietà vengono assegnati nell'ordine in cui sono visualizzati. In questo esempio quindi `$(MySupportedVersion)`, `$(MyRequiredVersion)` e `$(MySafeMode)` devono essere già stati definiti.  

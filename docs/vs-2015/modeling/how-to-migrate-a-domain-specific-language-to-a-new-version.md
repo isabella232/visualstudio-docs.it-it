@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110325"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "58967581"
   
 #### <a name="to-prepare-projects-for-migration"></a>Per preparare i progetti di migrazione.  
   
--   Assicurarsi che il **file con estensione csproj** e **sln** file possono essere scritti. Se sono sotto controllo del codice sorgente, assicurarsi che vengono estratti.  
+- Assicurarsi che il **file con estensione csproj** e **sln** file possono essere scritti. Se sono sotto controllo del codice sorgente, assicurarsi che vengono estratti.  
   
--   Creare una copia di cartelle di cui che si intende eseguire la migrazione.  
+- Creare una copia di cartelle di cui che si intende eseguire la migrazione.  
   
 ## <a name="migrating-a-collection-of-projects"></a>La migrazione di una raccolta di progetti  
   
@@ -42,7 +42,7 @@ ms.locfileid: "58967581"
   
 1. Avviare lo strumento di migrazione di DSL.  
   
-   -   È possibile avviare lo strumento al prompt dei comandi o fare doppio clic sullo strumento in Windows Explorer (o Esplora File). Lo strumento è in questa posizione:  
+   - È possibile avviare lo strumento al prompt dei comandi o fare doppio clic sullo strumento in Windows Explorer (o Esplora File). Lo strumento è in questa posizione:  
   
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
@@ -54,37 +54,37 @@ ms.locfileid: "58967581"
   
 3. Esaminare l'albero dei progetti e deselezionare i progetti che non si desidera convertire.  
   
-   -   Selezionare un progetto o una soluzione per visualizzare un elenco delle modifiche che lo strumento.  
+   - Selezionare un progetto o una soluzione per visualizzare un elenco delle modifiche che lo strumento.  
   
        > [!NOTE]
        >  Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.  
   
 4. Convertire i progetti.  
   
-   1.  Fare clic su **convertire**.  
+   1. Fare clic su **convertire**.  
   
         Prima di ogni file di progetto viene convertito, una copia della _project_**csproj** viene salvato come _progetto_**. vs2008.csproj**  
   
         Una copia della ognuno _soluzione_**sln** viene salvato come _soluzione_**. vs2008.sln**  
   
-   2.  Esaminare tutte le conversioni non riuscite segnalati.  
+   2. Esaminare tutte le conversioni non riuscite segnalati.  
   
         Gli errori vengono segnalati nella finestra di testo. Inoltre, la visualizzazione albero mostra un contrassegno rosso in ogni nodo che non è riuscito a convertire. È possibile fare clic sul nodo per ottenere altre informazioni sull'errore.  
   
 5. **Trasforma tutti i modelli** nelle soluzioni contenente correttamente convertire i progetti.  
   
-   1.  Aprire la soluzione.  
+   1. Aprire la soluzione.  
   
-   2.  Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.  
+   2. Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.  
   
        > [!NOTE]
        >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aggiornare il codice personalizzato nei progetti convertiti.  
   
-   -   Provare a compilare i progetti ed esaminare gli eventuali errori.  
+   - Provare a compilare i progetti ed esaminare gli eventuali errori.  
   
-   -   Eseguire il test della finestra di progettazione.  
+   - Eseguire il test della finestra di progettazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Novità relative all'SDK di visualizzazione e modellazione](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

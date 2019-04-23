@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109179"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procedura: Memorizzare nella cache a livello di codice di un'origine dati in un documento di Office
   È possibile aggiungere un oggetto dati a livello di codice alla cache dei dati in un documento chiamando il `StartCaching` metodo di un host di elemento, ad esempio un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Rimuovere un oggetto dati dalla cache dei dati chiamando il `StopCaching` metodo di un elemento host.
@@ -34,19 +34,19 @@ ms.locfileid: "54867325"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Memorizzare nella cache a livello di codice di un oggetto dati
 
-1.  Dichiarare l'oggetto dati a livello di classe, non all'interno di un metodo. Questo esempio si presuppone che si sta dichiarando una <xref:System.Data.DataSet> denominato `dataSet1` che si desidera memorizzare nella cache a livello di codice.
+1. Dichiarare l'oggetto dati a livello di classe, non all'interno di un metodo. Questo esempio si presuppone che si sta dichiarando una <xref:System.Data.DataSet> denominato `dataSet1` che si desidera memorizzare nella cache a livello di codice.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  Creare un'istanza dell'oggetto dati e quindi chiamare il `StartCaching` metodo di istanza di documento o foglio di lavoro e passare il nome dell'oggetto dati.
+2. Creare un'istanza dell'oggetto dati e quindi chiamare il `StartCaching` metodo di istanza di documento o foglio di lavoro e passare il nome dell'oggetto dati.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>Per arrestare la memorizzazione nella cache un oggetto dati
 
-1.  Chiamare il `StopCaching` metodo di istanza di documento o foglio di lavoro e passare il nome dell'oggetto dati. Questo esempio si presuppone di avere una <xref:System.Data.DataSet> denominato `dataSet1` che si desidera arrestare la memorizzazione nella cache.
+1. Chiamare il `StopCaching` metodo di istanza di documento o foglio di lavoro e passare il nome dell'oggetto dati. Questo esempio si presuppone di avere una <xref:System.Data.DataSet> denominato `dataSet1` che si desidera arrestare la memorizzazione nella cache.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]

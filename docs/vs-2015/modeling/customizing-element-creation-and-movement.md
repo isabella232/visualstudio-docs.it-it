@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100521"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,9 +89,9 @@ ms.locfileid: "58965117"
   
 2. Per consentire agli utenti di unire elementi nel `ExampleElement` forme, creare un nuovo EMD nel `ExampleElement` della classe di dominio:  
   
-   1.  Nelle **DSL Explorer**, espandere **classi di dominio**. Fare doppio clic su `ExampleElement` e quindi fare clic su **Aggiungi nuova direttiva di unione**.  
+   1. Nelle **DSL Explorer**, espandere **classi di dominio**. Fare doppio clic su `ExampleElement` e quindi fare clic su **Aggiungi nuova direttiva di unione**.  
   
-   2.  Assicurarsi che il **dettagli DSL** finestra è aperta, in modo che è possibile visualizzare i dettagli di EMD di nuovo. (Menu: **Consente di visualizzare**, **altri Windows**, **dettagli DSL**.)  
+   2. Assicurarsi che il **dettagli DSL** finestra è aperta, in modo che è possibile visualizzare i dettagli di EMD di nuovo. (Menu: **Consente di visualizzare**, **altri Windows**, **dettagli DSL**.)  
   
 3. Impostare il **classe di indicizzazione** nella finestra Dettagli DSL per definire la classe di elementi può essere unita nel `ExampleElement` oggetti.  
   
@@ -119,29 +119,29 @@ ms.locfileid: "58965117"
   
 5. Testare il linguaggio DSL:  
   
-   1.  Premere F5 per ricompilare ed eseguire la soluzione.  
+   1. Premere F5 per ricompilare ed eseguire la soluzione.  
   
         La ricompilazione richiede più tempo superiore al normale perché il codice generato verrà aggiornato da modelli di testo per essere conforme alla nuova definizione DSL.  
   
-   2.  Quando l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è avviato, apre un file di modello del linguaggio DSL. Creare alcuni elementi di esempio.  
+   2. Quando l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è avviato, apre un file di modello del linguaggio DSL. Creare alcuni elementi di esempio.  
   
-   3.  Trascinare il **elemento esempio** dello strumento in una forma esistente.  
+   3. Trascinare il **elemento esempio** dello strumento in una forma esistente.  
   
         Verrà visualizzata una nuova forma e collegarla alla forma esistente con un connettore.  
   
-   4.  Copiare una forma esistente. Selezionare un'altra forma e incollare.  
+   4. Copiare una forma esistente. Selezionare un'altra forma e incollare.  
   
         Viene creata una copia della prima forma.  Dispone di un nuovo nome ed è collegato alla seconda forma con un connettore.  
   
    Notare gli aspetti seguenti da questa procedura:  
   
--   Tramite la creazione di direttive di unione, è possibile consentire qualsiasi classe di elemento per accettare qualsiasi altro. Il EMD viene creato nella classe del ricevente dominio e la classe di dominio accettato è specificata nel **classe Index** campo.  
+- Tramite la creazione di direttive di unione, è possibile consentire qualsiasi classe di elemento per accettare qualsiasi altro. Il EMD viene creato nella classe del ricevente dominio e la classe di dominio accettato è specificata nel **classe Index** campo.  
   
--   Definendo i percorsi, è possibile specificare quali collegamenti devono essere usato per connettersi al nuovo elemento al modello esistente.  
+- Definendo i percorsi, è possibile specificare quali collegamenti devono essere usato per connettersi al nuovo elemento al modello esistente.  
   
      I collegamenti che specificano devono includere una relazione di incorporamento.  
   
--   Il EMD influisce sia creazione dalla casella degli strumenti e anche le operazioni Incolla.  
+- Il EMD influisce sia creazione dalla casella degli strumenti e anche le operazioni Incolla.  
   
      Se si scrive codice personalizzato che crea nuovi elementi, è possibile richiamare in modo esplicito il EMD utilizzando il `ElementOperations.Merge` (metodo). Ciò assicura che il codice di collegamenti nuovi elementi nel modello in esattamente come altre operazioni. Per altre informazioni, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).  
   
@@ -150,21 +150,21 @@ ms.locfileid: "58965117"
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Scrivere il codice di accettazione personalizzata per limitare gli elementi che è possibile aggiungere l'utente  
   
-1.  Creare un linguaggio DSL utilizzando il **linguaggio minimo** modello di soluzione. Aprire il diagramma di definizione DSL.  
+1. Creare un linguaggio DSL utilizzando il **linguaggio minimo** modello di soluzione. Aprire il diagramma di definizione DSL.  
   
-2.  In DSL Explorer, espandere **classi di dominio**, `ExampleModel`, **direttive di unione**. Selezionare la direttiva di unione elementi denominato `ExampleElement`.  
+2. In DSL Explorer, espandere **classi di dominio**, `ExampleModel`, **direttive di unione**. Selezionare la direttiva di unione elementi denominato `ExampleElement`.  
   
      Questo EMD controlla la modalità con cui l'utente può creare nuovi `ExampleElement` gli oggetti del modello, ad esempio mediante il trascinamento dalla casella degli strumenti.  
   
-3.  Nel **dettagli DSL** finestra, seleziona **accettazione personalizzata Usa**.  
+3. Nel **dettagli DSL** finestra, seleziona **accettazione personalizzata Usa**.  
   
-4.  Ricompilare la soluzione. Questa operazione richiederà più tempo del solito poiché verrà aggiornato il codice generato dal modello.  
+4. Ricompilare la soluzione. Questa operazione richiederà più tempo del solito poiché verrà aggiornato il codice generato dal modello.  
   
      Un errore di compilazione verranno segnalate, simile a: "Company.ElementMergeSample.ExampleElement non contiene una definizione per CanMergeExampleElement..."  
   
      È necessario implementare il metodo `CanMergeExampleElement`.  
   
-5.  Creare un nuovo file di codice nel **Dsl** progetto. Sostituirne il contenuto con il codice seguente e modificare lo spazio dei nomi per lo spazio dei nomi del progetto.  
+5. Creare un nuovo file di codice nel **Dsl** progetto. Sostituirne il contenuto con il codice seguente e modificare lo spazio dei nomi per lo spazio dei nomi del progetto.  
   
     ```csharp  
     using Microsoft.VisualStudio.Modeling;  
@@ -194,19 +194,19 @@ ms.locfileid: "58965117"
   
      Questo semplice esempio limita il numero di elementi che possono essere uniti nel modello padre. Per le condizioni più interessante, il metodo può esaminare le proprietà e i collegamenti dell'oggetto di destinazione. Anche possibile esaminare le proprietà degli elementi di unione, che vengono eseguiti in un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Per altre informazioni sulle `ElementGroupPrototypes`, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md). Per altre informazioni su come scrivere codice che legge un modello, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-6.  Testare il linguaggio DSL:  
+6. Testare il linguaggio DSL:  
   
-    1.  Premere F5 per ricompilare la soluzione. Quando l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene aperto, aprire un'istanza del linguaggio DSL.  
+    1. Premere F5 per ricompilare la soluzione. Quando l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene aperto, aprire un'istanza del linguaggio DSL.  
   
-    2.  Creare nuovi elementi in diversi modi:  
+    2. Creare nuovi elementi in diversi modi:  
   
-        1.  Trascinare dal **elemento esempio** strumento nel diagramma.  
+        1. Trascinare dal **elemento esempio** strumento nel diagramma.  
   
-        2.  Nel **Esplora modelli di esempio**, fare clic sul nodo radice e quindi fare clic su **Aggiungi nuovo elemento di esempio**.  
+        2. Nel **Esplora modelli di esempio**, fare clic sul nodo radice e quindi fare clic su **Aggiungi nuovo elemento di esempio**.  
   
-        3.  Copiare e incollare un elemento nel diagramma.  
+        3. Copiare e incollare un elemento nel diagramma.  
   
-    3.  Verificare che non è possibile utilizzare uno dei modi seguenti per aggiungere più di quattro elementi nel modello. Questo avviene perché usano la direttiva di unione.  
+    3. Verificare che non è possibile utilizzare uno dei modi seguenti per aggiungere più di quattro elementi nel modello. Questo avviene perché usano la direttiva di unione.  
   
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Esempio: Aggiunta di codice personalizzato di tipo Merge per una EMD  
  Nel codice personalizzato di tipo merge, è possibile definire cosa accade quando l'utente trascina uno strumento o Incolla su un elemento. Esistono due modi per definire un'unione nell'indice personalizzato:  
@@ -219,19 +219,19 @@ ms.locfileid: "58965117"
   
 #### <a name="to-override-mergerelate"></a>Per eseguire l'override MergeRelate  
   
-1.  Nella definizione DSL, assicurarsi che sia stata definita la EMD a cui si desidera aggiungere il codice. Se si desidera, è possibile aggiungere i percorsi e definire accettazione di codice personalizzata come descritto nelle sezioni precedenti.  
+1. Nella definizione DSL, assicurarsi che sia stata definita la EMD a cui si desidera aggiungere il codice. Se si desidera, è possibile aggiungere i percorsi e definire accettazione di codice personalizzata come descritto nelle sezioni precedenti.  
   
-2.  Nel diagramma DslDefinition, selezionare la classe ricevente dell'unione. In genere si tratta della classe alla fine dell'origine di una relazione di incorporamento.  
+2. Nel diagramma DslDefinition, selezionare la classe ricevente dell'unione. In genere si tratta della classe alla fine dell'origine di una relazione di incorporamento.  
   
      Ad esempio, in un DSL generato dalla soluzione di linguaggio minimo, selezionare `ExampleModel`.  
   
-3.  Nel **delle proprietà** impostare nella finestra **genera una derivata doppia** al **true**.  
+3. Nel **delle proprietà** impostare nella finestra **genera una derivata doppia** al **true**.  
   
-4.  Ricompilare la soluzione.  
+4. Ricompilare la soluzione.  
   
-5.  Esaminare il contenuto del **Dsl\Generated Files\DomainClasses.cs**. Ricerca di metodi denominati `MergeRelate` ed esaminare il relativo contenuto. Ciò consentirà di scrivere le versioni personalizzate.  
+5. Esaminare il contenuto del **Dsl\Generated Files\DomainClasses.cs**. Ricerca di metodi denominati `MergeRelate` ed esaminare il relativo contenuto. Ciò consentirà di scrivere le versioni personalizzate.  
   
-6.  In un nuovo file di codice, scrivere una classe parziale per la classe ricevente ed eseguire l'override di `MergeRelate` (metodo). Ricordare di chiamare il metodo di base. Ad esempio:  
+6. In un nuovo file di codice, scrivere una classe parziale per la classe ricevente ed eseguire l'override di `MergeRelate` (metodo). Ricordare di chiamare il metodo di base. Ad esempio:  
   
     ```csharp  
     partial class ExampleModel  
@@ -285,23 +285,23 @@ ms.locfileid: "58965117"
   
 #### <a name="to-create-a-forward-merge-directive"></a>Per creare una direttiva di unione in avanti  
   
-1.  Creare un [!INCLUDE[dsl](../includes/dsl-md.md)] soluzione usando il modello di modello del componente.  
+1. Creare un [!INCLUDE[dsl](../includes/dsl-md.md)] soluzione usando il modello di modello del componente.  
   
-2.  Visualizzare il **DSL Explorer** , aprire Dsldefinition.  
+2. Visualizzare il **DSL Explorer** , aprire Dsldefinition.  
   
-3.  Nel **DSL Explorer**, espandere **classi di dominio**.  
+3. Nel **DSL Explorer**, espandere **classi di dominio**.  
   
-4.  Il **ComponentPort** della classe di dominio astratta è la classe di base di entrambe **InPort** e **OutPort**. Fare doppio clic su **ComponentPort** e quindi fare clic su **aggiungere nuova direttiva di unione**.  
+4. Il **ComponentPort** della classe di dominio astratta è la classe di base di entrambe **InPort** e **OutPort**. Fare doppio clic su **ComponentPort** e quindi fare clic su **aggiungere nuova direttiva di unione**.  
   
      Una nuova **direttiva di unione** nodo viene visualizzato sotto il **direttive di unione** nodo.  
   
-5.  Selezionare il **direttiva di unione** nodo e aprire il **dettagli DSL** finestra.  
+5. Selezionare il **direttiva di unione** nodo e aprire il **dettagli DSL** finestra.  
   
-6.  Nell'elenco delle classi di indicizzazione, selezionare **ComponentPort**.  
+6. Nell'elenco delle classi di indicizzazione, selezionare **ComponentPort**.  
   
-7.  Selezionare **inoltra il merge a una classe di dominio diverso**.  
+7. Selezionare **inoltra il merge a una classe di dominio diverso**.  
   
-8.  Nell'elenco di selezione dei percorsi, espandere **ComponentPort**, espandere **ComponentHasPorts**, quindi selezionare **componente**.  
+8. Nell'elenco di selezione dei percorsi, espandere **ComponentPort**, espandere **ComponentHasPorts**, quindi selezionare **componente**.  
   
      Il nuovo percorso dovrebbe essere simile a questo:  
   

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100014"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estendere la funzionalità di un TableAdapter
 
@@ -38,13 +38,13 @@ Nell'esempio seguente si presuppone un oggetto TableAdapter denominato `Customer
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Per creare una classe parziale per un oggetto TableAdapter
 
-1.  Aggiungere una nuova classe al progetto selezionando il **Project** menu e selezionando **Aggiungi classe**.
+1. Aggiungere una nuova classe al progetto selezionando il **Project** menu e selezionando **Aggiungi classe**.
 
-2.  Assegnare alla classe il nome `CustomersTableAdapterExtended`.
+2. Assegnare alla classe il nome `CustomersTableAdapterExtended`.
 
-3.  Selezionare **Aggiungi**.
+3. Selezionare **Aggiungi**.
 
-4.  Sostituire il codice con il nome di classe parziale per il progetto e spazio dei nomi corretto come indicato di seguito:
+4. Sostituire il codice con il nome di classe parziale per il progetto e spazio dei nomi corretto come indicato di seguito:
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

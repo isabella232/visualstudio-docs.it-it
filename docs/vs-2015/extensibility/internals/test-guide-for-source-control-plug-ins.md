@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9efe5ffcd0428a11df69e3c80f28fdecaeb99aaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100358"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per il test dei plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,55 +57,55 @@ Questa sezione vengono fornite indicazioni per il test di controllo del codice s
   
 ## <a name="test-areas-covered-in-this-section"></a>Aree di test trattate in questa sezione  
   
--   [Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Case 1a: Aggiungi soluzione al controllo del codice sorgente  
+    - Case 1a: Aggiungi soluzione al controllo del codice sorgente  
   
-    -   Case 1b: Apri soluzione dal controllo del codice sorgente  
+    - Case 1b: Apri soluzione dal controllo del codice sorgente  
   
-    -   Caso 1c: Aggiungi soluzione dal controllo del codice sorgente  
+    - Caso 1c: Aggiungi soluzione dal controllo del codice sorgente  
   
--   [Area di test 2: Ottenere dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Area di test 2: Ottenere dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Area di test 3: Check-Out / Annulla estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Area di test 3: Check-Out / Annulla estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Caso 3: Check-Out / Annulla estrazione  
+    - Caso 3: Check-Out / Annulla estrazione  
   
-    -   Case 3a: Estrai  
+    - Case 3a: Estrai  
   
-    -   Case 3b: Estrazione disconnessa  
+    - Case 3b: Estrazione disconnessa  
   
-    -   Caso 3C: Query Edit/Query Save (QEQS)  
+    - Caso 3C: Query Edit/Query Save (QEQS)  
   
-    -   Caso 3d: Estrazione automatica  
+    - Caso 3d: Estrazione automatica  
   
-    -   Case 3e: Annulla estrazione  
+    - Case 3e: Annulla estrazione  
   
--   [Area di test 4: Check-In](../../extensibility/internals/test-area-4-check-in.md)  
+- [Area di test 4: Check-In](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Case 4a: Elementi modificati  
+    - Case 4a: Elementi modificati  
   
-    -   Case 4b: Aggiunta di file  
+    - Case 4b: Aggiunta di file  
   
-    -   Caso 4c: Aggiunta di progetti  
+    - Caso 4c: Aggiunta di progetti  
   
--   [Area di test 5: Modifica controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Area di test 5: Modifica controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Case 5a: Eseguire l'associazione  
+    - Case 5a: Eseguire l'associazione  
   
-    -   Case 5b: annullamento del binding  
+    - Case 5b: annullamento del binding  
   
-    -   Caso 5C: riassociazione  
+    - Caso 5C: riassociazione  
   
--   [Area di test 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
+- [Area di test 6: Delete](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Area di test 7: Condividi](../../extensibility/internals/test-area-7-share.md)  
+- [Area di test 7: Condividi](../../extensibility/internals/test-area-7-share.md)  
   
--   [Area di test 8: Cambio di plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Area di test 8: Cambio di plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Case 8a: Modifiche automatico  
+    - Case 8a: Modifiche automatico  
   
-    -   Case 8b: Modifica basati su soluzioni  
+    - Case 8b: Modifica basati su soluzioni  
   
 ## <a name="see-also"></a>Vedere anche  
  [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)

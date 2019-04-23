@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094346"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: Creare un ricevitore di eventi per un'istanza di elenco specifico
   Un ricevitore di eventi di istanza di elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Anche se il modello del ricevitore di eventi non abilita l'impostazione della destinazione di un'istanza di elenco specifico, è possibile modificare un ricevitore di eventi con ambito di una definizione di elenco per rispondere agli eventi in un'istanza di elenco specifico.
@@ -30,24 +30,24 @@ ms.locfileid: "56596529"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Per modificare un ricevitore di eventi per rispondere a un'istanza di elenco specifico
 
-1.  In un browser aprire il sito di SharePoint.
+1. In un browser aprire il sito di SharePoint.
 
-2.  Nel riquadro di spostamento **Elenca** collegamento.
+2. Nel riquadro di spostamento **Elenca** collegamento.
 
-3.  Nel **All Site Content** pagina, scegliere il **crea** collegamento.
+3. Nel **All Site Content** pagina, scegliere il **crea** collegamento.
 
-4.  Nel **Create** finestra di dialogo scegliere la **annunci** digitare, denominare l'annuncio **TestAnnouncements**e quindi scegliere il **crea**pulsante.
+4. Nel **Create** finestra di dialogo scegliere la **annunci** digitare, denominare l'annuncio **TestAnnouncements**e quindi scegliere il **crea**pulsante.
 
-5.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare un progetto di ricevitore di eventi.
+5. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare un progetto di ricevitore di eventi.
 
-6.  Nel **quale tipo di ricevitore di eventi da?** casella di riepilogo **eventi elementi elenco**.
+6. Nel **quale tipo di ricevitore di eventi da?** casella di riepilogo **eventi elementi elenco**.
 
     > [!NOTE]
     >  È anche possibile selezionare qualsiasi altro tipo di ricevitore di eventi che definisce l'ambito di una definizione di elenco, ad esempio, **elenco eventi di posta elettronica** oppure **elenco eventi di flusso di lavoro**.
 
-7.  Nel **selezionare l'elemento deve essere l'origine dell'evento?** casella di riepilogo **annunci**.
+7. Nel **selezionare l'elemento deve essere l'origine dell'evento?** casella di riepilogo **annunci**.
 
-8.  Nel **gestire gli eventi seguenti** elenco, selezionare la **viene aggiunto un elemento** casella di controllo e quindi scegliere il **fine** pulsante.
+8. Nel **gestire gli eventi seguenti** elenco, selezionare la **viene aggiunto un elemento** casella di controllo e quindi scegliere il **fine** pulsante.
 
 9. Nelle **Esplora soluzioni**, sotto EventReceiver1 aprire *Elements*.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108709"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
 ### <a name="function-values"></a>Valori della funzione  
  I valori della funzione sono basati sulle istanze della funzione che si sono verificate nel percorso di esecuzione rappresentato nell'albero delle chiamate.  
   
--   I valori esclusivi sono basati sugli eventi che si sono verificati durante l'esecuzione delle istruzioni da parte della funzione nel corpo della funzione stessa. Non sono inclusi nei valori esclusivi gli eventi che si sono verificati in funzioni chiamate dalla funzione.  
+- I valori esclusivi sono basati sugli eventi che si sono verificati durante l'esecuzione delle istruzioni da parte della funzione nel corpo della funzione stessa. Non sono inclusi nei valori esclusivi gli eventi che si sono verificati in funzioni chiamate dalla funzione.  
   
--   I valori inclusivi sono basati sugli eventi che si sono verificati durante l'esecuzione della funzione o di una funzione chiamata dalla funzione stessa.  
+- I valori inclusivi sono basati sugli eventi che si sono verificati durante l'esecuzione della funzione o di una funzione chiamata dalla funzione stessa.  
   
 ### <a name="percentage-values"></a>Valori percentuali  
  I valori percentuali sono basati sul tempo totale o sugli eventi di conflitto nei dati di profilatura. Se si filtra il rapporto o la visualizzazione dell'esecuzione della profilatura, verranno usati come valore totale solo i conflitti e il tempo di blocco nei dati filtrati.  
   
 ## <a name="navigating-the-resource-allocation-view"></a>Esplorazione della visualizzazione Assegnazione risorse  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Name**|Nome della risorsa o della funzione.|  
 |**Tempo blocco esclusivo**|- Per una risorsa, il tempo totale per cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, il tempo per cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.|  

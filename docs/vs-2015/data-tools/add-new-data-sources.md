@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102757"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere disponibili i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database dalla finestra **Data Source**. Questo tipo di origine dati può essere:  
   
--   Una classe in un modello di Entity Framework che è associato a un tipo di database.  
+- Una classe in un modello di Entity Framework che è associato a un tipo di database.  
   
--   Un set di dati associato a un tipo di database.  
+- Un set di dati associato a un tipo di database.  
   
--   Una classe che rappresenta un servizio di rete, ad esempio un servizio dati di Windows Communication Foundation (WCF) o un servizio REST.  
+- Una classe che rappresenta un servizio di rete, ad esempio un servizio dati di Windows Communication Foundation (WCF) o un servizio REST.  
   
--   Una classe che rappresenta un servizio di SharePoint.  
+- Una classe che rappresenta un servizio di SharePoint.  
   
--   Una classe o una raccolta nella soluzione.  
+- Una classe o una raccolta nella soluzione.  
   
 > [!NOTE]
 >  Se non si usa funzionalità di associazione dati, set di dati, Entity Framework, LINQ to SQL, WCF o SharePoint, il concetto di "data source" non è applicabile. È sufficiente connettersi direttamente al database utilizzando gli oggetti di SQLCommand e comunicare direttamente con il database.  
@@ -77,11 +77,11 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
   
  Uno dei seguenti tipi di servizi, è possibile creare un'origine dati:  
   
--   WCF Data Services. Per altre informazioni, vedere [Panoramica](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Per altre informazioni, vedere [Panoramica](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Servizi dati WCF. Per altre informazioni, vedere [servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Servizi dati WCF. Per altre informazioni, vedere [servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Servizi Web.  
+- Servizi Web.  
   
     > [!NOTE]
     >  Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, nessun elemento verrà visualizzato nei **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  

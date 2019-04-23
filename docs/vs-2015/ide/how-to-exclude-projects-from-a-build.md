@@ -9,14 +9,14 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04a3a45af932a34b89feb2726e7a137ceea2ac5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110934"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Procedura: escludere progetti da una compilazione
+# <a name="how-to-exclude-projects-from-a-build"></a>Procedura: Escludere progetti da una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile compilare una soluzione senza compilare tutti i progetti contenuti al suo interno. Ad esempio, si può escludere un progetto che causa l'interruzione della compilazione. Sarà possibile compilare il progetto in seguito, dopo avere esaminato e risolto i problemi.  
@@ -31,29 +31,29 @@ ms.locfileid: "54780126"
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Per rimuovere temporaneamente un progetto dalla configurazione della soluzione attiva.  
   
-1.  Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.  
+1. Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.  
   
-2.  Nella tabella **Contesti progetto** individuare il progetto da escludere dalla compilazione.  
+2. Nella tabella **Contesti progetto** individuare il progetto da escludere dalla compilazione.  
   
-3.  Nella colonna **Compilazione** del progetto deselezionare la casella di controllo.  
+3. Nella colonna **Compilazione** del progetto deselezionare la casella di controllo.  
   
-4.  Scegliere il pulsante **Chiudi** e quindi ricompilare la soluzione.  
+4. Scegliere il pulsante **Chiudi** e quindi ricompilare la soluzione.  
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Per creare una configurazione di soluzione che esclude un progetto  
   
-1.  Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.  
+1. Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.  
   
-2.  Nell'elenco **Configurazione soluzione attiva** **scegliere \<Nuova**.  
+2. Nell'elenco **Configurazione soluzione attiva** **scegliere \<Nuova**.  
   
-3.  Nella casella **Nome** immettere un nome per la configurazione della soluzione.  
+3. Nella casella **Nome** immettere un nome per la configurazione della soluzione.  
   
-4.  Nell'elenco **Copia impostazioni da** scegliere la configurazione di soluzione su cui si vuole basare la nuova configurazione (ad esempio **Debug**) e quindi scegliere il pulsante **OK**.  
+4. Nell'elenco **Copia impostazioni da** scegliere la configurazione di soluzione su cui si vuole basare la nuova configurazione (ad esempio **Debug**) e quindi scegliere il pulsante **OK**.  
   
-5.  Nella finestra di dialogo **Configuration Manager** deselezionare la casella di controllo **Compilazione** per il progetto da escludere e quindi scegliere il pulsante **Chiudi**.  
+5. Nella finestra di dialogo **Configuration Manager** deselezionare la casella di controllo **Compilazione** per il progetto da escludere e quindi scegliere il pulsante **Chiudi**.  
   
-6.  Sulla barra degli strumenti **Standard** verificare che la nuova configurazione della soluzione compaia come configurazione attiva nella casella **Configurazioni soluzione**.  
+6. Sulla barra degli strumenti **Standard** verificare che la nuova configurazione della soluzione compaia come configurazione attiva nella casella **Configurazioni soluzione**.  
   
-7.  Sulla barra dei menu scegliere **Compila**, **Ricompila soluzione**.  
+7. Sulla barra dei menu scegliere **Compila**, **Ricompila soluzione**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Understanding Build Configurations](../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  

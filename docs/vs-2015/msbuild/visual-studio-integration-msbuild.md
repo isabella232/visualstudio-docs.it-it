@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117499"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compilatori in-process  
  Quando possibile, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene eseguito un tentativo di usare la versione in-process del compilatore di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] per offrire prestazioni migliori. Non si applica a [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Affinché questo tentativo abbia esito positivo, è necessario che siano soddisfatte le condizioni riportate di seguito:  
   
--   In una destinazione del progetto, deve essere presente un'attività denominata `Vbc` per i progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+- In una destinazione del progetto, deve essere presente un'attività denominata `Vbc` per i progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
--   Il parametro `UseHostCompilerIfAvailable` dell'attività deve essere impostato su true.  
+- Il parametro `UseHostCompilerIfAvailable` dell'attività deve essere impostato su true.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense in fase di progettazione  
  Per ottenere il supporto di IntelliSense in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prima della creazione di un assembly di output nella compilazione, è necessario che vengano soddisfatte le condizioni seguenti:  
   
--   Deve essere presente una destinazione denominata `Compile`.  
+- Deve essere presente una destinazione denominata `Compile`.  
   
--   La destinazione `Compile` o una delle relative dipendenze deve chiamare l'attività del compilatore per il progetto, ad esempio `Csc` o `Vbc`.  
+- La destinazione `Compile` o una delle relative dipendenze deve chiamare l'attività del compilatore per il progetto, ad esempio `Csc` o `Vbc`.  
   
--   Tramite la destinazione `Compile` o una delle relative dipendenze è necessario che il compilatore riceva tutti i parametri necessari per IntelliSense, in particolare tutti i riferimenti.  
+- Tramite la destinazione `Compile` o una delle relative dipendenze è necessario che il compilatore riceva tutti i parametri necessari per IntelliSense, in particolare tutti i riferimenti.  
   
--   È necessario soddisfare le condizioni elencate nella sezione "Compilatori in-process".  
+- È necessario soddisfare le condizioni elencate nella sezione "Compilatori in-process".  
   
 ## <a name="building-solutions"></a>Compilazione di soluzioni  
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il file di soluzione e l'ordine di compilazione dei progetti sono controllati dallo stesso [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quando si compila una soluzione con msbuild.exe alla riga di comando, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] analizza il file di soluzione e ordina le compilazioni dei progetti. In entrambi i casi i progetti vengono compilati singolarmente in ordine di dipendenza, senza attraversare i riferimenti progetto per progetto. Al contrario, quando vengono compilati progetti singoli con msbuild.exe, vengono attraversati i riferimenti progetto per progetto.  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Esecuzione delle destinazioni in fase di progettazione  
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene effettuato un tentativo di eseguire le destinazioni con determinati nomi al momento del caricamento di un progetto. Tali destinazioni includono `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] esegue tali destinazioni in modo da consentire l'inizializzazione del compilatore per fornire IntelliSense, l'inizializzazione del debugger e la risoluzione dei riferimenti visualizzati in Esplora soluzioni. Se tali destinazioni non sono presenti, il progetto verrà caricato e compilato correttamente, ma la fase di progettazione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non sarà completamente funzionale.  
   
-##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Per modificare direttamente un progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], è possibile aprire il file di progetto nell'editor XML di Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Per scaricare e modificare un file di progetto in Visual Studio  
   
-1.  In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto e scegliere **Scarica progetto**.  
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto e scegliere **Scarica progetto**.  
   
      Il progetto verrà contrassegnato come **(non disponibile)**.  
   
-2.  In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Modifica \<File progetto>**.  
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Modifica \<File progetto>**.  
   
      Il file del progetto verrà aperto nell'editor XML di Visual Studio.  
   
-3.  Modificare, salvare e chiudere il file di progetto.  
+3. Modificare, salvare e chiudere il file di progetto.  
   
-4.  In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Ricarica progetto**.  
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Ricarica progetto**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense e convalida  
  Quando si usa l'editor XML per modificare i file di progetto, IntelliSense e la convalida si basano sui file di schema di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tali file vengono installati nella cache dello schema, che si trova in *\<Directory di installazione di Visual Studio>* Xml\Schemas\1040\MSBuild.  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Risoluzione dei riferimenti  
  La risoluzione dei riferimenti è il processo di utilizzo degli elementi di riferimento archiviati in un file di progetto per individuare gli assembly effettivi. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deve attivare la risoluzione dei riferimenti per visualizzare le proprietà dettagliate per ogni riferimento nella finestra **Proprietà**. Nell'elenco riportato di seguito vengono descritti tre tipi di riferimenti e le relative modalità di risoluzione.  
   
--   Riferimenti dell'assembly:  
+- Riferimenti dell'assembly:  
   
      Il sistema di progetto chiama una destinazione con il nome noto `ResolveAssemblyReferences`. Tale destinazione deve produrre elementi con il nome di tipi di elementi `ReferencePath`. Ognuno di questi elementi deve avere una specifica dell'elemento (il valore dell'attributo `Include` di un elemento) che contiene il percorso completo del riferimento. Gli elementi devono disporre di tutti i metadati derivati dagli elementi di input passati, oltre ai nuovi metadati riportati di seguito:  
   
-    -   `CopyLocal`, che indica se l'assembly deve essere copiato nella cartella di output, impostato su true o false.  
+    - `CopyLocal`, che indica se l'assembly deve essere copiato nella cartella di output, impostato su true o false.  
   
-    -   `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.  
+    - `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.  
   
-    -   `ResolvedFrom`, impostato su "{TargetFrameworkDirectory}" se è stato risolto dalla directory [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+    - `ResolvedFrom`, impostato su "{TargetFrameworkDirectory}" se è stato risolto dalla directory [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
--   Riferimenti COM:  
+- Riferimenti COM:  
   
      Il sistema di progetto chiama una destinazione con il nome noto `ResolveCOMReferences`. Tale destinazione deve produrre elementi con il nome di tipi di elementi `ComReferenceWrappers`. Ognuno di questi elementi deve avere una specifica dell'elemento che contiene il percorso completo dell'assembly di interoperabilità per il riferimento COM. Gli elementi devono disporre di tutti i metadati derivati dagli elementi di input passati, oltre ai nuovi metadati con il nome `CopyLocal`, che indicano se l'assembly deve essere copiato nella cartella di output, impostato su true o false  
   
--   Riferimenti nativi  
+- Riferimenti nativi  
   
      Il sistema di progetto chiama una destinazione con il nome noto `ResolveNativeReferences`. Tale destinazione deve produrre elementi con il nome di tipi di elementi `NativeReferenceFile`. Gli elementi devono disporre di tutti i metadati derivati dagli elementi di input passati, oltre a un nuovo metadato singolo denominato `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.  
   

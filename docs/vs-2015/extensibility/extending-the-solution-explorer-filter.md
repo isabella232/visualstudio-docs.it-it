@@ -11,30 +11,30 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 687663a79ea5dca75da68013519f4652fa71460c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110570"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estensione del filtro di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile estendere **Esplora soluzioni** filtrare la funzionalità per mostrare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo classi factory file C# la **Esplora soluzioni**, come illustrato di seguito in questa procedura dettagliata.  
+È possibile estendere **Esplora soluzioni** filtrare la funzionalità per mostrare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo classi factory file c# la **Esplora soluzioni**, come illustrato di seguito in questa procedura dettagliata.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="create-a-visual-studio-package-project"></a>Creare un progetto di pacchetto di Visual Studio  
   
-1.  Creare un progetto VSIX denominato `FileFilter`. Aggiungere un modello di elemento di comando personalizzato denominato **FileFilter**. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Creare un progetto VSIX denominato `FileFilter`. Aggiungere un modello di elemento di comando personalizzato denominato **FileFilter**. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Aggiungere un riferimento a `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.  
+2. Aggiungere un riferimento a `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.  
   
-3.  Visualizzazione del comando di menu sul **Esplora soluzioni** sulla barra degli strumenti. Aprire il file FileFilterPackage.vsct.  
+3. Visualizzazione del comando di menu sul **Esplora soluzioni** sulla barra degli strumenti. Aprire il file FileFilterPackage.vsct.  
   
-4.  Modifica il `<Button>` blocco alla seguente:  
+4. Modifica il `<Button>` blocco alla seguente:  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -48,28 +48,28 @@ ms.locfileid: "58968918"
   
 ### <a name="update-the-manifest-file"></a>Aggiornare il File manifesto  
   
-1.  Nel file vsixmanifest, aggiungere un asset è un componente MEF.  
+1. Nel file vsixmanifest, aggiungere un asset è un componente MEF.  
   
-2.  Nel **asset** scheda, scegliere il **New** pulsante.  
+2. Nel **asset** scheda, scegliere il **New** pulsante.  
   
-3.  Nel **tipo** campo, scegliere **MEFComponent**.  
+3. Nel **tipo** campo, scegliere **MEFComponent**.  
   
-4.  Nel **origine** campo, scegliere **un progetto nella soluzione corrente**.  
+4. Nel **origine** campo, scegliere **un progetto nella soluzione corrente**.  
   
-5.  Nel **progetto** campo, scegliere **FileFilter**, quindi scegliere il **OK** pulsante.  
+5. Nel **progetto** campo, scegliere **FileFilter**, quindi scegliere il **OK** pulsante.  
   
 ### <a name="add-the-filter-code"></a>Aggiungere il codice di filtro  
   
-1.  Aggiungere alcuni GUID nel file FileFilterPackageGuids.cs:  
+1. Aggiungere alcuni GUID nel file FileFilterPackageGuids.cs:  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  Aggiungere un file di classe al progetto FileFilter denominato FileNameFilter.cs.  
+2. Aggiungere un file di classe al progetto FileFilter denominato FileNameFilter.cs.  
   
-3.  Sostituire lo spazio dei nomi vuoto e la classe vuota con il codice seguente.  
+3. Sostituire lo spazio dei nomi vuoto e la classe vuota con il codice seguente.  
   
      Il `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` metodo accetta la raccolta che contiene la radice della soluzione (`rootItems`) e restituisce la raccolta di elementi da includere nel filtro.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "58968918"
   
     ```  
   
-4.  In FileFilter.cs, rimuovere il codice di posizionamento e la gestione del comando dal costruttore FileFilter. Il risultato dovrebbe essere simile al seguente:  
+4. In FileFilter.cs, rimuovere il codice di posizionamento e la gestione del comando dal costruttore FileFilter. Il risultato dovrebbe essere simile al seguente:  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -176,7 +176,7 @@ ms.locfileid: "58968918"
   
      Rimuovere anche il metodo ShowMessageBox().  
   
-5.  In FileFilterPackage, cs, sostituire il codice nel metodo Initialize () con gli elementi seguenti:  
+5. In FileFilterPackage, cs, sostituire il codice nel metodo Initialize () con gli elementi seguenti:  
   
     ```csharp  
     protected override void Initialize()  
@@ -188,10 +188,10 @@ ms.locfileid: "58968918"
   
 ### <a name="test-your-code"></a>Testare il codice  
   
-1.  Compilare ed eseguire il progetto. Verrà visualizzata una seconda istanza di Visual Studio. Ciò è chiamata istanza sperimentale.  
+1. Compilare ed eseguire il progetto. Verrà visualizzata una seconda istanza di Visual Studio. Ciò è chiamata istanza sperimentale.  
   
-2.  Nell'istanza sperimentale di Visual Studio, aprire un progetto C#.  
+2. Nell'istanza sperimentale di Visual Studio, aprire un progetto c#.  
   
-3.  Cercare il pulsante che è stato aggiunto nella barra degli strumenti Esplora soluzioni. Deve essere il quarto pulsante da sinistra.  
+3. Cercare il pulsante che è stato aggiunto nella barra degli strumenti Esplora soluzioni. Deve essere il quarto pulsante da sinistra.  
   
-4.  Quando si fa clic sul pulsante, tutti i file devono essere filtrati e dovrebbe essere "tutti gli elementi sono stati filtrati dalla visualizzazione". in Esplora soluzioni.
+4. Quando si fa clic sul pulsante, tutti i file devono essere filtrati e dovrebbe essere "tutti gli elementi sono stati filtrati dalla visualizzazione". in Esplora soluzioni.

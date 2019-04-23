@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103095"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
 
@@ -56,9 +56,9 @@ Nel codice C++ nativo potrebbe essere necessario qualificare il contesto di un n
 >[!CAUTION]
 >Assicurarsi di che comprendere le conseguenze prima di modificare i valori ed espressioni. Alcuni dei problemi possibili sono:
 >
->-   La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. Ad esempio, la valutazione `var1 = ++var2` modifica il valore di entrambe `var1` e `var2`. Queste espressioni le seconde esiste [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effetti collaterali può causare risultati imprevisti se non si è necessario tenere in considerazione.
+>- La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. Ad esempio, la valutazione `var1 = ++var2` modifica il valore di entrambe `var1` e `var2`. Queste espressioni le seconde esiste [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effetti collaterali può causare risultati imprevisti se non si è necessario tenere in considerazione.
 >
->-   La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può comportare modifiche ad alcuni dei bit in una variabile a virgola mobile.
+>- La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può comportare modifiche ad alcuni dei bit in una variabile a virgola mobile.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Eseguire la ricerca nella finestra variabili locali o Auto
@@ -85,9 +85,9 @@ Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il 
 
 ## <a name="bkmk_whatvariables"></a> Le variabili nella finestra Auto (C#, C++, Visual Basic, Python)
 
- Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto** finestra.
+Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto** finestra.
 
- - In C# e Visual Basic la finestra **Auto** visualizza tutte le variabili usate nella riga corrente o precedente. Ad esempio, in C# o Visual Basic del codice, dichiarare le variabili seguenti quattro:
+- In C# e Visual Basic la finestra **Auto** visualizza tutte le variabili usate nella riga corrente o precedente. Ad esempio, in C# o Visual Basic del codice, dichiarare le variabili seguenti quattro:
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il 
 
    Il valore di `c` è 0, perché la riga `c = 3` non è ancora stata eseguita.
 
- - In C++, il **Auto** finestra Visualizza le variabili usate almeno tre righe prima della riga corrente in cui l'esecuzione viene sospesa. Nel codice C++, ad esempio, dichiarano sei variabili:
+- In C++, il **Auto** finestra Visualizza le variabili usate almeno tre righe prima della riga corrente in cui l'esecuzione viene sospesa. Nel codice C++, ad esempio, dichiarano sei variabili:
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il 
 
     La variabile `e` non è inizializzata, perché la riga `e = 5` non è ancora stata eseguita.
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  Nel codice .NET e C++, è possibile esaminare i valori restituiti nel **Auto** finestra quando eseguono istruzioni / o all'esterno di una chiamata al metodo. Chiamata al metodo visualizzazione restituire i valori possono essere utili quando non vengono archiviate in variabili locali. È stato usato un metodo come parametro o come valore restituito di un altro metodo.
 
  Il seguente, ad esempio, C# codice aggiunge i valori restituiti di due funzioni:

@@ -9,43 +9,43 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4440370453db96fa207c283e9c4a03b28d7ef6b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094820"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: aggiungere un timer per il conto alla rovescia
+# <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.  
   
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Per aggiungere un timer per il conto alla rovescia  
   
-1.  Aggiungere una variabile Integer denominata **timeLeft**, come nella procedura precedente. Il codice dovrebbe essere analogo al seguente.  
+1. Aggiungere una variabile Integer denominata **timeLeft**, come nella procedura precedente. Il codice dovrebbe essere analogo al seguente.  
   
      [!code-csharp[VbExpressTutorial3Step3#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial3Step3#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#5)]  
   
      A questo punto è necessario un metodo che conti effettivamente i secondi, ad esempio un timer, e generi un evento dopo il periodo di tempo specificato.  
   
-2.  Nella finestra di progettazione spostare un controllo `Timer` dalla categoria **Componenti** della casella degli strumenti nel form.  
+2. Nella finestra di progettazione spostare un controllo `Timer` dalla categoria **Componenti** della casella degli strumenti nel form.  
   
      Il controllo viene visualizzato nell'area grigia nella parte inferiore della finestra di progettazione.  
   
-3.  Nel form scegliere l'icona **timer1** appena aggiunta e impostarne la proprietà **Interval** su **1000**.  
+3. Nel form scegliere l'icona **timer1** appena aggiunta e impostarne la proprietà **Interval** su **1000**.  
   
      Poiché il valore di intervallo è espresso in millisecondi, un valore pari a 1000 fa sì che l'evento Tick venga generato ogni secondo.  
   
-4.  Nel form fare doppio clic sul controllo Timer o sceglierlo e premere INVIO.  
+4. Nel form fare doppio clic sul controllo Timer o sceglierlo e premere INVIO.  
   
      Viene visualizzato l'editor di codice contenente il metodo per il gestore dell'evento Tick appena aggiunto.  
   
-5.  Aggiungere le istruzioni seguenti al metodo del nuovo gestore eventi.  
+5. Aggiungere le istruzioni seguenti al metodo del nuovo gestore eventi.  
   
      [!code-csharp[VbExpressTutorial3Step3#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial3Step3#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#6)]  
@@ -91,14 +91,14 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
   
      Un controllo `NumericUpDown` facilita l'immissione di numeri da parte degli esecutori del quiz ed è per questo motivo che si usa il controllo per le risposte ai problemi matematici. Tutte le risposte potenziali sono numeri interi compresi tra 0 e 100. Mantenendo i valori predefiniti per le proprietà **Minimum**, **Maximum** e **DecimalPlaces**, si evita che gli esecutori del quiz immettano numeri decimali, negativi o troppo alti. Se si desidera consentire agli esecutori del quiz di immettere 3,141 ma non 3,1415, è possibile impostare la proprietà **DecimalPlaces** su 3.  
   
-6.  Aggiungere tre righe alla fine del metodo `StartTheQuiz()`, in modo che il codice sia analogo al seguente.  
+6. Aggiungere tre righe alla fine del metodo `StartTheQuiz()`, in modo che il codice sia analogo al seguente.  
   
      [!code-csharp[VbExpressTutorial3Step3#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial3Step3#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#7)]  
   
      A questo punto, all'avvio del quiz la variabile **timeLeft** è impostata su 30 e la proprietà **Text** del controllo `timeLabel` è impostata su 30 secondi. Il metodo `Start()` del controllo `Timer` avvia il conto alla rovescia. La risposta non viene ancora controllata. Ciò avverrà in seguito.  
   
-7.  Salvare il programma, eseguirlo e scegliere il pulsante **Avvio** del form.  
+7. Salvare il programma, eseguirlo e scegliere il pulsante **Avvio** del form.  
   
      Il timer avvia il conto alla rovescia. Quando il tempo è scaduto, il quiz termina e viene visualizzata la risposta. Nella figura seguente viene illustrato il quiz in corso.  
   
@@ -107,6 +107,6 @@ Quiz matematico in corso
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 4: aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Aggiungere il metodo CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Creare un problema con addizione casuale](../ide/step-2-create-a-random-addition-problem.md).

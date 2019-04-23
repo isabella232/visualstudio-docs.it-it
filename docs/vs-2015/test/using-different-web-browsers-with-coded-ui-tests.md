@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100404"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Uso di Web browser diversi con test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
   
 - Sistemi operativi:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Versioni del Web browser:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Per le versioni supportate di Mozilla Firefox e Google Chrome, fare clic [qui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  - Per le versioni supportate di Mozilla Firefox e Google Chrome, fare clic [qui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
 - Installare i [componenti Selenium per il test codificato dell'interfaccia utente tra più browser](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -56,14 +56,14 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
  Testando l'applicazione Web con vari tipi di Web browser si emula meglio l'esperienza dell'interfaccia utente degli utenti che possono eseguire diversi browser. Ad esempio, l'applicazione potrebbe includere un controllo o un codice in Internet Explorer non compatibile con altri Web browser. L'esecuzione dei test codificati dell'interfaccia utente in altri browser consente di individuare e risolvere i problemi prima dell'impatto sui clienti.  
   
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Come registrare e riprodurre i test codificati dell'interfaccia utente nelle applicazioni web usando i Web browser supportati  
- **Registrazione**: è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).  
+ **Registrazione:** è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
 >  Non è possibile registrare i test codificati dell'interfaccia utente usando i browser Mozilla Firefox o Google Chrome.  
   
- **Riproduzione con Internet Explorer**: quando non è specificato alcun browser in modo esplicito, i test vengono eseguiti in Internet Explorer per impostazione predefinita. È possibile dichiarare in modo esplicito il browser da usare impostando la proprietà **BrowserWindow.CurrentBrowser** nel codice del test. Per Internet Explorer questa proprietà deve essere impostata su **IE** o **Internet Explorer**.  
+ **Riproduzione con Internet Explorer:** quando non è specificato alcun browser in modo esplicito, i test vengono eseguiti in Internet Explorer per impostazione predefinita. È possibile dichiarare in modo esplicito il browser da usare impostando la proprietà **BrowserWindow.CurrentBrowser** nel codice del test. Per Internet Explorer questa proprietà deve essere impostata su **IE** o **Internet Explorer**.  
   
- **Riproduzione con Web browser diversi da Internet Explorer**: per riprodurre in Web browser diversi da Internet Explorer, modificare le proprietà BrowserWindow.CurrentBrowser nel codice del test su **Firefox** o **Chrome**.  
+ **Riproduzione con Web browser diversi da Internet Explorer:** per riprodurre in Web browser diversi da Internet Explorer, modificare le proprietà BrowserWindow.CurrentBrowser nel codice del test su **Firefox** o **Chrome**.  
   
  Per riprodurre i test su Web browser diversi da IE, è necessario installare i **componenti Selenium per il test codificato dell'interfaccia utente tra più browser**.  
   
@@ -83,19 +83,19 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 ### <a name="enable-debugging"></a>Abilita debug  
  Per abilitare il debug dell'applicazione Web è necessario completare le opzioni di configurazione seguenti:  
   
-1.  Abilitare Just My Code:  
+1. Abilitare Just My Code:  
   
-    1.  Nel menu **Strumenti** scegliere **Opzioni** e quindi **Debug**.  
+    1. Nel menu **Strumenti** scegliere **Opzioni** e quindi **Debug**.  
   
-    2.  Selezionare **Abilita Just My Code**.  
+    2. Selezionare **Abilita Just My Code**.  
   
-2.  Disabilitare le eccezioni CLR:  
+2. Disabilitare le eccezioni CLR:  
   
-    1.  Nel menu **Debug** scegliere **Eccezioni**.  
+    1. Nel menu **Debug** scegliere **Eccezioni**.  
   
-    2.  Per **Eccezioni Common Language Runtime** deselezionare **Non gestita dall'utente**.  
+    2. Per **Eccezioni Common Language Runtime** deselezionare **Non gestita dall'utente**.  
   
-##  <a name="generate"></a> *L'opzione per modificare BrowserWindow.CurrentBrowser non è presente nel test codificato dell'interfaccia utente.*  
+## <a name="generate"></a> *L'opzione per modificare BrowserWindow.CurrentBrowser non è presente nel test codificato dell'interfaccia utente.*  
  È possibile che si usi una versione di [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] che non supporta i test codificati dell'interfaccia utente tramite Web browser differenti. Per usare questi test codificati dell'interfaccia utente, è necessario usare Visual Studio Enterprise.  
   
  *Altre informazioni*  
@@ -139,9 +139,9 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
  [Troubleshoot cross browser test failures](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI) (Risoluzione degli errori dei test eseguibili in più browser)  
   
 ### <a name="guidance"></a>Materiale sussidiario  
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 2: Unit test: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Esecuzione di test per il recapito continuo con Visual Studio 2012-capitolo 5: Automazione dei test di sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>Domande frequenti  
  [Domande frequenti sui test codificati dell'interfaccia utente - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  

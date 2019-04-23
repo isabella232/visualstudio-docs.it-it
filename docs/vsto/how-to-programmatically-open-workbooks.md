@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107892"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Procedura: A livello di codice aprire cartelle di lavoro
   Il <xref:Microsoft.Office.Interop.Excel.Workbooks> insieme in Microsoft Office Excel consente di lavorare con tutte le cartelle di lavoro e di aprire le cartelle di lavoro.
@@ -27,7 +27,7 @@ ms.locfileid: "56611893"
 
 ## <a name="to-open-an-existing-workbook"></a>Per aprire una cartella di lavoro esistente
 
-1.  Usare la <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> metodo del <xref:Microsoft.Office.Interop.Excel.Workbooks> insieme, passando il percorso alla cartella di lavoro.
+1. Usare la <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> metodo del <xref:Microsoft.Office.Interop.Excel.Workbooks> insieme, passando il percorso alla cartella di lavoro.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
@@ -35,7 +35,7 @@ ms.locfileid: "56611893"
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio di codice presenta i requisiti seguenti:
 
--   Una cartella di lavoro denominato `YourWorkbook.xls` deve essere presente in una directory denominata `Test` nell'unità C.
+- Una cartella di lavoro denominato `YourWorkbook.xls` deve essere presente in una directory denominata `Test` nell'unità C.
 
 ## <a name="see-also"></a>Vedere anche
 - [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)

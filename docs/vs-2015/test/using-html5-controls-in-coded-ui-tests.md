@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100449"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
   
  **Requisiti**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  Nelle versioni precedenti a Internet Explorer 10, è possibile eseguire test codificati dell'interfaccia utente con un livello di privilegi più alto rispetto a quello del processo di Internet Explorer. Quando si eseguono test codificati dell'interfaccia utente in Internet Explorer 10, sia il test codificato dell'interfaccia utente che il processo di Internet Explorer devono avere lo stesso livello di privilegi. Infatti le funzionalità di AppContainer sono più sicure in Internet Explorer 10.  
@@ -33,16 +33,16 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 ## <a name="supported-html5-controls"></a>Controlli HTML5 supportati  
  I test codificati dell'interfaccia utente includono il supporto per registrazione, riproduzione e convalida dei controlli HTML5 seguenti:  
   
--   [Controllo Audio](#audio-control)  
+- [Controllo Audio](#audio-control)  
   
--   [Controllo Video](#video-control)  
+- [Controllo Video](#video-control)  
   
--   [Controllo Slider](#slider)  
+- [Controllo Slider](#slider)  
   
--   [ProgressBar](#progressbar)  
+- [ProgressBar](#progressbar)  
   
 ### <a name="audio-control"></a>Controllo audio  
- **Controllo Audio**: le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.  
+ **Controllo Audio:** le azioni nel controllo Audio HTML5 vengono registrate e riprodotte correttamente.  
   
  ![Controllo audio HTML5](../test/media/codedui-html5-audio.png)  
   
@@ -84,7 +84,7 @@ string Volume
 >  L'intervallo di tempo per la ricerca e la sospensione può essere significativo. Durante la riproduzione, il test codificato dell'interfaccia utente attenderà fino all'ora specificata in `(TimeSpan)` prima di sospendere l'audio. Se, in alcune circostanze speciali, l'ora specificata passa prima di fare clic sul comando Sospendi, verrà generata un'eccezione.  
   
 ### <a name="video-control"></a>Controllo video  
- **Controllo Video**: le azioni nel controllo Video HTML5 vengono registrate e riprodotte correttamente.  
+ **Controllo Video:** le azioni nel controllo Video HTML5 vengono registrate e riprodotte correttamente.  
   
  ![Controllo video HTML5](../test/media/codedui-html5-video.png)  
   
@@ -114,7 +114,7 @@ string VideoWidth
 >  Se si riavvolge o si fa avanzare rapidamente il video usando le etichette -30s o +30s, il video verrà aggregato in modo da passare all'ora appropriata.  
   
 ### <a name="slider"></a>Slider  
- **Controllo Slider**: le azioni nel controllo Slider HTML5 vengono registrate e riprodotte correttamente.  
+ **Controllo dispositivo di scorrimento:** Le azioni nel controllo Slider HTML5 vengono correttamente registrate e riprodotti.  
   
  ![Controllo dispositivo di scorrimento HTML5](../test/media/codedui-html5-slider.png)  
   
@@ -134,7 +134,7 @@ string ValueAsNumber
 ```  
   
 ### <a name="progressbar"></a>ProgressBar  
- **Controllo ProgressBar**: si tratta di un controllo con cui non si può interagire. È possibile aggiungere asserzioni nelle proprietà `Value` e `Max` di questo controllo.  
+ **Controllo ProgressBar:** si tratta di un controllo con cui non si può interagire. È possibile aggiungere asserzioni nelle proprietà `Value` e `Max` di questo controllo.  
   
  ![Controllo ProgressBar HTML5](../test/media/codedui-html5-progressbar.png)  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3393e5a70a0662d15cc4d643f7a5df106860d26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbf0c2d13668dbf380f326ee3a49e0389815a8fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102731"
 ---
 # <a name="error-rpc-requires-authentication"></a>Errore: RPC richiede autenticazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ Il debugger di Visual Studio non può connettersi al computer remoto. I criteri 
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Eseguire `\` *windir*`\system32\regedt32.exe`  
+1. Eseguire `\` *windir*`\system32\regedt32.exe`  
   
-2.  Individuare ed eliminare `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
+2. Individuare ed eliminare `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
-3.  Riavviare il computer per rendere effettiva la modifica del Registro di sistema.  
+3. Riavviare il computer per rendere effettiva la modifica del Registro di sistema.  
   
-4.  Se il problema persiste, contattare l'amministratore di dominio sui **configurazione Computer -> modelli amministrativi - > sistema -> Remote Procedure Call -> restrizioni per i client RPC non autenticati** gruppo impostazione dei criteri.
+4. Se il problema persiste, contattare l'amministratore di dominio sui **configurazione Computer -> modelli amministrativi - > sistema -> Remote Procedure Call -> restrizioni per i client RPC non autenticati** gruppo impostazione dei criteri.

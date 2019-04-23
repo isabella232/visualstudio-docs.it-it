@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118032"
 ---
 # <a name="how-to-implement-error-markers"></a>Procedura: Implementare i marcatori di errore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
   
   Il parser, provider di attività e filtro forniscono l'infrastruttura necessaria rendere possibili gli indicatori di errore. I passaggi seguenti sono disponibili il processo per visualizzare gli indicatori di errore.  
   
-1.  In una vista che viene filtrata, il filtro recupera un puntatore per il provider di attività associato ai dati della visualizzazione.  
+1. In una vista che viene filtrata, il filtro recupera un puntatore per il provider di attività associato ai dati della visualizzazione.  
   
     > [!NOTE]
     >  È possibile usare lo stesso filtro di comando per suggerimenti di metodo, il completamento delle istruzioni, i marcatori di errore e così via.  
   
-2.  Quando il filtro riceve un evento che indica che è stato spostato in un'altra riga, viene creata un'attività per verificare la presenza di errori.  
+2. Quando il filtro riceve un evento che indica che è stato spostato in un'altra riga, viene creata un'attività per verificare la presenza di errori.  
   
-3.  Il gestore di attività verifica se la riga è stata modificata. In questo caso, lo analizza la riga per gli errori.  
+3. Il gestore di attività verifica se la riga è stata modificata. In questo caso, lo analizza la riga per gli errori.  
   
-4.  Se vengono rilevati errori, il provider di attività crea un'istanza dell'elemento attività. Questa istanza crea il marcatore di testo che l'ambiente viene utilizzato come indicatore di errore nella visualizzazione di testo.  
+4. Se vengono rilevati errori, il provider di attività crea un'istanza dell'elemento attività. Questa istanza crea il marcatore di testo che l'ambiente viene utilizzato come indicatore di errore nella visualizzazione di testo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilizzo di marcatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   

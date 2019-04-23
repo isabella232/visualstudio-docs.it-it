@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094665"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
@@ -57,13 +57,13 @@ Nell'elenco seguente vengono presentate le operazioni necessarie per costruire u
 
 - Per connettere le attività:
 
-    1.  Selezionare l'attività di origine usando il tasto TAB.
+    1. Selezionare l'attività di origine usando il tasto TAB.
 
-    2.  Premere CTRL+E, M il numero di volte necessario per spostare lo stato attivo sull'attività di destinazione.
+    2. Premere CTRL+E, M il numero di volte necessario per spostare lo stato attivo sull'attività di destinazione.
 
-    3.  Premere CTRL+E, S per aggiungere l'attività di destinazione alla selezione.
+    3. Premere CTRL+E, S per aggiungere l'attività di destinazione alla selezione.
 
-    4.  Premere CTRL+E, F per aggiungere il connettore dall'origine alla destinazione.
+    4. Premere CTRL+E, F per aggiungere il connettore dall'origine alla destinazione.
 
 Note sulla connessione delle attività dalla tastiera:
 

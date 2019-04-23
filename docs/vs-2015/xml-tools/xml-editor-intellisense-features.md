@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094664"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
   
  L'editor XML effettua tale operazione per i seguenti elementi:  
   
--   Tag di inizio e di fine corrispondenti.  
+- Tag di inizio e di fine corrispondenti.  
   
--   Qualsiasi coppia di "\<" o ">" angolari.  
+- Qualsiasi coppia di "\<" o ">" angolari.  
   
--   Inizio e fine dei commenti.  
+- Inizio e fine dei commenti.  
   
--   Inizio e fine delle istruzioni di elaborazione.  
+- Inizio e fine delle istruzioni di elaborazione.  
   
--   Inizio e fine dei blocchi CDATA.  
+- Inizio e fine dei blocchi CDATA.  
   
--   Inizio e fine delle dichiarazioni DTD.  
+- Inizio e fine delle dichiarazioni DTD.  
   
--   Virgolette di apertura e chiusura sugli attributi.  
+- Virgolette di apertura e chiusura sugli attributi.  
   
 ## <a name="modifying-the-intellisense-options"></a>Modifica delle opzioni IntelliSense  
  Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare le impostazioni relative alle opzioni degli strumenti.  
@@ -112,11 +112,11 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Per modificare il comportamento del completamento automatico  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Espandere **Editor di testo**, espandere **XML**e selezionare **varie**.  
+2. Espandere **Editor di testo**, espandere **XML**e selezionare **varie**.  
   
-3.  Apportare modifiche per il **inserimento automatico** della sezione e fare clic su **OK**.  
+3. Apportare modifiche per il **inserimento automatico** della sezione e fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Editor XML](../xml-tools/xml-editor.md)   

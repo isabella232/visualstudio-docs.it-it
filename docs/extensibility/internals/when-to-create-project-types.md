@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094424"
 ---
 # <a name="when-to-create-project-types"></a>Quando creare tipi di progetto
 Creare un nuovo tipo di progetto fornisce una base per la personalizzazione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per gli utenti. Tuttavia, creare un nuovo tipo di progetto non è obbligatorio per tutti i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizzazioni. Le seguenti linee guida dovrebbero consentire di determinare se un nuovo tipo di progetto è obbligatorio per il proprio scenario.
@@ -23,26 +23,26 @@ Creare un nuovo tipo di progetto fornisce una base per la personalizzazione [!IN
 ## <a name="create-a-new-project-type"></a>Creare un nuovo tipo di progetto
  È necessario creare un tipo di progetto se si desidera personalizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di agire in uno o più dei modi seguenti:
 
--   Partecipa a compilazione, distribuzione, le configurazioni e controllo del codice sorgente.
+- Partecipa a compilazione, distribuzione, le configurazioni e controllo del codice sorgente.
 
--   Offrono supporto per il debug.
+- Offrono supporto per il debug.
 
--   Visualizzare gli elementi di progetto in **Esplora soluzioni**.
+- Visualizzare gli elementi di progetto in **Esplora soluzioni**.
 
--   Usare la **Apri progetto** oppure **nuovo progetto** nella finestra di dialogo.
+- Usare la **Apri progetto** oppure **nuovo progetto** nella finestra di dialogo.
 
--   Supporta l'annidamento di progetto.
+- Supporta l'annidamento di progetto.
 
 ## <a name="extend-an-existing-project-type"></a>Estendere un tipo di progetto esistente
  Si potrebbe voler creare un nuovo tipo di progetto utilizzabili [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei modi seguenti per modificare o estendere il comportamento di un tipo di progetto esistente, ad esempio, la modifica del processo di compilazione per [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetti:
 
--   Funziona con più file come singola unità.
+- Funziona con più file come singola unità.
 
--   Visualizzare un singolo file come una gerarchia di elementi secondari.
+- Visualizzare un singolo file come una gerarchia di elementi secondari.
 
--   Visualizzare un contesto del comando per gli editor.
+- Visualizzare un contesto del comando per gli editor.
 
--   Visualizzare un contesto del servizio per gli editor.
+- Visualizzare un contesto del servizio per gli editor.
 
 ## <a name="use-an-existing-project-type"></a>Usare un tipo di progetto esistente
  Crea un nuovo progetto in alcuni casi non è necessario. La tabella seguente illustra le attività che non è necessario creare un tipo di progetto per.

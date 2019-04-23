@@ -14,14 +14,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108789"
 ---
-# <a name="how-to-create-item-templates"></a>Procedura: creare modelli di elementi
+# <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) di questo argomento illustrano come creare un modello di elemento usando l'**Esportazione guidata modelli**. Se il modello è costituito da più file, vedere [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md).  
@@ -34,21 +34,21 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
   
 ### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>Per aggiungere un modello di elemento del progetto personalizzato alla finestra di dialogo Aggiungi nuovo elemento  
   
-1.  Creare o aprire un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Creare o aprire un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Aggiungere un elemento al progetto e, se si desidera, modificarlo.  
+2. Aggiungere un elemento al progetto e, se si desidera, modificarlo.  
   
-3.  Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).  
+3. Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Nel menu **File** scegliere**Esporta modello**.  
+4. Nel menu **File** scegliere**Esporta modello**.  
   
-5.  Scegliere **Modello di elemento**, selezionare il progetto che contiene l'elemento e quindi fare clic su **Avanti**.  
+5. Scegliere **Modello di elemento**, selezionare il progetto che contiene l'elemento e quindi fare clic su **Avanti**.  
   
-6.  Selezionare l'elemento per il quale creare il modello e fare clic su **Avanti**.  
+6. Selezionare l'elemento per il quale creare il modello e fare clic su **Avanti**.  
   
-7.  Selezionare i riferimenti all'assembly da includere nel modello e fare clic su **Avanti**.  
+7. Selezionare i riferimenti all'assembly da includere nel modello e fare clic su **Avanti**.  
   
-8.  Digitare il nome del file icona, l'immagine di anteprima, il nome del modello e la descrizione del modello e fare clic su **Fine**.  
+8. Digitare il nome del file icona, l'immagine di anteprima, il nome del modello e la descrizione del modello e fare clic su **Fine**.  
   
      I file per il modello vengono aggiunti a un file ZIP e copiati nella directory specificata nella finestra di dialogo. Il percorso predefinito è la cartella **..\Utenti\\<nomeutente\>\Documenti\Visual Studio \<versione>\My Exported Templates\\**.  
   
@@ -141,21 +141,21 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Per creare manualmente un modello di elemento senza usare l'Esportazione guidata modelli  
   
-1.  Creare un progetto e un elemento di progetto.  
+1. Creare un progetto e un elemento di progetto.  
   
-2.  Modificare l'elemento di progetto finché non è pronto per essere salvato come modello.  
+2. Modificare l'elemento di progetto finché non è pronto per essere salvato come modello.  
   
-3.  Modificare il file del codice come appropriato per indicare dove deve avvenire la sostituzione dei parametri. Per altre informazioni sulla sostituzione dei parametri, vedere Procedura: sostituire i parametri di un modello.  
+3. Modificare il file del codice come appropriato per indicare dove deve avvenire la sostituzione dei parametri. Per altre informazioni sulla sostituzione dei parametri, vedere Procedura: Sostituire i parametri di un modello.  
   
-4.  Creare un file XML e salvarlo con estensione vstemplate nella stessa directory del nuovo modello di elemento.  
+4. Creare un file XML e salvarlo con estensione vstemplate nella stessa directory del nuovo modello di elemento.  
   
-5.  Creare il file XML vstemplate per fornire i metadati del modello di elemento. Per altre informazioni, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.  
+5. Creare il file XML vstemplate per fornire i metadati del modello di elemento. Per altre informazioni, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.  
   
-6.  Salvare e chiudere il file vstemplate.  
+6. Salvare e chiudere il file vstemplate.  
   
-7.  In Esplora risorse selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere Invia a, quindi Cartella compressa. I file selezionati verranno compressi in un file ZIP.  
+7. In Esplora risorse selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere Invia a, quindi Cartella compressa. I file selezionati verranno compressi in un file ZIP.  
   
-8.  Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita in Visual Studio 2015 è... \Utenti\\<nomeutente\>\Documenti\Visual Studio 2015\Templates\ItemTemplates\\. Per altre informazioni, vedere Procedura: individuare e organizzare modelli di progetto e modelli di elementi.  
+8. Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita in Visual Studio 2015 è... \Utenti\\<nomeutente\>\Documenti\Visual Studio 2015\Templates\ItemTemplates\\. Per altre informazioni, vedere Procedura: Individuare e organizzare progetti e modelli di elementi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   

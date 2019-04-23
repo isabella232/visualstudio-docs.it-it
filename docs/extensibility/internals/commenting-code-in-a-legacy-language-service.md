@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4d1c3126c22661285f18aac18a63d55468312
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102705"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Commentare il codice in un servizio di linguaggio legacy
 I linguaggi di programmazione in genere forniscono un mezzo per inserire annotazioni o commenti nel codice. Un commento è una sezione di testo che fornisce informazioni aggiuntive sul codice, ma viene ignorato durante la compilazione o interpretazione.
@@ -26,9 +26,9 @@ I linguaggi di programmazione in genere forniscono un mezzo per inserire annotaz
 ## <a name="comment-styles"></a>Stili di commento
 Esistono due stili generali di commento:
 
-1.  Commenti di riga, in cui il commento è su una singola riga.
+1. Commenti di riga, in cui il commento è su una singola riga.
 
-2.  Commenti di blocco, dove il commento può includere più righe.
+2. Commenti di blocco, dove il commento può includere più righe.
 
 I commenti a riga sono in genere un carattere iniziale (o caratteri), mentre i commenti di blocco sono caratteri di inizio e fine. Ad esempio, nel linguaggio c#, un commento a riga inizia con `//`, e un commento del blocco inizia con `/*` e termina con `*/`.
 

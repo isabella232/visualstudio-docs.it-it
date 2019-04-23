@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c3d9394eef00ef315d6a0c6afc35e0af5dd7854
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112238"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding semplice
 
@@ -39,27 +39,27 @@ Questa procedura dettagliata crea un controllo semplice che visualizza i dati di
 
 Durante questa procedura dettagliata, si apprenderà come:
 
--   Creare una nuova applicazione **Windows Forms Application**.
+- Creare una nuova applicazione **Windows Forms Application**.
 
--   Aggiungere un nuovo **controllo utente** al progetto.
+- Aggiungere un nuovo **controllo utente** al progetto.
 
--   Progettare visivamente il controllo utente.
+- Progettare visivamente il controllo utente.
 
--   Implementare l'attributo `DefaultBindingProperty`.
+- Implementare l'attributo `DefaultBindingProperty`.
 
--   Creare un set di dati con il **configurazione dell'origine dati** procedura guidata.
+- Creare un set di dati con il **configurazione dell'origine dati** procedura guidata.
 
--   Impostare la colonna **Telefono** nella finestra **Origini dati** per usare il nuovo controllo.
+- Impostare la colonna **Telefono** nella finestra **Origini dati** per usare il nuovo controllo.
 
--   Creare un form per visualizzare i dati nel controllo.
+- Creare un form per visualizzare i dati nel controllo.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
 
-1.  Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
+1. Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
 
-2.  Installare il database di esempio Northwind seguendo questa procedura:
+2. Installare il database di esempio Northwind seguendo questa procedura:
 
     1. In Visual Studio, aprire il **Esplora oggetti di SQL Server** finestra. (Esplora oggetti di SQL Server viene installato come parte del **elaborazione ed archiviazione dati** carico di lavoro nel **programma di installazione di Visual Studio**.) Espandere la **SQL Server** nodo. Fare doppio clic sull'istanza di Local DB e selezionare **nuova Query**.
 
@@ -77,7 +77,7 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**:
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -89,9 +89,9 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**:
 
 Questa procedura dettagliata crea un controllo data binding semplice da un **controllo utente**. Aggiungere un **UserControl** voce al **SimpleControlWalkthrough** progetto:
 
-1.  Scegliere **Aggiungi controllo utente** dal menu **Progetto**.
+1. Scegliere **Aggiungi controllo utente** dal menu **Progetto**.
 
-2.  Digitare **PhoneNumberBox** nell'area Nome, quindi scegliere **Aggiungi**.
+2. Digitare **PhoneNumberBox** nell'area Nome, quindi scegliere **Aggiungi**.
 
      Il controllo **PhoneNumberBox** viene aggiunto a **Esplora soluzioni** e si apre nella finestra di progettazione.
 
@@ -99,48 +99,48 @@ Questa procedura dettagliata crea un controllo data binding semplice da un **con
 
 Questa procedura dettagliata espande l'oggetto esistente <xref:System.Windows.Forms.MaskedTextBox> per creare le **PhoneNumberBox** controllo:
 
-1.  Trascinare un oggetto <xref:System.Windows.Forms.MaskedTextBox> dalla **Casella degli strumenti** nell'area di progettazione del controllo utente.
+1. Trascinare un oggetto <xref:System.Windows.Forms.MaskedTextBox> dalla **Casella degli strumenti** nell'area di progettazione del controllo utente.
 
-2.  Selezionare lo smart tag sull'oggetto <xref:System.Windows.Forms.MaskedTextBox> appena trascinato e scegliere **Imposta maschera**.
+2. Selezionare lo smart tag sull'oggetto <xref:System.Windows.Forms.MaskedTextBox> appena trascinato e scegliere **Imposta maschera**.
 
-3.  Selezionare **Numero di telefono** nella finestra di dialogo **Maschera input** e fare clic su **OK** per impostare la maschera.
+3. Selezionare **Numero di telefono** nella finestra di dialogo **Maschera input** e fare clic su **OK** per impostare la maschera.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo di data binding richiesto
 
 Per controlli semplici che supportano il data binding, implementare l'attributo <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1.  Passare il **PhoneNumberBox** controllo alla visualizzazione codice. Scegliere **Codice** dal menu **Visualizza**.
+1. Passare il **PhoneNumberBox** controllo alla visualizzazione codice. Scegliere **Codice** dal menu **Visualizza**.
 
-2.  Sostituire il codice nel **PhoneNumberBox** con quanto segue:
+2. Sostituire il codice nel **PhoneNumberBox** con quanto segue:
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3.  Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione** dal menu **Compila**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` contenuta nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione di database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` contenuta nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione di database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
+1. Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
 
-2.  Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3.  Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.
+3. Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.
 
-4.  Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
+4. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
-    -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
+    - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
+    - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
-5.  Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
+5. Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
 
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
+6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
 
-7.  Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
+7. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
-8.  Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
+8. Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Customers` viene visualizzata nella finestra **Origini dati**.
 
@@ -148,17 +148,17 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel form:
 
-1.  Aprire **Form1** nella finestra di progettazione.
+1. Aprire **Form1** nella finestra di progettazione.
 
-2.  Espandere il nodo **Customers** nella finestra **Origini dati**.
+2. Espandere il nodo **Customers** nella finestra **Origini dati**.
 
-3.  Fare clic sulla freccia a discesa nel nodo **Customers** e scegliere **Dettagli** dall'elenco di controllo.
+3. Fare clic sulla freccia a discesa nel nodo **Customers** e scegliere **Dettagli** dall'elenco di controllo.
 
-4.  Fare clic sulla freccia a discesa nella colonna **Telefono** e scegliere **Personalizza**.
+4. Fare clic sulla freccia a discesa nella colonna **Telefono** e scegliere **Personalizza**.
 
-5.  Selezionare **PhoneNumberBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.
+5. Selezionare **PhoneNumberBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.
 
-6.  Fare clic sulla freccia a discesa nella colonna **Telefono** e scegliere **PhoneNumberBox**.
+6. Fare clic sulla freccia a discesa nella colonna **Telefono** e scegliere **PhoneNumberBox**.
 
 ## <a name="add-controls-to-the-form"></a>Aggiungere controlli al form
 
@@ -176,9 +176,9 @@ Premere **F5** per eseguire l'applicazione.
 
 A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che supporta il data binding sarà possibile eseguire diverse operazioni. Ecco alcuni dei passaggi più comuni:
 
--   Posizionamento dei controlli personalizzati in una libreria di controlli in modo da poterli usare di nuovo in altre applicazioni.
+- Posizionamento dei controlli personalizzati in una libreria di controlli in modo da poterli usare di nuovo in altre applicazioni.
 
--   Creazione di controlli che supportano scenari di associazioni di dati più complessi. Per altre informazioni, vedere [creare un controllo utente Windows Form che supporta data binding complesso](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) e [creare un controllo utente Windows Form che supporta l'associazione di dati di ricerca](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
+- Creazione di controlli che supportano scenari di associazioni di dati più complessi. Per altre informazioni, vedere [creare un controllo utente Windows Form che supporta data binding complesso](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) e [creare un controllo utente Windows Form che supporta l'associazione di dati di ricerca](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
 ## <a name="see-also"></a>Vedere anche
 

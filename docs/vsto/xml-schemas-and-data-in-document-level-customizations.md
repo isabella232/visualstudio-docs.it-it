@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117929"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML schema e dati nelle personalizzazioni a livello di documento
   **Importante** le informazioni definite in questo argomento relative a Microsoft Word sono presentati in modo esclusivo per il vantaggio e uso di singoli utenti e le organizzazioni che si trovano di fuori degli Stati Uniti e dei relativi territori o che usano o lo sviluppo i programmi eseguiti su, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft prima di gennaio del 2010 quando Microsoft ha rimosso un'implementazione di una funzionalità specifica correlato a XML personalizzata da Microsoft Word. Queste informazioni relative a Microsoft Word non possono essere lette o utilizzate dagli singoli individui o organizzazioni negli Stati Uniti o relativo territori che usano o lo sviluppo di programmi in esecuzione in, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft dopo il 10 gennaio 2010 ; tali prodotti non si comporterà come prodotti concessi in licenza prima di tale data o acquistati e concesso in licenza per l'utilizzo di fuori degli Stati Uniti.
@@ -40,16 +40,16 @@ ms.locfileid: "54875450"
 
  Sono presenti due oggetti principali:
 
--   Schema XML (file XSD). Per ogni schema nella cartella di lavoro, Visual Studio aggiunge uno schema al progetto. Questa opzione corrisponde a un elemento del progetto con estensione XSD nella **Esplora soluzioni**.
+- Schema XML (file XSD). Per ogni schema nella cartella di lavoro, Visual Studio aggiunge uno schema al progetto. Questa opzione corrisponde a un elemento del progetto con estensione XSD nella **Esplora soluzioni**.
 
--   Una classe <xref:System.Data.DataSet> tipizzata. Questa classe viene creata sulla base dello schema. Questa classe di set di dati è visibile nella **Visualizzazione classi**.
+- Una classe <xref:System.Data.DataSet> tipizzata. Questa classe viene creata sulla base dello schema. Questa classe di set di dati è visibile nella **Visualizzazione classi**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Oggetti creati quando vengono eseguito il mapping di elementi dello schema a fogli di lavoro di Excel
  Quando si esegue il mapping di un elemento dello schema dal **origine XML** riquadro attività a un foglio di lavoro, Visual Studio automaticamente crea diversi oggetti e le aggiunge al progetto:
 
--   Controlli. Per ogni oggetto con mapping nella cartella di lavoro, un' <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo (per gli elementi dello schema non ripetuto) o un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo (per la ripetizione di elementi dello schema) viene creata nel modello di programmazione. Il <xref:Microsoft.Office.Tools.Excel.ListObject> controllo può essere eliminato solo eliminando i mapping e gli oggetti con mapping dalla cartella di lavoro. Per altre informazioni sui controlli, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).
+- Controlli. Per ogni oggetto con mapping nella cartella di lavoro, un' <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo (per gli elementi dello schema non ripetuto) o un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo (per la ripetizione di elementi dello schema) viene creata nel modello di programmazione. Il <xref:Microsoft.Office.Tools.Excel.ListObject> controllo può essere eliminato solo eliminando i mapping e gli oggetti con mapping dalla cartella di lavoro. Per altre informazioni sui controlli, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Quando si crea un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> eseguendo il mapping di un elemento dello schema non ripetuto nel foglio di lavoro, un <xref:System.Windows.Forms.BindingSource> viene creato e il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> è associato ai <xref:System.Windows.Forms.BindingSource>. È necessario associare il <xref:System.Windows.Forms.BindingSource> a un'istanza dell'origine dati che corrispondono allo schema mappato al documento, ad esempio un'istanza dell'oggetto tipizzato <xref:System.Data.DataSet> classe creata. Creare il binding impostando il <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> le proprietà, che vengono esposte nel **proprietà** finestra.
+- BindingSource. Quando si crea un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> eseguendo il mapping di un elemento dello schema non ripetuto nel foglio di lavoro, un <xref:System.Windows.Forms.BindingSource> viene creato e il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> è associato ai <xref:System.Windows.Forms.BindingSource>. È necessario associare il <xref:System.Windows.Forms.BindingSource> a un'istanza dell'origine dati che corrispondono allo schema mappato al documento, ad esempio un'istanza dell'oggetto tipizzato <xref:System.Data.DataSet> classe creata. Creare il binding impostando il <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> le proprietà, che vengono esposte nel **proprietà** finestra.
 
     > [!NOTE]
     >  Il <xref:System.Windows.Forms.BindingSource> non viene creato per <xref:Microsoft.Office.Tools.Excel.ListObject> oggetti. È necessario associare manualmente il <xref:Microsoft.Office.Tools.Excel.ListObject> all'origine dei dati impostando il <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> delle proprietà nel **proprietà** finestra.

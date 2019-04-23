@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094788"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Chiamare GC.SuppressFinalize correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "58969139"
 
 ## <a name="cause"></a>Causa
 
--   Un metodo che è un'implementazione di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> non chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Un metodo che è un'implementazione di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> non chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Un metodo che non è un'implementazione di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chiamate <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Un metodo che non è un'implementazione di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chiamate <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Chiama un metodo <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa un valore diverso da this (Me in Visual Basic).
+- Chiama un metodo <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa un valore diverso da this (Me in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
  Il <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo consente agli utenti di rilasciare le risorse in qualsiasi momento prima dell'oggetto di essere disponibili per l'operazione di garbage collection. Se il <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> viene chiamato il metodo, libera le risorse dell'oggetto. In questo modo la finalizzazione non necessaria. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> deve chiamare <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> in modo che il garbage collector non chiama il finalizzatore dell'oggetto.
 
- Per impedire i tipi derivati con i finalizzatori di dover implementare nuovamente [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e per la chiamata, i tipi unsealed senza i finalizzatori devono chiamare ancora <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Per evitare che i tipi con i finalizzatori derivati di dover implementare nuovamente ([System. IDisposable]<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e per la chiamata, i tipi unsealed senza i finalizzatori devono chiamare ancora <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola:

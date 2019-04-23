@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95afdec845b4b7788274ee0bc03bd5f26e862388
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112117"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: Personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,26 +30,26 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
  In questa procedura dettagliata si apprenderà come eseguire le attività seguenti:  
   
--   Creazione di una nuova applicazione Windows Form e aggiunta ad essa di un file [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)].  
+- Creazione di una nuova applicazione Windows Form e aggiunta ad essa di un file [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)].  
   
--   Creazione di una classe di entità con mapping alla tabella Customers di Northwind.  
+- Creazione di una classe di entità con mapping alla tabella Customers di Northwind.  
   
--   Creazione dell'origine dati di un oggetto che fa riferimento alla classe LINQ to SQL Customer.  
+- Creazione dell'origine dati di un oggetto che fa riferimento alla classe LINQ to SQL Customer.  
   
--   Creazione di un Windows Form che contiene un oggetto <xref:System.Windows.Forms.DataGridView> associato alla classe Customer.  
+- Creazione di un Windows Form che contiene un oggetto <xref:System.Windows.Forms.DataGridView> associato alla classe Customer.  
   
--   Implementazione della funzionalità di salvataggio per il form.  
+- Implementazione della funzionalità di salvataggio per il form.  
   
--   Creazione di metodi <xref:System.Data.Linq.DataContext> mediante l'aggiunta di stored procedure a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+- Creazione di metodi <xref:System.Data.Linq.DataContext> mediante l'aggiunta di stored procedure a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
--   Configurazione della classe Customer in modo che utilizzi stored procedure per l'esecuzione dei comandi di inserimento, aggiornamento ed eliminazione.  
+- Configurazione della classe Customer in modo che utilizzi stored procedure per l'esecuzione dei comandi di inserimento, aggiornamento ed eliminazione.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario disporre dei seguenti elementi:  
   
--   Accedere alla versione SQL Server del database di esempio Northwind.
+- Accedere alla versione SQL Server del database di esempio Northwind.
   
--   Il **InsertCustomer**, **UpdateCustomer**, e **DeleteCustomer** stored procedure per il database Northwind.
+- Il **InsertCustomer**, **UpdateCustomer**, e **DeleteCustomer** stored procedure per il database Northwind.
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Creazione di un'applicazione e aggiunta di classi LINQ to SQL  
  Poiché verranno usate classi [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] e verranno visualizzati i dati in un Windows Form, creare una nuova applicazione Windows Form e aggiungere un file di classi LINQ to SQL.  
@@ -58,22 +58,22 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 #### <a name="to-create-a-new-windows-application-project-that-contains-linq-to-sql-classes"></a>Per creare un nuovo progetto Applicazione Windows che contenga classi LINQ to SQL  
   
-1.  Dal **File** menu, creare un nuovo progetto.  
+1. Dal **File** menu, creare un nuovo progetto.  
   
-2.  Denominare il progetto **UpdatingwithSProcsWalkthrough**.  
+2. Denominare il progetto **UpdatingwithSProcsWalkthrough**.  
   
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] è supportato nei progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e di C#. Pertanto, creare il nuovo progetto in uno di questi linguaggi.  
   
-3.  Scegliere il **Windows Forms Application** modello, quindi scegliere **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Scegliere il **Windows Forms Application** modello, quindi scegliere **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto UpdatingwithSProcsWalkthrough viene creato e aggiunto alla **Esplora soluzioni**.  
   
-4.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
+4. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
-5.  Fare clic sul modello **Classi LINQ to SQL** e digitare **Northwind.dbml** nella casella **Nome**.  
+5. Fare clic sul modello **Classi LINQ to SQL** e digitare **Northwind.dbml** nella casella **Nome**.  
   
-6.  Fare clic su **Aggiungi**.  
+6. Fare clic su **Aggiungi**.  
   
      Viene aggiunto al progetto un file di classi LINQ to SQL vuoto (Northwind.dbml) e viene aperto [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -82,45 +82,45 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Per creare una classe di entità Customer e configurare un'origine dati con tale classe  
   
-1.  Nelle **Esplora Server**/**Esplora Database**, individuare la tabella Customer nella versione SQL Server di database di esempio Northwind.
+1. Nelle **Esplora Server**/**Esplora Database**, individuare la tabella Customer nella versione SQL Server di database di esempio Northwind.
   
-2.  Trascinare il **clienti** nodo dal **Esplora Server**/**Esplora Database** nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] superficie.  
+2. Trascinare il **clienti** nodo dal **Esplora Server**/**Esplora Database** nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] superficie.  
   
      Viene creata una classe di entità denominata **Customer**, che presenta proprietà corrispondenti alle colonne della tabella Customers. La classe di entità viene denominata **Customer** (e non **Customers**) perché rappresenta un solo cliente della tabella Customers.  
   
     > [!NOTE]
     >  Questo comportamento di ridenominazione viene definito *pluralizzazione*. E può essere attivato o disattivare [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md). Per altre informazioni, vedere [Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer).](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
   
-3.  Scegliere **Compila UpdatingwithSProcsWalkthrough** dal menu **Compila** per compilare il progetto.  
+3. Scegliere **Compila UpdatingwithSProcsWalkthrough** dal menu **Compila** per compilare il progetto.  
   
-4.  Scegliere **Mostra origini dati** dal menu **Dati**.  
+4. Scegliere **Mostra origini dati** dal menu **Dati**.  
   
-5.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
+5. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
   
-6.  Nella pagina **Seleziona un tipo di origine dati** fare clic su **Oggetto** e quindi su **Avanti**.  
+6. Nella pagina **Seleziona un tipo di origine dati** fare clic su **Oggetto** e quindi su **Avanti**.  
   
-7.  Espandere il nodo **UpdatingwithSProcsWalkthrough** e quindi individuare e selezionare la classe **Customer**.  
+7. Espandere il nodo **UpdatingwithSProcsWalkthrough** e quindi individuare e selezionare la classe **Customer**.  
   
     > [!NOTE]
     >  Se la classe **Customer** non è disponibile, chiudere la procedura guidata, compilare il progetto ed eseguire nuovamente la procedura guidata.  
   
-8.  Fare clic su **Fine** per creare l'origine dati e aggiungere la classe di entità **Customer** alla finestra **Origini dati**.  
+8. Fare clic su **Fine** per creare l'origine dati e aggiungere la classe di entità **Customer** alla finestra **Origini dati**.  
   
 ## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Creazione di un controllo DataGridView per visualizzare i dati dei clienti in un Windows Form  
  Creare controlli associati alle classi di entità trascinando [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] gli elementi dall'origine dati di **Zdroje dat** finestra in un Windows Form.  
   
 #### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Per aggiungere controlli associati alle classi di entità  
   
-1.  Aprire Form1 nella visualizzazione Progettazione.  
+1. Aprire Form1 nella visualizzazione Progettazione.  
   
-2.  Dal **Zdroje dat** finestra, trascinare le **cliente** nodo in Form1.  
+2. Dal **Zdroje dat** finestra, trascinare le **cliente** nodo in Form1.  
   
     > [!NOTE]
     >  Per visualizzare la finestra **Origini dati**, scegliere **Mostra origini dati** dal menu **Dati**.  
   
-3.  Aprire Form1 nell'editor del codice.  
+3. Aprire Form1 nell'editor del codice.  
   
-4.  Aggiungere al form il seguente codice, che verrà applicato all'intero form, all'esterno di un metodo specifico ma all'interno della classe Form1:  
+4. Aggiungere al form il seguente codice, che verrà applicato all'intero form, all'esterno di un metodo specifico ma all'interno della classe Form1:  
   
     ```vb  
     Private NorthwindDataContext1 As New NorthwindDataContext  
@@ -132,7 +132,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
     ```  
   
-5.  Creare un gestore eventi per l'evento `Form_Load` e aggiungere il seguente codice al gestore:  
+5. Creare un gestore eventi per l'evento `Form_Load` e aggiungere il seguente codice al gestore:  
   
     ```vb  
     CustomerBindingSource.DataSource = NorthwindDataContext1.Customers  
@@ -149,15 +149,15 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 #### <a name="to-implement-save-functionality"></a>Per implementare la funzionalità di salvataggio  
   
-1.  Aprire Form1 nella visualizzazione Progettazione.  
+1. Aprire Form1 nella visualizzazione Progettazione.  
   
-2.  Selezionare il pulsante Salva in **CustomerBindingNavigator** (il pulsante con l'icona del disco floppy).  
+2. Selezionare il pulsante Salva in **CustomerBindingNavigator** (il pulsante con l'icona del disco floppy).  
   
-3.  Nella finestra **Proprietà** impostare la proprietà **Enabled** su **True**.  
+3. Nella finestra **Proprietà** impostare la proprietà **Enabled** su **True**.  
   
-4.  Fare doppio clic sul pulsante Salva per creare un gestore eventi e passare all'editor del codice.  
+4. Fare doppio clic sul pulsante Salva per creare un gestore eventi e passare all'editor del codice.  
   
-5.  Aggiungere il seguente codice nel gestore eventi del pulsante Salva:  
+5. Aggiungere il seguente codice nel gestore eventi del pulsante Salva:  
   
     ```vb  
     NorthwindDataContext1.SubmitChanges()  
@@ -171,23 +171,23 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 #### <a name="to-override-the-default-update-behavior"></a>Per eseguire l'override del comportamento di aggiornamento predefinito  
   
-1.  Aprire il file LINQ to SQL in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **Northwind.dbml** in **Esplora soluzioni**.)  
+1. Aprire il file LINQ to SQL in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **Northwind.dbml** in **Esplora soluzioni**.)  
   
-2.  Nelle **Esplora Server**/**Esplora Database**, espandere i database Northwind **Stored Procedures** nodo e individuare il  **InsertCustomers**, **UpdateCustomers**, e **DeleteCustomers** stored procedure.  
+2. Nelle **Esplora Server**/**Esplora Database**, espandere i database Northwind **Stored Procedures** nodo e individuare il  **InsertCustomers**, **UpdateCustomers**, e **DeleteCustomers** stored procedure.  
   
-3.  Trascinare tutte e tre le stored procedure in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+3. Trascinare tutte e tre le stored procedure in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      Le stored procedure vengono aggiunte al riquadro dei metodi come metodi <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-4.  Selezionare il **cliente** classe di entità di [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+4. Selezionare il **cliente** classe di entità di [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-5.  Nella finestra **Proprietà** selezionare la proprietà **Insert**.  
+5. Nella finestra **Proprietà** selezionare la proprietà **Insert**.  
   
-6.  Fare clic sui puntini di sospensione (...) accanto a **Usa fase di esecuzione** per aprire il **Configura comportamento** nella finestra di dialogo.  
+6. Fare clic sui puntini di sospensione (...) accanto a **Usa fase di esecuzione** per aprire il **Configura comportamento** nella finestra di dialogo.  
   
-7.  Selezionare **Personalizza**.  
+7. Selezionare **Personalizza**.  
   
-8.  Selezionare il metodo **InsertCustomers** nell'elenco **Personalizza**.  
+8. Selezionare il metodo **InsertCustomers** nell'elenco **Personalizza**.  
   
 9. Fare clic su **Applica** per salvare la configurazione relativa alla classe e al comportamento selezionati.  
   
@@ -227,21 +227,21 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
   
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione  
   
-1.  Premere F5.  
+1. Premere F5.  
   
-2.  Modificare un record nella griglia per testare il comportamento di Update.  
+2. Modificare un record nella griglia per testare il comportamento di Update.  
   
-3.  Aggiungere un nuovo record per testare il comportamento di Insert.  
+3. Aggiungere un nuovo record per testare il comportamento di Insert.  
   
-4.  Fare clic sul pulsante Salva per salvare le modifiche nel database.  
+4. Fare clic sul pulsante Salva per salvare le modifiche nel database.  
   
-5.  Chiudere il form.  
+5. Chiudere il form.  
   
-6.  Premere F5 e verificare che il record aggiornato e quello appena inserito siano stati salvati in modo permanente.  
+6. Premere F5 e verificare che il record aggiornato e quello appena inserito siano stati salvati in modo permanente.  
   
-7.  Eliminare il nuovo record creato nel passaggio 3 per testare il comportamento di Delete.  
+7. Eliminare il nuovo record creato nel passaggio 3 per testare il comportamento di Delete.  
   
-8.  Fare clic sul pulsante Salva per inviare le modifiche e rimuovere il record eliminato dal database.  
+8. Fare clic sul pulsante Salva per inviare le modifiche e rimuovere il record eliminato dal database.  
   
 9. Chiudere il form.  
   
@@ -253,9 +253,9 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazioni dopo la creazione delle classi di entità [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. È possibile apportare alcuni miglioramenti a questa applicazione, tra cui:  
   
--   Implementazione del controllo della concorrenza durante gli aggiornamenti. Per informazioni, vedere [la concorrenza ottimistica: Panoramica](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Implementazione del controllo della concorrenza durante gli aggiornamenti. Per informazioni, vedere [la concorrenza ottimistica: Panoramica](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
--   Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109257"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Creazione di processori di direttiva di modelli di testo T4 personalizzati
 
@@ -40,9 +40,9 @@ Modelli di testo diversi possono condividere la funzionalità che fornisce un si
 
 Alcuni esempi di processori di direttiva personalizzati potrebbe essere:
 
--   Un processore di direttiva per restituire dati da un database che accetta un nome utente e una password come parametri.
+- Un processore di direttiva per restituire dati da un database che accetta un nome utente e una password come parametri.
 
--   Un processore di direttiva ad aprire e leggere un file che accetta il nome del file come parametro.
+- Un processore di direttiva ad aprire e leggere un file che accetta il nome del file come parametro.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Parti principali di un processore di direttiva personalizzato
 
@@ -50,19 +50,19 @@ Per sviluppare un processore di direttiva, è necessario creare una classe che e
 
 La più importante `DirectiveProcessor` metodi che è necessario implementare sono i seguenti.
 
--   `bool IsDirectiveSupported(string directiveName)` -Restituito `true` se il processore di direttiva può gestire con la direttiva denominata.
+- `bool IsDirectiveSupported(string directiveName)` -Restituito `true` se il processore di direttiva può gestire con la direttiva denominata.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Il motore del modello chiama questo metodo per ogni occorrenza di una direttiva del modello. Il processore deve salvare i risultati.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Il motore del modello chiama questo metodo per ogni occorrenza di una direttiva del modello. Il processore deve salvare i risultati.
 
 Dopo tutte le chiamate a ProcessDirective () il motore del modello chiameranno tali metodi:
 
--   `string[] GetReferencesForProcessingRun()` : Restituisce i nomi degli assembly che richiede il codice del modello.
+- `string[] GetReferencesForProcessingRun()` : Restituisce i nomi degli assembly che richiede il codice del modello.
 
--   `string[] GetImportsForProcessingRun()` -Restituire gli spazi dei nomi che può essere usato nel codice del modello.
+- `string[] GetImportsForProcessingRun()` -Restituire gli spazi dei nomi che può essere usato nel codice del modello.
 
--   `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice C# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.
+- `string GetClassCodeForProcessingRun()` -Il codice restituito di metodi, proprietà e altre dichiarazioni che possa usare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nella compilazione di una stringa contenente il codice c# o Visual Basic. Per rendere il processore di direttiva in grado di essere chiamato da un modello che Usa qualsiasi linguaggio Common Language Runtime, è possibile creare le istruzioni come un struttura ad albero CodeDom e restituirne il risultato di serializzare l'albero nella lingua utilizzata dal modello.
 
--   Per altre informazioni, vedere [Procedura dettagliata: Creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Per altre informazioni, vedere [Procedura dettagliata: Creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Vedere anche
 

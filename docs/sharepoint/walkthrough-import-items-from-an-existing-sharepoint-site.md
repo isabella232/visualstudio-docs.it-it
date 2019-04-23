@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110871"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procedura dettagliata: Importare gli elementi da un sito di SharePoint esistente
   Questa procedura dettagliata illustra come importare elementi da un sito di SharePoint esistente in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.
@@ -36,9 +36,9 @@ ms.locfileid: "56841743"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
+- Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Personalizzare un sito di SharePoint
  Per questo esempio, si crea e personalizzare un sito secondario di SharePoint mediante l'aggiunta una nuova colonna di sito e la creazione di un altro sito secondario per un uso successivo. Verrà successivamente, esportare il primo sito secondario in un file con estensione wsp e quindi importare la colonna di sito personalizzato nel secondo sito secondario usando il progetto di importazione di wsp.
@@ -79,23 +79,23 @@ ms.locfileid: "56841743"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Per esportare un sito di SharePoint esistente
 
-1.  Nel sito di SharePoint, scegliere **Impostazioni sito** nel **Azioni sito** scheda per visualizzare la pagina Impostazioni sito.
+1. Nel sito di SharePoint, scegliere **Impostazioni sito** nel **Azioni sito** scheda per visualizzare la pagina Impostazioni sito.
 
-2.  Nel **Azioni sito** sezione della pagina Impostazioni sito, scegliere il **sito Salva come modello** collegamento.
+2. Nel **Azioni sito** sezione della pagina Impostazioni sito, scegliere il **sito Salva come modello** collegamento.
 
-3.  Nel **nome File** immettere **ExampleSite**e nel **nome modello** immettere **esempio sito**.
+3. Nel **nome File** immettere **ExampleSite**e nel **nome modello** immettere **esempio sito**.
 
-4.  Per questo esempio, lasciare il **includere contenuto** casella di controllo.
+4. Per questo esempio, lasciare il **includere contenuto** casella di controllo.
 
      Se si seleziona questa casella, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Salva tutti gli elenchi e raccolte documenti e il relativo contenuto nel file con estensione wsp. Anche se ciò è utile in alcuni casi, non è necessario per questo esempio.
 
-5.  Quando l'operazione viene completata, scegliere il **raccolta soluzioni** collegamento per visualizzare il file con estensione wsp.
+5. Quando l'operazione viene completata, scegliere il **raccolta soluzioni** collegamento per visualizzare il file con estensione wsp.
 
      Per visualizzare la pagina Raccolta soluzioni più avanti, aprire il **Azioni sito** menu, scegliere **le impostazioni del sito**, scegliere il **passa a impostazioni del sito di livello superiore** clic sul collegamento nella  **Amministrazione raccolta siti** sezione e quindi scegliere il **soluzioni** clic sul collegamento nella **raccolte** sezione.
 
-6.  Nella raccolta di soluzioni, scegliere il **ExampleSite** collegamento.
+6. Nella raccolta di soluzioni, scegliere il **ExampleSite** collegamento.
 
-7.  Nel **del File da scaricare** finestra di dialogo scegliere la **salvare** consente di salvare il file nel sistema locale, per impostazione predefinita, nella cartella download.
+7. Nel **del File da scaricare** finestra di dialogo scegliere la **salvare** consente di salvare il file nel sistema locale, per impostazione predefinita, nella cartella download.
 
 ## <a name="import-the-wsp-file"></a>Importare il file con estensione wsp
  Dopo aver creato un *wsp* file che contiene un elemento che si desidera riutilizzare (la colonna di Test di colonna di sito personalizzato), importare il *wsp* file per accedervi.
@@ -130,13 +130,13 @@ ms.locfileid: "56841743"
 
 ### <a name="to-deploy-the-project"></a>Per distribuire il progetto
 
-1.  Nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], scegliere il **F5** per distribuire ed eseguire il *wsp* importare il progetto.
+1. Nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], scegliere il **F5** per distribuire ed eseguire il *wsp* importare il progetto.
 
-2.  Nel sito di SharePoint, aprire il **Azioni sito** menu, quindi scegliere **Impostazioni sito** per visualizzare la pagina Impostazioni sito.
+2. Nel sito di SharePoint, aprire il **Azioni sito** menu, quindi scegliere **Impostazioni sito** per visualizzare la pagina Impostazioni sito.
 
-3.  Nel **Galleries** keychains le **le colonne del sito** collegamento.
+3. Nel **Galleries** keychains le **le colonne del sito** collegamento.
 
-4.  Scorrere verso il basso il **colonne personalizzate** sezione.
+4. Scorrere verso il basso il **colonne personalizzate** sezione.
 
      Si noti che la colonna di sito personalizzato che è stato importato dal primo sito di SharePoint viene visualizzato nell'elenco.
 

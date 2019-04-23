@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: usare controlli runtime nativi | Microsoft Docs'
+title: 'Procedura: Usare i controlli runtime nativi | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,14 +37,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100209"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
+# <a name="how-to-use-native-run-time-checks"></a>Procedura: Usare i controlli di runtime nativi
 In Visual C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
 
 - Errori del puntatore dello stack.
@@ -71,11 +71,11 @@ In Visual C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-chec
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Per attivare i controlli runtime nativi in una build di debug
 
--   Usare l'opzione **/RTC** e collegarsi alla versione di debug di una libreria di runtime del linguaggio C, ad esempio /MDd.
+- Usare l'opzione **/RTC** e collegarsi alla versione di debug di una libreria di runtime del linguaggio C, ad esempio /MDd.
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>Per modificare il comportamento dei controlli runtime nativi
 
--   Usare il pragma `runtime_checks` .
+- Usare il pragma `runtime_checks` .
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug in Visual Studio](../debugger/index.md)

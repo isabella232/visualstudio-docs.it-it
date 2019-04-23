@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101379"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: di frammenti di codice XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 ## <a name="to-create-a-new-xml-snippet"></a>Per creare un nuovo frammento di codice XML  
  Per creare un nuovo codice XML frammento di codice, creare un nuovo file XML e usare la **Inserisci frammento di codice** funzionalità.  
   
-1.  Nel **File** menu, fare clic su **New** e quindi fare clic su **File**.  
+1. Nel **File** menu, fare clic su **New** e quindi fare clic su **File**.  
   
-2.  Fare clic su **File XML** e quindi fare clic su **Open**.  
+2. Fare clic su **File XML** e quindi fare clic su **Open**.  
   
-3.  Nel riquadro dell'editor e scegliere **Inserisci frammento di codice**.  
+3. Nel riquadro dell'editor e scegliere **Inserisci frammento di codice**.  
   
-4.  Selezionare **frammento** dall'elenco e premere INVIO.  
+4. Selezionare **frammento** dall'elenco e premere INVIO.  
   
-5.  Se necessario, apportare modifiche al nuovo frammento.  
+5. Se necessario, apportare modifiche al nuovo frammento.  
   
-6.  Dal **File** dal menu **Salva XMLFile**.  
+6. Dal **File** dal menu **Salva XMLFile**.  
   
      Il **Salva File con nome** verrà visualizzata la finestra di dialogo.  
   
-7.  Immettere un nome per il nuovo frammento di codice e selezionare **file di frammenti** dal **Salva come tipo** finestra elenco a discesa.  
+7. Immettere un nome per il nuovo frammento di codice e selezionare **file di frammenti** dal **Salva come tipo** finestra elenco a discesa.  
   
-8.  Usare la **salvare nella** elenco a discesa per modificare il percorso del file alla cartella Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets e quindi premere **salvare**.  
+8. Usare la **salvare nella** elenco a discesa per modificare il percorso del file alla cartella Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets e quindi premere **salvare**.  
   
 ## <a name="snippet-description"></a>Descrizione del frammento di codice  
  Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per altre informazioni sugli elementi dello schema usati per i frammenti di codice XML, vedere [riferimento dello Schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).  

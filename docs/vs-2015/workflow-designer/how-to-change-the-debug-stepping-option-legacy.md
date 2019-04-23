@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 505f876b9c7943c8b039b74459552b77ce539477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101119"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Procedura: Modificare l'opzione di avanzamento nell'esecuzione del debug (legacy)
 In questo argomento viene descritto come modificare l'opzione di avanzamento nell'esecuzione del debug per le applicazioni [!INCLUDE[wf](../includes/wf-md.md)] in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy aventi azioni simultanee. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -33,13 +33,13 @@ In questo argomento viene descritto come modificare l'opzione di avanzamento nel
   
 #### <a name="to-change-the-debug-stepping-option"></a>Per modificare l'opzione di avanzamento nell'esecuzione del debug  
   
-1.  Avviare Visual Studio.  
+1. Avviare Visual Studio.  
   
-2.  Aprire un progetto flusso di lavoro legacy esistente o creare un nuovo progetto che usa attività simultanee e che viene destinato a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
+2. Aprire un progetto flusso di lavoro legacy esistente o creare un nuovo progetto che usa attività simultanee e che viene destinato a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
-3.  Nel **flusso di lavoro** dal menu legacy [!INCLUDE[wfd2](../includes/wfd2-md.md)], scegliere **Debug**e quindi scegliere **opzioni di avanzamento**.  
+3. Nel **flusso di lavoro** dal menu legacy [!INCLUDE[wfd2](../includes/wfd2-md.md)], scegliere **Debug**e quindi scegliere **opzioni di avanzamento**.  
   
-4.  Selezionare uno **istanza** oppure **ramo**.  
+4. Selezionare uno **istanza** oppure **ramo**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug dei flussi di lavoro Legacy](../workflow-designer/debugging-legacy-workflows.md)   

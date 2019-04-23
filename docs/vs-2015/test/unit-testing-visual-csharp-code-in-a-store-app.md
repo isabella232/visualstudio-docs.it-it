@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6128ca2638f98600c9bfb17e8388cf0a663040a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100183"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Esecuzione di unit test di codice Visual C# in un'app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
 >  Community di Visual Studio, Enterprise e Professional includono funzionalità aggiuntive per gli unit test.  
 > 
 > - Usare un framework di unit test open source o di terze parti che abbia creato un adattatore come componente aggiuntivo per Esplora test Microsoft. È anche possibile analizzare e visualizzare le informazioni di code coverage per i test.  
->   -   Eseguire i test dopo ogni compilazione.  
->   -   VS Enterprise include anche Microsoft Fakes, un framework di isolamento per il codice gestito che ti permette di concentrare i test sul tuo codice sostituendo il codice di test per la funzionalità di sistema e di terze parti.  
+>   - Eseguire i test dopo ogni compilazione.  
+>   - VS Enterprise include anche Microsoft Fakes, un framework di isolamento per il codice gestito che ti permette di concentrare i test sul tuo codice sostituendo il codice di test per la funzionalità di sistema e di terze parti.  
 > 
 >   Per altre informazioni, vedere [Verifica del codice tramite unit test](http://msdn.microsoft.com/library/dd264975.aspx) in MSDN Library.  
   
-##  <a name="BKMK_In_this_topic"></a> In questo argomento  
+## <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Creare la soluzione e il progetto di unit test](#BKMK_Create_the_solution_and_the_unit_test_project)  
   
  [Verificare che i test siano eseguiti in Esplora test](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
@@ -49,21 +49,21 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
  [Eseguire il refactoring del codice](#BKMK_Refactor_the_code_)  
   
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto di unit test  
+## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto di unit test  
   
-1.  Scegliere **Nuovo** dal menu **File**, quindi **Nuovo progetto**.  
+1. Scegliere **Nuovo** dal menu **File**, quindi **Nuovo progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e scegliere **Windows Store**. Scegliere quindi **App vuota** dall'elenco di modelli di progetto.  
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e scegliere **Windows Store**. Scegliere quindi **App vuota** dall'elenco di modelli di progetto.  
   
-3.  Assegnare al progetto il nome `Maths` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.  
+3. Assegnare al progetto il nome `Maths` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.  
   
-4.  In Esplora soluzioni selezionare il nome della soluzione, scegliere **Aggiungi** dal menu di scelta rapida e quindi **Nuovo progetto**.  
+4. In Esplora soluzioni selezionare il nome della soluzione, scegliere **Aggiungi** dal menu di scelta rapida e quindi **Nuovo progetto**.  
   
-5.  Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e quindi scegliere **Windows Store**. Scegli quindi **Libreria unit test (applicazioni Windows Store)** dall'elenco di modelli di progetto.  
+5. Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e quindi scegliere **Windows Store**. Scegli quindi **Libreria unit test (applicazioni Windows Store)** dall'elenco di modelli di progetto.  
   
      ![Creare il progetto di unit test](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
-6.  Apri UnitTest1.cs nell'editor di Visual Studio.  
+6. Apri UnitTest1.cs nell'editor di Visual Studio.  
   
     ```csharp  
   
@@ -89,17 +89,17 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
      Come si può notare:  
   
-    1.  Ogni test viene definito tramite `[TestMethod]`. Un metodo di test deve restituire void e non può avere parametri.  
+    1. Ogni test viene definito tramite `[TestMethod]`. Un metodo di test deve restituire void e non può avere parametri.  
   
-    2.  I metodi di test devono appartenere a una classe decorata con l'attributo `[TestClass]`.  
+    2. I metodi di test devono appartenere a una classe decorata con l'attributo `[TestClass]`.  
   
          Quando si eseguono i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato.  
   
-    3.  È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) in MSDN Library.  
+    3. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) in MSDN Library.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificare che i test siano eseguiti in Esplora test  
+## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificare che i test siano eseguiti in Esplora test  
   
-1.  Inserire codice di test in `TestMethod1` del file **UnitTest1.cs**:  
+1. Inserire codice di test in `TestMethod1` del file **UnitTest1.cs**:  
   
     ```csharp  
   
@@ -113,19 +113,19 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
      Si noti che la classe `Assert` fornisce diversi metodi statici che è possibile usare per verificare i risultati nei metodi di test.  
   
-2.  Scegliere **Esegui** dal menu **Test**, quindi **Esegui tutto**.  
+2. Scegliere **Esegui** dal menu **Test**, quindi **Esegui tutto**.  
   
      Il progetto di test viene compilato ed eseguito. Verrà visualizzata la finestra di Esplora test con il test elencato in **Test superati**. Nel riquadro di riepilogo nella parte inferiore della finestra sono disponibili ulteriori dettagli sul test selezionato.  
   
      ![Esplora test](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Aggiungere la classe Rooter al progetto Maths  
+## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Aggiungere la classe Rooter al progetto Maths  
   
-1.  In Esplora soluzioni selezionare il nome del progetto **Maths**. Scegliere **Aggiungi** dal menu di scelta rapida e quindi **Classe**.  
+1. In Esplora soluzioni selezionare il nome del progetto **Maths**. Scegliere **Aggiungi** dal menu di scelta rapida e quindi **Classe**.  
   
-2.  Assegnare il nome `Rooter.cs` al file di classe.  
+2. Assegnare il nome `Rooter.cs` al file di classe.  
   
-3.  Aggiungere il codice seguente al file **Rooter.cs** della classe Rooter:  
+3. Aggiungere il codice seguente al file **Rooter.cs** della classe Rooter:  
   
     ```csharp  
   
@@ -143,23 +143,23 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
      La classe `Rooter` dichiara un costruttore e il metodo estimativo `SqareRoot`.  
   
-4.  Il metodo `SqareRoot` è solo un'implementazione minima, sufficiente per testare la struttura di base della configurazione di test.  
+4. Il metodo `SqareRoot` è solo un'implementazione minima, sufficiente per testare la struttura di base della configurazione di test.  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Abbinare il progetto di test al progetto di app  
+## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Abbinare il progetto di test al progetto di app  
   
 1. Aggiungi un riferimento all'app Maths al progetto RooterTests.  
   
-   1.  In Esplora soluzioni scegliere il progetto **RooterTests** e quindi **Aggiungi** dal menu di scelta rapida.  
+   1. In Esplora soluzioni scegliere il progetto **RooterTests** e quindi **Aggiungi** dal menu di scelta rapida.  
   
-   2.  Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare quindi l'elemento **Maths**.  
+   2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare quindi l'elemento **Maths**.  
   
         ![Aggiungere un riferimento al progetto Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
 2. Aggiungi un'istruzione using al file UnitTest1.cs:  
   
-   1.  Aprire **UnitTest1.cs**.  
+   1. Aprire **UnitTest1.cs**.  
   
-   2.  Aggiungi questo codice sotto la riga `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
+   2. Aggiungi questo codice sotto la riga `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
   
        ```csharp  
        using Maths;  
@@ -190,9 +190,9 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare i test in maniera iterativa e farli passare  
+## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare i test in maniera iterativa e farli passare  
   
-1.  Aggiungere un nuovo test:  
+1. Aggiungere un nuovo test:  
   
     ```csharp  
     [TestMethod]  
@@ -215,16 +215,16 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
     >   
     >  Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.  
   
-2.  In Esplora test scegliere **Esegui tutto**.  
+2. In Esplora test scegliere **Esegui tutto**.  
   
-3.  Il test ha esito negativo.  
+3. Il test ha esito negativo.  
   
      ![RangeTest non riuscito](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
     >  Subito dopo averlo scritto, verifica che ogni test abbia esito negativo. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
   
-4.  Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Modificare la funzione `SqareRoot` in **Rooter.cs** nel modo seguente:  
+4. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Modificare la funzione `SqareRoot` in **Rooter.cs** nel modo seguente:  
   
     ```csharp  
     public double SquareRoot(double x)  
@@ -242,14 +242,14 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
     ```  
   
-5.  Compilare la soluzione e quindi in Esplora test, scegliere **Esegui tutto**.  
+5. Compilare la soluzione e quindi in Esplora test, scegliere **Esegui tutto**.  
   
      Ora tutti e tre i test vengono superati.  
   
 > [!TIP]
 >  Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Debug di un test non superato  
+## <a name="BKMK_Debug_a_failing_test"></a> Debug di un test non superato  
   
 1. Aggiungere un altro test a **UnitTest1.cpp**:  
   
@@ -292,13 +292,13 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
 3. Per capire perché il test non riesce, scorrere la funzione:  
   
-   1.  Imposta un punto di interruzione all'inizio della funzione `SquareRoot`.  
+   1. Imposta un punto di interruzione all'inizio della funzione `SquareRoot`.  
   
-   2.  Dal menu di scelta rapida del test non superato, scegliere **Esegui debug test selezionati**.  
+   2. Dal menu di scelta rapida del test non superato, scegliere **Esegui debug test selezionati**.  
   
         Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, eseguire il codice un'istruzione alla volta.  
   
-   3.  Aggiungi codice al metodo Rooter per intercettare l'eccezione:  
+   3. Aggiungi codice al metodo Rooter per intercettare l'eccezione:  
   
        ```csharp  
        public double SquareRoot(double x)  
@@ -310,16 +310,16 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
        ```  
   
-   1.  In Esplora test scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.  
+   1. In Esplora test scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.  
   
    Tutti i test vengono ora superati.  
   
    ![Tutti i test superati](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_"></a> Eseguire il refactoring del codice  
+## <a name="BKMK_Refactor_the_code_"></a> Eseguire il refactoring del codice  
  **Semplificare il calcolo centrale nella funzione SquareRoot.**  
   
-1.  Modifica l'implementazione del risultato  
+1. Modifica l'implementazione del risultato  
   
     ```csharp  
     // old code  
@@ -329,7 +329,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
     ```  
   
-2.  Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto una regressione.  
+2. Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto una regressione.  
   
 > [!TIP]
 >  Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.  
@@ -338,7 +338,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
  Come noterai, il metodo `RangeTest` imposta come hardcoded il denominatore della variabile di tolleranza utilizzata nel metodo `Assert`. Se prevedi di aggiungere altri test che utilizzano lo stesso calcolo di tolleranza, l'uso di un valore hardcoded in più posizioni potrebbe causare l'insorgere di errori.  
   
-1.  Aggiungi un metodo private alla classe Unit1Test per calcolare il valore di tolleranza e chiamare quindi tale metodo.  
+1. Aggiungi un metodo private alla classe Unit1Test per calcolare il valore di tolleranza e chiamare quindi tale metodo.  
   
     ```csharp  
     private double ToleranceHelper(double expected)  
@@ -362,7 +362,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
     ```  
   
-2.  Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto un errore.  
+2. Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto un errore.  
   
 > [!NOTE]
 >  Per aggiungere un metodo di supporto a una classe di test, non aggiungere l'attributo `[TestMethod]` al metodo. Esplora test non registra il metodo da eseguire.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101230"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedura: Firmare soluzioni Office
   Se si accede a una soluzione, è possibile concedere l'attendibilità alla soluzione usando il certificato come evidenza. È possibile usare lo stesso certificato per più soluzioni, e tutte le soluzioni saranno attendibili senza aggiornamenti dei criteri di sicurezza aggiuntive.
@@ -35,15 +35,15 @@ ms.locfileid: "54871663"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Per firmare una soluzione Office usando un certificato
 
-1.  Nel **progetto** menu, fare clic su _NomeSoluzione_**proprietà**.
+1. Nel **progetto** menu, fare clic su _NomeSoluzione_**proprietà**.
 
-2.  Fare clic sulla scheda **Firma**.
+2. Fare clic sulla scheda **Firma**.
 
-3.  Selezionare **firmare i manifesti ClickOnce**.
+3. Selezionare **firmare i manifesti ClickOnce**.
 
-4.  Individuare il certificato facendo **Store, selezionarne** oppure **seleziona da File** e passare al certificato.
+4. Individuare il certificato facendo **Store, selezionarne** oppure **seleziona da File** e passare al certificato.
 
-5.  Per verificare che il certificato corretto sia in uso, fare clic su **altri dettagli sul** per visualizzare le informazioni del certificato.
+5. Per verificare che il certificato corretto sia in uso, fare clic su **altri dettagli sul** per visualizzare le informazioni del certificato.
 
 ## <a name="see-also"></a>Vedere anche
 

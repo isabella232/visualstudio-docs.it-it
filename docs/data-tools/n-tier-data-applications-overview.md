@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109933"
 ---
 # <a name="n-tier-data-applications-overview"></a>Panoramica delle applicazioni dati a più livelli
 *A più livelli* le applicazioni di dati sono le applicazioni di dati che sono separate in più *livelli*. Noto anche come "applicazioni multilivello" e "applicazioni distribuite", le applicazioni a più livelli diversi in livelli discreti che vengono distribuite tra il client e server di elaborazione. Quando si sviluppano applicazioni che accedono ai dati, si deve avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
@@ -27,33 +27,33 @@ Una tipica applicazione a più livelli include un livello di presentazione, un l
 
 Visual Studio contiene diverse funzionalità per aiutare gli sviluppatori di creare applicazioni a più livelli:
 
--   Il set di dati fornisce una **DataSetProject** proprietà che consente di separare il set di dati (il livello di entità di dati) e gli oggetti TableAdapter (livello di accesso ai dati) in progetti discreti.
+- Il set di dati fornisce una **DataSetProject** proprietà che consente di separare il set di dati (il livello di entità di dati) e gli oggetti TableAdapter (livello di accesso ai dati) in progetti discreti.
 
--   Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce le impostazioni per generare le classi DataContext e di dati in diversi spazi dei nomi. In questo modo la separazione logica dei livelli di entità di data e l'accesso ai dati.
+- Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce le impostazioni per generare le classi DataContext e di dati in diversi spazi dei nomi. In questo modo la separazione logica dei livelli di entità di data e l'accesso ai dati.
 
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare la proprietà DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [a più livelli e le applicazioni remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare la proprietà DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [a più livelli e le applicazioni remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Livello di presentazione
 Il *livello di presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene la logica dell'applicazione aggiuntivi anche. Componenti del livello presentazione tipici includono quanto segue:
 
--   Data binding, componenti, ad esempio la <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
+- Data binding, componenti, ad esempio la <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
 
--   Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) le classi di entità per l'uso al livello presentazione.
+- Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) le classi di entità per l'uso al livello presentazione.
 
 Il livello di presentazione accede in genere il livello intermedio con un riferimento al servizio (ad esempio, un [servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) applicazione). Il livello di presentazione non accede direttamente al livello dati. Il livello di presentazione comunica con il livello dati tramite il componente di accesso ai dati nel livello intermedio.
 
 ## <a name="middle-tier"></a>Livello intermedio
 Il *livello intermedio* viene usato il livello di presentazione e i dati di livello consente di comunicare tra loro. I componenti di livello intermedio tipici includono quanto segue:
 
--   Logica di business, ad esempio la convalida di regole e dati business.
+- Logica di business, ad esempio la convalida di regole e dati business.
 
--   Componenti di accesso ai dati e per la logica, come il seguente:
+- Componenti di accesso ai dati e per la logica, come il seguente:
 
-    -   [Gli oggetti TableAdapter](create-and-configure-tableadapters.md) e [DataAdapter e DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+    - [Gli oggetti TableAdapter](create-and-configure-tableadapters.md) e [DataAdapter e DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    -   Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) le classi di entità.
+    - Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) le classi di entità.
 
-    -   Servizi di applicazione comuni, ad esempio autenticazione, autorizzazione e la personalizzazione.
+    - Servizi di applicazione comuni, ad esempio autenticazione, autorizzazione e la personalizzazione.
 
 La figura seguente mostra le funzionalità e le tecnologie disponibili in Visual Studio e in cui che potrebbe essere appropriato per il livello intermedio di un'applicazione a più livelli.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112377"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante del formato di destinazione di rendering 16bpp
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazion
 ## <a name="remarks"></a>Note  
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:  
   
--   Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.  
+- Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.  
   
--   Il membro BindFlags presenta il flag D3D11_BIND_DEPTH_STENCIL deselezionato.  
+- Il membro BindFlags presenta il flag D3D11_BIND_DEPTH_STENCIL deselezionato.  
   
--   Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
+- Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
   
 ## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
  Poiché il formato B5G6R5 non ha un canale alfa, il contenuto alfa non viene mantenuto da questa variante. Se il rendering dell'app richiede un canale alfa nella destinazione di rendering, non è possibile passare semplicemente al formato B5G6R5.  

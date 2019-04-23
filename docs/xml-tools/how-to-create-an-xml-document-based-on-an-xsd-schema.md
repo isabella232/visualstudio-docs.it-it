@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115354"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: Creare un documento XML in base a uno schema XSD
 
@@ -21,29 +21,29 @@ Il **genera XML di esempio** funzionalità genera un file XML di esempio basato 
 
  È possibile usare questa opzione per gli scenari seguenti:
 
--   Per comprendere l'uso di diversi costrutti nello schema.
+- Per comprendere l'uso di diversi costrutti nello schema.
 
--   Per confermare che lo schema funziona come previsto.
+- Per confermare che lo schema funziona come previsto.
 
 Il **genera XML di esempio** funzionalità è disponibile solo per gli elementi globali e richiede un set di schemi XML valido.
 
 Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schema contiene uno o più degli elementi seguenti, l'esempio potrebbe non essere valido:
 
--   I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.
+- I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.
 
--   Facet `xs:pattern`.
+- Facet `xs:pattern`.
 
--   Enumerazioni di tipo `xs:QName`.
+- Enumerazioni di tipo `xs:QName`.
 
--   I tipi `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
+- I tipi `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
 
 Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enumerazioni si verificano nello schema per il tipo specificato.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Per generare un documento di istanza XML basato sul file XSD
 
-1.  Seguire i passaggi in [come: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Seguire i passaggi in [come: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), fare doppio clic su di `PurchaseOrder` elemento globale. Selezionare **genera XML di esempio**.
+2. Nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), fare doppio clic su di `PurchaseOrder` elemento globale. Selezionare **genera XML di esempio**.
 
      Quando si seleziona questa opzione, PurchaseOrder. *xml* file con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
 

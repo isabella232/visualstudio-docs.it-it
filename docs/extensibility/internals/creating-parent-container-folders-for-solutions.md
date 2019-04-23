@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102718"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Creare cartelle dei contenitori per le soluzioni padre
 Origine controllo plug-in API versione 1.2, un utente può specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti web all'interno della soluzione. Questa singola radice viene chiamata una radice unificata con privilegi elevati (SUR).
@@ -35,13 +35,13 @@ Origine controllo plug-in API versione 1.2, un utente può specificare una desti
 
  Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE crea una cartella SUR quasi sempre quando si aggiunge una soluzione a controllo del codice sorgente. In particolare, esegue l'operazione nei casi seguenti:
 
--   Il progetto è un progetto web di condivisione file.
+- Il progetto è un progetto web di condivisione file.
 
--   Esistono unità differenti per il progetto e il file della soluzione.
+- Esistono unità differenti per il progetto e il file della soluzione.
 
--   Esistono diverse quote per il progetto e il file della soluzione.
+- Esistono diverse quote per il progetto e il file della soluzione.
 
--   I progetti sono stati aggiunti separatamente (in una soluzione di controllo del codice sorgente).
+- I progetti sono stati aggiunti separatamente (in una soluzione di controllo del codice sorgente).
 
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è consigliabile che il nome della cartella SUR coincidere con il nome della soluzione senza l'estensione. La tabella seguente riepiloga il comportamento in due versioni.
 

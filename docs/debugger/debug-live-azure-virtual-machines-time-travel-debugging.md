@@ -13,18 +13,18 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d392e19bb51cd981cc833535556eb083e8e5ba07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59672504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112354"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Registrare e riprodurre in tempo reale delle App ASP.NET in macchine virtuali di Azure usando il Debugger di Snapshot
 
-L'anteprima di debug Travel ora (TTD) in Visual Studio Enterprise offre la possibilità di registrare un'app Web in esecuzione in una macchina virtuale di Azure (VM) in modo accurato ricostruire e riprodurre il percorso di esecuzione. TTD si integra con il Debugger di Snapshot di offerta e consente di riavvolgere e riprodurre ogni riga di codice tuttavia molte volte si desidera, consentono di isolare e identificare i problemi che potrebbero verificarsi solo in ambienti di produzione.
+L'anteprima di debug Travel ora (TTD) in Visual Studio Enterprise offre la possibilità di registrare un'app Web in esecuzione in una macchina virtuale di Azure (VM) in modo accurato ricostruire e riprodurre il percorso di esecuzione. TTD si integra con il Debugger di Snapshot e consente di riavvolgere e riprodurre ogni riga di codice un numero qualsiasi di volte in cui che si desidera, alla possibilità di isolare e identificare i problemi che potrebbero verificarsi solo in ambienti di produzione.
 
-Acquisire una registrazione TTD non interromperà l'applicazione, tuttavia, la registrazione verrà aggiunto un overhead significativo per il processo in esecuzione, rallentano le prestazioni base fattori che includono la dimensione del processo e il numero di thread attivi.
+Acquisire una registrazione TTD non interromperà l'applicazione. Tuttavia, la registrazione TDD comporta un sovraccarico significativo per il processo in esecuzione, rallentano le prestazioni base fattori che includono la dimensione del processo e il numero di thread attivi.
 
 Questa funzionalità è disponibile in anteprima per la versione di Visual Studio 2019 con una licenza di andare in tempo reale.
 
@@ -32,8 +32,8 @@ In questa esercitazione si eseguono le attività seguenti:
 
 > [!div class="checklist"]
 > * Avviare il Debugger di Snapshot con il tempo Travel debug abilitato
-> * Impostare un punto di ancoraggio e raccogliere una registrazione cronologicamente
-> * Avviare il debug di una registrazione cronologicamente
+> * Impostare un punto di ancoraggio e raccogliere un tempo percorrere la registrazione
+> * Avviare il debug di un tempo di viaggio registrazione
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -46,7 +46,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Aprire il progetto e avviare il Debugger di Snapshot con il tempo Travel debug abilitato
 
-1. Aprire il progetto che si vuole raccogliere una registrazione cronologicamente.
+1. Aprire il progetto per cui si vuole raccogliere un tempo di viaggio la registrazione.
 
     > [!IMPORTANT]
     > Per avviare TTD, è necessario aprire la *stessa versione del codice sorgente* che viene pubblicato nel servizio macchine Virtuali di Azure.
@@ -58,24 +58,24 @@ In questa esercitazione si eseguono le attività seguenti:
     > [!IMPORTANT]
     > La prima volta che si seleziona **Collega Snapshot Debugger** per la macchina virtuale, viene automaticamente riavviato IIS.
 
-    I metadati per i **moduli** non verranno inizialmente attivati. Passare all'app Web e il pulsante **Avvia raccolta** diventerà attivo. Visual Studio è ora in modalità debug di snapshot.
+    I metadati per il **moduli** non viene inizialmente attivato. Passare all'app web e il **Avvia raccolta** pulsante quindi diventa attivo. Visual Studio è ora in modalità debug di snapshot.
 
    ![Modalità debug di snapshot](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
     > L'estensione del sito Application Insights supporta anche il debug di snapshot. Se viene visualizzato un messaggio di errore "estensione del sito non aggiornata", vedere i [suggerimenti per la risoluzione dei problemi e i problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per informazioni dettagliate sull'aggiornamento.
 
-   Il **moduli** finestra viene visualizzato quando tutti i moduli sono caricati per la macchina virtuale di Azure (sceglie **Debug > Windows > moduli** per aprire questa finestra).
+   Il **moduli** finestra viene visualizzato quando tutti i moduli vengono caricati per la macchina virtuale di Azure (sceglie **Debug > Windows > moduli** per aprire questa finestra).
 
    ![Controllare la finestra Moduli](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>Impostare un punto di ancoraggio e raccogliere una registrazione cronologicamente
+## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>Impostare un punto di ancoraggio e raccogliere un tempo percorrere la registrazione
 
 1. Nell'editor del codice, fare clic sulla barra di navigazione a sinistra in un metodo che si è interessati per impostare un punto di ancoraggio. Assicurarsi che si tratti di codice che si è certi verrà eseguito.
 
    ![Impostare un punto di acquisizione snapshot](../debugger/media/time-travel-debugging-set-snappoint-settings.png)
 
-1. Fare doppio clic sull'icona di punto di ancoraggio (la palla vuota) e scegliere **azioni**. Nella finestra Snapshot impostazioni scegliere la **azione** casella di controllo. Scegliere il **raccogliere una traccia di viaggio tempo alla fine di questo metodo** casella di controllo.
+1. Fare doppio clic sull'icona di punto di ancoraggio (la palla vuota) e scegliere **azioni**. Nel **delle impostazioni degli Snapshot** finestra, fare clic sui **azione** casella di controllo. Scegliere il **raccogliere una traccia di viaggio tempo alla fine di questo metodo** casella di controllo.
 
    ![Raccogliere una traccia di viaggio tempo alla fine del metodo](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
@@ -85,9 +85,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="take-a-snapshot"></a>Acquisire uno snapshot
 
-Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno snapshot ogni volta che viene eseguita la riga di codice in cui si trova il punto di acquisizione snapshot. L'esecuzione può essere causata da una richiesta reale nel server. Per forzare il raggiungimento del punto di acquisizione snapshot, passare alla visualizzazione del browser del sito Web ed eseguire le eventuali azioni necessarie per raggiungere il punto di acquisizione snapshot.
+Quando un punto di ancoraggio è attivata, acquisisce uno snapshot ogni volta che viene eseguita la riga di codice in cui si trova il punto di ancoraggio. L'esecuzione può essere causata da una richiesta reale sul server. Per forzare il raggiungimento del punto di acquisizione snapshot, passare alla visualizzazione del browser del sito Web ed eseguire le eventuali azioni necessarie per raggiungere il punto di acquisizione snapshot.
 
-## <a name="start-debugging-a-time-travel-recording"></a>Avviare il debug di una registrazione cronologicamente
+## <a name="start-debugging-a-time-travel-recording"></a>Avviare il debug di un tempo di viaggio registrazione
 
 1. Quando viene raggiunto il punto di acquisizione snapshot, nella finestra Strumenti di diagnostica viene visualizzato uno snapshot. Per aprire questa finestra, scegliere **Debug > Finestre > Mostra strumenti di diagnostica**.
 
@@ -95,7 +95,7 @@ Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno sn
 
 1. Fare clic sul collegamento Visualizza lo Snapshot per aprire il viaggio di tempo nell'editor del codice di registrazione.
   
-   È possibile eseguire tutte le righe di codice registrato per il TTD usando il **continuazione** e **invertire continuare** pulsanti. Inoltre la barra degli strumenti Debug può essere usato per **Mostra istruzione successiva**, **Esegui istruzione**, **Esegui istruzione/routine**, **Esci**,  **Eseguire nuovamente**, **passa Indietro**, **un passo indietro**.
+   È possibile eseguire tutte le righe di codice registrato per il TTD usando il **continuazione** e **invertire continuare** pulsanti. Inoltre, il **Debug** sulla barra degli strumenti può essere usato per **Mostra istruzione successiva**, **Esegui istruzione**, **Esegui istruzione/routine**, **Esci da istruzione / routine**, **Passaggio allo stato di**, **passa Indietro**, **passaggio annullano**.
 
    ![Avvia debug](../debugger/media/time-travel-debugging-step-commands.png)
 
@@ -109,11 +109,11 @@ Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno sn
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 
-Se è difficile ricreare uno stato specifico nell'app, valutare se l'uso di un punto di acquisizione snapshot condizionale può essere d'aiuto. Punti di ancoraggio condizionale consentono di che evitare la raccolta di un viaggio ora la registrazione fino a quando l'app passa allo stato desiderato, ad esempio quando una variabile ha un valore specifico che si desidera esaminare. [È possibile impostare le condizioni di utilizzo delle espressioni, filtri, o conteggio](../debugger/debug-live-azure-apps-troubleshooting.md).
+Se è difficile ricreare uno stato specifico nell'app, valutare se l'uso di un punto di acquisizione snapshot condizionale può essere d'aiuto. Condizionale punti di ancoraggio consentono di che evitare la raccolta di un tempo di viaggio la registrazione fino a quando l'app passa allo stato desiderato, ad esempio quando una variabile ha un valore specifico che si desidera esaminare. [È possibile impostare le condizioni di utilizzo delle espressioni, filtri, o conteggio](../debugger/debug-live-azure-apps-troubleshooting.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa esercitazione si è appreso come raccogliere una registrazione cronologicamente per le macchine virtuali di Azure. È possibile leggere altre informazioni sul Debugger di Snapshot.
+In questa esercitazione si è appreso come raccogliere un viaggio ora la registrazione per le macchine virtuali di Azure. È possibile leggere altre informazioni sul Debugger di Snapshot.
 
 > [!div class="nextstepaction"]
 > [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)

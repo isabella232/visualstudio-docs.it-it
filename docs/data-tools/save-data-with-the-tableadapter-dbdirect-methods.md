@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103381"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 
@@ -29,15 +29,15 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
 
 Durante questa procedura dettagliata, si apprenderà come:
 
--   Creare una nuova applicazione **Windows Forms Application**.
+- Creare una nuova applicazione **Windows Forms Application**.
 
--   Creare e configurare un set di dati con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
+- Creare e configurare un set di dati con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
--   Selezionare il controllo da creare nel form tramite il trascinamento degli elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Selezionare il controllo da creare nel form tramite il trascinamento degli elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Creare il controllo associato a dati tramite il trascinamento di elementi dalla finestra **Origini dati** nel form.
+- Creare il controllo associato a dati tramite il trascinamento di elementi dalla finestra **Origini dati** nel form.
 
--   Aggiungere i metodi per accedere al database ed eseguire gli inserimenti, aggiornamenti ed eliminazioni direttamente.
+- Aggiungere i metodi per accedere al database ed eseguire gli inserimenti, aggiornamenti ed eliminazioni direttamente.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -63,7 +63,7 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**.
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -73,7 +73,7 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Region` presente nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Region` presente nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
@@ -87,11 +87,11 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 4. Nel **scegliere la connessione dati** schermata, effettuare una delle operazioni seguenti:
 
-    -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
+    - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         oppure
+         -oppure-
 
-    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
+    - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
 5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.
 
@@ -117,7 +117,7 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 
-    |nome|Testo|
+    |Nome|Testo|
     |----------|----------|
     |`InsertButton`|**Inserisci**|
     |`UpdateButton`|**Aggiornamento**|
@@ -152,21 +152,21 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
--   Selezionare **F5** per eseguire l'applicazione.
+- Selezionare **F5** per eseguire l'applicazione.
 
--   Selezionare il **Inserisci** pulsante e verificare che il nuovo record venga visualizzato nella griglia.
+- Selezionare il **Inserisci** pulsante e verificare che il nuovo record venga visualizzato nella griglia.
 
--   Selezionare il **Update** pulsante e verificare che il record viene aggiornato nella griglia.
+- Selezionare il **Update** pulsante e verificare che il record viene aggiornato nella griglia.
 
--   Selezionare il **eliminare** pulsante e verificare che il record viene rimosso dalla griglia.
+- Selezionare il **eliminare** pulsante e verificare che il record viene rimosso dalla griglia.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 A seconda dei requisiti dell'applicazione, sono disponibili diversi passaggi, che si potrebbe voler eseguire dopo la creazione di un form con associazione a dati. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:
 
--   Aggiunta di funzionalità di ricerca al form.
+- Aggiunta di funzionalità di ricerca al form.
 
--   Aggiunta di altre tabelle al set di dati tramite selezione di **Configura il Dataset con la procedura guidata** nella finestra **Origini dati**. È possibile aggiungere controlli che consentono di visualizzare dati correlati mediante il trascinamento dei nodi correlati nel form. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
+- Aggiunta di altre tabelle al set di dati tramite selezione di **Configura il Dataset con la procedura guidata** nella finestra **Origini dati**. È possibile aggiungere controlli che consentono di visualizzare dati correlati mediante il trascinamento dei nodi correlati nel form. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Vedere anche
 

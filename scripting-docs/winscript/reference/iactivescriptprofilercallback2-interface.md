@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d95c3db11551eb6551f509b4afbe52a70ff55ab9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3e292dad6c6b633d5f30f263f388d8e85bb6c541
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115276"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>Interfaccia IActiveScriptProfilerCallback2
 Fornisce i metodi utilizzati dal motore di scripting per notificare a un oggetto del profiler quando si verificano gli eventi di Strumentazione gestione Windows (DOM, Document Object Model). Questa interfaccia viene implementata dall'oggetto del profiler.  
@@ -39,7 +39,7 @@ Fornisce i metodi utilizzati dal motore di scripting per notificare a un oggetto
 >  Per aggiungere la possibilità di avviare e interrompere la profilatura quando uno script è in esecuzione, chiamare i metodi seguenti. Usando questi metodi, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia o arresta la profilatura.  
 > 
 > - Chiamare [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) per notificare al profiler che sia stato avviato di profilatura.  
->   -   Chiamare [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) per notificare al profiler che verrà presto interrompere la profilatura.  
+>   - Chiamare [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) per notificare al profiler che verrà presto interrompere la profilatura.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce del profiler di script ActiveX](../../winscript/reference/active-script-profiler-interfaces.md)

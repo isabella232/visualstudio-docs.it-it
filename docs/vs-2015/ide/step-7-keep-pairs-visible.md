@@ -9,21 +9,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766313"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112052"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Passaggio 7: mantenere le coppie visibili
+# <a name="step-7-keep-pairs-visible"></a>Passaggio 7: Mantenere le coppie visibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il gioco funziona finché il giocatore sceglierà coppie di icone che non corrispondono. Si consideri però cosa dovrebbe accadere quando il giocatore sceglie una coppia esatta. Anziché far scomparire le icone attivando il timer, tramite il metodo `Start()`, il gioco deve reimpostarsi in modo da non tenere più traccia delle etichette tramite le variabili di riferimento `firstClicked` e `secondClicked`, senza reimpostare i colori delle due etichette scelte.  
   
 ### <a name="to-keep-pairs-visible"></a>Per mantenere le coppie visibili  
   
-1.  Aggiungere l'istruzione `if` seguente al metodo del gestore eventi `label_Click()`, quasi alla fine del codice, appena prima dell'istruzione di avvio del timer. Esaminare attentamente il codice mentre lo si aggiunge al programma. Considerarne il funzionamento.  
+1. Aggiungere l'istruzione `if` seguente al metodo del gestore eventi `label_Click()`, quasi alla fine del codice, appena prima dell'istruzione di avvio del timer. Esaminare attentamente il codice mentre lo si aggiunge al programma. Considerarne il funzionamento.  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]  
@@ -54,13 +54,13 @@ Il gioco funziona finché il giocatore sceglierà coppie di icone che non corris
   
      La prima delle due istruzioni controlla se due icone sono uguali. Poiché vengono confrontati due valori, il programma Visual C# utilizza l'operatore di uguaglianza `==`. La seconda istruzione in realtà modifica il valore, detto *assegnazione*, impostando la variabile di riferimento `firstClicked` su `null` per reimpostarla. Per questo viene utilizzato l'operatore di assegnazione `=`. Visual C# utilizza `=` per impostare valori e `==` per confrontarli. Visual Basic utilizza `=` sia per l'assegnazione che per il confronto delle variabili.  
   
-2.  Salvare ed eseguire il programma, quindi iniziare a scegliere icone nel form. Se si sceglie una coppia che non corrisponde, l'evento Tick del timer si attiva ed entrambe le icone scompaiono. Se si sceglie una coppia esatta, la nuova istruzione `if` viene eseguita e l'istruzione return fa sì che il metodo ignori il codice di avvio del timer, in modo che le icone restino visibili, come mostrato nell'immagine seguente.  
+2. Salvare ed eseguire il programma, quindi iniziare a scegliere icone nel form. Se si sceglie una coppia che non corrisponde, l'evento Tick del timer si attiva ed entrambe le icone scompaiono. Se si sceglie una coppia esatta, la nuova istruzione `if` viene eseguita e l'istruzione return fa sì che il metodo ignori il codice di avvio del timer, in modo che le icone restino visibili, come mostrato nell'immagine seguente.  
   
      ![Gioco creato in questa esercitazione](../ide/media/express-finishedgame.png "Express_FinishedGame")  
 Gioco delle coppie con coppie di icone visibili  
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Aggiungere un timer](../ide/step-6-add-a-timer.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Aggiungere un Timer](../ide/step-6-add-a-timer.md).

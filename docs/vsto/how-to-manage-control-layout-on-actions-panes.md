@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e8a2c44fd25119493a52d8276af0b0886cf2d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094612"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedura: Gestire il layout dei controlli nei riquadri azioni
   Un riquadro azioni viene ancorato a destra di un documento o foglio di lavoro per impostazione predefinita. Tuttavia, possono essere ancorata a sinistra, superiore o inferiore. Se si usano più controlli utente, è possibile scrivere codice per sovrapporre correttamente i controlli utente del riquadro azioni. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
@@ -36,25 +36,25 @@ ms.locfileid: "56636255"
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Per impostare l'ordine dello stack dei controlli riquadro azioni
 
-1.  Aprire un progetto a livello di documento per Microsoft Office Word che include un riquadro azioni con più controlli utente o controlli del riquadro azioni annidati. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+1. Aprire un progetto a livello di documento per Microsoft Office Word che include un riquadro azioni con più controlli utente o controlli del riquadro azioni annidati. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-2.  Fare doppio clic su **ThisDocument.cs** oppure **ThisDocument. vb** nelle **Esplora soluzioni** e quindi fare clic su **Visualizza codice**.
+2. Fare doppio clic su **ThisDocument.cs** oppure **ThisDocument. vb** nelle **Esplora soluzioni** e quindi fare clic su **Visualizza codice**.
 
-3.  Nel <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> gestore dell'evento del riquadro azioni, controllare se l'orientamento del riquadro azioni è orizzontale.
+3. Nel <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> gestore dell'evento del riquadro azioni, controllare se l'orientamento del riquadro azioni è orizzontale.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
 
-4.  Se l'orientamento orizzontale, stack i controlli del riquadro azioni da sinistra. in caso contrario, li sovrapposizione dall'alto.
+4. Se l'orientamento orizzontale, stack i controlli del riquadro azioni da sinistra. in caso contrario, li sovrapposizione dall'alto.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
 
-5.  In c#, è necessario aggiungere un gestore eventi per il `ActionsPane` per il <xref:Microsoft.Office.Tools.Word.Document.Startup> gestore dell'evento. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. In c#, è necessario aggiungere un gestore eventi per il `ActionsPane` per il <xref:Microsoft.Office.Tools.Word.Document.Startup> gestore dell'evento. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
 
-6.  Eseguire il progetto e verificare che i controlli del riquadro azioni sono in pila da sinistra a destra quando il riquadro azioni è ancorato alla parte superiore del documento e i controlli sono impilati dall'alto verso il basso per il riquadro azioni viene ancorato a destra del documento.
+6. Eseguire il progetto e verificare che i controlli del riquadro azioni sono in pila da sinistra a destra quando il riquadro azioni è ancorato alla parte superiore del documento e i controlli sono impilati dall'alto verso il basso per il riquadro azioni viene ancorato a destra del documento.
 
 ## <a name="example"></a>Esempio
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
@@ -63,7 +63,7 @@ ms.locfileid: "56636255"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
--   Controlla un progetto a livello di documento di Word con un riquadro delle azioni che contiene più controlli utente o del riquadro azioni annidati.
+- Controlla un progetto a livello di documento di Word con un riquadro delle azioni che contiene più controlli utente o del riquadro azioni annidati.
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)

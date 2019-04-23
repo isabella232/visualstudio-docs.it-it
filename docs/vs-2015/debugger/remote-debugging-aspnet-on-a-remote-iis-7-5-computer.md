@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964846"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109528"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Debug remoto di ASP.NET in un Computer remoto con IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ Dopo l'installazione, assicurarsi che il debugger remoto è in esecuzione nel co
       </system.web>
   
     ```
+
 1. Aprire **Gestione Internet Information Services (IIS)** e andare in **Siti**.
 1. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
 1. Impostare il **Alias** campo **MyMVC** e il campo di pool di applicazioni a **ASP.NET v4.0** (ASP.NET 4.5 non è un'opzione per il pool di applicazioni). Impostare il **Percorso fisico** su **C:\Publish** (dove è stata copiata la directory del progetto ASP.NET).

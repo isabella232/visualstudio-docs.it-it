@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 169f7d1cdd0976cac377f99f5f09b3c43948524c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099650"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scenari di debug non supportati in Progettazione flussi di lavoro
 
@@ -21,38 +21,38 @@ La finestra di progettazione del flusso di lavoro in .NET Framework 4 introdotte
 
 Di seguito sono indicati la finestra di progettazione del flusso di lavoro non supportati gli scenari di debug:
 
--   Impossibile continuare l'esecuzione dopo che il codice è stato modificato.
+- Impossibile continuare l'esecuzione dopo che il codice è stato modificato.
 
--   Impossibile continuare l'esecuzione da un punto arbitrario nel flusso di lavoro (Imposta istruzione successiva).
+- Impossibile continuare l'esecuzione da un punto arbitrario nel flusso di lavoro (Imposta istruzione successiva).
 
--   Impossibile continuare l'esecuzione fino a quando non si raggiunge il cursore (Esegui fino al cursore).
+- Impossibile continuare l'esecuzione fino a quando non si raggiunge il cursore (Esegui fino al cursore).
 
--   Impossibile usare Progettazione flussi di lavoro per eseguire debug di flussi di lavoro creati in codice senza l'uso della finestra di progettazione.
+- Impossibile usare Progettazione flussi di lavoro per eseguire debug di flussi di lavoro creati in codice senza l'uso della finestra di progettazione.
 
--   I flussi di lavoro creati in versioni precedenti di Windows Workflow Foundation (WF) non è possibile eseguire il debug nella finestra di progettazione di .NET Framework 4.
+- I flussi di lavoro creati in versioni precedenti di Windows Workflow Foundation (WF) non è possibile eseguire il debug nella finestra di progettazione di .NET Framework 4.
 
--   Impossibile definire i punti di interruzione nei collegamenti tra attività o nodi <xref:System.Activities.Statements.Flowchart>.
+- Impossibile definire i punti di interruzione nei collegamenti tra attività o nodi <xref:System.Activities.Statements.Flowchart>.
 
--   Gli Appunti non sono disponibili durante l'esecuzione del debug.
+- Gli Appunti non sono disponibili durante l'esecuzione del debug.
 
--   I punti di interruzione non vengono mantenuti quando le attività vengono copiate o incollate.
+- I punti di interruzione non vengono mantenuti quando le attività vengono copiate o incollate.
 
--   Impossibile impostare i punti di interruzione del flusso di lavoro nella finestra dello stack di chiamate.
+- Impossibile impostare i punti di interruzione del flusso di lavoro nella finestra dello stack di chiamate.
 
--   Durante la creazione di punti di interruzione nella finestra di progettazione, il **Line** e **carattere** impostazioni nel **nuovo punto di interruzione** finestra di dialogo non vengono usati.
+- Durante la creazione di punti di interruzione nella finestra di progettazione, il **Line** e **carattere** impostazioni nel **nuovo punto di interruzione** finestra di dialogo non vengono usati.
 
--   La finestra Punto di interruzione o il menu di scelta rapida non supporta le colonne o le opzioni seguenti per il debug del flusso di lavoro:
+- La finestra Punto di interruzione o il menu di scelta rapida non supporta le colonne o le opzioni seguenti per il debug del flusso di lavoro:
 
-    -   Condizione
+    - Condizione
 
-    -   Passaggi
+    - Numero di passaggi
 
-    -   Quando raggiunto
+    - Quando raggiunto
 
-    -   Funzione
+    - Funzione
 
-    -   Dati
+    - Dati
 
-    -   Processo
+    - Process
 
-    -   Vai a disassembly
+    - Vai a disassembly

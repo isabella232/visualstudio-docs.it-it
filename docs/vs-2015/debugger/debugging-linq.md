@@ -20,30 +20,30 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d15d56edec544ac68f21026758ced6292ee7de8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108568"
 ---
 # <a name="debugging-linq"></a>Debug di LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta il debug di codice LINQ (Language Integrated Query), con alcune limitazioni. La maggior parte delle funzionalità di debug è compatibile con le istruzioni LINQ, inclusa l'esecuzione di istruzioni, l'impostazione di punti di interruzione e la visualizzazione dei risultati nelle finestre del debugger. In questo argomento vengono descritte le principali limitazioni del debug di codice LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Visualizzazione dei risultati LINQ  
+## <a name="BKMK_ViewingLINQResults"></a>Visualizzazione dei risultati LINQ  
  È possibile visualizzare il risultato di un'istruzione LINQ usando i suggerimenti dati, la finestra Espressioni di controllo e la finestra di dialogo Controllo immediato. Quando si usa una finestra di origine, passare con il puntatore su una query nella finestra di origine per visualizzare un suggerimento dati. È possibile copiare una variabile LINQ e incollarla nella finestra Espressioni di controllo o nella finestra di dialogo Controllo immediato.  
   
- In LINQ, le query non vengono valutate al momento della creazione o della dichiarazione, ma soltanto al momento dell'uso. La query non dispone pertanto di un valore fino a quando non viene valutata. Per una descrizione completa della creazione di query e la valutazione, vedere [Introduzione alle query LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) oppure [Writing Your prima Query LINQ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ In LINQ, le query non vengono valutate al momento della creazione o della dichiarazione, ma soltanto al momento dell'uso. La query non dispone pertanto di un valore fino a quando non viene valutata. Per una descrizione completa della creazione di query e la valutazione, vedere [Introduzione alle query LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) oppure [Writing Your prima Query LINQ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Per visualizzare il risultato di una query, è necessario che venga valutata dal debugger. Tenere presenti alcuni effetti della valutazione implicita, che avviene quando si visualizza il risultato di una query LINQ nel debugger:  
   
--   La singola valutazione della query e l'espansione del nodo dei risultati richiedono tempo. La valutazione ripetuta di alcune query può comportare una notevole riduzione delle prestazioni.  
+- La singola valutazione della query e l'espansione del nodo dei risultati richiedono tempo. La valutazione ripetuta di alcune query può comportare una notevole riduzione delle prestazioni.  
   
--   La valutazione di una query può avere come effetto collaterale la modifica del valore dei dati o dello stato del programma. Non tutte le query hanno effetti collaterali. Per determinare la possibilità di valutare una query in modo sicuro, senza effetti collaterali, è necessario conoscere il codice con cui la query viene implementata.  
+- La valutazione di una query può avere come effetto collaterale la modifica del valore dei dati o dello stato del programma. Non tutte le query hanno effetti collaterali. Per determinare la possibilità di valutare una query in modo sicuro, senza effetti collaterali, è necessario conoscere il codice con cui la query viene implementata.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Esecuzione di istruzioni e LINQ  
+## <a name="BKMK_SteppingAndLinq"></a>Esecuzione di istruzioni e LINQ  
  Quando si esegue il debug di codice LINQ, l'esecuzione di istruzioni presenta alcune differenze di comportamento da tenere in considerazione.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -107,7 +107,7 @@ End Function
   
  La query modificata chiama la funzione `IsEven` a ogni passaggio attraverso l'oggetto `items`. È possibile usare le finestre del debugger per verificare che ogni elemento soddisfi la condizione specificata ed eseguire il codice in `IsEven`. Il predicato contenuto nell'esempio seguente è abbastanza semplice. In presenza di un predicato più complesso di cui sia necessario eseguire il debug, tuttavia, questa tecnica può rivelarsi molto utile.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Le operazioni di modifica e continuazione non sono supportate per LINQ  
+## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Le operazioni di modifica e continuazione non sono supportate per LINQ  
  In Modifica e continuazione non è supportata la modifica di query LINQ. Se si tenta di aggiungere, rimuovere o modificare un'istruzione LINQ durante una sessione di debug, viene visualizzata una finestra di dialogo indicante che tale modifica non è supportata da Modifica e continuazione. A questo punto è possibile annullare la modifica oppure interrompere la sessione di debug per avviare una nuova sessione con il codice modificato.  
   
  In Modifica e continuazione non è supportata neppure la modifica del tipo o del valore delle variabili usate in istruzioni LINQ. Anche in questo caso è possibile annullare le modifiche oppure interrompere e riavviare la sessione di debug.  
