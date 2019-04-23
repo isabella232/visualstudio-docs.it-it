@@ -14,16 +14,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f44b44cb0aa2d574d81fd63ef8541c25a4c2453
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001638"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661101"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Strumenti di Entity Data Model in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di utilizzare dati relazionali mediante oggetti specifici di dominio. In questo modo la maggior parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere non è più necessaria. Entity Framework è il consigliato object relational mapping (ORM) modellazione tecnologia per le nuove applicazioni .NET.
 

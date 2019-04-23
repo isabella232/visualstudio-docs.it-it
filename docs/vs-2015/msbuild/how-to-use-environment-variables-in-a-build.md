@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78cdc8f95c5a48e8ce0491926b27f0521705e3bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780973"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655883"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: utilizzare le variabili di ambiente in una compilazione
+# <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si compilano i progetti, spesso è necessario impostare le opzioni di compilazione usando informazioni non incluse nel file di progetto o nei file che costituiscono il progetto. Queste informazioni sono in genere archiviate nelle variabili di ambiente.  
   
 ## <a name="referencing-environment-variables"></a>Riferimento alle variabili di ambiente  

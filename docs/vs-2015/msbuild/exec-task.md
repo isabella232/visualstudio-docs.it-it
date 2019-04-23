@@ -19,23 +19,22 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2a69fc64c3371a2970c03ec0129d4c733f5ae9cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782507"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660512"
 ---
 # <a name="exec-task"></a>Attività Exec
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Esegue il programma o il comando specificato con gli argomenti specificati.  
   
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività `Exec`.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`Command`|Parametro `String` obbligatorio.<br /><br /> Uno o più comandi da eseguire. Possono essere comandi di sistema, ad esempio attrib, o file eseguibili, ad esempio program.exe, runprogram.bat o setup.msi.<br /><br /> Questo parametro può contenere più righe di comandi. In alternativa, è possibile includere più comandi in un file batch ed eseguirlo tramite questo parametro.|  
 |`CustomErrorRegularExpression`|Parametro `String` facoltativo.<br /><br /> Specifica un'espressione regolare usata per individuare eventuali righe di errore nell'output dello strumento. È particolarmente utile per gli strumenti che consentono la generazione di output con formattazione insolita.|  

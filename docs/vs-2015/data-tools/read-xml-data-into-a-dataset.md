@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954722"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653206"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura dettagliata, si crea un'applicazione Windows che carica i dati XML in un set di dati. Il set di dati viene quindi visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo. Infine, uno schema XML basato sul contenuto del file XML viene visualizzato in una casella di testo.  
   
  Procedura dettagliata è costituita da cinque passaggi principali:  
@@ -52,7 +51,7 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
 >  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu**Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto  
- In questo passaggio si crea un progetto Visual Basic o Visual C# che contiene questa procedura dettagliata.  
+ In questo passaggio si crea un progetto Visual Basic o Visual c# che contiene questa procedura dettagliata.  
   
 #### <a name="to-create-the-new-windows-project"></a>Per creare il nuovo progetto Windows  
   

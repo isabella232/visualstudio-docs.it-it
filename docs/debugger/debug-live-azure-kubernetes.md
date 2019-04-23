@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856690"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654711"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi con Snapshot Debugger
 
@@ -35,9 +35,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Snapshot Debugger per servizi Azure Kubernetes è disponibile solo per l'anteprima di Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro Sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
+* Debugger di snapshot per servizi di Azure Kubernetes è disponibile solo per Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
 
-    Se non è già installata, installare l'[anteprima di Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/preview/).
+    Se non è già installato, installarlo [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * La raccolta di snapshot è disponibile per le app Web dei servizi Azure Kubernetes seguenti:
   * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Debian 9.
@@ -101,7 +101,7 @@ Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno sn
 
 È anche possibile aggiungere ulteriori punti di acquisizione snapshot all'app e attivarli con il pulsante **Aggiorna raccolta**.
 
-**Per ulteriori informazioni, vedere** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
+**Serve aiuto?** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 

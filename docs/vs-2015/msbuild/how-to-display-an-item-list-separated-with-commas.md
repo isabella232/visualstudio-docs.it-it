@@ -12,17 +12,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20df19f09dd31e428555831b98bfd0b3c9360233
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 16a41c2c80948c1466deed3efe8354e49ba64595
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765025"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655075"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: visualizzare un elenco di elementi separati da virgole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]), è talvolta utile visualizzare il contenuto di tali elenchi di elementi in un modo facilmente leggibile. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.  
   
 ## <a name="separating-items-in-a-list-with-commas"></a>Separazione di elementi in un elenco con virgole  

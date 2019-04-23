@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983494"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659722"
 ---
 # <a name="access-data-in-visual-studio"></a>Accedere ai dati in Visual Studio
 
@@ -27,7 +27,7 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
 
 Le applicazioni in JavaScript, Python, PHP, Ruby o C++, è necessario connettersi ai dati come si farebbe altro, ottenendo le librerie e la scrittura di codice. Per le applicazioni .NET, Visual Studio offre strumenti che è possibile usare per esplorare le origini dati, creare modelli a oggetti per archiviare e manipolare i dati in memoria e associare i dati all'interfaccia utente. Microsoft Azure offre SDK per .NET, Java, Node. js, PHP, Python, Ruby e App per dispositivi mobili e gli strumenti in Visual Studio per la connessione ad archiviazione di Azure.
 
-Gli elenchi seguenti illustrano solo alcune di molti sistemi di archiviazione e database che possono essere utilizzati da Visual Studio. Il [Microsoft Azure](https://azure.microsoft.com/) offerte sono servizi dati che includono tutti i provisioning e l'amministrazione di archivio dati sottostante. Il **sviluppo di Azure** carico di lavoro in [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) consente di lavorare con gli archivi dati di Azure direttamente da Visual Studio.
+Gli elenchi seguenti illustrano solo alcune di molti sistemi di archiviazione e database che possono essere utilizzati da Visual Studio. Il [Microsoft Azure](https://azure.microsoft.com/) offerte sono servizi dati che includono tutti i provisioning e l'amministrazione di archivio dati sottostante. Il **sviluppo di Azure** carico di lavoro in [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) consente di lavorare con gli archivi dati di Azure direttamente da Visual Studio.
 
 ![Carico di lavoro Sviluppo di Azure](media/azure-development-workload.png)
 
@@ -86,7 +86,7 @@ Tutti gli accessi di dati .NET, incluso in .NET Core sono basato su ADO.NET, un 
 
 Per la documentazione di accesso ai dati correlata ad ASP.NET, vedere [utilizzo di dati](https://www.asp.net/web-forms/overview/presenting-and-managing-data) sul sito ASP.NET. Per un'esercitazione sull'uso di Entity Framework con MVC ASP.NET, vedere [Introduzione a Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-App universali di Windows Platform (UWP) in C# o Visual Basic possono usare Microsoft Azure SDK per .NET per accedere all'archiviazione di Azure e altri servizi di Azure. La classe Windows.Web.HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per altre informazioni, vedere [come connettersi a un server HTTP utilizzando consente](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Universal Windows Platform (UWP) le App in c# o Visual Basic possono usare Microsoft Azure SDK per .NET per accedere all'archiviazione di Azure e altri servizi di Azure. La classe Windows.Web.HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per altre informazioni, vedere [come connettersi a un server HTTP utilizzando consente](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
 Per l'archiviazione dei dati nel computer locale, l'approccio consigliato consiste nell'utilizzare SQLite, che viene eseguito nello stesso processo dell'app. Se è necessario un livello di mapping relazionale a oggetti (ORM), è possibile usare Entity Framework. Per altre informazioni, vedere [DAS](/windows/uwp/data-access/index) nel Centro sviluppatori Windows.
 
@@ -150,7 +150,7 @@ Installare [supporto di Python in Visual Studio](../python/overview-of-python-to
 
 [I dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)&mdash;contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;descrive le funzionalità di query incorporate in C# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, i set di dati e raccolte in memoria.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;descrive le funzionalità di query incorporate in c# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, i set di dati e raccolte in memoria.
 
 [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;illustra l'uso di funzionalità XML di .NET Framework i dati, debug XSLT, XML e l'architettura di Query XML.
 

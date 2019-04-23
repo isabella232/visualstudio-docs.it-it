@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600488"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657592"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 
@@ -45,7 +45,7 @@ Affinché l'applicazione per installare ed eseguire correttamente, prima di tutt
 
 - La versione minima di tutti gli assembly che devono essere preinstallati nella global assembly cache (GAC), come specificato dalle dichiarazioni delle dipendenze degli assembly nel manifesto dell'assembly.
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
 >  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe*, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
@@ -71,8 +71,7 @@ Affinché l'applicazione per installare ed eseguire correttamente, prima di tutt
 
  Se si modificano le opzioni di avvio automatico, è necessario modificare il programma di avvio senza segno e quindi accedere in seguito il file di programma di avvio automatico.
 
-
-| Argomento della riga di comando | Description |
+| Argomento della riga di comando | Descrizione |
 | - | - |
 | **-?, -h, -help** | Visualizza una finestra di dialogo della Guida. |
 | **-url, -componentsurl** | Visualizza l'URL archiviato e l'URL dei componenti per questa configurazione. |

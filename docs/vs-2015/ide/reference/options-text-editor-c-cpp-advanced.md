@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790097"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660775"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Modificando queste opzioni è possibile modificare il comportamento correlato a IntelliSense e il database di esplorazione quando si programma in C o C++.  
   
  Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** e quindi fare clic su **Avanzate**.  

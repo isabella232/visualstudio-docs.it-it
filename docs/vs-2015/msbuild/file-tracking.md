@@ -11,17 +11,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5afc245bd16954ba348b4ec581238bf17e5d994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758713"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656817"
 ---
 # <a name="file-tracking"></a>Rilevamento di file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Il rilevamento di file registra le chiamate al file system di Windows per un processo e i relativi processi figlio. Chiamando le funzioni elencate di seguito, i programmi stabiliscono quando attivare e disattivare la registrazione e quale file di log usare.  
   
 ## <a name="in-this-section"></a>In questa sezione  

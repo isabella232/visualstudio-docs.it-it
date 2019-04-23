@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 315e97b83e2b221258bfacebf0e6bc5f3ef92919
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964487"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659644"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Se un set di dati contiene i vincoli (ad esempio i vincoli di chiave esterna), theycan genera errori relativi all'ordine delle operazioni che vengono eseguite a fronte del set di dati. Ad esempio, il caricamento di record figlio prima dei record padre loadingrelated, può violano un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo controlla il relativo record figlio e genera un errore.  
   
  Se non vi sono alcun meccanismo per consentire la sospensione di vincolo temporaneo, verrebbe generato un errore ogni volta che si è tentato di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati è con il <xref:System.Data.DataRow.BeginEdit%2A>, e <xref:System.Data.DataRow.EndEdit%2A> proprietà.  

@@ -16,17 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d04c750bbe8183ae8e39765e41af2f138704ba3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785784"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654061"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specificare le istruzioni di configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti gli eventi di post-compilazione. Per altre informazioni, vedere [Procedura: Specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
@@ -58,7 +57,7 @@ Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specifi
 |**Quando la compilazione aggiorna l'output del progetto**|L'evento di post-compilazione verrà eseguito solo quando il file di output del compilatore (con estensione exe o dll) è diverso dal file di output del compilatore precedente. L'evento di post-compilazione non viene quindi eseguito se un progetto è aggiornato.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Procedura: Specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)   
+ [Procedura: Specificare eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Procedura: Specificare eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)   
  [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)

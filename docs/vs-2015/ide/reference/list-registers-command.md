@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763039"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658539"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Consente di visualizzare il valore dei registri selezionati e di modificare l'elenco dei registri da visualizzare.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -67,5 +66,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
- [Nozioni fondamentali di debug: finestra Registri](../../debugger/debugging-basics-registers-window.md)   
+ [Informazioni di base sul debug: Finestra registri](../../debugger/debugging-basics-registers-window.md)   
  [Procedura: Usare la finestra Registri](../../debugger/how-to-use-the-registers-window.md)

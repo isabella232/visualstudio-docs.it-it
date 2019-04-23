@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654867"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: utilizzare la stessa destinazione in più file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], è possibile che sia stato necessario usare le stesse attività e destinazioni in file di progetto diversi. Anziché includere in ogni file di progetto la descrizione completa di tali attività o destinazioni, è possibile salvare una destinazione in un file di progetto separato e importarlo in qualsiasi altro progetto in cui si intende usare la destinazione.  
   
 ## <a name="using-the-import-element"></a>Uso dell'elemento Import  

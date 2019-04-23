@@ -19,17 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764892"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660346"
 ---
 # <a name="signfile-task"></a>Attività SignFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Consente di firmare il file specificato usando il certificato specificato.  
   
 ## <a name="parameters"></a>Parametri  
@@ -40,7 +39,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 > [!WARNING]
 >  A partire da Visual Studio 2013 Update 3, questa attività ha una nuova firma che consente di specificare la versione del framework di destinazione per il file. L'utente è incoraggiato a usare la nuova firma, ove possibile, perché il processo di MSBuild usa gli hash SHA-256 solo quando il framework di destinazione è .NET 4.5 o versione successiva. Se il framework di destinazione è .NET 4.0 o versione precedente, l'hash SHA-256 non verrà usato.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`CertificateThumbprint`|Parametro `String` obbligatorio.<br /><br /> Specifica il certificato da usare per la firma. Questo certificato deve trovarsi nell'archivio personale dell'utente corrente.|  
 |`SigningTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica i file da firmare con il certificato.|  

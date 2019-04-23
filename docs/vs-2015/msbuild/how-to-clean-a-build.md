@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780747"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661334"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: pulire una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Riferimenti delle attività](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Creazione di una directory per gli elementi di output  

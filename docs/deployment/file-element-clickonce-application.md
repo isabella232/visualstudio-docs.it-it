@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4152482f404596e1d97a94a12890b4c5b298794
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604223"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657208"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file&gt; elemento (applicazione ClickOnce)
 Identifica tutti i file scaricata e usata dall'applicazione.
@@ -86,7 +86,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  L'elemento `file` è facoltativo. L'elemento presenta gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`name`|Obbligatorio. Identifica il nome del file.|
 |`size`|Obbligatorio. Specifica la dimensione, espressa in byte, del file.|
@@ -97,7 +97,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="typelib"></a>typelib
  Il `typelib` elemento è un elemento figlio facoltativo dell'elemento file. L'elemento descrive la libreria dei tipi a cui appartiene il componente COM. L'elemento presenta gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`tlbid`|Obbligatorio. GUID assegnato alla libreria dei tipi.|
 |`version`|Obbligatorio. Il numero di versione della libreria dei tipi.|
@@ -108,7 +108,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="comclass"></a>comClass
  Il `comClass` costituisce un elemento figlio facoltativo di `file` elemento, ma è obbligatorio se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento presenta gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`clsid`|Obbligatorio. L'ID di classe del componente COM espresso come GUID.|
 |`description`|Facoltativo. Nome della classe.|
@@ -124,7 +124,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub
  Il `comInterfaceExternalProxyStub` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento contiene gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`iid`|Obbligatorio. L'ID interfaccia (IID) che verrà servita da questo proxy. IID deve avere tra parentesi quadre.|
 |`baseInterface`|Facoltativo. IID dell'interfaccia da cui l'interfaccia fa `iid` è derivato.|
@@ -136,7 +136,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
  Il `comInterfaceProxyStub` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento contiene gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`iid`|Obbligatorio. L'ID interfaccia (IID) che verrà servita da questo proxy. IID deve avere tra parentesi quadre.|
 |`baseInterface`|Facoltativo. IID dell'interfaccia da cui l'interfaccia fa `iid` è derivato.|
@@ -149,7 +149,7 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="windowclass"></a>windowClass
  Il `windowClass` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento fa riferimento a una classe di finestra definita dal componente COM che deve essere installata una versione applicato. L'elemento contiene gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`versioned`|Facoltativo. Controlla se la finestra interna classe nome usato nella registrazione contiene la versione dell'assembly che contiene la classe della finestra. Il valore di questo attributo può essere `yes` o `no`. Il valore predefinito è `yes`. Il valore `no` deve essere utilizzato solo se la stessa classe della finestra è definita da un componente side-by-side ed un'equivalente non-side-by-side e si desidera trattarli come la classe della finestra stessa. Si noti che si applicano le regole normali sulla registrazione delle classi di finestra, ovvero solo il primo componente che registra la classe di finestra saranno in grado di registrare, perché non dispone di una versione applicata.|
 
@@ -166,23 +166,21 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ## <a name="dsigtransform"></a>dsig:Transform
  Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod
  Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |-------------| - |
 | `Algorithm` | L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
 ## <a name="dsigdigestvalue"></a>dsig:
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questo elemento identifica tutti gli i file che costituiscono l'applicazione e, in particolare, i valori hash per la verifica dei file. Questo elemento può includere anche i dati sull'isolamento modello COM (Component Object) associati al file. Se viene modificato un file, file manifesto dell'applicazione deve inoltre essere aggiornato per riflettere la modifica.
 
 ## <a name="example"></a>Esempio

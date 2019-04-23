@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605692"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658253"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
 Un file di descrizione di directory di modello (con estensione VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file di modello che sono associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione di cui si fa riferimento vengono uniti, anche se file sola VSDIR generalmente è fornito per descrivere più cartelle, le procedure guidate o i file di modello.
@@ -35,7 +35,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 ## <a name="fields"></a>Campi
  La tabella seguente elenca i campi specificati per ogni record.
-
 
 | Campo | Descrizione |
 | - | - |

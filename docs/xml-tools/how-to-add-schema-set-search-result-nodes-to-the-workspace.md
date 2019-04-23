@@ -8,20 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913928"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654490"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedura: Aggiungere nodi dei risultati ricerca set di schemi all'area di lavoro
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedura: Aggiungere nodi dei risultati di ricerca del set di schemi all'area di lavoro
 
 In questo argomento viene illustrato come aggiungere nodi evidenziati nel **XML Schema Explorer** come risultato di una ricerca per parole chiave nell'area di lavoro.
 
 > [!NOTE]
 > Solo nodi globali possono essere aggiunti per il [dell'area di lavoro](../xml-tools/xml-schema-designer-workspace.md).
-
 
  Questo esempio Usa il codice di esempio [schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 

@@ -14,17 +14,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281bdbb3ba974b3aacb9c349575727675bb59305
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354747"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655751"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Funzione compareTo dispendiosa
+# <a name="da0011-expensive-compareto"></a>DA0011: Funzione CompareTo dispendiosa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio, vedere [DA0011 funzione: CompareTo dispendiosa](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) su docs.microsoft.com.  
+Per la documentazione più recente di Visual Studio, vedere [DA0011 funzione: CompareTo dispendiosa](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto).  
   
 |||  
 |-|-|  

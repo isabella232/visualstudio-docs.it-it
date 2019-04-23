@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954450"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656544"
 ---
 # <a name="xml-schema-designer-workspace"></a>Area di lavoro di Progettazione XML Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Progettazione XML Schema (Progettazione XSD) è uno strumento grafico che consente di esplorare gli schemi XML. Oltre al [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), che consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche, progettazione XSD fornisce tre visualizzazioni che consentono di esplorare lo schema XSD in modo più dettagliato. La visualizzazione iniziale è il punto di avvio per Progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni di Progettazione XSD e vedere i dettagli relativi al set di schemi. La visualizzazione grafico consente di visualizzare una panoramica di un set di schemi e delle relazioni tra i nodi degli schemi. La visualizzazione modello di contenuto fornisce una rappresentazione grafica dei dettagli relativi a nodi dello schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.  
   
  Per iniziare a esplorare i nodi a cui si è interessati, è necessario aggiungerli all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.  

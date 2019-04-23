@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773085"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653489"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per compilare progetti in modo più efficiente.  
   
 ## <a name="transform-modifiers"></a>Modificatori di comandi  
@@ -55,7 +54,7 @@ Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un a
 ## <a name="dependency-analysis"></a>Analisi delle dipendenze  
  Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Se pertanto una destinazione crea output che sono trasformazioni degli input, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] può analizzare i timestamp degli input e output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.  
   
- Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata mediante una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` verrà eseguita esclusivamente per il file modificato e tutti gli altri file verranno ignorati. Per altre informazioni sulle analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md).  
+ Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata mediante una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` verrà eseguita esclusivamente per il file modificato e tutti gli altri file verranno ignorati. Per altre informazioni sulle analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: La compilazione incrementale](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -112,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
  [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)
+ [Procedura: La compilazione incrementale](../msbuild/how-to-build-incrementally.md)

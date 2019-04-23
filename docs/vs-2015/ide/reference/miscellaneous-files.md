@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802584"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658492"
 ---
 # <a name="miscellaneous-files"></a>File esterni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 È consigliabile usare gli editor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per lavorare in modo indipendente sui file di un progetto o di una soluzione. Mentre si ha una soluzione aperta, è possibile aprire e modificare i file senza aggiungerli a una soluzione o a un progetto. I file che si intende usare in modo indipendente dai contenitori sono chiamati file esterni. I file esterni sono esterni a soluzioni e progetti, non sono inclusi nelle compilazioni e non possono essere inclusi in una soluzione sotto il controllo del codice sorgente.  
   
  L'apertura dei file in modo indipendente dal contenitore è utile per diversi motivi. Si potrebbe voler visualizzare un file durante lo sviluppo di una soluzione basata su un progetto ma che non è parte integrante dello sviluppo della soluzione. Tra gli esempi comuni vi sono note o istruzioni di sviluppo, lo schema del database e segmenti di codice. L'utente potrebbe anche voler creare un file autonomo.  

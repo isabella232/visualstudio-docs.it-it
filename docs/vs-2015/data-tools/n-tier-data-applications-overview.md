@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969991"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658123"
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-applicazioni dati a livelli * sono applicazioni di dati che sono separate in più *livelli*. Noto anche come "applicazioni multilivello" e "applicazioni distribuite", le applicazioni a più livelli diversi in livelli discreti che vengono distribuite tra il client e server di elaborazione. Quando si sviluppano applicazioni che accedono ai dati, si deve avere una netta separazione tra i vari livelli che costituiscono l'applicazione.  
   
  Una tipica applicazione a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il modo più semplice per separare i vari livelli in un'applicazione a più livelli è possibile creare progetti discreti per ogni livello che si desidera includere nell'applicazione. Ad esempio, il livello di presentazione può essere un'applicazione Windows Forms, mentre la logica di accesso ai dati potrebbe essere una libreria di classi che si trova nel livello intermedio. Inoltre, il livello di presentazione può comunicare con la logica di accesso ai dati nel livello intermedio tramite un servizio, ad esempio un servizio. La separazione dei componenti dell'applicazione in livelli aumenta la gestibilità e la manutenibilità dell'applicazione, Ciò avviene mediante l'adozione semplificata di nuove tecnologie che possono essere applicati a un singolo livello senza la necessità di riprogettare l'intera soluzione. Inoltre, le applicazioni a più livelli in genere archiviano informazioni riservate nel livello intermedio, che mantiene isolamento dal livello di presentazione.  

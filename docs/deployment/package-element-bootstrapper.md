@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631861"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654581"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
 Il `Package` elemento è l'elemento XML di primo livello all'interno di un file del pacchetto.
@@ -143,8 +143,7 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  Il `Package` elemento è obbligatorio. Include gli attributi seguenti.
 
-
-| Attributo | Description |
+| Attributo | Descrizione |
 |--------------------| - |
 | `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione. |
 | `Name` | Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`. |

@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964707"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654503"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installare SQL Server database di esempio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data Binding, la modellazione di Entity Framework e così via.  Ogni prodotto di database ha un proprio database di esempio. Northwind e AdventureWorks sono due database di esempio di SQL Server più diffusi.  
   
  **AdventureWorks** è il database corrente di esempio fornito per i prodotti SQL Server. È possibile scaricarlo come file con estensione mdf dal [AdventureWorks pagina sul sito Codeplex](http://msftdbprodsamples.codeplex.com/). Sono disponibili versioni (LT) regolari e leggere del database qui. Per la maggior parte degli scenari, la versione LT è preferibile perché è meno complessa.  

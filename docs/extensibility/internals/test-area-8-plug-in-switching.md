@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605172"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659501"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Area di test 8: Cambio di plug-in
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) è l'interfaccia utente (UI) per modificare il controllo del codice sorgente corrente del plug-in. Questa area di test fornisce i test case per il processo di selezione plug-in da usare per la soluzione controllo del codice sorgente che.
@@ -39,7 +39,6 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di svil
 #### <a name="expected-behavior"></a>Comportamento previsto
  Quando un utente viene caricata una soluzione che si trova sotto controllo del codice sorgente, la soluzione viene automaticamente caricata e il plug-in del controllo del codice sorgente appropriato viene selezionata come corrente.
 
-
 | Operazione | Passi del test | Per verificare i risultati previsti |
 | - | - | - |
 | Modifica del plug-in controllo origine automatica | 1.  Selezionare plug-nel test come corrente (**degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **plug-in Selezione**.)<br />2.  Creare un nuovo progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Selezionare un altro plug-in (ad esempio, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Accettare scaricamento soluzione richiesta.<br />6.  Riaprire la soluzione dal disco. | Soluzione è aperta.<br /><br /> Plug-in sottoposta a test è il controllo del codice sorgente corrente del plug-in. |
@@ -48,7 +47,6 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di svil
 
 #### <a name="expected-behavior"></a>Comportamento previsto
  La soluzione può avere il controllo del codice sorgente associato del plug-in modificato.
-
 
 | Operazione | Passi del test | Per verificare i risultati previsti |
 |----------------------------------| - | - |

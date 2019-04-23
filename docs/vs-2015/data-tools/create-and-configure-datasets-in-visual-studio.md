@@ -17,16 +17,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4679063634af102c71635f2d84b7c3e44cd33085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955282"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656248"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Oggetto *set di dati* è un set di oggetti che archiviano i dati da un database in memoria e supportano il rilevamento delle modifiche per consentire di creare, leggere, aggiornare ed eliminazione (CRUD) sui dati senza la necessità di essere sempre connessi al database. I set di dati sono stati progettati per semplice *form over data* applicazioni aziendali. Per le nuove applicazioni, è consigliabile usare Entity Framework per archiviare e modellare i dati in memoria. Per lavorare con i set di dati, si deve avere una conoscenza di base dei concetti relativi ai database.
 

@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f5dced1acba79b0559db49f079e04f605263e0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955992"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653476"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Avviare una sessione di debug per un'app dello Store in Visual Studio (VB, C#, C++ e XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
 2. Premere F5.
 
-   Visual Studio compila e avvia l'app con il debugger collegato. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina. Per altre informazioni, vedere [esplorare una sessione di debug (Xaml e C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
+   Visual Studio compila e avvia l'app con il debugger collegato. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina. Per altre informazioni, vedere [esplorare una sessione di debug (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> Configurare la sessione di debug
 
@@ -256,13 +256,11 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
 2. Scegli una delle opzioni seguenti dall'elenco:
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Computer locale**  |                                                                                                                Esegue il debug dell'app nella sessione corrente nel computer locale. Visualizzare [Run Windows Store app nel computer locale](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
    |   **Simulatore**    | Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Visualizzare [Run Windows Store app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Computer remoto** |                          Esegue il debug dell'app in un dispositivo connesso al computer locale su una rete Intranet o collegato direttamente tramite un cavo Ethernet. Per eseguire il debug in modalità remota, Visual Studio Remote Tools deve essere installato e in esecuzione sul dispositivo remoto. Visualizzare [Run Windows Store App in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
-
 
 3. Scegli l'app dall'elenco **Pacchetti applicazione installati** .
 

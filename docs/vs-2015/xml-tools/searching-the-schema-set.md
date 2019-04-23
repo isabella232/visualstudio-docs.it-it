@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6993ce3038b395179aa5c0a667078d0ee478997
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967606"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661269"
 ---
 # <a name="searching-the-schema-set"></a>Ricerche nel set di schemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Schema Explorer consente di eseguire ricerche nel set di schemi nei seguenti modi:  
   
 -   Ricerca per parole chiave.  

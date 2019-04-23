@@ -14,17 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2ed16962a417f53569e7fd6e5364ac0a7f11d9a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755125"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659800"
 ---
 # <a name="formatversion-task"></a>Attività FormatVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aggiunge il numero di revisione al numero di versione.  
   
 -   Caso n. 1: Input: Version=\<indefinita>;  Revision=\<indifferente>;   Output: OutputVersion="1.0.0.0"  
@@ -36,7 +35,7 @@ Aggiunge il numero di revisione al numero di versione.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `FormatVersion` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`FormatType`|Parametro `String` facoltativo.<br /><br /> Specifica il tipo di formato.<br /><br /> -   "Version" = versione.<br />-   "Path" = sostituire "." con "_";|  
 |`OutputVersion`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica la versione di output che include il numero di revisione.|  

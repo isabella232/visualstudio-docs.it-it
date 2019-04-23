@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c029a29b2d81f7a6ca64f47aab15caf5119d172
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966145"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655998"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Proprietà delle associazioni nei diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,6 @@ In un diagramma classi UML, è possibile tracciare *associazioni* tra qualsiasi 
 
 ### <a name="properties-of-each-role"></a>Proprietà di ogni ruolo  
  Per visualizzare le proprietà di ogni ruolo, espandere la **primo ruolo** oppure **secondo ruolo** proprietà.  
-
 
 |     **Property**     |          **Default**          |                                                                                                                                                                                                                                                                                                                                        Descrizione                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970075"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654022"
 ---
 # <a name="integration-with-xml-editor"></a>Integrazione con l'editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Progettazione XML Schema è integrato con l'editor XML. Se si modifica un file XSD nell'Editor XML, la modifica si rifletterà nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se si dispone di [visualizzazione grafico](../xml-tools/graph-view.md) o il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) aperta, la modifica si rifletterà anche presenti. È possibile spostarsi tra Progettazione XML Schema e l'editor XML nei seguenti modi:  
   
 - Nell'Editor XML, fare doppio clic su un nodo e selezionare **Mostra in XML Schema Explorer**.  

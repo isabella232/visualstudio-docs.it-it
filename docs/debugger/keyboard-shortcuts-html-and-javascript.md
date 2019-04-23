@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789808"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659673"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
 
@@ -28,7 +28,6 @@ ms.locfileid: "58789808"
 ::: moniker range="vs-2017"
  Tasti di scelta rapida in Visual Studio per il debug di App UWP scritte in HTML e JavaScript.
 ::: moniker-end
-
 
 ## <a name="general-shortcuts"></a>Tasti di scelta rapida generali
 
@@ -66,5 +65,5 @@ ms.locfileid: "58789808"
 
 ## <a name="see-also"></a>Vedere anche
 - [Comandi della console JavaScript](../debugger/javascript-console-commands.md)
-- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

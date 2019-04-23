@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954512"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658828"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: di un frammento XML da uno schema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, premere TAB per inserire nell'elemento i dati XML generati dalle informazioni sullo schema per quel determinato elemento.  
   
  Questa funzionalità è disponibile solo per gli elementi. È inoltre necessario rispettare le seguenti regole:  

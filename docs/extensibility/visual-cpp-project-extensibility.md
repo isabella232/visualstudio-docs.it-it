@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268723"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660739"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema estendibilità e set di strumenti di integrazione di Project
 
@@ -285,7 +285,6 @@ MSBuild fornisce queste classi helper per leggere e scrivere file TLog:
 Il [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) classe può essere utilizzata per accedere sia in lettura e scrittura file TLog e identificare gli input più recenti rispetto a output, o se non è presente un output. Viene usato nella verifica di aggiornamento.
 
 File TLog da riga di comando contengono informazioni sulle righe di comando usate nella compilazione. Vengono usati solo per le compilazioni incrementali, i controlli non aggiornati, in modo che il formato interno è determinato dall'attività di MSBuild che li produce.
-
 
 ### <a name="read-tlog-format"></a>Formato di tlog di lettura
 

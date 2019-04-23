@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756584"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660983"
 ---
 # <a name="generateapplicationmanifest-task"></a>Attività GenerateApplicationManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.  
   
 ## <a name="parameters"></a>Parametri  
@@ -45,10 +44,10 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecc
 |`Dependencies`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di elementi che definisce il set di assembly dipendenti per il manifesto generato. Ogni elemento può essere ulteriormente descritto dai metadati dell'elemento per indicare informazioni aggiuntive sullo stato della distribuzione e il tipo di dipendenza. Per altre informazioni, vedere la sezione relativa ai metadati degli elementi riportata di seguito.|  
 |`Description`|Parametro `String` facoltativo.<br /><br /> Specifica la descrizione per l'applicazione o il componente.|  
 |`EntryPoint`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un singolo elemento che indica il punto di ingresso per l'assembly del manifesto generato.<br /><br /> Per un manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], questo parametro specifica l'assembly avviato quando si esegue l'applicazione.|  
-|`ErrorReportUrl`|Parametro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le segnalazioni di errori nelle installazioni ClickOnce.|  
+|`ErrorReportUrl`|(Facoltativo [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le segnalazioni di errori nelle installazioni ClickOnce.|  
 |`FileAssociations`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di uno o più tipi di file associati al manifesto della distribuzione ClickOnce.<br /><br /> Le associazioni di file sono valide solo quando la destinazione è .NET Framework 3.5 o versione successiva.|  
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> I file da includere nel manifesto. Specificare il percorso completo per ogni file.|  
-|`HostInBrowser`|Parametro [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Se `true`, l'applicazione è ospitata in un browser (come le applicazioni Web Browser WPF).|  
+|`HostInBrowser`|Facoltativo ([booleano]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Se `true`, l'applicazione è ospitata in un browser (come le applicazioni Web Browser WPF).|  
 |`IconFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Indica il file dell'icona dell'applicazione. L'icona dell'applicazione è espressa nel manifesto dell'applicazione generato e viene usata per il menu Start e la finestra di dialogo Installazione applicazioni. Se questo input non viene specificato, viene usata un'icona predefinita. Se l'attività genera un manifesto nativo, questo parametro viene ignorato.|  
 |`InputManifest`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML di input da usare come base per il generatore del manifesto. In questo modo è possibile applicare nel manifesto di output dati strutturati, ad esempio definizioni della protezione dell'applicazione o definizioni del manifesto personalizzate. L'elemento radice del documento XML deve essere un nodo assembly nello spazio dei nomi asmv1.|  
 |`IsolatedComReferences`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i componenti COM da isolare nel manifesto generato. Questo parametro supporta la possibilità di isolare i componenti COM per la distribuzione di "COM senza registrazione". Funziona generando automaticamente un manifesto con definizioni di registrazione COM standard. Tuttavia, i componenti COM devono essere registrati nel computer di compilazione per garantire il funzionamento corretto.|  
@@ -61,14 +60,14 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecc
 |`Publisher`|Parametro `String` facoltativo.<br /><br /> Specifica l'editore dell'applicazione. Se questo parametro non è specificato, il nome viene dedotto dall'utente registrato o dall'identità del manifesto generato. Questo nome viene usato per la cartella nel menu Start e fa parte del nome visualizzato nella finestra di dialogo Installazione applicazioni.|  
 |`RequiresMinimumFramework35SP1`|Parametro `Boolean` facoltativo.<br /><br /> Se true, l'applicazione richiede .NET Framework 3.5 SP1 o una versione più recente.|  
 |`TargetCulture`|Parametro `String` facoltativo.<br /><br /> Identifica le impostazioni cultura dell'applicazione e specifica il campo `Language` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non viene specificato, si presuppone che l'applicazione sia indipendente dalle impostazioni cultura.|  
-|`TargetFrameworkMoniker`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il moniker del framework di destinazione.|  
-|`TargetFrameworkProfile`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il profilo del framework di destinazione.|  
-|`TargetFrameworkSubset`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica il nome del subset di .NET Framework da usare come destinazione.|  
-|`TargetFrameworkVersion`|Parametro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Specifica la versione di .NET Framework di destinazione del progetto.|  
+|`TargetFrameworkMoniker`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica il moniker del framework di destinazione.|  
+|`TargetFrameworkProfile`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica il profilo del framework di destinazione.|  
+|`TargetFrameworkSubset`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica il nome del subset di .NET Framework da usare come destinazione.|  
+|`TargetFrameworkVersion`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica la versione di .NET Framework di destinazione del progetto.|  
 |`TrustInfoFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML che specifica la sicurezza dell'applicazione. L'elemento radice del documento XML deve essere un nodo trustInfo nello spazio dei nomi asmv2. Se l'attività genera un manifesto nativo, questo parametro viene ignorato.|  
-|`UseApplicationTrust`|Parametro <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> facoltativo.<br /><br /> Se true, le proprietà `Product`, `Publisher` e `SupportUrl` vengono scritte nel manifesto dell'applicazione.|  
+|`UseApplicationTrust`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Se true, le proprietà `Product`, `Publisher` e `SupportUrl` vengono scritte nel manifesto dell'applicazione.|  
   
-## <a name="remarks"></a>Osservazioni  
+## <a name="remarks"></a>Note  
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).  
   
  Per informazioni sull'uso dell'attività `GenerateDeploymentManifest`, vedere [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).  

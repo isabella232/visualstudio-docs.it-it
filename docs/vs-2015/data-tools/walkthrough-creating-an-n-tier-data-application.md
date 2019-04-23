@@ -17,17 +17,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965303"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654685"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: Creazione di un'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono suddivisi in più livelli logici, oppure *livelli*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).  
   
  Per separare i vari livelli in un'applicazione a più livelli, è possibile creare progetti discreti per ogni livello da includere nell'applicazione. I dataset tipizzati contengono una proprietà `DataSet Project` che determina in quali progetti deve essere inserito il codice generato del dataset e di `TableAdapter`.  
@@ -72,7 +71,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
 1.  Dal **File** menu, creare un nuovo progetto.  
   
     > [!NOTE]
-    >  Il **Progettazione Dataset** è supportato in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e i progetti C#. Creare il nuovo progetto in uno di questi linguaggi  
+    >  Il **Progettazione Dataset** è supportato in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e i progetti c#. Creare il nuovo progetto in uno di questi linguaggi  
   
 2.  Nel **nuovo progetto** nella finestra di dialogo il **tipi di progetto** riquadro, fare clic su **Windows**.  
   

@@ -13,17 +13,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796724"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656454"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Procedura: escludere file dalla compilazione
+# <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In un file di progetto è possibile usare caratteri jolly per includere tutti i file in una sola directory o in un set annidato di directory come input per una compilazione. Potrebbe tuttavia essere presente un file nella directory o una directory in un set annidato di directory che non si vuole includere come input per una compilazione. È possibile escludere in modo esplicito tale file o directory dall'elenco di input. In un progetto potrebbe anche essere presente un file che si vuole includere solo in determinate condizioni. È possibile dichiarare in modo esplicito le condizioni in cui un file viene incluso in una compilazione.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Esclusione di un file o di una directory dagli input per una compilazione  
@@ -128,4 +127,4 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 ## <a name="see-also"></a>Vedere anche  
  [Elementi](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [come: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628325"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653723"
 ---
 # <a name="cc-assertions"></a>Asserzioni C/C++
 Un'istruzione di asserzione specifica una condizione che si prevede abbia valore true in un punto del programma. Se tale condizione non è true, l'asserzione non riesce, viene interrotta l'esecuzione del programma e il [finestra di dialogo Asserzione non riuscita](../debugger/assertion-failed-dialog-box.md) viene visualizzata.
@@ -105,7 +105,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ## <a name="BKMK_CRT_assertions"></a> Asserzioni di CRT
 CRTDBG. H definisce i [macro Assert e ASSERTE](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) per il controllo delle asserzioni.
-
 
 | Macro | Risultato |
 |------------| - |

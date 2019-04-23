@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714283"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658044"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
@@ -42,14 +42,14 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 ## <a name="playback-machine"></a>Computer riproduzione
  Nell'angolo superiore destro di **Elenco frame** è disponibile **Computer riproduzione**. Computer riproduzione è un computer o un dispositivo usato per riprodurre gli eventi della grafica da un file di log della grafica durante una sessione di diagnostica della grafica successiva. Usando un dispositivo diverso dal computer di sviluppo per riprodurre gli eventi acquisiti, è possibile riprodurre in modo più accurato l'ambiente di esecuzione in cui si verifica il problema. È ad esempio possibile usare un computer con un hardware o driver di grafica diversi rispetto a quelli presenti nel computer di sviluppo o altri tipi di dispositivi, come un tablet Windows RT basato su ARM o un dispositivo Windows Phone.
 
- Per informazioni su come specificare un computer di riproduzione, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Per informazioni su come specificare un computer di riproduzione, vedere [come: Modificare il computer di riproduzione della diagnostica della grafica](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="graphics-log-summary-information"></a>Informazioni di riepilogo del log di grafica
  Quando un file di log di grafica è il documento attivo, nella finestra **Proprietà** sono visualizzate informazioni sull'ambiente che ha ospitato la sessione di acquisizione di Diagnostica della grafica. Sono visualizzate numerose categorie di informazioni.
 
  **Informazioni Direct3D** Elenca le informazioni sulle funzionalità hardware e driver della scheda video usata durante la sessione di acquisizione.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Formato High Color 10 bit XR**|**True** se il formato High Color 10 bit XR è supportato; in caso contrario, **False**.|
 |**DirectCompute CS 4.x**|**True** se Compute Shader 4.0 è supportato; in caso contrario, **False**.|
@@ -61,7 +61,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  **Visualizzare le informazioni** Elenca le informazioni relative alla scheda video usata durante la sessione di acquisizione.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Descrizione**|Stringa di descrizione della scheda video.|
 |**Memoria visualizzazione**|Quantità di memoria installata nella scheda video grafica.|
@@ -71,15 +71,15 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  **File esperimento** Elenca le informazioni relative al file esperimento associato la sessione di acquisizione.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
-|**Path**|Percorso del file con estensione vsglog. **Nota:** in acquisizione legacy, questa proprietà è inutilizzata.|
+|**Path**|Percorso del file con estensione vsglog. **Nota:**  Nell'ambito dell'acquisizione legacy, questa proprietà è inutilizzata.|
 
  **Informazioni sul modulo** Elenca il nome e la versione delle librerie di collegamento dinamico (DLL) che sono state caricate dall'app durante la sessione di acquisizione.
 
  **Informazioni sul sistema** Elenca le informazioni relative all'hardware e sistema operativo che ha ospitato l'app durante la sessione di acquisizione.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Memoria**|Quantità di memoria installata nel computer.|
 |**Architettura sistema operativo**|L'architettura della CPU di destinazione del sistema operativo.|
@@ -89,7 +89,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  **Applicazione di destinazione** Elenca le informazioni sull'app che sono oggetto della sessione di acquisizione.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Data/ora ultima modifica**|Data e ora in cui è stata compilata l'app.|
 |**Path**|Percorso dell'app.|
@@ -98,13 +98,12 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  **Di Log Vsg** riporta informazioni sul documento log grafica.
 
-
-| Proprietà | Description |
+| Proprietà | Descrizione |
 |------------------------| - |
 | **Creato da** | Nome dell'app che ha creato il documento di log della grafica. Ad esempio, se la sessione di acquisizione è stata avviata da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (acquisizione manuale), il valore di questa proprietà è [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Ora inizio sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
 | **Dimensione** | Dimensione del documento log grafica. |
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

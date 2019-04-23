@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965901"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660359"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: di frammenti di codice XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'editor comprende un frammento di codice XML, denominato "Snippet", ovvero un frammento standard per la creazione di nuovi frammenti di codice XML.  
   
 ## <a name="to-create-a-new-xml-snippet"></a>Per creare un nuovo frammento di codice XML  
