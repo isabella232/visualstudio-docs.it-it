@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061710"
 ---
 # <a name="when-to-create-project-types"></a>Quando creare tipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ Creare un nuovo tipo di progetto fornisce una base per la personalizzazione [!IN
 ## <a name="create-a-new-project-type"></a>Creare un nuovo tipo di progetto  
  È necessario creare un tipo di progetto se si desidera personalizzare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] di agire in uno o più dei modi seguenti:  
   
--   Partecipa a compilazione, distribuzione, le configurazioni e controllo del codice sorgente.  
+- Partecipa a compilazione, distribuzione, le configurazioni e controllo del codice sorgente.  
   
--   Offrono supporto per il debug.  
+- Offrono supporto per il debug.  
   
--   Visualizzare gli elementi di progetto in **Esplora soluzioni**.  
+- Visualizzare gli elementi di progetto in **Esplora soluzioni**.  
   
--   Usare la **Apri progetto** oppure **nuovo progetto** nella finestra di dialogo.  
+- Usare la **Apri progetto** oppure **nuovo progetto** nella finestra di dialogo.  
   
--   Supporta l'annidamento di progetto.  
+- Supporta l'annidamento di progetto.  
   
 ## <a name="extend-an-existing-project-type"></a>Estendere un tipo di progetto esistente  
  Si potrebbe voler creare un nuovo tipo di progetto utilizzabili [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nei modi seguenti per modificare o estendere il comportamento di un tipo di progetto esistente, ad esempio, la modifica del processo di compilazione per [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] progetti:  
   
--   Funziona con più file come singola unità.  
+- Funziona con più file come singola unità.  
   
--   Visualizzare un singolo file come una gerarchia di elementi secondari.  
+- Visualizzare un singolo file come una gerarchia di elementi secondari.  
   
--   Visualizzare un contesto del comando per gli editor.  
+- Visualizzare un contesto del comando per gli editor.  
   
--   Visualizzare un contesto del servizio per gli editor.  
+- Visualizzare un contesto del servizio per gli editor.  
   
 ## <a name="use-an-existing-project-type"></a>Usare un tipo di progetto esistente  
  Crea un nuovo progetto in alcuni casi non è necessario. La tabella seguente illustra le attività che non è necessario creare un tipo di progetto per.  

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065026"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>L'ordinamento, filtro e raggruppamento (XML Schema Explorer)
 
@@ -23,41 +23,41 @@ In questo argomento vengono descritte le opzioni disponibili tramite il **opzion
 
  Sono disponibili le seguenti opzioni del filtro. Per impostazione predefinita, il **Mostra spazi dei nomi** e **Mostra file di Schema** sono selezionate le opzioni.
 
--   **Mostra spazi dei nomi**.
+- **Mostra spazi dei nomi**.
 
--   **Mostra file di Schema**.
+- **Mostra file di Schema**.
 
--   **Mostra Compositor (sequence/choice/all)**.
+- **Mostra Compositor (sequence/choice/all)**.
 
 ## <a name="sorting-options"></a>Le opzioni di ordinamento
 
  Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. **Ordina per** opzioni non si applicano ai file e gli spazi dei nomi.
 
--   **Ordina per tipo**.
+- **Ordina per tipo**.
 
--   **Ordina per nome**.
+- **Ordina per nome**.
 
--   **Ordine dei documenti**.
+- **Ordine dei documenti**.
 
 ### <a name="sort-by-type"></a>Ordina per tipo
 
  Quando la **Ordina per tipo** opzione è selezionata, i nodi globali vengono ordinati nell'ordine seguente. All'interno di ciascun gruppo i nodi vengono ordinati alfabeticamente.
 
-1.  Nodi `import`.
+1. Nodi `import`.
 
-2.  Nodi `include`.
+2. Nodi `include`.
 
-3.  Nodi `redefine`.
+3. Nodi `redefine`.
 
-4.  Nodi `attribute`.
+4. Nodi `attribute`.
 
-5.  Nodi `attributeGroup`.
+5. Nodi `attributeGroup`.
 
-6.  Nodi `complexType`.
+6. Nodi `complexType`.
 
-7.  Nodi `simpleType`.
+7. Nodi `simpleType`.
 
-8.  Nodi `element`.
+8. Nodi `element`.
 
 9. Nodi `group`.
 
@@ -65,13 +65,13 @@ In questo argomento vengono descritte le opzioni disponibili tramite il **opzion
 
  Quando la **Ordina per nome** opzione è selezionata, i nodi globali vengono ordinati nell'ordine seguente:
 
-1.  Nodi `import` (in ordine alfabetico degli spazi dei nomi).
+1. Nodi `import` (in ordine alfabetico degli spazi dei nomi).
 
-2.  Nodi `include` (in ordine alfabetico degli attributi `schemaLocation`).
+2. Nodi `include` (in ordine alfabetico degli attributi `schemaLocation`).
 
-3.  Nodi `redefine` (in ordine alfabetico degli attributi `schemaLocation`).
+3. Nodi `redefine` (in ordine alfabetico degli attributi `schemaLocation`).
 
-4.  Altri nodi globali in ordine alfabetico.
+4. Altri nodi globali in ordine alfabetico.
 
 ### <a name="document-order"></a>Ordine documenti
 

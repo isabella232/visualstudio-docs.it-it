@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060553"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
   
 ### <a name="to-profile-a-web-site-project"></a>Per profilare un progetto di sito Web  
   
-1.  Aprire il progetto Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Aprire il progetto Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
+2. Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
   
-3.  Nella prima pagina della procedura guidata selezionare un metodo di profilatura e quindi fare clic su **Avanti**. Per altre informazioni sui metodi di profilatura, vedere [Informazioni sui metodi di raccolta delle prestazioni](../profiling/understanding-performance-collection-methods.md). Tenere presente che il metodo di profilatura del visualizzatore di concorrenza non è disponibile per le applicazioni Web.  
+3. Nella prima pagina della procedura guidata selezionare un metodo di profilatura e quindi fare clic su **Avanti**. Per altre informazioni sui metodi di profilatura, vedere [Informazioni sui metodi di raccolta delle prestazioni](../profiling/understanding-performance-collection-methods.md). Tenere presente che il metodo di profilatura del visualizzatore di concorrenza non è disponibile per le applicazioni Web.  
   
-4.  Nell'elenco a discesa **Specificare l'applicazione di destinazione per la profilatura** verificare che il progetto corrente sia selezionato e quindi fare clic su **Avanti**.  
+4. Nell'elenco a discesa **Specificare l'applicazione di destinazione per la profilatura** verificare che il progetto corrente sia selezionato e quindi fare clic su **Avanti**.  
   
-5.  Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.  
+5. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.  
   
-    -   Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
+    - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
   
-    -   Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
+    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
   
-6.  Scegliere **Avanti**.  
+6. Scegliere **Avanti**.  
   
-7.  Nella quarta pagina della procedura guidata fare clic su **Fine**.  
+7. Nella quarta pagina della procedura guidata fare clic su **Fine**.  
   
-8.  Verrà creata una sessione di prestazioni per l'applicazione di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e il sito Web verrà avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.  
+8. Verrà creata una sessione di prestazioni per l'applicazione di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e il sito Web verrà avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.  
   
      Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
@@ -90,9 +90,9 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
   
 6. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli (TIP), dati da JavaScript in esecuzione nelle pagine Web o entrambi.  
   
-   -   Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
+   - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
   
-   -   Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
+   - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
   
 7. Scegliere **Avanti**.  
   

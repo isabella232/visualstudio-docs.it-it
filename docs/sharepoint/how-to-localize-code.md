@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066286"
 ---
 # <a name="how-to-localize-code"></a>Procedura: Localizzare il codice
   Codice non localizzato Usa i valori di stringa hardcoded. Per localizzare le stringhe di codice, sostituirli con chiamate a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, ovvero un metodo che fa riferimento a risorse localizzate.
@@ -27,30 +27,30 @@ ms.locfileid: "56639814"
 
 #### <a name="to-localize-code"></a>Per localizzare il codice
 
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per un elemento di progetto e quindi scegliere **Add** > **modulo**.
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per un elemento di progetto e quindi scegliere **Add** > **modulo**.
 
      Scegliere il **File di risorse** modello.
 
     > [!NOTE]
     >  Assicurarsi di aggiungere il file di risorse a un elemento del progetto SharePoint in modo che la proprietà del tipo di distribuzione è disponibile. Questa proprietà è necessaria più avanti in questa procedura.
 
-2.  Assegnare un nome di propria scelta con i file di risorse di lingua predefinito un *resx* estensione, ad esempio *MyAppResources*.
+2. Assegnare un nome di propria scelta con i file di risorse di lingua predefinito un *resx* estensione, ad esempio *MyAppResources*.
 
-3.  Ripetere i passaggi 1 e 2 per aggiungere file di risorse separati all'elemento di progetto SharePoint, uno per ogni lingua localizzata.
+3. Ripetere i passaggi 1 e 2 per aggiungere file di risorse separati all'elemento di progetto SharePoint, uno per ogni lingua localizzata.
 
      Usare lo stesso nome di base per ogni file di risorse localizzato, ma aggiungere l'ID delle impostazioni cultura. Ad esempio, nome un tedesco localizzata resource *MyAppResources.de-. resx*.
 
-4.  Aprire ogni file di risorse e aggiungere le stringhe localizzate. Utilizzare gli stessi ID di stringa in ogni file.
+4. Aprire ogni file di risorse e aggiungere le stringhe localizzate. Utilizzare gli stessi ID di stringa in ogni file.
 
-5.  Modificare il valore della **tipo di distribuzione** proprietà di ogni file di risorse da **AppGlobalResource** per fare in modo ogni file venga distribuito nella cartella App_GlobalResources del server.
+5. Modificare il valore della **tipo di distribuzione** proprietà di ogni file di risorse da **AppGlobalResource** per fare in modo ogni file venga distribuito nella cartella App_GlobalResources del server.
 
-6.  Lasciare il valore di **Build Action** proprietà di ogni file impostato **risorsa incorporata**.
+6. Lasciare il valore di **Build Action** proprietà di ogni file impostato **risorsa incorporata**.
 
      Le risorse incorporate vengono compilate nella DLL del progetto.
 
-7.  Compilare il progetto per creare la risorsa DLL satellite.
+7. Compilare il progetto per creare la risorsa DLL satellite.
 
-8.  Nel **Progettazione pacchetti**, scegliere il **avanzate** scheda e quindi aggiungere l'assembly satellite.
+8. Nel **Progettazione pacchetti**, scegliere il **avanzate** scheda e quindi aggiungere l'assembly satellite.
 
 9. Nel **ubicazione** casella, anteporre una cartella con l'ID delle impostazioni cultura al percorso, ad esempio *de-DE\\\<nome elemento di progetto >. Resources*.
 

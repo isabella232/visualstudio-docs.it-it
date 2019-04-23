@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065545"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell è l'agente primario di
   
 - Selezione di shell a livello di rilevamento, il contesto e valuta. La shell rileva i tipi seguenti di elementi:  
   
-  -   Il progetto corrente  
+  - Il progetto corrente  
   
-  -   L'elemento del progetto corrente o l'ID dell'elemento corrente <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - L'elemento del progetto corrente o l'ID dell'elemento corrente <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   La selezione corrente per il **proprietà** finestra o `SelectionContainer`  
+  - La selezione corrente per il **proprietà** finestra o `SelectionContainer`  
   
-  -   Contesto dell'interfaccia utente, ID o CmdUIGuids che consentono di controllare la visibilità dei comandi, menu e barre degli strumenti  
+  - Contesto dell'interfaccia utente, ID o CmdUIGuids che consentono di controllare la visibilità dei comandi, menu e barre degli strumenti  
   
-  -   Gli elementi attualmente attivi, ad esempio la finestra attiva, documento e gestione degli annullamenti  
+  - Gli elementi attualmente attivi, ad esempio la finestra attiva, documento e gestione degli annullamenti  
   
-  -   Gli attributi di contesto dell'utente che determinano Guida dinamica  
+  - Gli attributi di contesto dell'utente che determinano Guida dinamica  
   
   La shell consente di eseguire anche la comunicazione tra i servizi correnti e installati i pacchetti VSPackage. Supporta le funzionalità principali della shell e li rende disponibili per tutti i pacchetti VSPackage integrati [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Queste funzionalità di base includono gli elementi seguenti:  
   

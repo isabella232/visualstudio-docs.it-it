@@ -15,25 +15,25 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7ff48dec8d38b57d400f31f294a0d0b40ed6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065721"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Procedura: Configurare le proprietà del progetto flusso di lavoro (legacy)
 Seguire questi passaggi per visualizzare o modificare proprietà associate ai progetti flusso di lavoro.  
   
 ### <a name="to-view-or-modify-workflow-project-properties"></a>Per visualizzare o modificare proprietà del progetto flusso di lavoro  
   
-1.  Se **Esplora soluzioni** finestra non è visibile, selezionarla **Esplora soluzioni** sul **visualizzazione** menu.  
+1. Se **Esplora soluzioni** finestra non è visibile, selezionarla **Esplora soluzioni** sul **visualizzazione** menu.  
   
-2.  Selezionare un progetto in **Esplora soluzioni**.  
+2. Selezionare un progetto in **Esplora soluzioni**.  
   
-3.  Se **delle proprietà** finestra non è visibile, selezionare **finestra delle proprietà** sul **visualizzazione** menu.  
+3. Se **delle proprietà** finestra non è visibile, selezionare **finestra delle proprietà** sul **visualizzazione** menu.  
   
-4.  Nel progetto **proprietà** finestra, visualizzare e modificare le proprietà che si desidera modificare.  
+4. Nel progetto **proprietà** finestra, visualizzare e modificare le proprietà che si desidera modificare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di progetti flusso di lavoro legacy](../workflow-designer/creating-legacy-workflow-projects.md)

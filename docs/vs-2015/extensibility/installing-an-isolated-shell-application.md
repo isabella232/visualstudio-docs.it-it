@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062828"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installazione di un'applicazione Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>Per preparare un'applicazione di Shell per la distribuzione di identità del servizio gestito  
   
-1.  Modificare ogni file con estensione vsixmanifest nella soluzione.  
+1. Modificare ogni file con estensione vsixmanifest nella soluzione.  
   
      Nel `Identifier` elemento, aggiungere un' `InstalledByMSI` elemento e un `SystemComponent` elemento, quindi impostare i relativi valori su `true`.  
   
      Questi elementi impediscono che il programma di installazione VSIX sta tentando di installare i componenti e l'utente da disinstallarli tramite la **estensioni e aggiornamenti** nella finestra di dialogo.  
   
-2.  Per ogni progetto che contiene un manifesto VSIX, modificare le attività di compilazione per il contenuto nella posizione da cui si installerà l'identità del servizio gestito di output. Includere il manifesto VSIX nell'output di compilazione, ma non creare un file con estensione VSIX.  
+2. Per ogni progetto che contiene un manifesto VSIX, modificare le attività di compilazione per il contenuto nella posizione da cui si installerà l'identità del servizio gestito di output. Includere il manifesto VSIX nell'output di compilazione, ma non creare un file con estensione VSIX.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Creazione di un file MSI per la Shell  
  Per compilare il pacchetto MSI, è consigliabile usare la [set di strumenti di Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=82720) perché offre maggiore flessibilità rispetto a un progetto di installazione standard.  
@@ -85,7 +85,7 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Per impostare il layout dei componenti della Shell  
   
-1.  Creare una gerarchia di `Directory` elementi per rappresentare tutte le directory da creare nel file system nel computer di destinazione, come illustrato nell'esempio seguente.  
+1. Creare una gerarchia di `Directory` elementi per rappresentare tutte le directory da creare nel file system nel computer di destinazione, come illustrato nell'esempio seguente.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
   
      Queste directory a cui fa riferimento `Id` quando sono stati specificati file da installare.  
   
-2.  Identificare i componenti che richiedono la Shell e l'applicazione di Shell, come illustrato nell'esempio seguente.  
+2. Identificare i componenti che richiedono la Shell e l'applicazione di Shell, come illustrato nell'esempio seguente.  
   
     > [!NOTE]
     >  Alcuni elementi potrebbero fare riferimento alle definizioni in altri file con estensione wxs.  
@@ -123,7 +123,7 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
     </Feature>  
     ```  
   
-    1.  Il `ComponentRef` elemento fa riferimento a un altro file con estensione wxs che identifica i file richiesti dal componente corrente. Ad esempio, GeneralProfile presenta la seguente definizione in HelpAbout.wxs.  
+    1. Il `ComponentRef` elemento fa riferimento a un altro file con estensione wxs che identifica i file richiesti dal componente corrente. Ad esempio, GeneralProfile presenta la seguente definizione in HelpAbout.wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
   
          Il `DirectoryRef` elemento specifica in cui questi file Vai nel computer dell'utente. Il `Directory` elemento specifica che verrà installato in una sottodirectory, mentre ogni `File` elemento rappresenta un file che viene compilato o che esiste come parte della soluzione e identifica in cui tale file è disponibile quando viene creato il file MSI.  
   
-    2.  Il `ComponentGroupRef` elemento fa riferimento a un gruppo di altri componenti (o i componenti e i gruppi di componenti). Ad esempio, `ComponentGroupRef` in ApplicationGroup viene definito come segue in Application.wxs.  
+    2. Il `ComponentGroupRef` elemento fa riferimento a un gruppo di altri componenti (o i componenti e i gruppi di componenti). Ad esempio, `ComponentGroupRef` in ApplicationGroup viene definito come segue in Application.wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Integrare le voci del Registro di sistema in MSI  
   
-1.  Nel **personalizzazione della Shell** cartella, aprire *ProjectName*. reg.  
+1. Nel **personalizzazione della Shell** cartella, aprire *ProjectName*. reg.  
   
-2.  Sostituire tutte le istanze del token $ $RootFolder con il percorso della directory di installazione di destinazione.  
+2. Sostituire tutte le istanze del token $ $RootFolder con il percorso della directory di installazione di destinazione.  
   
-3.  Aggiungere eventuali altre voci del Registro di sistema richieste dall'applicazione.  
+3. Aggiungere eventuali altre voci del Registro di sistema richieste dall'applicazione.  
   
-4.  Aprire ApplicationRegistry.wxs.  
+4. Aprire ApplicationRegistry.wxs.  
   
-5.  Per ogni voce del Registro di sistema *ProjectName*. reg, aggiungere un blocco del Registro di sistema corrispondenti, come negli esempi seguenti.  
+5. Per ogni voce del Registro di sistema *ProjectName*. reg, aggiungere un blocco del Registro di sistema corrispondenti, come negli esempi seguenti.  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ Per installare un'app di Shell è necessario eseguire i passaggi seguenti.
 ## <a name="creating-a-setup-bootstrapper"></a>Creazione di un programma di installazione bootstrap  
  Identità del servizio gestito completato verrà installato solo se tutti i prerequisiti sono installati prima di tutto. Per semplificare l'esperienza dell'utente finale, creare un programma di installazione che raccoglie e installa tutti i prerequisiti prima di installare l'applicazione. Per garantire una corretta installazione, eseguire queste operazioni:  
   
--   Imporre l'installazione dall'amministratore.  
+- Imporre l'installazione dall'amministratore.  
   
--   Verificare se è installata Visual Studio Shell (Isolated).  
+- Verificare se è installata Visual Studio Shell (Isolated).  
   
--   Eseguire uno o entrambi Shell i programmi di installazione nell'ordine.  
+- Eseguire uno o entrambi Shell i programmi di installazione nell'ordine.  
   
--   Gestire le richieste di riavvio.  
+- Gestire le richieste di riavvio.  
   
--   Eseguire il file MSI.  
+- Eseguire il file MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>L'applicazione di installazione dall'amministratore  
  Questa procedura è necessaria per abilitare il programma di installazione di accesso richiesto alle directory, ad esempio file \Programmi\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Per imporre l'installazione dall'amministratore  
   
-1.  Aprire il menu di scelta rapida per il progetto di installazione e quindi scegliere **proprietà**.  
+1. Aprire il menu di scelta rapida per il progetto di installazione e quindi scegliere **proprietà**.  
   
-2.  Sotto **File di configurazione del Linker/proprietà/manifesto**, impostare **livello di esecuzione controllo dell'account utente** al **requireAdministrator**.  
+2. Sotto **File di configurazione del Linker/proprietà/manifesto**, impostare **livello di esecuzione controllo dell'account utente** al **requireAdministrator**.  
   
      Questa proprietà inserisce l'attributo che richiede il programma da eseguire come amministratore nel file manifesto incorporato.  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Per gestire i riavvii, eseguire queste operazioni:  
   
--   Impostare il Registro di sistema per riprendere l'installazione all'avvio di Windows.  
+- Impostare il Registro di sistema per riprendere l'installazione all'avvio di Windows.  
   
--   Eseguire un riavvio del doppio del programma di avvio automatico.  
+- Eseguire un riavvio del doppio del programma di avvio automatico.  
   
--   Eliminare la chiave di ResumeData Shell programma di installazione.  
+- Eliminare la chiave di ResumeData Shell programma di installazione.  
   
--   Riavviare Windows.  
+- Riavviare Windows.  
   
--   Reimpostare il percorso di avvio del servizio gestito.  
+- Reimpostare il percorso di avvio del servizio gestito.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Impostazione del registro per riprendere il programma di installazione all'avvio di Windows  
  La chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ viene eseguita all'avvio del sistema con autorizzazioni amministrative e quindi verrà cancellata. HKEY_CURRENT_USER contiene una chiave simile, ma viene eseguito come utente normale e non è appropriato per le installazioni. È possibile riprendere l'installazione, inserendo un valore stringa nella chiave RunOnce che chiama il programma di installazione. Tuttavia, si consiglia di chiamare il programma di installazione tramite un **riavviata** o parametro simile per notificare all'applicazione che sta riprendendo anziché iniziare. È anche possibile includere parametri per indicare dove si è nel processo di installazione, è particolarmente utile nelle installazioni dei componenti che potrebbero richiedere più riavvii.  

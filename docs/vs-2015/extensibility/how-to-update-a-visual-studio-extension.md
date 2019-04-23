@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 321dca309476ecba80c0293f100ed64e7bb1cc4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064680"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: Aggiornare un'estensione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,30 +30,30 @@ ms.locfileid: "59001487"
 
 ### <a name="to-update-an-extension-on-your-system"></a>Per aggiornare un'estensione del sistema
 
-1.  Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.
+1. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.
 
-2.  Nel riquadro sinistro, fare clic su **aggiornamenti**.
+2. Nel riquadro sinistro, fare clic su **aggiornamenti**.
 
-3.  Nel riquadro centrale, fare clic sull'aggiornamento da installare.
+3. Nel riquadro centrale, fare clic sull'aggiornamento da installare.
 
      Il numero di versione dell'estensione aggiornato viene visualizzato nel riquadro di destra, insieme ad altre informazioni.
 
-4.  Nella parte inferiore del riquadro destro, fare clic su **Update**.
+4. Nella parte inferiore del riquadro destro, fare clic su **Update**.
 
 ### <a name="to-publish-an-update-of-an-extension"></a>Per pubblicare un aggiornamento di un'estensione
 
-1.  In Visual Studio, aprire la soluzione per l'estensione da aggiornare. Apportare le modifiche.
+1. In Visual Studio, aprire la soluzione per l'estensione da aggiornare. Apportare le modifiche.
 
     > [!IMPORTANT]
     >  Valore unsigned che tutte le estensioni utente non vengono aggiornate automaticamente. È sempre necessario firmare le estensioni.
 
-2.  Nelle **Esplora soluzioni**, aprire source.extension.manifest.
+2. Nelle **Esplora soluzioni**, aprire source.extension.manifest.
 
-3.  Nella finestra di progettazione manifesto, aumentare il valore del numero nel **versione** campo.
+3. Nella finestra di progettazione manifesto, aumentare il valore del numero nel **versione** campo.
 
-4.  Salvare la soluzione e compilarla.
+4. Salvare la soluzione e compilarla.
 
-5.  Caricare il nuovo file con estensione VSIX (nella cartella \bin\Debug\ del progetto) per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web.
+5. Caricare il nuovo file con estensione VSIX (nella cartella \bin\Debug\ del progetto) per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web.
 
      Quando si apre un utente che dispone di una versione precedente dell'estensione **estensioni e aggiornamenti**, la nuova versione verrà visualizzato nei **aggiornamenti** elencare, condizione che lo strumento è impostato per la ricerca di aggiornamenti.
 

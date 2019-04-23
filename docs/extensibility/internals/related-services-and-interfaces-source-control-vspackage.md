@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062048"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
 In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in controllo di origine al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Il controllo del codice sorgente pacchetto VSPackage implementa alcune di queste interfacce e usato da altri utenti per eseguire attività di controllo di origine.
@@ -30,11 +30,11 @@ In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in
 
  Le interfacce sono:
 
--   Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.
+- Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.
 
--   Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.
+- Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.
 
--   Facoltativo: l'entità può implementare questa interfaccia per fornire un set di funzionalità più avanzato.
+- Facoltativo: l'entità può implementare questa interfaccia per fornire un set di funzionalità più avanzato.
 
 | Interfaccia | Scopo | Implementato da | Implementare? |
 | - | - |--------------------------|-------------|

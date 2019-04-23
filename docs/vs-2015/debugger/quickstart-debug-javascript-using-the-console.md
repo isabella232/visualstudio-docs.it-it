@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065688"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guida introduttiva: Eseguire il debug di JavaScript con la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InteractiveConsole"></a> Debug mediante la finestra Console JavaScript  
+## <a name="InteractiveConsole"></a> Debug mediante la finestra Console JavaScript  
  La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.  
   
 > [!CAUTION]
@@ -71,13 +71,13 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Per eseguire il debug di codice JavaScript nell'app FlipView  
   
-1.  Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
+1. Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
   
-2.  Scegliere **JavaScript** > **Applicazioni Windows Store**, scegliere **Applicazioni Windows** o **Applicazioni Windows Phone**e quindi scegliere **Applicazione vuota**.  
+2. Scegliere **JavaScript** > **Applicazioni Windows Store**, scegliere **Applicazioni Windows** o **Applicazioni Windows Phone**e quindi scegliere **Applicazione vuota**.  
   
-3.  Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
+3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
   
-4.  Nell'elemento BODY di default.html sostituire il codice HTML esistente con il seguente codice:  
+4. Nell'elemento BODY di default.html sostituire il codice HTML esistente con il seguente codice:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -91,7 +91,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     </div>  
     ```  
   
-5.  Aprire default.css e aggiungere il codice CSS per il selettore `#fView` :  
+5. Aprire default.css e aggiungere il codice CSS per il selettore `#fView` :  
   
     ```css  
     #fView {  
@@ -101,7 +101,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     }  
     ```  
   
-6.  Aprire default.js e sostituire il codice con il codice JavaScript seguente:  
+6. Aprire default.js e sostituire il codice con il codice JavaScript seguente:  
   
     ```javascript  
     (function () {  
@@ -153,11 +153,11 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     })();  
     ```  
   
-7.  Se non hai ancora selezionato la destinazione di debug, scegli **Simulatore** o, per Windows Phone, **Emulator 8.1 WVGA 4 inch 512MB** nell'elenco a discesa accanto al pulsante **Dispositivo** sulla barra degli strumenti **Debug** :  
+7. Se non hai ancora selezionato la destinazione di debug, scegli **Simulatore** o, per Windows Phone, **Emulator 8.1 WVGA 4 inch 512MB** nell'elenco a discesa accanto al pulsante **Dispositivo** sulla barra degli strumenti **Debug** :  
   
      ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Premi F5 per avviare il debugger.  
+8. Premi F5 per avviare il debugger.  
   
      L'app viene eseguita, ma mancano le immagini. Gli errori APPHOST della finestra Console JavaScript indicano che mancano le immagini.  
   
@@ -209,18 +209,18 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      Per la pagina default.html completa contenente il codice di esempio corretto, vedere [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-##  <a name="InteractiveDebuggingBreakMode"></a> Debug interattivo e modalità di interruzione  
+## <a name="InteractiveDebuggingBreakMode"></a> Debug interattivo e modalità di interruzione  
  Quando si usano gli strumenti di debug JavaScript, come la finestra Console JavaScript, è possibile usare i punti di interruzione ed eseguire un'istruzione nel codice. Quando un programma in esecuzione nel debugger rileva un punto di interruzione, il debugger sospende temporaneamente l'esecuzione del programma. Quando l'esecuzione viene sospesa, il programma passa dalla modalità di esecuzione alla modalità di interruzione. È possibile riprendere l'esecuzione in qualsiasi momento.  
   
  Quando un programma è in modalità di interruzione, è possibile usare la finestra Console JavaScript per eseguire script e comandi validi nel contesto di esecuzione di script corrente. In questa procedura, si utilizzerà la versione corretta dell'app `FlipView` creata in precedenza per illustrare l'utilizzo della modalità di interruzione.  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Per impostare un punto di interruzione ed eseguire il debug dell'app  
   
-1.  Nel file default.html dell'app `FlipView` precedentemente creato, aprire il menu di scelta rapida per la funzione `updateImages()` e quindi scegliere **Punto di interruzione** > **Inserisci punto di interruzione**.  
+1. Nel file default.html dell'app `FlipView` precedentemente creato, aprire il menu di scelta rapida per la funzione `updateImages()` e quindi scegliere **Punto di interruzione** > **Inserisci punto di interruzione**.  
   
-2.  Seleziona **Computer locale** o **Emulator 8.1 WVGA 4 inch 512MB** nell'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Debug** .  
+2. Seleziona **Computer locale** o **Emulator 8.1 WVGA 4 inch 512MB** nell'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Debug** .  
   
-3.  Scegliere **Debug** > **Avvia debug**o premere F5.  
+3. Scegliere **Debug** > **Avvia debug**o premere F5.  
   
      Quando l'esecuzione raggiunge la funzione `updateImages()` , l'app passa alla modalità di interruzione e la riga corrente dell'esecuzione del programma viene evidenziata in giallo.  
   
@@ -228,36 +228,36 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      Puoi modificare i valori delle variabili in modo che abbiano immediatamente effetto sullo stato del programma senza terminare la sessione di debug corrente.  
   
-4.  Digitare `updateImages` al prompt, quindi premere INVIO. Nella finestra della console apparirà un visualizzatore per la funzione.  
+4. Digitare `updateImages` al prompt, quindi premere INVIO. Nella finestra della console apparirà un visualizzatore per la funzione.  
   
-5.  Selezionare la funzione nella finestra della console per visualizzare l'implementazione della funzione.  
+5. Selezionare la funzione nella finestra della console per visualizzare l'implementazione della funzione.  
   
      La figura seguente mostra la finestra della console in questa fase.  
   
      ![Finestra della Console JavaScript con un visualizzatore](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
-6.  Copia una riga della funzione dalla finestra di output alla richiesta di input e modifica il valore di indice in 3:  
+6. Copia una riga della funzione dalla finestra di output alla richiesta di input e modifica il valore di indice in 3:  
   
     ```javascript  
     pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
     ```  
   
-7.  Premere INVIO per eseguire la riga di codice.  
+7. Premere INVIO per eseguire la riga di codice.  
   
      Se si desidera eseguire il codice riga per riga, premere F11 oppure premere F5 per continuare l'esecuzione del programma.  
   
-8.  Premere F5 per continuare l'esecuzione del programma. Verrà visualizzata l'app `FlipView` e tutte le quattro pagine mostrano ora una delle immagini non predefinite.  
+8. Premere F5 per continuare l'esecuzione del programma. Verrà visualizzata l'app `FlipView` e tutte le quattro pagine mostrano ora una delle immagini non predefinite.  
   
      Per tornare a Visual Studio, premere F12 o ALT+TAB.  
   
-##  <a name="SinglelineMultilineMode"></a> Modalità a riga singola e modalità multiriga nella finestra Console JavaScript  
+## <a name="SinglelineMultilineMode"></a> Modalità a riga singola e modalità multiriga nella finestra Console JavaScript  
  La richiesta di input per la finestra Console JavaScript supporta sia la modalità a riga singola che la modalità multiriga. La procedura di debug interattivo riportata in questo argomento rappresenta un esempio di utilizzo di entrambe le modalità. È possibile premere CTRL+ALT+M per alternare le modalità.  
   
  La modalità a riga singola fornisce la cronologia dell'input. È possibile spostarsi nella cronologia dell'input usando i tasti freccia SU e freccia GIÙ. La modalità a riga singola cancella la richiesta di input quando si eseguono gli script. Per eseguire uno script in modalità a riga singola, premere INVIO.  
   
  La modalità multiriga non cancella la richiesta di input quando si eseguono gli script. Quando si passa alla modalità a riga singola dalla modalità multiriga, è possibile cancellare la riga di input premendo **Cancella input** ("X" rossa). Per eseguire uno script in modalità multiriga, premere CTRL+INVIO oppure scegliere il simbolo della freccia nell'angolo inferiore destro della finestra.  
   
-##  <a name="Switching"></a> Passaggio a un contesto di esecuzione di script diverso  
+## <a name="Switching"></a> Passaggio a un contesto di esecuzione di script diverso  
  La finestra Console JavaScript consente di interagire con un singolo contesto di esecuzione, che rappresenta una singola istanza dell'host della piattaforma web (WWAHost.exe), per volta. In alcuni scenari, l'app può avviare un'altra istanza dell'host, ad esempio quando si usa un `iframe`, un contratto di condivisione, un Web worker o un controllo `WebView` . Se è in esecuzione un'altra istanza dell'host, è possibile selezionare un contesto di esecuzione diverso durante l'esecuzione dell'app selezionando il contesto di esecuzione nell'elenco **Destinazione** .  
   
  La figura seguente mostra l'elenco Destinazione nella finestra Console JavaScript.  
@@ -266,14 +266,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.  
   
-##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
+## <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
  La finestra Console JavaScript è supportata nelle piattaforme seguenti:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e app di Windows Phone Store scritte in JavaScript e HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e app di Windows Phone Store scritte in JavaScript e HTML  
   
--   Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../includes/win8-md.md)]  
+- Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

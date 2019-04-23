@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065740"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
 
@@ -36,18 +36,18 @@ Distribuzione avviene automaticamente quando si esegue il debug dell'app da Visu
 
 - Distribuzione di un'app di cui viene eseguito il debug quando viene avviata da un'altra app o da un altro metodo.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Come distribuire un'app UWP
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Come distribuire un'app UWP
  La distribuzione manuale di un'app è un processo facile:
 
-1.  Se esegui la distribuzione in un dispositivo remoto, specifica il nome o l'indirizzo IP del dispositivo nella pagina delle proprietà del progetto di avvio dell'app. I passaggi necessari sono elencati più avanti in questo argomento.
+1. Se esegui la distribuzione in un dispositivo remoto, specifica il nome o l'indirizzo IP del dispositivo nella pagina delle proprietà del progetto di avvio dell'app. I passaggi necessari sono elencati più avanti in questo argomento.
 
-2.  Sulla barra degli strumenti Visual Studio del debugger seleziona la destinazione di distribuzione nell'elenco a discesa accanto al pulsante **Avvia debug** .
+2. Sulla barra degli strumenti Visual Studio del debugger seleziona la destinazione di distribuzione nell'elenco a discesa accanto al pulsante **Avvia debug** .
 
      ![Eseguire sul computer locale](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Scegli **Distribuzione** dal menu **Compilazione**.
+3. Scegli **Distribuzione** dal menu **Compilazione**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Come specificare un dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Come specificare un dispositivo remoto
 
 **Prerequisiti**
 
@@ -92,7 +92,7 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
 10. Immetti il nome di rete del dispositivo remoto nella casella **Computer remoto** o fai clic su **Trova** per scegliere il dispositivo nella finestra di dialogo **Seleziona connessione debugger remoto** .
 
-##  <a name="BKMK_Deployment_options"></a> Opzioni di distribuzione
+## <a name="BKMK_Deployment_options"></a> Opzioni di distribuzione
 
 Di seguito sono indicate le opzioni di distribuzione che puoi impostare nella pagina delle proprietà Debug del progetto di avvio.
 

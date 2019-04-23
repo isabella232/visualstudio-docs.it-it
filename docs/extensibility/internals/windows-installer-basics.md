@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066260"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.
@@ -57,15 +57,15 @@ Il programma di installazione di Windows installa e Disinstalla applicazioni o i
 
 #### <a name="installer-enforced-rules"></a>Regole applicate a livello di programma di installazione
 
--   Tutti i file in un dato componente devono essere installati nella stessa directory. Al contrario, i file di installazione per separare le cartelle devono appartenere per separare i componenti.
+- Tutti i file in un dato componente devono essere installati nella stessa directory. Al contrario, i file di installazione per separare le cartelle devono appartenere per separare i componenti.
 
--   Può essere presente solo un percorso della chiave per ogni componente. Il percorso della chiave è semplicemente una chiave del Registro di sistema o file che rappresenta l'intero componente.
+- Può essere presente solo un percorso della chiave per ogni componente. Il percorso della chiave è semplicemente una chiave del Registro di sistema o file che rappresenta l'intero componente.
 
 #### <a name="component-provider-responsibilities"></a>Responsabilità del Provider di componenti
 
--   Le due risorse che potrebbe essere fornito separatamente nelle versioni successive devono essere presenti in componenti separati. Le risorse devono essere raggruppate nel componente stesso, solo quando si è certi che queste risorse non verranno fornita separatamente. In effetti, è consigliabile che tutte le risorse primarie (ad esempio, DLL) esistono sempre in WICs separato. Per altre informazioni, vedere [definizione di programma di installazione di componenti](/windows/desktop/Msi/defining-installer-components).
+- Le due risorse che potrebbe essere fornito separatamente nelle versioni successive devono essere presenti in componenti separati. Le risorse devono essere raggruppate nel componente stesso, solo quando si è certi che queste risorse non verranno fornita separatamente. In effetti, è consigliabile che tutte le risorse primarie (ad esempio, DLL) esistono sempre in WICs separato. Per altre informazioni, vedere [definizione di programma di installazione di componenti](/windows/desktop/Msi/defining-installer-components).
 
--   Alcuna risorsa con controllo delle versioni non deve sempre fornito con più WIC.
+- Alcuna risorsa con controllo delle versioni non deve sempre fornito con più WIC.
 
 ## <a name="see-also"></a>Vedere anche
 - [Cosa accade se le regole dei componenti vengono interrotte.](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

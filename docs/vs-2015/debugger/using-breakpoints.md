@@ -41,18 +41,18 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58955996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064570"
 ---
 # <a name="using-breakpoints"></a>Uso di punti di interruzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 È possibile impostare i punti di interruzione quando si desidera arrestare l'esecuzione del debugger, ad esempio per visualizzare lo stato delle variabili di codice o per esaminare lo stack di chiamate. I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore.
   
-##  <a name="BKMK_Overview"></a> Impostazione di un punto di interruzione di funzione nel codice sorgente  
+## <a name="BKMK_Overview"></a> Impostazione di un punto di interruzione di funzione nel codice sorgente  
  È possibile impostare un punto di interruzione di funzione nel codice sorgente facendo clic sul margine sinistro di un file di codice sorgente o posizionando il cursore su una riga di codice e premendo F9. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro ed anche la riga di codice risulta colorata:  
   
  ![Impostare un punto di interruzione](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -67,7 +67,7 @@ ms.locfileid: "58955996"
   
  È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Ad esempio, nel codice C# sopra riportato è possibile impostare un punto di interruzione nella dichiarazione di variabile, nel ciclo `for` o in qualsiasi codice all'interno del ciclo `for` , ma non è possibile impostare un punto di interruzione nello spazio dei nomi, nelle dichiarazioni di classe o nella firma del metodo.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Impostazione di altri tipi di punti di interruzione  
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Impostazione di altri tipi di punti di interruzione  
  È possibile anche impostare i punti di interruzione nello stack di chiamate, nella finestra Disassembly e nel codice C++ nativo, in una condizione dati o in un indirizzo di memoria.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Impostazione di un punto di interruzione nella finestra Stack di chiamate  
@@ -86,9 +86,9 @@ ms.locfileid: "58955996"
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Impostazione di un punto di interruzione nella finestra Disassembly  
  Per impostare un punto di interruzione in corrispondenza di un'istruzione di assembly, è necessario che il debugger sia in modalità di interruzione.  
   
-1.  Avviare il debug dell'applicazione e attendere che l'esecuzione venga interrotta (ad esempio, in un punto di interruzione). Aprire la finestra **Disassembly** (**Debug/Windows/Disassembly**o **CTRL+ALT+D**).  
+1. Avviare il debug dell'applicazione e attendere che l'esecuzione venga interrotta (ad esempio, in un punto di interruzione). Aprire la finestra **Disassembly** (**Debug/Windows/Disassembly**o **CTRL+ALT+D**).  
   
-2.  Fare clic sul margine sinistro dell'istruzione che si desidera interrompere o impostare il cursore nell'istruzione e premere **F9**.  
+2. Fare clic sul margine sinistro dell'istruzione che si desidera interrompere o impostare il cursore nell'istruzione e premere **F9**.  
   
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Impostare un punto di interruzione dei dati (solo C++ nativo)  
  I punti di interruzione dei dati interrompono l'esecuzione quando un valore archiviato in un indirizzo di memoria specificato viene modificato. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta. Per impostare i punti di interruzione dei dati, è necessario che il debugger sia in modalità di interruzione.  
@@ -118,26 +118,26 @@ ms.locfileid: "58955996"
   
  Si consideri ad esempio un oggetto di tipo `my_class` con l'indirizzo, è possibile impostare un punto di interruzione della funzione in un metodo denominato `my_method` chiamato da tale istanza.  
   
-1.  Impostare un punto di interruzione dopo la creazione dell'istanza della classe.  
+1. Impostare un punto di interruzione dopo la creazione dell'istanza della classe.  
   
-2.  Trovare l'indirizzo dell'istanza (ad esempio `0xcccccccc`).  
+2. Trovare l'indirizzo dell'istanza (ad esempio `0xcccccccc`).  
   
-3.  Fare clic su **Debug/Nuovo punto di interruzione/Punto di interruzione della funzione** (o **ALT+F9, B**).  
+3. Fare clic su **Debug/Nuovo punto di interruzione/Punto di interruzione della funzione** (o **ALT+F9, B**).  
   
-4.  Aggiungere il testo seguente nella casella **Nome funzione** :  
+4. Aggiungere il testo seguente nella casella **Nome funzione** :  
   
     ```cpp  
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gestione di punti di interruzione  
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gestione di punti di interruzione  
  È possibile usare la finestra **Punti di interruzione** (**Debug/Windows/Punti di interruzione**o **CTRL+ALT+B**) per visualizzare tutti i punti di interruzione impostati nella soluzione:  
   
  ![Finestra punti di interruzione](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
  La finestra **Punti di interruzione** costituisce tuttavia una posizione centrale da cui gestire tutti i punti di interruzione, che può essere particolarmente utile per una soluzione di grandi dimensioni o per uno scenario di debug complesso in cui i punti di interruzione sono cruciali. Se è necessario salvare o condividere lo stato e la posizione di un set di punti di interruzione, è possibile esportare e importare i punti di interruzione unicamente dalla finestra **Punti di interruzione** .  
   
-##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Punti di interruzione avanzati  
+## <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Punti di interruzione avanzati  
   
 ## <a name="breakpoint-conditions"></a>Condizioni punto di interruzione  
  È possibile controllare dove e quando un punto di interruzione viene eseguito impostando le condizioni.  
@@ -209,7 +209,7 @@ ms.locfileid: "58955996"
   
   Racchiudere i valori String tra virgolette doppie. È possibile combinare clausole usando `&` (AND), `||` (OR), `!` (NOT) e le parentesi.  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Azioni dei punti di interruzione e punti di analisi  
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Azioni dei punti di interruzione e punti di analisi  
  Un punto di analisi è un punto di interruzione che visualizza un messaggio nella finestra Output. Un punto di analisi può fungere da istruzione di analisi temporanea nel linguaggio di programmazione.  
   
  Nella finestra **Impostazioni del punto di interruzione** selezionare la casella **Azioni** . Scegliere **Registra un messaggio nella finestra di output** nel gruppo **Azione** . È possibile visualizzare una stringa generica, ad esempio **Questo è un test**. Per includere il valore di una variabile o espressione, racchiuderlo tra parentesi graffe.  
@@ -231,7 +231,7 @@ ms.locfileid: "58955996"
 |**$TICK**||  
 |**$TNAME**||  
   
-##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etichette dei punti di interruzione  
+## <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etichette dei punti di interruzione  
  Le etichette dei punti di interruzione sono usate solo nella finestra **Punti di interruzione** per ordinare e filtrare l'elenco dei punti di interruzione. Per aggiungere un'etichetta a un punto di interruzione, scegliere la riga del punto di interruzione, quindi scegliere **Etichetta** dal menu di scelta rapida.  
   
 ## <a name="export-and-import-breakpoints"></a>Esportare e importare punti di interruzione  
@@ -245,9 +245,9 @@ ms.locfileid: "58955996"
 ### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Il debugger non è in grado di individuare la versione corretta del file di origine di un punto di interruzione  
  Se un file di origine è stato modificato e l'origine non corrisponde più al codice di cui si esegue il debug, il debugger potrebbe non essere in grado di individuare il file di origine corrispondente a un punto di interruzione, sebbene tale file esista.  
   
-1.  Per fare in modo che Visual Studio visualizzi un codice sorgente che non corrisponde alla versione sottoposta a debug, scegliere **Debug/Opzioni e impostazioni**. Nella pagina **Debug/Generale** deselezionare l'opzione **Richiedi corrispondenza esatta dei file di origine con la versione originale** .  
+1. Per fare in modo che Visual Studio visualizzi un codice sorgente che non corrisponde alla versione sottoposta a debug, scegliere **Debug/Opzioni e impostazioni**. Nella pagina **Debug/Generale** deselezionare l'opzione **Richiedi corrispondenza esatta dei file di origine con la versione originale** .  
   
-2.  È inoltre possibile associare il punto di interruzione al file di origine. Selezionare il punto di interruzione e scegliere **Condizioni** dal menu di scelta rapida. Selezionare **Il codice sorgente può essere diverso dalla versione originale** nella finestra di dialogo **Impostazioni del punto di interruzione** .  
+2. È inoltre possibile associare il punto di interruzione al file di origine. Selezionare il punto di interruzione e scegliere **Condizioni** dal menu di scelta rapida. Selezionare **Il codice sorgente può essere diverso dalla versione originale** nella finestra di dialogo **Impostazioni del punto di interruzione** .  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>I punti di interruzione non funzionano in una DLL  
  Non è possibile impostare un punto di interruzione in un file di origine se le informazioni di debug per il modulo in cui si trova il codice non sono state caricate dal debugger. Uno dei sintomi è la visualizzazione di messaggi quali **Impossibile impostare il punto di interruzione**. Nella posizione relativa al punto di interruzione appare un'icona di interruzione di avviso. Tali punti di interruzioni di avviso, tuttavia, si trasformano in punti di interruzione effettivi al caricamento del codice. Per altre informazioni sul caricamento dei simboli, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  

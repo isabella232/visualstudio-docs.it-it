@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062243"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>L'utilizzo dei blocchi  
  È possibile usare i blocchi per implementare schemi come negli esempi seguenti:  
   
--   Non consentire le modifiche apportate a tutti gli elementi e relazioni ad eccezione di quelli che rappresentano i commenti. Ciò consente agli utenti di aggiungere annotazioni di un modello senza modificarlo.  
+- Non consentire le modifiche apportate a tutti gli elementi e relazioni ad eccezione di quelli che rappresentano i commenti. Ciò consente agli utenti di aggiungere annotazioni di un modello senza modificarlo.  
   
--   Impedire modifiche nella partizione predefinita, ma consentire modifiche della partizione del diagramma. L'utente è possibile ridisporre il diagramma, ma non è possibile modificare il modello sottostante.  
+- Impedire modifiche nella partizione predefinita, ma consentire modifiche della partizione del diagramma. L'utente è possibile ridisporre il diagramma, ma non è possibile modificare il modello sottostante.  
   
--   Impedisce le modifiche alla Store, ad eccezione di un gruppo di utenti che sono registrati in un database separato. Per altri utenti, il diagramma e il modello sono di sola lettura.  
+- Impedisce le modifiche alla Store, ad eccezione di un gruppo di utenti che sono registrati in un database separato. Per altri utenti, il diagramma e il modello sono di sola lettura.  
   
--   Impedire modifiche al modello se una proprietà Boolean del diagramma è impostata su true. Specificare un comando di menu per modificare tale proprietà. In tal modo gli utenti che non hanno modificato accidentalmente.  
+- Impedire modifiche al modello se una proprietà Boolean del diagramma è impostata su true. Specificare un comando di menu per modificare tale proprietà. In tal modo gli utenti che non hanno modificato accidentalmente.  
   
--   Non consentire l'aggiunta e l'eliminazione di elementi e relazioni di particolari classi, ma consentire modifiche alle proprietà. Ciò fornisce agli utenti con un modulo predefinito in cui possono specificare le proprietà.  
+- Non consentire l'aggiunta e l'eliminazione di elementi e relazioni di particolari classi, ma consentire modifiche alle proprietà. Ciò fornisce agli utenti con un modulo predefinito in cui possono specificare le proprietà.  
   
 ## <a name="lock-values"></a>Valori di blocco  
  I blocchi possono essere impostati su una Store, la partizione o singoli ModelElement. Blocchi è un `Flags` enumerazione: è possibile combinare i relativi valori tramite '&#124;'.  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  Per definire un criterio di blocco, è necessario:  
   
--   Creare una classe che implementi <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
+- Creare una classe che implementi <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
   
--   Aggiungere questa classe per i servizi disponibili tramite l'oggetto DocData del linguaggio DSL.  
+- Aggiungere questa classe per i servizi disponibili tramite l'oggetto DocData del linguaggio DSL.  
   
 ### <a name="to-define-a-locking-policy"></a>Per definire un criterio di blocco  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> presenta la seguente definizione:  

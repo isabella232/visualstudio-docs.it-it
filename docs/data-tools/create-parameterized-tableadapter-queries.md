@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d521e621436d02329b21e37a2ebfc47eef65f0b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062087"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 
@@ -38,40 +38,40 @@ Creare query TableAdapter con parametri in di **Progettazione Dataset**. È anch
 
 ### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>Per creare una query con parametri in Progettazione DataSet
 
--   Creare un nuovo oggetto TableAdapter aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati. Per altre informazioni, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+- Creare un nuovo oggetto TableAdapter aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati. Per altre informazioni, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-     oppure
+     -oppure-
 
--   Aggiungere una query a un oggetto TableAdapter esistente aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
+- Aggiungere una query a un oggetto TableAdapter esistente aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>Per creare una query con parametri durante la progettazione di un form associato a dati
 
-1.  Selezionare un controllo nel form che sia già associato a un dataset. Per altre informazioni, vedere [controlli di associare Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+1. Selezionare un controllo nel form che sia già associato a un dataset. Per altre informazioni, vedere [controlli di associare Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2.  Nel **Data** dal menu **Aggiungi Query**.
+2. Nel **Data** dal menu **Aggiungi Query**.
 
-3.  Inserire i dati mancanti nella finestra di dialogo **Generatore di criteri per la ricerca** aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
+3. Inserire i dati mancanti nella finestra di dialogo **Generatore di criteri per la ricerca** aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Per aggiungere una query a un form associato a dati esistente
 
-1.  Aprire il modulo in **Progettazione Windows Form**.
+1. Aprire il modulo in **Progettazione Windows Form**.
 
-2.  Nel **dati** dal menu **Aggiungi Query** oppure **Smart tag dati**.
+2. Nel **dati** dal menu **Aggiungi Query** oppure **Smart tag dati**.
 
     > [!NOTE]
     > Se l'opzione **Aggiungi query** non è disponibile nel menu **Dati**, selezionare nel form il controllo che consente di visualizzare l'origine dati a cui si vuole aggiungere la parametrizzazione. Ad esempio, se nel form i dati sono visualizzati in un controllo <xref:System.Windows.Forms.DataGridView>, selezionarlo. Se i dati del form sono visualizzati in controlli singoli, selezionare qualsiasi controllo associato a dati.
 
-3.  Nel **tabella di origine dati selezionare** area, selezionare la tabella a cui si desidera aggiungere la parametrizzazione.
+3. Nel **tabella di origine dati selezionare** area, selezionare la tabella a cui si desidera aggiungere la parametrizzazione.
 
-4.  Digitare un nome nella casella **Nuovo nome query** se si intende creare una nuova query.
+4. Digitare un nome nella casella **Nuovo nome query** se si intende creare una nuova query.
 
-     oppure
+     -oppure-
 
      Selezionare una query nella casella **Nome query esistente**.
 
-5.  Nel **testo della Query** , digitare una query che accetta parametri.
+5. Nel **testo della Query** , digitare una query che accetta parametri.
 
-6.  Scegliere **OK**.
+6. Scegliere **OK**.
 
      Un controllo per l'immissione del parametro e un pulsante **Carica** verranno aggiunti al form in un controllo <xref:System.Windows.Forms.ToolStrip>.
 
@@ -92,11 +92,11 @@ Se si trattasse di una query su un oggetto TableAdapter, è possibile eseguire u
 
 Per abilitare una query di accettare i valori null:
 
-1.  Nel **Progettazione Dataset**, selezionare la query TableAdapter che deve accettare i valori dei parametri null.
+1. Nel **Progettazione Dataset**, selezionare la query TableAdapter che deve accettare i valori dei parametri null.
 
-2.  Nel **delle proprietà** finestra, seleziona **parametri**, quindi fare clic sui puntini di sospensione (**...** ) per aprire la **Editor delle raccolte Parameters**.
+2. Nel **delle proprietà** finestra, seleziona **parametri**, quindi fare clic sui puntini di sospensione (**...** ) per aprire la **Editor delle raccolte Parameters**.
 
-3.  Selezionare il parametro che consente valori null e impostare il **AllowDbNull** proprietà `true`.
+3. Selezionare il parametro che consente valori null e impostare il **AllowDbNull** proprietà `true`.
 
 ## <a name="see-also"></a>Vedere anche
 

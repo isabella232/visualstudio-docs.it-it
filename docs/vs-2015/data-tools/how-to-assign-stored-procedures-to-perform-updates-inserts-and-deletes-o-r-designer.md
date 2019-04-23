@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060865"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ ms.locfileid: "59656323"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Per assegnare stored procedure per l'override del comportamento predefinito di una classe di entità  
   
-1.  Aprire il file **LINQ to SQL** nella finestra di progettazione. (Fare doppio clic sul file. dbml in **Esplora soluzioni**.)  
+1. Aprire il file **LINQ to SQL** nella finestra di progettazione. (Fare doppio clic sul file. dbml in **Esplora soluzioni**.)  
   
-2.  Nelle **Esplora Server**/**Database Explorer**, espandere **Stored Procedures** e individuare le stored procedure che si desidera utilizzare per l'inserimento, aggiornamento, e/o eliminare i comandi della classe di entità.  
+2. Nelle **Esplora Server**/**Database Explorer**, espandere **Stored Procedures** e individuare le stored procedure che si desidera utilizzare per l'inserimento, aggiornamento, e/o eliminare i comandi della classe di entità.  
   
-3.  Trascinare la stored procedure in Progettazione relazionale oggetti.  
+3. Trascinare la stored procedure in Progettazione relazionale oggetti.  
   
      La stored procedure viene aggiunta al riquadro dei metodi come metodo <xref:System.Data.Linq.DataContext>. Per altre informazioni, vedere [metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-4.  Selezionare la classe di entità per cui si desidera usare la stored procedure per eseguire gli aggiornamenti.  
+4. Selezionare la classe di entità per cui si desidera usare la stored procedure per eseguire gli aggiornamenti.  
   
-5.  Nella finestra **Proprietà** selezionare il comando di cui eseguire l'override (**Insert**, **Update** o **Delete**).  
+5. Nella finestra **Proprietà** selezionare il comando di cui eseguire l'override (**Insert**, **Update** o **Delete**).  
   
-6.  Fare clic sui puntini di sospensione (...) accanto alle parole **Usa fase di esecuzione** per aprire la finestra di dialogo **Configura comportamento**.  
+6. Fare clic sui puntini di sospensione (...) accanto alle parole **Usa fase di esecuzione** per aprire la finestra di dialogo **Configura comportamento**.  
   
-7.  Selezionare **Personalizza**.  
+7. Selezionare **Personalizza**.  
   
-8.  Selezionare la stored procedure desiderata nell'elenco **Personalizza**.  
+8. Selezionare la stored procedure desiderata nell'elenco **Personalizza**.  
   
 9. Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** per verificare che venga eseguito il mapping degli **Argomenti metodo** alle **Proprietà classe** appropriate. Eseguire il mapping degli argomenti di metodo originali (Original _*NomeArgomento*) alle proprietà originali (*PropertyName* (Original)) per i comandi Update e Delete.  
   

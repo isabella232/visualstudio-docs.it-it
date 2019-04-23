@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063232"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Eseguire il debug del layout usando DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 #### <a name="to-fix-the-layout-issue"></a>Per correggere il problema di layout  
   
-1.  In Visual Studio creare una nuova app di Windows Store basata sul modello di progetto Hub/Pivot.  
+1. In Visual Studio creare una nuova app di Windows Store basata sul modello di progetto Hub/Pivot.  
   
-2.  Nella cartella shared pages\hub apri il file hub.css.  
+2. Nella cartella shared pages\hub apri il file hub.css.  
   
-3.  Sostituire il codice CSS riportato di seguito:  
+3. Sostituire il codice CSS riportato di seguito:  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     }  
     ```  
   
-4.  Selezionare il progetto appName.WindowsPhone o appName.Windows in Esplora soluzioni e poi scegliere **Imposta come progetto di avvio** dal menu di scelta rapida.  
+4. Selezionare il progetto appName.WindowsPhone o appName.Windows in Esplora soluzioni e poi scegliere **Imposta come progetto di avvio** dal menu di scelta rapida.  
   
-5.  A seconda del progetto di avvio, seleziona **Emulator 8.1 WVGA 4 inch 512MB** o **Simulatore** nell'elenco a discesa sulla barra degli strumenti Debug (il valore predefinito è**Computer locale** ).  
+5. A seconda del progetto di avvio, seleziona **Emulator 8.1 WVGA 4 inch 512MB** o **Simulatore** nell'elenco a discesa sulla barra degli strumenti Debug (il valore predefinito è**Computer locale** ).  
   
      ![Selezionando una destinazione di debug](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Premere F5 per eseguire l'app in modalità debug.  
+6. Premere F5 per eseguire l'app in modalità debug.  
   
-7.  Scorrere o eseguire un gesto rapido per aprire Sezione 4.  
+7. Scorrere o eseguire un gesto rapido per aprire Sezione 4.  
   
     > [!TIP]
     >  Posizionare l'emulatore Windows Phone o il simulatore proprio accanto alla finestra di Visual Studio, per poter osservare immediatamente i risultati delle selezioni e le modifiche apportate agli stili CSS.  
   
      Al caricamento di Sezione 4, è possibile notare che l'aspetto delle immagini inferiori non è corretto. Ogni immagine dell'elemento viene tagliata a metà (con la metà sinistra mancante).  
   
-8.  Passare a Visual Studio e scegliere **Seleziona elemento** in DOM Explorer oppure premere CTRL+B. In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic.  
+8. Passare a Visual Studio e scegliere **Seleziona elemento** in DOM Explorer oppure premere CTRL+B. In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic.  
   
     > [!TIP]
     >  È anche possibile usare i tasti di direzione o altri metodi per selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -105,11 +105,11 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      In questa visualizzazione sono disponibili alcune informazioni utili sull'elemento:  
   
-    -   I colori corrispondono all'evidenziazione della casella visualizzata nel simulatore al passaggio del mouse sugli elementi. Il colore blu rappresenta le \<img > dimensioni dell'elemento. Il colore marrone chiaro rappresenta i valori dei margini.  
+    - I colori corrispondono all'evidenziazione della casella visualizzata nel simulatore al passaggio del mouse sugli elementi. Il colore blu rappresenta le \<img > dimensioni dell'elemento. Il colore marrone chiaro rappresenta i valori dei margini.  
   
-    -   Il margine sinistro (margin-left) è impostato e questa può essere la causa del problema in quanto corrisponde al sintomo (nero sul lato sinistro delle immagini).  
+    - Il margine sinistro (margin-left) è impostato e questa può essere la causa del problema in quanto corrisponde al sintomo (nero sul lato sinistro delle immagini).  
   
-    -   Nelle caselle in cui è presente un valore pari a 0 pixel (ad esempio, Spaziatura interna e Bordo) indicano che le proprietà CSS corrispondenti probabilmente non sono impostate.  
+    - Nelle caselle in cui è presente un valore pari a 0 pixel (ad esempio, Spaziatura interna e Bordo) indicano che le proprietà CSS corrispondenti probabilmente non sono impostate.  
   
 11. Per scoprire come viene applicata la regola margin-left, fai clic sulla scheda **Calcolata** e guarda sotto la regola margin-left. Come si può notare, questa regola è impostata sul valore 5em, ma il valore calcolato è 66,66px o 146,66px, a seconda del dispositivo di destinazione.  
   

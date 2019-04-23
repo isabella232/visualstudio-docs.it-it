@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063153"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: Estendere la Finestra di progettazione Domain-Specific Language
 
@@ -26,23 +26,23 @@ Configurare un progetto che contiene il codice dell'estensione e un progetto VSI
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Per creare una soluzione di estensione di progettazione DSL
 
-1.  Creare un nuovo progetto usando il **libreria di classi** modello di progetto. Questo progetto conterrà il codice delle estensioni.
+1. Creare un nuovo progetto usando il **libreria di classi** modello di progetto. Questo progetto conterrà il codice delle estensioni.
 
-2.  Creare una nuova **progetto VSIX** progetto.
+2. Creare una nuova **progetto VSIX** progetto.
 
      Selezionare **Aggiungi a soluzione**.
 
      *Vsixmanifest* viene aperto nell'editor del manifesto VSIX.
 
-3.  Sopra il campo del contenuto, fare clic su **Aggiungi contenuto**.
+3. Sopra il campo del contenuto, fare clic su **Aggiungi contenuto**.
 
-4.  Nel **Aggiungi contenuto** della finestra di dialogo set **selezionare un tipo di contenuto** al **componente MEF**e impostare **progetto** al progetto libreria di classi.
+4. Nel **Aggiungi contenuto** della finestra di dialogo set **selezionare un tipo di contenuto** al **componente MEF**e impostare **progetto** al progetto libreria di classi.
 
-5.  Fare clic su **Seleziona versioni** e assicurarsi che **Visual Studio Enterprise** sia selezionata.
+5. Fare clic su **Seleziona versioni** e assicurarsi che **Visual Studio Enterprise** sia selezionata.
 
-6.  Assicurarsi che il progetto VSIX sia il progetto di avvio della soluzione.
+6. Assicurarsi che il progetto VSIX sia il progetto di avvio della soluzione.
 
-7.  Nel progetto libreria di classi, aggiungere riferimenti agli assembly seguenti:
+7. Nel progetto libreria di classi, aggiungere riferimenti agli assembly seguenti:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Per testare qualsiasi delle estensioni in questo argomento, compilare ed eseguir
 
 Per distribuire le estensioni per il principale di Visual Studio e per altri computer, seguire questa procedura:
 
-1.  Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX
+1. Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX
 
-2.  Copiare questo file nel computer di destinazione e quindi in Windows Explorer (o Esplora File), fare doppio clic.
+2. Copiare questo file nel computer di destinazione e quindi in Windows Explorer (o Esplora File), fare doppio clic.
 
      Verrà aperto Gestione estensioni di Visual Studio per verificare che sia stato installato l'estensione.
 
 Per disinstallare l'estensione, seguire questa procedura:
 
-1.  In Visual Studio sul **degli strumenti** menu, fare clic su **gestore estensioni del**.
+1. In Visual Studio sul **degli strumenti** menu, fare clic su **gestore estensioni del**.
 
-2.  Selezionare l'estensione ed eliminarlo.
+2. Selezionare l'estensione ed eliminarlo.
 
 ## <a name="add-a-shortcut-menu-command"></a>Aggiungere un comando di Menu di scelta rapida
 

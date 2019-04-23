@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e31e5307acb8dadd627cc0a7a0c65572c7ab219
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062165"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Procedura: A livello di codice aprire documenti esistenti
   Il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo apre il documento di Microsoft Office Word esistente, specificato da un nome di file e percorso completo. Questo metodo restituisce un <xref:Microsoft.Office.Interop.Word.Document> che rappresenta il documento aperto.
@@ -27,14 +27,14 @@ ms.locfileid: "56653983"
 
 ## <a name="to-open-a-document"></a>Per aprire un documento
 
--   Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo di <xref:Microsoft.Office.Interop.Word.Documents> raccolta e specificare un percorso del documento.
+- Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo di <xref:Microsoft.Office.Interop.Word.Documents> raccolta e specificare un percorso del documento.
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
 ## <a name="to-open-a-document-as-read-only"></a>Per aprire un documento in sola lettura
 
--   Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo, fornire un percorso del documento e impostare il *ReadOnly* argomento **True** nella chiamata al metodo.
+- Chiamare il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo, fornire un percorso del documento e impostare il *ReadOnly* argomento **True** nella chiamata al metodo.
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,7 +42,7 @@ ms.locfileid: "56653983"
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio di codice presenta i requisiti seguenti:
 
--   Un documento denominato *NewDocument. doc* deve essere presente in una directory denominata *Test* nell'unità C.
+- Un documento denominato *NewDocument. doc* deve essere presente in una directory denominata *Test* nell'unità C.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)

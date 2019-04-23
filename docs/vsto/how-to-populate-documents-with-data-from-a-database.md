@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061209"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Procedura: Popolare documenti con dati da un database
 
@@ -36,11 +36,11 @@ Nell'esempio seguente viene mostrato come aggiungere controlli con associazione 
 
 ### <a name="to-populate-a-document-with-data-from-a-database"></a>Per popolare un documento con dati da un database
 
-1.  Aprire un progetto a livello di documento Word in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], con il documento aperto nella finestra di progettazione.
+1. Aprire un progetto a livello di documento Word in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], con il documento aperto nella finestra di progettazione.
 
-2.  Aprire il **Zdroje dat** finestra e creare un'origine dati da un database. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
+2. Aprire il **Zdroje dat** finestra e creare un'origine dati da un database. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
 
-3.  Trascinare il campo desiderato dal **Zdroje dat** finestra al documento.
+3. Trascinare il campo desiderato dal **Zdroje dat** finestra al documento.
 
 Al documento viene aggiunto un controllo contenuto. Il tipo di controllo contenuto dipende dal tipo di dati del campo selezionato. Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
 
@@ -50,19 +50,19 @@ Al documento viene aggiunto un controllo contenuto. Il tipo di controllo contenu
 
 Oltre al controllo, gli oggetti relativi ai dati seguenti vengono aggiunti automaticamente al progetto:
 
--   Un set di dati tipizzato che incapsula le tabelle dati a cui ci si è connessi nel database. Per altre informazioni, vedere [strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un set di dati tipizzato che incapsula le tabelle dati a cui ci si è connessi nel database. Per altre informazioni, vedere [strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Un oggetto <xref:System.Windows.Forms.BindingSource> che connette il controllo al set di dati tipizzato. Per altre informazioni, vedere [Cenni preliminari sul componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Un oggetto <xref:System.Windows.Forms.BindingSource> che connette il controllo al set di dati tipizzato. Per altre informazioni, vedere [Cenni preliminari sul componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Un oggetto TableAdapter che si connette il set di dati tipizzato al database. Per altre informazioni, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+- Un oggetto TableAdapter che si connette il set di dati tipizzato al database. Per altre informazioni, vedere [creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
--   Un componente TableAdapterManager, che consente di coordinare gli adattatori di tabella nel set di dati per abilitare gli aggiornamenti gerarchici. Per altre informazioni, vedere [aggiornamento gerarchico](../data-tools/hierarchical-update.md) e [TableAdapterManager riferimento](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Un componente TableAdapterManager, che consente di coordinare gli adattatori di tabella nel set di dati per abilitare gli aggiornamenti gerarchici. Per altre informazioni, vedere [aggiornamento gerarchico](../data-tools/hierarchical-update.md) e [TableAdapterManager riferimento](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Quando si esegue il progetto, il controllo visualizza il primo record dell'origine dati. È possibile usare <xref:System.Windows.Forms.BindingSource> per consentire agli utenti di scorrere i record.
 
 ### <a name="to-scroll-through-the-records"></a>Per scorrere i record
 
--   Usare i metodi <xref:System.Windows.Forms.BindingSource> quali <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Usare i metodi <xref:System.Windows.Forms.BindingSource> quali <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Per informazioni su come inviare aggiornamenti al set di dati tipizzato e al database, vedere [come: Aggiornare un'origine dati con dati provenienti da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de28fec7c196364566642866a80706ccd7850de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1318ed7c69ffd2aeaa178d081e5241c02ea1021c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063218"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procedura: Stampare i diagrammi dalla visualizzazione grafico e la visualizzazione modello di contenuto
 
@@ -21,13 +21,13 @@ In questo argomento viene descritto come stampare un diagramma dalla visualizzaz
 
 ## <a name="to-print-diagrams-from-the-xml-schema-designer"></a>Per stampare diagrammi da Progettazione XML Schema
 
-1.  Aprire un file XSD in Visual Studio e aggiungere alcuni nodi per il [dell'area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md).
+1. Aprire un file XSD in Visual Studio e aggiungere alcuni nodi per il [dell'area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Esportare il diagramma in un file XPS tramite il **Esporta diagramma come immagine** voce di menu di scelta rapida nell'area di progettazione della visualizzazione grafico o dalla visualizzazione modello di contenuto.
+2. Esportare il diagramma in un file XPS tramite il **Esporta diagramma come immagine** voce di menu di scelta rapida nell'area di progettazione della visualizzazione grafico o dalla visualizzazione modello di contenuto.
 
      Quando si esporta un diagramma dalla visualizzazione grafico, l'intera area di progettazione viene esportata nel file XPS. Quando si esporta un diagramma dalla visualizzazione modello di contenuto e più di un nodo viene visualizzato nell'area di progettazione della visualizzazione modello di contenuto, solo il primo nodo viene esportato nel file XPS.
 
-3.  Stampare l'immagine salvata nel file XPS tramite un visualizzatore XPS.
+3. Stampare l'immagine salvata nel file XPS tramite un visualizzatore XPS.
 
 ## <a name="see-also"></a>Vedere anche
 

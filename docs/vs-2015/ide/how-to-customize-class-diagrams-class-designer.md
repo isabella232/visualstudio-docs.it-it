@@ -14,14 +14,14 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e26cbc2a4c49f09f41e16287cef75beecdf4fdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065831"
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Procedura: personalizzare i diagrammi classi (Progettazione classi)
+# <a name="how-to-customize-class-diagrams-class-designer"></a>Procedura: Personalizzare diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile modificare la modalità con cui i diagrammi classi visualizzano le informazioni. È possibile personalizzare l'intero diagramma o i singoli tipi nell'area di progettazione.  
@@ -35,29 +35,29 @@ ms.locfileid: "54781050"
   
  **In questo argomento**  
   
--   [Eseguire lo zoom avanti e indietro sul diagramma classi](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
+- [Eseguire lo zoom avanti e indietro sul diagramma classi](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
   
--   [Personalizzare il raggruppamento e l'ordinamento dei membri di tipo](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
+- [Personalizzare il raggruppamento e l'ordinamento dei membri di tipo](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
   
--   [Nascondere i raggruppamenti in un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
+- [Nascondere i raggruppamenti in un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
   
--   [Nascondere singoli membri in un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
+- [Nascondere singoli membri in un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
   
--   [Mostrare raggruppamenti e membri nascosti in un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
+- [Mostrare raggruppamenti e membri nascosti in un tipo](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
   
--   [Nascondere relazioni](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
+- [Nascondere relazioni](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
   
--   [Mostrare relazioni nascoste](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
+- [Mostrare relazioni nascoste](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
   
--   [Rimuovere una forma da un diagramma di classi](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
+- [Rimuovere una forma da un diagramma di classi](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
   
--   [Eliminare una forma di tipo e il codice sottostante](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
+- [Eliminare una forma di tipo e il codice sottostante](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a> Eseguire lo zoom avanti e indietro sul diagramma classi  
+## <a name="ZoomInOut"></a> Eseguire lo zoom avanti e indietro sul diagramma classi  
   
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
-2.  Nella barra degli strumenti di Progettazione classi fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.  
+2. Nella barra degli strumenti di Progettazione classi fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.  
   
      oppure  
   
@@ -66,63 +66,63 @@ ms.locfileid: "54781050"
     > [!NOTE]
     >  La modifica del livello di zoom non influisce sulla scala dello stampato del diagramma classi.  
   
-##  <a name="CustomizeGroupingSorting"></a> Personalizzare il raggruppamento e l'ordinamento dei membri di tipo  
+## <a name="CustomizeGroupingSorting"></a> Personalizzare il raggruppamento e l'ordinamento dei membri di tipo  
   
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
-2.  Fare clic con il pulsante destro del mouse in un punto vuoto dell'area di progettazione e scegliere **Raggruppa membri**.  
+2. Fare clic con il pulsante destro del mouse in un punto vuoto dell'area di progettazione e scegliere **Raggruppa membri**.  
   
-3.  Selezionare una delle opzioni disponibili:  
+3. Selezionare una delle opzioni disponibili:  
   
-    1.  **Raggruppa per tipo** separa i singoli membri di tipo in un elenco raggruppato di proprietà, metodi, eventi e campi. I singoli gruppi dipendono dalla definizione delle entità: ad esempio, una classe non visualizzerà alcun gruppo di eventi se non esistono ancora eventi definiti per tale classe.  
+    1. **Raggruppa per tipo** separa i singoli membri di tipo in un elenco raggruppato di proprietà, metodi, eventi e campi. I singoli gruppi dipendono dalla definizione delle entità: ad esempio, una classe non visualizzerà alcun gruppo di eventi se non esistono ancora eventi definiti per tale classe.  
   
-    2.  **Raggruppa per accesso** separa i singoli membri di tipo in un elenco raggruppato basato sui modificatori di accesso del membro. Ad esempio, Public e Private.  
+    2. **Raggruppa per accesso** separa i singoli membri di tipo in un elenco raggruppato basato sui modificatori di accesso del membro. Ad esempio, Public e Private.  
   
-    3.  **Ordina alfabeticamente** visualizza gli elementi che costituiscono un'entità come singolo elenco in ordine alfabetico. L'elenco è ordinato in ordine crescente.  
+    3. **Ordina alfabeticamente** visualizza gli elementi che costituiscono un'entità come singolo elenco in ordine alfabetico. L'elenco è ordinato in ordine crescente.  
   
-##  <a name="HideCompartments"></a> Nascondere i raggruppamenti in un tipo  
+## <a name="HideCompartments"></a> Nascondere i raggruppamenti in un tipo  
   
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
-2.  Fare clic con il pulsante destro del mouse sulla categoria del membro nel tipo da personalizzare (ad esempio, selezionare il nodo **Metodi** in una classe).  
+2. Fare clic con il pulsante destro del mouse sulla categoria del membro nel tipo da personalizzare (ad esempio, selezionare il nodo **Metodi** in una classe).  
   
-3.  Fare clic su **Nascondi raggruppamento**.  
+3. Fare clic su **Nascondi raggruppamento**.  
   
      Il raggruppamento selezionato verrà rimosso dal contenitore del tipo.  
   
-##  <a name="HideMembers"></a> Nascondere singoli membri in un tipo  
+## <a name="HideMembers"></a> Nascondere singoli membri in un tipo  
   
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
-2.  Fare clic con il pulsante destro del mouse sul membro nel tipo da nascondere.  
+2. Fare clic con il pulsante destro del mouse sul membro nel tipo da nascondere.  
   
-3.  Fare clic su **Nascondi**.  
+3. Fare clic su **Nascondi**.  
   
      Il membro selezionato verrà rimosso dal contenitore del tipo.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Mostrare raggruppamenti e membri nascosti in un tipo  
+## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Mostrare raggruppamenti e membri nascosti in un tipo  
   
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
-2.  Fare clic con il pulsante destro del mouse sul nome del tipo con il raggruppamento nascosto.  
+2. Fare clic con il pulsante destro del mouse sul nome del tipo con il raggruppamento nascosto.  
   
-3.  Fare clic su **Mostra tutti i membri**.  
-  
-     Tutti i raggruppamenti e i membri nascosti verranno visualizzati nel contenitore del tipo.  
-  
-##  <a name="HideAssociationAndInheritance"></a> Nascondere relazioni  
-  
-1.  Aprire e selezionare un file di diagramma classi in Progettazione classi.  
-  
-2.  Fare clic con il pulsante destro del mouse sulla linea di associazione o ereditarietà che si desidera nascondere.  
-  
-3.  Fare clic su **Nascondi** per le linee di associazione e scegliere **Nascondi linea ereditarietà** per le linee di ereditarietà.  
-  
-4.  Fare clic su **Mostra tutti i membri**.  
+3. Fare clic su **Mostra tutti i membri**.  
   
      Tutti i raggruppamenti e i membri nascosti verranno visualizzati nel contenitore del tipo.  
   
-##  <a name="DisplayAssociationAndInheritance"></a> Mostrare relazioni nascoste  
+## <a name="HideAssociationAndInheritance"></a> Nascondere relazioni  
+  
+1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
+  
+2. Fare clic con il pulsante destro del mouse sulla linea di associazione o ereditarietà che si desidera nascondere.  
+  
+3. Fare clic su **Nascondi** per le linee di associazione e scegliere **Nascondi linea ereditarietà** per le linee di ereditarietà.  
+  
+4. Fare clic su **Mostra tutti i membri**.  
+  
+     Tutti i raggruppamenti e i membri nascosti verranno visualizzati nel contenitore del tipo.  
+  
+## <a name="DisplayAssociationAndInheritance"></a> Mostrare relazioni nascoste  
   
 1. Aprire e selezionare un file di diagramma classi in Progettazione classi.  
   
@@ -130,25 +130,25 @@ ms.locfileid: "54781050"
   
    Fare clic su **Mostra tutti i membri** per le linee di associazione e su **Mostra classe base** o **Mostra classi derivate** per le linee di ereditarietà.  
   
-##  <a name="RemoveCodeAndShape"></a> Rimuovere una forma da un diagramma di classi  
+## <a name="RemoveCodeAndShape"></a> Rimuovere una forma da un diagramma di classi  
  È possibile rimuovere una forma di tipo dal diagramma di classi senza influire sul codice sottostante del tipo. La rimozione delle forme dei tipi da un diagramma classi influirà solo sul diagramma corrente: il codice sottostante che definisce il tipo e gli altri diagrammi in cui viene visualizzato il tipo non saranno interessati.  
   
-1.  Nel diagramma classi selezionare la forma del tipo da rimuovere dal diagramma.  
+1. Nel diagramma classi selezionare la forma del tipo da rimuovere dal diagramma.  
   
-2.  Scegliere **Rimuovi dal diagramma** dal menu **Modifica**.  
+2. Scegliere **Rimuovi dal diagramma** dal menu **Modifica**.  
   
      La forma del tipo ed eventuali linee di associazione o ereditarietà connesse ad essa connesse non appariranno più sul diagramma.  
   
-##  <a name="DeleteTypeShapeAndCode"></a> Eliminare una forma di tipo e il codice sottostante  
+## <a name="DeleteTypeShapeAndCode"></a> Eliminare una forma di tipo e il codice sottostante  
   
-1.  Fare clic con il pulsante destro del mouse sulla forma nell'area di progettazione.  
+1. Fare clic con il pulsante destro del mouse sulla forma nell'area di progettazione.  
   
-2.  Scegliere **Elimina codice** dal menu di scelta rapida.  
+2. Scegliere **Elimina codice** dal menu di scelta rapida.  
   
      La forma verrà rimossa dal diagramma e il codice sottostante verrà eliminato dal progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Working with Class Diagrams (Class Designer)](../ide/working-with-class-diagrams-class-designer.md)  (Uso di diagrammi classi (Progettazione classi))  
- [Procedura: Passare dalla notazione membro alla notazione associazione (Progettazione classi)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
+ [Procedura: Modificare dalla notazione membro alla notazione associazione (Progettazione classi)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
  [Procedura: Visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md)   
  [Visualizzazione dei tipi e delle relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md)

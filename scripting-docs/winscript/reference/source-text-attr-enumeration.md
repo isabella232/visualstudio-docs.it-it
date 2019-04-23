@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062450"
 ---
 # <a name="sourcetextattr-enumeration"></a>Enumerazione SOURCE_TEXT_ATTR
 Descrivono gli attributi di un singolo carattere di un testo di origine.  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Note  
  In genere, il `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, e `IActiveScriptDebug::GetScriptTextAttributes` metodi restituiscono un attributo di testo per ogni carattere, a meno che:  
   
--   È impostato il flag GETATTRTYPE_DEPSCAN, nel qual caso il metodo può restituire i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
+- È impostato il flag GETATTRTYPE_DEPSCAN, nel qual caso il metodo può restituire i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
   
--   È impostato il flag GETATTRFLAG_THIS, nel qual caso il metodo può restituire il flag SOURCETEXT_ATTR_THIS,  
+- È impostato il flag GETATTRFLAG_THIS, nel qual caso il metodo può restituire il flag SOURCETEXT_ATTR_THIS,  
   
--   È impostato il flag GETATTRFLAG_HUMANTEXT, nel qual caso il metodo può restituire il flag SOURCETEXT_ATTR_HUMANTEXT.  
+- È impostato il flag GETATTRFLAG_HUMANTEXT, nel qual caso il metodo può restituire il flag SOURCETEXT_ATTR_HUMANTEXT.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

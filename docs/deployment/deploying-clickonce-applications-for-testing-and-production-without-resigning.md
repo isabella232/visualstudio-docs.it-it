@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065506"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuire le applicazioni ClickOnce per i server di test e produzione senza riapposizione della firma
 Questo articolo illustra una funzionalità introdotta in .NET Framework versione 3.5 che consente la distribuzione di applicazioni ClickOnce dalla più percorsi di rete senza riapposizione della firma o la modifica di ClickOnce manifesti ClickOnce.
@@ -34,9 +34,9 @@ Questo articolo illustra una funzionalità introdotta in .NET Framework versione
 
  Gli sviluppatori di terze parti e fornitori di software indipendenti possono optare per questa funzionalità, rendendo più semplice per i clienti aggiornare le proprie applicazioni. Questa funzionalità può essere utilizzata nelle situazioni seguenti:
 
--   Quando si aggiorna un'applicazione, non per la prima installazione di un'applicazione.
+- Quando si aggiorna un'applicazione, non per la prima installazione di un'applicazione.
 
--   Quando è presente solo una configurazione dell'applicazione in un computer. Ad esempio, se un'applicazione è configurata in modo da puntare a due database diversi, non è possibile utilizzare questa funzionalità.
+- Quando è presente solo una configurazione dell'applicazione in un computer. Ad esempio, se un'applicazione è configurata in modo da puntare a due database diversi, non è possibile utilizzare questa funzionalità.
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>Escludere deploymentProvider da manifesti di distribuzione
  In .NET Framework 2.0 e .NET Framework 3.0, qualsiasi applicazione ClickOnce che viene installato nel sistema per la disponibilità offline è necessario elencare un `deploymentProvider` nel relativo manifesto di distribuzione. Il `deploymentProvider` è noto anche come percorso di aggiornamento; è il percorso in cui ClickOnce controlla gli aggiornamenti dell'applicazione. Questo requisito, oltre alla necessità per gli autori dell'applicazione firmare le distribuzioni, rendeva difficile per una società per aggiornare un'applicazione ClickOnce da un fornitore o da terze parti. Inoltre rende più difficile distribuire l'applicazione stessa da più posizioni nella stessa rete.
@@ -59,7 +59,7 @@ Questo articolo illustra una funzionalità introdotta in .NET Framework versione
   Nel secondo esempio, si pubblica un'applicazione ClickOnce che specifica `deploymentProvider`, e si decide quindi di rimuoverlo. Una volta nella nuova versione senza `deploymentProvider` viene scaricato ai client, non è possibile reindirizzare il percorso usato per gli aggiornamenti fino a quando non si rilascia una versione dell'applicazione che ha `deploymentProvider` ripristinato. Come con il primo esempio `deploymentProvider` inizialmente deve puntare al percorso di aggiornamento corrente, non al nuovo percorso. In questo caso, se si tenta di inserire un `deploymentProvider` che fa riferimento a http://subdomain.adatum.com/MyApplication/, al successivo aggiornamento ha esito negativo.
 
 ## <a name="create-a-deployment"></a>Crea una distribuzione
- Per istruzioni dettagliate sulla creazione di distribuzioni che possono essere distribuite da diversi percorsi di rete, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ Per istruzioni dettagliate sulla creazione di distribuzioni che possono essere distribuite da diversi percorsi di rete, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [*Mage.exe* (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

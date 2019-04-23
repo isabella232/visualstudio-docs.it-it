@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4caf96c841b794a76a7aba35f9c8ca302de6e885
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065883"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procedura: Eseguire il debug di XAML con Progettazione flussi di lavoro
 
@@ -24,17 +24,17 @@ I flussi di lavoro vengono definiti mediante codice XAML. La rappresentazione de
 
 ## <a name="to-debug-workflow-xaml"></a>Per eseguire il debug del flusso di lavoro XAML
 
-1.  Aprire un progetto flusso di lavoro o attività in Visual Studio.
+1. Aprire un progetto flusso di lavoro o attività in Visual Studio.
 
-2.  Impostare un punto di interruzione nell'attività o attività che si desidera eseguire il debug come descritto in [come: Impostare punti di interruzione nei flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
+2. Impostare un punto di interruzione nell'attività o attività che si desidera eseguire il debug come descritto in [come: Impostare punti di interruzione nei flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 
-3.  Fare clic sul file con estensione XAML contenente la definizione del flusso di lavoro e selezionare **Visualizza codice**. Verrà visualizzato un punto di interruzione nella stessa riga in cui si trova la dichiarazione dell'elemento XAML dell'attività per la quale è stato impostato il punto di interruzione nella visualizzazione Progettazione.
+3. Fare clic sul file con estensione XAML contenente la definizione del flusso di lavoro e selezionare **Visualizza codice**. Verrà visualizzato un punto di interruzione nella stessa riga in cui si trova la dichiarazione dell'elemento XAML dell'attività per la quale è stato impostato il punto di interruzione nella visualizzazione Progettazione.
 
-4.  Richiama il debugger, come descritto in [eseguire il Debug dei flussi di lavoro](debugging-workflows-with-the-workflow-designer.md).
+4. Richiama il debugger, come descritto in [eseguire il Debug dei flussi di lavoro](debugging-workflows-with-the-workflow-designer.md).
 
-5.  Quando l'esecuzione del codice raggiunge uno dei punti di interruzione, l'elemento XAML associato a tale punto verrà evidenziato. Per spostare il punto di interruzione successivo, usare il **F10** oppure **F11** chiave.
+5. Quando l'esecuzione del codice raggiunge uno dei punti di interruzione, l'elemento XAML associato a tale punto verrà evidenziato. Per spostare il punto di interruzione successivo, usare il **F10** oppure **F11** chiave.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Impostare punti di interruzione nei flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+- [Procedura: Impostare punti di interruzione in flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Eseguire il debug dei flussi di lavoro](debugging-workflows-with-the-workflow-designer.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061580"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procedura: Creare classi LINQ to SQL mappate a tabelle e viste (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Classi LINQ to SQL mappate a tabelle di database e le viste vengono chiamati *le
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Per creare classi LINQ to SQL con mapping a tabelle o visualizzazioni di database
 
-1.  Nelle **Server**/**Esplora Database**, espandere **tabelle** oppure **viste** e individuare la tabella di database o visualizzare da da utilizzare nell'applicazione.
+1. Nelle **Server**/**Esplora Database**, espandere **tabelle** oppure **viste** e individuare la tabella di database o visualizzare da da utilizzare nell'applicazione.
 
-2.  Trascinare la tabella o la visualizzazione in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Trascinare la tabella o la visualizzazione in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Viene creata una classe di entità, che verrà visualizzata nell'area di progettazione. Tale classe presenta proprietà con mapping alle colonne nella tabella o visualizzazione selezionata.
 
@@ -43,22 +43,22 @@ Classi LINQ to SQL mappate a tabelle di database e le viste vengono chiamati *le
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Per creare l'origine dati di un oggetto in base alle classi di entità LINQ to SQL
 
-1.  Scegliere **Compila soluzione** dal menu **Compila** per compilare il progetto.
+1. Scegliere **Compila soluzione** dal menu **Compila** per compilare il progetto.
 
-2.  Scegliere **Mostra origini dati** dal menu **Dati**.
+2. Scegliere **Mostra origini dati** dal menu **Dati**.
 
-3.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
+3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
-4.  Nella pagina **Seleziona un tipo di origine dati** fare clic su **Oggetto** e quindi su **Avanti**.
+4. Nella pagina **Seleziona un tipo di origine dati** fare clic su **Oggetto** e quindi su **Avanti**.
 
-5.  Espandere i nodi, quindi individuare e selezionare la classe.
+5. Espandere i nodi, quindi individuare e selezionare la classe.
 
     > [!NOTE]
     > Se la classe **Customer** non è disponibile, chiudere la procedura guidata, compilare il progetto ed eseguire nuovamente la procedura guidata.
 
-6.  Fare clic su **Fine** per creare l'origine dati e aggiungere la classe di entità **Customer** alla finestra **Origini dati**.
+6. Fare clic su **Fine** per creare l'origine dati e aggiungere la classe di entità **Customer** alla finestra **Origini dati**.
 
-7.  Trascinare gli elementi dalla finestra **Origini dati** in un form.
+7. Trascinare gli elementi dalla finestra **Origini dati** in un form.
 
 ## <a name="see-also"></a>Vedere anche
 

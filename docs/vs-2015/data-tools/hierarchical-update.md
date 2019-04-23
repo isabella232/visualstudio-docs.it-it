@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063400"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,11 +99,11 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Per aggiungere il codice per eseguire il commit dei record padre nel set di dati prima dell'aggiunta dei nuovi record figlio  
   
-1.  Creare un gestore eventi per l'evento `OrdersBindingSource.AddingNew`.  
+1. Creare un gestore eventi per l'evento `OrdersBindingSource.AddingNew`.  
   
-    -   Aprire **Form1** nella visualizzazione progettazione, selezionare **OrdersBindingSource** nella barra dei componenti, selezionare **eventi** nel **proprietà** finestra e quindi fare doppio clic il **AddingNew** evento.  
+    - Aprire **Form1** nella visualizzazione progettazione, selezionare **OrdersBindingSource** nella barra dei componenti, selezionare **eventi** nel **proprietà** finestra e quindi fare doppio clic il **AddingNew** evento.  
   
-2.  Aggiungere una riga di codice al gestore dell'evento che chiama il `CustomersBindingSource.EndEdit` (metodo). Il codice nel gestore eventi `OrdersBindingSource_AddingNew` deve essere simile al seguente:  
+2. Aggiungere una riga di codice al gestore dell'evento che chiama il `CustomersBindingSource.EndEdit` (metodo). Il codice nel gestore eventi `OrdersBindingSource_AddingNew` deve essere simile al seguente:  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

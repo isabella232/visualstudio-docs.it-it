@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063673"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |-|-|  
 |**Attributo**|**Definizione**|  
 |Tipo|[Obbligatorio] Il tipo del colore. Può essere uno dei seguenti:<br /><br /> *CT_INVALID:* Il colore non valido o non impostata.<br /><br /> *CT_RAW:* Un valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Un colore di sistema di Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Un colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|  
-|Origine|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|  
+|Source|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|  
   
  Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati per lo schema nell'attributo Type. Tuttavia, è consigliabile utilizzare solo CT_RAW e CT_SYSCOLOR.  
   
@@ -149,15 +149,15 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
   
  **Esempi**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   /NoLogo VsixColorCompiler D:\xml\colors.xml  
+- /NoLogo VsixColorCompiler D:\xml\colors.xml  
   
 ## <a name="notes"></a>Note  
   
--   Questo strumento richiede che essere installata la versione più recente del runtime VC + +.  
+- Questo strumento richiede che essere installata la versione più recente del runtime VC + +.  
   
--   Sono supportati solo i file singoli. Non è supportata la conversione in blocco tramite i percorsi delle cartelle.  
+- Sono supportati solo i file singoli. Non è supportata la conversione in blocco tramite i percorsi delle cartelle.  
   
 ## <a name="sample-output"></a>Esempio di output  
  Il file con estensione pkgdef generato dallo strumento sarà simile alle seguenti chiavi:  

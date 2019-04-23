@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064856"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu  
  Nell'esempio [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vengono usati percorsi di menu ambiente di sviluppo integrato nei test case:  
   
--   Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aprire dal controllo del codice sorgente: **File**, **aperta**, **Project**/**soluzione**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
+- Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aprire dal controllo del codice sorgente: **File**, **aperta**, **Project**/**soluzione**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
   
--   Per altre origine plug-in del controllo, aprire dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Apri dal controllo del codice sorgente**.  
+- Per altre origine plug-in del controllo, aprire dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Apri dal controllo del codice sorgente**.  
   
--   Aggiungere al controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi soluzione al File di controllo di origine**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**.  
+- Aggiungere al controllo del codice sorgente: **File**, **controllo del codice sorgente**, **Aggiungi soluzione al File di controllo di origine**, **controllo del codice sorgente**, **Aggiungi progetti selezionati a controllo del codice sorgente**.  
   
--   Menu di scelta rapida (progetto/soluzione), **Aggiungi soluzione al controllo del codice sorgente**.  
+- Menu di scelta rapida (progetto/soluzione), **Aggiungi soluzione al controllo del codice sorgente**.  
   
--   Aggiungere dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **aggiungere progetto dal controllo del codice sorgente**.  
+- Aggiungere dal controllo del codice sorgente: **File**, **controllo del codice sorgente**, **aggiungere progetto dal controllo del codice sorgente**.  
   
--   Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)], aggiungere dall'origine controllo è disponibile anche dal **File**, **Add**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
+- Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)], aggiungere dall'origine controllo è disponibile anche dal **File**, **Add**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
   
     > [!NOTE]
     >  Un percorso di un file locale o un server IIS locale (server web) può essere utilizzato in questo test.  
   
 ## <a name="expected-behavior"></a>Comportamento previsto  
   
--   Per ogni tipo di progetto supportati, un utente deve essere in grado di "Add a" e "Aperto" dal controllo del codice sorgente.  
+- Per ogni tipo di progetto supportati, un utente deve essere in grado di "Add a" e "Aperto" dal controllo del codice sorgente.  
   
--   Quando viene aggiunto un progetto al controllo del codice sorgente, un oggetto corrispondente \< *NomeProgetto*> vspscc (file di progetto hint) viene creato. Contiene informazioni di connessione e l'elenco di file esclusione. Non eliminare questo file perché contiene informazioni specifiche per il progetto.  
+- Quando viene aggiunto un progetto al controllo del codice sorgente, un oggetto corrispondente \< *NomeProgetto*> vspscc (file di progetto hint) viene creato. Contiene informazioni di connessione e l'elenco di file esclusione. Non eliminare questo file perché contiene informazioni specifiche per il progetto.  
   
--   Quando viene aggiunta una soluzione al controllo del codice sorgente, un oggetto corrispondente \< *SolutionName*> viene creato il file. vssscc (tripla S). Il file di testo contiene le informazioni di connessione e un elenco di file di esclusione, simile al file dei suggerimenti di progetto. Questo file è temporaneo ed esiste solo nel database del controllo del codice sorgente.  
+- Quando viene aggiunta una soluzione al controllo del codice sorgente, un oggetto corrispondente \< *SolutionName*> viene creato il file. vssscc (tripla S). Il file di testo contiene le informazioni di connessione e un elenco di file di esclusione, simile al file dei suggerimenti di progetto. Questo file è temporaneo ed esiste solo nel database del controllo del codice sorgente.  
   
--   Quando viene aperta una soluzione dal controllo del codice sorgente, un' \< *SolutionName*> file .vsscc (S double) che esiste solo nel database di controllo di origine, viene creato in locale in un file temporaneo. Questo file contiene il percorso dalla cartella di connessione della soluzione per il file della soluzione. Questo file è temporaneo e la copia locale viene eliminata quando l'operazione "Apri dal controllo del codice sorgente" è stata completata.  
+- Quando viene aperta una soluzione dal controllo del codice sorgente, un' \< *SolutionName*> file .vsscc (S double) che esiste solo nel database di controllo di origine, viene creato in locale in un file temporaneo. Questo file contiene il percorso dalla cartella di connessione della soluzione per il file della soluzione. Questo file è temporaneo e la copia locale viene eliminata quando l'operazione "Apri dal controllo del codice sorgente" è stata completata.  
   
--   Dopo l'aggiunta di un progetto di controllo del codice sorgente, è possibile eseguire le azioni di controllo sorgente su di esso (estrazione, Get e così via).  
+- Dopo l'aggiunta di un progetto di controllo del codice sorgente, è possibile eseguire le azioni di controllo sorgente su di esso (estrazione, Get e così via).  
   
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'aggiunta a / Open dall'area di test di controllo del codice sorgente.  

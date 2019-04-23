@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063543"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
   È possibile specificare quali elementi di Microsoft Office Outlook visualizzano un'area del modulo associando l'area del modulo con la classe messaggio di ogni elemento. Ad esempio, se si desidera aggiungere un'area del modulo nella parte inferiore di un elemento di posta elettronica, è possibile associare l'area del modulo con il `IPM.Note` classe message.
@@ -50,9 +50,9 @@ ms.locfileid: "56625530"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
  Esistono due modi per associare un'area del modulo a una classe messaggio:
 
--   Usare la **nuova area del modulo Outlook** procedura guidata.
+- Usare la **nuova area del modulo Outlook** procedura guidata.
 
--   Applicare gli attributi di classe.
+- Applicare gli attributi di classe.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Utilizzare la procedura guidata nuova area del modulo di Outlook
  Nella pagina finale della **nuova area del modulo Outlook** procedura guidata, è possibile selezionare le classi messaggio standard e digitare i nomi delle classi messaggio personalizzate che si desidera associare l'area del modulo.

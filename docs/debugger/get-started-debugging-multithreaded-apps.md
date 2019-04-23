@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064284"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Iniziare il debug di applicazioni multithreading (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
 
 ### <a name="ShowThreadsInSource"></a>Individuare il marcatore del thread  
 
-1.  Nella barra degli strumenti di Debug, selezionare la **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Nella barra degli strumenti di Debug, selezionare la **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Premere **F11** una volta per far avanzare la riga di un debugger del codice.
 
-3.  All'estrema sinistra della finestra, In questa riga, si noterà una *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che è simile a due thread doppini intrecciati. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
+3. All'estrema sinistra della finestra, In questa riga, si noterà una *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che è simile a due thread doppini intrecciati. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
 
     Un marcatore del thread potrebbe essere parzialmente nascosta da un punto di interruzione.
 
-4.  Posizionare il puntatore del mouse sul marcatore del thread. Un suggerimento dati verrà visualizzato il numero di ID thread e nome di ciascun thread interrotto. In questo caso, il nome è probabilmente `<noname>`.
+4. Posizionare il puntatore del mouse sul marcatore del thread. Un suggerimento dati verrà visualizzato il numero di ID thread e nome di ciascun thread interrotto. In questo caso, il nome è probabilmente `<noname>`.
 
-5.  Selezionare il marcatore del thread per visualizzare le opzioni disponibili nel menu di scelta rapida.
+5. Selezionare il marcatore del thread per visualizzare le opzioni disponibili nel menu di scelta rapida.
 
 ### <a name="ParallelStacks"></a>Visualizzare le sedi di thread
 
@@ -260,7 +260,7 @@ Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazion
     - Due thread di avere immesso il `ServerClass.InstanceMethod`, uno dei quali è il thread corrente (freccia gialla), mentre l'altro thread è stato arrestato `Thread.Sleep`.
     - Un nuovo thread (sulla destra) sta avviando anche ma è stato arrestato sul `ThreadHelper.ThreadStart`.
 
-2.  Mouse nel **stack in parallelo** finestra per visualizzare le opzioni disponibili nel menu di scelta rapida.
+2. Mouse nel **stack in parallelo** finestra per visualizzare le opzioni disponibili nel menu di scelta rapida.
 
     È possibile eseguire varie azioni da questi menu di scelta rapida, ma per questa esercitazione verrà illustrato più di questi dettagli nel **espressioni di controllo parallela** finestra (sezioni).
 
@@ -292,14 +292,14 @@ Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazion
 
     Tutti i thread selezionati vengono contrassegnati. A questo punto, è possibile filtrare per mostrare solo thread con flag.
 
-3.  Nel **espressioni di controllo parallela** finestra, seleziona la **Mostra solo thread con flag** pulsante ![Mostra thread con flag](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. Nel **espressioni di controllo parallela** finestra, seleziona la **Mostra solo thread con flag** pulsante ![Mostra thread con flag](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Solo i thread con flag visualizzato nell'elenco.
 
     > [!TIP]
     > Dopo che è stato applicato un contrassegno alcuni thread, è possibile fare doppio clic su una riga di codice nell'editor del codice e scegliere **eseguire i thread con flag fino al cursore**. Assicurarsi di scegliere raggiungerà codice che tutti i thread con flag. Visual Studio verrà messo in pausa thread nella riga selezionata di codice, rendendo più semplice controllare l'ordine di esecuzione da [blocco e sblocco dei thread](#bkmk_freeze).
 
-4.  Selezionare il **Mostra solo thread con flag** pulsante nuovo per passare di nuovo alla **Mostra tutti i thread** modalità.
+4. Selezionare il **Mostra solo thread con flag** pulsante nuovo per passare di nuovo alla **Mostra tutti i thread** modalità.
 
 5. Per rimuovere i flag dei thread, fare doppio clic su uno o più thread con flag nel **espressioni di controllo parallela** finestra e selezionare **Rimuovi flag**.
 
@@ -308,17 +308,17 @@ Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazion
 > [!TIP]
 > È possibile bloccare e sbloccare (sospendere e riprendere) i thread per controllare l'ordine in cui i thread di eseguono operazioni. Ciò consente di risolvere i problemi di concorrenza, ad esempio i deadlock e race condition.
 
-1.  Nel **espressioni di controllo parallela** finestra, con tutte le righe selezionate, pulsante destro del mouse e selezionare **Freeze**.
+1. Nel **espressioni di controllo parallela** finestra, con tutte le righe selezionate, pulsante destro del mouse e selezionare **Freeze**.
 
     Nella seconda colonna, viene visualizzata un'icona di sospensione per ogni riga. L'icona di sospensione indica che il thread è bloccato.
 
-2.  Deselezionare tutte le altre righe selezionando una sola riga.
+2. Deselezionare tutte le altre righe selezionando una sola riga.
 
-3.  Fare doppio clic su una riga e selezionare **Sblocca**.
+3. Fare doppio clic su una riga e selezionare **Sblocca**.
 
     L'icona di sospensione viene chiuso in questa riga, che indica che il thread non è più bloccato.
 
-4.  Passare all'editor di codice e premere **F11**. Viene eseguito solo il thread non bloccato.
+4. Passare all'editor di codice e premere **F11**. Viene eseguito solo il thread non bloccato.
 
     L'app può anche creare un'istanza di alcuni nuovi thread. Tutti i nuovi thread sono flag e non sono bloccati.
 

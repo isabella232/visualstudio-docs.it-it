@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065652"
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
 Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
@@ -27,7 +27,7 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Per eseguire l'applicazione nella diagnostica della grafica
 
-- Nella barra dei menu, scegliere **Debug**, **grafica**, **Avvia debug grafica**. Tastiera: premere ALT+F5.
+- Nella barra dei menu, scegliere **Debug**, **grafica**, **Avvia debug grafica**. (Tastiera: Premere ALT+F5)
 
 - Nel **grafica** sulla barra degli strumenti, scegliere il **Avvia debug grafica** pulsante.
 
@@ -57,9 +57,9 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>Per configurare le opzioni di acquisizione di diagnostica della grafica
 
-1.  Nella barra dei menu scegliere Strumenti, Opzioni. Verrà visualizzata la finestra di dialogo Opzioni.
+1. Nella barra dei menu scegliere Strumenti, Opzioni. Verrà visualizzata la finestra di dialogo Opzioni.
 
-2.  Nell'elenco di categorie delle opzioni a sinistra scegliere Diagnostica grafica, quindi configurare le opzioni desiderate di Diagnostica grafica.
+2. Nell'elenco di categorie delle opzioni a sinistra scegliere Diagnostica grafica, quindi configurare le opzioni desiderate di Diagnostica grafica.
 
      **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** selezionare questa casella per raccogliere gli stack di chiamate. Per impostazione predefinita, gli stack di chiamate non vengono raccolti. Per acquisire gli stack di chiamate, assicurarsi che la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** sia selezionata e quindi impostare l'opzione **per indicatori _draw, dispatch, present e perf** (predefinita) per raccogliere solo gli stack di chiamate più importanti oppure l'opzione **per tutto** per raccogliere tutti gli stack di chiamate. Per interrompere la raccolta degli stack di chiamate in un momento successivo, deselezionare la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)**.
 
@@ -80,4 +80,4 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
  È possibile acquisire le informazioni grafiche da un'app con uno strumento da riga di comando. Questo strumento, DXCap.exe, può acquisire e riprodurre rapidamente le informazioni grafiche senza usare Visual Studio o l'acquisizione a livello di codice. In particolare, è possibile usare DXCap.exe per l'automazione o in un ambiente di test. Per altre informazioni su DXCap.exe, vedere [Strumento di acquisizione da riga di comando](command-line-capture-tool.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)
+- [Procedura dettagliata: Acquisizione di informazioni grafiche](walkthrough-capturing-graphics-information.md)

@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062604"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -224,9 +224,9 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
   
 ## <a name="notes"></a>Note  
   
--   Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) digitare: KnownMonikers  
+- Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) digitare: KnownMonikers  
   
--   Lo strumento tenta di avvio per caricare tutti i manifesti di immagine che trova, in modo che potrebbe richiedere alcuni secondi per l'applicazione viene effettivamente visualizzata. È possibile anche lenta o che non risponde durante il caricamento dei manifesti.  
+- Lo strumento tenta di avvio per caricare tutti i manifesti di immagine che trova, in modo che potrebbe richiedere alcuni secondi per l'applicazione viene effettivamente visualizzata. È possibile anche lenta o che non risponde durante il caricamento dei manifesti.  
   
 ## <a name="sample-output"></a>Esempio di output  
  Questo strumento non genera alcun output.

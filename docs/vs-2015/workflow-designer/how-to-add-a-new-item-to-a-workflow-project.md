@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063628"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procedura: Aggiungere un nuovo elemento a un progetto flusso di lavoro
 Dopo aver creato un progetto flusso di lavoro, è possibile aggiungervi attività del flusso di lavoro, finestre di progettazione e altri elementi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comuni.  
@@ -30,17 +30,17 @@ Dopo aver creato un progetto flusso di lavoro, è possibile aggiungervi attivit�
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Per aggiungere un nuovo elemento a un progetto flusso di lavoro  
   
-1.  Nel **Project** menu, fare clic su **Aggiungi nuovo elemento...** .  
+1. Nel **Project** menu, fare clic su **Aggiungi nuovo elemento...** .  
   
      Il **aggiungere un nuovo elemento** verrà visualizzata la finestra di dialogo.  
   
-2.  Nel **modelli installati** riquadro, selezionare **flusso di lavoro** gruppo.  
+2. Nel **modelli installati** riquadro, selezionare **flusso di lavoro** gruppo.  
   
-3.  Selezionare uno dei quattro elementi. Nella tabella precedente sono elencate le selezioni disponibili.  
+3. Selezionare uno dei quattro elementi. Nella tabella precedente sono elencate le selezioni disponibili.  
   
-4.  Digitare un nome appropriato per l'elemento nel **nome** nella parte inferiore della finestra di dialogo.  
+4. Digitare un nome appropriato per l'elemento nel **nome** nella parte inferiore della finestra di dialogo.  
   
-5.  Fare clic su **Add** per aggiungere l'elemento al progetto del flusso di lavoro corrente.  
+5. Fare clic su **Add** per aggiungere l'elemento al progetto del flusso di lavoro corrente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)

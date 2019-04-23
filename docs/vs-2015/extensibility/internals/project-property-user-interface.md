@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061346"
 ---
 # <a name="project-property-user-interface"></a>Interfaccia utente delle proprietà del progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Un sottotipo di progetto è possibile usare gli elementi nel progetto **pagine d
   
 - Un sottotipo di progetto può determinare il CATID appropriato per gli oggetti estensibili varie del progetto di base in fase di esecuzione tramite il recupero dei seguenti <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valori:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   Per determinare il CATID per l'ambito del progetto, il sottotipo di progetto recupera proprietà sopra menzionate per <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> dal `VSITEMID``typedef`. Un sottotipo di progetto anche possibile controllare quali **pagine delle proprietà** pagine delle finestre di dialogo vengono visualizzati per il progetto dipendente sia configurazione indipendenti. Alcuni sottotipi di progetto potrebbe essere necessario rimuovere le pagine predefinite e aggiungere pagine specifiche sottotipo di progetto. Per abilitare questa opzione, il progetto client gestito chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metodo per le proprietà seguenti:  
   

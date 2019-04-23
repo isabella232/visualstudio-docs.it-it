@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065143"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Per creare un modello di testo T4 in fase di progettazione in Visual Studio  
   
-1.  Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto o aprirne uno esistente.  
+1. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto o aprirne uno esistente.  
   
      Ad esempio, per il **File** dal menu scegliere **New**, **progetto**.  
   
-2.  Aggiungere un file di modello di testo al progetto e assegnargli un nome con estensione **tt**.  
+2. Aggiungere un file di modello di testo al progetto e assegnargli un nome con estensione **tt**.  
   
      A questo scopo, nella **Esplora soluzioni**, nel menu di scelta rapida del progetto, scegliere **Add**, **nuovo elemento**. Nel **Aggiungi nuovo elemento** della finestra di dialogo select **modello di testo** dal riquadro centrale.  
   
      Si noti che il **Custom Tool** proprietà del file viene **TextTemplatingFileGenerator**.  
   
-3.  Aprire il file. Includerà già le direttive seguenti:  
+3. Aprire il file. Includerà già le direttive seguenti:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   
      Se il modello è stato aggiunto a un progetto di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], l'attributo relativo al linguaggio sarà "`VB`".  
   
-4.  Aggiungere testo alla fine del file. Ad esempio:  
+4. Aggiungere testo alla fine del file. Ad esempio:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Salvare il file.  
+5. Salvare il file.  
   
      È possibile visualizzare un **avviso di sicurezza** finestra di messaggio che chiede di confermare che si desidera eseguire il modello. Fare clic su **OK**.  
   
-6.  Nelle **Esplora soluzioni**, espandere il nodo del file modello e si noterà un file con estensione **txt**. Il file contiene testo generato dal modello.  
+6. Nelle **Esplora soluzioni**, espandere il nodo del file modello e si noterà un file con estensione **txt**. Il file contiene testo generato dal modello.  
   
     > [!NOTE]
     >  Se il progetto è un progetto Visual Basic, è necessario fare clic su **Mostra tutti i file** per visualizzare il file di output.  
@@ -150,9 +150,9 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   
 #### <a name="to-generate-program-code-or-resources"></a>Per generare codice programma o risorse  
   
-1.  Modificare la direttiva di output in modo da generare un file di tipo appropriato, ad esempio un file con estensione cs, vb, resx oppure xml.  
+1. Modificare la direttiva di output in modo da generare un file di tipo appropriato, ad esempio un file con estensione cs, vb, resx oppure xml.  
   
-2.  Inserire codice per la generazione del codice soluzione necessario. Ad esempio, per generare tre dichiarazioni di campo con valore Integer in una classe:  
+2. Inserire codice per la generazione del codice soluzione necessario. Ad esempio, per generare tre dichiarazioni di campo con valore Integer in una classe:  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   
     ```  
   
-3.  Salvare il file ed esaminare il file generato, che ora contiene il codice seguente:  
+3. Salvare il file ed esaminare il file generato, che ora contiene il codice seguente:  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Un modello di testo è eseguito nel rispettivo dominio di app e l'accesso ai servizi è effettuato tramite marshalling. In questa circostanza, GetCOMService() è più affidabile di GetService().  
   
-##  <a name="Regenerating"></a> Rigenerazione automatica di codice  
+## <a name="Regenerating"></a> Rigenerazione automatica di codice  
  In genere, più file in una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono generati con un modello di input. Ogni file è generato dal modello corrispondente, ma i modelli fanno tutti riferimento allo stesso modello.  
   
  In caso di modifica al modello di origine, è consigliabile eseguire di nuovo tutti i modelli della soluzione. Per eseguire questa operazione manualmente, scegliere **Trasforma tutti i modelli** nel **compilazione** menu.  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Conversione di un file esistente in un modello  
+## <a name="Converting"></a> Conversione di un file esistente in un modello  
  Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è molto simile a quello dei file generati, anche se includono codice programma. Ciò suggerisce un metodo utile per la creazione di un modello. Creare un file normale come prototipo, ad esempio un [!INCLUDE[csprcs](../includes/csprcs-md.md)] file e quindi introdurre gradualmente codice di generazione che varia il file risultante.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Per convertire un file esistente in un modello in fase di esecuzione  
   
-1.  Aggiungere al progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] un file del tipo che si vuole generare, ad esempio un file con estensione `.cs`, `.vb` o `.resx`.  
+1. Aggiungere al progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] un file del tipo che si vuole generare, ad esempio un file con estensione `.cs`, `.vb` o `.resx`.  
   
-2.  Testare il nuovo file per assicurarsi che funzioni correttamente.  
+2. Testare il nuovo file per assicurarsi che funzioni correttamente.  
   
-3.  In Esplora soluzioni, modificare l'estensione del nome file **tt**.  
+3. In Esplora soluzioni, modificare l'estensione del nome file **tt**.  
   
-4.  Verificare le proprietà seguenti del **tt** file:  
+4. Verificare le proprietà seguenti del **tt** file:  
   
     |||  
     |-|-|  
     |**Lo strumento personalizzato =**|**TextTemplatingFileGenerator**|  
     |**Azione di compilazione =**|**None**|  
   
-5.  Inserire le righe seguenti all'inizio del file:  
+5. Inserire le righe seguenti all'inizio del file:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      Impostare l'attributo `extension` sull'estensione del nome file per il tipo di file che si vuole generare, ad esempio `.cs`, `.resx` o `.xml`.  
   
-6.  Salvare il file.  
+6. Salvare il file.  
   
      Sarà creato un file secondario, con l'estensione specificata. Le relative proprietà sono corrette per il tipo di file. Ad esempio, il **Build Action** proprietà di un file con estensione cs sarebbe **compilare**.  
   
      Verificare che il file generato includa lo stesso contenuto del file originale.  
   
-7.  Identificare una parte del file da variare. Ad esempio, una parte visualizzata solo in determinate condizioni o una parte ripetuta o che include valori variabili specifici. Inserire codice di generazione. Salvare il file e verificare che il file secondario sia stato generato correttamente. Ripetere questo passaggio.  
+7. Identificare una parte del file da variare. Ad esempio, una parte visualizzata solo in determinate condizioni o una parte ripetuta o che include valori variabili specifici. Inserire codice di generazione. Salvare il file e verificare che il file secondario sia stato generato correttamente. Ripetere questo passaggio.  
   
 ## <a name="guidelines-for-code-generation"></a>Linee guida per la generazione di codice  
  Vedi [linee guida per i modelli di testo T4 di scrittura](../modeling/guidelines-for-writing-t4-text-templates.md).  

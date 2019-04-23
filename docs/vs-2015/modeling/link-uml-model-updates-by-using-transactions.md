@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064830"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Collegare aggiornamenti di modelli UML tramite transazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Quando si definisce un'estensione per le finestre di progettazione UML in Visual
   
  Tenere presente quanto segue:  
   
--   È necessario includere sempre `Commit()` alla fine della transazione. Se una transazione viene eliminata senza essere sottoposta a commit, sarà possibile eseguirne il rollback. Il modello verrà quindi ripristinato allo stato che aveva all'inizio della transazione.  
+- È necessario includere sempre `Commit()` alla fine della transazione. Se una transazione viene eliminata senza essere sottoposta a commit, sarà possibile eseguirne il rollback. Il modello verrà quindi ripristinato allo stato che aveva all'inizio della transazione.  
   
--   Se si verifica un'eccezione non rilevata all'interno della transazione, sarà possibile eseguirne il rollback. Un modello frequente è racchiudere il blocco `using` della transazione all'interno di un blocco `try…catch`.  
+- Se si verifica un'eccezione non rilevata all'interno della transazione, sarà possibile eseguirne il rollback. Un modello frequente è racchiudere il blocco `using` della transazione all'interno di un blocco `try…catch`.  
   
--   È possibile annidare le transazioni.  
+- È possibile annidare le transazioni.  
   
--   È possibile specificare qualsiasi nome non vuoto a `BeginTransaction()`.  
+- È possibile specificare qualsiasi nome non vuoto a `BeginTransaction()`.  
   
--   Solo l'archivio di modello UML è interessato da queste transazioni. Le transazioni di modellazione non influiscono su variabili, archivi esterni, quali file e database, diagrammi livello e modelli del codice.  
+- Solo l'archivio di modello UML è interessato da queste transazioni. Le transazioni di modellazione non influiscono su variabili, archivi esterni, quali file e database, diagrammi livello e modelli del codice.  
   
 ## <a name="example"></a>Esempio  
   

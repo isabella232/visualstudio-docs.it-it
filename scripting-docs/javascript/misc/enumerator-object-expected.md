@@ -14,12 +14,12 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14fcb4d990b03a8e7b896014403eb8dceac66b80
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064869"
 ---
 # <a name="enumerator-object-expected"></a>Previsto oggetto Enumerator
 Si è provato a richiamare il **metodo Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** oppure **Enumerator.prototype.moveNext** metodo in un oggetto di un tipo diverso rispetto a `Enumerator`. L'oggetto di questo tipo di chiamata deve essere di tipo `Enumerator`. Ecco un esempio di codice che causa l'interruzione di questa regola:  
@@ -32,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Richiamare solo le **metodo Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, o  **Enumerator.prototype.moveNext** metodi su oggetti di tipo `Enumerator`. Per determinare se l'oggetto è un `Enumerator` oggetto, usare:  
+- Richiamare solo le **metodo Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, o  **Enumerator.prototype.moveNext** metodi su oggetti di tipo `Enumerator`. Per determinare se l'oggetto è un `Enumerator` oggetto, usare:  
   
     ```js
     if(x instanceof Enumerator)  
