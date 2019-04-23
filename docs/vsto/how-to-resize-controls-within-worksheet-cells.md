@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041902"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: Ridimensionare i controlli nelle celle di un foglio di lavoro
   Quando si ridimensiona colonne o righe in un foglio di lavoro, tutti i controlli host all'interno delle celle viene ridimensionato automaticamente per l'altezza o la larghezza della cella che è stata ridimensionata. Controlli Windows Form non vengono ridimensionano automaticamente per impostazione predefinita.
@@ -35,13 +35,13 @@ ms.locfileid: "56625465"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Per impostare i controlli per ridimensionare le celle in fase di progettazione
 
-1.  Dal **casella degli strumenti**, trascinare un controllo Windows Form a un foglio di lavoro.
+1. Dal **casella degli strumenti**, trascinare un controllo Windows Form a un foglio di lavoro.
 
-2.  Il pulsante destro del controllo e quindi fare clic su **formato controllo**.
+2. Il pulsante destro del controllo e quindi fare clic su **formato controllo**.
 
-3.  Nel **formato controllo** finestra di dialogo, fare clic sul **proprietà** scheda.
+3. Nel **formato controllo** finestra di dialogo, fare clic sul **proprietà** scheda.
 
-4.  Sotto **oggetto posizionamento**, selezionare la **spostare e ridimensionare con le celle** opzione e quindi fare clic su **OK**.
+4. Sotto **oggetto posizionamento**, selezionare la **spostare e ridimensionare con le celle** opzione e quindi fare clic su **OK**.
 
      Quando si ridimensiona la cella che contiene il controllo, il controllo viene ridimensionato per adattarsi alla cella.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625465"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Per impostare i controlli per ridimensionare le celle in fase di esecuzione
 
-1.  Aggiungere un controllo intervallo A1.
+1. Aggiungere un controllo intervallo A1.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625465"
 ## <a name="reset-control-placement"></a>Reimpostare il posizionamento dei controlli
  È possibile reimpostare la posizione e il ridimensionamento del controllo impostando il `Placement` proprietà su uno dei seguenti <xref:Microsoft.Office.Interop.Excel.XlPlacement> valori:
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Per modificare il comportamento di un controllo in modo che non ridimensionare o spostare la cella contenente
 
-1.  Chiamare la proprietà di posizionamento del controllo e impostare il valore su <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Chiamare la proprietà di posizionamento del controllo e impostare il valore su <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

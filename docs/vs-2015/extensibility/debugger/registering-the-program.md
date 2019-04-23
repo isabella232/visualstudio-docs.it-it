@@ -11,27 +11,27 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bc4a8de9f93a04fb062954703a1c14b4c4447308
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 484aa854a8e0987bf034e829a3acf02d6d637870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042651"
 ---
 # <a name="registering-the-program"></a>Registrazione del programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dopo che il motore di debug ha acquisito una porta, rappresentato da un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia, il passaggio successivo di abilitare il programma da sottoporre a debug è registrarlo con la porta. Una volta registrato, il programma è disponibile per il debug di uno dei seguenti modi:  
   
--   Il processo di collegamento, che consente al debugger di ottenere il completo controllo debug di un'applicazione in esecuzione.  
+- Il processo di collegamento, che consente al debugger di ottenere il completo controllo debug di un'applicazione in esecuzione.  
   
--   Just-in-time (JIT) esegue il debug, che consente il debug dopo i fatti di un programma che viene eseguito indipendentemente da un debugger. Quando l'architettura runtime rileva un errore, il debugger riceve una notifica prima del sistema operativo o ambiente di runtime Rilascia risorse di memoria e del programma di errore.  
+- Just-in-time (JIT) esegue il debug, che consente il debug dopo i fatti di un programma che viene eseguito indipendentemente da un debugger. Quando l'architettura runtime rileva un errore, il debugger riceve una notifica prima del sistema operativo o ambiente di runtime Rilascia risorse di memoria e del programma di errore.  
   
 ## <a name="registering-procedure"></a>La procedura di registrazione  
   
 #### <a name="to-register-your-program"></a>Per registrare il programma  
   
-1.  Chiamare il [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metodo implementato dalla porta.  
+1. Chiamare il [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metodo implementato dalla porta.  
   
      `IDebugPortNotify2::AddProgramNode` richiede un puntatore a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.  
   

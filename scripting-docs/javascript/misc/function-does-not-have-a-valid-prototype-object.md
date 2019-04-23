@@ -14,19 +14,19 @@ ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31226f972ff4714dd81207cf27d862d3449184a5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038679"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>La funzione non ha un oggetto Prototype valido
 Si è provato a usare **instanceof** per determinare se un oggetto derivato da una classe particolare funzione, ma è stata ridefinita dell'oggetto `prototype` proprietà come `null`, o un tipo di oggetto esterno (entrambi neplatné [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetti). Un oggetto esterno può essere un oggetto dal modello a oggetti host (ad esempio, il documento di Internet Explorer o oggetto window) o un oggetto COM esterno.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare che la funzione `prototype` proprietà fa riferimento a un valore valido [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto.  
+- Verificare che la funzione `prototype` proprietà fa riferimento a un valore valido [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto funzione](../../javascript/reference/function-object-javascript.md)   

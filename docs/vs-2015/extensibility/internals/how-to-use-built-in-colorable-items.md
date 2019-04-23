@@ -11,12 +11,12 @@ ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2546d9e9c864772bf1a2d3063e8ce4adc1cd7605
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21a2b520111c07b6c964eae19f5a6064e926db70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039983"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Procedura: Usare gli elementi colorabili incorporati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Prima di usare gli elementi colorabili incorporati, è necessario prima segnalar
   
 ### <a name="to-use-built-in-colorable-items"></a>Usare elementi colorabili incorporati  
   
-1.  In HKEY_LOCAL_MACHINE\VisualStudio\\*x. y*Services \Languages\Language\\*nome di linguaggio*, dove *x. y* è una versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e *nome del linguaggio* è il nome del linguaggio, di creare un valore di voce del Registro di sistema valore DWORD denominato `RequestStockColors`.  
+1. In HKEY_LOCAL_MACHINE\VisualStudio\\*x. y*Services \Languages\Language\\*nome di linguaggio*, dove *x. y* è una versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e *nome del linguaggio* è il nome del linguaggio, di creare un valore di voce del Registro di sistema valore DWORD denominato `RequestStockColors`.  
   
-2.  Impostare il `RequestStockColors` valore della voce del Registro di sistema su 1.  
+2. Impostare il `RequestStockColors` valore della voce del Registro di sistema su 1.  
   
      Dopo aver creato il Registro di sistema, il colorizzatore della voce <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodo può usare i membri del <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> enumerazione da inserire nella matrice di attributi di colore da utilizzare dall'editor.  
   

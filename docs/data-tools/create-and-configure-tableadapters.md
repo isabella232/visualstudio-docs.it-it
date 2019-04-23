@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042811"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 
@@ -80,16 +80,16 @@ Nell'esempio seguente illustra come chiamare un'altra query denominata `FillByCi
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Per avviare la configurazione guidata Query TableAdapter con una nuova query
 
-1.  Aprire il set di dati in **Progettazione DataSet**.
+1. Aprire il set di dati in **Progettazione DataSet**.
 
-2.  Se si sta creando una nuova query, trascinare un **Query** dall'oggetto il **set di dati** scheda della finestra di **della casella degli strumenti** in un <xref:System.Data.DataTable>, o selezionare **Aggiungi Query**dal menu di scelta rapida dell'oggetto TableAdapter. È anche possibile trascinare un **Query** oggetto in un'area vuota del **Progettazione Dataset**, che consente di creare un oggetto non associato a un TableAdapter <xref:System.Data.DataTable>. Queste query possono restituire valori singoli (scalari) oppure eseguire UPDATE, INSERT, o solo eliminare comandi sul database.
+2. Se si sta creando una nuova query, trascinare un **Query** dall'oggetto il **set di dati** scheda della finestra di **della casella degli strumenti** in un <xref:System.Data.DataTable>, o selezionare **Aggiungi Query**dal menu di scelta rapida dell'oggetto TableAdapter. È anche possibile trascinare un **Query** oggetto in un'area vuota del **Progettazione Dataset**, che consente di creare un oggetto non associato a un TableAdapter <xref:System.Data.DataTable>. Queste query possono restituire valori singoli (scalari) oppure eseguire UPDATE, INSERT, o solo eliminare comandi sul database.
 
-3.  Nel **Seleziona connessione dati** schermata, selezionare o creare la connessione che userà la query.
+3. Nel **Seleziona connessione dati** schermata, selezionare o creare la connessione che userà la query.
 
     > [!NOTE]
     > Questa schermata viene visualizzata solo quando la finestra di progettazione non è possibile stabilire la connessione appropriata da utilizzare oppure quando non vi sono connessioni disponibili.
 
-4.  Nel **scegliere un tipo di comando** schermata, seleziona uno dei seguenti metodi di recupero dei dati dal database:
+4. Nel **scegliere un tipo di comando** schermata, seleziona uno dei seguenti metodi di recupero dei dati dal database:
 
     - **Usare le istruzioni SQL** consente di digitare un'istruzione SQL per selezionare i dati dal database.
 

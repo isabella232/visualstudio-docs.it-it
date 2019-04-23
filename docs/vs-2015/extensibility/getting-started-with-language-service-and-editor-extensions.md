@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039214"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni dell'editor e dei servizi di linguaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,15 +78,15 @@ ms.locfileid: "58969255"
  Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Usare modelli per creare estensioni dell'Editor  
- È possibile utilizzare editor modelli per creare estensioni MEF che consentono di personalizzare i margini classificatori e le aree di controllo. Sono disponibili modelli per progetti C# e Visual Basic. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+ È possibile utilizzare editor modelli per creare estensioni MEF che consentono di personalizzare i margini classificatori e le aree di controllo. Sono disponibili modelli per progetti c# e Visual Basic. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
  È anche possibile usare il modello di progetto VSIX per creare estensioni. Questo modello vengono forniti solo gli elementi necessari per distribuire qualsiasi tipo di estensione e includere il file vsixmanifest, i riferimenti ad assembly richiesti e un file di progetto che include le attività di compilazione che consentono di distribuire la estensione. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).  
   
  È anche possibile creare editor di componenti MEF da un'estensione del pacchetto di Visual Studio. Le procedure dettagliate seguenti per informazioni dettagliate, vedere:  
   
--   [Procedura dettagliata: Utilizzo di un comando della Shell con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Procedura dettagliata: Utilizzo di un comando della Shell con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Punti di estensione dei servizi di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040454"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per le soluzioni SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora le funzionalità seguenti che consentono di migliorare la sicurezza delle applicazioni di SharePoint.
@@ -46,42 +46,42 @@ ms.locfileid: "54862942"
 ## <a name="sharepoint-permissions-considerations"></a>Considerazioni sulle autorizzazioni di SharePoint
  Per sviluppare soluzioni di SharePoint, è necessario disporre delle autorizzazioni sufficienti per eseguire e il debug delle soluzioni di SharePoint. Prima di testare una soluzione di SharePoint, eseguire i passaggi seguenti per assicurarsi di avere le autorizzazioni necessarie:
 
-1.  Aggiungere l'account utente con privilegi di amministratore nel sistema.
+1. Aggiungere l'account utente con privilegi di amministratore nel sistema.
 
-2.  Aggiungere l'account utente come amministratore di Farm per il server SharePoint.
+2. Aggiungere l'account utente come amministratore di Farm per il server SharePoint.
 
-    1.  In Amministrazione centrale SharePoint 2010, scegliere il **gestire il gruppo di amministratori farm** collegamento.
+    1. In Amministrazione centrale SharePoint 2010, scegliere il **gestire il gruppo di amministratori farm** collegamento.
 
-    2.  Nel **gli amministratori di Farm** pagina, scegliere il **New** l'opzione di menu
+    2. Nel **gli amministratori di Farm** pagina, scegliere il **New** l'opzione di menu
 
-3.  Aggiungere l'account utente per al gruppo WSS_ADMIN_WPG.
+3. Aggiungere l'account utente per al gruppo WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Risorse aggiuntive sulla sicurezza
  Per altre informazioni sui problemi di sicurezza, vedere gli argomenti seguenti.
 
 ### <a name="visual-studio-security"></a>sicurezza Visual Studio
 
--   [Sicurezza e le autorizzazioni utente](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Sicurezza e le autorizzazioni utente](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Security in Native and codice .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Security in Native and codice .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Sicurezza in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Sicurezza in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>Sicurezza di SharePoint
 
--   [Sicurezza e amministrazione di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Sicurezza e amministrazione di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Centro risorse di sicurezza di SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Centro risorse di sicurezza di SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Protezione delle Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Protezione delle Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Miglioramento della sicurezza delle applicazioni Web: Minacce e contromisure](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Miglioramento della sicurezza delle applicazioni Web: Minacce e contromisure](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Sicurezza generale
 
--   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Creazione di applicazioni ASP.NET protette: L'autenticazione, autorizzazione e comunicazioni protette](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Creazione di applicazioni ASP.NET protette: L'autenticazione, autorizzazione e comunicazioni protette](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Vedere anche
 

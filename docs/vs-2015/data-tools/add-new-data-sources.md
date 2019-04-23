@@ -19,17 +19,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963907"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670173"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere disponibili i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database dalla finestra **Data Source**. Questo tipo di origine dati può essere:  
   
 -   Una classe in un modello di Entity Framework che è associato a un tipo di database.  

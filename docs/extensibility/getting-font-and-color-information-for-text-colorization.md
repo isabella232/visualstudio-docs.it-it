@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042407"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Ottenere le informazioni di carattere e colori per la colorazione del testo
 Il processo che esegue il rendering o Visualizza colorato testo negli elementi dell'interfaccia utente dipende dal tipo di progetto, la tecnologia e per gli sviluppatori preferenze. Il **Fonts and Colors** pagina delle proprietà vengono archiviate le impostazioni.
@@ -31,11 +31,11 @@ Il processo che esegue il rendering o Visualizza colorato testo negli elementi d
 
 Per colorare, un pacchetto VSPackage deve ottenere corrente **Fonts and Colors** impostazioni. Un pacchetto VSPackage può ottenere le impostazioni correnti nei modi seguenti, a seconda delle esigenze:
 
--   Usare il meccanismo di persistenza di carattere e colori per recuperare lo stato corrente o archiviato. Per altre informazioni, vedere [accesso archiviate le impostazioni del tipo di carattere e colore](../extensibility/accessing-stored-font-and-color-settings.md).
+- Usare il meccanismo di persistenza di carattere e colori per recuperare lo stato corrente o archiviato. Per altre informazioni, vedere [accesso archiviate le impostazioni del tipo di carattere e colore](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia di un servizio che fornisce i dati di carattere e colori per ottenere un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se il pacchetto VSPackage non sia anche il provider di tipi di carattere e colore.
+- Usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia di un servizio che fornisce i dati di carattere e colori per ottenere un'istanza di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se il pacchetto VSPackage non sia anche il provider di tipi di carattere e colore.
 
--   Implementare l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
+- Implementare l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
 
 Per garantire che i risultati ottenuti eseguendo il polling vengono aggiornate, può essere utile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaccia per determinare se è necessario un aggiornamento prima di chiamare i metodi di recupero del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.
 

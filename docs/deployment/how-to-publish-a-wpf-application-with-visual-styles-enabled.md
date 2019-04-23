@@ -1,5 +1,5 @@
 ---
-title: "Procedura: pubblicare un'applicazione WPF con gli stili visuali abilitati | Microsoft Docs"
+title: "Procedura: Pubblicare un'applicazione WPF con gli stili visuali abilitati | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038127"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF per la quale sono attivati gli stili di visualizzazione
 
 Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario attivarli manualmente. Abilitazione degli stili per un'applicazione WPF e quindi pubblicare la soluzione, tuttavia, provoca un errore. Questo argomento descrive come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per altre informazioni sugli stili di visualizzazione, vedere [panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview). Per altre informazioni sul messaggio di errore, vedere [risolvere i problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
@@ -31,7 +31,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
   Quindi, è possibile spostare i file pubblicati il posizione da cui si desidera che gli utenti finali a installare l'applicazione.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Pubblicare la soluzione senza gli stili visuali abilitati
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Pubblicare la soluzione senza gli stili visuali abilitati
 
 1. Assicurarsi che il progetto non ha abilitati gli stili di visualizzazione. In primo luogo, verificare i file manifesto del progetto per il codice XML seguente. Quindi, se il codice XML è presente, racchiudere il codice XML con un tag di commento.
 
@@ -57,7 +57,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
          Il file app. manifest verrà aperto nel **Editor di codice**.
 
-    **Per aprire il file manifesto in un C# progetto**
+    **Per aprire il file manifesto in un progetto c#**
 
     1. Nella barra dei menu, scegliere **Project**, *NomeProgetto* **proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
 
@@ -72,7 +72,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
          Questo pulsante Mostra tutti gli elementi di progetto, inclusi quelli che sono stati esclusi e quelli che sono normalmente nascosti. Il file manifesto viene visualizzato come un elemento del progetto.
 
-2. Creare e pubblicare la soluzione. Per altre informazioni su come pubblicare la soluzione, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+2. Creare e pubblicare la soluzione. Per altre informazioni su come pubblicare la soluzione, vedere [come: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="create-a-manifest-file"></a>Creare un file manifesto
 

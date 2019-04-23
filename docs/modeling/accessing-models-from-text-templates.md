@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040690"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 Usando i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo che si basano sui modelli di linguaggio specifico di dominio. Per informazioni di base sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale quando si esegue il debug del linguaggio DSL e funzioneranno anche in un computer in cui è stato distribuito il linguaggio DSL.
@@ -58,7 +58,7 @@ Here is a list of elements in the model:
 
 - Una proprietà in `this` contiene l'elemento radice. Da qui, il codice può passare agli altri elementi del modello. Il nome della proprietà è in genere quello utilizzato per la classe di dominio di primo livello del linguaggio DSL. In questo esempio si tratta di `this.ExampleModel`.
 
-- Anche se la lingua in cui vengono scritti i frammenti di codice C#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.
+- Anche se la lingua in cui vengono scritti i frammenti di codice c#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.
 
 - Per eseguire il debug del modello, aggiungere `debug="true"` per il `template` direttiva. Il modello verrà aperto in un'altra istanza di Visual Studio se si verifica un'eccezione. Se si desidera interrompere il debugger in un momento specifico nel codice, l'istruzione insert `System.Diagnostics.Debugger.Break();`
 
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  Il processore di direttiva del DSL esegue due attività principali:
 
--   Inserisce in modo efficace le direttive di importazione e assembly nel modello che fa riferimento al linguaggio DSL. Ciò consente di usare le classi di dominio nel codice del modello.
+- Inserisce in modo efficace le direttive di importazione e assembly nel modello che fa riferimento al linguaggio DSL. Ciò consente di usare le classi di dominio nel codice del modello.
 
--   Carica il file specificato nella `requires` parametro e imposta una proprietà in `this` che fa riferimento all'elemento radice del modello caricato.
+- Carica il file specificato nella `requires` parametro e imposta una proprietà in `this` che fa riferimento all'elemento radice del modello caricato.
 
 ## <a name="validating-the-model-before-running-the-template"></a>La convalida del modello prima di eseguire il modello
  È possibile generare il modello da convalidare prima che il modello viene eseguito.

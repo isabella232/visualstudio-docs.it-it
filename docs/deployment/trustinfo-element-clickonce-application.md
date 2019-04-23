@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042238"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (applicazione ClickOnce)
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.
@@ -78,28 +78,28 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 ## <a name="permissionset"></a>PermissionSet
  Obbligatorio. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e contiene l'elemento `IPermission` . Questo elemento ha gli attributi seguenti.
 
--   `ID`
+- `ID`
 
      Obbligatorio. Identifica il set di autorizzazioni. Questo attributo può avere qualsiasi valore. Gli attributi `defaultAssemblyRequest` e `assemblyRequest` fanno riferimento all'ID.
 
--   `version`
+- `version`
 
      Obbligatorio. Identifica la versione dell'autorizzazione. In genere questo valore è `1`.
 
 ## <a name="ipermission"></a>IPermission
  Facoltativo. Questo elemento è figlio dell'elemento `PermissionSet` . L'elemento `IPermission` identifica in modo completo una classe di autorizzazioni in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L'elemento `IPermission` ha gli attributi seguenti, ma può avere attributi aggiuntivi che corrispondono alle proprietà della classe di autorizzazioni. Per scoprire la sintassi di un'autorizzazione specifica, vedere gli esempi elencati nel file Security.config.
 
--   `class`
+- `class`
 
      Obbligatorio. Identifica la classe di autorizzazioni in base al nome sicuro. Ad esempio, il codice seguente identifica il tipo `FileDialogPermission` .
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
      Obbligatorio. Identifica la versione dell'autorizzazione. In genere questo valore è `1`.
 
--   `Unrestricted`
+- `Unrestricted`
 
      Obbligatorio. Indica se l'applicazione richiede una concessione senza restrizioni di questa autorizzazione. Se `true`, la concessione dell'autorizzazione è non condizionale. Se `false`, o se questo attributo non è definito, è limitata in base agli attributi specifici dell'autorizzazione definiti nel tag `IPermission` . Si analizzino le autorizzazioni seguenti:
 
@@ -119,18 +119,18 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  Facoltativo. Identifica il set di autorizzazioni concesso agli assembly. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e ha l'attributo seguente.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Obbligatorio. Identifica l'ID del set di autorizzazioni che è l'autorizzazione predefinita. Il set di autorizzazioni viene dichiarato nell'elemento `PermissionSet` .
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  Facoltativo. Identifica le autorizzazioni per un assembly specifico. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e ha l'attributo seguente.
 
--   `Name`
+- `Name`
 
      Obbligatorio. Identifica il nome dell'assembly.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Obbligatorio. Identifica l'ID del set di autorizzazioni richiesto dall'assembly. Il set di autorizzazioni viene dichiarato nell'elemento `PermissionSet` .
 
@@ -156,7 +156,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 
    Facoltativo. Indica se l'applicazione richiede l'accesso agli elementi protetti dell'interfaccia utente. I valori sono `true` o `false`e il valore predefinito è false. Solo le applicazioni firmate devono avere un valore true.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Se un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] richiede altre autorizzazioni rispetto a quelle concesse per impostazione predefinita al computer client, il gestore di attendibilità di Common Language Runtime chiederà all'utente se vuole concedere all'applicazione un livello così elevato di attendibilità. Se l'utente rifiuta, l'applicazione non verrà eseguita. In caso contrario, eseguirà le autorizzazioni richieste.
 
  Tutte le autorizzazioni richieste mediante `defaultAssemblyRequest` e `assemblyRequest` verranno concesse senza chiedere all'utente se il manifesto di distribuzione ha una licenza di attendibilità valida.

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 031d764b95aa0f292702dde6167e0be9826270bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038619"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Eseguire applicazioni Windows Store in un computer locale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
   
  Per eseguire il debug, test o analisi delle prestazioni su un'app Windows Store, puoi eseguire l'app sullo stesso computer che ospita Visual Studio. Se lo schermo del dispositivo è abilitato per il tocco, puoi verificare la funzionalità completa dell'app, altrimenti dovrai limitarti ai movimenti con il mouse e la tastiera.  
   
-##  <a name="BKMK_In_this_topic"></a> In questo argomento  
+## <a name="BKMK_In_this_topic"></a> In questo argomento  
  Puoi acquisire informazioni su:  
   
  [Come eseguire in un computer locale](#BKMK_How_to_run_on_a_local_machine)  
   
  [Viene illustrato come passare tra un'app di Windows Store e Visual Studio su un solo monitor](#BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor)  
   
-##  <a name="BKMK_How_to_run_on_a_local_machine"></a> Come eseguire in un computer locale  
+## <a name="BKMK_How_to_run_on_a_local_machine"></a> Come eseguire in un computer locale  
  Per eseguire l'app nel computer locale, selezionare **computer locale** dall'elenco a discesa accanto al pulsante Avvia debug nel debugger **Standard** sulla barra degli strumenti.  
   
  ![Eseguire sul computer locale](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")  
@@ -46,15 +46,15 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
   
  Puoi anche impostare la destinazione di esecuzione direttamente nel file delle proprietà del progetto. Fare clic sul nome del progetto in **Esplora soluzioni** e quindi scegliere **proprietà**. Effettua una delle seguenti operazioni:  
   
--   Nei progetti C# e Visual Basic, fare clic su **Debug** e quindi selezionare **computer locale** dal **dispositivo di destinazione** elenco a discesa.  
+- Nei progetti c# e Visual Basic, fare clic su **Debug** e quindi selezionare **computer locale** dal **dispositivo di destinazione** elenco a discesa.  
   
      ![C&#35; pagina delle proprietà progetto Visual Basic e](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   
--   Nei progetti C++ e JavaScript, espandere la **le proprietà di configurazione** nodo, fare clic su **Debugging**e quindi selezionare **Debugger locale** dal **Debugger Per avviare** elenco.  
+- Nei progetti C++ e JavaScript, espandere la **le proprietà di configurazione** nodo, fare clic su **Debugging**e quindi selezionare **Debugger locale** dal **Debugger Per avviare** elenco.  
   
      ![C&#43; &#43; e pagina delle proprietà di progetto JavaScript](../debugger/media/vsrun-cpp-js-projprop-local.png "VSRUN_CPP_JS_ProjProp_Local")  
   
-##  <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Viene illustrato come passare tra un'app di Windows Store e Visual Studio su un solo monitor  
+## <a name="BKMK_How_to_switch_between_a_Windows_Store_app_and_Visual_Studio_on_a_single_monitor"></a> Viene illustrato come passare tra un'app di Windows Store e Visual Studio su un solo monitor  
  **Per passare da un'istanza in esecuzione di un'app Windows Store da Visual Studio**  
   
  Quando esegui un'app Windows Store su un computer locale e usi un solo monitor, potresti voler tornare a Visual Studio lasciando in esecuzione l'app. L'app potrebbe essere in uno stato che non può essere raggiunto da un punto di interruzione, ad esempio potrebbe essere in attesa di un evento o inclusa in un ciclo lungo o infinito. Per tornare a Visual Studio, premi ALT+TAB.

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037868"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inizializzare i campi statici del tipo di riferimento inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58967768"
 
  I controlli dei costruttori statici possono ridurre le prestazioni. Spesso un costruttore statico viene usato solo per inizializzare i campi statici, in cui i casi è necessario solo assicurarsi che l'inizializzazione statica si verifica prima del primo accesso di un campo statico. Il `beforefieldinit` comportamento è appropriato per questi e molti altri tipi. È solo inappropriata quando l'inizializzazione statica influisce sullo stato globale e viene soddisfatta una delle operazioni seguenti:
 
--   L'effetto sullo stato globale è dispendiosa e non è obbligatorio se non viene utilizzato il tipo.
+- L'effetto sullo stato globale è dispendiosa e non è obbligatorio se non viene utilizzato il tipo.
 
--   Gli effetti di stato globale sono accessibili senza accesso a tutti i campi statici del tipo.
+- Gli effetti di stato globale sono accessibili senza accesso a tutti i campi statici del tipo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, inizializzare tutti i dati statici quando vengono dichiarati e rimuovere il costruttore statico.

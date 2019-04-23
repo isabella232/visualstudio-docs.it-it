@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c79a8a0558594e8981959750ebd348b6f9f4d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6503efd0fa606042089e26b4cac23adcabdcb6e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041016"
 ---
 # <a name="vs-shell-deployment"></a>Distribuzione della shell di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Una shell isolata consente di determinare quali Visual Studio la funzionalit√† √
   
 ### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Per impostare una Shell di Visual Studio come destinazione di distribuzione  
   
-1.  Nel **DslPackage** progetto aprire **source.extension.tt**.  
+1. Nel **DslPackage** progetto aprire **source.extension.tt**.  
   
-2.  In `<SupportedProducts>` inserire:  
+2. In `<SupportedProducts>` inserire:  
   
     ```  
     <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>  

@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038343"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre- e post-strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,39 +53,39 @@ ms.locfileid: "54792834"
   
 ### <a name="to-specify-pre-instrument-commands"></a>Per specificare comandi pre-strumentazione  
   
-1.  Effettuare uno dei passaggi indicati di seguito.  
+1. Effettuare uno dei passaggi indicati di seguito.  
   
-    -   Per specificare comandi pre-strumentazione per tutti i file binari in una sessione di prestazioni, selezionare il nodo della sessione di prestazioni in **Esplora prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
+    - Per specificare comandi pre-strumentazione per tutti i file binari in una sessione di prestazioni, selezionare il nodo della sessione di prestazioni in **Esplora prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
   
-    -   Per specificare comandi pre-strumentazione per un file binario specifico, fare clic con il pulsante destro del mouse sul nome del file binario nell'elenco **Destinazioni** della sessione di prestazioni e quindi selezionare **Proprietà**.  
+    - Per specificare comandi pre-strumentazione per un file binario specifico, fare clic con il pulsante destro del mouse sul nome del file binario nell'elenco **Destinazioni** della sessione di prestazioni e quindi selezionare **Proprietà**.  
   
-2.  In **Pagine delle proprietà** fare clic su **Strumentazione**.  
+2. In **Pagine delle proprietà** fare clic su **Strumentazione**.  
   
-3.  Digitare il comando nella casella di testo **Riga di comando** in **Eventi pre-strumentazione**.  
+3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi pre-strumentazione**.  
   
     > [!NOTE]
     >  È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
      Per disabilitare l'esecuzione del comando senza rimuoverlo, selezionare la casella di controllo **Escludere dalla strumentazione**. Per modificare le impostazioni del compilatore o del linker, usare le pagine delle proprietà del progetto.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Per specificare comandi post-strumentazione  
   
-1.  Effettuare uno dei passaggi indicati di seguito.  
+1. Effettuare uno dei passaggi indicati di seguito.  
   
-    -   Per specificare comandi post-strumentazione per tutti i file binari in una sessione di prestazioni, selezionare il nodo della sessione di prestazioni in **Esplora prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
+    - Per specificare comandi post-strumentazione per tutti i file binari in una sessione di prestazioni, selezionare il nodo della sessione di prestazioni in **Esplora prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
   
-    -   Per specificare comandi post-strumentazione per un file binario specifico, fare clic con il pulsante destro del mouse sul nome del file binario nell'elenco **Destinazioni** della sessione di prestazioni e quindi selezionare **Proprietà**.  
+    - Per specificare comandi post-strumentazione per un file binario specifico, fare clic con il pulsante destro del mouse sul nome del file binario nell'elenco **Destinazioni** della sessione di prestazioni e quindi selezionare **Proprietà**.  
   
-2.  In **Pagine delle proprietà** fare clic su **Strumentazione**.  
+2. In **Pagine delle proprietà** fare clic su **Strumentazione**.  
   
-3.  Digitare il comando nella casella di testo **Riga di comando** in **Eventi post-strumentazione**.  
+3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi post-strumentazione**.  
   
     > [!NOTE]
     >  È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
      Per disabilitare l'esecuzione del comando senza rimuoverlo, selezionare la casella di controllo **Escludere dalla strumentazione**. Per modificare le impostazioni del compilatore o del linker, usare le pagine delle proprietà del progetto.  
   

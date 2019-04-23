@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041591"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di conferma che i valori immessi negli oggetti di data è conforme ai vincoli all'interno dello schema del set di dati. Il processo di convalida verifica anche che questi valori sono i seguenti le regole che sono state stabilite per l'applicazione. È buona norma convalidare i dati prima dell'invio degli aggiornamenti al database sottostante. In questo modo si riduce gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.
@@ -38,18 +38,18 @@ Il modo migliore per aggiungere la convalida per l'applicazione è nel file di c
 ## <a name="validate-data"></a>Convalidare i dati
  L'operazione di convalida all'interno di un set di dati viene eseguita nei modi seguenti:
 
--   Quando si crea il proprio convalida specifiche dell'applicazione in grado di verificare i valori in una singola colonna dati durante le modifiche. Per altre informazioni, vedere [procedura: convalidare i dati durante la modifica delle colonne](validate-data-in-datasets.md).
+- Quando si crea il proprio convalida specifiche dell'applicazione in grado di verificare i valori in una singola colonna dati durante le modifiche. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle colonne](validate-data-in-datasets.md).
 
--   Tramite la creazione di convalida personalizzata specifici dell'applicazione in grado di verificare i dati dei valori, mentre un intero data la modifica di riga. Per altre informazioni, vedere [procedura: convalidare i dati durante la modifica delle righe](validate-data-in-datasets.md).
+- Tramite la creazione di convalida personalizzata specifici dell'applicazione in grado di verificare i dati dei valori, mentre un intero data la modifica di riga. Per altre informazioni, vedere [Procedura: Convalidare i dati durante la modifica delle righe](validate-data-in-datasets.md).
 
--   Tramite la creazione di chiavi, vincoli unique, e così via come parte della definizione effettiva dello schema del set di dati.
+- Tramite la creazione di chiavi, vincoli unique, e così via come parte della definizione effettiva dello schema del set di dati.
 
--   Impostando le proprietà del <xref:System.Data.DataColumn> dell'oggetto, ad esempio <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, e <xref:System.Data.DataColumn.Unique%2A>.
+- Impostando le proprietà del <xref:System.Data.DataColumn> dell'oggetto, ad esempio <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, e <xref:System.Data.DataColumn.Unique%2A>.
 
 Diversi eventi generati dal <xref:System.Data.DataTable> quando viene apportata una modifica in un record dell'oggetto:
 
--   Il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> gli eventi vengono generati durante e dopo ogni modifica apportata a una singola colonna. Il <xref:System.Data.DataTable.ColumnChanging> evento è utile quando si desidera convalidare le modifiche in colonne specifiche. Informazioni sulla modifica di proposta viene passate come argomento all'evento.
--   Il <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> gli eventi vengono generati durante e dopo qualsiasi modifica apportata a una riga. Il <xref:System.Data.DataTable.RowChanging> evento è più generale. Indica che viene apportata una modifica in un punto qualsiasi nella riga, ma non si sa quale colonna è stata modificata.
+- Il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> gli eventi vengono generati durante e dopo ogni modifica apportata a una singola colonna. Il <xref:System.Data.DataTable.ColumnChanging> evento è utile quando si desidera convalidare le modifiche in colonne specifiche. Informazioni sulla modifica di proposta viene passate come argomento all'evento.
+- Il <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> gli eventi vengono generati durante e dopo qualsiasi modifica apportata a una riga. Il <xref:System.Data.DataTable.RowChanging> evento è più generale. Indica che viene apportata una modifica in un punto qualsiasi nella riga, ma non si sa quale colonna è stata modificata.
 
 Per impostazione predefinita, ogni modifica apportata a una colonna genera quindi quattro eventi. Il primo è il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> eventi per la colonna specifica da modificare. Successivamente vengono le <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventi. Se vengono apportate più modifiche alla riga, gli eventi verranno generati per ogni modifica.
 
@@ -84,11 +84,11 @@ Il <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowCh
 
 È possibile convalidare dati quando cambia il valore in una colonna di dati in risposta al <xref:System.Data.DataTable.ColumnChanging> evento. Quando generato, questo evento passa un argomento di evento (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) che contiene il valore che viene viene proposto per la colonna corrente. In base al contenuto di `e.ProposedValue`, è possibile:
 
--   Accettare il valore proposto, viene eseguita alcuna operazione.
+- Accettare il valore proposto, viene eseguita alcuna operazione.
 
--   Rifiutare il valore proposto, impostando l'errore di colonna (<xref:System.Data.DataRow.SetColumnError%2A>) dall'interno del gestore eventi di modifica delle colonne.
+- Rifiutare il valore proposto, impostando l'errore di colonna (<xref:System.Data.DataRow.SetColumnError%2A>) dall'interno del gestore eventi di modifica delle colonne.
 
--   Facoltativamente, usare un <xref:System.Windows.Forms.ErrorProvider> controllo per visualizzare un messaggio di errore all'utente. Per altre informazioni, vedere [Componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+- Facoltativamente, usare un <xref:System.Windows.Forms.ErrorProvider> controllo per visualizzare un messaggio di errore all'utente. Per altre informazioni, vedere [Componente ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.RowChanging> evento.
 
@@ -97,25 +97,25 @@ La convalida può essere eseguita anche durante il <xref:System.Data.DataTable.R
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Per convalidare i dati quando una riga viene modificato (Visual Basic)
 
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il <xref:System.Data.DataTable.RowChanging> gestore dell'evento del <xref:System.Data.DataTable> nel file di classe parziale del set di dati.
+2. Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il <xref:System.Data.DataTable.RowChanging> gestore dell'evento del <xref:System.Data.DataTable> nel file di classe parziale del set di dati.
 
     > [!TIP]
     >  Fare doppio clic a sinistra del nome della tabella per creare il gestore di eventi di modifica di riga. Se si fa doppio clic il nome della tabella, è possibile modificarlo.
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>Per convalidare i dati quando viene modificata una riga (C#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>Per convalidare i dati quando viene modificata una riga (c#)
 
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea un file di classe parziale per il <xref:System.Data.DataTable>.
+2. Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea un file di classe parziale per il <xref:System.Data.DataTable>.
 
     > [!NOTE]
     >  Il **Progettazione Dataset** non crea automaticamente un gestore eventi per il <xref:System.Data.DataTable.RowChanging> evento. È necessario creare un metodo per gestire il <xref:System.Data.DataTable.RowChanging> evento ed eseguire codice per associare l'evento in un metodo di inizializzazione della tabella.
 
-3.  Copiare il codice seguente nella classe parziale:
+3. Copiare il codice seguente nella classe parziale:
 
     ```csharp
     public override void EndInit()
@@ -149,7 +149,7 @@ Usare il <xref:System.Data.DataRowVersion> enumerazione per accedere alle versio
 
 ### <a name="to-get-all-changed-records-from-a-dataset"></a>Per ottenere tutti i record modificati da un set di dati
 
--   Chiamare il <xref:System.Data.DataSet.GetChanges%2A> metodo di un set di dati.
+- Chiamare il <xref:System.Data.DataSet.GetChanges%2A> metodo di un set di dati.
 
      L'esempio seguente crea un nuovo set di dati denominato `changedRecords` e lo popola con tutti i record modificati da un altro set di dati denominato `dataSet1`.
 
@@ -158,7 +158,7 @@ Usare il <xref:System.Data.DataRowVersion> enumerazione per accedere alle versio
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>Per ottenere tutti i record modificati da una tabella dati
 
--   Chiamare il <xref:System.Data.DataTable.GetChanges%2A> metodo di un oggetto DataTable.
+- Chiamare il <xref:System.Data.DataTable.GetChanges%2A> metodo di un oggetto DataTable.
 
      L'esempio seguente crea una nuova tabella di dati denominata `changedRecordsTable` e lo popola con tutti i record modificati da un'altra tabella di dati denominato `dataTable1`.
 
@@ -167,7 +167,7 @@ Usare il <xref:System.Data.DataRowVersion> enumerazione per accedere alle versio
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Per ottenere tutti i record che hanno uno stato di riga specifico
 
--   Chiamare il `GetChanges` metodo di un set di dati o tabella di dati e passare un <xref:System.Data.DataRowState> valore di enumerazione come argomento.
+- Chiamare il `GetChanges` metodo di un set di dati o tabella di dati e passare un <xref:System.Data.DataRowState> valore di enumerazione come argomento.
 
      Nell'esempio seguente viene illustrato come creare un nuovo set di dati denominato `addedRecords` e popolarla solo con i record che sono state aggiunte ad il `dataSet1` set di dati.
 
@@ -189,7 +189,7 @@ Passando il <xref:System.Data.DataRowVersion> valore con l'indice di colonna (o 
 
 ### <a name="to-get-the-original-version-of-a-record"></a>Per ottenere la versione originale di un record
 
--   Accedere al valore di una colonna, passando il <xref:System.Data.DataRowVersion> della riga di cui si desidera restituire.
+- Accedere al valore di una colonna, passando il <xref:System.Data.DataRowVersion> della riga di cui si desidera restituire.
 
      Nell'esempio seguente viene illustrato come utilizzare un <xref:System.Data.DataRowVersion> valore da ottenere il valore originale di una `CompanyName` campo un <xref:System.Data.DataRow>:
 
@@ -200,7 +200,7 @@ Passando il <xref:System.Data.DataRowVersion> valore con l'indice di colonna (o 
 
 ### <a name="to-get-the-current-version-of-a-record"></a>Per ottenere la versione corrente di un record
 
--   Accedere al valore di una colonna e quindi aggiungere un parametro per l'indice che indica quale versione di una riga a cui si desidera restituire.
+- Accedere al valore di una colonna e quindi aggiungere un parametro per l'indice che indica quale versione di una riga a cui si desidera restituire.
 
      Nell'esempio seguente viene illustrato come utilizzare un <xref:System.Data.DataRowVersion> valore da ottenere il valore corrente di un `CompanyName` campo un <xref:System.Data.DataRow>:
 
@@ -210,5 +210,5 @@ Passando il <xref:System.Data.DataRowVersion> valore con l'indice di colonna (o 
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Procedura: Convalidare dati nel controllo DataGridView di Windows Form](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Procedura: Visualizzare le icone di errori per la convalida dei moduli con il componente ErrorProvider di Windows Form](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Procedura: Convalidare i dati nel controllo DataGridView di Windows Form](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Procedura: Visualizzare le icone di errore di convalida dei form con il componente ErrorProvider di Windows Form](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

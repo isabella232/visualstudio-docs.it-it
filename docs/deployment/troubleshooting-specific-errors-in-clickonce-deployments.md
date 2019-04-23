@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042381"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 Questo articolo elenca i seguenti errori comuni che possono verificarsi quando si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e viene descritta la procedura per risolvere ogni problema.
@@ -81,9 +81,9 @@ Questo articolo elenca i seguenti errori comuni che possono verificarsi quando s
 
  È consigliabile eseguire le operazioni seguenti:
 
--   Verificare che l'identità del manifesto della distribuzione, il manifesto dell'applicazione e identità dell'applicazione principale. EXE siano tutti univoci.
+- Verificare che l'identità del manifesto della distribuzione, il manifesto dell'applicazione e identità dell'applicazione principale. EXE siano tutti univoci.
 
--   Verificare che i percorsi dei file non sono più di 100 caratteri. Se l'applicazione contiene i percorsi di file che sono troppo lunghi, si possono superare le limitazioni relative al percorso massimo che è possibile archiviare. Provare ad abbreviare i percorsi e reinstallare.
+- Verificare che i percorsi dei file non sono più di 100 caratteri. Se l'applicazione contiene i percorsi di file che sono troppo lunghi, si possono superare le limitazioni relative al percorso massimo che è possibile archiviare. Provare ad abbreviare i percorsi e reinstallare.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Attributo PrivatePath impostazioni nel file di configurazione dell'applicazione non vengono rispettate
  Per usare PrivatePath (percorsi di sondaggio di Fusion), l'applicazione deve richiedere l'autorizzazione di attendibilità totale. Provare a modificare il manifesto dell'applicazione per richiedere l'attendibilità totale e quindi riprovare.
@@ -112,9 +112,9 @@ Questo articolo elenca i seguenti errori comuni che possono verificarsi quando s
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Si è tentato di accedere con un certificato nell'archivio dei certificati e una casella ricevuto alcun messaggio
  Nel **firma** finestra di dialogo, è necessario:
 
--   Selezionare **firma con un certificato archiviato**, e
+- Selezionare **firma con un certificato archiviato**, e
 
--   Selezionare un certificato dall'elenco. il primo certificato non è selezionata l'impostazione predefinita.
+- Selezionare un certificato dall'elenco. il primo certificato non è selezionata l'impostazione predefinita.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Fare clic sul pulsante "Sign non" genera un'eccezione
  Questo problema è un bug noto. Tutti i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i manifesti sono deve essere firmato. Selezionare una delle opzioni di firma e quindi fare clic su **OK**.

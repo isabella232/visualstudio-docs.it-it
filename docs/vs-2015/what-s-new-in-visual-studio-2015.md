@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041835"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 ## <a name="cross-platform-debugging-support"></a>Supporto per il debug multipiattaforma
  È possibile usare Visual Studio per creare ed eseguire il debug di app native per dispositivi mobili eseguite in dispositivi Windows, iOS e Android. Usare [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)oppure connettere un dispositivo ed eseguire il debug del codice direttamente in Visual Studio.
 
--   **JavaScript / Cordova**. Usare [Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android con JavaScript.
+- **JavaScript / Cordova**. Usare [Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android con JavaScript.
 
      [Eseguire il debug dell'App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) in MSDN Library è un approfondimento su debug supporto per Cordova di Visual Studio.
 
--   **C# / Xamarin**. Usare [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android in Visual Studio con C#.
+- **C# / Xamarin**. Usare [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android in Visual Studio con C#.
 
      Gli argomenti relativi a[debug](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [debug nel dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) delle [guide per sviluppatori Xamarin](http://developer.xamarin.com/guides) descrivono l'esperienza di debug.
 
--   **C++ / Android**. Usare i modelli di [Visual C++ per lo sviluppo per dispositivi mobili multipiattaforma](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) insieme a strumenti di terze parti come [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) per creare app native per Windows e Android.
+- **C++ / Android**. Usare i modelli di [Visual C++ per lo sviluppo per dispositivi mobili multipiattaforma](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) insieme a strumenti di terze parti come [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) per creare app native per Windows e Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debug e diagnostica
 
@@ -140,7 +140,7 @@ Per informazioni sulle nuove funzionalità di diagnostica, vedere [What ' s New 
 Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diversi tipi di diagnosi e di analisi nel codice:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per un'introduzione, vedere il post relativo a [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per iniziare, vedere [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx) (PerfTips: Informazioni immediate sulle prestazioni durante il debug in Visual Studio)
 
 ### <a name="error-list"></a>Elenco errori
  L'elenco errori ora supporta l'applicazione del filtro su qualsiasi colonna. Consente inoltre di visualizzare in tempo reale errori, avvisi e analisi di codice nell'intera soluzione C# o Visual Basic mentre si digita, anche quando una modifica del codice produce migliaia di avvisi. Il nuovo Elenco errori è compatibile con la modalità d'uso esistente. Per altre informazioni, vedere [Error List Window](./ide/reference/error-list-window.md).
@@ -179,18 +179,18 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ### <a name="notification-hub"></a>Hub di notifica
  L'interfaccia utente per l'hub di notifica è stata semplificata per consentire di eseguire facilmente un'analisi rapida. Sono stati aggiunti altri tipi di notifiche tra cui quelle per problemi di prestazioni, problemi di rendering e arresti anomali del sistema e ora è possibile scegliere di non visualizzare più una notifica. Per altre informazioni, vedere [Notifiche di Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: cercare informazioni sul codice (solo Enterprise e Professional Edition)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Individuare che cosa è successo al codice (solo edizioni Enterprise e Professional)
  CodeLens consente di rimanere concentrati sulle proprie attività mentre si cercano informazioni sul codice senza uscire dall'editor. È possibile esaminare le modifiche e altri riferimenti della cronologia per elementi di lavoro, bug, revisioni del codice e così via per il codice archiviato in Visual Studio Team Services (VSTS) o in Team Foundation Server (TFS).
 
  In Visual Studio Enterprise e Visual Studio Professional ora è possibile:
 
 - Ottenere la cronologia per un intero file di codice nell'editor di Visual Studio.
 
-   ![CodeLens: ottenere i dettagli sul file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Ottieni dettagli dei file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Visualizzare un grafico che mostra le persone che hanno modificato il codice. consentendo di individuare i criteri delle modifiche del team e di valutarne l'impatto.
 
-   ![CodeLens: visualizzare la cronologia delle modifiche del codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Vedere cronologia delle modifiche di codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
 
 - Individuare facilmente la data delle ultime modifiche apportate al codice.
 
@@ -242,7 +242,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ## <a name="visual-studio-extensibility-tools"></a>Strumenti di estendibilità in Visual Studio
  Non è mai stato così semplice installare Visual Studio Extensibility Tools (Visual Studio SDK e modelli). Infatti ora vengono inclusi come componenti facoltativi durante l'installazione.  Gli strumenti di estendibilità consentono agli sviluppatori di scrivere le estensioni da personalizzare e aggiungere funzionalità a Visual Studio. Per ulteriori informazioni sulle estendibilità di Visual Studio, vedere [Visual Studio SDK](./extensibility/visual-studio-sdk.md).
 
- Se si desidera includere gli strumenti di estendibilità con l'installazione personalizzata, è possibile trovarli in **Funzionalità / Strumenti comuni / Strumenti di estendibilità di Visual Studio**.  È inoltre possibile installare gli strumenti di estendibilità in un secondo momento aprendo la finestra di dialogo **Nuovo progetto** e selezionando l’elemento **Installare gli strumenti di estendibilità di Visual Studio** in **Visual C# / Extensibility**.
+ Se si desidera includere gli strumenti di estendibilità con l'installazione personalizzata, è possibile trovarli in **Funzionalità / Strumenti comuni / Strumenti di estendibilità di Visual Studio**.  È inoltre possibile installare gli strumenti di estendibilità in un secondo momento aprendo la finestra di dialogo **Nuovo progetto** e selezionando l’elemento **Installare gli strumenti di estendibilità di Visual Studio** in **Visual c# / Extensibility**.
 
 ## <a name="please-give-feedback"></a>Invio di commenti e suggerimenti
  È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, esaminando singolarmente tutti quelli pervenuti nel proprio sistema e usandoli per migliorare i propri prodotti.

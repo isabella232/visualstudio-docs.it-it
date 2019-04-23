@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040844"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Il pacchetto e distribuire soluzioni di SharePoint
   In genere, una soluzione di SharePoint viene distribuita in un server SharePoint tramite file di pacchetto (con estensione wsp). È possibile usare Visual Studio per organizzare gli elementi di progetto SharePoint in funzionalità e creare un pacchetto per distribuire le funzionalità di SharePoint.
 
  In questo argomento vengono fornite le seguenti informazioni:
 
--   [Creare funzionalità e pacchetti](#create-features-and-packages)
+- [Creare funzionalità e pacchetti](#create-features-and-packages)
 
--   [Funzionalità e supporto dello strumento di creazione di pacchetti](#feature-and-packaging-tool-support)
+- [Funzionalità e supporto dello strumento di creazione di pacchetti](#feature-and-packaging-tool-support)
 
--   [Distribuzione delle soluzioni SharePoint](#deploy-sharepoint-solutions)
+- [Distribuzione delle soluzioni SharePoint](#deploy-sharepoint-solutions)
 
--   [Distribuire i file di soluzioni SharePoint](#deploy-files-in-sharepoint-solutions)
+- [Distribuire i file di soluzioni SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Creare funzionalità e pacchetti
  È possibile usare Visual Studio per raggruppare gli elementi di SharePoint correlati in una *funzionalità*. Ad esempio, una funzionalità per una definizione di elenco contatti può includere l'istanza di elenco e la definizione di elenco. È possibile combinare questi due elementi in una singola funzionalità per garantire una distribuzione. Per altre informazioni sulle funzionalità, vedere [blocco predefinito: Funzionalità](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867564"
 ## <a name="feature-and-packaging-tool-support"></a>Funzionalità e supporto dello strumento di creazione di pacchetti
  È possibile usare gli strumenti di sviluppo di SharePoint in Visual Studio a organizzare rapidamente i file di SharePoint in funzionalità e pacchetti di soluzioni per semplificare la distribuzione. È possibile usare gli strumenti seguenti per configurare il pacchetto di funzionalità e soluzioni.
 
--   Progettazione di funzionalità e pacchetto.
+- Progettazione di funzionalità e pacchetto.
 
--   Esplora pacchetti, una finestra degli strumenti.
+- Esplora pacchetti, una finestra degli strumenti.
 
--   Esplora soluzioni.
+- Esplora soluzioni.
 
 ### <a name="feature-designer-and-package-designer"></a>Progettazione di funzionalità e pacchetto
  È possibile creare funzionalità imposta ambiti di e contrassegnare altre funzionalità come dipendenze utilizzando la finestra di progettazione di funzionalità. La finestra di progettazione visualizza anche il file XML finale che descrive ogni funzionalità. Per altre informazioni, vedere [funzionalità di SharePoint creare](../sharepoint/creating-sharepoint-features.md).

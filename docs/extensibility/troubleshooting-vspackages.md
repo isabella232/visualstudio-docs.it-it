@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039733"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage e suggerimenti per risolvere i problemi.
@@ -56,7 +56,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Per risolvere i problemi di un pacchetto VSPackage che registra
 
-1.  Assicurarsi che l'assembly VSPackage si trova in una posizione attendibile. RegPkg non è possibile registrare gli assembly in una posizione non attendibile o parzialmente attendibile, ad esempio una condivisione di rete nella configurazione di sicurezza predefinito .net. Anche se viene visualizzato un avviso ogni volta che un utente crea un progetto in una posizione non attendibile, la casella di controllo "non visualizzare più questo messaggio" può impedire questo avviso non venga ricorrente.
+1. Assicurarsi che l'assembly VSPackage si trova in una posizione attendibile. RegPkg non è possibile registrare gli assembly in una posizione non attendibile o parzialmente attendibile, ad esempio una condivisione di rete nella configurazione di sicurezza predefinito .net. Anche se viene visualizzato un avviso ogni volta che un utente crea un progetto in una posizione non attendibile, la casella di controllo "non visualizzare più questo messaggio" può impedire questo avviso non venga ricorrente.
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Per risolvere i problemi di un comando che non è visibile o che genera un errore quando si fa clic su un comando
 
@@ -64,44 +64,44 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 
 2. Verificare che l'opzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reperibile UI.dll per il pacchetto VSPackage.
 
-   1.  Trovare il CLSID del pacchetto VSPackage nella sezione pacchetti del Registro di sistema:
+   1. Trovare il CLSID del pacchetto VSPackage nella sezione pacchetti del Registro di sistema:
 
         Studio HKLM\Software\Microsoft\Visual\\*\<versione >* \Packages
 
-   2.  Verificare che il percorso specificato dalla sottochiave SatelliteDll sia corretto.
+   2. Verificare che il percorso specificato dalla sottochiave SatelliteDll sia corretto.
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Per risolvere i problemi di un pacchetto VSPackage che si comporta in modo imprevisto
 
-1.  Impostare i punti di interruzione nel codice.
+1. Impostare i punti di interruzione nel codice.
 
      I punti di partenza ottimali per il debug sono il costruttore e il metodo di inizializzazione. È anche possibile impostare i punti di interruzione nell'area di cui che si vuole valutare, ad esempio un comando di menu. Per abilitare i punti di interruzione, è necessario eseguire il debugger.
 
-    1.  Scegliere **Proprietà** dal menu **Progetto**.
+    1. Scegliere **Proprietà** dal menu **Progetto**.
 
-    2.  Nel **pagine delle proprietà** finestra di dialogo, seleziona la **Debug** scheda.
+    2. Nel **pagine delle proprietà** finestra di dialogo, seleziona la **Debug** scheda.
 
-    3.  Nel **argomenti della riga di comando** , digitare il suffisso di radice dell'ambiente di sviluppo che il pacchetto VSPackage è destinato. Ad esempio, per selezionare la build sperimentale, digitare: **RootSuffix Exp**.
+    3. Nel **argomenti della riga di comando** , digitare il suffisso di radice dell'ambiente di sviluppo che il pacchetto VSPackage è destinato. Ad esempio, per selezionare la build sperimentale, digitare: **RootSuffix Exp**.
 
-    4.  Nel **Debug** menu, fare clic su **Avvia debug** o premere F5.
+    4. Nel **Debug** menu, fare clic su **Avvia debug** o premere F5.
 
         > [!NOTE]
         >  Se si esegue il debug di un progetto, creare o caricare un'istanza esistente del progetto a questo punto.
 
-2.  Usare il log attività.
+2. Usare il log attività.
 
      Tracciare il comportamento di VSPackage scrivendo informazioni nel log attività in punti chiave. Questa tecnica è particolarmente utile quando si esegue un pacchetto VSPackage in un ambiente di vendita al dettaglio. Per altre informazioni, vedere [Procedura: Usare il Log attività](../extensibility/how-to-use-the-activity-log.md).
 
-3.  Usare i simboli pubblici.
+3. Usare i simboli pubblici.
 
      Per migliorare la leggibilità durante il debug, è possibile collegare i simboli del debugger.
 
-    1.  Dal **Strumenti/opzioni** dal menu passare alle **debug/simboli** nella finestra di dialogo.
+    1. Dal **Strumenti/opzioni** dal menu passare alle **debug/simboli** nella finestra di dialogo.
 
-    2.  Aggiungere quanto segue **percorso del file (con estensione pdb) di simboli**:
+    2. Aggiungere quanto segue **percorso del file (con estensione pdb) di simboli**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  Per migliorare le prestazioni, specificare una cartella della cache di simboli, ad esempio:
+    3. Per migliorare le prestazioni, specificare una cartella della cache di simboli, ad esempio:
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 
 1. Per codice gestito, assicurarsi che i percorsi di riferimento siano corretti.
 
-   1.  Scegliere **Proprietà** dal menu **Progetto**.
+   1. Scegliere **Proprietà** dal menu **Progetto**.
 
-   2.  Selezionare il **riferimenti** scheda le **pagine delle proprietà** nella finestra di dialogo e assicurarsi che tutti i percorsi siano corretti. In alternativa, è possibile usare la **Visualizzatore oggetti** per cercare gli oggetti di riferimento.
+   2. Selezionare il **riferimenti** scheda le **pagine delle proprietà** nella finestra di dialogo e assicurarsi che tutti i percorsi siano corretti. In alternativa, è possibile usare la **Visualizzatore oggetti** per cercare gli oggetti di riferimento.
 
         Per codice gestito, è possibile usare la [Fuslogvw.exe (Visualizzatore registro associazione Assembly)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) per visualizzare i dettagli di caricamenti di assembly non riuscita.
 

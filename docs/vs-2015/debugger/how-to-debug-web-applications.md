@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039544"
 ---
 # <a name="how-to-debug-web-applications"></a>Procedura: Eseguire il debug di applicazioni Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "58970276"
   
  Per eseguire il debug di un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   È necessario disporre delle autorizzazioni richieste. Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+- È necessario disporre delle autorizzazioni richieste. Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] il debug deve essere abilitato nel **proprietà del progetto**.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] il debug deve essere abilitato nel **proprietà del progetto**.  
   
--   Il file di configurazione dell'applicazione (Web.config) deve essere impostato sulla modalità debug. La modalità di debug fa in modo che [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] generi simboli per i file generati dinamicamente e consente al debugger di creare un allegato all'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] configura automaticamente questa impostazione quando si avvia il debug, se il progetto è stato creato dal modello dei progetti Web.  
+- Il file di configurazione dell'applicazione (Web.config) deve essere impostato sulla modalità debug. La modalità di debug fa in modo che [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] generi simboli per i file generati dinamicamente e consente al debugger di creare un allegato all'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] configura automaticamente questa impostazione quando si avvia il debug, se il progetto è stato creato dal modello dei progetti Web.  
   
--   Per altre informazioni, vedere [Procedura: Abilitare il debug per le applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Per altre informazioni, vedere [Procedura: Abilitare il debug per le applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Per eseguire il debug di un'applicazione Web durante lo sviluppo  
   
-1.  Nel **Debug** menu, fare clic su **avviare** per avviare il debug dell'applicazione Web.  
+1. Nel **Debug** menu, fare clic su **avviare** per avviare il debug dell'applicazione Web.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compila il progetto applicazione Web, distribuisce l'applicazione se necessario, avvia il server di sviluppo ASP.NET se il debug viene eseguito a livello locale e si connette al processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
-2.  Utilizzare il debugger  per impostare e rimuovere punti di interruzione, eseguire singole istruzioni e compiere altre operazioni di debug, come per qualsiasi altra applicazione.  
+2. Utilizzare il debugger  per impostare e rimuovere punti di interruzione, eseguire singole istruzioni e compiere altre operazioni di debug, come per qualsiasi altra applicazione.  
   
      Per altre informazioni, vedere [nozioni fondamentali di debug](../debugger/debugger-basics.md).  
   
-3.  Nel **eseguire il Debug** menu, fare clic su **arresta debug** alla fine della sessione di debug o, nel **File** dal menu in Internet Explorer, fare clic su **Chiudi**.  
+3. Nel **eseguire il Debug** menu, fare clic su **arresta debug** alla fine della sessione di debug o, nel **File** dal menu in Internet Explorer, fare clic su **Chiudi**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)   

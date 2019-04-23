@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040069"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Accesso a dati locali e remoti in applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 ## <a name="local-data"></a>Dati locali  
  Con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], è possibile caricare e archiviare i dati in locale usando uno dei seguenti metodi:  
   
--   Directory dei dati di[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]   
+- Directory dei dati di[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]   
   
--   Spazio di memorizzazione isolato  
+- Spazio di memorizzazione isolato  
   
--   Altri file locali  
+- Altri file locali  
   
 ### <a name="clickonce-data-directory"></a>Directory dei dati di ClickOnce  
  Ogni applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata in un computer locale ha una directory dei dati, archiviata nella cartella dell'utente Documents and Settings. Tutti i file inclusi in un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] e contrassegnati come file "data" vengono copiati in questa directory quando viene installata un'applicazione. I file di dati possono essere di qualsiasi tipo. Quelli usati più frequentemente sono i file di testo, i file XML e i file di database, ad esempio i file mdb di Microsoft Access.  

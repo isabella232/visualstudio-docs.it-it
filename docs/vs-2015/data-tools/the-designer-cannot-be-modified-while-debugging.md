@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb021b5222c0c89d15ca9be9c9c155152118df5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f79b57d01a091e3617e7470297aa6205aa4e20e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041860"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Impossibile modificare la finestra di progettazione durante il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Questo messaggio viene visualizzato quando si tenta di modificare elementi in Pr
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Fare clic su **Termina debug** nel **Debug** menu.  
+- Fare clic su **Termina debug** nel **Debug** menu.  
   
      Il debug viene interrotto e sarà quindi possibile modificare gli elementi in Progettazione relazionale oggetti.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e55e108901d9be62531e459f2b7805f86cfe6a08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040641"
 ---
 # <a name="refresh-an-app-javascript"></a>Aggiornare un'applicazione (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,38 +35,38 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  L'aggiornamento non mantiene lo stato dell'app né riflette le seguenti modifiche nell'app:  
   
--   Modifiche al file manifesto del pacchetto, incluse le modifiche alle immagini specificato nel manifesto di pacchetto.  
+- Modifiche al file manifesto del pacchetto, incluse le modifiche alle immagini specificato nel manifesto di pacchetto.  
   
--   Modifiche dei riferimenti, ad esempio l'aggiunta o la rimozione di un riferimento SDK, o le modifiche ai componenti Windows Runtime (file con estensione winmd).  
+- Modifiche dei riferimenti, ad esempio l'aggiunta o la rimozione di un riferimento SDK, o le modifiche ai componenti Windows Runtime (file con estensione winmd).  
   
--   Modifiche delle risorse, ad esempio modifiche alle stringhe nei file con estensione resjson.  
+- Modifiche delle risorse, ad esempio modifiche alle stringhe nei file con estensione resjson.  
   
--   Modifiche dei file di progetto che causano modifiche dei nomi di percorso, nuovi file di progetto e file eliminati.  
+- Modifiche dei file di progetto che causano modifiche dei nomi di percorso, nuovi file di progetto e file eliminati.  
   
--   Modifiche delle proprietà di elementi e progetti, ad esempio modifiche al dispositivo di debug selezionato o modifiche all'azione del pacchetto per un file (nella finestra Proprietà).  
+- Modifiche delle proprietà di elementi e progetti, ad esempio modifiche al dispositivo di debug selezionato o modifiche all'azione del pacchetto per un file (nella finestra Proprietà).  
   
 > [!IMPORTANT]
 >  Quando modifichi i riferimenti, cambi il manifesto del pacchetto o apporti altre modifiche specificate nell'elenco precedente, devi arrestare e riavviare il debugger per aggiornare i file di origine HTML, CSS e JavaScript.  
   
 ### <a name="to-refresh-an-app"></a>Per aggiornare un'app  
   
-1.  In Visual Studio crea un nuovo progetto usando il modello di progetto Applicazione di navigazione.  
+1. In Visual Studio crea un nuovo progetto usando il modello di progetto Applicazione di navigazione.  
   
      Può trattarsi di un'app Windows Store, di un'app Windows Phone Store o di un'app universale.  
   
-2.  Con il modello aperto in Visual Studio, seleziona una destinazione di debug.  
+2. Con il modello aperto in Visual Studio, seleziona una destinazione di debug.  
   
      Se un progetto Windows Phone è il tuo attuale progetto di avvio, seleziona un'emulatore Windows Phone come destinazione di debug. In caso contrario, selezionare **simulatore** oppure **computer locale**.  
   
      ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-3.  Premi F5 per eseguire l'app in modalità debug.  
+3. Premi F5 per eseguire l'app in modalità debug.  
   
-4.  Passa a Visual Studio. Premi F12.  
+4. Passa a Visual Studio. Premi F12.  
   
-5.  Nelle **Esplora soluzioni**, nella **pagine** > **home** cartella, Apri Home. HTML.  
+5. Nelle **Esplora soluzioni**, nella **pagine** > **home** cartella, Apri Home. HTML.  
   
-6.  Modificare il testo del titolo della pagina da  
+6. Modificare il testo del titolo della pagina da  
   
     ```html  
     Welcome to yourAppName!  
@@ -78,9 +78,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     Hello!  
     ```  
   
-7.  Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js-refresh.png "JS_Refresh"). o premi F4.  
+7. Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js-refresh.png "JS_Refresh"). o premi F4.  
   
-8.  Torna all'app. L'app viene ricaricata senza riavviare il debugger e viene visualizzato il nuovo titolo della pagina.  
+8. Torna all'app. L'app viene ricaricata senza riavviare il debugger e viene visualizzato il nuovo titolo della pagina.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

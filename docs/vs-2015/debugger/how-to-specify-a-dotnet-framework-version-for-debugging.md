@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b3e5d7ebb1f61ffdbff98f49f83025115c80f64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042766"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procedura: Specificare una versione di .NET Framework per il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,29 +35,29 @@ Il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] suppor
   
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>Per specificare una versione di .NET Framework per il debug  
   
-1.  Cercare nella directory Windows\Microsoft.NET\Framework le versioni di .NET Framework installate nel computer. I numeri di versione saranno simili al seguente:  
+1. Cercare nella directory Windows\Microsoft.NET\Framework le versioni di .NET Framework installate nel computer. I numeri di versione saranno simili al seguente:  
   
      `V1.1.4322`  
   
      Identificare il numero di versione corretto e annotarlo.  
   
-2.  Avviare l'**editor del Registro di sistema** (regedit).  
+2. Avviare l'**editor del Registro di sistema** (regedit).  
   
-3.  Nell'**editor del Registro di sistema** aprire la cartella HKEY_LOCAL_MACHINE.  
+3. Nell'**editor del Registro di sistema** aprire la cartella HKEY_LOCAL_MACHINE.  
   
-4.  Passare a: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Passare a: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
      Se la chiave non esiste, fare clic con il pulsante destro del mouse su HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine e scegliere **Nuova chiave**. Denominare la nuova chiave `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
-5.  Dalla chiave {449EC4CC-30D2-4032-9256-EE18EB41B62B}, cercare la chiave CLRVersionForDebugging nella colonna **Nome**.  
+5. Dalla chiave {449EC4CC-30D2-4032-9256-EE18EB41B62B}, cercare la chiave CLRVersionForDebugging nella colonna **Nome**.  
   
-    1.  Se la chiave non esiste, fare clic con il pulsante destro del mouse su {449EC4CC-30D2-4032-9256-EE18EB41B62B} e scegliere **Nuovo Valore stringa**. Quindi fare clic su nuovo valore stringa, fare clic su **rinominare**e il tipo `CLRVersionForDebugging`.  
+    1. Se la chiave non esiste, fare clic con il pulsante destro del mouse su {449EC4CC-30D2-4032-9256-EE18EB41B62B} e scegliere **Nuovo Valore stringa**. Quindi fare clic su nuovo valore stringa, fare clic su **rinominare**e il tipo `CLRVersionForDebugging`.  
   
-6.  Fare doppio clic su **CLRVersionForDebugging**.  
+6. Fare doppio clic su **CLRVersionForDebugging**.  
   
-7.  Digitare il numero di versione di .NET Framework nella casella **Valore** della casella **Modifica stringa**. Ad esempio: V1.1.4322  
+7. Digitare il numero di versione di .NET Framework nella casella **Valore** della casella **Modifica stringa**. Ad esempio: V1.1.4322  
   
-8.  Fare clic su **OK**.  
+8. Fare clic su **OK**.  
   
 9. Chiudere l'**editor del Registro di sistema**.  
   

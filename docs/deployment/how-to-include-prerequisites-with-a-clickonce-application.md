@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 57d89fec51cf73d310e3ad2e18b3d4270bd8ff74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041981"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedura: Includere i prerequisiti con un'applicazione ClickOnce
 Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione**, si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
@@ -21,7 +21,7 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
 > [!NOTE]
 >  Per aggiungere un pacchetto di installazione di .NET Framework, vedere [Guida alla distribuzione di .NET Framework per sviluppatori](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-##  <a name="Package"></a> Per aggiungere un pacchetto di installazione tramite Package.xml
+## <a name="Package"></a> Per aggiungere un pacchetto di installazione tramite Package.xml
 
 1. In Esplora file aprire la cartella **Pacchetti**.
 

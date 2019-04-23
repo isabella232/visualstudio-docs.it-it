@@ -10,12 +10,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039711"
 ---
 # <a name="binding-breakpoints"></a>Associazione di punti di interruzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Se l'utente imposta un punto di interruzione, ad esempio premendo F9, l'IDE form
 ## <a name="setting-a-breakpoint"></a>Impostazione di un punto di interruzione  
  L'impostazione di un punto di interruzione è un processo in due passaggi, perché il codice o dati interessati dal punto di interruzione potrebbero non essere ancora disponibili. In primo luogo, il punto di interruzione deve essere descritte, e quindi, quando codice o dati diventano disponibili, deve essere associata a tale codice o dati, come indicato di seguito:  
   
-1.  Il punto di interruzione viene richiesto dai motori di debug pertinenti (DEs), e quindi il punto di interruzione associata al codice o dati appena sarà disponibile.  
+1. Il punto di interruzione viene richiesto dai motori di debug pertinenti (DEs), e quindi il punto di interruzione associata al codice o dati appena sarà disponibile.  
   
-2.  La richiesta di punto di interruzione viene inviata alla sessione di debug, che lo invia a tutti DEs pertinenti. Qualsiasi Germania che sceglie di gestire il punto di interruzione consente di creare un oggetto corrispondente in sospeso punto di interruzione.  
+2. La richiesta di punto di interruzione viene inviata alla sessione di debug, che lo invia a tutti DEs pertinenti. Qualsiasi Germania che sceglie di gestire il punto di interruzione consente di creare un oggetto corrispondente in sospeso punto di interruzione.  
   
-3.  La sessione di debug raccoglie i punti di interruzione in sospeso e li invia al pacchetto di debug (il componente di debug di Visual Studio).  
+3. La sessione di debug raccoglie i punti di interruzione in sospeso e li invia al pacchetto di debug (il componente di debug di Visual Studio).  
   
-4.  Il pacchetto di debug richiede la sessione di debug per associare il punto di interruzione in sospeso al codice o dati. La sessione di debug invia questa richiesta a tutti DEs pertinenti.  
+4. Il pacchetto di debug richiede la sessione di debug per associare il punto di interruzione in sospeso al codice o dati. La sessione di debug invia questa richiesta a tutti DEs pertinenti.  
   
-5.  Se la Germania è in grado di associare il punto di interruzione, viene inviato che un punto di interruzione associato eventi alla sessione di debug. In caso contrario, invia un evento di errore del punto di interruzione.  
+5. Se la Germania è in grado di associare il punto di interruzione, viene inviato che un punto di interruzione associato eventi alla sessione di debug. In caso contrario, invia un evento di errore del punto di interruzione.  
   
 ## <a name="pending-breakpoints"></a>Punti di interruzione in sospeso  
  Possibile associare un punto di interruzione in sospeso per più percorsi del codice. Ad esempio, una riga di codice sorgente per un modello di C++ è possibile associare a ogni sequenza di codice generato dal modello. La sessione di debug è possibile utilizzare un evento associato a punti di interruzione per enumerare i contesti di codice associati a un punto di interruzione al momento che dell'evento è stato inviato. Più contesti di codice possono essere associati in un secondo momento, in modo che la Germania potrebbe inviare che più punti di interruzione associata di eventi per ogni richiesta di associazione. Tuttavia, un CRI deve inviare solo un evento di errore di punto di interruzione per ogni richiesta di associazione.  

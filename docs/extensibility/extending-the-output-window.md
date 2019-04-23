@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041080"
 ---
 # <a name="extend-the-output-window"></a>Estendere la finestra di Output
 Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visual Studio include questi riquadri predefiniti: **Compilare**, nella quale i progetti comunicare i messaggi relativi alle compilazioni, e **generali**, in cui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica i messaggi relativi a IDE. Progetti di ottenere un riferimento al **compilare** riquadro automaticamente tramita il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metodi di interfaccia e Visual Studio offre accesso diretto al **generali** riquadro tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servizio. Oltre ai riquadri predefiniti, è possibile creare e gestire i proprio riquadri personalizzati.
@@ -25,22 +25,22 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>Creare un'estensione che usa il riquadro di Output
  È possibile creare un'estensione che esercita diversi aspetti del riquadro di Output.
 
-1.  Creare un progetto VSIX denominato `TestOutput` con un comando di menu denominato **TestOutput**. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Creare un progetto VSIX denominato `TestOutput` con un comando di menu denominato **TestOutput**. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Aggiungere i riferimenti seguenti:
+2. Aggiungere i riferimenti seguenti:
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  Nelle *TestOutput.cs*, aggiungere la seguente istruzione using:
+3. Nelle *TestOutput.cs*, aggiungere la seguente istruzione using:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Nelle *TestOutput.cs*, eliminare il `ShowMessageBox` (metodo). Aggiungere lo stub del metodo seguente:
+4. Nelle *TestOutput.cs*, eliminare il `ShowMessageBox` (metodo). Aggiungere lo stub del metodo seguente:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }
     ```
 
-5.  Nel costruttore TestOutput, modificare il gestore del comando a OutputCommandHandler. Questa è la parte che aggiunge i comandi:
+5. Nel costruttore TestOutput, modificare il gestore del comando a OutputCommandHandler. Questa è la parte che aggiunge i comandi:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }
     ```
 
-6.  Le sezioni seguenti includono diversi metodi che mostrano diverse modalità di gestione con il riquadro di Output. È possibile chiamare questi metodi al corpo del `OutputCommandHandler()` (metodo). Ad esempio, il codice seguente aggiunge il `CreatePane()` metodo specificato nella sezione successiva.
+6. Le sezioni seguenti includono diversi metodi che mostrano diverse modalità di gestione con il riquadro di Output. È possibile chiamare questi metodi al corpo del `OutputCommandHandler()` (metodo). Ad esempio, il codice seguente aggiunge il `CreatePane()` metodo specificato nella sezione successiva.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

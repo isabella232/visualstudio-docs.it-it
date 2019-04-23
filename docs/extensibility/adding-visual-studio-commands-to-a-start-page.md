@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040159"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Aggiungere comandi di Visual Studio a una pagina iniziale
 
@@ -73,15 +73,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
 ### <a name="to-call-a-command-from-an-assembly"></a>Per chiamare un comando da un assembly
 
-1.  Nella soluzione, aggiungere un riferimento all'assembly.
+1. Nella soluzione, aggiungere un riferimento all'assembly.
 
-2.  In cima il *StartPage* file, aggiungere una direttiva dello spazio dei nomi per l'assembly, come illustrato nell'esempio seguente.
+2. In cima il *StartPage* file, aggiungere una direttiva dello spazio dei nomi per l'assembly, come illustrato nell'esempio seguente.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  Richiamare il comando impostando il `Command` proprietà di un oggetto XAML, come illustrato nell'esempio seguente.
+3. Richiamare il comando impostando il `Command` proprietà di un oggetto XAML, come illustrato nell'esempio seguente.
 
      Xaml
 

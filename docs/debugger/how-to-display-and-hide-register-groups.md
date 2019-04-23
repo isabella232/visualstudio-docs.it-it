@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037820"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedura: Visualizzare e nascondere gruppi di registri (C#, C++, Visual Basic, F#)
 
@@ -37,9 +37,9 @@ Per evitare confusione, nella finestra **Registri** i registri sono organizzati 
 
 ## <a name="display-or-hide-register-groups"></a>Visualizzare o nascondere i gruppi di registri
 
-1.  Fare clic con il pulsante destro del mouse sulla finestra **Registri**.
+1. Fare clic con il pulsante destro del mouse sulla finestra **Registri**.
 
-2.  Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.
+2. Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.
 
      I gruppi di registri non supportati dall'hardware per il quale si sta eseguendo il debug sono disabilitati nel menu di scelta rapida e non possono essere selezionati.
 

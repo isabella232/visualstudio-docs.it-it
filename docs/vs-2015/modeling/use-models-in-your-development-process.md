@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038408"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
   
  Di seguito sono riportati altri aspetti della specifica che in genere vengono usati con i modelli. A seconda della scala e dello stile del progetto, è possibile usare diversi di questi aspetti o non usarli affatto:  
   
--   Storie utente. Una storia utente è una breve descrizione, discussa con utenti e altre parti interessate, di un aspetto del comportamento del sistema che verrà recapitata in una delle iterazioni del progetto. Una storia utente tipica inizia nel modo seguente: "Il cliente sarà in grado di..." Una storia utente potrebbe presentare un gruppo di casi di utilizzo o definire estensioni di casi di utilizzo che sono stati sviluppati in precedenza. La definizione o l'estensione di casi di utilizzo consente di rendere la storia utente più chiara.  
+- Storie utente. Una storia utente è una breve descrizione, discussa con utenti e altre parti interessate, di un aspetto del comportamento del sistema che verrà recapitata in una delle iterazioni del progetto. Una storia utente tipica inizia nel modo seguente: "Il cliente sarà in grado di..." Una storia utente potrebbe presentare un gruppo di casi di utilizzo o definire estensioni di casi di utilizzo che sono stati sviluppati in precedenza. La definizione o l'estensione di casi di utilizzo consente di rendere la storia utente più chiara.  
   
--   Richieste di modifica. Una richiesta di modifica in un progetto più formale è molto simile a una storia utente in un progetto agile. Nell'approccio agile tutti i requisiti vengono considerati modifiche a ciò che è stato sviluppato in iterazioni precedenti.  
+- Richieste di modifica. Una richiesta di modifica in un progetto più formale è molto simile a una storia utente in un progetto agile. Nell'approccio agile tutti i requisiti vengono considerati modifiche a ciò che è stato sviluppato in iterazioni precedenti.  
   
--   Descrizione del caso di utilizzo. Un caso di utilizzo rappresenta uno dei modi in cui un utente interagisce con il sistema per raggiungere un obiettivo specifico. Una descrizione completa include l'obiettivo, sequenze principali e alternative di eventi e risultati eccezionali. Un diagramma caso di utilizzo consente di riepilogare e fornire una panoramica dei casi di utilizzo.  
+- Descrizione del caso di utilizzo. Un caso di utilizzo rappresenta uno dei modi in cui un utente interagisce con il sistema per raggiungere un obiettivo specifico. Una descrizione completa include l'obiettivo, sequenze principali e alternative di eventi e risultati eccezionali. Un diagramma caso di utilizzo consente di riepilogare e fornire una panoramica dei casi di utilizzo.  
   
--   Scenari. Uno scenario è una descrizione piuttosto dettagliata di una sequenza di eventi che mostrano come il sistema, gli utenti e altri sistemi funzionano insieme per fornire valore alle parti interessate. Potrebbe avere l'aspetto di una presentazione dell'interfaccia utente o di un prototipo dell'interfaccia utente. Può descrivere un caso di utilizzo o una sequenza di casi di utilizzo.  
+- Scenari. Uno scenario è una descrizione piuttosto dettagliata di una sequenza di eventi che mostrano come il sistema, gli utenti e altri sistemi funzionano insieme per fornire valore alle parti interessate. Potrebbe avere l'aspetto di una presentazione dell'interfaccia utente o di un prototipo dell'interfaccia utente. Può descrivere un caso di utilizzo o una sequenza di casi di utilizzo.  
   
--   Glossario. Il glossario dei requisiti del progetto descrivono le parole con cui i clienti discutono in merito al proprio mondo. I modelli di requisiti e interfaccia utente devono usare anche questi termini. Un diagramma classi può chiarire le relazioni tra la maggior parte di questi termini. La creazione dei diagrammi e del glossario non solo riduce malintesi tra utenti e sviluppatori, ma quasi sempre evidenzia anche malintesi tra le diverse parti aziendali interessate.  
+- Glossario. Il glossario dei requisiti del progetto descrivono le parole con cui i clienti discutono in merito al proprio mondo. I modelli di requisiti e interfaccia utente devono usare anche questi termini. Un diagramma classi può chiarire le relazioni tra la maggior parte di questi termini. La creazione dei diagrammi e del glossario non solo riduce malintesi tra utenti e sviluppatori, ma quasi sempre evidenzia anche malintesi tra le diverse parti aziendali interessate.  
   
--   Regole di business. Molte regole di business possono essere espresse come vincoli invariabili sulle associazioni e sugli attributi nel modello di classi di requisiti e come vincoli sui diagrammi di sequenza.  
+- Regole di business. Molte regole di business possono essere espresse come vincoli invariabili sulle associazioni e sugli attributi nel modello di classi di requisiti e come vincoli sui diagrammi di sequenza.  
   
--   Progettazione ad alto livello. Vengono descritte le parti principali e come interagiscono. I diagrammi dei componenti, di sequenza e interfaccia costituiscono una parte importante di un progetto di alto livello.  
+- Progettazione ad alto livello. Vengono descritte le parti principali e come interagiscono. I diagrammi dei componenti, di sequenza e interfaccia costituiscono una parte importante di un progetto di alto livello.  
   
--   Schemi progettuali. Vengono descritte le regole di progettazione che vengono condivise tra diverse parti del sistema.  
+- Schemi progettuali. Vengono descritte le regole di progettazione che vengono condivise tra diverse parti del sistema.  
   
--   Specifiche di test. Gli script di test e le progettazioni per il codice di test possono avvalersi dei diagrammi di sequenza e di attività per descrivere le sequenze dei passi di test. I test di sistema devono essere espressi in termini di modello requisiti in modo che sia possibile modificarli facilmente quando cambiano i requisiti.  
+- Specifiche di test. Gli script di test e le progettazioni per il codice di test possono avvalersi dei diagrammi di sequenza e di attività per descrivere le sequenze dei passi di test. I test di sistema devono essere espressi in termini di modello requisiti in modo che sia possibile modificarli facilmente quando cambiano i requisiti.  
   
--   Piano del progetto. Il piano del progetto o il backlog definisce quando verrà recapitata ogni funzionalità. È possibile definire ogni funzionalità dichiarando quali casi di utilizzo e regole di business vengono implementate o estese. È possibile fare riferimento ai casi di utilizzo e alle regole di business direttamente nel piano oppure è possibile definire un set di funzionalità in un documento separato e usare i titoli delle funzionalità nel piano.  
+- Piano del progetto. Il piano del progetto o il backlog definisce quando verrà recapitata ogni funzionalità. È possibile definire ogni funzionalità dichiarando quali casi di utilizzo e regole di business vengono implementate o estese. È possibile fare riferimento ai casi di utilizzo e alle regole di business direttamente nel piano oppure è possibile definire un set di funzionalità in un documento separato e usare i titoli delle funzionalità nel piano.  
   
 ### <a name="use-models-in-iteration-planning"></a>Usare i modelli nel piano di iterazione  
  Anche se tutti i progetti sono diversi nella scala e nell'organizzazione, un progetto tipico è pianificato come una serie di iterazioni compresa tra due e sei settimane. È importante pianificare sufficienti iterazioni per consentire il feedback delle iterazioni precedenti da usare per regolare l'ambito e i piani per iterazioni successive.  
@@ -80,28 +80,28 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Migliorare lo stato all'approccio di ogni iterazione  
  All'approcciarsi di ogni iterazione, è possibile usare modelli per definire cosa deve essere consegnato alla fine dell'iterazione.  
   
--   Non modellare tutto in dettaglio nelle prime iterazioni. Nella prima iterazione creare un diagramma classi per gli elementi principali nel glossario dell'utente, creare un diagramma dei casi di utilizzo principali e creare un diagramma dei componenti principali. Non descrivere nessuno di questi elementi dettagliatamente perché i dettagli verranno modificati in un secondo momento nel progetto. Usare i termini definiti in questo modello per creare un elenco di funzionalità o storie utente principali. Assegnare le funzionalità alle iterazioni in modo da bilanciare approssimativamente il carico di lavoro stimato nel corso del progetto. Queste assegnazioni verranno modificate in un secondo momento nel progetto.  
+- Non modellare tutto in dettaglio nelle prime iterazioni. Nella prima iterazione creare un diagramma classi per gli elementi principali nel glossario dell'utente, creare un diagramma dei casi di utilizzo principali e creare un diagramma dei componenti principali. Non descrivere nessuno di questi elementi dettagliatamente perché i dettagli verranno modificati in un secondo momento nel progetto. Usare i termini definiti in questo modello per creare un elenco di funzionalità o storie utente principali. Assegnare le funzionalità alle iterazioni in modo da bilanciare approssimativamente il carico di lavoro stimato nel corso del progetto. Queste assegnazioni verranno modificate in un secondo momento nel progetto.  
   
--   Provare a implementare versioni semplificate di tutti i casi di utilizzo più importanti in una prima iterazione. Estendere i casi di utilizzo in iterazioni successive. Questo approccio consente di ridurre il rischio di individuare un difetto nei requisiti o nell'architettura del progetto troppo tardi per poter fare qualcosa a riguardo.  
+- Provare a implementare versioni semplificate di tutti i casi di utilizzo più importanti in una prima iterazione. Estendere i casi di utilizzo in iterazioni successive. Questo approccio consente di ridurre il rischio di individuare un difetto nei requisiti o nell'architettura del progetto troppo tardi per poter fare qualcosa a riguardo.  
   
--   Verso la fine di ogni iterazione indire un workshop dei requisiti per definire in dettaglio i requisiti o le storie utente che verranno sviluppate nell'iterazione successiva. Invitare gli utenti e le parti interessate dell'azienda che sono in grado di decidere le priorità, nonché gli sviluppatori e i tester di sistema. Vengono consentite tre ore per definire i requisiti per un'iterazione di 2 settimane.  
+- Verso la fine di ogni iterazione indire un workshop dei requisiti per definire in dettaglio i requisiti o le storie utente che verranno sviluppate nell'iterazione successiva. Invitare gli utenti e le parti interessate dell'azienda che sono in grado di decidere le priorità, nonché gli sviluppatori e i tester di sistema. Vengono consentite tre ore per definire i requisiti per un'iterazione di 2 settimane.  
   
--   Per ogni partecipante l'obiettivo del workshop è accettare ciò che verrà effettuato entro la fine dell'iterazione successiva. Usare i modelli come uno degli strumenti che consentono di chiarire i requisiti. L'output del workshop è il backlog di un'iterazione: vale a dire un elenco di sviluppo di attività in [!INCLUDE[esprfound](../includes/esprfound-md.md)] e i gruppi di test in [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- Per ogni partecipante l'obiettivo del workshop è accettare ciò che verrà effettuato entro la fine dell'iterazione successiva. Usare i modelli come uno degli strumenti che consentono di chiarire i requisiti. L'output del workshop è il backlog di un'iterazione: vale a dire un elenco di sviluppo di attività in [!INCLUDE[esprfound](../includes/esprfound-md.md)] e i gruppi di test in [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   Nel workshop dei requisiti discutere la progettazione solo nella misura in cui è necessario determinare le stime per le attività di sviluppo. In caso contrario, discutere sul comportamento del sistema che gli utenti possono sperimentare direttamente. Mantenere il modello requisiti separato dal modello dell'architettura.  
+- Nel workshop dei requisiti discutere la progettazione solo nella misura in cui è necessario determinare le stime per le attività di sviluppo. In caso contrario, discutere sul comportamento del sistema che gli utenti possono sperimentare direttamente. Mantenere il modello requisiti separato dal modello dell'architettura.  
   
--   Le parti interessate non tecniche in genere non hanno problemi a comprendere i diagrammi UML con alcune indicazioni da parte dell'utente.  
+- Le parti interessate non tecniche in genere non hanno problemi a comprendere i diagrammi UML con alcune indicazioni da parte dell'utente.  
   
 #### <a name="link-model-to-work-items"></a>Collegare il modello agli elementi di lavoro  
  Dopo il workshop di requisiti, elaborare i dettagli del modello requisiti e collegare il modello alle attività di sviluppo. A tale scopo è possibile collegare gli elementi di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)] agli elementi del modello. Per informazioni su come eseguire questa operazione, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).  
   
  È possibile collegare qualsiasi elemento agli elementi di lavoro, ma quelli più utili sono i seguenti:  
   
--   Casi di utilizzo. È possibile collegare un caso di utilizzo alle attività di sviluppo che lo implementeranno.  
+- Casi di utilizzo. È possibile collegare un caso di utilizzo alle attività di sviluppo che lo implementeranno.  
   
--   Estensioni del caso di utilizzo. Se solo un aspetto di un caso di utilizzo verrà implementato in un'iterazione, è possibile separarlo in un caso di utilizzo di base con una o più estensioni. Le estensioni sono casi di utilizzo collegati al caso di base con la relazione «Estendi». Per altre informazioni sull'estensione dei casi di utilizzo, vedere [diagrammi caso di utilizzo UML: informazioni di riferimento](../modeling/uml-use-case-diagrams-reference.md).  
+- Estensioni del caso di utilizzo. Se solo un aspetto di un caso di utilizzo verrà implementato in un'iterazione, è possibile separarlo in un caso di utilizzo di base con una o più estensioni. Le estensioni sono casi di utilizzo collegati al caso di base con la relazione «Estendi». Per altre informazioni sull'estensione dei casi di utilizzo, vedere [diagrammi caso di utilizzo UML: informazioni di riferimento](../modeling/uml-use-case-diagrams-reference.md).  
   
--   Commenti che descrivono i requisiti delle regole di business o della qualità del servizio. Per altre informazioni, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
+- Commenti che descrivono i requisiti delle regole di business o della qualità del servizio. Per altre informazioni, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Collegare un modello ai test  
  Usare il modello requisiti per guidare la progettazione dei test di accettazione. Creare questi test contemporaneamente al lavoro di sviluppo.  

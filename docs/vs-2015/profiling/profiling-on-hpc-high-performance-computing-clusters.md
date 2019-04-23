@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038951"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilatura su cluster HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile eseguire la profilatura sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento degli strumenti di profilatura di [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Per altre informazioni su HPC, vedere [Big Compute: HPC e Batch](https://azure.microsoft.com/solutions/big-compute/) nel sito Web Microsoft.  
+È possibile eseguire la profilatura sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento degli strumenti di profilatura di [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Per altre informazioni su HPC vedere [Big Compute: HPC e Batch](https://azure.microsoft.com/solutions/big-compute/) nel sito Web Microsoft.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le operazioni seguenti:  
@@ -42,68 +42,68 @@ ms.locfileid: "57867921"
   
   Per installare [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e gli strumenti di profilatura autonomi su un nodo di calcolo HPC attivo e abilitare la profilatura nel computer del cluster, attenersi alla procedura seguente:  
   
-1.  Aprire la finestra del prompt dei comandi installata con HPC Pack.  
+1. Aprire la finestra del prompt dei comandi installata con HPC Pack.  
   
-2.  Digitare i comandi seguenti in prompt dei comandi distinti:  
+2. Digitare i comandi seguenti in prompt dei comandi distinti:  
   
-    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
+    3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
 |||  
 |-|-|  
 |*%HeadNode%*|Nome del nodo head del cluster.|  
-|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] il percorso è: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Nel [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] supporti di installazione, il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] supporti di installazione, il percorso è: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Esecuzione della profilatura su un nodo di calcolo HPC  
  È possibile configurare una sessione di profilatura tramite la Creazione guidata sessione di prestazioni HPC per specificare informazioni sul cluster HPC e sulla destinazione. Eventuali opzioni aggiuntive possono essere impostate nelle pagine delle proprietà della sessione di prestazioni. Gli strumenti di profilatura distribuiscono automaticamente i file binari di destinazione necessari e avviano il profiler e l'applicazione HPC.  
   
 #### <a name="to-profile-on-an-hpc-compute-node"></a>Per eseguire la profilatura su un nodo di calcolo HPC  
   
-1.  Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni HPC**. Se il comando non è disponibile, assicurarsi di disporre dei prerequisiti elencati in precedenza.  
+1. Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni HPC**. Se il comando non è disponibile, assicurarsi di disporre dei prerequisiti elencati in precedenza.  
   
-2.  Fare clic su **Avanti** nella prima pagina della procedura guidata.  
+2. Fare clic su **Avanti** nella prima pagina della procedura guidata.  
   
-3.  Nella seconda pagina della procedura guidata selezionare l'applicazione da profilare.  
+3. Nella seconda pagina della procedura guidata selezionare l'applicazione da profilare.  
   
-    -   Per profilare un progetto attualmente aperto in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], selezionare l'opzione **Uno o più progetti disponibili** e quindi selezionare il nome del progetto dall'elenco.  
+    - Per profilare un progetto attualmente aperto in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], selezionare l'opzione **Uno o più progetti disponibili** e quindi selezionare il nome del progetto dall'elenco.  
   
-    -   Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)**.  
+    - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)**.  
   
-4.  Scegliere **Avanti**.  
+4. Scegliere **Avanti**.  
   
-5.  Nella terza pagina della procedura guidata:  
+5. Nella terza pagina della procedura guidata:  
   
-    -   Se si profila un file eseguibile non incluso in un progetto aperto, specificare il percorso del file binario in **Specificare il percorso completo dell'eseguibile**.  
+    - Se si profila un file eseguibile non incluso in un progetto aperto, specificare il percorso del file binario in **Specificare il percorso completo dell'eseguibile**.  
   
-    -   Se si profila un file eseguibile non incluso in un progetto aperto, è possibile specificare qualsiasi argomento della riga di comando da passare al processo in **Argomenti della riga di comando**.  
+    - Se si profila un file eseguibile non incluso in un progetto aperto, è possibile specificare qualsiasi argomento della riga di comando da passare al processo in **Argomenti della riga di comando**.  
   
-    -   In **Cartella di lavoro remota** specificare il percorso della cartella usata dalle istanze del processo sui singoli nodi di calcolo.  
+    - In **Cartella di lavoro remota** specificare il percorso della cartella usata dalle istanze del processo sui singoli nodi di calcolo.  
   
-    -   In **Percorso di distribuzione** specificare il percorso della directory usata dal server HPC per la gestione temporanea di immagini per la distribuzione.  
+    - In **Percorso di distribuzione** specificare il percorso della directory usata dal server HPC per la gestione temporanea di immagini per la distribuzione.  
   
-6.  Scegliere **Avanti**.  
+6. Scegliere **Avanti**.  
   
-7.  Nella quarta pagina della procedura guidata:  
+7. Nella quarta pagina della procedura guidata:  
   
-    -   Nell'elenco **Nodo Head** fare clic sul computer che funge da nodo head HPC nell'esecuzione della profilatura. Il nodo head può essere "localhost", in modo da consentire l'esecuzione della profilatura nel computer locale senza la necessità di un cluster.  
+    - Nell'elenco **Nodo Head** fare clic sul computer che funge da nodo head HPC nell'esecuzione della profilatura. Il nodo head può essere "localhost", in modo da consentire l'esecuzione della profilatura nel computer locale senza la necessità di un cluster.  
   
-    -   Nell'elenco **Numero di processi** fare clic sul numero di istanze dell'applicazione da eseguire.  
+    - Nell'elenco **Numero di processi** fare clic sul numero di istanze dell'applicazione da eseguire.  
   
-    -   Nell'elenco **Opzioni profilatura** selezionare la destinazione di profilatura.  
+    - Nell'elenco **Opzioni profilatura** selezionare la destinazione di profilatura.  
   
          Per profilare un processo specifico nel cluster, selezionare l'opzione **Esegui profilatura su priorità** e quindi selezionare la priorità del processo nell'elenco a discesa.  
   
          Per profilare il processo o i processi eseguiti su un nodo specifico nel cluster HPC, selezionare l'opzione **Esegui profilatura su nodo** e quindi selezionare il nodo nell'elenco a discesa.  
   
-8.  Scegliere **Avanti**.  
+8. Scegliere **Avanti**.  
   
 9. Nella quinta pagina della procedura guidata è possibile scegliere di avviare immediatamente il profiler e il processo di profilatura oppure di avviare la profilatura in un secondo momento tramite Esplora prestazioni.  
   
-    -   Selezionare **Avvia profilatura al termine della procedura guidata** per avviare la profilatura immediatamente oppure deselezionare la casella di controllo per avviare la profilatura manualmente.  
+    - Selezionare **Avvia profilatura al termine della procedura guidata** per avviare la profilatura immediatamente oppure deselezionare la casella di controllo per avviare la profilatura manualmente.  
   
 10. Scegliere **Fine**.  
   
@@ -112,21 +112,21 @@ ms.locfileid: "57867921"
   
 #### <a name="to-open-the-performance-session-property-pages"></a>Per aprire le pagine delle proprietà della sessione di prestazioni  
   
-1.  Se necessario, aprire il file della sessione di prestazioni (con estensione psess) in Esplora prestazioni. Scegliere **Apri** dal menu **File** e individuare il file.  
+1. Se necessario, aprire il file della sessione di prestazioni (con estensione psess) in Esplora prestazioni. Scegliere **Apri** dal menu **File** e individuare il file.  
   
-2.  In Esplora prestazioni fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
+2. In Esplora prestazioni fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.  
   
-3.  Nella finestra di dialogo Pagine delle proprietà usare uno dei metodi seguenti:  
+3. Nella finestra di dialogo Pagine delle proprietà usare uno dei metodi seguenti:  
   
-    -   Fare clic su **Generale** e quindi selezionare **Raccolta su cluster HPC** per attivare la profilatura HPC oppure deselezionare la casella di controllo per disabilitarla.  
+    - Fare clic su **Generale** e quindi selezionare **Raccolta su cluster HPC** per attivare la profilatura HPC oppure deselezionare la casella di controllo per disabilitarla.  
   
-    -   Fare clic su **Proprietà avvio HPC** per modificare le proprietà di avvio dell'applicazione HPC.  
+    - Fare clic su **Proprietà avvio HPC** per modificare le proprietà di avvio dell'applicazione HPC.  
   
-    -   Fare clic su **Proprietà avanzate HPC** per impostare opzioni aggiuntive.  
+    - Fare clic su **Proprietà avanzate HPC** per impostare opzioni aggiuntive.  
   
 ### <a name="hpc-launch-properties"></a>Proprietà avvio HPC  
   
-|Proprietà|Description|  
+|Proprietà|Descrizione|  
 |--------------|-----------------|  
 |**Nodo head**|Specifica il computer che funge da nodo head HPC nell'esecuzione della profilatura.|  
 |**Numero di processi**|Specifica il numero di istanze dell'applicazione da eseguire nell'applicazione profilata.|  
@@ -137,7 +137,7 @@ ms.locfileid: "57867921"
   
 ### <a name="advanced-properties"></a>Proprietà avanzate  
   
-|Proprietà|Description|  
+|Proprietà|Descrizione|  
 |--------------|-----------------|  
 |**Nome progetto**|Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] corrente.|  
 |**Esegui pulizia all'arresto del profiler**|Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE.|  

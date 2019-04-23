@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042779"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procedura: Usare Modifica e continuazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ La funzionalità Modifica e continuazione per C# consente di apportare modifiche
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Per richiamare modifica e continuazione automaticamente  
   
-1.  In modalità di interruzione, apportare una modifica al codice sorgente.  
+1. In modalità di interruzione, apportare una modifica al codice sorgente.  
   
-2.  Dal **eseguire il Debug** dal menu fare clic su **continua**, **passaggio**, oppure **Imposta istruzione successiva** o valuta una funzione in una finestra del debugger.  
+2. Dal **eseguire il Debug** dal menu fare clic su **continua**, **passaggio**, oppure **Imposta istruzione successiva** o valuta una funzione in una finestra del debugger.  
   
-     Il nuovo codice viene compilato e il debug continua con il nuovo codice. Alcune modifiche non sono supportate in modifica e continuazione. Per altre informazioni, vedere [modifiche al codice supportate (C#)](../debugger/supported-code-changes-csharp.md).  
+     Il nuovo codice viene compilato e il debug continua con il nuovo codice. Alcune modifiche non sono supportate in modifica e continuazione. Per altre informazioni, vedere [modifiche al codice supportate (c#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Per abilitare o disabilitare Modifica e continuazione  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **le opzioni** finestra di dialogo espandere il **debug** nodo e selezionare **modifica e continuazione**.  
+2. Nel **le opzioni** finestra di dialogo espandere il **debug** nodo e selezionare **modifica e continuazione**.  
   
-3.  Nel **le opzioni** finestra di dialogo **modifica e continuazione** pagina, selezionare o deselezionare i **Abilita modifica e continuazione** casella di controllo.  
+3. Nel **le opzioni** finestra di dialogo **modifica e continuazione** pagina, selezionare o deselezionare i **Abilita modifica e continuazione** casella di controllo.  
   
      L'impostazione diventa effettiva quando si riavvia la sessione di debug.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Modifiche al codice supportate (C#)](../debugger/supported-code-changes-csharp.md)   
+ [Modifiche al codice supportate (c#)](../debugger/supported-code-changes-csharp.md)   
  [Errori e avvisi di Modifica e continuazione (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

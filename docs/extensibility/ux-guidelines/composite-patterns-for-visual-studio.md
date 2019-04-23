@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723071"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670498"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Pattern compositi combinano gli elementi di interazione e progettazione di configurazioni distinte. Alcuni dei modelli compositi più importanti in Visual Studio per quanto riguarda la coerenza includono:
@@ -393,7 +393,6 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aspetto di selezione di oggetti grafici
  Quadratini di ridimensionamento sono quadratini disegnate in un modello rettangolare intorno alla casella di delimitazione dell'oggetto. Il grafico seguente mostra esempi dei vari stati che può disporre di un oggetto grafico con handle di ridimensionamento e aspetto modifica sul posto. Le dimensioni dei punti di controllo devono essere collegate al bordo della finestra ed edge le metriche usando il **GetSystemMetrics** API.
 
-
 | Stato | Aspetto | Dettagli su Visual |
 |-------------------------|---------------| - |
 | **Non selezionato** | Impostazione predefinita | ![Default button state](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
@@ -435,7 +434,6 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 >  **Messa a fuoco** e **selezione** sono due concetti diversi. *Messa a fuoco* è un valore che indica quale dell'interfaccia utente di elemento è destinato per ricevere l'input non esplicitamente dirette a un altro oggetto, mentre *selezione* si riferisce allo stato dell'inclusione di un oggetto in un set di oggetti da cui successivi operazioni possono aver luogo.
 
  Selezioni negli elenchi possono essere contigui, non contiguo, o area geografica. Quando selezioni multiple sono consentite, contigui e selezione indipendente deve sempre essere supportate, mentre il supporto per le selezioni di area (casella) è facoltativo. Selezioni per l'area possono essere avviate tramite trascinamento nello spazio vuoto del corpo dell'elenco.
-
 
 | Object | Selection |
 |--------|------------|

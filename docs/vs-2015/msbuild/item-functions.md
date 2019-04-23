@@ -11,17 +11,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758581"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670264"
 ---
 # <a name="item-functions"></a>Funzioni degli elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in grado di chiamare le funzioni di elementi per ottenere informazioni sugli elementi del progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi.  
   
 ## <a name="string-item-functions"></a>Funzioni degli elementi per i valori stringa  
@@ -55,7 +54,7 @@ A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in g
 ## <a name="intrinsic-item-functions"></a>Funzioni intrinseche degli elementi  
  Nella tabella seguente sono elencate le funzioni intrinseche disponibili per gli elementi.  
   
-|Funzione|Esempio|Descrizione|  
+|Funzione|Esempio|Description|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Restituisce il numero di elementi.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Restituisce l'equivalente di `Path.DirectoryName` per ogni elemento.|  

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa5df395aee8e93c191535a7bec5b078563e3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039046"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizzazione di modelli di progetto e modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ Dopo aver creato i modelli di progetti ed elementi è possibile personalizzarli 
   
  Ad esempio, è possibile effettuare le attività seguenti:  
   
--   Modificare ed esportare un modello esistente come modello personalizzato.  
+- Modificare ed esportare un modello esistente come modello personalizzato.  
   
      Per altre informazioni, vedere [Procedura: Aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md).  
   
--   Passare parametri personalizzati in un modello per sostituire i valori esistenti.  
+- Passare parametri personalizzati in un modello per sostituire i valori esistenti.  
   
      Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).  
   
--   Personalizzare le procedure guidate che consentono di creare progetti da modelli.  
+- Personalizzare le procedure guidate che consentono di creare progetti da modelli.  
   
-     Per altre informazioni, vedere [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Per altre informazioni, vedere [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)  

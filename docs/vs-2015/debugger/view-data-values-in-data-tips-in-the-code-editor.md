@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039115"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Visualizzare i valori di dati nei suggerimenti dati nell'editor del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,34 +52,34 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Per sbloccare un suggerimento dati e far sì che scorra  
   
--   In un suggerimento dati bloccato, scegliere il **Sblocca da origine** icona.  
+- In un suggerimento dati bloccato, scegliere il **Sblocca da origine** icona.  
   
      L'icona di blocco passa alla posizione sbloccata. Il suggerimento dati scorre ora nella parte superiore delle finestre aperte. Il suggerimento dati mobile verrà chiuso al termine della sessione di debug.  
   
 ### <a name="to-repin-a-floating-datatip"></a>Per ribloccare un suggerimento dati mobile  
   
--   In un suggerimento dati fare clic sull'icona di blocco.  
+- In un suggerimento dati fare clic sull'icona di blocco.  
   
      L'icona passa alla posizione bloccata. Se il suggerimento dati è al di fuori di una finestra di origine, l'icona di blocco è disabilitata e il suggerimento dati non può essere bloccato.  
   
 ### <a name="to-close-a-datatip"></a>Per chiudere un suggerimento dati  
   
--   Posizionare il puntatore del mouse su un suggerimento dati e quindi scegliere il **Chiudi** icona.  
+- Posizionare il puntatore del mouse su un suggerimento dati e quindi scegliere il **Chiudi** icona.  
   
 ### <a name="to-close-all-datatips"></a>Per chiudere tutti i suggerimenti dati  
   
--   Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati**.  
+- Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Per chiudere tutti i suggerimenti dati di un file specifico  
   
--   Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati bloccati a** *File*.  
+- Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati bloccati a** *File*.  
   
 ## <a name="expanding-and-editing-information"></a>Espansione e modifica delle informazioni  
  È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Per espandere una variabile per visualizzarne gli elementi  
   
--   In un suggerimento dati posizionare il puntatore del mouse sul **+** sign che precede il nome della variabile.  
+- In un suggerimento dati posizionare il puntatore del mouse sul **+** sign che precede il nome della variabile.  
   
      La variabile si espande per visualizzare i relativi elementi in formato struttura ad albero.  
   
@@ -87,16 +87,16 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 #### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Per modificare il valore di una variabile utilizzando un suggerimento dati  
   
-1.  In un suggerimento dati, fare clic sul valore. Questa opzione non è disponibile per i valori di sola lettura.  
+1. In un suggerimento dati, fare clic sul valore. Questa opzione non è disponibile per i valori di sola lettura.  
   
-2.  Digitare un nuovo valore e premere INVIO.  
+2. Digitare un nuovo valore e premere INVIO.  
   
 ## <a name="making-a-datatip-transparent"></a>Rendere trasparente un suggerimento dati  
  Per visualizzare il codice che sta dietro a un suggerimento dati, è possibile renderlo temporaneamente trasparente. Ciò non si applica a suggerimenti dati bloccati o mobili.  
   
 #### <a name="to-make-a-datatip-transparent"></a>Per rendere trasparente un suggerimento dati  
   
--   In un suggerimento dati, premere CTRL.  
+- In un suggerimento dati, premere CTRL.  
   
      Il suggerimento dati resterà trasparente finché si terrà premuto il tasto CTRL.  
   
@@ -105,7 +105,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Per visualizzare il contenuto di una variabile utilizzando un visualizzatore  
   
--   Fare clic sull'icona a forma di lente di ingrandimento per selezionare il visualizzatore predefinito per il tipo di dati.  
+- Fare clic sull'icona a forma di lente di ingrandimento per selezionare il visualizzatore predefinito per il tipo di dati.  
   
      -oppure-  
   
@@ -118,7 +118,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Per aggiungere una variabile alla finestra Espressioni di controllo  
   
--   Fare doppio clic su un suggerimento dati e quindi fare clic su **Aggiungi espressione di controllo**.  
+- Fare doppio clic su un suggerimento dati e quindi fare clic su **Aggiungi espressione di controllo**.  
   
      La variabile verrà aggiunta per il **Watch** finestra. Se si usa un'edizione che supporta più **Watch** windows, la variabile verrà aggiunta a **espressione di controllo 1.**  
   
@@ -127,19 +127,19 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 #### <a name="to-export-datatips"></a>Per esportare suggerimenti dati  
   
-1.  Nel menu Debug, fare clic su **Esporta suggerimenti dati**.  
+1. Nel menu Debug, fare clic su **Esporta suggerimenti dati**.  
   
      Il **Esporta suggerimenti dati** verrà visualizzata la finestra di dialogo.  
   
-2.  Usare tecniche di file standard per passare al percorso in cui si desidera salvare il file XML, digitare un nome per il file nei **nomefile** casella e quindi fare clic su **OK**.  
+2. Usare tecniche di file standard per passare al percorso in cui si desidera salvare il file XML, digitare un nome per il file nei **nomefile** casella e quindi fare clic su **OK**.  
   
 #### <a name="to-import-datatips"></a>Per importare suggerimenti dati  
   
-1.  Nel menu Debug, fare clic su **Importa suggerimenti dati**.  
+1. Nel menu Debug, fare clic su **Importa suggerimenti dati**.  
   
      Il **Importa suggerimenti dati** verrà visualizzata la finestra di dialogo.  
   
-2.  Utilizzare la finestra di dialogo per trovare il file XML che si desidera aprire e fare clic su **OK**.  
+2. Utilizzare la finestra di dialogo per trovare il file XML che si desidera aprire e fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   

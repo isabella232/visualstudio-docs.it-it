@@ -12,11 +12,11 @@ ms.workload:
 - dotnetcore
 - azure
 ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040703"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio
 

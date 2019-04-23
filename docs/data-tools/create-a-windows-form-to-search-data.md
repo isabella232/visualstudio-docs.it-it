@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041679"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 
@@ -69,25 +69,25 @@ Creare una nuova **App di Windows. Forms** progetto entrambi C# o Visual Basic. 
 
 Questo passaggio consente di creare un'origine dati da un database usando la **Configurazione guidata origine dati**:
 
-1.  Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
+1. Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
 
-2.  Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3.  Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
+3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
-4.  Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
+4. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
     - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
-5.  Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
+5. Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
 
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
+6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
 
-7.  Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
+7. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
-8.  Selezionare la tabella **Customers**, quindi fare clic su **Fine**.
+8. Selezionare la tabella **Customers**, quindi fare clic su **Fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella **Customers** viene visualizzata nella finestra **Origini dati**.
 
@@ -95,9 +95,9 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form:
 
-1.  Espandere il nodo **Customers** nella finestra **Origini dati**.
+1. Espandere il nodo **Customers** nella finestra **Origini dati**.
 
-2.  Trascinare il nodo **Customers** dalla finestra **Origini dati** al form.
+2. Trascinare il nodo **Customers** dalla finestra **Origini dati** al form.
 
      Sul form vengono visualizzati un oggetto <xref:System.Windows.Forms.DataGridView> e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
 
@@ -105,11 +105,11 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 È possibile aggiungere una clausola WHERE alla query originale utilizzando il **generatore di criteri di ricerca** nella finestra di dialogo:
 
-1.  Selezionare il controllo <xref:System.Windows.Forms.DataGridView> e quindi scegliere **Aggiungi query** dal menu **Dati**.
+1. Selezionare il controllo <xref:System.Windows.Forms.DataGridView> e quindi scegliere **Aggiungi query** dal menu **Dati**.
 
-2.  Tipo **FillByCity** nel **nuovo nome query** area di **generatore di criteri di ricerca** nella finestra di dialogo.
+2. Tipo **FillByCity** nel **nuovo nome query** area di **generatore di criteri di ricerca** nella finestra di dialogo.
 
-3.  Aggiungere `WHERE City = @City` alla query nell'area **Testo della query**.
+3. Aggiungere `WHERE City = @City` alla query nell'area **Testo della query**.
 
      La query dovrebbe essere simile alla seguente:
 
@@ -123,7 +123,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
     > [!NOTE]
     > Origini dati Access e OLE DB usano il punto interrogativo ('? ') per indicare i parametri, pertanto la clausola WHERE risulterebbe simile al seguente: `WHERE City = ?`.
 
-4.  Fare clic su **OK** per chiudere la finestra di dialogo **Generatore di criteri per la ricerca**.
+4. Fare clic su **OK** per chiudere la finestra di dialogo **Generatore di criteri per la ricerca**.
 
      Al form viene aggiunto un elemento **FillByCityToolStrip**.
 
@@ -131,9 +131,9 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 Esecuzione dell'applicazione consente di aprire il modulo e lo rende pronto ad accettare il parametro come input:
 
-1.  Premere **F5** per eseguire l'applicazione.
+1. Premere **F5** per eseguire l'applicazione.
 
-2.  Digitare **London** nella casella di testo **City**, quindi fare clic su **FillByCity**.
+2. Digitare **London** nella casella di testo **City**, quindi fare clic su **FillByCity**.
 
      La griglia dei dati viene popolata con i clienti che soddisfano i criteri. In questo esempio nella griglia dei dati vengono visualizzati solo i clienti nella cui colonna **City** è presente un valore **London**.
 

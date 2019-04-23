@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041221"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Linee guida per l'importazione di flussi di lavoro riutilizzabili
   Per importare flussi di lavoro riutilizzabili creati in SharePoint Designer, utilizzare il modello di progetto Importa flusso di lavoro riutilizzabile di SharePoint 2010 in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Questo modello Importa una *dichiarativa* *flusso di lavoro* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-solo) e lo converte in un *code del flusso di lavoro*, che è un flusso di lavoro che può migliorare con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] codice. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Procedura dettagliata: Importa un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56641520"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>Importa i flussi di lavoro riutilizzabile tramite il modello Importa pacchetto di soluzione SharePoint 2010
  Se si importa un flusso di lavoro riutilizzabile tramite il modello Importa pacchetto di soluzione SharePoint 2010, è necessario considerare i problemi riportati di seguito.
 
--   Dopo aver importato il flusso di lavoro, è possibile distribuire immediatamente ed eseguirlo in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliendo il **F5** chiave. Tuttavia, se si modifica qualsiasi elemento nel flusso di lavoro nella soluzione importata, si potrebbe essere necessario correggere manualmente gli elementi nel progetto prima che è possibile distribuire ed eseguire il flusso di lavoro.
+- Dopo aver importato il flusso di lavoro, è possibile distribuire immediatamente ed eseguirlo in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliendo il **F5** chiave. Tuttavia, se si modifica qualsiasi elemento nel flusso di lavoro nella soluzione importata, si potrebbe essere necessario correggere manualmente gli elementi nel progetto prima che è possibile distribuire ed eseguire il flusso di lavoro.
 
--   Poiché il flusso di lavoro dichiarativo, non è possibile aggiungere codice a esso. Per convertire il flusso di lavoro in un flusso di lavoro di codice, è necessario importarlo in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando il modello Importa flusso di riutilizzabile SharePoint 2010.
+- Poiché il flusso di lavoro dichiarativo, non è possibile aggiungere codice a esso. Per convertire il flusso di lavoro in un flusso di lavoro di codice, è necessario importarlo in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando il modello Importa flusso di riutilizzabile SharePoint 2010.
 
--   Sebbene sia possibile modificare il file (. xmol) finestra di progettazione del flusso di lavoro nella visualizzazione progettazione, è consigliabile modificarlo in visualizzazione origine, perché la finestra di progettazione del flusso di lavoro vengono visualizzati gli errori false.
+- Sebbene sia possibile modificare il file (. xmol) finestra di progettazione del flusso di lavoro nella visualizzazione progettazione, è consigliabile modificarlo in visualizzazione origine, perché la finestra di progettazione del flusso di lavoro vengono visualizzati gli errori false.
 
--   Debug del flusso di lavoro non funziona per il contenuto dichiarativo. Impostare punti di interruzione [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] non vengano raggiunti.
+- Debug del flusso di lavoro non funziona per il contenuto dichiarativo. Impostare punti di interruzione [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] non vengano raggiunti.
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>Importazione di soluzioni di flusso di lavoro riutilizzabile globalmente
  Non è possibile importare flussi di lavoro riutilizzabili globalmente tramite il modello Importa flusso di lavoro riutilizzabile di SharePoint 2010. Per importare un flusso di lavoro riutilizzabile globalmente, è necessario convertirlo in un flusso di lavoro riutilizzabile non globalmente o utilizzare il modello Importa pacchetto di soluzione SharePoint 2010.

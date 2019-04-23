@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039288"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Creare query TableAdapter con parametri in Progettazione Dataset. È anche possi
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Creare una query con parametri durante la progettazione di un form con associazione a dati  
   
-1.  Selezionare un controllo nel form che sia già associato a un dataset. Per altre informazioni, vedere [controlli di associare Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Selezionare un controllo nel form che sia già associato a un dataset. Per altre informazioni, vedere [controlli di associare Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  Nel **Data** dal menu**Aggiungi Query**.  
+2. Nel **Data** dal menu**Aggiungi Query**.  
   
-3.  Inserire i dati mancanti nella finestra di dialogo **Generatore di criteri per la ricerca** aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.  
+3. Inserire i dati mancanti nella finestra di dialogo **Generatore di criteri per la ricerca** aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Aggiungere una query a un form con associazione a dati esistente  
   
@@ -91,11 +91,11 @@ Se si trattasse di una query su un oggetto TableAdapter, è possibile eseguire u
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Abilitare una query di accettare i valori null  
   
-1.  Nel **Progettazione Dataset**, selezionare la query TableAdapter che deve accettare i valori dei parametri null.  
+1. Nel **Progettazione Dataset**, selezionare la query TableAdapter che deve accettare i valori dei parametri null.  
   
-2.  Nel **delle proprietà** finestra, seleziona **parametri**. Premere quindi sui puntini di sospensione (**...** ) per aprire la **Editor delle raccolte Parameters**.  
+2. Nel **delle proprietà** finestra, seleziona **parametri**. Premere quindi sui puntini di sospensione (**...** ) per aprire la **Editor delle raccolte Parameters**.  
   
-3.  Selezionare il parametro che consente valori null e impostare il **AllowDbNull** proprietà `true`.  
+3. Selezionare il parametro che consente valori null e impostare il **AllowDbNull** proprietà `true`.  
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039864"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
   
  Questo argomento descrive tre modi in cui è possibile distribuire un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] per altre impostazioni cultura:  
   
--   Includere tutti gli assembly satellite in una sola distribuzione.  
+- Includere tutti gli assembly satellite in una sola distribuzione.  
   
--   Generare una distribuzione per le singole impostazioni cultura, con un solo assembly satellite incluso in ognuna di esse.  
+- Generare una distribuzione per le singole impostazioni cultura, con un solo assembly satellite incluso in ognuna di esse.  
   
--   Scaricare gli assembly satellite su richiesta.  
+- Scaricare gli assembly satellite su richiesta.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Inclusione di tutti gli assembly satellite in una sola distribuzione  
  Anziché pubblicare più distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], è possibile pubblicare una sola distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] contenente tutti gli assembly satellite.  
@@ -77,9 +77,9 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
   
  Sono disponibili tre opzioni per la verifica delle distribuzioni localizzate prima di rendere disponibile l'applicazione ai clienti:  
   
--   È possibile eseguire l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nelle versioni localizzate appropriate di Windows.  
+- È possibile eseguire l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nelle versioni localizzate appropriate di Windows.  
   
--   È possibile impostare la proprietà <xref:System.Threading.Thread.CurrentUICulture%2A> a livello di codice nell'applicazione. Questa proprietà deve essere impostata prima di chiamare il metodo <xref:System.Windows.Forms.Application.Run%2A>.  
+- È possibile impostare la proprietà <xref:System.Threading.Thread.CurrentUICulture%2A> a livello di codice nell'applicazione. Questa proprietà deve essere impostata prima di chiamare il metodo <xref:System.Windows.Forms.Application.Run%2A>.  
   
 ## <a name="see-also"></a>Vedere anche  
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   
