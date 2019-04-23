@@ -23,50 +23,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df8a099470661545666149e32cf02f4481487e54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d348675ca8670aa27035d31657d06bc2c4e0a829
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075350"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
-Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata Usa Visual Basic, C#, o C++.
+# <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
+Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.
 
  In primo luogo, è necessario chiudere eventuali soluzioni aperte.
 
 ### <a name="to-prepare-for-this-walkthrough"></a>Operazioni preliminari per la procedura dettagliata
 
--   Se già aperto una soluzione aperta, chiuderla. (Nelle **File** dal menu **Chiudi soluzione**.)
+- Se già aperto una soluzione aperta, chiuderla. (Nelle **File** dal menu **Chiudi soluzione**.)
 
 ## <a name="create-a-new-windows-form"></a>Creare un nuovo Windows Form
  Successivamente, si creerà un nuovo modulo di Windows.
 
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Per creare il modulo di Windows per questa procedura dettagliata
 
-1.  Nel **File** menu, scegliere **New** e fare clic su **progetto**.
+1. Nel **File** menu, scegliere **New** e fare clic su **progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2.  Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual C#** , o **Visual C++** nodo, quindi
+2. Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual c#**, o **Visual C++** nodo, quindi
 
-    1.  Per Visual Basic o l'oggetto visivo C#, selezionare **Desktop di Windows** > **App di Windows Form**.
+    1. Per Visual Basic o Visual c#, selezionare **Desktop di Windows** > **App di Windows Form**.
 
-    2.  Per Visual C++, selezionare **alle applicazioni Desktop Windows**.
+    2. Per Visual C++, selezionare **alle applicazioni Desktop Windows**.
 
-3.  Nel **nome** casella, assegnare al progetto un nome univoco, ad esempio, Procedura_DebugSemplice.
+3. Nel **nome** casella, assegnare al progetto un nome univoco, ad esempio, Procedura_DebugSemplice.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
      Visual Studio crea un nuovo progetto e visualizza un nuovo form nella finestra di progettazione Windows Form. Per altre informazioni, vedere [finestra di progettazione Windows Form](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
 
-5.  Nel **View** dal menu **della casella degli strumenti**.
+5. Nel **View** dal menu **della casella degli strumenti**.
 
      Verrà visualizzata la casella degli strumenti. Per altre informazioni, vedere [Casella degli strumenti](../ide/reference/toolbox.md).
 
-6.  Nella casella degli strumenti, fare clic sui **pulsante** controllo e trascinare il controllo all'area di progettazione Form. Rilasciare il pulsante sul form.
+6. Nella casella degli strumenti, fare clic sui **pulsante** controllo e trascinare il controllo all'area di progettazione Form. Rilasciare il pulsante sul form.
 
-7.  Nella casella degli strumenti, fare clic sui **casella di testo** controllo e trascinare il controllo all'area di progettazione Form. Eliminare il **casella di testo** nel form.
+7. Nella casella degli strumenti, fare clic sui **casella di testo** controllo e trascinare il controllo all'area di progettazione Form. Eliminare il **casella di testo** nel form.
 
 8. Nell'area di progettazione di form, fare doppio clic sul pulsante.
 
@@ -95,7 +95,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
 
 #### <a name="to-debug-the-windows-form-created-for-this-walkthrough"></a>Eseguire il debug di Windows Form creato per questa procedura dettagliata
 
-1.  Nella finestra di origine, fare clic sul margine sinistro nella stessa riga come il testo aggiunto:
+1. Nella finestra di origine, fare clic sul margine sinistro nella stessa riga come il testo aggiunto:
 
      ```vb
     textBox1.Text = "Button was clicked!"
@@ -114,31 +114,31 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
     > [!NOTE]
     >  È anche possibile fare doppio clic su qualsiasi riga di codice, scegliere **punto di interruzione**, quindi fare clic su **Inserisci punto di interruzione** per aggiungere un punto di interruzione sulla riga.
 
-2.  Scegliere **Avvia** dal menu **Debug**.
+2. Scegliere **Avvia** dal menu **Debug**.
 
      Il modulo di Windows viene avviata l'esecuzione.
 
-3.  Nel modulo di Windows fare clic sul pulsante che è stato aggiunto.
+3. Nel modulo di Windows fare clic sul pulsante che è stato aggiunto.
 
      In Visual Studio, verrà visualizzata la riga in cui è impostato il punto di interruzione sulla tabella codici. Tale riga dovrebbe essere evidenziata in giallo. A questo punto è possibile visualizzare le variabili dell'applicazione e controllarne l'esecuzione. L'applicazione è stata arrestata l'esecuzione, in attesa di un'azione da parte dell'utente.
 
-4.  Nel **Debug** menu, scegliere **Windows**, quindi **Watch**e fare clic su **espressione di controllo1**.
+4. Nel **Debug** menu, scegliere **Windows**, quindi **Watch**e fare clic su **espressione di controllo1**.
 
-5.  Nel **espressione di controllo1** finestra, fare clic su una riga vuota. Nel **Name** colonna, digitare `textBox1.Text` (se si usa Visual Basic o Visual C#) o `textBox1->Text` (se si usa C++), quindi premere INVIO.
+5. Nel **espressione di controllo1** finestra, fare clic su una riga vuota. Nel **Name** colonna, digitare `textBox1.Text` (se si usa Visual Basic o Visual c#) o `textBox1->Text` (se si usa C++), quindi premere INVIO.
 
      Il **espressione di controllo1** finestra verrà visualizzato il valore di questa variabile tra virgolette come:
 
     `""`
 
-6.  Scegliere **Esegui istruzione** dal menu **Debug**.
+6. Scegliere **Esegui istruzione** dal menu **Debug**.
 
      Il valore di textBox1.Text viene modificato nel **espressione di controllo1** finestra per:
 
     `Button was clicked!`
 
-7.  Nel **Debug** menu, scegliere **continua** per riprendere il debug del programma.
+7. Nel **Debug** menu, scegliere **continua** per riprendere il debug del programma.
 
-8.  Nel modulo di Windows fare clic sul pulsante.
+8. Nel modulo di Windows fare clic sul pulsante.
 
      Visual Studio interrompe l'esecuzione anche in questo caso.
 
@@ -153,7 +153,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
 
 #### <a name="to-attach-to-the-windows-form-application-for-debugging"></a>Per connettersi all'applicazione Windows Form per il debug
 
-1.  Nel progetto creato in precedenza, fare clic sul margine sinistro per impostare nuovamente un punto di interruzione in corrispondenza della riga aggiunta:
+1. Nel progetto creato in precedenza, fare clic sul margine sinistro per impostare nuovamente un punto di interruzione in corrispondenza della riga aggiunta:
 
      ```vb
     textBox1.Text = "Button was clicked!"
@@ -166,19 +166,19 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
     ```cpp
     textBox1->Text = "Button was clicked!";
 
-2.  On the **Debug** menu, select **Start Without Debugging**.
+2. On the **Debug** menu, select **Start Without Debugging**.
 
      The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
 
-3.  On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
 
      The **Attach to Process** dialog box appears.
 
-4.  In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
 
-5.  Click the **Attach** button.
+5. Click the **Attach** button.
 
-6.  In your Windows Form, click the one and only button.
+6. In your Windows Form, click the one and only button.
 
      The debugger breaks execution of the Windows Form at the breakpoint.
 

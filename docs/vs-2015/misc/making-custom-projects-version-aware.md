@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096595"
 ---
 # <a name="making-custom-projects-version-aware"></a>Impostazione del riconoscimento della versione per i progetti personalizzati
 Nel sistema di progetto personalizzato è possibile consentire il caricamento di progetti di un tipo specifico in più versioni di Visual Studio. È anche possibile impedire che progetti di un tipo specifico vengano caricati in una versione precedente di Visual Studio. È inoltre possibile consentire al progetto di identificarsi in una versione successiva in caso sia necessaria un'operazione di ripristino, conversione o deprecazione.  
@@ -24,17 +24,17 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
   
  L'autore di un sistema di progetto implementa `UpgradeProject_CheckOnly` (dall'interfaccia `IVsProjectUpgradeViaFactory4` ) per fornire agli utenti del sistema di progetto un controllo dell'aggiornamento. Quando gli utenti aprono un progetto, questo metodo viene chiamato per determinare se un progetto deve essere ripristinato prima del caricamento. I requisiti di aggiornamento possibili sono enumerati in `VSPUVF_REPAIRFLAGS`e includono le possibilità seguenti:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: È necessario alcun processo di ripristino.  
+1. `SPUVF_PROJECT_NOREPAIR`: È necessario alcun processo di ripristino.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Rende il progetto compatibile con una versione precedente senza i problemi che si sarebbero potuti verificare con le versioni precedenti del prodotto.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: Rende il progetto compatibile con una versione precedente senza i problemi che si sarebbero potuti verificare con le versioni precedenti del prodotto.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Rende il progetto compatibile con alcuni rischi dei problemi che si sarebbero potuti con le versioni precedenti del prodotto. Ad esempio, il progetto non sarà compatibile se dipende da versioni di SDK diverse.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Rende il progetto compatibile con alcuni rischi dei problemi che si sarebbero potuti con le versioni precedenti del prodotto. Ad esempio, il progetto non sarà compatibile se dipende da versioni di SDK diverse.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Rende il progetto incompatibile con una versione precedente.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Rende il progetto incompatibile con una versione precedente.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Indica che la versione corrente non supporta questo progetto.  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`: Indica che la versione corrente non supporta questo progetto.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: Indica che questo progetto non è più supportato.  
+6. `VSPUVF_PROJECT_DEPRECATED`: Indica che questo progetto non è più supportato.  
   
 > [!NOTE]
 >  Per evitare confusione, non combinare flag di aggiornamento quando li si imposta. Ad esempio, non creare uno stato di aggiornamento ambiguo, come `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -49,18 +49,18 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
   
  Di seguito è riportato un esempio che aiuta a riepilogare l'esperienza utente per quanto riguarda la compatibilità. Se un progetto è stato creato in una versione precedente e la versione corrente determina che è necessario un aggiornamento, Visual Studio visualizza una finestra di dialogo per chiedere all'utente l'autorizzazione per apportare le modifiche. Se l'utente acconsente, il progetto viene modificato e quindi caricato. Se la soluzione viene quindi chiusa e riaperta nella versione precedente, il progetto aggiornato in modo unidirezionale sarà incompatibile e non verrà caricato. Se il progetto ha richiesto solo un ripristino, e non un aggiornamento, sarà ancora possibile aprire il progetto ripristinato in entrambe le versioni.  
   
-##  <a name="BKMK_Incompat"></a> Contrassegno di un progetto come incompatibile  
+## <a name="BKMK_Incompat"></a> Contrassegno di un progetto come incompatibile  
  È possibile contrassegnare un progetto come incompatibile con le versioni precedenti di Visual Studio.  Si supponga, ad esempio, di creare un progetto che usa una funzionalità di .NET Framework 4.5. Poiché questo progetto non può essere compilato in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], è possibile contrassegnarlo come incompatibile per impedire che tale versione tenti di caricarlo.  
   
  Il componente che aggiunge la funzionalità incompatibile è responsabile di contrassegnare il progetto come incompatibile. Il componente deve avere accesso all'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> che rappresenta i progetti di interesse.  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>Per contrassegnare un progetto come incompatibile  
   
-1.  Nel componente ottenere un'interfaccia `IVsAppCompat` dal servizio globale SVsSolution.  
+1. Nel componente ottenere un'interfaccia `IVsAppCompat` dal servizio globale SVsSolution.  
   
      Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  Nel componente chiamare `IVsAppCompat.AskForUserConsentToBreakAssetCompat`e passare una matrice di interfacce `IVsHierarchy` che rappresentano i progetti di interesse.  
+2. Nel componente chiamare `IVsAppCompat.AskForUserConsentToBreakAssetCompat`e passare una matrice di interfacce `IVsHierarchy` che rappresentano i progetti di interesse.  
   
      Questo metodo ha la firma seguente:  
   
@@ -74,9 +74,9 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
     > [!WARNING]
     >  Negli scenari più comuni, la matrice `IVsHierarchy` conterrà un solo elemento.  
   
-3.  Se `AskForUserConsentToBreakAssetCompat` restituisce `S_OK`, il componente esegue o accetta le modifiche che interrompono la compatibilità.  
+3. Se `AskForUserConsentToBreakAssetCompat` restituisce `S_OK`, il componente esegue o accetta le modifiche che interrompono la compatibilità.  
   
-4.  Nel componente chiamare il metodo `IVsAppCompat.BreakAssetCompatibility` per ogni progetto che si vuole contrassegnare come incompatibile. Il componente può impostare il valore del parametro `lpszMinimumVersion` su una versione minima specifica invece che fare in modo che Visual Studio cerchi la stringa della versione corrente del Registro di sistema. Questo approccio riduce al minimo il rischio che il componente imposti inavvertitamente un valore superiore in futuro, in base a ciò che è presente nel Registro di sistema in quel momento. Se venisse impostato un valore superiore, Visual Studio non potrebbe aprire il progetto.  
+4. Nel componente chiamare il metodo `IVsAppCompat.BreakAssetCompatibility` per ogni progetto che si vuole contrassegnare come incompatibile. Il componente può impostare il valore del parametro `lpszMinimumVersion` su una versione minima specifica invece che fare in modo che Visual Studio cerchi la stringa della versione corrente del Registro di sistema. Questo approccio riduce al minimo il rischio che il componente imposti inavvertitamente un valore superiore in futuro, in base a ciò che è presente nel Registro di sistema in quel momento. Se venisse impostato un valore superiore, Visual Studio non potrebbe aprire il progetto.  
   
      Questo metodo ha la firma seguente:  
   
@@ -133,21 +133,21 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Ad esempio, se i metodi `UpgradeProject_CheckOnly` e `CreateProject` scritti per un sistema di progetto [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1 analizzano un file di progetto e determinano che la proprietà di compilazione `<MinimumVisualStudioVersion>` è "11.0", Visual Studio 2010 con SP1 non caricherà il progetto. Inoltre, lo strumento di **esplorazione della soluzione** indicherebbe che il progetto è "incompatibile" e non verrà caricato.  
   
-##  <a name="BKMK_UpgradeLogger"></a> Il Logger di aggiornamento  
+## <a name="BKMK_UpgradeLogger"></a> Il Logger di aggiornamento  
  La chiamata a `IVsProjectUpgradeViaFactory::UpgradeProject` contiene un logger `IVsUpgradeLogger` , che le versioni e i sistemi di progetto devono usare per fornire una traccia di aggiornamento dettagliata per la risoluzione dei problemi. Se viene registrato un avviso o un errore, Visual Studio visualizza il report di aggiornamento.  
   
  Quando si scrive nel logger di aggiornamento, tenere presenti le linee guida seguenti:  
   
--   Visual Studio chiamerà un'operazione di scaricamento al termine dell'aggiornamento di tutti i progetti. Non eseguire la chiamata nel sistema di progetto.  
+- Visual Studio chiamerà un'operazione di scaricamento al termine dell'aggiornamento di tutti i progetti. Non eseguire la chiamata nel sistema di progetto.  
   
--   La funzione LogMessage ha i valori di ErrorLevels seguenti:  
+- La funzione LogMessage ha i valori di ErrorLevels seguenti:  
   
-    -   0 per qualsiasi informazione di cui si vuole tenere traccia.  
+    - 0 per qualsiasi informazione di cui si vuole tenere traccia.  
   
-    -   1 per un avviso.  
+    - 1 per un avviso.  
   
-    -   2 per un errore  
+    - 2 per un errore  
   
-    -   3 per il formattatore del report. Quando il progetto viene aggiornato, registrare una volta la parola "Converted" senza localizzarla.  
+    - 3 per il formattatore del report. Quando il progetto viene aggiornato, registrare una volta la parola "Converted" senza localizzarla.  
   
--   Se un progetto non richiede alcun ripristino o aggiornamento, Visual Studio genera il file di log solo se il sistema di progetto ha registrato un avviso o un errore durante l'esecuzione del metodo UpgradeProject_CheckOnly o UpgradeProjectFlavor_CheckOnly.
+- Se un progetto non richiede alcun ripristino o aggiornamento, Visual Studio genera il file di log solo se il sistema di progetto ha registrato un avviso o un errore durante l'esecuzione del metodo UpgradeProject_CheckOnly o UpgradeProjectFlavor_CheckOnly.

@@ -6,17 +6,17 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968156"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076706"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il manifesto per lo strumento di codice è un'applicazione console che accetta un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto di immagini in C++, C#, VB o file con estensione vsct per le estensioni di Visual Studio. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini richiedente da Visual Studio Image Service direttamente o per passare i valori del manifesto tramite le API, se il codice non gestisce la propria interfaccia utente e per il rendering.  
+Il manifesto per lo strumento di codice è un'applicazione console che accetta un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto di immagini in C++, c#, VB o file con estensione vsct per le estensioni di Visual Studio. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini richiedente da Visual Studio Image Service direttamente o per passare i valori del manifesto tramite le API, se il codice non gestisce la propria interfaccia utente e per il rendering.  
   
 ## <a name="how-to-use-the-tool"></a>Come usare lo strumento  
  **Sintassi**  
@@ -40,22 +40,22 @@ Il manifesto per lo strumento di codice è un'applicazione console che accetta u
   
  **Esempi**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest c:\Northwind.cs  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest c:\Northwind.cs  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: My:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: My:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Note  
   
--   È consigliabile utilizzare questo strumento con manifesti di immagine che sono stati generati dal manifesto dallo strumento di risorse.  
+- È consigliabile utilizzare questo strumento con manifesti di immagine che sono stati generati dal manifesto dallo strumento di risorse.  
   
--   Lo strumento analizza solo le voci di simboli per generare il wrapper del codice. Se un manifesto di immagini non contiene simboli, i wrapper del codice generato sarà vuoti. Se è presente un'immagine o un set di immagini nel manifesto dell'immagine che non utilizzano i simboli, essi verranno esclusi dal wrapper codice.  
+- Lo strumento analizza solo le voci di simboli per generare il wrapper del codice. Se un manifesto di immagini non contiene simboli, i wrapper del codice generato sarà vuoti. Se è presente un'immagine o un set di immagini nel manifesto dell'immagine che non utilizzano i simboli, essi verranno esclusi dal wrapper codice.  
   
 ## <a name="sample-output"></a>Esempio di output  
- **Wrapper C#**  
+ **Wrapper c#**  
   
- Le classi di una coppia di ID immagine semplice e il moniker di immagini per C# sarà simile al codice riportato di seguito:  
+ Le classi di una coppia di ID immagine semplice e il moniker di immagini per c# sarà simile al codice riportato di seguito:  
   
 ```csharp  
 //-----------------------------------------------------------------------------  

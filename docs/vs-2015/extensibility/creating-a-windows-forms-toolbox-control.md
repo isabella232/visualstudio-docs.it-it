@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082217"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creazione di un controllo della casella degli strumenti Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,26 +32,26 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 #### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Creare un'estensione con un controllo della casella degli strumenti di Windows Form  
   
-1.  Creare un progetto VSIX denominato `MyWinFormsControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual C# / Extensibility**.  
+1. Creare un progetto VSIX denominato `MyWinFormsControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
   
-2.  Quando si apre il progetto, aggiungere un **controllo della casella degli strumenti di Windows Form** modello di elemento denominato `Counter`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual C# / Extensibility** e selezionare **controllo della casella degli strumenti di Windows Form**  
+2. Quando si apre il progetto, aggiungere un **controllo della casella degli strumenti di Windows Form** modello di elemento denominato `Counter`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **controllo della casella degli strumenti di Windows Form**  
   
-3.  Ciò consente di aggiungere un controllo utente, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> per posizionare il controllo nel **della casella degli strumenti**e un **Microsoft.VisualStudio.ToolboxControl** voce di risorsa nel manifesto VSIX per la distribuzione.  
+3. Ciò consente di aggiungere un controllo utente, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> per posizionare il controllo nel **della casella degli strumenti**e un **Microsoft.VisualStudio.ToolboxControl** voce di risorsa nel manifesto VSIX per la distribuzione.  
   
 ### <a name="building-a-user-interface-for-the-control"></a>Creazione di un'interfaccia utente per il controllo  
  Il `Counter` controllo richiede due controlli figlio: una <xref:System.Windows.Forms.Label> per visualizzare il conteggio corrente e un <xref:System.Windows.Forms.Button> per reimpostare il conteggio su 0. Altri controlli figlio non sono necessari perché i chiamanti incrementeranno il contatore a livello di codice.  
   
 ##### <a name="to-build-the-user-interface"></a>Per creare l'interfaccia utente  
   
-1.  Nelle **Esplora soluzioni**, fare doppio clic su Counter.cs per aprirlo nella finestra di progettazione.  
+1. Nelle **Esplora soluzioni**, fare doppio clic su Counter.cs per aprirlo nella finestra di progettazione.  
   
-2.  Rimuovere il "fai clic qui!" **Pulsante** inclusa per impostazione predefinita quando si aggiunge il modello di elemento di controllo della casella degli strumenti di Windows Form.  
+2. Rimuovere il "fai clic qui!" **Pulsante** inclusa per impostazione predefinita quando si aggiunge il modello di elemento di controllo della casella degli strumenti di Windows Form.  
   
-3.  Dal **casella degli strumenti**, trascinare un `Label` controllo e quindi un `Button` controllo sotto di esso nell'area di progettazione.  
+3. Dal **casella degli strumenti**, trascinare un `Label` controllo e quindi un `Button` controllo sotto di esso nell'area di progettazione.  
   
-4.  Ridimensionare il controllo utente generale a 150, 50 pixel e ridimensionare il pulsante di controllo su 50, 20 pixel.  
+4. Ridimensionare il controllo utente generale a 150, 50 pixel e ridimensionare il pulsante di controllo su 50, 20 pixel.  
   
-5.  Nel **proprietà** finestra, impostare i valori seguenti per i controlli nell'area di progettazione.  
+5. Nel **proprietà** finestra, impostare i valori seguenti per i controlli nell'area di progettazione.  
   
     |Control|Proprietà|Value|  
     |-------------|--------------|-----------|  
@@ -64,16 +64,16 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 ##### <a name="to-code-the-user-control"></a>Per codificare il controllo utente  
   
-1.  Fare doppio clic sul form per aprire il gestore di eventi di carico nella finestra del codice.  
+1. Fare doppio clic sul form per aprire il gestore di eventi di carico nella finestra del codice.  
   
-2.  Sopra il metodo del gestore eventi, creare un numero intero per archiviare il valore del contatore e una stringa per archiviare il testo visualizzato come illustrato nell'esempio seguente nella classe del controllo.  
+2. Sopra il metodo del gestore eventi, creare un numero intero per archiviare il valore del contatore e una stringa per archiviare il testo visualizzato come illustrato nell'esempio seguente nella classe del controllo.  
   
     ```csharp  
     int currentValue;  
     string displayText;  
     ```  
   
-3.  Creare le seguenti dichiarazioni di proprietà pubblica.  
+3. Creare le seguenti dichiarazioni di proprietà pubblica.  
   
     ```csharp  
     public int Value {  
@@ -94,7 +94,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
      I chiamanti possono accedere a queste proprietà per ottenere e impostare il testo visualizzato del contatore e per mostrare o nascondere il `Reset` pulsante. I chiamanti possono ottenere il valore corrente di sola lettura `Value` proprietà, ma non è possibile impostare il valore direttamente.  
   
-4.  Inserire il codice seguente nel `Load` evento per il controllo.  
+4. Inserire il codice seguente nel `Load` evento per il controllo.  
   
     ```csharp  
     private void Counter_Load(object sender, EventArgs e)  
@@ -107,7 +107,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
      Impostando il **etichetta** testo nel <xref:System.Windows.Forms.UserControl.Load> evento consente di caricare prima i relativi valori vengono applicati le proprietà di destinazione. Impostando il **Label** testo nel costruttore genera un oggetto vuoto **etichetta**.  
   
-5.  Creare il metodo pubblico seguente per incrementare il contatore.  
+5. Creare il metodo pubblico seguente per incrementare il contatore.  
   
     ```csharp  
     public void Increment()  
@@ -119,7 +119,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
     ```  
   
-6.  Aggiungere una dichiarazione per il `Incremented` eventi alla classe del controllo.  
+6. Aggiungere una dichiarazione per il `Incremented` eventi alla classe del controllo.  
   
     ```csharp  
     public event EventHandler Incremented;  
@@ -127,7 +127,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
      I chiamanti possono aggiungere gestori all'evento per rispondere alle modifiche del valore del contatore.  
   
-7.  Tornare alla visualizzazione progettazione e fare doppio clic sui `Reset` pulsante per generare il `btnReset_Click` gestore eventi e quindi compilare in come illustrato nell'esempio seguente.  
+7. Tornare alla visualizzazione progettazione e fare doppio clic sui `Reset` pulsante per generare il `btnReset_Click` gestore eventi e quindi compilare in come illustrato nell'esempio seguente.  
   
     ```csharp  
     private void btnReset_Click(object sender, EventArgs e)  
@@ -138,7 +138,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
     ```  
   
-8.  Immediatamente sopra la definizione di classe, nella dichiarazione dell'attributo `ProvideToolboxControl` , modificare il valore del primo parametro da `"MyWinFormsControl.Counter"` a `"General"`. In questo modo si imposta il nome del gruppo di elementi che ospiterà il controllo nella **casella degli strumenti**.  
+8. Immediatamente sopra la definizione di classe, nella dichiarazione dell'attributo `ProvideToolboxControl` , modificare il valore del primo parametro da `"MyWinFormsControl.Counter"` a `"General"`. In questo modo si imposta il nome del gruppo di elementi che ospiterà il controllo nella **casella degli strumenti**.  
   
      L'esempio seguente mostra l'attributo `ProvideToolboxControl` e la definizione di classe modificata.  
   
@@ -152,23 +152,23 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 ##### <a name="to-test-the-control"></a>Per testare il controllo  
   
-1.  Premere F5.  
+1. Premere F5.  
   
      Si compila il progetto e apre una seconda istanza sperimentale di Visual Studio con il controllo installato.  
   
-2.  Nell'istanza sperimentale di Visual Studio, creare un **Windows Forms Application** progetto.  
+2. Nell'istanza sperimentale di Visual Studio, creare un **Windows Forms Application** progetto.  
   
-3.  Nelle **Esplora soluzioni**, fare doppio clic su Form1 per aprirlo nella finestra di progettazione se non è già aperto.  
+3. Nelle **Esplora soluzioni**, fare doppio clic su Form1 per aprirlo nella finestra di progettazione se non è già aperto.  
   
-4.  Nel **casella degli strumenti**, il `Counter` controllo deve essere visualizzato nei **generale** sezione.  
+4. Nel **casella degli strumenti**, il `Counter` controllo deve essere visualizzato nei **generale** sezione.  
   
-5.  Trascinare un `Counter` controllo al form e selezionarlo. Il `Value`, `Message`, e `ShowReset` proprietà verranno visualizzate nel **delle proprietà** finestra, insieme alle proprietà che vengono ereditate da <xref:System.Windows.Forms.UserControl>.  
+5. Trascinare un `Counter` controllo al form e selezionarlo. Il `Value`, `Message`, e `ShowReset` proprietà verranno visualizzate nel **delle proprietà** finestra, insieme alle proprietà che vengono ereditate da <xref:System.Windows.Forms.UserControl>.  
   
-6.  Impostare la proprietà `Message` su `Count:`.  
+6. Impostare la proprietà `Message` su `Count:`.  
   
-7.  Trascinare un <xref:System.Windows.Forms.Button> controllo al form e quindi impostare le proprietà di nome e il testo del pulsante su `Test`.  
+7. Trascinare un <xref:System.Windows.Forms.Button> controllo al form e quindi impostare le proprietà di nome e il testo del pulsante su `Test`.  
   
-8.  Fare doppio clic sul pulsante per aprire Form1.cs. nella visualizzazione del codice e creare un gestore eventi click.  
+8. Fare doppio clic sul pulsante per aprire Form1.cs. nella visualizzazione del codice e creare un gestore eventi click.  
   
 9. Nel gestore di clic, chiamare `counter1.Increment()`.  
   

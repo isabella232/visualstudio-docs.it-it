@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103529"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina pubblica, creazione progetti (sviluppo per Office in Visual Studio)
   La pagina **Pubblica** di **Creazione progetti** viene usata per configurare le proprietà per la distribuzione.
@@ -84,9 +84,9 @@ ms.locfileid: "54869671"
 
 - Comportamento di caricamento del componente aggiuntivo VSTO.
 
-  -   Carica all'avvio: specifica che il componente aggiuntivo VSTO viene caricato all'avvio dell'applicazione di Office.
+  - Carica all'avvio: specifica che il componente aggiuntivo VSTO viene caricato all'avvio dell'applicazione di Office.
 
-  -   Carica su richiesta: specifica che il componente aggiuntivo VSTO viene caricato quando lo richiede l'applicazione, ad esempio quando un utente fa clic su un elemento dell'interfaccia utente che usa la funzionalità nel componente aggiuntivo VSTO.
+  - Carica su richiesta: specifica che il componente aggiuntivo VSTO viene caricato quando lo richiede l'applicazione, ad esempio quando un utente fa clic su un elemento dell'interfaccia utente che usa la funzionalità nel componente aggiuntivo VSTO.
 
   **Lingua di pubblicazione** questa opzione imposta la lingua delle condizioni di licenza Software Microsoft e include i language pack nell'elenco dei prerequisiti. Non influisce sulla lingua della personalizzazione. La lingua del programma di installazione viene determinata dalle lingue installate di Visual Studio.
 

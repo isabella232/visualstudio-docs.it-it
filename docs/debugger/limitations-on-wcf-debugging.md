@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721485"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082022"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitazioni del debug di WCF
 Sono disponibili tre modalità per avviare il debug di un servizio WCF:
@@ -37,13 +37,13 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitazioni dell'esecuzione di istruzioni in un servizio
  Per eseguire istruzioni in un servizio da un'applicazione client di cui si esegue il debug, è necessario soddisfare le seguenti condizioni:
 
--   Il client deve chiamare il servizio utilizzando un oggetto client sincrono.
+- Il client deve chiamare il servizio utilizzando un oggetto client sincrono.
 
--   L'operazione del contratto non può essere unidirezionale.
+- L'operazione del contratto non può essere unidirezionale.
 
--   Se il server è asincrono, non è possibile visualizzare lo stack di chiamate completo durante l'esecuzione del codice nel servizio.
+- Se il server è asincrono, non è possibile visualizzare lo stack di chiamate completo durante l'esecuzione del codice nel servizio.
 
--   È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:
+- È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:
 
     ```xml
     <system.web>
@@ -74,11 +74,11 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
   ```
 
 ## <a name="self-hosting"></a>Self-hosting
- Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per informazioni su come eseguire il debug di un servizio self-hosted, vedere [procedura: eseguire il Debug di un servizio WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+ Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per informazioni su come eseguire il debug di un servizio self-hosted, vedere [come: Eseguire il debug di un servizio WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
 ## <a name="self-hosting"></a>Self-hosting
  Per abilitare il debug delle applicazioni di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, è necessario installare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5 prima dell'installazione di [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]. Se [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] viene installato prima di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, quando si tenta di eseguire il debug di un'applicazione di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5 viene generato un errore. Il messaggio di errore è "Impossibile eseguire automaticamente l'istruzione sul server". Per risolvere questo problema, utilizzare il Windows **Pannello di controllo** > **programmi e funzionalità** per ripristinare il [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)
-- [Procedura: Eseguire il debug di un servizio WCF indipendente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075759"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
   
   L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati in C#](../misc/filtered-completion-lists-in-csharp.md) e [Elementi dell'elenco di completamento preselezionati in C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento  
+### <a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [Elemento Shortcut (frammenti di codice IntelliSense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del frammento.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Parole chiave del linguaggio negli elenchi di completamento  
+### <a name="Keywords"></a> Parole chiave del linguaggio negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Metodi di estensione negli elenchi di completamento  
+### <a name="ExtensionMethods"></a> Metodi di estensione negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include i metodi estensione che appartengono a un ambito.  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
   
  In Visual C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:  
   
--   **Interfacce e classi di base** Vengono rimosse le voci dagli elenchi di completamento IntelliSense per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi base dall'elenco di completamento perché Visual C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.  
+- **Interfacce e classi di base** Vengono rimosse le voci dagli elenchi di completamento IntelliSense per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi base dall'elenco di completamento perché Visual C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.  
   
--   **Attributi**: quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo i tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.  
+- **Attributi**: Quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo quei tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.  
   
--   Operatori `as` e `is`.  
+- Operatori `as` e `is`.  
   
--   **Clausole catch.**  
+- **Clausole catch.**  
   
--   **Inizializzatori di oggetto:** solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.  
+- **Inizializzatori di oggetto:** Solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.  
   
--   **Nuova parola chiave**: quando si digita `new` e si preme la BARRA SPAZIATRICE, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.  
+- **Parola chiave new**: Quando si digita `new` e poi si preme la BARRA SPAZIATRICE, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.  
   
--   **Operatori as e is**: quando si preme la BARRA SPAZIATRICE dopo aver digitato la parola chiave `as` o `is`, viene visualizzato automaticamente un elenco di completamento filtrato.  
+- **come gli operatori e is:** Quando si preme la BARRA SPAZIATRICE dopo aver digitato la parola chiave `as` o `is` viene visualizzato automaticamente un elenco di completamento.  
   
--   Event: quando si digita la parola chiave `event`, l'elenco di completamento contiene solo tipi delegati.  
+- Eventi: Quando si digita la parola chiave `event` l'elenco di completamento contiene solo tipi delegati.  
   
--   Il parametro consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.  
+- Il parametro consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.  
   
 ## <a name="most-recently-used-members"></a>Membri utilizzati più di recente  
  IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. La volta successiva che si utilizza l'elenco dei membri, i membri utilizzati di recente vengono visualizzati nella parte superiore. La cronologia dei membri utilizzati più di recente viene cancellata tra ogni sessione nell'ambiente di sviluppo integrato.  
@@ -109,7 +109,7 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 ### <a name="implement-abstract-base-class"></a>Implementare una classe di base astratta  
  IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe base astratta mentre si usa l'editor di codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Usando IntelliSense, una volta digitato il nome di una classe base astratta in una dichiarazione di classe viene visualizzato uno smart tag, che offre la possibilità di implementare automaticamente i metodi della classe base. Lo smart tag offre la possibilità di implementare automaticamente i metodi della classe base.  
   
- Gli stub di metodo generati con la funzionalità di implementazione di una classe base astratta vengono modellati in base al frammento di codice definito nel file MethodStub.snippet. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).  
+ Gli stub di metodo generati con la funzionalità di implementazione di una classe base astratta vengono modellati in base al frammento di codice definito nel file MethodStub.snippet. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).  
   
 ### <a name="generate-from-usage"></a>Generazione dall'utilizzo  
  La funzionalità di **generazione dall'utilizzo** consente di usare le classi e i membri prima di definirli. È possibile generare uno stub per qualsiasi classe, costruttore, metodo, proprietà, campo o enumerazione che si desidera utilizzare, ma che non è ancora stato definito. È possibile generare nuovi tipi e membri senza abbandonare la posizione corrente nel codice. Ciò riduce al minimo l'interruzione del flusso di lavoro.  

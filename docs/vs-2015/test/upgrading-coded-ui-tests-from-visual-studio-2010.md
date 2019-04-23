@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080696"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aggiornamento dei test codificati dell'interfaccia utente da Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 
  **Requisiti**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!NOTE]
 >  Visual Studio include più di un tipo di progetto di test. Un nuovo test codificato dell'interfaccia utente verrà creato in un tipo di progetto di test codificato dell'interfaccia utente. Per altre informazioni, vedere [Aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
@@ -46,7 +46,7 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 |In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]sono state aggiunte nuove API di test del codice dell'interfaccia utente|**La compilazione avrà esito negativo**<br /><br /> Se si creano test codificati dell'interfaccia utente usando la nuova API di test dell'interfaccia utente in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], questi progetti non possono essere aperti in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|I progetti che usano la nuova API devono essere gestiti solo in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |In [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] sono stati aggiunti riferimenti all'interno di un'istruzione ‘Choose’ nel file csproj. In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], un file di destinazioni di feedback viene utilizzato per includere i riferimenti ad assembly di test codificato dell'interfaccia utente.|In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], un test codificato dell'interfaccia utente non può essere aggiunto a un progetto di test creato in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (o SP1) che non conteneva un test codificato dell'interfaccia utente.<br /><br /> Il processo di ripristino aggiunge il file di destinazioni e l'istruzione Choose. Se un test codificato dell'interfaccia utente non è nel progetto di test, il progetto viene contrassegnato come ripristinato e i riferimenti appropriati non verranno aggiunti quando si aggiungerà il test codificato dell'interfaccia utente in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Sarà necessario creare un nuovo progetto di test nella stessa soluzione usando [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e aggiungervi il nuovo test codificato dell'interfaccia utente. In alternativa, è possibile aggiungere i test codificati dell'interfaccia utente nel progetto di test in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 e aprirlo in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Aggiornamento di Visual Studio 2010 SP1
+## <a name="UpgradingCodedUIFromVS2010_Update"></a> Aggiornamento di Visual Studio 2010 SP1
  Un aggiornamento a [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 con il supporto di compatibilità a Visual Studio 2012 e Windows 8 è disponibile per il download nell' [Area download Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) nonché come aggiornamento di Visual Studio.
 
  Dopo avere applicato l'aggiornamento, le seguenti funzionalità dello strumento di test codificati dell'interfaccia utente [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 vengono aggiornate per Windows 8:
@@ -57,11 +57,11 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 
   L'aggiornamento contiene anche le correzioni per i seguenti problemi:
 
-- **Copertura codice:** impossibilità di aprire un file di code coverage (con estensione coverage) creato da Visual Studio 2012 SP1 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
+- **Code coverage:** Impossibilità di aprire un file di code coverage (con estensione coverage) creato da Visual Studio 2012 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
 
-- **Elementi di test bloccati:** il team dispone di un elemento di test assegnato a un utente non valido in Team Foundation Server (TFS) 2010. Ad esempio, un utente ha lasciato l'azienda, ma un test case è ancora assegnato a lui. Eseguire l'aggiornamento di TFS 2010 a TFS 2012. Utilizzare [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 per connettersi al server TFS aggiornato. Non è possibile assegnare l'elemento di test ad alcuni utenti TFS utilizzando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
+- **Artefatti di test abbandonati:** Il team dispone di un elemento di test assegnato a un utente non valido in Team Foundation Server (TFS) 2010. Ad esempio, un utente ha lasciato l'azienda, ma un test case è ancora assegnato a lui. Eseguire l'aggiornamento di TFS 2010 a TFS 2012. Utilizzare [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 per connettersi al server TFS aggiornato. Non è possibile assegnare l'elemento di test ad alcuni utenti TFS utilizzando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 
-- **Test di carico:** quando si esegue un test di carico con un tipo di rete diverso dal profilo della rete locale (LAN) in un computer che esegue Windows 8, il driver dell'emulatore di rete causa l'arresto anomalo del sistema operativo. Per altre informazioni, vedere l' [articolo KB 2736182](http://support.microsoft.com/kb/2736182).
+- **Test di carico:** Quando si esegue un test di carico con un tipo di rete diverso dal profilo della rete locale (LAN) in un computer che esegue Windows 8, il driver dell'emulatore di rete causa l'arresto anomalo del sistema operativo. Per altre informazioni, vedere l' [articolo KB 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Vedere anche
  [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [la generazione di un Test codificati dell'interfaccia utente Test da una registrazione delle azioni esistente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

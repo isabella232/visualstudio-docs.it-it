@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104018"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Esempio: Il \_In\_ annotazione  
  Il `_In_` annotazione indica che:  
   
--   Il parametro deve essere valido e non verrà modificato.  
+- Il parametro deve essere valido e non verrà modificato.  
   
--   La funzione leggerà solo dal buffer a elemento singolo.  
+- La funzione leggerà solo dal buffer a elemento singolo.  
   
--   Il chiamante deve fornire al buffer e inizializzarla.  
+- Il chiamante deve fornire al buffer e inizializzarla.  
   
--   `_In_` Consente di specificare "read-only". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.  
+- `_In_` Consente di specificare "read-only". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.  
   
--   `_In_` è consentito ma ignorato dall'analizzatore su valori scalari non puntatore.  
+- `_In_` è consentito ma ignorato dall'analizzatore su valori scalari non puntatore.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

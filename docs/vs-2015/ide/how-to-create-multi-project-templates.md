@@ -13,14 +13,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096452"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Procedura: creare modelli basati su più progetti
+# <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli multiprogetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I modelli multiprogetto fungono da contenitori per due o più progetti. Quando un progetto basato su un modello per più progetti viene creato nella finestra di dialogo **Nuovo progetto**, ogni progetto del modello viene aggiunto alla soluzione.  
@@ -79,15 +79,15 @@ I modelli multiprogetto fungono da contenitori per due o più progetti. Quando u
   
 ### <a name="to-create-a-multi-project-template"></a>Per creare un modello per più progetti  
   
-1.  Creare i progetti da includere nel modello per più progetti.  
+1. Creare i progetti da includere nel modello per più progetti.  
   
-2.  Creare i file con estensione vstemplate per ogni progetto. Per altre informazioni, vedere [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md).  
+2. Creare i file con estensione vstemplate per ogni progetto. Per altre informazioni, vedere [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md).  
   
-3.  Creare un file radice con estensione vstemplate per i metadati del modello per più progetti. Per altre informazioni, vedere il primo esempio della sezione seguente.  
+3. Creare un file radice con estensione vstemplate per i metadati del modello per più progetti. Per altre informazioni, vedere il primo esempio della sezione seguente.  
   
-4.  Selezionare i file e le cartelle da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi **Cartella compressa**. I file e le cartelle vengono compressi in un file con estensione zip.  
+4. Selezionare i file e le cartelle da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi **Cartella compressa**. I file e le cartelle vengono compressi in un file con estensione zip.  
   
-5.  Inserire il file di modello con estensione zip nella directory dei modelli di progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ProjectTemplates\\.  
+5. Inserire il file di modello con estensione zip nella directory dei modelli di progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Esempio  
  Questo esempio illustra un file radice con estensione vstemplate per più progetti. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` nell'elemento `ProjectTemplateLink` imposta il nome per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da assegnare a questo progetto. Se l'attributo `ProjectName` non esiste, per il nome del progetto verrà usato il nome del file .vstemplate.  

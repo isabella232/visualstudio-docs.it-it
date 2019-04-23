@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076799"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
   
  Questo documento illustra queste attività:  
   
--   Impostazione della dimensione della trama  
+- Impostazione della dimensione della trama  
   
--   Impostazione dei colori di primo piano e di sfondo  
+- Impostazione dei colori di primo piano e di sfondo  
   
--   Utilizzo del canale alfa (trasparenza)  
+- Utilizzo del canale alfa (trasparenza)  
   
--   Utilizzo degli strumenti **Riempimento** e **Ellisse**  
+- Utilizzo degli strumenti **Riempimento** e **Ellisse**  
   
--   Impostazione delle proprietà dello strumento  
+- Impostazione delle proprietà dello strumento  
   
 ## <a name="creating-a-basic-texture"></a>Creazione di una trama di base  
  È possibile usare l'editor di immagini per creare e modificare immagini e trame per un gioco o un'app.  
@@ -88,7 +88,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
   
     ![Trama di destinazione "bullseye" completa](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+    Come passaggio successivo è possibile generare i livelli MIP per la trama. Per altre informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Image Editor](../designers/image-editor.md)

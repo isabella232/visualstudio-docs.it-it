@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080995"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedura: Salvare dati usando una transazione
 
@@ -37,15 +37,15 @@ Per eseguire il rollback della transazione, generare un'eccezione prima di chiam
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Per aggiungere un riferimento al Transactions
 
-1.  Nel **Project** dal menu **Aggiungi riferimento**.
+1. Nel **Project** dal menu **Aggiungi riferimento**.
 
-2.  Nel **.NET** scheda (**SQL Server** scheda per i progetti di SQL Server), selezionare **System. Transactions**, quindi selezionare **OK**.
+2. Nel **.NET** scheda (**SQL Server** scheda per i progetti di SQL Server), selezionare **System. Transactions**, quindi selezionare **OK**.
 
      Un riferimento a *Transactions* viene aggiunto al progetto.
 
 ## <a name="to-save-data-in-a-transaction"></a>Per salvare i dati in una transazione
 
--   Aggiungere il codice per salvare i dati all'interno di usando istruzione che contiene la transazione. Il codice seguente viene illustrato come creare e creare un'istanza di un <xref:System.Transactions.TransactionScope> oggetto in un uso istruzione:
+- Aggiungere il codice per salvare i dati all'interno di usando istruzione che contiene la transazione. Il codice seguente viene illustrato come creare e creare un'istanza di un <xref:System.Transactions.TransactionScope> oggetto in un uso istruzione:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ Per eseguire il rollback della transazione, generare un'eccezione prima di chiam
 ## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
-- [Procedura dettagliata: Salvare dati in una transazione](../data-tools/save-data-in-a-transaction.md)
+- [Procedura dettagliata: Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)

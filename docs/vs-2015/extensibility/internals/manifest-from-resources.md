@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112832"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
   
  **Esempi**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>Note  
   
--   Lo strumento supporta solo file con estensione png e. Xaml. Qualsiasi altro tipo di immagine o un file verrà ignorato. Viene generato un avviso per tutti i tipi non supportati rilevati durante l'analisi delle risorse. Se non supportata immagini sono disponibili al termine lo strumento di analisi delle risorse, verrà generato un errore  
+- Lo strumento supporta solo file con estensione png e. Xaml. Qualsiasi altro tipo di immagine o un file verrà ignorato. Viene generato un avviso per tutti i tipi non supportati rilevati durante l'analisi delle risorse. Se non supportata immagini sono disponibili al termine lo strumento di analisi delle risorse, verrà generato un errore  
   
--   Seguendo il formato consigliato per le immagini. PNG, lo strumento imposterà il valore delle dimensioni e delle dimensioni per il formato PNG per la dimensione di formato specificato, anche se è diversa dalla dimensione effettiva dell'immagine.  
+- Seguendo il formato consigliato per le immagini. PNG, lo strumento imposterà il valore delle dimensioni e delle dimensioni per il formato PNG per la dimensione di formato specificato, anche se è diversa dalla dimensione effettiva dell'immagine.  
   
--   Può essere omesso nel formato larghezza/altezza per immagini con estensione png, ma lo strumento leggerà effettiva larghezza/altezza dell'immagine e usandole per valore delle dimensioni e delle dimensioni dell'immagine.  
+- Può essere omesso nel formato larghezza/altezza per immagini con estensione png, ma lo strumento leggerà effettiva larghezza/altezza dell'immagine e usandole per valore delle dimensioni e delle dimensioni dell'immagine.  
   
--   Eseguire questo strumento nella sequenza di immagini stesse più volte per la stessa .imagemanifest comporterà voci duplicate del manifesto, perché lo strumento tenta di suddividere l'elenco di immagini in immagini autonome e aggiungerli al manifesto esistente.  
+- Eseguire questo strumento nella sequenza di immagini stesse più volte per la stessa .imagemanifest comporterà voci duplicate del manifesto, perché lo strumento tenta di suddividere l'elenco di immagini in immagini autonome e aggiungerli al manifesto esistente.  
   
--   Unione (omettendo /newGuids o /newIds) devono essere eseguita solo per i manifesti generati dallo strumento. I manifesti che sono stati personalizzati generati tramite altri mezzi non potrebbero risultare uniti correttamente.  
+- Unione (omettendo /newGuids o /newIds) devono essere eseguita solo per i manifesti generati dallo strumento. I manifesti che sono stati personalizzati generati tramite altri mezzi non potrebbero risultare uniti correttamente.  
   
--   I manifesti che vengono generati per gli assembly nativi debba essere modificato manualmente dopo la generazione per uniformare i simboli di ID risorsa ID file RC dell'assembly nativo.  
+- I manifesti che vengono generati per gli assembly nativi debba essere modificato manualmente dopo la generazione per uniformare i simboli di ID risorsa ID file RC dell'assembly nativo.  
   
 ## <a name="sample-output"></a>Esempio di output  
  **Manifesto immagine semplice**  

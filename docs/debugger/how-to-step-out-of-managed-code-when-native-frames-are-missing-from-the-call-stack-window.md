@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112871"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Procedura: Uscire dal codice gestito quando nella finestra Stack di chiamate non sono visualizzati frame nativi
 
@@ -39,9 +39,9 @@ Se il codice contiene frame nativi non visibili nella finestra **Stack di chiama
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Uscire da codice gestito quando nella visualizzazione dello stack di chiamate non sono visualizzati frame nativi
 
-1.  Nel codice nativo impostare un punto di interruzione di posizione dopo la chiamata a codice gestito.
+1. Nel codice nativo impostare un punto di interruzione di posizione dopo la chiamata a codice gestito.
 
-2.  Scegliere **Continua** dal menu **Debug**.
+2. Scegliere **Continua** dal menu **Debug**.
 
      Una volta completata la chiamata gestita, l'esecuzione si interromperà in corrispondenza del punto di interruzione nel codice nativo.
 

@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079487"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Per modificare il comportamento di sottotitoli codificato intelligente della finestra Origini dati
 
-1.  Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
+1. Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
 
-2.  Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
+2. Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
 
-3.  Espandere la **HKEY_CURRENT_USER** nodo.
+3. Espandere la **HKEY_CURRENT_USER** nodo.
 
-4.  Espandere la **Software** nodo.
+4. Espandere la **Software** nodo.
 
-5.  Espandere la **Microsoft** nodo.
+5. Espandere la **Microsoft** nodo.
 
-6.  Espandere la **VisualStudio** nodo.
+6. Espandere la **VisualStudio** nodo.
 
-7.  Fare doppio clic il **10.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+7. Fare doppio clic il **10.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
 
-8.  Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionExpression`.
+8. Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionExpression`.
 
 9. Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionReplacement`.
 
@@ -96,21 +96,21 @@ Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Per disattivare la funzionalità smart i sottotitoli codificata
 
-1.  Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
+1. Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
 
-2.  Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
+2. Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
 
-3.  Espandere la **HKEY_CURRENT_USER** nodo.
+3. Espandere la **HKEY_CURRENT_USER** nodo.
 
-4.  Espandere la **Software** nodo.
+4. Espandere la **Software** nodo.
 
-5.  Espandere la **Microsoft** nodo.
+5. Espandere la **Microsoft** nodo.
 
-6.  Espandere la **VisualStudio** nodo.
+6. Espandere la **VisualStudio** nodo.
 
-7.  Fare doppio clic il **10.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+7. Fare doppio clic il **10.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
 
-8.  Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionExpression`.
+8. Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionExpression`.
 
 9. Fare doppio clic il **progettazione visiva di dati** nodo e creare un nuovo **valore stringa** denominato `SmartCaptionReplacement`.
 

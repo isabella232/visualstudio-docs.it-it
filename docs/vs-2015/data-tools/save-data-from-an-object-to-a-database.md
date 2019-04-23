@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074883"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59659020"
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Per salvare i nuovi record da un oggetto in un database  
   
--   Creare i record passando i valori per il `TableAdapter.Insert` (metodo).  
+- Creare i record passando i valori per il `TableAdapter.Insert` (metodo).  
   
      L'esempio seguente crea un nuovo record del cliente nel `Customers` passando i valori nella tabella di `currentCustomer` dell'oggetto per il `TableAdapter.Insert` (metodo).  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59659020"
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Per aggiornare i record esistenti da un oggetto a un database  
   
--   Modificare i record chiamando il `TableAdapter.Update` (metodo), passando i nuovi valori per aggiornare il record e i valori originali per individuare il record.  
+- Modificare i record chiamando il `TableAdapter.Update` (metodo), passando i nuovi valori per aggiornare il record e i valori originali per individuare il record.  
   
     > [!NOTE]
     >  L'oggetto deve mantenere i valori originali per passarli al `Update` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.  
@@ -66,7 +66,7 @@ ms.locfileid: "59659020"
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Per eliminare i record esistenti da un database  
   
--   Eliminare i record chiamando il `TableAdapter.Delete` metodo e passando i valori originali per individuare il record.  
+- Eliminare i record chiamando il `TableAdapter.Delete` metodo e passando i valori originali per individuare il record.  
   
     > [!NOTE]
     >  L'oggetto deve mantenere i valori originali per passarli al `Delete` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.  

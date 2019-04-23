@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113781"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedura: Visualizzare le informazioni di traccia WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "58966728"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Per abilitare o personalizzare le informazioni di traccia WPF  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
+2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
   
-3.  In **Debug** fare clic su **Finestra di output**.  
+3. In **Debug** fare clic su **Finestra di output**.  
   
-4.  In **Impostazioni generali di output** selezionare **Tutto l'output di debug**.  
+4. In **Impostazioni generali di output** selezionare **Tutto l'output di debug**.  
   
-5.  Nella casella sulla destra cercare **Impostazioni di traccia WPF**.  
+5. Nella casella sulla destra cercare **Impostazioni di traccia WPF**.  
   
-6.  Aprire il nodo **Impostazioni di traccia WPF**.  
+6. Aprire il nodo **Impostazioni di traccia WPF**.  
   
-7.  In **Impostazioni di traccia WPF** fare clic sulla categoria di impostazioni che si desidera abilitare, ad esempio **data binding**.  
+7. In **Impostazioni di traccia WPF** fare clic sulla categoria di impostazioni che si desidera abilitare, ad esempio **data binding**.  
   
      Verrà visualizzato un controllo elenco a discesa nella colonna Impostazioni accanto a **Data binding** o qualsiasi categoria selezionata.  
   
-8.  Fare clic sull'elenco a discesa e selezionare il tipo di informazioni di traccia che si desidera visualizzare: **Tutti i**, **critici**, **errore**, **avviso**, **informazioni**, **Verbose**, o **ActivityTracing**.  
+8. Fare clic sull'elenco a discesa e selezionare il tipo di informazioni di traccia che si desidera visualizzare: **Tutti i**, **critici**, **errore**, **avviso**, **informazioni**, **Verbose**, o **ActivityTracing**.  
   
      **Critico** abilita solo la tracciatura di eventi Critico.  
   
@@ -69,23 +69,23 @@ ms.locfileid: "58966728"
   
 ### <a name="to-disable-wpf-trace-information"></a>Per disabilitare le informazioni di traccia WPF  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
+2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
   
-3.  In **Debug** fare clic su **Finestra di output**.  
+3. In **Debug** fare clic su **Finestra di output**.  
   
-4.  Nella casella sulla destra cercare **Impostazioni di traccia WPF**.  
+4. Nella casella sulla destra cercare **Impostazioni di traccia WPF**.  
   
-5.  Aprire il nodo **Impostazioni di traccia WPF**.  
+5. Aprire il nodo **Impostazioni di traccia WPF**.  
   
-6.  In **Impostazioni di traccia WPF** fare clic sulla categoria di impostazioni che si desidera abilitare, ad esempio **data binding**.  
+6. In **Impostazioni di traccia WPF** fare clic sulla categoria di impostazioni che si desidera abilitare, ad esempio **data binding**.  
   
      Verrà visualizzato un controllo elenco a discesa nella colonna Impostazioni accanto a **Data binding** o qualsiasi categoria selezionata.  
   
-7.  Fare clic sull'elenco a discesa e selezionare **Disattivato**.  
+7. Fare clic sull'elenco a discesa e selezionare **Disattivato**.  
   
-8.  Fare clic su **OK**.  
+8. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di WPF](../debugger/debugging-wpf.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074492"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: Aggiungere comandi a menu di scelta rapida
   In questo argomento viene illustrato come aggiungere comandi a un menu di scelta rapida in un'applicazione di Office usando un componente aggiuntivo VSTO.
@@ -27,26 +27,26 @@ ms.locfileid: "56598180"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Per aggiungere comandi al menu di scelta rapida in Office
 
-1.  Aggiungere un elemento **Barra multifunzione (XML)** in un progetto di componente aggiuntivo VSTO o a livello di documento. Per altre informazioni, vedere [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md). In
+1. Aggiungere un elemento **Barra multifunzione (XML)** in un progetto di componente aggiuntivo VSTO o a livello di documento. Per altre informazioni, vedere [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md). In
 
-2.  **Esplora soluzioni**selezionare **ThisAddin.cs** o **ThisAddin.vb**.
+2. **Esplora soluzioni**selezionare **ThisAddin.cs** o **ThisAddin.vb**.
 
-3.  Sulla barra dei menu scegliere **Visualizza** > **Codice**.
+3. Sulla barra dei menu scegliere **Visualizza** > **Codice**.
 
      Il file di classe **ThisAddin** viene aperto nell'editor di codice.
 
-4.  Aggiungere il codice seguente alla classe **ThisAddIn** . Questo codice esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce la classe XML della barra multifunzione all'applicazione di Office.
+4. Aggiungere il codice seguente alla classe **ThisAddIn** . Questo codice esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce la classe XML della barra multifunzione all'applicazione Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  In **Esplora soluzioni**selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato *Ribbon1.xml*.
+5. In **Esplora soluzioni**selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato *Ribbon1.xml*.
 
-6.  Sulla barra dei menu scegliere **Visualizza** > **Codice**.
+6. Sulla barra dei menu scegliere **Visualizza** > **Codice**.
 
      Il file XML della barra multifunzione viene aperto nell'editor di codice.
 
-7.  Nell'editor di codice aggiungere codice XML che descriva il menu di scelta rapida e il controllo da aggiungere al menu di scelta rapida.
+7. Nell'editor di codice aggiungere codice XML che descriva il menu di scelta rapida e il controllo da aggiungere al menu di scelta rapida.
 
      Nell'esempio seguente viene aggiunto un pulsante, un controllo e un controllo della raccolta al menu di scelta rapida per un documento di Word. L'ID del controllo di questo menu di scelta rapida è ContextMenuText. Per un elenco completo di controllo di scelta rapida di Office 2010 ID, vedere [i file della Guida di Office 2010: Identificatori di controllo dell'interfaccia utente Office fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598180"
     </customUI>
     ```
 
-8.  In **Esplora soluzioni**scegliere **MyRibbon.cs** o **MyRibbon.vb**.
+8. In **Esplora soluzioni**scegliere **MyRibbon.cs** o **MyRibbon.vb**.
 
 9. Aggiungere un metodo di callback per il `Ribbon1` classe per ogni controllo che si desidera gestire.
 

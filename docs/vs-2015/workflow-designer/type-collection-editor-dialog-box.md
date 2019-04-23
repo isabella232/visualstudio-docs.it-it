@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4817d916fdd29d36f53c6bd3fbca42abb2f7cb15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073073"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Finestra di dialogo Editor raccolta di tipi
 Il **Editor raccolta di tipi** finestra di dialogo consente di aggiungere tipi noti per il **inviare** e **ricezione** attività. Questa finestra di dialogo viene usato anche per aggiungere argomenti tipo generico per il **InvokeMethod** attività. Quando viene utilizzato per il **inviare** e **ricezione** attività per aggiungere tipi noti, il **Editor raccolta di tipi** nella finestra di dialogo richiede tali aggiunte siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo **OK**, viene restituito un messaggio di errore. Quando viene utilizzato per il **InvokeMethod** attività per aggiungere argomenti tipo generico, il **Editor raccolta di tipi** nella finestra di dialogo consente l'aggiunta di tipi duplicati.  
@@ -34,16 +34,16 @@ Il **Editor raccolta di tipi** finestra di dialogo consente di aggiungere tipi n
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Per visualizzare Editor raccolta di tipi per le attività Send e Receive  
   
-1.  Selezionare il **inviare** oppure **ricezione** attività nella visualizzazione progettazione.  
+1. Selezionare il **inviare** oppure **ricezione** attività nella visualizzazione progettazione.  
   
-2.  Premere **F4** per visualizzare i **proprietà** finestra.  
+2. Premere **F4** per visualizzare i **proprietà** finestra.  
   
-3.  Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **KnownTypes** proprietà.  
+3. Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **KnownTypes** proprietà.  
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Per visualizzare Editor raccolta di tipi per l'attività InvokeMethod  
   
-1.  Selezionare il **InvokeMethod** attività nella visualizzazione progettazione.  
+1. Selezionare il **InvokeMethod** attività nella visualizzazione progettazione.  
   
-2.  Premere **F4** per visualizzare i **proprietà** finestra.  
+2. Premere **F4** per visualizzare i **proprietà** finestra.  
   
-3.  Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **GenericTypeArguments** proprietà.
+3. Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **GenericTypeArguments** proprietà.

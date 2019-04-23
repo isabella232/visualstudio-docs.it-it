@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080917"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Estendere altre parti di Visual Studio
 
@@ -29,9 +29,9 @@ I blocchi predefiniti di Extensibility di Visual Studio sono pacchetti VSPackage
 
 Informazioni su come aggiungere nuovi controlli e altri elementi alla casella degli strumenti e su come usare la funzionalità della casella degli strumenti:
 
--   [Creare un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Creare un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Creare un controllo della casella degli strumenti di Windows Form](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Creare un controllo della casella degli strumenti di Windows Form](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Estendere la barra di stato
 

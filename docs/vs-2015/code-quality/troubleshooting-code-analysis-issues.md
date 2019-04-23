@@ -9,28 +9,28 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54e478fe9b932b2b50271e52f0bcaab78ca02eab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 047866f958ebfe6de20d5f7760b72eaab4135ef1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075313"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Risoluzione dei problemi di analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'argomento contiene informazioni sulla risoluzione dei problemi seguenti relativi all'analisi del codice di Visual Studio.  
   
--   [Le modifiche apportate a un set di regole di Visual Studio 2010 non si riflettono nelle versioni precedenti di Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
+- [Le modifiche apportate a un set di regole di Visual Studio 2010 non si riflettono nelle versioni precedenti di Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Le modifiche apportate a un set di regole di Visual Studio 2010 non si riflettono nelle versioni precedenti di Visual Studio  
+## <a name="ChildRuleSetChangesInPreviousVersions"></a> Le modifiche apportate a un set di regole di Visual Studio 2010 non si riflettono nelle versioni precedenti di Visual Studio  
  Quando si crea un set di regole in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] che contiene un set di regole figlio, è possibile che una modifica al set di regole figlio non venga applicata nelle esecuzioni dell'analisi del codice nei computer che usano una versione precedente di Visual Studio. Per risolvere questo problema, è necessario forzare una riscrittura del set di regole padre, ovvero del set di regole che contiene il set di regole figlio.  
   
-1.  Aprire il set di regole padre in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
+1. Aprire il set di regole padre in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
   
-2.  Apportare una modifica, ad esempio aggiungere o eliminare una regola, e salvare il set di regole.  
+2. Apportare una modifica, ad esempio aggiungere o eliminare una regola, e salvare il set di regole.  
   
-3.  Riaprire il set di regole, annullare la modifica e salvare nuovamente il set di regole.  
+3. Riaprire il set di regole, annullare la modifica e salvare nuovamente il set di regole.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Analisi della qualità delle applicazioni](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   

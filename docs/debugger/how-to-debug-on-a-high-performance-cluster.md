@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113716"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: Eseguire il debug in un Cluster ad alte prestazioni (C#, Visual Basic, C++)
 
@@ -37,31 +37,31 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Per aprire la finestra di dialogo Filtro punto di interruzione
 
-1.  Fare clic con il pulsante destro del mouse su un glifo del punto di interruzione in una finestra di origine, nella finestra **Disassembly**, nella finestra **Stack di chiamate** o nella finestra **Punti di interruzione**.
+1. Fare clic con il pulsante destro del mouse su un glifo del punto di interruzione in una finestra di origine, nella finestra **Disassembly**, nella finestra **Stack di chiamate** o nella finestra **Punti di interruzione**.
 
-2.  Scegliere **Filtro** dal menu di scelta rapida. Questa opzione può essere presente nel menu di livello superiore o nel sottomenu sotto **Punti di interruzione**.
+2. Scegliere **Filtro** dal menu di scelta rapida. Questa opzione può essere presente nel menu di livello superiore o nel sottomenu sotto **Punti di interruzione**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Per impostare un punto di interruzione in un computer specifico
 
-1.  Ottenere il nome del computer nella finestra **Processi**.
+1. Ottenere il nome del computer nella finestra **Processi**.
 
-2.  Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella procedura precedente.
+2. Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella procedura precedente.
 
-3.  Nella finestra di dialogo **Filtro punto di interruzione** digitare:
+3. Nella finestra di dialogo **Filtro punto di interruzione** digitare:
 
      MachineName =*yourmachinename*
 
      Per creare un filtro più complesso, è possibile combinare clausole utilizzando `&`, l'operatore AND, `||`, l'operatore OR, `!`, l'operatore NOT e le parentesi.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Per impostare un punto di interruzione in un processo specifico
 
-1.  Ottenere il nome o il numero di ID del processo nella finestra **Processi**.
+1. Ottenere il nome o il numero di ID del processo nella finestra **Processi**.
 
-2.  Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella prima procedura.
+2. Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella prima procedura.
 
-3.  Nella finestra di dialogo **Filtro punto di interruzione** digitare:
+3. Nella finestra di dialogo **Filtro punto di interruzione** digitare:
 
      `ProcessName =` *yourprocessname*
 
@@ -71,15 +71,15 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 
      Per creare un filtro più complesso, è possibile combinare clausole utilizzando `&`, l'operatore AND, `||`, l'operatore OR, `!`, l'operatore NOT e le parentesi.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Per impostare un punto di interruzione in un thread specifico
 
-1.  Ottenere il nome o il numero ID del thread nella finestra **Thread**.
+1. Ottenere il nome o il numero ID del thread nella finestra **Thread**.
 
-2.  Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella prima procedura.
+2. Selezionare un punto di interruzione e aprire la finestra di dialogo **Filtro punto di interruzione** come descritto nella prima procedura.
 
-3.  Nella finestra di dialogo **Filtro punto di interruzione** digitare:
+3. Nella finestra di dialogo **Filtro punto di interruzione** digitare:
 
      `ThreadName =` *yourthreadname*
 
@@ -89,7 +89,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 
      Per creare un filtro più complesso, è possibile combinare clausole utilizzando `&`, l'operatore AND, `||`, l'operatore OR, `!`, l'operatore NOT e le parentesi.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrato come creare un filtro per un punto di interruzione in un computer denominato `marvin` e un thread denominato `fourier1`.

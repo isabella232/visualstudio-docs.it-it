@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073891"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
 ## <a name="do-you-need-multiple-ui-maps"></a>Situazioni in cui sono necessarie più mappe dell'interfaccia utente  
  Creare più mappe dell'interfaccia utente nei tipi di situazioni seguenti:  
   
--   Diversi set complessi di controlli dell'interfaccia utente compositi che insieme eseguono un'operazione logica, ad esempio una pagina di registrazione in un sito Web o la pagina di acquisto di un carrello.  
+- Diversi set complessi di controlli dell'interfaccia utente compositi che insieme eseguono un'operazione logica, ad esempio una pagina di registrazione in un sito Web o la pagina di acquisto di un carrello.  
   
--   Un set indipendente di controlli a cui si accede da vari punti dell'applicazione, ad esempio una procedura guidata con numerose pagine di operazioni. Se le pagine di una procedura guidata sono particolarmente complesse, è possibile creare mappe dell'interfaccia utente separate per ogni pagina.  
+- Un set indipendente di controlli a cui si accede da vari punti dell'applicazione, ad esempio una procedura guidata con numerose pagine di operazioni. Se le pagine di una procedura guidata sono particolarmente complesse, è possibile creare mappe dell'interfaccia utente separate per ogni pagina.  
   
 ## <a name="adding-multiple-ui-maps"></a>Aggiunta di più mappe dell'interfaccia utente  
   

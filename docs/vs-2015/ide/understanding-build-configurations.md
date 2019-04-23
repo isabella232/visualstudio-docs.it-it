@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077277"
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "54799310"
 > [!NOTE]
 >  Se le impostazioni di configurazione della soluzione non vengono trovate sulla barra degli strumenti oppure se non è possibile accedere a **Gestione configurazione**, è possibile che siano applicate le impostazioni di sviluppo di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Per altre informazioni, vedere [Procedura: Gestire le configurazioni con le impostazioni di Visual Basic Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
- Per impostazione predefinita, le configurazioni per il debug e il rilascio sono incluse nei progetti creati mediante i modelli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Una configurazione per il debug supporta il debug di un'applicazione, mentre una configurazione per il rilascio consente di compilare una versione dll'applicazione che può essere distribuita. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). È inoltre possibile creare configurazioni personalizzate per progetti e soluzioni. Per altre informazioni, vedere [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).  
+ Per impostazione predefinita, le configurazioni per il debug e il rilascio sono incluse nei progetti creati mediante i modelli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Una configurazione per il debug supporta il debug di un'applicazione, mentre una configurazione per il rilascio consente di compilare una versione dll'applicazione che può essere distribuita. Per altre informazioni, vedere [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md). È inoltre possibile creare configurazioni personalizzate per progetti e soluzioni. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="solution-configurations"></a>Configurazioni soluzione  
  In una configurazione per la soluzione viene specificato il modo in cui i progetti di una soluzione devono essere compilati e distribuiti. Per modificare una configurazione per la soluzione o per definirne una nuova, in **Gestione configurazione**, sotto la voce **Configurazione soluzione attiva** scegliere **Modifica** o **Nuovo**.  
@@ -69,23 +69,23 @@ ms.locfileid: "54799310"
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Modalità di assegnazione delle configurazioni di progetto in Visual Studio  
  Quando si definisce una nuova configurazione di soluzione e non la si copia da una già esistente, in Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di progetto predefinite. I criteri vengono valutati nell'ordine indicato.  
   
-1.  Se il nome di configurazione (*\<nome configurazione> \<nome piattaforma>*) di un progetto corrisponde esattamente al nome della nuova configurazione per la soluzione, viene assegnata la configurazione specifica. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.  
+1. Se il nome di configurazione (*\<nome configurazione> \<nome piattaforma>*) di un progetto corrisponde esattamente al nome della nuova configurazione per la soluzione, viene assegnata la configurazione specifica. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.  
   
-2.  Se il progetto include un nome di configurazione in cui la parte del nome corrisponde alla nuova configurazione per la soluzione, tale configurazione viene assegnata, anche se le piattaforme non coincidono.  
+2. Se il progetto include un nome di configurazione in cui la parte del nome corrisponde alla nuova configurazione per la soluzione, tale configurazione viene assegnata, anche se le piattaforme non coincidono.  
   
-3.  Se non esiste alcuna corrispondenza, viene assegnata la prima configurazione elencata nel progetto.  
+3. Se non esiste alcuna corrispondenza, viene assegnata la prima configurazione elencata nel progetto.  
   
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Modalità di assegnazione delle configurazioni per le soluzioni in Visual Studio  
  Quando si crea una configurazione per il progetto (in **Gestione configurazione** scegliere **Nuovo** nel menu a discesa nella colonna **Configurazione** del progetto) e si seleziona la casella di controllo **Crea nuove configurazioni soluzione**, in Visual Studio viene cercata una configurazione con lo stesso nome per compilare il progetto per ogni piattaforma supportata. In alcuni casi, le configurazioni di soluzione esistenti vengono rinominate o ne vengono definite di nuove.  
   
  In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di soluzione.  
   
--   Se in una configurazione di progetto non è specificata una piattaforma oppure ne è specificata una sola, viene trovata o aggiunta una configurazione per la soluzione il cui nome corrisponde a quello della nuova configurazione di progetto. Il nome predefinito di tale configurazione di soluzione non include un nome di piattaforma e pertanto assume il formato *\<nome configurazione di progetto>*.  
+- Se in una configurazione di progetto non è specificata una piattaforma oppure ne è specificata una sola, viene trovata o aggiunta una configurazione per la soluzione il cui nome corrisponde a quello della nuova configurazione di progetto. Il nome predefinito di tale configurazione di soluzione non include un nome di piattaforma e pertanto assume il formato *\<nome configurazione di progetto>*.  
   
--   Se un progetto supporta più piattaforme, verrà trovata o aggiunta una configurazione per la soluzione per ogni piattaforma supportata. Il nome di ogni configurazione di soluzione include sia il nome della configurazione di progetto sia il nome della piattaforma e assume il formato *\<nome configurazione di progetto> \<nome piattaforma>*.  
+- Se un progetto supporta più piattaforme, verrà trovata o aggiunta una configurazione per la soluzione per ogni piattaforma supportata. Il nome di ogni configurazione di soluzione include sia il nome della configurazione di progetto sia il nome della piattaforma e assume il formato *\<nome configurazione di progetto> \<nome piattaforma>*.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md)  (Procedura dettagliata: Compilazione di un'applicazione)  
+ [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)   
  [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md)  (Compilazione e creazione)  
  [Solutions and Projects](../ide/solutions-and-projects-in-visual-studio.md)  (Soluzioni e progetti)  
  [Riferimenti alla compilazione in C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   

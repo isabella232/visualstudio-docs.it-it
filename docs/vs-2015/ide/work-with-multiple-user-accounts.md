@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081229"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Se si dispone di più account Microsoft e/o di account aziendali o dell’istitu
   
 #### <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio  
   
-1.  Accedere a Visual Studio 2015 con un account Microsoft o un account aziendale. Il nome utente dovrebbe essere visualizzato nell’angolo in alto a destra nella finestra, come illustrato nella figura seguente:  
+1. Accedere a Visual Studio 2015 con un account Microsoft o un account aziendale. Il nome utente dovrebbe essere visualizzato nell’angolo in alto a destra nella finestra, come illustrato nella figura seguente:  
   
      ![Utente attualmente connesso](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ Se si dispone di più account Microsoft e/o di account aziendali o dell’istitu
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Accedere all'account Azure tramite la finestra di dialogo Aggiungi servizio connesso  
   
-1.  Creare un progetto di app universale in C#.  
+1. Creare un progetto di app universale in C#.  
   
-2.  Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi > Servizio connesso**. Verrà visualizzata la procedura guidata Aggiungi servizio connesso in cui viene presentato l'elenco dei servizi dell'account Azure associato all'ID di accesso di Visual Studio. Notare che non è necessario effettuare separatamente l'accesso ad Azure. Tuttavia, è necessario accedere ad altri account la prima volta che si tenta di accedere alle risorse da un determinato computer.  
+2. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi > Servizio connesso**. Verrà visualizzata la procedura guidata Aggiungi servizio connesso in cui viene presentato l'elenco dei servizi dell'account Azure associato all'ID di accesso di Visual Studio. Notare che non è necessario effettuare separatamente l'accesso ad Azure. Tuttavia, è necessario accedere ad altri account la prima volta che si tenta di accedere alle risorse da un determinato computer.  
   
     > [!WARNING]
-    >  Se la prima volta che si sta creando un'app di Store in Visual Studio 2015 in un computer specifico, verrà richiesto per attivare il dispositivo per la modalità di sviluppo passando a Impostazioni | . **Sicurezza e aggiornamenti &#124; per gli sviluppatori** nel computer. Per altre informazioni, vedere [Abilitare il dispositivo per lo sviluppo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    >  Se questa è la prima volta che si sta creando un'app di Store in Visual Studio 2015 in un computer specifico, verrà richiesto di abilitare il dispositivo per la modalità di sviluppo passando a **impostazioni &#124; . Sicurezza e aggiornamenti &#124; per gli sviluppatori** nel computer. Per altre informazioni, vedere [Abilitare il dispositivo per lo sviluppo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
-###  <a name="access_azure"></a> Accedere ad Azure Active Directory in un progetto Web  
+### <a name="access_azure"></a> Accedere ad Azure Active Directory in un progetto Web  
  Con Azure AD viene abilitato il supporto per end-user Single Sign-On in applicazioni Web ASP.NET o per Autenticazione di AD in servizi API Web. L'autenticazione di dominio è diverso da autenticazione degli account utente singoli; gli utenti che dispongono dell'accesso al dominio Active Directory è possono utilizzare gli account di Windows Azure esistenti per connettersi alle applicazioni web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio. Per un esempio, creare un'applicazione Web (**File > Nuovo progetto > C# > Cloud > Applicazione Web ASP.NET**). Nella finestra di dialogo Nuovo progetto ASP.NET scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.  
   
  ![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

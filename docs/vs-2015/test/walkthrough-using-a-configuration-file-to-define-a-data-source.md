@@ -12,50 +12,50 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076107"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come usare un'origine dati definita in un file app.config per gli unit test. Viene mostrato come creare un file app.config che definisce un'origine dati che può essere usata dalla classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Le attività incluse nella procedura dettagliata sono le seguenti:  
   
--   Creazione di un file app.config.  
+- Creazione di un file app.config.  
   
--   Definizione di una sezione di configurazione personalizzata.  
+- Definizione di una sezione di configurazione personalizzata.  
   
--   Definizione di stringhe di connessione.  
+- Definizione di stringhe di connessione.  
   
--   Definizione di origini dati.  
+- Definizione di origini dati.  
   
--   Accesso alle origini dati tramite la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
+- Accesso alle origini dati tramite la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario disporre di:  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Microsoft Access o Microsoft Excel per fornire dati per almeno uno dei metodi di test.  
+- Microsoft Access o Microsoft Excel per fornire dati per almeno uno dei metodi di test.  
   
--   Soluzione Visual Studio contenente un progetto di test.  
+- Soluzione Visual Studio contenente un progetto di test.  
   
 ## <a name="create-the-appconfig-file"></a>Creare il file app.config  
   
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>Per aggiungere un file app.config al progetto  
   
-1.  Se per il progetto di test esiste già un file app.config, passare a [Definire una sezione di configurazione personalizzata](#DefineCustomConfigurationSection).  
+1. Se per il progetto di test esiste già un file app.config, passare a [Definire una sezione di configurazione personalizzata](#DefineCustomConfigurationSection).  
   
-2.  Fare clic con il pulsante destro del mouse sul progetto di test in **Esplora soluzioni**, scegliere **Aggiungi** e quindi fare clic su **Nuovo elemento**.  
+2. Fare clic con il pulsante destro del mouse sul progetto di test in **Esplora soluzioni**, scegliere **Aggiungi** e quindi fare clic su **Nuovo elemento**.  
   
      Verrà visualizzata la finestra **Aggiungi nuovo elemento**.  
   
-3.  Selezionare il modello **File di configurazione dell'applicazione** e fare clic su **Aggiungi**.  
+3. Selezionare il modello **File di configurazione dell'applicazione** e fare clic su **Aggiungi**.  
   
-##  <a name="DefineCustomConfigurationSection"></a> Definire una sezione di configurazione personalizzata  
+## <a name="DefineCustomConfigurationSection"></a> Definire una sezione di configurazione personalizzata  
  Esaminare il file app.config. Il file contiene almeno la dichiarazione XML e un elemento radice.  
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Per aggiungere la sezione di configurazione personalizzata nel file app. config  
@@ -80,11 +80,11 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
   
 #### <a name="to-define-connection-strings"></a>Per definire le stringhe di connessione  
   
-1.  Dopo l'elemento `configSections`, creare un elemento `connectionStrings`.  
+1. Dopo l'elemento `configSections`, creare un elemento `connectionStrings`.  
   
-2.  Nell'elemento `connectionStrings`, creare due elementi `add`.  
+2. Nell'elemento `connectionStrings`, creare due elementi `add`.  
   
-3.  Nel primo elemento `add`, creare i seguenti attributi e valori per una connessione a un database di Microsoft Access:  
+3. Nel primo elemento `add`, creare i seguenti attributi e valori per una connessione a un database di Microsoft Access:  
   
 |Attributo|Valori|  
 |---------------|------------|  
@@ -124,13 +124,13 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
   
 #### <a name="to-define-data-sources"></a>Per definire le origini dati  
   
-1.  Dopo l'elemento `connectionStrings`, creare un elemento `microsoft.visualstudio.testtools`. Questa sezione è stata creata in Definire una sezione di configurazione personalizzata.  
+1. Dopo l'elemento `connectionStrings`, creare un elemento `microsoft.visualstudio.testtools`. Questa sezione è stata creata in Definire una sezione di configurazione personalizzata.  
   
-2.  Nell'elemento `microsoft.visualstudio.testtools` creare un elemento `dataSources`.  
+2. Nell'elemento `microsoft.visualstudio.testtools` creare un elemento `dataSources`.  
   
-3.  Nell'elemento `dataSources`, creare due elementi `add`.  
+3. Nell'elemento `dataSources`, creare due elementi `add`.  
   
-4.  Nel primo elemento `add`, creare i seguenti attributi e valori per un'origine dati di Microsoft Access:  
+4. Nel primo elemento `add`, creare i seguenti attributi e valori per un'origine dati di Microsoft Access:  
   
 |Attributo|Valori|  
 |---------------|------------|  
@@ -183,45 +183,45 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 ## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>Creare uno unit test usando le origini dati definite in app.config  
  Ora che è stato definito un file app.config, si creerà uno unit test che usa i dati che si trovano nelle origini dati definite nel file app. config. In questa sezione verranno eseguite le operazioni seguenti:  
   
--   Creare le origini dati presenti nel file app.config.  
+- Creare le origini dati presenti nel file app.config.  
   
--   Usare le origini dati in due metodi di test che confrontano i valori in ciascuna origine dati.  
+- Usare le origini dati in due metodi di test che confrontano i valori in ciascuna origine dati.  
   
 #### <a name="to-create-a-microsoft-access-data-source"></a>Per creare un'origine dati di Microsoft Access  
   
-1.  Creare un database di Microsoft Access denominato `testdatasource.accdb`.  
+1. Creare un database di Microsoft Access denominato `testdatasource.accdb`.  
   
-2.  Creare una tabella e denominarla `MyDataTable` in `testdatasource.accdb`.  
+2. Creare una tabella e denominarla `MyDataTable` in `testdatasource.accdb`.  
   
-3.  Creare due campi in `MyDataTable` denominati `Arg1` e `Arg2` usando il tipo di dati `Number`.  
+3. Creare due campi in `MyDataTable` denominati `Arg1` e `Arg2` usando il tipo di dati `Number`.  
   
-4.  Aggiungere cinque entità a `MyDataTable` con i valori seguenti per `Arg1` e `Arg2`, rispettivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).  
+4. Aggiungere cinque entità a `MyDataTable` con i valori seguenti per `Arg1` e `Arg2`, rispettivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).  
   
-5.  Salvare e chiudere il database.  
+5. Salvare e chiudere il database.  
   
-6.  Cambiare la stringa di connessione in modo che punti al percorso del database. Cambiare il valore di `Data Source` in modo da riflettere il percorso del database.  
+6. Cambiare la stringa di connessione in modo che punti al percorso del database. Cambiare il valore di `Data Source` in modo da riflettere il percorso del database.  
   
 #### <a name="to-create-a-microsoft-excel-data-source"></a>Per creare un'origine dati di Microsoft Excel  
   
-1.  Creare un foglio di calcolo di Microsoft Excel denominato `data.xlsx`.  
+1. Creare un foglio di calcolo di Microsoft Excel denominato `data.xlsx`.  
   
-2.  Creare un foglio denominato `Sheet1` se non è già presente in `data.xlsx`.  
+2. Creare un foglio denominato `Sheet1` se non è già presente in `data.xlsx`.  
   
-3.  Creare due intestazioni di colonna e assegnare loro i nomi `Val1` e `Val2` in `Sheet1`.  
+3. Creare due intestazioni di colonna e assegnare loro i nomi `Val1` e `Val2` in `Sheet1`.  
   
-4.  Aggiungere cinque entità a `Sheet1` con i valori seguenti per `Val1` e `Val2`, rispettivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).  
+4. Aggiungere cinque entità a `Sheet1` con i valori seguenti per `Val1` e `Val2`, rispettivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).  
   
-5.  Salvare e chiudere il foglio di calcolo.  
+5. Salvare e chiudere il foglio di calcolo.  
   
-6.  Cambiare la stringa di connessione in modo che punti al percorso del foglio di calcolo. Cambiare il valore di `dbq` in modo da riflettere il percorso del foglio di calcolo.  
+6. Cambiare la stringa di connessione in modo che punti al percorso del foglio di calcolo. Cambiare il valore di `dbq` in modo da riflettere il percorso del foglio di calcolo.  
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Per creare uno unit test usando le origini dati in app.config  
   
-1.  Aggiungere uno unit test al progetto di test.  
+1. Aggiungere uno unit test al progetto di test.  
   
      Per altre informazioni, vedere [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
-2.  Sostituire il contenuto generato automaticamente dello unit test con il codice seguente:  
+2. Sostituire il contenuto generato automaticamente dello unit test con il codice seguente:  
   
     ```  
     using System;  
@@ -261,9 +261,9 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
     }  
     ```  
   
-3.  Esaminare gli attributi DataSource. Notare i nomi delle impostazioni nel file app.config.  
+3. Esaminare gli attributi DataSource. Notare i nomi delle impostazioni nel file app.config.  
   
-4.  Compilare la soluzione ed eseguire i test MyTestMethod e MyTestMethod2.  
+4. Compilare la soluzione ed eseguire i test MyTestMethod e MyTestMethod2.  
   
 > [!IMPORTANT]
 >  Distribuire gli elementi come origini dati in modo che siano accessibili al test nella directory di distribuzione.  
@@ -272,4 +272,4 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
  [Eseguire unit test del codice](../test/unit-test-your-code.md)   
  [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Procedura: Creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md)
+ [Procedura: Creare un Test basati sui dati](../test/how-to-create-a-data-driven-unit-test.md)

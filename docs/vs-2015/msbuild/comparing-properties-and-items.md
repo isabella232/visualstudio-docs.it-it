@@ -11,21 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095828"
 ---
 # <a name="comparing-properties-and-items"></a>Confronto di proprietà ed elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.  
   
--   Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).  
+- Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).  
   
--   Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
+- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
   
 ## <a name="scalars-and-vectors"></a>Valori scalari e vettori  
  Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari*. I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori*. In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.  
@@ -96,15 +96,15 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
   
 - Durante la fase di valutazione di una build:  
   
-  -   Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate. Vengono eseguite le funzioni di proprietà. I valori di proprietà nel formato $(PropertyName) vengono espansi all'interno di espressioni. Il valore della proprietà viene impostato sull'espressione espansa.  
+  - Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate. Vengono eseguite le funzioni di proprietà. I valori di proprietà nel formato $(PropertyName) vengono espansi all'interno di espressioni. Il valore della proprietà viene impostato sull'espressione espansa.  
   
-  -   Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate. Le funzioni di proprietà sono già state espanse all'interno di espressioni. I valori di metadati vengono impostati sulle espressioni espanse.  
+  - Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate. Le funzioni di proprietà sono già state espanse all'interno di espressioni. I valori di metadati vengono impostati sulle espressioni espanse.  
   
-  -   I tipi di elemento vengono definiti e modificati nell'ordine in cui vengono visualizzati. I valori di elemento nel formato @(ItemType) vengono espansi. Anche le trasformazioni degli elementi vengono espanse. Le funzioni di proprietà e i valori sono già stati espansi all'interno di espressioni. L'elenco di elementi e i valori di metadati vengono impostati sulle espressioni espanse.  
+  - I tipi di elemento vengono definiti e modificati nell'ordine in cui vengono visualizzati. I valori di elemento nel formato @(ItemType) vengono espansi. Anche le trasformazioni degli elementi vengono espanse. Le funzioni di proprietà e i valori sono già stati espansi all'interno di espressioni. L'elenco di elementi e i valori di metadati vengono impostati sulle espressioni espanse.  
   
 - Durante la fase di esecuzione di una build:  
   
-  -   Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.  
+  - Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effetti meno evidenti dell'ordine di valutazione  
  Nella fase di valutazione di una build la valutazione delle proprietà precede la valutazione degli elementi. È tuttavia possibile che le proprietà abbiano valori visualizzati che devono dipendere da valori elemento. Considerare lo script seguente.  

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113300"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accedere direttamente al database mediante un oggetto TableAdapter
 
@@ -42,7 +42,7 @@ Chiamare il TableAdapter `DbDirect` metodo che esegue l'attività si intende ese
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Per inserire nuovi record direttamente in un database
 
--   Chiamata dell'oggetto TableAdapter `Insert` , passando i valori per ogni colonna come parametri. La procedura seguente usa il `Region` tabella nel database Northwind come esempio.
+- Chiamata dell'oggetto TableAdapter `Insert` , passando i valori per ogni colonna come parametri. La procedura seguente usa il `Region` tabella nel database Northwind come esempio.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza di oggetto TableAdapter che si desidera utilizzare.
@@ -52,7 +52,7 @@ Chiamare il TableAdapter `DbDirect` metodo che esegue l'attività si intende ese
 
 ### <a name="to-update-records-directly-in-a-database"></a>Per aggiornare i record direttamente in un database
 
--   Chiamata dell'oggetto TableAdapter `Update` , passando i valori originale e nuovi per ogni colonna come parametri.
+- Chiamata dell'oggetto TableAdapter `Update` , passando i valori originale e nuovi per ogni colonna come parametri.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza di oggetto TableAdapter che si desidera utilizzare.
@@ -62,7 +62,7 @@ Chiamare il TableAdapter `DbDirect` metodo che esegue l'attività si intende ese
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Per eliminare i record direttamente da un database
 
--   Chiamata dell'oggetto TableAdapter `Delete` , passando i valori per ogni colonna come parametri del `Delete` (metodo). La procedura seguente usa il `Region` tabella nel database Northwind come esempio.
+- Chiamata dell'oggetto TableAdapter `Delete` , passando i valori per ogni colonna come parametri del `Delete` (metodo). La procedura seguente usa il `Region` tabella nel database Northwind come esempio.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza di oggetto TableAdapter che si desidera utilizzare.

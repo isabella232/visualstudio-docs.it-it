@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a54f319034bc22f4dfd0f61e2c4f50d6b7bf94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074558"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ ms.locfileid: "58965398"
   
  Pur good in teoria, registrazione automatica presenta alcuni difetti che rendono non idoneo per l'installazione di VSPackage:  
   
--   Corretto supporto di installazione, disinstallazione, rollback dell'installazione e disinstallazione rollback è necessario creare quattro azioni personalizzate per ogni pacchetto VSPackage gestito che esegue la registrazione automatica mediante la chiamata a RegPkg.  
+- Corretto supporto di installazione, disinstallazione, rollback dell'installazione e disinstallazione rollback è necessario creare quattro azioni personalizzate per ogni pacchetto VSPackage gestito che esegue la registrazione automatica mediante la chiamata a RegPkg.  
   
--   L'approccio adottato per il supporto side-by-side potrebbe richiedere che si creano quattro azioni personalizzate che richiamano RegSvr32 o RegPkg per ogni versione supportata di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- L'approccio adottato per il supporto side-by-side potrebbe richiedere che si creano quattro azioni personalizzate che richiamano RegSvr32 o RegPkg per ogni versione supportata di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Un'installazione con i moduli di registrazione automatica non può essere annullata in modo sicuro perché non è possibile indicare se le chiavi di registrazione automatica vengono usate da un'altra funzionalità o l'applicazione.  
+- Un'installazione con i moduli di registrazione automatica non può essere annullata in modo sicuro perché non è possibile indicare se le chiavi di registrazione automatica vengono usate da un'altra funzionalità o l'applicazione.  
   
--   DLL self-registrata link talvolta alle DLL ausiliari che non sono presenti o sono una versione errata. Al contrario, programma di installazione di Windows possono registrare le DLL utilizzando le tabelle del Registro di sistema senza dipendenza dallo stato corrente del sistema.  
+- DLL self-registrata link talvolta alle DLL ausiliari che non sono presenti o sono una versione errata. Al contrario, programma di installazione di Windows possono registrare le DLL utilizzando le tabelle del Registro di sistema senza dipendenza dallo stato corrente del sistema.  
   
--   Codice di registrazione automatica è possibile negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se il componente sia specificata come esecuzione dall'origine ed è elencato nella tabella SelfReg. Ciò può causare l'installazione del componente su errori durante un'installazione amministrativa.  
+- Codice di registrazione automatica è possibile negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se il componente sia specificata come esecuzione dall'origine ed è elencato nella tabella SelfReg. Ciò può causare l'installazione del componente su errori durante un'installazione amministrativa.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   

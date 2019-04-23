@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073428"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ##### <a name="to-access-unity-documentation"></a>Per accedere alla documentazione di Unity  
   
--   In Visual Studio evidenziare o posizionare il cursore sull'API di Unity su cui visualizzare maggiori informazioni e quindi premere **CTRL+ALT+M, CTRL+H**  
+- In Visual Studio evidenziare o posizionare il cursore sull'API di Unity su cui visualizzare maggiori informazioni e quindi premere **CTRL+ALT+M, CTRL+H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Procedura guidata MonoBehaviour di Unity per la creazione di script  
  In Unity la maggior parte degli script implementati deriva dalla classe MonoBehaviour di cui viene eseguito l'override di alcuni metodi. È possibile usare la procedura guidata MonoBehaviour per creare rapidamente definizioni vuote dei metodi MonoBehaviour di cui eseguire l'overload. Tramite questa procedura guidata è possibile specificare uno o più metodi di cui eseguire l'overload dall'elenco dei metodi disponibili, scegliere dove verranno inseriti nel codice e decidere se includere commenti relativi alla modalità di utilizzo.  
@@ -59,13 +59,13 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Per creare una definizione vuota di metodi MonoBehaviour con la procedura guidata MonoBehaviour rapidi  
   
-1.  In Visual Studio posizionare il cursore nel punto in cui si vogliono inserire i metodi, quindi premere **CTRL+MAIUSC+Q** per avviare la procedura guidata MonoBehaviour rapidi. A differenza dell'altra procedura guidata MonoBehaviour, con questa procedura guidata è necessario posizionare il cursore intenzionalmente perché è in tale punto che viene sempre inserito il nuovo metodo.  
+1. In Visual Studio posizionare il cursore nel punto in cui si vogliono inserire i metodi, quindi premere **CTRL+MAIUSC+Q** per avviare la procedura guidata MonoBehaviour rapidi. A differenza dell'altra procedura guidata MonoBehaviour, con questa procedura guidata è necessario posizionare il cursore intenzionalmente perché è in tale punto che viene sempre inserito il nuovo metodo.  
   
-2.  Verificare che la versione del framework visualizzata nell'angolo in alto a destra della finestra **Create script method** (Crea metodo script) corrisponda a quella usata. Se è diversa, modificare il valore dell'elenco a discesa selezionando la versione da usare.  
+2. Verificare che la versione del framework visualizzata nell'angolo in alto a destra della finestra **Create script method** (Crea metodo script) corrisponda a quella usata. Se è diversa, modificare il valore dell'elenco a discesa selezionando la versione da usare.  
   
-3.  Individuare il metodo di cui eseguire l'overload. Nella finestra Crea metodo script iniziare a digitare il nome del metodo nella casella di testo. Verrà visualizzato un elenco di metodi il cui nome corrisponde a quello immesso.  
+3. Individuare il metodo di cui eseguire l'overload. Nella finestra Crea metodo script iniziare a digitare il nome del metodo nella casella di testo. Verrà visualizzato un elenco di metodi il cui nome corrisponde a quello immesso.  
   
-4.  Scegliere il metodo di cui eseguire l'overload. Quando il metodo voluto viene visualizzato nell'elenco, selezionarlo con il mouse o i tasti freccia e quindi premere **Invio**. Se è l'unico metodo presente nell'elenco, è sufficiente premere **INVIO**. Il metodo verrà inserito nel codice.  
+4. Scegliere il metodo di cui eseguire l'overload. Quando il metodo voluto viene visualizzato nell'elenco, selezionarlo con il mouse o i tasti freccia e quindi premere **Invio**. Se è l'unico metodo presente nell'elenco, è sufficiente premere **INVIO**. Il metodo verrà inserito nel codice.  
   
 ### <a name="unity-project-explorer"></a>Esplora progetti Unity  
  È possibile usare Esplora progetti Unity per spostarsi nel progetto Unity all'interno di Visual Studio.  
@@ -103,16 +103,16 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 ## <a name="unity-debugging"></a>Debug di Unity  
  Visual Studio Tools per Unity consente di eseguire il debug di script dell'editor e di gioco del progetto Unity usando il potente debugger di Visual Studio.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Connessione di Visual Studio a Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Connessione di Visual Studio a Unity  
  Visual Studio Tools per Unity comunica con Unity tramite una connessione UDP. Questo significa che è possibile connettersi in modo analogo a un'istanza di Unity in esecuzione in locale o in qualsiasi punto della rete. Per connettersi a una qualsiasi istanza di Unity visualizzata in rete, è possibile usare la finestra di dialogo **Seleziona istanza di Unity**.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Per aprire la finestra di dialogo Seleziona istanza di Unity  
   
--   Nel menu principale di Visual Studio scegliere **Debug**, **Collega debugger Unity**.  
+- Nel menu principale di Visual Studio scegliere **Debug**, **Collega debugger Unity**.  
   
      ![Collegare il debugger di Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *In alternativa*, sulla barra di stato di Visual Studio fare clic sull'icona della spina nell'angolo inferiore destro di Visual Studio.  
+- *In alternativa*, sulla barra di stato di Visual Studio fare clic sull'icona della spina nell'angolo inferiore destro di Visual Studio.  
   
      ![Questa icona mostra che VSTU è connesso a Unity.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -138,7 +138,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 > [!IMPORTANT]
 >  Dal momento che Visual Studio Tools per Unity e l'istanza di Unity comunicano tramite un socket di rete UDP, è possibile che il firewall non lo riconosca. In tal caso, è necessario autorizzare la connessione per consentire a VSTU e Unity di comunicare.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Debug del progetto in un lettore Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a> Debug del progetto in un lettore Unity  
  È possibile connettere Visual Studio Tools per Unity direttamente all'app Unity in esecuzione in un lettore autonomo quando non è in esecuzione l'editor di Unity oppure per eseguire il debug di problemi specifici della piattaforma.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Per abilitare il debug di script in un lettore Unity  

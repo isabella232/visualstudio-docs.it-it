@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074242"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ La persistenza è una considerazione di progettazione chiave per il progetto. La
   
  Elementi di progetto possono essere basata su file o non basate su file:  
   
--   Gli elementi basati su file possono essere locale o remoto. Nei progetti Web nel linguaggio C#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenuti in locale, mentre gli stessi file persistono nel sistema remoto.  
+- Gli elementi basati su file possono essere locale o remoto. Nei progetti Web nel linguaggio c#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenuti in locale, mentre gli stessi file persistono nel sistema remoto.  
   
--   Elementi basati su file non è possono salvare gli elementi di un database o nell'archivio.  
+- Elementi basati su file non è possono salvare gli elementi di un database o nell'archivio.  
   
 ## <a name="commit-models"></a>Eseguire il commit di modelli  
  Dopo avere deciso in cui si trovano gli elementi del progetto, è necessario scegliere il modello appropriato di commit. Ad esempio, in un modello basato su file con file locali, ogni progetto può essere salvato in modo autonomo. In un modello di repository, è possibile salvare più elementi in un'unica transazione. Per altre informazioni, vedere [decisioni di progettazione di tipo di progetto](../../extensibility/internals/project-type-design-decisions.md).  

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 451afe75d71969b4a4a866fc9a7cda1fd85562d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079071"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedura: Abilitare e disabilitare l'analisi automatica del codice per il codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,10 +23,10 @@ ms.locfileid: "58964483"
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Per abilitare o disabilitare l'analisi del codice automatica  
   
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto e quindi fare clic su **proprietà**.  
+1. Nelle **Esplora soluzioni**, fare clic sul progetto e quindi fare clic su **proprietà**.  
   
-2.  Nella finestra di dialogo proprietà del progetto, fare clic su **analisi del codice**.  
+2. Nella finestra di dialogo proprietà del progetto, fare clic su **analisi del codice**.  
   
-3.  Specificare il tipo di compilazione nella **Configuration** e la piattaforma di destinazione **piattaforma**.  
+3. Specificare il tipo di compilazione nella **Configuration** e la piattaforma di destinazione **piattaforma**.  
   
-4.  Per abilitare o disabilitare l'analisi automatica del codice, selezionare o deselezionare i **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo.
+4. Per abilitare o disabilitare l'analisi automatica del codice, selezionare o deselezionare i **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo.

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fb1409f06a859a69a39b75645b5176a27921f13
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0c04ea981fc190b2e0074e767e086303e6950f2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076185"
 ---
 # <a name="command-placement-guidelines"></a>Linee guida per il posizionamento di comando
 Le procedure consigliate per il posizionamento comandi nell'ambiente di sviluppo integrato (IDE) di Visual Studio variano a seconda delle dimensioni del set di comandi. I comandi vengono definiti e posizionati in base alle informazioni contenute in *vsct* file.
@@ -25,35 +25,35 @@ Le procedure consigliate per il posizionamento comandi nell'ambiente di sviluppo
 ## <a name="best-practices-for-all-command-sets"></a>Procedure consigliate per tutti i set di comandi
  Per ogni set di comandi e seguire queste linee guida:
 
--   Preparare in anticipo un grafico della struttura del comando. Identificare i comandi, caselle combinate, gruppi di comandi e menu di scelta rapida che verranno usati in più posizioni.
+- Preparare in anticipo un grafico della struttura del comando. Identificare i comandi, caselle combinate, gruppi di comandi e menu di scelta rapida che verranno usati in più posizioni.
 
--   I comandi che vengono visualizzati nello stesso gruppo devono essere correlati.
+- I comandi che vengono visualizzati nello stesso gruppo devono essere correlati.
 
--   I gruppi che contengono un unico comando sono accettabili.
+- I gruppi che contengono un unico comando sono accettabili.
 
--   I pacchetti consigliabile non aggiungere un numero elevato di comandi a menu di Visual Studio esistenti. Invece, è necessario creare menu o sottomenu per ospitare i nuovi comandi.
+- I pacchetti consigliabile non aggiungere un numero elevato di comandi a menu di Visual Studio esistenti. Invece, è necessario creare menu o sottomenu per ospitare i nuovi comandi.
 
--   Quando un comando è inserire in un menu esistente, nome del comando in modo che il suo scopo sia chiaro e non essere confuso con i comandi esistenti.
+- Quando un comando è inserire in un menu esistente, nome del comando in modo che il suo scopo sia chiaro e non essere confuso con i comandi esistenti.
 
 ## <a name="best-practices-for-small-command-sets"></a>Le procedure consigliate per i set di piccole dimensioni comando
  Se si sta sviluppando un pacchetto VSPackage che dispone di alcuni comandi, anche seguire queste linee guida:
 
--   Quando possibile, usare il [padre](../../extensibility/parent-element.md) elemento di un comando, casella combinata, gruppo o menu figlio per mettere in pratica il gruppo appropriato.
+- Quando possibile, usare il [padre](../../extensibility/parent-element.md) elemento di un comando, casella combinata, gruppo o menu figlio per mettere in pratica il gruppo appropriato.
 
--   Assegnare questi gruppi di menu da visualizzare dal pacchetto VSPackage.
+- Assegnare questi gruppi di menu da visualizzare dal pacchetto VSPackage.
 
--   L'elemento padre di un menu figlio o un comando deve essere un [gruppo](../../extensibility/group-element.md) elemento. Assegnare ai gruppi di comandi e i menu figlio e quindi assegnare i gruppi ai menu padre.
+- L'elemento padre di un menu figlio o un comando deve essere un [gruppo](../../extensibility/group-element.md) elemento. Assegnare ai gruppi di comandi e i menu figlio e quindi assegnare i gruppi ai menu padre.
 
--   È possibile inserire un comando in altri gruppi aggiungendo un [CommandPlacements](../../extensibility/commandplacements-element.md) sezione dell'elemento dopo la definizione del comando e quindi aggiungere il `CommandPlacements` elemento una [CommandPlacement](../../extensibility/commandplacement-element.md) elemento per ogni gruppo aggiuntiva.
+- È possibile inserire un comando in altri gruppi aggiungendo un [CommandPlacements](../../extensibility/commandplacements-element.md) sezione dell'elemento dopo la definizione del comando e quindi aggiungere il `CommandPlacements` elemento una [CommandPlacement](../../extensibility/commandplacement-element.md) elemento per ogni gruppo aggiuntiva.
 
 ## <a name="best-practices-for-large-command-sets"></a>Le procedure consigliate per i set di grandi dimensioni comando
  Se il pacchetto VSPackage avrà molti comandi che verranno visualizzati in più contesti, è necessario seguire anche queste linee guida:
 
--   Rendere i menu, gruppi e i comandi self-padre. Vale a dire, non si assegna un `Parent` elemento nella definizione dell'elemento.
+- Rendere i menu, gruppi e i comandi self-padre. Vale a dire, non si assegna un `Parent` elemento nella definizione dell'elemento.
 
--   Uso `CommandPlacement` voci degli elementi nel `CommandPlacements` sezione dell'elemento da inserire i menu, gruppi e i comandi nei menu del padre e i gruppi.
+- Uso `CommandPlacement` voci degli elementi nel `CommandPlacements` sezione dell'elemento da inserire i menu, gruppi e i comandi nei menu del padre e i gruppi.
 
--   Nel `CommandPlacements` sezione dell'elemento, le voci che popolano un determinato menu o un gruppo devono essere adiacenti tra loro. Ciò agevola la leggibilità e rende il `Priority` più semplice determinare le classificazioni.
+- Nel `CommandPlacements` sezione dell'elemento, le voci che popolano un determinato menu o un gruppo devono essere adiacenti tra loro. Ciò agevola la leggibilità e rende il `Priority` più semplice determinare le classificazioni.
 
 ## <a name="see-also"></a>Vedere anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

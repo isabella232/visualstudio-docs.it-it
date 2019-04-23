@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075025"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: Usare le transazioni per aggiornare il modello
 Le transazioni assicurarsi che le modifiche apportate all'archivio siano considerate come un gruppo. Le modifiche che sono raggruppate possono essere eseguito il commit o rollback come unità singola.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Esecuzione del rollback di una transazione
  Per garantire che la Store rimane in o viene ripristinata allo stato antecedente la transazione, è possibile usare una di queste strategie:
 
-1.  Generare un'eccezione non rilevata all'interno dell'ambito della transazione.
+1. Generare un'eccezione non rilevata all'interno dell'ambito della transazione.
 
-2.  In modo esplicito il rollback della transazione:
+2. In modo esplicito il rollback della transazione:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

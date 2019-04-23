@@ -12,12 +12,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095067"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Modifica dell'aspetto di un comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "58970085"
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Per modificare l'aspetto di un comando di menu  
   
-1.  Seguire le istruzioni in [modifica del testo di un comando di Menu](../extensibility/changing-the-text-of-a-menu-command.md) per creare una voce di menu denominato `New Text`.  
+1. Seguire le istruzioni in [modifica del testo di un comando di Menu](../extensibility/changing-the-text-of-a-menu-command.md) per creare una voce di menu denominato `New Text`.  
   
-2.  Nel file ChangeMenuText.cs, aggiungere la seguente istruzione using:  
+2. Nel file ChangeMenuText.cs, aggiungere la seguente istruzione using:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  Nel file ChangeMenuTextPackageGuids.cs, aggiungere la riga seguente:  
+3. Nel file ChangeMenuTextPackageGuids.cs, aggiungere la riga seguente:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  Nel file ChangeMenuText.cs, sostituire il codice nel metodo ShowMessageBox con gli elementi seguenti:  
+4. Nel file ChangeMenuText.cs, sostituire il codice nel metodo ShowMessageBox con gli elementi seguenti:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ ms.locfileid: "58970085"
     }  
     ```  
   
-5.  Ottenere il comando che si vuole aggiornare il <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> dell'oggetto e quindi impostare le proprietà appropriate per l'oggetto comando. Ad esempio, il metodo seguente rende il comando specificato da un comando VSPackage set disponibile o non disponibile. Il codice seguente effettua il voce di menu denominata `New Text` disponibile dopo che è stato fatto clic.  
+5. Ottenere il comando che si vuole aggiornare il <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> dell'oggetto e quindi impostare le proprietà appropriate per l'oggetto comando. Ad esempio, il metodo seguente rende il comando specificato da un comando VSPackage set disponibile o non disponibile. Il codice seguente effettua il voce di menu denominata `New Text` disponibile dopo che è stato fatto clic.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,11 +80,11 @@ ms.locfileid: "58970085"
     }  
     ```  
   
-6.  Compilare il progetto e avviare il debug. L'istanza sperimentale di Visual Studio dovrebbe essere visualizzato.  
+6. Compilare il progetto e avviare il debug. L'istanza sperimentale di Visual Studio dovrebbe essere visualizzato.  
   
-7.  Nel **degli strumenti** dal menu fare clic sul **ChangeMenuText richiamare** comando. A questo punto è il nome del comando **richiamare ChangeMenuText**, in modo che il gestore del comando non chiama ChangeMyCommand().  
+7. Nel **degli strumenti** dal menu fare clic sul **ChangeMenuText richiamare** comando. A questo punto è il nome del comando **richiamare ChangeMenuText**, in modo che il gestore del comando non chiama ChangeMyCommand().  
   
-8.  Nel **degli strumenti** menu si noterà ora **nuovo testo**. Fare clic su **nuovo testo**. Il comando dovrebbe ora essere disabilitato.  
+8. Nel **degli strumenti** menu si noterà ora **nuovo testo**. Fare clic su **nuovo testo**. Il comando dovrebbe ora essere disabilitato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)   

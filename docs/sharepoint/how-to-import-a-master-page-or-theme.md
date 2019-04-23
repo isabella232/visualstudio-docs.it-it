@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081906"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedura: Importare una pagina master o un tema
   È possibile assegnare le pagine nel sito di SharePoint un aspetto coerente creando e usando i temi e le pagine master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [blocco predefinito: Interfaccia utente e le pagine](http://go.microsoft.com/fwlink/?LinkID=182095) del sito Web Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Per importare una pagina master o un tema
 
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare o aprire un progetto SharePoint.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare o aprire un progetto SharePoint.
 
      Per informazioni su come creare un progetto SharePoint, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+2. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-3.  Nel **Aggiungi nuovo elemento** finestra di dialogo espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.
+3. Nel **Aggiungi nuovo elemento** finestra di dialogo espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.
 
-4.  Nell'elenco dei modelli di SharePoint, scegliere il **modulo** modello, quindi specificare un nome per il modulo.
+4. Nell'elenco dei modelli di SharePoint, scegliere il **modulo** modello, quindi specificare un nome per il modulo.
 
      Un modulo contiene file (ad esempio, file di tema o pagina master) per la distribuzione in una posizione specificata in SharePoint.
 
-5.  Nel modulo, eliminare il file predefinito, chiamata ScriptHelpers *Sample. txt*.
+5. Nel modulo, eliminare il file predefinito, chiamata ScriptHelpers *Sample. txt*.
 
-6.  Scegliere il nodo del modulo.
+6. Scegliere il nodo del modulo.
 
-7.  Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**, quindi scegliere il file di pagina o un tema master.
+7. Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**, quindi scegliere il file di pagina o un tema master.
 
      File della pagina master caratterizzati dall'estensione. master, e i file di tema hanno un'estensione di estensione thmx.
 
-8.  Se si aggiunge una pagina master, modificare relativi **risoluzione dei conflitti di distribuzione** se si imposta su **automatica** nelle proprietà del modulo.
+8. Se si aggiunge una pagina master, modificare relativi **risoluzione dei conflitti di distribuzione** se si imposta su **automatica** nelle proprietà del modulo.
 
     > [!NOTE]
     >  Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: Importare una pagina master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075324"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Debug cronologico (C#, Visual Basic, C++)
 
@@ -31,8 +31,8 @@ Il debug cronologico è una modalità di debug che dipende dalle informazioni ra
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Come iniziare a usare il debug cronologico?
 
- IntelliTrace è attivato per impostazione predefinita. Sufficiente è decidere quali eventi e chiamate di funzione sono di interesse e se si desidera visualizzare gli snapshot dello stato dell'applicazione completo. Per ulteriori informazioni sulla definizione di ciò che si desidera cercare, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md). Supporto delle funzionalità varia in base alla lingua e app tipo.
+IntelliTrace è attivato per impostazione predefinita. Sufficiente è decidere quali eventi e chiamate di funzione sono di interesse e se si desidera visualizzare gli snapshot dello stato dell'applicazione completo. Per ulteriori informazioni sulla definizione di ciò che si desidera cercare, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md). Supporto delle funzionalità varia in base alla lingua e app tipo.
 
- - Per visualizzare gli snapshot con il debug cronologico, vedere [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)
- - Per informazioni su come controllare le variabili ed esplorare il codice, vedere [analizzare un'app con il debug cronologico](../debugger/historical-debugging-inspect-app.md)
- - Per altre informazioni sul debug con eventi di IntelliTrace, vedere [procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Per visualizzare gli snapshot con il debug cronologico, vedere [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)
+- Per informazioni su come controllare le variabili ed esplorare il codice, vedere [analizzare un'app con il debug cronologico](../debugger/historical-debugging-inspect-app.md)
+- Per altre informazioni sul debug con eventi di IntelliTrace, vedere [procedura dettagliata: Utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

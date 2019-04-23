@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104122"
 ---
 # <a name="export-diagrams-as-images"></a>Esportare diagrammi come immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ In Visual Studio, è possibile salvare diagrammi di modellazione in formati di s
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Per copiare un diagramma o parte di un diagramma a un'altra applicazione  
   
-1.  Nel diagramma selezionare alcune o tutte le forme.  
+1. Nel diagramma selezionare alcune o tutte le forme.  
   
-2.  Fare doppio clic la selezione e quindi fare clic su **copia**.  
+2. Fare doppio clic la selezione e quindi fare clic su **copia**.  
   
-3.  Incollare la selezione nell'applicazione scelta.  
+3. Incollare la selezione nell'applicazione scelta.  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>Per esportare un'immagine come parte di un processo automatizzato  
   
--   Visualizzare [diagrammi UML esportare nei file di immagine](../modeling/export-uml-diagrams-to-image-files.md).  
+- Visualizzare [diagrammi UML esportare nei file di immagine](../modeling/export-uml-diagrams-to-image-files.md).  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Per salvare un diagramma di modellazione come file con estensione xps (XML Paper Specification)  
   
-1.  Nel **File** menu, fare clic su **Print** per aprire la **stampa** nella finestra di dialogo.  
+1. Nel **File** menu, fare clic su **Print** per aprire la **stampa** nella finestra di dialogo.  
   
-2.  Nel **Name** elenco, selezionare **Microsoft XPS Document Writer**, quindi fare clic su **OK**.  
+2. Nel **Name** elenco, selezionare **Microsoft XPS Document Writer**, quindi fare clic su **OK**.  
   
-3.  Nel **salvare il file come** della finestra di dialogo Salva file con un **documento XPS (\*XPS)** file.  
+3. Nel **salvare il file come** della finestra di dialogo Salva file con un **documento XPS (\*XPS)** file.  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
   

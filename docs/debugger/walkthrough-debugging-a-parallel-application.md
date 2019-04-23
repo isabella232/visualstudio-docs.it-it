@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: efd3ffb81d8ef1ad69a24acc277b8f5fe10df436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113144"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: Debug di un'applicazione parallela in Visual Studio (C#, Visual Basic, C++)
 
@@ -35,15 +35,15 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
  Nella procedura dettagliata vengono spiegate le seguenti attività:
 
--   Come visualizzare gli stack di chiamate di tutti i thread in un'unica visualizzazione.
+- Come visualizzare gli stack di chiamate di tutti i thread in un'unica visualizzazione.
 
--   Come visualizzare l'elenco delle istanze di `System.Threading.Tasks.Task` create nell'applicazione.
+- Come visualizzare l'elenco delle istanze di `System.Threading.Tasks.Task` create nell'applicazione.
 
--   Come visualizzare gli stack di chiamate reali delle attività anziché dei thread.
+- Come visualizzare gli stack di chiamate reali delle attività anziché dei thread.
 
--   Come passare al codice dalle finestre **Attività in parallelo** e **Stack in parallelo**.
+- Come passare al codice dalle finestre **Attività in parallelo** e **Stack in parallelo**.
 
--   Come le finestre affrontano il ridimensionamento tramite il raggruppamento, lo zoom e altre funzionalità correlate.
+- Come le finestre affrontano il ridimensionamento tramite il raggruppamento, lo zoom e altre funzionalità correlate.
 
 ## <a name="prerequisites"></a>Prerequisiti
  Questa procedura dettagliata si presuppone che **Just My Code** è abilitata (è abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio). Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)**. Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
@@ -103,15 +103,15 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Per visualizzare lo stack di chiamate di un singolo thread
 
-1.  Scegliere **Finestre** dal menu **Debug**, quindi **Thread**. Ancorare la finestra **Thread** nella parte inferiore di Visual Studio.
+1. Scegliere **Finestre** dal menu **Debug**, quindi **Thread**. Ancorare la finestra **Thread** nella parte inferiore di Visual Studio.
 
-2.  Scegliere **Finestre** dal menu **Debug**, quindi fare clic su **Stack di chiamate**. Ancorare la finestra **Stack di chiamate** nella parte inferiore di Visual Studio.
+2. Scegliere **Finestre** dal menu **Debug**, quindi fare clic su **Stack di chiamate**. Ancorare la finestra **Stack di chiamate** nella parte inferiore di Visual Studio.
 
-3.  Fare doppio clic su un thread nella finestra **Thread** per far sì che diventi il thread corrente. I thread correnti presentano una freccia gialla. Quando si modifica il thread corrente, il relativo stack di chiamate viene visualizzato nella finestra **Stack di chiamate**.
+3. Fare doppio clic su un thread nella finestra **Thread** per far sì che diventi il thread corrente. I thread correnti presentano una freccia gialla. Quando si modifica il thread corrente, il relativo stack di chiamate viene visualizzato nella finestra **Stack di chiamate**.
 
 #### <a name="to-examine-the-parallel-stacks-window"></a>Per esaminare la finestra Stack in parallelo
 
-1.  Scegliere **Finestre** dal menu **Debug**, quindi fare clic su **Stack in parallelo**. Assicurarsi che **Thread** sia selezionata nella casella nell'angolo superiore sinistro.
+1. Scegliere **Finestre** dal menu **Debug**, quindi fare clic su **Stack in parallelo**. Assicurarsi che **Thread** sia selezionata nella casella nell'angolo superiore sinistro.
 
      Tramite il **stack in parallelo** finestra, è possibile visualizzare più stack di chiamate allo stesso tempo in un'unica visualizzazione. La figura seguente mostra le **stack in parallelo** finestra precedente il **Stack di chiamate** finestra.
 
@@ -131,7 +131,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Per riprendere l'esecuzione fino al secondo punto di interruzione
 
-1.  Per riprendere l'esecuzione fino al raggiungimento del secondo punto di interruzione, fare clic su **Continua** nel menu **Debug**. Nell'illustrazione seguente viene mostrata la struttura ad albero del thread in corrispondenza del secondo punto di interruzione.
+1. Per riprendere l'esecuzione fino al raggiungimento del secondo punto di interruzione, fare clic su **Continua** nel menu **Debug**. Nell'illustrazione seguente viene mostrata la struttura ad albero del thread in corrispondenza del secondo punto di interruzione.
 
      ![Finestra Stack in parallelo molti rami](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")
 
@@ -163,7 +163,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Per riprendere l'esecuzione fino al terzo punto di interruzione
 
-1.  Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**.
+1. Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**.
 
      Se più thread si trovano nello stesso metodo ma questo, a sua volta, non si trovava all'inizio dello stack di chiamate, il metodo viene visualizzato in caselle diverse. Un esempio in corrispondenza del punto di interruzione corrente è S.L, il quale contiene tre thread e viene visualizzato in tre caselle. Fare doppio clic su S.L.
 
@@ -177,23 +177,23 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      Il menu di scelta rapida della finestra **Stack in parallelo** presenta inoltre le voci descritte di seguito.
 
-    -   **Visualizzazione esadecimale** consente di scegliere tra il formato decimale e il formato esadecimale dei numeri nelle descrizioni comandi.
+    - **Visualizzazione esadecimale** consente di scegliere tra il formato decimale e il formato esadecimale dei numeri nelle descrizioni comandi.
 
-    -   **Impostazioni dei simboli** aprire le finestre di dialogo corrispondente.
+    - **Impostazioni dei simboli** aprire le finestre di dialogo corrispondente.
 
-    -   **Mostra thread nell'origine** attiva o disattiva la visualizzazione dei marcatori di thread nel codice sorgente, che mostra la posizione del thread nel codice sorgente.
+    - **Mostra thread nell'origine** attiva o disattiva la visualizzazione dei marcatori di thread nel codice sorgente, che mostra la posizione del thread nel codice sorgente.
 
-    -   **Mostra codice esterno** consente di visualizzare tutti i frame anche se non si trovano nel codice utente. Provare questa voce per vedere il diagramma espandersi per accogliere i frame aggiuntivi, i quali possono essere disattivati in quanto non si dispone di simboli per tali frame.
+    - **Mostra codice esterno** consente di visualizzare tutti i frame anche se non si trovano nel codice utente. Provare questa voce per vedere il diagramma espandersi per accogliere i frame aggiuntivi, i quali possono essere disattivati in quanto non si dispone di simboli per tali frame.
 
-2.  Nella finestra **Stack in parallelo** assicurarsi che il pulsante **Scorrimento automatico a stack frame corrente** nella barra degli strumenti sia attivato.
+2. Nella finestra **Stack in parallelo** assicurarsi che il pulsante **Scorrimento automatico a stack frame corrente** nella barra degli strumenti sia attivato.
 
      Quando si dispone di diagrammi di grandi dimensioni e si avanza al punto di interruzione successivo, è possibile far sì che la visualizzazione scorra automaticamente fino allo stack frame attivo del thread corrente, vale a dire il thread che per primo ha raggiunto il punto di interruzione.
 
-3.  Prima di continuare, nella finestra **Stack in parallelo** scorrere fino in fondo verso sinistra e verso il basso.
+3. Prima di continuare, nella finestra **Stack in parallelo** scorrere fino in fondo verso sinistra e verso il basso.
 
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Per riprendere l'esecuzione fino al quarto punto di interruzione
 
-1.  Per riprendere l'esecuzione fino al raggiungimento del quarto punto di interruzione, fare clic su **Continua** nel menu **Debug**.
+1. Per riprendere l'esecuzione fino al raggiungimento del quarto punto di interruzione, fare clic su **Continua** nel menu **Debug**.
 
      Si noti come la visualizzazione sia scorsa automaticamente fino al punto in questione. Passare da un thread all'altro nella finestra **Thread** o da uno stack frame all'altro nella finestra **Stack di chiamate** e notare come la visualizzazione scorra sempre automaticamente al frame corretto. Disattivare l'opzione **Scorrimento automatico a stack frame corrente** e osservare la differenza.
 
@@ -209,22 +209,22 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      È anche possibile visualizzare gli stack dall'alto verso il basso, anziché dal basso verso l'alto. A tale scopo, fare clic sul menu **Strumenti**, scegliere **Opzioni**, quindi selezionare o deselezionare l'opzione nel nodo **Debug**.
 
-2.  Prima di continuare, fare clic su **Termina debug** nel menu **Debug** per terminare l'esecuzione.
+2. Prima di continuare, fare clic su **Termina debug** nel menu **Debug** per terminare l'esecuzione.
 
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Utilizzo della finestra Attività in parallelo e della visualizzazione Attività della finestra Stack in parallelo
  Prima di proseguire, si consiglia di completare le procedure precedenti.
 
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Per riavviare l'applicazione fino al raggiungimento del primo punto di interruzione
 
-1.  Nel menu **Debug** fare clic su **Avvia debug** e attendere il raggiungimento del primo punto di interruzione.
+1. Nel menu **Debug** fare clic su **Avvia debug** e attendere il raggiungimento del primo punto di interruzione.
 
-2.  Scegliere **Finestre** dal menu **Debug**, quindi **Thread**. Ancorare la finestra **Thread** nella parte inferiore di Visual Studio.
+2. Scegliere **Finestre** dal menu **Debug**, quindi **Thread**. Ancorare la finestra **Thread** nella parte inferiore di Visual Studio.
 
-3.  Scegliere **Finestre** dal menu **Debug**, quindi **Stack di chiamate**. Ancorare la finestra **Stack di chiamate** nella parte inferiore di Visual Studio.
+3. Scegliere **Finestre** dal menu **Debug**, quindi **Stack di chiamate**. Ancorare la finestra **Stack di chiamate** nella parte inferiore di Visual Studio.
 
-4.  Fare doppio clic su un thread nella finestra **Thread** per far sì che diventi il thread corrente. I thread correnti presentano la freccia gialla. Quando si modifica il thread corrente, le altre finestre vengono aggiornate. Si esamineranno quindi le attività.
+4. Fare doppio clic su un thread nella finestra **Thread** per far sì che diventi il thread corrente. I thread correnti presentano la freccia gialla. Quando si modifica il thread corrente, le altre finestre vengono aggiornate. Si esamineranno quindi le attività.
 
-5.  Nel **eseguire il Debug** dal menu **Windows**, quindi fare clic su **attività**. La figura seguente mostra le **attività** finestra.
+5. Nel **eseguire il Debug** dal menu **Windows**, quindi fare clic su **attività**. La figura seguente mostra le **attività** finestra.
 
      ![Quattro che eseguono attività nella finestra attività](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
 
@@ -238,7 +238,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Per riprendere l'esecuzione fino al secondo punto di interruzione
 
-1.  Per riprendere l'esecuzione fino al raggiungimento del secondo punto di interruzione, fare clic su **Continua** nel menu **Debug**.
+1. Per riprendere l'esecuzione fino al raggiungimento del secondo punto di interruzione, fare clic su **Continua** nel menu **Debug**.
 
      In precedenza, il **stato** colonna tutte le attività venivano come attivo, ma ora due attività sono bloccati. Le attività possono essere bloccate per molte ragioni diverse. Passare il mouse su un'attività in attesa nella colonna **Stato** per conoscere il motivo per cui è bloccata. Ad esempio, nell'illustrazione seguente, l'attività 3 è in attesa dell'attività 4.
 
@@ -264,7 +264,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Per riprendere l'esecuzione fino al terzo punto di interruzione
 
-1.  Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**.
+1. Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**.
 
      Una nuova attività, l'attività 5, è ora in esecuzione mentre l'attività 4 è in attesa. Per visualizzare il motivo, passare il mouse sull'attività in attesa nella finestra **Stato**. Nel **padre** colonna, si noti che l'attività 4 è l'elemento padre dell'attività 5.
 
@@ -284,7 +284,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Per riprendere l'esecuzione fino al quarto punto di interruzione
 
-1.  Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**. Fare clic sull'intestazione di colonna **ID** per ordinare in base all'ID. Si dovrebbe vedere l'illustrazione seguente.
+1. Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**. Fare clic sull'intestazione di colonna **ID** per ordinare in base all'ID. Si dovrebbe vedere l'illustrazione seguente.
 
      ![Quattro attività stati nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073735"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associare dati a controlli nelle soluzioni Office
   È possibile associare i controlli Windows Form e i *controlli host* in un documento di Microsoft Office Word o in un foglio di lavoro di Microsoft Office Excel a un'origine dati in modo da visualizzare automaticamente i dati. È possibile associare dati ai controlli nei progetti a livello di applicazione e a livello di documento.
@@ -73,22 +73,22 @@ ms.locfileid: "56605718"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Associare i dati nei progetti a livello di documento in fase di progettazione
  Gli argomenti seguenti mostrano esempi di data binding in fase di progettazione:
 
--   [Procedura: Popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Procedura: Popolare fogli di lavoro con i dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Procedura: Popolare documenti con dati provenienti da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Procedura: Popolare documenti con dati provenienti da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Procedura: Scorrere i record di database in un foglio di lavoro](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Procedura: Scorrere i record di database in un foglio di lavoro](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Associare i dati nei progetti di componente aggiuntivo VSTO
  Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere controlli solo in fase di esecuzione. Gli argomenti seguenti mostrano esempi di data binding in fase di esecuzione:
 
--   [Procedura dettagliata: Data binding semplice in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Procedura dettagliata: Data binding semplice in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Procedura dettagliata: Data binding complesso in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Procedura dettagliata: Data binding complesso in progetto di componente aggiuntivo VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Aggiornamento dei dati associati ai controlli host
  Il data binding tra un'origine dati e un controllo host comporta un aggiornamento bidirezionale dei dati. Nel data binding semplice, le modifiche apportate all'origine dati si riflettono automaticamente nel controllo host, mentre quelle apportate al controllo host richiedono una chiamata esplicita per aggiornare l'origine dati. Il motivo è che in alcuni casi le modifiche apportate a un campo associato a dati non vengono accettate se non sono accompagnate da modifiche a un altro campo associato a dati. Si considerino, ad esempio, due campi, uno relativo all'età e un altro relativo agli anni di esperienza. L'esperienza non può superare l'età. Non è possibile aggiornare l'età da 50 a 25 e poi l'esperienza da 30 a 10 a meno che le modifiche non vengano apportate contemporaneamente. Per risolvere il problema, i campi con data binding semplice non vengono aggiornati finché gli aggiornamenti non vengono inviati in maniera esplicita dal codice.

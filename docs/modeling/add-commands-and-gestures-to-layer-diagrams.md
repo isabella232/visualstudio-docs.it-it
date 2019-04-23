@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077875"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
@@ -66,7 +66,7 @@ Il modo più rapido per creare un'estensione è usare il modello di progetto. In
 
 Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori.
 
-1. Creare una nuova **libreria di classi** progetto. Questo progetto conterrà le classi del gestore comandi o movimenti.
+1. Creare un nuovo progetto **Libreria di classi**. Questo progetto conterrà le classi del gestore comandi o movimenti.
 
    > [!NOTE]
    > È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.
@@ -108,7 +108,7 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
 
 8. Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora File.
 
-##  <a name="command"></a> Definizione di un comando di menu
+## <a name="command"></a> Definizione di un comando di menu
 
 È possibile aggiungere altre definizioni dei comandi di menu a un progetto di comandi o movimenti esistente. Ogni comando viene definito da una classe che ha le caratteristiche seguenti:
 
@@ -124,11 +124,11 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
 
 - I metodi che implementano `ICommandExtension` sono i seguenti:
 
-  -   `string Text {get;}` : etichetta visualizzata nel menu.
+  - `string Text {get;}` : etichetta visualizzata nel menu.
 
-  -   `void QueryStatus(IMenuCommand command)` : viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e determina se il comando deve essere visibile e abilitato per la selezione corrente dell'utente.
+  - `void QueryStatus(IMenuCommand command)` : viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e determina se il comando deve essere visibile e abilitato per la selezione corrente dell'utente.
 
-  -   `void Execute(IMenuCommand command)` : viene chiamato quando l'utente seleziona il comando.
+  - `void Execute(IMenuCommand command)` : viene chiamato quando l'utente seleziona il comando.
 
 - Per determinare la selezione corrente, è possibile importare `IDiagramContext`:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Definizione di un gestore movimenti
+## <a name="gesture"></a> Definizione di un gestore movimenti
 
 Un gestore movimenti risponde quando l'utente trascina elementi nel diagramma delle dipendenze e quando l'utente fa doppio clic in qualsiasi punto nel diagramma.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
--   I membri di `IGestureExtension` sono:
+- I membri di `IGestureExtension` sono:
 
      **OnDoubleClick** : viene chiamato quando l'utente fa doppio clic in qualsiasi punto del diagramma.
 
@@ -246,7 +246,7 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
      **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.
 
--   Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:
+- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
     }
     ```
 
--   I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma di dipendenza. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.
+- I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma di dipendenza. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.
 
 ## <a name="see-also"></a>Vedere anche
 

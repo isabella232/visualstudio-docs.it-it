@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076890"
 ---
 # <a name="write-code-in-office-solutions"></a>Scrivere il codice nelle soluzioni Office
   Alcuni aspetti della scrittura del codice nei progetti di Office presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze riguardano la modalità di esposizione dei modelli a oggetti di Office al codice gestito. Le altre differenze sono correlate alla creazione di progetti di Office.
@@ -63,9 +63,9 @@ ms.locfileid: "54864072"
 
  Poiché i tipi negli assembly di interoperabilità primari di Office corrispondono ai tipi nei modelli a oggetti COM, la modalità di utilizzo di questi tipi spesso è differente dagli altri tipi gestiti. Ad esempio, la modalità di chiamata dei metodi che hanno parametri facoltativi in un assembly di interoperabilità primario di Office varia in base al linguaggio di programmazione che si sta usando nel progetto. Per altre informazioni, vedere i seguenti argomenti:
 
--   [I parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).
+- [I parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md).
+- [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Modello di applicazione dei progetti di Office
  Tutti i progetti di Office includono una o più classi generate che forniscono il punto di ingresso per il codice. Queste classi forniscono anche accesso al modello a oggetti dell'applicazione host e accesso a funzionalità quali riquadri azioni e riquadri attività personalizzati.
@@ -85,7 +85,7 @@ ms.locfileid: "54864072"
 ### <a name="namespace-considerations-in-office-solutions"></a>Considerazioni di Namespace nelle soluzioni Office
  Non è possibile modificare lo *spazio dei nomi predefinito* (o *spazio dei nomi radice* in Visual Basic) di un progetto di Office dopo averlo creato. Lo spazio dei nomi predefinito corrisponderà sempre al nome del progetto specificato durante la creazione del progetto. Se si rinomina il progetto, lo spazio dei nomi predefinito non viene modificato. Per altre informazioni su spazio dei nomi predefinito nei progetti, vedere [Application Page, Project Designer &#40;C&#35; &#41; ](../ide/reference/application-page-project-designer-csharp.md) e [pagina applicazione, creazione progetti &#40;Visual Basic&#41; ](../ide/reference/application-page-project-designer-visual-basic.md).
 
-### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Modificare lo spazio dei nomi di classi dell'elemento host nei progetti C#
+### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Modificare lo spazio dei nomi di classi dell'elemento host nei progetti c#
  Le classi dell'elemento host (ad esempio, le classi `ThisAddIn`, `ThisWorkbook`o `ThisDocument` ) hanno spazi dei nomi specifici nei progetti di Office di Visual C#. Per impostazione predefinita, lo spazio dei nomi per gli elementi host nel progetto corrisponde al nome del progetto specificato durante la creazione del progetto.
 
  Per modificare lo spazio dei nomi degli elementi host in un progetto di Office di Visual C#, usare la proprietà **Spazio dei nomi per elemento host** . Per altre informazioni, vedere [delle proprietà nei progetti di Office](../vsto/properties-in-office-projects.md).
@@ -96,11 +96,14 @@ ms.locfileid: "54864072"
 ## <a name="language-choice-and-office-programming"></a>Scelta del linguaggio e programmazione di Office
  Microsoft Office e VBA (Visual Basic, Applications Edition) sono stati sviluppati per l'integrazione al fine di ottimizzare il flusso di lavoro di personalizzazione delle applicazioni. Visual Basic ha ereditato alcuni di tali sviluppi. Ad esempio, in Visual Basic vengono supportati i parametri facoltativi e quindi si scrive meno codice quando si chiamano alcuni metodi negli assembly di interoperabilità primari di Microsoft Office rispetto a Visual C#.
 
-## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programma con Visual Studio di Visual Basic. Visual C# nelle soluzioni Office
+## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programma con Visual Studio di Visual Basic. Visual c# nelle soluzioni Office
  È possibile creare soluzioni Office usando Visual Basic o Visual C#. Poiché i modelli a oggetti di Microsoft Office sono stati progettati per l'utilizzo con Microsoft VBA (Visual Basic, Applications Edition), gli sviluppatori di Visual Basic possono usare agevolmente gli oggetti esposti dalle applicazioni di Microsoft Office. Gli sviluppatori di Visual C# possono usare gran parte delle stesse funzionalità usate dagli sviluppatori di Visual Basic, ma in alcuni casi devono scrivere codice aggiuntivo per usare i modelli a oggetti di Office. Esistono inoltre alcune differenze tra le funzionalità di programmazione di base usate nello sviluppo di applicazioni per Office e il codice gestito scritto in Visual Basic e C#.
 
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Differenze principali tra Visual Basic e Visual C#
- Nella tabella seguente sono illustrate le differenze principali tra Visual Basic e Visual C# nello sviluppo di applicazioni per Office.
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Differenze principali tra Visual Basic e Visual c#
+<!-- markdownlint-enable MD003 MD020 -->
+
+Nella tabella seguente sono illustrate le differenze principali tra Visual Basic e Visual C# nello sviluppo di applicazioni per Office.
 
 |Funzionalità|Descrizione|Supporto in Visual Basic|Supporto in Visual C#|
 |-------------|-----------------|--------------------------|------------------------|

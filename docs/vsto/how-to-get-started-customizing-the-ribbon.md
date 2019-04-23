@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081567"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procedura: Introduzione alla personalizzazione della barra multifunzione
   Per personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un **sulla barra multifunzione (finestra di progettazione visiva)** oppure **della barra multifunzione (XML)** elemento a un progetto di Office.
@@ -37,33 +37,33 @@ ms.locfileid: "56640116"
 
     I nomi non possono contenere i caratteri seguenti:
 
-   -   Cancelletto (#)
+   - Cancelletto (#)
 
-   -   Simbolo di percentuale (%)
+   - Simbolo di percentuale (%)
 
-   -   Ampersand (&)
+   - Ampersand (&)
 
-   -   Asterisco (*)
+   - Asterisco (*)
 
-   -   Barra verticale (|)
+   - Barra verticale (|)
 
-   -   Barra rovesciata (\\)
+   - Barra rovesciata (\\)
 
-   -   Due punti (:)
+   - Due punti (:)
 
-   -   Virgolette doppie (")
+   - Virgolette doppie (")
 
-   -   Minore di (\<)
+   - Minore di (\<)
 
-   -   Maggiore di (>)
+   - Maggiore di (>)
 
-   -   Punto interrogativo (?)
+   - Punto interrogativo (?)
 
-   -   Barra (/)
+   - Barra (/)
 
-   -   Spazi iniziali o finali (' ')
+   - Spazi iniziali o finali (' ')
 
-   -   Nomi riservati di Windows o DOS, ad esempio ("nul", "aux", "con", "com1", "lpt1" e così via)
+   - Nomi riservati di Windows o DOS, ad esempio ("nul", "aux", "con", "com1", "lpt1" e così via)
 
 4. Fare clic su **OK**.
 

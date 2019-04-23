@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080709"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La finestra di progettazione set di dati fornisce la funzionalità per creare cl
 >  Quando si separano i set di dati da oggetti TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
   
 > [!NOTE]
->  La finestra di progettazione set di dati non crea automaticamente i gestori eventi in C# per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi. È necessario creare un gestore dell'evento manualmente e associare il gestore eventi all'evento sottostante. Le procedure seguenti descrivono come creare i gestori eventi necessaria in Visual Basic e C#.  
+>  La finestra di progettazione set di dati non crea automaticamente i gestori eventi in c# per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi. È necessario creare un gestore dell'evento manualmente e associare il gestore eventi all'evento sottostante. Le procedure seguenti descrivono come creare i gestori eventi necessaria in Visual Basic e c#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges alle singole colonne  
  Convalidare i valori delle singole colonne gestendo il <xref:System.Data.DataTable.ColumnChanging> evento. Il <xref:System.Data.DataTable.ColumnChanging> evento viene generato quando viene modificato un valore in una colonna. Creare un gestore eventi per il <xref:System.Data.DataTable.ColumnChanging> eventi facendo doppio clic sul set di dati colonna desiderata.  
@@ -52,20 +52,20 @@ End Sub
 ```  
   
 > [!NOTE]
->  Nei progetti C#, la finestra di progettazione set di dati crea solo le classi parziali per il set di dati e le singole tabelle nel set di dati. La finestra di progettazione set di dati non crea automaticamente i gestori eventi per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi in C# come avviene in Visual Basic. Nei progetti C#, è necessario creare manualmente un metodo per gestire l'evento e associare il metodo dell'evento sottostante. La seguente procedura fornisce i passaggi per creare i gestori eventi necessaria in Visual Basic e C#.  
+>  Nei progetti c#, la finestra di progettazione set di dati crea solo le classi parziali per il set di dati e le singole tabelle nel set di dati. La finestra di progettazione set di dati non crea automaticamente i gestori eventi per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi in c# come avviene in Visual Basic. Nei progetti c#, è necessario creare manualmente un metodo per gestire l'evento e associare il metodo dell'evento sottostante. La seguente procedura fornisce i passaggi per creare i gestori eventi necessaria in Visual Basic e c#.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Per aggiungere la convalida durante le modifiche ai valori di colonna singola  
   
-1.  Aprire il set di dati nella finestra di progettazione facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati nella finestra di progettazione facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Fare doppio clic sulla colonna da convalidare. Questa azione viene creata la <xref:System.Data.DataTable.ColumnChanging> gestore dell'evento.  
+2. Fare doppio clic sulla colonna da convalidare. Questa azione viene creata la <xref:System.Data.DataTable.ColumnChanging> gestore dell'evento.  
   
     > [!NOTE]
-    >  La finestra di progettazione set di dati non crea automaticamente un gestore eventi per l'evento di C#. Il codice che è necessario gestire l'evento nel linguaggio C# è incluso nella sezione successiva. `SampleColumnChangingEvent` viene creato e quindi collegato al <xref:System.Data.DataTable.ColumnChanging> eventi nel <xref:System.Data.DataTable.EndInit%2A> (metodo).  
+    >  La finestra di progettazione set di dati non crea automaticamente un gestore eventi per l'evento di c#. Il codice che è necessario gestire l'evento nel linguaggio c# è incluso nella sezione successiva. `SampleColumnChangingEvent` viene creato e quindi collegato al <xref:System.Data.DataTable.ColumnChanging> eventi nel <xref:System.Data.DataTable.EndInit%2A> (metodo).  
   
-3.  Aggiungere il codice per verificare che `e.ProposedValue` contiene dati che soddisfano i requisiti dell'applicazione. Se il valore proposto è inaccettabile, impostare la colonna a indicare che contiene un errore.  
+3. Aggiungere il codice per verificare che `e.ProposedValue` contiene dati che soddisfano i requisiti dell'applicazione. Se il valore proposto è inaccettabile, impostare la colonna a indicare che contiene un errore.  
   
      Esempio di codice seguente consente di verificare che il **Quantity** colonna contiene più di 0. Se **Quantity** è minore o uguale a 0, la colonna è impostata su un errore. Il `Else` clausola risolve il problema se **Quantity** è maggiore di 0. Il codice nel gestore dell'evento di modifica delle colonne sarà simile al seguente:  
   
@@ -117,18 +117,18 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Per aggiungere la convalida durante la modifica a intere righe  
   
-1.  Aprire il set di dati nella finestra di progettazione facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati nella finestra di progettazione facendo doppio clic il **XSD** del file in **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Fare doppio clic sulla barra del titolo della tabella di dati nella finestra di progettazione.  
+2. Fare doppio clic sulla barra del titolo della tabella di dati nella finestra di progettazione.  
   
      Una classe parziale viene creata con un `RowChanging` gestore dell'evento e viene aperto nell'Editor del codice.  
   
     > [!NOTE]
-    >  La finestra di progettazione set di dati non crea automaticamente un gestore eventi per il <xref:System.Data.DataTable.RowChanging> eventi nei progetti C#. È necessario creare un metodo per gestire il <xref:System.Data.DataTable.RowChanging> evento e eseguire codice per associare l'evento in un metodo di inizializzazione della tabella.  
+    >  La finestra di progettazione set di dati non crea automaticamente un gestore eventi per il <xref:System.Data.DataTable.RowChanging> eventi nei progetti c#. È necessario creare un metodo per gestire il <xref:System.Data.DataTable.RowChanging> evento e eseguire codice per associare l'evento in un metodo di inizializzazione della tabella.  
   
-3.  Aggiungere il codice utente all'interno della dichiarazione di classe parziale.  
+3. Aggiungere il codice utente all'interno della dichiarazione di classe parziale.  
   
-4.  Il codice seguente mostra dove aggiungere il codice utente da convalidare durante la <xref:System.Data.DataTable.RowChanging> evento per Visual Basic:  
+4. Il codice seguente mostra dove aggiungere il codice utente da convalidare durante la <xref:System.Data.DataTable.RowChanging> evento per Visual Basic:  
   
     ```vb  
     Partial Class OrdersDataTable  
@@ -145,7 +145,7 @@ End Sub
     End Class  
     ```  
   
-5.  Il codice seguente viene illustrato come creare i `RowChanging` gestore dell'evento e dove aggiungere il codice utente da convalidare durante il <xref:System.Data.DataTable.RowChanging> evento per il linguaggio C#:  
+5. Il codice seguente viene illustrato come creare i `RowChanging` gestore dell'evento e dove aggiungere il codice utente da convalidare durante il <xref:System.Data.DataTable.RowChanging> evento per il linguaggio c#:  
   
     ```csharp  
     partial class OrdersDataTable  

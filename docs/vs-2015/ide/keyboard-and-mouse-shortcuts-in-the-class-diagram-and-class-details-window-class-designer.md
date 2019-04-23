@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113014"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "54775827"
   
  **In questo argomento**  
   
--   [Uso del mouse in Progettazione classi](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Uso del mouse in Progettazione classi](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Uso del mouse nella finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Uso del mouse nella finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Uso della tastiera in Progettazione classi](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Uso della tastiera in Progettazione classi](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Uso della tastiera nella finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Uso della tastiera nella finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Uso del mouse in Progettazione classi  
+## <a name="MouseClassDesigner"></a> Uso del mouse in Progettazione classi  
  Nei diagrammi classi sono supportate le operazioni del mouse seguenti:  
   
-|Combinazione del mouse|Contesto|Descrizione|  
+|Combinazione del mouse|Contesto|Description|  
 |-----------------------|-------------|-----------------|  
 |Doppio clic|Elementi forma|Apre l'editor del codice.|  
 ||Connettore simbolo|Espande/comprime il simbolo.|  
@@ -49,23 +49,23 @@ ms.locfileid: "54775827"
 |CTRL+rotellina del mouse|Diagramma classi|Ingrandisce.|  
 |CTRL + MAIUSC + clic|Diagramma classi|Ingrandisce.|  
   
-##  <a name="MouseClassDetails"></a> Uso del mouse nella finestra Dettagli classe  
+## <a name="MouseClassDetails"></a> Uso del mouse nella finestra Dettagli classe  
  Usando il mouse è possibile modificare l'aspetto della finestra Dettagli classe e i dati che vengono visualizzati nei modi seguenti:  
   
--   Facendo clic in qualsiasi cella modificabile è possibile modificarne il contenuto. Tutte le modifiche apportate si riflettono in tutte le posizioni in cui i dati sono archiviati o visualizzati, anche nella finestra Proprietà e nel codice sorgente.  
+- Facendo clic in qualsiasi cella modificabile è possibile modificarne il contenuto. Tutte le modifiche apportate si riflettono in tutte le posizioni in cui i dati sono archiviati o visualizzati, anche nella finestra Proprietà e nel codice sorgente.  
   
--   Se si fa clic in una cella di una riga, nella finestra Proprietà vengono visualizzate le proprietà relative all'elemento rappresentato da tale riga.  
+- Se si fa clic in una cella di una riga, nella finestra Proprietà vengono visualizzate le proprietà relative all'elemento rappresentato da tale riga.  
   
--   Per cambiare la larghezza di una colonna, trascinare il bordo sul lato destro dell'intestazione della colonna fino a ottenere la larghezza desiderata.  
+- Per cambiare la larghezza di una colonna, trascinare il bordo sul lato destro dell'intestazione della colonna fino a ottenere la larghezza desiderata.  
   
--   Per espandere o comprimere nodi di raggruppamenti o proprietà, fare clic sui simboli freccia a sinistra della riga.  
+- Per espandere o comprimere nodi di raggruppamenti o proprietà, fare clic sui simboli freccia a sinistra della riga.  
   
--   La finestra Dettagli classe contiene diversi pulsanti che consentono di creare nuovi membri nella classe corrente e di spostarsi tra i raggruppamenti dei membri nella griglia della finestra.  Per altre informazioni, vedere la sezione relativa ai pulsanti della finestra Dettagli classe  
+- La finestra Dettagli classe contiene diversi pulsanti che consentono di creare nuovi membri nella classe corrente e di spostarsi tra i raggruppamenti dei membri nella griglia della finestra.  Per altre informazioni, vedere la sezione relativa ai pulsanti della finestra Dettagli classe  
   
-##  <a name="KeyboardClassDesigner"></a> Uso della tastiera in Progettazione classi  
+## <a name="KeyboardClassDesigner"></a> Uso della tastiera in Progettazione classi  
  Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:  
   
-|Chiave|Contesto|Descrizione|  
+|Chiave|Contesto|Description|  
 |---------|-------------|-----------------|  
 |Tasti di direzione|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|  
 ||Forme di primo livello|Consentono di spostare forme nel diagramma.|  
@@ -89,7 +89,7 @@ ms.locfileid: "54775827"
 |MAIUSC+TAB|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|  
 |BARRA SPAZIATRICE|Tutti i contesti|Alterna la selezione sull'elemento corrente.|  
   
-##  <a name="KeyboardClassDetails"></a> Uso della tastiera nella finestra Dettagli classe  
+## <a name="KeyboardClassDetails"></a> Uso della tastiera nella finestra Dettagli classe  
   
 > [!NOTE]
 >  Le seguenti combinazioni di tasti sono state scelte specificamente per riprodurre l'operazione di digitazione di codice.  

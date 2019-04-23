@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076419"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: Specificare quale destinazione compilare per prima
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Per specificare più di una destinazione iniziale  
   
--   Elencare le destinazioni iniziali, separate da punto e virgola, nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:  
+- Elencare le destinazioni iniziali, separate da punto e virgola, nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -55,7 +55,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
 #### <a name="to-specify-more-than-one-default-target"></a>Per specificare più di una destinazione predefinita  
   
--   Elencare le destinazioni predefinite, separate da punto e virgola, nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:  
+- Elencare le destinazioni predefinite, separate da punto e virgola, nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -64,13 +64,13 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Per usare per prima una destinazione diversa da quella predefinita  
   
--   Specificare la destinazione da usare per prima tramite l'opzione della riga di comando **/target**. Ad esempio:  
+- Specificare la destinazione da usare per prima tramite l'opzione della riga di comando **/target**. Ad esempio:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Per usare per prime più destinazioni diverse da quelle predefinite  
   
--   Elencare le destinazioni, separate da punto e virgola o virgola, usando l'opzione della riga di comando **/target**. Ad esempio:  
+- Elencare le destinazioni, separate da punto e virgola o virgola, usando l'opzione della riga di comando **/target**. Ad esempio:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

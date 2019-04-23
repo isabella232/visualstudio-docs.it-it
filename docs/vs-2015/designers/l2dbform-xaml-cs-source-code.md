@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077628"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Codice sorgente di L2DBForm.xaml.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ In questo argomento vengono forniti il contenuto e la descrizione del codice sor
 ## <a name="data-members"></a>Membri di dati  
  Per associare questa classe alle risorse della finestra usate in L2DBForm.xaml, vengono usati due membri di dati privati.  
   
--   La variabile dello spazio dei nomi `myBooks` viene inizializzata in `"http://www.mybooks.com"`.  
+- La variabile dello spazio dei nomi `myBooks` viene inizializzata in `"http://www.mybooks.com"`.  
   
--   Il membro `bookList` viene inizializzato nel costruttore nella stringa CDATA in L2DBForm.xaml con la seguente riga:  
+- Il membro `bookList` viene inizializzato nel costruttore nella stringa CDATA in L2DBForm.xaml con la seguente riga:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ In questo argomento vengono forniti il contenuto e la descrizione del codice sor
 ## <a name="onaddbook-event-handler"></a>Gestore dell'evento OnAddBook  
  Questo metodo contiene le tre istruzioni seguenti:  
   
--   La prima istruzione condizionale viene usata per la convalida dell'input.  
+- La prima istruzione condizionale viene usata per la convalida dell'input.  
   
--   La seconda istruzione crea un nuovo oggetto <xref:System.Xml.Linq.XElement> dai valori stringa immessi dall'utente nella sezione **Add New Book** (Aggiungi nuovo libro) dell'interfaccia utente.  
+- La seconda istruzione crea un nuovo oggetto <xref:System.Xml.Linq.XElement> dai valori stringa immessi dall'utente nella sezione **Add New Book** (Aggiungi nuovo libro) dell'interfaccia utente.  
   
--   L'ultima istruzione aggiunge questo nuovo elemento libro al provider di dati in L2DBForm.xaml. Di conseguenza, l'associazione dati dinamica aggiornerà automaticamente l'interfaccia utente con questo nuovo elemento. Non è necessario altro codice specificato dall'utente.  
+- L'ultima istruzione aggiunge questo nuovo elemento libro al provider di dati in L2DBForm.xaml. Di conseguenza, l'associazione dati dinamica aggiornerà automaticamente l'interfaccia utente con questo nuovo elemento. Non è necessario altro codice specificato dall'utente.  
   
 ## <a name="onremove-event-handler"></a>Gestore dell'evento OnRemove  
  Il gestore dell'evento `OnRemove` è più complicato del gestore dell'evento `OnAddBook`, per due motivi. Innanzitutto, poiché l'XML non elaborato contiene lo spazio vuoto conservato, è necessario anche rimuovere le nuove righe corrispondente con la voce del libro. In secondo luogo, per comodità, la selezione applicata sull'elemento eliminato è stata reimpostata sull'elemento precedente nell'elenco.  

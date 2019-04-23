@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d811b27f810ac9becf23513a25937e1a265d305
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074637"
 ---
 # <a name="how-to-localize-a-feature"></a>Procedura: Localizzare una funzionalità
   Per impostazione predefinita, le descrizioni e titoli delle funzionalità utilizzano i valori di stringa hardcoded. Per localizzare il titolo della funzionalità e la descrizione, sostituire le stringhe con le espressioni che fanno riferimento alle risorse localizzate.
@@ -27,21 +27,21 @@ ms.locfileid: "56639089"
 
 #### <a name="to-localize-a-feature"></a>Per localizzare una funzionalità
 
-1.  Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il **Feature1** nodo, quindi scegliere **Aggiungi risorsa funzionalità**.
+1. Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il **Feature1** nodo, quindi scegliere **Aggiungi risorsa funzionalità**.
 
-2.  Nel **Aggiungi risorsa** finestra di dialogo, scegliere **lingua invariante** dall'elenco come impostazioni cultura per il file di risorse predefinito funzionalità del linguaggio.
+2. Nel **Aggiungi risorsa** finestra di dialogo, scegliere **lingua invariante** dall'elenco come impostazioni cultura per il file di risorse predefinito funzionalità del linguaggio.
 
-3.  Ripetere il passaggio precedente per ogni lingua localizzata, selezionando le lingue desiderate per i file di risorse della funzionalità localizzati.
+3. Ripetere il passaggio precedente per ogni lingua localizzata, selezionando le lingue desiderate per i file di risorse della funzionalità localizzati.
 
      Vengono creati file di risorse di funzionalità separati, uno per la lingua predefinita e uno per ogni lingua localizzata da supportare.
 
-4.  Aprire ogni file di risorse nell'Editor risorse e immettere tutti gli ID di stringa e i relativi valori.
+4. Aprire ogni file di risorse nell'Editor risorse e immettere tutti gli ID di stringa e i relativi valori.
 
      Ad esempio, nel file di risorse di funzionalità di impostazione predefinita, immettere un ID stringa del **Title** con il valore **My Feature Title**, e un secondo ID di stringa **descrizione** con un valore di **My Feature Description**. Per ogni file di risorse localizzato, utilizzare gli stessi ID di stringa utilizzati nella risorsa della funzionalità predefinita, ma immettere stringhe localizzate per i valori.
 
-5.  Dopo aver immesso tutti i valori della risorsa, aprire il menu di scelta rapida per la funzionalità (ad esempio, *Feature1*), quindi scegliere **Progettazione viste** per aprire la funzionalità nella finestra di progettazione di funzionalità.
+5. Dopo aver immesso tutti i valori della risorsa, aprire il menu di scelta rapida per la funzionalità (ad esempio, *Feature1*), quindi scegliere **Progettazione viste** per aprire la funzionalità nella finestra di progettazione di funzionalità.
 
-6.  Per localizzare il **Title** e **descrizione** campi nella funzionalità, usare il formato seguente per immettere i valori desiderati nelle rispettive caselle:
+6. Per localizzare il **Title** e **descrizione** campi nella funzionalità, usare il formato seguente per immettere i valori desiderati nelle rispettive caselle:
 
      `$Resources:` *ID stringa*
 
@@ -49,9 +49,9 @@ ms.locfileid: "56639089"
 
      Gli ID di stringa devono corrispondere a quelli utilizzati nei file di risorse.
 
-7.  Scegliere il **F5** chiave per compilare ed eseguire l'applicazione.
+7. Scegliere il **F5** chiave per compilare ed eseguire l'applicazione.
 
-8.  In SharePoint, aprire il **Azioni sito** dal menu scegliere **Impostazioni sito**, quindi il **Azioni sito** sezione scegliere il **Gestisci caratteristiche sito** collegamento.
+8. In SharePoint, aprire il **Azioni sito** dal menu scegliere **Impostazioni sito**, quindi il **Azioni sito** sezione scegliere il **Gestisci caratteristiche sito** collegamento.
 
 9. In SharePoint, cambiare la lingua di visualizzazione da quello predefinito.
 

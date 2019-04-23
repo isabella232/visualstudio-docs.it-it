@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078928"
 ---
 # <a name="build-office-solutions"></a>Creazione di soluzioni Office
   I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come creare applicazioni, vedere [compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945417"
 ### <a name="document-level-projects"></a>Progetti a livello di documento
  Quando si compila un progetto a livello di documento, nell'output del progetto vengono inclusi gli elementi seguenti:
 
--   Una copia del documento del progetto.
+- Una copia del documento del progetto.
 
--   L'assembly del progetto e tutti gli assembly di riferimento la cui proprietà **Copia localmente** è impostata su **true**.
+- L'assembly del progetto e tutti gli assembly di riferimento la cui proprietà **Copia localmente** è impostata su **true**.
 
--   Il manifesto dell'applicazione, che ha l'estensione *manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+- Il manifesto dell'applicazione, che ha l'estensione *manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
--   Il manifesto di distribuzione, che ha l'estensione *VSTO*. Per altre informazioni, vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Il manifesto di distribuzione, che ha l'estensione *VSTO*. Per altre informazioni, vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Un database di programma (*PDB*) file.
+- Un database di programma (*PDB*) file.
 
 > [!NOTE]
 >  Se si compila una soluzione a livello di documento in un percorso remoto anziché nel computer locale, aggiungere il percorso completo all'elenco di percorsi attendibili nel Centro protezione dell'applicazione. Per altre informazioni, vedere la sezione intitolata Concessione dell'attendibilità ai documenti [soluzioni Office Secure](../vsto/securing-office-solutions.md).

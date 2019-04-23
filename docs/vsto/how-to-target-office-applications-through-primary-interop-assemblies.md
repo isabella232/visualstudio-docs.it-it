@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079636"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari
   Quando si crea un nuovo progetto di Office, in Visual Studio vengono aggiunti automaticamente riferimenti agli assembly di interoperabilità primari (PIA) di Microsoft Office necessari per la compilazione del progetto. È necessario aggiungere riferimenti agli altri assembly di interoperabilità primari (PIA) negli scenari seguenti:
@@ -36,18 +36,18 @@ ms.locfileid: "56614324"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Per aggiungere un riferimento a un assembly di interoperabilità primario
 
-1.  Aprire il progetto di Office e selezionare il nome del progetto in **Esplora soluzioni**.
+1. Aprire il progetto di Office e selezionare il nome del progetto in **Esplora soluzioni**.
 
-2.  Scegliere **Aggiungi riferimento** dal menu **Progetto**.
+2. Scegliere **Aggiungi riferimento** dal menu **Progetto**.
 
-3.  Nel **Framework** scheda, selezionare l'assembly di interoperabilità primario in cui si desidera il **nome componente** elenco. Per altre informazioni sugli assembly di interoperabilità primari di Microsoft Office disponibili, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
+3. Nel **Framework** scheda, selezionare l'assembly di interoperabilità primario in cui si desidera il **nome componente** elenco. Per altre informazioni sugli assembly di interoperabilità primari di Microsoft Office disponibili, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
 
      Se il progetto è destinato il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, il **incorpora tipi di interoperabilità** per il riferimento all'assembly è impostata su **True** per impostazione predefinita. Usando questa impostazione, la soluzione non richiede l'assembly di interoperabilità primario (PIA) sui computer degli utenti finali. Per altre informazioni, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
     >  Nei progetti di Office, aggiungere sempre riferimenti agli assembly di interoperabilità primari Office utilizzando il **.NET** scheda della finestra di **Aggiungi riferimento** finestra di dialogo anziché il **COM** scheda. Per altre informazioni, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
      Viene visualizzato il nome di assembly di **riferimenti** cartella di **Esplora soluzioni**.
 

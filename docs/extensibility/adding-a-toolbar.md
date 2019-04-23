@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6426572ff346debba32029024a96c9cc5af52ff4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082295"
 ---
 # <a name="add-a-toolbar"></a>Aggiungere una barra degli strumenti
 Questa procedura dettagliata viene illustrato come aggiungere una barra degli strumenti all'IDE di Visual Studio.
@@ -35,7 +35,7 @@ Questa procedura dettagliata viene illustrato come aggiungere una barra degli st
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Creare una barra degli strumenti per l'IDE
 
-1.  Nelle *ToolbarTestCommandPackage.vsct*, cercare la sezione di simboli. Nell'elemento GuidSymbol denominato guidToolbarTestCommandPackageCmdSet, aggiungere le dichiarazioni per una barra degli strumenti e un gruppo della barra degli strumenti, come indicato di seguito.
+1. Nelle *ToolbarTestCommandPackage.vsct*, cercare la sezione di simboli. Nell'elemento GuidSymbol denominato guidToolbarTestCommandPackageCmdSet, aggiungere le dichiarazioni per una barra degli strumenti e un gruppo della barra degli strumenti, come indicato di seguito.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -43,7 +43,7 @@ Questa procedura dettagliata viene illustrato come aggiungere una barra degli st
 
     ```
 
-2.  Nella parte superiore della sezione di comandi, creare una sezione di menu. Aggiungere un elemento Menu con la sezione di menu per definire la barra degli strumenti.
+2. Nella parte superiore della sezione di comandi, creare una sezione di menu. Aggiungere un elemento Menu con la sezione di menu per definire la barra degli strumenti.
 
     ```xml
     <Menus>
@@ -60,7 +60,7 @@ Questa procedura dettagliata viene illustrato come aggiungere una barra degli st
 
      Le barre degli strumenti non possono essere annidati, come sottomenu. Pertanto, non è necessario assegnare un gruppo padre. Inoltre, non è necessario impostare la priorità, perché l'utente può spostare barre degli strumenti. In genere, la posizione iniziale di una barra degli strumenti è definita a livello di codice, ma le successive modifiche dall'utente vengono rese persistenti.
 
-3.  Nel [gruppi](../extensibility/groups-element.md) sezione, dopo la voce di gruppo esistente, definire una [gruppo](../extensibility/group-element.md) elemento per contenere i comandi per la barra degli strumenti.
+3. Nel [gruppi](../extensibility/groups-element.md) sezione, dopo la voce di gruppo esistente, definire una [gruppo](../extensibility/group-element.md) elemento per contenere i comandi per la barra degli strumenti.
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -69,7 +69,7 @@ Questa procedura dettagliata viene illustrato come aggiungere una barra degli st
     </Group>
     ```
 
-4.  Visualizzare il pulsante sulla barra degli strumenti. Nella sezione pulsanti, sostituire il blocco padre nel pulsante alla barra degli strumenti. Il blocco pulsante risultante dovrebbe essere simile al seguente:
+4. Visualizzare il pulsante sulla barra degli strumenti. Nella sezione pulsanti, sostituire il blocco padre nel pulsante alla barra degli strumenti. Il blocco pulsante risultante dovrebbe essere simile al seguente:
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,11 +83,11 @@ Questa procedura dettagliata viene illustrato come aggiungere una barra degli st
 
      Per impostazione predefinita, se una barra degli strumenti non dispone di alcun comando, non visualizzato.
 
-5.  Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.
+5. Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.
 
-6.  Fare clic sulla barra dei menu di Visual Studio per ottenere l'elenco delle barre degli strumenti. Selezionare **sulla barra degli strumenti di Test**.
+6. Fare clic sulla barra dei menu di Visual Studio per ottenere l'elenco delle barre degli strumenti. Selezionare **sulla barra degli strumenti di Test**.
 
-7.  Si noterà ora la barra degli strumenti ridotta a icona a destra della scheda Cerca nei icona dei file. Quando si fa clic sull'icona, si dovrebbe essere una finestra di messaggio con la dicitura **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Si noterà ora la barra degli strumenti ridotta a icona a destra della scheda Cerca nei icona dei file. Quando si fa clic sull'icona, si dovrebbe essere una finestra di messaggio con la dicitura **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Vedere anche
 - [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075376"
 ---
 # <a name="relationships-in-datasets"></a>Relazioni nei DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Per creare una relazione tra due tabelle dati  
   
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.  
+2. Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.  
   
      Il **relazione** verrà visualizzata la finestra di dialogo, popolamento il **tabella figlio** casella con la tabella che è stato trascinato il **relazione** dell'oggetto in.  
   
-3.  Selezionare la tabella padre di **tabella padre** casella. La tabella padre contiene record sul lato "uno" di una relazione uno-a-molti.  
+3. Selezionare la tabella padre di **tabella padre** casella. La tabella padre contiene record sul lato "uno" di una relazione uno-a-molti.  
   
-4.  Verificare che la tabella figlio corretto sia visualizzata nei **tabella figlio** casella. La tabella figlio contiene i record sul lato "molti" di una relazione uno-a-molti.  
+4. Verificare che la tabella figlio corretto sia visualizzata nei **tabella figlio** casella. La tabella figlio contiene i record sul lato "molti" di una relazione uno-a-molti.  
   
-5.  Digitare un nome per la relazione nel **nome** casella o lasciare il nome predefinito basato sulle tabelle selezionate. Si tratta del nome dell'effettivo <xref:System.Data.DataRelation> oggetto nel codice.  
+5. Digitare un nome per la relazione nel **nome** casella o lasciare il nome predefinito basato sulle tabelle selezionate. Si tratta del nome dell'effettivo <xref:System.Data.DataRelation> oggetto nel codice.  
   
-6.  Selezionare le colonne che uniscono in join le tabelle nel **colonne chiave** e **colonne di chiavi esterne** Elenca.  
+6. Selezionare le colonne che uniscono in join le tabelle nel **colonne chiave** e **colonne di chiavi esterne** Elenca.  
   
-7.  Scegliere se creare una relazione, vincolo o entrambi. Per informazioni, vedere [Introduzione agli oggetti DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Scegliere se creare una relazione, vincolo o entrambi. Per informazioni, vedere [Introduzione agli oggetti DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Selezionare o deselezionare i **relazione annidata** casella. Selezionando questa opzione imposta la <xref:System.Data.DataRelation.Nested%2A> proprietà `true`, e il figlio della relazione annidata all'interno della colonna padre quando le righe vengono scritte come dati XML o sincronizzate con righe <xref:System.Xml.XmlDataDocument>. Per altre informazioni, vedere [annidamento di oggetti DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Selezionare o deselezionare i **relazione annidata** casella. Selezionando questa opzione imposta la <xref:System.Data.DataRelation.Nested%2A> proprietà `true`, e il figlio della relazione annidata all'interno della colonna padre quando le righe vengono scritte come dati XML o sincronizzate con righe <xref:System.Xml.XmlDataDocument>. Per altre informazioni, vedere [annidamento di oggetti DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Impostare le regole da applicare quando si apportano modifiche ai record in queste tabelle. Per altre informazioni, vedere <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Per visualizzare un nome della relazione nella finestra di progettazione set di dati  
   
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.
+2. Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.

@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096134"
 ---
 # <a name="vsix-project-template"></a>Modello di progetto VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59001644"
 >  Per usare progetti VSIX, è necessario installare Visual Studio SDK. Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Dove trovare il modello di progetto VSIX  
- Il modello di progetto VSIX è disponibile nel **nuovo progetto** nella finestra di dialogo. Espandere la **Visual Basic** nodo o il **Visual C#** nodo e quindi scegliere **estendibilità**.  
+ Il modello di progetto VSIX è disponibile nel **nuovo progetto** nella finestra di dialogo. Espandere la **Visual Basic** nodo o il **Visual c#** nodo e quindi scegliere **estendibilità**.  
   
 > [!TIP]
 >  È necessario assicurarsi che .NET Framework 4.5 o versione successiva è specificato nell'elenco a discesa nella parte superiore del **nuovo progetto** nella finestra di dialogo.  
@@ -48,37 +48,37 @@ ms.locfileid: "59001644"
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Per creare un pacchetto di un'estensione usando un progetto VSIX  
   
-1.  Compilare i progetti che costituiscono l'estensione.  
+1. Compilare i progetti che costituiscono l'estensione.  
   
-2.  Creare un progetto VSIX usando il **progetto VSIX** modello.  
+2. Creare un progetto VSIX usando il **progetto VSIX** modello.  
   
      Consente di aprire vsixmanifest nel **progettazione manifesto**.  
   
-3.  Nel **asset** scheda, scegliere il **New** pulsante.  
+3. Nel **asset** scheda, scegliere il **New** pulsante.  
   
      Il **Aggiungi nuovo Asset** verrà visualizzata la finestra di dialogo.  
   
-4.  Nel **tipo** elenco, scegliere il tipo di estensione da aggiungere.  
+4. Nel **tipo** elenco, scegliere il tipo di estensione da aggiungere.  
   
-5.  Per aggiungere un elemento di estensione o contenuto che è incluso nella soluzione corrente (ad esempio, un modello di elemento o un assembly compilato), seguire i passaggi seguenti:  
+5. Per aggiungere un elemento di estensione o contenuto che è incluso nella soluzione corrente (ad esempio, un modello di elemento o un assembly compilato), seguire i passaggi seguenti:  
   
-    1.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
+    1. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
   
-    2.  Nel **progetto** scegliere il nome dell'estensione.  
+    2. Nel **progetto** scegliere il nome dell'estensione.  
   
-    3.  Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
+    3. Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
   
-6.  Per aggiungere un elemento di contenuto che non è incluso nella soluzione corrente o un'estensione, seguire i passaggi seguenti:  
+6. Per aggiungere un elemento di contenuto che non è incluso nella soluzione corrente o un'estensione, seguire i passaggi seguenti:  
   
-    1.  Nel **origine** elenco a discesa, scegliere **File in filesystem**.  
+    1. Nel **origine** elenco a discesa, scegliere **File in filesystem**.  
   
-    2.  Nel **percorso** campo, immettere il percorso completo al file di estensione compilato o compresso o utilizzare il **Sfoglia** pulsante per individuare il file.  
+    2. Nel **percorso** campo, immettere il percorso completo al file di estensione compilato o compresso o utilizzare il **Sfoglia** pulsante per individuare il file.  
   
-    3.  Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
+    3. Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
   
-7.  Se si desidera che il pacchetto a includere le estensioni aggiuntive, aggiungerle allo stesso modo.  
+7. Se si desidera che il pacchetto a includere le estensioni aggiuntive, aggiungerle allo stesso modo.  
   
-8.  Compilare la soluzione.  
+8. Compilare la soluzione.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Compila un file con estensione VSIX che contiene un file manifesto VSIX, un file [Content_Types] XML e tutte le risorse di estensione che è stato aggiunto al progetto.  
   

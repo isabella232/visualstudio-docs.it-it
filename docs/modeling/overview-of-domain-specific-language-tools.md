@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078239"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Domain-Specific Language Tools (strumenti DSL), che sono ospitati in Visual Studio, consentono di progettare un linguaggio specifico di dominio e quindi generare tutte le operazioni che gli utenti devono disporre per creare modelli basati sulla lingua.
 
  In Strumenti DSL sono inclusi gli strumenti seguenti:
 
--   Una procedura guidata di creazione di progetti che usa modelli di soluzioni diverse per facilitare l'avvio dello sviluppo di un linguaggio specifico di dominio.
+- Una procedura guidata di creazione di progetti che usa modelli di soluzioni diverse per facilitare l'avvio dello sviluppo di un linguaggio specifico di dominio.
 
--   Una finestra di progettazione con interfaccia grafica per la creazione e la modifica della definizione del linguaggio specifico di dominio.
+- Una finestra di progettazione con interfaccia grafica per la creazione e la modifica della definizione del linguaggio specifico di dominio.
 
--   Un motore di convalida che assicura che la definizione del linguaggio specifico di dominio sia ben formata e visualizza errori e avvisi in caso di problemi.
+- Un motore di convalida che assicura che la definizione del linguaggio specifico di dominio sia ben formata e visualizza errori e avvisi in caso di problemi.
 
--   Un generatore di codice che riceve la definizione di un linguaggio specifico di dominio come input e produce codice sorgente come output.
+- Un generatore di codice che riceve la definizione di un linguaggio specifico di dominio come input e produce codice sorgente come output.
 
 ## <a name="the-dsl-tools-solution"></a>Soluzione Strumenti DSL
  La Creazione guidata Finestra di progettazione Domain-Specific Language offre i modelli di soluzione seguenti:

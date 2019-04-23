@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082386"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
 ## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
  È possibile trovare il percorso di esecuzione dell'albero delle chiamate che ha creato la maggior parte degli oggetti del tipo padre.  
   
--   Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul tipo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
+- Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul tipo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Name**|Nome della funzione o del tipo allocato.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  

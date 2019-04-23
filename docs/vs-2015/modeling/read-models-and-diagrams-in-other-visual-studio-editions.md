@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073527"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
   
  Per leggere un diagramma UML o un diagramma livello, è necessario almeno il set di file seguente:  
   
--   I due file diagramma per il diagramma da leggere, ad esempio, **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.  
+- I due file diagramma per il diagramma da leggere, ad esempio, **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Per i diagrammi livello, è necessario anche il file denominato _MyDiagram_**. MyDiagram**.  
   
--   File di progetto di modellazione (**MyModel. modelproj**)  
+- File di progetto di modellazione (**MyModel. modelproj**)  
   
--   Il file del modello radice (**ModelDefinition\MyModel.uml**)  
+- Il file del modello radice (**ModelDefinition\MyModel.uml**)  
   
--   I file del pacchetto per i pacchetti di cui viene fatto riferimento nel diagramma (**ModelDefinition\MyPackage.uml**)  
+- I file del pacchetto per i pacchetti di cui viene fatto riferimento nel diagramma (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifiche eseguibili in modalità di sola lettura  
  Se si apre un modello e i relativi diagrammi in una versione di Visual Studio che non supporta la creazione di modelli, non sarà possibile modificare il modello. Non è possibile modificare gli elementi e le relazioni visualizzate nei diagrammi o in Esplora modelli. Tuttavia, è possibile apportare alcune modifiche al layout dei diagrammi:  
@@ -55,7 +55,7 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
   
   Queste modifiche possono essere salvate. Se si desidera rendere visibili ad altri utenti le modifiche, è necessario inviare almeno aggiornato **layout** file.  
   
-##  <a name="RelatedTopics"></a> Argomenti correlati  
+## <a name="RelatedTopics"></a> Argomenti correlati  
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  

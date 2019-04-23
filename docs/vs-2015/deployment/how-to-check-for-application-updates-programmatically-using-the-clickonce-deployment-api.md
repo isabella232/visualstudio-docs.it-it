@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074349"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: Verificare la presenza di aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione
   
 ### <a name="to-check-for-updates-programmatically"></a>Per cercare gli aggiornamenti a livello di codice  
   
-1.  Creare una nuova applicazione Windows Forms utilizzando gli strumenti Preferiti della riga di comando o nell'oggetto visivo.  
+1. Creare una nuova applicazione Windows Forms utilizzando gli strumenti Preferiti della riga di comando o nell'oggetto visivo.  
   
-2.  Creare pulsanti, voce di menu o altro elemento dell'interfaccia utente si vuole che gli utenti per selezionare questa opzione per verificare la presenza di aggiornamenti. Dal gestore eventi dell'elemento, chiamare il metodo seguente per cercare e installare gli aggiornamenti.  
+2. Creare pulsanti, voce di menu o altro elemento dell'interfaccia utente si vuole che gli utenti per selezionare questa opzione per verificare la presenza di aggiornamenti. Dal gestore eventi dell'elemento, chiamare il metodo seguente per cercare e installare gli aggiornamenti.  
   
      [!code-cpp[ClickOnceAPI#6](../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
      [!code-csharp[ClickOnceAPI#6](../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
      [!code-vb[ClickOnceAPI#6](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
   
-3.  Compilare l'applicazione.  
+3. Compilare l'applicazione.  
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Uso di Mage.exe per distribuire un'applicazione che verifica la presenza di aggiornamenti a livello di codice  
   
--   Seguire le istruzioni per la distribuzione dell'applicazione mediante Mage.exe come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Quando si chiama Mage.exe per generare il manifesto di distribuzione, assicurarsi di usare l'opzione della riga di comando `providerUrl`e per specificare l'URL in cui deve essere controllato per gli aggiornamenti. Se l'applicazione verrà aggiornata dalla [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), ad esempio, la chiamata per generare il manifesto della distribuzione sarà simile al seguente:  
+- Seguire le istruzioni per la distribuzione dell'applicazione mediante Mage.exe come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Quando si chiama Mage.exe per generare il manifesto di distribuzione, assicurarsi di usare l'opzione della riga di comando `providerUrl`e per specificare l'URL in cui deve essere controllato per gli aggiornamenti. Se l'applicazione verrà aggiornata dalla [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), ad esempio, la chiamata per generare il manifesto della distribuzione sarà simile al seguente:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -57,7 +57,7 @@ ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Uso di MageUI.exe per distribuire un'applicazione che verifica la presenza di aggiornamenti a livello di codice  
   
--   Seguire le istruzioni per la distribuzione dell'applicazione mediante Mage.exe come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Nel **opzioni di distribuzione** scheda, impostare il **percorso iniziale** campo al manifesto dell'applicazione ClickOnce deve cercare gli aggiornamenti. Nel **opzioni di aggiornamento** scheda, deseleziona le **l'applicazione deve controllare disponibilità di aggiornamenti** casella di controllo.  
+- Seguire le istruzioni per la distribuzione dell'applicazione mediante Mage.exe come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Nel **opzioni di distribuzione** scheda, impostare il **percorso iniziale** campo al manifesto dell'applicazione ClickOnce deve cercare gli aggiornamenti. Nel **opzioni di aggiornamento** scheda, deseleziona le **l'applicazione deve controllare disponibilità di aggiornamenti** casella di controllo.  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
  L'applicazione deve disporre delle autorizzazioni di attendibilità per utilizzare l'aggiornamento a livello di codice.  

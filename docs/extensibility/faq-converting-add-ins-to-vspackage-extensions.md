@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077420"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage
 I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Di seguito sono riportate le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio per un'estensione VSIX.
@@ -37,7 +37,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>È possibile convertire il progetto di componente aggiuntivo in un progetto VSIX?
  Un progetto di componente aggiuntivo non è possibile convertire direttamente a un progetto VSIX perché i meccanismi usati nei progetti VSIX non sono uguali a quelli nei progetti di componente aggiuntivo. Il modello di progetto VSIX, oltre a modelli di elemento di progetto corretto hanno una grande quantità di codice che rende relativamente semplice iniziare subito e in esecuzione come un'estensione VSIX.
 
-##  <a name="BKMK_StartDeveloping"></a> Come si inizia a sviluppare estensioni VSIX?
+## <a name="BKMK_StartDeveloping"></a> Come si inizia a sviluppare estensioni VSIX?
  Ecco come creare un'estensione VSIX con un comando di menu:
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Per rendere un'estensione VSIX con un comando di menu
@@ -52,7 +52,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
 
    Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?
+## <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?
 
 Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:
 
@@ -158,24 +158,24 @@ Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Per inserire il codice di gestione delle finestre da un componente aggiuntivo in un VSPackage
 
-1.  Creare un VSPackage contenente un comando di menu, come nel [come si inizia a sviluppare estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.
+1. Creare un VSPackage contenente un comando di menu, come nel [come si inizia a sviluppare estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.
 
-2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<il nome del progetto > Package.cs*.)
+2. Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<il nome del progetto > Package.cs*.)
 
-3.  Aggiungere queste istruzioni `using`:
+3. Aggiungere queste istruzioni `using`:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Trovare il metodo `MenuItemCallback`. Aggiungere una chiamata a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> per recuperare l'oggetto <xref:EnvDTE80.DTE2>:
+4. Trovare il metodo `MenuItemCallback`. Aggiungere una chiamata a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> per recuperare l'oggetto <xref:EnvDTE80.DTE2>:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Aggiungere il codice dal componente aggiuntivo. Ad esempio, ecco un codice che aggiunge nuove attività per il **elenco attività**Elenca il numero di attività e quindi eliminare un'attività.
+5. Aggiungere il codice dal componente aggiuntivo. Ad esempio, ecco un codice che aggiunge nuove attività per il **elenco attività**Elenca il numero di attività e quindi eliminare un'attività.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Come è possibile gestire progetti e soluzioni in un VSPackage?
  Se il componente aggiuntivo gestisce progetti e soluzioni, il codice del componente aggiuntivo dovrebbe funzionare in un VSPackage. Questa procedura spiega come aggiungere il codice che ottiene il progetto di avvio.
 
-1.  Creare un VSPackage contenente un comando di menu, come nel [come si inizia a sviluppare estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.
+1. Creare un VSPackage contenente un comando di menu, come nel [come si inizia a sviluppare estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.
 
-2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<il nome del progetto > Package.cs*.)
+2. Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<il nome del progetto > Package.cs*.)
 
-3.  Aggiungere queste istruzioni `using`:
+3. Aggiungere queste istruzioni `using`:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Trovare il metodo `MenuItemCallback`. Aggiungere una chiamata a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> per recuperare l'oggetto <xref:EnvDTE80.DTE2>:
+4. Trovare il metodo `MenuItemCallback`. Aggiungere una chiamata a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> per recuperare l'oggetto <xref:EnvDTE80.DTE2>:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Aggiungere il codice dal componente aggiuntivo. Nel codice seguente viene recuperato il nome del progetto di avvio in una soluzione. Durante l'esecuzione di questo pacchetto, deve essere aperta una soluzione multiprogetto.
+5. Aggiungere il codice dal componente aggiuntivo. Nel codice seguente viene recuperato il nome del progetto di avvio in una soluzione. Durante l'esecuzione di questo pacchetto, deve essere aperta una soluzione multiprogetto.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

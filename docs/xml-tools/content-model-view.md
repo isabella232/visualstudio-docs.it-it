@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074818"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 
@@ -97,13 +97,13 @@ I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilit
 
 La funzionalità di annullamento/ripristino è abilitata nella visualizzazione modello di contenuto per le seguenti azioni:
 
--   Aggiunta di un singolo nodo tramite trascinamento.
+- Aggiunta di un singolo nodo con trascinamento della selezione.
 
--   Aggiunta di più nodi dalla finestra dei risultati della ricerca in Schema Explorer.
+- Aggiunta di più nodi dalla finestra dei risultati della ricerca in Schema Explorer.
 
--   Aggiunta di nodi dalla visualizzazione iniziale.
+- Aggiunta di nodi dalla visualizzazione iniziale.
 
--   Eliminazione di uno o più nodi.
+- Eliminazione di uno o più nodi.
 
 ## <a name="zoom"></a>Zoom
 
@@ -111,9 +111,9 @@ Lo zoom è disponibile nell'angolo inferiore destro della visualizzazione modell
 
 È possibile controllare lo zoom nei seguenti modi:
 
--   Tenendo il **Ctrl** chiave e il puntatore del mouse in rotazione rotellina quando il mouse è posizionato sull'area di visualizzazione modello di contenuto.
+- Tenendo il **Ctrl** chiave e il puntatore del mouse in rotazione rotellina quando il mouse è posizionato sull'area di visualizzazione modello di contenuto.
 
--   Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
+- Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
 
 Il dispositivo di scorrimento dello Zoom è opaco quando lo selezionarlo, passare il mouse su di essa o usare **Ctrl** con la rotellina del mouse per ingrandire; tutte le altre volte, è trasparente.
 

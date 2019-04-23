@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113040"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Procedura: Cercare una finestra nella visualizzazione finestre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,16 +27,16 @@ ms.locfileid: "58969461"
   
 ### <a name="to-search-for-a-window-in-windows-view"></a>Per cercare una finestra nella visualizzazione di Windows  
   
-1.  Disporre le finestre in modo tale Spy + +, il [Windows Vista](../debugger/windows-view.md) finestra e finestra di destinazione sono visibili.  
+1. Disporre le finestre in modo tale Spy + +, il [Windows Vista](../debugger/windows-view.md) finestra e finestra di destinazione sono visibili.  
   
-2.  Dal **ricerca** menu, scegliere **Trova finestra**.  
+2. Dal **ricerca** menu, scegliere **Trova finestra**.  
   
      Il [finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) apre.  
   
     > [!TIP]
     >  Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e rimane solo il **ricerca finestre** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
   
-3.  Trascinare il **strumento di ricerca** nell'intervallo di destinazione. Quando si trascina lo strumento, il **ricerca finestre** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
+3. Trascinare il **strumento di ricerca** nell'intervallo di destinazione. Quando si trascina lo strumento, il **ricerca finestre** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
   
      - oppure -  
   
@@ -46,8 +46,8 @@ ms.locfileid: "58969461"
   
      Se si conosce il sottotitolo e/o classe della finestra di cui si desidera, è possibile digitarli nel **didascalia** e **classe** caselle di testo e deselezionare il **gestire** casella di testo.  
   
-4.  Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.  
+4. Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
      Se la finestra corrispondente viene trovata, viene evidenziato nel [Windows Vista](../debugger/windows-view.md) finestra.

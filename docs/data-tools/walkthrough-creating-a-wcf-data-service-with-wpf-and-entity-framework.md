@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework"
+title: 'Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081385"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
 Questa procedura dettagliata illustra come creare un semplice servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] incluso in un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e come accedervi da un'applicazione Windows Forms.
 
 In questa procedura dettagliata è:
@@ -90,11 +90,11 @@ Nel passaggio successivo, si crea un' [!INCLUDE[adonet_edm](../data-tools/includ
 
 5. Nella pagina **Seleziona connessione dati** , eseguire una delle operazioni seguenti:
 
-    -   Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.
+    - Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.
 
-         oppure
+         -oppure-
 
-    -   Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
+    - Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
 
 6. Se il database richiede una password, scegliere il pulsante di opzione **Sì, includi i dati sensibili nella stringa di connessione**, quindi scegliere **Avanti**.
 
@@ -154,7 +154,7 @@ Nei passaggi successivi, si crea un'applicazione client di Windows Form usare il
 
 1. Nella barra dei menu scegliere File, **Add** > **nuovo progetto**.
 
-2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual Basic** o **Visual C#**  nodo, scegliere il **Windows** nodo e quindi scegliere **Windows Forms Application**.
+2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual Basic** o **Visual c#** nodo, scegliere il **Windows** nodo e quindi scegliere  **Windows Forms Application**.
 
 3. Nella casella di testo **Nome** immettere `NorthwindClient` e quindi scegliere il pulsante **OK**.
 
@@ -289,4 +289,4 @@ Il prossimo passaggio facoltativo, descrive come filtrare i dati restituiti dal 
 ## <a name="see-also"></a>Vedere anche
 
 - [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080579"
 ---
 # <a name="messages-view"></a>Visualizzazione messaggi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Visualizzazione messaggi di Spy++
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Per aprire una visualizzazione di messaggi per una finestra, processo o thread  
   
-1.  Spostare lo stato attivo a un [Windows Vista](../debugger/windows-view.md), [visualizzazione processi](../debugger/processes-view.md), o [visualizzazione thread](../debugger/threads-view.md) finestra.  
+1. Spostare lo stato attivo a un [Windows Vista](../debugger/windows-view.md), [visualizzazione processi](../debugger/processes-view.md), o [visualizzazione thread](../debugger/threads-view.md) finestra.  
   
-2.  Trovare il nodo per l'elemento di cui si desidera esaminare i messaggi e selezionarlo.  
+2. Trovare il nodo per l'elemento di cui si desidera esaminare i messaggi e selezionarlo.  
   
-3.  Dal **Spy** menu, scegliere **i messaggi di Log**.  
+3. Dal **Spy** menu, scegliere **i messaggi di Log**.  
   
      Il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) apre.  
   
-4.  Selezionare le opzioni per il messaggio da visualizzare.  
+4. Selezionare le opzioni per il messaggio da visualizzare.  
   
-5.  Premere **OK** per avviare la registrazione messaggi.  
+5. Premere **OK** per avviare la registrazione messaggi.  
   
      Un viene visualizzata la finestra di visualizzazione dei messaggi e un **messaggi** menu viene aggiunto alla barra degli strumenti di Spy + +. A seconda delle opzioni selezionate, i messaggi di avviare lo streaming nella finestra di visualizzazione di messaggi attiva.  
   
-6.  Quando si dispone di messaggi sufficiente, scegliere **Arresta registrazione** dalle **messaggi** menu.  
+6. Quando si dispone di messaggi sufficiente, scegliere **Arresta registrazione** dalle **messaggi** menu.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Controllo della visualizzazione messaggi](../debugger/how-to-control-messages-view.md)  

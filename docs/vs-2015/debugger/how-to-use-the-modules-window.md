@@ -27,12 +27,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078291"
 ---
 # <a name="how-to-use-the-modules-window"></a>Procedura: Utilizzare la finestra moduli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ NOTA]
   
 ### <a name="to-display-the-modules-window-in-break-mode-or-in-run-mode"></a>Per visualizzare la finestra Moduli in modalità di interruzione o di esecuzione  
   
--   Nel **Debug** menu, scegliere **Windows**e quindi fare clic su **moduli**.  
+- Nel **Debug** menu, scegliere **Windows**e quindi fare clic su **moduli**.  
   
      Per impostazione predefinita, nella finestra **Moduli** i moduli sono ordinati in base all'ordine di caricamento. È tuttavia possibile ordinare i moduli in base a qualsiasi colonna.  
   
 ### <a name="to-sort-by-any-column"></a>Per eseguire l'ordinamento in base a una colonna  
   
--   Fare clic sul pulsante nella parte superiore della colonna.  
+- Fare clic sul pulsante nella parte superiore della colonna.  
   
      È possibile caricare i simboli o specificare un percorso simboli dal **moduli** finestra usando il menu di scelta rapida.  
   
@@ -59,23 +59,23 @@ NOTA]
   
 #### <a name="to-load-symbols-manually"></a>Per caricare i simboli manualmente  
   
-1.  Nel **moduli** finestra, pulsante destro del mouse un modulo per il quale non sono stati caricati i simboli.  
+1. Nel **moduli** finestra, pulsante destro del mouse un modulo per il quale non sono stati caricati i simboli.  
   
-2.  Puntare **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
+2. Puntare **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
   
 #### <a name="to-change-symbol-load-settings"></a>Per modificare le impostazioni di caricamento dei simboli  
   
-1.  Nella finestra **Moduli** fare clic con il pulsante destro del mouse su un modulo.  
+1. Nella finestra **Moduli** fare clic con il pulsante destro del mouse su un modulo.  
   
-2.  Fare clic su **delle impostazioni dei simboli**.  
+2. Fare clic su **delle impostazioni dei simboli**.  
   
      È ora possibile modificare le impostazioni di caricamento di simboli, come descritto in [specificare i percorsi dei simboli e il comportamento di caricamento](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Riavviare la sessione di debug per rendere effettive le modifiche.  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Per modificare il comportamento di caricamento dei simboli per un modulo specifico  
   
-1.  Nella finestra **Moduli** fare clic con il pulsante destro del mouse sul modulo.  
+1. Nella finestra **Moduli** fare clic con il pulsante destro del mouse sul modulo.  
   
-2.  Puntare **impostazioni caricamento automatico simboli** e quindi fare clic su **Carica sempre manualmente** oppure **predefinito**. Riavviare la sessione di debug per rendere effettive le modifiche.  
+2. Puntare **impostazioni caricamento automatico simboli** e quindi fare clic su **Carica sempre manualmente** oppure **predefinito**. Riavviare la sessione di debug per rendere effettive le modifiche.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interruzione dell'esecuzione](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   

@@ -17,37 +17,37 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073969"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Sviluppo di applicazioni con Progettazione flussi di lavoro
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] nella versione [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../includes/indigo1-md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../includes/crabout-md.md)] flussi di lavoro, vedere la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Di seguito sono indicate diverse nuove funzionalità di progettazione che fanno la distinzione tra questa nuova versione di [!INCLUDE[wfd2](../includes/wfd2-md.md)] e le versioni precedenti di [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] è basato su [!INCLUDE[avalon1](../includes/avalon1-md.md)]. Questo aspetto migliora l'esperienza con gli ActivityDesigner e le prestazioni nei casi di flussi di lavoro complessi e di grandi dimensioni.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] è basato su [!INCLUDE[avalon1](../includes/avalon1-md.md)]. Questo aspetto migliora l'esperienza con gli ActivityDesigner e le prestazioni nei casi di flussi di lavoro complessi e di grandi dimensioni.  
   
--   Le attività personalizzate sono ora progettate con [!INCLUDE[avalon2](../includes/avalon2-md.md)]. L'utilizzo del modello di programmazione e di XAML per la creazione di ActivityDesigner è stato semplificato.  
+- Le attività personalizzate sono ora progettate con [!INCLUDE[avalon2](../includes/avalon2-md.md)]. L'utilizzo del modello di programmazione e di XAML per la creazione di ActivityDesigner è stato semplificato.  
   
--   È stata implementata un'attività Flowchart, in modo da visualizzare il flusso di programma usando lo stile comune di modellazione del diagramma di flusso.  
+- È stata implementata un'attività Flowchart, in modo da visualizzare il flusso di programma usando lo stile comune di modellazione del diagramma di flusso.  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] presenta una nuova finestra di progettazione variabili che consente di dichiarare e assegnare un ambito alle variabili nei flussi di lavoro, associandole alle attività.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] presenta una nuova finestra di progettazione variabili che consente di dichiarare e assegnare un ambito alle variabili nei flussi di lavoro, associandole alle attività.  
   
--   In [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] fornisce funzionalità IntelliSense complete quando vengono create espressioni di Visual Basic nei flussi di lavoro di [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].  
+- In [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] fornisce funzionalità IntelliSense complete quando vengono create espressioni di Visual Basic nei flussi di lavoro di [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].  
   
--   L'esperienza di debug si estende ora a XAML, per consentire l'impostazione dei punti di interruzione nella definizione del flusso di lavoro XAML e di eseguire istruzioni nel codice XAML in fase di esecuzione, diventando in questo modo simile all'esperienza del codice gestito.  
+- L'esperienza di debug si estende ora a XAML, per consentire l'impostazione dei punti di interruzione nella definizione del flusso di lavoro XAML e di eseguire istruzioni nel codice XAML in fase di esecuzione, diventando in questo modo simile all'esperienza del codice gestito.  
   
--   La riallocazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)] esternamente a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene semplificata in modo significativo rispetto alle versioni precedenti dal momento che ora è sufficiente specificare solo alcune righe di codice.  
+- La riallocazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)] esternamente a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene semplificata in modo significativo rispetto alle versioni precedenti dal momento che ora è sufficiente specificare solo alcune righe di codice.  
   
--   Il nuovo <xref:System.Activities.Statements.Flowchart> attività e la relativa [Flowchart](../workflow-designer/flowchart-activity-designer.md) consentono di visualizzare il flusso di programma utilizzando il diagramma di flusso stile di modellazione.  
+- Il nuovo <xref:System.Activities.Statements.Flowchart> attività e la relativa [Flowchart](../workflow-designer/flowchart-activity-designer.md) consentono di visualizzare il flusso di programma utilizzando il diagramma di flusso stile di modellazione.  
   
--   Le attività di messaggistica sono state migliorate per consentire la scrittura di servizi [!INCLUDE[indigo1](../includes/indigo1-md.md)] completamente dichiarativi (senza codice).  
+- Le attività di messaggistica sono state migliorate per consentire la scrittura di servizi [!INCLUDE[indigo1](../includes/indigo1-md.md)] completamente dichiarativi (senza codice).  
   
--   Il **Aggiungi riferimento al servizio...** la funzionalità consente di generare automaticamente le attività che accedere ai servizi Web.  
+- Il **Aggiungi riferimento al servizio...** la funzionalità consente di generare automaticamente le attività che accedere ai servizi Web.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Uso di Progettazione flussi di lavoro](../workflow-designer/using-the-workflow-designer.md)  

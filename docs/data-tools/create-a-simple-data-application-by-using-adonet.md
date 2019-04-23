@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095685"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
-Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di un'applicazione semplice Windows Form "Form over data" utilizzando l'oggetto visivo C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.
+Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile individuare come interagire con un database dall'interno di una semplice applicazione "Form over data" di Windows Forms con Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi DataSet, LINQ to SQL ed Entity Framework, in definitiva, eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.
 
 Questo articolo illustra un modo semplice per ottenere dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplice e aggiornare il database, è consigliabile mediante Entity Framework e l'uso di data binding per la sincronizzazione automatica controlli dell'interfaccia utente per le modifiche nei dati sottostanti.
 
@@ -31,11 +31,11 @@ Questo articolo illustra un modo semplice per ottenere dati da un database in mo
 
 Per creare l'applicazione, è necessario disporre di:
 
--   Visual Studio.
+- Visual Studio.
 
--   LocalDB di SQL Server Express. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- LocalDB di SQL Server Express. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Forms, aggiungere form al progetto, inserire i pulsanti e altri controlli nei form, impostare le proprietà dei controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual C# e Visual Basic](../ide/quickstart-visual-basic-console.md) argomento prima di iniziare questa procedura dettagliata.
+Questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Forms, aggiungere form al progetto, inserire i pulsanti e altri controlli nei form, impostare le proprietà dei controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual c# e Visual Basic](../ide/quickstart-visual-basic-console.md) argomento prima di iniziare questa procedura dettagliata.
 
 ## <a name="set-up-the-sample-database"></a>Impostare il database di esempio
 
@@ -59,7 +59,7 @@ Creare il database di esempio seguendo questa procedura:
 
 7. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
 
-     Dopo un breve periodo di tempo, termina l'esecuzione di query e vengono creati gli oggetti di database. Il database contiene due tabelle: clienti e ordini. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere i dati quando si esegue l'applicazione che verrà creata. Il database contiene inoltre quattro stored procedure semplici.
+     Dopo un breve periodo di tempo, termina l'esecuzione di query e vengono creati gli oggetti di database. Il database contiene due tabelle: Clienti e ordini. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere i dati quando si esegue l'applicazione che verrà creata. Il database contiene inoltre quattro stored procedure semplici.
 
 ## <a name="create-the-forms-and-add-controls"></a>Creare i form e aggiungere i controlli
 
@@ -69,11 +69,11 @@ Creare il database di esempio seguendo questa procedura:
 
 2. Aggiungere due form Windows al progetto in modo da disporre di tre form e assegnare i nomi seguenti:
 
-   -   **Navigazione**
+   - **Navigazione**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.
 
@@ -124,21 +124,21 @@ Creare il database di esempio seguendo questa procedura:
 
  È possibile trovare la stringa di connessione facendo clic sui **vendite** connessione dati in **Esplora Server** e scegliendo **proprietà**. Individuare il **ConnectionString** proprietà, quindi usare **Ctrl**+**oggetto**, **Ctrl**+**C**  per selezionare e copiare la stringa negli Appunti.
 
-1.  Se si usa C#, in **Esplora soluzioni**, espandere il **proprietà** nodo sotto il progetto e quindi aprire il **innanzi** file.
+1. Se si usa c#, in **Esplora soluzioni**, espandere il **delle proprietà** nodo sotto il progetto e quindi aprire il **innanzi** file.
     Se si usa Visual Basic, in **Esplora soluzioni**, fare clic su **Mostra tutti i file**, espandere il **My Project** nodo e quindi aprire il **innanzi** file.
 
-2.  Nel **Name** colonna, immettere `connString`.
+2. Nel **Name** colonna, immettere `connString`.
 
-3.  Nel **tipo** elenco, selezionare **(stringa di connessione)**.
+3. Nel **tipo** elenco, selezionare **(stringa di connessione)**.
 
-4.  Nel **ambito** elenco, selezionare **applicazione**.
+4. Nel **ambito** elenco, selezionare **applicazione**.
 
-5.  Nel **valore** colonna, immettere la stringa di connessione (senza alcuna all'esterno delle virgolette) e quindi salvare le modifiche.
+5. Nel **valore** colonna, immettere la stringa di connessione (senza alcuna all'esterno delle virgolette) e quindi salvare le modifiche.
 
 > [!NOTE]
 > In un'applicazione reale, è consigliabile archiviare la stringa di connessione in modo sicuro, come descritto in [stringhe di connessione e i file di configurazione](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
-##  <a name="write-the-code-for-the-forms"></a>Scrivere il codice per i form
+## <a name="write-the-code-for-the-forms"></a>Scrivere il codice per i form
 
 Questa sezione include brevi descrizioni generali delle operazioni eseguite da ogni modulo. Fornisce inoltre il codice che definisce la logica sottostante, quando viene selezionato un pulsante nel form.
 
@@ -180,6 +180,7 @@ Per completare la logica di form NewCustomer, seguire questa procedura.
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ Per completare la logica di form FillOrCancel, seguire questa procedura.
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

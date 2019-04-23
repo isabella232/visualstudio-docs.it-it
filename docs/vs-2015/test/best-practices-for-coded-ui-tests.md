@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081255"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedure consigliate per i test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Questo argomento descrive le procedure consigliate da seguire quando si sviluppa
   
  **Requisiti**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>Suggerimenti  
  Usare le linee guida seguenti per creare un test codificato dell'interfaccia utente flessibile.  
@@ -64,11 +64,11 @@ Questo argomento descrive le procedure consigliate da seguire quando si sviluppa
   
 - Se un controllo dispone di un'asserzione che non è più valida:  
   
-  -   Eliminare il metodo che contiene l'asserzione.  
+  - Eliminare il metodo che contiene l'asserzione.  
   
-  -   Rimuovere la chiamata a questo metodo dal metodo di test.  
+  - Rimuovere la chiamata a questo metodo dal metodo di test.  
   
-  -   Aggiungere una nuova asserzione trascinando il pulsante del selettore di precisione sul controllo dell'interfaccia utente, aprire la mappa dell'interfaccia utente e aggiungere la nuova asserzione.  
+  - Aggiungere una nuova asserzione trascinando il pulsante del selettore di precisione sul controllo dell'interfaccia utente, aprire la mappa dell'interfaccia utente e aggiungere la nuova asserzione.  
   
   Per altre informazioni su come registrare i test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).  
   

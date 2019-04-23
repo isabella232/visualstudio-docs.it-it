@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103641"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
   La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede personalizzate, gruppi e controlli alla barra multifunzione di un'applicazione Microsoft Office.
@@ -40,11 +40,11 @@ ms.locfileid: "54867260"
 
  Per aprire la finestra di progettazione della barra multifunzione, aggiungere un **sulla barra multifunzione (finestra di progettazione visiva)** elemento al progetto. È quindi possibile usare gli strumenti di progettazione per le attività seguenti:
 
--   [Progettare il layout della barra multifunzione](#DesigningRibbonLayout)
+- [Progettare il layout della barra multifunzione](#DesigningRibbonLayout)
 
--   [Gestire gli eventi e impostare le proprietà del controllo](#HandleEventsSetProperties)
+- [Gestire gli eventi e impostare le proprietà del controllo](#HandleEventsSetProperties)
 
--   [Aggiungere controlli alla visualizzazione Backstage](#CustomizingMicrosoftOfficeButton)
+- [Aggiungere controlli alla visualizzazione Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  Esistono alcune attività che è possibile eseguire utilizzando la finestra di progettazione della barra multifunzione. Per altre informazioni su queste attività e come è possibile eseguire queste attività, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
@@ -64,7 +64,7 @@ ms.locfileid: "54867260"
 
   Se si dispone già di un **sulla barra multifunzione (finestra di progettazione visiva)** elemento da un altro progetto, è possibile riutilizzarlo nel progetto corrente usando la **Aggiungi elemento esistente** nella finestra di dialogo.
 
-##  <a name="DesigningRibbonLayout"></a> Progettare una barra multifunzione
+## <a name="DesigningRibbonLayout"></a> Progettare una barra multifunzione
  Esistono tre modi per aprire la finestra di progettazione della barra multifunzione:
 
 - Nelle **Esplora soluzioni**, fare doppio clic sul file di codice della barra multifunzione.
@@ -98,7 +98,7 @@ ms.locfileid: "54867260"
 
    È possibile trascinare i controlli da una scheda a altra nella barra multifunzione. Se si desidera spostare un controllo a un'altra scheda, è necessario usare il **Taglia** comando per rimuovere il controllo da una scheda e quindi incollare il controllo in un'altra scheda. Se si taglia il controllo e incollare il codice, il gestore eventi smette di funzionare. È possibile riconnettersi al gestore eventi di **proprietà** finestra. Per altre informazioni, vedere [finestra proprietà](../ide/reference/properties-window.md).
 
-###  <a name="AddTabToRibbon"></a> Aggiungere schede personalizzate alla barra multifunzione
+### <a name="AddTabToRibbon"></a> Aggiungere schede personalizzate alla barra multifunzione
  Esistono tre modi per aggiungere una scheda personalizzata alla barra multifunzione:
 
 - Aggiungere una scheda dal **casella degli strumenti**.
@@ -114,11 +114,11 @@ ms.locfileid: "54867260"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>Rimuovere le schede personalizzate dalla barra multifunzione
  Esistono tre modi per rimuovere una scheda personalizzata dalla barra multifunzione:
 
--   Pulsante destro del mouse nella finestra di progettazione e quindi fare clic su **Rimuovi scheda della barra multifunzione**.
+- Pulsante destro del mouse nella finestra di progettazione e quindi fare clic su **Rimuovi scheda della barra multifunzione**.
 
--   Nel **comandi** riquadro della **delle proprietà** finestra, fare clic su **Rimuovi scheda della barra multifunzione**.
+- Nel **comandi** riquadro della **delle proprietà** finestra, fare clic su **Rimuovi scheda della barra multifunzione**.
 
--   Aprire il **Editor della raccolta Tab**, selezionare la scheda e quindi fare clic su **rimuovere**.
+- Aprire il **Editor della raccolta Tab**, selezionare la scheda e quindi fare clic su **rimuovere**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Modificare la posizione di una scheda della barra multifunzione
  È possibile modificare l'ordine delle schede personalizzate in una barra multifunzione. È anche possibile posizionare le schede personalizzate prima o dopo una scheda incorporata nella barra multifunzione. Per altre informazioni, vedere [Procedura: Modificare la posizione di una scheda della barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
@@ -132,10 +132,10 @@ ms.locfileid: "54867260"
 
  Per informazioni dettagliate su come personalizzare una scheda incorporata, vedere [come: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md).
 
-###  <a name="AddGroupsToTab"></a> Aggiungere gruppi in una scheda
+### <a name="AddGroupsToTab"></a> Aggiungere gruppi in una scheda
  I gruppi organizzano in modo logico i controlli della barra multifunzione. Aggiungere gruppi a schede. Aggiungere tutti gli altri controlli al gruppo.
 
-###  <a name="AddControlsToGroups"></a> Aggiungere controlli ai gruppi
+### <a name="AddControlsToGroups"></a> Aggiungere controlli ai gruppi
  Aggiungere uno o più controlli a un gruppo. La tabella seguente descrive ogni controllo.
 
 |Control|Descrizione|
@@ -154,7 +154,7 @@ ms.locfileid: "54867260"
 |**SplitButton**|Pulsante associato un menu. Un pulsante di menu combinato può contenere i controlli seguenti:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-   Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Analogamente al menu, pulsante di menu combinato ha la propria area di progettazione. Tuttavia, a differenza di un menu, è possibile aggiornare solo gli elementi in un pulsante di menu combinato prima del caricamento della barra multifunzione nell'applicazione Office. Per informazioni su come aggiornare gli elementi in un pulsante di menu combinato, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Un pulsante che appare premuto o meno.|
 
-##  <a name="HandleEventsSetProperties"></a> Gestire gli eventi e impostazione delle proprietà
+## <a name="HandleEventsSetProperties"></a> Gestire gli eventi e impostazione delle proprietà
  La finestra di progettazione della barra multifunzione consente di impostare le proprietà del controllo in fase di progettazione utilizzando il **proprietà** finestra. Inoltre, la barra multifunzione espone un modello a oggetti fortemente tipizzati che è possibile usare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione.
 
  È possibile fare doppio clic su qualsiasi controllo nella finestra di progettazione per aprire un gestore eventi per l'evento del controllo predefinito. È possibile creare gestori eventi per tutti gli altri eventi di controllo usando il **proprietà** finestra.
@@ -163,7 +163,7 @@ ms.locfileid: "54867260"
 
  Per informazioni sulla gestione degli eventi della barra multifunzione e impostare le proprietà dei controlli barra multifunzione in fase di esecuzione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> Personalizzare la visualizzazione Backstage
+## <a name="CustomizingMicrosoftOfficeButton"></a> Personalizzare la visualizzazione Backstage
  È possibile usare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si sceglie la **File** scheda. Questo menu è detto visualizzazione Backstage.
 
  È possibile posizionare i controlli prima o dopo i controlli incorporati tramite la finestra di progettazione della barra multifunzione. Un controllo incorporato è un controllo già disponibile nella visualizzazione Backstage. Se si desidera posizionare controlli prima o dopo i controlli incorporati, è necessario usare XML della barra multifunzione. Per altre informazioni sulle **sulla barra multifunzione (XML)**, vedere [XML della barra multifunzione](../vsto/ribbon-xml.md). Per altre informazioni sulla personalizzazione della visualizzazione Backstage, vedere [Introduzione alla visualizzazione Backstage di Office 2010 per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizzare la visualizzazione Backstage di Office 2010 per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182188).
@@ -172,7 +172,7 @@ ms.locfileid: "54867260"
 
  Per informazioni su come aggiungere controlli alla visualizzazione Backstage, vedere [come: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-##  <a name="Accessibility"></a> Accessibilità nella finestra di progettazione della barra multifunzione
+## <a name="Accessibility"></a> Accessibilità nella finestra di progettazione della barra multifunzione
  È possibile utilizzare i tasti di scelta rapida per spostare i controlli nella finestra di progettazione della barra multifunzione. Alcuni tasti di scelta rapida si applicano a tutti i controlli e alcuni si applicano solo ai controlli che dispongono di menu.
 
  I tasti di scelta rapida che si applicano a tutti i controlli vengono visualizzati nella tabella seguente.

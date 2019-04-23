@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079908"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ In questo argomento descrive le opzioni per l'aggiornamento del file di database
   
  Prima di aggiornare un database, considerare i criteri seguenti:  
   
--   Non eseguire l'aggiornamento se si desidera lavorare sul progetto in una versione precedente sia una versione più recente di Visual Studio.  
+- Non eseguire l'aggiornamento se si desidera lavorare sul progetto in una versione precedente sia una versione più recente di Visual Studio.  
   
--   Non eseguire l'aggiornamento se l'applicazione verrà utilizzato in ambienti che usano SQL Server Express anziché LocalDB.  
+- Non eseguire l'aggiornamento se l'applicazione verrà utilizzato in ambienti che usano SQL Server Express anziché LocalDB.  
   
--   Non eseguire l'aggiornamento se l'applicazione usa le connessioni remote, perché non accettarle LocalDB.  
+- Non eseguire l'aggiornamento se l'applicazione usa le connessioni remote, perché non accettarle LocalDB.  
   
--   Non aggiornare l'applicazione si basa su Internet Information Services (IIS).  
+- Non aggiornare l'applicazione si basa su Internet Information Services (IIS).  
   
--   Se si desidera testare le applicazioni di database in un ambiente sandbox, ma non si desidera amministrare un database, prendere in considerazione l'aggiornamento.  
+- Se si desidera testare le applicazioni di database in un ambiente sandbox, ma non si desidera amministrare un database, prendere in considerazione l'aggiornamento.  
   
 ### <a name="to-upgrade-a-database-file"></a>Per eseguire l'aggiornamento di un file di database  
   
@@ -70,17 +70,17 @@ In questo argomento descrive le opzioni per l'aggiornamento del file di database
   
 2. Nel **Aggiungi connessione** finestra di dialogo, specificare le informazioni seguenti:  
   
-   -   **Origine dati**: `Microsoft SQL Server (SqlClient)`  
+   - **Origine dati**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **Nome server**:  
+   - **Nome server**:  
   
-       -   Usare la versione predefinita: `(localdb)\MSSQLLocalDB`.  Si specificherà ProjectV12 o ProjectV13, a seconda di quale versione di Visual Studio viene installata e quando è stata creata la prima istanza di Local DB. Il **MSSQLLocalDB** nodo **Esplora oggetti di SQL Server** mostra quale versione fa riferimento a.  
+       - Usare la versione predefinita: `(localdb)\MSSQLLocalDB`.  Si specificherà ProjectV12 o ProjectV13, a seconda di quale versione di Visual Studio viene installata e quando è stata creata la prima istanza di Local DB. Il **MSSQLLocalDB** nodo **Esplora oggetti di SQL Server** mostra quale versione fa riferimento a.  
   
-       -   Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, dove V12 è LocalDB 2014 e V13 è LocalDB 2016.  
+       - Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, dove V12 è LocalDB 2014 e V13 è LocalDB 2016.  
   
-   -   **Collegare un file di database**: Il percorso fisico del file mdf primario.  
+   - **Collegare un file di database**: Il percorso fisico del file mdf primario.  
   
-   -   **Nome logico**: Il nome che si desidera utilizzare con il file.  
+   - **Nome logico**: Il nome che si desidera utilizzare con il file.  
   
 3. Selezionare il pulsante **OK** .  
   
@@ -102,11 +102,11 @@ In questo argomento descrive le opzioni per l'aggiornamento del file di database
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Per funzionare con il database in Visual Studio, mantenendo la compatibilità con SQL Server Express  
   
--   In Visual Studio, aprire il progetto senza l'aggiornamento.  
+- In Visual Studio, aprire il progetto senza l'aggiornamento.  
   
-    -   Per eseguire il progetto, selezionare il tasto F5.  
+    - Per eseguire il progetto, selezionare il tasto F5.  
   
-    -   Per modificare il database, aprire il file con estensione mdf in **Esplora soluzioni**, espandere il nodo nel **Esplora Server** per lavorare con il database.  
+    - Per modificare il database, aprire il file con estensione mdf in **Esplora soluzioni**, espandere il nodo nel **Esplora Server** per lavorare con il database.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Per rendere SQL Server Express il motore di database predefinito  
   

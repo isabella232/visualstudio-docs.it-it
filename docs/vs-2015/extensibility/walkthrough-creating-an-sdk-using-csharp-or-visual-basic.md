@@ -8,74 +8,74 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2a6d3b302825ca8ba33c9d0c44dbe18929c20ce2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081472"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creazione di un SDK con C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual C# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
+In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:  
   
--   [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
+- [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   
--   [Per creare il progetto di estensione SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
+- [Per creare il progetto di estensione SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
   
--   [Per creare un'app di esempio che usa la libreria di classi](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
+- [Per creare un'app di esempio che usa la libreria di classi](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a> Per creare il componente SimpleMath Windows Runtime  
+## <a name="createClassLibrary"></a> Per creare il componente SimpleMath Windows Runtime  
   
-1.  Nella barra dei menu, scegliere **File**, **New**, **nuovo progetto**.  
+1. Nella barra dei menu, scegliere **File**, **New**, **nuovo progetto**.  
   
-2.  Nell'elenco dei modelli, espandere **Visual C#** o **Visual Basic**, scegliere il **Windows Store** nodo, quindi scegliere il **componente di Runtime di Windows** modello.  
+2. Nell'elenco dei modelli, espandere **Visual c#** o **Visual Basic**, scegliere il **Windows Store** nodo, quindi scegliere il **componente di Runtime di Windows** modello.  
   
-3.  Nel **nome** , specificare **SimpleMath**, quindi scegliere il **OK** pulsante.  
+3. Nel **nome** , specificare **SimpleMath**, quindi scegliere il **OK** pulsante.  
   
-4.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **SimpleMath** nodo del progetto e quindi scegliere **proprietà**.  
+4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **SimpleMath** nodo del progetto e quindi scegliere **proprietà**.  
   
-5.  Rinominare **Class1.cs** al **Arithmetic.cs** e aggiornarlo in modo che corrisponda al codice seguente:  
+5. Rinominare **Class1.cs** al **Arithmetic.cs** e aggiornarlo in modo che corrisponda al codice seguente:  
   
      [!code-csharp[CreatingAnSDKUsingWinRT#3](../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrt/cs/winrtmath/arithmetic.cs#3)]
      [!code-vb[CreatingAnSDKUsingWinRT#3](../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrt/vb/winrtmath/arithmetic.vb#3)]  
   
-6.  Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, quindi scegliere **Configuration Manager**.  
+6. Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, quindi scegliere **Configuration Manager**.  
   
      Il **Configuration Manager** verrà visualizzata la finestra di dialogo.  
   
-7.  Nel **configurazione soluzione attiva** casella di riepilogo **rilascio**.  
+7. Nel **configurazione soluzione attiva** casella di riepilogo **rilascio**.  
   
-8.  Nel **Configuration** colonna, verificare che **SimpleMath** riga è impostata su **rilascio**e quindi scegliere il **Chiudi** pulsante per accettare il modificare.  
+8. Nel **Configuration** colonna, verificare che **SimpleMath** riga è impostata su **rilascio**e quindi scegliere il **Chiudi** pulsante per accettare il modificare.  
   
     > [!IMPORTANT]
     >  il SDK per il componente SimpleMath include solo una configurazione. Questa configurazione deve essere la build di versione o le app che usano il componente non passare la certificazione il[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
   
 9. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **SimpleMath** nodo del progetto e quindi scegliere **compilare**.  
   
-##  <a name="createVSIX"></a> Per creare il progetto di estensione SimpleMathVSIX  
+## <a name="createVSIX"></a> Per creare il progetto di estensione SimpleMathVSIX  
   
-1.  Nel menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, scegliere **Add**, **nuovo progetto**.  
+1. Nel menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, scegliere **Add**, **nuovo progetto**.  
   
-2.  Nell'elenco dei modelli, espandere **Visual C#** o **Visual Basic**, scegliere il **estendibilità** nodo, quindi scegliere il **progetto VSIX** modello.  
+2. Nell'elenco dei modelli, espandere **Visual c#** o **Visual Basic**, scegliere il **estendibilità** nodo, quindi scegliere il **progetto VSIX** modello.  
   
-3.  Nel **nome** , specificare **SimpleMathVSIX**, quindi scegliere il **OK** pulsante.  
+3. Nel **nome** , specificare **SimpleMathVSIX**, quindi scegliere il **OK** pulsante.  
   
-4.  Nelle **Esplora soluzioni**, scegliere il **vsixmanifest** elemento.  
+4. Nelle **Esplora soluzioni**, scegliere il **vsixmanifest** elemento.  
   
-5.  Nella barra dei menu scegliere **Visualizza**, **Codice**.  
+5. Nella barra dei menu scegliere **Visualizza**, **Codice**.  
   
-6.  Sostituire il codice XML esistente con il codice XML seguente:  
+6. Sostituire il codice XML esistente con il codice XML seguente:  
   
      [!code-xml[CreatingAnSDKUsingWinRT#1](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
   
-7.  Nelle **Esplora soluzioni**, scegliere il **SimpleMathVSIX** progetto.  
+7. Nelle **Esplora soluzioni**, scegliere il **SimpleMathVSIX** progetto.  
   
-8.  Nella barra dei menu, scegliere **Project**, **Aggiungi nuovo elemento**.  
+8. Nella barra dei menu, scegliere **Project**, **Aggiungi nuovo elemento**.  
   
 9. Nell'elenco degli **gli elementi comuni**, espandere **dati**, quindi scegliere **File XML**.  
   
@@ -131,11 +131,11 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
   
 30. Scegliere il **installare** pulsante, attendere il completamento dell'installazione e quindi riavviare Visual Studio.  
   
-##  <a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi  
+## <a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi  
   
 1. Nella barra dei menu, scegliere **File**, **New**, **nuovo progetto**.  
   
-2. Nell'elenco dei modelli, espandere **Visual C#** oppure **Visual Basic**, quindi scegliere il **Windows Store** nodo.  
+2. Nell'elenco dei modelli, espandere **Visual c#** oppure **Visual Basic**, quindi scegliere il **Windows Store** nodo.  
   
 3. Scegliere il **App vuota** modello, nome del progetto **ArithmeticUI**, quindi scegliere il **OK** pulsante.  
   
