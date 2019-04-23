@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079708"
 ---
 # <a name="graph-view"></a>Visualizzazione Grafico
 
@@ -120,11 +120,11 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  La funzionalità di annullamento/ripristino è abilitata nella visualizzazione grafico per le seguenti azioni:
 
--   Aggiunta di un singolo nodo tramite trascinamento.
+- Aggiunta di un singolo nodo con trascinamento della selezione.
 
--   Aggiunta di più nodi dalla finestra dei risultati della ricerca nelle query relative a Schema Explorer o alla visualizzazione iniziale.
+- Aggiunta di più nodi dalla finestra dei risultati della ricerca nelle query relative a Schema Explorer o alla visualizzazione iniziale.
 
--   Eliminazione di uno o più nodi.
+- Eliminazione di uno o più nodi.
 
 ## <a name="zoom"></a>Zoom
 
@@ -132,9 +132,9 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  È possibile controllare lo zoom nei seguenti modi:
 
--   Tenendo il **Ctrl** chiave e il puntatore del mouse in rotazione rotellina quando il mouse è posizionato sull'area di visualizzazione grafico.
+- Tenendo il **Ctrl** chiave e il puntatore del mouse in rotazione rotellina quando il mouse è posizionato sull'area di visualizzazione grafico.
 
--   Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
+- Tramite il dispositivo di scorrimento. Il dispositivo di scorrimento mostra il livello di zoom corrente.
 
 Il dispositivo di scorrimento dello Zoom è opaco quando lo selezionarlo, passare il mouse su di essa o usare **Ctrl** con la rotellina del mouse per ingrandire; tutte le altre volte, è trasparente.
 

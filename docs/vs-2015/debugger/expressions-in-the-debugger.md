@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080741"
 ---
 # <a name="expressions-in-the-debugger"></a>Espressioni nel debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Uso di funzioni intrinseche del debugger per mantenere lo stato  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Uso di funzioni intrinseche del debugger per mantenere lo stato  
  Le funzioni intrinseche del debugger consentono di chiamare alcune funzioni C/C++ nelle espressioni senza modificare lo stato dell'applicazione.  
   
  Funzioni intrinseche del debugger:  
@@ -118,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - Espressioni non supportate  
   
--   I cast che coinvolgono puntatori o i cast definiti dall'utente non sono supportati.  
+- I cast che coinvolgono puntatori o i cast definiti dall'utente non sono supportati.  
   
--   Il confronto e l'assegnazione di oggetti non sono supportati.  
+- Il confronto e l'assegnazione di oggetti non sono supportati.  
   
--   Gli operatori di overload di e le funzioni in overload non sono supportati.  
+- Gli operatori di overload di e le funzioni in overload non sono supportati.  
   
--   Le conversioni boxing e unboxing non sono supportate.  
+- Le conversioni boxing e unboxing non sono supportate.  
   
--   L'operatore`Sizeof` non è supportato.  
+- L'operatore`Sizeof` non è supportato.  
   
 ## <a name="c---unsupported-expressions"></a>C# - Espressioni non supportate  
   
@@ -135,19 +135,19 @@ int main()
   
  Le funzionalità seguenti degli oggetti dinamici non sono supportate:  
   
--   Gli operatori composti `+=`, `-=`, `%=`, `/=`e `*=`  
+- Gli operatori composti `+=`, `-=`, `%=`, `/=`e `*=`  
   
--   Molti cast, inclusi cast numerici e cast dell'argomento di tipo  
+- Molti cast, inclusi cast numerici e cast dell'argomento di tipo  
   
--   Chiamate al metodo con più di due argomenti  
+- Chiamate al metodo con più di due argomenti  
   
--   Metodi Get di proprietà con più di due argomenti  
+- Metodi Get di proprietà con più di due argomenti  
   
--   Metodi set di proprietà con argomenti  
+- Metodi set di proprietà con argomenti  
   
--   Assegnazione a un indicizzatore  
+- Assegnazione a un indicizzatore  
   
--   Operatori booleani `&&` e `||`  
+- Operatori booleani `&&` e `||`  
   
 ### <a name="anonymous-methods"></a>Metodi anonimi  
  La creazione di nuovi metodi anonimi non è supportata.  
@@ -159,19 +159,19 @@ int main()
   
  Le funzionalità seguenti degli oggetti dinamici non sono supportate:  
   
--   Gli operatori composti `+=`, `-=`, `%=`, `/=`e `*=`  
+- Gli operatori composti `+=`, `-=`, `%=`, `/=`e `*=`  
   
--   Molti cast, inclusi cast numerici e cast dell'argomento di tipo  
+- Molti cast, inclusi cast numerici e cast dell'argomento di tipo  
   
--   Chiamate al metodo con più di due argomenti  
+- Chiamate al metodo con più di due argomenti  
   
--   Metodi Get di proprietà con più di due argomenti  
+- Metodi Get di proprietà con più di due argomenti  
   
--   Metodi set di proprietà con argomenti  
+- Metodi set di proprietà con argomenti  
   
--   Assegnazione a un indicizzatore  
+- Assegnazione a un indicizzatore  
   
--   Operatori booleani `&&` e `||`  
+- Operatori booleani `&&` e `||`  
   
 ### <a name="local-constants"></a>Costanti locali  
  Le costanti locali non sono supportate.  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Parole chiave non supportate  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Parole chiave a livello di spazio dei nomi o di modulo, ad esempio `End Sub` o `Module`.  
+- Parole chiave a livello di spazio dei nomi o di modulo, ad esempio `End Sub` o `Module`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)   

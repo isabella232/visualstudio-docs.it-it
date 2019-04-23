@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080813"
 ---
 # <a name="use-roslyn-analyzers"></a>Usare gli analizzatori di Roslyn
 
-Le regole dell'analizzatore di .NET compiler Platform ("Roslyn"), oppure *diagnostica*, analizzare il codice C# o Visual Basic mentre si digita. Ogni dato diagnostico ha uno stato di gravità e la soppressione predefinito che può essere sovrascritto per il progetto. Questo articolo illustra l'impostazione regola livello di gravità, usando i set di regole e le violazioni di disattivazione.
+Le regole dell'analizzatore di .NET compiler Platform ("Roslyn"), oppure *diagnostica*, analizzare il codice c# o Visual Basic mentre si digita. Ogni dato diagnostico ha uno stato di gravità e la soppressione predefinito che può essere sovrascritto per il progetto. Questo articolo illustra l'impostazione regola livello di gravità, usando i set di regole e le violazioni di disattivazione.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analizzatori in Esplora soluzioni
 
@@ -108,42 +108,42 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
 Esistono diversi modi per eliminare le violazioni delle regole:
 
-- Per eliminare tutte le violazioni correnti, selezionare **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi** nella barra dei menu. Ciò è talvolta detta "base".
+- Dal **Analyze** menu
 
-- Per eliminare una diagnostica dal **Esplora soluzioni**, impostare la gravità **None**.
+   Selezionare **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi** nella barra dei menu per eliminare tutte le violazioni correnti. Ciò è talvolta detta "base".
 
-- Per eliminare una diagnostica dall'editor set di regole, deselezionare la casella accanto al relativo nome, o impostare **azione** al **None**.
+- Da **Esplora soluzioni**
 
-- Per eliminare una diagnostica dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+**.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAxxxx** > **nell'origine** oppure **sopprimere CAxxxx** > **nel File di eliminazione**.
+   Per eliminare una violazione **Esplora soluzioni**, impostare la gravità della regola **None**.
+
+- Dal **editor set di regole**
+
+   Per eliminare una violazione da editor set di regole, deselezionare la casella accanto al relativo nome o impostare **azione** al **None**.
+
+- Dal **editor di codice**
+
+   Per eliminare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+**.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAXXXX** > **nell'origine/nel File di eliminazione**.
 
    ![Non visualizzare diagnostica dal menu Azioni rapide](media/suppress-diagnostic-from-editor.png)
 
-- Per eliminare una diagnostica dal **elenco errori**, vedere [eliminare le violazioni dall'elenco errori](#suppress-violations-from-the-error-list).
+- Dal **elenco errori**
 
-### <a name="suppress-violations-from-the-error-list"></a>Non visualizzare le violazioni dall'elenco degli errori
+   È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **Source/In In File di eliminazione**.
 
-È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **In origine**  oppure **sopprimere** > **nel File di eliminazione**.
+   - Se si eliminano **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del C# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
 
-- Se si seleziona **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del linguaggio C# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
+      ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
 
-   ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
+   - Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
 
-- Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
+      ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
 
-   ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
+   Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
 
-Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
-
-Il **elenco errori** Visualizza diagnostica o regola violazioni, sia da analisi di codice in tempo reale e di compilazione. Poiché i dati di diagnostica di compilazione può essere non aggiornato, ad esempio, se è stato modificato il codice per correggere la violazione ma non sono state ricreate, Impossibile eliminare questi dati diagnostici dal **elenco errori**. Tuttavia, la diagnostica di analisi in tempo reale o IntelliSense, sono sempre aggiornati sulle origini correnti e può essere eliminata dal **elenco errori**. Se l'opzione di eliminazione è disabilitato nel menu di scelta, o nel contesto, è probabile perché ne hai uno o più compilazione diagnostica nella selezione. Per escludere i dati di diagnostica di compilazione dalla selezione, passare il **elenco errori** filtro di origine dal **compilazione + IntelliSense** al **solo Intellisense**. Selezionare quindi i dati di diagnostica che si desidera eliminare e procedere come descritto in precedenza.
-
-![Filtro origine dell'elenco errori in Visual Studio](media/error-list-filter.png)
-
-> [!NOTE]
-> In un progetto .NET Core, se si aggiunge un riferimento a un progetto con gli analizzatori di NuGet, tali analizzatori vengono automaticamente aggiunti al progetto dipendente troppo. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto di unit test, contrassegnare il pacchetto NuGet come privata nel *file con estensione csproj* oppure *vbproj* file del progetto di riferimento:
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Se non viene visualizzato il **Suppress** opzione di menu nel **Esplora soluzioni**, la violazione probabilmente proviene dalla compilazione e l'analisi non in tempo reale. Il **elenco errori** Visualizza diagnostica o regola violazioni, sia da analisi di codice in tempo reale e di compilazione. Poiché i dati di diagnostica di compilazione può essere non aggiornato, ad esempio, se è stato modificato il codice per correggere la violazione ma non sono state ricreate, Impossibile eliminare questi dati diagnostici dal **elenco errori**. Diagnostica di analisi in tempo reale o IntelliSense, sono sempre aggiornata con le origini corrente che possono essere eliminata dal **elenco errori**. Per escludere *compilare* diagnostica dalla selezione, passare il **elenco errori** filtro di origine dal **compilazione + IntelliSense** a **solo Intellisense**. Selezionare quindi i dati di diagnostica che si desidera eliminare e procedere come descritto in precedenza.
+   >
+   > ![Filtro origine dell'elenco errori in Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Utilizzo della riga di comando
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 L'immagine seguente mostra l'output di compilazione da riga di comando di compilazione di un progetto che contiene una violazione della regola dell'analizzatore:
 
 ![Output MSBuild con violazione della regola](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Progetti dipendenti
+
+In un progetto .NET Core, se si aggiunge un riferimento a un progetto con gli analizzatori di NuGet, tali analizzatori vengono automaticamente aggiunti al progetto dipendente troppo. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto di unit test, contrassegnare il pacchetto NuGet come privata nel *file con estensione csproj* oppure *vbproj* file del progetto di riferimento, impostare il **PrivateAssets** attributo:
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Vedere anche
 

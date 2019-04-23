@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080748"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 ### <a name="to-enable-terminal-services"></a>Per attivare Servizi terminal  
   
-1.  Fare clic su **Start**, quindi scegliere **Pannello di controllo**.  
+1. Fare clic su **Start**, quindi scegliere **Pannello di controllo**.  
   
-2.  Nel Pannello di controllo scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
+2. Nel Pannello di controllo scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-3.  Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione computer**.  
+3. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione computer**.  
   
-4.  Nella finestra di Gestione computer espandere il nodo **Servizi e applicazioni**.  
+4. Nella finestra di Gestione computer espandere il nodo **Servizi e applicazioni**.  
   
-5.  In **Servizi e applicazioni** fare clic su **Servizi**.  
+5. In **Servizi e applicazioni** fare clic su **Servizi**.  
   
      Nel riquadro di destra verrà visualizzato un elenco di servizi.  
   
-6.  Nell'elenco **Servizi** fare clic con il pulsante destro del mouse su **Servizi terminal** e quindi scegliere **Proprietà**.  
+6. Nell'elenco **Servizi** fare clic con il pulsante destro del mouse su **Servizi terminal** e quindi scegliere **Proprietà**.  
   
-7.  Nel **proprietà servizi Terminal** finestra, passa al **generali** scheda e impostare **tipo di avvio** al **manuale**.  
+7. Nel **proprietà servizi Terminal** finestra, passa al **generali** scheda e impostare **tipo di avvio** al **manuale**.  
   
-8.  Fare clic su **OK**.  
+8. Fare clic su **OK**.  
   
 9. Riavviare il computer.  
   
@@ -54,17 +54,17 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 ### <a name="to-enable-remote-desktop"></a>Per attivare Desktop remoto  
   
-1.  Fare clic su **Start** e quindi fare clic con il pulsante destro del mouse su **Risorse del computer**.  
+1. Fare clic su **Start** e quindi fare clic con il pulsante destro del mouse su **Risorse del computer**.  
   
-2.  Scegliere **Proprietà**.  
+2. Scegliere **Proprietà**.  
   
      Verrà visualizzata la finestra **Proprietà del sistema**.  
   
-3.  Fare clic su **Connessione remota**.  
+3. Fare clic su **Connessione remota**.  
   
-4.  In **Desktop remoto** selezionare **Consenti agli utenti di connettersi in remoto al computer**.  
+4. In **Desktop remoto** selezionare **Consenti agli utenti di connettersi in remoto al computer**.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104148"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   Le opzioni **/globalsamplegc** e **/globalsamplegclife** specificano il tipo di dati di memoria da raccogliere.  
+   - Le opzioni **/globalsamplegc** e **/globalsamplegclife** specificano il tipo di dati di memoria da raccogliere.  
 
         Specificare una sola delle opzioni seguenti.  
 
@@ -49,7 +49,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
        |**/globalsamplegc**|Abilita la raccolta dei dati di allocazione della memoria.|  
        |**/globalsamplegclife**|Abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.|  
 
-   -   L'opzione **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati a livello di funzione.  
+   - L'opzione **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati a livello di funzione.  
 
 3. Riavviare il computer per impostare la nuova configurazione di ambiente.  
 
@@ -83,16 +83,16 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   L'ID processo `(PID)` specifica l'ID o il nome del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.  
+   - L'ID processo `(PID)` specifica l'ID o il nome del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.  
 
-   -   **/targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione.  
+   - **/targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione.  
 
 ## <a name="controlling-data-collection"></a>Controllo della raccolta di dati  
  Quando è in esecuzione l'applicazione, è possibile controllare la raccolta dei dati avviando e arrestando la scrittura dei dati nel file di dati del profiler usando le opzioni di **VSPerfCmd.exe**. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
     |Opzione|Descrizione|  
     |------------|-----------------|  

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51ca5704bae6d52bf6957b97ac01d2b587c05970
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103745"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer)
 Per impostazione predefinita, quando si trascinano oggetti di database con nomi che terminano in s o ies da **Esplora Server** oppure **Esplora Database** nel [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), il nomi delle classi di entità generate vengono modificati dal plurale al singolare. Questa modifica viene apportata per rappresentare in modo più preciso il fatto che viene eseguito il mapping della classe di entità, di cui è stata creata un'istanza, a un singolo record di dati. Ad esempio, aggiungendo un `Customers` alla tabella di **O/R Designer** risultante in una classe di entità denominata `Customer` perché la classe conterrà dati per un solo cliente.
@@ -25,18 +25,18 @@ Per impostazione predefinita, quando si trascinano oggetti di database con nomi 
 
 ### <a name="to-turn-pluralization-on-and-off"></a>Per attivare e disattivare la pluralizzazione
 
-1.  Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Nella finestra di dialogo **Opzioni** espandere **Strumenti di database**.
+2. Nella finestra di dialogo **Opzioni** espandere **Strumenti di database**.
 
     > [!NOTE]
     >  Se il nodo **Strumenti di database** non è visibile, selezionare **Mostra tutte le impostazioni**.
 
-3.  Fare clic su **Object Relational Designer**.
+3. Fare clic su **Object Relational Designer**.
 
-4.  Impostare **pluralizzazione di nomi** al **Enabled** = **False** per impostare il **O/R Designer** in modo che non modifica i nomi delle classi .
+4. Impostare **pluralizzazione di nomi** al **Enabled** = **False** per impostare il **O/R Designer** in modo che non modifica i nomi delle classi .
 
-5.  Impostare **pluralizzazione di nomi** al **Enabled** = **True** per applicare le regole di pluralizzazione ai nomi di classe di oggetti aggiunti al **O/R Finestra di progettazione**.
+5. Impostare **pluralizzazione di nomi** al **Enabled** = **True** per applicare le regole di pluralizzazione ai nomi di classe di oggetti aggiunti al **O/R Finestra di progettazione**.
 
 ## <a name="see-also"></a>Vedere anche
 

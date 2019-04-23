@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079824"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ ms.locfileid: "58969387"
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Per aggiungere estensioni del livello a un progetto VSIX separato  
   
-1.  Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà le classi del gestore comandi o movimenti.  
+1. Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà le classi del gestore comandi o movimenti.  
   
     > [!NOTE]
     >  È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.  
   
-2.  Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Per aggiungere un progetto VSIX:  
+2. Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Per aggiungere un progetto VSIX:  
   
-    1.  Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.  
+    1. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.  
   
-    2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.  
+    2. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.  
   
-    3.  Fare clic su **Seleziona versioni** e assicurarsi che sia selezionato **Visual Studio** .  
+    3. Fare clic su **Seleziona versioni** e assicurarsi che sia selezionato **Visual Studio** .  
   
-3.  In **source.extension.vsixmanifest**, in **Asset**, aggiungere il progetto di gestore comandi o movimenti come componente MEF.  
+3. In **source.extension.vsixmanifest**, in **Asset**, aggiungere il progetto di gestore comandi o movimenti come componente MEF.  
   
-    1.  Nella scheda **Asset**scegliere **Nuovo**.  
+    1. Nella scheda **Asset**scegliere **Nuovo**.  
   
-    2.  In **Tipo**selezionare **Microsoft.VisualStudio.MefComponent**.  
+    2. In **Tipo**selezionare **Microsoft.VisualStudio.MefComponent**.  
   
-    3.  In **Origine**selezionare **Progetto nella soluzione corrente** e selezionare il nome del progetto del gestore comandi o movimenti.  
+    3. In **Origine**selezionare **Progetto nella soluzione corrente** e selezionare il nome del progetto del gestore comandi o movimenti.  
   
-    4.  Salvare il file.  
+    4. Salvare il file.  
   
-4.  Tornare al progetto del gestore comandi o movimenti e aggiungere i riferimenti seguenti al progetto.  
+4. Tornare al progetto del gestore comandi o movimenti e aggiungere i riferimenti seguenti al progetto.  
   
 |**Riferimento**|**Operazioni consentite**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ ms.locfileid: "58969387"
 |Microsoft.VisualStudio.Modeling.Sdk.[versione]|Definire le estensioni di modellazione|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]|Aggiornare forme e diagrammi|  
   
-1.  Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni vedere una delle sezioni seguenti:  
+1. Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni vedere una delle sezioni seguenti:  
   
      [Definizione di un comando di menu](#command)  
   
@@ -104,13 +104,13 @@ ms.locfileid: "58969387"
   
      Vedere anche [esplorare e aggiornare i modelli nel codice del programma di livello](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Per testare la funzionalità, premere CTRL+F5 o F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza creare o aprire un diagramma livello.  
+2. Per testare la funzionalità, premere CTRL+F5 o F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza creare o aprire un diagramma livello.  
   
-3.  Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
+3. Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
   
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
-##  <a name="command"></a> Definizione di un comando di menu  
+## <a name="command"></a> Definizione di un comando di menu  
  È possibile aggiungere altre definizioni dei comandi di menu a un progetto di comandi o movimenti esistente. Ogni comando viene definito da una classe che ha le caratteristiche seguenti:  
   
 - La classe viene dichiarata nel modo seguente:  
@@ -125,11 +125,11 @@ ms.locfileid: "58969387"
   
 - I metodi che implementano `ICommandExtension` sono i seguenti:  
   
-  -   `string Text {get;}` : etichetta visualizzata nel menu.  
+  - `string Text {get;}` : etichetta visualizzata nel menu.  
   
-  -   `void QueryStatus(IMenuCommand command)` : viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e determina se il comando deve essere visibile e abilitato per la selezione corrente dell'utente.  
+  - `void QueryStatus(IMenuCommand command)` : viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e determina se il comando deve essere visibile e abilitato per la selezione corrente dell'utente.  
   
-  -   `void Execute(IMenuCommand command)` : viene chiamato quando l'utente seleziona il comando.  
+  - `void Execute(IMenuCommand command)` : viene chiamato quando l'utente seleziona il comando.  
   
 - Per determinare la selezione corrente, è possibile importare `IDiagramContext`:  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> Definizione di un gestore movimenti  
+## <a name="gesture"></a> Definizione di un gestore movimenti  
  Un gestore movimenti risponde quando l'utente trascina elementi nel diagramma livello e quando l'utente fa doppio clic in un punto qualsiasi del diagramma.  
   
  È possibile aggiungere al progetto VSIX del gestore comandi o movimenti esistente un file di codice che definisce un gestore movimenti:  

@@ -8,12 +8,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: b1ce9c317bb05e242f8bdc89d3e294858ba0ce21
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 490ad7e4ee8bcc59530a06ec4eba151e88806028
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "59001338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079500"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Integrazione continua in Azure DevOps Services con i progetti di distribuzione di tipo Gruppo di risorse di Azure
 
@@ -172,6 +172,7 @@ Le procedure seguenti consentono di eseguire i passaggi necessari per configurar
      ```
      -_artifactsLocation $(artifactsLocation) -_artifactsLocationSasToken (ConvertTo-SecureString -String "$(artifactsLocationSasToken)" -AsPlainText -Force)
      ```
+
      ![Configurare l'attività Distribuzione gruppo di risorse di Azure](media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png)
 7. Dopo aver aggiunto tutti gli elementi richiesti, salvare la pipeline di compilazione e fare clic su **Accoda nuova compilazione** nella parte superiore della schermata.
 

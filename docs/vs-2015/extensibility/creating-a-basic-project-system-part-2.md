@@ -12,34 +12,34 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079604"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creazione di un sistema di progetto di base, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La prima procedura dettagliata in questa serie [creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.  
   
- Questa procedura dettagliata viene illustrato come creare un tipo di progetto che ha il .myproj di estensione nome file progetto. Per completare la procedura dettagliata, non è necessario creare un proprio linguaggio perché la procedura dettagliata Usa il sistema di progetto Visual C# esistente.  
+ Questa procedura dettagliata viene illustrato come creare un tipo di progetto che ha il .myproj di estensione nome file progetto. Per completare la procedura dettagliata, non è necessario creare un proprio linguaggio perché la procedura dettagliata Usa il sistema di progetto Visual c# esistente.  
   
  Questa procedura dettagliata illustra come eseguire queste attività:  
   
--   Creare un modello di Visual Studio.  
+- Creare un modello di Visual Studio.  
   
--   Distribuire un modello di Visual Studio.  
+- Distribuire un modello di Visual Studio.  
   
--   Creare un nodo figlio di tipo di progetto nel **nuovo progetto** nella finestra di dialogo.  
+- Creare un nodo figlio di tipo di progetto nel **nuovo progetto** nella finestra di dialogo.  
   
--   Abilitare la sostituzione dei parametri nel modello di Visual Studio.  
+- Abilitare la sostituzione dei parametri nel modello di Visual Studio.  
   
--   Creare una pagina delle proprietà progetto.  
+- Creare una pagina delle proprietà progetto.  
   
 > [!NOTE]
->  I passaggi descritti in questa procedura dettagliata si basano su un progetto C#. Tuttavia, fatta eccezione per le specifiche, ad esempio estensioni di file e il codice, è possibile utilizzare gli stessi passaggi per un progetto Visual Basic.  
+>  I passaggi descritti in questa procedura dettagliata si basano su un progetto c#. Tuttavia, fatta eccezione per le specifiche, ad esempio estensioni di file e il codice, è possibile utilizzare gli stessi passaggi per un progetto Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Creazione di un modello di Visual Studio  
  [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) viene illustrato come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Viene inoltre illustrato come registrare questo modello con Visual Studio usando il <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo della cartella \Templates\Projects\SimpleProject\ nel Registro di sistema.  
@@ -120,9 +120,9 @@ La prima procedura dettagliata in questa serie [creazione di un sistema di proge
 ## <a name="adding-a-minimal-vsct-file"></a>Aggiunta di un File con estensione vsct minimo  
  Visual Studio deve essere eseguito in modalità di installazione per riconoscere un modello di Visual Studio nuovo o modificato. La modalità di installazione richiede un file con estensione vsct sia presente. Pertanto, è necessario aggiungere un file con estensione vsct minimo al progetto.  
   
-1.  Aggiungere un file XML denominato SimpleProject.vsct al progetto SimpleProject.  
+1. Aggiungere un file XML denominato SimpleProject.vsct al progetto SimpleProject.  
   
-2.  Sostituire il contenuto del file SimpleProject.vsct con il codice seguente.  
+2. Sostituire il contenuto del file SimpleProject.vsct con il codice seguente.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ La prima procedura dettagliata in questa serie [creazione di un sistema di proge
     </CommandTable>  
     ```  
   
-3.  Impostare il **Build Action** di questo file per **VSCTCompile**. È possibile farlo solo nel file con estensione csproj, non nel **proprietà** finestra. Assicurarsi che il **Build Action** di questo file è impostato su **None** a questo punto.  
+3. Impostare il **Build Action** di questo file per **VSCTCompile**. È possibile farlo solo nel file con estensione csproj, non nel **proprietà** finestra. Assicurarsi che il **Build Action** di questo file è impostato su **None** a questo punto.  
   
-    1.  Il pulsante destro del nodo SimpleProject e quindi fare clic su **SimpleProject.csproj modifica**.  
+    1. Il pulsante destro del nodo SimpleProject e quindi fare clic su **SimpleProject.csproj modifica**.  
   
-    2.  Nel file con estensione csproj, individuare l'elemento SimpleProject.vsct.  
+    2. Nel file con estensione csproj, individuare l'elemento SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Modificare l'azione di compilazione specificando **VSCTCompile**.  
+    3. Modificare l'azione di compilazione specificando **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  il file di progetto e chiudere l'editor.  
+    4. il file di progetto e chiudere l'editor.  
   
-    5.  Salva il nodo SimpleProject, quindi nella **Esplora soluzioni** fare clic su **Ricarica progetto**.  
+    5. Salva il nodo SimpleProject, quindi nella **Esplora soluzioni** fare clic su **Ricarica progetto**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Esaminare le istruzioni di compilazione di modelli di Visual Studio  
  Il sistema di compilazione progetto VSPackage Visual Studio in modalità di installazione viene eseguito in genere quando viene modificato il file con estensione vstemplate o viene ricompilato il progetto che contiene il file con estensione vstemplate. È possibile seguire la procedura, impostare il livello di dettaglio di MSBuild alla normalità o versione successiva.  
@@ -209,11 +209,11 @@ ZipProjects:
   
  In questa sezione viene illustrato come creare un nodo figlio della Console per il tipo di progetto SimpleProject.  
   
-1.  Rinominare la cartella \Templates\Projects\SimpleProject\ con \Templates\Projects\ConsoleApp\\.  
+1. Rinominare la cartella \Templates\Projects\SimpleProject\ con \Templates\Projects\ConsoleApp\\.  
   
-2.  Nel **delle proprietà** finestra, selezionare tutti i cinque file nella cartella \Templates\Projects\ConsoleApp\ e verificare che il **azione di compilazione** è impostata su **ZipProject**.  
+2. Nel **delle proprietà** finestra, selezionare tutti i cinque file nella cartella \Templates\Projects\ConsoleApp\ e verificare che il **azione di compilazione** è impostata su **ZipProject**.  
   
-3.  Nel file SimpleProject.vstemplate, aggiungere la riga seguente alla fine del \<TemplateData > sezione, appena prima del tag di chiusura.  
+3. Nel file SimpleProject.vstemplate, aggiungere la riga seguente alla fine del \<TemplateData > sezione, appena prima del tag di chiusura.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      In questo modo il modello di applicazione Console venga visualizzato nel nodo figlio Console e nel nodo padre SimpleProject, a un livello sopra il nodo figlio.  
   
-4.  Salvare il file SimpleProject.vstemplate.  
+4. Salvare il file SimpleProject.vstemplate.  
   
-5.  Nel file con estensione csproj, aggiungere \<OutputSubPath > a ciascuno degli elementi ZipProject. Scaricare il progetto, come in precedenza e modificare il file di progetto.  
+5. Nel file con estensione csproj, aggiungere \<OutputSubPath > a ciascuno degli elementi ZipProject. Scaricare il progetto, come in precedenza e modificare il file di progetto.  
   
-6.  Individuare il \<ZipProject > elementi. A ogni \<ZipProject > elemento, aggiungere un \<OutputSubPath > elemento e assegnargli il valore di Console. Il ZipProject  
+6. Individuare il \<ZipProject > elementi. A ogni \<ZipProject > elemento, aggiungere un \<OutputSubPath > elemento e assegnargli il valore di Console. Il ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Aggiungere quanto segue \<PropertyGroup > nel file di progetto:  
+7. Aggiungere quanto segue \<PropertyGroup > nel file di progetto:  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Salvare il file di progetto e ricaricare il progetto.  
+8. Salvare il file di progetto e ricaricare il progetto.  
   
 ## <a name="testing-the-project-type-child-node"></a>Il nodo figlio del tipo progetto di test  
  Verificare il file di progetto modificato per verificare se il **Console** nodi figlio viene visualizzato nel **nuovo progetto** nella finestra di dialogo.  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>Per sostituire i parametri di modello di progetto  
   
-1.  Nel file SimpleProjectNode.cs, rimuovere il `AddFileFromTemplate` (metodo).  
+1. Nel file SimpleProjectNode.cs, rimuovere il `AddFileFromTemplate` (metodo).  
   
-2.  Nel file \Templates\Projects\ConsoleApp\SimpleProject.myproj, individuare il \<RootNamespace > proprietà e modificarne il valore su $ $safeprojectname.  
+2. Nel file \Templates\Projects\ConsoleApp\SimpleProject.myproj, individuare il \<RootNamespace > proprietà e modificarne il valore su $ $safeprojectname.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  Nel file \Templates\Projects\SimpleProject\Program.cs, sostituire il contenuto del file con il codice seguente:  
+3. Nel file \Templates\Projects\SimpleProject\Program.cs, sostituire il contenuto del file con il codice seguente:  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  Ricompilare il progetto SimpleProject e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.  
+4. Ricompilare il progetto SimpleProject e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.  
   
-5.  Creare una nuova applicazione SimpleProject Console. (Nelle **tipi di progetto** riquadro, selezionare **SimpleProject**. Nella sezione **modelli di Visual Studio installati**, selezionare **applicazione Console**.)  
+5. Creare una nuova applicazione SimpleProject Console. (Nelle **tipi di progetto** riquadro, selezionare **SimpleProject**. Nella sezione **modelli di Visual Studio installati**, selezionare **applicazione Console**.)  
   
-6.  Aprire Program.cs nel progetto appena creato. Dovrebbe essere simile al seguente (i valori GUID nel file saranno diversa.):  
+6. Aprire Program.cs nel progetto appena creato. Dovrebbe essere simile al seguente (i valori GUID nel file saranno diversa.):  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  La pagina delle proprietà create in questa sezione consente di modificare e salvare le proprietà del progetto:  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. Nel file SimpleProjectPackage.cs, aggiungere questo `ProvideObject` dell'attributo di `SimpleProjectPackage` classe:  
   

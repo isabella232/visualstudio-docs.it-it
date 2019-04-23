@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080566"
 ---
 # <a name="searching-the-schema-set"></a>Ricerche nel set di schemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML Schema Explorer consente di eseguire ricerche nel set di schemi nei seguenti modi:  
   
--   Ricerca per parole chiave.  
+- Ricerca per parole chiave.  
   
--   Ricerca specifica dello schema.  
+- Ricerca specifica dello schema.  
   
 ## <a name="keyword-search"></a>Ricerca per parole chiave  
  Eseguire ricerche per parole chiave immettendo una sottostringa nel **set di schemi di ricerca** casella di testo della barra degli strumenti XML Schema Explorer.  
@@ -32,11 +32,11 @@ XML Schema Explorer consente di eseguire ricerche nel set di schemi nei seguenti
   
  XML Schema Explorer esegue ricerche dei seguenti elementi nel set di schemi:  
   
--   Attributi `name` o `ref` che corrispondono alla parola chiave specificata. In questo modo è possibile individuare elementi, attributi, tipi e così via in base al nome.  
+- Attributi `name` o `ref` che corrispondono alla parola chiave specificata. In questo modo è possibile individuare elementi, attributi, tipi e così via in base al nome.  
   
--   Attributi `schemaLocation` delle istruzioni include.  
+- Attributi `schemaLocation` delle istruzioni include.  
   
--   Attributi `namespace` delle istruzioni import.  
+- Attributi `namespace` delle istruzioni import.  
   
 ## <a name="schema-specific-search"></a>Ricerca specifica dello schema  
  XML Schema Explorer comprende inoltre ricerche predefinite cui è possibile accedere usando il menu di scelta rapida. Per altre informazioni sui menu di scelta rapida disponibili, vedere [menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md). È anche possibile eseguire una ricerca specifica dello schema dalla visualizzazione iniziale; per altre informazioni, vedere la sezione "Dettagli Set di schemi" nel [visualizzazione iniziale](../xml-tools/start-view.md) argomento.  

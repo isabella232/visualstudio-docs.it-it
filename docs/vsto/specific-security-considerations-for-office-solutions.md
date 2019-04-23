@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081320"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerazioni sulla sicurezza specifiche per le soluzioni Office
   Le funzionalità di sicurezza fornite da Microsoft .NET Framework e Microsoft Office consentono di proteggere le soluzioni Office da potenziali rischi di sicurezza. Questo argomento illustra alcuni di tali rischi e fornisce suggerimenti utili su come proteggersi. Sono incluse anche informazioni su come le impostazioni di sicurezza di Microsoft Office possono influire sulle soluzioni Office.
@@ -39,13 +39,13 @@ ms.locfileid: "56629079"
 
 ### <a name="recommendations"></a>Suggerimenti
 
--   Convalidare sempre l'input e i dati, che derivino dall'utente, dal documento, da un database, da un servizio Web, o da qualsiasi altra origine.
+- Convalidare sempre l'input e i dati, che derivino dall'utente, dal documento, da un database, da un servizio Web, o da qualsiasi altra origine.
 
--   Prestare attenzione nell'esposizione di determinati tipi di funzionalità, come l'acquisizione di dati privilegiati per conto dell'utente e il relativo inserimento in un foglio di lavoro non protetto.
+- Prestare attenzione nell'esposizione di determinati tipi di funzionalità, come l'acquisizione di dati privilegiati per conto dell'utente e il relativo inserimento in un foglio di lavoro non protetto.
 
--   A seconda del tipo di applicazione, può rivelarsi utile verificare che il documento originale sia in esecuzione prima di eseguire qualsiasi codice. Ad esempio, verificare che venga eseguito da un documento archiviato in un percorso noto e sicuro.
+- A seconda del tipo di applicazione, può rivelarsi utile verificare che il documento originale sia in esecuzione prima di eseguire qualsiasi codice. Ad esempio, verificare che venga eseguito da un documento archiviato in un percorso noto e sicuro.
 
--   Se nell'applicazione vengono eseguite operazioni privilegiate, può essere opportuno visualizzare un avviso all'apertura del documento. È ad esempio possibile creare una schermata iniziale o una finestra di dialogo di avvio in cui viene segnalato che l'applicazione accederà a informazioni personali, consentendo all'utente di scegliere se continuare o annullare l'operazione. Se un avviso di questo tipo viene visualizzato da un documento apparentemente innocuo, l'utente finale potrà chiudere l'applicazione prima che si verifichino danni.
+- Se nell'applicazione vengono eseguite operazioni privilegiate, può essere opportuno visualizzare un avviso all'apertura del documento. È ad esempio possibile creare una schermata iniziale o una finestra di dialogo di avvio in cui viene segnalato che l'applicazione accederà a informazioni personali, consentendo all'utente di scegliere se continuare o annullare l'operazione. Se un avviso di questo tipo viene visualizzato da un documento apparentemente innocuo, l'utente finale potrà chiudere l'applicazione prima che si verifichino danni.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Codice bloccato dalla protezione del modello a oggetti di Outlook
  Microsoft Office può limitare l'uso da parte del codice di determinate proprietà, metodi e oggetti nel modello a oggetti. Limitando l'accesso a questi oggetti, Outlook aiuta a evitare che virus e worm di posta elettronica usando il modello a oggetti per scopi dannosi. Questa funzionalità di sicurezza è nota come protezione del modello a oggetti di Outlook. Se un componente aggiuntivo VSTO prova a usare una proprietà o metodo mentre è abilitata la protezione del modello a oggetti, Outlook visualizza un avviso di sicurezza che consente all'utente di arrestare l'operazione oppure l'utente concedere l'accesso a proprietà o del metodo per un periodo limitato di t IME. Se l'utente interrompe l'operazione, i componenti aggiuntivi di Outlook creati con le soluzioni Office in Visual Studio generano un'eccezione <xref:System.Runtime.InteropServices.COMException>.
@@ -103,17 +103,17 @@ ms.locfileid: "56629079"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Per disabilitare i componenti aggiuntivi VSTO nelle applicazioni Microsoft Office 2010 e Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]
 
-1.  Scegliere la scheda **File** .
+1. Scegliere la scheda **File** .
 
-2.  Scegliere il *NomeApplicazione* **opzioni** pulsante.
+2. Scegliere il *NomeApplicazione* **opzioni** pulsante.
 
-3.  Nel riquadro delle categorie, scegliere **Centro protezione**.
+3. Nel riquadro delle categorie, scegliere **Centro protezione**.
 
-4.  Nel riquadro dei dettagli scegliere Impostazioni **Centro protezione**.
+4. Nel riquadro dei dettagli scegliere Impostazioni **Centro protezione**.
 
-5.  Nel riquadro delle categorie scegliere **Componenti aggiuntivi**.
+5. Nel riquadro delle categorie scegliere **Componenti aggiuntivi**.
 
-6.  Nel riquadro dei dettagli selezionare **Richiedi che i componenti aggiuntivi di applicazioni siano firmati da un autore attendibile** o **Disabilita tutti i componenti aggiuntivi delle applicazioni**.
+6. Nel riquadro dei dettagli selezionare **Richiedi che i componenti aggiuntivi di applicazioni siano firmati da un autore attendibile** o **Disabilita tutti i componenti aggiuntivi delle applicazioni**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)

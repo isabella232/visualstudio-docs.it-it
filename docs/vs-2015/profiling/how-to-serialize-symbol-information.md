@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103797"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedura: Serializzare le informazioni sui simboli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "54769179"
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Per serializzare automaticamente le informazioni sui simboli  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
      Verrà visualizzata la finestra di dialogo **Opzioni**.  
   
-2.  Fare clic su **Strumenti per le prestazioni**.  
+2. Fare clic su **Strumenti per le prestazioni**.  
   
-3.  In **Impostazione generale** selezionare **Serializzare automaticamente le informazioni sui simboli**.  
+3. In **Impostazione generale** selezionare **Serializzare automaticamente le informazioni sui simboli**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
- [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Procedura: Salvare file di rapporto analizzati](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Procedura: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Procedura: Salvare i file di Report analizzato](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

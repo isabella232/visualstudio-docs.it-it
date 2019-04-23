@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080904"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Procedura: Eliminare gli avvisi tramite una voce di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ NOTA]
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Per eliminare un avviso tramite una voce di menu  
   
-1.  Nel **Analyze** menu, scegliere **Windows** e quindi scegliere **analisi del codice**.  
+1. Nel **Analyze** menu, scegliere **Windows** e quindi scegliere **analisi del codice**.  
   
-2.  Nel **analisi del codice** finestra, selezionare Elimina l'avviso.  
+2. Nel **analisi del codice** finestra, selezionare Elimina l'avviso.  
   
-3.  Scegliere le azioni, quindi scegliere **Elimina messaggi**e quindi scegliere **In origine** oppure **File di eliminazione progetto**.  
+3. Scegliere le azioni, quindi scegliere **Elimina messaggi**e quindi scegliere **In origine** oppure **File di eliminazione progetto**.  
   
      Viene eliminato l'avviso specifico, e l'avviso viene visualizzato nella finestra Analisi codice barrato.  
   
