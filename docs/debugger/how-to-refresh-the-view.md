@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiornare la visualizzazione | Microsoft Docs'
+title: 'Procedura: Aggiornare la visualizzazione | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6a1b70326e2eca32c1be2c27382e55c51bc5f1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075051"
 ---
-# <a name="how-to-refresh-the-view"></a>Procedura: aggiornare la visualizzazione
+# <a name="how-to-refresh-the-view"></a>Procedura: Aggiornare la visualizzazione
 Spy + + cattura un' "istantanea" tabelle di sistema e consente di aggiornare una vista basata su queste informazioni. È importante aggiornare periodicamente le viste di sistema. Se si dispone di una vista di Spy + + aprire e non hanno aggiornato la vista, non noterai tali processi, thread e windows che verranno creati successivamente. Inoltre, è probabile che gli elementi che non esistono più. Il **Aggiorna** comando è disponibile per tutte le viste ad eccezione della visualizzazione di messaggi.
 
 ### <a name="to-refresh-the-currently-active-view"></a>Per aggiornare la visualizzazione attualmente attiva
 
--   Scegliere **aggiornare** dal **finestra** menu o fare clic il **Aggiorna** pulsante sulla barra degli strumenti.
+- Scegliere **aggiornare** dal **finestra** menu o fare clic il **Aggiorna** pulsante sulla barra degli strumenti.
 
 ## <a name="see-also"></a>Vedere anche
 - [Uso di Spy++](../debugger/using-spy-increment.md)

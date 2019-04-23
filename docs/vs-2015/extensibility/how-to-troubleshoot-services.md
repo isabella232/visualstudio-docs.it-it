@@ -10,12 +10,12 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074308"
 ---
 # <a name="how-to-troubleshoot-services"></a>Procedura: Risolvere i problemi relativi ai servizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>Per risolvere i problemi di un servizio  
   
-1.  Esaminare il Registro di sistema per vedere se il servizio è stato registrato correttamente. Per altre informazioni, vedere [registrazione dei servizi](../misc/registering-services.md).  
+1. Esaminare il Registro di sistema per vedere se il servizio è stato registrato correttamente. Per altre informazioni, vedere [registrazione dei servizi](../misc/registering-services.md).  
   
      Il frammento di file con estensione reg seguente mostra come potrebbe essere registrato il servizio SVsTextManager:  
   
@@ -52,17 +52,17 @@ if (log == null) return;
   
      Nell'esempio precedente, numero di versione è la versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ad esempio 12.0 o 14.0, la chiave {F5E7E71D-1401-11d1-883B-0000F87579D2} è l'identificatore di servizio (SID) del servizio, SVsTextManager e le {il valore predefinito F5E7E720-1401-11D1-883B-0000F87579D2} è il GUID della gestione testo VSPackage, che fornisce il servizio del pacchetto.  
   
-2.  Quando si chiama GetService, usare il tipo di servizio e non il tipo di interfaccia. Quando si richiede un servizio dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> estrae il GUID dal tipo. Un servizio non verrà trovato se sussistono le condizioni seguenti:  
+2. Quando si chiama GetService, usare il tipo di servizio e non il tipo di interfaccia. Quando si richiede un servizio dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> estrae il GUID dal tipo. Un servizio non verrà trovato se sussistono le condizioni seguenti:  
   
-    1.  Un tipo di interfaccia viene passato al metodo GetService anziché il tipo di servizio.  
+    1. Un tipo di interfaccia viene passato al metodo GetService anziché il tipo di servizio.  
   
-    2.  Nessun GUID in modo esplicito viene assegnato all'interfaccia. Di conseguenza, il sistema crea un GUID predefinito per un oggetto in base alle esigenze.  
+    2. Nessun GUID in modo esplicito viene assegnato all'interfaccia. Di conseguenza, il sistema crea un GUID predefinito per un oggetto in base alle esigenze.  
   
-3.  Assicurarsi che il pacchetto VSPackage che richiede il servizio è stato individuato. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] un pacchetto VSPackage di siti al termine della creazione e prima di chiamare <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3. Assicurarsi che il pacchetto VSPackage che richiede il servizio è stato individuato. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] un pacchetto VSPackage di siti al termine della creazione e prima di chiamare <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Se si dispone di codice in un costruttore di VSPackage che necessita di un servizio, spostarlo al metodo Initialize.  
   
-4.  Assicurarsi che si usa il provider del servizio corretto.  
+4. Assicurarsi che si usa il provider del servizio corretto.  
   
      Non tutti i provider di servizi sono uguali. Il provider di servizi che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passa a una finestra degli strumenti è diversa da quella passa a un pacchetto VSPackage. Il provider di servizio finestra degli strumenti è a conoscenza <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, ma non conosce <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. È possibile chiamare <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> per ottenere un provider di servizi di VSPackage all'interno di una finestra degli strumenti.  
   

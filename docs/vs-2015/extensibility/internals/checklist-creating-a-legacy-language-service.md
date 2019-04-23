@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077524"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Elenco di controllo: Creazione di un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Elenco di controllo seguente sono riepilogati i passaggi di base è necessario e
   
 ## <a name="steps-for-creating-a-language-service"></a>Passaggi per la creazione di un servizio di linguaggio  
   
-1.  Implementare l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
+1. Implementare l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
   
-    -   Nel pacchetto VSPackage, implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaccia per fornire il servizio di linguaggio.  
+    - Nel pacchetto VSPackage, implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaccia per fornire il servizio di linguaggio.  
   
-    -   Rendere il servizio di linguaggio disponibili per l'ambiente di sviluppo integrato (IDE) nei <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementazione.  
+    - Rendere il servizio di linguaggio disponibili per l'ambiente di sviluppo integrato (IDE) nei <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementazione.  
   
-2.  Implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaccia nella classe del servizio principale del linguaggio.  
+2. Implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaccia nella classe del servizio principale del linguaggio.  
   
      Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaccia è il punto iniziale dell'interazione tra l'editor principale e il servizio di linguaggio.  
   
@@ -121,7 +121,7 @@ Elenco di controllo seguente sono riepilogati i passaggi di base è necessario e
   
    Fornire contesto all'editor in uno dei modi seguenti:  
   
-  -   Fornire il contesto per marcatori di testo mediante l'implementazione di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaccia.  
+  - Fornire il contesto per marcatori di testo mediante l'implementazione di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaccia.  
   
   Fornire tutto il contesto utente, implementando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interfaccia.  
   

@@ -8,32 +8,32 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 11352c6d73bdbbd0783a6bb4f16860920fb5d9b7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58967310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079012"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e la Guida di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_UITextAndTerminology"></a> Testo dell'interfaccia utente e terminologia
+## <a name="BKMK_UITextAndTerminology"></a> Testo dell'interfaccia utente e terminologia
  Testo comprensibile è fondamentale per efficace interfaccia utente. Gli utenti di software tendono a leggere le etichette vengono in primo luogo, vale a dire quelli più importanti per il completamento dell'attività in questione. Testo statico viene letto con minore frequenza. Piano per gli utenti avviare le sessioni di lavoro con un'analisi rapida della finestra intera, seguita da una lettura dell'interfaccia utente in questo ordine approssimativo:
 
-1.  Controlli interattivi nel centro
+1. Controlli interattivi nel centro
 
-2.  Eseguire il commit di pulsanti
+2. Eseguire il commit di pulsanti
 
-3.  Controlli interattivi trovati altrove
+3. Controlli interattivi trovati altrove
 
-4.  Istruzioni principali
+4. Istruzioni principali
 
-5.  Spiegazioni aggiuntive
+5. Spiegazioni aggiuntive
 
-6.  Titolo della finestra
+6. Titolo della finestra
 
-7.  Altro testo statico nel corpo principale
+7. Altro testo statico nel corpo principale
 
 ### <a name="usage-patterns-for-ui-text"></a>Modelli di utilizzo per il testo dell'interfaccia utente
 
@@ -45,19 +45,19 @@ ms.locfileid: "58967310"
 
 ##### <a name="writing-style-rules-for-helper-text"></a>La scrittura di regole di stile per il testo di supporto
 
--   Non viene illustrata l'ovvio. A meno che non sia assolutamente necessario, non includere testo esplicativo.
+- Non viene illustrata l'ovvio. A meno che non sia assolutamente necessario, non includere testo esplicativo.
 
--   Testo esplicativo è sempre posizionato nella parte superiore della finestra di dialogo e deve fare riferimento all'attività eseguita.
+- Testo esplicativo è sempre posizionato nella parte superiore della finestra di dialogo e deve fare riferimento all'attività eseguita.
 
--   Precisamente spiegare agli utenti dovranno effettuare. Evitare la ridondanza e la comunicazione eccessivo.
+- Precisamente spiegare agli utenti dovranno effettuare. Evitare la ridondanza e la comunicazione eccessivo.
 
--   Esaminare ogni finestra e disattivano le istruzioni e le parole duplicate.
+- Esaminare ogni finestra e disattivano le istruzioni e le parole duplicate.
 
--   Mantenere breve testo esplicativo. Se altre informazioni sono necessarie per determinati utenti o gli scenari, quindi fornire un collegamento a un argomento online concetto dettagliato.
+- Mantenere breve testo esplicativo. Se altre informazioni sono necessarie per determinati utenti o gli scenari, quindi fornire un collegamento a un argomento online concetto dettagliato.
 
--   Scrivere il testo in modo che ogni parola contiene peso e non è necessario.
+- Scrivere il testo in modo che ogni parola contiene peso e non è necessario.
 
--   Segui le istruzioni di Microsoft esistente per [testo dell'interfaccia utente](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) e [stile e tono](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
+- Segui le istruzioni di Microsoft esistente per [testo dell'interfaccia utente](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) e [stile e tono](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
 
 #### <a name="supplemental-instructions"></a>Istruzioni aggiuntive
  Istruzioni supplementare forniscono informazioni aggiuntive che consente all'utente di comprendere i controlli o raggruppamenti di controllo. Ciò può anche includere il testo di suggerimento necessario per comprendere quale formato prevede che il controllo di input. Attenersi alle istruzioni aggiuntive solo se necessario. Riservarli per i casi in cui è probabile che l'utente non sarà aiutino a comprendere appieno le ramificazioni della scelta che stanno effettuando.
@@ -81,13 +81,13 @@ ms.locfileid: "58967310"
 
 ##### <a name="writing-style-rules-for-infotips"></a>Regole di stile di scrittura per Infotip
 
--   Scrivere Infotip come frasi complete. Richiedono verbi specifici, maiuscola e la punteggiatura finale.
+- Scrivere Infotip come frasi complete. Richiedono verbi specifici, maiuscola e la punteggiatura finale.
 
--   Usare illustrati gli Infotip per integrare l'istruzione principale o informazioni. Se si usano solo parole diverse per ridefinire l'idea principale, non occorre una finestra popup.
+- Usare illustrati gli Infotip per integrare l'istruzione principale o informazioni. Se si usano solo parole diverse per ridefinire l'idea principale, non occorre una finestra popup.
 
--   Mantenere Infotip breve e semplice. Usare parole brevi e plain, un linguaggio quotidiano che supporta e incoraggia l'utente.
+- Mantenere Infotip breve e semplice. Usare parole brevi e plain, un linguaggio quotidiano che supporta e incoraggia l'utente.
 
--   Segui le istruzioni di Microsoft esistente per [testo dell'interfaccia utente](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) e [stile e tono](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
+- Segui le istruzioni di Microsoft esistente per [testo dell'interfaccia utente](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx) e [stile e tono](https://msdn.microsoft.com/library/windows/desktop/dn742477\(v=vs.85\).aspx).
 
 #### <a name="control-labels"></a>Etichette del controllo
  Etichette del controllo devono essere breve e conciso e seguire le [linee guida di Windows Desktop per i controlli](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx).
@@ -99,52 +99,52 @@ ms.locfileid: "58967310"
 
 ##### <a name="visual-style-rules-for-help-links"></a>Regole di stile di visualizzazione per i collegamenti della Guida
 
--   Utilizzare i colori ambiente corretto per i collegamenti ipertestuali. Un collegamento ipertestuale applicato correttamente uno stile non lampeggia brevemente in rosso quando si fa clic. Se si riscontra questo è un valore che indica che non vengano usati colori dell'ambiente.
+- Utilizzare i colori ambiente corretto per i collegamenti ipertestuali. Un collegamento ipertestuale applicato correttamente uno stile non lampeggia brevemente in rosso quando si fa clic. Se si riscontra questo è un valore che indica che non vengano usati colori dell'ambiente.
 
--   Sottolineature devono essere utilizzate solo sul passaggio del mouse o quando il collegamento è incorporato in un paragrafo.
+- Sottolineature devono essere utilizzate solo sul passaggio del mouse o quando il collegamento è incorporato in un paragrafo.
 
--   Per informazioni più dettagliate sugli stili di oggetto visivo e interazione dei collegamenti ipertestuali, vedere i collegamenti ipertestuali e pulsanti.
+- Per informazioni più dettagliate sugli stili di oggetto visivo e interazione dei collegamenti ipertestuali, vedere i collegamenti ipertestuali e pulsanti.
 
 ##### <a name="writing-style-rules-for-help-links"></a>La scrittura di regole di stile per i collegamenti della Guida
 
--   Quando l'avvio di finestre di dialogo, mantenere gli standard per i puntini di sospensione: nessun puntini di sospensione per la navigazione, quindi sui puntini di sospensione se l'attività richiede un'interfaccia utente aggiuntiva.
+- Quando l'avvio di finestre di dialogo, mantenere gli standard per i puntini di sospensione: nessun puntini di sospensione per la navigazione, quindi sui puntini di sospensione se l'attività richiede un'interfaccia utente aggiuntiva.
 
      ![Help link in Visual Studio](../../extensibility/ux-guidelines/media/0601-e-helplink.png "0601-e_HelpLink")
 
      **I puntini di sospensione (...) in un collegamento alla Guida indica che l'attività richiede un'interfaccia utente aggiuntiva.**
 
--   Collegamenti non devono iniziare con "Informazioni", questo non costituisce l'intenzione dell'utente. L'utente desidera rispondere a una domanda specifica, non riceve una formazione generale.
+- Collegamenti non devono iniziare con "Informazioni", questo non costituisce l'intenzione dell'utente. L'utente desidera rispondere a una domanda specifica, non riceve una formazione generale.
 
--   Guida di frase collega in modo che essi porre la domanda che risponderà a questo argomento.
+- Guida di frase collega in modo che essi porre la domanda che risponderà a questo argomento.
 
-     Corretto:  "Altre informazioni sui prezzi di servizi mobili di Windows Azure"
+     Non corretto:    "Altre informazioni sui prezzi di servizi mobili di Windows Azure"
 
-     Corretto:  "Quali sono le opzioni di determinazione dei prezzi sono disponibili per servizi mobili di Windows Azure"?
+     Corretto:    "Quali sono le opzioni di determinazione dei prezzi sono disponibili per servizi mobili di Windows Azure"?
 
--   Non utilizzare mai *fare clic su...* per il testo del collegamento.
+- Non utilizzare mai *fare clic su...* per il testo del collegamento.
 
--   Non collegare mai solo la parola "qui". Ciò risulta problematico per alcuni lettori dello schermo, che verranno vocali solo la parola con collegamento ipertestuale.
+- Non collegare mai solo la parola "qui". Ciò risulta problematico per alcuni lettori dello schermo, che verranno vocali solo la parola con collegamento ipertestuale.
 
-     Corretto:  "Informazioni su servizi mobili di Azure **qui**"
+     Non corretto:    "Informazioni su servizi mobili di Azure **qui**"
 
-     Corretto:  "Quali sono le opzioni di determinazione dei prezzi sono disponibili per servizi mobili di Windows Azure"?
+     Corretto:    "Quali sono le opzioni di determinazione dei prezzi sono disponibili per servizi mobili di Windows Azure"?
 
--   Per altre informazioni sullo stile di scrittura corretti per i collegamenti della Guida, vedere la [linee guida di Windows Desktop per la Guida](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
+- Per altre informazioni sullo stile di scrittura corretti per i collegamenti della Guida, vedere la [linee guida di Windows Desktop per la Guida](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
 
 #### <a name="hint-text"></a>Testo di suggerimento
  Testo del suggerimento visualizzato come filigrana all'interno di un controllo o sotto il controllo. Formattazione corretta verrà applicata utilizzando il token VSColors appropriato, `Environment.GrayText`.
 
  Può essere visualizzato in diversi formati.
 
--   Al posto l'etichetta del controllo:
+- Al posto l'etichetta del controllo:
 
      ![Hint text in Visual Studio](../../extensibility/ux-guidelines/media/0601-f-hinttext1.png "0601-f_HintText1")
 
--   Con un verbo, fornendo istruzioni:
+- Con un verbo, fornendo istruzioni:
 
      ![Hint text in Visual Studio](../../extensibility/ux-guidelines/media/0601-g-hinttext2.png "0601-g_HintText2")
 
--   Con il testo che indica una voce di richiesta:
+- Con il testo che indica una voce di richiesta:
 
      ![Testo in Visual Studio l'hint](../../extensibility/ux-guidelines/media/0601-h-hinttext3.png "0601 h_HintText3")
 
@@ -173,31 +173,31 @@ ms.locfileid: "58967310"
 
 ### <a name="rules-for-creating-an-error-message"></a>Regole per la creazione di un messaggio di errore
 
--   Durante la costruzione di messaggi di errore, scegliere il livello di errore appropriato per il gruppo di destinatari. Proporre riepiloghi semplice che forniscono un'azione che può richiedere all'utente, se applicabile. Non tutto ciò che l'utente non deve necessariamente conoscere lo stato.
+- Durante la costruzione di messaggi di errore, scegliere il livello di errore appropriato per il gruppo di destinatari. Proporre riepiloghi semplice che forniscono un'azione che può richiedere all'utente, se applicabile. Non tutto ciò che l'utente non deve necessariamente conoscere lo stato.
 
--   Fornire assistenza costruttivo. È facile leggere e agire su un messaggio di errore contenente l'istruzione.
+- Fornire assistenza costruttivo. È facile leggere e agire su un messaggio di errore contenente l'istruzione.
 
--   Non usare doppia negativi.
+- Non usare doppia negativi.
 
--   Eseguire entrambi un automatizzati e manuale grammatica e ortografia controllare nei messaggi di errore che scrittura.
+- Eseguire entrambi un automatizzati e manuale grammatica e ortografia controllare nei messaggi di errore che scrittura.
 
--   Per i messaggi di errore complesse, evitare le comunicazioni sequenziale. Non utilizzare mai un'associazione F1 per il messaggio di errore. Il messaggio stesso dovrebbe essere sufficiente.
+- Per i messaggi di errore complesse, evitare le comunicazioni sequenziale. Non utilizzare mai un'associazione F1 per il messaggio di errore. Il messaggio stesso dovrebbe essere sufficiente.
 
--   Usare l'icona corretta.
+- Usare l'icona corretta.
 
--   Porre domande facile da comprendere e usare i pulsanti con scelte non crittografate, ad esempio "Elimina" e "Annulla".
+- Porre domande facile da comprendere e usare i pulsanti con scelte non crittografate, ad esempio "Elimina" e "Annulla".
 
--   Per gli avvisi, specificare chiaramente qual è la conseguenza di procedere. I pulsanti devono indicare la conseguenza.
+- Per gli avvisi, specificare chiaramente qual è la conseguenza di procedere. I pulsanti devono indicare la conseguenza.
 
--   Per gli errori, descrivere ciò che l'utente può eseguire per risolvere il problema. I pulsanti devono essere azioni o pronunciare "Chiudi". Non usare un pulsante "OK" per un messaggio di errore.
+- Per gli errori, descrivere ciò che l'utente può eseguire per risolvere il problema. I pulsanti devono essere azioni o pronunciare "Chiudi". Non usare un pulsante "OK" per un messaggio di errore.
 
--   Alcune domande da porsi durante la costruzione di un messaggio di errore:
+- Alcune domande da porsi durante la costruzione di un messaggio di errore:
 
-    -   L'utente capisce come risolvere il problema con l'errore da solo?
+    - L'utente capisce come risolvere il problema con l'errore da solo?
 
-    -   L'utente usa il vocabolario stesso a questo errore?
+    - L'utente usa il vocabolario stesso a questo errore?
 
-    -   È ambiguo questo errore o condivisi in diverse situazioni? In questo caso, come guidano gli utenti per la soluzione che ideale?
+    - È ambiguo questo errore o condivisi in diverse situazioni? In questo caso, come guidano gli utenti per la soluzione che ideale?
 
 #### <a name="build-errors"></a>Errori di compilazione
  Poiché Visual Studio è uno strumento di sviluppo software, molti dei suoi componenti hanno una compilazione, conversione o la codifica di passaggio per convertire il lavoro degli sviluppatori in formato binario. Queste conversioni possono causare errori quando il compilatore non può elaborare i file creati in modo non corretto o quando le opzioni del compilatore non sono state impostate correttamente.
@@ -210,11 +210,11 @@ ms.locfileid: "58967310"
 
  Scrivere gli errori di compilazione chiara e concisa:
 
--   **Usare un linguaggio semplice** che spiega il problema non offrivano gergo del compilatore. Il testo di un errore di compilazione non deve essere eccessivamente tecnico.
+- **Usare un linguaggio semplice** che spiega il problema non offrivano gergo del compilatore. Il testo di un errore di compilazione non deve essere eccessivamente tecnico.
 
--   **Descrive le possibili cause.** Ad esempio, "manca un carattere due punti tra proprietà e il valore nel ' (proprietà): (valore)' dichiarazione."
+- **Descrive le possibili cause.** Ad esempio, "manca un carattere due punti tra proprietà e il valore nel ' (proprietà): (valore)' dichiarazione."
 
--   Fornire dettagli sulle possibili correzioni. Se non c'è spazio sufficiente, dettagli aggiuntivi possono essere inseriti nell'argomento della Guida corrispondente.
+- Fornire dettagli sulle possibili correzioni. Se non c'è spazio sufficiente, dettagli aggiuntivi possono essere inseriti nell'argomento della Guida corrispondente.
 
 ### <a name="components-of-a-well-written-error-message"></a>Componenti di un messaggio di errore ben scritta
 
@@ -227,31 +227,31 @@ ms.locfileid: "58967310"
 #### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>Fornire una spiegazione chiara e concisa del motivo per cui si è verificato il problema piuttosto che una spiegazione.
  Gli utenti con i dettagli tecnici la spiegazione di sovraccaricare li renderanno più possibilità di ignorare i messaggi di errore. Esempi di messaggistica ottimale:
 
--   "Impossibile aprire il file richiesto".
+- "Impossibile aprire il file richiesto".
 
--   "Impossibile connettersi a Internet".
+- "Impossibile connettersi a Internet".
 
 #### <a name="provide-information-about-how-to-fix-the-problem"></a>Fornire informazioni su come risolvere il problema.
  Offrire suggerimenti utente come correggere il problema. Essere onesti con l'utente se non sono disponibili suggerimenti. Fornire collegamenti diretti a origini online alternativi, ad esempio il supporto tecnico o il supporto della community. Provare a scegliere utenti specifiche informazioni online relative al problema. Per un ID dell'errore, prendere in considerazione la connessione degli utenti a un thread di discussione sullo specifico errore. Esempi di messaggistica ottimale:
 
--   "Verificare che si è connessi a Internet e ripetere l'operazione".
+- "Verificare che si è connessi a Internet e ripetere l'operazione".
 
--   "Assicurarsi che il file esista e di avere l'autorizzazione per aprirla."
+- "Assicurarsi che il file esista e di avere l'autorizzazione per aprirla."
 
 #### <a name="write-a-message-that-is-short-and-to-the-point"></a>Scrivere un messaggio di brevi e concisi.
  Può inviare una notifica di un messaggio di errore, descrivere e offrono una soluzione ma comunque essere ignorato se è prolisso. Un'unica soluzione consiste nell'usare la progressiva diffusione con il pulsante Dettagli. Ad esempio, viene proposta una breve descrizione/soluzione e quindi inserire altri dettagli in un pulsante Dettagli. Se gli utenti scelgono per altre informazioni sull'errore, è possibile farlo.
 
  La lingua del messaggio deve essere:
 
--   **Domain-appropriate.** Usare l'utente sarà in grado di linguaggio. Anche se i clienti Microsoft sono gli sviluppatori, che spesso non sono il contesto e terminologia che è disponibile.
+- **Domain-appropriate.** Usare l'utente sarà in grado di linguaggio. Anche se i clienti Microsoft sono gli sviluppatori, che spesso non sono il contesto e terminologia che è disponibile.
 
--   **Attributo specifico.** Evitare di formulazione vaga e assegnare nomi specifici e i percorsi degli oggetti coinvolti. Ad esempio, un messaggio di errore, ad esempio"carattere non valido" non è utile. Il carattere? "File non trovato". Il file?
+- **Attributo specifico.** Evitare di formulazione vaga e assegnare nomi specifici e i percorsi degli oggetti coinvolti. Ad esempio, un messaggio di errore, ad esempio"carattere non valido" non è utile. Il carattere? "File non trovato". Il file?
 
--   **Utile.** Non segnala l'errore all'utente o farlo sentire stupido. Evitare di linguaggio offensivo o ostile (kill, execute, terminare, irreversibile, non valida). Evitare di testo in maiuscolo, che è spesso considerato shouting e non è leggibile come. Non usare volgare e offensivo.
+- **Utile.** Non segnala l'errore all'utente o farlo sentire stupido. Evitare di linguaggio offensivo o ostile (kill, execute, terminare, irreversibile, non valida). Evitare di testo in maiuscolo, che è spesso considerato shouting e non è leggibile come. Non usare volgare e offensivo.
 
--   **Correggere.** Usare la grammatica e ortografia corretta (anche in alphas). Errori di digitazione sono poco professionale e imbarazzante.
+- **Correggere.** Usare la grammatica e ortografia corretta (anche in alphas). Errori di digitazione sono poco professionale e imbarazzante.
 
--   **Contestualmente appropriate.** Usare il testo del pulsante appropriato. Evitare il pulsante "OK" e utilizzare invece "Continua" o "Yes/No".
+- **Contestualmente appropriate.** Usare il testo del pulsante appropriato. Evitare il pulsante "OK" e utilizzare invece "Continua" o "Yes/No".
 
 ### <a name="error-message-examples"></a>Esempi di messaggi di errore
 
@@ -264,15 +264,15 @@ ms.locfileid: "58967310"
 ### <a name="overview"></a>Panoramica
  Oltre alla documentazione in MSDN, un utente di Visual Studio include diversi punti di accesso per assistere l'utente mentre nell'interfaccia utente. Per garantire che i punti di accesso disponibili in modo coerente, i team delle funzionalità necessari sfruttare i vantaggi del sistema di Guida offerto dall'ambiente. Questi punti di accesso sono:
 
--   **Testo esplicativo e supplemento nelle finestre di dialogo.** Testo statico che concede a direzione o spiegazione, sull'interfaccia utente disponibile al passaggio del mouse su un'icona InfoTip o area.
+- **Testo esplicativo e supplemento nelle finestre di dialogo.** Testo statico che concede a direzione o spiegazione, sull'interfaccia utente disponibile al passaggio del mouse su un'icona InfoTip o area.
 
--   **F1 Guida** (solo editor). All'interno dell'editor di Visual Studio, un utente può considerare attendibili che in qualsiasi momento, se si preme F1 verrà visualizzata un argomento della Guida specifiche per la selezione corrente. Assicurarsi che gli argomenti associati F1 siano appropriate e informativi.
+- **F1 Guida** (solo editor). All'interno dell'editor di Visual Studio, un utente può considerare attendibili che in qualsiasi momento, se si preme F1 verrà visualizzata un argomento della Guida specifiche per la selezione corrente. Assicurarsi che gli argomenti associati F1 siano appropriate e informativi.
 
--   **Collegamenti ipertestuali agli argomenti della Guida.** Un collegamento ipertestuale all'interno di una finestra di dialogo, una finestra degli strumenti o area di progettazione che avvia un argomento per aiutare l'utente a ottenere ulteriori informazioni su una tecnologia, funzionalità o informazioni su come eseguire un'attività.
+- **Collegamenti ipertestuali agli argomenti della Guida.** Un collegamento ipertestuale all'interno di una finestra di dialogo, una finestra degli strumenti o area di progettazione che avvia un argomento per aiutare l'utente a ottenere ulteriori informazioni su una tecnologia, funzionalità o informazioni su come eseguire un'attività.
 
--   **Meccanismi dell'interfaccia utente di helper, ad esempio gli smart tag e le finestre di dialogo di creazione.** Questi meccanismi di assistere l'utente in un elemento dell'interfaccia utente di comprendere o semplificano un'attività, ad esempio gli smart tag o le finestre di dialogo di generatore.
+- **Meccanismi dell'interfaccia utente di helper, ad esempio gli smart tag e le finestre di dialogo di creazione.** Questi meccanismi di assistere l'utente in un elemento dell'interfaccia utente di comprendere o semplificano un'attività, ad esempio gli smart tag o le finestre di dialogo di generatore.
 
--   **Guida dell'interfaccia utente pulsanti** (deprecato). Un indicatore visibile nella barra del titolo che fornisce l'accesso per l'argomento della Guida F1 correlato.
+- **Guida dell'interfaccia utente pulsanti** (deprecato). Un indicatore visibile nella barra del titolo che fornisce l'accesso per l'argomento della Guida F1 correlato.
 
 ### <a name="text"></a>Testo
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fd519b396f5120b7b0acca8d2e6144e363ab1f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075545"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procedura: Aggiungere un file di risorse
   I comandi per l'aggiunta di file di risorse è il menu di scelta rapida del nodo della soluzione e i nodi di funzionalità in Esplora soluzioni. Per altre informazioni, vedere [soluzioni SharePoint localizzazione](../sharepoint/localizing-sharepoint-solutions.md).
@@ -42,13 +42,13 @@ ms.locfileid: "56633057"
 
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Per aggiungere un file di risorse di funzionalità a una funzionalità di SharePoint
 
-1.  Se la soluzione di SharePoint non è già aperta in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aprire la soluzione.
+1. Se la soluzione di SharePoint non è già aperta in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aprire la soluzione.
 
-2.  In **Esplora soluzioni**, aprire il menu di scelta rapida per il nome di una funzionalità inclusa la **funzionalità** nodo e quindi scegliere **Aggiungi risorsa funzionalità**.
+2. In **Esplora soluzioni**, aprire il menu di scelta rapida per il nome di una funzionalità inclusa la **funzionalità** nodo e quindi scegliere **Aggiungi risorsa funzionalità**.
 
      Questo passaggio aggiunge un file di risorse per la funzionalità nel formato _ResourceFileName_**.** _delle impostazioni cultura_**resx**, ad esempio *Feature1-US. resx*.
 
-3.  Quando la **Editor di risorse** viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aggiungere risorse al file di risorse.
+3. Quando la **Editor di risorse** viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aggiungere risorse al file di risorse.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

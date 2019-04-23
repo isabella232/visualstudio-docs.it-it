@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077810"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installare gli analizzatori .NET Compiler Platform
 
@@ -24,14 +24,14 @@ Visual Studio include un set di base di .NET Compiler Platform (*Roslyn*) gli an
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Per installare i pacchetti dell'analizzatore NuGet
 
-1. Trovare il pacchetto dell'analizzatore che si desidera installare in www.nuget.org. Ad esempio, desideri [installare gli analizzatori Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) per controllare il codice per i problemi di sicurezza e prestazioni, tra gli altri.
+1. Trovare il pacchetto dell'analizzatore che si desidera installare in www.nuget.org.
+
+   Ad esempio, desideri [installare gli analizzatori Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) per controllare il codice per i problemi di sicurezza e prestazioni, tra gli altri. In alternativa, installare [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) per individuare i problemi di stile nella codebase.
 
 2. Installare il pacchetto in Visual Studio, usando il [Console di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) o nella [Package Manager UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > La pagina www.nuget.org per ogni pacchetto analyzer Mostra è il comando per incollare il **Console di gestione pacchetti**. È anche disponibile un pulsante utile per copiare il testo negli Appunti.
-   >
-   > ![Pagina di NuGet.org che mostra comando della Console di gestione pacchetti](media/nuget-install-command.png)
 
    Gli assembly dell'analizzatore sono installati e visualizzati **Esplora soluzioni** sotto **riferimenti** > **analizzatori**.
 

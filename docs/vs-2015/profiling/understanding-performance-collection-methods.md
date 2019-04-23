@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7432009cb64081fc235ec48a3de5400311260f3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079058"
 ---
 # <a name="understanding-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
  Usando alcuni metodi di profilatura, è anche possibile raccogliere dati aggiuntivi, ad esempio i contatori delle prestazioni di hardware e software. Per altre informazioni, vedere [Raccolta di dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).  
   
-##  <a name="sampling"></a> Campionamento  
+## <a name="sampling"></a> Campionamento  
  Il metodo di profilatura di campionamento raccoglie dati statistici sulle operazioni eseguite da un'applicazione durante l'esecuzione di una profilatura. Il metodo di campionamento è leggero e ha un impatto minimo sull'esecuzione dei metodi dell'applicazione.  
   
  Il campionamento è il metodo predefinito degli strumenti di profilatura di Visual Studio. È utile per le operazioni seguenti:  
@@ -57,7 +57,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)  
   
-##  <a name="instrumentation"></a> Strumentazione  
+## <a name="instrumentation"></a> Strumentazione  
  Il metodo di profilatura della strumentazione raccoglie informazioni dettagliate sugli intervalli per le chiamate di funzione in un'applicazione sottoposta a profilatura. La profilatura della strumentazione è utile per le operazioni seguenti:  
   
 - Analisi dei colli di bottiglia di input/output, ad esempio attività di I/O su disco.  
@@ -82,7 +82,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> Concorrenza  
+## <a name="concurrency"></a> Concorrenza  
  La profilatura della concorrenza raccoglie informazioni sulle applicazioni multithread. La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che thread concorrenti sono obbligati ad attendere l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie inoltre informazioni più generali sulla modalità di interazione dell'applicazione multithread con se stessa, l'hardware, il sistema operativo e altri processi nel computer host:  
   
 - I report sui conflitti di risorse visualizzano il numero totale di conflitti e il tempo totale trascorso in attesa di una risorsa per i moduli, le funzioni, le righe del codice sorgente e le istruzioni in cui si è verificata l'attesa. I grafici della sequenza temporale mostrano inoltre quando si sono verificati i conflitti.  
@@ -97,7 +97,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> Memoria .NET  
+## <a name="net_memory"></a> Memoria .NET  
  Il metodo di profilatura dell'allocazione della memoria .NET interrompe il processore del computer a ogni allocazione di un oggetto .NET Framework in un'applicazione sottoposta a profilatura. Quando vengono raccolti anche dati sulla durata degli oggetti, il profiler interrompe il processore dopo ogni operazione di Garbage Collection di .NET Framework.  
   
  Il profiler raccoglie informazioni sul tipo, la dimensione e il numero degli oggetti che sono stati creati in un'allocazione o eliminati in un'operazione di Garbage Collection.  
@@ -118,7 +118,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> Interazioni tra livelli  
+## <a name="tier_interaction"></a> Interazioni tra livelli  
  La profilatura di interazione tra livelli aggiunge informazioni a un file di dati di profilatura sulle chiamate [!INCLUDE[vstecado](../includes/vstecado-md.md)] sincrone tra una pagina [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o un'altra applicazione e un database [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. I dati includono il numero e l'ora delle chiamate e i tempi massimi e minimi. I dati di interazione tra livelli possono essere aggiunti ai dati di profilatura raccolti con i metodi di campionamento, strumentazione, memoria .NET o concorrenza.  
   
  ![Dati di profilatura di interazione tra livelli](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  

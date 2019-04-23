@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b07a311123299c0df76834a4b07d3a39f79f0ce2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11d8e3c4ad6c17b000dbf076928c4b1b2c584973
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076263"
 ---
 # <a name="writing-user-commands-and-actions"></a>Scrittura di azioni e comandi utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ ms.locfileid: "58970299"
   
 ## <a name="user-actions"></a>Azioni dell'utente  
   
--   [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – è possibile personalizzare il comportamento dei comandi come la copia e stampa.  
+- [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – è possibile personalizzare il comportamento dei comandi come la copia e stampa.  
   
--   [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – creare comandi personali che è possono aggiornare il modello o a risorse esterne.  
+- [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – creare comandi personali che è possono aggiornare il modello o a risorse esterne.  
   
--   [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) : consentire all'utente di spostare gli elementi da un diagramma a un'altra, inclusi i diagrammi UML. È possibile archiviare riferimenti a un modello in un altro.  
+- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) : consentire all'utente di spostare gli elementi da un diagramma a un'altra, inclusi i diagrammi UML. È possibile archiviare riferimenti a un modello in un altro.  
   
--   [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) – consente all'utente tramite clic da un elemento a un altro elemento a cui fa riferimento.  
+- [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) – consente all'utente tramite clic da un elemento a un altro elemento a cui fa riferimento.  
   
--   [Procedura: Copia e Incolla il comportamento del programma: reindirizzamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md) – come usare ElementOperations.  
+- [Procedura: Copia e Incolla il comportamento del programma: reindirizzamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md) – come usare ElementOperations.  
   
--   [Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)  
+- [Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   
--   [Personalizzazione di strumenti elemento](../modeling/customizing-element-tools.md)  
+- [Personalizzazione di strumenti elemento](../modeling/customizing-element-tools.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md)

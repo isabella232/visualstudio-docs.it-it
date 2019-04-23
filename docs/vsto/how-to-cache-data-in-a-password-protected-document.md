@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074008"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: Dati della cache in un documento protetto da password
   Se si aggiungono dati alla cache dei dati in un documento o cartella di lavoro è protetto con una password, è possibile che le modifiche ai dati memorizzati nella cache non vengono salvate automaticamente. È possibile salvare le modifiche apportate ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.
@@ -30,13 +30,13 @@ ms.locfileid: "56644523"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Per memorizzare i dati in un documento di Word protetto da password
 
-1.  Nel `ThisDocument` classe, contrassegnare un campo pubblico o una proprietà da memorizzare nella cache. Per altre informazioni, vedere [memorizzare nella Cache dati](../vsto/caching-data.md).
+1. Nel `ThisDocument` classe, contrassegnare un campo pubblico o una proprietà da memorizzare nella cache. Per altre informazioni, vedere [memorizzare nella Cache dati](../vsto/caching-data.md).
 
-2.  Eseguire l'override di <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metodo nel `ThisDocument` classe e rimuovere la protezione dal documento.
+2. Eseguire l'override di <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> metodo nel `ThisDocument` classe e rimuovere la protezione dal documento.
 
      Quando il documento viene salvato, la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama questo metodo per dare l'opportunità di rimuovere la protezione del documento. In questo modo le modifiche ai dati memorizzati nella cache deve essere salvato.
 
-3.  Eseguire l'override di <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metodo nel `ThisDocument` classe e riapplicare la protezione al documento.
+3. Eseguire l'override di <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> metodo nel `ThisDocument` classe e riapplicare la protezione al documento.
 
      Dopo che il documento viene salvato, la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama questo metodo per dare l'opportunità di applicare di nuovo la protezione al documento.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644523"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Per memorizzare i dati in una cartella di lavoro di Excel protetto da password
 
-1.  Nel `ThisWorkbook` classe o uno dei `Sheet` *n* classi, contrassegnare un campo pubblico o una proprietà da memorizzare nella cache. Per altre informazioni, vedere [memorizzare nella Cache dati](../vsto/caching-data.md).
+1. Nel `ThisWorkbook` classe o uno dei `Sheet` *n* classi, contrassegnare un campo pubblico o una proprietà da memorizzare nella cache. Per altre informazioni, vedere [memorizzare nella Cache dati](../vsto/caching-data.md).
 
-2.  Eseguire l'override di <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodo nel `ThisWorkbook` classe e rimuovere la protezione dalla cartella di lavoro.
+2. Eseguire l'override di <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodo nel `ThisWorkbook` classe e rimuovere la protezione dalla cartella di lavoro.
 
      Quando la cartella di lavoro viene salvato, la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama questo metodo per dare l'opportunità di rimuovere la protezione della cartella di lavoro. In questo modo le modifiche ai dati memorizzati nella cache deve essere salvato.
 
-3.  Eseguire l'override di <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metodo nel `ThisWorkbook` classe e riapplicare la protezione al documento.
+3. Eseguire l'override di <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> metodo nel `ThisWorkbook` classe e riapplicare la protezione al documento.
 
      Dopo aver salvato la cartella di lavoro, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama questo metodo per dare l'opportunità per riapplicare la protezione della cartella di lavoro.
 

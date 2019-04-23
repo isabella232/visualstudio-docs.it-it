@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 324ea1e0409ea08b7580d9a6375e7ad96a539a92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074112"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Novità di MSBuild 12.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ MSBuild viene ora installato come parte di Visual Studio anziché di .NET Framew
 ## <a name="changed-properties"></a>Proprietà modificate  
  Come conseguenza del nuovo numero di versione sono state modificate le seguenti proprietà di MSBuild:  
   
--   `MSBuildToolsVersion` per questa versione degli strumenti è 12.0.  
+- `MSBuildToolsVersion` per questa versione degli strumenti è 12.0.  
   
--   `MSBuildToolsPath` è ora %Programmi%\MSBuild\12.0\bin nei sistemi operativi a 32 bit o %Programmi%\MSBuild\12.0\bin\amd64 nei sistemi operativi a 64 bit.  
+- `MSBuildToolsPath` è ora %Programmi%\MSBuild\12.0\bin nei sistemi operativi a 32 bit o %Programmi%\MSBuild\12.0\bin\amd64 nei sistemi operativi a 64 bit.  
   
--   I valori`ToolsVersion` sono disponibili in HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0 per i sistemi operativi a 32 bit o in HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0 per i sistemi operativi a 64 bit.  
+- I valori`ToolsVersion` sono disponibili in HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0 per i sistemi operativi a 32 bit o in HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0 per i sistemi operativi a 64 bit.  
   
--   Le proprietà `SDK35ToolsPath` e `SDK40ToolsPath` puntano a .NET Framework SDK, incluso in un pacchetto con questa versione di Visual Studio, ad esempio 8.1A per gli strumenti 4.X.  
+- Le proprietà `SDK35ToolsPath` e `SDK40ToolsPath` puntano a .NET Framework SDK, incluso in un pacchetto con questa versione di Visual Studio, ad esempio 8.1A per gli strumenti 4.X.  
   
 ## <a name="new-properties"></a>Nuove proprietà  
   
--   `MSBuildFrameworkToolsPath` è una nuova proprietà con valore %windir%\Microsoft.NET\Framework\v4.0.30319 nei sistemi operativi a 32 bit o %windir%\Microsoft.NET\Framework64\v4.0.30319 nei sistemi operativi a 64 bit. Sostituisce `MSBuildToolsPath` che può essere utilizzata per puntare agli strumenti e alle utilità di .NET Framework.  
+- `MSBuildFrameworkToolsPath` è una nuova proprietà con valore %windir%\Microsoft.NET\Framework\v4.0.30319 nei sistemi operativi a 32 bit o %windir%\Microsoft.NET\Framework64\v4.0.30319 nei sistemi operativi a 64 bit. Sostituisce `MSBuildToolsPath` che può essere utilizzata per puntare agli strumenti e alle utilità di .NET Framework.  
   
--   `MSBuildToolsPath` e `MSBuildFrameworkToolsPath` presentano equivalenti a 32 bit, `MSBuildToolsPath32` e `MSBuildFrameworkToolsPath32`, che puntano sempre al percorso a 32 bit, indipendentemente dal fatto che venga utilizzato MSBuild a 32 o 64 bit.
+- `MSBuildToolsPath` e `MSBuildFrameworkToolsPath` presentano equivalenti a 32 bit, `MSBuildToolsPath32` e `MSBuildFrameworkToolsPath32`, che puntano sempre al percorso a 32 bit, indipendentemente dal fatto che venga utilizzato MSBuild a 32 o 64 bit.
 
 ## <a name="see-also"></a>Vedere anche
 [MSBuild](msbuild.md)

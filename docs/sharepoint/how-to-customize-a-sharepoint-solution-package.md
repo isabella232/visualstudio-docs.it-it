@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcc6e59f1c87cd0c3a82383ac97a80488ac1168d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074921"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedura: Personalizzare un pacchetto della soluzione SharePoint
   È possibile usare la finestra di progettazione del pacchetto per creare e personalizzare un pacchetto (*wsp*). Ad esempio, è possibile aggiungere elementi di progetto SharePoint e le funzionalità, specificare se il server Web viene reimpostato quando viene distribuita la soluzione e impostare il tipo di server di distribuzione.
@@ -31,20 +31,20 @@ ms.locfileid: "56602676"
 
 #### <a name="to-open-the-package-designer"></a>Per aprire la finestra di progettazione del pacchetto
 
--   Nelle **Esplora soluzioni**, fare doppio clic su **pacchetto**, oppure scegliere **Visualizza finestra di progettazione** nel menu di scelta rapida per **pacchetto**.
+- Nelle **Esplora soluzioni**, fare doppio clic su **pacchetto**, oppure scegliere **Visualizza finestra di progettazione** nel menu di scelta rapida per **pacchetto**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Visualizzare il manifestfFile nel pacchetto
  È possibile utilizzare la finestra di progettazione del pacchetto per modificare e generare il file manifesto nel pacchetto. Quindi, è possibile visualizzare il codice XML per questo file in Visual Studio.
 
 #### <a name="to-view-the-xml-source-file"></a>Per visualizzare il file di origine XML
 
-1.  Nel **Progettazione pacchetti**, scegliere **manifesto**.
+1. Nel **Progettazione pacchetti**, scegliere **manifesto**.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Per visualizzare il file manifesto nel pacchetto tramite Esplora soluzioni
 
-1.  In **Esplora soluzioni** scegliere **Mostra tutti i file**.
+1. In **Esplora soluzioni** scegliere **Mostra tutti i file**.
 
-2.  Pacchetto espandere, espandere package. package e quindi aprire il *Package.Template.xml* file.
+2. Pacchetto espandere, espandere package. package e quindi aprire il *Package.Template.xml* file.
 
     > [!NOTE]
     >  Quando si apre il file manifesto XML per il modello di pacchetto, i file vengono convalidati automaticamente, ed è possibile ignorare gli avvisi visualizzati nella finestra Elenco errori.
@@ -54,13 +54,13 @@ ms.locfileid: "56602676"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Per modificare il modello di manifesto usando l'Editor XML
 
-1.  Nel **Progettazione pacchetti**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi scegliere il **aperto nell'Editor XML** collegamento.
+1. Nel **Progettazione pacchetti**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi scegliere il **aperto nell'Editor XML** collegamento.
 
      Le modifiche al codice XML vengono unite nel file manifesto nel pacchetto.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Per modificare il modello di manifesto usando il riquadro modello di manifesto
 
-1.  Nel **Progettazione pacchetti**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi modificare il codice XML che viene visualizzato nel riquadro modello di manifesto.
+1. Nel **Progettazione pacchetti**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi modificare il codice XML che viene visualizzato nel riquadro modello di manifesto.
 
      Le modifiche al codice XML visualizzato nei **Preview del manifesto nel pacchetto** riquadro.
 
@@ -72,9 +72,9 @@ ms.locfileid: "56602676"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Per sovrascrivere il file manifesto, disabilitare la finestra di progettazione
 
-1.  Nel **Progettazione pacchetti**, scegliere il **manifesto** scheda.
+1. Nel **Progettazione pacchetti**, scegliere il **manifesto** scheda.
 
-2.  Espandere la **opzioni di modifica** nodo, scegliere il **Sovrascrivi XML e modifica manifesto generato nell'editor XML** collegamento e quindi scegliere il **Sì** pulsante.
+2. Espandere la **opzioni di modifica** nodo, scegliere il **Sovrascrivi XML e modifica manifesto generato nell'editor XML** collegamento e quindi scegliere il **Sì** pulsante.
 
      Il modello viene aggiornato con il file manifesto nel pacchetto corrente.
 
@@ -83,7 +83,7 @@ ms.locfileid: "56602676"
 
 #### <a name="to-re-enable-the-designer"></a>Per abilitare nuovamente la finestra di progettazione
 
-1.  Nel **Progettazione pacchetti**, scegliere il **variabile Discard modifiche al manifesti e abilitare di nuovo la finestra di progettazione** collegamento e quindi scegliere il **Sì** pulsante.
+1. Nel **Progettazione pacchetti**, scegliere il **variabile Discard modifiche al manifesti e abilitare di nuovo la finestra di progettazione** collegamento e quindi scegliere il **Sì** pulsante.
 
      Il modello viene aggiornato con il testo originale e le modifiche al codice XML vengono perse.
 

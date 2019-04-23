@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076654"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Procedura: A livello di programmazione le righe di gruppo in un foglio di lavoro
   È possibile raggruppare una o più righe intere. Per creare un gruppo in un foglio di lavoro, usare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.
@@ -37,7 +37,7 @@ ms.locfileid: "56598233"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Per creare un gruppo di controlli NamedRange in un foglio di lavoro
 
-1.  Raggruppare i tre intervalli denominati chiamando il <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> (metodo) di ogni intervallo. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .
+1. Raggruppare i tre intervalli denominati chiamando il <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> (metodo) di ogni intervallo. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -50,7 +50,7 @@ ms.locfileid: "56598233"
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Per creare un gruppo di intervalli di Excel in un foglio di lavoro
 
-1.  Raggruppare i tre intervalli denominati chiamando il <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> (metodo) di ogni intervallo. Nell'esempio seguente si presuppone che siano presenti tre <xref:Microsoft.Office.Interop.Excel.Range> controlli denominati `data2001`, `data2002`, e `dataAll` nel foglio di lavoro stesso. Ogni intervallo denominato fa riferimento a un'intera riga del foglio di lavoro.
+1. Raggruppare i tre intervalli denominati chiamando il <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> (metodo) di ogni intervallo. Nell'esempio seguente si presuppone che siano presenti tre <xref:Microsoft.Office.Interop.Excel.Range> controlli denominati `data2001`, `data2002`, e `dataAll` nel foglio di lavoro stesso. Ogni intervallo denominato fa riferimento a un'intera riga del foglio di lavoro.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

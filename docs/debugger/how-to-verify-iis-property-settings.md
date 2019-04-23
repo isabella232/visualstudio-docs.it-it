@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075246"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedura: Verificare le impostazioni delle proprietà IIS
 
@@ -35,41 +35,41 @@ ms.locfileid: "55037018"
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Per controllare le impostazioni IIS dell'applicazione Web
 
-1. Aprire la finestra **Strumenti di amministrazione**. Nel **avviare** dal menu **programmi**, quindi fare clic su **strumenti di amministrazione**. Se la voce **Strumenti di amministrazione** non è presente nel menu **Programmi**, cercarla nel **Pannello di controllo**.
+1. Aprire il **strumenti di amministrazione** finestra: Nel **avviare** dal menu **programmi**, quindi fare clic su **strumenti di amministrazione**. Se la voce **Strumenti di amministrazione** non è presente nel menu **Programmi**, cercarla nel **Pannello di controllo**.
 
-   -   In Windows 2000 selezionare **Gestione servizi Internet**.
+   - In Windows 2000 selezionare **Gestione servizi Internet**.
 
-   -   In Windows XP selezionare **Internet Information Services**.
+   - In Windows XP selezionare **Internet Information Services**.
 
-   -   In Windows Server 2003 fare doppio clic su **Amministrazione server**.
+   - In Windows Server 2003 fare doppio clic su **Amministrazione server**.
 
         Verrà visualizzata la finestra **Amministrazione server**. In **Server applicazioni** fare clic su **Gestisci questo server applicazioni**.
 
         Viene visualizzata la finestra **Server applicazioni**. Aprire il nodo **Gestione Internet Information Services (IIS)** nel riquadro di sinistra.
 
-2. Nella finestra di dialogo fare clic sul nodo del controllo albero per il computer. Fare clic sul nodo **Siti Web** e quindi selezionare il nodo dell'applicazione Web. Si tratterà di un nodo di sito Web, quindi di pari livello rispetto al nodo **Sito Web predefinito**, o di un nodo di directory virtuale al di sotto di un nodo di sito Web.
+2. Nella finestra di dialogo fare clic sul nodo del controllo struttura ad albero per il computer. Fare clic sul nodo **Siti Web** e quindi selezionare il nodo dell'applicazione Web. Si tratterà di un nodo di sito Web, quindi di pari livello rispetto al nodo **Sito Web predefinito**, o di un nodo di directory virtuale al di sotto di un nodo di sito Web.
 
 3. Fare clic con il pulsante destro del mouse sull'applicazione Web, quindi scegliere **Proprietà** dal menu di scelta rapida.
 
 4. Verificare le impostazioni di sicurezza dell'applicazione Web:
 
-   1.  Nella finestra **Proprietà** dell'applicazione Web fare clic sulla scheda **Sicurezza directory** e scegliere **Modifica**.
+   1. Nella finestra **Proprietà** dell'applicazione Web fare clic sulla scheda **Sicurezza directory** e scegliere **Modifica**.
 
-   2.  Nella finestra di dialogo **Metodi di autenticazione** selezionare **Consenti accesso anonimo** e **Autenticazione Windows integrata**, se queste opzioni non sono già selezionate.
+   2. Nella finestra di dialogo **Metodi di autenticazione** selezionare **Consenti accesso anonimo** e **Autenticazione Windows integrata**, se queste opzioni non sono già selezionate.
 
-   3.  Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.
+   3. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.
 
 5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [Procedura: Associare il verbo DEBUG con estensione](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], accertarsi che per la cartella virtuale dell'applicazione sia impostato un Nome applicazione in **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
-   1.  Nella finestra **Proprietà** dell'applicazione Web scegliere la scheda **Directory**, se l'applicazione è contenuta in una directory virtuale, o **Home directory**, se è contenuta in un sito Web.
+   1. Nella finestra **Proprietà** dell'applicazione Web scegliere la scheda **Directory**, se l'applicazione è contenuta in una directory virtuale, o **Home directory**, se è contenuta in un sito Web.
 
-   2.  Verificare che il nome in **Percorso locale** corrisponda al nome della directory in cui l'applicazione è stata effettivamente distribuita.
+   2. Verificare che il nome in **Percorso locale** corrisponda al nome della directory in cui l'applicazione è stata effettivamente distribuita.
 
-   3.  In **Impostazioni applicazione** digitare il nome della directory radice che contiene l'applicazione.
+   3. In **Impostazioni applicazione** digitare il nome della directory radice che contiene l'applicazione.
 
-   4.  Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.
+   4. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.
 
 7. Per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], fare clic sulla scheda **ASP.NET** e verificare che sia specificata la versione corretta di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 

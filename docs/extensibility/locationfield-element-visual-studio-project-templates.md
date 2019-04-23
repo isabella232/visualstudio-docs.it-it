@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078304"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
 Specifica o meno il **posizione** casella di testo il **nuovo progetto** nella finestra di dialogo è abilitata, disabilitata o nascosta per il modello di progetto.
@@ -51,11 +51,11 @@ Specifica o meno il **posizione** casella di testo il **nuovo progetto** nella f
 
  I valori di testo validi sono:
 
--   `Enabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è abilitata nella finestra di dialogo.
+- `Enabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è abilitata nella finestra di dialogo.
 
--   `Disabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è disabilitata nella finestra di dialogo.
+- `Disabled`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è disabilitata nella finestra di dialogo.
 
--   `Hidden`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è nascosta la finestra di dialogo.
+- `Hidden`, che consente di specificare che il **posizione** finestra di **nuovo progetto** è nascosta la finestra di dialogo.
 
 ## <a name="remarks"></a>Note
  Il valore predefinito è `Enabled`.

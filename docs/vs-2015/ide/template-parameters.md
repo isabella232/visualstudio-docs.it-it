@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077342"
 ---
 # <a name="template-parameters"></a>Parametri di template
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 ## <a name="declaring-and-enabling-template-parameters"></a>Dichiarazione e abilitazione dei parametri di modello  
  I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Per abilitare la sostituzione dei parametri nei modelli  
   
-1.  Nel file .vstemplate del modello individuare l'elemento `ProjectItem` che corrisponde all'elemento per il quale si desidera attivare la sostituzione dei parametri.  
+1. Nel file .vstemplate del modello individuare l'elemento `ProjectItem` che corrisponde all'elemento per il quale si desidera attivare la sostituzione dei parametri.  
   
-2.  Impostare l'attributo `ReplaceParameters` dell'elemento `ProjectItem` su `true`.  
+2. Impostare l'attributo `ReplaceParameters` dell'elemento `ProjectItem` su `true`.  
   
-3.  Includere i parametri nella posizione appropriata nel file di codice per l'elemento del progetto. Ad esempio, il parametro seguente specifica che deve essere usato il nome di progetto sicuro per lo spazio dei nomi in un file:  
+3. Includere i parametri nella posizione appropriata nel file di codice per l'elemento del progetto. Ad esempio, il parametro seguente specifica che deve essere usato il nome di progetto sicuro per lo spazio dei nomi in un file:  
   
     ```  
     namespace $safeprojectname$  
@@ -53,7 +53,7 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 > [!NOTE]
 >  I parametri di modello fanno distinzione tra maiuscole e minuscole.  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`clrversion`|Versione corrente di Common Language Runtime (CLR).|  
 |`GUID [1-10]`|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1)`.|  

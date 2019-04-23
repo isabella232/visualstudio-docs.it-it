@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59001895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074125"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,15 +68,15 @@ La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (ID
 ## <a name="features-not-included-in-the-integrated-shell"></a>Funzionalità non incluse nella Shell integrata  
  Di seguito è riportato un elenco delle funzionalità che non sono inclusi nella shell integrata:  
   
--   Progettazione classi  
+- Progettazione classi  
   
--   PreEmptive Protection - Dotfuscator  
+- PreEmptive Protection - Dotfuscator  
   
--   Funzionalità del linguaggio  
+- Funzionalità del linguaggio  
   
--   VSHost  
+- VSHost  
   
--   Nessuna lingua di Visual Studio o i modelli di progetto associata o i modelli di progetto, sono inclusi nella shell integrata. Nessun implementazioni specifiche della lingua di altre funzionalità sono incluse, per i frammenti di codice di esempio Visual Basic.  
+- Nessuna lingua di Visual Studio o i modelli di progetto associata o i modelli di progetto, sono inclusi nella shell integrata. Nessun implementazioni specifiche della lingua di altre funzionalità sono incluse, per i frammenti di codice di esempio Visual Basic.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione di panoramica di Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

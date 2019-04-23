@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075624"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Procedura dettagliata: Uso della gerarchia XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un fo
   
 ### <a name="procedure-title"></a>Titolo della procedura  
   
-1.  Aprire un documento XML in Visual Studio. Nel presente esempio viene usato il seguente documento `collection.xml`.  
+1. Aprire un documento XML in Visual Studio. Nel presente esempio viene usato il seguente documento `collection.xml`.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un fo
     </COLLECTION>  
     ```  
   
-2.  Aggiungere il seguente `xslincludefile.xsl`:  
+2. Aggiungere il seguente `xslincludefile.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un fo
     </xsl:stylesheet>  
     ```  
   
-3.  Aggiungere il seguente file `xslinclude.xsl`:  
+3. Aggiungere il seguente file `xslinclude.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un fo
     </xsl:stylesheet>  
     ```  
   
-4.  Aggiungere un punto di interruzione all'istruzione: `<xsl:include href="xslincludefile.xsl" />`  
+4. Aggiungere un punto di interruzione all'istruzione: `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Avviare il debug.  
+5. Avviare il debug.  
   
-6.  Quando il debugger viene arrestato all'istruzione `<xsl:include href="xslincludefile.xsl" />`, premere il pulsante di esecuzione dell'istruzione. Notare che l'esecuzione del debug può proseguire nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.  
+6. Quando il debugger viene arrestato all'istruzione `<xsl:include href="xslincludefile.xsl" />`, premere il pulsante di esecuzione dell'istruzione. Notare che l'esecuzione del debug può proseguire nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

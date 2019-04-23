@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075792"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>eseguire il rendering di destinazione variante del formato di 16 bpp
 Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer nascosti.
@@ -45,14 +45,14 @@ Le applicazioni che fanno parte di una catena di scambio hanno un formato di buf
 
    Le architetture GPU che usano tecniche di rendering possono visualizzare i vantaggi significativi delle prestazioni utilizzando un formato di buffer di frame di 16 bit per pixel. Questo miglioramento è perché una parte maggiore del buffer di frame può adattarsi alla cache del buffer di ogni riquadro frame locale. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:
 
--   Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.
+- Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.
 
--   Il membro BindFlags presenta il flag D3D11_BIND_DEPTH_STENCIL deselezionato.
+- Il membro BindFlags presenta il flag D3D11_BIND_DEPTH_STENCIL deselezionato.
 
--   Il membro Usage è impostato su D3D11_USAGE_DEFAULT.
+- Il membro Usage è impostato su D3D11_USAGE_DEFAULT.
 
 ## <a name="restrictions-and-limitations"></a>Limiti e restrizioni
  Poiché il formato B5G6R5 non ha un canale alfa, il contenuto alfa non viene mantenuto da questa variante. Se il rendering dell'app richiede un canale alfa nella destinazione di rendering, non è possibile passare semplicemente al formato B5G6R5.

@@ -14,31 +14,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62ecf97cfacd2eaa11ac740a56134dcde9d68766
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077368"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procedura: Aggiungere o rimuovere connessioni di SharePoint
   Esplora server consente di sfogliare i siti di SharePoint, nonché le connessioni dati. Tuttavia, prima di poter esplorare il contenuto di un sito di SharePoint è necessario aggiungerlo al **connessioni di SharePoint** nodo.
 
 ### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>Per aggiungere un sito di SharePoint per il nodo Connessioni di SharePoint
 
-1.  Nella barra dei menu, scegliere **View**, **Esplora Server**.
+1. Nella barra dei menu, scegliere **View**, **Esplora Server**.
 
-2.  Nella **Esplora Server**, scegliere il **connessioni di SharePoint** nodo, quindi nella barra dei menu, scegliere **strumenti** > **aggiungere SharePoint Connessione**.
+2. Nella **Esplora Server**, scegliere il **connessioni di SharePoint** nodo, quindi nella barra dei menu, scegliere **strumenti** > **aggiungere SharePoint Connessione**.
 
-3.  Nel **Aggiungi connessione SharePoint** immettere il [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] del sito di SharePoint (ad esempio, http://testserver/sites/unittests).
+3. Nel **Aggiungi connessione SharePoint** immettere il [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] del sito di SharePoint (ad esempio, http://testserver/sites/unittests).
 
 ### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>Per eliminare un sito di SharePoint dal nodo Connessioni di SharePoint
 
-1.  Nella barra dei menu, scegliere **View**, **Esplora Server** per aprire **Esplora Server**.
+1. Nella barra dei menu, scegliere **View**, **Esplora Server** per aprire **Esplora Server**.
 
-2.  Espandere la **connessioni di SharePoint** nodo per visualizzare il sito di SharePoint che si desidera eliminare dal **Esplora Server**.
+2. Espandere la **connessioni di SharePoint** nodo per visualizzare il sito di SharePoint che si desidera eliminare dal **Esplora Server**.
 
-3.  Scegliere il sito e quindi nella barra dei menu scegliere **Edit** > **eliminare**.
+3. Scegliere il sito e quindi nella barra dei menu scegliere **Edit** > **eliminare**.
 
     > [!NOTE]
     >  Questo passaggio non comporta l'eliminazione del sito sottostante. Elimina solo la connessione ottenuta **Esplora Server**.

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078642"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Risposta alle modifiche e propagazione delle modifiche
 Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere codice che propaga le modifiche ad altre parti del modello o a risorse esterne, ad esempio file, database o altri componenti.
@@ -41,13 +41,13 @@ Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere c
 
  Usare gli eventi di archiviazione per sincronizzare il modello con gli oggetti di fuori di Store e le regole per mantenere la coerenza all'interno di Store.
 
--   **Creazione di regole personalizzate** è creare una regola personalizzata come una classe derivata da una regola astratta. È anche necessario segnalare al framework relativa alla regola personalizzata. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
+- **Creazione di regole personalizzate** è creare una regola personalizzata come una classe derivata da una regola astratta. È anche necessario segnalare al framework relativa alla regola personalizzata. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
--   **Sottoscrizione di eventi** prima di richiedere a un evento, creare un gestore dell'evento e delegato. Usare quindi il <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Sottoscrizione di eventi** prima di richiedere a un evento, creare un gestore dell'evento e delegato. Usare quindi il <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Annullamento delle modifiche** quando si annulla una transazione, gli eventi vengono generati, ma non vengono applicate le regole. Se una regola viene modificato un valore e si annulla la modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore relativo valore originale. Per altre informazioni sulle transazioni e di annullamento, vedere [come: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
+- **Annullamento delle modifiche** quando si annulla una transazione, gli eventi vengono generati, ma non vengono applicate le regole. Se una regola viene modificato un valore e si annulla la modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore relativo valore originale. Per altre informazioni sulle transazioni e di annullamento, vedere [come: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
 
--   **Il passaggio di argomenti dell'evento a regole ed eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che contiene informazioni su come il modello modificato.
+- **Il passaggio di argomenti dell'evento a regole ed eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che contiene informazioni su come il modello modificato.
 
 ## <a name="see-also"></a>Vedere anche
 

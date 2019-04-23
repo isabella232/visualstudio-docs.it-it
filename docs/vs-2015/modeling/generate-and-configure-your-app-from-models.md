@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073488"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,27 +54,27 @@ ms.locfileid: "58955177"
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata  
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.  
   
--   **Avviare specifico e quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.  
+- **Avviare specifico e quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.  
   
      Ad esempio, progettare un sito Web che include un set specifico di pagine Web prima di progettare un'applicazione Web che presenta pagine definite in un modello.  
   
--   **Modellare gli aspetti variabili.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.  
+- **Modellare gli aspetti variabili.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.  
   
      Ad esempio, se il set di pagine Web e dei relativi collegamenti cambia, ma lo stile e il formato delle pagine rimangono gli stessi, sarà necessario che il modello descriva i collegamenti, ma non il formato delle pagine.  
   
--   **Separare le problematiche.** Se gli aspetti variabili possono essere suddivisi in aree indipendenti, usare modelli separati per ogni area. Usando ModelBus, è possibile definire operazioni che influiscono su entrambi modelli e i vincoli reciproci.  
+- **Separare le problematiche.** Se gli aspetti variabili possono essere suddivisi in aree indipendenti, usare modelli separati per ogni area. Usando ModelBus, è possibile definire operazioni che influiscono su entrambi modelli e i vincoli reciproci.  
   
      Ad esempio, usare un modello per definire la navigazione delle pagine Web e un modello differente per definire il layout delle pagine. Per altre informazioni, vedere [integrare i modelli UML con altri modelli e strumenti](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   **Il requisito, non sulla soluzione del modello.** Progettare il modello DSL o adattare il modello UML in modo che descriva i requisiti dell'utente. Non progettare invece la notazione in base agli aspetti variabili dell'implementazione.  
+- **Il requisito, non sulla soluzione del modello.** Progettare il modello DSL o adattare il modello UML in modo che descriva i requisiti dell'utente. Non progettare invece la notazione in base agli aspetti variabili dell'implementazione.  
   
      Ad esempio, il modello della navigazione Web deve rappresentare le pagine Web e i reciproci collegamenti ipertestuali. Il modello della navigazione Web non deve rappresentare frammenti di HTML o classi dell'applicazione.  
   
--   **Generazione e interpretazione?** Se i requisiti per una particolare distribuzione sono destinati a cambiare di rado, generare il codice programma dal modello. Se è possibile che i requisiti cambino di frequente o che ne coesistano più varianti nella stessa distribuzione, scrivere l'applicazione in modo che possa leggere e interpretare un modello.  
+- **Generazione e interpretazione?** Se i requisiti per una particolare distribuzione sono destinati a cambiare di rado, generare il codice programma dal modello. Se è possibile che i requisiti cambino di frequente o che ne coesistano più varianti nella stessa distribuzione, scrivere l'applicazione in modo che possa leggere e interpretare un modello.  
   
      Ad esempio, se si usa il modello del sito Web per sviluppare una serie di siti Web differenti e installati separatamente, sarà necessario generare il codice del sito dal modello.  Se, invece, si usa il modello per controllare un sito che cambia quotidianamente, sarà preferibile scrivere un server Web che legga il modello e che presenti il sito conformemente a tale modello.  
   
--   **UML o DSL?** Prendere in considerazione la creazione della notazione dei modelli tramite stereotipi per estendere UML. Definire un modello DSL se non si ha un diagramma UML appropriato. Evitare tuttavia di alterare la semantica standard di UML.  
+- **UML o DSL?** Prendere in considerazione la creazione della notazione dei modelli tramite stereotipi per estendere UML. Definire un modello DSL se non si ha un diagramma UML appropriato. Evitare tuttavia di alterare la semantica standard di UML.  
   
      Ad esempio, un diagramma classi UML è una raccolta di caselle e di frecce. Con questa notazione si può, teoricamente, definire qualsiasi elemento. L'uso del diagramma classi è tuttavia consigliato solo quando si descrive un set di tipi. Ad esempio, è possibile adattare diagrammi classi per descrivere tipi differenti di pagine Web.  
   

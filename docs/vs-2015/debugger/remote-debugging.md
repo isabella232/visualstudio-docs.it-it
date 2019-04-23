@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076211"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59649446"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Per scaricare e installare remote tools
   
-1.  Nel dispositivo o server macchina che si desidera eseguire il debug (anziché il computer che esegue Visual Studio), installare la versione corretta di remote tools.
+1. Nel dispositivo o server macchina che si desidera eseguire il debug (anziché il computer che esegue Visual Studio), installare la versione corretta di remote tools.
 
     |Versione|Collegamento|Note|
     |-|-|-|
@@ -47,14 +47,14 @@ ms.locfileid: "59649446"
     |Visual Studio 2013|[Remote Tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2013|
     |Visual Studio 2012|[Remote Tools](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|2000A nella documentazione di Visual Studio 2012|
   
-2.  Nella pagina di download, scegliere la versione degli strumenti che corrisponde al sistema operativo (x 86, x64 o ARM versione) e scaricare remote tools.
+2. Nella pagina di download, scegliere la versione degli strumenti che corrisponde al sistema operativo (x 86, x64 o ARM versione) e scaricare remote tools.
   
     > [!IMPORTANT]
     >  Si consiglia di che installare la versione più recente di remote tools corrispondente alla versione di Visual Studio. Le versioni non corrispondenti non sono consigliate.  
     >   
     >  Inoltre, è necessario installare gli strumenti remoti che hanno la stessa architettura del sistema operativo in cui si desidera installarlo. In altre parole, se si desidera eseguire il debug di un'applicazione a 32 bit in un computer remoto che esegue un sistema operativo a 64 bit, è necessario installare la versione a 64 bit di remote tools sul computer remoto.  
   
-3.  Dopo avere scaricato il file eseguibile, seguire le istruzioni per installare l'applicazione nel computer remoto. Vedere [istruzioni di configurazione](#bkmk_setup)
+3. Dopo avere scaricato il file eseguibile, seguire le istruzioni per installare l'applicazione nel computer remoto. Vedere [istruzioni di configurazione](#bkmk_setup)
 
 Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed eseguirlo, tenere presente che il **configurazione guidata del Debugger remoto** (**rdbgwiz.exe**) viene installato solo quando si scarica il strumenti e si potrebbe essere necessario utilizzare la procedura guidata per la configurazione in un secondo momento, soprattutto se si desidera che il debugger remoto per l'esecuzione come servizio. Per altre informazioni, vedere [(facoltativo) configurare il debugger remoto come servizio](#bkmk_configureService) sotto.
 
@@ -78,27 +78,27 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 o 8.1  
+- Windows 8 o 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 o Windows Server 2012 R2  
+- Windows Server 2012 o Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2 o Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2 o Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>Configurazioni Hardware supportate  
   
--   Processore da 1,6 GHz o superiore  
+- Processore da 1,6 GHz o superiore  
   
--   1 GB di RAM (1,5 GB se in esecuzione in una macchina virtuale)  
+- 1 GB di RAM (1,5 GB se in esecuzione in una macchina virtuale)  
   
--   1 GB di spazio disponibile su disco rigido  
+- 1 GB di spazio disponibile su disco rigido  
   
--   Unità disco rigido a 5400 rpm  
+- Unità disco rigido a 5400 rpm  
   
--   Scheda video che supporta DirectX 9 con una risoluzione di 1024 x 768 o superiore  
+- Scheda video che supporta DirectX 9 con una risoluzione di 1024 x 768 o superiore  
   
 ## <a name="network-configuration"></a>Configurazione di rete  
  Il computer remoto e quello che esegue Visual Studio devono essere connessi tramite una rete, un gruppo di lavoro o un gruppo home o collegati direttamente con un cavo Ethernet. Il debug tramite Internet non è supportato.  
@@ -147,7 +147,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
    > [!WARNING]
   >  È possibile scegliere di eseguire Remote Tools in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.
 
-##  <a name="bkmk_configureService"></a> (Facoltativo) Configurare il debugger remoto come servizio
+## <a name="bkmk_configureService"></a> (Facoltativo) Configurare il debugger remoto come servizio
  Per il debug in ASP.NET e altri ambienti server, si deve eseguire il debugger remoto come amministratore o, se si desidera sempre in esecuzione, eseguire il debugger remoto come servizio.
   
  Se si desidera configurare il debugger remoto come servizio, seguire questa procedura.  
@@ -282,16 +282,16 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
   
  Per altre informazioni, vedere Guida al debug remoto (premere **F1** la finestra del debugger remoto, oppure fare clic su **Guida / utilizzo**). Altre informazioni sono disponibili nel post del blog [.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx) (Modifiche nel caricamento remoto dei simboli .NET in Visual Studio 2012 e 2013).  
   
-##  <a name="bkmk_winstoreAzure"></a> Debug remoto in App Windows Store e Azure  
+## <a name="bkmk_winstoreAzure"></a> Debug remoto in App Windows Store e Azure  
  Per informazioni sul debug remoto con le app di Windows Store, vedere [eseguire il Debug e testare le app di Windows Store in un computer remoto da Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Per informazioni sul debug in Azure, vedere uno dei seguenti argomenti:  
   
--   [Debug di un servizio Cloud o macchina virtuale in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Debug di un servizio Cloud o macchina virtuale in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Debug di back-end .NET in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Debug di back-end .NET in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Introduzione al debug remoto su siti Web di Azure ([parte 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [parte 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [parte 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Introduzione al debug remoto su siti Web di Azure ([parte 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [parte 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [parte 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  

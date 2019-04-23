@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 660915dd9222f4fd2f70e88665aef17dbab8e168
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 027181d16024964d5487be2b3eb0b4ca261f98e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079227"
 ---
 # <a name="private-galleries"></a>Raccolte private
 È possibile condividere i controlli, modelli e strumenti che si sviluppano inviando messaggi a un *raccolta privata* nella intranet per l'organizzazione, come indicato di seguito:
 
--   Creare un atomo (feed RSS) in una posizione centrale opportunamente configurata (repository) nella intranet. Per altre informazioni, vedere [Procedura: Creare un feed Atom per una raccolta privata](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
+- Creare un atomo (feed RSS) in una posizione centrale opportunamente configurata (repository) nella intranet. Per altre informazioni, vedere [Procedura: Creare un feed Atom per una raccolta privata](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
 
--   Distribuire un' *pkgdef* file che descrive la raccolta privata. Si consiglia questa configurazione per gli amministratori che desiderano connettersi una raccolta privata a più computer contemporaneamente.
+- Distribuire un' *pkgdef* file che descrive la raccolta privata. Si consiglia questa configurazione per gli amministratori che desiderano connettersi una raccolta privata a più computer contemporaneamente.
 
 ## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Aggiungere una raccolta privata a estensioni e aggiornamenti in Visual Studio
  Quando una raccolta privata è disponibile, è possibile aggiungerla alla **estensioni e aggiornamenti** in Visual Studio.
@@ -32,19 +32,19 @@ ms.locfileid: "56694959"
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Per aggiungere una raccolta privata a estensioni e aggiornamenti
 
-1.  Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
 
-2.  Nel **ambiente** nodo, seleziona **estensioni e aggiornamenti**.
+2. Nel **ambiente** nodo, seleziona **estensioni e aggiornamenti**.
 
-3.  Scegliere il pulsante **Aggiungi**.
+3. Scegliere il pulsante **Aggiungi**.
 
-4.  Nel **Name** immettere un nome per la raccolta privata, ad esempio, `My Gallery`.
+4. Nel **Name** immettere un nome per la raccolta privata, ad esempio, `My Gallery`.
 
-5.  Nel **URL** immettere l'URL del feed Atom o sito di SharePoint che ospita la raccolta privata.
+5. Nel **URL** immettere l'URL del feed Atom o sito di SharePoint che ospita la raccolta privata.
 
-    1.  Se l'host è un feed Atom che si connette alla raccolta privata, l'URL sarà simile a quella: http://www.mywebsite/mygallery/atom.xml.  Questo URL può fare riferimento a un file o un percorso di rete.
+    1. Se l'host è un feed Atom che si connette alla raccolta privata, l'URL sarà simile a quella: http://www.mywebsite/mygallery/atom.xml.  Questo URL può fare riferimento a un file o un percorso di rete.
 
-    2.  Se l'host è un sito di SharePoint, l'URL sarebbe simile a questo: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
+    2. Se l'host è un sito di SharePoint, l'URL sarebbe simile a questo: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
 
 ### <a name="manage-private-galleries"></a>Gestire raccolte private
  Un amministratore può renderla una raccolta privata disponibile per diversi computer nello stesso momento modificando il Registro di sistema in ogni computer. A questo scopo, creare un *pkgdef* file che descrive le nuove chiavi del Registro di sistema e i relativi valori.  Il formato di questo file è come indicato di seguito.
@@ -70,11 +70,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Per cercare e installare le estensioni da una raccolta privata
 
-1.  Nella barra dei menu, scegliere **degli strumenti** > **estensioni e aggiornamenti**.
+1. Nella barra dei menu, scegliere **degli strumenti** > **estensioni e aggiornamenti**.
 
-2.  Nel riquadro sinistro, selezionare **estensioni Online**, quindi selezionare **raccolta personale**.
+2. Nel riquadro sinistro, selezionare **estensioni Online**, quindi selezionare **raccolta personale**.
 
-3.  Nel riquadro di destra, selezionare un'estensione e quindi scegliere il **scaricare** pulsante.
+3. Nel riquadro di destra, selezionare un'estensione e quindi scegliere il **scaricare** pulsante.
 
 ## <a name="update-extensions-from-a-private-gallery"></a>Aggiornare le estensioni da una raccolta privata
  Come le nuove versioni delle estensioni di Visual Studio vengono registrate nella raccolta privata, è possibile aggiornare le estensioni installate. La procedura seguente usa una raccolta privata denominata `My Repository`.
@@ -83,11 +83,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Per aggiornare un'estensione installata da una raccolta privata
 
-1.  Nella barra dei menu, scegliere **degli strumenti** > **estensioni e aggiornamenti**.
+1. Nella barra dei menu, scegliere **degli strumenti** > **estensioni e aggiornamenti**.
 
-2.  Nel riquadro sinistro, selezionare **aggiornamenti**, quindi selezionare **Repository personale**.
+2. Nel riquadro sinistro, selezionare **aggiornamenti**, quindi selezionare **Repository personale**.
 
-3.  Nel riquadro di destra, selezionare un'estensione e quindi scegliere il **Update** pulsante.
+3. Nel riquadro di destra, selezionare un'estensione e quindi scegliere il **Update** pulsante.
 
 ## <a name="see-also"></a>Vedere anche
 - [Individuare e usare le estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

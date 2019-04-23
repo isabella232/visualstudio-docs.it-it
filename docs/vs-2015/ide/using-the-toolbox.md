@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073361"
 ---
 # <a name="using-the-toolbox"></a>Utilizzo della Casella degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ ms.locfileid: "54788265"
   
  È possibile riordinare gli elementi di una scheda della casella degli strumenti o aggiungere schede ed elementi personalizzati usando i seguenti comandi del menu di scelta rapida:  
   
--   **Rinomina elemento**: rinomina l'elemento selezionato.  
+- **Rinomina elemento**: rinomina l'elemento selezionato.  
   
--   **Mostra tutto**: visualizza tutti i controlli possibili, non solo quelli applicabili alla finestra di progettazione corrente.  
+- **Mostra tutto**: visualizza tutti i controlli possibili, non solo quelli applicabili alla finestra di progettazione corrente.  
   
--   **Elenco**: visualizza i controlli in un elenco verticale. Se deselezionati, i controlli vengono visualizzati in orizzontale.  
+- **Elenco**: visualizza i controlli in un elenco verticale. Se deselezionati, i controlli vengono visualizzati in orizzontale.  
   
--   **Scegli elementi**: apre la finestra di dialogo **Scegli elementi della Casella degli strumenti** che consente di specificare gli elementi visualizzati nella **casella degli strumenti**. È possibile visualizzare o nascondere un elemento selezionando o deselezionando la relativa casella di controllo.  
+- **Scegli elementi**: apre la finestra di dialogo **Scegli elementi della Casella degli strumenti** che consente di specificare gli elementi visualizzati nella **casella degli strumenti**. È possibile visualizzare o nascondere un elemento selezionando o deselezionando la relativa casella di controllo.  
   
--   **Ordina elementi alfabeticamente**: ordina gli elementi per nome.  
+- **Ordina elementi alfabeticamente**: ordina gli elementi per nome.  
   
--   **Reimposta barra degli strumenti**: ripristina le impostazioni e gli elementi predefiniti della casella degli strumenti.  
+- **Reimposta barra degli strumenti**: ripristina le impostazioni e gli elementi predefiniti della casella degli strumenti.  
   
--   **Aggiungi scheda**: aggiunge una nuova scheda della casella degli strumenti.  
+- **Aggiungi scheda**: aggiunge una nuova scheda della casella degli strumenti.  
   
--   **Sposta su**: sposta l'elemento selezionato verso l'alto.  
+- **Sposta su**: sposta l'elemento selezionato verso l'alto.  
   
--   **Sposta giù**: sposta l'elemento selezionato verso il basso.  
+- **Sposta giù**: sposta l'elemento selezionato verso il basso.  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Creare e distribuire controlli della casella degli strumenti personalizzati  
  È possibile creare un controllo della casella degli strumenti personalizzato in Visual Basic o in Visual C# iniziando con un modello di progetto basato su [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). È quindi possibile distribuire il controllo ai colleghi del team o pubblicarlo sul Web usando il [programma di installazione dei controlli della casella degli strumenti ](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

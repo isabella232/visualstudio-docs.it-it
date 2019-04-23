@@ -20,19 +20,19 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d77d06e720ebe9146f907d8868c46c94addd5d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a527a103b72d0026a7732a53b45d03793769058
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078707"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Procedura: Eseguire il debug del metodo OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile eseguire il debug di un servizio Windows stesso avviando il servizio e connettendo il debugger al processo del servizio. Per altre informazioni, vedere [Procedura: Eseguire il debug di applicazioni di servizio di Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2). Per eseguire il debug del metodo <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> di un servizio Windows, è tuttavia necessario avviare il debugger all'interno del metodo.  
   
-1.  Aggiungere una chiamata a <xref:System.Diagnostics.Debugger.Launch%2A> all'inizio del metodo `OnStart()`.  
+1. Aggiungere una chiamata a <xref:System.Diagnostics.Debugger.Launch%2A> all'inizio del metodo `OnStart()`.  
   
     ```csharp  
     protected override void OnStart(string[] args)  
@@ -41,19 +41,19 @@ ms.locfileid: "58966477"
      }  
     ```  
   
-2.  Avviare il servizio. È possibile usare `net start`o avviarlo nella finestra **Servizi** .  
+2. Avviare il servizio. È possibile usare `net start`o avviarlo nella finestra **Servizi** .  
   
      Verrà visualizzata una finestra di dialogo analoga alla seguente:  
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  Selezionare **Sì, esegui il debug di \<nome servizio>.**  
+3. Selezionare **Sì, esegui il debug di \<nome servizio>.**  
   
-4.  Nella finestra Debugger JIT di Visual Studio selezionare la versione di Visual Studio da usare per il debug.  
+4. Nella finestra Debugger JIT di Visual Studio selezionare la versione di Visual Studio da usare per il debug.  
   
      ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")  
   
-5.  Viene avviata una nuova istanza di Visual Studio e l'esecuzione viene arrestata in corrispondenza del metodo `Debugger.Launch()` .  
+5. Viene avviata una nuova istanza di Visual Studio e l'esecuzione viene arrestata in corrispondenza del metodo `Debugger.Launch()` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

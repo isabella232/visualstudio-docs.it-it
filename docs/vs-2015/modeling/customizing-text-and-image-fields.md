@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077167"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>Per creare una sottoclasse di ImageField  
   
-1.  Impostare il **genera una derivata doppia** proprietà della classe della forma padre nella definizione DSL.  
+1. Impostare il **genera una derivata doppia** proprietà della classe della forma padre nella definizione DSL.  
   
-2.  Eseguire l'override di `InitializeShapeFields` metodo della classe della forma.  
+2. Eseguire l'override di `InitializeShapeFields` metodo della classe della forma.  
   
-    -   Creare un nuovo file di codice nel progetto DSL e scrivere una definizione di classe parziale per la classe shape. Sostituire la definizione del metodo non esiste.  
+    - Creare un nuovo file di codice nel progetto DSL e scrivere una definizione di classe parziale per la classe shape. Sostituire la definizione del metodo non esiste.  
   
-3.  Esaminare il codice del `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.  
+3. Esaminare il codice del `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.  
   
      Nel metodo di override, chiamare il metodo di base e quindi creare un'istanza della classe campo immagine. Utilizzare questa opzione per sostituire il campo immagine normale nel `shapeFields` elenco.  
   

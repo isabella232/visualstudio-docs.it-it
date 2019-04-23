@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076686"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creazione di un'estensione con un comando di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
   
 ## <a name="creating-a-menu-command"></a>Creazione di un comando di Menu  
   
-1.  Creare un progetto VSIX denominato **FirstMenuCommand**. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+1. Creare un progetto VSIX denominato **FirstMenuCommand**. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
   
-2.  Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **FirstCommand**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **FirstCommand.cs**.  
+2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **FirstCommand**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **FirstCommand.cs**.  
   
-3.  Compilare il progetto e avviare il debug.  
+3. Compilare il progetto e avviare il debug.  
   
      Viene visualizzata l'istanza sperimentale di Visual Studio. Per altre informazioni sull'istanza sperimentale, vedere [il processo dell'istanza sperimentale](../extensibility/the-experimental-instance.md).  
   
-4.  Nell'istanza sperimentale, aprire il **strumenti / estensioni e aggiornamenti** finestra. Dovrebbero vedere le **FirstMenuCommand** estensione qui. (Se si apre **estensioni e aggiornamenti** nell'istanza di lavoro di Visual Studio, non verrà visualizzato **FirstMenuCommand**).  
+4. Nell'istanza sperimentale, aprire il **strumenti / estensioni e aggiornamenti** finestra. Dovrebbero vedere le **FirstMenuCommand** estensione qui. (Se si apre **estensioni e aggiornamenti** nell'istanza di lavoro di Visual Studio, non verrà visualizzato **FirstMenuCommand**).  
   
      Procedere quindi con il **strumenti** menu nell'istanza sperimentale. Si noterà **richiamare FirstCommand** comando. A questo punto, solo apparirà una finestra di messaggio con la dicitura "FirstCommandPackage all'interno di FirstMenuCommand.FirstCommand.MenuItemCallback()". Si vedrà come effettivamente avviare Blocco note di questo comando nella sezione successiva.  
   
 ## <a name="changing-the-menu-command-handler"></a>Modificare il gestore di comando di Menu  
  A questo punto è possibile aggiornare il gestore del comando per avviare il blocco note.  
   
-1.  Arrestare il debug e tornare all'istanza di lavoro di Visual Studio. Aprire il file FirstCommand.cs e aggiungere la seguente istruzione using:  
+1. Arrestare il debug e tornare all'istanza di lavoro di Visual Studio. Aprire il file FirstCommand.cs e aggiungere la seguente istruzione using:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Trovare il costruttore FirstCommand privato. Si tratta in cui il comando è collegato al servizio di comando e viene specificato il gestore del comando. Modificare il nome del gestore comando in StartNotepad, come indicato di seguito:  
+2. Trovare il costruttore FirstCommand privato. Si tratta in cui il comando è collegato al servizio di comando e viene specificato il gestore del comando. Modificare il nome del gestore comando in StartNotepad, come indicato di seguito:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
     }  
     ```  
   
-3.  Rimuovere il metodo MenuItemCallback e aggiungere un metodo StartNotepad semplicemente avviare Blocco note:  
+3. Rimuovere il metodo MenuItemCallback e aggiungere un metodo StartNotepad semplicemente avviare Blocco note:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
     }  
     ```  
   
-4.  Provare ora a eseguire l'operazione. Quando si avvia il debug del progetto e fare clic su **strumenti / richiamare FirstCommand**, dovrebbe essere un'istanza del blocco note venire in mente.  
+4. Provare ora a eseguire l'operazione. Quando si avvia il debug del progetto e fare clic su **strumenti / richiamare FirstCommand**, dovrebbe essere un'istanza del blocco note venire in mente.  
   
      È possibile usare un'istanza di <xref:System.Diagnostics.Process> classe per eseguire qualsiasi eseguibile, non appena il blocco note. È possibile provarlo con calc.exe, ad esempio.  
   
@@ -94,9 +94,9 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
   
  È possibile ottenere per questo script in uno dei due modi:  
   
-1.  Dal desktop, individuare **reimpostare l'istanza sperimentale di Visual Studio 2015**.  
+1. Dal desktop, individuare **reimpostare l'istanza sperimentale di Visual Studio 2015**.  
   
-2.  Eseguire il comando seguente dalla riga di comando:  
+2. Eseguire il comando seguente dalla riga di comando:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ Questa procedura dettagliata illustra come creare un'estensione con un comando d
   
 1. È possibile eseguire molte altre operazioni con un comando di menu semplice:  
   
-   1.  Aggiungere un'icona personalizzata: [Aggiunta di icone ai comandi di menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Aggiungere un'icona personalizzata: [Aggiunta di icone ai comandi di menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Modificare il testo del comando di menu: [Modifica del testo di un comando di menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Modificare il testo del comando di menu: [Modifica del testo di un comando di menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Aggiungere un menu di scelta rapida a un comando: [Associazione di scelte rapide da tastiera a voci di menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Aggiungere un menu di scelta rapida a un comando: [Associazione di scelte rapide da tastiera a voci di menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Aggiungere diversi tipi di comandi, menu e barre degli strumenti: [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md)  
   

@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072955"
 ---
 # <a name="program-control"></a>Controllo del programma
 In Visual Studio esegue il debug, tutte le istruzioni seguenti e continuando le routine si verificano a livello di programma:
 
--   Impostazione dell'istruzione successiva, vale a dire, impostazione del computer alla successiva istruzione da eseguire in un ambiente particolare fotogramma
+- Impostazione dell'istruzione successiva, vale a dire, impostazione del computer alla successiva istruzione da eseguire in un ambiente particolare fotogramma
 
--   L'esecuzione, vale a dire, continuando a uscire dalla modalità di debug passo a passo
+- L'esecuzione, vale a dire, continuando a uscire dalla modalità di debug passo a passo
 
--   L'esecuzione di istruzioni per l'istruzione successiva
+- L'esecuzione di istruzioni per l'istruzione successiva
 
--   Continuare con la modalità di debug passo a passo corrente
+- Continuare con la modalità di debug passo a passo corrente
 
--   Sospendere i thread contenuti dal programma
+- Sospendere i thread contenuti dal programma
 
--   Ripresa di thread di contenuti dal programma
+- Ripresa di thread di contenuti dal programma
 
 > [!NOTE]
 >  Visualizzazione dello stack di chiamate viene implementata a livello di thread. Per enumerare le informazioni di frame quando si visualizza lo stack di chiamate per un thread, è necessario implementare tutti i metodi del [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia.

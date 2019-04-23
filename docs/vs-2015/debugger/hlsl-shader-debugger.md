@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074388"
 ---
 # <a name="hlsl-shader-debugger"></a>Debugger dello shader HLS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Per avviare il debugger HLSL dalla finestra Fasi pipeline grafica  
   
-1.  Nella finestra **Fasi pipeline grafica** individuare la fase della pipeline associata allo shader di cui eseguire il debug.  
+1. Nella finestra **Fasi pipeline grafica** individuare la fase della pipeline associata allo shader di cui eseguire il debug.  
   
-2.  Sotto il titolo della fase della pipeline scegliere **Avvia debug**, visualizzato con una piccola freccia verde.  
+2. Sotto il titolo della fase della pipeline scegliere **Avvia debug**, visualizzato con una piccola freccia verde.  
   
     > [!NOTE]
     >  Questo punto di ingresso nel debugger HLSL esegue il debug solo del primo thread dello shader per la fase corrispondente, ovvero il primo vertice o pixel elaborato. È possibile usare Cronologia pixel grafica per accedere ad altri thread di queste fasi dello shader.  

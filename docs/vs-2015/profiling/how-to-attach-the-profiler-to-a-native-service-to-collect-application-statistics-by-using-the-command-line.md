@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078603"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un servizio nativo per raccogliere statistiche dell'applicazione tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -94,15 +94,15 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
 
-1.  Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:  
+1. Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:  
 
-    -   Arrestare il servizio.  
+    - Arrestare il servizio.  
 
          -oppure-  
 
-    -   Digitare **VSPerfCmd /detach**  
+    - Digitare **VSPerfCmd /detach**  
 
-2.  Arrestare il profiler. Tipo:  
+2. Arrestare il profiler. Tipo:  
 
      **VSPerfCmd /shutdown**  
 

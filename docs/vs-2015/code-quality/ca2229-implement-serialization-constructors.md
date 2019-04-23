@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073164"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementare costruttori di serializzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58954847"
 ## <a name="cause"></a>Causa
  Il tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia, non è un delegato o l'interfaccia e viene soddisfatta una delle condizioni seguenti:
 
--   Il tipo non dispone di un costruttore che accetta un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> oggetto e un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> oggetto (la firma del costruttore di serializzazione).
+- Il tipo non dispone di un costruttore che accetta un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> oggetto e un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> oggetto (la firma del costruttore di serializzazione).
 
--   Il tipo è non bloccato e il modificatore di accesso per il relativo costruttore di serializzazione non è protetta (famiglia).
+- Il tipo è non bloccato e il modificatore di accesso per il relativo costruttore di serializzazione non è protetta (famiglia).
 
--   Il tipo è sealed e il modificatore di accesso per il relativo costruttore di serializzazione non è privato.
+- Il tipo è sealed e il modificatore di accesso per il relativo costruttore di serializzazione non è privato.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola è rilevante per i tipi che supportano la serializzazione personalizzata. Un tipo supporta la serializzazione personalizzata se implementa il <xref:System.Runtime.Serialization.ISerializable> interfaccia. È necessario il costruttore di serializzazione per deserializzare, o ricreare gli oggetti che sono stati serializzati utilizzando la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (metodo).

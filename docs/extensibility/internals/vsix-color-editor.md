@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074752"
 ---
 # <a name="vsix-color-editor"></a>Editor dei colori VSIX
 Lo strumento Editor colore di estensione di Visual Studio possa creare e modificare i colori personalizzati per Visual Studio. Lo strumento può anche generare le chiavi di risorsa del tema in modo che i colori possono essere usati nel codice. Questo strumento è utile per rendere i colori per un'estensione di Visual Studio che supporta i temi. Questo strumento può aprire file con estensione pkgdef e XML. Visual Studio temi (file .vstheme) possono essere utilizzati con l'Editor colore di Visual Studio estensione modificando l'estensione di file in. Xml. Inoltre, .vstheme file possono essere importati in un file con estensione XML corrente.
@@ -28,13 +28,13 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
 
  Un token di colore è costituito da quattro elementi:
 
--   **Nome della categoria:** Un raggruppamento logico per un set di colori. Usare un nome di categoria esistente se sono già presenti colori specifici per l'elemento dell'interfaccia utente desiderata, o il gruppo di elementi dell'interfaccia utente.
+- **Nome della categoria:** Un raggruppamento logico per un set di colori. Usare un nome di categoria esistente se sono già presenti colori specifici per l'elemento dell'interfaccia utente desiderata, o il gruppo di elementi dell'interfaccia utente.
 
--   **Nome token:** Un nome descrittivo per il token di colore e il set di token. Set includono sfondo e i nomi di token di primo piano (testo), nonché tutti i relativi stati e devono essere denominati in modo che risulti semplice identificare gli Stati che si applicano a e le coppie.
+- **Nome token:** Un nome descrittivo per il token di colore e il set di token. Set includono sfondo e i nomi di token di primo piano (testo), nonché tutti i relativi stati e devono essere denominati in modo che risulti semplice identificare gli Stati che si applicano a e le coppie.
 
--   **I valori di colore (o scure):** Necessaria per ogni tema colorato. Creare sempre sfondo e testo i valori di colore in coppie. I colori vengono abbinati per sfondo/primo piano in modo che il colore del testo (primo piano) è sempre leggibile il colore di sfondo in cui disegnarlo. Tali colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non è previsto per l'uso con il testo, non si definisce un colore di primo piano.
+- **I valori di colore (o scure):** Necessaria per ogni tema colorato. Creare sempre sfondo e testo i valori di colore in coppie. I colori vengono abbinati per sfondo/primo piano in modo che il colore del testo (primo piano) è sempre leggibile il colore di sfondo in cui disegnarlo. Tali colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non è previsto per l'uso con il testo, non si definisce un colore di primo piano.
 
--   **Nome di colore di sistema:** Per l'uso nelle visualizzazioni a contrasto elevato.
+- **Nome di colore di sistema:** Per l'uso nelle visualizzazioni a contrasto elevato.
 
 ## <a name="how-to-use-the-tool"></a>Come usare lo strumento
  Quanto più possibile, e laddove appropriato, i colori di Visual Studio esistenti devono essere riutilizzati anziché lasciare che quelli nuovi. Tuttavia, per i casi in cui non sono definiti colori appropriati, colori personalizzati devono essere creati per mantenere un'applicazione di temi estensione compatibile.
@@ -67,7 +67,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
 
 - Attivo
 
-- inattivo
+- Inattivo
 
 - MouseOver
 

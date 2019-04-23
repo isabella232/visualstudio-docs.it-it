@@ -1,5 +1,5 @@
 ---
-title: Protezione di applicazioni ClickOnce | Microsoft Docs
+title: Protezione delle applicazioni ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076198"
 ---
 # <a name="securing-clickonce-applications"></a>Protezione di applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Le applicazioni[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sono sogge
  Le autorizzazioni predefinite dipendono dal percorso di distribuzione della versione originale dell'applicazione. Gli eventuali aggiornamenti erediteranno tali autorizzazioni. Se l'applicazione è configurata in modo da controllare la disponibilità degli aggiornamenti in un percorso Web o di rete e viene rilevata la disponibilità di una versione più recente, è possibile che l'installazione originale riceva autorizzazioni per l'area Internet o Intranet anziché autorizzazioni di attendibilità totale. Per evitare che la richiesta venga visualizzata, l'amministratore di sistema può specificare criteri di distribuzione ClickOnce che definiscano uno specifico editore dell'applicazione come fonte attendibile. Per i computer in cui viene distribuito questi criteri, le autorizzazioni verranno concesse automaticamente senza alcun intervento da parte dell'utente. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Per configurare la distribuzione di applicazioni attendibili, è possibile installare il certificato nel computer o a livello aziendale. Per altre informazioni, vedere [Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Criteri di sicurezza per l'accesso al codice  
- Le autorizzazioni per un'applicazione sono determinate dalle impostazioni nel [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento del manifesto dell'applicazione. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera automaticamente queste informazioni in base alle impostazioni presenti nella pagina delle proprietà **Sicurezza** del progetto. A un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vengono concesse solo le autorizzazioni specifiche richieste. Ad esempio, se per l'accesso ai file sono necessarie autorizzazioni di attendibilità totale, ma l'applicazione richiede solo l'autorizzazione di accesso ai file, verrà concessa solo questa autorizzazione e non quelle di attendibilità totale. Quando si sviluppa l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , è necessario assicurarsi di richiedere solo le autorizzazioni specifiche necessarie per l'applicazione. Nella maggior parte dei casi è possibile usare le aree Internet o Intranet locale per limitare l'applicazione a un'attendibilità parziale. Per altre informazioni, vedere [Procedura: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Se l'applicazione richiede autorizzazioni personalizzate, è possibile creare un'area personalizzata. Per altre informazioni, vedere [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Le autorizzazioni per un'applicazione sono determinate dalle impostazioni nell'elemento [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md) del manifesto dell'applicazione. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera automaticamente queste informazioni in base alle impostazioni presenti nella pagina delle proprietà **Sicurezza** del progetto. A un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vengono concesse solo le autorizzazioni specifiche richieste. Ad esempio, se per l'accesso ai file sono necessarie autorizzazioni di attendibilità totale, ma l'applicazione richiede solo l'autorizzazione di accesso ai file, verrà concessa solo questa autorizzazione e non quelle di attendibilità totale. Quando si sviluppa l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , è necessario assicurarsi di richiedere solo le autorizzazioni specifiche necessarie per l'applicazione. Nella maggior parte dei casi è possibile usare le aree Internet o Intranet locale per limitare l'applicazione a un'attendibilità parziale. Per altre informazioni, vedere [Procedura: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Se l'applicazione richiede autorizzazioni personalizzate, è possibile creare un'area personalizzata. Per altre informazioni, vedere [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Se si aggiunge un'autorizzazione non inclusa nel set di autorizzazioni predefinito per l'area da cui viene distribuita l'applicazione, all'utente finale verrà chiesto di concedere l'autorizzazione al momento dell'installazione o dell'aggiornamento. Per evitare che la richiesta venga visualizzata, l'amministratore di sistema può specificare criteri di distribuzione ClickOnce che definiscano uno specifico editore dell'applicazione come fonte attendibile. Sui computer in cui vengono distribuiti questi criteri, le autorizzazioni verranno concesse automaticamente senza alcun intervento da parte dell'utente.  
   
@@ -79,11 +79,11 @@ Le applicazioni[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sono sogge
 ## <a name="deploying-obfuscated-assemblies"></a>Distribuzione di assembly offuscati  
  È possibile offuscare l'applicazione con Dotfuscator per impedire ad altri utenti di decodificare il codice. L'offuscamento degli assembly tuttavia non è integrato nel processo di distribuzione dell'IDE Visual Studio o ClickOnce. Sarà necessario pertanto eseguire l'offuscamento al di fuori del processo di distribuzione, eventualmente usando un passaggio di post-compilazione. Dopo aver compilato il progetto, eseguire manualmente i passaggi seguenti al di fuori di Visual Studio:  
   
-1.  Eseguire l'offuscamento usando Dotfuscator.  
+1. Eseguire l'offuscamento usando Dotfuscator.  
   
-2.  Usare Mage.exe o MageUI.exe per generare i manifesti ClickOnce e firmarli. Per altre informazioni, vedere [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) e [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Usare Mage.exe o MageUI.exe per generare i manifesti ClickOnce e firmarli. Per altre informazioni, vedere [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) e [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-3.  Pubblicare manualmente (copiare) i file nel percorso di origine della distribuzione, ovvero nel server Web, nella condivisione UNC o su CD-ROM.  
+3. Pubblicare manualmente (copiare) i file nel percorso di origine della distribuzione, ovvero nel server Web, nella condivisione UNC o su CD-ROM.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   

@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077498"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Procedura: Utilizzare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
   
 ### <a name="to-display-the-disassembly-window"></a>Per visualizzare la finestra Disassembly  
   
--   Nel **Debug** menu, scegliere **Windows**, fare clic su **Disassembly**.  
+- Nel **Debug** menu, scegliere **Windows**, fare clic su **Disassembly**.  
   
      Il debugger deve essere in esecuzione o in modalità di interruzione.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Per attivare o disattivare la visualizzazione delle informazioni opzionali  
   
--   Fare doppio clic il **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
+- Fare doppio clic il **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
   
      Una freccia gialla sul margine sinistro indica la posizione del punto di esecuzione corrente. Per il codice nativo la posizione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d37984b6535e353053ba6ee71090797e4ce119d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078590"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedura: Escludere o includere funzioni brevi nella strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
   
 ### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Per escludere o includere funzioni brevi nella strumentazione  
   
-1.  In **Esplora prestazioni** selezionare **Sessione prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
+1. In **Esplora prestazioni** selezionare **Sessione prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
   
      Verrà visualizzata la finestra di dialogo **Pagine delle proprietà**.  
   
-2.  In **Pagine delle proprietà** fare clic sulle proprietà di **Strumentazione**.  
+2. In **Pagine delle proprietà** fare clic sulle proprietà di **Strumentazione**.  
   
-3.  Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Questa è l'impostazione predefinita.  
+3. Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Questa è l'impostazione predefinita.  
   
      -oppure-  
   
      Per includere le funzioni brevi nella strumentazione, deselezionare **Escludi funzioni brevi da strumentazione**.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
