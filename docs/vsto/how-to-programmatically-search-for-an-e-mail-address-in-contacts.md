@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6b29e46a61a46ae5e986dec7b14733e3807064b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115224"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procedura: Eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti
   Questo esempio cerca una cartella Contatti per i contatti con il nome dominio **example.com** nei relativi indirizzi di posta elettronica.
@@ -32,7 +32,7 @@ ms.locfileid: "56615494"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
--   Contatti con il nome dominio **example.com** nei relativi indirizzi di posta elettronica (ad esempio, `somebody@example.com`) e con il nome e il cognome.
+- Contatti con il nome dominio **example.com** nei relativi indirizzi di posta elettronica (ad esempio, `somebody@example.com`) e con il nome e il cognome.
 
 ## <a name="see-also"></a>Vedere anche
 - [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)

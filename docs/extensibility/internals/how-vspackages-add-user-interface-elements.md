@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092318"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esempio, i menu, barre degli strumenti e finestre degli strumenti di Visual Studio tramite il *vsct* file.
@@ -27,11 +27,11 @@ Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esem
 ## <a name="the-visual-studio-command-table-architecture"></a>L'architettura di tabella comandi di Visual Studio
  Come accennato, l'architettura di tabella comandi supporta i suddetto principi architetturali. Come indicato di seguito sono riportati i principi alla base di astrazioni, strutture di dati e gli strumenti di architettura di tabella il comando:
 
--   Esistono tre tipi di base degli elementi: menu, comandi e i gruppi. I menu possono essere esposte nell'interfaccia utente come i menu, sottomenu, barre degli strumenti o finestre degli strumenti. I comandi sono routine che l'utente può eseguire nell'IDE e possono essere esposte come voci di menu, pulsanti, caselle di riepilogo o altri controlli. I gruppi sono contenitori per i menu e comandi.
+- Esistono tre tipi di base degli elementi: menu, comandi e i gruppi. I menu possono essere esposte nell'interfaccia utente come i menu, sottomenu, barre degli strumenti o finestre degli strumenti. I comandi sono routine che l'utente può eseguire nell'IDE e possono essere esposte come voci di menu, pulsanti, caselle di riepilogo o altri controlli. I gruppi sono contenitori per i menu e comandi.
 
--   Ogni elemento viene specificato da una definizione che descrive l'elemento, la priorità rispetto alle altre voci e i flag che modificano il comportamento.
+- Ogni elemento viene specificato da una definizione che descrive l'elemento, la priorità rispetto alle altre voci e i flag che modificano il comportamento.
 
--   Ogni elemento ha una posizione che descrive l'elemento padre dell'elemento. Un elemento può avere più elementi padre, in modo da poter essere visualizzati in più posizioni nell'interfaccia utente.
+- Ogni elemento ha una posizione che descrive l'elemento padre dell'elemento. Un elemento può avere più elementi padre, in modo da poter essere visualizzati in più posizioni nell'interfaccia utente.
 
      Tutti i comandi devono avere un gruppo come elemento padre, anche se è l'unico elemento figlio in tale gruppo. Ogni menu standard deve avere anche un gruppo padre. Le barre degli strumenti e finestre degli strumenti fungono i propri elementi padre. Un gruppo può avere come padre barra dei menu di Visual Studio principale, o qualsiasi menu di scelta, sulla barra degli strumenti o finestra degli strumenti.
 
@@ -74,15 +74,15 @@ Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esem
 ### <a name="menus-groups-and-commands"></a>Menu, gruppi e i comandi
  Quando un menu, gruppo o comando è un GUID e ID, può essere aggiunto all'IDE. Ogni elemento dell'interfaccia utente debba avere gli elementi seguenti:
 
--   Oggetto `guid` attributo che corrisponde al nome del `GuidSymbol` elemento che l'elemento dell'interfaccia utente è definito sotto.
+- Oggetto `guid` attributo che corrisponde al nome del `GuidSymbol` elemento che l'elemento dell'interfaccia utente è definito sotto.
 
--   Un' `id` attributo che corrisponde al nome dell'oggetto associato `IDSymbol` elemento.
+- Un' `id` attributo che corrisponde al nome dell'oggetto associato `IDSymbol` elemento.
 
      Insieme, il `guid` e `id` attributi compongono le *firma* dell'elemento dell'interfaccia utente.
 
--   Oggetto `priority` attributo che determina il posizionamento dell'elemento dell'interfaccia utente nel relativo menu padre o gruppo.
+- Oggetto `priority` attributo che determina il posizionamento dell'elemento dell'interfaccia utente nel relativo menu padre o gruppo.
 
--   Oggetto [elemento padre](../../extensibility/parent-element.md) dotato `guid` e `id` gli attributi che specificano la firma del menu padre o del gruppo.
+- Oggetto [elemento padre](../../extensibility/parent-element.md) dotato `guid` e `id` gli attributi che specificano la firma del menu padre o del gruppo.
 
 #### <a name="menus"></a>Menu
  Le voci di menu viene definito come un [Menu element](../../extensibility/menu-element.md) nel `Menus` sezione. Menu di scelta deve avere `guid`, `id`, e `priority` gli attributi e un `Parent` elemento e anche i seguenti attributi aggiuntivi e gli elementi figlio:
@@ -263,17 +263,17 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>Requisiti generali
  Il comando è necessario passare la serie seguente di test prima di poter essere visualizzata e abilitato:
 
--   Il comando è posizionato correttamente.
+- Il comando è posizionato correttamente.
 
--   Il `DefaultInvisible` flag non è impostato.
+- Il `DefaultInvisible` flag non è impostato.
 
--   Il menu padre oppure sulla barra degli strumenti è visibile.
+- Il menu padre oppure sulla barra degli strumenti è visibile.
 
--   Il comando non è invisibile a causa di una voce di contesto nella [elemento VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sezione.
+- Il comando non è invisibile a causa di una voce di contesto nella [elemento VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sezione.
 
--   Codice di VSPackage che implementa il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia consente di visualizzare e abilita il comando. Nessun codice interfaccia intercettato e agisce su di esso.
+- Codice di VSPackage che implementa il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia consente di visualizzare e abilita il comando. Nessun codice interfaccia intercettato e agisce su di esso.
 
--   Quando un utente sceglie il comando, questa diventa sottoposto alla procedura descritta in [algoritmo di Routing](../../extensibility/internals/command-routing-algorithm.md).
+- Quando un utente sceglie il comando, questa diventa sottoposto alla procedura descritta in [algoritmo di Routing](../../extensibility/internals/command-routing-algorithm.md).
 
 ## <a name="call-pre-defined-commands"></a>Comandi predefiniti delle chiamate
  Il [elemento UsedCommands](../../extensibility/usedcommands-element.md) consente ai package VS per accedere ai comandi forniti da altri pacchetti VSPackage o dall'IDE. A questo scopo, creare un [elemento UsedCommand](../../extensibility/usedcommand-element.md) che è il GUID e ID del comando da usare. Ciò garantisce che il comando verrà caricato da Visual Studio, anche se non fa parte della configurazione di Visual Studio corrente. Per altre informazioni, vedere [elemento UsedCommand](../../extensibility/usedcommand-element.md).

@@ -1,5 +1,5 @@
 ---
-title: 'Nuova generazione del progetto: Dietro le quinte, parte 1 | Microsoft Docs'
+title: 'Generazione nuovo progetto: Dietro le quinte, parte 1 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd31b87f6a82ae11a21d2f7373f98ede01e1fdea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091941"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Nuova generazione del progetto: Dietro le quinte, parte 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generazione nuovo progetto: Dietro le quinte, prima parte
 Mai pensato di come creare un proprio tipo di progetto? Chiedersi cosa succede effettivamente quando si crea un nuovo progetto? Verrà esaminato un peek dietro le quinte e vedere cosa sta effettivamente succedendo.
 
  Sono disponibili diverse attività che coordina la Visual Studio per l'utente:
 
--   Visualizza un albero di tutti i tipi di progetto disponibili.
+- Visualizza un albero di tutti i tipi di progetto disponibili.
 
--   Visualizza un elenco di modelli di applicazione per ogni tipo di progetto e consente di selezionare uno.
+- Visualizza un elenco di modelli di applicazione per ogni tipo di progetto e consente di selezionare uno.
 
--   Raccoglie le informazioni sul progetto per l'applicazione, ad esempio nome del progetto e il percorso.
+- Raccoglie le informazioni sul progetto per l'applicazione, ad esempio nome del progetto e il percorso.
 
--   Queste informazioni passa la factory del progetto.
+- Queste informazioni passa la factory del progetto.
 
--   Genera gli elementi del progetto e le cartelle nella soluzione corrente.
+- Genera gli elementi del progetto e le cartelle nella soluzione corrente.
 
 ## <a name="the-new-project-dialog-box"></a>La finestra di dialogo Nuovo progetto
  Tutto ha inizio quando si seleziona un tipo di progetto per un nuovo progetto. Iniziamo facendo **nuovo progetto** nel **File** menu. Il **nuovo progetto** viene visualizzata la finestra di dialogo, dall'aspetto professionale simile al seguente:
@@ -90,7 +90,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity
  Se questa sottochiave è presente, la posizione del nodo radice è controllata dalla finestra di dialogo Impostazioni modalità sviluppatore. Ad esempio,
 
- REG_SZ DeveloperActivity VC #
+ REG_SZ DeveloperActivityVC#
 
  indica che Visual c# è un nodo radice se Visual Studio è impostato per [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] lo sviluppo. In caso contrario, sarà un nodo figlio del **altri linguaggi**.
 
@@ -114,11 +114,11 @@ devenv /installvstemplates
 
  Quando la **nuovo progetto** verrà visualizzata la finestra di dialogo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] attraversa la cartella ProjectTemplates e ricrea la struttura di **tipi di progetto** albero con alcune modifiche:
 
--   Il nodo radice nella **tipi di progetto** albero è determinata dal modello di applicazione.
+- Il nodo radice nella **tipi di progetto** albero è determinata dal modello di applicazione.
 
--   Il nome del nodo può essere localizzato e può contenere caratteri speciali.
+- Il nome del nodo può essere localizzato e può contenere caratteri speciali.
 
--   L'ordinamento può essere modificato.
+- L'ordinamento può essere modificato.
 
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Ricerca del nodo radice per un tipo di progetto
  Quando Visual Studio attraversa le cartelle ProjectTemplates, apre tutti i file con estensione zip ed estrae i file con estensione vstemplate. Un file con estensione vstemplate Usa XML per descrivere un modello di applicazione. Per altre informazioni, vedere [nuova generazione progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).

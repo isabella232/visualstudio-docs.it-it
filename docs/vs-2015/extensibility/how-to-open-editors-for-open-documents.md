@@ -10,12 +10,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1a8238ce632f8552b36ccb259af683636732b469
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092331"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procedura: Aprire gli editor per i documenti aperti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ Prima di una finestra del documento viene aperto un progetto, il progetto prima 
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>Per aprire un editor standard di un file aperto  
   
-1.  Chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
      Questo metodo verifica innanzitutto che il documento non è già aperto chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Se il documento è già aperto, la finestra dell'editor è riapparire.  
   
-2.  Se il documento non è aperto, quindi completare la procedura descritta in [come: Aprire gli editor Standard](../extensibility/how-to-open-standard-editors.md).  
+2. Se il documento non è aperto, quindi completare la procedura descritta in [come: Aprire gli editor Standard](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Apertura e salvataggio di elementi di progetto](../extensibility/internals/opening-and-saving-project-items.md)   

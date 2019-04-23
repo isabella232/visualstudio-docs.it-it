@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3b1491f8a7978fa7f2ab12afa46c5e50fbf80c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091499"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache
   Questa procedura dettagliata illustra la creazione di una relazione master/dettaglio in un foglio di lavoro e la memorizzazione nella cache i dati in modo che la soluzione possa essere usata offline.
@@ -27,13 +27,13 @@ ms.locfileid: "56603027"
 
  Durante questa procedura dettagliata, si apprenderà come:
 
--   Aggiungere controlli a un foglio di lavoro.
+- Aggiungere controlli a un foglio di lavoro.
 
--   Configurare un set di dati da memorizzare nella cache in un foglio di lavoro.
+- Configurare un set di dati da memorizzare nella cache in un foglio di lavoro.
 
--   Aggiungere codice per abilitare lo scorrimento dei record.
+- Aggiungere codice per abilitare lo scorrimento dei record.
 
--   Testare il progetto.
+- Testare il progetto.
 
 > [!NOTE]
 >  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -41,13 +41,13 @@ ms.locfileid: "56603027"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Accesso al database di esempio Northwind di SQL Server. Il database può essere nel computer di sviluppo o in un server.
+- Accesso al database di esempio Northwind di SQL Server. Il database può essere nel computer di sviluppo o in un server.
 
--   Autorizzazioni per leggere e scrivere nel database di SQL Server.
+- Autorizzazioni per leggere e scrivere nel database di SQL Server.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  In questo passaggio si creerà un progetto cartella di lavoro di Excel.
@@ -88,21 +88,21 @@ ms.locfileid: "56603027"
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>Per aggiungere un intervallo denominato e un oggetto elenco
 
-1.  Verificare che il **My Master-Detail.xlsx** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
+1. Verificare che il **My Master-Detail.xlsx** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
 
-2.  Aprire il **Zdroje dat** finestra ed espandere le **ordini** nodo.
+2. Aprire il **Zdroje dat** finestra ed espandere le **ordini** nodo.
 
-3.  Selezionare il **OrderID** colonna e quindi fare clic sulla freccia giù visualizzata.
+3. Selezionare il **OrderID** colonna e quindi fare clic sulla freccia giù visualizzata.
 
-4.  Fare clic su **NamedRange** nell'elenco a discesa, quindi trascinare il **OrderID** colonna cella **A2**.
+4. Fare clic su **NamedRange** nell'elenco a discesa, quindi trascinare il **OrderID** colonna cella **A2**.
 
      Oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo denominato `OrderIDNamedRange` viene memorizzato nella cella **A2**. Allo stesso tempo, un <xref:System.Windows.Forms.BindingSource> denominate `OrdersBindingSource`, un adattatore di tabella e un <xref:System.Data.DataSet> istanza vengono aggiunte al progetto. Il controllo viene associato ai <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato ai <xref:System.Data.DataSet> istanza.
 
-5.  Scorrere verso il basso oltre le colonne che sono sotto il **ordini** tabella. Nella parte inferiore dell'elenco è il **Order Details** tabella; è qui perché è un figlio delle **ordini** tabella. Selezionare questa opzione **Order Details** tabella, non quello che si trova allo stesso livello di **ordini** di tabella e quindi fare clic sulla freccia giù visualizzata.
+5. Scorrere verso il basso oltre le colonne che sono sotto il **ordini** tabella. Nella parte inferiore dell'elenco è il **Order Details** tabella; è qui perché è un figlio delle **ordini** tabella. Selezionare questa opzione **Order Details** tabella, non quello che si trova allo stesso livello di **ordini** di tabella e quindi fare clic sulla freccia giù visualizzata.
 
-6.  Fare clic su **ListObject** nell'elenco a discesa, quindi trascinare il **OrderDetails** alla cella **A6**.
+6. Fare clic su **ListObject** nell'elenco a discesa, quindi trascinare il **OrderDetails** alla cella **A6**.
 
-7.  Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato **Order_DetailsListObject** viene memorizzato nella cella **A6**e associato ai <xref:System.Windows.Forms.BindingSource>.
+7. Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato **Order_DetailsListObject** viene memorizzato nella cella **A6**e associato ai <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-two-buttons"></a>Per aggiungere due pulsanti
 
@@ -136,14 +136,14 @@ ms.locfileid: "56603027"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>Per inizializzare i dati e i controlli
 
-1.  Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
+1. Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
 
-2.  Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo dei pulsanti.
+2. Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo dei pulsanti.
 
      [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
      [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
 
-3.  Solo per c#, aggiungere gestori per il pulsante eventi click per il `Sheet1_Startup` (metodo).
+3. Solo per c#, aggiungere gestori per il pulsante eventi click per il `Sheet1_Startup` (metodo).
 
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
 
@@ -152,12 +152,12 @@ ms.locfileid: "56603027"
 
 ### <a name="to-scroll-through-the-records"></a>Per scorrere i record
 
-1.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi di `Button1`e aggiungere il codice seguente per spostare indietro tra i record:
+1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi di `Button1`e aggiungere il codice seguente per spostare indietro tra i record:
 
      [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
      [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
 
-2.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi di `Button2`e aggiungere il codice seguente per passare tra i record:
+2. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi di `Button2`e aggiungere il codice seguente per passare tra i record:
 
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
@@ -167,26 +167,26 @@ ms.locfileid: "56603027"
 
 ### <a name="to-test-the-data-caching"></a>Per testare la memorizzazione nella cache di dati
 
-1.  Premere **F5**.
+1. Premere **F5**.
 
-2.  Verificare che l'intervallo denominato e l'oggetto elenco sono compilati con i dati dall'origine dati.
+2. Verificare che l'intervallo denominato e l'oggetto elenco sono compilati con i dati dall'origine dati.
 
-3.  Lo scorrimento di alcuni record facendo clic sui pulsanti.
+3. Lo scorrimento di alcuni record facendo clic sui pulsanti.
 
-4.  Salvare la cartella di lavoro e quindi chiudere la cartella di lavoro e Visual Studio.
+4. Salvare la cartella di lavoro e quindi chiudere la cartella di lavoro e Visual Studio.
 
-5.  Disabilitare la connessione al database. Scollegare il cavo di rete dal computer se il database si trova in un server o arrestare il servizio SQL Server se il database si trova nel computer di sviluppo.
+5. Disabilitare la connessione al database. Scollegare il cavo di rete dal computer se il database si trova in un server o arrestare il servizio SQL Server se il database si trova nel computer di sviluppo.
 
-6.  Aprire Excel e quindi aprire **My Master-Detail.xlsx** dalle *\bin* directory (*\My Master-Detail\bin* in Visual Basic o *\My Master-Detail\bin\ eseguire il debug* in c#).
+6. Aprire Excel e quindi aprire **My Master-Detail.xlsx** dalle *\bin* directory (*\My Master-Detail\bin* in Visual Basic o *\My Master-Detail\bin\ eseguire il debug* in c#).
 
-7.  Scorrere tra alcuni dei record per verificare che il foglio di lavoro viene eseguito in genere quando si è disconnessi.
+7. Scorrere tra alcuni dei record per verificare che il foglio di lavoro viene eseguito in genere quando si è disconnessi.
 
-8.  Ristabilire la connessione al database. Connettere nuovamente il computer alla rete se il database si trova in un server, o avviare il servizio SQL Server se il database si trova nel computer di sviluppo.
+8. Ristabilire la connessione al database. Connettere nuovamente il computer alla rete se il database si trova in un server, o avviare il servizio SQL Server se il database si trova nel computer di sviluppo.
 
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata illustra le nozioni di base di creazione di una relazione tra dati master/dettaglio in un foglio di lavoro e la memorizzazione nella cache un set di dati. Ecco alcune possibili attività successive:
 
--   Distribuire la soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
+- Distribuire la soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

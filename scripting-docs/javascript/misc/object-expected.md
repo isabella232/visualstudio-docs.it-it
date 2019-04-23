@@ -14,23 +14,23 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09027661b07bbc489dff4985d3858eb8366437a7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115094"
 ---
 # <a name="object-expected"></a>Previsto oggetto
 Si è tentato di richiamare un metodo o una proprietà in un oggetto di tipo diverso da `Object` oppure è stato passato un argomento di tipo diverso da `Object` quando era obbligatorio un `Object`.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Richiamare il metodo o la proprietà solo in oggetti di tipo `Object`.  
+- Richiamare il metodo o la proprietà solo in oggetti di tipo `Object`.  
   
--   Se l'errore si verifica per un argomento non oggetto, passare un oggetto di tipo `Object`.  
+- Se l'errore si verifica per un argomento non oggetto, passare un oggetto di tipo `Object`.  
   
--   Verificare se viene richiamato un riferimento non definito o Null invece di un oggetto di tipo `Object`.  
+- Verificare se viene richiamato un riferimento non definito o Null invece di un oggetto di tipo `Object`.  
   
      Ad esempio, se si verifica questo errore su myVar nel codice seguente:  
   

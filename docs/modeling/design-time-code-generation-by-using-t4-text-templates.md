@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090420"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 Modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o database che contiene informazioni chiave sui requisiti dell'applicazione.
@@ -141,9 +141,9 @@ I modelli di testo permettono di usare il codice programma per variare il conten
 
 #### <a name="to-generate-program-code-or-resources"></a>Per generare codice programma o risorse
 
-1.  Modificare la direttiva di output in modo da generare un file di tipo appropriato, ad esempio un file con estensione cs, vb, resx oppure xml.
+1. Modificare la direttiva di output in modo da generare un file di tipo appropriato, ad esempio un file con estensione cs, vb, resx oppure xml.
 
-2.  Inserire codice per la generazione del codice soluzione necessario. Ad esempio, per generare tre dichiarazioni di campo con valore Integer in una classe:
+2. Inserire codice per la generazione del codice soluzione necessario. Ad esempio, per generare tre dichiarazioni di campo con valore Integer in una classe:
 
     ```csharp
 
@@ -176,7 +176,7 @@ I modelli di testo permettono di usare il codice programma per variare il conten
 
     ```
 
-3.  Salvare il file ed esaminare il file generato, che ora contiene il codice seguente:
+3. Salvare il file ed esaminare il file generato, che ora contiene il codice seguente:
 
     ```csharp
     class MyGeneratedClass {

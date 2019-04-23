@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091609"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedura: Eseguire il debug di un controllo ActiveX
 
@@ -40,19 +40,19 @@ Per effettuare il debug di un controllo ActiveX, è necessario specificare un co
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>Per specificare un contenitore per la sessione di debug
 
-1.  Selezionare il progetto in Esplora soluzioni.
+1. Selezionare il progetto in Esplora soluzioni.
 
-2.  Dal **View** menu, scegliere **pagine delle proprietà**.
+2. Dal **View** menu, scegliere **pagine delle proprietà**.
 
-3.  Nella finestra di dialogo **Pagine delle proprietà del progetto** aprire la cartella **Proprietà di configurazione** e selezionare **Debug**.
+3. Nella finestra di dialogo **Pagine delle proprietà del progetto** aprire la cartella **Proprietà di configurazione** e selezionare **Debug**.
 
-4.  Nella categoria **Debug** individuare la proprietà **Command**.
+4. Nella categoria **Debug** individuare la proprietà **Command**.
 
-5.  Specificare il percorso del contenitore. Ad esempio, C:\Programmi\Internet Explorer\IEXPLORE.EXE.
+5. Specificare il percorso del contenitore. Ad esempio, C:\Programmi\Internet Explorer\IEXPLORE.EXE.
 
-6.  Se si specifica Internet Explorer come contenitore ed è attivata la modalità Active Desktop, digitare `/new` nella casella **Argomenti del comando**.
+6. Se si specifica Internet Explorer come contenitore ed è attivata la modalità Active Desktop, digitare `/new` nella casella **Argomenti del comando**.
 
-7.  Fare clic su **OK**.
+7. Fare clic su **OK**.
 
      Se non si specifica alcun contenitore nella finestra di dialogo **Project Property Pages** (Pagine delle proprietà del progetto), sarà possibile specificarlo all'avvio del debug. Quando si seleziona un comando per avviare il debug, viene visualizzata la finestra di dialogo [Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md). Nella finestra di dialogo specificare il nome percorso del contenitore.
 

@@ -17,23 +17,25 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e0fd75d45d42fb4216e96c29d1403e89eb44353
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51a8e43268718421a90d051f0d4d9b6afa96980e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092370"
 ---
-# <a name="debugging-f"></a>Debug di F# #
+# <a name="debugging-f"></a>Debug di F\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il debug di F #è simile al debug di qualsiasi linguaggio gestito, con alcune eccezioni:  
-  
--   Nella finestra **Auto** non vengono visualizzate le variabili F#.  
-  
--   La modifica e la continuazione non sono supportate per F#. La modifica del codice F# durante una sessione di debug è possibile ma deve essere evitata. Poiché le modifiche al codice non vengono applicate durante la sessione di debug, la modifica del codice F# durante il debug provocherà una mancata corrispondenza tra il codice sorgente e il codice in fase di debug.  
-  
--   Il debugger non riconosce le espressioni F#. Per immettere un'espressione in una finestra o una finestra di dialogo del debugger durante il debug di F#, è necessario tradurre l'espressione nella sintassi C#. Quando si traduce un'espressione F# in C#, ricordare che C# utilizza == come operatore di confronto per uguaglianza e che F# utilizza un solo =.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+Il debug di F #è simile al debug di qualsiasi linguaggio gestito, con alcune eccezioni:
+
+- Nella finestra **Auto** non vengono visualizzate le variabili F#.
+
+- La modifica e la continuazione non sono supportate per F#. La modifica del codice F# durante una sessione di debug è possibile ma deve essere evitata. Poiché le modifiche al codice non vengono applicate durante la sessione di debug, la modifica del codice F# durante il debug provocherà una mancata corrispondenza tra il codice sorgente e il codice in fase di debug.
+
+- Il debugger non riconosce le espressioni F#. Per immettere un'espressione in una finestra o una finestra di dialogo del debugger durante il debug di F#, è necessario tradurre l'espressione nella sintassi C#. Quando si traduce un'espressione F# in C#, ricordare che C# utilizza == come operatore di confronto per uguaglianza e che F# utilizza un solo =.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Debug di codice gestito](../debugger/debugging-managed-code.md)

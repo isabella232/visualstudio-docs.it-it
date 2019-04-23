@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090478"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
-È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
+È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
 
  Per le versioni di Visual Studio che supportano queste funzionalità, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -40,17 +40,17 @@ ms.locfileid: "57567315"
 
  Le linee guida seguenti possono risultare utili:
 
--   Ogni caso di utilizzo deve avere diversi test, per i percorsi principali e i risultati eccezionali.
+- Ogni caso di utilizzo deve avere diversi test, per i percorsi principali e i risultati eccezionali.
 
--   Quando si descrive un caso di utilizzo nel modello di requisiti, è più importante definire la postcondizione, ovvero l'obiettivo da raggiungere, che descrivere in dettaglio le procedure che l'utente segue per raggiungere l'obiettivo. Ad esempio, la postcondizione di Ordinazione pasto potrebbe essere che un ristorante stia preparando un pasto per un cliente e che il cliente abbia pagato. La postcondizione è il criterio che i test devono verificare.
+- Quando si descrive un caso di utilizzo nel modello di requisiti, è più importante definire la postcondizione, ovvero l'obiettivo da raggiungere, che descrivere in dettaglio le procedure che l'utente segue per raggiungere l'obiettivo. Ad esempio, la postcondizione di Ordinazione pasto potrebbe essere che un ristorante stia preparando un pasto per un cliente e che il cliente abbia pagato. La postcondizione è il criterio che i test devono verificare.
 
--   Basare test distinti sulle clausole separate della postcondizione. Ad esempio, creare test distinti per notificare l'ordine al ristorante e per accettare il pagamento dal cliente. Questa separazione offre i vantaggi seguenti:
+- Basare test distinti sulle clausole separate della postcondizione. Ad esempio, creare test distinti per notificare l'ordine al ristorante e per accettare il pagamento dal cliente. Questa separazione offre i vantaggi seguenti:
 
-    -   Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.
+    - Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.
 
-    -   Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.
+    - Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.
 
--   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.
+- Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.
 
 #### <a name="linking-tests-to-use-cases"></a>Collegamento di test ai casi di utilizzo
  Se si usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] per progettare ed eseguire i test, è possibile organizzare i test in elementi di lavoro storia utente requisito o caso d'uso. È possibile collegare questi elementi di lavoro ai casi di utilizzo del modello, in modo da tenere traccia rapidamente delle modifiche dei requisiti nei test, oltre che dello stato di avanzamento di ogni caso di utilizzo.
@@ -133,15 +133,15 @@ Assert (countAfter == countBefore = 1);
 
  È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
 
--   Collegare un caso di utilizzo ai test che ne eseguono la verifica.
+- Collegare un caso di utilizzo ai test che ne eseguono la verifica.
 
--   Scrivere le clausole di una postcondizione del caso di utilizzo, o obiettivo, nei commenti collegati al caso di utilizzo, quindi collegare i test a ogni commento.
+- Scrivere le clausole di una postcondizione del caso di utilizzo, o obiettivo, nei commenti collegati al caso di utilizzo, quindi collegare i test a ogni commento.
 
--   Scrivere regole invarianti in commenti nei diagrammi classi o nei diagrammi di attività e collegarli ai test.
+- Scrivere regole invarianti in commenti nei diagrammi classi o nei diagrammi di attività e collegarli ai test.
 
--   Collegare i test a un diagramma di attività o a singole attività.
+- Collegare i test a un diagramma di attività o a singole attività.
 
--   Collegare un gruppo di test al componente o al sottosistema sottoposto a test.
+- Collegare un gruppo di test al componente o al sottosistema sottoposto a test.
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Per collegare i test a una relazione o a un elemento del modello
 

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114574"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Per creare un account utente con autorizzazioni utente  
   
-1.  Fare clic con il pulsante destro del mouse su **Risorse del computer** e quindi fare clic su **Gestione**.  
+1. Fare clic con il pulsante destro del mouse su **Risorse del computer** e quindi fare clic su **Gestione**.  
   
      Verrà aperta la finestra **Gestione computer**.  
   
-2.  Espandere **Utenti e gruppi locali**.  
+2. Espandere **Utenti e gruppi locali**.  
   
-3.  Fare clic con il pulsante destro del mouse sulla cartella **Utenti** e quindi fare clic su **Nuovo utente**.  
+3. Fare clic con il pulsante destro del mouse sulla cartella **Utenti** e quindi fare clic su **Nuovo utente**.  
   
      Verrà visualizzata la finestra di dialogo **Nuovo utente**.  
   
-4.  Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.  
+4. Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.  
   
-5.  Fare clic su **Crea** e quindi su **Chiudi**.  
+5. Fare clic su **Crea** e quindi su **Chiudi**.  
   
      Il nuovo utente verrà visualizzato nel gruppo Users, ovvero un gruppo di utenti che non dispone di autorizzazioni di amministratore.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>Per concedere l'accesso ai file di progetto condivisi  
   
-1.  In Esplora risorse (o Esplora file) individuare la radice dell'albero delle cartelle relativa ai file di progetto usati dall'utente e condivisi dal team del progetto.  
+1. In Esplora risorse (o Esplora file) individuare la radice dell'albero delle cartelle relativa ai file di progetto usati dall'utente e condivisi dal team del progetto.  
   
      Il percorso della cartella potrebbe essere simile al seguente:  
   
@@ -68,17 +68,17 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
     D:\ourProject  
     ```  
   
-2.  Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.  
+2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.  
   
      Verrà visualizzata la finestra di dialogo **Proprietà \<nome cartella>**.  
   
-3.  Fare clic sulla scheda **Sicurezza** .  
+3. Fare clic sulla scheda **Sicurezza** .  
   
-4.  Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.  
+4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.  
   
-5.  Nella casella **Autorizzazioni per \<nome utente>** selezionare la casella di controllo **Controllo completo**.  
+5. Nella casella **Autorizzazioni per \<nome utente>** selezionare la casella di controllo **Controllo completo**.  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
      In questo modo all'utente vengono concesse le autorizzazioni per l'albero delle cartelle condiviso che ha inizio con la cartella selezionata nel passaggio 5.  
   
@@ -112,11 +112,11 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
     Tramite questo comando all'account \<nome utente> o \<nome gruppo> viene concesso l'accesso agli strumenti di profilatura. L'opzione \<right> determina la funzionalità di profilatura alla quale l'utente può accedere. L'opzione \<right> può corrispondere a uno o più valori tra quelli riportati di seguito:  
   
-   -   FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.  
+   - FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.  
   
-   -   SampleProfiling: consente l'accesso ai metodi di profilatura dei campioni.  
+   - SampleProfiling: consente l'accesso ai metodi di profilatura dei campioni.  
   
-   -   CrossSession: consente l'accesso alla profilatura tra sessioni richiesta per la profilatura dei servizi.  
+   - CrossSession: consente l'accesso alla profilatura tra sessioni richiesta per la profilatura dei servizi.  
   
 5. (Facoltativo) Per conservare i risultati di uno dei passaggi precedenti dopo il riavvio del computer, eseguire il comando seguente:  
   

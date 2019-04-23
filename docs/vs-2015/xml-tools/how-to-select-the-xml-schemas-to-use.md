@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091478"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: Selezionare gli XML Schema da usare
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Per aggiungere uno schema XML alla cache degli schemi  
   
-1.  Nella finestra delle proprietà del documento, fare clic sul pulsante sul **schemi** campo.  
+1. Nella finestra delle proprietà del documento, fare clic sul pulsante sul **schemi** campo.  
   
-2.  Fare clic su **Aggiungi**.  
+2. Fare clic su **Aggiungi**.  
   
      Verrà visualizzata la **Apri Schema XSD** finestra di dialogo.  
   
-3.  Individuare e selezionare gli schemi da aggiungere alla cache degli schemi.  
+3. Individuare e selezionare gli schemi da aggiungere alla cache degli schemi.  
   
-4.  Fare clic su **Apri**.  
+4. Fare clic su **Apri**.  
   
      Gli schemi vengono aggiunti allo schema di memorizzare nella cache ed è il **utilizzo** il valore di colonna è impostato su **utilizzano questo schema**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Per eliminare uno schema XML dalla cache degli schemi  
   
-1.  Nella finestra delle proprietà del documento, fare clic sul pulsante sul **schemi** campo.  
+1. Nella finestra delle proprietà del documento, fare clic sul pulsante sul **schemi** campo.  
   
-2.  Selezionare lo schema da rimuovere e quindi fare clic su **rimuovere**.  
+2. Selezionare lo schema da rimuovere e quindi fare clic su **rimuovere**.  
   
      Lo schema viene rimosso dalla cache degli schemi in memoria, ma non dal file system.  
   

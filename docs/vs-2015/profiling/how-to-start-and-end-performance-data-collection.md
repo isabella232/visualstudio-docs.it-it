@@ -16,29 +16,29 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21697dd4d05b53648a1e77d9b7381973e5583250
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 15c6d6c904bbab27bac541894ed6cd4f9e1f80f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115250"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni
+# <a name="how-to-start-and-end-performance-data-collection"></a>Procedura: Iniziare e terminare la raccolta dati prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Prima di avviare la profilatura, è necessario aggiungere alla sessione di prestazioni il file binario di destinazione che si vuole profilare. Per aggiungere una destinazione, fare clic con il pulsante destro del mouse su **Destinazioni** in **Esplora prestazioni** e quindi fare clic su **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**. Verrà aggiunto un nuovo file binario.  
   
 ### <a name="to-start-profiling"></a>Per avviare la profilatura  
   
-1.  Fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni nella finestra **Esplora prestazioni** e scegliere una delle opzioni seguenti:  
+1. Fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni nella finestra **Esplora prestazioni** e scegliere una delle opzioni seguenti:  
   
-    -   **Avvio con analisi**: avvia l'applicazione e comincia immediatamente la profilatura.  
+    - **Avvio con analisi**: avvia l'applicazione e comincia immediatamente la profilatura.  
   
-    -   **Avvio con analisi sospeso**: avvia l'applicazione ma non comincia la profilatura. È possibile avviare la profilatura selezionando **Riprendi raccolta** nella finestra **Controllo raccolta dati**. Per altre informazioni, vedere [Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
+    - **Avvio con analisi sospeso**: avvia l'applicazione ma non comincia la profilatura. È possibile avviare la profilatura selezionando **Riprendi raccolta** nella finestra **Controllo raccolta dati**. Per altre informazioni, vedere [Procedura: Sospendere e riprendere la raccolta dati prestazioni](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
   
 ### <a name="to-end-profiling"></a>Per terminare la profilatura  
   
--   Il metodo consigliato per terminare una sessione di profilatura consiste nella chiusura dell'applicazione. Per terminare immediatamente la profilatura, nella barra degli strumenti di **Esplora prestazioni** fare clic su **Interrompi**.  
+- Il metodo consigliato per terminare una sessione di profilatura consiste nella chiusura dell'applicazione. Per terminare immediatamente la profilatura, nella barra degli strumenti di **Esplora prestazioni** fare clic su **Interrompi**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   

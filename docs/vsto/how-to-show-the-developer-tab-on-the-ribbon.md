@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 64a0fb4dbc91ff09bddf037a8ce140f134e41e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091421"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedura: Visualizzare la scheda sviluppo nella barra multifunzione
   Per l'accesso di **sviluppatore** scheda della barra multifunzione di un'applicazione di Office, è necessario configurare in modo da visualizzare tale scheda, perché non viene visualizzato per impostazione predefinita. Ad esempio, è necessario visualizzare tale scheda per aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalizzazione a livello di documento per Word.
@@ -34,9 +34,9 @@ ms.locfileid: "56614662"
 
 ## <a name="to-show-the-developer-tab"></a>Per visualizzare la scheda Sviluppo
 
-1.  Avviare un'applicazione Office supportata da questo argomento. Vedere le **si applica a:** nota in precedenza in questo argomento.
+1. Avviare un'applicazione Office supportata da questo argomento. Vedere le **si applica a:** nota in precedenza in questo argomento.
 
-2.  Nel **File** scheda, scegliere il **opzioni** pulsante.
+2. Nel **File** scheda, scegliere il **opzioni** pulsante.
 
      La figura seguente mostra le **File** scheda e **opzioni** pulsante Office 2010.
 
@@ -50,19 +50,19 @@ ms.locfileid: "56614662"
 
      ![Pulsante Opzioni in Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "pulsante di opzioni di Outlook 2013 Preview")
 
-3.  Nel _NomeApplicazione_**opzioni** finestra di dialogo scegliere la **Personalizzazione barra multifunzione** pulsante.
+3. Nel _NomeApplicazione_**opzioni** finestra di dialogo scegliere la **Personalizzazione barra multifunzione** pulsante.
 
      La figura seguente mostra le **opzioni** finestra di dialogo e i **Personalizzazione barra multifunzione** pulsante in Excel 2010. La posizione di questo pulsante è simile in tutte le altre applicazioni elencate nella sezione "Applica a" quasi all'inizio di questo argomento.
 
      ![Il pulsante Personalizzazione barra multifunzione](../vsto/media/vsto-office2010-customizeribbonbutton.png "pulsante di personalizzazione barra multifunzione")
 
-4.  Nell'elenco di schede principali selezionare la **sviluppatore** casella di controllo.
+4. Nell'elenco di schede principali selezionare la **sviluppatore** casella di controllo.
 
      La figura seguente mostra le **sviluppatore** casella di controllo in Word 2010 e [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. La posizione di questa casella di controllo è simile in tutte le altre applicazioni elencate nella sezione "Si applica a" quasi all'inizio di questo argomento.
 
      ![La casella di controllo sviluppatore nella finestra di dialogo Opzioni Word](../vsto/media/vsto-office2010-developercheckbox.png "The Developer casella di controllo nella finestra di dialogo Opzioni di Word")
 
-5.  Scegliere il **OK** per chiudere la **opzioni** nella finestra di dialogo.
+5. Scegliere il **OK** per chiudere la **opzioni** nella finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)

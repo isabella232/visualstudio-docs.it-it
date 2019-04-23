@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092110"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug di codice sorgente di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,45 +32,45 @@ La versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisc
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Per attivare il debug di origine di .NET Framework   
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nel **opzioni** finestra di dialogo, fare clic sul **debug** categoria.  
+2. Nel **opzioni** finestra di dialogo, fare clic sul **debug** categoria.  
   
-3.  Nel **generali** impostare **abilitare .NET Framework** esecuzione di istruzioni origine.  
+3. Nel **generali** impostare **abilitare .NET Framework** esecuzione di istruzioni origine.  
   
-    1.  Se Just My Code è attivato, viene visualizzata una finestra di dialogo con un avviso indicante che Just My Code è stato disabilitato. Fare clic su **OK**.  
+    1. Se Just My Code è attivato, viene visualizzata una finestra di dialogo con un avviso indicante che Just My Code è stato disabilitato. Fare clic su **OK**.  
   
-    2.  Se il percorso della cache dei simboli non è impostato, viene visualizzata un'altra finestra di dialogo con un avviso indicante che è stato impostato il percorso predefinito della cache dei simboli. Fare clic su **OK**.  
+    2. Se il percorso della cache dei simboli non è impostato, viene visualizzata un'altra finestra di dialogo con un avviso indicante che è stato impostato il percorso predefinito della cache dei simboli. Fare clic su **OK**.  
   
-4.  Sotto il **Debugging** categoria, fare clic su **simboli**.  
+4. Sotto il **Debugging** categoria, fare clic su **simboli**.  
   
-5.  Se si desidera modificare il percorso della cache dei simboli:  
+5. Se si desidera modificare il percorso della cache dei simboli:  
   
-    1.  Aprire il **debug** nodo nella casella a sinistra.  
+    1. Aprire il **debug** nodo nella casella a sinistra.  
   
-    2.  Sotto il **Debugging** nodo, fare clic su **simboli**.  
+    2. Sotto il **Debugging** nodo, fare clic su **simboli**.  
   
-    3.  Modificare il percorso in **memorizza nella Cache i simboli dai server dei simboli per questa directory** oppure fare clic su **Sfoglia** per scegliere un percorso.  
+    3. Modificare il percorso in **memorizza nella Cache i simboli dai server dei simboli per questa directory** oppure fare clic su **Sfoglia** per scegliere un percorso.  
   
-6.  Se si desidera scaricare immediatamente simboli, fare clic su **carica i simboli utilizzando percorsi indicati sopra**.  
+6. Se si desidera scaricare immediatamente simboli, fare clic su **carica i simboli utilizzando percorsi indicati sopra**.  
   
      Questo pulsante non è disponibile nella modalità progettazione.  
   
      Se non si sceglie di scaricare ora i simboli, questi ultimi verranno scaricati automaticamente al successivo avvio del debug del programma.  
   
-7.  Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.  
+7. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Per caricare simboli di Framework utilizzando la finestra Moduli  
   
-1.  Nel **moduli** finestra, pulsante destro del mouse un modulo per il quale non sono stati caricati i simboli. È possibile indicare se i simboli sono caricati o non esaminando il **stato simboli** colonna.  
+1. Nel **moduli** finestra, pulsante destro del mouse un modulo per il quale non sono stati caricati i simboli. È possibile indicare se i simboli sono caricati o non esaminando il **stato simboli** colonna.  
   
-2.  Puntare **Carica simboli da** e fare clic su **server dei simboli Microsoft** per scaricare i simboli dai server dei simboli pubblici Microsoft oppure **percorso dei simboli** caricare da una directory in cui è stata precedentemente memorizzata simboli.  
+2. Puntare **Carica simboli da** e fare clic su **server dei simboli Microsoft** per scaricare i simboli dai server dei simboli pubblici Microsoft oppure **percorso dei simboli** caricare da una directory in cui è stata precedentemente memorizzata simboli.  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Per caricare simboli di Framework utilizzando la finestra Stack di chiamate  
   
-1.  Nel **Stack di chiamate** , il pulsante destro finestra frame per il quale non sono stati caricati i simboli. Il frame verrà disattivato (rappresentato in grigio).  
+1. Nel **Stack di chiamate** , il pulsante destro finestra frame per il quale non sono stati caricati i simboli. Il frame verrà disattivato (rappresentato in grigio).  
   
-2.  Puntare **Carica simboli da** e fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
+2. Puntare **Carica simboli da** e fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   

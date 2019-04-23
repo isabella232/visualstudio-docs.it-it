@@ -16,14 +16,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091239"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: individuare e organizzare modelli di progetto e modelli di elementi
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare progetti e modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I file di modello devono essere inseriti in un percorso riconosciuto da Visual Studio, in modo che siano visualizzati nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento**. Per i modelli è possibile creare sottocategorie personalizzate che verranno poi visualizzate nell'interfaccia utente.  
@@ -90,23 +90,23 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Per creare nuove categorie dei modelli di elemento installati  
   
-1.  Creare una cartella nella cartella del linguaggio della directory dei modelli installati. Ad esempio, per creare una categoria Web per i modelli di elemento di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
+1. Creare una cartella nella cartella del linguaggio della directory dei modelli installati. Ad esempio, per creare una categoria Web per i modelli di elemento di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
   
      \\*DirectoryInstallazioneVisualStudio*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Inserire nella nuova cartella tutti modelli di questa categoria.  
+2. Inserire nella nuova cartella tutti modelli di questa categoria.  
   
-3.  Chiudere tutte le istanze di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Chiudere tutte le istanze di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Nel menu **Start** fare clic su **Esegui**, digitare **cmd**, e fare clic su **OK**.  
+4. Nel menu **Start** fare clic su **Esegui**, digitare **cmd**, e fare clic su **OK**.  
   
-5.  Al prompt dei comandi, passare alla directory che contiene devenv.exe e digitare **devenv /setup**.  
+5. Al prompt dei comandi, passare alla directory che contiene devenv.exe e digitare **devenv /setup**.  
   
-6.  Eseguire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Eseguire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Creare un progetto oppure aprire un progetto esistente.  
+7. Creare un progetto oppure aprire un progetto esistente.  
   
-8.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
+8. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
 9. Verificare che la categoria Web sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Aggiungi nuovo elemento**.  
   
@@ -129,30 +129,30 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Per creare nuove categorie di modelli di elemento personalizzati  
   
-1.  Creare una cartella nella cartella del linguaggio della directory dei modelli di elemento personalizzati. Ad esempio, per creare una categoria HelloWorld per i modelli di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
+1. Creare una cartella nella cartella del linguaggio della directory dei modelli di elemento personalizzati. Ad esempio, per creare una categoria HelloWorld per i modelli di [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario creare la directory seguente:  
   
      \Documenti\\<Visual Studio Versione\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  Inserire nella nuova cartella tutti modelli di questa categoria.  
+2. Inserire nella nuova cartella tutti modelli di questa categoria.  
   
-3.  Creare un progetto oppure aprire un progetto esistente.  
+3. Creare un progetto oppure aprire un progetto esistente.  
   
-4.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
+4. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
-5.  Verificare che la categoria HelloWorld sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Aggiungi nuovo elemento**.  
+5. Verificare che la categoria HelloWorld sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Aggiungi nuovo elemento**.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Visualizzazione dei modelli in categorie padre  
  I modelli inclusi nelle sottocategorie possono essere visualizzati nelle relative categorie padre tramite l'elemento `NumberOfParentCategoriesToRollUp` incluso nel file con estensione vstemplate. Questa procedura è identica sia per i modelli di progetto sia per i modelli di elemento.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>Per visualizzare i modelli in categorie padre  
   
-1.  Individuare il file ZIP che contiene il modello.  
+1. Individuare il file ZIP che contiene il modello.  
   
-2.  Estrarre il file ZIP.  
+2. Estrarre il file ZIP.  
   
-3.  Aprire il file vstemplate nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Aprire il file vstemplate nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Nell'elemento `TemplateData` aggiungere un elemento `NumberOfParentCategoriesToRollUp`. Ad esempio, il codice riportato di seguito rende visibile il modello nella categoria padre, ma non ai livelli superiori.  
+4. Nell'elemento `TemplateData` aggiungere un elemento `NumberOfParentCategoriesToRollUp`. Ad esempio, il codice riportato di seguito rende visibile il modello nella categoria padre, ma non ai livelli superiori.  
   
     ```  
     <TemplateData>  
@@ -164,13 +164,13 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
     </TemplateData>  
     ```  
   
-5.  Salvare e chiudere il file vstemplate.  
+5. Salvare e chiudere il file vstemplate.  
   
-6.  Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi fare clic su **Cartella compressa**. I file verranno compressi in un file ZIP.  
+6. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi fare clic su **Cartella compressa**. I file verranno compressi in un file ZIP.  
   
-7.  Eliminare i file di modello estratti e il vecchio file di modello ZIP.  
+7. Eliminare i file di modello estratti e il vecchio file di modello ZIP.  
   
-8.  Inserire il nuovo file ZIP nella stessa directory del file ZIP eliminato.  
+8. Inserire il nuovo file ZIP nella stessa directory del file ZIP eliminato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)   

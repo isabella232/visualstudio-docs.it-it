@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091616"
 ---
 # <a name="performance-report-overview"></a>Informazioni generali sul rapporto di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ ms.locfileid: "54785622"
 ## <a name="customizable-filter-control"></a>Controllo filtro personalizzabile  
  Il controllo filtro personalizzabile presenta le opzioni seguenti:  
   
--   **Importa filtro**: recupera una query personalizzata precedentemente salvata.  
+- **Importa filtro**: recupera una query personalizzata precedentemente salvata.  
   
--   **Esporta filtro**: salva la query personalizzata nel percorso specificato.  
+- **Esporta filtro**: salva la query personalizzata nel percorso specificato.  
   
--   **Esegui query**: esegue la query come visualizzata nel controllo query personalizzato.  
+- **Esegui query**: esegue la query come visualizzata nel controllo query personalizzato.  
   
--   **Interrompi query**: interrompe l'esecuzione di una query in esecuzione. Questo pulsante non è disponibile se non è in esecuzione alcuna query.  
+- **Interrompi query**: interrompe l'esecuzione di una query in esecuzione. Questo pulsante non è disponibile se non è in esecuzione alcuna query.  
   
--   **Mostra query**: mostra/nasconde il controllo query personalizzato.  
+- **Mostra query**: mostra/nasconde il controllo query personalizzato.  
   
--   **Salva dati analizzati**: salva il rapporto con l'analisi corrente come file con estensione vsps.  
+- **Salva dati analizzati**: salva il rapporto con l'analisi corrente come file con estensione vsps.  
   
--   **Esporta**: salva il rapporto corrente come file in formato cvs o xml, con opzioni per salvare le diverse visualizzazioni.  
+- **Esporta**: salva il rapporto corrente come file in formato cvs o xml, con opzioni per salvare le diverse visualizzazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   

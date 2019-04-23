@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092280"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il Debugger JIT in Visual Studio
 
@@ -26,7 +26,7 @@ Il debug Just-In-Time funziona per le app desktop di Windows. Non funziona per l
 > [!TIP]
 > Se si desidera semplicemente arrestare la finestra di dialogo Debugger JIT venga visualizzato, ma non è installato Visual Studio, vedere [disabilitare il Debugger JIT](../debugger/just-in-time-debugging-in-visual-studio.md). Se si dispone di una volta installato Visual Studio, potrebbe essere necessario [Just-In-Time di disabilitare il debug dal Registro di sistema Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-##  <a name="BKMK_Enabling"></a> Abilitare o disabilitare il debug in Visual Studio Just-In-Time
+## <a name="BKMK_Enabling"></a> Abilitare o disabilitare il debug in Visual Studio Just-In-Time
 
 >[!NOTE]
 >Per abilitare o disabilitare il debug Just-In-Time, è necessario eseguire Visual Studio come amministratore. Abilitare o disabilitare Just-In-Time debug imposta una chiave del Registro di sistema e dei privilegi di amministratore potrebbero essere necessario modificare tale chiave. Per aprire Visual Studio come amministratore, fare doppio clic all'app di Visual Studio e scegli **Esegui come amministratore**.
@@ -39,7 +39,7 @@ Il debug Just-In-Time funziona per le app desktop di Windows. Non funziona per l
 
    ![Abilitare o disabilitare il debug JIT](../debugger/media/dbg-jit-enable-or-disable.png "abilitare o disabilitare il debug JIT")
 
-1. Nel **Abilita debug JIT per questi tipi di codice** , selezionare i tipi di codice da debug per eseguire il debug Just-In-Time: **gestito**, **Native**, e/o  **Script**.
+1. Nel **Abilita debug JIT per questi tipi di codice** , selezionare i tipi di codice da debug per eseguire il debug Just-In-Time: **Managed**, **nativo**, e/o **Script**.
 
 1. Scegliere **OK**.
 
@@ -51,25 +51,25 @@ Il debug JIT può comunque essere abilitato anche se Visual Studio non è più p
 
 **Per disabilitare il debug JIT modificando il Registro di sistema:**
 
-1.  Dalla finestra di Windows **avviare** menu, eseguire il **dell'Editor del Registro di sistema** (*regedit.exe*).
+1. Dalla finestra di Windows **avviare** menu, eseguire il **dell'Editor del Registro di sistema** (*regedit.exe*).
 
-2.  Nel **dell'Editor del Registro di sistema** finestra, individuare ed eliminare le voci del Registro di sistema seguenti:
+2. Nel **dell'Editor del Registro di sistema** finestra, individuare ed eliminare le voci del Registro di sistema seguenti:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Chiave del Registro di sistema JIT](../debugger/media/dbg-jit-registry.png "chiave del Registro di sistema JIT")
 
-3.  Se il computer è in esecuzione un sistema operativo a 64 bit, anche eliminare le voci del Registro di sistema seguenti:
+3. Se il computer è in esecuzione un sistema operativo a 64 bit, anche eliminare le voci del Registro di sistema seguenti:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Assicurarsi di non eliminare o modificare qualsiasi altra chiave del Registro di sistema.
 
-5.  Chiudi il **dell'Editor del Registro di sistema** finestra.
+5. Chiudi il **dell'Editor del Registro di sistema** finestra.
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Abilitare Just-In-Time di debug di un Windows Form
 
@@ -79,7 +79,7 @@ Per impostazione predefinita, le app di Windows Form hanno un gestore di eccezio
 
 Per abilitare il debug anziché la gestione degli errori di Windows Form standard Just-In-Time, aggiungere queste impostazioni:
 
--  Nel `system.windows.forms` sezione del *Machine. config* o  *\<nome app >. exe* file, impostare il `jitDebugging` valore `true`:
+- Nel `system.windows.forms` sezione del *Machine. config* o  *\<nome app >. exe* file, impostare il `jitDebugging` valore `true`:
 
     ```xml
     <configuration>
@@ -87,24 +87,24 @@ Per abilitare il debug anziché la gestione degli errori di Windows Form standar
     </configuration>
     ```
 
--  In un'applicazione C++ Windows Form, impostare anche `DebuggableAttribute` al `true` in un *config* file o nel codice. Se si esegue la compilazione con [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) e senza [/Og](/cpp/build/reference/og-global-optimizations), il compilatore imposta automaticamente questo attributo. Se si desidera eseguire il debug di una build di rilascio non ottimizzata, tuttavia, è necessario impostare `DebuggableAttribute` aggiungendo la riga seguente dell'app *AssemblyInfo* file:
+- In un'applicazione C++ Windows Form, impostare anche `DebuggableAttribute` al `true` in un *config* file o nel codice. Se si esegue la compilazione con [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) e senza [/Og](/cpp/build/reference/og-global-optimizations), il compilatore imposta automaticamente questo attributo. Se si desidera eseguire il debug di una build di rilascio non ottimizzata, tuttavia, è necessario impostare `DebuggableAttribute` aggiungendo la riga seguente dell'app *AssemblyInfo* file:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
 
-   Per ulteriori informazioni, vedere <xref:System.Diagnostics.DebuggableAttribute>.
+   Per altre informazioni, vedere <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="BKMK_Using_JIT"></a>Usare Just-In-Time di debug
- In questo esempio illustra quando un'app genera un errore di debug Just-In-Time.
+In questo esempio illustra quando un'app genera un errore di debug Just-In-Time.
 
- - È necessario disporre di Visual Studio è installato per eseguire la procedura seguente. Se non hai Visual Studio, è possibile scaricare la versione gratuita [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- È necessario disporre di Visual Studio è installato per eseguire la procedura seguente. Se non hai Visual Studio, è possibile scaricare la versione gratuita [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
- - Assicurarsi che Just-In-Time debug è [abilitata](#BKMK_Enabling) in **Tools** > **opzioni** > **debug**  >  **Just-In-Time**.
+- Assicurarsi che Just-In-Time debug è [abilitata](#BKMK_Enabling) in **Tools** > **opzioni** > **debug**  >  **Just-In-Time**.
 
 Per questo esempio, si renderanno un C# app console in Visual Studio che genera una [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. In Visual Studio, creare un C# app console (**File** > **New** > **progetto** > **C#**  >  **Applicazione console**) denominato *ThrowsNullException*. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: creare una semplice applicazione](/visualstudio/get-started/csharp/tutorial-wpf).
+1. In Visual Studio, creare un C# app console (**File** > **New** > **progetto** > **C#**  >  **Applicazione console**) denominato *ThrowsNullException*. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](/visualstudio/get-started/csharp/tutorial-wpf).
 
 1. Quando si apre il progetto in Visual Studio, aprire il *Program.cs* file. Sostituire il metodo Main () con il codice seguente, che stampa una riga nella console e quindi genera un'eccezione NullReferenceException:
 
@@ -157,7 +157,7 @@ Se Just-In-Time di debug non viene avviato durante l'arresto anomalo di un'app, 
 
   - **Segnalazione errori HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
 
-  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows segnalazione errori**
+  - (Per i computer a 64 bit): **Segnalazione errori HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows**
 
   Per altre informazioni, vedere [. Le impostazioni di segnalazione errori Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
@@ -167,7 +167,7 @@ Se Just-In-Time di debug non viene avviato durante l'arresto anomalo di un'app, 
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (Per i computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Si potrebbero vedere i messaggi di errore seguente durante Just-In-Time di debug:
 
@@ -194,4 +194,4 @@ Si potrebbero vedere i messaggi di errore seguente durante Just-In-Time di debug
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Opzioni, debug, Just-In-Time nella finestra di dialogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Avviso di sicurezza: la connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090117"
 ---
 # <a name="dependency-diagrams-guidelines"></a>I diagrammi delle dipendenze: linee guida
 
@@ -39,21 +39,21 @@ I passaggi seguenti offrono una panoramica di come usare i diagrammi delle dipen
 > [!NOTE]
 > I passaggi sono visualizzati in ordine approssimativo. Potrebbe essere necessario sovrapporre alcune attività, riordinarle per adattarle alla situazione specifica ed eseguirle di nuovo all'inizio di ogni iterazione nel progetto.
 
-1.  [Creare un diagramma di dipendenza](#Create) per l'intera applicazione o per un livello all'interno di esso.
+1. [Creare un diagramma di dipendenza](#Create) per l'intera applicazione o per un livello all'interno di esso.
 
-2.  [Definire livelli per rappresentare aree funzionali primarie o componenti](#CreateLayers) dell'applicazione. Assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se si dispone di una soluzione di Visual Studio, è possibile associare ogni livello a una raccolta di *artefatti*, ad esempio progetti, gli spazi dei nomi, i file e così via.
+2. [Definire livelli per rappresentare aree funzionali primarie o componenti](#CreateLayers) dell'applicazione. Assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se si dispone di una soluzione di Visual Studio, è possibile associare ogni livello a una raccolta di *artefatti*, ad esempio progetti, gli spazi dei nomi, i file e così via.
 
-3.  [Individuare le dipendenze esistenti](#Generate) tra livelli.
+3. [Individuare le dipendenze esistenti](#Generate) tra livelli.
 
-4.  [Modificare i livelli e dipendenze](#EditArchitecture) per mostrare l'aggiornamento che si vuole rispecchiare nel codice di progettazione.
+4. [Modificare i livelli e dipendenze](#EditArchitecture) per mostrare l'aggiornamento che si vuole rispecchiare nel codice di progettazione.
 
-5.  [Progettare nuove aree dell'applicazione](#NewAreas) la creazione di livelli per rappresentare i blocchi di architettura principali o i componenti e definendo le dipendenze per mostrare come ogni livello Usa gli altri.
+5. [Progettare nuove aree dell'applicazione](#NewAreas) la creazione di livelli per rappresentare i blocchi di architettura principali o i componenti e definendo le dipendenze per mostrare come ogni livello Usa gli altri.
 
-6.  [Modificare il layout e l'aspetto del diagramma](#EditLayout) per semplificarne l'analisi con i colleghi.
+6. [Modificare il layout e l'aspetto del diagramma](#EditLayout) per semplificarne l'analisi con i colleghi.
 
-7.  [Convalidare il codice rispetto al diagramma di dipendenza](#Validate) per evidenziare i conflitti tra il codice e l'architettura necessaria.
+7. [Convalidare il codice rispetto al diagramma di dipendenza](#Validate) per evidenziare i conflitti tra il codice e l'architettura necessaria.
 
-8.  [Aggiornare il codice per garantire la conformità alla nuova architettura](#UpdateCode). Sviluppare in modo iterativo ed effettuare il refactoring del codice fino a ottenere una convalida senza conflitti.
+8. [Aggiornare il codice per garantire la conformità alla nuova architettura](#UpdateCode). Sviluppare in modo iterativo ed effettuare il refactoring del codice fino a ottenere una convalida senza conflitti.
 
 9. [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation) per assicurarsi che il codice sia sempre conforme alla progettazione.
 
@@ -79,11 +79,11 @@ Quando si aggiorna un'applicazione poco nota, è anche possibile creare mappe co
 
 Vedere:
 
--   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
+- [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
+- [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Individuare le dipendenze esistenti tra livelli
 
@@ -123,13 +123,13 @@ Se ciò non avviene, il codice sarà più difficile da modificare per tutta la v
 
 Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo progetto, è possibile tracciare livelli e dipendenze per semplificare l'identificazione dei componenti principali prima di iniziare a sviluppare il codice.
 
--   **Visualizzare i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma di dipendenza che descrive un'applicazione desktop può includere livelli quali presentazione, logica di dominio e Data Store. Un diagramma di dipendenza che riguarda una singola funzionalità all'interno di un'applicazione può includere livelli quali modello, visualizzazione e Controller. Per altre informazioni su tali modelli, vedere [Patterns & Practices: Architettura dell'applicazione](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Visualizzare i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma di dipendenza che descrive un'applicazione desktop può includere livelli quali presentazione, logica di dominio e Data Store. Un diagramma di dipendenza che riguarda una singola funzionalità all'interno di un'applicazione può includere livelli quali modello, visualizzazione e Controller. Per altre informazioni su tali modelli, vedere [Patterns & Practices: Architettura dell'applicazione](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Creare un elemento di codice per ogni livello** come spazio dei nomi, classe o componente. In questo modo sarà più semplice seguire il codice e collegare gli elementi di codice ai livelli. Non appena si crea ogni artefatto, collegarlo al livello appropriato.
+- **Creare un elemento di codice per ogni livello** come spazio dei nomi, classe o componente. In questo modo sarà più semplice seguire il codice e collegare gli elementi di codice ai livelli. Non appena si crea ogni artefatto, collegarlo al livello appropriato.
 
--   **Non è necessario collegare la maggior parte delle classi e altri elementi ai livelli** poiché si trovano all'interno di elementi più grandi quali spazi dei nomi che sono già stati collegati ai livelli.
+- **Non è necessario collegare la maggior parte delle classi e altri elementi ai livelli** poiché si trovano all'interno di elementi più grandi quali spazi dei nomi che sono già stati collegati ai livelli.
 
--   **Creare un nuovo diagramma di una nuova caratteristica**. In genere, saranno presenti uno o più diagrammi delle dipendenze che descrivono l'intera applicazione. Se si progetta una nuova funzionalità nell'applicazione, non apportare aggiunte o modifiche ai diagrammi esistenti. Creare invece un diagramma personalizzato che rispecchia nuove parti del codice. I livelli nel nuovo diagramma possono includere livelli relativi a presentazione, logica di dominio e database per la nuova funzionalità.
+- **Creare un nuovo diagramma di una nuova caratteristica**. In genere, saranno presenti uno o più diagrammi delle dipendenze che descrivono l'intera applicazione. Se si progetta una nuova funzionalità nell'applicazione, non apportare aggiunte o modifiche ai diagrammi esistenti. Creare invece un diagramma personalizzato che rispecchia nuove parti del codice. I livelli nel nuovo diagramma possono includere livelli relativi a presentazione, logica di dominio e database per la nuova funzionalità.
 
      Quando si compila l'applicazione, il codice verrà convalidato rispetto al diagramma complessivo e al diagramma più dettagliato relativo alle funzionalità.
 
@@ -137,11 +137,11 @@ Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo pro
 
 Per semplificare l'identificazione di livelli e dipendenze o per esaminarli con i membri del team, modificare l'aspetto e il layout del diagramma nei modi seguenti:
 
--   Modificare le dimensioni, le forme e le posizioni dei livelli.
+- Modificare le dimensioni, le forme e le posizioni dei livelli.
 
--   Cambiare i colori dei livelli e le dipendenze.
+- Cambiare i colori dei livelli e le dipendenze.
 
-    -   Selezionare uno o più livelli o dipendenze, pulsante destro del mouse e quindi fare clic su **proprietà**. Nel **delle proprietà** finestra, modificare il **colore** proprietà.
+    - Selezionare uno o più livelli o dipendenze, pulsante destro del mouse e quindi fare clic su **proprietà**. Nel **delle proprietà** finestra, modificare il **colore** proprietà.
 
 ## <a name="Validate"></a> Convalidare il codice rispetto al diagramma
 
@@ -149,17 +149,17 @@ Dopo avere modificato il diagramma, è possibile convalidarlo rispetto al codice
 
 Vedere:
 
--   [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
+- [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation)
+- [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Aggiornare il codice per garantire la conformità alla nuova architettura
 
 In genere, alla prima convalida del codice in base a un diagramma delle dipendenze aggiornato vengono visualizzati errori. Gli errori possono avere cause diverse:
 
--   Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.
+- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.
 
--   Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.
+- Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.
 
 Per risolvere gli errori, aggiornare il codice finché non verranno più visualizzati errori di convalida. Si tratta in genere di un processo iterativo. Per altre informazioni su questi errori, vedere [convalidare il codice con diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md).
 
@@ -174,5 +174,5 @@ Per garantire che le modifiche future nel codice siano conformi ai diagrammi del
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
