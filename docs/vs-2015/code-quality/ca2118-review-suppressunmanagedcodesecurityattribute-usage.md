@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059175"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verificare la sintassi di SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58965441"
 
  I criteri di sicurezza predefinito non concedere l'autorizzazione di codice non gestito a un assembly a meno che non venga eseguito dal computer locale o è un membro di uno dei seguenti gruppi:
 
--   Il gruppo di codice di area Computer
+- Il gruppo di codice di area Computer
 
--   Gruppo di codice nome sicuro di Microsoft
+- Gruppo di codice nome sicuro di Microsoft
 
--   Gruppo di codice nome sicuro di ECMA
+- Gruppo di codice nome sicuro di ECMA
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Esaminare attentamente il codice per garantire che questo attributo è assolutamente necessario. Se si ha familiarità con la sicurezza di codice gestito o non supportano le implicazioni di sicurezza di questo attributo, rimuoverlo dal codice. Se l'attributo è obbligatorio, è necessario assicurarsi che i chiamanti non è possibile usare il codice da utenti malintenzionati. Se il codice non ha l'autorizzazione per eseguire codice non gestito, questo attributo non ha alcun effetto e deve essere rimosso.

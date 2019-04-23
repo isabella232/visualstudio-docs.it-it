@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048088"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: Check-Out / Annulla estrazione
 Quest'area del plug-in test di controllo del codice sorgente illustra gli elementi di modifica e di ripristino dall'archivio delle versioni tramite il **Estrai** e **Annulla estrazione** comandi.
@@ -33,21 +33,21 @@ Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei te
 
 ##### <a name="check-out"></a>Vedere:
 
--   **File**, **controllo del codice sorgente**, **Scopri**.
+- **File**, **controllo del codice sorgente**, **Scopri**.
 
--   **File**, **consultare**.
+- **File**, **consultare**.
 
--   Menu di scelta rapida **Estrai**.
+- Menu di scelta rapida **Estrai**.
 
--   Annulla estrazione: **File**, **controllo del codice sorgente**, **Annulla estrazione**.
+- Annulla estrazione: **File**, **controllo del codice sorgente**, **Annulla estrazione**.
 
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune
 
--   Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.
+- Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.
 
--   L'archivio delle versioni l'estrazione di attributi per l'utente corretto.
+- L'archivio delle versioni l'estrazione di attributi per l'utente corretto.
 
--   La data dell'estrazione e l'ora siano corretti (per le impostazioni dell'utente).
+- La data dell'estrazione e l'ora siano corretti (per le impostazioni dell'utente).
 
 ## <a name="test-cases"></a>Test case
 
@@ -74,11 +74,11 @@ Quando l'utente si riconnette alla versione archiviare, gli stati di estrazione 
 
 #### <a name="expected-behavior"></a>Comportamento previsto
 
--   Non è possibile usare **Out esclusivamente** comando durante la disconnessione dall'archivio versioni.
+- Non è possibile usare **Out esclusivamente** comando durante la disconnessione dall'archivio versioni.
 
--   Non è possibile usare **Annulla estrazione** comando durante la disconnessione dall'archivio versioni.
+- Non è possibile usare **Annulla estrazione** comando durante la disconnessione dall'archivio versioni.
 
--   **Condiviso Check Out** comando funziona.
+- **Condiviso Check Out** comando funziona.
 
 |Operazione|Passi del test|Per verificare i risultati previsti|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Quando l'utente si riconnette alla versione archiviare, gli stati di estrazione 
 
 #### <a name="expected-behavior"></a>Comportamento previsto
 
--   Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.
+- Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.
 
--   L'archivio delle versioni di attributi di check-out per l'utente corretto.
+- L'archivio delle versioni di attributi di check-out per l'utente corretto.
 
--   La data e ora del check-out sono corretti (per le impostazioni dell'utente).
+- La data e ora del check-out sono corretti (per le impostazioni dell'utente).
 
--   La copia locale della cartella o file di destinazione è scrivibile.
+- La copia locale della cartella o file di destinazione è scrivibile.
 
 |Operazione|Passi del test|Per verificare i risultati previsti|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Quando l'utente si riconnette alla versione archiviare, gli stati di estrazione 
 
 #### <a name="expected-behavior"></a>Comportamento previsto
 
--   Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.
+- Dopo l'operazione di estrazione, il file di destinazione e/o le cartelle sono contrassegnate come estratti nell'archivio delle versioni.
 
--   L'archivio delle versioni di attributi di check-out per l'utente corretto.
+- L'archivio delle versioni di attributi di check-out per l'utente corretto.
 
--   La data e ora del check-out è corretto (per le impostazioni dell'utente).
+- La data e ora del check-out è corretto (per le impostazioni dell'utente).
 
--   La copia locale della cartella o file di destinazione è scrivibile.
+- La copia locale della cartella o file di destinazione è scrivibile.
 
 |Operazione|Passi del test|Per verificare i risultati previsti|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Quando l'utente si riconnette alla versione archiviare, gli stati di estrazione 
 
 #### <a name="expected-behavior"></a>Comportamento previsto
 
--   Il valore predefinito si basa il suo **Estrai versione locale** impostazione. Se l'utente ha scelto di estrarre la versione locale, il valore predefinito per l'operazione di annullamento estrazione consiste nel ripristinare in qualsiasi momento la versione estratta.
+- Il valore predefinito si basa il suo **Estrai versione locale** impostazione. Se l'utente ha scelto di estrarre la versione locale, il valore predefinito per l'operazione di annullamento estrazione consiste nel ripristinare in qualsiasi momento la versione estratta.
 
--   Dopo l'accettazione dell'operazione di annullamento, le icone nel **Esplora soluzioni** vengono aggiornati per interessati i file e l'elemento viene rimosso dal **archiviazioni in sospeso** finestra.
+- Dopo l'accettazione dell'operazione di annullamento, le icone nel **Esplora soluzioni** vengono aggiornati per interessati i file e l'elemento viene rimosso dal **archiviazioni in sospeso** finestra.
 
 |Operazione|Passi del test|Per verificare i risultati previsti|
 |------------|----------------|--------------------------------|

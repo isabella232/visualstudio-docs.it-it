@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056835"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: utilizzare la stessa destinazione in più file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../include
   
 #### <a name="to-import-a-project"></a>Per importare un progetto  
   
-1.  Nel file di progetto di importazione definire tutte le proprietà e gli elementi usati come parametri per le proprietà e gli elementi del progetto importato.  
+1. Nel file di progetto di importazione definire tutte le proprietà e gli elementi usati come parametri per le proprietà e gli elementi del progetto importato.  
   
-2.  Usare l'elemento `Import` per importare il progetto. Ad esempio:  
+2. Usare l'elemento `Import` per importare il progetto. Ad esempio:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  Dopo l'elemento `Import`, definire tutte le proprietà e gli elementi che devono eseguire l'override delle definizioni predefinite delle proprietà e degli elementi presenti nel progetto importato.  
+3. Dopo l'elemento `Import`, definire tutte le proprietà e gli elementi che devono eseguire l'override delle definizioni predefinite delle proprietà e degli elementi presenti nel progetto importato.  
   
 ## <a name="order-of-evaluation"></a>Ordine di valutazione  
  Quando [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] raggiunge un elemento `Import`, il progetto importato viene correttamente inserito nel progetto di importazione nella stessa posizione dell'elemento `Import`. La posizione dell'elemento `Import` può quindi influire sui valori delle proprietà e degli elementi ed è importante conoscere sia le proprietà e gli elementi impostati dal progetto importato, sia le proprietà e gli elementi usati dal progetto.  
@@ -77,11 +77,11 @@ Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../include
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>Usare l'approccio seguente durante l'importazione dei progetti  
   
-1.  Nel file di progetto definire tutte le proprietà e gli elementi usati come parametri per le proprietà e gli elementi del progetto importato.  
+1. Nel file di progetto definire tutte le proprietà e gli elementi usati come parametri per le proprietà e gli elementi del progetto importato.  
   
-2.  Importare il progetto.  
+2. Importare il progetto.  
   
-3.  Nel file di progetto definire tutte le proprietà e gli elementi che devono eseguire l'override delle definizioni predefinite delle proprietà e degli elementi presenti nel progetto importato.  
+3. Nel file di progetto definire tutte le proprietà e gli elementi che devono eseguire l'override delle definizioni predefinite delle proprietà e degli elementi presenti nel progetto importato.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio di codice seguente viene illustrato il file MyCommon.targets importato dal secondo esempio di codice. Il file con estensione targets valuta le proprietà ottenute dal progetto di importazione per configurare la compilazione.  

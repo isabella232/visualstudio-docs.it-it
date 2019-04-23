@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5f9ffdb0f443f0c0c0f150815f03694463c0488
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ab8e0712e5bb6f504b5b71a5ef6a3eca59167cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047764"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Aprire una finestra degli strumenti dinamica
 Finestre degli strumenti sono in genere aperte da un comando in un menu o un equivalente tasti di scelta rapida. In alcuni casi, tuttavia, potrebbe essere necessario una finestra degli strumenti visualizzata ogni volta che si applica un contesto dell'interfaccia utente specifico e si chiude quando il contesto dell'interfaccia utente non è più applicabile. Questi tipi di finestre degli strumenti sono chiamati *dinamici* oppure *visibili automaticamente*.
@@ -32,9 +32,9 @@ Finestre degli strumenti sono in genere aperte da un comando in un menu o un equ
 
 ## <a name="to-open-a-dynamic-tool-window"></a>Per aprire una finestra degli strumenti dinamica
 
-1.  Creare un progetto VSIX denominato **DynamicToolWindow** e aggiungere un modello di elemento di finestra degli strumenti denominato *DynamicWindowPane.cs*. Per altre informazioni, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Creare un progetto VSIX denominato **DynamicToolWindow** e aggiungere un modello di elemento di finestra degli strumenti denominato *DynamicWindowPane.cs*. Per altre informazioni, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-2.  Nel *DynamicWindowPanePackage.cs* file, individuare la dichiarazione DynamicWindowPanePackage. Aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> attributi per registrare la finestra degli strumenti.
+2. Nel *DynamicWindowPanePackage.cs* file, individuare la dichiarazione DynamicWindowPanePackage. Aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> attributi per registrare la finestra degli strumenti.
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]
@@ -50,6 +50,6 @@ Finestre degli strumenti sono in genere aperte da un comando in un menu o un equ
 
      Gli attributi indicati registrare la finestra degli strumenti denominata DynamicWindowPane come finestra temporanea che non viene mantenuta quando viene chiuso e riaperto Visual Studio. Viene aperto DynamicWindowPane ogni volta che <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> applica e chiusi in caso contrario.
 
-3.  Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato. È non verrà visualizzata la finestra degli strumenti.
+3. Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato. È non verrà visualizzata la finestra degli strumenti.
 
-4.  Aprire un progetto nell'istanza sperimentale. Apparirà la finestra degli strumenti.
+4. Aprire un progetto nell'istanza sperimentale. Apparirà la finestra degli strumenti.

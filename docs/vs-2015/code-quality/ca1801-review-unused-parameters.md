@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045642"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Controllare i parametri non usati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Per la documentazione più recente di Visual Studio, vedere [CA1801: Controllare
 ## <a name="cause"></a>Causa  
  Una firma di metodo include un parametro non utilizzato nel corpo del metodo. Questa regola non esamina i metodi seguenti:  
   
--   Metodi di cui viene fatto riferimento da un delegato.  
+- Metodi di cui viene fatto riferimento da un delegato.  
   
--   Metodi usati come gestori eventi.  
+- Metodi usati come gestori eventi.  
   
--   I metodi dichiarati con la `abstract` (`MustOverride` in Visual Basic) modificatore.  
+- I metodi dichiarati con la `abstract` (`MustOverride` in Visual Basic) modificatore.  
   
--   I metodi dichiarati con la `virtual` (`Overridable` in Visual Basic) modificatore.  
+- I metodi dichiarati con la `virtual` (`Overridable` in Visual Basic) modificatore.  
   
--   I metodi dichiarati con la `override` (`Overrides` in Visual Basic) modificatore.  
+- I metodi dichiarati con la `override` (`Overrides` in Visual Basic) modificatore.  
   
--   I metodi dichiarati con la `extern` (`Declare` istruzione in Visual Basic) modificatore.  
+- I metodi dichiarati con la `extern` (`Declare` istruzione in Visual Basic) modificatore.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
  Esaminare i parametri dei metodi non virtuali che non vengono utilizzati nel corpo del metodo per verificare che sia che non presente alcun correttezza riguardo all'errore per accedervi. I parametri inutilizzati comportano costi di manutenzione e prestazioni.  

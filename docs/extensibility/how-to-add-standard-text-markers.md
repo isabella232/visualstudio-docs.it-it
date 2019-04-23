@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ad7dd9ef83f9de3cfe406dc4fda2cd00837464
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060085"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procedura: Aggiungere i marcatori di testo standard
 Usare la procedura seguente per creare uno dei tipi di marcatore di testo predefinito forniti con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale.
 
 ## <a name="to-create-a-text-marker"></a>Per creare un marcatore di testo
 
-1.  A seconda se si usa un unidimensionale o bidimensionale sistema di coordinate, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodo o il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodo per creare un nuovo marcatore di testo.
+1. A seconda se si usa un unidimensionale o bidimensionale sistema di coordinate, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodo o il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodo per creare un nuovo marcatore di testo.
 
      In questa chiamata al metodo, specificare un tipo di marcatore, un intervallo di testo per creare il marcatore di failover e un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia. Quindi, questo metodo restituisce un puntatore al marcatore di testo appena creata. Tipi di marcatori vengono prelevati i <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumerazione. Specificare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia se si desidera essere informati di eventi del marcatore.
 
@@ -34,15 +34,15 @@ Usare la procedura seguente per creare uno dei tipi di marcatore di testo predef
 
 ### <a name="to-add-a-custom-command-to-the-context-menu"></a>Per aggiungere un comando personalizzato per il menu di scelta rapida
 
-1.  Prima che venga visualizzato il menu di scelta rapida, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metodo e passa un puntatore per il marcatore di testo è interessato e il numero dell'elemento comando nel menu di scelta rapida.
+1. Prima che venga visualizzato il menu di scelta rapida, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metodo e passa un puntatore per il marcatore di testo è interessato e il numero dell'elemento comando nel menu di scelta rapida.
 
      Ad esempio, i comandi specifici punti di interruzione nel menu di scelta rapida includono **Rimuovi punto di interruzione** attraverso **nuovo punto di interruzione**, come visualizzato nello screenshot seguente.
 
      ![Marker Context Menu](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")
 
-2.  Passare di nuovo un testo che identifica il nome del comando personalizzato. Ad esempio, **Rimuovi punto di interruzione** potrebbe essere un comando personalizzato se l'ambiente non ha già fornito. Anche passare di nuovo se il comando è supportato, disponibile e abilitato, e/o un interruttore on / off. L'ambiente Usa queste informazioni per visualizzare il comando personalizzato nel menu di scelta rapida in modo corretto.
+2. Passare di nuovo un testo che identifica il nome del comando personalizzato. Ad esempio, **Rimuovi punto di interruzione** potrebbe essere un comando personalizzato se l'ambiente non ha già fornito. Anche passare di nuovo se il comando è supportato, disponibile e abilitato, e/o un interruttore on / off. L'ambiente Usa queste informazioni per visualizzare il comando personalizzato nel menu di scelta rapida in modo corretto.
 
-3.  Per eseguire il comando, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> , passando è un puntatore per il marcatore di testo e il numero del comando scelto dal menu di scelta rapida.
+3. Per eseguire il comando, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> , passando è un puntatore per il marcatore di testo e il numero del comando scelto dal menu di scelta rapida.
 
      Usare queste informazioni da questa chiamata per eseguire qualsiasi azione del marcatore di testo del comando personalizzato determina.
 

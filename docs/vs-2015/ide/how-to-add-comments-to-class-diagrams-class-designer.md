@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048047"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procedura: aggiungere commenti a diagrammi classi (Progettazione classi)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procedura: Aggiungere commenti a diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare le forme Commenti per annotare i diagrammi classi. Una forma Commenti ha una sola proprietà, **Testo**, in cui è possibile digitare il testo. Le forme Commenti esistono solo sulla superficie del diagramma e non nel codice.  
@@ -33,11 +33,11 @@ ms.locfileid: "54802422"
   
 ### <a name="to-add-a-comment"></a>Per aggiungere un commento  
   
-1.  Trascinare un commento dalla **casella degli strumenti di Progettazione classi** nel diagramma classi.  
+1. Trascinare un commento dalla **casella degli strumenti di Progettazione classi** nel diagramma classi.  
   
-2.  Fare clic sulla nuova forma Commenti nel diagramma e digitare il testo desiderato.  
+2. Fare clic sulla nuova forma Commenti nel diagramma e digitare il testo desiderato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Working with Class Diagrams (Class Designer)](../ide/working-with-class-diagrams-class-designer.md)  (Uso di diagrammi classi (Progettazione classi))  
  [Working with Class Diagrams (Class Designer)](../ide/working-with-class-diagrams-class-designer.md)  (Uso di diagrammi classi (Progettazione classi))  
- [Procedura: Personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Procedura: Personalizzare diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)

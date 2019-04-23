@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048385"
 ---
 # <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati su conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 ## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
  Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha determinato il maggior numero di conflitti.  
   
--   Per visualizzare il percorso più attivo fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
+- Per visualizzare il percorso più attivo fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
  Ogni processo nell'esecuzione della profilatura viene visualizzato come nodo radice. Per impostare il nodo di inizio della visualizzazione Albero delle chiamate, fare clic con il pulsante destro del mouse sul nodo che si vuole impostare come nodo iniziale e fare clic su **Imposta radice**.  
   
  Quando si imposta il nodo radice si eliminano dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo originale, fare clic con il pulsante destro del mouse nella visualizzazione Albero delle chiamate e fare clic su **Reimposta radice**.  
   
-|Colonna|Descrizione|  
+|Colonna|Description|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Tempo per il quale l'esecuzione delle istanze della funzione in questo percorso di esecuzione è stata bloccata nell'esecuzione della profilatura. Il tempo non include il tempo di blocco delle funzioni figlio chiamate dalla funzione.|  
 |**% tempo blocco esclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per questa funzione in questo percorso di esecuzione.|  

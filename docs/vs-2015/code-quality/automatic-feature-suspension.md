@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045982"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Se la memoria di sistema disponibili è minore o uguale a 200MB, Visual Studio v
 
  In una condizione di memoria insufficiente, si verifica quanto segue:
 
--   Analisi della soluzione completa per Visual C# e Visual Basic sono disabilitata.
+- Analisi della soluzione completa per Visual C# e Visual Basic sono disabilitata.
 
--   [Operazione di Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) modalità di bassa latenza (GC) per Visual C# e Visual Basic sono disabilitati.
+- [Operazione di Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) modalità di bassa latenza (GC) per Visual c# e Visual Basic sono disabilitati.
 
--   Vengono scaricate le cache di Visual Studio.
+- Vengono scaricate le cache di Visual Studio.
 
 ## <a name="improve-visual-studio-performance"></a>Migliorare le prestazioni di Visual Studio
  Per suggerimenti e trucchi su come migliorare le prestazioni di Visual Studio quando si lavora con soluzioni di grandi dimensioni o condizioni di memoria insufficiente, vedere [considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ Se la memoria di sistema disponibili è minore o uguale a 200MB, Visual Studio v
 
 Tutte le cache di Visual Studio vengono svuotate immediatamente, ma verranno avviato il ripopolamento se continuare la sessione corrente di sviluppo o riavviare Visual Studio. Le cache scaricate includono le cache per le funzionalità seguenti.
 
--   Trova tutti i riferimenti
+- Trova tutti i riferimenti
 
--   Passa a
+- Passa a
 
--   Aggiungi Using
+- Aggiungi Using
 
 Inoltre, verranno deselezionate anche le cache utilizzate per operazioni interne di Visual Studio.
 

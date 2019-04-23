@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0eb8ef209e1fc55fabf37c0c4469fd390f5a478
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b28f07318a89e0944bf23e937f174c50c1e8a82d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045002"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>Interfaccia IActiveScriptProfilerCallback
 Fornisce i metodi utilizzati dal motore di scripting per notificare a un oggetto del profiler quando si verificano eventi. Questa interfaccia viene implementata dall'oggetto del profiler.  
@@ -39,7 +39,7 @@ Fornisce i metodi utilizzati dal motore di scripting per notificare a un oggetto
 >  Per aggiungere la possibilità di avviare e interrompere la profilatura quando uno script è in esecuzione, chiamare i metodi seguenti. Usando questi metodi, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia o arresta la profilatura.  
 > 
 > - Chiamare [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) per notificare al profiler che sia stato avviato di profilatura.  
->   -   Chiamare [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) per notificare al profiler che verrà presto interrompere la profilatura.  
+>   - Chiamare [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) per notificare al profiler che verrà presto interrompere la profilatura.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce del profiler di script ActiveX](../../winscript/reference/active-script-profiler-interfaces.md)

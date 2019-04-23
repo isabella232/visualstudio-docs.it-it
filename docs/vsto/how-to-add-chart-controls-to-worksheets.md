@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09301d9ebb85d12edf9c8df3d1879aad49ef8d56
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056315"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procedura: Aggiungere controlli Chart a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nelle personalizzazioni a livello di documento. È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli in fase di esecuzione nei componenti aggiuntivi VSTO.
@@ -35,7 +35,7 @@ ms.locfileid: "56598063"
 
   Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.Chart> controlli, vedere [grafico controllo](../vsto/chart-control.md).
 
-##  <a name="designtime"></a> Aggiungere controlli Chart in fase di progettazione
+## <a name="designtime"></a> Aggiungere controlli Chart in fase di progettazione
  È possibile aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.Chart> al foglio di lavoro nello stesso modo in cui si aggiunge un grafico dall'interno dell'applicazione.
 
 > [!NOTE]
@@ -43,36 +43,36 @@ ms.locfileid: "56598063"
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Per aggiungere un controllo host Chart a un foglio di lavoro in Excel
 
-1.  Nel **inserire** nella scheda il **grafici** fare clic su **colonna**, fare clic su una categoria di grafici e quindi scegliere il tipo di grafico desiderato.
+1. Nel **inserire** nella scheda il **grafici** fare clic su **colonna**, fare clic su una categoria di grafici e quindi scegliere il tipo di grafico desiderato.
 
-2.  Nel **Inserisci grafico** finestra di dialogo, fare clic su **OK**.
+2. Nel **Inserisci grafico** finestra di dialogo, fare clic su **OK**.
 
-3.  Nel **progettazione** nella scheda il **dati** fare clic su **selezione dati**.
+3. Nel **progettazione** nella scheda il **dati** fare clic su **selezione dati**.
 
-4.  Nel **selezionare un'origine dati** fare clic nella finestra di dialogo il **grafico** **intervallo dati** casella e deselezionare eventuali selezioni predefinite.
+4. Nel **selezionare un'origine dati** fare clic nella finestra di dialogo il **grafico** **intervallo dati** casella e deselezionare eventuali selezioni predefinite.
 
-5.  Nel **dei dati per il grafico** foglio, selezionare l'intervallo di celle contenente i dati per il grafico (celle **A5** attraverso **D8**).
+5. Nel **dei dati per il grafico** foglio, selezionare l'intervallo di celle contenente i dati per il grafico (celle **A5** attraverso **D8**).
 
-6.  Nel **selezionare un'origine dati** finestra di dialogo, fare clic su **OK**.
+6. Nel **selezionare un'origine dati** finestra di dialogo, fare clic su **OK**.
 
-##  <a name="runtimedoclevel"></a> Aggiungere controlli chart in fase di esecuzione in un progetto a livello di documento
+## <a name="runtimedoclevel"></a> Aggiungere controlli chart in fase di esecuzione in un progetto a livello di documento
  È possibile aggiungere il <xref:Microsoft.Office.Tools.Excel.Chart> controllo in modo dinamico in fase di esecuzione. I grafici creati dinamicamente non vengono salvati in modo permanente nel documento come controlli host quando il documento viene chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Per aggiungere un controllo Chart a un foglio di lavoro a livello di codice
 
-1.  Nel gestore eventi <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> di `Sheet1` inserire il codice seguente per aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.Chart>.
+1. Nel gestore eventi <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> di `Sheet1` inserire il codice seguente per aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.Chart>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-##  <a name="runtimeaddin"></a> Aggiungere controlli chart in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+## <a name="runtimeaddin"></a> Aggiungere controlli chart in fase di esecuzione in un progetto di componente aggiuntivo VSTO
  È possibile aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.Chart> a livello di codice a qualsiasi foglio di lavoro aperto in un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  I controlli Chart creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro viene chiuso. Per altre informazioni, vedere [Add Controls to Office documenti in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Per aggiungere un controllo Chart a un foglio di lavoro a livello di codice
 
-1.  Il codice seguente genera un elemento host foglio di lavoro basato sul foglio di lavoro aperto e quindi aggiunge un controllo <xref:Microsoft.Office.Tools.Excel.Chart>.
+1. Il codice seguente genera un elemento host foglio di lavoro basato sul foglio di lavoro aperto e quindi aggiunge un controllo <xref:Microsoft.Office.Tools.Excel.Chart>.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]
      [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]
@@ -80,7 +80,7 @@ ms.locfileid: "56598063"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio prevede i requisiti seguenti:
 
--   Dati da usare per creare il grafico, archiviati nell'intervallo da A5 a D8 nel foglio di lavoro.
+- Dati da usare per creare il grafico, archiviati nell'intervallo da A5 a D8 nel foglio di lavoro.
 
 ## <a name="see-also"></a>Vedere anche
 - [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

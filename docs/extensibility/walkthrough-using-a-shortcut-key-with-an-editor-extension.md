@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048688"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Usare i tasti di scelta rapida con un'estensione dell'editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. Procedura dettagliata illustra come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo tramite un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo usando il carattere +.
@@ -61,9 +61,9 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
 
  Il filtro di comando è un'implementazione di <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, che gestisce il comando creando un'area di controllo.
 
-1.  Aggiungere un file di classe e assegnargli il nome `KeyBindingCommandFilter`.
+1. Aggiungere un file di classe e assegnargli il nome `KeyBindingCommandFilter`.
 
-2.  Aggiungere le istruzioni using seguenti.
+2. Aggiungere le istruzioni using seguenti.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
 
     ```
 
-3.  La classe denominata KeyBindingCommandFilter deve ereditare da <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. La classe denominata KeyBindingCommandFilter deve ereditare da <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  Aggiungere campi privati per la visualizzazione di testo, il comando successivo nella catena di comando e un flag che rappresentano se è già stato aggiunto il filtro di comando.
+4. Aggiungere campi privati per la visualizzazione di testo, il comando successivo nella catena di comando e un flag che rappresentano se è già stato aggiunto il filtro di comando.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
     internal bool m_adorned;
     ```
 
-5.  Aggiungere un costruttore che imposta la visualizzazione di testo.
+5. Aggiungere un costruttore che imposta la visualizzazione di testo.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
     }
     ```
 
-6.  Implementare il `QueryStatus()` metodo come indicato di seguito.
+6. Implementare il `QueryStatus()` metodo come indicato di seguito.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
     }
     ```
 
-7.  Implementare il `Exec()` metodo in modo che si aggiunge una casella di colore viola alla visualizzazione se un segno più (**+**) carattere viene digitato.
+7. Implementare il `Exec()` metodo in modo che si aggiunge una casella di colore viola alla visualizzazione se un segno più (**+**) carattere viene digitato.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Aggiungere il filtro di comando (precedente a Visual Studio 2017 versione 15.6)
  Il provider dell'area di controllo è necessario aggiungere un filtro di comando per la visualizzazione di testo. In questo esempio, il provider implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> per ascoltare gli eventi di creazione di visualizzazione di testo. Questo provider dell'area di controllo consente di esportare anche il livello di area di controllo, che definisce l'ordine Z dell'area di controllo.
 
-1.  Nel file KeyBindingTestTextViewCreationListener, aggiungere quanto segue usando istruzioni:
+1. Nel file KeyBindingTestTextViewCreationListener, aggiungere quanto segue usando istruzioni:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
 
     ```
 
-2.  Per ottenere l'adattatore di visualizzazione di testo, è necessario importare il <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. Per ottenere l'adattatore di visualizzazione di testo, è necessario importare il <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
 
     ```
 
-3.  Modifica il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodo in modo che si aggiunge il `KeyBindingCommandFilter`.
+3. Modifica il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodo in modo che si aggiunge il `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
     }
     ```
 
-4.  Il `AddCommandFilter` gestore ottiene l'adattatore di visualizzazione di testo e aggiunge il filtro di comando.
+4. Il `AddCommandFilter` gestore ottiene l'adattatore di visualizzazione di testo e aggiunge il filtro di comando.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ Il gestore del comando è un'implementazione di <xref:Microsoft.VisualStudio.Com
        return false;
    }
    ```
+
    7. Definizione del livello di area di controllo da copiare *KeyBindingTestTextViewCreationListener.cs* del file per il *KeyBindingCommandHandler.cs* e quindi eliminare  *KeyBindingTestTextViewCreationListener.cs* file:
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>Compilare e testare il codice
 
-1.  Compilare la soluzione KeyBindingTest ed eseguirlo nell'istanza sperimentale.
+1. Compilare la soluzione KeyBindingTest ed eseguirlo nell'istanza sperimentale.
 
-2.  Creare o aprire un file di testo. Digitare alcune parole contenenti il carattere 'a', quindi digitare **+** ovunque nella visualizzazione di testo.
+2. Creare o aprire un file di testo. Digitare alcune parole contenenti il carattere 'a', quindi digitare **+** ovunque nella visualizzazione di testo.
 
      Un quadrato di colore viola dovrebbe essere visualizzato ogni carattere "a" nel file.

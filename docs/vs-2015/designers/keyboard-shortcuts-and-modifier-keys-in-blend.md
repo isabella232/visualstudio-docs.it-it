@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059162"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tasti di scelta rapida e tasti di modifica in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ I tasti di scelta rapida consentono di velocizzare il lavoro riducendo un'azione
 ## <a name="modifier-keys"></a>Tasti di modifica  
  Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] per individuarli. Nelle sezioni seguenti vengono elencati i tasti di scelta rapida che consentono di modificare il comportamento di strumenti o un'azione, ad esempio il ridimensionamento di un oggetto:  
   
--   [Tasti di modifica della tavola da disegno](../designers/artboard-modifier-keys-in-blend.md)  
+- [Tasti di modifica della tavola da disegno](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Tasti di modifica strumento Penna](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Tasti di modifica strumento Penna](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Tasti di modifica strumento Selezione diretta](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Tasti di modifica strumento Selezione diretta](../designers/direct-selection-tool-modifier-keys-in-blend.md)

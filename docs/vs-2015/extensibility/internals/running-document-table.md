@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969698"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044606"
 ---
 # <a name="running-document-table"></a>Tabella documenti in esecuzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura
   
  L'IDE Usa anche RDT per resurface (portare in primo piano) un documento aperto, se un utente richiede che il documento. Per altre informazioni, vedere [i file di visualizzazione utilizzando il comando File Apri](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Per determinare se un file è aperto in RDT, effettuare una delle seguenti.  
   
--   Eseguire una query per il moniker del documento (ovvero, il percorso del documento completo) scoprire se l'elemento è aperto.  
+- Eseguire una query per il moniker del documento (ovvero, il percorso del documento completo) scoprire se l'elemento è aperto.  
   
--   Usare l'ID gerarchia o l'elemento per porre il sistema di progetto per il percorso completo di documenti e quindi cercare l'elemento nella RDT.  
+- Usare l'ID gerarchia o l'elemento per porre il sistema di progetto per il percorso completo di documenti e quindi cercare l'elemento nella RDT.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di Rdt_readlock](../../extensibility/internals/rdt-readlock-usage.md)   

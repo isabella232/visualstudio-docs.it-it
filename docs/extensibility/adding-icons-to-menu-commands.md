@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 353d56d941cb3fbb4eeac1c5c78137ac2f01a0db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056432"
 ---
 # <a name="add-icons-to-menu-commands"></a>Aggiungere le icone ai comandi di menu
 I comandi possono apparire su entrambi i menu e barre degli strumenti. Nelle barre degli strumenti, è comune per un comando da visualizzare solo un'icona (per risparmiare spazio) mentre nei menu che con un'icona e il testo visualizzato in genere un comando.
@@ -27,24 +27,24 @@ I comandi possono apparire su entrambi i menu e barre degli strumenti. Nelle bar
 ## <a name="add-an-icon-to-a-command"></a>Aggiungere un'icona per un comando
  La procedura seguente si presuppone di avere un progetto VSPackage esistente con un comando di menu. Per scoprire come eseguire questa operazione, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-1.  Creare una bitmap con intensità di colore di 32 bit. Un'icona è sempre pari a 16x16, pertanto questa bitmap deve essere 16 pixel di altezza e multipli di 16 pixel di larghezza.
+1. Creare una bitmap con intensità di colore di 32 bit. Un'icona è sempre pari a 16x16, pertanto questa bitmap deve essere 16 pixel di altezza e multipli di 16 pixel di larghezza.
 
      Ogni icona viene posizionato sulla bitmap uno accanto a altro in una singola riga. Usare il canale alfa per indicare posizioni di trasparenza in ogni icona.
 
      Se si usa una profondità di colore a 8 bit, usare magenta, `RGB(255,0,255)`, come la trasparenza. Tuttavia, le icone di colori a 32 bit sono preferite.
 
-2.  Copiare il file dell'icona per il *risorse* directory del progetto di VSPackage. Nel **Esplora soluzioni**, aggiungere l'icona per il progetto. (Selezionare **le risorse**e menu di scelta rapida fare clic su **Add**, quindi **elemento esistente**e selezionare il file icona.)
+2. Copiare il file dell'icona per il *risorse* directory del progetto di VSPackage. Nel **Esplora soluzioni**, aggiungere l'icona per il progetto. (Selezionare **le risorse**e menu di scelta rapida fare clic su **Add**, quindi **elemento esistente**e selezionare il file icona.)
 
-3.  Aprire il *vsct* file nell'editor.
+3. Aprire il *vsct* file nell'editor.
 
-4.  Aggiungere un `GuidSymbol` elemento con il nome **testIcon**. Creare un GUID (**degli strumenti** > **Crea GUID**, quindi selezionare **formato del Registro di sistema** e fare clic su **copia**) e incollarlo nel `value` attributo. Il risultato dovrebbe essere simile al seguente:
+4. Aggiungere un `GuidSymbol` elemento con il nome **testIcon**. Creare un GUID (**degli strumenti** > **Crea GUID**, quindi selezionare **formato del Registro di sistema** e fare clic su **copia**) e incollarlo nel `value` attributo. Il risultato dovrebbe essere simile al seguente:
 
     ```xml
     <!-- Create your own GUID -->
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">
     ```
 
-5.  Aggiungere un `<IDSymbol>` dell'icona. Il `name` attributo è l'ID dell'icona e il `value` indica la posizione nella striscia di, se presente. Se è presente una sola icona, aggiungere 1. Il risultato dovrebbe essere simile al seguente:
+5. Aggiungere un `<IDSymbol>` dell'icona. Il `name` attributo è l'ID dell'icona e il `value` indica la posizione nella striscia di, se presente. Se è presente una sola icona, aggiungere 1. Il risultato dovrebbe essere simile al seguente:
 
     ```xml
     <!-- Create your own GUID -->
@@ -53,13 +53,13 @@ I comandi possono apparire su entrambi i menu e barre degli strumenti. Nelle bar
     </GuidSymbol>
     ```
 
-6.  Creare un `<Bitmap>` nel `<Bitmaps>` sezione il *con estensione vsct* file per rappresentare la mappa di bit contenente le icone.
+6. Creare un `<Bitmap>` nel `<Bitmaps>` sezione il *con estensione vsct* file per rappresentare la mappa di bit contenente le icone.
 
-    -   Impostare il `guid` valore per il nome del `<GuidSymbol>` elemento è stato creato nel passaggio precedente.
+    - Impostare il `guid` valore per il nome del `<GuidSymbol>` elemento è stato creato nel passaggio precedente.
 
-    -   Impostare il `href` valore per il percorso relativo del file bitmap (in questo caso **risorse\\< nome file dell'icona\>**.
+    - Impostare il `href` valore per il percorso relativo del file bitmap (in questo caso **risorse\\< nome file dell'icona\>**.
 
-    -   Impostare il `usedList` valore per il IDSymbol creato in precedenza. Questo attributo specifica un elenco delimitato da virgole delle icone da utilizzare nel pacchetto VSPackage. Le icone non inclusi nell'elenco sono esclusi form compilazione.
+    - Impostare il `usedList` valore per il IDSymbol creato in precedenza. Questo attributo specifica un elenco delimitato da virgole delle icone da utilizzare nel pacchetto VSPackage. Le icone non inclusi nell'elenco sono esclusi form compilazione.
 
          Il blocco di Bitmap dovrebbe essere simile al seguente:
 
@@ -67,7 +67,7 @@ I comandi possono apparire su entrambi i menu e barre degli strumenti. Nelle bar
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>
         ```
 
-7.  Esistente `<Button>` elemento, impostare il `Icon` elemento ai valori GUIDSymbol e IDSymbol creato in precedenza. Di seguito è riportato un esempio di un elemento Button con tali valori:
+7. Esistente `<Button>` elemento, impostare il `Icon` elemento ai valori GUIDSymbol e IDSymbol creato in precedenza. Di seguito è riportato un esempio di un elemento Button con tali valori:
 
     ```xml
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -79,7 +79,7 @@ I comandi possono apparire su entrambi i menu e barre degli strumenti. Nelle bar
     </Button>
     ```
 
-8.  Verificare l'icona. Compilare il progetto e avviare il debug. Nell'istanza sperimentale, trovare il comando. Viene visualizzata l'icona che è stato aggiunto.
+8. Verificare l'icona. Compilare il progetto e avviare il debug. Nell'istanza sperimentale, trovare il comando. Viene visualizzata l'icona che è stato aggiunto.
 
 ## <a name="see-also"></a>Vedere anche
 - [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md)

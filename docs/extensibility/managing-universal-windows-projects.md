@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047398"
 ---
 # <a name="manage-universal-windows-projects"></a>Gestire i progetti Windows universali
 
@@ -25,11 +25,11 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
 
 ### <a name="navigate-the-shared-project"></a>Passare al progetto condiviso
 
-1.  Creare un progetto VSIX c# denominato **TestUniversalProject**. (**File** > **nuova** > **progetto** e quindi **c#**  >   **Estendibilità** > **pacchetto Visual Studio**). Aggiungi un **comando personalizzato** modello di elemento di progetto (nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento** , quindi fare clic sulla **estendibilità**). Denominare il file **TestUniversalProject**.
+1. Creare un progetto VSIX c# denominato **TestUniversalProject**. (**File** > **nuova** > **progetto** e quindi **c#**  >   **Estendibilità** > **pacchetto Visual Studio**). Aggiungi un **comando personalizzato** modello di elemento di progetto (nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento** , quindi fare clic sulla **estendibilità**). Denominare il file **TestUniversalProject**.
 
-2.  Aggiungere un riferimento a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (nel **estensioni** sezione).
+2. Aggiungere un riferimento a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (nel **estensioni** sezione).
 
-3.  Aprire *TestUniversalProject.cs* e aggiungere quanto segue `using` istruzioni:
+3. Aprire *TestUniversalProject.cs* e aggiungere quanto segue `using` istruzioni:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     using System.Windows.Forms;
     ```
 
-4.  Nel `TestUniversalProject` classe aggiungere un campo privato che punta al **Output** finestra.
+4. Nel `TestUniversalProject` classe aggiungere un campo privato che punta al **Output** finestra.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     }
     ```
 
-5.  Impostare il riferimento al riquadro di output all'interno di TestUniversalProject costruttore:
+5. Impostare il riferimento al riquadro di output all'interno di TestUniversalProject costruttore:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     }
     ```
 
-6.  Rimuovere il codice esistente dal `ShowMessageBox` metodo:
+6. Rimuovere il codice esistente dal `ShowMessageBox` metodo:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     }
     ```
 
-7.  Ottiene l'oggetto DTE, che verrà usato per scopi diversi in questa procedura dettagliata. Assicurarsi inoltre che viene caricata una soluzione quando si fa clic sul pulsante di menu.
+7. Ottiene l'oggetto DTE, che verrà usato per scopi diversi in questa procedura dettagliata. Assicurarsi inoltre che viene caricata una soluzione quando si fa clic sul pulsante di menu.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     }
     ```
 
-8.  Trovare il progetto condiviso. Progetto condiviso è un contenitore puro; non creare o generare output. Il metodo seguente consente di trovare il primo progetto condiviso nella soluzione cercando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto che è in grado di progetto condiviso.
+8. Trovare il progetto condiviso. Progetto condiviso è un contenitore puro; non creare o generare output. Il metodo seguente consente di trovare il primo progetto condiviso nella soluzione cercando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto che è in grado di progetto condiviso.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Gestire gli elementi condivisi nel progetto di piattaforma
 
-1.  Trovare gli elementi condivisi nel progetto di piattaforma. Gli elementi nel progetto condiviso vengono visualizzati nel progetto di piattaforma come elementi condivisi. Non è possibile visualizzarli nella **Esplora soluzioni**, ma è possibile seguire la gerarchia di progetto per trovarli. Il metodo seguente illustra la gerarchia e raccoglie tutti gli elementi condivisi. Facoltativamente, restituisce la didascalia di ciascun elemento. Gli elementi condivisi sono identificati dalla proprietà nuova <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
+1. Trovare gli elementi condivisi nel progetto di piattaforma. Gli elementi nel progetto condiviso vengono visualizzati nel progetto di piattaforma come elementi condivisi. Non è possibile visualizzarli nella **Esplora soluzioni**, ma è possibile seguire la gerarchia di progetto per trovarli. Il metodo seguente illustra la gerarchia e raccoglie tutti gli elementi condivisi. Facoltativamente, restituisce la didascalia di ciascun elemento. Gli elementi condivisi sono identificati dalla proprietà nuova <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     }
     ```
 
-2.  Nel `ShowMessageBox` metodo, aggiungere il codice seguente per esaminare gli elementi di gerarchia del progetto di piattaforma. Inserirlo all'interno di `foreach` blocco.
+2. Nel `ShowMessageBox` metodo, aggiungere il codice seguente per esaminare gli elementi di gerarchia del progetto di piattaforma. Inserirlo all'interno di `foreach` blocco.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  Leggere gli elementi condivisi. Gli elementi condivisi vengono visualizzati nel progetto di piattaforma come i file collegati nascosti, e può leggere tutte le proprietà come normali file collegati. Il codice seguente legge il percorso completo del primo elemento condiviso.
+3. Leggere gli elementi condivisi. Gli elementi condivisi vengono visualizzati nel progetto di piattaforma come i file collegati nascosti, e può leggere tutte le proprietà come normali file collegati. Il codice seguente legge il percorso completo del primo elemento condiviso.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  Provare ora a eseguire l'operazione. Premere **F5** per avviare l'istanza sperimentale. Creare un C# progetto di app universali hub nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual C#**   >  **Windows**  >  **Windows 8** > **universale** > **App Hub**) andare alla **strumenti** menu e fare clic su  **Richiamare TestUniversalProject**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:
+4. Provare ora a eseguire l'operazione. Premere **F5** per avviare l'istanza sperimentale. Creare un C# progetto di app universali hub nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual C#**   >  **Windows**  >  **Windows 8** > **universale** > **App Hub**) andare alla **strumenti** menu e fare clic su  **Richiamare TestUniversalProject**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:
 
     ```
     Found shared project: HubApp.Shared

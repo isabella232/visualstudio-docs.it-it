@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058499"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Procedura: creare un tipo nullable (Progettazione classi)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Procedura: Creare un tipo nullable (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Alcuni tipi di valore non sempre hanno (o hanno bisogno di) un valore definito. Questa è una pratica comune nei database, in cui ad alcuni campi potrebbero non essere assegnati valori. Ad esempio, è possibile assegnare un valore null a un campo di database per indicare che non gli è stato ancora assegnato un valore.  
@@ -42,17 +42,17 @@ Alcuni tipi di valore non sempre hanno (o hanno bisogno di) un valore definito. 
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Per aggiungere un tipo nullable tramite Progettazione classi  
   
-1.  Nel diagramma classi espandere una classe esistente o creare una nuova classe.  
+1. Nel diagramma classi espandere una classe esistente o creare una nuova classe.  
   
-2.  Per aggiungere una classe al progetto, nel menu **Diagramma classi** fare clic su **Aggiungi** e scegliere **Aggiungi classe**.  
+2. Per aggiungere una classe al progetto, nel menu **Diagramma classi** fare clic su **Aggiungi** e scegliere **Aggiungi classe**.  
   
-3.  Per espandere la forma della classe, nel menu **Diagramma classi** fare clic su **Espandi**.  
+3. Per espandere la forma della classe, nel menu **Diagramma classi** fare clic su **Espandi**.  
   
-4.  Selezionare la forma della classe. Nel menu **Diagramma classi** fare clic su **Aggiungi** e scegliere **Campo**. Un nuovo campo con il nome predefinito **campo** verrà visualizzato nella forma della classe e anche nella finestra **Dettagli classe**.  
+4. Selezionare la forma della classe. Nel menu **Diagramma classi** fare clic su **Aggiungi** e scegliere **Campo**. Un nuovo campo con il nome predefinito **campo** verrà visualizzato nella forma della classe e anche nella finestra **Dettagli classe**.  
   
-5.  Nella colonna **Nome** della finestra **Dettagli classe** (o nella forma della classe stessa) modificare il nome del nuovo campo in un nome valido e significativo.  
+5. Nella colonna **Nome** della finestra **Dettagli classe** (o nella forma della classe stessa) modificare il nome del nuovo campo in un nome valido e significativo.  
   
-6.  Nella colonna **Tipo** della finestra **Dettagli classe** dichiarare il tipo come tipo nullable, come illustrato nel codice seguente:  
+6. Nella colonna **Tipo** della finestra **Dettagli classe** dichiarare il tipo come tipo nullable, come illustrato nel codice seguente:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,19 +71,19 @@ Alcuni tipi di valore non sempre hanno (o hanno bisogno di) un valore definito. 
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Per aggiungere un tipo nullable tramite Editor del codice  
   
-1.  Aggiungere una classe al progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e nel menu **Progetto** fare clic su **Aggiungi classe**.  
+1. Aggiungere una classe al progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e nel menu **Progetto** fare clic su **Aggiungi classe**.  
   
-2.  Nel file con estensione CS o VB della nuova classe, aggiungere uno o più tipi nullable nella nuova classe per la dichiarazione di classe.  
+2. Nel file con estensione CS o VB della nuova classe, aggiungere uno o più tipi nullable nella nuova classe per la dichiarazione di classe.  
   
-3.  Dalla visualizzazione classi, trascinare la nuova icona di classe all'area di progettazione delle classi. Viene visualizzata un forma della classe nel diagramma classi.  
+3. Dalla visualizzazione classi, trascinare la nuova icona di classe all'area di progettazione delle classi. Viene visualizzata un forma della classe nel diagramma classi.  
   
-4.  Espandere i dettagli della forma della classe e spostare il puntatore del mouse sui membri della classe. La descrizione comando visualizza la dichiarazione di ogni membro.  
+4. Espandere i dettagli della forma della classe e spostare il puntatore del mouse sui membri della classe. La descrizione comando visualizza la dichiarazione di ogni membro.  
   
-5.  Fare clic sulla forma della classe e fare clic su **Dettagli classe**. È possibile visualizzare o modificare le proprietà del nuovo tipo nella finestra **Dettagli classe**.  
+5. Fare clic sulla forma della classe e fare clic su **Dettagli classe**. È possibile visualizzare o modificare le proprietà del nuovo tipo nella finestra **Dettagli classe**.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Nullable%601>   
  [Tipi nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Uso dei tipi nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Procedura: Identificare un tipo nullable](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Procedura: Identificare un tipo Nullable](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Tipi di valori nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

@@ -15,25 +15,25 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046497"
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Procedura: visualizzare i tipi esistenti (Progettazione classi)
+# <a name="how-to-view-existing-types-class-designer"></a>Procedura: Visualizzare i tipi esistenti (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a un diagramma classi.  
   
  È possibile vedere tipi locali e tipi a cui viene fatto riferimento. Un tipo locale è presente nel progetto aperto ed è in lettura/scrittura. Un tipo a cui viene fatto riferimento esiste in un altro progetto o in un assembly a cui viene fatto riferimento ed è in sola lettura.  
   
- Per progettare nuovi tipi nei diagrammi classi, vedere [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md) (Procedura: Creare tipi tramite Progettazione classi).  
+ Per progettare nuovi tipi nei diagrammi classi, vedere [Procedura: Creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md).  
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi  
   
-1. In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+1. In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [How to: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
 2. Nel progetto in Esplora soluzioni trascinare un file di codice sorgente nel diagramma di classi.  
   
@@ -41,9 +41,9 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
    >  Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:  
    > 
    > - Il progetto di app contenente il diagramma  
-   >   -   Un progetto condiviso importato dal progetto di app  
-   >   -   Un progetto a cui si fa riferimento  
-   >   -   Un assembly  
+   >   - Un progetto condiviso importato dal progetto di app  
+   >   - Un progetto a cui si fa riferimento  
+   >   - Un assembly  
   
     Le forme che rappresentano i tipi definiti nel file di codice sorgente appariranno nel diagramma nella posizione in cui è stato trascinato il file.  
   
@@ -61,11 +61,11 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto in un diagramma classi  
   
-1.  In Esplora soluzioni o Visualizzazione classi fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizzazione**, quindi scegliere **Visualizza diagramma classi**.  
+1. In Esplora soluzioni o Visualizzazione classi fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizzazione**, quindi scegliere **Visualizza diagramma classi**.  
   
      Verrà creato un diagramma classi compilato automaticamente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [How to: View Inheritance Between Types (Class Designer)](../ide/how-to-view-inheritance-between-types-class-designer.md)  (Procedura: Visualizzare l'ereditarietà tra tipi (Progettazione classi))  
+ [Procedura: Visualizzare l'ereditarietà tra tipi (Progettazione classi)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Procedura: Personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [Visualizzazione dei tipi e delle relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md)

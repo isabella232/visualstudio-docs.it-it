@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047202"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Errore: Il verbo DEBUG è bloccato dal server Web, che è stato a sua volta bloccato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ L'accesso a un'applicazione Web o a un servizio Web XML non è riuscito in quant
   
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Per attivare il debug su un server Web con URLScan installato  
   
-1.  Individuare il file Urlscan.ini. In genere è presente in una directory simile a quella indicata di seguito.  
+1. Individuare il file Urlscan.ini. In genere è presente in una directory simile a quella indicata di seguito.  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Creare una copia del file e assegnarvi il nome **Urlscan.old**.  
+2. Creare una copia del file e assegnarvi il nome **Urlscan.old**.  
   
-3.  Aprire la copia originale del file Urlscan.ini mediante il Blocco note o l'editore di testo desiderato.  
+3. Aprire la copia originale del file Urlscan.ini mediante il Blocco note o l'editore di testo desiderato.  
   
-4.  In Urlscan.ini individuare la sezione [AllowVerbs]. Aggiungere DEBUG alla sezione [AllowVerbs]. Se è presente la stringa ;DEBUG nella sezione [AllowVerbs], e il punto e virgola per rimuovere il commento dal verbo.  
+4. In Urlscan.ini individuare la sezione [AllowVerbs]. Aggiungere DEBUG alla sezione [AllowVerbs]. Se è presente la stringa ;DEBUG nella sezione [AllowVerbs], e il punto e virgola per rimuovere il commento dal verbo.  
   
-5.  Individuare la sezione [DenyVerbs]. Rimuovere DEBUG, se è presente nella sezione [DenyVerbs].  
+5. Individuare la sezione [DenyVerbs]. Rimuovere DEBUG, se è presente nella sezione [DenyVerbs].  
   
-6.  Salvare il file.  
+6. Salvare il file.  
   
-7.  Riavviare il server o IIS.  
+7. Riavviare il server o IIS.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   

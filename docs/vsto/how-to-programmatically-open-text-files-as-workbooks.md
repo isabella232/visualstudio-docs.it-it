@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060138"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedura: A livello di codice aprire i file di testo come cartelle di lavoro
   È possibile aprire un file di testo come cartella di lavoro. È necessario passare il nome del file di testo che si desidera aprire. È possibile specificare diversi parametri facoltativi, ad esempio il numero di riga per iniziare l'analisi e il formato della colonna dei dati nel file.
@@ -33,9 +33,9 @@ ms.locfileid: "56633915"
 ## <a name="compile-the-code"></a>Compilare il codice
  In questo esempio richiede i componenti seguenti:
 
--   Un file di testo delimitato da virgole denominato `Test.txt` che contenga almeno tre righe di testo.
+- Un file di testo delimitato da virgole denominato `Test.txt` che contenga almeno tre righe di testo.
 
--   Il file di testo `Test.txt` da archiviare nell'unità C.
+- Il file di testo `Test.txt` da archiviare nell'unità C.
 
 ## <a name="see-also"></a>Vedere anche
 - [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)

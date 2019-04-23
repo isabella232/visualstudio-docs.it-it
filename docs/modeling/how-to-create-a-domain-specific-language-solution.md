@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051349"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: Creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di Visual Studio specializzata.
@@ -54,9 +54,9 @@ Prima di iniziare questa procedura, è possibile installare questi componenti:
 
 3. Immettere un'estensione di file **estensione di File** pagina. Deve essere univoco nel computer in uso e in tutti i computer in cui si desidera installare il linguaggio DSL. Verrà visualizzato il messaggio **Nessuna applicazione o un editor di Visual Studio usano questa estensione**.
 
-   -   Se è stata usata l'estensione in DSL sperimentale precedente che non è stato completamente installato, è comunque possibile cancellarli indietro usando la **reimpostare l'istanza sperimentale** strumento, che sono disponibili nel menu di Visual Studio SDK.
+   - Se è stata usata l'estensione in DSL sperimentale precedente che non è stato completamente installato, è comunque possibile cancellarli indietro usando la **reimpostare l'istanza sperimentale** strumento, che sono disponibili nel menu di Visual Studio SDK.
 
-   -   Se un'altra estensione di Visual Studio che usa l'estensione di file è stato completamente installata nel computer in uso, è consigliabile disinstallarla. Nel **degli strumenti** menu, fare clic su **gestore estensioni del**.
+   - Se un'altra estensione di Visual Studio che usa l'estensione di file è stato completamente installata nel computer in uso, è consigliabile disinstallarla. Nel **degli strumenti** menu, fare clic su **gestore estensioni del**.
 
 4. Esaminare e modificare se necessario, i campi nelle pagine rimanenti della procedura guidata. Quando si è soddisfatti con le impostazioni, fare clic su **fine**. Per altre informazioni sulle impostazioni, vedere [pagine della procedura guidata finestra di progettazione DSL](#settings).
 
@@ -73,7 +73,7 @@ Prima di iniziare questa procedura, è possibile installare questi componenti:
 Scegliere un modello simile al linguaggio specifico di dominio che si desidera creare. I diversi modelli forniscono punti di partenza utili. Quando si seleziona un modello di soluzione, la procedura guidata visualizza una descrizione. Per altre informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Ciò che si desidera assegnare un nome di linguaggio specifico di dominio?**
-Il valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe C#.
+Il valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe c#.
 
 ### <a name="file-extension-page"></a>Pagina estensione file
  **Usare i file di modello quale estensione?**
@@ -85,15 +85,15 @@ Digitare una nuova estensione di file.
 
  Se viene visualizzato un elenco di strumenti o pacchetti, è necessario eseguire una delle operazioni seguenti:
 
--   Digitare un'estensione di file diverso.
+- Digitare un'estensione di file diverso.
 
      \- oppure -
 
--   Reimpostare l'istanza sperimentale di Visual Studio. Questo verrà annullata la registrazione di tutti i linguaggi specifici di dominio che si sono già compilate. Nel **avviare** menu, fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare il Istanza di Microsoft Visual Studio 2010 sperimentale**. È possibile ricompilare tutti gli altri linguaggi specifici di dominio che si desidera usare nuovamente.
+- Reimpostare l'istanza sperimentale di Visual Studio. Questo verrà annullata la registrazione di tutti i linguaggi specifici di dominio che si sono già compilate. Nel **avviare** menu, fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare il Istanza di Microsoft Visual Studio 2010 sperimentale**. È possibile ricompilare tutti gli altri linguaggi specifici di dominio che si desidera usare nuovamente.
 
      \- oppure -
 
--   Se un'estensione di Visual Studio che usa l'estensione di file è stato completamente installata nel computer, disinstallarlo. Nel **degli strumenti** menu, fare clic su **gestore estensioni del**.
+- Se un'estensione di Visual Studio che usa l'estensione di file è stato completamente installata nel computer, disinstallarlo. Nel **degli strumenti** menu, fare clic su **gestore estensioni del**.
 
 ### <a name="product-settings-page"></a>Pagina delle impostazioni di prodotto
  **Che cos'è il nome del prodotto a cui appartiene il nuovo linguaggio specifico di dominio?**

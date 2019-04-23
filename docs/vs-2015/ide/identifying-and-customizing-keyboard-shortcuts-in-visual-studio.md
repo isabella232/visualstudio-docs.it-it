@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056068"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,48 +52,48 @@ ms.locfileid: "54798987"
 > [!NOTE]
 >  In base alle impostazioni e all'edizione di Visual Studio, i nomi e le pozioni dei comandi dei menu e le opzioni visualizzate nelle finestre di dialogo possono variare. Questo argomento è basato su **Impostazioni generali per lo sviluppo**.
 
-##  <a name="bkmk_identify"></a> Identificazione di un tasto di scelta rapida
+## <a name="bkmk_identify"></a> Identificazione di un tasto di scelta rapida
 
-1.  Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
 
-2.  Espandere **Ambiente**, quindi scegliere **Tastiera**.
+2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
      ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
+3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
      Ad esempio, sono disponibili comandi per **solutionexplorer**.
 
-4.  Scegliere il comando corretto nell'elenco.
+4. Scegliere il comando corretto nell'elenco.
 
      Ad esempio, è possibile scegliere **View.SolutionExplorer**.
 
-5.  Se al comando è associato un tasto di scelta rapida, verrà visualizzato nell'elenco **Tasti di scelta rapida per comando selezionato**.
+5. Se al comando è associato un tasto di scelta rapida, verrà visualizzato nell'elenco **Tasti di scelta rapida per comando selezionato**.
 
      ![Visualizzare un tasto di scelta rapida per un comando specifico](../ide/media/viewshortcut.png "ViewShortcut")
 
-##  <a name="bkmk_assign"></a> Personalizzazione di un tasto di scelta rapida
+## <a name="bkmk_assign"></a> Personalizzazione di un tasto di scelta rapida
 
-1.  Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
 
-2.  Espandere la cartella **Ambiente** e scegliere **Tastiera**.
+2. Espandere la cartella **Ambiente** e scegliere **Tastiera**.
 
      ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
+3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
      Ad esempio, sono disponibili comandi per **solutionexplorer**.
 
-4.  Nell'elenco scegliere il comando a cui si desidera assegnare un tasto di scelta rapida.
+4. Nell'elenco scegliere il comando a cui si desidera assegnare un tasto di scelta rapida.
 
-5.  Nell'elenco **Usa nuova combinazione in** scegliere l'area di funzionalità in cui verrà usato il tasto di scelta rapida.
+5. Nell'elenco **Usa nuova combinazione in** scegliere l'area di funzionalità in cui verrà usato il tasto di scelta rapida.
 
      Ad esempio, scegliere **Globale** se il tasto di scelta rapida deve funzionare in tutti i contesti. È possibile utilizzare qualsiasi tasto di scelta rapida non mappato come globale in un altro editor. In caso contrario, la specifica dell'editor avrà la precedenza.
 
     > [!NOTE]
     >  Non è possibile assegnare i seguenti tasti come tasti di scelta rapida in **Globale**: STAMP/RSIST, BLOC SCORR, PAUSA/INTERR, TAB, BLOC MAIUSC, INS, HOME, FINE, PGSU, PGGIÙ, il tasto logo di Windows, il tasto MENU SCELTA RAPIDA, i tasti Freccia oppure INVIO; BLOC NUM, CANC o CANC sul tastierino numerico oppure la combinazione CTRL+ALT+CANC.
 
-6.  Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
+6. Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 
     > [!NOTE]
     >  È possibile creare un tasto di scelta rapida che combina una lettera e il tasto ALT, il tasto CTRL oppure entrambi. È inoltre possibile creare un tasto di scelta rapida che combina il tasto MAIUSC e una lettera e il tasto ALT, il tasto CTRL oppure entrambi.
@@ -102,45 +102,45 @@ ms.locfileid: "54798987"
 
      ![Specificare un tasto di scelta rapida diverso per un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
 
-7.  Scegliere il pulsante **Assegna**.
+7. Scegliere il pulsante **Assegna**.
 
     > [!NOTE]
     >  Se si specifica un tasto di scelta rapida diverso per un comando, scegliere il pulsante **Assegna** e quindi il pulsante **Annulla**. La finestra di dialogo si chiude, ma la modifica non viene ripristinata.
 
-##  <a name="bkmk_transfer"></a> Condivisione di tasti di scelta rapida personalizzati
+## <a name="bkmk_transfer"></a> Condivisione di tasti di scelta rapida personalizzati
  È possibile condividere i tasti di scelta rapida personalizzati esportandoli in un file e quindi fornendo il file ad altri utenti in modo che possano importare i dati.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Per esportare solo i tasti di scelta rapida
 
-1.  Nella barra dei menu scegliere **Strumenti**, **Importa/Esporta impostazioni**.
+1. Nella barra dei menu scegliere **Strumenti**, **Importa/Esporta impostazioni**.
 
-2.  Scegliere **Esporta le impostazioni di ambiente selezionate**, quindi fare clic sul pulsante **Avanti**.
+2. Scegliere **Esporta le impostazioni di ambiente selezionate**, quindi fare clic sul pulsante **Avanti**.
 
-3.  In **Quali impostazioni si desidera esportare?** deselezionare la casella di controllo **Tutte le impostazioni**, espandere **Opzioni** e quindi **Ambiente**.
+3. In **Quali impostazioni si desidera esportare?** deselezionare la casella di controllo **Tutte le impostazioni**, espandere **Opzioni** e quindi **Ambiente**.
 
-4.  Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Avanti**.
+4. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Avanti**.
 
      ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png "ExportShortcuts")
 
-5.  Nelle caselle **Assegnare un nome al file di impostazioni?** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
+5. Nelle caselle **Assegnare un nome al file di impostazioni?** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
 
      Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella %USERPROFILE%\Documents\Visual Studio 2013\Settings. Il nome del file riflette la data in cui sono state esportate le impostazioni e l'estensione è .vssettings.
 
 #### <a name="to-import-only-keyboard-shortcuts"></a>Per importare solo i tasti di scelta rapida
 
-1.  Nella barra dei menu scegliere **Strumenti**, **Importa/Esporta impostazioni**.
+1. Nella barra dei menu scegliere **Strumenti**, **Importa/Esporta impostazioni**.
 
-2.  Selezionare il pulsante di opzione **Importa le impostazioni di ambiente selezionate**, quindi fare clic sul pulsante **Avanti**.
+2. Selezionare il pulsante di opzione **Importa le impostazioni di ambiente selezionate**, quindi fare clic sul pulsante **Avanti**.
 
-3.  Scegliere il pulsante di opzione **No, importa soltanto le nuove impostazioni, sovrascrivendo le impostazioni correnti**, quindi il pulsante **Avanti**.
+3. Scegliere il pulsante di opzione **No, importa soltanto le nuove impostazioni, sovrascrivendo le impostazioni correnti**, quindi il pulsante **Avanti**.
 
-4.  In **Impostazioni personali** scegliere il file contenente i tasti di scelta rapida da importare o scegliere il pulsante **Sfoglia** per individuare il file corretto.
+4. In **Impostazioni personali** scegliere il file contenente i tasti di scelta rapida da importare o scegliere il pulsante **Sfoglia** per individuare il file corretto.
 
-5.  Fare clic su **Avanti**.
+5. Fare clic su **Avanti**.
 
-6.  In **Quali impostazioni si desidera importare?** deselezionare la casella di controllo **Tutte le impostazioni**, espandere **Opzioni**, quindi **Ambiente**.
+6. In **Quali impostazioni si desidera importare?** deselezionare la casella di controllo **Tutte le impostazioni**, espandere **Opzioni**, quindi **Ambiente**.
 
-7.  Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Fine**.
+7. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Fine**.
 
      ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png "ImportShortcuts")
 

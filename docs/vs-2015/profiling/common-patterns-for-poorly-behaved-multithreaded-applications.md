@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050115"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Il visualizzatore di concorrenza consente agli sviluppatori di visualizzare il c
   
  Come illustrato nella figura seguente, il visualizzatore di concorrenza può esporre questo sintomo anche nella visualizzazione Utilizzo CPU, dove è evidente che, nonostante la presenza di più thread, l'applicazione utilizza un solo core logico.  
   
- Per altre informazioni, vedere "Performance Pattern 1: Identifying Lock Contention" (Modello di prestazioni 1: identificazione dei conflitti di blocco) nel blog di Hazim Shafi [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Strumenti per le prestazioni in parallelo per Windows) nel sito Web dei blog di MSDN.  
+ Per altre informazioni, vedere "Performance Pattern 1: Identificare i conflitti di blocco"nella Hazim Shafi [Parallel Performance Tools per Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blog sul sito Web del blog MSDN.  
   
  ![Conflitti di blocco](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -52,9 +52,9 @@ Il visualizzatore di concorrenza consente agli sviluppatori di visualizzare il c
   
  Quando si valuta questo problema è opportuno considerare quanto segue:  
   
--   Potrebbe essersi verificata l'oversubscription di tutto il sistema. Prendere in considerazione la possibilità che altri processi nel sistema abbiano assunto la precedenza sui thread in questione. Quando si sofferma il mouse su un segmento di precedenza nella visualizzazione Thread, un tooltip identifica il thread e il processo che ha assunto la precedenza su di esso. Quest'ultimo può non essere l'unico ad essere stato eseguito durante l'intero periodo di esecuzione del processo che interessa, ma rappresenta un indizio di ciò che ha creato la pressione di precedenza su di esso.  
+- Potrebbe essersi verificata l'oversubscription di tutto il sistema. Prendere in considerazione la possibilità che altri processi nel sistema abbiano assunto la precedenza sui thread in questione. Quando si sofferma il mouse su un segmento di precedenza nella visualizzazione Thread, un tooltip identifica il thread e il processo che ha assunto la precedenza su di esso. Quest'ultimo può non essere l'unico ad essere stato eseguito durante l'intero periodo di esecuzione del processo che interessa, ma rappresenta un indizio di ciò che ha creato la pressione di precedenza su di esso.  
   
--   Valutare in che modo il processo determina il numero di thread appropriato per l'esecuzione durante questa fase di lavoro. Se il processo calcola direttamente il numero di thread paralleli attivi, è consigliabile considerare la possibilità di modificare l'algoritmo corrispondente per tener conto in modo più efficiente del numero di core logici disponibili nel sistema. Se si usa il runtime di concorrenza, la Task Parallel Library o PLINQ, il calcolo del numero di thread viene eseguito da queste librerie.  
+- Valutare in che modo il processo determina il numero di thread appropriato per l'esecuzione durante questa fase di lavoro. Se il processo calcola direttamente il numero di thread paralleli attivi, è consigliabile considerare la possibilità di modificare l'algoritmo corrispondente per tener conto in modo più efficiente del numero di core logici disponibili nel sistema. Se si usa il runtime di concorrenza, la Task Parallel Library o PLINQ, il calcolo del numero di thread viene eseguito da queste librerie.  
   
 ## <a name="inefficient-io"></a>I/O inefficiente  
  ![I&#47;O inefficiente](../profiling/media/inefficient-io.png "Inefficient_IO")  

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059444"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare un ruolo per un servizio cloud di Azure con Visual Studio
 Un servizio cloud di Azure può includere uno o più ruoli di lavoro o ruoli Web. Per ogni ruolo è necessario definire la modalità di configurazione e configurare la modalità di esecuzione. Per altre informazioni sui ruoli nei servizi cloud, vedere il video [Introduzione ai servizi cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -259,7 +259,7 @@ Il codice seguente è un esempio di come scrivere un file di testo in una risors
 
 Per visualizzare il file creato dal codice nella sezione precedente, seguire questa procedura:
 
-1.  Nell'area di notifica di Windows, fare clic con il pulsante destro del mouse sull'icona di Azure e, dal menu di scelta rapida, selezionare **Show Compute Emulator UI** (Mostra interfaccia utente dell'emulatore di calcolo).
+1. Nell'area di notifica di Windows, fare clic con il pulsante destro del mouse sull'icona di Azure e, dal menu di scelta rapida, selezionare **Show Compute Emulator UI** (Mostra interfaccia utente dell'emulatore di calcolo).
 
     ![Mostra emulatore di calcolo di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

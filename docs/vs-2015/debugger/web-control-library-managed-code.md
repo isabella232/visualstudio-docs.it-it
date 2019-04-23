@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047098"
 ---
 # <a name="web-control-library-managed-code"></a>Libreria di controlli Web (Codice gestito)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,25 +31,25 @@ Il modello di progetto Libreria di controlli Web consente di creare una DLL. Poi
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Per eseguire il debug di una libreria di controlli Web (procedura 1)  
   
-1.  Aprire un progetto Libreria di controlli Web esistente o crearne uno nuovo.  
+1. Aprire un progetto Libreria di controlli Web esistente o crearne uno nuovo.  
   
-2.  Creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in cui sia incorporato il controllo.  
+2. Creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in cui sia incorporato il controllo.  
   
-3.  Nel sito Web che ospita il test harness di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] creare una sottodirectory denominata `/Code`.  
+3. Nel sito Web che ospita il test harness di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] creare una sottodirectory denominata `/Code`.  
   
-4.  Copiare il codice sorgente del controllo nella sottodirectory `/Code`.  
+4. Copiare il codice sorgente del controllo nella sottodirectory `/Code`.  
   
-5.  Aprire il codice sorgente nella sottodirectory `/Code` e impostare i punti di interruzione.  
+5. Aprire il codice sorgente nella sottodirectory `/Code` e impostare i punti di interruzione.  
   
-6.  Aprire una finestra del browser con un URL che punta al test harness. Quando verrà raggiunto un punto di interruzione nel controllo sarà possibile iniziare il debug.  
+6. Aprire una finestra del browser con un URL che punta al test harness. Quando verrà raggiunto un punto di interruzione nel controllo sarà possibile iniziare il debug.  
   
 ### <a name="to-debug-a-web-control-library-method-2"></a>Eseguire il debug di una libreria di controlli Web (il metodo 2)  
   
-1.  Creare il progetto dell'applicazione host e il progetto del controllo Web nella stessa soluzione.  
+1. Creare il progetto dell'applicazione host e il progetto del controllo Web nella stessa soluzione.  
   
-2.  Nelle **Esplora soluzioni**, fare doppio clic su applicazione host e scegliere **Aggiungi riferimento**.  
+2. Nelle **Esplora soluzioni**, fare doppio clic su applicazione host e scegliere **Aggiungi riferimento**.  
   
-3.  Aggiungere un riferimento al progetto del controllo Web.  
+3. Aggiungere un riferimento al progetto del controllo Web.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Applicazioni Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)

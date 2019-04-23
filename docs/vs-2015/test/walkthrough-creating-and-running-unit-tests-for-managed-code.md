@@ -14,14 +14,14 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058889"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come creare, eseguire e personalizzare una serie di unit test usando il framework di unit test di Microsoft per il codice gestito ed Esplora test di Visual Studio. Verrà illustrato prima di tutto il progetto C# in fase di sviluppo, quindi saranno creati i test in cui verrà usato il codice e saranno esaminati i risultati. Sarà infine possibile modificare il codice del progetto ed eseguire nuovamente i test.  
@@ -54,9 +54,9 @@ Questa procedura dettagliata illustra come creare, eseguire e personalizzare una
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
--   Il progetto Bank. Vedere [Progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md).  
+- Il progetto Bank. Vedere [Progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Preparare la procedura dettagliata  
+## <a name="BKMK_Prepare_the_walkthrough"></a> Preparare la procedura dettagliata  
   
 1. Aprire Visual Studio.  
   
@@ -107,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Creare un progetto di unit test  
- **Prerequisito**: seguire la routine [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+## <a name="BKMK_Create_a_unit_test_project"></a> Creare un progetto di unit test  
+ **Prerequisiti**: Seguire i passaggi nella procedura [preparare la procedura dettagliata](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Per creare un progetto di unit test  
   
-1.  Scegliere **Aggiungi** dal menu **File**, quindi **Nuovo progetto**.  
+1. Scegliere **Aggiungi** dal menu **File**, quindi **Nuovo progetto**.  
   
-2.  Nella finestra di dialogo Nuovo progetto espandere **Installato**, **Visual C#**, quindi scegliere **Test**.  
+2. Nella finestra di dialogo Nuovo progetto espandere **Installato**, **Visual C#**, quindi scegliere **Test**.  
   
-3.  Nell'elenco dei modelli selezionare **Progetto unit test**.  
+3. Nell'elenco dei modelli selezionare **Progetto unit test**.  
   
-4.  Nella casella **Nome** immettere BankTest, quindi scegliere **OK**.  
+4. Nella casella **Nome** immettere BankTest, quindi scegliere **OK**.  
   
      Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.  
   
-5.  Nel progetto **BankTests** aggiungere un riferimento alla soluzione **Bank** .  
+5. Nel progetto **BankTests** aggiungere un riferimento alla soluzione **Bank** .  
   
      In Esplora soluzioni selezionare **Riferimenti** nel progetto **BankTests** , quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
   
-6.  Nella finestra di dialogo Gestione riferimenti espandere **Soluzione** , quindi selezionare l'elemento **Bank** .  
+6. Nella finestra di dialogo Gestione riferimenti espandere **Soluzione** , quindi selezionare l'elemento **Bank** .  
   
-##  <a name="BKMK_Create_the_test_class"></a> Creare la classe di test  
+## <a name="BKMK_Create_the_test_class"></a> Creare la classe di test  
  È necessaria una classe di test per verificare la classe `BankAccount` . È possibile usare UnitTest1.cs generato dal modello del progetto, ma è necessario fornire nomi più descrittivi per il file e la classe. È possibile eseguire questa operazione in un unico passaggio rinominando il file in Esplora soluzioni.  
   
  **Ridenominazione di un file di classe**  
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Requisiti della classe di test  
+### <a name="BKMK_Test_class_requirements"></a> Requisiti della classe di test  
  I requisiti minimi per una classe di test sono i seguenti:  
   
 - L'attributo `[TestClass]` è obbligatorio nel framework per unit test di Microsoft per il codice gestito per qualsiasi classe che contiene metodi di unit test che si desidera eseguire in Esplora test.  
@@ -172,12 +172,12 @@ using BankAccountNS;
   
   È possibile avere altre classi in un progetto di unit test che non presentano l'attributo `[TestClass]` ed è possibile avere altri metodi nelle classi di test che non presentano l'attributo `[TestMethod]` . È possibile usare questi altri metodi e classi nei metodi di test.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Creare il primo metodo di test  
+## <a name="BKMK_Create_the_first_test_method"></a> Creare il primo metodo di test  
  In questa routine viene illustrato come scrivere i metodi di unit test per verificare il comportamento del metodo `Debit` della classe `BankAccount` . Il metodo è elencato sopra.  
   
  Analizzando il metodo sottoposto a test, si determina che esistono almeno tre comportamenti che devono essere controllati:  
   
-1. Il metodo genera un oggetto [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) se la quantità di debito è superiore al saldo.  
+1. Il metodo genera [un'eccezione ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) se la quantità di debito è superiore al saldo.  
   
 2. Genera `ArgumentOutOfRangeException` anche se la quantità di debito è minore di zero.  
   
@@ -213,28 +213,28 @@ using BankAccountNS;
   
    Il metodo è piuttosto semplice. Verrà configurato un nuovo oggetto `BankAccount` con un saldo iniziale e quindi verrà prelevato un importo valido. Verrà usato il framework di unit test di Microsoft per il codice gestito dal metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> per verificare che il saldo finale sia quello previsto.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Requisiti del metodo di test  
+### <a name="BKMK_Test_method_requirements"></a> Requisiti del metodo di test  
  Un metodo di test deve soddisfare i seguenti requisiti:  
   
--   Il metodo deve essere provvisto dell'attributo `[TestMethod]` .  
+- Il metodo deve essere provvisto dell'attributo `[TestMethod]` .  
   
--   Il metodo deve restituire `void`.  
+- Il metodo deve restituire `void`.  
   
--   Il metodo non può avere parametri.  
+- Il metodo non può avere parametri.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Compilare ed eseguire il test  
+## <a name="BKMK_Build_and_run_the_test"></a> Compilare ed eseguire il test  
   
 #### <a name="to-build-and-run-the-test"></a>Per compilare ed eseguire il test  
   
-1.  Scegliere **Compila soluzione** dal menu **Compila**.  
+1. Scegliere **Compila soluzione** dal menu **Compila**.  
   
      Se non sono presenti errori, la finestra di UnitTestExplorer viene visualizzata con **Debit_WithValidAmount_UpdatesBalance** visualizzato nel gruppo **Test non eseguiti** . Se Esplora test non viene visualizzato al termine di una compilazione corretta, scegliere **Test** dal menu, quindi scegliere **Windows**e infine  **Esplora test**.  
   
-2.  Scegliere **Esegui tutto** per eseguire il test. Mentre il test è in esecuzione, la barra di stato nella parte superiore della finestra viene animata. Al termine del test, la barra diventa verde se tutti i metodi di test vengono superati oppure rossa se almeno uno dei test ha esito negativo.  
+2. Scegliere **Esegui tutto** per eseguire il test. Mentre il test è in esecuzione, la barra di stato nella parte superiore della finestra viene animata. Al termine del test, la barra diventa verde se tutti i metodi di test vengono superati oppure rossa se almeno uno dei test ha esito negativo.  
   
-3.  In questo caso, il test non riesce. Il metodo di test viene spostato nel gruppo **Test non superati** . Selezionare il metodo in Esplora test per visualizzare i dettagli nella parte inferiore della finestra.  
+3. In questo caso, il test non riesce. Il metodo di test viene spostato nel gruppo **Test non superati** . Selezionare il metodo in Esplora test per visualizzare i dettagli nella parte inferiore della finestra.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Correggere il codice e rieseguire i test  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Correggere il codice e rieseguire i test  
  **Analizzare i risultati dei test**  
   
  Il risultato del test contiene un messaggio che descrive l'errore. Per il metodo `AreEquals`, il messaggio visualizza il contenuto previsto (il parametro (<strong>\<*XXX*></strong> previsto) e ciò che è stato ricevuto (il parametro **\<*YYY*>** effettivo). Si prevedeva che il saldo venisse detratto dal saldo iniziale, ma è stato invece aumentato dell'importo del prelievo.  
@@ -259,7 +259,7 @@ m_balance -= amount;
   
  In Esplora test scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde e il test viene spostato nel gruppo **Test superati** .  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Usare gli unit test per migliorare il codice  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Usare gli unit test per migliorare il codice  
  In questa sezione viene descritto come un processo iterativo di analisi, di sviluppo di unit test e di refactoring può aiutare a rendere il codice di produzione più affidabile ed efficace.  
   
  **Analizzare i problemi**  

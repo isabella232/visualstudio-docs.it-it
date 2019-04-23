@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 770564291870095e55dcc3de2fdb555aaebf6a2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: fc8c29ae4d146a0ec66a362fd6fb99251d726906
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056055"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
 
@@ -40,27 +40,27 @@ Questa procedura dettagliata crea un controllo di ricerca che effettua l'associa
 
 Durante questa procedura dettagliata si apprenderà come:
 
--   Creare una nuova applicazione **Windows Forms Application**.
+- Creare una nuova applicazione **Windows Forms Application**.
 
--   Aggiungere un nuovo **controllo utente** al progetto.
+- Aggiungere un nuovo **controllo utente** al progetto.
 
--   Progettare visivamente il controllo utente.
+- Progettare visivamente il controllo utente.
 
--   Implementare l'attributo `LookupBindingProperty`.
+- Implementare l'attributo `LookupBindingProperty`.
 
--   Creare un set di dati con il **configurazione dell'origine dati** procedura guidata.
+- Creare un set di dati con il **configurazione dell'origine dati** procedura guidata.
 
--   Impostare la colonna **CustomerID** nella tabella **Orders** della finestra **Origini dati** per usare il nuovo controllo.
+- Impostare la colonna **CustomerID** nella tabella **Orders** della finestra **Origini dati** per usare il nuovo controllo.
 
--   Creare un form per visualizzare i dati nel controllo.
+- Creare un form per visualizzare i dati nel controllo.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
 
-1.  Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
+1. Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
 
-2.  Installare il database di esempio Northwind seguendo questa procedura:
+2. Installare il database di esempio Northwind seguendo questa procedura:
 
     1. In Visual Studio, aprire il **Esplora oggetti di SQL Server** finestra. (Esplora oggetti di SQL Server viene installato come parte di **elaborazione ed archiviazione dati** carico di lavoro in Visual Studio Installer.) Espandere la **SQL Server** nodo. Fare doppio clic sull'istanza di Local DB e selezionare **nuova Query**.
 
@@ -78,7 +78,7 @@ Il primo passaggio consiste nel creare un **Windows Forms Application** progetto
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 
@@ -90,9 +90,9 @@ Il primo passaggio consiste nel creare un **Windows Forms Application** progetto
 
 Dal momento che questa procedura dettagliata crea un controllo di ricerca da un **Controllo utente**, è necessario aggiungere un elemento **Controllo utente** al progetto **LookupControlWalkthrough**.
 
-1.  Selezionare **Aggiungi controllo utente** dal menu **Progetto**.
+1. Selezionare **Aggiungi controllo utente** dal menu **Progetto**.
 
-2.  Tipo `LookupBox` nella **Name** area e quindi fare clic su **Add**.
+2. Tipo `LookupBox` nella **Name** area e quindi fare clic su **Add**.
 
      Il controllo **LookupBox** viene aggiunto a **Esplora soluzioni** e si apre nella finestra di progettazione.
 
@@ -104,38 +104,38 @@ Per progettare il controllo LookupBox, trascinare un <xref:System.Windows.Forms.
 
 Per controlli di ricerca che supportano il data binding, è possibile implementare l'attributo <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1.  Passare al controllo **LookupBox** per la visualizzazione del codice. Scegliere **Codice** dal menu **Visualizza**.
+1. Passare al controllo **LookupBox** per la visualizzazione del codice. Scegliere **Codice** dal menu **Visualizza**.
 
-2.  Sostituire il codice nel controllo `LookupBox` con la stringa seguente:
+2. Sostituire il codice nel controllo `LookupBox` con la stringa seguente:
 
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3.  Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione** dal menu **Compila**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
 Questo passaggio crea un'origine dati usando la **Configurazione guidata origine dati** basata sulle tabelle `Customers` e `Orders` nel database di esempio Northwind.
 
-1.  Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
+1. Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
 
-2.  Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3.  Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
+3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
-4.  Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
+4. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
-    -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
+    - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
+    - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
-5.  Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
+5. Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
 
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
+6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
 
-7.  Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
+7. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
-8.  Selezionare le tabelle `Customers` e `Orders`, quindi fare clic su **Fine**.
+8. Selezionare le tabelle `Customers` e `Orders`, quindi fare clic su **Fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle `Customers` e `Orders` vengono visualizzate nella finestra **Origini dati**.
 
@@ -143,21 +143,21 @@ Questo passaggio crea un'origine dati usando la **Configurazione guidata origine
 
 Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel modulo.
 
-1.  Aprire **Form1** nella finestra di progettazione.
+1. Aprire **Form1** nella finestra di progettazione.
 
-2.  Espandere il nodo **Customers** nella finestra **Origini dati**.
+2. Espandere il nodo **Customers** nella finestra **Origini dati**.
 
-3.  Espandere il nodo **Orders** (nel nodo **Customers** sotto la colonna **Fax**).
+3. Espandere il nodo **Orders** (nel nodo **Customers** sotto la colonna **Fax**).
 
-4.  Fare clic sulla freccia a discesa nel nodo **Orders** e scegliere **Dettagli** dall'elenco di controllo.
+4. Fare clic sulla freccia a discesa nel nodo **Orders** e scegliere **Dettagli** dall'elenco di controllo.
 
-5.  Fare clic sulla freccia a discesa nella colonna **CustomerID** (nel nodo **Orders**) e scegliere **Personalizza**.
+5. Fare clic sulla freccia a discesa nella colonna **CustomerID** (nel nodo **Orders**) e scegliere **Personalizza**.
 
-6.  Selezionare **LookupBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.
+6. Selezionare **LookupBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.
 
-7.  Fare clic su **OK**.
+7. Fare clic su **OK**.
 
-8.  Fare clic sulla freccia a discesa nella colonna **CustomerID** e scegliere **LookupBox**.
+8. Fare clic sulla freccia a discesa nella colonna **CustomerID** e scegliere **LookupBox**.
 
 ## <a name="add-controls-to-the-form"></a>Aggiungere controlli al form
 
@@ -173,9 +173,9 @@ Viene in questo modo impostato il data binding per visualizzare `CompanyName` da
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
--   Premere **F5** per eseguire l'applicazione.
+- Premere **F5** per eseguire l'applicazione.
 
--   Spostarsi all'interno di alcuni record e verificare che `CompanyName` venga mostrato nel controllo `LookupBox`.
+- Spostarsi all'interno di alcuni record e verificare che `CompanyName` venga mostrato nel controllo `LookupBox`.
 
 ## <a name="see-also"></a>Vedere anche
 

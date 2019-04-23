@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 694146672659d0a4370431040e84089088464f81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044290"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Le notifiche e avanzamento per Visual Studio
-##  <a name="BKMK_NotificationSystems"></a> Sistemi di notifica
+## <a name="BKMK_NotificationSystems"></a> Sistemi di notifica
 
 ### <a name="overview"></a>Panoramica
  Esistono diversi modi per informare l'utente di ciò che accade in Visual Studio riguardanti le attività di sviluppo software.
 
  Quando si implementa alcun tipo di notifica:
 
--   **Mantenere il numero di notifiche al minimo** numero effettivo. I messaggi di notifica devono applicare alla maggior parte degli utenti di Visual Studio o agli utenti di un'area di funzionalità o la funzionalità specifiche. Un uso eccessivo di notifiche potrà sidetrack l'utente o confutano percepito la facilità di utilizzo del sistema.
+- **Mantenere il numero di notifiche al minimo** numero effettivo. I messaggi di notifica devono applicare alla maggior parte degli utenti di Visual Studio o agli utenti di un'area di funzionalità o la funzionalità specifiche. Un uso eccessivo di notifiche potrà sidetrack l'utente o confutano percepito la facilità di utilizzo del sistema.
 
--   **Assicurarsi che si intende presentare chiare e utili messaggi** che l'utente può usare per richiamare il contesto appropriato per effettuare le scelte più complesse ed eseguire altre azioni.
+- **Assicurarsi che si intende presentare chiare e utili messaggi** che l'utente può usare per richiamare il contesto appropriato per effettuare le scelte più complesse ed eseguire altre azioni.
 
--   **Presentare in modo appropriato i messaggi sincroni e asincroni.** Le notifiche sincrone indicano che un elemento richiede attenzione immediata, ad esempio quando si blocca un servizio web o un codice di eccezione. L'utente dovrebbe essere informato di questi casi immediatamente in modo che richiede l'input, ad esempio in una finestra di dialogo modale. Notifiche asincrone sono quelle che l'utente dovrebbe conoscere, ma non verrà richiesto di intervenire immediatamente, ad esempio quando viene completata un'operazione di compilazione o una distribuzione di siti web viene completata. Tali messaggi devono essere più ambiente e non interrompere il flusso di attività dell'utente.
+- **Presentare in modo appropriato i messaggi sincroni e asincroni.** Le notifiche sincrone indicano che un elemento richiede attenzione immediata, ad esempio quando si blocca un servizio web o un codice di eccezione. L'utente dovrebbe essere informato di questi casi immediatamente in modo che richiede l'input, ad esempio in una finestra di dialogo modale. Notifiche asincrone sono quelle che l'utente dovrebbe conoscere, ma non verrà richiesto di intervenire immediatamente, ad esempio quando viene completata un'operazione di compilazione o una distribuzione di siti web viene completata. Tali messaggi devono essere più ambiente e non interrompere il flusso di attività dell'utente.
 
--   **Usare le finestre di dialogo modale solo quando necessario, per impedire all'utente di eseguire altre azioni** prima di riconoscere il messaggio o prendere una decisione presentata nella finestra di dialogo.
+- **Usare le finestre di dialogo modale solo quando necessario, per impedire all'utente di eseguire altre azioni** prima di riconoscere il messaggio o prendere una decisione presentata nella finestra di dialogo.
 
--   **Rimuovere notifiche ambiente quando non sono più validi.** Non richiedono all'utente di eliminare una notifica se già adottate azioni per risolvere il problema che sono stati informati.
+- **Rimuovere notifiche ambiente quando non sono più validi.** Non richiedono all'utente di eliminare una notifica se già adottate azioni per risolvere il problema che sono stati informati.
 
--   **Tenere presente che le notifiche possono causare false correlazioni.** Gli utenti potrebbero ritenere che uno o più delle loro azioni è attivata una notifica quando in realtà non esiste alcuna relazione causale con. Essere chiaro nel messaggio di notifica sul contesto, il trigger e l'origine della notifica.
+- **Tenere presente che le notifiche possono causare false correlazioni.** Gli utenti potrebbero ritenere che uno o più delle loro azioni è attivata una notifica quando in realtà non esiste alcuna relazione causale con. Essere chiaro nel messaggio di notifica sul contesto, il trigger e l'origine della notifica.
 
 ### <a name="choosing-the-right-method"></a>Scelta del metodo
  Usare questa tabella per agevolare la scelta del metodo per notificare all'utente del messaggio.
@@ -55,14 +55,14 @@ ms.locfileid: "56683168"
 
 ### <a name="notification-methods"></a>Metodi di notifica
 
-####  <a name="BKMK_ModalErrorMessageDialogs"></a> Finestre di dialogo di errore modale messaggio
+#### <a name="BKMK_ModalErrorMessageDialogs"></a> Finestre di dialogo di errore modale messaggio
  Una finestra di dialogo di errore modale messaggio utilizzato per visualizzare un messaggio di errore che richiede la conferma dell'utente o un'azione.
 
  ![Messaggio di errore modale](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901 01_ModalErrorMessage")
 
  **Una finestra di messaggio di errore modale avvisa l'utente di una stringa di connessione non è valido in un database**
 
-####  <a name="BKMK_IDEStatusBar"></a> Barra di stato dell'IDE
+#### <a name="BKMK_IDEStatusBar"></a> Barra di stato dell'IDE
  La probabilità che gli utenti si noti che il testo della barra di stato è correlata ai propri computer versatile degli utenti e l'esperienza specifica con la piattaforma Windows. La base clienti di Visual Studio tende a essere esperti in entrambi i casi, anche se competente anche agli utenti di Windows potrebbero mancare alcune delle modifiche nella barra di stato. Pertanto, la barra di stato è più adatta per scopi informativi o come un segnale ridondante per le informazioni presentate in un' posizione. In una finestra di dialogo o nella finestra degli strumenti delle notifiche, è necessario specificare qualsiasi tipo di informazioni critiche che l'utente deve essere risolto immediatamente.
 
  La barra di stato di Visual Studio è progettata per consentire diversi tipi di informazioni da visualizzare. È suddiviso in aree geografiche per commenti e suggerimenti, finestra di progettazione, indicatore di stato, animazione e client.
@@ -75,24 +75,24 @@ ms.locfileid: "56683168"
 
  **Colori della barra di stato dell'IDE**
 
-####  <a name="BKMK_EmbeddedInfobar"></a> Barra informazioni incorporata
+#### <a name="BKMK_EmbeddedInfobar"></a> Barra informazioni incorporata
  Una barra informazioni è utilizzabile nella parte superiore di una finestra del documento o una finestra degli strumenti per informare l'utente di uno stato o una condizione. Può anche offrire i comandi in modo che l'utente può avere un modo per effettuare con facilità un'azione. La barra informazioni è un controllo standard della shell. Evitare di creare il proprio, che verrà funzionare e non corrispondere a quelli di altri utenti nell'IDE. Visualizzare [barre informazioni](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) per i dettagli di implementazione e linee guida sull'uso.
 
  ![Embedded infobar](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901-03_EmbeddedInfobar")
 
  **Una barra informazioni incorporata in una finestra del documento, avvisa l'utente che l'IDE è in modalità debug cronologico e l'editor non risponderà esattamente come avviene in modalità di debug standard.**
 
-####  <a name="BKMK_MouseCursorChanges"></a> Modifiche del cursore del mouse
+#### <a name="BKMK_MouseCursorChanges"></a> Modifiche del cursore del mouse
  Quando si modifica il cursore del mouse, utilizzare i colori che sono associati a VSColor service e sono già associate con il cursore. Cursore cambia può essere utilizzato per indicare un'operazione in corso, nonché premere zone in cui l'utente si posiziona su una destinazione che può essere trascinata, rilasciata in o utilizzata per selezionare un oggetto.
 
  Usare il cursore del mouse occupato/attesa solo quando tutto il tempo della CPU disponibile deve essere riservato per un'operazione, impedendo all'utente di esprimere qualsiasi ulteriore input. Nella maggior parte dei casi con le applicazioni ben scritte tramite il multithreading, devono essere rare volte quando agli utenti viene impedito di eseguire altre operazioni.
 
  Tenere presente che le modifiche cursore sono utili quando un segnale ridondante per le informazioni presentate in un' posizione. Non fare affidamento su una modifica di cursore come modalità esclusiva di comunicare con l'utente in particolare quando si desidera comunicare qualcosa che è fondamentale che l'utente deve soddisfare.
 
-####  <a name="BKMK_NotSysProgressIndicators"></a> Indicatori di stato
+#### <a name="BKMK_NotSysProgressIndicators"></a> Indicatori di stato
  Gli indicatori di stato sono importanti per fornire il feedback utente durante processi che hanno più di pochi secondi per il completamento. È possibile visualizzare gli indicatori di stato sul posto (quasi il punto di avvio dell'azione in corso), in una barra di stato incorporato, nella finestra di dialogo modale o nella barra di stato di Visual Studio. Seguire le indicazioni fornite in [gli indicatori di stato](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) relative all'uso e l'implementazione.
 
-####  <a name="BKMK_VSNotificationsToolWindow"></a> Finestra di Visual Studio notifiche
+#### <a name="BKMK_VSNotificationsToolWindow"></a> Finestra di Visual Studio notifiche
  La finestra delle notifiche di Visual Studio notifica gli sviluppatori su licenze, ambiente (Visual Studio), estensioni e aggiornamenti. Gli utenti possono ignorare singole notifiche o possono scegliere di ignorare determinati tipi di notifiche. L'elenco delle notifiche ignorate viene gestito in una **strumenti > Opzioni** pagina.
 
  La finestra delle notifiche non è attualmente estendibile.
@@ -101,33 +101,33 @@ ms.locfileid: "56683168"
 
  **Finestra dello strumento di Visual Studio notifiche**
 
-####  <a name="BKMK_ErrorList"></a> Elenco errori
+#### <a name="BKMK_ErrorList"></a> Elenco errori
  Una notifica all'interno dell'elenco di errore indicano errori e avvisi che si è verificato durante la compilazione e o processo di compilazione e consente all'utente di spostarsi nel codice per tale errore codice specifico.
 
  ![Elenco errori](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901 08_ErrorList")
 
  **Elenco di errori in Visual Studio**
 
-####  <a name="BKMK_EmbeddedStatusBars"></a> Barre di stato incorporato
+#### <a name="BKMK_EmbeddedStatusBars"></a> Barre di stato incorporato
  Poiché la barra di stato dell'IDE è dinamica, con il contesto di area client impostato sulla finestra del documento attivo e informazioni di aggiornamento per il contesto dell'utente e/o le risposte di sistema, è difficile mantenere una visualizzazione continua delle informazioni o fornire lo stato su a lungo termine processi asincroni. Ad esempio, la barra di stato dell'IDE non è appropriata per le notifiche dei risultati di esecuzione dei test per più esecuzioni e/o le selezioni delle voci immediatamente a frutto. È importante mantenere tali informazioni sullo stato nel contesto della finestra di documento o lo strumento in cui l'utente effettua una selezione o avvia un processo.
 
  ![Barra di stato incorporato](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901 09_EmbeddedStatusBar")
 
  **Barra di stato incorporato in Visual Studio**
 
-####  <a name="BKMK_WindowsTray"></a> Notifiche sulla barra delle applicazioni di Windows
+#### <a name="BKMK_WindowsTray"></a> Notifiche sulla barra delle applicazioni di Windows
  L'area di notifica si trova accanto al sistema di Windows dell'orologio della barra delle applicazioni di Windows. Molti componenti software e utilità forniscono le icone in quest'area, in modo che l'utente può disporre di un menu di scelta rapida per le attività a livello di sistema, ad esempio la modifica risoluzione dello schermo o come ottenere gli aggiornamenti software.
 
  Le notifiche a livello di ambiente devono essere resi visibili nell'hub di notifiche di Visual Studio, non l'area di notifica Windows.
 
-####  <a name="BKMK_NotificationBubbles"></a> Fumetti notifica
+#### <a name="BKMK_NotificationBubbles"></a> Fumetti notifica
  Fumetti notifica possono apparire come informativo all'interno di un editor o la finestra di progettazione o come parte dell'area di notifica di Windows. L'utente visualizza queste bolle come i problemi che consentono di risolvere in un secondo momento, che è un vantaggio per le notifiche non critiche. Bolle non sono adatte per le informazioni critiche che l'utente deve risolvere immediatamente. Se si usa fumetti notifica in Visual Studio, seguire le [linee guida di Windows Desktop per fumetti notifica](/windows/desktop/uxguide/mess-notif).
 
  ![Fumetto della notifica](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901 07_NotificationBubbles")
 
  **Fumetto della notifica nell'area di notifica di Windows usato per Visual Studio**
 
-##  <a name="BKMK_ProgressIndicators"></a> Indicatori di stato
+## <a name="BKMK_ProgressIndicators"></a> Indicatori di stato
 
 ### <a name="overview"></a>Panoramica
  Gli indicatori di stato sono una parte importante di un sistema di notifica per dare all'utente un feedback. L'utente indicano il completamento dei processi e le operazioni. Tipi di indicatori familiare includono indicatori di stato, i cursori di rotazione e icone animate. Il tipo e il posizionamento di un indicatore di stato dipende dal contesto, tra cui quello segnalato e quanto tempo il processo o un'operazione necessari per il completamento.
@@ -135,17 +135,17 @@ ms.locfileid: "56683168"
 #### <a name="factors"></a>Fattori
  Per determinare quale tipo di indicatore è appropriato, è necessario determinare i fattori seguenti.
 
-1.  **Intervallo:** tempo richiederà l'operazione
+1. **Intervallo:** tempo richiederà l'operazione
 
-2.  **Modalità:** indica se l'operazione è modale all'ambiente (blocchi dell'interfaccia utente fino al completamento del processo)
+2. **Modalità:** indica se l'operazione è modale all'ambiente (blocchi dell'interfaccia utente fino al completamento del processo)
 
-3.  **Persistent/temporaneo:** indica se il risultato finale dello stato di avanzamento deve essere segnalato e/o visualizzabile in un secondo momento
+3. **Persistent/temporaneo:** indica se il risultato finale dello stato di avanzamento deve essere segnalato e/o visualizzabile in un secondo momento
 
-4.  **Indicatore/indeterminato:** indica se l'ora di fine operazione e lo stato può essere calcolati
+4. **Indicatore/indeterminato:** indica se l'ora di fine operazione e lo stato può essere calcolati
 
-5.  **Posizione immagine/Textual:** se lo stato di avanzamento o processo è acquisita inline, nel corpo di un messaggio o un controllo specifico, ad esempio il controllo struttura ad albero
+5. **Posizione immagine/Textual:** se lo stato di avanzamento o processo è acquisita inline, nel corpo di un messaggio o un controllo specifico, ad esempio il controllo struttura ad albero
 
-6.  **Prossimità:** se lo stato di avanzamento deve essere in stretta vicinanza all'interfaccia utente che è correlato. (Ad esempio, può essere nella barra di stato, che potrebbe essere a portata di mano, o dispone di essere quasi il pulsante che ha avviato il processo?)
+6. **Prossimità:** se lo stato di avanzamento deve essere in stretta vicinanza all'interfaccia utente che è correlato. (Ad esempio, può essere nella barra di stato, che potrebbe essere a portata di mano, o dispone di essere quasi il pulsante che ha avviato il processo?)
 
 #### <a name="determinate-progress"></a>Indicatore di stato
 
@@ -281,7 +281,7 @@ ms.locfileid: "56683168"
 
  **Finestra di output con lo stato di processo in corso e in attesa di messaggistica**
 
-##  <a name="BKMK_Infobars"></a> Barre informazioni
+## <a name="BKMK_Infobars"></a> Barre informazioni
 
 ### <a name="overview"></a>Panoramica
  Le barre informazioni concedere all'utente un indicatore vicino al relativo punto di attenzione e mediante il controllo barra informazioni condivisa garantisce la coerenza nell'aspetto visivo e interazione.
@@ -292,31 +292,31 @@ ms.locfileid: "56683168"
 
 #### <a name="appropriate-uses-for-an-infobar"></a>Usa appropriato per una barra informazioni
 
--   Per consentire all'utente un messaggio non bloccante, ma importante rilevante per il contesto corrente
+- Per consentire all'utente un messaggio non bloccante, ma importante rilevante per il contesto corrente
 
--   Per indicare che l'interfaccia utente è in un determinato stato o una condizione che comporta alcune implicazioni di interazione, ad esempio il debug cronologico
+- Per indicare che l'interfaccia utente è in un determinato stato o una condizione che comporta alcune implicazioni di interazione, ad esempio il debug cronologico
 
--   Per notificare all'utente che il sistema ha rilevato problemi, ad esempio quando un'estensione sta causando problemi di prestazioni
+- Per notificare all'utente che il sistema ha rilevato problemi, ad esempio quando un'estensione sta causando problemi di prestazioni
 
--   Per fornire all'utente un modo per effettuare con facilità un'azione, ad esempio quando l'editor rileva che un file è misto tabulazioni e spazi
+- Per fornire all'utente un modo per effettuare con facilità un'azione, ad esempio quando l'editor rileva che un file è misto tabulazioni e spazi
 
 ##### <a name="do"></a>Eseguire:
 
--   Mantenere il testo del messaggio nella barra informazioni brevi e concisi.
+- Mantenere il testo del messaggio nella barra informazioni brevi e concisi.
 
--   Mantenere il testo su link e pulsanti concisa.
+- Mantenere il testo su link e pulsanti concisa.
 
--   Verificare le opzioni "action" è fornire agli utenti sono minime, che mostra solo le azioni necessarie.
+- Verificare le opzioni "action" è fornire agli utenti sono minime, che mostra solo le azioni necessarie.
 
 ##### <a name="dont"></a>Non:
 
--   Usare una barra informazioni per rendere disponibili i comandi standard che devono essere inseriti in una barra degli strumenti.
+- Usare una barra informazioni per rendere disponibili i comandi standard che devono essere inseriti in una barra degli strumenti.
 
--   Usare una barra informazioni al posto di una finestra di dialogo modale.
+- Usare una barra informazioni al posto di una finestra di dialogo modale.
 
--   Creare un messaggio a virgola mobile di fuori di una finestra.
+- Creare un messaggio a virgola mobile di fuori di una finestra.
 
--   Usare le barre più informazioni in diverse posizioni all'interno della stessa finestra.
+- Usare le barre più informazioni in diverse posizioni all'interno della stessa finestra.
 
 #### <a name="can-multiple-infobars-show-at-the-same-time"></a>Le barre più informazioni possono mostrare nello stesso momento?
  Sì, le barre più informazioni possono mostrare nello stesso momento. Vengono visualizzati in ordine cronologico primo arrivato con la prima barra informazioni che mostra in visualizzazione di barre superiore e ulteriori informazioni riportato di seguito.
@@ -326,13 +326,13 @@ ms.locfileid: "56683168"
 ### <a name="creating-an-infobar"></a>Creazione di una barra informazioni
  La barra informazioni include quattro sezioni, da sinistra a destra:
 
--   **Icona:** Si tratta in cui si aggiunge un'icona si desidera visualizzare per la barra informazioni, ad esempio un'icona di avviso.
+- **Icona:** Si tratta in cui si aggiunge un'icona si desidera visualizzare per la barra informazioni, ad esempio un'icona di avviso.
 
--   **Testo:** È possibile aggiungere Trova testo per descrivere l'utente di scenario/situazione, oltre a collegamenti all'interno del testo, se necessario. Tenere presente che il testo conciso.
+- **Testo:** È possibile aggiungere Trova testo per descrivere l'utente di scenario/situazione, oltre a collegamenti all'interno del testo, se necessario. Tenere presente che il testo conciso.
 
--   **Azioni:** Questa sezione deve contenere collegamenti e i pulsanti per le azioni che l'utente può richiedere la barra informazioni.
+- **Azioni:** Questa sezione deve contenere collegamenti e i pulsanti per le azioni che l'utente può richiedere la barra informazioni.
 
--   **Pulsante Chiudi:** L'ultima sezione in cui il diritto può avere un pulsante Chiudi.
+- **Pulsante Chiudi:** L'ultima sezione in cui il diritto può avere un pulsante Chiudi.
 
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Creazione di una barra informazioni standard nel codice gestito
  La classe InfoBarModel può essere utilizzata per creare un'origine dati per una barra informazioni. Usare uno di questi quattro costruttori:
@@ -412,9 +412,9 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 ### <a name="placement"></a>Selezione host
  Le barre informazioni possono essere visualizzate in uno o più delle seguenti posizioni:
 
--   Finestre degli strumenti
+- Finestre degli strumenti
 
--   All'interno di una scheda del documento
+- All'interno di una scheda del documento
 
 > [!IMPORTANT]
 >  È possibile posizionare una barra informazioni per fornire un messaggio relativo contesto globale. Questo viene visualizzato tra le barre degli strumenti e l'area dei documenti. Questa operazione è sconsigliata perché causa problemi con "passare e jerk" dell'IDE e deve essere evitata se non assolutamente necessario e appropriato.
@@ -470,7 +470,7 @@ public interface IVsInfoBarUIEvents
 
 ```
 
-##  <a name="BKMK_ErrorValidation"></a> Convalida degli errori
+## <a name="BKMK_ErrorValidation"></a> Convalida degli errori
  Quando un utente immette informazioni che non sono accettabili, ad esempio quando un campo obbligatorio è ignorato o all'immissione di dati in formato non corretto, è preferibile usare controllo convalida o commenti e suggerimenti accanto al controllo invece di usare una finestra di dialogo di errore popup blocco.
 
 ### <a name="field-validation"></a>Convalida dei campi

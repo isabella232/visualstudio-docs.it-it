@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049308"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Aggiunta del supporto dell'annullamento alle finestre di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Finestre di progettazione, come editor, in genere necessario supportare le opera
 ## <a name="obtaining-undo-support-automatically"></a>Come ottenere supporto per l'annullamento automaticamente  
  Qualsiasi finestra di progettazione creata in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta in modo automatico e l'intera operazione di annullamento if, la finestra di progettazione:  
   
--   Usa un <xref:System.Windows.Forms.Control> basati su classi per la propria interfaccia utente.  
+- Usa un <xref:System.Windows.Forms.Control> basati su classi per la propria interfaccia utente.  
   
--   Usa la generazione di codice standard basato su CodeDOM e sistema di analisi per la persistenza e la generazione di codice.  
+- Usa la generazione di codice standard basato su CodeDOM e sistema di analisi per la persistenza e la generazione di codice.  
   
      Per altre informazioni sull'uso di supporto di Visual Studio CodeDOM, vedere [Dynamic Source Code Generation and Compilation](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ Finestre di progettazione, come editor, in genere necessario supportare le opera
   
 - Ciò <xref:System.IServiceProvider> classe deve fornire i servizi seguenti:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Le finestre di progettazione utilizzando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serializzazione CodeDOM può scegliere di usare <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fornito con il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] come relativa implementazione del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        In questo caso, il <xref:System.IServiceProvider> classe fornita per il <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> costruttore deve restituire tale oggetto come un'implementazione del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Le finestre di progettazione utilizzando il valore predefinito <xref:System.ComponentModel.Design.DesignSurface> fornite dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene garantito che un'implementazione predefinita dell'host di progettazione di <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
   

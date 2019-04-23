@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047813"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 Per garantire che il sistema software o l'applicazione soddisfi degli utenti esigenze, è possibile creare modelli in Visual Studio come parte del comportamento dell'applicazione o sistema software e la descrizione della struttura complessiva. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
@@ -28,9 +28,9 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
 
  L'architettura di un sistema può essere suddivisa in due aree:
 
--   [Progettazione di alto livello](#Structure). Descrive i componenti principali e la loro modalità di interazione per soddisfare ogni requisito. Se il sistema è di grandi dimensioni, ogni componente può disporre del proprio progetto di alto livello che mostra come è costituito da componenti più piccoli.
+- [Progettazione di alto livello](#Structure). Descrive i componenti principali e la loro modalità di interazione per soddisfare ogni requisito. Se il sistema è di grandi dimensioni, ogni componente può disporre del proprio progetto di alto livello che mostra come è costituito da componenti più piccoli.
 
--   [Schemi progettuali](#Patterns) e le convenzioni usate in tutte le progettazioni dei componenti. Un modello descrive un particolare approccio per realizzare un obiettivo di programmazione. Usando gli stessi schemi in tutta una progettazione, il team può ridurre il costo delle modifiche e dello sviluppo di nuovo software.
+- [Schemi progettuali](#Patterns) e le convenzioni usate in tutte le progettazioni dei componenti. Un modello descrive un particolare approccio per realizzare un obiettivo di programmazione. Usando gli stessi schemi in tutta una progettazione, il team può ridurre il costo delle modifiche e dello sviluppo di nuovo software.
 
 ## <a name="Structure"></a> Progettazione di alto livello
  Un progetto di alto livello descrive i componenti principali del sistema e il modo in cui interagiscono tra loro per raggiungere gli obiettivi della progettazione. Le attività nell'elenco seguente sono coinvolte nello sviluppo della progettazione di alto livello, anche se non necessariamente in una determinata sequenza.
@@ -39,11 +39,11 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
 
  In ogni caso, è utile per sviluppare le diverse attività in parallelo e sviluppare il codice e i test in una fase iniziale. Evitare di tentare di completare uno di questi aspetti prima di avviarne un altro. In genere, i requisiti e la comprensione del modo migliore per progettare il sistema verrà modificato durante la scrittura e il test del codice. Di conseguenza, è necessario iniziare a individuare e codificare le funzionalità principali dei requisiti e della progettazione. Inserire i dettagli nelle iterazioni successive del progetto.
 
--   [Informazioni sui requisiti](#Requirements). Il punto di partenza di qualsiasi progettazione è una chiara comprensione delle esigenze degli utenti.
+- [Informazioni sui requisiti](#Requirements). Il punto di partenza di qualsiasi progettazione è una chiara comprensione delle esigenze degli utenti.
 
--   [Modelli architettonici](#BigDecisions). Le scelte effettuate sulle tecnologie principali e gli elementi architettonici del sistema.
+- [Modelli architettonici](#BigDecisions). Le scelte effettuate sulle tecnologie principali e gli elementi architettonici del sistema.
 
--   Modello di dati di componenti e interfacce. È possibile creare diagrammi classi per descrivere le informazioni passate tra componenti e archiviate all'interno dei componenti.
+- Modello di dati di componenti e interfacce. È possibile creare diagrammi classi per descrivere le informazioni passate tra componenti e archiviate all'interno dei componenti.
 
 ## <a name="Requirements"></a> Informazioni sui requisiti
  La progettazione di alto livello di un'applicazione completa viene sviluppata più efficacemente con un modello requisiti o altra descrizione delle esigenze degli utenti. Per altre informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
 
  Uno schema progettuale viene descritto in un documento e in genere include le seguenti parti:ne viene descritto in un documento e in genere include le seguenti parti:
 
--   Nome.
+- Nome.
 
--   Descrizione del contesto in cui è applicabile. In base a quali criteri uno sviluppatore deve pensare di applicare questo modello?
+- Descrizione del contesto in cui è applicabile. In base a quali criteri uno sviluppatore deve pensare di applicare questo modello?
 
--   Breve spiegazione del problema da risolvere.
+- Breve spiegazione del problema da risolvere.
 
--   Modello delle parti principali e relative relazioni. Potrebbe trattarsi di classi o componenti e interfacce, con associazioni e dipendenze tra di loro. Gli elementi in genere rientrano in due categorie:
+- Modello delle parti principali e relative relazioni. Potrebbe trattarsi di classi o componenti e interfacce, con associazioni e dipendenze tra di loro. Gli elementi in genere rientrano in due categorie:
 
--   Convenzioni di denominazione.
+- Convenzioni di denominazione.
 
--   Descrizione di come il modello risolve il problema.
+- Descrizione di come il modello risolve il problema.
 
--   Descrizione delle variazioni che gli sviluppatori potrebbero essere in grado di adottare.
+- Descrizione delle variazioni che gli sviluppatori potrebbero essere in grado di adottare.
 
 ## <a name="see-also"></a>Vedere anche
 

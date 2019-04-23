@@ -9,29 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99cd0704c74da1e3f31363c5847260e39d844a41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19f63ebc662b745062f0163a1f82eb036e164f3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046514"
 ---
-# <a name="customizing-presentation-on-the-diagram"></a>Personalizzazione della presentazione nel diagramma
-Il diagramma è l'area di presentazione principale di una finestra di progettazione di linguaggio specifico di dominio. In genere, gli utenti usano il diagramma per costruire i modelli. È possibile personalizzare il diagramma come descritto negli argomenti seguenti.
+# <a name="customize-presentation-on-the-diagram"></a>Personalizzare la presentazione nel diagramma
 
--   [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)
+Il diagramma è l'area di presentazione principale di una finestra di progettazione di linguaggio specifico di dominio. In genere, gli utenti usano il diagramma per costruire i modelli. È possibile personalizzare il diagramma come descritto negli articoli seguenti:
 
--   [Controllo delle proprietà Color, Line Style e altre](../modeling/controlling-color-line-style-and-other-shape-properties.md)
+- [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)
 
--   [Controllo della visibilità di un'icona o di un elemento Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
+- [Controllo delle proprietà Color, Line Style e altre](../modeling/controlling-color-line-style-and-other-shape-properties.md)
 
--   [Personalizzazione dei campi testo e immagine](../modeling/customizing-text-and-image-fields.md)
+- [Controllo della visibilità di un'icona o di un elemento Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
 
--   [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)
+- [Personalizzazione dei campi testo e immagine](../modeling/customizing-text-and-image-fields.md)
 
--   [Annidamento di forme](../modeling/nesting-shapes.md)
+- [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)
 
--   [Incorporamento di un diagramma in Windows Form](../modeling/embedding-a-diagram-in-a-windows-form.md)
+- [Incorporamento di un diagramma in Windows Form](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
 ## <a name="see-also"></a>Vedere anche
 

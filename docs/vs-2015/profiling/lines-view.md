@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e27194d830e880fd9ae28065e69fa140d9201dc2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54762013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058630"
 ---
 # <a name="lines-view"></a>Visualizzazione Righe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tr
   
  Un'istruzione viene identificata in base agli elementi seguenti:  
   
--   File di origine che contiene l'istruzione della funzione.  
+- File di origine che contiene l'istruzione della funzione.  
   
--   Funzione che contiene l'istruzione.  
+- Funzione che contiene l'istruzione.  
   
--   Riga di origine in cui inizia l'istruzione.  
+- Riga di origine in cui inizia l'istruzione.  
   
--   Carattere nella riga di origine in cui inizia l'istruzione.  
+- Carattere nella riga di origine in cui inizia l'istruzione.  
   
--   Riga di origine in cui termina l'istruzione.  
+- Riga di origine in cui termina l'istruzione.  
   
--   Carattere nella riga di origine in cui termina l'istruzione.  
+- Carattere nella riga di origine in cui termina l'istruzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057251"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto di Visual Studio)
 Specifica una cartella in cui verrà aggiunto al progetto.
@@ -62,7 +62,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
 
  Per organizzare gli elementi del progetto in cartelle in un modello, è possibile usare uno qualsiasi dei metodi seguenti:
 
--   Includere le cartelle nel modello *zip* file e aggiungerli al progetto nel *vstemplate* file specificando il percorso del file nei `ProjectItem` elementi, senza alcun `Folder` elementi. Questo è il metodo consigliato. Ad esempio:
+- Includere le cartelle nel modello *zip* file e aggiungerli al progetto nel *vstemplate* file specificando il percorso del file nei `ProjectItem` elementi, senza alcun `Folder` elementi. Questo è il metodo consigliato. Ad esempio:
 
      `...`
 
@@ -72,7 +72,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
 
      `...`
 
--   Includere le cartelle nel modello *zip* del file e aggiungerli al progetto nel *vstemplate* del file con `Folder` elementi. Ad esempio:
+- Includere le cartelle nel modello *zip* del file e aggiungerli al progetto nel *vstemplate* del file con `Folder` elementi. Ad esempio:
 
      `...`
 
@@ -86,7 +86,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
 
      `...`
 
--   Non includere le cartelle nel modello *zip* file, ma aggiungere cartelle utilizzando il `TargetFileName` attributo del `ProjectItem` elemento. Ad esempio:
+- Non includere le cartelle nel modello *zip* file, ma aggiungere cartelle utilizzando il `TargetFileName` attributo del `ProjectItem` elemento. Ad esempio:
 
      `...`
 

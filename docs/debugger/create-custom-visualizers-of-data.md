@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6342b571d1116d4a67e5ae01268c636ffbba6722
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048950"
 ---
 # <a name="create-custom-data-visualizers"></a>Creazione di visualizzatori dati personalizzati
  Oggetto *visualizer* fa parte di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaccia utente del debugger che consente di visualizzare una variabile o un oggetto in modo appropriato al relativo tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come apparirebbe in una finestra del browser. Un visualizzatore di bitmap interpreta una struttura di bitmap e visualizza il grafico da che essa rappresentato. Alcuni visualizzatori consentono di modificare, nonché visualizzare i dati.
@@ -58,32 +58,32 @@ Il lato oggetto del debug e il lato debugger comunicano tra loro attraverso <xre
 
 Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Visualizzare [considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md).
 
-La procedura seguente offre una panoramica generale della creazione del visualizzatore. Per istruzioni dettagliate, vedere [procedura dettagliata: scrivere un visualizzatore in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oppure [procedura dettagliata: scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
+La procedura seguente offre una panoramica generale della creazione del visualizzatore. Per istruzioni dettagliate, vedere [procedura dettagliata: Scrivere un visualizzatore in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) oppure [procedura dettagliata: Scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).
 
 ### <a name="to-create-the-debugger-side"></a>Per creare il lato debugger
 
 Per creare l'interfaccia utente del visualizzatore nel lato debugger, si crea una classe che eredita da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>ed eseguire l'override di <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodo per visualizzare l'interfaccia. È possibile usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> per visualizzare Windows forms, finestre di dialogo e controlli nel Visualizzatore.
 
-1.  Usare metodi <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> per fornire l'oggetto visualizzato al lato debugger.
+1. Usare metodi <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> per fornire l'oggetto visualizzato al lato debugger.
 
-1.  Creare una classe che eredita da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
+1. Creare una classe che eredita da <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
 
-1.  Eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia. Usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> metodi per visualizzare Windows forms, finestre di dialogo e controlli nell'interfaccia.
+1. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> per visualizzare l'interfaccia. Usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> metodi per visualizzare Windows forms, finestre di dialogo e controlli nell'interfaccia.
 
-4.  Si applicano <xref:System.Diagnostics.DebuggerVisualizerAttribute>, assegnare il visualizzatore per visualizzare (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
+4. Si applicano <xref:System.Diagnostics.DebuggerVisualizerAttribute>, assegnare il visualizzatore per visualizzare (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
 ### <a name="to-create-the-debuggee-side"></a>Per creare il lato oggetto del debug
 
 Specificare il codice lato oggetto del debug utilizzando il <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
 
-1.  Applicare <xref:System.Diagnostics.DebuggerVisualizerAttribute> per assegnare un visualizzatore (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) e un'origine oggetto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Se si omette l'origine dell'oggetto, il visualizzatore utilizzerà un'origine predefinita.
+1. Applicare <xref:System.Diagnostics.DebuggerVisualizerAttribute> per assegnare un visualizzatore (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) e un'origine oggetto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Se si omette l'origine dell'oggetto, il visualizzatore utilizzerà un'origine predefinita.
 
-1.  Per consentire il Visualizzatore di modifica, nonché visualizzare gli oggetti dati, eseguire l'override di `TransferData` oppure `CreateReplacementObject` metodi da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+1. Per consentire il Visualizzatore di modifica, nonché visualizzare gli oggetti dati, eseguire l'override di `TransferData` oppure `CreateReplacementObject` metodi da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: scrivere un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Procedura dettagliata: scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Procedura dettagliata: Scrivere un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura dettagliata: Scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Procedura: Testare un visualizzatore ed eseguirne il debug](../debugger/how-to-test-and-debug-a-visualizer.md)
 - [Informazioni di riferimento sulle API del visualizzatore](../debugger/visualizer-api-reference.md)

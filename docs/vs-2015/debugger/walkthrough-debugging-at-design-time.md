@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046149"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Procedura dettagliata: Debug in fase di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58969174"
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Per raggiungere punti di interruzione dalla finestra di controllo immediato  
   
-1.  Incollare il codice seguente in un'applicazione console Visual Basic:  
+1. Incollare il codice seguente in un'applicazione console Visual Basic:  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ ms.locfileid: "58969174"
     End Module  
     ```  
   
-2.  Impostare un punto di interruzione sulla riga che legge, `s="Add BreakPoint Here"`.  
+2. Impostare un punto di interruzione sulla riga che legge, `s="Add BreakPoint Here"`.  
   
-3.  Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
+3. Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
   
-4.  Verificare che è stato raggiunto il punto di interruzione e che lo stack di chiamate è accurato.  
+4. Verificare che è stato raggiunto il punto di interruzione e che lo stack di chiamate è accurato.  
   
-5.  Nel **Debug** menu, fare clic su **continua**e verificare che sia ancora in modalità progettazione.  
+5. Nel **Debug** menu, fare clic su **continua**e verificare che sia ancora in modalità progettazione.  
   
-6.  Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
+6. Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
   
-7.  Digitare il comando seguente nel **Immediate** finestra: `?MySub<enter>`  
+7. Digitare il comando seguente nel **Immediate** finestra: `?MySub<enter>`  
   
-8.  Verificare che sia stato raggiunto il punto di interruzione ed esamina il valore della variabile statica `i` nella **variabili locali** finestra. Deve avere il valore di 3.  
+8. Verificare che sia stato raggiunto il punto di interruzione ed esamina il valore della variabile statica `i` nella **variabili locali** finestra. Deve avere il valore di 3.  
   
 9. Verificare che lo stack di chiamate è accurato.  
   

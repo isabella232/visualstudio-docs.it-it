@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053117"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Associare gli oggetti in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio offre gli strumenti di progettazione per l'utilizzo di oggetti per
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Esempi di utilizzo di oggetti personalizzati come origini dati
  Anche se esistono innumerevoli modalità per implementare la logica dell'applicazione quando si lavora con gli oggetti come origine dati, per SQL database vi sono alcune operazioni standard che possono essere semplificate utilizzando gli oggetti TableAdapter generati in Visual Studio. Questa pagina illustra come implementare questi processi standard usando TableAdapters.It non è una Guida per la creazione di oggetti personalizzati. Ad esempio, è in genere eseguirà le operazioni standard seguente indipendentemente dall'implementazione specifica di oggetti o per la logica dell'applicazione:
 
--   Il caricamento dei dati in oggetti (in genere da un database).
+- Il caricamento dei dati in oggetti (in genere da un database).
 
--   Creazione di un insieme di oggetti tipizzati.
+- Creazione di un insieme di oggetti tipizzati.
 
--   Aggiunta e rimozione di oggetti da una raccolta.
+- Aggiunta e rimozione di oggetti da una raccolta.
 
--   Visualizzazione dati dell'oggetto per gli utenti in un form.
+- Visualizzazione dati dell'oggetto per gli utenti in un form.
 
--   La modifica o modifica i dati in un oggetto.
+- La modifica o modifica i dati in un oggetto.
 
--   Salvataggio dei dati dagli oggetti nel database.
+- Salvataggio dei dati dagli oggetti nel database.
 
 > [!NOTE]
 >  Per meglio comprendere e fornire il contesto per gli esempi in questa pagina, si consiglia di completare la seguente: [Procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Tale procedura dettagliata crea gli oggetti illustrati di seguito.

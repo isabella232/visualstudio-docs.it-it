@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047582"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -88,21 +88,21 @@ Se sufficiente da scaricare e installare il debugger remoto e non sono necessari
 ### <a name="configure_msvsmon"></a> Configurare il debugger remoto
 È possibile modificare alcuni aspetti della configurazione del debugger remoto dopo che è stata avviata per la prima volta.
 
--   Se è necessario aggiungere le autorizzazioni per altri utenti per connettersi al debugger remoto, selezionare **strumenti > autorizzazioni**. È necessario disporre dei privilegi di amministratore per concedere o negare autorizzazioni.
+- Se è necessario aggiungere le autorizzazioni per altri utenti per connettersi al debugger remoto, selezionare **strumenti > autorizzazioni**. È necessario disporre dei privilegi di amministratore per concedere o negare autorizzazioni.
 
      > [!IMPORTANT]
      > È possibile eseguire il debugger remoto con un account utente diverso dall'account utente in uso nel computer di Visual Studio, ma è necessario aggiungere l'account utente diverso alle autorizzazioni del debugger remoto.
 
      In alternativa, è possibile avviare il debugger remoto dalla riga di comando con il **/Allow \<username >** parametro: **msvsmon /Allow \< username@computer>**.
 
--   Se è necessario modificare la modalità di autenticazione o il numero di porta oppure specificare un valore di timeout per remote tools: scegliere **strumenti > Opzioni**.
+- Se è necessario modificare la modalità di autenticazione o il numero di porta oppure specificare un valore di timeout per remote tools: scegliere **strumenti > Opzioni**.
 
      Per un elenco dei numeri di porta usati per impostazione predefinita, vedere [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
      >  È possibile scegliere di eseguire Remote Tools in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.
 
-##  <a name="bkmk_configureService"></a> (Facoltativo) Configurare il debugger remoto come servizio
+## <a name="bkmk_configureService"></a> (Facoltativo) Configurare il debugger remoto come servizio
 Per il debug in ASP.NET e altri ambienti server, si deve eseguire il debugger remoto come amministratore o, se si desidera sempre in esecuzione, eseguire il debugger remoto come servizio.
 
  Se si desidera configurare il debugger remoto come servizio, seguire questa procedura.

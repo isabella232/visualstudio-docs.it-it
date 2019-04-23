@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059851"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   
  La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per una panoramica dei tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md). Per informazioni di base sulla creazione dei diagrammi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Che descrive come viene usato il sistema  
+## <a name="UseCases"></a> Che descrive come viene usato il sistema  
  Creare diagrammi caso di utilizzo per descrivere chi usa il sistema e le relative attività svolte. Un caso di utilizzo rappresenta un obiettivo di un utente del sistema e la procedura eseguita per raggiungere l'obiettivo.  
   
  Si consideri ad esempio un sistema di vendita di pasti online che deve consentire ai clienti di scegliere elementi da un menu e ai ristoranti di aggiornare il menu. È possibile riepilogare questa condizione in un diagramma caso di utilizzo:  
@@ -93,7 +93,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Elementi in un diagramma caso di utilizzo|[Diagrammi dei casi d'uso UML: riferimenti](../modeling/uml-use-case-diagrams-reference.md)|  
 |Come sviluppare codice dai casi di utilizzo|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definizione dei termini usati per descrivere i requisiti  
+## <a name="RequirementsClasses"></a> Definizione dei termini usati per descrivere i requisiti  
  È possibile usare i diagrammi classi UML per sviluppare un vocabolario coerente dei concetti aziendali utilizzati per gli scopi seguenti:  
   
 - Dagli utenti stessi per presentare l'azienda in cui il sistema è in funzione.  
@@ -140,7 +140,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   
  In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'esempio [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione rendere le frecce sono non direzionali il valore predefinito: [Esempio: Funzionalità di modellazione di domini UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.  
   
  Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle relative classi di un diagramma classi concettuali. Ad esempio:  
@@ -161,7 +161,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Elementi in un diagramma classi concettuali|[Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)|  
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Esistono diverse categorie di requisiti per la qualità del servizio. Di seguito vengono forniti alcuni esempi:  
   
 - Prestazioni  
@@ -185,7 +185,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Associazione di documenti aggiuntivi ai casi di utilizzo|[Collegare un caso d'uso a documenti e diagrammi](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Come sviluppare codice che soddisfi i requisiti di qualità del servizio|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Che mostra il flusso di lavoro tra gli utenti e il sistema  
+## <a name="Workflow"></a> Che mostra il flusso di lavoro tra gli utenti e il sistema  
  È possibile usare un diagramma di attività per mostrare il flusso di lavoro tra diversi casi di utilizzo. Spesso è utile iniziare un modello di requisiti creando un diagramma di attività che illustri le attività principali eseguite dagli utenti, sia con il sistema che all'esterno.  
   
  Ad esempio:  
@@ -206,7 +206,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Elementi in un diagramma di attività|[Diagrammi di attività UML: riferimenti](../modeling/uml-activity-diagrams-reference.md)|  
 |Come sviluppare codice dai diagrammi di attività|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Visualizzazione delle interazioni tra utenti e del sistema  
+## <a name="Sequences"></a> Visualizzazione delle interazioni tra utenti e del sistema  
  È possibile usare un diagramma di sequenza per mostrare l'interscambio di messaggi tra il sistema e gli attori esterni o tra le parti del sistema. In questo modo vengono visualizzati i passaggi di un caso di utilizzo che mostra molto chiaramente la sequenza di interazioni. I diagrammi di sequenza sono particolarmente utili nelle situazioni in cui sono presenti molte parti che interagiscono tra di loro in un caso di utilizzo e anche quando nel sistema è disponibile un'API.  
   
  Ad esempio:  

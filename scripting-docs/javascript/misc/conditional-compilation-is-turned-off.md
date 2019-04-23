@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d3c225df20113308ee7037742ad74efb6a0cc2e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051739"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Compilazione condizionale disattivata
 Si è provato a usare una variabile di compilazione condizionale senza prima compilazione condizionale di attivazione in. Attivare la compilazione condizionale indica il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilatore a interpretare gli indicatori che iniziano con come variabili di compilazione condizionale. È possibile anteporre al codice con l'istruzione condizionale:  
@@ -30,7 +30,7 @@ Si è provato a usare una variabile di compilazione condizionale senza prima com
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Aggiungere l'istruzione seguente all'inizio del codice condizionale:  
+- Aggiungere l'istruzione seguente all'inizio del codice condizionale:  
   
     ```JavaScript  
     /*@cc_on @*/  

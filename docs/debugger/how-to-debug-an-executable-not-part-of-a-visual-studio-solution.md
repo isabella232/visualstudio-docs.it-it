@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051336"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio (C++, C#, Visual Basic, F#)
 
@@ -58,7 +58,7 @@ In queste situazioni, è possibile creare un progetto EXE di Visual Studio per l
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Per importare un'app in una soluzione di Visual Studio esistente
 
-1.  Con C++, C#, o Visual Basic soluzione aperta in Visual Studio, selezionare **File** > **Add** > **progetto esistente**.
+1. Con un C++, C#, o Visual Basic soluzione aperta in Visual Studio, selezionare **File** > **Add** > **progetto esistente**.
 
 1. Nel **Apri progetto** finestra di dialogo **tutti i file di progetto**, se non è già selezionata, nell'elenco a discesa accanto a **nomefile**.
 

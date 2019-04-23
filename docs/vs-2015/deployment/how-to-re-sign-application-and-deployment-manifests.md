@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045782"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per firmare nuovamente l'applicazione e distribuzione dei manifesti con Mage.exe  
   
-1.  Aprire una **Prompt dei comandi di Visual Studio** finestra.  
+1. Aprire una **Prompt dei comandi di Visual Studio** finestra.  
   
-2.  Passare alla cartella che contiene i file manifesto che si desidera accedere.  
+2. Passare alla cartella che contiene i file manifesto che si desidera accedere.  
   
-3.  Digitare il comando seguente per firmare il file manifesto dell'applicazione. Sostituire ManifestFileName con il nome del file manifesto e l'estensione. Sostituire certificati con il percorso relativo o completo del file del certificato e Password con la password per il certificato.  
+3. Digitare il comando seguente per firmare il file manifesto dell'applicazione. Sostituire ManifestFileName con il nome del file manifesto e l'estensione. Sostituire certificati con il percorso relativo o completo del file del certificato e Password con la password per il certificato.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Digitare il comando seguente per aggiornare e firmare il file manifesto di distribuzione, sostituendo i nomi di segnaposto come nel passaggio precedente.  
+4. Digitare il comando seguente per aggiornare e firmare il file manifesto di distribuzione, sostituendo i nomi di segnaposto come nel passaggio precedente.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Facoltativamente, copiare il manifesto di distribuzione master (pubblicare\\*appname*Application) nella directory di distribuzione della versione (file publish\Application\\*appname*_ *versione*).  
+5. Facoltativamente, copiare il manifesto di distribuzione master (pubblicare\\*appname*Application) nella directory di distribuzione della versione (file publish\Application\\*appname*_ *versione*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>L'aggiornamento e ripetizione della firma i manifesti dell'applicazione e distribuzione  
  Questa procedura presuppone che sono già state apportate modifiche all'applicazione (con estensione manifest) file manifesto, ma sono presenti altri file che sono stati aggiornati. Quando i file vengono aggiornati, è necessario aggiornare anche l'hash che rappresenta il file.  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per aggiornare e firmare nuovamente l'applicazione e distribuzione dei manifesti con Mage.exe  
   
-1.  Aprire una **Prompt dei comandi di Visual Studio** finestra.  
+1. Aprire una **Prompt dei comandi di Visual Studio** finestra.  
   
-2.  Passare alla cartella che contiene i file manifesto che si desidera accedere.  
+2. Passare alla cartella che contiene i file manifesto che si desidera accedere.  
   
-3.  Rimuovere l'estensione di file deploy dai file nella cartella di output di pubblicazione.  
+3. Rimuovere l'estensione di file deploy dai file nella cartella di output di pubblicazione.  
   
-4.  Digitare il comando seguente per aggiornare il manifesto dell'applicazione con i nuovi hash per i file aggiornati e firmare il file manifesto dell'applicazione. Sostituire ManifestFileName con il nome del file manifesto e l'estensione. Sostituire certificati con il percorso relativo o completo del file del certificato e Password con la password per il certificato.  
+4. Digitare il comando seguente per aggiornare il manifesto dell'applicazione con i nuovi hash per i file aggiornati e firmare il file manifesto dell'applicazione. Sostituire ManifestFileName con il nome del file manifesto e l'estensione. Sostituire certificati con il percorso relativo o completo del file del certificato e Password con la password per il certificato.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Digitare il comando seguente per aggiornare e firmare il file manifesto di distribuzione, sostituendo i nomi di segnaposto come nel passaggio precedente.  
+5. Digitare il comando seguente per aggiornare e firmare il file manifesto di distribuzione, sostituendo i nomi di segnaposto come nel passaggio precedente.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Aggiungere l'estensione di file deploy Torna ai file, ad eccezione del fatto file manifesto dell'applicazione e distribuzione.  
+6. Aggiungere l'estensione di file deploy Torna ai file, ad eccezione del fatto file manifesto dell'applicazione e distribuzione.  
   
-7.  Facoltativamente, copiare il manifesto di distribuzione master (pubblicare\\*appname*Application) nella directory di distribuzione della versione (file publish\Application\\*appname*_ *versione*).  
+7. Facoltativamente, copiare il manifesto di distribuzione master (pubblicare\\*appname*Application) nella directory di distribuzione della versione (file publish\Application\\*appname*_ *versione*).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053130"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedura: Usare il log attività
 I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzionalità è particolarmente utile per il debug di pacchetti VSPackage negli ambienti delle vendite al dettaglio.
@@ -26,7 +26,7 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Per scrivere una voce nel log attività
 
-1.  Inserire questo codice nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo o in qualsiasi altro metodo, ad eccezione del costruttore VSPackage:
+1. Inserire questo codice nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo o in qualsiasi altro metodo, ad eccezione del costruttore VSPackage:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -40,7 +40,7 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
 
      Questo codice ottiene la <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> del servizio e ne esegue il cast a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaccia. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> Scrive una voce informativo nel log attività usando il contesto relative alla lingua corrente.
 
-2.  Quando viene caricato il pacchetto VSPackage (in genere quando un comando viene richiamato o viene aperta una finestra), il testo venga scritto nel log attività.
+2. Quando viene caricato il pacchetto VSPackage (in genere quando un comando viene richiamato o viene aperta una finestra), il testo venga scritto nel log attività.
 
 ## <a name="to-examine-the-activity-log"></a>Per esaminare il log attività
 

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046123"
 ---
 # <a name="extending-javascript-intellisense"></a>Estensione di IntelliSense in JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 > [!NOTE]
 >  In JavaScript, informazioni rapide si intende la finestra popup che viene visualizzato a destra di un elenco di completamento. È possibile richiamare manualmente le informazioni rapide.  
   
-##  <a name="intellisenseObject"></a> Oggetto IntelliSense  
+## <a name="intellisenseObject"></a> Oggetto IntelliSense  
  Nella tabella seguente mostra le funzioni che sono disponibili per il `intellisense` oggetto. Il `intellisense` oggetto è disponibile solo in fase di progettazione.  
   
 |Funzione|Descrizione|  
@@ -108,118 +108,118 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="event-members"></a>Membri di evento  
  Le sezioni seguenti descrivono i membri vengono esposti nell'oggetto di eventi per gli eventi seguenti: `statementcompletion`, `signaturehelp`, e `statementcompletionhint`.  
   
-###  <a name="CompletionItem"></a> completionItem proprietà  
+### <a name="CompletionItem"></a> completionItem proprietà  
  Restituisce l'identificatore, noto come elemento di completamento, per cui è richiesto una casella popup informazioni rapide. Questa proprietà è disponibile per il `statementcompletionhint` oggetto dell'evento e per il [proprietà degli elementi](#Items) proprietà del `statementcompletion` oggetto evento.  
   
  Valore restituito: `completionItem` oggetto  
   
  Di seguito sono i membri del `completionItem` oggetto:  
   
--   `name`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che identifica l'elemento di completamento.  
+- `name`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che identifica l'elemento di completamento.  
   
--   `kind`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta il tipo di elemento di completamento. I valori possibili sono metodo, campo, proprietà, parametro, variabile e sono riservati.  
+- `kind`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta il tipo di elemento di completamento. I valori possibili sono metodo, campo, proprietà, parametro, variabile e sono riservati.  
   
--   `glyph`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta un'icona che viene visualizzata nell'elenco di completamento. I valori possibili per `glyph` usare il formato seguente: Visual Studio:*glyphType*, dove *glyphType* corrisponde ai membri indipendenti dal linguaggio di <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> enumerazione. Ad esempio, `vs:GlyphGroupMethod` è uno dei possibili valori per `glyph`. Quando `glyph` non è impostata, il `kind` proprietà determina l'icona predefinita.  
+- `glyph`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta un'icona che viene visualizzata nell'elenco di completamento. I valori possibili per `glyph` usare il formato seguente: Visual Studio:*glyphType*, dove *glyphType* corrisponde ai membri indipendenti dal linguaggio di <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> enumerazione. Ad esempio, `vs:GlyphGroupMethod` è uno dei possibili valori per `glyph`. Quando `glyph` non è impostata, il `kind` proprietà determina l'icona predefinita.  
   
--   `parentObject`. Sola lettura. Restituisce l'oggetto padre.  
+- `parentObject`. Sola lettura. Restituisce l'oggetto padre.  
   
--   `value`. Sola lettura. Restituisce un oggetto che rappresenta il valore dell'elemento di completamento.  
+- `value`. Sola lettura. Restituisce un oggetto che rappresenta il valore dell'elemento di completamento.  
   
--   `comments`. Sola lettura. Restituisce una stringa che contiene i commenti che sono di sopra il campo o variabile.  
+- `comments`. Sola lettura. Restituisce una stringa che contiene i commenti che sono di sopra il campo o variabile.  
   
--   `scope`. Sola lettura. Restituisce l'ambito dell'elemento di completamento. I valori possibili sono parametro globale, locale e membro.  
+- `scope`. Sola lettura. Restituisce l'ambito dell'elemento di completamento. I valori possibili sono parametro globale, locale e membro.  
   
-###  <a name="Items"></a> Proprietà degli elementi  
+### <a name="Items"></a> Proprietà degli elementi  
  Ottiene o imposta la matrice di istruzione di elementi di completamento. Ogni elemento nella matrice è un [completionItem proprietà](#CompletionItem) oggetto. Il `items` proprietà è disponibile per il `statementcompletion` oggetto evento.  
   
  Valore restituito: array  
   
-###  <a name="FunctionComments"></a> functionComments proprietà  
+### <a name="FunctionComments"></a> functionComments proprietà  
  Restituisce i commenti per la funzione. Questa proprietà è disponibile per il `signaturehelp` oggetto evento.  
   
  Valore restituito: `comments` oggetto  
   
  Di seguito sono i membri del `comments` oggetto:  
   
--   `above`. Restituisce i commenti sopra la funzione.  
+- `above`. Restituisce i commenti sopra la funzione.  
   
--   `inside`. Restituisce i commenti all'interno della funzione, in genere nel formato VSDoc.  
+- `inside`. Restituisce i commenti all'interno della funzione, in genere nel formato VSDoc.  
   
--   `paramComments`. Restituisce una matrice che rappresenta i commenti per ogni parametro nella funzione. I membri della matrice includono:  
+- `paramComments`. Restituisce una matrice che rappresenta i commenti per ogni parametro nella funzione. I membri della matrice includono:  
   
-    -   `name`. Restituisce una stringa che rappresenta il nome del parametro.  
+    - `name`. Restituisce una stringa che rappresenta il nome del parametro.  
   
-    -   `comment`. Restituisce una stringa che contiene il parametro di commento.  
+    - `comment`. Restituisce una stringa che contiene il parametro di commento.  
   
-###  <a name="FunctionHelp"></a> functionHelp proprietà  
+### <a name="FunctionHelp"></a> functionHelp proprietà  
  Restituisce la Guida per la funzione. Questa proprietà è disponibile per il `signaturehelp` oggetto evento.  
   
  Valore restituito: `functionHelp` oggetto  
   
  Di seguito sono i membri del `functionHelp` oggetto:  
   
--   `functionName`. Lettura/scrittura. Restituisce una stringa che contiene il nome della funzione.  
+- `functionName`. Lettura/scrittura. Restituisce una stringa che contiene il nome della funzione.  
   
--   `signatures`. Lettura/scrittura. Ottiene o imposta la matrice di firme di funzione. Ogni elemento nella matrice è un `signature` oggetto. Alcuni `signature` proprietà, ad esempio `locid`, corrispondono ai comuni [commenti in formato documentazione XML](../ide/xml-documentation-comments-javascript.md) attributi.  
+- `signatures`. Lettura/scrittura. Ottiene o imposta la matrice di firme di funzione. Ogni elemento nella matrice è un `signature` oggetto. Alcuni `signature` proprietà, ad esempio `locid`, corrispondono ai comuni [commenti in formato documentazione XML](../ide/xml-documentation-comments-javascript.md) attributi.  
   
      I membri del `signature` oggetto includono:  
   
-    -   `description`. Lettura/scrittura. Restituisce una stringa che descrive la funzione.  
+    - `description`. Lettura/scrittura. Restituisce una stringa che descrive la funzione.  
   
-    -   `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
+    - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
   
-    -   `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
+    - `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
   
-    -   `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
+    - `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
   
-    -   `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
+    - `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
   
-    -   `params`. Lettura/scrittura. Ottiene o imposta la matrice di parametri per la funzione. Ogni elemento nella matrice di parametri è un `parameter` oggetto con proprietà che corrispondono a questi attributi per il [ \<param >](../ide/param-javascript.md) elemento:  
+    - `params`. Lettura/scrittura. Ottiene o imposta la matrice di parametri per la funzione. Ogni elemento nella matrice di parametri è un `parameter` oggetto con proprietà che corrispondono a questi attributi per il [ \<param >](../ide/param-javascript.md) elemento:  
   
-        -   `name`. Lettura/scrittura. Restituisce una stringa che rappresenta il nome del parametro.  
+        - `name`. Lettura/scrittura. Restituisce una stringa che rappresenta il nome del parametro.  
   
-        -   `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di parametro.  
+        - `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di parametro.  
   
-        -   `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
+        - `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
   
-        -   `description`. Lettura/scrittura. Restituisce una stringa che descrive il parametro.  
+        - `description`. Lettura/scrittura. Restituisce una stringa che descrive il parametro.  
   
-        -   `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
+        - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
   
-        -   `optional`. Lettura/scrittura. Restituisce una stringa che indica se il parametro è facoltativo. `true` indica che il parametro è facoltativo. `false` indica che non lo è.  
+        - `optional`. Lettura/scrittura. Restituisce una stringa che indica se il parametro è facoltativo. `true` indica che il parametro è facoltativo. `false` indica che non lo è.  
   
-    -   `returnValue`. Lettura/scrittura. Ottiene o imposta un oggetto di valore restituito con proprietà che corrispondono a questi attributi per il [ \<restituisce >](../ide/returns-javascript.md) elemento:  
+    - `returnValue`. Lettura/scrittura. Ottiene o imposta un oggetto di valore restituito con proprietà che corrispondono a questi attributi per il [ \<restituisce >](../ide/returns-javascript.md) elemento:  
   
-        -   `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo restituito.  
+        - `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo restituito.  
   
-        -   `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
+        - `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
   
-        -   `description`. Lettura/scrittura. Restituisce una stringa che descrive il valore restituito.  
+        - `description`. Lettura/scrittura. Restituisce una stringa che descrive il valore restituito.  
   
-        -   `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
+        - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
   
-        -   `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
+        - `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
   
-        -   `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
+        - `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
   
-        -   `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
+        - `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
   
-###  <a name="ParentObject"></a> parentObject proprietà  
+### <a name="ParentObject"></a> parentObject proprietà  
  Restituisce l'oggetto padre di una funzione membro. Ad esempio, per `document.getElementByID`, `parentObject` restituisce il `document` oggetto. Questa proprietà è disponibile per il `signaturehelp` oggetto evento.  
   
  Valore restituito: oggetto  
   
-###  <a name="Target"></a> Proprietà target  
+### <a name="Target"></a> Proprietà target  
  Restituisce un oggetto che rappresenta l'elemento a sinistra del carattere trigger, ovvero un punto (.). Per le funzioni, `target` restituisce la funzione di cui vengono richieste informazioni sul parametro. Questa proprietà è disponibile per il `statementcompletion` e `signaturehelp` oggetti evento.  
   
  Valore restituito: oggetto  
   
-###  <a name="TargetName"></a> Proprietà targetName  
+### <a name="TargetName"></a> Proprietà targetName  
  Restituisce una stringa che rappresenta la destinazione. Ad esempio, per "this.", `targetName` restituisce "this". Per "B" (quando il cursore si trova dopo "B"), `targetName` restituisce "B". Questa proprietà è disponibile per il `statementcompletion` oggetto evento.  
   
  Valore restituito: string  
   
-###  <a name="SymbolHelp"></a> symbolHelp proprietà  
+### <a name="SymbolHelp"></a> symbolHelp proprietà  
  Restituisce l'elemento di completamento per il quale viene richiesta una finestra popup di informazioni rapide. Questa proprietà è disponibile per il `statementcompletionhint` oggetto evento.  
   
  Valore restituito: `symbolHelp` oggetto.  
@@ -228,29 +228,29 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Di seguito sono i membri del `symbolHelp` oggetto:  
   
--   `name`. Lettura/scrittura. Restituisce una stringa che contiene il nome dell'identificatore.  
+- `name`. Lettura/scrittura. Restituisce una stringa che contiene il nome dell'identificatore.  
   
--   `symbolType`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di simbolo. I valori possibili includono Unknown, valore booleano, numero, stringa, oggetto, funzione, matrice, data e Regex.  
+- `symbolType`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di simbolo. I valori possibili includono Unknown, valore booleano, numero, stringa, oggetto, funzione, matrice, data e Regex.  
   
--   `symbolDisplayType`. Lettura/scrittura. Restituisce una stringa che contiene il nome del tipo da visualizzare. Se `symbolDisplayType` non è impostato, `symbolType` viene usato.  
+- `symbolDisplayType`. Lettura/scrittura. Restituisce una stringa che contiene il nome del tipo da visualizzare. Se `symbolDisplayType` non è impostato, `symbolType` viene usato.  
   
--   `elementType`. Lettura/scrittura. Se il `symbolType` è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
+- `elementType`. Lettura/scrittura. Se il `symbolType` è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
   
--   `scope`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ambito del simbolo. I valori possibili includono parametro globale, locale e membro.  
+- `scope`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ambito del simbolo. I valori possibili includono parametro globale, locale e membro.  
   
--   `description`. Lettura/scrittura. Restituisce una stringa che contiene una descrizione del simbolo.  
+- `description`. Lettura/scrittura. Restituisce una stringa che contiene una descrizione del simbolo.  
   
--   `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sul simbolo.  
+- `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sul simbolo.  
   
--   `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
+- `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
   
--   `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
+- `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
   
--   `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro del simbolo.  
+- `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro del simbolo.  
   
--   `functionHelp`. Lettura/scrittura. Restituisce un [functionHelp proprietà](#FunctionHelp), che potrebbe contenere informazioni quando il `symbolType` funzione.  
+- `functionHelp`. Lettura/scrittura. Restituisce un [functionHelp proprietà](#FunctionHelp), che potrebbe contenere informazioni quando il `symbolType` funzione.  
   
-###  <a name="Scope"></a> Proprietà di ambito  
+### <a name="Scope"></a> Proprietà di ambito  
  Restituisce l'ambito di completamento dell'evento. I valori possibili per il completamento di ambito sono globale e membri. Questa proprietà è disponibile per il `statementcompletion` oggetto evento.  
   
  Valore restituito: string  
@@ -258,27 +258,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="debugging-intellisense-extensions"></a>Debug delle estensioni di IntelliSense  
  È possibile eseguire il debug delle estensioni, ma è possibile usare la [intellisense oggetto](#intellisenseObject) funzione per inviare informazioni alla finestra di Output di Visual Studio. Per un esempio che illustra come usare questa funzione, vedere [invio di messaggi nella finestra di Output](#Logging) più avanti in questo argomento. Per `logMessage` per funzionare, almeno un gestore eventi deve essere registrato in un'estensione.  
   
-##  <a name="CodeExamples"></a> Esempi di codice  
+## <a name="CodeExamples"></a> Esempi di codice  
  In questa sezione include esempi di codice che illustrano come usare l'API di estendibilità di IntelliSense. Esistono anche altri modi per usare queste API. Per altri esempi, vedere i seguenti file nei \\ \\ *il percorso di installazione di Visual Studio*\JavaScript\References cartella. Si siano lavorando gli esempi usati dal servizio di linguaggio JavaScript.  
   
--   underscoreFilter.js. Questo codice consente di nascondere i membri privati da IntelliSense. Include i gestori eventi per il `statementcompletion` evento.  
+- underscoreFilter.js. Questo codice consente di nascondere i membri privati da IntelliSense. Include i gestori eventi per il `statementcompletion` evento.  
   
--   showPlainComments.js. Questo codice fornisce il supporto IntelliSense per i commenti standard. Include i gestori eventi per il `signaturehelp` e `statementcompletionhint` eventi.  
+- showPlainComments.js. Questo codice fornisce il supporto IntelliSense per i commenti standard. Include i gestori eventi per il `signaturehelp` e `statementcompletionhint` eventi.  
   
-###  <a name="Annotations"></a> Aggiunta di annotazioni di IntelliSense  
+### <a name="Annotations"></a> Aggiunta di annotazioni di IntelliSense  
  La procedura seguente viene illustrato come fornire il supporto di documentazione di IntelliSense per una libreria di terze parti senza modificare direttamente la libreria. A tale scopo, è possibile usare `intellisense.annotate` in un'estensione.  
   
  Per eseguire l'esempio, è necessario che i seguenti file JavaScript siano disponibili nel progetto:  
   
--   demoLib.js, vale a dire un file di progetto che rappresenta una libreria di terze parti.  
+- demoLib.js, vale a dire un file di progetto che rappresenta una libreria di terze parti.  
   
--   demoLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
+- demoLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
   
--   appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
+- appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
   
 ##### <a name="to-add-an-intellisense-annotation"></a>Per aggiungere un'annotazione di IntelliSense  
   
-1.  Aggiungere il codice seguente a demoLib.js.  
+1. Aggiungere il codice seguente a demoLib.js.  
   
     ```javascript  
     function someFunc(a) { };  
@@ -286,7 +286,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-2.  Aggiungere il codice seguente a demoLib.intellisense.js.  
+2. Aggiungere il codice seguente a demoLib.intellisense.js.  
   
     ```javascript  
     intellisense.annotate(someFunc, function (a) {  
@@ -302,35 +302,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso utilizzato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
+3. Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso usato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
   
     ```javascript  
     /// <reference path="demoLib.js" />  
   
     ```  
   
-4.  In appCode.js, digitare il codice riportato di seguito. Si noterà i commenti della documentazione XML nell'estensione visualizzati come le informazioni sul parametro di IntelliSense.  
+4. In appCode.js, digitare il codice riportato di seguito. Si noterà i commenti della documentazione XML nell'estensione visualizzati come le informazioni sul parametro di IntelliSense.  
   
      ![Esempio che illustra l'uso di IntelliSense. annotate](../ide/media/js-intellisense-annotate-paraminfo.png "js_intellisense_annotate_paraminfo")  
   
-5.  In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, scoprirai i commenti standard nell'estensione visualizzati come informazioni rapide di IntelliSense.  
+5. In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, scoprirai i commenti standard nell'estensione visualizzati come informazioni rapide di IntelliSense.  
   
      ![Esempio che illustra l'uso di IntelliSense. annotate](../ide/media/js-intellisense-annotations.png "js_intellisense_annotations")  
   
-###  <a name="Logging"></a> L'invio di messaggi nella finestra di Output  
+### <a name="Logging"></a> L'invio di messaggi nella finestra di Output  
  La procedura seguente illustra come inviare messaggi alla finestra di Output. È possibile inviare i messaggi per facilitare il debug delle estensioni IntelliSense.  
   
  Per eseguire l'esempio, è necessario che i seguenti file JavaScript siano disponibili nel progetto:  
   
--   exampleLib.js, vale a dire un file di progetto che rappresenta una libreria di terze parti.  
+- exampleLib.js, vale a dire un file di progetto che rappresenta una libreria di terze parti.  
   
--   exampleLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
+- exampleLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
   
--   appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
+- appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
   
 ##### <a name="to-send-a-message-to-the-output-window"></a>Per inviare un messaggio nella finestra di Output  
   
-1.  Aggiungere il codice seguente a exampleLib.js.  
+1. Aggiungere il codice seguente a exampleLib.js.  
   
     ```javascript  
     var someVar = {  
@@ -339,7 +339,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-2.  Aggiungere il codice seguente a exampleLib.intellisense.js.  
+2. Aggiungere il codice seguente a exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -357,16 +357,16 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso utilizzato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
+3. Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso usato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  Nella finestra di Output, scegli **JavaScript Language Service** nel **Mostra output di** elenco. (Per visualizzare la finestra di Output, selezionare **Output** dal menu Visualizza.)  
+4. Nella finestra di Output, scegli **JavaScript Language Service** nel **Mostra output di** elenco. (Per visualizzare la finestra di Output, selezionare **Output** dal menu Visualizza.)  
   
-5.  In appCode.js, digitare il codice riportato di seguito. Mentre si digita, la finestra di Output Mostra messaggi dal servizio di linguaggio. Il primo messaggio nella finestra di Output indica che è stato richiesto il completamento delle istruzioni per l'ambito corrente.  
+5. In appCode.js, digitare il codice riportato di seguito. Mentre si digita, la finestra di Output Mostra messaggi dal servizio di linguaggio. Il primo messaggio nella finestra di Output indica che è stato richiesto il completamento delle istruzioni per l'ambito corrente.  
   
     ```javascript  
     some  
@@ -383,9 +383,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-6.  Scegliere il **Cancella tutto** pulsante nella finestra di Output.  
+6. Scegliere il **Cancella tutto** pulsante nella finestra di Output.  
   
-7.  Digitare il codice seguente. Il primo messaggio nella finestra di output indica che è stato richiesto un elenco di membri.  
+7. Digitare il codice seguente. Il primo messaggio nella finestra di output indica che è stato richiesto un elenco di membri.  
   
     ```javascript  
     someVar.  
@@ -402,22 +402,22 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-###  <a name="Icons"></a> Modificare le icone di IntelliSense  
+### <a name="Icons"></a> Modificare le icone di IntelliSense  
  La procedura seguente viene illustrato come modificare le icone visualizzate da IntelliSense per impostazione predefinita. Questo potrebbe essere utile quando si forniscono informazioni di IntelliSense su concetti specifici di libreria, ad esempio gli spazi dei nomi, classi, interfacce ed enumerazioni.  
   
  Per i valori di icona disponibili, vedere <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>.  
   
  Per eseguire l'esempio, è necessario che i seguenti file JavaScript siano disponibili nel progetto:  
   
--   exampleLib.js, ovvero un progetto di libreria represens una terza parte del file.  
+- exampleLib.js, ovvero un progetto di libreria represens una terza parte del file.  
   
--   exampleLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
+- exampleLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
   
--   appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
+- appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
   
 ##### <a name="to-change-the-icons"></a>Per modificare le icone  
   
-1.  Aggiungere il codice seguente a exampleLib.js.  
+1. Aggiungere il codice seguente a exampleLib.js.  
   
     ```javascript  
     function Namespace(name) {  
@@ -437,7 +437,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });  
     ```  
   
-2.  Aggiungere il codice seguente a exampleLib.intellisense.js.  
+2. Aggiungere il codice seguente a exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -479,35 +479,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso utilizzato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
+3. Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso usato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, si noterà che l'icona per lo spazio dei nomi è stato modificato da "{}", come viene usato in C#.  
+4. In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, si noterà che l'icona per lo spazio dei nomi è stato modificato da "{}", come viene usato in c#.  
   
      ![Esempio che illustra l'uso della proprietà del glifo](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
-5.  In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, si noterà una nuova icona di enumerazione per il membro Enum1 e una nuova icona di classe per il membro SomeClass1.  
+5. In appCode.js, digitare il codice riportato di seguito. Durante la digitazione, si noterà una nuova icona di enumerazione per il membro Enum1 e una nuova icona di classe per il membro SomeClass1.  
   
      ![Esempio che illustra l'uso della proprietà del glifo](../ide/media/js-intellisense-glyph-class-enum.png "js_intellisense_glyph_class_enum")  
   
-###  <a name="Overriding"></a> Come evitare gli effetti di runtime sui risultati di IntelliSense  
+### <a name="Overriding"></a> Come evitare gli effetti di runtime sui risultati di IntelliSense  
  Il servizio JavaScript language service viene eseguito il codice per fornire in modo dinamico le informazioni di IntelliSense. Di conseguenza, comportamento di run-time in alcuni casi può interferire con i risultati desiderati. La procedura seguente illustra come eseguire l'override dei risultati di IntelliSense quando il comportamento in fase di esecuzione genera IntelliSense non corretto.  
   
  Per eseguire l'esempio, è necessario che i seguenti file JavaScript siano disponibili nel progetto:  
   
--   exampleLib.js, vale a dire un file di progetto che rappresenta una libreria di terze parti.  
+- exampleLib.js, vale a dire un file di progetto che rappresenta una libreria di terze parti.  
   
--   exampleLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
+- exampleLib.intellisense.js, che corrisponde all'estensione di IntelliSense. Questo file non deve essere incluso nel progetto, ma deve trovarsi nella stessa cartella di exampleLib.js.  
   
--   appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
+- appCode.js, ossia un file di progetto che rappresenta il codice dell'applicazione.  
   
 ##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>Per evitare effetti in fase di esecuzione sui risultati di IntelliSense  
   
-1.  Aggiungere il codice seguente a exampleLib.js.  
+1. Aggiungere il codice seguente a exampleLib.js.  
   
     ```javascript  
     function after(count, func) {  
@@ -521,18 +521,18 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      Nel codice precedente, la funzione con wrapping Ignora chiamate iniziale, in base al valore di `count`e non restituisce risultati.  
   
-2.  Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso utilizzato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
+2. Aggiungere la seguente direttiva di riferimento come prima riga in appCode.js. Il percorso usato in questo contesto indica che i file JavaScript sono nella stessa cartella.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-3.  In appCode.js, digitare il codice riportato di seguito. Verrà visualizzato l'elenco di identificatore invece di IntelliSense perché la funzione con wrapping non viene mai chiamata, il che significa che il `throttled` la funzione non restituisce alcun risultato.  
+3. In appCode.js, digitare il codice riportato di seguito. Verrà visualizzato l'elenco di identificatore invece di IntelliSense perché la funzione con wrapping non viene mai chiamata, il che significa che il `throttled` la funzione non restituisce alcun risultato.  
   
      ![Esempio di override dei risultati di intellisense](../ide/media/js-intellisense-override.png "js_intellisense_override")  
   
-4.  Aggiungere il codice seguente a exampleLib.intellisense.js. Si modificherà il comportamento in fase di progettazione in modo che venga visualizzato IntelliSense per la funzione con wrapping, come previsto.  
+4. Aggiungere il codice seguente a exampleLib.intellisense.js. Si modificherà il comportamento in fase di progettazione in modo che venga visualizzato IntelliSense per la funzione con wrapping, come previsto.  
   
     ```javascript  
     window.after = function (count, func) {  
@@ -541,7 +541,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-5.  In appcode. js, testare i risultati digitando lo stesso codice che è stato digitato in precedenza. Questa volta, IntelliSense offre le informazioni desiderate.  
+5. In appcode. js, testare i risultati digitando lo stesso codice che è stato digitato in precedenza. Questa volta, IntelliSense offre le informazioni desiderate.  
   
      ![Esempio di override dei risultati di IntelliSense](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   

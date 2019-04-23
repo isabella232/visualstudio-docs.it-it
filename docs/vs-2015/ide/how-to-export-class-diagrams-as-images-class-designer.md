@@ -13,27 +13,27 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049958"
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Procedura: esportare diagrammi classi come immagini (Progettazione classi)
+# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Procedura: Esportare diagrammi classi come immagini (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per esportare un diagramma classi creato dal codice nel progetto, salvarlo come immagine. Se si vogliono esportare i diagrammi classi UML, vedere [Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md).  
   
-1.  Aprire il file del diagramma classi (con estensione CD).  
+1. Aprire il file del diagramma classi (con estensione CD).  
   
-2.  Nel menu **Diagramma classi** o nel menu di scelta rapida della superficie del diagramma scegliere **Esporta diagramma come immagine**.  
+2. Nel menu **Diagramma classi** o nel menu di scelta rapida della superficie del diagramma scegliere **Esporta diagramma come immagine**.  
   
-3.  Selezionare un diagramma.  
+3. Selezionare un diagramma.  
   
-4.  Selezionare il formato desiderato.  
+4. Selezionare il formato desiderato.  
   
-5.  Scegliere **Esporta** per completare l'esportazione.  
+5. Scegliere **Esporta** per completare l'esportazione.  
   
      Per aggiornare automaticamente le immagini esportate collegate da altri documenti, esportare il diagramma nuovamente in Visual Studio.  
   

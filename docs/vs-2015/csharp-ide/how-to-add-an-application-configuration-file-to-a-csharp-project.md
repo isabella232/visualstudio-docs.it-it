@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044976"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un File di configurazione dell'applicazione per un C# progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Aggiungendo un file di configurazione dell'applicazione (file app.config) a un p
   
  Quando si compila il progetto, l'ambiente di sviluppo copia automaticamente il file app. config, modifica il nome di file della copia in modo che corrisponda il file eseguibile e quindi sposta la copia nella directory bin.  
   
-### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Per aggiungere un file di configurazione dell'applicazione al progetto C#  
+### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Per aggiungere un file di configurazione dell'applicazione al progetto c#  
   
-1.  Nella barra dei menu, scegliere **Project**, **Aggiungi nuovo elemento**.  
+1. Nella barra dei menu, scegliere **Project**, **Aggiungi nuovo elemento**.  
   
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.  
   
-2.  Espandere **Installed**, espandere **elementi di Visual C#** e quindi scegliere il **File di configurazione dell'applicazione** modello.  
+2. Espandere **Installed**, espandere **elementi di Visual c#** e quindi scegliere il **File di configurazione dell'applicazione** modello.  
   
-3.  Nella casella di testo **Nome** immettere un nome e quindi scegliere il pulsante **Aggiungi**.  
+3. Nella casella di testo **Nome** immettere un nome e quindi scegliere il pulsante **Aggiungi**.  
   
      Un file denominato app. config viene aggiunto al progetto.  
   
