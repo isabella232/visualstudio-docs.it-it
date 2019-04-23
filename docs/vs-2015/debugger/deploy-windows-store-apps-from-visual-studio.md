@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970296"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116394"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Distribuire applicazioni Windows Store da Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 
 - Distribuzione di un'app di cui viene eseguito il debug quando viene avviata da un'altra app o da un altro metodo.
 
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento
+## <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento
  Questo argomento contiene informazioni su:
 
  [Come distribuire un'app Windows Store](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 
  [Opzioni di distribuzione](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Come distribuire un'app Windows Store
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Come distribuire un'app Windows Store
  La distribuzione manuale di un'app è un processo facile:
 
-1.  Se esegui la distribuzione in un dispositivo remoto, specifica il nome o l'indirizzo IP del dispositivo nella pagina delle proprietà del progetto di avvio dell'app. I passaggi necessari sono elencati più avanti in questo argomento.
+1. Se esegui la distribuzione in un dispositivo remoto, specifica il nome o l'indirizzo IP del dispositivo nella pagina delle proprietà del progetto di avvio dell'app. I passaggi necessari sono elencati più avanti in questo argomento.
 
-2.  Sulla barra degli strumenti Visual Studio del debugger seleziona la destinazione di distribuzione nell'elenco a discesa accanto al pulsante **Avvia debug** .
+2. Sulla barra degli strumenti Visual Studio del debugger seleziona la destinazione di distribuzione nell'elenco a discesa accanto al pulsante **Avvia debug** .
 
      ![Eseguire sul computer locale](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  Scegli **Distribuzione** dal menu **Compilazione**.
+3. Scegli **Distribuzione** dal menu **Compilazione**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Come specificare un dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Come specificare un dispositivo remoto
  **Prerequisiti**
 
  Per distribuire un'app in un dispositivo remoto:
 
--   Nel dispositivo remoto deve essere installata una licenza per sviluppatori.
+- Nel dispositivo remoto deve essere installata una licenza per sviluppatori.
 
--   Visual Studio Remote Tools deve essere installato nel dispositivo remoto e Remote Debugging Monitor deve essere in esecuzione.
+- Visual Studio Remote Tools deve essere installato nel dispositivo remoto e Remote Debugging Monitor deve essere in esecuzione.
 
      La distribuzione usa il canale di rete del debugger remoto per inviare i file dell'app al dispositivo remoto.
 
@@ -101,7 +101,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 
 8. Immetti il nome di rete del dispositivo remoto nella casella **Computer remoto** o fai clic su **Trova** per scegliere il dispositivo nella finestra di dialogo **Seleziona connessione debugger remoto** .
 
-##  <a name="BKMK_Deployment_options"></a> Opzioni di distribuzione
+## <a name="BKMK_Deployment_options"></a> Opzioni di distribuzione
  Di seguito sono indicate le opzioni di distribuzione che puoi impostare nella pagina delle proprietà Debug del progetto di avvio.
 
  **Consenti loopback della rete** per motivi di sicurezza, un [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app viene installata in modalità standard non è consentito effettuare chiamate di rete per il dispositivo in cui è installata. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], dovrai testarla senza l'esenzione.

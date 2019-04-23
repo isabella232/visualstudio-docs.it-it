@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089978"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: Impostare punti di interruzione in flussi di lavoro
 Quando si usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], è possibile impostare punti di interruzione nei flussi di lavoro grafici come si farebbe nel codice Visual Basic o C#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.  
@@ -32,9 +32,9 @@ Quando si usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], è possibile impostare p
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Per impostare un punto di interruzione su un'attività nella visualizzazione Progettazione  
   
-1.  Selezionare l'attività in corrispondenza della quale si desidera che il debugger si interrompa.  
+1. Selezionare l'attività in corrispondenza della quale si desidera che il debugger si interrompa.  
   
-2.  Nel **Debug** dal menu **Attiva/Disattiva punto di interruzione**. Verrà visualizzata un'icona rossa sul bordo superiore sinistro dell'attività.  
+2. Nel **Debug** dal menu **Attiva/Disattiva punto di interruzione**. Verrà visualizzata un'icona rossa sul bordo superiore sinistro dell'attività.  
   
      In alternativa, è anche possibile premere il collegamento **F9** chiave dopo aver selezionato l'attività o si può fare doppio clic su attività e selezionare **punto di interruzione** quindi **Inserisci punto di interruzione**dal menu di scelta rapida.  
   

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089354"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>La cartella di lavoro utilizzata per creare il progetto contiene controlli ActiveX non caricabili nella finestra di progettazione
   Questo errore viene visualizzato quando si aggiunge a livello di codice un controllo a un documento di Word o a un foglio di lavoro di Excel, si salva il documento o la cartella di lavoro e si crea quindi una nuova soluzione a livello di documento basata sul documento o sulla cartella di lavoro.
@@ -26,11 +26,11 @@ ms.locfileid: "56638192"
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 
-1.  Aprire il documento o la cartella di lavoro.
+1. Aprire il documento o la cartella di lavoro.
 
-2.  Rimuovere i controlli che sono stati aggiunti in fase di esecuzione. Tale scopo, è possibile selezionarli nel documento o cartella di lavoro e premere il **eliminare** chiave.
+2. Rimuovere i controlli che sono stati aggiunti in fase di esecuzione. Tale scopo, è possibile selezionarli nel documento o cartella di lavoro e premere il **eliminare** chiave.
 
-3.  Creare una soluzione a livello di documento basata sul documento o sulla cartella di lavoro.
+3. Creare una soluzione a livello di documento basata sul documento o sulla cartella di lavoro.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

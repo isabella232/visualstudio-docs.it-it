@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091018"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Progetti di Office in ambiente di Visual Studio
   L'esperienza di sviluppo relativa ai progetti di Microsoft Office è simile a quella per altri tipi di progetti in Visual Studio, ad esempio progetti Windows Form. Quando si crea o si apre un progetto di Office, gli elementi del progetto vengono visualizzati in **Esplora soluzioni**. Per i progetti a livello di documento, il documento (ossia il documento di Word o la cartella di lavoro di Excel) viene aperto in Visual Studio e funziona come una finestra di progettazione visiva.
@@ -73,7 +73,7 @@ ms.locfileid: "54865983"
 ### <a name="temporary-certificates"></a>Certificati temporanei
  I progetti di Office includono anche un certificato temporaneo denominato *Nome progetto_TemporaryKey.pfx*. Questo certificato viene usato per firmare i manifesti dell'applicazione e della distribuzione per il progetto durante lo sviluppo. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md) e [soluzioni Office Secure](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> File di progetto nascosti
+### <a name="hiddenfiles"></a> File di progetto nascosti
  Alcuni file di progetto sono nascosti per impostazione predefinita. Questi file vengono generati da Visual Studio e si differenziano in base al tipo di progetto. Per visualizzare i file nascosti, fare clic su **Mostra tutti i file** in **Esplora soluzioni**.
 
  Non modificare i file di progetto nascosti. La modifica diretta di questi file non è supportata e potrebbe danneggiare il progetto. I file di progetto nascosti vengono rigenerati ogni volta che vengono apportate determinate modifiche al documento. Se si apportano modifiche manuali a un file di progetto nascosto, tali modifiche vengono perse quando il file viene rigenerato.

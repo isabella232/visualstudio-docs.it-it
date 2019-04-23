@@ -11,61 +11,61 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93d2e85455544a52d7ed6e9d49c5e93b5c771a3f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091317"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limitare la strumentazione a specifiche DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limite di strumentazione a specifiche DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Usando il metodo di profilatura della strumentazione, è possibile limitare la raccolta dei dati di profilatura a una o più DLL di un'applicazione. Per profilare una o più DLL di un'applicazione, creare una sessione di prestazioni che includa i file con estensione dll come destinazioni. È possibile specificare le DLL da profilare come progetti in una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o come file binari indipendenti.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Per limitare la strumentazione a specifiche DLL di una soluzione di Visual Studio  
   
-1.  Aprire la soluzione contenente la DLL in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+1. Aprire la soluzione contenente la DLL in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
-2.  Nel menu **Analizza** selezionare **Avvia Creazione guidata sessione di prestazioni**.  
+2. Nel menu **Analizza** selezionare **Avvia Creazione guidata sessione di prestazioni**.  
   
-3.  Scegliere **Strumentazione** come metodo di profilatura e quindi fare clic su **Avanti**.  
+3. Scegliere **Strumentazione** come metodo di profilatura e quindi fare clic su **Avanti**.  
   
-4.  In **Specificare le destinazioni da profilare** selezionare il nome del progetto con estensione dll e quindi fare clic su **Avanti**.  
+4. In **Specificare le destinazioni da profilare** selezionare il nome del progetto con estensione dll e quindi fare clic su **Avanti**.  
   
-5.  Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.  
+5. Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.  
   
-6.  Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi selezionare **Aggiungi progetto di destinazione**.  
+6. Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi selezionare **Aggiungi progetto di destinazione**.  
   
-7.  Dall'elenco **Aggiungi progetto di destinazione** selezionare il progetto eseguibile da usare per verificare la DLL.  
+7. Dall'elenco **Aggiungi progetto di destinazione** selezionare il progetto eseguibile da usare per verificare la DLL.  
   
      Facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.  
   
-8.  Per impedire la raccolta di dati per un progetto aggiunto, fare clic con il pulsante destro del mouse sul nome del progetto e quindi deselezionare la casella di controllo **Strumento**.  
+8. Per impedire la raccolta di dati per un progetto aggiunto, fare clic con il pulsante destro del mouse sul nome del progetto e quindi deselezionare la casella di controllo **Strumento**.  
   
 ### <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>Per specificare determinate DLL da profilare come file binari indipendenti  
   
-1.  Aprire [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+1. Aprire [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
-2.  Nel menu **Analizza** selezionare **Avvia Creazione guidata sessione di prestazioni**.  
+2. Nel menu **Analizza** selezionare **Avvia Creazione guidata sessione di prestazioni**.  
   
-3.  In **Specificare le destinazioni da profilare** selezionare **Profilatura di una libreria a collegamento dinamico (.DLL)** e quindi fare clic su **Avanti**.  
+3. In **Specificare le destinazioni da profilare** selezionare **Profilatura di una libreria a collegamento dinamico (.DLL)** e quindi fare clic su **Avanti**.  
   
-4.  Nella seconda pagina della procedura guidata eseguire i passaggi seguenti:  
+4. Nella seconda pagina della procedura guidata eseguire i passaggi seguenti:  
   
-    -   Digitare il percorso e il nome del file con estensione dll da profilare in **Percorso DLL**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Libreria a collegamento dinamico da profilare**. Si noti che è necessario specificare la copia del file con estensione dll che verrà avviato dal file eseguibile (exe) che si seleziona al passaggio successivo.  
+    - Digitare il percorso e il nome del file con estensione dll da profilare in **Percorso DLL**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Libreria a collegamento dinamico da profilare**. Si noti che è necessario specificare la copia del file con estensione dll che verrà avviato dal file eseguibile (exe) che si seleziona al passaggio successivo.  
   
-    -   Digitare il percorso e il nome del file eseguibile (exe) che verrà usato per verificare il file con estensione dll in **Percorso eseguibile**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Eseguibile da avviare**.  
+    - Digitare il percorso e il nome del file eseguibile (exe) che verrà usato per verificare il file con estensione dll in **Percorso eseguibile**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Eseguibile da avviare**.  
   
-    -   Facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.  
+    - Facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.  
   
-    -   Scegliere **Avanti**.  
+    - Scegliere **Avanti**.  
   
-5.  Scegliere **Strumentazione** come metodo di profilatura e quindi fare clic su **Avanti**.  
+5. Scegliere **Strumentazione** come metodo di profilatura e quindi fare clic su **Avanti**.  
   
-6.  Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.  
+6. Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.  
   
-7.  Facoltativo. Per aggiungere altri file con estensione dll, fare clic con il pulsante destro del mouse su **Destinazioni** e quindi selezionare **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.  
+7. Facoltativo. Per aggiungere altri file con estensione dll, fare clic con il pulsante destro del mouse su **Destinazioni** e quindi selezionare **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.  
   
     > [!NOTE]
     >  Non specificare il file eseguibile (exe) che verifica le DLL.  

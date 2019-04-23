@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091785"
 ---
 # <a name="graphics-state"></a>Stato grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
   
 ##### <a name="to-change-the-state-view"></a>Per modificare la visualizzazione stato  
   
--   Nell'angolo superiore sinistro della finestra Stato, sotto la barra del titolo, scegliere il pulsante che corrisponde allo stile di visualizzazione da usare.  
+- Nell'angolo superiore sinistro della finestra Stato, sotto la barra del titolo, scegliere il pulsante che corrisponde allo stile di visualizzazione da usare.  
   
-    -   **Mostra la visualizzazione stato di input API**  
+    - **Mostra la visualizzazione stato di input API**  
   
-    -   **Mostra la visualizzazione stato logico**  
+    - **Mostra la visualizzazione stato logico**  
   
-    -   **Mostra la visualizzazione stato bloccato**  
+    - **Mostra la visualizzazione stato bloccato**  
   
 > [!IMPORTANT]
 >  È necessario bloccare lo stato nelle visualizzazioni **Stato di input API** o **Stato logico** perché sia mostrato nella **Visualizzazione stato bloccato**.  
@@ -67,8 +67,8 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
   
 ##### <a name="to-pin-state-in-place"></a>Per bloccare lo stato sul posto  
   
-1.  Nella finestra Stato individuare lo stato a cui si è interessati. Può essere necessario espandere lo stato di livello superiore per individuare i dettagli cercati.  
+1. Nella finestra Stato individuare lo stato a cui si è interessati. Può essere necessario espandere lo stato di livello superiore per individuare i dettagli cercati.  
   
-2.  Posizionare il cursore sullo stato a cui si è interessati. A sinistra dell'elemento di stato viene visualizzata un'icona Blocca.  
+2. Posizionare il cursore sullo stato a cui si è interessati. A sinistra dell'elemento di stato viene visualizzata un'icona Blocca.  
   
-3.  Scegliere l'icona Blocca per bloccare l'elemento di stato sul posto.
+3. Scegliere l'icona Blocca per bloccare l'elemento di stato sul posto.

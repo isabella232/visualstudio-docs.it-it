@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117759"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  Questo documento illustra le attività seguenti:  
   
--   Rimozione di nodi da un grafico  
+- Rimozione di nodi da un grafico  
   
--   Aggiunta di nodi a un grafico  
+- Aggiunta di nodi a un grafico  
   
--   Impostazione delle proprietà del nodo  
+- Impostazione delle proprietà del nodo  
   
--   Connessione ai nodi  
+- Connessione ai nodi  
   
 ## <a name="creating-a-flat-color-shader"></a>Creazione di uno shader con colore uniforme  
  È possibile implementare uno shader con colore uniforme scrivendo il valore di colore di una costante di colore RGB nel colore di output finale.  
@@ -59,6 +59,6 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
+ [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

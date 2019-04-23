@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089564"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che l'elemento dell'interfaccia siano coerenti con funzionalità simili, usare nomi di token esistenti in file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.
@@ -22,11 +22,11 @@ Questo articolo descrive gli elementi dell'interfaccia utente comuni e i nomi di
 
 Assicurarsi di usare correttamente i nomi di token:
 
--   **Usare i nomi di token basati su funzione e non al colore stesso.** I colori condivisi comuni sono associati a elementi dell'interfaccia specifici e destinati solo a essere usati per le stesse funzionalità o altre simili. Ad esempio, evitare di riutilizzare il colore di una casella combinata premuta per un'animazione di stato rotante solo perché si ha una preferenza per questo colore. Le funzioni della casella combinata e dell'animazione sono diverse, e se il colore associato alla casella combinata cambia, non potrebbe essere non è più un colore appropriato per l'elemento animazione. Un uso coerente del colore aiuta a orientare correttamente gli utenti e a impedire confusione.
+- **Usare i nomi di token basati su funzione e non al colore stesso.** I colori condivisi comuni sono associati a elementi dell'interfaccia specifici e destinati solo a essere usati per le stesse funzionalità o altre simili. Ad esempio, evitare di riutilizzare il colore di una casella combinata premuta per un'animazione di stato rotante solo perché si ha una preferenza per questo colore. Le funzioni della casella combinata e dell'animazione sono diverse, e se il colore associato alla casella combinata cambia, non potrebbe essere non è più un colore appropriato per l'elemento animazione. Un uso coerente del colore aiuta a orientare correttamente gli utenti e a impedire confusione.
 
--   **Usare colori di sfondo e del testo nella combinazione corretta.** I colori di sfondo destinati a essere usati con il testo implicano un colore del testo associato. Non usare colori del testo diversi da quelli specificati per un determinato sfondo. Se non c'è un colore del testo associato, non usare tale colore di sfondo per alcuna superficie in cui si prevede di visualizzare il testo. Altre combinazioni di colori di sfondo e testo potrebbero comportare un'interfaccia illeggibile.
+- **Usare colori di sfondo e del testo nella combinazione corretta.** I colori di sfondo destinati a essere usati con il testo implicano un colore del testo associato. Non usare colori del testo diversi da quelli specificati per un determinato sfondo. Se non c'è un colore del testo associato, non usare tale colore di sfondo per alcuna superficie in cui si prevede di visualizzare il testo. Altre combinazioni di colori di sfondo e testo potrebbero comportare un'interfaccia illeggibile.
 
--   **Usare colori dei controlli appropriati per la rispettiva posizione.** In determinati stati alcuni controlli di Visual Studio non dispongono i colori di sfondo e dei bordi separati. Al contrario, selezionano questi colori dalle superfici sottostanti. Assicurarsi di usare sempre i nomi di token appropriati per la posizione in cui si posiziona il controllo.
+- **Usare colori dei controlli appropriati per la rispettiva posizione.** In determinati stati alcuni controlli di Visual Studio non dispongono i colori di sfondo e dei bordi separati. Al contrario, selezionano questi colori dalle superfici sottostanti. Assicurarsi di usare sempre i nomi di token appropriati per la posizione in cui si posiziona il controllo.
 
 > [!IMPORTANT]
 > Non usare i token trovati nelle categorie "Pagina iniziale" o "Cider".
@@ -623,13 +623,13 @@ Quando è possibile, usare il controllo di ricerca comune fornito dall'ambiente 
 
 Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a vicenda:
 
--   "Con stato attivo" e "con stato non attivo" indicano se il cursore si trova o meno nella casella di testo.
+- "Con stato attivo" e "con stato non attivo" indicano se il cursore si trova o meno nella casella di testo.
 
--   "Attivo" e "inattivo" indicano se l'utente ha inserito una query di ricerca nella casella di testo.
+- "Attivo" e "inattivo" indicano se l'utente ha inserito una query di ricerca nella casella di testo.
 
--   "Passaggio del mouse" significa che l'utente ha posizionato il cursore del mouse sulla casella di ricerca (questo stato sostituisce tutti gli altri).
+- "Passaggio del mouse" significa che l'utente ha posizionato il cursore del mouse sulla casella di ricerca (questo stato sostituisce tutti gli altri).
 
--   "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.
+- "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.
 
 ![Search box (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Casella di ricerca (con linea rossa)
 
@@ -854,7 +854,7 @@ Il menu di riepilogo a discesa casella di ricerca può essere leggermente più c
 | Sfondo del collegamento | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Cursori sfumatura per questo token non utilizzato nell'interfaccia utente con temi.) |
 | Primo piano (testo del collegamento) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Visualizzazioni dell'albero
+### <a name="BKMK_TreeView"></a> Visualizzazioni dell'albero
 Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora Server e visualizzazione classi, implementano uno schema organizzativo gerarchico i cui colori sono controllati da nomi di colori nella `TreeView` categoria. Tutti gli elementi in una visualizzazione albero hanno colori di sfondo e del testo. Gli elementi che hanno elementi figlio annidati hanno anche glifi che indicano se ogni elemento è espanso o compresso.
 
 ![Visualizzazione albero (con linea rossa)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Visualizzazione albero (con linea rossa)
@@ -1037,7 +1037,7 @@ La finestra Progettazione manifesto è stata progettata come strumento per sempl
 
 ## <a name="command-structures"></a>Strutture dei comandi
 
-###  <a name="BKMK_CommandMenus"></a> Menus
+### <a name="BKMK_CommandMenus"></a> Menus
 I menu possono trovarsi in diverse posizioni all'interno di Visual Studio: barra dei menu principale, incorporata in finestre di documento o lo strumento, o sul pulsante destro del mouse in diversi punti dell'IDE. Le implementazioni dei menu associati ad altri elementi dell'interfaccia utente vengono descritte nella sezione relativa al rispettivo elemento. È preferibile usare sempre l'implementazione dei menu standard fornita dall'ambiente di Visual Studio. Tuttavia, in alcuni casi rari si potrebbe non avere accesso ai menu standard di Visual Studio. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri menu in Visual Studio.
 
 ![Menu di Visual Studio (con linea rossa)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Menu di Visual Studio (con linea rossa)
@@ -1278,7 +1278,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Primo piano (testo) | `Environment.CommandBarTextInactive` |
 | Bordo | N/D |
 
-####  <a name="BKMK_CommandComboBox"></a> Caselle combinate di barra dei comandi
+#### <a name="BKMK_CommandComboBox"></a> Caselle combinate di barra dei comandi
 
 > [!IMPORTANT]
 > Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se l'elenco a discesa non contiene un'area di testo modificabile, usare i token di colore per [sulla barra dei menu a discesa comandi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,7 +1410,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Sfondo | nessuno |
 | Primo piano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Comando barra elenchi a discesa
+#### <a name="BKMK_CommandDropDown"></a> Comando barra elenchi a discesa
 
 > [!IMPORTANT]
 >  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa include un'area di testo modificabile, usare i token di colore per [sulla barra dei caselle combinate comandi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -1713,9 +1713,9 @@ Le schede dei documenti si trovano nel canale delle schede per indicare i docume
 #### <a name="open-document-tabs"></a>Schede dei documenti aperti
 Per ogni documento aperto è presente una scheda nel canale delle schede dei documenti che ne visualizza il nome. I documenti possono essere selezionati o aperti in background e le rispettive schede riflettono questi stati:
 
--   La scheda selezionata rappresenta il documento attualmente visualizzato nell'area dei documenti. Una scheda selezionata ha un bordo di documento che si estende fino al bordo superiore dell'area dei documenti.
+- La scheda selezionata rappresenta il documento attualmente visualizzato nell'area dei documenti. Una scheda selezionata ha un bordo di documento che si estende fino al bordo superiore dell'area dei documenti.
 
--   Le schede in secondo piano sono tutte le schede dei documenti diverse da quella attualmente selezionata. Se selezionate, diventano la scheda selezionata e acquisiscono tutti i colori di sfondo, del bordo e del testo da questi nomi di token.
+- Le schede in secondo piano sono tutte le schede dei documenti diverse da quella attualmente selezionata. Se selezionate, diventano la scheda selezionata e acquisiscono tutti i colori di sfondo, del bordo e del testo da questi nomi di token.
 
 ![Scheda documento aperto (con linea rossa)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")<br />Scheda documento aperto (con linea rossa)
 

@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092123"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: Creare un manifesto del prodotto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 #### <a name="to-create-the-product-manifest"></a>Per creare il manifesto del prodotto  
   
-1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package.  
+1. Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package.  
   
-2.  In Visual Studio, creare un nuovo file XML denominato `product.xml`e salvarlo nella cartella c:\package.  
+2. In Visual Studio, creare un nuovo file XML denominato `product.xml`e salvarlo nella cartella c:\package.  
   
-3.  Aggiungere il seguente codice XML per descrivere il codice di prodotto e lo spazio dei nomi XML per il pacchetto. Sostituire il codice prodotto con un identificatore univoco per il pacchetto.  
+3. Aggiungere il seguente codice XML per descrivere il codice di prodotto e lo spazio dei nomi XML per il pacchetto. Sostituire il codice prodotto con un identificatore univoco per il pacchetto.  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Aggiungere codice XML per specificare che il pacchetto ha una dipendenza. Questo esempio Usa una dipendenza su Microsoft Windows Installer 3.1.  
+4. Aggiungere codice XML per specificare che il pacchetto ha una dipendenza. Questo esempio Usa una dipendenza su Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
       </RelatedProducts>  
     ```  
   
-5.  Aggiungere codice XML per elencare tutti i file nel pacchetto del programma di avvio automatico. Questo esempio Usa il nome file del pacchetto CorePackage. msi.  
+5. Aggiungere codice XML per elencare tutti i file nel pacchetto del programma di avvio automatico. Questo esempio Usa il nome file del pacchetto CorePackage. msi.  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
     </PackageFiles>  
     ```  
   
-6.  Copiare o spostare il file CorePackage. msi nella cartella c:\package.  
+6. Copiare o spostare il file CorePackage. msi nella cartella c:\package.  
   
-7.  Aggiungere codice XML per installare il pacchetto usando i comandi di avvio automatico. Il programma di bootstrap aggiunge automaticamente il **/qn** flag per il file con estensione msi, che consente l'installazione invisibile all'utente. Se il file è un .exe, il programma di avvio viene eseguito il file .exe mediante la shell. Il codice XML seguente non Mostra argomenti per CorePackage. msi, ma è possibile inserire l'argomento della riga di comando in attributo Arguments.  
+7. Aggiungere codice XML per installare il pacchetto usando i comandi di avvio automatico. Il programma di bootstrap aggiunge automaticamente il **/qn** flag per il file con estensione msi, che consente l'installazione invisibile all'utente. Se il file è un .exe, il programma di avvio viene eseguito il file .exe mediante la shell. Il codice XML seguente non Mostra argomenti per CorePackage. msi, ma è possibile inserire l'argomento della riga di comando in attributo Arguments.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Aggiungere il codice XML seguente per verificare se è installato il pacchetto di programma di avvio automatico. Sostituire il codice prodotto con il GUID per il componente ridistribuibile.  
+8. Aggiungere il codice XML seguente per verificare se è installato il pacchetto di programma di avvio automatico. Sostituire il codice prodotto con il GUID per il componente ridistribuibile.  
   
     ```  
     <InstallChecks>  

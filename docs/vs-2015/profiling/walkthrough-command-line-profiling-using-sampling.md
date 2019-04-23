@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
+title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117434"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Riga di comando di profilatura tramite campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come eseguire la profilatura di un'applicazione mediante gli strumenti da riga di comando e il campionamento per identificare i problemi di prestazioni.  
@@ -29,21 +29,21 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
  In questa procedura dettagliata vengono illustrate le operazioni seguenti:  
   
--   Eseguire la profilatura di un'applicazione usando gli strumenti della riga di comando e il campionamento.  
+- Eseguire la profilatura di un'applicazione usando gli strumenti della riga di comando e il campionamento.  
   
--   Analizzare i risultati della profilatura campionati per individuare e risolvere i problemi di prestazioni.  
+- Analizzare i risultati della profilatura campionati per individuare e risolvere i problemi di prestazioni.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   Conoscenza a livello intermedio di [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
+- Conoscenza a livello intermedio di [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
   
--   Conoscenza a livello intermedio dell'uso degli strumenti della riga di comando  
+- Conoscenza a livello intermedio dell'uso degli strumenti della riga di comando  
   
--   Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.  
+- Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.  
   
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilatura dalla riga di comando tramite il metodo di campionamento  
  Il campionamento è un metodo di profilatura mediante il quale viene eseguito periodicamente il polling di un processo specifico per determinare la funzione attiva. I dati risultanti forniscono un conteggio della frequenza con cui la funzione si trovava all'inizio dello stack di chiamate quando è stato eseguito il campionamento del processo.  
@@ -53,19 +53,19 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Per eseguire la profilatura dell'applicazione PeopleTrax tramite il metodo di campionamento  
   
-1.  Installare l'applicazione di esempio PeopleTrax e compilare la versione di rilascio dell'applicazione.  
+1. Installare l'applicazione di esempio PeopleTrax e compilare la versione di rilascio dell'applicazione.  
   
-2.  Aprire una finestra del prompt dei comandi e aggiungere la directory degli strumenti di profilatura alla variabile di ambiente Path locale.  
+2. Aprire una finestra del prompt dei comandi e aggiungere la directory degli strumenti di profilatura alla variabile di ambiente Path locale.  
   
-3.  Cambiare la directory di lavoro, passando alla directory che contiene i file binari di PeopleTrax.  
+3. Cambiare la directory di lavoro, passando alla directory che contiene i file binari di PeopleTrax.  
   
-4.  Digitare il comando seguente per impostare le variabili di ambiente appropriate:  
+4. Digitare il comando seguente per impostare le variabili di ambiente appropriate:  
   
     ```  
     VSPerfCLREnv /sampleon  
     ```  
   
-5.  Avviare la profilatura eseguendo VSPerfCmd.exe, ovvero lo strumento da riga di comando che controlla il profiler. Il comando seguente avvia l'applicazione e il profiler in modalità di campionamento:  
+5. Avviare la profilatura eseguendo VSPerfCmd.exe, ovvero lo strumento da riga di comando che controlla il profiler. Il comando seguente avvia l'applicazione e il profiler in modalità di campionamento:  
   
     ```  
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe  
@@ -73,13 +73,13 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
      Il processo del profiler viene avviato e collegato al processo PeopleTrax.exe. Il processo del profiler inizia a scrivere i dati di profilatura raccolti nel file di report.  
   
-6.  Fare clic su **Get People**.  
+6. Fare clic su **Get People**.  
   
-7.  Fare clic su **ExportData**.  
+7. Fare clic su **ExportData**.  
   
      Verrà aperto il Blocco note con un nuovo file che contiene i dati esportati da **PeopleTrax**.  
   
-8.  Chiudere il Blocco note e quindi chiudere l'applicazione **PeopleTrax**.  
+8. Chiudere il Blocco note e quindi chiudere l'applicazione **PeopleTrax**.  
   
 9. Arrestare il profiler. Digitare il comando seguente:  
   
@@ -95,11 +95,11 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 11. I dati di profilatura vengono archiviati nel file con estensione vsp. Analizzare i risultati usando uno dei metodi seguenti:  
   
-    -   Aprire il file con estensione vsp nell'IDE di Visual Studio.  
+    - Aprire il file con estensione vsp nell'IDE di Visual Studio.  
   
          oppure  
   
-    -   Generare un file con valori delimitati da virgole (CSV) tramite lo strumento da riga di comando VSPerfReport.exe. Per generare report da usare all'esterno dell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], usare il comando seguente:  
+    - Generare un file con valori delimitati da virgole (CSV) tramite lo strumento da riga di comando VSPerfReport.exe. Per generare report da usare all'esterno dell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], usare il comando seguente:  
   
         ```  
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  

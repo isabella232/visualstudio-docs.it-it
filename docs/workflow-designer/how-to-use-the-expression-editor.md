@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117252"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: Usare l’editor espressioni
 
@@ -36,18 +36,18 @@ Il **Editor di espressioni** si comporta come segue:
 
 ## <a name="use-the-expression-editor"></a>Usare l'editor espressioni
 
-1.  In Visual Studio, aprire un progetto di flusso di lavoro nuova o esistente.
+1. In Visual Studio, aprire un progetto di flusso di lavoro nuova o esistente.
 
-2.  Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.
+2. Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.
 
     > [!NOTE]
     > Più attività del flusso di lavoro presentano editor espressioni. Gli oggetti TextBlock vengono inoltre visualizzati nella finestra di progettazione variabili, nella finestra di progettazione argomenti e nella finestra di progettazione argomenti dinamici. L'attività <xref:System.Activities.Statements.Assign> viene usata come esempio.
 
-3.  Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.
+3. Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.
 
      Le stringhe con filigrana di colore grigio  **\<al >** e  **\<immettere un'espressione VB >** è il valore predefinito di stringhe di testo per gli editor di espressioni nel <xref:System.Activities.Statements.Assign> attività.
 
-4.  Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.
+4. Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.
 
      Al termine, selezionare una regione o area di fuori l'Editor di espressioni per spostare lo stato attivo a un'altra parte della finestra di progettazione. Spostando lo stato attivo, il compilatore convalida l'espressione, come descritto in precedenza.
 

@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c96e9384d561aeda3a966ca8bc5b305a9351e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089445"
 ---
 # <a name="project-priority"></a>Priorità di progetto
 In genere, un elemento del progetto è un membro di un solo progetto nella soluzione. Di conseguenza, l'IDE di può facilmente determinare quale progetto viene utilizzato per aprire l'elemento. Tuttavia, se un elemento è un membro di più di un progetto, l'IDE usa uno schema di priorità per determinare il migliore progetto per aprire l'elemento.
 
  Nell'elenco seguente viene illustrato lo schema di priorità di progetto:
 
--   Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> metodo per ogni progetto nella soluzione per determinare se il documento è un membro di tale progetto.
+- Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> metodo per ogni progetto nella soluzione per determinare se il documento è un membro di tale progetto.
 
--   Se il documento è un membro del progetto, il progetto risponde con una priorità di progetto viene assegnata in base alla relativa funzionalità di gestione di tale documento. Ad esempio, un progetto in linguaggio risponde con una priorità assoluta per i file di origine della lingua ma risponde con una priorità più bassa per un tipo di file non riconosciuto che non viene usato come parte del processo di compilazione.
+- Se il documento è un membro del progetto, il progetto risponde con una priorità di progetto viene assegnata in base alla relativa funzionalità di gestione di tale documento. Ad esempio, un progetto in linguaggio risponde con una priorità assoluta per i file di origine della lingua ma risponde con una priorità più bassa per un tipo di file non riconosciuto che non viene usato come parte del processo di compilazione.
 
--   I progetti che forniscono gli editor personalizzati, specifico del progetto o le finestre di progettazione per un documento ricevono anche una priorità alta.
+- I progetti che forniscono gli editor personalizzati, specifico del progetto o le finestre di progettazione per un documento ricevono anche una priorità alta.
 
--   Il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione fornisce valori di priorità dei documenti.
+- Il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione fornisce valori di priorità dei documenti.
 
--   Il progetto che specifica la priorità più elevata viene fornito il contesto per aprire il documento. Se due progetti di restituiscono i valori di uguale priorità, il progetto attivo è preferito. Se nessun progetto nella soluzione risponde che è possibile aprire il documento, l'IDE inserisce il documento nel progetto file esterni. Per altre informazioni, vedere [progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md).
+- Il progetto che specifica la priorità più elevata viene fornito il contesto per aprire il documento. Se due progetti di restituiscono i valori di uguale priorità, il progetto attivo è preferito. Se nessun progetto nella soluzione risponde che è possibile aprire il documento, l'IDE inserisce il documento nel progetto file esterni. Per altre informazioni, vedere [progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md)

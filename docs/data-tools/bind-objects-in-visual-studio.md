@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091759"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Associare oggetti come origini dati in Visual Studio
 
@@ -40,25 +40,25 @@ In generale, gli oggetti personalizzati non richiedono qualsiasi interfacce spec
 
 Anche se esistono innumerevoli modalità per implementare la logica dell'applicazione quando si lavora con gli oggetti come origine dati, per SQL database vi sono alcune operazioni standard che possono essere semplificate utilizzando gli oggetti TableAdapter generate Visual Studio. Questa pagina illustra come implementare questi processi standard usando oggetti TableAdapter. Non utilizzo come guida per la creazione di oggetti personalizzati. Ad esempio, è in genere eseguirà le operazioni standard seguente indipendentemente dall'implementazione specifica di oggetti o per la logica dell'applicazione:
 
--   Il caricamento dei dati in oggetti (in genere da un database).
+- Il caricamento dei dati in oggetti (in genere da un database).
 
--   Creazione di un insieme di oggetti tipizzati.
+- Creazione di un insieme di oggetti tipizzati.
 
--   Aggiunta e rimozione di oggetti da una raccolta.
+- Aggiunta e rimozione di oggetti da una raccolta.
 
--   Visualizzazione dati dell'oggetto per gli utenti in un form.
+- Visualizzazione dati dell'oggetto per gli utenti in un form.
 
--   La modifica o modifica i dati in un oggetto.
+- La modifica o modifica i dati in un oggetto.
 
--   Salvataggio dei dati dagli oggetti nel database.
+- Salvataggio dei dati dagli oggetti nel database.
 
 ### <a name="load-data-into-objects"></a>Caricare i dati in oggetti
 
 Per questo esempio, caricare dati in oggetti usando oggetti TableAdapter. Per impostazione predefinita, vengono creati oggetti TableAdapter con due tipi di metodi per recupero i dati da un database e popolano le tabelle di dati.
 
--   Il `TableAdapter.Fill` metodo compila una tabella di dati esistente con i dati restituiti.
+- Il `TableAdapter.Fill` metodo compila una tabella di dati esistente con i dati restituiti.
 
--   Il `TableAdapter.GetData` metodo restituisce una nuova tabella dati popolata con i dati.
+- Il `TableAdapter.GetData` metodo restituisce una nuova tabella dati popolata con i dati.
 
 Il modo più semplice per caricare gli oggetti personalizzati con i dati consiste nel chiamare il `TableAdapter.GetData` (metodo), scorrere la raccolta di righe della tabella di dati restituiti in ciclo e popolare ogni oggetto con i valori in ogni riga. È possibile creare un `GetData` metodo che restituisce una tabella dati popolata per le query aggiunte a un oggetto TableAdapter.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091564"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Progettare i file XML comando table (vsct)
 Una tabella comandi XML (*vsct*) file descrive il layout e l'aspetto degli elementi di comando per un pacchetto VSPackage. Gli elementi di comando includono i pulsanti, caselle combinate, menu, barre degli strumenti e i gruppi di voci di comando. Questo articolo descrive XML comando tabella file, modo influiscano menu e voci di comando e come crearli.
@@ -98,19 +98,19 @@ Il nuovo compilatore *vsct.exe*, consente di compilare entrambe *CTC* e *vsct* f
 ## <a name="vsct-file-design-guidelines"></a>linee guida di progettazione di file con estensione vsct
  Per progettare correttamente un *vsct* file, seguire queste linee guida.
 
--   Comandi possono essere posizionati solo in gruppi, i gruppi possono essere inseriti solo nei menu e menu possono essere posizionati solo in gruppi. Solo i menu sono effettivamente visualizzati nell'IDE, gruppi e i comandi non lo sono.
+- Comandi possono essere posizionati solo in gruppi, i gruppi possono essere inseriti solo nei menu e menu possono essere posizionati solo in gruppi. Solo i menu sono effettivamente visualizzati nell'IDE, gruppi e i comandi non lo sono.
 
--   Sottomenu non possono essere assegnati direttamente a un menu, ma devono essere assegnati a un gruppo, che a sua volta viene assegnato a un menu.
+- Sottomenu non possono essere assegnati direttamente a un menu, ma devono essere assegnati a un gruppo, che a sua volta viene assegnato a un menu.
 
--   I comandi, sottomenu e gruppi assegnabili a un gruppo padre o menu usando il campo padre della loro definizione direttiva.
+- I comandi, sottomenu e gruppi assegnabili a un gruppo padre o menu usando il campo padre della loro definizione direttiva.
 
--   Organizzazione di una tabella comandi esclusivamente tramite i campi padre nelle direttive di ha un limite significativo. Le direttive che definiscono gli oggetti possono accettare un solo padre argomento.
+- Organizzazione di una tabella comandi esclusivamente tramite i campi padre nelle direttive di ha un limite significativo. Le direttive che definiscono gli oggetti possono accettare un solo padre argomento.
 
--   Riutilizzo di comandi, gruppi o sottomenu richiede l'uso di una direttiva di nuovo per creare una nuova istanza dell'oggetto con il proprio `GUID:ID` coppia.
+- Riutilizzo di comandi, gruppi o sottomenu richiede l'uso di una direttiva di nuovo per creare una nuova istanza dell'oggetto con il proprio `GUID:ID` coppia.
 
--   Ogni `GUID:ID` coppia deve essere univoca. Riutilizzo di un comando, ad esempio, situato in un menu, una barra degli strumenti o in un menu di scelta rapida viene gestito dal <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.
+- Ogni `GUID:ID` coppia deve essere univoca. Riutilizzo di un comando, ad esempio, situato in un menu, una barra degli strumenti o in un menu di scelta rapida viene gestito dal <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.
 
--   Comandi sia sottomenu possono anche essere assegnati a più gruppi e i gruppi possono essere assegnati a più menu usando la [elemento Commands](../../extensibility/commands-element.md).
+- Comandi sia sottomenu possono anche essere assegnati a più gruppi e i gruppi possono essere assegnati a più menu usando la [elemento Commands](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>note di file con estensione vsct
  Se si apportano modifiche a un *vsct* file dopo che si sia compilarlo e inserirlo in una DLL satellite nativa, è consigliabile eseguire **devenv.exe /setup /nosetupvstemplates**. Esegue in questo caso impone le risorse di VSPackage specificate nel Registro di sistema sperimentale per essere rilettura e il database interno che descrive [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] da ricompilare.

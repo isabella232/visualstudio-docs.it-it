@@ -14,21 +14,21 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef1efa0a0b597d9c75d46e24fd443943cca17ab
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115887"
 ---
 # <a name="label-not-found"></a>Impossibile trovare l'etichetta
 Si è fatto un riferimento a un'etichetta che non esiste. Le etichette può essere usato per contrassegnare i blocchi di codice, ma in un ambito specificato, deve essere univoche.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare che sia che digitato il nome dell'etichetta.  
+- Verificare che sia che digitato il nome dell'etichetta.  
   
--   Verificare che tutti i riferimenti alle etichette vengono apportate alle etichette che sono state definite nell'ambito corrente (che include le definizioni di inoltrare).  
+- Verificare che tutti i riferimenti alle etichette vengono apportate alle etichette che sono state definite nell'ambito corrente (che include le definizioni di inoltrare).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)   

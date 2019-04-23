@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117370"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installare framework di unit test di terze parti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Esplora test di Visual Studio può eseguire qualsiasi framework di unit test che
   
  **Requisiti**  
   
--   Visual Studio Enterprise, Visual Studio Professional  
+- Visual Studio Enterprise, Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>Acquisizione di framework di terze parti  
  È possibile scaricare e installare molti framework di unit test di terze parti usando Gestione estensioni di Visual Studio o da Visual Studio Gallery nel sito Web MSDN. I framework sono disponibili per il download anche da altri siti, ad esempio il sito Web specifico del framework.  

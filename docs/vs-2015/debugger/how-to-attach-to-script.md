@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118253"
 ---
 # <a name="how-to-attach-to-script"></a>Procedura: Associare a script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ In questo argomento viene illustrato come connettere manualmente il debugger di 
   
 2. Nella finestra di dialogo **Connetti a processo** analizzare l'elenco **Processi disponibili** e individuare il processo di script al quale ci si desidera connettere. È possibile identificare i processi di script esaminando la colonna **Tipo**.  
   
-   1.  Se il processo di cui si desidera eseguire il debug è in esecuzione in un altro computer, sarà necessario innanzitutto selezionare il computer remoto. Per altre informazioni, vedere [Procedura: Selezionare un computer remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Se il processo di cui si desidera eseguire il debug è in esecuzione in un altro computer, sarà necessario innanzitutto selezionare il computer remoto. Per altre informazioni, vedere [Procedura: Selezionare un computer remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-   2.  Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .  
+   2. Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .  
   
-   3.  Se la connessione è stata effettuata mediante **Connessione desktop remoto**, selezionare la casella di controllo **Mostra processi in tutte le sessioni**.  
+   3. Se la connessione è stata effettuata mediante **Connessione desktop remoto**, selezionare la casella di controllo **Mostra processi in tutte le sessioni**.  
   
 3. Fare clic sul processo al quale ci si desidera connettere.  
   
 4. Nel **Collega a** casella, si noterà **codice Script** o **automatico: Codice script**. Se viene visualizzata una voce diversa, attenersi alla seguente procedura:  
   
-   1.  Fare clic su **Seleziona**.  
+   1. Fare clic su **Seleziona**.  
   
-   2.  Nella finestra di dialogo **Seleziona tipo di codice** fare clic su **Esegui il debug di questi tipi di codice** e selezionare **Script**.  
+   2. Nella finestra di dialogo **Seleziona tipo di codice** fare clic su **Esegui il debug di questi tipi di codice** e selezionare **Script**.  
   
-   3.  Fare clic su **OK**.  
+   3. Fare clic su **OK**.  
   
 5. Scegliere **Connetti**.  
   

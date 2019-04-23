@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089289"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utilizzare la finestra Risultati metrica codice
 
@@ -48,15 +48,15 @@ Il **filtro** casella di riepilogo a discesa contiene i nomi delle colonne di ri
 
 ### <a name="to-filter-the-code-metrics-results"></a>Per filtrare i risultati di metrica codice
 
-1.  Dal **filtro** elencare, selezionare il nome della colonna.
+1. Dal **filtro** elencare, selezionare il nome della colonna.
 
-2.  Nelle **Min**, digitare il valore minimo da visualizzare.
+2. Nelle **Min**, digitare il valore minimo da visualizzare.
 
-3.  Nelle **Max**, digitare il valore massimo deve essere visualizzato.
+3. Nelle **Max**, digitare il valore massimo deve essere visualizzato.
 
-4.  Scegliere il **Applica filtro** pulsante.
+4. Scegliere il **Applica filtro** pulsante.
 
-5.  Per visualizzare i dettagli dei risultati, espandere l'albero gerarchico.
+5. Per visualizzare i dettagli dei risultati, espandere l'albero gerarchico.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Aggiungere, rimuovere e ridisporre le colonne di dati
 
@@ -88,23 +88,23 @@ Per altre informazioni sulle aree di Azure gli elementi di lavoro, vedere [eleme
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Per creare un elemento di lavoro basato su un risultato
 
-1.  Fare clic sul risultato.
+1. Fare clic sul risultato.
 
-2.  Puntare **Crea elemento di lavoro**, quindi scegliere il tipo di elemento di lavoro da creare (**Bug**, **attività**e così via).
+2. Puntare **Crea elemento di lavoro**, quindi scegliere il tipo di elemento di lavoro da creare (**Bug**, **attività**e così via).
 
-3.  Completare il form elemento di lavoro con l'inserimento di tutti i campi obbligatori.
+3. Completare il form elemento di lavoro con l'inserimento di tutti i campi obbligatori.
 
-4.  Nel **File** menu, fare clic su **Salva tutto** per salvare l'elemento di lavoro.
+4. Nel **File** menu, fare clic su **Salva tutto** per salvare l'elemento di lavoro.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Per creare un bug basato su un risultato
 
-1.  Fare clic sul risultato per selezionarlo.
+1. Fare clic sul risultato per selezionarlo.
 
-2.  Scegliere il **Crea elemento di lavoro** pulsante.
+2. Scegliere il **Crea elemento di lavoro** pulsante.
 
-3.  Completare il form elemento di lavoro con l'inserimento di tutti i campi obbligatori.
+3. Completare il form elemento di lavoro con l'inserimento di tutti i campi obbligatori.
 
-4.  Nel **File** menu, fare clic su **Salva tutto** per salvare l'elemento di lavoro.
+4. Nel **File** menu, fare clic su **Salva tutto** per salvare l'elemento di lavoro.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117096"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
 
@@ -28,7 +28,7 @@ Esistono alcune differenze in ciò che le attività di compilazione possono fare
 
 Ciò significa che è possibile accedere a elementi, ad esempio i nomi dei file di progetto nello stesso modo quando si compila un modello di testo in MSBuild. Tuttavia, è possibile [passare le informazioni sull'ambiente in modelli di testo e processori di direttive utilizzando parametri di compilazione](#parameters).
 
-##  <a name="buildserver"></a> Configurare i computer
+## <a name="buildserver"></a> Configurare i computer
 
 Per abilitare le attività di compilazione nel computer di sviluppo, installare il SDK di modellazione per Visual Studio.
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Passare i dati di contesto di compilazione nei modelli
+## <a name="parameters"></a> Passare i dati di contesto di compilazione nei modelli
 
 È possibile impostare i valori dei parametri nel file di progetto. Ad esempio, è possibile passare [compilare](../msbuild/msbuild-properties.md) delle proprietà e [variabili di ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` ottiene i dati da `T4ParameterValues` solo quando si utilizza MSBuild. Quando si trasforma il modello utilizzando Visual Studio, i parametri avranno i valori predefiniti.
 
-##  <a name="msbuild"></a> Usare le proprietà del progetto nell'assembly e includere le direttive
+## <a name="msbuild"></a> Usare le proprietà del progetto nell'assembly e includere le direttive
 
 Ad esempio Visual Studio macros **SolutionDir** non funzionano in MSBuild. È possibile utilizzare le proprietà del progetto.
 

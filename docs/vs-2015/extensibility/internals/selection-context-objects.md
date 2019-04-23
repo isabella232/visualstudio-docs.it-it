@@ -11,12 +11,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3824edb97306dd7730c8d57b955afeab6df816a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092188"
 ---
 # <a name="selection-context-objects"></a>Oggetti del contesto di selezione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
   
   La sequenza seguente illustra il corso tipico di traccia della selezione.  
   
-1.  L'IDE recupera il contesto della selezione dalla finestra appena aperta e lo inserisce nel contesto di selezione globale. Se il contesto di selezione Usa HIERARCHY_DONTPROPAGATE o SELCONTAINER_DONTPROPAGATE, tali informazioni non viene propagate al contesto globale. Per altre informazioni, vedere [commenti e suggerimenti all'utente](../../extensibility/internals/feedback-to-the-user.md).  
+1. L'IDE recupera il contesto della selezione dalla finestra appena aperta e lo inserisce nel contesto di selezione globale. Se il contesto di selezione Usa HIERARCHY_DONTPROPAGATE o SELCONTAINER_DONTPROPAGATE, tali informazioni non viene propagate al contesto globale. Per altre informazioni, vedere [commenti e suggerimenti all'utente](../../extensibility/internals/feedback-to-the-user.md).  
   
-2.  Eventi di notifica vengono trasmessi a un pacchetto VSPackage che li richiesta.  
+2. Eventi di notifica vengono trasmessi a un pacchetto VSPackage che li richiesta.  
   
-3.  Il pacchetto VSPackage agisce sugli eventi che riceve eseguendo attività come l'aggiornamento di una gerarchia, la riattivazione di uno strumento o altre operazioni simili.  
+3. Il pacchetto VSPackage agisce sugli eventi che riceve eseguendo attività come l'aggiornamento di una gerarchia, la riattivazione di uno strumento o altre operazioni simili.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   

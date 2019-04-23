@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090024"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
   
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato in `pDesc` descrive una destinazione di rendering, ossia:  
   
-  -   Il membro BindFlags presenta il flag D3D11_BIND_TARGET o il flag D3D11_BIND_DEPTH_STENCIL impostato.  
+  - Il membro BindFlags presenta il flag D3D11_BIND_TARGET o il flag D3D11_BIND_DEPTH_STENCIL impostato.  
   
-  -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
+  - Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
   
-  -   Il membro CPUAccessFlags è impostato su 0.  
+  - Il membro CPUAccessFlags è impostato su 0.  
   
-  -   Il membro MipLevels è impostato su 1.  
+  - Il membro MipLevels è impostato su 1.  
   
 - Il dispositivo supporta il conteggio dei campioni (0, 2 o 4) e la qualità degli stessi (0) necessari per il formato della destinazione di rendering richiesta (membro D3D11_TEXTURE2D_DESC::Format), così come determinato da `ID3D11Device::CheckMultisampleQualityLevels`.  
   

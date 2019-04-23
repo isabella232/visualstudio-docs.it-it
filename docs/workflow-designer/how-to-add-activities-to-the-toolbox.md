@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e334ee23a68a4fbbb481765997ea1668daede13f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9e50736e5d9bc55eadf0aab7e7f00d26eb03249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117239"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: Aggiungere attività nella casella degli strumenti
 
@@ -21,11 +21,11 @@ Le attività possono essere aggiunte per il **casella degli strumenti** nella so
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Per aggiungere un'attività dall'interno del progetto corrente
 
-1.  Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. Per altre informazioni sull'aggiunta di una nuova attività personalizzata al progetto, vedere [come: Aggiungere un nuovo elemento a un progetto di flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. Per altre informazioni sull'aggiunta di una nuova attività personalizzata al progetto, vedere [come: Aggiungere un nuovo elemento a un progetto di flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
-2.  Aggiungere la logica personalizzata all'attività.
+2. Aggiungere la logica personalizzata all'attività.
 
-3.  Compilare il progetto. Se la compilazione ha avuto esito positivo, una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" viene visualizzato con l'attività personalizzata in essa inclusa.
+3. Compilare il progetto. Se la compilazione ha avuto esito positivo, una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" viene visualizzato con l'attività personalizzata in essa inclusa.
 
     > [!NOTE]
     > Se la casella degli strumenti viene reimpostata, le attività personalizzate verranno rimosse, anche se la soluzione viene compilata nuovamente. Per ripopolare la casella degli strumenti con le attività personalizzate dopo che è stata reimpostata, riavviare Visual Studio.
@@ -38,25 +38,25 @@ Le attività possono essere aggiunte per il **casella degli strumenti** nella so
 
 ## <a name="to-add-an-activity-from-within-a-different-project"></a>Per aggiungere un'attività dall'interno di un altro progetto
 
-1.  Aprire una soluzione che contiene almeno un progetto flusso di lavoro e un progetto libreria attività personalizzato oppure un altro progetto flusso di lavoro che definisce un'attività personalizzata.
+1. Aprire una soluzione che contiene almeno un progetto flusso di lavoro e un progetto libreria attività personalizzato oppure un altro progetto flusso di lavoro che definisce un'attività personalizzata.
 
-2.  Compilare entrambi i progetti. Se la compilazione viene eseguita correttamente, una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" viene visualizzato con l'attività personalizzata in essa inclusa.
+2. Compilare entrambi i progetti. Se la compilazione viene eseguita correttamente, una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" viene visualizzato con l'attività personalizzata in essa inclusa.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Per aggiungere un'attività alla Casella degli strumenti da un assembly
 
-1.  Aprire una soluzione per flussi di lavoro.
+1. Aprire una soluzione per flussi di lavoro.
 
-2.  Dal **degli strumenti** dal menu **Scegli elementi della casella degli strumenti**.
+2. Dal **degli strumenti** dal menu **Scegli elementi della casella degli strumenti**.
 
-3.  Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona la **componenti System. Activities** scheda, quindi fare clic su **Sfoglia** per passare all'assembly che contiene l'oggetto personalizzato attività da aggiungere.
+3. Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona la **componenti System. Activities** scheda, quindi fare clic su **Sfoglia** per passare all'assembly che contiene l'oggetto personalizzato attività da aggiungere.
 
-4.  Selezionare l'assembly e fare clic su **OK**. Il componente attività personalizzata viene aggiunto all'elenco dei componenti e viene selezionato automaticamente.
+4. Selezionare l'assembly e fare clic su **OK**. Il componente attività personalizzata viene aggiunto all'elenco dei componenti e viene selezionato automaticamente.
 
-    1.  Fare clic su **OK** per chiudere la finestra di dialogo.
+    1. Fare clic su **OK** per chiudere la finestra di dialogo.
 
-5.  Per visualizzare la casella degli strumenti, selezionare **casella degli strumenti** dalle **visualizzazione** menu.
+5. Per visualizzare la casella degli strumenti, selezionare **casella degli strumenti** dalle **visualizzazione** menu.
 
-6.  L'attività personalizzata viene visualizzato nei **casella degli strumenti** sotto la categoria che aveva lo stato attivo prima che l'elemento è stato aggiunto. Ad esempio, se il **generali** categoria è stata selezionata nella **della casella degli strumenti** prima di aggiungere l'elemento della casella degli strumenti, l'attività viene visualizzata sotto il **generale** categoria.
+6. L'attività personalizzata viene visualizzato nei **casella degli strumenti** sotto la categoria che aveva lo stato attivo prima che l'elemento è stato aggiunto. Ad esempio, se il **generali** categoria è stata selezionata nella **della casella degli strumenti** prima di aggiungere l'elemento della casella degli strumenti, l'attività viene visualizzata sotto il **generale** categoria.
 
 ## <a name="see-also"></a>Vedere anche
 
