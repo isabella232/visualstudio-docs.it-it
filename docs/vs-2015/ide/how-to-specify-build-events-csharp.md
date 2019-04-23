@@ -15,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113859"
 ---
-# <a name="how-to-specify-build-events-c"></a>Procedura: specificare eventi di compilazione (C#)
+# <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare gli eventi di compilazione per specificare i comandi da eseguire prima dell'inizio o al termine della compilazione. Gli eventi di compilazione vengono eseguiti solo se la compilazione raggiunge correttamente i punti corrispondenti nel processo di compilazione.  
@@ -35,23 +35,23 @@ ms.locfileid: "54781085"
   
 #### <a name="to-specify-a-build-event"></a>Per specificare un evento di compilazione  
   
-1.  In **Esplora soluzioni** selezionare il progetto per il quale si vuole specificare l'evento di compilazione.  
+1. In **Esplora soluzioni** selezionare il progetto per il quale si vuole specificare l'evento di compilazione.  
   
-2.  Scegliere **Proprietà** dal menu **Progetto**.  
+2. Scegliere **Proprietà** dal menu **Progetto**.  
   
-3.  Selezionare la scheda **Eventi di compilazione**.  
+3. Selezionare la scheda **Eventi di compilazione**.  
   
-4.  Nella casella **Riga di comando eventi pre-compilazione** specificare la sintassi per l'evento di compilazione.  
+4. Nella casella **Riga di comando eventi pre-compilazione** specificare la sintassi per l'evento di compilazione.  
   
     > [!NOTE]
     >  Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.  
   
-5.  Nella casella **Riga di comando eventi post-compilazione** specificare la sintassi per l'evento di compilazione.  
+5. Nella casella **Riga di comando eventi post-compilazione** specificare la sintassi per l'evento di compilazione.  
   
     > [!NOTE]
     >  Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-6.  Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.  
+6. Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.  
   
     > [!NOTE]
     >  Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.  
@@ -60,7 +60,7 @@ ms.locfileid: "54781085"
   
      **Nota** Se l'evento di pre-compilazione o di post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'uscita dell'azione dell'evento con un codice diverso da zero (0), che indica un esito positivo.  
   
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Esempio: come modificare le informazioni di un manifesto usando un evento di post-compilazione  
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Esempio: Come modificare le informazioni sul manifesti usando un evento di post-compilazione  
  La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando exe chiamato da un evento di post-compilazione (il file exe.manifest nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:  
   
 ```  
@@ -145,15 +145,15 @@ ms.locfileid: "54781085"
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Per richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione  
   
-1.  Creare un'applicazione Windows per il progetto da pubblicare. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+1. Creare un'applicazione Windows per il progetto da pubblicare. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Windows** e quindi fare clic sul modello **Applicazione Windows Form**. Denominare il progetto `CSWinApp`.  
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Windows** e quindi fare clic sul modello **Applicazione Windows Form**. Denominare il progetto `CSWinApp`.  
   
-3.  Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+3. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-4.  In Creazione progetti, individuare la pagina **Pubblica** e impostare **Posizione di pubblicazione** su `C:\TEMP\`.  
+4. In Creazione progetti, individuare la pagina **Pubblica** e impostare **Posizione di pubblicazione** su `C:\TEMP\`.  
   
-5.  Pubblicare il progetto facendo clic su **Pubblica**.  
+5. Pubblicare il progetto facendo clic su **Pubblica**.  
   
      Il file manifesto verrà compilato e salvato in `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.  
   
@@ -163,9 +163,9 @@ ms.locfileid: "54781085"
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  In Creazione progetti fare clic sulla scheda **Eventi di compilazione** e fare clic sul pulsante **Modifica post-compilazione**.  
+6. In Creazione progetti fare clic sulla scheda **Eventi di compilazione** e fare clic sul pulsante **Modifica post-compilazione**.  
   
-7.  Nella casella **Riga di comando eventi post-compilazione** digitare il comando seguente:  
+7. Nella casella **Riga di comando eventi post-compilazione** digitare il comando seguente:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -173,7 +173,7 @@ ms.locfileid: "54781085"
   
      Poiché la macro `$(TargetPath)` esprime il percorso completo del file eseguibile in corso di creazione, il file `$(TargetPath)`.manifest specificherà il manifesto dell'applicazione creato nella directory bin. La pubblicazione copierà questo manifesto nel percorso di pubblicazione impostato in precedenza.  
   
-8.  Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.  
+8. Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.  
   
      Visualizzare nuovamente il manifesto. Per visualizzare il manifesto, aprire la directory di pubblicazione, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.  
   
@@ -186,5 +186,5 @@ ms.locfileid: "54781085"
 ## <a name="see-also"></a>Vedere anche  
  [Pagina Eventi di compilazione, Creazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Procedura: Specificare eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)

@@ -8,37 +8,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096257"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
+## <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
  Tutti i tipi di carattere all'interno di Visual Studio deve essere esposto all'utente per la personalizzazione. Ciò avviene principalmente attraverso il **i tipi di carattere e colori** pagina il **strumenti > Opzioni** finestra di dialogo. Le tre categorie principali di impostazioni del tipo di carattere sono:
 
--   **Tipo di carattere ambiente** -il tipo di carattere primario dell'IDE (integrated development environment), usato per tutti gli elementi di interfaccia, tra cui le finestre di dialogo, menu, finestre degli strumenti e finestre di documento. Per impostazione predefinita, il tipo di carattere ambiente è associato a un tipo di carattere di sistema che viene visualizzato come 9 pt Segoe interfaccia utente nelle versioni correnti di Windows. Uso di un tipo di carattere per tutti gli elementi dell'interfaccia aiuta a garantire un aspetto coerente del tipo di carattere nell'IDE.
+- **Tipo di carattere ambiente** -il tipo di carattere primario dell'IDE (integrated development environment), usato per tutti gli elementi di interfaccia, tra cui le finestre di dialogo, menu, finestre degli strumenti e finestre di documento. Per impostazione predefinita, il tipo di carattere ambiente è associato a un tipo di carattere di sistema che viene visualizzato come 9 pt Segoe interfaccia utente nelle versioni correnti di Windows. Uso di un tipo di carattere per tutti gli elementi dell'interfaccia aiuta a garantire un aspetto coerente del tipo di carattere nell'IDE.
 
--   **Editor di testo** -gli elementi che superficie nel codice e altri editor basati su testo può essere personalizzato nell'Editor di testo nella pagina **strumenti > Opzioni**.
+- **Editor di testo** -gli elementi che superficie nel codice e altri editor basati su testo può essere personalizzato nell'Editor di testo nella pagina **strumenti > Opzioni**.
 
--   **Raccolte specifiche** -finestre di progettazione che offrono personalizzazione dell'utente dei rispettivi elementi di interfaccia può esporre i tipi di carattere specifici alla progettazione della superficie di attacco nella propria pagina delle impostazioni in **strumenti > Opzioni**.
+- **Raccolte specifiche** -finestre di progettazione che offrono personalizzazione dell'utente dei rispettivi elementi di interfaccia può esporre i tipi di carattere specifici alla progettazione della superficie di attacco nella propria pagina delle impostazioni in **strumenti > Opzioni**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Personalizzazione dell'editor del tipo di carattere e il ridimensionamento
  Gli utenti spesso saranno ingrandire o ingrandire le dimensioni e/o il colore del testo nell'editor in base alle loro preferenze, indipendenti dell'interfaccia utente generale. Poiché il tipo di carattere ambiente viene usato per gli elementi che possono essere visualizzate all'interno o come parte di un editor o la finestra di progettazione, è importante notare il comportamento previsto quando viene modificata una delle classificazioni seguenti del tipo di carattere.
 
  Durante la creazione non fa parte di elementi dell'interfaccia utente che vengono visualizzati nell'editor, ma sono le *contenuto*, è importante usare il tipo di carattere ambiente e non il tipo di carattere di testo in modo che gli elementi di ridimensionare in modo prevedibile.
 
-1.  Per il testo di codice nell'editor, ridimensionare con l'impostazione del tipo di carattere del testo codice e rispondere a livello di zoom del testo dell'editor.
+1. Per il testo di codice nell'editor, ridimensionare con l'impostazione del tipo di carattere del testo codice e rispondere a livello di zoom del testo dell'editor.
 
-2.  Tutti gli altri elementi dell'interfaccia devono essere associati all'impostazione del tipo di carattere ambiente e riflettere le modifiche nell'ambiente globale. Ciò include (ma non limitata a):
+2. Tutti gli altri elementi dell'interfaccia devono essere associati all'impostazione del tipo di carattere ambiente e riflettere le modifiche nell'ambiente globale. Ciò include (ma non limitata a):
 
-    -   Testo nel menu di scelta rapida
+    - Testo nel menu di scelta rapida
 
-    -   Testo in un'area di controllo dell'editor, come testo del menu lampadina, riquadro editor ricerca veloce e passare al riquadro
+    - Testo in un'area di controllo dell'editor, come testo del menu lampadina, riquadro editor ricerca veloce e passare al riquadro
 
-    -   Assegnare un'etichetta di testo nelle finestre di dialogo, ad esempio **Cerca nei file** o **effettuare il refactoring**
+    - Assegnare un'etichetta di testo nelle finestre di dialogo, ad esempio **Cerca nei file** o **effettuare il refactoring**
 
 ### <a name="accessing-the-environment-font"></a>L'accesso al tipo di carattere ambiente
  Nel codice nativo o Windows Form, il tipo di carattere ambiente sono accessibili tramite il metodo `IUIHostLocale::GetDialogFont` dopo l'esecuzione di query l'interfaccia dal `SID_SUIHostLocale` servizio.
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-###  <a name="BKMK_Formatting"></a> Formattazione di riferimento (ridimensionamento/mettere in grassetto)
+### <a name="BKMK_Formatting"></a> Formattazione di riferimento (ridimensionamento/mettere in grassetto)
  Alcune finestre di dialogo richiedono particolare testo in grassetto o una dimensione diversa da quella di tipo di carattere ambiente. In precedenza, i tipi di carattere maggiori di carattere ambiente fosse codificate come "`environment font +2`" o simili. Usando i frammenti di codice fornito supporterà i monitor ad alta risoluzione e assicurarsi che il testo di visualizzazione viene sempre visualizzata nel server di dimensioni corrette e peso (ad esempio, chiaro o Semilight).
 
 > **Nota: Prima di applicare la formattazione, verificare che si seguono le istruzioni disponibili nella [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -300,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Per reimpostare il tipo di carattere, fare clic su "Usa impostazioni predefinite" in **strumenti > Opzioni > ambiente > tipi di carattere e colori**.
 
-##  <a name="BKMK_TextStyle"></a> Stile del testo
+## <a name="BKMK_TextStyle"></a> Stile del testo
  Stile del testo fa riferimento a maiuscole e minuscole, peso e dimensioni del carattere. Per informazioni aggiuntive sull'implementazione, vedere [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Testo maiuscolo
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Maiuscola
  Maiuscola è il metodo di utilizzo delle maiuscole standard per la scrittura in cui ha iniziale maiuscola solo la prima parola della frase, insieme a eventuali nomi propri e il Pronome "I". In generale, maiuscola è più semplice per un gruppo di destinatari in tutto il mondo per la lettura, in particolare quando il contenuto verrà convertito da un computer. Usare maiuscola per:
 
-1.  **Messaggi della barra di stato.** Queste sono semplici, short e fornire solo informazioni sullo stato. Esempio: "Caricamento dei file di progetto"
+1. **Messaggi della barra di stato.** Queste sono semplici, short e fornire solo informazioni sullo stato. Esempio: "Caricamento dei file di progetto"
 
-2.  **Tutti gli altri elementi dell'interfaccia utente**, tra cui le etichette, caselle di controllo, pulsanti di opzione ed elencare elementi casella. Esempio: "Seleziona tutti gli elementi nell'elenco"
+2. **Tutti gli altri elementi dell'interfaccia utente**, tra cui le etichette, caselle di controllo, pulsanti di opzione ed elencare elementi casella. Esempio: "Seleziona tutti gli elementi nell'elenco"
 
 ### <a name="text-formatting"></a>Formattazione del testo
  Testo predefinito di formattazione in Visual Studio 2013 è controllato dal [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Questo servizio aiuta a garantire un aspetto coerente del tipo di carattere dell'IDE (integrated development environment) ed è necessario usarlo per garantire un'esperienza coerente per gli utenti.
@@ -373,36 +373,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Testo in grassetto
  Testo in grassetto viene usato con cautela in Visual Studio e deve essere riservato anche per:
 
--   etichette di domanda nelle procedure guidate
+- etichette di domanda nelle procedure guidate
 
--   che designa il progetto attivo in Esplora soluzioni
+- che designa il progetto attivo in Esplora soluzioni
 
--   valori sottoposti a override nella finestra degli strumenti proprietà
+- valori sottoposti a override nella finestra degli strumenti proprietà
 
--   alcuni eventi negli elenchi a discesa editor Visual Basic
+- alcuni eventi negli elenchi a discesa editor Visual Basic
 
--   generati dal server di contenuti nella struttura documento per le pagine web
+- generati dal server di contenuti nella struttura documento per le pagine web
 
--   intestazioni delle sezioni nella finestra di dialogo complessa o finestra di progettazione dell'interfaccia utente
+- intestazioni delle sezioni nella finestra di dialogo complessa o finestra di progettazione dell'interfaccia utente
 
 #### <a name="italics"></a>Corsivo
  Visual Studio non usa corsivo o visualizzato in grassetto il testo in corsivo.
 
 #### <a name="color"></a>Colore
 
--   Blu è riservato per i collegamenti ipertestuali (spostamento e l'esecuzione di comandi) e non deve mai essere usata per l'orientamento.
+- Blu è riservato per i collegamenti ipertestuali (spostamento e l'esecuzione di comandi) e non deve mai essere usata per l'orientamento.
 
--   Le intestazioni di dimensioni maggiori (tipo di carattere ambiente 155% o superiore) possono essere colorate per questi scopi:
+- Le intestazioni di dimensioni maggiori (tipo di carattere ambiente 155% o superiore) possono essere colorate per questi scopi:
 
-    -   Per fornire l'impatto visivo alla firma dell'interfaccia utente di Visual Studio
+    - Per fornire l'impatto visivo alla firma dell'interfaccia utente di Visual Studio
 
-    -   Per attirare l'attenzione su un'area specifica
+    - Per attirare l'attenzione su un'area specifica
 
-    -   Per offrire una maggiore efficacia dal colore del testo standard ambiente/nero grigio scuro
+    - Per offrire una maggiore efficacia dal colore del testo standard ambiente/nero grigio scuro
 
--   Colore nelle intestazioni deve sfruttare Visual Studio esistente marchio colori, principalmente il principale viola, & FF68217A.
+- Colore nelle intestazioni deve sfruttare Visual Studio esistente marchio colori, principalmente il principale viola, & FF68217A.
 
--   Quando si Usa colore nelle intestazioni, è necessario rispettare le [Windows colorare le linee guida](/windows/desktop/uxguide/vis-color), tra cui contrasto e altre considerazioni sull'accessibilità.
+- Quando si Usa colore nelle intestazioni, è necessario rispettare le [Windows colorare le linee guida](/windows/desktop/uxguide/vis-color), tra cui contrasto e altre considerazioni sull'accessibilità.
 
 ### <a name="font-size"></a>Dimensione carattere
  Progettazione di Visual Studio dell'interfaccia utente presenta un aspetto più leggero con più spazi. Dove possibile, le barre del titolo e chrome sono state ridotte o rimosse. Densità di informazioni è un requisito in Visual Studio, tipografia continua a essere importanti, grazie a un'enfasi sulla interlinea più aperta e una variante dei pesi e le dimensioni dei caratteri.
@@ -474,11 +474,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Spaziatura interna e la spaziatura
  Intestazioni richiedono spazio attorno a esse per concedere loro l'enfasi appropriato. Questo spazio varia a seconda delle dimensioni del punto e cos'altro è in prossimità di intestazione, ad esempio una regola orizzontale o di una riga di testo nel tipo di carattere ambiente.
 
--   La spaziatura interna ideale per un'intestazione di per sé deve essere 90% dello spazio di altezza di carattere capitale. Ad esempio, un'intestazione di Segoe UI Light pt 28 ha un'altezza di limite di 26 pt e la spaziatura interna deve essere circa 23 pt, o circa 31 pixel.
+- La spaziatura interna ideale per un'intestazione di per sé deve essere 90% dello spazio di altezza di carattere capitale. Ad esempio, un'intestazione di Segoe UI Light pt 28 ha un'altezza di limite di 26 pt e la spaziatura interna deve essere circa 23 pt, o circa 31 pixel.
 
--   Lo spazio intorno a un'intestazione minimo pari al 50% dell'altezza del carattere capitale. Meno spazio può essere utilizzata quando un'intestazione è accompagnata da una regola o un altro elemento di una stretta adattamento.
+- Lo spazio intorno a un'intestazione minimo pari al 50% dell'altezza del carattere capitale. Meno spazio può essere utilizzata quando un'intestazione è accompagnata da una regola o un altro elemento di una stretta adattamento.
 
--   Testo del carattere di ambiente in grassetto deve seguire la spaziatura interna e spaziatura altezza riga predefinita.
+- Testo del carattere di ambiente in grassetto deve seguire la spaziatura interna e spaziatura altezza riga predefinita.
 
 ## <a name="see-also"></a>Vedere anche
 

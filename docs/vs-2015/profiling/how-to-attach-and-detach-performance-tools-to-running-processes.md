@@ -17,14 +17,14 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095743"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Collegamento e scollegamento di strumenti per le prestazioni ai processi in esecuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il profiler può essere usato per la connessione o la disconnessione da un processo in esecuzione per facilitare la raccolta e il campionamento dei dati relativi alle prestazioni. È possibile usare questo metodo per la profilatura di un processo quando si vuole evitare di raccogliere dati sul tempo di caricamento dell'applicazione o per monitorare le prestazioni di un processo dopo il raggiungimento di uno stato specifico.  
@@ -44,7 +44,7 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
 ### <a name="to-attach-to-a-running-process"></a>Per connettersi a un processo in esecuzione  
   
-1.  Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Connetti/Disconnetti**.  
+1. Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Connetti/Disconnetti**.  
   
      \- oppure -  
   
@@ -52,13 +52,13 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
      Verrà visualizzata la finestra di dialogo **Connettere profiler a processo**.  
   
-2.  Fare clic sul nome del processo a cui si vuole effettuare la connessione.  
+2. Fare clic sul nome del processo a cui si vuole effettuare la connessione.  
   
-3.  Scegliere **Connetti**.  
+3. Scegliere **Connetti**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Per disconnettersi da un processo in esecuzione  
   
-1.  Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Connetti/Disconnetti**.  
+1. Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Connetti/Disconnetti**.  
   
      \- oppure -  
   
@@ -66,13 +66,13 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
      Verrà visualizzata la finestra di dialogo **Connettere profiler a processo**.  
   
-2.  Fare clic sul nome dell'immagine da cui eseguire la disconnessione.  
+2. Fare clic sul nome dell'immagine da cui eseguire la disconnessione.  
   
-3.  Scegliere **Disconnetti**.  
+3. Scegliere **Disconnetti**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
  [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)   
- [Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Procedura: Iniziare e terminare la raccolta dati prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

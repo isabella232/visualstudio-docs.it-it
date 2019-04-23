@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096530"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fondamentali sull'esperienza utente per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58955191"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. La coerenza all'interno dell'ambiente di Visual Studio.
 
--   Seguire i modelli di interazione esistente all'interno della shell.
+- Seguire i modelli di interazione esistente all'interno della shell.
 
--   Progettare le funzionalità siano coerenti con requisiti di lingua e abilità visual della shell.
+- Progettare le funzionalità siano coerenti con requisiti di lingua e abilità visual della shell.
 
--   Usare i controlli e comandi condivisi quando sono presenti.
+- Usare i controlli e comandi condivisi quando sono presenti.
 
--   Comprendere la gerarchia di Visual Studio e come stabilisce contesto e le unità dell'interfaccia utente.
+- Comprendere la gerarchia di Visual Studio e come stabilisce contesto e le unità dell'interfaccia utente.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Usare il servizio di ambiente per i tipi di carattere e colori.
 
--   Interfaccia utente deve rispettare l'impostazione del tipo di carattere ambiente corrente, a meno che non viene esposta per la personalizzazione nella pagina tipi di carattere e colori nella finestra di dialogo Opzioni.
+- Interfaccia utente deve rispettare l'impostazione del tipo di carattere ambiente corrente, a meno che non viene esposta per la personalizzazione nella pagina tipi di carattere e colori nella finestra di dialogo Opzioni.
 
--   Elementi dell'interfaccia utente devono usare VSColor Service, usando i token specifici delle funzionalità o token ambiente condiviso.
+- Elementi dell'interfaccia utente devono usare VSColor Service, usando i token specifici delle funzionalità o token ambiente condiviso.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Apportare tutte le immagini coerenti con il nuovo stile Visual Studio.
 
--   Seguire i principi di progettazione di Visual Studio per le icone, glifi e altri elementi grafici.
+- Seguire i principi di progettazione di Visual Studio per le icone, glifi e altri elementi grafici.
 
--   Non inserire testo in elementi grafici.
+- Non inserire testo in elementi grafici.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Progettare una prospettiva incentrata sull'utente.
 
--   Creare il flusso di attività prima le singole funzionalità all'interno di esso.
+- Creare il flusso di attività prima le singole funzionalità all'interno di esso.
 
--   Acquisire familiarità con gli utenti e rendere espliciti nelle specifiche di tali informazioni.
+- Acquisire familiarità con gli utenti e rendere espliciti nelle specifiche di tali informazioni.
 
--   Esaminare l'interfaccia utente, valutare l'esperienza completa, nonché i dettagli.
+- Esaminare l'interfaccia utente, valutare l'esperienza completa, nonché i dettagli.
 
--   Progettare l'interfaccia utente in modo che rimanga funzionali e accattivanti indipendentemente dal linguaggio o delle impostazioni locali.
+- Progettare l'interfaccia utente in modo che rimanga funzionali e accattivanti indipendentemente dal linguaggio o delle impostazioni locali.
 
 ## <a name="screen-resolution"></a>Risoluzione dello schermo
 
@@ -69,9 +69,9 @@ ms.locfileid: "58955191"
 
 #### <a name="feature-team-goals"></a>Funzionalità degli obiettivi del team
 
--   Avvisare gli utenti che è stato aggiunto un elemento che deve essere configurato.
+- Avvisare gli utenti che è stato aggiunto un elemento che deve essere configurato.
 
--   Attirare l'attenzione dell'utente per le aree che richiedono input.
+- Attirare l'attenzione dell'utente per le aree che richiedono input.
 
 #### <a name="anti-pattern-solution"></a>Soluzione anti-pattern
  Non appena l'utente ha avviato un'azione e prima che è stata completata l'attività, inserire immediatamente arresto critico icone accanto alle aree che richiedono una configurazione.
@@ -88,11 +88,11 @@ ms.locfileid: "58955191"
 #### <a name="alternatives"></a>Alternative
  Una soluzione migliore a questo problema, è possibile:
 
--   Consentire all'utente di aggiungere una dichiarazione senza avviso e quindi spostare immediatamente impostare le proprietà sull'elemento.
+- Consentire all'utente di aggiungere una dichiarazione senza avviso e quindi spostare immediatamente impostare le proprietà sull'elemento.
 
--   Aggiungere l'icona di avviso (triangolo gold) quando lo stato attivo viene spostata dall'elemento, ad esempio per aggiungere un'altra dichiarazione all'elenco o per tentare di modificare le tabulazioni all'interno della finestra di progettazione.
+- Aggiungere l'icona di avviso (triangolo gold) quando lo stato attivo viene spostata dall'elemento, ad esempio per aggiungere un'altra dichiarazione all'elenco o per tentare di modificare le tabulazioni all'interno della finestra di progettazione.
 
--   Se l'utente tenta di modificare le schede prima di impostare le proprietà per tutte le dichiarazioni, visualizzata una finestra di dialogo che spiega che l'applicazione non verrà compilato (o qualsiasi le implicazioni) fino a quando non vengono risolti gli avvisi. Se l'utente chiude la finestra di dialogo e sostituisce le tabulazioni comunque, un'icona (critica o avviso, come appropriata) viene aggiunto alla scheda dichiarazioni.
+- Se l'utente tenta di modificare le schede prima di impostare le proprietà per tutte le dichiarazioni, visualizzata una finestra di dialogo che spiega che l'applicazione non verrà compilato (o qualsiasi le implicazioni) fino a quando non vengono risolti gli avvisi. Se l'utente chiude la finestra di dialogo e sostituisce le tabulazioni comunque, un'icona (critica o avviso, come appropriata) viene aggiunto alla scheda dichiarazioni.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>L'utente leggere il testo prima della chiusura dell'interfaccia utente
 
@@ -173,9 +173,9 @@ ms.locfileid: "58955191"
 
    **Soluzione migliore:** Porre la domanda che sarebbe chiedere all'utente, selezionando il collegamento.
 
--   Come funzionano i servizi di Azure?
+- Come funzionano i servizi di Azure?
 
--   Quando è necessario un progetto di servizi mobili di Azure?
+- Quando è necessario un progetto di servizi mobili di Azure?
 
 #### <a name="using-click-here-for-links"></a>Utilizzando "Fare clic qui" per i collegamenti
  I collegamenti ipertestuali dovrebbero essere autodescrittivi. È un antipattern usare "Fare clic qui" o qualsiasi variazione simili.

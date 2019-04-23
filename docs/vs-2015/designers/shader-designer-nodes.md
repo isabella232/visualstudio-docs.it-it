@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096283"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Gli articoli di questa sezione della documentazione contengono informazioni sui 
 ### <a name="promotion-of-inputs"></a>Promozione degli input  
  Poiché la finestra di progettazione shader deve alla fine generare codice sorgente HLSL in modo da poter usare l'effetto in un gioco o in un'app, i nodi di progettazione shader sono soggetti alle regole di promozione tipo usate da HLSL. Poiché l'hardware grafico opera principalmente su valori a virgola mobile, la promozione tipo tra tipi diversi, ad esempio da `int` a `float` o da `float` a `double`, non è comune. In alternativa, poiché l'hardware grafico usa la stessa operazione su più informazioni contemporaneamente, può verificarsi un tipo diverso di promozione in cui il più breve di un determinato numero di input viene allungato fino a corrispondere alla dimensione dell'input più lungo. Le modalità dell'allungamento dipendono dal tipo di input e anche dall'operazione in sé:  
   
--   **Se il tipo più piccolo è un valore scalare:**  
+- **Se il tipo più piccolo è un valore scalare:**  
   
      Il valore dello scalare viene replicato in un vettore di dimensioni pari all'input più grande. Ad esempio, l'input scalare 5.0 diventa il vettore (5.0, 5.0, 5.0) quando l'input maggiore dell'operazione è un vettore di tre elementi, indipendentemente dall'operazione.  
   
--   **Se il tipo più piccolo è un vettore e l'operazione è di tipo moltiplicativo (\*, /, % e così via):**  
+- **Se il tipo più piccolo è un vettore e l'operazione è di tipo moltiplicativo (\*, /, % e così via):**  
   
      Il valore del vettore viene copiato negli elementi iniziali di un vettore di dimensioni pari all'input di dimensioni maggiori e gli elementi finali vengono impostati su 1.0. Ad esempio, l'input di vettore (5.0, 5.0) diventa il vettore (5.0, 5.0, 1.0, 1.0) quando viene moltiplicato per un vettore con quattro elementi. Ciò consente di mantenere il terzo e il quarto elemento dell'output usando l'identità moltiplicativa, 1.0.  
   
--   **Se il tipo più piccolo è un vettore e l'operazione è di tipo additivo (+,-, e così via):**  
+- **Se il tipo più piccolo è un vettore e l'operazione è di tipo additivo (+,-, e così via):**  
   
      Il valore del vettore viene copiato negli elementi iniziali di un vettore di dimensioni pari all'input di dimensioni maggiori e gli elementi finali vengono impostati su 0.0. Ad esempio, l'input di vettore (5.0, 5.0) diventa il vettore (5.0, 5.0, 0.0, 0.0) quando viene aggiunto a un vettore con quattro elementi. Ciò consente di mantenere il terzo e il quarto elemento dell'output usando l'identità additiva, 0.0.  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Description|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Nodi costanti](../designers/constant-nodes.md)|Vengono descritti i nodi che è possibile usare per rappresentare i valori letterali e le informazioni di stato vertex interpolate nei calcoli dello shader. Poiché lo stato vertex è interpolato e quindi diverso per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione diversa della costante.|  
 |[Nodi Parameter](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|  

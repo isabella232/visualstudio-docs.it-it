@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095477"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ ms.locfileid: "58970164"
   
  Questo processo sono necessari i passaggi seguenti:  
   
-1.  Generare i manifesti dell'applicazione e distribuzione.  
+1. Generare i manifesti dell'applicazione e distribuzione.  
   
-2.  Modificare il manifesto di distribuzione per visualizzare un elenco di più versioni di .NET Framework.  
+2. Modificare il manifesto di distribuzione per visualizzare un elenco di più versioni di .NET Framework.  
   
-3.  Modificare il file app. config per elencare le versioni di runtime di .NET Framework compatibili.  
+3. Modificare il file app. config per elencare le versioni di runtime di .NET Framework compatibili.  
   
-4.  Modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework.  
+4. Modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework.  
   
-5.  Firmare il manifesto dell'applicazione.  
+5. Firmare il manifesto dell'applicazione.  
   
-6.  Aggiornare e firmare il manifesto della distribuzione.  
+6. Aggiornare e firmare il manifesto della distribuzione.  
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Per generare i manifesti dell'applicazione e distribuzione  
   
--   Usare la procedura guidata di pubblicazione o la pagina di pubblicazione di creazione progetti per pubblicare l'applicazione e generare l'applicazione e i file manifesto di distribuzione. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oppure [pubblicare Page, Project Designer](../ide/reference/publish-page-project-designer.md).  
+- Usare la procedura guidata di pubblicazione o la pagina di pubblicazione di creazione progetti per pubblicare l'applicazione e generare l'applicazione e i file manifesto di distribuzione. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oppure [pubblicare Page, Project Designer](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Per modificare il manifesto di distribuzione per visualizzare un elenco di più versioni di .NET Framework  
   
-1.  Nella directory di pubblicazione, aprire il manifesto di distribuzione usando l'Editor XML in Visual Studio. Il manifesto di distribuzione ha l'estensione del nome file. Application.  
+1. Nella directory di pubblicazione, aprire il manifesto di distribuzione usando l'Editor XML in Visual Studio. Il manifesto di distribuzione ha l'estensione del nome file. Application.  
   
-2.  Sostituire il codice XML tra i `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementi con il codice XML che elenca le versioni di .NET Framework supportate per l'applicazione.  
+2. Sostituire il codice XML tra i `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementi con il codice XML che elenca le versioni di .NET Framework supportate per l'applicazione.  
   
      Nella tabella seguente vengono illustrate alcune delle versioni di .NET Framework disponibili e il codice XML corrispondente che è possibile aggiungere al manifesto della distribuzione.  
   
@@ -68,9 +68,9 @@ ms.locfileid: "58970164"
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Per modificare il file app. config per elencare le versioni di runtime di .NET Framework compatibili  
   
-1.  In Esplora soluzioni aprire il file app. config usando l'Editor XML in Visual Studio.  
+1. In Esplora soluzioni aprire il file app. config usando l'Editor XML in Visual Studio.  
   
-2.  Sostituire (o aggiungere) il codice XML tra i `<startup>` e `</startup>` elementi con il codice XML che elenca i runtime di .NET Framework supportati per l'applicazione.  
+2. Sostituire (o aggiungere) il codice XML tra i `<startup>` e `</startup>` elementi con il codice XML che elenca i runtime di .NET Framework supportati per l'applicazione.  
   
      Nella tabella seguente vengono illustrate alcune delle versioni di .NET Framework disponibili e il codice XML corrispondente che è possibile aggiungere al manifesto della distribuzione.  
   
@@ -83,15 +83,15 @@ ms.locfileid: "58970164"
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Per modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework  
   
-1.  Nella directory di pubblicazione, aprire il manifesto dell'applicazione utilizzando l'Editor XML in Visual Studio. Il manifesto di distribuzione ha l'estensione manifest.  
+1. Nella directory di pubblicazione, aprire il manifesto dell'applicazione utilizzando l'Editor XML in Visual Studio. Il manifesto di distribuzione ha l'estensione manifest.  
   
-2.  Aggiungere `group="framework"` per il XML della dipendenza per gli assembly di sentinel (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Ad esempio, il codice XML dovrebbe essere simile al seguente:  
+2. Aggiungere `group="framework"` per il XML della dipendenza per gli assembly di sentinel (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Ad esempio, il codice XML dovrebbe essere simile al seguente:  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  Aggiornare il numero di versione il `<assemblyIdentity>` elemento per Microsoft.Windows.CommonLanguageRuntime sul numero di versione di .NET Framework che è il minimo comune denominatore. Ad esempio, se l'applicazione è destinata a .NET Framework 3.5 e [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], utilizzare il 2.0.50727.0 numero di versione e il codice XML dovrebbe essere simile al seguente:  
+3. Aggiornare il numero di versione il `<assemblyIdentity>` elemento per Microsoft.Windows.CommonLanguageRuntime sul numero di versione di .NET Framework che è il minimo comune denominatore. Ad esempio, se l'applicazione è destinata a .NET Framework 3.5 e [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], utilizzare il 2.0.50727.0 numero di versione e il codice XML dovrebbe essere simile al seguente:  
   
     ```  
     <dependency>  
@@ -103,7 +103,7 @@ ms.locfileid: "58970164"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Per aggiornare e firmare nuovamente l'applicazione e distribuzione di manifesti  
   
--   Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+- Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

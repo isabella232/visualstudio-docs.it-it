@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113456"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
   
 1. Abilitare la convalida nel **editor\convalida** nodo:  
   
-   1.  Aprire **Dsl\DslDefinition.dsl**.  
+   1. Aprire **Dsl\DslDefinition.dsl**.  
   
-   2.  In DSL Explorer espandere il **Editor** nodo e selezionare **convalida**.  
+   2. In DSL Explorer espandere il **Editor** nodo e selezionare **convalida**.  
   
-   3.  Nella finestra Proprietà impostare il **viene utilizzato** delle proprietà per `true`. È più pratico impostare tutte queste proprietà.  
+   3. Nella finestra Proprietà impostare il **viene utilizzato** delle proprietà per `true`. È più pratico impostare tutte queste proprietà.  
   
-   4.  Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
+   4. Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
   
 2. Scrivere le definizioni di classe parziali per una o più classi di dominio o relazioni di dominio Queste definizioni di scrittura in un nuovo file di codice nel **Dsl** progetto.  
   
@@ -74,7 +74,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   Per impostazione predefinita, questo attributo abiliterà inoltre la convalida per le classi derivate. Per disabilitare la convalida per una classe derivata specifica, è possibile usare `ValidationState.Disabled`.  
+   - Per impostazione predefinita, questo attributo abiliterà inoltre la convalida per le classi derivate. Per disabilitare la convalida per una classe derivata specifica, è possibile usare `ValidationState.Disabled`.  
   
 4. Aggiungere i metodi di convalida alle classi. Al metodo di convalida è possibile assegnare un nome qualsiasi, ma deve includere un parametro di tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  I gestori vengono inoltre chiamati dopo operazioni Undo o Redo che influiscono su collegamenti o elementi.  
   
-##  <a name="custom"></a> Categorie di convalida personalizzate  
+## <a name="custom"></a> Categorie di convalida personalizzate  
  Oltre alle categorie di convalida standard, come Menu e Open, è possibile definire categorie personalizzate e richiamarle dal codice programma. L'utente non può invece richiamarle direttamente.  
   
  Le categorie personalizzate vengono in genere usate per definire una categoria che verifica se il modello soddisfa le precondizioni di un determinato strumento.  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Alternative alla convalida  
+## <a name="alternatives"></a> Alternative alla convalida  
  I vincoli di convalida segnalano gli errori, ma non modificano il modello. Se, invece, si vuole evitare che il modello non sia più valido, è possibile usare altre tecniche,  
   
  che però non sono consigliate. È in genere preferibile lasciare che sia l'utente a decidere come correggere un modello non valido.  

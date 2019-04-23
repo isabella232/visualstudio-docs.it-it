@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9bc74cbd0d7fbcfec26f4bfe3f334623baf066b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113612"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** e **/globaltracegclife** abilitano la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.  
+   - **/globaltracegc** e **/globaltracegclife** abilitano la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.  
 
        |Opzione|Descrizione|  
        |------------|-----------------|  
@@ -91,14 +91,14 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   Specificare l'ID processo o il nome del processo del servizio. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.  
+    - Specificare l'ID processo o il nome del processo del servizio. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.  
 
 ## <a name="controlling-data-collection"></a>Controllo della raccolta di dati  
  Mentre è in esecuzione il servizio, è possibile controllare la raccolta dei dati avviando e arrestando la scrittura dei dati nel file con le opzioni di **VSPerfCmd.exe**. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -111,19 +111,19 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
 
-1.  Arrestare il servizio da Gestione controllo servizi.  
+1. Arrestare il servizio da Gestione controllo servizi.  
 
-2.  Arrestare il profiler. Tipo:  
+2. Arrestare il profiler. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Dopo aver completato tutte le profilature, deselezionare le variabili di ambiente di profilatura. Tipo:  
+3. Dopo aver completato tutte le profilature, deselezionare le variabili di ambiente di profilatura. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
      Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.  
 
-4.  Riavviare il computer.  
+4. Riavviare il computer.  
 
 ## <a name="see-also"></a>Vedere anche  
  [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)   

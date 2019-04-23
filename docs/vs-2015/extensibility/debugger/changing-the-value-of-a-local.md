@@ -11,12 +11,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29a2145199629b9a1a02928b5a4a888a5824c339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b955d27089d86035f96711c2f8442fec5b34bceb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113482"
 ---
 # <a name="changing-the-value-of-a-local"></a>Modifica del valore di una variabile locale
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "58964984"
   
 2. `IDebugProperty2::SetValueAsString` esegue le attività seguenti:  
   
-   1.  Valuta la stringa per produrre un valore.  
+   1. Valuta la stringa per produrre un valore.  
   
-   2.  Associa l'oggetto associato [IDebugField](../../extensibility/debugger/reference/idebugfield.md) oggetto da cui ottenere un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) oggetto.  
+   2. Associa l'oggetto associato [IDebugField](../../extensibility/debugger/reference/idebugfield.md) oggetto da cui ottenere un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) oggetto.  
   
-   3.  Converte il valore in una serie di byte.  
+   3. Converte il valore in una serie di byte.  
   
-   4.  Le chiamate [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) inserire byte del valore in memoria in modo che il programma sottoposto a debug può accedervi.  
+   4. Le chiamate [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) inserire byte del valore in memoria in modo che il programma sottoposto a debug può accedervi.  
   
 3. Visual Studio aggiorna il **variabili locali** visualizzati (vedere [la visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md) per informazioni dettagliate).  
   

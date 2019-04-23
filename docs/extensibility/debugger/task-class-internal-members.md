@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113443"
 ---
 # <a name="task-class---internal-members"></a>Classe Task - membri interni
 Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.Task?displayProperty=fullName> classi che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.Task> articolo di riferimento.
@@ -49,7 +49,7 @@ Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.Task?
 
 ### <a name="fields"></a>Campi
 
-|nome|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Delegato che rappresenta il codice da eseguire nel <xref:System.Threading.Tasks.Task> oggetto.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Archivia le proprietà aggiuntive del <xref:System.Threading.Tasks.Task> oggetto.|
@@ -67,17 +67,17 @@ Questo articolo descrive i membri interni del <xref:System.Threading.Tasks.Task?
 ## <a name="remarks"></a>Note
  I seguenti metodi interni sono utili per un motore di debugger perché fungono da indicatore all'ingresso di <xref:System.Threading.Tasks.Task> l'esecuzione di codice:
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096868"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
 I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](create-and-configure-tableadapters.md) e classi di set di dati possono essere generate in progetti separati. Ciò consente di separare i livelli applicazione rapidamente e generare applicazioni dati a più livelli.
@@ -30,25 +30,25 @@ Quando si separa il codice del dataset dal codice del TableAdapter, il progetto 
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Per separare il set di dati in un progetto diverso
 
-1.  Aprire una soluzione che contiene un set di dati (*XSD* file).
+1. Aprire una soluzione che contiene un set di dati (*XSD* file).
 
     > [!NOTE]
     >  Se la soluzione non contiene il progetto in cui si desidera separare il codice di set di dati, creare il progetto oppure aggiungere un progetto esistente alla soluzione.
 
-2.  Fare doppio clic su un file di set di dati tipizzato (un *XSD* file) nel **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.
+2. Fare doppio clic su un file di set di dati tipizzato (un *XSD* file) nel **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.
 
-3.  Selezionare un'area vuota del **Progettazione Dataset**.
+3. Selezionare un'area vuota del **Progettazione Dataset**.
 
-4.  Nel **delle proprietà** finestra, individuare il **DataSetProject** nodo.
+4. Nel **delle proprietà** finestra, individuare il **DataSetProject** nodo.
 
-5.  Nel **DataSetProject** elencare, selezionare il nome del progetto in cui si desidera generare il codice del set di dati.
+5. Nel **DataSetProject** elencare, selezionare il nome del progetto in cui si desidera generare il codice del set di dati.
 
      Dopo aver selezionato il progetto in cui si desidera generare il codice del set di dati, il **DataSet File** proprietà viene popolata con un nome file predefinito. Se necessario, è possibile modificare questo nome. Inoltre, se si desidera generare il codice del set di dati in una directory specifica, è possibile impostare il **cartella del progetto** proprietà sul nome di una cartella.
 
     > [!NOTE]
     >  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente il progetto di set di dati.
 
-6.  Salvare il set di dati.
+6. Salvare il set di dati.
 
      Il codice di set di dati viene generato nel progetto selezionato nel **DataSetProject** proprietà e il **TableAdapter** codice viene generato nel progetto corrente.
 

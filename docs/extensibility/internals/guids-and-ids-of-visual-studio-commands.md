@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096133"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandi i GUID e ID di Visual Studio
 I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio vengono definiti nei file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [definiti dall'IDE comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -52,11 +52,11 @@ I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE)
 ### <a name="special-cases"></a>Casi speciali
  Nei casi seguenti, il testo del menu o il testo della descrizione comando potrebbe non corrispondere esattamente quali sono le novità della definizione del comando.
 
--   Voci di menu che includono un carattere sottolineato, ad esempio la **Print** comando il **File** dal menu in cui il *P* è sottolineato.
+- Voci di menu che includono un carattere sottolineato, ad esempio la **Print** comando il **File** dal menu in cui il *P* è sottolineato.
 
      Caratteri preceduti da una e commerciale (&) carattere in nomi di menu vengono visualizzate come sottolineato. Tuttavia *vsct* i file vengono scritti in formato XML, che usa il carattere e commerciale (&) per indicare i caratteri speciali e richiede che una e commerciale da visualizzare deve essere digitata come  *&amp;amp;*. Pertanto, in un *vsct* file, il **stampa** comando viene visualizzata come  *&amp;amp; Stampa*.
 
--   I comandi che hanno testo dinamico, ad esempio **salvare** \<Filename corrente\>e generato dinamicamente le voci di menu, ad esempio gli elementi nel **file recenti** elenco.
+- I comandi che hanno testo dinamico, ad esempio **salvare** \<Filename corrente\>e generato dinamicamente le voci di menu, ad esempio gli elementi nel **file recenti** elenco.
 
      Non vi è alcun modo affidabile per cercare testo dinamico. In alternativa, trovare un gruppo che ospita il comando desiderato consultando [menu GUID e ID di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o [GUID e ID di Visual Studio le barre degli strumenti](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e cercare l'ID di tale gruppo. Se la definizione di comando non è presente il gruppo come relativo [elemento padre](../../extensibility/parent-element.md), ricerca *SharedCmdPlace.vsct* e *ShellCmdPlace.vsct* (o  *VsDbgCmdPlace.vsct* per i comandi del debugger) per un `<CommandPlacement>` elemento che imposta l'elemento padre del comando. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*, e *VsDbgCmdPlace.vsct* presenti il *\<percorso di installazione di Visual Studio SDK\>\ VisualStudioIntegration\Common\Inc\\* cartella.
 

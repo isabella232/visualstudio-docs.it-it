@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095100"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitazioni del debug di WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitazioni dell'esecuzione di istruzioni in un servizio  
  Per eseguire istruzioni in un servizio da un'applicazione client di cui si esegue il debug, è necessario soddisfare le seguenti condizioni:  
   
--   Il client deve chiamare il servizio utilizzando un oggetto client sincrono.  
+- Il client deve chiamare il servizio utilizzando un oggetto client sincrono.  
   
--   L'operazione del contratto non può essere unidirezionale.  
+- L'operazione del contratto non può essere unidirezionale.  
   
--   Se il server è asincrono, non è possibile visualizzare lo stack di chiamate completo durante l'esecuzione del codice nel servizio.  
+- Se il server è asincrono, non è possibile visualizzare lo stack di chiamate completo durante l'esecuzione del codice nel servizio.  
   
--   È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:  
+- È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitazioni della connessione automatica a un servizio  
  La connessione automatica a un servizio presenta le limitazioni riportate di seguito:  
   
--   Il servizio deve essere parte della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di cui si esegue il debug.  
+- Il servizio deve essere parte della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di cui si esegue il debug.  
   
--   Il servizio deve essere ospitato. Può essere parte di un progetto di sito Web (File system e HTTP), un progetto di applicazione Web (File system e HTTP) o un progetto di libreria di servizi WCF. I progetti di libreria di servizi WCF possono essere librerie di servizi o librerie di servizi di flusso di lavoro.  
+- Il servizio deve essere ospitato. Può essere parte di un progetto di sito Web (File system e HTTP), un progetto di applicazione Web (File system e HTTP) o un progetto di libreria di servizi WCF. I progetti di libreria di servizi WCF possono essere librerie di servizi o librerie di servizi di flusso di lavoro.  
   
--   Il servizio deve essere richiamato da un client WCF.  
+- Il servizio deve essere richiamato da un client WCF.  
   
--   È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:  
+- È necessario abilitare il debug con il codice riportato di seguito nel file app.config o web.config:  
   
     ```  
     <system.web>  

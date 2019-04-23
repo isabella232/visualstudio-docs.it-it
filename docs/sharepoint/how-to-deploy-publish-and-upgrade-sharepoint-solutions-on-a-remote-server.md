@@ -15,54 +15,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed75a5a6d888f3fc82acf8e7d41ac2ec82007636
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095659"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire soluzioni di SharePoint al sistema locale, è possibile pubblicare soluzioni create mediante sandbox di SharePoint a siti remoti o i siti SharePoint locali. Le copie di processo di pubblicazione remoto il *wsp* file nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione di soluzioni di SharePoint remota dopo aver apportato modifiche a esso.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Per pubblicare una soluzione creata mediante sandbox di SharePoint in un server SharePoint remoto
 
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto in modalità sandbox di SharePoint che si desidera pubblicare e quindi scegliere **Publish**.
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto in modalità sandbox di SharePoint che si desidera pubblicare e quindi scegliere **Publish**.
 
-2.  Nel **Publish** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi immettere un URL per un sito di pubblicazione online, ad esempio: `https://mytestsite.sharepoint.microsoftonline.com`.
+2. Nel **Publish** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi immettere un URL per un sito di pubblicazione online, ad esempio: `https://mytestsite.sharepoint.microsoftonline.com`.
 
-3.  Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni nel **raccolta soluzioni** pagina dopo la pubblicazione.
+3. Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni nel **raccolta soluzioni** pagina dopo la pubblicazione.
 
-4.  Scegliere il **pubblica** pulsante.
+4. Scegliere il **pubblica** pulsante.
 
-5.  Accedere al server remoto se è necessaria l'autenticazione utente.
+5. Accedere al server remoto se è necessaria l'autenticazione utente.
 
      Viene visualizzato lo stato della pubblicazione in Visual Studio **Output** finestra. Quando il processo viene completato, la soluzione (*wsp*) file viene installato nel server SharePoint remoto. Tuttavia, deve ancora essere attivato prima di poter essere utilizzato in SharePoint.
 
-6.  Nel **raccolta soluzioni** pagina, selezionare l'applicazione di SharePoint e quindi sulla barra multifunzione scegliere la **Activate** pulsante.
+6. Nel **raccolta soluzioni** pagina, selezionare l'applicazione di SharePoint e quindi sulla barra multifunzione scegliere la **Activate** pulsante.
 
-7.  Nel **soluzione attiva** finestra di dialogo, nella barra multifunzione, scegliere il **Activate** nuovamente clic sul pulsante.
+7. Nel **soluzione attiva** finestra di dialogo, nella barra multifunzione, scegliere il **Activate** nuovamente clic sul pulsante.
 
      Il **lo stato** colonna il **raccolta soluzioni** pagina indica che l'applicazione è attiva.
 
 ## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Per eseguire l'aggiornamento di una soluzione creata mediante sandbox di SharePoint in un server SharePoint remoto
  Se una soluzione creata mediante sandbox di SharePoint è già pubblicata in un server remoto, il processo seguente consente di eseguire l'aggiornamento dopo aver apportato modifiche all'applicazione nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-1.  Rinominare il pacchetto di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. A questo scopo, nella **Esplora soluzioni** aprire il pacchetto. Viene visualizzato nei **Esplora pacchetti**.
+1. Rinominare il pacchetto di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. A questo scopo, nella **Esplora soluzioni** aprire il pacchetto. Viene visualizzato nei **Esplora pacchetti**.
 
-2.  Nelle **Package Explorer**, nella **nome** , modificare il nome del pacchetto con un nome univoco.
+2. Nelle **Package Explorer**, nella **nome** , modificare il nome del pacchetto con un nome univoco.
 
-3.  Salvare il progetto.
+3. Salvare il progetto.
 
-4.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Publish**.
+4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Publish**.
 
-5.  Nel **Publish** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi, se l'URL per il server remoto in cui la soluzione viene salvata non è presente, l'immissione.
+5. Nel **Publish** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi, se l'URL per il server remoto in cui la soluzione viene salvata non è presente, l'immissione.
 
-6.  Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni nel **raccolta soluzioni** pagina dopo la pubblicazione.
+6. Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni nel **raccolta soluzioni** pagina dopo la pubblicazione.
 
-7.  Scegliere il **pubblica** pulsante.
+7. Scegliere il **pubblica** pulsante.
 
-8.  Accedere al server remoto se è necessaria l'autenticazione utente.
+8. Accedere al server remoto se è necessaria l'autenticazione utente.
 
      Se connesso al server remoto di recente, potrebbe non essere necessaria l'autenticazione.
 

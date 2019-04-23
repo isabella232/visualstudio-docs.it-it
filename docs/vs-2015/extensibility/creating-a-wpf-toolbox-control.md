@@ -12,12 +12,12 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 768d9747635f2106d16f755db6799e356c890838
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096400"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Creazione di un controllo della casella degli strumenti WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Il modello di controllo della casella degli strumenti WPF (Windows Presentation 
   
 #### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Creare un'estensione con un controllo della casella degli strumenti WPF  
   
-1.  Creare un progetto VSIX denominato `MyToolboxControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+1. Creare un progetto VSIX denominato `MyToolboxControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
   
-2.  Quando si apre il progetto, aggiungere un **controllo della casella degli strumenti WPF** modello di elemento denominato `MyToolboxControl`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **controllo della casella degli strumenti WPF**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando in `MyToolboxControl.cs`.  
+2. Quando si apre il progetto, aggiungere un **controllo della casella degli strumenti WPF** modello di elemento denominato `MyToolboxControl`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **controllo della casella degli strumenti WPF**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando in `MyToolboxControl.cs`.  
   
      La soluzione ora contiene un controllo utente, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> che aggiunge il controllo per il **della casella degli strumenti**e un **Microsoft.VisualStudio.ToolboxControl** voce di risorsa nel manifesto VSIX per  distribuzione.  
   
 #### <a name="to-create-the-control-ui"></a>Creare l'interfaccia utente del controllo  
   
-1.  Aprire MyToolboxControl.xaml nella finestra di progettazione.  
+1. Aprire MyToolboxControl.xaml nella finestra di progettazione.  
   
      La finestra di progettazione mostra un controllo <xref:System.Windows.Controls.Grid> che contiene un controllo <xref:System.Windows.Controls.Button>.  
   
-2.  Definire il layout di griglia. Quando si seleziona il <xref:System.Windows.Controls.Grid> controllare, sui bordi superiore e sinistro della griglia vengono visualizzate le barre di controllo blu. È possibile aggiungere righe e colonne nella griglia facendo clic sulle barre.  
+2. Definire il layout di griglia. Quando si seleziona il <xref:System.Windows.Controls.Grid> controllare, sui bordi superiore e sinistro della griglia vengono visualizzate le barre di controllo blu. È possibile aggiungere righe e colonne nella griglia facendo clic sulle barre.  
   
-3.  Aggiungere i controlli figlio nella griglia. È possibile posizionare un controllo figlio trascinandolo dal **della casella degli strumenti** a una sezione della griglia, oppure tramite l'impostazione relativa `Grid.Row` e `Grid.Column` gli attributi nel XAML. L'esempio seguente aggiunge due etichette nella parte superiore della griglia e un pulsante sulla seconda riga.  
+3. Aggiungere i controlli figlio nella griglia. È possibile posizionare un controllo figlio trascinandolo dal **della casella degli strumenti** a una sezione della griglia, oppure tramite l'impostazione relativa `Grid.Row` e `Grid.Column` gli attributi nel XAML. L'esempio seguente aggiunge due etichette nella parte superiore della griglia e un pulsante sulla seconda riga.  
   
     ```xaml  
     <Grid>  
@@ -57,11 +57,11 @@ Il modello di controllo della casella degli strumenti WPF (Windows Presentation 
 ## <a name="renaming-the-control"></a>Ridenominazione del controllo  
  Per impostazione predefinita, il controllo verrà visualizzato nei **casella degli strumenti** come **MyToolboxControl** in un gruppo denominato **MyToolboxControl.MyToolboxControl**. È possibile modificare questi nomi nel file MyToolboxControl.xaml.cs.  
   
-1.  Aprire MyToolboxControl.xaml.cs nella visualizzazione codice.  
+1. Aprire MyToolboxControl.xaml.cs nella visualizzazione codice.  
   
-2.  Trovare la classe MyToolboxControl e rinominarlo in TestControl. (Il modo più rapido per eseguire questa operazione consiste nel rinominare la classe, quindi selezionare **Rinomina** dal menu di scelta rapida e completare i passaggi. (Per ulteriori informazioni sul **rinominare** comando, vedere [Refactoring di ridenominazione (c#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2. Trovare la classe MyToolboxControl e rinominarlo in TestControl. (Il modo più rapido per eseguire questa operazione consiste nel rinominare la classe, quindi selezionare **Rinomina** dal menu di scelta rapida e completare i passaggi. (Per ulteriori informazioni sul **rinominare** comando, vedere [Refactoring di ridenominazione (c#)](../csharp-ide/rename-refactoring-csharp.md).)  
   
-3.  Andare alla `ProvideToolboxControl` dell'attributo e modificare il valore del primo parametro a **Test**. Si tratta del nome del gruppo che contiene il controllo nel **casella degli strumenti**.  
+3. Andare alla `ProvideToolboxControl` dell'attributo e modificare il valore del primo parametro a **Test**. Si tratta del nome del gruppo che contiene il controllo nel **casella degli strumenti**.  
   
      Il codice risultante dovrebbe essere simile al seguente:  
   
@@ -81,22 +81,22 @@ Il modello di controllo della casella degli strumenti WPF (Windows Presentation 
   
 #### <a name="to-build-and-test-the-control"></a>Per compilare e testare il controllo  
   
-1.  Ricompilare il progetto e avviare il debug.  
+1. Ricompilare il progetto e avviare il debug.  
   
-2.  Nella nuova istanza di Visual Studio creare un progetto di applicazione WPF. Verificare che sia aperta la finestra di progettazione XAML.  
+2. Nella nuova istanza di Visual Studio creare un progetto di applicazione WPF. Verificare che sia aperta la finestra di progettazione XAML.  
   
-3.  Individuare il controllo nella **casella degli strumenti** e trascinarlo nell'area di progettazione.  
+3. Individuare il controllo nella **casella degli strumenti** e trascinarlo nell'area di progettazione.  
   
-4.  Avviare il debug dell'applicazione WPF.  
+4. Avviare il debug dell'applicazione WPF.  
   
-5.  Verificare che venga visualizzato il controllo.  
+5. Verificare che venga visualizzato il controllo.  
   
 #### <a name="to-deploy-the-control"></a>Per distribuire il controllo  
   
-1.  Dopo aver compilato il progetto testato, è possibile trovare il file. VSIX nella cartella \bin\debug\ del progetto.  
+1. Dopo aver compilato il progetto testato, è possibile trovare il file. VSIX nella cartella \bin\debug\ del progetto.  
   
-2.  È possibile installarlo in un computer locale facendo doppio clic su file con estensione VSIX e seguendo la procedura di installazione. Per disinstallare il controllo, andare a **strumenti / estensioni e aggiornamenti** e cercare l'estensione di controllo, quindi fare clic su **Disinstalla**.  
+2. È possibile installarlo in un computer locale facendo doppio clic su file con estensione VSIX e seguendo la procedura di installazione. Per disinstallare il controllo, andare a **strumenti / estensioni e aggiornamenti** e cercare l'estensione di controllo, quindi fare clic su **Disinstalla**.  
   
-3.  Caricare il file VSIX in una rete o in un sito Web.  
+3. Caricare il file VSIX in una rete o in un sito Web.  
   
      Se si carica il file per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web, altri utenti potranno usare **strumenti / estensioni e aggiornamenti** in Visual Studio per trovare il controllo online e installarlo.

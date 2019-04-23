@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113755"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  Questo documento illustra le attività seguenti:  
   
--   Aggiunta di nodi a un grafico shader  
+- Aggiunta di nodi a un grafico shader  
   
--   Disconnessione di nodi  
+- Disconnessione di nodi  
   
--   Connessione ai nodi  
+- Connessione ai nodi  
   
 ## <a name="the-phong-lighting-model"></a>Modello di illuminazione Phong  
  Il modello di illuminazione Phong estende il modello di illuminazione Lambert con l'evidenziazione speculare, che simula le proprietà riflettenti di una superficie. Il componente speculare fornisce maggiore illuminazione dalle stesse sorgenti di luce direzionale usate nel modello di illuminazione Lambert, ma il contributo apportato al colore finale viene elaborato in modo diverso. L'evidenziazione speculare influenza ogni area della scena in modo diverso, in base alla relazione tra la direzione di visualizzazione, la direzione delle sorgenti di luce e l'orientamento della superficie. È un prodotto del colore speculare, della potenza speculare e dell'orientamento della superficie, nonché del colore, dell'intensità e della direzione delle sorgenti di luce. Le superfici che riflettono la sorgente di luce in direzione dell'osservatore ricevono il contributo speculare massimo, mentre le superfici che riflettono la sorgente di luce lontano dall'osservatore non ricevono alcun contributo. Nel modello di illuminazione Phong uno o più componenti speculari vengono combinati per determinare il colore e l'intensità di evidenziazione speculare di ogni punto sull'oggetto e quindi vengono aggiunti al risultato del modello di illuminazione Lambert per produrre il colore finale del pixel.  
@@ -72,7 +72,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
+ [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md)   
  [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

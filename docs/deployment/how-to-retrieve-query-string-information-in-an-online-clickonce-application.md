@@ -1,5 +1,5 @@
 ---
-title: "Procedura: recuperare informazioni sulle stringhe di Query in un'applicazione ClickOnce Online | Microsoft Docs"
+title: "Procedura: Recuperare informazioni sulle stringhe di Query in un'applicazione ClickOnce Online | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095861"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 La *stringa di query* è la parte di un URL che inizia con un punto interrogativo (?) e contiene informazioni arbitrarie nel formato *nome = valore*. Si supponga di avere un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominata `WindowsApp1` che è ospitare in `servername`e di voler passare un valore per la variabile `username` quando l'applicazione viene avviata. L'aspetto dell'URL potrebbe essere simile al seguente:
@@ -39,19 +39,19 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
 > [!NOTE]
 >  Prima di decidere se attivare questa funzionalità, vedere la sezione "Sicurezza" più avanti in questo argomento.
 
- Per informazioni su come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* oppure *MageUI.exe*, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Per informazioni su come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* oppure *MageUI.exe*, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 >  A partire da .NET Framework 3.5 SP1, è possibile passare argomenti della riga di comando in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] offline. Se si desidera fornire argomenti all'applicazione, è possibile passare parametri al file di collegamento con l'estensione .APPREF-MS.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Per ottenere informazioni sulla stringa di query da un'applicazione ClickOnce
 
-1.  Includere il codice seguente nel progetto. Affinché questo codice funzioni, è necessario avere un riferimento a System.Web e aggiungere le istruzioni `using` o `Imports` per System.Web, System.Collections.Specialized e System.Deployment.Application.
+1. Includere il codice seguente nel progetto. Affinché questo codice funzioni, è necessario avere un riferimento a System.Web e aggiungere le istruzioni `using` o `Imports` per System.Web, System.Collections.Specialized e System.Deployment.Application.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  Chiamare la funzione definita in precedenza per recuperare un <xref:System.Collections.DictionaryBase.Dictionary%2A> dei parametri della stringa di query, indicizzati per nome.
+2. Chiamare la funzione definita in precedenza per recuperare un <xref:System.Collections.DictionaryBase.Dictionary%2A> dei parametri della stringa di query, indicizzati per nome.
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Per abilitare la stringa di query passando un'applicazione ClickOnce con MageUI.exe
 

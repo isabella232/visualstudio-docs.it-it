@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096517"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procedura dettagliata: Identificazione dei problemi di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
  In questa procedura dettagliata vengono illustrate le operazioni seguenti:  
   
--   Eseguire la profilatura di un'applicazione tramite il metodo di campionamento.  
+- Eseguire la profilatura di un'applicazione tramite il metodo di campionamento.  
   
--   Analizzare i risultati della profilatura campionati per individuare e risolvere un problema di prestazioni.  
+- Analizzare i risultati della profilatura campionati per individuare e risolvere un problema di prestazioni.  
   
--   Eseguire la profilatura di un'applicazione tramite il metodo di strumentazione.  
+- Eseguire la profilatura di un'applicazione tramite il metodo di strumentazione.  
   
--   Analizzare i risultati della profilatura instrumentati per individuare e risolvere un problema di prestazioni.  
+- Analizzare i risultati della profilatura instrumentati per individuare e risolvere un problema di prestazioni.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
@@ -51,29 +51,29 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>Per eseguire la profilatura di un'applicazione tramite il metodo di campionamento  
   
-1.  Aprire [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] con privilegi di amministratore. Per eseguire la profilatura, è necessario essere un amministratore.  
+1. Aprire [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] con privilegi di amministratore. Per eseguire la profilatura, è necessario essere un amministratore.  
   
-2.  Aprire la soluzione PeopleTrax.  
+2. Aprire la soluzione PeopleTrax.  
   
      La soluzione PeopleTrax verrà inserita in Esplora soluzioni.  
   
-3.  Impostare l'opzione di configurazione del progetto su **Rilascio**.  
+3. Impostare l'opzione di configurazione del progetto su **Rilascio**.  
   
      Usare una build di rilascio per rilevare i problemi di prestazioni nell'applicazione. Per la profilatura è consigliata una build di rilascio perché una build di debug contiene informazioni aggiuntive che potrebbero influire negativamente sulle prestazioni e non indicare in modo accurato i problemi di prestazioni.  
   
-4.  Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
+4. Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
   
      Verrà visualizzata la Creazione guidata sessione di prestazioni.  
   
-5.  Verificare che sia selezionato **Campionamento CPU (consigliato)** e quindi fare clic su **Avanti**.  
+5. Verificare che sia selezionato **Campionamento CPU (consigliato)** e quindi fare clic su **Avanti**.  
   
-6.  In **Specificare l'applicazione di destinazione per la profilatura** selezionare PeopleTrax e quindi fare clic su **Avanti**.  
+6. In **Specificare l'applicazione di destinazione per la profilatura** selezionare PeopleTrax e quindi fare clic su **Avanti**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] compila il progetto e avvia la profilatura dell'applicazione. Verrà visualizzata la finestra dell'applicazione **PeopleTrax**.  
   
-7.  Fare clic su **Get People**.  
+7. Fare clic su **Get People**.  
   
-8.  Fare clic su **ExportData**.  
+8. Fare clic su **ExportData**.  
   
      Verrà aperto il Blocco note con un nuovo file che contiene i dati esportati da **PeopleTrax**.  
   
@@ -83,23 +83,23 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 #### <a name="to-analyze-sampled-profiling-results"></a>Per analizzare i risultati della profilatura campionati  
   
-1.  La visualizzazione Riepilogo mostra una sequenza temporale dell'utilizzo della CPU nel corso dell'esecuzione della profilatura, l'elenco **Percorso critico** che rappresenta il ramo più attivo dell'albero delle chiamate dell'applicazione e un elenco **Funzioni che svolgono più lavoro individuale** che mostra le funzioni che sono state campionate più di frequente durante l'esecuzione del codice nel corpo della funzione.  
+1. La visualizzazione Riepilogo mostra una sequenza temporale dell'utilizzo della CPU nel corso dell'esecuzione della profilatura, l'elenco **Percorso critico** che rappresenta il ramo più attivo dell'albero delle chiamate dell'applicazione e un elenco **Funzioni che svolgono più lavoro individuale** che mostra le funzioni che sono state campionate più di frequente durante l'esecuzione del codice nel corpo della funzione.  
   
      Esaminando l'elenco **Percorso critico**, è possibile osservare che il metodo PeopleNS.People.GetNames è la funzione PeopleTrax più vicina alla fine dell'elenco. La sua posizione la rende un buon candidato per l'analisi. Fare clic sul nome della funzione per visualizzare i dettagli di GetNames nella visualizzazione **Dettagli funzione**.  
   
-2.  La visualizzazione **Dettagli funzione** contiene due finestre. La finestra di distribuzione dei costi fornisce una visualizzazione grafica del lavoro svolto dalla funzione, del lavoro svolto dalle funzioni che questa ha chiamato e del contributo delle funzioni che hanno chiamato la funzione per il numero di istanze campionate. È possibile modificare la funzione rappresentata della visualizzazione facendo clic sul nome di una funzione. È ad esempio possibile fare clic su PeopleNS.People.GetPeople per rendere GetPeople la funzione selezionata.  
+2. La visualizzazione **Dettagli funzione** contiene due finestre. La finestra di distribuzione dei costi fornisce una visualizzazione grafica del lavoro svolto dalla funzione, del lavoro svolto dalle funzioni che questa ha chiamato e del contributo delle funzioni che hanno chiamato la funzione per il numero di istanze campionate. È possibile modificare la funzione rappresentata della visualizzazione facendo clic sul nome di una funzione. È ad esempio possibile fare clic su PeopleNS.People.GetPeople per rendere GetPeople la funzione selezionata.  
   
      La finestra **Visualizzazione codice funzione** mostra il codice sorgente per la funzione, se disponibile, ed evidenzia le righe più costose della funzione selezionata. Quando si seleziona GetNames, è possibile notare che questa funzione legge una stringa dalle risorse dell'applicazione e quindi usa una classe <xref:System.IO.StringReader> per aggiungere ogni riga nella stringa a una classe <xref:System.Collections.ArrayList>. Non esiste un modo ovvio per ottimizzare questa funzione.  
   
-3.  Poiché PeopleNS.People.GetPeople è il solo chiamante di GetNames, fare clic su GetPeople nella finestra di distribuzione dei costi per esaminarne il codice. Questo metodo restituisce una classe <xref:System.Collections.ArrayList> di oggetti PersonInformationNS.PersonInformation dai nomi di persone e di aziende prodotti da GetNames. Tuttavia, GetNames viene chiamata due volte ogni volta che viene creato un oggetto PersonInformation. È possibile vedere che il metodo può essere facilmente ottimizzato creando gli elenchi una sola volta all'inizio del metodo e indicizzando tali elenchi durante il ciclo di creazione di PersonInformation.  
+3. Poiché PeopleNS.People.GetPeople è il solo chiamante di GetNames, fare clic su GetPeople nella finestra di distribuzione dei costi per esaminarne il codice. Questo metodo restituisce una classe <xref:System.Collections.ArrayList> di oggetti PersonInformationNS.PersonInformation dai nomi di persone e di aziende prodotti da GetNames. Tuttavia, GetNames viene chiamata due volte ogni volta che viene creato un oggetto PersonInformation. È possibile vedere che il metodo può essere facilmente ottimizzato creando gli elenchi una sola volta all'inizio del metodo e indicizzando tali elenchi durante il ciclo di creazione di PersonInformation.  
   
-4.  Una versione alternativa di GetPeople viene fornita con il codice dell'applicazione di esempio ed è possibile chiamare la funzione ottimizzata aggiungendo un simbolo di compilazione condizionale alle proprietà di compilazione. Nella finestra Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto People e scegliere **Proprietà**. Fare clic su **Genera** nel menu della pagina delle proprietà e quindi digitare **OPTIMIZED_GETPEOPLE** nella casella di testo per il simbolo di compilazione condizionale. La versione ottimizzata di GetPeople sostituisce il metodo originale nella compilazione successiva.  
+4. Una versione alternativa di GetPeople viene fornita con il codice dell'applicazione di esempio ed è possibile chiamare la funzione ottimizzata aggiungendo un simbolo di compilazione condizionale alle proprietà di compilazione. Nella finestra Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto People e scegliere **Proprietà**. Fare clic su **Genera** nel menu della pagina delle proprietà e quindi digitare **OPTIMIZED_GETPEOPLE** nella casella di testo per il simbolo di compilazione condizionale. La versione ottimizzata di GetPeople sostituisce il metodo originale nella compilazione successiva.  
   
-5.  Eseguire nuovamente la sessione di prestazioni. Nella barra degli strumenti di Esplora prestazioni fare clic su **Avvio con analisi**. Fare clic su **Get People** e quindi su **Esporta dati**. Chiudere la finestra del Blocco note visualizzata e quindi chiudere l'applicazione PeopleTrax.  
+5. Eseguire nuovamente la sessione di prestazioni. Nella barra degli strumenti di Esplora prestazioni fare clic su **Avvio con analisi**. Fare clic su **Get People** e quindi su **Esporta dati**. Chiudere la finestra del Blocco note visualizzata e quindi chiudere l'applicazione PeopleTrax.  
   
      Verrà generato un nuovo file di dati di profilatura e sarà mostrata una visualizzazione **Riepilogo** per i nuovi dati nella finestra principale di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-6.  Per confrontare le due esecuzioni della profilatura, selezionare i due file di dati in Esplora prestazioni, fare clic con il pulsante destro del mouse sui file e quindi scegliere **Confronta rapporto di prestazioni**. Viene visualizzata una finestra Rapporto di confronto nella finestra principale di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. La colonna **Delta** mostra la modifica del valore delle prestazioni delle funzioni, dal valore precedente **Linea di base** al valore successivo **Confronto**. È possibile selezionare i valori da confrontare nell'elenco a discesa **Colonna**. Selezionare **% esempi inclusivi**.  
+6. Per confrontare le due esecuzioni della profilatura, selezionare i due file di dati in Esplora prestazioni, fare clic con il pulsante destro del mouse sui file e quindi scegliere **Confronta rapporto di prestazioni**. Viene visualizzata una finestra Rapporto di confronto nella finestra principale di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. La colonna **Delta** mostra la modifica del valore delle prestazioni delle funzioni, dal valore precedente **Linea di base** al valore successivo **Confronto**. È possibile selezionare i valori da confrontare nell'elenco a discesa **Colonna**. Selezionare **% esempi inclusivi**.  
   
      Si noti che i metodi GetPeople e GetNames mostrano notevoli miglioramenti delle prestazioni.  
   
@@ -110,25 +110,25 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 #### <a name="to-profile-an-existing-application-by-using-the-instrumentation-method"></a>Per eseguire la profilatura di un'applicazione esistente tramite il metodo di strumentazione  
   
-1.  Se necessario, aprire l'applicazione PeopleTrax in Visual Studio.  
+1. Se necessario, aprire l'applicazione PeopleTrax in Visual Studio.  
   
      Assicurarsi di usare un account di amministratore e verificare che la configurazione della build per la soluzione sia impostata su **Rilascio**.  
   
-2.  In Esplora prestazioni fare clic su **Strumentazione**.  
+2. In Esplora prestazioni fare clic su **Strumentazione**.  
   
-3.  Nella barra degli strumenti di Esplora prestazioni fare clic su **Avvio con analisi**.  
+3. Nella barra degli strumenti di Esplora prestazioni fare clic su **Avvio con analisi**.  
   
      Il profiler compila il progetto e avvia la profilatura dell'applicazione. Verrà visualizzata la finestra dell'applicazione PeopleTrax.  
   
-4.  Fare clic su **Get People**.  
+4. Fare clic su **Get People**.  
   
      Verranno inseriti dati nella griglia dei dati di PeopleTrax.  
   
-5.  Attendere circa 10 secondi e quindi fare clic su **Esporta dati**.  
+5. Attendere circa 10 secondi e quindi fare clic su **Esporta dati**.  
   
      Verrà avviato il **Blocco note** e sarà visualizzato un nuovo file che contiene un elenco di persone di PeopleTrax. L'attesa consente di identificare più facilmente la procedura di esportazione dei dati per il filtro.  
   
-6.  Chiudere il **Blocco note** e quindi chiudere l'applicazione **PeopleTrax**.  
+6. Chiudere il **Blocco note** e quindi chiudere l'applicazione **PeopleTrax**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] genera un report della sessione di prestazioni (con estensione vsp).  
   

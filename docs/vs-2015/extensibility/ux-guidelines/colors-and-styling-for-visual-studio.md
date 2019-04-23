@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095815"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59670095"
 
  **Strumenti > finestra di dialogo Opzioni**
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio offre un servizio colori ambiente, denominato anche VSColor service o il servizio di colore della shell. Questo servizio consente di associare i valori di colore degli elementi dell'interfaccia utente per un set contenente i colori per ogni tema colori di nome-valore. VSColor service deve essere usato per tutti gli elementi dell'interfaccia utente, in modo da colori automaticamente cambiano per riflettere il tema selezionato dall'utente corrente, in modo che l'interfaccia utente associato al servizio colori ambiente si integreranno con nuovi temi nelle future versioni di Visual Studio.
 
 ### <a name="how-the-service-works"></a>Come funziona il servizio
@@ -256,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Scelta di colori a contrasto elevato
+## <a name="BKMK_ChoosingHighContrastColors"></a> Scelta di colori a contrasto elevato
 
 ### <a name="overview"></a>Panoramica
  Windows Usa diversi temi a livello di sistema a contrasto elevato che aumentare il contrasto dei colori di testo, sfondi e immagini, rendendo gli elementi vengono visualizzati più distinta sullo schermo. Per motivi di accessibilità, è importante che gli elementi dell'interfaccia di Visual Studio rispondano correttamente quando gli utenti passano a un tema a contrasto elevato.
 
  Solo un numero limitato di colori di sistema può essere utilizzato per temi a contrasto elevato. Quando si sceglie il sistema di nomi di colore, ricordare i suggerimenti seguenti:
 
-1.  **Scegliere i colori di sistema che hanno lo stesso significato semantico** come elemento che è colorazione. Ad esempio, se si sceglie un colore a contrasto elevato per il testo all'interno di una finestra, usare WindowText e non ControlText.
+1. **Scegliere i colori di sistema che hanno lo stesso significato semantico** come elemento che è colorazione. Ad esempio, se si sceglie un colore a contrasto elevato per il testo all'interno di una finestra, usare WindowText e non ControlText.
 
-2.  **Scegliere coppie di primo piano/sfondo** insieme, altrimenti non sarà la certezza che la scelta colori funziona in tutti i temi a contrasto elevato.
+2. **Scegliere coppie di primo piano/sfondo** insieme, altrimenti non sarà la certezza che la scelta colori funziona in tutti i temi a contrasto elevato.
 
-3.  **Determinare quali parti dell'interfaccia utente sono quelle più importanti e assicurarsi che le aree del contenuto verranno distinguiti.** Si perderà una grande quantità di dettaglio che normalmente verrebbero distinguono esservi differenze minime nei tonalità di colore, in modo che l'uso di colori del bordo sicuro è comune per definire le aree del contenuto, poiché non vi sono alcun varianti di colore per le diverse aree del contenuto.
+3. **Determinare quali parti dell'interfaccia utente sono quelle più importanti e assicurarsi che le aree del contenuto verranno distinguiti.** Si perderà una grande quantità di dettaglio che normalmente verrebbero distinguono esservi differenze minime nei tonalità di colore, in modo che l'uso di colori del bordo sicuro è comune per definire le aree del contenuto, poiché non vi sono alcun varianti di colore per le diverse aree del contenuto.
 
 ### <a name="system-color-set"></a>Set di colori di sistema
  La tabella in [Blog del Team WPF: Riferimento SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indica il set completo di nomi di colori di sistema e le corrispondenti tonalità visualizzate in ogni tema.
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-Bordo IDE|
 |WindowText|-In primo piano della scheda Nascondi automaticamente<br />-In primo piano della scheda finestra strumento selezionato<br />-Scheda della finestra documento con stato non attivo e in primo piano deselezionato o con stato non attivo della scheda provvisoria<br />-Ad albero in primo piano predefinito di visualizzazione e al passaggio del mouse sul glifo non selezionato<br />-Bordo selezionato scheda della finestra strumento<br />-Glifo del bordo e sfondo del cursore della barra di scorrimento|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Esposizione di colori per gli utenti finali
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Esposizione di colori per gli utenti finali
 
 ### <a name="overview"></a>Panoramica
  In alcuni casi è opportuno consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o l'area di progettazione. Il modo più comune per eseguire questa operazione consiste nell'usare la **strumenti > Opzioni** finestra di dialogo. A meno che non si dispone di altamente specializzati dell'interfaccia utente che richiede controlli speciali, il modo più semplice per presentare la personalizzazione è tramite il **tipi di carattere e colori** pagina all'interno di **ambiente** sezione della finestra di dialogo. Per ogni elemento che espone per la personalizzazione, l'utente può scegliere di modificare il colore primo piano, il colore di sfondo o entrambi.
@@ -335,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  Per implementare le categorie personalizzate o visualizzare gli elementi, un pacchetto VSPackage deve:
 
--   **Creare o identificare le categorie nel Registro di sistema.** Implementazione dell'IDE del **Fonts and Colors** pagina delle proprietà Usa queste informazioni per eseguire correttamente le query per il servizio che supporta una determinata categoria.
+- **Creare o identificare le categorie nel Registro di sistema.** Implementazione dell'IDE del **Fonts and Colors** pagina delle proprietà Usa queste informazioni per eseguire correttamente le query per il servizio che supporta una determinata categoria.
 
--   **Creare o identificare i gruppi nel Registro di sistema (facoltativo).** Potrebbe essere utile definire un gruppo, che rappresenta l'unione di due o più categorie. Se viene definito un gruppo, l'IDE automaticamente unisce le sottocategorie e distribuisce elementi visualizzati all'interno del gruppo.
+- **Creare o identificare i gruppi nel Registro di sistema (facoltativo).** Potrebbe essere utile definire un gruppo, che rappresenta l'unione di due o più categorie. Se viene definito un gruppo, l'IDE automaticamente unisce le sottocategorie e distribuisce elementi visualizzati all'interno del gruppo.
 
--   **Implementazione del supporto IDE.**
+- **Implementazione del supporto IDE.**
 
--   **Gestire le modifiche di carattere e colori.**
+- **Gestire le modifiche di carattere e colori.**
 
 #### <a name="to-create-or-identify-categories"></a>Per creare o identificare le categorie
  Costruire un tipo speciale di voce del Registro di sistema di categoria in [HKLM\Software\Microsoft. \Visual Studio\\< versione di Visual Studio\>\FontAndColors\\< categoria\>]. \<Categoria > è il nome non localizzato della categoria.
@@ -426,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **NOTA:**
 
--   "NameID" = l'ID risorsa del nome della categoria localizzata nel pacchetto
+- "NameID" = l'ID risorsa del nome della categoria localizzata nel pacchetto
 
--   "ToolWindowPackage" = GUID del pacchetto
+- "ToolWindowPackage" = GUID del pacchetto
 
--   "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" è solo un esempio e il valore effettivo può essere un nuovo GUID forniti dall'implementatore.
+- "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" è solo un esempio e il valore effettivo può essere un nuovo GUID forniti dall'implementatore.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Impostare il tipo di carattere e colore proprietà GUID di categoria
  Esempio di codice seguente viene illustrata l'impostazione di GUID di categoria.

@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb3610a41579311e3be8f14483b606a8a9bdc031
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113001"
 ---
 # <a name="expected-"></a>Previsto ';'
 Si è tentato di inserire più di un'istruzione su una riga non è necessario separarli con punti e virgola. Un punto e virgola viene usato per terminare le istruzioni. Sebbene sia possibile inserire molte istruzioni in una singola riga, ognuno di essi deve essere delimitato dal successivo con un punto e virgola.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Contrassegnare la fine di ogni istruzione SELECT con un punto e virgola.  
+- Contrassegnare la fine di ogni istruzione SELECT con un punto e virgola.  
   
--   Assicurarsi che le chiamate di funzione usano le parentesi in modo corretto.  
+- Assicurarsi che le chiamate di funzione usano le parentesi in modo corretto.  
   
--   Assicurarsi che non omesso di un punto e virgola all'interno dell'intestazione di una **per** ciclo.  
+- Assicurarsi che non omesso di un punto e virgola all'interno dell'intestazione di una **per** ciclo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrittura di codice JavaScript](../../javascript/writing-javascript-code.md)

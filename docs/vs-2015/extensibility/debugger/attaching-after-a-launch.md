@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113118"
 ---
 # <a name="attaching-after-a-launch"></a>Collegamento dopo un avvio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Dopo aver avviato un programma, la sessione di debug è pronta per collegare il 
 ## <a name="design-decisions"></a>Decisioni di progettazione  
  Poiché la comunicazione è più semplice all'interno di uno spazio di indirizzi condivisa, è necessario decidere se è più opportuno per facilitare la comunicazione tra la sessione di debug e il DE o tra il DE e il programma. Scegliere tra gli elementi seguenti:  
   
--   Se è più opportuno per facilitare la comunicazione tra la sessione di debug e il DE, la sessione di debug CO-crea il DE e chiede di DE collegare al programma. In questo modo la sessione di debug e DE insieme in uno spazio indirizzi e l'ambiente di runtime e programma insieme in un altro.  
+- Se è più opportuno per facilitare la comunicazione tra la sessione di debug e il DE, la sessione di debug CO-crea il DE e chiede di DE collegare al programma. In questo modo la sessione di debug e DE insieme in uno spazio indirizzi e l'ambiente di runtime e programma insieme in un altro.  
   
--   Se è più opportuno per facilitare la comunicazione tra il DE e il programma, l'ambiente di runtime condiviso crea quindi il DE. In tal modo il modello SDM in uno spazio indirizzi e la Germania, ambiente run-time e programma insieme in un altro. Questo è tipico di un CRI implementata con un interprete per eseguire i linguaggi basati su script.  
+- Se è più opportuno per facilitare la comunicazione tra il DE e il programma, l'ambiente di runtime condiviso crea quindi il DE. In tal modo il modello SDM in uno spazio indirizzi e la Germania, ambiente run-time e programma insieme in un altro. Questo è tipico di un CRI implementata con un interprete per eseguire i linguaggi basati su script.  
   
     > [!NOTE]
     >  Modalità la Germania viene associato al programma è dipendente dall'implementazione. Comunicazione tra il DE e il programma viene anche dipende dall'implementazione.  

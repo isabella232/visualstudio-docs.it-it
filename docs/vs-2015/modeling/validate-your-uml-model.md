@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113313"
 ---
 # <a name="validate-your-uml-model"></a>Eseguire la convalida di un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Alcuni dei modelli UML che è possibile creare in Visual Studio potrebbero esser
   
 #### <a name="to-install-a-visual-studio-extension"></a>Per installare un'estensione di Visual Studio  
   
-1.  Fare doppio clic il **VSIX** file in Windows Explorer (o Esplora File).  
+1. Fare doppio clic il **VSIX** file in Windows Explorer (o Esplora File).  
   
-2.  Riavviare un'eventuale istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] già in esecuzione.  
+2. Riavviare un'eventuale istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] già in esecuzione.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Disabilitazione e disinstallazione dei vincoli di convalida  
  Quando si vuole usare un modello a cui non si applicano i vincoli, è possibile disabilitare temporaneamente l'estensione che li contiene. Abilitando e disabilitando estensioni diverse è possibile usare diversi tipi di modello in momenti diversi.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Per disabilitare o disinstallare un'estensione di Visual Studio  
   
-1.  Nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** menu, fare clic su **estensioni e aggiornamenti**.  
+1. Nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** menu, fare clic su **estensioni e aggiornamenti**.  
   
-2.  Insieme all'estensione, fare clic su **disabilitare** disabilitare temporaneamente l'estensione. È possibile riattivarlo in un secondo momento tornando al **estensioni e aggiornamenti** finestra.  
+2. Insieme all'estensione, fare clic su **disabilitare** disabilitare temporaneamente l'estensione. È possibile riattivarlo in un secondo momento tornando al **estensioni e aggiornamenti** finestra.  
   
      \- oppure -  
   
      Fare clic su **Disinstalla** per rimuovere l'estensione.  
   
-3.  Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
  [Definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)   
