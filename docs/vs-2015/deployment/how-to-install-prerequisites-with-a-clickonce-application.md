@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056614"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: Installare i prerequisiti con un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,31 +41,31 @@ Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni rich
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Per specificare i prerequisiti da installare con un'applicazione ClickOnce  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Selezionare il **pubblica** riquadro.  
+2. Selezionare il **pubblica** riquadro.  
   
-3.  Fare clic sui **prerequisiti** per aprire il **prerequisiti** nella finestra di dialogo.  
+3. Fare clic sui **prerequisiti** per aprire il **prerequisiti** nella finestra di dialogo.  
   
-4.  Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.  
+4. Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.  
   
-5.  Nel **prerequisiti** elencare, controllare i componenti che si desiderano installare e quindi fare clic su **OK**.  
+5. Nel **prerequisiti** elencare, controllare i componenti che si desiderano installare e quindi fare clic su **OK**.  
   
      I componenti selezionati verranno incluso nel pacchetto e pubblicati insieme all'applicazione.  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Per specificare un percorso di download diverse per i prerequisiti  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Selezionare il **pubblica** riquadro.  
+2. Selezionare il **pubblica** riquadro.  
   
-3.  Fare clic sui **prerequisiti** per aprire il **prerequisiti** nella finestra di dialogo.  
+3. Fare clic sui **prerequisiti** per aprire il **prerequisiti** nella finestra di dialogo.  
   
-4.  Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.  
+4. Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.  
   
-5.  Nel **specificare il percorso di installazione dei prerequisiti** sezione, selezionare **Scarica prerequisiti dal seguente percorso**.  
+5. Nel **specificare il percorso di installazione dei prerequisiti** sezione, selezionare **Scarica prerequisiti dal seguente percorso**.  
   
-6.  Selezionare un percorso nell'elenco a discesa scegliere o immettere un URL, percorso del file o percorso FTP e quindi fare clic su **OK.**  
+6. Selezionare un percorso nell'elenco a discesa scegliere o immettere un URL, percorso del file o percorso FTP e quindi fare clic su **OK.**  
   
     > [!NOTE]
     >  È necessario assicurarsi che i programmi di installazione per i componenti specificati esistano nel percorso specificato.  

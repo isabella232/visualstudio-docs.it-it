@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053936"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procedura dettagliata: Importa un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio
   Questa procedura dettagliata illustra come importare un flusso di lavoro riutilizzabile creati in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto flusso di lavoro di SharePoint.
@@ -48,11 +48,11 @@ ms.locfileid: "56603418"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
+- Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
 
 ## <a name="create-target-sharepoint-subsites"></a>Creare siti secondari di SharePoint di destinazione
  Innanzitutto è necessario creare due nuovi siti secondari di SharePoint: uno per ospitare i flussi di lavoro riutilizzabile da SharePoint Designer, un altro per ospitare i flussi di lavoro convertiti.
@@ -80,27 +80,27 @@ ms.locfileid: "56603418"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>Per creare un flusso di lavoro riutilizzabile di SharePoint Designer
 
-1.  Nel **i siti secondari** keychains le **SPD1** sito per modificarlo.
+1. Nel **i siti secondari** keychains le **SPD1** sito per modificarlo.
 
-2.  Sulla barra multifunzione scegliere la **flusso di lavoro riutilizzabile** pulsante.
+2. Sulla barra multifunzione scegliere la **flusso di lavoro riutilizzabile** pulsante.
 
      Viene visualizzata la procedura guidata Crea flusso di lavoro riutilizzabile.
 
-3.  Nel **Name** casella, immettere **SPD Task Workflow**.
+3. Nel **Name** casella, immettere **SPD Task Workflow**.
 
-4.  Nel **tipo di contenuto** scegliere **attività**, quindi scegliere il **OK** pulsante.
+4. Nel **tipo di contenuto** scegliere **attività**, quindi scegliere il **OK** pulsante.
 
      Nella finestra di progettazione del flusso di lavoro SharePoint Designer viene aperto il flusso di lavoro.
 
-5.  Nella finestra di progettazione del flusso di lavoro, scegliere il passaggio 1 e quindi sulla barra multifunzione scegliere la **condizione** pulsante.
+5. Nella finestra di progettazione del flusso di lavoro, scegliere il passaggio 1 e quindi sulla barra multifunzione scegliere la **condizione** pulsante.
 
-6.  Nell'elenco delle condizioni, scegliere **se il campo elemento corrente è uguale al valore**.
+6. Nell'elenco delle condizioni, scegliere **se il campo elemento corrente è uguale al valore**.
 
      Questo passaggio viene aggiunta una condizione denominata **se campo è uguale al valore**.
 
-7.  Nel **se campo è uguale al valore** condizione, selezionare la **campo** collegamento.
+7. Nel **se campo è uguale al valore** condizione, selezionare la **campo** collegamento.
 
-8.  Nell'elenco di valori, scegliere **titolo**.
+8. Nell'elenco di valori, scegliere **titolo**.
 
 9. Nel **se campo è uguale al valore** condizione, selezionare la **valore** collegamento.
 
@@ -128,23 +128,23 @@ ms.locfileid: "56603418"
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Per salvare e distribuire il flusso di lavoro riutilizzabile
 
-1.  Nella parte superiore di SharePoint Designer, scegliere il **salvare** pulsante per salvare lo stato di avanzamento e quindi scegliere il **Publish** per distribuire il flusso di lavoro il **SPD1** sito di SharePoint .
+1. Nella parte superiore di SharePoint Designer, scegliere il **salvare** pulsante per salvare lo stato di avanzamento e quindi scegliere il **Publish** per distribuire il flusso di lavoro il **SPD1** sito di SharePoint .
 
-2.  Nel riquadro di spostamento, scegliere il **flussi di lavoro** oggetto.
+2. Nel riquadro di spostamento, scegliere il **flussi di lavoro** oggetto.
 
-3.  Sotto **flusso di lavoro riutilizzabile**, scegliere **SPD Task Workflow**.
+3. Sotto **flusso di lavoro riutilizzabile**, scegliere **SPD Task Workflow**.
 
-4.  Sulla barra multifunzione, scegliere il **Salva con nome modello** consente di salvare il flusso di lavoro come una *con estensione wsp* file.
+4. Sulla barra multifunzione, scegliere il **Salva con nome modello** consente di salvare il flusso di lavoro come una *con estensione wsp* file.
 
-5.  Aprire il **SPD1** sito di SharePoint in un browser per visualizzare i *wsp* file in SharePoint.
+5. Aprire il **SPD1** sito di SharePoint in un browser per visualizzare i *wsp* file in SharePoint.
 
-6.  Nella barra Avvio veloce scegliere il **librerie** collegamento.
+6. Nella barra Avvio veloce scegliere il **librerie** collegamento.
 
-7.  Nel **raccolte documenti** keychains le **gli asset dei siti** collegamento.
+7. Nel **raccolte documenti** keychains le **gli asset dei siti** collegamento.
 
      Il **SPD Task Workflow** file sia elencato con altre risorse del sito.
 
-8.  Nell'elenco di file scegliere il nome del file.
+8. Nell'elenco di file scegliere il nome del file.
 
 9. Nel **del File da scaricare** finestra di dialogo scegliere la **salvare** consente di salvare il *wsp* file nel sistema locale.
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603418"
 
 11. Poiché il **importare SharePoint 2010 flusso di lavoro riutilizzabile** modello non importare i valori di proprietà di associazione per il flusso di lavoro importato, è necessario immetterli. Per eseguire questa operazione:
 
-    1.  Nelle **Esplora soluzioni**, scegliere il **SPD_Workflow_TestFT** nodo.
+    1. Nelle **Esplora soluzioni**, scegliere il **SPD_Workflow_TestFT** nodo.
 
-    2.  Scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) pulsante accanto a una delle proprietà dell'elenco, ad esempio il **elenco destinazione** proprietà.
+    2. Scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) pulsante accanto a una delle proprietà dell'elenco, ad esempio il **elenco destinazione** proprietà.
 
-    3.  Immettere i valori mancanti nella personalizzazione guidata SharePoint e quindi scegliere il **fine** pulsante.
+    3. Immettere i valori mancanti nella personalizzazione guidata SharePoint e quindi scegliere il **fine** pulsante.
 
 12. Scegliere il file con estensione xoml e quindi nella barra dei menu scegliere **View** > **progettazione** per visualizzare il flusso di lavoro importato nella finestra di progettazione del flusso di lavoro.
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603418"
 
 14. Eseguire una delle procedure seguenti:
 
-    -   Fare doppio clic su **CodeActivity1** per generare un gestore dell'evento e visualizzare il codice.
+    - Fare doppio clic su **CodeActivity1** per generare un gestore dell'evento e visualizzare il codice.
 
-    -   Nel **delle proprietà** finestra per **CodeActivity1**, impostare il valore della **ExecuteCode** proprietà **codeActivity_ExecuteCode**.
+    - Nel **delle proprietà** finestra per **CodeActivity1**, impostare il valore della **ExecuteCode** proprietà **codeActivity_ExecuteCode**.
 
 15. Aggiungere il codice seguente sotto l'oggetto esistente **usando** oppure **Imports** istruzioni:
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603418"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Per distribuire il progetto e associare il flusso di lavoro
 
-1.  Nelle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], scegliere il **F5** tasto per eseguire e distribuire il progetto di flusso di lavoro convertito.
+1. Nelle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], scegliere il **F5** tasto per eseguire e distribuire il progetto di flusso di lavoro convertito.
 
-2.  Nella barra Avvio veloce scegliere il **attività** link per visualizzare l'elenco di attività.
+2. Nella barra Avvio veloce scegliere il **attività** link per visualizzare l'elenco di attività.
 
-3.  Nel **strumenti elenco** scheda, scegliere il **elementi** pulsante e quindi scegliere il **nuovo elemento** pulsante.
+3. Nel **strumenti elenco** scheda, scegliere il **elementi** pulsante e quindi scegliere il **nuovo elemento** pulsante.
 
      Il **attività - nuovo elemento** verrà visualizzata la finestra di dialogo.
 
-4.  Nel **Title** casella, immettere **nuova attività**e quindi scegliere il **Salva** pulsante.
+4. Nel **Title** casella, immettere **nuova attività**e quindi scegliere il **Salva** pulsante.
 
-5.  Nel **strumenti elenco** scheda, scegliere il **elenco** pulsante e quindi scegliere il **impostazioni elenco** pulsante.
+5. Nel **strumenti elenco** scheda, scegliere il **elenco** pulsante e quindi scegliere il **impostazioni elenco** pulsante.
 
      Il **le impostazioni dell'elenco** verrà visualizzata la pagina.
 
-6.  Nel **autorizzazioni e gestione** keychains le **le impostazioni del flusso di lavoro** collegamento.
+6. Nel **autorizzazioni e gestione** keychains le **le impostazioni del flusso di lavoro** collegamento.
 
      Il **delle impostazioni del flusso di lavoro** verrà visualizzata la pagina.
 
-7.  Scegliere il **aggiungere un flusso di lavoro** collegamento.
+7. Scegliere il **aggiungere un flusso di lavoro** collegamento.
 
-8.  Nel **flusso di lavoro** casella di riepilogo **WorkflowImportProject1 - SPD Workflow Test**.
+8. Nel **flusso di lavoro** casella di riepilogo **WorkflowImportProject1 - SPD Workflow Test**.
 
 9. Nel **Name** casella, immettere **SPD Workflow Test**e quindi scegliere il **OK** pulsante.
 

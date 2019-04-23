@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054300"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Presentazione guidata delle funzionalità di debug dei thread, con particolare a
  [Procedura: Utilizzare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md) esaminare e utilizzare i thread in esecuzione sulla GPU durante il debug.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Uso di punti di interruzione](../debugger/using-breakpoints.md)
- -   Usare filtri dei punti di interruzione per inserire un punto di interruzione in corrispondenza di un singolo thread.
+
+[Uso di punti di interruzione](../debugger/using-breakpoints.md)
+- Usare filtri dei punti di interruzione per inserire un punto di interruzione in corrispondenza di un singolo thread.
 
 - I punti di traccia consentono di tracciare l'esecuzione dei programmi senza interruzioni. Ciò può risultare utile nello studio di problemi quali i deadlock.
 

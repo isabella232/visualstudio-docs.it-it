@@ -9,14 +9,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059864"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: esaminare, commentare e testare il codice
+# <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Successivamente si aggiunge un commento al codice. Un commento è una nota che non modifica il comportamento del programma Facilita la comprensione del codice da parte di altri utenti. L'aggiunta di commenti al codice è un'operazione consigliabile. In Visual C# due barre (//) contrassegnano una riga come commento. In Visual Basic viene utilizzata una virgoletta singola (') per contrassegnare una riga come commento. Dopo aver aggiunto un commento, si testa il programma. È consigliabile eseguire frequentemente e testare il codice mentre si lavora sui progetti, in modo che sia possibile intercettare e correggere eventuali problemi, prima che il codice diventi più complesso. Si tratta di un *test iterativo*.  
@@ -45,11 +45,11 @@ Successivamente si aggiunge un commento al codice. Un commento è una nota che n
   
    Le istruzioni consentono ai programmi di eseguire azioni. In Visual C# un'istruzione termina sempre con un punto e virgola. In Visual Basic la fine di una riga è la fine di un'istruzione. In Visual Basic non sono necessari punti e virgola. L'istruzione precedente indica al controllo `PictureBox` di caricare il file selezionato dall'utente con il componente **OpenFileDialog**.  
   
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) (Esercitazione 1: creare un visualizzatore di immagini in Visual Basic - Video 5) o [Tutorial 1: Create a Picture Viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206) (Esercitazione 1: creare un visualizzatore di immagini in C# - Video 5). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
+  ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo")per una versione video di questo argomento, vedere [esercitazione 1: Creare un Visualizzatore immagini in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) o [esercitazione 1: Creare un Visualizzatore immagini in C# -Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
   
 ### <a name="to-add-comments"></a>Per aggiungere commenti  
   
-1.  Aggiungere il seguente commento al codice.  
+1. Aggiungere il seguente commento al codice.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
@@ -64,7 +64,7 @@ Successivamente si aggiunge un commento al codice. Un commento è una nota che n
     >   
     >  Per attivare un frammento quando si digita il codice, digitarlo e premere TAB. Molti frammenti vengono visualizzati nella finestra di **IntelliSense**, ragion per cui si sceglie il tasto TAB due volte: prima per selezionare il frammento dalla finestra di **IntelliSense**, poi per indicare all'IDE di usare il frammento. Si noti che IntelliSense supporta il frammento `if`, ma non il frammento `ifelse`.  
   
-2.  Prima di eseguire il programma, salvarlo facendo clic sul pulsante della barra degli strumenti **Salva tutto**, visualizzato di seguito.  
+2. Prima di eseguire il programma, salvarlo facendo clic sul pulsante della barra degli strumenti **Salva tutto**, visualizzato di seguito.  
   
      ![Pulsante sulla barra degli strumenti Salva tutto](../ide/media/express-iconsaveall.png "Express_IconSaveAll")  
 Pulsante Salva tutto  
@@ -78,19 +78,19 @@ Visualizzatore immagini
   
 ### <a name="to-test-your-program"></a>Per eseguire il programma  
   
-1.  Premere F5 o fare clic sul pulsante della barra degli strumenti **Avvia debug**.  
+1. Premere F5 o fare clic sul pulsante della barra degli strumenti **Avvia debug**.  
   
-2.  Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. Per prima cosa, il programma apre la finestra di dialogo **Apri file**. Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella **Documenti**, che si trova all'interno della cartella **Immagini\Immagini campione**.  
+2. Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. Per prima cosa, il programma apre la finestra di dialogo **Apri file**. Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella **Documenti**, che si trova all'interno della cartella **Immagini\Immagini campione**.  
   
     > [!NOTE]
     >  Se nella finestra di dialogo **relativa alla selezione di un file immagine** non sono presenti immagini, assicurarsi che il filtro "Tutti i file (*.\*)" sia selezionato nell'elenco a discesa sul lato inferiore destro della finestra di dialogo.  
   
-3.  Caricare un'immagine. L'immagine viene visualizzata in PictureBox. Provare quindi a ridimensionare il form trascinandone i bordi. Poiché PictureBox è ancorato all'interno di TableLayoutPanel, il quale è a sua volta ancorato all'interno del form, l'area dell'immagine verrà ridimensionata in modo da eguagliare la larghezza del form e da riempire il 90% del form nella parte superiore. È per questo motivo che sono stati utilizzati i contenitori TableLayoutPanel e FlowLayoutPanel: mantengono le dimensioni corrette del form quando l'utente lo ridimensiona.  
+3. Caricare un'immagine. L'immagine viene visualizzata in PictureBox. Provare quindi a ridimensionare il form trascinandone i bordi. Poiché PictureBox è ancorato all'interno di TableLayoutPanel, il quale è a sua volta ancorato all'interno del form, l'area dell'immagine verrà ridimensionata in modo da eguagliare la larghezza del form e da riempire il 90% del form nella parte superiore. Ecco perché è stato usato i contenitori TableLayoutPanel e FlowLayoutPanel: che mantengono le dimensioni corrette del modulo quando l'utente lo ridimensiona.  
   
      A questo punto le immagini più grandi superano i bordi del visualizzatore immagini. Nel prossimo passaggio verrà aggiunto il codice per adattare le immagini alla finestra.  
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per passare al passaggio successivo dell'esercitazione, vedere [Passaggio 10: Scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 10: Scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 8: Scrivere il codice gestore dell'evento relativo al pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 8: Scrivere codice per mostrare un gestore eventi del pulsante immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

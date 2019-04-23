@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053533"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   
  L'analisi dei frame limita il numero di nuovi tentativi a 10. Se le impostazioni di risparmio di energia o controllo del clock della piattaforma sono molto rigide, è possibile che l'analisi dei frame abbia esito negativo e che sia segnalato un errore a causa del superamento del limite di nuovi tentativi consentiti. Per ridurre questo problema, è possibile provare a modificare le impostazioni del risparmio energia e della limitazione della velocità del clock della piattaforma in modo che siano meno rigide, se la piattaforma lo permette.  
   
-##  <a name="HardwareSupport"></a> Supporto hardware  
+## <a name="HardwareSupport"></a> Supporto hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Timestamp e query di occlusione  
  I timestamp sono supportati in tutte le piattaforme che supportano l'analisi dei frame. Le query di occlusione della profondità, necessarie per il contatore relativo ai pixel bloccati, sono supportate sulle piattaforme che supportano funzionalità di livello 9.2 o superiori.  
@@ -182,7 +182,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 > [!NOTE]
 >  Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità. Se si usano le API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, sarà disponibile qualsiasi livello di funzionalità e sarà possibile usare l'analisi dei frame.  
   
-##  <a name="Variants"></a> Varianti  
+## <a name="Variants"></a> Varianti  
  Ogni modifica apportata dall'analisi dei frame al modo in cui è eseguito il rendering di un frame durante la riproduzione è definita *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:  
   
 |Variante|Descrizione|  

@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fca78c684ac30ca09aedf3c1b9547103608a4f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053299"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +46,12 @@ ms.locfileid: "58968080"
 > [!TIP]
 > Non si è certi se è necessario usare **Connetti a processo** per lo scenario di debug? Visualizzare [comuni scenari di debug](#BKMK_Scenarios). Se si desidera eseguire il debug di applicazioni ASP.NET che sono state distribuite a IIS, vedere [Remote Debugging ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Connettersi a un processo in esecuzione nel computer locale
+## <a name="BKMK_Attach_to_a_running_process"></a> Connettersi a un processo in esecuzione nel computer locale
  Per connettersi a un processo, è necessario conoscere il nome del processo (vedere [comuni scenari di debug](#BKMK_Scenarios) per alcuni nomi di processo comuni).
 
-1.  In Visual Studio, selezionare **Debug / Connetti a processo** (o premere **CTRL + ALT + P**).
+1. In Visual Studio, selezionare **Debug / Connetti a processo** (o premere **CTRL + ALT + P**).
 
-2.  Nella finestra di dialogo **Connetti a processo** individuare il programma con il quale si desidera stabilire una connessione nell'elenco **Processi disponibili** .
+2. Nella finestra di dialogo **Connetti a processo** individuare il programma con il quale si desidera stabilire una connessione nell'elenco **Processi disponibili** .
 
      Per selezionare rapidamente il processo desiderato, digitare la prima lettera del nome del processo. Se non si conosce il nome del processo, vedere [comuni scenari di debug](#BKMK_Scenarios).
 
@@ -59,17 +59,17 @@ ms.locfileid: "58968080"
 
      Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .
 
-3.  Nella casella **Connetti a** verificare che sia presente il tipo di codice di cui eseguire il debug. L'impostazione predefinita **Automatico** tenta di determinare il tipo di codice di cui si desidera eseguire il debug. Per impostare manualmente il tipo di codice, eseguire le operazioni seguenti
+3. Nella casella **Connetti a** verificare che sia presente il tipo di codice di cui eseguire il debug. L'impostazione predefinita **Automatico** tenta di determinare il tipo di codice di cui si desidera eseguire il debug. Per impostare manualmente il tipo di codice, eseguire le operazioni seguenti
 
-    1.  Nella finestra di dialogo **Connetti a** scegliere **Seleziona**.
+    1. Nella finestra di dialogo **Connetti a** scegliere **Seleziona**.
 
-    2.  Nella finestra di dialogo **Seleziona tipo di codice** fare clic su **Esegui il debug di questi tipi di codice** e selezionare i tipi da sottoporre a debug.
+    2. Nella finestra di dialogo **Seleziona tipo di codice** fare clic su **Esegui il debug di questi tipi di codice** e selezionare i tipi da sottoporre a debug.
 
-    3.  Fare clic su **OK**.
+    3. Fare clic su **OK**.
 
-4.  Scegliere **Connetti**.
+4. Scegliere **Connetti**.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Connettersi a un processo in un computer remoto
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Connettersi a un processo in un computer remoto
  Per connettersi a un processo, è necessario conoscere il nome del processo (vedere [comuni scenari di debug](#BKMK_Scenarios) per alcuni nomi di processo comuni). Per istruzioni più complete per le app ASP.NET che sono state distribuite a IIS, vedere [Remote Debugging ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Per le altre applicazioni, è possibile trovare il nome del processo in Gestione attività.
 
  Quando si usa la finestra di dialogo **Connetti a processo** , è possibile selezionare un altro computer configurato per il debug remoto. Per altre informazioni, vedere [debug remoto](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Dopo avere selezionato un computer remoto, è possibile visualizzare l'elenco dei processi disponibili in esecuzione in tale computer e connettersi a uno o più di questi processi per eseguire il debug.
@@ -146,7 +146,7 @@ Per scenari di debug remoti, è necessario disporre del codice sorgente (o una c
 
 In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Studio senza accesso all'origine se sono presenti App i file di simboli corretto (per impostazione predefinita, è necessaria una build di debug). Per altre informazioni, vedi [specificare file di simboli e origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Risolvere gli errori di connessione
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Risolvere gli errori di connessione
  I processi in esecuzione a cui il debugger tenta di connettersi possono contenere uno o più tipi di codice. I tipi di codice a cui il debugger può connettersi vengono visualizzati e selezionati nella finestra di dialogo **Seleziona tipo di codice** .
 
  In alcuni casi il debugger riesce a connettersi a un tipo di codice ma non a un altro. Questa situazione può verificarsi quando si tenta di stabilire una connessione a un processo in esecuzione in un computer remoto, nel quale potrebbero essere stati installati i componenti per il debug remoto solo per alcuni tipi di codice. Può inoltre verificarsi quando si tenta di stabilire una connessione a due o più processi per il debug diretto di un database. Durante il debug SQL è supportata esclusivamente la connessione a un singolo processo.

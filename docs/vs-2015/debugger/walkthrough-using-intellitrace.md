@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053806"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Procedura dettagliata: Utilizzo di IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ ms.locfileid: "58955543"
   
  È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).  
   
-##  <a name="GettingStarted"></a> Utilizzo di IntelliTrace con soli eventi  
+## <a name="GettingStarted"></a> Utilizzo di IntelliTrace con soli eventi  
  È possibile provare a eseguire il debug con soli eventi IntelliTrace. Gli eventi IntelliTrace sono eventi del debugger, eccezioni, eventi .NET Framework e altri eventi di sistema. È possibile attivare o disattivare eventi specifici per il controllo degli eventi che IntelliTrace registra prima di avviare il debug. Per altre informazioni, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
  La procedura seguente illustra come eseguire il debug con soli eventi IntelliTrace:  
   
-1.  Attivare l'evento di IntelliTrace per l'accesso ai file. Andare alla pagina **Strumenti / Opzioni / IntelliTrace / Eventi di IntelliTrace** ed espandere la categoria **File** . Selezionare la categoria di eventi **File** . Saranno selezionati tutti gli eventi relativi ai file (accesso,  chiusura, eliminazione).  
+1. Attivare l'evento di IntelliTrace per l'accesso ai file. Andare alla pagina **Strumenti / Opzioni / IntelliTrace / Eventi di IntelliTrace** ed espandere la categoria **File** . Selezionare la categoria di eventi **File** . Saranno selezionati tutti gli eventi relativi ai file (accesso,  chiusura, eliminazione).  
   
-2.  Creare un'applicazione console C#. Aprire il file Program.cs e aggiungere l’istruzione `using` seguente:  
+2. Creare un'applicazione console C#. Aprire il file Program.cs e aggiungere l’istruzione `using` seguente:  
   
     ```csharp  
     using System.IO;  
     ```  
   
-3.  Creare un <xref:System.IO.FileStream> nel metodo Main, leggere da esso, chiuderlo ed eliminare il file. Aggiungere un'altra riga per disporre di un posto per impostare un punto di interruzione:  
+3. Creare un <xref:System.IO.FileStream> nel metodo Main, leggere da esso, chiuderlo ed eliminare il file. Aggiungere un'altra riga per disporre di un posto per impostare un punto di interruzione:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -50,14 +50,14 @@ ms.locfileid: "58955543"
     }  
     ```  
   
-4.  Impostare un punto di interruzione su `Console.WriteLine("done");`  
+4. Impostare un punto di interruzione su `Console.WriteLine("done");`  
   
-5.  Avviare il debug con la modalità consueta. (Premere **F5** o fare cli su **Debug / Avvia debug**.  
+5. Avviare il debug con la modalità consueta. (Premere **F5** o fare cli su **Debug / Avvia debug**.  
   
     > [!TIP]
     >  Mantenere le finestre **Variabili locali** e **Auto** aperte durante il debug per visualizzare e registrare i valori visualizzati in queste finestre.  
   
-6.  L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica** , fare clic su **Debug / Finestre / Eventi di IntelliTrace**.  
+6. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica** , fare clic su **Debug / Finestre / Eventi di IntelliTrace**.  
   
      Nella finestra **Strumenti di diagnostica** trovare la scheda **Eventi** (sono presenti 3 schede: **Eventi**, **Utilizzo della memoria**e **Utilizzo della CPU**). La scheda **Eventi** visualizza un elenco cronologico di eventi, fino all'ultimo evento prima dell'interruzione dell'esecuzione del debugger. Verrà visualizzato un evento denominato **Access WordSearchInputs.txt**.  
   
@@ -65,7 +65,7 @@ ms.locfileid: "58955543"
   
      ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
-7.  Selezionare l'evento per espandere i dettagli.  
+7. Selezionare l'evento per espandere i dettagli.  
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
@@ -79,19 +79,19 @@ ms.locfileid: "58955543"
   
      ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
-8.  Se il bug non viene trovato, provare ad analizzare altri eventi. È anche possibile che IntelliTrace registri le informazioni sulle chiamate in modo da eseguire le chiamate alle funzioni.  
+8. Se il bug non viene trovato, provare ad analizzare altri eventi. È anche possibile che IntelliTrace registri le informazioni sulle chiamate in modo da eseguire le chiamate alle funzioni.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>Utilizzo di IntelliTrace con eventi e chiamate di funzione  
  IntelliTrace consente di registrare le chiamate di funzione insieme agli eventi. In tal modo è possibile visualizzare la cronologia dello stack di chiamate e scorrere in avanti e indietro le chiamate nel codice. IntelliTrace registra i dati, ad esempio nomi delle funzioni, punti di ingresso e uscita delle funzioni e alcuni valori di parametri e valori restituiti. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
-1.  Attivare la raccolta delle chiamate. (In **Strumenti / Opzioni / IntelliTrace / Generale**, selezionare **Eventi IntelliTrace e informazioni di chiamata**. IntelliTrace inizierà a raccogliere tali informazioni all'avvio della sessione di debug successiva.  
+1. Attivare la raccolta delle chiamate. (In **Strumenti / Opzioni / IntelliTrace / Generale**, selezionare **Eventi IntelliTrace e informazioni di chiamata**. IntelliTrace inizierà a raccogliere tali informazioni all'avvio della sessione di debug successiva.  
   
     > [!TIP]
     >  Ciò potrebbe rallentare l'applicazione e aumentare le dimensioni dei file di log di IntelliTrace (file .iTrace) salvati sul disco. Per ottenere la maggior parte dei dati delle chiamate riducendo al contempo gli effetti, registrare solo i dati da quei moduli che interessano. Per modificare la dimensione massima dei file .iTrace, passare a **Strumenti / Opzioni / IntelliTrace / Avanzate**e specificare la dimensione massima dello spazio su disco. Il valore predefinito è 250 MB.  
   
-2.  Avviare il debug dell'applicazione console C# creata nella sezione precedente. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica** , fare clic su **Debug / Finestre / Eventi di IntelliTrace**.  
+2. Avviare il debug dell'applicazione console C# creata nella sezione precedente. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica** , fare clic su **Debug / Finestre / Eventi di IntelliTrace**.  
   
-3.  Passare alla scheda **Chiamate** .  
+3. Passare alla scheda **Chiamate** .  
   
      Ora vengono visualizzate le chiamate alle funzioni dell’applicazione, a partire dalla chiamata radice (nella soluzione corrente, il punto di ingresso di Main) e terminando con la posizione in cui l'esecuzione si è interrotta.  
   

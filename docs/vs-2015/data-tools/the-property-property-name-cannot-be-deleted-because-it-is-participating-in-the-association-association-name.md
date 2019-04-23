@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 348dc0cdce8345f0b7de4fb15dcd7175f496dba7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3ba746f9e4dcd8da45a002c5c763384558342ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053910"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Impossibile eliminare la proprietà &lt;nome proprietà&gt; perché partecipa all'associazione &lt;nome associazione&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ La proprietà selezionata viene impostata come **Proprietà associazione** per l
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Selezionare la linea di associazione in Progettazione relazionale oggetti che connette le classi di dati indicate nel messaggio di errore.  
+1. Selezionare la linea di associazione in Progettazione relazionale oggetti che connette le classi di dati indicate nel messaggio di errore.  
   
-2.  Fare doppio clic sulla linea per aprire la finestra di dialogo **Editor di associazione**.  
+2. Fare doppio clic sulla linea per aprire la finestra di dialogo **Editor di associazione**.  
   
-3.  Rimuovere la proprietà dalle **Proprietà associazione**.  
+3. Rimuovere la proprietà dalle **Proprietà associazione**.  
   
-4.  Provare a eliminare nuovamente la proprietà.  
+4. Provare a eliminare nuovamente la proprietà.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

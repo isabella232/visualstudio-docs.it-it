@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043458"
 ---
 # <a name="saving-a-standard-document"></a>Salvataggio di un documento standard
 L'ambiente gestisce il salvataggio, Salva con nome e salvare tutti i comandi. Quando un utente seleziona **salvare**, **Salva con nome**, o **Salva tutto** dal **File** dal menu o chiude la soluzione, causando un  **Salva tutto**, verifica quanto segue.
@@ -50,11 +50,11 @@ L'ambiente gestisce il salvataggio, Salva con nome e salvare tutti i comandi. Qu
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Per modificare la proprietà del file al progetto file esterni
 
-1.  Eseguire una query del servizio per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaccia.
+1. Eseguire una query del servizio per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaccia.
 
      Un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> viene restituito.
 
-2.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) metodo per trasferire i documenti nella nuova gerarchia. La gerarchia esegue il comando Salva con nome chiama questo metodo.
+2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) metodo per trasferire i documenti nella nuova gerarchia. La gerarchia esegue il comando Salva con nome chiama questo metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055262"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: dei frammenti XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,46 +31,46 @@ ms.locfileid: "59659969"
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Per inserire i frammenti dal menu di scelta rapida  
   
-1.  Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
+1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
   
-2.  Fare doppio clic e selezionare **Inserisci frammento di codice**.  
+2. Fare doppio clic e selezionare **Inserisci frammento di codice**.  
   
      Viene visualizzato un elenco dei frammenti XML disponibili.  
   
-3.  Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
+3. Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Per inserire i frammenti dal menu IntelliSense  
   
-1.  Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
+1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
   
-2.  Dal **Edit** dal menu **IntelliSense**e quindi selezionare **Inserisci frammento di codice**.  
+2. Dal **Edit** dal menu **IntelliSense**e quindi selezionare **Inserisci frammento di codice**.  
   
      Viene visualizzato un elenco dei frammenti XML disponibili.  
   
-3.  Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
+3. Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Per inserire i frammenti dall'elenco Completa parola di IntelliSense  
   
-1.  Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
+1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
   
-2.  Iniziare a digitare il frammento XML che si desidera aggiungere al file. Se il completamento automatico è attivato, viene visualizzato l'elenco Completa parola di IntelliSense. Se l'elenco non viene visualizzato, premere CTRL+BARRA SPAZIATRICE per attivarlo.  
+2. Iniziare a digitare il frammento XML che si desidera aggiungere al file. Se il completamento automatico è attivato, viene visualizzato l'elenco Completa parola di IntelliSense. Se l'elenco non viene visualizzato, premere CTRL+BARRA SPAZIATRICE per attivarlo.  
   
-3.  Selezionare il frammento XML dall'elenco Completa parola.  
+3. Selezionare il frammento XML dall'elenco Completa parola.  
   
-4.  Premere TAB, TAB per richiamare il frammento XML.  
+4. Premere TAB, TAB per richiamare il frammento XML.  
   
 > [!NOTE]
 >  In alcuni casi è possibile che il frammento XML non venga richiamato. Ad esempio, se si tenta di inserire un elemento `xs:complexType` all'interno di un nodo `xs:element`, l'editor non genera alcun frammento XML. Quando un elemento `xs:complexType` viene usato all'interno di un nodo `xs:element`, non vengono rilevati attributi o sottoelementi obbligatori, pertanto l'editor non disporrà di alcun dato da inserire.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Per inserire i frammenti dal nome del collegamento  
   
-1.  Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
+1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.  
   
-2.  Digitare `<` nel riquadro dell'editor.  
+2. Digitare `<` nel riquadro dell'editor.  
   
-3.  Premere ESC per chiudere l'elenco Completa parola di IntelliSense.  
+3. Premere ESC per chiudere l'elenco Completa parola di IntelliSense.  
   
-4.  Digitare il nome collegamento del frammento, quindi premere TAB per richiamare il frammento XML.  
+4. Digitare il nome collegamento del frammento, quindi premere TAB per richiamare il frammento XML.  
   
 ## <a name="surround-with"></a>Racchiudi tra  
  Le procedure seguenti descrivono come accedere al **Racchiudi** comando.  
@@ -80,23 +80,23 @@ ms.locfileid: "59659969"
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Per usare il comando dal menu di scelta rapida  
   
-1.  Selezionare il testo da racchiudere nell'editor XML.  
+1. Selezionare il testo da racchiudere nell'editor XML.  
   
-2.  Fare doppio clic e selezionare **Racchiudi**.  
+2. Fare doppio clic e selezionare **Racchiudi**.  
   
      Viene visualizzato un elenco delle scelte disponibili con i frammenti XML.  
   
-3.  Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
+3. Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Per usare il comando dal menu IntelliSense  
   
-1.  Selezionare il testo da racchiudere nell'editor XML.  
+1. Selezionare il testo da racchiudere nell'editor XML.  
   
-2.  Dal **Edit** dal menu **IntelliSense**e quindi selezionare **Racchiudi**.  
+2. Dal **Edit** dal menu **IntelliSense**e quindi selezionare **Racchiudi**.  
   
      Viene visualizzato un elenco delle scelte disponibili con i frammenti XML.  
   
-3.  Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
+3. Selezionare un frammento dall'elenco usando il mouse, oppure digitare il nome del frammento e premere TAB o INVIO.  
   
 ## <a name="using-xml-snippets"></a>Utilizzo dei frammenti XML  
  Una volta scelto il frammento XML, il testo del frammento di codice viene inserito automaticamente nella posizione del cursore. I campi modificabili del frammento vengono evidenziati e il primo campo modificabile viene selezionato automaticamente. Il campo attualmente selezionato è di tipo boxed.  

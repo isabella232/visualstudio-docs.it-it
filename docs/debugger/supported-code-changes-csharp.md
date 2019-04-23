@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055788"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Le modifiche al codice supportate (C# e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -45,7 +45,7 @@ La tabella seguente illustra le modifiche apportate a C# e il codice Visual Basi
 ## <a name="unsupported-changes-to-code"></a>Modifiche non supportate al codice
  Impossibile applicare le modifiche seguenti a C# e il codice Visual Basic durante una sessione di debug:
 
--   Modifiche all'istruzione corrente o a qualsiasi altra istruzione attiva.
+- Modifiche all'istruzione corrente o a qualsiasi altra istruzione attiva.
 
      Le istruzioni attive includono qualsiasi istruzione, nelle funzioni presenti nello stack di chiamate, che è stata chiamata per ottenere l'istruzione corrente.
 
@@ -78,7 +78,7 @@ La tabella seguente illustra le modifiche apportate a C# e il codice Visual Basi
 |Iterators|Modificare un iteratore in un progetto destinato a .NET Framework 4 e ridurre (vedere [dettagli](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Codice di tipo unsafe
- Le modifiche a codice non sicuro hanno le stesse limitazioni delle modifiche a codice sicuro, con un'ulteriore restrizione: Modifica e continuazione non supporta modifiche a codice non sicuro all'interno di un metodo che contiene l'operatore `stackalloc`.
+ Le modifiche al codice di tipo unsafe sono soggette alle stesse limitazioni delle modifiche al codice di tipo safe, con l'aggiunta della seguente: Modifica e continuazione non supporta le modifiche al codice di tipo unsafe esistente all'interno di un metodo che contiene il `stackalloc` operatore.
 
 ## <a name="unsupported-app-scenarios"></a>Scenari con app non supportato
 
@@ -90,19 +90,19 @@ Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5 e W
 ## <a name="unsupported-scenarios"></a>Scenari non supportati
  Modifica e continuazione non è disponibile nei seguenti scenari di debug:
 
--   Debug in modalità mista (nativo/gestito).
+- Debug in modalità mista (nativo/gestito).
 
--   Debug SQL.
+- Debug SQL.
 
--   Debug di un dump di Dr. Watson.
+- Debug di un dump di Dr. Watson.
 
--   Debug di un'applicazione di runtime incorporata.
+- Debug di un'applicazione di runtime incorporata.
 
--   Debug di un'applicazione che usa Connetti a processo (**Debug > Connetti a processo**) invece di eseguire l'applicazione da **avviare** dal **Debug** menu.
+- Debug di un'applicazione che usa Connetti a processo (**Debug > Connetti a processo**) invece di eseguire l'applicazione da **avviare** dal **Debug** menu.
 
--   Debug di codice ottimizzato.
+- Debug di codice ottimizzato.
 
--   Debug di una versione precedente del codice dopo l'esito negativo della compilazione di una nuova versione a causa di errori di compilazione.
+- Debug di una versione precedente del codice dopo l'esito negativo della compilazione di una nuova versione a causa di errori di compilazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Modifica e continuazione (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

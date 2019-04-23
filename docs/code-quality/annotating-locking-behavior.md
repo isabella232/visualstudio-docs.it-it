@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053729"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -55,11 +55,11 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 
  Alcune regole sulla proprietà dei thread da tenere in considerazione:
 
--   Gli spinlock sono blocchi non contati che dispongono della proprietà dei thread.
+- Gli spinlock sono blocchi non contati che dispongono della proprietà dei thread.
 
--   I mutex e le sezioni critiche sono blocchi contati che dispongono della proprietà dei thread.
+- I mutex e le sezioni critiche sono blocchi contati che dispongono della proprietà dei thread.
 
--   I semafori e gli eventi sono considerati blocchi contati che non che dispongono della proprietà dei thread.
+- I semafori e gli eventi sono considerati blocchi contati che non che dispongono della proprietà dei thread.
 
 ## <a name="locking-annotations"></a>Annotazioni di bloccante
  Nella tabella seguente sono elencate le annotazioni di bloccante.

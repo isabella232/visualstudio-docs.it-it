@@ -11,17 +11,17 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043507"
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A differenza di un linguaggio generico come C# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.  
+A differenza di un linguaggio generico come c# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.  
   
  DSL Well-Known includere espressioni regolari e SQL. Ogni linguaggio specifico di dominio è preferibile rispetto a un linguaggio generico per descrivere le operazioni su stringhe di testo o un database, ma molto peggiori per descrivere le idee che esulano dall'ambito di un proprio. Singoli settori hanno anche le proprie soluzioni DSL. Ad esempio, nel settore delle telecomunicazioni, chiamare descrizione lingue vengono ampiamente utilizzate per specificare la sequenza degli stati in una chiamata telefonica e in modalità wireless nel settore di viaggio standard che DSL viene usato per descrivere ogni nuova prenotazione dei voli.  
   
@@ -62,15 +62,15 @@ A differenza di un linguaggio generico come C# o UML, un linguaggio specifico di
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspetti dello sviluppo specifico di dominio con interfaccia grafico  
  Un linguaggio specifico di dominio con interfaccia grafico deve includere le funzionalità seguenti:  
   
--   Notation  
+- Notation  
   
--   Modello di dominio  
+- Modello di dominio  
   
--   Generazione dell'artefatto  
+- Generazione dell'artefatto  
   
--   Serializzazione  
+- Serializzazione  
   
--   Integrazione con Visual Studio  
+- Integrazione con Visual Studio  
   
 ### <a name="notation"></a>Notation  
  Un linguaggio specifico di dominio deve avere un set relativamente ridotto di elementi che possono essere facilmente definite ed esteso in modo da rappresentare costrutti specifici di dominio. È costituito da una notazione di forme che rappresentano gli elementi, e i connettori, che rappresentano le relazioni tra gli elementi, su una superficie diagramma grafico. In [!INCLUDE[dsl](../includes/dsl-md.md)], le forme possono essere esteso e migliorate per rappresentare gli elementi del linguaggio specifico di dominio di.  
@@ -92,27 +92,27 @@ A differenza di un linguaggio generico come C# o UML, un linguaggio specifico di
 ## <a name="benefits-of-domain-specific-development"></a>Vantaggi di sviluppo specifico di dominio  
  Un linguaggio specifico di dominio può offrire i vantaggi seguenti:  
   
--   Contiene costrutti che rientrano esattamente lo spazio dei problemi.  
+- Contiene costrutti che rientrano esattamente lo spazio dei problemi.  
   
      Diversamente dai linguaggi per utilizzo generico, un linguaggio specifico di dominio è costituito da elementi e relazioni che rappresentano direttamente la logica dello spazio dei problemi. Ad esempio, un'applicazione di polizza assicurativa deve includere gli elementi per i criteri e le attestazioni. Un linguaggio specifico di dominio rende più semplice progettare l'applicazione e trovare e correggere gli errori di logica.  
   
--   Consente di non sviluppatori e le persone che non conoscono il dominio comprendere la struttura complessiva.  
+- Consente di non sviluppatori e le persone che non conoscono il dominio comprendere la struttura complessiva.  
   
      Usando un linguaggio specifico di dominio con interfaccia grafico, è possibile creare una rappresentazione visiva del dominio in modo che non si occupano di sviluppo possono comprenderne facilmente l'architettura dell'applicazione.  
   
--   Rende più semplice creare un prototipo dell'applicazione finale.  
+- Rende più semplice creare un prototipo dell'applicazione finale.  
   
      Gli sviluppatori possono usare il codice che genera il modello per creare un'applicazione di prototipo che mostrino ai client.  
   
 ## <a name="the-process-of-domain-specific-development"></a>Il processo di sviluppo specifico di dominio  
  La maggior parte dei team di sviluppo software che usano linguaggi specifici di dominio seguire questi passaggi per creare e usare i propri modelli:  
   
--   Il team consente di distinguere le parti variabili del dominio dalle parti che non cambiano mai.  
+- Il team consente di distinguere le parti variabili del dominio dalle parti che non cambiano mai.  
   
--   Gli sviluppatori di scrivere codice per le parti fisse e lasciare i punti di estensione per le parti variabili.  
+- Gli sviluppatori di scrivere codice per le parti fisse e lasciare i punti di estensione per le parti variabili.  
   
--   Il responsabile dello sviluppo di software o il progettista crea un linguaggio specifico di dominio che incorpora i modelli di progettazione delle parti fisse del dominio e i punti di estensione per le parti variabili.  
+- Il responsabile dello sviluppo di software o il progettista crea un linguaggio specifico di dominio che incorpora i modelli di progettazione delle parti fisse del dominio e i punti di estensione per le parti variabili.  
   
--   Il responsabile dello sviluppo di software o il progettista distribuisce il linguaggio specifico di dominio per gli sviluppatori delle diverse applicazioni che produce il team.  
+- Il responsabile dello sviluppo di software o il progettista distribuisce il linguaggio specifico di dominio per gli sviluppatori delle diverse applicazioni che produce il team.  
   
--   Ogni sviluppatore crea un modello che si applica all'applicazione specifica.
+- Ogni sviluppatore crea un modello che si applica all'applicazione specifica.

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fca04d921fb423bafccbeef56c9f3ff499d05d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059201"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +35,26 @@ Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsa
   
  I seguenti pannelli di layout sono quelli più usati, ma ne esistono altri. Tutti i controlli sono disponibili nel pannello **Asset**.  
   
--   [Griglia](#Grid)  
+- [Griglia](#Grid)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Canvas](#Canvas)  
+- [Canvas](#Canvas)  
   
--   [StackPanel](#Stack)  
+- [StackPanel](#Stack)  
   
--   [WrapPanel](#Wrap)  
+- [WrapPanel](#Wrap)  
   
--   [DockPanel](#Dock)  
+- [DockPanel](#Dock)  
   
-###  <a name="Grid"></a> Grid  
+### <a name="Grid"></a> Grid  
  Consente di disporre gli oggetti in righe e colonne.  
   
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [uso delle griglie](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
-###  <a name="Uniform"></a> UniformGrid  
+### <a name="Uniform"></a> UniformGrid  
  Consente di disporre gli oggetti in aree della griglia uguali o uniformi. Questo pannello è molto utile per definire la disposizione di un elenco di immagini.  
   
  ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
@@ -63,21 +63,21 @@ Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsa
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [uso di UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
-###  <a name="Canvas"></a> Canvas  
+### <a name="Canvas"></a> Canvas  
  Consente di disporre gli oggetti nel modo desiderato. Quando gli utenti eseguono l'app, a questi elementi verranno assegnate posizioni fisse sullo schermo.  
   
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [funziona con l'area di disegno](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
-###  <a name="Stack"></a> StackPanel  
+### <a name="Stack"></a> StackPanel  
  Consente di disporre gli oggetti su un'unica riga orizzontalmente o verticalmente.  
   
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [StackPanel e WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Wrap"></a> WrapPanel  
+### <a name="Wrap"></a> WrapPanel  
  Consente di disporre gli oggetti in modo sequenziale da sinistra verso destra. Quando il pannello esaurisce lo spazio all'estremità destra, *esegue il wrapping* del contenuto sulla riga successiva e così via da sinistra verso destra e dall'alto verso il basso. È anche possibile impostare per un pannello di questo tipo l'orientamento verticale in modo che gli oggetti vengano spostati dall'alto verso il basso e da sinistra verso destra.  
   
  (Disponibile solo per i progetti WPF)  
@@ -86,7 +86,7 @@ Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsa
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [StackPanel e WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Dock"></a> DockPanel  
+### <a name="Dock"></a> DockPanel  
  È anche possibile disporre gli oggetti in modo che rimangano *ancorati* a un bordo del pannello.  
   
  (Disponibile solo per i progetti WPF)  
@@ -100,32 +100,32 @@ Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsa
   
  I seguenti controlli di layout sono quelli più usati, ma ne esistono altri. Tutti i controlli sono disponibili nel pannello **Asset**.  
   
--   [Bordo](#Border)  
+- [Bordo](#Border)  
   
--   [Popup](#Popup)  
+- [Popup](#Popup)  
   
--   [ScrollViewer](#Scroll)  
+- [ScrollViewer](#Scroll)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Viewbox](#View)  
+- [Viewbox](#View)  
   
-###  <a name="Border"></a> Border  
+### <a name="Border"></a> Border  
  Consente di creare un bordo, uno sfondo o entrambi intorno a un oggetto. È possibile aggiungere un solo oggetto a un controllo **Border**. Per applicare un bordo o uno sfondo a più oggetti, aggiungere a **Border** il pannello di layout, quindi aggiungere gli oggetti al pannello o al controllo.  
   
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [uso dei bordi](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
-###  <a name="Popup"></a> Popup  
+### <a name="Popup"></a> Popup  
  Consente di visualizzare informazioni o opzioni destinate agli utenti in una finestra. È possibile aggiungere un solo oggetto a un controllo **Popup**. Per impostazione predefinita, un controllo **Popup** contiene un pannello di layout **Grid**, ma è possibile modificare questa impostazione.  
   
-###  <a name="Scroll"></a> ScrollViewer  
+### <a name="Scroll"></a> ScrollViewer  
  Consente agli utenti di scorrere verso il basso in una pagina o un'area di una pagina. Dal momento che è possibile aggiungere un solo oggetto a un controllo **ScrollViewer**, è preferibile aggiungere un pannello di layout, come **Grid** o **StackPanel**.  
   
  ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
   
-###  <a name="View"></a> Viewbox  
+### <a name="View"></a> Viewbox  
  Consente di ridimensionare gli oggetti come con un controllo zoom. È possibile aggiungere un solo oggetto a un controllo **Viewbox**. Se si vuole applicare questo effetto a più oggetti, aggiungere un pannello di layout a **ViewBox** e quindi aggiungere i controlli a tale pannello.  
   
  (Disponibile solo per i progetti WPF)  

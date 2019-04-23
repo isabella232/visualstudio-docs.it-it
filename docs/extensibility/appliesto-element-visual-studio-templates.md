@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055197"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelli di Visual Studio)
 
@@ -60,19 +60,19 @@ Nessuno.
 
 La sintassi valida dell'espressione è definita come segue:
 
--   L'espressione della funzionalità, ad esempio "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- L'espressione della funzionalità, ad esempio "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   Il "&#124;" è l'operatore OR.
+- Il "&#124;" è l'operatore OR.
 
--   I caratteri "&" e "+" sono entrambi operatori AND.
+- Il "&" e "+" caratteri sono entrambi operatori AND.
 
--   Il carattere "!" è l'operatore NOT.
+- Il carattere "!" è l'operatore NOT.
 
--   Le parentesi forzano l'ordine di precedenza nella valutazione.
+- Le parentesi forzano l'ordine di precedenza nella valutazione.
 
--   Un valore null o un'espressione vuota viene valutata come una corrispondenza.
+- Un valore null o un'espressione vuota viene valutata come una corrispondenza.
 
--   Le funzionalità del progetto possono essere qualsiasi carattere eccetto i caratteri riservati: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Le funzionalità del progetto possono essere qualsiasi carattere eccetto i caratteri riservati: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
 
 ## <a name="example"></a>Esempio
 

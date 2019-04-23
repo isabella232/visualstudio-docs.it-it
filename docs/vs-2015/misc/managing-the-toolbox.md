@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054768"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] consente a un pacchetto VSPackage, ad esempio un editor o una finestra di progettazione, di gestire l'appartenenza e l'aspetto della **casella degli strumenti**.  
@@ -27,9 +27,9 @@ ms.locfileid: "58965736"
   
  Questo supporto è limitato a editor e finestre di progettazione che richiedono:  
   
-1.  L'implementazione di un oggetto factory per fornire istanze dell'editor o della finestra di progettazione. Per altre informazioni sull'implementazione di un oggetto factory della finestra di progettazione o dell'editor, vedere [Editor Factories](../extensibility/editor-factories.md).  
+1. L'implementazione di un oggetto factory per fornire istanze dell'editor o della finestra di progettazione. Per altre informazioni sull'implementazione di un oggetto factory della finestra di progettazione o dell'editor, vedere [Editor Factories](../extensibility/editor-factories.md).  
   
-2.  La registrazione della scheda della casella degli strumenti che è attivata automaticamente se è presente l'editor o la finestra di progettazione.  
+2. La registrazione della scheda della casella degli strumenti che è attivata automaticamente se è presente l'editor o la finestra di progettazione.  
   
 ## <a name="controlling-the-toolbox"></a>Controllo della casella degli strumenti  
  Integrando il supporto per l'automazione, [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce le interfacce seguenti per offrire ai pacchetti VSPackage un maggiore controllo sulla gestione della **casella degli strumenti** .  

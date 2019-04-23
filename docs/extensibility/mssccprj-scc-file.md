@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043720"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. File SCC
 Quando si inserisce una soluzione di Visual Studio o un progetto nel controllo del codice sorgente usare l'IDE, l'IDE riceve due tipi principali di informazioni. Le informazioni provengano da controllo del codice sorgente del plug-in forma di stringhe. Queste stringhe "AuxPath" e "ProjName", sono opache per l'IDE, ma vengono utilizzati per il plug-in per individuare la soluzione o progetto in controllo della versione. L'IDE in genere Ottiene queste stringhe la prima volta chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e quindi li salva nel file di soluzione o il progetto per le chiamate successive al [SccOpenProject](../extensibility/sccopenproject-function.md). Se si incorpora nei file di soluzione e progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente di rami, fork, o copia i file di soluzione e progetto in controllo della versione. Per assicurarsi che i file di soluzione e progetto puntino alla posizione corretta nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe devono essere opaca, potrebbe non sempre essere chiaro come devono essere aggiornati.
@@ -25,19 +25,19 @@ Quando si inserisce una soluzione di Visual Studio o un progetto nel controllo d
 
  Un controllo del codice sorgente del plug-in che supporta il *Mssccprj. scc* file deve rispettare le linee guida seguenti:
 
--   Può essere presente solo uno *Mssccprj. scc* file per ogni directory.
+- Può essere presente solo uno *Mssccprj. scc* file per ogni directory.
 
--   Un' *Mssccprj. scc* file può contenere il "AuxPath" e "ProjName" per più file sottoposti al controllo del codice sorgente all'interno di una determinata directory.
+- Un' *Mssccprj. scc* file può contenere il "AuxPath" e "ProjName" per più file sottoposti al controllo del codice sorgente all'interno di una determinata directory.
 
--   La stringa "AuxPath" non deve avere le offerte in essa contenuti. È consentito avere virgolette intorno a esso come delimitatori (ad esempio, una coppia di virgolette doppie possa essere consente di indicare una stringa vuota). L'IDE rimuoverà tutte le offerte dalla stringa "AuxPath" quando viene letta dal *Mssccprj. scc* file.
+- La stringa "AuxPath" non deve avere le offerte in essa contenuti. È consentito avere virgolette intorno a esso come delimitatori (ad esempio, una coppia di virgolette doppie possa essere consente di indicare una stringa vuota). L'IDE rimuoverà tutte le offerte dalla stringa "AuxPath" quando viene letta dal *Mssccprj. scc* file.
 
--   Stringa "Nomeprogetto" nel *MSSCCPRJ. File SCC* devono corrispondere esattamente alla stringa restituita dal `SccGetProjPath` (funzione). Se la stringa restituita dalla funzione contiene virgolette, la stringa nel *Mssccprj. scc* file deve includere le virgolette intorno a esso e viceversa.
+- Stringa "Nomeprogetto" nel *MSSCCPRJ. File SCC* devono corrispondere esattamente alla stringa restituita dal `SccGetProjPath` (funzione). Se la stringa restituita dalla funzione contiene virgolette, la stringa nel *Mssccprj. scc* file deve includere le virgolette intorno a esso e viceversa.
 
--   Un' *Mssccprj. scc* file viene creato o aggiornato ogni volta che un file viene inserito nel controllo del codice sorgente.
+- Un' *Mssccprj. scc* file viene creato o aggiornato ogni volta che un file viene inserito nel controllo del codice sorgente.
 
--   Se un' *Mssccprj. scc* file viene eliminato, un provider deve generarla di nuovo la volta successiva che esegue un'operazione di controllo codice sorgente relativi a tale directory.
+- Se un' *Mssccprj. scc* file viene eliminato, un provider deve generarla di nuovo la volta successiva che esegue un'operazione di controllo codice sorgente relativi a tale directory.
 
--   Un' *Mssccprj. scc* file deve seguire rigorosamente il formato definito.
+- Un' *Mssccprj. scc* file deve seguire rigorosamente il formato definito.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Un'illustrazione del MSSCCPRJ. Formato del file di controllo del codice sorgente
  Seguito è riportato un esempio del *Mssccprj. scc* formato di file (i numeri di riga vengono forniti solo come guida e non devono essere incluse nel corpo del file):

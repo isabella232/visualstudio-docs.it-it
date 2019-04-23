@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054794"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Evitare l'overflow delle operazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,15 +103,15 @@ End Sub
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Attivare Overflow/Underflow aritmetico selezionato
- Se si attiva checked overflow/underflow aritmetico in C#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
+ Se si attiva checked overflow/underflow aritmetico in c#, è equivalente a wrapping di ogni operazione di integer in un blocco selezionato.
 
- **Per attivare overflow/underflow aritmetico nel linguaggio C# selezionata**
+ **Per attivare overflow/underflow aritmetico nel linguaggio c# selezionata**
 
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto e scegliere **proprietà**.
+1. Nelle **Esplora soluzioni**, fare clic sul progetto e scegliere **proprietà**.
 
-2.  Nella scheda **Compilazione** scegliere **Avanzate**.
+2. Nella scheda **Compilazione** scegliere **Avanzate**.
 
-3.  Selezionare **Controlla overflow/underflow aritmetico** e fare clic su **OK**.
+3. Selezionare **Controlla overflow/underflow aritmetico** e fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.OverflowException?displayProperty=fullName> [Operatori di C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName> [Operatori di c#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

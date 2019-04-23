@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053884"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
--   Associazione di Diagnostica grafica all'app  
+- Associazione di Diagnostica grafica all'app  
   
--   Acquisizione di informazioni grafiche  
+- Acquisizione di informazioni grafiche  
   
 ## <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche  
  Per usare gli strumenti di diagnostica grafica, occorre prima di tutto acquisire le informazioni grafiche necessarie. Per abilitare l'acquisizione, usare il comando **Avvia diagnostica** per associare Diagnostica grafica all'app all'avvio.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Per abilitare l'acquisizione di informazioni grafiche dopo il caricamento di un progetto o una soluzione  
   
-1.  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un file di progetto o di soluzione per l'app dalla quale si vogliono acquisire informazioni grafiche.  
+1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]caricare un file di progetto o di soluzione per l'app dalla quale si vogliono acquisire informazioni grafiche.  
   
-2.  Scegliere **Avvia diagnostica**sulla barra degli strumenti Diagnostica grafica.  
+2. Scegliere **Avvia diagnostica**sulla barra degli strumenti Diagnostica grafica.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Per abilitare l'acquisizione di informazioni grafiche senza caricare un progetto o una soluzione  
   
@@ -59,7 +59,7 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
 ## <a name="next-steps"></a>Passaggi successivi  
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche manualmente. Come passaggio successivo, prendere in considerare questa opzione:  
   
--   Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Visualizzare [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Visualizzare [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

@@ -11,14 +11,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d1878fd1ce91842e8d03b6e78de244380df8eb2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054560"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Procedura: distribuire i frammenti di codice
+# <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È sufficiente fornire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con Gestione frammenti di codice. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio, che gli utenti di Visual Studio possono installare.  
@@ -28,9 +28,9 @@ ms.locfileid: "54799032"
 ## <a name="setting-up-the-extension"></a>Configurazione dell'estensione  
  In questa procedura si userà lo stesso frammento di codice Hello World creato [procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo .snippet verrà fornito in modo che non sia necessario tornare indietro e crearlo.  
   
-1.  Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File / Nuovo / Progetto / Visual C# (o Visual Basic / Extensibility**)  
+1. Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File / Nuovo / Progetto / Visual C# (o Visual Basic / Extensibility**)  
   
-2.  Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo **VBCodeSnippet.snippet**. Sostituire il contenuto con quanto riportato di seguito.  
+2. Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo **VBCodeSnippet.snippet**. Sostituire il contenuto con quanto riportato di seguito.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -58,19 +58,19 @@ ms.locfileid: "54799032"
   
 #### <a name="setting-up-the-directory-structure"></a>Configurazione della struttura di directory  
   
-1.  In Esplora soluzioni selezionare il nodo del progetto e aggiungere una cartella contenente il nome che si vuole assegnare al frammento di codice in Gestione frammenti di codice. In questo caso, dovrebbe essere **HelloWorldVB**.  
+1. In Esplora soluzioni selezionare il nodo del progetto e aggiungere una cartella contenente il nome che si vuole assegnare al frammento di codice in Gestione frammenti di codice. In questo caso, dovrebbe essere **HelloWorldVB**.  
   
-2.  Spostare il file SNIPPET nella cartella **HelloWorldVB**.  
+2. Spostare il file SNIPPET nella cartella **HelloWorldVB**.  
   
-3.  Selezionare il file SNIPPET in Esplora soluzioni e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.  
+3. Selezionare il file SNIPPET in Esplora soluzioni e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.  
   
 #### <a name="adding-the-pkgdef-file"></a>Aggiunta del file .pkgdef  
   
-1.  Aggiungere un file di testo alla cartella **HelloWorldVB** e denominarlo **HelloWorldVB.pkgdef**. Questo file consente di aggiungere alcune chiavi nel Registro di sistema. In questo caso viene aggiunta una nuova chiave a  
+1. Aggiungere un file di testo alla cartella **HelloWorldVB** e denominarlo **HelloWorldVB.pkgdef**. Questo file consente di aggiungere alcune chiavi nel Registro di sistema. In questo caso viene aggiunta una nuova chiave a  
   
      **HKCU\Software\Microsoft\VisualStudio\14.0\Languages\CodeExpansions\Basic**.  
   
-2.  Aggiungere al file il codice seguente:  
+2. Aggiungere al file il codice seguente:  
   
     ```  
     // Visual Basic   
@@ -80,23 +80,23 @@ ms.locfileid: "54799032"
   
      Se si esamina questa chiave, è possibile visualizzare come specificare diverse lingue.  
   
-3.  Selezionare il file PKGDEF in Esplora soluzioni e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.  
+3. Selezionare il file PKGDEF in Esplora soluzioni e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.  
   
-4.  Aggiungere il file pkgdef come una risorsa nel manifesto VSIX. Nel file source.extension.vsixmanifest passare alla scheda **Asset** e fare clic su **Nuovo**.  
+4. Aggiungere il file pkgdef come una risorsa nel manifesto VSIX. Nel file source.extension.vsixmanifest passare alla scheda **Asset** e fare clic su **Nuovo**.  
   
-5.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare il **tipo** su **Microsoft.VisualStudio.VsPackage**, il **tipo** su **File in filesystem** e il **Percorso** su **HelloWorldVB.pkgdef** (che dovrebbe essere visualizzato nell'elenco a discesa).  
+5. Nella finestra di dialogo **Aggiungi nuovo asset** impostare il **tipo** su **Microsoft.VisualStudio.VsPackage**, il **tipo** su **File in filesystem** e il **Percorso** su **HelloWorldVB.pkgdef** (che dovrebbe essere visualizzato nell'elenco a discesa).  
   
 ### <a name="testing-the-snippet"></a>Test del frammento di codice  
   
-1.  A questo punto è possibile assicurarsi che il frammento di codice funzioni nell'istanza sperimentale di Visual Studio. L'istanza sperimentale è una seconda copia di Visual Studio, separata da quella usata per scrivere codice. Consente di lavorare su un'estensione senza impatto sull'ambiente di sviluppo.  
+1. A questo punto è possibile assicurarsi che il frammento di codice funzioni nell'istanza sperimentale di Visual Studio. L'istanza sperimentale è una seconda copia di Visual Studio, separata da quella usata per scrivere codice. Consente di lavorare su un'estensione senza impatto sull'ambiente di sviluppo.  
   
-2.  Compilare il progetto e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.  
+2. Compilare il progetto e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.  
   
-3.  Nell'istanza sperimentale, passare a **Strumenti / Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. HelloWorldVB verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento HelloWorldVB.  
+3. Nell'istanza sperimentale, passare a **Strumenti / Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. HelloWorldVB verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento HelloWorldVB.  
   
-4.  Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.  
+4. Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.  
   
-5.  HelloWorldVB dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** che contiene un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa HelloWorldVB. Verrà visualizzato il seguente codice aggiunto al file:  
+5. HelloWorldVB dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** che contiene un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa HelloWorldVB. Verrà visualizzato il seguente codice aggiunto al file:  
   
     ```vb  
     Console.WriteLine("Hello, World!")  

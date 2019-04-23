@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043042"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurazione di unit test usando un file con estensione runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
   
    ![Abilitazione di un file di impostazioni di esecuzione](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="example"></a> Copiare il file di esempio con estensione runsettings  
+## <a name="example"></a> Copiare il file di esempio con estensione runsettings  
  Di seguito è riportato un tipico file di tipo *.runsettings. Ogni elemento del file è facoltativo, perché ogni valore ha un'impostazione predefinita.  
   
 ```xml  
@@ -152,7 +152,7 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
 |Configurazione|Impostazione predefinita|Valori|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su `true` per usare l'adattatore di test precedente.<br /><br /> Ad esempio, lo si può usare nel caso in cui sia presente un file app.config specificato per uno unit test.<br /><br /> È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|  
-|IgnoreTestImpact|False|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Procedura: Raccogliere i dati per verificare i test da eseguire dopo le modifiche al codice](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|False|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [come: Raccogliere i dati per verificare i test da eseguire dopo le modifiche al codice](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||È possibile specificare un file di impostazioni di test da usare con l'adattatore MSTest. È inoltre possibile specificare un file di impostazioni test usando il menu **Test**, **Impostazioni test**, **Seleziona file di impostazioni test**.<br /><br /> Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|False|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Qualsiasi processo avviato come parte del test verrà interrotto in questo momento. Se si desidera che l'executor di test rimanga attivo, impostare questa configurazione su true.<br /><br /> Ad esempio, lo si può usare per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|  
 |DeploymentEnabled|true|Se viene impostata su false, gli elementi della distribuzione specificati nel metodo di test non verranno copiati nella directory di distribuzione.|  

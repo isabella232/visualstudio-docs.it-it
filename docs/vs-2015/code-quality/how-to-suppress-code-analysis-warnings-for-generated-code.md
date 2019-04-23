@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057581"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: Non visualizzare gli avvisi relativi all'analisi del codice generato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ I compilatori di codice gestito è spesso generano codice che viene aggiunto a u
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Per non visualizzare avvisi per il codice generato in un progetto  
   
-1.  Fare clic sul progetto in Esplora soluzioni e quindi fare clic su **proprietà**.  
+1. Fare clic sul progetto in Esplora soluzioni e quindi fare clic su **proprietà**.  
   
-2.  Fare clic su **analisi del codice**.  
+2. Fare clic su **analisi del codice**.  
   
-3.  Selezionare il **non visualizzare i risultati dal codice generato** casella di controllo.
+3. Selezionare il **non visualizzare i risultati dal codice generato** casella di controllo.

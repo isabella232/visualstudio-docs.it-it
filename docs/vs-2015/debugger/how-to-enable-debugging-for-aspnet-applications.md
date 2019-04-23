@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059955"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Procedura: Abilitare il debug per le applicazioni ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ Per abilitare il debug, è necessario abilitarlo sia nella pagina **Proprietà p
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Per abilitare il debug di ASP.NET nelle proprietà del progetto (Visual Basic/C#)  
   
-1.  Fare clic con il pulsante destro del mouse sul nome del progetto Web in **Esplora soluzioni**, quindi scegliere **Proprietà**.  
+1. Fare clic con il pulsante destro del mouse sul nome del progetto Web in **Esplora soluzioni**, quindi scegliere **Proprietà**.  
   
-2.  Nella pagina delle proprietà del progetto fare clic sulla scheda **Web** .  
+2. Nella pagina delle proprietà del progetto fare clic sulla scheda **Web** .  
   
-3.  In **Debugger**selezionare la casella di controllo **ASP.NET** .  
+3. In **Debugger**selezionare la casella di controllo **ASP.NET** .  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Per abilitare il debug nel file web.config  
   
-1.  Aprire il file web.config usando qualsiasi editor di testo o parser XML standard.  
+1. Aprire il file web.config usando qualsiasi editor di testo o parser XML standard.  
   
     > [!NOTE]  
     > Tuttavia, non è possibile accedere al file in remoto usando un Web browser. Per motivi di sicurezza, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura Microsoft IIS per prevenire l'accesso diretto del browser ai file Web.config. Se si prova ad accedere a un file di configurazione usando un browser, viene restituito l'errore di accesso HTTP 403 (accesso non consentito).  
   
-2.  Web.config è un file XML e di conseguenza contiene sezioni annidate contrassegnate da tag. Individuare l'elemento `configuration/system.web/compilation` . Se l'elemento di compilazione non esiste, è necessario crearlo.  
+2. Web.config è un file XML e di conseguenza contiene sezioni annidate contrassegnate da tag. Individuare l'elemento `configuration/system.web/compilation` . Se l'elemento di compilazione non esiste, è necessario crearlo.  
   
-3.  Se l'elemento `compilation` non contiene un attributo `debug` , aggiungere l'attributo all'elemento.  
+3. Se l'elemento `compilation` non contiene un attributo `debug` , aggiungere l'attributo all'elemento.  
   
-4.  Verificare che il valore dell'attributo `debug` sia impostato su `true`.  
+4. Verificare che il valore dell'attributo `debug` sia impostato su `true`.  
   
 Il file web.config dovrebbe essere analogo a quello dell'esempio seguente. Si noti che tra gli elementi di configurazione e system.web possono essere presenti sezioni.  
   
--   Sezioni di elemento tra gli elementi di configurazione e system.web  
+- Sezioni di elemento tra gli elementi di configurazione e system.web  
   
--   Sezioni di elemento tra gli elementi system.web e di compilazione  
+- Sezioni di elemento tra gli elementi system.web e di compilazione  
   
--   L'elemento di compilazione può contenere altri attributi ed elementi  
+- L'elemento di compilazione può contenere altri attributi ed elementi  
   
 ## <a name="example"></a>Esempio  
   

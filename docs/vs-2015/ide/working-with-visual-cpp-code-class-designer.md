@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054625"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilizzo del codice Visual C++ (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
   
  Progettazione classi supporta gli elementi di codice C++ seguenti:  
   
--   Classe (simile a una forma di classe gestita, con la differenza che può avere relazioni di ereditarietà multiple)  
+- Classe (simile a una forma di classe gestita, con la differenza che può avere relazioni di ereditarietà multiple)  
   
--   Classe anonima (visualizza il nome generato da Visualizzazione classi per il tipo anonimo)  
+- Classe anonima (visualizza il nome generato da Visualizzazione classi per il tipo anonimo)  
   
--   Classe modello  
+- Classe modello  
   
--   Struct  
+- Struct  
   
--   Enum  
+- Enum  
   
--   Macro (visualizza la prospettiva post-elaborata della macro)  
+- Macro (visualizza la prospettiva post-elaborata della macro)  
   
--   Typedef  
+- Typedef  
   
 > [!NOTE]
 >  Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) (Diagrammi classi UML: riferimenti)  
@@ -84,27 +84,27 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 ### <a name="troubleshooting-other-error-messages"></a>Risoluzione di altri messaggi di errore  
  È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Vedere il [forum dedicato a Progettazione classi di Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> Limitazioni per gli elementi di codice C++  
+## <a name="limitations"></a> Limitazioni per gli elementi di codice C++  
   
--   Quando viene caricato un progetto Visual C++, Progettazione classi funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.  
+- Quando viene caricato un progetto Visual C++, Progettazione classi funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.  
   
--   Progettazione classi supporta solo semantica C++ nativa.  Per i progetti Visual C++ compilati in codice gestito, Progettazione classi visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma Progettazione classi non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).  
+- Progettazione classi supporta solo semantica C++ nativa.  Per i progetti Visual C++ compilati in codice gestito, Progettazione classi visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma Progettazione classi non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).  
   
--   Per i progetti Visual C++, Progettazione classi legge soltanto la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), Progettazione classi non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, Progettazione classi analogamente non visualizzerà niente.  
+- Per i progetti Visual C++, Progettazione classi legge soltanto la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), Progettazione classi non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, Progettazione classi analogamente non visualizzerà niente.  
   
--   I file IDL (.idl), che definiscono le interfacce COM e le librerie dei tipi, non vengono visualizzati nei diagrammi a meno che non siano compilati in codice C++ nativo.  
+- I file IDL (.idl), che definiscono le interfacce COM e le librerie dei tipi, non vengono visualizzati nei diagrammi a meno che non siano compilati in codice C++ nativo.  
   
--   Progettazione classi non supporta funzioni e variabili globali.  
+- Progettazione classi non supporta funzioni e variabili globali.  
   
--   Progettazione classi non supporta unioni. Si tratta di un tipo speciale di classe in cui la memoria allocata è solo la quantità necessaria per il membro dati più grande dell'unione.  
+- Progettazione classi non supporta unioni. Si tratta di un tipo speciale di classe in cui la memoria allocata è solo la quantità necessaria per il membro dati più grande dell'unione.  
   
--   Progettazione classi non visualizza tipi di dati di base come ad esempio `int` e `char`.  
+- Progettazione classi non visualizza tipi di dati di base come ad esempio `int` e `char`.  
   
--   Progettazione classi non visualizza tipi definiti all'esterno del progetto corrente se il progetto non ha riferimenti corretti a tali tipi.  
+- Progettazione classi non visualizza tipi definiti all'esterno del progetto corrente se il progetto non ha riferimenti corretti a tali tipi.  
   
--   Progettazione classi visualizza i tipi annidati, ma non le relazioni tra un tipo annidato e altri tipi.  
+- Progettazione classi visualizza i tipi annidati, ma non le relazioni tra un tipo annidato e altri tipi.  
   
--   Progettazione classi non può visualizzare tipi void o che derivano da un tipo void.  
+- Progettazione classi non può visualizzare tipi void o che derivano da un tipo void.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Designing and Viewing Classes and Types](../ide/designing-and-viewing-classes-and-types.md)  (Progettazione e visualizzazione di classi e tipi)  

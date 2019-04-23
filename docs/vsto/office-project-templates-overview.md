@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054573"
 ---
 # <a name="office-project-templates-overview"></a>Cenni preliminari sui modelli di progetto di Office
   Gli strumenti di sviluppo di applicazioni per Microsoft Office in Visual Studio includono modelli di progetto per la creazione dei seguenti tipi di soluzioni Office:
@@ -53,7 +53,7 @@ ms.locfileid: "56614688"
 > [!NOTE]
 > Gli strumenti di sviluppo di applicazioni per Office sono inclusi in alcune edizioni di Visual Studio. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Personalizzazioni a livello di documento
+## <a name="DocLevel"></a> Personalizzazioni a livello di documento
  Il nodo **Office** nella finestra di dialogo **Nuovo progetto** fornisce i modelli di progetto riportati di seguito per cominciare a creare personalizzazioni a livello di documento per Word ed Excel.
 
 - **Documento VSTO di Word 2013 e 2016**
@@ -81,17 +81,17 @@ ms.locfileid: "56614688"
 
  Per informazioni introduttive su questi tipi di progetto, vedere i seguenti argomenti:
 
--   [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
+- [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 
--   [Soluzioni Word](../vsto/word-solutions.md)
+- [Soluzioni Word](../vsto/word-solutions.md)
 
--   [Soluzioni Excel](../vsto/excel-solutions.md)
+- [Soluzioni Excel](../vsto/excel-solutions.md)
 
--   [Procedura dettagliata: Creare una personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Procedura dettagliata: Creare una personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Componenti aggiuntivi VSTO
+## <a name="AppLevel"></a> Componenti aggiuntivi VSTO
  Il nodo **Office/SharePoint** nella finestra di dialogo **Nuovo progetto** fornisce i modelli di progetto seguenti, con i quali è possibile cominciare a creare componenti aggiuntivi VSTO.
 
 - **Componente aggiuntivo VSTO di Excel 2013 e 2016**
@@ -157,7 +157,7 @@ ms.locfileid: "56614688"
 |I documenti possono essere aperti e modificati dagli utenti, a meno che non siano in sola lettura. Tutte le modifiche salvate vengono mantenute nell'originale.|Gli utenti possono aprire un modello e salvarne una copia locale per creare un nuovo documento. L'originale può essere modificato solo da utenti che dispongono di speciali autorizzazioni.|
 |All'apertura del documento viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.Open> .|All'apertura del modello viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.New> .|
 
-##  <a name="Limitations"></a> Limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)
+## <a name="Limitations"></a> Limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)
  I documenti, le cartelle di lavoro e i modelli potrebbero non funzionare correttamente come modelli globali o come componenti aggiuntivi VSTO di Excel (file xla).
 
 ## <a name="word-templates"></a>Modelli di Word

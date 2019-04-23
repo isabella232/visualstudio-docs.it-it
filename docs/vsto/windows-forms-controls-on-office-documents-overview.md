@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055354"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controlli Windows Form in panoramica di documenti di Office
   I controlli Windows Form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati. Nei progetti a livello di documento per Microsoft Office Excel e Microsoft Office Word, è possibile aggiungere controlli Windows Form al documento o cartella di lavoro nel progetto in fase di progettazione oppure è possibile aggiungere questi controlli a livello di codice in fase di esecuzione. A livello di codice, è possibile aggiungere questi controlli a qualsiasi documento aperto o foglio di lavoro in fase di esecuzione in un componente aggiuntivo VSTO per Excel o Word.
@@ -42,19 +42,20 @@ ms.locfileid: "56598856"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Usare i controlli Windows Form
- È possibile aggiungere controlli Windows Form ai documenti e agli elementi personalizzabili dell'interfaccia utente, tra cui riquadri azioni, riquadri attività personalizzati e Windows Form. I controlli Windows Form in genere hanno lo stesso comportamento nei documenti e in questi altri elementi dell'interfaccia utente, ma esistono alcune differenze. Per informazioni, vedere [consente di controllare le limitazioni di Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- La decisione di aggiungere controlli Windows Form a un documento o a un altro elemento dell'interfaccia utente dipende da diversi fattori. Quando si progetta l'interfaccia utente della soluzione, tenere in considerazione gli usi dei controlli Windows Form descritti nella tabella seguente.
+È possibile aggiungere controlli Windows Form ai documenti e agli elementi personalizzabili dell'interfaccia utente, tra cui riquadri azioni, riquadri attività personalizzati e Windows Form. I controlli Windows Form in genere hanno lo stesso comportamento nei documenti e in questi altri elementi dell'interfaccia utente, ma esistono alcune differenze. Per informazioni, vedere [consente di controllare le limitazioni di Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- In un documento.
- -   Per fare in modo che i controlli siano visualizzati costantemente.
+La decisione di aggiungere controlli Windows Form a un documento o a un altro elemento dell'interfaccia utente dipende da diversi fattori. Quando si progetta l'interfaccia utente della soluzione, tenere in considerazione gli usi dei controlli Windows Form descritti nella tabella seguente.
+
+In un documento.
+- Per fare in modo che i controlli siano visualizzati costantemente.
 
 - Per consentire agli utenti di immettere dati direttamente nel documento, ad esempio in documenti basati su form in cui l'area di modifica è bloccata.
 
 - Per visualizzare i controlli in linea con i dati nel documento. Ad esempio, se si aggiungono pulsanti a ogni riga di un oggetto elenco, è consigliabile che siano allineati alle singole voci dell'elenco.
 
-  Nel riquadro azioni o in un riquadro attività personalizzato
-  -   Per fornire informazioni contestuali all'utente.
+Nel riquadro azioni o in un riquadro attività personalizzato
+- Per fornire informazioni contestuali all'utente.
 
 - Per fare in modo che nel documento vengano visualizzati solo i risultati e non i controlli e i dati di query.
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598856"
 
 - Per assicurarsi che i controlli non interferiscano con la visualizzazione del documento.
 
-  In un Windows Form
-  -   Per poter controllare le dimensioni dell'interfaccia utente.
+In un Windows Form
+- Per poter controllare le dimensioni dell'interfaccia utente.
 
 - Per impedire agli utenti di nascondere o eliminare i controlli.
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598856"
 ### <a name="create-custom-user-controls"></a>Creare controlli utente personalizzati
  È possibile aggiungere un controllo utente al progetto e quindi aggiungerlo alla **casella degli strumenti**. È quindi possibile trascinare il controllo utente direttamente nel documento così come si aggiunge un controllo Windows Form a un documento. Esistono alcuni aspetti da tenere presenti quando si creano controlli utente:
 
--   Non creare un controllo utente **sealed** . Quando si trascina il controllo nel documento, Visual Studio genera una classe wrapper derivata dal controllo utente per estenderlo e supportarne l'uso nel documento. Se il controllo utente è **sealed**, Visual Studio non può generare la classe wrapper.
+- Non creare un controllo utente **sealed** . Quando si trascina il controllo nel documento, Visual Studio genera una classe wrapper derivata dal controllo utente per estenderlo e supportarne l'uso nel documento. Se il controllo utente è **sealed**, Visual Studio non può generare la classe wrapper.
 
--   I controlli utente devono avere l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su **true**. Nei controlli utente creati all'interno di un progetto di Office questo attributo è impostato su **true** per impostazione predefinita, ma nei controlli utente che fanno parte di progetti esterni questo stesso attributo potrebbe non essere impostato su **true**.
+- I controlli utente devono avere l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su **true**. Nei controlli utente creati all'interno di un progetto di Office questo attributo è impostato su **true** per impostazione predefinita, ma nei controlli utente che fanno parte di progetti esterni questo stesso attributo potrebbe non essere impostato su **true**.
 
--   Dopo aver aggiunto un controllo utente al documento, non rinominare o eliminare la classe <xref:System.Windows.Forms.UserControl> dal progetto. Se è necessario rinominare un controllo utente, bisogna prima eliminarlo dal documento e quindi aggiungerlo di nuovo dopo aver cambiato il nome.
+- Dopo aver aggiunto un controllo utente al documento, non rinominare o eliminare la classe <xref:System.Windows.Forms.UserControl> dal progetto. Se è necessario rinominare un controllo utente, bisogna prima eliminarlo dal documento e quindi aggiungerlo di nuovo dopo aver cambiato il nome.
 
 ### <a name="arrange-controls-at-design-time"></a>Disporre i controlli in fase di progettazione
  Se si aggiungono più controlli ai documenti di Word ed Excel in fase di progettazione, si può impostare rapidamente l'allineamento di tutti i controlli selezionati usando le barre degli strumenti **Microsoft Office Word** e **Microsoft Office Excel** in Visual Studio. Queste barre degli strumenti sono disponibili solo quando è aperto un documento o foglio di lavoro nella finestra di progettazione.
 
  Quando si selezionano più controlli nella finestra di progettazione, è possibile usare i pulsanti seguenti in queste barre degli strumenti per disporre i controlli:
 
--   **Allinea a sinistra**
+- **Allinea a sinistra**
 
--   **Allinea al centro**
+- **Allinea al centro**
 
--   **Allinea a destra**
+- **Allinea a destra**
 
--   **Allinea in alto**
+- **Allinea in alto**
 
--   **Allinea in mezzo**
+- **Allinea in mezzo**
 
--   **Allinea in basso**
+- **Allinea in basso**
 
--   **Uniforma spaziatura orizzontale**
+- **Uniforma spaziatura orizzontale**
 
--   **Uniforma spaziatura verticale**
+- **Uniforma spaziatura verticale**
 
 > [!NOTE]
 >  Nei progetti di Word, questi pulsanti sono abilitati solo se i controlli selezionati non sono in linea con il testo. Per impostazione predefinita, i controlli aggiunti al documento in fase di progettazione sono in linea con il testo.

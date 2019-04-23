@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055821"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -46,7 +46,7 @@ Per assicurarsi che non entrino in conflitto con la progettazione codice, è pos
 
 - Visual Studio
 
-- Una soluzione che include un progetto di modellazione con un diagramma delle dipendenze. Questo diagramma di dipendenza deve essere collegato agli artefatti nei progetti C# o Visual Basic che si desidera convalidare. Visualizzare [creare i diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md).
+- Una soluzione che include un progetto di modellazione con un diagramma delle dipendenze. Questo diagramma di dipendenza deve essere collegato agli artefatti nei progetti c# o Visual Basic che si desidera convalidare. Visualizzare [creare i diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
 > I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio.
@@ -62,7 +62,7 @@ Per informazioni su quali edizioni di Visual Studio supportano questa funzionali
 
 Convalida della dipendenza si verifica in tempo reale e gli errori vengono visualizzati immediatamente nella **elenco errori**.
 
-* Convalida in tempo reale è supportata per C# e Visual Basic.
+* Convalida in tempo reale è supportata per c# e Visual Basic.
 
 * Per abilitare l'analisi della soluzione completa quando si usa la convalida live delle dipendenze, aprire le impostazioni delle opzioni da barra color oro che viene visualizzato nei **elenco errori**.
 
@@ -79,17 +79,17 @@ Convalida della dipendenza si verifica in tempo reale e gli errori vengono visua
 
 È possibile collegare livelli a siti Web, documenti Office, file di testo normale e file in progetti condivisi tra più App, ma il processo di convalida non li includerà. Gli errori di convalida non verranno visualizzati per i riferimenti a progetti oppure a assembly collegati a livelli separati quando tra tali livelli non è presente alcuna dipendenza. Tali riferimenti non vengono considerati dipendenze a meno che il codice non li usi.
 
-1.  Nel diagramma delle dipendenze, selezionare uno o più livelli, fare doppio clic la selezione e quindi fare clic su **Visualizza collegamenti**.
+1. Nel diagramma delle dipendenze, selezionare uno o più livelli, fare doppio clic la selezione e quindi fare clic su **Visualizza collegamenti**.
 
-2.  Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Se il valore è false, l'elemento non supporta la convalida.
+2. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Se il valore è false, l'elemento non supporta la convalida.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Includere altri progetti e assembly .NET per la convalida
 
 Quando si trascinano elementi nel diagramma delle dipendenze, vengono aggiunti automaticamente a riferimenti a progetti o assembly .NET corrispondente di **riferimenti livello** cartella nel progetto di modellazione. Questa cartella contiene i riferimenti agli assembly e ai progetti analizzati durante la convalida. È possibile includere altri assembly e progetti .NET per la convalida senza trascinarli manualmente nel diagramma delle dipendenze.
 
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto di modellazione o il **riferimenti livello** cartella e quindi fare clic su **Aggiungi riferimento**.
+1. Nelle **Esplora soluzioni**, fare clic sul progetto di modellazione o il **riferimenti livello** cartella e quindi fare clic su **Aggiungi riferimento**.
 
-2.  Nel **Aggiungi riferimento** della finestra di dialogo selezionare gli assembly o i progetti e quindi fare clic su **OK**.
+2. Nel **Aggiungi riferimento** della finestra di dialogo selezionare gli assembly o i progetti e quindi fare clic su **OK**.
 
 ## <a name="validate-code-manually"></a>Convalidare manualmente il codice
 
@@ -97,19 +97,19 @@ Se si dispone di un diagramma di dipendenza aperto collegato agli elementi della
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Convalidare il codice da un diagramma di dipendenze open
 
-1.  Pulsante destro del mouse sulla superficie del diagramma e quindi fare clic su **Convalida architettura**.
+1. Pulsante destro del mouse sulla superficie del diagramma e quindi fare clic su **Convalida architettura**.
 
     > [!NOTE]
     > Per impostazione predefinita, il **Build Action** sul file di diagramma (con estensione layerdiagram) delle dipendenze è impostata su **Validate** in modo che il diagramma è incluso nel processo di convalida.
 
      Il **elenco errori** finestra segnala tutti gli errori che si verificano. Per altre informazioni sugli errori di convalida, vedere [risolvere i problemi di convalida dei layer](#troubleshoot-layer-validation-issues).
 
-2.  Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.
+2. Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.
 
     > [!NOTE]
     > Visual Studio potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Ciò si verifica quando il codice presenta una dipendenza da un assembly che non è specificato nel diagramma delle dipendenze o codice manca una dipendenza specificata nel diagramma delle dipendenze. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per altre informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Per gestire gli errori, vedere [risolvere gli errori di convalida dei layer](#resolve-layer-validation-errors).
+3. Per gestire gli errori, vedere [risolvere gli errori di convalida dei layer](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Convalidare il codice al prompt dei comandi
 
@@ -183,15 +183,15 @@ Usare un editor di testo per aprire il file del progetto di modello (.modelproj)
 
 \- oppure -
 
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto che contiene il diagramma delle dipendenze o i diagrammi di modellazione e quindi fare clic su **proprietà**.
+1. Nelle **Esplora soluzioni**, fare clic sul progetto che contiene il diagramma delle dipendenze o i diagrammi di modellazione e quindi fare clic su **proprietà**.
 
-2.  Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.
+2. Nel **delle proprietà** finestra, impostare il progetto di modellazione **Convalida architettura** proprietà **True**.
 
     Il progetto di modello viene incluso nel processo di convalida.
 
-3.  Nelle **Esplora soluzioni**, fare clic sul file di diagramma (con estensione layerdiagram) delle dipendenze che si desidera utilizzare per la convalida.
+3. Nelle **Esplora soluzioni**, fare clic sul file di diagramma (con estensione layerdiagram) delle dipendenze che si desidera utilizzare per la convalida.
 
-4.  Nel **proprietà** finestra, assicurarsi che il diagramma **azione di compilazione** viene impostata su **Validate**.
+4. Nel **proprietà** finestra, assicurarsi che il diagramma **azione di compilazione** viene impostata su **Validate**.
 
     Ciò include il diagramma delle dipendenze nel processo di convalida.
 

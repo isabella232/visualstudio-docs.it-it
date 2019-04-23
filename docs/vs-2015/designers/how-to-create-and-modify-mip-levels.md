@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6495f9271114be5fcd35e38d9ed210e07a8b6f66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055093"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Procedura: creare e modificare livelli MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Procedura: Creare e modificare livelli MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo documento illustra come usare **Editor di immagini** per generare e modificare i *livelli MIP* per il livello di dettaglio dell'area della trama.  
@@ -26,9 +26,9 @@ Questo documento illustra come usare **Editor di immagini** per generare e modif
   
 #### <a name="to-generate-mip-levels"></a>Per generare i livelli MIP  
   
-1.  Iniziare con una trama di base, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per risultati ottimali, specificare una trama con larghezza e altezza equivalenti a una potenza di due nella dimensione, ad esempio 256, 512, 1024 e così via.  
+1. Iniziare con una trama di base, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per risultati ottimali, specificare una trama con larghezza e altezza equivalenti a una potenza di due nella dimensione, ad esempio 256, 512, 1024 e così via.  
   
-2.  Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini scegliere** **Avanzate** , **Strumenti** , **Genera MIP** .  
+2. Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini scegliere** **Avanzate** , **Strumenti** , **Genera MIP** .  
   
      I pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** sono ora visualizzati sulla barra degli strumenti della **modalità dell'editor di immagini** . Se è visualizzata la finestra **Proprietà**, si può anche notare che nelle proprietà dell'immagine sono ora incluse le proprietà di sola lettura **Livello MIP** e **Conteggio livelli MIP**.  
   
@@ -37,9 +37,9 @@ Questo documento illustra come usare **Editor di immagini** per generare e modif
   
 #### <a name="to-modify-an-individual-mip-level"></a>Per modificare un singolo livello MIP  
   
-1.  Selezionare il livello MIP che si vuole modificare. Sulla barra degli strumenti della **modalità dell'editor di immagini** usare i pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** per spostarsi da un livello MIP all'altro.  
+1. Selezionare il livello MIP che si vuole modificare. Sulla barra degli strumenti della **modalità dell'editor di immagini** usare i pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** per spostarsi da un livello MIP all'altro.  
   
-2.  Dopo aver selezionato il livello MIP da modificare, è possibile usare gli strumenti di disegno per modificarlo lasciando invariato il contenuto degli altri livelli MIP. Gli strumenti di disegno sono disponibili sulla barra degli strumenti **Editor di immagini**. Dopo aver selezionato uno strumento, è possibile modificarne le proprietà nella finestra **Proprietà**. Per informazioni sugli strumenti di disegno e le relative proprietà, vedere [Editor di immagini](../designers/image-editor.md).  
+2. Dopo aver selezionato il livello MIP da modificare, è possibile usare gli strumenti di disegno per modificarlo lasciando invariato il contenuto degli altri livelli MIP. Gli strumenti di disegno sono disponibili sulla barra degli strumenti **Editor di immagini**. Dopo aver selezionato uno strumento, è possibile modificarne le proprietà nella finestra **Proprietà**. Per informazioni sugli strumenti di disegno e le relative proprietà, vedere [Editor di immagini](../designers/image-editor.md).  
   
 > [!NOTE]
 >  Se non è necessario modificare il contenuto di singoli livelli MIP (ad esempio, per ottenere effetti specifici), è consigliabile generare mipmap dalla trama di origine in fase di compilazione. Questa operazione garantisce infatti che i livelli MIP rimangano sincronizzati con la trama di origine, poiché le modifiche apportate a un livello MIP non vengono propagate automaticamente ad altri livelli. Per altre informazioni su come generare mipmap in fase di compilazione, vedere [Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
