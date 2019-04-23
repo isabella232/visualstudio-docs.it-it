@@ -11,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 7f8d5da0d246cb6b0faa8b424f8039697686cd2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082282"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>Pacchetti VSPackage e framework del pacchetto gestito
 È possibile ridurre i tempi di sviluppo mediante la creazione di un pacchetto VSPackage con il pacchetto gestito classi di framework (MPF) anziché tramite le classi di interoperabilità COM.  
   
  Esistono due modi per creare un pacchetto VSPackage gestito:  
   
--   Usare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il modello di progetto di pacchetto  
+- Usare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il modello di progetto di pacchetto  
   
      Per altre informazioni, vedere [Procedura dettagliata: Creazione di un comando di Menu tramite il modello di pacchetto di Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
--   Compilare il pacchetto VSPackage senza il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il modello di progetto di pacchetto  
+- Compilare il pacchetto VSPackage senza il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] il modello di progetto di pacchetto  
   
      Ad esempio, è possibile copiare un pacchetto VSPackage di esempio e modificare i nomi e i GUID. È possibile trovare esempi nella sezione di VSX [Code Gallery](http://code.msdn.microsoft.com/vsx/).  
   

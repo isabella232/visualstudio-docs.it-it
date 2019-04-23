@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082035"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: Contrassegnare i controlli come controlli sicuri
   Per la sicurezza, SharePoint consente di distinguere tra i controlli Web che sono protetti dagli attacchi script injection e Web che non sono. Protetto (controlli), oppure *controlli sicuri*, sono accessibili da utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà di un elemento di progetto SharePoint o in voci di controllo sicure le **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere
@@ -33,47 +33,47 @@ ms.locfileid: "56646421"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Per contrassegnare i controlli come safe o unsafe nella proprietà voci SafeControl
 
-1.  Creare una soluzione di SharePoint con un progetto di Web Part visiva.
+1. Creare una soluzione di SharePoint con un progetto di Web Part visiva.
 
-2.  Aggiungere due controlli alla Web part: una casella di testo e un pulsante. Lasciare i nomi dei valori predefiniti, TextBox1 e Button1, rispettivamente.
+2. Aggiungere due controlli alla Web part: una casella di testo e un pulsante. Lasciare i nomi dei valori predefiniti, TextBox1 e Button1, rispettivamente.
 
-3.  Aggiungere due voci per la Web part **voci di controllo sicure** proprietà. A tale scopo, scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) accanto al pulsante il **voci di controllo sicure** proprietà nel  **Proprietà** finestra.
+3. Aggiungere due voci per la Web part **voci di controllo sicure** proprietà. A tale scopo, scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) accanto al pulsante il **voci di controllo sicure** proprietà nel  **Proprietà** finestra.
 
      Il **voci di controllo sicure** verrà visualizzata la finestra di dialogo.
 
-4.  Nel **voci di controllo sicure** finestra di dialogo scegliere la **Add** due volte per aggiungere due voci di controllo sicure per il **membri** riquadro: uno per il pulsante e una casella di testo.
+4. Nel **voci di controllo sicure** finestra di dialogo scegliere la **Add** due volte per aggiungere due voci di controllo sicure per il **membri** riquadro: uno per il pulsante e una casella di testo.
 
-5.  Scegliere la prima voce di controllo sicura e quindi modificare il valore di relativi **sicuro** proprietà **False**, la relativa **nome del tipo** proprietà **Button1**e il relativo **sicurezza Script** alla proprietà **False**.
+5. Scegliere la prima voce di controllo sicura e quindi modificare il valore di relativi **sicuro** proprietà **False**, la relativa **nome del tipo** proprietà **Button1**e il relativo **sicurezza Script** alla proprietà **False**.
 
      Questo passaggio identifica il controllo pulsante come controllo di tipo unsafe.
 
-6.  Scegliere la seconda voce di controllo sicura nell'elenco. Lasciare il valore della relativa **sicuro** proprietà come **True** e impostare relativo **nome del tipo** proprietà **TextBox1** e il relativo **sicuro Script** proprietà **True**.
+6. Scegliere la seconda voce di controllo sicura nell'elenco. Lasciare il valore della relativa **sicuro** proprietà come **True** e impostare relativo **nome del tipo** proprietà **TextBox1** e il relativo **sicuro Script** proprietà **True**.
 
      Controllo casella di testo è ora contrassegnato come un controllo che è protetto dagli attacchi script injection.
 
-7.  Scegliere il pulsante **OK** per chiudere la finestra di dialogo.
+7. Scegliere il pulsante **OK** per chiudere la finestra di dialogo.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Contrassegnare i controlli sicuri nella progettazione dei pacchetti
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Per contrassegnare i controlli come safe o unsafe nella progettazione dei pacchetti
 
-1.  Creare una soluzione di SharePoint con un progetto di Web Part visiva.
+1. Creare una soluzione di SharePoint con un progetto di Web Part visiva.
 
-2.  Aggiungere due controlli alla Web part: una casella di testo e un pulsante. Lasciare i nomi dei valori predefiniti, TextBox1 e Button1, rispettivamente.
+2. Aggiungere due controlli alla Web part: una casella di testo e un pulsante. Lasciare i nomi dei valori predefiniti, TextBox1 e Button1, rispettivamente.
 
      Prendere nota dello spazio dei nomi del controllo perché viene utilizzato in un secondo momento.
 
-3.  Nella barra dei menu, scegliere **compilare** > **Compila soluzione** per compilare il progetto.
+3. Nella barra dei menu, scegliere **compilare** > **Compila soluzione** per compilare il progetto.
 
-4.  Creare un'altra soluzione di SharePoint.
+4. Creare un'altra soluzione di SharePoint.
 
-5.  Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il *package. package* del file e quindi scegliere **aprire** per aprire la **Progettazione pacchetti**.
+5. Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il *package. package* del file e quindi scegliere **aprire** per aprire la **Progettazione pacchetti**.
 
-6.  Nel **Progettazione pacchetti**, scegliere il **avanzate** scheda.
+6. Nel **Progettazione pacchetti**, scegliere il **avanzate** scheda.
 
-7.  Sotto **Additional Assemblies**, scegliere il **Add** pulsante e quindi scegliere **Aggiungi Assembly esistente** dall'elenco.
+7. Sotto **Additional Assemblies**, scegliere il **Add** pulsante e quindi scegliere **Aggiungi Assembly esistente** dall'elenco.
 
-8.  Nel **Aggiungi Assembly esistente** finestra di dialogo scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) accanto al pulsante  **Percorso di origine**.
+8. Nel **Aggiungi Assembly esistente** finestra di dialogo scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) accanto al pulsante  **Percorso di origine**.
 
 9. Scegliere l'assembly dalla soluzione di SharePoint creato nel passaggio 1 e quindi scegliere il **aperto** pulsante.
 
@@ -85,7 +85,7 @@ ms.locfileid: "56646421"
 
 12. Immettere i valori per le proprietà contenute nella tabella seguente.
 
-    |Nome proprietà|Valore|
+    |Nome proprietà|Value|
     |-------------------|-----------|
     |Spazio dei nomi|Il nome completo dello spazio dei nomi per il controllo, ad esempio **BdcModelProject1.VisualWebPart1**.|
     |Nome tipo|Button1|

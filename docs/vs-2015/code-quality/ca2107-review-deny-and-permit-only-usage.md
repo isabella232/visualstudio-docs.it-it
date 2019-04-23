@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082152"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'uso di Deny e PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "58965806"
 
  Il codice che si basa su queste azioni deve essere valutato attentamente per le vulnerabilità di sicurezza grazie a utilità limitata e comportamento meno evidente. Si consideri quanto segue.
 
--   [Le richieste di collegamento](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) non sono interessati da Deny o PermitOnly.
+- [Le richieste di collegamento](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) non sono interessati da Deny o PermitOnly.
 
--   In caso di Deny o PermitOnly nello stesso stack frame della richiesta che fa sì che il percorso dello stack, le azioni di sicurezza non hanno alcun effetto.
+- In caso di Deny o PermitOnly nello stesso stack frame della richiesta che fa sì che il percorso dello stack, le azioni di sicurezza non hanno alcun effetto.
 
--   In genere possano specificare i valori che vengono usati per costruire le autorizzazioni in base al percorso in diversi modi. Negando l'accesso a una forma di percorso non negare l'accesso a tutti i form. Se, ad esempio, una condivisione file \\\Server\Share è mappata a un'unità di rete x:, per negare l'accesso a un file nella condivisione, è necessario negare \\\Server\Share\File, X:\File e ogni altro percorso che accede al file.
+- In genere possano specificare i valori che vengono usati per costruire le autorizzazioni in base al percorso in diversi modi. Negando l'accesso a una forma di percorso non negare l'accesso a tutti i form. Se, ad esempio, una condivisione file \\\Server\Share è mappata a un'unità di rete x:, per negare l'accesso a un file nella condivisione, è necessario negare \\\Server\Share\File, X:\File e ogni altro percorso che accede al file.
 
--   Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> può terminare un'analisi dello stack prima che venga raggiunto Deny o PermitOnly.
+- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> può terminare un'analisi dello stack prima che venga raggiunto Deny o PermitOnly.
 
--   Se un'istruzione Deny ha alcun effetto, vale a dire, quando un chiamante ha un'autorizzazione che è bloccata da Deny, il chiamante può accedere alla risorsa protetta direttamente, ignorando l'istruzione Deny. Analogamente, se il chiamante non ha l'autorizzazione negata, analisi dello stack avrà esito negativo senza l'istruzione Deny.
+- Se un'istruzione Deny ha alcun effetto, vale a dire, quando un chiamante ha un'autorizzazione che è bloccata da Deny, il chiamante può accedere alla risorsa protetta direttamente, ignorando l'istruzione Deny. Analogamente, se il chiamante non ha l'autorizzazione negata, analisi dello stack avrà esito negativo senza l'istruzione Deny.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Qualsiasi utilizzo di queste azioni di sicurezza comporta una violazione. Per correggere una violazione, non utilizzare queste azioni di sicurezza.

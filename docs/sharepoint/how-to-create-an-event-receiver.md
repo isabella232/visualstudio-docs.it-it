@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 395fc5976f31fb2d465c57f036b3e5369aaa0c07
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081960"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Procedura: Creare un ricevitore di eventi
   Creando *ricevitori di eventi*, è possibile rispondere quando un utente interagisce con gli elementi di SharePoint, ad esempio elenchi o elementi di elenco. Ad esempio, il codice in un ricevitore di eventi può essere attivato quando un utente modifica il calendario o elimina un nome da un elenco di contatti. Seguendo questo argomento, è possibile informazioni su come aggiungere un ricevitore di eventi a un'istanza di elenco.
@@ -34,23 +34,23 @@ ms.locfileid: "54865099"
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Per aggiungere un ricevitore di eventi per l'istanza di elenco
 
-1.  Aprire il progetto creato in [procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1. Aprire il progetto creato in [procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2.  Nelle **Esplora soluzioni**, scegliere il nodo di progetto SharePoint, chiamata ScriptHelpers **Clinic**.
+2. Nelle **Esplora soluzioni**, scegliere il nodo di progetto SharePoint, chiamata ScriptHelpers **Clinic**.
 
-3.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+3. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-4.  In presenza di una **Visual C#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** elemento.
+4. In presenza di una **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** elemento.
 
-5.  Nel **modelli** riquadro, scegliere **ricevitore di eventi**, denominarlo **il nome TestEventReceiver1**e quindi scegliere il **OK** pulsante.
+5. Nel **modelli** riquadro, scegliere **ricevitore di eventi**, denominarlo **il nome TestEventReceiver1**e quindi scegliere il **OK** pulsante.
 
      Il **Personalizzazione guidata SharePoint** viene visualizzata.
 
-6.  Nel **quale tipo di ricevitore di eventi da?** casella di riepilogo **eventi elementi elenco**.
+6. Nel **quale tipo di ricevitore di eventi da?** casella di riepilogo **eventi elementi elenco**.
 
-7.  Nel **selezionare l'elemento deve essere l'origine dell'evento?** elenco, scegliere **i pazienti (Clinic\Patients)**.
+7. Nel **selezionare l'elemento deve essere l'origine dell'evento?** elenco, scegliere **i pazienti (Clinic\Patients)**.
 
-8.  Nel **gestire gli eventi seguenti** , selezionare la casella di controllo accanto a **è stato aggiunto un elemento**e quindi scegliere il **fine** pulsante.
+8. Nel **gestire gli eventi seguenti** , selezionare la casella di controllo accanto a **è stato aggiunto un elemento**e quindi scegliere il **fine** pulsante.
 
      Il file di codice per il nuovo ricevitore di eventi contiene un singolo metodo denominato `ItemAdded`. Nel passaggio successivo, si aggiungerà codice al metodo in modo che ogni contatto verrà denominato Scott Brown per impostazione predefinita.
 
