@@ -12,18 +12,18 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f52a0cd8b0cd28ce19e4ace9f7bc80bdafe79dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051563"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Due esempi mostrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
--   L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **C#** nell'elenco delle lingue e quindi fare clic su **Debugger**.  
+- L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco delle lingue e quindi fare clic su **Debugger**.  
   
--   Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere la pagina nel sito Web Microsoft relativa all' [Esempio di motore di Debug di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).
+- Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere la pagina nel sito Web Microsoft relativa all' [Esempio di motore di Debug di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).

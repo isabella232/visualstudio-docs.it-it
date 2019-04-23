@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377660b32f8edbb26e8a062d55ee152132f7f587
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052116"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Procedura dettagliata: Implementare i frammenti di codice
 È possibile creare frammenti di codice e includerli in un'estensione dell'editor in modo che gli utenti dell'estensione possono aggiungere il proprio codice.
@@ -109,33 +109,33 @@ ms.locfileid: "56707081"
 
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Per registrare i frammenti di codice per un GUID specifico
 
-1.  Aprire il **CompletionTest** progetto. Per informazioni su come creare il progetto, vedere [procedura dettagliata: Visualizzare il completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).
+1. Aprire il **CompletionTest** progetto. Per informazioni su come creare il progetto, vedere [procedura dettagliata: Visualizzare il completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md).
 
-2.  Nel progetto, aggiungere riferimenti agli assembly seguenti:
+2. Nel progetto, aggiungere riferimenti agli assembly seguenti:
 
-    -   Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    -   Microsoft.VisualStudio.TextManager.Interop.8.0
+    - Microsoft.VisualStudio.TextManager.Interop.8.0
 
-    -   microsoft.msxml
+    - microsoft.msxml
 
-3.  Nel progetto, aprire il **vsixmanifest** file.
+3. Nel progetto, aprire il **vsixmanifest** file.
 
-4.  Assicurarsi che il **Assets** scheda contiene un **VsPackage** tipo e che il contenuto **progetto** è impostato sul nome del progetto.
+4. Assicurarsi che il **Assets** scheda contiene un **VsPackage** tipo e che il contenuto **progetto** è impostato sul nome del progetto.
 
-5.  Selezionare il progetto CompletionTest e nella finestra Proprietà impostare **generare Pkgdef File** al **true**. Salvare il progetto.
+5. Selezionare il progetto CompletionTest e nella finestra Proprietà impostare **generare Pkgdef File** al **true**. Salvare il progetto.
 
-6.  Aggiungere un valore statico `SnippetUtilities` classe al progetto.
+6. Aggiungere un valore statico `SnippetUtilities` classe al progetto.
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7.  Nella classe SnippetUtilities, definire un GUID e assegnargli il valore usato nel *SnippetsIndex.xml* file.
+7. Nella classe SnippetUtilities, definire un GUID e assegnargli il valore usato nel *SnippetsIndex.xml* file.
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8.  Aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> per il `TestCompletionHandler` classe. Questo attributo può essere aggiunto a qualsiasi classe (non statico) interni o pubblici nel progetto. (Potrebbe essere necessario aggiungere un `using` istruzione dello spazio dei nomi Microsoft.VisualStudio.Shell.)
+8. Aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> per il `TestCompletionHandler` classe. Questo attributo può essere aggiunto a qualsiasi classe (non statico) interni o pubblici nel progetto. (Potrebbe essere necessario aggiungere un `using` istruzione dello spazio dei nomi Microsoft.VisualStudio.Shell.)
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
@@ -147,14 +147,14 @@ ms.locfileid: "56707081"
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Per aggiungere il comando Inserisci frammento di codice per il menu di scelta rapida
 
-1.  Aprire il `TestCompletionCommandHandler` file di classe.
+1. Aprire il `TestCompletionCommandHandler` file di classe.
 
      Poiché questa classe implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, è possibile attivare la **Inserisci frammento** comando il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (metodo). Prima di abilitare il comando, verificare che questo metodo non è in corso chiamato all'interno di una funzione di automazione perché quando il **Inserisci frammento di codice** si fa clic sul comando, viene visualizzata l'interfaccia utente di selezione frammento di codice (UI).
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2.  Compilare ed eseguire il progetto. Nell'istanza sperimentale, aprire un file con il *zzz* estensione del nome file e quindi fare doppio clic su un punto qualsiasi in esso. Il **Inserisci frammento di codice** comando deve comparire nel menu di scelta rapida.
+2. Compilare ed eseguire il progetto. Nell'istanza sperimentale, aprire un file con il *zzz* estensione del nome file e quindi fare doppio clic su un punto qualsiasi in esso. Il **Inserisci frammento di codice** comando deve comparire nel menu di scelta rapida.
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>Implementare l'espansione del frammento nell'interfaccia utente selezione frammento di codice
  In questa sezione viene illustrato come implementare l'espansione dei frammenti di codice in modo che la selezione frammento di codice dell'interfaccia utente è visualizzato quando **Inserisci frammento di codice** si fa clic sul menu di scelta rapida. Un frammento di codice viene espanso anche quando un utente digita il collegamento del frammento di codice e quindi preme **scheda**.
@@ -165,42 +165,42 @@ ms.locfileid: "56707081"
 
 #### <a name="to-implement-snippet-expansion"></a>Per implementare l'espansione del frammento
 
-1.  Il file che contiene il `TestCompletionCommandHandler` classe, aggiungere il codice seguente `using` istruzioni.
+1. Il file che contiene il `TestCompletionCommandHandler` classe, aggiungere il codice seguente `using` istruzioni.
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2.  Verificare i `TestCompletionCommandHandler` implementano il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfaccia.
+2. Verificare i `TestCompletionCommandHandler` implementano il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interfaccia.
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3.  Nel `TestCompletionCommandHandlerProvider` classe, importare il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
+3. Nel `TestCompletionCommandHandlerProvider` classe, importare il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4.  Aggiungere alcuni campi privati per le interfacce di espansione di codice e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
+4. Aggiungere alcuni campi privati per le interfacce di espansione di codice e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
 
-5.  Nel costruttore del `TestCompletionCommandHandler` classe, impostare i campi seguenti.
+5. Nel costruttore del `TestCompletionCommandHandler` classe, impostare i campi seguenti.
 
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6.  Per visualizzare la selezione frammento di codice quando l'utente fa clic il **Inserisci frammento** comando, aggiungere il codice seguente al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (metodo). (Per rendere più leggibile, questa spiegazione di `Exec()`codice che viene usato per il completamento delle istruzioni non vengono visualizzati; in alternativa, i blocchi di codice vengono aggiunti al metodo esistente.) Aggiungere il blocco di codice seguente dopo il codice che verifica la presenza di un carattere.
+6. Per visualizzare la selezione frammento di codice quando l'utente fa clic il **Inserisci frammento** comando, aggiungere il codice seguente al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (metodo). (Per rendere più leggibile, questa spiegazione di `Exec()`codice che viene usato per il completamento delle istruzioni non vengono visualizzati; in alternativa, i blocchi di codice vengono aggiunti al metodo esistente.) Aggiungere il blocco di codice seguente dopo il codice che verifica la presenza di un carattere.
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7.  Se un frammento di codice include campi che possono essere esplorati, la sessione di espansione è tenuta aperta fino a quando l'espansione è accettata in modo esplicito. Se il frammento di codice non dispone di alcun campo, la sessione viene chiusa e viene restituita come `null` dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> (metodo). Nel <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodo, dopo la selezione frammento di codice dell'interfaccia utente che è stato aggiunto nel passaggio precedente, aggiungere il codice seguente per gestire la navigazione di frammento di codice (quando l'utente preme **scheda** oppure **MAIUSC** + **Scheda** dopo l'inserimento del frammento).
+7. Se un frammento di codice include campi che possono essere esplorati, la sessione di espansione è tenuta aperta fino a quando l'espansione è accettata in modo esplicito. Se il frammento di codice non dispone di alcun campo, la sessione viene chiusa e viene restituita come `null` dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> (metodo). Nel <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodo, dopo la selezione frammento di codice dell'interfaccia utente che è stato aggiunto nel passaggio precedente, aggiungere il codice seguente per gestire la navigazione di frammento di codice (quando l'utente preme **scheda** oppure **MAIUSC** + **Scheda** dopo l'inserimento del frammento).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8.  Per inserire il frammento di codice quando l'utente digita la scelta rapida corrispondente e quindi preme **della scheda**, aggiungere il codice per il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (metodo). Il metodo privato che inserisce il frammento di codice verrà visualizzato in un passaggio successivo. Aggiungere il codice seguente dopo il codice di navigazione che è stato aggiunto nel passaggio precedente.
+8. Per inserire il frammento di codice quando l'utente digita la scelta rapida corrispondente e quindi preme **della scheda**, aggiungere il codice per il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (metodo). Il metodo privato che inserisce il frammento di codice verrà visualizzato in un passaggio successivo. Aggiungere il codice seguente dopo il codice di navigazione che è stato aggiunto nel passaggio precedente.
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -223,13 +223,13 @@ ms.locfileid: "56707081"
 ## <a name="build-and-test-code-snippet-expansion"></a>Compilare e testare l'espansione dei frammenti di codice
  È possibile verificare il funzionamento di espansione del frammento di codice nel progetto.
 
-1.  Compilare la soluzione. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
+1. Compilare la soluzione. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
 
-2.  Aprire un file di testo e digitare un testo.
+2. Aprire un file di testo e digitare un testo.
 
-3.  Fare doppio clic in una posizione nel testo e quindi fare clic su **Inserisci frammento di codice**.
+3. Fare doppio clic in una posizione nel testo e quindi fare clic su **Inserisci frammento di codice**.
 
-4.  Selezione frammento di codice dell'interfaccia utente deve essere visualizzato con una finestra popup con la dicitura **testare i campi di sostituzione**. Fare doppio clic sulla finestra popup.
+4. Selezione frammento di codice dell'interfaccia utente deve essere visualizzato con una finestra popup con la dicitura **testare i campi di sostituzione**. Fare doppio clic sulla finestra popup.
 
      Deve essere inserito il frammento di codice seguente.
 
@@ -240,10 +240,10 @@ ms.locfileid: "56707081"
 
      Non premere **invio** oppure **Esc**.
 
-5.  Premere **della scheda** e **MAIUSC**+**scheda** alternare tra "first" e "secondo".
+5. Premere **della scheda** e **MAIUSC**+**scheda** alternare tra "first" e "secondo".
 
-6.  Accettare l'inserimento premendo **invio** oppure **Esc**.
+6. Accettare l'inserimento premendo **invio** oppure **Esc**.
 
-7.  In un'altra parte del testo, digitare "test" e quindi premere **scheda**. Poiché "test" è il collegamento del frammento di codice, il frammento di codice deve essere inserito nuovamente.
+7. In un'altra parte del testo, digitare "test" e quindi premere **scheda**. Poiché "test" è il collegamento del frammento di codice, il frammento di codice deve essere inserito nuovamente.
 
 ## <a name="next-steps"></a>Passaggi successivi

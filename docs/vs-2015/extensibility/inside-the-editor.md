@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056042"
 ---
 # <a name="inside-the-editor"></a>Componenti e funzionalità dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ L'editor è composto da un numero di sottosistemi diversi, che sono pensati per 
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Panoramica dei sottosistemi  
+## <a name="overview"></a> Panoramica dei sottosistemi  
   
 ### <a name="text-model-subsystem"></a>Sottosistema di modello testo  
  Il sottosistema di modello di testo è responsabile per la rappresentazione di testo e consentendo la manipolazione. Il sottosistema di modello di testo contiene il <xref:Microsoft.VisualStudio.Text.ITextBuffer> interfaccia, che descrive la sequenza di caratteri che deve essere visualizzato dall'editor. Questo testo può essere modificato, rilevato e manipolato in caso contrario, in molti modi. Il modello di testo fornisce anche i tipi per gli aspetti seguenti:  
@@ -76,7 +76,7 @@ L'editor è composto da un numero di sottosistemi diversi, che sono pensati per 
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Informazioni dettagliate sul modello di testo e la visualizzazione di testo  
   
-###  <a name="textmodel"></a> Il modello di testo  
+### <a name="textmodel"></a> Il modello di testo  
  Il sottosistema di modello di testo è costituito dai raggruppamenti diversi dei tipi di testo. Sono inclusi il buffer di testo, gli snapshot di testo e intervalli di testo.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>I buffer di testo e gli snapshot di testo  
@@ -141,7 +141,7 @@ abXefYj
  È possibile ottenere la posizione di un punto di rilevamento o l'intervallo di un intervallo di rilevamento per tutti gli snapshot del buffer di testo a cui appartengono. Track point e intervalli di rilevamento può fare in modo sicuro riferimento da qualsiasi thread.  
   
 #### <a name="content-types"></a>Tipi di contenuto  
- Tipi di contenuto sono un meccanismo per definire tipi diversi di contenuto. Un tipo di contenuto può essere un tipo di file, ad esempio "text", "code" o "binary" o un tipo di tecnologia, ad esempio "xml", "vb" o "C#". Ad esempio, la parola "using" è una parola chiave in C# e Visual Basic, ma non in altri linguaggi di programmazione. Pertanto, la definizione di questa parola chiave sarebbe limitata per i tipi di contenuto "C#" e "vb".  
+ Tipi di contenuto sono un meccanismo per definire tipi diversi di contenuto. Un tipo di contenuto può essere un tipo di file, ad esempio "text", "code" o "binary" o un tipo di tecnologia, ad esempio "xml", "vb" o "c#". Ad esempio, la parola "using" è una parola chiave in c# e Visual Basic, ma non in altri linguaggi di programmazione. Pertanto, la definizione di questa parola chiave sarebbe limitata per i tipi di contenuto "c#" e "vb".  
   
  I tipi di contenuto vengono utilizzati come filtro per le aree di controllo e gli altri elementi dell'editor. Molte funzionalità dell'editor e punti di estensione definiti per ogni tipo di contenuto; colorazione del testo, ad esempio, è diversa per i file di testo normale, i file XML e file del codice sorgente Visual Basic. I buffer di testo sono in genere assegnati un tipo di contenuto quando vengono creati e il tipo di contenuto di un buffer di testo può essere modificato.  
   
@@ -149,7 +149,7 @@ abXefYj
   
  Gli sviluppatori possono definire i propri tipi di contenuto e registrarli utilizzando il <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Molte funzionalità dell'editor possono essere definite rispetto al tipo di contenuto specifico tramite la <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Margini dell'editor, le aree di controllo e i gestori del mouse, ad esempio, possono essere definiti in modo che si applicano solo agli editor che consentono di visualizzare i tipi di contenuto specifici.  
   
-###  <a name="textview"></a> Visualizzazione di testo.  
+### <a name="textview"></a> Visualizzazione di testo.  
  La parte di visualizzazione del modello model view controller (MVC) definisce la visualizzazione di testo, la formattazione della visualizzazione, elementi grafici, ad esempio la barra di scorrimento e il punto di inserimento. Tutti gli elementi di presentazione dell'editor di Visual Studio sono basati su WPF.  
   
 #### <a name="text-views"></a>Visualizzazioni di testo  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>Funzionalità dell'editor  
  Le funzionalità dell'editor sono progettate in modo che la definizione della funzionalità è separata dalla relativa implementazione. L'editor aggiunge le funzionalità seguenti:  
   
--   Classificatori e i tag  
+- Classificatori e i tag  
   
--   Aree di controllo  
+- Aree di controllo  
   
--   Proiezione  
+- Proiezione  
   
--   struttura  
+- struttura  
   
--   Associazioni del mouse e la chiave  
+- Associazioni del mouse e la chiave  
   
--   Operazioni e primitive  
+- Operazioni e primitive  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Classificatori e i tag  
+### <a name="tagsandclassifiers"></a> Classificatori e i tag  
  I tag sono indicatori che sono associati a un intervallo di testo. Possano essere visualizzati in diversi modi, ad esempio, con colorazione del testo, sottolineature, elementi grafici o i popup. I classificatori sono un tipo di tag.  
   
  Altri tipi di tag sono <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> per l'evidenziazione del testo, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> per la struttura, e <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> per errori di compilazione.  
@@ -213,13 +213,13 @@ abXefYj
  Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> è un meccanismo che suddivide il testo in un set di classificazioni. Classificatori devono essere definiti per i tipi di contenuto specifici e creare un'istanza per i buffer di testo specifico. I client devono implementare <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> per partecipare alla classificazione di testo.  
   
 #### <a name="classifier-aggregators"></a>Aggregatori di classificazione  
- Un aggregatore di classificatore è un meccanismo che combina tutti i classificatori per buffer di uno testo in un solo set di classificazioni. Ad esempio, un classificatore C# sia un classificatore di lingua inglese è stato possibile creare classificazioni su un commento in un file C#. Prendere in considerazione questo commento:  
+ Un aggregatore di classificatore è un meccanismo che combina tutti i classificatori per buffer di uno testo in un solo set di classificazioni. Ad esempio, un classificatore c# sia un classificatore di lingua inglese è stato possibile creare classificazioni su un commento in un file c#. Prendere in considerazione questo commento:  
   
 ```  
 // This method produces a classifier  
 ```  
   
- Un classificatore di C# potrebbe assegnare un'etichetta all'intero intervallo come commento e la funzione di classificazione in lingua inglese può classificare "produce" come "verbo" e "method" come "sostantivo". L'aggregatore genera un set di classificazioni non sovrapposti e il tipo del set si basa su tutti i contributi.  
+ Un classificatore di c# potrebbe assegnare un'etichetta all'intero intervallo come commento e la funzione di classificazione in lingua inglese può classificare "produce" come "verbo" e "method" come "sostantivo". L'aggregatore genera un set di classificazioni non sovrapposti e il tipo del set si basa su tutti i contributi.  
   
  Un aggregatore di classificatore è anche un classificatore perché suddivide il testo in un set di classificazioni. Aggregatore di classificatori garantisce inoltre che non esistono Nessun classificazioni sovrapposte e che le classificazioni sono ordinate. Classificatori singoli sono liberi di restituire qualsiasi set di classificazioni degli aggiornamenti, in qualsiasi ordine e sovrapposti in alcun modo.  
   
@@ -230,15 +230,15 @@ abXefYj
   
  Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> è un mapping da un tipo di classificazione per un set di proprietà di formattazione del testo. L'implementazione della mappa di formato nell'editor gestisce tutte le esportazioni dei formati di classificazione.  
   
-###  <a name="adornments"></a> Aree di controllo  
+### <a name="adornments"></a> Aree di controllo  
  Le aree di controllo sono effetti grafici che non sono direttamente correlati al tipo di carattere e colori dei caratteri nella visualizzazione di testo. Ad esempio, la sottolineatura sottolineatura ondulata rossa che consente di contrassegnare il codice non di compilazione in molti linguaggi di programmazione è un'area di controllo incorporato, e le descrizioni comando sono le aree di controllo popup. Le aree di controllo sono derivati da <xref:System.Windows.UIElement> e implementare <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Due tipi specializzati di tag dell'area di controllo sono le <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, per le aree di controllo che occupano lo stesso spazio come testo in una vista, e il <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, per la sottolineatura a zigzag.  
   
  Le aree di controllo incorporate sono immagini che fanno parte della visualizzazione di testo formattato. Essi sono organizzati in diversi livelli di Z order. Esistono tre livelli predefiniti, come indicato di seguito: testo, il punto di inserimento e la selezione. Tuttavia, gli sviluppatori possono definire più livelli e inserirli in ordine di uno rispetto a altro. I tre tipi di aree di controllo incorporate sono le aree di controllo relativo al testo (che lo spostamento quando si sposta il testo e vengono eliminati quando viene eliminato il testo), le aree di controllo relativo alla visualizzazione, che hanno a che fare con parti non di testo della visualizzazione, e inclusi nel controllo proprietario aree di controllo (i per gli sviluppatori devono gestire la loro posizione).  
   
  Le aree di controllo popup sono immagini che vengono visualizzati in una finestra piccola sopra la visualizzazione di testo, ad esempio, le descrizioni comandi.  
   
-###  <a name="projection"></a> Proiezione  
- Proiezione è una tecnica per la costruzione di un tipo diverso di buffer di testo che non archivia effettivamente il testo, ma invece Combina testo dagli altri buffer di testo. Ad esempio, un buffer di proiezione utilizzabile per concatenare il testo di due altri buffer e presentare i risultati come se fosse in un solo buffer o per nascondere le parti del testo in un buffer. Un buffer di proiezione può fungere da buffer di origine a un altro buffer di proiezione. È possibile costruire un set di buffer che sono correlati tramite proiezione per ridisporre il testo in molti modi diversi. (Un set di questo tipo è noto anche come un *grafico del buffer*.) La funzionalità di struttura di testo di Visual Studio viene implementata usando un buffer di proiezione per nascondere il testo compresso e l'editor di Visual Studio per le pagine ASP.NET utilizza proiezione per il supporto incorporati linguaggi quali Visual Basic e C#.  
+### <a name="projection"></a> Proiezione  
+ Proiezione è una tecnica per la costruzione di un tipo diverso di buffer di testo che non archivia effettivamente il testo, ma invece Combina testo dagli altri buffer di testo. Ad esempio, un buffer di proiezione utilizzabile per concatenare il testo di due altri buffer e presentare i risultati come se fosse in un solo buffer o per nascondere le parti del testo in un buffer. Un buffer di proiezione può fungere da buffer di origine a un altro buffer di proiezione. È possibile costruire un set di buffer che sono correlati tramite proiezione per ridisporre il testo in molti modi diversi. (Un set di questo tipo è noto anche come un *grafico del buffer*.) La funzionalità di struttura di testo di Visual Studio viene implementata usando un buffer di proiezione per nascondere il testo compresso e l'editor di Visual Studio per le pagine ASP.NET utilizza proiezione per il supporto incorporati linguaggi quali Visual Basic e c#.  
   
  Un' <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> viene creato usando <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Rappresentato da una sequenza ordinata di un buffer di proiezione <xref:Microsoft.VisualStudio.Text.ITrackingSpan> gli oggetti che sono note come *intervalli di origine*. Il contenuto di questi intervalli viene presentato come una sequenza di caratteri. I buffer di testo da cui vengono disegnati gli intervalli di origine vengono denominati *buffer di origine*. I client di un buffer di proiezione non sono necessario tenere presente che differisce da un buffer di testo normale.  
   
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Gli eventi e i buffer di proiezione  
  Quando viene modificato un buffer di proiezione, le modifiche vengono inviate dal buffer di proiezione per i buffer che dipendono da esso. Dopo che tutti i buffer sono stati modificati, vengono generati gli eventi di modifica del buffer, a partire con il buffer più in basso.  
   
-###  <a name="outlining"></a> La struttura  
+### <a name="outlining"></a> La struttura  
  La struttura è la possibilità di espandere o comprimere diversi blocchi di testo in una visualizzazione di testo. La struttura viene definita come una sorta di <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, nello stesso modo in sono definite le aree di controllo. Oggetto <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> è un tag che definisce un'area di testo che può essere espansi o compressi. Per usare la struttura, è necessario importare il <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> per ottenere un <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Il gestore della struttura enumera comprime e si espande i blocchi diversi, rappresentati come <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> oggetti e genera eventi di conseguenza.  
   
-###  <a name="mousebindings"></a> Associazioni del mouse  
+### <a name="mousebindings"></a> Associazioni del mouse  
  Le associazioni del mouse collegano spostamenti del mouse a comandi diversi. Vengono definite le associazioni del mouse con un' <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, e tasti di scelta rapida vengono definiti utilizzando un <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. Il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automaticamente crea un'istanza di tutte le associazioni e li connette agli eventi del mouse nella visualizzazione.  
   
  Il <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> interfaccia contiene i gestori di eventi di pre-elaborazione e post-elaborazione per gli eventi di mouse diversa. Handle uno degli eventi, è possibile ignorare alcuni dei metodi in <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Operazioni di editor  
+### <a name="editoroperations"></a> Operazioni di editor  
  Editor operazioni possono essere utilizzate per automatizzare l'interazione con l'editor, per la creazione di script o altri scopi. È possibile importare il <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> alle operazioni di accesso su un determinato <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. È quindi possibile utilizzare questi oggetti per modificare la selezione, scorrere la visualizzazione o spostare il punto di inserimento in diverse parti della visualizzazione.  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  Completamento delle istruzioni, supporto per la firma (detta anche informazioni sul parametro), informazioni rapide e lampadine supportate da IntelliSense.  
   
  Completamento delle istruzioni fornisce elenchi popup dei completamenti possibili per i nomi dei metodi, gli elementi XML e altri elementi di codice o markup. In generale, un movimento dell'utente richiama una sessione di completamento. La sessione viene visualizzato l'elenco di completamenti possibili e l'utente può selezionare uno o ignorare l'elenco. Il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> è responsabile della creazione e l'attivazione di <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. Il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> calcola il <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> degli elementi di completamento per la sessione.  

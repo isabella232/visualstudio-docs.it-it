@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050570"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,20 +52,20 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Per rinominare Class1.vb e aggiungere Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Class1.vb** e scegliere **Rinomina** dal menu di scelta rapida.  
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Class1.vb** e scegliere **Rinomina** dal menu di scelta rapida.  
   
-2.  Sostituire Class1.vb con un nome significativo, ad esempio DebuggerSide.vb.  
+2. Sostituire Class1.vb con un nome significativo, ad esempio DebuggerSide.vb.  
   
     > [!NOTE]
     >  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la dichiarazione di classe viene modificata automaticamente in base al nuovo nome di file DebuggerSide.vb.  
   
-3.  In **Esplora soluzioni** fare clic son il pulsante destro del mouse su **My First Visualizer** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
+3. In **Esplora soluzioni** fare clic son il pulsante destro del mouse su **My First Visualizer** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
   
-4.  Nella finestra di dialogo **Aggiungi riferimento** nella scheda **.NET** fare clic su Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+4. Nella finestra di dialogo **Aggiungi riferimento** nella scheda **.NET** fare clic su Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
-6.  In DebuggerSide.vb aggiungere l'istruzione seguente alle istruzioni `Imports`:  
+6. In DebuggerSide.vb aggiungere l'istruzione seguente alle istruzioni `Imports`:  
   
     ```  
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
@@ -105,13 +105,13 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-add-systemwindowsforms"></a>Per aggiungere System.Windows.Forms  
   
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
   
-2.  Nella finestra di dialogo **Aggiungi riferimento** nella scheda **.NET** fare clic su **System.Windows.Forms**.  
+2. Nella finestra di dialogo **Aggiungi riferimento** nella scheda **.NET** fare clic su **System.Windows.Forms**.  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
-4.  In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `Imports`:  
+4. In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `Imports`:  
   
     ```  
     Imports System.Windows.Forms  
@@ -122,7 +122,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Per visualizzare l'output del visualizzatore in una finestra di dialogo  
   
-1.  Nel metodo `Show` aggiungere la riga di codice seguente:  
+1. Nel metodo `Show` aggiungere la riga di codice seguente:  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -130,20 +130,20 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
      Questo codice di esempio non include la gestione degli errori. In un vero visualizzatore o in un qualsiasi altro tipo di applicazione è consigliabile includere la gestione degli errori.  
   
-2.  Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
 ## <a name="add-the-necessary-attribute"></a>Aggiungere l'attributo necessario  
  Il codice sul lato debugger è stato completato. È tuttavia necessario eseguire un altro passaggio, ovvero specificare l'attributo che indica al lato dell'oggetto del debug la raccolta di classi che comprende il visualizzatore.  
   
 #### <a name="to-add-the-debugee-side-code"></a>Per aggiungere il codice del lato oggetto del debug  
   
-1.  Aggiungere il codice di attributo seguente a DebuggerSide.vb, dopo le istruzioni `Imports` ma prima di `namespace MyFirstVisualizer`:  
+1. Aggiungere il codice di attributo seguente a DebuggerSide.vb, dopo le istruzioni `Imports` ma prima di `namespace MyFirstVisualizer`:  
   
     ```  
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
 ## <a name="create-a-test-harness"></a>Creare un test harness  
  A questo punto il visualizzatore è pronto. Se la procedura è stata completata in modo corretto, è possibile compilare il visualizzatore e installarlo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Prima di installare un visualizzatore in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è tuttavia consigliabile testarlo per assicurarsi che funzioni in modo corretto. Di seguito viene descritto come creare un test harness per eseguire il visualizzatore senza installarlo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -177,17 +177,17 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Per aggiungere riferimenti necessari a MyTestConsole  
   
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
   
-2.  Nella finestra di dialogo **Aggiungi riferimento** nella scheda **.NET** fare clic su Microsoft.VisualStudio.DebuggerVisualizers.  
+2. Nella finestra di dialogo **Aggiungi riferimento** nella scheda **.NET** fare clic su Microsoft.VisualStudio.DebuggerVisualizers.  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
-4.  Fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere nuovamente **Aggiungi riferimento**.  
+4. Fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere nuovamente **Aggiungi riferimento**.  
   
-5.  Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **Progetti** e selezionare MyFirstVisualizer.  
+5. Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **Progetti** e selezionare MyFirstVisualizer.  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Completare il test harness ed eseguire il test del visualizzatore  
  A questo punto verrà aggiunto il codice per completare il test harness.  

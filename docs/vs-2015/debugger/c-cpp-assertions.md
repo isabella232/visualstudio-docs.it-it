@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5aa51fdf7d0c2537de3c301efa7efb7fe6ce96f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 759376a6682287cbe41d4d1dc13666c5a540f8e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050557"
 ---
 # <a name="cc-assertions"></a>Asserzioni C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Un'istruzione di asserzione specifica una condizione che si prevede abbia valore
 
   È possibile utilizzare le asserzioni per intercettare gli errori per la logica, controllare i risultati di un'operazione e testare le condizioni di errore che avrebbero dovuto essere gestite.  
 
-##  <a name="BKMK_In_this_topic"></a> In questo argomento  
+## <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Funzionano delle asserzioni](#BKMK_How_assertions_work)  
 
  [Asserzioni nelle build di Debug e rilascio](#BKMK_Assertions_in_Debug_and_Release_builds)  
@@ -76,17 +76,17 @@ Un'istruzione di asserzione specifica una condizione che si prevede abbia valore
 
 - [Errori di ricerca non gestita](#BKMK_Testing_error_conditions_)  
 
-##  <a name="BKMK_How_assertions_work"></a> Funzionano delle asserzioni  
+## <a name="BKMK_How_assertions_work"></a> Funzionano delle asserzioni  
  Quando il debugger viene interrotto a causa di un'asserzione di libreria di runtime MFC o C, quindi se l'origine è disponibile, il debugger passa al punto nel file di origine in cui si è verificata l'asserzione. Viene visualizzato il messaggio di asserzione in entrambe le [finestra di Output](../ide/reference/output-window.md) e il **asserzione non riuscita** nella finestra di dialogo. È possibile copiare il messaggio dell'asserzione dal **Output** finestra da una finestra di testo se si desidera salvarlo per riferimento futuro. Il **Output** finestra può contenere anche altri messaggi di errore. Esaminare i messaggi con attenzione, perché forniscono indizi sulla causa dell'errore di asserzione.  
 
  Usare le asserzioni per rilevare gli errori durante lo sviluppo. Come regola, usare un'asserzione per ogni presupposto. Ad esempio, se si presuppone che un argomento non è NULL, usare un'asserzione per verificare questa ipotesi.  
 
  [In questo argomento](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Asserzioni nelle build di Debug e rilascio  
+## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Asserzioni nelle build di Debug e rilascio  
  Le istruzioni di asserzione compilare solo se `_DEBUG` è definito. In caso contrario, il compilatore considera asserzioni come istruzioni null. Di conseguenza, le istruzioni di asserzione è previsto alcun overhead o le prestazioni di costo nella versione finale del programma e consentono di evitare di usare `#ifdef` direttive.  
 
-##  <a name="BKMK_Side_effects_of_using_assertions"></a> Effetti collaterali dell'uso di asserzioni  
+## <a name="BKMK_Side_effects_of_using_assertions"></a> Effetti collaterali dell'uso di asserzioni  
  Quando si aggiungono asserzioni nel codice, verificare che le asserzioni sono privi di effetti collaterali. Ad esempio, prendere in considerazione l'asserzione seguente che modifica il `nM` valore:  
 
 ```  
@@ -107,7 +107,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
  [In questo argomento](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_CRT_assertions"></a> Asserzioni di CRT  
+## <a name="BKMK_CRT_assertions"></a> Asserzioni di CRT  
  CRTDBG. H definisce i [macro Assert e ASSERTE](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) per il controllo delle asserzioni.  
 
 |   Macro    |                                             Risultato                                              |
@@ -159,7 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 
  [In questo argomento](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_MFC_assertions"></a> Asserzioni MFC  
+## <a name="BKMK_MFC_assertions"></a> Asserzioni MFC  
  MFC definisce il [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) macro per il controllo delle asserzioni. Definisce anche il `MFC ASSERT_VALID` e `CObject::AssertValid` metodi per verificare lo stato interno di un `CObject`-oggetto derivato.  
 
  Se l'argomento di MFC `ASSERT` macro restituisce zero o false, la macro interrompe l'esecuzione del programma e avvisa l'utente; in caso contrario, l'esecuzione continua.  
@@ -181,7 +181,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 
  Il `ASSERT` macro mancata generazione di codice nella versione di rilascio. Se è necessario valutare l'espressione nella versione di rilascio, usare il [VERIFY](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) macro invece di ASSERT.  
 
-###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> ASSERT_VALID e CObject:: AssertValid  
+### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> ASSERT_VALID e CObject:: AssertValid  
  Il [CObject:: AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) metodo fornisce controlli di runtime dello stato interno di un oggetto. Sebbene non sia necessario eseguire l'override `AssertValid` quando si deriva la classe da `CObject`, si può rendere più affidabili la classe in questo modo. `AssertValid` deve eseguire asserzioni in tutte le variabili membro dell'oggetto per verificare che contengano i valori validi. Ad esempio, è necessario verificare che le variabili membro di puntatore non sono NULL.  
 
  Nell'esempio seguente viene illustrato come dichiarare un `AssertValid` funzione:  
@@ -266,14 +266,14 @@ void CMyData::AssertValid( ) const
 
  Questo è un meccanismo efficace quando si compila per il debug. Quando si compila in seguito per la versione, il meccanismo viene disattivato automaticamente.  
 
-###  <a name="BKMK_Limitations_of_AssertValid"></a> Limitazioni di AssertValid  
+### <a name="BKMK_Limitations_of_AssertValid"></a> Limitazioni di AssertValid  
  Generazione di un'asserzione indica che l'oggetto non è corretto e l'esecuzione verrà interrotta. Tuttavia, una mancanza di asserzione indica solo che è stato rilevato alcun problema, ma l'oggetto non è garantito a essere valido.  
 
  [In questo argomento](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_Using_assertions"></a> Utilizzo di asserzioni  
+## <a name="BKMK_Using_assertions"></a> Utilizzo di asserzioni  
 
-###  <a name="BKMK_Catching_logic_errors"></a> Rilevamento di errori per la logica  
+### <a name="BKMK_Catching_logic_errors"></a> Rilevamento di errori per la logica  
  È possibile impostare un'asserzione a una condizione che deve essere true in base alla logica del programma. L'asserzione non ha alcun effetto a meno che non si verifica un errore per la logica.  
 
  Ad esempio, si supponga che è una simulazione molecole gas in un contenitore, mentre la variabile `numMols` rappresenta il numero totale delle molecole. Questo numero non può essere minore di zero, pertanto è possibile includere un'istruzione di asserzione MFC simile al seguente:  
@@ -293,7 +293,7 @@ _ASSERT(numMols >= 0);
 
  [In questo argomento](#BKMK_In_this_topic)  
 
-###  <a name="BKMK_Checking_results_"></a> Verifica i risultati  
+### <a name="BKMK_Checking_results_"></a> Verifica i risultati  
  Le asserzioni risultano utili per operazioni quali i risultati non sono evidenti da un esame visivo rapido di test.  
 
  Ad esempio, si consideri il codice seguente, che aggiorna la variabile `iMols` basata sul contenuto dell'elenco collegato a cui punta `mols`:  
@@ -316,7 +316,7 @@ _ASSERT(iMols<=numMols); // CRT version
 
  [In questo argomento](#BKMK_In_this_topic)  
 
-###  <a name="BKMK_Testing_error_conditions_"></a> Errori di ricerca non gestita  
+### <a name="BKMK_Testing_error_conditions_"></a> Errori di ricerca non gestita  
  È possibile usare le asserzioni per verificare le condizioni di errore in un punto nel codice in cui gli eventuali errori devono sono stati gestiti. Nell'esempio seguente, una routine grafica restituisce un codice di errore o zero per l'esito positivo.  
 
 ```  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052532"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding complesso in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding complesso in un progetto a livello di documento. È possibile associare più celle in un foglio di lavoro di Microsoft Office Excel a campi nel database Northwind di SQL Server.
@@ -40,20 +40,20 @@ ms.locfileid: "56643106"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Accesso a un server con il database di esempio Northwind di SQL Server.
+- Accesso a un server con il database di esempio Northwind di SQL Server.
 
--   Autorizzazioni per leggere e scrivere nel database di SQL Server.
+- Autorizzazioni per leggere e scrivere nel database di SQL Server.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  Il primo passaggio consiste nel creare un progetto cartella di lavoro di Excel.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1.  Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding complesso**. Nella procedura guidata, selezionare **creare un nuovo documento**.
+1. Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding complesso**. Nella procedura guidata, selezionare **creare un nuovo documento**.
 
      Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643106"
 
 #### <a name="to-add-a-list-object"></a>Per aggiungere un oggetto elenco
 
-1.  Verificare che il **My Binding.xlsx dati complessi** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
+1. Verificare che il **My Binding.xlsx dati complessi** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
 
-2.  Aprire il **Zdroje dat** finestra e selezionare il **dipendenti** nodo.
+2. Aprire il **Zdroje dat** finestra e selezionare il **dipendenti** nodo.
 
-3.  Fare clic sulla freccia giù visualizzata.
+3. Fare clic sulla freccia giù visualizzata.
 
-4.  Selezionare **ListObject** nell'elenco a discesa.
+4. Selezionare **ListObject** nell'elenco a discesa.
 
-5.  Trascinare il **dipendenti** alla cella **A6**.
+5. Trascinare il **dipendenti** alla cella **A6**.
 
      Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato `EmployeesListObject` viene memorizzato nella cella **A6**. Allo stesso tempo, un <xref:System.Windows.Forms.BindingSource> denominate `EmployeesBindingSource`, un adattatore di tabella e un <xref:System.Data.DataSet> istanza vengono aggiunte al progetto. Il controllo viene associato ai <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato ai <xref:System.Data.DataSet> istanza.
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643106"
 
 ### <a name="to-save-changes-to-the-database"></a>Per salvare le modifiche apportate al database
 
-1.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `button`e aggiungere il codice seguente per eseguire il commit di tutte le modifiche apportate nel set di dati nel database.
+1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `button`e aggiungere il codice seguente per eseguire il commit di tutte le modifiche apportate nel set di dati nel database.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643106"
 
 ### <a name="to-test-the-data-binding"></a>Per testare il data binding
 
--   Premere **F5**.
+- Premere **F5**.
 
      Verificare che quando si apre la cartella di lavoro, il controllo ListObject con dati provenienti dal **dipendenti** tabella.
 
 ### <a name="to-modify-data"></a>Per modificare i dati
 
-1.  Fare clic sulla cella **B7**, che deve contenere il nome **Davolio**.
+1. Fare clic sulla cella **B7**, che deve contenere il nome **Davolio**.
 
-2.  Digitare il nome **Anderson**, quindi premere **invio**.
+2. Digitare il nome **Anderson**, quindi premere **invio**.
 
 ### <a name="to-modify-a-column-header"></a>Per modificare un'intestazione di colonna
 
-1.  Fare clic sulla cella che contiene l'intestazione di colonna **LastName**.
+1. Fare clic sulla cella che contiene l'intestazione di colonna **LastName**.
 
-2.  Tipo di **Last Name**, tra cui uno spazio tra le due parole e quindi premere **invio**.
+2. Tipo di **Last Name**, tra cui uno spazio tra le due parole e quindi premere **invio**.
 
 ### <a name="to-save-data"></a>Per salvare i dati
 
-1.  Fare clic su **salvare** nel foglio di lavoro.
+1. Fare clic su **salvare** nel foglio di lavoro.
 
-2.  Uscire da Excel. Fare clic su **No** quando viene richiesto di salvare le modifiche apportate.
+2. Uscire da Excel. Fare clic su **No** quando viene richiesto di salvare le modifiche apportate.
 
-3.  Premere **F5** a eseguire nuovamente il progetto.
+3. Premere **F5** a eseguire nuovamente il progetto.
 
      Il controllo ListObject con dati provenienti dal **dipendenti** tabella.
 
-4.  Si noti che il nome nella cella **B7** resta **Anderson**, ovvero i dati di modifica apportate e salvate nel database. L'intestazione di colonna **LastName** è stato modificato al formato originale senza spazio, perché l'intestazione di colonna non è associato al database e le modifiche apportate al foglio di lavoro non è stato salvato.
+4. Si noti che il nome nella cella **B7** resta **Anderson**, ovvero i dati di modifica apportate e salvate nel database. L'intestazione di colonna **LastName** è stato modificato al formato originale senza spazio, perché l'intestazione di colonna non è associato al database e le modifiche apportate al foglio di lavoro non è stato salvato.
 
 ### <a name="to-add-new-rows"></a>Per aggiungere nuove righe
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643106"
 
 ### <a name="to-delete-rows"></a>Per eliminare righe
 
--   Fare doppio clic il numero di 16 (riga 16) sul lato sinistro del foglio di lavoro e quindi fare clic su **Elimina**.
+- Fare doppio clic il numero di 16 (riga 16) sul lato sinistro del foglio di lavoro e quindi fare clic su **Elimina**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Per ordinare le righe nell'elenco
 
-1.  Selezionare una cella all'interno dell'elenco.
+1. Selezionare una cella all'interno dell'elenco.
 
      In ogni intestazione di colonna vengono visualizzati i pulsanti freccia.
 
-2.  Fare clic sul pulsante freccia nel **cognome** intestazione di colonna.
+2. Fare clic sul pulsante freccia nel **cognome** intestazione di colonna.
 
-3.  Fare clic su **ordinamento crescente**.
+3. Fare clic su **ordinamento crescente**.
 
      Le righe vengono ordinate in ordine alfabetico in base al cognome.
 
 ### <a name="to-filter-information"></a>Per filtrare le informazioni
 
-1.  Selezionare una cella all'interno dell'elenco.
+1. Selezionare una cella all'interno dell'elenco.
 
-2.  Fare clic sul pulsante freccia nel **titolo** intestazione di colonna.
+2. Fare clic sul pulsante freccia nel **titolo** intestazione di colonna.
 
-3.  Fare clic su **rappresentante di vendita**.
+3. Fare clic su **rappresentante di vendita**.
 
      L'elenco Mostra solo le righe che contengono **addetto alle vendite** nel **titolo** colonna.
 
-4.  Fare clic sul pulsante freccia nel **titolo** anche in questo caso l'intestazione di colonna.
+4. Fare clic sul pulsante freccia nel **titolo** anche in questo caso l'intestazione di colonna.
 
-5.  Fare clic su **(tutti)**.
+5. Fare clic su **(tutti)**.
 
      Il filtro viene rimosso e vengono visualizzate tutte le righe.
 
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata illustra le nozioni di base di associazione di una tabella in un database a un oggetto elenco. Ecco alcune possibili attività successive:
 
--   Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Distribuire la soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
+- Distribuire la soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
--   Creare una relazione master/dettaglio tra un campo e una tabella. Per altre informazioni, vedere [Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Creare una relazione master/dettaglio tra un campo e una tabella. Per altre informazioni, vedere [Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

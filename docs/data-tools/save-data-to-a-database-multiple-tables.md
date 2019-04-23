@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051414"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -31,15 +31,15 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
--  Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
+- Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
--  Impostazione dei controlli degli elementi di [finestra Origini dati](add-new-data-sources.md#data-sources-window). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Impostazione dei controlli degli elementi di [finestra Origini dati](add-new-data-sources.md#data-sources-window). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.
+- Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.
 
--  Modifica di alcuni record in ogni tabella nel set di dati.
+- Modifica di alcuni record in ogni tabella nel set di dati.
 
--  Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.
+- Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -65,7 +65,7 @@ Creare una nuova **App di Windows. Forms** progetto entrambi C# o Visual Basic. 
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
-Questo passaggio consente di creare un'origine dati dal database Northwind usando la **Configurazione guidata origine dati**. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+Questo passaggio consente di creare un'origine dati dal database Northwind usando la **Configurazione guidata origine dati**. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Nel **Data** dal menu **Mostra origini dati**.
 

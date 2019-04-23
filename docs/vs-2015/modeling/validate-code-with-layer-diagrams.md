@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051817"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,50 +58,50 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 > [!IMPORTANT]
 >  Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.  
   
--   [Se un elemento supporta la convalida](#SupportsValidation)  
+- [Se un elemento supporta la convalida](#SupportsValidation)  
   
--   [Includere altri assembly .NET e i progetti per la convalida](#IncludeReferences)  
+- [Includere altri assembly .NET e i progetti per la convalida](#IncludeReferences)  
   
--   [Convalidare il codice manualmente](#ValidateManually)  
+- [Convalidare il codice manualmente](#ValidateManually)  
   
--   [Convalidare codice automaticamente](#ValidateAuto)  
+- [Convalidare codice automaticamente](#ValidateAuto)  
   
--   [Risolvere i problemi di convalida dei layer](#TroubleshootingValidation)  
+- [Risolvere i problemi di convalida dei layer](#TroubleshootingValidation)  
   
--   [Comprendere e risolvere gli errori di convalida di livello](#UnderstandingValidationErrors)  
+- [Comprendere e risolvere gli errori di convalida di livello](#UnderstandingValidationErrors)  
   
-##  <a name="SupportsValidation"></a> Se un elemento supporta la convalida  
+## <a name="SupportsValidation"></a> Se un elemento supporta la convalida  
  È possibile collegare i livelli a siti Web, documenti Office, file di testo normale e file in progetti condivisi tra più app, ma il processo di convalida non li includerà. Gli errori di convalida non verranno visualizzati per i riferimenti a progetti oppure a assembly collegati a livelli separati quando tra tali livelli non è presente alcuna dipendenza. Tali riferimenti non vengono considerati dipendenze a meno che il codice non li usi.  
   
-1.  Nel diagramma livello, selezionare uno o più livelli, fare doppio clic la selezione e quindi fare clic su **Visualizza collegamenti**.  
+1. Nel diagramma livello, selezionare uno o più livelli, fare doppio clic la selezione e quindi fare clic su **Visualizza collegamenti**.  
   
-2.  Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Se il valore è false, l'elemento non supporta la convalida.  
+2. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Se il valore è false, l'elemento non supporta la convalida.  
   
-##  <a name="IncludeReferences"></a> Includere altri assembly .NET e i progetti per la convalida  
+## <a name="IncludeReferences"></a> Includere altri assembly .NET e i progetti per la convalida  
  Quando si trascinano elementi nel diagramma livello, vengono aggiunti automaticamente a riferimenti a progetti o assembly .NET corrispondente di **riferimenti livello** cartella nel progetto di modellazione. Questa cartella contiene i riferimenti agli assembly e ai progetti analizzati durante la convalida. È possibile includere altri assembly e progetti .NET per la convalida senza trascinarli manualmente nel diagramma livello.  
   
-1.  Nelle **Esplora soluzioni**, fare clic sul progetto di modellazione o il **riferimenti livello** cartella e quindi fare clic su **Aggiungi riferimento**.  
+1. Nelle **Esplora soluzioni**, fare clic sul progetto di modellazione o il **riferimenti livello** cartella e quindi fare clic su **Aggiungi riferimento**.  
   
-2.  Nel **Aggiungi riferimento** della finestra di dialogo selezionare gli assembly o i progetti e quindi fare clic su **OK**.  
+2. Nel **Aggiungi riferimento** della finestra di dialogo selezionare gli assembly o i progetti e quindi fare clic su **OK**.  
   
-##  <a name="ValidateManually"></a> Convalidare il codice manualmente  
+## <a name="ValidateManually"></a> Convalidare il codice manualmente  
  Se si dispone di un diagramma livello aperto collegato agli elementi della soluzione, è possibile eseguire la **Validate** comando di scelta rapida del diagramma. È anche possibile usare il prompt dei comandi per eseguire la **msbuild** con il **ValidateArchitecture** proprietà personalizzata impostata su **True**. Ad esempio, analogamente alle modifiche nel codice, eseguire regolarmente la convalida dei livelli in modo da rilevare tempestivamente conflitti di dipendenza.  
   
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>Per convalidare il codice da un diagramma livello aperto  
   
-1.  Pulsante destro del mouse sulla superficie del diagramma e quindi fare clic su **Convalida architettura**.  
+1. Pulsante destro del mouse sulla superficie del diagramma e quindi fare clic su **Convalida architettura**.  
   
     > [!NOTE]
     >  Per impostazione predefinita, il **Build Action** nel file del diagramma (con estensione layerdiagram) livello è impostata su **Validate** in modo che il diagramma è incluso nel processo di convalida.  
   
      Il **elenco errori** finestra segnala tutti gli errori che si verificano. Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).  
   
-2.  Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.  
+2. Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.  
   
     > [!NOTE]
     >  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Ciò si verifica quando il codice presenta una dipendenza in un assembly che non è specificata nel diagramma livello o quando al codice manca una dipendenza specificata nel diagramma livello. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per altre informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
   
-3.  Per gestire gli errori, vedere [gestire gli errori di convalida](#ManageErrors).  
+3. Per gestire gli errori, vedere [gestire gli errori di convalida](#ManageErrors).  
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>Per convalidare il codice al prompt dei comandi  
   
@@ -141,7 +141,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
    Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).  
   
-###  <a name="ManageErrors"></a> Gestire gli errori di convalida  
+### <a name="ManageErrors"></a> Gestire gli errori di convalida  
  Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è buona norma registrare un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
@@ -160,12 +160,12 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 |Ripristinare tutti gli errori eliminati nella **elenco errori** finestra|Fare doppio clic in un punto qualsiasi nella **elenco errori** finestra, scegliere **Gestisci errori di convalida**, quindi fare clic su **Mostra tutti gli errori eliminati**.|  
 |Tutti gli errori eliminati da nascondere il **elenco errori** finestra|Fare doppio clic in un punto qualsiasi nella **elenco errori** finestra, scegliere **Gestisci errori di convalida**, quindi fare clic su **Nascondi errori eliminati**.|  
   
-##  <a name="ValidateAuto"></a> Convalidare codice automaticamente  
+## <a name="ValidateAuto"></a> Convalidare codice automaticamente  
  È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team utilizza Team Foundation Build, è possibile eseguire la convalida dei livelli nelle archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild, e utilizzare i rapporti di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestite, vedere [utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Per convalidare automaticamente il codice durante una compilazione locale  
   
--   Usare un editor di testo per aprire il file del progetto di modello (.modelproj), quindi includere la proprietà seguente:  
+- Usare un editor di testo per aprire il file del progetto di modello (.modelproj), quindi includere la proprietà seguente:  
   
 ```  
 <ValidateArchitecture>true</ValidateArchitecture>  
@@ -197,27 +197,27 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   
    Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vedere:  
   
--   [Compilare l'applicazione](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Compilare l'applicazione](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
--   [Utilizzare il modello predefinito per il processo di compilazione](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [Utilizzare il modello predefinito per il processo di compilazione](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
--   [Modificare una compilazione Legacy basata su upgradetemplate. Xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [Modificare una compilazione Legacy basata su upgradetemplate. Xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
--   [Personalizzare il modello del processo di compilazione](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Personalizzare il modello del processo di compilazione](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
--   [Monitorare lo stato di una compilazione in esecuzione](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [Monitorare lo stato di una compilazione in esecuzione](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a> Risolvere i problemi di convalida dei layer  
+## <a name="TroubleshootingValidation"></a> Risolvere i problemi di convalida dei layer  
  Nella tabella seguente vengono descritti i problemi di convalida dei livelli e la relativa risoluzione. Questi problemi differiscono dagli errori risultanti da conflitti tra il codice e la progettazione. Per altre informazioni su questi errori, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).  
   
 |**Problema**|**Causa possibile**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  
 |Gli errori di convalida non si verificano come previsto.|La convalida non funziona sui diagrammi livello copiati da altri diagrammi livello in Esplora soluzioni e appartenenti allo stesso progetto di modellazione. I diagrammi livello copiati in questo modo contengono gli stessi riferimenti del diagramma livello originale.|Aggiungere un nuovo diagramma livello al progetto di modellazione.<br /><br /> Copiare gli elementi dal diagramma livello di origine al nuovo diagramma.|  
   
-##  <a name="UnderstandingValidationErrors"></a> La comprensione e la risoluzione di errori a livello di convalida  
+## <a name="UnderstandingValidationErrors"></a> La comprensione e la risoluzione di errori a livello di convalida  
  Quando si esegue la convalida di codice in base a un diagramma livello, se il codice è in conflitto con la progettazione si verificano errori di convalida. In presenza delle condizioni seguenti è possibile ad esempio che si verifichino errori di convalida:  
   
-- Un artefatto viene assegnato al livello errato. In questo caso, spostare l'elemento.  
+- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.  
   
 - Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.  
   

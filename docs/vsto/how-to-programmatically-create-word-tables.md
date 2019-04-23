@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10683f2bd740a92b41c0063da15d093248396bd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050825"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Procedura: A livello di codice, creare tabelle di Word
   La raccolta <xref:Microsoft.Office.Interop.Word.Tables> è un membro delle classi <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, pertanto è possibile creare una tabella in ognuno di questi contenuti. Usare il metodo <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Tables> per aggiungere una tabella nell'intervallo specificato.
@@ -51,7 +51,7 @@ ms.locfileid: "56619394"
 
 ### <a name="to-apply-a-style-to-a-table"></a>Per applicare uno stile a una tabella
 
-1.  Usare la proprietà <xref:Microsoft.Office.Interop.Word.Table.Style%2A> per applicare uno degli stili incorporati di Word a una tabella.
+1. Usare la proprietà <xref:Microsoft.Office.Interop.Word.Table.Style%2A> per applicare uno degli stili incorporati di Word a una tabella.
 
      Per usare l'esempio di codice seguente, eseguirlo dalla classe `ThisDocument` nel progetto.
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619394"
 
 ### <a name="to-apply-a-style-to-a-table"></a>Per applicare uno stile a una tabella
 
-1.  Usare la proprietà <xref:Microsoft.Office.Interop.Word.Table.Style%2A> per applicare uno degli stili incorporati di Word a una tabella.
+1. Usare la proprietà <xref:Microsoft.Office.Interop.Word.Table.Style%2A> per applicare uno degli stili incorporati di Word a una tabella.
 
      L'esempio di codice seguente usa il documento attivo. Per usare questo esempio, eseguirlo dalla classe `ThisAddIn` nel progetto.
 

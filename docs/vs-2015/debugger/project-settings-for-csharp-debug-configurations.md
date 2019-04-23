@@ -1,5 +1,5 @@
 ---
-title: Impostazioni per le configurazioni di Debug C# del progetto | Microsoft Docs
+title: Impostazioni per le configurazioni di Debug c# del progetto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,22 +23,22 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056679"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per le configurazioni di debug C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile modificare le impostazioni di progetto per una configurazione di debug C# nella **pagine delle proprietà** finestra, come descritto in [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
+È possibile modificare le impostazioni di progetto per una configurazione di debug c# nella **pagine delle proprietà** finestra, come descritto in [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
   
 > [!WARNING]
->  Questo argomento non si applica alle app di Windows Store. Vedere [avviare una sessione di debug (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Questo argomento non si applica alle app di Windows Store. Vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Scheda Debug  
+## <a name="BKMK_Debug_tab"></a> Scheda Debug  
   
 |**Impostazione**|**Descrizione**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ ms.locfileid: "58955058"
 |**Abilita debug codice non gestito**|Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso.|  
 |**Abilita debug SQL Server**|Consente di eseguire il debug di oggetti di database di SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Scheda compilazione  
+## <a name="BKMK_Build_tab"></a> Scheda compilazione  
   
 |Impostazione|Descrizione|  
 |-------------|-----------------|  

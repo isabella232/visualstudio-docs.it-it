@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052883"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procedura dettagliata: Generazione di codice tramite modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Per creare il progetto  
   
-1.  Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.  
+1. Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.  
   
-2.  Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.  
+2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Aggiungere un file XML prototipo al progetto  
  Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazione dovrà poter leggere. Potrebbe trattarsi di un file che sarà usato per il test dell'applicazione. Il modello genererà una classe C# per ogni tipo di nodo in questo file.  

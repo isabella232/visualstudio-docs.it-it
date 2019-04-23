@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "59001817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056146"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare procedure guidate con modelli di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
  Il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> metodi di interfaccia vengono chiamati in vari momenti durante il progetto viene creato, avvio, non appena un utente fa clic su **OK** sul **nuovo progetto** nella finestra di dialogo. Ogni metodo dell'interfaccia è denominato per descrivere il punto in cui viene chiamato. Ad esempio, Visual Studio chiama <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> non appena viene avviata creare il progetto, rendendola una posizione ideale per scrivere codice personalizzato per raccogliere l'input dell'utente.  
   
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Creazione di un progetto di modello di progetto con un progetto VSIX  
- Iniziare a creare un modello personalizzato con il modello di progetto project., che fa parte di Visual Studio SDK. In questa procedura si userà un progetto di modello di progetto C#, ma è inoltre disponibile un progetto di modello di progetto Visual Basic. Quindi si aggiunge un progetto VSIX per la soluzione che contiene il progetto di modello di progetto.  
+ Iniziare a creare un modello personalizzato con il modello di progetto project., che fa parte di Visual Studio SDK. In questa procedura si userà un progetto di modello di progetto c#, ma è inoltre disponibile un progetto di modello di progetto Visual Basic. Quindi si aggiunge un progetto VSIX per la soluzione che contiene il progetto di modello di progetto.  
   
-1.  Creare un progetto di modello di progetto C# (in Visual Studio **File / nuovo / progetto / Visual C# / Extensibility / modello di progetto C#**). Denominarlo **MyProjectTemplate**.  
+1. Creare un progetto di modello di progetto c# (in Visual Studio **File / nuovo / progetto / Visual c# / Extensibility / modello di progetto c#**). Denominarlo **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Potrebbe essere necessario installare Visual Studio SDK. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Aggiungere un nuovo progetto VSIX (**File / nuovo / progetto / Visual C# / Extensibility / progetto VSIX**) nella stessa soluzione come progetto di modello di progetto (nelle **Esplora soluzioni**, selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **Aggiungi / nuovo progetto**). Denominarla **MyProjectWizard.**  
+2. Aggiungere un nuovo progetto VSIX (**File / nuovo / progetto / Visual c# / Extensibility / progetto VSIX**) nella stessa soluzione come progetto di modello di progetto (nelle **Esplora soluzioni**, selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **Aggiungi / nuovo progetto**). Denominarla **MyProjectWizard.**  
   
-3.  Impostare il progetto VSIX come progetto di avvio. Nel **Esplora soluzioni**, selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **imposta come progetto di avvio**.  
+3. Impostare il progetto VSIX come progetto di avvio. Nel **Esplora soluzioni**, selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **imposta come progetto di avvio**.  
   
-4.  Aggiungere il progetto di modello come un asset del progetto VSIX. Nel **Esplora soluzioni**, nel nodo del progetto VSIX, trovare il **vsixmanifest** file. Fare doppio clic su esso per aprirlo nell'editor del manifesto.  
+4. Aggiungere il progetto di modello come un asset del progetto VSIX. Nel **Esplora soluzioni**, nel nodo del progetto VSIX, trovare il **vsixmanifest** file. Fare doppio clic su esso per aprirlo nell'editor del manifesto.  
   
-5.  Nell'editor del manifesto, selezionare la **asset** scheda sul lato sinistro della finestra.  
+5. Nell'editor del manifesto, selezionare la **asset** scheda sul lato sinistro della finestra.  
   
-6.  Nel **Assets** scheda, seleziona **New**. Nel **Aggiungi nuovo Asset** finestra, per il campo di tipo, seleziona **Microsoft.VisualStudio.ProjectTemplate**. Nel **origine** campi, selezionare **un progetto nella soluzione corrente**. Nel **Project** campi, selezionare **MyProjectTemplate**. Fare quindi clic su **OK**.  
+6. Nel **Assets** scheda, seleziona **New**. Nel **Aggiungi nuovo Asset** finestra, per il campo di tipo, seleziona **Microsoft.VisualStudio.ProjectTemplate**. Nel **origine** campi, selezionare **un progetto nella soluzione corrente**. Nel **Project** campi, selezionare **MyProjectTemplate**. Fare quindi clic su **OK**.  
   
-7.  Compilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio. (L'operazione potrebbe richiedere alcuni minuti).  
+7. Compilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio. (L'operazione potrebbe richiedere alcuni minuti).  
   
-8.  Nella seconda istanza di Visual Studio, provare a creare un nuovo progetto con il nuovo modello. (**File / nuovo / progetto / Visual C# / modello MyProject**). Il nuovo progetto verrà visualizzato con una classe denominata **Class1**. È stato creato un modello di progetto personalizzato. Arrestare il debug.  
+8. Nella seconda istanza di Visual Studio, provare a creare un nuovo progetto con il nuovo modello. (**File / nuovo / progetto / Visual c# / modello MyProject**). Il nuovo progetto verrà visualizzato con una classe denominata **Class1**. È stato creato un modello di progetto personalizzato. Arrestare il debug.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Creazione di una creazione guidata modelli personalizzati  
  In questo argomento viene illustrato come creare una procedura guidata personalizzata che consente di aprire un modulo di Windows prima che venga creato il progetto. Il form consente agli utenti di aggiungere un valore del parametro personalizzato che viene aggiunto al codice sorgente durante la creazione del progetto.  
@@ -59,11 +59,11 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
 2. Nel **Esplora soluzioni**, selezionare il nodo del progetto VSIX. Sotto Esplora soluzioni, verrà visualizzato il **proprietà** finestra. In caso contrario, selezionare **Visualizza / finestra delle proprietà**, oppure premere **F4**. Nella finestra Proprietà, selezionare i campi seguenti alla `true`:  
   
-   -   **IncludeAssemblyInVSIXContainer**  
+   - **IncludeAssemblyInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInVSIXContainer**  
+   - **IncludeDebugSymbolsInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
 3. Aggiungere l'assembly come un asset per il progetto VSIX. Aprire il file vsixmanifest e selezionare il **asset** scheda. Nel **Aggiungi nuovo Asset** finestra, per **tipo** seleziona **Microsoft.VisualStudio.Assembly**, per **origine** selezionare **A progetto nella soluzione corrente**e per **Project** seleziona **MyTemplateWizard**.  
   
@@ -292,19 +292,19 @@ namespace $safeprojectname$
 ## <a name="using-the-custom-wizard"></a>Utilizzo della procedura guidata personalizzata  
  A questo punto è possibile creare un progetto dal modello e utilizzare la procedura guidata personalizzata.  
   
-1.  Ricompilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.  
+1. Ricompilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.  
   
-2.  Creare un nuovo progetto MyProjectTemplate. (**File / nuovo / progetto / Visual C# / MyProjectTemplate**)  
+2. Creare un nuovo progetto MyProjectTemplate. (**File / nuovo / progetto / Visual c# / MyProjectTemplate**)  
   
-3.  Nel **nuovo progetto** finestra di dialogo, individuare il modello, digitare un nome e fare clic su **OK**.  
+3. Nel **nuovo progetto** finestra di dialogo, individuare il modello, digitare un nome e fare clic su **OK**.  
   
      Verrà visualizzata la procedura guidata input dell'utente.  
   
-4.  Digitare un valore per il parametro personalizzato e fare clic sul pulsante.  
+4. Digitare un valore per il parametro personalizzato e fare clic sul pulsante.  
   
      Il modulo di input utente guidata si chiude e viene creato un progetto dal modello.  
   
-5.  Nelle **Esplora soluzioni**, fare clic sul file del codice sorgente e fare clic su **Visualizza codice**.  
+5. Nelle **Esplora soluzioni**, fare clic sul file del codice sorgente e fare clic su **Visualizza codice**.  
   
      Si noti che `$custommessage$` è stata sostituita con il testo immesso nella procedura guidata input dell'utente.  
   

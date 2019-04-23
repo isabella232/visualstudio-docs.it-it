@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 427035b0fa07f390e13c21a0e420fed89e2d461b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056081"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: struttura
 Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, o definire il tipo di contenuto e l'estensione di nome file e applicare la definizione dell'area a solo a quel tipo o applicare le definizioni di area a un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.
@@ -27,11 +27,11 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
 
 ### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF
 
-1.  Creare un progetto VSIX. Assegnare alla soluzione il nome `OutlineRegionTest`.
+1. Creare un progetto VSIX. Assegnare alla soluzione il nome `OutlineRegionTest`.
 
-2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Eliminare i file di classe esistenti.
+3. Eliminare i file di classe esistenti.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementare un tagger della struttura
  Aree della struttura sono contrassegnate da un tipo di tag (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Questo tag fornisce lo standard della struttura di comportamento. L'area può essere espansi o compressi. L'area è contrassegnato da un segno più (**+**) se è compresso o un segno di sottrazione (**-**) se viene espanso e l'area espansa è delimitata da una linea verticale.
@@ -40,39 +40,39 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
 
 ### <a name="to-implement-an-outlining-tagger"></a>Per implementare un tagger della struttura
 
-1.  Aggiungere un file di classe e assegnargli il nome `OutliningTagger`.
+1. Aggiungere un file di classe e assegnargli il nome `OutliningTagger`.
 
-2.  Importare gli spazi dei nomi seguenti.
+2. Importare gli spazi dei nomi seguenti.
 
      [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
      [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]
 
-3.  Creare una classe denominata `OutliningTagger`, e che implementi <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
+3. Creare una classe denominata `OutliningTagger`, e che implementi <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
 
      [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
      [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]
 
-4.  Aggiungere alcuni campi per tenere traccia il buffer di testo e lo snapshot e per accumulare i set di righe che devono essere contrassegnate come aree della struttura. Questo codice include un elenco di oggetti area (devono essere definite in un secondo momento) che rappresentano le aree della struttura.
+4. Aggiungere alcuni campi per tenere traccia il buffer di testo e lo snapshot e per accumulare i set di righe che devono essere contrassegnate come aree della struttura. Questo codice include un elenco di oggetti area (devono essere definite in un secondo momento) che rappresentano le aree della struttura.
 
      [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
      [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]
 
-5.  Aggiungere un costruttore tagger che inizializza i campi, analizza il buffer e aggiunge un gestore eventi per il <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> evento.
+5. Aggiungere un costruttore tagger che inizializza i campi, analizza il buffer e aggiunge un gestore eventi per il <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> evento.
 
      [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
      [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]
 
-6.  Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> si estende su metodo, che crea un'istanza del tag. Questo esempio si presuppone che gli intervalli nel <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passato al metodo sono contigui, anche se potrebbe non essere sempre il caso. Questo metodo crea un'istanza di un nuovo intervallo di tag per ognuna delle aree della struttura.
+6. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> si estende su metodo, che crea un'istanza del tag. Questo esempio si presuppone che gli intervalli nel <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passato al metodo sono contigui, anche se potrebbe non essere sempre il caso. Questo metodo crea un'istanza di un nuovo intervallo di tag per ognuna delle aree della struttura.
 
      [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
      [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]
 
-7.  Dichiarare un `TagsChanged` gestore dell'evento.
+7. Dichiarare un `TagsChanged` gestore dell'evento.
 
      [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
      [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]
 
-8.  Aggiungere un `BufferChanged` gestore dell'evento che risponde a <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventi analizzando il buffer di testo.
+8. Aggiungere un `BufferChanged` gestore dell'evento che risponde a <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventi analizzando il buffer di testo.
 
      [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
      [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]
@@ -102,12 +102,12 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
 
 ### <a name="to-implement-a-tagger-provider"></a>Implementare un provider di tagger
 
-1.  Creare una classe denominata `OutliningTaggerProvider` che implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>ed esportarlo con gli attributi ContentType e TagType.
+1. Creare una classe denominata `OutliningTaggerProvider` che implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>ed esportarlo con gli attributi ContentType e TagType.
 
      [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
      [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]
 
-2.  Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metodo aggiungendo un `OutliningTagger` alle proprietà del buffer.
+2. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metodo aggiungendo un `OutliningTagger` alle proprietà del buffer.
 
      [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
      [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]
@@ -117,11 +117,11 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
 
 ### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Per compilare e testare la soluzione OutlineRegionTest
 
-1.  Compilare la soluzione.
+1. Compilare la soluzione.
 
-2.  Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
+2. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
 
-3.  Creare un file di testo. Digitare un testo che include le parentesi di apertura sia le parentesi di chiusura.
+3. Creare un file di testo. Digitare un testo che include le parentesi di apertura sia le parentesi di chiusura.
 
     ```
     [
@@ -129,7 +129,7 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
     ]
     ```
 
-4.  Deve essere presente un'area della struttura che include entrambe le parentesi quadre. È necessario essere in grado di fare clic sul segno meno a sinistra della parentesi quadra aperta per comprimere l'area della struttura. Quando l'area viene compressa, il simbolo di puntini di sospensione (*...* ) deve apparire a sinistra dell'area compressa e una finestra popup contenente il testo **passare il puntatore di testo** deve essere visualizzato quando si sposta il puntatore sui puntini di sospensione.
+4. Deve essere presente un'area della struttura che include entrambe le parentesi quadre. È necessario essere in grado di fare clic sul segno meno a sinistra della parentesi quadra aperta per comprimere l'area della struttura. Quando l'area viene compressa, il simbolo di puntini di sospensione (*...* ) deve apparire a sinistra dell'area compressa e una finestra popup contenente il testo **passare il puntatore di testo** deve essere visualizzato quando si sposta il puntatore sui puntini di sospensione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
