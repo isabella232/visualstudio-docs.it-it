@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112338"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 Lo strumento compilatore di Visual Studio estensione colore è un'applicazione console che accetta un file con estensione XML che rappresenta i colori per i temi di Visual Studio esistenti e vengono convertiti in un pkgdef file in modo che questi colori possono essere usati in Visual Studio. Poiché è facile confrontare le differenze tra file con estensione XML, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Anche possibile eseguire l'hook al ambienti di compilazione in modo che l'output della compilazione è un file. pkgdef valido.
@@ -53,7 +53,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|nome|[Obbligatorio] Il nome del tema|
+|Nome|[Obbligatorio] Il nome del tema|
 |GUID|[Obbligatorio] GUID del tema (deve corrispondere la formattazione di GUID)|
 
  Durante la creazione di colori personalizzati per Visual Studio, questi colori devono essere definiti per i seguenti temi. Se è presente alcun colore per un particolare tema, Visual Studio tenta di caricare i colori mancanti dal tema chiaro.
@@ -79,7 +79,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|nome|[Obbligatorio] Il nome della categoria|
+|Nome|[Obbligatorio] Il nome della categoria|
 |GUID|[Obbligatorio] GUID della categoria (deve corrispondere la formattazione di GUID)|
 
  **Colore**
@@ -96,7 +96,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|nome|[Obbligatorio] Il nome del colore|
+|Nome|[Obbligatorio] Il nome del colore|
 
  **Sfondo e/o in primo piano**
 
@@ -111,7 +111,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |-|-|
 |**Attributo**|**Definizione**|
 |Tipo|[Obbligatorio] Il tipo del colore. Può essere uno dei seguenti:<br /><br /> *CT_INVALID:* Il colore non valido o non impostata.<br /><br /> *CT_RAW:* Un valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Un colore di sistema di Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Un colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|
-|Origine|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|
+|Source|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|
 
  Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati per lo schema nell'attributo Type. Tuttavia, è consigliabile utilizzare solo CT_RAW e CT_SYSCOLOR.
 
@@ -149,15 +149,15 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 
  **Esempi**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   /NoLogo VsixColorCompiler D:\xml\colors.xml
+- /NoLogo VsixColorCompiler D:\xml\colors.xml
 
 ## <a name="notes"></a>Note
 
--   Questo strumento richiede che essere installata la versione più recente del runtime VC + +.
+- Questo strumento richiede che essere installata la versione più recente del runtime VC + +.
 
--   Sono supportati solo i file singoli. Non è supportata la conversione in blocco tramite i percorsi delle cartelle.
+- Sono supportati solo i file singoli. Non è supportata la conversione in blocco tramite i percorsi delle cartelle.
 
 ## <a name="sample-output"></a>Esempio di output
  Il file con estensione pkgdef generato dallo strumento sarà simile alle seguenti chiavi:

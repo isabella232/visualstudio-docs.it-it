@@ -9,25 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108711"
 ---
 # <a name="xml-schema-designer"></a>Progettazione XML Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Progettazione XML Schema (Progettazione XSD) è un strumento grafico che consente di visualizzare un set di schemi a livelli diversi di astrazione. Progettazione XSD è costituito dai seguenti componenti principali:    
   
--   [XML Schema Explorer](../xml-tools/xml-schema-explorer.md) consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche.  
+- [XML Schema Explorer](../xml-tools/xml-schema-explorer.md) consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche.  
   
--   Il [visualizzazione iniziale](../xml-tools/start-view.md) è il punto di avvio per progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni della finestra di progettazione XSD e visualizzare i dettagli del set di schemi.  
+- Il [visualizzazione iniziale](../xml-tools/start-view.md) è il punto di avvio per progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni della finestra di progettazione XSD e visualizzare i dettagli del set di schemi.  
   
--   Il [visualizzazione grafico](../xml-tools/graph-view.md) consente di visualizzare una panoramica di un set di schemi e le relazioni tra i nodi dello schema.  
+- Il [visualizzazione grafico](../xml-tools/graph-view.md) consente di visualizzare una panoramica di un set di schemi e le relazioni tra i nodi dello schema.  
   
--   Il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) fornisce una rappresentazione grafica dei dettagli dei nodi di schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.  
+- Il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) fornisce una rappresentazione grafica dei dettagli dei nodi di schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)  

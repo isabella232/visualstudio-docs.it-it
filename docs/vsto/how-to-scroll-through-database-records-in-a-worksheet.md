@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7facc5a70b603b016bbafd207650caaef05027fa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094710"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: Scorrere i record di database in un foglio di lavoro
   La procedura seguente viene illustrato come utilizzare la finestra di progettazione per visualizzare un singolo campo da una tabella di database in un foglio di lavoro di Microsoft Office Excel, con i controlli che consentono all'utente di scorrere tutti i record.
@@ -31,17 +31,17 @@ ms.locfileid: "56600246"
 
 ## <a name="to-scroll-through-database-records-in-a-worksheet"></a>Per scorrere i record di database in un foglio di lavoro
 
-1.  Aprire un progetto di applicazione di Excel in Visual Studio.
+1. Aprire un progetto di applicazione di Excel in Visual Studio.
 
-2.  Aprire il **Zdroje dat** finestra e creare un'origine dati dal database. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
+2. Aprire il **Zdroje dat** finestra e creare un'origine dati dal database. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
 
-3.  Espandere la tabella che contiene i dati che si desidera visualizzare e selezionare la colonna specifica.
+3. Espandere la tabella che contiene i dati che si desidera visualizzare e selezionare la colonna specifica.
 
-4.  Aprire l'elenco dei controlli e selezionare **NamedRange**.
+4. Aprire l'elenco dei controlli e selezionare **NamedRange**.
 
-5.  Trascinare il <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella in cui si desidera visualizzare i dati.
+5. Trascinare il <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella in cui si desidera visualizzare i dati.
 
-6.  Dal **Windows Forms** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.BindingNavigator> al foglio di lavoro e impostare i controlli da usare. Per altre informazioni, vedere [Cenni preliminari sul controllo BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. Dal **Windows Forms** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.BindingNavigator> al foglio di lavoro e impostare i controlli da usare. Per altre informazioni, vedere [Cenni preliminari sul controllo BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Vedere anche
 - [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

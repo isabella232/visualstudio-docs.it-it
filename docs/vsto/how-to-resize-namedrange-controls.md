@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3de20f175ae7300732cd56633aebcdc3e0aa0cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099611"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Procedura: Ridimensionare i controlli NamedRange
   È possibile impostare la dimensione di un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> quando lo si aggiunge a un documento di Microsoft Office Excel; tuttavia, potrebbe essere necessario ridimensionarlo in seguito.
@@ -30,32 +30,32 @@ ms.locfileid: "56654035"
 
  Questo argomento descrive le attività seguenti:
 
--   [Ridimensionare i controlli NamedRange in fase di progettazione](#designtime)
+- [Ridimensionare i controlli NamedRange in fase di progettazione](#designtime)
 
--   [Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)
+- [Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)
 
--   [Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)
+- [Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)
 
-##  <a name="designtime"></a> Ridimensionare i controlli NamedRange in fase di progettazione
+## <a name="designtime"></a> Ridimensionare i controlli NamedRange in fase di progettazione
  È possibile ridimensionare un intervallo denominato ridefinendone le dimensioni nella finestra di dialogo **Definisci nome** .
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Per ridimensionare un intervallo denominato tramite la finestra di dialogo Definisci nome
 
-1.  Fare clic con il pulsante destro del mouse su un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> .
+1. Fare clic con il pulsante destro del mouse su un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> .
 
-2.  Fare clic su **Gestisci intervalli denominati** nel menu di scelta rapida.
+2. Fare clic su **Gestisci intervalli denominati** nel menu di scelta rapida.
 
      Viene visualizzata la finestra di dialogo **Definisci nome** .
 
-3.  Selezionare l'intervallo denominato che si intende ridimensionare.
+3. Selezionare l'intervallo denominato che si intende ridimensionare.
 
-4.  Deselezionare la casella **Riferito a** .
+4. Deselezionare la casella **Riferito a** .
 
-5.  Selezionare le celle che si vogliono usare per definire la dimensione dell'intervallo denominato.
+5. Selezionare le celle che si vogliono usare per definire la dimensione dell'intervallo denominato.
 
-6.  Fare clic su **OK**.
+6. Fare clic su **OK**.
 
-##  <a name="runtimedoclevel"></a> Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto a livello di documento
+## <a name="runtimedoclevel"></a> Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto a livello di documento
  Per ridimensionare a livello di codice un intervallo denominato, è possibile usare la proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .
 
 > [!NOTE]
@@ -63,27 +63,27 @@ ms.locfileid: "56654035"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Per ridimensionare un intervallo denominato a livello di codice
 
-1.  Creare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> nella cella **A1** di `Sheet1`.
+1. Creare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> nella cella **A1** di `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2.  Ridimensionare l'intervallo denominato in modo da includere la cella **B1**.
+2. Ridimensionare l'intervallo denominato in modo da includere la cella **B1**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-##  <a name="runtimeaddin"></a> Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+## <a name="runtimeaddin"></a> Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO
  È possibile ridimensionare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo su qualsiasi foglio di lavoro aperto in fase di esecuzione. Per altre informazioni su come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> il controllo a un foglio di lavoro usando un componente aggiuntivo VSTO, vedere [come: Aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Per ridimensionare un intervallo denominato a livello di codice
 
-1.  Creare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> nella cella **A1** di `Sheet1`.
+1. Creare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> nella cella **A1** di `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2.  Ridimensionare l'intervallo denominato in modo da includere la cella **B1**.
+2. Ridimensionare l'intervallo denominato in modo da includere la cella **B1**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

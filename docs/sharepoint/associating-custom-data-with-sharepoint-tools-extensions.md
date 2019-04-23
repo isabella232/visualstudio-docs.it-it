@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f22647d646797426a6a49ff24257846e180b1d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112272"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associare dati personalizzati con le estensioni degli strumenti di SharePoint
   È possibile aggiungere dati personalizzati a determinati oggetti nelle estensioni di strumenti di SharePoint. Ciò è utile quando sono presenti dati in una parte dell'estensione che si desidera accedere in seguito da altro codice nella propria estensione. Anziché implementare un modo personalizzato per archiviare e accedere ai dati, è possibile associare i dati a un oggetto nella propria estensione e quindi recuperare i dati dallo stesso oggetto in un secondo momento.
@@ -35,35 +35,35 @@ ms.locfileid: "56614077"
 ## <a name="objects-that-can-contain-custom-data"></a>Oggetti che possono contenere dati personalizzati
  È possibile aggiungere dati personalizzati a qualsiasi oggetto nel modello a oggetti degli strumenti di SharePoint che implementa il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interfaccia. Questa interfaccia definisce solo una delle proprietà, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, che è una raccolta di oggetti dati personalizzati. I tipi seguenti implementano <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:
 
--   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>
+- <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>
 
--   <xref:Microsoft.VisualStudio.SharePoint.IMenuItem>
+- <xref:Microsoft.VisualStudio.SharePoint.IMenuItem>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectMember>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectMember>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentContext>
+- <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentContext>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>
+- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>
+- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>
+- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>
 
 ## <a name="add-and-retrieve-custom-data"></a>Aggiungere e recuperare i dati personalizzati
  Per aggiungere dati personalizzati a un oggetto in un'estensione degli strumenti di SharePoint, ottenere il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'oggetto a cui si desidera aggiungere i dati e quindi usare il <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> metodo per aggiungere i dati all'oggetto.

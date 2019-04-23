@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099624"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'utilizzo dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
 ## <a name="file-locations"></a>Percorsi dei file  
  Quando i percorsi dei file vengono adattati all'applicazione, considerare quanto segue:  
   
--   Ricerca di una posizione accessibile. È possibile che gli utenti non accedano alla cartella Programmi del computer. Archiviare i file insieme ai file dell'applicazione potrebbe non essere la scelta corretta.  
+- Ricerca di una posizione accessibile. È possibile che gli utenti non accedano alla cartella Programmi del computer. Archiviare i file insieme ai file dell'applicazione potrebbe non essere la scelta corretta.  
   
--   Ricerca di una posizione sicura. Non è sicuro archiviare i il file nella cartella radice (C:\\). Per i dati dell'applicazione, è consigliabile scegliere la cartella \Dati applicazioni. Per i singoli dati utente, l'applicazione può creare un file per ogni utente nella cartella Documenti.  
+- Ricerca di una posizione sicura. Non è sicuro archiviare i il file nella cartella radice (C:\\). Per i dati dell'applicazione, è consigliabile scegliere la cartella \Dati applicazioni. Per i singoli dati utente, l'applicazione può creare un file per ogni utente nella cartella Documenti.  
   
--   Uso di un nome di file valido. È possibile usare i controlli <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> per ridurre la probabilità di nomi di file non validi. Tenere presente che tra il momento in cui l'utente seleziona un file e il momento in cui il codice lo modifica, il file potrebbe essere eliminato. Può anche succedere che l'utente non abbia le autorizzazioni per scrivere il file.  
+- Uso di un nome di file valido. È possibile usare i controlli <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> per ridurre la probabilità di nomi di file non validi. Tenere presente che tra il momento in cui l'utente seleziona un file e il momento in cui il codice lo modifica, il file potrebbe essere eliminato. Può anche succedere che l'utente non abbia le autorizzazioni per scrivere il file.  
   
 ## <a name="security"></a>Sicurezza  
  In base a dove un frammento viene usato nel codice sorgente e a come viene modificato all'interno del codice, il livello di protezione cambia. Di seguito sono elencati alcuni aspetti da considerare.  
@@ -56,15 +56,15 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
 ## <a name="downloaded-code-snippets"></a>Frammenti di codice scaricati  
  I frammenti di codice IntelliSense installati da Visual Studio non rappresentano di per sé un pericolo. Possono tuttavia mettere a rischio la sicurezza dell'applicazione. È necessario trattare i frammenti di codice scaricati da Internet con estrema cautela, come si è soliti fare per qualsiasi altro contenuto scaricato.  
   
--   È consigliabile scaricare i frammenti di codice solo da siti attendibili e usare un software antivirus aggiornato.  
+- È consigliabile scaricare i frammenti di codice solo da siti attendibili e usare un software antivirus aggiornato.  
   
--   Aprire tutti i file di frammenti scaricati in Blocco note o nell'editor XML di Visual Studio e analizzarli con attenzione prima di installarli. Considerare le problematiche seguenti:  
+- Aprire tutti i file di frammenti scaricati in Blocco note o nell'editor XML di Visual Studio e analizzarli con attenzione prima di installarli. Considerare le problematiche seguenti:  
   
-    -   Se eseguito, il frammento di codice potrebbe danneggiare il sistema. Leggere attentamente il codice sorgente prima di eseguirlo.  
+    - Se eseguito, il frammento di codice potrebbe danneggiare il sistema. Leggere attentamente il codice sorgente prima di eseguirlo.  
   
-    -   Il blocco URL Guida del file di frammento può contenere URL che eseguono file di script dannosi o visualizzano un sito Web offensivo.  
+    - Il blocco URL Guida del file di frammento può contenere URL che eseguono file di script dannosi o visualizzano un sito Web offensivo.  
   
-    -   Il frammento di codice può contenere riferimenti che vengono automaticamente aggiunti al progetto e possono essere caricati da un punto qualsiasi nel sistema. Questi riferimenti possono essere stati scaricati nel computer dal punto in cui è stato scaricato il frammento di codice. Il frammento di codice può a questo punto chiamare un metodo nel riferimento che esegue codice dannoso. Per proteggersi da questo tipo di attacco, analizzare i blocchi delle importazioni e dei riferimenti del file di frammento.  
+    - Il frammento di codice può contenere riferimenti che vengono automaticamente aggiunti al progetto e possono essere caricati da un punto qualsiasi nel sistema. Questi riferimenti possono essere stati scaricati nel computer dal punto in cui è stato scaricato il frammento di codice. Il frammento di codice può a questo punto chiamare un metodo nel riferimento che esegue codice dannoso. Per proteggersi da questo tipo di attacco, analizzare i blocchi delle importazioni e dei riferimenti del file di frammento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Basic IntelliSense Code Snippets](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)  (Frammenti di codice IntelliSense di Visual Basic)  

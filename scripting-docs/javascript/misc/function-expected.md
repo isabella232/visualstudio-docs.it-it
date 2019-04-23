@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41d1ecc982dcdc4d494fc167e4784e9121bec15e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117052"
 ---
 # <a name="function-expected"></a>Prevista funzione
 Che si è tentato di richiamare una delle **prototipo di funzione** metodi su un oggetto che non era un `Function` oggetto oppure è utilizzato un oggetto in un contesto di chiamata di funzione. Ad esempio, il codice seguente genera l'errore in quanto **esempio** non è una funzione.  
@@ -31,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Chiamare solo **prototipo di funzione** metodi su `Function` oggetti.  
+- Chiamare solo **prototipo di funzione** metodi su `Function` oggetti.  
   
--   Assicurarsi di usare l'operatore di chiamata di funzione `()` chiamare solo funzioni.  
+- Assicurarsi di usare l'operatore di chiamata di funzione `()` chiamare solo funzioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto funzione](../../javascript/reference/function-object-javascript.md)   

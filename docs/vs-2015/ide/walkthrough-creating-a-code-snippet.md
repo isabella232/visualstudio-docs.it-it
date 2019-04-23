@@ -16,14 +16,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109806"
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Procedura dettagliata: creazione di un frammento di codice
+# <a name="walkthrough-creating-a-code-snippet"></a>Procedura dettagliata: Creazione di un frammento di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È anche possibile aggiungere al codice riferimenti e parametri sostitutivi. È possibile aggiungere il frammento all'installazione di Visual Studio usando il pulsante Importa in Gestione frammenti di codice (**Strumenti, Gestione frammenti di codice**).  
@@ -54,13 +54,13 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
 ### <a name="to-create-a-code-snippet"></a>Per creare un frammento di codice  
   
-1.  Creare un nuovo file XML in Visual Studio e aggiungere il modello come illustrato in precedenza.  
+1. Creare un nuovo file XML in Visual Studio e aggiungere il modello come illustrato in precedenza.  
   
-2.  Compilare il titolo del frammento, ad esempio "Hello World VB", nell'elemento Title.  
+2. Compilare il titolo del frammento, ad esempio "Hello World VB", nell'elemento Title.  
   
-3.  Compilare il linguaggio del frammento nell'attributo Languages dell'elemento Code. In questo esempio usare "VB".  
+3. Compilare il linguaggio del frammento nell'attributo Languages dell'elemento Code. In questo esempio usare "VB".  
   
-4.  Aggiungere il codice nella sezione CDATA all'interno dell'elemento Code, ad esempio:  
+4. Aggiungere il codice nella sezione CDATA all'interno dell'elemento Code, ad esempio:  
   
     ```  
     <Code Language="VB">  
@@ -69,33 +69,33 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-5.  Salvare il frammento come VBCodeSnippet.snippet.  
+5. Salvare il frammento come VBCodeSnippet.snippet.  
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>Per aggiungere un frammento di codice a Visual Studio  
   
-1.  È possibile aggiungere frammenti di codice personalizzati all'installazione di Visual Studio tramite Gestione frammenti di codice. Aprire Gestione frammenti di codice (**Strumenti/Gestione frammenti di codice**).  
+1. È possibile aggiungere frammenti di codice personalizzati all'installazione di Visual Studio tramite Gestione frammenti di codice. Aprire Gestione frammenti di codice (**Strumenti/Gestione frammenti di codice**).  
   
-2.  Fare clic sul pulsante **Importa**.  
+2. Fare clic sul pulsante **Importa**.  
   
-3.  Scegliere il percorso in cui è stato salvato il frammento di codice nella procedura precedente, selezionarlo e fare clic su **Apri**.  
+3. Scegliere il percorso in cui è stato salvato il frammento di codice nella procedura precedente, selezionarlo e fare clic su **Apri**.  
   
-4.  Si aprirà la finestra di dialogo **Importa frammento di codice** in cui viene chiesto di scegliere il punto in cui aggiungere il frammento tra le opzioni nel riquadro di destra. Una delle opzioni possibili è **Frammenti di codice**. Selezionare l'opzione e fare clic su **Fine** e poi su **OK**.  
+4. Si aprirà la finestra di dialogo **Importa frammento di codice** in cui viene chiesto di scegliere il punto in cui aggiungere il frammento tra le opzioni nel riquadro di destra. Una delle opzioni possibili è **Frammenti di codice**. Selezionare l'opzione e fare clic su **Fine** e poi su **OK**.  
   
-5.  Il frammento viene copiato nel percorso seguente:  
+5. Il frammento viene copiato nel percorso seguente:  
   
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Testare il frammento aprendo un progetto di Visual Basic e un file di codice. Nel file fare clic su **Inserisci frammento** nel menu di scelta rapida, quindi **frammenti di codice**. Verrà visualizzato un frammento denominato **My Visual Basic Code Snippet** (Frammento di codice Visual Basic). Fare doppio clic.  
+6. Testare il frammento aprendo un progetto di Visual Basic e un file di codice. Nel file fare clic su **Inserisci frammento** nel menu di scelta rapida, quindi **frammenti di codice**. Verrà visualizzato un frammento denominato **My Visual Basic Code Snippet** (Frammento di codice Visual Basic). Fare doppio clic.  
   
-7.  Dovrebbe essere `Console.WriteLine("Hello, World!")` inserito nel codice.  
+7. Dovrebbe essere `Console.WriteLine("Hello, World!")` inserito nel codice.  
   
 ### <a name="adding-description-and-shortcut-fields"></a>Aggiunta di campi di descrizione e collegamento  
   
-1.  I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
+1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
   
-2.  Aggiungere gli elementi Author e Description all'elemento Header e compilarli.  
+2. Aggiungere gli elementi Author e Description all'elemento Header e compilarli.  
   
-3.  L'elemento Header dovrebbe essere simile al seguente:  
+3. L'elemento Header dovrebbe essere simile al seguente:  
   
     ```  
     <Header>  
@@ -106,9 +106,9 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-4.  Aprire Gestione frammenti di codice e selezionare il frammento di codice. Nel riquadro di destra i campi Descrizione e Autore saranno ora visualizzati popolati.  
+4. Aprire Gestione frammenti di codice e selezionare il frammento di codice. Nel riquadro di destra i campi Descrizione e Autore saranno ora visualizzati popolati.  
   
-5.  Per aggiungere un collegamento, aggiungere un elemento Shortcut insieme agli elementi Author e Description:  
+5. Per aggiungere un collegamento, aggiungere un elemento Shortcut insieme agli elementi Author e Description:  
   
     ```  
     <Header>  
@@ -120,17 +120,17 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-6.  Salvare di nuovo il file del frammento.  
+6. Salvare di nuovo il file del frammento.  
   
-7.  Per testare il collegamento, aprire un progetto Visual Basic e aprire un file di codice. Tipo `hello` nel file e premere TAB. Deve essere inserito il frammento di codice.  
+7. Per testare il collegamento, aprire un progetto Visual Basic e aprire un file di codice. Tipo `hello` nel file e premere TAB. Deve essere inserito il frammento di codice.  
   
 ### <a name="to-add-references-and-imports"></a>Per aggiungere riferimenti e importazioni  
   
-1.  Con i frammenti di Visual Basic è possibile aggiungere un riferimento a un progetto usando l'elemento References e aggiungere una dichiarazione importazioni tramite l'elemento Imports. (Frammenti di codice in altri linguaggi non è questa funzionalità). Ad esempio, se si modifica `Console.WriteLine` nell'esempio di codice in `MessageBox.Show`, è possibile che sia necessario aggiungere l'assembly System.Windows.Forms.dll al progetto.  
+1. Con i frammenti di Visual Basic è possibile aggiungere un riferimento a un progetto usando l'elemento References e aggiungere una dichiarazione importazioni tramite l'elemento Imports. (Frammenti di codice in altri linguaggi non è questa funzionalità). Ad esempio, se si modifica `Console.WriteLine` nell'esempio di codice in `MessageBox.Show`, è possibile che sia necessario aggiungere l'assembly System.Windows.Forms.dll al progetto.  
   
-2.  Aprire il frammento.  
+2. Aprire il frammento.  
   
-3.  Aggiungere l'elemento References sotto l'elemento Snippet:  
+3. Aggiungere l'elemento References sotto l'elemento Snippet:  
   
     ```  
     <References>  
@@ -141,7 +141,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-4.  Aggiungere l'elemento Imports sotto l'elemento Snippet:  
+4. Aggiungere l'elemento Imports sotto l'elemento Snippet:  
   
     ```  
     <Imports>  
@@ -152,17 +152,17 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-5.  Modificare la sezione CDATA nel modo seguente:  
+5. Modificare la sezione CDATA nel modo seguente:  
   
     ```  
     <![CDATA[MessageBox.Show("Hello, World!")]]>  
     ```  
   
-6.  Salvare il frammento.  
+6. Salvare il frammento.  
   
-7.  Aprire un progetto Visual Basic e aggiungere il frammento.  
+7. Aprire un progetto Visual Basic e aggiungere il frammento.  
   
-8.  Sarà visualizzata un'istruzione Imports nella parte superiore del file di codice:  
+8. Sarà visualizzata un'istruzione Imports nella parte superiore del file di codice:  
   
     ```  
     Imports System.Windows.Forms  
@@ -173,11 +173,11 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
 ### <a name="adding-replacements"></a>Aggiunta di sostituzioni  
   
-1.  È possibile che si vogliano sostituire alcune parti dei frammenti di codice, ad esempio nel caso in cui venga aggiunta una variabile e la si voglia sostituire con una del progetto corrente. È possibile specificare due tipi di sostituzioni, vale a dire valori letterali e oggetti. I valori letterali sono stringhe di un certo tipo, ad esempio valori letterali stringa, nomi di variabile o rappresentazioni di stringa di valori numerici. Gli oggetti sono istanze di un certo tipo diverso da una stringa. Questa procedura consente di dichiarare la sostituzione di un valore letterale o di un oggetto e modificare il codice in modo che faccia riferimento a queste sostituzioni.  
+1. È possibile che si vogliano sostituire alcune parti dei frammenti di codice, ad esempio nel caso in cui venga aggiunta una variabile e la si voglia sostituire con una del progetto corrente. È possibile specificare due tipi di sostituzioni, vale a dire valori letterali e oggetti. I valori letterali sono stringhe di un certo tipo, ad esempio valori letterali stringa, nomi di variabile o rappresentazioni di stringa di valori numerici. Gli oggetti sono istanze di un certo tipo diverso da una stringa. Questa procedura consente di dichiarare la sostituzione di un valore letterale o di un oggetto e modificare il codice in modo che faccia riferimento a queste sostituzioni.  
   
-2.  Aprire il frammento.  
+2. Aprire il frammento.  
   
-3.  In questo esempio viene usata una stringa di connessione SQL. È quindi necessario modificare gli elementi Imports e References per aggiungere i riferimenti appropriati:  
+3. In questo esempio viene usata una stringa di connessione SQL. È quindi necessario modificare gli elementi Imports e References per aggiungere i riferimenti appropriati:  
   
     ```  
     <References>  
@@ -199,7 +199,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-4.  Per dichiarare la sostituzione di un valore letterale della stringa di connessione SQL, aggiungere un elemento Declarations sotto l'elemento Snippet e qui aggiungere un elemento Literal con sottoelementi per l'ID, la descrizione comando e il valore predefinito per la sostituzione:  
+4. Per dichiarare la sostituzione di un valore letterale della stringa di connessione SQL, aggiungere un elemento Declarations sotto l'elemento Snippet e qui aggiungere un elemento Literal con sottoelementi per l'ID, la descrizione comando e il valore predefinito per la sostituzione:  
   
     ```  
     <Declarations>  
@@ -212,7 +212,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
   
     ```  
   
-5.  Per dichiarare la sostituzione di un oggetto per la connessione SQL, aggiungere un elemento Object all'interno dell'elemento Declarations e aggiungere sottoelementi per l'ID, il tipo di oggetto, la descrizione comando e il valore predefinito. L'elemento Declarations risultante sarà simile al seguente:  
+5. Per dichiarare la sostituzione di un oggetto per la connessione SQL, aggiungere un elemento Object all'interno dell'elemento Declarations e aggiungere sottoelementi per l'ID, il tipo di oggetto, la descrizione comando e il valore predefinito. L'elemento Declarations risultante sarà simile al seguente:  
   
     ```  
     <Declarations>  
@@ -230,7 +230,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
     </Declarations>  
     ```  
   
-6.  Nella sezione di codice si fa riferimento alle sostituzioni delimitandole con i segni $, ad esempio `$replacement$`:  
+6. Nella sezione di codice si fa riferimento alle sostituzioni delimitandole con i segni $, ad esempio `$replacement$`:  
   
     ```  
     <Code Language="VB" Kind="method body">  
@@ -244,9 +244,9 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
     </Code>  
     ```  
   
-7.  Salvare il frammento.  
+7. Salvare il frammento.  
   
-8.  Aprire un progetto Visual Basic e aggiungere il frammento.  
+8. Aprire un progetto Visual Basic e aggiungere il frammento.  
   
 9. Il codice sarà essere simile al seguente, dove le sostituzioni `SQL connection string` e `dcConnection` sono evidenziate in arancione chiaro. Premere TAB per passare da uno a altro.  
   

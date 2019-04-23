@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b12509de2e2ba536d9d54d11a41924d86bf5667
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102419"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Errore: Non è possibile eseguire automaticamente l'istruzione nel server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ Il testo del messaggio di errore è il seguente:
   
  Possibili cause:  
   
--   Nel file web.config dell'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] non viene impostato il debug su "true" (vedere [Modalità debug nelle applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+- Nel file web.config dell'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] non viene impostato il debug su "true" (vedere [Modalità debug nelle applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Una versione di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è stata installata dopo l'installazione di Visual Studio. Installare[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] prima di Visual Studio. Per risolvere il problema, accedere al **Pannello di controllo**di Windows e scegliere **Programmi e funzionalità** per ripristinare l'installazione di Visual Studio.  
+- Una versione di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è stata installata dopo l'installazione di Visual Studio. Installare[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] prima di Visual Studio. Per risolvere il problema, accedere al **Pannello di controllo**di Windows e scegliere **Programmi e funzionalità** per ripristinare l'installazione di Visual Studio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   

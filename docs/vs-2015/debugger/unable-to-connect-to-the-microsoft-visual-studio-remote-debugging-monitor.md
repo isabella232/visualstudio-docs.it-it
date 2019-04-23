@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085766"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Questo messaggio di errore viene visualizzato quando si immette un nome non vali
   
 ## <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Assicurarsi che Visual Studio Remote Debugging Monitor sia installato e in esecuzione nel computer remoto. Per informazioni su come installarlo e il debugger remoto, vedere [debug remoto](../debugger/remote-debugging.md).  
+- Assicurarsi che Visual Studio Remote Debugging Monitor sia installato e in esecuzione nel computer remoto. Per informazioni su come installarlo e il debugger remoto, vedere [debug remoto](../debugger/remote-debugging.md).  
   
--   In Visual Studio esaminare le proprietà del progetto (**Progetto/Proprietà/Debug**). Verificare che il nome indicato in **Nome server remoto** sia corretto.  
+- In Visual Studio esaminare le proprietà del progetto (**Progetto/Proprietà/Debug**). Verificare che il nome indicato in **Nome server remoto** sia corretto.  
   
--   Verificare che il computer remoto sia accessibile sulla rete.  
+- Verificare che il computer remoto sia accessibile sulla rete.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>Il computer remoto non è raggiungibile  
  Provare a eseguire il [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) del computer remoto. Se non risponde al ping, neanche gli strumenti remoti potranno connettersi. Provare a riavviare il computer remoto, altrimenti assicurarsi che sia configurato correttamente sulla rete.  
@@ -58,13 +58,13 @@ Questo messaggio di errore viene visualizzato quando si immette un nome non vali
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Il debugger remoto è in esecuzione con un altro account utente  
  Per risolvere il problema, usare uno dei metodi seguenti:  
   
--   Arrestare il debugger remoto e riavviarlo con l'account in uso nel computer locale.  
+- Arrestare il debugger remoto e riavviarlo con l'account in uso nel computer locale.  
   
--   Avviare il debugger remoto dalla riga di comando con il parametro **/allow \<nomeutente>**: `msvsmon /allow <username@computer>`  
+- Avviare il debugger remoto dalla riga di comando con il parametro **/allow \<nomeutente>**: `msvsmon /allow <username@computer>`  
   
--   È possibile aggiungere l'utente alle autorizzazioni del debugger remoto, nella finestra del debugger remoto, **Strumenti/Autorizzazioni**.  
+- È possibile aggiungere l'utente alle autorizzazioni del debugger remoto, nella finestra del debugger remoto, **Strumenti/Autorizzazioni**.  
   
--   Se i metodi descritti in precedenza non sono applicabili, è possibile consentire a tutti gli utenti di eseguire il debug remoto. Nella finestra del debugger remoto, andare nella finestra di dialogo **Strumenti/Opzioni** . Se si seleziona   **Nessuna autenticazione**, è possibile selezionare **Consenti debug da parte di qualsiasi utente**. Tuttavia, questa opzione va usata solo se non sono disponibili le altre o se ci si trova in una rete privata.  
+- Se i metodi descritti in precedenza non sono applicabili, è possibile consentire a tutti gli utenti di eseguire il debug remoto. Nella finestra del debugger remoto, andare nella finestra di dialogo **Strumenti/Opzioni** . Se si seleziona   **Nessuna autenticazione**, è possibile selezionare **Consenti debug da parte di qualsiasi utente**. Tuttavia, questa opzione va usata solo se non sono disponibili le altre o se ci si trova in una rete privata.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>Il firewall nel computer remoto non consente le connessioni in ingresso nel debugger remoto  
  Il firewall nel computer Visual Studio e il firewall nel computer remoto devono essere configurati per consentire la comunicazione tra Visual Studio e il debugger remoto. Per informazioni sulle porte usate dal debugger remoto, vedere [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Per informazioni sulla configurazione del firewall di Windows, vedere [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  

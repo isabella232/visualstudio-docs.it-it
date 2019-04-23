@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115575"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: di un frammento XML da uno schema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema
   
 - L'elemento corrente nell'editor deve essere vuoto e senza attributi. Gli elementi seguenti, ad esempio, sono tutti validi:  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - Il cursore deve trovarsi immediatamente a destra del nome dell'elemento.  
   
@@ -51,31 +51,31 @@ L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a uno schema XML  
   
-1.  Nel **File** dal menu **New**, fare clic su **File**.  
+1. Nel **File** dal menu **New**, fare clic su **File**.  
   
-2.  Selezionare **File XML** nel **modelli** riquadro e fare clic su **Open**.  
+2. Selezionare **File XML** nel **modelli** riquadro e fare clic su **Open**.  
   
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  Nella finestra delle proprietà del documento, fare clic sul pulsante Sfoglia (**...** ) sul **schemi** campo.  
+3. Nella finestra delle proprietà del documento, fare clic sul pulsante Sfoglia (**...** ) sul **schemi** campo.  
   
      Il **schemi XSD** verrà visualizzata la finestra di dialogo.  
   
-4.  Fare clic su **Aggiungi**.  
+4. Fare clic su **Aggiungi**.  
   
      Il **Apri Schema XSD** verrà visualizzata la finestra di dialogo.  
   
-5.  Selezionare il file di schema e fare clic su **aperto**.  
+5. Selezionare il file di schema e fare clic su **aperto**.  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
      Lo schema XML è ora associato al documento XML.  
   
 #### <a name="to-generate-an-xml-snippet"></a>Per generare un frammento XML  
   
-1.  Digitare `<` nel riquadro dell'editor.  
+1. Digitare `<` nel riquadro dell'editor.  
   
-2.  Nell'elenco dei membri vengono visualizzati gli elementi possibili:  
+2. Nell'elenco dei membri vengono visualizzati gli elementi possibili:  
   
      **!-** per aggiungere un commento.  
   
@@ -85,11 +85,11 @@ L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema
   
      **Contatto** per aggiungere l'elemento radice.  
   
-3.  Selezionare **contatto** nell'elenco dei membri e premere INVIO.  
+3. Selezionare **contatto** nell'elenco dei membri e premere INVIO.  
   
      L'editor aggiunge il tag di inizio `<Contact` e posiziona il cursore dopo il nome dell'elemento.  
   
-4.  Premere TAB per generare i dati XML dell'elemento `Contact` in base alle informazioni sullo schema.  
+4. Premere TAB per generare i dati XML dell'elemento `Contact` in base alle informazioni sullo schema.  
   
 ### <a name="input"></a>Input  
  nella procedura dettagliata viene usato il seguente file di schema.  

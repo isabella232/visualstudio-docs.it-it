@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094554"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoi
   
  **Requisiti**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Ulteriori informazioni sui test codificati dell'interfaccia utente  
  Per altre informazioni sui vantaggi associati all'uso dei test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema).  
   
  **Note**  
   
--   ![Prerequisito](../test/media/prereq.png "Prereq") I test codificati dell'interfaccia utente per le applicazioni SharePoint sono supportati solamente con SharePoint 2010.  
+- ![Prerequisito](../test/media/prereq.png "Prereq") I test codificati dell'interfaccia utente per le applicazioni SharePoint sono supportati solamente con SharePoint 2010.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Il supporto per i controlli Visio e PowerPoint 2010 nell'applicazione SharePoint non è previsto.  
+- ![Prerequsite](../test/media/prereq.png "Prereq") Il supporto per i controlli Visio e PowerPoint 2010 nell'applicazione SharePoint non è previsto.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Creazione di un test codificato dell'interfaccia utente per l'applicazione SharePoint  
  La[creazione dei test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) per le applicazioni SharePoint 2010 è analoga alla creazione dei test per altri tipi di applicazioni. La registrazione e la riproduzione è supportata da tutti i controlli dell'interfaccia di modifica Web. L'interfaccia per selezionare le categorie e le Web part è costituita da soli controlli Web standard.  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  Se si eseguono azioni di registrazione su una cella non vuota, la registrazione diviene leggermente più complessa perché quando si aggiunge il testo in una cella, viene aggiunto un nuovo controllo \<div> come elemento figlio della cella. Il nuovo controllo \<div> contiene il testo appena immesso. Il registratore deve registrare le azioni nel nuovo controllo \<div>, ma non può perché il controllo \<div> non esiste finché il test non viene immesso. È necessario apportare manualmente le seguenti modifiche al codice per ovviare a questo problema.  
   
-1.  Passare all'inizializzazione della cella e rendere primarie le proprietà `RowIndex` e `ColumnIndex` :  
+1. Passare all'inizializzazione della cella e rendere primarie le proprietà `RowIndex` e `ColumnIndex` :  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  Individuare l'elemento figlio `HtmlDiv` della cella:  
+2. Individuare l'elemento figlio `HtmlDiv` della cella:  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  Aggiungere il codice per un'azione doppio clic del mouse su `HtmlDiv`:  
+3. Aggiungere il codice per un'azione doppio clic del mouse su `HtmlDiv`:  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  Aggiungere il codice per impostare il testo su `TextArea`:  
+4. Aggiungere il codice per impostare il testo su `TextArea`:  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>Test delle web part Silverlight  
   
-1.  Avviare Fiddle.  
+1. Avviare Fiddle.  
   
-2.  Cancellare la cache del browser. Questa operazione è necessaria perché il file web.config XAP, contenente la DLL di supporto dell'automazione dell'interfaccia utente di Silverlight, in genere viene memorizzato nella cache. È necessario assicurarsi dell'effettiva selezione del file XAP modificato e pertanto viene rimossa la cache del browser.  
+2. Cancellare la cache del browser. Questa operazione è necessaria perché il file web.config XAP, contenente la DLL di supporto dell'automazione dell'interfaccia utente di Silverlight, in genere viene memorizzato nella cache. È necessario assicurarsi dell'effettiva selezione del file XAP modificato e pertanto viene rimossa la cache del browser.  
   
-3.  Aprire la pagina Web.  
+3. Aprire la pagina Web.  
   
-4.  Avviare il registratore e generare il codice come per un normale test dell'applicazione Web.  
+4. Avviare il registratore e generare il codice come per un normale test dell'applicazione Web.  
   
-5.  È necessario verificare che il codice generato faccia riferimento a Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
+5. È necessario verificare che il codice generato faccia riferimento a Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
   
      Per altre informazioni, vedere l'articolo relativo ai [test dell'interfaccia utente per SharePoint 2010 con Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   

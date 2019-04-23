@@ -10,23 +10,23 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109465"
 ---
 # <a name="source-control-configuration-details"></a>Dettagli di configurazione del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Per implementare il controllo del codice sorgente, è necessario configurare correttamente il sistema di progetto o l'editor per eseguire le operazioni seguenti:  
   
--   Richiedere l'autorizzazione per eseguire la transizione allo stato modificato  
+- Richiedere l'autorizzazione per eseguire la transizione allo stato modificato  
   
--   Richiedere l'autorizzazione per salvare un file  
+- Richiedere l'autorizzazione per salvare un file  
   
--   Richiedere l'autorizzazione per aggiungere, rimuovere o rinominare i file nel progetto  
+- Richiedere l'autorizzazione per aggiungere, rimuovere o rinominare i file nel progetto  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Richiedere l'autorizzazione per eseguire la transizione allo stato modificato  
  Un editor o il progetto deve richiedere l'autorizzazione per eseguire la transizione allo stato (dirty) modificato chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Ogni editor che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> chiamino <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e aver ricevuto l'approvazione per modificare il documento dall'ambiente prima della restituzione `True` per `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Un progetto è essenzialmente un editor per un file di progetto e di conseguenza, ha la responsabilità stesso per l'implementazione del rilevamento dello stato modificato per il file di progetto come un editor di testo per i file. L'ambiente gestisce la modifica dello stato della soluzione, ma è necessario gestire la modifica dello stato di qualsiasi oggetto della soluzione fa riferimento a ma non memorizzi, ad esempio un file di progetto o i relativi elementi. In generale, se il progetto o l'editor è responsabile della gestione della persistenza per un elemento, quindi è responsabile dell'implementazione di rilevamento dello stato modificato.  

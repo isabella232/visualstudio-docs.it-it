@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094541"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedura: Memorizzare nella cache i dati per l'uso offline o in un server
   È possibile contrassegnare un elemento di dati da memorizzare nella cache del documento, in modo che sia disponibile offline. Questo inoltre rende possibile per i dati del documento deve essere modificato da un altro codice quando il documento viene archiviato in un server.
@@ -36,28 +36,28 @@ ms.locfileid: "56636515"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Per memorizzare i dati nel documento usando il codice
 
-1.  Dichiarare un campo pubblico o una proprietà per l'elemento di dati come membro di una classe di elementi host nel progetto, ad esempio la `ThisDocumen`classe t in un progetto di Word o `ThisWorkbook` classe in un progetto di Excel.
+1. Dichiarare un campo pubblico o una proprietà per l'elemento di dati come membro di una classe di elementi host nel progetto, ad esempio la `ThisDocumen`classe t in un progetto di Word o `ThisWorkbook` classe in un progetto di Excel.
 
-2.  Applicare il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attributo per il membro per contrassegnare l'elemento di dati da archiviare nella cache di dati del documento. Nell'esempio seguente si applica questo attributo a una dichiarazione di campo per un <xref:System.Data.DataSet>.
+2. Applicare il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attributo per il membro per contrassegnare l'elemento di dati da archiviare nella cache di dati del documento. Nell'esempio seguente si applica questo attributo a una dichiarazione di campo per un <xref:System.Data.DataSet>.
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  Aggiungere il codice per creare un'istanza dell'elemento di dati e, se applicabile, caricarlo dal database.
+3. Aggiungere il codice per creare un'istanza dell'elemento di dati e, se applicabile, caricarlo dal database.
 
      L'elemento di dati viene caricato solo quando viene creato inizialmente; Successivamente, la cache rimane associata al documento ed è necessario scrivere altro codice per eseguire l'aggiornamento.
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>Per memorizzare nella cache un set di dati del documento utilizzando la finestra proprietà
 
-1.  Aggiungere il set di dati al progetto usando gli strumenti di progettazione di Visual Studio, ad esempio, aggiungendo un'origine dati al progetto utilizzando il **Zdroje dat** finestra.
+1. Aggiungere il set di dati al progetto usando gli strumenti di progettazione di Visual Studio, ad esempio, aggiungendo un'origine dati al progetto utilizzando il **Zdroje dat** finestra.
 
-2.  Creare un'istanza del set di dati se non si è già presente e selezionare l'istanza nella finestra di progettazione.
+2. Creare un'istanza del set di dati se non si è già presente e selezionare l'istanza nella finestra di progettazione.
 
-3.  Nel **le proprietà** impostare nella finestra di **CacheInDocument** proprietà **True**.
+3. Nel **le proprietà** impostare nella finestra di **CacheInDocument** proprietà **True**.
 
      Per altre informazioni, vedere [delle proprietà nei progetti di Office](../vsto/properties-in-office-projects.md).
 
-4.  Nel **proprietà** impostare nella finestra di **modificatori** proprietà **pubblica** (per impostazione predefinita è **interno**).
+4. Nel **proprietà** impostare nella finestra di **modificatori** proprietà **pubblica** (per impostazione predefinita è **interno**).
 
 ## <a name="see-also"></a>Vedere anche
 - [Dati della cache](../vsto/caching-data.md)

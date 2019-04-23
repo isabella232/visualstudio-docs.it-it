@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa56b6c1dbb79cf3d6c59283856e763c2cf7a958
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108386"
 ---
 # <a name="how-to-customize-search-results"></a>Procedura: Personalizzare i risultati della ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Esistono vari modi per personalizzare la visualizzazione dei risultati della ric
   
 #### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>Per modificare il numero di argomenti visualizzati contemporaneamente  
   
-1.  Sulla **barra degli strumenti** scegliere **Opzioni Help Viewer**.  
+1. Sulla **barra degli strumenti** scegliere **Opzioni Help Viewer**.  
   
      Verrà visualizzata la finestra di dialogo **Opzioni Help Viewer**.  
   
-2.  Scegliere 25, 50, 100 o 200 dall'elenco **Numero massimo di risultati di ricerca**.  
+2. Scegliere 25, 50, 100 o 200 dall'elenco **Numero massimo di risultati di ricerca**.  
   
 ## <a name="search-for-content-by-language"></a>Cercare i contenuti in base alla lingua  
  I contenuti della documentazione possono essere in lingue diversa dall'inglese. È possibile limitare i risultati della ricerca ai contenuti in una determinata lingua e includere contenuti in inglese che corrispondono alla query di ricerca.  
@@ -43,11 +43,11 @@ Esistono vari modi per personalizzare la visualizzazione dei risultati della ric
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Per includere contenuto in lingua inglese e contenuto in un'altra lingua  
   
-1.  Sulla **barra degli strumenti** scegliere **Opzioni Help Viewer**.  
+1. Sulla **barra degli strumenti** scegliere **Opzioni Help Viewer**.  
   
      Verrà visualizzata la finestra di dialogo **Opzioni Help Viewer**.  
   
-2.  Selezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**.  
+2. Selezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Suggerimenti per la ricerca full-text](../ide/full-text-search-tips.md)

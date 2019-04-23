@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110479"
 ---
 # <a name="view-dom-event-listeners"></a>Visualizzare i listener di eventi DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
 #### <a name="to-view-event-listeners"></a>Per visualizzare i listener di eventi
 
-1.  In Visual Studio crea un'app JavaScript che usa il modello di progetto Applicazione pivot Windows Phone.
+1. In Visual Studio crea un'app JavaScript che usa il modello di progetto Applicazione pivot Windows Phone.
 
-2.  Con il modello aperto in Visual Studio, selezionare **Emulator 8.1 WVGA 4 in 512MB** nell'elenco a discesa sulla barra degli strumenti Debug nel debugger:
+2. Con il modello aperto in Visual Studio, selezionare **Emulator 8.1 WVGA 4 in 512MB** nell'elenco a discesa sulla barra degli strumenti Debug nel debugger:
 
      ![Selezionando una destinazione di debug](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Premi F5 per eseguire l'app in modalità debug.
+3. Premi F5 per eseguire l'app in modalità debug.
 
-4.  Nell'app in esecuzione, passare al **sezione 3** elemento pivot.
+4. Nell'app in esecuzione, passare al **sezione 3** elemento pivot.
 
-5.  Passa a Visual Studio (ALT+TAB o F12).
+5. Passa a Visual Studio (ALT+TAB o F12).
 
-6.  In DOM Explorer scegli `Find` nell'angolo superiore destro.
+6. In DOM Explorer scegli `Find` nell'angolo superiore destro.
 
-7.  Digitare `ListView`e premere Invio.
+7. Digitare `ListView`e premere Invio.
 
-8.  Se necessario, scegliere il **successivo** per trovare il `DIV` elemento che rappresenta il `ListView` controllo (questo elemento dispone di un `data-win-control` pari a `WinJS.UI.ListView`).
+8. Se necessario, scegliere il **successivo** per trovare il `DIV` elemento che rappresenta il `ListView` controllo (questo elemento dispone di un `data-win-control` pari a `WinJS.UI.ListView`).
 
      L'elemento `DIV` dovrebbe ora essere selezionato in DOM Explorer.
 
@@ -75,16 +75,16 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
      Il **eventi** scheda Mostra i listener di eventi per qualsiasi elemento scelto nell'elenco della gerarchia.
 
-###  <a name="Tips"></a> Suggerimenti per la risoluzione dei problemi relativi ai listener di eventi
+### <a name="Tips"></a> Suggerimenti per la risoluzione dei problemi relativi ai listener di eventi
  In alcuni scenari di app, i listener di eventi devono essere rimossi in modo esplicito utilizzando [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Usare la **eventi** scheda della finestra di DOM Explorer per verificare se i listener di eventi sono stati rimossi dagli elementi DOM durante l'esecuzione di codice. Ecco alcuni suggerimenti utili per risolvere questi tipi di problemi:
 
--   Per le app che usano il modello di navigazione a pagina singola implementato in Visual Studio [modelli di progetto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), non è in genere necessario rimuovere i listener di eventi registrati per gli oggetti, ad esempio gli elementi DOM, che fanno parte di una pagina. In questo scenario, un elemento DOM e i listener di eventi associati hanno la stessa durata e possono essere sottoposti a Garbage Collection.
+- Per le app che usano il modello di navigazione a pagina singola implementato in Visual Studio [modelli di progetto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), non è in genere necessario rimuovere i listener di eventi registrati per gli oggetti, ad esempio gli elementi DOM, che fanno parte di una pagina. In questo scenario, un elemento DOM e i listener di eventi associati hanno la stessa durata e possono essere sottoposti a Garbage Collection.
 
--   Se la durata dell'oggetto o dell'elemento DOM è diversa da quella del listener di eventi associato, potrebbe essere necessario chiamare il metodo `removeEventListener`. Se, ad esempio, usi l'evento `window.onresize`, potresti dover rimuovere il listener di eventi se esci dalla pagina in cui gestisci l'evento.
+- Se la durata dell'oggetto o dell'elemento DOM è diversa da quella del listener di eventi associato, potrebbe essere necessario chiamare il metodo `removeEventListener`. Se, ad esempio, usi l'evento `window.onresize`, potresti dover rimuovere il listener di eventi se esci dalla pagina in cui gestisci l'evento.
 
--   Se `removeEventListener` non riesce a rimuovere il listener specificato, potrebbe venire chiamato in un'istanza diversa dell'oggetto. È possibile usare la [metodo bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metodo per risolvere questo problema quando si aggiunge il listener.
+- Se `removeEventListener` non riesce a rimuovere il listener specificato, potrebbe venire chiamato in un'istanza diversa dell'oggetto. È possibile usare la [metodo bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metodo per risolvere questo problema quando si aggiunge il listener.
 
--   Per rimuovere un listener di eventi che è stato aggiunto usando [metodo bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) o utilizzando una funzione anonima, archivia un'istanza della funzione quando si aggiunge il listener. Ecco un metodo per usare questo modello in modo sicuro:
+- Per rimuovere un listener di eventi che è stato aggiunto usando [metodo bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) o utilizzando una funzione anonima, archivia un'istanza della funzione quando si aggiunge il listener. Ecco un metodo per usare questo modello in modo sicuro:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Non puoi rimuovere un listener di eventi tramite `removeEventListener` se lo hai aggiunto usando l'attributo `obj.on<eventname>`, ad esempio `window.onresize = handlerFunc`.
+- Non puoi rimuovere un listener di eventi tramite `removeEventListener` se lo hai aggiunto usando l'attributo `obj.on<eventname>`, ad esempio `window.onresize = handlerFunc`.
 
--   Usare JavaScript memory analyzer al [memoria JavaScript](../profiling/javascript-memory.md) nell'app. I listener di eventi che devono essere rimossi in modo esplicito potrebbero venire rilevati come perdita di memoria.
+- Usare JavaScript memory analyzer al [memoria JavaScript](../profiling/javascript-memory.md) nell'app. I listener di eventi che devono essere rimossi in modo esplicito potrebbero venire rilevati come perdita di memoria.
 
 ## <a name="see-also"></a>Vedere anche
 

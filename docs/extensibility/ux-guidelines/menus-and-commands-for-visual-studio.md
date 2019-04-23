@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7fb3b82d56038695c728d2125658a7f51d31f6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 94d4ac86f40f887eed9d858f10614441d88c9c54
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108867"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu e comandi per Visual Studio
 ## <a name="command-usage"></a>Uso del comando
@@ -33,11 +33,11 @@ ms.locfileid: "57870478"
 ##### <a name="do-not-create-icons-for-every-command"></a>Non creare icone per ogni comando.
  Considerare con attenzione prima di creare un'icona del comando. Le icone devono essere create solo per i comandi che:
 
--   vengono visualizzati in una barra degli strumenti predefinita.
+- vengono visualizzati in una barra degli strumenti predefinita.
 
--   è probabile che venga aggiunta da parte degli utenti a una barra degli strumenti tramite il **Personalizza...**  finestra di dialogo.
+- è probabile che venga aggiunta da parte degli utenti a una barra degli strumenti tramite il **Personalizza...**  finestra di dialogo.
 
--   è associata un'icona con la stessa azione in un altro prodotto Microsoft.
+- è associata un'icona con la stessa azione in un altro prodotto Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limitare l'aggiunta di tasti di scelta rapida
  La maggior parte degli utenti utilizzano una frazione di tutti i collegamenti disponibili. In caso di dubbi, non si associano le funzionalità a un tasto di scelta rapida. Funzionano con l'utente esperienza team prima di aggiungere nuovi tasti di scelta rapida.
@@ -75,65 +75,65 @@ ms.locfileid: "57870478"
 
 ##### <a name="core-menus"></a>Menu di scelta principali
 
--   File
+- File
 
--   Modifica
+- Edit
 
--   Visualizza
+- Visualizza
 
--   Strumenti
+- Strumenti
 
--   Finestra
+- Finestra
 
--   ?
+- ?
 
 ##### <a name="project-specific-menus"></a>Menu specifici del progetto
 
--   Progetto
+- Progetto
 
--   Compila
+- Compilazione
 
--   Debug
+- Debug
 
 ##### <a name="context-specific-menus"></a>Menu specifici del contesto
 
--   Team
+- Team
 
--   Dati
+- Dati
 
--   Test
+- Test
 
--   Architettura
+- Architettura
 
--   Analyze
+- Analyze
 
 ##### <a name="document-specific-menus"></a>Menu specifici del documento
 
--   Formato
+- Formato
 
--   Tabella
+- Tabella
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Quando si progetta menu principali, è necessario attenersi a queste regole:
 
--   Non superano 25 elementi di primo livello in un determinato contesto
+- Non superano 25 elementi di primo livello in un determinato contesto
 
--   I menu non devono mai superare 600 pixel in altezza.
+- I menu non devono mai superare 600 pixel in altezza.
 
--   Valutare un menu principale in più contesti, ad esempio nello SKU Ultimate e il profilo generale.
+- Valutare un menu principale in più contesti, ad esempio nello SKU Ultimate e il profilo generale.
 
--   Menu a comparsa sono accettabili.
+- Menu a comparsa sono accettabili.
 
--   Menu a comparsa devono contenere almeno tre elementi e non più di sette.
+- Menu a comparsa devono contenere almeno tre elementi e non più di sette.
 
--   Menu a comparsa devono passare un solo livello profonde: alcune voci di menu di Visual Studio dispongano sottomenu CSS, ma non è consigliabile in questo modello.
+- Menu a comparsa devono passare un solo livello profonde: alcune voci di menu di Visual Studio dispongano sottomenu CSS, ma non è consigliabile in questo modello.
 
--   Usare i separatori non più di sei. Raggruppamenti devono rispettare la figura seguente:
+- Usare i separatori non più di sei. Raggruppamenti devono rispettare la figura seguente:
 
      ![Linee guida per il raggruppamento di menu principale](../../extensibility/ux-guidelines/media/0501-b_mainmenus.png "0501 b_MainMenus")
 
--   Anche se non è necessario disporre di ogni raggruppamento nella figura, l'aggiunta di raggruppamenti aggiuntivi è limitato.
+- Anche se non è necessario disporre di ogni raggruppamento nella figura, l'aggiunta di raggruppamenti aggiuntivi è limitato.
 
--   Ogni raggruppamento deve avere da due a sette voci di menu.
+- Ogni raggruppamento deve avere da due a sette voci di menu.
 
 #### <a name="main-menu-ordering"></a>Menu principale di ordinamento
  Prima di aggiungere un nuovo elemento di primo livello, è consigliabile inserire il comando in un menu di primo livello esistente. Quando si aggiunge un nuovo menu di primo livello, assicurarsi di inserirlo nella posizione corretta. Decidere se il menu di scelta è specifico di progetto, contesto o nel documento. Che il nome del menu di primo livello concisa e usare solo una parola.
@@ -145,30 +145,30 @@ ms.locfileid: "57870478"
 
  Quando si progettano i menu di scelta rapida, rispettare le stesse regole per il menu principale e inoltre:
 
--   Non superano 25 voci di menu di primo livello.
+- Non superano 25 voci di menu di primo livello.
 
--   Menu a comparsa sono accettabili, ma deve non superano un livello di profondità - non usare mai riquadri a comparsa a catena.
+- Menu a comparsa sono accettabili, ma deve non superano un livello di profondità - non usare mai riquadri a comparsa a catena.
 
--   Usare i separatori non più di sei.
+- Usare i separatori non più di sei.
 
 ### <a name="command-placement-in-toolbars"></a>Commandplacement nelle barre degli strumenti
 
 #### <a name="general-toolbars"></a>Barre degli strumenti generale
  Durante la progettazione e la disposizione delle barre degli strumenti, seguire questi standard:
 
--   Non usare più di un verbo al pulsante. Un unico pulsante = una sola azione.
+- Non usare più di un verbo al pulsante. Un unico pulsante = una sola azione.
 
--   Usare testo con l'icona solo se è necessario essere rafforzata con l'etichetta.
+- Usare testo con l'icona solo se è necessario essere rafforzata con l'etichetta.
 
--   Usare una casella combinata esclusivamente per le proprietà che verranno passate più volte in una sessione. In caso contrario, espongono la proprietà in un' posizione.
+- Usare una casella combinata esclusivamente per le proprietà che verranno passate più volte in una sessione. In caso contrario, espongono la proprietà in un' posizione.
 
--   La larghezza di una casella combinata dovrebbe corrispondere la larghezza dell'elemento più lungo entro la casella + 30%. Ad esempio, se l'elemento più lungo è di 200 pixel, della casella combinata deve essere 260 pixel di larghezza.
+- La larghezza di una casella combinata dovrebbe corrispondere la larghezza dell'elemento più lungo entro la casella + 30%. Ad esempio, se l'elemento più lungo è di 200 pixel, della casella combinata deve essere 260 pixel di larghezza.
 
--   Limitare l'uso di separatori. L'uso di un separatore accanto a un elenco a discesa è un antipattern, perché la forma di elenco a discesa stesso agisce come un separatore visivo.
+- Limitare l'uso di separatori. L'uso di un separatore accanto a un elenco a discesa è un antipattern, perché la forma di elenco a discesa stesso agisce come un separatore visivo.
 
--   I gruppi di icona devono contenere da tre a sei icone.
+- I gruppi di icona devono contenere da tre a sei icone.
 
--   Se i qualificatori comportano più utili comandi, usare un pulsante a cui è archiviato l'ultima impostazione:
+- Se i qualificatori comportano più utili comandi, usare un pulsante a cui è archiviato l'ultima impostazione:
 
      ![Suddividere i pulsanti in Visual Studio](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "0501 c_SplitButtons")
 
@@ -229,13 +229,13 @@ ms.locfileid: "57870478"
 
 #### <a name="when-naming-commands"></a>Denominazione dei comandi quando:
 
--   Creare testo in modo da facilitarne la localizzazione. Per altre informazioni sulla localizzazione del testo, vedere [suggerimenti per la localizzazione](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Creare testo in modo da facilitarne la localizzazione. Per altre informazioni sulla localizzazione del testo, vedere [suggerimenti per la localizzazione](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Essere concisi. I comandi devono utilizzare non più di tre parole.
+- Essere concisi. I comandi devono utilizzare non più di tre parole.
 
--   Usare tutte le iniziali maiuscole maiuscole/minuscole: deve essere in maiuscolo la prima lettera di ogni parola. Per altre informazioni sulla formattazione del testo in Visual Studio, vedere [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Usare tutte le iniziali maiuscole maiuscole/minuscole: deve essere in maiuscolo la prima lettera di ogni parola. Per altre informazioni sulla formattazione del testo in Visual Studio, vedere [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Prendere in considerazione in cui verrà inserito il comando. È in un menu di primo livello o un riquadro a comparsa? Ad esempio, quando i comandi di allineamento di raggruppamento nel riquadro a comparsa, i comandi di primo livello devono essere "Allineamento" e i comandi di menu a comparsa dovrebbe essere "Left" "Destra", "Center", "giustifica" e così via. Sarebbe ridondante per denominare i comandi di menu a comparsa "Allinea a sinistra" o "Right Align."
+- Prendere in considerazione in cui verrà inserito il comando. È in un menu di primo livello o un riquadro a comparsa? Ad esempio, quando i comandi di allineamento di raggruppamento nel riquadro a comparsa, i comandi di primo livello devono essere "Allineamento" e i comandi di menu a comparsa dovrebbe essere "Left" "Destra", "Center", "giustifica" e così via. Sarebbe ridondante per denominare i comandi di menu a comparsa "Allinea a sinistra" o "Right Align."
 
      ![Menu di Visual Studio formato](../../extensibility/ux-guidelines/media/0502-a_formatmenu.png "0502 a_FormatMenu")
 
@@ -244,20 +244,20 @@ ms.locfileid: "57870478"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Usare un'icona con un comando solo se:
 
--   Lo stesso comando contiene un'icona associata in un altro prodotto Microsoft notificate all'utente, ad esempio quello delle applicazioni di Microsoft Office.
+- Lo stesso comando contiene un'icona associata in un altro prodotto Microsoft notificate all'utente, ad esempio quello delle applicazioni di Microsoft Office.
 
--   Il comando verrà inserito in una barra degli strumenti predefinita.
+- Il comando verrà inserito in una barra degli strumenti predefinita.
 
--   Il comando è una specializzazione che gli utenti possono aggiungere a una barra degli strumenti usando la **"In corso personalizzare"** finestra di dialogo.
+- Il comando è una specializzazione che gli utenti possono aggiungere a una barra degli strumenti usando la **"In corso personalizzare"** finestra di dialogo.
 
 ## <a name="access-and-shortcut-keys"></a>Tasti di scelta rapida e accesso
 
 ### <a name="overview"></a>Panoramica
  Esistono due tipi di chiave da tastiera:
 
--   **Le chiavi di accesso** (noto anche come tasti di scelta rapida) consentono l'accesso della tastiera tramite i menu di scelta per l'esecuzione di comandi e a ogni etichetta nella finestra di dialogo dell'interfaccia utente. Le chiavi di accesso sono principalmente a scopo di accessibilità, vengono assegnate a tutti i menu e la maggior parte dei controlli di finestre di dialogo, non sono pensate per essere memorizzate, interessano solo la finestra corrente e sono localizzate.
+- **Le chiavi di accesso** (noto anche come tasti di scelta rapida) consentono l'accesso della tastiera tramite i menu di scelta per l'esecuzione di comandi e a ogni etichetta nella finestra di dialogo dell'interfaccia utente. Le chiavi di accesso sono principalmente a scopo di accessibilità, vengono assegnate a tutti i menu e la maggior parte dei controlli di finestre di dialogo, non sono pensate per essere memorizzate, interessano solo la finestra corrente e sono localizzate.
 
--   **Tasti di scelta rapida** usato principalmente controllo (Ctrl) e le sequenze di tasti funzione (Fn). Sono più progettati per gli utenti avanzati e aiuto della produttività. Essi vengono assegnati solo per i comandi utilizzati più frequentemente e consentire l'accesso rapido, bypassando nel menu principale. Tasti di scelta rapida sono destinati a essere memorizzate, e per tale motivo deve essere assegnato coerente con lo schema di profilo. Gli schemi di tasti di scelta rapida possono variare da un profilo a profilo. Un utente può personalizzare i tasti di scelta rapida attraverso **strumenti > Opzioni > tastiera**.
+- **Tasti di scelta rapida** usato principalmente controllo (Ctrl) e le sequenze di tasti funzione (Fn). Sono più progettati per gli utenti avanzati e aiuto della produttività. Essi vengono assegnati solo per i comandi utilizzati più frequentemente e consentire l'accesso rapido, bypassando nel menu principale. Tasti di scelta rapida sono destinati a essere memorizzate, e per tale motivo deve essere assegnato coerente con lo schema di profilo. Gli schemi di tasti di scelta rapida possono variare da un profilo a profilo. Un utente può personalizzare i tasti di scelta rapida attraverso **strumenti > Opzioni > tastiera**.
 
 ### <a name="assigning-access-keys"></a>Assegnazione di chiavi di accesso
  Le chiavi di accesso sono costituiti da chiavi Alt più caratteri alfanumeriche. Assegnare una chiave di accesso per ogni voce di menu senza eccezioni. Seguire le convenzioni comuni per l'assegnazione di chiavi di accesso e Windows. ad esempio, la chiave di accesso per **File > New** deve essere sempre **Alt, F, N**.
@@ -285,6 +285,6 @@ ms.locfileid: "57870478"
 
   Non esiste un modo semplice per verificare la disponibilità di scelta rapida. Se si desidera aggiungere un collegamento, seguire questa procedura:
 
-1.  Controllare l'elenco degli [scelte rapide di Visual Studio 2013](http://visualstudioshortcuts.com/2013/) per determinare se sono presenti comandi simili a quelle in uso con gruppo.
+1. Controllare l'elenco degli [scelte rapide di Visual Studio 2013](http://visualstudioshortcuts.com/2013/) per determinare se sono presenti comandi simili a quelle in uso con gruppo.
 
-2.  Passare a **strumenti > Opzioni > ambiente > tasti** e testare il collegamento. Selezionare che ogni schema di mappatura della tastiera elencato in "Applica il seguente schema di mappatura della tastiera aggiuntive". Controllare i profili in generale, C#, VB e C++, come quelle condivise tasti di scelta rapida univoci. Il collegamento è disponibile se non è mappata in una qualsiasi di queste posizioni.
+2. Passare a **strumenti > Opzioni > ambiente > tasti** e testare il collegamento. Selezionare che ogni schema di mappatura della tastiera elencato in "Applica il seguente schema di mappatura della tastiera aggiuntive". Controllare i profili in generale, c#, VB e C++, come quelle condivise tasti di scelta rapida univoci. Il collegamento è disponibile se non è mappata in una qualsiasi di queste posizioni.

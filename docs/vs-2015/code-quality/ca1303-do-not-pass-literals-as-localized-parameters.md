@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111740"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Non passare valori letterali come parametri localizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58967775"
 
  Questo avviso viene generato quando una valore letterale stringa viene passata come valore per un parametro o una proprietà e uno o più delle seguenti condizioni sono true:
 
--   Il <xref:System.ComponentModel.LocalizableAttribute> attributi del parametro o della proprietà sono impostato su true.
+- Il <xref:System.ComponentModel.LocalizableAttribute> attributi del parametro o della proprietà sono impostato su true.
 
--   Il nome di parametro o una proprietà contiene "Text", "Messaggio" o "Caption".
+- Il nome di parametro o una proprietà contiene "Text", "Messaggio" o "Caption".
 
--   Il nome del parametro di stringa che viene passato a un metodo Console. Write o console. WriteLine è "value" o "format".
+- Il nome del parametro di stringa che viene passato a un metodo Console. Write o console. WriteLine è "value" o "format".
 
 ## <a name="rule-description"></a>Descrizione della regola
  Valori letterali stringa incorporati nel codice sorgente sono difficili da localizzare.

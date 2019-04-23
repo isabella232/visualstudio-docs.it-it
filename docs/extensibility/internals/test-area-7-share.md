@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107788"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividi
 Questa area di test illustra gli elementi di condivisione tra località, tramite il **condivisione** comando.
@@ -25,13 +25,13 @@ Questa area di test illustra gli elementi di condivisione tra località, tramite
 
  Condivisione in cartelle funziona se si seleziona una cartella con almeno un file sotto controllo del codice sorgente in esso. Il comando di condivisione è disabilitato nelle condizioni seguenti:
 
--   Se la cartella selezionata è una cartella vuota.
+- Se la cartella selezionata è una cartella vuota.
 
--   Se è presente una cartella reale, ma non contiene alcun file di controllo di origine.
+- Se è presente una cartella reale, ma non contiene alcun file di controllo di origine.
 
--   Se è presente una cartella virtuale, se i file nel controllo del codice sorgente sono in esso o non.
+- Se è presente una cartella virtuale, se i file nel controllo del codice sorgente sono in esso o non.
 
--   Se è presente un progetti Web sito remoto.
+- Se è presente un progetti Web sito remoto.
 
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu
  Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.
@@ -40,11 +40,11 @@ Questa area di test illustra gli elementi di condivisione tra località, tramite
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 
--   File condivisi viene visualizzato in percorso condiviso.
+- File condivisi viene visualizzato in percorso condiviso.
 
--   Visualizzazione origine controllo versione archivio della cronologia mostra che i file sono condivisi.
+- Visualizzazione origine controllo versione archivio della cronologia mostra che i file sono condivisi.
 
--   Modifica di un file condiviso consente di modificare entrambe le posizioni del file.
+- Modifica di un file condiviso consente di modificare entrambe le posizioni del file.
 
 ## <a name="test-cases"></a>Test case
  Di seguito sono specifici test case per l'area di test di condivisione.

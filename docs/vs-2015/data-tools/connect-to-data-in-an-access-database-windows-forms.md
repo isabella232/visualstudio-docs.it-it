@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102963"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +40,30 @@ ms.locfileid: "58964952"
   
 #### <a name="to-create-the-dataset"></a>Per creare il dataset  
   
-1.  Aprire l'applicazione Windows Forms a cui si vuole connettere i dati.  
+1. Aprire l'applicazione Windows Forms a cui si vuole connettere i dati.  
   
-2.  Nel **View** dal menu **Other Windows** > **Zdroje dat**.  
+2. Nel **View** dal menu **Other Windows** > **Zdroje dat**.  
   
      ![Visualizzare altre origini dati di Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
+3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
   
      ![Aggiungi nuova origine dati](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  Selezionare **Database** nel **scegliere un tipo di origine dati** pagina e quindi selezionare **Next**.  
+4. Selezionare **Database** nel **scegliere un tipo di origine dati** pagina e quindi selezionare **Next**.  
   
-5.  Selezionare **set di dati** nel **scegliere un modello di Database** pagina e quindi selezionare **Next**.  
+5. Selezionare **set di dati** nel **scegliere un modello di Database** pagina e quindi selezionare **Next**.  
   
-6.  Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.  
+6. Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.  
   
-7.  Modifica il **zdroj dat** al **Provider di dati .NET Framework per OLE DB**.  
+7. Modifica il **zdroj dat** al **Provider di dati .NET Framework per OLE DB**.  
   
      ![Modificare il Provider di dati in OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
     >  Anche se un'origine dati di **File di Database Microsoft Access (OLE DB)** può sembrare la scelta corretta, è usare quel tipo di origine dati solo per i file di database con estensione mdb.  
   
-8.  Nelle **Provider OLE DB**, selezionare **Office 12.0 Access Database Engine Provider Microsoft OLE DB**.  
+8. Nelle **Provider OLE DB**, selezionare **Office 12.0 Access Database Engine Provider Microsoft OLE DB**.  
   
      ![OLE DB Provider Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
@@ -87,23 +87,23 @@ ms.locfileid: "58964952"
   
 #### <a name="to-create-the-dataset"></a>Per creare il dataset  
   
-1.  Aprire l'applicazione Windows Forms a cui si vuole connettere i dati.  
+1. Aprire l'applicazione Windows Forms a cui si vuole connettere i dati.  
   
-2.  Nel **View** dal menu **Other Windows** > **Zdroje dat**.  
+2. Nel **View** dal menu **Other Windows** > **Zdroje dat**.  
   
      ![Visualizzare altre origini dati di Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
+3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
   
-4.  Selezionare **Database** nel **scegliere un tipo di origine dati** pagina e quindi selezionare **Next**.  
+4. Selezionare **Database** nel **scegliere un tipo di origine dati** pagina e quindi selezionare **Next**.  
   
-5.  Selezionare **set di dati** nel **scegliere un modello di Database** pagina e quindi selezionare **Next**.  
+5. Selezionare **set di dati** nel **scegliere un modello di Database** pagina e quindi selezionare **Next**.  
   
-6.  Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.  
+6. Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.  
   
-7.  Se l'origine dati non è **File di Database Microsoft Access (OLE DB)**, selezionare **Change** per aprire il **Modifica origine dati** nella finestra di dialogo e selezionare **Microsoft Accedere al File di Database**, quindi selezionare **OK**.  
+7. Se l'origine dati non è **File di Database Microsoft Access (OLE DB)**, selezionare **Change** per aprire il **Modifica origine dati** nella finestra di dialogo e selezionare **Microsoft Accedere al File di Database**, quindi selezionare **OK**.  
   
-8.  Nel **nome file del Database**, specificare il percorso e nome del file con estensione mdb a cui si desidera connettersi e quindi selezionare **OK**.  
+8. Nel **nome file del Database**, specificare il percorso e nome del file con estensione mdb a cui si desidera connettersi e quindi selezionare **OK**.  
   
      ![Aggiungi connessione File di Database di Access](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ ms.locfileid: "58964952"
 ## <a name="next-steps"></a>Passaggi successivi  
  Il set di dati appena creato è ora disponibile nel **Zdroje dat** finestra. A questo punto è possibile eseguire una delle attività seguenti:  
   
--   Selezionare gli elementi nel **Zdroje dat** finestra e trascinarli nel form (vedere [controlla Binding Windows Forms ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
+- Selezionare gli elementi nel **Zdroje dat** finestra e trascinarli nel form (vedere [controlla Binding Windows Forms ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Aprire l'origine dati nella finestra di progettazione set di dati per aggiungere o modificare gli oggetti che costituiscono il set di dati.  
+- Aprire l'origine dati nella finestra di progettazione set di dati per aggiungere o modificare gli oggetti che costituiscono il set di dati.  
   
--   Aggiungere logica di convalida per il <xref:System.Data.DataTable.ColumnChanging> oppure <xref:System.Data.DataTable.RowChanging> evento delle tabelle di dati nel set di dati (vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md)).  
+- Aggiungere logica di convalida per il <xref:System.Data.DataTable.ColumnChanging> oppure <xref:System.Data.DataTable.RowChanging> evento delle tabelle di dati nel set di dati (vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md)).  
   
 ## <a name="see-also"></a>Vedere anche
 

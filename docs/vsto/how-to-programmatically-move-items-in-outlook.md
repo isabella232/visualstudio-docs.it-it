@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108971"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: A livello di programmazione spostare elementi in Outlook
   Questo esempio consente di spostare i messaggi di posta elettronica non letta dal **posta in arrivo** in una cartella denominata **Test**. Nell'esempio vengono spostati solo i messaggi che contengono la parola **Test** nel `Subject` campo.
@@ -30,9 +30,9 @@ ms.locfileid: "56641624"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
--   Una cartella di posta elettronica di Outlook denominata **Test**.
+- Una cartella di posta elettronica di Outlook denominata **Test**.
 
--   Un messaggio di posta elettronica in arrivo con la parola **Test** nel `Subject` campo.
+- Un messaggio di posta elettronica in arrivo con la parola **Test** nel `Subject` campo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Con le cartelle di lavoro](../vsto/working-with-folders.md)

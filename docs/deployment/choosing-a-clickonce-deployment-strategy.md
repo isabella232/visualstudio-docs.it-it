@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102185"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Scegliere una strategia di distribuzione ClickOnce
 Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono disponibili tre diverse strategie. La scelta dipende principalmente dal tipo di applicazione che si desidera distribuire. Le tre strategie di distribuzione sono elencate di seguito:
 
--   Installazione dal Web o da una condivisione di rete
+- Installazione dal Web o da una condivisione di rete
 
--   Installazione da un CD
+- Installazione da un CD
 
--   Avvio dell'applicazione dal Web o da una condivisione di rete
+- Avvio dell'applicazione dal Web o da una condivisione di rete
 
     > [!NOTE]
     >  Oltre alla scelta di una strategia di distribuzione, sarà anche possibile scegliere una strategia per gli aggiornamenti dell'applicazione. Per altre informazioni, vedere [sceglie una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
@@ -39,7 +39,7 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/inc
 
  Poiché dipende dalla connettività di rete, questa strategia è particolarmente consigliata per le applicazioni che devono essere distribuite a utenti che hanno accesso a una rete LAN o a una connessione Internet ad alta velocità.
 
- Se si distribuisce l'applicazione dal Web, è possibile passare argomenti all'applicazione qualora venga attivata utilizzando un URL. Per altre informazioni, vedere [procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Non è possibile passare argomenti a un'applicazione attivata utilizzando gli altri metodi descritti in questo documento.
+ Se si distribuisce l'applicazione dal Web, è possibile passare argomenti all'applicazione qualora venga attivata utilizzando un URL. Per altre informazioni, vedere [Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Non è possibile passare argomenti a un'applicazione attivata utilizzando gli altri metodi descritti in questo documento.
 
  Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], fare clic su **Dal Web** oppure su **Da un percorso UNC o condivisione file** nella pagina **Specificare come verrà installata l'applicazione dagli utenti** della Pubblicazione guidata.
 
@@ -74,5 +74,5 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/inc
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Procedura: pubblicare un'applicazione ClickOnce con la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedura: Pubblicare un'applicazione ClickOnce con la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

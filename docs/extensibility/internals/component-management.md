@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110076"
 ---
 # <a name="component-management"></a>Gestione dei componenti
 Unità delle attività del programma di installazione di Windows sono definite come componenti di Windows Installer (talvolta denominati WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni che usano Windows Installer e installazione.
@@ -27,23 +27,23 @@ Unità delle attività del programma di installazione di Windows sono definite c
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Linee guida del programma di installazione per l'installazione side-by-side di creazione
 
--   Creare file e le chiavi del Registro di sistema che vengono condivise tra le versioni nei propri componenti.
+- Creare file e le chiavi del Registro di sistema che vengono condivise tra le versioni nei propri componenti.
 
      In questo modo consente di renderli facilmente nella prossima versione. Ad esempio, le librerie dei tipi registrati a livello globale, estensioni di file, altri elementi registrati in **HKEY_CLASSES_ROOT**e così via.
 
--   Raggruppare i componenti condivisi in moduli unione separato.
+- Raggruppare i componenti condivisi in moduli unione separato.
 
      Questa strategia consente di modificare in modo corretto per l'installazione side-by-side in futuro.
 
--   Installare i file condivisi e le chiavi del Registro di sistema utilizzando gli stessi componenti di Windows Installer in tutte le versioni.
+- Installare i file condivisi e le chiavi del Registro di sistema utilizzando gli stessi componenti di Windows Installer in tutte le versioni.
 
      Se si usa un componente diverso, i file e le voci del Registro di sistema vengono disinstallate quando si disinstalla un pacchetto VSPackage con controllo delle versioni, ma è ancora installato un altro pacchetto VSPackage.
 
--   Non combinare gli elementi condivisi e con controllo delle versioni nello stesso componente.
+- Non combinare gli elementi condivisi e con controllo delle versioni nello stesso componente.
 
      Questa operazione rende Impossibile installare gli elementi condivisi a un percorso globale e gli elementi con controllo delle versioni da percorsi di tipo isolati.
 
--   Non dispongono di chiavi del Registro di sistema condivise che puntano ai file con controllo delle versioni.
+- Non dispongono di chiavi del Registro di sistema condivise che puntano ai file con controllo delle versioni.
 
      Se esegue l'operazione, le chiavi condivise verranno sovrascritto quando viene installato un altro pacchetto VSPackage con controllo delle versioni. Dopo aver rimosso la seconda versione, il file a cui punta la chiave è più presente.
 

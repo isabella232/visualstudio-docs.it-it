@@ -13,21 +13,21 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112481"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selezione e valuta nell'IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE) gestisce le informazioni sugli utenti oggetti attualmente selezionati tramite selezione *contesto*. Con il contesto di selezione, i pacchetti VSPackage possono essere incluse nella valuta verifica in due modi:  
   
--   Propagando le informazioni di valuta sui pacchetti VSPackage all'IDE.  
+- Propagando le informazioni di valuta sui pacchetti VSPackage all'IDE.  
   
--   Monitorando selezioni attualmente attiva degli utenti all'interno dell'IDE.  
+- Monitorando selezioni attualmente attiva degli utenti all'interno dell'IDE.  
   
 ## <a name="selection-context"></a>Contesto di selezione  
  Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globalmente tiene traccia della valuta IDE nel proprio oggetto di contesto di selezione globale. Nella tabella seguente mostra gli elementi che costituiscono il contesto di selezione.  
@@ -40,9 +40,9 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
   
  Inoltre, l'ambiente mantiene due elenchi globali:  
   
--   Un elenco di identificatori di comando dell'interfaccia utente attivi  
+- Un elenco di identificatori di comando dell'interfaccia utente attivi  
   
--   Un elenco di tipi di elementi attualmente attivo.  
+- Un elenco di tipi di elementi attualmente attivo.  
   
 ### <a name="window-types-and-selection"></a>Selezione e tipi di finestre  
  Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE windows sono organizzati in due tipi generali:  
@@ -60,9 +60,9 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 ### <a name="events-and-currency"></a>Gli eventi e valuta  
  Due tipi di eventi possono verificarsi che influiscono sulla nozione dell'ambiente di valuta:  
   
--   Eventi che vengono propagati a livello globale e modificare il contesto di selezione finestra cornice. Esempi di questo tipo di evento includono una finestra figlio MDI viene aperta una finestra degli strumenti globale in corso l'apertura o una finestra degli strumenti del tipo di progetto in corso l'apertura.  
+- Eventi che vengono propagati a livello globale e modificare il contesto di selezione finestra cornice. Esempi di questo tipo di evento includono una finestra figlio MDI viene aperta una finestra degli strumenti globale in corso l'apertura o una finestra degli strumenti del tipo di progetto in corso l'apertura.  
   
--   Eventi che modificano gli elementi viene tracciati nel contesto di selezione finestra cornice. Ad esempio la modifica di selezione all'interno di un DocObject o la modifica di selezione in una finestra del tipo di progetto.  
+- Eventi che modificano gli elementi viene tracciati nel contesto di selezione finestra cornice. Ad esempio la modifica di selezione all'interno di un DocObject o la modifica di selezione in una finestra del tipo di progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetti di contesto di selezione](../../extensibility/internals/selection-context-objects.md)   

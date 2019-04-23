@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: visualizzare documenti Script | Microsoft Docs'
+title: 'Procedura: Visualizzare documenti Script | Microsoft Docs'
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ca31ffe85f7d932ebb23d6a454b5bccfdcb5ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111818"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>Procedura: visualizzare documenti Script (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>Procedura: Visualizzare documenti Script (JavaScript)
 
 I file di script sul lato server sono visibili in Esplora soluzioni. I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. File di script sul lato client vengono visualizzati nei **documenti Script** nodo.
 
@@ -31,17 +31,17 @@ I file di script sul lato server sono visibili in Esplora soluzioni. I file scri
 
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server
 
-1.  In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>**.
+1. In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>**.
 
-2.  Fare doppio clic sul file script che si desidera visualizzare.
+2. Fare doppio clic sul file script che si desidera visualizzare.
 
      Il file script sul lato server verrà aperto in una finestra di origine.
 
 ### <a name="to-view-a-client-side-script-document"></a>Per visualizzare un documento script sul lato client
 
-1.  In **Esplora soluzioni** aprire il nodo **Documenti script**.
+1. In **Esplora soluzioni** aprire il nodo **Documenti script**.
 
-2.  Fare doppio clic sul file script che si desidera visualizzare.
+2. Fare doppio clic sul file script che si desidera visualizzare.
 
      Il file script sul lato client verrà aperto in una finestra di origine.
 

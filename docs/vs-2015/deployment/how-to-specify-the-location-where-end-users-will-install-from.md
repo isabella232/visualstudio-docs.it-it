@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5dd42c4753bdea11c32f6de06c6386320aa2a2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108503"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: Specificare il percorso da cui gli utenti finali eseguiranno l'installazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] del
   
 ### <a name="to-specify-an-installation-url"></a>Per specificare un URL di installazione  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic sulla scheda **Pubblica**.  
+2. Fare clic sulla scheda **Pubblica**.  
   
-3.  Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato http://www.microsoft.com/ApplicationName, o un percorso UNC nel formato \\\Server\ApplicationName.  
+3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato http://www.microsoft.com/ApplicationName, o un percorso UNC nel formato \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Specifica in cui vengono copiati i file di Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

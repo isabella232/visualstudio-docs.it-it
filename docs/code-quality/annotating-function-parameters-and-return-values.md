@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109876"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e i puntatori alle strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di uso comune per le annotazioni. Per le annotazioni aggiuntive che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)
@@ -140,27 +140,27 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
  **Le annotazioni e descrizioni**
 
--   `_In_`
+- `_In_`
 
      Annota parametri di input sono valori scalari, strutture, i puntatori alle strutture e così via.  In modo esplicito può essere utilizzata con valori scalari semplici.  Il parametro deve essere valido in pre- stato di e non verrà modificato.
 
--   `_Out_`
+- `_Out_`
 
      Annota i parametri di output che sono valori scalari, strutture, i puntatori alle strutture e simili.  Non applicare a un oggetto che non può restituire un valore, ad esempio, un valore scalare che viene passato per valore.  Il parametro non deve essere valido in pre- stato di ma deve essere valido in post stato di.
 
--   `_Inout_`
+- `_Inout_`
 
      Annota un parametro che verrà modificato dalla funzione.  Deve essere valido in sia pre- stato e post-stato, ma si presuppone che hanno valori diversi prima e dopo la chiamata. È necessario applicare a un valore modificabile.
 
--   `_In_z_`
+- `_In_z_`
 
      Un puntatore a una stringa con terminazione null che viene usato come input.  La stringa deve essere valida in pre stato di.  Varianti di `PSTR`, che già dispone le annotazioni corrette, si preferiscono.
 
--   `_Inout_z_`
+- `_Inout_z_`
 
      Puntatore a una matrice di caratteri con terminazione null che verrà modificata.  Deve essere valido prima e dopo la chiamata, ma si presuppone che il valore sono stati modificati.  Il carattere null di terminazione può essere spostato, ma sono accessibili solo gli elementi fino al carattere di terminazione null originale.
 
--   `_In_reads_(s)`
+- `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
@@ -168,15 +168,15 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      Il `_bytes_` variante indica la dimensione in byte anziché gli elementi. Utilizzata solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzerebbe il `_bytes_` variante solo se funziona una simile che usa `wchar_t` sarebbe.
 
--   `_In_reads_z_(s)`
+- `_In_reads_z_(s)`
 
      Un puntatore a una matrice con terminazione null e ha una dimensione nota. Gli elementi fino al carattere di terminazione null, o `s` se è presente alcun carattere di terminazione null, deve essere valido in pre stato di.  Se le dimensioni sono note in byte, applicare la scalabilità `s` per la dimensione dell'elemento.
 
--   `_In_reads_or_z_(s)`
+- `_In_reads_or_z_(s)`
 
      Un puntatore a una matrice con terminazione null o con una dimensione nota o entrambi. Gli elementi fino al carattere di terminazione null, o `s` se è presente alcun carattere di terminazione null, deve essere valido in pre stato di.  Se le dimensioni sono note in byte, applicare la scalabilità `s` per la dimensione dell'elemento.  (Utilizzato per il `strn` famiglia.)
 
--   `_Out_writes_(s)`
+- `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
@@ -188,11 +188,11 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      Il `_bytes_` variante indica la dimensione in byte anziché gli elementi. Utilizzata solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzerebbe il `_bytes_` variante solo se funziona una simile che usa `wchar_t` sarebbe.
 
--   `_Out_writes_z_(s)`
+- `_Out_writes_z_(s)`
 
      Un puntatore a una matrice di `s` elementi.  Gli elementi non sono necessario essere valido in pre stato di.  In post-stato di, gli elementi di backup tramite il carattere di terminazione null, che deve essere presente, deve essere valido.  Se le dimensioni sono note in byte, applicare la scalabilità `s` per la dimensione dell'elemento.
 
--   `_Inout_updates_(s)`
+- `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
@@ -200,11 +200,11 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      Il `_bytes_` variante indica la dimensione in byte anziché gli elementi. Utilizzata solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzerebbe il `_bytes_` variante solo se funziona una simile che usa `wchar_t` sarebbe.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Un puntatore a una matrice con terminazione null e ha una dimensione nota. Gli elementi di backup tramite il carattere di terminazione null, che deve essere presente, deve essere valido in sia pre- stato e post-stato.  Il valore nello post-stato di si presuppone che sia diverso dal valore dello stato di pre; Ciò include la posizione del carattere di terminazione null. Se le dimensioni sono note in byte, applicare la scalabilità `s` per la dimensione dell'elemento.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -220,7 +220,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -228,11 +228,11 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      Il `_bytes_` variante indica la dimensione in byte anziché gli elementi. Utilizzata solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzerebbe il `_bytes_` variante solo se funziona una simile che usa `wchar_t` sarebbe.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Un puntatore a una matrice con terminazione null e ha una dimensione nota. Gli elementi di backup tramite il carattere di terminazione null, che deve essere presente, deve essere valido in sia pre- stato e post-stato.  Il valore nello post-stato di si presuppone che sia diverso dal valore dello stato di pre; Ciò include la posizione del carattere di terminazione null. Se le dimensioni sono note in byte, applicare la scalabilità `s` per la dimensione dell'elemento.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -248,7 +248,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -256,7 +256,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      Il `_bytes_` variante indica la dimensione in byte anziché gli elementi. Utilizzata solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzerebbe il `_bytes_` variante solo se funziona una simile che usa `wchar_t` sarebbe.
 
--   `_Inout_updates_all_(s)`
+- `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
@@ -268,19 +268,19 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
      Il `_bytes_` variante indica la dimensione in byte anziché gli elementi. Utilizzata solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzerebbe il `_bytes_` variante solo se funziona una simile che usa `wchar_t` sarebbe.
 
--   `_In_reads_to_ptr_(p)`
+- `_In_reads_to_ptr_(p)`
 
      Un puntatore a una matrice per i quali l'espressione `p`  -  `_Curr_` (vale a dire `p` meno `_Curr_`) è definito dallo standard del linguaggio appropriata.  Gli elementi precedenti a `p` deve essere valido in pre stato di.
 
--   `_In_reads_to_ptr_z_(p)`
+- `_In_reads_to_ptr_z_(p)`
 
      Un puntatore a una matrice con terminazione null per i quali l'espressione `p`  -  `_Curr_` (vale a dire `p` meno `_Curr_`) è definito dallo standard del linguaggio appropriata.  Gli elementi precedenti a `p` deve essere valido in pre stato di.
 
--   `_Out_writes_to_ptr_(p)`
+- `_Out_writes_to_ptr_(p)`
 
      Un puntatore a una matrice per i quali l'espressione `p`  -  `_Curr_` (vale a dire `p` meno `_Curr_`) è definito dallo standard del linguaggio appropriata.  Gli elementi precedenti a `p` non devono essere validi nello pre- stato di e deve essere valido in post stato di.
 
--   `_Out_writes_to_ptr_z_(p)`
+- `_Out_writes_to_ptr_z_(p)`
 
      Un puntatore a una matrice con terminazione null per i quali l'espressione `p`  -  `_Curr_` (vale a dire `p` meno `_Curr_`) è definito dallo standard del linguaggio appropriata.  Gli elementi precedenti a `p` non devono essere validi nello pre- stato di e deve essere valido in post stato di.
 
@@ -388,59 +388,59 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 
  **Le annotazioni e descrizioni**
 
--   `_Outref_`
+- `_Outref_`
 
      Risultato deve essere valido nello stato successivo al e non può essere null.
 
--   `_Outref_result_maybenull_`
+- `_Outref_result_maybenull_`
 
      Risultato deve essere valido in post-stato di, ma può essere null in post stato di.
 
--   `_Outref_result_buffer_(s)`
+- `_Outref_result_buffer_(s)`
 
      Risultato deve essere valido nello stato successivo al e non può essere null. Punta a un buffer valido delle dimensioni `s` elementi.
 
--   `_Outref_result_bytebuffer_(s)`
+- `_Outref_result_bytebuffer_(s)`
 
      Risultato deve essere valido nello stato successivo al e non può essere null. Punta a un buffer valido delle dimensioni `s` byte.
 
--   `_Outref_result_buffer_to_(s, c)`
+- `_Outref_result_buffer_to_(s, c)`
 
      Risultato deve essere valido nello stato successivo al e non può essere null. Fa riferimento al buffer del `s` elementi, di cui il primo `c` sono validi.
 
--   `_Outref_result_bytebuffer_to_(s, c)`
+- `_Outref_result_bytebuffer_to_(s, c)`
 
      Risultato deve essere valido nello stato successivo al e non può essere null. Fa riferimento al buffer del `s` byte di cui il primo `c` sono validi.
 
--   `_Outref_result_buffer_all_(s)`
+- `_Outref_result_buffer_all_(s)`
 
      Risultato deve essere valido nello stato successivo al e non può essere null. Punta a un buffer valido delle dimensioni `s` elementi validi.
 
--   `_Outref_result_bytebuffer_all_(s)`
+- `_Outref_result_bytebuffer_all_(s)`
 
      Risultato deve essere valido nello stato successivo al e non può essere null. Punta a un buffer valido di `s` byte di elementi validi.
 
--   `_Outref_result_buffer_maybenull_(s)`
+- `_Outref_result_buffer_maybenull_(s)`
 
      Risultato deve essere valido in post-stato di, ma può essere null in post stato di. Punta a un buffer valido delle dimensioni `s` elementi.
 
--   `_Outref_result_bytebuffer_maybenull_(s)`
+- `_Outref_result_bytebuffer_maybenull_(s)`
 
      Risultato deve essere valido in post-stato di, ma può essere null in post stato di. Punta a un buffer valido delle dimensioni `s` byte.
 
--   `_Outref_result_buffer_to_maybenull_(s, c)`
+- `_Outref_result_buffer_to_maybenull_(s, c)`
 
      Risultato deve essere valido in post-stato di, ma può essere null in post stato di. Fa riferimento al buffer del `s` elementi, di cui il primo `c` sono validi.
 
--   `_Outref_result_bytebuffer_to_maybenull_(s,c)`
+- `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
      Risultato deve essere valido in post-stato di, ma può essere null in stato di post. Fa riferimento al buffer del `s` byte di cui il primo `c` sono validi.
 
--   `_Outref_result_buffer_all_maybenull_(s)`
+- `_Outref_result_buffer_all_maybenull_(s)`
 
      Risultato deve essere valido in post-stato di, ma può essere null in stato di post. Punta a un buffer valido delle dimensioni `s` elementi validi.
 
--   `_Outref_result_bytebuffer_all_maybenull_(s)`
+- `_Outref_result_bytebuffer_all_maybenull_(s)`
 
      Risultato deve essere valido in post-stato di, ma può essere null in stato di post. Punta a un buffer valido di `s` byte di elementi validi.
 
@@ -454,7 +454,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
 ## <a name="other-common-annotations"></a>Altre annotazioni comuni
  **Le annotazioni e descrizioni**
 
--   `_In_range_(low, hi)`
+- `_In_range_(low, hi)`
 
      `_Out_range_(low, hi)`
 
@@ -473,13 +473,13 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
     > [!IMPORTANT]
     >  Anche se i nomi contengono "in" e "out", la semantica `_In_` e `_Out_` effettuare **non** si applicano a queste annotazioni.
 
--   `_Pre_equal_to_(expr)`
+- `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
      Il valore con annotazione è esattamente `expr`.  Equivalente a `_Satisfies_(_Curr_ == expr)` che viene applicato all'oggetto annotato con le condizioni di pre- stato di o post-state appropriate.
 
--   `_Struct_size_bytes_(size)`
+- `_Struct_size_bytes_(size)`
 
      Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte viene fornito dal `size`.  Ad esempio:
 

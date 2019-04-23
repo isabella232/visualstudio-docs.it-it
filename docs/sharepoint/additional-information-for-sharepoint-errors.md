@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099728"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informazioni aggiuntive sugli errori di SharePoint
   È possibile trovare assistenza nella risoluzione dei problemi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errori e avvisi nella risoluzione dei problemi negli argomenti e i forum pubblici di strumenti di SharePoint.
@@ -29,11 +29,11 @@ ms.locfileid: "56628910"
 ## <a name="troubleshoot-errors-and-issues"></a>Risoluzione dei problemi e gli errori
  Per assistenza con alcuni errori comuni e altri problemi nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di SharePoint, vedere gli argomenti seguenti:
 
--   [Risolvere i problemi di soluzioni SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [Risolvere i problemi di soluzioni SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [Il debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+- [Il debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Altre risorse
  La tabella seguente elenca i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] forum e altre risorse disponibili di strumenti di SharePoint.

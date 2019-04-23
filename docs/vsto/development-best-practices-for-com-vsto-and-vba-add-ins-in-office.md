@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111181"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure guidate di sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure guidate di sviluppo descritte in questo articolo.   Questo contribuisce a garantire:
 
--  Compatibilità dei componenti aggiuntivi in diverse versioni e distribuzioni di Office.
--  Minore complessità di distribuzione componente aggiuntivo per gli utenti e amministratori IT.
--  Non si verificano errori di installazione che di esecuzione imprevisti del componente aggiuntivo.
+- Compatibilità dei componenti aggiuntivi in diverse versioni e distribuzioni di Office.
+- Minore complessità di distribuzione componente aggiuntivo per gli utenti e amministratori IT.
+- Non si verificano errori di installazione che di esecuzione imprevisti del componente aggiuntivo.
 
 >Nota: Usando il [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare COM, VSTO o VBA componente aggiuntivo per il Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti il Windows Store o di Office Store.
 

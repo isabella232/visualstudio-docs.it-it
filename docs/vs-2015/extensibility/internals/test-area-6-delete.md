@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094872"
 ---
 # <a name="test-area-6-delete"></a>Area di test 6: Eliminare
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Quest'area del plug-in test di controllo del codice sorgente illustra le azioni 
 ## <a name="expected-behavior"></a>Comportamento previsto  
  Il comportamento previsto per i test case nell'area di test di delete è:  
   
--   Elemento eliminato non è più visibile all'interno **Esplora soluzioni**.  
+- Elemento eliminato non è più visibile all'interno **Esplora soluzioni**.  
   
--   L'elemento padre del progetto eliminato o dell'elemento è stato estratto in base alle esigenze (eventualmente con un messaggio di richiesta.)  
+- L'elemento padre del progetto eliminato o dell'elemento è stato estratto in base alle esigenze (eventualmente con un messaggio di richiesta.)  
   
--   Dopo avere eliminato un checked out o elemento aggiunto, non viene visualizzato nei **archiviazioni in sospeso** finestra.  
+- Dopo avere eliminato un checked out o elemento aggiunto, non viene visualizzato nei **archiviazioni in sospeso** finestra.  
   
--   L'elemento è ancora presente all'interno dell'archivio di controllo di origine, anche dopo l'eliminazione e deve essere eliminato manualmente.  
+- L'elemento è ancora presente all'interno dell'archivio di controllo di origine, anche dopo l'eliminazione e deve essere eliminato manualmente.  
   
 |Operazione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  

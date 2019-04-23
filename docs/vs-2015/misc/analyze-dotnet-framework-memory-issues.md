@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107658"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analizzare i problemi relativi alla memoria .NET Framework
 L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite di memoria e uso non efficiente della memoria nel codice .NET. La versione minima di .NET Framework per il codice di destinazione è .NET Framework 4.5.  
@@ -28,7 +28,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
   Per una procedura dettagliata dell'analizzatore di memoria gestita, vedere [usando Visual Studio 2013 per diagnosticare i problemi di memoria .NET in produzione](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) in Visual Studio blog di ALM e Team Foundation Server.  
   
-##  <a name="BKMK_Contents"></a> Contenuto  
+## <a name="BKMK_Contents"></a> Contenuto  
  [Uso della memoria nelle app .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [Identificare un problema di memoria in un'app](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
  [Analizzare il consumo di memoria](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Uso della memoria nelle app .NET Framework  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Uso della memoria nelle app .NET Framework  
  .NET Framework è un runtime con Garbage Collection. Nella maggior parte delle app, quindi, l'uso della memoria non costituisce un problema. Nelle applicazioni con esecuzione prolungata, ad esempio servizi e applicazioni Web, e nei dispositivi con quantità limitata di memoria l'accumulo di oggetti in memoria può influire negativamente sulle prestazioni dell'app e del dispositivo in cui è eseguita. L'uso eccessivo di memoria può privare di risorse l'applicazione e la macchina, nel caso in cui l'esecuzione del Garbage Collector sia troppo frequente o se il sistema operativo deve spostare memoria tra la RAM e il disco. Nel caso peggiore, è possibile che un'app si arresti in modo anomalo, con un'eccezione di tipo "Memoria insufficiente".  
   
  .NET *heap gestito* è un'area di memoria virtuale in cui sono archiviati gli oggetti di riferimento creati da un'app. La durata degli oggetti è gestita dal Garbage Collector (GC), che usa i riferimenti per tenere traccia degli oggetti che occupano blocchi di memoria. Un riferimento viene creato quando si crea un oggetto e lo si assegna a una variabile. Un singolo oggetto può avere più riferimenti. Ad esempio, è possibile creare riferimenti aggiuntivi a un oggetto tramite l'aggiunta dell'oggetto a una classe, una raccolta o un'altra struttura di dati oppure tramite l'assegnazione dell'oggetto a una seconda variabile. Un riferimento può essere creato anche, in modo meno ovvio, da un oggetto che aggiunge un gestore a un evento di un altro oggetto. In questo caso il secondo oggetto conserva il riferimento al primo oggetto fino alla rimozione esplicita del gestore o all'eliminazione del secondo oggetto.  
@@ -46,7 +46,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
  ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identificare un problema di memoria in un'app  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identificare un problema di memoria in un'app  
  Il sintomo più evidente di problemi di memoria è individuabile nelle prestazioni dell'app, in particolare in caso di peggioramento delle prestazioni nel tempo. Anche il peggioramento delle prestazioni di altre app durante l'esecuzione dell'app specifica potrebbe indicare un problema di memoria. Se si sospetta un problema di memoria, usare uno strumento quale Gestione attività o [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) per analizzare ulteriormente il problema. Una possibile origine della perdita di memoria potrebbe essere, ad esempio, un incremento inspiegabile nella dimensione totale della memoria:  
   
  ![Aumento della memoria uniforme in Monitoraggio di risorse](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
  ![Picchi di memoria di Resource Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> Raccogliere snapshot di memoria  
+## <a name="BKMK_Collect_memory_snapshots"></a> Raccogliere snapshot di memoria  
  Lo strumento di analisi della memoria analizza le informazioni in *file di dump* che contengono informazioni sull'heap. È possibile creare file dump in Visual Studio, oppure è possibile usare uno strumento quale [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) dalla [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Visualizzare [che cos'è un dump e come crearne uno?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sul blog di Visual Studio Debugger Team.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
    ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> Analizzare il consumo di memoria  
+## <a name="BKMK_Analyze_memory_use"></a> Analizzare il consumo di memoria  
  [Filtrare l'elenco di oggetti](#BKMK_Filter_the_list_of_objects) **&#124;** [analizzare i dati di memoria in da un singolo snapshot](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [confrontare due memoria snapshot](#BKMK_Compare_two_memory_snapshots)  
   
  Per analizzare un file di dump alla ricerca di problemi di uso della memoria:  
@@ -90,7 +90,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
    ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrare l'elenco di oggetti  
+### <a name="BKMK_Filter_the_list_of_objects"></a> Filtrare l'elenco di oggetti  
  Per impostazione predefinita, l'analizzatore di memoria filtra l'elenco di oggetti in uno snapshot di memoria per mostrare solo i tipi e le istanze che corrispondono a codice utente e per mostrare solo i tipi la cui dimensione inclusiva totale supera una percentuale di soglia della dimensione totale dell'heap. È possibile modificare queste opzioni nel **le impostazioni di visualizzazione** elenco:  
   
 |||  
@@ -102,7 +102,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
  ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analizzare i dati di memoria in da un singolo snapshot  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analizzare i dati di memoria in da un singolo snapshot  
  Visual Studio avvia una nuova sessione di debug per analizzare il file, quindi mostra i dati della memoria in una finestra Visualizza heap.  
   
  ![L'elenco di tipo Object](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -137,9 +137,9 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
   
 #### <a name="paths-to-root"></a>Percorsi della radice  
   
--   Per un tipo selezionato dal **ObjectType** tabella, il **percorsi della radice** tabella mostra le gerarchie univoche di tipo che conducono agli oggetti radice per tutti gli oggetti del tipo, insieme al numero di riferimenti al tipo che si trova nella gerarchia.  
+- Per un tipo selezionato dal **ObjectType** tabella, il **percorsi della radice** tabella mostra le gerarchie univoche di tipo che conducono agli oggetti radice per tutti gli oggetti del tipo, insieme al numero di riferimenti al tipo che si trova nella gerarchia.  
   
--   Per un oggetto selezionato dall'istanza di un tipo **percorsi della radice** Visualizza un grafico degli oggetti effettivi che contengono un riferimento all'istanza. È possibile passare il puntatore del mouse sul nome dell'oggetto per visualizzarne i valori di dati in un suggerimento relativo ai dati.  
+- Per un oggetto selezionato dall'istanza di un tipo **percorsi della radice** Visualizza un grafico degli oggetti effettivi che contengono un riferimento all'istanza. È possibile passare il puntatore del mouse sul nome dell'oggetto per visualizzarne i valori di dati in un suggerimento relativo ai dati.  
   
 #### <a name="referenced-types--referenced-objects"></a>Tipi a cui si fa riferimento / Oggetti a cui si fa riferimento  
   
@@ -168,7 +168,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
 |**Handle SizedRef**|Un handle sicuro che conserva una dimensione approssimativa della chiusura collettiva di tutti gli oggetti e di tutte le radici di oggetto in fase di Garbage Collection.|  
 |**Variabile locale bloccata**|Una variabile locale bloccata.|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> Confrontare due snapshot di memoria  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> Confrontare due snapshot di memoria  
  È possibile confrontare due file di dump di un processo per individuare oggetti che potrebbero essere la causa di perdite di memoria. L'intervallo tra la raccolta del primo file (precedente) e del secondo file (successivo) deve essere sufficientemente ampio da rendere chiaramente evidente l'incremento del numero di oggetti persi. Per confrontare i due file:  
   
 1. Aprire il file di dump secondo e quindi scegliere **eseguire il Debug della memoria gestita** nel **riepilogo File Minidump** pagina.  

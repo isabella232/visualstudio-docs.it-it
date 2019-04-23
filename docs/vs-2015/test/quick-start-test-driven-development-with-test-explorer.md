@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva allo sviluppo basato su test con Esplora test | Microsoft Docs
+title: 'Avvio rapido: Sviluppo con Esplora Test basato su test | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,25 +8,25 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108984"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Avvio rapido: Sviluppo basato su test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si consiglia di creare unit test per garantire il corretto funzionamento del codice attraverso i vari passaggi incrementali dello sviluppo. Esistono diversi framework che possono essere utilizzati per scrivere unit test, tra i quali alcuni sviluppati da terze parti. Alcuni framework di test sono specializzati per il testing in diversi linguaggi o piattaforme. Esplora test fornisce una singola interfaccia per gli unit test per uno qualsiasi di questi framework. Gli adattatori sono disponibili per i framework comunemente più utilizzati ed è possibile scrivere i propri adattatori per altri framework.  
   
  Esplora test sostituisce le finestre di unit test presenti nelle versioni precedenti di Visual Studio. I vantaggi comprendono:  
   
--   Possibilità di eseguire test .NET, non gestiti, di database e di altro tipo usando una singola interfaccia.  
+- Possibilità di eseguire test .NET, non gestiti, di database e di altro tipo usando una singola interfaccia.  
   
--   Possibilità di usare il framework di unit test preferito, ad esempio NUnit o MSTest.  
+- Possibilità di usare il framework di unit test preferito, ad esempio NUnit o MSTest.  
   
--   Possibilità di visualizzare in un'unica finestra tutte le informazioni necessarie.  
+- Possibilità di visualizzare in un'unica finestra tutte le informazioni necessarie.  
   
 ## <a name="using-test-explorer"></a>Utilizzo di Esplora test  
  ![Esplora unit test con il pulsante Esegui tutto](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
@@ -37,13 +37,13 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
     Ad esempio, per creare un test che utilizza il framework MSTest:  
   
-   1.  Creare un progetto di test.  
+   1. Creare un progetto di test.  
   
         Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, **Visual C#** o **Visual C++** e quindi scegliere **Test**.  
   
         Selezionare **Progetto unit test**.  
   
-   2.  Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]`.  
+   2. Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]`.  
   
 2. Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.  
   
@@ -53,13 +53,13 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
     Esplora test aprirà e visualizzerà un riepilogo dei risultati.  
   
-   **Per visualizzare un elenco completo dei test:** scegliere **Mostra tutto** in qualsiasi categoria.  
+   **Per visualizzare un elenco completo di test:** scegliere **Mostra tutto** in qualsiasi categoria.  
   
-   **Per visualizzare i dettagli dei risultati di un test:** selezionare il test in Esplora test per visualizzare dettagli quali messaggi di eccezione nell'apposito riquadro.  
+   **Per visualizzare i dettagli dei risultati di un test:** selezionare il test in Esplora test per visualizzare dettagli come i messaggi di eccezione nell'apposito riquadro.  
   
    **Per spostarsi all'interno del codice di un test:** fare doppio clic sul test in Esplora test o scegliere **Apri test** nel menu di scelta rapida.  
   
-   **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test, quindi scegliere **Debug test selezionati**.  
+   **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test e quindi scegliere **Esegui debug test selezionati**.  
   
 > [!IMPORTANT]
 >  I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.  
@@ -67,7 +67,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 > [!NOTE]
 >  Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Usa un framework di test diversi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
-##  <a name="walkthrough"></a> Procedura dettagliate: Utilizzare unit test per sviluppare un metodo  
+## <a name="walkthrough"></a> Procedura dettagliata: Uso di Unit test per sviluppare un metodo  
  In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [framework di test diverso negli Stati Uniti](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Creare il test e il metodo  
@@ -76,7 +76,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
 2. Creare un progetto di test.  
   
-   -   Nella finestra di dialogo **Nuovo progetto**, scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.  
+   - Nella finestra di dialogo **Nuovo progetto**, scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.  
   
         ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -102,15 +102,15 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
 4. Generare il metodo dal test.  
   
-   1.  Posizionare il cursore su `Rooter`, quindi dal menu di scelta rapida scegliere **Genera**, **Nuovo tipo**.  
+   1. Posizionare il cursore su `Rooter`, quindi dal menu di scelta rapida scegliere **Genera**, **Nuovo tipo**.  
   
-   2.  Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.  
+   2. Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.  
   
-   3.  Posizionare il cursore su `SquareRoot`, quindi dal menu di scelta rapida scegliere **Genera**, **Stub metodo**.  
+   3. Posizionare il cursore su `SquareRoot`, quindi dal menu di scelta rapida scegliere **Genera**, **Stub metodo**.  
   
 5. Eseguire lo unit test.  
   
-   1.  Dal menu **Test** , scegliere **Esegui unit test**, **Tutti i test**.  
+   1. Dal menu **Test** , scegliere **Esegui unit test**, **Tutti i test**.  
   
         La soluzione verrà compilata ed eseguita.  
   
@@ -130,7 +130,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Dopo ogni modifica, tutti i test hanno esito positivo  
   
-1.  In `MyMath\Rooter.cs`migliorare il codice di `SquareRoot`:  
+1. In `MyMath\Rooter.cs`migliorare il codice di `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -139,7 +139,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
      }  
     ```  
   
-2.  In Esplora test scegliere **Esegui tutto**.  
+2. In Esplora test scegliere **Esegui tutto**.  
   
      Il codice verrà compilato e i test verranno eseguiti.  
   
@@ -149,7 +149,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Aggiungere test per estendere l'intervallo degli input  
   
-1.  Per assicurarsi che il codice venga eseguito in tutti i casi, aggiungere dei test che utilizzino una più vasta gamma di valori in input.  
+1. Per assicurarsi che il codice venga eseguito in tutti i casi, aggiungere dei test che utilizzino una più vasta gamma di valori in input.  
   
     > [!TIP]
     >  Evitare di modificare i test esistenti che hanno avuto successo. Piuttosto, aggiungere nuovi test. Modificare i test esistenti solo in caso di variazione dei requisiti dell'utente. Questo criterio consente di assicurarsi di non perdere le funzionalità esistenti mentre si lavora per estendere il codice.  
@@ -180,13 +180,13 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
     }  
     ```  
   
-2.  In Esplora test scegliere **Esegui tutto**.  
+2. In Esplora test scegliere **Esegui tutto**.  
   
      Il nuovo test ha esito negativo nonostante il primo test abbia comunque esito positivo.  
   
      Per trovare il punto di errore, selezionare il test non superato e quindi nella parte inferiore di Esplora test, selezionare l'elemento più in alto della **Traccia dello stack**.  
   
-3.  Controllare il metodo sottoposto al test per vedere quale potrebbe essere l'errore. Nella classe `MyMath.Rooter` riscrivere il codice:  
+3. Controllare il metodo sottoposto al test per vedere quale potrebbe essere l'errore. Nella classe `MyMath.Rooter` riscrivere il codice:  
   
     ```  
     public double SquareRoot(double input)  
@@ -202,13 +202,13 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
     }  
     ```  
   
-4.  In Esplora test scegliere **Esegui tutto**.  
+4. In Esplora test scegliere **Esegui tutto**.  
   
      Ora entrambi i test avranno esito positivo.  
   
 #### <a name="add-tests-for-exceptional-cases"></a>Aggiungere test per i casi eccezionali  
   
-1.  Aggiungere un test per gli input negativi:  
+1. Aggiungere un test per gli input negativi:  
   
     ```csharp  
     [TestMethod]  
@@ -227,15 +227,15 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
      }  
     ```  
   
-2.  In Esplora test scegliere **Esegui tutto**.  
+2. In Esplora test scegliere **Esegui tutto**.  
   
      Il metodo sottoposto al test entra in un ciclo e deve essere annullato manualmente.  
   
-3.  Scegliere **Annulla**.  
+3. Scegliere **Annulla**.  
   
      Il test si interrompe dopo 10 secondi.  
   
-4.  Correggere il codice del metodo:  
+4. Correggere il codice del metodo:  
   
     ```csharp  
   
@@ -248,13 +248,13 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
     ...  
     ```  
   
-5.  In Esplora test scegliere **Esegui tutto**.  
+5. In Esplora test scegliere **Esegui tutto**.  
   
      Tutti i test avranno esito positivo.  
   
 #### <a name="refactor-without-changing-tests"></a>Effettuare il refactoring senza modificare i test  
   
-1.  Semplificare il codice, ma non modificare i test.  
+1. Semplificare il codice, ma non modificare i test.  
   
     > [!TIP]
     >  Il *refactoring* è una modifica che consente di migliorare le prestazioni o rendere il codice più facile da comprendere. Non è concepito per modificare il comportamento del codice e pertanto i test non vengono modificati.  
@@ -283,7 +283,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
     }  
     ```  
   
-2.  Scegliere **Esegui tutto**.  
+2. Scegliere **Esegui tutto**.  
   
      Tutti i test hanno ancora esito positivo.  
   

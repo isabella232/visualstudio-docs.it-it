@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101860"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
@@ -38,15 +38,15 @@ Editor
 
 In questa sezione di DSL Explorer è possibile:
 
--   Creare nuove schede. Le schede definiscono le intestazioni di sezione nella casella degli strumenti.
+- Creare nuove schede. Le schede definiscono le intestazioni di sezione nella casella degli strumenti.
 
--   Creare nuovi strumenti.
+- Creare nuovi strumenti.
 
--   Copiare e incollare strumenti.
+- Copiare e incollare strumenti.
 
--   Spostare gli strumenti verso l'alto o verso il basso nell'elenco.
+- Spostare gli strumenti verso l'alto o verso il basso nell'elenco.
 
--   Eliminare schede e strumenti.
+- Eliminare schede e strumenti.
 
 > [!IMPORTANT]
 > Per aggiungere o incollare elementi in DSL Explorer, fare clic con il pulsante destro del mouse sul nodo padre del padre del nuovo nodo. Ad esempio, per aggiungere uno strumento, pulsante destro del mouse della scheda e non il **strumenti** nodo. Per aggiungere una scheda, fare doppio clic il **Editor** nodo.
@@ -59,36 +59,36 @@ Il **generatore di connessioni** proprietà di uno strumento di connessione fa r
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Per aggiungere uno strumento alla casella degli strumenti
 
-1.  In genere si crea uno strumento elemento dopo avere creato una classe di forma e averla mappata a una classe di dominio.
+1. In genere si crea uno strumento elemento dopo avere creato una classe di forma e averla mappata a una classe di dominio.
 
      Si crea invece uno strumento di connessione dopo avere creato una classe connettore e averla mappata a una relazione di riferimento.
 
-2.  In DSL Explorer espandere il **Editor** nodo e il **schede della casella degli strumenti** nodo.
+2. In DSL Explorer espandere il **Editor** nodo e il **schede della casella degli strumenti** nodo.
 
      Fare doppio clic su un nodo di scheda della casella degli strumenti e quindi fare clic su **Aggiungi nuovo strumento elemento** oppure **Aggiungi nuovo strumento di connessione**.
 
-3.  Impostare il **icona casella degli strumenti** proprietà per fare riferimento a una bitmap 16 x 16.
+3. Impostare il **icona casella degli strumenti** proprietà per fare riferimento a una bitmap 16 x 16.
 
      Se si desidera definire una nuova icona, creare un file bitmap in Esplora soluzioni nel **Dsl\Resources** cartella. Il file deve avere i valori delle proprietà seguenti: **Azione di compilazione** = **contenuto**; **Copia in Directory di Output** = **non copiare**.
 
-4.  **Per uno strumento elemento:** Impostare il **classe** proprietà dello strumento per fare riferimento a una classe di dominio concreta mappata a una forma.
+4. **Per uno strumento elemento:** Impostare il **classe** proprietà dello strumento per fare riferimento a una classe di dominio concreta mappata a una forma.
 
      **Per uno strumento di connessione:** Impostare il **generatore di connessioni** proprietà dello strumento da uno degli elementi che sono disponibili nell'elenco a discesa. I generatori di connessione vengono creati automaticamente quando si mappa un connettore a una relazione di dominio. Se di recente si è creato un connettore, normalmente si selezionerà il generatore di connessioni associato.
 
-5.  Per testare il linguaggio DSL, premere F5 o CTRL+F5 e nell'istanza sperimentale di Visual Studio, aprire un file di modello di esempio. Il nuovo strumento verrà visualizzato nella casella degli strumenti. Trascinarlo sul diagramma per verificare che crei un nuovo elemento.
+5. Per testare il linguaggio DSL, premere F5 o CTRL+F5 e nell'istanza sperimentale di Visual Studio, aprire un file di modello di esempio. Il nuovo strumento verrà visualizzato nella casella degli strumenti. Trascinarlo sul diagramma per verificare che crei un nuovo elemento.
 
      Se lo strumento non viene visualizzata, arrestare l'istanza sperimentale di Visual Studio. Nella finestra di Windows **avviare** menu, eseguire **ripristinare Microsoft Visual Studio 2010 istanza sperimentale**. Nel menu **Compila** fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
 
 ## <a name="customizing"></a> Personalizzazione di strumenti elemento
  Per impostazione predefinita, lo strumento creerà una singola istanza della classe specificata, ma è possibile scegliere tra due alternative:
 
--   Definire le direttive di merge degli elementi su altre classi, per consentire loro di accettare nuove istanze di questa classe e di creare collegamenti aggiuntivi quando viene creato il nuovo elemento. Ad esempio, è possibile consentire all'utente di rilasciare un commento su un altro elemento e quindi creare un collegamento di riferimento tra i due.
+- Definire le direttive di merge degli elementi su altre classi, per consentire loro di accettare nuove istanze di questa classe e di creare collegamenti aggiuntivi quando viene creato il nuovo elemento. Ad esempio, è possibile consentire all'utente di rilasciare un commento su un altro elemento e quindi creare un collegamento di riferimento tra i due.
 
      Queste personalizzazioni influiscono anche su ciò che succede quando l'utente incolla o trascina un elemento.
 
      Per altre informazioni, vedere [spostamento e la creazione degli elementi di personalizzazione](../modeling/customizing-element-creation-and-movement.md).
 
--   Scrivere codice per personalizzare lo strumento in modo che possa creare gruppi di elementi. Lo strumento è inizializzato dai metodi in ToolboxHelper.cs che possono essere sostituiti. Per altre informazioni, vedere [creazione di gruppi di elementi da uno strumento](#groups).
+- Scrivere codice per personalizzare lo strumento in modo che possa creare gruppi di elementi. Lo strumento è inizializzato dai metodi in ToolboxHelper.cs che possono essere sostituiti. Per altre informazioni, vedere [creazione di gruppi di elementi da uno strumento](#groups).
 
 ## <a name="groups"></a> Creazione di gruppi di elementi da uno strumento
  Ogni strumento elemento contiene un prototipo degli elementi che deve creare. Per impostazione predefinita, ogni strumento elemento crea un singolo elemento, ma è anche possibile creare un gruppi di oggetti correlati con un solo strumento. A questo scopo, è necessario inizializzare lo strumento con un prototipo <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> che contiene gli elementi correlati.
@@ -236,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)
-- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Esempio di diagrammi circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

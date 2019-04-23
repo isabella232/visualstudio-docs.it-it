@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117856"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare una. File Vsct da un oggetto esistente. File CTC
 È possibile creare un file con estensione vsct basato su XML da un file di origine CTC esistente della tabella comandi. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSCT).  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Per creare un file con estensione vsct da un file CTC  
   
-1.  Ottenere una copia del linguaggio Perl.  
+1. Ottenere una copia del linguaggio Perl.  
   
-2.  Ottenere una copia dello script Perl ConvertCTCToVSCT.pl, in genere si trova nel  *\<percorso di installazione di Visual Studio SDK >* \visualstudiointegration\tools\bin. cartella.  
+2. Ottenere una copia dello script Perl ConvertCTCToVSCT.pl, in genere si trova nel  *\<percorso di installazione di Visual Studio SDK >* \visualstudiointegration\tools\bin. cartella.  
   
-3.  Ottenere una copia del file di origine CTC da convertire.  
+3. Ottenere una copia del file di origine CTC da convertire.  
   
-4.  Inserire i file nella stessa directory.  
+4. Inserire i file nella stessa directory.  
   
-5.  Nella finestra del prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spostarsi nella directory.  
+5. Nella finestra del prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spostarsi nella directory.  
   
-6.  Tipo  
+6. Tipo  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

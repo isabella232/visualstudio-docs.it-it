@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a48c0692dcdcc93d58b5909b03b151ed7e1aae2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57ec75ec116b3b107b01a139621d3c59ca8ecac9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094911"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedura: Modificare lo spazio dei nomi di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ ms.locfileid: "58955487"
   
 ### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Per modificare lo spazio dei nomi di un linguaggio specifico di dominio  
   
-1.  Nelle **DSL Explorer**, fare clic sui **Dsl** nodo.  
+1. Nelle **DSL Explorer**, fare clic sui **Dsl** nodo.  
   
-2.  Nel **delle proprietà** finestra Modifica il **Namespace** proprietà.  
+2. Nel **delle proprietà** finestra Modifica il **Namespace** proprietà.  
   
-3.  Salvare la soluzione e trasformare i modelli.  
+3. Salvare la soluzione e trasformare i modelli.  
   
-4.  Nel **Project** menu, fare clic su **Dsl proprietà**.  
+4. Nel **Project** menu, fare clic su **Dsl proprietà**.  
   
      Vengono visualizzate le proprietà per il progetto.  
   
-5.  Fare clic sulla scheda **Applicazione** .  
+5. Fare clic sulla scheda **Applicazione** .  
   
-6.  Modifica il **spazio dei nomi predefinito** proprietà per il nuovo nome dello spazio dei nomi.  
+6. Modifica il **spazio dei nomi predefinito** proprietà per il nuovo nome dello spazio dei nomi.  
   
-7.  Se inoltre si desidera modificare il nome dell'assembly, modificare il **proprietà nome Assembly.**  
+7. Se inoltre si desidera modificare il nome dell'assembly, modificare il **proprietà nome Assembly.**  
   
-8.  Se è stato modificato il nome dell'Assembly, aprire DslPackage\Package.tt e aggiornare questa riga:  
+8. Se è stato modificato il nome dell'Assembly, aprire DslPackage\Package.tt e aggiornare questa riga:  
   
      `string dslAssembly = "YourDSLassembly.Dsl.dll";`  
   
@@ -49,9 +49,9 @@ ms.locfileid: "58955487"
   
 10. Reimpostare l'istanza sperimentale di Visual Studio.  
   
-    1.  Eliminare **\Users\\**_{nome}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. Eliminare **\Users\\**_{nome}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
-    2.  Nella finestra di Windows **avviare** menu, scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**, **reimpostare il Istanza sperimentale**.  
+    2. Nella finestra di Windows **avviare** menu, scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**, **reimpostare il Istanza sperimentale**.  
   
 11. Nel **compilare** menu, scegliere **Ricompila soluzione**.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108712"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
   
  Per ridisporre il diagramma di definizione DSL, è possibile:  
   
--   Scambia principale e fare riferimento alle viste tramite il **Bring Tree Here** e **Dividi albero** comandi. Fare doppio clic su una classe di dominio singolo per visualizzarne i comandi seguenti.  
+- Scambia principale e fare riferimento alle viste tramite il **Bring Tree Here** e **Dividi albero** comandi. Fare doppio clic su una classe di dominio singolo per visualizzarne i comandi seguenti.  
   
--   Riordinare le classi di dominio e le classi di forme premendo Ctrl + freccia su e Ctrl + freccia giù.  
+- Riordinare le classi di dominio e le classi di forme premendo Ctrl + freccia su e Ctrl + freccia giù.  
   
--   Comprimere o espandere le classi usando l'icona in alto a destra di ciascuna forma.  
+- Comprimere o espandere le classi usando l'icona in alto a destra di ciascuna forma.  
   
--   Comprime le parti della struttura ad albero, fare clic sul segno meno (-) nella parte inferiore di una classe di dominio.  
+- Comprime le parti della struttura ad albero, fare clic sul segno meno (-) nella parte inferiore di una classe di dominio.  
   
 ## <a name="inheritance"></a>Ereditarietà  
  È possibile definire classi di dominio utilizzando l'ereditarietà. Per creare una derivazione di ereditarietà, fare clic sullo strumento di ereditarietà, sulla classe derivata e quindi scegliere la classe di base. Un elemento del modello ha tutte le proprietà definite in una propria classe di dominio, insieme a tutte le proprietà ereditate dalla classe di base. Eredita anche i ruoli nelle relazioni.  

@@ -14,20 +14,20 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109523"
 ---
 # <a name="getting-started-with-the-debugger"></a>Introduzione al debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il debugger di Visual Studio è facile da utilizzare in qualsiasi linguaggio. Di seguito viene illustrato come eseguire il debug di un semplice programma C#, ma è possibile applicare gli stessi passaggi al codice in altri linguaggi come C++ e JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Eseguire il debug di un progetto C# di base  
- Si inizierà con una semplice applicazione console C# (**File / nuovo / progetto**, quindi selezionare **Visual C#** e quindi selezionare **applicazione Console**). Se non si è mai lavorato con Visual Studio in precedenza, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Il **Main** metodo semplicemente aggiunge 1 a una variabile integer 10 volte e stampa il risultato nella console:  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Eseguire il debug di un progetto c# di base  
+ Si inizierà con una semplice applicazione console c# (**File / nuovo / progetto**, quindi selezionare **Visual c#** e quindi selezionare **applicazione Console**). Se non si è mai lavorato con Visual Studio in precedenza, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Il **Main** metodo semplicemente aggiunge 1 a una variabile integer 10 volte e stampa il risultato nella console:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Per altre informazioni sui punti di interruzione, vedere [Using Breakpoints](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Esaminare le variabili  
+## <a name="BKMK_Inspect_Variables"></a> Esaminare le variabili  
  Debug spesso implica la ricerca delle variabili che non contengono i valori che previsti in un momento specifico. Verranno illustrati alcuni dei metodi che è possibile esaminare le variabili.  
   
  Avviare di nuovo il debug. L’esecuzione si interrompe prima dell’esecuzione del codice `Console.WriteLine`. È possibile che vengano esecuzione procedendo (fare clic su **Debug / Step Over** oppure **F10**). In questo caso è possibile scegliere **Esegui istruzione** (**F11**) si otterrebbe lo stesso risultato; è la differenza sarà spiegata più avanti. La riga con l’ultima parentesi graffa del metodo dovrebbe essere diventata gialla. Esaminare la finestra Console. Si noterà **10**.  

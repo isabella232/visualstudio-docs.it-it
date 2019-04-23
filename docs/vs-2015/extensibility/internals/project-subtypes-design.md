@@ -10,12 +10,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085779"
 ---
 # <a name="project-subtypes-design"></a>Progettazione di sottotipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Sottotipi di progetto consentono a pacchetti VSPackage di estendere i progetti b
   
  Gli argomenti seguenti vengono descritte la progettazione di base e l'implementazione di sottotipi di progetto:  
   
--   Sottotipo di progetto.  
+- Sottotipo di progetto.  
   
--   Aggregazione a più livelli.  
+- Aggregazione a più livelli.  
   
--   Supporto di interfacce.  
+- Supporto di interfacce.  
   
 ## <a name="project-subtype-design"></a>Sottotipo di progetto  
  L'inizializzazione di un sottotipo di progetto viene ottenuta mediante l'aggregazione principale <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> oggetti. Questa aggregazione consente a un sottotipo di progetto eseguire l'override o migliorare la maggior parte delle funzionalità del progetto di base. Sottotipi di progetto ottenere la prima opportunità di gestire le proprietà usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, usando i comandi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>e gestione di elementi di progetto mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Sottotipi di progetto possono anche essere estesi:  
@@ -71,11 +71,11 @@ Extender di automazione sottotipo di progetto.
 ## <a name="multi-level-aggregation"></a>Aggregazione a più livelli  
  Un'implementazione di sottotipo di progetto che esegue il wrapping di un sottotipo di progetto di livello inferiore deve essere programmate in modo cooperativo per consentire il sottotipo di progetto interno funzionare correttamente. Un elenco di programmazione le responsabilità include:  
   
--   Il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> necessario delegare l'implementazione del sottotipo di progetto che esegue il wrapping il sottotipo interno per il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementazione del sottotipo di progetto interno per entrambe <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodi.  
+- Il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> necessario delegare l'implementazione del sottotipo di progetto che esegue il wrapping il sottotipo interno per il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementazione del sottotipo di progetto interno per entrambe <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodi.  
   
--   Il <xref:EnvDTE80.IInternalExtenderProvider> implementazione del sottotipo di progetto wrapper deve delegare a quello del relativo sottotipo del progetto interno. In particolare, l'implementazione di <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> deve ottenere la stringa dei nomi dal sottotipo di progetto interno e quindi concatenare le stringhe che si desidera aggiungere come dispositivi Extender.  
+- Il <xref:EnvDTE80.IInternalExtenderProvider> implementazione del sottotipo di progetto wrapper deve delegare a quello del relativo sottotipo del progetto interno. In particolare, l'implementazione di <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> deve ottenere la stringa dei nomi dal sottotipo di progetto interno e quindi concatenare le stringhe che si desidera aggiungere come dispositivi Extender.  
   
--   Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> deve creare un'istanza di implementazione di un sottotipo di progetto wrapper di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> oggetto del relativo interna sottotipo di progetto e tenerlo in un delegato privato, poiché solo oggetto di configurazione di progetto del progetto base direttamente è evidente che il wrapper oggetto di configurazione sottotipo di progetto esistente. Sottotipo del progetto esterno può inizialmente scegliere interfacce di configurazione che si desidera gestire in modo diretto e quindi delegare il resto all'implementazione del sottotipo di progetto interno di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> deve creare un'istanza di implementazione di un sottotipo di progetto wrapper di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> oggetto del relativo interna sottotipo di progetto e tenerlo in un delegato privato, poiché solo oggetto di configurazione di progetto del progetto base direttamente è evidente che il wrapper oggetto di configurazione sottotipo di progetto esistente. Sottotipo del progetto esterno può inizialmente scegliere interfacce di configurazione che si desidera gestire in modo diretto e quindi delegare il resto all'implementazione del sottotipo di progetto interno di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
   
 ## <a name="supporting-interfaces"></a>Supporto di interfacce  
  Il progetto di base delega le chiamate al supporto di interfacce aggiunte da un sottotipo di progetto, per estendere vari aspetti della relativa implementazione. Ciò include l'estensione vari oggetti di browser di proprietà e gli oggetti di configurazione di progetto. Queste interfacce vengono recuperate chiamando `QueryInterface` sul `punkOuter` (un puntatore al `IUnknown`) di Sil aggregator sottotipo di progetto più esterno.  

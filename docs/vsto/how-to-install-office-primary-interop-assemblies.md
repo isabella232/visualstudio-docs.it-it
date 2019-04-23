@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7ceba236859b61444546661c2b8395c75b8d792
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109504"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Procedura: Installare l'assembly di interoperabilità primari di Office
   Quando si installa Office, installare gli assembly di interoperabilità primari (PIA) di Microsoft Office.
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Per installare gli assembly di interoperabilità primari durante l'installazione di Office
 
-1.  Assicurarsi di avere una versione di.NET Framework che non sia precedente alla versione 2.0.
+1. Assicurarsi di avere una versione di.NET Framework che non sia precedente alla versione 2.0.
 
-2.  Installare Microsoft Office e assicurarsi che il **Supporto programmabilità .NET** funzione è selezionata per le applicazioni che si desidera estendere (questa funzionalità è inclusa nell'installazione predefinita).
+2. Installare Microsoft Office e assicurarsi che il **Supporto programmabilità .NET** funzione è selezionata per le applicazioni che si desidera estendere (questa funzionalità è inclusa nell'installazione predefinita).
 
     > [!WARNING]
     >  Per impostazione predefinita, assembly di interoperabilità primari vengono incorporati nella soluzione durante la compilazione in modo da non dover distribuire assembly di interoperabilità primari agli utenti come prerequisito per l'uso del componente aggiuntivo VSTO o della personalizzazione.

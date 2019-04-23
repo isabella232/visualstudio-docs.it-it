@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099546"
 ---
 # <a name="create-a-custom-debug-engine"></a>Creare un motore di debug personalizzato
 Un motore di debug (DE) è un componente che consente il debug di architetture in fase di esecuzione particolare. È in genere solo un'implementazione di DE per ogni ambiente run-time.
@@ -29,15 +29,15 @@ Un motore di debug (DE) è un componente che consente il debug di architetture i
 
  Creazione di un CRI prevede i passaggi seguenti:
 
-1.  Registrare un CRI con Visual Studio
+1. Registrare un CRI con Visual Studio
 
-2.  Abilitare un programma da sottoporre a debug
+2. Abilitare un programma da sottoporre a debug
 
-3.  Implementare la valutazione di controllo e lo stato di esecuzione
+3. Implementare la valutazione di controllo e lo stato di esecuzione
 
-4.  Inviare eventi
+4. Inviare eventi
 
-5.  Configurazione di terminazione e scollegamento
+5. Configurazione di terminazione e scollegamento
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Registrare un motore di debug personalizzato](../../extensibility/debugger/registering-a-custom-debug-engine.md) illustra i passaggi necessari per registrare un motore di debug con Visual Studio in modo che può essere usato.

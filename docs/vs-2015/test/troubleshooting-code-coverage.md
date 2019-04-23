@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117408"
 ---
 # <a name="troubleshooting-code-coverage"></a>Risoluzione dei problemi di code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
 ### <a name="youre-looking-at-a-previous-result"></a>Si sta cercando un risultato precedente  
  Quando si modificano e si rieseguono i test, i risultati di un code coverage precedente possono rimanere visibile, inclusa la colorazione del codice dell'esecuzione precedente.  
   
-1.  Eseguire Analizza code coverage.  
+1. Eseguire Analizza code coverage.  
   
-2.  Verificare che sia stato selezionato il set di risultati più recente nella finestra dei risultati del code coverage.  
+2. Verificare che sia stato selezionato il set di risultati più recente nella finestra dei risultati del code coverage.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>I file con estensione pdb (simbolo) non sono disponibili  
  Analisi  
@@ -107,17 +107,17 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Risoluzione  
  Esistono due possibili tipi di errori:  
   
--   **Errore XML**  
+- **Errore XML**  
   
      Aprire il file con estensione runsettings nell'editor XML di Visual Studio. Individuare le indicazioni degli errori.  
   
--   **Errore di espressione regolare**  
+- **Errore di espressione regolare**  
   
      Ogni stringa del file è un'espressione regolare. Rivederle singolarmente per individuare gli errori, in particolare cercare:  
   
-    -   Parentesi non corrispondenti (...) o parentesi non precedute da un carattere di escape \\(...\\). Se si desidera trovare la corrispondenza con una parentesi nella stringa di ricerca, è necessario utilizzare caratteri di escape. Ad esempio, per trovare la corrispondenza con una funzione, usare `.*MyFunction\(double\)`  
+    - Parentesi non corrispondenti (...) o parentesi non precedute da un carattere di escape \\(...\\). Se si desidera trovare la corrispondenza con una parentesi nella stringa di ricerca, è necessario utilizzare caratteri di escape. Ad esempio, per trovare la corrispondenza con una funzione, usare `.*MyFunction\(double\)`  
   
-    -   L'asterisco o il segno più all'inizio di un'espressione. Per cercare una stringa di caratteri, utilizzare un punto seguito da un asterisco: `.*`  
+    - L'asterisco o il segno più all'inizio di un'espressione. Per cercare una stringa di caratteri, utilizzare un punto seguito da un asterisco: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>File personalizzato con estensione runsettings con esclusioni non corrette  
  Analisi  

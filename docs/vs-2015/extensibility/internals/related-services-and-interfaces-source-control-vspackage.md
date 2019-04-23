@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118110"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in
   
  Le interfacce sono:  
   
--   Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.  
+- Obbligatorie: L'entità appropriata (progetto di controllo del codice sorgente VSPackage, Stub di controllo, origine) deve implementare l'interfaccia.  
   
--   Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.  
+- Consigliato: L'entità deve implementare questa interfaccia. in caso contrario, controllo del codice sorgente può essere limitato.  
   
--   Facoltativo: l'entità può implementare questa interfaccia per fornire un set di funzionalità più avanzato.  
+- Facoltativo: l'entità può implementare questa interfaccia per fornire un set di funzionalità più avanzato.  
   
 |Interfaccia|Scopo|Implementato da|Implementare?|  
 |---------------|-------------|--------------------|----------------|  

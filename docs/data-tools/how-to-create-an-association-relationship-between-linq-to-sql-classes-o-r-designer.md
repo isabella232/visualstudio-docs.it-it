@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112286"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: creare un'associazione tra classi LINQ to SQL (O/R Designer)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione tra classi LINQ to SQL (O/R Designer)
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.
 
 Quando si usa la finestra di dialogo **Editor di associazione** per creare un'associazione, è necessario selezionare una classe padre e una classe figlio. La classe padre è la classe di entità che contiene la chiave primaria, mentre la classe figlio è la classe di entità che contiene la chiave esterna. Se, ad esempio, le classi di entità sono state create con mapping al `Northwind Customers` e `Orders` tabelle, il `Customer` classe sarebbe la classe padre e il `Order` classe sarebbe la classe figlio.
@@ -36,15 +36,15 @@ Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Per creare un'associazione tra classi di entità
 
-1.  Fare clic con il pulsante destro del mouse sulla classe di entità che rappresenta la classe padre nell'associazione, scegliere **Aggiungi** e quindi fare clic su **Associazione**.
+1. Fare clic con il pulsante destro del mouse sulla classe di entità che rappresenta la classe padre nell'associazione, scegliere **Aggiungi** e quindi fare clic su **Associazione**.
 
-2.  Verificare che nella finestra di dialogo **Editor di associazione** sia selezionata la **Classe padre** corretta.
+2. Verificare che nella finestra di dialogo **Editor di associazione** sia selezionata la **Classe padre** corretta.
 
-3.  Nella casella combinata selezionare **Classe figlio**.
+3. Nella casella combinata selezionare **Classe figlio**.
 
-4.  Selezionare le **Proprietà associazione** che mettono in relazione le classi. In genere, questa operazione consente di eseguire il mapping alla relazione di chiave esterna definita nel database. Ad esempio, nel `Customers` e `Orders` associazione, il **le proprietà di associazione** sono il `CustomerID` per ogni classe.
+4. Selezionare le **Proprietà associazione** che mettono in relazione le classi. In genere, questa operazione consente di eseguire il mapping alla relazione di chiave esterna definita nel database. Ad esempio, nel `Customers` e `Orders` associazione, il **le proprietà di associazione** sono il `CustomerID` per ogni classe.
 
-5.  Fare clic su **OK** per creare l'associazione.
+5. Fare clic su **OK** per creare l'associazione.
 
 ## <a name="see-also"></a>Vedere anche
 

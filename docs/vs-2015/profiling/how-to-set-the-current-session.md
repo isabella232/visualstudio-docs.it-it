@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102692"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54760392"
   
 ### <a name="to-set-current-performance-session"></a>Per impostare la sessione di prestazioni corrente  
   
--   In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi fare clic su **Imposta come sessione corrente**.  
+- In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi fare clic su **Imposta come sessione corrente**.  
   
      Il nome della sessione verrà visualizzato in grassetto.  
   

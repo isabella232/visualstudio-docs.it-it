@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109128"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ La visualizzazione modello di contenuto fornisce una rappresentazione grafica di
 ## <a name="undoredo"></a>Annullamento/ripristino  
  La funzionalità di annullamento/ripristino è abilitata nella visualizzazione modello di contenuto per le seguenti azioni:  
   
--   Aggiunta di un singolo nodo con trascinamento della selezione.  
+- Aggiunta di un singolo nodo con trascinamento della selezione.  
   
--   Aggiunta di più nodi dalla finestra dei risultati della ricerca in Schema Explorer.  
+- Aggiunta di più nodi dalla finestra dei risultati della ricerca in Schema Explorer.  
   
--   Aggiunta di nodi dalla visualizzazione iniziale.  
+- Aggiunta di nodi dalla visualizzazione iniziale.  
   
--   Eliminazione di uno o più nodi.  
+- Eliminazione di uno o più nodi.  
   
 ## <a name="zoom"></a>Zoom  
  Lo zoom è disponibile nell'angolo inferiore destro della visualizzazione modello di contenuto.  

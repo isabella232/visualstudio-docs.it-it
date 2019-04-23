@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102523"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Concedere l'attendibilità alle soluzioni Office
   Concedere l'attendibilità Office solutions significa che modifica i criteri di sicurezza di ogni computer di destinazione per considerare attendibile l'assembly della soluzione, manifesto dell'applicazione, manifesto della distribuzione e documenti. È possibile concedere attendibilità alla soluzione Office per l'utente o l'utente finale.
@@ -31,7 +31,7 @@ ms.locfileid: "54871377"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="Signing"></a> Concedere l'attendibilità alla soluzione firmando i manifesti dell'applicazione e distribuzione
+## <a name="Signing"></a> Concedere l'attendibilità alla soluzione firmando i manifesti dell'applicazione e distribuzione
  Tutte le applicazioni e distribuzione manifests for Office solutions devono essere firmate con un certificato che identifica il server di pubblicazione. I certificati forniscono una base per prendere decisioni di attendibilità.
 
  Un certificato temporaneo viene creato e concessa l'attendibilità in fase di compilazione in modo che la soluzione verrà eseguita durante il debug. Se si pubblica una soluzione che viene firmata con un certificato temporaneo, all'utente finale verrà richiesto di prendere una decisione di attendibilità.
@@ -40,7 +40,7 @@ ms.locfileid: "54871377"
 
  Se uno sviluppatore esegue la soluzione con un certificato temporaneo, un amministratore può firmare nuovamente la personalizzazione con un certificato attendibile e noto con il Manifest Generation and Editing Tool (*mage.exe*), ovvero una del Strumenti di Microsoft .NET Framework. Per altre informazioni sulla firma delle soluzioni, vedere [come: Firmare soluzioni Office](../vsto/how-to-sign-office-solutions.md) e [come: Firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-##  <a name="TrustPrompt"></a>Concedere l'attendibilità alla soluzione tramite la richiesta di attendibilità di ClickOnce
+## <a name="TrustPrompt"></a>Concedere l'attendibilità alla soluzione tramite la richiesta di attendibilità di ClickOnce
  [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiede all'utente finale per prendere la decisione di attendibilità, se non sono presenti criteri a livello di organizzazione che considera attendibile il certificato della soluzione. Se l'utente concede l'attendibilità alla soluzione, viene creata una voce di elenco di inclusione che contiene un URL e una chiave pubblica per archiviare questa decisione di attendibilità. Quando una personalizzazione trusted viene eseguita in un secondo momento, è possibile che l'utente finale non viene richiesto anche in questo caso.
 
  Gli amministratori possono disabilitare la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità o richiedono che il prompt dei comandi si verificano solo per le soluzioni che sono firmate con un certificato Authenticode. Per altre informazioni su come modificare queste impostazioni per le zone di siti non attendibili, siti attendibili, Internet, LocalIntranet e risorse del computer, vedere [come: Configurare il comportamento di richiesta di attendibilità di ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).

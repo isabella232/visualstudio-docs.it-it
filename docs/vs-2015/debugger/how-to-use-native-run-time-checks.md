@@ -41,12 +41,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101678"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: Usare i controlli di runtime nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,11 +77,11 @@ In Visual C++ è possibile usare [runtime_checks](http://msdn.microsoft.com/libr
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Per attivare i controlli runtime nativi in una build di debug  
   
--   Usare l'opzione **/RTC** e collegarsi alla versione di debug di una libreria di runtime del linguaggio C, ad esempio /MDd.  
+- Usare l'opzione **/RTC** e collegarsi alla versione di debug di una libreria di runtime del linguaggio C, ad esempio /MDd.  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>Per modificare il comportamento dei controlli runtime nativi  
   
--   Usare il pragma `runtime_checks` .  
+- Usare il pragma `runtime_checks` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  

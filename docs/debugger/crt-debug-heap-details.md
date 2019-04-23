@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103277"
 ---
 # <a name="crt-debug-heap-details"></a>Informazioni dettagliate sull'heap di debug CRT
 In questo argomento vengono fornite informazioni dettagliate sull'heap di debug CRT.
@@ -201,7 +201,7 @@ Tutte le chiamate alle funzioni dell'heap, quali `malloc`, `free`, `calloc`, `re
 
 2. Attivare eventuali bit eseguendo `OR`- ing (OR bit per bit &#124; simboli) la variabile temporanea con le corrispondenti maschere di bit (rappresentate nel codice dell'applicazione da costanti manifesto).
 
-3. Disattivare gli altri bit effettuando un'operazione `AND` (simbolo & bit per bit) tra la variabile e un operatore `NOT` (simbolo ~ bit per bit) delle maschere di bit appropriate.
+3. Disattivare gli altri bit eseguendo `AND`- ing (OR bit per bit & simboli) la variabile con un `NOT` (OR bit per bit ~ simbolo) delle maschere di bit appropriate.
 
 4. Chiamare `_CrtSetDbgFlag` con il parametro `newFlag` impostato sul valore archiviato nella variabile temporanea per creare il nuovo stato di `_crtDbgFlag`.
 
@@ -261,7 +261,7 @@ La versione di debug dell'operatore `delete` può essere utilizzata con tutti i 
 
 ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funzioni per la creazione di report sullo stato dell'heap
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funzioni per la creazione di report sullo stato dell'heap
  **_CrtMemState**
 
  Per generare uno snapshot di riepilogo dello stato dell'heap in un dato momento, utilizzare la struttura _CrtMemState definita in CRTDBG.H:

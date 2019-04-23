@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110492"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Notare gli aspetti seguenti su questo modello:  
   
--   Il modello è possibile usare le classi di dominio, proprietà e relazioni definite nella definizione DSL.  
+- Il modello è possibile usare le classi di dominio, proprietà e relazioni definite nella definizione DSL.  
   
--   Il modello viene caricato il file del modello specificato nella `requires` proprietà.  
+- Il modello viene caricato il file del modello specificato nella `requires` proprietà.  
   
--   Una proprietà in `this` contiene l'elemento radice. Da qui, il codice può passare agli altri elementi del modello. Il nome della proprietà è in genere quello utilizzato per la classe di dominio di primo livello del linguaggio DSL. In questo esempio si tratta di `this.ExampleModel`.  
+- Una proprietà in `this` contiene l'elemento radice. Da qui, il codice può passare agli altri elementi del modello. Il nome della proprietà è in genere quello utilizzato per la classe di dominio di primo livello del linguaggio DSL. In questo esempio si tratta di `this.ExampleModel`.  
   
--   Anche se la lingua in cui vengono scritti i frammenti di codice C#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.  
+- Anche se la lingua in cui vengono scritti i frammenti di codice c#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.  
   
--   Per eseguire il debug del modello, aggiungere `debug="true"` per il `template` direttiva. Il modello verrà aperto in un'altra istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se si verifica un'eccezione. Se si desidera interrompere il debugger in un momento specifico nel codice, l'istruzione insert `System.Diagnostics.Debugger.Break();`  
+- Per eseguire il debug del modello, aggiungere `debug="true"` per il `template` direttiva. Il modello verrà aperto in un'altra istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se si verifica un'eccezione. Se si desidera interrompere il debugger in un momento specifico nel codice, l'istruzione insert `System.Diagnostics.Debugger.Break();`  
   
      Per altre informazioni, vedere [debug di un modello di testo T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  Il processore di direttiva del DSL esegue due attività principali:  
   
--   Inserisce in modo efficace le direttive di importazione e assembly nel modello che fa riferimento al linguaggio DSL. Ciò consente di usare le classi di dominio nel codice del modello.  
+- Inserisce in modo efficace le direttive di importazione e assembly nel modello che fa riferimento al linguaggio DSL. Ciò consente di usare le classi di dominio nel codice del modello.  
   
--   Carica il file specificato nella `requires` parametro e imposta una proprietà in `this` che fa riferimento all'elemento radice del modello caricato.  
+- Carica il file specificato nella `requires` parametro e imposta una proprietà in `this` che fa riferimento all'elemento radice del modello caricato.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>La convalida del modello prima di eseguire il modello  
  È possibile generare il modello da convalidare prima che il modello viene eseguito.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Se viene rilevato un errore, verrà segnalato nella finestra degli errori e il file di risultati conterrà un messaggio di errore.  
   
-##  <a name="Multiple"></a> L'accesso a più modelli da un modello di testo  
+## <a name="Multiple"></a> L'accesso a più modelli da un modello di testo  
   
 > [!NOTE]
 >  Questo metodo consente di leggere più modelli nello stesso modello, ma non supporta riferimenti ModelBus. Per leggere i modelli che sono collegate tra esse tramite riferimenti ModelBus, vedere [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

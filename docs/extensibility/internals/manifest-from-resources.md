@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110531"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Il manifesto dallo strumento di risorse è un'applicazione console che accetta un elenco di risorse grafiche (file con estensione PNG o XAML) e genera un file .imagemanifest che consente a tali immagini da utilizzare con il servizio di immagini di Visual Studio. Inoltre, questo strumento è utilizzabile per aggiungere immagini a un .imagemanifest esistente. Questo strumento è utile per l'aggiunta di supporto ad alta risoluzione e dei temi per le immagini a un'estensione di Visual Studio. Il file .imagemanifest generato deve essere incluso in e distribuito come parte di un'estensione di Visual Studio (VSIX).
@@ -43,25 +43,25 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
 
  **Esempi**
 
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>Note
 
--   Lo strumento supporta solo file con estensione png e. Xaml. Qualsiasi altro tipo di immagine o un file verrà ignorato. Viene generato un avviso per tutti i tipi non supportati rilevati durante l'analisi delle risorse. Se non supportata immagini sono disponibili al termine lo strumento di analisi delle risorse, verrà generato un errore
+- Lo strumento supporta solo file con estensione png e. Xaml. Qualsiasi altro tipo di immagine o un file verrà ignorato. Viene generato un avviso per tutti i tipi non supportati rilevati durante l'analisi delle risorse. Se non supportata immagini sono disponibili al termine lo strumento di analisi delle risorse, verrà generato un errore
 
--   Seguendo il formato consigliato per le immagini. PNG, lo strumento imposterà il valore delle dimensioni e delle dimensioni per il formato PNG per la dimensione di formato specificato, anche se è diversa dalla dimensione effettiva dell'immagine.
+- Seguendo il formato consigliato per le immagini. PNG, lo strumento imposterà il valore delle dimensioni e delle dimensioni per il formato PNG per la dimensione di formato specificato, anche se è diversa dalla dimensione effettiva dell'immagine.
 
--   Può essere omesso nel formato larghezza/altezza per immagini con estensione png, ma lo strumento leggerà effettiva larghezza/altezza dell'immagine e usandole per valore delle dimensioni e delle dimensioni dell'immagine.
+- Può essere omesso nel formato larghezza/altezza per immagini con estensione png, ma lo strumento leggerà effettiva larghezza/altezza dell'immagine e usandole per valore delle dimensioni e delle dimensioni dell'immagine.
 
--   Eseguire questo strumento nella sequenza di immagini stesse più volte per la stessa .imagemanifest comporterà voci duplicate del manifesto, perché lo strumento tenta di suddividere l'elenco di immagini in immagini autonome e aggiungerli al manifesto esistente.
+- Eseguire questo strumento nella sequenza di immagini stesse più volte per la stessa .imagemanifest comporterà voci duplicate del manifesto, perché lo strumento tenta di suddividere l'elenco di immagini in immagini autonome e aggiungerli al manifesto esistente.
 
--   Unione (omettendo /newGuids o /newIds) devono essere eseguita solo per i manifesti generati dallo strumento. I manifesti che sono stati personalizzati generati tramite altri mezzi non potrebbero risultare uniti correttamente.
+- Unione (omettendo /newGuids o /newIds) devono essere eseguita solo per i manifesti generati dallo strumento. I manifesti che sono stati personalizzati generati tramite altri mezzi non potrebbero risultare uniti correttamente.
 
--   I manifesti che vengono generati per gli assembly nativi debba essere modificato manualmente dopo la generazione per uniformare i simboli di ID risorsa ID file RC dell'assembly nativo.
+- I manifesti che vengono generati per gli assembly nativi debba essere modificato manualmente dopo la generazione per uniformare i simboli di ID risorsa ID file RC dell'assembly nativo.
 
 ## <a name="sample-output"></a>Esempio di output
  **Manifesto immagine semplice**

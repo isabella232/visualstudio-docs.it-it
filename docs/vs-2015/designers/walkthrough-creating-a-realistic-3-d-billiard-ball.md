@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110596"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo 3D realistici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
   
  Questo documento illustra le attività seguenti:  
   
--   Creazione dell'aspetto di base di una palla da biliardo utilizzando la forma e la trama.  
+- Creazione dell'aspetto di base di una palla da biliardo utilizzando la forma e la trama.  
   
--   Aggiunta di profondità tramite il modello di illuminazione Lambert.  
+- Aggiunta di profondità tramite il modello di illuminazione Lambert.  
   
--   Miglioramento dell'aspetto di base tramite l'utilizzo delle evidenziazioni speculari.  
+- Miglioramento dell'aspetto di base tramite l'utilizzo delle evidenziazioni speculari.  
   
--   Creazione di un senso di spazio tramite il riflesso dell'ambiente.  
+- Creazione di un senso di spazio tramite il riflesso dell'ambiente.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario disporre dei componenti e delle abilità seguenti:  
   
--   Uno strumento per l'assemblaggio di trame in una mappa cubo, come lo strumento Trama di DirectX incluso in DirectX SDK del giugno 2010.  
+- Uno strumento per l'assemblaggio di trame in una mappa cubo, come lo strumento Trama di DirectX incluso in DirectX SDK del giugno 2010.  
   
--   Conoscenza dell'editor di immagini in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Conoscenza dell'editor di immagini in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Conoscenza della Progettazione shader in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Conoscenza della Progettazione shader in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Creazione dell'aspetto di base con la forma e la trama  
  In computer grafica gli elementi più semplici dell'aspetto sono forma e colore. In una simulazione sul computer, è normale utilizzare un modello tridimensionale per rappresentare la forma di un oggetto reale. Il dettaglio del colore viene quindi applicato alla superficie del modello tramite una mappa di trama.  
@@ -87,7 +87,7 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
   
 3. Applicare la trama creata nella procedura precedente configurando le proprietà della trama. Impostare il valore della proprietà **Trama** del nodo **Campione trama** su **Trama1**, quindi specificare il file di trama utilizzando la proprietà **Nome file** del gruppo di proprietà **Trama1** nella stessa finestra della proprietà.  
   
-   Per ulteriori informazioni su come applicare una trama allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).  
+   Per altre informazioni su come applicare una trama allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).  
   
    La palla da biliardo dovrebbe ora risultare simile alla seguente:  
   
@@ -108,7 +108,7 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
   
 - Facoltativamente, è possibile regolare la modalità di comportamento dell'illuminazione configurando la proprietà **MaterialDiffuse** del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.  
   
-  Per ulteriori informazioni su come applicare una illuminazione di Lambert allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Per altre informazioni su come applicare una illuminazione di Lambert allo shader, vedere [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).  
   
   Con l'illuminazione di Lambert applicata, la palla da biliardo dovrebbe risultare simile alla seguente:  
   
@@ -129,7 +129,7 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
   
 2. Facoltativamente, è possibile regolare la modalità di comportamento dell'evidenziazione speculare configurando le proprietà speculari (**MaterialSpecular** e **MaterialSpecularPower**) del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.  
   
-   Per ulteriori informazioni su come applicare evidenziazioni speculari allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-phong-shader.md).  
+   Per altre informazioni su come applicare evidenziazioni speculari allo shader, vedere [Procedura: Creare uno shader con Phong di base](../designers/how-to-create-a-basic-phong-shader.md).  
   
    Con l'illuminazione speculare applicata, la palla da biliardo dovrebbe risultare simile alla seguente:  
   
@@ -215,7 +215,7 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
    In questa immagine finale, osservare come gli effetti aggiunti convergono per creare una palla da biliardo molto convincente. La forma, la trama e l'illuminazione creano l'aspetto di base di un oggetto 3D e le evidenziazioni e i riflessi speculari abbelliscono la palla da biliardo e la rendono parte dell'ambiente che la circonda.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
+ [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md)   
  [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Editor di immagini](../designers/image-editor.md)   

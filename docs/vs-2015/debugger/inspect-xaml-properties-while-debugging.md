@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101431"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Uso di strumenti XAML con applicazioni in esecuzione  
  È possibile usare questi strumenti XAML anche quando non si ha il codice sorgente. Quando si esegue l'associazione a un'applicazione XAML in esecuzione, è possibile usare lo strumento **Struttura ad albero visuale attiva** anche per gli elementi dell'interfaccia utente di tale applicazione. Di seguito è riportato un esempio che usa la stessa applicazione di test WPF usata in precedenza.  
   
-1.  Avviare l'applicazione **TestXaml** nella configurazione di rilascio. Non è possibile eseguire l'associazione a un processo in esecuzione in una configurazione di tipo**Debug**.  
+1. Avviare l'applicazione **TestXaml** nella configurazione di rilascio. Non è possibile eseguire l'associazione a un processo in esecuzione in una configurazione di tipo**Debug**.  
   
-2.  Aprire una seconda istanza di Visual Studio e fare clic su **Debug / Connetti a processo**. Trovare **TestXaml.exe** nell'elenco di processi disponibili e fare clic su **Associa**.  
+2. Aprire una seconda istanza di Visual Studio e fare clic su **Debug / Connetti a processo**. Trovare **TestXaml.exe** nell'elenco di processi disponibili e fare clic su **Associa**.  
   
-3.  Viene avviata l'esecuzione dell'applicazione.  
+3. Viene avviata l'esecuzione dell'applicazione.  
   
-4.  Nella seconda istanza di Visual Studio, aprire il **albero elementi visivi attivi** (**eseguire il Debug / Windows / albero elementi visivi attivi**). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.
+4. Nella seconda istanza di Visual Studio, aprire il **albero elementi visivi attivi** (**eseguire il Debug / Windows / albero elementi visivi attivi**). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099741"
 ---
 # <a name="actions-pane-overview"></a>Panoramica del riquadro azioni
   Un riquadro azioni è una personalizzabile **azioni documenti** riquadro attività che è collegato a un documento di Microsoft Office Word specifico o della cartella di lavoro di Microsoft Office Excel. Nel riquadro azioni è ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività incorporati, ad esempio la **origine XML** riquadro attività in Excel o il **stili e formattazione** riquadro attività in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.
@@ -61,17 +61,17 @@ ms.locfileid: "56608812"
 
  Per nascondere il riquadro attività nella soluzione, sono disponibili diverse opzioni:
 
--   Per Word, impostare il <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> proprietà del <xref:Microsoft.Office.Interop.Word.TaskPane> che rappresenta il riquadro attività Azioni documenti su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` nel progetto.
+- Per Word, impostare il <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> proprietà del <xref:Microsoft.Office.Interop.Word.TaskPane> che rappresenta il riquadro attività Azioni documenti su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` nel progetto.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Per Excel, impostare il <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> proprietà del <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> oggetto **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisWorkbook` nel progetto.
+- Per Excel, impostare il <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> proprietà del <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> oggetto **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisWorkbook` nel progetto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Per Word o Excel, in alternativa è possibile impostare il <xref:Microsoft.Office.Core.CommandBar.Visible%2A> proprietà della barra dei comandi che rappresenta il riquadro attività alla **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` o `ThisWorkbook` nel progetto.
+- Per Word o Excel, in alternativa è possibile impostare il <xref:Microsoft.Office.Core.CommandBar.Visible%2A> proprietà della barra dei comandi che rappresenta il riquadro attività alla **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` o `ThisWorkbook` nel progetto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608812"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Per visualizzare il riquadro azioni usando l'interfaccia utente di Word o Excel
 
-1.  Sulla barra multifunzione, scegliere il **visualizzazione** scheda.
+1. Sulla barra multifunzione, scegliere il **visualizzazione** scheda.
 
-2.  Nel **Mostra/Nascondi** gruppo, fare clic sui **azioni documenti** pulsante Mostra/Nascondi.
+2. Nel **Mostra/Nascondi** gruppo, fare clic sui **azioni documenti** pulsante Mostra/Nascondi.
 
 ## <a name="program-actions-pane-events"></a>Eventi del riquadro attività programma
  È possibile aggiungere più controlli utente al riquadro azioni e quindi scrivere codice in risposta a eventi nel documento mostrando e nascondendo i controlli utente. Se si esegue il mapping di elementi XML Schema al documento, è possibile mostrare determinati controlli utente nel riquadro azioni ogni volta che il punto di inserimento si trova all'interno di uno degli elementi XML. Per altre informazioni, vedere [Procedura: Mappare schemi a documenti di Word in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) e [come: Mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).

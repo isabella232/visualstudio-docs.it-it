@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111246"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procedura: Creare uno shader con Lambert di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  Questo documento illustra le attività seguenti:  
   
--   Aggiunta di nodi a un grafico shader  
+- Aggiunta di nodi a un grafico shader  
   
--   Disconnessione di nodi  
+- Disconnessione di nodi  
   
--   Connessione ai nodi  
+- Connessione ai nodi  
   
 ## <a name="the-lambert-lighting-model"></a>Modello di illuminazione Lambert  
  Il modello di illuminazione Lambert incorpora l'illuminazione ambientale e direzionale per ombreggiare oggetti in una scena 3D. I componenti ambientali forniscono un livello di illuminazione di base della scena 3D, mentre i componenti direzionali forniscono illuminazione aggiuntiva da sorgenti di luce (lontane) direzionali. L'illuminazione ambientale interessa allo stesso modo tutte le superfici della scena, indipendentemente dall'orientamento. Per una determinata superficie, è un prodotto del colore ambientale della superficie, nonché del colore e dell'intensità dell'illuminazione ambientale nella scena. L'illuminazione direzionale, invece, influenza ogni area della scena in modo diverso, in base all'orientamento della superficie rispetto alla direzione della sorgente di luce. È un prodotto del colore diffuso e dell'orientamento della superficie, nonché del colore, dell'intensità e della direzione delle sorgenti di luce. Le superfici rivolte direttamente verso una sorgente di luce ricevono il massimo contributo, mentre le superfici rivolte in senso contrario alla luce non ricevono alcun contributo. Nel modello di illuminazione Lambert, il componente ambientale e uno o più componenti direzionali vengono combinati per determinare il contributo totale di colore con riflessione diffusa per ogni punto sull'oggetto.  
@@ -63,7 +63,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
+ [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md)   
  [Procedura: Creare uno shader con Phong di base](../designers/how-to-create-a-basic-phong-shader.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

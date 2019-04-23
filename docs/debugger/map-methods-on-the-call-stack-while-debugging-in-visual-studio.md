@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111805"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Creare una mappa visiva dello stack di chiamate durante il debug (C#, Visual Basic, C++, JavaScript)
 
@@ -51,7 +51,7 @@ Ecco un rapido controllo di una mappa del codice:
 
  ![Debug con stack di chiamate in mappe codici](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
+## <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
 
 1. In Visual Studio Enterprise C#, Visual Basic, C++, o JavaScript del progetto, avviare il debug, selezionando **Debug** > **Avvia debug** o premere **F5** .
 
@@ -89,11 +89,11 @@ Per controllare il layout della mappa, selezionare la **Layout** menu sulla barr
 
 Nel **Layout** menu, è possibile:
 
--   Modificare il layout predefinito.
--   Arrestare automaticamente la ridisposizione della mappa deselezionando **Layout automatico durante il debug**.
--   Ridisporre la mappa il meno possibile quando si aggiungono elementi, deselezionando **Layout incrementale**.
+- Modificare il layout predefinito.
+- Arrestare automaticamente la ridisposizione della mappa deselezionando **Layout automatico durante il debug**.
+- Ridisporre la mappa il meno possibile quando si aggiungono elementi, deselezionando **Layout incrementale**.
 
-##  <a name="MakeNotes"></a> Aggiungere note sul codice
+## <a name="MakeNotes"></a> Aggiungere note sul codice
 
 È possibile aggiungere commenti per tenere traccia di ciò che avviene nel codice.
 
@@ -103,7 +103,7 @@ Per aggiungere una nuova riga in un commento, premere **Shift**+**invio**.
 
  ![Aggiungere un commento allo stack di chiamate nella mappa codici](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> Aggiornare la mappa con lo stack di chiamate successivo
+## <a name="UpdateMap"></a> Aggiornare la mappa con lo stack di chiamate successivo
 
 Quando si esegue l'app per il punto di interruzione successivo o il passaggio in una funzione, la mappa aggiungerà automaticamente nuovi stack di chiamate.
 
@@ -111,7 +111,7 @@ Quando si esegue l'app per il punto di interruzione successivo o il passaggio in
 
 Per interrompere la mappa di aggiungere automaticamente nuovi stack di chiamate, selezionare ![Show stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif "Show stack di chiamate nella mappa del codice automaticamente") sulla barra degli strumenti della mappa codice. La mappa continuerà a evidenziare gli stack di chiamate esistenti. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl**+**MAIUSC**+**`**.
 
-##  <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
+## <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
 
 Ora che disponibile una mappa, in C# o Visual Basic, è possibile aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di ciò che avviene nel codice.
 
@@ -134,7 +134,7 @@ Continuare a compilare la mappa per visualizzare altro codice.
 
  ![I metodi che usano un campo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> Individuare bug usando la mappa
+## <a name="FindBugs"></a> Individuare bug usando la mappa
  Visualizzando il codice, sarà possibile rilevare i bug più rapidamente. Si supponga, ad esempio, che si sta esaminando un bug in un'app di disegno. Quando si disegna una linea e si tenta di annullare l'operazione, non accadrà nulla finché non si disegnerà un'altra riga.
 
  Pertanto, impostare punti di interruzione nei metodi `clear`, `undo` e `Repaint`, avviare il debug e compilare una mappa come quella indicata di seguito:

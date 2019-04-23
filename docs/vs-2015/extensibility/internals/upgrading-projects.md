@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100599"
 ---
 # <a name="upgrading-projects"></a>Aggiornamento dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Modifiche al modello di progetto da una versione di [!INCLUDE[vsprvs](../../incl
 ## <a name="upgrade-strategies"></a>Strategie di aggiornamento  
  Per supportare un aggiornamento, l'implementazione di sistema di progetto è necessario definire e implementare una strategia di aggiornamento. Per determinare la strategia, è possibile scegliere per il supporto side-by-side (SxS) backup, backup di copia o entrambi.  
   
--   Backup SxS significa che un progetto copia solo i file che richiedono l'aggiornamento sul posto, aggiungendo un suffisso di nome file appropriato, ad esempio, "old".  
+- Backup SxS significa che un progetto copia solo i file che richiedono l'aggiornamento sul posto, aggiungendo un suffisso di nome file appropriato, ad esempio, "old".  
   
--   Backup di copia indica che un progetto copia tutti gli elementi di progetto in un percorso di backup fornito dall'utente. Quindi vengono aggiornati i file presenti nel percorso progetto originale.  
+- Backup di copia indica che un progetto copia tutti gli elementi di progetto in un percorso di backup fornito dall'utente. Quindi vengono aggiornati i file presenti nel percorso progetto originale.  
   
 ## <a name="how-upgrade-works"></a>Come funziona l'aggiornamento  
  Quando una soluzione creata in una versione precedente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene aperto in una versione più recente, i controlli di IDE la soluzione di file per determinare se deve essere aggiornato. Se l'aggiornamento è obbligatorio, il **aggiornamento guidato** viene avviato automaticamente per guidare l'utente attraverso il processo di aggiornamento.  

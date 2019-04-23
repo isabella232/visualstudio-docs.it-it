@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02d56441eb8cb5a47fcdfc6cfa0db153fd72b8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100991"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visual Studio consente di comprendere in che modo uno specifico pixel viene interessato dagli eventi Direct3D che si verificano durante un frame del gioco o dell'app.
@@ -35,7 +35,7 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
 
  È possibile espandere ogni primitiva per esaminare in che modo l'output del pixel shader è stato unito al colore del pixel esistente per produrre il colore risultante. A questo punto è possibile esaminare o eseguire il debug del codice del pixel shader associato alla primitiva ed è inoltre possibile espandere il nodo di vertex shader per esaminare l'input del vertex shader.
 
-###  <a name="exclusion"></a> Esclusione di primitive
+### <a name="exclusion"></a> Esclusione di primitive
  Se una primitiva viene esclusa dall'influenzare il colore del pixel, l'esclusione può verificarsi per diversi motivi. Ogni motivo è rappresentato da un'icona descritta nella tabella seguente:
 
 |Icona|Motivo dell'esclusione|
@@ -52,22 +52,22 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
 
 ##### <a name="to-view-a-shaders-source-code"></a>Per visualizzare il codice sorgente di uno shader
 
-1.  Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.
+1. Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.
 
-2.  Sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.
+2. Sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.
 
-3.  Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.
+3. Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.
 
     > [!TIP]
     >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.
 
 ##### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader
 
-1.  Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.
+1. Nella finestra **Cronologia pixel grafica** individuare la chiamata di disegno che corrisponde allo shader da esaminare ed espanderla.
 
-2.  Quindi, sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.
+2. Quindi, sotto la chiamata di disegno appena espansa selezionare una primitiva che mostra il problema a cui si è interessati ed espanderla.
 
-3.  Sotto la primitiva scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la primitiva corrispondente, ovvero il primo pixel o vertice elaborato dallo shader. Esiste un solo pixel associato alla primitiva, ma esistono più chiamate del vertex shader per linee e triangoli.
+3. Sotto la primitiva scegliere **Avvia debug**. Questo punto di ingresso nel debugger HLSL corrisponde per impostazione predefinita alla prima chiamata dello shader per la primitiva corrispondente, ovvero il primo pixel o vertice elaborato dallo shader. Esiste un solo pixel associato alla primitiva, ma esistono più chiamate del vertex shader per linee e triangoli.
 
      Per eseguire il debug della chiamata del vertex shader per un vertice specifico, espandere il collegamento del titolo VertexShader e individuare il vertice a cui si è interessati, quindi scegliere **Avvia debug** accanto al vertice.
 
@@ -75,5 +75,5 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
  Per comprendere gli eventi grafici nella cronologia del pixel, potrebbero essere necessarie informazioni sullo stato del dispositivo al momento dell'evento o sugli oggetti Direct3D a cui fa riferimento l'evento. Per ogni evento nella cronologia del pixel, la **Cronologia pixel grafica** fornisce collegamenti allo stato del dispositivo in essere e agli oggetti correlati.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
-- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

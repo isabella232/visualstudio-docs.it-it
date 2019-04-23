@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117980"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Rendere persistenti i controlli dinamici nei documenti di Office
 
@@ -76,11 +76,11 @@ Anche nei componenti aggiuntivi VSTO i controlli vengono rimossi, tuttavia i wra
 
 È possibile ricreare i controlli Windows Form eliminati quando l'utente riapre il documento. A questo scopo, la soluzione deve eseguire le attività seguenti:
 
-1.  Memorizzare le informazioni sulla dimensione, il percorso e lo stato dei controlli quando il documento viene salvato o chiuso. In una personalizzazione a livello di documento, è possibile salvare i dati nella cache i dati del documento. In un componente aggiuntivo VSTO, è possibile salvare i dati a una parte XML personalizzata nel documento.
+1. Memorizzare le informazioni sulla dimensione, il percorso e lo stato dei controlli quando il documento viene salvato o chiuso. In una personalizzazione a livello di documento, è possibile salvare i dati nella cache i dati del documento. In un componente aggiuntivo VSTO, è possibile salvare i dati a una parte XML personalizzata nel documento.
 
-2.  Ricreare i controlli in un evento generato all'apertura del documento. Nei progetti a livello di documento, questa attività può essere eseguita nei gestori eventi `Sheet`*n*`_Startup` o `ThisDocument_Startup` . Nei progetti di componenti aggiuntivi VSTO, questa attività può essere eseguita nei gestori degli eventi <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Ricreare i controlli in un evento generato all'apertura del documento. Nei progetti a livello di documento, questa attività può essere eseguita nei gestori eventi `Sheet`*n*`_Startup` o `ThisDocument_Startup` . Nei progetti di componenti aggiuntivi VSTO, questa attività può essere eseguita nei gestori degli eventi <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-###  <a name="removingActiveX"></a> Rimozione dei wrapper ActiveX contenuti in un componente aggiuntivo
+### <a name="removingActiveX"></a> Rimozione dei wrapper ActiveX contenuti in un componente aggiuntivo
 
 Quando si aggiungono controlli Windows Form dinamici ai documenti usando un componente aggiuntivo VSTO, è possibile impedire i wrapper ActiveX dei controlli nel documento alla successiva apertura nei modi seguenti.
 

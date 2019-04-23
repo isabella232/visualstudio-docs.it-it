@@ -13,12 +13,12 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e3dfc502157b2d0016f1a0fd9a12dc3905f623c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112364"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Specifica le informazioni relative a un assembly, che usa il modello per aggiung
   
  Questo testo specifica l'assembly da aggiungere a un progetto quando viene creata un'istanza del modello di elemento. Questo nome dell'assembly deve essere specificato in uno dei modi seguenti:  
   
--   Come un nome completo dell'assembly. Ad esempio:  
+- Come un nome completo dell'assembly. Ad esempio:  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ Specifica le informazioni relative a un assembly, che usa il modello per aggiung
     </Assembly>  
     ```  
   
--   Come riferimento in testo semplice. Ad esempio:  
+- Come riferimento in testo semplice. Ad esempio:  
   
     ```  
     <Assembly> System </Assembly>  

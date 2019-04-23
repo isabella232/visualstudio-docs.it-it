@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100248"
 ---
 # <a name="localize-menu-commands"></a>Localizzare i comandi di menu
 È possibile fornire il testo localizzato per i comandi di menu e barra degli strumenti mediante la creazione di localizzata *vsct* i file e localizzate *resx* file per il pacchetto VSPackage e quindi aggiornare i file di progetto incorporare il modifiche.
@@ -76,19 +76,19 @@ ms.locfileid: "56679268"
 ## <a name="localize-other-text-resources"></a>Localizzare le altre risorse di testo
  Le risorse di testo diverso da nomi di comando vengono definite nella risorsa (*resx*) file.
 
-1.  Rinominare *VSPackage.resx* al *VSPackage.en-us. resx*.
+1. Rinominare *VSPackage.resx* al *VSPackage.en-us. resx*.
 
-2.  Creare una copia del *VSPackage.en-us. resx* file per ogni lingua localizzata.
+2. Creare una copia del *VSPackage.en-us. resx* file per ogni lingua localizzata.
 
      Nome di ogni copia *VSPackage. { Impostazioni locali} resx*, dove *{delle impostazioni locali}* è un nome di impostazioni cultura particolari.
 
-3.  Rinominare *Resources. resx* al *Resources. en-us. resx*.
+3. Rinominare *Resources. resx* al *Resources. en-us. resx*.
 
-4.  Creare una copia del *Resources. en-us. resx* file per ogni lingua localizzata.
+4. Creare una copia del *Resources. en-us. resx* file per ogni lingua localizzata.
 
      Nome di ogni copia *le risorse. { Impostazioni locali} resx*, dove *{delle impostazioni locali}* è un nome di impostazioni cultura particolari.
 
-5.  Aprire ognuno *resx* file per modificare la stringa di valori come appropriato per la lingua particolare. Nell'esempio seguente illustra la definizione di risorsa localizzata per la barra del titolo di una finestra degli strumenti.
+5. Aprire ognuno *resx* file per modificare la stringa di valori come appropriato per la lingua particolare. Nell'esempio seguente illustra la definizione di risorsa localizzata per la barra del titolo di una finestra degli strumenti.
 
      [*Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ ms.locfileid: "56679268"
 ## <a name="incorporate-localized-resources-into-the-project"></a>Incorporare le risorse localizzate nel progetto
  È necessario modificare il *assemblyinfo.cs* file e il file di progetto per incorporare le risorse localizzate.
 
-1.  Dal **delle proprietà** nodo nel **Esplora soluzioni**, aprire *assemblyinfo.cs* o *AssemblyInfo. vb* nell'editor.
+1. Dal **delle proprietà** nodo nel **Esplora soluzioni**, aprire *assemblyinfo.cs* o *AssemblyInfo. vb* nell'editor.
 
-2.  Aggiungere la voce seguente.
+2. Aggiungere la voce seguente.
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ ms.locfileid: "56679268"
 
      Consente di impostare inglese come lingua predefinita.
 
-3.  Scaricare il progetto.
+3. Scaricare il progetto.
 
-4.  Aprire il file di progetto nell'editor.
+4. Aprire il file di progetto nell'editor.
 
-5.  Individuare il `ItemGroup` elemento contenente `EmbeddedResource` elementi.
+5. Individuare il `ItemGroup` elemento contenente `EmbeddedResource` elementi.
 
-6.  Nel `EmbeddedResource` elemento che chiama *VSPackage.en-us. resx*, sostituire il `ManifestResourceName` elemento con un `LogicalName` elemento, impostato su `VSPackage.en-US.Resources`, come indicato di seguito.
+6. Nel `EmbeddedResource` elemento che chiama *VSPackage.en-us. resx*, sostituire il `ManifestResourceName` elemento con un `LogicalName` elemento, impostato su `VSPackage.en-US.Resources`, come indicato di seguito.
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ ms.locfileid: "56679268"
     </EmbeddedResource>
     ```
 
-7.  Per ogni lingua localizzata, copiare il `EmbeddedResource` (elemento) per `VsPackage.en-US`e impostare le **inclusione** attributo e **LogicalName** elemento della copia in impostazioni locali di destinazione, come illustrato di seguito esempio.
+7. Per ogni lingua localizzata, copiare il `EmbeddedResource` (elemento) per `VsPackage.en-US`e impostare le **inclusione** attributo e **LogicalName** elemento della copia in impostazioni locali di destinazione, come illustrato di seguito esempio.
 
-8.  A ogni localizzato `VSCTCompile` elemento, aggiungere un' `ResourceName` elemento al quale punta `Menus.ctmenu`, come illustrato nell'esempio seguente.
+8. A ogni localizzato `VSCTCompile` elemento, aggiungere un' `ResourceName` elemento al quale punta `Menus.ctmenu`, come illustrato nell'esempio seguente.
 
     ```xml
     <ItemGroup>

@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114366"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferi
 >  Quando il sistema del progetto trova un riferimento a un assembly, il sistema risolve il riferimento eseguendo una ricerca nei percorsi seguenti nell'ordine seguente:  
 > 
 > 1. Cartella del progetto. I file della cartella del progetto vengono visualizzati in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** non è attiva.  
->    2.  Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.  
->    3.  Cartelle che visualizzano i file nella finestra di dialogo **Aggiungi riferimento**.  
->    4.  Cartella obj del progetto. Quando si aggiunge un riferimento COM al progetto, uno o più assembly possono essere aggiunti alla cartella obj del progetto.  
+>    2. Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.  
+>    3. Cartelle che visualizzano i file nella finestra di dialogo **Aggiungi riferimento**.  
+>    4. Cartella obj del progetto. Quando si aggiunge un riferimento COM al progetto, uno o più assembly possono essere aggiunti alla cartella obj del progetto.  
   
  **Riferimenti**  
  Questo elenco visualizza tutti i riferimenti del progetto, utilizzati o inutilizzati.  
@@ -80,11 +80,11 @@ Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferi
  **Aggiorna importazione utente**  
  Selezionare uno spazio dei nomi specificato dall'utente nell'elenco degli spazi dei nomi, digitare il nome come cui si vuole sostituirlo nella casella **Spazi dei nomi importati** e quindi fare clic su questo pulsante per impostare il nuovo spazio dei nomi. Il pulsante è attivo solo se lo spazio dei nomi selezionato è tra quelli aggiunti all'elenco mediante il pulsante **Aggiungi importazione utente**. È possibile aggiungere:  
   
--   Classi o spazi dei nomi, ad esempio <xref:System.Math?displayProperty=fullName>.  
+- Classi o spazi dei nomi, ad esempio <xref:System.Math?displayProperty=fullName>.  
   
--   Importazioni con alias, ad esempio `VB=Microsoft.VisualBasic`.  
+- Importazioni con alias, ad esempio `VB=Microsoft.VisualBasic`.  
   
--   Spazi dei nomi XML, ad esempio `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- Spazi dei nomi XML, ad esempio `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [NIB procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

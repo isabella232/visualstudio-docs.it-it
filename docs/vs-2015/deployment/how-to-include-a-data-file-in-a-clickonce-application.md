@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107359"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: Includere un file di dati in un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,25 +65,25 @@ Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegn
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Per includere un file di dati usando MageUI.exe  
   
-1.  Aggiungere il file di dati alla directory dell'applicazione con il resto del file dell'applicazione.  
+1. Aggiungere il file di dati alla directory dell'applicazione con il resto del file dell'applicazione.  
   
-2.  In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v1.0.0.0.  
+2. In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v1.0.0.0.  
   
-3.  Nel **File** menu, fare clic su **aprire** per aprire il manifesto dell'applicazione.  
+3. Nel **File** menu, fare clic su **aprire** per aprire il manifesto dell'applicazione.  
   
-4.  Selezionare il **file** scheda.  
+4. Selezionare il **file** scheda.  
   
-5.  Nella casella di testo nella parte superiore della scheda, immettere la directory che contiene i file dell'applicazione e quindi fare clic su **Popola**.  
+5. Nella casella di testo nella parte superiore della scheda, immettere la directory che contiene i file dell'applicazione e quindi fare clic su **Popola**.  
   
      Il file di dati verrà visualizzato nella griglia.  
   
-6.  Impostare il **tipo di File** valore del file di dati **dati**.  
+6. Impostare il **tipo di File** valore del file di dati **dati**.  
   
-7.  Salvare il manifesto dell'applicazione e quindi firmare nuovamente il file.  
+7. Salvare il manifesto dell'applicazione e quindi firmare nuovamente il file.  
   
      MageUI.exe chiederà di firmare nuovamente il file.  
   
-8.  Firmare nuovamente il manifesto di distribuzione  
+8. Firmare nuovamente il manifesto di distribuzione  
   
      È necessario firmare nuovamente il manifesto di distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
   

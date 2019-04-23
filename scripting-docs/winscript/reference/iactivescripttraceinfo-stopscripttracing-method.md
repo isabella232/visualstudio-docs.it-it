@@ -11,12 +11,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cfb895ce15227656e60a34c5134b7e8905838f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d5661df1f7f9266be34b59703316b06bec631007
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099689"
 ---
 # <a name="iactivescripttraceinfostopscripttracing-method"></a>Metodo IActiveScriptTraceInfo::StopScriptTracing
 Traccia degli script si arresta.  
@@ -33,6 +33,6 @@ HRESULT StopScriptTracing(void); }
 ## <a name="return-value"></a>Valore restituito  
  I valori restituiti possibili per questo metodo sono come segue:  
   
-1.  S_OK: Operazione completata.  
+1. S_OK: Operazione completata.  
   
-2.  E_NOTIMPL: Non implementato.
+2. E_NOTIMPL: Non implementato.

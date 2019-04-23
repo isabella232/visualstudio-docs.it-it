@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108184"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: Usare il visualizzatore dell'albero di WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,35 +33,35 @@ ms.locfileid: "58969084"
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Per aprire il visualizzatore della struttura ad albero di WPF  
   
-1.  In un suggerimento dati, in una finestra **Espressioni di controllo**, **Auto** o **Variabili locali** fare clic sulla freccia della lente d'ingrandimento accanto al nome di un oggetto WPF.  
+1. In un suggerimento dati, in una finestra **Espressioni di controllo**, **Auto** o **Variabili locali** fare clic sulla freccia della lente d'ingrandimento accanto al nome di un oggetto WPF.  
   
      Verrà visualizzato un elenco di visualizzatori.  
   
-2.  Fare clic su **Visualizzatore dell'albero di WPF**.  
+2. Fare clic su **Visualizzatore dell'albero di WPF**.  
   
 ### <a name="to-search-the-visual-tree"></a>Per eseguire ricerche nella struttura ad albero visuale  
   
--   Nel riquadro **Struttura ad albero visuale**, digitare la stringa da cercare nella casella **Cerca**.  
+- Nel riquadro **Struttura ad albero visuale**, digitare la stringa da cercare nella casella **Cerca**.  
   
      Il visualizzatore della struttura ad albero di WPF troverà immediatamente il primo oggetto nella struttura ad albero visuale che corrisponde alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.  
   
-    -   Per passare alla corrispondenza successiva all'interno della struttura ad albero visuale, fare clic su **Successiva**.  
+    - Per passare alla corrispondenza successiva all'interno della struttura ad albero visuale, fare clic su **Successiva**.  
   
-    -   Per ritornare alla corrispondenza precedente, fare clic su **Prec**.  
+    - Per ritornare alla corrispondenza precedente, fare clic su **Prec**.  
   
-    -   Per cancellare i criteri di ricerca, fare clic su **Cancella**.  
+    - Per cancellare i criteri di ricerca, fare clic su **Cancella**.  
   
 ### <a name="to-search-the-properties-list"></a>Per eseguire ricerche nell'elenco di proprietà  
   
--   Nel **delle proprietà di** _nome_**:**_tipo_ riquadro, digitare la stringa di cui si desidera eseguire la ricerca nel **filtrare**finestra.  
+- Nel **delle proprietà di** _nome_**:**_tipo_ riquadro, digitare la stringa di cui si desidera eseguire la ricerca nel **filtrare**finestra.  
   
      Il visualizzatore della struttura ad albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.  
   
-    -   Per cancellare i criteri di ricerca, fare clic su **Cancella**.  
+    - Per cancellare i criteri di ricerca, fare clic su **Cancella**.  
   
 ### <a name="to-close-the-visualizer"></a>Per chiudere il visualizzatore  
   
--   Fare clic sull'icona **Chiudi** nell'angolo in alto a destra della finestra di dialogo.  
+- Fare clic sull'icona **Chiudi** nell'angolo in alto a destra della finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Usare un visualizzatore](../misc/how-to-use-a-visualizer.md)   

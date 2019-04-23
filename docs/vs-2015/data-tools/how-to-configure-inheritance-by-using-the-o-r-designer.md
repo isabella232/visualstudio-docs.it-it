@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115601"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: Configurare l'ereditarietà usando Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662270"
   
 ### <a name="to-create-inherited-data-classes"></a>Per creare classi di dati ereditate  
   
-1.  Aprire il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] mediante l'aggiunta di un **classi LINQ to SQL** elemento a un progetto di Visual Basic o c# esistente.  
+1. Aprire il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] mediante l'aggiunta di un **classi LINQ to SQL** elemento a un progetto di Visual Basic o c# esistente.  
   
-2.  Trascinare la tabella che si desidera usare come classe di base in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Trascinare la tabella che si desidera usare come classe di base in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-3.  Trascinare una seconda copia della tabella nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e rinominarlo. In tal modo si otterrà la classe derivata o sottoclasse.  
+3. Trascinare una seconda copia della tabella nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e rinominarlo. In tal modo si otterrà la classe derivata o sottoclasse.  
   
-4.  Fare clic su **Inheritance** nella scheda **Object Relational Designer** della **Casella degli strumenti** e quindi fare clic sulla sottoclasse (ovvero, la tabella rinominata) e connetterla alla classe di base.  
+4. Fare clic su **Inheritance** nella scheda **Object Relational Designer** della **Casella degli strumenti** e quindi fare clic sulla sottoclasse (ovvero, la tabella rinominata) e connetterla alla classe di base.  
   
     > [!NOTE]
     >  Fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse, fare clic sulla seconda copia della classe creata nel passaggio 3 e quindi fare clic sulla prima classe creata nel passaggio 2. La freccia della linea di ereditarietà punterà alla prima classe.  
   
-5.  In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Si riceverà un errore se si prova a eliminare le proprietà dell'oggetto usate per le associazioni: [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5. In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Si riceverà un errore se si prova a eliminare le proprietà dell'oggetto usate per le associazioni: [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
     >  Poiché una classe derivata eredita le proprietà definite nella relativa classe di base, non è possibile definire le stesse colonne in ogni classe (le colonne vengono implementate come proprietà). Per consentire la creazione di colonne nella classe derivata, è possibile impostare il modificatore di ereditarietà sulla proprietà della classe di base. Per altre informazioni, vedere [NOT IN BUILD: Override di proprietà e metodi](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-6.  Selezionare la linea di ereditarietà in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+6. Selezionare la linea di ereditarietà in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-7.  Nel **le proprietà** impostare nella finestra di **Discriminator Property** al nome della colonna che viene usato per distinguere i record nelle classi.  
+7. Nel **le proprietà** impostare nella finestra di **Discriminator Property** al nome della colonna che viene usato per distinguere i record nelle classi.  
   
-8.  Impostare la proprietà **Derived Class Discriminator Value** sul valore nel database che designa il record come tipo ereditato. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe ereditata).  
+8. Impostare la proprietà **Derived Class Discriminator Value** sul valore nel database che designa il record come tipo ereditato. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe ereditata).  
   
 9. Impostare la proprietà **Base Class Discriminator Value** sul valore che designa il record come tipo di base. (si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe di base).  
   

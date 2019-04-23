@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110544"
 ---
 # <a name="graph-view"></a>Visualizzazione grafico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 ## <a name="undoredo"></a>Annullamento/ripristino  
  La funzionalità di annullamento/ripristino è abilitata nella visualizzazione grafico per le seguenti azioni:  
   
--   Aggiunta di un singolo nodo con trascinamento della selezione.  
+- Aggiunta di un singolo nodo con trascinamento della selezione.  
   
--   Aggiunta di più nodi dalla finestra dei risultati della ricerca nelle query relative a Schema Explorer o alla visualizzazione iniziale.  
+- Aggiunta di più nodi dalla finestra dei risultati della ricerca nelle query relative a Schema Explorer o alla visualizzazione iniziale.  
   
--   Eliminazione di uno o più nodi.  
+- Eliminazione di uno o più nodi.  
   
 ## <a name="zoom"></a>Zoom  
  Lo zoom è disponibile nell'angolo inferiore destro della visualizzazione grafico.  

@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108048"
 ---
 # <a name="program-control"></a>Controllo del programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In Visual Studio esegue il debug, tutte le istruzioni seguenti e continuando le routine si verificano a livello di programma:  
   
--   Impostazione dell'istruzione successiva, vale a dire, impostazione del computer alla successiva istruzione da eseguire in un ambiente particolare fotogramma  
+- Impostazione dell'istruzione successiva, vale a dire, impostazione del computer alla successiva istruzione da eseguire in un ambiente particolare fotogramma  
   
--   L'esecuzione, vale a dire, continuando a uscire dalla modalità di debug passo a passo  
+- L'esecuzione, vale a dire, continuando a uscire dalla modalità di debug passo a passo  
   
--   L'esecuzione di istruzioni per l'istruzione successiva  
+- L'esecuzione di istruzioni per l'istruzione successiva  
   
--   Continuare con la modalità di debug passo a passo corrente  
+- Continuare con la modalità di debug passo a passo corrente  
   
--   Sospendere i thread contenuti dal programma  
+- Sospendere i thread contenuti dal programma  
   
--   Ripresa di thread di contenuti dal programma  
+- Ripresa di thread di contenuti dal programma  
   
 > [!NOTE]
 >  Visualizzazione dello stack di chiamate viene implementata a livello di thread. Per enumerare le informazioni di frame quando si visualizza lo stack di chiamate per un thread, è necessario implementare tutti i metodi del [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia.  
