@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085662"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ ms.locfileid: "58967886"
   
 ### <a name="to-customize-a-permission"></a>Per personalizzare un'autorizzazione  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic sulla scheda **Sicurezza** .  
+2. Fare clic sulla scheda **Sicurezza** .  
   
-3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .  
+3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .  
   
-4.  Selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
+4. Selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
   
      I controlli nella sezione **Autorizzazioni di sicurezza ClickOnce** sono abilitati.  
   
-5.  Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare **(Personalizzata)**.  
+5. Dall'elenco a discesa **Area da cui verrà installata l'applicazione** selezionare **(Personalizzata)**.  
   
-6.  Fare clic su **Modifica XML autorizzazioni**.  
+6. Fare clic su **Modifica XML autorizzazioni**.  
   
      Il file app.manifest verrà aperto nell'Editor XML.  
   
-7.  Prima dell'elemento `</applicationRequestMinimum>` , aggiungere il codice XML per le autorizzazioni richieste dall'applicazione.  
+7. Prima dell'elemento `</applicationRequestMinimum>` , aggiungere il codice XML per le autorizzazioni richieste dall'applicazione.  
   
     > [!NOTE]
     >  È possibile usare il metodo `ToXml` di un set di autorizzazioni per generare il codice XML per il manifesto dell'applicazione. Ad esempio, per generare il codice XML per il set di autorizzazioni <xref:System.Security.Permissions.EnvironmentPermission> , chiamare il metodo <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> . Per altre informazioni sulla struttura dell'autorizzazione del set di XML, vedere [NIB: Procedura: Importazione di un Set di autorizzazioni usando un File XML](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  

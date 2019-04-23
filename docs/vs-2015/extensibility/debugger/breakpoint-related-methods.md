@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085559"
 ---
 # <a name="breakpoint-related-methods"></a>Metodi correlati al punto di interruzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un motore di debug (DE) deve supportare l'impostazione di punti di interruzione. Debug in Visual Studio supporta i seguenti tipi di punti di interruzione:  
   
--   Associato  
+- Associato  
   
      Richiesta tramite l'interfaccia utente ed è stato associato a una posizione di codice specificato  
   
--   In sospeso  
+- In sospeso  
   
      Richiesta tramite l'interfaccia utente, ma istruzioni non è ancora associate a effettivo  
   

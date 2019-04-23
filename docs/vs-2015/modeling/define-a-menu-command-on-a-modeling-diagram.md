@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954452"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670319"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 2. Aggiungere i riferimenti seguenti al progetto.  
 
-
    |                                                                                                    Riferimenti                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definire i componenti usando [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -74,7 +73,6 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[versione]                                                                                  | Definire i gestori eventi del modello.<br /><br /> Incapsulare la serie di modifiche nel modello. Per altre informazioni, vedere [aggiornamenti di modelli di collegamento UML tramite transazioni](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]<br /><br /> (non è sempre obbligatorio)                                                             |                                                                                   Accedere ad altri elementi del diagramma per i gestori di movimento.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Obbligatorio solo per i comandi nei diagrammi livello. Per altre informazioni, vedere [estendere i diagrammi livello](../modeling/extend-layer-diagrams.md). |                                                                                             Definire i comandi in un diagramma livello.                                                                                              |
-
 
 3. Aggiungere un file di classe al progetto e impostarne il contenuto sul codice seguente.  
 
