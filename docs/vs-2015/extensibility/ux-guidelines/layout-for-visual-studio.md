@@ -8,29 +8,29 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27d38a1e984f5705c52d8c6b310ead7a522f4ecb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 09656b9afac82eec8981f8573af87391c99a3688
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114262"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx). Mentre Visual Studio viene spostato alla relativa interfaccia utente di aggiornamento, alcune delle finestre di dialogo più evidenti sono una nuova progettazione che stabilisce le esperienze di definizione del prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto a tema.
 
-##  <a name="BKMK_UtilityDialogLayout"></a> Layout di finestra di dialogo utilità
+## <a name="BKMK_UtilityDialogLayout"></a> Layout di finestra di dialogo utilità
 
--   Tutti i controlli all'interno di una finestra di dialogo utilità devono iniziare in alto/a sinistra e verso il basso del flusso.
+- Tutti i controlli all'interno di una finestra di dialogo utilità devono iniziare in alto/a sinistra e verso il basso del flusso.
 
--   Center mai i controlli in una finestra di dialogo per riempire una vasta area.
+- Center mai i controlli in una finestra di dialogo per riempire una vasta area.
 
--   Usare il tipo di carattere ambiente per tutto il testo della finestra. Quando si scrive una specifica di visual, specificare il tipo di carattere ambiente invece di selezionare un particolare tipo di carattere e dimensioni. Visualizzare [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Usare il tipo di carattere ambiente per tutto il testo della finestra. Quando si scrive una specifica di visual, specificare il tipo di carattere ambiente invece di selezionare un particolare tipo di carattere e dimensioni. Visualizzare [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
--   Usare controllo coerenti con spaziatura e posizionamento per supportare l'obiettivo per la qualità in maestria.
+- Usare controllo coerenti con spaziatura e posizionamento per supportare l'obiettivo per la qualità in maestria.
 
--   Le finestre di dialogo può diventare più complesse da un numero maggiore di controlli, un contatto univoca dei controlli o entrambi. Per tali situazioni complicate, consentire spazio sufficiente tra i raggruppamenti di controllo per consentire all'utente un flusso logico da analizzare.
+- Le finestre di dialogo può diventare più complesse da un numero maggiore di controlli, un contatto univoca dei controlli o entrambi. Per tali situazioni complicate, consentire spazio sufficiente tra i raggruppamenti di controllo per consentire all'utente un flusso logico da analizzare.
 
 ### <a name="utility-dialog-layout-examples"></a>Esempi di layout di finestra di dialogo utilità
  Tutte le dimensioni vengono espresse in pixel.
@@ -47,11 +47,11 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
 
 #### <a name="margins"></a>Margini
 
--   Tutti i dialoghi devono avere un bordo di 12 pixel intorno ai lati.
+- Tutti i dialoghi devono avere un bordo di 12 pixel intorno ai lati.
 
--   Margini all'interno di un gruppo devono essere 9 pixel dal bordo del frame.
+- Margini all'interno di un gruppo devono essere 9 pixel dal bordo del frame.
 
--   Margini all'interno di un controllo struttura a schede devono essere 6 pixel dal bordo del controllo scheda.
+- Margini all'interno di un controllo struttura a schede devono essere 6 pixel dal bordo del controllo scheda.
 
 #### <a name="command-buttons"></a>Pulsanti di comando
 
@@ -71,13 +71,13 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
 
 #### <a name="labels"></a>Etichette
 
--   Allinea a sinistra tutte le etichette.
+- Allinea a sinistra tutte le etichette.
 
--   Per le etichette al di sopra un controllo, si devono allineare a sinistra con precisione con il controllo sotto di essa e la parte inferiore dell'etichetta deve essere 5 pixel oltre il margine superiore di altro controllo (ad esempio, una casella combinata).
+- Per le etichette al di sopra un controllo, si devono allineare a sinistra con precisione con il controllo sotto di essa e la parte inferiore dell'etichetta deve essere 5 pixel oltre il margine superiore di altro controllo (ad esempio, una casella combinata).
 
--   Per le etichette che si trovano a sinistra dei controlli, la larghezza minima tra l'etichetta e il controllo di input è di 10 pixel. Una colonna implicita secondo deve essere stabilita per allineare le caselle di testo, caselle combinate o altri controlli.
+- Per le etichette che si trovano a sinistra dei controlli, la larghezza minima tra l'etichetta e il controllo di input è di 10 pixel. Una colonna implicita secondo deve essere stabilita per allineare le caselle di testo, caselle combinate o altri controlli.
 
--   Le etichette maiuscola e sono seguite da due punti. Visualizzare [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Le etichette maiuscola e sono seguite da due punti. Visualizzare [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Distanza tra i controlli
  Sovrapporre controlli ragionevolmente. Non vi è alcun assoluti delle linee guida per la spaziatura tra i controlli in pila. Il livello tra i controlli può variare leggermente tra le finestre di dialogo. La spaziatura consigliata è 20 pixel per le coppie etichetta/controllo verticali e 9 pixel per le coppie etichetta/controllo orizzontale. La spaziatura minima di controlli per le coppie orizzontale è 6 pixel.
@@ -98,11 +98,11 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
 
 #### <a name="helper-text"></a>Testo di supporto
 
--   Una finestra di dialogo è possibile visualizzare il testo di supporto che fornisce informazioni aggiuntive sullo scopo della finestra di dialogo. Ciò in genere si trova nella parte superiore e può essere 1 o 2 frasi.
+- Una finestra di dialogo è possibile visualizzare il testo di supporto che fornisce informazioni aggiuntive sullo scopo della finestra di dialogo. Ciò in genere si trova nella parte superiore e può essere 1 o 2 frasi.
 
--   La lunghezza di riga deve essere una larghezza comoda per un utente di analizzare e di lettura. Una finestra di dialogo medio deve essere non più di 550 pixel di larghezza.
+- La lunghezza di riga deve essere una larghezza comoda per un utente di analizzare e di lettura. Una finestra di dialogo medio deve essere non più di 550 pixel di larghezza.
 
-####  <a name="BKMK_InteriorCommandButtons"></a> Pulsanti di comando interni
+#### <a name="BKMK_InteriorCommandButtons"></a> Pulsanti di comando interni
  Nelle finestre di dialogo più complessi, un controllo interno potrebbe essere relativi pulsanti correlate, che possono influire in cui si trovano i pulsanti di commit della finestra di dialogo.
 
 - Usare i pulsanti quando l'allineamento verticale (colonna) della parte interna **OK**/**Annulla** è orientato in senso orizzontale nell'angolo inferiore destro.
@@ -122,22 +122,22 @@ La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra 
 #### <a name="browse-button"></a>[Sfoglia...] pulsante
  **[Sfoglia...]**  pulsanti che seguono una casella di testo devono spiegare chiaramente "Sfoglia..." in modo completo, inclusi i puntini di sospensione. Se lo spazio è insufficiente o ci sono più **[Sfoglia...]**  pulsanti sullo schermo, il pulsante possono essere ridotto a semplicemente i puntini di sospensione.
 
-##  <a name="BKMK_ThemedDialogLayout"></a> Layout di finestra di dialogo con tema
+## <a name="BKMK_ThemedDialogLayout"></a> Layout di finestra di dialogo con tema
  Finestre di dialogo con tema in Visual Studio hanno un aspetto più chiaro e offrire più spazio vuoto. Funzionalità tipografiche fornisce ulteriori enfasi e interesse, offre più aperta l'interlinea e una variante dei pesi e le dimensioni dei caratteri. Dove possibile, le barre del titolo e chrome sono state ridotte o rimosse. Il layout di queste finestre di dialogo deve seguire questo modello di base:
 
-1.  Lo sfondo della finestra di dialogo è bianco.
+1. Lo sfondo della finestra di dialogo è bianco.
 
-2.  In un grigio medio valore è presente un bordo regola 1 pixel.
+2. In un grigio medio valore è presente un bordo regola 1 pixel.
 
-3.  Non è più il titolo della finestra di dialogo si trova in una barra del titolo, ma fornisce l'interesse visivo ed enfasi un aumento delle dimensioni del punto. (Vedere la sezione di dimensioni del carattere in [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. Non è più il titolo della finestra di dialogo si trova in una barra del titolo, ma fornisce l'interesse visivo ed enfasi un aumento delle dimensioni del punto. (Vedere la sezione di dimensioni del carattere in [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4.  Devono essere associate testo aggiuntivo, ad esempio una descrizione, le etichette **tipo di carattere ambiente + grassetto**.
+4. Devono essere associate testo aggiuntivo, ad esempio una descrizione, le etichette **tipo di carattere ambiente + grassetto**.
 
-5.  Colonne interne sono separate da una regola di 1 pixel in grigio chiaro.
+5. Colonne interne sono separate da una regola di 1 pixel in grigio chiaro.
 
-6.  Collegamenti predefiniti non hanno nessun carattere di sottolineatura. Al passaggio del mouse e premuti stati dispongono di una modifica del colore e un carattere di sottolineatura.
+6. Collegamenti predefiniti non hanno nessun carattere di sottolineatura. Al passaggio del mouse e premuti stati dispongono di una modifica del colore e un carattere di sottolineatura.
 
-7.  Eseguire il commit pulsanti (ad esempio **OK**/**Annulla**) si trovano nell'angolo inferiore destro.
+7. Eseguire il commit pulsanti (ad esempio **OK**/**Annulla**) si trovano nell'angolo inferiore destro.
 
 ### <a name="themed-dialog-layout-examples"></a>Esempi di layout di finestra di dialogo con tema
  ![Layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")

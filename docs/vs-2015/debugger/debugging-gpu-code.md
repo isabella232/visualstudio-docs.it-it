@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f48baa33577bc383e48b6535fef0a8448836609e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114132"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58964638"
 ## <a name="configuring-gpu-debugging"></a>Configurazione del debug della GPU  
  Il debugger non può interrompere sia il codice della CPU sia quello della GPU nell'esecuzione della stessa app. Per impostazione predefinita, il debugger interrompe il codice della CPU. Per eseguire il debug del codice della GPU, utilizzare uno dei due passaggi seguenti:  
   
--   Nell'elenco **Tipo di debug** sulla barra degli strumenti **Standard** scegliere **Solo GPU**.  
+- Nell'elenco **Tipo di debug** sulla barra degli strumenti **Standard** scegliere **Solo GPU**.  
   
--   In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto. Nella finestra di dialogo **Pagine delle proprietà** selezionare **Debug** e **Solo GPU** nell'elenco **Tipo di debugger**.  
+- In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto. Nella finestra di dialogo **Pagine delle proprietà** selezionare **Debug** e **Solo GPU** nell'elenco **Tipo di debugger**.  
   
 ## <a name="launching-and-attaching-to-applications"></a>Avvio e associazione di applicazioni  
  È possibile utilizzare i comandi di debug di Visual Studio per avviare e interrompere il debug della GPU. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger). È inoltre possibile associare il debugger della GPU a un processo in esecuzione, ma solo se tale processo esegue codice della GPU. Per altre informazioni, vedere [connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
@@ -45,22 +45,22 @@ ms.locfileid: "58964638"
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Esegui Tile corrente fino al cursore ed Esegui fino al cursore  
  Quando si esegue il debug nella GPU, sono disponibili due opzioni per l'esecuzione fino alla posizione del cursore. I controlli per entrambe le opzioni sono disponibili nel menu di scelta rapida dell'editor di codice.  
   
-1.  Con il comando **Esegui fino al cursore** l'app viene eseguita finché non raggiunge la posizione del cursore, quindi si interrompe. Ciò non implica che il thread corrente venga eseguito fino al cursore, ma piuttosto che il primo thread che raggiunge il punto del cursore genera l'interruzione. Vedere [spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)  
+1. Con il comando **Esegui fino al cursore** l'app viene eseguita finché non raggiunge la posizione del cursore, quindi si interrompe. Ciò non implica che il thread corrente venga eseguito fino al cursore, ma piuttosto che il primo thread che raggiunge il punto del cursore genera l'interruzione. Vedere [spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)  
   
-2.  Con il comando **Esegui Tile corrente fino al cursore** l'app viene eseguita finché tutti thread nel tile corrente non raggiungono il cursore, quindi si interrompe.  
+2. Con il comando **Esegui Tile corrente fino al cursore** l'app viene eseguita finché tutti thread nel tile corrente non raggiungono il cursore, quindi si interrompe.  
   
 ## <a name="debugging-windows"></a>Debug di Windows  
  L'utilizzo di alcune finestre di debug consente di esaminare, contrassegnare e bloccare i thread della GPU. Per altre informazioni, vedere:  
   
--   [Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)  
+- [Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)  
   
--   [Uso della finestra Attività](../debugger/using-the-tasks-window.md)  
+- [Uso della finestra Attività](../debugger/using-the-tasks-window.md)  
   
--   [Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)  
   
--   [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md) (barra degli strumenti posizione di Debug)  
+- [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md) (barra degli strumenti posizione di Debug)  
   
--   [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+- [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Eccezioni di sincronizzazione dei dati  
  Il debugger può identificare diverse condizioni di sincronizzazione dei dati durante l'esecuzione. Quando viene rilevata una condizione, il debugger attivo lo stato di interruzione. Sono disponibili due opzioni: **Interrompi** o **Continua**. Tramite la finestra di dialogo **Eccezioni** è possibile configurare il debugger affinché rilevi o meno tali condizioni nonché quali condizioni causano l'interruzione. Per altre informazioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md). È anche possibile usare la **opzioni** finestra di dialogo per specificare che il debugger deve ignorare le eccezioni se i dati scritti non modificano il valore dei dati. Per altre informazioni, vedere [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
@@ -68,7 +68,7 @@ ms.locfileid: "58964638"
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
   
 ### <a name="specifying-an-accelerator"></a>Specifica di un acceleratore  
- I punti di interruzione nel codice della GPU vengono raggiunti solo se il codice è in esecuzione nell'acceleratore [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Se non si specifica un acceleratore nel codice, l'acceleratore REF viene automaticamente selezionato come **Tipo acceleratore debug** nelle proprietà del progetto. Se il codice seleziona in modo esplicito un acceleratore, l'acceleratore REF non viene utilizzato durante il debug e i punti di interruzione non vengono raggiunti a meno che l'hardware della GPU non supporti il debug. È possibile risolvere questo problema scrivendo il codice in modo da utilizzare l'acceleratore REF durante il debug. Per altre informazioni, vedere le proprietà del progetto e [utilizzo degli oggetti accelerator e accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) e [impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ I punti di interruzione nel codice della GPU vengono raggiunti solo se il codice è in esecuzione nell'acceleratore [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Se non si specifica un acceleratore nel codice, l'acceleratore REF viene automaticamente selezionato come **Tipo acceleratore debug** nelle proprietà del progetto. Se il codice seleziona in modo esplicito un acceleratore, l'acceleratore REF non viene utilizzato durante il debug e i punti di interruzione non vengono raggiunti a meno che l'hardware della GPU non supporti il debug. È possibile risolvere questo problema scrivendo il codice in modo da utilizzare l'acceleratore REF durante il debug. Per altre informazioni, vedere le proprietà del progetto e [utilizzo degli oggetti accelerator e accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) e [impostazioni di progetto per un C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Punti di interruzione condizionali  
  I punti di interruzione condizionali nel codice della GPU sono supportati, ma non è possibile valutare tutte le espressioni nel dispositivo. Quando un'espressione non può essere valutata nel dispositivo, essa viene valutata nel debugger. È probabile che il debugger sia più lento del dispositivo.  
