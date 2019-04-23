@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104545"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
 
@@ -27,13 +27,13 @@ In questo argomento descrive i tipi di messaggi di errore che possono verificars
 
 Si verificano errori nella finestra di progettazione del flusso di lavoro nelle situazioni seguenti:
 
-1.  È presente un errore in un'espressione.
+1. È presente un errore in un'espressione.
 
-2.  Non sono stati soddisfatti i vincoli di convalida di un'attività.
+2. Non sono stati soddisfatti i vincoli di convalida di un'attività.
 
-3.  Sono presenti errori nel file XAML che impediscono il caricamento di un'attività.
+3. Sono presenti errori nel file XAML che impediscono il caricamento di un'attività.
 
-4.  Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.
+4. Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.
 
 Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro infatti riesce, ma viene generato un oggetto <xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
 

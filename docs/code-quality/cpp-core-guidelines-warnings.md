@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087924"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 
@@ -84,17 +84,17 @@ Linee guida di base di C++ sono presenti che consentono di scrivere codice migli
 
 Come vengono aggiunte nuove regole per il controllo di linee guida di base di C++, può aumentare il numero di avvisi generati per il codice preesistente. È possibile usare set di regole predefiniti per filtrare quali tipi di regole da abilitare. A partire da Visual Studio 2017 versione 15.3, il set di regole supportati sono:
 
-  - **Le regole di puntatore Owner** imporre [controlla di gestione risorse correlati all'oggetto owner\<T > linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Le regole di puntatore Owner** imporre [controlla di gestione risorse correlati all'oggetto owner\<T > linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Le regole di const** imporre [controlli correlati a const delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Le regole di const** imporre [controlli correlati a const delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Le regole di puntatore non elaborato** imporre [di gestione risorse Controlla puntatori correlati a non elaborato linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Le regole di puntatore non elaborato** imporre [di gestione risorse Controlla puntatori correlati a non elaborato linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regole di puntatori univoci** imporre [controlli di gestione risorse correlati a tipi con semantica dei puntatori univoci delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regole di puntatori univoci** imporre [controlli di gestione risorse correlati a tipi con semantica dei puntatori univoci delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regole dei limiti** applicare le [delimita profilo delle linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Regole dei limiti** applicare le [delimita profilo delle linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Regole di tipo** applicare le [tipo di profilo delle linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Regole di tipo** applicare le [tipo di profilo delle linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 È possibile scegliere di limitare gli avvisi solo da uno o più dei gruppi. Il **minimo Native** e **consigliato Native** regola set di includono le regole di controllo di base di C++ oltre a altri controlli di PREfast. Per visualizzare il disponibili set di regole, aprire la finestra di dialogo proprietà del progetto, selezionare **codice Analysis\General**, aprire l'elenco a discesa nel **set di regole** casella combinata e pick **Scegli più set di regole** . Per altre informazioni sull'uso di set di regole in Visual Studio, vedere [usando i set di regole per raggruppare regole di analisi codice](using-rule-sets-to-group-code-analysis-rules.md).
 

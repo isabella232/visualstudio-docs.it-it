@@ -15,36 +15,36 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efa493afa7257d4460fd106a0a9685930ca3e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2440f31b6a6ac345644e20e14b4a82972967fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104278"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Procedura: Specificare opzioni di strumentazione aggiuntive
+# <a name="how-to-specify-additional-instrumentation-options"></a>Procedura: Specificare le opzioni di strumentazione aggiuntive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile instrumentare i binari dall'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] o mediante gli strumenti della riga di comando. Se si instrumenta un file binario dall'IDE, è possibile controllare il volume dei dati raccolti durante la strumentazione specificando opzioni di strumentazione aggiuntive per lo strumento [VSInstr](../profiling/vsinstr.md). Queste opzioni sono disponibili a livello di sessione o di destinazione. Ad esempio, per includere o escludere funzioni specifiche durante il processo di strumentazione, è possibile usare l'opzione di strumentazione aggiuntiva a livello di destinazione.  
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!IMPORTANT]
 >  Ogni probe inserito modifica leggermente il comportamento del programma originale, causando un sovraccarico in fase di analisi. Benché venga sottratta un'approssimazione di questo sovraccarico, si verificano comunque effetti minimi in termini di tempo sulle applicazioni con multithreading. Le opzioni dello strumento [VSInstr](../profiling/vsinstr.md) consentono di controllare la raccolta dei dati durante la profilatura.  
   
 ### <a name="to-specify-additional-instrumentation-option"></a>Per specificare un'opzione di strumentazione aggiuntiva  
   
-1.  In **Esplora prestazioni** selezionare **Sessione prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
+1. In **Esplora prestazioni** selezionare **Sessione prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
   
-2.  In **Pagine delle proprietà** fare clic sulle proprietà di **Avanzate**.  
+2. In **Pagine delle proprietà** fare clic sulle proprietà di **Avanzate**.  
   
-3.  Digitare le opzioni nella casella **Opzioni di strumentazione aggiuntive**.  
+3. Digitare le opzioni nella casella **Opzioni di strumentazione aggiuntive**.  
   
      Ad esempio, usare /CONTROL:THREAD per specificare il livello di profilatura. Per un elenco completo di opzioni, vedere [VSInstr](../profiling/vsinstr.md).  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   

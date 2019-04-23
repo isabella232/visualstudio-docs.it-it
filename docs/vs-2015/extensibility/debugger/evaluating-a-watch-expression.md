@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104356"
 ---
 # <a name="evaluating-a-watch-expression"></a>Valutazione di un'espressione di controllo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58965387"
   
  In questa implementazione di `IDebugParsedExpression::EvaluateSync`, l'espressione viene analizzato e valutata nello stesso momento. Questa implementazione esegue le attività seguenti:  
   
-1.  Analizza e valuta l'espressione e produce un oggetto generico che contiene il valore e il relativo tipo. In C#, questo viene rappresentato come un `object` mentre in C++ ciò viene rappresentato come un `VARIANT`.  
+1. Analizza e valuta l'espressione e produce un oggetto generico che contiene il valore e il relativo tipo. In c#, questo viene rappresentato come un `object` mentre in C++ ciò viene rappresentato come un `VARIANT`.  
   
-2.  Crea un'istanza di una classe (chiamati `CValueProperty` in questo esempio) che implementa il `IDebugProperty2` interfaccia e lo archivia nella classe di valore da restituire.  
+2. Crea un'istanza di una classe (chiamati `CValueProperty` in questo esempio) che implementa il `IDebugProperty2` interfaccia e lo archivia nella classe di valore da restituire.  
   
-3.  Restituisce il `IDebugProperty2` dell'interfaccia dal `CValueProperty` oggetto.  
+3. Restituisce il `IDebugProperty2` dell'interfaccia dal `CValueProperty` oggetto.  
   
 ## <a name="managed-code"></a>Codice gestito  
  Si tratta di un'implementazione del `IDebugParsedExpression::EvaluateSync` nel codice gestito. Il metodo helper `Tokenize` analizza l'espressione in un albero di analisi. La funzione helper `EvalToken` converte il token in un valore. La funzione helper `FindTerm` in modo ricorsivo attraversa l'albero di analisi, la chiamata `EvalToken` per ogni nodo che rappresenta un valore e l'applicazione di qualsiasi operazione (addizione o sottrazione) nell'espressione.  

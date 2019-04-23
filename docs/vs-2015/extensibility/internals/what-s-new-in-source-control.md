@@ -11,12 +11,12 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087319"
 ---
 # <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>Cosa&#39;s di controllo del codice sorgente in Visual Studio 2015
 
@@ -33,17 +33,17 @@ In [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] è possibile fornire una so
   
  La procedura seguente offre una panoramica generale degli elementi necessari per implementare un pacchetto controllo del codice sorgente. Per informazioni dettagliate, vedere [creazione di un VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
-1.  Creare un pacchetto VSPackage che fornisce un servizio di controllo di origine privata.  
+1. Creare un pacchetto VSPackage che fornisce un servizio di controllo di origine privata.  
   
-2.  Implementare le interfacce dei servizi correlati al controllo origine che sono offerti dal [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (ad esempio, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interface).  
+2. Implementare le interfacce dei servizi correlati al controllo origine che sono offerti dal [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (ad esempio, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interface).  
   
-3.  Registrare VSPackage di controllo del codice sorgente.  
+3. Registrare VSPackage di controllo del codice sorgente.  
   
-4.  Implementare tutte controllo del codice sorgente dell'interfaccia utente, tra cui le voci di menu, finestre di dialogo, barre degli strumenti e menu di scelta rapida.  
+4. Implementare tutte controllo del codice sorgente dell'interfaccia utente, tra cui le voci di menu, finestre di dialogo, barre degli strumenti e menu di scelta rapida.  
   
-5.  Tutti gli eventi correlati al controllo origine vengono passati al controllo del codice sorgente VSackage quando è attiva ma deve essere gestito dal pacchetto VSPackage.  
+5. Tutti gli eventi correlati al controllo origine vengono passati al controllo del codice sorgente VSackage quando è attiva ma deve essere gestito dal pacchetto VSPackage.  
   
-6.  VSPackage di controllo del codice sorgente deve essere in ascolto degli eventi, ad esempio quelli implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interfaccia, nonché gli eventi di traccia progetto documento (TPD) (come implementato dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfaccia) e intraprendere le azioni necessarie.  
+6. VSPackage di controllo del codice sorgente deve essere in ascolto degli eventi, ad esempio quelli implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interfaccia, nonché gli eventi di traccia progetto documento (TPD) (come implementato dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfaccia) e intraprendere le azioni necessarie.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

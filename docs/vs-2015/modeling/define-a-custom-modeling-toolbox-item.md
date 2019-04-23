@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105045"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definire un elemento della casella degli strumenti di modellazione personalizzata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
  Uno strumento personalizzato crea uno o più nuovi elementi in un diagramma. Ad esempio, è possibile creare uno strumento personalizzato per creare gli elementi seguenti:  
   
--   Un pacchetto collegato al profilo .NET e una classe con lo stereotipo .NET.  
+- Un pacchetto collegato al profilo .NET e una classe con lo stereotipo .NET.  
   
--   Una coppia di classi collegate da un'associazione per rappresentare il modello Observer.  
+- Una coppia di classi collegate da un'associazione per rappresentare il modello Observer.  
   
 > [!NOTE]
 >  È possibile usare questo metodo per creare strumenti elemento. È quindi possibile creare strumenti che è possibile trascinare dalla casella degli strumenti in un diagramma. Non è possibile creare strumenti connettore.  
   
-##  <a name="DefineTool"></a> La definizione di un strumento di modellazione personalizzato  
+## <a name="DefineTool"></a> La definizione di un strumento di modellazione personalizzato  
   
 #### <a name="to-define-a-custom-modeling-tool"></a>Per definire un strumento di modellazione personalizzato  
   
-1.  Creare un diagramma UML che contiene un elemento o un gruppo di elementi.  
+1. Creare un diagramma UML che contiene un elemento o un gruppo di elementi.  
   
-    -   Questi elementi possono presentare relazioni tra loro e possono contenere elementi sussidiari quali porte, attributi, operazioni o PIN.  
+    - Questi elementi possono presentare relazioni tra loro e possono contenere elementi sussidiari quali porte, attributi, operazioni o PIN.  
   
-2.  Salvare il diagramma usando il nome che si desidera assegnare al nuovo strumento. Nel **File** menu, usare **Salva... Come**.  
+2. Salvare il diagramma usando il nome che si desidera assegnare al nuovo strumento. Nel **File** menu, usare **Salva... Come**.  
   
-3.  Usando Esplora risorse, copiare i due file diagramma nella cartella seguente o in qualsiasi sottocartella:  
+3. Usando Esplora risorse, copiare i due file diagramma nella cartella seguente o in qualsiasi sottocartella:  
   
      *YourDocuments* **\Visual Studio\Architecture Tools\Custom degli elementi**  
   
-    -   Creare questa cartella se non esiste già. Potrebbe essere necessario creare entrambe **strumenti di architettura** e **elementi della casella degli strumenti personalizzati**.  
+    - Creare questa cartella se non esiste già. Potrebbe essere necessario creare entrambe **strumenti di architettura** e **elementi della casella degli strumenti personalizzati**.  
   
-    -   Copiare entrambi i file di diagramma, uno con un nome che termina con "... **diagramma**"e l'altro con un nome che termina con"... **diagram.layout**"  
+    - Copiare entrambi i file di diagramma, uno con un nome che termina con "... **diagramma**"e l'altro con un nome che termina con"... **diagram.layout**"  
   
-    -   È possibile creare tanti strumenti personalizzati nel modo desiderato. Usare un diagramma per ogni strumento.  
+    - È possibile creare tanti strumenti personalizzati nel modo desiderato. Usare un diagramma per ogni strumento.  
   
-4.  (Facoltativo) Creare un **con estensione tbxinfo** file come descritto in [come definire le proprietà degli strumenti personalizzati](#tbxinfo)e aggiungerla alla stessa directory. Consente di definire un'icona casella degli strumenti, un suggerimento e così via.  
+4. (Facoltativo) Creare un **con estensione tbxinfo** file come descritto in [come definire le proprietà degli strumenti personalizzati](#tbxinfo)e aggiungerla alla stessa directory. Consente di definire un'icona casella degli strumenti, un suggerimento e così via.  
   
-    -   Un unico **con estensione tbxinfo** file può essere usato per definire diversi strumenti. Può fare riferimento ai file diagramma presenti nelle sottocartelle.  
+    - Un unico **con estensione tbxinfo** file può essere usato per definire diversi strumenti. Può fare riferimento ai file diagramma presenti nelle sottocartelle.  
   
-5.  Riavviare Visual Studio. Lo strumento aggiuntivo verrà visualizzato nella casella degli strumenti per il tipo di diagramma appropriato.  
+5. Riavviare Visual Studio. Lo strumento aggiuntivo verrà visualizzato nella casella degli strumenti per il tipo di diagramma appropriato.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>Cosa verrà replicato dallo strumento personalizzato  
  Uno strumento personalizzato replicherà la maggior parte delle funzionalità del diagramma di origine:  
@@ -83,7 +83,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
 - Connettore di routing. Se si instradano connettori manualmente, il routing non verrà mantenuto quando si usa lo strumento. Le posizioni di alcune forme annidate, come le porte, non vengono mantenute relativamente ai proprietari.  
   
-##  <a name="tbxinfo"></a> Come definire le proprietà di strumenti personalizzati  
+## <a name="tbxinfo"></a> Come definire le proprietà di strumenti personalizzati  
  Le informazioni di una casella degli strumenti (**con estensione tbxinfo**) file consente di specificare un nome della casella degli strumenti, icona, della descrizione comando, scheda e parola chiave per uno o più strumenti personalizzati della Guida. Assegnargli un nome qualsiasi, ad esempio **MyTools**.  
   
  Il formato generale del file è il seguente:  
@@ -138,35 +138,35 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 > [!NOTE]
 >  Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In questo caso, nel menu di scelta rapida della casella degli strumenti scegliere **Reimposta Casella degli strumenti**. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.  
   
-##  <a name="Extension"></a> Come distribuire gli elementi della casella degli strumenti in un'estensione di Visual Studio  
+## <a name="Extension"></a> Come distribuire gli elementi della casella degli strumenti in un'estensione di Visual Studio  
  È possibile distribuire elementi della casella degli strumenti ad altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utenti assemblandoli in un Visual Studio Extension (VSIX). È possibile comprimere comandi, profili e altre estensioni nello stesso file VSIX. Per altre informazioni, vedere [distribuzione di estensioni di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
  Il modo consueto per compilare un'estensione di Visual Studio consiste nell'usare il modello di progetto VSIX. A tale scopo, è necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Per aggiungere un elemento della casella degli strumenti a un'estensione di Visual Studio  
   
-1.  [Creare e testare uno o più strumenti personalizzati](#DefineTool).  
+1. [Creare e testare uno o più strumenti personalizzati](#DefineTool).  
   
-2.  [Creare un file con estensione tbxinfo](#tbxinfo) che fa riferimento gli strumenti.  
+2. [Creare un file con estensione tbxinfo](#tbxinfo) che fa riferimento gli strumenti.  
   
-3.  Aprire un progetto di estensione di Visual Studio esistente.  
+3. Aprire un progetto di estensione di Visual Studio esistente.  
   
      \- oppure -  
   
      Aprire un nuovo progetto di estensione di Visual Studio.  
   
-    1.  Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
+    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
   
-    2.  Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, scegliere **Visual c#**, **estendibilità**, **VSIX progetto**.  
+    2. Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, scegliere **Visual c#**, **estendibilità**, **VSIX progetto**.  
   
-4.  Aggiungere le definizioni della casella degli strumenti al progetto. Includere il **con estensione tbxinfo** file, i file di diagramma, i file bitmap e qualsiasi file di risorse e assicurarsi che siano inclusi in VSIX.  
+4. Aggiungere le definizioni della casella degli strumenti al progetto. Includere il **con estensione tbxinfo** file, i file di diagramma, i file bitmap e qualsiasi file di risorse e assicurarsi che siano inclusi in VSIX.  
   
-    -   In Esplora soluzioni, nel menu di scelta rapida del progetto VSIX, scegliere **Add**, **elemento esistente**. Nella finestra di dialogo, impostare **gli oggetti di tipo: Tutti i file**. Individuare i file, selezionarli tutti e quindi scegliere **Add**.  
+    - In Esplora soluzioni, nel menu di scelta rapida del progetto VSIX, scegliere **Add**, **elemento esistente**. Nella finestra di dialogo, impostare **gli oggetti di tipo: Tutti i file**. Individuare i file, selezionarli tutti e quindi scegliere **Add**.  
   
         > [!NOTE]
         >  In questo progetto non è possibile aprire i file del diagramma nell'editor del modello.  
   
-5.  Impostare le seguenti proprietà di tutti i file appena aggiunti. È possibile impostare le relative proprietà contemporaneamente selezionandole tutte in Esplora soluzioni. Prestare attenzione a non modificare le proprietà degli altri file nel progetto.  
+5. Impostare le seguenti proprietà di tutti i file appena aggiunti. È possibile impostare le relative proprietà contemporaneamente selezionandole tutte in Esplora soluzioni. Prestare attenzione a non modificare le proprietà degli altri file nel progetto.  
   
      **Copia in Directory di Output** = **Copia sempre**  
   
@@ -174,24 +174,24 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
      **Includi in VSIX** = **true**  
   
-6.  Aprire **source.extension.vsixmanifest**. Viene aperto nell'editor del manifesto dell'estensione.  
+6. Aprire **source.extension.vsixmanifest**. Viene aperto nell'editor del manifesto dell'estensione.  
   
-7.  Sotto **metadati**, aggiungere una descrizione per gli strumenti personalizzati.  
+7. Sotto **metadati**, aggiungere una descrizione per gli strumenti personalizzati.  
   
      Sotto **Assets**, scegliere **New** e quindi impostare i campi nella finestra di dialogo come indicato di seguito:  
   
-    -   **Tipo di** = **tipo di estensione personalizzato**  
+    - **Tipo di** = **tipo di estensione personalizzato**  
   
-    -   Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla mediante tastiera.  
   
-    -   **Origine** = **File in filesystem**.  
+    - **Origine** = **File in filesystem**.  
   
-    -   **Percorso** = le **con estensione tbxinfo** file, ad esempio **MyTools**  
+    - **Percorso** = le **con estensione tbxinfo** file, ad esempio **MyTools**  
   
-8.  Compilare il progetto.  
+8. Compilare il progetto.  
   
 9. **Per verificare che l'estensione funzioni**, premere F5. Viene avviata l'istanza sperimentale di Visual Studio.  
   
@@ -201,11 +201,11 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Per installare gli strumenti personalizzati da un'estensione di Visual Studio  
   
-1.  Aprire il file `.vsix` in Esplora risorse o in Visual Studio.  
+1. Aprire il file `.vsix` in Esplora risorse o in Visual Studio.  
   
-2.  Scegli **installare** nella finestra di dialogo visualizzata.  
+2. Scegli **installare** nella finestra di dialogo visualizzata.  
   
-3.  Per disinstallare o disabilitare temporaneamente l'estensione, aprire **estensioni e aggiornamenti** dalle **Tools** menu.  
+3. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **estensioni e aggiornamenti** dalle **Tools** menu.  
   
 ## <a name="localization"></a>Localizzazione  
  È possibile creare un'estensione che, quando viene installata su un altro computer, verranno visualizzati i nomi dello strumento e le descrizioni comandi nella lingua del computer di destinazione.  

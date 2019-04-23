@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087599"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "54868040"
 
 |Value|Descrizione|
 |-----------|-----------------|
-|Automatic|I conflitti vengono rilevati e risolti automaticamente.|
+|Automatico|I conflitti vengono rilevati e risolti automaticamente.|
 |Prompt|I conflitti vengono rilevati e segnalati allo sviluppatore prima di essere risolti.|
 |nessuno|I conflitti non vengono rilevati.|
 
@@ -73,9 +73,9 @@ ms.locfileid: "54868040"
 ### <a name="resolution"></a>Risoluzione
  Per risolvere il problema, effettuare i passaggi seguenti:
 
-1.  Installare l'aggiornamento QFE KB967535 come descritto nell'articolo del supporto tecnico Microsoft [FIX: È disponibile un hotfix per correggere due problemi in ASP.NET in IIS 7.0 per Windows Vista e Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Installare l'aggiornamento QFE KB967535 come descritto nell'articolo del supporto tecnico Microsoft [FIX: È disponibile un hotfix per correggere due problemi in ASP.NET in IIS 7.0 per Windows Vista e Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Aggiungere la riga di codice seguente al file Web.config:
+2. Aggiungere la riga di codice seguente al file Web.config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

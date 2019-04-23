@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087482"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Condivisione di classi tra DSL utilizzando una libreria DSL
 In Visual Studio Visualization and Modeling SDK è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio specifico di dominio. Ciò consente di scomporre le parti comuni dei modelli simili.
@@ -21,11 +21,11 @@ In Visual Studio Visualization and Modeling SDK è possibile creare una definizi
 
 #### <a name="to-create-a-dsl-library"></a>Per creare una libreria DSL
 
-1.  Creare un nuovo progetto DSL e scegliere il modello di soluzione della libreria DSL.
+1. Creare un nuovo progetto DSL e scegliere il modello di soluzione della libreria DSL.
 
      Verrà creato un singolo progetto DSL con un modello vuoto.
 
-2.  È possibile aggiungere classi di dominio, relazioni, forme e così via.
+2. È possibile aggiungere classi di dominio, relazioni, forme e così via.
 
      Gli elementi nella raccolta non è in modo da formare un singolo albero di incorporamento.
 
@@ -33,15 +33,15 @@ In Visual Studio Visualization and Modeling SDK è possibile creare una definizi
 
      È consigliabile impostare il **modificatore di ereditarietà** delle classi di dominio per `Abstract`.
 
-3.  È possibile aggiungere gli elementi che definiscono in Esplora DSL, ad esempio i generatori di connessioni.
+3. È possibile aggiungere gli elementi che definiscono in Esplora DSL, ad esempio i generatori di connessioni.
 
-4.  È possibile aggiungere personalizzazioni che richiedono codice aggiuntivo, ad esempio i vincoli di convalida.
+4. È possibile aggiungere personalizzazioni che richiedono codice aggiuntivo, ad esempio i vincoli di convalida.
 
-5.  Fare clic su **Trasforma tutti i modelli**.
+5. Fare clic su **Trasforma tutti i modelli**.
 
-6.  Compilare il progetto.
+6. Compilare il progetto.
 
-7.  Quando si distribuisce il linguaggio DSL per uso ad altri utenti, è necessario specificare sia l'assembly compilato (DLL) e il file `DslDefinition.dsl`. È possibile trovare l'assembly compilato in una cartella sotto `Dsl\bin\*`
+7. Quando si distribuisce il linguaggio DSL per uso ad altri utenti, è necessario specificare sia l'assembly compilato (DLL) e il file `DslDefinition.dsl`. È possibile trovare l'assembly compilato in una cartella sotto `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Per importare una libreria DSL
 

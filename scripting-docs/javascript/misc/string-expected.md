@@ -14,19 +14,19 @@ ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb942fcdbf475984766af44ada75072df1c2facb
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087001"
 ---
 # <a name="string-expected"></a>Prevista stringa
 Si è provato a richiamare il **String.prototype.toString** oppure **String.prototype.valueOf** metodo in un oggetto di un tipo diverso da `String`. L'oggetto di questo tipo di chiamata deve essere di tipo `String`.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Richiamare solo le **String.prototype.toString** oppure **String.prototype.valueOf** metodi su oggetti di tipo `String`.  
+- Richiamare solo le **String.prototype.toString** oppure **String.prototype.valueOf** metodi su oggetti di tipo `String`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto String](../../javascript/reference/string-object-javascript.md)   

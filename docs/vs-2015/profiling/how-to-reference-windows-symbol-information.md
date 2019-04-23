@@ -14,14 +14,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086702"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Procedura: Reference Windows Symbol Information
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensione pdb) per risolvere i nomi simbolici, ad esempio i nomi delle funzioni nei file binari del programma. È possibile seguire questa procedura per scaricare e aggiornare automaticamente i file pdb corretti per la versione di Windows nel computer locale.  
@@ -33,17 +33,17 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Per usare il server dei simboli Microsoft  
   
-1.  Creare una cartella per contenere le informazioni sul file di simboli, ad esempio C:\SymbolCache.  
+1. Creare una cartella per contenere le informazioni sul file di simboli, ad esempio C:\SymbolCache.  
   
-2.  Scegliere **Opzioni** dal menu **Strumenti**.  
+2. Scegliere **Opzioni** dal menu **Strumenti**.  
   
      Verrà visualizzata la finestra di dialogo **Opzioni** .  
   
-3.  Espandere l'albero **Debug** e quindi fare clic su **Simboli**.  
+3. Espandere l'albero **Debug** e quindi fare clic su **Simboli**.  
   
-4.  In **Percorsi dei file di simboli (pdb)** selezionare **Server dei simboli Microsoft**.  
+4. In **Percorsi dei file di simboli (pdb)** selezionare **Server dei simboli Microsoft**.  
   
-5.  In **Memorizza nella cache i simboli dai server di simboli in questa directory** digitare il percorso della cartella creata nel passaggio 1, ad esempio:  
+5. In **Memorizza nella cache i simboli dai server di simboli in questa directory** digitare il percorso della cartella creata nel passaggio 1, ad esempio:  
   
      **C:\SymbolCache**  
   

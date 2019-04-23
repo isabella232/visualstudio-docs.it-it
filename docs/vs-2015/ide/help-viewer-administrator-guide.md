@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086598"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Per installare il contenuto in lingua inglese da Internet  
   
-1.  Scegliere **Start** e quindi **Esegui**.  
+1. Scegliere **Start** e quindi **Esegui**.  
   
-2.  Digitare quanto segue:  
+2. Digitare quanto segue:  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Premere INVIO.  
+3. Premere INVIO.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Distribuzione del contenuto della Guida locale preinstallato nei computer client  
  È possibile installare un set di contenuti online in un computer e quindi copiarlo in altri computer.  
@@ -117,15 +117,15 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 ##### <a name="to-package-the-content"></a>Per creare un pacchetto del contenuto  
   
-1.  Creare una cartella in cui copiare il contenuto da distribuire.  
+1. Creare una cartella in cui copiare il contenuto da distribuire.  
   
      Ad esempio: c:\VS12Help.  
   
-2.  Aprire cmd.exe con le autorizzazioni di amministratore.  
+2. Aprire cmd.exe con le autorizzazioni di amministratore.  
   
-3.  Passare alla cartella creata nel passaggio 1.  
+3. Passare alla cartella creata nel passaggio 1.  
   
-4.  Digitare quanto segue:  
+4. Digitare quanto segue:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nome cartella*>\ /y /e /k /o  
   
@@ -135,11 +135,11 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
   
 ##### <a name="to-deploy-the-content"></a>Per distribuire il contenuto  
   
-1.  Creare una condivisione di rete e copiare il contenuto della Guida in tale posizione.  
+1. Creare una condivisione di rete e copiare il contenuto della Guida in tale posizione.  
   
      Ad esempio copiare il contenuto di c:\VS12Help in \\\myserver\VS12Help.  
   
-2.  Creare un file .bat che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti.  
+2. Creare un file .bat che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti.  
   
      Ad esempio:  
   
@@ -199,7 +199,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
     :CONTINUE  
     ```  
   
-3.  Eseguire il file .bat nei computer locali in cui deve essere installato il contenuto della Guida.  
+3. Eseguire il file .bat nei computer locali in cui deve essere installato il contenuto della Guida.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Argomenti della riga di comando per la Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md)   

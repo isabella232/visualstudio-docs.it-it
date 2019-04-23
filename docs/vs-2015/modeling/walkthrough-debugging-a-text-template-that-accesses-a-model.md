@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087118"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: Debug di un modello di testo che accede a un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
   
 #### <a name="to-create-a-text-template"></a>Per creare un modello di testo  
   
-1.  Compilare la soluzione e avviarne l'esecuzione nel debugger. (Nel **compilare** menu, fare clic su **Ricompila soluzione**e quindi sul **Debug** dal menu fare clic su **Avvia debug**.) Una nuova istanza di Visual Studio apre il progetto di debug.  
+1. Compilare la soluzione e avviarne l'esecuzione nel debugger. (Nel **compilare** menu, fare clic su **Ricompila soluzione**e quindi sul **Debug** dal menu fare clic su **Avvia debug**.) Una nuova istanza di Visual Studio apre il progetto di debug.  
   
-2.  Aggiungere un file di testo denominato `DebugTest.tt` al progetto di debug.  
+2. Aggiungere un file di testo denominato `DebugTest.tt` al progetto di debug.  
   
-3.  Assicurarsi che il **Custom Tool** di DebugTest.tt è impostata su `TextTemplatingFileGenerator`.  
+3. Assicurarsi che il **Custom Tool** di DebugTest.tt è impostata su `TextTemplatingFileGenerator`.  
   
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Le direttive che accedono a un modello da un modello di testo di debug  
  Prima di un modello è possibile accedere dalle istruzioni e le espressioni in un modello di testo, è necessario chiamare un processore di direttiva generato. La chiamata al processore di direttiva generato rende le classi nel modello disponibile al codice del modello di testo come proprietà. Per altre informazioni, vedere [l'accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).  
@@ -55,7 +55,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
   
 #### <a name="to-debug-an-incorrect-directive-name"></a>Eseguire il debug di un nome di direttiva non corretto  
   
-1.  Sostituire il codice in DebugTest.tt con il codice seguente:  
+1. Sostituire il codice in DebugTest.tt con il codice seguente:  
   
     > [!NOTE]
     >  Il codice contiene un errore. L'errore che è stato introdotto per eseguirne il debug.  
@@ -91,7 +91,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
     #>  
     ```  
   
-2.  Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
+2. Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
   
      Il **elenco errori** finestra viene visualizzato questo errore:  
   
@@ -99,9 +99,9 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
   
      In questo caso, la chiamata di direttiva contiene un nome di direttiva non corretto. È stato specificato `modelRoot` come il nome della direttiva, ma il nome della direttiva corretto `DebuggingTestLanguage`.  
   
-3.  Fare doppio clic su errore nel **elenco errori** finestra per passare al codice.  
+3. Fare doppio clic su errore nel **elenco errori** finestra per passare al codice.  
   
-4.  Per correggere il codice, modificare il nome della direttiva da `DebuggingTestLanguage`.  
+4. Per correggere il codice, modificare il nome della direttiva da `DebuggingTestLanguage`.  
   
      La modifica viene evidenziata.  
   
@@ -113,13 +113,13 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-5.  Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
+5. Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
   
      A questo punto il sistema consente di trasformare il modello di testo e genera il corrispondente file di output. Gli eventuali errori in non verrà visualizzato il **elenco errori** finestra.  
   
 #### <a name="to-debug-an-incorrect-property-name"></a>Eseguire il debug di un nome di proprietà non è corretta  
   
-1.  Sostituire il codice in DebugTest.tt con il codice seguente:  
+1. Sostituire il codice in DebugTest.tt con il codice seguente:  
   
     > [!NOTE]
     >  Il codice contiene un errore. L'errore che è stato introdotto per eseguirne il debug.  
@@ -155,7 +155,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
     #>  
     ```  
   
-2.  Nel **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
+2. Nel **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
   
      Il **elenco errori** finestra viene visualizzato uno di questi errori:  
   
@@ -173,9 +173,9 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
     ```  
   
-3.  Fare doppio clic su errore nella finestra Elenco errori per passare al codice.  
+3. Fare doppio clic su errore nella finestra Elenco errori per passare al codice.  
   
-4.  Per correggere il codice, modificare il nome della proprietà `LibraryModel` nel codice del modello di testo.  
+4. Per correggere il codice, modificare il nome della proprietà `LibraryModel` nel codice del modello di testo.  
   
      Le modifiche vengono evidenziate.  
   
@@ -210,6 +210,6 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
     #>  
     ```  
   
-5.  Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
+5. Nelle **Esplora soluzioni**, fare doppio clic su DebugTest.tt e quindi fare clic su **Esegui strumento personalizzato**.  
   
      A questo punto il sistema consente di trasformare il modello di testo e genera il corrispondente file di output. Gli eventuali errori in non verrà visualizzato il **elenco errori** finestra.

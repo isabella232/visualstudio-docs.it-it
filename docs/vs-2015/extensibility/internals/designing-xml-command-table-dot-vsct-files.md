@@ -10,12 +10,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085911"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Progettazione di tabella comandi XML (. File Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,19 +100,19 @@ Un file XML comando table (vsct) descrive il layout e l'aspetto degli elementi d
 ## <a name="vsct-file-design-guidelines"></a>. Linee guida di progettazione File Vsct  
  Per progettare correttamente un file vsct, seguire queste linee guida.  
   
--   Comandi possono essere posizionati solo in gruppi, i gruppi possono essere inseriti solo nei menu e menu possono essere posizionati solo in gruppi. Solo i menu sono effettivamente visualizzati nell'IDE, gruppi e i comandi non lo sono.  
+- Comandi possono essere posizionati solo in gruppi, i gruppi possono essere inseriti solo nei menu e menu possono essere posizionati solo in gruppi. Solo i menu sono effettivamente visualizzati nell'IDE, gruppi e i comandi non lo sono.  
   
--   Sottomenu non possono essere assegnati direttamente a un menu, ma devono essere assegnati a un gruppo, che a sua volta viene assegnato a un menu.  
+- Sottomenu non possono essere assegnati direttamente a un menu, ma devono essere assegnati a un gruppo, che a sua volta viene assegnato a un menu.  
   
--   I comandi, sottomenu e i gruppi possono essere assegnati a un gruppo padre o menu usando il campo padre della loro definizione direttiva.  
+- I comandi, sottomenu e i gruppi possono essere assegnati a un gruppo padre o menu usando il campo padre della loro definizione direttiva.  
   
--   Organizzazione di una tabella comandi esclusivamente tramite i campi padre nelle direttive di ha un limite significativo. Le direttive che definiscono gli oggetti possono accettare un solo padre argomento.  
+- Organizzazione di una tabella comandi esclusivamente tramite i campi padre nelle direttive di ha un limite significativo. Le direttive che definiscono gli oggetti possono accettare un solo padre argomento.  
   
--   Riutilizzo di comandi, gruppi o sottomenu richiede l'uso di una direttiva di nuovo per creare una nuova istanza dell'oggetto con il proprio `GUID:ID` coppia.  
+- Riutilizzo di comandi, gruppi o sottomenu richiede l'uso di una direttiva di nuovo per creare una nuova istanza dell'oggetto con il proprio `GUID:ID` coppia.  
   
--   Ogni `GUID:ID` coppia deve essere univoca. Riutilizzo di un comando, ad esempio, situato in un menu, una barra degli strumenti o in un menu di scelta rapida viene gestito dal <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.  
+- Ogni `GUID:ID` coppia deve essere univoca. Riutilizzo di un comando, ad esempio, situato in un menu, una barra degli strumenti o in un menu di scelta rapida viene gestito dal <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.  
   
--   Comandi sia sottomenu possono anche essere assegnati a più gruppi e i gruppi possono essere assegnati a più menu usando la [elemento Commands](../../extensibility/commands-element.md).  
+- Comandi sia sottomenu possono anche essere assegnati a più gruppi e i gruppi possono essere assegnati a più menu usando la [elemento Commands](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Note sulla File Vsct  
  Se si apportano modifiche a un file con estensione vsct dopo che si sia compilarlo e inserirlo in una DLL satellite nativa, è consigliabile eseguire **devenv.exe /setup /nosetupvstemplates**. Questa operazione forza specificate nel Registro di sistema sperimentale per essere rilettura e il database interno che descrive le risorse di VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] da ricompilare.  

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d2d54bf83cac677c09e63da6169e39100cbb30cc
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087729"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 
@@ -38,7 +38,8 @@ Il file di progetto (ad esempio **file con estensione csproj*) verranno aggiorna
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Aggiornare il pacchetto Microsoft.VSSDK.BuildTools NuGet
 
->**Nota:** Se la soluzione non fa riferimento il pacchetto Microsoft.VSSDK.BuildTools NuGet, è possibile ignorare questo passaggio.
+> [!Note]
+> Se la soluzione non fa riferimento il pacchetto Microsoft.VSSDK.BuildTools NuGet, è possibile ignorare questo passaggio.
 
 Per compilare l'estensione nel nuovo VSIX v3 formato (versione 3), la soluzione dovrà essere compilato con i nuovi strumenti di compilazione di VSSDK. Verrà installata con Visual Studio 2017, ma l'estensione VSIX v2 potrebbe essere che contiene un riferimento a una versione precedente tramite NuGet. In questo caso, è necessario installare manualmente un aggiornamento del pacchetto Microsoft.VSSDK.BuildTools NuGet per la soluzione.
 
@@ -55,13 +56,14 @@ Per aggiornare i riferimenti NuGet a Microsoft.VSSDK.BuildTools:
 
 Per assicurarsi che l'installazione dell'utente di Visual Studio ha tutti gli assembly necessari per eseguire l'estensione, specificare tutti i componenti dei prerequisiti o i pacchetti nel file manifesto di estensione. Quando un utente prova a installare l'estensione, il VSIX Installer controllerà se tutti i prerequisiti verranno installati. Se mancano alcuni, l'utente verrà chiesto di installare i componenti mancanti come parte del processo di installazione di estensione.
 
->**Nota:** Come minimo, tutte le estensioni è necessario specificare il componente editor principale di Visual Studio come prerequisito.
+> [!Note]
+> Come minimo, tutte le estensioni è necessario specificare il componente editor principale di Visual Studio come prerequisito.
 
 * Modificare il file manifesto di estensione (in genere chiamati *vsixmanifest*).
 * Assicurarsi che `InstallationTarget` include 15.0.
 * Aggiungere i prerequisiti di installazione richiesti (come illustrato nell'esempio seguente).
-  * È consigliabile che specificare solo ID di componenti dei prerequisiti.
-  * Vedere la sezione alla fine di questo documento anche per [istruzioni per identificare gli ID componente](#find-component-ids).
+   * È consigliabile che specificare solo ID di componenti dei prerequisiti.
+   * Vedere la sezione alla fine di questo documento anche per [istruzioni per identificare gli ID componente](#find-component-ids).
 
 Esempio:
 
@@ -81,23 +83,25 @@ Esempio:
 
 Anziché modificare direttamente il file XML del manifesto, è possibile usare il nuovo **prerequisiti** scheda della finestra di progettazione manifesto per selezionare i prerequisiti e il valore XML verrà aggiornato automaticamente.
 
->**Nota:** La finestra Progettazione manifesto solo consentono di selezionare i componenti (non i carichi di lavoro o pacchetti) e che siano installati nell'istanza di Visual Studio corrente. Se è necessario aggiungere un prerequisito per un carico di lavoro, un pacchetto o un componente che non è attualmente installato, è possibile modificare direttamente il manifesto XML.
+> [!Note]
+> La finestra Progettazione manifesto solo consentono di selezionare i componenti (non i carichi di lavoro o pacchetti) e che siano installati nell'istanza di Visual Studio corrente. Se è necessario aggiungere un prerequisito per un carico di lavoro, un pacchetto o un componente che non è attualmente installato, è possibile modificare direttamente il manifesto XML.
 
 * Aprire *vsixmanifest [Progettazione]* file.
 * Selezionare **prerequisiti** scheda e premere **New** pulsante.
 
-  ![Progettazione manifesto VSIX](media/vsix-manifest-designer.png)
+   ![Progettazione manifesto VSIX](media/vsix-manifest-designer.png)
 
 * Il **Aggiungi nuovo prerequisito** aprirà la finestra.
 
-  ![aggiungere il prerequisito di vsix](media/add-vsix-prerequisite.png)
+   ![aggiungere il prerequisito di vsix](media/add-vsix-prerequisite.png)
 
 * Fare clic sull'elenco a discesa per **nome** e selezionare il prerequisito desiderato.
 * Se necessario, aggiornare la versione.
 
-  >Nota: Il campo della versione verranno prepopolato con la versione del componente attualmente installato, con un intervallo che si estende fino a (ma non incluse) la prossima versione principale del componente.
+   > [!Note]
+   > Il campo della versione verranno prepopolato con la versione del componente attualmente installato, con un intervallo che si estende fino a (ma non incluse) la prossima versione principale del componente.
 
-  ![aggiungere il prerequisito di roslyn](media/add-roslyn-prerequisite.png)
+   ![aggiungere il prerequisito di roslyn](media/add-roslyn-prerequisite.png)
 
 * Fare clic su **OK**.
 
@@ -109,24 +113,26 @@ Potrebbe essere simile: *C:\Programmi\Microsoft file (x86) \Microsoft Visual Stu
 
 ![Avvia programma esterno](media/start-external-program.png)
 
->**Nota:** L'azione di avvio Debug è in genere archiviato nel *. csproj* file. Questo file è in genere incluso nel *file con estensione gitignore* di file e, di conseguenza, non vengono in genere salvate con altri file di progetto quando il commit al controllo del codice sorgente. Di conseguenza, se si have effettuato il pull della soluzione aggiornata dal controllo del codice sorgente è probabile che il progetto non avrà nessun valore impostato per l'azione di avvio. I nuovi progetti VSIX creati con Visual Studio 2017 avrà un *. csproj* file creato con le impostazioni predefinite che punta alla directory di installazione di Visual Studio corrente. Tuttavia se si esegue la migrazione di estensione VSIX v2, è probabile che il *. csproj* file conterrà i riferimenti a directory di installazione della versione di Visual Studio precedente. Impostazione del valore per **Debug** > **azione di avvio** consentirà l'istanza sperimentale di Visual Studio corretto da avviare quando si prova a eseguire il debug dell'estensione.
+> [!Note]
+> L'azione di avvio Debug è in genere archiviato nel *. csproj* file. Questo file è in genere incluso nel *file con estensione gitignore* di file e, di conseguenza, non vengono in genere salvate con altri file di progetto quando il commit al controllo del codice sorgente. Di conseguenza, se si have effettuato il pull della soluzione aggiornata dal controllo del codice sorgente è probabile che il progetto non avrà nessun valore impostato per l'azione di avvio. I nuovi progetti VSIX creati con Visual Studio 2017 avrà un *. csproj* file creato con le impostazioni predefinite che punta alla directory di installazione di Visual Studio corrente. Tuttavia se si esegue la migrazione di estensione VSIX v2, è probabile che il *. csproj* file conterrà i riferimenti a directory di installazione della versione di Visual Studio precedente. Impostazione del valore per **Debug** > **azione di avvio** consentirà l'istanza sperimentale di Visual Studio corretto da avviare quando si prova a eseguire il debug dell'estensione.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Verificare che l'estensione viene compilata correttamente (come un VSIX v3)
 
 * Compilare il progetto VSIX.
 * Decomprimere il pacchetto VSIX generato.
-  * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]*.
-  * Rinominare *VSIX* al *zip* visualizzare facilmente il contenuto.
+   * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]*.
+   * Rinominare *VSIX* al *zip* visualizzare facilmente il contenuto.
 * Verificare l'esistenza di tre file:
-  * *extension.vsixmanifest*
-  * *manifest.json*
-  * *catalog.json*
+   * *extension.vsixmanifest*
+   * *manifest.json*
+   * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Controllare quando vengono installati tutti i prerequisiti obbligatori
 
 Verificare che il progetto VSIX viene installato correttamente in un computer con tutti i prerequisiti installati.
 
->**Nota:** Prima di installare qualsiasi estensione, arrestare tutte le istanze di Visual Studio.
+> [!Note]
+> Prima di installare qualsiasi estensione, arrestare tutte le istanze di Visual Studio.
 
 Tentativo di installare l'estensione:
 
@@ -135,11 +141,11 @@ Tentativo di installare l'estensione:
 ![Programma di installazione VSIX in Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Facoltative: Per controllare le versioni precedenti di Visual Studio.
-  * Dimostri la compatibilità con le versioni precedenti.
-  * Dovrebbe funzionare per Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+   * Dimostri la compatibilità con le versioni precedenti.
+   * Dovrebbe funzionare per Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Facoltative: Verificare che VSIX Installer versione controllo offre una vasta gamma di versioni.
-  * Include le versioni precedenti di Visual Studio (se installato).
-  * Include Visual Studio 2017.
+   * Include le versioni precedenti di Visual Studio (se installato).
+   * Include Visual Studio 2017.
 
 Se recentemente è stato aperto Visual Studio, potrebbe essere visualizzata una finestra di dialogo simile alla seguente:
 
@@ -147,7 +153,8 @@ Se recentemente è stato aperto Visual Studio, potrebbe essere visualizzata una 
 
 Attendere i processi da arrestare o terminare manualmente le attività. È possibile trovare i processi dal nome elencato o con il PID con elencato tra parentesi.
 
->**Nota:** Questi processi non automaticamente arresterà durante l'esecuzione di un'istanza di Visual Studio. Assicurarsi di aver arrestare tutte le istanze di Visual Studio nel computer, comprese quelle di altri utenti, quindi continuare a ripetere.
+> [!Note]
+> Questi processi non automaticamente arresterà durante l'esecuzione di un'istanza di Visual Studio. Assicurarsi di aver arrestare tutte le istanze di Visual Studio nel computer, comprese quelle di altri utenti, quindi continuare a ripetere.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Controllare quando mancano i prerequisiti obbligatori
 

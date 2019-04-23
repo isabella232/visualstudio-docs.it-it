@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087322"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti usano elementi di progetto che rappresentano file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta anche progetti i cui dati sono non basate su file. Entrambi i file di proprietà del progetto e il file di progetto devono essere persistente. L'IDE indica il progetto per salvare se stesso o un elemento del progetto.
@@ -25,9 +25,9 @@ La persistenza è una considerazione di progettazione chiave per il progetto. La
 
  Elementi di progetto possono essere basata su file o non basate su file:
 
--   Gli elementi basati su file possono essere locale o remoto. Nei progetti Web nel linguaggio C#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenuti in locale, mentre gli stessi file persistono nel sistema remoto.
+- Gli elementi basati su file possono essere locale o remoto. Nei progetti Web nel linguaggio c#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenuti in locale, mentre gli stessi file persistono nel sistema remoto.
 
--   Elementi basati su file non è possono salvare gli elementi di un database o nell'archivio.
+- Elementi basati su file non è possono salvare gli elementi di un database o nell'archivio.
 
 ## <a name="commit-models"></a>Eseguire il commit di modelli
  Dopo avere deciso in cui si trovano gli elementi del progetto, è necessario scegliere il modello appropriato di commit. Ad esempio, in un modello basato su file con file locali, ogni progetto può essere salvato in modo autonomo. In un modello di repository, è possibile salvare più elementi in un'unica transazione. Per altre informazioni, vedere [decisioni di progettazione di tipo di progetto](../../extensibility/internals/project-type-design-decisions.md).

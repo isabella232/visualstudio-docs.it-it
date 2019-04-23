@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087794"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Uso di immagini in Visual Studio
+## <a name="BKMK_ImageUseInVisualStudio"></a> Uso di immagini in Visual Studio
  Prima di creare la grafica, è consigliabile rendere utilizzo delle immagini oltre 1.000 nel [Visual Studio Image Library](http://www.microsoft.com/en-my/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipi di immagini
 
--   **Le icone**. Immagini di piccole dimensioni che vengono visualizzati nei comandi, le gerarchie, modelli e così via. La dimensione di icona predefinita utilizzata in Visual Studio è un file 16x16 PNG. Icone generate automaticamente dal servizio image generano il formato XAML per il supporto HDPI.
+- **Le icone**. Immagini di piccole dimensioni che vengono visualizzati nei comandi, le gerarchie, modelli e così via. La dimensione di icona predefinita utilizzata in Visual Studio è un file 16x16 PNG. Icone generate automaticamente dal servizio image generano il formato XAML per il supporto HDPI.
 
      **NOTA:** Mentre le immagini vengono usate nel sistema di menu, non è necessario creare un'icona per ogni comando. Consultare [menu e comandi per Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) per vedere se il comando deve visualizzare un'icona.
 
--   **Anteprime.** Immagini usate nell'area di anteprima di una finestra di dialogo, ad esempio la finestra di dialogo Nuovo progetto.
+- **Anteprime.** Immagini usate nell'area di anteprima di una finestra di dialogo, ad esempio la finestra di dialogo Nuovo progetto.
 
--   **Immagini di finestra di dialogo.** Immagini visualizzate nelle finestre di dialogo o le procedure guidate, come grafica descrittiva o gli indicatori di messaggio. Usare raramente e solo quando necessario, per illustrare un concetto piuttosto complesso o per ottenere l'attenzione dell'utente (avviso, avviso).
+- **Immagini di finestra di dialogo.** Immagini visualizzate nelle finestre di dialogo o le procedure guidate, come grafica descrittiva o gli indicatori di messaggio. Usare raramente e solo quando necessario, per illustrare un concetto piuttosto complesso o per ottenere l'attenzione dell'utente (avviso, avviso).
 
--   **Immagini animate.** Utilizzata per gli indicatori di stato, barre di stato e le finestre di dialogo di operazione.
+- **Immagini animate.** Utilizzata per gli indicatori di stato, barre di stato e le finestre di dialogo di operazione.
 
--   **Cursori.** Utilizzato per indicare se un'operazione è consentita l'uso del mouse, in cui potrebbero essere interrotte, un oggetto e così via.
+- **Cursori.** Utilizzato per indicare se un'operazione è consentita l'uso del mouse, in cui potrebbero essere interrotte, un oggetto e così via.
 
-##  <a name="BKMK_IconDesign"></a> Progettazione di icona
+## <a name="BKMK_IconDesign"></a> Progettazione di icona
 
 ### <a name="overview"></a>Panoramica
  Visual Studio Usa icone in stile moderno, che dispongono di geometria pulita e un saldo 50/50 pari positivo/negativo (chiaro o scuro) e quindi metafore dirette e comprensibile. Icona fondamentale progettazione punti sono incentrate maggiore chiarezza, semplificazione e il contesto.
@@ -210,19 +210,19 @@ ms.locfileid: "56683142"
 
 #### <a name="file-types"></a>Tipi di file
 
--   **PNG a 32 bit:** nel formato preferito per le icone. Un formato di file compressione senza perdita di dati che può archiviare un'immagine raster single (pixel). file PNG a 32 bit supportano la trasparenza di canale alfa, la correzione gamma e interlacciamento.
+- **PNG a 32 bit:** nel formato preferito per le icone. Un formato di file compressione senza perdita di dati che può archiviare un'immagine raster single (pixel). file PNG a 32 bit supportano la trasparenza di canale alfa, la correzione gamma e interlacciamento.
 
--   **32 bit BMP:** per i controlli non WPF. Noto anche come XP o colori, 32 bit BMP è un formato di immagine RGB/A, un'immagine del true-color con trasparenza una canale alfa. Il canale alfa è un livello di trasparenza designata in Adobe Photoshop che verranno poi salvati in bitmap come un aggiuntiva (quarta) il canale del colore. Durante la produzione di opere a tutti i file BMP 32 bit per fornire un'indicazione visiva rapida sulla profondità di colore viene aggiunto un sfondo nero. Lo sfondo nero rappresenta l'area a cui applicare nell'interfaccia utente.
+- **32 bit BMP:** per i controlli non WPF. Noto anche come XP o colori, 32 bit BMP è un formato di immagine RGB/A, un'immagine del true-color con trasparenza una canale alfa. Il canale alfa è un livello di trasparenza designata in Adobe Photoshop che verranno poi salvati in bitmap come un aggiuntiva (quarta) il canale del colore. Durante la produzione di opere a tutti i file BMP 32 bit per fornire un'indicazione visiva rapida sulla profondità di colore viene aggiunto un sfondo nero. Lo sfondo nero rappresenta l'area a cui applicare nell'interfaccia utente.
 
--   **32 bit ICO:** per le icone di progetto e Aggiungi elemento. Tutti i file ICO sono true colori a 32 bit con la trasparenza di canale alfa (RGB/A). Poiché i file ICO possono archiviare più formati e intensità di colore, le icone Vista sono spesso in formato ICO contenente 16x16, 32x32, 48 x 48 e dimensioni delle immagini di 256 x 256. Per visualizzare correttamente in Windows Explorer, i file ICO devono essere salvati a discesa per intensità di colore a 24 bit e a 8 bit per ogni dimensione dell'immagine.
+- **32 bit ICO:** per le icone di progetto e Aggiungi elemento. Tutti i file ICO sono true colori a 32 bit con la trasparenza di canale alfa (RGB/A). Poiché i file ICO possono archiviare più formati e intensità di colore, le icone Vista sono spesso in formato ICO contenente 16x16, 32x32, 48 x 48 e dimensioni delle immagini di 256 x 256. Per visualizzare correttamente in Windows Explorer, i file ICO devono essere salvati a discesa per intensità di colore a 24 bit e a 8 bit per ogni dimensione dell'immagine.
 
--   **XAML:** per le aree di progettazione e gli strumenti decorativi visuali di Windows. Le icone XAML sono file di immagine basato su vettore che supportano la scalabilità, la rotazione, archiviazione e la trasparenza. Non sono comuni in Visual Studio oggi stesso, ma stanno diventando più popolari a causa delle loro flessibilità.
+- **XAML:** per le aree di progettazione e gli strumenti decorativi visuali di Windows. Le icone XAML sono file di immagine basato su vettore che supportano la scalabilità, la rotazione, archiviazione e la trasparenza. Non sono comuni in Visual Studio oggi stesso, ma stanno diventando più popolari a causa delle loro flessibilità.
 
--   **SVG**
+- **SVG**
 
--   **24 bit BMP:** per la barra dei comandi di Visual Studio. Un formato di immagine true-color: RGB(0, 24 bit BMP è una convenzione di icona che crea un livello di trasparenza come chiave di colore per un livello di trasparenza orizzontale knock tramite magenta (255 = R, G = 0, B = 255). In un'immagine BMP 24 bit, tutte le superfici magenta vengono visualizzate utilizzando il colore di sfondo.
+- **24 bit BMP:** per la barra dei comandi di Visual Studio. Un formato di immagine true-color: RGB(0, 24 bit BMP è una convenzione di icona che crea un livello di trasparenza come chiave di colore per un livello di trasparenza orizzontale knock tramite magenta (255 = R, G = 0, B = 255). In un'immagine BMP 24 bit, tutte le superfici magenta vengono visualizzate utilizzando il colore di sfondo.
 
--   **GIF 24 bit:** per la barra dei comandi di Visual Studio. Un formato di immagine RGB true-color che supporta la trasparenza. File GIF vengono spesso usati in opere di procedura guidata e animazioni GIF.
+- **GIF 24 bit:** per la barra dei comandi di Visual Studio. Un formato di immagine RGB true-color che supporta la trasparenza. File GIF vengono spesso usati in opere di procedura guidata e animazioni GIF.
 
 ### <a name="icon-construction"></a>Costruzione di icona
  Le dimensioni dell'icona in Visual Studio più piccola sono 16x16. La più grande in comune usare è 32x32. Tenere a mente non per riempire l'intero fotogramma 16 x 16, 24 x 24 o 32 x 32 quando si progetta un'icona. Costruzione di icona leggibili, uniform è essenziale per riconoscimento degli utenti. Rispettare quanto riportato di seguito durante la creazione di icone.
@@ -244,18 +244,18 @@ ms.locfileid: "56683142"
 
  Per altre informazioni sull'utilizzo dei colori nelle icone di Visual Studio, vedere [con colore nelle immagini](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-##  <a name="BKMK_UsingColorInImages"></a> Utilizzando colore nelle immagini
+## <a name="BKMK_UsingColorInImages"></a> Utilizzando colore nelle immagini
 
 ### <a name="overview"></a>Panoramica
  Le icone in Visual Studio sono principalmente monocromatica. Colore è riservato per comunicare informazioni specifiche e mai per effetto. Colore viene usato:
 
--   per indicare un'azione
+- per indicare un'azione
 
--   Per ricevere un avviso all'utente una notifica sullo stato
+- Per ricevere un avviso all'utente una notifica sullo stato
 
--   Per definire un'affiliazione di linguaggio
+- Per definire un'affiliazione di linguaggio
 
--   per distinguere gli elementi all'interno di IntelliSense
+- per distinguere gli elementi all'interno di IntelliSense
 
 ### <a name="accessibility"></a>Accessibilità
  Linee guida per la conformità di Visual Studio richiedono che tutte le icone selezionata nel passaggio di prodotti i requisiti di accessibilità per colore e a contrasto elevato. Colori della tavolozza del linguaggio visivo sono stati testati e soddisfano questi requisiti.
@@ -268,7 +268,7 @@ ms.locfileid: "56683142"
 ### <a name="base-palette"></a>Tavolozza di base
  Tutte le icone standard contengono tre colori di base. Le icone non contengono alcun sfumature o ombreggiature, con una o due eccezioni per le icone dello strumento di 3D.
 
-|Utilizzo|nome|Valore (con tema chiaro)|Campione|Esempio|
+|Utilizzo|Nome|Valore (con tema chiaro)|Campione|Esempio|
 |-----------|----------|---------------------------|------------|-------------|
 |Sfondo/scuro|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|
 |In primo piano/leggera|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -281,7 +281,7 @@ ms.locfileid: "56683142"
 #### <a name="action-modifiers"></a>Modificatori di azione
  I quattro colori riportato di seguito indicano i tipi di azioni necessarie per i modificatori di azione:
 
-|Utilizzo|nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Positivo|Visual Studio azione verde|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativo|Visual Studio azione rosso|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -318,20 +318,20 @@ ms.locfileid: "56683142"
 
 ||||||
 |-|-|-|-|-|
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Esegui|![Stop icon](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />Arresta|![Icona di eliminazione](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Eliminare|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Salva|![Icona Esplora Indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Esplora indietro|
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Esegui|![Stop icon](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />Arresta|![Icona di eliminazione](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Eliminare|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Salva|![Icona Esplora Indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Posizione precedente|
 
 ### <a name="code-hierarchy-palette"></a>Riquadro gerarchia code
 
 #### <a name="folder"></a>Cartella
 
-|Utilizzo|nome|Valore (tutti i temi)|Campione|Esempio|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|Esempio|
 |-----------|----------|--------------------------|------------|-------------|
 |Cartelle|Cartella|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icona della cartella colore](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguaggi di Visual Studio
  Ogni i comuni linguaggi o piattaforme disponibili in Visual Studio è associato alcun colore. Vengono usati questi colori sull'icona di base, o sui modificatori di linguaggio che vengono visualizzati nell'angolo superiore destro delle icone composte.
 
-|Utilizzo|nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF blu|0095D7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|Viola CPP|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -353,7 +353,7 @@ ms.locfileid: "56683142"
 #### <a name="intellisense"></a>IntelliSense
  Icone per IntelliSense utilizzano una tavolozza dei colori esclusivo. Tali colori vengono utilizzati per consentire agli utenti di distinguere rapidamente tra i diversi elementi nell'elenco popup di IntelliSense.
 
-|Utilizzo|nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Classe di evento,|Visual Studio azione arancione|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Metodo di estensione, metodo, modulo, delegato|Visual Studio azione viola|652 90 D / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -371,7 +371,7 @@ ms.locfileid: "56683142"
 ### <a name="notifications"></a>Notifiche
  Le notifiche in Visual Studio vengono usate per indicare lo stato. La tavolozza di notifica utilizza i seguenti quattro colori, nonché le opzioni di riempimento colore nero o bianco in primo piano, per definire le notifiche con i seguenti livelli di stato.
 
-|Utilizzo|nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Stato: neutro|Notifica Blue (blu di Visual Studio)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Stato: positiva|Notifica verde (verde Visual Studio)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -389,7 +389,7 @@ ms.locfileid: "56683142"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  In generale, Visual Studio Online include funzionalità ospitate in un browser. Il colore varia in ambienti diversi, ma lo stile rimane invariato.
 
-|Raggruppa|Utilizzo|nome|Valore (tutti i temi)|Campione|
+|Raggruppa|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Sfondo|TFSO BG|656565/ 101, 101, 101|![Swatch 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|Contorno|TFSO OUT|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|

@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1b98875bbc7ea4fc33c342ab625be385593aab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9838e934421e619c85f348052fbe589288391c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104720"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Risposta alle modifiche e propagazione delle modifiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere c
   
  Usare gli eventi di archiviazione per sincronizzare il modello con gli oggetti di fuori di Store e le regole per mantenere la coerenza all'interno di Store.  
   
--   **Creazione di regole personalizzate** è creare una regola personalizzata come una classe derivata da una regola astratta. È anche necessario segnalare al framework relativa alla regola personalizzata. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+- **Creazione di regole personalizzate** è creare una regola personalizzata come una classe derivata da una regola astratta. È anche necessario segnalare al framework relativa alla regola personalizzata. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
--   **Sottoscrizione di eventi** prima di richiedere a un evento, creare un gestore dell'evento e delegato. Usare quindi il <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+- **Sottoscrizione di eventi** prima di richiedere a un evento, creare un gestore dell'evento e delegato. Usare quindi il <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
--   **Annullamento delle modifiche** quando si annulla una transazione, gli eventi vengono generati, ma non vengono applicate le regole. Se una regola viene modificato un valore e si annulla la modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore relativo valore originale. Per altre informazioni su transactons e di annullamento, vedere [come: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
+- **Annullamento delle modifiche** quando si annulla una transazione, gli eventi vengono generati, ma non vengono applicate le regole. Se una regola viene modificato un valore e si annulla la modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore relativo valore originale. Per altre informazioni su transactons e di annullamento, vedere [come: Utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
--   **Il passaggio di argomenti dell'evento a regole ed eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che contiene informazioni su come il modello modificato.  
+- **Il passaggio di argomenti dell'evento a regole ed eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che contiene informazioni su come il modello modificato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   

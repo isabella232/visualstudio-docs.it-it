@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0e0f08256d8852e707c3f6acf37ed6addc2ef831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3cb95da9bc6405d313aa32e208d68df4327db6f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087898"
 ---
 # <a name="querying-the-pdb-file"></a>Ricerche nel file PDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Un file di database di programma (con estensione pdb) è un file binario che con
   
 ### <a name="to-query-the-pdb-file"></a>Per eseguire query sul file con estensione pdb  
   
-1.  Acquisire un'origine dati mediante la creazione di un' [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) interfaccia.  
+1. Acquisire un'origine dati mediante la creazione di un' [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) interfaccia.  
   
     ```cpp#  
     CComPtr<IDiaDataSource> pSource;  
@@ -44,7 +44,7 @@ Un file di database di programma (con estensione pdb) è un file binario che con
     }  
     ```  
   
-2.  Chiamare [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) oppure [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) per caricare le informazioni di debug.  
+2. Chiamare [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) oppure [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) per caricare le informazioni di debug.  
   
     ```cpp#  
     wchar_t wszFilename[ _MAX_PATH ];  
@@ -58,7 +58,7 @@ Un file di database di programma (con estensione pdb) è un file binario che con
     }  
     ```  
   
-3.  Chiamare [Idiadatasource](../../debugger/debug-interface-access/idiadatasource-opensession.md) per aprire un' [IDiaSession](../../debugger/debug-interface-access/idiasession.md) per ottenere l'accesso alle informazioni di debug.  
+3. Chiamare [Idiadatasource](../../debugger/debug-interface-access/idiadatasource-opensession.md) per aprire un' [IDiaSession](../../debugger/debug-interface-access/idiasession.md) per ottenere l'accesso alle informazioni di debug.  
   
     ```cpp#  
     CComPtr<IDiaSession> psession;  
@@ -68,7 +68,7 @@ Un file di database di programma (con estensione pdb) è un file binario che con
     }  
     ```  
   
-4.  Usare i metodi in `IDiaSession` per eseguire query per i simboli nell'origine dati.  
+4. Usare i metodi in `IDiaSession` per eseguire query per i simboli nell'origine dati.  
   
     ```cpp#  
     CComPtr<IDiaSymbol> pglobal;  
@@ -78,7 +78,7 @@ Un file di database di programma (con estensione pdb) è un file binario che con
     }  
     ```  
   
-5.  Usare il `IDiaEnum*` interfacce di enumerare e analizzare i simboli o altri elementi di informazioni di debug.  
+5. Usare il `IDiaEnum*` interfacce di enumerare e analizzare i simboli o altri elementi di informazioni di debug.  
   
     ```cpp#  
     CComPtr<IDiaEnumTables> pTables;  

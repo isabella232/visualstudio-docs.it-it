@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104317"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procedura: Configurare l'analisi codice per un progetto di codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Nelle [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](.
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Per configurare una set di regole per un progetto .NET Framework  
   
-1.  Nelle **Esplora soluzioni**, fare clic con il progetto.  
+1. Nelle **Esplora soluzioni**, fare clic con il progetto.  
   
-2.  Nel **Analyze** menu, fare clic su **Configura analisi codice per** *NomeProgetto*.  
+2. Nel **Analyze** menu, fare clic su **Configura analisi codice per** *NomeProgetto*.  
   
-3.  Nel **Configuration** e **piattaforma** elenchi, scegliere la piattaforma di destinazione e configurazione di compilazione.  
+3. Nel **Configuration** e **piattaforma** elenchi, scegliere la piattaforma di destinazione e configurazione di compilazione.  
   
-4.  Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice aprendo il **Analyze** menu e scegliendo **Esegui analisi del codice** *NomeProgetto*.  
+4. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice aprendo il **Analyze** menu e scegliendo **Esegui analisi del codice** *NomeProgetto*.  
   
-5.  Per impostazione predefinita, l'analisi del codice non segnala gli avvisi del codice generato automaticamente da strumenti esterni. Per visualizzare gli avvisi del codice generato, deselezionare il **non visualizzare i risultati dal codice generato** casella di controllo.  
+5. Per impostazione predefinita, l'analisi del codice non segnala gli avvisi del codice generato automaticamente da strumenti esterni. Per visualizzare gli avvisi del codice generato, deselezionare il **non visualizzare i risultati dal codice generato** casella di controllo.  
   
     > [!NOTE]
     >  Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e gli avvisi vengono visualizzati nei moduli e nei modelli. È possibile visualizzare e gestire il codice sorgente per un modulo o un modello.  
   
-6.  Nel **eseguire questo set di regole** elenco, effettuare una delle operazioni seguenti:  
+6. Nel **eseguire questo set di regole** elenco, effettuare una delle operazioni seguenti:  
   
-    -   Fare clic sul set di regole che si desidera utilizzare.  
+    - Fare clic sul set di regole che si desidera utilizzare.  
   
-    -   Fare clic su  **\<Sfoglia >** per specificare set di una regola personalizzata esistente non incluso nell'elenco.  
+    - Fare clic su  **\<Sfoglia >** per specificare set di una regola personalizzata esistente non incluso nell'elenco.  
   
-    -   Definire un set di regole personalizzato.  
+    - Definire un set di regole personalizzato.  
   
          Per altre informazioni, vedere [creazione di set di regole personalizzate](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   

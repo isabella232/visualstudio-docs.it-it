@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087378"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 
@@ -34,16 +34,16 @@ Per questo motivo, se si vuole leggere un diagramma delle dipendenze, è anche n
 
 Per leggere un diagramma delle dipendenze, il set minimo di file che devono essere è come segue:
 
--   I due file diagramma per il diagramma da leggere, ad esempio, **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.
+- I due file diagramma per il diagramma da leggere, ad esempio, **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Per i diagrammi delle dipendenze, è necessario anche il file denominato _MyDiagram_**. MyDiagram**.
 
--   File di progetto di modellazione (**MyModel. modelproj**)
+- File di progetto di modellazione (**MyModel. modelproj**)
 
--   Il file del modello radice (**ModelDefinition\MyModel.uml**)
+- Il file del modello radice (**ModelDefinition\MyModel.uml**)
 
--   I file del pacchetto per i pacchetti di cui viene fatto riferimento nel diagramma (**ModelDefinition\MyPackage.uml**)
+- I file del pacchetto per i pacchetti di cui viene fatto riferimento nel diagramma (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifiche eseguibili in modalità di sola lettura
 
@@ -57,5 +57,5 @@ Queste modifiche possono essere salvate. Se si desidera rendere visibili ad altr
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 - [Creare modelli per l'app](../modeling/create-models-for-your-app.md)

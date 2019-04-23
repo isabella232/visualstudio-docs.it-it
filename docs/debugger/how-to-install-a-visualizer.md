@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: installare un visualizzatore | Microsoft Docs'
+title: 'Procedura: Installare un visualizzatore | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104486"
 ---
-# <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
+# <a name="how-to-install-a-visualizer"></a>Procedura: Installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.
 
 > [!NOTE]
@@ -32,17 +32,17 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 
 ### <a name="to-install-a-visualizer"></a>Per installare un visualizzatore
 
-1.  Individuare la DLL contenente il visualizzatore compilato.
+1. Individuare la DLL contenente il visualizzatore compilato.
 
-2.  Copiare la DLL in uno dei seguenti percorsi:
+2. Copiare la DLL in uno dei seguenti percorsi:
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Se si desidera usare un visualizzatore gestito per il debug remoto, copiare la DLL nello stesso percorso nel computer remoto.
+3. Se si desidera usare un visualizzatore gestito per il debug remoto, copiare la DLL nello stesso percorso nel computer remoto.
 
-4.  Riavviare la sessione di debug.
+4. Riavviare la sessione di debug.
 
 ## <a name="see-also"></a>Vedere anche
 - [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

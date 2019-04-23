@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104265"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Procedura: specificare gli eventi di compilazione (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gli eventi di compilazione in Visual Basic possono essere usati per eseguire script, macro o altre azioni come parte del processo di compilazione. Gli eventi di pre-compilazione si verificano prima della compilazione e gli eventi di post-compilazione si verificano dopo la compilazione.  
@@ -36,13 +36,13 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
   
 #### <a name="to-specify-a-build-event"></a>Per specificare un evento di compilazione  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic sulla scheda **Compila**.  
+2. Fare clic sulla scheda **Compila**.  
   
-3.  Fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.  
+3. Fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.  
   
-4.  Immettere gli argomenti della riga di comando per l'azione di pre-compilazione o post-compilazione e fare clic su **OK**.  
+4. Immettere gli argomenti della riga di comando per l'azione di pre-compilazione o post-compilazione e fare clic su **OK**.  
   
     > [!NOTE]
     >  Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
@@ -50,7 +50,7 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
     > [!NOTE]
     >  Se l'evento di pre-compilazione o post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'azione dell'evento a uscire con un codice diverso da zero (0), che indica un esito positivo.  
   
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Esempio: come modificare le informazioni di un manifesto usando un evento di post-compilazione  
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Esempio: Come modificare le informazioni sul manifesti usando un evento di post-compilazione  
  La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando exe chiamato da un evento di post-compilazione (il file exe.manifest nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:  
   
 ```  
@@ -126,15 +126,15 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Per richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione  
   
-1.  Creare un'applicazione Windows per il progetto da pubblicare. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.  
+1. Creare un'applicazione Windows per il progetto da pubblicare. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione Windows**. Denominare il progetto `VBWinApp`.  
+2. Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione Windows**. Denominare il progetto `VBWinApp`.  
   
-3.  Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+3. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-4.  In Creazione progetti, passare alla pagina **Pubblica** e impostare **Posizione di pubblicazione** a `C:\TEMP\`.  
+4. In Creazione progetti, passare alla pagina **Pubblica** e impostare **Posizione di pubblicazione** a `C:\TEMP\`.  
   
-5.  Pubblicare il progetto facendo clic su **Pubblica**.  
+5. Pubblicare il progetto facendo clic su **Pubblica**.  
   
      Il file manifesto verrà compilato e salvato in `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file e scegliere **Apri con**, fare clic su **Seleziona il programma da un elenco** e quindi scegliere **Blocco note**.  
   
@@ -144,9 +144,9 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  In Creazione progetti, passare alla scheda **Compila** e fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.  
+6. In Creazione progetti, passare alla scheda **Compila** e fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.  
   
-7.  Nella casella **Riga di comando eventi post-compilazione** immettere il comando seguente:  
+7. Nella casella **Riga di comando eventi post-compilazione** immettere il comando seguente:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
   
      La macro `$(TargetPath)` indica il percorso completo dell'eseguibile che si sta creando. Di conseguenza, $(TargetPath).manifest specificherà il manifesto dell'applicazione creato nella directory bin. La pubblicazione copierà questo manifesto nel percorso di pubblicazione impostato in precedenza.  
   
-8.  Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.  
+8. Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.  
   
      Visualizzare nuovamente il manifesto. Per visualizzare il manifesto, passare alla directory di pubblicazione, fare clic con il pulsante destro del mouse sul file e scegliere **Apri con**, quindi fare clic su **Seleziona il programma da un elenco** e scegliere **Blocco note**.  
   
@@ -169,4 +169,4 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
  [Pagina Compilazione, Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Pagina Pubblica, Creazione progetti](../ide/reference/publish-page-project-designer.md)   
  [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Procedura: Specificare eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md)
+ [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md)

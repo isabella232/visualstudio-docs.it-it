@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088028"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aggiornare un'app UWP in Visual Studio
 
@@ -32,34 +32,34 @@ ms.locfileid: "58790290"
 
  L'aggiornamento non mantiene lo stato dell'app né riflette le seguenti modifiche nell'app:
 
--   Modifiche al file manifesto del pacchetto, incluse le modifiche alle immagini specificato nel manifesto di pacchetto.
+- Modifiche al file manifesto del pacchetto, incluse le modifiche alle immagini specificato nel manifesto di pacchetto.
 
--   Modifiche dei riferimenti, ad esempio l'aggiunta o la rimozione di un riferimento SDK, o le modifiche ai componenti Windows Runtime (file con estensione winmd).
+- Modifiche dei riferimenti, ad esempio l'aggiunta o la rimozione di un riferimento SDK, o le modifiche ai componenti Windows Runtime (file con estensione winmd).
 
--   Modifiche delle risorse, ad esempio modifiche alle stringhe nei file con estensione resjson.
+- Modifiche delle risorse, ad esempio modifiche alle stringhe nei file con estensione resjson.
 
--   Modifiche dei file di progetto che causano modifiche dei nomi di percorso, nuovi file di progetto e file eliminati.
+- Modifiche dei file di progetto che causano modifiche dei nomi di percorso, nuovi file di progetto e file eliminati.
 
--   Modifiche delle proprietà di elementi e progetti, ad esempio modifiche al dispositivo di debug selezionato o modifiche all'azione del pacchetto per un file (nella finestra Proprietà).
+- Modifiche delle proprietà di elementi e progetti, ad esempio modifiche al dispositivo di debug selezionato o modifiche all'azione del pacchetto per un file (nella finestra Proprietà).
 
 > [!IMPORTANT]
 >  Quando modifichi i riferimenti, cambi il manifesto del pacchetto o apporti altre modifiche specificate nell'elenco precedente, devi arrestare e riavviare il debugger per aggiornare i file di origine HTML, CSS e JavaScript.
 
 ### <a name="to-refresh-an-app"></a>Per aggiornare un'app
 
-1.  Con il progetto UWP aperto in Visual Studio, selezionare **computer locale** come destinazione di debug.
+1. Con il progetto UWP aperto in Visual Studio, selezionare **computer locale** come destinazione di debug.
 
      ![Elenco di destinazioni di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")
 
-3.  Premi F5 per eseguire l'app in modalità debug.
+3. Premi F5 per eseguire l'app in modalità debug.
 
-4.  Passa a Visual Studio.
+4. Passa a Visual Studio.
 
-5.  Nella home page dell'app UWP, modificare parte del codice HTML.
+5. Nella home page dell'app UWP, modificare parte del codice HTML.
 
-7.  Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js_refresh.png "JS_Refresh"). o premi F4.
+7. Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js_refresh.png "JS_Refresh"). o premi F4.
 
-8.  Torna all'app. L'app viene ricaricata e il codice HTML aggiornato è utilizzato per il rendering dell'app.
+8. Torna all'app. L'app viene ricaricata e il codice HTML aggiornato è utilizzato per il rendering dell'app.
 
 ## <a name="see-also"></a>Vedere anche
 - [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

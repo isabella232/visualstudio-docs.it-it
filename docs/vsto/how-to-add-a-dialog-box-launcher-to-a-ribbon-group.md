@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087183"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procedura: Aggiungere un pulsante di visualizzazione della finestra di dialogo a un gruppo della barra multifunzione
   È possibile aggiungere una visualizzazione finestra di dialogo a un gruppo in una barra multifunzione. Visualizzazione di una finestra di dialogo è una piccola icona visualizzata in un gruppo. Gli utenti fanno clic sull'icona per aprire finestre di dialogo correlate o riquadri attività che forniscono ulteriori opzioni correlate al gruppo.
@@ -27,11 +27,11 @@ ms.locfileid: "56629950"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Per aggiungere una visualizzazione finestra di dialogo a un gruppo della barra multifunzione
 
-1.  Selezionare il file di codice della barra multifunzione (*vb* oppure *cs* file) in **Esplora**.
+1. Selezionare il file di codice della barra multifunzione (*vb* oppure *cs* file) in **Esplora**.
 
-2.  Nel **View** menu, fare clic su **progettazione**.
+2. Nel **View** menu, fare clic su **progettazione**.
 
-3.  Nella finestra di progettazione della barra multifunzione, fare doppio clic su qualsiasi gruppo e quindi fare clic su **Aggiungi DialogBoxLauncher**.
+3. Nella finestra di progettazione della barra multifunzione, fare doppio clic su qualsiasi gruppo e quindi fare clic su **Aggiungi DialogBoxLauncher**.
 
      Aggiungere il codice per il <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> eventi del gruppo per aprire una finestra di dialogo personalizzata o incorporata.
 

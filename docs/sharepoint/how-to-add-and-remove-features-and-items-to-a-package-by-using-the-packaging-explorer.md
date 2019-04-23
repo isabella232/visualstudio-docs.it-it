@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104460"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti
   Per configurare un pacchetto per distribuire gli elementi di SharePoint e le funzionalità, è possibile usare Esplora pacchetti. È possibile regolare i elementi di progetto SharePoint e le funzionalità all'interno del file con estensione wsp.
@@ -31,7 +31,7 @@ ms.locfileid: "56596425"
 
 #### <a name="to-open-the-packaging-explorer"></a>Per aprire Esplora pacchetti
 
-1.  Nella barra dei menu, scegliere **View** > **Other Windows** > **Esplora pacchetti**.
+1. Nella barra dei menu, scegliere **View** > **Other Windows** > **Esplora pacchetti**.
 
      Il **Esplora pacchetti** viene visualizzato nei **della casella degli strumenti**.
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596425"
 
 #### <a name="to-add-a-sharepoint-feature"></a>Per aggiungere una funzionalità di SharePoint
 
-1.  Aprire il **Esplora pacchetti**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Aggiungi funzionalità**.
+1. Aprire il **Esplora pacchetti**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Aggiungi funzionalità**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Per spostare una funzionalità di SharePoint esistente
 
-1.  Aprire il **Esplora pacchetti**e quindi effettuare una delle operazioni seguenti:
+1. Aprire il **Esplora pacchetti**e quindi effettuare una delle operazioni seguenti:
 
-    -   Trascinare un **funzionalità** da un progetto a un altro progetto.
+    - Trascinare un **funzionalità** da un progetto a un altro progetto.
 
-    -   Aprire il menu di scelta rapida per una funzionalità, scegliere **tagliare**, aprire il menu di scelta rapida per il progetto a cui si desidera spostare la funzionalità e quindi scegliere **Incolla**.
+    - Aprire il menu di scelta rapida per una funzionalità, scegliere **tagliare**, aprire il menu di scelta rapida per il progetto a cui si desidera spostare la funzionalità e quindi scegliere **Incolla**.
 
     > [!NOTE]
     >  Utilizzare questa procedura se nella soluzione sono presenti diversi progetti SharePoint.
@@ -58,9 +58,9 @@ ms.locfileid: "56596425"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Per convalidare un pacchetto o una funzionalità SharePoint
 
-1.  Aprire il **Esplora pacchetti**.
+1. Aprire il **Esplora pacchetti**.
 
-2.  Aprire un menu di scelta rapida per una funzionalità o un pacchetto e quindi scegliere **Validate**.
+2. Aprire un menu di scelta rapida per una funzionalità o un pacchetto e quindi scegliere **Validate**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
