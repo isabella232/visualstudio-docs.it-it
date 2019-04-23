@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063777"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Quando si crea un file della procedura guidata, è necessario inoltre tenere presente quanto segue.  
 
--   Qualsiasi campo non obbligatori per i quali non sono presenti dati significativi deve contenere il valore 0 (zero) come segnaposto.  
+- Qualsiasi campo non obbligatori per i quali non sono presenti dati significativi deve contenere il valore 0 (zero) come segnaposto.  
 
--   Se viene fornito alcun nome localizzato, viene utilizzato il nome di percorso relativo nel file della procedura guidata.  
+- Se viene fornito alcun nome localizzato, viene utilizzato il nome di percorso relativo nel file della procedura guidata.  
 
--   DLLPath sostituisce clsidPackage per le icone.  
+- DLLPath sostituisce clsidPackage per le icone.  
 
--   Se è definita alcuna icona, l'IDE sostituisce l'icona predefinita per un file con estensione.  
+- Se è definita alcuna icona, l'IDE sostituisce l'icona predefinita per un file con estensione.  
 
--   Se non viene specificato alcun nome di base, viene utilizzato 'Project'.  
+- Se non viene specificato alcun nome di base, viene utilizzato 'Project'.  
 
--   Se si elimina il file con estensione vsz, cartelle o file di modello, è necessario rimuovere anche i record associati dal file VSDIR.  
+- Se si elimina il file con estensione vsz, cartelle o file di modello, è necessario rimuovere anche i record associati dal file VSDIR.  
 
 ## <a name="see-also"></a>Vedere anche  
  [Procedure guidate](../../extensibility/internals/wizards.md)   

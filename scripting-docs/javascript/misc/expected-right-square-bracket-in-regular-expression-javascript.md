@@ -14,19 +14,19 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377bdd6b09c9f25b759d6bf1df2d93e9bd412be5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5c49ab90dae8f30dae075906bb9c7ecb7881428f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065077"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Prevista ']' nell'espressione regolare (JavaScript)
 Si ha provato a creare una classe di caratteri per trovare una corrispondenza di espressione regolare, ma non include la parentesi quadra chiusa. Le combinazioni di caratteri letterali singoli possono essere assemblate in classi di caratteri, posizionandoli all'interno di parentesi quadre. Una classe di caratteri corrisponde a qualsiasi carattere che contiene. Ad esempio, / [lettere abc] corrisponde a una qualsiasi lettera "a", "b" o "c".  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Aggiungere la parentesi quadra chiusa all'espressione regolare.  
+- Aggiungere la parentesi quadra chiusa all'espressione regolare.  
   
     > [!NOTE]
     >  Se si desidera corrisponde una parentesi singola, eseguirne l'escape con una barra rovesciata - \\[, in modo che non viene interpretato come un carattere speciale da [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062230"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Proprietà di tipi in diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ In un diagramma classi UML, un *tipo* è una classe, un'interfaccia o enumerazio
 > [!NOTE]
 >  Questo argomento illustra le proprietà dei tipi nei diagrammi classi UML Per altre informazioni, vedere i seguenti argomenti:  
   
--   [Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)  
+- [Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Proprietà  
  Sono le proprietà di una classe, un'interfaccia o un'enumerazione.  

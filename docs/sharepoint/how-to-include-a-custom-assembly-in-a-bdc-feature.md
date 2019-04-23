@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efbbef540ddd7759fe0614eecccc663368bd23b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059623"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: Includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
   Il progetto può fare riferimento agli assembly da altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly nel file di funzionalità del progetto usando il **assegnazione fa riferimento agli assembly di oggetti LobSystem** nella finestra di dialogo.
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Per includere un assembly personalizzato in una funzionalità di connettività (BDC) dei dati di business
 
-1.  Nelle **Esplora soluzioni**, scegliere la cartella che contiene il modello di integrazione applicativa dei dati.
+1. Nelle **Esplora soluzioni**, scegliere la cartella che contiene il modello di integrazione applicativa dei dati.
 
-2.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
+2. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-3.  Nel **delle proprietà** finestra, scegliere il **assembly** proprietà e quindi sui puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ASP.NET per dispositivi mobili Ellisse progettazione")).
+3. Nel **delle proprietà** finestra, scegliere il **assembly** proprietà e quindi sui puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ASP.NET per dispositivi mobili Ellisse progettazione")).
 
      Il **Assign fare riferimento agli assembly di oggetti LobSystem** verrà visualizzata la finestra di dialogo.
 
-4.  Nel **selezionare un Assembly** scegliere l'assembly personalizzato.
+4. Nel **selezionare un Assembly** scegliere l'assembly personalizzato.
 
     > [!NOTE]
     >  Gli assembly vengono visualizzati solo nel **Assign fare riferimento agli assembly di oggetti LobSystem** finestra di dialogo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-5.  Nel **le proprietà di riferimento** gruppo, aprire l'elenco visualizzato per il **ambito LobSystem** proprietà, scegliere il sistema LOB dei metodi che usano l'assembly personalizzato e quindi scegliere il **OK**  pulsante.
+5. Nel **le proprietà di riferimento** gruppo, aprire l'elenco visualizzato per il **ambito LobSystem** proprietà, scegliere il sistema LOB dei metodi che usano l'assembly personalizzato e quindi scegliere il **OK**  pulsante.
 
     > [!NOTE]
     >  Per eseguire il debug di codice nell'assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).

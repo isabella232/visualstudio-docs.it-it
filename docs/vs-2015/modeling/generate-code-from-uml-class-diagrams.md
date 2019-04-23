@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056159"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generare codice da diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
 2. In un diagramma classi o nella **Esplora modelli UML**, selezionare gli elementi da cui si vuole generare il codice. È possibile effettuare una delle seguenti selezioni:  
 
-   -   Un set specifico di elementi.  
+   - Un set specifico di elementi.  
 
-   -   Un pacchetto o il modello, dal cui contenuto generare il codice.  
+   - Un pacchetto o il modello, dal cui contenuto generare il codice.  
 
-   -   Il diagramma, per selezionarne tutti gli elementi.  
+   - Il diagramma, per selezionarne tutti gli elementi.  
 
 3. Aprire il menu di scelta rapida per un elemento selezionato e quindi scegliere **genera codice**.  
 
@@ -71,7 +71,7 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
    Al modello vengono applicati alcuni test di convalida per verificare che possa essere convertito in C#. Se i test hanno esito negativo, viene visualizzato un messaggio di errore e la generazione di codice non viene eseguita. Se si è creato un comando di menu di convalida, il codice non viene generato per gli elementi per i quali il comando di convalida ha esito negativo. Per altre informazioni, vedere [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Trasformazioni della generazione di codice predefinita  
+## <a name="default"></a> Trasformazioni della generazione di codice predefinita  
  In questa sezione riepiloga i risultati prodotti dal **genera codice** non è stato personalizzato il comando. Per altre informazioni, vedere [personalizzazione del comando genera codice](#custom).  
 
 - Per ogni tipo selezionato nel modello UML viene generato un tipo C#. Ogni tipo viene inserito in un file di codice separato nella **GeneratedCode** cartella.  
@@ -126,7 +126,7 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
   Ogni attributo e operazione dispone di proprietà di stereotipo che è possibile impostare. Se non è possibile visualizzare le proprietà in un nuovo attributo, eseguire **genera codice**.  
 
-##  <a name="custom"></a> Personalizzazione del comando genera codice  
+## <a name="custom"></a> Personalizzazione del comando genera codice  
  Il **genera codice** comando funziona mediante la trasformazione degli elementi del modello usando un set di modelli di testo. Per altre informazioni sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  I modelli vengono specificati in un set di *associazioni modelli di testo*. Consente di specificare un'associazione di modelli di testo deve essere applicato il modello, in cui deve essere inserito l'output generato e altri parametri del **genera codice** comando.  
@@ -175,7 +175,7 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 
 5. È possibile collegare a un elemento il numero di associazioni desiderato.  
 
-##  <a name="writing"></a> Scrittura di un modello di testo  
+## <a name="writing"></a> Scrittura di un modello di testo  
  È possibile scrivere modelli di testo personalizzati. I modelli di testo possono generare codice programma o qualsiasi altro tipo di file di testo.  
 
  Si consiglia di iniziare modificando copie dei modelli standard. È possibile copiare i modelli dai seguenti percorsi:  

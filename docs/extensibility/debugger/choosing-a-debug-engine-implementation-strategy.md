@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2fb608acdad60f5387750045a15f8eba36e2375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 245fb14b06b5deed5ee652ef394e241bd1191022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048957"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Scegliere una strategia di implementazione del motore di debug
 Utilizzare l'architettura di runtime per determinare la strategia di implementazione (DE) del motore di debug. È possibile creare il debug del motore in-process per il programma di che debug. Creare il debug del motore in-process per la gestione di debug di Visual Studio sessione (SDM). In alternativa, creare il debug del motore out-of-process per entrambi i sistemi operativi. Le linee guida seguenti consentono di scegliere tra queste tre strategie.
@@ -27,9 +27,9 @@ Utilizzare l'architettura di runtime per determinare la strategia di implementaz
 
  In caso contrario, si crea il DE per il modello SDM in-process o in-process per il programma di debug. È necessario prendere in considerazione se l'analizzatore di espressioni della DE richiede l'accesso frequente per l'archivio dei simboli programma. In alternativa, se l'archivio dei simboli può essere caricata in memoria per l'accesso rapido. Inoltre, prendere in considerazione gli approcci seguenti:
 
--   Se non sono presenti molte chiamate tra l'analizzatore di espressioni e l'archivio dei simboli, o se l'archivio dei simboli può essere letti in spazio di memoria SDM, creare il DE per il modello SDM in-process. È necessario restituire il CLSID del motore di debug per il modello SDM al momento del collegamento al programma. Il modello SDM Usa questo CLSID per creare un'istanza in-process della DE.
+- Se non sono presenti molte chiamate tra l'analizzatore di espressioni e l'archivio dei simboli, o se l'archivio dei simboli può essere letti in spazio di memoria SDM, creare il DE per il modello SDM in-process. È necessario restituire il CLSID del motore di debug per il modello SDM al momento del collegamento al programma. Il modello SDM Usa questo CLSID per creare un'istanza in-process della DE.
 
--   Se la Germania deve chiamare il programma per accedere all'archivio di simboli, creare il DE in-process con il programma. In questo caso, il programma crea l'istanza della DE.
+- Se la Germania deve chiamare il programma per accedere all'archivio di simboli, creare il DE in-process con il programma. In questo caso, il programma crea l'istanza della DE.
 
 ## <a name="see-also"></a>Vedere anche
 - [Estendibilità del debugger Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

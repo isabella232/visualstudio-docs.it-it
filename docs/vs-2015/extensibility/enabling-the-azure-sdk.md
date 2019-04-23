@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061333"
 ---
 # <a name="enabling-the-azure-sdk"></a>Abilitazione di Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Azure SDK per consente di .NET creare, configurare, compilare, eseguire il debug
   
 ### <a name="to-enable-the-azure-sdk"></a>Per abilitare il SDK di Azure  
   
-1.  Nel **File** menu, creare un nuovo progetto. (Fare clic su **New** e quindi fare clic su **progetto**.)  
+1. Nel **File** menu, creare un nuovo progetto. (Fare clic su **New** e quindi fare clic su **progetto**.)  
   
-2.  Espandere il nodo di uno **Visual Basic** oppure **C#** e quindi fare clic su **Cloud**.  
+2. Espandere il nodo di uno **Visual Basic** oppure **c#** e quindi fare clic su **Cloud**.  
   
-3.  Nel riquadro centrale, selezionare **ottenere Azure SDK per .NET**, quindi fare clic su **OK**.  
+3. Nel riquadro centrale, selezionare **ottenere Azure SDK per .NET**, quindi fare clic su **OK**.  
   
      Seguire le istruzioni del programma di installazione.  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063530"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Finestre Espressioni di controllo e Controllo immediato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  È possibile osservare la variabile a nella finestra Controllo immediato come segue:  
   
-1.  Impostare un punto di interruzione nella riga `a = a + b;` .  
+1. Impostare un punto di interruzione nella riga `a = a + b;` .  
   
-2.  Avviare il debug. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione.  
+2. Avviare il debug. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione.  
   
-3.  Aprire la finestra **Controllo immediato** (fare clic con il pulsante destro del mouse su a, quindi scegliere **Debug/Controllo immediato**o **MAIUSC+F9**). È possibile aprire la finestra e aggiungere la variabile a nella finestra **Espressione** , quindi fare clic su **Rivaluta**. La variabile a verrà visualizzata nella finestra **Valori** con il valore 2.  
+3. Aprire la finestra **Controllo immediato** (fare clic con il pulsante destro del mouse su a, quindi scegliere **Debug/Controllo immediato**o **MAIUSC+F9**). È possibile aprire la finestra e aggiungere la variabile a nella finestra **Espressione** , quindi fare clic su **Rivaluta**. La variabile a verrà visualizzata nella finestra **Valori** con il valore 2.  
   
-4.  La finestra **Controllo immediato** è una finestra di dialogo modale, per cui non è possibile continuare il debug finché è aperta. È possibile aggiungere la variabile nella finestra **Espressioni di controllo** facendo clic su **Aggiungi espressione di controllo**.  
+4. La finestra **Controllo immediato** è una finestra di dialogo modale, per cui non è possibile continuare il debug finché è aperta. È possibile aggiungere la variabile nella finestra **Espressioni di controllo** facendo clic su **Aggiungi espressione di controllo**.  
   
-5.  Chiudere la finestra **Controllo immediato** . È ora possibile continuare il debug osservando il valore nella finestra **Espressioni di controllo** .  
+5. Chiudere la finestra **Controllo immediato** . È ora possibile continuare il debug osservando il valore nella finestra **Espressioni di controllo** .  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Osservazione delle variabili con la finestra Espressioni di controllo  
  È possibile osservare più variabili con la finestra **Espressioni di controllo** . Si supponga, ad esempio, di avere il codice seguente:  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Aggiornamento dei valori delle espressioni di controllo che non sono aggiornati  
+## <a name="bkmk_refreshWatch"></a> Aggiornamento dei valori delle espressioni di controllo che non sono aggiornati  
  In alcuni casi è possibile che venga visualizzata un'icona di aggiornamento (un cerchio con due frecce o un cerchio con due linee ondulate) quando un'espressione viene valutata nella finestra **Espressioni di controllo** .  Si supponga ad esempio che la valutazione delle proprietà sia disattivata (**Strumenti/Opzioni/Debug/Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**) e di avere il codice seguente:  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Se viene visualizzata un'icona rappresentata da un cerchio con due linee ondulate che assomigliano a dei fili, l'espressione non è stata valutata a causa di una potenziale dipendenza cross-thread. In altre parole, la valutazione del codice richiede l'esecuzione temporanea di altri thread nell'applicazione. Quando ci si trova in modalità di interruzione, in genere tutti i thread nell'applicazione vengono arrestati. L'esecuzione temporanea di altri thread può avere effetti imprevisti sullo stato del programma e può far sì che il debugger ignori alcuni eventi quali i punti di interruzione e le eccezioni generate in tali thread.  
   
-##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. La valutazione della seguente espressione, ad esempio, comporta la modifica del valore di `var1`:  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  È possibile aggiungere un riferimento all'oggetto `Person` nella finestra **Espressioni di controllo** come segue:  
   
-1.  Impostare un punto di interruzione nel codice dopo la creazione dell'oggetto.  
+1. Impostare un punto di interruzione nel codice dopo la creazione dell'oggetto.  
   
-2.  Avviare il debug e quando l'esecuzione si arresta nel punto di interruzione, trovare la variabile nella finestra **Variabili locali** , fare clic con il pulsante destro del mouse sulla variabile e scegliere **Crea ID oggetto**.  
+2. Avviare il debug e quando l'esecuzione si arresta nel punto di interruzione, trovare la variabile nella finestra **Variabili locali** , fare clic con il pulsante destro del mouse sulla variabile e scegliere **Crea ID oggetto**.  
   
-3.  Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Si tratta dell'ID oggetto.  
+3. Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Si tratta dell'ID oggetto.  
   
-4.  Aggiungere l'ID oggetto nella finestra Espressioni di controllo.  
+4. Aggiungere l'ID oggetto nella finestra Espressioni di controllo.  
   
-5.  Impostare un punto di interruzione nella posizione in cui si vuole osservare il comportamento dell'oggetto.  Nel codice precedente tale posizione corrisponde al metodo `DoSomething()` .  
+5. Impostare un punto di interruzione nella posizione in cui si vuole osservare il comportamento dell'oggetto.  Nel codice precedente tale posizione corrisponde al metodo `DoSomething()` .  
   
-6.  Continuare il debug e quando l'esecuzione viene arrestata nel metodo `DoSomething()` , nella finestra **Espressioni di controllo** viene visualizzato l'oggetto `Person` .  
+6. Continuare il debug e quando l'esecuzione viene arrestata nel metodo `DoSomething()` , nella finestra **Espressioni di controllo** viene visualizzato l'oggetto `Person` .  
   
 > [!NOTE]
 >  Se si vogliono visualizzare le proprietà dell'oggetto, ad esempio `Person.Name` nell'esempio precedente, è necessario abilitare la valutazione delle proprietà.  

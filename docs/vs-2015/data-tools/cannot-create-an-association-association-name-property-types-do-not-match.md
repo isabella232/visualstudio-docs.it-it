@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065114"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. Le proprietà non hanno tipi corrispondenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Impossibile creare un'associazione \<nome associazione>. Le proprietà non hanno
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Esaminare il messaggio e prendere nota delle proprietà menzionate in esso.  
+1. Esaminare il messaggio e prendere nota delle proprietà menzionate in esso.  
   
-2.  Fare clic su **OK** per chiudere la finestra di dialogo.  
+2. Fare clic su **OK** per chiudere la finestra di dialogo.  
   
-3.  Controllare le **Proprietà associazione** e selezionare le proprietà che presentano lo stesso tipo di dati.  
+3. Controllare le **Proprietà associazione** e selezionare le proprietà che presentano lo stesso tipo di dati.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Creare un'associazione (relazione) tra classi LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

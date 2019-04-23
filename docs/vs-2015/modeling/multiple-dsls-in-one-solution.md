@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76f34194381df92097e8dc2c42f1bf57a83f484b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050140"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ ms.locfileid: "58955511"
   
 1. Creare due o più soluzioni DSL e un progetto VSIX, quindi aggiungere tutti i progetti a un'unica soluzione.  
   
-   -   Per creare un nuovo progetto VSIX: Nel **nuovo progetto** finestra di dialogo, seleziona **Visual C#** , **estendibilità**, **progetto VSIX**.  
+   - Per creare un nuovo progetto VSIX: Nel **nuovo progetto** finestra di dialogo, seleziona **Visual C#** , **estendibilità**, **progetto VSIX**.  
   
-   -   Creare due o più soluzioni DSL nella directory della soluzione VSIX.  
+   - Creare due o più soluzioni DSL nella directory della soluzione VSIX.  
   
         Per ogni linguaggio specifico di dominio, aprire una nuova istanza di Visual Studio. Creare il nuovo linguaggio specifico di dominio e specificare la stessa cartella soluzione della soluzione VSIX.  
   
         Assicurarsi di creare ogni linguaggio specifico di dominio con un'estensione di file diversa.  
   
-   -   Modificare i nomi delle **Dsl** e **DslPackage** progetti in modo che siano tutti diversi. Ad esempio: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
+   - Modificare i nomi delle **Dsl** e **DslPackage** progetti in modo che siano tutti diversi. Ad esempio: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
   
-   -   In ognuno **DslPackage\*\source.extension.tt**, aggiornare questa riga con il nome del progetto Dsl corretto:  
+   - In ognuno **DslPackage\*\source.extension.tt**, aggiornare questa riga con il nome del progetto Dsl corretto:  
   
         `string dslProjectName = "Dsl2";`  
   
-   -   Nella soluzione VSIX aggiungere i Dsl * e DslPackage\* progetti.  
+   - Nella soluzione VSIX aggiungere i Dsl * e DslPackage\* progetti.  
   
         Può essere utile inserire ogni coppia in una specifica cartella soluzione.  
   
 2. Combinare i manifesti VSIX dei linguaggi specifici di dominio:  
   
-   1.  Aprire _Progettovsix_**\source.extension.manifest**.  
+   1. Aprire _Progettovsix_**\source.extension.manifest**.  
   
-   2.  Per ogni linguaggio DSL, scegliere **Aggiungi contenuto** e aggiungere:  
+   2. Per ogni linguaggio DSL, scegliere **Aggiungi contenuto** e aggiungere:  
   
-       -   `Dsl*` il progetto come un **componente MEF**  
+       - `Dsl*` il progetto come un **componente MEF**  
   
-       -   `DslPackage*` il progetto come un **componente MEF**  
+       - `DslPackage*` il progetto come un **componente MEF**  
   
-       -   `DslPackage*` il progetto come un **pacchetto Visual Studio**  
+       - `DslPackage*` il progetto come un **pacchetto Visual Studio**  
   
 3. Compilare la soluzione.  
   

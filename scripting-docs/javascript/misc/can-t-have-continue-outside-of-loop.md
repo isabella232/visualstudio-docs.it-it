@@ -14,35 +14,35 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b0356e524228e22def9b17dd134e3e011185203
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064804"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Impossibile utilizzare 'continue' all'esterno di un ciclo
 Si è provato a usare il **continuare** istruzione di fuori di un ciclo. Il **continuare** istruzione può essere utilizzata solo all'interno del corpo di un oggetto:  
   
--   `do-while` ciclo,  
+- `do-while` ciclo,  
   
--   `while` ciclo,  
+- `while` ciclo,  
   
--   **per** ciclo,  
+- **per** ciclo,  
   
--   **per/in** ciclo.  
+- **per/in** ciclo.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Assicurarsi che il **continuare** verrà visualizzata l'istruzione all'interno del corpo di un oggetto:  
+- Assicurarsi che il **continuare** verrà visualizzata l'istruzione all'interno del corpo di un oggetto:  
   
-    -   `do-while` ciclo,  
+    - `do-while` ciclo,  
   
-    -   `while` ciclo,  
+    - `while` ciclo,  
   
-    -   **per** ciclo,  
+    - **per** ciclo,  
   
-    -   **per/in** ciclo.  
+    - **per/in** ciclo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [continue (istruzione)](../../javascript/reference/continue-statement-javascript.md)   

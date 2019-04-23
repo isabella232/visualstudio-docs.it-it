@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066065"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: di uno schema XML da un documento XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ L'editor XML consente di creare uno schema XSD (XML Schema Definition Language) 
   
 ### <a name="to-create-an-xml-schema"></a>Per creare uno schema XML  
   
-1.  Caricare un documento di istanza XML nell'editor XML.  
+1. Caricare un documento di istanza XML nell'editor XML.  
   
-2.  Fare clic sui **Create Schema** pulsante il **sulla barra degli strumenti**.  
+2. Fare clic sui **Create Schema** pulsante il **sulla barra degli strumenti**.  
   
      Viene creato e aperto un documento di schema XML per ogni spazio dei nomi rilevato nel documento di istanza XML. Ogni schema viene aperto come file esterno temporaneo.  
   

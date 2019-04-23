@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046380"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
--   Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
+- Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
   
--   Uso della finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .  
+- Uso della finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .  
   
--   Uso del **debugger HLSL** per esaminare il vertex shader.  
+- Uso del **debugger HLSL** per esaminare il vertex shader.  
   
--   Uso di **Stack di chiamate eventi di grafica** per individuare l'origine di una costante HLSL non corretta.  
+- Uso di **Stack di chiamate eventi di grafica** per individuare l'origine di una costante HLSL non corretta.  
   
 ## <a name="scenario"></a>Scenario  
  Una delle cause comuni di un oggetto mancante in un'app 3D si verifica quando il vertex shader trasforma i vertici dell'oggetto in modo non corretto o imprevisto. Ad esempio, l'oggetto potrebbe essere ridimensionato con dimensioni molto piccole o trasformato in modo da essere visualizzato dietro la camera, anziché di fronte.  

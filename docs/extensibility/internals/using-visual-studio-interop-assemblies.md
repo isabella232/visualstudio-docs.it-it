@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e0bc21f328823ccf8c956d85d921de3f3ae75b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f083e97427b44256ac565e2fc6822586825aef4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061944"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso degli assembly di interoperabilità di Visual Studio
 Assembly di interoperabilità Visual Studio consentono alle applicazioni gestite di accesso alle interfacce COM che forniscono l'estensibilità di Visual Studio. Esistono alcune differenze tra le interfacce COM rette e le versioni di interoperabilità. Ad esempio, HRESULT sono in genere rappresentati come valori int e devono essere gestiti nello stesso modo come eccezioni e i parametri (in particolare i parametri out) vengono considerati in modo diverso.
@@ -87,17 +87,17 @@ else
 > [!NOTE]
 >  I metodi seguenti sono note come passare `IUnknown` puntatori dell'oggetto come tipo <xref:System.IntPtr>. È necessario gestirle come descritto in questa sezione.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>[Out] i parametri facoltativi
  Cercare i parametri che sono definiti come [out] tipo di dati (`int`, `object`e così via) in COM interfaccia, ma che sono definiti come matrici dello stesso tipo di dati nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo di metodo di assembly di interoperabilità.

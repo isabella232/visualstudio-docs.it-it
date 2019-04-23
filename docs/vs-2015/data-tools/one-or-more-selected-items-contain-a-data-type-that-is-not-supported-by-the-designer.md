@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065708"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Uno o più elementi trascinati da **Esplora Server**/**Database Explorer** nel [
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Creare una visualizzazione basata sulla tabella desiderata e che non includa il tipo di dati non supportato.  
+1. Creare una visualizzazione basata sulla tabella desiderata e che non includa il tipo di dati non supportato.  
   
-2.  Trascinare la visualizzazione dal **Esplora Server**/**Esplora Database** nella finestra di progettazione.  
+2. Trascinare la visualizzazione dal **Esplora Server**/**Esplora Database** nella finestra di progettazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048762"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: Impossibile avviare il debug sul server Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Quando si tenta di eseguire il debug di un'applicazione ASP.NET in esecuzione in
   
 In molti casi, questo errore si verifica perché IIS non è configurato correttamente.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Controllare la configurazione di IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Controllare la configurazione di IIS
 
 Dopo l'esecuzione di passaggi per risolvere un problema descritto qui e prima di riprovare a eseguire il debug, è necessario anche reimpostare IIS. È possibile farlo aprendo un prompt dei comandi di amministratore e digitando `iisreset`, oppure è possibile eseguire questa operazione in Gestione IIS. 
 

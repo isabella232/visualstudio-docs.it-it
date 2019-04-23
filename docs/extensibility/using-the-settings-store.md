@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5c2d39ce4652b6c41d80e919cca93c83c38fb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045401"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 Esistono due tipi di archivi di impostazioni:
@@ -77,11 +77,11 @@ Esistono due tipi di archivi di impostazioni:
 
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usare un editor del Registro di sistema per verificare le impostazioni di configurazione
 
-1.  Aprire Regedit.exe.
+1. Aprire Regedit.exe.
 
-2.  Passare a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
+2. Passare a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
     >  Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp_Config\ e non \14.0_Config\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni di configurazione disponibili nell'hive del Registro di sistema "14.0Exp_Config".
 
-3.  Espandere il nodo \Installed Products\. Se il messaggio nei passaggi precedenti è **installata di Microsoft Windows Phone Developer Tools: True**, \Installed Products\ deve contenere un nodo di Microsoft Windows Phone Developer Tools. Se il messaggio è **installata di Microsoft Windows Phone Developer Tools: False**, quindi \Installed Products\ non deve contenere un nodo di Microsoft Windows Phone Developer Tools.
+3. Espandere il nodo \Installed Products\. Se il messaggio nei passaggi precedenti è **installata di Microsoft Windows Phone Developer Tools: True**, \Installed Products\ deve contenere un nodo di Microsoft Windows Phone Developer Tools. Se il messaggio è **installata di Microsoft Windows Phone Developer Tools: False**, quindi \Installed Products\ non deve contenere un nodo di Microsoft Windows Phone Developer Tools.

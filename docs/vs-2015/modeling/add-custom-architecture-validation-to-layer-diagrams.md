@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045879"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
    >  Modello makethe funziona correttamente:  
    > 
    > - Modificare le chiamate a `LogValidationError` in modo da rimuovere gli argomenti facoltativi `errorSourceNodes` e `errorTargetNodes`.  
-   >   -   Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [aggiungere proprietà personalizzate ai diagrammi livello](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   >   - Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [aggiungere proprietà personalizzate ai diagrammi livello](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
 3. Modificare il codice per definire la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).  
   
@@ -67,19 +67,19 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Per aggiungere la convalida dei livelli a un progetto VSIX separato  
   
-1.  Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà la classe di convalida dei livelli.  
+1. Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà la classe di convalida dei livelli.  
   
-2.  Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Se è necessario aggiungere un progetto VSIX, eseguire le operazioni seguenti:  
+2. Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Se è necessario aggiungere un progetto VSIX, eseguire le operazioni seguenti:  
   
-    1.  Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#**, **Extensibility**e **Progetto VSIX**.  
+    1. Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#**, **Extensibility**e **Progetto VSIX**.  
   
-    2.  In **Esplora soluzioni**scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
+    2. In **Esplora soluzioni**scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
   
-3.  In **source.extension.vsixmanifest**aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.  
+3. In **source.extension.vsixmanifest**aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.  
   
-    1.  Scegliere **Nuovo**.  
+    1. Scegliere **Nuovo**.  
   
-    2.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare:  
+    2. Nella finestra di dialogo **Aggiungi nuovo asset** impostare:  
   
          **Tipo** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -87,11 +87,11 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   
          **Progetto** = *Progetto di convalida*  
   
-4.  È anche necessario aggiungere il progetto come convalida dei livelli:  
+4. È anche necessario aggiungere il progetto come convalida dei livelli:  
   
-    1.  Scegliere **Nuovo**.  
+    1. Scegliere **Nuovo**.  
   
-    2.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare:  
+    2. Nella finestra di dialogo **Aggiungi nuovo asset** impostare:  
   
          **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla usando la tastiera.  
   
@@ -99,7 +99,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   
          **Progetto** = *Progetto di convalida*  
   
-5.  Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:  
+5. Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:  
   
     |**Riferimento**|**Operazioni consentite**|  
     |-------------------|------------------------------------|  
@@ -110,18 +110,18 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
     |System.ComponentModel.Composition|Definire il componente di convalida mediante Managed Extensibility Framework (MEF)|  
     |Microsoft.VisualStudio.Modeling.Sdk.[versione]|Definire le estensioni di modellazione|  
   
-6.  Copiare il codice di esempio disponibile alla fine di questo argomento nel file di classe nel progetto della libreria del validator in modo che contenga il codice per la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).  
+6. Copiare il codice di esempio disponibile alla fine di questo argomento nel file di classe nel progetto della libreria del validator in modo che contenga il codice per la convalida. Per altre informazioni, vedere [Programmazione della convalida](#programming).  
   
-7.  Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).  
+7. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).  
   
     > [!NOTE]
     >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
-8.  Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
+8. Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
   
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
-##  <a name="programming"></a> Programmazione della convalida  
+## <a name="programming"></a> Programmazione della convalida  
  Per definire un'estensione di convalida dei livelli, è necessario definire una classe con le caratteristiche seguenti:  
   
 - Il formato complessivo della dichiarazione è il seguente:  
@@ -190,7 +190,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   
   I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".  
   
-##  <a name="debugging"></a> Debug della convalida  
+## <a name="debugging"></a> Debug della convalida  
  Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Eseguire il test con una soluzione che contiene dipendenze  
@@ -217,7 +217,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
 ### <a name="deploying-a-validation-extension"></a>Distribuzione di un'estensione di convalida  
  Per installare l'estensione di convalida in un computer in cui è installata una versione appropriata di Visual Studio, aprire il file VSIX nel computer di destinazione. Per eseguire l'installazione in un computer in cui è installato [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] , è necessario estrarre manualmente il contenuto VSIX in una cartella Extensions. Per altre informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a> Example code  
+## <a name="example"></a> Example code  
   
 ```csharp  
 using System;  

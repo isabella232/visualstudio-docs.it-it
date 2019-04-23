@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061989"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammi livello: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ In Visual Studio, è possibile usare una *diagramma livello* per visualizzare l'
 |4|**Commentoo**|Usato per aggiungere note generali al diagramma o elementi nel diagramma.|  
 |5|**Collegamento commento**|Usato per collegare commenti a elementi nel diagramma.|  
   
-##  <a name="Explorer"></a> Esplora livello  
+## <a name="Explorer"></a> Esplora livello  
  È possibile collegare ogni livello a elementi nella soluzione, come progetti, classi, spazi dei nomi, file di progetto e altre parti del software. Il numero specificato su un livello indica il numero di elementi a esso collegati. Tuttavia, nell'interpretare il numero di elementi in un livello, ricordare quanto segue:  
   
 - Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.  
@@ -80,7 +80,7 @@ In Visual Studio, è possibile usare una *diagramma livello* per visualizzare l'
   
 #### <a name="to-examine-the-linked-artifacts"></a>Per esaminare gli elementi collegati  
   
--   Nel diagramma livello, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**.  
+- Nel diagramma livello, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**.  
   
      **Esplora livello** apre e visualizza gli elementi che sono collegati ai livelli selezionati. **Esplora livello** include una colonna che mostra ognuna delle proprietà dei collegamenti dell'elemento.  
   

@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064960"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedura: Eseguire il debug di client e server COM usando il debug RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58964867"
   
 ### <a name="to-enable-rpc-debugging"></a>Per attivare il debug RPC  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Nella finestra di dialogo **Opzioni** fare clic sulla cartella **Debug**.  
+2. Nella finestra di dialogo **Opzioni** fare clic sulla cartella **Debug**.  
   
-3.  Fare clic sulla pagina **Nativo**.  
+3. Fare clic sulla pagina **Nativo**.  
   
-4.  Selezionare la casella di controllo **Debug RPC**.  
+4. Selezionare la casella di controllo **Debug RPC**.  
   
     > [!NOTE]
     >  Per eseguire il debug delle chiamate RPC, è necessario disporre dei privilegi di tipo Administrator o Power User.  

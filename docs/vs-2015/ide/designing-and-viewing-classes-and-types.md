@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045044"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Progettazione e visualizzazione di classi e tipi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Con Progettazione classi di Visual Studio è possibile progettare, visualizzare 
   
  Di seguito sono riportate altre informazioni sulle operazioni che è possibile eseguire con i diagrammi classi:  
   
--   **Progettare**: cambiare il codice del progetto modificando il diagramma classi. Aggiungere nuovi elementi ed eliminare quelli non desiderati. Le modifiche verranno riflesse nel codice.  
+- **Progettare**: cambiare il codice del progetto modificando il diagramma classi. Aggiungere nuovi elementi ed eliminare quelli non desiderati. Le modifiche verranno riflesse nel codice.  
   
--   **Visualizzare**: comprendere meglio la struttura del progetto visualizzando le classi del progetto in un diagramma. Personalizzare il diagramma in modo da potersi concentrare sui dettagli del progetto a cui si è più interessati. Salvare il diagramma da usare in seguito a scopo dimostrativo o come documentazione.  
+- **Visualizzare**: comprendere meglio la struttura del progetto visualizzando le classi del progetto in un diagramma. Personalizzare il diagramma in modo da potersi concentrare sui dettagli del progetto a cui si è più interessati. Salvare il diagramma da usare in seguito a scopo dimostrativo o come documentazione.  
   
--   **Effettuare il refactoring**: eseguire l'override dei metodi, rinominare gli identificatori, effettuare il refactoring dei parametri e implementare interfacce e classi astratte.  
+- **Effettuare il refactoring**: eseguire l'override dei metodi, rinominare gli identificatori, effettuare il refactoring dei parametri e implementare interfacce e classi astratte.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Uso di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md)  

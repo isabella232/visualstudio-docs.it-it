@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045460"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procedura: Aggiornare una pagina iniziale personalizzata di Visual Studio
 La procedura illustrata di seguito consente di aggiornare una pagina iniziale personalizzata di Visual Studio 2010 o Visual Studio 2012 a Visual Studio 2015.
@@ -22,19 +22,19 @@ La procedura illustrata di seguito consente di aggiornare una pagina iniziale pe
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Per aggiornare una pagina iniziale personalizzata a Visual Studio 2015
 
-1.  Verificare che Visual Studio 2015 e Visual Studio 2015 SDK siano installati. È possibile scaricare l'SDK dalla pagina di [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
+1. Verificare che Visual Studio 2015 e Visual Studio 2015 SDK siano installati. È possibile scaricare l'SDK dalla pagina di [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
 
-2.  Aprire il progetto di modello personalizzato. Verrà visualizzato un messaggio che informare che è necessario aggiornare il progetto. Fare clic su **OK** e attendere il completamento dell'aggiornamento.
+2. Aprire il progetto di modello personalizzato. Verrà visualizzato un messaggio che informare che è necessario aggiornare il progetto. Fare clic su **OK** e attendere il completamento dell'aggiornamento.
 
-3.  Nelle proprietà di progetto sia del progetto di pagina iniziale che del progetto di controllo assicurarsi che il framework di destinazione sia almeno .NET Framework 4.5.
+3. Nelle proprietà di progetto sia del progetto di pagina iniziale che del progetto di controllo assicurarsi che il framework di destinazione sia almeno .NET Framework 4.5.
 
-4.  Nella categoria Debug delle proprietà di progetto per il progetto di pagina iniziale impostare il percorso per la versione Visual Studio 2015 di devenv.exe.
+4. Nella categoria Debug delle proprietà di progetto per il progetto di pagina iniziale impostare il percorso per la versione Visual Studio 2015 di devenv.exe.
 
-5.  Nei riferimenti al progetto di entrambi i progetti rimuovere i riferimenti a Microsoft.VisualStudio.Shell.11.0 e aggiungere riferimenti a Microsoft.VisualStudio.Shell.14.0.
+5. Nei riferimenti al progetto di entrambi i progetti rimuovere i riferimenti a Microsoft.VisualStudio.Shell.11.0 e aggiungere riferimenti a Microsoft.VisualStudio.Shell.14.0.
 
-6.  Aprire StartPage.xaml con l'editor XML e apportare le modifiche seguenti:
+6. Aprire StartPage.xaml con l'editor XML e apportare le modifiche seguenti:
 
-    1.  Aggiornare gli spazi dei nomi. Modificare le righe seguenti:
+    1. Aggiornare gli spazi dei nomi. Modificare le righe seguenti:
 
         ```
 
@@ -52,4 +52,4 @@ La procedura illustrata di seguito consente di aggiornare una pagina iniziale pe
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7.  Aprire MyControl.xaml e modificare il riferimento allo spazio dei nomi `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` in `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. Aprire MyControl.xaml e modificare il riferimento allo spazio dei nomi `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` in `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .

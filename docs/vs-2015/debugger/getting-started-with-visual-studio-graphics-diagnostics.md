@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047307"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
  Per usare un computer di riproduzione remoto che esegue Windows 10 da un computer di sviluppo con Windows 8.1, è necessario installare Windows 10 SDK nel computer di sviluppo e la funzionalità opzionale Strumenti di grafica nel computer di riproduzione.
 
-##  <a name="InstallGraphicsTools"></a> Installare Strumenti di grafica per Windows 10
+## <a name="InstallGraphicsTools"></a> Installare Strumenti di grafica per Windows 10
  In Windows 10, l'infrastruttura di diagnostica grafica viene offerta attraverso la funzionalità facoltativa di Windows denominata *Strumenti di grafica*. Questa funzionalità è necessaria per acquisire e riprodurre le informazioni di grafica in Windows 10 indipendentemente dal fatto che l'app acquisita abbia come destinazione una versione precedente di Windows e dalla versione di Direct3D in uso. Si può scegliere di installare la funzionalità di Strumenti di grafica in anticipo; in caso contrario, sarà installata su richiesta al primo avvio di una sessione di Diagnostica grafica da Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Per installare Strumenti di grafica per Windows 10
@@ -87,7 +87,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
 ##### <a name="to-capture-single-frames"></a>Per acquisire singoli frame
 
--   In Visual Studio scegliere il pulsante nella barra degli strumenti **Acquisisci frame** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica. Oppure, se l'app ha lo stato attivo, premere **Stamp**.
+- In Visual Studio scegliere il pulsante nella barra degli strumenti **Acquisisci frame** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica. Oppure, se l'app ha lo stato attivo, premere **Stamp**.
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>Per acquisire una sequenza di frame
 

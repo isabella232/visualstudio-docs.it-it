@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061502"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Impostare come sealed i metodi che soddisfano interfacce private
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58954691"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impedire il metodo da sottoporre a override all'esterno dell'assembly usando uno dei seguenti:
 
--   Impostare il tipo dichiarante `sealed` (`NotInheritable` in Visual Basic).
+- Impostare il tipo dichiarante `sealed` (`NotInheritable` in Visual Basic).
 
--   Modificare l'accessibilità per il tipo dichiarante `internal` (`Friend` in Visual Basic).
+- Modificare l'accessibilità per il tipo dichiarante `internal` (`Friend` in Visual Basic).
 
--   Rimuovere tutti i costruttori pubblici dal tipo dichiarante.
+- Rimuovere tutti i costruttori pubblici dal tipo dichiarante.
 
--   Implementare il metodo senza usare il `virtual` modificatore.
+- Implementare il metodo senza usare il `virtual` modificatore.
 
--   Implementare il metodo in modo esplicito.
+- Implementare il metodo in modo esplicito.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se, dopo un attento esame, nessun problema di sicurezza che potrebbero essere sfruttabile se viene eseguito l'override di metodo all'esterno dell'assembly.

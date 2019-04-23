@@ -11,12 +11,12 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b1f0f97aa33c56df7a512389daf1801157e693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061788"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Collegamento e scollegamento da un programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Per collegare il debugger richiede l'invio di sequenza corretta di metodi ed eve
   
     Se `S_OK` viene restituito, deve essere caricato nello stesso processo come il modello SDM la Germania. Il modello SDM esegue le attività seguenti:  
   
-   1.  Le chiamate [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) per ottenere le informazioni del motore della DE.  
+   1. Le chiamate [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) per ottenere le informazioni del motore della DE.  
   
-   2.  CO-crea il DE.  
+   2. CO-crea il DE.  
   
-   3.  Le chiamate [collegare](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3. Le chiamate [collegare](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 2. L'invio di DE un' [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) per il modello SDM con un `EVENT_SYNC` attributo.  
   

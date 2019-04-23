@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059877"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Esplorare una sessione di debug in Visual Studio (Xaml e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
 ## <a name="in-this-topic"></a>Contenuto dell'argomento
  Vengono illustrate le seguenti procedure:
 
--   [Creare l'app di esempio](#BKMK_CreateTheApplication)
+- [Creare l'app di esempio](#BKMK_CreateTheApplication)
 
--   [Impostare e raggiungere un punto di interruzione, eseguire un'istruzione in un metodo ed esaminare i dati del programma](#BKMK_StepInto)
+- [Impostare e raggiungere un punto di interruzione, eseguire un'istruzione in un metodo ed esaminare i dati del programma](#BKMK_StepInto)
 
--   [Eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine dei metodi](#BKMK_StepIntoOverOut)
+- [Eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine dei metodi](#BKMK_StepIntoOverOut)
 
--   [Impostare un punto di interruzione condizionale, eseguire fino al cursore e visualizzare una variabile](#BKMK_ConditionCursorVisualize)
+- [Impostare un punto di interruzione condizionale, eseguire fino al cursore e visualizzare una variabile](#BKMK_ConditionCursorVisualize)
 
--   [Modifica e continuazione per il recupero da un'eccezione](#BKMK_EditContinueRecoverExceptions)
+- [Modifica e continuazione per il recupero da un'eccezione](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Creare l'app di esempio
+## <a name="BKMK_CreateTheApplication"></a> Creare l'app di esempio
  Il debug viene eseguito sul codice. L'app di esempio usa quindi il framework dell'app di Windows Store solo per creare un file di origine in cui è possibile vedere come funziona la navigazione in una sessione di debug e come esaminare e modificare lo stato del programma. Tutto il codice che verrà richiamato viene chiamato dal costruttore della pagina principale. Non vengono aggiunti controlli, né gestiti eventi.
 
  **Creare un'app di Windows Store C# predefinita.** Aprire Visual Studio. Nella home page scegliere il collegamento **Nuovo progetto** . Nella finestra di dialogo Nuovo progetto scegliere **Visual C#** nell'elenco **Installato** e quindi scegliere **Windows Store**. Nell'elenco dei modelli di progetto scegliere **Applicazione**. In Visual Studio verranno creati una nuova soluzione e il progetto, quindi verranno visualizzati la finestra di progettazione del file MainPage.xaml e l'editor di codice XAML.
@@ -56,7 +56,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
 
  È ora possibile continuare seguendo gli esempi in questo argomento.
 
-##  <a name="BKMK_StepInto"></a> Impostare e raggiungere un punto di interruzione, eseguire un'istruzione in un metodo ed esaminare i dati del programma
+## <a name="BKMK_StepInto"></a> Impostare e raggiungere un punto di interruzione, eseguire un'istruzione in un metodo ed esaminare i dati del programma
  Il modo più comune che è possibile avviare una sessione di debug consiste nello scegliere **Avvia debug** dalle **Debug** menu (tastiera: . L'esecuzione inizia e continua fino a raggiungere un punto di interruzione, fino alla sospensione manuale dell'esecuzione, fino a quando non si verifica un'eccezione oppure fino al termine dell'app.
 
  Dopo la sospensione dell'esecuzione nel debugger, è possibile visualizzare il valore di una variabile attiva in un suggerimento dati passando il mouse sulla variabile. È inoltre possibile aprire le finestre Variabili locali e Auto per vedere gli elenchi delle variabili attive e i relativi valori correnti. Aggiungendo una o più variabili a una finestra Espressioni di controllo, è possibile concentrarsi sul valore delle variabili mentre l'esecuzione dell'app continua.
@@ -112,7 +112,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
 
   È possibile controllare più variabili in una finestra Espressioni di controllo. I valori delle variabili controllate, come i valori nelle finestre Variabili locali e Suggerimenti dati, vengono aggiornati a ogni sospensione dell'esecuzione. È inoltre possibile aggiungere variabili nella finestra Espressioni di controllo dall'editor di codice. Selezionare la variabile da controllare, fare clic con il pulsante destro del mouse e quindi scegliere **Aggiungi espressione di controllo**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine dei metodi
+## <a name="BKMK_StepIntoOverOut"></a> Eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine dei metodi
  A differenza dell'esecuzione di un'istruzione in un metodo chiamato da un metodo padre, l'esecuzione di un'istruzione/routine in un metodo comporta l'esecuzione del metodo figlio e la successiva sospensione dell'esecuzione nel metodo chiamante alla ripresa del metodo padre. Prima di eseguire un'istruzione/routine di un metodo, è opportuno avere acquisito familiarità con il funzionamento del metodo e avere la certezza che questa operazione non influisca sul problema che si sta analizzando.
 
  L'esecuzione di un'istruzione/routine in una riga di codice che non contiene una chiamata al metodo ha lo stesso effetto della semplice esecuzione di un'istruzione nella riga.
@@ -144,7 +144,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
 
  **Terminare il debug.** Nel menu Debug, scegliere Arresta debug (tastiera: MAIUSC + F5). La sessione di debug verrà terminata.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Impostare un punto di interruzione condizionale, eseguire fino al cursore e visualizzare una variabile
+## <a name="BKMK_ConditionCursorVisualize"></a> Impostare un punto di interruzione condizionale, eseguire fino al cursore e visualizzare una variabile
  Un punto di interruzione condizionale specifica una condizione che determina la sospensione dell'esecuzione da parte del debugger. La condizione viene specificata da una qualsiasi espressione di codice che possa restituire true o false. È possibile utilizzare un punto di interruzione, ad esempio, per esaminare lo stato del programma in un metodo chiamato di frequente solo quando una variabile raggiunge un determinato valore.
 
  L'esecuzione fino al cursore corrisponde all'impostazione di un punto di interruzione unico. Quando l'esecuzione viene sospesa, è possibile selezionare una riga nell'origine e riprendere l'esecuzione fino a raggiungere la riga selezionata. Ad esempio, si supponga che durante l'esecuzione di un ciclo in un metodo si determini che il codice nel ciclo viene eseguito correttamente. Anziché eseguire ogni singola iterazione del ciclo, è possibile scegliere di eseguire fino al cursore che viene posizionato dopo l'esecuzione del ciclo.
@@ -180,7 +180,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
 
  **Terminare il debug.** Nel menu Debug, scegliere Arresta debug (tastiera: MAIUSC + F5). La sessione di debug verrà terminata.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Modifica e continuazione per il recupero da un'eccezione
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Modifica e continuazione per il recupero da un'eccezione
  In alcuni casi, quando si interrompe il codice nel debugger di Visual Studio, si ha la possibilità di modificare il valore delle variabili e addirittura la logica delle istruzioni. Questa funzionalità è detta Modifica e continuazione.
 
  Modifica e continuazione può essere particolarmente utile quando si interrompe il codice in corrispondenza di un'eccezione. Anziché terminare e riavviare il debug di una routine lunga e complessa per evitare l'eccezione, è possibile "rimuovere" l'eccezione per spostare l'esecuzione nel punto che precede immediatamente la posizione in cui si è verificata l'eccezione. È quindi possibile modificare la variabile o l'istruzione che crea il problema e continuare la sessione di debug corrente in uno stato che non generi un'eccezione.

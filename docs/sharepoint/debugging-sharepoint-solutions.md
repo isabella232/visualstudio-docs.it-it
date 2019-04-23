@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060800"
 ---
 # <a name="debug-sharepoint-solutions"></a>Il debug delle soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi apre un'istanza del sito di SharePoint nel Web browser. Le sezioni seguenti illustrano come eseguire il debug di applicazioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Abilitare il debug](#enable-debugging)
+- [Abilitare il debug](#enable-debugging)
 
--   [Processo di distribuzione e debug F5](#f5-debug-and-deployment-process)
+- [Processo di distribuzione e debug F5](#f5-debug-and-deployment-process)
 
--   [Funzionalità del progetto SharePoint](#sharepoint-project-features)
+- [Funzionalità del progetto SharePoint](#sharepoint-project-features)
 
--   [Eseguire il debug dei flussi di lavoro](#debug-workflows)
+- [Eseguire il debug dei flussi di lavoro](#debug-workflows)
 
--   [Eseguire il debug di ricevitori di eventi](#debug-feature-event-receivers)
+- [Eseguire il debug di ricevitori di eventi](#debug-feature-event-receivers)
 
--   [Abilitare ehanced le informazioni di debug](#enable-enhanced-debugging-information)
+- [Abilitare ehanced le informazioni di debug](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Abilita debug
  Durante il debug prima di tutto una soluzione di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], una finestra di dialogo avvisa l'utente che il file Web. config non è configurato per abilitare il debug. (Il file Web. config viene creato quando si installa SharePoint server. Per altre informazioni, vedere [uso di file Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) La finestra di dialogo offre la possibilità di scegliere se eseguire il progetto senza debug oppure modificare il file Web. config per abilitare il debug. Se si sceglie la prima opzione, il progetto viene eseguito normalmente. Se si sceglie la seconda opzione, il file web.config viene configurato per:
@@ -77,11 +77,11 @@ ms.locfileid: "57873110"
 
  Per annullare le modifiche e disabilitare il debug, modificare gli elementi seguenti [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] nel file Web. config:
 
--   Disattivare lo stack di chiamate (`CallStack="false"`)
+- Disattivare lo stack di chiamate (`CallStack="false"`)
 
--   Abilitare errori personalizzati nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
+- Abilitare errori personalizzati nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
 
--   Disabilitare il debug di compilazione (`<compilation debug="false">`)
+- Disabilitare il debug di compilazione (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>Processo di distribuzione e debug F5
  Quando si esegue il progetto SharePoint in modalità di debug, il processo di distribuzione di SharePoint esegue le attività seguenti:

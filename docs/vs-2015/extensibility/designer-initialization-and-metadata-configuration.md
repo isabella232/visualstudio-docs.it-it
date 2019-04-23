@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049257"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inizializzazione della finestra di progettazione e configurazione dei metadati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Modifica degli attributi dei metadati e il filtro associato a una finestra di pr
 ### <a name="customizing-initialization"></a>Personalizzazione di inizializzazione  
  Personalizzazione di una finestra di progettazione, un componente o un'area di progettazione, include:  
   
-1.  Modifica i metadati della finestra di progettazione e la modifica in modo efficace la modalità di una determinata <xref:System.Type> sono accessibili o convertiti.  
+1. Modifica i metadati della finestra di progettazione e la modifica in modo efficace la modalità di una determinata <xref:System.Type> sono accessibili o convertiti.  
   
      Questa operazione viene in genere eseguita tramite il <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.TypeConverter> meccanismi.  
   
      Ad esempio, quando <xref:System.Windows.Forms>-vengono inizializzati basata su finestre di progettazione, il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente modifica il <xref:System.Drawing.Design.UITypeEditor> per <xref:System.Web.UI.WebControls.Image> oggetti utilizzati con la finestra di progettazione per utilizzare il gestore di risorse per ottenere le bitmap anziché nel file system.  
   
-2.  L'integrazione con l'ambiente, ad esempio, la sottoscrizione di eventi o per ottenere le informazioni di configurazione di progetto. È possibile ottenere informazioni sulla configurazione di progetto e sottoscrivere eventi ottenendo il <xref:System.ComponentModel.Design.ITypeResolutionService> interfaccia.  
+2. L'integrazione con l'ambiente, ad esempio, la sottoscrizione di eventi o per ottenere le informazioni di configurazione di progetto. È possibile ottenere informazioni sulla configurazione di progetto e sottoscrivere eventi ottenendo il <xref:System.ComponentModel.Design.ITypeResolutionService> interfaccia.  
   
-3.  Modifica dell'ambiente utente attivando appropriato **casella degli strumenti** categorie o limitando l'applicabilità della finestra di progettazione tramite l'applicazione di un'istanza del <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe nella finestra di progettazione.  
+3. Modifica dell'ambiente utente attivando appropriato **casella degli strumenti** categorie o limitando l'applicabilità della finestra di progettazione tramite l'applicazione di un'istanza del <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe nella finestra di progettazione.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inizializzazione della finestra di progettazione da un pacchetto VSPackage  
  Un pacchetto VSPackage deve gestire l'inizializzazione della finestra di progettazione da:  

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057706"
 ---
 # <a name="t4-include-directive"></a>Direttiva include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In un modello di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possi
   
 - Utilizzare `once="true"` per verificare che un modello sia incluso una sola volta, anche se viene chiamato da più file di inclusione.  
   
-   Rende questa funzionalità è più facile creare una libreria di frammenti T4 riutilizzabili che è possibile includere in verrà senza doversi preoccupare che un altro frammento di codice ha già incluse.  Ad esempio, si supponga di che avere una libreria di frammenti molto accurati che gestiscono l'elaborazione di modello e la generazione di codice C#.  A sua volta, questi vengono usati da alcune utilità di più attività specifiche, ad esempio la generazione di eccezioni, che è quindi possibile usare qualsiasi modello più specifico dell'applicazione. Se si crea il grafico dipendenze, si noterà che alcuni frammenti verranno inclusi più volte. Ma il parametro `once` impedisce le inclusioni successive.  
+   Rende questa funzionalità è più facile creare una libreria di frammenti T4 riutilizzabili che è possibile includere in verrà senza doversi preoccupare che un altro frammento di codice ha già incluse.  Ad esempio, si supponga di che avere una libreria di frammenti molto accurati che gestiscono l'elaborazione di modello e la generazione di codice c#.  A sua volta, questi vengono usati da alcune utilità di più attività specifiche, ad esempio la generazione di eccezioni, che è quindi possibile usare qualsiasi modello più specifico dell'applicazione. Se si crea il grafico dipendenze, si noterà che alcuni frammenti verranno inclusi più volte. Ma il parametro `once` impedisce le inclusioni successive.  
   
   **MyTextTemplate.tt:**  
   
@@ -112,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> Utilizzo delle proprietà di progetto in MSBuild e Visual Studio  
+## <a name="msbuild"></a> Utilizzo delle proprietà di progetto in MSBuild e Visual Studio  
  Sebbene sia possibile utilizzare le macro di Visual Studio, ad esempio $(SolutionDir), in una direttiva include, non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.  
   
  Modificare il file con estensione csproj o vbproj per definire una proprietà del progetto. In questo esempio viene definita una proprietà denominata `myIncludeFolder`:  

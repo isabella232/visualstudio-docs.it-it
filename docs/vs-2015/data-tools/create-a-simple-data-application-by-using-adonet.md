@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047425"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
  **In questo argomento**  
   
--   [Configurare il database di esempio](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Configurare il database di esempio](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Creare i form e aggiungere i controlli](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Creare i form e aggiungere i controlli](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Store la stringa di connessione](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Store la stringa di connessione](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Recuperare la stringa di connessione](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Recuperare la stringa di connessione](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Scrivere il codice per i form](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Scrivere il codice per i form](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Testare l'applicazione](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Testare l'applicazione](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per creare l'applicazione, è necessario disporre di:  
@@ -58,10 +58,10 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
   In questo argomento si presuppone una certa familiarità con la funzionalità di base dell'IDE di Visual Studio e la capacità di creare un'applicazione Windows Forms, aggiungere form a tale progetto, inserire i pulsanti e altri controlli presenti in tali form, impostare le proprietà di tali controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare la [Introduzione a Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) prima di iniziare questo argomento.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Configurare il database di esempio  
+## <a name="BKMK_setupthesampledatabase"></a> Configurare il database di esempio  
  Il database di esempio per questa procedura dettagliata è costituito dalle tabelle Customer e Orders. Le tabelle inizialmente non contengono dati. I dati verranno aggiunti quando si esegue l'applicazione creata. Il database include inoltre cinque stored procedure semplici. [Creare un database SQL usando uno script](../data-tools/create-a-sql-database-by-using-a-script.md) contiene uno script Transact-SQL che crea le tabelle, le chiavi primarie ed esterne, i vincoli e le stored procedure.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Creare i form e aggiungere i controlli  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Creare i form e aggiungere i controlli  
   
 1. Creare un progetto per un'applicazione Windows Forms e denominarlo SimpleDataApp.  
   
@@ -69,11 +69,11 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
   
 2. Aggiungere due form Windows al progetto in modo da disporre di tre form e assegnare i nomi seguenti:  
   
-   -   Navigazione  
+   - Navigazione  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.  
   
@@ -119,33 +119,33 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
 |Button|Name = btnFillOrder|  
 |Button|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Store la stringa di connessione  
+## <a name="BKMK_storetheconnectionstring"></a> Store la stringa di connessione  
  Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere la stringa manualmente in ciascun form, archiviare la stringa nel file App. config nel progetto e creare un metodo che restituisce la stringa quando viene chiamato il metodo da qualsiasi form nell'applicazione.  
   
  È possibile trovare la stringa di connessione in **Esplora oggetti di SQL Server** , facendo clic sul database, selezionare **proprietà**e individuando la proprietà ConnectionString. Usare Ctrl + A per selezionare la stringa.  
   
-1.  Nelle **Esplora soluzioni**, selezionare la **delle proprietà** nodo sotto il progetto e quindi selezionare **innanzi**.  
+1. Nelle **Esplora soluzioni**, selezionare la **delle proprietà** nodo sotto il progetto e quindi selezionare **innanzi**.  
   
-2.  Nel **Name** colonna, immettere `connString`.  
+2. Nel **Name** colonna, immettere `connString`.  
   
-3.  Nel **tipo** elenco, selezionare **(stringa di connessione)**.  
+3. Nel **tipo** elenco, selezionare **(stringa di connessione)**.  
   
-4.  Nel **ambito** elenco, selezionare **applicazione**.  
+4. Nel **ambito** elenco, selezionare **applicazione**.  
   
-5.  Nel **valore** colonna, immettere la stringa di connessione (senza alcuna all'esterno delle virgolette) e quindi salvare le modifiche.  
+5. Nel **valore** colonna, immettere la stringa di connessione (senza alcuna all'esterno delle virgolette) e quindi salvare le modifiche.  
   
 > [!NOTE]
 >  In un'applicazione reale, è consigliabile archiviare la stringa di connessione in modo sicuro, come descritto in [stringhe di connessione e i file di configurazione](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Recuperare la stringa di connessione  
+## <a name="BKMK_retrievetheconnectionstring"></a> Recuperare la stringa di connessione  
   
-1.  Nella barra dei menu, selezionare **Project** > **Aggiungi riferimento**e quindi aggiungere un riferimento alla DLL.  
+1. Nella barra dei menu, selezionare **Project** > **Aggiungi riferimento**e quindi aggiungere un riferimento alla DLL.  
   
-2.  Nella barra dei menu, selezionare **Project** > **Aggiungi classe** per aggiungere un file di classe al progetto e quindi denominare il file `Utility`.  
+2. Nella barra dei menu, selezionare **Project** > **Aggiungi classe** per aggiungere un file di classe al progetto e quindi denominare il file `Utility`.  
   
      Visual Studio crea il file e lo visualizza nel **Esplora soluzioni**.  
   
-3.  Nel file Utilità sostituire il codice segnaposto con il codice seguente. Si noti che i commenti numerati, ovvero quelli preceduti da Util-, identificano le sezioni del codice. Nella tabella che segue il codice chiama i punti chiave.  
+3. Nel file Utilità sostituire il codice segnaposto con il codice seguente. Si noti che i commenti numerati, ovvero quelli preceduti da Util-, identificano le sezioni del codice. Nella tabella che segue il codice chiama i punti chiave.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
     |Util-2|Definire una variabile `returnValue` e inizializzarla su `null` (C#) o `Nothing` (Visual Basic).|  
     |Util-3|Anche se è stato immesso `connString` come nome della stringa di connessione nel **delle proprietà** finestra, è necessario specificare `"SimpleDataApp.Properties.Settings.connString"` (c#) o `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) nel codice.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Scrivere il codice per i form  
+## <a name="BKMK_writethecodefortheforms"></a> Scrivere il codice per i form  
  Questa sezione contiene una breve panoramica sulle funzionalità di ciascun form e una descrizione del codice necessario per crearlo. I commenti numerati identificano le sezioni del codice.  
   
 ### <a name="navigation-form"></a>Form Navigazione  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Aggiungere codice al gestore dell'evento Click per `btnFillOrder`. Questo codice esegue la stored procedure `Sales.uspFillOrder`.|  
 |FC-9|Creare un metodo per verificare che `OrderID` è pronto per l'invio come parametro per il `SqlCommand` oggetto.<br /><br /> -Verificare assicurarsi che sia stato immesso un ID in `txtOrderID`.<br />-Usare `Regex.IsMatch` per definire un semplice controllo per i caratteri non integer.<br />-È stata dichiarata la `parsedOrderID` variabile in FC-2.<br />-Se l'input è valido, convertire il testo in un numero intero e archiviare il valore di `parsedOrderID` variabile.<br />-Eseguire il wrapping il `isOrderID` metodo tutto il `btnFindByOrderID`, `btnCancelOrder`, e `btnFillOrder` gestori dell'evento Click.|  
   
-##  <a name="BKMK_testyourapplication"></a> Testare l'applicazione  
+## <a name="BKMK_testyourapplication"></a> Testare l'applicazione  
  Selezionare il tasto F5 per compilare e testare l'applicazione dopo ogni evento Click, codice e quindi dopo aver fine scrittura di codice.

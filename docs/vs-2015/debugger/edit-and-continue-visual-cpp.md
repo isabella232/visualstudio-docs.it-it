@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58955984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060436"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58955984"
   
  **/Zo** Disabilita modifica e continuazione. Vedere [How to: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md).  
   
-##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Abilitare o disabilitare Modifica e continuazione  
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Abilitare o disabilitare Modifica e continuazione  
  È consigliabile disabilitare la chiamata automatica di Modifica e continuazione se si apportano modifiche al codice che non si vuole applicare durante la sessione di debug corrente. È anche possibile riabilitare la chiamata automatica di Modifica e continuazione.  
   
 1. Scegliere **Opzioni** dal menu **Strumenti**.  
@@ -49,14 +49,14 @@ ms.locfileid: "58955984"
   
    La modifica di questa impostazione influisce su tutti i progetti attivi. Non è necessario ricompilare l'applicazione dopo la modifica di questa impostazione. L'impostazione può essere modificata anche durante il debug. Quando si compila l'applicazione dalla riga di comando o da un makefile, ma si esegue il debug nell'ambiente Visual Studio, è comunque possibile usare Modifica e continuazione se si imposta l'opzione **/ZI** .  
   
-##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Come applicare modifiche al codice in modo esplicito  
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Come applicare modifiche al codice in modo esplicito  
  In Visual C++, Modifica e continuazione consente di applicare modifiche al codice in due modi: in modo implicito, quando si sceglie un comando di esecuzione, o in modo esplicito, quando si usa il comando **Applica modifiche del codice** .  
   
  Quando si applicano modifiche al codice in modo esplicito, il programma rimane in modalità di interruzione e non viene eseguito.  
   
--   Per applicare le modifiche al codice in modo esplicito, nel menu **Debug** scegliere **Applica modifiche del codice**.  
+- Per applicare le modifiche al codice in modo esplicito, nel menu **Debug** scegliere **Applica modifiche del codice**.  
   
-##  <a name="BKMK_How_to_stop_code_changes"></a> Come interrompere l'applicazione delle modifiche al codice  
+## <a name="BKMK_How_to_stop_code_changes"></a> Come interrompere l'applicazione delle modifiche al codice  
  In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.  
   
  Per interrompere l'applicazione delle modifiche al codice:  
@@ -67,12 +67,12 @@ ms.locfileid: "58955984"
   
   Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.  
   
-##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Come reimpostare il punto di esecuzione  
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Come reimpostare il punto di esecuzione  
  Alcune modifiche al codice applicate in modalità Modifica e continuazione possono causare uno spostamento automatico del punto di esecuzione in una nuova posizione. Nonostante il punto di esecuzione venga collocato nel modo più accurato possibile, in alcuni casi il risultato potrebbe non essere corretto.  
   
  In Visual C++ la modifica del punto di esecuzione viene segnalata tramite una finestra di dialogo. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva** . Per altre informazioni, vedere [Impostare l'istruzione successiva da eseguire](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
-##  <a name="BKMK_How_to_work_with_stale_code"></a> Come usare il codice non aggiornato  
+## <a name="BKMK_How_to_work_with_stale_code"></a> Come usare il codice non aggiornato  
  In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche all'eseguibile, ma può apportare automaticamente tali modifiche in un secondo momento se si continua il debug. Ciò si verifica quando si modifica una funzione che chiama la funzione corrente o si aggiungono più di 64 byte di nuove variabili ad una funzione presente nello stack di chiamate.  
   
  In questi casi, il debugger continua a eseguire il codice originale, fino a quando non è possibile applicare le modifiche. Il codice non aggiornato è visualizzato in una finestra del file di origine temporanea di una finestra di origine distinta, caratterizzata da un titolo simile a `enc25.tmp`. L'origine modificata continua ad essere visualizzata nella finestra di origine originale. Se si tenta di modificare il codice non aggiornato, viene visualizzato un messaggio di avviso.  

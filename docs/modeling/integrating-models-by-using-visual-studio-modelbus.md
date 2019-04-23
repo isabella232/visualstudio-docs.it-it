@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 68482f9dcb88bd87c65f749c821f4afe92089a51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064063"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 
@@ -25,9 +25,9 @@ ModelBus consente di creare un riferimento univoco a un modello o a un elemento 
 
 Per altre informazioni e per il codice di esempio, vedere:
 
--   [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK per Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK per Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -80,9 +80,9 @@ Per verificare che tale elemento vengono mantenuti gli ID:
 
    In alternativa, se per identificare gli elementi si preferisce usare i nomi di elementi anziché i GUID, è possibile eseguire l'override di parti degli adattatori generati. Eseguire l'override dei metodi seguenti nella classe Adapter:
 
--   Eseguire l'override di `GetElementId` affinché venga restituito l'identificatore che si vuole usare. Questo metodo viene chiamato quando vengono creati i riferimenti.
+- Eseguire l'override di `GetElementId` affinché venga restituito l'identificatore che si vuole usare. Questo metodo viene chiamato quando vengono creati i riferimenti.
 
--   Eseguire l'override di `ResolveElementReference` per individuare l'elemento corretto da un riferimento ModelBus
+- Eseguire l'override di `ResolveElementReference` per individuare l'elemento corretto da un riferimento ModelBus
 
 ## <a name="editRef"></a> L'accesso a un DSL da un altro linguaggio specifico di dominio
 
@@ -92,21 +92,21 @@ Per abilitare un linguaggio DSL di utilizzo di riferimenti a un altro linguaggio
 
 ### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>Per consentire a un linguaggio specifico di dominio di usare riferimenti a un linguaggio specifico di dominio esposto
 
-1.  Nel diagramma di definizione DSL, fare doppio clic la parte principale del diagramma e quindi fare clic su **Abilita Modelbus**.
+1. Nel diagramma di definizione DSL, fare doppio clic la parte principale del diagramma e quindi fare clic su **Abilita Modelbus**.
 
-2.  Nella finestra di dialogo, selezionare **desidero abilitare questo modello per l'uso di riferimenti ModelBus**.
+2. Nella finestra di dialogo, selezionare **desidero abilitare questo modello per l'uso di riferimenti ModelBus**.
 
-3.  Nel progetto DSL del linguaggio specifico di dominio usato aggiungere gli assembly seguenti ai riferimenti del progetto. Questi assembly (file con estensione dll) si trova nella ModelBusAdapter\bin\\* directory del DSL esposto.
+3. Nel progetto DSL del linguaggio specifico di dominio usato aggiungere gli assembly seguenti ai riferimenti del progetto. Questi assembly (file con estensione dll) si trova nella ModelBusAdapter\bin\\* directory del DSL esposto.
 
-    -   L'assembly DSL esposto, ad esempio **Fabrikam.FamilyTree.Dsl.dll**
+    - L'assembly DSL esposto, ad esempio **Fabrikam.FamilyTree.Dsl.dll**
 
-    -   Il modello esposto bus assembly dell'adattatore, ad esempio **Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - Il modello esposto bus assembly dell'adattatore, ad esempio **Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
-4.  Aggiungere gli assembly .NET seguenti ai riferimenti del progetto del progetto DSL usato.
+4. Aggiungere gli assembly .NET seguenti ai riferimenti del progetto del progetto DSL usato.
 
-    1.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 ### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>Per archiviare un riferimento ModelBus in una proprietà di dominio
 
@@ -120,39 +120,39 @@ Per abilitare un linguaggio DSL di utilizzo di riferimenti a un altro linguaggio
 
 ### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Per consentire all'utente di impostare un riferimento ModelBus in una proprietà di dominio
 
-1.  Fare doppio clic su proprietà di dominio e quindi fare clic su **proprietà specifiche di ModelBusReference modifica**. Verrà visualizzata una finestra di dialogo. Questo è il *selettore ModelBus*.
+1. Fare doppio clic su proprietà di dominio e quindi fare clic su **proprietà specifiche di ModelBusReference modifica**. Verrà visualizzata una finestra di dialogo. Questo è il *selettore ModelBus*.
 
-2.  Selezionare un valore appropriato **tipo di ModelBusReference**: a un modello o a un elemento all'interno di un modello.
+2. Selezionare un valore appropriato **tipo di ModelBusReference**: a un modello o a un elemento all'interno di un modello.
 
-3.  Nella stringa di filtro della finestra di dialogo File, immettere una stringa come `Family Tree files |*.ftree`. Sostituire l'estensione di file del linguaggio specifico di dominio esposto.
+3. Nella stringa di filtro della finestra di dialogo File, immettere una stringa come `Family Tree files |*.ftree`. Sostituire l'estensione di file del linguaggio specifico di dominio esposto.
 
-4.  Se si sceglie di fare riferimento a un elemento in un modello, è possibile aggiungere un elenco di tipi che possono essere selezionati dall'utente, ad esempio Company.FamilyTree.Person.
+4. Se si sceglie di fare riferimento a un elemento in un modello, è possibile aggiungere un elenco di tipi che possono essere selezionati dall'utente, ad esempio Company.FamilyTree.Person.
 
-5.  Fare clic su **OK**, quindi fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti.
+5. Fare clic su **OK**, quindi fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti.
 
     > [!WARNING]
     > Se non è stato selezionata un'entità o un modello valido, il pulsante OK non avrà alcun effetto sebbene possa sembrare abilitato.
 
-6.  Se è stato specificato un elenco di tipi di destinazione, come Company.FamilyTree.Person, sarà necessario aggiungere un riferimento di assembly al progetto DSL, facendo riferimento alla DLL del DSL di destinazione, ad esempio Company.FamilyTree.Dsl.dll.
+6. Se è stato specificato un elenco di tipi di destinazione, come Company.FamilyTree.Person, sarà necessario aggiungere un riferimento di assembly al progetto DSL, facendo riferimento alla DLL del DSL di destinazione, ad esempio Company.FamilyTree.Dsl.dll.
 
 ### <a name="to-test-a-model-bus-reference"></a>Per testare un riferimento ModelBus
 
-1.  Compilare entrambi i DSL esposto e utilizzato.
+1. Compilare entrambi i DSL esposto e utilizzato.
 
-2.  Eseguire uno dei DSL in modalità sperimentale premendo F5 o CTRL+F5.
+2. Eseguire uno dei DSL in modalità sperimentale premendo F5 o CTRL+F5.
 
-3.  Nel progetto di debug nell'istanza sperimentale di Visual Studio, aggiungere i file che sono istanze di ogni DSL.
+3. Nel progetto di debug nell'istanza sperimentale di Visual Studio, aggiungere i file che sono istanze di ogni DSL.
 
     > [!NOTE]
     > ModelBus di Visual Studio può risolvere solo riferimenti a modelli che sono elementi nella stessa soluzione di Visual Studio. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.
 
-4.  Creare alcuni elementi e collegamenti nell'istanza del DSL esposto e salvarlo.
+4. Creare alcuni elementi e collegamenti nell'istanza del DSL esposto e salvarlo.
 
-5.  Aprire un'istanza del DSL utilizzato e selezionare un elemento del modello contenente una proprietà di riferimento ModelBus.
+5. Aprire un'istanza del DSL utilizzato e selezionare un elemento del modello contenente una proprietà di riferimento ModelBus.
 
-6.  Nella finestra Proprietà fare doppio clic sulla proprietà di riferimento ModelBus. Verrà visualizzata la finestra di dialogo del selettore.
+6. Nella finestra Proprietà fare doppio clic sulla proprietà di riferimento ModelBus. Verrà visualizzata la finestra di dialogo del selettore.
 
-7.  Fare clic su **esplorare** e selezionare l'istanza del DSL esposto.
+7. Fare clic su **esplorare** e selezionare l'istanza del DSL esposto.
 
      Il selettore consentirà inoltre di scegliere un elemento nel modello, se è stato specificato il tipo di riferimento ModelBus specifico dell'elemento.
 
@@ -388,9 +388,9 @@ ModelBusReference elementReferenceRestored =
 
  L'MBR viene deserializzato in due fasi:
 
--   `ModelBusReferencePropertySerializer` è il serializzatore standard che gestisce l'intestazione MBR. Usa il contenitore delle proprietà `SerializationContext` DSL standard che è archiviato in `ReferenceContext` tramite la chiave `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. In particolare, `SerializationContext` deve contenere un'istanza di `ModelBus`.
+- `ModelBusReferencePropertySerializer` è il serializzatore standard che gestisce l'intestazione MBR. Usa il contenitore delle proprietà `SerializationContext` DSL standard che è archiviato in `ReferenceContext` tramite la chiave `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. In particolare, `SerializationContext` deve contenere un'istanza di `ModelBus`.
 
--   L'adattatore ModelBus gestisce la parte specifica dell'adattatore dell'MBR. Può usare le informazioni aggiuntive archiviate nel ContextReference dell'MBR. L'adattatore semplice basato su file mantiene i percorsi di file radice usando i tasti `FilePathLoadContextKey` e `FilePathSaveContextKey`.
+- L'adattatore ModelBus gestisce la parte specifica dell'adattatore dell'MBR. Può usare le informazioni aggiuntive archiviate nel ContextReference dell'MBR. L'adattatore semplice basato su file mantiene i percorsi di file radice usando i tasti `FilePathLoadContextKey` e `FilePathSaveContextKey`.
 
      Un riferimento a un adattatore in un file di modello è deserializzato solo quando viene usato.
 

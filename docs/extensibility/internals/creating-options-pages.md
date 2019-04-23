@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044504"
 ---
 # <a name="create-options-pages"></a>Creazione di pagine Opzioni
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] framework di pacchetto gestito, le classi derivate da <xref:Microsoft.VisualStudio.Shell.DialogPage> estendere il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE aggiungendo **opzioni** pagine sotto il **strumenti** menu.
@@ -25,9 +25,9 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] framework di pa
 
  Poiché l'ambiente di un'istanza dell'oggetto che implementa un particolare **opzioni del menu Strumenti** pagina quando tale particolare pagina viene visualizzato dall'IDE:
 
--   Oggetto **scelta degli strumenti** pagina deve essere implementata nel proprio oggetto e non per l'oggetto che implementa un pacchetto VSPackage.
+- Oggetto **scelta degli strumenti** pagina deve essere implementata nel proprio oggetto e non per l'oggetto che implementa un pacchetto VSPackage.
 
--   Un oggetto non può implementare più **opzioni del menu Strumenti** pagine.
+- Un oggetto non può implementare più **opzioni del menu Strumenti** pagine.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Registrare un provider di pagina di opzioni del menu Strumenti
  Una configurazione dell'utente supporta VSPackage attraverso **opzioni degli strumenti** pagine indica gli oggetti che li fornisce **opzioni degli strumenti** pagine applicando le istanze di <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> applicato per i <xref:Microsoft.VisualStudio.Shell.Package>implementazione.

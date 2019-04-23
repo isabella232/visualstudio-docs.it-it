@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048675"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "58969303"
 I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Di seguito sono riportate le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio per un'estensione VSIX.  
   
 > [!WARNING]
->  Avvio in Visual Studio 2015, per i progetti C# e Visual Basic, è possibile usare il progetto VSIX e aggiungere i modelli di elemento per i comandi di menu, finestre degli strumenti e i pacchetti VSPackage. Per altre informazioni, vedere [What ' s New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  Avvio in Visual Studio 2015, per i progetti c# e Visual Basic, è possibile usare il progetto VSIX e aggiungere i modelli di elemento per i comandi di menu, finestre degli strumenti e i pacchetti VSPackage. Per altre informazioni, vedere [What ' s New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
 >  In molti casi è possibile trasferire semplicemente il codice del componente aggiuntivo a un progetto VSIX con un elemento di progetto VSPackage. È possibile ottenere l'oggetto di automazione DTE chiamando <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> nel metodo <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
@@ -39,22 +39,22 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>È possibile convertire il progetto di componente aggiuntivo in un progetto VSIX?  
  Un progetto di componente aggiuntivo non è possibile convertire direttamente a un progetto VSIX perché i meccanismi usati nei progetti VSIX non sono uguali a quelli nei progetti di componente aggiuntivo. Il modello di progetto VSIX, oltre a modelli di elemento di progetto corretto hanno una grande quantità di codice che rende relativamente semplice iniziare subito e in esecuzione come un'estensione VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a> Come si inizia a sviluppare estensioni VSIX?  
+## <a name="BKMK_StartDeveloping"></a> Come si inizia a sviluppare estensioni VSIX?  
  Ecco come creare un'estensione VSIX con un comando di menu:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Per rendere un'estensione VSIX con un comando di menu  
   
-1.  Creare un progetto VSIX. (**File**, **New**, **progetto**, o tipo **progetto** nel **avvio veloce** finestra). Nel **nuovo progetto** finestra di dialogo espandere **Visual C# / Extensibility** o **Visual Basic / Extensibility** e selezionare **progetto VSIX**.) Denominare il progetto **TestExtension** e specificare un percorso relativo.  
+1. Creare un progetto VSIX. (**File**, **New**, **progetto**, o tipo **progetto** nel **avvio veloce** finestra). Nel **nuovo progetto** finestra di dialogo espandere **Visual c# / Extensibility** o **Visual Basic / Extensibility** e selezionare **progetto VSIX**.) Denominare il progetto **TestExtension** e specificare un percorso relativo.  
   
-2.  Aggiungere un **Custom comando** il modello di elemento di progetto. (Fare clic sul nodo del progetto nel **Esplora soluzioni** e selezionare **Aggiungi / nuovo elemento**. Nel **nuovo progetto** finestra di dialogo per Visual C# o Visual Basic, selezionare la **Extensibility** nodo e selezionare **comando personalizzato**.)  
+2. Aggiungere un **Custom comando** il modello di elemento di progetto. (Fare clic sul nodo del progetto nel **Esplora soluzioni** e selezionare **Aggiungi / nuovo elemento**. Nel **nuovo progetto** finestra di dialogo per Visual c# o Visual Basic, selezionare la **Extensibility** nodo e selezionare **comando personalizzato**.)  
   
-3.  Premere F5 per compilare ed eseguire il progetto in modalità di debug.  
+3. Premere F5 per compilare ed eseguire il progetto in modalità di debug.  
   
      Verrà visualizzata una seconda istanza di Visual Studio. Questa seconda istanza è chiamata istanza sperimentale e potrebbe non presentare le stesse impostazioni dell'istanza di Visual Studio che si sta usando per scrivere il codice. La prima volta che si esegue l'istanza sperimentale, verrà richiesto di accedere a Visual Studio Online e specificare il tema e il profilo.  
   
      Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?  
+## <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?  
  Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:  
   
 - È attivato automaticamente da un comando di menu (il codice si trova nel metodo `IDTCommandTarget.Exec`)  
@@ -67,7 +67,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
   
 1. Creare un VSPackage contenente un comando di menu. (Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2. Aprire il file che contiene la definizione del VSPackage. (In un progetto C#, ha  <em>\<il nome del progetto ></em>Package.cs.)  
+2. Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  <em>\<il nome del progetto ></em>Package.cs.)  
   
 3. Aggiungere al file le istruzioni `using` seguenti:  
   
@@ -161,7 +161,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
   
 1. Creare un VSPackage contenente un comando di menu, come nel [come si inizia a sviluppare estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.  
   
-2. Aprire il file che contiene la definizione del VSPackage. (In un progetto C#, ha  <em>\<il nome del progetto ></em>Package.cs.)  
+2. Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  <em>\<il nome del progetto ></em>Package.cs.)  
   
 3. Aggiungere queste istruzioni `using`:  
   
@@ -209,7 +209,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
   
 1. Creare un VSPackage contenente un comando di menu, come nel [come si inizia a sviluppare estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.  
   
-2. Aprire il file che contiene la definizione del VSPackage. (In un progetto C#, ha  <em>\<il nome del progetto ></em>Package.cs.)  
+2. Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  <em>\<il nome del progetto ></em>Package.cs.)  
   
 3. Aggiungere queste istruzioni `using`:  
   

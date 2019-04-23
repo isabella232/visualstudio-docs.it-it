@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060826"
 ---
 # <a name="running-document-table"></a>Tabella documenti in esecuzione
 L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura interna denominata tabella documenti in esecuzione (RDT). Questo elenco include tutti i documenti aperti in memoria, indipendentemente dal fatto che questi documenti sono attualmente in corso di modifica. Un documento è qualsiasi elemento che viene reso persistente, inclusi i file in un progetto o file di progetto principale (ad esempio, un file con estensione vcxproj).
@@ -52,9 +52,9 @@ L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura
 
  L'IDE Usa anche RDT per resurface (portare in primo piano) un documento aperto, se un utente richiede che il documento. Per altre informazioni, vedere [i file di visualizzazione utilizzando il comando File Apri](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Per determinare se un file è aperto in RDT, effettuare una delle seguenti.
 
--   Eseguire una query per il moniker del documento (ovvero, il percorso del documento completo) scoprire se l'elemento è aperto.
+- Eseguire una query per il moniker del documento (ovvero, il percorso del documento completo) scoprire se l'elemento è aperto.
 
--   Usare l'ID gerarchia o l'elemento per porre il sistema di progetto per il percorso completo di documenti e quindi cercare l'elemento nella RDT.
+- Usare l'ID gerarchia o l'elemento per porre il sistema di progetto per il percorso completo di documenti e quindi cercare l'elemento nella RDT.
 
 ## <a name="see-also"></a>Vedere anche
 - [Uso di RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)

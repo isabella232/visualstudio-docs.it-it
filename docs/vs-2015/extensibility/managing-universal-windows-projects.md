@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063686"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestione di progetti Windows universale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
   
 ### <a name="navigate-the-shared-project"></a>Passare al progetto condiviso  
   
-1.  Creare un progetto VSIX C# denominato **TestUniversalProject**. (**File, nuovo, progetto** e quindi **il pacchetto di Visual Studio C#, estendibilità,**). Aggiungi un **comando personalizzato** modello di elemento di progetto (in Esplora soluzioni fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**, quindi passare a **estendibilità**). Denominare il file **TestUniversalProject**.  
+1. Creare un progetto VSIX c# denominato **TestUniversalProject**. (**File, nuovo, progetto** e quindi **il pacchetto di Visual Studio c#, estendibilità,**). Aggiungi un **comando personalizzato** modello di elemento di progetto (in Esplora soluzioni fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**, quindi passare a **estendibilità**). Denominare il file **TestUniversalProject**.  
   
-2.  Aggiungere un riferimento a Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll e Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (nelle **estensioni** sezione).  
+2. Aggiungere un riferimento a Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll e Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (nelle **estensioni** sezione).  
   
-3.  Aprire TestUniversalProject.cs e aggiungere il codice seguente `using` istruzioni:  
+3. Aprire TestUniversalProject.cs e aggiungere il codice seguente `using` istruzioni:  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     using System.Windows.Forms;  
     ```  
   
-4.  Nella classe TestUniversalProject aggiungere un campo privato che punta al **Output** finestra.  
+4. Nella classe TestUniversalProject aggiungere un campo privato che punta al **Output** finestra.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     }  
     ```  
   
-5.  Impostare il riferimento al riquadro di output all'interno di TestUniversalProject costruttore:  
+5. Impostare il riferimento al riquadro di output all'interno di TestUniversalProject costruttore:  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     }  
     ```  
   
-6.  Rimuovere il codice esistente dal `ShowMessageBox` metodo:  
+6. Rimuovere il codice esistente dal `ShowMessageBox` metodo:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     }  
     ```  
   
-7.  Ottiene l'oggetto DTE, che verrà usato per scopi diversi in questa procedura dettagliata. Assicurarsi inoltre che viene caricata una soluzione quando si fa clic sul pulsante di menu.  
+7. Ottiene l'oggetto DTE, che verrà usato per scopi diversi in questa procedura dettagliata. Assicurarsi inoltre che viene caricata una soluzione quando si fa clic sul pulsante di menu.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     }  
     ```  
   
-8.  Trovare il progetto condiviso. Progetto condiviso è un contenitore puro; non creare o generare output. Il metodo seguente consente di trovare il primo progetto condiviso nella soluzione cercando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto che è in grado di progetto condiviso.  
+8. Trovare il progetto condiviso. Progetto condiviso è un contenitore puro; non creare o generare output. Il metodo seguente consente di trovare il primo progetto condiviso nella soluzione cercando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto che è in grado di progetto condiviso.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -293,7 +293,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');  
     ```  
   
-16. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub C# nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual C# / Windows / Windows 8 / universale / App Hub**). Dopo il caricamento della soluzione, passare al **strumenti** menu e fare clic su **TestUniversalProject richiamare**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
+16. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub c# nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual c# / Windows / Windows 8 / universale / App Hub**). Dopo il caricamento della soluzione, passare al **strumenti** menu e fare clic su **TestUniversalProject richiamare**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -306,7 +306,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Gestire gli elementi condivisi nel progetto di piattaforma  
   
-1.  Trovare gli elementi condivisi nel progetto di piattaforma. Gli elementi nel progetto condiviso vengono visualizzati nel progetto di piattaforma come elementi condivisi. Non è possibile visualizzarli nella **Esplora soluzioni**, ma è possibile seguire la gerarchia di progetto per trovarli. Il metodo seguente illustra la gerarchia e raccoglie tutti gli elementi condivisi. Facoltativamente, restituisce la didascalia di ciascun elemento. Gli elementi condivisi sono identificati dalla proprietà nuova <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1. Trovare gli elementi condivisi nel progetto di piattaforma. Gli elementi nel progetto condiviso vengono visualizzati nel progetto di piattaforma come elementi condivisi. Non è possibile visualizzarli nella **Esplora soluzioni**, ma è possibile seguire la gerarchia di progetto per trovarli. Il metodo seguente illustra la gerarchia e raccoglie tutti gli elementi condivisi. Facoltativamente, restituisce la didascalia di ciascun elemento. Gli elementi condivisi sono identificati dalla proprietà nuova <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     }  
     ```  
   
-2.  Nel `ShowMessageBox` metodo, aggiungere il codice seguente per esaminare gli elementi di gerarchia del progetto di piattaforma. Inserirlo all'interno di `foreach` blocco.  
+2. Nel `ShowMessageBox` metodo, aggiungere il codice seguente per esaminare gli elementi di gerarchia del progetto di piattaforma. Inserirlo all'interno di `foreach` blocco.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Leggere gli elementi condivisi. Gli elementi condivisi vengono visualizzati nel progetto di piattaforma come i file collegati nascosti, e può leggere tutte le proprietà come normali file collegati. Il codice seguente legge il percorso completo del primo elemento condiviso.  
+3. Leggere gli elementi condivisi. Gli elementi condivisi vengono visualizzati nel progetto di piattaforma come i file collegati nascosti, e può leggere tutte le proprietà come normali file collegati. Il codice seguente legge il percorso completo del primo elemento condiviso.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub C# nell'istanza sperimentale (nelle **nuovo progetto** nella finestra di dialogo **Visual C# / Windows / Windows 8 / universale / App Hub**) andare alla **strumenti** menu e scegliere **richiamare TestUniversalProject**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
+4. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub c# nell'istanza sperimentale (nelle **nuovo progetto** nella finestra di dialogo **Visual c# / Windows / Windows 8 / universale / App Hub**) andare alla **strumenti** menu e scegliere **richiamare TestUniversalProject**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -555,7 +555,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     this.ModifyFileNameInProject(sharedHier, fullPath);  
     ```  
   
-11. Compilare ed eseguire il progetto. Creare un'app universale hub C# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Il nome del primo elemento condiviso progetto (si presume che sia il file app. XAML) deve essere modificato e verificare che il <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha generato l'evento. In questo caso, poiché la ridenominazione di App. XAML provoca App.xaml.cs da rinominare anche, dovrebbe essere quattro eventi (due per ogni progetto della piattaforma). (Gli eventi DTE non rilevare gli elementi nel progetto condiviso). Si dovrebbe visualizzare due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ognuno dei progetti di piattaforma), ma non <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> gli eventi.  
+11. Compilare ed eseguire il progetto. Creare un'app universale hub c# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Il nome del primo elemento condiviso progetto (si presume che sia il file app. XAML) deve essere modificato e verificare che il <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ha generato l'evento. In questo caso, poiché la ridenominazione di App. XAML provoca App.xaml.cs da rinominare anche, dovrebbe essere quattro eventi (due per ogni progetto della piattaforma). (Gli eventi DTE non rilevare gli elementi nel progetto condiviso). Si dovrebbe visualizzare due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ognuno dei progetti di piattaforma), ma non <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> gli eventi.  
   
 12. Ora provare a rinominare un file in un progetto di piattaforma ed è possibile visualizzare la differenza tra gli eventi che vengono generate. Aggiungere il codice seguente nel `ShowMessageBox` dopo la chiamata a `ModifyFileName`.  
   
@@ -572,4 +572,4 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);  
     ```  
   
-13. Compilare ed eseguire il progetto. Creare un progetto universale C# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Dopo la ridenominazione di file nel progetto di piattaforma, dovrebbe essere sia un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventi e un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Dopo aver modificato il file non causato da nessun altro file da modificare e poiché le modifiche agli elementi in un progetto di piattaforma non vengono propagate in qualsiasi punto, è solo uno di questi eventi.
+13. Compilare ed eseguire il progetto. Creare un progetto universale c# nell'istanza sperimentale, passare al **degli strumenti** menu e fare clic su **richiamare TestUniversalProject**e controllare il testo nel riquadro di output generale. Dopo la ridenominazione di file nel progetto di piattaforma, dovrebbe essere sia un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventi e un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Dopo aver modificato il file non causato da nessun altro file da modificare e poiché le modifiche agli elementi in un progetto di piattaforma non vengono propagate in qualsiasi punto, è solo uno di questi eventi.

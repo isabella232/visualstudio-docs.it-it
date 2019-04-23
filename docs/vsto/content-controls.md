@@ -38,15 +38,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ad44cefad48199efdb70bd88c1ed3b117d48ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062178"
 ---
 # <a name="content-controls"></a>Controlli del contenuto
-  I controlli contenuto permettono di progettare documenti e modelli che hanno le funzionalità seguenti:
+  I controlli contenuto permettono di progettare documenti e modelli che hanno le caratteristiche seguenti:
 
 - Un'interfaccia utente che include input controllato, come un form.
 
@@ -125,7 +125,7 @@ ms.locfileid: "56630860"
 |Eseguire codice dopo l'aggiunta del controllo contenuto al documento come risultato di un'operazione di annullamento o ripetizione.|Gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> del controllo.|
 |Eseguire codice appena prima che il controllo contenuto venga eliminato dal documento.|Gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> del controllo.|
 
-##  <a name="Protection"></a> Proteggere parti di documenti mediante controlli contenuto
+## <a name="Protection"></a> Proteggere parti di documenti mediante controlli contenuto
  Quando si protegge una parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto di tale parte. È possibile proteggere parti di un documento mediante controlli contenuto in diversi modi.
 
  Se l'area che si vuole proteggere si trova all'interno di un controllo contenuto, è possibile usare le proprietà del controllo contenuto per impedire agli utenti di modificare o eliminare il controllo:
@@ -141,7 +141,7 @@ ms.locfileid: "56630860"
 
  Per altre informazioni su come usare controlli contenuto per proteggere parti di documenti, vedere [come: Proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
-##  <a name="DataBinding"></a> Associare dati a controlli contenuto
+## <a name="DataBinding"></a> Associare dati a controlli contenuto
  È possibile visualizzare dati nei documenti mediante l'associazione di un controllo contenuto a un'origine dati. Quando l'origine dati viene aggiornata, il controllo contenuto riflette le modifiche. È anche possibile salvare le modifiche di nuovo nell'origine dati.
 
  I controlli contenuto offrono le opzioni di data binding seguenti:
@@ -191,15 +191,15 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  È possibile associare i tipi seguenti di controlli contenuto a parti XML personalizzate:
 
--   <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
+- <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
+- <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
+- <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PictureContentControl>
+- <xref:Microsoft.Office.Tools.Word.PictureContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
+- <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
 
 ### <a name="data-bind-events-for-content-controls"></a>Associa dati di eventi per i controlli del contenuto
  Tutti i controlli contenuto forniscono un set di eventi che è possibile gestire per eseguire attività correlate ai dati, come la convalida per determinare che il testo in un controllo soddisfi determinati criteri prima dell'aggiornamento dell'origine dati. La tabella seguente elenca gli eventi controllo contenuto correlati al data binding.
@@ -228,7 +228,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  Per determinare i momenti in cui un utente modifica il contenuto di un controllo contenuto, è possibile associare il controllo a una parte XML personalizzata e quindi gestire l'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Questo evento viene generato quando l'utente modifica il contenuto di un controllo associato a una parte XML personalizzata. Per una procedura dettagliata che illustra come associare un controllo contenuto a una parte XML personalizzata, vedere [procedura dettagliata: Associare controlli contenuto a parti XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-###  <a name="checkbox"></a> Controlli contenuto casella di controllo in progetti di Word
+### <a name="checkbox"></a> Controlli contenuto casella di controllo in progetti di Word
  In Word 2010 è stato introdotto un nuovo tipo di controllo contenuto, che rappresenta una casella di controllo. Tuttavia, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non fornisce un tipo CheckBoxContentControl corrispondente da utilizzare nei progetti di Office. Per creare un controllo contenuto casella di controllo in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> per creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> e passare il valore <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> al metodo per specificare un controllo contenuto casella di testo. Nell'esempio di codice seguente viene illustrato come procedere.
 
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

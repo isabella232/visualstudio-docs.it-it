@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 0428ecf21da525b8f77334e57547c8f10da7cdf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044903"
 ---
 # <a name="edit-and-continue-error-message"></a>Modifica e continuazione messaggio di errore
 
@@ -31,19 +31,19 @@ Il **modifica e continuazione** verrà visualizzata la finestra di messaggio di 
 
 Motivi possibili per questo messaggio di errore includono:
 
--   È stato effettuato un tentativo di modificare il codice di SQL Server.
--   È stato effettuato un tentativo di modificare il codice ottimizzato. Potrebbe essere necessario passare da una build di rilascio a una build di debug.
--   Tentativo di modificare il codice mentre è in esecuzione, invece che durante la pausa del debugger. Provare [impostando un punto di interruzione](../debugger/using-breakpoints.md)e la modifica del codice durante la pausa.
--   È stato effettuato un tentativo di modificare il codice gestito quando solo il debug non gestito è abilitato. Modifica e continuazione non funziona con [debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md).
--   Cambiare un codice che non è supportata da modifica e continuazione nel linguaggio di programmazione. Per altre informazioni, vedere gli articoli [supportate modifiche al codice in C# ](supported-code-changes-csharp.md), [non supportate modifiche in Visual Basic modifica e continuazione](/visualstudio/debugger/supported-code-changes-csharp), e [supportate modifiche al codice C++](supported-code-changes-cpp.md).
--   Tentativo di modificare il codice in un'app è collegato, invece di avviare il debug dal **Debug** menu.
--   È stato effettuato un tentativo di modificare il codice durante il debug di un ripristino di emergenza. Dr. Watson.
--   Tentativo di modificare il codice dopo che si verifica un'eccezione non gestita e l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.
--   È stato effettuato un tentativo di modificare il codice durante il debug di un'applicazione di runtime incorporata.
--   È stato effettuato un tentativo di modificare il codice gestito Usa una versione di .NET Framework precedenti a 4.5.1 con una destinazione di app a 64 bit. Per usare modifica e continuazione per .NET Framework precedenti a 4.5.1, impostare la destinazione su **x86** nel  **\<ProjectName >** > **proprietà**  >  **Compilare** della scheda **del compilatore avanzate** impostazione.
--   È stato effettuato un tentativo di modificare il codice in un assembly modificato durante il debug e ricaricato.
--   È stato effettuato un tentativo di modificare il codice in un assembly che non è stato caricato.
--   Avvio del debug di una versione precedente di un'app, perché la versione più recente presenta errori di compilazione.
+- È stato effettuato un tentativo di modificare il codice di SQL Server.
+- È stato effettuato un tentativo di modificare il codice ottimizzato. Potrebbe essere necessario passare da una build di rilascio a una build di debug.
+- Tentativo di modificare il codice mentre è in esecuzione, invece che durante la pausa del debugger. Provare [impostando un punto di interruzione](../debugger/using-breakpoints.md)e la modifica del codice durante la pausa.
+- È stato effettuato un tentativo di modificare il codice gestito quando solo il debug non gestito è abilitato. Modifica e continuazione non funziona con [debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md).
+- Cambiare un codice che non è supportata da modifica e continuazione nel linguaggio di programmazione. Per altre informazioni, vedere gli articoli [supportate modifiche al codice in C# ](supported-code-changes-csharp.md), [non supportate modifiche in Visual Basic modifica e continuazione](/visualstudio/debugger/supported-code-changes-csharp), e [supportate modifiche al codice C++](supported-code-changes-cpp.md).
+- Tentativo di modificare il codice in un'app è collegato, invece di avviare il debug dal **Debug** menu.
+- È stato effettuato un tentativo di modificare il codice durante il debug di un ripristino di emergenza. Dr. Watson.
+- Tentativo di modificare il codice dopo che si verifica un'eccezione non gestita e l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.
+- È stato effettuato un tentativo di modificare il codice durante il debug di un'applicazione di runtime incorporata.
+- È stato effettuato un tentativo di modificare il codice gestito Usa una versione di .NET Framework precedenti a 4.5.1 con una destinazione di app a 64 bit. Per usare modifica e continuazione per .NET Framework precedenti a 4.5.1, impostare la destinazione su **x86** nel  **\<ProjectName >** > **proprietà**  >  **Compilare** della scheda **del compilatore avanzate** impostazione.
+- È stato effettuato un tentativo di modificare il codice in un assembly modificato durante il debug e ricaricato.
+- È stato effettuato un tentativo di modificare il codice in un assembly che non è stato caricato.
+- Avvio del debug di una versione precedente di un'app, perché la versione più recente presenta errori di compilazione.
 
 Per altre informazioni, vedere:
 - [Post di blog di continuazione e modifica di C++](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)

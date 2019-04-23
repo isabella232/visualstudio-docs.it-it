@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063088"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,26 +42,26 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
   
 ### <a name="to-solve-scenario-1"></a>Per risolvere lo scenario 1  
   
--   Eseguire il debugger e l'applicazione gestita con lo stesso nome account e password.  
+- Eseguire il debugger e l'applicazione gestita con lo stesso nome account e password.  
   
 ### <a name="to-solve-scenario-2"></a>Per risolvere lo scenario 2  
   
-1.  Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
+1. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
   
-2.  Nel Pannello di controllo fare doppio clic sull'icona **Strumenti di amministrazione**.  
+2. Nel Pannello di controllo fare doppio clic sull'icona **Strumenti di amministrazione**.  
   
-3.  Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.  
+3. Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.  
   
-4.  Nella finestra Criteri di sicurezza locali selezionare **Criteri locali**.  
+4. Nella finestra Criteri di sicurezza locali selezionare **Criteri locali**.  
   
-5.  Nel **i criteri** colonna, fare doppio clic su **accesso alla rete: Modello di condivisione e sicurezza per gli account locali**.  
+5. Nel **i criteri** colonna, fare doppio clic su **accesso alla rete: Modello di condivisione e sicurezza per gli account locali**.  
   
-6.  Nel **accesso alla rete: Modello di condivisione e sicurezza per gli account locali** finestra di dialogo, modificare l'impostazione di sicurezza locali per **classica**, fare clic su **OK**.  
+6. Nel **accesso alla rete: Modello di condivisione e sicurezza per gli account locali** finestra di dialogo, modificare l'impostazione di sicurezza locali per **classica**, fare clic su **OK**.  
   
     > [!CAUTION]
     >    L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se il nome utente e la password specificati dall'utente remoto coincidono con quelli dell'account locale, l'utente potrà accedere a qualsiasi cartella o oggetto DCOM condiviso. Se si usa questo modello di sicurezza, assicurarsi che per tutti gli account utente sul computer siano impostate password complesse oppure configurare un'area di rete isolata per i computer coinvolti nelle operazioni di debug in modo da impedire l'accesso non autorizzato.  
   
-7.  Chiudere tutte le finestre.  
+7. Chiudere tutte le finestre.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)

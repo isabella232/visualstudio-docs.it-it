@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063556"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,34 +35,34 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
 ## <a name="prerequisites"></a>Prerequisiti  
  È necessario uno dei componenti seguenti per completare questa procedura dettagliata:  
   
--   Il Windows SDK. il SDK di Windows può essere scaricato dal Microsoft Download Center.  
+- Il Windows SDK. il SDK di Windows può essere scaricato dal Microsoft Download Center.  
   
--   Visual Studio.  
+- Visual Studio.  
   
 ## <a name="creating-the-projects"></a>Creazione dei progetti  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Per creare un progetto che usa un assembly su richiesta  
   
-1.  Creare una directory denominata ClickOnceOnDemand.  
+1. Creare una directory denominata ClickOnceOnDemand.  
   
-2.  Aprire il prompt dei comandi di Windows SDK o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prompt dei comandi.  
+2. Aprire il prompt dei comandi di Windows SDK o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prompt dei comandi.  
   
-3.  Passare alla directory ClickOnceOnDemand.  
+3. Passare alla directory ClickOnceOnDemand.  
   
-4.  Generare una coppia di chiavi pubblica/privata usando il comando seguente:  
+4. Generare una coppia di chiavi pubblica/privata usando il comando seguente:  
   
     ```  
     sn -k TestKey.snk  
     ```  
   
-5.  Utilizzando blocco note o un altro editor di testo, definire una classe denominata `DynamicClass` con una singola proprietà denominata `Message`.  
+5. Utilizzando blocco note o un altro editor di testo, definire una classe denominata `DynamicClass` con una singola proprietà denominata `Message`.  
   
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-6.  Salvare il testo in un file denominato `ClickOnceLibrary.cs` o `ClickOnceLibrary.vb`, a seconda del linguaggio utilizzato, nella directory ClickOnceOnDemand.  
+6. Salvare il testo in un file denominato `ClickOnceLibrary.cs` o `ClickOnceLibrary.vb`, a seconda del linguaggio utilizzato, nella directory ClickOnceOnDemand.  
   
-7.  Compilare il file in un assembly.  
+7. Compilare il file in un assembly.  
   
     ```csharp  
     csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
@@ -72,7 +72,7 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
     vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
     ```  
   
-8.  Per ottenere token di chiave pubblica dell'assembly, usare il comando seguente:  
+8. Per ottenere token di chiave pubblica dell'assembly, usare il comando seguente:  
   
     ```  
     sn -T ClickOnceLibrary.dll  
@@ -103,31 +103,31 @@ Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclic
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce mediante MageUI.exe  
   
-1.  Usando MageUI.exe, creare un manifesto dell'applicazione come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto dell'applicazione:  
+1. Usando MageUI.exe, creare un manifesto dell'applicazione come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto dell'applicazione:  
   
-    -   Nome del manifesto dell'applicazione `ClickOnceOnDemand`.  
+    - Nome del manifesto dell'applicazione `ClickOnceOnDemand`.  
   
-    -   Nel **file** pagina, nella riga ClickOnceLibrary. dll, imposta il **tipo di File** colonna **None**.  
+    - Nel **file** pagina, nella riga ClickOnceLibrary. dll, imposta il **tipo di File** colonna **None**.  
   
-    -   Nel **file** pagina, nella riga ClickOnceLibrary. dll, digitare `ClickOnceLibrary.dll` nel **gruppo** colonna.  
+    - Nel **file** pagina, nella riga ClickOnceLibrary. dll, digitare `ClickOnceLibrary.dll` nel **gruppo** colonna.  
   
-2.  Usando MageUI.exe, creare un manifesto di distribuzione come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto di distribuzione:  
+2. Usando MageUI.exe, creare un manifesto di distribuzione come descritto in [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto di distribuzione:  
   
-    -   Nome del manifesto di distribuzione `ClickOnceOnDemand`.  
+    - Nome del manifesto di distribuzione `ClickOnceOnDemand`.  
   
 ## <a name="testing-the-new-assembly"></a>Test del nuovo assembly  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Per testare l'assembly su richiesta  
   
-1.  Caricare il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione a un server Web.  
+1. Caricare il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione a un server Web.  
   
-2.  Avviare l'applicazione distribuita con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] da un Web browser immettendo l'URL del manifesto di distribuzione. Se si chiama il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione `ClickOnceOnDemand`e caricarlo nella directory radice di adatum.com, l'URL sarà analogo al seguente:  
+2. Avviare l'applicazione distribuita con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] da un Web browser immettendo l'URL del manifesto di distribuzione. Se si chiama il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione `ClickOnceOnDemand`e caricarlo nella directory radice di adatum.com, l'URL sarà analogo al seguente:  
   
     ```  
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  Quando viene visualizzato il modulo principale, premere l'oggetto <xref:System.Windows.Forms.Button>. Verrà visualizzata una stringa in una finestra di messaggio con il testo "Hello, World!".  
+3. Quando viene visualizzato il modulo principale, premere l'oggetto <xref:System.Windows.Forms.Button>. Verrà visualizzata una stringa in una finestra di messaggio con il testo "Hello, World!".  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.ApplicationDeployment>

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046917"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
@@ -43,13 +43,13 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 > [!NOTE]
 > I diagrammi delle dipendenze non sono supportati per i progetti .NET Core in Visual Studio.
 
-1.  Nel **Architecture** menu, scegliere **nuovo diagramma di dipendenza**.
+1. Nel **Architecture** menu, scegliere **nuovo diagramma di dipendenza**.
 
-2.  Sotto **modelli**, scegliere **diagramma delle dipendenze**.
+2. Sotto **modelli**, scegliere **diagramma delle dipendenze**.
 
-3.  Assegnare un nome al diagramma.
+3. Assegnare un nome al diagramma.
 
-4.  Nelle **Aggiungi a progetto di modello**, individuare e selezionare un progetto di modellazione esistente nella soluzione.
+4. Nelle **Aggiungi a progetto di modello**, individuare e selezionare un progetto di modellazione esistente nella soluzione.
 
      -oppure-
 
@@ -58,7 +58,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
     > [!NOTE]
     > Il diagramma di dipendenza deve esistere all'interno di un progetto di modellazione. È tuttavia possibile collegarlo a elementi in qualsiasi punto della soluzione.
 
-5.  Assicurarsi di salvare il progetto di modellazione sia nel diagramma delle dipendenze.
+5. Assicurarsi di salvare il progetto di modellazione sia nel diagramma delle dipendenze.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Trascinare e rilasciare, oppure copiare e incollare, da una mappa codice
 
@@ -101,19 +101,19 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 
  Il numero raffigurato sul livello indica il numero di elementi a esso collegati. Tuttavia, nell'interpretazione di tale numero, considerare quanto segue:
 
--   Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.
+- Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.
 
      Ad esempio, se un livello è collegato a un solo spazio dei nomi, il numero degli elementi collegati sarà 1, anche se lo spazio dei nomi contiene classi. Se il livello è collegato anche a ciascuna classe dello spazio dei nomi, il numero includerà le classi collegate.
 
--   Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.
+- Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.
 
 ## <a name="Managing"></a> Gestire collegamenti tra livelli e artefatti
 
-1.  Nel diagramma delle dipendenze, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti**.
+1. Nel diagramma delle dipendenze, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti**.
 
      **Esplora livello** vengono visualizzati i collegamenti dell'artefatto per il livello selezionato.
 
-2.  Usare le seguenti attività per gestire tali collegamenti:
+2. Usare le seguenti attività per gestire tali collegamenti:
 
 |**Per**|**In Layer Explorer**|
 |-|-|
@@ -150,17 +150,17 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione cont
 ## <a name="Codemaps"></a> Individuare i motivi e le dipendenze in una mappa codici
  Quando si creano i diagrammi delle dipendenze, è possibile creare anche **mappe codici**. Questi diagrammi consentono di individuare i motivi e le dipendenze durante l'esplorazione del codice. Usare Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti per esplorare assembly, spazi dei nomi e classi, che spesso corrispondono ai livelli esistenti. Per altre informazioni sulle mappe codice, vedere:
 
--   [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
+- [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)
-- [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
 - [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualizzare il codice](../modeling/visualize-code.md)

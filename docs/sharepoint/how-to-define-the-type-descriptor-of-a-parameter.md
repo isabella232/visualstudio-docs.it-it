@@ -15,67 +15,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048060"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedura: Definire il descrittore di tipo di parametro
   Un descrittore di tipo contiene proprietà che descrivono il tipo di dati di un parametro. Può definire un campo, un'entità o una raccolta di entità. Per altre informazioni, vedere [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Definire il descrittore di tipo di un parametro
 
-1.  Nel **Dettagli metodo BDC** finestra, scegliere il descrittore di tipo del parametro.
+1. Nel **Dettagli metodo BDC** finestra, scegliere il descrittore di tipo del parametro.
 
-2.  Nella barra dei menu, scegliere **View**, **finestra proprietà**.
+2. Nella barra dei menu, scegliere **View**, **finestra proprietà**.
 
-3.  Nel **proprietà** finestra, impostare le proprietà del descrittore del tipo.
+3. Nel **proprietà** finestra, impostare le proprietà del descrittore del tipo.
 
      Le procedure seguenti descrivono come definire un descrittore di tipo come un campo, un'entità o una raccolta di entità.
 
 ### <a name="to-define-a-field"></a>Per definire un campo
 
-1.  Nel **le proprietà** impostare nella finestra di **nome** proprietà del descrittore del tipo per il nome di un campo nel tipo che rappresenta l'entità (ad esempio: **FirstName**).
+1. Nel **le proprietà** impostare nella finestra di **nome** proprietà del descrittore del tipo per il nome di un campo nel tipo che rappresenta l'entità (ad esempio: **FirstName**).
 
-2.  Nell'elenco accanto al **nomeTipo** proprietà, scegliere il tipo di dati appropriato (ad esempio **Int32**).
+2. Nell'elenco accanto al **nomeTipo** proprietà, scegliere il tipo di dati appropriato (ad esempio **Int32**).
 
      Per informazioni sugli altri parametri facoltativi, vedere [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>Per definire un'entità
 
-1.  Nel **proprietà** impostare nella finestra di **nome** proprietà a un nome che descriva l'entità (ad esempio: **Contatto**).
+1. Nel **proprietà** impostare nella finestra di **nome** proprietà a un nome che descriva l'entità (ad esempio: **Contatto**).
 
-2.  Impostare il **TypeName** proprietà per specificare il nome completo del tipo che rappresenta l'entità. Questo tipo può essere una classe nel progetto, un tipo definito in un assembly cui viene fatto riferimento nella soluzione o un tipo definito nel modello a oggetti di integrazione applicativa dei dati.
+2. Impostare il **TypeName** proprietà per specificare il nome completo del tipo che rappresenta l'entità. Questo tipo può essere una classe nel progetto, un tipo definito in un assembly cui viene fatto riferimento nella soluzione o un tipo definito nel modello a oggetti di integrazione applicativa dei dati.
 
-    -   Per una classe nel progetto, scegliere la freccia giù accanto al **nomeTipo** proprietà, scegliere il **progetto corrente** scheda nella finestra di dialogo visualizzata e quindi scelta la classe nel progetto.
+    - Per una classe nel progetto, scegliere la freccia giù accanto al **nomeTipo** proprietà, scegliere il **progetto corrente** scheda nella finestra di dialogo visualizzata e quindi scelta la classe nel progetto.
 
          Il nome completo include lo spazio dei nomi e il nome della classe seguiti dal nome del sistema LOB. Nell'esempio seguente imposta il valore della **TypeName** proprietà a una classe nel progetto.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
-    -   Per un tipo che si trova in un assembly della soluzione, il nome completo include il nome del tipo, il nome dell'assembly, il numero di versione, le impostazioni cultura e il token di chiave pubblica.
+    - Per un tipo che si trova in un assembly della soluzione, il nome completo include il nome del tipo, il nome dell'assembly, il numero di versione, le impostazioni cultura e il token di chiave pubblica.
 
          Nell'esempio seguente imposta il valore della **TypeName** proprietà a un tipo definito in un assembly cui viene fatto riferimento nella soluzione.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
-    -   Per un tipo definito nel modello a oggetti di integrazione applicativa dei dati, il nome completo include lo spazio dei nomi e il nome del tipo.
+    - Per un tipo definito nel modello a oggetti di integrazione applicativa dei dati, il nome completo include lo spazio dei nomi e il nome del tipo.
 
          Nell'esempio seguente imposta il valore della **TypeName** proprietà a un tipo nel modello a oggetti di integrazione applicativa dei dati.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3.  Nel **Dettagli metodo BDC** finestra, aprire l'elenco visualizzato del descrittore di tipo e quindi scegliere **modificare**.
+3. Nel **Dettagli metodo BDC** finestra, aprire l'elenco visualizzato del descrittore di tipo e quindi scegliere **modificare**.
 
      Il **Esplora integrazione applicativa dei dati** verrà visualizzata la finestra.
 
-4.  Nel **Esplora integrazione Applicativa**, aprire il menu di scelta rapida del descrittore del tipo e quindi scegliere **Aggiungi descrittore tipo**.
+4. Nel **Esplora integrazione Applicativa**, aprire il menu di scelta rapida del descrittore del tipo e quindi scegliere **Aggiungi descrittore tipo**.
 
      Un nuovo descrittore di tipo viene aggiunto come elemento figlio per il descrittore del tipo di entità. Configurare il descrittore di tipo come un campo.
 
-5.  Ripetere il passaggio 4 per aggiungere un descrittore di tipo figlio per ogni campo dell'entità.
+5. Ripetere il passaggio 4 per aggiungere un descrittore di tipo figlio per ogni campo dell'entità.
 
 ### <a name="to-define-a-collection-of-entities"></a>Per definire una raccolta di entità
 

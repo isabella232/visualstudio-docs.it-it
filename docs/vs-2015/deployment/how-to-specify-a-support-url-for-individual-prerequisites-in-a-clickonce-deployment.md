@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059136"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] possibile testare
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Specificare un URL di supporto per un singolo prerequisito  
   
-1.  Aprire il manifesto dell'applicazione (file. manifest) per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione in un editor di testo.  
+1. Aprire il manifesto dell'applicazione (file. manifest) per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione in un editor di testo.  
   
-2.  Per un prerequisito necessario per sistema operativo, aggiungere il `supportUrl` dell'attributo di `dependentOS` elemento:  
+2. Per un prerequisito necessario per sistema operativo, aggiungere il `supportUrl` dell'attributo di `dependentOS` elemento:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] possibile testare
       </dependency>  
     ```  
   
-3.  Per un prerequisito per una determinata versione di common language runtime, aggiungere il `supportUrl` dell'attributo di `dependentAssembly` voce che indica la dipendenza di common language runtime:  
+3. Per un prerequisito per una determinata versione di common language runtime, aggiungere il `supportUrl` dell'attributo di `dependentAssembly` voce che indica la dipendenza di common language runtime:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] possibile testare
       </dependency>  
     ```  
   
-4.  Per un prerequisito per un assembly che deve essere preinstallato nella global assembly cache, impostare il `supportUrl` per il `dependentAssembly` elemento che specifica l'assembly richiesto:  
+4. Per un prerequisito per un assembly che deve essere preinstallato nella global assembly cache, impostare il `supportUrl` per il `dependentAssembly` elemento che specifica l'assembly richiesto:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] possibile testare
       </dependency>  
     ```  
   
-5.  Facoltativo. Per le applicazioni destinate a .NET Framework 4, aprire il manifesto di distribuzione (file con estensione Application) per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione in un editor di testo.  
+5. Facoltativo. Per le applicazioni destinate a .NET Framework 4, aprire il manifesto di distribuzione (file con estensione Application) per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione in un editor di testo.  
   
-6.  Per un prerequisito di .NET Framework 4, aggiungere il `supportUrl` dell'attributo di `compatibleFrameworks` elemento:  
+6. Per un prerequisito di .NET Framework 4, aggiungere il `supportUrl` dell'attributo di `compatibleFrameworks` elemento:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] possibile testare
     </compatibleFrameworks>  
     ```  
   
-7.  Dopo aver modificato manualmente il manifesto dell'applicazione, è necessario firmare nuovamente il manifesto dell'applicazione utilizzando il certificato digitale, quindi aggiornare e firmare nuovamente il manifesto di distribuzione nonché. È necessario usare Mage.exe o MageUI.exe SDK degli strumenti per portare a termine questa attività, come la rigenerazione di questi file tramite [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Cancella le modifiche manuali apportate. Per altre informazioni sull'uso di Mage.exe per firmare nuovamente i manifesti, vedere [come: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Dopo aver modificato manualmente il manifesto dell'applicazione, è necessario firmare nuovamente il manifesto dell'applicazione utilizzando il certificato digitale, quindi aggiornare e firmare nuovamente il manifesto di distribuzione nonché. È necessario usare Mage.exe o MageUI.exe SDK degli strumenti per portare a termine questa attività, come la rigenerazione di questi file tramite [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Cancella le modifiche manuali apportate. Per altre informazioni sull'uso di Mage.exe per firmare nuovamente i manifesti, vedere [come: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
  L'URL del supporto non viene visualizzata nella finestra di dialogo se l'applicazione viene contrassegnata per essere eseguita in attendibilità parziale.  

@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056906"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Procedura: creare modelli di elementi a più file
+# <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni casi l'elemento è costituito da più file. Ad esempio, un modello di elemento di Windows Forms per Visual Basic richiede i tre file seguenti:  
@@ -35,9 +35,9 @@ Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni ca
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Per creare manualmente un modello di elemento a più file  
   
-1.  Creare il modello di elemento allo stesso modo in cui si crea un modello di elemento a file singolo. Per altre informazioni, vedere [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md).  
+1. Creare il modello di elemento allo stesso modo in cui si crea un modello di elemento a file singolo. Per altre informazioni, vedere [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md).  
   
-2.  Aggiungere gli attributi `TargetFileName` a ogni elemento `ProjectItem`. Impostare i valori degli attributi `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:  
+2. Aggiungere gli attributi `TargetFileName` a ogni elemento `ProjectItem`. Impostare i valori degli attributi `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -53,9 +53,9 @@ Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni ca
   
      Quando un elemento derivato da questo modello viene aggiunto a un progetto, i nomi dei file saranno basati sul nome immesso dall'utente nella finestra di dialogo **Aggiungi nuovo elemento**.  
   
-3.  Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi fare clic su **Cartella compressa**. I file selezionati verranno compressi in un file ZIP.  
+3. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi fare clic su **Cartella compressa**. I file selezionati verranno compressi in un file ZIP.  
   
-4.  Inserire il file con estensione zip nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. Inserire il file con estensione zip nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente illustra un modello di Windows Forms di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quando viene creato un elemento basato su questo modello, i nomi dei tre file creati corrisponderanno al nome immesso nella finestra di dialogo **Aggiungi nuovo elemento**.  

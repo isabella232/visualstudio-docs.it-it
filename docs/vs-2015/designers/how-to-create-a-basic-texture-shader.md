@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048567"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procedura: Creare uno shader con trama di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
  Questo documento illustra le attività seguenti:  
   
--   Rimozione di nodi da un grafico shader  
+- Rimozione di nodi da un grafico shader  
   
--   Aggiunta di nodi a un grafico  
+- Aggiunta di nodi a un grafico  
   
--   Impostazione dei parametri dello shader  
+- Impostazione dei parametri dello shader  
   
--   Impostazione della visibilità dei parametri  
+- Impostazione della visibilità dei parametri  
   
--   Connessione ai nodi  
+- Connessione ai nodi  
   
 ## <a name="creating-a-basic-texture-shader"></a>Creare uno shader con trama di base  
  È possibile implementare uno shader a trama singola di base scrivendo i valori di colore e alfa di un campione di trama direttamente nel colore di output finale.  

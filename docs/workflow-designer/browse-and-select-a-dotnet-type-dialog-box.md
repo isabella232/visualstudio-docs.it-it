@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7cbe3b0593b3a71c65667e78d7b0284cacc4538
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f48a30e11e28daef2d1803646d2b495bcb718b84
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046189"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
@@ -24,11 +24,11 @@ Nel **delle proprietà** finestra, le finestre di dialogo o le finestre di proge
 
 È possibile usare questa finestra di dialogo in numerosi scenari utente, ad esempio:
 
--   Quando si imposta un tipo di variabile o argomento.
+- Quando si imposta un tipo di variabile o argomento.
 
--   Quando si seleziona un tipo per un'attività generica.
+- Quando si seleziona un tipo per un'attività generica.
 
--   Quando si aggiunge un oggetto catch all'attività <xref:System.Activities.Statements.TryCatch>.
+- Quando si aggiunge un oggetto catch all'attività <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
 > Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Visualizzare [matrici irregolari](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrici multidimensionali](http://go.microsoft.com/fwlink/?LinkId=195227) per informazioni dettagliate.
@@ -37,19 +37,19 @@ Nel **delle proprietà** finestra, le finestre di dialogo o le finestre di proge
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Per selezionare un tipo di riferimento o di valore dal browser dei tipi
 
-1.  Nel **nome del tipo** immettere il nome del tipo che si desidera utilizzare.
+1. Nel **nome del tipo** immettere il nome del tipo che si desidera utilizzare.
 
-2.  Eseguire una delle operazioni seguenti:
+2. Eseguire una delle operazioni seguenti:
 
-    -   Quando viene visualizzato il nome del tipo che si desidera utilizzare nell'albero di **nome del tipo di** finestra, fare doppio clic sul tipo per selezionarlo.
+    - Quando viene visualizzato il nome del tipo che si desidera utilizzare nell'albero di **nome del tipo di** finestra, fare doppio clic sul tipo per selezionarlo.
 
-    -   Digitare un numero di caratteri sufficiente nel **nome del tipo** finestra per identificare in modo univoco il tipo che si vuole usare e quindi premere INVIO per selezionare il tipo
+    - Digitare un numero di caratteri sufficiente nel **nome del tipo** finestra per identificare in modo univoco il tipo che si vuole usare e quindi premere INVIO per selezionare il tipo
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>Per selezionare un tipo generico dal browser dei tipi
 
-1.  Nel **nome del tipo** casella digitare il nome del tipo che si desidera utilizzare.
+1. Nel **nome del tipo** casella digitare il nome del tipo che si desidera utilizzare.
 
-2.  Quando viene visualizzato il nome del tipo che si desidera utilizzare nell'albero di **nome del tipo** finestra, scegliere il tipo per selezionarlo e caselle di riepilogo a discesa vengono visualizzate.
+2. Quando viene visualizzato il nome del tipo che si desidera utilizzare nell'albero di **nome del tipo** finestra, scegliere il tipo per selezionarlo e caselle di riepilogo a discesa vengono visualizzate.
 
      Selezionare il tipo che si desidera utilizzare per chiudere il tipo generico dalle caselle a discesa e quindi fare clic su **OK**.
 
@@ -65,9 +65,9 @@ L'elenco dei tipi nel **nome del tipo** casella ottiene più breve durante la di
 
 Ad esempio:
 
-1.  Tipizzazione **operazione** corrisponda <xref:System.OperationCanceledException> ma non <xref:System.InvalidOperationException>. Per trovare la corrispondenza con <xref:System.InvalidOperationException>, cominciare a digitare System.I o Invalid.
+1. Tipizzazione **operazione** corrisponda <xref:System.OperationCanceledException> ma non <xref:System.InvalidOperationException>. Per trovare la corrispondenza con <xref:System.InvalidOperationException>, cominciare a digitare System.I o Invalid.
 
-2.  Tipizzazione **generico** corrisponde a <xref:System.GenericUriParser> ma non con i tipi di <xref:System.Collections.Generic> dello spazio dei nomi. Per cercare i tipi nel <xref:System.Collections.Generic> dello spazio dei nomi, digitare il nome completo dello spazio dei nomi.
+2. Tipizzazione **generico** corrisponde a <xref:System.GenericUriParser> ma non con i tipi di <xref:System.Collections.Generic> dello spazio dei nomi. Per cercare i tipi nel <xref:System.Collections.Generic> dello spazio dei nomi, digitare il nome completo dello spazio dei nomi.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selezionare un contratto di servizio tramite la finestra di dialogo del browser dei tipi
 

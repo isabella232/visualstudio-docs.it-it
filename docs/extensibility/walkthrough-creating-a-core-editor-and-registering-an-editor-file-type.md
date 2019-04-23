@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048205"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file dell'editor
 Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage che inizia il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale quando un file con il *.myext* estensione del nome file viene caricato.
@@ -26,11 +26,11 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Percorsi per il modello di progetto di pacchetto di Visual Studio
  Il modello di progetto di pacchetto di Visual Studio si trova in tre posizioni diverse nella finestra di dialogo **Nuovo progetto** :
 
-1.  Nella sezione relativa **all'estendibilità di Visual Basic**. Il linguaggio predefinito del progetto è Visual Basic.
+1. Nella sezione relativa **all'estendibilità di Visual Basic**. Il linguaggio predefinito del progetto è Visual Basic.
 
-2.  Nella sezione relativa **all'estendibilità di C#**. Il linguaggio predefinito del progetto è C#.
+2. Nella sezione relativa **all'estendibilità di C#**. Il linguaggio predefinito del progetto è C#.
 
-3.  Nella sezione relativa **all'estendibilità di altri tipi di progetto**. Il linguaggio predefinito del progetto è C++.
+3. Nella sezione relativa **all'estendibilità di altri tipi di progetto**. Il linguaggio predefinito del progetto è C++.
 
 ### <a name="to-create-the-vspackage"></a>Per creare il pacchetto VSPackage
 

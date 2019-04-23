@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958628194e4ea768de5a47dc66476345bff6c4f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e89f74d940182cd92fd15f726676f0979d21186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047215"
 ---
 # <a name="deploy-project-types"></a>Distribuire i tipi di progetto
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Installa un nuovo Sil aggregator tipo di progetto (*ProjectAggregator2. dll*) e anche un pacchetto Windows Installer per la ridistribuzione (*ProjectAggregator2.msi*). È necessario usare il nuovo Sil aggregator per i tipi di progetto di codice gestito. ProjectAggregator2 consente di ovviare ai limiti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto Sil aggregator che impedisce che i tipi di progetto di codice gestito funziona correttamente. I passaggi seguenti descrivono come modificare il pacchetto VSPackage per usare al nuovo Sil aggregator.
 
-1.  Rimuovere il progetto NativeHierarchyWrapper dalla soluzione.
+1. Rimuovere il progetto NativeHierarchyWrapper dalla soluzione.
 
-2.  Rimuovere eventuali file binari NativeHierarchyWrapper dalla configurazione.
+2. Rimuovere eventuali file binari NativeHierarchyWrapper dalla configurazione.
 
-3.  Aggiungere *ProjectAggregator2.msi* alla propria configurazione.
+3. Aggiungere *ProjectAggregator2.msi* alla propria configurazione.

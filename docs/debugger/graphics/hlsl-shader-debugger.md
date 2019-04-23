@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066390"
 ---
 # <a name="hlsl-shader-debugger"></a>Debugger dello shader HLS
 Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a comprendere come opera il codice dello shader HLSL in condizioni di funzionamento reali dell'app.
@@ -50,9 +50,9 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Per avviare il debugger HLSL dalla finestra Fasi pipeline grafica
 
-1.  Nella finestra **Fasi pipeline grafica** individuare la fase della pipeline associata allo shader di cui eseguire il debug.
+1. Nella finestra **Fasi pipeline grafica** individuare la fase della pipeline associata allo shader di cui eseguire il debug.
 
-2.  Sotto il titolo della fase della pipeline scegliere **Avvia debug**, visualizzato con una piccola freccia verde.
+2. Sotto il titolo della fase della pipeline scegliere **Avvia debug**, visualizzato con una piccola freccia verde.
 
     > [!NOTE]
     >  Questo punto di ingresso nel debugger HLSL esegue il debug solo del primo thread dello shader per la fase corrispondente, ovvero il primo vertice o pixel elaborato. È possibile usare Cronologia pixel grafica per accedere ad altri thread di queste fasi dello shader.
@@ -73,6 +73,6 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
    Per esempi su come usare il Debugger HLSL per eseguire il debug degli errori dello shader, vedere [esempi](graphics-diagnostics-examples.md) o le procedure dettagliate un collegamento nella sezione Vedere anche.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [Procedura dettagliata: uso della diagnostica della grafica per eseguire il debug di un compute shader](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

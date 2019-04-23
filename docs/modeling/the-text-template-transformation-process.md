@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29495fb297670b6b297e17d40bfb2bcdc0025862
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 271d9625ba5c41599af6c92504b3f17a166a2ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061776"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
-Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o C# oppure è possibile generare un report HTML.
+Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o c# oppure è possibile generare un report HTML.
 
  Tre componenti di partecipano a questo processo: il motore, l'host e i processori di direttiva. Il motore controlla il processo. interagisce con l'host e il processore di direttiva per generare il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di assembly e file. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura dei dati da un file XML o un database.
 
@@ -34,22 +34,22 @@ Il processo di trasformazione del modello testo accetta un file di modello di te
 ## <a name="the-engine"></a>Il motore di
  Il motore riceve il modello sotto forma di stringa dall'host, che gestisce tutti i file che vengono usati nel processo di trasformazione. Il motore richiede quindi l'host per individuare tutti i processori di direttiva personalizzati e altri aspetti dell'ambiente. Quindi, il motore viene compilata e viene eseguita la classe transformation generata. Il motore restituisce il testo generato per l'host, che normalmente consente di salvare il testo in un file.
 
-## <a name="the-host"></a>L'Host
+## <a name="the-host"></a>L'host
  L'host è responsabile per qualsiasi elemento che si riferisce all'ambiente all'esterno del processo di trasformazione, incluse le seguenti:
 
--   Individuazione file di testo e binari richiesti dal motore o un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il rispettivo contenuto sotto forma di stringhe.
+- Individuazione file di testo e binari richiesti dal motore o un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il rispettivo contenuto sotto forma di stringhe.
 
--   Fornendo elenchi di assembly standard e gli spazi dei nomi che vengono utilizzati dal motore per creare la classe transformation generata.
+- Fornendo elenchi di assembly standard e gli spazi dei nomi che vengono utilizzati dal motore per creare la classe transformation generata.
 
--   Fornire il dominio dell'applicazione che viene usato quando il motore compila ed esegue la classe transformation generata. Un dominio di applicazione separata viene utilizzato per proteggere l'applicazione host dagli errori nel codice del modello.
+- Fornire il dominio dell'applicazione che viene usato quando il motore compila ed esegue la classe transformation generata. Un dominio di applicazione separata viene utilizzato per proteggere l'applicazione host dagli errori nel codice del modello.
 
--   La scrittura del file di output generato.
+- La scrittura del file di output generato.
 
--   Impostazione dell'estensione predefinita per il file di output generato.
+- Impostazione dell'estensione predefinita per il file di output generato.
 
--   La gestione degli errori di trasformazione del modello testo. Ad esempio, l'host può visualizzare gli errori nell'interfaccia utente o scriverli in un file. (In Visual Studio, gli errori vengono visualizzati nella finestra di messaggio di errore).
+- La gestione degli errori di trasformazione del modello testo. Ad esempio, l'host può visualizzare gli errori nell'interfaccia utente o scriverli in un file. (In Visual Studio, gli errori vengono visualizzati nella finestra di messaggio di errore).
 
--   Se un utente ha definito una direttiva senza fornire un valore, che fornisce un valore di parametro obbligatorio. Il processore di direttiva è possibile specificare il nome della direttiva e il parametro e chiedere all'host di fornire un valore predefinito se presente.
+- Se un utente ha definito una direttiva senza fornire un valore, che fornisce un valore di parametro obbligatorio. Il processore di direttiva è possibile specificare il nome della direttiva e il parametro e chiedere all'host di fornire un valore predefinito se presente.
 
 ## <a name="directives-and-directive-processors"></a>Direttive e i processori di direttiva
  Una direttiva è un comando nel modello di testo. Fornisce i parametri per il processo di generazione. In genere, le direttive definiscono l'origine e il tipo di modello o altri tipi di input e l'estensione del file di output.

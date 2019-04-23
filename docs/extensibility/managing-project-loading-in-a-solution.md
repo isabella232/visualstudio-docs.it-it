@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90a97097eed7b97ad96bfda1f5520d1a9b4f0203
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061307"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Caricamento di progetti in una soluzione di gestione
 Soluzioni di Visual Studio possono contenere un numero elevato di progetti. Il comportamento di Visual Studio predefinito consiste nel caricare tutti i progetti in una soluzione al momento che la soluzione è aperta e per non consentire all'utente di accedere a nessuno dei progetti finché non termina il caricamento di tutti gli elementi. Quando il processo di caricamento di progetti a lungo termine più di due minuti, viene visualizzato un indicatore di stato che mostra il numero totale di progetti e il numero di progetti caricati. L'utente può scaricare i progetti mentre si lavora in una soluzione con più progetti, ma questa procedura presenta alcuni svantaggi: i progetti non caricati non vengono compilati come parte di un comando Ricompila soluzione e le descrizioni di IntelliSense dei tipi e membri di chiusi i progetti non vengono visualizzati.
@@ -59,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>Gestire gli eventi di caricamento della soluzione
  Per sottoscrivere gli eventi di caricamento della soluzione, chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> quando si attiva la gestione del carico di soluzione. Se si implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, è possibile rispondere agli eventi che riguardano il caricamento delle proprietà del progetto diverso.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Questo evento viene generato prima dell'apertura di una soluzione.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Questo evento viene generato prima dell'apertura di una soluzione.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Questo evento viene generato dopo che la soluzione è stata caricata completamente, ma prima di background viene eseguito nuovamente il caricamento del progetto.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Questo evento viene generato dopo che la soluzione è stata caricata completamente, ma prima di background viene eseguito nuovamente il caricamento del progetto.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Questo evento viene generato dopo che una soluzione è stata caricata inizialmente completamente, presenza o meno un gestore di caricamento della soluzione. Inoltre viene generato dopo il caricamento in background o richiesta caricato ogni volta che la soluzione diventa completamente caricata. Allo stesso tempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> viene riattivato.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Questo evento viene generato dopo che una soluzione è stata caricata inizialmente completamente, presenza o meno un gestore di caricamento della soluzione. Inoltre viene generato dopo il caricamento in background o richiesta caricato ogni volta che la soluzione diventa completamente caricata. Allo stesso tempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> viene riattivato.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Questo evento viene generato prima il caricamento di un progetto (o i progetti). Per garantire che gli altri processi in background vengano completati prima che i progetti vengono caricati, impostare `pfShouldDelayLoadToNextIdle` al **true**.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Questo evento viene generato prima il caricamento di un progetto (o i progetti). Per garantire che gli altri processi in background vengano completati prima che i progetti vengono caricati, impostare `pfShouldDelayLoadToNextIdle` al **true**.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Questo evento viene generato quando un batch di progetti sta per essere caricato. Se `fIsBackgroundIdleBatch` è true, i progetti devono essere caricati in background; se `fIsBackgroundIdleBatch` è false, i progetti sono da caricare in modo sincrono in seguito a una richiesta dell'utente, ad esempio se l'utente espande un progetto in Esplora soluzioni in sospeso. È possibile gestire questo evento per eseguire operazioni costose che in caso contrario, dovrà essere eseguita in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Questo evento viene generato quando un batch di progetti sta per essere caricato. Se `fIsBackgroundIdleBatch` è true, i progetti devono essere caricati in background; se `fIsBackgroundIdleBatch` è false, i progetti sono da caricare in modo sincrono in seguito a una richiesta dell'utente, ad esempio se l'utente espande un progetto in Esplora soluzioni in sospeso. È possibile gestire questo evento per eseguire operazioni costose che in caso contrario, dovrà essere eseguita in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Questo evento viene generato dopo il caricamento di un batch di progetti.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Questo evento viene generato dopo il caricamento di un batch di progetti.
 
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Rilevare e gestire il caricamento di progetti e soluzioni
  Per rilevare lo stato di caricamento di progetti e soluzioni, chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> con i valori seguenti:

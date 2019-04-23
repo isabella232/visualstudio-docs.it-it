@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066351"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Distribuzione di componenti COM con ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
  Esistono due modi che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] consente di distribuire i componenti COM:  
   
--   Usare il programma di avvio per distribuire i componenti COM. Questa opzione funziona su tutte le piattaforme supportate.  
+- Usare il programma di avvio per distribuire i componenti COM. Questa opzione funziona su tutte le piattaforme supportate.  
   
--   Usare la distribuzione di isolamento (noto anche come COM senza registrazione) componente nativo. Tuttavia, questa impostazione funziona solo in un Windows XP o versioni successive del sistema operativo.  
+- Usare la distribuzione di isolamento (noto anche come COM senza registrazione) componente nativo. Tuttavia, questa impostazione funziona solo in un Windows XP o versioni successive del sistema operativo.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Esempio di isolamento e la distribuzione di un semplice componente COM  
  Per dimostrare la distribuzione di componenti COM senza registrazione, in questo esempio verrà creare un'applicazione basata su Windows in Visual Basic che fa riferimento a un componente COM nativo isolato creato utilizzando Visual Basic 6.0 e distribuirla tramite [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 ##### <a name="to-create-a-native-com-component"></a>Per creare un componente COM nativo  
   
-1.  Utilizzando Visual Basic 6.0, dal **File** menu, fare clic su **New**, quindi **progetto**.  
+1. Utilizzando Visual Basic 6.0, dal **File** menu, fare clic su **New**, quindi **progetto**.  
   
-2.  Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare un **DLL ActiveX** progetto. Nella casella **Nome** digitare `VB6Hello`.  
+2. Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare un **DLL ActiveX** progetto. Nella casella **Nome** digitare `VB6Hello`.  
   
     > [!NOTE]
     >  Sono supportati solo i tipi di progetto DLL ActiveX e il controllo ActiveX con COM senza registrazione. Tipi di progetto EXE ActiveX e il documento ActiveX non sono supportati.  
   
-3.  Nelle **Esplora soluzioni**, fare doppio clic su **Class1.vb** per aprire l'editor di testo.  
+3. Nelle **Esplora soluzioni**, fare doppio clic su **Class1.vb** per aprire l'editor di testo.  
   
-4.  In Class1, aggiungere il codice seguente dopo il codice generato per il `New` metodo:  
+4. In Class1, aggiungere il codice seguente dopo il codice generato per il `New` metodo:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
     End Sub  
     ```  
   
-5.  Compilare il componente. Dal **compilare** menu, fare clic su **Compila soluzione**.  
+5. Compilare il componente. Dal **compilare** menu, fare clic su **Compila soluzione**.  
   
 > [!NOTE]
 >  COM senza registrazione supporta solo le DLL e controlla i tipi di progetto di COM. È possibile usare file eseguibili con COM senza registrazione.  

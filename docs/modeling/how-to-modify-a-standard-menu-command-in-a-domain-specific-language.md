@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063037"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio
 
@@ -28,15 +28,15 @@ ms.locfileid: "55952697"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Per trovare i comandi modificabili
 
-1.  Nel `DslPackage` progetto aprire `GeneratedCode\CommandSet.cs`. Questo file C# è reperibile in Esplora soluzioni come file secondario del `CommandSet.tt`.
+1. Nel `DslPackage` progetto aprire `GeneratedCode\CommandSet.cs`. Questo file c# è reperibile in Esplora soluzioni come file secondario del `CommandSet.tt`.
 
-2.  Trovare le classi in questo file i cui nomi terminano con "`CommandSet`", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet`.
+2. Trovare le classi in questo file i cui nomi terminano con "`CommandSet`", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet`.
 
-3.  In ogni classe di set di comandi digitare "`override`" seguito da uno spazio. IntelliSense mostrerà un elenco dei metodi di cui è possibile eseguire l'override. Ogni comando ha una coppia di metodi i cui nomi iniziano con "`ProcessOnStatus`" e "`ProcessOnMenu`".
+3. In ogni classe di set di comandi digitare "`override`" seguito da uno spazio. IntelliSense mostrerà un elenco dei metodi di cui è possibile eseguire l'override. Ogni comando ha una coppia di metodi i cui nomi iniziano con "`ProcessOnStatus`" e "`ProcessOnMenu`".
 
-4.  Prendere nota delle classi di set di comandi contenenti il comando che si vuole modificare.
+4. Prendere nota delle classi di set di comandi contenenti il comando che si vuole modificare.
 
-5.  Chiudere il file senza salvare le modifiche.
+5. Chiudere il file senza salvare le modifiche.
 
     > [!NOTE]
     > In genere, è opportuno non modificare i file che sono stati generati. Eventuali modifiche andranno perse la volta successiva che i file verranno generati.
@@ -47,15 +47,15 @@ Creare un nuovo file contenente una dichiarazione parziale della classe di set d
 
 ### <a name="to-extend-the-command-set-class"></a>Per estendere la classe di set di comandi
 
-1.  In Esplora soluzioni, nel progetto DslPackage aprire la cartella GeneratedCode, cercare in CommandSet.tt e aprire il file CommandSet.cs generato. Prendere nota dello spazio dei nomi e del nome della prima classe definita qui. Può, ad esempio, essere visualizzato:
+1. In Esplora soluzioni, nel progetto DslPackage aprire la cartella GeneratedCode, cercare in CommandSet.tt e aprire il file CommandSet.cs generato. Prendere nota dello spazio dei nomi e del nome della prima classe definita qui. Può, ad esempio, essere visualizzato:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  Nelle **DslPackage**, creare una cartella denominata **Custom Code**. In questa cartella, creare un nuovo file di classe denominato `CommandSet.cs`.
+2. Nelle **DslPackage**, creare una cartella denominata **Custom Code**. In questa cartella, creare un nuovo file di classe denominato `CommandSet.cs`.
 
-3.  Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
 
     ```csharp
     using System;
@@ -128,17 +128,17 @@ Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o ag
 
 I frammenti seguenti sono spesso utili in questi metodi:
 
--   `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
--   `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.
+- `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` - l'utente non ha selezionato più forme
+- `this.IsSingleSelection()` - l'utente non ha selezionato più forme
 
--   `this.SingleSelection` - la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse.
+- `this.SingleSelection` - la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse.
 
--   `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.
+- `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.
 
 Per altre informazioni su come passare da un elemento a altro e su come creare oggetti e collegamenti, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -146,7 +146,7 @@ Per altre informazioni su come passare da un elemento a altro e su come creare o
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Procedura: Aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimenti sullo schema XML VSCT](../extensibility/vsct-xml-schema-reference.md)

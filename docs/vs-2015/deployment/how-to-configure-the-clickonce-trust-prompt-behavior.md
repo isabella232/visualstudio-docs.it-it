@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "59001169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047047"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ ms.locfileid: "59001169"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Per abilitare la richiesta di attendibilità di ClickOnce con l'editor del Registro di sistema  
   
-1.  Aprire l'editor del Registro di sistema:  
+1. Aprire l'editor del Registro di sistema:  
   
-    1.  Fare clic su **avviare**, quindi fare clic su **eseguire**.  
+    1. Fare clic su **avviare**, quindi fare clic su **eseguire**.  
   
-    2.  Nel **aperto** , digitare `regedit` (o `regedit32` in Windows a 32 bit) e quindi fare clic su **OK**.  
+    2. Nel **aperto** , digitare `regedit` (o `regedit32` in Windows a 32 bit) e quindi fare clic su **OK**.  
   
-2.  Trovare la chiave del Registro di sistema seguente:  
+2. Trovare la chiave del Registro di sistema seguente:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Se la chiave non esiste, crearla.  
   
-3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.  
+3. Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.  
   
     |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ ms.locfileid: "59001169"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Per abilitare a livello di codice la richiesta di attendibilità di ClickOnce  
   
-1.  Creare un'applicazione console Visual Basic o Visual C# in Visual Studio.  
+1. Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.  
   
-2.  Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
+2. Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ ms.locfileid: "59001169"
     key.Close();  
     ```  
   
-3.  Compilare ed eseguire l'applicazione.  
+3. Compilare ed eseguire l'applicazione.  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>Limitare la richiesta di attendibilità di ClickOnce  
  Limitare la richiesta di attendibilità in modo che le soluzioni devono essere firmate con i certificati Authenticode con identità nota prima che vengono richiesto agli utenti di prendere una decisione di attendibilità.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Per limitare la richiesta di attendibilità di ClickOnce tramite l'editor del Registro di sistema  
   
-1.  Aprire l'editor del Registro di sistema:  
+1. Aprire l'editor del Registro di sistema:  
   
-    1.  Fare clic su **avviare**, quindi fare clic su **eseguire**.  
+    1. Fare clic su **avviare**, quindi fare clic su **eseguire**.  
   
-    2.  Nel **aperto** , digitare `regedit` (o `regedit32` in Windows a 32 bit) e quindi fare clic su **OK**.  
+    2. Nel **aperto** , digitare `regedit` (o `regedit32` in Windows a 32 bit) e quindi fare clic su **OK**.  
   
-2.  Trovare la chiave del Registro di sistema seguente:  
+2. Trovare la chiave del Registro di sistema seguente:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Se la chiave non esiste, crearla.  
   
-3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.  
+3. Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.  
   
     |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ ms.locfileid: "59001169"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Per limitare a livello di codice la richiesta di attendibilità di ClickOnce  
   
-1.  Creare un'applicazione console Visual Basic o Visual C# in Visual Studio.  
+1. Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.  
   
-2.  Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
+2. Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ ms.locfileid: "59001169"
     key.Close();  
     ```  
   
-3.  Compilare ed eseguire l'applicazione.  
+3. Compilare ed eseguire l'applicazione.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>Disabilitare la richiesta di attendibilità di ClickOnce  
  È possibile disabilitare la richiesta di attendibilità in modo che gli utenti finali non viene forniti l'opzione per installare le soluzioni che non sono già considerati attendibili nel loro criteri di sicurezza.  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Per disabilitare la richiesta di attendibilità di ClickOnce utilizzando l'editor del Registro di sistema  
   
-1.  Aprire l'editor del Registro di sistema:  
+1. Aprire l'editor del Registro di sistema:  
   
-    1.  Fare clic su **avviare**, quindi fare clic su **eseguire**.  
+    1. Fare clic su **avviare**, quindi fare clic su **eseguire**.  
   
-    2.  Nel **aperto** , digitare `regedit` (o `regedit32` in Windows a 32 bit) e quindi fare clic su **OK**.  
+    2. Nel **aperto** , digitare `regedit` (o `regedit32` in Windows a 32 bit) e quindi fare clic su **OK**.  
   
-2.  Trovare la chiave del Registro di sistema seguente:  
+2. Trovare la chiave del Registro di sistema seguente:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Se la chiave non esiste, crearla.  
   
-3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.  
+3. Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.  
   
     |Sottochiave del valore stringa|Value|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ ms.locfileid: "59001169"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Per disabilitare a livello di codice la richiesta di attendibilità di ClickOnce  
   
-1.  Creare un'applicazione console Visual Basic o Visual C# in Visual Studio.  
+1. Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.  
   
-2.  Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
+2. Aprire il file Program.cs o Program. vb per la modifica e aggiungere il codice seguente.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ ms.locfileid: "59001169"
   
     ```  
   
-3.  Compilare ed eseguire l'applicazione.  
+3. Compilare ed eseguire l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   

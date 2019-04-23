@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049061"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug in fase di progettazione in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -33,7 +33,7 @@ Per eseguire il debug di codice XAML sottostante un'app dalla finestra di proget
 
 È possibile usare Visual Studio **Immediate** finestra per eseguire una funzione o subroutine senza eseguire l'app. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio si interromperà nel punto di interruzione. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è detta *debug in fase di progettazione*.
 
-Nell'esempio seguente è in Visual Basic. È anche possibile usare la **controllo immediato** in fase di progettazione nella finestra C#, F#e le app C++.
+Nell'esempio seguente è in Visual Basic. È anche possibile usare la **controllo immediato** in fase di progettazione nella finestra C#, F#, e C++ app.
 
 1. Incollare il codice seguente in un'app console di Visual Basic vuota:
 
@@ -102,6 +102,7 @@ In alcuni scenari di associazione dichiarativa dei dati, consente di eseguire il
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    Quando la pagina viene caricata, viene raggiunto il punto di interruzione.
 
 ## <a name="see-also"></a>Vedere anche

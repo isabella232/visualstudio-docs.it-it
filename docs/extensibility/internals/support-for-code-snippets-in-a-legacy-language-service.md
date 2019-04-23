@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043961"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è un frammento di codice che viene inserito nel file di origine. Il frammento di codice è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo il frammento di codice viene inserito e può avere valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Immediatamente dopo l'inserimento del frammento, il servizio di linguaggio possibile formattare il frammento di codice.
@@ -39,11 +39,11 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 ## <a name="providing-support-for-code-snippets"></a>Fornire il supporto per frammenti di codice
  Per abilitare il supporto per frammenti di codice, è necessario fornire o installare i frammenti di codice ed è necessario fornire i mezzi per l'utente di inserire questi frammenti di codice. Esistono tre passaggi per abilitare il supporto per frammenti di codice:
 
-1.  Installazione dei file di frammento di codice.
+1. Installazione dei file di frammento di codice.
 
-2.  Abilitazione di frammenti di codice per il servizio di linguaggio.
+2. Abilitazione di frammenti di codice per il servizio di linguaggio.
 
-3.  Richiamare il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> oggetto.
+3. Richiamare il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> oggetto.
 
 ### <a name="installing-the-snippet-files"></a>Installazione dei file di frammento di codice
  Tutti i frammenti di codice per una lingua vengono archiviati come modelli in file XML, in genere un modello di frammento di codice per ogni file. Per informazioni dettagliate sullo schema XML usato per il modello di frammento di codice, vedere [riferimento dello Schema dei frammenti di codice](../../ide/code-snippets-schema-reference.md). Ogni modello di frammento di codice viene identificato con un ID lingua. Questo linguaggio ID viene specificato nel Registro di sistema e viene inserita la il `Language` attributo del \<codice > tag nel modello.
@@ -115,9 +115,9 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Inserimento di un frammento di codice tramite un comando di Menu
  Per usare un comando di menu da visualizzare nel browser del frammento di codice, aggiungere un comando di menu e quindi chiamare il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> nel metodo il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfaccia in risposta a tale comando del menu.
 
-1.  Aggiungere un comando e un pulsante al file con estensione vsct. È possibile trovare istruzioni per eseguire questa operazione nel [creazione di un'estensione con un comando di Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Aggiungere un comando e un pulsante al file con estensione vsct. È possibile trovare istruzioni per eseguire questa operazione nel [creazione di un'estensione con un comando di Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Derivare una classe dal <xref:Microsoft.VisualStudio.Package.ViewFilter> classe ed eseguire l'override di <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodo per indicare il supporto per il nuovo comando di menu. Questo esempio Abilita sempre il comando di menu.
+2. Derivare una classe dal <xref:Microsoft.VisualStudio.Package.ViewFilter> classe ed eseguire l'override di <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodo per indicare il supporto per il nuovo comando di menu. Questo esempio Abilita sempre il comando di menu.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
     }
     ```
 
-3.  Eseguire l'override di <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> metodo nella <xref:Microsoft.VisualStudio.Package.ViewFilter> classe per ottenere il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> oggetto e chiamare il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metodo su tale oggetto.
+3. Eseguire l'override di <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> metodo nella <xref:Microsoft.VisualStudio.Package.ViewFilter> classe per ottenere il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> oggetto e chiamare il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metodo su tale oggetto.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 
      I metodi seguenti il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe vengono chiamati nell'ordine specificato durante il processo di inserimento del frammento da Visual Studio:
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      Dopo il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> viene chiamato il metodo, è stato inserito il frammento di codice e <xref:Microsoft.VisualStudio.Package.ExpansionProvider> oggetto è una speciale modalità di modifica utilizzata per la modifica di un frammento di codice che è appena stato inserito.
 

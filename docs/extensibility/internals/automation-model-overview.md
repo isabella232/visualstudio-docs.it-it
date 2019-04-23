@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21761ece78967c7c644deecf947c8aac0027d0c7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4f13ffca7dc39be65f8a36a9b242bf7f0f82dc4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061528"
 ---
 # <a name="automation-model-overview"></a>Cenni preliminari sul modello di automazione
 Il modello di automazione è costituito da un set di oggetti su cui è possibile scrivere un componente aggiuntivo di Visual Studio o estensione. Un componente aggiuntivo è un'applicazione che è possibile modificare l'ambiente di Visual Studio e automatizzare le attività comuni. Un'estensione di Visual Studio possa creare componenti personalizzati di Visual Studio o aggiungere la funzionalità dei componenti standard, ad esempio l'editor di testo.
@@ -32,13 +32,13 @@ Il modello di automazione è costituito da un set di oggetti su cui è possibile
 
  Posizioni in cui è possibile considerare l'estensione del modello di automazione dell'ambiente:
 
--   Progetto
+- Progetto
 
--   Document
+- Document
 
--   Codice
+- Codice
 
--   Compilazione
+- Compilazione
 
 Per altre informazioni sull'automazione, vedere [automazione ed estendibilità in Visual Studio](../extensibility-in-visual-studio.md). Questo documento e i documenti vengono forniti collegamenti per poter prendere decisioni relative a come si deve fornire l'automazione per il pacchetto VSPackage.
 

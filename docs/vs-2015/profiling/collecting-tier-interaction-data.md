@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: abe38162f20fb73de04301e97974dc348d704b6f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047225"
 ---
 # <a name="collecting-tier-interaction-data"></a>Raccolta di dati di interazione tra livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Per aggiungere dati di interazione tra livelli all'esecuzione della profilatura tramite le pagine delle proprietà della sessione di prestazioni  
   
-1.  In Esplora prestazioni scegliere **Proprietà** dal menu contestuale.  
+1. In Esplora prestazioni scegliere **Proprietà** dal menu contestuale.  
   
-2.  Selezionare la pagina **Interazioni tra livelli** e quindi selezionare la casella di controllo **Abilita profilatura interazione tra livelli**.  
+2. Selezionare la pagina **Interazioni tra livelli** e quindi selezionare la casella di controllo **Abilita profilatura interazione tra livelli**.  
   
-3.  In Esplora prestazioni selezionare il nodo **Destinazioni** e quindi specificare il progetto, il file eseguibile o il sito Web che si vuole sottoporre a profilatura.  
+3. In Esplora prestazioni selezionare il nodo **Destinazioni** e quindi specificare il progetto, il file eseguibile o il sito Web che si vuole sottoporre a profilatura.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Interazioni tra livelli](../profiling/tier-interactions-view.md)

@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062035"
 ---
 # <a name="midl-task"></a>Attività MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **MIDL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Parametro **String[]** facoltativo.  
   
@@ -50,7 +50,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/I** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Parametro **String** facoltativo.  
   
@@ -58,7 +58,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere "MIDL Command-Line Reference" (Informazioni di riferimento sulla riga di comando MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -66,7 +66,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/app_config** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Parametro **String** facoltativo.  
   
@@ -74,7 +74,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/cstub** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche il parametro **ServerStubFile** in questa tabella.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Parametro **String** facoltativo.  
   
@@ -82,7 +82,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/cpp_opt** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Parametro **String** facoltativo.  
   
@@ -98,7 +98,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/char** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Parametro **String** facoltativo.  
   
@@ -106,7 +106,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/dlldata** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Parametro **String** facoltativo.  
   
@@ -122,7 +122,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/error** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -130,7 +130,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/error allocation** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -138,7 +138,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/error bounds_check** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -146,7 +146,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando (**/?**) per midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -154,7 +154,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/error ref** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -162,7 +162,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/error stub_data** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Parametro **String** facoltativo.  
   
@@ -177,7 +177,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/client** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Parametro **String** facoltativo.  
   
@@ -192,7 +192,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/server** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -200,7 +200,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/Oicf** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -208,7 +208,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/notlb** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Parametro **String** facoltativo.  
   
@@ -216,7 +216,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/h** o **header** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -224,7 +224,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/no_def_idir** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Parametro **String** facoltativo.  
   
@@ -232,7 +232,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/iid** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **LocaleID**  
+- **LocaleID**  
   
      Parametro **int** facoltativo.  
   
@@ -240,7 +240,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/lcid** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche "Locale IDs Assigned by Microsoft" (ID impostazioni locali assegnati da Microsoft) in MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -248,7 +248,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/mktyplib203** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche "ODL File Syntax" (Sintassi dei file ODL) sul sito Web MSDN.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Parametro **String** facoltativo.  
   
@@ -256,7 +256,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/out** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Parametro **String[]** facoltativo.  
   
@@ -264,7 +264,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/D** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Parametro **String** facoltativo.  
   
@@ -272,7 +272,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/proxy** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Parametro **String** facoltativo.  
   
@@ -280,7 +280,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/o** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Parametro **String** facoltativo.  
   
@@ -288,13 +288,13 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/sstub** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche il parametro **ClientStubFile** in questa tabella.  
   
--   **Source**  
+- **Source**  
   
      Parametro `ITaskItem[]` obbligatorio.  
   
      Specifica un elenco dei file di origine separati da spazi.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Parametro **String** facoltativo.  
   
@@ -312,7 +312,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/Zp** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). L'opzione **/Zp** equivale all'opzione **/pack** e all'opzione **/align** precedente.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Parametro **Boolean** facoltativo.  
   
@@ -320,7 +320,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/no_warn** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Parametro `Boolean` facoltativo.  
   
@@ -328,7 +328,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/nologo** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Parametro **String** facoltativo.  
   
@@ -345,13 +345,13 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/env** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Parametro `String` facoltativo.  
   
      Specifica la directory intermedia in cui sono archiviati i log di rilevamento per questa attività.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Parametro **String** facoltativo.  
   
@@ -366,7 +366,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere le opzioni **/newtlb** e **/oldtlb** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Parametro **String** facoltativo.  
   
@@ -374,7 +374,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/tlb** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Parametro **String[]** facoltativo.  
   
@@ -382,7 +382,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/U** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche il parametro **PreprocessorDefinitions** in questa tabella.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Parametro `Boolean` facoltativo.  
   
@@ -390,7 +390,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere le opzioni **/robust** e **/no_robust** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      Parametro `Boolean` facoltativo.  
   
@@ -400,7 +400,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere le opzioni **/WX** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche il parametro **WarningLevel** in questa tabella.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      Parametro **String** facoltativo.  
   

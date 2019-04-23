@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 21efca0d922087281f94facfdaf04a12606bc4db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044593"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -22,11 +22,11 @@ Per usare un processore di direttiva personalizzato in Visual Studio in qualsias
 
 I metodi alternativi sono i seguenti:
 
--   [Estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Fornisce un modo per installare e disinstallare il processore di direttiva sia in un proprio computer che in altri computer. In genere, è possibile comprimere altre funzionalità nello stesso VSIX.
+- [Estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Fornisce un modo per installare e disinstallare il processore di direttiva sia in un proprio computer che in altri computer. In genere, è possibile comprimere altre funzionalità nello stesso VSIX.
 
--   [VSPackage](../extensibility/internals/vspackages.md). Se si definisce un package VS che contiene altre funzionalità oltre al processore di direttiva, esiste un metodo comodo per registrare il processore di direttiva.
+- [VSPackage](../extensibility/internals/vspackages.md). Se si definisce un package VS che contiene altre funzionalità oltre al processore di direttiva, esiste un metodo comodo per registrare il processore di direttiva.
 
--   Impostare una chiave del Registro di sistema. In questo metodo, si aggiunge una voce del Registro di sistema per il processore di direttiva.
+- Impostare una chiave del Registro di sistema. In questo metodo, si aggiunge una voce del Registro di sistema per il processore di direttiva.
 
 È necessario usare uno di questi metodi solo se si desidera trasformare il modello di testo in Visual Studio o MSBuild. Se si utilizza un host personalizzato nella propria applicazione, l'host personalizzato è responsabile dell'individuazione dei processori di direttive per ciascuna direttiva.
 
@@ -36,9 +36,9 @@ I metodi alternativi sono i seguenti:
 
  È necessario assicurarsi che i due elementi seguenti siano contenuti nel file .vsix:
 
--   L'assembly (.dll) che contiene la classe del processore di direttiva personalizzata.
+- L'assembly (.dll) che contiene la classe del processore di direttiva personalizzata.
 
--   Un file .pkgdef che registra il processore di direttiva. Il nome radice del file deve essere uguale all'assembly. Ad esempio, i file potrebbero essere denominati CDP.dll e CDP.pkgdef.
+- Un file .pkgdef che registra il processore di direttiva. Il nome radice del file deve essere uguale all'assembly. Ad esempio, i file potrebbero essere denominati CDP.dll e CDP.pkgdef.
 
 Per esaminare o modificare il contenuto di un file .vsix, cambiare l'estensione del file in .zip, quindi aprirlo. Dopo avere modificato il contenuto, reimpostare l'estensione del file su .vsix.
 
@@ -46,25 +46,25 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Per sviluppare un processore di direttiva personalizzato in un progetto VSIX
 
-1.  Creare una nuova **progetto VSIX** progetto.
+1. Creare una nuova **progetto VSIX** progetto.
 
-2.  Nelle **vsixmanifest**, impostare il tipo di contenuto e le edizioni supportate.
+2. Nelle **vsixmanifest**, impostare il tipo di contenuto e le edizioni supportate.
 
-    1.  In VSIX manifest editor, nella **asset** scheda, scegliere **New** e impostare le proprietà del nuovo elemento:
+    1. In VSIX manifest editor, nella **asset** scheda, scegliere **New** e impostare le proprietà del nuovo elemento:
 
          **Tipo di contenuto** = **VSPackage**
 
          **Progetto di origine** = \<*nel progetto corrente*>
 
-    2.  Fare clic su **edizioni selezionate** e controllare i tipi di installazione in cui si desidera che il processore di direttiva sia utilizzabile.
+    2. Fare clic su **edizioni selezionate** e controllare i tipi di installazione in cui si desidera che il processore di direttiva sia utilizzabile.
 
-3.  Aggiungere un file .pkgdef e impostarne le proprietà da includere in VSIX.
+3. Aggiungere un file .pkgdef e impostarne le proprietà da includere in VSIX.
 
-    1.  Creare un file di testo e denominarlo \< *nomeassembly*> pkgdef.
+    1. Creare un file di testo e denominarlo \< *nomeassembly*> pkgdef.
 
          \<*assemblyName*> equivale in genere il nome del progetto.
 
-    2.  Selezionarlo in Esplora soluzioni e impostarne le proprietà come segue:
+    2. Selezionarlo in Esplora soluzioni e impostarne le proprietà come segue:
 
          **Azione di compilazione** = **contenuto**
 
@@ -72,9 +72,9 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
          **Includi in VSIX** = **True**
 
-    3.  Impostare il nome del pacchetto VSIX e assicurarsi che l'ID sia univoco.
+    3. Impostare il nome del pacchetto VSIX e assicurarsi che l'ID sia univoco.
 
-4.  Aggiungere il seguente testo al file .pkgdef.
+4. Aggiungere il seguente testo al file .pkgdef.
 
     ```
     [$RootKey$\TextTemplating]
@@ -87,46 +87,46 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
      Sostituire i nomi seguenti con i propri nomi: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.
 
-5.  Aggiungere i riferimenti seguenti al progetto:
+5. Aggiungere i riferimenti seguenti al progetto:
 
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
-6.  Aggiungere la classe del processore di direttiva personalizzato al progetto.
+6. Aggiungere la classe del processore di direttiva personalizzato al progetto.
 
      Si tratta di una classe pubblica che deve implementare <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
 #### <a name="to-install-the-custom-directive-processor"></a>Per installare il processore di direttiva personalizzato
 
-1.  In Windows Explorer, aprire la directory di compilazione (in genere è bin\Debug o bin\Release).
+1. In Windows Explorer, aprire la directory di compilazione (in genere è bin\Debug o bin\Release).
 
-2.  Se si desidera installare il processore di direttiva in un altro computer, copiare il file .vsix nell'altro computer.
+2. Se si desidera installare il processore di direttiva in un altro computer, copiare il file .vsix nell'altro computer.
 
-3.  Fare doppio clic sul file .vsix. Verrà visualizzata la finestra di Visual Studio Extension Installer.
+3. Fare doppio clic sul file .vsix. Verrà visualizzata la finestra di Visual Studio Extension Installer.
 
-4.  Riavviare Visual Studio. Si sarà ora in grado di eseguire modelli di testo che contengono direttive che si riferiscono al processore di direttiva personalizzato. Ogni direttiva è nel seguente formato:
+4. Riavviare Visual Studio. Si sarà ora in grado di eseguire modelli di testo che contengono direttive che si riferiscono al processore di direttiva personalizzato. Ogni direttiva è nel seguente formato:
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Per disinstallare o disabilitare temporaneamente il processore di direttiva personalizzato
 
-1.  In Visual Studio **degli strumenti** menu, fare clic su **gestore estensioni del**.
+1. In Visual Studio **degli strumenti** menu, fare clic su **gestore estensioni del**.
 
-2.  Selezionare il progetto VSIX che contiene il processore di direttiva e quindi fare clic su **disinstallazione** oppure **disabilitare**.
+2. Selezionare il progetto VSIX che contiene il processore di direttiva e quindi fare clic su **disinstallazione** oppure **disabilitare**.
 
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Risoluzione dei problemi relativi a un processore di direttiva in un pacchetto VSIX
  Se il processore di direttiva non funziona, è possibile seguire i suggerimenti indicati di seguito:
 
--   Il nome del processore che si specifica nella direttiva personalizzata deve corrispondere al `CustomDirectiveProcessorName` specificato nel file .pkgdef.
+- Il nome del processore che si specifica nella direttiva personalizzata deve corrispondere al `CustomDirectiveProcessorName` specificato nel file .pkgdef.
 
--   Il metodo `IsDirectiveSupported` deve restituire `true` quando viene passato il nome di `CustomDirective`.
+- Il metodo `IsDirectiveSupported` deve restituire `true` quando viene passato il nome di `CustomDirective`.
 
--   Se non è possibile visualizzare l'estensione in Gestione estensioni, ma il sistema non consentirà di installarlo, eliminare l'estensione dal **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
+- Se non è possibile visualizzare l'estensione in Gestione estensioni, ma il sistema non consentirà di installarlo, eliminare l'estensione dal **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
 
--   Aprire il file .vsix ed esaminarne il contenuto. Per aprirlo, impostare l'estensione del file su .zip. Verificare che contenga i file .dll, .pkgdef ed extension.vsixmanifest. Il file extension.vsixmanifest deve contenere l'elenco adatto nel nodo SupportedProducts e deve contenere anche un nodo Package VS sotto il nodo Contenuto:
+- Aprire il file .vsix ed esaminarne il contenuto. Per aprirlo, impostare l'estensione del file su .zip. Verificare che contenga i file .dll, .pkgdef ed extension.vsixmanifest. Il file extension.vsixmanifest deve contenere l'elenco adatto nel nodo SupportedProducts e deve contenere anche un nodo Package VS sotto il nodo Contenuto:
 
      `<Content>`
 
@@ -170,15 +170,15 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 3. Aggiungere una chiave del Registro di sistema che abbia lo stesso nome della classe del processore di direttiva.
 
-   -   Nell'albero del Registro di sistema, fare clic sulla **DirectiveProcessors** nodo, scegliere **New**, quindi fare clic su **chiave**.
+   - Nell'albero del Registro di sistema, fare clic sulla **DirectiveProcessors** nodo, scegliere **New**, quindi fare clic su **chiave**.
 
 4. Nel nuovo nodo, aggiungere valori stringa per Class e CodeBase o Assembly, sulla base delle tabelle seguenti.
 
-   1.  Pulsante destro del mouse sul nodo che è stato creato, scegliere **New**, quindi fare clic su **valore stringa**.
+   1. Pulsante destro del mouse sul nodo che è stato creato, scegliere **New**, quindi fare clic su **valore stringa**.
 
-   2.  Modificare il nome del valore.
+   2. Modificare il nome del valore.
 
-   3.  Fare doppio clic sul nome e modificare i dati.
+   3. Fare doppio clic sul nome e modificare i dati.
 
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 

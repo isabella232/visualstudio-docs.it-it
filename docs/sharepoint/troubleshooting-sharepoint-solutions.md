@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048619"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi di soluzioni SharePoint
   Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per altre informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -115,9 +115,9 @@ ms.locfileid: "54870623"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Immettere nuovamente la procedura guidata del flusso di lavoro
 
-1.  Nelle **Esplora soluzioni**, scegliere il nodo del flusso di lavoro.
+1. Nelle **Esplora soluzioni**, scegliere il nodo del flusso di lavoro.
 
-2.  Nel **proprietà** finestra, fare clic sul pulsante con puntini di sospensione (...) su qualsiasi proprietà che dispone di un pulsante con puntini di sospensione.
+2. Nel **proprietà** finestra, fare clic sul pulsante con puntini di sospensione (...) su qualsiasi proprietà che dispone di un pulsante con puntini di sospensione.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>L'utente deve aggiornare la pagina dell'applicazione nel browser durante il debug per visualizzare l'immagine aggiornata
  Se si esegue il debug di una soluzione di SharePoint contenente una pagina dell'applicazione con un controllo che visualizza un'immagine, ad esempio un [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] controllo immagine, è necessario aggiornare la pagina nel browser per visualizzare tutte le modifiche apportate all'immagine.
@@ -127,13 +127,13 @@ ms.locfileid: "54870623"
 
 ### <a name="error-message"></a>Messaggio di errore
 
--   Percorso di sito di SharePoint non è valido.
+- Percorso di sito di SharePoint non è valido.
 
 ### <a name="resolution"></a>Risoluzione
 
--   Installare [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+- Installare [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
--   Assicurarsi di avere accesso di amministratore per il sito Web di SharePoint. Per altre informazioni, vedere la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] articolo in linea [assegnare o rimuovere gli amministratori di applicazioni di servizio in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Assicurarsi di avere accesso di amministratore per il sito Web di SharePoint. Per altre informazioni, vedere la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] articolo in linea [assegnare o rimuovere gli amministratori di applicazioni di servizio in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Eventi web eliminazione sito non si verificano nel progetto ricevitore di eventi
  Quando si crea un progetto di ricevitore di eventi e si selezionano determinati eventi Web, ad esempio "un sito di eliminazione in corso", l'evento si verifica mai.
@@ -156,46 +156,46 @@ ms.locfileid: "54870623"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Per modificare l'ambito di funzionalità del ricevitore di eventi
 
-1.  Nelle **Esplora soluzioni**, aprire il ricevitore di eventi *feature* del file nei **Progettazione funzionalità** doppio clic sul file o aprendo il relativo menu di scelta rapida e quindi scelta **aperto**.
+1. Nelle **Esplora soluzioni**, aprire il ricevitore di eventi *feature* del file nei **Progettazione funzionalità** doppio clic sul file o aprendo il relativo menu di scelta rapida e quindi scelta **aperto**.
 
-2.  Scegliere la freccia accanto a **ambito**, quindi scegliere **sito** nell'elenco visualizzato.
+2. Scegliere la freccia accanto a **ambito**, quindi scegliere **sito** nell'elenco visualizzato.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Errore di distribuzione viene visualizzato dopo aver modificato il nome di un identificatore in un progetto modello di connettività dei dati
  Questo problema si verifica se si modifica il nome dell'identificatore di un'entità in un modello di integrazione applicativa dei dati (BDC) e quindi provare a distribuire la soluzione.
 
 ### <a name="error-messages"></a>Messaggi di errore
 
--   \<*nome del modello*> presenta i seguenti errori di attivazione di tipo di contenuto esterno...
+- \<*nome del modello*> presenta i seguenti errori di attivazione di tipo di contenuto esterno...
 
--   IMetadataObject denominato '\<*nome del modello*>' ha un valore nel campo 'name' che è duplicato...
+- IMetadataObject denominato '\<*nome del modello*>' ha un valore nel campo 'name' che è duplicato...
 
 ### <a name="resolution"></a>Risoluzione
  Per risolvere questo problema, eliminare manualmente il modello e quindi distribuire nuovamente la soluzione.  È possibile eliminare il modello usando uno dei seguenti strumenti:
 
--   Amministrazione centrale SharePoint 2010. Per altre informazioni, vedere [modelli BDC](http://go.microsoft.com/fwlink/?LinkID=181472) nel sito Web Microsoft TechNet.
+- Amministrazione centrale SharePoint 2010. Per altre informazioni, vedere [modelli BDC](http://go.microsoft.com/fwlink/?LinkID=181472) nel sito Web Microsoft TechNet.
 
--   Windows PowerShell. È possibile eliminare il modello digitando questo comando al prompt dei comandi: **Remove-SPBusinessDataCatalogModel**. Per altre informazioni, vedere [cmdlet generali (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) nel sito Web Microsoft TechNet.
+- Windows PowerShell. È possibile eliminare il modello digitando questo comando al prompt dei comandi: **Remove-SPBusinessDataCatalogModel**. Per altre informazioni, vedere [cmdlet generali (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) nel sito Web Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Viene visualizzato un errore quando si prova a visualizzare una web part visiva in SharePoint
  Questo problema si verifica quando la **tracciato** proprietà del controllo utente non inizia con la stringa "CONTROLTEMPLATES\\".
 
 ### <a name="error-messages"></a>Messaggi di errore
 
--   Il file "/_CONTROLTEMPLATES/*\<nome progetto >*/*\<nome della Web Part >*/*\<controllo utente nome >*. ascx "non esiste.
+- Il file "/_CONTROLTEMPLATES/*\<nome progetto >*/*\<nome della Web Part >*/*\<controllo utente nome >*. ascx "non esiste.
 
--   Errore del server nell'applicazione '/'.
+- Errore del server nell'applicazione '/'.
 
 ### <a name="resolution"></a>Risoluzione
 
 ##### <a name="to-resolve-this-issue"></a>Per risolvere il problema
 
-1.  Nelle **Esplora soluzioni**, scegliere il file di controllo utente, la cui estensione viene *ascx*.
+1. Nelle **Esplora soluzioni**, scegliere il file di controllo utente, la cui estensione viene *ascx*.
 
-2.  Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+2. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
 
-3.  Nel **delle proprietà** finestra, espandere il **percorso di distribuzione** nodo.
+3. Nel **delle proprietà** finestra, espandere il **percorso di distribuzione** nodo.
 
-4.  Assicurarsi che il valore della **tracciato** proprietà inizia con la stringa "CONTROLTEMPLATES\\".
+4. Assicurarsi che il valore della **tracciato** proprietà inizia con la stringa "CONTROLTEMPLATES\\".
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Errore viene visualizzato quando si esegue un flusso di lavoro riutilizzabile importato che contiene un campo del form attività
  Questo problema si verifica se si importa un flusso di lavoro che contiene un modulo di attività che dispone di un campo e quindi esecuzione di nuovo flusso di lavoro nello stesso sistema da cui è stato importato.
@@ -230,26 +230,26 @@ ms.locfileid: "54870623"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Per accedere alle impostazioni di IIS app pool
 
-1.  Aprire Gestione IIS.
+1. Aprire Gestione IIS.
 
-2.  Nel **connessioni** riquadro, espandere il nodo del server SharePoint e quindi scegliere il **pool di applicazioni** nodo.
+2. Nel **connessioni** riquadro, espandere il nodo del server SharePoint e quindi scegliere il **pool di applicazioni** nodo.
 
-3.  Nel **pool di applicazioni** pagina, scegliere il pool di applicazioni di SharePoint (in genere "SharePoint - 80") e quindi nel **azioni** riquadro, scegliere il **impostazioni avanzate** collegamento.
+3. Nel **pool di applicazioni** pagina, scegliere il pool di applicazioni di SharePoint (in genere "SharePoint - 80") e quindi nel **azioni** riquadro, scegliere il **impostazioni avanzate** collegamento.
 
-4.  Per aumentare il tempo di attesa prima del timeout IIS, modificare il valore della **tempo di risposta massimo Ping (secondi)** su un valore maggiore di 90 secondi.
+4. Per aumentare il tempo di attesa prima del timeout IIS, modificare il valore della **tempo di risposta massimo Ping (secondi)** su un valore maggiore di 90 secondi.
 
-5.  Per disabilitare il ping di IIS, impostare **Ping abilitato** al **False**.
+5. Per disabilitare il ping di IIS, impostare **Ping abilitato** al **False**.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Ritrazione automatica lascia l'istanza di elenco orfani in SharePoint
  Questo problema si verifica se si esegue la procedura seguente.
 
-1.  Creare una definizione di elenco con un'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Creare una definizione di elenco con un'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Scegliere il **F5** tasto per eseguire la soluzione.
+2. Scegliere il **F5** tasto per eseguire la soluzione.
 
-3.  Arrestare il debug oppure chiudere il sito di SharePoint.
+3. Arrestare il debug oppure chiudere il sito di SharePoint.
 
-4.  Riaprire il sito di SharePoint e aprire l'istanza di elenco.
+4. Riaprire il sito di SharePoint e aprire l'istanza di elenco.
 
 ### <a name="error-message"></a>Messaggio di errore
  Errore del server nell'applicazione '/'.

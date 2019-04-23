@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01c76f5696e029cd7d15be75786b1009af4a673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061210"
 ---
 # <a name="sccqueryinfo-function"></a>Funzione SccQueryInfo
 Questa funzione Ottiene informazioni sullo stato per un set di file selezionati nel controllo del codice sorgente.
@@ -67,13 +67,13 @@ SCCRTN SccQueryInfo(
 
  Quando si usa questa funzione per estrarre i file, tenere presente quanto segue `MSSCCI` i requisiti di stato:
 
--   `SCC_STATUS_OUTBYUSER` viene impostato quando l'utente corrente ha estratto il file.
+- `SCC_STATUS_OUTBYUSER` viene impostato quando l'utente corrente ha estratto il file.
 
--   `SCC_STATUS_CHECKEDOUT` non può essere impostata a meno che non `SCC_STATUS_OUTBYUSER` è impostata.
+- `SCC_STATUS_CHECKEDOUT` non può essere impostata a meno che non `SCC_STATUS_OUTBYUSER` è impostata.
 
--   `SCC_STATUS_CHECKEDOUT` viene impostato solo quando il file viene estratto nella directory di lavoro designato.
+- `SCC_STATUS_CHECKEDOUT` viene impostato solo quando il file viene estratto nella directory di lavoro designato.
 
--   Se il file è stato estratto dall'utente corrente in una directory diversa dalla directory di lavoro `SCC_STATUS_OUTBYUSER` è impostata ma `SCC_STATUS_CHECKEDOUT` non.
+- Se il file è stato estratto dall'utente corrente in una directory diversa dalla directory di lavoro `SCC_STATUS_OUTBYUSER` è impostata ma `SCC_STATUS_CHECKEDOUT` non.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

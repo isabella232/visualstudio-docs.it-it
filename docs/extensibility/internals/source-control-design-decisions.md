@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066195"
 ---
 # <a name="source-control-design-decisions"></a>Decisioni di progettazione relative al controllo del codice sorgente
 Le seguenti decisioni di progettazione devono essere considerate per i progetti durante l'implementazione di controllo del codice sorgente.
@@ -28,11 +28,11 @@ Le seguenti decisioni di progettazione devono essere considerate per i progetti 
 ## <a name="will-the-project-include-special-files"></a>Il progetto includerà i file speciali?
  Un'altra importante decisione di progettazione è che la struttura del progetto usi file speciali. File speciali sono i file nascosti sottostanti i file che sono finestre di dialogo di estrazione e visibile in Esplora soluzioni e il check-in. Se si utilizzano file speciali, seguire queste linee guida:
 
-1.  Non associare file speciali con il nodo radice del progetto, vale a dire, con il progetto file stesso. File di progetto deve essere un singolo file.
+1. Non associare file speciali con il nodo radice del progetto, vale a dire, con il progetto file stesso. File di progetto deve essere un singolo file.
 
-2.  Quando i file speciali sono aggiunto, rimosso o rinominati in un progetto appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> eventi devono essere generati con il set di flag che indica i file sono file speciali. Questi eventi vengono chiamati dall'ambiente in risposta al progetto chiamando appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metodi.
+2. Quando i file speciali sono aggiunto, rimosso o rinominati in un progetto appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> eventi devono essere generati con il set di flag che indica i file sono file speciali. Questi eventi vengono chiamati dall'ambiente in risposta al progetto chiamando appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metodi.
 
-3.  Quando il progetto o l'editor chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> per un file, i file speciali associati a tale file non vengono archiviati automaticamente. Passare i file speciali nell'insieme al file padre. L'ambiente rileverà la relazione tra tutti i file che vengono passati e nascondere in modo appropriato i file speciali nell'interfaccia utente di estrazione.
+3. Quando il progetto o l'editor chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> per un file, i file speciali associati a tale file non vengono archiviati automaticamente. Passare i file speciali nell'insieme al file padre. L'ambiente rileverà la relazione tra tutti i file che vengono passati e nascondere in modo appropriato i file speciali nell'interfaccia utente di estrazione.
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

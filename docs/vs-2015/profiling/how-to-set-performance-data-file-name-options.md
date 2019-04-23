@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057836"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni
+# <a name="how-to-set-performance-data-file-name-options"></a>Procedura: Opzioni di nome File di dati di set di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per impostazione predefinita, un file dei dati di profilatura (con estensione vsp) viene salvato con la sintassi seguente:  
@@ -27,7 +27,7 @@ Per impostazione predefinita, un file dei dati di profilatura (con estensione vs
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -38,11 +38,11 @@ Per impostazione predefinita, un file dei dati di profilatura (con estensione vs
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Per modificare la sintassi di denominazione dei file di dati di profilatura di una sessione di prestazioni  
   
-1.  In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi fare clic su **Proprietà**.  
+1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi fare clic su **Proprietà**.  
   
-2.  Fare clic su **Generale**.  
+2. Fare clic su **Generale**.  
   
-3.  In **Rapporto** modificare le impostazioni seguenti:  
+3. In **Rapporto** modificare le impostazioni seguenti:  
   
     |||  
     |-|-|  

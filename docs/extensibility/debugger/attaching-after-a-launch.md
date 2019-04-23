@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065584"
 ---
 # <a name="attach-after-a-launch"></a>Collegare dopo un avvio
 Dopo aver avviato un programma, la sessione di debug è pronta per collegare il motore di debug (DE) a tale programma.
@@ -23,9 +23,9 @@ Dopo aver avviato un programma, la sessione di debug è pronta per collegare il 
 ## <a name="design-decisions"></a>Decisioni di progettazione
  Poiché la comunicazione è più semplice all'interno di uno spazio di indirizzi condivisa, è necessario scegliere tra due approcci di progettazione: impostare la comunicazione tra la sessione di debug e il DE. In alternativa, impostare la comunicazione tra il DE e il programma. Scegliere tra gli elementi seguenti:
 
--   Se è più opportuno configurare la comunicazione tra la sessione di debug e il DE, la sessione di debug CO-crea il DE e chiede di DE collegare al programma. Questa progettazione rende la sessione di debug e DE insieme uno spazio indirizzi e l'ambiente di runtime e il programma insieme in un altro.
+- Se è più opportuno configurare la comunicazione tra la sessione di debug e il DE, la sessione di debug CO-crea il DE e chiede di DE collegare al programma. Questa progettazione rende la sessione di debug e DE insieme uno spazio indirizzi e l'ambiente di runtime e il programma insieme in un altro.
 
--   Se è più opportuno configurare la comunicazione tra il DE e il programma, l'ambiente di runtime CO-crea il DE. Questa progettazione lascia il modello SDM in uno spazio indirizzi e il DE ambiente run-time e programma insieme in un altro. Questa progettazione è tipica di un CRI implementata con un interprete per eseguire i linguaggi basati su script.
+- Se è più opportuno configurare la comunicazione tra il DE e il programma, l'ambiente di runtime CO-crea il DE. Questa progettazione lascia il modello SDM in uno spazio indirizzi e il DE ambiente run-time e programma insieme in un altro. Questa progettazione è tipica di un CRI implementata con un interprete per eseguire i linguaggi basati su script.
 
     > [!NOTE]
     >  Modalità la Germania viene associato al programma è dipendente dall'implementazione. Comunicazione tra il DE e il programma viene anche dipende dall'implementazione.

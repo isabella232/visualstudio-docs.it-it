@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065285"
 ---
 # <a name="localizing-vsix-packages"></a>Localizzazione di pacchetti VSIX
 
@@ -53,7 +53,7 @@ Quando si crea un file vsixlangpack, è necessario impostare il `Include in Vsix
 
 1. Nelle **Esplora soluzioni**, fare doppio clic su file vsixlangpack e quindi fare clic su **proprietà**.
 
-2.  Nel **griglia delle proprietà**, fare clic su **Includi in Vsix**e impostarne il valore su `true`.
+2. Nel **griglia delle proprietà**, fare clic su **Includi in Vsix**e impostarne il valore su `true`.
 
 ## <a name="example"></a>Esempio
 

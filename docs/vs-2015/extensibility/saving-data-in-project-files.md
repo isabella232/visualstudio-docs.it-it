@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 72f9f1a098d17d7e6dd0b5cd8218b35f3408695e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048723"
 ---
 # <a name="saving-data-in-project-files"></a>Salvataggio di dati nei file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
   
 #### <a name="to-save-a-build-related-data-in-the-project-file"></a>Per salvare una compilazione correlati i dati nel file di progetto  
   
--   Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodo per salvare un percorso completo del file di progetto.  
+- Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodo per salvare un percorso completo del file di progetto.  
   
     ```  
     private SpecializedProject project;  
@@ -49,7 +49,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
   
 #### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Per build di recuperare i dati correlati dal file di progetto  
   
--   Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodo per recuperare un percorso completo del file di progetto.  
+- Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> metodo per recuperare un percorso completo del file di progetto.  
   
     ```  
     private SpecializedProject project;  
@@ -66,7 +66,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
   
 #### <a name="to-save-non-build-related-data-in-the-project-file"></a>Per salvare-build non correlati i dati nel file di progetto  
   
-1.  Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodo per determinare se un frammento XML è stato modificato dall'ultimo salvato nel relativo file corrente.  
+1. Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> metodo per determinare se un frammento XML è stato modificato dall'ultimo salvato nel relativo file corrente.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -96,7 +96,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
     }  
     ```  
   
-2.  Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodo per salvare i dati XML nel file di progetto.  
+2. Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> metodo per salvare i dati XML nel file di progetto.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -147,7 +147,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
   
 #### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Per recuperare i dati correlati di non compilazione nel file di progetto  
   
-1.  Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metodo per inizializzare le proprietà di estensione di progetto e altri dati indipendenti dalla compilazione. Questo metodo viene chiamato se non sono presenti dati di configurazione XML presenti nel file di progetto.  
+1. Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> metodo per inizializzare le proprietà di estensione di progetto e altri dati indipendenti dalla compilazione. Questo metodo viene chiamato se non sono presenti dati di configurazione XML presenti nel file di progetto.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -163,7 +163,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
         return VSConstants.S_OK;  
     ```  
   
-2.  Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> per caricare i dati XML dal file di progetto.  
+2. Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> per caricare i dati XML dal file di progetto.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047880"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Area di test 8: Cambio di plug-in
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) è l'interfaccia utente (UI) per modificare il controllo del codice sorgente corrente del plug-in. Questa area di test fornisce i test case per il processo di selezione plug-in da usare per la soluzione controllo del codice sorgente che.
@@ -24,9 +24,9 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di svil
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu
  Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.
 
--   Controllo origine corrente del plug-in: **Gli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **Selezione plug-in**.
+- Controllo origine corrente del plug-in: **Gli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **Selezione plug-in**.
 
--   Modificare l'origine dell'associazione di controllo: **File** -> **controllo del codice sorgente** -> **Modifica controllo del codice sorgente**...
+- Modificare l'origine dell'associazione di controllo: **File** -> **controllo del codice sorgente** -> **Modifica controllo del codice sorgente**...
 
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune
  Il plug-in per una soluzione di controllo del codice sorgente è possibile modificare senza uscire da Visual Studio o il ricaricamento della soluzione. Inoltre, il controllo del codice sorgente corrente del plug-in modifica automaticamente a quella usata da una soluzione quando tale soluzione è caricata.

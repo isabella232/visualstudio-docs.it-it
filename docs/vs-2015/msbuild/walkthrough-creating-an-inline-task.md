@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061593"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Procedura dettagliata: Creazione di un'attività inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
   
 #### <a name="to-create-and-modify-a-project-file"></a>Per creare e modificare un file di progetto  
   
-1.  In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
+1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto Visual C# e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio `D:\`. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia `InlineTasks`.  
+2. Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto Visual C# e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio `D:\`. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia `InlineTasks`.  
   
      Scegliere **OK** per creare il file di progetto.  
   
-3.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto InlineTasks e quindi scegliere **Scarica progetto**.  
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto InlineTasks e quindi scegliere **Scarica progetto**.  
   
-4.  Fare nuovamente clic con il pulsante destro del mouse sul nodo di progetto e quindi scegliere **Modifica InlineTasks.csproj**.  
+4. Fare nuovamente clic con il pulsante destro del mouse sul nodo di progetto e quindi scegliere **Modifica InlineTasks.csproj**.  
   
      Il file di progetto verrà visualizzato nell'editor del codice.  
   

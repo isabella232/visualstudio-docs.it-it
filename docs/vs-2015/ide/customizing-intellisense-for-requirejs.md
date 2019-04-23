@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049867"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Personalizzazione di IntelliSense per RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ A partire da Visual Studio 2013 Update 4 è previsto il supporto del noto carica
   
  Questo argomento descrive come:  
   
--   Personalizzare RequireJS in progetti ASP.NET  
+- Personalizzare RequireJS in progetti ASP.NET  
   
--   Personalizzare RequireJS in progetti JSProj, che vengono usati per compilare app Apache Cordova, app Windows Store e app HTML LightSwitch  
+- Personalizzare RequireJS in progetti JSProj, che vengono usati per compilare app Apache Cordova, app Windows Store e app HTML LightSwitch  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>Personalizzare RequireJS in progetti ASP.NET  
  Il supporto per RequireJS viene abilitato automaticamente quando il file JavaScript corrente fa riferimento a un file denominato require.js. Per altre informazioni, vedere la sezione Determinazione del contesto di IntelliSense in [IntelliSense per JavaScript](../ide/javascript-intellisense.md). Nei progetti ASP.NET, per fare riferimento a require.js, si usa generalmente una direttiva /// \<reference/> all'interno di un file _references.js.  

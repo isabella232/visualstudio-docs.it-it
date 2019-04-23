@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053052"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizzare l'utilizzo della CPU in un'app universale di Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Questa procedura dettagliata illustra il processo di raccolta e analisi dei dati di utilizzo della CPU per una semplice app XAML universale di Windows.  
   
-##  <a name="BKMK_Create_the_CpuUseDemo_project"></a> Creare il progetto CpuUseDemo  
+## <a name="BKMK_Create_the_CpuUseDemo_project"></a> Creare il progetto CpuUseDemo  
  **CpuUseDemo** è un'app creata per illustrare come raccogliere e analizzare i dati di utilizzo della CPU. I pulsanti generano un numero chiamando un metodo che seleziona il valore massimo da più chiamate a una funzione. La funzione chiamata crea un numero molto elevato di valori casuali e restituisce l'ultimo. I dati sono visualizzati in una casella di testo.  
   
-1.  Creare un nuovo progetto di app universale di Windows C# denominato **CpuUseDemo** usando il modello **BlankApp**.  
+1. Creare un nuovo progetto di app universale di Windows C# denominato **CpuUseDemo** usando il modello **BlankApp**.  
   
      ![Creare il progetto CpuUseDemo](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
-2.  Sostituire MainPage.xaml con [questo codice](#BKMK_MainPage_xaml).  
+2. Sostituire MainPage.xaml con [questo codice](#BKMK_MainPage_xaml).  
   
-3.  Sostituire MainPage.xaml.cs con [questo codice](#BKMK_MainPage_xaml_cs).  
+3. Sostituire MainPage.xaml.cs con [questo codice](#BKMK_MainPage_xaml_cs).  
   
-4.  Compila l'app e prova a usarla. L'app è abbastanza semplice per illustrare alcuni casi comuni di analisi dei dati di utilizzo della CPU.  
+4. Compila l'app e prova a usarla. L'app è abbastanza semplice per illustrare alcuni casi comuni di analisi dei dati di utilizzo della CPU.  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Raccogliere i dati di utilizzo della CPU  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Raccogliere i dati di utilizzo della CPU  
  ![Eseguire una build di rilascio dell'app nel simulatore](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. In Visual Studio impostare la destinazione della distribuzione su **Simulatore** e la configurazione della soluzione su **Release**.  
   
-   -   L'esecuzione dell'app nel simulatore ti consente di passare in modo semplice tra l'app e l'IDE di Visual Studio.  
+   - L'esecuzione dell'app nel simulatore ti consente di passare in modo semplice tra l'app e l'IDE di Visual Studio.  
   
-   -   L'esecuzione dell'app in modalità **Release** offre un punto di vista migliore sulle prestazioni effettive dell'app.  
+   - L'esecuzione dell'app in modalità **Release** offre un punto di vista migliore sulle prestazioni effettive dell'app.  
   
 2. Scegliere **Profiler prestazioni** dal menu **Debug**.  
   
@@ -72,14 +72,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
    ![Report di CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analizzare il report di Utilizzo CPU  
+## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analizzare il report di Utilizzo CPU  
   
-###  <a name="BKMK_CPU_utilization_timeline_graph"></a> Grafico della sequenza temporale dell'utilizzo della CPU  
+### <a name="BKMK_CPU_utilization_timeline_graph"></a> Grafico della sequenza temporale dell'utilizzo della CPU  
  ![Grafico della sequenza temporale di CpuUtilization &#40;%&#41;](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  Il grafico dell'utilizzo della CPU mostra l'attività della CPU dell'app sotto forma di percentuale di tutto il tempo CPU per tutti i core del processore nel dispositivo. I dati di questo report sono stati raccolti in una macchina dual core. I due grossi picchi rappresentano l'attività della CPU per i due clic sui pulsanti. `GetMaxNumberButton_Click` viene eseguito in modo sincrono in un singolo core, pertanto è logico che l'altezza del grafico del metodo non superi mai il 50%. `GetMaxNumberAsycButton_Click` viene eseguito in modo asincrono in entrambi i core, pertanto anche in questo caso è logico che il picco relativo si avvicini all'utilizzo di tutte le risorse della CPU in entrambi i core.  
   
-####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Selezionare i segmenti della sequenza temporale per visualizzare i dettagli  
+#### <a name="BKMK_Select_timeline_segments_to_view_details"></a> Selezionare i segmenti della sequenza temporale per visualizzare i dettagli  
  Usare le barre di selezione nella sequenza temporale **Sessione di diagnostica** per analizzare i dati di GetMaxNumberButton_Click:  
   
  ![GetMaxNumberButton&#95;Click selezionato](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -92,10 +92,10 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Questo metodo viene completato in circa un secondo in meno rispetto a `GetMaxNumberButton_Click`, ma il significato delle voci dell'albero delle chiamate è meno ovvio.  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di Utilizzo CPU  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di Utilizzo CPU  
  Per iniziare a comprendere le informazioni dell'albero delle chiamate, selezionare di nuovo il segmento `GetMaxNumberButton_Click` e analizzare i dettagli dell'albero.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate  
+#### <a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate  
  ![GetMaxNumberButton&#95;Fare clic sull'albero delle chiamate](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -105,7 +105,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|  
 |![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|  
   
-####  <a name="BKMK_External_Code"></a> Codice esterno  
+#### <a name="BKMK_External_Code"></a> Codice esterno  
  Il codice esterno è costituito da funzioni nei componenti del sistema e del framework che vengono eseguite dal codice scritto. Include funzioni che avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e forniscono altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno è poco interessante, per questo motivo l'albero delle chiamate di Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]** .  
   
  Se vuoi visualizzare i percorsi delle chiamate del codice esterno, scegli **Mostra codice esterno** nell'elenco **Visualizzazione filtro** e quindi scegli **Applica**.  
@@ -120,7 +120,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  ![Ricerca di codice esterno annidato](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Colonne di dati dell'albero delle chiamate  
+### <a name="BKMK_Call_tree_data_columns"></a> Colonne di dati dell'albero delle chiamate  
   
 |||  
 |-|-|  
@@ -130,7 +130,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |**CPU auto (ms)**|Numero di millisecondi usati nelle chiamate alla funzione nell'intervallo di tempo selezionato e per le funzioni chiamate dalla funzione.|  
 |**Modulo**|Nome del modulo contenente la funzione o numero dei moduli contenenti le funzioni in un nodo [Codice esterno].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU  
  Quando il compilatore rileva un metodo asincrono, crea una classe nascosta per controllare l'esecuzione del metodo. Concettualmente, la classe è una macchina a stati che include un elenco di funzioni generate dal compilatore che chiamano le operazioni del metodo originale in modo asincrono, nonché i callback, l'utilità di pianificazione e gli iteratori necessari. Quando il metodo originale viene chiamato da un metodo padre, il runtime rimuove il metodo dal contesto di esecuzione del padre ed esegue i metodi della classe nascosta nel contesto del codice di sistema e di framework che controllano l'esecuzione dell'app. Spesso, ma non sempre, i metodi asincroni vengono eseguiti in uno o più thread diversi. Il codice è illustrato nell'albero delle chiamate di Utilizzo CPU come figlio del nodo **[Codice esterno]** immediatamente sotto il nodo principale dell'albero.  
   
  Per vedere questo aspetto nel nostro esempio, seleziona di nuovo il segmento `GetMaxNumberAsyncButton_Click` nella sequenza temporale.  
@@ -141,22 +141,22 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  ![Expanded GetMaxNumberAsyncButton&#95;Fare clic sull'albero](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` fa molto poco: gestisce un elenco dei valori delle attività, calcola il massimo dei risultati e mostra l'output.  
+- `MainPage::GetMaxNumberAsyncButton_Click` fa molto poco: gestisce un elenco dei valori delle attività, calcola il massimo dei risultati e mostra l'output.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` mostra l'attività necessaria per pianificare e avviare le 48 attività che eseguono il wrapping della chiamata a `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` mostra l'attività necessaria per pianificare e avviare le 48 attività che eseguono il wrapping della chiamata a `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b` mostra le operazioni eseguite dalle attività che chiamano `GetNumber`.  
+- `MainPage::<GetNumberAsync>b__b` mostra le operazioni eseguite dalle attività che chiamano `GetNumber`.  
   
-##  <a name="BKMK_Next_steps"></a> Passaggi successivi  
+## <a name="BKMK_Next_steps"></a> Passaggi successivi  
  L'app CpuUseDemo non è la più brillante delle app, ma puoi estenderne l'utilità usandola per provare l'operazione asincrona e altri strumenti nell'hub Prestazioni e diagnostica.  
   
--   Osserva che `MainPage::<GetNumberAsync>b__b` usa più tempo in [Codice esterno] rispetto a quello usato per l'esecuzione del metodo GetNumber. Gran parte di questo tempo è correlato al sovraccarico delle operazioni asincrone. Prova ad aumentare il numero di attività (impostato nella costante `NUM_TASKS` di MainPage.xaml.cs) e a ridurre il numero di iterazioni in `GetNumber` (modifica il valore di `MIN_ITERATIONS`). Esegui lo scenario di raccolta e confronta l'attività della CPU di `MainPage::<GetNumberAsync>b__b` con quella della sessione di diagnostica originale di Utilizzo CPU. Prova a ridurre le attività e ad aumentare le iterazioni.  
+- Osserva che `MainPage::<GetNumberAsync>b__b` usa più tempo in [Codice esterno] rispetto a quello usato per l'esecuzione del metodo GetNumber. Gran parte di questo tempo è correlato al sovraccarico delle operazioni asincrone. Prova ad aumentare il numero di attività (impostato nella costante `NUM_TASKS` di MainPage.xaml.cs) e a ridurre il numero di iterazioni in `GetNumber` (modifica il valore di `MIN_ITERATIONS`). Esegui lo scenario di raccolta e confronta l'attività della CPU di `MainPage::<GetNumberAsync>b__b` con quella della sessione di diagnostica originale di Utilizzo CPU. Prova a ridurre le attività e ad aumentare le iterazioni.  
   
--   Gli utenti spesso non danno importanza alle reali prestazioni della tua app, bensì alle prestazioni percepite e alla velocità di risposta dell'app. Lo strumento Velocità di risposta interfaccia utente XAML mostra i dettagli dell'attività nel thread UI che influiscono sulla velocità di risposta percepita.  
+- Gli utenti spesso non danno importanza alle reali prestazioni della tua app, bensì alle prestazioni percepite e alla velocità di risposta dell'app. Lo strumento Velocità di risposta interfaccia utente XAML mostra i dettagli dell'attività nel thread UI che influiscono sulla velocità di risposta percepita.  
   
      Crea una nuova sessione nell'hub Prestazioni e diagnostica e aggiungi sia lo strumento Velocità di risposta interfaccia utente XAML sia lo strumento Utilizzo CPU. Esegui lo scenario di raccolta. Probabilmente il report non conterrà informazioni non note, ma sarà possibile osservare le notevoli differenze nel grafico della sequenza temporale di **Utilizzo thread UI** per i due metodi. Con le app complesse reali, la combinazione di strumenti può essere molto utile.  
   
-##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+## <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 ```  
   
-##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+## <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

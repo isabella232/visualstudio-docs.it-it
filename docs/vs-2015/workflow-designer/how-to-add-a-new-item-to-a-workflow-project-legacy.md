@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063140"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procedura: Aggiungere un nuovo elemento a un progetto flusso di lavoro (legacy)
 Dopo avere creato un progetto flusso di lavoro usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] che si riferisce a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile aggiungere elementi [!INCLUDE[wf](../includes/wf-md.md)] e altri elementi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comuni al progetto.  
@@ -37,15 +37,15 @@ Dopo avere creato un progetto flusso di lavoro usando la [!INCLUDE[wfd1](../incl
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Per aggiungere un nuovo elemento a un progetto flusso di lavoro  
   
-1.  Nel **Project** menu, fare clic su **aggiungere un nuovo elemento**.  
+1. Nel **Project** menu, fare clic su **aggiungere un nuovo elemento**.  
   
      Il **aggiungere un nuovo elemento** verrà visualizzata la finestra di dialogo.  
   
-2.  Selezionare un elemento.  
+2. Selezionare un elemento.  
   
      La tabella precedente elenca le selezioni di Windows Workflow Foundation disponibili.  
   
-3.  Fare clic su **Add** per aggiungere l'elemento al progetto del flusso di lavoro.  
+3. Fare clic su **Add** per aggiungere l'elemento al progetto del flusso di lavoro.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di progetti flusso di lavoro legacy](../workflow-designer/creating-legacy-workflow-projects.md)

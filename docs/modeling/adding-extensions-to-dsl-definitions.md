@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064193"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Aggiungere estensioni alle definizioni DSL
 
@@ -20,15 +20,15 @@ Estensione di definizione DSL consente di creare un pacchetto di estensioni da u
 
 Le estensioni di linguaggio specifico di dominio possono includere le funzionalità seguenti:
 
--   Proprietà degli elementi di modello e la presentazione
+- Proprietà degli elementi di modello e la presentazione
 
--   Elementi Decorator per forme e connettori
+- Elementi Decorator per forme e connettori
 
--   Le classi, le relazioni, forme e connettori
+- Le classi, le relazioni, forme e connettori
 
--   Vincoli di convalida
+- Vincoli di convalida
 
--   Schede ed elementi della casella degli strumenti
+- Schede ed elementi della casella degli strumenti
 
 Un utente di un DSL estesa può creare e salvare un modello che contiene le istanze delle funzionalità aggiuntive. Il modello può essere letto da altri utenti che hanno installato l'estensione corretta. Gli utenti che non hanno installato l'estensione non è possibile usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.
 

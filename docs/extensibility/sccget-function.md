@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044494"
 ---
 # <a name="sccget-function"></a>Funzione SccGet
 Questa funzione recupera una copia di uno o più file per la visualizzazione e la compilazione ma non per la modifica. Nella maggior parte dei sistemi, i file vengono contrassegnati come di sola lettura.
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Esistono due modi per risolvere questa situazione in cui la cache locale delle versioni di controllo di origine diventa sincronizzata con il database del controllo del codice sorgente:
 
-1.  Non consentire la ridenominazione di un file nel database di controllo di origine che è attualmente estratto.
+1. Non consentire la ridenominazione di un file nel database di controllo di origine che è attualmente estratto.
 
-2.  È l'equivalente di "eliminazione precedente" seguita da "Aggiungi nuovo". L'algoritmo seguente è un modo per eseguire questa operazione.
+2. È l'equivalente di "eliminazione precedente" seguita da "Aggiungi nuovo". L'algoritmo seguente è un modo per eseguire questa operazione.
 
-    1.  Chiamare il [SccQueryChanges](../extensibility/sccquerychanges-function.md) funzione per apprendere la ridenominazione dei *txt* al *b. txt* nel database di controllo di origine.
+    1. Chiamare il [SccQueryChanges](../extensibility/sccquerychanges-function.md) funzione per apprendere la ridenominazione dei *txt* al *b. txt* nel database di controllo di origine.
 
-    2.  Rinominare locale *txt* al *b. txt*.
+    2. Rinominare locale *txt* al *b. txt*.
 
-    3.  Chiamare il `SccGet` funzione per entrambe *txt* e *b. txt*.
+    3. Chiamare il `SccGet` funzione per entrambe *txt* e *b. txt*.
 
-    4.  In quanto *txt* non esiste nel database di controllo di origine, viene eliminata la cache della versione locale di parametro mancante *txt* informazioni sulla versione.
+    4. In quanto *txt* non esiste nel database di controllo di origine, viene eliminata la cache della versione locale di parametro mancante *txt* informazioni sulla versione.
 
-    5.  Il *b. txt* file venga estratto viene unito con il contenuto dell'elemento locale *b. txt* file.
+    5. Il *b. txt* file venga estratto viene unito con il contenuto dell'elemento locale *b. txt* file.
 
-    6.  Aggiornato *b. txt* file può ora essere archiviati.
+    6. Aggiornato *b. txt* file può ora essere archiviati.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)

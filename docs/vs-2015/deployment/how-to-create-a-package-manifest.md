@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046015"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto di pacchetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
   
 #### <a name="to-create-the-package-manifest"></a>Per creare il manifesto del pacchetto  
   
-1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package.  
+1. Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package.  
   
-2.  Creare una sottodirectory con il nome delle impostazioni locali, ad esempio en per inglese.  
+2. Creare una sottodirectory con il nome delle impostazioni locali, ad esempio en per inglese.  
   
-3.  In Visual Studio, creare un file XML denominato `package.xml`e salvarlo nella cartella c:\package\en.  
+3. In Visual Studio, creare un file XML denominato `package.xml`e salvarlo nella cartella c:\package\en.  
   
-4.  Aggiungere codice XML per elencare il nome del pacchetto, le impostazioni cultura per questo manifesto del pacchetto di aggiornamento e il contratto di licenza facoltativo. Il codice XML seguente usa le variabili `DisplayName` e `Culture`, che sono definiti in un elemento successivo.  
+4. Aggiungere codice XML per elencare il nome del pacchetto, le impostazioni cultura per questo manifesto del pacchetto di aggiornamento e il contratto di licenza facoltativo. Il codice XML seguente usa le variabili `DisplayName` e `Culture`, che sono definiti in un elemento successivo.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Aggiungere codice XML per elencare tutti i file che si trovano nella directory specifiche delle impostazioni locali. Il codice XML seguente viene utilizzato un file denominato EULA. txt è applicabile per il **en** delle impostazioni locali.  
+5. Aggiungere codice XML per elencare tutti i file che si trovano nella directory specifiche delle impostazioni locali. Il codice XML seguente viene utilizzato un file denominato EULA. txt è applicabile per il **en** delle impostazioni locali.  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
     </PackageFiles>  
     ```  
   
-6.  Aggiungere codice XML per definire le stringhe localizzabili per il pacchetto di programma di avvio automatico. Il codice XML seguente aggiunge le stringhe di errore per le impostazioni locali en.  
+6. Aggiungere codice XML per definire le stringhe localizzabili per il pacchetto di programma di avvio automatico. Il codice XML seguente aggiunge le stringhe di errore per le impostazioni locali en.  
   
     ```  
       <Strings>  
@@ -74,7 +74,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
     </Strings>  
     ```  
   
-7.  Copiare la cartella c:\package. nella directory di avvio automatico di Visual Studio. Per Visual Studio 2010, si tratta della directory di Sdks\windows\v7.0A\Bootstrapper\Packages. \Programmi\Microsoft.  
+7. Copiare la cartella c:\package. nella directory di avvio automatico di Visual Studio. Per Visual Studio 2010, si tratta della directory di Sdks\windows\v7.0A\Bootstrapper\Packages. \Programmi\Microsoft.  
   
 ## <a name="example"></a>Esempio  
  Il manifesto del pacchetto contiene informazioni specifiche delle impostazioni locali, ad esempio i messaggi di errore, condizioni di licenza software e i language pack.  

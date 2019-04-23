@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052805"
 ---
 # <a name="define-packages-and-namespaces"></a>Definire pacchetti e spazi dei nomi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
   
  [Proprietà dei pacchetti](#Properties)  
   
-##  <a name="Namespaces"></a> Spazi dei nomi  
+## <a name="Namespaces"></a> Spazi dei nomi  
  I pacchetti sono utili per suddividere il lavoro in aree diverse. Ogni pacchetto definisce uno spazio dei nomi, in modo che i nomi definiti in pacchetti diversi non siano in conflitto tra loro.  
   
  La proprietà del nome completo di ogni elemento è il nome completo del pacchetto a cui appartiene, seguito dal nome dell'elemento stesso. Ad esempio, se il pacchetto si chiama `MyPackage`, una classe nel pacchetto avrà un nome completo come `MyPackage::MyClass`. Poiché ogni elemento è contenuto in un modello, ogni nome completo inizia con il nome del modello.  
@@ -58,20 +58,20 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
   
  I pacchetti sono contenitori. Se si sposta o si elimina un pacchetto, vengono spostati o eliminati anche le classi, i pacchetti e gli altri elementi definiti al suo interno. Lo stesso vale per altri elementi che definiscono gli spazi dei nomi.  
   
-##  <a name="Packages"></a> Creazione e visualizzazione dei pacchetti  
+## <a name="Packages"></a> Creazione e visualizzazione dei pacchetti  
  È possibile creare un pacchetto in un diagramma classi UML o in Esplora modelli UML.  
   
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Per creare un pacchetto in un diagramma classi UML  
   
-1.  Aprire un diagramma classi UML o crearne uno nuovo.  
+1. Aprire un diagramma classi UML o crearne uno nuovo.  
   
-2.  Scegliere il **pacchetto** dello strumento.  
+2. Scegliere il **pacchetto** dello strumento.  
   
-3.  Fare clic in un punto qualsiasi del diagramma. Verrà visualizzata una nuova forma pacchetto.  
+3. Fare clic in un punto qualsiasi del diagramma. Verrà visualizzata una nuova forma pacchetto.  
   
      È possibile fare clic all'interno di un pacchetto esistente per annidare un pacchetto in un altro.  
   
-4.  Digitare un nuovo nome per il pacchetto.  
+4. Digitare un nuovo nome per il pacchetto.  
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Per creare un pacchetto in Esplora modelli UML  
   
@@ -92,12 +92,12 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Per visualizzare un pacchetto esistente in un diagramma classi UML  
   
--   Trascinare il pacchetto da Esplora modelli UML al diagramma classi.  
+- Trascinare il pacchetto da Esplora modelli UML al diagramma classi.  
   
     > [!NOTE]
     >  Questo crea una visualizzazione del pacchetto nel diagramma. Non mostrerà necessariamente tutti gli elementi contenuti nel pacchetto. Per assicurarsi che sia visibile tutto il contenuto di un pacchetto, visualizzarlo in Esplora modelli UML.  
   
-##  <a name="Elements"></a> Creazione di elementi del modello all'interno di pacchetti  
+## <a name="Elements"></a> Creazione di elementi del modello all'interno di pacchetti  
  È possibile inserire gli elementi del modello all'interno di un pacchetto in quattro modi:  
   
 - Aggiungere un nuovo elemento a un pacchetto in Esplora modelli UML.  
@@ -112,98 +112,98 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Per creare un elemento in un pacchetto in Esplora modelli UML  
   
-1.  Aprire **Esplora modelli UML**. Nel **visualizzazione** dal menu **Other Windows**, quindi fare clic su **Esplora modelli UML**.  
+1. Aprire **Esplora modelli UML**. Nel **visualizzazione** dal menu **Other Windows**, quindi fare clic su **Esplora modelli UML**.  
   
-2.  Fare clic con il pulsante destro del mouse su un pacchetto o un modello a cui si desidera aggiungere un nuovo elemento.  
+2. Fare clic con il pulsante destro del mouse su un pacchetto o un modello a cui si desidera aggiungere un nuovo elemento.  
   
-3.  Puntare **Add**, quindi scegliere il tipo di elemento che si desidera aggiungere.  
+3. Puntare **Add**, quindi scegliere il tipo di elemento che si desidera aggiungere.  
   
      Il nuovo elemento viene visualizzato sotto il pacchetto.  
   
-4.  Digitare il nome del nuovo elemento.  
+4. Digitare il nome del nuovo elemento.  
   
     > [!NOTE]
     >  Il nuovo elemento non appare in alcun diagramma. Per creare una visualizzazione del nuovo elemento, è possibile trascinarlo da Esplora modelli UML a un diagramma. Il diagramma deve essere un tipo che visualizzerà questo genere di elemento.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Per creare un elemento in un pacchetto in un diagramma classi UML  
   
-1.  Aprire un diagramma classi in cui viene visualizzato il pacchetto.  
+1. Aprire un diagramma classi in cui viene visualizzato il pacchetto.  
   
-    -   Se non è già stato fatto, creare un nuovo pacchetto.  
+    - Se non è già stato fatto, creare un nuovo pacchetto.  
   
-    -   Per visualizzare un pacchetto esistente in un diagramma classi, è possibile trascinare il pacchetto dal **Esplora modelli UML** al diagramma classi.  
+    - Per visualizzare un pacchetto esistente in un diagramma classi, è possibile trascinare il pacchetto dal **Esplora modelli UML** al diagramma classi.  
   
-2.  Fare clic sullo strumento per una classe, un'interfaccia o un'enumerazione oppure un pacchetto.  
+2. Fare clic sullo strumento per una classe, un'interfaccia o un'enumerazione oppure un pacchetto.  
   
-3.  Fare clic sul pacchetto in cui si desidera inserire il nuovo elemento.  
+3. Fare clic sul pacchetto in cui si desidera inserire il nuovo elemento.  
   
      Il nuovo elemento viene visualizzato all'interno del pacchetto.  
   
 #### <a name="to-create-all-the-elements-of-a-diagram-in-a-specified-package"></a>Per creare tutti gli elementi di un diagramma in un pacchetto specificato  
   
-1.  Se non è già stato fatto, creare il nuovo pacchetto.  
+1. Se non è già stato fatto, creare il nuovo pacchetto.  
   
-2.  Aprire un diagramma dei componenti, un diagramma caso di utilizzo o un diagramma classi UML.  
+2. Aprire un diagramma dei componenti, un diagramma caso di utilizzo o un diagramma classi UML.  
   
-3.  Aprire le proprietà del diagramma. Fare doppio clic su una parte vuota del diagramma e quindi fare clic su **proprietà**.  
+3. Aprire le proprietà del diagramma. Fare doppio clic su una parte vuota del diagramma e quindi fare clic su **proprietà**.  
   
-4.  Nel **pacchetto collegato** proprietà, scegliere il pacchetto che si desidera includere il contenuto del diagramma.  
+4. Nel **pacchetto collegato** proprietà, scegliere il pacchetto che si desidera includere il contenuto del diagramma.  
   
-5.  Creare nuovi elementi nel diagramma, che verranno inseriti nel pacchetto.  
+5. Creare nuovi elementi nel diagramma, che verranno inseriti nel pacchetto.  
   
-    -   Il **nome qualificato** di ogni elemento inizierà con il nome del pacchetto completo.  
+    - Il **nome qualificato** di ogni elemento inizierà con il nome del pacchetto completo.  
   
-    -   Nelle **Esplora modelli UML**, ogni elemento verrà visualizzato sotto il pacchetto.  
+    - Nelle **Esplora modelli UML**, ogni elemento verrà visualizzato sotto il pacchetto.  
   
-##  <a name="Moving"></a> Lo spostamento di elementi da e verso i pacchetti  
+## <a name="Moving"></a> Lo spostamento di elementi da e verso i pacchetti  
  È possibile spostare uno o più elementi all'interno o all'esterno di un pacchetto.  
   
  Se si sposta un pacchetto, si sposta anche il relativo contenuto.  
   
 #### <a name="to-move-an-element-into-or-out-of-a-package"></a>Per spostare un elemento all'interno o all'esterno di un pacchetto  
   
--   In Esplora modelli UML trascinare l'elemento all'interno o all'esterno dell'albero la cui radice è il pacchetto.  
+- In Esplora modelli UML trascinare l'elemento all'interno o all'esterno dell'albero la cui radice è il pacchetto.  
   
      Il nome completo dell'elemento cambierà e indicherà il nuovo pacchetto o modello proprietario.  
   
      \- oppure -  
   
--   In un diagramma classi trascinare l'elemento in una forma pacchetto.  
+- In un diagramma classi trascinare l'elemento in una forma pacchetto.  
   
      Il nome completo dell'elemento cambierà e indicherà il nuovo pacchetto proprietario.  
   
     > [!NOTE]
     >  Se si trascina un elemento all'esterno di un pacchetto in una parte vuota del diagramma, il pacchetto proprietario non cambia. In questo modo è possibile creare un diagramma che mostra gli elementi di diversi pacchetti senza dover visualizzare i pacchetti stessi.  
   
-##  <a name="Pasting"></a> Inserimento di elementi in un pacchetto  
+## <a name="Pasting"></a> Inserimento di elementi in un pacchetto  
  È possibile incollare un elemento in un pacchetto. Se si incolla un gruppo di elementi correlati in un pacchetto, verranno incollate anche le relazioni tra di essi.  
   
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Per incollare elementi in un pacchetto in un diagramma classi UML  
   
-1.  In un diagramma classi UML selezionare tutti gli elementi che si desidera copiare. Fare doppio clic su uno di essi e quindi fare clic su **copia**.  
+1. In un diagramma classi UML selezionare tutti gli elementi che si desidera copiare. Fare doppio clic su uno di essi e quindi fare clic su **copia**.  
   
-2.  Fare doppio clic su pacchetto e quindi fare clic su **Incolla**.  
+2. Fare doppio clic su pacchetto e quindi fare clic su **Incolla**.  
   
     > [!NOTE]
     >  Il pacchetto può trovarsi in un diagramma diverso.  
   
-##  <a name="Import"></a> Importa relazioni tra pacchetti  
+## <a name="Import"></a> Importa relazioni tra pacchetti  
  È possibile definire una relazione di importazione tra pacchetti, usando il **importare** dello strumento.  
   
  Con l'importazione gli elementi definiti nel pacchetto importato, ovvero gli elementi all'estremità freccia della relazione, vengono effettivamente definiti anche nel pacchetto da importare. Tutti gli elementi la cui visibilità viene definito come **pacchetto** saranno visibili anche nel pacchetto di importazione.  
   
  Evitare di creare cicli nelle relazioni di importazione.  
   
-##  <a name="References"></a> Riferimenti da uno Namespace a altro  
+## <a name="References"></a> Riferimenti da uno Namespace a altro  
  Per fare riferimento a un elemento di un pacchetto da un altro, è necessario usare il nome completo dell'elemento.  
   
  Ad esempio, si supponga che il pacchetto `SalesCommon` definisca il tipo `CustomerAddress`. In un altro pacchetto `RestaurantSales`, si vuole definire un tipo `MealOrder`, con un attributo di tipo Customer Address. Sono disponibili due opzioni:  
   
--   Specificare il tipo dell'attributo usando il nome completo `SalesCommon::CustomerAddress`. È consigliabile eseguire questa operazione solo se `CustomerAddress` ha relativi **visibilità** impostata su **pubblica**.  
+- Specificare il tipo dell'attributo usando il nome completo `SalesCommon::CustomerAddress`. È consigliabile eseguire questa operazione solo se `CustomerAddress` ha relativi **visibilità** impostata su **pubblica**.  
   
--   Creare una relazione di importazione dal pacchetto `RestaurantSales` al pacchetto `SalesCommon`. Si potrà quindi usare `CustomerAddress` senza usare il nome completo.  
+- Creare una relazione di importazione dal pacchetto `RestaurantSales` al pacchetto `SalesCommon`. Si potrà quindi usare `CustomerAddress` senza usare il nome completo.  
   
-##  <a name="Properties"></a> Proprietà dei pacchetti  
+## <a name="Properties"></a> Proprietà dei pacchetti  
  Ogni pacchetto presenta le proprietà seguenti. Per visualizzare le proprietà, fare doppio clic su pacchetto, in un diagramma o in Esplora modelli UML e quindi fare clic su **proprietà**.  
   
 |Proprietà|Valore predefinito|Descrizione|  

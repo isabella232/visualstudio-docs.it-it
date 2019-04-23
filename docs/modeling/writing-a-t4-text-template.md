@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970803"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063426"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina web conterrà "\<html >..." e tutte le altre parti standard di una pagina HTML. Inserito nel modello vengono *blocchi di controllo*, quali sono i frammenti di codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
@@ -25,11 +25,11 @@ Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad
 
  I modelli di testo sono costituiti dalle parti seguenti:
 
--   **Direttive** -gli elementi che controllano il modo in cui viene elaborato il modello.
+- **Direttive** -gli elementi che controllano il modo in cui viene elaborato il modello.
 
--   **Blocchi di testo** : contenuto che viene copiato direttamente all'output.
+- **Blocchi di testo** : contenuto che viene copiato direttamente all'output.
 
--   **Blocchi di controllo** -codice programma che inserisce i valori delle variabili in testo e controlla le parti del testo condizionali o ripetute.
+- **Blocchi di controllo** -codice programma che inserisce i valori delle variabili in testo e controlla le parti del testo condizionali o ripetute.
 
 Per provare gli esempi in questo argomento, copiarli in un file di modello, come descritto in [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Dopo avere modificato il file di modello, salvarlo e quindi esaminare l'output **txt** file.
 
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Si noti che il simbolo di apertura contiene tre caratteri "<#=".
+ Si noti che il simbolo di apertura contiene tre caratteri "< #=".
 
  L'espressione può includere qualsiasi variabile che fa parte dell'ambito. Ad esempio, il blocco seguente visualizza righe con numeri:
 

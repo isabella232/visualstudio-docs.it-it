@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060566"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Procedura: Individuare la DLL del programma arrestato in modo anomalo In
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ NOTA]
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Per stabilire la posizione in cui si è verificato un arresto anomalo mediante la finestra Moduli  
   
-1.  Annotare l'indirizzo in cui si è verificato l'arresto.  
+1. Annotare l'indirizzo in cui si è verificato l'arresto.  
   
-2.  Scegliere **Finestre** dal menu **Debug**, quindi **Moduli**.  
+2. Scegliere **Finestre** dal menu **Debug**, quindi **Moduli**.  
   
-3.  Nella finestra **Moduli** individuare la colonna **Indirizzo**. Per visualizzarla potrebbe essere necessario utilizzare la barra di scorrimento.  
+3. Nella finestra **Moduli** individuare la colonna **Indirizzo**. Per visualizzarla potrebbe essere necessario utilizzare la barra di scorrimento.  
   
-4.  Fare clic sul pulsante **Indirizzo** nella parte superiore della colonna per ordinare le DLL in base all'indirizzo.  
+4. Fare clic sul pulsante **Indirizzo** nella parte superiore della colonna per ordinare le DLL in base all'indirizzo.  
   
-5.  Cercare nell'elenco ordinato la DLL il cui intervallo di indirizzi contenga la posizione in cui si è verificato l'arresto anomalo.  
+5. Cercare nell'elenco ordinato la DLL il cui intervallo di indirizzi contenga la posizione in cui si è verificato l'arresto anomalo.  
   
-6.  Nelle colonne **Nome** e **Percorso** cercare il nome e il percorso della DLL.  
+6. Nelle colonne **Nome** e **Percorso** cercare il nome e il percorso della DLL.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Eseguire il debug di DLL Native](../debugger/how-to-debug-native-dlls.md)   

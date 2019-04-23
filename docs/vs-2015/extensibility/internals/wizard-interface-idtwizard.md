@@ -11,12 +11,12 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 417988d6c44f6382644905a69fcb29aeb128146e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78867fa94851e373ae4d47cd82cd1084a941638c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955195"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053026"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfaccia della procedura guidata (IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ STDMETHOD(Execute)(THIS_
   
  Le informazioni seguenti descrivono le <xref:EnvDTE.IDTWizard> interfaccia che devono implementare le procedure guidate per lavorare nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. Le chiamate dell'IDE di <xref:EnvDTE.IDTWizard.Execute%2A> metodo nella procedura guidata, passandogli quanto segue:  
   
--   L'oggetto DTE  
+- L'oggetto DTE  
   
      L'oggetto DTE è la radice del modello di automazione.  
   
--   L'handle per la finestra di dialogo come illustrato nel segmento di codice, `hwndOwner ([in] long)`.  
+- L'handle per la finestra di dialogo come illustrato nel segmento di codice, `hwndOwner ([in] long)`.  
   
      La procedura guidata Usa questo `hwndOwner` come elemento padre per la finestra di dialogo della procedura guidata.  
   
--   I parametri di contesto passato all'interfaccia di variant per SAFEARRAY come illustrato nel segmento di codice, `[in] SAFEARRAY (VARIANT)* ContextParams`.  
+- I parametri di contesto passato all'interfaccia di variant per SAFEARRAY come illustrato nel segmento di codice, `[in] SAFEARRAY (VARIANT)* ContextParams`.  
   
      I parametri di contesto contengono una matrice di valori specifici per il tipo di procedura guidata in corso l'avvio e lo stato corrente del progetto. L'IDE passa i parametri di contesto per la procedura guidata. Per altre informazioni, vedere [parametri di contesto](../../extensibility/internals/context-parameters.md).  
   
--   Parametri personalizzati passata all'interfaccia come variante per SAFEARRAY come illustrato nel segmento di codice, `[in] SAFEARRAY (VARIANT)* CustomParams`.  
+- Parametri personalizzati passata all'interfaccia come variante per SAFEARRAY come illustrato nel segmento di codice, `[in] SAFEARRAY (VARIANT)* CustomParams`.  
   
      Parametri personalizzati contengono una matrice di parametri definiti dall'utente. Un file con estensione vsz passa parametri personalizzati all'IDE. I valori vengono determinati dal `Param=` istruzioni. Per altre informazioni, vedere [parametri personalizzati](../../extensibility/internals/custom-parameters.md).  
   
--   Valori restituiti per l'interfaccia sono  
+- Valori restituiti per l'interfaccia sono  
   
     ```  
     wizardResultSuccess = -1,  

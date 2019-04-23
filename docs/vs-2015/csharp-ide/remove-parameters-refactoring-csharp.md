@@ -1,5 +1,5 @@
 ---
-title: Rimuovere i parametri di Refactoring (C#) | Microsoft Docs
+title: Rimuovere i parametri di Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045798"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refactoring Rimuovi parametri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58966233"
   
 ### <a name="to-remove-parameters"></a>Per rimuovere i parametri  
   
-1.  Creare un'applicazione console denominata `RemoveParameters`, quindi sostituire `Program` con il codice seguente.  
+1. Creare un'applicazione console denominata `RemoveParameters`, quindi sostituire `Program` con il codice seguente.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58966233"
     }  
     ```  
   
-2.  Posizionare il cursore sul metodo `A`, nella dichiarazione del metodo o la chiamata al metodo.  
+2. Posizionare il cursore sul metodo `A`, nella dichiarazione del metodo o la chiamata al metodo.  
   
-3.  Dal **refactoring** dal menu **Rimuovi parametri** per visualizzare il **Rimuovi parametri** nella finestra di dialogo.  
+3. Dal **refactoring** dal menu **Rimuovi parametri** per visualizzare il **Rimuovi parametri** nella finestra di dialogo.  
   
      È anche possibile premere il tasto di scelta rapida CTRL + R, V per visualizzare il **Rimuovi parametri** nella finestra di dialogo.  
   
      È anche possibile fare doppio clic sul cursore, scegliere **refactoring**e quindi fare clic su **Rimuovi parametri** per visualizzare il **Rimuovi parametri** nella finestra di dialogo.  
   
-4.  Usando il **parametri** campo, posizionare il cursore sulla `int i`, quindi fare clic su **rimuovere**.  
+4. Usando il **parametri** campo, posizionare il cursore sulla `int i`, quindi fare clic su **rimuovere**.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
-6.  Nel **Anteprima modifiche: Rimuovi parametri** finestra di dialogo, fare clic su **applica**.  
+6. Nel **Anteprima modifiche: Rimuovi parametri** finestra di dialogo, fare clic su **applica**.  
   
 ## <a name="remarks"></a>Note  
  È possibile rimuovere i parametri da una dichiarazione di metodo o una chiamata al metodo. Posizionare il cursore nel nome del delegato o dichiarazione di metodo e rimuovere parametri di richiamo.  

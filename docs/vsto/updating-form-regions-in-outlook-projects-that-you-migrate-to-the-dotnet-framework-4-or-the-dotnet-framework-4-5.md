@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27850b7531af4d0883f2cbf250987562a56b8f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048269"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aggiornare aree del modulo nei progetti di Outlook che si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5
   Se il framework di destinazione di un progetto di componente aggiuntivo VSTO per Outlook contenente un'area del modulo viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario apportare modifiche all'area del modulo generato e a qualsiasi codice che crea istanze di alcune classi di aree del modulo in fase di esecuzione.
@@ -27,11 +27,11 @@ ms.locfileid: "56597647"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Per aggiornare il codice generato per un'area del modulo progettata in Visual Studio
 
-1.  Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs*o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
+1. Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs*o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
 
-2.  Modificare la dichiarazione della classe di aree del modulo in modo che derivi da <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> anziché da `Microsoft.Office.Tools.Outlook.FormRegionControl`.
+2. Modificare la dichiarazione della classe di aree del modulo in modo che derivi da <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> anziché da `Microsoft.Office.Tools.Outlook.FormRegionControl`.
 
-3.  Modificare il costruttore della classe di aree del modulo come illustrato negli esempi di codice seguenti.
+3. Modificare il costruttore della classe di aree del modulo come illustrato negli esempi di codice seguenti.
 
      L'esempio di codice seguente illustra il costruttore di una classe di aree del modulo in un progetto destinato a .NET Framework 3.5.
 
@@ -67,7 +67,7 @@ ms.locfileid: "56597647"
     }
     ```
 
-4.  Modificare la firma del metodo `InitializeManifest` come illustrato di seguito. Assicurarsi di non modificare il codice nel metodo perché rappresenta le impostazioni dell'area del modulo applicate nella finestra di progettazione. Nei progetti Visual C# è necessario espandere l'area denominata `Form Region Designer generated code` per visualizzare il metodo.
+4. Modificare la firma del metodo `InitializeManifest` come illustrato di seguito. Assicurarsi di non modificare il codice nel metodo perché rappresenta le impostazioni dell'area del modulo applicate nella finestra di progettazione. Nei progetti Visual C# è necessario espandere l'area denominata `Form Region Designer generated code` per visualizzare il metodo.
 
      L'esempio di codice seguente illustra la firma del metodo `InitializeManifest` in un progetto destinato a .NET Framework 3.5.
 
@@ -103,21 +103,21 @@ ms.locfileid: "56597647"
     }
     ```
 
-5.  Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, trovare le classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` nel file, quindi copiare queste classi negli Appunti.
+5. Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, trovare le classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` nel file, quindi copiare queste classi negli Appunti.
 
-6.  Eliminare la nuova area del modulo aggiunta al progetto.
+6. Eliminare la nuova area del modulo aggiunta al progetto.
 
-7.  Nel file code-behind dell'area del modulo che si vuole aggiornare per lavorare nel progetto con la nuova destinazione, trovare le classi *YourOriginalFormRegion*`Factory` e `WindowFormRegionCollection` e sostituirle con il codice copiato dalla nuova area del modulo.
+7. Nel file code-behind dell'area del modulo che si vuole aggiornare per lavorare nel progetto con la nuova destinazione, trovare le classi *YourOriginalFormRegion*`Factory` e `WindowFormRegionCollection` e sostituirle con il codice copiato dalla nuova area del modulo.
 
-8.  Nelle classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificarli in modo che facciano riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
+8. Nelle classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificarli in modo che facciano riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Per aggiornare il codice generato per un'area del modulo importata da Outlook
 
-1.  Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs*o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
+1. Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs*o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
 
-2.  Modificare la dichiarazione della classe di aree del modulo in modo che derivi da <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> anziché da `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.
+2. Modificare la dichiarazione della classe di aree del modulo in modo che derivi da <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> anziché da `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.
 
-3.  Modificare il costruttore della classe di aree del modulo come illustrato negli esempi di codice seguenti.
+3. Modificare il costruttore della classe di aree del modulo come illustrato negli esempi di codice seguenti.
 
      L'esempio di codice seguente illustra il costruttore di una classe di aree del modulo in un progetto destinato a .NET Framework 3.5.
 
@@ -153,7 +153,7 @@ ms.locfileid: "56597647"
     }
     ```
 
-4.  Per ogni riga di codice nel metodo `InitializeControls` che inizializza un controllo nella classe di aree del modulo, modificare il codice come illustrato di seguito.
+4. Per ogni riga di codice nel metodo `InitializeControls` che inizializza un controllo nella classe di aree del modulo, modificare il codice come illustrato di seguito.
 
      L'esempio di codice seguente illustra come inizializzare un controllo in un progetto destinato a .NET Framework 3.5. In questo codice, il metodo `GetFormRegionControl` ha un parametro di tipo che specifica il tipo del controllo restituito.
 
@@ -175,13 +175,13 @@ ms.locfileid: "56597647"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5.  Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, trovare le classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` nel file, quindi copiare queste classi negli Appunti.
+5. Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, trovare le classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` nel file, quindi copiare queste classi negli Appunti.
 
-6.  Eliminare la nuova area del modulo aggiunta al progetto.
+6. Eliminare la nuova area del modulo aggiunta al progetto.
 
-7.  Nel file code-behind dell'area del modulo che si vuole aggiornare per lavorare nel progetto con la nuova destinazione, trovare le classi *YourOriginalFormRegion*`Factory` e `WindowFormRegionCollection` e sostituirle con il codice copiato dalla nuova area del modulo.
+7. Nel file code-behind dell'area del modulo che si vuole aggiornare per lavorare nel progetto con la nuova destinazione, trovare le classi *YourOriginalFormRegion*`Factory` e `WindowFormRegionCollection` e sostituirle con il codice copiato dalla nuova area del modulo.
 
-8.  Nelle classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificarli in modo che facciano riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
+8. Nelle classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificarli in modo che facciano riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
 
 ## <a name="instantiate-form-region-classes"></a>Creare un'istanza di classi di aree del modulo
  È necessario modificare il codice che crea dinamicamente istanze di alcune classi di aree del modulo. Nei progetti destinati a .NET Framework 3.5, è possibile creare direttamente istanze di classi di aree del modulo come `Microsoft.Office.Tools.Outlook.FormRegionManifest`. Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, queste classi sono interfacce di cui non è possibile creare istanze direttamente.

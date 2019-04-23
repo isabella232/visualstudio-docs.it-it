@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81c85adc3aaa3bedb92709ce59dd2192a6756473
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062217"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procedura: Proteggere i fogli di lavoro a livello di codice
   La funzionalità di protezione di Microsoft Office Excel consente di impedire la modifica degli oggetti di un foglio di lavoro da parte degli utenti o mediante codice. Per impostazione predefinita, dopo l'attivazione della protezione tutte le celle risultano bloccate.
@@ -44,7 +44,7 @@ ms.locfileid: "56601239"
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>Per consentire la modifica in intervalli specifici
 
-1.  Nel **modifiche** gruppo o il **revisione** scheda, fare clic su **Consenti agli utenti la modifica degli intervalli**.
+1. Nel **modifiche** gruppo o il **revisione** scheda, fare clic su **Consenti agli utenti la modifica degli intervalli**.
 
      Il **Consenti agli utenti la modifica degli intervalli** verrà visualizzata la finestra di dialogo.  È possibile specificare gli intervalli che possono essere sbloccati mediante l'inserimento di una password e gli utenti che possono modificarli senza immettere alcuna password.
 
@@ -53,14 +53,14 @@ ms.locfileid: "56601239"
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Per proteggere un foglio di lavoro mediante codice in una personalizzazione a livello di documento
 
-1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> del foglio di lavoro. Questo esempio presuppone l'utilizzo di un foglio di lavoro denominato `Sheet1`.
+1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> del foglio di lavoro. Questo esempio presuppone l'utilizzo di un foglio di lavoro denominato `Sheet1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Per proteggere un foglio di lavoro mediante codice in un componente aggiuntivo VSTO
 
-1.  Chiamare il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> del foglio di lavoro attivo.
+1. Chiamare il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> del foglio di lavoro attivo.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]

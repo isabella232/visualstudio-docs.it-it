@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059636"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installare SQL Server database di esempio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Per ripristinare un database da un file con estensione bak in Visual Studio  
   
-1.  Quando si esegue il backup di un database Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere l'estensione bak file utilizzabile nuovamente come un file di database, deve essere *ripristinato*. Nel menu principale, selezionare **View** > **Esplora oggetti di SQL Server**. Se non è visualizzata, è necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015 e scegliere il **modifica** pulsante. Nella finestra del programma di installazione venga visualizzato l'elenco dei componenti installati, selezionare la **Esplora oggetti di SQL Server** casella di controllo e quindi continuare con l'installazione.  
+1. Quando si esegue il backup di un database Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere l'estensione bak file utilizzabile nuovamente come un file di database, deve essere *ripristinato*. Nel menu principale, selezionare **View** > **Esplora oggetti di SQL Server**. Se non è visualizzata, è necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015 e scegliere il **modifica** pulsante. Nella finestra del programma di installazione venga visualizzato l'elenco dei componenti installati, selezionare la **Esplora oggetti di SQL Server** casella di controllo e quindi continuare con l'installazione.  
   
-2.  In Esplora oggetti di SQL Server, fare doppio clic su qualsiasi motore di database di SQL Server (ad esempio, database locale) e selezionare**nuova Query**.  
+2. In Esplora oggetti di SQL Server, fare doppio clic su qualsiasi motore di database di SQL Server (ad esempio, database locale) e selezionare**nuova Query**.  
   
      ![SQL Server oggetto Explorer nuova Query](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server oggetto Explorer nuova Query")  
   
-3.  È necessario in primo luogo, i nomi logici dei file di database e log all'interno del file con estensione bak. Per ottenerlo, immettere la query nell'Editor di Query SQL e quindi selezionare il colore verde **eseguire** nella parte superiore della finestra. Se necessario in modo da puntare al file con estensione bak, modificare il percorso del file.  
+3. È necessario in primo luogo, i nomi logici dei file di database e log all'interno del file con estensione bak. Per ottenerlo, immettere la query nell'Editor di Query SQL e quindi selezionare il colore verde **eseguire** nella parte superiore della finestra. Se necessario in modo da puntare al file con estensione bak, modificare il percorso del file.  
   
     ```  
     RESTORE FILELISTONLY  
@@ -43,7 +43,7 @@ Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data
   
      Annotare i nomi logici che vengono visualizzati nella finestra dei risultati.  Per il database Northwind, i due nomi logici sono Northwind e Northwind_log.  
   
-4.  A questo punto eseguire la query per creare il database. Sostituire i percorsi di origine e di destinazione, i nomi di database logico e nomi di file fisici per Northwind come appropriato. Mantenere il file con estensione mdf e ldf delle estensioni di file.  
+4. A questo punto eseguire la query per creare il database. Sostituire i percorsi di origine e di destinazione, i nomi di database logico e nomi di file fisici per Northwind come appropriato. Mantenere il file con estensione mdf e ldf delle estensioni di file.  
   
     ```  
     RESTORE DATABASE Northwind  
@@ -52,14 +52,14 @@ Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
     ```  
   
-5.  In Esplora oggetti di SQL Server, fare clic sui **database** nodo, verrà visualizzato il nodo del database Northwind. In caso contrario, quindi fare clic sul database e selezionare **Aggiungi nuovo Database**. Immettere il nome e il percorso del file con estensione mdf che appena creato.  
+5. In Esplora oggetti di SQL Server, fare clic sui **database** nodo, verrà visualizzato il nodo del database Northwind. In caso contrario, quindi fare clic sul database e selezionare **Aggiungi nuovo Database**. Immettere il nome e il percorso del file con estensione mdf che appena creato.  
   
-6.  Il database è ora pronto per l'uso come origine dati in Visual Studio.  
+6. Il database è ora pronto per l'uso come origine dati in Visual Studio.  
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Per ripristinare un database da un file con estensione bak in SQL Server Management Studio  
   
-1.  Scaricare SQL Server Management Studio dal sito di download.  
+1. Scaricare SQL Server Management Studio dal sito di download.  
   
-2.  In SSMS **Esplora oggetti** finestra, fare doppio clic sui **database** nodo, seleziona**Restore Database**e specificare il percorso del file con estensione bak.  
+2. In SSMS **Esplora oggetti** finestra, fare doppio clic sui **database** nodo, seleziona**Restore Database**e specificare il percorso del file con estensione bak.  
   
      ![Ripristina Database di SQL Server Management Studio](../data-tools/media/raddata-ssms-restore-database.png "raddata Ripristina Database di SQL Server Management Studio")

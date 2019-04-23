@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047137"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Per convalidare i dati quando una riga viene modificato (Visual Basic)  
   
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il <xref:System.Data.DataTable.RowChanging> gestore dell'evento del <xref:System.Data.DataTable> nel file di classe parziale del set di dati.  
+2. Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea automaticamente il <xref:System.Data.DataTable.RowChanging> gestore dell'evento del <xref:System.Data.DataTable> nel file di classe parziale del set di dati.  
   
     > [!TIP]
     >  Fare doppio clic a sinistra del nome della tabella per creare il gestore di eventi di modifica di riga. Se si fa doppio clic il nome della tabella, è possibile modificarlo.  
@@ -114,14 +114,14 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Per convalidare i dati quando viene modificata una riga (c#)  
   
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea un file di classe parziale per il <xref:System.Data.DataTable>.  
+2. Fare doppio clic sulla barra del titolo della tabella da convalidare. Questa azione crea un file di classe parziale per il <xref:System.Data.DataTable>.  
   
     > [!NOTE]
     >  Il **Progettazione Dataset** non crea automaticamente un gestore eventi per il <xref:System.Data.DataTable.RowChanging> evento. È necessario creare un metodo per gestire il <xref:System.Data.DataTable.RowChanging> evento ed eseguire codice per associare l'evento in un metodo di inizializzazione della tabella.  
   
-3.  Copiare il codice seguente nella classe parziale:  
+3. Copiare il codice seguente nella classe parziale:  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Per ottenere tutti i record modificati da un set di dati  
   
--   Chiamare il <xref:System.Data.DataSet.GetChanges%2A> metodo di un set di dati.  
+- Chiamare il <xref:System.Data.DataSet.GetChanges%2A> metodo di un set di dati.  
   
      L'esempio seguente crea un nuovo set di dati denominato `changedRecords` e lo popola con tutti i record modificati da un altro set di dati denominato `dataSet1`.  
   
@@ -164,7 +164,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>Per ottenere tutti i record modificati da una tabella dati  
   
--   Chiamare il <xref:System.Data.DataTable.GetChanges%2A> metodo di un oggetto DataTable.  
+- Chiamare il <xref:System.Data.DataTable.GetChanges%2A> metodo di un oggetto DataTable.  
   
      L'esempio seguente crea una nuova tabella di dati denominata `changedRecordsTable` e lo popola con tutti i record modificati da un'altra tabella di dati denominato `dataTable1`.  
   
@@ -173,14 +173,14 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Per ottenere tutti i record che hanno uno stato di riga specifico  
   
--   Chiamare il `GetChanges` metodo di un set di dati o tabella di dati e passare un <xref:System.Data.DataRowState> valore di enumerazione come argomento.  
+- Chiamare il `GetChanges` metodo di un set di dati o tabella di dati e passare un <xref:System.Data.DataRowState> valore di enumerazione come argomento.  
   
      Nell'esempio seguente viene illustrato come creare un nuovo set di dati denominato `addedRecords` e popolarla solo con i record che sono state aggiunte ad il `dataSet1` set di dati.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   Nell'esempio seguente viene illustrato come restituire tutti i record che sono stati aggiunti di recente per il `Customers` tabella:  
+- Nell'esempio seguente viene illustrato come restituire tutti i record che sono stati aggiunti di recente per il `Customers` tabella:  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-get-the-original-version-of-a-record"></a>Per ottenere la versione originale di un record  
   
--   Accedere al valore di una colonna, passando il <xref:System.Data.DataRowVersion> della riga di cui si desidera restituire.  
+- Accedere al valore di una colonna, passando il <xref:System.Data.DataRowVersion> della riga di cui si desidera restituire.  
   
      Nell'esempio seguente viene illustrato come utilizzare un <xref:System.Data.DataRowVersion> valore da ottenere il valore originale di una `CompanyName` campo un <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ La convalida dei dati è il processo di conferma che i valori immessi negli ogge
   
 #### <a name="to-get-the-current-version-of-a-record"></a>Per ottenere la versione corrente di un record  
   
--   Accedere al valore di una colonna e quindi aggiungere un parametro per l'indice che indica quale versione di una riga a cui si desidera restituire.  
+- Accedere al valore di una colonna e quindi aggiungere un parametro per l'indice che indica quale versione di una riga a cui si desidera restituire.  
   
      Nell'esempio seguente viene illustrato come utilizzare un <xref:System.Data.DataRowVersion> valore da ottenere il valore corrente di un `CompanyName` campo un <xref:System.Data.DataRow>:  
   

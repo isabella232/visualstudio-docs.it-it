@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048827"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il Profiler da riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
 
--   Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -76,9 +76,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
 
-1.  Chiudere l'applicazione di destinazione.  
+1. Chiudere l'applicazione di destinazione.  
 
-2.  Arrestare il profiler. Tipo:  
+2. Arrestare il profiler. Tipo:  
 
      **VSPerfCmd /shutdown**  
 

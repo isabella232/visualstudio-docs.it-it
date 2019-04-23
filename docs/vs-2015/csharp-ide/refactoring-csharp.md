@@ -1,5 +1,5 @@
 ---
-title: Refactoring (C#) | Microsoft Docs
+title: Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,31 +18,31 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046318"
 ---
 # <a name="refactoring-c"></a>Refactoring (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Refactoring è il processo di miglioramento del codice dopo che è stata scritta modificando la struttura interna del codice senza modificare il comportamento esterno del codice.  
   
- Visual C# fornisce i seguenti comandi di refactoring nel **Refactoring** menu:  
+ Visual c# fornisce i seguenti comandi di refactoring nel **Refactoring** menu:  
   
--   [Refactoring per Estrai Metodo (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refactoring per Estrai Metodo (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refactoring per Rinomina (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refactoring per Rinomina (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refactoring per Incapsula campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refactoring per Incapsula campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refactoring per Estrai interfaccia (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refactoring per Estrai interfaccia (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Refactoring per Rimuovi parametri (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Refactoring per Rimuovi parametri (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refactoring per Riordina parametri (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refactoring per Riordina parametri (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refactoring con più progetti  
  Visual Studio supporta il refactoring di più progetti per i progetti che sono nella stessa soluzione. Tutte le operazioni di refactoring che correggere i riferimenti tra file correggere tali riferimenti a tutti i progetti della stessa lingua. Questa opzione funziona per tutti i riferimenti da progetto a progetto. Ad esempio, se si dispone di un'applicazione console che fa riferimento a una libreria di classi, quando si rinomina un tipo di libreria di classi (usando il `Rename` operazione di refactoring), vengono aggiornati anche i riferimenti al tipo di libreria di classi nell'applicazione console.  
@@ -69,7 +69,7 @@ Refactoring è il processo di miglioramento del codice dopo che è stata scritta
   
  Il **risultati della verifica** nella finestra di dialogo può ricevere una notifica se il motore di refactoring rilevi errori di compilazione o che un'operazione di refactoring provoca inavvertitamente un riferimento al codice per l'associazione a un elemento diverso da quello associato in origine (riassociazione problema).  
   
- Per attivare la funzionalità dei risultati della verifica, scegliere il **strumenti** menu, fare clic su **opzioni**. Nel **le opzioni** finestra di dialogo espandere **Editor di testo**, quindi espandere **C#**. Fare clic su **avanzate** e selezionare il **verifica risultati del refactoring** casella di controllo.  
+ Per attivare la funzionalità dei risultati della verifica, scegliere il **strumenti** menu, fare clic su **opzioni**. Nel **le opzioni** finestra di dialogo espandere **Editor di testo**, quindi espandere **c#**. Fare clic su **avanzate** e selezionare il **verifica risultati del refactoring** casella di controllo.  
   
  Il **risultati della verifica** nella finestra di dialogo consente di distinguere la differenza tra due tipi di problemi di riassociazione.  
   
@@ -107,5 +107,5 @@ class Example
  Se si usa il refactoring per rinominare `OtherMethod` a `Method`, viene visualizzata questa finestra di dialogo. Il riferimento nel `Main` fa riferimento al metodo di overload che accetta un `int` parametro anziché il metodo di overload che accetta un `object` parametro.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Usando l'ambiente di sviluppo di Visual Studio per C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [Usando l'ambiente di sviluppo di Visual Studio per c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Procedura: Ripristinare refactoring di frammenti C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
