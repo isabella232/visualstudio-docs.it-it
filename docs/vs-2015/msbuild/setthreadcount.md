@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a57ac0b3412c6668dea1669d14b72fe399b6ab2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758626"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666677"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Imposta il conteggio dei thread globale e assegna tale conteggio al thread corrente.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -41,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Numero di thread da usare.  
   
 ## <a name="return-value"></a>Valore restituito  
- [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il bit [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) impostato se il conteggio thread è stato aggiornato.  
+ Un ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con il ([riuscito]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) impostato un bit se il conteggio dei thread è stato aggiornato.  
   
 ## <a name="requirements"></a>Requisiti  
  **Intestazione:** FileTracker.h

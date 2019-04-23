@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662972"
 ---
 # <a name="working-with-xml-data"></a>Utilizzo di dati XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nella gestione dei dati in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio il ruolo svolto dal linguaggio XML e dalle tecnologie correlate è considerevole. Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.  
   
 ## <a name="xml-editor"></a>Editor XML  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869244"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663245"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti di definiscono e usano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che è stato distribuito con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -81,7 +81,6 @@ ms.locfileid: "57869244"
    -   Provare a compilare i progetti ed esaminare gli eventuali errori.
 
    -   Eseguire il test della finestra di progettazione.
-
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

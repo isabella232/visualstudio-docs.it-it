@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800421"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663143"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: compilare gli stessi file di origine con opzioni diverse
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate oppure è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], è possibile usare le proprietà e le condizioni per creare le diverse configurazioni della build.  
   
 ## <a name="using-properties-to-modify-projects"></a>Uso delle proprietà per modificare i progetti  

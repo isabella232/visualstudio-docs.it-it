@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968571"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668028"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Set di dati tipizzati e non tipizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un dataset tipizzato è un set di dati derivato dalla base inizialmente <xref:System.Data.DataSet> classe e quindi Usa le informazioni dal **Progettazione Dataset**, che viene archiviato in un file XSD, per generare un nuovo, fortemente tipizzate classe dataset. Informazioni dallo schema (tabelle, colonne e così via) vengano generate e compilate in questa nuova classe di set di dati come set di proprietà e oggetti di prima classe. Poiché un dataset tipizzato erediterà dalla base <xref:System.Data.DataSet> (classe), la classe tipizzata si presuppone che tutte le funzionalità del <xref:System.Data.DataSet> classe e può essere usato con metodi che accettano un'istanza di un <xref:System.Data.DataSet> classe come parametro.  
   
  Un set di dati non tipizzati, invece, non presenta alcun schema predefinito corrispondente. Come in un dataset tipizzato, un dataset non tipizzato contiene tabelle, colonne e così via, ma questi sono esposti solo come raccolte. (Tuttavia, dopo aver creato manualmente le tabelle e altri elementi di dati in un dataset non tipizzato, è possibile esportare la struttura del set di dati come uno schema tramite il set di dati <xref:System.Data.DataSet.WriteXmlSchema%2A> (metodo).)  

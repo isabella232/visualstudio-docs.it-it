@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366614"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665744"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Il comando Passa a di Visual Studio esegue una ricerca mirata del codice per con
     Durante la digitazione i risultati vengono visualizzati in un elenco a discesa sotto la casella di testo.
 1. Per passare a un elemento, selezionarlo nell'elenco.
 
-
 ### <a name="filter-your-search"></a>Filtrare la ricerca
 
 Per limitare la ricerca solo ai simboli del codice, anteporre alla query passa a con un "\@" caratteri. Ad esempio, se si cerca `@application`, Passa a visualizza solo le classi che contengono la parola "application".
@@ -191,23 +190,23 @@ Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
 -   [Impostazioni di Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Usando l'ambiente di sviluppo di Visual Studio per c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Using the Visual Studio Development Environment for C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)  
 
--   [Opzioni, Editor di testo, JavaScript, Formattazione](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Opzioni, Editor di testo, JavaScript, formattazione](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Contenuto della sezione  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+-   [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)  
 
 -   [Codifiche e interruzioni di riga](../ide/encodings-and-line-breaks.md)  
 
--   [struttura](../ide/outlining.md)  
+-   [Struttura](../ide/outlining.md)  
 
 -   [Refactoring](../ide/refactoring-in-visual-studio.md)  
 
 -   [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+-   [Utilizzo di IntelliSense](../ide/using-intellisense.md)  
 
 -   [Personalizzazione dell'editor](../ide/customizing-the-editor.md)  
 

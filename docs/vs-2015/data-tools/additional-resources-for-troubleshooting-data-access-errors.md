@@ -231,17 +231,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 8a71d18beaf1c77c16479c914a43cdf45793b685
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966240"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668717"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Risorse aggiuntive per la risoluzione degli errori di accesso dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). La tabella seguente elenca i dati correlati ai forum disponibili sul sito Web MSDN.  
   
  [Controlli dati e data binding di Windows Form](http://go.microsoft.com/fwlink/?LinkId=160179)  

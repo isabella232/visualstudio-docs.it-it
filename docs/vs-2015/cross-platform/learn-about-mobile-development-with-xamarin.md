@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781696"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662075"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In questo argomento viene fatto riferimento a materiale introduttivo che fornisce informazioni sullo sviluppo di app per dispositivi mobili multipiattaforma con Xamarin. Se Visual Studio e Xamarin non sono ancora stati installati, avviare innanzitutto il processo [Setup and install](../cross-platform/setup-and-install.md) , quindi tornare qui per consultare queste risorse mentre i programmi di installazione sono in esecuzione.  
   
 > [!NOTE]
@@ -42,7 +41,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
   ![Relazione tra computer di sviluppo Windows e Mac in un ambiente Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Nozioni fondamentali Struttura dei progetti  
+## <a name="essentials-how-projects-are-structured"></a>Concetti di base: Struttura dei progetti  
  *10-30 minuti*  
   
 1.  [Opzioni di condivisione del codice](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). È consigliabile usare l'opzione relativa alle librerie di classi portabili, poiché offre il migliore supporto per l'uso delle sole API .NET che sono supportate in tutte le piattaforme di destinazione. Gran parte del codice per la logica di business si troverà nella libreria di classi Portabile, incluso l'accesso ai database, le chiamate alle API REST e le chiamate ai componenti di Xamarin portatili (vedere [Deeper Dive: I componenti di Xamarin](#components) alla fine di questo argomento). Anche il codice dell'interfaccia utente comune scritto con Xamarin.Forms può risiedere in una PCL.  
@@ -52,7 +51,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Concetti di base: Livelli dell'interfaccia utente Xamarin Native e Xamarin.Forms  
  *10-40 minuti*  
   
- Xamarin offre due sistemi per creare eccezionali app native. Xamarin Native e xamarin. Forms.  
+ Xamarin offre due modi per creare eccezionali App native: Xamarin Native e xamarin. Forms.  
   
  Con Xamarin Native occorre scrivere codice separato per l'interfaccia utente per ogni piattaforma di destinazione: iOS, Android e Windows.  Con questo approccio è possibile accedere direttamente alle API specifiche della piattaforma e realizzare così un'esperienza dell'interfaccia utente personalizzata per ogni piattaforma.  È anche disponibile l'accesso completo alle finestre di progettazione e ai controlli nativi per ogni piattaforma, per facilitare la creazione dell'interfaccia utente corrispondente.  
   
@@ -93,7 +92,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 2.  **Simulatore iOS di Apple.** Per altre informazioni, leggere l'[introduzione al simulatore iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere l' [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
 ##  <a name="components"></a> Approfondimento: Componenti di Xamarin  
  *10 minuti*  

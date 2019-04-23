@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58969551"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663782"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) descrive un controllo che visualizza le informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella padre o dell'oggetto nel **Zdroje dat** finestra in un controllo che è già associato a una colonna o proprietà in una tabella figlio correlata.  
   
  Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni record di `Orders` tabella include un `CustomerID` che indica il cliente che ha effettuato l'ordine. Il `CustomerID` è una chiave esterna che punta a un record del cliente nel `Customers` tabella. Quando si visualizza un elenco di ordini dal `Orders` tabella, è possibile visualizzare il nome del cliente effettivo anziché il `CustomerID`. Perché è il nome del cliente nel `Customers` tabella, è necessario creare una tabella di ricerca per visualizzare il nome del cliente. La tabella di ricerca utilizza il `CustomerID` valore di `Orders` registrare per spostarsi all'interno della relazione e restituire il nome del cliente.  

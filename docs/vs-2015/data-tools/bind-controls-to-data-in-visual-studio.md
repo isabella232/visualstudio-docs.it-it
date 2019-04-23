@@ -19,16 +19,15 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca10874d27664902f98baff47a2fe1e7a0adb0e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965097"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667950"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dei dati ai controlli. È possibile creare questi controlli con associazione a dati trascinando elementi dal **Zdroje dat** finestra in un'area di progettazione oppure controlli su una superficie in Visual Studio.
 

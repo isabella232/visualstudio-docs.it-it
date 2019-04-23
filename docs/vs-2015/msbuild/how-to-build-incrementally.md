@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803910"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662257"
 ---
-# <a name="how-to-build-incrementally"></a>Procedura: eseguire la compilazione incrementale
+# <a name="how-to-build-incrementally"></a>Procedura: Compilazione incrementale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specifying-inputs-and-outputs"></a>Specifica di input e output  
@@ -62,9 +61,9 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene usato un progetto che compila file della Guida per un ipotetico sistema di Guida. Il progetto converte i file di origine con estensione TXT in file CONTENT intermedi, che vengono quindi combinati con i file di metadati XML per generare il file con estensione HELP finale usato dal sistema di Guida. Il progetto usa le attività ipotetiche seguenti:  
   
-- `GenerateContentFiles`: converte file TXT in file CONTENT.  
+- `GenerateContentFiles`: Converte i file con estensione txt in file Content.  
   
-- `BuildHelp`: combina i file CONTENT e i file di metadati XML per compilare il file HELP finale.  
+- `BuildHelp`: Combina file Content e i file di metadati XML per compilare il file con estensione help finale.  
   
   Il progetto usa trasformazioni per creare un mapping uno a uno tra input e output nell'attività `GenerateContentFiles`. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md). L'elemento `Output` è impostato per usare automaticamente gli output dall'attività `GenerateContentFiles` come input per l'attività `BuildHelp`.  
   

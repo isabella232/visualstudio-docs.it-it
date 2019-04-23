@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681712"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666559"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,11 +76,11 @@ Inoltre, il debugger cerca i file di simboli nei percorsi seguenti:
 
      È possibile utilizzare server dei simboli includono:
 
-     **Server di simboli Microsoft pubblici**: per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, è spesso necessario sistema *PDB* file. System *PDB* contengono i simboli per le DLL di Windows, *.exe* file e i driver di dispositivo. È possibile ottenere i simboli per i sistemi operativi Windows, MDAC, IIS, ISA e [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dai server dei simboli Microsoft pubblici.
+     **Server dei simboli Microsoft pubblici**: Per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, spesso è necessario system *PDB* file. System *PDB* contengono i simboli per le DLL di Windows, *.exe* file e i driver di dispositivo. È possibile ottenere i simboli per i sistemi operativi Windows, MDAC, IIS, ISA e [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dai server dei simboli Microsoft pubblici.
 
-     **Server in una rete interna o nel computer locale di simboli**: team o dalla società può creare server di simboli per i propri prodotti e come cache dei simboli provenienti da origini esterne. Nel computer potrebbe essere presente un server di simboli.
+     **Server di simboli in una rete interna o nel computer locale**: Il team o la società può creare server di simboli per i propri prodotti e come cache dei simboli provenienti da origini esterne. Nel computer potrebbe essere presente un server di simboli.
 
-     **Server dei simboli di terze parti**: provider di terze parti di librerie e applicazioni di Windows può fornire l'accesso al server di simboli su internet.
+     **Server di simboli di terze parti**: I provider di terze parti di librerie e applicazioni Windows possono fornire accesso al server di simboli su Internet.
 
      > [!WARNING]
      > Se si usa un server di simboli diverso dal server di simboli Microsoft pubblici, assicurarsi che il server di simboli e il relativo percorso siano attendibili. Poiché i file di simboli possono contenere codice eseguibile arbitrario, può essere esposto a rischi di sicurezza.
@@ -155,7 +155,7 @@ Nel **degli strumenti** > **opzioni** > **debug** > **simboli** pagina, è possi
   È possibile limitare i comandi che *SrcSrv* possono eseguire l'app *PDB* file eseguendo i comandi consentiti in un file denominato *SrcSrv*. Sul posto di *SrcSrv* file nella stessa cartella *SrcSrv* e *devenv.exe*.
 
   >[!IMPORTANT]
-  >I comandi arbitrari possono essere incorporati in un'app *PDB* del file, assicurarsi di inserire solo i comandi da eseguire in un *SrcSrv* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >I comandi arbitrari possono essere incorporati in un'app *PDB* del file, assicurarsi di inserire solo i comandi da eseguire in un *SrcSrv* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
   >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Ad esempio, se è elencato *cmd.exe* nel *SrcSrv*, un utente malintenzionato potrebbe specificare parametri nel *cmd.exe* che potrebbe renderlo pericolosi.
 
@@ -213,7 +213,7 @@ Durante il debug, il **moduli** finestra Mostra i moduli di codice il debugger �
 1. Nel **moduli** finestra, fare doppio clic sul **stato simboli** oppure **File di simboli** intestazioni o qualsiasi modulo.
 1. Nel menu di scelta rapida, selezionare una delle opzioni seguenti:
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
 |**Carica simboli**|Viene visualizzata per i moduli con i simboli ignorati, non è stati trovati o non è stati caricati. Tenta di caricare i simboli dai percorsi specificati nella **le opzioni** > **debug** > **simboli** pagina. Se il file di simboli non trovato o non caricato, viene avviata **Esplora File** quindi è possibile specificare un nuovo percorso da cercare.|
 |**Informazioni sul caricamento simboli**|Mostra la posizione di un file di simboli caricato o i percorsi cercati se il debugger non è possibile trovare il file.|
@@ -259,7 +259,6 @@ Se il debugger rileva il *PDB* file dopo l'esecuzione di una delle opzioni e pu�
 1. Sotto **non cercare questi file di origine**, digitare i nomi dei file di origine da escludere dalla ricerca.
 
 1. Selezionare **OK** oppure **applicare**.
-
 
 ## <a name="see-also"></a>Vedere anche
 - [Comprendere i file di simboli e le impostazioni dei simboli di Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

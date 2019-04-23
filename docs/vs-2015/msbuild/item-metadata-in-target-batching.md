@@ -13,17 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eca5fc85f4a1bcd26c2c4c73ec39fbe855f77add
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769370"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665467"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadati degli elementi nell'esecuzione in batch delle destinazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è in grado di eseguire l'analisi delle dipendenze per gli input e output di una destinazione di compilazione. Se viene stabilito che l'input o output della destinazione sono aggiornati, la destinazione viene ignorata e la compilazione prosegue. Gli elementi `Target` usano gli attributi `Inputs` e `Outputs` per specificare gli elementi da controllare durante l'analisi delle dipendenze.  
   
  Se una destinazione contiene un'attività che usa elementi suddivisi in batch come input o output, l'elemento `Target` della destinazione deve usare la suddivisione in batch negli attributi `Inputs` o `Outputs` per consentire a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di ignorare i batch di elementi che sono già aggiornati.  
@@ -70,7 +69,7 @@ ms.locfileid: "54769370"
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)   
+ [Procedura: La compilazione incrementale](../msbuild/how-to-build-incrementally.md)   
  [Suddivisione in batch](../msbuild/msbuild-batching.md)   
  [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Metadati degli elementi in batch delle attività](../msbuild/item-metadata-in-task-batching.md)

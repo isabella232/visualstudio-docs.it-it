@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965776"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668353"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.  
   
  Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) vengono forniti metodi parziali che consentono agli utenti di estendere il codice generato da progettazione che viene eseguito durante l'inserimento, aggiornamento ed eliminazione di entità complete nonché durante e dopo la singola colonna modifiche.  
@@ -110,7 +109,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
   
       Per i progetti C#:  
   
-   5. Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `Update` *NomeClasse* (metodo).  
+   5. Poiché i progetti c# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `Update` *NomeClasse* (metodo).  
   
    6. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento relativo alla classe per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona una `Update` *NomeClasse* metodo parziale:  
   

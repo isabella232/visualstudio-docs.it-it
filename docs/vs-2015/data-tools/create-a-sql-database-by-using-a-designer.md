@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964695"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661581"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Creare un database SQL usando una finestra di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 È possibile esplorare le attività di base, ad esempio l'aggiunta di tabelle e definizione di colonne, tramite Visual Studio per creare e aggiornare un file di database locale in LocalDB di SQL Server Express. Dopo aver completato questa procedura dettagliata, sarà possibile individuare funzionalità più avanzate utilizzando il database locale come punto iniziale per le altre procedure dettagliate che la richiedono.  
   
  È anche possibile creare un database usando SQL Server Management Studio (un download separato) o istruzioni Transact-SQL nel **Esplora oggetti di SQL Server** finestra degli strumenti in Visual Studio.  

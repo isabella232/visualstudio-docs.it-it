@@ -13,22 +13,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18df04fc706ea716f7c22baa6508930f0f94a6f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3cea1375b59b791c7c81c79be0a462d5eb690776
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801466"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664169"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Registrazione di estensioni di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 È possibile sviluppare un assembly per estendere una versione specifica di .NET Framework. Per poter visualizzare l'assembly nella finestra di dialogo **Aggiungi riferimenti**, è necessario aggiungere la cartella che lo contiene al Registro di sistema.  
   
  Si supponga, ad esempio, che la società Trey Research abbia sviluppato una libreria che estende .NET Framework 4 e voglia che gli assembly della libreria vengano visualizzati nella finestra di dialogo **Aggiungi riferimenti** quando un progetto ha come destinazione .NET Framework 4. Si supponga anche che si tratti di assembly a 32 bit in esecuzione su un computer a 32 bit o di assembly a 64 bit in esecuzione su un computer a 64 bit e che verranno installati nella cartella C:\TreyResearch\Extensions4\.  
   
- Registrare questa cartella usando la chiave HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. Assegnare alla chiave il valore predefinito C:\TreyResearch\Extensions4.  
+ Registrare questa cartella usando la chiave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. Assegnare alla chiave questo valore predefinito: C:\TreyResearch\Extensions4.  
   
 > [!NOTE]
 >  Il numero di build della versione di .NET Framework potrebbe essere diverso.  

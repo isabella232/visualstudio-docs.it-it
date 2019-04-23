@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526090"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665675"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Creare una mappa visiva dello stack di chiamate durante il debug (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Per informazioni dettagliate, vedere questo video: [Video: Debug visivo con inte
 Per informazioni dettagliate sui comandi e le azioni è possibile usare con le mappe codici, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->È possibile creare solo nelle mappe codici [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/).
+>È possibile creare solo nelle mappe codici [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Ecco un rapido controllo di una mappa del codice:
 
@@ -53,11 +53,11 @@ Ecco un rapido controllo di una mappa del codice:
 
 ##  <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
 
-1. In Visual Studio Enterprise C#, Visual Basic, C++ o JavaScript del progetto, avviare il debug, selezionando **eseguire il Debug** > **Avvia debug** oppure premendo **F5**.
+1. In Visual Studio Enterprise C#, Visual Basic, C++, o JavaScript del progetto, avviare il debug, selezionando **Debug** > **Avvia debug** o premere **F5** .
 
 1. Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, selezionare **Debug** > **Mappa codici**, oppure premere **Ctrl**+**MAIUSC** +**`**.
 
-   Lo stack di chiamate corrente verrà visualizzato in arancione in una nuova mappa codici:
+   Lo stack di chiamate corrente verrà visualizzato in arancione in una nuova mappa del codice:
 
    ![Vedere stack di chiamate nella mappa del codice](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
 

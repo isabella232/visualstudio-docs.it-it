@@ -16,17 +16,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bd6df873bf1aadbec4b12763369c60f127819c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834423"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662582"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Quando [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Per altre informazioni, vedere [Visual C++ Tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md) (Attività Visual C++).  
   
  Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività dispone anche dei parametri seguenti:  

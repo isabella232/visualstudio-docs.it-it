@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2566d5d0d653af7caa29474e7916352600bf94d4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970253"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668262"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Finestra di progettazione del modello SendAndReceiveReply
 Il **SendAndReceiveReply** modello viene utilizzato per creare una coppia di preconfigurati <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> attività all'interno di un <xref:System.Activities.Statements.Sequence> attività correlate come parte di uno scambio di messaggi di richiesta/risposta modello sul client.  
@@ -42,7 +42,6 @@ Il **SendAndReceiveReply** modello viene utilizzato per creare una coppia di pre
 
 ### <a name="properties-of-receivereply"></a>Proprietà di ReceiveReply  
  Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.ReceiveReply> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e, in alcuni casi, nell'area della finestra di progettazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
-
 
 |                                 Nome proprietà                                 | Obbligatorio |                                                                                                                                                                                                                                                                                                                                                        Utilizzo                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

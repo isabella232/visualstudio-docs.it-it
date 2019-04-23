@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723500"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667455"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fondamentali sull'esperienza utente per Visual Studio
 ## <a name="best-practices"></a>Procedure consigliate
@@ -102,7 +102,6 @@ ms.locfileid: "56723500"
 
 #### <a name="example-video-links-in-team-explorer"></a>Esempio: collegamenti video in Team Explorer
 L'utente leggere testo esplicativo prima dell'eliminazione dell'interfaccia utente sia un antipattern all'interno di Visual Studio. Collegamenti correttamente progettati, un video devono visualizzare una descrizione comando con informazioni aggiuntive sul passaggio del mouse e scegliendo la "&times;" deve chiudere il messaggio senza necessità di ulteriore interazione.
-
 
  ![Testo esplicativo anti-&#45;modello &#45; errato](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modello di collegamento video non corretto
 

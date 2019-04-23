@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 6e40401b533d5fcaad8dc9bb4530580608efaad9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670225"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +160,6 @@ Questa Guida di riferimento dettagliata contiene indicazioni e procedure consigl
       <!-- optional NativeResource element -->  
  </Source>  
 ```  
-
 
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -521,7 +520,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 3. Modificare l'implementazione del VSHPROPIDs originali per le icone per creare versioni "legacy" delle icone se li hanno richiesti punti di estensione. **IVsImageService2** fornisce la funzionalità necessaria per ottenere tali icone  
 
-   **Requisiti aggiuntivi per VB / caratteristiche progetti C#**  
+   **Requisiti aggiuntivi per VB / caratteristiche progetti c#**  
 
    Implementare solo **VSHPROPID_SupportsIconMonikers** se si rileva che il progetto sia la **flavor più esterno**. In caso contrario, la versione più esterna effettiva potrebbe non supportare i moniker di immagine in realtà, e la versione di base potrebbe essere effettivamente "nascondere" immagini personalizzate.  
 
@@ -669,7 +668,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**  
 
- Il manifesto per lo strumento di Code accetta un file manifesto dell'immagine e genera un file wrapper per i valori del manifesto nel codice (C++, C# o Visual Basic) o file con estensione vsct di riferimento.  
+ Il manifesto per lo strumento di Code accetta un file manifesto dell'immagine e genera un file wrapper per i valori del manifesto nel codice (C++, c# o Visual Basic) o file con estensione vsct di riferimento.  
 
  **ImageLibraryViewer**  
 

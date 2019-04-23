@@ -19,23 +19,22 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6113bbcb271aa7774bca538858b02edb9f5e3583
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758648"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662231"
 ---
 # <a name="al-assembly-linker-task"></a>Attività AL (Assembly Linker)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'attività AL esegue il wrapping di AL.exe, uno strumento distribuito con [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Lo strumento Assembly Linker consente di creare un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse. Poiché è possibile che negli ambienti di compilazione e sviluppo queste funzionalità siano già disponibili, spesso non è necessario usare direttamente questa attività. Assembly Linker è particolarmente utile per gli sviluppatori che hanno la necessità di creare un unico assembly da più file di componenti, ad esempio quelli che possono essere prodotti dallo sviluppo in linguaggi misti. Questa attività non combina i moduli in un unico file assembly. Affinché l'assembly ottenuto venga caricato correttamente, è comunque necessario che i singoli moduli vengano distribuiti e che siano disponibili. Per altre informazioni su AL.exe, vedere [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `AL` .  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`AlgorithmID`|Parametro `String` facoltativo.<br /><br /> Specifica un algoritmo per generare un hash per tutti i file di un assembly su più file, ad eccezione del file contenente il manifesto dell'assembly. Per altre informazioni, vedere la documentazione relativa all'opzione `/algid` di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`BaseAddress`|Parametro `String` facoltativo.<br /><br /> Specifica l'indirizzo in corrispondenza del quale caricare una DLL nel computer dell'utente in fase di esecuzione. Il caricamento delle applicazioni risulta più veloce se si specifica l'indirizzo di base delle DLL, anziché lasciare al sistema operativo il compito di rilocare le DLL nello spazio di processo. Questo parametro corrisponde all'opzione /base [address] di [Al.exe (Assembly Linker)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  

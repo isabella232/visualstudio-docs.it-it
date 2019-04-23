@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954108"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665688"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Creare app con interfaccia utente nativa con Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](../cross-platform/setup-and-install.md) e [Verificare l'ambiente Xamarin](../cross-platform/verify-your-xamarin-environment.md), questa procedura dettagliata illustra come compilare un'app Xamarin di base (vedere sotto) con i livelli dell'interfaccia utente nativa. Con l'interfaccia utente nativa il codice condiviso si trova in una libreria di classi portabile (PCL) e i singoli progetti di piattaforma contengono le definizioni dell'interfaccia utente.
 
@@ -519,7 +518,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 2.  Selezionare come destinazione un dispositivo o emulatore appropriato, quindi avviare l'app premendo il tasto F5.
 
-3.  Nel dispositivo o emulatore digitare un codice postale valido negli Stati Uniti, ad esempio 60601, nella casella di modifica e fare clic su **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
+3.  Nel dispositivo o nell'emulatore, digitare un codice postale degli Stati Uniti valido nella casella di modifica (ad esempio: 60601), quindi premere **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
 
      ![App meteo per Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 2.  Premere F5 per avviare l'app.
 
-3.  Nell'emulatore Windows Phone digitare nella casella di modifica un codice postale valido negli Stati Uniti, ad esempio 60601, quindi fare clic su **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
+3.  Nell'emulatore Windows Phone, digitare un codice postale degli Stati Uniti valido nella casella di modifica (ad esempio: 60601), quindi premere **Get Weather**. Nei controlli verranno visualizzati i dati relativi al meteo in tale area.
 
      ![Versione di Windows dell'app in esecuzione](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

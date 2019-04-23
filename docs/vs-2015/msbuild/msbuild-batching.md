@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2e2392c3b04ce7f81e023f449da890122946e3b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770809"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664336"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una sola volta per ogni batch.  
   
 ## <a name="task-batching"></a>Suddivisione in batch delle attività  

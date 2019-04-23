@@ -19,22 +19,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1c45f001c6d050ca48546579f313ee64d5fec2a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b78668b0df966de45eb309f068f448809fed8e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778815"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662855"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Attività UpdateManifestForBrowserApplication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> viene eseguita per aggiungere l'elemento **\<hostInBrowser />** al manifesto dell'applicazione (*nomeprogetto*.exe.manifest) quando viene compilato un progetto [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)].  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Descrizione|  
+|Parametro|Description|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica il percorso e il nome del file manifesto dell'applicazione a cui si desidera aggiungere l'elemento `<hostInBrowser />`.|  
 |`HostInBrowser`|Parametro **Boolean** obbligatorio.<br /><br /> Specifica se modificare il manifesto dell'applicazione per includere l'elemento **\<hostInBrowser />**. Se **true**, un nuovo elemento `<`**hostInBrowser />** viene incluso nell'elemento **\<entryPoint />**. Si noti che l'inclusione degli elementi è cumulativa: se un elemento **\<hostInBrowser />** esiste già, non verrà rimosso o sovrascritto. Al contrario, viene creato un altro elemento **\<hostInBrowser />**. Se **false**, il manifesto dell'applicazione non viene modificato.|  

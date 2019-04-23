@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504432"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665454"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office usando ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è necessario considerare tramite Windows Installer (*file con estensione msi*) se la soluzione sarà eseguita da più di un utente nello stesso computer.
@@ -29,11 +29,11 @@ ms.locfileid: "59504432"
 
 - [Scegliere come si desidera concedere l'attendibilità alla soluzione](#Trust)
 
-- [Aiutare gli utenti a installare la soluzione](#Helping)
+- [Consentire agli utenti di installare la soluzione](#Helping)
 
 - [Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)](#Put)
 
-- [Inserire il documento di una soluzione in un server in cui è eseguito SharePoint (solo personalizzazioni a livello di documento)](#SharePoint)
+- [Inserire il documento di una soluzione in un server di cui è eseguito SharePoint (solo personalizzazioni a livello di documento)](#SharePoint)
 
 - [Creare un programma di installazione personalizzato](#Custom)
 
@@ -91,8 +91,8 @@ ms.locfileid: "59504432"
 
     |Opzione|Descrizione|
     |------------|-----------------|
-    |**Scaricare i prerequisiti dal sito Web del fornitore del componente**|All'utente viene chiesto di scaricare e installare questi prerequisiti dal fornitore.|
-    |**Scaricare i prerequisiti dallo stesso percorso dell'applicazione**|Il software prerequisito viene installato insieme alla soluzione. Se si seleziona questa opzione, tutti i pacchetti di prerequisiti vengono copiati automaticamente da Visual Studio nel percorso di pubblicazione. Per il corretto funzionamento di questa opzione, i pacchetti di prerequisiti devono essere presenti nel computer di sviluppo.|
+    |**Scarica prerequisiti dal sito Web del fornitore del componente**|All'utente viene chiesto di scaricare e installare questi prerequisiti dal fornitore.|
+    |**Scarica prerequisiti dallo stesso percorso dell'applicazione**|Il software prerequisito viene installato insieme alla soluzione. Se si seleziona questa opzione, tutti i pacchetti di prerequisiti vengono copiati automaticamente da Visual Studio nel percorso di pubblicazione. Per il corretto funzionamento di questa opzione, i pacchetti di prerequisiti devono essere presenti nel computer di sviluppo.|
     |**Scarica prerequisiti dal seguente percorso**|Tutti i pacchetti di prerequisiti vengono copiati da Visual Studio nella posizione specificata e vengono installati insieme alla soluzione.|
 
      Visualizzare [finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).
@@ -340,12 +340,11 @@ ms.locfileid: "59504432"
 
  Come parte del processo di installazione personalizzata, chiamare lo strumento programma di installazione per le soluzioni Office (*VSTOInstaller.exe*), impostazione predefinita che viene installato nel percorso seguente:
 
- *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *shared\VSTO\10.0\VSTOInstaller.exe %CommonProgramFiles%\Microsoft*
 
  Se lo strumento non è in tale percorso, è possibile usare la **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** chiave del Registro di sistema per individuare il percorso dello strumento.
 
  È possibile usare i parametri seguenti con *VSTOinstaller.exe*.
-
 
 | Parametro | Definizione |
 |------------------| - |

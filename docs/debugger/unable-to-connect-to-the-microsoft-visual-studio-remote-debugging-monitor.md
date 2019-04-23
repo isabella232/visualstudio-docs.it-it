@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953655"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665623"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 Questo messaggio può verificarsi perché remote debugging monitor non sia configurato correttamente nel computer remoto o il computer remoto è inaccessibile a causa di problemi di rete o la presenza di un firewall.
@@ -81,7 +81,6 @@ Visual Studio non è riuscito a connettersi al debugger remoto. Questo messaggio
 
 - La versione del debugger remoto non corrisponde Visual Studio. Per ottenere la versione corretta del debugger remoto, vedere [debug remoto](../debugger/remote-debugging.md)
 
-
 ## <a name="valid_name"></a> Il nome richiesto è valido, ma nessun dato del tipo richiesto è stato trovato
 
 È presente nel computer remoto, ma Visual Studio non è riuscito a connettersi al debugger remoto. Questo messaggio può verificarsi per diversi motivi:
@@ -118,7 +117,7 @@ Se il problema persiste, verificare che il computer remoto sia accessibile in re
 
 ### <a name="server_incorrect"></a> Il nome del server non è corretto o software di terze parti interferisce con il debugger remoto
 
-In Visual Studio, esaminare le proprietà del progetto e assicurarsi che il nome del server sia corretto. Per vedere gli argomenti [ C# e Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) e [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Per ASP.NET, aprire **proprietà / Web / server** oppure **proprietà / Debug** a seconda del tipo di progetto.
+In Visual Studio, esaminare le proprietà del progetto e assicurarsi che il nome del server sia corretto. Per vedere gli argomenti [c# e Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) e [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Per ASP.NET, aprire **proprietà / Web / server** oppure **proprietà / Debug** a seconda del tipo di progetto.
 
 > [!NOTE]
 > Se si collega al processo, le impostazioni di connessione remota nelle proprietà del progetto non vengono utilizzate.
