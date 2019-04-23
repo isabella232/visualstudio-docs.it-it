@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069965"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procedura: Impostare punti di interruzione in flussi di lavoro (legacy)
 In questo argomento viene descritto come impostare punti di interruzione nelle applicazioni [!INCLUDE[wf](../includes/wf-md.md)] usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando l'applicazione [!INCLUDE[wf2](../includes/wf2-md.md)] deve fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -30,11 +30,11 @@ In questo argomento viene descritto come impostare punti di interruzione nelle a
   
  È possibile impostare punti di interruzione su un'attività sull'area di progettazione del flusso di lavoro nelle modalità seguenti:  
   
--   L'attività e scegliere **punto di interruzione \ inserire punto di interruzione**.  
+- L'attività e scegliere **punto di interruzione \ inserire punto di interruzione**.  
   
--   Selezionare l’attività e premere F9.  
+- Selezionare l’attività e premere F9.  
   
--   Selezionare **nuovo punto di interruzione** dalle **Debug** menu.  
+- Selezionare **nuovo punto di interruzione** dalle **Debug** menu.  
   
      È inoltre possibile usare questa opzione per impostare un nuovo punto di interruzione durante l'esecuzione del debug, quando il debugger si arresta in corrispondenza di un punto di interruzione.  
   
@@ -43,24 +43,24 @@ In questo argomento viene descritto come impostare punti di interruzione nelle a
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Per impostare un punto di interruzione usando l'opzione Nuovo punto di interruzione nel menu Debug  
   
-1.  Nel **Debug** dal menu **nuovo punto di interruzione**.  
+1. Nel **Debug** dal menu **nuovo punto di interruzione**.  
   
-2.  Fare clic su **Interrompi alla funzione**.  
+2. Fare clic su **Interrompi alla funzione**.  
   
      Il **nuovo punto di interruzione** verrà visualizzata la finestra di dialogo.  
   
-3.  Specificare il nome di un'attività nella **funzione** casella di testo usando questa sintassi: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
+3. Specificare il nome di un'attività nella **funzione** casella di testo usando questa sintassi: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
     >  Facoltativamente, anziché usare il nome dell'attività nel **funzione** casella di testo, è possibile impostare un punto di interruzione specificando il percorso assoluto dell'attività flusso di lavoro. Ad esempio, si supponga di avere una soluzione del flusso di lavoro denominata **WorkflowConsoleApplication1** e un flusso di lavoro nella soluzione denominato **Workflow1** che usa un'attività denominata **Delay1**. È possibile usare il nome dell'attività **Delay1** oppure specificare il percorso come **delay1:workflowconsoleapplication1. Workflow1** o **delay1:workflowconsoleapplication1. Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
-4.  Selezionare il **usare IntelliSense** casella di controllo per verificare il nome della funzione.  
+4. Selezionare il **usare IntelliSense** casella di controllo per verificare il nome della funzione.  
   
      Se questa casella di controllo non è selezionata, non viene eseguita nessuna verifica del nome del punto di interruzione.  
   
-5.  Selezionare **flusso di lavoro** dalle **Language** elenco.  
+5. Selezionare **flusso di lavoro** dalle **Language** elenco.  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug dei flussi di lavoro Legacy](../workflow-designer/debugging-legacy-workflows.md)   

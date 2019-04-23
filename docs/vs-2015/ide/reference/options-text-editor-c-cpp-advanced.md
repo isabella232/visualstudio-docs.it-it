@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072637"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
   
  Impostare usando una somma di una qualsiasi delle opzioni seguenti:  
   
--   0 - Nessuno  
+- 0 - Nessuno  
   
--   1 - Generale  
+- 1 - Generale  
   
--   2 - Inattivo  
+- 2 - Inattivo  
   
--   4 - Elemento di lavoro  
+- 4 - Elemento di lavoro  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>Percorso di fallback  
  Il percorso di fallback è la posizione in cui vengono inseriti il database di esplorazione del codice e i file di supporto IntelliSense (ad esempio, iPCH) quando il percorso principale (stessa directory della soluzione) non è in uso. Questa situazione può verificarsi quando l'utente non è in possesso delle autorizzazioni di scrittura per la directory della soluzione o se la directory della soluzione si trova in un dispositivo lento. Il percorso di fallback predefinito è nella directory temporanea dell'utente.  

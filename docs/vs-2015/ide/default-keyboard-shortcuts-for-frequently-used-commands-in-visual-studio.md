@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068873"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54770495"
 |[Compila](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Modifica](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Progetto](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Strumenti](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Finestra](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[Debug](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[File](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refactoring](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Visualizza](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> Compila
+## <a name="bkmk_build"></a> Compila
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ ms.locfileid: "54770495"
 |Build.Compile|CTRL+F7 [Globale]|
 |Build.RunCodeAnalysisonSolution|ALT+F11 [Globale]|
 
-##  <a name="bkmk_debug"></a> Debug
+## <a name="bkmk_debug"></a> Debug
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ ms.locfileid: "54770495"
 |Debug.StopDebugging|MAIUSC+F5 [Globale]|
 |Debug.ToggleBreakpoint|F9 [Globale]|
 
-##  <a name="bkmk_edit"></a> Modifica
+## <a name="bkmk_edit"></a> Modifica
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |Edit.WordDeleteToEnd|CTRL+CANC [Editor di testo]|
 |Edit.WordDeleteToStart|CTRL+BACKSPACE [Editor di testo]|
 
-##  <a name="bkmk_file"></a> File
+## <a name="bkmk_file"></a> File
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |File.SaveSelectedItems|CTRL+S [Globale]|
 |File.ViewinBrowser|CTRL+MAIUSC+W [Globale]|
 
-##  <a name="bkmk_project"></a> Progetto
+## <a name="bkmk_project"></a> Progetto
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|MAIUSC+ALT+A [Globale]|
 |Project.AddNewItem|CTRL+MAIUSC+A [Globale]|
 
-##  <a name="bkmk_refactor"></a> Refactoring
+## <a name="bkmk_refactor"></a> Refactoring
 
 |Comando|Tasto di scelta rapida [Contesto]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|CTRL+R, CTRL+M [Globale]|
 
-##  <a name="bkmk_tools"></a> Strumenti
+## <a name="bkmk_tools"></a> Strumenti
 
 |Comando|Tasto di scelta rapida [Contesto]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|CTRL+Alt+P [Globale]|
 
-##  <a name="bkmk_view"></a> Visualizza
+## <a name="bkmk_view"></a> Visualizza
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|
 |View.ViewCode|INVIO [Diagramma classi]<br /><br /> o F7 [Progettazione impostazioni]|
 |View.ViewDesigner|MAIUSC+F7 [Visualizzazione Origine editor HTML]|
 
-##  <a name="bkmk_window"></a> Finestra
+## <a name="bkmk_window"></a> Finestra
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|

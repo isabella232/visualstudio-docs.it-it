@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069863"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per altre informazioni, vedere [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -47,11 +47,11 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione utilizzata dagli utenti** selezionare il percorso a cui accederanno gli utenti per installare l'applicazione:
 
-   -   Se gli utenti eseguiranno l'installazione da un sito Web, fare clic su **Da un sito Web** e immettere un URL corrispondente al percorso file specificato nel passaggio precedente. Scegliere **Avanti**. In genere questa opzione viene usata quando si specifica un indirizzo FTP come percorso di pubblicazione. Il download diretto da FTP non è supportato, di conseguenza, è necessario specificare un URL.
+   - Se gli utenti eseguiranno l'installazione da un sito Web, fare clic su **Da un sito Web** e immettere un URL corrispondente al percorso file specificato nel passaggio precedente. Scegliere **Avanti**. In genere questa opzione viene usata quando si specifica un indirizzo FTP come percorso di pubblicazione. Il download diretto da FTP non è supportato, di conseguenza, è necessario specificare un URL.
 
-   -   Se gli utenti installeranno l'applicazione direttamente dalla condivisione file, fare clic su **Da un percorso UNC o condivisione file** e quindi scegliere **Avanti**. Questo vale per i percorsi di pubblicazione nel formato *c:\deploy\myapp* o *\\\server\myapp*.
+   - Se gli utenti installeranno l'applicazione direttamente dalla condivisione file, fare clic su **Da un percorso UNC o condivisione file** e quindi scegliere **Avanti**. Questo vale per i percorsi di pubblicazione nel formato *c:\deploy\myapp* o *\\\server\myapp*.
 
-   -   Se gli utenti eseguiranno l'installazione da un supporto rimovibile, fare clic su **Da CD-ROM o DVD-ROM** e quindi scegliere **Avanti**.
+   - Se gli utenti eseguiranno l'installazione da un supporto rimovibile, fare clic su **Da CD-ROM o DVD-ROM** e quindi scegliere **Avanti**.
 
 5. Nella pagina **Specificare se l'applicazione sarà disponibile offline** fare clic sull'opzione appropriata:
 
@@ -75,7 +75,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
     Verrà visualizzata la Pubblicazione guidata.
 
-3. Nella pagina **Specificare la posizione in cui pubblicare l'applicazione** immettere il percorso del file o il percorso FTP in cui verrà pubblicata l'applicazione, ad esempio *d:\deploy*. Per continuare, fare clic su **Avanti**.
+3. Nel **in cui si desidera pubblicare l'applicazione?** pagina, immettere il percorso del file o percorso FTP in cui verrà pubblicata l'applicazione, ad esempio *d:\deploy*. Per continuare, fare clic su **Avanti**.
 
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione usata dagli utenti** fare clic su **Da CD-ROM o DVD-ROM** e quindi fare clic su **Avanti**.
 

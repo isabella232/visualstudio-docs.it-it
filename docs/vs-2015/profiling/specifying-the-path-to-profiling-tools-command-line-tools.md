@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 209c2263e35bc4e6c5bfffb03b4a760e8cc15a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066936"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Specifica del percorso degli strumenti da riga di comando degli strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Il percorso degli strumenti da riga di comando di Strumenti di profilatura di [!
 ## <a name="64-bit-computers"></a>Computer a 64 bit  
  Nei computer a 64 bit specificare il percorso in base alla piattaforma di destinazione dell'applicazione da sottoporre a profilatura.  
   
--   La directory predefinita per gli strumenti di profilatura per applicazioni a 32 bit è la seguente:  
+- La directory predefinita per gli strumenti di profilatura per applicazioni a 32 bit è la seguente:  
   
      *Unità*\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
   
--   La directory predefinita per gli strumenti di profilatura per applicazioni a 64 bit è la seguente:  
+- La directory predefinita per gli strumenti di profilatura per applicazioni a 64 bit è la seguente:  
   
      *Unità*\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64

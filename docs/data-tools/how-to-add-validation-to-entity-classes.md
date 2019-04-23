@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070238"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -33,23 +33,23 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Per convalidare i dati durante la modifica del valore di una colonna
 
-1.  Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nella **O/R Designer**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nella **O/R Designer**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
-2.  In **Object Relational Designer** fare clic con il pulsante destro del mouse sulla classe per cui si vuole aggiungere la convalida e quindi scegliere **Visualizza codice**.
+2. In **Object Relational Designer** fare clic con il pulsante destro del mouse sulla classe per cui si vuole aggiungere la convalida e quindi scegliere **Visualizza codice**.
 
      Viene aperto l'editor del codice con una classe parziale per la classe di entità selezionata.
 
-3.  Posizionare il cursore nella classe parziale.
+3. Posizionare il cursore nella classe parziale.
 
-4.  Per i progetti di Visual Basic:
+4. Per i progetti di Visual Basic:
 
-    1.  Espandere l'elenco **Nome metodo**.
+    1. Espandere l'elenco **Nome metodo**.
 
-    2.  Individuare il metodo **OnNOMECOLONNAChanging** per la colonna a cui si vuole aggiungere la convalida.
+    2. Individuare il metodo **OnNOMECOLONNAChanging** per la colonna a cui si vuole aggiungere la convalida.
 
-    3.  Viene aggiunto un metodo `OnCOLUMNNAMEChanging` alla classe parziale.
+    3. Viene aggiunto un metodo `OnCOLUMNNAMEChanging` alla classe parziale.
 
-    4.  Aggiungere il codice riportato di seguito per verificare innanzitutto che sia stato immesso un valore e quindi per assicurarsi che il valore immesso per la colonna sia accettabile per l'applicazione. Poiché l'argomento `value` contiene il valore proposto, aggiungere logica per confermare che si tratta di un valore valido:
+    4. Aggiungere il codice riportato di seguito per verificare innanzitutto che sia stato immesso un valore e quindi per assicurarsi che il valore immesso per la colonna sia accettabile per l'applicazione. Poiché l'argomento `value` contiene il valore proposto, aggiungere logica per confermare che si tratta di un valore valido:
 
         ```vb
         If value.HasValue Then
@@ -62,7 +62,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
     Per i progetti C#:
 
-    Poiché C# progetti non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare i metodi parziali di modifica delle colonne. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di modifica delle colonne relativo alla colonna per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona un metodo parziale di modifica delle colonne:
+    Poiché i progetti c# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare i metodi parziali di modifica delle colonne. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di modifica delle colonne relativo alla colonna per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona un metodo parziale di modifica delle colonne:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -79,23 +79,23 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità
 
-1.  Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nella **O/R Designer**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nella **O/R Designer**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
-2.  Fare clic con il pulsante destro del mouse su un'area vuota in **Object Relational Designer** e quindi scegliere **Visualizza codice**.
+2. Fare clic con il pulsante destro del mouse su un'area vuota in **Object Relational Designer** e quindi scegliere **Visualizza codice**.
 
      Viene aperto l'editor del codice con una classe parziale per `DataContext`.
 
-3.  Posizionare il cursore nella classe parziale per `DataContext`.
+3. Posizionare il cursore nella classe parziale per `DataContext`.
 
-4.  Per i progetti di Visual Basic:
+4. Per i progetti di Visual Basic:
 
-    1.  Espandere l'elenco **Nome metodo**.
+    1. Espandere l'elenco **Nome metodo**.
 
-    2.  Fare clic su **UpdateNOMECLASSEDIENTITÀ**.
+    2. Fare clic su **UpdateNOMECLASSEDIENTITÀ**.
 
-    3.  Viene aggiunto un metodo `UpdateENTITYCLASSNAME` alla classe parziale.
+    3. Viene aggiunto un metodo `UpdateENTITYCLASSNAME` alla classe parziale.
 
-    4.  Accedere ai valori delle singole colonne usando l'argomento `instance`, come mostrato nel codice seguente:
+    4. Accedere ai valori delle singole colonne usando l'argomento `instance`, come mostrato nel codice seguente:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then
@@ -106,7 +106,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
     Per i progetti C#:
 
-    Poiché C# progetti non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare il parziale `UpdateCLASSNAME` metodo. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento per la classe in cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona un `UpdateCLASSNAME` metodo parziale:
+    Poiché i progetti c# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare parziale `UpdateCLASSNAME` (metodo). Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento per la classe in cui si desidera aggiungere la convalida. Il codice seguente è simile al codice che viene generato quando si seleziona un `UpdateCLASSNAME` metodo parziale:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

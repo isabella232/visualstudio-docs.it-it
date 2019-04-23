@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069719"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nessuna attività di thread da mostrare (Visualizzazione thread)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Quest'area mostra i dati sui thread non nascosti nell'intervallo di tempo attual
   
  Se non sono disponibili informazioni, controllare le impostazioni seguenti:  
   
--   Livello di zoom eccessivo Provare a fare zoom indietro oppure a scorrere per visualizzare altre attività di thread nell'intervallo.  
+- Livello di zoom eccessivo Provare a fare zoom indietro oppure a scorrere per visualizzare altre attività di thread nell'intervallo.  
   
--   Troppi thread nascosti In questo caso, provare a visualizzare tutti i thread.  
+- Troppi thread nascosti In questo caso, provare a visualizzare tutti i thread.  
   
--   Se è selezionata l'opzione **Just My Code**, è possibile visualizzare solo i dati sul codice. Provare a deselezionare questa impostazione per verificare se è presente qualsiasi attività di thread di sistema.  
+- Se è selezionata l'opzione **Just My Code**, è possibile visualizzare solo i dati sul codice. Provare a deselezionare questa impostazione per verificare se è presente qualsiasi attività di thread di sistema.  
   
--   Assicurarsi che sia impostato un livello di soglia basso per Riduzione rumore.  
+- Assicurarsi che sia impostato un livello di soglia basso per Riduzione rumore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

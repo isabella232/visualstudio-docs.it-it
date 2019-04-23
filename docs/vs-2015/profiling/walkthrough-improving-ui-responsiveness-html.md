@@ -19,30 +19,30 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071642"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (JavaScript)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata descrive i passaggi per identificare e risolvere un problema di prestazioni tramite il [profiler della velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md). Il profiler è disponibile in Visual Studio per le app universali di Windows e le app di Windows Store con JavaScript. In questo scenario creerai un'app di test delle prestazioni che aggiorna gli elementi DOM troppo frequentemente e userai il profiler per identificare e risolvere il problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Creazione ed esecuzione dell'app di test delle prestazioni  
   
-1.  In Visual Studio creare un nuovo progetto JavaScript universale di Windows. Selezionare **File / Nuovo / Progetto**. Scegliere **JavaScript** nel riquadro sinistro, quindi scegliere **Windows**, **Windows 10** e infine **Universale** o **Windows Phone**.  
+1. In Visual Studio creare un nuovo progetto JavaScript universale di Windows. Selezionare **File / Nuovo / Progetto**. Scegliere **JavaScript** nel riquadro sinistro, quindi scegliere **Windows**, **Windows 10** e infine **Universale** o **Windows Phone**.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  I risultati diagnostici illustrati in questo argomento sono relativi a un'app Windows 8.  
   
-3.  Scegliere uno dei modelli di progetto vuoti nel riquadro centrale, ad esempio **Applicazione vuota**.  
+3. Scegliere uno dei modelli di progetto vuoti nel riquadro centrale, ad esempio **Applicazione vuota**.  
   
-4.  Nella casella **Nome** specificare un nome come `JS_Perf_Tester`, quindi scegliere **OK**.  
+4. Nella casella **Nome** specificare un nome come `JS_Perf_Tester`, quindi scegliere **OK**.  
   
-5.  In **Esplora soluzioni** aprire il file default.html e incollare il codice seguente tra i tag \<body>:  
+5. In **Esplora soluzioni** aprire il file default.html e incollare il codice seguente tra i tag \<body>:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
     </div>  
     ```  
   
-6.  Apri default.css e aggiungi il codice CSS seguente:  
+6. Apri default.css e aggiungi il codice CSS seguente:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
     }  
     ```  
   
-7.  Apri default.js e sostituisci tutto il codice con il seguente:  
+7. Apri default.js e sostituisci tutto il codice con il seguente:  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
     ```  
   
-8.  Premere il tasto F5 per avviare il debug. Verificare che il pulsante **In attesa di valori** sia presente nella pagina.  
+8. Premere il tasto F5 per avviare il debug. Verificare che il pulsante **In attesa di valori** sia presente nella pagina.  
   
 9. Scegliere **In attesa di valori** e verificare che il testo e il colore del pulsante si aggiornino circa una volta al secondo. Si tratta di un comportamento correlato alla progettazione.  
   
@@ -204,9 +204,9 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
      Dai dati puoi rilevare diversi fatti. Ad esempio:  
   
-    -   Ogni evento `Timer`, codificato con colori per poterlo identificare come evento di scripting, include una chiamata a `document.createElement`, seguita da un calcolo di stile e da una chiamata a `style.backgroundColor` e `appendChild()`.  
+    - Ogni evento `Timer`, codificato con colori per poterlo identificare come evento di scripting, include una chiamata a `document.createElement`, seguita da un calcolo di stile e da una chiamata a `style.backgroundColor` e `appendChild()`.  
   
-    -   Nel breve intervallo di tempo selezionato (circa uno-due secondi), hanno luogo numerosi eventi `Timer`, `Layout` e `Paint`. Gli eventi `Timer` si verificano molto più frequentemente dell'aggiornamento al secondo che si verifica dopo l'esecuzione dell'app e la scelta del pulsante **In attesa di valori**.  
+    - Nel breve intervallo di tempo selezionato (circa uno-due secondi), hanno luogo numerosi eventi `Timer`, `Layout` e `Paint`. Gli eventi `Timer` si verificano molto più frequentemente dell'aggiornamento al secondo che si verifica dopo l'esecuzione dell'app e la scelta del pulsante **In attesa di valori**.  
   
 10. A scopo di analisi, scegli il collegamento alla funzione anonima per uno degli eventi `Timer` nel riquadro inferiore sinistro. La funzione seguente si apre in default.js:  
   
@@ -225,7 +225,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
 ### <a name="fixing-the-performance-issue"></a>Risoluzione del problema di prestazioni  
   
-1.  Sostituisci la funzione `update()` con il codice seguente:  
+1. Sostituisci la funzione `update()` con il codice seguente:  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
      La versione corretta del codice include un ritardo di 1000 millisecondi, che è stato omesso dalla versione precedente del codice, con conseguente uso di un valore di ritardo predefinito. Dai dati del profiler, risulta che il valore predefinito è zero millisecondi, che comporta un'esecuzione della funzione `setValues()` troppo frequente.  
   
-2.  Esegui nuovamente il profiler della velocità di risposta interfaccia utente HTML e verifica il grafico di utilizzo della CPU. Noterai che il numero eccessivo di eventi non si verifica più e che l'utilizzo della CPU è sceso quasi a zero. Problema risolto.  
+2. Esegui nuovamente il profiler della velocità di risposta interfaccia utente HTML e verifica il grafico di utilizzo della CPU. Noterai che il numero eccessivo di eventi non si verifica più e che l'utilizzo della CPU è sceso quasi a zero. Problema risolto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md)

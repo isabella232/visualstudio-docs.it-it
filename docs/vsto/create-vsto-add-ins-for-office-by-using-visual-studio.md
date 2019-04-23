@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070921"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Creare componenti aggiuntivi VSTO per Office con Visual Studio
   È possibile usare Microsoft Office Developer Tools in Visual Studio per creare applicazioni .NET Framework che estendono Office. Queste applicazioni sono denominate anche *soluzioni Office*.
@@ -29,9 +29,9 @@ ms.locfileid: "56644380"
 
  Per informazioni aggiornate sullo sviluppo di Office, vedere i centri per sviluppatori seguenti in MSDN:
 
--   Il [sviluppo di Office con il portale per sviluppatori di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) contiene collegamenti a informazioni sui prodotti, esempi di codice, video e risorse della community sull'uso di Visual Studio per personalizzare le applicazioni di Office come parte delle soluzioni .
+- Il [sviluppo di Office con il portale per sviluppatori di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) contiene collegamenti a informazioni sui prodotti, esempi di codice, video e risorse della community sull'uso di Visual Studio per personalizzare le applicazioni di Office come parte delle soluzioni .
 
--   Il [Centro per sviluppatori di Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contiene collegamenti ad articoli tecnici, esempi di codice, download, informazioni sulle community, supporto e altra documentazione sulle personalizzazioni di Office Business Application (OBA ).
+- Il [Centro per sviluppatori di Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contiene collegamenti ad articoli tecnici, esempi di codice, download, informazioni sulle community, supporto e altra documentazione sulle personalizzazioni di Office Business Application (OBA ).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

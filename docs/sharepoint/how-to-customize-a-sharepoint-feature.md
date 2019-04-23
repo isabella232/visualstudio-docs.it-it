@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddf2d14d8241f35ac0d83cb0a7f4dab0dd3f6f32
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067261"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Procedura: Personalizzare una funzionalità SharePoint
   È possibile creare e personalizzare le funzionalità di SharePoint usando la finestra di progettazione di funzionalità in Visual Studio. Ad esempio, è possibile impostare l'ambito di funzionalità e aggiungere altre funzionalità come dipendenze. Per impostazione predefinita, la finestra di progettazione di funzionalità viene aperto quando si aggiunge una nuova funzionalità in Esplora soluzioni o Esplora pacchetti di SharePoint.
@@ -31,22 +31,22 @@ ms.locfileid: "56618185"
 
 #### <a name="to-open-the-feature-designer"></a>Per aprire la finestra di progettazione di funzionalità
 
-1.  Nelle **Esplora soluzioni**, espandere **funzionalità**.
+1. Nelle **Esplora soluzioni**, espandere **funzionalità**.
 
-2.  Fare doppio clic sui *Feature1* elemento n o aprire il menu di scelta rapida per il *Feature1* elemento e quindi scegliere **Progettazione viste**.
+2. Fare doppio clic sui *Feature1* elemento n o aprire il menu di scelta rapida per il *Feature1* elemento e quindi scegliere **Progettazione viste**.
 
 ## <a name="view-the-packaged-manifest-file"></a>Visualizzare il file manifesto nel pacchetto
  È possibile usare la finestra di progettazione di funzionalità per modificare e generare il file manifesto nel pacchetto per la funzionalità (*feature. XML*). Quindi, è possibile visualizzare il codice XML per questo file in Visual Studio.
 
 #### <a name="to-view-the-packaged-manifest-file"></a>Per visualizzare il file manifesto nel pacchetto
 
-1.  Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda.
+1. Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Per visualizzare il file manifesto nel pacchetto tramite Esplora soluzioni
 
-1.  Nelle **Esplora soluzioni**, scegliere il **Mostra tutti i file** icona.
+1. Nelle **Esplora soluzioni**, scegliere il **Mostra tutti i file** icona.
 
-2.  Espandere le funzionalità espandere FeatureName, espandere FeatureName.feature e quindi aprire il  *\<FeatureName >. Template* file.
+2. Espandere le funzionalità espandere FeatureName, espandere FeatureName.feature e quindi aprire il  *\<FeatureName >. Template* file.
 
     > [!NOTE]
     >  Quando si apre il file XML manifesto di funzionalità modello, i file vengono convalidati automaticamente e possono essere ignorati gli avvisi visualizzati nella finestra Elenco errori.
@@ -56,13 +56,13 @@ ms.locfileid: "56618185"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Per modificare il modello di manifesto usando l'Editor XML
 
-1.  Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi scegliere il **aperto nell'Editor XML** collegamento.
+1. Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi scegliere il **aperto nell'Editor XML** collegamento.
 
      Le modifiche al codice XML vengono unite nel file manifesto nel pacchetto.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Per modificare il modello di manifesto usando il riquadro modello di manifesto
 
-1.  Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi modificare il codice XML che viene visualizzato nel riquadro modello di manifesto.
+1. Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda, quindi espandere il **opzioni di modifica** nodo e quindi modificare il codice XML che viene visualizzato nel riquadro modello di manifesto.
 
      Le modifiche al codice XML visualizzato nei **Preview del manifesto nel pacchetto** riquadro.
 
@@ -74,9 +74,9 @@ ms.locfileid: "56618185"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Per sovrascrivere il file manifesto, disabilitare la finestra di progettazione
 
-1.  Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda.
+1. Nel **Progettazione funzionalità**, scegliere il **manifesto** scheda.
 
-2.  Espandere la **opzioni di modifica** nodo, scegliere il **Sovrascrivi XML e modifica manifesto generato nell'editor XML** collegamento e quindi scegliere il **Sì** pulsante.
+2. Espandere la **opzioni di modifica** nodo, scegliere il **Sovrascrivi XML e modifica manifesto generato nell'editor XML** collegamento e quindi scegliere il **Sì** pulsante.
 
      Il modello viene aggiornato con il file manifesto nel pacchetto corrente.
 
@@ -85,9 +85,9 @@ ms.locfileid: "56618185"
 
 #### <a name="to-re-enable-the-designer"></a>Per abilitare nuovamente la finestra di progettazione
 
-1.  Nel **Progettazione funzionalità**, scegliere il **variabile Discard modifiche al manifesti e abilitare di nuovo la finestra di progettazione** collegamento e quindi scegliere il **Sì** pulsante.
+1. Nel **Progettazione funzionalità**, scegliere il **variabile Discard modifiche al manifesti e abilitare di nuovo la finestra di progettazione** collegamento e quindi scegliere il **Sì** pulsante.
 
-2.  Il modello viene aggiornato con il testo originale e le modifiche al codice XML vengono perse.
+2. Il modello viene aggiornato con il testo originale e le modifiche al codice XML vengono perse.
 
 ## <a name="see-also"></a>Vedere anche
 - [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

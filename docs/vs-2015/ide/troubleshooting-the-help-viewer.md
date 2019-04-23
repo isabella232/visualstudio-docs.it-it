@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067040"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Risoluzione dei problemi relativi al visualizzatore della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ In questo argomento vengono illustrati i problemi che potrebbero verificarsi con
   
 #### <a name="to-activate-windows-search-service"></a>Per attivare il servizio Windows Search  
   
-1.  Avviare Server Manager.  
+1. Avviare Server Manager.  
   
-2.  Nel riquadro di spostamento a sinistra scegliere **Ruoli**.  
+2. Nel riquadro di spostamento a sinistra scegliere **Ruoli**.  
   
-3.  Nel riquadro Riepilogo ruoli scegliere **Aggiungi ruolo**.  
+3. Nel riquadro Riepilogo ruoli scegliere **Aggiungi ruolo**.  
   
-4.  Scegliere il ruolo Servizi file e il pulsante **Avanti**.  
+4. Scegliere il ruolo Servizi file e il pulsante **Avanti**.  
   
-5.  Scegliere il servizio ruolo Windows Search.  
+5. Scegliere il servizio ruolo Windows Search.  
   
 ## <a name="additional-resources"></a>Risorse aggiuntive  
  È possibile ottenere altre informazioni e offrire commenti e suggerimenti sul visualizzatore della Guida mediante le risorse seguenti:  

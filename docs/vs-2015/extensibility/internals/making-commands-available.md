@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071226"
 ---
 # <a name="making-commands-available"></a>Miglioramento della disponibilità dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia utente (UI) possa diventare saturi con i comandi. È possibile programmare il pacchetto per contribuire a ridurre questo problema, come indicato di seguito:  
   
--   Il pacchetto di programma in modo che venga caricato solo quando un utente ne richiede.  
+- Il pacchetto di programma in modo che venga caricato solo quando un utente ne richiede.  
   
--   Il pacchetto del programma in modo che i relativi comandi vengono visualizzati solo quando potrebbero essere necessari nel contesto dello stato corrente dell'ambiente di sviluppo integrato (IDE).  
+- Il pacchetto del programma in modo che i relativi comandi vengono visualizzati solo quando potrebbero essere necessari nel contesto dello stato corrente dell'ambiente di sviluppo integrato (IDE).  
   
 ## <a name="delayed-loading"></a>Il caricamento ritardato  
  Il modo consueto per abilitare il caricamento ritardato è progettare il pacchetto VSPackage in modo che i relativi comandi vengono visualizzati nell'interfaccia utente, ma non è possibile caricare il pacchetto stesso fino a quando un utente fa clic su uno dei comandi. A tale scopo, nel file vsct, creare i comandi non con alcun flag dei comandi.  
@@ -94,11 +94,11 @@ Quando vengono aggiunti più pacchetti VSPackage in Visual Studio, l'interfaccia
 ### <a name="custom-context-guids"></a>GUID di contesto personalizzato  
  Se un contesto di comandi appropriata che GUID non è già definito, è possibile definire uno nel pacchetto VSPackage e programmarlo per essere attivi o inattivi in base alle esigenze per controllare la visibilità dei comandi. Usare il <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio:  
   
--   Registra i GUID di contesto (chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> (metodo)).  
+- Registra i GUID di contesto (chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> (metodo)).  
   
--   Ottenere lo stato di un contesto `GUID` (chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> (metodo)).  
+- Ottenere lo stato di un contesto `GUID` (chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> (metodo)).  
   
--   Contesto di attivazione `GUID`s e disattivare (chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> (metodo)).  
+- Contesto di attivazione `GUID`s e disattivare (chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> (metodo)).  
   
     > [!CAUTION]
     >  Assicurarsi che il pacchetto VSPackage non influiscono sullo stato di qualsiasi GUID di contesto esistenti perché altri pacchetti VSPackage potrebbero dipendono da essi.  

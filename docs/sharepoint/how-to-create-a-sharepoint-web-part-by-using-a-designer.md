@@ -14,39 +14,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c049a6f6a5d57ea5c283b262f6f975c0838ac94f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 354fe62914a8708ac63acdde7d30060aca8d52fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072019"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Procedura: Creare una Web Part di SharePoint usando una finestra di progettazione
   È possibile creare una web part aggiungendo un **Web Part visiva** elemento a qualsiasi progetto SharePoint. Verrà aperta la finestra di progettazione di Visual Web Developer in Visual Studio in cui è possibile aggiungere controlli e codice per la web part. Web part visive funzionano allo stesso modo come web part. L'unica differenza è che la progettazione di web part visive nella finestra di progettazione di Visual Web Developer.
 
 ### <a name="to-create-a-project-for-visual-web-parts"></a>Per creare un progetto per la web part visive
 
-1.  Nella barra dei menu scegliere **File** >**Nuovo** > **Progetto**.
+1. Nella barra dei menu scegliere **File** >**Nuovo** > **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2.  Nel **nuovo progetto** in presenza di una finestra di dialogo **Visual C#**  oppure **Visual Basic**, espandere il **Office/SharePoint** nodo e quindi Scegliere il **soluzioni SharePoint** categoria.
+2. Nel **nuovo progetto** in presenza di una finestra di dialogo **Visual C#**  oppure **Visual Basic**, espandere il **Office/SharePoint** nodo e quindi Scegliere il **soluzioni SharePoint** categoria.
 
-3.  Nell'elenco dei modelli di progetto, scegliere **SharePoint 2013 - Web Part visiva**, quindi scegliere il **OK** pulsante.
+3. Nell'elenco dei modelli di progetto, scegliere **SharePoint 2013 - Web Part visiva**, quindi scegliere il **OK** pulsante.
 
      Il **Personalizzazione guidata SharePoint** viene visualizzata.
 
-4.  Nel **specificare il livello di sito e la sicurezza per il debug** pagina, specificare l'URL del sito di SharePoint che nel computer locale, e quindi scegliere il **fine** pulsante.
+4. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, specificare l'URL del sito di SharePoint che nel computer locale, e quindi scegliere il **fine** pulsante.
 
      Nelle **Esplora soluzioni**, viene visualizzata una web part. Dopo aver progettato la web part nella finestra di progettazione di Visual Web Developer, si sarà testarlo nel sito specificato.
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Per aggiungere una web part visiva a un progetto di SharePoint esistente
 
-1.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+1. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-2.  Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **Office/SharePoint** nodo.
+2. Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **Office/SharePoint** nodo.
 
-3.  Nell'elenco dei modelli di progetto, scegliere **Web Part visiva**, assegnare il nome e quindi scegliere il **Add** pulsante.
+3. Nell'elenco dei modelli di progetto, scegliere **Web Part visiva**, assegnare il nome e quindi scegliere il **Add** pulsante.
 
      Nelle **Esplora soluzioni**, viene visualizzata la web part. Dopo aver progettato la web part nella finestra di progettazione di Visual Web Developer, si sarà testarlo nel sito specificato.
 

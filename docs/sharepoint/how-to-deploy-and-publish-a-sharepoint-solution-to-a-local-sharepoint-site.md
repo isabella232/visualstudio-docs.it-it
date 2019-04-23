@@ -13,31 +13,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6911c237f5994e809900fcf3bd49e3b9cf83e31c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067755"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procedura: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale
   È possibile distribuire o pubblicare soluzioni SharePoint in un server SharePoint locale nel computer di sviluppo. Le copie di processo di distribuzione di *wsp* file nel server SharePoint, installa la soluzione e quindi attiva le funzionalità. La pubblicazione di elaborare solo copie il *wsp* file nel server SharePoint e lo installa. È necessario attivare manualmente per abilitarlo in SharePoint.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Per distribuire una soluzione di SharePoint al server SharePoint locale
 
-1.  Nelle **Esplora soluzioni**, scegliere il progetto che si desidera distribuire.
+1. Nelle **Esplora soluzioni**, scegliere il progetto che si desidera distribuire.
 
-2.  Nella barra dei menu, scegliere **compilare**, **Distribuisci soluzione**.
+2. Nella barra dei menu, scegliere **compilare**, **Distribuisci soluzione**.
 
      Il *wsp* file viene creato e installato nel server SharePoint locale. Inoltre, vengono attivate le funzionalità.
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Per pubblicare una soluzione di SharePoint in un server SharePoint locale
 
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di SharePoint che si desidera pubblicare e quindi scegliere **Publish**.
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di SharePoint che si desidera pubblicare e quindi scegliere **Publish**.
 
-2.  Nel **Publish** finestra di dialogo scegliere la **pubblicare nel File System** pulsante di opzione.
+2. Nel **Publish** finestra di dialogo scegliere la **pubblicare nel File System** pulsante di opzione.
 
-3.  Nel **percorso di destinazione** casella di testo, immettere un percorso locale e quindi scegliere il **Publish** pulsante.
+3. Nel **percorso di destinazione** casella di testo, immettere un percorso locale e quindi scegliere il **Publish** pulsante.
 
      Viene visualizzato lo stato della pubblicazione in Visual Studio **Output** finestra. Quando il processo viene completato, la soluzione (*wsp*) file viene installato nel server SharePoint locale. Tuttavia, deve ancora essere attivato da utilizzare in SharePoint. Se il file della soluzione esiste già, un errore si verifica e chiede se si desidera sovrascrivere il file esistente. Per informazioni sull'aggiornamento del pacchetto, vedere la sezione sull'aggiornamento di pacchetti remoti in [come: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 

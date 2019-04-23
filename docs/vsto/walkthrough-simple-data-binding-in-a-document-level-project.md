@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066649"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding semplice in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding in un progetto a livello di documento. Un singolo campo dati in un database di SQL Server è associato a un intervallo denominato in Microsoft Office Excel. La procedura dettagliata illustra inoltre come aggiungere i controlli che consentono di scorrere tutti i record nella tabella.
@@ -41,13 +41,13 @@ ms.locfileid: "56640268"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Accesso a un server con il database di esempio Northwind di SQL Server.
+- Accesso a un server con il database di esempio Northwind di SQL Server.
 
--   Autorizzazioni per leggere e scrivere nel database di SQL Server.
+- Autorizzazioni per leggere e scrivere nel database di SQL Server.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  In questo passaggio si creerà un progetto cartella di lavoro di Excel.
@@ -88,21 +88,21 @@ ms.locfileid: "56640268"
 
 ### <a name="to-add-two-named-ranges"></a>Per aggiungere due gli intervalli denominati
 
-1.  Verificare che il *My Binding.xlsx dati semplice* cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
+1. Verificare che il *My Binding.xlsx dati semplice* cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
 
-2.  Aprire il **Zdroje dat** finestra ed espandere le **clienti** nodo.
+2. Aprire il **Zdroje dat** finestra ed espandere le **clienti** nodo.
 
-3.  Selezionare il **CompanyName** colonna e quindi fare clic sulla freccia giù visualizzata.
+3. Selezionare il **CompanyName** colonna e quindi fare clic sulla freccia giù visualizzata.
 
-4.  Selezionare **NamedRange** nell'elenco a discesa, quindi trascinare il **CompanyName** colonna cella **A1**.
+4. Selezionare **NamedRange** nell'elenco a discesa, quindi trascinare il **CompanyName** colonna cella **A1**.
 
      Oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo denominato `companyNameNamedRange` viene memorizzato nella cella **A1**. Allo stesso tempo, un <xref:System.Windows.Forms.BindingSource> denominate `customersBindingSource`, un adattatore di tabella e un <xref:System.Data.DataSet> istanza vengono aggiunte al progetto. Il controllo viene associato ai <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato ai <xref:System.Data.DataSet> istanza.
 
-5.  Selezionare il **CustomerID** colonna il **Zdroje dat** finestra e quindi fare clic sulla freccia giù visualizzata.
+5. Selezionare il **CustomerID** colonna il **Zdroje dat** finestra e quindi fare clic sulla freccia giù visualizzata.
 
-6.  Fare clic su **NamedRange** nell'elenco a discesa, quindi trascinare il **CustomerID** colonna cella **B1**.
+6. Fare clic su **NamedRange** nell'elenco a discesa, quindi trascinare il **CustomerID** colonna cella **B1**.
 
-7.  Un'altra <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo denominato `customerIDNamedRange` viene memorizzato nella cella **B1**e associato ai <xref:System.Windows.Forms.BindingSource>.
+7. Un'altra <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo denominato `customerIDNamedRange` viene memorizzato nella cella **B1**e associato ai <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-four-buttons"></a>Aggiungere quattro pulsanti
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640268"
 
 ### <a name="to-move-to-the-first-record"></a>Per spostare il primo record
 
-1.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button1` pulsante e aggiungere il codice seguente per spostare il primo record:
+1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button1` pulsante e aggiungere il codice seguente per spostare il primo record:
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>Per passare al record precedente
 
-1.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button2` pulsante e aggiungere il codice seguente per spostare nuovamente la posizione di uno:
+1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button2` pulsante e aggiungere il codice seguente per spostare nuovamente la posizione di uno:
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>Per passare al record successivo
 
-1.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button3` pulsante e aggiungere il codice seguente per spostare la posizione di uno:
+1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button3` pulsante e aggiungere il codice seguente per spostare la posizione di uno:
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>Per spostarsi all'ultimo record
 
-1.  Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button4` pulsante e aggiungere il codice seguente per passare all'ultimo record:
+1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `Button4` pulsante e aggiungere il codice seguente per passare all'ultimo record:
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640268"
 
 ### <a name="to-test-your-workbook"></a>Per testare la cartella di lavoro
 
-1.  Premere **F5** per eseguire il progetto.
+1. Premere **F5** per eseguire il progetto.
 
-2.  Verificare che il primo record visualizzato nelle celle **A1** e **B1**.
+2. Verificare che il primo record visualizzato nelle celle **A1** e **B1**.
 
-3.  Scegliere il **>** (`Button3`) pulsante e verificare che il record successivo nella cella **A1** e **B1**.
+3. Scegliere il **>** (`Button3`) pulsante e verificare che il record successivo nella cella **A1** e **B1**.
 
-4.  Fare clic sugli altri pulsanti di scorrimento per confermare che il record viene modificato nel modo previsto.
+4. Fare clic sugli altri pulsanti di scorrimento per confermare che il record viene modificato nel modo previsto.
 
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata illustra le nozioni di base di associazione di un intervallo denominato a un campo in un database. Ecco alcune possibili attività successive:
 
--   Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Associare le celle a più colonne in una tabella, invece di un singolo campo. Per altre informazioni, vedere [Procedura dettagliata: Data binding complesso in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
+- Associare le celle a più colonne in una tabella, invece di un singolo campo. Per altre informazioni, vedere [Procedura dettagliata: Data binding complesso in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
--   Usare un <xref:System.Windows.Forms.BindingNavigator> per scorrere i record di controllo. Per altre informazioni, vedere [Procedura: Esplorare i dati con il controllo BindingNavigator di Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Usare un <xref:System.Windows.Forms.BindingNavigator> per scorrere i record di controllo. Per altre informazioni, vedere [Procedura: Esplorare i dati con il controllo BindingNavigator di Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Vedere anche
 - [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

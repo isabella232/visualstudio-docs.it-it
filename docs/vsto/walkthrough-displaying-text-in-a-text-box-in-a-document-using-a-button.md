@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df33470ea76ac29626459c1240873068180b0860
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071759"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante
   Questa procedura dettagliata illustra come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Office Word.
@@ -35,16 +35,16 @@ ms.locfileid: "56600984"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-the-project"></a>Creare il progetto
  Il primo passaggio consiste nel creare un progetto Documento di Word.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1.  Creare un progetto documento di Word con il nome **My Word Button**. Nella procedura guidata, selezionare **creare un nuovo documento**.
+1. Creare un progetto documento di Word con il nome **My Word Button**. Nella procedura guidata, selezionare **creare un nuovo documento**.
 
      Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -68,7 +68,7 @@ ms.locfileid: "56600984"
 
 5. Trascinare un **pulsante** al documento e modificare le proprietà seguenti.
 
-   |Proprietà|Value|
+   |Proprietà|Valore|
    |--------------|-----------|
    |**Name**|**insertText**|
    |**per**|**Inserisci testo**|
@@ -80,14 +80,14 @@ ms.locfileid: "56600984"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Per scrivere nella casella di testo quando si fa clic sul pulsante
 
-1.  Nelle **Esplora soluzioni**, fare doppio clic su **ThisDocument**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
+1. Nelle **Esplora soluzioni**, fare doppio clic su **ThisDocument**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
 
-2.  Aggiungere il codice seguente al gestore eventi <xref:System.Windows.Forms.Control.Click> del pulsante.
+2. Aggiungere il codice seguente al gestore eventi <xref:System.Windows.Forms.Control.Click> del pulsante.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]
 
-3.  In C# è necessario aggiungere un gestore eventi per il pulsante all'evento <xref:Microsoft.Office.Tools.Word.Document.Startup>. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. In C# è necessario aggiungere un gestore eventi per il pulsante all'evento <xref:Microsoft.Office.Tools.Word.Document.Startup>. Per informazioni sulla creazione di gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
@@ -96,18 +96,18 @@ ms.locfileid: "56600984"
 
 ### <a name="to-test-your-document"></a>Per testare il documento
 
-1.  Premere **F5** per eseguire il progetto.
+1. Premere **F5** per eseguire il progetto.
 
-2.  Fare clic sul pulsante.
+2. Fare clic sul pulsante.
 
-3.  Verificare che **Hello World!** viene visualizzato nella casella di testo.
+3. Verificare che **Hello World!** viene visualizzato nella casella di testo.
 
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata illustra i concetti di base relativi all'uso di pulsanti e caselle di testo nei documenti di Word. Ecco alcune possibili attività successive:
 
--   Uso di una casella combinata per modificare la formattazione. Per altre informazioni, vedere [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Uso di una casella combinata per modificare la formattazione. Per altre informazioni, vedere [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
--   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Controlli Windows Form in panoramica di documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

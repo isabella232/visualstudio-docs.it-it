@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 3: Impostare le proprietà del form | Microsoft Docs'
+title: 'Passaggio 3: Impostare le proprietà del Form | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067248"
 ---
-# <a name="step-3-set-your-form-properties"></a>Passaggio 3: impostare le proprietà del form
+# <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto del form.  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Esercitazione 1: creare un visualizzatore di immagini in Visual Basic - Video 1) o [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Esercitazione 1: creare un visualizzatore di immagini in C# - Video 1). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
+ ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo")per una versione video di questo argomento, vedere [esercitazione 1: Creare un Visualizzatore immagini in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [esercitazione 1: Creare un Visualizzatore immagini in C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Per impostare le proprietà del form  
   
@@ -64,14 +64,14 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
   
 7. Prima di andare al passaggio successivo, arrestare il programma, perché l'IDE non consente di modificare il programma mentre è in esecuzione. È possibile utilizzare uno qualsiasi dei seguenti metodi per arrestare il programma.  
   
-   -   Sulla barra degli strumenti scegliere il pulsante **Termina debug**.  
+   - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.  
   
-   -   Sulla barra del menu scegliere **Debug**, **Termina debug**.  
+   - Sulla barra del menu scegliere **Debug**, **Termina debug**.  
   
-   -   Scegliere il pulsante X nell'angolo superiore della finestra **Form1**.  
+   - Scegliere il pulsante X nell'angolo superiore della finestra **Form1**.  
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: Creare il layout del form con un controllo TableLayoutPanel Control](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Creare il layout del form con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).

@@ -9,38 +9,38 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068099"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedura: Creare una libreria attività
 Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello Libreria attività in [!INCLUDE[vs2010](../includes/vs2010-md.md)] è stato fornito per consentire di creare tali attività personalizzate usando visivamente [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Per creare una libreria attività flussi di lavoro  
   
-1.  Avviare [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1. Avviare [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
-2.  Nel **File** dal menu **New**, quindi selezionare **progetto...** .  
+2. Nel **File** dal menu **New**, quindi selezionare **progetto...** .  
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-3.  Nel **tipi di progetto** riquadro, selezionare **flusso di lavoro** dal **Visual C#** progetti o **Visual Basic** raggruppamenti in base il preferenze della lingua.  
+3. Nel **tipi di progetto** riquadro, selezionare **flusso di lavoro** dal **Visual c#** progetti o **Visual Basic** raggruppamenti in base il preferenze della lingua.  
   
-4.  Nel **modelli** riquadro, selezionare **libreria attività**.  
+4. Nel **modelli** riquadro, selezionare **libreria attività**.  
   
-5.  Nel **nome** casella, digitare un nome descrittivo per il progetto affinché sia facilmente identificabile.  
+5. Nel **nome** casella, digitare un nome descrittivo per il progetto affinché sia facilmente identificabile.  
   
-6.  Nel **posizione** casella, digitare nella directory in cui si desidera salvare il progetto oppure fare clic su **Sfoglia** per spostarsi su di esso.  
+6. Nel **posizione** casella, digitare nella directory in cui si desidera salvare il progetto oppure fare clic su **Sfoglia** per spostarsi su di esso.  
   
-7.  Nel **soluzione** casella, digitare un nome descrittivo per la soluzione, quindi fare clic su **OK**.  
+7. Nel **soluzione** casella, digitare un nome descrittivo per la soluzione, quindi fare clic su **OK**.  
   
     > [!NOTE]
     >  Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)], fare clic con il pulsante destro la soluzione in **Esplora soluzioni**e selezionare **Add**, quindi  **Nuovo progetto...** Per aprire la **nuovo progetto** nella finestra di dialogo. Procedere come descritto sopra in questa procedura.  
   
-8.  Il modello di progetto crea una definizione di attività in XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] verrà visualizzato con l'area di disegno per l'attività personalizzata.  
+8. Il modello di progetto crea una definizione di attività in XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] verrà visualizzato con l'area di disegno per l'attività personalizzata.  
   
 9. Trascinare un'attività dal **casella degli strumenti** all'area di progettazione per includerla nell'attività personalizzata.  
   

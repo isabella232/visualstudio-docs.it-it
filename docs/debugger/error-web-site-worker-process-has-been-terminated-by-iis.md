@@ -1,5 +1,5 @@
 ---
-title: 'Errore: il processo di lavoro di sito Web è stato terminato da IIS | Microsoft Docs'
+title: 'Errore: Processo di lavoro del sito Web è stato terminato da IIS | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072656"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: il processo di lavoro del sito Web è stato terminato da IIS
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: Il processo di lavoro del sito Web è stato terminato da IIS
 L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseguenza, Internet Information Services (IIS) presuppone che il processo di lavoro non risponda e lo termina.
 
  Per continuare a eseguire il debug è necessario configurare IIS in modo che consenta al processo di lavoro di procedere. Questo messaggio di errore non viene visualizzato con le versioni di IIS precedenti a IIS 7.
@@ -30,9 +30,9 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
 
 1. Aprire la finestra **Strumenti di amministrazione**.
 
-   1.  Fare clic su **Start**, quindi scegliere **Pannello di controllo**.
+   1. Fare clic su **Start**, quindi scegliere **Pannello di controllo**.
 
-   2.  Nel **Pannello di controllo** scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.
+   2. Nel **Pannello di controllo** scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.
 
 2. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione Internet Information Services (IIS)**.
 

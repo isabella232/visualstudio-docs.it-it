@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: abilitare le impostazioni di sicurezza ClickOnce | Microsoft Docs'
+title: 'Procedura: Abilitare le impostazioni di sicurezza ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89db12596754630eddaf78b9429eb2983625481
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599841"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068938"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Procedura: Abilitare le impostazioni di sicurezza ClickOnce
 Sicurezza dall'accesso di codice per applicazioni ClickOnce deve essere abilitata per poter pubblicare l'applicazione. Ciò avviene automaticamente quando si pubblica un'applicazione usando la pubblicazione guidata.
@@ -32,11 +32,11 @@ Sicurezza dall'accesso di codice per applicazioni ClickOnce deve essere abilitat
 
 ### <a name="to-enable-clickonce-security-settings"></a>Per abilitare le impostazioni di sicurezza ClickOnce
 
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2.  Fare clic sulla scheda **Sicurezza** .
+2. Fare clic sulla scheda **Sicurezza** .
 
-3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .
+3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .
 
      È ora possibile personalizzare le impostazioni di sicurezza per l'applicazione nella pagina sicurezza.
 
@@ -45,11 +45,11 @@ Sicurezza dall'accesso di codice per applicazioni ClickOnce deve essere abilitat
 
 ### <a name="to-disable-clickonce-security-settings"></a>Per disabilitare le impostazioni di sicurezza ClickOnce
 
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2.  Fare clic sulla scheda **Sicurezza** .
+2. Fare clic sulla scheda **Sicurezza** .
 
-3.  Cancella il **Enable ClickOnce Security Settings** casella di controllo.
+3. Cancella il **Enable ClickOnce Security Settings** casella di controllo.
 
      L'applicazione verrà eseguita con le impostazioni di sicurezza con attendibilità totale; tutte le impostazioni sul **sicurezza** pagina verrà ignorata.
 

@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068158"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Guida introduttiva: Eseguire il debug di HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
   Per informazioni su altre funzionalità, ad esempio utilizzando la finestra JavaScript Console e impostando punti di interruzione, debug JavaScript vedere [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Controllo del DOM attivo  
+## <a name="InspectingDOM"></a> Controllo del DOM attivo  
  DOM Explorer presenta una visualizzazione della pagina sottoposta a rendering. È possibile usarlo per modificare i valori e vedere immediatamente i risultati. In questo modo è possibile testare le modifiche senza arrestare e riavviare il debugger. Il codice sorgente nel progetto non viene modificato quando si interagisce con la pagina usando questo metodo. Pertanto è possibile apportare le modifiche al codice sorgente quando si trovano le correzioni del codice desiderate.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Per aggiornare l'app durante il debug  
   
-1.  Quando l'app è ancora in esecuzione, passare a Visual Studio.  
+1. Quando l'app è ancora in esecuzione, passare a Visual Studio.  
   
-2.  Aprire il file default.html e modificare il codice sorgente cambiando l'altezza e la larghezza dell'elemento DIV `"fView"` in 100%.  
+2. Aprire il file default.html e modificare il codice sorgente cambiando l'altezza e la larghezza dell'elemento DIV `"fView"` in 100%.  
   
-3.  Scegliere il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti Debug oppure premere F4. Il pulsante è simile alla seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Scegliere il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti Debug oppure premere F4. Il pulsante è simile alla seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Le pagine dell'app vengono ricaricate e il simulatore o l'emulatore Windows Phone torna in primo piano.  
   
      Per altre informazioni sulla funzionalità Aggiorna, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  È possibile selezionare gli elementi DOM in tre modi durante il debug di un'app:  
   
 - Facendo clic sugli elementi direttamente nella finestra di DOM Explorer oppure usando i tasti di direzione.  
@@ -285,7 +285,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Per un esempio che illustra come selezionare elementi usando il **elemento Select** pulsante, vedere [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
+## <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
  Gli strumenti di Visual Studio per JavaScript, DOM Explorer e la finestra Console JavaScript sono supportati nelle piattaforme seguenti:  
   
 - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e app di Windows Phone Store scritte in JavaScript e HTML  

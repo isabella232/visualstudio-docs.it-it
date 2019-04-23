@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066708"
 ---
 # <a name="how-to-start-spy"></a>Procedura: Avviare Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58969463"
   
 ### <a name="to-start-spy-from-visual-studio"></a>Per avviare Spy + + da Visual Studio  
   
--   Nel **degli strumenti** menu, fare clic su **Spy + +**.  
+- Nel **degli strumenti** menu, fare clic su **Spy + +**.  
   
      Poiché Spy + + viene eseguito in modo indipendente, dopo averla avviata, è possibile chiudere Visual Studio.  
   
@@ -39,9 +39,9 @@ ms.locfileid: "58969463"
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Avviare Spy + + in un prompt dei comandi  
   
-1.  In una finestra del prompt dei comandi, passare alla cartella che contiene spyxx.exe. In genere, il percorso di questa cartella è... \\ *Cartella di installazione di visual Studio*\Common7\Tools\\.  
+1. In una finestra del prompt dei comandi, passare alla cartella che contiene spyxx.exe. In genere, il percorso di questa cartella è... \\ *Cartella di installazione di visual Studio*\Common7\Tools\\.  
   
-2.  Tipo di **spyxx.exe** e quindi premere INVIO.  
+2. Tipo di **spyxx.exe** e quindi premere INVIO.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di Spy++](../debugger/using-spy-increment.md)   

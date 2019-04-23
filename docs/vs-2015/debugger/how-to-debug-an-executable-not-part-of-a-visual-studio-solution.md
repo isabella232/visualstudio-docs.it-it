@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068704"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedura: Eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Talvolta può essere necessario eseguire il debug di un file eseguibile non incl
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Per creare un progetto EXE per un eseguibile esistente  
   
-1.  Nel **File** menu, fare clic su **Open** e selezionare **progetto**.  
+1. Nel **File** menu, fare clic su **Open** e selezionare **progetto**.  
   
-2.  Nel **Apri progetto** finestra di dialogo, fare clic sull'elenco a discesa elenco per il **nome File** , quindi selezionare **tutti i file di progetto**.  
+2. Nel **Apri progetto** finestra di dialogo, fare clic sull'elenco a discesa elenco per il **nome File** , quindi selezionare **tutti i file di progetto**.  
   
-3.  Individuare il file eseguibile e scegliere **OK**.  
+3. Individuare il file eseguibile e scegliere **OK**.  
   
      In questo modo verrà creata una soluzione temporanea contenente l'eseguibile.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Per importare un eseguibile in una soluzione di Visual Studio  
   
-1.  Nel **File** dal menu **Aggiungi progetto**, quindi fare clic su **progetto esistente**.  
+1. Nel **File** dal menu **Aggiungi progetto**, quindi fare clic su **progetto esistente**.  
   
-2.  Nel **Aggiungi progetto esistente** finestra di dialogo, fare clic sull'elenco a discesa elenco per il **nome File** , quindi selezionare **tutti i file di progetto**.  
+2. Nel **Aggiungi progetto esistente** finestra di dialogo, fare clic sull'elenco a discesa elenco per il **nome File** , quindi selezionare **tutti i file di progetto**.  
   
-3.  Individuare e selezionare l'eseguibile.  
+3. Individuare e selezionare l'eseguibile.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
-5.  Avviare l'eseguibile scegliendo un comando di esecuzione, ad esempio **avviare**, dalle **Debug** menu.  
+5. Avviare l'eseguibile scegliendo un comando di esecuzione, ad esempio **avviare**, dalle **Debug** menu.  
   
     > [!NOTE]
     >  I progetti EXE non sono supportati da tutti i linguaggi di programmazione. Se è necessario utilizzare questa funzionalità, installare [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a896a5b850887b36a4fb6596923e742429c44dc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068613"
 ---
 # <a name="how-to-implement-undo-management"></a>Procedura: Gestione dell'annullamento implementare
 L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, che viene implementato dall'ambiente. Per supportare la gestione dell'annullamento, implementare le unità di annullamento separato (vale a dire <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, che può contenere più i singoli passaggi.
@@ -27,9 +27,9 @@ L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsof
 
 ### <a name="to-support-undo-management-for-a-single-view-editor"></a>Per supportare la gestione di annullamento per un editor a visualizzazione singola
 
-1.  Chiamare `QueryInterface` nella `IServiceProvider` interfaccia nella cornice `IOleUndoManager`, dall'oggetto di visualizzazione del documento per la gestione degli annullamenti di accesso (`IID_IOLEUndoManager`).
+1. Chiamare `QueryInterface` nella `IServiceProvider` interfaccia nella cornice `IOleUndoManager`, dall'oggetto di visualizzazione del documento per la gestione degli annullamenti di accesso (`IID_IOLEUndoManager`).
 
-2.  Quando una visualizzazione viene individuata in una cornice di finestra, ottiene un puntatore a sito, che può usare per chiamare `QueryInterface` per `IServiceProvider`.
+2. Quando una visualizzazione viene individuata in una cornice di finestra, ottiene un puntatore a sito, che può usare per chiamare `QueryInterface` per `IServiceProvider`.
 
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Casi in cui un editor supporta più visualizzazioni
  Se si dispone di separazione di documento e visualizzazione, è in genere una gestione degli annullamenti associata al documento. Tutte le unità di annullamento vengono posizionate in una gestione degli annullamenti associata con l'oggetto dati del documento.
@@ -46,17 +46,17 @@ L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsof
 
 3. Inoltro del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> chiamate all'oggetto memorizzato `IOleCommandTarget` interfaccia per i comandi StandardCommandSet97 seguenti:
 
-   -   cmdidUndo
+   - cmdidUndo
 
-   -   cmdidMultiLevelUndo
+   - cmdidMultiLevelUndo
 
-   -   cmdidRedo
+   - cmdidRedo
 
-   -   cmdidMultiLevelRedo
+   - cmdidMultiLevelRedo
 
-   -   cmdidMultiLevelUndoList
+   - cmdidMultiLevelUndoList
 
-   -   cmdidMultiLevelRedoList
+   - cmdidMultiLevelRedoList
 
 4. Chiamare `QueryInterface` sul `IOleUndoManager` per `IID_IVsChangeTrackingUndoManager`. Il puntatore per Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.
 

@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069926"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,46 +38,46 @@ ms.locfileid: "58969040"
   
  Modifica e continuazione non è disponibile nei seguenti scenari di debug:  
   
--   Debug in modalità mista (nativo/gestito).  
+- Debug in modalità mista (nativo/gestito).  
   
--   Debug SQL.  
+- Debug SQL.  
   
--   Debug di un dump di Dr. Watson.  
+- Debug di un dump di Dr. Watson.  
   
--   Modifica di codice dopo un'eccezione non gestita, quando l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.  
+- Modifica di codice dopo un'eccezione non gestita, quando l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.  
   
--   Debug di un'applicazione di runtime incorporata.  
+- Debug di un'applicazione di runtime incorporata.  
   
--   Debug di un'applicazione con **Collega a** anziché tramite l'esecuzione dell'applicazione con **avviare** dal **Debug** menu.  
+- Debug di un'applicazione con **Collega a** anziché tramite l'esecuzione dell'applicazione con **avviare** dal **Debug** menu.  
   
--   Debug di codice ottimizzato.  
+- Debug di codice ottimizzato.  
   
--   Debug di codice gestito quando la destinazione è un'applicazione a 64 bit. Se si desidera utilizzare Modifica e continuazione, è necessario impostare la destinazione su x86 (_Project_**delle proprietà**, **compilare** scheda **del compilatore avanzate** impostazione.).  
+- Debug di codice gestito quando la destinazione è un'applicazione a 64 bit. Se si desidera utilizzare Modifica e continuazione, è necessario impostare la destinazione su x86 (_Project_**delle proprietà**, **compilare** scheda **del compilatore avanzate** impostazione.).  
   
--   Debug di una versione precedente del codice dopo un tentativo non riuscito di compilazione di una nuova versione a causa della presenza di errori di compilazione.  
+- Debug di una versione precedente del codice dopo un tentativo non riuscito di compilazione di una nuova versione a causa della presenza di errori di compilazione.  
   
 ### <a name="to-edit-code-in-break-mode"></a>Per modificare il codice in modalità di interruzione  
   
-1.  Attivare la modalità di interruzione in uno dei seguenti modi:  
+1. Attivare la modalità di interruzione in uno dei seguenti modi:  
   
-    -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal menu **Debug** e attendere che l'applicazione raggiunga il punto di interruzione.  
-  
-         - oppure -  
-  
-    -   Avviare il debug, quindi scegliere **Interrompi tutto** dal menu **Debug**.  
+    - Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal menu **Debug** e attendere che l'applicazione raggiunga il punto di interruzione.  
   
          - oppure -  
   
-    -   Quando si verifica un'eccezione, scegliere **Abilita modifica** nel**informazioni sulle eccezioni**.  
+    - Avviare il debug, quindi scegliere **Interrompi tutto** dal menu **Debug**.  
   
-2.  Apportare tutte le modifiche desiderate al codice, purché siano valide.  
+         - oppure -  
+  
+    - Quando si verifica un'eccezione, scegliere **Abilita modifica** nel**informazioni sulle eccezioni**.  
+  
+2. Apportare tutte le modifiche desiderate al codice, purché siano valide.  
   
      Per altre informazioni, vedere [modifiche non supportate in Visual Basic modifica e continuazione](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     >  Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
   
-3.  Scegliere **Continua** dal menu **Debug** per riprendere l'esecuzione.  
+3. Scegliere **Continua** dal menu **Debug** per riprendere l'esecuzione.  
   
      Il codice verrà eseguito con le modifiche incorporate nel progetto.  
   

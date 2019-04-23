@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c61934649a8a87cea59b9dd7e1e913fc7a59b0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069549"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -53,15 +53,15 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 Per creare un nuovo linguaggio specifico di dominio, si crea una nuova soluzione di Visual Studio usando il modello di progetto linguaggio specifico di dominio.
 
-1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-2.  Sotto **tipi di progetto**, espandere il **altri tipi di progetto** nodo e fare clic su **estendibilità**.
+2. Sotto **tipi di progetto**, espandere il **altri tipi di progetto** nodo e fare clic su **estendibilità**.
 
-3.  Fare clic su **finestra di progettazione Domain-Specific Language**.
+3. Fare clic su **finestra di progettazione Domain-Specific Language**.
 
      ![Finestra di dialogo per la creazione di una soluzione DSL](../modeling/media/create_dsldialog.png)
 
-4.  Nel **Name** , digitare **albero genealogico FamilyTree**. Fare clic su **OK**.
+4. Nel **Name** , digitare **albero genealogico FamilyTree**. Fare clic su **OK**.
 
      Il **Domain-Specific Language guidata** apre e visualizza un elenco di soluzioni di modello DSL.
 
@@ -69,15 +69,15 @@ Per creare un nuovo linguaggio specifico di dominio, si crea una nuova soluzione
 
      Sono utili i modelli di punti di partenza. Ognuno di essi fornisce un completo funzionante DSL, che è possibile modificare in base alle esigenze. In genere, è necessario scegliere il modello più vicino di ciò che si desidera creare.
 
-5.  In questa procedura dettagliata scegliere la **linguaggio minimo** modello.
+5. In questa procedura dettagliata scegliere la **linguaggio minimo** modello.
 
-6.  Immettere un'estensione di file per il linguaggio DSL nella pagina appropriata della procedura guidata. Questa estensione verrà usata dai file contenenti le istanze del linguaggio DSL.
+6. Immettere un'estensione di file per il linguaggio DSL nella pagina appropriata della procedura guidata. Questa estensione verrà usata dai file contenenti le istanze del linguaggio DSL.
 
-    -   Scegliere un'estensione che non è associata a tutte le applicazioni in computer in uso o in qualsiasi computer in cui si desidera installare il linguaggio DSL. Ad esempio, **docx** e **htm** è le estensioni di nome file inaccettabili.
+    - Scegliere un'estensione che non è associata a tutte le applicazioni in computer in uso o in qualsiasi computer in cui si desidera installare il linguaggio DSL. Ad esempio, **docx** e **htm** è le estensioni di nome file inaccettabili.
 
-    -   La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic su **avviare**, fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare Microsoft Istanza di Visual Studio 2010 sperimentale**.
+    - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic su **avviare**, fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare Microsoft Istanza di Visual Studio 2010 sperimentale**.
 
-7.  Esaminare le altre pagine e quindi fare clic su **fine**.
+7. Esaminare le altre pagine e quindi fare clic su **fine**.
 
      Viene generata una soluzione contenente due progetti. Essi sono denominati Dsl e DslPackage. Diagramma verrà aperto un file che è denominata Dsldefinition.
 
@@ -94,30 +94,30 @@ Questa soluzione definisce un linguaggio specifico di dominio. Per altre informa
 
 Notare gli aspetti seguenti della nuova soluzione:
 
--   **Dsl\DslDefinition.DSL** si tratta del file che venga visualizzato quando si crea una soluzione DSL. Quasi tutto il codice nella soluzione viene generato da questo file, e vengono apportata qui la maggior parte delle modifiche apportate a una definizione DSL. Per altre informazioni, vedere Working with con il [lavora sul diagramma di definizione DSL](../modeling/working-with-the-dsl-definition-diagram.md).
+- **Dsl\DslDefinition.DSL** si tratta del file che venga visualizzato quando si crea una soluzione DSL. Quasi tutto il codice nella soluzione viene generato da questo file, e vengono apportata qui la maggior parte delle modifiche apportate a una definizione DSL. Per altre informazioni, vedere Working with con il [lavora sul diagramma di definizione DSL](../modeling/working-with-the-dsl-definition-diagram.md).
 
--   **Progetto DSL** questo progetto contiene codice che definisce il linguaggio specifico di dominio.
+- **Progetto DSL** questo progetto contiene codice che definisce il linguaggio specifico di dominio.
 
--   **Progetto DslPackage** questo progetto contiene codice che consente alle istanze del linguaggio DSL di essere aperti e modificati in Visual Studio.
+- **Progetto DslPackage** questo progetto contiene codice che consente alle istanze del linguaggio DSL di essere aperti e modificati in Visual Studio.
 
-##  <a name="Debugging"></a> Esegue il linguaggio DSL
+## <a name="Debugging"></a> Esegue il linguaggio DSL
 
 È possibile eseguire la soluzione DSL, non appena è stato creato. In un secondo momento, è possibile modificare la definizione DSL gradualmente, eseguire la soluzione dopo ogni modifica.
 
 ### <a name="to-experiment-with-the-dsl"></a>Per provare a usare il linguaggio DSL
 
-1.  Fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti. La maggior parte del codice sorgente da Dsldefinition verrà rigenerato.
+1. Fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti. La maggior parte del codice sorgente da Dsldefinition verrà rigenerato.
 
     > [!NOTE]
     > Ogni volta che si modifica *Dsldefinition*, è necessario fare clic su **Trasforma tutti i modelli** prima della ricompilazione della soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-2.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.
+2. Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.
 
      Il linguaggio DSL si basa e viene installato nell'istanza sperimentale di Visual Studio.
 
      Avvia un'istanza sperimentale di Visual Studio. L'istanza sperimentale accetta le impostazioni da un sottoalbero distinto del Registro di sistema, in cui le estensioni di Visual Studio vengono registrate a scopo di debug. Le normali istanze di Visual Studio non sono disponibili per le estensioni registrate non esiste.
 
-3.  Nell'istanza sperimentale di Visual Studio, aprire il file di modello denominato **Test** dalla **Esplora soluzioni**.
+3. Nell'istanza sperimentale di Visual Studio, aprire il file di modello denominato **Test** dalla **Esplora soluzioni**.
 
      \- oppure -
 
@@ -127,13 +127,13 @@ Notare gli aspetti seguenti della nuova soluzione:
 
      Casella degli strumenti si apre e visualizza gli strumenti appropriati per il tipo di diagramma.
 
-4.  Usare gli strumenti per creare forme e connettori nel diagramma.
+4. Usare gli strumenti per creare forme e connettori nel diagramma.
 
-    1.  Per creare forme, trascinare dallo strumento di esempio forma nel diagramma.
+    1. Per creare forme, trascinare dallo strumento di esempio forma nel diagramma.
 
-    2.  Per connettere due forme, scegliere lo strumento di connessione di esempio, fare clic sulla prima e quindi fare clic sulla seconda forma.
+    2. Per connettere due forme, scegliere lo strumento di connessione di esempio, fare clic sulla prima e quindi fare clic sulla seconda forma.
 
-5.  Selezionare le etichette delle forme modificarle.
+5. Selezionare le etichette delle forme modificarle.
 
 L'istanza sperimentale di Visual Studio sarà simile al seguente:
 
@@ -165,11 +165,11 @@ Quando si modifica un file di modello, si noterà le modifiche corrispondenti ne
 
 #### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Per rigenerare i file di testo dopo aver modificato il file del modello
 
-1.  Nell'istanza sperimentale di Visual Studio, salvare il file del modello.
+1. Nell'istanza sperimentale di Visual Studio, salvare il file del modello.
 
-2.  Assicurarsi che il parametro del nome file in ogni file con estensione tt fa riferimento al file di modello che si usa per esperimenti. Salvare il file con estensione tt.
+2. Assicurarsi che il parametro del nome file in ogni file con estensione tt fa riferimento al file di modello che si usa per esperimenti. Salvare il file con estensione tt.
 
-3.  Fare clic su **Trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni**.
+3. Fare clic su **Trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni**.
 
      \- oppure -
 
@@ -199,43 +199,43 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>Per rinominare gli strumenti, le relazioni e le classi di dominio
 
-1.  Nel diagramma DslDefinition, rinominare **ExampleModel** al **FamilyTreeModel**, **ExampleElement** al **persona**,  **Destinazioni** al **padri**, e **origini** alla **figli**. È possibile fare clic su ogni etichetta per modificarla.
+1. Nel diagramma DslDefinition, rinominare **ExampleModel** al **FamilyTreeModel**, **ExampleElement** al **persona**,  **Destinazioni** al **padri**, e **origini** alla **figli**. È possibile fare clic su ogni etichetta per modificarla.
 
      ![Diagramma di definizione DSL &#45; modello di albero genealogico](../modeling/media/familyt_person.png)
 
-2.  Rinominare gli strumenti elemento e il connettore.
+2. Rinominare gli strumenti elemento e il connettore.
 
-    1.  Aprire la finestra di DSL Explorer facendo clic sulla scheda sotto Esplora soluzioni. Se non è visualizzato, scegliere il **View** dal menu **Other Windows** e quindi fare clic su **DSL Explorer**. Esplora DSL è visibile solo quando il diagramma di definizione DSL è la finestra attiva.
+    1. Aprire la finestra di DSL Explorer facendo clic sulla scheda sotto Esplora soluzioni. Se non è visualizzato, scegliere il **View** dal menu **Other Windows** e quindi fare clic su **DSL Explorer**. Esplora DSL è visibile solo quando il diagramma di definizione DSL è la finestra attiva.
 
-    2.  Aprire la finestra proprietà e posizionarlo in modo che è possibile visualizzare Esplora DSL e proprietà nello stesso momento.
+    2. Aprire la finestra proprietà e posizionarlo in modo che è possibile visualizzare Esplora DSL e proprietà nello stesso momento.
 
-    3.  In DSL Explorer, espandere **Editor**, **schede della casella degli strumenti**,  *\<il linguaggio DSL >* e quindi **strumenti**.
+    3. In DSL Explorer, espandere **Editor**, **schede della casella degli strumenti**,  *\<il linguaggio DSL >* e quindi **strumenti**.
 
-    4.  Fare clic su **ExampleElement**. Si tratta dell'elemento della casella degli strumenti che è possibile creare elementi.
+    4. Fare clic su **ExampleElement**. Si tratta dell'elemento della casella degli strumenti che è possibile creare elementi.
 
-    5.  Nella finestra Proprietà modificare il **Name** proprietà **persona**.
+    5. Nella finestra Proprietà modificare il **Name** proprietà **persona**.
 
          Si noti che il **didascalia** cambia anche proprietà.
 
-    6.  Allo stesso modo, modificare il nome del **ExampleConnector** dello strumento **ParentLink**. Modificare il **didascalia** proprietà in modo che non è una copia della proprietà Name. Ad esempio, immettere **collegamento padre**.
+    6. Allo stesso modo, modificare il nome del **ExampleConnector** dello strumento **ParentLink**. Modificare il **didascalia** proprietà in modo che non è una copia della proprietà Name. Ad esempio, immettere **collegamento padre**.
 
-3.  Ricompilare il linguaggio DSL.
+3. Ricompilare il linguaggio DSL.
 
-    1.  Salvare il file di definizione DSL.
+    1. Salvare il file di definizione DSL.
 
-    2.  Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni
+    2. Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni
 
-    3.  Premere F5. Attendere che venga visualizzata l'istanza sperimentale di Visual Studio.
+    3. Premere F5. Attendere che venga visualizzata l'istanza sperimentale di Visual Studio.
 
-4.  Nella soluzione di debug nell'istanza sperimentale di Visual Studio, aprire un file di modello di test. Trascina gli elementi dalla casella degli strumenti. Si noti che sono state modificate le didascalie degli strumenti e i nomi dei tipi in DSL Explorer.
+4. Nella soluzione di debug nell'istanza sperimentale di Visual Studio, aprire un file di modello di test. Trascina gli elementi dalla casella degli strumenti. Si noti che sono state modificate le didascalie degli strumenti e i nomi dei tipi in DSL Explorer.
 
-5.  Salvare il file del modello.
+5. Salvare il file del modello.
 
-6.  Aprire un file con estensione tt e sostituire le occorrenze dei nomi di tipo e proprietà precedente con i nuovi nomi.
+6. Aprire un file con estensione tt e sostituire le occorrenze dei nomi di tipo e proprietà precedente con i nuovi nomi.
 
-7.  Assicurarsi che il nome del file specificato nel file con estensione tt consente di specificare il modello di test.
+7. Assicurarsi che il nome del file specificato nel file con estensione tt consente di specificare il modello di test.
 
-8.  Salvare il file con estensione tt. Aprire il file generato per visualizzare il risultato dell'esecuzione del codice nel file con estensione tt. Verificare che sia corretto.
+8. Salvare il file con estensione tt. Aprire il file generato per visualizzare il risultato dell'esecuzione del codice nel file con estensione tt. Verificare che sia corretto.
 
 ### <a name="add-domain-properties-to-classes"></a>Aggiungere le proprietà di dominio a classi
  Aggiungere proprietà a una classe di dominio, ad esempio rappresentare gli anni di nascita e morte di una persona.
@@ -246,29 +246,29 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
 1. Aggiungere le proprietà.
 
-   1.  Nel diagramma di definizione DSL, fare doppio clic sul **persona** della classe di dominio, scegliere **Add**, quindi fare clic su **della proprietà di dominio**.
+   1. Nel diagramma di definizione DSL, fare doppio clic sul **persona** della classe di dominio, scegliere **Add**, quindi fare clic su **della proprietà di dominio**.
 
-   2.  Digitare un elenco di nuovi nomi di proprietà, ad esempio **nascita** e **morte**. Premere **invio** dopo ciascuna di esse.
+   2. Digitare un elenco di nuovi nomi di proprietà, ad esempio **nascita** e **morte**. Premere **invio** dopo ciascuna di esse.
 
 2. Aggiungere gli elementi Decorator che verranno visualizzate le proprietà della forma.
 
-   1.  Seguire la linea grigia che si estende dalla classe di dominio della persona a altro lato del diagramma. Si tratta di una mappa degli elementi del diagramma. La classe di dominio è collegato a una classe di forma.
+   1. Seguire la linea grigia che si estende dalla classe di dominio della persona a altro lato del diagramma. Si tratta di una mappa degli elementi del diagramma. La classe di dominio è collegato a una classe di forma.
 
-   2.  Fare doppio clic su questa classe di forma, scegliere **Add**, quindi fare clic su **Decorator testo**.
+   2. Fare doppio clic su questa classe di forma, scegliere **Add**, quindi fare clic su **Decorator testo**.
 
-   3.  Aggiungere due elementi Decorator con nomi quali **BirthDecorator** e **DeathDecorator**.
+   3. Aggiungere due elementi Decorator con nomi quali **BirthDecorator** e **DeathDecorator**.
 
-   4.  Selezionare ogni nuovo decorator e nella finestra Proprietà impostare il **posizione** campo. Ciò determina dove verrà visualizzato il valore della proprietà di dominio della forma. Ad esempio, impostare **InnerBottomLeft** e **InnerBottomRight**.
+   4. Selezionare ogni nuovo decorator e nella finestra Proprietà impostare il **posizione** campo. Ciò determina dove verrà visualizzato il valore della proprietà di dominio della forma. Ad esempio, impostare **InnerBottomLeft** e **InnerBottomRight**.
 
         ![Definizione della forma Raggruppamento](../modeling/media/familyt_compartment.png)
 
 3. Mappare gli elementi Decorator per la proprietà.
 
-   1.  Aprire la finestra Dettagli DSL. È in genere in una scheda accanto alla finestra di Output. Se non è visualizzato, scegliere il **View** dal menu **Other Windows**, quindi fare clic su **dettagli DSL**.
+   1. Aprire la finestra Dettagli DSL. È in genere in una scheda accanto alla finestra di Output. Se non è visualizzato, scegliere il **View** dal menu **Other Windows**, quindi fare clic su **dettagli DSL**.
 
-   2.  Diagramma di definizione DSL fare clic sulla riga che connette il **persona** della classe di dominio per la classe shape.
+   2. Diagramma di definizione DSL fare clic sulla riga che connette il **persona** della classe di dominio per la classe shape.
 
-   3.  Nelle **dettagli DSL**via le **mappe elementi Decorator** , selezionare la casella di controllo su un elemento decorator non mappata. Nelle **proprietà di visualizzazione**, selezionare la proprietà di dominio a cui si desidera venga eseguito il mapping. Ad esempio, eseguire il mapping **BirthDecorator** al **nascita**.
+   3. Nelle **dettagli DSL**via le **mappe elementi Decorator** , selezionare la casella di controllo su un elemento decorator non mappata. Nelle **proprietà di visualizzazione**, selezionare la proprietà di dominio a cui si desidera venga eseguito il mapping. Ad esempio, eseguire il mapping **BirthDecorator** al **nascita**.
 
 4. Salvare il linguaggio DSL, fare clic su Trasforma tutti i modelli e premere F5.
 
@@ -285,9 +285,9 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
 ##### <a name="to-add-and-display-a-new-domain-class"></a>Per aggiungere e visualizzare una nuova classe di dominio
 
-1.  Aggiungere una classe di dominio e impostarla come figlio della radice del modello.
+1. Aggiungere una classe di dominio e impostarla come figlio della radice del modello.
 
-    1.  Nel diagramma di definizione DSL, scegliere il **relazione di incorporamento** dello strumento, fare clic sulla classe radice **FamilyTreeModel**e quindi fare clic su una parte vuota del diagramma.
+    1. Nel diagramma di definizione DSL, scegliere il **relazione di incorporamento** dello strumento, fare clic sulla classe radice **FamilyTreeModel**e quindi fare clic su una parte vuota del diagramma.
 
          Una nuova classe di dominio viene visualizzato, che è connessa la FamilyTreeModel con una relazione di incorporamento.
 
@@ -296,60 +296,60 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
         > [!NOTE]
         >  Ogni classe di dominio, tranne la radice del modello deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare da una classe che rappresenta la destinazione dell'incorporamento. Per questo motivo, è spesso utile creare una classe di dominio usando lo strumento di relazione di incorporamento.
 
-    2.  Aggiungere una proprietà di dominio per la nuova classe, ad esempio **nome**.
+    2. Aggiungere una proprietà di dominio per la nuova classe, ad esempio **nome**.
 
-2.  Aggiungere una relazione di riferimento tra Person e Town (città).
+2. Aggiungere una relazione di riferimento tra Person e Town (città).
 
-    1.  Scegliere il **relazione di riferimento** dello strumento, fare clic su Person e quindi fare clic su Town (città).
+    1. Scegliere il **relazione di riferimento** dello strumento, fare clic su Person e quindi fare clic su Town (città).
 
          ![Frammento della definizione DSL: radice dell'albero genealogico](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Le relazioni di riferimento rappresentano riferimenti incrociati da una parte dell'albero del modello a un'altra.
 
-3.  Aggiungere una forma per rappresentare i diagrammi del modello di città.
+3. Aggiungere una forma per rappresentare i diagrammi del modello di città.
 
-    1.  Trascinare un **forma geometrica** dalla casella degli strumenti nel diagramma e rinominarla, ad esempio **TownShape**.
+    1. Trascinare un **forma geometrica** dalla casella degli strumenti nel diagramma e rinominarla, ad esempio **TownShape**.
 
-    2.  Nella finestra Proprietà, impostare i campi di aspetto della nuova forma, ad esempio colore di riempimento e Geometry.
+    2. Nella finestra Proprietà, impostare i campi di aspetto della nuova forma, ad esempio colore di riempimento e Geometry.
 
-    3.  Aggiungere un elemento Decorator per visualizzare il nome della città e rinominarlo NameDecorator. Impostare la proprietà Position.
+    3. Aggiungere un elemento Decorator per visualizzare il nome della città e rinominarlo NameDecorator. Impostare la proprietà Position.
 
-4.  Eseguire il mapping della classe di dominio Town (città) per il TownShape.
+4. Eseguire il mapping della classe di dominio Town (città) per il TownShape.
 
-    1.  Scegliere il **mappa elementi diagramma** dello strumento, quindi scegliere la classe di dominio Town (città) e quindi la classe di forma TownShape.
+    1. Scegliere il **mappa elementi diagramma** dello strumento, quindi scegliere la classe di dominio Town (città) e quindi la classe di forma TownShape.
 
-    2.  Nel **mappe elementi Decorator** scheda della finestra di **dettagli DSL** finestra con il connettore della mappa selezionata, verificare NameDecorator e impostare **proprietà di visualizzazione** al nome.
+    2. Nel **mappe elementi Decorator** scheda della finestra di **dettagli DSL** finestra con il connettore della mappa selezionata, verificare NameDecorator e impostare **proprietà di visualizzazione** al nome.
 
-5.  Creare un connettore per visualizzare la relazione tra due persone di città.
+5. Creare un connettore per visualizzare la relazione tra due persone di città.
 
-    1.  Trascinare un connettore dalla casella degli strumenti nel diagramma. Rinominarlo e impostare l'aspetto delle proprietà.
+    1. Trascinare un connettore dalla casella degli strumenti nel diagramma. Rinominarlo e impostare l'aspetto delle proprietà.
 
-    2.  Usare la **mappa elementi diagramma** dello strumento per collegare il nuovo connettore alla relazione tra Person e Town (città).
+    2. Usare la **mappa elementi diagramma** dello strumento per collegare il nuovo connettore alla relazione tra Person e Town (città).
 
          ![Definizione dell'albero genealogico con mappa di forme aggiunte](../modeling/media/familyt_shapemap.png)
 
-6.  Creare uno strumento elemento per l'esecuzione di una città di new.
+6. Creare uno strumento elemento per l'esecuzione di una città di new.
 
-    1.  Nelle **DSL Explorer**, espandere **Editor** quindi **schede della casella degli strumenti**.
+    1. Nelle **DSL Explorer**, espandere **Editor** quindi **schede della casella degli strumenti**.
 
-    2.  Fare doppio clic su  *\<il linguaggio DSL >* e quindi fare clic su **Aggiungi nuovo strumento elemento**.
+    2. Fare doppio clic su  *\<il linguaggio DSL >* e quindi fare clic su **Aggiungi nuovo strumento elemento**.
 
-    3.  Impostare il **Name** proprietà del nuovo strumento e set relativo **classe** proprietà Town (città).
+    3. Impostare il **Name** proprietà del nuovo strumento e set relativo **classe** proprietà Town (città).
 
-    4.  Impostare il **icona casella degli strumenti** proprietà. Fare clic su **[...]**  e il **nome File** field, selezionare un file di icona.
+    4. Impostare il **icona casella degli strumenti** proprietà. Fare clic su **[...]**  e il **nome File** field, selezionare un file di icona.
 
-7.  Creare uno strumento di connessione per effettuare un collegamento tra città e persone.
+7. Creare uno strumento di connessione per effettuare un collegamento tra città e persone.
 
-    1.  Fare doppio clic su  *\<il linguaggio DSL >* e quindi fare clic su **Aggiungi nuovo strumento connettore**.
+    1. Fare doppio clic su  *\<il linguaggio DSL >* e quindi fare clic su **Aggiungi nuovo strumento connettore**.
 
-    2.  Impostare la proprietà nome del nuovo strumento.
+    2. Impostare la proprietà nome del nuovo strumento.
 
-    3.  Nel **ConnectionBuilder** proprietà, selezionare il generatore che contiene il nome della relazione persona-città.
+    3. Nel **ConnectionBuilder** proprietà, selezionare il generatore che contiene il nome della relazione persona-città.
 
-    4.  Impostare il **icona casella degli strumenti**.
+    4. Impostare il **icona casella degli strumenti**.
 
-8.  Salvare la definizione DSL, fare clic su **Trasforma tutti i modelli**, quindi premere **F5**.
+8. Salvare la definizione DSL, fare clic su **Trasforma tutti i modelli**, quindi premere **F5**.
 
 9. Nell'istanza sperimentale di Visual Studio, aprire un file di modello di test. Usare i nuovi strumenti per creare di città e i collegamenti tra città e le persone. Si noti che è possibile creare solo i collegamenti tra i tipi corretti dell'elemento.
 
@@ -394,7 +394,7 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
  Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
-##  <a name="Reset"></a> Rimozione di vecchi DSL sperimentale
+## <a name="Reset"></a> Rimozione di vecchi DSL sperimentale
  Se è stato creato sperimentale linguaggi specifici di dominio che non sono più necessarie, è possibile rimuoverli dal computer, reimpostando l'istanza sperimentale di Visual Studio.
 
  Verranno rimossi dal computer tutti i linguaggi DSL sperimentale e altre estensioni di Visual Studio sperimentale. Si tratta di estensioni che sono state eseguite in modalità di debug.
@@ -403,9 +403,9 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Per reimpostare l'istanza sperimentale di Visual Studio
 
-1.  Fare clic su **avviare**, fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare Microsoft Istanza di Visual Studio 2010 sperimentale**.
+1. Fare clic su **avviare**, fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare Microsoft Istanza di Visual Studio 2010 sperimentale**.
 
-2.  Ricompila qualsiasi DSL sperimentali o altre estensioni di Visual Studio sperimentale che si desidera utilizzare.
+2. Ricompila qualsiasi DSL sperimentali o altre estensioni di Visual Studio sperimentale che si desidera utilizzare.
 
 ## <a name="see-also"></a>Vedere anche
 

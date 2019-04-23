@@ -9,14 +9,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f716c279bce14a2a262578de090ed59290890f57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068574"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: creare un progetto e aggiungere una tabella al form
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare il progetto e aggiungere una tabella al form. La tabella consente di allineare le icone in una griglia ordinata 4x4. È inoltre possibile impostare diverse proprietà per migliorare l'aspetto della tavola da gioco.  
@@ -31,9 +31,9 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
   
 4. Nella finestra **Proprietà** impostare le proprietà del form seguenti.  
   
-   1.  Modificare la proprietà **Text** del form da **Form1** a **Matching Game**. Questo testo viene visualizzato nella parte superiore della finestra del gioco.  
+   1. Modificare la proprietà **Text** del form da **Form1** a **Matching Game**. Questo testo viene visualizzato nella parte superiore della finestra del gioco.  
   
-   2.  Impostare le dimensioni del form su 550 pixel di larghezza per 550 pixel di altezza. A tale scopo, impostare la proprietà **Size** su **550, 550** o trascinare l'angolo del form fino a raggiungere le dimensioni corrette nell'angolo inferiore destro dell'IDE (Integrated Development Environment).  
+   2. Impostare le dimensioni del form su 550 pixel di larghezza per 550 pixel di altezza. A tale scopo, impostare la proprietà **Size** su **550, 550** o trascinare l'angolo del form fino a raggiungere le dimensioni corrette nell'angolo inferiore destro dell'IDE (Integrated Development Environment).  
   
 5. Per visualizzare la casella degli strumenti, selezionare la scheda **Casella degli strumenti** sul lato sinistro dell'IDE.  
   
@@ -60,19 +60,19 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
   
     Mentre TableLayoutPanel è selezionato, aprire la casella degli strumenti e aggiungere un controllo **Etichetta** (che si trova nella categoria **Controlli comuni**) alla cella superiore sinistra di TableLayoutPanel. Il controllo `Label` dovrebbe ora apparire selezionato nell'IDE. Impostare le proprietà indicate di seguito.  
   
-   1.  Verificare che la proprietà **BackColor** dell'etichetta sia impostata su **CornflowerBlue**.  
+   1. Verificare che la proprietà **BackColor** dell'etichetta sia impostata su **CornflowerBlue**.  
   
-   2.  Impostare la proprietà **AutoSize** su **False**.  
+   2. Impostare la proprietà **AutoSize** su **False**.  
   
-   3.  Impostare la proprietà **Dock** su **Fill**.  
+   3. Impostare la proprietà **Dock** su **Fill**.  
   
-   4.  Impostare la proprietà **TextAlign** su **MiddleCenter** scegliendo il pulsante a discesa accanto alla proprietà, quindi il pulsante al centro. In questo modo l'icona verrà visualizzata al centro della cella.  
+   4. Impostare la proprietà **TextAlign** su **MiddleCenter** scegliendo il pulsante a discesa accanto alla proprietà, quindi il pulsante al centro. In questo modo l'icona verrà visualizzata al centro della cella.  
   
-   5.  Scegliere la proprietà **Font**. Verrà visualizzato un pulsante con i puntini di sospensione (...).  
+   5. Scegliere la proprietà **Font**. Verrà visualizzato un pulsante con i puntini di sospensione (...).  
   
-   6.  Scegliere il pulsante con i puntini di sospensione e impostare **Tipo di carattere** su **Webdings**, **Stile** su **Grassetto** e **Dimensione** su **72**.  
+   6. Scegliere il pulsante con i puntini di sospensione e impostare **Tipo di carattere** su **Webdings**, **Stile** su **Grassetto** e **Dimensione** su **72**.  
   
-   7.  Impostare la proprietà **Text** dell'etichetta sulla lettera **c**.  
+   7. Impostare la proprietà **Text** dell'etichetta sulla lettera **c**.  
   
         La cella superiore sinistra in TableLayoutPanel dovrebbe ora contenere un riquadro nero al centro su uno sfondo blu.  
   
@@ -91,6 +91,6 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
--   Per tornare all'argomento introduttivo, vedere [Esercitazione 3: creare un gioco delle coppie](../ide/tutorial-3-create-a-matching-game.md).
+- Per tornare all'argomento introduttivo, vedere [Esercitazione 3: Creare un oggetto corrispondente gioco](../ide/tutorial-3-create-a-matching-game.md).

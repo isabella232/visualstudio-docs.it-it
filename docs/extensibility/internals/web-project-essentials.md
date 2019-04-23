@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234b2958fd3a5a533e881fc2589c275893326814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071331"
 ---
 # <a name="web-project-essentials"></a>Nozioni fondamentali sui progetti Web
 I progetti Web creare applicazioni Web. È possibile usare un progetto Web per creare un'applicazione Web che è costituito da pagine Web intelligente. Una pagina Web smart dispone di codice lato server che esegue il rendering della pagina Web richiesta.
@@ -28,9 +28,9 @@ I progetti Web creare applicazioni Web. È possibile usare un progetto Web per c
 
 - File di codice di origine aggiuntivi, ad esempio classi helper che non sono associati a una pagina Web specifica, si trovano nella cartella /App_Code sito Web.
 
-  -   Un progetto di sito Web (WSP) genera un file eseguibile per ogni pagina Web intelligente. File eseguibile aggiuntivi vengono generati da qualsiasi file di codice sorgente nella cartella /App_Code.
+  - Un progetto di sito Web (WSP) genera un file eseguibile per ogni pagina Web intelligente. File eseguibile aggiuntivi vengono generati da qualsiasi file di codice sorgente nella cartella /App_Code.
 
-  -   Un progetto di applicazione Web (WAP) produce un unico file eseguibile che combina il codice per tutte le pagine Web intelligente, nonché tutti i file di origine nella cartella /App_Code.
+  - Un progetto di applicazione Web (WAP) produce un unico file eseguibile che combina il codice per tutte le pagine Web intelligente, nonché tutti i file di origine nella cartella /App_Code.
 
 - Trova il file di soluzione per un progetto Web separatamente dal sito Web stesso. Per impostazione predefinita, i file della soluzione si trovano in \Documents and Settings\\*AccountUtente*documenti \My\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.
 
@@ -53,9 +53,9 @@ I progetti Web creare applicazioni Web. È possibile usare un progetto Web per c
 
 - Una pagina Web smart combina HTML con un linguaggio di programmazione lato server. Il server-side delle lingue viene chiamato linguaggio contenuto. Per supportare una lingua indipendente, è necessario implementare il sistema del progetto Web il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> della famiglia di interfacce.
 
-  -   Per supportare il linguaggio contenuto in un editor, il servizio di linguaggio HTML necessario posticipare la visualizzazione di codice di linguaggio contenuto per un servizio di linguaggio contenuto.
+  - Per supportare il linguaggio contenuto in un editor, il servizio di linguaggio HTML necessario posticipare la visualizzazione di codice di linguaggio contenuto per un servizio di linguaggio contenuto.
 
-  -   Gli indicatori di errore (smettono) è necessario creare sempre nel buffer primario dell'editor di codice.
+  - Gli indicatori di errore (smettono) è necessario creare sempre nel buffer primario dell'editor di codice.
 
 ## <a name="see-also"></a>Vedere anche
 - [Progetti Web](../../extensibility/internals/web-projects.md)

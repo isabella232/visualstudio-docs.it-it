@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067274"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Procedura: Compilare soluzioni SharePoint
 
@@ -27,11 +27,11 @@ Compilazione di SharePoint soluzione non è diversa rispetto alla creazione di a
 
 ## <a name="to-build-sharepoint-solutions"></a>Per compilare soluzioni SharePoint
 
-1.  Decidere se si sta effettuando un debug o una build di rilascio. Per altre informazioni, vedere [impostazioni del progetto Debugger](../debugger/debugger-project-settings.md).
+1. Decidere se si sta effettuando un debug o una build di rilascio. Per altre informazioni, vedere [impostazioni del progetto Debugger](../debugger/debugger-project-settings.md).
 
-2.  Scegliere l'opzione appropriata per la compilazione o la ricompilazione della soluzione o progetto. Per altre informazioni, vedere [compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Scegliere l'opzione appropriata per la compilazione o la ricompilazione della soluzione o progetto. Per altre informazioni, vedere [compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-3.  Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+3. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
 
 ## <a name="see-also"></a>Vedere anche
 

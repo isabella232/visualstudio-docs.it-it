@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067131"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: impossibile avviare il debug sul server Web
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: Impossibile avviare il debug sul server Web
 
 Quando si tenta di eseguire il debug di un'applicazione ASP.NET in esecuzione in un server Web, è possibile ottenere questo messaggio di errore: `Unable to start debugging on the Web server`.
 
@@ -51,7 +51,7 @@ Il `Unable to start debugging on the Web server` messaggio è generico. In gener
 - [Il server remoto ha restituito un errore](#server_error)
 - [Non è possibile avviare il debug di ASP.NET](#aspnet)
 - [Il debugger non può connettersi al computer remoto](#cannot_connect)
-- [ Per verificare gli errori di configurazione comuni, consultare la Guida. Esecuzione della pagina Web all'esterno del debugger può fornire ulteriori informazioni.](#see_help)
+- [Vedere la Guida per gli errori di configurazione comuni. Esecuzione della pagina Web all'esterno del debugger può fornire ulteriori informazioni.](#see_help)
 
 ## <a name="IISlist"></a> IIS non include un sito Web che corrisponde al lancio url
 
@@ -61,7 +61,7 @@ Il `Unable to start debugging on the Web server` messaggio è generico. In gener
 
 ## <a name="web_server_config"></a> Il server Web non è configurato in modo corretto
 
-- Visualizzare [errore: il server web non è configurato correttamente](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- Vedere [errore: Il server web non è configurato correttamente](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Impossibile connettersi al server Web
 
@@ -104,7 +104,7 @@ Inoltre, se si usa un file host, assicurarsi che sia configurato correttamente. 
 
 - Se il problema persiste o si esegue il debug in modalità remota, seguire i passaggi [controllare la configurazione di IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Controllare la configurazione di IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Controllare la configurazione di IIS
 
 Dopo aver valutato i passaggi descritti in questa sezione per risolvere il problema e prima di riprovare a eseguire il debug, è necessario anche reimpostare IIS. È possibile farlo aprendo un prompt dei comandi con privilegi elevati e digitando `iisreset`.
 
@@ -160,4 +160,4 @@ Se la configurazione di IIS non causa il problema, provare questi passaggi:
     Se non è possibile ottenere le app di interagire con il debugger, provare a creare un'applicazione ASP.NET in locale nel server e provare a eseguire il debug di app di base. (Si potrebbe voler usare il modello MVC di ASP.NET predefinito). Se è possibile eseguire il debug di un'app di base, che può consentire di identificare ciò che è diverso tra le due configurazioni. Cercare le differenze nelle impostazioni nel file Web. config, ad esempio le regole di riscrittura dell'URL.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

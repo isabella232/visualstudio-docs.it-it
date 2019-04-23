@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069615"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,30 +37,30 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
   
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Per definire un valore calcolato o una proprietà di archiviazione personalizzati  
   
-1.  In Dsldefinition, selezionare la proprietà di dominio nel diagramma o nel **DSL Explorer**.  
+1. In Dsldefinition, selezionare la proprietà di dominio nel diagramma o nel **DSL Explorer**.  
   
-2.  Nel **delle proprietà** impostare nella finestra di **tipo** campo **Calculated** o **archiviazione personalizzata**.  
+2. Nel **delle proprietà** impostare nella finestra di **tipo** campo **Calculated** o **archiviazione personalizzata**.  
   
      Assicurarsi di aver impostato anche relativi **tipo** nel modo desiderato.  
   
-3.  Fare clic su **Trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni**.  
+3. Fare clic su **Trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni**.  
   
-4.  Scegliere **Compila soluzione** dal menu **Compila**.  
+4. Scegliere **Compila soluzione** dal menu **Compila**.  
   
      Viene visualizzato il messaggio seguente: "*ClasseUtente* non contiene una definizione per Get*proprietà*."  
   
-5.  Fare doppio clic sul messaggio di errore.  
+5. Fare doppio clic sul messaggio di errore.  
   
      Dsl\generatedcode\domainclasses.cs. o DomainRelationships.cs viene aperto. Sopra la chiamata al metodo evidenziato un commento viene richiesto di fornire un'implementazione di Get*proprietà*().  
   
     > [!NOTE]
     >  Questo file viene generato da Dsldefinition. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **Trasforma tutti i modelli**. Al contrario, aggiungere il metodo richiesto in un file separato.  
   
-6.  Creare o aprire un file di classe in una cartella distinta, ad esempio Customcoded\\*YourDomainClass*. cs.  
+6. Creare o aprire un file di classe in una cartella distinta, ad esempio Customcoded\\*YourDomainClass*. cs.  
   
      Assicurarsi che lo spazio dei nomi è uguale a quello del codice generato.  
   
-7.  Nel file di classe, scrivere un'implementazione parziale della classe di dominio. Nella classe, scrivere una definizione di parametro mancante `Get` metodo simile al seguente:  
+7. Nel file di classe, scrivere un'implementazione parziale della classe di dominio. Nella classe, scrivere una definizione di parametro mancante `Get` metodo simile al seguente:  
   
     ```  
     namespace Company.FamilyTree  
@@ -70,7 +70,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
     }  }  
     ```  
   
-8.  Se si imposta **genere** al **archiviazione personalizzata**, sarà inoltre necessario fornire un `Set` (metodo). Ad esempio:  
+8. Se si imposta **genere** al **archiviazione personalizzata**, sarà inoltre necessario fornire un `Set` (metodo). Ad esempio:  
   
     ```  
     void SetAgeValue(int value)  
@@ -85,7 +85,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
   
 10. Testare la proprietà. Assicurarsi che provi **Undo** e **Ripeti**.  
   
-##  <a name="setters"></a> Le transazioni e setter personalizzato  
+## <a name="setters"></a> Le transazioni e setter personalizzato  
  Nel metodo Set di proprietà di archiviazione personalizzati, non è necessario aprire una transazione, poiché il metodo viene chiamato in genere all'interno di una transazione attiva.  
   
  Il metodo Set, tuttavia, potrebbe essere chiamato anche se l'utente richiama l'annullamento o ripristino o se una transazione è in fase di rollback. Quando si <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> è true, il metodo Set deve comportarsi come indicato di seguito:  

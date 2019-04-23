@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066598"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuzione di applicazioni ClickOnce per i server di test e di produzione senza riapposizione della firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Questo argomento illustra una nuova funzionalità di ClickOnce introdotta in .NE
   
  Gli ISV e sviluppatori di terze parti possono acconsentire esplicitamente a questa funzionalità, rendendo più semplice per i clienti aggiornare le applicazioni. Questa funzionalità può essere utilizzata nelle situazioni seguenti:  
   
--   Quando si aggiorna un'applicazione, non la prima installazione di un'applicazione.  
+- Quando si aggiorna un'applicazione, non la prima installazione di un'applicazione.  
   
--   Quando è presente solo una configurazione dell'applicazione in un computer. Ad esempio, se un'applicazione è configurata in modo da puntare a due database diversi, non è possibile utilizzare questa funzionalità.  
+- Quando è presente solo una configurazione dell'applicazione in un computer. Ad esempio, se un'applicazione è configurata in modo da puntare a due database diversi, non è possibile utilizzare questa funzionalità.  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Esclusione deploymentProvider dai manifesti della distribuzione  
  In .NET Framework 2.0 e .NET Framework 3.0, qualsiasi applicazione ClickOnce che viene installato nel sistema per la disponibilità offline è necessario specificare un `deploymentProvider` nel relativo manifesto di distribuzione. Il `deploymentProvider` è noto anche come percorso di aggiornamento; è il percorso in cui ClickOnce controllerà gli aggiornamenti dell'applicazione. Questo requisito, insieme alla necessità per gli autori dell'applicazione firmare le distribuzioni, rendeva difficile per una società per aggiornare un'applicazione ClickOnce da un fornitore o altre terze parti. Inoltre rende più difficile distribuire l'applicazione stessa da più posizioni nella stessa rete.  

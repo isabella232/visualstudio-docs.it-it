@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29557d14644971ade86048aebee670ba35cff784
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072045"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedura: Creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint
   È possibile creare controlli utente personalizzati che forniscono funzionalità personalizzate per la soluzione SharePoint in uso, nonché riutilizzare le funzionalità in questione all'interno del progetto. È possibile includere i controlli utente in una web part o in una pagina applicazione, aggiungere altri controlli ASP.NET e di SharePoint e definire proprietà e metodi per il controllo. Per altre informazioni sui controlli utente, vedere [creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) e [controlli utente e controlli Server in SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>Per creare un controllo utente per SharePoint
 
-1.  In Visual Studio aprire o creare un progetto SharePoint.
+1. In Visual Studio aprire o creare un progetto SharePoint.
 
      Visualizzare [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Scegliere il nodo di progetto in **Esplora soluzioni**.
+2. Scegliere il nodo di progetto in **Esplora soluzioni**.
 
-3.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+3. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
      Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 
-4.  Nel **Installed** riquadro, scegliere il **Office/SharePoint** nodo.
+4. Nel **Installed** riquadro, scegliere il **Office/SharePoint** nodo.
 
-5.  Nell'elenco dei modelli di SharePoint, scegliere **controllo utente (solo soluzione Farm)**.
+5. Nell'elenco dei modelli di SharePoint, scegliere **controllo utente (solo soluzione Farm)**.
 
     > [!NOTE]
     >  I controlli utente possono essere utilizzati solo nelle soluzioni farm.
 
-6.  Nel **Name** casella, specificare un nome per il controllo utente e quindi scegliere il **Add** pulsante.
+6. Nel **Name** casella, specificare un nome per il controllo utente e quindi scegliere il **Add** pulsante.
 
      Visual Studio aggiunge diversi file e cartelle nel progetto. Per altre informazioni su questi file, vedere [creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
      Per impostazione predefinita, il file di controllo utente viene visualizzato nei **origine** visualizzazione della finestra di progettazione di Visual Web Developer. In questa visualizzazione è possibile modificare il markup XML del controllo. È possibile passare a **Design** visualizzare se si desidera progettare visivamente il controllo trascinando i controlli dalle **della casella degli strumenti**. Visualizzare [visualizzazione progettazione, progettazione pagina Web](/previous-versions/aspnet/ms178149\(v\=vs.100\)).
 
-7.  Se si desidera gestire eventi che si verificano nel controllo, aggiungere codice al file di codice del controllo utente.
+7. Se si desidera gestire eventi che si verificano nel controllo, aggiungere codice al file di codice del controllo utente.
 
      Questo file viene visualizzato nella **Esplora soluzioni** sotto il file di controllo utente e ha una *cs* o *vb* estensione, a seconda del linguaggio del progetto.
 

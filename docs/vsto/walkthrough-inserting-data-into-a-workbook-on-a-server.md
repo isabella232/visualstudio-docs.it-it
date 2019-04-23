@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 194ec4111d5cc4a34879377695667d97032402b9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4b68e2f01cae577c7d0913e448aa832b586aa22b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071694"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procedura dettagliata: Inserire dati in una cartella di lavoro in un server
   Questa procedura dettagliata illustra come inserire dati in un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -48,36 +48,36 @@ ms.locfileid: "54875940"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Accesso a un'istanza in esecuzione di Microsoft SQL Server o Microsoft SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
+- Accesso a un'istanza in esecuzione di Microsoft SQL Server o Microsoft SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
 
-    -   Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [come: Collegare un database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [come: Collegare un database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Per collegare un database tramite la riga di comando, vedere [come: Collegare un file di database a SQL Server Express](/previous-versions/sql/).
+    - Per collegare un database tramite la riga di comando, vedere [come: Collegare un file di database a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Creare un progetto di libreria di classi che definisce un set di dati
  Per usare lo stesso set di dati in un progetto cartella di lavoro di Excel e un'applicazione console, è necessario definire il set di dati in un assembly separato a cui viene fatto riferimento da entrambi questi progetti. Per questa procedura dettagliata, definire il set di dati in un progetto di libreria di classi.
 
 ### <a name="to-create-the-class-library-project"></a>Per creare il progetto di libreria di classi
 
-1.  Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-3.  Nel riquadro dei modelli, espandere **Visual C#** oppure **Visual Basic**, quindi fare clic su **Windows**.
+3. Nel riquadro dei modelli, espandere **Visual c#** oppure **Visual Basic**, quindi fare clic su **Windows**.
 
-4.  Nell'elenco dei modelli di progetto, selezionare **libreria di classi**.
+4. Nell'elenco dei modelli di progetto, selezionare **libreria di classi**.
 
-5.  Nel **Name** , digitare **AdventureWorksDataSet**.
+5. Nel **Name** , digitare **AdventureWorksDataSet**.
 
-6.  Fare clic su **esplorare**, passare alle *documenti %UserProfile%\My* (per Windows XP e versioni precedenti) o *%UserProfile%\Documents* (per Windows Vista) cartella e quindi fare clic su **Seleziona cartella**.
+6. Fare clic su **esplorare**, passare alle *documenti %UserProfile%\My* (per Windows XP e versioni precedenti) o *%UserProfile%\Documents* (per Windows Vista) cartella e quindi fare clic su **Seleziona cartella**.
 
-7.  Nel **nuovo progetto** finestra di dialogo casella, verificare che il **Crea directory per soluzione** casella di controllo non è selezionata.
+7. Nel **nuovo progetto** finestra di dialogo casella, verificare che il **Crea directory per soluzione** casella di controllo non è selezionata.
 
-8.  Fare clic su **OK**.
+8. Fare clic su **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **AdventureWorksDataSet** da progetto a **Esplora soluzioni** e apre il **Class1.cs** oppure **Class1.vb** file di codice.
 
@@ -125,21 +125,21 @@ ms.locfileid: "54875940"
 
 ### <a name="to-create-the-excel-workbook-project"></a>Per creare il progetto di cartella di lavoro di Excel
 
-1.  In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksDataSet** soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**.
+1. In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksDataSet** soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**.
 
-2.  Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
+2. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 
-3.  Nel nodo **Office/SharePoint** espanso, selezionare il nodo **Componenti aggiuntivi di Office** .
+3. Nel nodo **Office/SharePoint** espanso, selezionare il nodo **Componenti aggiuntivi di Office** .
 
-4.  Nell'elenco di modelli di progetto selezionare il progetto **Cartella di lavoro di Excel 2010** o **Cartella di lavoro di Excel 2013** .
+4. Nell'elenco di modelli di progetto selezionare il progetto **Cartella di lavoro di Excel 2010** o **Cartella di lavoro di Excel 2013** .
 
-5.  Nel **Name** , digitare **AdventureWorksReport**. Non modificare il percorso.
+5. Nel **Name** , digitare **AdventureWorksReport**. Non modificare il percorso.
 
-6.  Fare clic su **OK**.
+6. Fare clic su **OK**.
 
      Viene visualizzata la **Creazione guidata progetto Visual Studio Tools per Office** .
 
-7.  Assicurarsi che **creare un nuovo documento** sia selezionata e fare clic su **OK**.
+7. Assicurarsi che **creare un nuovo documento** sia selezionata e fare clic su **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre la **AdventureWorksReport** cartella di lavoro nella finestra di progettazione e aggiunge il **AdventureWorksReport** progetto al **Esplora soluzioni**.
 
@@ -148,21 +148,21 @@ ms.locfileid: "54875940"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Per aggiungere il set di dati per le origini dati nel progetto di cartella di lavoro di Excel
 
-1.  Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.cs** oppure **Sheet1.vb** sotto il **AdventureWorksReport** progetto.
+1. Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.cs** oppure **Sheet1.vb** sotto il **AdventureWorksReport** progetto.
 
      Consente di aprire la cartella di lavoro nella finestra di progettazione.
 
-2.  Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
+2. Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
      Viene avviata la **Configurazione guidata origine dati**.
 
-3.  Fare clic su **oggetti**, quindi fare clic su **successivo**.
+3. Fare clic su **oggetti**, quindi fare clic su **successivo**.
 
-4.  Nel **selezionare l'oggetto da associare** alla pagina, fare clic su **Aggiungi riferimento**.
+4. Nel **selezionare l'oggetto da associare** alla pagina, fare clic su **Aggiungi riferimento**.
 
-5.  Nel **progetti** scheda, fare clic su **AdventureWorksDataSet** e quindi fare clic su **OK**.
+5. Nel **progetti** scheda, fare clic su **AdventureWorksDataSet** e quindi fare clic su **OK**.
 
-6.  Sotto il **AdventureWorksDataSet** dello spazio dei nomi delle **AdventureWorksDataSet** assembly, fare clic su **AdventureWorksLTDataSet** e quindi fare clic su **fine** .
+6. Sotto il **AdventureWorksDataSet** dello spazio dei nomi delle **AdventureWorksDataSet** assembly, fare clic su **AdventureWorksLTDataSet** e quindi fare clic su **fine** .
 
      Il **Zdroje dat** viene visualizzata una finestra e **AdventureWorksLTDataSet** viene aggiunto all'elenco di origini dati.
 
@@ -171,13 +171,13 @@ ms.locfileid: "54875940"
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Per creare un controllo ListObject associato a un'istanza del set di dati
 
-1.  Nel **Zdroje dat** finestra, espandere il **AdventureWorksLTDataSet** nodo sotto **AdventureWorksDataSet**.
+1. Nel **Zdroje dat** finestra, espandere il **AdventureWorksLTDataSet** nodo sotto **AdventureWorksDataSet**.
 
-2.  Selezionare il **prodotto** nodo, fare clic sulla freccia giù visualizzata e selezionarla **ListObject** nell'elenco a discesa.
+2. Selezionare il **prodotto** nodo, fare clic sulla freccia giù visualizzata e selezionarla **ListObject** nell'elenco a discesa.
 
      Se la freccia a discesa non viene visualizzata, verificare che la cartella di lavoro è aperta nella finestra di progettazione.
 
-3.  Trascinare il **prodotto** alla cella A1.
+3. Trascinare il **prodotto** alla cella A1.
 
      Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato `productListObject` viene creato nel foglio di lavoro, a partire dalla cella A1. Allo stesso tempo vengono aggiunti al progetto un oggetto del set di dati denominato `adventureWorksLTDataSet` e un oggetto <xref:System.Windows.Forms.BindingSource> denominato `productBindingSource` . <xref:Microsoft.Office.Tools.Excel.ListObject> è associato a <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato all'oggetto del set di dati.
 
@@ -186,37 +186,37 @@ ms.locfileid: "54875940"
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>Per aggiungere il set di dati per la cache dei dati
 
-1.  Nella finestra di progettazione, fare clic su **adventureWorksLTDataSet**.
+1. Nella finestra di progettazione, fare clic su **adventureWorksLTDataSet**.
 
-2.  Nel **proprietà** impostare nella finestra di **modificatori** proprietà **pubblica**.
+2. Nel **proprietà** impostare nella finestra di **modificatori** proprietà **pubblica**.
 
-3.  Impostare il **CacheInDocument** proprietà **True**.
+3. Impostare il **CacheInDocument** proprietà **True**.
 
 ## <a name="checkpoint"></a>Checkpoint
  Compilare ed eseguire il progetto di cartella di lavoro di Excel per garantire che compilato ed eseguito senza errori.
 
 ### <a name="to-build-and-run-the-project"></a>Per compilare ed eseguire il progetto
 
-1.  In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksReport** del progetto, scegliere **Debug**, quindi fare clic su **Avvia nuova istanza**.
+1. In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksReport** del progetto, scegliere **Debug**, quindi fare clic su **Avvia nuova istanza**.
 
      Il progetto viene compilato e viene aperta la cartella di lavoro in Excel. Il <xref:Microsoft.Office.Tools.Excel.ListObject> nelle **Sheet1** è vuoto, perché il `adventureWorksLTDataSet` oggetto nella cache dei dati non contiene dati ancora. Nella sezione successiva, si userà un'applicazione console per popolare il `adventureWorksLTDataSet` oggetto con i dati.
 
-2.  Chiudere Excel. Non salvare le modifiche.
+2. Chiudere Excel. Non salvare le modifiche.
 
 ## <a name="create-a-console-application-project"></a>Creare un progetto di applicazione console
  Creare un progetto di applicazione console da usare per inserire dati nel set di dati memorizzati nella cache nella cartella di lavoro.
 
 ### <a name="to-create-the-console-application-project"></a>Per creare il progetto di applicazione console
 
-1.  In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksDataSet** soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**.
+1. In **Esplora soluzioni**, fare doppio clic sul **AdventureWorksDataSet** soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**.
 
-2.  Nel **tipi di progetto** riquadro, espandere **Visual C#** o **Visual Basic**, quindi fare clic su **Windows**.
+2. Nel **tipi di progetto** riquadro, espandere **Visual c#** o **Visual Basic**, quindi fare clic su **Windows**.
 
-3.  Nel **modelli** riquadro, selezionare **applicazione Console**.
+3. Nel **modelli** riquadro, selezionare **applicazione Console**.
 
-4.  Nel **Name** , digitare **DataWriter**. Non modificare il percorso.
+4. Nel **Name** , digitare **DataWriter**. Non modificare il percorso.
 
-5.  Fare clic su **OK**.
+5. Fare clic su **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **DataWriter** da progetto a **Esplora soluzioni** e apre il **Program.cs** oppure **Module1.vb** file di codice.
 
@@ -237,7 +237,7 @@ ms.locfileid: "54875940"
 
 6. Aprire il *Program.cs* oppure *Module1.vb* file nell'Editor del codice.
 
-7. Aggiungere il codice seguente **usando** (per C#) o **Imports** (per Visual Basic) all'inizio del file di codice.
+7. Aggiungere il codice seguente **usando** (per c#) o **Imports** (per Visual Basic) all'inizio del file di codice.
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
@@ -276,21 +276,21 @@ ms.locfileid: "54875940"
 
 ### <a name="to-test-the-workbook"></a>Per testare la cartella di lavoro
 
-1.  Chiudere la cartella di lavoro AdventureWorksReport nella finestra di progettazione di Visual Studio, se è ancora aperto.
+1. Chiudere la cartella di lavoro AdventureWorksReport nella finestra di progettazione di Visual Studio, se è ancora aperto.
 
-2.  In Esplora File aprire la cartella di lavoro AdventureWorksReport che si trova nella cartella di compilazione il **AdventureWorksReport** progetto. Per impostazione predefinita, la cartella di compilazione è in uno dei percorsi seguenti:
+2. In Esplora File aprire la cartella di lavoro AdventureWorksReport che si trova nella cartella di compilazione il **AdventureWorksReport** progetto. Per impostazione predefinita, la cartella di compilazione è in uno dei percorsi seguenti:
 
-    -   *%UserProfile%\My* (per Windows XP e versioni precedenti)
+    - *%UserProfile%\My* (per Windows XP e versioni precedenti)
 
-    -   *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (per Windows Vista)
+    - *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (per Windows Vista)
 
-3.  Verificare che il <xref:Microsoft.Office.Tools.Excel.ListObject> viene popolato con i dati dopo aver aperto la cartella di lavoro.
+3. Verificare che il <xref:Microsoft.Office.Tools.Excel.ListObject> viene popolato con i dati dopo aver aperto la cartella di lavoro.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Altre informazioni sull'uso dei dati memorizzati nella cache gli argomenti seguenti:
 
--   La modifica dei dati in un set di dati memorizzati nella cache senza avviare Excel. Per altre informazioni, vedere [Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+- La modifica dei dati in un set di dati memorizzati nella cache senza avviare Excel. Per altre informazioni, vedere [Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>Vedere anche
 

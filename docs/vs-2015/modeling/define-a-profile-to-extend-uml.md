@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069368"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ ms.locfileid: "58965477"
   
  È inoltre possibile definire varianti localizzate di un profilo. Gli utenti che caricano l'estensione visualizzano la variante appropriata alle proprie impostazioni cultura.  
   
-##  <a name="DefineProfile"></a> Come definire un profilo  
+## <a name="DefineProfile"></a> Come definire un profilo  
   
 #### <a name="to-define-a-uml-profile"></a>Per definire un profilo UML  
   
-1.  Creare un nuovo file XML con l'estensione di file `.profile`.  
+1. Creare un nuovo file XML con l'estensione di file `.profile`.  
   
-2.  Aggiungere definizioni di stereotipo secondo le linee guida descritte nel [struttura di un profilo](#Schema).  
+2. Aggiungere definizioni di stereotipo secondo le linee guida descritte nel [struttura di un profilo](#Schema).  
   
-3.  Aggiungere il profilo a un'estensione di Visual Studio (file `.vsix`). È possibile creare una nuova estensione per il profilo o aggiungere il profilo a un'estensione esistente.  
+3. Aggiungere il profilo a un'estensione di Visual Studio (file `.vsix`). È possibile creare una nuova estensione per il profilo o aggiungere il profilo a un'estensione esistente.  
   
      Vedere la sezione successiva [come aggiungere un profilo a un'estensione di Visual Studio](#AddProfile).  
   
-4.  Installare l'estensione nel computer.  
+4. Installare l'estensione nel computer.  
   
-    1.  Fare doppio clic sul file dell'estensione, che ha un'estensione di file `.vsix`.  
+    1. Fare doppio clic sul file dell'estensione, che ha un'estensione di file `.vsix`.  
   
-    2.  Riavviare Visual Studio.  
+    2. Riavviare Visual Studio.  
   
-5.  Verificare che il profilo sia stato installato.  
+5. Verificare che il profilo sia stato installato.  
   
-    1.  Selezionare il modello in Esplora UML.  
+    1. Selezionare il modello in Esplora UML.  
   
-    2.  Nella finestra Proprietà scegliere il **profili** proprietà. Il profilo verrà visualizzato nel menu. Impostare il segno di spunta accanto al profilo.  
+    2. Nella finestra Proprietà scegliere il **profili** proprietà. Il profilo verrà visualizzato nel menu. Impostare il segno di spunta accanto al profilo.  
   
-    3.  Selezionare un elemento per cui il profilo definisce gli stereotipi. Nella finestra Proprietà scegliere il **stereotipi** proprietà. Gli stereotipi verranno visualizzati nell'elenco. Impostare il segno di spunta accanto a uno degli stereotipi.  
+    3. Selezionare un elemento per cui il profilo definisce gli stereotipi. Nella finestra Proprietà scegliere il **stereotipi** proprietà. Gli stereotipi verranno visualizzati nell'elenco. Impostare il segno di spunta accanto a uno degli stereotipi.  
   
-    4.  Se il profilo definisce altre proprietà per questo stereotipo, espandere la proprietà dello stereotipo per visualizzarle.  
+    4. Se il profilo definisce altre proprietà per questo stereotipo, espandere la proprietà dello stereotipo per visualizzarle.  
   
-6.  Inviare il file dell'estensione ad altri utenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che lo installeranno nei rispettivi computer.  
+6. Inviare il file dell'estensione ad altri utenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che lo installeranno nei rispettivi computer.  
   
-##  <a name="AddProfile"></a> Come aggiungere un profilo a un'estensione di Visual Studio  
+## <a name="AddProfile"></a> Come aggiungere un profilo a un'estensione di Visual Studio  
  Per installare un profilo e poterlo inviare ad altri utenti, è necessario aggiungerlo a un'estensione di Visual Studio. Per altre informazioni, vedere [distribuzione di estensioni di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Per definire un profilo in una nuova estensione di Visual Studio  
@@ -85,19 +85,19 @@ ms.locfileid: "58965477"
    > [!NOTE]
    >  È necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per usare questa procedura.  
   
-   1.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+   1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-   2.  Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, espandere **Visual C#**, fare clic su **estendibilità**, quindi fare clic su  **Progetto VSIX**. Impostare il nome del progetto e scegliere **OK**.  
+   2. Nel **nuovo progetto** nella finestra di dialogo **modelli installati**, espandere **Visual c#**, fare clic su **estendibilità**, quindi fare clic su  **Progetto VSIX**. Impostare il nome del progetto e scegliere **OK**.  
   
 2. Aggiungere il profilo al progetto.  
   
-   -   In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **elemento esistente**. Nella finestra di dialogo individuare il file del profilo.  
+   - In Esplora soluzioni fare clic sul progetto, scegliere **Add**, quindi fare clic su **elemento esistente**. Nella finestra di dialogo individuare il file del profilo.  
   
 3. Impostare il file di profilo **Copia output** proprietà.  
   
-   1.  In Esplora soluzioni fare doppio clic su file del profilo e quindi fare clic su **proprietà**.  
+   1. In Esplora soluzioni fare doppio clic su file del profilo e quindi fare clic su **proprietà**.  
   
-   2.  Nella finestra Proprietà impostare il **copia in Directory di Output** proprietà **Copia sempre**.  
+   2. Nella finestra Proprietà impostare il **copia in Directory di Output** proprietà **Copia sempre**.  
   
 4. In Esplora soluzioni aprire `source.extension.vsixmanifest`.  
   
@@ -105,13 +105,13 @@ ms.locfileid: "58965477"
   
 5. Nel **asset** pagina, aggiungere una riga che descrive il profilo:  
   
-   -   Fare clic su **Nuovo**. Impostare i campi nella **Aggiungi nuovo Asset** finestra di dialogo come indicato di seguito.  
+   - Fare clic su **Nuovo**. Impostare i campi nella **Aggiungi nuovo Asset** finestra di dialogo come indicato di seguito.  
   
-   -   Impostare **tipo** a `Microsoft.VisualStudio.UmlProfile`  
+   - Impostare **tipo** a `Microsoft.VisualStudio.UmlProfile`  
   
         Non si tratta di una delle opzioni a discesa. Inserire il nome utilizzando la tastiera.  
   
-   -   Fare clic su **File in filesystem** e selezionare il nome del file di profilo, ad esempio `MyProfile.profile`  
+   - Fare clic su **File in filesystem** e selezionare il nome del file di profilo, ad esempio `MyProfile.profile`  
   
 6. Compilare il progetto.  
   
@@ -121,27 +121,27 @@ ms.locfileid: "58965477"
   
 8. **Per estrarre il file VSIX per la distribuzione**  
   
-   1.  In Windows Explorer, aprire la cartella **.\bin\Debug** oppure **.\bin\Release** per trovare i **VSIX** file. Si tratta di un file di estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Può essere installato nel computer e inviato ad altri utenti di Visual Studio.  
+   1. In Windows Explorer, aprire la cartella **.\bin\Debug** oppure **.\bin\Release** per trovare i **VSIX** file. Si tratta di un file di estensione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Può essere installato nel computer e inviato ad altri utenti di Visual Studio.  
   
-   2.  Per installare l'estensione:  
+   2. Per installare l'estensione:  
   
-       1.  Fare doppio clic sul file `.vsix`. Verrà avviato Visual Studio Extension Installer.  
+       1. Fare doppio clic sul file `.vsix`. Verrà avviato Visual Studio Extension Installer.  
   
-       2.  Riavviare tutte le istanze di Visual Studio in esecuzione.  
+       2. Riavviare tutte le istanze di Visual Studio in esecuzione.  
   
    La seguente procedura alternativa può essere usata per estensioni di piccole dimensioni se [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] non è stato installato.  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Per definire un'estensione del profilo senza usare Visual Studio SDK  
   
-1.  Creare una directory di Windows che contiene i tre file seguenti:  
+1. Creare una directory di Windows che contiene i tre file seguenti:  
   
-    -   *YourProfile* `.profile`  
+    - *YourProfile* `.profile`  
   
-    -   `extension.vsixmanifest`  
+    - `extension.vsixmanifest`  
   
-    -   `[Content_Types].xml`: digitare questo nome come mostrato qui, con le parentesi quadre  
+    - `[Content_Types].xml`: digitare questo nome come mostrato qui, con le parentesi quadre  
   
-2.  Modificare `[Content_Types].xml` in modo che contenga il testo seguente. Si noti che contiene una voce per ogni estensione di file.  
+2. Modificare `[Content_Types].xml` in modo che contenga il testo seguente. Si noti che contiene una voce per ogni estensione di file.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -151,13 +151,13 @@ ms.locfileid: "58965477"
     </Types>  
     ```  
   
-3.  Copiare un file `extension.vsixmanifest` esistente e modificarlo con un editor XML. Modificare i nodi ID, Name e Content.  
+3. Copiare un file `extension.vsixmanifest` esistente e modificarlo con un editor XML. Modificare i nodi ID, Name e Content.  
   
-    -   È possibile trovare un esempio di `extension.vsixmanifest` in questa directory:  
+    - È possibile trovare un esempio di `extension.vsixmanifest` in questa directory:  
   
          *unità* **: \Programmi\Microsoft Visual Studio [versione] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles**  
   
-    -   Il nodo Content deve essere simile al seguente:  
+    - Il nodo Content deve essere simile al seguente:  
   
         ```  
         <Content>  
@@ -166,39 +166,39 @@ ms.locfileid: "58965477"
         </Content>  
         ```  
   
-4.  Comprimere i tre file in un file compresso.  
+4. Comprimere i tre file in un file compresso.  
   
      In Windows Explorer, selezionare i tre file, fare doppio clic su, scegliere **Invia a**, quindi fare clic su **cartella compressa Compressed**.  
   
-5.  Rinominare il file compresso e cambiare l'estensione di file da `.zip` a `.vsix`.  
+5. Rinominare il file compresso e cambiare l'estensione di file da `.zip` a `.vsix`.  
   
-6.  Per installare il profilo in qualsiasi computer con le edizioni appropriate di Visual Studio, fare doppio clic sul file `.vsix`.  
+6. Per installare il profilo in qualsiasi computer con le edizioni appropriate di Visual Studio, fare doppio clic sul file `.vsix`.  
   
 #### <a name="to-install-a-uml-profile-from-a-visual-studio-extension"></a>Per installare un profilo UML da un'estensione di Visual Studio  
   
-1.  Fare doppio clic sul file `.vsix` in Esplora risorse o aprirlo in Visual Studio.  
+1. Fare doppio clic sul file `.vsix` in Esplora risorse o aprirlo in Visual Studio.  
   
-2.  Fare clic su **installare** nella finestra di dialogo visualizzata.  
+2. Fare clic su **installare** nella finestra di dialogo visualizzata.  
   
-3.  Per disinstallare o disabilitare temporaneamente l'estensione, aprire **estensioni e aggiornamenti** dalle **Tools** menu.  
+3. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **estensioni e aggiornamenti** dalle **Tools** menu.  
   
-##  <a name="Localized"></a> Come definire profili localizzati  
+## <a name="Localized"></a> Come definire profili localizzati  
  È possibile definire profili diversi per impostazioni cultura o lingue diverse e comprimerli tutti nella stessa estensione. Quando un utente carica l'estensione, vedrà il profilo definito per le proprie impostazioni cultura.  
   
  È sempre necessario specificare un profilo predefinito. Se non è stato definito un profilo per le impostazioni cultura dell'utente, verrà visualizzato il profilo predefinito.  
   
 #### <a name="to-define-a-localized-profile"></a>Per definire un profilo localizzato  
   
-1.  Creare un profilo, come descritto nelle sezioni precedenti[come definire un profilo](#DefineProfile) e [come aggiungere un profilo a un'estensione di Visual Studio](#AddProfile). Questo è il profilo predefinito e verrà usato in tutte le installazioni per cui non si specifica un profilo localizzato.  
+1. Creare un profilo, come descritto nelle sezioni precedenti[come definire un profilo](#DefineProfile) e [come aggiungere un profilo a un'estensione di Visual Studio](#AddProfile). Questo è il profilo predefinito e verrà usato in tutte le installazioni per cui non si specifica un profilo localizzato.  
   
-2.  Aggiungere una nuova directory nella stessa directory del file del profilo predefinito.  
+2. Aggiungere una nuova directory nella stessa directory del file del profilo predefinito.  
   
     > [!NOTE]
     >  Se si sta compilando l'estensione usando un progetto di estensione di Visual Studio, usare Esplora soluzioni per aggiungere una nuova cartella al progetto.  
   
-3.  Sostituire il nome della nuova directory con il codice breve ISO delle impostazioni cultura localizzate, ad esempio `bg` per il bulgaro o `fr` per il francese. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per altre informazioni sui codici delle impostazioni cultura, vedere [metodo CultureInfo. GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo dei codici delle impostazioni cultura.  
+3. Sostituire il nome della nuova directory con il codice breve ISO delle impostazioni cultura localizzate, ad esempio `bg` per il bulgaro o `fr` per il francese. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per altre informazioni sui codici delle impostazioni cultura, vedere [metodo CultureInfo. GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo dei codici delle impostazioni cultura.  
   
-4.  Aggiungere una copia del profilo predefinito alla nuova directory. Non modificare il nome file.  
+4. Aggiungere una copia del profilo predefinito alla nuova directory. Non modificare il nome file.  
   
      Un campione [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] cartella di estensione, prima che venga compilata o compressa in un `.vsix` file, può contenere le cartelle e file seguente:  
   
@@ -213,13 +213,13 @@ ms.locfileid: "58965477"
     > [!NOTE]
     >  Non è necessario inserire in `extension.vsixmanifest` un riferimento alle versioni localizzate dei profili. I file dei profili copiati devono avere lo stesso nome del profilo nella cartella padre.  
   
-5.  Modificare la nuova copia del profilo, traducendo nella lingua di destinazione tutte le parti che saranno visibili all'utente, ad esempio gli attributi `displayName`.  
+5. Modificare la nuova copia del profilo, traducendo nella lingua di destinazione tutte le parti che saranno visibili all'utente, ad esempio gli attributi `displayName`.  
   
-6.  È possibile creare altre cartelle di impostazioni cultura e profili localizzati per tutte le impostazioni cultura desiderate.  
+6. È possibile creare altre cartelle di impostazioni cultura e profili localizzati per tutte le impostazioni cultura desiderate.  
   
-7.  Compilare l'estensione di Visual Studio, compilando il progetto di estensione o comprimendo tutti i file, come spiegato nelle precedenti sezioni.  
+7. Compilare l'estensione di Visual Studio, compilando il progetto di estensione o comprimendo tutti i file, come spiegato nelle precedenti sezioni.  
   
-##  <a name="Schema"></a> La struttura di un profilo  
+## <a name="Schema"></a> La struttura di un profilo  
  Il file XSD per i profili UML è reperibile nell'esempio seguente: [Impostazione di stereotipi e profili XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:  
   
  **%ProgramFiles%\Microsoft visual Studio [versione] \Xml\Schemas.**  
@@ -251,11 +251,11 @@ ms.locfileid: "58965477"
   
  Ogni profilo contiene tre sezioni principali. In ordine inverso, sono le seguenti:  
   
--   `<propertyTypes>`: elenco di tipi usati per le proprietà definite nella sezione degli stereotipi.  
+- `<propertyTypes>`: elenco di tipi usati per le proprietà definite nella sezione degli stereotipi.  
   
--   `<metaclasses>`: elenco di tipi di elemento del modello a cui si applicano gli stereotipi di questo profilo, ad esempio IClass, IInterface, IOperation, IDependency.  
+- `<metaclasses>`: elenco di tipi di elemento del modello a cui si applicano gli stereotipi di questo profilo, ad esempio IClass, IInterface, IOperation, IDependency.  
   
--   `<stereotypes>`: definizioni degli stereotipi. Ogni definizione include i nomi e i tipi delle proprietà aggiunte all'elemento del modello di destinazione.  
+- `<stereotypes>`: definizioni degli stereotipi. Ogni definizione include i nomi e i tipi delle proprietà aggiunte all'elemento del modello di destinazione.  
   
 #### <a name="property-types"></a>Tipi di proprietà  
  Il `<propertyTypes>` sezione dichiara un elenco di tipi usati per le proprietà di `<stereotypes>` sezione. Esistono due tipi di proprietà: esterno ed enumerazione.  
@@ -335,7 +335,7 @@ ms.locfileid: "58965477"
 </stereotype>  
 ```  
   
-##  <a name="Elements"></a> Tipi di elemento di modello  
+## <a name="Elements"></a> Tipi di elemento di modello  
  Il set di tipi per cui è possibile definire gli stereotipi è elencato [tipi di elemento di modello UML](../modeling/uml-model-element-types.md).  
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
@@ -343,7 +343,7 @@ ms.locfileid: "58965477"
  È necessario selezionare il profilo in un pacchetto o in un modello. Gli stereotipi verranno visualizzati negli elementi all'interno del pacchetto o del modello. Per altre informazioni, vedere [Add stereotipi UML di elementi del modello](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
  Quando si apre un modello UML, viene visualizzato l'errore seguente: **VS1707: Poiché si è verificato un errore di serializzazione, non è possibile caricare i profili seguenti: MyProfile.profile**  
- 1.  Verificare che la sintassi XML di base del file con estensione profile sia corretta.  
+1. Verificare che la sintassi XML di base del file con estensione profile sia corretta.  
   
 2. Assicurarsi che ogni nome di moniker sia nel formato /profileName/nodeName. profileName è il valore dell'attributo name nel nodo del profilo radice. nodeName è il valore dell'attributo name di una metaclasse, externalType o enumerationType.  
   
@@ -351,16 +351,16 @@ ms.locfileid: "58965477"
   
 4. Disinstallare l'estensione errata. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.  
   
-   -   Se l'estensione non è visibile, vedere l'elemento successivo.  
+   - Se l'estensione non è visibile, vedere l'elemento successivo.  
   
 5. Ricompilare il file VSIX e aprirlo in Esplora risorse per reinstallarlo. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
    L'estensione non visibile in Gestione estensioni, ma quando si prova a installarla nuovamente, verrà visualizzato il messaggio seguente: **L'estensione è già installata per tutti i prodotti applicabili.**  
-   1.  Rimuovere il file di estensione da una sottocartella della *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versione]  
+   1. Rimuovere il file di estensione da una sottocartella della *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [versione]  
   
-   -   Per visualizzare *LocalAppData*, è necessario impostare cartelle e visualizzare file nascosti nella scheda Visualizza di opzioni cartella Windows Explorer.  
+   - Per visualizzare *LocalAppData*, è necessario impostare cartelle e visualizzare file nascosti nella scheda Visualizza di opzioni cartella Windows Explorer.  
   
-   -   *LocalAppData* è in genere in C:\Users\\*userName*\AppData\Local\  
+   - *LocalAppData* è in genere in C:\Users\\*userName*\AppData\Local\  
   
 6. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

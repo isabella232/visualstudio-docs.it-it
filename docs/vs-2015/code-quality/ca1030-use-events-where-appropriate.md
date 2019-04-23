@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58967348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072097"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usare eventi dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58967348"
 ## <a name="cause"></a>Causa
  Nome di un metodo pubblico, protetto o privato inizia con uno dei seguenti:
 
--   AddOn
+- AddOn
 
--   RemoveOn
+- RemoveOn
 
--   Incendi
+- Incendi
 
--   Raise
+- Raise
 
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Gli eventi di seguono lo schema progettuale osservatore o Publish-Subscribe; vengono utilizzati quando una modifica dello stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica dello stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.

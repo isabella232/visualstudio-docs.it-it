@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067066"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gestisci associazioni file side-by-side
 
@@ -51,7 +51,7 @@ Se si desidera più pacchetti VSPackage side-by-side per usare la stessa estensi
 
   **Righe della tabella CustomAction che determinano la versione più recente di Visual Studio**
 
-  |Operazione|Tipo|Origine|destinazione|
+  |Operazione|Tipo|Source|destinazione|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ Disinstallazione di un pacchetto VSPackage che scrive le voci del Registro di si
 
 - Chiedere all'utente di eseguire un ripristino della versione del pacchetto VSPackage che l'utente desidera l'associazione al file il proprietario.
 
--   Fornire un programma eseguibile separato che riscrive le voci del Registro di sistema appropriate.
+- Fornire un programma eseguibile separato che riscrive le voci del Registro di sistema appropriate.
 
--   Fornire una configurazione opzioni pagina o finestra di dialogo che consente agli utenti di scegliere le associazioni di file e recuperare le associazioni perse. Indicare agli utenti di eseguirlo dopo la disinstallazione.
+- Fornire una configurazione opzioni pagina o finestra di dialogo che consente agli utenti di scegliere le associazioni di file e recuperare le associazioni perse. Indicare agli utenti di eseguirlo dopo la disinstallazione.
 
 ## <a name="see-also"></a>Vedere anche
 

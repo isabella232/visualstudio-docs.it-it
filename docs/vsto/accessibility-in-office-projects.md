@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070043"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
 
@@ -40,21 +40,21 @@ Nella maggior parte dei casi, i progetti di Office in Visual Studio riunisce acc
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Per visualizzare i tasti di scelta rapida per le schede della barra multifunzione e i controlli nella finestra di progettazione
 
-1.  In Visual Studio, nel **Tools** menu, fare clic su **opzioni**.
+1. In Visual Studio, nel **Tools** menu, fare clic su **opzioni**.
 
-2.  Espandere la **gli strumenti di Office** nodo e selezionare **tastiera di Microsoft Office Excel** oppure **tastiera di Microsoft Office Word**, nel modo appropriato.
+2. Espandere la **gli strumenti di Office** nodo e selezionare **tastiera di Microsoft Office Excel** oppure **tastiera di Microsoft Office Word**, nel modo appropriato.
 
-3.  Selezionare **schema della tastiera dinamico**.
+3. Selezionare **schema della tastiera dinamico**.
 
      Viene visualizzato un messaggio che informa che è necessario riavviare Visual Studio per la modifica diventi effettiva.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
-5.  Riavviare Visual Studio e riaprire il progetto.
+5. Riavviare Visual Studio e riaprire il progetto.
 
-6.  Aprire la finestra di documento o cartella di lavoro di progettazione per il progetto.
+6. Aprire la finestra di documento o cartella di lavoro di progettazione per il progetto.
 
-7.  Premere **F6** per visualizzare i tasti di scelta rapida per la barra multifunzione.
+7. Premere **F6** per visualizzare i tasti di scelta rapida per la barra multifunzione.
 
 ## <a name="accessibility-at-runtime"></a>Accessibilità in fase di esecuzione
 
