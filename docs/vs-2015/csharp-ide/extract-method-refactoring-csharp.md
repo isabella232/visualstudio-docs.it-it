@@ -1,5 +1,5 @@
 ---
-title: Extrahovat Metodu Refactoring (C#) | Microsoft Docs
+title: Extrahovat Metodu Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041398"
 ---
 # <a name="extract-method-refactoring-c"></a>Refactoring Estrai Metodo (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "58954709"
   
  **Extrahovat Metodu** offre i vantaggi seguenti:  
   
--   Incoraggia procedure consigliate di codifica migliori da mettere in evidenza metodi distinti e riutilizzabili.  
+- Incoraggia procedure consigliate di codifica migliori da mettere in evidenza metodi distinti e riutilizzabili.  
   
--   Fornisce codice all'interno dell'organizzazione buona autodocumentato.  
+- Fornisce codice all'interno dell'organizzazione buona autodocumentato.  
   
      Quando i nomi descrittivi sono metodi di alto livello possono Scopri di più come una serie di commenti.  
   
--   Favorisce la creazione di metodi di granularità per semplificare l'override.  
+- Favorisce la creazione di metodi di granularità per semplificare l'override.  
   
--   Consente di ridurre la duplicazione del codice.  
+- Consente di ridurre la duplicazione del codice.  
   
 ### <a name="to-use-extract-method"></a>Usare Estrai metodo  
   
-1.  Creare un'applicazione console denominata `ExtractMethod` quindi sostituire `Program` con il codice di esempio seguente.  
+1. Creare un'applicazione console denominata `ExtractMethod` quindi sostituire `Program` con il codice di esempio seguente.  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "58954709"
     }  
     ```  
   
-2.  Selezionare il frammento di codice da estrarre:  
+2. Selezionare il frammento di codice da estrarre:  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  Nel **refactoring** menu, fare clic su **Estrai metodo**.  
+3. Nel **refactoring** menu, fare clic su **Estrai metodo**.  
   
      Il **Estrai metodo** verrà visualizzata la finestra di dialogo.  
   
@@ -82,11 +82,11 @@ ms.locfileid: "58954709"
   
      È possibile anche fare doppio clic selezionati di codice, scegliere **effettuare il refactoring**e quindi fare clic su **Estrai metodo** per visualizzare il **Estrai metodo** nella finestra di dialogo.  
   
-4.  Specificare un nome per il nuovo metodo, ad esempio `CircleArea`, nella **nuovo nome del metodo** casella.  
+4. Specificare un nome per il nuovo metodo, ad esempio `CircleArea`, nella **nuovo nome del metodo** casella.  
   
      Consente di visualizzare un'anteprima della firma del metodo nuovo sotto **Anteprima firma metodo**.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
 ## <a name="remarks"></a>Note  
  Quando si usa la **Estrai metodo** comando, viene inserito il nuovo metodo dopo il membro di origine nella stessa classe.  

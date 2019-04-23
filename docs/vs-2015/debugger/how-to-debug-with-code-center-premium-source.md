@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039877"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Procedura: Eseguire il debug con codice sorgente di Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>Per eseguire il debug del codice sorgente utilizzando Connetti a processo  
   
-1.  Collegare il lettore SmartCard e inserire la scheda ottenuta dall'iniziativa Shared Source.  
+1. Collegare il lettore SmartCard e inserire la scheda ottenuta dall'iniziativa Shared Source.  
   
-2.  Avviare Visual Studio.  
+2. Avviare Visual Studio.  
   
-3.  Aprire il progetto di Visual Studio.  
+3. Aprire il progetto di Visual Studio.  
   
-4.  Nel **degli strumenti** menu, fare clic su **Connetti a processo**.  
+4. Nel **degli strumenti** menu, fare clic su **Connetti a processo**.  
   
-5.  Nel **Connetti a processo** finestra di dialogo, fare clic su **seleziona**.  
+5. Nel **Connetti a processo** finestra di dialogo, fare clic su **seleziona**.  
   
-6.  Nel **Seleziona tipo di codice** nella finestra di dialogo **rilevare questi tipi di codice**, selezionare **Native**, **gestito**, e **gestiti ( v4.0)**.  
+6. Nel **Seleziona tipo di codice** nella finestra di dialogo **rilevare questi tipi di codice**, selezionare **Native**, **gestito**, e **gestiti ( v4.0)**.  
   
-7.  Fare clic su **OK** per chiudere la **Seleziona tipo di codice** nella finestra di dialogo.  
+7. Fare clic su **OK** per chiudere la **Seleziona tipo di codice** nella finestra di dialogo.  
   
-8.  Nel **processi disponibili** , selezionare il processo che si desidera eseguire il debug.  
+8. Nel **processi disponibili** , selezionare il processo che si desidera eseguire il debug.  
   
 9. Scegliere **Connetti**.  
   
@@ -117,27 +117,27 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
   
 4. Per ogni progetto gestito nella soluzione, eseguire quanto segue:  
   
-   1.  In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
+   1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
   
-   2.  Selezionare **Debug** e quindi scegliere **Abilita debug codice non gestito**.  
+   2. Selezionare **Debug** e quindi scegliere **Abilita debug codice non gestito**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Per eseguire il debug della soluzione con l'origine Code Center Premium  
   
-1.  Nella classe `Package` impostare un punto di interruzione nel costruttore del pacchetto.  
+1. Nella classe `Package` impostare un punto di interruzione nel costruttore del pacchetto.  
   
-2.  Nel `Debug` menu, fare clic su **Avvia debug**.  
+2. Nel `Debug` menu, fare clic su **Avvia debug**.  
   
-3.  Quando si raggiunge il punto di interruzione nel costruttore del pacchetto, passare al **Stack di chiamate** finestra e pulsante destro del mouse lo stack frame dell'assembly da caricare i simboli, quindi fare clic su **Carica simboli**.  
+3. Quando si raggiunge il punto di interruzione nel costruttore del pacchetto, passare al **Stack di chiamate** finestra e pulsante destro del mouse lo stack frame dell'assembly da caricare i simboli, quindi fare clic su **Carica simboli**.  
   
      Fare doppio clic sul frame di chiamata per caricare l'origine.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>Per analizzare il codice sorgente in Code Center Premium  
   
-1.  Collegare il lettore SmartCard e inserire la scheda ottenuta dall'iniziativa Shared Source.  
+1. Collegare il lettore SmartCard e inserire la scheda ottenuta dall'iniziativa Shared Source.  
   
-2.  Avviare Internet Explorer e immettere l'URL `https://codepremium.msdn.microsoft.com`  
+2. Avviare Internet Explorer e immettere l'URL `https://codepremium.msdn.microsoft.com`  
   
-3.  Cercare il codice sorgente desiderato.  
+3. Cercare il codice sorgente desiderato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  

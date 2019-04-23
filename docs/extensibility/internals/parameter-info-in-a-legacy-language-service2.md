@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57c5516c70819f8f86d56e93f78ec5d877c72a78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041195"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
 Informazioni sul parametro di IntelliSense è una descrizione comando che consente di visualizzare la firma di un metodo quando l'utente digita l'elenco dei parametri start carattere (in genere una parentesi di apertura) per l'elenco di parametri di metodo. Quando si immette ogni parametro e il separatore di parametro (in genere una virgola) è tipizzato, la descrizione comando viene aggiornato per mostrare il parametro successivo in grassetto.
@@ -111,10 +111,10 @@ testfunc("a string",3);
 
  Di seguito sono illustrati i passaggi che il parser accetta:
 
-1.  Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con il testo "testfunc".
+1. Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con il testo "testfunc".
 
-2.  Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
+2. Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.
 
-3.  Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
+3. Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.
 
-4.  Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. Le chiamate del parser <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599480"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040146"
 ---
 # <a name="ribbon-overview"></a>Panoramica della barra multifunzione
   La barra multifunzione è un modo per organizzare i comandi correlati in modo che siano più semplici da trovare. I comandi vengono visualizzati come controlli della barra multifunzione. I controlli sono organizzati in *gruppi* lungo una striscia orizzontale nella parte superiore di una finestra dell'applicazione. I gruppi correlati sono organizzati in schede.
@@ -93,12 +93,12 @@ ms.locfileid: "56599480"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Aggiungere più elementi della barra multifunzione a un progetto
  È possibile aggiungere più elementi della barra multifunzione a un singolo progetto. Questa operazione è utile per eseguire una delle due attività seguenti:
 
--   Creazione di barre multifunzione per Outlook *Inspectors*. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Creazione di barre multifunzione per Outlook *Inspectors*. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Un controllo rappresenta una finestra che viene aperta quando gli utenti eseguono determinate attività, ad esempio la creazione di un messaggio di posta elettronica.
 
--   Selezionare la barra multifunzione da visualizzare in fase di esecuzione.
+- Selezionare la barra multifunzione da visualizzare in fase di esecuzione.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Selezionare le barre multifunzione da visualizzare in fase di esecuzione
  Poiché un progetto può contenere più barre multifunzione, è possibile selezionare la barra multifunzione da visualizzare in fase di esecuzione.

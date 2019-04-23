@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040857"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Errore: La condivisione di file di Windows è stata configurata...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ La condivisione di file di Windows è stata configurata in modo da connettersi a
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Accedere al computer locale, ossia il computer da cui viene eseguito il debug, utilizzando l'altro nome account.  
+1. Accedere al computer locale, ossia il computer da cui viene eseguito il debug, utilizzando l'altro nome account.  
   
      -oppure-  
   
      . Disconnettersi dal computer remoto, quindi riconfigurare la condivisione file per connettersi a un altro computer con il proprio nome account:  
   
-    1.  Fare clic sul pulsante **Start**, scegliere **Accessori**, quindi **Prompt dei comandi**.  
+    1. Fare clic sul pulsante **Start**, scegliere **Accessori**, quindi **Prompt dei comandi**.  
   
-    2.  Al prompt dei comandi di Windows digitare:  
+    2. Al prompt dei comandi di Windows digitare:  
   
          `net use /delete computer_name`  
   
-    3.  Modificare le impostazioni di condivisione file utilizzando uno dei metodi illustrati nella Guida di windows.
+    3. Modificare le impostazioni di condivisione file utilizzando uno dei metodi illustrati nella Guida di windows.

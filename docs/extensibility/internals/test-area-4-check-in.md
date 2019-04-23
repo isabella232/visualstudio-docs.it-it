@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038712"
 ---
-# <a name="test-area-4-check-in"></a>Area di test 4: Archivia
+# <a name="test-area-4-check-in"></a>Area di test 4: Archiviare
 Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di elementi aggiornati nell'archivio versioni tramite il **Archivia** comando.
 
 ## <a name="command-menu-access"></a>Accesso a comandi di Menu
@@ -33,11 +33,11 @@ Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di
 
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune
 
--   Vengono visualizzati i progetti e i file aggiunti a una soluzione o progetto incluso nel controllo del codice sorgente nel **Archivia** finestra di dialogo e il **archiviazioni in sospeso** finestra.
+- Vengono visualizzati i progetti e i file aggiunti a una soluzione o progetto incluso nel controllo del codice sorgente nel **Archivia** finestra di dialogo e il **archiviazioni in sospeso** finestra.
 
--   Dopo il check-in, gli elementi aggiunti vengono visualizzati nel controllo del codice sorgente.
+- Dopo il check-in, gli elementi aggiunti vengono visualizzati nel controllo del codice sorgente.
 
--   Dopo il check-in, gli elementi aggiornati sono versioni correttamente nell'archivio.
+- Dopo il check-in, gli elementi aggiornati sono versioni correttamente nell'archivio.
 
 ## <a name="test-cases"></a>Test case
  Di seguito sono specifici test case per l'area di test di archiviazione.

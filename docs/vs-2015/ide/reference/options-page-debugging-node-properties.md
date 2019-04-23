@@ -9,23 +9,22 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782197"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670186"
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate alla categoria **Debug**, `DTE.Properties("Debugging", <Property Page>)` della finestra di dialogo **Opzioni**.  
   
 ## <a name="general"></a>Generale  
  `DTE.Properties("Debugging", "General")`  
   
-|Nome degli elementi delle proprietà|Value|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Determina se il debugger richiede l'autorizzazione prima di eliminare tutti i punti di interruzione in un progetto.|  
 |BreakAllProcesses|Get/Set (Boolean)|Determina se il debugger interrompe tutti i processi ogni volta che un singolo processo si interrompe.|  
@@ -55,7 +54,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="edit-and-continue"></a>Modifica e continuazione  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|Nome degli elementi delle proprietà|Valore|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (Boolean)|Determina se è abilitata la funzionalità Modifica e continuazione. Questa opzione si applica a tutti i linguaggi che supportano Modifica e continuazione.|  
 |InvokedByCommands|Get/Set (Boolean)|Determina se la funzionalità Modifica e continuazione applica automaticamente le modifiche al codice quando l'utente seleziona un comando di debug, ad esempio **Passaggio** o **Continua**. Questa opzione si applica solo al codice nativo.|  
@@ -67,7 +66,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="just-in-time"></a>JIT  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Nome degli elementi delle proprietà|Value|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice gestito.|  
 |JitNative|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice nativo.|  
@@ -76,7 +75,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="native"></a>Nativo  
  `DTE.Properties("Debugging", "Native")`  
   
-|Nome degli elementi delle proprietà|Value|Descrizione|  
+|Nome degli elementi delle proprietà|Value|Description|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|Determina se il debugger carica le tabelle di esportazione DLL.|  
 |EnableRPC|Get/Set (Boolean)|Determina se il debugger è in grado di eseguire istruzioni per le chiamate a procedure remote (RPC) COM.|  

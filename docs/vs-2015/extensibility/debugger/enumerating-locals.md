@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58965658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039199"
 ---
 # <a name="enumerating-locals"></a>Enumerazione di variabili locali
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "58965658"
   
  Questa implementazione di `IDebugProperty2::EnumChildren` esegue le attività seguenti:  
   
-1.  Garantisce che questo rappresenta un metodo.  
+1. Garantisce che questo rappresenta un metodo.  
   
-2.  Usa il `guidFilter` argomento per determinare il metodo da chiamare sul [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) oggetto. Se `guidFilter` è uguale a:  
+2. Usa il `guidFilter` argomento per determinare il metodo da chiamare sul [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) oggetto. Se `guidFilter` è uguale a:  
   
-    1.  `guidFilterLocals`, chiamare [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) per ottenere un [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) oggetto.  
+    1. `guidFilterLocals`, chiamare [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) per ottenere un [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) oggetto.  
   
-    2.  `guidFilterArgs`, chiamare [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) per ottenere un `IEnumDebugFields` oggetto.  
+    2. `guidFilterArgs`, chiamare [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) per ottenere un `IEnumDebugFields` oggetto.  
   
-    3.  `guidFilterLocalsPlusArgs`, un'enumerazione che combina i risultati di sintesi `IDebugMethodField::EnumLocals` e `IDebugMethodField::EnumArguments`. Questo sintesi sono rappresentato dalla classe `CEnumMethodField`.  
+    3. `guidFilterLocalsPlusArgs`, un'enumerazione che combina i risultati di sintesi `IDebugMethodField::EnumLocals` e `IDebugMethodField::EnumArguments`. Questo sintesi sono rappresentato dalla classe `CEnumMethodField`.  
   
-3.  Crea un'istanza di una classe (chiamati `CEnumPropertyInfo` in questo esempio) che implementa il `IEnumDebugPropertyInfo2` l'interfaccia e contiene il `IEnumDebugFields` oggetto.  
+3. Crea un'istanza di una classe (chiamati `CEnumPropertyInfo` in questo esempio) che implementa il `IEnumDebugPropertyInfo2` l'interfaccia e contiene il `IEnumDebugFields` oggetto.  
   
-4.  Restituisce il `IEnumDebugProperty2Info2` dell'interfaccia dal `CEnumPropertyInfo` oggetto.  
+4. Restituisce il `IEnumDebugProperty2Info2` dell'interfaccia dal `CEnumPropertyInfo` oggetto.  
   
 ## <a name="managed-code"></a>Codice gestito  
  In questo esempio viene illustrata un'implementazione di `IDebugProperty2::EnumChildren` nel codice gestito.  

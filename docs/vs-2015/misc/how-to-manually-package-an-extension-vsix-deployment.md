@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040741"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedura: Creare manualmente il pacchetto estensione (distribuzione VSIX)
 È possibile creare un pacchetto VSIX per eseguire il wrapping di un'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per la distribuzione. La creazione del pacchetto può avvenire in tre modi:  
@@ -33,25 +33,25 @@ ms.locfileid: "58965955"
   
 #### <a name="to-manually-create-a-vsix-package"></a>Per creare manualmente un pacchetto VSIX  
   
-1.  Creare un'estensione di Visual Studio di un tipo supportato dallo schema VSIX.  
+1. Creare un'estensione di Visual Studio di un tipo supportato dallo schema VSIX.  
   
-2.  Creare un file XML e assegnargli il nome `extension.vsixmanifest`.  
+2. Creare un file XML e assegnargli il nome `extension.vsixmanifest`.  
   
-3.  Compilare il file extension.vsixmanifest in base allo schema VSIX. Per un esempio di manifesto, vedere [Elemento PackageManifest (elemento radice, schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Compilare il file extension.vsixmanifest in base allo schema VSIX. Per un esempio di manifesto, vedere [Elemento PackageManifest (elemento radice, schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
-4.  Creare un secondo file XML e assegnargli il nome `[Content_Types].xml`.  
+4. Creare un secondo file XML e assegnargli il nome `[Content_Types].xml`.  
   
-5.  Compilare il file [Content_Types] XML come specificato nella [struttura del Content_types\]File con estensione XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Compilare il file [Content_Types] XML come specificato nella [struttura del Content_types\]File con estensione XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
-6.  Inserire entrambi i file XML in una directory con l'estensione da distribuire.  
+6. Inserire entrambi i file XML in una directory con l'estensione da distribuire.  
   
      Nel caso di un modello di progetto o di un modello di elemento, inserire il file ZIP contenente il modello nella stessa cartella dei file XML. Non inserire i file XML nel file ZIP.  
   
      In tutti gli altri casi, inserire i file XML nella stessa directory dell'output di compilazione.  
   
-7.  In Esplora risorse fare clic con il pulsante destro del mouse sulla cartella che include il contenuto dell'estensione e i due file XML, scegliere **Invia a**e quindi fare clic su **Cartella compressa**.  
+7. In Esplora risorse fare clic con il pulsante destro del mouse sulla cartella che include il contenuto dell'estensione e i due file XML, scegliere **Invia a**e quindi fare clic su **Cartella compressa**.  
   
-8.  Rinominare il file ZIP risultante in *Nomefile*.vsix, dove *Nomefile* è il nome del file ridistribuibile che installa il pacchetto.  
+8. Rinominare il file ZIP risultante in *Nomefile*.vsix, dove *Nomefile* è il nome del file ridistribuibile che installa il pacchetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensioni di Visual Studio di spedizione](../extensibility/shipping-visual-studio-extensions.md)   

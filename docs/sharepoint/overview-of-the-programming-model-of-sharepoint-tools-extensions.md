@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038470"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint
   Quando si crea un'estensione per gli strumenti di SharePoint in Visual Studio, si inizia implementando una o più interfacce di estendibilità che vengono esposte dagli strumenti di SharePoint. Nella maggior parte dei casi, si useranno anche altri tipi forniti dagli strumenti di SharePoint per implementare le funzionalità nell'estensione. In alcuni scenari è possibile usare anche tipi in altri modelli a oggetti forniti da Visual Studio e SharePoint. È necessario comprendere lo scopo della ognuno di questi modelli a oggetti e sapere come usarli con loro per creare estensioni per gli strumenti di SharePoint.
@@ -45,14 +45,14 @@ ms.locfileid: "58325238"
 ## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>Comprendere i modelli a oggetti utilizzati nelle estensioni di strumenti di SharePoint
  È possibile usare vari modelli a oggetti quando si creano estensioni per gli strumenti di SharePoint:
 
--   *Modello a oggetti degli strumenti di SharePoint*. Questo modello a oggetti fornisce le interfacce di estendibilità implementate per creare le estensioni degli strumenti di SharePoint e altri tipi correlati.
+- *Modello a oggetti degli strumenti di SharePoint*. Questo modello a oggetti fornisce le interfacce di estendibilità implementate per creare le estensioni degli strumenti di SharePoint e altri tipi correlati.
 
--   *Visual Studio automazione e integrazione di modelli a oggetti*. Usare questi modelli a oggetti per accedere alle funzionalità di Visual Studio che esulano dall'ambito del modello a oggetti degli strumenti di SharePoint.
+- *Visual Studio automazione e integrazione di modelli a oggetti*. Usare questi modelli a oggetti per accedere alle funzionalità di Visual Studio che esulano dall'ambito del modello a oggetti degli strumenti di SharePoint.
 
     > [!NOTE]
     >  È possibile convertire alcuni oggetti nel modello a oggetti degli strumenti di SharePoint in oggetti del modello a oggetti di automazione e integrazione di Visual Studio e viceversa, tramite il servizio di progetto SharePoint. Per altre informazioni, vedere [eseguire la conversione tra tipi di sistema di progetto SharePoint e altri tipi di progetto di Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
--   *Modelli a oggetti client e server SharePoint*. Usare questi modelli a oggetti per modificare un sito di SharePoint o per recuperare dati da un sito di SharePoint dal contesto di un'estensione degli strumenti di SharePoint.
+- *Modelli a oggetti client e server SharePoint*. Usare questi modelli a oggetti per modificare un sito di SharePoint o per recuperare dati da un sito di SharePoint dal contesto di un'estensione degli strumenti di SharePoint.
 
 ### <a name="sharepoint-tools-object-model"></a>Modello a oggetti SharePoint tools
  Ogni estensione degli strumenti di SharePoint usa dei tipi nel modello a oggetti degli strumenti di SharePoint per definire il comportamento e le funzionalità principali dell'estensione. Le tabelle seguenti descrivono gli spazi dei nomi inclusi in questo modello a oggetti per l'assembly che li contiene.

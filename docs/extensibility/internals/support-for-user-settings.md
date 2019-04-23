@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622722"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670446"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
 Un pacchetto VSPackage può definire uno o più categorie di impostazioni, che sono gruppi di variabili di stato che rendono persistenti quando un utente sceglie il **Importa/Esporta impostazioni** comando le **Tools** menu. Per abilitare la persistenza, si usano le impostazioni API nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -50,8 +50,7 @@ Un pacchetto VSPackage può definire uno o più categorie di impostazioni, che s
 
  AlternateParent = CategoryName
 
-
-| nome | Tipo | Dati | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 |-----------------|--------| - | - |
 | (Predefinito) | REG_SZ | Nome del punto di impostazioni personalizzato | Il nome della chiave, `<CSPName`>, è il nome non localizzato del punto di impostazioni personalizzato.<br /><br /> Per le implementazioni di base di MPF, il nome della chiave viene ottenuto combinando le `categoryName` e `objectName` gli argomenti delle <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> costruttore in `categoryName_objectName`.<br /><br /> La chiave può essere vuota o può contenere l'ID di riferimento per la stringa localizzata in una DLL satellite. Questo valore viene ottenuto dal `objectNameResourceID` argomento per il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> costruttore. |
 | Pacchetto | REG_SZ | GUID | Il GUID del pacchetto VSPackage che implementa il punto di impostazioni personalizzato.<br /><br /> Implementazioni basate su MPF usando il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe, usare il costruttore `objectType` argomento che contiene il pacchetto VSPackage <xref:System.Type> e reflection per ottenere questo valore. |

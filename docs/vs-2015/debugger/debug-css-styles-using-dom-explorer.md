@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45da81c91cf654fe41fb903314dce662beac7a23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042020"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Eseguire il debug di stili CSS tramite DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
  Le schede **Stili**, **Calcolata**e **Modifiche** forniscono visualizzazioni diverse delle informazioni di stile.  
   
--   Usare la scheda **Stili** per visualizzare le regole organizzate in base al nome del selettore CSS, ad esempio `html, body`. È anche possibile usare questa scheda per abilitare o disabilitare stili specifici, modificare manualmente i valori e vedere i risultati immediati delle modifiche.  
+- Usare la scheda **Stili** per visualizzare le regole organizzate in base al nome del selettore CSS, ad esempio `html, body`. È anche possibile usare questa scheda per abilitare o disabilitare stili specifici, modificare manualmente i valori e vedere i risultati immediati delle modifiche.  
   
--   Usare la scheda **Calcolata** per visualizzare i valori calcolati di uno stile. Se ad esempio si imposta una dimensione a 1em, il valore calcolato da Internet Explorer potrebbe essere 16px. Gli stili in questa scheda sono organizzati in base al nome dello stile, ad esempio `height`. È anche possibile usare questa scheda per abilitare o disabilitare stili specifici, modificare manualmente i valori e vedere i risultati immediati delle modifiche.  
+- Usare la scheda **Calcolata** per visualizzare i valori calcolati di uno stile. Se ad esempio si imposta una dimensione a 1em, il valore calcolato da Internet Explorer potrebbe essere 16px. Gli stili in questa scheda sono organizzati in base al nome dello stile, ad esempio `height`. È anche possibile usare questa scheda per abilitare o disabilitare stili specifici, modificare manualmente i valori e vedere i risultati immediati delle modifiche.  
   
     > [!NOTE]
     >  In Visual Studio 2013 Update 2, le informazioni presenti nella scheda **Traccia** sono state aggiunte alla scheda **Calcolata** e la scheda **Traccia** è stata rimossa.  
   
--   Usare la scheda **Modifiche** (solo per app di Windows Store e Windows Phone Store) per identificare e tenere traccia degli stili CSS modificati durante la sessione di debug.  
+- Usare la scheda **Modifiche** (solo per app di Windows Store e Windows Phone Store) per identificare e tenere traccia degli stili CSS modificati durante la sessione di debug.  
   
 > [!TIP]
 >  Le modifiche apportate nelle schede **Stili** e **Calcolata** non sono permanenti, vengono infatti perse quando si arresta il debug. Per modificare il codice sorgente e ricaricare le pagine senza arrestare e riavviare il debugger, aggiornare l'app usando il ![pulsante di aggiornamento Windows app](../debugger/media/js-refresh.png "JS_Refresh") pulsante (**Windows aggiorna app** ) sul **Debug** (solo app Windows Store e Windows Phone Store) sulla barra degli strumenti. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md).  
@@ -58,11 +58,11 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 #### <a name="to-view-and-change-css-rules"></a>Per visualizzare e modificare le regole CSS  
   
-1.  In Visual Studio creare una nuova app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] usando JavaScript e HTML nel modello di progetto Applicazione divisa.  
+1. In Visual Studio creare una nuova app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] usando JavaScript e HTML nel modello di progetto Applicazione divisa.  
   
-2.  In **Esplora soluzioni**aprire items.css, disponibile nella cartella delle pagine.  
+2. In **Esplora soluzioni**aprire items.css, disponibile nella cartella delle pagine.  
   
-3.  Sostituire il codice CSS riportato di seguito:  
+3. Sostituire il codice CSS riportato di seguito:  
   
     ```css  
     .itemspage .itemslist .item {  
@@ -89,30 +89,30 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      Questa operazione aggiunge uno stile che specifica il colore #ff6a00 (arancione) per ogni elemento nell'elenco. Il selettore CSS, `.itemspage .itemslist .item`, indica un set di nomi di classe per gli elementi DIV in items.html, che vengono visualizzati come elementi annidati nel DOM attivo. L'elemento DIV `item` specifica gli elementi dell'elenco.  
   
-4.  Selezionare **Simulatore** nell'elenco a discesa della barra degli strumenti **Debug** (**Computer locale** è il valore predefinito).  
+4. Selezionare **Simulatore** nell'elenco a discesa della barra degli strumenti **Debug** (**Computer locale** è il valore predefinito).  
   
      ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-5.  Premere F5 per eseguire l'app in modalità debug.  
+5. Premere F5 per eseguire l'app in modalità debug.  
   
      Quando l'app ha terminato di caricare, esaminare le intestazioni degli elementi dell'elenco, ad esempio **titolo gruppo: 1**. Il colore rimane invariato, quindi il tentativo di applicare un colore arancione ai titoli non ha funzionato. Si cercherà di capire qual è la causa dell'errore che verrà risolto usando le schede CSS in DOM Explorer.  
   
     > [!TIP]
     >  Dopo che l'app viene visualizzata nel simulatore, posizionare il simulatore proprio accanto alla finestra di Visual Studio in modo che sia possibile osservare immediatamente i risultati delle selezioni e le modifiche apportate agli stili CSS.  
   
-6.  Passare a Visual Studio e fare clic su **Seleziona elemento** in DOM Explorer (o premere CTRL+B). In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic. Ecco il pulsante **Seleziona elemento** . ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Passare a Visual Studio e fare clic su **Seleziona elemento** in DOM Explorer (o premere CTRL+B). In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic. Ecco il pulsante **Seleziona elemento** . ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     >  È anche possibile selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-7.  Nel simulatore al passaggio del mouse sul titolo del primo elemento nell'elenco, **titolo gruppo: 1**, nel riquadro sinistro della home page. Il titolo è evidenziato come illustrato qui:  
+7. Nel simulatore al passaggio del mouse sul titolo del primo elemento nell'elenco, **titolo gruppo: 1**, nel riquadro sinistro della home page. Il titolo è evidenziato come illustrato qui:  
   
      ![Con il pulsante Seleziona elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     >  L'emulatore Windows Phone supporta solo in parte l'evidenziazione degli elementi al passaggio del mouse.  
   
-8.  Fare clic sul titolo con il contorno. In DOM Explorer viene selezionato automaticamente l'elemento HTML corrispondente, simile a quello illustrato.  
+8. Fare clic sul titolo con il contorno. In DOM Explorer viene selezionato automaticamente l'elemento HTML corrispondente, simile a quello illustrato.  
   
     ```html  
     <h4 class="item-title">Group Title: 1</h4>  
@@ -124,12 +124,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      Questa visualizzazione fornisce informazioni utili sulle regole associate allo stile `color` , come illustrato di seguito:  
   
-    -   Il selettore CSS modificato in items.css, `.itemspage .itemslist .item`non viene usato nel calcolo dello stile finale (visualizzato con testo barrato). Non vengono usate neanche molte altre occorrenze dello stile `color` .  
+    - Il selettore CSS modificato in items.css, `.itemspage .itemslist .item`non viene usato nel calcolo dello stile finale (visualizzato con testo barrato). Non vengono usate neanche molte altre occorrenze dello stile `color` .  
   
         > [!TIP]
         >  Per i nomi di selettore più lunghi, il nome completo è visibile in una descrizione comando.  
   
-    -   Il valore CSS finale calcolato, `rgba(255, 255, 255, 0.87)`, viene impostato in modo specifico per il selettore CSS seguente: `.itemspage .itemslist .item .item-overlay .item-title`, anch'esso definito in items.css.  
+    - Il valore CSS finale calcolato, `rgba(255, 255, 255, 0.87)`, viene impostato in modo specifico per il selettore CSS seguente: `.itemspage .itemslist .item .item-overlay .item-title`, anch'esso definito in items.css.  
   
         > [!TIP]
         >  Ora che è nota la posizione in cui viene impostato il colore, è possibile modificarlo. È tuttavia possibile verificare anche le modifiche in DOM Explorer senza aggiornare l'app, come illustrato negli altri passaggi.  

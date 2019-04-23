@@ -8,12 +8,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2997abd9a112b60e9ef692bfe87b740976007656
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f1aee9fb3790a5ba7b766eba22f2ec6420dacfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041769"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Non usare algoritmi di crittografia vulnerabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "58967942"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Usare opzioni di crittografia più avanzate:  
   
--   Per la crittografia TripleDES, usare la crittografia <xref:System.Security.Cryptography.Aes> .  
+- Per la crittografia TripleDES, usare la crittografia <xref:System.Security.Cryptography.Aes> .  
   
--   Per le funzioni hash SHA1 o RIPEMD160, usare quelle nella famiglia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- Per le funzioni hash SHA1 o RIPEMD160, usare quelle nella famiglia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  Escludere un avviso da questa regola quando il livello di protezione necessario per i dati non richiede una garanzia di sicurezza.  

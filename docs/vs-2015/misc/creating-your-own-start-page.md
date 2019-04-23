@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037895"
 ---
 # <a name="creating-your-own-start-page"></a>Creazione di una pagina iniziale personalizzata
 È possibile creare una pagina iniziale personalizzata usando il modello di progetto di pagina iniziale o creando una pagina iniziale vuota.  
@@ -28,22 +28,22 @@ ms.locfileid: "59001511"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Per creare una pagina iniziale personalizzata con il modello di progetto di pagina iniziale  
   
-1.  Scaricare e installare il [modello di progetto di pagina iniziale](http://go.microsoft.com/fwlink/?LinkId=186204) da Visual Studio Gallery.  
+1. Scaricare e installare il [modello di progetto di pagina iniziale](http://go.microsoft.com/fwlink/?LinkId=186204) da Visual Studio Gallery.  
   
     > [!WARNING]
     >  A questo punto il modello di progetto di pagina iniziale di Visual Studio 2010 non è ancora aggiornato. Per informazioni su come aggiornare il modello, vedere [come: Aggiornare una pagina iniziale personalizzata di Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Dopo aver installato il modello, usarlo per creare un nuovo progetto di pagina iniziale.  
+2. Dopo aver installato il modello, usarlo per creare un nuovo progetto di pagina iniziale.  
   
-3.  In **Modelli installati**nel riquadro sinistro della finestra di dialogo Nuovo progetto espandere il nodo **Altri tipi di progetto** e quindi fare clic sul nodo **Extensibility**.  
+3. In **Modelli installati**nel riquadro sinistro della finestra di dialogo Nuovo progetto espandere il nodo **Altri tipi di progetto** e quindi fare clic sul nodo **Extensibility**.  
   
-4.  Nel riquadro centrale fare clic su **Personalizza pagina iniziale**, assegnare un nome al progetto e quindi fare clic su **OK**.  
+4. Nel riquadro centrale fare clic su **Personalizza pagina iniziale**, assegnare un nome al progetto e quindi fare clic su **OK**.  
   
      Viene creato un progetto di pagina iniziale che è una copia completa della pagina iniziale di Visual Studio.  
   
-5.  Da **Esplora soluzioni**aprire il file **StartPage.xaml**.  
+5. Da **Esplora soluzioni**aprire il file **StartPage.xaml**.  
   
-6.  Modificare il file StartPage.xaml.  
+6. Modificare il file StartPage.xaml.  
   
      È possibile visualizzare il proprio lavoro premendo F5 per aprire un'istanza sperimentale di Visual Studio con la pagina iniziale personalizzata installata.  
   

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041578"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger di Visual Studio
 
@@ -44,7 +44,7 @@ Se si interrompe nel codice che non dispone di origine o simboli (*PDB*) i file 
 
 Non sempre è necessario avviare il debug eseguendo l'avvio di un'app all'inizio. È anche possibile premere **F11** al [istruzioni nel codice](#BKMK_Step_into__over__or_out_of_the_code), premere **F10** al [Esegui istruzione/routine di codice](#BKMK_Step_over_Step_out), o [eseguiti in un percorso specifico o funzione](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
-##  <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
+## <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
 
 I comandi di passaggio del debugger consentono di controllare lo stato dell'app o altre informazioni sul flusso di esecuzione.
 
@@ -75,16 +75,16 @@ In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà es
 >[!TIP]
 >Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzare i relativi valori oppure usare il [variabili locali](autos-and-locals-windows.md) e [Watch](watch-and-quickwatch-windows.md) windows per verificare i valori di passaggio. Si può anche rilevare visivamente lo stack di chiamata durante l'esecuzione di funzioni. Visualizzare [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-###  <a name="BKMK_Step_over_Step_out"></a> Esaminare il codice e ignorare alcune funzioni
+### <a name="BKMK_Step_over_Step_out"></a> Esaminare il codice e ignorare alcune funzioni
 
 Potrebbe non rilevante una funzione durante il debug o si conosce funziona, come il codice ben collaudato della libreria. È possibile usare i comandi seguenti da ignorare nel codice. Le funzioni eseguono comunque, ma li ignora il debugger.
 
-|Comando di tasti|Comando del menu Debug|Description|
+|Comando di tasti|Comando del menu Debug|Descrizione|
 |----------------------|------------------|-----------------|
 |**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione **Esegui istruzione/routine** esegue il codice, quindi viene sospesa alla prima riga del codice dopo che la funzione chiamata viene restituita.|
 |**MAIUSC**+**F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando termina la funzione corrente. Il debugger passa attraverso la funzione corrente.|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire fino a un percorso specifico o (funzione)
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire fino a un percorso specifico o (funzione)
 
 È preferibile eseguire direttamente a una posizione specifica o una funzione quando si sa esattamente quale codice si desidera controllare o si conosce in cui si desidera avviare il debug.
 
@@ -139,7 +139,7 @@ Durante la pausa del debugger, è possibile posizionarsi su un'istruzione nel co
 
 Per inserire un'interruzione nella riga successiva disponibile di codice in un'app in esecuzione, selezionare **Debug** > **Interrompi tutto**, oppure premere **Ctrl**+**Alt**  + **Interrompi**.
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Spostare il puntatore del mouse per modificare il flusso di esecuzione
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> Spostare il puntatore del mouse per modificare il flusso di esecuzione
 
 Quando il debugger viene sospeso, ovvero la freccia gialla nel margine del codice sorgente oppure **Disassembly** finestra contrassegna la posizione dell'istruzione successiva da eseguire. È possibile modificare l'istruzione successiva da eseguire tramite lo spostamento della freccia. È possibile ignorare un segmento di codice o tornare a una riga precedente. Spostando il puntatore è utile per le situazioni, ad esempio ignorare una sezione di codice che contiene un bug noto.
 
@@ -181,7 +181,7 @@ Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e l
 
 1. Nel **moduli** finestra, è possibile indicare che i moduli disponibili simboli caricati nel **stato simboli** colonna. Fare clic sul modulo che si desidera caricare i simboli e selezionare **caricare i simboli**.
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito
  Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di operatori o proprietà, scegliere **Debug** > **opzioni**. Nella pagina **Debug** > **Generale** deselezionare la casella di controllo **Esegui istruzione/routine di proprietà e operatori (solo gestito)**.
 
 ## <a name="see-also"></a>Vedere anche

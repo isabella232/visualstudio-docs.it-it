@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: firmare i file con SignTool.exe (ClickOnce) di installazione | Microsoft Docs'
+title: 'Procedura: Firmare con SignTool.exe (ClickOnce) i file di installazione | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041067"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: Firmare i file di installazione con SignTool.exe (ClickOnce)
 È possibile usare *SignTool.exe* per firmare un programma di installazione (*setup.exe*). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
@@ -34,23 +34,23 @@ ms.locfileid: "56619966"
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Per generare un programma di installazione non firmato e firmarlo in seguito
 
-1.  Installare nel computer di sviluppo il certificato da usare per la firma del manifesto.
+1. Installare nel computer di sviluppo il certificato da usare per la firma del manifesto.
 
-2.  Selezionare il progetto in **Esplora soluzioni**.
+2. Selezionare il progetto in **Esplora soluzioni**.
 
-3.  Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.
+3. Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.
 
-4.  Nella pagina **Firma** deselezionare l'opzione **Firma i manifesti ClickOnce**.
+4. Nella pagina **Firma** deselezionare l'opzione **Firma i manifesti ClickOnce**.
 
-5.  Nella pagina **Pubblica** fare clic su **Prerequisiti**.
+5. Nella pagina **Pubblica** fare clic su **Prerequisiti**.
 
-6.  Verificare che siano selezionati tutti i prerequisiti, quindi fare clic su **OK**.
+6. Verificare che siano selezionati tutti i prerequisiti, quindi fare clic su **OK**.
 
-7.  Nella pagina **Pubblica** verificare le impostazioni di pubblicazione e quindi fare clic su **Pubblica**.
+7. Nella pagina **Pubblica** verificare le impostazioni di pubblicazione e quindi fare clic su **Pubblica**.
 
      La soluzione pubblica il manifesto dell'applicazione non firmato, il manifesto della distribuzione non firmato, i file specifici della versione e il programma di installazione non firmato nel percorso della cartella di pubblicazione.
 
-8.  Nella pagina **Pubblica** fare clic su **Prerequisiti**.
+8. Nella pagina **Pubblica** fare clic su **Prerequisiti**.
 
 9. Nella finestra di dialogo **Prerequisiti** deselezionare l'opzione **Crea programma di installazione per installare componenti dei prerequisiti**.
 

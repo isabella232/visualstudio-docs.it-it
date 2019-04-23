@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038330"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Controllare i gestori di eventi visibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "58966919"
 
  Una richiesta non è possibile proteggere in modo affidabile un metodo richiamato da un gestore eventi. Richieste di sicurezza consentono il codice dai chiamanti non attendibili esaminando i chiamanti nello stack di chiamate. Il codice che aggiunge un gestore eventi a un evento non è necessariamente presente nello stack di chiamate durante l'esecuzione dei metodi del gestore eventi. Pertanto, lo stack di chiamate potrebbe contenere solo altamente attendibili ai chiamanti quando viene richiamato il metodo del gestore eventi. In questo modo le richieste effettuate dal metodo del gestore eventi abbia esito positivo. Inoltre, le autorizzazioni richieste potrebbero essere asserite quando viene richiamato il metodo. Per questi motivi, il rischio di non correggere una violazione di questa regola può essere valutato solo dopo aver esaminato il metodo di gestione degli eventi. Durante la revisione del codice, tenere presente quanto segue:
 
--   Il gestore eventi esegue tutte le operazioni pericolose o vulnerabile, ad esempio di asserzione di autorizzazioni o l'eliminazione dell'autorizzazione di codice non gestito?
+- Il gestore eventi esegue tutte le operazioni pericolose o vulnerabile, ad esempio di asserzione di autorizzazioni o l'eliminazione dell'autorizzazione di codice non gestito?
 
--   Quali sono le minacce alla sicurezza da e verso il codice, poiché possono essere eseguiti in qualsiasi momento con solo altamente attendibili i chiamanti nello stack?
+- Quali sono le minacce alla sicurezza da e verso il codice, poiché possono essere eseguiti in qualsiasi momento con solo altamente attendibili i chiamanti nello stack?
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, esaminare il metodo e valutare quanto segue:
 
--   Sarà possibile rendere il metodo di gestione degli eventi non pubblici?
+- Sarà possibile rendere il metodo di gestione degli eventi non pubblici?
 
--   È possibile spostare tutte le funzionalità pericolose fuori del gestore eventi?
+- È possibile spostare tutte le funzionalità pericolose fuori del gestore eventi?
 
--   Se una richiesta di sicurezza viene imposto, possa essere eseguita in altro modo.
+- Se una richiesta di sicurezza viene imposto, possa essere eseguita in altro modo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Eliminare un avviso da questa regola solo dopo un'attenta revisione della sicurezza per assicurarsi che il codice non costituisce una minaccia alla sicurezza.

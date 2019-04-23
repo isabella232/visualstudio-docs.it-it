@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44b125f44f3345e7bd28a9993a7a44be2e378b53
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 891a0c200b02f8768ef68d1d87649bfd35cf59d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040611"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 Questo metodo consente il fornitore della porta visualizzare un avviso prima che l'utente si connette a un processo non sicuro.
@@ -33,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Valore restituito
  I valori restituiti sono come segue:
 
--   `S_OK`: La connessione al processo è sicura e non viene visualizzata alcuna finestra di dialogo di avviso.
+- `S_OK`: La connessione al processo è sicura e non viene visualizzata alcuna finestra di dialogo di avviso.
 
--   `S_FALSE`: La connessione potrebbe essere un problema di sicurezza e viene visualizzata una finestra di dialogo con un avviso.
+- `S_FALSE`: La connessione potrebbe essere un problema di sicurezza e viene visualizzata una finestra di dialogo con un avviso.
 
--   `FAILURE`: La connessione al processo avrà esito negativo.
+- `FAILURE`: La connessione al processo avrà esito negativo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

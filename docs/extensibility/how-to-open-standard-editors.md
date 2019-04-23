@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e9652e986ee67721c51f8a52df898688d9492ea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f34a239628c3ed9e8bccaa8590cb22100d7d290f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042436"
 ---
 # <a name="how-to-open-standard-editors"></a>Procedura: Apri editor standard
 Quando si apre un editor standard, è consentire l'IDE di determinare un editor standard per un tipo di file, anziché specificare un editor specifico del progetto per il file.
@@ -25,25 +25,25 @@ Quando si apre un editor standard, è consentire l'IDE di determinare un editor 
 
 ## <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>Per implementare il metodo OpenItem con un editor standard
 
-1.  Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) per determinare se il file di oggetto dati documento è già aperto.
+1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) per determinare se il file di oggetto dati documento è già aperto.
 
-2.  Se il file è già aperto, il file resurface chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metodo, specificando il valore `IDO_ActivateIfOpen` per il `grfIDO` parametro.
+2. Se il file è già aperto, il file resurface chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metodo, specificando il valore `IDO_ActivateIfOpen` per il `grfIDO` parametro.
 
      Se il file è aperto e il documento è di proprietà da un progetto diverso rispetto al progetto chiamante, il progetto specifico riceve un avviso che l'editor viene aperto da un altro progetto. Finestra di dialogo file viene quindi esposto.
 
-3.  Se il documento non è aperto o non nella tabella documenti in esecuzione, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo (`OSE_ChooseBestStdEditor`) per aprire un editor standard per il file.
+3. Se il documento non è aperto o non nella tabella documenti in esecuzione, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo (`OSE_ChooseBestStdEditor`) per aprire un editor standard per il file.
 
      Quando si chiama il metodo, l'IDE esegue le attività seguenti:
 
-    1.  L'IDE analizza gli editor / {guidEditorType} / estensioni sottochiave del Registro di sistema per determinare quale editor può aprire il file e ha la priorità più alta per eseguire questa operazione.
+    1. L'IDE analizza gli editor / {guidEditorType} / estensioni sottochiave del Registro di sistema per determinare quale editor può aprire il file e ha la priorità più alta per eseguire questa operazione.
 
-    2.  Dopo che l'IDE ha determinato quale editor può aprire il file, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Implementazione dell'editor di questo metodo restituisce informazioni necessarie per l'IDE chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> e del sito del documento appena aperto.
+    2. Dopo che l'IDE ha determinato quale editor può aprire il file, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Implementazione dell'editor di questo metodo restituisce informazioni necessarie per l'IDE chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> e del sito del documento appena aperto.
 
-    3.  Infine, l'IDE carica il documento usando l'interfaccia di persistenza consueto, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.
+    3. Infine, l'IDE carica il documento usando l'interfaccia di persistenza consueto, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.
 
-    4.  Se l'IDE in precedenza ha determinato che la gerarchia o l'elemento della gerarchia è disponibile, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> metodo nel progetto per ottenere un contesto a livello di progetto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> puntatore da passare nuovamente con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> chiamata al metodo.
+    4. Se l'IDE in precedenza ha determinato che la gerarchia o l'elemento della gerarchia è disponibile, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> metodo nel progetto per ottenere un contesto a livello di progetto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> puntatore da passare nuovamente con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> chiamata al metodo.
 
-4.  Restituisce un <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> puntatore all'IDE quando si chiama l'IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> sul progetto se si vuole consentire la scelta rapida get editor dal progetto.
+4. Restituisce un <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> puntatore all'IDE quando si chiama l'IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> sul progetto se si vuole consentire la scelta rapida get editor dal progetto.
 
      Eseguire questo passaggio consente i servizi aggiuntivi di offerta di progetto nell'editor.
 

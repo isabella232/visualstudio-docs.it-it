@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040559"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 > [!NOTE]
 >  Questa procedura dettagliata è basata su Visual Studio Professional, che offre il modello Applicazione WPF in cui compilare il progetto. Il modello è disponibile anche in Visual Studio Express per Windows Desktop, ma non in Visual Studio Express per Windows e Visual Studio Express per il Web. Per informazioni introduttive su come usare Visual Studio Express per Windows, visitare il [Centro per sviluppatori per app di Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Per informazioni introduttive su come usare Visual Studio Express per il Web, vedere [Get Started with ASP.NET](http://www.asp.net/get-started)(Introduzione ad ASP.NET). Inoltre, l'edizione di Visual Studio e le impostazioni usate determinano i nomi e le posizioni di alcuni elementi dell'interfaccia utente. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> Configurare IDE  
+## <a name="BKMK_ConfigureIDE"></a> Configurare IDE  
  Quando si avvia Visual Studio per la prima volta, viene chiesto di effettuare l'accesso con un Account di servizio Microsoft (MSA). Per informazioni, vedere [Sign into Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)(Accedere a Visual Studio). Non è necessario accedere adesso ed è possibile farlo in seguito.  
   
  All'avvio di Visual Studio, scegliere quindi una combinazione di impostazioni che applichi un set di personalizzazioni predefinite all'IDE. Ogni combinazione di impostazioni è stata progettata per semplificare lo sviluppo di applicazioni.  
@@ -69,7 +69,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
    Il tema colori usato per le immagini nel resto di questa procedura dettagliata è Chiaro. Per altre informazioni sulla personalizzazione dell'IDE, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Creare una semplice applicazione  
+## <a name="BKMK_CreateApp"></a> Creare una semplice applicazione  
   
 ### <a name="create-the-project"></a>Creare il progetto  
  Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario creare un progetto e una soluzione. In questo esempio verrà creata un progetto Windows Presentation Foundation (WPF).  
@@ -199,7 +199,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
 ##### <a name="add-code-to-display-message-boxes"></a>Aggiungere codice per visualizzare finestre di messaggio  
   
-1.  Nell'area di progettazione fare doppio clic sul pulsante **Visualizza** .  
+1. Nell'area di progettazione fare doppio clic sul pulsante **Visualizza** .  
   
      Verrà visualizzato Greetings.xaml.vb o Greetings.xaml.cs con il cursore nell'evento Button_Click. È inoltre possibile aggiungere un gestore eventi Click come indicato di seguito (se il codice incollato ha una sottolineatura ondulata rossa sotto tutti i nomi, probabilmente non sono stati selezionati e rinominati i controlli RadioButton nell'area di progettazione):  
   
@@ -220,7 +220,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
     }  
     ```  
   
-2.  Per Visual Basic immettere il codice indicato di seguito.  
+2. Per Visual Basic immettere il codice indicato di seguito.  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
     }  
     ```  
   
-3.  Salvare l'applicazione.  
+3. Salvare l'applicazione.  
   
-##  <a name="BKMK_DebugTest"></a> Eseguire il debug e il test dell'applicazione  
+## <a name="BKMK_DebugTest"></a> Eseguire il debug e il test dell'applicazione  
  Verrà quindi eseguito il debug dell'applicazione per rilevare eventuali errori e verificare che entrambe le finestre di messaggio vengano visualizzate correttamente. Le istruzioni seguenti indicano come compilare e avviare il debugger, ma in un secondo momento può essere utile leggere [Compilazione di un'applicazione WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) e [Debug di WPF](../debugger/debugging-wpf.md) per altre informazioni.  
   
 ### <a name="find-and-fix-errors"></a>Trovare e correggere errori  
@@ -280,29 +280,29 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
   
 ##### <a name="to-add-breakpoints"></a>Per aggiungere punti di interruzione  
   
-1.  Aprire Greetings.xaml.vb o Greetings.xaml.cs e selezionare la riga seguente: `MessageBox.Show("Hello.")`  
+1. Aprire Greetings.xaml.vb o Greetings.xaml.cs e selezionare la riga seguente: `MessageBox.Show("Hello.")`  
   
-2.  Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.  
+2. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.  
   
      ![Comando Imposta/Rimuovi punto di interruzione nel menu ](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      Accanto alla riga di codice nel margine di estrema sinistra della finestra dell'editor verrà visualizzato un cerchio rosso.  
   
-3.  Selezionare la riga seguente: `MessageBox.Show("Goodbye.")`.  
+3. Selezionare la riga seguente: `MessageBox.Show("Goodbye.")`.  
   
-4.  Premere il tasto F9 per aggiungere un punto di interruzione, quindi il tasto F5 per avviare il debug.  
+4. Premere il tasto F9 per aggiungere un punto di interruzione, quindi il tasto F5 per avviare il debug.  
   
-5.  Nella finestra **Greetings** scegliere il pulsante di opzione **Hello** , quindi il pulsante **Visualizza** .  
+5. Nella finestra **Greetings** scegliere il pulsante di opzione **Hello** , quindi il pulsante **Visualizza** .  
   
      La riga `MessageBox.Show("Hello.")` viene evidenziata in giallo. Nella parte inferiore di IDE, le finestre Auto, Variabili locali ed Espressioni di controllo sono ancorate insieme sul lato sinistro e le finestre Stack di chiamate, Punti di interruzione, Comando, Controllo immediato e Output sono ancorate insieme sul lato destro.  
   
-6.  Nella barra dei menu scegliere **Debug**, **Esci da istruzione/routine**.  
+6. Nella barra dei menu scegliere **Debug**, **Esci da istruzione/routine**.  
   
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".  
   
-7.  Scegliere il pulsante **OK** per chiudere la finestra di messaggio.  
+7. Scegliere il pulsante **OK** per chiudere la finestra di messaggio.  
   
-8.  Nella finestra **Greetings** scegliere il pulsante di opzione **Goodbye** , quindi il pulsante **Visualizza** .  
+8. Nella finestra **Greetings** scegliere il pulsante di opzione **Goodbye** , quindi il pulsante **Visualizza** .  
   
      La riga `MessageBox.Show("Goodbye.")` viene evidenziata in giallo.  
   

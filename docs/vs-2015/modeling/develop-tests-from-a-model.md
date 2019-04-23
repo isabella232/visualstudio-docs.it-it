@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042054"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ ms.locfileid: "58969766"
   
  Le linee guida seguenti possono risultare utili:  
   
--   Ogni caso di utilizzo deve avere diversi test, per i percorsi principali e i risultati eccezionali.  
+- Ogni caso di utilizzo deve avere diversi test, per i percorsi principali e i risultati eccezionali.  
   
--   Quando si descrive un caso di utilizzo nel modello di requisiti, è più importante definire la postcondizione, ovvero l'obiettivo da raggiungere, che descrivere in dettaglio le procedure che l'utente segue per raggiungere l'obiettivo. Ad esempio, la postcondizione di Ordinazione pasto potrebbe essere che un ristorante stia preparando un pasto per un cliente e che il cliente abbia pagato. La postcondizione è il criterio che i test devono verificare.  
+- Quando si descrive un caso di utilizzo nel modello di requisiti, è più importante definire la postcondizione, ovvero l'obiettivo da raggiungere, che descrivere in dettaglio le procedure che l'utente segue per raggiungere l'obiettivo. Ad esempio, la postcondizione di Ordinazione pasto potrebbe essere che un ristorante stia preparando un pasto per un cliente e che il cliente abbia pagato. La postcondizione è il criterio che i test devono verificare.  
   
--   Basare test distinti sulle clausole separate della postcondizione. Ad esempio, creare test distinti per notificare l'ordine al ristorante e per accettare il pagamento dal cliente. Questa separazione offre i vantaggi seguenti:  
+- Basare test distinti sulle clausole separate della postcondizione. Ad esempio, creare test distinti per notificare l'ordine al ristorante e per accettare il pagamento dal cliente. Questa separazione offre i vantaggi seguenti:  
   
-    -   Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.  
+    - Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.  
   
-    -   Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.  
+    - Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.  
   
--   Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.  
+- Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.  
   
 #### <a name="linking-tests-to-use-cases"></a>Collegamento di test ai casi di utilizzo  
  Se si usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] per progettare ed eseguire i test, è possibile organizzare i test in elementi di lavoro storia utente requisito o caso d'uso. È possibile collegare questi elementi di lavoro ai casi di utilizzo del modello, in modo da tenere traccia rapidamente delle modifiche dei requisiti nei test, oltre che dello stato di avanzamento di ogni caso di utilizzo.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.  
   
-##  <a name="Attaching"></a> Associazione di Test case agli elementi del modello  
+## <a name="Attaching"></a> Associazione di Test case agli elementi del modello  
  Se il progetto usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.  
   
  È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:  
   
--   Collegare un caso di utilizzo ai test che ne eseguono la verifica.  
+- Collegare un caso di utilizzo ai test che ne eseguono la verifica.  
   
--   Scrivere le clausole di una postcondizione del caso di utilizzo, o obiettivo, nei commenti collegati al caso di utilizzo, quindi collegare i test a ogni commento.  
+- Scrivere le clausole di una postcondizione del caso di utilizzo, o obiettivo, nei commenti collegati al caso di utilizzo, quindi collegare i test a ogni commento.  
   
--   Scrivere regole invarianti in commenti nei diagrammi classi o nei diagrammi di attività e collegarli ai test.  
+- Scrivere regole invarianti in commenti nei diagrammi classi o nei diagrammi di attività e collegarli ai test.  
   
--   Collegare i test a un diagramma di attività o a singole attività.  
+- Collegare i test a un diagramma di attività o a singole attività.  
   
--   Collegare un gruppo di test al componente o al sottosistema sottoposto a test.  
+- Collegare un gruppo di test al componente o al sottosistema sottoposto a test.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Per collegare i test a una relazione o a un elemento del modello  
   
-1.  In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Collegare l'elemento di lavoro requisito a uno o più elementi del modello.  
+2. Collegare l'elemento di lavoro requisito a uno o più elementi del modello.  
   
      In un diagramma di modellazione, fare doppio clic su un elemento, commento o relazione e quindi fare clic su **Collega a elemento di lavoro**. Per altre informazioni, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Aggiungere al gruppo di test i test case che verificano il requisito espresso nell'elemento del modello.  
+3. Aggiungere al gruppo di test i test case che verificano il requisito espresso nell'elemento del modello.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   

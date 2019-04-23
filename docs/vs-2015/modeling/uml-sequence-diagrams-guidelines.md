@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6f112224bdb2f94bdb6c4242a5ea0d273db23ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039715"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagrammi di sequenza UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
  [Descrizione delle strutture di controllo con frammenti](#Fragments)  
   
-##  <a name="Using"></a> Uso dei diagrammi di sequenza UML  
+## <a name="Using"></a> Uso dei diagrammi di sequenza UML  
  È possibile usare i diagrammi di sequenza per diversi scopi in diversi livelli di dettaglio del programma. Le occasioni tipiche che richiedono il disegno di un diagramma di sequenza sono:  
   
 - Se si ha un diagramma caso di utilizzo che riepiloga gli utenti del sistema e i loro obiettivi, è possibile disegnare diagrammi di sequenza per descrivere in che modo interagiscono i componenti principali del sistema per raggiungere l'obiettivo di ogni caso di utilizzo. Per altre informazioni, vedere [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
@@ -79,7 +79,7 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 #### <a name="use-case-details"></a>Dettagli relativi al caso di utilizzo  
  Un caso di utilizzo rappresenta l'obiettivo di un utente e la sequenza di passaggi necessaria per raggiungerlo. La sequenza di passaggi può essere descritta in molti modi. Un'opzione consiste nel disegnare un diagramma di sequenza che mostra le interazioni tra gli utenti e i componenti principali del sistema. Per altre informazioni, vedere [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi di sequenza  
+## <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi di sequenza  
  Per un elenco completo degli elementi nei diagrammi di sequenza, vedere [diagrammi di sequenza UML: informazioni di riferimento](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
@@ -101,37 +101,37 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 #### <a name="to-draw-a-sequence-diagram"></a>Per disegnare un diagramma di sequenza  
   
-1.  Trascinare **linee di vita** (1) dalle **della casella degli strumenti** nel diagramma per rappresentare le istanze di classi, componenti, attori o dispositivi.  
+1. Trascinare **linee di vita** (1) dalle **della casella degli strumenti** nel diagramma per rappresentare le istanze di classi, componenti, attori o dispositivi.  
   
     > [!NOTE]
     >  È anche possibile creare una linea di vita trascinando una classe esistente, interfaccia, attore o componente da **Esplora modelli UML** nel diagramma. Viene creata una linea di vita che rappresenta un'istanza del tipo selezionato.  
   
-2.  Disegnare i messaggi per visualizzare in che modo le linee di vita collaborano per raggiungere uno specifico obiettivo.  
+2. Disegnare i messaggi per visualizzare in che modo le linee di vita collaborano per raggiungere uno specifico obiettivo.  
   
      Per creare un messaggio (3, 4, 6, 7), fare clic su uno strumento dei messaggi. Fare clic sulla linea di vita di invio nel punto in cui deve iniziare il messaggio, quindi fare clic sulla linea di vita di ricezione.  
   
      Viene visualizzata un'occorrenza esecuzione (5) nella linea di vita di ricezione. L'occorrenza esecuzione rappresenta un periodo di tempo durante il quale l'istanza esegue un metodo. È possibile creare altri messaggi che iniziano da un'occorrenza esecuzione.  
   
-3.  Per visualizzare un messaggio proveniente da un'origine evento sconosciuta (9) o trasmesso a destinatari sconosciuti (10), disegnare un messaggio asincrono da o verso uno spazio vuoto nel diagramma. Questi messaggi sono denominati *messaggi trovati* (9) e *perdeva dei messaggi* (10).  
+3. Per visualizzare un messaggio proveniente da un'origine evento sconosciuta (9) o trasmesso a destinatari sconosciuti (10), disegnare un messaggio asincrono da o verso uno spazio vuoto nel diagramma. Questi messaggi sono denominati *messaggi trovati* (9) e *perdeva dei messaggi* (10).  
   
     > [!NOTE]
     >  Per spostare un gruppo di linee di vita contenenti messaggi trovati o persi, attenersi alla seguente procedura per selezionare le linee di vita prima di spostarle: Disegnare un rettangolo attorno a tali linee di vita o premere e tenere premuto il **CTRL** mentre si fa clic su ogni linea di vita. Se si usa **Seleziona tutto** oppure **CTRL**+**oggetto** per selezionare tutte le linee di vita e spostarle, qualsiasi persi o trovati collegati a queste linee di vita dei messaggi non può essere spostata. Se si verifica questo scenario, è possibile spostare questi messaggi separatamente.  
   
-4.  Disegnare diagrammi di sequenza per ogni messaggio principale nello stesso componente o sistema.  
+4. Disegnare diagrammi di sequenza per ogni messaggio principale nello stesso componente o sistema.  
   
 #### <a name="to-change-the-order-of-messages"></a>Per modificare l'ordine dei messaggi  
   
--   Trascinare un messaggio verso l'alto o verso il basso sulla linea di vita. È possibile trascinarlo su altri messaggi o dentro o fuori un blocco di esecuzione.  
+- Trascinare un messaggio verso l'alto o verso il basso sulla linea di vita. È possibile trascinarlo su altri messaggi o dentro o fuori un blocco di esecuzione.  
   
      \- oppure -  
   
--   Fare clic sul messaggio e usare la **freccia** e **freccia giù** le chiavi per regolare le posizioni del messaggio. Uso **MAIUSC + freccia** e **MAIUSC + freccia giù** per modificare l'ordine dei messaggi.  
+- Fare clic sul messaggio e usare la **freccia** e **freccia giù** le chiavi per regolare le posizioni del messaggio. Uso **MAIUSC + freccia** e **MAIUSC + freccia giù** per modificare l'ordine dei messaggi.  
   
 #### <a name="to-move-or-copy-message-sequences-on-the-sequence-diagram"></a>Per spostare o copiare le sequenze di messaggi nel diagramma di sequenza  
   
-1.  Fare doppio clic su un messaggio (3, 4) e quindi fare clic su **copia**.  
+1. Fare doppio clic su un messaggio (3, 4) e quindi fare clic su **copia**.  
   
-2.  Fare doppio clic occorrenza esecuzione (5) o una linea di vita (1) da cui si desidera che il nuovo messaggio da inviare, e quindi fare clic su **Incolla**. Se si vuole, il nuovo mittente può trovarsi in un diagramma diverso.  
+2. Fare doppio clic occorrenza esecuzione (5) o una linea di vita (1) da cui si desidera che il nuovo messaggio da inviare, e quindi fare clic su **Incolla**. Se si vuole, il nuovo mittente può trovarsi in un diagramma diverso.  
   
      Una copia del messaggio e tutti i messaggi secondari vengono aggiunti alla fine dell'occorrenza esecuzione oppure alla fine della linea di vita.  
   
@@ -152,24 +152,24 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Per migliorare il layout di un diagramma di sequenza  
   
--   Fare doppio clic su una parte vuota del diagramma e quindi fare clic su **Ridisponi Layout**.  
+- Fare doppio clic su una parte vuota del diagramma e quindi fare clic su **Ridisponi Layout**.  
   
--   Per annullare l'operazione, fare clic su **Edit**, quindi fare clic su **Annulla**.  
+- Per annullare l'operazione, fare clic su **Edit**, quindi fare clic su **Annulla**.  
   
 #### <a name="to-change-the-package-that-owns-the-interaction"></a>Per modificare il pacchetto a cui appartiene l'interazione  
   
-1.  Nelle **Esplora modelli UML**, trovare l'interazione visualizzata dal diagramma di sequenza.  
+1. Nelle **Esplora modelli UML**, trovare l'interazione visualizzata dal diagramma di sequenza.  
   
     > [!NOTE]
     >  L'interazione non compariranno nella **Esplora modelli UML** finché non si aggiunge la prima linea di vita al diagramma di sequenza.  
   
-2.  Trascinare l'interazione nel pacchetto.  
+2. Trascinare l'interazione nel pacchetto.  
   
      \- oppure -  
   
      Fare doppio clic sull'interazione e quindi fare clic su **Taglia**. Fare doppio clic su pacchetto e quindi fare clic su **Incolla**.  
   
-##  <a name="Simple"></a> Creazione e uso di diagrammi di sequenza semplice  
+## <a name="Simple"></a> Creazione e uso di diagrammi di sequenza semplice  
  La forma più semplice e diffusa di diagramma di sequenza contiene solo linee di vita e messaggi. Un diagramma di questo tipo consente di visualizzare chiaramente una sequenza di interazioni tipica tra gli oggetti nella progettazione o tra il sistema e gli utenti. In genere, questo diagramma consente di discutere e comunicare in modo appropriato le informazioni sulla progettazione.  
   
  Di seguito sono riportate alcuni aspetti da prendere in considerazione quando si disegna un diagramma di sequenza semplice.  
@@ -177,13 +177,13 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 ### <a name="types-of-message"></a>Tipi di messaggio  
  Sono disponibili tre strumenti per la creazione dei messaggi.  
   
--   Usare la **sincrono** dello strumento per descrivere un'interazione in cui il mittente attende che il destinatario invii una risposta (3).  
+- Usare la **sincrono** dello strumento per descrivere un'interazione in cui il mittente attende che il destinatario invii una risposta (3).  
   
      Oggetto  **< \<restituire >>** verrà visualizzata sulla freccia alla fine dell'occorrenza esecuzione. Indica la restituzione del controllo al mittente.  
   
--   Usare la **asincrono** dello strumento per descrivere un'interazione in cui il mittente può continuare immediatamente senza attendere che il destinatario (4).  
+- Usare la **asincrono** dello strumento per descrivere un'interazione in cui il mittente può continuare immediatamente senza attendere che il destinatario (4).  
   
--   Usare la **Create** dello strumento per descrivere un'interazione in cui il mittente crea il ricevitore (8).  
+- Usare la **Create** dello strumento per descrivere un'interazione in cui il mittente crea il ricevitore (8).  
   
      Un messaggio di creazione dovrebbe essere il primo messaggio ricevuto dal destinatario.  
   
@@ -197,15 +197,15 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
  Usare un commento per:  
   
--   Annotare gli obiettivi raggiunti nei punti chiave della sequenza. Ciò consente ai lettori di visualizzare gli obiettivi delle interazioni.  
+- Annotare gli obiettivi raggiunti nei punti chiave della sequenza. Ciò consente ai lettori di visualizzare gli obiettivi delle interazioni.  
   
--   Descrivere l'obiettivo generale dell'intera sequenza. Collegare il commento all'occorrenza esecuzione iniziale oppure lasciarlo scollegato. Ad esempio, "Il cliente ha scelto i prodotti dal menu e gli è stato fornito un prezzo".  
+- Descrivere l'obiettivo generale dell'intera sequenza. Collegare il commento all'occorrenza esecuzione iniziale oppure lasciarlo scollegato. Ad esempio, "Il cliente ha scelto i prodotti dal menu e gli è stato fornito un prezzo".  
   
--   Descrivere le responsabilità di ogni linea di vita. Collegare il commento alla linea di vita. Ad esempio, "Il manager degli ordini raccoglie le scelte del menu del cliente".  
+- Descrivere le responsabilità di ogni linea di vita. Collegare il commento alla linea di vita. Ad esempio, "Il manager degli ordini raccoglie le scelte del menu del cliente".  
   
--   Annotare le eccezioni o le alternative che potrebbero essere eseguite al posto della sequenza tipica visualizzata. Ad esempio, "Il cliente può ignorare il resto della sequenza".  
+- Annotare le eccezioni o le alternative che potrebbero essere eseguite al posto della sequenza tipica visualizzata. Ad esempio, "Il cliente può ignorare il resto della sequenza".  
   
-    -   Valutare l'uso dei frammenti come alternativa più formale rispetto a questo tipo di nota. Vedere [che descrive le strutture di controllo con frammenti](#Fragments)  
+    - Valutare l'uso dei frammenti come alternativa più formale rispetto a questo tipo di nota. Vedere [che descrive le strutture di controllo con frammenti](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Scelta dell'ambito del diagramma  
  È importante chiarire cosa si vuole visualizzare nel diagramma.  
@@ -213,11 +213,11 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 #### <a name="initiating-event"></a>Evento di origine  
  Ogni diagramma deve visualizzare la sequenza di interazioni risultante da un evento di origine. Ad esempio:  
   
--   Un utente che avvia un caso di utilizzo, ad esempio l'apertura della pagina Web per l'acquisto di un pasto.  
+- Un utente che avvia un caso di utilizzo, ad esempio l'apertura della pagina Web per l'acquisto di un pasto.  
   
--   Un messaggio da un componente del sistema a un altro, ad esempio una query sulla disponibilità dei prodotti che l'utente vuole acquistare.  
+- Un messaggio da un componente del sistema a un altro, ad esempio una query sulla disponibilità dei prodotti che l'utente vuole acquistare.  
   
--   Un evento attivato da una modifica dello stato, ad esempio la quantità delle scorte di un prodotto che scende al di sotto di una determinata soglia.  
+- Un evento attivato da una modifica dello stato, ad esempio la quantità delle scorte di un prodotto che scende al di sotto di una determinata soglia.  
   
 #### <a name="level-of-detail"></a>Livello di dettaglio  
  I diagrammi di sequenza possono mostrare livelli di dettaglio diversi. È possibile decidere il livello di dettaglio in due dimensioni separate, in modo quasi indipendente:  
@@ -243,20 +243,20 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 ## <a name="describing-variations"></a>Descrizione delle variazioni  
  Il diagramma mostra un'unica sequenza di eventi tipica. Per visualizzare delle alternative possibili, ad esempio gli scenari di errore, è possibile usare una di queste opzioni:  
   
--   Disegnare diagrammi di sequenza separati per descrivere questi scenari  
+- Disegnare diagrammi di sequenza separati per descrivere questi scenari  
   
--   Uso [che descrive le strutture di controllo con frammenti](#Fragments) per mostrare cicli, alternative e così via.  
+- Uso [che descrive le strutture di controllo con frammenti](#Fragments) per mostrare cicli, alternative e così via.  
   
 ## <a name="assessing-the-design"></a>Valutazione della progettazione  
  È possibile usare il diagramma per valutare la distribuzione delle attività tra gli oggetti o i componenti. Valutare il refactoring se vengono visualizzati questi motivi:  
   
--   Una linea di vita sembra eseguire tutte le operazioni mediante chiamate ad altri elementi, mentre le altre linee di vita rispondono solo passivamente.  
+- Una linea di vita sembra eseguire tutte le operazioni mediante chiamate ad altri elementi, mentre le altre linee di vita rispondono solo passivamente.  
   
--   Molti messaggi attraversano le linee di vita. Ogni linea di vita deve inviare messaggi solo ad alcuni elementi adiacenti e non deve comunicare con gli elementi adiacenti dei relativi elementi adiacenti. In genere è possibile disporre le linee di vita in modo tale che siano presenti solo pochi punti in cui i messaggi attraversano le linee di vita e laddove si verificano tali intersezioni, la linea di vita di destinazione non dovrebbe scambiare anche i messaggi che contengono le linee di vita intersecate.  
+- Molti messaggi attraversano le linee di vita. Ogni linea di vita deve inviare messaggi solo ad alcuni elementi adiacenti e non deve comunicare con gli elementi adiacenti dei relativi elementi adiacenti. In genere è possibile disporre le linee di vita in modo tale che siano presenti solo pochi punti in cui i messaggi attraversano le linee di vita e laddove si verificano tali intersezioni, la linea di vita di destinazione non dovrebbe scambiare anche i messaggi che contengono le linee di vita intersecate.  
   
--   Alcune linee di vita sembrano gestire più tipi di attività. È consigliabile trovare una frase breve che descriva le responsabilità di ogni linea di vita, riepilogando il lavoro svolto in risposta a ogni messaggio ricevuto.  
+- Alcune linee di vita sembrano gestire più tipi di attività. È consigliabile trovare una frase breve che descriva le responsabilità di ogni linea di vita, riepilogando il lavoro svolto in risposta a ogni messaggio ricevuto.  
   
-##  <a name="ClassesAndLifelines"></a> Le classi e linee di vita  
+## <a name="ClassesAndLifelines"></a> Le classi e linee di vita  
  Le linee di vita nei diagrammi di sequenza mostra le istanze di classi o di interfacce di componenti. È possibile assegnare un nome a una linea di vita in due modi:  
   
 |**A tale scopo**|**Usare questo formato**|  
@@ -287,24 +287,24 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Per modificare il tipo di una linea di vita  
   
-1.  Fare doppio clic su una linea di vita e quindi fare clic su **proprietà**.  
+1. Fare doppio clic su una linea di vita e quindi fare clic su **proprietà**.  
   
-2.  Nel **delle proprietà** impostare nella finestra di **tipo** proprietà. È possibile selezionare un tipo dal menu a discesa oppure digitare un nuovo nome.  
+2. Nel **delle proprietà** impostare nella finestra di **tipo** proprietà. È possibile selezionare un tipo dal menu a discesa oppure digitare un nuovo nome.  
   
 ### <a name="creating-classes-from-lifelines"></a>Creazione di classi dalle linee di vita  
  Dopo aver creato uno o più diagrammi di sequenza, è possibile riepilogare le linee di vita creando classi o interfacce da tali diagrammi.  
   
 ##### <a name="to-create-a-class-or-interface-from-a-lifeline"></a>Per creare una classe o un'interfaccia da una linea di vita  
   
-1.  Fare doppio clic la linea di vita e quindi fare clic su **Crea classe** oppure **Crea interfaccia**.  
+1. Fare doppio clic la linea di vita e quindi fare clic su **Crea classe** oppure **Crea interfaccia**.  
   
      In Esplora modelli UML viene visualizzata una nuova classe o interfaccia.  
   
-2.  Creare operazioni nella classe o interfaccia per ogni messaggio ricevuto dalla linea di vita:  
+2. Creare operazioni nella classe o interfaccia per ogni messaggio ricevuto dalla linea di vita:  
   
-    1.  Selezionare tutti i messaggi da includere.  
+    1. Selezionare tutti i messaggi da includere.  
   
-    2.  Fare doppio clic su uno dei messaggi e quindi fare clic su **Crea metodo**.  
+    2. Fare doppio clic su uno dei messaggi e quindi fare clic su **Crea metodo**.  
   
          La nuova classe o interfaccia include operazioni per ogni messaggio selezionato.  
   
@@ -315,24 +315,24 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
         > [!NOTE]
         >  È necessario ripetere questo passaggio per aggiungere nuovi messaggi al diagramma di sequenza.  
   
-3.  Per visualizzare la nuova classe o interfaccia in dettaglio, aggiungerla a un diagramma classi o dei componenti.  
+3. Per visualizzare la nuova classe o interfaccia in dettaglio, aggiungerla a un diagramma classi o dei componenti.  
   
-    1.  Aprire o creare un diagramma classi o dei componenti.  
+    1. Aprire o creare un diagramma classi o dei componenti.  
   
-    2.  Trascinare la nuova classe o interfaccia da **Esplora modelli UML** a un diagramma classi.  
+    2. Trascinare la nuova classe o interfaccia da **Esplora modelli UML** a un diagramma classi.  
   
          La classe o interfaccia viene visualizzata nel diagramma classi.  
   
          \- oppure -  
   
-    3.  Trascinare la nuova interfaccia dal **Esplora modelli UML** a un componente o una porta in un diagramma dei componenti.  
+    3. Trascinare la nuova interfaccia dal **Esplora modelli UML** a un componente o una porta in un diagramma dei componenti.  
   
          L'interfaccia viene visualizzata nel componente come simbolo.  
   
 ### <a name="creating-classes-for-parameters"></a>Creazione di classi per i parametri  
  È possibile includere i parametri nei messaggi di un diagramma di sequenza. È possibile usare un diagramma classi UML per descrivere i tipi di parametri.  
   
-##  <a name="Multiple"></a> Creazione di sequenze di interazione riutilizzabili  
+## <a name="Multiple"></a> Creazione di sequenze di interazione riutilizzabili  
  È possibile usare diagramma separato per descrivere una sequenza contenente i dettagli da escludere oppure comuni a più diagrammi.  
   
  È possibile creare un rettangolo di utilizzo interazione (12) in un diagramma che punta ai dettagli in un altro diagramma.  
@@ -341,19 +341,19 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 #### <a name="to-create-a-reusable-interaction-sequence-from-existing-lifelines"></a>Per creare un'interazione sequenza riutilizzabile da linee di vita esistenti  
   
-1.  Nel **casella degli strumenti**, fare clic su **utilizzo interazione**.  
+1. Nel **casella degli strumenti**, fare clic su **utilizzo interazione**.  
   
-2.  Nel diagramma di sequenza, tenere premuto il pulsante del mouse mentre si trascinano le linee di vita da includere nella sequenza riutilizzabile. Iniziare nella posizione verticale in cui inserire l'utilizzo interazione.  
+2. Nel diagramma di sequenza, tenere premuto il pulsante del mouse mentre si trascinano le linee di vita da includere nella sequenza riutilizzabile. Iniziare nella posizione verticale in cui inserire l'utilizzo interazione.  
   
      Un utilizzo interazione viene visualizzato tra le linee di vita selezionate nel diagramma di sequenza.  
   
-3.  Fare doppio clic sul nome dell'utilizzo interazione e rinominarlo per descrivere l'effetto della sequenza riutilizzabile nel diagramma.  
+3. Fare doppio clic sul nome dell'utilizzo interazione e rinominarlo per descrivere l'effetto della sequenza riutilizzabile nel diagramma.  
   
      \- oppure -  
   
      Scrivere il nome come chiamata di funzione con parametri.  
   
-4.  Collegare l'utilizzo interazione a un altro diagramma di sequenza. Fare clic con il pulsante destro del mouse sull'utilizzo interazione, quindi:  
+4. Collegare l'utilizzo interazione a un altro diagramma di sequenza. Fare clic con il pulsante destro del mouse sull'utilizzo interazione, quindi:  
   
      Fare clic su **Crea nuova sequenza** per creare un nuovo diagramma di sequenza  
   
@@ -370,19 +370,19 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>Per creare una sequenza riutilizzabile dai messaggi esistenti  
   
--   Fare clic sul messaggio che si desidera spostare e quindi fare clic su **passa a diagramma**.  
+- Fare clic sul messaggio che si desidera spostare e quindi fare clic su **passa a diagramma**.  
   
      Visual Studio:  
   
-    -   Sostituisce con un utilizzo interazione il messaggio selezionato e tutti i messaggi sussidiari.  
+    - Sostituisce con un utilizzo interazione il messaggio selezionato e tutti i messaggi sussidiari.  
   
-    -   Sposta i messaggi sostituiti in un nuovo diagramma di sequenza.  
+    - Sposta i messaggi sostituiti in un nuovo diagramma di sequenza.  
   
-    -   Crea un collegamento tra l'utilizzo interazione e il nuovo diagramma di sequenza.  
+    - Crea un collegamento tra l'utilizzo interazione e il nuovo diagramma di sequenza.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Per spostarsi sulla sequenza a cui fa riferimento un utilizzo interazione  
   
--   Fare doppio clic sull'utilizzo interazione.  
+- Fare doppio clic sull'utilizzo interazione.  
   
      \- oppure -  
   
@@ -391,56 +391,56 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>Creazione di un segnaposto con un utilizzo interazione  
  È possibile creare un utilizzo interazione senza collegarlo a un altro diagramma. È possibile usarlo come segnaposto per una parte della sequenza i cui dettagli devono ancora essere elaborati. Usare il nome dell'utilizzo interazione per indicare il risultato desiderato.  
   
-##  <a name="Collapse"></a> Compressione di gruppi di linee di vita  
+## <a name="Collapse"></a> Compressione di gruppi di linee di vita  
  È possibile comprimere un set di linee di vita, in modo che il gruppo venga visualizzato come una sola linea di vita, consentendo di visualizzare un gruppo di oggetti come un singolo componente. I messaggi e gli utilizzi interazione tra le linee di vita in un gruppo compresso sono nascosti. Vengono invece visualizzati i messaggi e le sequenze di interazioni che includono altre linee di vita.  
   
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>Per comprimere un gruppo di linee di vita  
   
-1.  Selezionare due o più linee di vita.  
+1. Selezionare due o più linee di vita.  
   
-2.  Fare doppio clic su uno di essi e quindi fare clic su **Comprimi**.  
+2. Fare doppio clic su uno di essi e quindi fare clic su **Comprimi**.  
   
      Le linee di vita separate vengono sostituite da una singola linea di vita.  
   
      I messaggi e gli utilizzi interazione che riguardano solo i membri del gruppo sono nascosti.  
   
-3.  Per rinominare il gruppo, fare clic sul nome.  
+3. Per rinominare il gruppo, fare clic sul nome.  
   
     > [!NOTE]
     >  Il nome del gruppo andrà perso quando si espande il gruppo.  
   
 #### <a name="to-expand-a-collapsed-group"></a>Per espandere un gruppo compresso  
   
--   Fare doppio clic la linea di vita compressa e quindi fare clic su **Espandi**.  
+- Fare doppio clic la linea di vita compressa e quindi fare clic su **Espandi**.  
   
     > [!NOTE]
     >  Il nome del gruppo verrà perso, insieme a tutti i collegamenti dal gruppo ai commenti o agli elementi di lavoro.  
   
-##  <a name="Fragments"></a> Descrizione delle strutture di controllo con frammenti  
+## <a name="Fragments"></a> Descrizione delle strutture di controllo con frammenti  
  È possibile usare i frammenti combinati (13) per definire i cicli, i rami e l'elaborazione simultanea in un diagramma di sequenza. In alternativa, provare a usare un diagramma di attività. Il diagramma di attività non è utile per visualizzare i messaggi tra gli attori, ma in alcuni casi è più indicato perché visualizza meglio cicli, rami e concorrenza.  
   
  Per un elenco completo dei tipi di frammento, vedere [flusso di controllo sono descritti con frammenti nei diagrammi di sequenza UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).  
   
 #### <a name="to-create-a-combined-fragment"></a>Per creare un frammento combinato  
   
-1.  Selezionare un messaggio o una sequenza di messaggi tutti a partire dalla stessa occorrenza esecuzione o linea di vita.  
+1. Selezionare un messaggio o una sequenza di messaggi tutti a partire dalla stessa occorrenza esecuzione o linea di vita.  
   
     > [!NOTE]
     >  Selezionare le frecce dei messaggi, non le occorrenze esecuzione alle quali puntano i messaggi.  
   
-2.  Fare doppio clic su uno dei messaggi, scegliere **Racchiudi**e quindi scegliere il tipo di frammento richiesto.  
+2. Fare doppio clic su uno dei messaggi, scegliere **Racchiudi**e quindi scegliere il tipo di frammento richiesto.  
   
      Viene visualizzato un nuovo frammento che contiene i messaggi selezionati.  
   
      Se il tipo di frammento combinato consente più frammenti, viene visualizzato anche un frammento vuoto.  
   
-3.  Per impostare la protezione di un frammento, fare clic sul bordo del frammento e quindi fare clic su **proprietà**. Impostare il **Guard** proprietà.  
+3. Per impostare la protezione di un frammento, fare clic sul bordo del frammento e quindi fare clic su **proprietà**. Impostare il **Guard** proprietà.  
   
      La proprietà Guard viene usata per definire la condizione per un ramo o un ciclo.  
   
-4.  Per aggiungere un nuovo frammento a un tipo che consente più frammenti, fare doppio clic il limite di un frammento e scegliere **Add**. Fare clic su **operando interazione prima** oppure **operando interazione dopo**.  
+4. Per aggiungere un nuovo frammento a un tipo che consente più frammenti, fare doppio clic il limite di un frammento e scegliere **Add**. Fare clic su **operando interazione prima** oppure **operando interazione dopo**.  
   
-5.  Per aggiungere nuovi messaggi a un frammento, usare gli strumenti del messaggio o le funzioni di copia e incolla.  
+5. Per aggiungere nuovi messaggi a un frammento, usare gli strumenti del messaggio o le funzioni di copia e incolla.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)   

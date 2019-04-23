@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042119"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: Aggiornare un'estensione di Visual Studio
 È possibile aggiornare un'estensione di Visual Studio nel sistema mediante **estensioni e aggiornamenti** per installare la versione aggiornata. Se si crea una versione aggiornata di un'estensione, è possibile segnalare l'aggiornamento incrementando il numero di versione nel manifesto VSIX.
@@ -28,30 +28,30 @@ ms.locfileid: "56702460"
 
 ## <a name="to-update-an-extension-on-your-system"></a>Per aggiornare un'estensione del sistema
 
-1.  Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.
+1. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.
 
-2.  Nel riquadro sinistro, fare clic su **aggiornamenti**.
+2. Nel riquadro sinistro, fare clic su **aggiornamenti**.
 
-3.  Nel riquadro centrale, fare clic sull'aggiornamento da installare.
+3. Nel riquadro centrale, fare clic sull'aggiornamento da installare.
 
      Il numero di versione dell'estensione aggiornato viene visualizzato nel riquadro di destra, insieme ad altre informazioni.
 
-4.  Nella parte inferiore del riquadro destro, fare clic su **Update**.
+4. Nella parte inferiore del riquadro destro, fare clic su **Update**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Per pubblicare un aggiornamento di un'estensione
 
-1.  In Visual Studio, aprire la soluzione per l'estensione da aggiornare. Apportare le modifiche.
+1. In Visual Studio, aprire la soluzione per l'estensione da aggiornare. Apportare le modifiche.
 
     > [!IMPORTANT]
     >  Valore unsigned che tutte le estensioni utente non vengono aggiornate automaticamente. È sempre necessario firmare le estensioni.
 
-2.  Nelle **Esplora soluzioni**aprire *source.extension.manifest*.
+2. Nelle **Esplora soluzioni**aprire *source.extension.manifest*.
 
-3.  Nella finestra di progettazione manifesto, aumentare il valore del numero nel **versione** campo.
+3. Nella finestra di progettazione manifesto, aumentare il valore del numero nel **versione** campo.
 
-4.  Salvare la soluzione e compilarla.
+4. Salvare la soluzione e compilarla.
 
-5.  Caricare il nuovo *VSIX* file (nel * \bin\Debug\* cartella del progetto) per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) sito Web.
+5. Caricare il nuovo *VSIX* file (nel * \bin\Debug\* cartella del progetto) per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) sito Web.
 
      Quando si apre un utente che dispone di una versione precedente dell'estensione **estensioni e aggiornamenti**, la nuova versione verrà visualizzato nei **aggiornamenti** elencare, condizione che lo strumento è impostato per la ricerca di aggiornamenti.
 

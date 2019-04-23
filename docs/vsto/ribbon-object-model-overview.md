@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040716"
 ---
 # <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
   Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] espone un modello a oggetti fortemente tipizzati che è possibile usare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione. Ad esempio, è possibile in modo dinamico popola i controlli menu, o mostrare e nascondere controlli in base al contesto. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima della barra multifunzione viene caricata dall'applicazione di Office. Per informazioni, vedere [impostare le proprietà che diventano di sola lettura](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601036"
 
  Questo modello a oggetti della barra multifunzione è costituito principalmente il [classe Ribbon](#RibbonClass), [sulla barra multifunzione eventi](#RibbonEvents), e [classi dei controlli della barra multifunzione](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Classe Ribbon
+## <a name="RibbonClass"></a> Classe Ribbon
  Quando si aggiunge un nuovo **sulla barra multifunzione (finestra di progettazione visiva)** voce a un progetto, Visual Studio aggiunge un **della barra multifunzione** classe al progetto. Il **sulla barra multifunzione** classe eredita dal <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.
 
  Questa classe viene visualizzata come una classe parziale che viene suddivisa tra file di codice della barra multifunzione e il file di codice di progettazione della barra multifunzione.
 
-##  <a name="RibbonEvents"></a> Eventi della barra multifunzione
+## <a name="RibbonEvents"></a> Eventi della barra multifunzione
  Il **sulla barra multifunzione** classe contiene i seguenti tre eventi:
 
 |event|Descrizione|
@@ -40,7 +40,7 @@ ms.locfileid: "56601036"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Consente di memorizzare nella cache immagini la personalizzazione della barra multifunzione al caricamento della barra multifunzione. Se si scrive codice per memorizzare nella cache le immagini della barra multifunzione in questo gestore eventi, è possibile ottenere un lieve aumento delle prestazioni. Per altre informazioni, vedere <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Generato quando si chiude l'istanza della barra multifunzione.|
 
-##  <a name="RibbonControlClasses"></a> Controlli della barra multifunzione
+## <a name="RibbonControlClasses"></a> Controlli della barra multifunzione
  Il <xref:Microsoft.Office.Tools.Ribbon> dello spazio dei nomi contiene un tipo per ogni controllo contenuto nel **controlli della barra multifunzione di Office** gruppo o il **casella degli strumenti**.
 
  Nella tabella seguente mostra il tipo per ogni `Ribbon` controllo. Per una descrizione di ogni controllo, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601036"
 |Ottenere i gruppi in un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Usare la proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
 |Specificare il numero di righe e colonne che vengono visualizzati in un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Usare la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> e <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> proprietà.|
 
-##  <a name="SettingReadOnlyProperties"></a> Impostare le proprietà che diventano di sola lettura
+## <a name="SettingReadOnlyProperties"></a> Impostare le proprietà che diventano di sola lettura
  Alcune proprietà possono essere impostate solo prima del caricamento della barra multifunzione. Ci sono tre posizioni per impostare queste proprietà:
 
 - In Visual Studio **proprietà** finestra.
@@ -126,7 +126,7 @@ ms.locfileid: "56601036"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Proprietà che diventano di sola lettura
+### <a name="ReadOnlyProperties"></a> Proprietà che diventano di sola lettura
  La tabella seguente illustra le proprietà che possono essere impostate solo prima del caricamento della barra multifunzione.
 
 > [!NOTE]

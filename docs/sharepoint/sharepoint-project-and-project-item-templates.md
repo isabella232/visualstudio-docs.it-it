@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040338"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Progetto SharePoint e i modelli di progetto
   Le sezioni seguenti descrivono il progetto SharePoint disponibili e i modelli e come vengono usati di elemento di progetto.
@@ -41,17 +41,17 @@ ms.locfileid: "57867874"
 ### <a name="sharepoint-2010-project"></a>Progetto di SharePoint 2010
  Il contenuto di un *progetto SharePoint 2010* sono inclusi in ogni modello di progetto SharePoint. Contiene un progetto SharePoint 2010:
 
--   Un file di progetto.
+- Un file di progetto.
 
--   Una pagina delle proprietà di progetto.
+- Una pagina delle proprietà di progetto.
 
--   Oggetto **riferimenti** cartella Elenca tutti i riferimenti all'assembly nel progetto.
+- Oggetto **riferimenti** cartella Elenca tutti i riferimenti all'assembly nel progetto.
 
--   Oggetto **caratteristiche** cartella che contiene un *feature* file di configurazione, usato per distribuire le funzionalità in server SharePoint.
+- Oggetto **caratteristiche** cartella che contiene un *feature* file di configurazione, usato per distribuire le funzionalità in server SharePoint.
 
--   Oggetto **Package** cartella che contiene un *package. package* file, usato per distribuire la soluzione in SharePoint.
+- Oggetto **Package** cartella che contiene un *package. package* file, usato per distribuire la soluzione in SharePoint.
 
--   Un file snk (chiave con nome sicuro) utilizzato per firmare l'assembly con un nome sicuro, per maggiore sicurezza.
+- Un file snk (chiave con nome sicuro) utilizzato per firmare l'assembly con un nome sicuro, per maggiore sicurezza.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Web part Silverlight di SharePoint 2010
  *Web Part Silverlight di SharePoint 2010* progetti consentono di creare web part per SharePoint che consentono di visualizzare le applicazioni Silverlight. Quando si crea il progetto, è possibile specificare se si desidera aggiungere una nuova applicazione Silverlight o fare riferimento a uno esistente. Per altre informazioni, vedere [creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) e [procedura dettagliata: Creare una web part Silverlight che visualizza il servizio OData per SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).
@@ -68,7 +68,7 @@ ms.locfileid: "57867874"
 ## <a name="project-item-templates"></a>I modelli di progetto
  Seguito è riportato un elenco di modelli di elemento di progetto SharePoint. I modelli di progetto aggiungono file alla soluzione di SharePoint per supportare la funzionalità di SharePoint, ad esempio le colonne del sito, elenchi e tipi di contenuto. Ad esempio, l'aggiunta di una colonna del sito per la soluzione aggiunge un progetto colonna del sito che contiene un' *Elements* file di definizione. Aggiunta di una web part visiva viene aggiunto un progetto web part visiva alla soluzione che contiene un' *Elements* file, un elemento del controllo utente e un elemento web part visiva.
 
- Per visualizzare i modelli di elemento di progetto SharePoint, in **Esplora soluzioni**, aprire il menu di scelta rapida per un progetto SharePoint e quindi scegliere **Add**, **nuovo elemento**. Espandere la **SharePoint** nodo sotto **Visual C#** oppure **Visual Basic**, quindi scegliere **2010**.
+ Per visualizzare i modelli di elemento di progetto SharePoint, in **Esplora soluzioni**, aprire il menu di scelta rapida per un progetto SharePoint e quindi scegliere **Add**, **nuovo elemento**. Espandere la **SharePoint** nodo sotto **Visual c#** oppure **Visual Basic**, quindi scegliere **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Pagina dell'applicazione (solo soluzione farm)
  Un' **(solo soluzione Farm) pagina dell'applicazione** elemento consente di progettare un [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagina web per un sito di SharePoint. Le pagine di applicazioni sono utilizzabile solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo per soluzioni farm. Per altre informazioni, vedere [Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md) e [applicazione layouts tipo pagina](http://go.microsoft.com/fwlink/?LinkId=179434).

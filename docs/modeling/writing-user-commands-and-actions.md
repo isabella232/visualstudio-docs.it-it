@@ -7,27 +7,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 00da6f72bfafcc62075bc06739e4daec0fe45994
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038140"
 ---
 # <a name="writing-user-commands-and-actions"></a>Scrittura di azioni e comandi utente
 È possibile personalizzare un linguaggio specifico di dominio aggiungendo comandi al diagramma e rispondendo a movimenti quali gli eventi di trascinamento della selezione, scelta e doppio clic.
 
 ## <a name="user-actions"></a>Azioni dell'utente
 
--   [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -è possibile personalizzare il comportamento dei comandi come la copia e stampa.
+- [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -è possibile personalizzare il comportamento dei comandi come la copia e stampa.
 
--   [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -creare comandi personali che è possono aggiornare il modello o a risorse esterne.
+- [Procedura: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -creare comandi personali che è possono aggiornare il modello o a risorse esterne.
 
--   [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) -consente all'utente di spostare gli elementi da un diagramma a un altro, inclusi i diagrammi UML. È possibile archiviare riferimenti a un modello in un altro.
+- [Procedura: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) -consente all'utente di spostare gli elementi da un diagramma a un altro, inclusi i diagrammi UML. È possibile archiviare riferimenti a un modello in un altro.
 
--   [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -consente all'utente tramite clic da un elemento a un altro elemento a cui fa riferimento.
+- [Procedura: Intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -consente all'utente tramite clic da un elemento a un altro elemento a cui fa riferimento.
 
--   [Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)
+- [Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Vedere anche
 

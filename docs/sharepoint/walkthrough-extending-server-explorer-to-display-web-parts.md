@@ -15,29 +15,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d46c5e074da8fefa8dc3d7cf370689ad89ad937
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040572"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: Estendere Esplora Server per visualizzare le web part
   In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata verrà illustrato come estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuna connessa sito di SharePoint.
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
--   Creazione di un'estensione di Visual Studio che estende **Esplora Server** nei modi seguenti:
+- Creazione di un'estensione di Visual Studio che estende **Esplora Server** nei modi seguenti:
 
-    -   L'estensione aggiunge un **raccolta Web Part** nodo in ogni nodo nel sito di SharePoint **Esplora Server**. Il nuovo nodo contiene i nodi figlio che rappresentano ogni Web Part nella raccolta di Web Part sul sito.
+    - L'estensione aggiunge un **raccolta Web Part** nodo in ogni nodo nel sito di SharePoint **Esplora Server**. Il nuovo nodo contiene i nodi figlio che rappresentano ogni Web Part nella raccolta di Web Part sul sito.
 
-    -   L'estensione definisce un nuovo tipo di nodo che rappresenta un'istanza di Web Part. Questo nuovo tipo di nodo è la base per i nodi figlio sotto la nuova **raccolta Web Part** nodo. Il nuovo tipo di nodo di Web Part Visualizza le informazioni nel **proprietà** finestra sulla Web Part da essa rappresentato. Il tipo di nodo include anche una voce di menu di scelta rapida personalizzati che è possibile usare come punto di partenza per l'esecuzione di altre attività correlate alla Web Part.
+    - L'estensione definisce un nuovo tipo di nodo che rappresenta un'istanza di Web Part. Questo nuovo tipo di nodo è la base per i nodi figlio sotto la nuova **raccolta Web Part** nodo. Il nuovo tipo di nodo di Web Part Visualizza le informazioni nel **proprietà** finestra sulla Web Part da essa rappresentato. Il tipo di nodo include anche una voce di menu di scelta rapida personalizzati che è possibile usare come punto di partenza per l'esecuzione di altre attività correlate alla Web Part.
 
--   Creare due comandi di SharePoint personalizzati che chiama l'assembly dell'estensione. I comandi di SharePoint sono metodi che possono essere chiamati dagli assembly di estensione per usare le API nel modello a oggetti server per SharePoint. In questa procedura dettagliata, è creare i comandi che recuperano informazioni di Web Part dal sito di SharePoint locale nel computer di sviluppo. Per altre informazioni, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+- Creare due comandi di SharePoint personalizzati che chiama l'assembly dell'estensione. I comandi di SharePoint sono metodi che possono essere chiamati dagli assembly di estensione per usare le API nel modello a oggetti server per SharePoint. In questa procedura dettagliata, è creare i comandi che recuperano informazioni di Web Part dal sito di SharePoint locale nel computer di sviluppo. Per altre informazioni, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
--   Creazione di un pacchetto di Visual Studio Extension (VSIX) per distribuire l'estensione.
+- Creazione di un pacchetto di Visual Studio Extension (VSIX) per distribuire l'estensione.
 
--   Il debug e l'estensione per il testing.
+- Il debug e l'estensione per il testing.
 
 > [!NOTE]
 >  Per una versione alternativa di questa procedura dettagliata che usa il modello a oggetti client di SharePoint anziché il modello a oggetti server, vedere [procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
@@ -68,107 +68,107 @@ ms.locfileid: "56606337"
 
 #### <a name="to-create-the-vsix-project"></a>Per creare il progetto VSIX
 
-1.  Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
-3.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
+3. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
 
     > [!NOTE]
     >  Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
 
-4.  Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework.
+4. Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework.
 
-5.  Scegliere il **progetto VSIX** modello, nome del progetto **WebPartNode**, quindi scegliere il **OK** pulsante.
+5. Scegliere il **progetto VSIX** modello, nome del progetto **WebPartNode**, quindi scegliere il **OK** pulsante.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **WebPartNode** progetto al **Esplora soluzioni**.
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il nodo della soluzione, scegliere **Add**, quindi scegliere **nuovo progetto**.
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il nodo della soluzione, scegliere **Add**, quindi scegliere **nuovo progetto**.
 
-2.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** nodo o **Visual Basic** nodo, quindi scegli **Windows** nodo.
+2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** nodo o **Visual Basic** nodo, quindi scegli **Windows** nodo.
 
-3.  Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework.
+3. Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework.
 
-4.  Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **risorse**, quindi scegliere il **OK** pulsante.
+4. Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **risorse**, quindi scegliere il **OK** pulsante.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **risorse** progetto alla soluzione e apre il file di codice predefinita Class1.
 
-5.  Eliminare il file di codice Class1 dal progetto.
+5. Eliminare il file di codice Class1 dal progetto.
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Per creare il progetto di comandi di SharePoint
 
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il nodo della soluzione, scegliere **Add**, quindi scegliere **nuovo progetto**.
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il nodo della soluzione, scegliere **Add**, quindi scegliere **nuovo progetto**.
 
-2.  Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** nodo o **Visual Basic** nodo e quindi scegliere il **Windows** nodo.
+2. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** nodo o **Visual Basic** nodo e quindi scegliere il **Windows** nodo.
 
-3.  Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 3.5** nell'elenco delle versioni di .NET Framework.
+3. Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 3.5** nell'elenco delle versioni di .NET Framework.
 
-4.  Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **WebPartCommands**, quindi scegliere il **OK** pulsante.
+4. Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **WebPartCommands**, quindi scegliere il **OK** pulsante.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **WebPartCommands** progetto alla soluzione e apre il file di codice predefinita Class1.
 
-5.  Eliminare il file di codice Class1 dal progetto.
+5. Eliminare il file di codice Class1 dal progetto.
 
 ## <a name="configure-the-projects"></a>Configurare i progetti
  Prima di scrivere codice per creare l'estensione, è necessario aggiungere i file di codice e i riferimenti agli assembly e configurare le impostazioni del progetto.
 
 #### <a name="to-configure-the-webpartnodeextension-project"></a>Per configurare il progetto di risorse
 
-1.  Nel progetto di risorse, aggiungere quattro file di codice con i nomi seguenti:
+1. Nel progetto di risorse, aggiungere quattro file di codice con i nomi seguenti:
 
-    -   SiteNodeExtension
+    - SiteNodeExtension
 
-    -   WebPartNodeTypeProvider
+    - WebPartNodeTypeProvider
 
-    -   WebPartNodeInfo
+    - WebPartNodeInfo
 
-    -   WebPartCommandIds
+    - WebPartCommandIds
 
-2.  Aprire il menu di scelta rapida per il **risorse** del progetto e quindi scegliere **Aggiungi riferimento**.
+2. Aprire il menu di scelta rapida per il **risorse** del progetto e quindi scegliere **Aggiungi riferimento**.
 
-3.  Nel **gestione riferimenti - risorse** finestra di dialogo scegliere la **Framework** scheda e quindi selezionare la casella di controllo per ognuno degli assembly seguenti:
+3. Nel **gestione riferimenti - risorse** finestra di dialogo scegliere la **Framework** scheda e quindi selezionare la casella di controllo per ognuno degli assembly seguenti:
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-    -   System.Windows.Forms
+    - System.Windows.Forms
 
-4.  Scegliere il **Extensions** scheda, selezionare la casella di controllo per l'assembly Microsoft.VisualStudio.SharePoint e quindi scegliere il **OK** pulsante.
+4. Scegliere il **Extensions** scheda, selezionare la casella di controllo per l'assembly Microsoft.VisualStudio.SharePoint e quindi scegliere il **OK** pulsante.
 
-5.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **risorse** nodo del progetto e quindi scegliere **proprietà**.
+5. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **risorse** nodo del progetto e quindi scegliere **proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
-6.  Scegliere la scheda **Applicazione**.
+6. Scegliere la scheda **Applicazione**.
 
-7.  Nel **spazio dei nomi predefinito** finestra (c#) o **spazio dei nomi radice** casella ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), immettere **ServerExplorer.SharePointConnections.WebPartNode**.
+7. Nel **spazio dei nomi predefinito** finestra (c#) o **spazio dei nomi radice** casella ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), immettere **ServerExplorer.SharePointConnections.WebPartNode**.
 
 #### <a name="to-configure-the-webpartcommands-project"></a>Per configurare il progetto webpartcommands
 
-1.  Nel progetto WebPartCommands, aggiungere un file di codice denominato WebPartCommands.
+1. Nel progetto WebPartCommands, aggiungere un file di codice denominato WebPartCommands.
 
-2.  In **Esplora soluzioni**, aprire il menu di scelta rapida per il **WebPartCommands** nodo del progetto, scegliere **Add**, quindi scegliere **elemento esistente**.
+2. In **Esplora soluzioni**, aprire il menu di scelta rapida per il **WebPartCommands** nodo del progetto, scegliere **Add**, quindi scegliere **elemento esistente**.
 
-3.  Nel **Aggiungi elemento esistente** nella finestra di dialogo passare alla cartella che contiene i file di codice risorse per il progetto e quindi scegliere i file di codice WebPartNodeInfo e WebPartCommandIds.
+3. Nel **Aggiungi elemento esistente** nella finestra di dialogo passare alla cartella che contiene i file di codice risorse per il progetto e quindi scegliere i file di codice WebPartNodeInfo e WebPartCommandIds.
 
-4.  Scegliere la freccia accanto al **Add** pulsante e quindi scegliere **Aggiungi come collegamento** nel menu visualizzato.
+4. Scegliere la freccia accanto al **Add** pulsante e quindi scegliere **Aggiungi come collegamento** nel menu visualizzato.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge i file di codice al progetto WebPartCommands come collegamenti. Di conseguenza, i file di codice si trovano nel progetto di risorse, ma il codice nei file vengono inoltre compilati nel progetto WebPartCommands.
 
-5.  Aprire il menu di scelta rapida per il **WebPartCommands** nuovo progetto e scegliere **Aggiungi riferimento**.
+5. Aprire il menu di scelta rapida per il **WebPartCommands** nuovo progetto e scegliere **Aggiungi riferimento**.
 
-6.  Nel **gestione riferimenti - WebPartCommands** finestra di dialogo scegliere la **estensioni** scheda, selezionare la casella di controllo per ognuno degli assembly seguenti e quindi scegliere il **OK** pulsante:
+6. Nel **gestione riferimenti - WebPartCommands** finestra di dialogo scegliere la **estensioni** scheda, selezionare la casella di controllo per ognuno degli assembly seguenti e quindi scegliere il **OK** pulsante:
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
-7.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **WebPartCommands** nuovo progetto e quindi scegliere **proprietà**.
+7. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **WebPartCommands** nuovo progetto e quindi scegliere **proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
-8.  Scegliere la scheda **Applicazione**.
+8. Scegliere la scheda **Applicazione**.
 
 9. Nel **spazio dei nomi predefinito** finestra (c#) o **spazio dei nomi radice** casella ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), immettere **ServerExplorer.SharePointConnections.WebPartNode**.
 
@@ -177,25 +177,25 @@ ms.locfileid: "56606337"
 
 #### <a name="to-create-icons-for-the-nodes"></a>Per creare le icone per i nodi
 
-1.  Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **risorse** del progetto e quindi scegliere **proprietà**.
+1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **risorse** del progetto e quindi scegliere **proprietà**.
 
-2.  Si apre la finestra **Creazione progetti**.
+2. Si apre la finestra **Creazione progetti**.
 
-3.  Scegliere il **le risorse** scheda e quindi scegliere il **questo progetto non contiene un file di risorse predefinito. Fare clic qui per crearne uno** collegamento.
+3. Scegliere il **le risorse** scheda e quindi scegliere il **questo progetto non contiene un file di risorse predefinito. Fare clic qui per crearne uno** collegamento.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea un file di risorse e lo apre nella finestra di progettazione.
 
-4.  Nella parte superiore della finestra di progettazione, scegliere la freccia accanto al **Aggiungi risorsa** dal menu di comando e quindi scegliere **Aggiungi nuova icona** nel menu visualizzato.
+4. Nella parte superiore della finestra di progettazione, scegliere la freccia accanto al **Aggiungi risorsa** dal menu di comando e quindi scegliere **Aggiungi nuova icona** nel menu visualizzato.
 
-5.  Nel **Aggiungi nuova risorsa** della finestra di dialogo Nome sull'icona Nuovo **WebPartsNode**e quindi scegliere il **Add** pulsante.
+5. Nel **Aggiungi nuova risorsa** della finestra di dialogo Nome sull'icona Nuovo **WebPartsNode**e quindi scegliere il **Add** pulsante.
 
      Viene aperta la nuova icona nel **Editor di immagini**.
 
-6.  Modificare la versione di 16x16 dell'icona in modo che includa una progettazione che è possibile riconoscere facilmente.
+6. Modificare la versione di 16x16 dell'icona in modo che includa una progettazione che è possibile riconoscere facilmente.
 
-7.  Aprire il menu di scelta rapida per la versione a 32 x 32 dell'icona e quindi scegliere **eliminare tipo di immagine**.
+7. Aprire il menu di scelta rapida per la versione a 32 x 32 dell'icona e quindi scegliere **eliminare tipo di immagine**.
 
-8.  Ripetere i passaggi da 5 a 8 per aggiungere una seconda icona Risorse del progetto e denominare questa icona **WebPart**.
+8. Ripetere i passaggi da 5 a 8 per aggiungere una seconda icona Risorse del progetto e denominare questa icona **WebPart**.
 
 9. Nella **Esplora soluzioni**, sotto il **risorse** cartella per il **risorse** del progetto, aprire il menu di scelta rapida per **WebPartNodeExtension**.
 
@@ -208,7 +208,7 @@ ms.locfileid: "56606337"
 
 #### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Per aggiungere il nodo di raccolta Web Part a Esplora Server
 
-1.  Nel progetto di risorse, aprire il file di codice SiteNodeExtension e quindi incollare il codice seguente al suo interno.
+1. Nel progetto di risorse, aprire il file di codice SiteNodeExtension e quindi incollare il codice seguente al suo interno.
 
     > [!NOTE]
     >  Dopo che si aggiunge questo codice, il progetto avrà alcuni errori di compilazione, ma scompariranno quando si aggiunge codice nei passaggi successivi.
@@ -223,7 +223,7 @@ ms.locfileid: "56606337"
 
 #### <a name="to-define-the-web-part-node-type"></a>Per definire il tipo di nodo di web part
 
-1.  Nel progetto di risorse, aprire il file di codice WebPartNodeTypeProvider e quindi incollare il codice seguente al suo interno.
+1. Nel progetto di risorse, aprire il file di codice WebPartNodeTypeProvider e quindi incollare il codice seguente al suo interno.
 
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
@@ -233,7 +233,7 @@ ms.locfileid: "56606337"
 
 #### <a name="to-define-the-web-part-data-class"></a>Per definire la classe di dati web part
 
-1.  Nel progetto di risorse, aprire il file di codice WebPartNodeInfo e quindi incollare il codice seguente al suo interno.
+1. Nel progetto di risorse, aprire il file di codice WebPartNodeInfo e quindi incollare il codice seguente al suo interno.
 
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
@@ -243,7 +243,7 @@ ms.locfileid: "56606337"
 
 #### <a name="to-define-the-command-ids"></a>Per definire gli ID di comando
 
-1.  Nel progetto di risorse, aprire il file di codice WebPartCommandIds e quindi incollare il codice seguente al suo interno.
+1. Nel progetto di risorse, aprire il file di codice WebPartCommandIds e quindi incollare il codice seguente al suo interno.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
@@ -253,7 +253,7 @@ ms.locfileid: "56606337"
 
 #### <a name="to-define-the-sharepoint-commands"></a>Per definire i comandi di SharePoint
 
-1.  Nel progetto WebPartCommands, aprire il file di codice WebPartCommands e quindi incollare il codice seguente al suo interno.
+1. Nel progetto WebPartCommands, aprire il file di codice WebPartCommands e quindi incollare il codice seguente al suo interno.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
@@ -263,7 +263,7 @@ ms.locfileid: "56606337"
 
 #### <a name="to-build-the-solution"></a>Per compilare la soluzione
 
-1.  Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+1. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
 
     > [!WARNING]
     >  A questo punto, il progetto WebPartNode può avere un errore di compilazione perché il file manifesto VSIX non ha un valore per l'autore. Questo errore scompare quando si aggiunge un valore nei passaggi successivi.
@@ -273,28 +273,28 @@ ms.locfileid: "56606337"
 
 #### <a name="to-configure-the-vsix-package"></a>Per configurare il pacchetto VSIX
 
-1.  Nelle **Esplora soluzioni**, sotto il progetto WebPartNode, aprire il **vsixmanifest** file nell'editor del manifesto.
+1. Nelle **Esplora soluzioni**, sotto il progetto WebPartNode, aprire il **vsixmanifest** file nell'editor del manifesto.
 
      Il file vsixmanifest costituisce la base per il file extension vsixmanifest che richiedono tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  Nel **Product Name** casella, immettere **nodo di raccolta Web Part di Esplora Server**.
+2. Nel **Product Name** casella, immettere **nodo di raccolta Web Part di Esplora Server**.
 
-3.  Nel **Author** casella, immettere **Contoso**.
+3. Nel **Author** casella, immettere **Contoso**.
 
-4.  Nel **Description** immettere **aggiunge un nodo di raccolta Web Part personalizzato al nodo Connessioni di SharePoint in Esplora Server. Questa estensione Usa un comando di SharePoint personalizzato per chiamare il modello a oggetti server.**
+4. Nel **Description** immettere **aggiunge un nodo di raccolta Web Part personalizzato al nodo Connessioni di SharePoint in Esplora Server. Questa estensione Usa un comando di SharePoint personalizzato per chiamare il modello a oggetti server.**
 
-5.  Scegliere il **asset** della scheda dell'editor e quindi scegliere il **New** pulsante.
+5. Scegliere il **asset** della scheda dell'editor e quindi scegliere il **New** pulsante.
 
      Il **Aggiungi nuovo Asset** verrà visualizzata la finestra di dialogo.
 
-6.  Nel **tipo** casella di riepilogo **MEFComponent**.
+6. Nel **tipo** casella di riepilogo **MEFComponent**.
 
     > [!NOTE]
     >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.
+7. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.
 
-8.  Nel **progetto** casella di riepilogo **risorse** e quindi scegliere il **OK** pulsante.
+8. Nel **progetto** casella di riepilogo **risorse** e quindi scegliere il **OK** pulsante.
 
 9. Nell'editor del manifesto, scegliere il **New** nuovamente clic sul pulsante.
 
@@ -320,37 +320,37 @@ ms.locfileid: "56606337"
 
 #### <a name="to-start-debugging-the-extension"></a>Per avviare il debug dell'estensione
 
-1.  Riavviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con credenziali amministrative e quindi aprire la soluzione WebPartNode.
+1. Riavviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con credenziali amministrative e quindi aprire la soluzione WebPartNode.
 
-2.  Nel progetto di risorse, aprire il file di codice SiteNodeExtension e quindi aggiungere un punto di interruzione per la prima riga del codice nel `NodeChildrenRequested` e `CreateWebPartNodes` metodi.
+2. Nel progetto di risorse, aprire il file di codice SiteNodeExtension e quindi aggiungere un punto di interruzione per la prima riga del codice nel `NodeChildrenRequested` e `CreateWebPartNodes` metodi.
 
-3.  Scegliere il **F5** chiave per avviare il debug.
+3. Scegliere il **F5** chiave per avviare il debug.
 
      Visual Studio installa l'estensione %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Part Gallery nodo Extension for Server Explorer\1.0 e avvia un'istanza sperimentale di Visual Studio. Si testerà l'elemento del progetto in questa istanza di Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Per testare l'estensione
 
-1.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], nella barra dei menu, scegliere **View** > **Esplora Server**.
+1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], nella barra dei menu, scegliere **View** > **Esplora Server**.
 
-2.  Eseguire la procedura seguente se il sito di SharePoint che si desidera usare per il test non viene visualizzato sotto il **connessioni di SharePoint** nodo **Esplora Server**:
+2. Eseguire la procedura seguente se il sito di SharePoint che si desidera usare per il test non viene visualizzato sotto il **connessioni di SharePoint** nodo **Esplora Server**:
 
-    1.  Nelle **Esplora Server**, aprire il menu di scelta rapida **connessioni di SharePoint**, quindi scegliere **Aggiungi connessione**.
+    1. Nelle **Esplora Server**, aprire il menu di scelta rapida **connessioni di SharePoint**, quindi scegliere **Aggiungi connessione**.
 
-    2.  Nel **Aggiungi connessione SharePoint** finestra di dialogo immettere l'URL per il sito di SharePoint a cui si desidera connettersi, quindi scegliere il **OK** pulsante.
+    2. Nel **Aggiungi connessione SharePoint** finestra di dialogo immettere l'URL per il sito di SharePoint a cui si desidera connettersi, quindi scegliere il **OK** pulsante.
 
          Per specificare il sito di SharePoint nel computer di sviluppo, immettere **http://localhost**.
 
-3.  Espandere il nodo di connessione del sito, che visualizza l'URL del sito, e quindi espandere un nodo del sito figlio (ad esempio, **sito del Team**).
+3. Espandere il nodo di connessione del sito, che visualizza l'URL del sito, e quindi espandere un nodo del sito figlio (ad esempio, **sito del Team**).
 
-4.  Verificare che il codice in altra istanza del [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] si arresta nel punto di interruzione impostato in precedenza nella `NodeChildrenRequested` metodo e quindi scegliere **F5** per continuare il debug del progetto.
+4. Verificare che il codice in altra istanza del [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] si arresta nel punto di interruzione impostato in precedenza nella `NodeChildrenRequested` metodo e quindi scegliere **F5** per continuare il debug del progetto.
 
-5.  Nell'istanza sperimentale di Visual Studio, verificare che un nuovo nodo denominato **raccolta Web Part** viene visualizzato sotto il nodo di sito di livello superiore e quindi espandere il **raccolta Web Part** nodo.
+5. Nell'istanza sperimentale di Visual Studio, verificare che un nuovo nodo denominato **raccolta Web Part** viene visualizzato sotto il nodo di sito di livello superiore e quindi espandere il **raccolta Web Part** nodo.
 
-6.  Verificare che il codice in altra istanza di Visual Studio si arresta nel punto di interruzione impostato in precedenza nella `CreateWebPartNodes` metodo e quindi scegliere il **F5** un tasto per continuare il debug del progetto.
+6. Verificare che il codice in altra istanza di Visual Studio si arresta nel punto di interruzione impostato in precedenza nella `CreateWebPartNodes` metodo e quindi scegliere il **F5** un tasto per continuare il debug del progetto.
 
-7.  Nell'istanza sperimentale di Visual Studio, verificare che tutte le Web part sul sito connesso appaiano sotto le **raccolta Web Part** nodo **Esplora Server**.
+7. Nell'istanza sperimentale di Visual Studio, verificare che tutte le Web part sul sito connesso appaiano sotto le **raccolta Web Part** nodo **Esplora Server**.
 
-8.  Nelle **Esplora Server**, aprire il menu di scelta rapida per una delle Web part e quindi scegliere **proprietà**.
+8. Nelle **Esplora Server**, aprire il menu di scelta rapida per una delle Web part e quindi scegliere **proprietà**.
 
 9. Nell'istanza di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che sta eseguendo il debug, verificare che siano visualizzati i dettagli sulla Web Part i **proprietà** finestra.
 
@@ -359,15 +359,15 @@ ms.locfileid: "56606337"
 
 #### <a name="to-uninstall-the-extension"></a>Per disinstallare l'estensione
 
-1.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], nella barra dei menu, scegliere **Tools** > **estensioni e aggiornamenti**.
+1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], nella barra dei menu, scegliere **Tools** > **estensioni e aggiornamenti**.
 
      Verrà visualizzata la finestra di dialogo **Estensioni e aggiornamenti**.
 
-2.  Nell'elenco delle estensioni, scegliere **estensione di Web Part raccolta nodo di Esplora Server**, quindi scegliere il **Disinstalla** pulsante.
+2. Nell'elenco delle estensioni, scegliere **estensione di Web Part raccolta nodo di Esplora Server**, quindi scegliere il **Disinstalla** pulsante.
 
-3.  Nella finestra di dialogo visualizzata, scegliere il **Yes** per confermare che si desidera disinstallare l'estensione e quindi scegliere il **Riavvia ora** pulsante per completare la disinstallazione.
+3. Nella finestra di dialogo visualizzata, scegliere il **Yes** per confermare che si desidera disinstallare l'estensione e quindi scegliere il **Riavvia ora** pulsante per completare la disinstallazione.
 
-4.  Chiudere entrambe le istanze di Visual Studio (l'istanza sperimentale e l'istanza di Visual Studio in cui la soluzione WebPartNode è aperta).
+4. Chiudere entrambe le istanze di Visual Studio (l'istanza sperimentale e l'istanza di Visual Studio in cui la soluzione WebPartNode è aperta).
 
 ## <a name="see-also"></a>Vedere anche
 - [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
